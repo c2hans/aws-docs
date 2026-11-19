@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SemanticMemoryStrategyInput
-<a name="API_SemanticMemoryStrategyInput"></a>
 
 Input for creating a semantic memory strategy.
 

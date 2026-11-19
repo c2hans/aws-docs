@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisScanRes
 ---
 
 # CisScanResultsAggregatedByChecksFilterCriteria
-<a name="API_CisScanResultsAggregatedByChecksFilterCriteria"></a>
 
 The scan results aggregated by checks filter criteria.
 

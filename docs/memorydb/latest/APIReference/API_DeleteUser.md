@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteU
 ---
 
 # DeleteUser
-<a name="API_DeleteUser"></a>
 
 Deletes a user. The user will be removed from all ACLs and in turn removed from all clusters.
 

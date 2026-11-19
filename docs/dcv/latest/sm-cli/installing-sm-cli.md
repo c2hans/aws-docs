@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/installing-sm-cli.html
 ---
 
 # Installing Amazon DCV Session Manager Command Line Interface
-<a name="installing-sm-cli"></a>
 
 The Amazon DCV Session Manager Command Line Interface (CLI) is a powerful tool for managing remote desktop sessions on the Amazon DCV platform. To get started, you'll need to install the CLI on your local system. This section describes how to install the Session Manager CLI on Linux, macOS, and Windows.
 

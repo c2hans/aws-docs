@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-language
 ---
 
 # Using the Access Policy Language in Amazon SNS
-<a name="sns-access-policy-language-using"></a>
 
 The following figure and table describe the general process of how access control works with the access policy language.
 

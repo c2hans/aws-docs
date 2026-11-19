@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS Best Practices for DDoS Resiliency
-<a name="aws-best-practices-ddos-resiliency"></a>
 
 Publication date: **August 2026** ([Document revisions](document-revisions.md))
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_ModifyMountT
 ---
 
 # ModifyMountTargetSecurityGroups
-<a name="API_ModifyMountTargetSecurityGroups"></a>
 
 Modifies the set of security groups in effect for a mount target.
 

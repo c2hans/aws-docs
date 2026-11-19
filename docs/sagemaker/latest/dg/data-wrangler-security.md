@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-securi
 ---
 
 # Security and Permissions
-<a name="data-wrangler-security"></a>
 
 When you query data from Athena or Amazon Redshift, the queried dataset is automatically stored in the default SageMaker AI S3 bucket for the AWS Region in which you are using Studio Classic. Additionally, when you export a Jupyter Notebook from Amazon SageMaker Data Wrangler and run it, your data flows, or .flow files, are saved to the same default bucket, under the prefix *data\_wrangler\_flows*.
 

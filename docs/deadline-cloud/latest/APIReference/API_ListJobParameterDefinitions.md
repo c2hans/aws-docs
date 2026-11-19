@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListJobParameterDefinitions
-<a name="API_ListJobParameterDefinitions"></a>
 
 Lists parameter definitions of a job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Authorize
 ---
 
 # AuthorizeSecurityGroupEgress
-<a name="API_AuthorizeSecurityGroupEgress"></a>
 
 Adds the specified outbound (egress) rules to a security group.
 

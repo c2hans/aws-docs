@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Up
 ---
 
 # UpdateVehicleRequestItem
-<a name="API_UpdateVehicleRequestItem"></a>
 
 Information about the vehicle to update.
 

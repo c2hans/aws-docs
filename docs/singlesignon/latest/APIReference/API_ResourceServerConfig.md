@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Res
 ---
 
 # ResourceServerConfig
-<a name="API_ResourceServerConfig"></a>
 
 A structure that describes the configuration of a resource server.
 

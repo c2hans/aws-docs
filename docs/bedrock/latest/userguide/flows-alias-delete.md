@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-alias-del
 ---
 
 # Delete an alias of a flow in Amazon Bedrock
-<a name="flows-alias-delete"></a>
 
 To learn how to delete an alias of flow, choose the tab for your preferred method, and then follow the steps:
 

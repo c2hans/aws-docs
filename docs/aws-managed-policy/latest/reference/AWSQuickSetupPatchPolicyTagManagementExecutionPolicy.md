@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupPatchPolicyTagManagementExecutionPolicy
-<a name="AWSQuickSetupPatchPolicyTagManagementExecutionPolicy"></a>
 
 **Description**: Grants permissions to track which instances are managed by Quick Setup patch policy configurations through automated tagging and inventory collection.
 

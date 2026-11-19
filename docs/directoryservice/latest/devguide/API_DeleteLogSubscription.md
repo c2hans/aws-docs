@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Del
 ---
 
 # DeleteLogSubscription
-<a name="API_DeleteLogSubscription"></a>
 
 Deletes the specified log subscription.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # Invoke a Lambda function from an alarm
-<a name="alarms-and-actions-Lambda"></a>
 
 CloudWatch alarms guarantees an asynchronous invocation of the Lambda function for a given state change, except in the following cases:
 + When the function doesn't exist.

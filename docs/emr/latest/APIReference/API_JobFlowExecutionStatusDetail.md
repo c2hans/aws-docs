@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_JobFlowExecu
 ---
 
 # JobFlowExecutionStatusDetail
-<a name="API_JobFlowExecutionStatusDetail"></a>
 
 Describes the status of the cluster (job flow).
 

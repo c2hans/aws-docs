@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Replic
 ---
 
 # ReplicationBackfillSummary
-<a name="API_ReplicationBackfillSummary"></a>
 
 An object representing a summary of a replication backfill, including its status, destination, progress, and start and end times.
 

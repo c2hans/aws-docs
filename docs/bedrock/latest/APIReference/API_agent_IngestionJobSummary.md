@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # IngestionJobSummary
-<a name="API_agent_IngestionJobSummary"></a>
 
 Contains details about a data ingestion job.
 

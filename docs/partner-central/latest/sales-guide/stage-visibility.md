@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/stage
 ---
 
 # AWS stage visibility
-<a name="stage-visibility"></a>
 
 When an opportunity has reached its terminal stage (status `Launched` or `Closed/Lost`), the AWS Partner must complete the following:
 

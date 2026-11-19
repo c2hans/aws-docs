@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/accessing-p
 ---
 
 # Use the PostgreSQL interactive terminal (psql) to access Aurora DSQL
-<a name="accessing-psql"></a>
 
 ## Use AWS CloudShell to access Aurora DSQL with the PostgreSQL interactive terminal (psql)
 <a name="accessing-sql-clients-psql"></a>

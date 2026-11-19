@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_JobSec
 ---
 
 # JobSecondaryStatusTransition
-<a name="API_JobSecondaryStatusTransition"></a>
 
 Represents a secondary status transition for a job. Jobs progress through multiple secondary statuses during execution. Each transition records the status, start time, optional end time, and an optional message with additional details.
 

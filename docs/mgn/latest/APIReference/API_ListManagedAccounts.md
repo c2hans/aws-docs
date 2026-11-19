@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListManagedA
 ---
 
 # ListManagedAccounts
-<a name="API_ListManagedAccounts"></a>
 
 List Managed Accounts.
 

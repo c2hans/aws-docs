@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/securit
 ---
 
 # Permission policies to create, modify and, delete resources in Aurora
-<a name="security_iam_id-based-policy-examples-create-and-modify-examples"></a>
 
 The following sections present examples of permission policies that grant and restrict access to resources:
 

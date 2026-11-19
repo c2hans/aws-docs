@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/sub-tag.html
 ---
 
 # Pronouncing acronyms and abbreviations
-<a name="sub-tag"></a>
 
 *<sub>*
 

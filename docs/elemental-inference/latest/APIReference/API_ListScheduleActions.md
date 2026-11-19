@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # ListScheduleActions
-<a name="API_ListScheduleActions"></a>
 
 Displays a list of the schedule actions on a feed, including the status of each action and, for a failed action, information about why it failed.
 

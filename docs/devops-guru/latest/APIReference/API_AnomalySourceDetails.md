@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Anom
 ---
 
 # AnomalySourceDetails
-<a name="API_AnomalySourceDetails"></a>
 
  Details about the source of the anomalous operational data that triggered the anomaly.
 

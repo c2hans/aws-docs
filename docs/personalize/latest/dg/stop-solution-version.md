@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/stop-solution-vers
 ---
 
 # Stopping the creation of a solution version
-<a name="stop-solution-version"></a>
 
 If your solution version has a status of CREATE\_PENDING or CREATE\_IN\_PROGRESS, you can use the Amazon Personalize console or the [StopSolutionVersionCreation](API_StopSolutionVersionCreation.md) operation to stop creating the solution version (stop training a model). You can't resume creating a solution version after it has stopped. You are billed for resources used up to the point when the creation of the solution version stopped.
 

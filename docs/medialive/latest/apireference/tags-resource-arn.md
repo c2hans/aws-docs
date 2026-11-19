@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/tags-resou
 ---
 
 # Tags: list tags
-<a name="tags-resource-arn"></a>
 
 ## URI
 <a name="tags-resource-arn-url"></a>

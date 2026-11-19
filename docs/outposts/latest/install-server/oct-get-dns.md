@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/oct-get-d
 ---
 
 # get-dns
-<a name="oct-get-dns"></a>
 
 The **get-dns** command returns the DNS (Domain Name Server) IP address.
 

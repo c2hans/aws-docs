@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ResourceTag
-<a name="API_ResourceTag"></a>
 
 The tag structure that contains a tag key and value.
 

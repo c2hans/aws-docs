@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetSpot
 ---
 
 # FleetSpotMaintenanceStrategies
-<a name="API_FleetSpotMaintenanceStrategies"></a>
 
 The strategies for managing your Spot Instances that are at an elevated risk of being interrupted.
 

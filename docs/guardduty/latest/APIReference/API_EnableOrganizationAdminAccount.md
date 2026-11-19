@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Enable
 ---
 
 # EnableOrganizationAdminAccount
-<a name="API_EnableOrganizationAdminAccount"></a>
 
 Designates an AWS account within the organization as your GuardDuty delegated administrator. Only the organization's management account can run this API operation.
 

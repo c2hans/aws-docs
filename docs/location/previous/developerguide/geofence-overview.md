@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/geofenc
 ---
 
 # Learn about geofences in Amazon Location Service
-<a name="geofence-overview"></a>
 
 Geofence collection resources allow you to store and manage geofences—virtual boundaries on a map. You can evaluate locations against a geofence collection resource and get notifications when the location update crosses the boundary of any of the geofences in the geofence collection.
 

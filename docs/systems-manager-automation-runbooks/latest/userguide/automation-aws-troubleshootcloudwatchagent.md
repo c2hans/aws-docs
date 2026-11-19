@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootCloudWatchAgent`
-<a name="automation-aws-troubleshootcloudwatchagent"></a>
 
  **Description**
 

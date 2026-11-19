@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ABTestResults
-<a name="API_ABTestResults"></a>
 
 The statistical results of an A/B test.
 

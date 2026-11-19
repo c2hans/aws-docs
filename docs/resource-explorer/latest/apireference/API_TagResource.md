@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds one or more tag key and value pairs to an AWS Resource Explorer view or index.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Manikandan Chandrasekaran, Principal Technologist

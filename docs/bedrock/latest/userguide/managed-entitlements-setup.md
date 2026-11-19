@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/managed-entitle
 ---
 
 # Setting up managed entitlements
-<a name="managed-entitlements-setup"></a>
 
 Complete the following setup steps once for your AWS Organization. After setup is complete, you can subscribe to third-party Bedrock models and distribute licenses across your organization. To complete these steps, you need access to your organization's management account.
 

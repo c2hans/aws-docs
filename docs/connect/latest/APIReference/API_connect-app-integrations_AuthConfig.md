@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AuthConfig
-<a name="API_connect-app-integrations_AuthConfig"></a>
 
 Contains the authentication settings that Connect Customer uses to call an external application endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Que
 ---
 
 # QuerySummary
-<a name="API_QuerySummary"></a>
 
 Contains summary information about a query.
 

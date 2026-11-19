@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/codebuild-r
 ---
 
 # codebuild-report-group-encrypted-at-rest
-<a name="codebuild-report-group-encrypted-at-rest"></a>
 
 Checks if an AWS CodeBuild report group has encryption at rest setting enabled. The rule is NON\_COMPLIANT if 'EncryptionDisabled' is 'true'.
 

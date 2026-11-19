@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayRule CircuitBreakerConfiguration
-<a name="aws-properties-bedrockagentcore-gatewayrule-circuitbreakerconfiguration"></a>
 
 Specifies whether the circuit breaker monitors failures for the targets in a fallback chain.
 

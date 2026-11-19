@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchExportFindings
-<a name="API_BatchExportFindings"></a>
 
 Exports a batch of findings to the connected issue tracker as issues.
 

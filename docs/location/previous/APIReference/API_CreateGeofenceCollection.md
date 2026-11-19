@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Creat
 ---
 
 # CreateGeofenceCollection
-<a name="API_CreateGeofenceCollection"></a>
 
 Creates a geofence collection, which manages and stores geofences.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Retriev
 ---
 
 # Retriever
-<a name="API_Retriever"></a>
 
 Summary information for the retriever used for your Amazon Q Business application.
 

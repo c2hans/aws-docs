@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/applica
 ---
 
 # AWS Systems Manager Application Manager availability change
-<a name="application-manager-availability-change"></a>
 
 AWS Systems Manager Application Manager is no longer open to new customers. SSM Application Manager is a console capability that enables DevOps teams to define or auto-discover applications, associate AWS resources to those applications, apply tags for resource management and monitor applications' health.
 

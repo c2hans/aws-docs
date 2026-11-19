@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Configure request limits for your HyperPod inference model deployment
-<a name="sagemaker-hyperpod-model-deployment-request-limits"></a>
 
 You can configure request limiting on your Amazon SageMaker HyperPod inference model deployments to control the number of concurrent requests each pod accepts. When the limit is reached, excess requests receive a configurable HTTP error response, enabling fail-fast behavior and allowing the load balancer to redirect traffic to other pods.
 

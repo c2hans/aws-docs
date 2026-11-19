@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Using DynamoDB from AWS Explorer
-<a name="dynamodb-tkv"></a>
 
 Amazon DynamoDB is a fast, highly scalable, highly available, cost-effective, non-relational database service. DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance. The Toolkit for Visual Studio provides functionality for working with DynamoDB in a development context. For more information about DynamoDB, see [DynamoDB](https://aws.amazon.com/dynamodb/) on the Amazon Web Services website.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MouseScrollResult
-<a name="API_MouseScrollResult"></a>
 
 The result of a mouse scroll action.
 

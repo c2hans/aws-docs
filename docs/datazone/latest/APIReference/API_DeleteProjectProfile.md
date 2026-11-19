@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteP
 ---
 
 # DeleteProjectProfile
-<a name="API_DeleteProjectProfile"></a>
 
 Deletes a project profile.
 

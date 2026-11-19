@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-active-
 ---
 
 # Setting up an active-active cluster with new DB instances
-<a name="mysql-active-active-clusters-setting-up"></a>
 
 Complete the following steps to set up an active-active cluster using new Amazon RDS for MySQL DB instances.
 

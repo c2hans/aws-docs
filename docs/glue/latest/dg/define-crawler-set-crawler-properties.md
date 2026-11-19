@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/define-crawler-set-crawle
 ---
 
 # Step 1: Set crawler properties
-<a name="define-crawler-set-crawler-properties"></a>
 
 **To configure a crawler**
 

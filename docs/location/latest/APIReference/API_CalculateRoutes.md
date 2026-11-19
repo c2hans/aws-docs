@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Calcula
 ---
 
 # CalculateRoutes
-<a name="API_CalculateRoutes"></a>
 
  `CalculateRoutes` computes routes given the following required parameters: `Origin` and `Destination`.
 

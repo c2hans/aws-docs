@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Tutorial: Getting started with security in Amazon OpenSearch Serverless (console)
-<a name="gsg-serverless"></a>
 
 In this tutorial, you create and manage security policies using the Amazon OpenSearch Serverless console.
 

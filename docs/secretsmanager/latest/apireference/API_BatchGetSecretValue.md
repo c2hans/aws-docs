@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_B
 ---
 
 # BatchGetSecretValue
-<a name="API_BatchGetSecretValue"></a>
 
 Retrieves the contents of the encrypted fields `SecretString` or `SecretBinary` for up to 20 secrets. To retrieve a single secret, call [GetSecretValue](API_GetSecretValue.md).
 

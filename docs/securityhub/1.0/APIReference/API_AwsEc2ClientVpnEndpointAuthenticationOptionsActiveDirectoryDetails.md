@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2C
 ---
 
 # AwsEc2ClientVpnEndpointAuthenticationOptionsActiveDirectoryDetails
-<a name="API_AwsEc2ClientVpnEndpointAuthenticationOptionsActiveDirectoryDetails"></a>
 
  Provides details about an Active Directory that’s used to authenticate an AWS Client VPN endpoint.
 

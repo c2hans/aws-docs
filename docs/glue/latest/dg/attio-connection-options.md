@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/attio-connection-options.
 ---
 
 # Attio connection options
-<a name="attio-connection-options"></a>
 
 The following are connection options for Attio:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Attio object to read.

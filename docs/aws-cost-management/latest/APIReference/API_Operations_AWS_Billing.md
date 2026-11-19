@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Billing
-<a name="API_Operations_AWS_Billing"></a>
 
 The following actions are supported by AWS Billing:
 +  [AssociateContract](API_billing_AssociateContract.md)

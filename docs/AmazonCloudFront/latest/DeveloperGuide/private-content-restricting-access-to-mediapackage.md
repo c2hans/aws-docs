@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Restrict access to an AWS Elemental MediaPackage v2 origin
-<a name="private-content-restricting-access-to-mediapackage"></a>
 
 CloudFront provides *origin access control* (OAC) for restricting access to a MediaPackage v2 origin.
 

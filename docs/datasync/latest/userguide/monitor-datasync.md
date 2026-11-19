@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/monitor-datasy
 ---
 
 # Monitoring data transfers with Amazon CloudWatch metrics
-<a name="monitor-datasync"></a>
 
 Amazon CloudWatch provides metrics to track DataSync transfer performance and troubleshoot issues with your transfer task.
 

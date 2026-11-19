@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_L
 ---
 
 # ListDedicatedIpPools
-<a name="API_ListDedicatedIpPools"></a>
 
 List all of the dedicated IP pools that exist in your Amazon Pinpoint account in the current AWS Region.
 

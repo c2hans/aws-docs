@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/a
 ---
 
 # Connecting the AWS Toolkit for JetBrains to your AWS account
-<a name="account-connect"></a>
 
 Most Amazon Web Services (AWS) and resources are managed through an AWS account. An AWS account isn't required to use the AWS Toolkit for JetBrains, however Toolkit functions are limited without a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/create-
 ---
 
 # Creating an AWS Budgets report
-<a name="create-budget-report"></a>
 
 Use the following procedure to create an AWS Budgets report.<a name="creating-budget-report-steps"></a>
 

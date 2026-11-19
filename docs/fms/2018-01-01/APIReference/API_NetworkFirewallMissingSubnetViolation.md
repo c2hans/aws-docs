@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallMissingSubnetViolation
-<a name="API_NetworkFirewallMissingSubnetViolation"></a>
 
 Violation detail for AWS Network Firewall for an Availability Zone that's missing the expected Firewall Manager managed subnet.
 

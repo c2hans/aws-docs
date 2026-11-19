@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # UpdateLinkedWhatsAppBusinessAccountPhoneNumber
-<a name="API_UpdateLinkedWhatsAppBusinessAccountPhoneNumber"></a>
 
 Updates the calling settings for a linked WhatsApp business phone number, such as whether calling is enabled and the hours during which the business accepts calls.
 

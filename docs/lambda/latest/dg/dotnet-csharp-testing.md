@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/dotnet-csharp-testing.h
 ---
 
 # AWS Lambda Event Function testing in C\#
-<a name="dotnet-csharp-testing"></a>
 
 **Note**
 See the [Testing functions](testing-guide.md) chapter for a complete introduction to techniques and best practices for testing serverless solutions.

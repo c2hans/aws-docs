@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-
 ---
 
 # Pass secrets for Amazon ECS logging configuration
-<a name="secrets-logconfig"></a>
 
 You can use the `secretOptions` parameter in `logConfiguration` to pass sensitive data used for logging.
 

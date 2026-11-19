@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSN
 ---
 
 # AWSNetworkManagerServiceRolePolicy
-<a name="AWSNetworkManagerServiceRolePolicy"></a>
 
 **Description**: Allow NetworkManager to access resources associated with your Global Networks
 

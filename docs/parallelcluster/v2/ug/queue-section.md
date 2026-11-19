@@ -5,9 +5,8 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/queue-section.html
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `[queue]` section
-<a name="queue-section"></a>
 
-Defines configuration settings for a single queue. [`[queue]` sections](#queue-section) are only supported when [`scheduler`](cluster-definition.md#scheduler) is set to `slurm`.
+Defines configuration settings for a single queue. [`[queue]` sections](queue-section.md) are only supported when [`scheduler`](cluster-definition.md#scheduler) is set to `slurm`.
 
 The format is `[queue {{<queue-name>}}]`. {{queue-name}} must start with a lowercase letter, contain no more than 30 characters, and only contain lowercase letters, numbers, and hyphens (-).
 
@@ -21,7 +20,7 @@ compute_type = spot
 ```
 
 **Note**
-Support for the [`[queue]` section](#queue-section) was added in AWS ParallelCluster version 2.9.0.
+Support for the [`[queue]` section](queue-section.md) was added in AWS ParallelCluster version 2.9.0.
 
 **Topics**
 + [`compute_resource_settings`](#queue-compute-resource-settings)
@@ -36,7 +35,7 @@ Support for the [`[queue]` section](#queue-section) was added in AWS ParallelClu
 
 **(Required)** Identifies the [`[compute_resource]` sections](compute-resource-section.md) containing the compute resources configurations for this queue. The section names must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
-Up to three (3) [`[compute_resource]` sections](compute-resource-section.md) are supported for each [`[queue]` section](#queue-section).
+Up to three (3) [`[compute_resource]` sections](compute-resource-section.md) are supported for each [`[queue]` section](queue-section.md).
 
 For example, the following setting specifies that the sections that start `[compute_resource cr1]` and `[compute_resource cr2]` are used.
 

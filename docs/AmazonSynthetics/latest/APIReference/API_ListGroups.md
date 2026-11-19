@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # ListGroups
-<a name="API_ListGroups"></a>
 
 Returns a list of all groups in the account, displaying their names, unique IDs, and ARNs. The groups from all Regions are returned.
 

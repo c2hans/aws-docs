@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GeoProxi
 ---
 
 # GeoProximityLocation
-<a name="API_GeoProximityLocation"></a>
 
  (Resource record sets only): A complex type that lets you specify where your resources are located. Only one of `LocalZoneGroup`, `Coordinates`, or ` AWSRegion` is allowed per request at a time.
 

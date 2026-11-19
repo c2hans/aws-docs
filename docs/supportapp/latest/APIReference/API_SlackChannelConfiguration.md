@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_Slack
 ---
 
 # SlackChannelConfiguration
-<a name="API_SlackChannelConfiguration"></a>
 
 The configuration for a Slack channel that you added for your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Considerations for DB cluster snapshot exports
-<a name="aurora-export-snapshot.Considerations"></a>
 
 ## Limitations
 <a name="aurora-export-snapshot.Limits"></a>

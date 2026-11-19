@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/vpclin
 ---
 
 # VPCLinks
-<a name="vpclinks"></a>
 
 Represents your VPC links as a collection. A collection offers a paginated view of your VPC links.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/ainfo.html
 ---
 
 # Accessing account information in the AWS Management Console
-<a name="ainfo"></a>
 
 If you have the necessary permissions, you can access information about your AWS account from the console.
 

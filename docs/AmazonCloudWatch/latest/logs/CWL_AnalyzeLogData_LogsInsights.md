@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Analyze
 ---
 
 # CloudWatch Logs Insights query language (Logs Insights QL)
-<a name="CWL_AnalyzeLogData_LogsInsights"></a>
 
 This section includes full documentation of Logs Insights QL commands and functions. It also includes sample queries for this language.
 

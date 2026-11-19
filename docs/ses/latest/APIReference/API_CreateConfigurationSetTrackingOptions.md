@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfig
 ---
 
 # CreateConfigurationSetTrackingOptions
-<a name="API_CreateConfigurationSetTrackingOptions"></a>
 
 Creates an association between a configuration set and a custom domain for open and click event tracking.
 

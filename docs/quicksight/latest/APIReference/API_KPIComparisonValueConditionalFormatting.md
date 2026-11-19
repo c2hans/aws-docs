@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPICo
 ---
 
 # KPIComparisonValueConditionalFormatting
-<a name="API_KPIComparisonValueConditionalFormatting"></a>
 
 The conditional formatting for the comparison value of a KPI visual.
 

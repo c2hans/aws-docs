@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/custom-copy.html
 ---
 
 # Copying custom models between AWS accounts
-<a name="custom-copy"></a>
 
 Amazon Comprehend users can copy trained custom models between AWS accounts in a two-step process. First, a user in one AWS account (account A), *shares* a custom model that's in their account. Then, a user in another AWS account (account B) *imports* the model into their account. The account B user does not need to train the model, and does not need to copy (or access) the original training data or test data.
 

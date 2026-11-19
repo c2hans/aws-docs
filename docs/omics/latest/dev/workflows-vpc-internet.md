@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-vpc-internet.
 ---
 
 # Internet access for VPC-connected workflows
-<a name="workflows-vpc-internet"></a>
 
 When you connect an AWS HealthOmics run to a VPC, the run can only access resources available within that VPC. To give your run access to the public internet or AWS services outside the VPC, you must configure your VPC with the appropriate networking resources.
 

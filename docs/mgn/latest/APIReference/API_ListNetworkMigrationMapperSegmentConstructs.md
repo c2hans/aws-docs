@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationMapperSegmentConstructs
-<a name="API_ListNetworkMigrationMapperSegmentConstructs"></a>
 
 Lists constructs within a mapper segment, representing individual infrastructure components like VPCs, subnets, or security groups.
 

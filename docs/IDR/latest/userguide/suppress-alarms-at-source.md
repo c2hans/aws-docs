@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/suppress-alarms-at-
 ---
 
 # Suppress alarms at the alarm source
-<a name="suppress-alarms-at-source"></a>
 
 Specify which alarms engage with Incident Detection and Response and when they do so by suppressing alarms at the alarm source.
 

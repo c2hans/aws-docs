@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ProfileShareSummary
-<a name="API_ProfileShareSummary"></a>
 
 Summary of a profile share.
 

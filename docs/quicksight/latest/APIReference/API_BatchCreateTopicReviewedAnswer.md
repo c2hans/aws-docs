@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Batch
 ---
 
 # BatchCreateTopicReviewedAnswer
-<a name="API_BatchCreateTopicReviewedAnswer"></a>
 
 Creates new reviewed answers for a Q Topic.
 

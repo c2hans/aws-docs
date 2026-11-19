@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/account-mgmt-costs-cal
 ---
 
 # Understanding estimated usage costs for Macie
-<a name="account-mgmt-costs-calculations"></a>
 
 Amazon Macie pricing is based on the following dimensions.
 

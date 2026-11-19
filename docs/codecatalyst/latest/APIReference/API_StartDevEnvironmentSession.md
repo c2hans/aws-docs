@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Sta
 ---
 
 # StartDevEnvironmentSession
-<a name="API_StartDevEnvironmentSession"></a>
 
 Starts a session for a specified Dev Environment.
 

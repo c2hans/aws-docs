@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FlowQuic
 ---
 
 # FlowQuickConnectConfig
-<a name="API_FlowQuickConnectConfig"></a>
 
  Configuration for quick connect.
 

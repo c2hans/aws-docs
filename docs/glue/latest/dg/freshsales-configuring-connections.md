@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/freshsales-configuring-co
 ---
 
 # Configuring Freshsales connections
-<a name="freshsales-configuring-connections"></a>
 
 Freshsales supports custom authentication.
 

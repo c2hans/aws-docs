@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaStreamS
 ---
 
 # MediaStreamSourceConfiguration
-<a name="API_MediaStreamSourceConfiguration"></a>
 
 The media stream that is associated with the source, and the parameters for that association.
 

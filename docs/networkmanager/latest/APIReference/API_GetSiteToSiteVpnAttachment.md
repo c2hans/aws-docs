@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetSiteToSiteVpnAttachment
-<a name="API_GetSiteToSiteVpnAttachment"></a>
 
 Returns information about a site-to-site VPN attachment.
 

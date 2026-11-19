@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/us
 ---
 
 # Use the SDK
-<a name="using"></a>
 
 This section provides basic information required to use the AWS SDK for Kotlin.
 

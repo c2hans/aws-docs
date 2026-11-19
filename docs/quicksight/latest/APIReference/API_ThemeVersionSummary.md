@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Theme
 ---
 
 # ThemeVersionSummary
-<a name="API_ThemeVersionSummary"></a>
 
 The theme version.
 

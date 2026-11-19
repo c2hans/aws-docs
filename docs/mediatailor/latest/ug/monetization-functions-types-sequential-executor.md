@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Sequential executor
-<a name="monetization-functions-types-sequential-executor"></a>
 
 ## When to use
 <a name="monetization-functions-types-sequential-executor-when"></a>

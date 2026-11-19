@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Create domain units in Amazon SageMaker Unified Studio
-<a name="create-domain-unit"></a>
 
 **To create a domain unit**
 

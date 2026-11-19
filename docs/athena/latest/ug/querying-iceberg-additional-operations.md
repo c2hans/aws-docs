@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-additi
 ---
 
 # Perform other DDL operations on Iceberg tables
-<a name="querying-iceberg-additional-operations"></a>
 
 In addition to the schema evolution operations described in [Evolve Iceberg table schema](querying-iceberg-evolving-table-schema.md), you can also perform the following DDL operations on Apache Iceberg tables in Athena.
 

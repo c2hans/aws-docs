@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/BidEvictedEvent.
 ---
 
 # Determine whether Amazon EC2 terminated a Spot Instance
-<a name="BidEvictedEvent"></a>
 
 A Spot Instance runs until Amazon EC2 terminates it in response to a Spot Instance interruption, or until you terminate it yourself. For more information, see [Behavior of Spot Instance interruptions](interruption-behavior.md).
 

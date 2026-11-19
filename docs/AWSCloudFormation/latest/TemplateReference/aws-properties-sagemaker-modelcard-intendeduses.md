@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelCard IntendedUses
-<a name="aws-properties-sagemaker-modelcard-intendeduses"></a>
 
 The intended uses of a model.
 
@@ -58,7 +57,7 @@ Factors affecting model efficacy.
 `IntendedUses`  <a name="cfn-sagemaker-modelcard-intendeduses-intendeduses"></a>
 The intended use cases for the model.
 *Required*: No
-*Type*: [String](#aws-properties-sagemaker-modelcard-intendeduses)
+*Type*: [String](aws-properties-sagemaker-modelcard-intendeduses.md)
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

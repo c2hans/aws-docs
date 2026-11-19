@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # openCypher extensions in Amazon Neptune
-<a name="access-graph-opencypher-extensions"></a>
 
  Amazon Neptune supports the openCypher specification reference version 9. Please refer to [openCypher specification compliance in Amazon Neptune](feature-opencypher-compliance.md) in Amazon Neptune for details. Additionally, Amazon Neptune supports the features listed here. Unless specific versions are mentioned, the features are available in Neptune Database and Neptune Analytics.
 

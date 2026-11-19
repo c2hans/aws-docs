@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/fullstory-support.html
 ---
 
 # AWS Glue support for Fullstory
-<a name="fullstory-support"></a>
 
 AWS Glue supports Fullstory as follows:
 

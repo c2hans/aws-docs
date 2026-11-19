@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/datastores-hive-referen
 ---
 
 # Modify the Athena external Hive metastore connector
-<a name="datastores-hive-reference-implementation"></a>
 
 If you have special requirements, you can modify the Athena connector for external Hive metastore for your own use. Athena provides a reference implementation of the connector on GitHub.com at [https://github.com/awslabs/aws-athena-hive-metastore](https://github.com/awslabs/aws-athena-hive-metastore). Most use cases do not require you to modify the reference implementation. However, if necessary, you can modify the source code and build the artifacts yourself.
 

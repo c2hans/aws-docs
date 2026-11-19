@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Contin
 ---
 
 # ContinueAsNewWorkflowExecutionFailedEventAttributes
-<a name="API_ContinueAsNewWorkflowExecutionFailedEventAttributes"></a>
 
 Provides the details of the `ContinueAsNewWorkflowExecutionFailed` event.
 

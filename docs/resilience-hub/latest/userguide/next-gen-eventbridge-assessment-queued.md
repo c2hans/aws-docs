@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Failure mode assessment queued event
-<a name="next-gen-eventbridge-assessment-queued"></a>
 
 The following is an example event emitted when an assessment is queued for delayed processing. The assessment is retried and completes within 24 hours.
 

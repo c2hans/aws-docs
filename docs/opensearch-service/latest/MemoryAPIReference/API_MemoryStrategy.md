@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # MemoryStrategy
-<a name="API_MemoryStrategy"></a>
 
 A memory strategy: how a space extracts one kind of memory from its events.
 

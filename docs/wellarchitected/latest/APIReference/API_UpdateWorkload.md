@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # UpdateWorkload
-<a name="API_UpdateWorkload"></a>
 
 Update an existing workload.
 

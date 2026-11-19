@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_BlockAct
 ---
 
 # BlockAction
-<a name="API_BlockAction"></a>
 
 Specifies that Shield Advanced should configure its AWS WAF rules with the AWS WAF `Block` action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/providing-azimu
 ---
 
 # Provide azimuth elevation ephemeris data
-<a name="providing-azimuth-elevation-ephemeris-data"></a>
 
 **Important**
  The azimuth elevation ephemeris feature is currently in a Preview state and requires explicit onboarding.

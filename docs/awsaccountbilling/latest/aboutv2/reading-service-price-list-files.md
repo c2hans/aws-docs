@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/reading
 ---
 
 # Reading the service price list files
-<a name="reading-service-price-list-files"></a>
 
 |  |
 | --- |

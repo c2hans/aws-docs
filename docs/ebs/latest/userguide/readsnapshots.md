@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/readsnapshots.html
 ---
 
 # Read Amazon EBS snapshots with EBS direct APIs
-<a name="readsnapshots"></a>
 
 The following steps describe how to use the EBS direct APIs to read snapshots:
 

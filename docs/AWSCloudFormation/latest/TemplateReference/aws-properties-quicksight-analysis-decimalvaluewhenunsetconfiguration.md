@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Analysis DecimalValueWhenUnsetConfiguration
-<a name="aws-properties-quicksight-analysis-decimalvaluewhenunsetconfiguration"></a>
 
 The configuration that defines the default value of a `Decimal` parameter when a value has not been set.
 

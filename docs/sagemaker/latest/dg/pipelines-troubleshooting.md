@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-troublesho
 ---
 
 # Troubleshooting Amazon SageMaker Pipelines
-<a name="pipelines-troubleshooting"></a>
 
 When using Amazon SageMaker Pipelines, you might run into issues for various reasons. This topic provides information about common errors and how to resolve them.
 

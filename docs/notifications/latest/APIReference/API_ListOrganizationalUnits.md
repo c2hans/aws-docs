@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListOrganizationalUnits
-<a name="API_ListOrganizationalUnits"></a>
 
 Returns a list of organizational units associated with a notification configuration.
 

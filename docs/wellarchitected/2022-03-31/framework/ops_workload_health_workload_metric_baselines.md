@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS08-BP04 Establish workload metrics baselines
-<a name="ops_workload_health_workload_metric_baselines"></a>
 
  Establish baselines for metrics to provide expected values as the basis for comparison and identification of under- and over-performing components. Identify thresholds for improvement, investigation, and intervention.
 

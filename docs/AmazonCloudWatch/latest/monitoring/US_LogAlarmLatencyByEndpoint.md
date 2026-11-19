@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_Lo
 ---
 
 # Create a Log Alarm on high latency per endpoint
-<a name="US_LogAlarmLatencyByEndpoint"></a>
 
 You can create a multi-contributor Log Alarm that monitors average latency grouped by endpoint. The alarm transitions to `ALARM` state if any endpoint exceeds the latency threshold.
 

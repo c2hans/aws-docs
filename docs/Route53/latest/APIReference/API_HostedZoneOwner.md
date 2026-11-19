@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_HostedZo
 ---
 
 # HostedZoneOwner
-<a name="API_HostedZoneOwner"></a>
 
 A complex type that identifies a hosted zone that a specified Amazon VPC is associated with and the owner of the hosted zone. If there is a value for `OwningAccount`, there is no value for `OwningService`, and vice versa.
 

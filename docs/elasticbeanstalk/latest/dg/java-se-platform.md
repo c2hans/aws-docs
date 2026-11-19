@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/java-se-platf
 ---
 
 # Using the Elastic Beanstalk Java SE platform
-<a name="java-se-platform"></a>
 
 This topic describes how to configure, build, and run your Java applications that run on the AWS Elastic Beanstalk Java SE platform.
 

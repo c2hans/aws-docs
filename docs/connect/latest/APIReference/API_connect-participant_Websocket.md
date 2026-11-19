@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Websocket
-<a name="API_connect-participant_Websocket"></a>
 
 The websocket for the participant's connection.
 

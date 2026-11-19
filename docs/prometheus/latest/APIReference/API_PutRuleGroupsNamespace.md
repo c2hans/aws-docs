@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_PutRu
 ---
 
 # PutRuleGroupsNamespace
-<a name="API_PutRuleGroupsNamespace"></a>
 
 Updates an existing rule groups namespace within a workspace. A rule groups namespace is associated with exactly one rules file. A workspace can have multiple rule groups namespaces.
 

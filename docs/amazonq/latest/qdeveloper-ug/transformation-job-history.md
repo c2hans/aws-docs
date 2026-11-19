@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/transformat
 ---
 
 # Viewing transformation job history
-<a name="transformation-job-history"></a>
 
 Amazon Q provides a comprehensive overview of your Java transformation job history, allowing you to track and review your transformation jobs in both IDEs and the command line.
 

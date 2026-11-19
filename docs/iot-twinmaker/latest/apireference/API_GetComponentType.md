@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ge
 ---
 
 # GetComponentType
-<a name="API_GetComponentType"></a>
 
 Retrieves information about a component type.
 

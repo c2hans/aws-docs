@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/discoverin
 ---
 
 # Discovering Multi-Product Solutions
-<a name="discovering-multi-product-solutions"></a>
 
 ## AI-Powered Discovery
 <a name="ai-powered-discovery"></a>

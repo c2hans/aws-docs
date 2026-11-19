@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # Pulumi
-<a name="pulumi"></a>
 
 [Pulumi](https://www.pulumi.com/docs/get-started/) is an open source infrastructure as code tool. It supports existing, common programming languages, such as TypeScript, JavaScript, Python, Go, .NET, Java, and YAML. It also uses its native ecosystem to interact with cloud resources through the Pulumi SDK. A downloadable CLI, runtime, libraries, and a hosted service work together to provision, update, and manage cloud infrastructure.
 

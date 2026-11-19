@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-last-launche
 ---
 
 # Check when an Amazon EC2 AMI was last used
-<a name="ami-last-launched-time"></a>
 
 Amazon EC2 automatically tracks the date and time when an AMI was last used to launch an instance. If you have an AMI that has not been used to launch an instance in a long time, consider whether the AMI is a good candidate for [deregistration](deregister-ami.md) or [deprecation](ami-deprecate.md).
 

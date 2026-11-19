@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListInvoiceUnits
-<a name="API_invoicing_ListInvoiceUnits"></a>
 
 This fetches a list of all invoice unit definitions for a given account, as of the provided `AsOf` date.
 

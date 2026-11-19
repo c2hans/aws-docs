@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Participant
-<a name="API_account_Participant"></a>
 
 Represents a participant in a partner connection, containing their profile and account information.
 

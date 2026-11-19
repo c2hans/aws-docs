@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_req
 ---
 
 # Required API permissions for Reachability Analyzer
-<a name="security_iam_required-API-permissions"></a>
 
 Reachability Analyzer relies on data from other AWS services. It uses permissions from the following services:
 + Amazon EC2

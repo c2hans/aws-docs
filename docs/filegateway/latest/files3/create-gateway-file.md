@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/create-gateway
 ---
 
 # Create and activate an Amazon S3 File Gateway
-<a name="create-gateway-file"></a>
 
 In this section, you can find instructions on how to create, deploy, and activate a File Gateway in AWS Storage Gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DeleteSuggester
-<a name="API_DeleteSuggester"></a>
 
 ## Description
 <a name="API_DeleteSuggester_Description"></a>

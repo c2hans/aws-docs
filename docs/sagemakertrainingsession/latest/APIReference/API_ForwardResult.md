@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # ForwardResult
-<a name="API_ForwardResult"></a>
 
 The result of a forward-only pass through the model.
 

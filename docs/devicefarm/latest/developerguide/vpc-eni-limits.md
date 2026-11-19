@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/vpc-eni
 ---
 
 # Limits
-<a name="vpc-eni-limits"></a>
 
 The following limitations are applicable to the VPC-ENI feature:
 + You can provide up to five security groups in the VPC configuration of a Device Farm project.

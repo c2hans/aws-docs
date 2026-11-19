@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/outposts-rep
 ---
 
 # Prerequisites for creating replication rules
-<a name="outposts-replication-prerequisites-config"></a>
 
 **Topics**
 + [Connecting your source and destination Outpost subnets](#outposts-rep-preone)

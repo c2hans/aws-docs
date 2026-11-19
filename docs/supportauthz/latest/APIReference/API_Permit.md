@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Per
 ---
 
 # Permit
-<a name="API_Permit"></a>
 
 The permit definition specifying the authorized actions, resources, and time-window conditions for a support operator.
 

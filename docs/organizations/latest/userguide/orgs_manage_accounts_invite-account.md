@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Sending account invitations with AWS Organizations
-<a name="orgs_manage_accounts_invite-account"></a>
 
 To invite accounts to your organization, you must first verify that you own the email address associated with the management account. For more information, see [Email address verification with AWS Organizations](about-email-verification.md). After you verify your email address, complete the following steps to invite accounts to your organization. After you send an invitation, the recipient can accept or decline it. For more information, see [Accepting or declining account invitations with AWS Organizations](orgs_manage_accounts_accept-decline-invite.md).
 

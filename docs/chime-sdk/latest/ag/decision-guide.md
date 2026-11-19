@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/decision-guide.html
 ---
 
 # Decision guide
-<a name="decision-guide"></a>
 
 To find the right service for your use case, answer the following questions:
 

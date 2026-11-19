@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetContac
 ---
 
 # GetContact
-<a name="API_GetContact"></a>
 
 Returns a contact from a contact list.
 

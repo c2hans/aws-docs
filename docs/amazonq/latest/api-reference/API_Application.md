@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Applica
 ---
 
 # Application
-<a name="API_Application"></a>
 
 Summary information for an Amazon Q Business application.
 

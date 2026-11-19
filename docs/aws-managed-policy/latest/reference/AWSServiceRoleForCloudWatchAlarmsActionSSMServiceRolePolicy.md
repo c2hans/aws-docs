@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForCloudWatchAlarmsActionSSMServiceRolePolicy
-<a name="AWSServiceRoleForCloudWatchAlarmsActionSSMServiceRolePolicy"></a>
 
 **Description**: Provides access to Systems Manager resources used by CloudWatch Alarms
 

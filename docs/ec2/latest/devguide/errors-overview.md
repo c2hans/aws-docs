@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/errors-overview.html
 ---
 
 # Error codes for the Amazon EC2 API
-<a name="errors-overview"></a>
 
 Amazon EC2 has two types of error codes:
 + **Client errors**. These errors are usually caused by something the client did. Common causes include specifying an incorrect or invalid parameter in the request, or using an action or resource on behalf of a user that doesn't have permission to use the action or resource. These errors are accompanied by a 400-series HTTP response code.

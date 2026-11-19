@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/self-servic
 ---
 
 # EDI self-service reports and options
-<a name="self-service-reports"></a>
 
 The following self-service reports are available to you:
 + **Monthly billing charges report** – Details about EDI monthly billing charges.

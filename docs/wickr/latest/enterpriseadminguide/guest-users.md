@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/guest-
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Guest users
-<a name="guest-users"></a>
 
 The Wickr guest user feature allows individual guest users to sign in to the Wickr client and collaborate with Wickr network users. Wickr administrators can enable or disable guest users for their Wickr networks in the **Security Group** page of the Wickr admin console.
 

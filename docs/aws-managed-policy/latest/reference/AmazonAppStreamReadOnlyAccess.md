@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonAppStreamReadOnlyAccess
-<a name="AmazonAppStreamReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon AppStream via the AWS Management Console.
 

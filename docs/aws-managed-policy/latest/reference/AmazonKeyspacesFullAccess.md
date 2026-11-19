@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonKeyspacesFullAccess
-<a name="AmazonKeyspacesFullAccess"></a>
 
 **Description**: Provide full access to Amazon Keyspaces
 

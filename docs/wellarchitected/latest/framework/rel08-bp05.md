@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel08-b
 ---
 
 # REL08-BP05 Deploy changes with automation
-<a name="rel08-bp05"></a>
 
  Changes to production are one of the largest sources of operational risk. Automate deployments and patching to remove manual steps where human error exists so that every change follows the same tested path.
 

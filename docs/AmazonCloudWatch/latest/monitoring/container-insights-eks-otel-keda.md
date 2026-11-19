@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Collecting KEDA metrics with OTel Container Insights
-<a name="container-insights-eks-otel-keda"></a>
 
 KEDA (Kubernetes Event-Driven Autoscaling) is an open-source project that allows you to scale Kubernetes workloads based on external metrics from sources like Amazon SQS, Amazon CloudWatch, or custom Prometheus queries. Container Insights collects KEDA metrics through Prometheus scraping. With Container Insights, you gain built-in visibility into ScaledObject status, scaler health, and scale loop performance. You do not need to set up Prometheus or Grafana manually.
 

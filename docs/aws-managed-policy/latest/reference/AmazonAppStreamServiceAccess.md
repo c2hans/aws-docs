@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonAppStreamServiceAccess
-<a name="AmazonAppStreamServiceAccess"></a>
 
 **Description**: Default policy for Amazon AppStream service role.
 

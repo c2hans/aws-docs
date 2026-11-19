@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetRe
 ---
 
 # GetRestoreTestingPlan
-<a name="API_GetRestoreTestingPlan"></a>
 
 Returns `RestoreTestingPlan` details for the specified `RestoreTestingPlanName`. The details are the body of a restore testing plan in JSON format, in addition to plan metadata.
 

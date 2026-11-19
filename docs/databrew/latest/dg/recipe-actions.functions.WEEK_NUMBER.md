@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # WEEK\_NUMBER
-<a name="recipe-actions.functions.WEEK_NUMBER"></a>
 
 Creates a new column containing the number of the week (from 1 to 52), from a string that represents a date.
 

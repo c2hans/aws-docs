@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/emr.html
 ---
 
 # Using Amazon EMR built on AL2023
-<a name="emr"></a>
 
  Amazon EMR is a web service that makes it easy to process vast amounts of data efficiently using Apache Hadoop and services offered by AWS.
 

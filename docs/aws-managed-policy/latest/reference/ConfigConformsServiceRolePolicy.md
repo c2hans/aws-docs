@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Conf
 ---
 
 # ConfigConformsServiceRolePolicy
-<a name="ConfigConformsServiceRolePolicy"></a>
 
 **Description**: Policy needed for AWSConfig to create conformance packs
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # CanaryEntity
-<a name="API_CanaryEntity"></a>
 
 A structure that contains identifying information for a CloudWatch Synthetics canary entity used in audit targeting.
 

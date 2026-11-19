@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_HttpProperties.
 ---
 
 # HttpProperties
-<a name="API_HttpProperties"></a>
 
 A complex type that contains the name of an HTTP namespace.
 

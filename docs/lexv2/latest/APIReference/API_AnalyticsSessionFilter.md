@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsS
 ---
 
 # AnalyticsSessionFilter
-<a name="API_AnalyticsSessionFilter"></a>
 
 Contains fields describing a condition by which to filter the sessions. The expression may be understood as `name` `operator` `values`. For example:
 +  `LocaleId EQ en` – The locale is "en".

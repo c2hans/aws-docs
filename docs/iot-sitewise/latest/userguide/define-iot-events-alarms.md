@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/define-iot
 ---
 
 # Define AWS IoT Events alarms for AWS IoT SiteWise
-<a name="define-iot-events-alarms"></a>
 
 **Note**
 End of support notice: AWS ended support for AWS IoT Events. For more information, see [AWS IoT Events end of support](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-end-of-support.html).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ChatEntr
 ---
 
 # ChatEntryPointParameters
-<a name="API_ChatEntryPointParameters"></a>
 
 Parameters for initiating a chat test.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportMet
 ---
 
 # ExportMetric
-<a name="API_ExportMetric"></a>
 
 An object that contains a mapping between a `Metric` and `MetricAggregation`.
 

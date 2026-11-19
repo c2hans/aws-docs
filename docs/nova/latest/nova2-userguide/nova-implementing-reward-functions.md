@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-impleme
 ---
 
 # Implementing reward functions
-<a name="nova-implementing-reward-functions"></a>
 
 ## Overview
 <a name="nova-reward-overview"></a>

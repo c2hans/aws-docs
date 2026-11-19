@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Storing passwords in the AWS Schema Conversion Tool
-<a name="CHAP_UserInterface.StoringPasswords"></a>
 
 You can store a database password or SSL certificate in the AWS SCT cache. To store a password, choose **Store Password** when you create a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-bases
 ---
 
 # Monitor knowledge bases using CloudWatch Logs
-<a name="knowledge-bases-logging"></a>
 
 Amazon Bedrock supports a monitoring system to help you understand the execution of any data ingestion jobs for your knowledge bases. The following sections cover how to enable and configure the logging system for Amazon Bedrock knowledge bases using both the AWS Management Console and CloudWatch API. You can gain visibility into the data ingestion of your knowledge base resources with this logging system.
 

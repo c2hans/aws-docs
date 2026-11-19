@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 ---
 
 # Work with key value store
-<a name="kvs-with-functions-kvs"></a>
 
 You must create a key value store to hold the key-value pairs that you want to use in CloudFront Functions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/update-settin
 ---
 
 # Customize Lightsail load balancer health checks and HTTPS settings
-<a name="update-settings-for-lightsail-load-balancer-health-check-path-https-session-stickiness-persistence-cookie-duration"></a>
 
 When you create a Lightsail load balancer, you choose the AWS Region and the name. This topic instructs you how to update your load balancer to enable more options.
 

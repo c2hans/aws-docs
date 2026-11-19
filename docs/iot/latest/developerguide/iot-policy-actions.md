@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-policy-act
 ---
 
 # AWS IoT Core policy actions
-<a name="iot-policy-actions"></a>
 
 The following policy actions are defined by AWS IoT Core:MQTT Policy Actions
 

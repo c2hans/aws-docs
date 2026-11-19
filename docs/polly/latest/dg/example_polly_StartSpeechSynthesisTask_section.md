@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example_polly_StartSpeec
 ---
 
 # Use `StartSpeechSynthesisTask` with an AWS SDK or CLI
-<a name="example_polly_StartSpeechSynthesisTask_section"></a>
 
 The following code examples show how to use `StartSpeechSynthesisTask`.
 

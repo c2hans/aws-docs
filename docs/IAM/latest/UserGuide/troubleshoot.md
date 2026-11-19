@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot.html
 ---
 
 # Troubleshoot IAM
-<a name="troubleshoot"></a>
 
 Use the information here to help you diagnose and fix common issues when you work with AWS Identity and Access Management (IAM).
 

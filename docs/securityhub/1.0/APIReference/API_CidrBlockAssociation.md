@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CidrBlo
 ---
 
 # CidrBlockAssociation
-<a name="API_CidrBlockAssociation"></a>
 
 An IPv4 CIDR block association.
 

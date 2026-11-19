@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/size-query.ht
 ---
 
 # $size
-<a name="size-query"></a>
 
 The `$size` query operator matches documents where an array field has exactly the specified number of elements. This is useful for filtering documents based on array length.
 

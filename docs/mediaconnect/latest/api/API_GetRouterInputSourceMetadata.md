@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GetRouterInp
 ---
 
 # GetRouterInputSourceMetadata
-<a name="API_GetRouterInputSourceMetadata"></a>
 
 Retrieves detailed metadata information about a specific router input source, including stream details and connection state.
 

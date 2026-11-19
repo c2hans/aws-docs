@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Best practices for using Security Hub CSPM policies
-<a name="orgs_manage_policies_security_hub_cspm_best_practices"></a>
 
 Following these best practices helps you deploy and maintain Security Hub CSPM policies successfully across your organization. These guidelines cover Security Hub CSPM policy management and enforcement within AWS Organizations, including its complete-governance model, Region-specific configurations, and inheritance behavior.
 

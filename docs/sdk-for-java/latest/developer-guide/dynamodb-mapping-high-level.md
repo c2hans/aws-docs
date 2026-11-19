@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/dyna
 ---
 
 # High-level changes in mapping libraries from version 1 to version 2 of the SDK for Java
-<a name="dynamodb-mapping-high-level"></a>
 
 The names of the mapping client in each library differ in V1 and V2:
 + V1 - DynamoDBMapper

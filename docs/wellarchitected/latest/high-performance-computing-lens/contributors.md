@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals and organizations contributed to this version of this whitepaper:
 +  Aaron Bucher, Principal HPC Solutions Architect, Amazon Web Services

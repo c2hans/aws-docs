@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessEndpointPortRange
-<a name="API_CreateVerifiedAccessEndpointPortRange"></a>
 
 Describes the port range for a Verified Access endpoint.
 

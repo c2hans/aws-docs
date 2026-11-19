@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/repl.htm
 ---
 
 # Using the AWS SDK for Ruby REPL utility
-<a name="repl"></a>
 
 The `aws-sdk` gem includes a Read-Eval-Print-Loop (REPL) interactive command-line interface where you can test the SDK for Ruby and immediately see the results. SDK for Ruby gems are available at [RubyGems.org](https://rubygems.org/gems/aws-sdk/).
 

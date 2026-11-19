@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_OnDemandO
 ---
 
 # OnDemandOptionsRequest
-<a name="API_OnDemandOptionsRequest"></a>
 
 Describes the configuration of On-Demand Instances in an EC2 Fleet.
 

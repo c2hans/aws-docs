@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-cons
 ---
 
 # Application consistent Windows VSS based Amazon EBS snapshots
-<a name="application-consistent-snapshots"></a>
 
 You can take application-consistent snapshots of all Amazon EBS volumes attached to your Amazon EC2 Windows instances using [AWS Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html). The snapshot process uses the Windows [Volume Shadow Copy Service (VSS)](https://learn.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service) to take EBS volume level backups of VSS-aware applications. The snapshots include data from pending transactions between these applications and the disk. You don't have to shut down your instances or disconnect them when you need to back up all attached volumes.
 

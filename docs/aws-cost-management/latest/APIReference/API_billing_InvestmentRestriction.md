@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvestmentRestriction
-<a name="API_billing_InvestmentRestriction"></a>
 
 A restriction that caps the value that can be disbursed for an investment. The cap applies for each attestation window.
 

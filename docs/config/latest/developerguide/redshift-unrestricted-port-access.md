@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/redshift-un
 ---
 
 # redshift-unrestricted-port-access
-<a name="redshift-unrestricted-port-access"></a>
 
 Checks if security groups associated with an Amazon Redshift cluster have inbound rules that allow unrestricted incoming traffic. The rule is NON\_COMPLIANT if there are inbound rules that allow unrestricted incoming traffic to the Redshift cluster port.
 

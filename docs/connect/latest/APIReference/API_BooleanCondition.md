@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BooleanC
 ---
 
 # BooleanCondition
-<a name="API_BooleanCondition"></a>
 
 A boolean search condition for Search APIs.
 

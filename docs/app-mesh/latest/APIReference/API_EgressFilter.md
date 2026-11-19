@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_EgressF
 ---
 
 # EgressFilter
-<a name="API_EgressFilter"></a>
 
 An object that represents the egress filter rules for a service mesh.
 

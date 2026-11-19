@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-get-capacity.h
 ---
 
 # Get compute capacity for SageMaker Training Jobs
-<a name="train-get-capacity"></a>
 
 Before you request compute capacity, confirm that your AWS account meets the following prerequisites. Addressing these requirements in order helps you avoid common provisioning failures.
 

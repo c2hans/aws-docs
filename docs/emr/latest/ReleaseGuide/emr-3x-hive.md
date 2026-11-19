@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-hive.html
 ---
 
 # Hive application specifics for earlier AMI versions of Amazon EMR
-<a name="emr-3x-hive"></a>
 
 ## Log files
 <a name="emr-3x-hive-log-files"></a>

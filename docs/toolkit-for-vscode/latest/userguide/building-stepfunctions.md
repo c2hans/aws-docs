@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/buil
 ---
 
 # Working with AWS Step Functions
-<a name="building-stepfunctions"></a>
 
 The following sections describe how to work with AWS Step Functions `Amazon State Language (ASL)` files containing state machine definitions in the AWS Toolkit. For detailed information about AWS Step Functions state machines, see the [Learn about state machines in Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-statemachines.html) topic in the *AWS Step Functions* Developer Guide.
 

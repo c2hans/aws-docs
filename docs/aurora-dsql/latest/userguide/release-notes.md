@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/release-not
 ---
 
 # Release notes for Aurora DSQL
-<a name="release-notes"></a>
 
 This page describes new features, service launches, and important updates for Aurora DSQL. For documentation-specific changes, see the [Document history](doc-history.html).
 
@@ -12,6 +11,9 @@ This page describes new features, service launches, and important updates for Au
 
 ### November 2026
 <a name="release-notes-2026-11"></a>
+
+November 18, 2026
+✨ *Feature* — **Audit logging** — Aurora DSQL now supports audit logging, enabling you to record the SQL statements that run on your clusters and deliver the audit records to an Amazon S3 bucket. For more information, see [Audit logging](audit-logging.html).
 
 November 13, 2026
 🐘 *PostgreSQL Compatibility* — ** `ALTER SYSTEM`** — Aurora DSQL now supports setting a subset of parameters at the system level. For more information, see [ALTER SYSTEM](alter-system-syntax-support.html).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # RoutingType
-<a name="API_RoutingType"></a>
 
 Specifies routing configuration for user pool domains. Contains failover settings for multi-region deployments.
 

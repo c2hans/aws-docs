@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdateCluster
-<a name="API_UpdateCluster"></a>
 
 Updates the cluster.
 

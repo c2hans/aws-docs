@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/name.html
 ---
 
 # .name
-<a name="name"></a>
 
 Used by anyone who wants to create a personalized web presence.
 

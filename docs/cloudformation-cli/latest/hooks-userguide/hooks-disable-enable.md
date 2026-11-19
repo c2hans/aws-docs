@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Disable and enable CloudFormation Hooks
-<a name="hooks-disable-enable"></a>
 
 This topic describes how to disable and then re-enable a Hook to temporarily prevent it from being active in your account. Disabling Hooks can be useful when you need to investigate an issue without interference from Hooks.
 

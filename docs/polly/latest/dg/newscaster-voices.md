@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/newscaster-voices.html
 ---
 
 # Applying the newscaster voice
-<a name="newscaster-voices"></a>
 
 People use different speaking styles, depending on context. Casual conversation, for example, sounds very different from a TV or radio newscast. Because of the way standard voices are made, they can't produce different speaking styles. However, neural voices can. They can be trained for a specific speaking style, with the variations and emphasis on certain parts of speech inherent in that style.
 

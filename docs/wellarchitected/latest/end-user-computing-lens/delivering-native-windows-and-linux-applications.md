@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Delivering native Windows and Linux applications
-<a name="delivering-native-windows-and-linux-applications"></a>
 
  **Application virtualization for Windows and Linux**
 

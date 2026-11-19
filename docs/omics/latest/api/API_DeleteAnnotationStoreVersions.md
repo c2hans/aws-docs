@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteAnnotationSto
 ---
 
 # DeleteAnnotationStoreVersions
-<a name="API_DeleteAnnotationStoreVersions"></a>
 
  Deletes one or multiple versions of an annotation store.
 

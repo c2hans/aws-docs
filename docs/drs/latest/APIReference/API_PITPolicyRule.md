@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_PITPolicyRul
 ---
 
 # PITPolicyRule
-<a name="API_PITPolicyRule"></a>
 
 A rule in the Point in Time (PIT) policy representing when to take snapshots and how long to retain them for.
 

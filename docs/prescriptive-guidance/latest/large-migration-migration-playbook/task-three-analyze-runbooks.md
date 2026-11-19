@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 3: Analyzing and testing your migration runbooks
-<a name="task-three-analyze-runbooks"></a>
 
 In this task, you walk through each runbook that you built in the previous task, analyze any identified gaps, conduct a migration proof of concept (POC), and review the notes and feedback.
 

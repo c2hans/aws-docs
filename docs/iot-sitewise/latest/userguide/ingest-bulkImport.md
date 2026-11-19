@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ingest-bul
 ---
 
 # CreateBulkImportJob API
-<a name="ingest-bulkImport"></a>
 
 Use the `CreateBulkImportJob` API to import large amounts of data from Amazon S3. Your data must be saved in the CSV format in Amazon S3. Data files can have the following columns.
 

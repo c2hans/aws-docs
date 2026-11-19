@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InputImage
-<a name="API_agent-runtime_InputImage"></a>
 
 Contains the image data for multimodal knowledge base queries, including format and content.
 

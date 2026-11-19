@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Test image transformations
-<a name="test-image-transformations"></a>
 
 There are two ways to test your configuration.
 

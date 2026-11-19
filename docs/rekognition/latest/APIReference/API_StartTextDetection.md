@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Star
 ---
 
 # StartTextDetection
-<a name="API_StartTextDetection"></a>
 
 Starts asynchronous detection of text in a stored video.
 

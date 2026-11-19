@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-owner-c
 ---
 
 # Verifying bucket ownership with bucket owner condition
-<a name="bucket-owner-condition"></a>
 
 Amazon S3 bucket owner condition ensures that the buckets you use in your S3 operations belong to the AWS accounts that you expect.
 

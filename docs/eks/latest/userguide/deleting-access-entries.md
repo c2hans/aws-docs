@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/deleting-access-ent
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Delete access entries
-<a name="deleting-access-entries"></a>
 
 If you discover that you deleted an access entry in error, you can always recreate it. If the access entry that you’re deleting is associated to any access policies, the associations are automatically deleted. You don’t have to disassociate access policies from an access entry before deleting the access entry.
 

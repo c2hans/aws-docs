@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # IntegrationConfig
-<a name="API_connect-customer-profiles_IntegrationConfig"></a>
 
 Configuration data for integration workflow.
 

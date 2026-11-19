@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_Timezone.html
 ---
 
 # Timezone
-<a name="API_Timezone"></a>
 
 A time zone associated with a [DBInstance](API_DBInstance.md).
 

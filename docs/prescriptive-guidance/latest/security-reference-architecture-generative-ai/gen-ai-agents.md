@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 3. Providing secure access to data and systems for generative AI
-<a name="gen-ai-agents"></a>
 
 |  |
 | --- |

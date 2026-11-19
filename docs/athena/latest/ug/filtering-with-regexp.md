@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/filtering-with-regexp.h
 ---
 
 # Find keywords in arrays using `regexp_like`
-<a name="filtering-with-regexp"></a>
 
 The following examples illustrate how to search a dataset for a keyword within an element inside an array, using the [regexp\_like](https://prestodb.io/docs/current/functions/regexp.html) function. It takes as an input a regular expression pattern to evaluate, or a list of terms separated by a pipe (\|), evaluates the pattern, and determines if the specified string contains it.
 

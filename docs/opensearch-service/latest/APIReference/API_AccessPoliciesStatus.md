@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AccessPoliciesStatus
-<a name="API_AccessPoliciesStatus"></a>
 
 The configured access rules for the domain's search endpoint, and the current status of those rules.
 

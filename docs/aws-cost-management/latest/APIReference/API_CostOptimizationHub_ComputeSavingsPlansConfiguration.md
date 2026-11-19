@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ComputeSavingsPlansConfiguration
-<a name="API_CostOptimizationHub_ComputeSavingsPlansConfiguration"></a>
 
 The Compute Savings Plans configuration used for recommendations.
 

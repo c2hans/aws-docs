@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # RuleBasedProperties
-<a name="API_RuleBasedProperties"></a>
 
 An object which defines the list of matching rules to run in a matching workflow.
 

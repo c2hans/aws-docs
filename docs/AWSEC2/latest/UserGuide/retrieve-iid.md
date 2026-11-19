@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/retrieve-iid.htm
 ---
 
 # Retrieve the instance identity document for an EC2 instance
-<a name="retrieve-iid"></a>
 
 The instance identity document for an Amazon EC2 instance uses a plaintext JSON format. For a description of the contents of an instance identity document, see [Instance identity documents for Amazon EC2 instances](instance-identity-documents.md).
 

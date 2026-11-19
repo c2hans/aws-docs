@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_AccountE
 ---
 
 # AccountEnforcedGuardrailInferenceInputConfiguration
-<a name="API_AccountEnforcedGuardrailInferenceInputConfiguration"></a>
 
 Account-level enforced guardrail input configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Create
 ---
 
 # CreateAppInstanceAdmin
-<a name="API_CreateAppInstanceAdmin"></a>
 
 Promotes an `AppInstanceUser` or `AppInstanceBot` to an `AppInstanceAdmin`. The promoted entity can perform the following actions.
 +  `ChannelModerator` actions across all channels in the `AppInstance`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inte
 ---
 
 # Integrated partners
-<a name="integrated-partners"></a>
 
  The Media2Cloud on AWS solution is designed to provide a standardized architecture to support [AWS Partners](https://aws.amazon.com/partners/) to integrate with content from AWS customers. A standardized architecture helps accelerate the migration and supply chain process, and helps Media Asset Manager (MAM) partners provide solutions for their customers.
 

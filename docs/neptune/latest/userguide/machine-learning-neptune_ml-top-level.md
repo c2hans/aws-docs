@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Top-level elements in the neptune\_ml field in additionalParams
-<a name="machine-learning-neptune_ml-top-level"></a>
 
 ## The version element in neptune\_ml
 <a name="machine-learning-neptune_ml-version"></a>

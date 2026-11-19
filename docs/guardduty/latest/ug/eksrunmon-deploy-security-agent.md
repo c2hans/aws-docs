@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/eksrunmon-deploy-sec
 ---
 
 # Installing GuardDuty security agent manually on Amazon EKS resources
-<a name="eksrunmon-deploy-security-agent"></a>
 
 This section describes how you can deploy the GuardDuty security agent for the first time for specific EKS clusters. Before you proceed with this section, make sure you have already set up the prerequisites and enabled Runtime Monitoring for your accounts. The GuardDuty security agent (EKS add-on) will not work if you do not enable Runtime Monitoring.
 

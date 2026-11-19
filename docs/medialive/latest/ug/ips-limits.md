@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-limits.html
 ---
 
 # Rules and limits for input switches
-<a name="ips-limits"></a>
 
 This section describes the rules and limits that apply to input switches in the MediaLive schedule.
 

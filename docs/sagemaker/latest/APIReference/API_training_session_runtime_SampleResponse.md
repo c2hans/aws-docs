@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # SampleResponse
-<a name="API_training_session_runtime_SampleResponse"></a>
 
 The response containing generated samples and optional log-probabilities.
 

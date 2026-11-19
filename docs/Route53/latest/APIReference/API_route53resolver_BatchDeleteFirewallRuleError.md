@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # BatchDeleteFirewallRuleError
-<a name="API_route53resolver_BatchDeleteFirewallRuleError"></a>
 
 An error that occurred while deleting a firewall rule in a batch operation.
 

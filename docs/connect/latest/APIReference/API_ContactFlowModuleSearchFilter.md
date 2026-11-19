@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFlowModuleSearchFilter
-<a name="API_ContactFlowModuleSearchFilter"></a>
 
 The search criteria to be used to return flow modules.
 

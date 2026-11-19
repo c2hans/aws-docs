@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # View or edit an AWS Cloud WAN core network Direct Connect gateway attachment
-<a name="cloudwan-dxattachment-update"></a>
 
 You can update the edge locations for a Direct Connect gateway attachment using either the Network Manager console or using the AWS CLI. The Direct Connect gateway attachment must first be created using the Direct Connect console. For more information about Direct Connect gateway attachments and Cloud WAN, see [Direct Connect gateway attachments](cloudwan-dxattach-about.md).
 

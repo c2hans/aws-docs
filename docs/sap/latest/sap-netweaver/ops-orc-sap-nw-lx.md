@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/ops-orc-sap-nw-
 ---
 
 # Operations
-<a name="ops-orc-sap-nw-lx"></a>
 
 ## Tagging AWS resources
 <a name="tag-res-orc-sap-nw-lx"></a>

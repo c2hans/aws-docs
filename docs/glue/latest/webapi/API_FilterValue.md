@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FilterValue.html
 ---
 
 # FilterValue
-<a name="API_FilterValue"></a>
 
 Represents a single entry in the list of values for a `FilterExpression`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Cr
 ---
 
 # CreateDirectConnectGatewayAssociationProposal
-<a name="API_CreateDirectConnectGatewayAssociationProposal"></a>
 
 Creates a proposal to associate the specified virtual private gateway or transit gateway with the specified Direct Connect gateway.
 

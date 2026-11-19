@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Blue/Green Deployments on AWS
-<a name="welcome"></a>
 
 Publication date: **September 29, 2021** ([Document Revisions](document-revisions.md))
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-comp
 ---
 
 # About Amazon EMR Releases
-<a name="emr-release-components"></a>
 
 An Amazon EMR release is a set of open-source applications from the big-data ecosystem. Each release comprises different big-data applications, components, and features that you select to have Amazon EMR install and configure when you create a cluster. Applications are packaged using a system based on [Apache BigTop](http://bigtop.apache.org/), which is an open-source project associated with the Hadoop ecosystem. This guide provides information for applications included in Amazon EMR releases.
 

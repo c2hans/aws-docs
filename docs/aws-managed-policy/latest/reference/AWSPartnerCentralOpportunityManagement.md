@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPartnerCentralOpportunityManagement
-<a name="AWSPartnerCentralOpportunityManagement"></a>
 
 **Description**: Provides necessary access for opportunity management activities.
 

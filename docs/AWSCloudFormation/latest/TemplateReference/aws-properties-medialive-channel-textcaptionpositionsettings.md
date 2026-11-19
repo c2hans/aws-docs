@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Channel TextCaptionPositionSettings
-<a name="aws-properties-medialive-channel-textcaptionpositionsettings"></a>
 
 Specifies the position of TTML or WebVTT output captions when `styleControl` is set to `MANUAL`, as a percentage from the top of the output.
 

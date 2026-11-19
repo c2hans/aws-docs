@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ligh
 ---
 
 # LightsailExportAccess
-<a name="LightsailExportAccess"></a>
 
 **Description**: AWS Lightsail service linked role policy which grants permissions to export resources
 

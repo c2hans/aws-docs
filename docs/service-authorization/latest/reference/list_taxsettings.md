@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Tax Settings
-<a name="list_taxsettings"></a>
 
 AWS Tax Settings (service prefix: `tax`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

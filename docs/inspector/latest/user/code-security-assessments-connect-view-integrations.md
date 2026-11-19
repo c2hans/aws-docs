@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 ---
 
 # Viewing integrations with code repositories
-<a name="code-security-assessments-connect-view-integrations"></a>
 
  This topic describes how to view integrations in the Amazon Inspector console.
 

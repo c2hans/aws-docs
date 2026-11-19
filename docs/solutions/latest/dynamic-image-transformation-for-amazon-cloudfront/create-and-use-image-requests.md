@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Create and use image requests
-<a name="create-and-use-image-requests"></a>
 
 This solution generates a CloudFront domain name that gives you access to both original and modified images through the image handler API. You can specify parameters such as the image’s location and edits to be made in a JSON object on the frontend.
 

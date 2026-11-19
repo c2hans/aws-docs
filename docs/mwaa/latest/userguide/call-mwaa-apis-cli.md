@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/call-mwaa-apis-cli
 ---
 
 # Creating an Apache Airflow CLI token
-<a name="call-mwaa-apis-cli"></a>
 
 **Tip**
 REST API is more modern than the CLI and is designed for programmatic integration with external systems. REST is the preferred way of interacting with Apache Airflow.

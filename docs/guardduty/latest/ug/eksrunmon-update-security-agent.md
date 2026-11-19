@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/eksrunmon-update-sec
 ---
 
 # Updating security agent manually for Amazon EKS resources
-<a name="eksrunmon-update-security-agent"></a>
 
 When you manage the GuardDuty security agent manually, you are responsible to update it for your account. For notification about new agent versions, you can subscribe to an RSS feed to [GuardDuty security agent release versions](runtime-monitoring-agent-release-history.md).
 

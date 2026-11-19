@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Solution
 ---
 
 # SolutionStackDescription
-<a name="API_SolutionStackDescription"></a>
 
 Describes the solution stack.
 

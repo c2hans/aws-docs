@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programme
 ---
 
 # 1 Overview
-<a name="elpg-overview"></a>
 
 An ExpressLink module is a connectivity module connected via serial interface (initially UART based) that uses an abstracted Application Programming Interface (API) to connect any host application to AWS IoT Core and its services. In so doing, an ExpressLink module offloads complex and undifferentiated workloads, such as authentication, device management, connectivity, and messaging, from the application (host) processor. ExpressLink modules were conceived after discussions with microcontroller vendors, OEMs, and module makers regarding the complexity and repetitiveness of migrating existing hardware and software designs to new or different MCUs and RTOSs. They enable a scalable migration for millions of embedded applications to cloud-connected applications.
 

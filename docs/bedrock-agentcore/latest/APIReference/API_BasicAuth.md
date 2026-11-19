@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BasicAuth
-<a name="API_BasicAuth"></a>
 
 Configuration for HTTP Basic Authentication using credentials stored in AWS Secrets Manager. The secret must contain a JSON object with `username` and `password` string fields. Username allows alphanumeric characters and `@._+=-` symbols (pattern: `^[a-zA-Z0-9@._+=\-]+$`). Password allows alphanumeric characters and `@._+=-!#$%&*` symbols (pattern: `^[a-zA-Z0-9@._+=\-!#$%&*]+$`). Both fields have a maximum length of 256 characters.
 

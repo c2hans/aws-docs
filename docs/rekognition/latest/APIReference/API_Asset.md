@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Asse
 ---
 
 # Asset
-<a name="API_Asset"></a>
 
 Assets are the images that you use to train and evaluate a model version. Assets can also contain validation information that you use to debug a failed model training.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateV
 ---
 
 # CreateVirtualRouter
-<a name="API_CreateVirtualRouter"></a>
 
 Creates a virtual router within a service mesh.
 

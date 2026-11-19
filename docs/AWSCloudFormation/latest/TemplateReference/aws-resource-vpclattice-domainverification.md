@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::DomainVerification
-<a name="aws-resource-vpclattice-domainverification"></a>
 
 A domain name verification is an entity that allows you to prove your ownership of a given domain. When you create a domain verification using CloudFormation, use a waiter to make sure the domain verification is complete before you create a service network resource association, a VPC endpoint, or a service network VPC association with this domain.
 

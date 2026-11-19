@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyWorkspac
 ---
 
 # ModifyWorkspaceCreationProperties
-<a name="API_ModifyWorkspaceCreationProperties"></a>
 
 Modify the default properties used to create WorkSpaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForAmazonQDeveloper
-<a name="AWSServiceRoleForAmazonQDeveloper"></a>
 
 **Description**: This Service Linked Role provides Amazon Q Developer ability to provide usage information.
 

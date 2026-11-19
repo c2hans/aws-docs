@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListConfi
 ---
 
 # ListConfigurationCheckOperations
-<a name="API_ListConfigurationCheckOperations"></a>
 
 Lists the configuration check operations performed by AWS Systems Manager for SAP.
 

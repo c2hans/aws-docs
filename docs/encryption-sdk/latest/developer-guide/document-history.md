@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/do
 ---
 
 # Document history for the AWS Encryption SDK Developer Guide
-<a name="document-history"></a>
 
 This topic describes significant updates to the *AWS Encryption SDK Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetBenefitApplication
-<a name="API_benefits_GetBenefitApplication"></a>
 
 Retrieves detailed information about a specific benefit application.
 

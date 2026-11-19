@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec08-b
 ---
 
 # SEC08-BP04 Enforce access control
-<a name="sec08-bp04"></a>
 
  Encryption protects data at rest, and access control decides who can reach that data. Apply least privilege, isolate data by sensitivity, block public access, and preserve prior versions to limit unauthorized access and damage from accidental or unauthorized changes.
 

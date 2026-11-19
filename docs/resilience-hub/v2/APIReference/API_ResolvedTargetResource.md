@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Resol
 ---
 
 # ResolvedTargetResource
-<a name="API_ResolvedTargetResource"></a>
 
 A single AWS resource that AWS Fault Injection Service (AWS FIS) resolved as a target during a test run.
 

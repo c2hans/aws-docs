@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Viewing server logs
-<a name="chap-sql-server-aurora-mysql.management.serverlogs"></a>
 
 This topic provides reference information about logging capabilities in SQL Server and Amazon Aurora MySQL. You can gain insights into how these database systems handle error logging, slow query logging, and general logging.
 

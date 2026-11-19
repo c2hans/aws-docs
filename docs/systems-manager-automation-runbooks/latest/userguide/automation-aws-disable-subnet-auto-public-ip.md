@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DisableSubnetAutoAssignPublicIP`
-<a name="automation-aws-disable-subnet-auto-public-ip"></a>
 
  **Description**
 

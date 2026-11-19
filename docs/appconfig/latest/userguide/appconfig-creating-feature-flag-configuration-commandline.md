@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 ---
 
 # Creating a feature flag configuration profile (command line)
-<a name="appconfig-creating-feature-flag-configuration-commandline"></a>
 
 The following procedure describes how to use the AWS Command Line Interface (on Linux or Windows) or Tools for Windows PowerShell to create an AWS AppConfig feature flag configuration profile. At the time you create the configuration profile, you can also create a basic feature flag.
 

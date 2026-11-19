@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociatedContactSummary
-<a name="API_AssociatedContactSummary"></a>
 
 Contact summary of a contact in contact tree associated with unique identifier.
 

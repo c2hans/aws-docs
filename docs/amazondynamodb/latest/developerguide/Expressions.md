@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Exp
 ---
 
 # Using expressions in DynamoDB
-<a name="Expressions"></a>
 
 In Amazon DynamoDB, you can use *expressions* to specify which attributes to read from an item, write data when a condition is met, specify how to update an item, define queries and filter the results of a query.
 

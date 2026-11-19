@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_GetM
 ---
 
 # GetMembership
-<a name="API_GetMembership"></a>
 
 Returns the attributes of a membership.
 

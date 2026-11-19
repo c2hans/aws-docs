@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-ad
 Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-CAF-Audiobook/B0B48D8ZXL?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare), [Kindle](https://www.amazon.com/dp/B09X9DBL4V/ref=cm_sw_em_r_mt_dp_44NEN2KA1F5VN2AQCMCT), and as an [eBook](https://d1.awsstatic.com/whitepapers/aws-caf-ebook.pdf).
 
 # Your cloud transformation journey
-<a name="your-cloud-transformation-journey"></a>
 
 Each organization’s cloud journey is unique. To succeed in your transformation, you’ll need to envision your desired target state, understand your cloud readiness, and adopt an agile approach to closing the gaps. Transforming incrementally will allow you to demonstrate value quickly while minimizing the need to make far-reaching predictions. Adopting an iterative approach will help you maintain momentum and evolve your roadmap as you learn from experience. The AWS CAF recommends four iterative and incremental cloud transformation phases shown in the following figure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-authoriza
 ---
 
 # Managing support permit requests
-<a name="support-authorization-permit-requests"></a>
 
 In the reactive authorization scenario, AWS Support submits a support permit request when access to information about your services is needed for support case resolution. You review each request and decide whether to approve or reject it.
 

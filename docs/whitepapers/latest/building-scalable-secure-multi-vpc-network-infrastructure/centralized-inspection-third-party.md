@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Centralized inbound inspection with third-party appliances
-<a name="centralized-inspection-third-party"></a>
 
 In this architectural design pattern, you deploy third-party firewall appliances on Amazon EC2 across multiple availability zones behind an Elastic Load Balancer (ELB) such as an Application/Network Load Balancer in a separate Inspection VPC.
 

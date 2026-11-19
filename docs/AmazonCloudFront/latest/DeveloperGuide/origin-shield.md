@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/o
 ---
 
 # Use Amazon CloudFront Origin Shield
-<a name="origin-shield"></a>
 
 CloudFront Origin Shield is an additional layer in the CloudFront caching infrastructure that helps to minimize your origin’s load, improve its availability, and reduce its operating costs. With CloudFront Origin Shield, you get the following benefits:
 

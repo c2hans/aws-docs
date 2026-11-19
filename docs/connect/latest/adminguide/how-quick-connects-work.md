@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/how-quick-conn
 ---
 
 # Quick connect scenarios for transferring contacts
-<a name="how-quick-connects-work"></a>
 
 This article explains how each type of quick connect works: agent, queue, and phone number quick connects. It explains which flows are used, and what appears on the agent's Contact Control Panel (CCP).
 

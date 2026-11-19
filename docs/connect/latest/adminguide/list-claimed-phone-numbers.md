@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/list-claimed-p
 ---
 
 # List or export to a CSV the phone numbers claimed to your Connect Customer instance
-<a name="list-claimed-phone-numbers"></a>
 
 You can list the phone numbers claimed to your Connect Customer instance by using the Connect Customer admin website, or by using the [ListPhoneNumbersV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListPhoneNumbersV2.html) API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/schedule-p
 ---
 
 # Configure pipeline execution settings for image pipelines
-<a name="schedule-pipeline"></a>
 
 You can choose from the following options to schedule pipeline execution:
 

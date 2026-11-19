@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Implementing an analytics strategy for your Amazon selling partner data
-<a name="analytics-capabilities"></a>
 
 This section provides a detailed strategy for how Amazon vendors and sellers can perform advanced analytics on the data ingested from the Amazon Selling Partner API (SP-API). These analytics capabilities can provide:
 + Insights into sales performance, inventory management, brand analytics, and other key metrics.

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Domain management
-<a name="domain-management"></a>
 
 An [Amazon SageMaker AI Domain](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-entity-status.html) consists of:
 + An associated [Amazon Elastic File System](https://aws.amazon.com/efs/) (Amazon EFS) volume

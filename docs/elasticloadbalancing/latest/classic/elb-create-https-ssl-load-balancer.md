@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-
 ---
 
 # Create a Classic Load Balancer with an HTTPS listener
-<a name="elb-create-https-ssl-load-balancer"></a>
 
 A load balancer takes requests from clients and distributes them across the EC2 instances that are registered with the load balancer.
 

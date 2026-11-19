@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeListenerCertificates
-<a name="API_DescribeListenerCertificates"></a>
 
 Describes the default certificate and the certificate list for the specified HTTPS or TLS listener.
 

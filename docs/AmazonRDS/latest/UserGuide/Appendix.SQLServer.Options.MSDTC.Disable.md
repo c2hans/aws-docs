@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Disabling MSDTC
-<a name="Appendix.SQLServer.Options.MSDTC.Disable"></a>
 
 To disable MSDTC, remove the `MSDTC` option from its option group.
 

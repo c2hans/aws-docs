@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # AMS patterns
-<a name="ams-patterns"></a>
 
 An AWS Managed Services (AMS) pattern is a generalized solution that solves for a family of use cases in the AMS managed environment.
 

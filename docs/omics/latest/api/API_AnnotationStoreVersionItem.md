@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_AnnotationStoreVers
 ---
 
 # AnnotationStoreVersionItem
-<a name="API_AnnotationStoreVersionItem"></a>
 
  Annotation store versions.
 

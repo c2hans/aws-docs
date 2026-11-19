@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/get-bootstrap-
 ---
 
 # Get the bootstrap brokers using the AWS Management Console
-<a name="get-bootstrap-console"></a>
 
 This process describes how to get bootstrap brokers for a cluster using the AWS Management Console. The term* bootstrap brokers* refers to a list of brokers that an Apache Kafka client can use as a starting point to connect to the cluster. This list doesn't necessarily include all of the brokers in a cluster.
 

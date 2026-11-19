@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/toys.html
 ---
 
 # .toys
-<a name="toys"></a>
 
 Used by the toy industry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/lo
 ---
 
 # Logging
-<a name="logging"></a>
 
 The AWS SDK for Kotlin configures an [SLF4J](https://www.slf4j.org/manual.html) compatible logger as the default `LoggerProvider` of the telemetry provider. With SLF4J, which is an abstraction layer, you can use of any one of several logging systems at runtime. Supported logging systems include the [Java Logging APIs](https://docs.oracle.com/javase/8/docs/technotes/guides/logging/), [Log4j 2](https://logging.apache.org/log4j/2.x/), and [Logback](https://logback.qos.ch/).
 

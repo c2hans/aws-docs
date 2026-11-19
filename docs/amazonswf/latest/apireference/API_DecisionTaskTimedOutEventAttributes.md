@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decisi
 ---
 
 # DecisionTaskTimedOutEventAttributes
-<a name="API_DecisionTaskTimedOutEventAttributes"></a>
 
 Provides the details of the `DecisionTaskTimedOut` event.
 

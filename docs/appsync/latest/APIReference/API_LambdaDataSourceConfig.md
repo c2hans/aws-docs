@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_LambdaDa
 ---
 
 # LambdaDataSourceConfig
-<a name="API_LambdaDataSourceConfig"></a>
 
 Describes an AWS Lambda data source configuration.
 

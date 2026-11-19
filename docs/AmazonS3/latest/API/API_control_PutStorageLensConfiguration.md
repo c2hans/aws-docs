@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutStora
 ---
 
 # PutStorageLensConfiguration
-<a name="API_control_PutStorageLensConfiguration"></a>
 
 **Note**
 This operation is not supported by directory buckets.
@@ -80,6 +79,15 @@ x-amz-account-id: {{AccountId}}
       <AwsOrg>
          <Arn>{{string}}</Arn>
       </AwsOrg>
+      <CostAndUsageReportsPublish>
+         <PrefixLevel>
+            <IsEnabled>{{boolean}}</IsEnabled>
+            <SelectionCriteria>
+               <MaxDepth>{{integer}}</MaxDepth>
+               <MinDepth>{{integer}}</MinDepth>
+            </SelectionCriteria>
+         </PrefixLevel>
+      </CostAndUsageReportsPublish>
       <DataExport>
          <CloudWatchMetrics>
             <IsEnabled>{{boolean}}</IsEnabled>
@@ -152,6 +160,9 @@ x-amz-account-id: {{AccountId}}
             <Region>{{string}}</Region>
          </Regions>
       </Include>
+      <IntAccessTiers>
+         <IsEnabled>{{boolean}}</IsEnabled>
+      </IntAccessTiers>
       <IsEnabled>{{boolean}}</IsEnabled>
       <PrefixDelimiter>{{string}}</PrefixDelimiter>
       <StorageLensArn>{{string}}</StorageLensArn>

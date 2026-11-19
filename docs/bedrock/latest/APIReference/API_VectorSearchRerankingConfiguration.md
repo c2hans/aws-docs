@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_VectorSe
 ---
 
 # VectorSearchRerankingConfiguration
-<a name="API_VectorSearchRerankingConfiguration"></a>
 
 Configuration for reranking vector search results to improve relevance. Reranking applies additional relevance models to reorder the initial vector search results based on more sophisticated criteria.
 

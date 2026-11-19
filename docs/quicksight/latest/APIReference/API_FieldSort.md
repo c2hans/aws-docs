@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Field
 ---
 
 # FieldSort
-<a name="API_FieldSort"></a>
 
 The sort configuration for a field in a field well.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/mo
 ---
 
 # Mobilize
-<a name="mobilize-perf"></a>
 
  During the mobilize phase of your migration, you need to evaluate the different components that make up the building blocks of your migrated workloads and make trade-offs to select the performance that fits your business requirements. To do this, you need to set up the right metrics for performance monitoring, evaluate the different options to build your architecture, and benchmark the migrated workload against the on-premises workload to measure the different components' performance and adjust if needed.
 

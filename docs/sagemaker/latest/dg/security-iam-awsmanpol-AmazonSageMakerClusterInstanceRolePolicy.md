@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS managed policy: AmazonSageMakerClusterInstanceRolePolicy
-<a name="security-iam-awsmanpol-AmazonSageMakerClusterInstanceRolePolicy"></a>
 
 This policy grants permissions commonly needed to use Amazon SageMaker HyperPod.
 

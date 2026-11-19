@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Network
 ---
 
 # NetworkConnectionAction
-<a name="API_NetworkConnectionAction"></a>
 
 Provided if `ActionType` is `NETWORK_CONNECTION`. It provides details about the attempted network connection that was detected.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Software and architecture patterns
-<a name="software-and-architecture-patterns"></a>
 
 | HCL\_SUS3. Does your organization monitor workload activity and remove or refactor components that are no longer necessary? |
 | --- |

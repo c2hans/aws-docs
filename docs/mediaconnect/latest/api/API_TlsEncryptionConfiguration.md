@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_TlsEncryptio
 ---
 
 # TlsEncryptionConfiguration
-<a name="API_TlsEncryptionConfiguration"></a>
 
 The configuration settings for TLS encryption.
 

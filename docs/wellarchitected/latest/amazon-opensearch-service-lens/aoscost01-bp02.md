@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSCOST01-BP02 Employ the appropriate instance type and count
-<a name="aoscost01-bp02"></a>
 
  Improve query performance, enhance domain stability, and reduce risk by selecting the appropriate instance type and count for your workload.
 

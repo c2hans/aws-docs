@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # SetIpAddressType
-<a name="API_SetIpAddressType"></a>
 
 Sets the type of IP addresses used by the subnets of the specified load balancer.
 

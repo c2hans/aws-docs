@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-c
 ---
 
 # Setting up permissions for live replication
-<a name="setting-repl-config-perm-overview"></a>
 
 When setting up live replication in Amazon S3, you must acquire the necessary permissions as follows:
 + You must grant the AWS Identity and Access Management (IAM) principal (user or role) who will be creating replication rules a certain set of permissions.

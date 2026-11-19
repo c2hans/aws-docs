@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations
 ---
 
 # Integration examples from the community
-<a name="integrations-community"></a>
 
 The following sections provide links to blog posts, articles, and community-provided examples.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PolicyVersio
 ---
 
 # PolicyVersion
-<a name="API_PolicyVersion"></a>
 
 Describes a policy version.
 

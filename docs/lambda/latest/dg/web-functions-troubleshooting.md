@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-troublesh
 ---
 
 # Troubleshooting Lambda Web Functions
-<a name="web-functions-troubleshooting"></a>
 
 Start with the resource state, the HTTP response, and the logs for the request. Web Functions expose separate state for the function, revision, endpoint, and each Region of a `MultiRegion` or `PerRegion` endpoint. A failure in one resource does not always change the state of the others.
 

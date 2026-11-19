@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-encryption.h
 ---
 
 # Data encryption at rest for AWS Glue Data Quality
-<a name="data-quality-encryption"></a>
 
  AWS Glue Data Quality provides encryption by default to protect sensitive customer data at rest using AWS owned encryption keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_In
 ---
 
 # InvalidSignal
-<a name="API_InvalidSignal"></a>
 
 A reason that a signal isn't valid.
 

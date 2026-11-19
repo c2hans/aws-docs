@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/end-mtg-for-all.html
 ---
 
 # Ending a meeting for all attendees
-<a name="end-mtg-for-all"></a>
 
 Meeting hosts, moderators, and delegates can end a meeting for all attendees.
 

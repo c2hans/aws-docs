@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/limitation-glue-iceberg-r
 ---
 
 # Considerations and limitations when using AWS Glue Iceberg REST Catalog APIs
-<a name="limitation-glue-iceberg-rest-api"></a>
 
 Following are the considerations and limitations when using the Apache Iceberg REST Catalog Data Definition Language (DDL) operation behavior.
 

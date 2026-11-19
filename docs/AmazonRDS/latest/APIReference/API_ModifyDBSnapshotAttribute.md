@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyDBSnapshotAttribute
-<a name="API_ModifyDBSnapshotAttribute"></a>
 
 Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot.
 

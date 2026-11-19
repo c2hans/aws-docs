@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Uninstall the guidance
-<a name="uninstall-the-guidance"></a>
 
 This chapter describes how to completely remove the Automotive Data Platform foundation from your AWS account.
 

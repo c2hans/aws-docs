@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnZendeskTicketC
 ---
 
 # OnZendeskTicketCreate
-<a name="OnZendeskTicketCreate"></a>
 
 ## Type condition
 <a name="type-condition"></a>

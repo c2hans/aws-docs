@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTa
 ---
 
 # RouteTaxiPlace
-<a name="API_RouteTaxiPlace"></a>
 
 Place details corresponding to the arrival or departure.
 

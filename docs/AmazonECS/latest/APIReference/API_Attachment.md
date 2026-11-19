@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Attach
 ---
 
 # Attachment
-<a name="API_Attachment"></a>
 
 An object representing a container instance or task attachment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-authorization-iden
 ---
 
 # Identity owner tasks for Amazon SES sending authorization
-<a name="sending-authorization-identity-owner-tasks"></a>
 
 This section describes the steps that identity owners must take when configuring sending authorization.
 

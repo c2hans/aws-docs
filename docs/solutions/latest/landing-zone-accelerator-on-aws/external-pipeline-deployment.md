@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # External pipeline deployment
-<a name="external-pipeline-deployment"></a>
 
 In a default Landing Zone Accelerator on AWS installation, the CodePipeline and S3 bucket deploys into the AWS Organizations management account. You may want to deploy and operate these components in a member AWS account to limit access to the management account. This solution supports this model with an optional pipeline deployment account. In this model, the solution assumes a role in the AWS Organizations management account to deploy resources to workload accounts.
 

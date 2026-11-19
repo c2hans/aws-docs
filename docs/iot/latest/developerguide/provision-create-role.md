@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/provision-crea
 ---
 
 # Creating IAM policies and roles for a user installing a device
-<a name="provision-create-role"></a>
 
 **Note**
 These procedures are for use only when directed by the AWS IoT console.

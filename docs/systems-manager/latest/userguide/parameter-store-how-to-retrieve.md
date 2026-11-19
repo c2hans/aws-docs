@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Getting started with Parameter Store
-<a name="parameter-store-how-to-retrieve"></a>
 
  In this tutorial, you learn how to create, retrieve, update, and delete Parameter Store parameters by using the AWS CLI. The examples use a fictional application named `myapp`, the `dev` environment, account `111122223333`, and the `us-east-1` Region.
 

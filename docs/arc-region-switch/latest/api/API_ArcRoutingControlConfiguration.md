@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ArcRout
 ---
 
 # ArcRoutingControlConfiguration
-<a name="API_ArcRoutingControlConfiguration"></a>
 
 Configuration for ARC routing controls used in a Region switch plan. Routing controls are simple on/off switches that you can use to shift traffic away from an impaired Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/creat
 ---
 
 # Create logging role and policy for AWS IoT Wireless monitoring
-<a name="create-logging-role-policy"></a>
 
 The following shows how to create a logging role for your AWS IoT Wireless resources. After you create the logging role and policy, you can configure logging for your resources.
 

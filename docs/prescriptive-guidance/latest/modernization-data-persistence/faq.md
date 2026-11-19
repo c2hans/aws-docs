@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## When can I modernize my monolithic database as part of my modernization journey?
 <a name="q1"></a>

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Appendix G: Optimizing secondary analysis compute cost
-<a name="appendix-g-optimizing-secondary-analysis-compute-cost"></a>
 
  To optimize compute cost, first consider the resource requirements for a given tool that runs in your secondary analysis workflow. There are a variety of tools available to help with Amazon Elastic Compute Cloud (Amazon EC2) instance right-sizing for a given workload in AWS. The basic idea is to gather sufficient data about your tool performance over a period of time to capture the workload and business peak resource utilization. For more information about EC2 instance right sizing, see [Identifying Opportunities to Right Size](https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-right-sizing/identifying-opportunities-to-right-size.html) in the *Right Sizing: Provisioning Instances to Match Workloads* whitepaper.
 

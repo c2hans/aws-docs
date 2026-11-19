@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/servic
 ---
 
 # Using service-linked roles for Amazon Bedrock AgentCore
-<a name="service-linked-roles"></a>
 
 Amazon Bedrock AgentCore uses AWS Identity and Access Management (IAM) service-linked roles. A service-linked role is a unique type of IAM role that is linked directly to AgentCore. Service-linked roles are predefined by AgentCore and include all the permissions that the service requires to call other AWS services on your behalf.
 

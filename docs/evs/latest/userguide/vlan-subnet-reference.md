@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/vlan-subnet-referen
 ---
 
 # VLAN subnets, VLAN IDs, and IP addresses
-<a name="vlan-subnet-reference"></a>
 
 Amazon Elastic VMware Service creates the VLAN subnets for your environment from the CIDR blocks that you provide. For a short explanation of what a VLAN subnet is, see [Concepts and components of Amazon EVS](concepts.md). For how to size the VPC and choose CIDR blocks, see [Plan your VPC and VLAN subnets](plan-network-sizing.md).
 

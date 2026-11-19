@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd07-b
 ---
 
 # FND07-BP03 Establish centralized DNS management
-<a name="fnd07-bp03"></a>
 
  Centralized DNS management provides reliable name resolution across your organization through a single, governed infrastructure. Because DNS sits beneath almost every distributed system, inconsistent ownership, fragmented hosted zones, and informal changes cause disruptions and security gaps with outsized impact scope. Consolidating DNS under consistent controls, automated processes, and clear ownership keeps name resolution reliable, observable, and secure while supporting operational efficiency.
 

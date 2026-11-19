@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/tags
 ---
 
 # Tag
-<a name="tags-resource-arn"></a>
 
 A tag is a key-value pair associated with a resource. You can use these metadata tags to identify the purpose of a broker or configuration.
 

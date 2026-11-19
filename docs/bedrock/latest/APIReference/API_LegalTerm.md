@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_LegalTer
 ---
 
 # LegalTerm
-<a name="API_LegalTerm"></a>
 
 The legal term of the agreement.
 

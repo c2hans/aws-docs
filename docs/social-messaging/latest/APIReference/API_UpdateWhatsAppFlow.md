@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # UpdateWhatsAppFlow
-<a name="API_UpdateWhatsAppFlow"></a>
 
 Updates the metadata of a WhatsApp Flow, such as its name or categories. This does not update the Flow JSON definition. Use [UpdateWhatsAppFlowAssets](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_UpdateWhatsAppFlowAssets.html) to update the Flow JSON.
 

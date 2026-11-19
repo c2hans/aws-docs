@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inhe
 ---
 
 # InheritedAllowedResultReceiversSource
-<a name="API_InheritedAllowedResultReceiversSource"></a>
 
 Contains information about a parent table that contributes an allowed result receivers constraint.
 

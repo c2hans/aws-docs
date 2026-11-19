@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_CopyDBClusterP
 ---
 
 # CopyDBClusterParameterGroup
-<a name="API_CopyDBClusterParameterGroup"></a>
 
 Copies the specified DB cluster parameter group.
 

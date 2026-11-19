@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListEventTriggers
-<a name="API_connect-customer-profiles_ListEventTriggers"></a>
 
 List all Event Triggers under a domain.
 

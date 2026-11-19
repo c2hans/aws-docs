@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/opl-frame-accur
 ---
 
 # About output locking and frame accuracy
-<a name="opl-frame-accuracy"></a>
 
 You can implement output locking to produce video outputs that are *frame accurate *with each other. The frames from several outputs are *locked *together.
 

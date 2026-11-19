@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 Find answers to frequently raise questions about tuning query performance.
 

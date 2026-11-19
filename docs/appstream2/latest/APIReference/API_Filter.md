@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Filte
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A filter for narrowing down the results when listing export image tasks. Filters allow you to specify criteria such as task state or creation date.
 

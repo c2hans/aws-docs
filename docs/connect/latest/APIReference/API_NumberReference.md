@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_NumberRe
 ---
 
 # NumberReference
-<a name="API_NumberReference"></a>
 
 Information about a reference when the `referenceType` is `NUMBER`. Otherwise, null.
 

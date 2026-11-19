@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Share
 ---
 
 # SharedColumnSemanticMetadata
-<a name="API_SharedColumnSemanticMetadata"></a>
 
 Semantic metadata shared across one or more columns.
 

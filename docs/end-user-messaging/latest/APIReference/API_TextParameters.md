@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # TextParameters
-<a name="API_TextParameters"></a>
 
 The delivery parameters for the text channel, which delivers over SMS or RCS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_GetR
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Gets a resource-based policy of an entity that is identified by its resource ARN.
 

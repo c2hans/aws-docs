@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/devtest-r
 ---
 
 # Configure AWS Direct Connect for development and test resiliency with the AWS Direct Connect Resiliency Toolkit
-<a name="devtest-resiliency-set-up"></a>
 
 In this example, the Direct Connect Resiliency Toolkit is used to configure a development and test resiliency model
 

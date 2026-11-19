@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy
 ---
 
 # Python tools and resources
-<a name="create-deploy-python-tools-resources"></a>
 
 There are several places you can go to get additional help when developing your Python applications:
 

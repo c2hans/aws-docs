@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic
 ---
 
 # Using automatic scaling with a custom policy for instance groups in Amazon EMR
-<a name="emr-automatic-scaling"></a>
 
 Automatic scaling with a custom policy in Amazon EMR releases 4.0 and higher allows you to programmatically scale out and scale in core nodes and task nodes based on a CloudWatch metric and other parameters that you specify in a *scaling policy*. Automatic scaling with a custom policy is available with the instance groups configuration and is not available when you use instance fleets. For more information about instance groups and instance fleets, see [Create an Amazon EMR cluster with instance fleets or uniform instance groups](emr-instance-group-configuration.md).
 

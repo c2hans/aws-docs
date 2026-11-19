@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryRecordLeftExpression
-<a name="API_MemoryRecordLeftExpression"></a>
 
 The left-hand side of a memory record metadata filter expression.
 

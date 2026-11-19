@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Name rules
-<a name="custom-questions-limits-names"></a>
 
 The following rules apply to names:
 + **Question set name** – 1–128 characters. Use letters, digits, hyphens (-), and underscores (\_). The name must start and end with a letter or digit.

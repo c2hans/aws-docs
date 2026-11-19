@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ComputeConfiguration
-<a name="API_ComputeConfiguration"></a>
 
 The compute configuration for a capacity provider. This structure defines the type and settings of the compute resources used to launch instances.
 

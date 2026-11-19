@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_PreR
 ---
 
 # PreRollVastResponse
-<a name="API_PreRollVastResponse"></a>
 
 The settings that control how MediaTailor processes VAST responses from the ad decision server for live pre-roll ad breaks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # Stats
-<a name="API_Stats"></a>
 
 The minimum, maximum, average, and sum.
 

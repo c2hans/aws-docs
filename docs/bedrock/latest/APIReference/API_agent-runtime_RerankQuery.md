@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RerankQuery
-<a name="API_agent-runtime_RerankQuery"></a>
 
 Contains information about a query to submit to the reranker model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_LoggingOptio
 ---
 
 # LoggingOptionsPayload
-<a name="API_LoggingOptionsPayload"></a>
 
 Describes the logging options payload.
 

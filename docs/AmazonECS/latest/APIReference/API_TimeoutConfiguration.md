@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Timeou
 ---
 
 # TimeoutConfiguration
-<a name="API_TimeoutConfiguration"></a>
 
 An object that represents the timeout configurations for Service Connect.
 

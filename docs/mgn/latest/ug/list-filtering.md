@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/list-filtering.html
 ---
 
 # Filtering the source servers list
-<a name="list-filtering"></a>
 
 You can customize the **Source servers** page through filtering. Filtering allows you to easily filter your servers by one or multiple properties.
 

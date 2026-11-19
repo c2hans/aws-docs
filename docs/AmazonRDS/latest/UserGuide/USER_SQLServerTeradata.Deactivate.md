@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Deactivating servers linked to Teradata
-<a name="USER_SQLServerTeradata.Deactivate"></a>
 
 To deactivate linked servers to Teradata, remove the `ODBC_TERADATA` option from its option group.
 

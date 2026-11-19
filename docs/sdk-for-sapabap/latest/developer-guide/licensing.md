@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/l
 ---
 
 # SAP licensing
-<a name="licensing"></a>
 
 The use of SAP software is subject to SAP’s terms. You are responsible for complying with SAP licensing terms, including software distribution and indirect licensing conditions. Any information provided is not legal advice, and should not be relied upon for licensing compliance purposes. If you have questions about your licensing or rights to SAP software, consult your legal team, SAP, and/or your SAP reseller.
 

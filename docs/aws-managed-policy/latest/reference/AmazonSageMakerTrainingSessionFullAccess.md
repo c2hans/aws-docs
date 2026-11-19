@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerTrainingSessionFullAccess
-<a name="AmazonSageMakerTrainingSessionFullAccess"></a>
 
 **Description**: Provides permissions for Amazon SageMaker training session execution roles to access data in Amazon S3, use customer managed AWS KMS keys, publish model packages, access public hub content, and manage Amazon VPC network interfaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForCodeGuru-Profiler
-<a name="AWSServiceRoleForCodeGuru-Profiler"></a>
 
 **Description**: A service-linked role required for Amazon CodeGuru Profiler to send notifications on your behalf.
 

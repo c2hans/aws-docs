@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Re
 ---
 
 # ResponseDetails
-<a name="API_ResponseDetails"></a>
 
 Details for the response.
 

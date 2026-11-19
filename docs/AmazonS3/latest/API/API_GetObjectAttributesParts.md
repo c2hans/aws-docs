@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAttribu
 ---
 
 # GetObjectAttributesParts
-<a name="API_GetObjectAttributesParts"></a>
 
 A collection of parts associated with a multipart upload.
 

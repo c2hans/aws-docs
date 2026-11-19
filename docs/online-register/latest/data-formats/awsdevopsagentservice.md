@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 ---
 
 # Data retrieval APIs for AWS DevOps Agent Service
-<a name="awsdevopsagentservice"></a>
 
 AWS DevOps Agent Service provides the following APIs for data retrieval.
 

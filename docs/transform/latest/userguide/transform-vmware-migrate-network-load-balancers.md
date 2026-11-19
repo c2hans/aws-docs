@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Migrate source load balancers
-<a name="transform-vmware-migrate-network-load-balancers"></a>
 
 Move your load balancing to AWS without rebuilding each virtual server by hand. AWS Transform reads the configuration of your load balancer and maps each virtual server to an Application Load Balancer (ALB) or a Network Load Balancer (NLB), with its listeners and target groups. Before anything deploys, you see which virtual servers migrate, which don't, and what behaves differently on AWS.
 

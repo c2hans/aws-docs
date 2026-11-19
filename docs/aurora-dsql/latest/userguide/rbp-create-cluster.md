@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/rbp-create-
 ---
 
 # Creating clusters with resource-based policies
-<a name="rbp-create-cluster"></a>
 
 You can attach resource-based policies when creating a new cluster to ensure access controls are in place from the start. Each cluster can have a single inline policy attached directly to the cluster.
 

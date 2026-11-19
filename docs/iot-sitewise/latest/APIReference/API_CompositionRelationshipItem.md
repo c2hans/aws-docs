@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # CompositionRelationshipItem
-<a name="API_CompositionRelationshipItem"></a>
 
 Represents a composite model that composed an asset model of type `COMPONENT_MODEL`.
 

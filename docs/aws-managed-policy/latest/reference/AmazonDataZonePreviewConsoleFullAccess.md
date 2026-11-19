@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZonePreviewConsoleFullAccess
-<a name="AmazonDataZonePreviewConsoleFullAccess"></a>
 
 **Description**: Provides full access to the Preview release of Amazon DataZone via the AWS Management Console. Also provides select access to other related services.
 

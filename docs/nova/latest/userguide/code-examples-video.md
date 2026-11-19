@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/code-examples-vide
 ---
 
 # Generate a video
-<a name="code-examples-video"></a>
 
 The following code examples show how to use Amazon Nova Reel to generate a video from a text prompt.
 

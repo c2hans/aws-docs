@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Working with incidents in AMS Accelerate
-<a name="working-with-incidents"></a>
 
 From AWS Support Center, you can perform the following tasks:
 + Report and update an incident. To report an AMS Accelerate incident, choose **AMS Operations -- Report Incident** from the **Services** menu.

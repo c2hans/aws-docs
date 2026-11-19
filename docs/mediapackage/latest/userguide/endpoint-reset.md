@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/endpoint-r
 ---
 
 # Resetting an endpoint in AWS Elemental MediaPackage
-<a name="endpoint-reset"></a>
 
 These steps show how to reset an origin endpoint in MediaPackage. Resetting the endpoint clears previous content from endpoint egress. For information about when you might want to reset, see [Reset for AWS Elemental MediaPackage channels and endpoints](resetting.md).
 

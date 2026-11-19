@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/user-getting-s
 ---
 
 # Get started with AWS Client VPN
-<a name="user-getting-started"></a>
 
 Before you can establish a VPN session, your Client VPN administrator must create and configure a Client VPN endpoint. Your administrator controls which networks and resources you can access when you establish a VPN session. You then use a VPN client application to connect to a Client VPN endpoint and establish a secure VPN connection.
 

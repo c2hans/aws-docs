@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/service_cod
 ---
 
 # Basic examples for EventBridge using AWS SDKs
-<a name="service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon EventBridge with AWS SDKs.
 

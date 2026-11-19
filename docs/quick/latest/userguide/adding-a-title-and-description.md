@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/adding-a-title-an
 ---
 
 # Adding a title and description to an analysis
-<a name="adding-a-title-and-description"></a>
 
 In addition to the analysis name, you can add a title and description to an analysis. A useful title and description provides context about the information in the analysis.
 

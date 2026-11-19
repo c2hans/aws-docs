@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_L
 ---
 
 # LongCondition
-<a name="API_BKS_LongCondition"></a>
 
 The long condition contains a `Value` and can optionally contain an `Operator`.
 

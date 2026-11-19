@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/insightly-configuring.htm
 ---
 
 # Configuring Insightly
-<a name="insightly-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Insightly, you must meet the following requirements:
 

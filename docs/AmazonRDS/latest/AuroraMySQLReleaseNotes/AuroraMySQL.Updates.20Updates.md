@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes
 ---
 
 # Database engine updates for Amazon Aurora MySQL version 2
-<a name="AuroraMySQL.Updates.20Updates"></a>
 
 **Important**
 Aurora MySQL version 2 reached the end of standard support on October 31, 2024. For more information, see [Preparing for Amazon Aurora MySQL-Compatible Edition version 2 end of standard support](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.MySQL57.EOL.html).

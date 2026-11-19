@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GetPlan
 ---
 
 # GetPlan
-<a name="API_GetPlan"></a>
 
 Retrieves detailed information about a Region switch plan. You must specify the ARN of the plan.
 

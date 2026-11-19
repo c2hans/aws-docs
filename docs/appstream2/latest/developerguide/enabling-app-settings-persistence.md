@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/enablin
 ---
 
 # Enabling Application Settings Persistence
-<a name="enabling-app-settings-persistence"></a>
 
 Review the following topics to learn how to enable application settings persistence for your WorkSpaces Applications users.
 

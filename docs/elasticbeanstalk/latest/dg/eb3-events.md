@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-events.ht
 ---
 
 # **eb events**
-<a name="eb3-events"></a>
 
 ## Description
 <a name="eb3-eventsdescription"></a>

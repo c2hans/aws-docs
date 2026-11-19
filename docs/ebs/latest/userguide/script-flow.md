@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/script-flow.html
 ---
 
 # How Amazon Data Lifecycle Manager pre and post scripts work
-<a name="script-flow"></a>
 
 The following image shows the process flow for pre and post scripts when using custom SSM documents. This does not apply to VSS Backups.
 

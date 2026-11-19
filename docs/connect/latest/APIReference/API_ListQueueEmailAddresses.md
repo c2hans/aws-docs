@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListQueu
 ---
 
 # ListQueueEmailAddresses
-<a name="API_ListQueueEmailAddresses"></a>
 
 Lists all email addresses that are currently associated with a specific queue, providing details about which "From" email addresses agents can select when handling email contacts. This helps administrators manage agent email address options and understand the available choices for different brands and business units.
 

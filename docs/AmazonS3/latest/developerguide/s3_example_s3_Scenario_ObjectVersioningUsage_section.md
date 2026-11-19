@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Work with Amazon S3 versioned objects using an AWS SDK
-<a name="s3_example_s3_Scenario_ObjectVersioningUsage_section"></a>
 
 The following code example shows how to:
 + Create a versioned S3 bucket.

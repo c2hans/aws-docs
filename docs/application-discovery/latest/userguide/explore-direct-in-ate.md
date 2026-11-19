@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/userguide/e
 AWS Application Discovery Service is no longer open to new customers. Alternatively, use AWS Transform which provides similar capabilities. For more information, see [AWS Application Discovery Service availability change](https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html).
 
 # Exploring data directly in Amazon Athena
-<a name="explore-direct-in-ate"></a>
 
 After you turn on data exploration in Amazon Athena, you can begin exploring and working with detailed current data that was discovered by your agents by querying the data directly in Athena. You can use the data to generate spreadsheets, run a cost analysis, port the query to a visualization program to diagram network dependencies, and more.
 

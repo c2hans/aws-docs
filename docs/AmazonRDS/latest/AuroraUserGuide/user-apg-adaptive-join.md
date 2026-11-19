@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/user-ap
 ---
 
 # Improving query performance using adaptive join
-<a name="user-apg-adaptive-join"></a>
 
 ## Overview
 <a name="user-apg-adaptive-join-intro"></a>

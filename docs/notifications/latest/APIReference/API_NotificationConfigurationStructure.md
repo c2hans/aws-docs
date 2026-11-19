@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_No
 ---
 
 # NotificationConfigurationStructure
-<a name="API_NotificationConfigurationStructure"></a>
 
 Contains the complete list of fields for a NotificationConfiguration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EbsVolumeConfiguration
-<a name="API_automation_EbsVolumeConfiguration"></a>
 
 Configuration details for an Amazon EBS volume.
 

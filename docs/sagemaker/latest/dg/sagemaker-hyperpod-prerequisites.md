@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-p
 ---
 
 # Prerequisites for using SageMaker HyperPod
-<a name="sagemaker-hyperpod-prerequisites"></a>
 
 The following sections walk you through prerequisites before getting started with SageMaker HyperPod.
 

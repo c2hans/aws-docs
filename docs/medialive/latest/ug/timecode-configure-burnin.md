@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/timecode-configure-b
 ---
 
 # Burning the timecode into output
-<a name="timecode-configure-burnin"></a>
 
 You can set up any video encode in a MediaLive channel to burn in the output timecode. The time code will become part of the video.
 

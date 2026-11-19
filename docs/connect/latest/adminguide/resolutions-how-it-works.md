@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-ho
 ---
 
 # How Resolutions works
-<a name="resolutions-how-it-works"></a>
 
  This topic explains the terms you see in Resolutions and how they relate to Connect Customer resources. It uses a sample loan approval process as a running example.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ima
 ---
 
 # Image
-<a name="API_Image"></a>
 
 Contains an image that is one of the following:
 + An image file. Choose this option to upload a new image.

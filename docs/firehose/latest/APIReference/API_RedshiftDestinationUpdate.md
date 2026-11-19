@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Redshif
 ---
 
 # RedshiftDestinationUpdate
-<a name="API_RedshiftDestinationUpdate"></a>
 
 Describes an update for a destination in Amazon Redshift.
 

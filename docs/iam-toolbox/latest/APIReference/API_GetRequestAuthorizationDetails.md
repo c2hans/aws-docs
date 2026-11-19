@@ -3,11 +3,12 @@ source_url: https://docs.aws.amazon.com/iam-toolbox/latest/APIReference/API_GetR
 ---
 
 # GetRequestAuthorizationDetails
-<a name="API_GetRequestAuthorizationDetails"></a>
 
 Retrieves the authorization details for a specific access denied request. The details include the request context, the evaluations performed, and the policies that were evaluated.
 
 Use this operation to understand why a request was denied. Supported services include an authorization ID in the access denied error message. Pass that ID to this operation to retrieve the details.
+
+To retrieve the content for a policy in the `policies` list, call `GetRequestAuthorizationPolicy`.
 
 Authorization details are available for at least 24 hours after the denial.
 
@@ -27,6 +28,7 @@ The request uses the following URI parameters.
 
  ** [authorizationId](#API_GetRequestAuthorizationDetails_RequestSyntax) **   <a name="iamtoolbox-GetRequestAuthorizationDetails-request-uri-authorizationId"></a>
 The authorization ID received in the access denied error message. This ID identifies the specific request to retrieve details for.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `[0123456789abcdefghijklmnopqrstuvwxyz]+`
 Required: Yes
 
@@ -49,6 +51,25 @@ Content-type: application/json
    "evaluations": [
       {
          "action": "string",
+         "checks": [
+            {
+               "checkType": "string",
+               "evaluatedEffect": "string",
+               "matchedPolicies": [
+                  {
+                     "matchedStatements": [
+                        {
+                           "evaluatedEffect": "string",
+                           "sid": "string"
+                        }
+                     ],
+                     "uri": "string"
+                  }
+               ],
+               "relevantPolicyTypes": [ "string" ],
+               "targetArn": "string"
+            }
+         ],
          "context": {
             "string" : JSON value
          },
@@ -76,6 +97,9 @@ Content-type: application/json
             }
          ],
          "inline": boolean,
+         "policySource": {
+            "string" : "string"
+         },
          "type": "string",
          "uri": "string"
       }
@@ -123,7 +147,7 @@ An unexpected error occurred while processing the request. Try again.
 HTTP Status Code: 500
 
  ** ResourceNotFoundException **
-The requested authorization details do not exist in this region or have expired. Verify that the authorization ID from the access denied error message is correct and the call is made in the region where the denial occurred. Ensure that the calling principal belongs to the same account or organization as the original denied request.
+The requested policy or authorization details do not exist in this region or have expired. Verify that the authorization ID from the access denied error message is correct and the call is made in the region where the denial occurred. Ensure that the calling principal belongs to the same account or organization as the original denied request. If you specified a policy URI, verify that it is from the `policies` list that `GetRequestAuthorizationDetails` returns for the same authorization ID.
 HTTP Status Code: 404
 
  ** ValidationException **
@@ -155,13 +179,171 @@ This example illustrates one usage of GetRequestAuthorizationDetails.
   "evaluations": [
     {
       "action": "iam:GetUser",
+      "checks": [
+        {
+          "checkType": "RESOURCE_CONTROL_POLICY",
+          "evaluatedEffect": "ALLOW",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "ALLOW",
+                  "sid": "<Statement1>"
+                }
+              ],
+              "uri": "arn:aws:organizations::aws:policy/resource_control_policy/p-RCPFullAWSAccess"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "RESOURCE_CONTROL_POLICY"
+          ],
+          "targetArn": "arn:aws:organizations::111122223333:root/o-exampleorgid/r-examp"
+        },
+        {
+          "checkType": "RESOURCE_CONTROL_POLICY",
+          "evaluatedEffect": "ALLOW",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "ALLOW",
+                  "sid": "<Statement1>"
+                }
+              ],
+              "uri": "arn:aws:organizations::aws:policy/resource_control_policy/p-RCPFullAWSAccess"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "RESOURCE_CONTROL_POLICY"
+          ],
+          "targetArn": "arn:aws:organizations::111122223333:account/o-exampleorgid/111122223333"
+        },
+        {
+          "checkType": "SERVICE_CONTROL_POLICY",
+          "evaluatedEffect": "ALLOW",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "ALLOW",
+                  "sid": "<Statement1>"
+                }
+              ],
+              "uri": "arn:aws:organizations::aws:policy/service_control_policy/p-FullAWSAccess"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "SERVICE_CONTROL_POLICY"
+          ],
+          "targetArn": "arn:aws:organizations::111122223333:root/o-exampleorgid/r-examp"
+        },
+        {
+          "checkType": "SERVICE_CONTROL_POLICY",
+          "evaluatedEffect": "ALLOW",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "ALLOW",
+                  "sid": "<Statement1>"
+                }
+              ],
+              "uri": "arn:aws:organizations::aws:policy/service_control_policy/p-FullAWSAccess"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "SERVICE_CONTROL_POLICY"
+          ],
+          "targetArn": "arn:aws:organizations::111122223333:account/o-exampleorgid/111122223333"
+        },
+        {
+          "checkType": "PRINCIPAL",
+          "evaluatedEffect": "IMPLICIT_DENY",
+          "matchedPolicies": [],
+          "relevantPolicyTypes": [
+            "IDENTITY_BASED_POLICY"
+          ]
+        },
+        {
+          "checkType": "SESSION",
+          "evaluatedEffect": "ALLOW",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "ALLOW",
+                  "sid": "AllowAll"
+                }
+              ],
+              "uri": "inline:b6cf943c21a1966b"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "SESSION_POLICY"
+          ]
+        }
+      ],
       "context": {},
       "evaluatedEffect": "IMPLICIT_DENY",
-      "matchedPolicies": [],
+      "matchedPolicies": [
+        {
+          "matchedStatements": [
+            {
+              "evaluatedEffect": "ALLOW",
+              "sid": "<Statement1>"
+            }
+          ],
+          "uri": "arn:aws:organizations::aws:policy/resource_control_policy/p-RCPFullAWSAccess"
+        },
+        {
+          "matchedStatements": [
+            {
+              "evaluatedEffect": "ALLOW",
+              "sid": "<Statement1>"
+            }
+          ],
+          "uri": "arn:aws:organizations::aws:policy/service_control_policy/p-FullAWSAccess"
+        },
+        {
+          "matchedStatements": [
+            {
+              "evaluatedEffect": "ALLOW",
+              "sid": "AllowAll"
+            }
+          ],
+          "uri": "inline:b6cf943c21a1966b"
+        }
+      ],
       "resource": "arn:aws:iam::111122223333:user/ExampleUser"
     }
   ],
   "policies": [
+    {
+      "attachedTo": [
+        {
+          "arn": "arn:aws:organizations::111122223333:root/o-exampleorgid/r-examp"
+        },
+        {
+          "arn": "arn:aws:organizations::111122223333:account/o-exampleorgid/111122223333"
+        }
+      ],
+      "inline": false,
+      "type": "RESOURCE_CONTROL_POLICY",
+      "uri": "arn:aws:organizations::aws:policy/resource_control_policy/p-RCPFullAWSAccess"
+    },
+    {
+      "attachedTo": [
+        {
+          "arn": "arn:aws:organizations::111122223333:root/o-exampleorgid/r-examp"
+        },
+        {
+          "arn": "arn:aws:organizations::111122223333:account/o-exampleorgid/111122223333"
+        }
+      ],
+      "inline": false,
+      "type": "SERVICE_CONTROL_POLICY",
+      "uri": "arn:aws:organizations::aws:policy/service_control_policy/p-FullAWSAccess"
+    },
     {
       "attachedTo": [
         {
@@ -179,7 +361,7 @@ This example illustrates one usage of GetRequestAuthorizationDetails.
     "aws:TokenIssueTime": "2026-01-01T00:00:00Z",
     "aws:ResourceOrgPaths": "[o-exampleorgid/r-examp/]",
     "aws:UserAgent": "aws-cli/2.0.0 md/command#iam.get-user",
-    "aws:UserId": "AROADBQP57FF2AEXAMPLE:example-session",
+    "aws:UserId": "AROA123456789EXAMPLE:example-session",
     "aws:ResourceOrgID": "o-exampleorgid",
     "aws:PrincipalAccount": "111122223333",
     "aws:EpochTime": "2026-01-01T00:00:00Z",
@@ -218,6 +400,44 @@ This example illustrates one usage of GetRequestAuthorizationDetails.
   "evaluations": [
     {
       "action": "iam:GetUser",
+      "checks": [
+        {
+          "checkType": "PRINCIPAL",
+          "evaluatedEffect": "EXPLICIT_DENY",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "DENY",
+                  "sid": "DenyAll"
+                }
+              ],
+              "uri": "arn:aws:iam::aws:policy/AWSDenyAll"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "IDENTITY_BASED_POLICY"
+          ]
+        },
+        {
+          "checkType": "SESSION",
+          "evaluatedEffect": "ALLOW",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "ALLOW",
+                  "sid": "AllowAll"
+                }
+              ],
+              "uri": "inline:0000000000000000"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "SESSION_POLICY"
+          ]
+        }
+      ],
       "context": {},
       "evaluatedEffect": "EXPLICIT_DENY",
       "matchedPolicies": [
@@ -229,6 +449,15 @@ This example illustrates one usage of GetRequestAuthorizationDetails.
             }
           ],
           "uri": "arn:aws:iam::aws:policy/AWSDenyAll"
+        },
+        {
+          "matchedStatements": [
+            {
+              "evaluatedEffect": "ALLOW",
+              "sid": "AllowAll"
+            }
+          ],
+          "uri": "inline:0000000000000000"
         }
       ],
       "resource": "arn:aws:iam::111122223333:user/ExampleUser"
@@ -244,27 +473,195 @@ This example illustrates one usage of GetRequestAuthorizationDetails.
       "inline": false,
       "type": "IDENTITY_BASED_POLICY",
       "uri": "arn:aws:iam::aws:policy/AWSDenyAll"
+    },
+    {
+      "attachedTo": [
+        {
+          "arn": "arn:aws:iam::111122223333:role/ExplicitDeny"
+        }
+      ],
+      "inline": true,
+      "type": "SESSION_POLICY",
+      "uri": "inline:0000000000000000"
     }
   ],
   "requestContext": {
-    "aws:ViaAWSService": "false",
-    "aws:MultiFactorAuthPresent": "false",
-    "aws:TokenIssueTime": "2026-01-01T00:00:00Z",
-    "aws:ResourceOrgPaths": "[o-exampleorgid/r-examp/]",
-    "aws:UserAgent": "aws-cli/2.0.0 md/command#iam.get-user",
-    "aws:UserId": "AROADBQP57FF2AEXAMPLE:example-session",
-    "aws:ResourceOrgID": "o-exampleorgid",
+    "aws:UserId": "AROA123456789EXAMPLE:example-session",
     "aws:PrincipalAccount": "111122223333",
-    "aws:EpochTime": "2026-01-01T00:00:00Z",
     "aws:PrincipalARN": "arn:aws:iam::111122223333:role/ExplicitDeny",
-    "aws:ViaAWSMCPService": "false",
-    "aws:SourceIp": "192.0.2.1/32",
-    "aws:RequestedRegion": "us-east-1",
-    "aws:PrincipalIsAWSService": "false",
-    "aws:SecureTransport": "true",
-    "aws:PrincipalOrgPaths": "[o-exampleorgid/r-examp/]",
-    "aws:PrincipalOrgID": "o-exampleorgid",
-    "aws:CurrentTime": "2026-01-01T00:00:00Z"
+    "aws:RequestedRegion": "us-east-1"
+  }
+}
+```
+
+### Example – Retrieve authorization details for an explicitly denied kms:Decrypt request
+<a name="API_GetRequestAuthorizationDetails_Example_3"></a>
+
+This example illustrates one usage of GetRequestAuthorizationDetails.
+
+#### Sample Request
+<a name="API_GetRequestAuthorizationDetails_Example_3_Request"></a>
+
+```
+{
+  "authorizationId": "m4n5o6p7q8r9s0t1u2v3"
+}
+```
+
+#### Sample Response
+<a name="API_GetRequestAuthorizationDetails_Example_3_Response"></a>
+
+```
+{
+  "evaluations": [
+    {
+      "action": "kms:Decrypt",
+      "checks": [
+        {
+          "checkType": "RESOURCE",
+          "evaluatedEffect": "EXPLICIT_DENY",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "DENY",
+                  "sid": "DenyDecrypt"
+                }
+              ],
+              "uri": "inline:3f1c9a7e5d2b8046"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "RESOURCE_BASED_POLICY"
+          ]
+        },
+        {
+          "checkType": "PRINCIPAL",
+          "evaluatedEffect": "ALLOW",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "ALLOW",
+                  "sid": "AllowDecrypt"
+                }
+              ],
+              "uri": "arn:aws:iam::111122223333:policy/ExampleKmsAccess"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "IDENTITY_BASED_POLICY"
+          ]
+        },
+        {
+          "checkType": "SESSION",
+          "evaluatedEffect": "ALLOW",
+          "matchedPolicies": [
+            {
+              "matchedStatements": [
+                {
+                  "evaluatedEffect": "ALLOW",
+                  "sid": "AllowAll"
+                }
+              ],
+              "uri": "inline:5a8c0e2f4b6d1937"
+            }
+          ],
+          "relevantPolicyTypes": [
+            "SESSION_POLICY"
+          ]
+        }
+      ],
+      "context": {},
+      "evaluatedEffect": "EXPLICIT_DENY",
+      "matchedPolicies": [
+        {
+          "matchedStatements": [
+            {
+              "evaluatedEffect": "ALLOW",
+              "sid": "AllowDecrypt"
+            }
+          ],
+          "uri": "arn:aws:iam::111122223333:policy/ExampleKmsAccess"
+        },
+        {
+          "matchedStatements": [
+            {
+              "evaluatedEffect": "DENY",
+              "sid": "DenyDecrypt"
+            }
+          ],
+          "uri": "inline:3f1c9a7e5d2b8046"
+        },
+        {
+          "matchedStatements": [
+            {
+              "evaluatedEffect": "ALLOW",
+              "sid": "AllowAll"
+            }
+          ],
+          "uri": "inline:5a8c0e2f4b6d1937"
+        }
+      ],
+      "resource": "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"
+    }
+  ],
+  "policies": [
+    {
+      "attachedTo": [
+        {
+          "arn": "arn:aws:iam::111122223333:role/ExampleRole"
+        }
+      ],
+      "inline": false,
+      "type": "IDENTITY_BASED_POLICY",
+      "uri": "arn:aws:iam::111122223333:policy/ExampleKmsAccess"
+    },
+    {
+      "attachedTo": [
+        {
+          "arn": "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"
+        }
+      ],
+      "inline": true,
+      "policySource": {
+        "type": "KMS_KEY_POLICY",
+        "typeName": "KMS key policy"
+      },
+      "type": "RESOURCE_BASED_POLICY",
+      "uri": "inline:3f1c9a7e5d2b8046"
+    },
+    {
+      "attachedTo": [
+        {
+          "arn": "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"
+        }
+      ],
+      "inline": true,
+      "policySource": {
+        "grantId": "0c237476b39f8bc44e45212e08498fbe3151305030726c0590dd8d3e9f3d6a60",
+        "type": "KMS_GRANT",
+        "typeName": "KMS grant"
+      },
+      "type": "RESOURCE_BASED_POLICY",
+      "uri": "inline:9e4d27b1c6a0f583"
+    },
+    {
+      "attachedTo": [
+        {
+          "arn": "arn:aws:iam::111122223333:role/ExampleRole"
+        }
+      ],
+      "inline": true,
+      "type": "SESSION_POLICY",
+      "uri": "inline:5a8c0e2f4b6d1937"
+    }
+  ],
+  "requestContext": {
+    "aws:UserId": "AROA123456789EXAMPLE:example-session",
+    "aws:PrincipalAccount": "111122223333",
+    "aws:PrincipalARN": "arn:aws:iam::111122223333:role/ExampleRole",
+    "aws:RequestedRegion": "us-east-1"
   }
 }
 ```

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LicenseRecommendation
-<a name="API_LicenseRecommendation"></a>
 
  Describes a license recommendation for an EC2 instance.
 

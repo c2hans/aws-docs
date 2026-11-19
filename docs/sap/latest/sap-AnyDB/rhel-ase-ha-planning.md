@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/rhel-ase-ha-plannin
 ---
 
 # Planning
-<a name="rhel-ase-ha-planning"></a>
 
 This section covers the following topics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/doc-history.html
 ---
 
 # Document history for User Guide
-<a name="doc-history"></a>
 
 The following table describes important additions to the AWS Elemental MediaConvert documentation. We also update the documentation frequently to address the feedback that you send us.
 
@@ -18,7 +17,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 | [Per-frame metric reports](per-frame-metrics.md) | MediaConvert added support for per-frame metric reports. | May 5, 2025 |
 | [Video passthrough](video-passthrough.md) | MediaConvert added support for video passthrough for AVC input videos. | March 19, 2025 |
 | [On-demand queues](working-with-queues.md) | MediaConvert updated how you manage multiple concurrent jobs within on-demand queues.  | December 6, 2024 |
-| [Documentation update](#doc-history) | Navigation updates to the AWS Elemental MediaConvert User Guide. | September 27, 2024 |
+| [Documentation update](doc-history.md) | Navigation updates to the AWS Elemental MediaConvert User Guide. | September 27, 2024 |
 | [SPEKE Version 2.0](implementing-digital-rights-management-drm.md) | MediaConvert added support for SPEKE Version 2.0 | September 20, 2024 |
 | [Understanding billing and usage](understand-billing.md) | Added a new chapter with information about billing and usage within MediaConvert | September 17, 2024 |
 | [Video overlay transitions](video-overlays.md) | MediaConvert added support for video overlay transitions. | September 13, 2024 |
@@ -112,7 +111,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 | [Tagging AWS Elemental MediaConvert resources on the console](tagging-mediaconvert-resources.md) | You can now work with tags on existing AWS Elemental MediaConvert queues, job templates, and output presets in the MediaConvert console. | July 31, 2018 |
 | [Tagging AWS Elemental MediaConvert resources initial release](tagging-mediaconvert-resources.md) | You can now tag MediaConvert resources when you create them using the MediaConvert console, the MediaConvert API, or the AWS CLI. You can list the tags on an existing MediaConvert resource, and add and remove tags on existing MediaConvert resources, through the MediaConvert API and AWS CLI. | July 16, 2018 |
 | [CMAF support](output-settings.md) | MediaConvert adds support for common media application format (CMAF) outputs. | May 4, 2018 |
-| [New MediaConvert service release](#doc-history) | Initial documentation for the MediaConvert service. | November 27, 2017 |
+| [New MediaConvert service release](doc-history.md) | Initial documentation for the MediaConvert service. | November 27, 2017 |
 
 **Note**
 The AWS Media Services are not designed or intended for use with applications or in situations requiring fail‐safe performance, such as life safety operations, navigation or communication systems, air traffic control, or life support machines in which the unavailability, interruption or failure of the services could lead to death, personal injury, property damage or environmental damage.

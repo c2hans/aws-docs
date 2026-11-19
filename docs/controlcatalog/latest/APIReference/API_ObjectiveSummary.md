@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_O
 ---
 
 # ObjectiveSummary
-<a name="API_ObjectiveSummary"></a>
 
 A summary of metadata for an objective.
 

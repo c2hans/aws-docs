@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Assessing your database environment before migration
-<a name="database-assessment-pre-migration"></a>
 
 Before starting the migration, we recommend that you assess your on-premises database environment. An assessment can help you choose a migration approach and strategy that best aligns with your technical requirements and business needs.
 

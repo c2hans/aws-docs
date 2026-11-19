@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingW
 ---
 
 # Introduction to backups
-<a name="USER_WorkingWithAutomatedBackups"></a>
 
 Amazon RDS creates and saves automated backups of your DB instance or Multi-AZ DB cluster during the backup window that you configure. Automated backups are supported for all Amazon RDS deployment types: Single-AZ DB instance deployments, Multi-AZ DB instance deployments (a primary DB instance with one standby DB instance), and Multi-AZ DB cluster deployments (a writer DB instance with two readable standby DB instances). Amazon RDS creates a storage volume snapshot of your DB instance, backing up the entire DB instance and not just individual databases. RDS saves the automated backups of your DB instance according to the backup retention period that you specify. If necessary, you can recover your DB instance to any point in time during the backup retention period.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_R
 ---
 
 # RestoreSecret
-<a name="API_RestoreSecret"></a>
 
 Cancels the scheduled deletion of a secret by removing the `DeletedDate` time stamp. You can access a secret again after it has been restored.
 

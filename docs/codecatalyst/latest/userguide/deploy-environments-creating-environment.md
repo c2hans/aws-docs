@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-env
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Creating an environment
-<a name="deploy-environments-creating-environment"></a>
 
 Use the following instructions to create an environment that you can later associate with a workflow action.
 

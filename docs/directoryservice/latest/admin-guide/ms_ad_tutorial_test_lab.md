@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # AWS Managed Microsoft AD test lab tutorials
-<a name="ms_ad_tutorial_test_lab"></a>
 
 This section provides a series of guided tutorials to help you establish a test lab environment in AWS where you can experiment with AWS Managed Microsoft AD.
 

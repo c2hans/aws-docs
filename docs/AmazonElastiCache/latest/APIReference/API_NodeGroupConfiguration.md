@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # NodeGroupConfiguration
-<a name="API_NodeGroupConfiguration"></a>
 
 Node group (shard) configuration options. Each node group (shard) configuration has the following: `Slots`, `PrimaryAvailabilityZone`, `ReplicaAvailabilityZones`, `ReplicaCount`.
 

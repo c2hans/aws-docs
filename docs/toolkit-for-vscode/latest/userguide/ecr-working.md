@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/ecr-
 ---
 
 # Working with Amazon Elastic Container Registry
-<a name="ecr-working"></a>
 
 You can access the Amazon Elastic Container Registry (Amazon ECR) service directly from the AWS Explorer in VS Code and use it to push a program image to an Amazon ECR repository. To get started, you need to do these steps:
 

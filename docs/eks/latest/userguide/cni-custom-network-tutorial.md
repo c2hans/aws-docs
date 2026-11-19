@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/cni-custom-network-
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Customize the secondary network interface in Amazon EKS nodes
-<a name="cni-custom-network-tutorial"></a>
 
 Complete the following before you start the tutorial:
 + Review the considerations

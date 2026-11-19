@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Amazon Bedrock AgentCore Control API contains several data types that various actions use. This section describes each data type in detail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/protect-sen
 ---
 
 # Financial information
-<a name="protect-sensitive-log-data-types-financial"></a>
 
 CloudWatch Logs data protection can find the following types of financial information.
 

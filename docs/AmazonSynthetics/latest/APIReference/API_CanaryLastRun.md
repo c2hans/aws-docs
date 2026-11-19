@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryLastRun
-<a name="API_CanaryLastRun"></a>
 
 This structure contains information about the most recent run of a single canary.
 

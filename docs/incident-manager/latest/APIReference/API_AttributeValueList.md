@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # AttributeValueList
-<a name="API_AttributeValueList"></a>
 
 Use the AttributeValueList to filter by string or integer values.
 

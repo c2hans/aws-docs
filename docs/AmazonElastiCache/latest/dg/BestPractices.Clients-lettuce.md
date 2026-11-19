@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/BestPractice
 ---
 
 # Lettuce client configuration (Valkey and Redis OSS)
-<a name="BestPractices.Clients-lettuce"></a>
 
 This section describes the recommended Java and Lettuce configuration options, and how they apply to ElastiCache clusters.
 

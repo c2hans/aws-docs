@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/manage-
 ---
 
 # Manage firewall ports for Lightsail for Research virtual computers
-<a name="manage-ports"></a>
 
 A firewall in Amazon Lightsail for Research controls the traffic allowed to connect to your virtual computer. You add rules to your virtual computer’s firewall that specify the protocol, ports, and the source IPv4 or IPv6 addresses that are allowed to connect to it. Firewall rules are always permissive; you can't create rules that deny access. You add rules to your virtual computer's firewall to allow traffic to reach your virtual computer. Each virtual computer has two firewalls; one for IPv4 addresses and another for IPv6 addresses. Both firewalls are independent of each other, and contain a preconfigured set of rules that filter traffic coming into the instance.
 

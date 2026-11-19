@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeThemeAlias
-<a name="API_DescribeThemeAlias"></a>
 
 Describes the alias for a theme.
 

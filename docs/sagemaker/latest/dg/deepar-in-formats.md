@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deepar-in-formats.ht
 ---
 
 # DeepAR Inference Formats
-<a name="deepar-in-formats"></a>
 
 The following page describes the request and response formats for inference with the Amazon SageMaker AI DeepAR model.
 

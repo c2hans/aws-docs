@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/use-c
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  Today, the China market is one of biggest markets in the world. Many international companies are seeking their success in China, as well as a number of Chinese companies are expanding their businesses globally. One of most important steps of in the business is moving their data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/delivery-out-vpc.htm
 ---
 
 # Delivering outputs via your VPC
-<a name="delivery-out-vpc"></a>
 
 You can set up a MediaLive channel to have output endpoints in Amazon Virtual Private Cloud (Amazon VPC). This delivery mode is useful if an important output destination for your channel is an address in your VPC.
 

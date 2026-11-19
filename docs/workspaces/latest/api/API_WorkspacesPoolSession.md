@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspacesPool
 ---
 
 # WorkspacesPoolSession
-<a name="API_WorkspacesPoolSession"></a>
 
 Describes a pool session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UtteranceS
 ---
 
 # UtteranceSpecification
-<a name="API_UtteranceSpecification"></a>
 
 An object containing information about a specific utterance.
 

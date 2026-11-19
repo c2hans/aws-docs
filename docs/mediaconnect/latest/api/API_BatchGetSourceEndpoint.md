@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BatchGetSour
 ---
 
 # BatchGetSourceEndpoint
-<a name="API_BatchGetSourceEndpoint"></a>
 
 Retrieves information about multiple source endpoints in a single request.
 

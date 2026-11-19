@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Session.html
 ---
 
 # Session
-<a name="API_Session"></a>
 
 The period in which a remote Spark runtime environment is running.
 

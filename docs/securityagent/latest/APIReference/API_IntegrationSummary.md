@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_In
 ---
 
 # IntegrationSummary
-<a name="API_IntegrationSummary"></a>
 
 Contains summary information about an integration.
 

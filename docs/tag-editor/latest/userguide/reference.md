@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/reference.ht
 ---
 
 # Service quotas
-<a name="reference"></a>
 
 The following table provides information about the service quotas for Tag Editor.
 

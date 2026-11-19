@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/l
 ---
 
 # Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?
-<a name="lightsail-elastic-beanstalk-ec2"></a>
 
 **Understand the differences and pick the one that's right for you**
 

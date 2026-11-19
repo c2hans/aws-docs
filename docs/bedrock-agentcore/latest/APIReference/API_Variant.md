@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # Variant
-<a name="API_Variant"></a>
 
 A variant in an A/B test, representing either the control (C) or treatment (T1) configuration.
 

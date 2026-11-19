@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-execu
 ---
 
 # Action execution methods
-<a name="int-actions-execution"></a>
 
 AWS Quick provides multiple ways to execute actions, accommodating different use cases and interaction preferences.
 

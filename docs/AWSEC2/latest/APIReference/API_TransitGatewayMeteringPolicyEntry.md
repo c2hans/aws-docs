@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayMeteringPolicyEntry
-<a name="API_TransitGatewayMeteringPolicyEntry"></a>
 
 Describes an entry in a transit gateway metering policy.
 

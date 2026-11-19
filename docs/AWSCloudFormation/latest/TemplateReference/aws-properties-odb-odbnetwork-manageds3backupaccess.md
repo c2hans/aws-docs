@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::OdbNetwork ManagedS3BackupAccess
-<a name="aws-properties-odb-odbnetwork-manageds3backupaccess"></a>
 
 The configuration for managed Amazon S3 backup access from the ODB network.
 

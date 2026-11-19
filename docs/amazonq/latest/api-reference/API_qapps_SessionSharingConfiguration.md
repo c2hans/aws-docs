@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_S
 ---
 
 # SessionSharingConfiguration
-<a name="API_qapps_SessionSharingConfiguration"></a>
 
 The sharing configuration of an Amazon Q App data collection session.
 

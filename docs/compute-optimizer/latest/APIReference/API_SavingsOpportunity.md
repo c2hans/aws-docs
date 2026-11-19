@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # SavingsOpportunity
-<a name="API_SavingsOpportunity"></a>
 
 Describes the savings opportunity for recommendations of a given resource type or for the recommendation option of an individual resource.
 

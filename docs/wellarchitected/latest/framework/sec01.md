@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec01.h
 ---
 
 # Securely operate your workload
-<a name="sec01"></a>
 
  Security foundations are the organization-wide decisions and controls that every workload builds on. They set how accounts are structured, how control objectives are defined and enforced, and how teams operate securely across the whole lifecycle of a workload, from design and build through running it and improving it.
 

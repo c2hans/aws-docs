@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html
 ---
 
 # AWS CodeBuild concepts
-<a name="concepts"></a>
 
 The following concepts are important for understanding how CodeBuild works.
 

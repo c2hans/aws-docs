@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/LexB
 ---
 
 # LexBotPolicy
-<a name="LexBotPolicy"></a>
 
 **Description**: Policy for AWS Lex Bot use case
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Assessme
 ---
 
 # Creating prerequisites for premigration assessments
-<a name="CHAP_Tasks.AssessmentReport.Prerequisites"></a>
 
 This section describes the Amazon S3 and IAM resources you need to create a premigration assessment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicIRFilterOption
-<a name="API_TopicIRFilterOption"></a>
 
 The definition for a `TopicIRFilterOption`.
 

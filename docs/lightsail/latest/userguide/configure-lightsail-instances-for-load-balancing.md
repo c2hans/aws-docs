@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/configure-lig
 ---
 
 # Configure Lightsail instances for load balancing
-<a name="configure-lightsail-instances-for-load-balancing"></a>
 
 Before you attach instances to your Amazon Lightsail load balancer, you need to evaluate your application's configuration. For example, load balancers often work better when the data tier is separated from the rest of the application. This topic tells you about each Lightsail instance and makes recommendations about whether to load balance (or *horizontally scale*) and how to best configure your application.
 

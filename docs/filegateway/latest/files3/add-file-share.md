@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/add-file-share
 ---
 
 # Granting access and permissions for file shares and buckets
-<a name="add-file-share"></a>
 
 After your S3 File Gateway is activated and running, you can add additional file shares and grant access to Amazon S3 buckets, including buckets in different AWS accounts than your gateways and file shares. The following sections describe how to use IAM roles to provide your gateway with access permissions for Amazon S3 buckets and VPC endpoints, prevent certain security issues, and connect file shares to buckets across AWS accounts.
 

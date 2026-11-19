@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Architecture overview
-<a name="data-mesh-architecture-overview-section"></a>
 
 The Automotive Data Mesh follows a domain-oriented decentralized architecture with centralized governance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotVersion
 ---
 
 # BotVersionSortBy
-<a name="API_BotVersionSortBy"></a>
 
 Specifies attributes for sorting a list of bot versions.
 

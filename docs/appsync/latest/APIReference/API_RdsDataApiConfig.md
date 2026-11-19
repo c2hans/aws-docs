@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_RdsDataA
 ---
 
 # RdsDataApiConfig
-<a name="API_RdsDataApiConfig"></a>
 
 Contains the metadata required to introspect the RDS cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/viewing-m
 ---
 
 # View Direct Connect CloudWatch metrics
-<a name="viewing-metrics"></a>
 
 Direct Connect sends the following metrics about your Direct Connect connections. Amazon CloudWatch then aggregates these data points to 1-minute or 5-minute intervals. By default, Direct Connect metric data is written to CloudWatch at 5-minute intervals.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_S3Content
 ---
 
 # S3ContentLocationUpdate
-<a name="API_S3ContentLocationUpdate"></a>
 
 Describes an update for the Amazon S3 code content location for an application.
 

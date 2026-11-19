@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Event infrastructure
-<a name="event-infra"></a>
 
 ![Diagram showing the event infrastructure producers and consumers including Lambda functions EventBridge schedules and Step Functions workflows](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/event-infrastructure.drawio.png)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/edit-ex
 ---
 
 # Edit an ActiveMQ broker user
-<a name="edit-existing-user-console"></a>
 
  To edit an existing user, do the following:
 

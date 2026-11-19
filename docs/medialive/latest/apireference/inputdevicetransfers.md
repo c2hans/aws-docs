@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 ---
 
 # Input devices: input device transfers
-<a name="inputdevicetransfers"></a>
 
 ## URI
 <a name="inputdevicetransfers-url"></a>

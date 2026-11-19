@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail
 ---
 
 # SendEmail
-<a name="API_SendEmail"></a>
 
 Sends an email message. You can use the Amazon SES API v2 to send the following types of messages:
 +  **Simple** – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon SES assembles the message for you.

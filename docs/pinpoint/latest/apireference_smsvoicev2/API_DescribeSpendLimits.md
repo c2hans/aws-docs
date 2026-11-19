@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeSpendLimits
-<a name="API_DescribeSpendLimits"></a>
 
 Describes the current monthly spend limits for sending voice and text messages.
 

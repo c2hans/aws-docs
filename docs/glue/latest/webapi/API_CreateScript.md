@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateScript.html
 ---
 
 # CreateScript
-<a name="API_CreateScript"></a>
 
 Transforms a directed acyclic graph (DAG) into code.
 

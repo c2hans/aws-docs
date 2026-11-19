@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Remo
 ---
 
 # RemoveTargets
-<a name="API_RemoveTargets"></a>
 
 Removes the specified targets from the specified rule. When the rule is triggered, those targets are no longer be invoked.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AllowedInp
 ---
 
 # AllowedInputTypes
-<a name="API_AllowedInputTypes"></a>
 
 Specifies the allowed input types.
 

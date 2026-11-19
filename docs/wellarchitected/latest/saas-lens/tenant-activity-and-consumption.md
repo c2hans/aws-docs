@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/tenant-
 ---
 
 # Tenant Activity and Consumption
-<a name="tenant-activity-and-consumption"></a>
 
  In multi-tenant SaaS environments, it’s important to have visibility into how tenants are using your application and imposing load on your system’s architecture. Tracking this information at the tenant level allows you to assess your system’s ability to effectively scale and support the constantly evolving workloads being placed on your environment. The metrics and insights that are collected from a SaaS system are frequently referred to as tenant activity and consumption.
 

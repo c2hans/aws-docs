@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Bias.h
 ---
 
 # Bias
-<a name="API_Bias"></a>
 
 Contains bias metrics for a model.
 

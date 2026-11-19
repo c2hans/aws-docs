@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/jenkins-support.html
 ---
 
 # AWS Glue support for Jenkins
-<a name="jenkins-support"></a>
 
 AWS Glue supports Jenkins as follows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ListManagedInsightRules
-<a name="API_ListManagedInsightRules"></a>
 
  Returns a list that contains the number of managed Contributor Insights rules in your account.
 

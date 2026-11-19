@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsApiG
 ---
 
 # AwsApiGatewayMethodSettings
-<a name="API_AwsApiGatewayMethodSettings"></a>
 
 Defines settings for a method for the stage.
 

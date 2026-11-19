@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Amazon MQ release notes
-<a name="amazon-mq-release-notes"></a>
 
 The following table lists Amazon MQ feature releases and improvements.
 

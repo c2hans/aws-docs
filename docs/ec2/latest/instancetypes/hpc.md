@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/instancetypes/hpc.html
 ---
 
 # Specifications for Amazon EC2 high-performance computing instances
-<a name="hpc"></a>
 
 High-performance computing instances are purpose built to offer the best price performance for running HPC workloads at scale on AWS. These instances are ideal for applications that benefit from high-performance processors, such as large, complex simulations and deep learning workloads.
 

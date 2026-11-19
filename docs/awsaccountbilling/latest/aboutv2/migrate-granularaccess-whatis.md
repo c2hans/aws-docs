@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/migrate
 ---
 
 # Migrating access control for AWS Billing
-<a name="migrate-granularaccess-whatis"></a>
 
 **Note**
 The following AWS Identity and Access Management (IAM) actions have reached the end of standard support on July 2023:

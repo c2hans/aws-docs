@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/bulk-data-import-s
 ---
 
 # Importing bulk data into Amazon Personalize with a dataset import job
-<a name="bulk-data-import-step"></a>
 
 After you have formatted your input data (see [Preparing training data for Amazon Personalize](preparing-training-data.md)) and completed [Creating a schema and a dataset](data-prep-creating-datasets.md), you are ready to import your bulk data with a dataset import job. A *dataset import job* is a bulk import tool that populates a dataset with data from Amazon S3.
 

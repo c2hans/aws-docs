@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-sche
 ---
 
 # Managing a schedule group in EventBridge Scheduler
-<a name="managing-schedule-group"></a>
 
 A *schedule group* is an Amazon EventBridge Scheduler resource that you use to organize your schedules.
 

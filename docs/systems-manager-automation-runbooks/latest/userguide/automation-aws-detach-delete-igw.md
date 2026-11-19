@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DetachAndDeleteInternetGateway`
-<a name="automation-aws-detach-delete-igw"></a>
 
  **Description**
 

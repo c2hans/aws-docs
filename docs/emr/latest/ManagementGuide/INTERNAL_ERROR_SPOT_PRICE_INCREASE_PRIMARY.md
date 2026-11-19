@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/INTERNAL_ERRO
 ---
 
 # INTERNAL\_ERROR\_SPOT\_PRICE\_INCREASE\_PRIMARY
-<a name="INTERNAL_ERROR_SPOT_PRICE_INCREASE_PRIMARY"></a>
 
 ## Overview
 <a name="INTERNAL_ERROR_SPOT_PRICE_INCREASE_PRIMARY_overview"></a>

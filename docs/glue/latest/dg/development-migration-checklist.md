@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/development-migration-che
 ---
 
 # Migrating from dev endpoints to interactive sessions
-<a name="development-migration-checklist"></a>
 
  Use the following checklist to determine the appropriate method to migrate from dev endpoints to interactive sessions.
 

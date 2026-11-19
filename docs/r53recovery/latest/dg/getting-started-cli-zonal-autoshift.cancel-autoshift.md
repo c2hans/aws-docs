@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/getting-started-cl
 ---
 
 # Cancel an in-progress autoshift
-<a name="getting-started-cli-zonal-autoshift.cancel-autoshift"></a>
 
 You can cancel an in-progress autoshift with the CLI by canceling the zonal autoshift for the resource. To cancel a zonal autoshift, use the `cancel-zonal-shift command`.
 

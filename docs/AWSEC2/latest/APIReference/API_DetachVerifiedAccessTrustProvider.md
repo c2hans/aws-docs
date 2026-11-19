@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachVer
 ---
 
 # DetachVerifiedAccessTrustProvider
-<a name="API_DetachVerifiedAccessTrustProvider"></a>
 
 Detaches the specified AWS Verified Access trust provider from the specified AWS Verified Access instance.
 

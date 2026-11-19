@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchEn
 ---
 
 # BatchEnableStandards
-<a name="API_BatchEnableStandards"></a>
 
 Enables the standards specified by the provided `StandardsArn`. To obtain the ARN for a standard, use the `DescribeStandards` operation.
 

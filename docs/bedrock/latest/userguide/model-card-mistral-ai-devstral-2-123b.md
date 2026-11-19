@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mist
 ---
 
 # Devstral 2 123B
-<a name="model-card-mistral-ai-devstral-2-123b"></a>
 
 ## ![Mistral AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/mistralai.png) Mistral AI — Devstral 2 123B
 <a name="model-card-mistral-ai-devstral-2-123b-header"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Rout
 ---
 
 # RoutingConfig
-<a name="API_RoutingConfig"></a>
 
 The routing configuration of the endpoint.
 

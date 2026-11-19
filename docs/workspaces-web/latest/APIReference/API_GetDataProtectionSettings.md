@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_G
 ---
 
 # GetDataProtectionSettings
-<a name="API_GetDataProtectionSettings"></a>
 
 Gets the data protection settings.
 

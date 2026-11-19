@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/examp
 ---
 
 # Hello CloudWatch
-<a name="example_cloudwatch_Hello_section"></a>
 
 The following code examples show how to get started using CloudWatch.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/en
 ---
 
 # More patterns
-<a name="endusercomputing-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Automate the creation of Amazon WorkSpaces Applications resources using AWS CloudFormation](automate-the-creation-of-appstream-2-0-resources-using-aws-cloudformation.md)

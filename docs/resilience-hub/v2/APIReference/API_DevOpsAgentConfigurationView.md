@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_DevOp
 ---
 
 # DevOpsAgentConfigurationView
-<a name="API_DevOpsAgentConfigurationView"></a>
 
 The current DevOps Agent integration state for a service. Read operations return this state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 2b. Fulfill prerequisites manually (optional)
-<a name="step-2b.-achieve-prerequisites-manually-optional"></a>
 
 **Note**
 Use this procedure only for Organizations deployments.

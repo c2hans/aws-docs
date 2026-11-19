@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/cfn-layer.html
 ---
 
 # Customize constructs from the AWS Construct Library
-<a name="cfn-layer"></a>
 
 Customize constructs from the AWS Construct Library through Mixins, Facades, escape hatches, raw overrides, and custom resources.
 

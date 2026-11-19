@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # Geometry
-<a name="API_geospatial_Geometry"></a>
 
 The structure representing a Geometry in terms of Type and Coordinates as per GeoJson spec.
 

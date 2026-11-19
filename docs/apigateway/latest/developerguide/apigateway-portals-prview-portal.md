@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Preview a portal in API Gateway
-<a name="apigateway-portals-prview-portal"></a>
 
 You can preview your portal before you publish it. API Gateway creates a short-lived URL that you can use to preview the version of your portal that customers will see once your portal is published.
 

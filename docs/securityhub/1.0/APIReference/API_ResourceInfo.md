@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourceInfo
-<a name="API_ResourceInfo"></a>
 
 Additional details about a resource that are specific to its category. For AI/ML resources and their host resources, this structure contains `AIDetails`.
 

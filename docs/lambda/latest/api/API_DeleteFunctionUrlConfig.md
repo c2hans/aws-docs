@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteFunctionUrlC
 ---
 
 # DeleteFunctionUrlConfig
-<a name="API_DeleteFunctionUrlConfig"></a>
 
 Deletes a Lambda function URL. When you delete a function URL, you can't recover it. Creating a new function URL results in a different URL address.
 

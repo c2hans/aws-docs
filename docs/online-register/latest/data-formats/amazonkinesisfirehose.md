@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Kinesis Firehose
-<a name="amazonkinesisfirehose"></a>
 
 Amazon Kinesis Firehose provides the following APIs for data retrieval.
 

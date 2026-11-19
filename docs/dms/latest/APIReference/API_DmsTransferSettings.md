@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DmsTransferS
 ---
 
 # DmsTransferSettings
-<a name="API_DmsTransferSettings"></a>
 
  The settings in JSON format for the DMS Transfer type source endpoint.
 

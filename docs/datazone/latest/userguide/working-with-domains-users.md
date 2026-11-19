@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/working-with-d
 ---
 
 # Domains and user access in Amazon DataZone
-<a name="working-with-domains-users"></a>
 
 This section describes how you can create and manage domains and user access in Amazon DataZone.
 

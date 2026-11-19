@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Firewal
 ---
 
 # FirewallPolicyDetails
-<a name="API_FirewallPolicyDetails"></a>
 
 Defines the behavior of the firewall.
 

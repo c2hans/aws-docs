@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-access-p
 ---
 
 # s3-access-point-in-vpc-only
-<a name="s3-access-point-in-vpc-only"></a>
 
 Checks if an Amazon S3 access point does not allow access from the internet (NetworkOrigin is VPC). The rule is NON\_COMPLIANT if NetworkOrigin is Internet.
 

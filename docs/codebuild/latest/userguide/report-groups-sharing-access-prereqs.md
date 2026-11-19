@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/report-groups
 ---
 
 # Access report groups shared with you
-<a name="report-groups-sharing-access-prereqs"></a>
 
 To access a shared report group, a consumer's IAM role requires the `BatchGetReportGroups` permission. You can attach the following policy to their IAM role:
 

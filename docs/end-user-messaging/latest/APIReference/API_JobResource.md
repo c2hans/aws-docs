@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # JobResource
-<a name="API_JobResource"></a>
 
 Contains information about a resource that was created or updated by an asynchronous job.
 

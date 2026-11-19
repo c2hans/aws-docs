@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIns
 ---
 
 # DeleteInstanceConnectEndpoint
-<a name="API_DeleteInstanceConnectEndpoint"></a>
 
 Deletes the specified EC2 Instance Connect Endpoint.
 

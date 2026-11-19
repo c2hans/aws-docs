@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/supported-
 ---
 
 # Supported inputs and outputs
-<a name="supported-inputs"></a>
 
 This section describes the input types, input codecs, and output codecs that AWS Elemental MediaPackage supports for live content.
 

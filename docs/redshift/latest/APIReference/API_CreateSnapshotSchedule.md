@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateS
 ---
 
 # CreateSnapshotSchedule
-<a name="API_CreateSnapshotSchedule"></a>
 
 Create a snapshot schedule that can be associated to a cluster and which overrides the default system backup schedule.
 

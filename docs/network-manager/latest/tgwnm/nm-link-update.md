@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-link-upd
 ---
 
 # Edit a link using AWS Network Manager
-<a name="nm-link-update"></a>
 
 Edit the link between two devices in your Cloud WAN global network.
 

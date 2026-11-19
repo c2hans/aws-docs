@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Column
 ---
 
 # ColumnDefinition
-<a name="API_ColumnDefinition"></a>
 
 The names and data types of regular columns.
 

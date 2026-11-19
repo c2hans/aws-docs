@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # DescribeDevice
-<a name="API_devicemanagement_DescribeDevice"></a>
 
 Checks device-specific information, such as the device type, software version, IP addresses, and lock status.
 

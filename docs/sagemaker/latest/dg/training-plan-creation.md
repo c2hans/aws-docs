@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-creati
 ---
 
 # Training plans creation
-<a name="training-plan-creation"></a>
 
 To reserve compute capacity using the SageMaker training plans capability, follow these steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/API
 ---
 
 # API Error Codes
-<a name="APIError"></a>
 
 **Topics**
 + [About Response Code 503](#ErrorCode503)

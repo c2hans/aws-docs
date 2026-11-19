@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/cpa-instal
 ---
 
 # Set up Docker on your SiteWise Edge gateway
-<a name="cpa-install-docker"></a>
 
 AWS IoT SiteWise provides a Docker image that allows you to run the SiteWise Edge application on various platforms and environments. This Docker image encapsulates all the necessary components and dependencies required to collect, process, and send data from your industrial equipment to the AWS Cloud. By using the Docker image, you can deploy and run the SiteWise Edge application on Docker-compatible hosts, such as servers, edge devices, or cloud-based container services.
 

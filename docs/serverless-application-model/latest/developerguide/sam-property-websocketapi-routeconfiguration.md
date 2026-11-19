@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # RouteConfiguration
-<a name="sam-property-websocketapi-routeconfiguration"></a>
 
 ## Syntax
 <a name="sam-property-websocketapi-routeconfiguration-syntax"></a>

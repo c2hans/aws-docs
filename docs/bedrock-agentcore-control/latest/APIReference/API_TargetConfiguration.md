@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # TargetConfiguration
-<a name="API_TargetConfiguration"></a>
 
 The configuration for a gateway target. This structure defines how the gateway connects to and interacts with the target endpoint.
 

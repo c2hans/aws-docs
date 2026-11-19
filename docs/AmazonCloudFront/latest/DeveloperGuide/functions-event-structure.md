@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/f
 ---
 
 # CloudFront Functions event structure
-<a name="functions-event-structure"></a>
 
 CloudFront Functions passes an `event` object to your function code as input when it runs the function. When you [test a function](test-function.md), you create the `event` object and pass it to your function. When you create an `event` object for testing a function, you can omit the `distributionDomainName`, `distributionId`, and `requestId` fields in the `context` object. Make sure that the names of headers are lowercase, which is always the case in the `event` object that CloudFront Functions passes to your function in production.
 

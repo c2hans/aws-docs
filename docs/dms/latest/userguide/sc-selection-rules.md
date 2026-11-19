@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/sc-selection-rules.
 ---
 
 # Selection rules in DMS Schema Conversion
-<a name="sc-selection-rules"></a>
 
 DMS Schema Conversion converts database schemas from one engine to another. You use *selection rules* to control which database objects DMS Schema Conversion acts on during operations such as assessment, conversion, and export. A selection rules is a JSON object that you pass through the `SelectionRules` parameter (or `--selection-rules` in the AWS CLI). Without a selection rule, an operation has nothing to act on. With a rule, you can scope the operation to a single object, an entire schema, an entire database (for Microsoft SQL Server and SAP ASE (Sybase ASE) sources), or a group of objects matched by a pattern.
 

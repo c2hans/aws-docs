@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DataProtectionSettingsSummary
-<a name="API_DataProtectionSettingsSummary"></a>
 
 The summary of the data protection settings.
 

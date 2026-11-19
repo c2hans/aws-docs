@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.Cre
 ---
 
 # Creating a cluster for Memcached
-<a name="Clusters.Create-mc"></a>
 
 The following examples show how to create a cluster using the AWS Management Console, AWS CLI and ElastiCache API.
 

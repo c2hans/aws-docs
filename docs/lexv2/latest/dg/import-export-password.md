@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/import-export-password.h
 ---
 
 # Using a password when importing or exporting
-<a name="import-export-password"></a>
 
 Amazon Lex V2 can password protect your export archives or read your protected import archives using standard .zip file compression. You should always password protect your import and export archives.
 

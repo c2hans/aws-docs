@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # SDK for .NET (v4) code examples
-<a name="csharp_code_examples"></a>
 
 The code examples in this topic show you how to use the AWS SDK for .NET (v4) with AWS.
 

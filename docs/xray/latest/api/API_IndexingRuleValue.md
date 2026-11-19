@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_IndexingRuleValue.ht
 ---
 
 # IndexingRuleValue
-<a name="API_IndexingRuleValue"></a>
 
  The indexing rule configuration.
 

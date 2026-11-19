@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-cl
 ---
 
 # Amazon EMR cluster requirements
-<a name="emr-studio-cluster-requirements"></a>
 
 **Amazon EMR Clusters Running on Amazon EC2**
 

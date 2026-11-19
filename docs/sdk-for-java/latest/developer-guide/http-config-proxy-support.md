@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 ---
 
 # Configure HTTP proxies
-<a name="http-config-proxy-support"></a>
 
 You can configure HTTP proxies by using code, by setting Java system properties, or by setting environment variables.
 

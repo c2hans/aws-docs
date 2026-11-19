@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast
 ---
 
 # Getting Started​ with the IVS Web Broadcast SDK \| Low-Latency Streaming
-<a name="broadcast-web-getting-started"></a>
 
 This document takes you through the steps involved in getting started with the Amazon IVS low-latency streaming Web broadcast SDK.
 

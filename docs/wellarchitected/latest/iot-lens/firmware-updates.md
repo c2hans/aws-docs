@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/firmware
 ---
 
 # Firmware updates
-<a name="firmware-updates"></a>
 
  Supporting firmware upgrades without human intervention is critical for security, scalability, and delivering new capabilities.
 

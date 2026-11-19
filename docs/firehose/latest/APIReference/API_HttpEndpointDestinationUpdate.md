@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_HttpEnd
 ---
 
 # HttpEndpointDestinationUpdate
-<a name="API_HttpEndpointDestinationUpdate"></a>
 
 Updates the specified HTTP endpoint destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-library
 ---
 
 # Multiple slot configuration with PKCS \#11 library for AWS CloudHSM
-<a name="pkcs11-library-configs-multi-slot"></a>
 
 A single slot in Client SDK 5 PKCS \#11 library represents a single connection to a cluster in AWS CloudHSM. With Client SDK 5, you can configure your PKCS11 library to allow multiple slots to connect users to multiple CloudHSM clusters from a single PKCS\#11 application.
 

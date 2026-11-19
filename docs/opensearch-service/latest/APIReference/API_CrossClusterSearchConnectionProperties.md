@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CrossClusterSearchConnectionProperties
-<a name="API_CrossClusterSearchConnectionProperties"></a>
 
 Cross-cluster search specific connection properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/fidelity.html
 ---
 
 # Fidelity in AWS Emulator
-<a name="fidelity"></a>
 
  AWS Emulator supports the APIs of AWS services that have an API model in the [AWS API models repository on GitHub](https://github.com/aws/api-models-aws). How closely the emulator matches AWS for those APIs is called *fidelity*.
 

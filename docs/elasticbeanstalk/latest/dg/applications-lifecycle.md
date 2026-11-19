@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-
 ---
 
 # Configuring application version lifecycle settings
-<a name="applications-lifecycle"></a>
 
 This topic explains the policies and quotas that Elastic Beanstalk applies to the versions of your application in a given environment, including how long an application version remains in an environment.
 

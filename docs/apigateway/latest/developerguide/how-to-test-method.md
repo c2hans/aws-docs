@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-
 ---
 
 # Use the API Gateway console to test a REST API method
-<a name="how-to-test-method"></a>
 
 Use the API Gateway console to test a REST API method.
 

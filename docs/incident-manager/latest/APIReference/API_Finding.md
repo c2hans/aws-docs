@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Finding
-<a name="API_Finding"></a>
 
 Information about a specific AWS CodeDeploy deployment or AWS CloudFormation stack creation or update that occurred around the time of a reported incident. These activities can be investigated as a potential cause of the incident.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ParentBotN
 ---
 
 # ParentBotNetwork
-<a name="API_ParentBotNetwork"></a>
 
 A network of bots.
 

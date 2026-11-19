@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ActionDefinition
-<a name="API_ActionDefinition"></a>
 
 A custom action to use in stateless rule actions settings. This is used in [CustomAction](API_CustomAction.md).
 

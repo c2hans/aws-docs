@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_DeleteWo
 ---
 
 # DeleteWorkspaceApiKey
-<a name="API_DeleteWorkspaceApiKey"></a>
 
 Deletes a Grafana API key for the workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListQuer
 ---
 
 # ListQueryLoggingConfigs
-<a name="API_ListQueryLoggingConfigs"></a>
 
 Lists the configurations for DNS query logging that are associated with the current AWS account or the configuration that is associated with a specified hosted zone.
 

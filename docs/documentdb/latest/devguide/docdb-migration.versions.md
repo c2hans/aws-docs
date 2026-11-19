@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-migrati
 ---
 
 # Upgrading your Amazon DocumentDB cluster using AWS Database Migration Service
-<a name="docdb-migration.versions"></a>
 
 **Important**
 Amazon DocumentDB does not follow the same support lifecycles as MongoDB and MongoDB's end-of-life schedule does not apply to Amazon DocumentDB.

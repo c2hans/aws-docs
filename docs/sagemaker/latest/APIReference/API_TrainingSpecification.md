@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingSpecification
-<a name="API_TrainingSpecification"></a>
 
 Defines how the algorithm is used for a training job.
 

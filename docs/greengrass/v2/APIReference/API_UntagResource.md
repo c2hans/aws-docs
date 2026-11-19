@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_UntagReso
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes a tag from an AWS IoT Greengrass resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Prerequisites and permissions
-<a name="advanced-prompt-optimization-prereqs"></a>
 
 ## Prerequisites
 <a name="advanced-prompt-optimization-prereqs-overview"></a>

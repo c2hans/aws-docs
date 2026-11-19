@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GlobalSecondaryIndexUpdate
-<a name="API_GlobalSecondaryIndexUpdate"></a>
 
 Represents one of the following:
 + A new global secondary index to be added to an existing table.

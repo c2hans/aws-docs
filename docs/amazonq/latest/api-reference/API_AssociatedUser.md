@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Associa
 ---
 
 # AssociatedUser
-<a name="API_AssociatedUser"></a>
 
 Represents an associated user in the access control system.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/discov
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Using the AWS Marketplace Discovery API
-<a name="discovery-apis"></a>
 
 The AWS Marketplace Discovery API provides programmatic access to the AWS Marketplace catalog. You can use it to retrieve product and pricing information, build integrated procurement experiences, and create custom storefronts.
 

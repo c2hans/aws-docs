@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Descaling your configurations
-<a name="descale-configurations"></a>
 
 "Descale" means moving an F5 BIG-IP configuration to a lower or more cost-efficient configuration, based on the features or metrics required after your initial discovery findings. You must carefully evaluate all these options because they will impact the architecture and the number of instances required.
 

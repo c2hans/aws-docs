@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Chat
 ---
 
 # ChatExecution
-<a name="API_ChatExecution"></a>
 
 A single chat execution summary
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-replica
 ---
 
 # Disabling GTID-based replication for a MySQL DB instance with read replicas
-<a name="mysql-replication-gtid.disabling"></a>
 
 You can disable GTID-based replication for a MySQL DB instance with read replicas.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/partnerguide/integrat
 ---
 
 # Overview of third-party integration with AWS Security Hub CSPM
-<a name="integration-overview"></a>
 
 This guide is intended for AWS Partner Network (APN) Partners who would like to create an integration with AWS Security Hub CSPM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-iam-role.
 ---
 
 # IAM role for publishing flow logs to CloudWatch Logs
-<a name="flow-logs-iam-role"></a>
 
 The IAM role that's associated with your flow log must have sufficient permissions to publish flow logs to the specified log group in CloudWatch Logs. The IAM role must belong to your AWS account.
 

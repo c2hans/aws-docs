@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/setIntersecti
 ---
 
 # $setIntersection
-<a name="setIntersection"></a>
 
 The `$setIntersection` operator in Amazon DocumentDB is used to return the common elements between two or more arrays. This operator is particularly useful when working with sets of data, allowing you to find the intersection of multiple sets.
 

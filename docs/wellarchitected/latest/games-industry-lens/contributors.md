@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals contributed to this document:
 +  Adam Hatfield, Senior Solutions Architect, Amazon Web Services

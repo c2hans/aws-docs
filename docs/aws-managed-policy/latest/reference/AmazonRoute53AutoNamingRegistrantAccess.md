@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53AutoNamingRegistrantAccess
-<a name="AmazonRoute53AutoNamingRegistrantAccess"></a>
 
 **Description**: Provides registrant level access to Route 53 Auto Naming actions.
 

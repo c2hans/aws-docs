@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Best practices for code recommendations with Amazon Q Developer
-<a name="code-recommendations"></a>
 
 Amazon Q Developer can take developer questions and evaluate code to offer recommendations that range from code generation and bug fixes to guidance using natural language. Following are best practices for using chat in Amazon Q:
 + **Generate code from scratch**

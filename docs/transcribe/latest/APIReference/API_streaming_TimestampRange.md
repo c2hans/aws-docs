@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # TimestampRange
-<a name="API_streaming_TimestampRange"></a>
 
 Contains the timestamp range (start time through end time) of a matched category.
 

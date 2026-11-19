@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/comprehend
 ---
 
 # Text analysis API operations
-<a name="comprehendmedical-textanalysis"></a>
 
 Use Amazon Comprehend Medical to examine clinical documents and to gain various insights about their content using pre-trained natural language processing (NLP) models. You can perform analysis both on single files or as a batch analysis on multiple files stored in an Amazon Simple Storage Service (S3) bucket.
 

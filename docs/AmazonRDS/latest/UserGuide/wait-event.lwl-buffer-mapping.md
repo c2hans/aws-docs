@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.lw
 ---
 
 # LWLock:BufferMapping (LWLock:buffer\_mapping)
-<a name="wait-event.lwl-buffer-mapping"></a>
 
 This event occurs when a session is waiting to associate a data block with a buffer in the shared buffer pool.
 

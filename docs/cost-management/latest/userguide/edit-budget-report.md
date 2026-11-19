@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/edit-bu
 ---
 
 # Editing an AWS Budgets report
-<a name="edit-budget-report"></a>
 
 You can use this procedure to edit an AWS Budgets report.<a name="editing-budget-report-steps"></a>
 

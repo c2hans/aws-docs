@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service_code_examples
 ---
 
 # Basic examples for Kinesis using AWS SDKs
-<a name="service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Kinesis with AWS SDKs.
 

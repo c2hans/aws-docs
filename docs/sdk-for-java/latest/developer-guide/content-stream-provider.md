@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/cont
 ---
 
 # Implement `ContentStreamProvider` in the AWS SDK for Java 2.x
-<a name="content-stream-provider"></a>
 
 `ContentStreamProvider` is an abstraction used in the AWS SDK for Java 2.x to allow multiple reads of input data. This topic explains how to implement a `ContentStreamProvider` correctly for your applications.
 

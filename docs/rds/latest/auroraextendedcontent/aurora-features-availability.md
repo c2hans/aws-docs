@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Availability and durability
-<a name="aurora-features-availability"></a>
 
 **Topics**
 + [Instance monitoring and repair](#aurora-features-instance-monitoring)

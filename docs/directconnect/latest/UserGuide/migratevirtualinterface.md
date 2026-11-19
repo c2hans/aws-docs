@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/migratevi
 ---
 
 # Migrate a Direct Connect virtual interface
-<a name="migratevirtualinterface"></a>
 
 Use this procedure when you want to perform any of the following virtual interface migration operations:
 +  Migrate an existing virtual interface associated with a connection to another LAG.

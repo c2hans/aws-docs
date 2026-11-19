@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_UntagResou
 ---
 
 # UntagResource
-<a name="API_connect-cases_UntagResource"></a>
 
 Untags a resource.
 

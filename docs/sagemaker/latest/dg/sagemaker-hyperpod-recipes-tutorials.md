@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Tutorials
-<a name="sagemaker-hyperpod-recipes-tutorials"></a>
 
 The following quick-start tutorials help you get started with using the recipes for training:
 + SageMaker HyperPod with Slurm Orchestration

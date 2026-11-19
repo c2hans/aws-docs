@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/ecs-managed-insta
 ---
 
 # Compute environments on Amazon ECS Managed Instances
-<a name="ecs-managed-instances-compute-environments"></a>
 
 AWS Batch compute environments on Amazon ECS Managed Instances use a `managedInstancesProvider` configuration block inside `computeResources`. This structure aligns with the Amazon ECS capacity provider model and is self-contained. All networking, instance profile, and instance selection configuration lives within this block.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-train-storage-
 ---
 
 # Uncompressed model output
-<a name="model-train-storage-uncompressed"></a>
 
 SageMaker AI stores your model in `/opt/ml/model` and your data in `/opt/ml/output/data`. After the model and data are written to those locations, they're uploaded to your Amazon S3 bucket as compressed files by default.
 

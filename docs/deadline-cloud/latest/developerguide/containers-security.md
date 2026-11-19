@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/con
 ---
 
 # Security and best practices for container jobs
-<a name="containers-security"></a>
 
 ## Rootless runtime
 <a name="containers-security-rootless"></a>

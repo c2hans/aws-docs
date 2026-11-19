@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Structure your identities to access your environment
-<a name="structure-the-environment"></a>
 
 Once your roles have been defined and you have decided what services you will start using, you need to structure your environment in a way that allows you to assign and separate the responsibilities previously described. We recommend that you start small where you can, and separate the security functions, workload environments (separating production from the rest of the environments), and sandbox environments. You can achieve this by using a mechanism to create isolated group of resources from each other.
 

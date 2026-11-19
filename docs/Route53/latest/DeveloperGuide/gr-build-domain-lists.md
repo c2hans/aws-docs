@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-build-d
 ---
 
 # Build lists of domains to block or allow
-<a name="gr-build-domain-lists"></a>
 
 You can create your own domain lists to specify domain categories that you either don't find in the managed domain list offerings or that you prefer to handle on your own.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # UpdateStream
-<a name="API_UpdateStream"></a>
 
 Updates stream metadata, such as the device name and media type.
 

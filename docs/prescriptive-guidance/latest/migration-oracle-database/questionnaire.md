@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Appendix: Oracle migration questionnaire
-<a name="questionnaire"></a>
 
 Use the questionnaire in this section as a starting point to gather information for the assessment and planning phases of your migration project. You can [download this questionnaire](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/samples/oracle-database-migration-questionnaire.zip) in Microsoft Excel format and use it to record your information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-sw-asset-s
 ---
 
 # Analyze sync status and errors
-<a name="tm-sw-asset-sync-ts"></a>
 
 This topic provides guidance on how to analyze sync errors and statuses.
 

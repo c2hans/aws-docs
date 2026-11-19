@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/machine-learning-env
 ---
 
 # Machine learning environments offered by Amazon SageMaker AI
-<a name="machine-learning-environments"></a>
 
 **Important**
 Amazon SageMaker Studio and Amazon SageMaker Studio Classic are two of the machine learning environments that you can use to interact with SageMaker AI.

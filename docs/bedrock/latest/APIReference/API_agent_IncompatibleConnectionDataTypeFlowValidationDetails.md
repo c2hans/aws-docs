@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # IncompatibleConnectionDataTypeFlowValidationDetails
-<a name="API_agent_IncompatibleConnectionDataTypeFlowValidationDetails"></a>
 
 Details about incompatible data types in a connection between nodes.
 

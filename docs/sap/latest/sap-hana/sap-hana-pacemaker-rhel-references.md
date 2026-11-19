@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # Vendor Support
-<a name="sap-hana-pacemaker-rhel-references"></a>
 
 ## SAP and Red Hat References
 <a name="_sap_and_red_hat_references"></a>

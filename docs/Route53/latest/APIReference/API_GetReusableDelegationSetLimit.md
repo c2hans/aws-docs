@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetReusa
 ---
 
 # GetReusableDelegationSetLimit
-<a name="API_GetReusableDelegationSetLimit"></a>
 
 Gets the maximum number of hosted zones that you can associate with the specified reusable delegation set.
 

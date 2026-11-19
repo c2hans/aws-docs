@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # PolicyGeneration
-<a name="API_PolicyGeneration"></a>
 
 Contains details about the policy generation status and properties.
 

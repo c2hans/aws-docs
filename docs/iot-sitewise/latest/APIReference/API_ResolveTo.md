@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Res
 ---
 
 # ResolveTo
-<a name="API_ResolveTo"></a>
 
 The detailed resource this execution summary resolves to.
 

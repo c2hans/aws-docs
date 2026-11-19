@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KeyVa
 ---
 
 # KeyValueStoreList
-<a name="API_KeyValueStoreList"></a>
 
 The key value store list.
 

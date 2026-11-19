@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3
 ---
 
 # Troubleshoot IAM and Amazon S3
-<a name="troubleshoot_iam-s3"></a>
 
 Use the information here to help you troubleshoot and fix issues that you might encounter when working with Amazon S3 and IAM.
 

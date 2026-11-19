@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_C
 ---
 
 # CreateDbCluster
-<a name="API_CreateDbCluster"></a>
 
 Creates a new Timestream for InfluxDB cluster.
 

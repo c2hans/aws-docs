@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Overview
-<a name="change-management-overview"></a>
 
 The purpose of change management is to control the lifecycles of all changes, allowing changes to be made with minimal interruption to IT services. Changes to an environment introduces risk. Authorized changes should be prioritized, planned, tested, implemented, documented, and reviewed to mitigate any risks before deployment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/sample-
 ---
 
 # Sample Job Settings Specifications in JSON
-<a name="sample-json"></a>
 
 These sample AWS Elemental MediaConvert jobs are specified in JSON. When you use the Python SDK or the AWS CLI, you pass in your job settings directly as a JSON object. When you use the other SDKs, translate the job settings according to the SDK documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Extende
 ---
 
 # ExtendedS3DestinationUpdate
-<a name="API_ExtendedS3DestinationUpdate"></a>
 
 Describes an update for a destination in Amazon S3.
 

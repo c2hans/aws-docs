@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Perf
 ---
 
 # PerformanceInsightsMetricQuery
-<a name="API_PerformanceInsightsMetricQuery"></a>
 
 A single query to be processed. Use these parameters to query the Performance Insights `GetResourceMetrics` API to retrieve the metrics for an anomaly. For more information, see ` [GetResourceMetrics](https://docs.aws.amazon.com/performance-insights/latest/APIReference/API_GetResourceMetrics.html) ` in the *Amazon RDS Performance Insights API Reference*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.ACG.6] Implement auto-remediation for non-compliant findings
-<a name="ag.acg.6-implement-auto-remediation-for-non-compliant-findings"></a>
 
  **Category:** RECOMMENDED
 

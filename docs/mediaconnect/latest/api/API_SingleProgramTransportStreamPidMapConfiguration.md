@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SingleProgra
 ---
 
 # SingleProgramTransportStreamPidMapConfiguration
-<a name="API_SingleProgramTransportStreamPidMapConfiguration"></a>
 
 The configuration settings for remapping the identification numbers of elementary streams and program identifiers of a single-program transport stream. For more information, see [PID remapping](https://docs.aws.amazon.com/mediaconnect/latest/ug/processors-pid-remapping.html) in the * AWS Elemental MediaConnect User Guide*.
 

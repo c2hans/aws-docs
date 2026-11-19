@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/design-p
 ---
 
 # Design principles
-<a name="design-principles-perf"></a>
 
  In addition to the overall Well-Architected Framework performance efficiency design principles, there are four design principles for performance efficiency for IoT:
 +  **Use managed services**: AWS provides several managed services across databases, compute, and storage that can assist your architecture in increasing the overall reliability and performance.

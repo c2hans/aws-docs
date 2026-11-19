@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterRestrictedInstanceGroupsConfig
-<a name="API_ClusterRestrictedInstanceGroupsConfig"></a>
 
 The configuration for the restricted instance groups (RIG) in the SageMaker HyperPod cluster.
 

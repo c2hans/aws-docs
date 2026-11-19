@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Action.html
 ---
 
 # Action
-<a name="API_Action"></a>
 
 Defines an action to be initiated by a trigger.
 

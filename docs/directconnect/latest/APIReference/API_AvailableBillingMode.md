@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Av
 ---
 
 # AvailableBillingMode
-<a name="API_AvailableBillingMode"></a>
 
 Information about a billing mode available at an Direct Connect location.
 

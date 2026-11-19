@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/single-ami-
 ---
 
 # Updating AMI-based product information on AWS Marketplace
-<a name="single-ami-updating-product"></a>
 
 After you create your single Amazon Machine Image (AMI) product, you can change some of the information associated with it in AWS Marketplace. For example, if a new version modifies the description or highlights of the product, you can edit the product information with the new data. You can also update other product information, including product title, SKU description, categories, keywords, and others. For more information, see the following procedure.
 

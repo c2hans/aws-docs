@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Syslog_
 ---
 
 # Setting up syslog ingestion
-<a name="CWL_Syslog_Setup"></a>
 
 This section walks you through the steps to set up syslog ingestion into CloudWatch Logs. You will create a VPC endpoint for the syslog service, a log group to receive the messages, a resource policy to authorize the syslog service, and a syslog configuration that routes traffic from your VPC endpoint to your log group.
 

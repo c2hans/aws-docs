@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/security_iam_ser
 ---
 
 # How Reachability Analyzer works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Reachability Analyzer, learn what IAM features are available to use with Reachability Analyzer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_AgentD
 ---
 
 # AgentDetails
-<a name="API_AgentDetails"></a>
 
 Information about the installed GuardDuty security agent.
 

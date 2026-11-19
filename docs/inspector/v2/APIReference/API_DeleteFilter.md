@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_DeleteFilt
 ---
 
 # DeleteFilter
-<a name="API_DeleteFilter"></a>
 
 Deletes a filter resource.
 

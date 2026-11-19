@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ServerStatusSummary
-<a name="API_ServerStatusSummary"></a>
 
 The status summary of the server analysis.
 

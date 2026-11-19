@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Delete
 ---
 
 # DeletePullThroughCacheRule
-<a name="API_DeletePullThroughCacheRule"></a>
 
 Deletes a pull through cache rule.
 

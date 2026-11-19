@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # How it works
-<a name="CloudWatch-NetworkFlowMonitor-inside-network-flow-monitor"></a>
 
 This section provides information about several aspects of how Network Flow Monitor works.
 

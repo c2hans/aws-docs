@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ListStreamSessionsByAccount
-<a name="API_ListStreamSessionsByAccount"></a>
 
 Retrieves a list of Amazon GameLift Streams stream sessions that this user account has access to.
 

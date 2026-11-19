@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/getting-star
 ---
 
 # Create a Valkey serverless cache in a VPC
-<a name="getting-started-valkey-vpc"></a>
 
 **AWS Management Console**
 

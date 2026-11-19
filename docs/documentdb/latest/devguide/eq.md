@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/eq.html
 ---
 
 # $eq
-<a name="eq"></a>
 
 The `$eq` operator in Amazon DocumentDB is used to match documents where the value of a field is equal to the specified value. This operator is commonly used in the `find()` method to retrieve documents that meet the specified criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ap
 ---
 
 # ApiGatewayApiAsset
-<a name="API_ApiGatewayApiAsset"></a>
 
 The API Gateway API that is the asset.
 

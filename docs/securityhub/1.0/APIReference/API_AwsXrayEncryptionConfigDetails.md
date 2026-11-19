@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsXray
 ---
 
 # AwsXrayEncryptionConfigDetails
-<a name="API_AwsXrayEncryptionConfigDetails"></a>
 
 Information about the encryption configuration for AWS X-Ray.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-gett
 ---
 
 # Getting started
-<a name="ict-getting-started"></a>
 
 Isolated and confidential tasks are a trusted execution capability of Amazon ECS Managed Instances that gives each task its own hardware-isolated Nitro Sandbox. This section walks you through enabling them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetAddressListImportJob
-<a name="API_GetAddressListImportJob"></a>
 
 Fetch attributes of an import job.
 

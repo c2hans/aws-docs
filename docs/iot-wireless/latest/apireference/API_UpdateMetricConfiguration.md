@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateMetricConfiguration
-<a name="API_UpdateMetricConfiguration"></a>
 
 Update the summary metric configuration.
 

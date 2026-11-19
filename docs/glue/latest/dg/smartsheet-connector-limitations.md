@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/smartsheet-connector-limi
 ---
 
 # Limitations
-<a name="smartsheet-connector-limitations"></a>
 
 Smartsheet doesn't support field-based or record-based partitioning.

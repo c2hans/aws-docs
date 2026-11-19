@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ads-log-format.htm
 ---
 
 # AWS Elemental MediaTailor ADS logs description and event types
-<a name="ads-log-format"></a>
 
 The following sections describe the logs that MediaTailor emits to describe events with the ad decision server (ADS). These are `AdDecisionServerInteractions` logs.
 

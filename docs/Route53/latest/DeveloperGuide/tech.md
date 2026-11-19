@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tech.html
 ---
 
 # .tech
-<a name="tech"></a>
 
 Used by technology enthusiasts and those dedicated to technology in companies, services, and manufacturers.
 

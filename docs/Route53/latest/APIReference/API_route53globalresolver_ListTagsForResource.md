@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ListTagsForResource
-<a name="API_route53globalresolver_ListTagsForResource"></a>
 
 Lists the tags associated with a Route 53 Global Resolver resource.
 

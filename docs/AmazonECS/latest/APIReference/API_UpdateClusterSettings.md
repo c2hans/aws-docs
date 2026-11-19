@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdateClusterSettings
-<a name="API_UpdateClusterSettings"></a>
 
 Modifies the settings to use for a cluster.
 

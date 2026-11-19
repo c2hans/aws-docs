@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Deregist
 ---
 
 # DeregisterMarketplaceModelEndpoint
-<a name="API_DeregisterMarketplaceModelEndpoint"></a>
 
 Deregisters an endpoint for a model from Amazon Bedrock Marketplace. This operation removes the endpoint's association with Amazon Bedrock but does not delete the underlying Amazon SageMaker endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_QueueStr
 ---
 
 # QueueStreamFilter
-<a name="API_QueueStreamFilter"></a>
 
 Filters the queues returned by [ListQueues](API_ListQueues.md) to those created on a particular data stream.
 

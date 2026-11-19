@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Use the Playground
-<a name="ecs-playground"></a>
 
 **Note**
  **Supported in:** ECS architecture only (v8.1\+).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AlarmRecommendation
-<a name="API_AlarmRecommendation"></a>
 
 Defines a recommendation for a CloudWatch alarm.
 

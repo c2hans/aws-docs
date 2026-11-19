@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ControlAssessment
-<a name="API_ControlAssessment"></a>
 
 The result of evaluating a single control as part of an assessment.
 

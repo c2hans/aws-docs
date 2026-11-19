@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Owner.
 ---
 
 # Owner
-<a name="API_Owner"></a>
 
 Contains information on the owner of the bucket.
 

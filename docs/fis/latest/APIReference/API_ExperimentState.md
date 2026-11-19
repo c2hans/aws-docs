@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentSt
 ---
 
 # ExperimentState
-<a name="API_ExperimentState"></a>
 
 Describes the state of an experiment.
 

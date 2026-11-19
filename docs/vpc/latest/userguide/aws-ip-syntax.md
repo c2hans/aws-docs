@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-syntax.html
 ---
 
 # Syntax for AWS IP address range JSON
-<a name="aws-ip-syntax"></a>
 
 AWS publishes its current IP address ranges in JSON format. To get the JSON file, see [Download the JSON file](aws-ip-ranges.md#aws-ip-download). The syntax of the JSON file is as follows.
 

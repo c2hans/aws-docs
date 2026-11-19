@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/example_support_A
 ---
 
 # Use `AddAttachmentsToSet` with an AWS SDK or CLI
-<a name="example_support_AddAttachmentsToSet_section"></a>
 
 The following code examples show how to use `AddAttachmentsToSet`.
 

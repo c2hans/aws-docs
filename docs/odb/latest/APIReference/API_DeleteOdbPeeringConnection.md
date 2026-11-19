@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteOdbPee
 ---
 
 # DeleteOdbPeeringConnection
-<a name="API_DeleteOdbPeeringConnection"></a>
 
 Deletes an ODB peering connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # TestCaseRun
-<a name="API_iotdeviceadvisor_TestCaseRun"></a>
 
 Provides the test case run.
 

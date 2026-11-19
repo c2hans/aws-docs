@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationAvailabilityEndDateFilterDateRange
-<a name="API_ResaleAuthorizationAvailabilityEndDateFilterDateRange"></a>
 
 Allows filtering on `AvailabilityEndDate` of a ResaleAuthorization with date range as input.
 

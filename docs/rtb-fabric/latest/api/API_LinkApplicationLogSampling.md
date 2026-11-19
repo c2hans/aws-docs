@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_LinkApplicatio
 ---
 
 # LinkApplicationLogSampling
-<a name="API_LinkApplicationLogSampling"></a>
 
 Describes a link application log sample.
 

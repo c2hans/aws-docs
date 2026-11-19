@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_TakeRouterIn
 ---
 
 # TakeRouterInput
-<a name="API_TakeRouterInput"></a>
 
 Associates a router input with a router output in AWS Elemental MediaConnect.
 

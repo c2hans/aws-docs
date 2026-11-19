@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Li
 ---
 
 # ListExperimentRunEvents
-<a name="API_ListExperimentRunEvents"></a>
 
 Lists the events for a specified experiment run. Events provide a timeline of actions and state changes that occurred during the run.
 

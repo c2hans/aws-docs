@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Set up permissions for AgentCore Gateway
-<a name="gateway-prerequisites-permissions"></a>
 
 To use Amazon Bedrock AgentCore Gateway and its capabilities, you’ll need to consider the following permissions:
 

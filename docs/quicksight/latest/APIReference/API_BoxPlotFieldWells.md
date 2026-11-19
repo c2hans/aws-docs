@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BoxPl
 ---
 
 # BoxPlotFieldWells
-<a name="API_BoxPlotFieldWells"></a>
 
 The field wells of a `BoxPlotVisual`.
 

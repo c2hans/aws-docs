@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetGremlinQu
 ---
 
 # GetGremlinQueryStatus
-<a name="API_GetGremlinQueryStatus"></a>
 
 Gets the status of a specified Gremlin query.
 

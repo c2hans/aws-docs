@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Delet
 ---
 
 # DeleteKey
-<a name="API_DeleteKey"></a>
 
 Deletes the specified API key. The API key must have been deactivated more than 90 days previously.
 

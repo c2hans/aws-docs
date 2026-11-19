@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/example_rds_C
 ---
 
 # Use `CreateDBInstance` with an AWS SDK or CLI
-<a name="example_rds_CreateDBInstance_section"></a>
 
 The following code examples show how to use `CreateDBInstance`.
 

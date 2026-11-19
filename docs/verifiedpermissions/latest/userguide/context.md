@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/con
 ---
 
 # Adding context
-<a name="context"></a>
 
 *Context* is the information that's relevant to policy decisions, but not part of the identity of your principal, action, or resource. Access token claim are context. You might want to allow an action only from a set of source IP addresses, or only if your user has signed in with MFA. Your application has access to this contextual session data and must populate it to authorization requests. The context data in a Verified Permissions authorization request must be JSON-formatted in a `contextMap` element.
 

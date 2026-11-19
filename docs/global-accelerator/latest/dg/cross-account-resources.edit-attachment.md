@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-accou
 ---
 
 # Edit a cross-account attachment in AWS Global Accelerator
-<a name="cross-account-resources.edit-attachment"></a>
 
 Follow the steps in this section to edit a cross-account attachment using the AWS Global Accelerator console.
 

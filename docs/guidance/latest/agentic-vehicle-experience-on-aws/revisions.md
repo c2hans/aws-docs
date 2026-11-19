@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 | Version | Date | Description |
 | --- | --- | --- |

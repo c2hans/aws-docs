@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ge
 ---
 
 # GetStream
-<a name="API_GetStream"></a>
 
 Gets information about the active (live) stream on a specified channel.
 

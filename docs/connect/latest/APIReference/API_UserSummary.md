@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserSumm
 ---
 
 # UserSummary
-<a name="API_UserSummary"></a>
 
 Contains summary information about a user.
 

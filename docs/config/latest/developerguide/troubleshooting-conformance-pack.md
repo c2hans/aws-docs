@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/troubleshoo
 ---
 
 # Troubleshooting for Conformance Packs for AWS Config
-<a name="troubleshooting-conformance-pack"></a>
 
 Check the following issues to help troubleshoot issues you might run into when using conformance packs.
 

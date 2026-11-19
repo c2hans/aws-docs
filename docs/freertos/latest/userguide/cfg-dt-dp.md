@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/cfg-dt-dp.html
 ---
 
 # Create a device pool in IDT for FreeRTOS
-<a name="cfg-dt-dp"></a>
 
 Devices to be tested are organized in device pools. Each device pool consists of one or more identical devices. You can configure IDT for FreeRTOS to test a single device in a pool or multiple devices in a pool. To accelerate the qualification process, IDT for FreeRTOS can test devices with the same specifications in parallel. It uses a round-robin method to execute a different test group on each device in a device pool.
 

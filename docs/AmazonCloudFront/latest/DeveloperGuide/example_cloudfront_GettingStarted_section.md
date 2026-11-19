@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Get started with a basic content distribution network
-<a name="example_cloudfront_GettingStarted_section"></a>
 
 The following code example shows how to:
 + Create an Amazon S3 bucket

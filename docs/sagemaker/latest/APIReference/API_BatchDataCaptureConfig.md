@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchD
 ---
 
 # BatchDataCaptureConfig
-<a name="API_BatchDataCaptureConfig"></a>
 
 Configuration to control how SageMaker captures inference data for batch transform jobs.
 

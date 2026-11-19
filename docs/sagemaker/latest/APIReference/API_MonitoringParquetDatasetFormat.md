@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringParquetDatasetFormat
-<a name="API_MonitoringParquetDatasetFormat"></a>
 
 Represents the Parquet dataset format used when running a monitoring job.
 

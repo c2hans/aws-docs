@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/cloudwatch-log
 ---
 
 # Write custom messages to CloudWatch Logs
-<a name="cloudwatch-logs-writing"></a>
 
 You can write custom messages to your Managed Service for Apache Flink application's CloudWatch log. You do this by using the Apache [`log4j`](https://logging.apache.org/log4j/) library or the [`Simple Logging Facade for Java (SLF4J)`](https://www.slf4j.org/) library.
 

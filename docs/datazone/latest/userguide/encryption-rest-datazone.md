@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/encryption-res
 ---
 
 # Data encryption at rest for Amazon DataZone
-<a name="encryption-rest-datazone"></a>
 
 Encryption of data at rest by default helps reduce the operational overhead and complexity involved in protecting sensitive data. At the same time, it enables you to build secure applications that meet strict encryption compliance and regulatory requirements.
 

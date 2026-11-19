@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/security-
 ---
 
 # IAM for the AWS CLI
-<a name="security-iam-cli"></a>
 
 The `aws configure agent-toolkit` and `aws agent-toolkit` commands do not use IAM. These commands fetch AWS-vended skills from a public, read-only catalog over HTTPS. The AWS CLI does not sign requests or send credentials when using these commands.
 

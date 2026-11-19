@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_FargateProfi
 ---
 
 # FargateProfile
-<a name="API_FargateProfile"></a>
 
 An object representing an AWS Fargate profile.
 

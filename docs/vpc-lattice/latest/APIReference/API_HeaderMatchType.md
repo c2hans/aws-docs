@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Head
 ---
 
 # HeaderMatchType
-<a name="API_HeaderMatchType"></a>
 
 Describes a header match type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SSMLMessag
 ---
 
 # SSMLMessage
-<a name="API_SSMLMessage"></a>
 
 Defines a Speech Synthesis Markup Language (SSML) prompt.
 

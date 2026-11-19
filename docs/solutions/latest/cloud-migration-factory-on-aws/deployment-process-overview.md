@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Deployment process overview
-<a name="deployment-process-overview"></a>
 
 Before you launch the automated deployment, review the architecture, components, and other considerations discussed in this guide. Follow the step-by-step instructions in this section to configure and deploy the Cloud Migration Factory on AWS solution into your account.
 

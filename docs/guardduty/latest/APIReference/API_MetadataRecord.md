@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Metada
 ---
 
 # MetadataRecord
-<a name="API_MetadataRecord"></a>
 
 Contains operational details about an investigation, such as how long it took.
 

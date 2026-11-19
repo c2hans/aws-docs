@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight-dev-rl
 ---
 
 # Using row-level security with tag-based rules to restrict access to a dataset when embedding dashboards for anonymous users
-<a name="quicksight-dev-rls-tags"></a>
 
 |  |
 | --- |

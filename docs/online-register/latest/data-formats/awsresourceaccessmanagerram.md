@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 ---
 
 # Data retrieval APIs for AWS Resource Access Manager (RAM)
-<a name="awsresourceaccessmanagerram"></a>
 
 AWS Resource Access Manager (RAM) provides the following APIs for data retrieval.
 

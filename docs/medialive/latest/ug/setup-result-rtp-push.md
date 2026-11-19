@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-result-rtp-pus
 ---
 
 # Result of this procedure
-<a name="setup-result-rtp-push"></a>
 
 As a result of this setup, an RTP input exists that specifies one or two *endpoint* URLs. These endpoints are on MediaLive and are fixed for the lifetime of the input, regardless of changes that occur (such as modifying other information in the input, or attaching the input to a different channel).
 

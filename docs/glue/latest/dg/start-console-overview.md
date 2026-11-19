@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/start-console-overview.ht
 ---
 
 # Overview of using AWS Glue
-<a name="start-console-overview"></a>
 
 With AWS Glue, you store metadata in the AWS Glue Data Catalog. You use this metadata to orchestrate ETL jobs that transform data sources and load your data warehouse or data lake. The following steps describe the general workflow and some of the choices that you make when working with AWS Glue.
 

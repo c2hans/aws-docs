@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # What is Infrastructure Performance?
-<a name="CloudWatch-InfrastructurePerformance-What-Is"></a>
 
 Infrastructure Performance, a feature of Performance Monitor, provides near real-time and historical network latency across AWS Regions and across or within Availability Zones for a specified time period. Performance metrics are aggregated according to a time period that you choose. Network performance results are returned for that time period, showing whether the performance was healthy or if there was any performance degradation. This helps you evaluate whether network performance might affect your applications. Infrastructure Performance can also publish metrics to Amazon CloudWatch through subscriptions, so that you can view performance metrics in CloudWatch. Infrastructure Performance is available at no additional charge. However, if you use subscriptions to view performance in CloudWatch, additional charges apply. For more information about CloudWatch pricing guidelines, see [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/).
 

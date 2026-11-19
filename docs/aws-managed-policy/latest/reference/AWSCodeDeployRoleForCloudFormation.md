@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeDeployRoleForCloudFormation
-<a name="AWSCodeDeployRoleForCloudFormation"></a>
 
 **Description**: Provides CodeDeploy service access to invoke Lambda function on your behalf to perform blue/green deployment through CloudFormation.
 

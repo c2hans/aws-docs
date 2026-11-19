@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/r
 ---
 
 # Complete registration form
-<a name="registration-form"></a>
 
 Complete identity and business verification before beginning this step.
 

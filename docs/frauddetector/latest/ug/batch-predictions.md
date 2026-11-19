@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/batch-prediction
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Batch predictions
-<a name="batch-predictions"></a>
 
 You can use a *batch predictions* job in Amazon Fraud Detector to get predictions for a set of events that do not require real-time scoring. For example, you could create a batch predictions job to perform an offline proof-of-concept, or to retrospectively evaluate the risk of events on an hourly, daily, or weekly basis.
 

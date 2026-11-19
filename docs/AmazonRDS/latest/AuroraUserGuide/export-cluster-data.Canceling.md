@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/export-
 ---
 
 # Canceling a DB cluster export task
-<a name="export-cluster-data.Canceling"></a>
 
 You can cancel a DB cluster export task using the AWS Management Console, the AWS CLI, or the RDS API.
 

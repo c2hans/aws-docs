@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # JSONata expression reference for Functions
-<a name="monetization-functions-jsonata"></a>
 
 This page is a complete reference for the expression syntax, operators, and functions available in Functions. Use it when you write expressions for output blocks, URL fields, header values, body templates, and run conditions.
 

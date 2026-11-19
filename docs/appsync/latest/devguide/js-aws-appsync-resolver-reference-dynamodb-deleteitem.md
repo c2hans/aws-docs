@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-r
 ---
 
 # DeleteItem
-<a name="js-aws-appsync-resolver-reference-dynamodb-deleteitem"></a>
 
 The `DeleteItem` request lets you tell the AWS AppSync DynamoDB function to make a `DeleteItem` request to DynamoDB, and enables you to specify the following:
 + The key of the item in DynamoDB

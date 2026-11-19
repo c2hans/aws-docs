@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Stop a RAG evaluation job in Amazon Bedrock
-<a name="knowledge-base-evaluation-stop"></a>
 
 You can stop a Retrieval Augmented Generation (RAG) evaluation job that is currently processing so that you can easily reconfigure your evaluation and chosen metrics, for example.
 

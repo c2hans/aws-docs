@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateVolume
 ---
 
 # CreateVolume
-<a name="API_CreateVolume"></a>
 
 Creates an FSx for ONTAP or Amazon FSx for OpenZFS storage volume.
 

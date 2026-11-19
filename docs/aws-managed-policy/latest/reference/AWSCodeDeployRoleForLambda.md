@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeDeployRoleForLambda
-<a name="AWSCodeDeployRoleForLambda"></a>
 
 **Description**: Provides CodeDeploy service access to perform a Lambda deployment on your behalf.
 

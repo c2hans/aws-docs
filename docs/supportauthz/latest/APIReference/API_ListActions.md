@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Lis
 ---
 
 # ListActions
-<a name="API_ListActions"></a>
 
 Lists available support actions for a specified AWS service. Use pagination to ensure that the operation returns quickly and successfully.
 

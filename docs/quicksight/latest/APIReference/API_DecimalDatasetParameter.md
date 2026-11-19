@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Decim
 ---
 
 # DecimalDatasetParameter
-<a name="API_DecimalDatasetParameter"></a>
 
 A decimal parameter for a dataset.
 

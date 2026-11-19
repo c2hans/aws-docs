@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/appflow-flo
 ---
 
 # appflow-flow-trigger-type-check
-<a name="appflow-flow-trigger-type-check"></a>
 
 Checks if an Amazon AppFlow flow runs using the specified trigger type. The rule is NON\_COMPLAINT if the flow does not run using the flow type specified in the required rule parameter.
 

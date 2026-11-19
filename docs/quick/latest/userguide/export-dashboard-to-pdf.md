@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/export-dashboard-
 ---
 
 # Exporting AWS Quick Sight analyses or dashboards as PDFs
-<a name="export-dashboard-to-pdf"></a>
 
 You can export content from a dashboard into a Portable Document Format file (PDF). Similar to a print-out, this format provides a snapshot of the current sheet as it appears on-screen at the time of download.
 

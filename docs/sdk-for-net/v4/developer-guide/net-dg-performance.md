@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Performance best practices for the AWS SDK for .NET
-<a name="net-dg-performance"></a>
 
 How you create clients, handle responses, and configure your application has a large effect on throughput, latency, and memory use. This topic describes usage and configuration patterns that help your applications run efficiently and reliably. These patterns matter most under high load or in resource-constrained environments such as containers and serverless functions. Following these practices can improve performance and prevent common problems such as slow responses, hangs, and high memory use.
 

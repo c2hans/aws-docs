@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Common error scenarios
-<a name="next-gen-api-common-error-scenarios"></a>
 
 | Scenario | Error | Resolution |
 | --- | --- | --- |

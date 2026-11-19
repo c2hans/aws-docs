@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/outlook-extension
 ---
 
 # AWS Quick Microsoft Outlook extension
-<a name="outlook-extension-guide"></a>
 
 The AWS Quick extension for Outlook helps you manage your entire inbox using natural language. You can summarize unread messages, organize your inbox, schedule meetings, and draft responses, all without leaving Outlook.
 

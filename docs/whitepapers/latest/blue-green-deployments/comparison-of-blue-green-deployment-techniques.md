@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Appendix: Comparison of Blue/Green Deployment Techniques
-<a name="comparison-of-blue-green-deployment-techniques"></a>
 
  The following table offers an overview and comparison of the different blue/green deployment techniques discussed in this paper. The risk potential is evaluated from desirable lower risk (X) to less desirable higher risk (XXX).
 

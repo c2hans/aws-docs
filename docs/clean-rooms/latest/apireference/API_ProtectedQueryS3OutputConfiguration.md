@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQueryS3OutputConfiguration
-<a name="API_ProtectedQueryS3OutputConfiguration"></a>
 
 Contains the configuration to write the query results to S3.
 

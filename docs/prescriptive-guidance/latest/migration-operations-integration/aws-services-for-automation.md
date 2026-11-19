@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # AWS services for automation
-<a name="aws-services-for-automation"></a>
 
 You can use a number of AWS services to automate your IT operations. The following table lists the 21 OI domains and provides information to help you select the right service for each operational need.
 

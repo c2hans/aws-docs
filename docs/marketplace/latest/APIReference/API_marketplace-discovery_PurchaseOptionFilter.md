@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PurchaseOptionFilter
-<a name="API_marketplace-discovery_PurchaseOptionFilter"></a>
 
 A filter used to narrow purchase option results by product, seller, type, visibility, or availability.
 

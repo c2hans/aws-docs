@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # MappedResourceConfigurationListItem
-<a name="API_MappedResourceConfigurationListItem"></a>
 
 A structure that encapsulates, or contains, the media storage configuration properties.
 

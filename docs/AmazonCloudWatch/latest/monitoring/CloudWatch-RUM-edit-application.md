@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Editing your CloudWatch RUM app monitor settings
-<a name="CloudWatch-RUM-edit-application"></a>
 
 To change an app monitor's settings, follow these steps. You can change any settings except the app monitor name.
 

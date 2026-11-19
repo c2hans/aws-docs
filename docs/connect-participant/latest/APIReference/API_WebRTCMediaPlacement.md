@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # WebRTCMediaPlacement
-<a name="API_connect-participant_WebRTCMediaPlacement"></a>
 
 A set of endpoints used by clients to connect to the media service group for an Amazon Chime SDK meeting.
 

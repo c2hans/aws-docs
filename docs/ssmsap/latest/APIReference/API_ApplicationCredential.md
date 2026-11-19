@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Applicati
 ---
 
 # ApplicationCredential
-<a name="API_ApplicationCredential"></a>
 
 The credentials of your SAP application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Anoma
 ---
 
 # AnomalyDetectorStatus
-<a name="API_AnomalyDetectorStatus"></a>
 
 The status information of an anomaly detector.
 

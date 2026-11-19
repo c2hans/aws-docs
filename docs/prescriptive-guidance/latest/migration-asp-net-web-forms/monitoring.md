@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-a
 ---
 
 # Monitoring and observability for ASP.NET Web Forms applications on AWS
-<a name="monitoring"></a>
 
 When you run an ASP.NET Web Forms application on AWS, it's essential to monitor both the underlying infrastructure and the application itself to ensure optimal performance, availability, and operational excellence. AWS provides a comprehensive suite of monitoring tools and services that you can use to achieve this goal.
 

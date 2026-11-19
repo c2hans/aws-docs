@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Loggi
 ---
 
 # LoggingConfiguration
-<a name="API_LoggingConfiguration"></a>
 
 Configuration for test execution logging destinations.
 

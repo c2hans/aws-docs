@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Identity modules
-<a name="identity-modules"></a>
 
 Identity modules create the necessary resources to allow users to interact with MCS and the post production environment.
 

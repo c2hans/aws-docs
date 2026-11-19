@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowFieldPriorityDedupeField
-<a name="API_DataIntegrationFlowFieldPriorityDedupeField"></a>
 
 The field used in the field priority deduplication strategy.
 

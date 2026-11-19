@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/fifo-message-filtering.htm
 ---
 
 # Amazon SNS message filtering for FIFO topics
-<a name="fifo-message-filtering"></a>
 
 Amazon SNS FIFO topics support message filtering. Using message filtering simplifies your architecture by offloading the message routing logic from your publisher systems and the message filtering logic from your subscriber systems.
 

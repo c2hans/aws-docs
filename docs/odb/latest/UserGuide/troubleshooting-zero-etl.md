@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/troubleshooting-zer
 ---
 
 # Troubleshooting Zero-ETL integration
-<a name="troubleshooting-zero-etl"></a>
 
 This section provides guidance for resolving common issues with zero-ETL integration.
 

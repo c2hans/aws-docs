@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TaskTimedOutEventDetails
-<a name="API_TaskTimedOutEventDetails"></a>
 
 Contains details about a resource timeout that occurred during an execution.
 

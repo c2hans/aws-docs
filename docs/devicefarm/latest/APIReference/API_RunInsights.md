@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_RunIn
 ---
 
 # RunInsights
-<a name="API_RunInsights"></a>
 
 Contains insights for a run, including report status, and job-level aggregated metrics such as per job execution time and median job execution time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to geocode an administrative and postal area
-<a name="how-to-geocode-admin-postal-area"></a>
 
 The Geocode API allows you to perform geocoding for a geographic area using a query text input, such as the name of a country, region (state or province), or city. The API response includes location details like geographic coordinates, bounding boxes for map visualizations, and match scores indicating the result's relevance to the query.
 

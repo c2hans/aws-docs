@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/https-singlei
 ---
 
 # Terminating HTTPS on EC2 instances running PHP
-<a name="https-singleinstance-php"></a>
 
 For PHP container types, you use a [configuration file](ebextensions.md) to enable the Apache HTTP Server to use HTTPS.
 

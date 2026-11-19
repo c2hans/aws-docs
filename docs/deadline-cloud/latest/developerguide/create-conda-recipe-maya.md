@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cre
 ---
 
 # Create a conda build recipe for Autodesk Maya
-<a name="create-conda-recipe-maya"></a>
 
 Commercial applications like Autodesk Maya introduce additional packaging requirements compared to open source applications like Blender. The [Blender recipe](create-conda-recipe-blender.md) packages a simple relocatable archive under an open source license. Commercial applications are often distributed through installers and require license management configuration.
 

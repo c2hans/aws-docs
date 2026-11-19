@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Moving.h
 ---
 
 # Moving a task
-<a name="CHAP_Tasks.Moving"></a>
 
 You can move a task to a different replication instance when any of the following situations apply to your use case.
 + You're currently using an instance of a certain type and you want to switch to a different instance type.

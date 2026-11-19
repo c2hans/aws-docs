@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # FailureInfo
-<a name="API_FailureInfo"></a>
 
 Information about the errors that are returned for each failed resource. This information can include `InternalServiceException` and `InvalidParameterException` errors. It can also include any valid error code returned by the AWS service that hosts the resource that the ARN key represents.
 

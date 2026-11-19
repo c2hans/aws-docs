@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Gateway
 ---
 
 # GatewayRouteSpec
-<a name="API_GatewayRouteSpec"></a>
 
 An object that represents a gateway route specification. Specify one gateway route type.
 

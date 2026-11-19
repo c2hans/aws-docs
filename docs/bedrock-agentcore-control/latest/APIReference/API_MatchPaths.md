@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MatchPaths
-<a name="API_MatchPaths"></a>
 
 A condition that matches requests based on the request path.
 

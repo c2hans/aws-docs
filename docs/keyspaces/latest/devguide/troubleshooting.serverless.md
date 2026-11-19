@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/troubleshootin
 ---
 
 # Troubleshooting capacity management errors in Amazon Keyspaces
-<a name="troubleshooting.serverless"></a>
 
 Having trouble with serverless capacity? Here are some common issues and how to resolve them.
 

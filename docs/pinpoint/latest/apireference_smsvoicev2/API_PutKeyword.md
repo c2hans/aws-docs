@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # PutKeyword
-<a name="API_PutKeyword"></a>
 
 Creates or updates a keyword configuration on an origination phone number or pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeProxyResource
-<a name="API_DescribeProxyResource"></a>
 
 Proxy attached to a NAT gateway.
 

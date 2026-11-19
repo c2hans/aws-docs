@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationDefinitionSummary
-<a name="API_NetworkMigrationDefinitionSummary"></a>
 
 A summary of a network migration definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lineage
 ---
 
 # LineageSqlQueryRunDetails
-<a name="API_LineageSqlQueryRunDetails"></a>
 
 The SQL query run details of a data lineage run.
 

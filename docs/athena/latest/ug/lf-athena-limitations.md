@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/lf-athena-limitations.h
 ---
 
 # Considerations and limitations for querying data registered with Lake Formation
-<a name="lf-athena-limitations"></a>
 
 Consider the following when using Athena to query data registered in Lake Formation. For additional information, see [Known issues for AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/limitations.html) in the *AWS Lake Formation Developer Guide*.
 

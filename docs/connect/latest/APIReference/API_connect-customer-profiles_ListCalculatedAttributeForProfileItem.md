@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListCalculatedAttributeForProfileItem
-<a name="API_connect-customer-profiles_ListCalculatedAttributeForProfileItem"></a>
 
 The details of a single calculated attribute for a profile.
 

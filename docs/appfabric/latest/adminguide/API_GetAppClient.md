@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/API_GetAppCl
 ---
 
 # GetAppClient
-<a name="API_GetAppClient"></a>
 
 |  |
 | --- |

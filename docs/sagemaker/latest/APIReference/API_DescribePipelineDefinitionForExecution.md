@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribePipelineDefinitionForExecution
-<a name="API_DescribePipelineDefinitionForExecution"></a>
 
 Describes the details of an execution's pipeline definition.
 

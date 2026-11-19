@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # BatchCreateChannelMembershipError
-<a name="API_messaging-chime_BatchCreateChannelMembershipError"></a>
 
 A list of failed member ARNs, error codes, and error messages.
 

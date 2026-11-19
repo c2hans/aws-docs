@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesTrendsFilters
-<a name="API_ResourcesTrendsFilters"></a>
 
 The structure that defines filters to apply to resources trend data queries.
 

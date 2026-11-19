@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-trou
 ---
 
 # Troubleshooting Python 3.12 Upgrade
-<a name="braket-troubleshooting-python312"></a>
 
 **Effective Date:** January 21, 2026
 

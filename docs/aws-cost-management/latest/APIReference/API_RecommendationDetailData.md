@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RecommendationDetailData
-<a name="API_RecommendationDetailData"></a>
 
 The details and metrics for the given recommendation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/delete-replications.html
 ---
 
 # Deleting replication configurations
-<a name="delete-replications"></a>
 
 If you need to fail over to the destination file system, delete the replication configuration of which it is a member. After you delete a replication configuration, the destination file system becomes writeable and its replication overwrite protection is re-enabled. For more information, see [Using the replica](replication-fail-over.md).
 

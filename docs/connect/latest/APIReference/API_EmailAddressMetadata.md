@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailAdd
 ---
 
 # EmailAddressMetadata
-<a name="API_EmailAddressMetadata"></a>
 
 Contains information about an email address for a contact center.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/roles-how.
 ---
 
 # How AWS Control Tower works with roles to create and manage accounts
-<a name="roles-how"></a>
 
 In general, roles are a part of identity and access management (IAM) in AWS. For general information about IAM and roles in AWS, see [ the IAM roles topic in the *AWS IAM User Guide*](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html).
 

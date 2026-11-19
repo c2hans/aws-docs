@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionExecutionFilter
-<a name="API_ActionExecutionFilter"></a>
 
 Filter values for the action execution.
 

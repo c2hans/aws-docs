@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginAccessControlList
-<a name="API_OriginAccessControlList"></a>
 
 A list of CloudFront origin access controls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardDest
 ---
 
 # StandardDestinationEndpointConnectionDetails
-<a name="API_StandardDestinationEndpointConnectionDetails"></a>
 
 The connection details for a standard destination endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # PhoneNumberCountry
-<a name="API_voice-chime_PhoneNumberCountry"></a>
 
 The phone number's country.
 

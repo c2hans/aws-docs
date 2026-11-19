@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Deploying and updating Lambda Managed Instances functions
-<a name="lambda-managed-instances-deployments"></a>
 
 When you update a Lambda Managed Instances function, Lambda provisions execution environments for the new function version on your managed instances before shifting traffic to it. You can control deployment speed and safety by selecting a deployment strategy. This topic describes the deployment strategies available for Lambda Managed Instances functions and how to define them with infrastructure as code (IaC).
 
@@ -86,6 +85,15 @@ Because Lambda Managed Instances keeps instance utilization high, both initializ
 Weighted alias updates are gradual in the same way. When you change the routing weights on an alias—for example, from 90 percent version 1 and 10 percent version 2 to 100 percent version 2—Lambda Managed Instances slowly replaces the version 1 execution environments with version 2, without provisioning excess instance capacity.
 
 Use numeric versions with an alias when you want tighter control over the gradual rollout and version-specific observability. Because each version is a distinct qualifier, you can compare per-version metrics for the canary and the stable version before you promote a change. For more information, see [viewing metrics for your Lambda functions](monitoring-metrics-view.md).
+
+### How $LATEST.PUBLISHED rollouts progress for GPU-accelerated functions when capacity is not available
+<a name="lambda-managed-instances-deployments-gpu-inplace"></a>
+
+Each step of a `$LATEST.PUBLISHED` rollout starts execution environments for the new version before Lambda removes the old ones. For a GPU-accelerated function, this often means launching a new GPU instance from your capacity provider. As GPU instances are in short supply, Lambda functions not using ODCR (Amazon EC2 On-Demand Capacity Reservation) or using full capacity of an ODCR, might not be able to start a new instance during the deployment. For these cases GPU function deployments will switch to an in-place deployment mode.
+
+During an in-place deployment, Lambda replaces the old version's execution environments in three batches of about one third each. For each batch, Lambda stops routing invocations to those execution environments, waits for their in-flight invocations to complete, and then starts the new version in their place. The remaining execution environments serve all invocations in the meantime, so the function runs at reduced capacity and throttles the invocations it cannot serve. A function with a single execution environment will not be able to serve any invocations until the new version is ready. Lambda pauses scaling of the capacity provider until the rollout finishes. Because each batch drains before the next one starts, an in-place rollout might take longer than a regular one, and long-running invocations extend it further.
+
+In-place rollouts apply only to `$LATEST.PUBLISHED`. A numbered version still requires additional capacity to activate a new version, as a weighted alias keeps both versions active at the same time. If Lambda cannot launch the minimum number of execution environments, the version fails to activate and its state reason reports `InsufficientCapacityException`. To keep a GPU-accelerated function at full capacity during a rollout, reserve at least 33%\+ extra capacity in your ODCR to avoid switching to in-place rollout.
 
 ## Configuring scaling after a deployment
 <a name="lambda-managed-instances-deployments-scaling-config"></a>

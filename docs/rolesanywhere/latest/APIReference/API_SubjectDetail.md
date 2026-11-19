@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Su
 ---
 
 # SubjectDetail
-<a name="API_SubjectDetail"></a>
 
 The state of the subject after a read or write operation.
 

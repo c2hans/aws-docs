@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_OnDemandResi
 ---
 
 # OnDemandResizingSpecification
-<a name="API_OnDemandResizingSpecification"></a>
 
 The resize specification for On-Demand Instances in the instance fleet, which contains the resize timeout period.
 

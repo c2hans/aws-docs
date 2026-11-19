@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/fine-grained-access-to-
 ---
 
 # Configure access to databases and tables in the AWS Glue Data Catalog
-<a name="fine-grained-access-to-glue-resources"></a>
 
 If you use the AWS Glue Data Catalog with Amazon Athena, you can define resource-level policies for the database and table Data Catalog objects that are used in Athena.
 

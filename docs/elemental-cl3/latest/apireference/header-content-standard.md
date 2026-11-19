@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/header
 ---
 
 # Header Content - Standard Elements
-<a name="header-content-standard"></a>
 
 For All Requests
 + Accept: Set to application/xml

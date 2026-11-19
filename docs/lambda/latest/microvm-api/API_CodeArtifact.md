@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_CodeArtifa
 ---
 
 # CodeArtifact
-<a name="API_CodeArtifact"></a>
 
 Contains the location of the code artifact for a MicroVM image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-smartcard.htm
 ---
 
 # Using a smart card
-<a name="using-smartcard"></a>
 
 You can use Amazon DCV to use one or more smart cards that's connected to your client computer. You can do this using the standard Personal Computer/Smart Card (PC/SC) interface, in a Amazon DCV session. For each session, only one connected client can connect a smart card at a time. This is especially important in environments where multiple clients connect to the same session.
 

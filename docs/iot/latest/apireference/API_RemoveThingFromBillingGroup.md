@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_RemoveThingF
 ---
 
 # RemoveThingFromBillingGroup
-<a name="API_RemoveThingFromBillingGroup"></a>
 
 Removes the given thing from the billing group.
 

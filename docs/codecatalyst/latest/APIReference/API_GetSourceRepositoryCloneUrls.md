@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Get
 ---
 
 # GetSourceRepositoryCloneUrls
-<a name="API_GetSourceRepositoryCloneUrls"></a>
 
 Returns information about the URLs that can be used with a Git client to clone a source repository.
 

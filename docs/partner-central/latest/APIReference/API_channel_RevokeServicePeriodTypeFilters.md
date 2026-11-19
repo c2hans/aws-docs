@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RevokeServicePeriodTypeFilters
-<a name="API_channel_RevokeServicePeriodTypeFilters"></a>
 
 Filters specific to revoke service period handshakes.
 

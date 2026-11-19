@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedding-visuals
 ---
 
 # Embedding AWS Quick Sight visuals with the AWS Quick Sight APIs
-<a name="embedding-visuals"></a>
 
 You can embed individual visuals that are a part of a published dashboard in your application with the AWS Quick Sight API.
 

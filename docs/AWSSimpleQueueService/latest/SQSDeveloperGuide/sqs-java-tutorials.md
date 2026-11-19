@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Amazon SQS Java SDK examples
-<a name="sqs-java-tutorials"></a>
 
 The AWS SDK for Java allows you build Java applications that interact with Amazon SQS and other AWS services.
 + To install and set up the SDK, see [Getting started](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/getting-started.html) in the *AWS SDK for Java 2.x Developer Guide*.

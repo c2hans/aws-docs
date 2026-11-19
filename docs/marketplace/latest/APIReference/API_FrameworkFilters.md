@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Fram
 ---
 
 # FrameworkFilters
-<a name="API_FrameworkFilters"></a>
 
 Framework-specific filters used to scope `ListAssessments` results. Set exactly one member, corresponding to the framework you want to filter by.
 

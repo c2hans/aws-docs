@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Costs
-<a name="costs"></a>
 
  AWS offers a pay-as-you-go approach for pricing for cloud services. You pay only for the individual services you need, for as long as you use them, without long-term contracts or complex licensing. Some services and tools incur no charge, such as [AWS ParallelCluster](https://aws.amazon.com/hpc/parallelcluster/), [AWS Batch](https://aws.amazon.com/batch/), and [AWS CloudFormation](https://aws.amazon.com/cloudformation/); however, the underlying AWS components used to run cases incur charges.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Das
 ---
 
 # DashDvbMetricsReporting
-<a name="API_DashDvbMetricsReporting"></a>
 
 For use with DVB-DASH profiles only. The settings for error reporting from the playback device that you want AWS Elemental MediaPackage to pass through to the manifest.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeN
 ---
 
 # DescribeNetworkInterfacePermissions
-<a name="API_DescribeNetworkInterfacePermissions"></a>
 
 Describes the permissions for your network interfaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Hie
 ---
 
 # HierarchyMapping
-<a name="API_HierarchyMapping"></a>
 
 Maps a hierarchy from an interface asset model to a hierarchy in the asset model where the interface is applied.
 

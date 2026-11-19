@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # How AWS Pricing Works
-<a name="abstract-and-introduction"></a>
 
 Publication date: **February 24, 2023** ([Document revisions](document-revisions.md))
 

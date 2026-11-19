@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Pa
 ---
 
 # Parent
-<a name="API_Parent"></a>
 
 Contains information about either a root or an organizational unit (OU) that can contain OUs or accounts in an organization.
 

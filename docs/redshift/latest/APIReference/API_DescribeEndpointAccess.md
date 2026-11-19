@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeEndpointAccess
-<a name="API_DescribeEndpointAccess"></a>
 
 Describes a Redshift-managed VPC endpoint.
 

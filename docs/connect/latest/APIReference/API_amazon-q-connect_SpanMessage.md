@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SpanMessage
-<a name="API_amazon-q-connect_SpanMessage"></a>
 
 A message in the conversation history with participant role and content values
 

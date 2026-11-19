@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteDomain
-<a name="API_DeleteDomain"></a>
 
 Deletes the specified domain recordset and all of its domain records.
 

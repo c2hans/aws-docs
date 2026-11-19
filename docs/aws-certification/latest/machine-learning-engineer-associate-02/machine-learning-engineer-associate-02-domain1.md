@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/machine-learnin
 ---
 
 # Content Domain 1: Data Preparation for ML and AI
-<a name="machine-learning-engineer-associate-02-domain1"></a>
 
 **Topics**
 + [Task 1.1: Collect and store data.](#machine-learning-engineer-associate-02-domain1-task1)

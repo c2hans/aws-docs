@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Cost Explorer
-<a name="API_Operations_AWS_Cost_Explorer_Service"></a>
 
 The following actions are supported by AWS Cost Explorer:
 +  [CreateAnomalyMonitor](API_CreateAnomalyMonitor.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyA
 ---
 
 # ModifyAuthenticationProfile
-<a name="API_ModifyAuthenticationProfile"></a>
 
 Modifies an authentication profile.
 

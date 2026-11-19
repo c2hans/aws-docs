@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Delete a Notify configuration
-<a name="nx-features-notify-config-delete"></a>
 
 Delete a Notify configuration you no longer need. If deletion protection is enabled, you must disable it before you can delete the configuration.
 

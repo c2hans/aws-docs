@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Countr
 ---
 
 # Country
-<a name="API_Country"></a>
 
 Contains information about the country where the remote IP address is located.
 

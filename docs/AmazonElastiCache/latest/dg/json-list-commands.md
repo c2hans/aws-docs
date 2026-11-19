@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-list-co
 ---
 
 # Supported Valkey and Redis OSS commands
-<a name="json-list-commands"></a>
 
 ElastiCache supports the following Valkey and Redis OSS JSON commands:
 

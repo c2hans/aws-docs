@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/git-s
 ---
 
 # Create a stack from repository source code with Git sync
-<a name="git-sync-create-stack-from-repository-source-code"></a>
 
 This topic explains how to create a CloudFormation stack that syncs to a Git repository with Git sync.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/modu
 ---
 
 # Develop a module using the CFN-CLI
-<a name="modules-develop"></a>
 
 Follow these basic steps to develop and register a module project.
 

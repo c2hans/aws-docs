@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ListTa
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 List tags for a given domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Development environment
-<a name="development-environment"></a>
 
 The *development environment* is where developers integrate their code together to ensure it all works as one cohesive application. In Gitflow, the development environment contains the latest features included by merge request and are ready for release. In GitHub Flow and Trunk strategies, the development environment is considered to be a testing environment, and the code base might be unstable and unsuitable for deployment to production.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Vacuuming and analyzing tables manually
-<a name="manual-vacuum"></a>
 
 If your database is vacuumed by the autovacuum process, it's best practice to avoid running manual vacuums on the entire database too frequently. A manual vacuum might result in unnecessary I/O loads or CPU spikes, and might also fail to remove any dead tuples. Run manual vacuums on a table-by-table basis only if it's really necessary, such as when the ratio of live to dead tuples is low, or when there are long gaps between autovacuums. In addition, you should run manual vacuums when there's minimal user activity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Setting up self-managed Active Directory
-<a name="USER_SQLServer_SelfManagedActiveDirectory.SettingUp"></a>
 
 To set up a self-managed AD, take the following steps.
 

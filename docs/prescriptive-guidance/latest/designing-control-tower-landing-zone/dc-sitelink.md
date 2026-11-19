@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Direct Connect SiteLink
-<a name="dc-sitelink"></a>
 
 If your requirements include sending or routing traffic directly between Direct Connect locations, you can use Direct Connect SiteLink. This feature of Direct Connect sends traffic between different Direct Connect locations over the shortest path on the AWS network without entering AWS Regions.
 

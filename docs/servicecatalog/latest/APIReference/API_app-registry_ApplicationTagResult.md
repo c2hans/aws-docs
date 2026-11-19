@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # ApplicationTagResult
-<a name="API_app-registry_ApplicationTagResult"></a>
 
  The result of the application tag that's applied to a resource.
 

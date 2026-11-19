@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # AWS CloudFormation template
-<a name="aws-cloudformation-template"></a>
 
  This guidance uses AWS CloudFormation to automate the deployment of the Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS in the AWS Cloud. It includes the following AWS CloudFormation template, which you can download before deployment.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::SecurityControl ParameterConfiguration
-<a name="aws-properties-securityhub-securitycontrol-parameterconfiguration"></a>
 
  An object that provides the current value of a security control parameter and identifies whether it has been customized.
 

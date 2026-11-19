@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Hardware patterns
-<a name="hardware-patterns"></a>
 
 | CONTAINER\_BUILD\_SUSTAINABILITY\_02: How do you support your containerized application to run on energy-efficient hardware? |
 | --- |

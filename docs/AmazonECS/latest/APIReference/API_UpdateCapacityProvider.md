@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdateCapacityProvider
-<a name="API_UpdateCapacityProvider"></a>
 
 Modifies the parameters for a capacity provider.
 

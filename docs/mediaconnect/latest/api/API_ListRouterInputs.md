@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListRouterIn
 ---
 
 # ListRouterInputs
-<a name="API_ListRouterInputs"></a>
 
 Retrieves a list of router inputs in AWS Elemental MediaConnect.
 

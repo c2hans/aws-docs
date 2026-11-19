@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ArchiveWave.
 ---
 
 # ArchiveWave
-<a name="API_ArchiveWave"></a>
 
 Archive wave.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # State management
-<a name="state"></a>
 
 Infrastructure state management design decisions are sometimes overlooked during initial mechanism design and scoping. However, failing to account for needed flexibility in the design, such as development team tooling and pattern distinctions, can cause a significant amount of post-mechanism rework. When evaluating your state management approach, consider the following questions:
 + Who will manage the infrastructure and application state?

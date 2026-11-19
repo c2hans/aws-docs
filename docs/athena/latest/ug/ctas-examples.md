@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ctas-examples.html
 ---
 
 # Examples of CTAS queries
-<a name="ctas-examples"></a>
 
 Use the following examples to create CTAS queries. For information about the CTAS syntax, see [CREATE TABLE AS](create-table-as.md).
 

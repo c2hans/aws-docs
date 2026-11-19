@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-redundant-manife
 ---
 
 # Creating redundant HLS manifests
-<a name="hls-redundant-manifests"></a>
 
 When you create an HLS output group in a standard MediaLive channel, you can enable redundant manifests. Redundant manifests allow the downstream system (that reads the manifests) to better handle an output failure from MediaLive.
 

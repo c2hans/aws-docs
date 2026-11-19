@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_FeatureTransfo
 ---
 
 # FeatureTransformation
-<a name="API_FeatureTransformation"></a>
 
 Provides feature transformation information. Feature transformation is the process of modifying raw input data into a form more suitable for model training.
 

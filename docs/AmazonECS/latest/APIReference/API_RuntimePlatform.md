@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Runtim
 ---
 
 # RuntimePlatform
-<a name="API_RuntimePlatform"></a>
 
 Information about the platform for the Amazon ECS service or task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_I
 ---
 
 # ImportTableDescription
-<a name="API_ImportTableDescription"></a>
 
  Represents the properties of the table being imported into.
 

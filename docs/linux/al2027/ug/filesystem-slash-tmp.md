@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/filesystem-slash-tmp.htm
 ---
 
 # `/tmp` (small temporary files)
-<a name="filesystem-slash-tmp"></a>
 
 The `/tmp` directory is for small, size-bounded temporary files. As in AL2023, it is a `tmpfs` file system by default, with a size limit of 50% of RAM and a maximum of one million inodes. For larger temporary files, use [`/var/tmp`](filesystem-slash-var.md#filesystem-slash-var-tmp) instead.
 

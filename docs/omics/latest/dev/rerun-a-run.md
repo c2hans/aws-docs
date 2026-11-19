@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/rerun-a-run.html
 ---
 
 # Rerun a run in HealthOmics
-<a name="rerun-a-run"></a>
 
 For runs you haven't deleted yet, use the console or API to rerun the run. For runs that youv'e deleted, use the HealthOmics **rerun** tool.
 

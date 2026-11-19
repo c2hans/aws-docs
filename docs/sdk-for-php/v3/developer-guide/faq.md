@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/faq.html
 ---
 
 # FAQ for AWS SDK for PHP Version 3
-<a name="faq"></a>
 
 ## What methods are available on a client?
 <a name="what-methods-are-available-on-a-client"></a>

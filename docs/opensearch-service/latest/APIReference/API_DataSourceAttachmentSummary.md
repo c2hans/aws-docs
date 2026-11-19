@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DataSourceAttachmentSummary
-<a name="API_DataSourceAttachmentSummary"></a>
 
 Summary information about a data source attachment, including its identifier, data source ARN, and current status.
 

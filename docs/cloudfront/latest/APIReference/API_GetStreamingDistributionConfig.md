@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetSt
 ---
 
 # GetStreamingDistributionConfig
-<a name="API_GetStreamingDistributionConfig"></a>
 
 Get the configuration information about a streaming distribution.
 

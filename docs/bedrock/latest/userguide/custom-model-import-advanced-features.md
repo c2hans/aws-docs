@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-im
 ---
 
 # Advanced API features for imported models
-<a name="custom-model-import-advanced-features"></a>
 
 This page provides detailed examples of advanced features available for models imported after November 11, 2025. These capabilities include structured outputs for controlled generation, enhanced vision support for multi-image processing, log probabilities for confidence insights, and tool calling for GPT-OSS models.
 

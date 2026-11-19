@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/monitoring-the-l
 ---
 
 # Monitoring the load on worker nodes
-<a name="monitoring-the-load-on-worker-nodes"></a>
 
 You can view information about the overall load on any worker node in an AWS Elemental Conductor Live cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # IAM policy reference for OpenSearch UI
-<a name="application-iam-policy-reference"></a>
 
 The permissions that OpenSearch UI requires fall into two groups: base permissions, which every application requires regardless of authentication method, and permissions that are required only when the application uses AWS IAM Identity Center.
 

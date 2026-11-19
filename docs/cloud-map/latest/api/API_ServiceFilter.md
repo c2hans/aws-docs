@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_ServiceFilter.h
 ---
 
 # ServiceFilter
-<a name="API_ServiceFilter"></a>
 
 A complex type that lets you specify the namespaces that you want to list services for.
 

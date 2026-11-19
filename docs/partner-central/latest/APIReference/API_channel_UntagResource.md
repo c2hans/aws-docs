@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # UntagResource
-<a name="API_channel_UntagResource"></a>
 
 Removes tags from a specified resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Benefits
-<a name="benefits"></a>
 
 The solution provides the following benefits:
 

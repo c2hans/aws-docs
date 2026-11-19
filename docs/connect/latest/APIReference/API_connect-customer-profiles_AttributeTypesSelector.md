@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AttributeTypesSelector
-<a name="API_connect-customer-profiles_AttributeTypesSelector"></a>
 
 Configuration information about the `AttributeTypesSelector `where the rule-based identity resolution uses to match profiles. You can choose how profiles are compared across attribute types and which attribute to use for matching from each type. There are three attribute types you can configure:
 + Email type

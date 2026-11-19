@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-windows-secu
 ---
 
 # Security best practices for Windows instances
-<a name="ec2-windows-security-best-practices"></a>
 
 We recommend that you follow these security best practices for your Windows instances.
 

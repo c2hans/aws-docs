@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/resource-configura
 ---
 
 # Manage associations for a VPC Lattice resource configuration
-<a name="resource-configuration-associations"></a>
 
 Consumer accounts with which you share a resource configuration with and clients in your account can access the resource configuration either directly using a VPC endpoint of type resource or through a VPC endpoint of type service-network. As a result, your resource configuration will have endpoint associations and service network associations.
 

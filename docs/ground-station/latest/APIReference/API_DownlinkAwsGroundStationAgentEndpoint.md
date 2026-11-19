@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DownlinkAwsGroundStationAgentEndpoint
-<a name="API_DownlinkAwsGroundStationAgentEndpoint"></a>
 
 Definition for a downlink agent endpoint
 

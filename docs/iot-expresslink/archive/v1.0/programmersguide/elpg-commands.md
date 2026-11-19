@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmers
 ---
 
 # 3 ExpressLink commands
-<a name="elpg-commands"></a>
 
 ## 3.1 Introduction
 <a name="elpg-commands-introduction"></a>

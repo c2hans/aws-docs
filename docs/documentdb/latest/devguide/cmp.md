@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/cmp.html
 ---
 
 # $cmp
-<a name="cmp"></a>
 
 The `$cmp` operator in Amazon DocumentDB is used to compare two values and return an integer value that indicates their relative order. It is a comparison operator that compares two expressions and returns an integer value of -1, 0, or 1, depending on whether the first value is less than, equal to, or greater than the second value, respectively.
 

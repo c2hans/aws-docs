@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # SageMaker HyperPod cluster resources monitoring
-<a name="sagemaker-hyperpod-cluster-observability-slurm"></a>
 
 To achieve comprehensive observability into your SageMaker HyperPod cluster resources and software components, integrate the cluster with [Amazon Managed Service for Prometheus](https://docs.aws.amazon.com/prometheus/latest/userguide/what-is-Amazon-Managed-Service-Prometheus.html) and [Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/what-is-Amazon-Managed-Service-Grafana.html). The integration with Amazon Managed Service for Prometheus enables the export of metrics related to your HyperPod cluster resources, providing insights into their performance, utilization, and health. The integration with Amazon Managed Grafana enables the visualization of these metrics through various Grafana dashboards that offer intuitive interface for monitoring and analyzing the cluster's behavior. By leveraging these services, you gain a centralized and unified view of your HyperPod cluster, facilitating proactive monitoring, troubleshooting, and optimization of your distributed training workloads.
 

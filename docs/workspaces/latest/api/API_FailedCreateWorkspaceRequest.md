@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_FailedCreateWo
 ---
 
 # FailedCreateWorkspaceRequest
-<a name="API_FailedCreateWorkspaceRequest"></a>
 
 Describes a WorkSpace that cannot be created.
 

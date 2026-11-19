@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # AuthorizersCache
-<a name="apis-apiid-stages-stagename-cache-authorizers"></a>
 
 Represents the authorizers cache for a stage. Supported only for HTTP API Lambda authorizers.
 

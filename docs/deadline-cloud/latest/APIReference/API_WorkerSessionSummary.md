@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_W
 ---
 
 # WorkerSessionSummary
-<a name="API_WorkerSessionSummary"></a>
 
 Summarizes the session for a particular worker.
 

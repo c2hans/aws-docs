@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListApplicationProviders
-<a name="API_ListApplicationProviders"></a>
 
 Lists the application providers configured in the IAM Identity Center identity store.
 

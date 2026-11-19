@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/fleet-provisio
 ---
 
 # Device provisioning MQTT API
-<a name="fleet-provision-api"></a><a name="provision-mqtt-api"></a>
+<a name="provision-mqtt-api"></a>
 
 The Fleet Provisioning service supports the following MQTT API operations:
 + `CreateCertificateFromCsr`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/DownloadCompl
 ---
 
 # Reading log file contents using REST
-<a name="DownloadCompleteDBLogFile"></a>
 
 Amazon RDS provides a REST endpoint that allows access to DB instance log files. This is useful if you need to write an application to stream Amazon RDS log file contents.
 

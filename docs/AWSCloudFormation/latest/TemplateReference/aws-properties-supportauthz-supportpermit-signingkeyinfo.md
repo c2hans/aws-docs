@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SupportAuthZ::SupportPermit SigningKeyInfo
-<a name="aws-properties-supportauthz-supportpermit-signingkeyinfo"></a>
 
 The customer managed AWS KMS key used to cryptographically sign a support permit.
 

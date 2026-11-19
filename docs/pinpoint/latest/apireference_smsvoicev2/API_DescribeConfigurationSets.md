@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeConfigurationSets
-<a name="API_DescribeConfigurationSets"></a>
 
 Describes the specified configuration sets or all in your account.
 

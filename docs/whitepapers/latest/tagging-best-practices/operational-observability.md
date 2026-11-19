@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Operational observability
-<a name="operational-observability"></a>
 
  Observability is required to gain actionable insights into the performance of your environments and help you to detect and investigate problems. It also has a secondary purpose that allows you to define and measure key performance indicators (KPIs) and service level objectives (SLOs) such as uptime. For most organizations, important operations KPIs are mean time to detect (MTTD) and mean time to recover (MTTR) from an incident.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/get-ssh
 ---
 
 # Get a key pair for a Lightsail for Research virtual computer
-<a name="get-ssh-keys"></a>
 
 A key pair, consisting of a public key and a private key, is a set of security credentials that you use to prove your identity when connecting to an Amazon Lightsail for Research virtual computer. The public key is stored on each virtual computer in Lightsail for Research, and you keep the private key on your local computer. The private key allows you to securely establish a Secure Shell Protocol (SSH) with your virtual computer. Anyone who possesses the private key can connect to your virtual computer, so it's important that you store your private key in a secure place.
 

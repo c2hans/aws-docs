@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateConsentPortal
-<a name="API_UpdateConsentPortal"></a>
 
 Updates an existing consent portal.
 

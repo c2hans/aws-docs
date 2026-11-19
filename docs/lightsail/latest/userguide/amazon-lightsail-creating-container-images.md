@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Build and test Docker images for Lightsail container services
-<a name="amazon-lightsail-creating-container-images"></a>
 
 With Docker, you can build, run, test, and deploy distributed applications that are based on containers. Amazon Lightsail container services use Docker container images in deployments to launch containers.
 

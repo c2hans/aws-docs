@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/region-su
 ---
 
 # Region support for AWS Organizations
-<a name="region-support"></a>
 
 AWS Organizations is available in all AWS commercial Regions, AWS GovCloud (US) Regions, and China Regions.
 

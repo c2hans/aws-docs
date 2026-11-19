@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # KeyspacesCell
-<a name="API_KeyspacesCell"></a>
 
 Represents a cell in an Amazon Keyspaces table, containing both the value and metadata about the cell.
 

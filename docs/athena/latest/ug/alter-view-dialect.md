@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/alter-view-dialect.html
 ---
 
 # ALTER VIEW DIALECT
-<a name="alter-view-dialect"></a>
 
 Adds or drops an engine dialect from a AWS Glue Data Catalog view. Applies to AWS Glue Data Catalog views only. Requires `Lake Formation` admin or definer permissions.
 

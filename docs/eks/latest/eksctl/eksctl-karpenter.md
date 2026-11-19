@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/eksctl-karpenter.html
 ---
 
 # Karpenter Support
-<a name="eksctl-karpenter"></a>
 
  `eksctl` provides support for adding [Karpenter](https://karpenter.sh/) to a newly created cluster. It will create all the necessary prerequisites outlined in Karpenter’s [Getting Started](https://karpenter.sh/docs/getting-started/) section including installing Karpenter itself using Helm. We currently support installing versions `0.28.0+`. See the [Karpenter compatibility](https://karpenter.sh/docs/upgrading/compatibility/) section for further details.
 

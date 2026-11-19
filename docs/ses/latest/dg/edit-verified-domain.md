@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/edit-verified-domain.html
 ---
 
 # Edit an identity using the SES console
-<a name="edit-verified-domain"></a>
 
 You can use the Amazon SES console to edit a domain or email address identity in your account in the selected AWS Region.
 

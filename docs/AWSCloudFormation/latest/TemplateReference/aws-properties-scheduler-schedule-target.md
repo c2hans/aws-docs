@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Scheduler::Schedule Target
-<a name="aws-properties-scheduler-schedule-target"></a>
 
 The schedule's target. EventBridge Scheduler supports templated target that invoke common API operations, as well as universal targets that you can customize to invoke over 6,000 API operations across more than 270 services. You can only specify one templated or universal target for a schedule.
 
@@ -23,6 +22,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[DeadLetterConfig](#cfn-scheduler-schedule-target-deadletterconfig)" : {{DeadLetterConfig}},
   "[EcsParameters](#cfn-scheduler-schedule-target-ecsparameters)" : {{EcsParameters}},
   "[EventBridgeParameters](#cfn-scheduler-schedule-target-eventbridgeparameters)" : {{EventBridgeParameters}},
+  "[EventBridgePutEventsV2Parameters](#cfn-scheduler-schedule-target-eventbridgeputeventsv2parameters)" : {{EventBridgePutEventsV2Parameters}},
+  "[EventBridgePutRawEventsParameters](#cfn-scheduler-schedule-target-eventbridgeputraweventsparameters)" : {{EventBridgePutRawEventsParameters}},
   "[Input](#cfn-scheduler-schedule-target-input)" : {{String}},
   "[KinesisParameters](#cfn-scheduler-schedule-target-kinesisparameters)" : {{KinesisParameters}},
   "[RetryPolicy](#cfn-scheduler-schedule-target-retrypolicy)" : {{RetryPolicy}},
@@ -43,6 +44,10 @@ To declare this entity in your CloudFormation template, use the following syntax
     EcsParameters}}
   [EventBridgeParameters](#cfn-scheduler-schedule-target-eventbridgeparameters): {{
     EventBridgeParameters}}
+  [EventBridgePutEventsV2Parameters](#cfn-scheduler-schedule-target-eventbridgeputeventsv2parameters): {{
+    EventBridgePutEventsV2Parameters}}
+  [EventBridgePutRawEventsParameters](#cfn-scheduler-schedule-target-eventbridgeputraweventsparameters): {{
+    EventBridgePutRawEventsParameters}}
   [Input](#cfn-scheduler-schedule-target-input): {{String}}
   [KinesisParameters](#cfn-scheduler-schedule-target-kinesisparameters): {{
     KinesisParameters}}
@@ -82,6 +87,18 @@ The templated target type for the Amazon ECS [`RunTask`](https://docs.aws.amazon
 The templated target type for the EventBridge [`PutEvents`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) API operation.
 *Required*: No
 *Type*: [EventBridgeParameters](aws-properties-scheduler-schedule-eventbridgeparameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EventBridgePutEventsV2Parameters`  <a name="cfn-scheduler-schedule-target-eventbridgeputeventsv2parameters"></a>
+The templated target type for the EventBridge Custom event bus (eventsv2) [PutEvents](https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_PutEvents.html) API operation.
+*Required*: No
+*Type*: [EventBridgePutEventsV2Parameters](aws-properties-scheduler-schedule-eventbridgeputeventsv2parameters.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EventBridgePutRawEventsParameters`  <a name="cfn-scheduler-schedule-target-eventbridgeputraweventsparameters"></a>
+The templated target type for the EventBridge Custom event bus (eventsv2) [PutRawEvents](https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_PutRawEvents.html) API operation.
+*Required*: No
+*Type*: [EventBridgePutRawEventsParameters](aws-properties-scheduler-schedule-eventbridgeputraweventsparameters.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Input`  <a name="cfn-scheduler-schedule-target-input"></a>

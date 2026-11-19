@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Dashboard
 ---
 
 # DashboardAttributes
-<a name="API_DashboardAttributes"></a>
 
 An object containing additional settings for your VDM configuration as applicable to the Dashboard.
 

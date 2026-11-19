@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Testing environment
-<a name="testing-environment"></a>
 
 Quality assurance (QA) personnel use the testing environment to validate features. They approve the changes after they finish testing. When they approve, the branch moves on to the next environment, staging. In Gitflow, this environment and others above it are only available for deployment from `release` branches. A `release` branch is based on a `develop` branch that contains the planned features.
 

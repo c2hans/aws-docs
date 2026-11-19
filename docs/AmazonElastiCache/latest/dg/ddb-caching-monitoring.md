@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ddb-caching-
 ---
 
 # Monitoring DynamoDB caching
-<a name="ddb-caching-monitoring"></a>
 
 In addition to the metrics supported by Amazon ElastiCache Serverless, Amazon DynamoDB caching emits additional metrics to enable monitoring and alarm creation for cache integration behavior. For information about accessing ElastiCache metrics through Amazon CloudWatch, see [Monitoring use with CloudWatch Metrics](CacheMetrics.md). For the list of metrics published for a serverless cache, see [ElastiCache Serverless](serverless-metrics-events-redis.md#serverless-metrics).
 

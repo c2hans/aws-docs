@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Up
 ---
 
 # UpdateCampaign
-<a name="API_UpdateCampaign"></a>
 
 **Important**
  AWS IoT FleetWise is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS IoT FleetWise availability change](https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html).
@@ -94,9 +93,9 @@ Pattern: `[a-zA-Z\d\-_:]+`
  ** [status](#API_UpdateCampaign_ResponseSyntax) **   <a name="iotfleetwise-UpdateCampaign-response-status"></a>
 The state of a campaign. The status can be one of:
 +  `CREATING` - AWS IoT FleetWise is processing your request to create the campaign.
-+  `WAITING_FOR_APPROVAL` - After you create a campaign, it enters this state. Use the [UpdateCampaign](#API_UpdateCampaign) API operation to approve the campaign for deployment to the target vehicle or fleet.
++  `WAITING_FOR_APPROVAL` - After you create a campaign, it enters this state. Use the [UpdateCampaign](API_UpdateCampaign.md) API operation to approve the campaign for deployment to the target vehicle or fleet.
 +  `RUNNING` - The campaign is active.
-+  `SUSPENDED` - The campaign is suspended. To resume the campaign, use the [UpdateCampaign](#API_UpdateCampaign) API operation.
++  `SUSPENDED` - The campaign is suspended. To resume the campaign, use the [UpdateCampaign](API_UpdateCampaign.md) API operation.
 Type: String
 Valid Values: `CREATING | WAITING_FOR_APPROVAL | RUNNING | SUSPENDED`
 

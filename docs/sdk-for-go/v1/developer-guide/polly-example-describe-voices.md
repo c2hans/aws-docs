@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/polly-exam
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Getting a List of Voices
-<a name="polly-example-describe-voices"></a>
 
 This example uses the [DescribeVoices](https://docs.aws.amazon.com/sdk-for-go/api/service/polly/#Polly.DescribeVoices) operation to get the list of voices in the `us-west-2` region.
 

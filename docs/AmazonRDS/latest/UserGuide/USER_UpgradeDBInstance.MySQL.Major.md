@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Major version upgrades for RDS for MySQL
-<a name="USER_UpgradeDBInstance.MySQL.Major"></a>
 
 Amazon RDS supports the following in-place upgrades for major versions of the MySQL database engine:
 + MySQL 5.7 to MySQL 8.0

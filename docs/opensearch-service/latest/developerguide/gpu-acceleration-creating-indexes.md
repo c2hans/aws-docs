@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Creating GPU-accelerated vector indexes
-<a name="gpu-acceleration-creating-indexes"></a>
 
 After enabling GPU-acceleration on your domain or collection, create vector indexes that can take advantage of GPU processing.
 

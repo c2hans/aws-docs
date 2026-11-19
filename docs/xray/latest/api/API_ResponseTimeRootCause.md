@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ResponseTimeRootCaus
 ---
 
 # ResponseTimeRootCause
-<a name="API_ResponseTimeRootCause"></a>
 
 The root cause information for a response time warning.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel08-b
 ---
 
 # REL08-BP01 Use runbooks for standard activities such as deployment
-<a name="rel08-bp01"></a>
 
  A runbook is a documented procedure that produces a specific, predictable outcome for a routine operation. Runbooks make standard activities such as deployments, patching, and DNS changes repeatable across people and teams. When a procedure is written down and validated, the result no longer depends on who runs it or whether they remember every step.
 

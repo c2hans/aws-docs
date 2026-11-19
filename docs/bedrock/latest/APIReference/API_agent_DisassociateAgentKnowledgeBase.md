@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Di
 ---
 
 # DisassociateAgentKnowledgeBase
-<a name="API_agent_DisassociateAgentKnowledgeBase"></a>
 
 Disassociates a knowledge base from an agent.
 

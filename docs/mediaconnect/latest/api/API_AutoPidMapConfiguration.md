@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AutoPidMapCo
 ---
 
 # AutoPidMapConfiguration
-<a name="API_AutoPidMapConfiguration"></a>
 
 The configuration settings for automatic Packet ID (PID) assignment. These settings apply to any PID mapping rule that uses the `mapAuto` action, including the default action. For more information, see [Rule actions](https://docs.aws.amazon.com/mediaconnect/latest/ug/pid-remapping-writing-rules.html#pid-remapping-actions) in the * AWS Elemental MediaConnect User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-monitorin
 ---
 
 # Using CloudWatch metrics with Lambda Web Functions
-<a name="web-functions-monitoring-metrics"></a>
 
 AWS Lambda publishes Web Function metrics to Amazon CloudWatch in two namespaces:
 + `AWS/Lambda/Web` – Request and response metrics for each endpoint, and resource usage metrics for the execution environments that serve each Web Function. Lambda centralizes these metrics into the Web Function's home Region, so the values in the home Region include traffic from every Region that the endpoint serves.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Im
 ---
 
 # ImportAssetFromApiGatewayApiResponseDetails
-<a name="API_ImportAssetFromApiGatewayApiResponseDetails"></a>
 
 The response details.
 

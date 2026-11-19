@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeReplicationConfiguration
-<a name="API_DataLakeReplicationConfiguration"></a>
 
 Provides replication details for objects stored in the Amazon Security Lake data lake.
 

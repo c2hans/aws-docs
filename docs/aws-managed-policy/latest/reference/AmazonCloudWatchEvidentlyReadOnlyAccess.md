@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCloudWatchEvidentlyReadOnlyAccess
-<a name="AmazonCloudWatchEvidentlyReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon CloudWatch Evidently
 

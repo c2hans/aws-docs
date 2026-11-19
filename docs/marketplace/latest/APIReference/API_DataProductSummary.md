@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Data
 ---
 
 # DataProductSummary
-<a name="API_DataProductSummary"></a>
 
 Object that contains summarized information about a data product.
 

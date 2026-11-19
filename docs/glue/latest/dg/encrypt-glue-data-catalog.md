@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/encrypt-glue-data-catalog
 ---
 
 # Encrypting your Data Catalog
-<a name="encrypt-glue-data-catalog"></a>
 
 AWS Glue Data Catalog encryption provides enhanced security for your sensitive data. AWS Glue integrates with AWS Key Management Service (AWS KMS) to encrypt metadata that's stored in the Data Catalog, including automatically registered assets that you enrich with business context for semantic search. You can enable or disable encryption settings for resources in the Data Catalog using the AWS Glue console or the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate incident response and forensics
-<a name="automate-incident-response-and-forensics"></a>
 
 *Lucas Kauffman and Tomek Jakubowski, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchEventsFullAccess
-<a name="CloudWatchEventsFullAccess"></a>
 
 **Description**: Provides full access to Amazon CloudWatch Events.
 

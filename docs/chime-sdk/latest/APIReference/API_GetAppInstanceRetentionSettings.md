@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_GetApp
 ---
 
 # GetAppInstanceRetentionSettings
-<a name="API_GetAppInstanceRetentionSettings"></a>
 
 Gets the retention settings for an `AppInstance`.
 

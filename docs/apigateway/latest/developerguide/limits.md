@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/limits.
 ---
 
 # Amazon API Gateway quotas
-<a name="limits"></a>
 
 The following quotas apply for all Amazon API Gateway API types.
 

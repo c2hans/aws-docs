@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:createImage` – Create an Amazon Machine Image
-<a name="automation-action-create"></a>
 
 Creates an Amazon Machine Image (AMI) from an instance that is either running, stopping, or stopped, and polls for the `ImageState` to be `available`.
 

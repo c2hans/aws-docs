@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PendingAg
 ---
 
 # PendingAggregationRequest
-<a name="API_PendingAggregationRequest"></a>
 
 An object that represents the account ID and region of an aggregator account that is requesting authorization but is not yet authorized.
 

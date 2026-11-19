@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zoho-crm-support.html
 ---
 
 # AWS Glue support for Zoho CRM
-<a name="zoho-crm-support"></a>
 
 AWS Glue supports Zoho CRM as follows:
 

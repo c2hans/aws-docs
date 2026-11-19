@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/w
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Working with multipartner opportunities
-<a name="working-with-multi-partner-opportunities"></a>
 
 AWS Partners can work together on opportunities with AWS as an active participant.
 

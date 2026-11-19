@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/docusign-monitor-configur
 ---
 
 # Configuring Docusign Monitor connections
-<a name="docusign-monitor-configuring-connections"></a>
 
 Docusign Monitor supports the AUTHORIZATION\_CODE grant type.
 + This grant type is considered three-legged OAuth as it relies on redirecting users to the third-party authorization server to authenticate the user. It is used when creating connections via the AWS Glue console.

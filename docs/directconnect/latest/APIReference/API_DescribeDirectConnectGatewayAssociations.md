@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeDirectConnectGatewayAssociations
-<a name="API_DescribeDirectConnectGatewayAssociations"></a>
 
 Lists the associations between your Direct Connect gateways and virtual private gateways and transit gateways. You must specify one of the following:
 + A Direct Connect gateway

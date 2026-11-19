@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetri
 ---
 
 # GetMetricDataV2
-<a name="API_GetMetricDataV2"></a>
 
 Gets metric data from the specified Connect Customer instance.
 

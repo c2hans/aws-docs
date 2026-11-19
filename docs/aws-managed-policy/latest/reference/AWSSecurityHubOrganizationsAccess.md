@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSecurityHubOrganizationsAccess
-<a name="AWSSecurityHubOrganizationsAccess"></a>
 
 **Description**: Grants permission to enable and manage AWS Security Hub within an organization. Includes enabling the service across the organization, and determining the delegated administrator account for the service.
 

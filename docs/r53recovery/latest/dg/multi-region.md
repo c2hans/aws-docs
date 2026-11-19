@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/multi-region.html
 ---
 
 # Use routing control to recover multi-Region applications in ARC
-<a name="multi-region"></a>
 
 This section explains how to use the routing control capability in Amazon Application Recovery Controller (ARC) to minimize disruption and help provide continuity for your users when you have an AWS application deployed in multiple AWS Regions.
 

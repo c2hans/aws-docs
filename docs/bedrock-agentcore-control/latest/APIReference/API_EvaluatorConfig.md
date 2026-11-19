@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EvaluatorConfig
-<a name="API_EvaluatorConfig"></a>
 
  The configuration that defines how an evaluator assesses agent performance, including the evaluation method and parameters.
 

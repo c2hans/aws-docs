@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Migration journey
-<a name="migration-journey"></a>
 
 Depending upon your current deployment, migrating to an Amazon OpenSearch Service can be a basic or complex procedure with multiple steps. In the following sections, you will explore migration approaches and key considerations in each step of the process. This includes the best practices based on our experience of helping many AWS customers migrate from existing tooling to Amazon OpenSearch Service. This section also discusses what constitutes an effective migration strategy.
 

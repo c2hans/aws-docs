@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_In
 ---
 
 # InsightsContext
-<a name="API_InsightsContext"></a>
 
 Details for insights that user wants to generate
 

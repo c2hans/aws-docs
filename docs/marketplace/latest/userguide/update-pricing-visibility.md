@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/update-pric
 ---
 
 # Update pricing visibility
-<a name="update-pricing-visibility"></a>
 
 **Note**
 The pricing visibility feature is in preview release for AWS Marketplace and is subject to change.

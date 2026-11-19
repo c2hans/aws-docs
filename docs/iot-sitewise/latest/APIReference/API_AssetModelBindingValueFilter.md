@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetModelBindingValueFilter
-<a name="API_AssetModelBindingValueFilter"></a>
 
 A filter used to match data bindings based on a specific asset model. This filter identifies all computation models referencing a particular asset model in their data bindings.
 

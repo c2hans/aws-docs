@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # Domain
-<a name="API_Domain"></a>
 
 Describes a domain where you are storing recordsets.
 

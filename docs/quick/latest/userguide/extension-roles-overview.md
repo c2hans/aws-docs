@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/extension-roles-o
 ---
 
 # AWS Quick user interaction with extensions
-<a name="extension-roles-overview"></a>
 
 AWS Quick extensions enable different user roles to collaborate effectively in creating, managing, and utilizing AI-powered analytics tools. Each role—administrators, authors, and end users—has distinct responsibilities and capabilities when working with extensions. Understanding these role-based interactions ensures proper governance, security, and optimal user experience across your organization's AWS Quick deployment.
 

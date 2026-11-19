@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AddToPr
 ---
 
 # AddToProjectMemberPoolPolicyGrantDetail
-<a name="API_AddToProjectMemberPoolPolicyGrantDetail"></a>
 
 The details of the policy grant.
 

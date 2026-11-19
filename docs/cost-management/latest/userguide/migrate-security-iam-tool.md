@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/migrate
 ---
 
 # How to use the affected policies tool
-<a name="migrate-security-iam-tool"></a>
 
 **Note**
 The following AWS Identity and Access Management (IAM) actions have reached the end of standard support on July 2023:

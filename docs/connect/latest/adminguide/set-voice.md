@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-voice.html
 ---
 
 # Flow block in Connect Customer: Set voice
-<a name="set-voice"></a>
 
 This topic defines the flow block for setting the text-to-speech (TTS) language and voice to use for the contact flow.
 

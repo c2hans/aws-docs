@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DataReplicat
 ---
 
 # DataReplicationInfoReplicatedDisk
-<a name="API_DataReplicationInfoReplicatedDisk"></a>
 
 Request to query disks replicated.
 

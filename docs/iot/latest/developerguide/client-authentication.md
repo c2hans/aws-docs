@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/client-authent
 ---
 
 # Client authentication
-<a name="client-authentication"></a>
 
 AWS IoT supports three types of identity principals for device or client authentication:
 + [X.509 client certificates](x509-client-certs.md)

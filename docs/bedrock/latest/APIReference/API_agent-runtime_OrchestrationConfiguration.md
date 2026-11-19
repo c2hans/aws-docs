@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # OrchestrationConfiguration
-<a name="API_agent-runtime_OrchestrationConfiguration"></a>
 
 Settings for how the model processes the prompt prior to retrieval and generation.
 

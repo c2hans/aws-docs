@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/describe-sessions.html
 ---
 
 # describe-sessions
-<a name="describe-sessions"></a>
 
 Describes one or more Amazon DCV servers.
 

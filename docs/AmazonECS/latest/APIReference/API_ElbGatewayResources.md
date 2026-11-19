@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ElbGat
 ---
 
 # ElbGatewayResources
-<a name="API_ElbGatewayResources"></a>
 
 An Application Load Balancer and its associated resources that a gateway manages.
 

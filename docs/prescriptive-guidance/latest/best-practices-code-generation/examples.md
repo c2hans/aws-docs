@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Code examples with Amazon Q Developer
-<a name="examples"></a>
 
 This section provides examples that show how to improve code generation, with a focus on the Python and Java languages. Along with inline examples, some scenarios show how you can use the chat capability of Amazon Q Developer to request code recommendations while you program.
 

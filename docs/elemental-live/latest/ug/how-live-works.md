@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/how-live-works.
 ---
 
 # How Elemental Live works
-<a name="how-live-works"></a>
 
 From the point of view of Elemental Live, a live streaming workflow that includes Elemental Live involves three systems:
 + An Elemental Live *event*, which ingests and transcodes source content.

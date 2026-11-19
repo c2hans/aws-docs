@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # CreateTelemetryRule
-<a name="API_CreateTelemetryRule"></a>
 
  Creates a telemetry rule that defines how telemetry should be configured for AWS resources in your account. The rule specifies which resources should have telemetry enabled and how that telemetry data should be collected based on resource type, telemetry type, and selection criteria.
 

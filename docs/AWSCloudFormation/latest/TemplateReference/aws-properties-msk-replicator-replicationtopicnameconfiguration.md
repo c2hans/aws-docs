@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Replicator ReplicationTopicNameConfiguration
-<a name="aws-properties-msk-replicator-replicationtopicnameconfiguration"></a>
 
 Configuration for specifying replicated topic names will be the same as their corresponding upstream topics or prefixed with source cluster alias.
 

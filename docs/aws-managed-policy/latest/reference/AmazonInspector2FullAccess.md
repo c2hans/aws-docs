@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonInspector2FullAccess
-<a name="AmazonInspector2FullAccess"></a>
 
 **Description**: Provides full access to Amazon Inspector and access to other related services such as organizations.
 

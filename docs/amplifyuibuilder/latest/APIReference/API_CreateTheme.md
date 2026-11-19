@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CreateTheme
-<a name="API_CreateTheme"></a>
 
 Creates a theme to apply to the components in an Amplify app.
 

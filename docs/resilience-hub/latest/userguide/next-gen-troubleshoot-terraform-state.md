@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Terraform state file not accessible
-<a name="next-gen-troubleshoot-terraform-state"></a>
 
 **Symptom:** Resource discovery fails reading the Terraform state file.
 

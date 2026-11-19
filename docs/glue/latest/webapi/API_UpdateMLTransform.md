@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateMLTransform
 ---
 
 # UpdateMLTransform
-<a name="API_UpdateMLTransform"></a>
 
 Updates an existing machine learning transform. Call this operation to tune the algorithm parameters to achieve better results.
 

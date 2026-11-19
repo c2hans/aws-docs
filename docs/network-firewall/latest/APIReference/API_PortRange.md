@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # PortRange
-<a name="API_PortRange"></a>
 
 A single port range specification. This is used for source and destination port ranges in the stateless rule [MatchAttributes](API_MatchAttributes.md), `SourcePorts`, and `DestinationPorts` settings.
 

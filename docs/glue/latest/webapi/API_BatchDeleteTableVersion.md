@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchDeleteTableV
 ---
 
 # BatchDeleteTableVersion
-<a name="API_BatchDeleteTableVersion"></a>
 
 Deletes a specified batch of versions of a table.
 

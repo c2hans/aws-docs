@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/postgre
 ---
 
 # Exporting query data using the aws\_s3.query\_export\_to\_s3 function
-<a name="postgresql-s3-export-examples"></a>
 
 Export your PostgreSQL data to Amazon S3 by calling the [aws\_s3.query\_export\_to\_s3](postgresql-s3-export-functions.md#aws_s3.export_query_to_s3) function.
 

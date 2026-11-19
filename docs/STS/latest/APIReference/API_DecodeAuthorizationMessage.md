@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_DecodeAuthor
 ---
 
 # DecodeAuthorizationMessage
-<a name="API_DecodeAuthorizationMessage"></a>
 
 Decodes additional information about the authorization status of a request from an encoded message returned in response to an AWS request.
 

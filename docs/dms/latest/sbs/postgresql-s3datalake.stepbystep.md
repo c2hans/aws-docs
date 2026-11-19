@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/postgresql-s3datalake.ste
 ---
 
 # Step-by-step an Amazon RDS PostgreSQL database to an Amazon S3 data lake migration walkthrough
-<a name="postgresql-s3datalake.stepbystep"></a>
 
 **Topics**
 + [Step 1: Create an AWS DMS replication instance](#postgresql-s3datalake.stepbystep.step1)

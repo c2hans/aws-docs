@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_E
 ---
 
 # ExternalFilteringConfiguration
-<a name="API_ExternalFilteringConfiguration"></a>
 
 Configuration for enabling external data filtering for third-party applications to access data managed by Lake Formation .
 

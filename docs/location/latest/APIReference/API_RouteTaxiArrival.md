@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTa
 ---
 
 # RouteTaxiArrival
-<a name="API_RouteTaxiArrival"></a>
 
 Details corresponding to the arrival for the leg.
 

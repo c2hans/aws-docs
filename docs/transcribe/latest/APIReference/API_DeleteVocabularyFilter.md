@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Delet
 ---
 
 # DeleteVocabularyFilter
-<a name="API_DeleteVocabularyFilter"></a>
 
 Deletes a custom vocabulary filter. To use this operation, specify the name of the custom vocabulary filter you want to delete using `VocabularyFilterName`. Custom vocabulary filter names are case sensitive.
 

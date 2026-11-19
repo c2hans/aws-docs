@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sandbox.html
 ---
 
 # Debug builds with CodeBuild sandbox
-<a name="sandbox"></a>
 
 In AWS CodeBuild, you can debug a build by using CodeBuild sandbox to run custom commands and troubleshoot your build.
 

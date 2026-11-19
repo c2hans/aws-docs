@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/objectToArray
 ---
 
 # $objectToArray
-<a name="objectToArray"></a>
 
 The `$objectToArray` aggregation operator in Amazon DocumentDB converts an object (or document) into an array. The input to the operator is a document, and the output consists of an array element for each field-value pair in the input document. This operator is useful when you need to work with the individual fields of a document as an array, such as when you want to find the document with the maximum or minimum value for a particular field.
 

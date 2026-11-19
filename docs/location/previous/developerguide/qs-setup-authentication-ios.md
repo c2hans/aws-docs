@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-setu
 ---
 
 # Set up authentication for your Amazon Location application
-<a name="qs-setup-authentication-ios"></a>
 
 The application that you create in this tutorial has anonymous usage, meaning that your users are not required to sign into AWS to use the application. However, the Amazon Location Service APIs require authentication to use. You will use Amazon Cognito to provide authentication and authorization for anonymous users. This tutorial will use Amazon Cognito to authenticate your application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListC
 ---
 
 # ListControlSelectAllOptions
-<a name="API_ListControlSelectAllOptions"></a>
 
 The configuration of the `Select all` options in a list control.
 

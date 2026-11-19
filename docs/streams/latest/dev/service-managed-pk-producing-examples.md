@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-pr
 ---
 
 # Examples
-<a name="service-managed-pk-producing-examples"></a>
 
 **Example Write a single record without a partition key (AWS CLI)**
 

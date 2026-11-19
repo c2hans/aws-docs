@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_MetadataEntry.ht
 ---
 
 # MetadataEntry
-<a name="API_MetadataEntry"></a>
 
 A metadata key-value pair to store with an object.
 

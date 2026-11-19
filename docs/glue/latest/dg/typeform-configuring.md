@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/typeform-configuring.html
 ---
 
 # Configuring Typeform
-<a name="typeform-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Typeform, you must meet the following requirements:
 

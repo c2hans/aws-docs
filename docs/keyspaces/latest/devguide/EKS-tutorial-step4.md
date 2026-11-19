@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/EKS-tutorial-s
 ---
 
 # Step 4: Deploy the application to Amazon EKS and write data to your table
-<a name="EKS-tutorial-step4"></a>
 
 In this step of the tutorial, you configure the Amazon EKS deployment for your application, and confirm that the application is running and can connect to Amazon Keyspaces.
 

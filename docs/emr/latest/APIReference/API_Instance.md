@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_Instance.htm
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 Represents an Amazon EC2 instance provisioned as part of cluster.
 

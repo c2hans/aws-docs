@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/infrastructu
 ---
 
 # Infrastructure security in Tag Editor
-<a name="infrastructure-security"></a>
 
 Tag Editor doesn't provide additional ways of isolating service or network traffic. If applicable, use AWS specific isolation. You can use the Tag Editor API and console in a virtual private cloud (VPC) to help maximize privacy and infrastructure security.
 

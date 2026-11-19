@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # OnlineEvaluationConfigSummary
-<a name="API_OnlineEvaluationConfigSummary"></a>
 
  The summary information about an online evaluation configuration, including basic metadata and execution status.
 

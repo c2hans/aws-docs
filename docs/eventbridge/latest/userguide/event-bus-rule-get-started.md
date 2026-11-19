@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/event-bus-r
 ---
 
 # Getting started: Create an Amazon EventBridge event bus rule
-<a name="event-bus-rule-get-started"></a>
 
 To get familiar with EventBridge rules and their capabilities, we'll use a CloudFormation template to set up an event bus rule and associated components, including an event source, event pattern, and target. Then we can explore how rules work to select the events you want.
 

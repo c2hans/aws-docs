@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-an-iam-rol
 ---
 
 # Create IAM roles for your compute environments and container instances
-<a name="create-an-iam-role"></a>
 
 Your AWS Batch compute environments and container instances require AWS account credentials to make calls to other AWS APIs on your behalf. Create an AWS Identity and Access Management role that provides these credentials to your compute environments and container instances, then associate that role with your compute environments.
 

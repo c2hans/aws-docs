@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Pricing Change Analysis Dashboard
-<a name="pricing-change-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

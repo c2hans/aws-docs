@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # EncryptionDecryptionAttributes
-<a name="API_EncryptionDecryptionAttributes"></a>
 
 Parameters that are required to perform encryption and decryption operations.
 

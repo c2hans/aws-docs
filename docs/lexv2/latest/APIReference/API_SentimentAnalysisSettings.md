@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SentimentA
 ---
 
 # SentimentAnalysisSettings
-<a name="API_SentimentAnalysisSettings"></a>
 
 Determines whether Amazon Lex will use Amazon Comprehend to detect the sentiment of user utterances.
 

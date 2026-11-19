@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Attached
 ---
 
 # AttachedFile
-<a name="API_AttachedFile"></a>
 
 Information about the attached file.
 

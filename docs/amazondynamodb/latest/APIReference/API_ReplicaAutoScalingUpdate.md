@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_R
 ---
 
 # ReplicaAutoScalingUpdate
-<a name="API_ReplicaAutoScalingUpdate"></a>
 
 Represents the auto scaling settings of a replica that will be modified.
 

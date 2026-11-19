@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SearchQuickResponses
-<a name="API_amazon-q-connect_SearchQuickResponses"></a>
 
 Searches existing Amazon Q in Connect quick responses in an Amazon Q in Connect knowledge base.
 

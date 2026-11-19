@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTransitGatewayMulticastDomains
-<a name="API_DescribeTransitGatewayMulticastDomains"></a>
 
 Describes one or more transit gateway multicast domains.
 

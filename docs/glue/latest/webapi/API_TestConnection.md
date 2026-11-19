@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TestConnection.ht
 ---
 
 # TestConnection
-<a name="API_TestConnection"></a>
 
 Tests a connection to a service to validate the service credentials that you provide.
 

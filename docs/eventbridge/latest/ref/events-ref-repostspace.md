@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-repost
 ---
 
 # AWS re:Post Private events
-<a name="events-ref-repostspace"></a>
 
 re:Post Private sends service events to EventBridge via AWS CloudTrail.
 

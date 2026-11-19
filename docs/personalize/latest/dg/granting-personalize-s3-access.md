@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/granting-personali
 ---
 
 # Giving Amazon Personalize access to Amazon S3 resources
-<a name="granting-personalize-s3-access"></a>
 
 To give Amazon Personalize access to your Amazon S3 bucket, do the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/periodToDateSumOv
 ---
 
 # periodToDateSumOverTime
-<a name="periodToDateSumOverTime-function"></a>
 
 The `periodToDateSumOverTime` function calculates the sum of a measure for a given time granularity (for instance, a quarter) up to a point in time.
 

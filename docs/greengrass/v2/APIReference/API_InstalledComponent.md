@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Installed
 ---
 
 # InstalledComponent
-<a name="API_InstalledComponent"></a>
 
 Contains information about a component on a Greengrass core device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-desc
 ---
 
 # Describe a streaming table delivery
-<a name="data-delivery-st-describe"></a>
 
  Retrieve the configuration and current status of a streaming table delivery, including its state (`ChannelStatus`) and status reason (`ChannelStatusReason`). Use this to verify that a delivery reached the ACTIVE state after creation, or to diagnose a delivery in the FAILED state.
 

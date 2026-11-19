@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Cost considerations
-<a name="cost-considerations"></a>
 
  **Cost Considerations:** Lambda architecture incurs AWS Secrets Manager costs only when image URL signature feature is activated, and operational dashboard usage may fall under CloudWatch free tier. ECS architecture costs reflect continuous operation with minimum task counts, with auto-scaling increasing costs during high-traffic periods, and DynamoDB costs based on typical usage patterns. Additional costs may include Amazon S3 PUT/GET requests depending on caching effectiveness, Amazon Rekognition charges for smart cropping or content moderation features, external origin data transfer costs, and negligible Cognito costs for Admin UI authentication (typically under $1/month for single-user operation).
 

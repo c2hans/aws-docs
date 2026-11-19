@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/f
 ---
 
 # Choosing AWS frontend web and mobile services
-<a name="front-end-mobile"></a>
 
 **Taking the first step**
 

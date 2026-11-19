@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Step 1: Build deployment assets
-<a name="step-1-build-deployment-assets"></a>
 
 Follow step-by-step instructions to build deployment assets.
 

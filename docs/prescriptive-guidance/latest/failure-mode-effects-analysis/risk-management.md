@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Risk management and mitigation for FMEA
-<a name="risk-management"></a>
 
 Adopting Failure Mode and Effects Analysis (FMEA) is itself a change that carries risk. Teams may push back on added process, scoring can drift without calibration, and tool integrations don't always go smoothly. The following risks and challenges are the ones most commonly encountered during rollout, along with practical mitigations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/s3-iam-
 ---
 
 # Deleting the Amazon S3 Bucket for Home Folders and Application Settings Persistence
-<a name="s3-iam-policy-delete"></a>
 
 WorkSpaces Applications adds an Amazon S3 bucket policy to the buckets that it creates to prevent them from being accidentally deleted. To delete an S3 bucket, you must first delete the S3 bucket policy. Following are the bucket policies that you must delete for home folders and application settings persistence.
 

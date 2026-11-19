@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises MariaDB database to Amazon RDS for MariaDB using native tools
-<a name="migrate-an-on-premises-mariadb-database-to-amazon-rds-for-mariadb-using-native-tools"></a>
 
 *Shyam Sunder Rakhecha, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DataSegmentEnrichment
-<a name="API_DataSegmentEnrichment"></a>
 
 Contains enrichment status information for a data segment.
 

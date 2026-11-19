@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/a
 ---
 
 # Accessing Amazon Redshift by using the AWS Toolkit for JetBrains
-<a name="accessing-redshift"></a>
 
 An Amazon Redshift data warehouse is an enterprise-class relational database query and management system. With AWS Toolkit for JetBrains, you can connect to and interact with Amazon Redshift clusters. An Amazon Redshift cluster consists of a collection of nodes that enables clients to query databases hosted on that cluster.
 

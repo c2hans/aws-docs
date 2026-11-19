@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/plan-
 ---
 
 # Plan Improvement Actions
-<a name="plan-improvement-actions"></a>
 
 Amazon Connect Decisions proactively identifies opportunities to improve your demand forecast accuracy by detecting patterns and anomalies that require your business context. Plan improvement actions are AI-generated tasks that surface where your input can most meaningfully enhance forecast quality, enabling your AI teammates to learn from your expertise and produce more accurate plans over time.
 

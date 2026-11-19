@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/getting-started.html
 ---
 
 # Get started
-<a name="getting-started"></a>
 
 This tutorial walks you through using Amazon Athena to query data. You'll create a table based on sample data stored in Amazon Simple Storage Service, query the table, and check the results of the query.
 

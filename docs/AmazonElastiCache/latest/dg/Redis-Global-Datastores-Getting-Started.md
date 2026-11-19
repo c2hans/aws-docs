@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Redis-Global
 ---
 
 # Prerequisites and limitations
-<a name="Redis-Global-Datastores-Getting-Started"></a>
 
 Before getting started with global datastores, be aware of the following:
 + Global datastores are supported in the following AWS Regions:

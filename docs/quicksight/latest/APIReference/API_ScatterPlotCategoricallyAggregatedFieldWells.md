@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Scatt
 ---
 
 # ScatterPlotCategoricallyAggregatedFieldWells
-<a name="API_ScatterPlotCategoricallyAggregatedFieldWells"></a>
 
 The aggregated field well of a scatter plot.
 

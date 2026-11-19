@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ComponentBindingPropertiesValueProperties
-<a name="API_ComponentBindingPropertiesValueProperties"></a>
 
 Represents the data binding configuration for a specific property using data stored in AWS. For AWS connected properties, you can bind a property to data stored in an Amazon S3 bucket, an Amplify DataStore model or an authenticated user attribute.
 

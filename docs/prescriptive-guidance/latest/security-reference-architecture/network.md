@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Infrastructure OU – Network account
-<a name="network"></a>
 
 The following diagram illustrates the AWS security services that are configured in the Network account.
 

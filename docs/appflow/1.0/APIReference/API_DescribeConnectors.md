@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DescribeCon
 ---
 
 # DescribeConnectors
-<a name="API_DescribeConnectors"></a>
 
  Describes the connectors vended by Amazon AppFlow for specified connector types. If you don't specify a connector type, this operation describes all connectors vended by Amazon AppFlow. If there are more connectors than can be returned in one page, the response contains a `nextToken` object, which can be be passed in to the next call to the `DescribeConnectors` API operation to retrieve the next page.
 

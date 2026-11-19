@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_Participatin
 ---
 
 # ParticipatingServer
-<a name="API_ParticipatingServer"></a>
 
 Represents a server participating in an asynchronous Job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_P
 ---
 
 # PriorityBalancedSchedulingConfiguration
-<a name="API_PriorityBalancedSchedulingConfiguration"></a>
 
 Configuration for priority balanced scheduling. Workers are distributed evenly across all jobs at the highest priority level.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ExportS
 ---
 
 # ExportSummary
-<a name="API_ExportSummary"></a>
 
 A summary of an export job, as returned by `ListExportJobsV2`.
 

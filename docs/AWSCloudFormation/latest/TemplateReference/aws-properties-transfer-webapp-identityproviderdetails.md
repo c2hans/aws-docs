@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::WebApp IdentityProviderDetails
-<a name="aws-properties-transfer-webapp-identityproviderdetails"></a>
 
  A structure that describes the values to use for the IAM Identity Center settings when you create or update a web app.
 

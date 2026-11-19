@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-commerce-cloud
 ---
 
 # Limitations
-<a name="salesforce-commerce-cloud-connector-limitations"></a>
 
 The following are limitations for the Salesforce Commerce Cloud connector:
 + The Contains filter is not working as expected when partitioning.

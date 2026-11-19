@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AppSi
 ---
 
 # Custom metrics with Application Signals
-<a name="AppSignals-CustomMetrics"></a>
 
 To monitor application performance and availability, Application Signals collects standard metrics (faults, errors, and latency) and runtime metrics from discovered applications after you enable it.
 

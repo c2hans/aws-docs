@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Modernize mainframe batch printing workloads on AWS by using Rocket Enterprise Server and LRS VPSX/MFI
-<a name="modernize-mainframe-batch-printing-workloads-on-aws-by-using-rocket-enterprise-server-and-lrs-vpsx-mfi"></a>
 
 *Shubham Roy and Kevin Yung, Amazon Web Services*
 

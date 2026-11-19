@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # System
-<a name="API_System"></a>
 
 Represents a system in Resilience Hub. A system is a logical grouping of services.
 

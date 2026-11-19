@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managing-re
 ---
 
 # Stopping the customer managed configuration recorder
-<a name="managing-recorder_console-stop"></a>
 
 **Note**
 **Service-linked configuration recorders are always recording**

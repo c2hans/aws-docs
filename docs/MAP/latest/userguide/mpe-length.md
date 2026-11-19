@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/mpe-length.html
 ---
 
 # MPE ID length
-<a name="mpe-length"></a>
 
 Your project number found within your migration plan is also known as your MPE ID, and consists of 5-digits (short MPE ID) or 10 alphanumeric characters (long MPE ID).
 

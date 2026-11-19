@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstancesIpv6Address
-<a name="API_ScheduledInstancesIpv6Address"></a>
 
 Describes an IPv6 address.
 

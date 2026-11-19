@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-overview-ama
 ---
 
 # Workloads
-<a name="workloads"></a>
 
 With EKS Auto Mode, customers continue to maintain responsibility for their application containers, including availability, security, and monitoring. Auto Mode provides a solid foundation to build upon, but there are several areas where following EKS best practices can improve the security posture of those workloads.
 

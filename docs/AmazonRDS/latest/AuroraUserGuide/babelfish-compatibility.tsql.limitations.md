@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # T-SQL differences in Babelfish
-<a name="babelfish-compatibility.tsql.limitations"></a>
 
 Following, you can find a table of T-SQL functionality as supported in the current release of Babelfish with some notes about differences in the behavior from that of SQL Server.
 

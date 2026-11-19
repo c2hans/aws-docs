@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/multi-object-
 ---
 
 # Multi-object mapping
-<a name="multi-object-mappings"></a>
 
 Multi-object mapping allows partners to map AWS fields to a primary source object, such as an opportunity or lead, and to the Salesforce objects related to the primary source.
 

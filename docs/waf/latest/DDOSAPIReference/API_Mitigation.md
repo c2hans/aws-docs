@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Mitigati
 ---
 
 # Mitigation
-<a name="API_Mitigation"></a>
 
 The mitigation applied to a DDoS attack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateTr
 ---
 
 # CreateTrafficDistributionGroup
-<a name="API_CreateTrafficDistributionGroup"></a>
 
 Creates a traffic distribution group given an Connect Customer instance that has been replicated.
 

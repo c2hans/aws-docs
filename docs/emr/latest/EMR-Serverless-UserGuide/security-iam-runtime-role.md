@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/secu
 ---
 
 # Job runtime roles for Amazon EMR Serverless
-<a name="security-iam-runtime-role"></a>
 
 You can specify IAM role permissions that a EMR Serverless job run can assume when calling other services on your behalf. This includes access to Amazon S3 for any data sources, targets, as well as other AWS resources like Amazon Redshift clusters and DynamoDB tables. To learn more about how to create a role, refer to [Create a job runtime role](getting-started.md#gs-runtime-role).
 

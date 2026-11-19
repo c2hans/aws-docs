@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-marketp
 ---
 
 # Deploy a model
-<a name="bedrock-marketplace-deploy-a-model"></a>
 
 After you've subscribed to a model, you deploy it to a SageMaker AI endpoint. You make inference calls to the endpoint. The model is hosted by SageMaker AI. During the deployment process, you provide the following information:
 + The name of the SageMaker AI endpoint

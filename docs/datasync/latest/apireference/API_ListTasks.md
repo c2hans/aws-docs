@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_ListTas
 ---
 
 # ListTasks
-<a name="API_ListTasks"></a>
 
 Returns a list of the AWS DataSync tasks you created.
 

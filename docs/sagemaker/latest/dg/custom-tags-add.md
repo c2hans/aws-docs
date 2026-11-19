@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/custom-tags-add.html
 ---
 
 # Add custom tags to resources
-<a name="custom-tags-add"></a>
 
  The following page demonstrates the steps needed to use custom tag propagation. Custom tag propagation requires the following steps:
 +  Opt-in to custom tag propagation

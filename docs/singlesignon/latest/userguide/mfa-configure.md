@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/mfa-config
 ---
 
 # Configure MFA in IAM Identity Center
-<a name="mfa-configure"></a>
 
 You can configure Multi-factor authentication (MFA) capabilities in IAM Identity Center when your identity source is configured with IAM Identity Center’s identity store, AWS Managed Microsoft AD, or AD Connector. MFA in IAM Identity Center is currently not supported for [external identity providers](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source-idp.html).
 

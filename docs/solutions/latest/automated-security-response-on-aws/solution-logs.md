@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Solution logs
-<a name="solution-logs"></a>
 
 This section includes Troubleshooting information for this solution, see left navigation for topics.
 

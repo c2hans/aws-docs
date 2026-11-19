@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/ai-business-str
 ---
 
 # Content Domain 3: AI Governance and Responsible AI Leadership
-<a name="ai-business-strategist-01-domain3"></a>
 
 **Topics**
 + [Task 3.1: Apply responsible AI principles to business decisions.](#ai-business-strategist-01-domain3-task1)

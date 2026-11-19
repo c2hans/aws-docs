@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UserPoolClientDescription
-<a name="API_UserPoolClientDescription"></a>
 
 A short description of a user pool app client.
 

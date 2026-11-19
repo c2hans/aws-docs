@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Architecture details
-<a name="fip-architecture-details"></a>
 
 The portal runs on the shared platform described in [Shared platform architecture](architecture-details.md). The resources below are specific to the portal.
 

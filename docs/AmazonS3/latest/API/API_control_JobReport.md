@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobRepor
 ---
 
 # JobReport
-<a name="API_control_JobReport"></a>
 
 Contains the configuration parameters for a job-completion report.
 

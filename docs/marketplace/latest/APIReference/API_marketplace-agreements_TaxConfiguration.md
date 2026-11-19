@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # TaxConfiguration
-<a name="API_marketplace-agreements_TaxConfiguration"></a>
 
 Configuration controls for tax estimation in the agreement request.
 

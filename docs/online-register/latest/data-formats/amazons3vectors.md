@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon S3 Vectors
-<a name="amazons3vectors"></a>
 
 Amazon S3 Vectors provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MppPaymentInput
-<a name="API_MppPaymentInput"></a>
 
 Contains the payment challenge from a 402 Payment Required response. Forward the raw `WWW-Authenticate: Payment` header value verbatim. In response, you receive a payment credential that satisfies the challenge. Provide exactly one challenge per request.
 

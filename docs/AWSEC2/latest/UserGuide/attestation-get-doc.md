@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/attestation-get-
 ---
 
 # Get the NitroTPM Attestation Document
-<a name="attestation-get-doc"></a>
 
 The Attestation Document is a key component of the NitroTPM attestation process. It contains a series of cryptographic measurements that can be used to verify the identity of the instance and to prove that it is running only trusted software. You can use the Attestation Document with AWS KMS, which provides built-in support for NitroTPM attestation, or to build your own cryptographic attestation mechanisms.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-appliances-software/latest/ug/
 ---
 
 # Document history for user guide
-<a name="doc-history"></a>
 
 The following describes the documentation for this release of AWS Elemental Appliances and Software Quote Confirmation.
 

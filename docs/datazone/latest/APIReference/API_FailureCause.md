@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Failure
 ---
 
 # FailureCause
-<a name="API_FailureCause"></a>
 
 Specifies the error message that is returned if the operation cannot be successfully completed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Projec
 ---
 
 # Project
-<a name="API_Project"></a>
 
 Information about a build project.
 

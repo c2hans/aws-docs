@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListStorageProfilesForQueue
-<a name="API_ListStorageProfilesForQueue"></a>
 
 Lists storage profiles for a queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/monitor-spark.html
 ---
 
 # Monitoring AWS Glue Spark jobs
-<a name="monitor-spark"></a>
 
 **Topics**
 + [Spark Metrics available in AWS Glue Studio](#console-jobs-details-metrics-spark)

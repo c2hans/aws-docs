@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Configura
 ---
 
 # ConfigurationCheckDefinition
-<a name="API_ConfigurationCheckDefinition"></a>
 
 Represents a configuration check definition supported by AWS Systems Manager for SAP.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Moving data between storage volumes in RDS for Oracle
-<a name="Appendix.Oracle.CommonDBATasks.MovingDataBetweenVolumes"></a>
 
 You can move data files and database objects between your primary and additional storage volumes. Before you move data, consider the following points:
 + The source and target volumes must have sufficient free space.

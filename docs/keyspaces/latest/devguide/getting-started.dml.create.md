@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/getting-starte
 ---
 
 # Inserting and loading data into an Amazon Keyspaces table
-<a name="getting-started.dml.create"></a>
 
 To create data in your `book_awards` table, use the `INSERT` statement to add a single row.
 

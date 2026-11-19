@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/APIReference/API_ListSnapshot
 ---
 
 # ListSnapshotBlocks
-<a name="API_ListSnapshotBlocks"></a>
 
 Returns information about the blocks in an Amazon Elastic Block Store snapshot.
 

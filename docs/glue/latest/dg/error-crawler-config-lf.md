@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/error-crawler-config-lf.h
 ---
 
 # Crawler errors when the crawler is using Lake Formation permissions
-<a name="error-crawler-config-lf"></a>
 
 Use the information below to diagnose and fix various issues while configuring the crawler using Lake Formation credentials.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # StackConfigInput
-<a name="API_geospatial_StackConfigInput"></a>
 
 The input structure for Stacking Operation.
 

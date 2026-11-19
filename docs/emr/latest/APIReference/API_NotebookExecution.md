@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_NotebookExec
 ---
 
 # NotebookExecution
-<a name="API_NotebookExecution"></a>
 
 A notebook execution. An execution is a specific instance that an Amazon EMR Notebook is run using the `StartNotebookExecution` action.
 

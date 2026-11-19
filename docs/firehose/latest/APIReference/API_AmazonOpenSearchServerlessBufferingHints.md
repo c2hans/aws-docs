@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_AmazonO
 ---
 
 # AmazonOpenSearchServerlessBufferingHints
-<a name="API_AmazonOpenSearchServerlessBufferingHints"></a>
 
 Describes the buffering to perform before delivering data to the Serverless offering for Amazon OpenSearch Service destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionTerminatedEventAttributes
-<a name="API_WorkflowExecutionTerminatedEventAttributes"></a>
 
 Provides the details of the `WorkflowExecutionTerminated` event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterAutoPatchConfigDetails
-<a name="API_ClusterAutoPatchConfigDetails"></a>
 
 The auto-patching configuration details for the instance group, including the patching strategy and schedule.
 

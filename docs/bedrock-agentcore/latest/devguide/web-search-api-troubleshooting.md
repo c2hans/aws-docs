@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/web-se
 ---
 
 # Troubleshoot AgentCore Web Search
-<a name="web-search-api-troubleshooting"></a>
 
 ## Errors
 <a name="web-search-api-errors"></a>

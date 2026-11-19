@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec07.h
 ---
 
 # Data classification
-<a name="sec07"></a>
 
  Data classification categorizes the data an organization holds by its sensitivity and criticality, so the protection and retention it receives match the risk it carries. Without it, teams protect data by intuition. That intuition varies between people, lives in one person's head, and cannot be verified in an audit.
 

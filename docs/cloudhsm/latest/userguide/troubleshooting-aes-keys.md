@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshootin
 ---
 
 # Custom IVs with non-compliant length for AES key wrap in AWS CloudHSM
-<a name="troubleshooting-aes-keys"></a>
 
 This troubleshooting topic helps you determine if your application generates irrecoverable wrapped keys. If you are impacted by this issue, use this topic to address the problem.
 

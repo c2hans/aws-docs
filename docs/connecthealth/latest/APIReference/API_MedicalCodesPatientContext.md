@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalCodesPatientContext
-<a name="API_MedicalCodesPatientContext"></a>
 
 Patient context for a medical coding job. All fields are optional.
 

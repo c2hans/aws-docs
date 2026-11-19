@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/user
 ---
 
 # Included AWS Services
-<a name="user-agent-included-services"></a>
 
 The following AWS services are supported for User Agent string implementation. User Agent strings must be included in all management or control-plane AWS API/CLI calls (i.e., calls that create, describe, modify, or delete AWS resources) to ensure proper revenue attribution.
 

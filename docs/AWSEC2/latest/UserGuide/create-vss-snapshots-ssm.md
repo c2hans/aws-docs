@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-vss-snaps
 ---
 
 # Use Systems Manager command documents to create VSS based snapshots
-<a name="create-vss-snapshots-ssm"></a>
 
 You can use AWS Systems Manager command documents to create VSS based snapshots. The following content introduces the command documents that are available, and the runtime parameters that the documents use to create your snapshots.
 

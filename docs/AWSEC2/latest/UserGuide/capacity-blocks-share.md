@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-blocks-
 ---
 
 # Share Capacity Blocks
-<a name="capacity-blocks-share"></a>
 
  Capacity Block sharing enables Capacity Block owners to share Amazon EC2 Capacity Blocks with other AWS accounts within an AWS Organization. This allows you to maximize utilization of reserved GPU capacity across different teams and projects to efficiently use the Capacity Blocks.
 

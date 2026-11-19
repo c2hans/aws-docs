@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Signatu
 ---
 
 # SignatureDetection
-<a name="API_SignatureDetection"></a>
 
 Information regarding a detected signature on a page.
 

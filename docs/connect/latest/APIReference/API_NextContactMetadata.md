@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_NextCont
 ---
 
 # NextContactMetadata
-<a name="API_NextContactMetadata"></a>
 
  Metadata information for next contact.
 

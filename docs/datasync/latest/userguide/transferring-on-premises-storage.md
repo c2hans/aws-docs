@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/transferring-o
 ---
 
 # Transferring to or from on-premises storage with AWS DataSync
-<a name="transferring-on-premises-storage"></a>
 
 With AWS DataSync, you can transfer files and objects between a number of on-premises or self-managed storage systems and the following AWS storage services:
 + [Amazon S3](create-s3-location.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteNotebookInstanceLifecycleConfig
-<a name="API_DeleteNotebookInstanceLifecycleConfig"></a>
 
 Deletes a notebook instance lifecycle configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2N
 ---
 
 # AwsEc2NetworkAclEntry
-<a name="API_AwsEc2NetworkAclEntry"></a>
 
 A rule for the network ACL. Each rule allows or denies access based on the IP address, traffic direction, port, and protocol.
 

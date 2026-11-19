@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # NodeType
-<a name="API_NodeType"></a>
 
 Information about a managed node's type.
 

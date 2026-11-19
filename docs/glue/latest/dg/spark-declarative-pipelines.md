@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/spark-declarative-pipelin
 ---
 
 # Spark Declarative Pipelines
-<a name="spark-declarative-pipelines"></a>
 
 Spark Declarative Pipelines (SDP) is a declarative framework for building batch and streaming data pipelines in AWS Glue 6.0. With SDP, you define what your data should look like using SQL or Python, and the framework automatically determines the execution plan, resolves dependencies between datasets, and runs independent branches in parallel.
 

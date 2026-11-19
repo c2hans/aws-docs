@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Metadat
 ---
 
 # MetadataFormSummary
-<a name="API_MetadataFormSummary"></a>
 
 The summary of the metadata form.
 

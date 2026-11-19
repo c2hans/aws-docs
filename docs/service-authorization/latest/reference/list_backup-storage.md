@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Backup storage
-<a name="list_backup-storage"></a>
 
 AWS Backup storage (service prefix: `backup-storage`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

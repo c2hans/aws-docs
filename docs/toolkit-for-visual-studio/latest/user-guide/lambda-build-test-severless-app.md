@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Tutorial: Build and Test a Serverless Application with AWS Lambda
-<a name="lambda-build-test-severless-app"></a>
 
 You can build a serverless Lambda application by using an AWS Toolkit for Visual Studio template. The Lambda project templates include one for an **AWS Serverless Application**, which is the AWS Toolkit for Visual Studio implementation of the [AWS Serverless Application Model (AWS SAM)](https://github.com/awslabs/serverless-application-model). Using this project type you can develop a collection of AWS Lambda functions and deploy them with any necessary AWS resources as a whole application, using AWS CloudFormation to orchestrate the deployment.
 

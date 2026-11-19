@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # StatefulRuleOptions
-<a name="API_StatefulRuleOptions"></a>
 
 Additional options governing how Network Firewall handles the rule group. You can only use these for stateful rule groups.
 

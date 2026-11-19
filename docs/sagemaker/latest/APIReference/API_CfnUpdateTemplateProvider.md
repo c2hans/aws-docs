@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CfnUpd
 ---
 
 # CfnUpdateTemplateProvider
-<a name="API_CfnUpdateTemplateProvider"></a>
 
  Contains configuration details for updating an existing CloudFormation template provider in the project.
 

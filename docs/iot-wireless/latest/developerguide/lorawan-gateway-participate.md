@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Choosing gateways to receive the LoRaWAN downlink data traffic
-<a name="lorawan-gateway-participate"></a>
 
 When you send a downlink message from AWS IoT Core for LoRaWAN to your device, you can choose the gateways you want to use for the downlink data traffic. You can specify an individual gateway or choose from a list of gateways to receive the downlink traffic.
 

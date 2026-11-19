@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_PackageFil
 ---
 
 # PackageFilter
-<a name="API_PackageFilter"></a>
 
 Contains information on the details of a package filter.
 

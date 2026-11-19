@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotRes
 ---
 
 # ListBotResourceGenerations
-<a name="API_ListBotResourceGenerations"></a>
 
 Lists the generation requests made for a bot locale.
 

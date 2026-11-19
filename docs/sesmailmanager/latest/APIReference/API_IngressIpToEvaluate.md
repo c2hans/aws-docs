@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressIpToEvaluate
-<a name="API_IngressIpToEvaluate"></a>
 
 The structure for an IP based condition matching on the incoming mail.
 

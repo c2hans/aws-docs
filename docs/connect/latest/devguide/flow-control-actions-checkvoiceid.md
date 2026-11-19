@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-act
 ---
 
 # CheckVoiceId
-<a name="flow-control-actions-checkvoiceid"></a>
 
 Checks the enrollment status, voice authentication or fraud detection results of the voice analysis returned by Voice ID.
 

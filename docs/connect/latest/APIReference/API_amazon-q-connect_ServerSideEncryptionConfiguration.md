@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ServerSideEncryptionConfiguration
-<a name="API_amazon-q-connect_ServerSideEncryptionConfiguration"></a>
 
 The configuration information for the customer managed key used for encryption.
 

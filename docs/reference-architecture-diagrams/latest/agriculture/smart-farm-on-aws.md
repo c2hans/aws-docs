@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Smart Farm on AWS
-<a name="smart-farm-on-aws"></a>
 
 Publication date: **October 24, 2022 ([Diagram history](diagram-history.md))**
 

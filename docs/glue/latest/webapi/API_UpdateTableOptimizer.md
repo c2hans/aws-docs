@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateTableOptimi
 ---
 
 # UpdateTableOptimizer
-<a name="API_UpdateTableOptimizer"></a>
 
 Updates the configuration for an existing table optimizer.
 

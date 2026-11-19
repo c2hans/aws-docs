@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/how-to-man
 ---
 
 # Managing and searching for user accounts
-<a name="how-to-manage-user-accounts"></a>
 
 Users pools can contains millions of users. Working with a dataset of this size is a challenge for administrators. Amazon Cognito has tools for finding and modifying user profiles. The top methods for finding users are the **Users** menu of the Amazon Cognito console, and with [ListUsers](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ListUsers.html). Of the methods that retrieve information about users, these are the options that don't have a cost impact unlike, for example, [AdminGetUser](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminGetUser.html).
 

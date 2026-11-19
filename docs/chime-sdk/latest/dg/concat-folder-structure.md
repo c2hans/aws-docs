@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/concat-folder-struct
 ---
 
 # Understanding the Amazon S3 bucket folder structure for Amazon Chime SDK concatenation pipelines
-<a name="concat-folder-structure"></a>
 
 The Amazon S3 buckets for media concatenation pipelines use this folder structure:
 

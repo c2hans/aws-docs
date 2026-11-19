@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # BedrockRerankingModelConfiguration
-<a name="API_agent-runtime_BedrockRerankingModelConfiguration"></a>
 
 Contains configurations for a reranker model.
 

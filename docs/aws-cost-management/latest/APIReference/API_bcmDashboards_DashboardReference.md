@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DashboardReference
-<a name="API_bcmDashboards_DashboardReference"></a>
 
 Contains basic information about a dashboard, including its ARN, name, type, and timestamps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_UserJ
 ---
 
 # UserJourneySummary
-<a name="API_UserJourneySummary"></a>
 
 Contains summary information about a user journey.
 

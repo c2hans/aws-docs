@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/toUpper-function.
 ---
 
 # toUpper
-<a name="toUpper-function"></a>
 
 `toUpper` formats a string in all uppercase. `toUpper` skips rows containing null values.
 

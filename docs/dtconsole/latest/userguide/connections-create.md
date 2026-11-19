@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-c
 ---
 
 # Create a connection
-<a name="connections-create"></a>
 
 You can create connections to the following third-party provider types:
 + To create a connection to Bitbucket, see [Create a connection to Bitbucket](connections-create-bitbucket.md).

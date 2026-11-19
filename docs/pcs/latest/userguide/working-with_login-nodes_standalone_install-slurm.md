@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_login-
 ---
 
 # Step 3 – Install Slurm on the instance
-<a name="working-with_login-nodes_standalone_install-slurm"></a>
 
 When the instance has launched and becomes active, connect to it using your preferred mechanism. Use the Slurm installer provided by AWS to install Slurm onto the instance. For more information, see [Slurm installer](working-with_ami_installers.md#working-with_ami_installers_slurm).
 

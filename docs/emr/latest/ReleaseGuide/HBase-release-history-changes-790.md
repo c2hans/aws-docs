@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/HBase-release-hi
 ---
 
 # Amazon EMR 7.9.0 - HBase release notes
-<a name="HBase-release-history-changes-790"></a>
 
 **HBase changes:**
 

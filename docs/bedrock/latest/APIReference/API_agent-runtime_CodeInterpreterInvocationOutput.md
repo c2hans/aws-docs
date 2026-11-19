@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # CodeInterpreterInvocationOutput
-<a name="API_agent-runtime_CodeInterpreterInvocationOutput"></a>
 
 Contains the JSON-formatted string returned by the API invoked by the code interpreter.
 

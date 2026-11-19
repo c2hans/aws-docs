@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # StopTelemetryQuerySession
-<a name="API_StopTelemetryQuerySession"></a>
 
 Stops a telemetry query session.
 

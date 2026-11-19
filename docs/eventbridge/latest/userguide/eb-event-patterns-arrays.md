@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-pa
 ---
 
 # Matching on multiple values for an event field in Amazon EventBridge
-<a name="eb-event-patterns-arrays"></a>
 
 The value of each field in an [event pattern](eb-event-patterns.md) is an array containing one or more values. An event pattern matches the [event](eb-events.md) if any of the values in the array match the value in the event. If the value in the event is an array, then the event pattern matches if the intersection of the event pattern array and the event array is non-empty.
 

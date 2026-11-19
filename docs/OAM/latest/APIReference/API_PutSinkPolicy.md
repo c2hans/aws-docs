@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_PutSinkPolic
 ---
 
 # PutSinkPolicy
-<a name="API_PutSinkPolicy"></a>
 
 Creates or updates the resource policy that grants permissions to source accounts to link to the monitoring account sink. When you create a sink policy, you can grant permissions to all accounts in an organization or to individual accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profile-as
 ---
 
 # Associate VPC Resolver query logging configurations to a Route 53 Profile
-<a name="profile-associate-query-logging"></a>
 
 For instructions on how to create a VPC Resolver query logging configuration, see [Configuring (VPC Resolver query logging)](resolver-query-logging-configurations-managing.md#resolver-query-logs-configuring), and then choose a tab to associate VPC Resolver configuration to a Route 53 Profile by using the Route 53 console, or AWS CLI.
 + [Console](#profile-query-log-config-console)

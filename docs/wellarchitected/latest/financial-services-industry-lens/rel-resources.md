@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Resources
-<a name="rel-resources"></a>
 
  Refer to the following resources to learn more about our best practices related to reliability.
 

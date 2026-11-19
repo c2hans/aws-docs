@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/root-accoun
 ---
 
 # root-account-mfa-enabled
-<a name="root-account-mfa-enabled"></a>
 
 Checks if the root user of your AWS account requires multi-factor authentication for console sign-in. The rule is NON\_COMPLIANT if the AWS Identity and Access Management (IAM) root account user does not have multi-factor authentication (MFA) enabled.
 

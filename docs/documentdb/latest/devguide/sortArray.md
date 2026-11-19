@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/sortArray.htm
 ---
 
 # $sortArray
-<a name="sortArray"></a>
 
 New from version 8.0
 

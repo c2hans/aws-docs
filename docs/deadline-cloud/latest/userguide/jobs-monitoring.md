@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/jobs-mon
 ---
 
 # Monitoring Deadline Cloud jobs
-<a name="jobs-monitoring"></a>
 
 Use the AWS Deadline Cloud monitor to get an overall view of your jobs, including:
 + Monitor and manage jobs

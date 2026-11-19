@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/doc-history-re
 ---
 
 # Release Notes and Document History for Amazon DCV Access Console
-<a name="doc-history-release-notes"></a>
 
 This page provides the release notes and document history for Amazon DCV Access Console.
 

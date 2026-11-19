@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_SpellCorr
 ---
 
 # SpellCorrectionConfiguration
-<a name="API_SpellCorrectionConfiguration"></a>
 
 Provides the configuration information for suggested query spell corrections.
 

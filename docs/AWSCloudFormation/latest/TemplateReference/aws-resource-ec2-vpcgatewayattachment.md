@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPCGatewayAttachment
-<a name="aws-resource-ec2-vpcgatewayattachment"></a>
 
 Attaches an internet gateway, or a virtual private gateway to a VPC, enabling connectivity between the internet and the VPC.
 

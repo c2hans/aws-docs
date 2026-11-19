@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginGroupMember
-<a name="API_OriginGroupMember"></a>
 
 An origin in an origin group.
 

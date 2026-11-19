@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-net-pol.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Use Network Policies with EKS Auto Mode
-<a name="auto-net-pol"></a>
 
 ## Overview
 <a name="_overview"></a>

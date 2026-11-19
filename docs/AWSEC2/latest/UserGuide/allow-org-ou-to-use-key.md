@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/allow-org-ou-to-
 ---
 
 # Allow organizations and OUs to use a KMS key
-<a name="allow-org-ou-to-use-key"></a>
 
 If you share an AMI that is backed by encrypted snapshots, you must also allow the organizations or organizational units (OUs) to use the KMS keys that were used to encrypt the snapshots.
 

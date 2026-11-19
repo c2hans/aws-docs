@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WIF
 ---
 
 # Preparing to use web identity federation
-<a name="WIF.PreparingForUse"></a>
 
 If you are an application developer and want to use web identity federation for your app, follow these steps:
 

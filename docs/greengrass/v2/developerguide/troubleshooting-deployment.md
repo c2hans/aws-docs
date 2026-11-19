@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/troubleshoo
 ---
 
 # Detailed deployment error codes
-<a name="troubleshooting-deployment"></a>
 
 Use the error codes and solutions in these sections to help resolve issues with component deployment when using the Greengrass nucleus version 2.8.0 or later.
 

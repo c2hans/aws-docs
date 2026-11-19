@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/delete-
 ---
 
 # Tutorial: Delete geofences
-<a name="delete-geofence"></a>
 
 You can delete geofences from a geofence collection using the Amazon Location console, the AWS CLI, or the Amazon Location APIs.
 

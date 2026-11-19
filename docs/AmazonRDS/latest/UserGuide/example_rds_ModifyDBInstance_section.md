@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/example_rds_M
 ---
 
 # Use `ModifyDBInstance` with an AWS SDK or CLI
-<a name="example_rds_ModifyDBInstance_section"></a>
 
 The following code examples show how to use `ModifyDBInstance`.
 

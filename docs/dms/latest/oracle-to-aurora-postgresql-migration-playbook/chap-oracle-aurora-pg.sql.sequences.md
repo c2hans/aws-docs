@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL sequences
-<a name="chap-oracle-aurora-pg.sql.sequences"></a>
 
 With AWS DMS, you can manage database sequence objects across heterogeneous database platforms during migration. Sequences are unique identifiers that generate sequential numbers, often used as primary keys in tables.
 

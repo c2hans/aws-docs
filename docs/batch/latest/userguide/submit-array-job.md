@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/submit-array-job.
 ---
 
 # Submit an AWS Batch array job
-<a name="submit-array-job"></a>
 
 After you registered your job definition, you can submit an AWS Batch array job that uses your new container image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/routing-profiles
 ---
 
 # Routing profile actions
-<a name="routing-profiles-api"></a>
 
 The following API actions are available for routing profiles:
 + [AssociateRoutingProfileQueues](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateRoutingProfileQueues.html)

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-applic
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # App
-<a name="apps-application-id"></a>
 
 An *app* represents an Amazon Pinpoint application, also referred to as a *project*, in which you define an audience and you engage this audience with tailored messages. For example, you can use an application to send push notifications to users of your iOS or Android app, send email to newsletter subscribers, or send SMS messages to your customers' mobile phones.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conti
 ---
 
 # Using parameter override functions with CodePipeline pipelines
-<a name="continuous-delivery-codepipeline-parameter-override-functions"></a>
 
 In a CodePipeline stage, you can specify [parameter overrides](continuous-delivery-codepipeline-action-reference.md) for CloudFormation actions. Parameter overrides let you specify template parameter values that override values in a template configuration file. CloudFormation provides functions to help you to specify dynamic values (values that are unknown until the pipeline runs).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Digital River for CPG, B2B, and DTC on AWS
-<a name="digital-river-cpg"></a>
 
 Publication date: **March 28, 2022 ([Diagram history](#dr-history))**
 

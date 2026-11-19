@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListDataC
 ---
 
 # ListDataCatalogs
-<a name="API_ListDataCatalogs"></a>
 
 Lists the data catalogs in the current AWS account.
 

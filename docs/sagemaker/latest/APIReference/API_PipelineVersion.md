@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Pipeli
 ---
 
 # PipelineVersion
-<a name="API_PipelineVersion"></a>
 
 The version of the pipeline.
 

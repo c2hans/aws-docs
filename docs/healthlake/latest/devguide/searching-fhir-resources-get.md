@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/searching-fhi
 ---
 
 # Searching FHIR resources with GET
-<a name="searching-fhir-resources-get"></a>
 
 You can use `GET` requests to search a HealthLake data store. When using `GET`, HealthLake supports providing search parameters as part of the URL, but not as part of a request body. For more information, see [FHIR R4 search parameters for HealthLake](reference-fhir-search-parameters.md).
 

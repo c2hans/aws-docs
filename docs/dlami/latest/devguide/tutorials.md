@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorials.html
 ---
 
 # Tutorials
-<a name="tutorials"></a>
 
 The following are tutorials on how to use the Deep Learning AMI with Conda's software.
 

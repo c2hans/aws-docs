@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/co
 ---
 
 # Build a container image for Amazon GameLift Servers
-<a name="containers-prepare-images"></a>
 
 This topic describes how to create a container image with your game server software to use with Amazon GameLift Servers. A game server container image includes the game server executable and any dependencies it needs to run. Game server container images are used with an Amazon GameLift Servers managed containers hosting solution. For details on building the complete solution, see:
 + [Development roadmap for hosting with Amazon GameLift Servers managed containers](gamelift-roadmap-containers.md)

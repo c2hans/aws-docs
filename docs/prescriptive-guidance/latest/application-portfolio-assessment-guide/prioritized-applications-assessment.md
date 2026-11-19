@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Prioritized applications assessment
-<a name="prioritized-applications-assessment"></a>
 
 One of the key outcomes of the previous stage, [portfolio discovery and initial planning](portfolio-discovery-initial-planning.md), was to [prioritize a subset of applications](prioritization-and-migration-strategy.md#prioritizing-applications) for detailed assessment. This section explores the detailed assessment of applications.
 

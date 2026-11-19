@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/mobile-meeting-roster.ht
 ---
 
 # Using the meeting roster
-<a name="mobile-meeting-roster"></a>
 
 By default, the meeting roster appears when you first join a meeting. The roster displays tiles with the name and initials of each meeting attendee. A colored border indicates the active speaker.
 

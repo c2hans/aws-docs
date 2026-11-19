@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAgentlessDiscoveryService
-<a name="AWSAgentlessDiscoveryService"></a>
 
 **Description**: Provides access for the Discovery Agentless Connector to register with AWS Application Discovery Service.
 

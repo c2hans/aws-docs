@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-global-
 ---
 
 # rds-global-cluster-aurora-postgresql-supported-version
-<a name="rds-global-cluster-aurora-postgresql-supported-version"></a>
 
 Checks if an Amazon Aurora PostgreSQL global database is running on a specified minimum supported engine version. The rule is NON\_COMPLIANT if the Aurora PostgreSQL global database is not running on the minimum supported engine version that you specify.
 

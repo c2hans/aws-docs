@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [ApplyArchiveRule](API_ApplyArchiveRule.md)

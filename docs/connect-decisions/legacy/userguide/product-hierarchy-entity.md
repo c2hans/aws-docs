@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/produ
 ---
 
 # product\_hierarchy
-<a name="product-hierarchy-entity"></a>
 
 **Primary key (PK)**
 

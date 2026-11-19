@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # List available prompts in an AgentCore gateway
-<a name="gateway-using-mcp-prompts-list"></a>
 
 To list all available prompts that an AgentCore gateway provides, make a POST request to the gateway’s MCP endpoint and specify `prompts/list` as the method in the request body:
 

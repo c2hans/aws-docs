@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ChangeProgressStage
-<a name="API_osis_ChangeProgressStage"></a>
 
 Progress details for a specific stage of a pipeline configuration change.
 

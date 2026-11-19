@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSpo
 ---
 
 # DeleteSpotDatafeedSubscription
-<a name="API_DeleteSpotDatafeedSubscription"></a>
 
 Deletes the data feed for Spot Instances.
 

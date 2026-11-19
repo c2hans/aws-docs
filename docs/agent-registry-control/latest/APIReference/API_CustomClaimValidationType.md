@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # CustomClaimValidationType
-<a name="API_CustomClaimValidationType"></a>
 
 A validation rule applied to a single claim of an inbound JWT.
 

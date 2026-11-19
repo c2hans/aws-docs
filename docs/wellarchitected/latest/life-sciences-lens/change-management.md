@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Change nanagement
-<a name="change-management"></a>
 
 |  LSREL09: How do you design, validate, rollback, and recover from failed changes so life sciences workloads remain reliable and compliant?  |
 | --- |

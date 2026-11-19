@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Implementing and enforcing tagging
-<a name="implementing-and-enforcing-tagging"></a>
 
  In this section, we’ll introduce you to the tools available for the following resource management strategies: manual, infrastructure as code (IaC), and continuous integration/continuous delivery (CI/CD). The key dimension for these approaches is an increasingly frequent rate of deployment.
 

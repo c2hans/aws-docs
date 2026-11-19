@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/WhatsNew.html
 ---
 
 # Document history
-<a name="WhatsNew"></a>
 
 The following table describes the important changes to the AWS Database Migration Service user guide documentation after January 2018.
 

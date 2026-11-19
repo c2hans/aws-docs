@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/datab
 ---
 
 # Monitoring Aurora Limitless databases with Database Insights
-<a name="database-insights-limitless"></a>
 
 Database Insights supports monitoring [Aurora PostgreSQL Limitless Databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.Engines.html) at both the fleet and instance levels. Your Aurora PostgreSQL Limitless Databases are discoverable in both the Database Instance Dashboard and the Fleet Health Dashboard.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # RecordHandlerProgress
-<a name="API_RecordHandlerProgress"></a>
 
 Reports progress of a resource handler to CloudFormation.
 

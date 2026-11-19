@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Configure IPv6 connectivity for cPanel instances in Lightsail
-<a name="amazon-lightsail-configure-ipv6-on-cpanel"></a>
 
 All instances in Amazon Lightsail have a public and a private IPv4 address assigned to them by default. You can optionally enable IPv6 for your instances to have a public IPv6 address assigned to them. For more information, see [Amazon Lightsail IP addresses ](understanding-public-ip-and-private-ip-addresses-in-amazon-lightsail.md) and [Enable or disable IPv6](amazon-lightsail-enable-disable-ipv6.md).
 

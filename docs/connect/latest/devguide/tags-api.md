@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/tags-api.html
 ---
 
 # Tag actions
-<a name="tags-api"></a>
 
 The following API actions are available for tags:
 + [SearchResourceTags](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchResourceTags.html)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/service-options.htm
 ---
 
 # Choosing how to issue certificates with AWS
-<a name="service-options"></a>
 
 AWS offers several ways to issue and manage X.509 certificates. Choose the option that best fits your use case.
 

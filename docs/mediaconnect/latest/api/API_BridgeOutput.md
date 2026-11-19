@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BridgeOutput
 ---
 
 # BridgeOutput
-<a name="API_BridgeOutput"></a>
 
  The output of the bridge.
 

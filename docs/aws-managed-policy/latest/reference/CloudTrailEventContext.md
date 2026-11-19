@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudTrailEventContext
-<a name="CloudTrailEventContext"></a>
 
 **Description**: This service linked role allows CloudTrail to get and add resource tags to the resource owner's CloudTrail events.
 

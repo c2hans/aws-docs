@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSEC06 BP02 Strengthen SAML federation to reduce security risks
-<a name="eucsec06-bp02"></a>
 
  To help prevent an opportunity for SAML assertions to be misused when using Certificate Based Authentication by incorrectly associating with Active Directory user security objects, strong mapping should be used.
 

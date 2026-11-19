@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeLimitsProfile
-<a name="API_DescribeLimitsProfile"></a>
 
 Describes the properties of an existing limits profile.
 

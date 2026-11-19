@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Plan your deployment
-<a name="data-mesh-plan"></a>
 
 ## Platform Foundation Cost Breakdown
 <a name="platform-foundation-cost-breakdown"></a>

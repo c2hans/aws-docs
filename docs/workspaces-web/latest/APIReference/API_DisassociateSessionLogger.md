@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DisassociateSessionLogger
-<a name="API_DisassociateSessionLogger"></a>
 
 Disassociates a session logger from a portal.
 

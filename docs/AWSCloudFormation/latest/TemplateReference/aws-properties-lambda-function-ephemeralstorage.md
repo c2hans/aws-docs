@@ -5,9 +5,8 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Function EphemeralStorage
-<a name="aws-properties-lambda-function-ephemeralstorage"></a>
 
-The size of the function's `/tmp` directory in MB. The default value is 512, but it can be any whole number between 512 and 10,240 MB.
+The size of the function's `/tmp` directory in MB. The default value is 512, but it can be any whole number between 512 and 10,240 MB. For functions that use `AcceleratorConfig`, the maximum is 32,768 MB.
 
 ## Syntax
 <a name="aws-properties-lambda-function-ephemeralstorage-syntax"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressPointConfiguration
-<a name="API_IngressPointConfiguration"></a>
 
 The configuration of the ingress endpoint resource.
 

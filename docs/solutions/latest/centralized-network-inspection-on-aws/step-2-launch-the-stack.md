@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Step 2: Launch the stack
-<a name="step-2-launch-the-stack"></a>
 
  Follow the step-by-step instructions in this section to configure and deploy the guidance into your account.
 

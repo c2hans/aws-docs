@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/not-aggregati
 ---
 
 # $not
-<a name="not-aggregation"></a>
 
 The `$not` aggregation operator performs a logical NOT operation on an expression. It returns `true` if the expression evaluates to `false`, and `false` if the expression evaluates to `true`.
 

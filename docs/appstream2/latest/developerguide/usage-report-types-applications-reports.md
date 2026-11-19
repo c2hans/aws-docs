@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/usage-r
 ---
 
 # WorkSpaces Applications Applications Reports
-<a name="usage-report-types-applications-reports"></a>
 
 For each day that users launch at least one application during their streaming sessions, WorkSpaces Applications exports an applications report to your Amazon S3 bucket. The report, named **daily-app-report-[YYYY]-[MM]-[DD].csv**, is stored in a nested folder structure in your Amazon S3 account, using the following folder path:
 

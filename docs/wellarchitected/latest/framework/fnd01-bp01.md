@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd01-b
 ---
 
 # FND01-BP01 Establish management account and organizational structure
-<a name="fnd01-bp01"></a>
 
  With a multi-account environment, you can meet security, governance, and operational requirements and establish clear boundaries for workload isolation, access control, and cost management. Your organizational structure must accommodate both centralized and decentralized operational models, particularly for enterprises with multiple business units.
 

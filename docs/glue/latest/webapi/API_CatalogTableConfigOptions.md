@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogTableConfi
 ---
 
 # CatalogTableConfigOptions
-<a name="API_CatalogTableConfigOptions"></a>
 
 The configuration for a AWS Glue Data Catalog table used to store data quality results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Oracle multi-tenant architecture
-<a name="oracle-architecture"></a>
 
 [Oracle multi-tenant architecture](https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/introduction-to-the-multitenant-architecture.html#GUID-C5B0AF7D-ABE8-4F69-9552-F4DAF40281F1) enables an Oracle database to function as a container database (CDB), and includes multiple pluggable databases (PDBs). By consolidating multiple Oracle databases into a single instance, the multi-tenant architecture reduces both cost and management efforts:
 + Both Amazon RDS for Oracle and Amazon RDS Custom for Oracle support multi-tenant architecture in Oracle Database Enterprise Edition (EE) and Standard Edition 2 (SE2).

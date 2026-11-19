@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # PrivateEndpointOverride
-<a name="API_PrivateEndpointOverride"></a>
 
 A mapping of a domain to the private endpoint used to reach it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopAI
 ---
 
 # StopAIRecommendationJob
-<a name="API_StopAIRecommendationJob"></a>
 
 Stops a running AI recommendation job.
 

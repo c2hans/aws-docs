@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Example – Summarize the last 30 seconds of speech
-<a name="functions-examples-transcript"></a>
 
 Sends the transcript of each 30-second window to a text model and keeps a two-sentence summary. Requires an enabled smart subtitles output on the feed, named in `subtitlingSettings`.
 

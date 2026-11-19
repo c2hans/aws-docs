@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ProvisioningArtifactParameter
-<a name="API_ProvisioningArtifactParameter"></a>
 
 Information about a parameter used to provision a product.
 

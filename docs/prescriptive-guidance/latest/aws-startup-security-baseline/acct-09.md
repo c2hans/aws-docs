@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # ACCT.09 Delete unused VPCs, subnets, and security groups
-<a name="acct-09"></a>
 
 To reduce the opportunity for security issues, delete resources that you do not use. In a new AWS account, by default, AWS automatically creates a default Amazon Virtual Private Cloud (Amazon VPC) in every AWS Region. This enables you to assign public IP addresses in public subnets. If you do not need these VPCs, they introduce risk of unintended exposure of resources. For more information, see [What is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/)
 

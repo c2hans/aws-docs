@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle database users and MySQL users
-<a name="chap-oracle-aurora-mysql.security.users"></a>
 
 With AWS DMS, you can migrate existing Oracle and MySQL databases to Amazon Aurora with minimal downtime. Oracle Database users and MySQL users refer to the user accounts that have been granted specific privileges to access and manipulate data within the respective database systems. Scenarios where you might need to learn about these users include migrating production databases with existing user accounts, consolidating multiple databases with different user configurations, or recreating a development environment with the same user structure as production.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/workbench.vizu
 ---
 
 # Visualize data models with NoSQL Workbench
-<a name="workbench.vizualizer"></a>
 
 Using NoSQL Workbench, you can visualize your data models to help ensure that the data models can support your application’s queries and access patterns. You also can save and export your data models in a variety of formats for collaboration, documentation, and presentations.
 

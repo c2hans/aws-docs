@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/launch-instanc
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Launch instances with Capacity Blocks (CB)
-<a name="launch-instances-capacity-blocks"></a>
 
 AWS ParallelCluster supports [ On-Demand Capacity Reservations (ODCR)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html) and [ Capacity Blocks (CB) for Machine Learning](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html). Unlike ODCR, CB can have a future start time and is time-bound. For more information about launching with ODCR, see [Launch instances with On-Demand Capacity Reservations (ODCR)](launch-instances-odcr-v3.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/autocompl
 ---
 
 # Autocomplete
-<a name="autocomplete"></a>
 
  `Autocomplete` returns complete addresses and address components based on partial input. Key use cases include address form auto-filling and typeahead address completion (completing the address interactively while the end user is typing it).
 

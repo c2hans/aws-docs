@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-describe-a
 ---
 
 # Describing an ACME account
-<a name="sdk-acme-describe-account"></a>
 
 The following example shows how to use the [DescribeAcmeAccount](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcmeAccount.html) function.
 

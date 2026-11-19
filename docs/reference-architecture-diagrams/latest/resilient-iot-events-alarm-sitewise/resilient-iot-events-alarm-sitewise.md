@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/r
 ---
 
 # Resilient AWS IoT Events Alarm for AWS IoT SiteWise
-<a name="resilient-iot-events-alarm-sitewise"></a>
 
 Publication date: **April 5, 2021 ([Diagram history](#riea-diagram-history))**
 

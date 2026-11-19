@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_EventDes
 ---
 
 # EventDescription
-<a name="API_EventDescription"></a>
 
 Describes an event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/usingsharedamis-
 ---
 
 # Prepare to use shared AMIs for Linux
-<a name="usingsharedamis-confirm"></a>
 
 Before you use a shared AMI for Linux, take the following steps to confirm that there are no pre-installed credentials that would allow unwanted access to your instance by a third party and no pre-configured remote logging that could transmit sensitive data to a third party. Check the documentation for the Linux distribution used by the AMI for information about improving the security of the system.
 

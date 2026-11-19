@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_G
 ---
 
 # GetDataflowEndpointGroup
-<a name="API_GetDataflowEndpointGroup"></a>
 
 Returns the dataflow endpoint group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/working-wit
 ---
 
 # Working with directed actions
-<a name="working-with-devops-agent-working-with-directed-actions"></a>
 
 AWS DevOps Agent can act on your connected services and AWS accounts when an operator explicitly asks it to. For example, an operator investigating an incident can ask the agent to describe the state of a resource. With the appropriate permissions and approvals, the operator can also ask the agent to remediate an issue directly.
 

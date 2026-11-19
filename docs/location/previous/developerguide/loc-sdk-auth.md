@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/loc-sdk
 ---
 
 # JavaScript Authentication helper
-<a name="loc-sdk-auth"></a>
 
 The Amazon Location JavaScript authentication helper makes it simpler to authenticate when making Amazon Location API calls from your JavaScript application. This authentication helper specifically help you when using [Amazon Cognito](authenticating-using-cognito.md) or [API keys](using-apikeys.md) as your authentication method. This is an open source library that is available on GitHub, here: [https://github.com/aws-geospatial/amazon-location-utilities-auth-helper-js](https://github.com/aws-geospatial/amazon-location-utilities-auth-helper-js).
 

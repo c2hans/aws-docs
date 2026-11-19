@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentConfigurationUserParameter
-<a name="API_EnvironmentConfigurationUserParameter"></a>
 
 The environment configuration user parameters.
 

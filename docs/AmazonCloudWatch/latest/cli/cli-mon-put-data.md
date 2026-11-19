@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-put-
 ---
 
 # mon-put-data
-<a name="cli-mon-put-data"></a>
 
 ## Description
 <a name="w2aab9c47b3"></a>

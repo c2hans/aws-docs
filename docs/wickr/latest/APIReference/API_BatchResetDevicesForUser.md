@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchReset
 ---
 
 # BatchResetDevicesForUser
-<a name="API_BatchResetDevicesForUser"></a>
 
 Resets multiple devices for a specific user in a Wickr network. This operation forces the selected devices to log out and requires users to re-authenticate, which is useful for security purposes or when devices need to be revoked.
 

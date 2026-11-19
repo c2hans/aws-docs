@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CloneToRefre
 ---
 
 # CloneToRefreshableConfiguration
-<a name="API_CloneToRefreshableConfiguration"></a>
 
 The configuration for creating an Autonomous Database as a refreshable clone.
 

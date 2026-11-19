@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-o
 ---
 
 # How VPC Resolver determines where to forward DNS queries
-<a name="resolver-overview-forward-vpc-to-network-where-to-forward-queries"></a>
 
 When an application that runs on an EC2 instance in a VPC submits a DNS query, Route 53 VPC Resolver performs the following steps:
 

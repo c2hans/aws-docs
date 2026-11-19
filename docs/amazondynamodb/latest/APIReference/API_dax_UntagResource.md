@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # UntagResource
-<a name="API_dax_UntagResource"></a>
 
 Removes the association of tags from a DAX resource. You can call `UntagResource` up to 5 times per second, per account.
 

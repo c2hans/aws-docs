@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Layer 3: Security and governance for generative AI platforms on AWS
-<a name="security"></a>
 
 A robust security and governance framework is essential for scaling generative AI adoption across the enterprise. We recommend a platform-centric approach. This approach makes sure that all generative AI powered applications, irrespective of which team builds them, benefit from a default set of security and responsible AI guardrails.
 

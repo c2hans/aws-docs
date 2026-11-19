@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ne
 ---
 
 # NewTransitVirtualInterfaceAllocation
-<a name="API_NewTransitVirtualInterfaceAllocation"></a>
 
 Information about a transit virtual interface to be provisioned on a connection.
 

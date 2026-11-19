@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UserCo
 ---
 
 # UserContext
-<a name="API_UserContext"></a>
 
 Information about the user who created or modified a SageMaker resource.
 

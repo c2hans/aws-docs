@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/duplicate-a-data-
 ---
 
 # Duplicating datasets
-<a name="duplicate-a-data-set"></a>
 
 You can duplicate an existing dataset to save a copy of it with a new name. The new dataset is a completely separate copy.
 

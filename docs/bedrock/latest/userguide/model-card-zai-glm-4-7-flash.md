@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-
 ---
 
 # GLM 4.7 Flash
-<a name="model-card-zai-glm-4-7-flash"></a>
 
 ## ![Z.AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/zai.png) Z.AI — GLM 4.7 Flash
 <a name="model-card-zai-glm-4-7-flash-header"></a>

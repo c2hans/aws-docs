@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # ListTemplates
-<a name="API_ListTemplates"></a>
 
 Lists the templates, if any, that are associated with a connector.
 

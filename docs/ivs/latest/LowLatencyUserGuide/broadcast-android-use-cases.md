@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast
 ---
 
 # Advanced Use Cases for the IVS Android Broadcast SDK \| Low-Latency Streaming
-<a name="broadcast-android-use-cases"></a>
 
 Here we present some advanced use cases. Start with the basic setup above and continue here.
 

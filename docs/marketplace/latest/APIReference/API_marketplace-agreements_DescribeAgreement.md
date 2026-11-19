@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # DescribeAgreement
-<a name="API_marketplace-agreements_DescribeAgreement"></a>
 
 Provides details about an agreement, such as the proposer, acceptor, start date, and end date.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DeliveryOpti
 ---
 
 # DeliveryOptions
-<a name="API_DeliveryOptions"></a>
 
 Specifies whether messages that use the configuration set are required to use Transport Layer Security (TLS).
 

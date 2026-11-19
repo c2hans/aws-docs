@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 4a. Update Systems Manager Parameter Store (Regions List)
-<a name="step-4a.-update-systems-manager-parameter-store-regions-list"></a>
 
 Use the following procedure to update the Systems Manager Parameter Store with the list of AWS Regions where you want to deploy the spoke templates.
 

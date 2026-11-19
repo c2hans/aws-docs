@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agent-ops-m
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 ## Authoring
 <a name="authoring.d19ee064-38a5-505c-88a0-e382b7f1f5f4"></a>

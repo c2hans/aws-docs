@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-chat-room.html
 ---
 
 # Using chat rooms
-<a name="chime-chat-room"></a>
 
 The topics in this section explain how to create and use chat rooms. You can create a chat room whenever you need to collaborate with a group of people, usually for ongoing issues or projects. You can invite any number of users to your chat rooms, and users can join any number of chat rooms.
 

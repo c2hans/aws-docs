@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Working with Patch Manager resources and compliance using the console
-<a name="patch-manager-console"></a>
 
 To use Patch Manager, complete the following tasks. These tasks are described in more detail in this section.
 

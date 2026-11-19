@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_AppsList
 ---
 
 # AppsListData
-<a name="API_AppsListData"></a>
 
 An AWS Firewall Manager applications list.
 

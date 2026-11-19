@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CspmPro
 ---
 
 # CspmProviderSummary
-<a name="API_CspmProviderSummary"></a>
 
 A summary of the cloud provider configuration for a connector.
 

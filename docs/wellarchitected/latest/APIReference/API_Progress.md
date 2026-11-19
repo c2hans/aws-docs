@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # Progress
-<a name="API_Progress"></a>
 
 Progress information for a recommendation generation process.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Medic
 ---
 
 # MedicalScribeContext
-<a name="API_MedicalScribeContext"></a>
 
 The `MedicalScribeContext` object that contains contextual information used to generate customized clinical notes.
 

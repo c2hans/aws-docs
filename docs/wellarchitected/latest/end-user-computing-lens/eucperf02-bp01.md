@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF02-BP01 Identify geographic distribution of end users and design to minimize latency
-<a name="eucperf02-bp01"></a>
 
  When migrating to or implementing AWS EUC services, consider the location of each group of users with respect to the service endpoints for AWS WorkSpaces, WorkSpaces Applications, or WorkSpaces Secure Browser. You should deliver services from the Region with the lowest latency to most users.
 

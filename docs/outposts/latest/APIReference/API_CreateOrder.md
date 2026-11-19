@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_CreateO
 ---
 
 # CreateOrder
-<a name="API_CreateOrder"></a>
 
 Creates an order for an Outpost.
 

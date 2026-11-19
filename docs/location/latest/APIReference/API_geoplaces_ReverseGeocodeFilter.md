@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # ReverseGeocodeFilter
-<a name="API_geoplaces_ReverseGeocodeFilter"></a>
 
 The included place types.
 

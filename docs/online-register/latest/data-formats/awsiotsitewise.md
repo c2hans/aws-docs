@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 ---
 
 # Data retrieval APIs for AWS IoT SiteWise
-<a name="awsiotsitewise"></a>
 
 AWS IoT SiteWise provides the following APIs for data retrieval.
 

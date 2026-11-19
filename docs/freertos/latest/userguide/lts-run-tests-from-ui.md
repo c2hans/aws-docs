@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-run-tests-
 ---
 
 # Run qualification tests
-<a name="lts-run-tests-from-ui"></a>
 
 After you create a configuration for the IDT for FreeRTOS UI you can run your qualification tests.
 

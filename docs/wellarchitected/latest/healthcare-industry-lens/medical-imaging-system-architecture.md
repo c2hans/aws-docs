@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Medical imaging system reference architecture
-<a name="medical-imaging-system-architecture"></a>
 
  This section describes key aspects of medical imaging systems, such as PACS and VNA solutions.
 

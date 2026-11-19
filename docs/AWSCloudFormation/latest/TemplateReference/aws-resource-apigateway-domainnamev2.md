@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGateway::DomainNameV2
-<a name="aws-resource-apigateway-domainnamev2"></a>
 
 The `AWS::ApiGateway::DomainNameV2` resource specifies a custom domain name for your private APIs in API Gateway. You can use a private custom domain name to provide a URL for your private API that's more intuitive and easier to recall.
 

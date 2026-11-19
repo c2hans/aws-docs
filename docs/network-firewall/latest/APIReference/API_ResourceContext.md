@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ResourceContext
-<a name="API_ResourceContext"></a>
 
 A resource that a context store records, which `ListResourcesInContextStore` returns.
 

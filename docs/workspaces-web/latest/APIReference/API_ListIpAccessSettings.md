@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListIpAccessSettings
-<a name="API_ListIpAccessSettings"></a>
 
 Retrieves a list of IP access settings.
 

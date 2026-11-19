@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Identifying dense\_vector fields before you migrate
-<a name="tdvk-identify-fields"></a>
 
 Before you run metadata migration, find which indexes use `dense_vector` so you can plan validation around them. Query the source cluster’s mappings from the Migration Console pod (`migration-console-0`):
 

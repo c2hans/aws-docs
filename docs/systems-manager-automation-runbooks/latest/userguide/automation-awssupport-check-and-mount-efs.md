@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-CheckAndMountEFS`
-<a name="automation-awssupport-check-and-mount-efs"></a>
 
  **Description**
 

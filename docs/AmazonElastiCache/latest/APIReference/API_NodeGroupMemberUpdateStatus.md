@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # NodeGroupMemberUpdateStatus
-<a name="API_NodeGroupMemberUpdateStatus"></a>
 
 The status of the service update on the node group member
 

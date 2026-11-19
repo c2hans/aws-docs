@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/what-i
 ---
 
 # What is AWS Billing Conductor?
-<a name="what-is-billingconductor"></a>
 
 AWS Billing Conductor is a custom billing service for AWS Channel Partners (Partners) and organizations that have *chargeback* requirements. For Partners, chargebacks are a prerequisite to getting paid by their customers. For direct customers, showback or, chargeback activities ensure that the business allocates the costs of a specific team, business unit, subsidiary or affiliate company, to the correct internal budget or profit and loss (P&L) statement.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListPrincipa
 ---
 
 # ListPrincipalThings
-<a name="API_ListPrincipalThings"></a>
 
 Lists the things associated with the specified principal. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
 

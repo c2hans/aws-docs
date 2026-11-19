@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MicrosoftSQL
 ---
 
 # MicrosoftSQLServerSettings
-<a name="API_MicrosoftSQLServerSettings"></a>
 
 Provides information that defines a Microsoft SQL Server endpoint.
 

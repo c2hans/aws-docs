@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/diy.html
 ---
 
 # .diy
-<a name="diy"></a>
 
 Used for do-it-yourself projects, crafts, and home improvement content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecycleExecutionSnapshotResource
-<a name="API_LifecycleExecutionSnapshotResource"></a>
 
 Contains the state of an impacted snapshot resource that the runtime instance of the lifecycle policy identified for action.
 

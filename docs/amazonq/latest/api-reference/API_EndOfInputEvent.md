@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_EndOfIn
 ---
 
 # EndOfInputEvent
-<a name="API_EndOfInputEvent"></a>
 
 The end of the streaming input for the `Chat` API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # IBM
-<a name="migration-migration-patterns-by-workload-ibm-pattern-list"></a>
 
 **Topics**
 + [Migrate a Db2 database from Amazon EC2 to Aurora MySQL-Compatible by using AWS DMS](migrate-a-db2-database-from-amazon-ec2-to-aurora-mysql-compatible-by-using-aws-dms.md)

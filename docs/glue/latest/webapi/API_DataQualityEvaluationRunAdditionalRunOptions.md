@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityEvalua
 ---
 
 # DataQualityEvaluationRunAdditionalRunOptions
-<a name="API_DataQualityEvaluationRunAdditionalRunOptions"></a>
 
 Additional run options you can specify for an evaluation run.
 

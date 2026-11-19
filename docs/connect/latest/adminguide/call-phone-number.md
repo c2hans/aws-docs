@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/call-phone-num
 ---
 
 # Flow block in Connect Customer: Call phone number
-<a name="call-phone-number"></a>
 
 This topic defines the flow block for the call phone number used for voice interactions with contact center customers.
 
@@ -12,7 +11,7 @@ This topic defines the flow block for the call phone number used for voice inter
 + Use this block to set the caller ID number for an outbound call in an **Outbound Whisper** flow.
 
 **Important**
-To display a custom caller ID, the [Call phone number](#call-phone-number) block must run before any block that plays audio, such as **Play prompt**. This includes audio blocks inside a module run by **Invoke module**. When the outbound whisper flow reaches its first audio block, Connect Customer places the call. If the flow hasn't set the caller ID yet, the call uses the queue's **Outbound caller ID number**, and Connect Customer returns no error.
+To display a custom caller ID, the [Call phone number](call-phone-number.md) block must run before any block that plays audio, such as **Play prompt**. This includes audio blocks inside a module run by **Invoke module**. When the outbound whisper flow reaches its first audio block, Connect Customer places the call. If the flow hasn't set the caller ID yet, the call uses the queue's **Outbound caller ID number**, and Connect Customer returns no error.
 
 ## Supported channels
 <a name="call-phone-number-channels"></a>
@@ -44,9 +43,9 @@ The following image shows an example of what the **Call phone number** propertie
 ![The properties page of the Call phone number block. The Use Attribute option is selected, Namespace is set to User-defined.](https://docs.aws.amazon.com/connect/latest/adminguide/images/call-phone-number2.png)
 
 Outbound whisper flows run in Connect Customer immediately after an agent accepts the call during direct dial and callback scenarios. When the flow runs:
-+ The caller ID number is set if one is specified in the [Call phone number](#call-phone-number) block.
-+ If no caller ID is specified in the [Call phone number](#call-phone-number) block, the caller ID number defined for the queue is used when the call is placed.
-+ When there is an error with a call that is initiated by the [Call phone number](#call-phone-number) block, the call is disconnected and the agent is placed in **AfterContactWork** (ACW).
++ The caller ID number is set if one is specified in the [Call phone number](call-phone-number.md) block.
++ If no caller ID is specified in the [Call phone number](call-phone-number.md) block, the caller ID number defined for the queue is used when the call is placed.
++ When there is an error with a call that is initiated by the [Call phone number](call-phone-number.md) block, the call is disconnected and the agent is placed in **AfterContactWork** (ACW).
 
 Only published flows can be selected as the outbound whisper flow for a queue.
 

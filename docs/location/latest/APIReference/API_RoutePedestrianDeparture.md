@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoutePe
 ---
 
 # RoutePedestrianDeparture
-<a name="API_RoutePedestrianDeparture"></a>
 
 Details corresponding to the departure for a leg.
 

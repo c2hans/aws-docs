@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-c
 ---
 
 # Create a connection to GitHub Enterprise Server (CLI)
-<a name="connections-create-gheserver-cli"></a>
 
 You can use the AWS Command Line Interface (AWS CLI) to create a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Accelerate page loads and optimize visual quality**
 

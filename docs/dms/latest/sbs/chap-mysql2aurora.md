@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-mysql2aurora.html
 ---
 
 # Migrating a MySQL-Compatible Database to Amazon Aurora MySQL
-<a name="chap-mysql2aurora"></a>
 
 If your database supports the InnoDB or MyISAM tablespaces, you have these options for migrating your data to an Amazon Aurora MySQL DB cluster:
 + You can create a dump of your data using the `mysqldump` utility, and then import that data into an existing Amazon Aurora MySQL DB cluster. For more information, see [Migrating MySQL to Amazon Aurora MySQL by Using mysqldump](#chap-mysql2aurora.mysqldump).

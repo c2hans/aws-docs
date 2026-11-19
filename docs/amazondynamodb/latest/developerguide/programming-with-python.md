@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/pro
 ---
 
 # Programming Amazon DynamoDB with Python and Boto3
-<a name="programming-with-python"></a>
 
 This guide provides an orientation to programmers wanting to use Amazon DynamoDB with Python. Learn about the different abstraction layers, configuration management, error handling, controlling retry policies, managing keep-alive, and more.
 

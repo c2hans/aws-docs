@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/EKS-tutorial-p
 ---
 
 # Prerequisites for connecting from Amazon EKS to Amazon Keyspaces
-<a name="EKS-tutorial-prerequisites"></a>
 
 **Create the following AWS resources before you can begin with the tutorial**
 

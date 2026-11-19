@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # Manually recover instances that are not supported by Amazon EC2 Dedicated Host recovery
-<a name="dedicated-hosts-recovery-unsupported"></a>
 
 Host recovery does not support recovering instances that use instance store volumes. Follow the instructions below to manually recover any of your instances that could not be automatically recovered.
 

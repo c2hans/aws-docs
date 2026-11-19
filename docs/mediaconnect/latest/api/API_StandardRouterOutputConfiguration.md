@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardRout
 ---
 
 # StandardRouterOutputConfiguration
-<a name="API_StandardRouterOutputConfiguration"></a>
 
 The configuration settings for a standard router output, including the protocol, protocol-specific configuration, network interface, and availability zone.
 

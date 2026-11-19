@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/dashboard-acce
 ---
 
 # Apply hierarchy-based access control to dashboards and reports in Connect Customer
-<a name="dashboard-access-control"></a>
 
 You can use agent hierarchies to control who has access to view specific agents and their performance related metrics in dashboards and reports.
 

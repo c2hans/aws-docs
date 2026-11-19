@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportCli
 ---
 
 # ImportClientVpnClientCertificateRevocationList
-<a name="API_ImportClientVpnClientCertificateRevocationList"></a>
 
 Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list.
 

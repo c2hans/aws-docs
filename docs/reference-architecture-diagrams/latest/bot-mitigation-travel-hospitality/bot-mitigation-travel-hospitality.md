@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/b
 ---
 
 # Bot Mitigation for Travel and Hospitality
-<a name="bot-mitigation-travel-hospitality"></a>
 
 Publication date: **October 12, 2020 ([Diagram history](#botmit-history))**
 

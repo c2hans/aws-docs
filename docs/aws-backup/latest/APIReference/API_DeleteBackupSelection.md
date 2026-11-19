@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteBackupSelection
-<a name="API_DeleteBackupSelection"></a>
 
 Deletes the resource selection associated with a backup plan that is specified by the `SelectionId`.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # SaaS vs. Managed Service Provider (MSP)
-<a name="saas-vs.-managed-service-provider-msp"></a>
 
  There is also some confusion that surrounds the lines between SaaS and the Managed Service Provider (MSP) models. If you look at an MSP model, it can appear to have some similar goals as the SaaS model.
 

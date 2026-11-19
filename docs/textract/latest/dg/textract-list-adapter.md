@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-list-adapter
 ---
 
 # List adapters
-<a name="textract-list-adapter"></a>
 
 You can list all of the adapters associated with your account by using the [ListAdapters](https://docs.aws.amazon.com/textract/latest/APIReference/API_ListAdapters.html) operation. You can filter the list of returned adapters by the date and time of creation by using the AfterCreationTime and BeforeCreationTime arguments. You can also set a number of maximum results to return using MaxResults.
 

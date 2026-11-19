@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TimeRange
-<a name="API_billing_TimeRange"></a>
 
  Specifies a time range with inclusive begin and end dates.
 

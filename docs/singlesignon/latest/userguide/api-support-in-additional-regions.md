@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/api-suppor
 ---
 
 # IAM Identity Center service APIs supported in additional AWS Regions
-<a name="api-support-in-additional-regions"></a>
 
 | API | Functionality in additional Regions |
 | --- | --- |

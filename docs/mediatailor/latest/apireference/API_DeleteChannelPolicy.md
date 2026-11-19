@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Dele
 ---
 
 # DeleteChannelPolicy
-<a name="API_DeleteChannelPolicy"></a>
 
 The channel policy to delete.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Con
 ---
 
 # DB instance class support for Microsoft SQL Server
-<a name="SQLServer.Concepts.General.InstanceClasses"></a>
 
 The computation and memory capacity of a DB instance is determined by its DB instance class. The DB instance class you need depends on your processing power and memory requirements. For more information, see [DB instance classes](Concepts.DBInstanceClass.md).
 

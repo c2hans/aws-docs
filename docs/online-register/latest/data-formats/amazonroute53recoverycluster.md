@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Route 53 Recovery Cluster
-<a name="amazonroute53recoverycluster"></a>
 
 Amazon Route 53 Recovery Cluster provides the following APIs for data retrieval.
 

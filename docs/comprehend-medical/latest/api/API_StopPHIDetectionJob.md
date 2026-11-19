@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StopPH
 ---
 
 # StopPHIDetectionJob
-<a name="API_StopPHIDetectionJob"></a>
 
 Stops a protected health information (PHI) detection job in progress.
 

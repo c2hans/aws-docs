@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/netwo
 ---
 
 # Generate a presigned request with the WebSocket library
-<a name="network-analyzer-generate-request"></a>
 
 The following shows how you to generate a presigned request so that you can use the WebSocket library to send requests to the service,.
 

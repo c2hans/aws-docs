@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIT.Mult
 ---
 
 # Restoring a Multi-AZ DB cluster to a specified time
-<a name="USER_PIT.MultiAZDBCluster"></a>
 
 You can restore a Multi-AZ DB cluster to a specific point in time, creating a new Multi-AZ DB cluster.
 

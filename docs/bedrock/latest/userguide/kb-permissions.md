@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-permissions.
 ---
 
 # Create a service role for Amazon Bedrock Knowledge Bases
-<a name="kb-permissions"></a>
 
 To use a custom role for a knowledge base instead of the one Amazon Bedrock automatically creates, create an IAM role and attach the following permissions by following the steps at [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html). Include only the necessary permissions for your own security.
 

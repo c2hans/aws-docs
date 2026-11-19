@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StopRx
 ---
 
 # StopRxNormInferenceJob
-<a name="API_StopRxNormInferenceJob"></a>
 
 Stops an InferRxNorm inference job in progress.
 

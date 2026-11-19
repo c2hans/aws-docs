@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TopicRulePay
 ---
 
 # TopicRulePayload
-<a name="API_TopicRulePayload"></a>
 
 Describes a rule.
 

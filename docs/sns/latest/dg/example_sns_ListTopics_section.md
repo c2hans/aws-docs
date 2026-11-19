@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_sns_ListTopics_sec
 ---
 
 # Use `ListTopics` with an AWS SDK or CLI
-<a name="example_sns_ListTopics_section"></a>
 
 The following code examples show how to use `ListTopics`.
 

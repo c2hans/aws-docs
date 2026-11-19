@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-influxdb-
 ---
 
 # Connect to an InfluxDB data source
-<a name="using-influxdb-in-AMG"></a>
 
  Grafana ships with a feature-rich data source plugin for InfluxDB. The plugin includes a custom query editor and supports annotations and query templates.
 

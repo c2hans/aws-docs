@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_FailureIn
 ---
 
 # FailureInfo
-<a name="API_FailureInfo"></a>
 
 An object that contains the failure details about a job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackResource
-<a name="API_StackResource"></a>
 
 The `StackResource` data type.
 

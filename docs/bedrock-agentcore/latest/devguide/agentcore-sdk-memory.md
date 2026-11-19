@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # Amazon Bedrock AgentCore SDK
-<a name="agentcore-sdk-memory"></a>
 
 Use the [Amazon Bedrock AgentCore Python SDK](https://github.com/aws/bedrock-agentcore-sdk-python) for a higher-level abstraction that simplifies memory operations and provides convenient methods for common use cases.
 

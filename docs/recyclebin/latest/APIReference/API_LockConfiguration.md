@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_LockC
 ---
 
 # LockConfiguration
-<a name="API_LockConfiguration"></a>
 
 Information about a retention rule lock configuration.
 

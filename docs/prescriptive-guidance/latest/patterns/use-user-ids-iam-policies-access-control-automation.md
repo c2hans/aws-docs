@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/us
 ---
 
 # Use user IDs in IAM policies for access control and automation
-<a name="use-user-ids-iam-policies-access-control-automation"></a>
 
 *Srinivas Ananda Babu and Ram Kandaswamy, Amazon Web Services*
 

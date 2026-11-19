@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/netwo
 ---
 
 # Add resources and update the network analyzer configuration
-<a name="network-analyzer-resources"></a>
 
 Before you can activate trace messaging, you must add resources to your configuration. You can use only a single, default network analyzer configuration. AWS IoT Core for LoRaWAN assigns the name, **NetworkAnalyzerConfig\_Default**, to this configuration, and this field can't be edited. This configuration is automatically added to your AWS account when you use network analyzer from the console.
 

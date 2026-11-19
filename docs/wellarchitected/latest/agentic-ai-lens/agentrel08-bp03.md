@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL08-BP03 Architect agent systems with resource isolation and contention mitigation
-<a name="agentrel08-bp03"></a>
 
  Shared resource pools let one noisy agent starve the rest. Priority tiers with dedicated resource allocations and contention detection keep user-facing agents responsive even when background workloads spike.
 

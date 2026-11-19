@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS01-BP03 Develop test scenarios that accurately capture failures of dependent components, orchestration protocols, and business processes
-<a name="agentops01-bp03"></a>
 
  Happy-path testing predicts how agents behave when everything works, while failure testing predicts how they behave in the event of unforeseen issues. A resilience posture built on injected failures, deadlock scenarios, and disrupted business processes is the difference between graceful degradation and an unexpected outage.
 

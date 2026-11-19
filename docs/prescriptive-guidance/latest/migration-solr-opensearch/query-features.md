@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Search features
-<a name="query-features"></a>
 
 The following sections discuss some of the Solr search features and their equivalents in OpenSearch in more detail. After migration to OpenSearch, make sure to test all your queries in OpenSearch and compare the results with your Solr-based system. For your search applications, OpenSearch provides both high-level and low-level clients for multiple languages. For more information, see [OpenSearch language clients](https://docs.opensearch.org/latest/clients/) in the OpenSearch documentation.
 

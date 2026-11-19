@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_Container
 ---
 
 # ContainerImage
-<a name="API_ContainerImage"></a>
 
 The container image used to create an Amazon Braket hybrid job.
 

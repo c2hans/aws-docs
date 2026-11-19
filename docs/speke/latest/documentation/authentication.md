@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/authenticatio
 ---
 
 # Authentication required for SPEKE
-<a name="authentication"></a>
 
 SPEKE requires authentication for on-premises products and for services and features that run in the AWS Cloud.
 

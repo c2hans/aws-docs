@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/avg.html
 ---
 
 # $avg
-<a name="avg"></a>
 
 The `$avg` aggregation operator in Amazon DocumentDB calculates the average value of the specified expression across the documents that are input to the stage. This operator is useful for computing the average of a numeric field or expression across a set of documents.
 

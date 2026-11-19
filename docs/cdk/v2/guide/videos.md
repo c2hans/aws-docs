@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/videos.html
 ---
 
 # AWS CDK video resources
-<a name="videos"></a>
 
 Enjoy these videos presented by members of the AWS CDK team.
 

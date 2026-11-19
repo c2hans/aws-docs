@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Plan maintenance windows
-<a name="migrate-split-c-plan-maintenance"></a>
 
 You should plan to perform the cluster migration in several phases.
 

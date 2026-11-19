@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/techref-api-r
 ---
 
 # Device Farm desktop browser testing API
-<a name="techref-api-reference"></a>
 
 The [Device Farm API Reference](https://docs.aws.amazon.com/devicefarm/latest/APIReference/) includes a `CreateProject` action and a `CreateTestGridProject` action. For desktop browser and Selenium testing, the following API calls are used:Project Management APIs
 

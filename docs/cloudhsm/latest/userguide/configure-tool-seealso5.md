@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/configure-tool
 ---
 
 # AWS CloudHSM Client SDK 5 related topics
-<a name="configure-tool-seealso5"></a>
 
 See the following related topics to learn more about the AWS CloudHSM Client SDK 5.
 + [DescribeClusters](https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DescribeClusters.html) API operation

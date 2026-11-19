@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RedshiftSource.ht
 ---
 
 # RedshiftSource
-<a name="API_RedshiftSource"></a>
 
 Specifies an Amazon Redshift data store.
 

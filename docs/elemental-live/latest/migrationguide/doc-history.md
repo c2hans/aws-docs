@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/migrationguide/doc
 ---
 
 # Document history for migration guide
-<a name="doc-history"></a>
 
 The following table describes the main changes to this guide.
 

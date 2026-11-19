@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/ml-seed-dat
 ---
 
 # Seed data requirements for Clean Rooms ML
-<a name="ml-seed-data-requirements"></a>
 
 The seed data for a lookalike model can either come directly from an Amazon S3 bucket or from the results of an SQL query.
 

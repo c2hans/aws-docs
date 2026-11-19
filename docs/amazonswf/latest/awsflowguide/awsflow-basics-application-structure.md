@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/awsflow-ba
 ---
 
 # AWS Flow Framework Basic Concepts: Application Structure
-<a name="awsflow-basics-application-structure"></a>
 
 Conceptually, an AWS Flow Framework application consists of three basic components: *workflow starters*, *workflow workers*, and *activity workers*. One or more host applications are responsible for registering the workers (workflow and activity) with Amazon SWF, starting the workers, and handling cleanup. The workers handle the mechanics of executing the workflow and may be implemented on several hosts.
 

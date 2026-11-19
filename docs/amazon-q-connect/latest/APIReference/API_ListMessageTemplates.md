@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ListMessageTemplates
-<a name="API_amazon-q-connect_ListMessageTemplates"></a>
 
 Lists all the available Amazon Q in Connect message templates for the specified knowledge base.
 

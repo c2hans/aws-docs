@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sms_stats_cloudwatch.html
 ---
 
 # Amazon SNS SMS delivery monitoring with Amazon CloudWatch metrics and logs
-<a name="sms_stats_cloudwatch"></a>
 
 You can use Amazon CloudWatch and Amazon CloudWatch Logs to monitor your SMS message deliveries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_QueryLog
 ---
 
 # QueryLoggingConfig
-<a name="API_QueryLoggingConfig"></a>
 
 A complex type that contains information about a configuration for DNS query logging.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/arch
 ---
 
 # Architecture details
-<a name="architecture-details"></a>
 
  The AWS CloudFormation template deploys three logical components: a front-end web application, orchestration workflows (ingestion and analysis), and data storage. The web application provides an interface for customers to upload media content, and view and manage their archive collection. The ingestion and analysis workflows are initiated when a customer uploads content to the application. The ingestion workflow orchestrates tasks to ingest source videos, images, audio, and documents in a serverless manner. The analysis workflow analyzes and extracts machine learning metadata from content. When you upload a media asset to the Amazon S3 ingestion bucket, the ingestion workflow creates a standardized proxy file and thumbnails for analysis. The analysis workflow analyzes the content and extracts metadata using AWS AI services.
 

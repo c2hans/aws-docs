@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Phase 4: Enabling continuous innovation
-<a name="phase-4"></a>
 
 We recommend you consider your IIoT digital transformation initiative as a journey and not a single project. After defining business KPIs, enabling the organization, establishing the necessary skill sets, and building the blueprint; you increase the pace of innovation and explore more opportunities to build and scale throughout your business. When you have the blueprint running, you have a more transparent and data-driven business that you can monitor and track extensively.
 

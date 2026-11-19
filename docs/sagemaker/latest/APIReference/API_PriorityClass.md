@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Priori
 ---
 
 # PriorityClass
-<a name="API_PriorityClass"></a>
 
 Priority class configuration. When included in `PriorityClasses`, these class configurations define how tasks are queued.
 

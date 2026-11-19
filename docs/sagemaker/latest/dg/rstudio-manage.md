@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-manage.html
 ---
 
 # RStudio on Amazon SageMaker AI management
-<a name="rstudio-manage"></a>
 
  The following topics give information on managing RStudio on Amazon SageMaker AI. This includes information about your RStudio environment configuration, user sessions, and necessary resources. For information on how to use RStudio on SageMaker AI, see [RStudio on Amazon SageMaker AI user guide](rstudio-use.md).
 

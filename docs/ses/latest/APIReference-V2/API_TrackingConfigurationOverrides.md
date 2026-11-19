@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TrackingC
 ---
 
 # TrackingConfigurationOverrides
-<a name="API_TrackingConfigurationOverrides"></a>
 
 An object that overrides, for a single email sending request, the engagement tracking settings that would otherwise apply. Use these overrides to turn open tracking or click tracking on or off for an individual message, for example to suppress tracking in a transactional message that you send from an account or a configuration set that has tracking enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-data-inventory.
 ---
 
 # Create an inventory of your EBS volumes
-<a name="ebs-data-inventory"></a>
 
 Amazon EBS provides scalable, high-performance block storage resources that can be used with EC2 instances. You can attach an EBS volume to an EC2 instance. You can also detach an EBS volume from an EC2 instance.
 

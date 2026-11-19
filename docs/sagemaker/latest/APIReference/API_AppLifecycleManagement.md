@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AppLif
 ---
 
 # AppLifecycleManagement
-<a name="API_AppLifecycleManagement"></a>
 
 Settings that are used to configure and manage the lifecycle of Amazon SageMaker Studio applications.
 

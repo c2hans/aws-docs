@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Prepare your input dataset
-<a name="advanced-prompt-optimization-input"></a>
 
 **Note**
 Fully working examples and notebooks are available in the [Amazon Bedrock Samples GitHub](https://github.com/aws-samples/amazon-bedrock-samples/tree/main/advanced-prompt-optimization).

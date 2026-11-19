@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_auth_AssumeR
 ---
 
 # AssumeRoleForPodIdentity
-<a name="API_auth_AssumeRoleForPodIdentity"></a>
 
 The Amazon EKS Auth API and the `AssumeRoleForPodIdentity` action are only used by the EKS Pod Identity Agent.
 

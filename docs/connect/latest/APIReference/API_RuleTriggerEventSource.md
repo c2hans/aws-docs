@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleTrig
 ---
 
 # RuleTriggerEventSource
-<a name="API_RuleTriggerEventSource"></a>
 
 The name of the event source. This field is required if `TriggerEventSource` is one of the following values: `OnZendeskTicketCreate` \| `OnZendeskTicketStatusUpdate` \| `OnSalesforceCaseCreate` \| `OnContactEvaluationSubmit` \| `OnMetricDataUpdate`.
 

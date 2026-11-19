@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Up
 ---
 
 # UpdateSubscriber
-<a name="API_UpdateSubscriber"></a>
 
 Updates an existing subscription for the given Amazon Security Lake account ID. You can update a subscriber by changing the sources that the subscriber consumes data from.
 

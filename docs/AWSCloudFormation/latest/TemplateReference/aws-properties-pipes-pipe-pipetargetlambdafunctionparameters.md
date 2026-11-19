@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeTargetLambdaFunctionParameters
-<a name="aws-properties-pipes-pipe-pipetargetlambdafunctionparameters"></a>
 
 The parameters for using a Lambda function as a target.
 

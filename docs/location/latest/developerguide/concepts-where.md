@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/concepts-
 ---
 
 # Where (origin, destination, waypoint, and traces)
-<a name="concepts-where"></a>
 
 Specifies the location for route calculation, including where the route starts, ends, and intermediate stops (or locations to be passed through).
 

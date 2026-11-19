@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/querying-s3Tables.htm
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Query Amazon S3 Tables from Amazon Redshift
-<a name="querying-s3Tables"></a>
 
 Amazon Redshift integrates with Amazon S3 table buckets, so you can access S3 table resources using Amazon Redshift. Whether you are just getting started or managing thousands of tables in your Iceberg environment, table buckets simplify data lake management at any scale. For more information, see [Table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets.html).
 

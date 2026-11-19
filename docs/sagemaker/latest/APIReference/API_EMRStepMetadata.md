@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EMRSte
 ---
 
 # EMRStepMetadata
-<a name="API_EMRStepMetadata"></a>
 
 The configurations and outcomes of an Amazon EMR step execution.
 

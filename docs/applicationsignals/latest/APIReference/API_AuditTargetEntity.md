@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # AuditTargetEntity
-<a name="API_AuditTargetEntity"></a>
 
 A union structure that contains the specific entity information for different types of audit targets.
 

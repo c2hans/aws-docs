@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Cer
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 Information about the certificate.
 

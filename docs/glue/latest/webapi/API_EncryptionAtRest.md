@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_EncryptionAtRest.
 ---
 
 # EncryptionAtRest
-<a name="API_EncryptionAtRest"></a>
 
 Specifies the encryption-at-rest configuration for the Data Catalog.
 

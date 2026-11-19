@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # RegistryRecordIamCredentialProvider
-<a name="API_RegistryRecordIamCredentialProvider"></a>
 
 The configuration for an IAM role credential provider that signs requests to a registry record's source with AWS Signature Version 4 (SigV4).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Js
 ---
 
 # JsonataConfiguration
-<a name="API_JsonataConfiguration"></a>
 
 JSONata transform settings for a subscriber.
 

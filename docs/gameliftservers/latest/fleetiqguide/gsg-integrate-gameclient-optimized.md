@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 ---
 
 # Choose your own game server
-<a name="gsg-integrate-gameclient-optimized"></a>
 
 With the "list and pick" method, your game client or matchmaker requests a list of available game servers by calling [ListGameServers()](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListGameServers.html). You might want to use game server data to provide additional information that players or your matchmaker can use when selecting a game server. To control how results are returned, you can request paginated results and sort game servers by registration date. The following request returns 20 active and available game servers in the specified game server group, sorted by registration time with the newest game servers listed first.
 

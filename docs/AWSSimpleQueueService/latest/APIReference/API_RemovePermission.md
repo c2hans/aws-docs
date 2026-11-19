@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # RemovePermission
-<a name="API_RemovePermission"></a>
 
 Revokes any permissions in the queue policy that matches the specified `Label` parameter.
 

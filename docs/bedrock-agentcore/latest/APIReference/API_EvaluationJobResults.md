@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EvaluationJobResults
-<a name="API_EvaluationJobResults"></a>
 
 Aggregated results from a batch evaluation, including session completion counts and evaluator score summaries.
 

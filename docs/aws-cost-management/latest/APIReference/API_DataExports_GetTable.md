@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetTable
-<a name="API_DataExports_GetTable"></a>
 
 Returns the metadata for the specified table and table properties. This includes the list of columns in the table schema, their data types, and column descriptions.
 

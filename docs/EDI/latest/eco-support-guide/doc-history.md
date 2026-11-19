@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/doc-history
 ---
 
 # Document history for EDI Cloud Operations Support Guide
-<a name="doc-history"></a>
 
 | Change | Description | Date |
 | --- |--- |--- |

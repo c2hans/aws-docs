@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AcceptChannelHandshakeDetail
-<a name="API_channel_AcceptChannelHandshakeDetail"></a>
 
 Contains details about an accepted channel handshake.
 

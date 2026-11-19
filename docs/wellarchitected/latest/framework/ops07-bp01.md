@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops07-b
 ---
 
 # OPS07-BP01 Perform post-incident analysis
-<a name="ops07-bp01"></a>
 
  A structured post-incident analysis examines the contributing factors behind a customer-impacting event and converts those findings into changes that reduce the chance of recurrence.
 

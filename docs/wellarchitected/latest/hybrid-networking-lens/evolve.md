@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # Evolve
-<a name="evolve"></a>
 
  Organizations must continuously evolve their infrastructure management approaches. This evolution requires implementing monitoring systems that provide real-time visibility across on-premises and cloud environments, establishing standardized processes for network changes, and regularly updating runbooks to reflect the latest architectural modifications.
 

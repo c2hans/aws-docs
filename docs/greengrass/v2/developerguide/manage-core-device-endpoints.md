@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-core
 ---
 
 # Manage core device endpoints
-<a name="manage-core-device-endpoints"></a>
 
 When you use cloud discovery, you store MQTT broker endpoints for core devices in the AWS IoT Greengrass cloud service. Client devices connect to AWS IoT Greengrass to retrieve these endpoints and other information for their associated core devices.
 

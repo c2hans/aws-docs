@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_De
 ---
 
 # DeleteAppMonitor
-<a name="API_DeleteAppMonitor"></a>
 
 Deletes an existing app monitor. This immediately stops the collection of data.
 

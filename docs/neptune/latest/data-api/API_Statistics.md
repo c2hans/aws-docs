@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_Statistics.h
 ---
 
 # Statistics
-<a name="API_Statistics"></a>
 
 Contains statistics information. The DFE engine uses information about the data in your Neptune graph to make effective trade-offs when planning query execution. This information takes the form of statistics that include so-called characteristic sets and predicate statistics that can guide query planning. See [Managing statistics for the Neptune DFE to use](https://docs.aws.amazon.com/neptune/latest/userguide/neptune-dfe-statistics.html).
 

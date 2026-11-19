@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetPaymentManager
-<a name="API_GetPaymentManager"></a>
 
 Retrieves information about a specific payment manager.
 

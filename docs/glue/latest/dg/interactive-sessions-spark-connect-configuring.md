@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-spar
 ---
 
 # Configuring AWS Glue interactive sessions
-<a name="interactive-sessions-spark-connect-configuring"></a>
 
 Before you connect to a AWS Glue interactive session using Spark Connect, you must configure the session with the appropriate settings.
 

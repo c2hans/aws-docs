@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_De
 ---
 
 # Details
-<a name="API_Details"></a>
 
 Information about the job error.
 

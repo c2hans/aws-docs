@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # KeyConfigurationType
-<a name="API_KeyConfigurationType"></a>
 
 Specifies the key configuration for a user pool. Contains settings for encryption keys used to secure user pool data.
 

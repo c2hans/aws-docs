@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListConfigurationBundles
-<a name="API_ListConfigurationBundles"></a>
 
 Lists all configuration bundles in the account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotFilter.
 ---
 
 # BotFilter
-<a name="API_BotFilter"></a>
 
 Filters the responses returned by the `ListBots` operation.
 

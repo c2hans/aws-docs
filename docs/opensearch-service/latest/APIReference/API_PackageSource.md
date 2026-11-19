@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PackageSource
-<a name="API_PackageSource"></a>
 
 The Amazon S3 location to import the package from.
 

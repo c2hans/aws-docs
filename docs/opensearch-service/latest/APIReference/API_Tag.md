@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag (key-value pair) for an Amazon OpenSearch Service resource.
 

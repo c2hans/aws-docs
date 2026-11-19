@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_UserS
 ---
 
 # UserStackAssociationError
-<a name="API_UserStackAssociationError"></a>
 
 Describes the error that is returned when a user can’t be associated with or disassociated from a stack.
 

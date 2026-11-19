@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-touchtone-
 ---
 
 # Flow block in Connect Customer: Set Touchtone Buffer Behavior
-<a name="set-touchtone-buffer-behavior"></a>
 
 ## Description
 <a name="set-touchtone-buffer-behavior-description"></a>

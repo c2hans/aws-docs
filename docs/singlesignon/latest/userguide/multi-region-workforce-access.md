@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-regi
 ---
 
 # Workforce access through an additional Region
-<a name="multi-region-workforce-access"></a>
 
  This section explains how your workforce can access the AWS access portal, AWS accounts, and applications when you have enabled IAM Identity Center in multiple Regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/pools-image
 ---
 
 # Use session scripts to manage your users' streaming experience
-<a name="pools-images-session-scripts"></a>
 
 WorkSpaces Pool provides on-instance session scripts. You can use these scripts to run your own custom scripts when specific events occur in users' streaming sessions. For example, you can use custom scripts to prepare your WorkSpaces Pools environment before your users' streaming sessions begin. You can also use custom scripts to clean up streaming instances after users complete their streaming sessions.
 

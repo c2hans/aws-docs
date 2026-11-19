@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evalua
 ---
 
 # Evaluators
-<a name="evaluators"></a>
 
 Evaluators are the core components that assess your agent’s performance across different dimensions. They analyze agent traces and provide quantitative scores based on specific criteria such as helpfulness, accuracy, or custom business metrics. AgentCore Evaluations offers built-in evaluators for common use cases and third-party evaluators from open source evaluation libraries. You can also create custom evaluators tailored to your specific requirements.
 

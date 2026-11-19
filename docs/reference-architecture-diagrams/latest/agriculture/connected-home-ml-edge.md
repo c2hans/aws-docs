@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Connected Home: Machine Learning at the Edge
-<a name="connected-home-ml-edge"></a>
 
 Publication date: **July 13, 2021 ([Diagram history](diagram-history.md))**
 

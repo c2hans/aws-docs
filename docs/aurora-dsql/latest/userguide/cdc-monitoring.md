@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/cdc-monitor
 ---
 
 # Monitoring streams
-<a name="cdc-monitoring"></a>
 
 When Aurora DSQL encounters an error delivering a CDC record, the stream transitions to `IMPAIRED` status. An impaired stream continues to process and deliver other records—Aurora DSQL retries only the failing record. Aurora DSQL measures replication lag from the oldest undelivered record, and the lag grows until you resolve the issue. Aurora DSQL retains undelivered changes internally for one week.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Admin
 ---
 
 # AdminAppLicenseUsageRecord
-<a name="API_AdminAppLicenseUsageRecord"></a>
 
 The collection of license usage records.
 

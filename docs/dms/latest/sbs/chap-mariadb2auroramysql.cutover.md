@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-mariadb2auroramysql.
 ---
 
 # Cut over for the migration from a MariaDB database
-<a name="chap-mariadb2auroramysql.cutover"></a>
 
 After the data validation is complete and any problems resolved, you can load the database triggers, functions, and procedures.
 

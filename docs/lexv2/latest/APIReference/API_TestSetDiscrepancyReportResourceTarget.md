@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetDis
 ---
 
 # TestSetDiscrepancyReportResourceTarget
-<a name="API_TestSetDiscrepancyReportResourceTarget"></a>
 
 Contains information about the resource used for the test set discrepancy report.
 

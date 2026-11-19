@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/add-sagemaker-
 ---
 
 # Add Amazon SageMaker as a trusted service in the associated AWS account
-<a name="add-sagemaker-as-trusted-service-associate"></a>
 
 If you've enabled the Amazon SageMaker blueprint, you must also add SageMaker as one of the trusted services within Amazon DataZone. To do this, complete the following procedure:
 

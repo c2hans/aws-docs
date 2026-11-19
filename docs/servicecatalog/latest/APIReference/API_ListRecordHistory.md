@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListRecordHistory
-<a name="API_ListRecordHistory"></a>
 
 Lists the specified requests or all performed requests.
 

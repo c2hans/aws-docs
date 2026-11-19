@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchL
 ---
 
 # Amazon CloudWatch Logs concepts
-<a name="CloudWatchLogsConcepts"></a>
 
 The terminology and concepts that are central to your understanding and use of CloudWatch Logs are described below.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_NetworkCon
 ---
 
 # NetworkConnectorVpcEgressConfiguration
-<a name="API_NetworkConnectorVpcEgressConfiguration"></a>
 
 Configuration for a VPC egress network connector. Specifies the VPC subnets, security groups, network protocol, and associated Lambda compute resource types.
 

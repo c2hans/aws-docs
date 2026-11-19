@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # UpdateDictionary
-<a name="API_UpdateDictionary"></a>
 
 Updates the specified dictionary.
 

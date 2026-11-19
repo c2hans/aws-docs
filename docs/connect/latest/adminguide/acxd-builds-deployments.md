@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-builds-de
 ---
 
 # Builds and deployments
-<a name="acxd-builds-deployments"></a>
 
 Builds and deployments are related but are not the same thing.
 

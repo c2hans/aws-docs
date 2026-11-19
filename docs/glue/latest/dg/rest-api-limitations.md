@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rest-api-limitations.html
 ---
 
 # Limitations
-<a name="rest-api-limitations"></a>
 
 The following are limitations for the REST API connector
 +  REST API connector is only available through the AWS API, CLI, or SDK. You cannot configure REST connectors through the console.

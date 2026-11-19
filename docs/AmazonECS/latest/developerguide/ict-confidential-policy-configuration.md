@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-conf
 ---
 
 # Confidential policy configuration
-<a name="ict-confidential-policy-configuration"></a>
 
 A confidential task's attestation policy defines what the parent is allowed to do when communicating with the Nitro Sandbox: container admission (which containers can start and with what settings), runtime operations (task exec, log streaming), and service access (instance metadata, task credentials). You supply it as the `attestationPolicy` field of the task definition's `TrustedExecutionConfiguration`. The ECS sandbox agent enforces the policy; the parent instance cannot bypass it.
 

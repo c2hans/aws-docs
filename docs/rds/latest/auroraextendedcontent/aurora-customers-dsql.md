@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Aurora DSQL
-<a name="aurora-customers-dsql"></a>
 
 ## Shenzhen Hexinzhilian Technology Development Co., Ltd.
 <a name="aurora-customers-shenzhen-hexinzhilian"></a>

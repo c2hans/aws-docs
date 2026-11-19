@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/diagnose-manifest-
 ---
 
 # Diagnose CDN manifest delivery issues and errors for MediaTailor
-<a name="diagnose-manifest-issues"></a>
 
 AWS Elemental MediaTailor content delivery network (CDN) manifest delivery problems can prevent proper ad insertion and playback. If viewers receive incorrect or inconsistent ads in multivariant playlists, media playlists, or MPDs:
 

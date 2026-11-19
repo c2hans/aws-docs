@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/outputs-cer-async.h
 ---
 
 # Outputs for asynchronous analysis jobs
-<a name="outputs-cer-async"></a>
 
 After an analysis job completes, it stores the results in the S3 bucket that you specified in the request.
 

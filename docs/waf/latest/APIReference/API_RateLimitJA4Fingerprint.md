@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RateLimitJA4
 ---
 
 # RateLimitJA4Fingerprint
-<a name="API_RateLimitJA4Fingerprint"></a>
 
 Use the request's JA4 fingerprint derived from the TLS Client Hello of an incoming request as an aggregate key. If you use a single JA4 fingerprint as your custom key, then each value fully defines an aggregation instance.
 

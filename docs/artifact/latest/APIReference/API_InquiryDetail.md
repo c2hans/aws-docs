@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Inquiry
 ---
 
 # InquiryDetail
-<a name="API_InquiryDetail"></a>
 
 Detailed information about a compliance inquiry.
 

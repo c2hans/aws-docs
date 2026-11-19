@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-part
 ---
 
 # Partition API
-<a name="aws-glue-api-catalog-partitions"></a>
 
 The Partition API describes data types and operations used to work with partitions.
 

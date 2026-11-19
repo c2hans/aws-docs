@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetIPS
 ---
 
 # GetIPSet
-<a name="API_GetIPSet"></a>
 
 Retrieves the IPSet specified by the `ipSetId`.
 

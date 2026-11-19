@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # NotificationRule
-<a name="API_NotificationRule"></a>
 
 Single notification rule: which transitions trigger this rule and where the resulting notification should be sent.
 

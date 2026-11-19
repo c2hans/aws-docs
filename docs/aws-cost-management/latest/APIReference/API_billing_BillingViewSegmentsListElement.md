@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingViewSegmentsListElement
-<a name="API_billing_BillingViewSegmentsListElement"></a>
 
  A billing view segment. A segment represents a time range during which the billing domain and account relationships for a billing view remained unchanged.
 

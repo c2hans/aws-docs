@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteBudget
-<a name="API_budgets_DeleteBudget"></a>
 
 Deletes a budget. You can delete your budget at any time.
 

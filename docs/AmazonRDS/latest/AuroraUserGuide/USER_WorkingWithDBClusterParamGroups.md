@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Wo
 ---
 
 # DB cluster parameter groups for Amazon Aurora DB clusters
-<a name="USER_WorkingWithDBClusterParamGroups"></a>
 
 Amazon Aurora DB clusters use DB cluster parameter groups. The following sections describe configuring and managing DB cluster parameter groups.
 

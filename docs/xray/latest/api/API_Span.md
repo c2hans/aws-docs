@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_Span.html
 ---
 
 # Span
-<a name="API_Span"></a>
 
  A span from a trace that has been ingested by the X-Ray service. A span represents a unit of work or an operation performed by a service.
 

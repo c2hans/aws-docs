@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/update-cont
 ---
 
 # Updating product information for your container product on AWS Marketplace
-<a name="update-container-product-info"></a>
 
 After you create your product ID and set the pricing, you can edit your product information, including what customers will see about your container product in the AWS Marketplace. For example, if a new version modifies the description or highlights of the product, you can edit the product information with the new data. You can also update other product information, including product title, SKU description, categories, keywords, and others. The following procedure outlines creating the product details for your product.
 

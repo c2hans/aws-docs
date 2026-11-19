@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/monitor-throughput
 ---
 
 # Monitoring in the Amazon FSx console
-<a name="monitor-throughput-cloudwatch"></a>
 
 The CloudWatch metrics reported by Amazon FSx provide valuable information about your FSx for ONTAP file systems and volumes.
 

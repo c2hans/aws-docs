@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/limits.html
 ---
 
 # Service quotas on Amazon FSx for OpenZFS resources
-<a name="limits"></a>
 
 FSx for OpenZFS has default AWS account and file system resource quotas. The following sections contain information on these quotas as well as how to request an increase from the default limit.
 

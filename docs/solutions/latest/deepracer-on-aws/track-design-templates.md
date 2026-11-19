@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/track-
 ---
 
 # Track design templates
-<a name="track-design-templates"></a>
 
 The following track design templates show AWS DeepRacer tracks that you can build by following the instructions presented in this section.
 

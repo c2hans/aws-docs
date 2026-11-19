@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Numeric Functions
-<a name="sql-reference-numeric-functions"></a>
 
 The topics in this section describe the numeric functions for Amazon Kinesis Data Analytics streaming SQL.
 

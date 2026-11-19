@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agent-ops-m
 ---
 
 # Implementation roadmap
-<a name="implementation-roadmap"></a>
 
 The following phased roadmap reflects realistic timelines for a greenfield deployment. Organizations integrating with an existing landing zone should reduce Phase 1 to days, not weeks, because the management and security account infrastructure already exists.
 
@@ -43,7 +42,7 @@ The following phased roadmap reflects realistic timelines for a greenfield deplo
 1. Deploy the staging gateway account in the Gateway OU.
 
 ## Phase 4: Production Readiness (Weeks 6 to 8)
-<a name="phase-4--production-readiness--weeks-6-to-8-.7c05a995-2db8-565f-9d0e-3e0cbe162cb2"></a>
+<a name="phase-4--production-readiness--weeks-6-to-8-.08283d65-971f-52b8-b559-df353af7b10c"></a>
 
 1. Deploy the staging and production accounts.
 
@@ -54,5 +53,3 @@ The following phased roadmap reflects realistic timelines for a greenfield deplo
 1. Deploy the production gateway account.
 
 1. Deploy the data lake account if RAG or analytics requirements warrant it. This account can be deferred until workload data volumes justify the operational overhead.
-
-The infrastructure-as-code implementation for this architecture is available in the [companion GitHub repository](https://github.com/aws-solutions-library-samples/guidance-for-enterprise-agentic-ai-platform-on-aws). The repository demonstrates the multi-account structure, service placement across accounts, and the CI/CD pipeline for agent promotion between environments. It serves as the implementation companion for this guide.

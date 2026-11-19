@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Li
 ---
 
 # ListTags
-<a name="API_ListTags"></a>
 
 Lists the tags for the specified trails, event data stores, dashboards, or channels in the current Region.
 

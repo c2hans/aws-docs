@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # MetricDataQuery
-<a name="API_MetricDataQuery"></a>
 
 Use this structure to define a metric or metric math expression that you want to use as for a service level objective.
 

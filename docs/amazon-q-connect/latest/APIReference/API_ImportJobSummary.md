@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ImportJobSummary
-<a name="API_amazon-q-connect_ImportJobSummary"></a>
 
 Summary information about the import job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/service_co
 ---
 
 # Basic examples for Amazon Cognito Identity Provider using AWS SDKs
-<a name="service_code_examples_cognito-identity-provider_basics"></a>
 
 The following code examples show how to use the basics of Amazon Cognito Identity Provider with AWS SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-model-pa
 ---
 
 # Checkpointing and Fine-Tuning a Model with Model Parallelism
-<a name="distributed-model-parallel-checkpointing-and-finetuning"></a>
 
 The SageMaker model parallelism library provides checkpointing APIs to save the model state and the optimizer state split by the various model parallelism strategies, and to load checkpoints for continuous training from where you want to restart training and fine-tune. The APIs also support options to save the model and optimizer states partially or fully.
 

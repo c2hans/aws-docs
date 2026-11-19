@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ManagedQu
 ---
 
 # ManagedQueryResultsConfigurationUpdates
-<a name="API_ManagedQueryResultsConfigurationUpdates"></a>
 
 Updates the configuration for managed query results.
 

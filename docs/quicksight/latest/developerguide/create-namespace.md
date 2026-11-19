@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/create-
 ---
 
 # CreateNamespace
-<a name="create-namespace"></a>
 
 Use the `CreateNamespace` API operation to create a new namespace for you to use with AWS Quick Sight.
 

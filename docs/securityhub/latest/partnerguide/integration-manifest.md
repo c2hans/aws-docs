@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/partnerguide/integrat
 ---
 
 # Product integration manifest
-<a name="integration-manifest"></a>
 
 Every AWS Security Hub CSPM integration partner must complete a product integration manifest that provides the required details for the proposed integration.
 

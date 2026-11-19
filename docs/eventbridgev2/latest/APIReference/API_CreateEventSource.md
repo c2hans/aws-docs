@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Cr
 ---
 
 # CreateEventSource
-<a name="API_CreateEventSource"></a>
 
 Creates an EventSource, which forwards events from an origin (an AWS service or another account) onto an event bus. The bus must be ACTIVE. Retries carrying the same ClientToken are idempotent.
 

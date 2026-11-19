@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/assurance-assistant-g
 ---
 
 # Glossary
-<a name="assurance-assistant-glossary"></a>
 
 | Term | Definition |
 | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetTransformer
-<a name="API_GetTransformer"></a>
 
 Returns the information about the log transformer associated with this log group.
 

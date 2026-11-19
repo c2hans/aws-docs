@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_u
 ---
 
 # Understanding the Amazon S3 Storage Lens export schemas
-<a name="storage_lens_understanding_metrics_export_schema"></a>
 
 S3 Storage Lens export schemas vary depending on your export destination. Choose the appropriate schema based on whether you're exporting to S3 general purpose buckets or S3 tables.
 

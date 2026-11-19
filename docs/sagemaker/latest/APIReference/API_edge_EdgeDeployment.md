@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_edge_E
 ---
 
 # EdgeDeployment
-<a name="API_edge_EdgeDeployment"></a>
 
 Information about a deployment on an edge device that is registered with SageMaker Edge Manager.
 

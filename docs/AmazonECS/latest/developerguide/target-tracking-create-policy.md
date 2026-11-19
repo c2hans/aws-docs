@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/target-t
 ---
 
 # Create a target tracking scaling policy for Amazon ECS service auto scaling
-<a name="target-tracking-create-policy"></a>
 
 Create a target tracking scaling policy to have Amazon ECS increase or decrease the desired task count in your service automatically. Target tracking works off of a target metric value.
 

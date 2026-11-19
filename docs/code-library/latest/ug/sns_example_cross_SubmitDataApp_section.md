@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sns_example_cross
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Build an application to submit data to a DynamoDB table
-<a name="sns_example_cross_SubmitDataApp_section"></a>
 
 The following code examples show how to build an application that submits data to an Amazon DynamoDB table and notifies you when a user updates the table.
 

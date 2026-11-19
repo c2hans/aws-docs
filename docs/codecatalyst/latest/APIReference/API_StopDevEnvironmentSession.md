@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Sto
 ---
 
 # StopDevEnvironmentSession
-<a name="API_StopDevEnvironmentSession"></a>
 
 Stops a session for a specified Dev Environment.
 

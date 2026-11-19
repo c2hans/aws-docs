@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksSeccomp
 ---
 
 # EksSeccompProfile
-<a name="API_EksSeccompProfile"></a>
 
 The Linux seccomp profile for a pod or container. For more information, see [Restrict a Container's Syscalls with seccomp](https://kubernetes.io/docs/tutorials/security/seccomp/) in the *Kubernetes documentation*.
 

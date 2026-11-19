@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-act
 ---
 
 # UpdateRoutingCriteria
-<a name="flow-control-actions-updateroutingcriteria"></a>
 
 Sets the routing criteria for the contact.
 

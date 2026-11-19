@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetRelationship
-<a name="API_channel_GetRelationship"></a>
 
 Retrieves details of a specific partner relationship.
 

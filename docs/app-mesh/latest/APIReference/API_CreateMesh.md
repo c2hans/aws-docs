@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateM
 ---
 
 # CreateMesh
-<a name="API_CreateMesh"></a>
 
 Creates a service mesh.
 

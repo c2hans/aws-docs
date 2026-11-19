@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023
 ---
 
 # Amazon Linux 2023 version 2023.0.20230315 (GA) release notes
-<a name="relnotes-2023.0.20230315"></a>
 
 This topic includes release notes for the first General Availability (GA) version of Amazon Linux 2023 (AL2023). These release notes are for the 2023.0.20230315 version of AL2023.
 

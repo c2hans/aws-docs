@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListIngestionJobs
-<a name="API_agent_ListIngestionJobs"></a>
 
 Lists the data ingestion jobs for a data source. The list also includes information about each job.
 

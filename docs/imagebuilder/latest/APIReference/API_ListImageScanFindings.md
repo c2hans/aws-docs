@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListImageScanFindings
-<a name="API_ListImageScanFindings"></a>
 
 Returns a list of image scan findings for your account. Amazon Inspector generates the findings when it scans images that have scanning enabled.
 

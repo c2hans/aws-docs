@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Strin
 ---
 
 # StringParameterDeclaration
-<a name="API_StringParameterDeclaration"></a>
 
 A parameter declaration for the `String` data type.
 

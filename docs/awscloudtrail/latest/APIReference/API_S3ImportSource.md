@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_S3
 ---
 
 # S3ImportSource
-<a name="API_S3ImportSource"></a>
 
  The settings for the source S3 bucket.
 

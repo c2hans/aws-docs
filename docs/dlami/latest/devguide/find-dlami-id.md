@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/find-dlami-id.html
 ---
 
 # Finding the ID of a DLAMI
-<a name="find-dlami-id"></a>
 
 Each DLAMI has a unique identifier (ID). When you launch a DLAMI instance using the Amazon EC2 console, you can optionally use the DLAMI ID to search for the DLAMI that you want to use. When you launch a DLAMI instance using the AWS Command Line Interface (AWS CLI), this ID is required.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedRuleG
 ---
 
 # ManagedRuleGroupVersion
-<a name="API_ManagedRuleGroupVersion"></a>
 
 Describes a single version of a managed rule group.
 

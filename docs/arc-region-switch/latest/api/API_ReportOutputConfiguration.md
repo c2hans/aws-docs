@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ReportO
 ---
 
 # ReportOutputConfiguration
-<a name="API_ReportOutputConfiguration"></a>
 
 Configuration for report output destinations used in a Region switch plan.
 

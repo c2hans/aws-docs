@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_SwitchoverAu
 ---
 
 # SwitchoverAutonomousDatabase
-<a name="API_SwitchoverAutonomousDatabase"></a>
 
 Performs a switchover of the specified Autonomous Database to a standby peer database.
 

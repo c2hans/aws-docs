@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/Welc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application.
 
@@ -13,4 +12,4 @@ For a description of the authentication flow from the Amazon Cognito Developer G
 
 For more information see [Amazon Cognito Federated Identities](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

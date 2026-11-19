@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/data-types-examples.htm
 ---
 
 # Data type examples
-<a name="data-types-examples"></a>
 
 The following table shows example literals for DML data types.
 

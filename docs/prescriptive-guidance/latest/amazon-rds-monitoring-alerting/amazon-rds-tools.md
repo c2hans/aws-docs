@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Tools included in Amazon RDS
-<a name="amazon-rds-tools"></a>
 
 Amazon Relational Database Service (Amazon RDS) is a managed database service in the AWS Cloud. Because Amazon RDS is a managed service, it frees you from most management tasks, such as database backups, operating system (OS) and database software installations, OS and software patching, high availability setup, hardware lifecycle, and data center operations. AWS also provides a comprehensive set of tools that enable you to build a complete [observability](https://aws.amazon.com/products/management-and-governance/use-cases/monitoring-and-observability/) solution for your Amazon RDS DB instances.
 

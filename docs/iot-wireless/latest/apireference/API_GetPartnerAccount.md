@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetPartnerAccount
-<a name="API_GetPartnerAccount"></a>
 
 Gets information about a partner account. If `PartnerAccountId` and `PartnerType` are `null`, returns all partner accounts.
 

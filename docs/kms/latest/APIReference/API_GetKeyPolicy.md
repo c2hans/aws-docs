@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyPolicy
 ---
 
 # GetKeyPolicy
-<a name="API_GetKeyPolicy"></a>
 
 Gets a key policy attached to the specified KMS key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # AppflowIntegration
-<a name="API_connect-customer-profiles_AppflowIntegration"></a>
 
 Details for workflow of type `APPFLOW_INTEGRATION`.
 

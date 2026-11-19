@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 21.1 - Understand and influence business requirements to make sustainability-centric SAP design decisions
-<a name="best-practice-21.1"></a>
 
  Business leaders and SAP architecture teams must make conscious decisions to design their SAP environments in a more sustainable fashion. They must understand and justify the rationale behind those choices. If business leaders cannot describe what tradeoffs they must make in the language of sustainability and energy efficiency, they will have difficulty making decisions based on those criteria.
 

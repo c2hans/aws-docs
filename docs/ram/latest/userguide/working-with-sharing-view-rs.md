@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharin
 ---
 
 # Viewing resource shares you created in AWS RAM
-<a name="working-with-sharing-view-rs"></a>
 
 You can view a list of the resource shares that you have created. You can see which resources you're sharing and the principals with whom they're shared.
 

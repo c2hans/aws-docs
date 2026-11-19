@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_iot_kine
 ---
 
 # aws-iot-kinesisstreams
-<a name="aws_iot_kinesisstreams"></a>
 
 ![Stability:Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
 

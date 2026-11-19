@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateE
 ---
 
 # CreateEnvironmentBlueprint
-<a name="API_CreateEnvironmentBlueprint"></a>
 
 Creates a Amazon DataZone blueprint.
 

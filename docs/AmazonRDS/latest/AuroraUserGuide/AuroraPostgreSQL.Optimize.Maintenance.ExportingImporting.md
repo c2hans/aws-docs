@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Exporting and importing managed plans for Aurora PostgreSQL
-<a name="AuroraPostgreSQL.Optimize.Maintenance.ExportingImporting"></a>
 
 You can export your managed plans and import them into another DB instance.
 

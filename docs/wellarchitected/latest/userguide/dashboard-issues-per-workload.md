@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/dashboa
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Well-Architected Framework issues per workload
-<a name="dashboard-issues-per-workload"></a>
 
 The **Well-Architected Framework issues per workload** section displays information for each workload.
 

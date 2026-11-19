@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/migration-to
 ---
 
 # Prerequisites and limitations for online migration to ElastiCache Serverless
-<a name="migration-to-serverless-prerequisites"></a>
 
 Before you start an online migration, confirm that your source cache and your target cache meet the following requirements. ElastiCache checks these requirements when you prepare the migration and checks some of them again when you start the data sync. If a requirement is not met, the step fails. ElastiCache reports a failure event on the cache that names the requirement. If the prepare step fails, ElastiCache rolls back the migration, removes the `Migration` object and returns your cache to `available`. Correct the requirement, then try again.
 
@@ -72,7 +71,7 @@ ElastiCache connects to your source from the VPC of your target cache. Confirm t
 + Your source nodes must listen on addresses that this VPC can reach. The default Valkey and Redis OSS configuration file binds to `127.0.0.1`, which accepts only local connections, so bind each node to its private IP address. Each node must also report a reachable address in its cluster topology, because ElastiCache discovers the rest of your nodes from the first one.
 + For the security group rule, allow inbound TCP traffic on your source port from the security group of your target cache, or from the IPv4 CIDR ranges of its subnets.
 + For the source address, enter the private IP address of a source node, or a host name that resolves through public DNS. A host name that resolves only in your VPC's private DNS fails the prepare step.
-+ Create your target cache with at least three subnets in different Availability Zones, each with free IP addresses. You cannot change the subnets of a serverless cache after you create it. If the prepare step or the data sync fails on subnets, the error message names the Availability Zones that need a subnet. Because you cannot change the subnets of a serverless cache, create a new target cache with a subnet in each Availability Zone that the message names, and prepare the migration again.
++ Create your target cache with at least three subnets in different Availability Zones, each with free IP addresses. In a Region where your account has two Availability Zones, such as US West (N. California), use a subnet in each of the two. You cannot change the subnets of a serverless cache after you create it. If the prepare step or the data sync fails on subnets, the error message names the Availability Zones that need a subnet. Because you cannot change the subnets of a serverless cache, create a new target cache with a subnet in each Availability Zone that the message names, and prepare the migration again.
 + Preparing a migration creates network interfaces in the subnets of your target cache. They use the security groups of your target cache, and ElastiCache deletes them when the migration completes. The prepare step fails if your target's subnets have no free IP addresses or your VPC has no network interface quota headroom.
 + Keep the Secrets Manager secret that you provided until the migration completes. If a node is replaced during the migration, ElastiCache runs network and authentication setup again, and a missing secret fails that step.
 

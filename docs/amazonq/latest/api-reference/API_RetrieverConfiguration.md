@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Retriev
 ---
 
 # RetrieverConfiguration
-<a name="API_RetrieverConfiguration"></a>
 
 Provides information on how the retriever used for your Amazon Q Business application is configured.
 

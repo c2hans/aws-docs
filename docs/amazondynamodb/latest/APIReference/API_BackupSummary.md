@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_B
 ---
 
 # BackupSummary
-<a name="API_BackupSummary"></a>
 
 Contains details for the backup.
 

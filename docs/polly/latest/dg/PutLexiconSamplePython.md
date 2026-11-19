@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/PutLexiconSamplePython.h
 ---
 
 # PutLexicon
-<a name="PutLexiconSamplePython"></a>
 
 The following code sample show how to use Python (boto3)-based applications to store a pronunciation lexicon in an AWS Region.
 

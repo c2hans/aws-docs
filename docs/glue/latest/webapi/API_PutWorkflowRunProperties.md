@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutWorkflowRunPro
 ---
 
 # PutWorkflowRunProperties
-<a name="API_PutWorkflowRunProperties"></a>
 
 Puts the specified workflow run properties for the given workflow run. If a property already exists for the specified run, then it overrides the value otherwise adds the property to existing properties.
 

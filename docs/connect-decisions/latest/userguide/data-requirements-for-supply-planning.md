@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/data-
 ---
 
 # Data Requirements for Supply Planning
-<a name="data-requirements-for-supply-planning"></a>
 
 **Data Entities for Supply Planning**
 

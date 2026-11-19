@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AWS-Redshift.ht
 ---
 
 # Connect to an Amazon Redshift data source
-<a name="AWS-Redshift"></a>
 
 **Note**
 In workspaces that support version 9 or newer, this data source might require you to install the appropriate plugin. For more information, see [Extend your workspace with plugins](grafana-plugins.md).

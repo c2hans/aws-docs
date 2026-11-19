@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PromptSu
 ---
 
 # PromptSummary
-<a name="API_PromptSummary"></a>
 
 Contains information about the prompt.
 

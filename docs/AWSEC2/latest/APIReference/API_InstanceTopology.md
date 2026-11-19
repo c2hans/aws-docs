@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceT
 ---
 
 # InstanceTopology
-<a name="API_InstanceTopology"></a>
 
 Information about the instance topology.
 

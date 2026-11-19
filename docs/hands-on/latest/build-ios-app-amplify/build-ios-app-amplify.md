@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/bu
 ---
 
 # Build an iOS Application
-<a name="build-ios-app-amplify"></a>
 
 |  |  |
 | --- |--- |

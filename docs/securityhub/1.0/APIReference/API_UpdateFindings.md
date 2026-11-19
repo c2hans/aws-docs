@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateF
 ---
 
 # UpdateFindings
-<a name="API_UpdateFindings"></a>
 
  `UpdateFindings` is a deprecated operation. Instead of `UpdateFindings`, use the `BatchUpdateFindings` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Severi
 ---
 
 # SeverityBreakdown
-<a name="API_SeverityBreakdown"></a>
 
 Contains the number of findings at each severity level.
 

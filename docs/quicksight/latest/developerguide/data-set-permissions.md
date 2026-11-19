@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/data-se
 ---
 
 # Dataset permissions operations
-<a name="data-set-permissions"></a>
 
 With dataset permissions API operations, you can view and update permissions on a dataset. For more information, see the following API operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-g
 ---
 
 # Attaching or removing S3 Storage Lens groups to or from your dashboard
-<a name="storage-lens-groups-dashboard-console"></a>
 
 After you've upgraded to the advanced tier in Amazon S3 Storage Lens, you can attach a [Storage Lens group](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-groups-overview.html) to your dashboard. If you have several Storage Lens groups, you can include or exclude the groups that you want.
 

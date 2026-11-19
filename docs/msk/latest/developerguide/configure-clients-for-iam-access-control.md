@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/configure-clie
 ---
 
 # Configure clients for IAM access control
-<a name="configure-clients-for-iam-access-control"></a>
 
 To enable clients to communicate with an MSK cluster that uses IAM access control, you can use either of these mechanisms:
 + Non-Java client configuration using SASL\_OAUTHBEARER mechanism

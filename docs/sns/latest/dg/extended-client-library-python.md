@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/extended-client-library-py
 ---
 
 # Amazon SNS Extended Client Library for Python
-<a name="extended-client-library-python"></a>
 
 ## Prerequisites
 <a name="prereqs-sns-extended-client-library-python"></a>

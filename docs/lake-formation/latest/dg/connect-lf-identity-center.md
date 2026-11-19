@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/connect-lf-iden
 ---
 
 # Connecting Lake Formation with IAM Identity Center
-<a name="connect-lf-identity-center"></a>
 
 Before you can use IAM Identity Center to manage identities to grant access to Data Catalog resources using Lake Formation, you must complete the following steps. You can create the IAM Identity Center integration using the Lake Formation console or AWS CLI.
 

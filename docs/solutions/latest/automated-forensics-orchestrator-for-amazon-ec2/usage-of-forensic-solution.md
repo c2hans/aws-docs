@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Usage of Forensic Guidance
-<a name="usage-of-forensic-solution"></a>
 
 ## Step 1. Sign in to the Security Hub AWS Account AWS Management Console and initiate forensic analysis
 <a name="step-1.-sign-in-to-the-security-hub-aws-account-aws-console-and-initiate-forensic-analysis"></a>

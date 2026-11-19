@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # More patterns
-<a name="containersandmicroservices-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Automate deletion of AWS CloudFormation stacks and associated resources](automate-deletion-cloudformation-stacks-associated-resources.md)

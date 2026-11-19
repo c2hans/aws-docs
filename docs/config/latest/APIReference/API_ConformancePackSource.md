@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Conforman
 ---
 
 # ConformancePackSource
-<a name="API_ConformancePackSource"></a>
 
 Provides the identifier of the managed conformance pack that AWS Config deploys in your account.
 

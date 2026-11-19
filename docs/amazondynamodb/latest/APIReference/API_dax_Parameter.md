@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # Parameter
-<a name="API_dax_Parameter"></a>
 
 Describes an individual setting that controls some aspect of DAX behavior.
 

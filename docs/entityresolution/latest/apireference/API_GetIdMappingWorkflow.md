@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # GetIdMappingWorkflow
-<a name="API_GetIdMappingWorkflow"></a>
 
 Returns the `IdMappingWorkflow` with a given name, if it exists.
 

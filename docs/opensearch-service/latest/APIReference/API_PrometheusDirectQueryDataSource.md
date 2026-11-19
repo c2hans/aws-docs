@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PrometheusDirectQueryDataSource
-<a name="API_PrometheusDirectQueryDataSource"></a>
 
  Configuration details for a Prometheus data source that can be used for direct queries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.FLAG_C
 ---
 
 # FLAG\_COLUMN\_FROM\_PATTERN
-<a name="recipe-actions.FLAG_COLUMN_FROM_PATTERN"></a>
 
 Creates a new column, based on the presence of a user-specified pattern in an existing column.
 

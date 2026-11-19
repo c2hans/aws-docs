@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Managing inference endpoints using the `endpoints` command
-<a name="machine-learning-api-endpoints"></a>
 
 You use the Neptune ML `endpoints` command to create an inference endpoint, check its status, delete it, or list existing inference endpoints.
 

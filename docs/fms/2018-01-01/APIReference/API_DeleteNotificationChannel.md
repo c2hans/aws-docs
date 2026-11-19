@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_DeleteNo
 ---
 
 # DeleteNotificationChannel
-<a name="API_DeleteNotificationChannel"></a>
 
 Deletes an AWS Firewall Manager association with the IAM role and the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
 

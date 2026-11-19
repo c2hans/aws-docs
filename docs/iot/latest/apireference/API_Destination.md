@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Destination.
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Describes the location of the updated firmware.
 

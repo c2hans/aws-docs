@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tutoria
 ---
 
 # Using MapLibre GL JS with Amazon Location Service
-<a name="tutorial-maplibre-gl-js"></a>
 
 Use [MapLibre GL JS](https://github.com/maplibre/maplibre-gl-js) to embed client-side maps into web applications.
 

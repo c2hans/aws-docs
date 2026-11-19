@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-f
 ---
 
 # Values that you specify when you create or edit outbound endpoints
-<a name="resolver-forwarding-outbound-queries-endpoint-values"></a>
 
 When you create or edit an outbound endpoint, you specify the following values:
 

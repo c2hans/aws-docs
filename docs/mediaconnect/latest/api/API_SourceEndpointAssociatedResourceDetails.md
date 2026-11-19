@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SourceEndpoi
 ---
 
 # SourceEndpointAssociatedResourceDetails
-<a name="API_SourceEndpointAssociatedResourceDetails"></a>
 
 The details of the resource that is associated with a source endpoint. This is a union type, so exactly one of its members is set, depending on the type of the source endpoint.
 

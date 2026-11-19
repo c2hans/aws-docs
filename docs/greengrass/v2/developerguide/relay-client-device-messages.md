@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/relay-clien
 ---
 
 # Relay MQTT messages between client devices and AWS IoT Core
-<a name="relay-client-device-messages"></a>
 
 You can relay MQTT messages and other data between client devices and AWS IoT Core. Client devices connect to the MQTT broker component that runs on the core device. By default, core devices don't relay MQTT messages or data between client devices and AWS IoT Core. Client devices can communicate only with each other over MQTT by default.
 

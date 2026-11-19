@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuni
 ---
 
 # Best Practices for Hyperparameter Tuning
-<a name="automatic-model-tuning-considerations"></a>
 
 Hyperparameter optimization (HPO) is not a fully-automated process. To improve optimization, follow these best practices for hyperparameter tuning.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Presig
 ---
 
 # PresignedUrlAccessConfig
-<a name="API_PresignedUrlAccessConfig"></a>
 
 Configuration for accessing hub content through presigned URLs, including license agreement acceptance and URL validation settings.
 

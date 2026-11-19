@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial
 ---
 
 # Tutorial: Archive and replay events in Amazon EventBridge
-<a name="eb-tutorial-archive-replay"></a>
 
 You can use EventBridge to route [events](eb-events.md) to specific [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) functions using [rules](eb-rules.md).
 

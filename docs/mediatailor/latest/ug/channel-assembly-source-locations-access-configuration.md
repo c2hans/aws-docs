@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-s
 ---
 
 # Configuring authentication for your source location
-<a name="channel-assembly-source-locations-access-configuration"></a>
 
 Use **access configuration** to configure authentication for your source location. When access configuration is on, MediaTailor only retrieves source manifests from your origin if the request is authorized between MediaTailor and your origin. Access configuration is turned off by default.
 

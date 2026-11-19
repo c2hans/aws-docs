@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-instances.
 ---
 
 # Managing Amazon DocumentDB instances
-<a name="db-instances"></a>
 
 The following topics provide information to help you manage your Amazon DocumentDB instances. They include details about instance classes and statuses, and how to create, delete, and modify an instance.
 

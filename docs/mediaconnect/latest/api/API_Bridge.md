@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Bridge.html
 ---
 
 # Bridge
-<a name="API_Bridge"></a>
 
  A Bridge is the connection between your data center's Instances and the AWS cloud. A bridge can be used to send video from the AWS cloud to your data center or from your data center to the AWS cloud.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetResourcePolici
 ---
 
 # GetResourcePolicies
-<a name="API_GetResourcePolicies"></a>
 
 Retrieves the resource policies set on individual resources by AWS Resource Access Manager during cross-account permission grants. Also retrieves the Data Catalog resource policy.
 

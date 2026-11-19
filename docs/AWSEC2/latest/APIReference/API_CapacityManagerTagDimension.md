@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityM
 ---
 
 # CapacityManagerTagDimension
-<a name="API_CapacityManagerTagDimension"></a>
 
  A key-value pair representing a tag associated with a capacity resource in Capacity Manager.
 

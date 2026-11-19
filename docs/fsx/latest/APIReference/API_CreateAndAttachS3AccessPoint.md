@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateAndAtt
 ---
 
 # CreateAndAttachS3AccessPoint
-<a name="API_CreateAndAttachS3AccessPoint"></a>
 
 Creates an S3 access point and attaches it to an Amazon FSx volume. For FSx for OpenZFS file systems, the volume must be hosted on a high-availability file system, either Single-AZ or Multi-AZ. For more information, see [Accessing your data using Amazon S3 access points](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/s3accesspoints-for-FSx.html) in the Amazon FSx for OpenZFS User Guide. For FSx for ONTAP file systems, see [Accessing data using Amazon S3 access points](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/s3-access-points.html) in the Amazon FSx for NetApp ONTAP User Guide.
 

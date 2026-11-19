@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/credprovi
 ---
 
 # Using AWS SDK for C\+\+ credential providers
-<a name="credproviders"></a>
 
  All requests to AWS must be cryptographically signed by using credentials issued by AWS. At runtime, the SDK retrieves configuration values for credentials by checking several locations.
 

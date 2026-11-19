@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TagResource
-<a name="API_bcmDashboards_TagResource"></a>
 
 Adds or updates tags for a specified dashboard resource.
 

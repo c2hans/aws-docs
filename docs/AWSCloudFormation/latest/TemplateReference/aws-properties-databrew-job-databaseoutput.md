@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Job DatabaseOutput
-<a name="aws-properties-databrew-job-databaseoutput"></a>
 
 Represents a JDBC database output object which defines the output destination for a DataBrew recipe job to write into.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-m
 ---
 
 # Subscribe users to Amazon Q Developer Pro in a management account
-<a name="subscribe-management"></a>
 
 A *management account* is an AWS account that is part of an organization managed by [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html). It is the ultimate owner of the organization, and is responsible for paying all charges accrued by the accounts in its organization.
 

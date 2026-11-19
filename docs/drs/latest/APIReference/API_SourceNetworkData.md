@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_SourceNetwor
 ---
 
 # SourceNetworkData
-<a name="API_SourceNetworkData"></a>
 
 Properties of Source Network related to a job event.
 

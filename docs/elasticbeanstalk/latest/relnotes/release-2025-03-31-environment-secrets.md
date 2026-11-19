@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk supports retrieving secrets and configuration from AWS Secrets Manager and AWS Systems Manager on March 31, 2025
-<a name="release-2025-03-31-environment-secrets"></a>
 
 AWS Elastic Beanstalk adds support for accessing secrets and configuration from AWS Secrets Manager and AWS Systems Manager with environment variables.
 

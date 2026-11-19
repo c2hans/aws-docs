@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::EC2Fleet TagSpecification
-<a name="aws-properties-ec2-ec2fleet-tagspecification"></a>
 
 Specifies the tags to apply to a resource when the resource is being created for an EC2 Fleet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/schema-classifier.html
 ---
 
 # Create tables for ETL jobs
-<a name="schema-classifier"></a>
 
 You can use Athena to create tables that AWS Glue can use for ETL jobs. AWS Glue jobs perform ETL operations. An AWS Glue job runs a script that extracts data from sources, transforms the data, and loads it into targets. For more information, see [Authoring Jobs in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/author-job-glue.html) in the *AWS Glue Developer Guide*.
 

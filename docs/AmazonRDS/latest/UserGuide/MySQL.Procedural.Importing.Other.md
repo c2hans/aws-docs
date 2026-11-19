@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedu
 ---
 
 # Importing data into an Amazon RDS for MySQL DB instance
-<a name="MySQL.Procedural.Importing.Other"></a>
 
 You can use several different techniques to import data into an RDS for MySQL DB instance. The best approach depends on a number of factors:
 + Source of the data

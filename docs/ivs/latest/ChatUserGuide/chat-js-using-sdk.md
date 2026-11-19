@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-js-using-s
 ---
 
 # Using the IVS Chat Client Messaging JavaScript SDK
-<a name="chat-js-using-sdk"></a>
 
 This document takes you through the steps involved in using the Amazon IVS chat client messaging JavaScript SDK.
 

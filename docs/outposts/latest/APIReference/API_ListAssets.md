@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListAss
 ---
 
 # ListAssets
-<a name="API_ListAssets"></a>
 
 Lists the hardware assets for the specified Outpost.
 

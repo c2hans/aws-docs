@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Co
 ---
 
 # CompositeComponentUpdateRequest
-<a name="API_CompositeComponentUpdateRequest"></a>
 
 An object that sets information about the composite component update request.
 

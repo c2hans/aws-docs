@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # MAX
-<a name="sql-reference-max"></a>
 
 Returns the maximum value of a group of values from a windowed query. A windowed query is defined in terms of time or rows. For information about window queries, see [Windowed Queries](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/windowed-sql.html).
 

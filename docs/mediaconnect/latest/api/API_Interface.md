@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Interface.ht
 ---
 
 # Interface
-<a name="API_Interface"></a>
 
  The VPC interface that is used for the media stream associated with the source or output.
 

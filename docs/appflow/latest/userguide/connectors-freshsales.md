@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-fres
 ---
 
 # Freshsales connector for Amazon AppFlow
-<a name="connectors-freshsales"></a>
 
 Freshsales is a Customer Relationship Management (CRM) service that helps companies leverage customer data and interactions. If you’re a Freshsales user, your account contains information about communication, timelines, meetings, chats, workflows, and more. You can use Amazon AppFlow to transfer data from Freshsales to certain AWS services or other supported applications.
 

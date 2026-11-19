@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # Option C: Install a custom OS on an original AWS DeepRacer device
-<a name="custom-car-option-c"></a>
 
 If you own an original AWS DeepRacer device (Intel Atom-based), you can install a modern operating system using the developer bootloader shim. This option requires no hardware modifications, no soldering, and no additional purchases. The developer bootloader shim is based on the [open-source shim project](https://github.com/rhboot/shim) on the GitHub website.
 

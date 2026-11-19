@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Segment.html
 ---
 
 # Segment
-<a name="API_Segment"></a>
 
 Defines a non-overlapping region of a table's partitions, allowing multiple requests to be run in parallel.
 

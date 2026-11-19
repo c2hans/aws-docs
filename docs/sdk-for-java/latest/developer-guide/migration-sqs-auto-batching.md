@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Changes in automatic Amazon SQS request batching from version 1 to version 2
-<a name="migration-sqs-auto-batching"></a>
 
 This topic details the changes in automatic request batching for Amazon SQS between version 1 and version 2 of the AWS SDK for Java.
 

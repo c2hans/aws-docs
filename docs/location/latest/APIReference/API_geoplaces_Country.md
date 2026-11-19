@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # Country
-<a name="API_geoplaces_Country"></a>
 
 The alpha-2 or alpha-3 character code for the country that the results will be present in.
 

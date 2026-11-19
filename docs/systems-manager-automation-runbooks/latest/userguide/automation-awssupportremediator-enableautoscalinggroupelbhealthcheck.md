@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableAutoScalingGroupElbHealthCheck`
-<a name="automation-awssupportremediator-enableautoscalinggroupelbhealthcheck"></a>
 
 **Description**
 

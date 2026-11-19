@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Desti
 ---
 
 # DestinationTable
-<a name="API_DestinationTable"></a>
 
 Defines a destination table in data preparation that receives the final transformed data.
 

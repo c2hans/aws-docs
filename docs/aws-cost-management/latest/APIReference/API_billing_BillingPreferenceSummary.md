@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingPreferenceSummary
-<a name="API_billing_BillingPreferenceSummary"></a>
 
 A single billing preference entry returned by `GetBillingPreferences`.
 

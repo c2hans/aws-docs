@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Com
 ---
 
 # ComponentVersion
-<a name="API_ComponentVersion"></a>
 
 The defining characteristics of a specific version of a component.
 

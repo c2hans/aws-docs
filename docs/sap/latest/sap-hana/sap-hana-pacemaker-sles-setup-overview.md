@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-s
 ---
 
 # Setup Overview
-<a name="sap-hana-pacemaker-sles-setup-overview"></a>
 
 ## Deployed Cluster Infrastructure
 <a name="_deployed_cluster_infrastructure"></a>

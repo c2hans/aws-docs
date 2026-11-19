@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # ROLLING\_MIN
-<a name="recipe-actions.functions.ROLLING_MIN"></a>
 
 Returns in a new column the rolling minimum of values from a specified number of rows before to a specified number of rows after the current row in the specified column.
 

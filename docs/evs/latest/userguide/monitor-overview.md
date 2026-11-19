@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/monitor-overview.ht
 ---
 
 # Monitor your environment
-<a name="monitor-overview"></a>
 
 You monitor an Amazon Elastic VMware Service environment with AWS tools and with VMware Cloud Foundation (VCF) tools. AWS tools report on the environment, the EC2 instances that run your hosts, and Amazon EVS API calls. VCF tools report on the VCF components and the workloads that run on them.
 

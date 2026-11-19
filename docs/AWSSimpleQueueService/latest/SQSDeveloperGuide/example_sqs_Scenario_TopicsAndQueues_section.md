@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Publish Amazon SNS messages to Amazon SQS queues using an AWS SDK
-<a name="example_sqs_Scenario_TopicsAndQueues_section"></a>
 
 The following code examples show how to:
 + Create topic (FIFO or non-FIFO).

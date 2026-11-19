@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-sagemaker-
 ---
 
 # Create a SageMaker Training job queue in AWS Batch
-<a name="create-sagemaker-job-queue"></a>
 
 SageMaker Training job queues integrate directly with the SageMaker AI service to provide serverless job scheduling without requiring you to manage underlying compute infrastructure.
 

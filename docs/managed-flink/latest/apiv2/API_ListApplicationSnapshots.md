@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListAppli
 ---
 
 # ListApplicationSnapshots
-<a name="API_ListApplicationSnapshots"></a>
 
 Lists information about the current application snapshots.
 

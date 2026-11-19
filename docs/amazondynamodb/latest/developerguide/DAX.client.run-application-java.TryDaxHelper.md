@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # TryDaxHelper.java
-<a name="DAX.client.run-application-java.TryDaxHelper"></a>
 
 The `TryDaxHelper.java` file contains utility methods.
 

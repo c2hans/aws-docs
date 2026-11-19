@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-tr
 ---
 
 # EMR cluster failed to provision
-<a name="emr-ranger-troubleshooting-cluster-failed"></a>
 
 There are several reasons why an Amazon EMR cluster may fail to start. Here are a few ways to diagnose the issue.
 

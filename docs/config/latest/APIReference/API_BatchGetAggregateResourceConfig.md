@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_BatchGetA
 ---
 
 # BatchGetAggregateResourceConfig
-<a name="API_BatchGetAggregateResourceConfig"></a>
 
 Returns the current configuration items for resources that are present in your AWS Config aggregator. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty `unprocessedResourceIdentifiers` list.
 

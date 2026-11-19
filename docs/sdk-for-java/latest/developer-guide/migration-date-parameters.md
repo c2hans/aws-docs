@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Date parameter changes
-<a name="migration-date-parameters"></a>
 
 In version 1, many operations accepted `java.util.Date` objects for time-based parameters. In version 2, these operations use `java.time.Instant` objects instead.
 

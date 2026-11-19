@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/enabling-access-e
 ---
 
 # Authorizing connections from AWS Quick to Amazon EC2 instances
-<a name="enabling-access-ec2"></a>
 
 |  |
 | --- |

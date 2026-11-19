@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/hpn-getting-started
 ---
 
 # Getting started with High Performance Networking
-<a name="hpn-getting-started"></a>
 
 ## Supported offerings
 <a name="hpn-supported-offerings"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/browser-b
 ---
 
 # Browser-based uploads to Amazon S3 using the AWS Amplify library
-<a name="browser-based-uploads-aws-amplify"></a>
 
 This section describes how to upload files to Amazon S3 using the AWS Amplify JavaScript library.
 

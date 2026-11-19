@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-BG-depl
 ---
 
 # Using the Neptune Blue/Green solution to perform blue-green updates
-<a name="neptune-BG-deployments"></a>
 
 Amazon Neptune engine upgrades can require application downtime because the database is unavailable while the updates are being installed and verified. This is true whether they are initiated manually or automatically.
 

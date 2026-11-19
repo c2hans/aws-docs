@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/response-cus
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Response customization settings
-<a name="response-customization-components"></a>
 
 When you create an Amazon Q Business application, Amazon Q Business applies its default response settings to your application. You can choose to customize these default settings to meet your particular use case.
 

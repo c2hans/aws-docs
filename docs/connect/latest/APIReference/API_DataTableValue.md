@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTabl
 ---
 
 # DataTableValue
-<a name="API_DataTableValue"></a>
 
 A data table value.
 

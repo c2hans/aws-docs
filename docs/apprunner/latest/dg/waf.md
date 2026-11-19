@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/dg/waf.html
 AWS App Runner is no longer open to new customers. Existing customers can continue to use the service as normal. This guide applies only to existing customers. If you're not an existing customer, AWS recommends Amazon ECS Express Mode. For more information, see [AWS App Runner availability change](https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.html).
 
 # Associating an AWS WAF web ACL with your service
-<a name="waf"></a>
 
 AWS WAF is a web application firewall that you can use to secure your App Runner service. With AWS WAF web access control lists (web ACLs), you can guard your App Runner service endpoints against common web exploits and unwanted bots.
 

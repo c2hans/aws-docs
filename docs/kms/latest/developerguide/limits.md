@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/limits.html
 ---
 
 # Quotas
-<a name="limits"></a>
 
 To make AWS KMS responsive and performant for all users, AWS KMS applies two types of quotas, resource quotas and request quotas. Each quota is calculated independently for each Region of each AWS account.
 

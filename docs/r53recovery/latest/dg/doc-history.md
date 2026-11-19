@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/doc-history.html
 ---
 
 # Document history for the Amazon Application Recovery Controller (ARC) Developer Guide
-<a name="doc-history"></a>
 
 The following entries describe important changes made to the Amazon Application Recovery Controller (ARC) documentation.
 + **Version:** latest

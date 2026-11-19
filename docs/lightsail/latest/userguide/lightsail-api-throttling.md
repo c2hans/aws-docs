@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api
 ---
 
 # Request throttling for the Amazon Lightsail API
-<a name="lightsail-api-throttling"></a>
 
 Amazon Lightsail throttles API requests for each AWS account. Throttling ensures that requests to the Amazon Lightsail API do not exceed the maximum allowed API request limits. Amazon Lightsail applies request limits to all API requests, whether they originate from:
 + A third-party application

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeCompilationJob
-<a name="API_DescribeCompilationJob"></a>
 
 Returns information about a model compilation job.
 

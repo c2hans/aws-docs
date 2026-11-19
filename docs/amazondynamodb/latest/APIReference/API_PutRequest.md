@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_P
 ---
 
 # PutRequest
-<a name="API_PutRequest"></a>
 
 Represents a request to perform a `PutItem` operation on an item.
 

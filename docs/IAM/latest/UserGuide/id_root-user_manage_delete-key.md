@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user_manage
 ---
 
 # Delete access keys for the root user
-<a name="id_root-user_manage_delete-key"></a>
 
 You can use the AWS Management Console, the AWS CLI or the AWS API to delete the root user access keys.
 

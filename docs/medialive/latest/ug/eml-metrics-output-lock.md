@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/eml-metrics-output-l
 ---
 
 # Pipeline locking metrics
-<a name="eml-metrics-output-lock"></a>
 
 Pipeline locking metrics relate to the synchronization of MediaLive pipelines.
 

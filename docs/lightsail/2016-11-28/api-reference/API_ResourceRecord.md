@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # ResourceRecord
-<a name="API_ResourceRecord"></a>
 
 Describes the domain name system (DNS) records to add to your domain's DNS to validate it for an Amazon Lightsail certificate.
 

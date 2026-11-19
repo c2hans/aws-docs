@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/manage-objects
 ---
 
 # Working with objects in a versioning-enabled bucket
-<a name="manage-objects-versioned-bucket"></a>
 
 Objects that are stored in an Amazon S3 bucket before you set the versioning state have a version ID of `null`. When you enable versioning, existing objects in your bucket do not change. What changes is how Amazon S3 handles the objects in future requests.
 

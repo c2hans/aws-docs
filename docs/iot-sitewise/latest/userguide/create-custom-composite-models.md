@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/create-cus
 ---
 
 # Create custom composite models (components)
-<a name="create-custom-composite-models"></a>
 
 Custom composite models, or components if you're using the console, provide another level of organization for your asset models and component models. You can use them to structure your models by grouping properties or referencing other models. For more information about working with custom composite models, see [Custom composite models (components)](custom-composite-models.md).
 

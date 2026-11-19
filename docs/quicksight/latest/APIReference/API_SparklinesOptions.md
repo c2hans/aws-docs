@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Spark
 ---
 
 # SparklinesOptions
-<a name="API_SparklinesOptions"></a>
 
 The options for sparklines in a table.
 

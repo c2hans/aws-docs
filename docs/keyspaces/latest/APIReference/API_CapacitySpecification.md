@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Capaci
 ---
 
 # CapacitySpecification
-<a name="API_CapacitySpecification"></a>
 
 Amazon Keyspaces has two read/write capacity modes for processing reads and writes on your tables:
 + On-demand (default)

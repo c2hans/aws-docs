@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/mo
 ---
 
 # Task 4: Deploy the App
-<a name="module-four"></a>
 
 |  |  |
 | --- |--- |

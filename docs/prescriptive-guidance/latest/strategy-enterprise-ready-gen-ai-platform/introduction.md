@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Building an enterprise-ready generative AI platform on AWS
-<a name="introduction"></a>
 
 *Ratan Kumar, Viral Shah, and Jeffrey Zeng, Amazon Web Services*
 

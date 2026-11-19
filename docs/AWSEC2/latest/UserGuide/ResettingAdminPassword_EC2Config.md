@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ResettingAdminPa
 ---
 
 # Reset Windows admin password for EC2 instance using EC2Config
-<a name="ResettingAdminPassword_EC2Config"></a>
 
 If you have lost your Windows administrator password and are using a Windows AMI before Windows Server 2016, you can use the EC2Config agent to generate a new password.
 

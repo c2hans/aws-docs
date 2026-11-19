@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Sort
 ---
 
 # Sort
-<a name="API_Sort"></a>
 
 An object that contains two attributes, `SortBy` and `SortOrder`.
 

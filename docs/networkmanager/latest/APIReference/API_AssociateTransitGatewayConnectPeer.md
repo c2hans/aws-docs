@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # AssociateTransitGatewayConnectPeer
-<a name="API_AssociateTransitGatewayConnectPeer"></a>
 
 Associates a transit gateway Connect peer with a device, and optionally, with a link. If you specify a link, it must be associated with the specified device.
 

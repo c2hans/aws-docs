@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/teams-action
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring a Microsoft Teams plugin for Amazon Q Business
-<a name="teams-actions"></a>
 
 Microsoft Teams is an enterprise collaboration tool for messaging, meetings, and file sharing. If you’re a Microsoft Teams user, you can create an Amazon Q Business plugin to allow your end users to send private and public (channel) messages from within their web experience chat.
 

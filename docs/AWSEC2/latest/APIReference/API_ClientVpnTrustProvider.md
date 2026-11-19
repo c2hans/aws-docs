@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpn
 ---
 
 # ClientVpnTrustProvider
-<a name="API_ClientVpnTrustProvider"></a>
 
 Information about a device trust provider configured for a Client VPN endpoint.
 

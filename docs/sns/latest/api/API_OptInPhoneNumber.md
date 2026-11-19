@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_OptInPhoneNumber.html
 ---
 
 # OptInPhoneNumber
-<a name="API_OptInPhoneNumber"></a>
 
 Use this request to opt in a phone number that is opted out, which enables you to resume sending SMS messages to the number.
 

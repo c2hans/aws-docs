@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteTopic
-<a name="API_DeleteTopic"></a>
 
 Deletes a topic.
 

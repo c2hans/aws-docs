@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # UpdateConfiguration
-<a name="API_UpdateConfiguration"></a>
 
 Contains an update to replace the configuration in an existing identity source.
 

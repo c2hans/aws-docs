@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/files-api.html
 ---
 
 # Files actions
-<a name="files-api"></a>
 
  The following API actions are available for Files:
 + [StartAttachedFileUpload](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartAttachedFileUpload.html)

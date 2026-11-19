@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/im-su
 ---
 
 # Reference: Training results summary file
-<a name="im-summary-file"></a>
 
 The training results summary contains metrics you can use to evaluate your model. The summary file is also used to display metrics in the console training results page. The summary file is stored in an Amazon S3 bucket after training. To get the summary file, call `DescribeProjectVersion`. For example code, see [Accessing the summary file and evaluation manifest snapshot (SDK)](im-access-summary-evaluation-manifest.md).
 

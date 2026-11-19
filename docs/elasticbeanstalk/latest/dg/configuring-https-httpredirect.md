@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-h
 ---
 
 # Configuring HTTP to HTTPS redirection
-<a name="configuring-https-httpredirect"></a>
 
 This topic describes how to handle HTTP traffic to your application if end users still initiate it. You do this by configuring *HTTP to HTTPS redirection*, sometimes referred to as *forcing HTTPS*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/revision-
 ---
 
 # Key patterns when exporting asset revisions from AWS Data Exchange
-<a name="revision-export-keypatterns"></a>
 
 When you export an asset revision from AWS Data Exchange, each asset becomes an object in the S3 bucket. The names of the objects are based on a key pattern that you provide. You can use dynamic references that represent asset attributes to create a pattern for the names that are automatically generated during the export. Use the dynamic references shown in the following table.
 

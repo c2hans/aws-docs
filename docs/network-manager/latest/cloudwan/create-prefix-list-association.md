@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/create-p
 ---
 
 # Create a AWS Cloud WAN prefix list association
-<a name="create-prefix-list-association"></a>
 
 ## Create a prefix list association using the console
 <a name="create-prefix-list-association-console"></a>

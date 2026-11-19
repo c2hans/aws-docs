@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/web-se
 ---
 
 # Search the web using Amazon Bedrock AgentCore Web Search
-<a name="web-search-api"></a>
 
 Amazon Bedrock AgentCore Web Search lets you search the web from your own code with the `InvokeWebSearch` API. The API returns a ranked list of results. Each result includes a text extract from the page and, when they are available, the page title, URL, and publication time. You call the API with the AWS SDKs or the AWS Command Line Interface (AWS CLI), and you authorize calls with AWS Identity and Access Management (IAM). You don’t create or manage any resources to use it.
 

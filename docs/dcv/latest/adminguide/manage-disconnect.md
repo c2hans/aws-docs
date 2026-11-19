@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/manage-disconnect.
 ---
 
 # Disconnecting idle clients
-<a name="manage-disconnect"></a>
 
 You can configure Amazon DCV to disconnect idle clients. More specifically, you can do this for clients that didn't send any keyboard or pointer input to the Amazon DCV server for a specific period of time. By default, the Amazon DCV server disconnects Amazon DCV clients after being idle for 60 minutes (one hour).
 

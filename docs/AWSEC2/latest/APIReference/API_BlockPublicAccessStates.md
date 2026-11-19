@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BlockPubl
 ---
 
 # BlockPublicAccessStates
-<a name="API_BlockPublicAccessStates"></a>
 
 The state of VPC Block Public Access (BPA).
 

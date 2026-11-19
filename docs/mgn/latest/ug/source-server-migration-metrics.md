@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/source-server-migration-me
 ---
 
 # Source server migration metrics
-<a name="source-server-migration-metrics"></a>
 
 The source server migration metrics present an aggregated overview of your source servers, focused on three topics: **Alerts**, **Data replication status**, and **Migration lifecycle**.
 

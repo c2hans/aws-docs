@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/templ
 ---
 
 # CloudFormation template sections
-<a name="template-anatomy"></a>
 
 Every CloudFormation template consists of one or more sections, each serving a specific purpose.
 

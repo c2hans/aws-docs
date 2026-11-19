@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListDataQualitySt
 ---
 
 # ListDataQualityStatisticAnnotations
-<a name="API_ListDataQualityStatisticAnnotations"></a>
 
 Retrieve annotations for a data quality statistic.
 

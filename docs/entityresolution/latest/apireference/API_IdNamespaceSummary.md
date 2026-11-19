@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdNamespaceSummary
-<a name="API_IdNamespaceSummary"></a>
 
 A summary of ID namespaces.
 

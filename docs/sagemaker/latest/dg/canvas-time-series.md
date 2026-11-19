@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-time-series.h
 ---
 
 # Time Series Forecasts in Amazon SageMaker Canvas
-<a name="canvas-time-series"></a>
 
 **Note**
 Time series forecasting models are only supported for tabular datasets.

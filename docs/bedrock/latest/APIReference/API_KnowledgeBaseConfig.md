@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Knowledg
 ---
 
 # KnowledgeBaseConfig
-<a name="API_KnowledgeBaseConfig"></a>
 
 The configuration details for retrieving information from a knowledge base and generating responses.
 

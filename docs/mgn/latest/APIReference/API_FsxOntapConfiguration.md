@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_FsxOntapConf
 ---
 
 # FsxOntapConfiguration
-<a name="API_FsxOntapConfiguration"></a>
 
 FSx for ONTAP storage configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetExtension
-<a name="API_GetExtension"></a>
 
 Returns information about an AWS AppConfig extension.
 

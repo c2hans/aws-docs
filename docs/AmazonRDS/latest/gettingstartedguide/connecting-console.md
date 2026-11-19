@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/gettingstartedguide/con
 ---
 
 # Using the Amazon RDS console to retrieve connection information
-<a name="connecting-console"></a>
 
 Before you can connect to your Amazon RDS DB instance, you need to gather the connection details, including the endpoint, port, and other required settings. The AWS Management Console provides an easy way to retrieve this information. The following sections walk you through how to find the endpoint and port, along with additional connection details, so you can connect to your DB instance.
 

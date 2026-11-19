@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.ST.7] Conduct proactive exploratory security testing activities
-<a name="qa.st.7-conduct-proactive-exploratory-security-testing-activities"></a>
 
  **Category:** RECOMMENDED
 

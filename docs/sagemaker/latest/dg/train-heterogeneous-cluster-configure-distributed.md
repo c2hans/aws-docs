@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-heterogeneous-
 ---
 
 # Run distributed training on a heterogeneous cluster in Amazon SageMaker AI
-<a name="train-heterogeneous-cluster-configure-distributed"></a>
 
 Through the `distribution` argument of the SageMaker AI ModelTrainer class, you can assign a specific instance group to run distributed training. For example, assume that you have the following two instance groups and want to run multi-GPU training on one of them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/private
 ---
 
 # Private integrations for REST APIs in API Gateway
-<a name="private-integration"></a>
 
 Use a private integration to expose your HTTP/HTTPS resources within an Amazon VPC for access by clients outside of the VPC. This extends access to your private VPC resources beyond the VPC boundaries. You can control access to your API by using any of the [authorization methods](apigateway-control-access-to-api.md) that API Gateway supports.
 

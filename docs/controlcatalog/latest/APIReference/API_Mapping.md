@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_M
 ---
 
 # Mapping
-<a name="API_Mapping"></a>
 
 A structure that contains the details of a mapping relationship, which can be either to a framework or to a common control.
 

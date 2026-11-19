@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sagemaker_example
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DescribeTrainingJob` with an AWS SDK
-<a name="sagemaker_example_sagemaker_DescribeTrainingJob_section"></a>
 
 The following code example shows how to use `DescribeTrainingJob`.
 

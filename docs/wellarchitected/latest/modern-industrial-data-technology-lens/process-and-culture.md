@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Process and culture
-<a name="process-and-culture"></a>
 
 | MIDASUS06: How do you integrate sustainability into manufacturing processes and culture? |
 | --- |

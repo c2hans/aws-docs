@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListProvisionedCon
 ---
 
 # ListProvisionedConcurrencyConfigs
-<a name="API_ListProvisionedConcurrencyConfigs"></a>
 
 Retrieves a list of provisioned concurrency configurations for a function.
 

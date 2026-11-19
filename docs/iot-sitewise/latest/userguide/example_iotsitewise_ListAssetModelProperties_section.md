@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/example_io
 ---
 
 # Use `ListAssetModelProperties` with an AWS SDK
-<a name="example_iotsitewise_ListAssetModelProperties_section"></a>
 
 The following code example shows how to use `ListAssetModelProperties`.
 

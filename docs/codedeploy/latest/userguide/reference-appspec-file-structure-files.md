@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-ap
 ---
 
 # AppSpec 'files' section (EC2/On-Premises deployments only)
-<a name="reference-appspec-file-structure-files"></a>
 
 Provides information to CodeDeploy about which files from your application revision should be installed on the instance during the deployment's **Install** event. This section is required only if you are copying files from your revision to locations on the instance during deployment.
 

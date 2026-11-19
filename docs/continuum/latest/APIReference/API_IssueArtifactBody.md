@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_IssueA
 ---
 
 # IssueArtifactBody
-<a name="API_IssueArtifactBody"></a>
 
 The projected body of an artifact. The active member is selected by the artifact's artifactType, and for a type that carries more than one payload kind by the stored content's own discriminator; `raw` carries content for types with no defined shape yet and for content that did not match its shape.
 

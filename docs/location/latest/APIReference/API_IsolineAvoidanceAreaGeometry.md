@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Isoline
 ---
 
 # IsolineAvoidanceAreaGeometry
-<a name="API_IsolineAvoidanceAreaGeometry"></a>
 
 Defines an area to avoid during calculations using one of several supported geometry types. The service will prefer routes that avoid these areas when possible.
 

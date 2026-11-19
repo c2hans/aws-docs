@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/slack-reading-from-entiti
 ---
 
 # Reading from Slack entities
-<a name="slack-reading-from-entities"></a>
 
  **Prerequisites**
 +  A Slack object you would like to read from.

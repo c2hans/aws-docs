@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Capaci
 ---
 
 # CapacitySpecificationSummary
-<a name="API_CapacitySpecificationSummary"></a>
 
 The read/write throughput capacity mode for a table. The options are:
 +  `throughputMode:PAY_PER_REQUEST` and

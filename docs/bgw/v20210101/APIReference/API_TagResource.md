@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_TagResour
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Tag the resource.
 

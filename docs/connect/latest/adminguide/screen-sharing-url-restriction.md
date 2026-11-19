@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/screen-sharing
 ---
 
 # Enable URL restriction for screen sharing
-<a name="screen-sharing-url-restriction"></a>
 
 You can manage the URLs that your customers and agents are allowed to share during the contact. With URL restrictions, you can achieve enhanced security and privacy. When a customer or agent shares a URL that is not allowlisted, they receive an error message and the screen share video is automatically paused and blacked out.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/registering-blueprints.ht
 ---
 
 # Registering a blueprint in AWS Glue
-<a name="registering-blueprints"></a>
 
 After the AWS Glue developer has coded the blueprint and uploaded a ZIP archive to Amazon Simple Storage Service (Amazon S3), an AWS Glue administrator must register the blueprint. Registering the blueprint makes it available for use.
 

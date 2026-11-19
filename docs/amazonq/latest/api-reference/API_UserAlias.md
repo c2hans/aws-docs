@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UserAli
 ---
 
 # UserAlias
-<a name="API_UserAlias"></a>
 
 Aliases attached to a user id within an Amazon Q Business application.
 

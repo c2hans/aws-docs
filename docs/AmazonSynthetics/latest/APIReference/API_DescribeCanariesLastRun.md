@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # DescribeCanariesLastRun
-<a name="API_DescribeCanariesLastRun"></a>
 
 Use this operation to see information from the most recent run of each canary that you have created.
 

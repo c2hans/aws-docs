@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # TrainingTokenUsage
-<a name="API_training_session_runtime_TrainingTokenUsage"></a>
 
 The token usage statistics for training operations.
 

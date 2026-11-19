@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Target
 ---
 
 # TargetResourceConfiguration
-<a name="API_TargetResourceConfiguration"></a>
 
 The configuration for a single resource in the green environment of a blue/green deployment.
 

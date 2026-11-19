@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-srt-caller-
 ---
 
 # Creating SRT outputs in caller mode
-<a name="creating-srt-caller-output"></a>
 
 This section describes how to create SRT outputs in caller mode, where MediaLive initiates connections to downstream systems.
 

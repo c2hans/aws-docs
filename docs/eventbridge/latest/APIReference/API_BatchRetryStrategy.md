@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Batc
 ---
 
 # BatchRetryStrategy
-<a name="API_BatchRetryStrategy"></a>
 
 The retry strategy to use for failed jobs, if the target is an AWS Batch job. If you specify a retry strategy here, it overrides the retry strategy defined in the job definition.
 

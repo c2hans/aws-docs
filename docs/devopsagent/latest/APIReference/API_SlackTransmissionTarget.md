@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Slac
 ---
 
 # SlackTransmissionTarget
-<a name="API_SlackTransmissionTarget"></a>
 
 Defines Slack channels for different types of agent notifications.
 

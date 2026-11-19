@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-run-tests.
 ---
 
 # Run the FreeRTOS qualification 2.0 suite
-<a name="lts-run-tests"></a>
 
 Use the AWS IoT Device Tester for FreeRTOS executable to interact with IDT for FreeRTOS. The following command line examples show you how to run the qualification tests for a device pool (a set of identical devices).
 

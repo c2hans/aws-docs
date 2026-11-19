@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # VideoEvent
-<a name="API_rekognitionstreaming_VideoEvent"></a>
 
 Contains the video chunk blob.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_FormEnt
 ---
 
 # FormEntryInput
-<a name="API_FormEntryInput"></a>
 
 The details of the form entry.
 

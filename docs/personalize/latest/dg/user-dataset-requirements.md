@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/user-dataset-requi
 ---
 
 # Users dataset schema requirements (custom)
-<a name="user-dataset-requirements"></a>
 
  A *Users dataset* stores metadata about your users. This might include information such as age, gender, and loyalty membership for each item. For information on the types of user data you can import into Amazon Personalize, see [User metadata](users-datasets.md).
 

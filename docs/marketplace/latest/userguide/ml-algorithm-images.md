@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-algorith
 ---
 
 # Creating algorithm images
-<a name="ml-algorithm-images"></a>
 
 An Amazon SageMaker AI algorithm requires that the buyer bring their own data to train before it makes predictions. As an AWS Marketplace seller, you can use SageMaker AI to create machine learning (ML) algorithms and models that your buyers can deploy in AWS. The following sections you how to create algorithm images for AWS Marketplace. This includes creating the Docker training image for training your algorithm and the inference image that contains your inference logic. Both the training and inference images are required when publishing an algorithm product.
 

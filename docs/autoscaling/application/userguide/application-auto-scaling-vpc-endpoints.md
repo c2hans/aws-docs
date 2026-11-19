@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/applic
 ---
 
 # Access Application Auto Scaling using interface VPC endpoints
-<a name="application-auto-scaling-vpc-endpoints"></a>
 
 You can use AWS PrivateLink to create a private connection between your VPC and Application Auto Scaling. You can access Application Auto Scaling as if it were in your VPC, without the use of an internet gateway, NAT device, VPN connection, or Direct Connect connection. Instances in your VPC don't need public IP addresses to access Application Auto Scaling.
 

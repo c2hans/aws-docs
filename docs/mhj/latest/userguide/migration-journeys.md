@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mhj/latest/userguide/migration-journeys.
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Migration journeys
-<a name="migration-journeys"></a>
 
 A migration journey is an Amazon resource that you create and use to plan, organize, and track the migration of your solutions to AWS. A journey consists of phases that represent the main stages of a migration. Each phase consists of modules, which in turn consist of discrete tasks.
 

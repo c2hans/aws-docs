@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Resources
-<a name="resources-rel"></a>
 
  **Related documents:**
 +  [AWS Supply Chain](https://aws.amazon.com/aws-supply-chain/)

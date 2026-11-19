@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ex
 ---
 
 # ExperimentRunEvent
-<a name="API_ExperimentRunEvent"></a>
 
 Describes an event that occurred during an experiment run.
 

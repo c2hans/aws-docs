@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DynamoDBTarget.ht
 ---
 
 # DynamoDBTarget
-<a name="API_DynamoDBTarget"></a>
 
 Specifies an Amazon DynamoDB table to crawl.
 

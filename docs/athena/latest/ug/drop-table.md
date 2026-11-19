@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/drop-table.html
 ---
 
 # DROP TABLE
-<a name="drop-table"></a>
 
 Removes the metadata table definition for the table named `table_name`. When you drop an external table, the underlying data remains intact.
 

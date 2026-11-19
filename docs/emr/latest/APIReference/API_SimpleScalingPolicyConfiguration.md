@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SimpleScalin
 ---
 
 # SimpleScalingPolicyConfiguration
-<a name="API_SimpleScalingPolicyConfiguration"></a>
 
 An automatic scaling configuration, which describes how the policy adds or removes instances, the cooldown period, and the number of Amazon EC2 instances that will be added each time the CloudWatch metric alarm condition is satisfied.
 

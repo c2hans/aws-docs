@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/dlm-stacksets.html
 ---
 
 # Enable Data Lifecycle Manager default policies across accounts and Regions
-<a name="dlm-stacksets"></a>
 
 Using CloudFormation StackSets, you can enable Amazon Data Lifecycle Manager default policies across multiple accounts and AWS Regions with a single operation.
 

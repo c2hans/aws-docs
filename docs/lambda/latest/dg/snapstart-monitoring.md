@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/snapstart-monitoring.ht
 ---
 
 # Monitoring for Lambda SnapStart
-<a name="snapstart-monitoring"></a>
 
 You can monitor your Lambda SnapStart functions using Amazon CloudWatch, AWS X-Ray, and the [Accessing real-time telemetry data for extensions using the Telemetry API](telemetry-api.md).
 

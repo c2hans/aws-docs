@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::ResponderGateway HealthCheckConfig
-<a name="aws-properties-rtbfabric-respondergateway-healthcheckconfig"></a>
 
 <a name="aws-properties-rtbfabric-respondergateway-healthcheckconfig-description"></a>The `HealthCheckConfig` property type specifies Property description not available. for an [AWS::RTBFabric::ResponderGateway](aws-resource-rtbfabric-respondergateway.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # Network Security Controls and Network Intrusion
-<a name="faq"></a>
 
 Network security controls form a key line of defense in protecting cardholder data environments from unauthorized access and malicious activity. PCI DSS Requirement 1 mandates the installation and maintenance of network security controls to restrict network access to and from the cardholder data environment (CDE), while Requirement 11.5.1 requires the prevention/detection and response to network intrusions. These requirements are foundational to PCI DSS compliance because network boundaries define the scope of the CDE, and effective network intrusion capabilities enables organizations to identify and respond to security incidents before they result in data compromise. In cloud environments, software-defined networking and managed security services provide opportunities to implement these controls with greater automation, consistency, and scalability.
 

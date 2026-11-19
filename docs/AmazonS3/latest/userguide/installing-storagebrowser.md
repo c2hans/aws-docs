@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/installing-sto
 ---
 
 # Installing Storage Browser for S3
-<a name="installing-storagebrowser"></a>
 
 The fastest way to get started with Storage Browser is to clone one of the sample projects on GitHub. These sample projects can help you deploy production ready web apps for Storage Browser with preset integrations of AWS services for AWS Identity and Access Management so you can quickly connect authorized end users to data in S3.
 

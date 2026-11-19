@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCognitoPowerUser
-<a name="AmazonCognitoPowerUser"></a>
 
 **Description**: Provides administrative access to existing Amazon Cognito resources. You will need AWS account admin privileges to create new Cognito resources.
 

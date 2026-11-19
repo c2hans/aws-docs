@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/insights-
 ---
 
 # Costs for Insights events
-<a name="insights-events-costs"></a>
 
 **Note**
 Insights events on data events are only supported on trails.

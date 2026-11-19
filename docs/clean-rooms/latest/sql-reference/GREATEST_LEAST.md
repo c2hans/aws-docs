@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/GREATES
 ---
 
 # GREATEST and LEAST expression
-<a name="GREATEST_LEAST"></a>
 
 Returns the largest or smallest value from a list of any number of expressions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteSe
 ---
 
 # DeleteSecurityProfile
-<a name="API_DeleteSecurityProfile"></a>
 
 Deletes a security profile.
 

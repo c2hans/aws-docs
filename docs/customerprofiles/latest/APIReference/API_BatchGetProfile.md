@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # BatchGetProfile
-<a name="API_connect-customer-profiles_BatchGetProfile"></a>
 
 Get a batch of profiles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html
 ---
 
 # Tutorial: Getting started with Amazon EMR
-<a name="emr-gs"></a>
 
 Walk through a workflow to quickly set up an Amazon EMR cluster and run a Spark application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel09-b
 ---
 
 # REL09-BP05 Implement cyber resilience for backup data
-<a name="rel09-bp05"></a>
 
  A ransomware or destructive event can breach the production environment or its identities and then delete or tamper with the backup copies you rely on to recover. Cyber resilience keeps backup data protected from deletion and tampering, so you can still recover even when production itself is affected.
 

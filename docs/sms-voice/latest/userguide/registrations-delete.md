@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Delete a registration in AWS End User Messaging SMS
-<a name="registrations-delete"></a>
 
 You can delete your registration if it is no longer needed. This will permanently delete the registration.
 

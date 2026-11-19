@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/ug/using-dolby-a
 This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
 
 # Using Dolby Atmos Encoding with AWS Elemental Server
-<a name="using-dolby-atmos-encoding"></a>
 
 AWS Elemental Server can encode Dolby Digital Plus with Atmos channel-based, immersive audio, Audio Descriptive Model Broadcast WAV files, or Dolby Atmos Master File.
 

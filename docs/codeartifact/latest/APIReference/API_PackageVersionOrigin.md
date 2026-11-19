@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageVersionOrigin
-<a name="API_PackageVersionOrigin"></a>
 
 Information about how a package version was added to a repository.
 

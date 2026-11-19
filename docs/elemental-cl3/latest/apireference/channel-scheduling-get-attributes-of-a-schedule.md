@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # GET: Get the Attributes of a Schedule
-<a name="channel-scheduling-get-attributes-of-a-schedule"></a>
 
 Get the details of a specific schedule.
 

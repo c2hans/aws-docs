@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeImageReferences
-<a name="API_DescribeImageReferences"></a>
 
 Describes your AWS resources that are referencing the specified images.
 

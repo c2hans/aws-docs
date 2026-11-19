@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resourc
 ---
 
 # Reading a resource with AWS Cloud Control API
-<a name="resource-operations-read"></a>
 
 Using a resource's primary identifier, you can call the `get-resource` command to retrieve detailed information about the resource. For information about retrieving a resource's primary identifier, see [Identifying resources with AWS Cloud Control API](resource-identifier.md).
 

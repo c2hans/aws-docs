@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::InferenceExperiment RealTimeInferenceConfig
-<a name="aws-properties-sagemaker-inferenceexperiment-realtimeinferenceconfig"></a>
 
 The infrastructure configuration for deploying the model to a real-time inference endpoint.
 

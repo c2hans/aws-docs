@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNPERF02-BP05 Plan for bandwidth scaling
-<a name="hnperf02-bp05"></a>
 
  High-speed dedicated connections can offer bandwidth up to hundreds of gigabits per second. LAG enables bundling multiple physical connections to increase total available bandwidth. Additionally, implementing load balancing across multiple connections using ECMP routing provides enhanced bandwidth scaling and improved reliability. For virtual private network implementations, similar scaling can be achieved by establishing multiple VPN connections and utilizing ECMP to distribute traffic effectively across these paths. Understanding these scaling options and their appropriate use cases is crucial for designing network architectures that can grow with business demands while maintaining performance and reliability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/edit-jobs-source-s3-files
 ---
 
 # Using files in Amazon S3 for the data source
-<a name="edit-jobs-source-s3-files"></a>
 
 If you choose Amazon S3 as your data source, then you can choose either:
 + A Data Catalog database and table.

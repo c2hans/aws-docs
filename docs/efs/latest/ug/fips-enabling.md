@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/fips-enabling.html
 ---
 
 # Enabling FIPS mode
-<a name="fips-enabling"></a>
 
 If your operating system is using Federal Information Processing Standards (FIPS) endpoints when mounting your file system, then you must enable FIPS mode in the Amazon EFS client. Enabling the FIPS mode involves modifying the `efs-utils.conf` file on the operating system.
 

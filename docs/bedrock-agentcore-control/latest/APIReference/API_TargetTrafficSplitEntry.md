@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # TargetTrafficSplitEntry
-<a name="API_TargetTrafficSplitEntry"></a>
 
 An entry in a target traffic split configuration.
 

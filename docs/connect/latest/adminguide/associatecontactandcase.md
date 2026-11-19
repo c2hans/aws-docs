@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/associateconta
 ---
 
 # Associate a contact with a case in Connect Customer
-<a name="associatecontactandcase"></a>
 
 You can associate the contact to an existing case, such that the contact will appear on the activity feed of the case with indicator **Ongoing**.
 

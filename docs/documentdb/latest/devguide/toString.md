@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/toString.html
 ---
 
 # $toString
-<a name="toString"></a>
 
 New from version 4.0
 

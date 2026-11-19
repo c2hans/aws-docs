@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # ServiceInfo
-<a name="API_ServiceInfo"></a>
 
 Information about an AWS service.
 

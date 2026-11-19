@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Histo
 ---
 
 # HistogramConfiguration
-<a name="API_HistogramConfiguration"></a>
 
 The configuration for a `HistogramVisual`.
 

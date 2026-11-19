@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DateTimeConverter
-<a name="API_DateTimeConverter"></a>
 
 This processor converts a datetime string into a format that you specify.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/kms-events.htm
 ---
 
 # Monitor KMS keys with Amazon EventBridge
-<a name="kms-events"></a>
 
 You can use Amazon EventBridge (formerly Amazon CloudWatch Events) to alert you to the following important events in the lifecycle of your KMS keys.
 + The key material in a KMS key was rotated automatically or on-demand.

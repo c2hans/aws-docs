@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Sample Java/JMX workload for Amazon ECS clusters
-<a name="ContainerInsights-Prometheus-Sample-Workloads-ECS-javajmx"></a>
 
 JMX Exporter is an official Prometheus exporter that can scrape and expose JMX mBeans as Prometheus metrics. For more information, see [prometheus/jmx\_exporter](https://github.com/prometheus/jmx_exporter).
 

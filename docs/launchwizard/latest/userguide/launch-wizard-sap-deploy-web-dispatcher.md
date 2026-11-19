@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Deploying SAP Web Dispatcher
-<a name="launch-wizard-sap-deploy-web-dispatcher"></a>
 
 AWS Launch Wizard supports the deployment of SAP Web Dispatcher as an optional component for Netweaver stack on HANA deployments. SAP Web Dispatcher is deployed in front of your SAP Application Servers to act as the entry point for HTTP(S) request traffic destined for your SAP Application Servers. SAP Web Dispatcher accepts or rejects the request traffic that arrives. Accepted traffic is load balanced among your Application Servers. You can use SAP Web Dispatcher in systems with the following application stacks:
 + Advanced Business Application Programming (ABAP) only

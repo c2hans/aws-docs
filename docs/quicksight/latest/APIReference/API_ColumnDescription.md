@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnDescription
-<a name="API_ColumnDescription"></a>
 
 Metadata that contains a description for a column.
 

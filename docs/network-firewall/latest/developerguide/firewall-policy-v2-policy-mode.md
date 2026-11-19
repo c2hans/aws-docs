@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Policy mode: enforce and monitor
-<a name="firewall-policy-v2-policy-mode"></a>
 
 The policy mode setting controls whether the policy's engines apply their actions or only report them in your logs. In both modes, both engines evaluate traffic against your rules. In monitor mode, Network Firewall also turns on alert logging for your rules and for the firewall default action, so monitor mode produces alert log entries that enforce mode doesn't.
 + **Enforce** (default) – The engines apply their actions. The firewall engine drops or rejects traffic that isn't accepted, and the IPS engine drops or rejects traffic that matches a drop or reject rule.

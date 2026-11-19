@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Explai
 ---
 
 # ExplainerConfig
-<a name="API_ExplainerConfig"></a>
 
 A parameter to activate explainers.
 

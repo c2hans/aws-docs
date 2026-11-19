@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Snowfla
 ---
 
 # SnowflakePropertiesInput
-<a name="API_SnowflakePropertiesInput"></a>
 
 Contains the Snowflake-specific settings required when creating or updating a connection, including the Snowflake role, identity mapping, and lineage sync configuration.
 

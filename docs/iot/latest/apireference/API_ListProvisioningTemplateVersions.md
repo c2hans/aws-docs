@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListProvisio
 ---
 
 # ListProvisioningTemplateVersions
-<a name="API_ListProvisioningTemplateVersions"></a>
 
 A list of provisioning template versions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_CreateC
 ---
 
 # CreateComplianceInquiry
-<a name="API_CreateComplianceInquiry"></a>
 
 Create a new compliance inquiry.
 

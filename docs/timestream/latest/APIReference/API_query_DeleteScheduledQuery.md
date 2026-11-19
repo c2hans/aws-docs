@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # DeleteScheduledQuery
-<a name="API_query_DeleteScheduledQuery"></a>
 
 Deletes a given scheduled query. This is an irreversible operation.
 

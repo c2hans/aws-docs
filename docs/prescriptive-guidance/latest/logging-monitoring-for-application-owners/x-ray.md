@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # AWS X-Ray
-<a name="x-ray"></a>
 
 [AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html) collects data about requests that your application serves, and it helps you view, filter, and gain insights into that data to identify issues and opportunities for optimization.
 

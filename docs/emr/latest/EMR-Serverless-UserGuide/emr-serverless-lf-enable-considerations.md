@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-
 ---
 
 # Considerations and limitations
-<a name="emr-serverless-lf-enable-considerations"></a>
 
 ## General
 <a name="emr-s-lf-considerations"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.DT.5] Utilize incremental metrics computation
-<a name="qa.dt.5-utilize-incremental-metrics-computation"></a>
 
  **Category:** OPTIONAL
 

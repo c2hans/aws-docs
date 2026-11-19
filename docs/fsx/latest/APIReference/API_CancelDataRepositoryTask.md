@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CancelDataRe
 ---
 
 # CancelDataRepositoryTask
-<a name="API_CancelDataRepositoryTask"></a>
 
 Cancels an existing Amazon FSx for Lustre data repository task if that task is in either the `PENDING` or `EXECUTING` state. When you cancel an export task, Amazon FSx does the following.
 + Any files that FSx has already exported are not reverted.

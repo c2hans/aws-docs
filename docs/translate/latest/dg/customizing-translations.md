@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/customizing-translat
 ---
 
 # Customizing your translations with Amazon Translate
-<a name="customizing-translations"></a>
 
 You can use the following settings to customize the translations that you produce with Amazon Translate:
 + **Do-not-translate tags** – Use start and end tags to specify content that you don't want to translate (in HTML content).

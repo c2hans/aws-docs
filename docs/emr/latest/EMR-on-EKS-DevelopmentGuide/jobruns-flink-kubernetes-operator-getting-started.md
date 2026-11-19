@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Installing the Flink Kubernetes operator for Amazon EMR on EKS
-<a name="jobruns-flink-kubernetes-operator-getting-started"></a>
 
 This topic helps you start to use the Flink Kubernetes operator on Amazon EKS by preparing a Flink deployment.
 

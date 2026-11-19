@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSPERF07-BP01 Use a risk-based validation framework
-<a name="lsperf07-bp01"></a>
 
  Use risk-based validation with full validation (Installation, Operation, and Performance Qualification) for high-risk systems affecting patient safety, streamlined methods for lower-risk environments. Focus resources where critical and use automated testing to maintain regulatory adherence without slowing innovation. Revalidate based on risk assessment, not after every change.
 

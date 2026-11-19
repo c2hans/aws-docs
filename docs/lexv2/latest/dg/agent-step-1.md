@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/agent-step-1.html
 ---
 
 # Step 1: Create an Amazon Kendra Index
-<a name="agent-step-1"></a>
 
 Begin by creating an Amazon Kendra index of documents that answer customer questions. An index provides a search API for client queries. You create the index from source documents. Amazon Kendra returns answers it finds in indexed documents to the bot, which displays them to the agent.
 

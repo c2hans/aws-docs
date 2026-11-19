@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPrefi
 ---
 
 # IpamPrefixListResolverTarget
-<a name="API_IpamPrefixListResolverTarget"></a>
 
 Describes an IPAM prefix list resolver target.
 

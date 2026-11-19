@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/telem
 ---
 
 # Troubleshooting telemetry configuration
-<a name="telemetry-config-troubleshoot"></a>
 
 This section describes common issues you might encounter when using telemetry configuration and how to resolve them.
 

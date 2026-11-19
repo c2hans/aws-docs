@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/coh-get
 ---
 
 # Getting started with Cost Optimization Hub
-<a name="coh-getting-started"></a>
 
 The overviews in this section describe how to get started with Cost Optimization Hub in AWS Billing and Cost Management.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/bandwid
 ---
 
 # Bandwidth Recommendations
-<a name="bandwidth-recommendations-user-connections"></a>
 
 To optimize the performance of WorkSpaces Applications, make sure that your network bandwidth and latency can sustain your users' needs.
 

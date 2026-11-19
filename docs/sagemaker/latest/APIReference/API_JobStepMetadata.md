@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_JobSte
 ---
 
 # JobStepMetadata
-<a name="API_JobStepMetadata"></a>
 
 Metadata for a SageMaker job step.
 

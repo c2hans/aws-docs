@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Building an industrial Internet of Things (IIoT) digital transformation strategy
-<a name="introduction"></a>
 
 *Salih Bakir, Vladi Salomon, and Asim Kumar Sasmal, Amazon Web Services*
 

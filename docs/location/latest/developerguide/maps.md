@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/maps.html
 ---
 
 # Amazon Location Service Maps
-<a name="maps"></a>
 
 ![Workflow showing map selection, SDK integration, and deployment across multiple devices.](https://docs.aws.amazon.com/location/latest/developerguide/images/maps-overview.png)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_Firehose
 ---
 
 # FirehoseDestinationConfiguration
-<a name="API_FirehoseDestinationConfiguration"></a>
 
 Specifies a Kinesis Firehose location where chat logs will be stored.
 

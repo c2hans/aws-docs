@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_GetDocu
 ---
 
 # GetDocumentAnalysis
-<a name="API_GetDocumentAnalysis"></a>
 
 Gets the results for an Amazon Textract asynchronous operation that analyzes text in a document.
 

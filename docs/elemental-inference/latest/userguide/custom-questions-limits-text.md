@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Text rules
-<a name="custom-questions-limits-text"></a>
 
 The following rules apply to the text of questions and options:
 + **Question text** – 1–256 characters, and no more than 256 bytes in UTF-8.

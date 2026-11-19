@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/ipa-iam-ro
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Grant access to project AWS resources with IAM roles
-<a name="ipa-iam-roles"></a>
 
 CodeCatalyst can access AWS resources by connecting your AWS account to a CodeCatalyst space. You can then create the following service roles and associate them when you connect your account.
 

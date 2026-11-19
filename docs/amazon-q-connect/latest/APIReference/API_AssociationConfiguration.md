@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AssociationConfiguration
-<a name="API_amazon-q-connect_AssociationConfiguration"></a>
 
 The configuration for an Amazon Q in Connect Assistant Association.
 

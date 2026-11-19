@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpsertRedshiftTar
 ---
 
 # UpsertRedshiftTargetOptions
-<a name="API_UpsertRedshiftTargetOptions"></a>
 
 The options to configure an upsert operation when writing to a Redshift target .
 

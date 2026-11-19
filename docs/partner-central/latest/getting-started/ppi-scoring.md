@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Understanding your Performance Indicators score
-<a name="ppi-scoring"></a>
 
 Your Performance Indicators score is a single percentage that reflects your overall effectiveness across four key performance areas. The score ranges from 33% to 100%, with higher scores indicating stronger performance.
 

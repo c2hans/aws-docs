@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_SessionSt
 ---
 
 # SessionStatus
-<a name="API_SessionStatus"></a>
 
 Contains information about the status of a session.
 

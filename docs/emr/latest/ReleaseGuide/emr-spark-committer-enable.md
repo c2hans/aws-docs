@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-commit
 ---
 
 # Enable the EMRFS S3-optimized committer for Amazon EMR 5.19.0
-<a name="emr-spark-committer-enable"></a>
 
 If you are using Amazon EMR 5.19.0 , you can manually set the `spark.sql.parquet.fs.optimized.committer.optimization-enabled` property to `true` when you create a cluster or from within Spark if you are using Amazon EMR .
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # All capabilities project profile
-<a name="all-capabilities"></a>
 
 The All capabilities project profile enables your Amazon SageMaker Unified Studio users to analyze data and build machine learning and generative AI models and applications powered by Amazon Bedrock, Amazon EMR, AWS Glue, Amazon Athena, Amazon SageMaker AI, and Amazon SageMaker Lakehouse.
 

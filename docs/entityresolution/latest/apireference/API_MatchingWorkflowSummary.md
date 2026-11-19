@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # MatchingWorkflowSummary
-<a name="API_MatchingWorkflowSummary"></a>
 
 A list of `MatchingWorkflowSummary` objects, each of which contain the fields `workflowName`, `workflowArn`, `resolutionType`, `createdAt`, `updatedAt`.
 

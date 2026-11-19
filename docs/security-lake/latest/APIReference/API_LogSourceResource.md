@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Lo
 ---
 
 # LogSourceResource
-<a name="API_LogSourceResource"></a>
 
 The supported source types from which logs and events are collected in Amazon Security Lake. For a list of supported AWS services, see the [Amazon Security Lake User Guide](https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.html).
 

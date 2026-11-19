@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/softwar
 ---
 
 # Software and architecture patterns
-<a name="software-and-architecture-patterns"></a>
 
 | SaaS SUS 1: How do you use deployment models (silo, bridge, pool) to align tenant consumption with resource utilization? |
 | --- |

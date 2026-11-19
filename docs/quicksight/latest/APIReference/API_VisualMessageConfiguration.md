@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualMessageConfiguration
-<a name="API_VisualMessageConfiguration"></a>
 
 The configuration for a customizable message displayed on a visual. Supports parameter substitution in text fields.
 

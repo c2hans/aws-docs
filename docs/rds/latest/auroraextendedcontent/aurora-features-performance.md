@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Performance
-<a name="aurora-features-performance"></a>
 
 **Topics**
 + [Up to 6x the throughput of PostgreSQL and MySQL](#aurora-features-throughput)

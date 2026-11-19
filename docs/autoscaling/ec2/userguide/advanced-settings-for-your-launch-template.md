@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/advanced-setti
 ---
 
 # Create a launch template using advanced settings
-<a name="advanced-settings-for-your-launch-template"></a>
 
 This topic describes how to create a launch template with advanced settings from the AWS Management Console.
 

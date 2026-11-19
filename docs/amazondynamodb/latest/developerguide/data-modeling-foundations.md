@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dat
 ---
 
 # Data Modeling foundations in DynamoDB
-<a name="data-modeling-foundations"></a>
 
 This section covers the foundation layer by examining the two types of table design: single table and multiple table.
 

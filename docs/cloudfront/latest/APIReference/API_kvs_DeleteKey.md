@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_D
 ---
 
 # DeleteKey
-<a name="API_kvs_DeleteKey"></a>
 
 Deletes the key-value pair specified by the key.
 

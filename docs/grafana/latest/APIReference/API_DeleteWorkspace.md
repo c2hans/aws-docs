@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_DeleteWo
 ---
 
 # DeleteWorkspace
-<a name="API_DeleteWorkspace"></a>
 
 Deletes an Amazon Managed Grafana workspace.
 

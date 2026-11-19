@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/task-schedulin
 ---
 
 # Scheduling when your AWS DataSync task runs
-<a name="task-scheduling"></a>
 
 You can set up an AWS DataSync task schedule to periodically transfer data between storage locations.
 

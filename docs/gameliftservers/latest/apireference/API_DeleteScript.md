@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DeleteScript
-<a name="API_DeleteScript"></a>
 
  **This API works with the following fleet types:** EC2
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CodeBasedEvaluatorConfig
-<a name="API_CodeBasedEvaluatorConfig"></a>
 
  Configuration for a code-based evaluator. Specify the Lambda function to use for evaluation.
 

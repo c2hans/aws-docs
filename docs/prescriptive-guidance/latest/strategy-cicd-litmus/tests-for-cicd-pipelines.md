@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # Tests for CI/CD pipelines
-<a name="tests-for-cicd-pipelines"></a>
 
 The two types of automated tests that are commonly referred to in deployment pipelines are *unit tests* and *integration tests*. However, there are many types of tests that you can run on a code base and the development environment. The [AWS Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev/application-pipeline/) defines the following types of tests:
 + **Unit test** – These tests build and run application code to verify that it is performing according to expectations. They simulate all external dependencies that are used in the code base. Examples of unit test tools include [JUnit](https://junit.org/), [Jest](https://jestjs.io/), and [pytest](https://docs.pytest.org/en/stable/).

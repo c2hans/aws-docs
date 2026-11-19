@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_De
 ---
 
 # DeleteDataSet
-<a name="API_DeleteDataSet"></a>
 
 This operation deletes a data set.
 

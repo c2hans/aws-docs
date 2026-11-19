@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Docker
 ---
 
 # DockerSettings
-<a name="API_DockerSettings"></a>
 
 A collection of settings that configure the domain's Docker interaction.
 

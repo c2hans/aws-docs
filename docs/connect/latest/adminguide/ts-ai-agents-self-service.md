@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ts-ai-agents-s
 ---
 
 # Troubleshoot AI agent issues
-<a name="ts-ai-agents-self-service"></a>
 
 Use this topic to help diagnose and resolve common issues with AI agents.
 

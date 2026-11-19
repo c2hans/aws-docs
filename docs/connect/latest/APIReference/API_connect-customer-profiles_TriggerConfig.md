@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TriggerConfig
-<a name="API_connect-customer-profiles_TriggerConfig"></a>
 
 The trigger settings that determine how and when Amazon AppFlow runs the specified flow.
 

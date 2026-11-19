@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessNativeApplicationOidcOptions
-<a name="API_CreateVerifiedAccessNativeApplicationOidcOptions"></a>
 
 Describes the OpenID Connect (OIDC) options.
 

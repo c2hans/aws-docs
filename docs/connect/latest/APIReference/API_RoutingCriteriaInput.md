@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingC
 ---
 
 # RoutingCriteriaInput
-<a name="API_RoutingCriteriaInput"></a>
 
 An object to define the RoutingCriteria.
 

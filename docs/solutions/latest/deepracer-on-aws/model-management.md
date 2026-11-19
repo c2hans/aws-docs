@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/model-
 ---
 
 # Model management
-<a name="model-management"></a>
 
 **Note**
 This section is available to both admins and race facilitators. In the console, these pages live under the **Model Management** group in the navigation pane.

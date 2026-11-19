@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactL
 ---
 
 # ContactLensRedactionConfiguration
-<a name="API_ContactLensRedactionConfiguration"></a>
 
 The redaction configuration for conversational analytics transcripts.
 

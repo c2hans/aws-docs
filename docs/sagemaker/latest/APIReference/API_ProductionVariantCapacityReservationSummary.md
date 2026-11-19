@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Produc
 ---
 
 # ProductionVariantCapacityReservationSummary
-<a name="API_ProductionVariantCapacityReservationSummary"></a>
 
 Details about an ML capacity reservation.
 

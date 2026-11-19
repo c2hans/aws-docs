@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AmazonEC
 ---
 
 # Amazon ECS infrastructure IAM role for load balancers
-<a name="AmazonECSInfrastructureRolePolicyForLoadBalancers"></a>
 
 An Amazon ECS infrastructure IAM role for load balancers allows Amazon ECS to manage load balancer resources in your clusters on your behalf, and is used when:
 + You want to use blue/green deployments with Amazon ECS. The infrastructure role allows Amazon ECS to manage load balancer resources for your deployments.

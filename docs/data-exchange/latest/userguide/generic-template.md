@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/generic-t
 ---
 
 # Generic long description template for AWS Data Exchange products
-<a name="generic-template"></a>
 
 When listing a product on AWS Data Exchange, you should include a long description that contains all the information necessary for subscribers to understand what your product offers. The following is a general, all-purpose template for a long description.
 

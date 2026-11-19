@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/f
 ---
 
 # Fraud ring detection using Neo4j and graphs
-<a name="fraud-ring-detection-using-Neo4j-and-graphs"></a>
 
 Publication date: **June 10, 2024 ([Diagram history](#diagram-history))**
 

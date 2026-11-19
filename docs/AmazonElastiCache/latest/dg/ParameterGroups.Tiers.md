@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ParameterGro
 ---
 
 # Cache parameter group tiers in ElastiCache
-<a name="ParameterGroups.Tiers"></a>
 
 Amazon ElastiCache has three tiers of cache parameter groups as shown following.
 

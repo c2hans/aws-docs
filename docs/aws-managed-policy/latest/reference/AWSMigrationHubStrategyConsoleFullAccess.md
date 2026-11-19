@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubStrategyConsoleFullAccess
-<a name="AWSMigrationHubStrategyConsoleFullAccess"></a>
 
 **Description**: Grants full access to the AWS Migration Hub Strategy Recommendations service and access to related AWS services through the AWS Management Console.
 

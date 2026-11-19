@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GetDa
 ---
 
 # GetDashboardEmbedUrl
-<a name="API_GetDashboardEmbedUrl"></a>
 
 Generates a temporary session URL and authorization code(bearer token) that you can use to embed an Amazon Quick Sight read-only dashboard in your website or application. Before you use this command, make sure that you have configured the dashboards and permissions.
 

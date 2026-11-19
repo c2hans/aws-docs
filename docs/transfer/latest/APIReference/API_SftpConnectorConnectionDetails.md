@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_SftpCon
 ---
 
 # SftpConnectorConnectionDetails
-<a name="API_SftpConnectorConnectionDetails"></a>
 
 Contains the details for an SFTP connector connection.
 

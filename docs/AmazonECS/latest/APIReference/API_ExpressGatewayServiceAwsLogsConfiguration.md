@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Expres
 ---
 
 # ExpressGatewayServiceAwsLogsConfiguration
-<a name="API_ExpressGatewayServiceAwsLogsConfiguration"></a>
 
 Specifies the Amazon CloudWatch Logs configuration for the Express service container.
 

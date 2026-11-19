@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ami_cu
 ---
 
 # Step 2 – Install the AWS PCS agent
-<a name="working-with_ami_custom_install-agent"></a>
 
 Install the agent that configures the instances launched by AWS PCS for use with Slurm. For more information about the AWS PCS agent, see [AWS PCS agent versions](pcs-agent-versions.md).
 

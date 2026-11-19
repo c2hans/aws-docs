@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDatabase.html
 ---
 
 # GetDatabase
-<a name="API_GetDatabase"></a>
 
 Retrieves the definition of a specified database.
 

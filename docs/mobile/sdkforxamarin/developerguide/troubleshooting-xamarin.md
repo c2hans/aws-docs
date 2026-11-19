@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/trou
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Troubleshooting
-<a name="troubleshooting-xamarin"></a>
 
 This topic describes some ideas for troubleshooting problems you might encounter when using the AWS Mobile SDK for .NET and Xamarin.
 

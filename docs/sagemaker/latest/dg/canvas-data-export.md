@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-data-export.h
 ---
 
 # Automate data preparation in SageMaker Canvas
-<a name="canvas-data-export"></a>
 
 After you transform your data in data flow, you can export the transforms to your machine learning workflows. When you export your transforms, SageMaker Canvas creates a Jupyter notebook. You must run the notebook within Amazon SageMaker Studio Classic. For information about getting started with Studio Classic, contact your administrator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/awsflow-ba
 ---
 
 # AWS Flow Framework Basic Concepts: Reliable Execution
-<a name="awsflow-basics-reliable-execution"></a>
 
 Asynchronous distributed applications must deal with reliability issues that are not encountered by conventional applications, including:
 + How to *provide reliable communication* between asynchronous distributed components, such as long-running components on remote systems.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk formally supports platform branches on April 8, 2020
-<a name="release-2020-04-08-branches"></a>
 
 AWS Elastic Beanstalk made API and console changes to formally add the concept of platform branches. A platform branch has a support lifecycle and consistes of successive platform version updates.
 

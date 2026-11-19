@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SecretsManagerCertificateConfiguration
-<a name="API_SecretsManagerCertificateConfiguration"></a>
 
 A reference to a PEM-encoded private CA certificate stored in an AWS Secrets Manager secret.
 

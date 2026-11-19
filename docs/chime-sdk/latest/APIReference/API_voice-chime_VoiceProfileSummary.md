@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # VoiceProfileSummary
-<a name="API_voice-chime_VoiceProfileSummary"></a>
 
 A high-level summary of a voice profile.
 

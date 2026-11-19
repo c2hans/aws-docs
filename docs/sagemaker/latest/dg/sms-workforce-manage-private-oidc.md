@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-manage
 ---
 
 # Manage a Private Workforce (OIDC IdP)
-<a name="sms-workforce-manage-private-oidc"></a>
 
 Once you've created a private workforce using your OpenID Connect (OIDC) Identity Provider (IdP), you can manage your workers using your IdP. For example, you can add, remove, and group workers directly through your IdP.
 

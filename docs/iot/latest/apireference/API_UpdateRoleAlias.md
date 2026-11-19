@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateRoleAl
 ---
 
 # UpdateRoleAlias
-<a name="API_UpdateRoleAlias"></a>
 
 Updates a role alias.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/mss-troubl
 ---
 
 # Troubleshooting MSS endpoints in AWS Elemental MediaPackage
-<a name="mss-troubleshooting"></a>
 
 This topic helps you identify and resolve common issues with Microsoft Smooth Streaming (MSS) endpoints in AWS Elemental MediaPackage.
 

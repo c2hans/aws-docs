@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/add
 ---
 
 # Additional Resources
-<a name="additional-resources"></a>
 
 ## Related AWS Services
 <a name="related-aws-services"></a>

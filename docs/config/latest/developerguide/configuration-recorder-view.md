@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/configurati
 ---
 
 # Viewing your configuration recorders
-<a name="configuration-recorder-view"></a>
 
 You can use the AWS Config console or the AWS CLI view details about your configuration recorders.
 

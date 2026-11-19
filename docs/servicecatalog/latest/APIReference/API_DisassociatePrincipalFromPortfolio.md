@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DisassociatePrincipalFromPortfolio
-<a name="API_DisassociatePrincipalFromPortfolio"></a>
 
 Disassociates a previously associated principal ARN from a specified portfolio.
 

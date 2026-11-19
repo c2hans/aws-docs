@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # S3RecordingSinkRuntimeConfiguration
-<a name="API_media-pipelines-chime_S3RecordingSinkRuntimeConfiguration"></a>
 
 A structure that holds the settings for transmitting media files to the Amazon S3 bucket. If specified, the settings in this structure override any settings in `S3RecordingSinkConfiguration`.
 

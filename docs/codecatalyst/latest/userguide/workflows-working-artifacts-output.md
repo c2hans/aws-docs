@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Defining an output artifact
-<a name="workflows-working-artifacts-output"></a>
 
 Use the following instructions to define an artifact that you want an Amazon CodeCatalyst action to output. This artifact then becomes available for other actions to use.
 

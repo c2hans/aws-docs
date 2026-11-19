@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListDiscoveredEndpoints
-<a name="API_ListDiscoveredEndpoints"></a>
 
 Returns a paginated list of endpoints discovered during a pentest job execution.
 

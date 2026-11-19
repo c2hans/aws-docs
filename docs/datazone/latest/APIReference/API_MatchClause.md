@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_MatchCl
 ---
 
 # MatchClause
-<a name="API_MatchClause"></a>
 
 A clause to match a query pattern
 

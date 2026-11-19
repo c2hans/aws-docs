@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/spgi-market-intel
 ---
 
 # Using third party data in Quick Research (S&P Global Market Intelligence)
-<a name="spgi-market-intelligence"></a>
 
 Using S&P Global's MCP Server for the Kensho LLM-Ready API, customers can unlock S&P Global's trusted data and insights using natural language queries, enabling financial professionals to answer complex financial questions and get fast, reliable answers grounded in reliable data from S&P Global.
 

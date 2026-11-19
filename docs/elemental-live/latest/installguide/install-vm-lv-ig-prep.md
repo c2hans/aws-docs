@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/insta
 ---
 
 # Step A: Prepare hardware and download files
-<a name="install-vm-lv-ig-prep"></a>
 
 ## Prepare hardware and network
 <a name="install-vm-lv-ig-prep-hw"></a>

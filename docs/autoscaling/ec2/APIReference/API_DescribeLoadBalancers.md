@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeLoadBalancers
-<a name="API_DescribeLoadBalancers"></a>
 
 **Note**
 This API operation is superseded by [DescribeTrafficSources](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeTrafficSources.html), which can describe multiple traffic sources types. We recommend using `DescribeTrafficSources` to simplify how you manage traffic sources. However, we continue to support `DescribeLoadBalancers`. You can use both the original `DescribeLoadBalancers` API operation and `DescribeTrafficSources` on the same Auto Scaling group.

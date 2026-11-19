@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateGu
 ---
 
 # CreateGuardrailVersion
-<a name="API_CreateGuardrailVersion"></a>
 
 Creates a version of the guardrail. Use this API to create a snapshot of the guardrail when you are satisfied with a configuration, or to compare the configuration with another version.
 

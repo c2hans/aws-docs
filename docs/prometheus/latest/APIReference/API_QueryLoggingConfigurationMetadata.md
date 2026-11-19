@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Query
 ---
 
 # QueryLoggingConfigurationMetadata
-<a name="API_QueryLoggingConfigurationMetadata"></a>
 
 The metadata for a query logging configuration.
 

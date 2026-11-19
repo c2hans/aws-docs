@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # SQL Server
-<a name="sql-server"></a>
 
 Customers have been running Microsoft workloads on AWS for over 15 years. AWS has extensive experience with Microsoft applications in the cloud and offers services for Windows Server and Microsoft SQL Server in the following areas:
 + Higher performance and reliability

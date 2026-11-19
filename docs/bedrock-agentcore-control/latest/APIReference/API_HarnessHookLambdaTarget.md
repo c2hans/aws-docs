@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessHookLambdaTarget
-<a name="API_HarnessHookLambdaTarget"></a>
 
 The configuration for an AWS Lambda hook target.
 

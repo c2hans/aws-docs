@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/repo-upstream-add
 ---
 
 # Add or remove upstream repositories
-<a name="repo-upstream-add"></a>
 
 Follow the steps in the following sections to add or remove upstream repositories to or from an CodeArtifact repository. For more information about upstream repositories, see [Working with upstream repositories in CodeArtifact](repos-upstream.md).
 

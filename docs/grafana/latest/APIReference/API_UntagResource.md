@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_UntagRes
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 The `UntagResource` operation removes the association of the tag with the Amazon Managed Grafana resource.
 

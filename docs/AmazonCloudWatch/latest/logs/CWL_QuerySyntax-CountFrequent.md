@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # countFrequent
-<a name="CWL_QuerySyntax-CountFrequent"></a>
 
 Use the `countFrequent` command (also available as `count_frequent`) to compute an approximate count of each unique field-value combination, sorted in descending order. The command emits an `_approxcount` field.
 

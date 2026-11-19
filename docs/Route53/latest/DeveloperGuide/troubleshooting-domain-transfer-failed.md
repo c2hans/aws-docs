@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/troublesho
 ---
 
 # Transferring my domain to Amazon Route 53 failed
-<a name="troubleshooting-domain-transfer-failed"></a>
 
 If your domain transfer has already failed or been rejected, use this section to diagnose and resolve the failure.
 

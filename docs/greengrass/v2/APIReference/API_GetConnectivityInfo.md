@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_GetConnec
 ---
 
 # GetConnectivityInfo
-<a name="API_GetConnectivityInfo"></a>
 
 Retrieves connectivity information for a Greengrass core device.
 

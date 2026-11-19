@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/streaming-medical-d
 ---
 
 # Transcribing a medical dictation in a real-time stream
-<a name="streaming-medical-dictation"></a>
 
 Use a WebSocket stream to transcribe a medical dictation as an audio stream. You can also use the AWS Management Console to transcribe speech that you or others speak directly into a microphone.
 

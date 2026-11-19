@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/sequences-i
 ---
 
 # Identity columns
-<a name="sequences-identity-columns-overview"></a>
 
 **Important**
 When using identity columns, the cache value should be carefully considered. For more information, see the Important callout on the [`CREATE SEQUENCE`](create-sequence-syntax-support.md) page.

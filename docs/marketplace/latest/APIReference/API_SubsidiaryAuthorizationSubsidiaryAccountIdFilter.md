@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationSubsidiaryAccountIdFilter
-<a name="API_SubsidiaryAuthorizationSubsidiaryAccountIdFilter"></a>
 
 The filter for the AWS account IDs of subsidiary accounts.
 

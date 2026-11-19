@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-view
 ---
 
 # Prefill guides for after contact work using conversational analytics
-<a name="integrate-views-conversational-analytics"></a>
 
 You can fill in fields in a guide for after contact work (ACW) with outputs from conversational analytics:
 + The contact summary.

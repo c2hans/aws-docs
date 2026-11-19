@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_L
 ---
 
 # ListImports
-<a name="API_ListImports"></a>
 
  Lists completed imports within the past 90 days.
 

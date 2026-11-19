@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/container-planning-u
 ---
 
 # Preparing the upstream and downstream systems in a workflow
-<a name="container-planning-uss-dss"></a>
 
 As the first stage in planning the workflow, you must set up the upstream and downstream systems.
 

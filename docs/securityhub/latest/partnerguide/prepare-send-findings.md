@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/partnerguide/prepare-
 ---
 
 # Preparing to send findings to AWS Security Hub CSPM
-<a name="prepare-send-findings"></a>
 
 As an APN Partner, you cannot send information to Security Hub CSPM for your customers until the Security Hub CSPM team enables you as a finding provider. To be enabled as a finding provider, you must complete the following onboarding steps. Doing so ensures a positive experience Security Hub CSPM for you and your customers.
 

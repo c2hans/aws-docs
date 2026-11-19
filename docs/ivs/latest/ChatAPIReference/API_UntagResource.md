@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_UntagRes
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from the resource with the specified ARN.
 

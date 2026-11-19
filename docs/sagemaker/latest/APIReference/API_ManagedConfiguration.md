@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Manage
 ---
 
 # ManagedConfiguration
-<a name="API_ManagedConfiguration"></a>
 
 The managed configuration of a model package group.
 

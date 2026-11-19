@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Managing dependencies for cross-cutting concerns
-<a name="manage-dependencies"></a>
 
 Conscious dependency management is important for the success of a distributed architecture such as micro-frontends. It is also a challenging part of micro-frontend development.
 

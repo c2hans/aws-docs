@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/processors-pid-re
 ---
 
 # PID remapping
-<a name="processors-pid-remapping"></a>
 
 The PID remapping processor changes the Packet IDs (PIDs) of the streams in the transport stream that a router output sends.
 

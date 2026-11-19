@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Example: Monitoring SAP clusters and services
-<a name="monitoring"></a>
 
 Another example of automation for SAP on AWS is monitoring SAP application clusters, SAP HANA clusters, and SAP application service. By automating monitoring, you can effectively monitor SAP NetWeaver and database cluster environments at a low cost, without the need to deploy or manage any servers or agents. The blog post [SAP application cluster, SAP HANA cluster and SAP application service monitoring](https://aws.amazon.com/blogs/awsforsap/sap-application-cluster-sap-hana-cluster-and-sap-application-service-monitoring/) describes the technique of using CloudWatch metrics and dashboards to monitor the SAP application clusters, HANA database clusters, and HANA replication and SAP application core services. The benefits of this AWS automation capability are:
 + Effective monitoring of SAP Advanced Business Application Programming (ABAP)-based environments

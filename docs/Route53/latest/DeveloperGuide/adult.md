@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/adult.html
 ---
 
 # .adult
-<a name="adult"></a>
 
 Used for websites that host adults-only content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/work
 ---
 
 # Making AWS service requests using the AWS SDK for Java 2.x
-<a name="work-witih-clients"></a>
 
 ## Using service clients to make requests
 <a name="using-service-client"></a>

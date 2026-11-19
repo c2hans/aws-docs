@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPool AdvancedSecurityAdditionalFlows
-<a name="aws-properties-cognito-userpool-advancedsecurityadditionalflows"></a>
 
 Threat protection configuration options for additional authentication types in your user pool, including custom authentication.
 

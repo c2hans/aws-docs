@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-GetCe
 ---
 
 # GetCertificate
-<a name="JavaApi-GetCertificate"></a>
 
 The following Java sample shows how to use the [GetCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCertificate.html) operation.
 

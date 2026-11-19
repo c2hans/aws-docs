@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListR
 ---
 
 # ListRecoveryPointsByLegalHold
-<a name="API_ListRecoveryPointsByLegalHold"></a>
 
 This action returns recovery point ARNs (Amazon Resource Names) of the specified legal hold.
 

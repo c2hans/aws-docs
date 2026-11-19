@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFin
 ---
 
 # ListFindingAggregators
-<a name="API_ListFindingAggregators"></a>
 
 If cross-Region aggregation is enabled, then `ListFindingAggregators` returns the Amazon Resource Name (ARN) of the finding aggregator. You can run this operation from any AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_MaintenanceW
 ---
 
 # MaintenanceWindow
-<a name="API_MaintenanceWindow"></a>
 
 The scheduling details for the maintenance window. Patching and system updates take place during the maintenance window.
 

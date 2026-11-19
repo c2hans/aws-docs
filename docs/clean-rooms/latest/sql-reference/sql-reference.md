@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-ref
 ---
 
 # Overview of SQL in AWS Clean Rooms
-<a name="sql-reference"></a>
 
 Welcome to the *AWS Clean Rooms SQL Reference.*
 

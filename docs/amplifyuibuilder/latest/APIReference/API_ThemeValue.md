@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ThemeValue
-<a name="API_ThemeValue"></a>
 
 Describes the configuration of a theme's properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/timestream-
 ---
 
 # Applying the AWS Well-Architected Framework for Amazon Timestream for InfluxDB
-<a name="introduction"></a>
 
 *Balwanth Bobilli, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # WhatsApp message status
-<a name="managing-event-destinations-status"></a>
 
 When you send a message, you receive status updates about the message. You have to enable event logging to receive these notifications, see [Message and event destinations in AWS End User Messaging Social](managing-event-destinations.md).
 

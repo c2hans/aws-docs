@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Physical replication
-<a name="ha-physical-replication-considerations"></a>
 
 Physical replication is block-level replication where a WAL file is shipped from a primary database to a secondary database. Physical replication is also called *streaming replication* because it allows a standby server to stay more up-to-date than is possible with file-based log shipping. The standby server connects to the primary database. Then, the primary database streams WAL records to the standby database without waiting for the WAL file to be filled. Physical replication is an option worth considering if you have a small or medium-sized database and you're planning to use the same database version. Also, you can use physical replication for larger databases, but the sync can take a considerable amount of time. You can use either of the following two methods with physical replication:
 

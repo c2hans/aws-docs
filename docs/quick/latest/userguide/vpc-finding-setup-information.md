@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/vpc-finding-setup
 ---
 
 # Finding information to connect to a VPC
-<a name="vpc-finding-setup-information"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Understanding masking behavior in trigger functions
-<a name="AuroraPostgreSQL.Security.DynamicMasking.TriggerFunctionMasking"></a>
 
 When `pg_columnmask` policies are applied to tables, it's important to understand how masking interacts with trigger functions. Triggers are database functions that execute automatically in response to certain events on a table, such as INSERT, UPDATE, or DELETE operations.
 

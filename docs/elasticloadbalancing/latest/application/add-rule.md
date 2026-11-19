@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Add a listener rule for your Application Load Balancer
-<a name="add-rule"></a>
 
 You define a default rule when you create a listener. You can define additional rules at any time. Each rule must specify an action and a condition, and can optionally specify transforms. For more information, see the following:
 + [Action types](rule-action-types.md)

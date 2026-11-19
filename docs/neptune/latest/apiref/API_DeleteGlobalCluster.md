@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DeleteGlobalCl
 ---
 
 # DeleteGlobalCluster
-<a name="API_DeleteGlobalCluster"></a>
 
 Deletes a global database. The primary and all secondary clusters must already be detached or deleted first.
 
@@ -26,7 +25,7 @@ The following element is returned by the service.
 
  ** GlobalCluster **
 Contains the details of an Amazon Neptune global database.
-This data type is used as a response element for the [CreateGlobalCluster](API_CreateGlobalCluster.md), [DescribeGlobalClusters](API_DescribeGlobalClusters.md), [ModifyGlobalCluster](API_ModifyGlobalCluster.md), [DeleteGlobalCluster](#API_DeleteGlobalCluster), [FailoverGlobalCluster](API_FailoverGlobalCluster.md), and [RemoveFromGlobalCluster](API_RemoveFromGlobalCluster.md) actions.
+This data type is used as a response element for the [CreateGlobalCluster](API_CreateGlobalCluster.md), [DescribeGlobalClusters](API_DescribeGlobalClusters.md), [ModifyGlobalCluster](API_ModifyGlobalCluster.md), [DeleteGlobalCluster](API_DeleteGlobalCluster.md), [FailoverGlobalCluster](API_FailoverGlobalCluster.md), and [RemoveFromGlobalCluster](API_RemoveFromGlobalCluster.md) actions.
 Type: [GlobalCluster](API_GlobalCluster.md) object
 
 ## Errors

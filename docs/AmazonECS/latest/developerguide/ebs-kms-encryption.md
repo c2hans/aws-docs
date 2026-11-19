@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-kms-
 ---
 
 # Encrypt data stored in Amazon EBS volumes attached to Amazon ECS tasks
-<a name="ebs-kms-encryption"></a>
 
 You can use AWS Key Management Service (AWS KMS) to make and manage cryptographic keys that protect your data. Amazon EBS volumes are encrypted at rest by using AWS KMS keys. The following types of data are encrypted:
 + Data stored at rest on the volume

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Ch
 ---
 
 # Channel
-<a name="API_Channel"></a>
 
 Contains information about a returned CloudTrail channel.
 

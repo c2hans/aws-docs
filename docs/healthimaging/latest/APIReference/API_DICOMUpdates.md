@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DI
 ---
 
 # DICOMUpdates
-<a name="API_DICOMUpdates"></a>
 
 The object containing `removableAttributes` and `updatableAttributes`.
 

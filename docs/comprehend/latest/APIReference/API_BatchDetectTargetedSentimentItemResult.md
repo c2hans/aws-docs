@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Batch
 ---
 
 # BatchDetectTargetedSentimentItemResult
-<a name="API_BatchDetectTargetedSentimentItemResult"></a>
 
 Analysis results for one of the documents in the batch.
 

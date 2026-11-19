@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetRelationalDatabaseSnapshots
-<a name="API_GetRelationalDatabaseSnapshots"></a>
 
 Returns information about all of your database snapshots in Amazon Lightsail.
 

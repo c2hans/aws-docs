@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/u
 ---
 
 # Using custom policies to map users
-<a name="user-role-mapping"></a>
 
 The topics in this section explain how to map AWS Partner Central users to AWS IAM roles. Mapping enables single sign-on access for users across AWS Partner Central and AWS. plus other features such as product and offer linking.
 

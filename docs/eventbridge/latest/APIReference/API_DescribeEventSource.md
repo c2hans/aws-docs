@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Desc
 ---
 
 # DescribeEventSource
-<a name="API_DescribeEventSource"></a>
 
 This operation lists details about a partner event source that is shared with your account.
 

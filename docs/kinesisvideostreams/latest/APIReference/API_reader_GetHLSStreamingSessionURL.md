@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # GetHLSStreamingSessionURL
-<a name="API_reader_GetHLSStreamingSessionURL"></a>
 
 Retrieves an HTTP Live Streaming (HLS) URL for the stream. You can then open the URL in a browser or media player to view the stream contents.
 

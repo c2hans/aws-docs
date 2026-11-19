@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/machine-learnin
 ---
 
 # Content Domain 4: Machine Learning Implementation and Operations
-<a name="machine-learning-specialty-01-domain4"></a>
 
 **Topics**
 + [Task 4.1: Build ML solutions for performance, availability, scalability, resiliency, and fault tolerance](#machine-learning-specialty-01-domain4-task1)

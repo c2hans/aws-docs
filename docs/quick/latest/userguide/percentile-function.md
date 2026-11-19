@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/percentile-functi
 ---
 
 # percentile
-<a name="percentile-function"></a>
 
 The `percentile` function calculates the percentile of the values in measure, grouped by the dimension that's in the field well. There are two varieties of percentile calculation available in Quick:
 + [percentileCont](https://docs.aws.amazon.com/quicksight/latest/user/percentileCont-function.html) uses linear interpolation to determine result.

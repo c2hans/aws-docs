@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetGlossary.html
 ---
 
 # GetGlossary
-<a name="API_GetGlossary"></a>
 
 Retrieves a business glossary in AWS Glue Data Catalog by its identifier.
 

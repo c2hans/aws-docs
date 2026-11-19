@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/s_Type_
 ---
 
 # Type compatibility and conversion
-<a name="s_Type_conversion"></a>
 
 The following topics describe how type conversion rules and data type compatibility work in AWS Clean Rooms Spark SQL.
 

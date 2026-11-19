@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuditCheckCo
 ---
 
 # AuditCheckConfiguration
-<a name="API_AuditCheckConfiguration"></a>
 
 Which audit checks are enabled and disabled for this account.
 

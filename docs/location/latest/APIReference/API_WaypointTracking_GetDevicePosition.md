@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # GetDevicePosition
-<a name="API_WaypointTracking_GetDevicePosition"></a>
 
 Retrieves a device's most recent position according to its sample time.
 

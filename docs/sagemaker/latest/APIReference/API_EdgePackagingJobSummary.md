@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EdgePa
 ---
 
 # EdgePackagingJobSummary
-<a name="API_EdgePackagingJobSummary"></a>
 
 Summary of edge packaging job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 As the cloud becomes increasingly integral to business innovation, decision makers and executives can find it overwhelming to determine where to begin. The AWS Cloud Adoption Framework (AWS CAF) perspectives and mechanisms described in this guide can help you create a roadmap to accelerate your cloud transformation journey and can help you use the full power of cloud services to innovate and automate operations, instead of operating cloud workloads like they are on premises. This cloud adoption roadmap is a vital asset when beginning the process of migrating to cloud or designing cloud-native applications. Use the roadmap to convince various stakeholders of the benefits of cloud adoption.
 

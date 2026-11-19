@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksContain
 ---
 
 # EksContainerSecurityContext
-<a name="API_EksContainerSecurityContext"></a>
 
 The security context for a job. For more information, see [Configure a security context for a pod or container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) in the *Kubernetes documentation*.
 

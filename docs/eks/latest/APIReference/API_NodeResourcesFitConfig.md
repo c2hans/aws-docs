@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_NodeResource
 ---
 
 # NodeResourcesFitConfig
-<a name="API_NodeResourcesFitConfig"></a>
 
 The NodeResourcesFit plugin configuration for the Kubernetes scheduler.
 

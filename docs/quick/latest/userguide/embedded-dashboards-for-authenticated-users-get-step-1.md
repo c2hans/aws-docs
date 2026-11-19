@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-dashboar
 ---
 
 # Step 1: Set up permissions
-<a name="embedded-dashboards-for-authenticated-users-get-step-1"></a>
 
 **Important**
 AWS Quick Sight has new APIs for embedding analytics: `GenerateEmbedUrlForAnonymousUser` and `GenerateEmbedUrlForRegisteredUser`.

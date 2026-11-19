@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Performing block media recovery
-<a name="Appendix.Oracle.CommonDBATasks.block-media-recovery"></a>
 
 You can recover individual data blocks, known as block media recovery, using the Amazon RDS procedures `rdsadmin.rdsadmin_rman_util.recover_datafile_block`. You can use this overloaded procedure to recover either an individual data block or a range of data blocks.
 

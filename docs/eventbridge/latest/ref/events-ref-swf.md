@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-swf.ht
 ---
 
 # Amazon Simple Workflow Service events
-<a name="events-ref-swf"></a>
 
 Amazon SWF sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

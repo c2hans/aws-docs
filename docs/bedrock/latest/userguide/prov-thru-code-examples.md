@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prov-thru-code-
 ---
 
 # Code examples for Provisioned Throughput
-<a name="prov-thru-code-examples"></a>
 
 The following code examples demonstrate how to create a Provisioned Throughput and how to manage and invoke it, using the AWS CLI and the Python SDK. You can create a Provisioned Throughput from a foundation model or from a model that you've already customized. Before you get started, carry out the following prerequisites:
 

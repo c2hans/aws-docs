@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53GlobalResolver::GlobalResolver
-<a name="aws-resource-route53globalresolver-globalresolver"></a>
 
 Creates a new Route 53 Global Resolver instance. A Route 53 Global Resolver is a global, internet-accessible DNS resolver that provides secure DNS resolution for both public and private domains through global anycast IP addresses. When you create a resolver, use the `publicIpStatus` parameter to control public IP connectivity, which determines whether DNS clients can send queries to the resolver over the internet.
 
@@ -29,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[IpAddressType](#cfn-route53globalresolver-globalresolver-ipaddresstype)" : {{String}},
       "[Name](#cfn-route53globalresolver-globalresolver-name)" : {{String}},
       "[ObservabilityRegion](#cfn-route53globalresolver-globalresolver-observabilityregion)" : {{String}},
+      "[PublicIpStatus](#cfn-route53globalresolver-globalresolver-publicipstatus)" : {{String}},
       "[Regions](#cfn-route53globalresolver-globalresolver-regions)" : {{[ String, ... ]}},
       "[Tags](#cfn-route53globalresolver-globalresolver-tags)" : {{[ Tag, ... ]}}
     }
@@ -46,6 +46,7 @@ Properties:
   [IpAddressType](#cfn-route53globalresolver-globalresolver-ipaddresstype): {{String}}
   [Name](#cfn-route53globalresolver-globalresolver-name): {{String}}
   [ObservabilityRegion](#cfn-route53globalresolver-globalresolver-observabilityregion): {{String}}
+  [PublicIpStatus](#cfn-route53globalresolver-globalresolver-publicipstatus): {{String}}
   [Regions](#cfn-route53globalresolver-globalresolver-regions): {{
     - String}}
   [Tags](#cfn-route53globalresolver-globalresolver-tags): {{
@@ -93,6 +94,17 @@ The AWS Region where observability data is collected for the global resolver.
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `32`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PublicIpStatus`  <a name="cfn-route53globalresolver-globalresolver-publicipstatus"></a>
+Specifies the public IP connectivity to configure for the Route 53 Global Resolver. Public IP addresses let DNS clients send queries to the resolver over the internet. Valid values are the following:
++ `ENABLED_RESERVED` - Public IP connectivity is enabled, and the global anycast public IP addresses are reserved for the Route 53 Global Resolver.
++ `DISABLED_RESERVED` - Public IP connectivity is disabled, and the global anycast public IP addresses remain reserved for the Route 53 Global Resolver.
++ `DISABLED_RELEASED` - Public IP connectivity is disabled, and the global anycast public IP addresses are released.
+A reserved state keeps the global anycast public IP addresses allocated to the Route 53 Global Resolver so that you can re-enable public connectivity later without the addresses changing. The released state frees those addresses when you no longer need public connectivity.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLED_RESERVED | DISABLED_RESERVED | DISABLED_RELEASED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Regions`  <a name="cfn-route53globalresolver-globalresolver-regions"></a>

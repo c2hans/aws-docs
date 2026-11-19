@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Bac
 ---
 
 # Backing up a DynamoDB table
-<a name="Backup.Tutorial"></a>
 
 This section describes how to use the Amazon DynamoDB console or the AWS Command Line Interface to back up a table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 ---
 
 # Open source
-<a name="databases-database-migration-patterns-by-workload-open-source-pattern-list"></a>
 
 **Topics**
 + [Automatically generate a PynamoDB model and CRUD functions for Amazon DynamoDB by using a Python application](automatically-generate-a-pynamodb-model-and-crud-functions-for-amazon-dynamodb-by-using-a-python-application.md)

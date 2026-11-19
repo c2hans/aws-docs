@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_RdsHttpE
 ---
 
 # RdsHttpEndpointConfig
-<a name="API_RdsHttpEndpointConfig"></a>
 
 The Amazon Relational Database Service (Amazon RDS) HTTP endpoint configuration.
 

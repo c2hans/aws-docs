@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-codest
 ---
 
 # AWS CodeConnections events
-<a name="events-ref-codestar-connections"></a>
 
 AWS CodeConnections sends service events to EventBridge via AWS CloudTrail.
 

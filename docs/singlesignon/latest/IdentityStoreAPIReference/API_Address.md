@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # Address
-<a name="API_Address"></a>
 
 The address associated with the specified user.
 

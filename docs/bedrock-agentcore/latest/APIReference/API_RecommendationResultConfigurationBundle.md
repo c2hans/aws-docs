@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # RecommendationResultConfigurationBundle
-<a name="API_RecommendationResultConfigurationBundle"></a>
 
 A configuration bundle reference in a recommendation result.
 

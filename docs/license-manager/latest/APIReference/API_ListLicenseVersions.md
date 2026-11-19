@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListLicenseVersions
-<a name="API_ListLicenseVersions"></a>
 
 Lists all versions of the specified license.
 

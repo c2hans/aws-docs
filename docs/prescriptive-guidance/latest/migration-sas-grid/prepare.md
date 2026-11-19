@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Prepare – Discovery and assessment
-<a name="prepare"></a>
 
 ## Prepare current SAS Grid workload assessment
 <a name="workload"></a>

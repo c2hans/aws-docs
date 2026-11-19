@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateHarness
-<a name="API_UpdateHarness"></a>
 
 Operation to update a harness.
 

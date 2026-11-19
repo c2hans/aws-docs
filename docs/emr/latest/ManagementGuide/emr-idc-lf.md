@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-idc-lf.ht
 ---
 
 # Configure Lake Formation for an IAM Identity Center enabled EMR cluster
-<a name="emr-idc-lf"></a>
 
 You can integrate [AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/) with your AWS IAM Identity Center enabled EMR cluster.
 

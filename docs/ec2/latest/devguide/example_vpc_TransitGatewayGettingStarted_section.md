@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_vpc_TransitG
 ---
 
 # Getting started with network transit gateways
-<a name="example_vpc_TransitGatewayGettingStarted_section"></a>
 
 The following code example shows how to:
 + Create a transit gateway

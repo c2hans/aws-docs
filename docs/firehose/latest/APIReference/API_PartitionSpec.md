@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Partiti
 ---
 
 # PartitionSpec
-<a name="API_PartitionSpec"></a>
 
 Represents how to produce partition data for a table. Partition data is produced by transforming columns in a table. Each column transform is represented by a named `PartitionField`.
 

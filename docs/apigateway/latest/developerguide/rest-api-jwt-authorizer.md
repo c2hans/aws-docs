@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Control access to REST APIs using JWT authorizers
-<a name="rest-api-jwt-authorizer"></a>
 
 A JWT authorizer validates JSON Web Tokens (JWTs) that clients send with API requests. API Gateway performs the validation in the gateway, so you do not run a function to validate tokens. You declare the issuers that you trust, the audiences that you accept from each issuer, the signing algorithms that you allow, and any additional claims that a token must carry. Each method can then require its own authorization scopes.
 

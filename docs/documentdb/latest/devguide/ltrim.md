@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/ltrim.html
 ---
 
 # $ltrim
-<a name="ltrim"></a>
 
 New from version 4.0.
 

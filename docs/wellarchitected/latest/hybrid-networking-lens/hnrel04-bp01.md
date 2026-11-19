@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNREL04-BP01 Use physical location redundancy to host dedicated connections
-<a name="hnrel04-bp01"></a>
 
  Design dedicated connections hosted at multiple geographically separated data centers or colocation facilities to provide physical location redundancy. This design ensures that your connectivity to cloud remains available even if one location is affected by an outage or disaster.
 

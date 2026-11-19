@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/workspa
 ---
 
 # Workspaces
-<a name="workspaces"></a>
 
 Inference and resource requests on Claude Platform on AWS target a workspace. You pass the workspace’s ID in the `anthropic-workspace-id` header on these API calls. Workspace IDs use the tagged format `wrkspc_` followed by an alphanumeric identifier (for example, `wrkspc_01AbCdEf23GhIj`). See [Obtain your workspace ID](prerequisites.md#obtain-your-workspace-id) if you don’t have it yet.
 

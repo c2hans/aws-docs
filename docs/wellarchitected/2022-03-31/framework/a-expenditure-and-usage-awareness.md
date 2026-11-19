@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Expenditure and usage awareness
-<a name="a-expenditure-and-usage-awareness"></a>
 
 **Topics**
 + [COST 2  How do you govern usage?](cost-02.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/monitor
 ---
 
 # Monitor Amazon Location Service
-<a name="monitoring"></a>
 
 When using Amazon Location Service, you can monitor your usage and resources over time by using:
 + **Amazon CloudWatch**. Monitors your Amazon Location Service resources, and provides metrics with statistics in near-real time.

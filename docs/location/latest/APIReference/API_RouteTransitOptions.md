@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitOptions
-<a name="API_RouteTransitOptions"></a>
 
 Options related to transit routing.
 

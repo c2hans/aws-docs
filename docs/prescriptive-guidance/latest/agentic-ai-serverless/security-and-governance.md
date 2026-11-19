@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Security and governance
-<a name="security-and-governance"></a>
 
 Security and governance are essential pillars of enterprise adoption of serverless and AI workloads. Unlike traditional applications, modern serverless AI architectures involve the following:
 + Dynamic execution paths (through AWS Step Functions and Amazon Bedrock Agents)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ToolUseBlockDelta
-<a name="API_runtime_ToolUseBlockDelta"></a>
 
 The delta for a tool use block.
 

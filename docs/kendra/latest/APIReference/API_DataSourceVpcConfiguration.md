@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DataSourc
 ---
 
 # DataSourceVpcConfiguration
-<a name="API_DataSourceVpcConfiguration"></a>
 
 Provides the configuration information to connect to an Amazon VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDe
 ---
 
 # AIDevOpsReleaseManagementVPCPolicy
-<a name="AIDevOpsReleaseManagementVPCPolicy"></a>
 
 **Description**: Provides permissions for AWS DevOps Agent to create and manage network interfaces in your VPC so that release management agents can access private resources
 

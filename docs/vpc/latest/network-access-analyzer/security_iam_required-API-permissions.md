@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/secur
 ---
 
 # Required API permissions for Network Access Analyzer
-<a name="security_iam_required-API-permissions"></a>
 
 Network Access Analyzer relies on data from other AWS services. It uses permissions from the following services:
 + Amazon EC2

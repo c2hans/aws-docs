@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # China sender ID registration in AWS End User Messaging SMS
-<a name="registrations-china"></a>
 
 **Mainland China business entity required**
 To register a sender for China, the registration must be held by a company that is legally registered in mainland China. A business registered outside mainland China does not satisfy this requirement. The contact person's identity document must be a Chinese ID, because the mobile operators' systems only recognize Chinese IDs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/code-library
 ---
 
 # Code library
-<a name="code-library"></a>
 
 This section provides code examples for common Amazon Nova operations using either the Converse API or the InvokeModel API.
 

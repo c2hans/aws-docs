@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents
 ---
 
 # Host agent or tools with Amazon Bedrock AgentCore Runtime
-<a name="agents-tools-runtime"></a>
 
 Amazon Bedrock AgentCore Runtime provides a secure, serverless and purpose-built hosting environment for deploying and running AI agents or tools. It offers the following benefits:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Db2.Concepts.
 ---
 
 # Amazon RDS for Db2 features
-<a name="Db2.Concepts.FeatureSupport"></a>
 
 Amazon RDS for Db2 supports most of the features and capabilities of the IBM Db2 database. Some features might have limited support or restricted privileges. For more information about the Db2 database features for specific Db2 versions, see the [IBM Db2 documentation](https://www.ibm.com/docs/en/db2).
 

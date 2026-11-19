@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_T
 ---
 
 # TerminateProvisionedProduct
-<a name="API_TerminateProvisionedProduct"></a>
 
 Terminates the specified provisioned product.
 

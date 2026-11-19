@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/miro-reading-from-entitie
 ---
 
 # Reading from Miro entities
-<a name="miro-reading-from-entities"></a>
 
 **Prerequisites**
 

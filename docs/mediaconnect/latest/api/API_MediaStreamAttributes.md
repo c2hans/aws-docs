@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaStreamA
 ---
 
 # MediaStreamAttributes
-<a name="API_MediaStreamAttributes"></a>
 
 Attributes that are related to the media stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_CgroupCustom
 ---
 
 # CgroupCustomSetting
-<a name="API_CgroupCustomSetting"></a>
 
 Additional settings that directly map to Cgroup settings.
 

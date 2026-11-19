@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/drm-hls-playrea
 ---
 
 # HLS output with PlayReady
-<a name="drm-hls-playready"></a>
 
 Encryption mode: Always AES CTR (AES-128)
 

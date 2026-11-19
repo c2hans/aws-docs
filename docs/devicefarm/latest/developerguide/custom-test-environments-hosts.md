@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 ---
 
 # Hosts for custom test environments
-<a name="custom-test-environments-hosts"></a>
 
  Device Farm supports a set of operating systems with pre-configured software through the use of a test host environment. During test execution, Device Farm utilizes Amazon-managed instances (hosts) that dynamically connect to the selected device under test. This instance is fully cleaned up and not re-used between runs, and is terminated with its generated artifacts after the test run concludes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_MultipartReadSetUpl
 ---
 
 # MultipartReadSetUploadListItem
-<a name="API_MultipartReadSetUploadListItem"></a>
 
  Part of the response to ListMultipartReadSetUploads, excluding completed and aborted multipart uploads.
 

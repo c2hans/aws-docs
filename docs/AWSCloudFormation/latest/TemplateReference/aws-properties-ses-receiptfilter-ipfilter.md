@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::ReceiptFilter IpFilter
-<a name="aws-properties-ses-receiptfilter-ipfilter"></a>
 
 A receipt IP address filter enables you to specify whether to accept or reject mail originating from an IP address or range of IP addresses.
 

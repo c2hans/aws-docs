@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeregisterCl
 ---
 
 # DeregisterCluster
-<a name="API_DeregisterCluster"></a>
 
 Deregisters a connected cluster to remove it from the Amazon EKS control plane.
 

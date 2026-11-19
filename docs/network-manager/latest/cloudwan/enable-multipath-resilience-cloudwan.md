@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/enable-m
 ---
 
 # Enable multipath resilience in a core network policy
-<a name="enable-multipath-resilience-cloudwan"></a>
 
 Multipath resilience is a cross-Region feature for an AWS Cloud WAN core network. When you enable it in the core network policy, we replicate each packet across multiple paths on the AWS global network between the covered edge locations and de-duplicate the copies at the destination edge. Multipath resilience provides Daily Uptime of at least 99.999%, measured in Unavailable Seconds. For more information about the SLA, see [Multipath Resilience SLA](https://aws.amazon.com/vpc/features/vpc-multipath-resilience/sla) on the AWS website.
 

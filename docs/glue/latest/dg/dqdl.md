@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl.html
 ---
 
 # Data Quality Definition Language (DQDL) reference
-<a name="dqdl"></a>
 
 Data Quality Definition Language (DQDL) is a domain specific language that you use to define rules for AWS Glue Data Quality.
 

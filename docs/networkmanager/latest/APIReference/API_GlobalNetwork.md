@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GlobalNetwork
-<a name="API_GlobalNetwork"></a>
 
 Describes a global network. This is a single private network acting as a high-level container for your network objects, including an AWS-managed Core Network.
 

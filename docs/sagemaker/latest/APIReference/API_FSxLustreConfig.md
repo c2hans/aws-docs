@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FSxLus
 ---
 
 # FSxLustreConfig
-<a name="API_FSxLustreConfig"></a>
 
 Configuration settings for an Amazon FSx for Lustre file system to be used with the cluster.
 

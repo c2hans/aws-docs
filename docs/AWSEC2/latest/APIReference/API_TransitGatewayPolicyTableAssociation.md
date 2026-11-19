@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayPolicyTableAssociation
-<a name="API_TransitGatewayPolicyTableAssociation"></a>
 
 Describes a transit gateway policy table association.
 

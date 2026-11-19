@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanCo
 ---
 
 # ScanConfigurationContinuousScanDetails
-<a name="API_ScanConfigurationContinuousScanDetails"></a>
 
 Contains information about the time range within the continuous backup in AWS Backup that was scanned for a point-in-time recovery resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/route53_1
 ---
 
 # Example queries for Route 53 resolver query logs
-<a name="route53_1_0-query-examples-sourceversion2"></a>
 
 Amazon Route 53 resolver query logs track DNS queries made by resources within your Amazon VPC. Subscribers can query Route 53 resolver query logs to learn the following types of information:
 

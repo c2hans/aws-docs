@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ValidationExceptionField
-<a name="API_channel_ValidationExceptionField"></a>
 
 Information about a field that failed validation.
 

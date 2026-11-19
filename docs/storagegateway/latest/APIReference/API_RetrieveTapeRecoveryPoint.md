@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_R
 ---
 
 # RetrieveTapeRecoveryPoint
-<a name="API_RetrieveTapeRecoveryPoint"></a>
 
 Retrieves the recovery point for the specified virtual tape. This operation is only supported in the tape gateway type.
 

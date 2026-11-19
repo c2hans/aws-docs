@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationReviewMetadata
-<a name="API_EvaluationReviewMetadata"></a>
 
 Metadata information about an evaluation review.
 

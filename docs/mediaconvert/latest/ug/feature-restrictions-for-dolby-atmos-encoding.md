@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/feature-restricti
 ---
 
 # Requirements for Dolby Atmos encoding
-<a name="feature-restrictions-for-dolby-atmos-encoding"></a>
 
 Note the following restrictions in the MediaConvert implementation of Dolby Atmos encoding:
 + **Input Channel-Based Immersive (CBI):** MediaConvert supports channel-based immersive (CBI) content.

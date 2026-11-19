@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormSingleSelectQuestionProperties
-<a name="API_EvaluationFormSingleSelectQuestionProperties"></a>
 
 Information about the options in single select questions.
 

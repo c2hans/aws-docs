@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeploymentCana
 ---
 
 # DeploymentCanarySettings
-<a name="API_DeploymentCanarySettings"></a>
 
 The input configuration for a canary deployment.
 

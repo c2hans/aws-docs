@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/howitworks_rep
 ---
 
 # Configure the IAM permissions required to add an AWS Region to a keyspace
-<a name="howitworks_replication_permissions_addReplica"></a>
 
 To add a Region to a keyspace, the IAM principal needs the following permissions:
 + `cassandra:Alter`

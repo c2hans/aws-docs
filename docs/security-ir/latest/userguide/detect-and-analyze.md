@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/detect-and-
 ---
 
 # Detect and Analyze
-<a name="detect-and-analyze"></a>
 
 ## Reporting an event
 <a name="detect-analyze-reporting-an-event"></a>

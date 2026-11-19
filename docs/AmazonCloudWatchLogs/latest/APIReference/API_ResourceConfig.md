@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ResourceConfig
-<a name="API_ResourceConfig"></a>
 
 This structure contains configuration details about an integration between CloudWatch Logs and another entity.
 

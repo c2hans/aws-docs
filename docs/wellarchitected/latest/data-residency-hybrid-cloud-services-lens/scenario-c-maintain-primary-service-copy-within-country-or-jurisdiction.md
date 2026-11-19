@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Scenario C: Maintain primary service copy within country or jurisdiction
-<a name="scenario-c-maintain-primary-service-copy-within-country-or-jurisdiction"></a>
 
  In a scenario where the law mandates data residency requirements that specify that the primary copy of the data must be maintained within the country or jurisdiction, several factors should be considered.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Dynamic Media Content for Games
-<a name="dynamic-media-content-games"></a>
 
 Publication date: **October 8, 2020 ([Diagram history](#dynamic-media-history))**
 

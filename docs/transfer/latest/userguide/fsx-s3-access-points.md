@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/fsx-s3-access-
 ---
 
 # Access your FSx for NetApp ONTAP file systems with Transfer Family
-<a name="fsx-s3-access-points"></a>
 
 **Contents**
 + [Overview](#fsx-overview)

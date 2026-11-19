@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # Device
-<a name="API_Device"></a>
 
 Describes a device.
 

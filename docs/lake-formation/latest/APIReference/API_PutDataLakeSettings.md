@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_P
 ---
 
 # PutDataLakeSettings
-<a name="API_PutDataLakeSettings"></a>
 
 Sets the list of data lake administrators who have admin privileges on all resources managed by AWS Lake Formation. For more information on admin privileges, see [Granting Lake Formation Permissions](https://docs.aws.amazon.com/lake-formation/latest/dg/lake-formation-permissions.html).
 

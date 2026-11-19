@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/listing-backu
 ---
 
 # View existing backups
-<a name="listing-backups"></a>
 
 You can view a list of your backups using the [AWS Backup console](https://console.aws.amazon.com/backup) or programmatically.
 

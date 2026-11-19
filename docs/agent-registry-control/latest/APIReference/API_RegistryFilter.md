@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # RegistryFilter
-<a name="API_RegistryFilter"></a>
 
 A single filter applied to a ListRegistries request.
 

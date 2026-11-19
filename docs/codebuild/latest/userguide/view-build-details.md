@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/view-build-de
 ---
 
 # View build details in AWS CodeBuild
-<a name="view-build-details"></a>
 
 You can use the AWS CodeBuild console, AWS CLI, or AWS SDKs to view details about builds managed by CodeBuild.
 

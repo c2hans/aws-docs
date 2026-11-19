@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DecimalC
 ---
 
 # DecimalCondition
-<a name="API_DecimalCondition"></a>
 
 A decimal search condition for Search APIs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormMultiSelectQuestionProperties
-<a name="API_EvaluationFormMultiSelectQuestionProperties"></a>
 
 Properties for a multi-select question in an evaluation form.
 

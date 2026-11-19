@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/job_retries.html
 ---
 
 # Automated job retries
-<a name="job_retries"></a>
 
 You can apply a retry strategy to your jobs and job definitions that allows failed jobs to be automatically retried. Possible failure scenarios include the following:
 + Any non-zero exit code from a container job

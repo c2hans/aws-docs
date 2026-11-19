@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/athena_example_at
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Learn Athena basics using an AWS SDK
-<a name="athena_example_athena_Scenario_section"></a>
 
 The following code example shows how to learn Athena basics.
 + Create an Athena workgroup.

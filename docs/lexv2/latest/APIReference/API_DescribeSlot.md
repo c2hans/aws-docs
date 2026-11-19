@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeSl
 ---
 
 # DescribeSlot
-<a name="API_DescribeSlot"></a>
 
 Gets metadata information about a slot.
 

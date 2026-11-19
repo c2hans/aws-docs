@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Available CloudWatch metrics for Amazon SQS
-<a name="sqs-available-cloudwatch-metrics"></a>
 
 Amazon SQS sends the following metrics to CloudWatch.
 

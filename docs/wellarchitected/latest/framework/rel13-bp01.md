@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel13-b
 ---
 
 # REL13-BP01 Define recovery objectives for downtime and data loss
-<a name="rel13-bp01"></a>
 
  Failures interrupt service and can leave data lost, stale, or inconsistent. Two objectives set the target for how fast you recover and how much data you can afford to lose: a recovery time objective (RTO) and a recovery point objective (RPO). Define both for every workload, based on business impact.
 

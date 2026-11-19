@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetCase
-<a name="API_connect-cases_GetCase"></a>
 
 Returns information about a specific case if it exists.
 

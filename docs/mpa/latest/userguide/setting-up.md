@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/setting-up.html
 ---
 
 # Set up Multi-party approval
-<a name="setting-up"></a>
 
 When you sign in to your organization's management account, you can set up Multi-party approval by navigating to the Multi-party approval console and creating a Multi-party approval identity source.
 

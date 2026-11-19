@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # Performance efficiency and reliability
-<a name="o-performance-efficiency-and-reliability"></a>
 
  During a mergers and acquisitions transaction, reliability becomes very important. This is because it is during the transaction that the two companies must merge their systems, data, and operations. Having a high level of reliability is crucial to maintain smooth business operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/setting-up
 ---
 
 # Set up Amazon Route 53
-<a name="setting-up-route-53"></a>
 
 **Topics**
 + [Sign up for an AWS account](#sign-up-for-aws)

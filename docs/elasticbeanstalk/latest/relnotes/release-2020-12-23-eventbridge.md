@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk introduces Amazon EventBridge console integration on December 23, 2020
-<a name="release-2020-12-23-eventbridge"></a>
 
 Following the release of AWS Elastic Beanstalk integration with the Amazon EventBridge service in November-2020, the EventBridge console has now made it easier for Elastic Beanstalk customers to define rules and event patterns. You can now use pre-defined event patterns for Elastic Beanstalk in the EventBridge console.
 

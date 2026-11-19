@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::Instance CpuOptions
-<a name="aws-properties-ec2-instance-cpuoptions"></a>
 
 Specifies the CPU options for the instance. When you specify CPU options, you must specify both the number of CPU cores and threads per core.
 

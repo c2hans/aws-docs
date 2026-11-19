@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Setting up your tax information
-<a name="manage-account-payment"></a>
 
 You can use the **Tax settings** page under **Preferences and Settings** in the left navigation of your AWS Billing and Cost Management console. Use this page to manage your tax registration numbers, turn on tax setting inheritance so your tax registration information is aligned across your Organizations accounts, and manage your tax exemptions. This page also shows how you can set up your Amazon S3 buckets to use your Tax Settings API.
 

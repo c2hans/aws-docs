@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Application ELB
-<a name="appinsights-metrics-app-elb"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

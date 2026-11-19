@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Library functions available for Node.js canary scripts using Playwright
-<a name="CloudWatch_Synthetics_Canaries_Nodejs_Playwright"></a>
 
 This section describes the library functions that are available for canary scripts using the Node.js Playwright runtime.
 

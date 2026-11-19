@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/migrationguide/migr
 ---
 
 # Plan maintenance windows for migrating an AWS Elemental Conductor File cluster
-<a name="migrate-std-plan-maintenance"></a>
 
 You should plan to perform the cluster migration in several phases:
 

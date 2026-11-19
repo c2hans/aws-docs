@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/ready-for-cutover.html
 ---
 
 # Ready for cutover indicators
-<a name="ready-for-cutover"></a>
 
 Before launching a cutover instance, ensure that your source servers are ready for cutover by looking for the following indicators on the **Source servers** page:
 

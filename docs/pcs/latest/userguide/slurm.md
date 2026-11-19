@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm.html
 ---
 
 # Slurm scheduler in AWS PCS
-<a name="slurm"></a>
 
 Slurm is an open-source workload manager designed for Linux clusters that provides job scheduling, resource allocation, and job monitoring capabilities for HPC workloads. AWS PCS supports the Slurm scheduler to manage your cluster workloads.
 

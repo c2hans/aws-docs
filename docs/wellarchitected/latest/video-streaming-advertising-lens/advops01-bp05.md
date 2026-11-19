@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS01-BP05 Foster a publisher operations culture that prioritizes yield reliability
-<a name="advops01-bp05"></a>
 
  Build a culture that treats yield reliability with the same urgency as system availability. This best practice addresses how teams proactively monitor monetization health and treat revenue-impacting incidents with defined severity classifications, using shared dashboards visible to both engineering and ad operations, and escalation paths that mirror infrastructure incident severity levels.
 

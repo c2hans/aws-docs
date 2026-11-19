@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # CancelSubscription
-<a name="API_CancelSubscription"></a>
 
 Cancels a flat-rate pricing subscription.
 

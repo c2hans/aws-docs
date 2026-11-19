@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Total
 ---
 
 # TotalOptions
-<a name="API_TotalOptions"></a>
 
 The total options for a table visual.
 

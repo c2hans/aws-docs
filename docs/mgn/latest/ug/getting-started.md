@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/getting-started.html
 ---
 
 # Getting started with AWS Transform MGN
-<a name="getting-started"></a>
 
 Learn how to get started with AWS Transform MGN. Review the migration workflow, learn how to initialize MGN in either the console or using the API, and review best practices.
 

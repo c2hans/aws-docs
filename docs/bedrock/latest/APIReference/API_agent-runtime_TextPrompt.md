@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # TextPrompt
-<a name="API_agent-runtime_TextPrompt"></a>
 
 Contains information about the text prompt to optimize.
 

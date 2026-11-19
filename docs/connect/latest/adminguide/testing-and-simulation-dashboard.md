@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/testing-and-si
 ---
 
 # Testing and simulation dashboard
-<a name="testing-and-simulation-dashboard"></a>
 
 The testing and simulation dashboard helps you monitor the quality and effectiveness of your automated testing across Connect Customer flows. You can track key metrics such as test execution volume, success and failure rates, average test run duration, and failure patterns by step type. Use the dashboard to identify top failing tests and flows, compare performance against benchmark periods, and view execution trends over time. Filter by test case, flow, channel, or time range to optimize your validation strategy and ensure quality before production deployment.
 

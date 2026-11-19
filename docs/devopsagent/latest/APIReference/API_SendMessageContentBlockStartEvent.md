@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageContentBlockStartEvent
-<a name="API_SendMessageContentBlockStartEvent"></a>
 
 Event emitted when a new content block starts
 

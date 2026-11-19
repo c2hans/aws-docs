@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/snapstart-best-practice
 ---
 
 # Maximize Lambda SnapStart performance
-<a name="snapstart-best-practices"></a>
 
 **Topics**
 + [Performance tuning](#snapstart-tuning)

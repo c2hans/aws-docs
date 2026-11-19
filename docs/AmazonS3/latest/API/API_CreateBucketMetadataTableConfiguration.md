@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketMeta
 ---
 
 # CreateBucketMetadataTableConfiguration
-<a name="API_CreateBucketMetadataTableConfiguration"></a>
 
 **Important**
  We recommend that you create your S3 Metadata configurations by using the V2 [CreateBucketMetadataConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketMetadataConfiguration.html) API operation. We no longer recommend using the V1 `CreateBucketMetadataTableConfiguration` API operation.

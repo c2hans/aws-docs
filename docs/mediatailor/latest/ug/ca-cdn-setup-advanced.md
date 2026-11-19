@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ca-cdn-setup-advan
 ---
 
 # Implement MediaTailor ad insertion with channel assembly
-<a name="ca-cdn-setup-advanced"></a>
 
 Channel assembly in AWS Elemental MediaTailor integrates seamlessly with server-side ad insertion (SSAI) and content delivery networks (CDNs) to create monetized linear channels with personalized advertising.
 

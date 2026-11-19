@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Enable fully automated remediations
-<a name="enable-fully-automated-remediations"></a>
 
 The other mode of operation for the solution is to automatically remediate findings as they arrive in Security Hub.
 
@@ -16,6 +15,7 @@ Before it starts an automatic or deadline-enforced remediation, the solution rea
 AWS Security Hub CSPM and AWS Security Hub track the status of a finding separately. For example, a suppression that you set in AWS Security Hub CSPM isn’t reflected in AWS Security Hub. If you use both, standardize on AWS Security Hub to manage the status of all of your findings. Migrate any automation rules that you have in AWS Security Hub CSPM to AWS Security Hub.
 To keep finding status consistent, restrict access to `securityhub:BatchUpdateFindings`. Restrict it for any person or automation that shouldn’t change the status of AWS Security Hub CSPM findings. For instructions on restricting access, see [BatchUpdateFindings for customers](https://docs.aws.amazon.com/securityhub/latest/userguide/finding-update-batchupdatefindings.html) in the *AWS Security Hub User Guide*.
 Don’t restrict this permission for the IAM roles that the solution deploys. The solution uses it to update the workflow status of findings that it remediates.
+Suppressing a finding in the solution is different from suppressing it in AWS Security Hub CSPM or AWS Security Hub. When you choose **Actions > Suppress** on the **Findings** page, or send a `Suppress` request to the API, the solution only hides the finding from its default findings view. It does not change the finding’s status in either service. It also does not stop fully automated remediation. The overdue scan for deadline enforcement does skip findings suppressed in the solution. To stop the solution from automatically remediating a finding, suppress it in AWS Security Hub CSPM or AWS Security Hub instead.
 Suppression applies only to the finding you suppress. To keep specific resources out of fully automated remediation permanently, apply an exclude-mode [resource filter](#filter-remediations). The filter should match the resources by account ID, organizational unit, or ARN pattern. Resource filters require the Web UI or the MCP server. A filter is stored in the solution’s configuration and applies to every future finding for those resources.
 In versions earlier than v4.1.0, a suppression set in AWS Security Hub CSPM was not always honored. For details and a workaround, see [Known issue resolution](known-issue-resolution.md).
 

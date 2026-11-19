@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Theme
 ---
 
 # ThemeAlias
-<a name="API_ThemeAlias"></a>
 
 An alias for a theme.
 

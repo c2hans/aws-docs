@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Microsoft SQL Server database to Amazon Redshift using AWS SCT data extraction agents
-<a name="migrate-an-on-premises-microsoft-sql-server-database-to-amazon-redshift-using-aws-sct-data-extraction-agents"></a>
 
 *Neha Thakur, Amazon Web Services*
 

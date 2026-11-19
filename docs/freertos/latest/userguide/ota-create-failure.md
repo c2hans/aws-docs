@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-create-fai
 ---
 
 # Get CreateOTAUpdate failure details using the AWS CLI
-<a name="ota-create-failure"></a>
 
 If the process of creating an OTA update job fails, there may be actions you can take to remedy the problem. When you create an OTA update job, the OTA manager service creates an IoT job and schedules it for the target devices, and this process also creates or uses other types of AWS resources in your account (a code-signing job, an AWS IoT stream, an Amazon S3 object). Any error encountered may cause the process to fail without creating an AWS IoT job. In this troubleshooting section we give instructions on how to retrieve the details of the failure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/hls-rendition-g
 ---
 
 # Getting ready to create HLS rendition groups
-<a name="hls-rendition-groups-getting-ready-to-create"></a>
 
 ## Step 1. Create a mapping
 <a name="hls-rendition-groups-getting-ready-create-mapping"></a>

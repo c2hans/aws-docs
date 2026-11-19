@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Collect process metrics with the procstat plugin
-<a name="CloudWatch-Agent-procstat-process-metrics"></a>
 
  The *procstat* plugin enables you to collect metrics from individual processes. The plugin is supported on Linux servers and on servers running supported version of Windows Server. This section describes how to configure the CloudWatch agent for procstat and view metrics the CloudWatch agent imports. It also lists the metrics that procstat collects.
 

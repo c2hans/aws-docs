@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # Processor
-<a name="API_Processor"></a>
 
 This structure contains the information about one processor in a log transformer.
 

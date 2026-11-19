@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/modify-verifie
 ---
 
 # Modify a Verified Access group policy
-<a name="modify-verified-access-group-policy"></a>
 
 AWS Verified Access allows access to your applications based on the access policies that you create. The Verified Access policy that you attach to a group is inherited by all endpoints in the group. You can optionally attach application-specific policies to specific endpoints.
 

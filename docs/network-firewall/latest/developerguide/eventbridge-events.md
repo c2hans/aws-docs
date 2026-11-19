@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/e
 ---
 
 # Managing AWS Network Firewall events using Amazon EventBridge
-<a name="eventbridge-events"></a>
 
 AWS Network Firewall sends events directly to the EventBridge default event bus when firewall state changes occur. You can use these events to automate responses, send notifications, or integrate with other AWS services when your firewall configuration or attachment status changes.
 

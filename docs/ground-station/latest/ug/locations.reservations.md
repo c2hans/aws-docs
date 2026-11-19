@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/locations.reser
 ---
 
 # View ground station reservations
-<a name="locations.reservations"></a>
 
  You can view reservations across antennas at a ground station by using the [ListGroundStationReservations](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListGroundStationReservations.html) API. Reservations represent time blocks on antennas, including your scheduled contacts. [AWS Ground Station Dedicated Antennas](dedicated-antennas.md) customers also see maintenance windows.
 

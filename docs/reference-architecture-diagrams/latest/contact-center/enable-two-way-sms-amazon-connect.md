@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Enable Two-Way SMS in Amazon Connect Customer
-<a name="enable-two-way-sms-amazon-connect"></a>
 
 Publication date: **November 23, 2021 ([Diagram history](diagram-history.md))**
 

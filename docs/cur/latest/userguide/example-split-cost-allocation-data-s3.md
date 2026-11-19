@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/example-split-cost-
 ---
 
 # Example of split cost allocation data for Amazon S3
-<a name="example-split-cost-allocation-data-s3"></a>
 
 The following example shows how split cost allocation data allocates a bucket's storage charge for one day to the prefixes in the bucket. The storage rate in this example is for illustrative purposes only. For current charges, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteVPCConnection
-<a name="API_DeleteVPCConnection"></a>
 
 Deletes a VPC connection.
 

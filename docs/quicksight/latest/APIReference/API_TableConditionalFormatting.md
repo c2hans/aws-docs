@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableConditionalFormatting
-<a name="API_TableConditionalFormatting"></a>
 
 The conditional formatting for a `PivotTableVisual`.
 

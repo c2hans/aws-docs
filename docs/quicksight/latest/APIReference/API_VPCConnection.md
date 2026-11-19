@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_VPCCo
 ---
 
 # VPCConnection
-<a name="API_VPCConnection"></a>
 
 The structure of a VPC connection.
 

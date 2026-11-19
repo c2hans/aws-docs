@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # UpdateStorage
-<a name="clusters-clusterarn-storage"></a>
 
 Updates cluster broker volume size (or) sets cluster storage mode to TIERED.
 

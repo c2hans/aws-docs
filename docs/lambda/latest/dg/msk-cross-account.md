@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/msk-cross-account.html
 ---
 
 # Creating cross-account event source mappings in Lambda
-<a name="msk-cross-account"></a>
 
 You can use [multi-VPC private connectivity](https://docs.aws.amazon.com/msk/latest/developerguide/aws-access-mult-vpc.html) to connect a Lambda Event Function to a provisioned MSK cluster in a different AWS account. Multi-VPC connectivity uses AWS PrivateLink, which keeps all traffic within the AWS network.
 

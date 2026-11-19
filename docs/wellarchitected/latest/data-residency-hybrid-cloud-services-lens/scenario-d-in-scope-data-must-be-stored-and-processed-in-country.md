@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Scenario D: In-scope data must be stored and processed in country
-<a name="scenario-d-in-scope-data-must-be-stored-and-processed-in-country"></a>
 
  In a scenario where the law mandates that data must be stored and processed within the borders of a specific country, organizations operating within that jurisdiction must adhere to strict data localization policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # AWS Outposts High Availability Design and Architecture Considerations
-<a name="aws-outposts-high-availability-design"></a>
 
 Publication date: **August 12, 2021** ([Document history](document-revisions.md))
 

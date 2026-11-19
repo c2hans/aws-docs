@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListNo
 ---
 
 # ListNotebookInstances
-<a name="API_ListNotebookInstances"></a>
 
 Returns a list of the SageMaker AI notebook instances in the requester's account in an AWS Region.
 

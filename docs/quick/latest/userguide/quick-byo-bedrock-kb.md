@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quick-byo-bedrock
 ---
 
 # Bring your own Amazon Bedrock managed knowledge base
-<a name="quick-byo-bedrock-kb"></a>
 
 AWS Quick can connect Amazon Bedrock managed knowledge bases as knowledge sources. After connection, a managed knowledge base is treated like any other knowledge base in AWS Quick. You can add it to spaces and it is queried automatically during chat. You can connect up to 2 managed knowledge bases per AWS Quick instance. The managed knowledge base can live in the same AWS account as AWS Quick or in a different account.
 

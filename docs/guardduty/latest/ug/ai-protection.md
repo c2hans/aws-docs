@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection.html
 ---
 
 # GuardDuty AI Protection
-<a name="ai-protection"></a>
 
 GuardDuty AI Protection extends Amazon GuardDuty threat detection to AI workloads built on AWS. When you enable AI Protection, GuardDuty analyzes AWS CloudTrail data events from Amazon Bedrock, Amazon Bedrock AgentCore, and Amazon SageMaker AI, along with AWS CloudTrail management events. GuardDuty uses this data to detect potentially suspicious activity that targets foundation models and the applications that invoke them. When GuardDuty identifies a potential threat, it generates one or more [AI Protection finding types](findings-ai-protection.md).
 

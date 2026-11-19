@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::ConfigurationAggregator
-<a name="aws-resource-config-configurationaggregator"></a>
 
 The details about the configuration aggregator, including information about source accounts, regions, and metadata of the aggregator.
 

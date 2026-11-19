@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCREL01-BP01 Set service quotas to accommodate for the peak usage of AWS resources on Outposts for their homed Regions
-<a name="drhcrel01-bp01"></a>
 
  AWS Outposts and Local Zones adhere to the service quotas of their parent AWS Regions, requiring management of service quotas to accommodate peak usage.
 

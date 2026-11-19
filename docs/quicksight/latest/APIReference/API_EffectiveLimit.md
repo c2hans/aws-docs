@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Effec
 ---
 
 # EffectiveLimit
-<a name="API_EffectiveLimit"></a>
 
 The effective limit for a resource type that applies to a user, considering all applicable profile assignments and inheritance rules.
 

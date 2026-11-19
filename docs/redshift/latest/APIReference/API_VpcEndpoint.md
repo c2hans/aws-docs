@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_VpcEndp
 ---
 
 # VpcEndpoint
-<a name="API_VpcEndpoint"></a>
 
 The connection endpoint for connecting to an Amazon Redshift cluster through the proxy.
 

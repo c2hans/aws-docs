@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/accelerate-
 ---
 
 # Deployment model
-<a name="deployment-model"></a>
 
 ## Dual-account deployment model
 <a name="dual-account-deployment-model.3942d46f-ac11-55a1-aa10-4bb3d1a036b2"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/reading-dsq
 ---
 
 # Reading Aurora DSQL EXPLAIN plans
-<a name="reading-dsql-explain-plans"></a>
 
 Understanding how to read EXPLAIN plans is key to optimizing query performance. In this section, we’ll walk through real examples of Aurora DSQL query plans, show how different scan types behave, explain where filters are applied, and highlight opportunities for optimization.
 

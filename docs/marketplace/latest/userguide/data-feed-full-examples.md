@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-f
 ---
 
 # Data feed query examples
-<a name="data-feed-full-examples"></a>
 
 This section gives examples of complex queries using the data feeds provided by AWS Marketplace. These examples are similar to the [Seller dashboards](dashboards.md) that you get from the AWS Marketplace Management Portal. You can customize these queries to create other reports that you need.
 

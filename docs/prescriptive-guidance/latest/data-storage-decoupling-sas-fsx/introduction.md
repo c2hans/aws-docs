@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-storag
 ---
 
 # Decoupling data storage from SAS servers using Amazon FSx for Windows File Server
-<a name="introduction"></a>
 
 *Katja Mueller and Petar Forai, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_St
 ---
 
 # Status
-<a name="API_Status"></a>
 
 An object that represents the status of an entity, component, component type, or workspace.
 

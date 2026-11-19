@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/self-s
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Wickr Federation with Untrusted/Self-Signed Certificates
-<a name="self-signed-certificates"></a>
 
 Super administrators can add self-signed/untrusted certificates in the Wickr admin panel to allow federation between Wickr Enterprise environments.
 

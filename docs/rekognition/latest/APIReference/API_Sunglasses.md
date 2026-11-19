@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Sung
 ---
 
 # Sunglasses
-<a name="API_Sunglasses"></a>
 
 Indicates whether or not the face is wearing sunglasses, and the confidence level in the determination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Scenario 5: AWS Microsoft AD using a shared services Virtual Private Cloud (VPC)
-<a name="scenario-5-aws-microsoft-ad-using-a-shared-services-virtual-private-cloud-vpc"></a>
 
  This scenario, shown in the following figure, has an AWS Managed AD deployed in the AWS Cloud, providing authentication services for workloads that are either already hosted in AWS or are planned to be as part of a broader migration. The best practice recommendation is to have Amazon WorkSpaces in a dedicated VPC. Customers should also create a specific AD OU to organize the WorkSpaces computer objects.
 

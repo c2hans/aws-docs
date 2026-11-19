@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 ---
 
 # Configure the SDK
-<a name="configure-gosdk"></a>
 
  In the AWS SDK for Go V2, you can configure common settings for service clients, such as the logger, log level, and retry configuration. Most settings are optional. However, for each service client, you must specify an AWS Region and your credentials. The SDK uses these values to send requests to the correct Region and sign requests with the correct credentials. You can specify these values as programmatically in code or via the execution environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedEntitl
 ---
 
 # ListedEntitlement
-<a name="API_ListedEntitlement"></a>
 
  An entitlement that has been granted to you from other AWS accounts.
 

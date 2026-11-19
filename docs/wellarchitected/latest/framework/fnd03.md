@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd03.h
 ---
 
 # Central observability management
-<a name="fnd03"></a>
 
  Observability gives teams a shared, reliable view of how the cloud environment is behaving. As workloads spread across more accounts and Regions, visibility fragments unless it is standardized and centralized. This capability covers the best practices for defining organization-wide observability standards and for aggregating telemetry into a common place where teams can use it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/using-get-workflow.html
 ---
 
 # Verify the workflow status
-<a name="using-get-workflow"></a>
 
 After you create your workflow, you can verify the status and view other details of the workflow using **get-workflow**, as shown.
 

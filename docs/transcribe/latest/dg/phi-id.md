@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/phi-id.html
 ---
 
 # Identifying personal health information (PHI) in a transcription
-<a name="phi-id"></a>
 
 Use *Personal Health Information Identification* to label personal health information (PHI) in your transcription results. By reviewing labels, you can find PHI that could be used to identify a patient.
 

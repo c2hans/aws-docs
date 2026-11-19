@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateInferenceRecommendationsJob
-<a name="API_CreateInferenceRecommendationsJob"></a>
 
 Starts a recommendation job. You can create either an instance recommendation or load test job.
 

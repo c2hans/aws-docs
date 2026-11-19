@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteVe
 ---
 
 # RouteVehicleLicensePlate
-<a name="API_RouteVehicleLicensePlate"></a>
 
 License plate information of the vehicle. Currently, only the last character is used where license plate based controlled access is enforced.
 

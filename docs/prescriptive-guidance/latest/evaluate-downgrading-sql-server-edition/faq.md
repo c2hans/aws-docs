@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # FAQ
-<a name="faq"></a>
 
 **Q. Can I change the Amazon RDS for SQL Server edition that I'm running for a DB instance (for example, from SQL Server 2016 Standard edition to Enterprise edition)?**
 

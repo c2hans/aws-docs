@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # Get a Secrets Manager secret value using the Kotlin AWS SDK
-<a name="retrieving-secrets-kotlin"></a>
 
 For Kotlin applications, call the SDK directly with [GetSecretValue](https://github.com/awslabs/aws-sdk-kotlin#generating-api-documentation) or [BatchGetSecretValue](https://github.com/awslabs/aws-sdk-kotlin#generating-api-documentation).
 

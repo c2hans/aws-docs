@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsItemIdentity
-<a name="API_OpsItemIdentity"></a>
 
 Information about the user or resource that created an OpsItem event.
 

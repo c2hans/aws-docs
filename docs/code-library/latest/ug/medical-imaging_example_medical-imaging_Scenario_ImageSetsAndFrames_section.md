@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/medical-imaging_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get started with HealthImaging image sets and image frames using an AWS SDK
-<a name="medical-imaging_example_medical-imaging_Scenario_ImageSetsAndFrames_section"></a>
 
 The following code examples show how to import DICOM files and download image frames in HealthImaging.
 

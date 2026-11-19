@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AccessEndpoint
 ---
 
 # AccessEndpoint
-<a name="API_AccessEndpoint"></a>
 
 Describes the access type and endpoint for a WorkSpace.
 

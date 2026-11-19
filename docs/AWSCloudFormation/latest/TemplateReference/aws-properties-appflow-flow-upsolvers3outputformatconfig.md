@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppFlow::Flow UpsolverS3OutputFormatConfig
-<a name="aws-properties-appflow-flow-upsolvers3outputformatconfig"></a>
 
  The configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination.
 

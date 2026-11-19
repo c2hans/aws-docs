@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/compliance-pci
 ---
 
 # AWS CloudHSM PCI-PIN compliance FAQs
-<a name="compliance-pci-pin-faqs"></a>
 
 PCI PIN provides security requirement and assessment standards for transmitting, processing, and managing personal identification number (PIN) data, information that is used for transactions at ATMs and point-of-sale (POS) terminals.
 

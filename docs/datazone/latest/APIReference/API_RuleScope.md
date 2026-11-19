@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RuleSco
 ---
 
 # RuleScope
-<a name="API_RuleScope"></a>
 
 The scope of a rule.
 

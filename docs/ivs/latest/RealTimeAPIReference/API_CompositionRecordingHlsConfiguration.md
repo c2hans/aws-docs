@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Comp
 ---
 
 # CompositionRecordingHlsConfiguration
-<a name="API_CompositionRecordingHlsConfiguration"></a>
 
 An object representing a configuration of HLS recordings for server-side composition.
 

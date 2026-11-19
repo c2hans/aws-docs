@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # GetLabels
-<a name="CloudWatch-PromQL-API-GetLabels"></a>
 
 The `GetLabels` operation returns label names that are present in the metric store, or returns the values for a specific label name.
 

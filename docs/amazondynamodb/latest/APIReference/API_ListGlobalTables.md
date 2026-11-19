@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_L
 ---
 
 # ListGlobalTables
-<a name="API_ListGlobalTables"></a>
 
 Lists all global tables that have a replica in the specified Region.
 

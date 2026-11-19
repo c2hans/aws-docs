@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-tasks-git.htm
 ---
 
 # Clone a Git Repository in Amazon SageMaker Studio Classic
-<a name="studio-tasks-git"></a>
 
 **Note**
 As of November 30, 2023, the previous Amazon SageMaker Studio experience is now named Amazon SageMaker Studio Classic. The following section is specific to using the Studio Classic application. For information about using the updated Studio experience, see [Amazon SageMaker Studio](studio-updated.md).

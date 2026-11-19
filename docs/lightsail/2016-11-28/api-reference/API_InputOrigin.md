@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InputOrigin
-<a name="API_InputOrigin"></a>
 
 Describes the origin resource of an Amazon Lightsail content delivery network (CDN) distribution.
 

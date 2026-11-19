@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Io
 ---
 
 # IotSiteWiseSourceConfigurationFilter
-<a name="API_IotSiteWiseSourceConfigurationFilter"></a>
 
 The AWS IoT SiteWise source configuration filter.
 

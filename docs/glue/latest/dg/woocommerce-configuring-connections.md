@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/woocommerce-configuring-c
 ---
 
 # Configuring WooCommerce connections
-<a name="woocommerce-configuring-connections"></a>
 
 WooCommerce supports custom authentication. For public WooCommerce documentation on generating the required API keys for custom authorization, see [Authentication – WooCommerce REST API Documentation](https://woocommerce.github.io/woocommerce-rest-api-docs/#authentication).
 

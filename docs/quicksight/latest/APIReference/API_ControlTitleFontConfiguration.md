@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Contr
 ---
 
 # ControlTitleFontConfiguration
-<a name="API_ControlTitleFontConfiguration"></a>
 
 Configures the display properties of the control title.
 

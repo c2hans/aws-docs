@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_PlacementTyp
 ---
 
 # PlacementType
-<a name="API_PlacementType"></a>
 
 The Amazon EC2 Availability Zone configuration of the cluster (job flow).
 

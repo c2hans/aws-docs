@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/freertos-commo
 ---
 
 # Understand the FreeRTOS Common IO APIs
-<a name="freertos-common-io"></a>
 
 Common IO APIs act as hardware abstraction layers (HAL) that provide a common interface between drivers and higher-level application code. FreeRTOS Common IO provides a set of standard APIs for accessing common serial devices on supported reference boards; implementations of these APIs are not included. These common APIs communicate and interact with these peripherals and enable your code to function across platforms. Without Common IO, writing code to work with low level devices is silicon-vendor specific.
 

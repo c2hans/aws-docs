@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpa
 ---
 
 # CreateIpamRoutingPolicyRegistration
-<a name="API_CreateIpamRoutingPolicyRegistration"></a>
 
 Creates a routing policy registration and publishes Route Origin Authorizations (ROAs) to the RPKI for the specified CIDR prefix and ASNs.
 

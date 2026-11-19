@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Teams and interactions
-<a name="teams-interactions"></a>
 
 To implement a data mesh architecture, you must organize your teams and their interaction patterns. [Conway's law](https://www.melconway.com/Home/Committees_Paper.html) states that the design of a system ends up mimicking the communication structure of the organization that implemented it. In other words, the architecture of a software solution reflects the organization of teams that built it. Another implication of Conway's law is that you should seek to match your team structure to the architecture you want to promote. For the data mesh solution, this means promoting a distributed team structure in your organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler-gettin
 ---
 
 # Get Started with Data Wrangler
-<a name="data-wrangler-getting-started"></a>
 
 Amazon SageMaker Data Wrangler is a feature in Amazon SageMaker Studio Classic. Use this section to learn how to access and get started using Data Wrangler. Do the following:
 

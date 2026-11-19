@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manag
 ---
 
 # Scraper configuration
-<a name="managed-prometheus-collectors-scraper-configuration"></a>
 
 Amazon CloudWatch managed Prometheus collectors use a Prometheus-compatible YAML configuration to define how the collector scrapes metrics. You provide this configuration as a base64-encoded blob when creating or updating a scraper. The configuration uses standard Prometheus scrape configuration format, with some limitations specific to managed collectors.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/assigning-res
 ---
 
 # Select AWS services to backup
-<a name="assigning-resources"></a>
 
 ## Opt in to services, then assign resources
 <a name="w2aac13c19b3"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Redshift-config
 ---
 
 # Use AWS data source configuration to add Amazon Redshift as a data source
-<a name="Redshift-configure"></a>
 
 # To use AWS data source configuration to add Amazon Redshift as a data source
 

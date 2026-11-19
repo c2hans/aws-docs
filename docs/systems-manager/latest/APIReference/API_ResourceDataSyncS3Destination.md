@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResourceDataSyncS3Destination
-<a name="API_ResourceDataSyncS3Destination"></a>
 
 Information about the target S3 bucket for the resource data sync.
 

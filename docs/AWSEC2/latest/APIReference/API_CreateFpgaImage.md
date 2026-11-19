@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFpg
 ---
 
 # CreateFpgaImage
-<a name="API_CreateFpgaImage"></a>
 
 Creates an Amazon FPGA Image (AFI) from the specified design checkpoint (DCP).
 

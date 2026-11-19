@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutDedica
 ---
 
 # PutDedicatedIpInPool
-<a name="API_PutDedicatedIpInPool"></a>
 
 Move a dedicated IP address to an existing dedicated IP pool.
 

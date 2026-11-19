@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # DataChannelConcatenationConfiguration
-<a name="API_media-pipelines-chime_DataChannelConcatenationConfiguration"></a>
 
 The content configuration object's data channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_InboundA
 ---
 
 # InboundAdditionalRecipients
-<a name="API_InboundAdditionalRecipients"></a>
 
 Information about the additional TO and CC recipients of an inbound email contact.
 

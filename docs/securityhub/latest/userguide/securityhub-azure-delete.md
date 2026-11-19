@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Deleting a Microsoft Azure connector in Security Hub CSPM
-<a name="securityhub-azure-delete"></a>
 
 After you create a Microsoft Azure connector in AWS Security Hub CSPM, you can delete it at any time. If you delete a connector, Security Hub CSPM stops performing posture management checks and vulnerability monitoring for your Azure environment. Security Hub CSPM also stops generating new findings about your environment. Your existing findings are retained for 90 days. Resource inventory remains as it was when the connector was deleted and is removed after 90 days.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Types_
 ---
 
 # Amazon SageMaker geospatial capabilities
-<a name="API_Types_Amazon_SageMaker_geospatial_capabilities"></a>
 
 The following data types are supported by Amazon SageMaker geospatial capabilities:
 +  [AreaOfInterest](API_geospatial_AreaOfInterest.md)

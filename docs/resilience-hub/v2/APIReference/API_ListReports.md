@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListR
 ---
 
 # ListReports
-<a name="API_ListReports"></a>
 
 List reports for a service, or all reports owned by the account if serviceArn is not provided.
 

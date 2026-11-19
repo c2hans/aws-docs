@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SpaceD
 ---
 
 # SpaceDetails
-<a name="API_SpaceDetails"></a>
 
 The space's details.
 

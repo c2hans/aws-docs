@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-system-table-que
 ---
 
 # query\_executions
-<a name="athena-system-table-query-executions"></a>
 
 The `query_executions` system table contains one row for each completed query execution across all workgroups in your account and Region. It includes data equivalent to the `GetQueryExecution` API response, plus additional columns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ApplicationC
 ---
 
 # ApplicationConfig
-<a name="API_ApplicationConfig"></a>
 
 A list of `ApplicationAttribute`s that contains information about the application.
 

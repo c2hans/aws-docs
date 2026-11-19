@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/nested-data-restricti
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Nested data limitations (preview)
-<a name="nested-data-restrictions"></a>
 
 This topic describes limitations for reading nested data with Redshift Spectrum. Nested data is data that contains nested fields. Nested fields are fields that are joined together as a single entity, such as arrays, structs, or objects.
 

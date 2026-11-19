@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/insig
 ---
 
 # Insight settings
-<a name="insight-settings"></a>
 
 After creating an instance, follow the procedure below:
 

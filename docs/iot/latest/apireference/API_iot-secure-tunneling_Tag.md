@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-t
 ---
 
 # Tag
-<a name="API_iot-secure-tunneling_Tag"></a>
 
 An arbitary key/value pair used to add searchable metadata to secure tunnel resources.
 

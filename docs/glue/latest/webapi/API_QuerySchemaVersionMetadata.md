@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_QuerySchemaVersio
 ---
 
 # QuerySchemaVersionMetadata
-<a name="API_QuerySchemaVersionMetadata"></a>
 
 Queries for the schema version metadata information.
 

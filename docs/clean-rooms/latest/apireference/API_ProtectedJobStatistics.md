@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobStatistics
-<a name="API_ProtectedJobStatistics"></a>
 
 Contains statistics about the execution of the protected job.
 

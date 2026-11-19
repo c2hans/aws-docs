@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Eviden
 ---
 
 # Evidence
-<a name="API_Evidence"></a>
 
 Contains information about the reason that the finding was generated.
 

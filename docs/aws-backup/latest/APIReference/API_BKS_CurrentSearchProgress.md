@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_C
 ---
 
 # CurrentSearchProgress
-<a name="API_BKS_CurrentSearchProgress"></a>
 
 This contains information results retrieved from a search job that may not have completed.
 

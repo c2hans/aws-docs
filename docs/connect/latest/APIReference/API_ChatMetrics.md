@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ChatMetr
 ---
 
 # ChatMetrics
-<a name="API_ChatMetrics"></a>
 
 Information about how agent, bot, and customer interact in a chat contact.
 

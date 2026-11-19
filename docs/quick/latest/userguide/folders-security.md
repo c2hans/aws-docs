@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/folders-security.
 ---
 
 # Permissions for Quick shared folders
-<a name="folders-security"></a>
 
 Shared folders have three permission levels. To set folder-level permissions for a user or group, see [Create and manage membership permissions for Quick shared folders](sharing-folders.md).
 + **Owners** - The folder *owner* owns everything (folders, analyses, dashboards, datasets, data sources, topics) inside of the folder. They can create, edit, and delete the assets in the folder, modify permissions on the folder and its assets, and delete the folder entirely. The owner role is not supported for restricted shared folders.

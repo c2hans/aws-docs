@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # IntegrationResponse
-<a name="apis-apiid-integrations-integrationid-integrationresponses-integrationresponseid"></a>
 
 Represents an integration response. Supported only for WebSocket APIs.
 

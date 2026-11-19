@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning-machine-i
 ---
 
 # Scanning machine images with Amazon Inspector
-<a name="scanning-machine-images"></a>
 
  Amazon Inspector scans the machine images that your account owns for operating system and programming language package vulnerabilities. A machine image is an Amazon Machine Image (AMI) that you use to launch EC2 instances. When Amazon Inspector detects a vulnerability in a machine image, it produces a **Package Vulnerability** type finding with a **Resource type** of `MACHINE_IMAGE`. Scanning your machine images lets you find and remediate vulnerabilities before you use an image to launch instances.
 

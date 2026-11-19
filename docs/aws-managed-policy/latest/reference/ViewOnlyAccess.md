@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/View
 ---
 
 # ViewOnlyAccess
-<a name="ViewOnlyAccess"></a>
 
 **Description**: This policy grants permissions to view resources and basic metadata across all AWS services.
 

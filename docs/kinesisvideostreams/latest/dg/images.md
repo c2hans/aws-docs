@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/images.htm
 ---
 
 # Extract images from video streams
-<a name="images"></a>
 
 You can use Amazon Kinesis Video Streams APIs and SDKs to perform on-demand image extraction and automated image extraction in real time from your Kinesis video streams. You can use these images for enhanced playback applications such as thumbnails or enhanced scrubbing, or for use in machine learning workflows.
 

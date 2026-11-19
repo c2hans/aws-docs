@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-cli-co
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Running AWS CLI commands from chat channels using Amazon Q Developer in chat applications
-<a name="chatbot-cli-commands"></a>
 
 You can run commands using AWS CLI syntax directly in chat channels. Amazon Q Developer enables you to retrieve diagnostic information, configure AWS resources, and run workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPartnerCentralRevenueAttributionManagement
-<a name="AWSPartnerCentralRevenueAttributionManagement"></a>
 
 **Description**: Provides necessary access for revenue attribution management activities.
 

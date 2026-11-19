@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListI
 ---
 
 # ListIndexedRecoveryPoints
-<a name="API_ListIndexedRecoveryPoints"></a>
 
 This operation returns a list of recovery points that have an associated index, belonging to the specified account.
 

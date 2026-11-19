@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # FIRST\_VALUE
-<a name="sql-reference-first-value"></a>
 
 ```
 FIRST_VALUE( <value-expression>) <null treatment> OVER <window-specification>

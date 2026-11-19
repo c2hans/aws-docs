@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/prepare-file-data
 ---
 
 # Preparing a dataset based on file data
-<a name="prepare-file-data"></a>
 
 Use the following procedure to prepare a dataset based on text or Microsoft Excel files from either your local network or Amazon S3.
 

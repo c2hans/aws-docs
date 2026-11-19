@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/debu
 ---
 
 # Running and debugging local Amazon API Gateway resources
-<a name="debug-apigateway"></a>
 
 You can run or debug AWS SAM API Gateway local resources, specified in `template.yaml`, by running a VS Code launch config of `type=aws-sam` with the `invokeTarget.target=api`.
 

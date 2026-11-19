@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPrepAggregationFunction
-<a name="API_DataPrepAggregationFunction"></a>
 
 Defines the type of aggregation function to apply to data during data preparation, supporting simple and list aggregations.
 

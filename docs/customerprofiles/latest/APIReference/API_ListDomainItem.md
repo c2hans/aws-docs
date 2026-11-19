@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListDomainItem
-<a name="API_connect-customer-profiles_ListDomainItem"></a>
 
 An object in a list that represents a domain.
 

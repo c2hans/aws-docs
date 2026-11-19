@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/hive-parquet-mod
 ---
 
 # Parquet modular encryption in Hive
-<a name="hive-parquet-modular-encryption"></a>
 
 Parquet modular encryption provides columnar level access control and encryption to enhance privacy and data integrity for data stored in Parquet file format. This feature is available in Amazon EMR Hive starting with release 6.6.0.
 

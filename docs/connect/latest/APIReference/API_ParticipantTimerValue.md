@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Particip
 ---
 
 # ParticipantTimerValue
-<a name="API_ParticipantTimerValue"></a>
 
 The value of the timer. Either the timer action (`Unset` to delete the timer), or the duration of the timer in minutes. Only one value can be set.
 

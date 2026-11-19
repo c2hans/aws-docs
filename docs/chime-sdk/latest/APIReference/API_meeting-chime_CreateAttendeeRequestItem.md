@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # CreateAttendeeRequestItem
-<a name="API_meeting-chime_CreateAttendeeRequestItem"></a>
 
 The Amazon Chime SDK attendee fields to create, used with the BatchCreateAttendee action.
 

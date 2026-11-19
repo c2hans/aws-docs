@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRekognitionCustomLabelsFullAccess
-<a name="AmazonRekognitionCustomLabelsFullAccess"></a>
 
 **Description**: This policy specifies rekognition and s3 permissions required by Amazon Rekognition Custom Labels feature.
 

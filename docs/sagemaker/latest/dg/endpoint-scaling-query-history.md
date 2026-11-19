@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-scaling-que
 ---
 
 # Check the status of a scaling activity by describing scaling activities
-<a name="endpoint-scaling-query-history"></a>
 
 You can check the status of a scaling activity for your auto scaled endpoint by describing scaling activities. Application Auto Scaling provides descriptive information about the scaling activities in the specified namespace from the previous six weeks. For more information, see [Scaling activities for Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-scaling-activities.html) in the *Application Auto Scaling User Guide*.
 

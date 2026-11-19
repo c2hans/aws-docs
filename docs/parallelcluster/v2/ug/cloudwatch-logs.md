@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/cloudwatch-logs.ht
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Integration with Amazon CloudWatch Logs
-<a name="cloudwatch-logs"></a>
 
 Starting with AWS ParallelCluster version 2.6.0, common logs are stored in CloudWatch Logs by default. For more information about CloudWatch Logs, see [Amazon CloudWatch Logs User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/). To configure CloudWatch Logs integration, see the [`[cw_log]` section](cw-log-section.md) and the [`cw_log_settings`](cluster-definition.md#cw-log-settings) setting.
 

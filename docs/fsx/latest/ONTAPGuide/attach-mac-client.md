@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/attach-mac-client.
 ---
 
 # Mounting volumes on macOS clients
-<a name="attach-mac-client"></a>
 
 This section describes how to access data in your FSx for ONTAP file system with clients running the macOS operating system. Review the following requirements, regardless of the type of client you are using.
 

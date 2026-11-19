@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestT
 ---
 
 # TestTemplateParameter
-<a name="API_TestTemplateParameter"></a>
 
 Describes a parameter accepted by a test template.
 

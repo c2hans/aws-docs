@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Object
 ---
 
 # S3ObjectLockLegalHold
-<a name="API_control_S3ObjectLockLegalHold"></a>
 
 Whether S3 Object Lock legal hold will be applied to objects in an S3 Batch Operations job.
 

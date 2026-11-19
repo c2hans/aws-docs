@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ReasoningTextBlock
-<a name="API_agent-runtime_ReasoningTextBlock"></a>
 
 Contains information about the reasoning that the model used to return the content in the content block.
 

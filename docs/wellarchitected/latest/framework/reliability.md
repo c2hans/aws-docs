@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/reliabi
 ---
 
 # Reliability
-<a name="reliability"></a>
 
  The reliability pillar covers the ability of a workload to perform its intended function correctly and consistently when it is expected to, across its whole lifecycle, and to operate and test the workload throughout that lifecycle. This guidance applies across the design, delivery, and maintenance of a workload, so that reliability is built in rather than added at the end.
 

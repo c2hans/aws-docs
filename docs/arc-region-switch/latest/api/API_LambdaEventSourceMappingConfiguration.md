@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_LambdaE
 ---
 
 # LambdaEventSourceMappingConfiguration
-<a name="API_LambdaEventSourceMappingConfiguration"></a>
 
 Configuration for AWS Lambda event source mappings used in a Region switch plan.
 

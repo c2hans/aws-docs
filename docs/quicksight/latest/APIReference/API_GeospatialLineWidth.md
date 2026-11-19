@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialLineWidth
-<a name="API_GeospatialLineWidth"></a>
 
 The width properties for a line.
 

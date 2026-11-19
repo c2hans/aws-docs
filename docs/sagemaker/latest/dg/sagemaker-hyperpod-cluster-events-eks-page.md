@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # SageMaker HyperPod EKS cluster events
-<a name="sagemaker-hyperpod-cluster-events-eks-page"></a>
 
 Amazon SageMaker HyperPod emits structured cluster events that provide visibility into operational changes at the cluster, instance group, and instance level. You can use these events to monitor provisioning activity, track scaling operations, detect failures, and build automated alerting pipelines.
 

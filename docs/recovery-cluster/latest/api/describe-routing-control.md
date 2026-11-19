@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/describe-rou
 ---
 
 # Describe a routing control
-<a name="describe-routing-control"></a>
 
 The following is an example of a request to describe a routing control, and the response.
 

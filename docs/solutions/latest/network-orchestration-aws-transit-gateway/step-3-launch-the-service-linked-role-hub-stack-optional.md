@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Step 3: (Optional) Launch the service-linked role for AWS RAM hub stack
-<a name="step-3-launch-the-service-linked-role-hub-stack-optional"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the optional service-linked role for AWS RAM hub stack into your hub account.
 

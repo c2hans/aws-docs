@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForGroundStationDataflowEndpointGroupPolicy
-<a name="AWSServiceRoleForGroundStationDataflowEndpointGroupPolicy"></a>
 
 **Description**: AWS GroundStation uses this service-linked role to invoke EC2 to find public IPv4 addresses
 

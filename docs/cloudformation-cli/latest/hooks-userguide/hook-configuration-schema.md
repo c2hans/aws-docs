@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Hook configuration schema syntax reference
-<a name="hook-configuration-schema"></a>
 
 This section outlines the schema syntax used to configure Hooks. CloudFormation uses this configuration schema at runtime when invoking a Hook in an AWS account.
 

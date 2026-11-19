@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ge
 ---
 
 # GetDataGrant
-<a name="API_GetDataGrant"></a>
 
 This operation returns information about a data grant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/remediate-lambda-pro
 ---
 
 # Remediating a potentially compromised Lambda function
-<a name="remediate-lambda-protection-finding-types"></a>
 
 When GuardDuty generates [Lambda Protection finding types](lambda-protection-finding-types.md), your Lambda function may be compromised. If the activity that caused GuardDuty to generate this finding was expected, you can consider using [Suppression rules](findings_suppression-rule.md). We recommend completing the following steps to remediate a compromised Lambda function:
 

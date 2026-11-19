@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MachineLearn
 ---
 
 # MachineLearningDetectionConfig
-<a name="API_MachineLearningDetectionConfig"></a>
 
  The configuration of an ML Detect Security Profile.
 

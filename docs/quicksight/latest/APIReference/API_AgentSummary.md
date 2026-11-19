@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Agent
 ---
 
 # AgentSummary
-<a name="API_AgentSummary"></a>
 
 A summary of an agent, including its identifier, name, and metadata.
 

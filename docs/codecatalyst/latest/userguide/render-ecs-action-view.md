@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/render-ecs
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Viewing the updated task definition file
-<a name="render-ecs-action-view"></a>
 
 You can view the name and contents of the updated task definition file.
 

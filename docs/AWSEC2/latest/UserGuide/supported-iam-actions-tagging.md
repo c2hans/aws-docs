@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/supported-iam-ac
 ---
 
 # Grant permission to tag Amazon EC2 resources during creation
-<a name="supported-iam-actions-tagging"></a>
 
 Some resource-creating Amazon EC2 API actions enable you to specify tags when you create the resource. You can use resource tags to implement attribute-based control (ABAC). For more information, see [Tag your resources](Using_Tags.md#tag-resources) and [Control access using attribute-based access](iam-policies-for-amazon-ec2.md#control-access-with-tags).
 

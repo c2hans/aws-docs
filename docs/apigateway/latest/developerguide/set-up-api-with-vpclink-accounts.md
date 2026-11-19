@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-
 ---
 
 # API Gateway accounts used for private integrations (legacy)
-<a name="set-up-api-with-vpclink-accounts"></a>
 
 The following region-specific API Gateway account IDs are automatically added to your VPC endpoint service as `AllowedPrincipals` when you create a `VpcLink`.
 

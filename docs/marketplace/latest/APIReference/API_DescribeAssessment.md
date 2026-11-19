@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Desc
 ---
 
 # DescribeAssessment
-<a name="API_DescribeAssessment"></a>
 
 Returns the metadata and detailed results of a single assessment, including the framework that was evaluated, the overall assessment result, and a paginated list of individual control evaluation results.
 

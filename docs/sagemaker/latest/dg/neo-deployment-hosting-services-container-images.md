@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosti
 ---
 
 # Inference Container Images
-<a name="neo-deployment-hosting-services-container-images"></a>
 
 SageMaker Neo now provides inference image URI information for `ml_*` targets. For more information see [DescribeCompilationJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCompilationJob.html#sagemaker-DescribeCompilationJob-response-InferenceImage).
 

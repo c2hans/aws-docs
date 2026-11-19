@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # EC2 Instance Stack \| Update DeleteOnTermination (Managed Automation)
-<a name="management-advanced-ec2-instance-stack-update-deleteontermination-managed-automation"></a>
 
 Update the EBS volume DeleteOnTermination property of the specified EC2 instance devices.
 

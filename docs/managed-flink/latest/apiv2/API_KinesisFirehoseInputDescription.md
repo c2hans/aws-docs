@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisFi
 ---
 
 # KinesisFirehoseInputDescription
-<a name="API_KinesisFirehoseInputDescription"></a>
 
 Describes the Amazon Kinesis Data Firehose delivery stream that is configured as the streaming source in the application input configuration.
 

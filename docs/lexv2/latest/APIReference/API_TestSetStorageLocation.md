@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetSto
 ---
 
 # TestSetStorageLocation
-<a name="API_TestSetStorageLocation"></a>
 
 Contains information about the location in which the test set is stored.
 

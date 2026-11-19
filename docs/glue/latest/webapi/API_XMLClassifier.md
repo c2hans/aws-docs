@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_XMLClassifier.htm
 ---
 
 # XMLClassifier
-<a name="API_XMLClassifier"></a>
 
 A classifier for `XML` content.
 

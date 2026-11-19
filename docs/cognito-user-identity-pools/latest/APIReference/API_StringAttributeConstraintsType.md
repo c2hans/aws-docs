@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # StringAttributeConstraintsType
-<a name="API_StringAttributeConstraintsType"></a>
 
 The minimum and maximum length values of an attribute that is of the string type, for example `custom:department`.
 

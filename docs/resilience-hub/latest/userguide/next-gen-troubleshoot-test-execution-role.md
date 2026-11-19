@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Test run fails with an access denied error
-<a name="next-gen-troubleshoot-test-execution-role"></a>
 
 **Symptom:** A test run fails with an `AccessDenied` error from AWS FIS or one of the targeted services.
 

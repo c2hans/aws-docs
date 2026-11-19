@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSAMLPr
 ---
 
 # DeleteSAMLProvider
-<a name="API_DeleteSAMLProvider"></a>
 
 Deletes a SAML provider resource in IAM.
 

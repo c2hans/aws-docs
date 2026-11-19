@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-code-sign-
 ---
 
 # Creating a code-signing certificate for the FreeRTOS Windows simulator
-<a name="ota-code-sign-cert-win"></a>
 
 The FreeRTOS Windows simulator requires a code-signing certificate with an ECDSA P-256 key and SHA-256 hash to perform OTA updates. If you don't have a code-signing certificate, follow these steps to create one.
 

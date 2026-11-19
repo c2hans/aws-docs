@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Resources
-<a name="resources-cost"></a>
 
  **Documentation and blogs:**
 +  [Connected Mobility Solutions](https://aws.amazon.com/automotive/connected-mobility/)

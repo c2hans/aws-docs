@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-get-doc
 ---
 
 # Retrieve the content of documents from knowledge base
-<a name="kb-test-get-document-content"></a>
 
 The `GetDocumentContent` API allows you to retrieve the content of documents that have been ingested into an Amazon Bedrock Knowledge Base. This API returns a pre-signed URL that provides temporary, secure access to download or view the original or extracted content of a document.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # UpdateCustomLineItemChargeDetails
-<a name="API_UpdateCustomLineItemChargeDetails"></a>
 
  A representation of the new charge details of a custom line item. This should contain only one of `Flat` or `Percentage`.
 

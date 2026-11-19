@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListGateways
-<a name="API_ListGateways"></a>
 
 Retrieves a paginated list of gateways.
 

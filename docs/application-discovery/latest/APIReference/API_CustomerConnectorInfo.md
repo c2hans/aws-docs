@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # CustomerConnectorInfo
-<a name="API_CustomerConnectorInfo"></a>
 
 Inventory data for installed discovery connectors.
 

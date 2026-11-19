@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupOrganizationAdminAccess
-<a name="AWSBackupOrganizationAdminAccess"></a>
 
 **Description**: This policy is for backup administators who use cross-account backup management to manage backups for the organization.
 

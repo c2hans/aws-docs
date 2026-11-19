@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Requirements and limitations for Aurora serverless
-<a name="aurora-serverless-v2.requirements"></a>
 
 When you create a cluster where you intend to use Aurora serverless DB instances, pay attention to the following requirements and limitations.
 

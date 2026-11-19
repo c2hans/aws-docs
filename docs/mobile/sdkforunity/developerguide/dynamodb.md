@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/dynamo
 The AWS Mobile SDK for Unity is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Unity. For more information, see [What is the AWS Mobile SDK for Unity?](what-is-unity-plugin.md)
 
 # Amazon DynamoDB
-<a name="dynamodb"></a>
 
  [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) is a fast, highly scalable, highly available, cost-effective, non-relational database service. DynamoDB removes traditional scalability limitations on data storage while maintaining low latency and predictable performance. For information about DynamoDB, see [Amazon DynamoDB](https://aws.amazon.com/dynamodb/).
 

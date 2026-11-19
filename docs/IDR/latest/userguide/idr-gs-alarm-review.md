@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/idr-gs-alarm-review
 ---
 
 # Alarm review and feedback
-<a name="idr-gs-alarm-review"></a>
 
 AWS Incident Detection and Response conduct comprehensive reviews of your alarms prior to onboarding them for monitoring. Alarms are evaluated against a technical acceptance criteria including configuration parameters, data quality and alert effectiveness.
 

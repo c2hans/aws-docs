@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_E
 ---
 
 # EntitlementFilter
-<a name="API_EntitlementFilter"></a>
 
 Specifies filter criteria for listing entitlements.
 

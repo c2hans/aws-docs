@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/send-command-op.h
 ---
 
 # Implement the AWS.SendCommand operation
-<a name="send-command-op"></a>
 
 The `AWS.SendCommand` operation allows Managed Integrations for AWS IoT Device Management to send commands initiated by the end user via the AWS customer to your resource server. Your resource server may support multiple types of devices, where each type has its own response model.
 

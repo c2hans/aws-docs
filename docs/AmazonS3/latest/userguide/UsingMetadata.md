@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.
 ---
 
 # Working with object metadata
-<a name="UsingMetadata"></a>
 
 Amazon S3 provides several ways to attach metadata to your objects. *Annotations* let you attach rich data payloads of up to 1 MB to objects using dedicated API operations. *Object tags* are key-value pairs for categorizing and controlling access to objects. You can also set *user-defined metadata* at upload time, and Amazon S3 maintains *system-defined metadata* automatically. For more information, see [Custom object metadata](#custom-metadata), [Annotating your objects](annotations-overview.md), [Tagging your objects](object-tagging.md), [User-defined metadata](#UserMetadata), and [System-defined object metadata](#SysMetadata).
 

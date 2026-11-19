@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ContextStoreSyncState
-<a name="API_ContextStoreSyncState"></a>
 
 The synchronization state of a firewall's context sets with its context store. This indicates whether the resource identifiers in the firewall's context sets resolve to resources that the context store records.
 

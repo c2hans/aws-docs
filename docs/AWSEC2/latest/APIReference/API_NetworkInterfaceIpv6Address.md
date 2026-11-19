@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkIn
 ---
 
 # NetworkInterfaceIpv6Address
-<a name="API_NetworkInterfaceIpv6Address"></a>
 
 Describes an IPv6 address associated with a network interface.
 

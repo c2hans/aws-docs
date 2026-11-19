@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng.ht
 ---
 
 # AWS PCS compute node groups
-<a name="working-with_cng"></a>
 
 An AWS Parallel Computing Service (AWS PCS) compute node group is a logical collection of compute nodes (Amazon EC2 instances). Compute nodes run jobs, and they can also provide interactive, shell-based access to an HPC system. A compute node group consists of rules for creating compute nodes. The rules include which Amazon EC2 instance types to use, how many instances to run, whether to use Spot Instances or On-Demand Instances, and which subnets to use. When you update these rules, AWS PCS updates the resources associated with the compute node group to match.
 

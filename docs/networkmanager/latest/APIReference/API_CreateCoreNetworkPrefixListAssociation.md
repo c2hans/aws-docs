@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateCoreNetworkPrefixListAssociation
-<a name="API_CreateCoreNetworkPrefixListAssociation"></a>
 
 Creates an association between a core network and a prefix list for routing control.
 

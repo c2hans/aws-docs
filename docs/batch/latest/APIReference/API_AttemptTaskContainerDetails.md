@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_AttemptTas
 ---
 
 # AttemptTaskContainerDetails
-<a name="API_AttemptTaskContainerDetails"></a>
 
 An object that represents the details of a container that's part of a job attempt.
 

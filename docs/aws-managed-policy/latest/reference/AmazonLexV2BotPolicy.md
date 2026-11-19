@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonLexV2BotPolicy
-<a name="AmazonLexV2BotPolicy"></a>
 
 **Description**: Provides Lex V2 bots access to call other AWS services on your behalf.
 

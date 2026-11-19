@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Constraints, dependencies, and assumptions
-<a name="constraints-dependencies-and-assumptions"></a>
 
  **Constraints**
 + Lambda architecture: Supports transformation for images up to 6MB

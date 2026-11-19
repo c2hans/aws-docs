@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_SourceA
 ---
 
 # SourceAttribution
-<a name="API_SourceAttribution"></a>
 
 The documents used to generate an Amazon Q Business web experience response.
 

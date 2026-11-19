@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/attr-errors.ht
 ---
 
 # Interpreting PKCS \#11 library error codes for AWS CloudHSM Client SDK 5
-<a name="attr-errors"></a>
 
 Specifying in the template a PKCS \#11 library attribute that is not supported by a specific key results in an error. The following table contains error codes that are generated when you violate specifications:
 

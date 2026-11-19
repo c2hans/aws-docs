@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetRegions
-<a name="API_GetRegions"></a>
 
 Returns a list of all valid regions for Amazon Lightsail. Use the `include availability zones` parameter to also return the Availability Zones in a region.
 

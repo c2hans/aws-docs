@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/ip-ranges.html
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Inbound SSH IP address ranges for AWS Cloud9
-<a name="ip-ranges"></a>
 
 You can restrict incoming traffic to only the IP address ranges that AWS Cloud9 uses to connect over SSH to AWS cloud compute instances (for example Amazon EC2 instances) in an Amazon VPC or your own servers in your network.
 

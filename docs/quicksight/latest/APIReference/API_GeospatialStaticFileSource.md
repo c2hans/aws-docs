@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialStaticFileSource
-<a name="API_GeospatialStaticFileSource"></a>
 
 The source properties for a geospatial static file.
 

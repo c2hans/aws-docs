@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity
 ---
 
 # Amazon ECS Auto scaling and capacity management best practices
-<a name="capacity-availability"></a>
 
 You can run containerized application workloads of all sizes on Amazon ECS. This includes minimal testing environments and large production environments that operate at a global scale.
 

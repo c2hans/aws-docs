@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DEP.6] Test landing zone changes in a mirrored non-production landing zone
-<a name="ag.dep.6-test-landing-zone-changes-in-a-mirrored-non-production-landing-zone"></a>
 
  **Category:** RECOMMENDED
 

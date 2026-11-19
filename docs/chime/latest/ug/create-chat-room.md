@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/create-chat-room.html
 ---
 
 # Creating chat rooms
-<a name="create-chat-room"></a>
 
 The steps in this section explain how to use the Amazon Chime desktop client and web app to create chat rooms.
 

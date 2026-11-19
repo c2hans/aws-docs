@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SendChat
 ---
 
 # SendChatIntegrationEvent
-<a name="API_SendChatIntegrationEvent"></a>
 
 Processes chat integration events from AWS or external integrations to Connect Customer. A chat integration event includes:
 + SourceId, DestinationId, and Subtype: a set of identifiers, uniquely representing a chat

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/logging-with-s3.html
 ---
 
 # Sending Lambda Event Function logs to Amazon S3
-<a name="logging-with-s3"></a>
 
 You can configure your Lambda Event Function to send logs directly to Amazon S3 using the Lambda console. This feature provides a cost-effective solution for long-term log storage and enables powerful analysis options using services like Athena.
 

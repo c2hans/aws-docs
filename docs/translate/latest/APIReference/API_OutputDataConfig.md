@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Output
 ---
 
 # OutputDataConfig
-<a name="API_OutputDataConfig"></a>
 
 The output configuration properties for a batch translation job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_GrammarSlo
 ---
 
 # GrammarSlotTypeSource
-<a name="API_GrammarSlotTypeSource"></a>
 
 Describes the Amazon S3 bucket name and location for the grammar that is the source for the slot type.
 

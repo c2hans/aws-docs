@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/attach-iam-role.
 ---
 
 # Attach an IAM role to an instance
-<a name="attach-iam-role"></a>
 
 You can create an IAM role and attach it to an instance during or after launch. You can also replace or detach IAM roles.
 

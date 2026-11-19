@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Compre
 ---
 
 # ComprehendMedicalAsyncJobProperties
-<a name="API_ComprehendMedicalAsyncJobProperties"></a>
 
 Provides information about a detection job.
 

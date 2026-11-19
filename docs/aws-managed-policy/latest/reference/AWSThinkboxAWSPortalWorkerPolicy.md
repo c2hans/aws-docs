@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSThinkboxAWSPortalWorkerPolicy
-<a name="AWSThinkboxAWSPortalWorkerPolicy"></a>
 
 **Description**: This policy grants the Deadline Workers in AWS Portal the necessary permissions required for normal operation.
 

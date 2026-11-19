@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/stop-query-execution.ht
 ---
 
 # Stop query execution
-<a name="stop-query-execution"></a>
 
 The `StopQueryExecutionExample` runs an example query, immediately stops the query, and checks the status of the query to ensure that it was canceled.
 

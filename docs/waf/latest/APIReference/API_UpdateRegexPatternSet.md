@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateRegexP
 ---
 
 # UpdateRegexPatternSet
-<a name="API_UpdateRegexPatternSet"></a>
 
 Updates the specified [RegexPatternSet](API_RegexPatternSet.md).
 

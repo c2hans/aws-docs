@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DeleteStackSet
-<a name="API_DeleteStackSet"></a>
 
 Deletes a StackSet. Before you can delete a StackSet, all its member stack instances must be deleted. For more information about how to complete this, see [DeleteStackInstances](API_DeleteStackInstances.md).
 

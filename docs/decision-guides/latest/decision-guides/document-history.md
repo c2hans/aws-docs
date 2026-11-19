@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/d
 ---
 
 # Document history
-<a name="document-history"></a>
 
 The following table describes important changes to the *AWS Decision Guides*.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Network designing and planning
-<a name="network-designing-and-planning"></a>
 
 Your workloads use IP addresses to communicate with each other, within your cloud environment, or in hybrid environments with resources outside your cloud environment. IP address management is an essential component for you to manage your network when you plan the different stages to deploy and operate your workloads. Without considering how your IP address space will be allocated, you run the risk of overlapping CIDRs and IP address exhaustion which can lead to network or service outages. Having a plan on where CIDR space will be allocated to will help you build your foundational environment to include support routing rules and route optimization.
 

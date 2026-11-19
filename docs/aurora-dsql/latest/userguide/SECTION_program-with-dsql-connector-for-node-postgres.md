@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_pro
 ---
 
 # Aurora DSQL Connector for node-postgres
-<a name="SECTION_program-with-dsql-connector-for-node-postgres"></a>
 
  The [Aurora DSQL Connector for node-postgres](https://github.com/awslabs/aurora-dsql-connectors/tree/main/node/node-postgres) is a Node.js connector built on [node-postgres](https://node-postgres.com/) that integrates IAM Authentication for connecting JavaScript/TypeScript applications to Amazon Aurora DSQL clusters.
 

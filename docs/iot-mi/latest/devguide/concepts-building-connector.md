@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/concepts-building
 ---
 
 # Build a C2C (Cloud-to-Cloud) connector
-<a name="concepts-building-connector"></a>
 
 The following sections cover the steps to build a C2C (Cloud-to-Cloud) connector for managed integrations for AWS IoT Device Management.
 

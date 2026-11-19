@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_S3Tab
 ---
 
 # S3TablesParameters
-<a name="API_S3TablesParameters"></a>
 
 The parameters for S3 Tables.
 

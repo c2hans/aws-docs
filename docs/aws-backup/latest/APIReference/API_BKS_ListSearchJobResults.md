@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_L
 ---
 
 # ListSearchJobResults
-<a name="API_BKS_ListSearchJobResults"></a>
 
 This operation returns a list of a specified search job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MetricDataQuery
-<a name="API_MetricDataQuery"></a>
 
 This structure is used in both `GetMetricData` and `PutMetricAlarm`. The supported use of this structure is different for those two operations.
 

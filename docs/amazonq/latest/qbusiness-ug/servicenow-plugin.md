@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/servicenow-p
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring a ServiceNow plugin for Amazon Q Business
-<a name="servicenow-plugin"></a>
 
 ServiceNow provides a cloud-based service management system to create and manage organization-level workflows, such as IT services, ticketing systems, and support. ServiceNow uses incidents (tickets) to track issues. If you’re a ServiceNow user, you can create an Amazon Q Business plugin to allow your end users to create ServiceNow cases from within their web experience chat.
 

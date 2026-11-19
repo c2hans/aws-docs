@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/setup-green
 ---
 
 # Set up AWS IoT Greengrass V2 core devices as non-root
-<a name="setup-greengrass-non-root"></a>
 
 This page presents four solutions for running the AWS IoT Greengrass Core software as non-root. Review the comparison table to understand the features and tradeoffs of each solution, then use the decision flowchart to identify which one fits your requirements.
 

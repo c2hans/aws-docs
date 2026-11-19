@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rol
 ---
 
 # RollbackStage
-<a name="API_RollbackStage"></a>
 
 Rolls back a stage execution.
 

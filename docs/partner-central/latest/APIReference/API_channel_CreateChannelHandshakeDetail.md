@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateChannelHandshakeDetail
-<a name="API_channel_CreateChannelHandshakeDetail"></a>
 
 Contains details about a newly created channel handshake.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/trouble
 ---
 
 # Troubleshooting maintenance windows
-<a name="troubleshooting-maintenance-windows"></a>
 
 Use the following information to help you troubleshoot problems with maintenance windows.
 

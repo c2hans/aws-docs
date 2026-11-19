@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AutoAdjustData
-<a name="API_budgets_AutoAdjustData"></a>
 
 The parameters that determine the budget amount for an auto-adjusting budget.
 

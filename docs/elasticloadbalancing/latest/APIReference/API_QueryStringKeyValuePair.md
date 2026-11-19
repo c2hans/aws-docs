@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # QueryStringKeyValuePair
-<a name="API_QueryStringKeyValuePair"></a>
 
 Information about a key/value pair.
 

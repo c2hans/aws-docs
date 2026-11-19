@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 6: Update the factory schema
-<a name="update-factory-schema"></a>
 
 ## Update the target AWS Account Id for AWS MGN migrations
 <a name="aws-mgn-only-update-the-aws-accountid-for-aws-mgn"></a>

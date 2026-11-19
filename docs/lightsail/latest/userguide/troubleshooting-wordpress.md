@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/troubleshooti
 ---
 
 # WordPress
-<a name="troubleshooting-wordpress"></a>
 
 Troubleshoot issues with WordPress instances that use the WordPress blueprint by Lightsail. This section covers HTTPS setup failures, SSL/TLS certificate renewal problems, and tips and best practices for keeping your instance fast, stable, and secure.
 

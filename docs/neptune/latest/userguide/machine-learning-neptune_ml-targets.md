@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # The targets field in a neptune\_ml object
-<a name="machine-learning-neptune_ml-targets"></a>
 
 The `targets` field in a JSON training data export configuration contains an array of target objects that specify a training task and and the machine-learning class labels for training this task. The contents of the target objects varies depending on whether you are training on property-graph data or RDF data.
 

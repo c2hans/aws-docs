@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-query-hi
 ---
 
 # The `queryId` SPARQL Query Hint
-<a name="sparql-query-hints-queryId"></a>
 
 Use this query hint to assign your own queryId value to a SPARQL query.
 

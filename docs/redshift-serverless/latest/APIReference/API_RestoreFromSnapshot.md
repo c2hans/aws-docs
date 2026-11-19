@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # RestoreFromSnapshot
-<a name="API_RestoreFromSnapshot"></a>
 
 Restores a namespace from a snapshot.
 

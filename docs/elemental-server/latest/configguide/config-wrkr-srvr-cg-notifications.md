@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/configguide/conf
 This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
 
 # Configure AWS Elemental Server Notifications
-<a name="config-wrkr-srvr-cg-notifications"></a>
 
 AWS Elemental Server provides status information through alerts and messages. You can configure notifications so you know when the node might need attention. The following table describes the differences between alerts and messages and how you can access each.
 

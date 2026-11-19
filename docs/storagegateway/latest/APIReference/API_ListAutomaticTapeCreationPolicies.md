@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_L
 ---
 
 # ListAutomaticTapeCreationPolicies
-<a name="API_ListAutomaticTapeCreationPolicies"></a>
 
 Lists the automatic tape creation policies for a gateway. If there are no automatic tape creation policies for the gateway, it returns an empty list.
 

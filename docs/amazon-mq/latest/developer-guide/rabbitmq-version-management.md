@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # Managing Amazon MQ for RabbitMQ engine versions
-<a name="rabbitmq-version-management"></a>
 
  RabbitMQ organizes version numbers according to semantic versioning specification as `X.Y.Z`. In Amazon MQ for RabbitMQ implementations, `X` denotes the major version, `Y` represents the minor version, and `Z` denotes the patch version number. Amazon MQ considers a version change to be major if the major version numbers change. For example, upgrading from version **3**.13 to **4**.0 is considered a major version upgrade. A version change is considered minor if only the minor or patch version number changes. For example, upgrading from version 3.**11**.28 to 3.**12**.13 is considered a minor version upgrade.
 

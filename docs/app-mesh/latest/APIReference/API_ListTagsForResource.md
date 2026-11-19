@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListTag
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 List the tags for an App Mesh resource.
 

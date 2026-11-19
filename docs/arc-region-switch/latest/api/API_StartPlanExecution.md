@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_StartPl
 ---
 
 # StartPlanExecution
-<a name="API_StartPlanExecution"></a>
 
 Starts the execution of a Region switch plan. You can execute a plan in either `graceful` or `ungraceful` mode.
 

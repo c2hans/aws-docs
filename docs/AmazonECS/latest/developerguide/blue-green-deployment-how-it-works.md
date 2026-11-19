@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-gre
 ---
 
 # Amazon ECS blue/green service deployments workflow
-<a name="blue-green-deployment-how-it-works"></a>
 
 The Amazon ECS blue/green deployment process follows a structured approach with six distinct phases that ensure safe and reliable application updates. Each phase serves a specific purpose in validating and transitioning your application from the current version (blue) to the new version (green).
 

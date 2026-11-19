@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/iam-
 ---
 
 # AWS IAM Access Analyzer
-<a name="iam-access-analyzer"></a>
 
 You can run [AWS Identity and Access Management (IAM) Access Analyzer](https://aws.amazon.com/iam/access-analyzer/) policy checks on your IAM policies authored in CloudFormation templates, Terraform plans, and JSON policy documents, using the IAM Access Analyzer in the AWS Toolkit for Visual Studio Code.
 

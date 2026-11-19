@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CredentialRotationConfig
-<a name="API_CredentialRotationConfig"></a>
 
 Specifies the service-managed credentials to rotate. Provide the member that matches the payment connector's `type`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # ValidateAddressActionOptions
-<a name="API_geojobs_ValidateAddressActionOptions"></a>
 
 Options specific to address validation jobs.
 

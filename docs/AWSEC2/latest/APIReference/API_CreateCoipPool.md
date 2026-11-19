@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCoi
 ---
 
 # CreateCoipPool
-<a name="API_CreateCoipPool"></a>
 
  Creates a pool of customer-owned IP (CoIP) addresses.
 

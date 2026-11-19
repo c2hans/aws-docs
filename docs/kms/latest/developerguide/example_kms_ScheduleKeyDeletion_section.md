@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/example_kms_Sc
 ---
 
 # Use `ScheduleKeyDeletion` with an AWS SDK or CLI
-<a name="example_kms_ScheduleKeyDeletion_section"></a>
 
 The following code examples show how to use `ScheduleKeyDeletion`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_TaskContai
 ---
 
 # TaskContainerProperties
-<a name="API_TaskContainerProperties"></a>
 
 Container properties are used for Amazon ECS-based job definitions. These properties to describe the container that's launched as part of a job.
 

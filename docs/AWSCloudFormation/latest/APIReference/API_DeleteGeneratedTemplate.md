@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DeleteGeneratedTemplate
-<a name="API_DeleteGeneratedTemplate"></a>
 
 Deleted a generated template.
 

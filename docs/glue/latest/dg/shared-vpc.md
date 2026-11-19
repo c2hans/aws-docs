@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/shared-vpc.html
 ---
 
 # Configuring shared Amazon VPCs
-<a name="shared-vpc"></a>
 
 AWS Glue supports shared virtual private clouds (VPCs) in Amazon Virtual Private Cloud. Amazon VPC sharing allows multiple AWS accounts to create their application resources, such as Amazon EC2 instances and Amazon Relational Database Service (Amazon RDS) databases, into shared, centrally-managed Amazon VPCs. In this model, the account that owns the VPC (owner) shares one or more subnets with other accounts (participants) that belong to the same organization from AWS Organizations. After a subnet is shared, the participants can view, create, modify, and delete their application resources in the subnets that are shared with them.
 

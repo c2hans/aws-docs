@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase1Enc
 ---
 
 # Phase1EncryptionAlgorithmsRequestListValue
-<a name="API_Phase1EncryptionAlgorithmsRequestListValue"></a>
 
 Specifies the encryption algorithm for the VPN tunnel for phase 1 IKE negotiations.
 

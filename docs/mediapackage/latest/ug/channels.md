@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/channels.html
 ---
 
 # Working with channels in AWS Elemental MediaPackage
-<a name="channels"></a>
 
 A channel holds all the information that AWS Elemental MediaPackage (MediaPackage) requires to receive a live content stream from a source such as AWS Elemental MediaLive or another encoder. The channel receives content, and after packaging it, outputs it through an endpoint to downstream devices (such as video players or CDNs) that request the content.
 

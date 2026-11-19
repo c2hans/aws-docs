@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_FileM
 ---
 
 # FileMetadata
-<a name="API_FileMetadata"></a>
 
 A file to be added, updated, or deleted as part of a commit.
 

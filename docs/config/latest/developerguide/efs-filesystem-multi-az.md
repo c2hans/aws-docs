@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/efs-filesys
 ---
 
 # efs-filesystem-multi-az
-<a name="efs-filesystem-multi-az"></a>
 
 Checks if an Amazon EFS file system is deployed across multiple Availability Zones. The rule is NON\_COMPLIANT if 'configuration.AvailabilityZoneName' is present.
 

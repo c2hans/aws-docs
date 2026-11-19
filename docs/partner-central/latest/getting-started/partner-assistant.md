@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Personalized support from the AWS Partner Assistant extension in AWS assistant
-<a name="partner-assistant"></a>
 
 The AWS assistant is an AI-powered chat assistant available to all AWS customers in the AWS Management Console. When accessed from AWS Partner Central, the AWS assistant will connect to Partner Assistant, an exclusive extension for AWS Partners that provides access to partner-specific content, including AWS Partner program documentation and guides not available to general AWS customers.
 

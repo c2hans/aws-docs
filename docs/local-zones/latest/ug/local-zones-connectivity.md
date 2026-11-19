@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/local-zones/latest/ug/local-zones-connec
 ---
 
 # Connectivity options for Local Zones
-<a name="local-zones-connectivity"></a>
 
 There are many ways to connect users and applications to resources running in a Local Zone.
 

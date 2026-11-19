@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pause.html
 ---
 
 # Pause
-<a name="pause"></a>
 
 Pause a call for a specified time.
 

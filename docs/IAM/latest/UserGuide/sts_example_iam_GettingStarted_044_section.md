@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_iam_Get
 ---
 
 # Creating a managed monitoring workspace
-<a name="sts_example_iam_GettingStarted_044_section"></a>
 
 The following code example shows how to:
 + Create an IAM role for your workspace

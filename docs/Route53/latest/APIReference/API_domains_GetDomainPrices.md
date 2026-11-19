@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # GetDomainPrices
-<a name="API_domains_GetDomainPrices"></a>
 
 Returns the following prices for the specified domain:
 + Registration

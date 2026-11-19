@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/clean-rooms
 ---
 
 # AWS Clean Rooms ML quotas
-<a name="clean-rooms-ml-quotas"></a>
 
 Your AWS account has the default quotas, formerly referred to as limits, for AWS Clean Rooms ML.
 

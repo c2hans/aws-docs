@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsl
 ---
 
 # Data retrieval APIs for AWS License Manager
-<a name="awslicensemanager"></a>
 
 AWS License Manager provides the following APIs for data retrieval.
 

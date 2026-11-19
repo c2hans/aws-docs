@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VerifiedPermissions::PolicyStore Tag
-<a name="aws-properties-verifiedpermissions-policystore-tag"></a>
 
 A key-value pair associated with an AWS resource. In Verified Permissions, policy stores support tagging.
 

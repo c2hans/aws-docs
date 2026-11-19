@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-lambda
 ---
 
 # Update a Lambda function configuration with CodeBuild Lambda Python
-<a name="sample-lambda-boto3-python"></a>
 
 The following Python sample uses [Boto3](https://aws.amazon.com/sdk-for-python/) and CodeBuild Lambda Python to update a Lambda function's configuration. This sample can be extended to manage other AWS resources programmatically. For more information, see [Boto3 documentation](https://aws.amazon.com/sdk-for-python/).
 

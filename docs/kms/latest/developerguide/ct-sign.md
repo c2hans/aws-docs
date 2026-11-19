@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-sign.html
 ---
 
 # Sign
-<a name="ct-sign"></a>
 
 These examples show AWS CloudTrail log entries for the [Sign](https://docs.aws.amazon.com/kms/latest/APIReference/API_Sign.html) operation.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/userguide/a
 AWS Application Discovery Service is no longer open to new customers. Alternatively, use AWS Transform which provides similar capabilities. For more information, see [AWS Application Discovery Service availability change](https://docs.aws.amazon.com/application-discovery/latest/userguide/application-discovery-service-availability-change.html).
 
 # Deploying Application Discovery Service Agentless Collector
-<a name="agentless-collector-deploying"></a>
 
 To deploy Application Discovery Service Agentless Collector, you must first create an IAM user and download the collector. This page walks you through the steps to take to deploy a collector.
 

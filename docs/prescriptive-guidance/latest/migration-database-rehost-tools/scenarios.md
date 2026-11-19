@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Migration scenarios
-<a name="scenarios"></a>
 
 Migration scenarios can be differentiated based on scale (how many servers or applications are involved), migration time (how fast it must be done), and length of downtime allowed during cutover. These considerations affect the choice of AWS services to best support the migration.
 + A large-scale migration (such as a full data center exit) includes multiple business units, and many applications and their databases. These typically have a tight time frame or a fixed deadline (such as completion before the closure of the data center) but less strict downtime limitations, which allow for longer cutover windows.

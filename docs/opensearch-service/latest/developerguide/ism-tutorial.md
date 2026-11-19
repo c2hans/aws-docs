@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Tutorial: Automating Index State Management processes
-<a name="ism-tutorial"></a>
 
 This tutorial demonstrates how to implement an ISM policy that automates routine index management tasks and apply them to indexes and index patterns.
 

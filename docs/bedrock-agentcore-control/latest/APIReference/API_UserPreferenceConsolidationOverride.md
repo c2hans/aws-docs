@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UserPreferenceConsolidationOverride
-<a name="API_UserPreferenceConsolidationOverride"></a>
 
 Contains user preference consolidation override configuration.
 

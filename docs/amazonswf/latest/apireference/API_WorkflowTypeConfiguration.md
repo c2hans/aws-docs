@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowTypeConfiguration
-<a name="API_WorkflowTypeConfiguration"></a>
 
 The configuration settings of a workflow type.
 

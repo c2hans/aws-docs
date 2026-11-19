@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-walkth
 ---
 
 # Example 4 - Bucket owner granting cross-account permission to objects it does not own
-<a name="example-walkthroughs-managing-access-example4"></a>
 
 **Topics**
 + [Understanding cross-account permissions and using IAM roles](#access-policies-walkthrough-example4-overview)

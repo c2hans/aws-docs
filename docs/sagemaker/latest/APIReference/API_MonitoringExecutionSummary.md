@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringExecutionSummary
-<a name="API_MonitoringExecutionSummary"></a>
 
 Summary of information about the last monitoring job to run.
 

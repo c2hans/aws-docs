@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteClusterExtension
-<a name="API_DeleteClusterExtension"></a>
 
 Deletes an extension from a SageMaker HyperPod cluster. SageMaker HyperPod removes the extension's software from every node in the cluster. While SageMaker HyperPod removes the extension, its status is `Deleting`. After SageMaker HyperPod removes the extension from all nodes, it no longer appears in `ListClusterExtensions`, and `DescribeClusterExtension` returns a `ResourceNotFound` error.
 

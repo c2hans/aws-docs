@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservedCapacityDetails
-<a name="API_ReservedCapacityDetails"></a>
 
 Details about the reservations that AWS recommends that you purchase.
 

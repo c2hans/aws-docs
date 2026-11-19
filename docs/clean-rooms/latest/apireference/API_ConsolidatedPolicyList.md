@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Cons
 ---
 
 # ConsolidatedPolicyList
-<a name="API_ConsolidatedPolicyList"></a>
 
 Controls on the analysis specifications that can be run on a configured table.
 

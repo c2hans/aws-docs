@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/s3_code_examples_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for Amazon S3 using AWS SDKs
-<a name="s3_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Simple Storage Service with AWS SDKs.
 

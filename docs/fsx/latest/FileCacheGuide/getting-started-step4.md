@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-starte
 ---
 
 # Step 4: Clean up resources
-<a name="getting-started-step4"></a>
 
 After you finish this exercise, we recommend that you follow these steps to clean up your resources and protect your AWS account.
 

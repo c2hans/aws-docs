@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/planning.html
 ---
 
 # Plan a build in AWS CodeBuild
-<a name="planning"></a>
 
 Before you use AWS CodeBuild, you must answer these questions:
 

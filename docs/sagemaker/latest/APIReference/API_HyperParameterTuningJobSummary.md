@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterTuningJobSummary
-<a name="API_HyperParameterTuningJobSummary"></a>
 
 Provides summary information about a hyperparameter tuning job.
 

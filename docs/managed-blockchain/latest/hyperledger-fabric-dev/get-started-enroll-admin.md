@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fa
 End of support notice: Amazon Managed Blockchain (AMB) will stop accepting new customers on October 29, 2026. Existing customers can continue using Amazon Managed Blockchain (AMB) until September 29, 2027. After September 29, 2027 you will no longer be able to access Amazon Managed Blockchain (AMB). For more information, see [Amazon Managed Blockchain (AMB) end of support](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html).
 
 # Step 5: Enroll an Administrative User
-<a name="get-started-enroll-admin"></a>
 
 In this step, you use a pre-configured certificate to enroll a user with administrative permissions to your member's certificate authority (CA). To do this, you must create a certificate file. You also need the endpoint for the CA of your member, and the user name and password for the user that you created in [Step 1: Create the Network and First Member](get-started-create-network.md).
 

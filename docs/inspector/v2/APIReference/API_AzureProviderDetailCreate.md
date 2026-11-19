@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AzureProvi
 ---
 
 # AzureProviderDetailCreate
-<a name="API_AzureProviderDetailCreate"></a>
 
 The Azure-specific configuration details for creating a connector, including the AWS Config connector association, scan scope, and regions to scan.
 

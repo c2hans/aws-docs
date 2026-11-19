@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/change_stream
 ---
 
 # Using change streams with Amazon DocumentDB
-<a name="change_streams"></a>
 
 The change streams feature in Amazon DocumentDB (with MongoDB compatibility) provides a time-ordered sequence of change events that occur within your cluster’s collections. You can read events from a change stream to implement many different use cases, including the following:
 + Change notification

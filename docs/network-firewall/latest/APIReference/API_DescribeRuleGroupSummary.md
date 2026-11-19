@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeRuleGroupSummary
-<a name="API_DescribeRuleGroupSummary"></a>
 
 Returns detailed information for a stateful rule group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_A
 ---
 
 # AWS IoT data
-<a name="API_Operations_AWS_IoT_Data_Plane"></a>
 
 The following actions are supported by AWS IoT data:
 +  [DeleteConnection](API_iotdata_DeleteConnection.md)

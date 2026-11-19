@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/bgw-third-par
 ---
 
 # Information about third-party source components for Backup gateway
-<a name="bgw-third-party-source"></a>
 
 In this section, you can find information about third party tools and licenses that we depend on to deliver Backup gateway functionality.
 

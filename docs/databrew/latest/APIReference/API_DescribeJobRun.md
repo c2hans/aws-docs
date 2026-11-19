@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Describ
 ---
 
 # DescribeJobRun
-<a name="API_DescribeJobRun"></a>
 
 Represents one run of a DataBrew job.
 

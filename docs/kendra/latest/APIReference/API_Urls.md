@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Urls.html
 ---
 
 # Urls
-<a name="API_Urls"></a>
 
 Provides the configuration information of the URLs to crawl.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedRouter
 ---
 
 # ListedRouterNetworkInterface
-<a name="API_ListedRouterNetworkInterface"></a>
 
 A summary of a router network interface, including its name, type, ARN, ID, associated input/output counts, state, and other key details. This structure is used in the response of the ListRouterNetworkInterfaces operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # LogDeliveryDestination
-<a name="API_LogDeliveryDestination"></a>
 
 A single destination that receives game session placement insight logs for a game session queue.
 

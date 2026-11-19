@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/troubleshooting-athena.
 ---
 
 # Troubleshoot issues in Athena
-<a name="troubleshooting-athena"></a>
 
 The Athena team has gathered the following troubleshooting information from customer issues. Although not comprehensive, it includes advice regarding some common performance, timeout, and out of memory issues.
 

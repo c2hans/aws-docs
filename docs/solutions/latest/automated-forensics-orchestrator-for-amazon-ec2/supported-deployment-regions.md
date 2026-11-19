@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Supported deployment Regions
-<a name="supported-deployment-regions"></a>
 
 This Guidance uses the AWS Step Functions, AWS Lambda, Amazon DynamoDB, AWS EC2 Image Builder, Amazon CloudWatch, Amazon SQS, which are currently available in specific AWS Regions only. Therefore, you must launch this Guidance in an AWS Region where these AWS services are available. For the most current service availability by Region, refer to the [AWS Regional Services List](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
 

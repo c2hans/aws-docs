@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # Grant
-<a name="API_Grant"></a>
 
 Describes a grant.
 

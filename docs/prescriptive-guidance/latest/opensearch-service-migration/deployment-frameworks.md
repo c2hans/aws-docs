@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Deployment frameworks
-<a name="deployment-frameworks"></a>
 
 Many modern teams use continuous integration and continuous delivery (CI/CD) practices and pipelines to automate the deployment of their solutions and infrastructure. If your team already uses CI/CD pipelines, you should be able to incorporate Amazon OpenSearch Service in your environment. If you are deploying manually in your current setup, consider building pipelines to automate repeatable work, reduce operational overhead, and reduce human errors.
 

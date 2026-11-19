@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/developer-assoc
 ---
 
 # Content Domain 4: Troubleshooting and Optimization
-<a name="developer-associate-02-domain4"></a>
 
 **Topics**
 + [Task 1: Assist in a root cause analysis](#developer-associate-02-domain4-task1)

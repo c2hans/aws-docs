@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/use-codebuild
 ---
 
 # Run builds locally with the AWS CodeBuild agent
-<a name="use-codebuild-agent"></a>
 
 You can use the AWS CodeBuild agent to run CodeBuild builds on a local machine. There are agents available for x86\_64 and ARM platforms.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Attaches a key-value pair to a resource, as identified by its Amazon Resource Name (ARN). Taggable resources in AWS User Notifications Contacts include email contacts.
 

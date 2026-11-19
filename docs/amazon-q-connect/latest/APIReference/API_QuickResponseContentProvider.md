@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # QuickResponseContentProvider
-<a name="API_amazon-q-connect_QuickResponseContentProvider"></a>
 
 The container quick response content.
 

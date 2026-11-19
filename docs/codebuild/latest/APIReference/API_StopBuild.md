@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopBu
 ---
 
 # StopBuild
-<a name="API_StopBuild"></a>
 
 Attempts to stop running a build.
 

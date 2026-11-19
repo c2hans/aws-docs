@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ImportReadSetFilter
 ---
 
 # ImportReadSetFilter
-<a name="API_ImportReadSetFilter"></a>
 
 A filter for import read set jobs.
 

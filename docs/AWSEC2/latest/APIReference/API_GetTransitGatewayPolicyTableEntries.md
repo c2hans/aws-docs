@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransi
 ---
 
 # GetTransitGatewayPolicyTableEntries
-<a name="API_GetTransitGatewayPolicyTableEntries"></a>
 
 Returns a list of transit gateway policy table entries.
 

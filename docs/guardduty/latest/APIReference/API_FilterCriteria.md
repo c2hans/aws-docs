@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Filter
 ---
 
 # FilterCriteria
-<a name="API_FilterCriteria"></a>
 
 Represents the criteria to be used in the filter for describing scan entries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Des
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 The configuration for the destination where the harvested content will be exported.
 

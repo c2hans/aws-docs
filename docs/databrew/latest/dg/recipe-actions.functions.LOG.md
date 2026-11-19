@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # LOG
-<a name="recipe-actions.functions.LOG"></a>
 
 Returns the logarithm of a value in a new column.
 

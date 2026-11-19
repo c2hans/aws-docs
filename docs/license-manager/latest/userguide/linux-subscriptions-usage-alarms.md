@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/linux-s
 ---
 
 # Manage Amazon CloudWatch alarms for Linux subscriptions in License Manager
-<a name="linux-subscriptions-usage-alarms"></a>
 
 The **Linux subscriptions** list page in the License Manager console shows the following key details, including the Amazon CloudWatch alarms that you have configured for each Linux subscription that License Manager found on your instances.
 + Subscription name

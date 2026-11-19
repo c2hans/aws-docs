@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/lam-invoke
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Adding the 'AWS Lambda invoke' action
-<a name="lam-invoke-action-add"></a>
 
  Use the following instructions to add the **AWS Lambda invoke** action to your workflow.
 

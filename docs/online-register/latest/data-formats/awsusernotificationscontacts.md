@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsu
 ---
 
 # Data retrieval APIs for AWS User Notifications Contacts
-<a name="awsusernotificationscontacts"></a>
 
 AWS User Notifications Contacts provides the following APIs for data retrieval.
 

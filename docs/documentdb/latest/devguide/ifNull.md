@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/ifNull.html
 ---
 
 # $ifNull
-<a name="ifNull"></a>
 
 The `$ifNull` operator is used to return a specified value if the input expression evaluates to null or undefined. This operator can be useful in scenarios where you want to provide a default value or handle null/undefined cases.
 

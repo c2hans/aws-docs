@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # InstrumentationConfigurationWithoutServiceEnv
-<a name="API_InstrumentationConfigurationWithoutServiceEnv"></a>
 
 An instrumentation configuration that omits service and environment because they are provided at a higher level, such as in a list response.
 

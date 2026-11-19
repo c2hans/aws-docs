@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchL
 ---
 
 # Cross-account cross-Region log centralization
-<a name="CloudWatchLogs_Centralization"></a>
 
 Amazon CloudWatch Logs data centralization works with AWS Organizations to collect log data from multiple member accounts into one data repository using cross-account and cross-region centralization rules. You define the rules that automatically replicate log data from multiple accounts and AWS Regions into a centralized account within your organization. This capability streamlines log consolidation for improved centralized monitoring, analysis, and compliance across your entire AWS infrastructure.
 

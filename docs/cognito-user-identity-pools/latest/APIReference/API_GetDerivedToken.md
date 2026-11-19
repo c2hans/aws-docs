@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetDerivedToken
-<a name="API_GetDerivedToken"></a>
 
 Exchanges an existing token for a new token that is scoped and audience-bound for a specific downstream service, following the OAuth 2.0 Token Exchange grant type. For more information about the OAuth 2.0 Token Exchange grant type, see [RFC 8693 - OAuth 2.0 Token Exchange](https://tools.ietf.org/html/rfc8693) on the IETF website. Present a `SubjectToken`, the credential that you already hold, to receive a new token appropriate for calling a specific resource server or audience.
 

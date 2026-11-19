@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # InvalidLoopBoundaryFlowValidationDetails
-<a name="API_agent_InvalidLoopBoundaryFlowValidationDetails"></a>
 
 Details about a flow that contains connections that violate loop boundary rules.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Consumer Review Sentiment Analysis for CPG
-<a name="consumer-review-sentiment-cpg"></a>
 
 Publication date: **May 13, 2021 ([Diagram history](#diagram-history))**
 

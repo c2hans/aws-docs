@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudfront-table
 ---
 
 # Create a table for CloudFront logs in Athena using manual partitioning with JSON
-<a name="create-cloudfront-table-manual-json"></a>
 
 **To create a table for CloudFront standard log file fields using a JSON format**
 

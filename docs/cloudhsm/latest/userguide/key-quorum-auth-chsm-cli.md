@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key-quorum-aut
 ---
 
 # Manage quorum authentication (M of N access control) using CloudHSM CLI
-<a name="key-quorum-auth-chsm-cli"></a>
 
 The hardware security modules (HSMs) in your AWS CloudHSM cluster support quorum authentication, also known as M of N access control. With quorum authentication, no single user on the HSM can perform quorum-controlled operations. Instead, a minimum number of HSM users (at least 2) must cooperate to do these operations. Quorum authentication adds an extra layer of protection by requiring approvals from multiple HSM users.
 

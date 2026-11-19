@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListLicenseConfigurations
-<a name="API_ListLicenseConfigurations"></a>
 
 Lists the license configurations for your account.
 

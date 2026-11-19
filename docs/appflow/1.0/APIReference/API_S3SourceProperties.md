@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3SourcePro
 ---
 
 # S3SourceProperties
-<a name="API_S3SourceProperties"></a>
 
  The properties that are applied when Amazon S3 is being used as the flow source.
 

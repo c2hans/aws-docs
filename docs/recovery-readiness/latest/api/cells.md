@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/cells.html
 ---
 
 # ListCells, CreateCell
-<a name="cells"></a>
 
 ## URI
 <a name="cells-url"></a>

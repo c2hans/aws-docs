@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/configure-
 ---
 
 # Configuring visible services in the AWS Management Console
-<a name="configure-visible-services"></a>
 
 You can choose which AWS services appear in the Services menu for all users in your account.
 

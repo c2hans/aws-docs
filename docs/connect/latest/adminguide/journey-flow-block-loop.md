@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/journey-flow-b
 ---
 
 # Loop
-<a name="journey-flow-block-loop"></a>
 
 ## Description
 <a name="journey-flow-block-loop-description"></a>

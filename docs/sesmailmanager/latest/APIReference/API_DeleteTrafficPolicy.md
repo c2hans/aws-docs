@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_D
 ---
 
 # DeleteTrafficPolicy
-<a name="API_DeleteTrafficPolicy"></a>
 
 Delete a traffic policy resource.
 

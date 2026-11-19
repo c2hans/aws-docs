@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Featur
 ---
 
 # FeatureDefinition
-<a name="API_FeatureDefinition"></a>
 
 A list of features. You must include `FeatureName` and `FeatureType`. Valid feature `FeatureType`s are `Integral`, `Fractional` and `String`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Storage backendEnvironmentName Import
-<a name="backend-appid-storage-backendenvironmentname-import"></a>
 
 Import a storage resource into your Amplify app backend.
 

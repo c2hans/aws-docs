@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/notificati
 ---
 
 # Set up notifications in Kinesis Video Streams
-<a name="notifications"></a>
 
 When a media fragment is available for consumption, Kinesis Video Streams notifies customers using Amazon Simple Notification Service (Amazon SNS) notifications.
 

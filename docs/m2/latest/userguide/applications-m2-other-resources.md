@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/applications-m2-othe
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # Create AWS resources for a migrated application
-<a name="applications-m2-other-resources"></a>
 
 In order to run your migrated application in AWS, you must create some AWS resources with other AWS services. The resources you must create include the following:
 + An S3 bucket to hold application code, configuration, data files, and other required artifacts.

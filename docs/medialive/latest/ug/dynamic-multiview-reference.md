@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/dynamic-multiview-re
 ---
 
 # Dynamic Multiview: MediaLive Configuration Reference
-<a name="dynamic-multiview-reference"></a>
 
 Reference for multiview-specific configuration fields and the encoder settings that participating outputs must use.
 

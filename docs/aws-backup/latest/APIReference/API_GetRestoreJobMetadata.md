@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetRe
 ---
 
 # GetRestoreJobMetadata
-<a name="API_GetRestoreJobMetadata"></a>
 
 This request returns the metadata for the specified restore job.
 

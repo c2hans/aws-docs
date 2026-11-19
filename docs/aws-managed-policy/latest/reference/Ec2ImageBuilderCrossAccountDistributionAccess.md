@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2I
 ---
 
 # Ec2ImageBuilderCrossAccountDistributionAccess
-<a name="Ec2ImageBuilderCrossAccountDistributionAccess"></a>
 
 **Description**: Permissions need by EC2 Image Builder to perform a cross account distribution.
 

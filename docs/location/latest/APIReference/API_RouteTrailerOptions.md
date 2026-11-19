@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTrailerOptions
-<a name="API_RouteTrailerOptions"></a>
 
 Trailer options corresponding to the vehicle.
 

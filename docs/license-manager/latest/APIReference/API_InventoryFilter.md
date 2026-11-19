@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # InventoryFilter
-<a name="API_InventoryFilter"></a>
 
 An inventory filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # JiraConfiguration
-<a name="API_JiraConfiguration"></a>
 
 Configuration of the Jira integration.
 

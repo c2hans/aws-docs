@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-tes
 ---
 
 # Run an A/B test with target-based routing
-<a name="ab-testing-target-based"></a>
 
 Use the target-based routing pattern when the change you are testing involves code changes, a framework upgrade, or an entirely different agent implementation. Target-based routing routes traffic between multiple versions of the same AgentCore Runtime (named endpoints), or between entirely different AgentCore Runtimes. The AgentCore Gateway registers each endpoint as a separate target and routes each session to one endpoint or the other based on the A/B test’s traffic weights.
 

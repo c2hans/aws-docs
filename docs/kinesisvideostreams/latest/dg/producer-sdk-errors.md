@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-s
 ---
 
 # Error code reference
-<a name="producer-sdk-errors"></a>
 
 This section contains error and status code information for the [Upload to Kinesis Video Streams](producer-sdk.md).
 

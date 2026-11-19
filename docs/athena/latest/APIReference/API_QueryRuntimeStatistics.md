@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryRunt
 ---
 
 # QueryRuntimeStatistics
-<a name="API_QueryRuntimeStatistics"></a>
 
 The query execution timeline, statistics on input and output rows and bytes, and the different query stages that form the query execution plan.
 

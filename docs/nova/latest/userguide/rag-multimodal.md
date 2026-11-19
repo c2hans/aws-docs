@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/rag-multimodal.htm
 ---
 
 # Using Amazon Nova for Multimodal RAG
-<a name="rag-multimodal"></a>
 
 You can use multimodal RAG to search documents such as PDFs, images, or videos (available for Amazon Nova Lite and Amazon Nova Pro). With Amazon Nova multimodal understanding capabilities, you can build RAG systems with mixed data that contains both text and images. You can do this either through Amazon Bedrock Knowledge bases or through building a custom multimodal RAG system.
 

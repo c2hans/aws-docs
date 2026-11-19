@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # ListGroupMembershipsForMember
-<a name="API_ListGroupMembershipsForMember"></a>
 
 For the specified member in the specified identity store, returns the list of all ` GroupMembership` objects and returns results in paginated form.
 

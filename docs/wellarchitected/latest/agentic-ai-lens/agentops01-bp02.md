@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS01-BP02 Design multi-agent handoff procedures with human-in-the-loop escalation
-<a name="agentops01-bp02"></a>
 
  Without a structured context package, the receiving agent re-derives work the previous agent already finished. Lacking a defined escalation path means that high-stakes or low-confidence decisions can slip past human review.
 

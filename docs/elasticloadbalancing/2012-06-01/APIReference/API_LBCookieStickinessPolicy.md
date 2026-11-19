@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # LBCookieStickinessPolicy
-<a name="API_LBCookieStickinessPolicy"></a>
 
 Information about a policy for duration-based session stickiness.
 

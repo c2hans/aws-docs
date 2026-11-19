@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Targe
 ---
 
 # TargetedSentimentDetectionJobProperties
-<a name="API_TargetedSentimentDetectionJobProperties"></a>
 
 Provides information about a targeted sentiment detection job.
 

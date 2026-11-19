@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Unsu
 ---
 
 # UnsuccessfulFaceDisassociation
-<a name="API_UnsuccessfulFaceDisassociation"></a>
 
 Contains metadata like FaceId, UserID, and Reasons, for a face that was unsuccessfully disassociated.
 

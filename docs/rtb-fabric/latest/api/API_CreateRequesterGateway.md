@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_CreateRequeste
 ---
 
 # CreateRequesterGateway
-<a name="API_CreateRequesterGateway"></a>
 
 Creates a requester gateway.
 

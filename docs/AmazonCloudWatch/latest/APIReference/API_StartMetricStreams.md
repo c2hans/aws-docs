@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # StartMetricStreams
-<a name="API_StartMetricStreams"></a>
 
 Starts the streaming of metrics for one or more of your metric streams.
 

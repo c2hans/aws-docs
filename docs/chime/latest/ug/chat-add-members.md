@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chat-add-members.html
 ---
 
 # Adding members to a chat room
-<a name="chat-add-members"></a>
 
 You can add anyone on your Amazon Chime contacts list to a chat room. By default, all members can send messages, and read all sent messages.
 

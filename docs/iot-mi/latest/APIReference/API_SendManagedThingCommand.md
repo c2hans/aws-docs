@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_SendManag
 ---
 
 # SendManagedThingCommand
-<a name="API_SendManagedThingCommand"></a>
 
 Send the command to the device represented by the managed thing.
 

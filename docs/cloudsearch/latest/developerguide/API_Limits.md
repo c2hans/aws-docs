@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Li
 ---
 
 # Limits
-<a name="API_Limits"></a>
 
 ## Description
 <a name="API_Limits_Description"></a>

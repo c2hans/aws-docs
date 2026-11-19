@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 ## Build environment specifications
 <a name="build-environment-specifications"></a>

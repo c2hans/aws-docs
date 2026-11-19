@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-fun
 ---
 
 # AWS Clean Rooms Spark SQL functions
-<a name="sql-functions-topic-spark"></a>
 
 AWS Clean Rooms Spark SQL supports the following SQL functions:
 

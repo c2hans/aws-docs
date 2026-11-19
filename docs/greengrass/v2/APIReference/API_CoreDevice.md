@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_CoreDevic
 ---
 
 # CoreDevice
-<a name="API_CoreDevice"></a>
 
 Contains information about a Greengrass core device, which is an AWS IoT thing that runs the AWS IoT Greengrass Core software.
 

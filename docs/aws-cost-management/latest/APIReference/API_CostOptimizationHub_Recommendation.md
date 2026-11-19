@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Recommendation
-<a name="API_CostOptimizationHub_Recommendation"></a>
 
 Describes a recommendation.
 

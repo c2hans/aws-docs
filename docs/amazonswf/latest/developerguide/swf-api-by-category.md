@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-api-
 ---
 
 # List of Amazon SWF Actions by Category
-<a name="swf-api-by-category"></a>
 
 This section lists the reference topics for Amazon SWF actions in the Amazon SWF application programming interface (API). These are listed by *functional category*.
 

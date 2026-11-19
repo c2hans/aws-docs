@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Review asset
-<a name="review-asset"></a>
 
 After uploading files, you can preview content and review auto-extracted metadata to verify the asset before marking it as approved.
 

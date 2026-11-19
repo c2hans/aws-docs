@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ListSharedDNSViews
-<a name="API_route53globalresolver_ListSharedDNSViews"></a>
 
 Lists the DNS views that have been shared with your AWS account through Amazon Web Services Resource Access Manager (AWS RAM), with pagination support.
 

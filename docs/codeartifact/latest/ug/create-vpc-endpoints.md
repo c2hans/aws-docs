@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/create-vpc-endpoi
 ---
 
 # Create VPC endpoints for CodeArtifact
-<a name="create-vpc-endpoints"></a>
 
  To create virtual private cloud (VPC) endpoints for CodeArtifact, use the Amazon EC2 `create-vpc-endpoint` AWS CLI command. For more information, see [Interface VPC Endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html) in the *Amazon Virtual Private Cloud User Guide*.
 

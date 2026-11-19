@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/concepts-general-
 ---
 
 # General/Custom Authorization requirements
-<a name="concepts-general-authorization"></a>
 
 General Authorization enables access to devices, allowing you to control multiple devices using credentials without requiring individual user credentials. Unlike OAuth 2.0, which provides user-level authorization, General Authorization uses pre-shared keys, tokens, or other authorization mechanisms stored in AWS Secrets Manager.
 

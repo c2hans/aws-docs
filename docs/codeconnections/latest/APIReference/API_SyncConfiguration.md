@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # SyncConfiguration
-<a name="API_SyncConfiguration"></a>
 
 Information, such as repository, branch, provider, and resource names for a specific sync configuration.
 

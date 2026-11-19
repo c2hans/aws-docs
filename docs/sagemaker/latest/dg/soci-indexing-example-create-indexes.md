@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/soci-indexing-exampl
 ---
 
 # Create SOCI indexes with nerdctl and SOCI CLI example
-<a name="soci-indexing-example-create-indexes"></a>
 
 The following page provides an example on how to create SOCI indexes with nerdctl and SOCI CLI.
 

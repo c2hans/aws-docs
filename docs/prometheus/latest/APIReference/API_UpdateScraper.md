@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Updat
 ---
 
 # UpdateScraper
-<a name="API_UpdateScraper"></a>
 
 Updates an existing scraper.
 

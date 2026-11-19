@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # SMB/DB knowledge worker co-pilot
-<a name="smbdb-knowledge-worker-co-pilot"></a>
 
  Small-to-medium businesses (SMB) and digital businesses (DB) struggle with knowledge worker productivity as information becomes scattered across disconnected business systems. Knowledge workers spend a significant portion of their time searching for information across CRM systems, document repositories, email services, and business intelligence tools rather than making decisions and creating value.
 

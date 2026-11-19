@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # PIIEntitiesConfiguration
-<a name="API_data-automation_PIIEntitiesConfiguration"></a>
 
 Configuration for detecting and redacting Personally Identifiable Information (PII) entities. Specify which PII entity types to detect and the redaction mask mode. If not provided, defaults to ALL entity types with ENTITY\_TYPE redaction mask mode.
 

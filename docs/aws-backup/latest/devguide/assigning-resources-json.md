@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/assigning-res
 ---
 
 # Assign resources with AWS CLI
-<a name="assigning-resources-json"></a>
 
 ## Filter by services or resource types
 <a name="resource-assignment-filter"></a>

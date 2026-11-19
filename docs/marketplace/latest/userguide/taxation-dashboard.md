@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/taxation-da
 ---
 
 # Taxation dashboard
-<a name="taxation-dashboard"></a>
 
 The taxation dashboard provides visualization and fine-grained data on US and international tax for transactions in AWS Marketplace.
 

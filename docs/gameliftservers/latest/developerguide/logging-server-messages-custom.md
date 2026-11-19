@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/lo
 ---
 
 # Logging server messages (custom servers)
-<a name="logging-server-messages-custom"></a>
 
 You can capture custom server messages from your Amazon GameLift Servers custom servers in log files.
 

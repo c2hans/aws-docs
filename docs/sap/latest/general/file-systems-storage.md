@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/file-systems-storage.
 ---
 
 # Shared storage resiliency
-<a name="file-systems-storage"></a>
 
 File systems on an SAP server can be created on block type storage, for instance, on locally attached disks or Enterprise Storage Area Network (SAN) devices, or may be based on shared file systems such as SMB or NFS shared volumes from servers or Network Attached Storage (NAS) devices.
 

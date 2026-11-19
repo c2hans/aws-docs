@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Amazon API Gateway WebSocket API tutorials
-<a name="api-gateway-websocket-tutorials"></a>
 
 The following tutorials provide a hands-on exercise to help you learn about API Gateway WebSocket APIs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityB
 ---
 
 # CapacityBlock
-<a name="API_CapacityBlock"></a>
 
 Reserve powerful GPU instances on a future date to support your short duration machine learning (ML) workloads. Instances that run inside a Capacity Block are automatically placed close together inside [Amazon EC2 UltraClusters](http://aws.amazon.com/ec2/ultraclusters/), for low-latency, petabit-scale, non-blocking networking.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Security Incident Response
-<a name="list_security-ir"></a>
 
 AWS Security Incident Response (service prefix: `security-ir`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

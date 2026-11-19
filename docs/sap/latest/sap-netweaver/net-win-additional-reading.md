@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-additio
 ---
 
 # Additional Reading
-<a name="net-win-additional-reading"></a>
 
 ## SAP on AWS Technical Documentation
 <a name="net-win-sap-on-aws-technical-documentation"></a>

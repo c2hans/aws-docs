@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Image
 ---
 
 # ImageExtractionConfiguration
-<a name="API_ImageExtractionConfiguration"></a>
 
 The configuration for image extraction from knowledge base documents.
 

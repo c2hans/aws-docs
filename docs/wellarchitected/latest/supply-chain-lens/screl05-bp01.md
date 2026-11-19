@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCREL05-BP01 Deploy IoT-based monitoring systems to track temperature, humidity, and other environmental factors during transit
-<a name="screl05-bp01"></a>
 
  Deploy comprehensive IoT-based monitoring systems throughout your supply chain to continuously track critical environmental conditions like temperature, humidity, shock, light exposure, and location for sensitive products during storage and transit. Configure these systems with product-specific thresholds that trigger immediate alerts when measurements deviate from acceptable ranges, enabling rapid intervention before product quality is compromised.
 

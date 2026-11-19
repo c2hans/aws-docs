@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/add-idt-sdk.ht
 ---
 
 # Get the IDT client SDK
-<a name="add-idt-sdk"></a>
 
 You use the [IDT client SDK](test-executables.md#idt-client-sdk) to enable IDT to interact with the device under test and to report test results. For this tutorial, you will use the Python version of the SDK.
 

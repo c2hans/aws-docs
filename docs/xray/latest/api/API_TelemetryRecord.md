@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_TelemetryRecord.html
 ---
 
 # TelemetryRecord
-<a name="API_TelemetryRecord"></a>
 
 ## Contents
 <a name="API_TelemetryRecord_Contents"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeTopicRefreshSchedule
-<a name="API_DescribeTopicRefreshSchedule"></a>
 
 Deletes a topic refresh schedule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/url-red
 ---
 
 # Configure the exception list (optional)
-<a name="url-redirection-configure-exceptions"></a>
 
 The exception list lets you exclude specific URL patterns from redirection, even if they match the allowlist.
 

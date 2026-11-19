@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/grafana-connection-option
 ---
 
 # Grafana connection options
-<a name="grafana-connection-options"></a>
 
 The following are connection options for Grafana:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Grafana object to read.

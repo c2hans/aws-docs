@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel13-b
 ---
 
 # REL13-BP04 Manage configuration drift at the DR site or Region
-<a name="rel13-bp04"></a>
 
  Over time, the primary and recovery sites diverge as changes land on the primary but not the recovery site. This drift is only exposed when a failover occurs. Keep infrastructure, configuration, and data in parity so recovery is complete and predictable.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # NamespaceRuleBasedProperties
-<a name="API_NamespaceRuleBasedProperties"></a>
 
  The rule-based properties of an ID namespace. These properties define how the ID namespace can be used in an ID mapping workflow.
 

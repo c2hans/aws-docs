@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_PostTim
 ---
 
 # PostTimeSeriesDataPoints
-<a name="API_PostTimeSeriesDataPoints"></a>
 
 Posts time series data points to Amazon DataZone for the specified asset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/esta
 ---
 
 # Authentication and access for the AWS Toolkit for Visual Studio Code
-<a name="establish-credentials"></a>
 
 You don't need to authenticate with AWS to start working with the AWS Toolkit for Visual Studio Code. However, most AWS resources are managed through an AWS account. To access all of the AWS Toolkit for Visual Studio Code services and features, you'll need to authenticate with AWS IAM Identity Center, AWS Builder ID or IAM credentials.
 

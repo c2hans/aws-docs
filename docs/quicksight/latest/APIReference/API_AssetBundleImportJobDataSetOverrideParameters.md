@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobDataSetOverrideParameters
-<a name="API_AssetBundleImportJobDataSetOverrideParameters"></a>
 
 The override parameters for a single dataset that is being imported.
 

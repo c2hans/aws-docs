@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-referen
 ---
 
 # AWS AppSync JavaScript resolver function reference for OpenSearch
-<a name="resolver-reference-elasticsearch-js"></a>
 
 The AWS AppSync resolver for Amazon OpenSearch Service enables you to use GraphQL to store and retrieve data in existing OpenSearch Service domains in your account. This resolver works by allowing you to map an incoming GraphQL request into an OpenSearch Service request, and then map the OpenSearch Service response back to GraphQL. This section describes the function request and response handlers for the supported OpenSearch Service operations.
 

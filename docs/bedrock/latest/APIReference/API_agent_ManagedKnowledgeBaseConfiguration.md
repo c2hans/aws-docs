@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ma
 ---
 
 # ManagedKnowledgeBaseConfiguration
-<a name="API_agent_ManagedKnowledgeBaseConfiguration"></a>
 
 Configurations for a managed knowledge base.
 

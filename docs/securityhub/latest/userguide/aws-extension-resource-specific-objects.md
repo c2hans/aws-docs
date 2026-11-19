@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/aws-extensi
 ---
 
 # Resource specific objects
-<a name="aws-extension-resource-specific-objects"></a>
 
  These are complex nested objects that provide detailed information for specific resource types and services. Each object contains multiple fields and sub-objects with service-specific configuration and metadata.
 

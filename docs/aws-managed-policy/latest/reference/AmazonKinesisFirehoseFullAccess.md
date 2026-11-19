@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonKinesisFirehoseFullAccess
-<a name="AmazonKinesisFirehoseFullAccess"></a>
 
 **Description**: Provides full access to all Amazon Kinesis Firehose Delivery Streams.
 

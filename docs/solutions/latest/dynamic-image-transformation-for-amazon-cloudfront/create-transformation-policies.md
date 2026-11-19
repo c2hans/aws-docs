@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Create transformation policies
-<a name="create-transformation-policies"></a>
 
 Transformation policies define how images are processed. A policy contains two kinds of instructions: **transformations** (operations such as resize, format, quality, blur, or smart crop, each optionally gated by a condition) and **outputs** (the device-aware optimizations `quality`, `format`, and `autosize`). You can create policies using either the Admin UI form or by providing JSON configuration directly. A policy can be marked as the default, in which case it applies to requests that match a mapping with no policy attached.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListAgentRuntimes
-<a name="API_ListAgentRuntimes"></a>
 
 Lists all Amazon Secure Agents in your account.
 

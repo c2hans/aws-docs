@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/format-volume.
 ---
 
 # Initializing and formatting your volume
-<a name="format-volume"></a>
 
 After you use the iSCSI initiator in your client to connect to your volumes, you initialize and format your volume.
 

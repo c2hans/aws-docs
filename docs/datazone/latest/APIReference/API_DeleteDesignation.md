@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteD
 ---
 
 # DeleteDesignation
-<a name="API_DeleteDesignation"></a>
 
 Deletes a user-created designation. Managed designations cannot be deleted. The call fails if the designation has `deletionProtection` enabled or if any project member still holds it. This operation is idempotent.
 

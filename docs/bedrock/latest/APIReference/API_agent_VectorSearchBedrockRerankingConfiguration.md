@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ve
 ---
 
 # VectorSearchBedrockRerankingConfiguration
-<a name="API_agent_VectorSearchBedrockRerankingConfiguration"></a>
 
 Configures the Amazon Bedrock reranker model to improve the relevance of retrieved results.
 

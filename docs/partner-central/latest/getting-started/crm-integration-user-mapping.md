@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/c
 ---
 
 # Mapping AWS Marketplace roles to a CRM integration user
-<a name="crm-integration-user-mapping"></a>
 
 This section explains how to map AWS Marketplace AWS Identity and Access Management (IAM) roles to your CRM integration service user on AWS Partner Central. Mapping enables the CRM Integration service user to perform actions on the AWS Marketplace account. Selecting an IAM role to access AWS Marketplace APIs through CRM integration enables features such as linking AWS Marketplace private offers to ACE opportunities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/inheritan
 ---
 
 # Inheritance examples
-<a name="inheritance-examples"></a>
 
 These examples show how policy inheritance works by showing how parent and child tag policies are merged into an effective tag policy for an account.
 

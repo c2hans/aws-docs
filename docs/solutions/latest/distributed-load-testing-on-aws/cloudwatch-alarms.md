@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # CloudWatch Alarms
-<a name="cloudwatch-alarms"></a>
 
 This solution deploys two CloudWatch Alarms that monitor for operational conditions requiring attention. By default, these alarms have no notification actions configured. We recommend subscribing an Amazon SNS topic to each alarm so that operators receive immediate notification when issues occur.
 

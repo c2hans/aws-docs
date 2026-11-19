@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/key-concepts.html
 ---
 
 # Understanding key concepts of the Amazon Chime SDK client library for JavaScript
-<a name="key-concepts"></a>
 
 To fully understand how to create and manage meetings and users, you need to understand these concepts:
 

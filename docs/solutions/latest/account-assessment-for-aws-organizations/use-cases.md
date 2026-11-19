@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
 The following are example use cases for using this guidance. You can apply this guidance in innovative ways that are not limited to this list.
 

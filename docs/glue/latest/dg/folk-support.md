@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/folk-support.html
 ---
 
 # AWS Glue support for Folk
-<a name="folk-support"></a>
 
 AWS Glue supports Folk as follows:
 

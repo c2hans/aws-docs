@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_MariaDB.
 ---
 
 # Configuring delayed replication with MariaDB
-<a name="USER_MariaDB.Replication.ReadReplicas.DelayReplication"></a>
 
 You can use delayed replication as a strategy for disaster recovery. With delayed replication, you specify the minimum amount of time, in seconds, to delay replication from the source to the read replica. In the event of a disaster, such as a table deleted unintentionally, you complete the following steps to recover from the disaster quickly:
 + Stop replication to the read replica before the change that caused the disaster is sent to it.

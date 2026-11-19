@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SecretsManag
 ---
 
 # SecretsManagerEndpointEncryptionConfiguration
-<a name="API_SecretsManagerEndpointEncryptionConfiguration"></a>
 
 The endpoint encryption configuration for connections that use a key or passphrase that you store in AWS Secrets Manager.
 

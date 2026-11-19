@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ModelInv
 ---
 
 # ModelInvocationJobSummary
-<a name="API_ModelInvocationJobSummary"></a>
 
 A summary of a batch inference job.
 

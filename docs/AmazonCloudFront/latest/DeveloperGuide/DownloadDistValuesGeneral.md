@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/D
 ---
 
 # Distribution settings
-<a name="DownloadDistValuesGeneral"></a>
 
 The following values apply to the entire distribution.
 

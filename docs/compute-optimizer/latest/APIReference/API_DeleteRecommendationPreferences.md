@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # DeleteRecommendationPreferences
-<a name="API_DeleteRecommendationPreferences"></a>
 
 Deletes a recommendation preference, such as enhanced infrastructure metrics.
 

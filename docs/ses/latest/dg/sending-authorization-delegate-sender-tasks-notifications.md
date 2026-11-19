@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-authorization-dele
 ---
 
 # Using delegate sender notifications for Amazon SES sending authorization
-<a name="sending-authorization-delegate-sender-tasks-notifications"></a>
 
 As a delegate sender, you're sending emails on behalf of an identity that you don't own, but are authorized to use; however, bounces and complaints still count toward *your* bounce and complaint metrics, not those of the identity owner.
 

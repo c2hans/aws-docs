@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Conversati
 ---
 
 # ConversationLogSettings
-<a name="API_ConversationLogSettings"></a>
 
 Configures conversation logging that saves audio, text, and metadata for the conversations with your users.
 

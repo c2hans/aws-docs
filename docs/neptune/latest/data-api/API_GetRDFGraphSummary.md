@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetRDFGraphS
 ---
 
 # GetRDFGraphSummary
-<a name="API_GetRDFGraphSummary"></a>
 
 Gets a graph summary for an RDF graph.
 

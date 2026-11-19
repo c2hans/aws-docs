@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/unable-to-u
 ---
 
 # Users unable to use their subscription in the IDE
-<a name="unable-to-use-pro-in-ide"></a>
 
 **Problem: IAM Identity Center workforce users are unable to use their Pro subscriptions in the IDE**
 

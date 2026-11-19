@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateS
 ---
 
 # TerminateServiceJob
-<a name="API_TerminateServiceJob"></a>
 
 Terminates a service job in a job queue.
 

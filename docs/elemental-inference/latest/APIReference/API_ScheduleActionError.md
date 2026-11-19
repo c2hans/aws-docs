@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # ScheduleActionError
-<a name="API_ScheduleActionError"></a>
 
 Describes the cause of a schedule action failure, including the failure type and a description of what went wrong.
 

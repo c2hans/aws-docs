@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-cloud-r
 ---
 
 # DNS security and split-horizon use cases for Route 53 Global Resolver
-<a name="gr-cloud-resolver-use-cases"></a>
 
 Route 53 Global Resolver addresses three primary DNS challenges for organizations:
 

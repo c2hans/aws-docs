@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # Metrics concepts
-<a name="cloudwatch_concepts"></a>
 
 The following terminology and concepts are central to your understanding and use of Amazon CloudWatch:
 + [Namespaces](#Namespace)

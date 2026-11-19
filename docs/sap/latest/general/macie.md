@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/macie.html
 ---
 
 # Amazon Macie
-<a name="macie"></a>
 
 Amazon Macie is a data security service that helps customers discover, classify, and protect sensitive data stored in Amazon S3 buckets by continuously monitoring and alerting on potential data risks and unauthorized access attempts.
 

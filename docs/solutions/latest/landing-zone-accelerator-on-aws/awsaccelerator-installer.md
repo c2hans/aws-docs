@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Installer pipeline
-<a name="awsaccelerator-installer"></a>
 
 This pipeline runs the following stages:
 

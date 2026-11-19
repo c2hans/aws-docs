@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListDataQualityRe
 ---
 
 # ListDataQualityResults
-<a name="API_ListDataQualityResults"></a>
 
 Returns all data quality execution results for your account.
 

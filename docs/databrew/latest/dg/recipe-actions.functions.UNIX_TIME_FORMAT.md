@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # UNIX\_TIME\_FORMAT
-<a name="recipe-actions.functions.UNIX_TIME_FORMAT"></a>
 
 Converts Unix time for a source column or input value to a specified numerical date format, and returns the result in a new column.
 

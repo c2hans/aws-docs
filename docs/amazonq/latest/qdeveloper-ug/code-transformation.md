@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-transf
 ---
 
 # Upgrading Java versions with Amazon Q Developer
-<a name="code-transformation"></a>
 
 Amazon Q Developer can upgrade your Java applications to newer language versions in the integrated development environment (IDE). Changes Amazon Q can make to upgrade your code include updating deprecated code components and APIs as well as upgrading libraries, frameworks, and other dependencies in your code.
 

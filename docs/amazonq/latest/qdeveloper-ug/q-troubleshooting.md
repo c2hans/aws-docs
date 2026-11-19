@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-troublesh
 ---
 
 # Troubleshoot Amazon Q Developer
-<a name="q-troubleshooting"></a>
 
 This troubleshooting guide helps you resolve common issues when using Amazon Q Developer. Each section provides clear problem descriptions, possible causes, step-by-step solutions, and verification steps to get you back on track quickly.
 

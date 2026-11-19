@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_A
 ---
 
 # AssociateUserSettings
-<a name="API_AssociateUserSettings"></a>
 
 Associates a user settings resource with a web portal.
 

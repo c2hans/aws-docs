@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/operational-readi
 ---
 
 # Building mechanisms
-<a name="building-mechanisms"></a>
 
 The [introduction to the Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html#introduction) introduces the concept of mechanisms.
 

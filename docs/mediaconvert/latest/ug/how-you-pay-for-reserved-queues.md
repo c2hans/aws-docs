@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/how-you-pay-for-r
 ---
 
 # Pricing for reserved queues
-<a name="how-you-pay-for-reserved-queues"></a>
 
 With reserved queues, you pay for the capacity in the queue regardless of whether you use it. When you set up a reserved queue, you make a 12-month commitment to a pricing plan. The pricing plan specifies a fixed number of reserved transcode slots (RTS). For more information, see [MediaConvert Pricing](https://aws.amazon.com/mediaconvert/pricing/).
 

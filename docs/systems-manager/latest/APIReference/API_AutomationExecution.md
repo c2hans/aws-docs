@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AutomationExecution
-<a name="API_AutomationExecution"></a>
 
 Detailed information about the current state of an individual Automation execution.
 

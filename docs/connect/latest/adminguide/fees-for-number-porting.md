@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/fees-for-numbe
 ---
 
 # How much does porting a number to Connect Customer cost?
-<a name="fees-for-number-porting"></a>
 
 Connect Customer does not charge fees for porting numbers. Your existing carrier might have fees associated with the disconnection and early termination of your service.
 

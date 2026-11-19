@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/prereqs.html
 ---
 
 # Prerequisites
-<a name="prereqs"></a>
 
 You must have an AWS account to access the [Amazon Chime SDK console](https://console.aws.amazon.com/chime-sdk/home) and create an Amazon Chime administrator account.
 

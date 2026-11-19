@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/vnc-configuration-al2023
 ---
 
 # Tutorial: Configure TigerVNC server on AL2023
-<a name="vnc-configuration-al2023"></a>
 
 The following procedures help you set up VNC server on your AL2023 instance. VNC allows you to remotely access and interact with the graphical desktop environment over a secure network connection.
 

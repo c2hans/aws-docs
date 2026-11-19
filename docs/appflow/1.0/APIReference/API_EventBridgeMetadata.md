@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_EventBridge
 ---
 
 # EventBridgeMetadata
-<a name="API_EventBridgeMetadata"></a>
 
  The connector metadata specific to Amazon EventBridge.
 

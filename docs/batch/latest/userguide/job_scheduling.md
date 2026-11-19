@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/job_scheduling.ht
 ---
 
 # Fair-share scheduling policies
-<a name="job_scheduling"></a>
 
 The AWS Batch scheduler evaluates when, where, and how to run jobs that are submitted to a job queue. If you don’t specify a scheduling policy when you create a job queue, the AWS Batch job scheduler defaults to a first-in, first-out (FIFO) strategy. A FIFO strategy might cause important jobs to get “stuck” behind jobs that were submitted earlier. By specifying a different scheduling policy, you can allocate compute resources according to your specific needs.
 

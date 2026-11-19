@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetInfrastructureConfiguration
-<a name="API_GetInfrastructureConfiguration"></a>
 
 Retrieves an infrastructure configuration.
 

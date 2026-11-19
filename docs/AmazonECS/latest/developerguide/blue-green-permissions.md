@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-gre
 ---
 
 # Permissions required for Lambda functions in Amazon ECS blue/green deployments
-<a name="blue-green-permissions"></a>
 
 When you use Lambda functions as deployment lifecycle hooks in Amazon ECS blue/green deployments, you need to create an IAM role with specific permissions. This role allows Amazon ECS to invoke your Lambda functions at various stages of the deployment lifecycle.
 

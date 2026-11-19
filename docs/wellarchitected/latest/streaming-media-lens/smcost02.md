@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Content processing costs
-<a name="smcost02"></a>
 
 Processing costs scale with encoding volume, instance selection, and utilization efficiency. Baseline measurement, parallel processing, and capacity reservations are the main ways to reduce them.
 

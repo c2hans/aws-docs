@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-u
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Updating an agent profile
-<a name="agent-update-profile"></a>
 
 You can update a profile's display name, description, pillars, execution role, aggregation configuration, deletion protection, and business overview at any time.
 

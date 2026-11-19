@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Dele
 ---
 
 # DeleteClusterPolicy
-<a name="API_DeleteClusterPolicy"></a>
 
 Deletes the resource-based policy attached to a cluster. This removes all access permissions defined by the policy, reverting to default access controls.
 

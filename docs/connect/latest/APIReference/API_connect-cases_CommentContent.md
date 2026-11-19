@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CommentContent
-<a name="API_connect-cases_CommentContent"></a>
 
 Represents the content of a `Comment` to be returned to agents.
 

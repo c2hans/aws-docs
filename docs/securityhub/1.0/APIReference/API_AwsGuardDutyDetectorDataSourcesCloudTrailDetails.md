@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsGuar
 ---
 
 # AwsGuardDutyDetectorDataSourcesCloudTrailDetails
-<a name="API_AwsGuardDutyDetectorDataSourcesCloudTrailDetails"></a>
 
  An object that contains information on the status of AWS CloudTrail as a data source for the detector.
 

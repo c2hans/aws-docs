@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/purpose-input-securi
 ---
 
 # Purpose of an input security group
-<a name="purpose-input-security-groups"></a>
 
 In MediaLive, input security groups are used with specific *push* inputs where the upstream system for the source is on the public internet:
 + They are used for RTP inputs, RTMP push inputs, and SRT listener inputs that don't use a VPC.

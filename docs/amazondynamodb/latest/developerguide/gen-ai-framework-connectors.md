@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/gen
 ---
 
 # AI framework connectors for DynamoDB
-<a name="gen-ai-framework-connectors"></a>
 
 AI agents need durable storage for everything they must remember: conversation state that survives a restart, chat history that spans sessions, and long-term memories they can recall in later conversations. Open source connectors, maintained by AWS and by the framework communities, integrate DynamoDB with popular AI agent frameworks so that state lives in a serverless database with single-digit millisecond latency, in your own AWS account.
 

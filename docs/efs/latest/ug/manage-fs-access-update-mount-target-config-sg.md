@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/manage-fs-access-update-mo
 ---
 
 # Changing mount target security groups
-<a name="manage-fs-access-update-mount-target-config-sg"></a>
 
 Security groups define inbound and outbound access. When you change security groups associated with a mount target, make sure that you authorize necessary inbound and outbound access. Doing so enables your EC2 instance to communicate with the file system. For more information about security groups, see [Using VPC security groups](network-access.md).
 

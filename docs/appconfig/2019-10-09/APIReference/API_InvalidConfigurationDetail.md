@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_In
 ---
 
 # InvalidConfigurationDetail
-<a name="API_InvalidConfigurationDetail"></a>
 
 Detailed information about the bad request exception error when creating a hosted configuration version.
 

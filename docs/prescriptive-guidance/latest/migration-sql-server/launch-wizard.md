@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # AWS Launch Wizard for SQL Server
-<a name="launch-wizard"></a>
 
 [AWS Launch Wizard](https://aws.amazon.com/launchwizard/) is a service that guides you through the sizing, configuration, and deployment of Microsoft SQL Server on Amazon EC2. It supports both SQL Server single instance and high availability (HA) deployments on Amazon EC2.
 

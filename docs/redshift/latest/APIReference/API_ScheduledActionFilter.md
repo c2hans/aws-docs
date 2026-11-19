@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Schedul
 ---
 
 # ScheduledActionFilter
-<a name="API_ScheduledActionFilter"></a>
 
 A set of elements to filter the returned scheduled actions.
 

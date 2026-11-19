@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-gt
 ---
 
 # Transforming multi-label SageMaker AI Ground Truth manifest files
-<a name="md-gt-cl-transform"></a>
 
 This topic shows you how to transform a multi-label Amazon SageMaker AI Ground Truth manifest file to an Amazon Rekognition Custom Labels format manifest file.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSupportPlansServiceRolePolicy
-<a name="AWSSupportPlansServiceRolePolicy"></a>
 
 **Description**: Allows AWS Support Plans to read and update AWS resources used to manage your account's Support Plan on your behalf.
 

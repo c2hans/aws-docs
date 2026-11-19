@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IcmpTypeC
 ---
 
 # IcmpTypeCode
-<a name="API_IcmpTypeCode"></a>
 
 Describes the ICMP type and code.
 

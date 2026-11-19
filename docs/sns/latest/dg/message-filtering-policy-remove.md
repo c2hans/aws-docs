@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/message-filtering-policy-r
 ---
 
 # Removing a subscription filter policy in Amazon SNS
-<a name="message-filtering-policy-remove"></a>
 
 To stop filtering the messages that are sent to a subscription, remove the subscription's filter policy by overwriting it with an empty JSON body. After you remove the policy, the subscription accepts every message that's published to it.
 

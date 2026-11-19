@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/monitori
 ---
 
 # Viewing CloudWatch Logs Live Tail for Amazon ECS services and tasks
-<a name="monitoring-cloudwatchlogs-view"></a>
 
 CloudWatch Logs Live Tail helps you quickly troubleshoot incidents by viewing a streaming list of new log events as they are ingested. You can view task and service events in the Amazon ECS console. This view provides a cohesive view of your task and service health.
 

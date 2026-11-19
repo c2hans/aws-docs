@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Deleting Amazon Verified Permissions policy store aliases
-<a name="policy-store-aliases-delete"></a>
 
 You can delete a policy store alias when it is no longer needed. Deleting a policy store alias does not affect the associated policy store. Deleting a policy store deletes all policy store aliases associated with that policy store.
 

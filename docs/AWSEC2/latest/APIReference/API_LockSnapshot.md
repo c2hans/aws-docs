@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LockSnaps
 ---
 
 # LockSnapshot
-<a name="API_LockSnapshot"></a>
 
 Locks an Amazon EBS snapshot in either *governance* or *compliance* mode to protect it against accidental or malicious deletions for a specific duration. A locked snapshot can't be deleted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Wir
 ---
 
 # WirelessDeviceEventLogOption
-<a name="API_WirelessDeviceEventLogOption"></a>
 
 The log options for a wireless device event and can be used to set log levels for a specific wireless device event.
 

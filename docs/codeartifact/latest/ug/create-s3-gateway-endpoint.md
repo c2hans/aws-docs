@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/create-s3-gateway
 ---
 
 # Create the Amazon S3 gateway endpoint
-<a name="create-s3-gateway-endpoint"></a>
 
 CodeArtifact uses Amazon Simple Storage Service (Amazon S3) to store package assets. To pull packages from CodeArtifact, you must create a gateway endpoint for Amazon S3. When your build or deployment process downloads packages from CodeArtifact, it must access CodeArtifact to get package metadata and Amazon S3 to download package assets (for example, Maven `.jar` files).
 

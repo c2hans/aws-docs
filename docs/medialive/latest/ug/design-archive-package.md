@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/design-archive-packa
 ---
 
 # Organize encodes in an Archive output group
-<a name="design-archive-package"></a>
 
 An Archive output group can contain the following:
 + One or more outputs.

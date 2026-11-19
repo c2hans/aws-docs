@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDataLifecycleManagerSSMFullAccess
-<a name="AWSDataLifecycleManagerSSMFullAccess"></a>
 
 **Description**: Provides Amazon Data Lifecycle Manager permission to perform the Systems Manager actions required to run pre and post scripts on all Amazon EC2 instances.
 

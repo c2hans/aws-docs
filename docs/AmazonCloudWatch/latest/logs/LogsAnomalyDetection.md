@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogsAnomaly
 ---
 
 # Log anomaly detection
-<a name="LogsAnomalyDetection"></a>
 
 You can detect anomalies in your log data in two ways: by creating a *log anomaly detector* for continuous monitoring, or by using the [`anomaly detection`](CWL_QuerySyntax-Anomaly.md) command in CloudWatch Logs Insights queries for on-demand analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-multi-r
 ---
 
 # Multi-Region fundamental 2: Understanding the data
-<a name="fundamental-2"></a>
 
 Managing data is a non-trivial problem when you adopt multi-Region architectures. The geographical distance between Regions imposes an unavoidable latency that manifests as the time it takes to replicate data across Regions. Trade-offs between availability, data consistency, and introducing higher latency into a workload that uses a multi-Region architecture will be necessary. Whether you use asynchronous or synchronous replication, you will need to modify your application to handle the behavioral changes the replication technology imposes. Challenges around data consistency and latency make it very difficult to take an existing application that was designed for a single Region and make it multi-Region. Understanding the data consistency requirements and data access patterns for particular workloads is critical to weighing the trade-offs.
 

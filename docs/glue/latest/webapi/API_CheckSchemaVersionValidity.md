@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CheckSchemaVersio
 ---
 
 # CheckSchemaVersionValidity
-<a name="API_CheckSchemaVersionValidity"></a>
 
 Validates the supplied schema. This call has no side effects, it simply validates using the supplied schema using `DataFormat` as the format. Since it does not take a schema set name, no compatibility checks are performed.
 

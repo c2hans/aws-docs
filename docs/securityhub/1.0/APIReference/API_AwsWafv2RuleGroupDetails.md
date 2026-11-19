@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2RuleGroupDetails
-<a name="API_AwsWafv2RuleGroupDetails"></a>
 
  Details about an AWS WAFv2 rule group.
 

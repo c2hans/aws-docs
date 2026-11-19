@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Configuring parameter settings for the pgactive extension
-<a name="Appendix.PostgreSQL.CommonDBATasks.pgactive.parameters"></a>
 
 You can use the following query to view all the parameters associated with `pgactive` extension.
 

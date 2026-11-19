@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserGenerativeQnAEmbeddingConfiguration
-<a name="API_RegisteredUserGenerativeQnAEmbeddingConfiguration"></a>
 
 An object that provides information about the configuration of a Generative Q&A experience.
 

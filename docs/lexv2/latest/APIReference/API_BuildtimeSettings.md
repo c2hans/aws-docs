@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BuildtimeS
 ---
 
 # BuildtimeSettings
-<a name="API_BuildtimeSettings"></a>
 
 Contains specifications about the Amazon Lex build time generative AI capabilities from Amazon Bedrock that you can turn on for your bot.
 

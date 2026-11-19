@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Resto
 ---
 
 # RestoreAnalysis
-<a name="API_RestoreAnalysis"></a>
 
 Restores an analysis.
 

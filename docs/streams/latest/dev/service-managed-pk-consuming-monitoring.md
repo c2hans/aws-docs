@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # Monitor consumption from service-managed streams
-<a name="service-managed-pk-consuming-monitoring"></a>
 
 Use the following Amazon CloudWatch metrics to monitor consumption from service-managed streams:
 + **GetRecords.Records** – The number of records retrieved per GetRecords call. Use this to verify that consumption is proceeding normally.

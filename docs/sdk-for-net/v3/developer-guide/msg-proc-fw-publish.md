@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # Publish messages with the AWS Message Processing Framework for .NET
-<a name="msg-proc-fw-publish"></a>
 
 The AWS Message Processing Framework for .NET supports publishing one or more message types, processing one or more message types, or doing both in the same application.
 

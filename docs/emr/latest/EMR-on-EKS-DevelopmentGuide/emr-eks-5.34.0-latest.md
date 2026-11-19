@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-5.34.0-latest
-<a name="emr-eks-5.34.0-latest"></a>
 
 **Release notes**: `emr-5.34.0-latest` currently points to `emr-5.34.0-20220802`.
 

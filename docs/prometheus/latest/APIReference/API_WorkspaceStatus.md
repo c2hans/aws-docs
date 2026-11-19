@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Works
 ---
 
 # WorkspaceStatus
-<a name="API_WorkspaceStatus"></a>
 
 The status of the workspace.
 

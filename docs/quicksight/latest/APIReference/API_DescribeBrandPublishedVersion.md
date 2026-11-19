@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeBrandPublishedVersion
-<a name="API_DescribeBrandPublishedVersion"></a>
 
 Describes the published version of the brand.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableIma
 ---
 
 # EnableImageDeprecation
-<a name="API_EnableImageDeprecation"></a>
 
 Enables deprecation of the specified AMI at the specified date and time.
 

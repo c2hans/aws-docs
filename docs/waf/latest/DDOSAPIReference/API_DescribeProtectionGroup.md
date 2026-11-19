@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Describe
 ---
 
 # DescribeProtectionGroup
-<a name="API_DescribeProtectionGroup"></a>
 
 Returns the specification for the specified protection group.
 

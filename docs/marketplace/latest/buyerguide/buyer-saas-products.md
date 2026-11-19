@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-saas
 ---
 
 # SaaS products through AWS Marketplace
-<a name="buyer-saas-products"></a>
 
  For software as a service (SaaS) products, you subscribe to products through AWS Marketplace, but you access the product in the software seller's environment.
 

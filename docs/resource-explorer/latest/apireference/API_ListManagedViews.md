@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ListManagedViews
-<a name="API_ListManagedViews"></a>
 
 Lists the Amazon resource names (ARNs) of the [AWS-managed views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/aws-managed-views.html) available in the AWS Region in which you call this operation.
 

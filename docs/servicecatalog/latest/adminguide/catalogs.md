@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalog
 ---
 
 # Managing Catalogs
-<a name="catalogs"></a>
 
 AWS Service Catalog provides an interface for managing portfolios, products, and constraints from an administrator console.
 

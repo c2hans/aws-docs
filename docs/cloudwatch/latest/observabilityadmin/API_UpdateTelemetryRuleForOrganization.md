@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # UpdateTelemetryRuleForOrganization
-<a name="API_UpdateTelemetryRuleForOrganization"></a>
 
  Updates an existing telemetry rule that applies across an AWS Organization. This operation can only be called by the organization's management account or a delegated administrator account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html
 ---
 
 # Functionality deprecated in AL2 and removed in AL2023
-<a name="deprecated-al2"></a>
 
  This section describes functionality that is available in AL2, and no longer available in AL2023.
 

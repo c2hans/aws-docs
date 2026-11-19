@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-o
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Organization reports
-<a name="agent-org-reports"></a>
 
 Organization reports are filterable, customizable reports of AWS Well-Architected Agent recommendations across AWS accounts monitored in your organizational agent profile.
 

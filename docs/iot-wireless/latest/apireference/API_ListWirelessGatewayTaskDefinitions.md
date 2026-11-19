@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListWirelessGatewayTaskDefinitions
-<a name="API_ListWirelessGatewayTaskDefinitions"></a>
 
 List the wireless gateway tasks definitions registered to your AWS account.
 

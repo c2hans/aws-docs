@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Ec2Configu
 ---
 
 # Ec2ConfigurationState
-<a name="API_Ec2ConfigurationState"></a>
 
 Details about the state of the EC2 scan configuration for your environment.
 

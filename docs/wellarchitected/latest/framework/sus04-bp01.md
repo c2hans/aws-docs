@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus04-b
 ---
 
 # SUS04-BP01 Eliminate unnecessary data
-<a name="sus04-bp01"></a>
 
  Eliminate data that no longer serves a business purpose. Whether redundant, obsolete, trivial, or simply unknown - aim to reduce storage requirements and the associated environmental impact of your workload.
 

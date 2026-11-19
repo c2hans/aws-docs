@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VPCPeeringConnection
-<a name="aws-resource-ec2-vpcpeeringconnection"></a>
 
 Requests a VPC peering connection between two VPCs: a requester VPC that you own and an accepter VPC with which to create the connection. The accepter VPC can belong to a different AWS account and can be in a different Region than the requester VPC.
 
@@ -32,8 +31,10 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[PeerRegion](#cfn-ec2-vpcpeeringconnection-peerregion)" : {{String}},
       "[PeerRoleArn](#cfn-ec2-vpcpeeringconnection-peerrolearn)" : {{String}},
       "[PeerVpcId](#cfn-ec2-vpcpeeringconnection-peervpcid)" : {{String}},
+      "[PeerVpcPeeringConnectionOptions](#cfn-ec2-vpcpeeringconnection-peervpcpeeringconnectionoptions)" : {{VpcPeeringConnectionOptions}},
       "[Tags](#cfn-ec2-vpcpeeringconnection-tags)" : {{[ Tag, ... ]}},
-      "[VpcId](#cfn-ec2-vpcpeeringconnection-vpcid)" : {{String}}
+      "[VpcId](#cfn-ec2-vpcpeeringconnection-vpcid)" : {{String}},
+      "[VpcPeeringConnectionOptions](#cfn-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions)" : {{VpcPeeringConnectionOptions}}
     }
 }
 ```
@@ -49,9 +50,13 @@ Properties:
   [PeerRegion](#cfn-ec2-vpcpeeringconnection-peerregion): {{String}}
   [PeerRoleArn](#cfn-ec2-vpcpeeringconnection-peerrolearn): {{String}}
   [PeerVpcId](#cfn-ec2-vpcpeeringconnection-peervpcid): {{String}}
+  [PeerVpcPeeringConnectionOptions](#cfn-ec2-vpcpeeringconnection-peervpcpeeringconnectionoptions): {{
+    VpcPeeringConnectionOptions}}
   [Tags](#cfn-ec2-vpcpeeringconnection-tags): {{
     - Tag}}
   [VpcId](#cfn-ec2-vpcpeeringconnection-vpcid): {{String}}
+  [VpcPeeringConnectionOptions](#cfn-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions): {{
+    VpcPeeringConnectionOptions}}
 ```
 
 ## Properties
@@ -90,6 +95,12 @@ The ID of the VPC with which you are creating the VPC peering connection. You mu
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`PeerVpcPeeringConnectionOptions`  <a name="cfn-ec2-vpcpeeringconnection-peervpcpeeringconnectionoptions"></a>
+Describes the VPC peering connection options.
+*Required*: No
+*Type*: [VpcPeeringConnectionOptions](aws-properties-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Tags`  <a name="cfn-ec2-vpcpeeringconnection-tags"></a>
 Any tags assigned to the resource.
 *Required*: No
@@ -101,6 +112,12 @@ The ID of the VPC.
 *Required*: Yes
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`VpcPeeringConnectionOptions`  <a name="cfn-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions"></a>
+Describes the VPC peering connection options.
+*Required*: No
+*Type*: [VpcPeeringConnectionOptions](aws-properties-ec2-vpcpeeringconnection-vpcpeeringconnectionoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
 <a name="aws-resource-ec2-vpcpeeringconnection-return-values"></a>
@@ -124,6 +141,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `Id`  <a name="Id-fn::getatt"></a>
 The ID of the peering connection.
+
+`MultipathResilienceStatus`  <a name="MultipathResilienceStatus-fn::getatt"></a>
+Property description not available.
 
 ## Examples
 <a name="aws-resource-ec2-vpcpeeringconnection--examples"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/managed
 ---
 
 # Building your custom dashboards from Managed Dashboards
-<a name="managed-dashboards-building-custom"></a>
 
 Although you cannot edit a Managed Dashboard, you can use one to build a custom dashboard that you own, in two ways.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # AWS Managed Microsoft AD low available storage space
-<a name="ms_ad_troubleshooting_low_storage_space"></a>
 
 When your AWS Managed Microsoft AD is impaired due to Active Directory having low available storage space, immediate action is required to return the directory to an active state. The two most common causes of this impairment are covered in the sections below:
 

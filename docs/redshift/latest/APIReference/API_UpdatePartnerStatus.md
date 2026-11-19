@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_UpdateP
 ---
 
 # UpdatePartnerStatus
-<a name="API_UpdatePartnerStatus"></a>
 
 Updates the status of a partner integration.
 

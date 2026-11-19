@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/auto-mode.html
 ---
 
 # EKS Auto Mode
-<a name="auto-mode"></a>
 
 eksctl supports [EKS Auto Mode](https://docs.aws.amazon.com/eks/latest/userguide/automode.html), a feature that extends AWS management of Kubernetes clusters beyond the cluster itself, to allow AWS to also set up and manage the infrastructure that enables the smooth operation of your workloads. This allows you to delegate key infrastructure decisions and leverage the expertise of AWS for day-to-day operations. Cluster infrastructure managed by AWS includes many Kubernetes capabilities as core components, as opposed to add-ons, such as compute autoscaling, pod and service networking, application load balancing, cluster DNS, block storage, and GPU support.
 

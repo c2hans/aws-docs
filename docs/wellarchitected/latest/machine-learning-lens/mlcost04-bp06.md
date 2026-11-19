@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLCOST04-BP06 Use managed training capabilities
-<a name="mlcost04-bp06"></a>
 
  Machine learning model training can be an iterative, compute-intensive, and time-consuming process. Instead of using the notebook itself, which might be running on a small instance, offloading the training to a managed cluster of compute resources including both CPUs and GPUs enables more efficient and cost-effective model training.
 

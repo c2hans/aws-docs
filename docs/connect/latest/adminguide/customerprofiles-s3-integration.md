@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customerprofil
 ---
 
 # Example: Programmatically integrate Amazon S3 with Connect Customer Customer Profiles
-<a name="customerprofiles-s3-integration"></a>
 
 Using the Customer Profiles [PutIntegration](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutIntegration.html) API, you can programmatically create integrations for S3, Salesforce, Marketo, and more.
 

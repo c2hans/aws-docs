@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # RuleTransform
-<a name="API_RuleTransform"></a>
 
 Information about a transform to apply to requests that match a rule. Transforms are applied to requests before they are sent to targets.
 

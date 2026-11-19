@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/reso
 ---
 
 # Resource Tagging
-<a name="resource-tagging"></a>
 
 Partner product resource tagging enables AWS Partners to demonstrate how their products drive service consumption and AWS revenue by tagging resources with partner product identifiers.
 

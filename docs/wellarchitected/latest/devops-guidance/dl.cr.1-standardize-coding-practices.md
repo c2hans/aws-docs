@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CR.1] Standardize coding practices
-<a name="dl.cr.1-standardize-coding-practices"></a>
 
  **Category:** FOUNDATIONAL
 

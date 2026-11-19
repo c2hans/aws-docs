@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-create.htm
 ---
 
 # Creating Quick Sight Topics
-<a name="topics-create"></a>
 
 |  |
 | --- |

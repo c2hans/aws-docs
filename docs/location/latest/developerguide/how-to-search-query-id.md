@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search places using query ID
-<a name="how-to-search-query-id"></a>
 
 The `SearchText` API enables you get details of the query result returned by [Suggest](suggest.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Storage.
 ---
 
 # Amazon RDS DB instance storage
-<a name="CHAP_Storage"></a>
 
 DB instances for Amazon RDS for Db2, MariaDB, MySQL, PostgreSQL, Oracle, and Microsoft SQL Server use Amazon Elastic Block Store (Amazon EBS) volumes for database and log storage.
 
@@ -19,6 +18,7 @@ For more information about instance storage pricing, see [Amazon RDS pricing](ht
 + [Magnetic storage (legacy, not recommended)](#CHAP_Storage.Magnetic)
 + [Additional storage volumes](#Welcome.AdditionalStorageVolumes)
 + [Dedicated log volume (DLV)](#CHAP_Storage.dlv)
++ [Storage volume initialization](#CHAP_Storage.initialization)
 + [Monitoring database performance](#Concepts.Storage.Metrics)
 + [Factors that affect database performance](#CHAP_Storage.Other.Factors)
 
@@ -310,6 +310,22 @@ RDS supports DLVs with read replicas. If the primary DB instance has a DLV enabl
 After you modify the DLV setting for a DB instance, the DB instance must be rebooted.
 
 For information on enabling a DLV, see [Using a dedicated log volume (DLV)](USER_PIOPS.dlv.md).
+
+## Storage volume initialization
+<a name="CHAP_Storage.initialization"></a>
+
+When you restore a DB instance to a point in time, create a read replica, or convert a Single-AZ deployment to a Multi-AZ DB instance deployment, Amazon RDS creates the storage volumes for the new DB instance from a snapshot. The data blocks are downloaded from Amazon S3 and written to the volumes before you can access them. This process is called volume initialization. The DB instance is available and fully operational while initialization runs, but the volumes deliver their full provisioned performance only after initialization completes.
+
+For these operations, Amazon RDS initializes each new volume at a rate of up to 4 TiB per hour. This rate applies to every volume attached to the DB instance that uses General Purpose SSD (gp3) or Provisioned IOPS SSD (io2 Block Express) storage, including dedicated log volumes and additional storage volumes. Because initialization proceeds at a predictable rate, you can estimate when your DB instance reaches full performance instead of waiting through a period of elevated I/O latency.
+
+Faster initialization is turned on by default at no additional cost, and no action is required. If the volume initialization that you request concurrently across your account exceeds the bandwidth available to it, Amazon RDS initializes the remaining blocks on a best-effort basis. Initialization is never slower than it is without the faster rate.
+
+**Note**
+Volumes that use gp2, io1, or magnetic storage initialize at a variable rate that depends on your workload and on which blocks your DB instance accesses.
+
+When you restore a DB instance from a DB snapshot, the volumes load data in the background using lazy loading instead. For more information, see [Restoring to a DB instance](USER_RestoreFromSnapshot.md).
+
+To monitor initialization progress per volume, use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. During initialization, `StorageOperationStatus` is set to `Initializing`, and both fields are absent when initialization is complete. For more information, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
 
 ## Monitoring database performance
 <a name="Concepts.Storage.Metrics"></a>

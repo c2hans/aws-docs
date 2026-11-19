@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/man
 ---
 
 # Manage access to Windows job user secrets
-<a name="manage-access-windows-secrets"></a>
 
 When you configure a queue with a Windows `jobRunAsUser`, you must specify an AWS Secrets Manager secret. The value of this secret is expected to be JSON-encoded object of the form:
 

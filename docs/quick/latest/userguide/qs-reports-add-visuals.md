@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qs-reports-add-vi
 ---
 
 # Adding and deleting visuals to a report
-<a name="qs-reports-add-visuals"></a>
 
 **To add visuals to a section in a pixel perfect report**
 

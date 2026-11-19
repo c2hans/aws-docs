@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-identifier.htm
 ---
 
 # Add an identifier column
-<a name="transforms-identifier"></a>
 
 Assign a numeric *Identifier* for each row in the dataset.
 

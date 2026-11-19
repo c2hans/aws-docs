@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribeListeningSessionDetails
-<a name="API_MedicalScribeListeningSessionDetails"></a>
 
 Detailed information about a Medical Scribe listening session
 

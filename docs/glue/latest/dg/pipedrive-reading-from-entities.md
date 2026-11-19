@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pipedrive-reading-from-en
 ---
 
 # Reading from Pipedrive entities
-<a name="pipedrive-reading-from-entities"></a>
 
  **Prerequisites**
 +  A Pipedrive Object you would like to read from. Refer the supported entities table below to check the available entities.

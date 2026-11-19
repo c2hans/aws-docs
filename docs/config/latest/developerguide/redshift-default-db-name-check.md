@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/redshift-de
 ---
 
 # redshift-default-db-name-check
-<a name="redshift-default-db-name-check"></a>
 
 Checks if a Redshift cluster has changed its database name from the default value. The rule is NON\_COMPLIANT if the database name for a Redshift cluster is set to “dev”, or if the optional parameter is provided and the database name does not match.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchUpdateTaskError
-<a name="API_BatchUpdateTaskError"></a>
 
 The error details for a task that could not be updated in a batch update operation.
 

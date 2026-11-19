@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/developerguide/listr
 ---
 
 # ListResourceTypes
-<a name="listresourcetypes"></a>
 
  Information about supported resource types can be retrieved by making a request to the `/ResourceTypes` endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateConn
 ---
 
 # UpdateConnector
-<a name="API_UpdateConnector"></a>
 
 Updates the description or provider-specific configuration details of an existing connector.
 

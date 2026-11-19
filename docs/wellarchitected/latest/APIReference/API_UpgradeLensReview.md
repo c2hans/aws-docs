@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # UpgradeLensReview
-<a name="API_UpgradeLensReview"></a>
 
 Upgrade lens review for a particular workload.
 

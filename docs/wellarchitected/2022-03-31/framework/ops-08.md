@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS 8  How do you understand the health of your workload?
-<a name="ops-08"></a>
 
  Define, capture, and analyze workload metrics to gain visibility to workload events so that you can take appropriate action.
 

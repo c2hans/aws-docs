@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyCustomDBEngineVersion
-<a name="API_ModifyCustomDBEngineVersion"></a>
 
 Modifies the status of a custom engine version (CEV). You can find CEVs to modify by calling `DescribeDBEngineVersions`.
 

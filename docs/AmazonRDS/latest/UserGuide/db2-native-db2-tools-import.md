@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-native-db
 ---
 
 # Importing data from a client machine to Amazon RDS for Db2 with the IMPORT command
-<a name="db2-native-db2-tools-import"></a>
 
 You can use the `IMPORT` command from a client machine to import your data into the Amazon RDS for Db2 server.
 

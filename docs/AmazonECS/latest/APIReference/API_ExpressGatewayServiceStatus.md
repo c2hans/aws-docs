@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Expres
 ---
 
 # ExpressGatewayServiceStatus
-<a name="API_ExpressGatewayServiceStatus"></a>
 
 An object that defines the status of Express service creation and information about the status of the service.
 

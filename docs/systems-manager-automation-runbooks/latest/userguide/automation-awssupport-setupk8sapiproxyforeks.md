@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-SetupK8sApiProxyForEKS`
-<a name="automation-awssupport-setupk8sapiproxyforeks"></a>
 
  **Description**
 

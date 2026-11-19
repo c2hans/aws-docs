@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS services
 <a name="aws-services.3c47013d-d313-5466-8518-24be973f4e9d"></a>

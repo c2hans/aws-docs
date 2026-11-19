@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Authori
 ---
 
 # AuthorizationCodeProperties
-<a name="API_AuthorizationCodeProperties"></a>
 
 The authorization code properties of a connection.
 

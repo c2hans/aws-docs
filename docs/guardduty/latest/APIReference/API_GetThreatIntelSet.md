@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetThr
 ---
 
 # GetThreatIntelSet
-<a name="API_GetThreatIntelSet"></a>
 
 Retrieves the ThreatIntelSet that is specified by the ThreatIntelSet ID.
 

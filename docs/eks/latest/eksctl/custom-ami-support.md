@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/custom-ami-support.htm
 ---
 
 # Custom AMI support
-<a name="custom-ami-support"></a>
 
 ## Setting the node AMI ID
 <a name="_setting_the_node_ami_id"></a>

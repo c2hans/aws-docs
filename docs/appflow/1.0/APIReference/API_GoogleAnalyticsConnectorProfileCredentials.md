@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_GoogleAnaly
 ---
 
 # GoogleAnalyticsConnectorProfileCredentials
-<a name="API_GoogleAnalyticsConnectorProfileCredentials"></a>
 
  The connector-specific profile credentials required by Google Analytics.
 

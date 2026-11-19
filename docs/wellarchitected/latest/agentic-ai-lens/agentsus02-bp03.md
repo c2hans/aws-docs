@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSUS02-BP03 Appropriately scale data, networking, and compute dependencies
-<a name="agentsus02-bp03"></a>
 
  Agent workloads have a shape that general-purpose infrastructure defaults don't fit, with bursty inference, variable-length tool execution, and unpredictable multi-step reasoning. Sizing hosting, network, and storage to the observed pattern rather than a theoretical maximum keeps infrastructure proportional to agentic work.
 

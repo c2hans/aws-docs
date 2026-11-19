@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/feature-smart-config
 ---
 
 # Smart configuration defaults
-<a name="feature-smart-config-defaults"></a>
 
 **Note**
 For help in understanding the layout of settings pages, or in interpreting the **Support by AWS SDKs and tools** table that follows, see [Understanding the settings pages of this guide](settings-reference.md#settingsPages).

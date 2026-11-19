@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/monitoring
 ---
 
 # Monitoring hosted zones using Amazon CloudWatch
-<a name="monitoring-hosted-zones-with-cloudwatch"></a>
 
 You can monitor your public hosted zones by using Amazon CloudWatch to collect and process raw data into readable, near real-time metrics. Metrics are available shortly after Route 53 receives the DNS queries that the metrics are based on. CloudWatch metric data for Route 53 hosted zones has a granularity of one minute.
 

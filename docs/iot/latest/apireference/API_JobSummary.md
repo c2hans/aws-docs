@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_JobSummary.h
 ---
 
 # JobSummary
-<a name="API_JobSummary"></a>
 
 The job summary.
 

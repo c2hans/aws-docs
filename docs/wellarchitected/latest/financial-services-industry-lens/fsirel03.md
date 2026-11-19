@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIREL03: How are your business and regulatory requirements driving the resilience of your workload?
-<a name="fsirel03"></a>
 
 ## FSIREL03-BP01 Use business criticality to drive recovery objectives
 <a name="fsirel03-bp01"></a>

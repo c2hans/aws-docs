@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Configuring Security Hub CSPM to integrate with Microsoft Azure
-<a name="securityhub-azure-setup-securityhub"></a>
 
 After you complete the [prerequisite tasks](securityhub-azure-prereqs.md) and [configure your Microsoft Azure environment](securityhub-azure-setup-azure.md), you can configure AWS Security Hub CSPM to integrate with Azure. To configure Security Hub CSPM to integrate with Azure, you create a connector. After you create the connector, the following events occur:
 

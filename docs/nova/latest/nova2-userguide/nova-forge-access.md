@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-forge-a
 ---
 
 # Nova Forge access and setup
-<a name="nova-forge-access"></a>
 
 To get onboarded to Nova Forge, follow this 2-step process:
 + Step 1: Subscribe to Nova Forge

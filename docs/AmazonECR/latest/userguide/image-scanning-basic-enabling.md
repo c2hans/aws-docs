@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scannin
 ---
 
 # Configuring basic scanning for images in Amazon ECR
-<a name="image-scanning-basic-enabling"></a>
 
 By default, Amazon ECR turns on basic scanning for all private registries. As a result, unless you've changed the scanning settings on your private registry there is no need to turn on basic scanning.
 

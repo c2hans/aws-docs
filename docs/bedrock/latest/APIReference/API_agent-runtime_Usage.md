@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # Usage
-<a name="API_agent-runtime_Usage"></a>
 
 Contains information of the usage of the foundation model.
 

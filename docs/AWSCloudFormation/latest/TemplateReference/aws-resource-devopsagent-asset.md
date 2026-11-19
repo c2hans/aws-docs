@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Asset
-<a name="aws-resource-devopsagent-asset"></a>
 
 The `AWS::DevOpsAgent::Asset` resource attaches an asset to an Agent Space for the AWS DevOps Agent Service. An asset is a versioned bundle of files, with optional metadata, that the Agent Space uses, such as a skill, an `agents_md` document, or an attachment.
 

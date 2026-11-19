@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAcces
 ---
 
 # Overview of RDS for MySQL database logs
-<a name="USER_LogAccess.MySQL.LogFileSize"></a>
 
 You can monitor the following types of RDS for MySQL log files:
 + Error log

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/configure-log
 ---
 
 # Configure a client login banner for an existing AWS Client VPN endpoint
-<a name="configure-login-banner-existing-endpoint"></a>
 
 Use the following steps to configure a client login banner for an existing Client VPN endpoint.
 

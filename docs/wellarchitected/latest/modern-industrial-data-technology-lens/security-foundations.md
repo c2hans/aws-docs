@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Security foundations
-<a name="security-foundations"></a>
 
 |  MIDASEC01: How do you verify governance and compliance with security standards?  |
 | --- |

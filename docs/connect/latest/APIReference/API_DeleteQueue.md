@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteQu
 ---
 
 # DeleteQueue
-<a name="API_DeleteQueue"></a>
 
 Deletes a queue.
 

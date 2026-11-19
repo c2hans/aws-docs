@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCisSca
 ---
 
 # ListCisScanResultsAggregatedByTargetResource
-<a name="API_ListCisScanResultsAggregatedByTargetResource"></a>
 
 Lists scan results aggregated by a target resource.
 

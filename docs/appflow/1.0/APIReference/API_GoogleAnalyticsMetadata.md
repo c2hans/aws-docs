@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_GoogleAnaly
 ---
 
 # GoogleAnalyticsMetadata
-<a name="API_GoogleAnalyticsMetadata"></a>
 
  The connector metadata specific to Google Analytics.
 

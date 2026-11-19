@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Analy
 ---
 
 # AnalysisDefaults
-<a name="API_AnalysisDefaults"></a>
 
 The configuration for default analysis settings.
 

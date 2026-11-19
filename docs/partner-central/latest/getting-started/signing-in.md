@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/s
 ---
 
 # Accessing AWS Partner Central
-<a name="signing-in"></a>
 
 Users can sign in to AWS Partner Central from a browser. For the best experience, we recommend using a desktop computer.
 

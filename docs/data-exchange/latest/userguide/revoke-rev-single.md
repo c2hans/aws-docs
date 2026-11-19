@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/revoke-re
 ---
 
 # Revoking access to a single AWS Data Exchange asset revision as a provider (console)
-<a name="revoke-rev-single"></a>
 
 As a provider of AWS Data Exchange data products, you can use the AWS Data Exchange console to revoke subscriber access to a single revision using the following instructions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_ListFilters.ht
 ---
 
 # ListFilters
-<a name="API_ListFilters"></a>
 
 Lists all filters that belong to a given dataset group.
 

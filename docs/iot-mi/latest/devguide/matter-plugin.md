@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/matter-plugin.htm
 ---
 
 # Matter Plugin
-<a name="matter-plugin"></a>
 
 **Topics**
 + [What is Matter Plugin](#what-is-matter-plugin)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # ApplicationSummary
-<a name="API_app-registry_ApplicationSummary"></a>
 
 Summary of a AWS Service Catalog AppRegistry application.
 

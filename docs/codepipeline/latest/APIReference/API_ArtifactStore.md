@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Art
 ---
 
 # ArtifactStore
-<a name="API_ArtifactStore"></a>
 
 The S3 bucket where artifacts for the pipeline are stored.
 

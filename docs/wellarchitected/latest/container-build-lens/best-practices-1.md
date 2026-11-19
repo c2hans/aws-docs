@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Best practices
-<a name="best-practices-1"></a>
 
 One of the greatest benefits of building applications using container images is confidence that the application can run on any sort of infrastructure. Whether the container is deployed on a developer’s personal laptop or in public cloud infrastructure, the container will run as expected, because all the required dependencies are packaged within the image. With this in mind, alignment with security standards and best practices is of utmost importance as containers are deployed in different types of environments.
 

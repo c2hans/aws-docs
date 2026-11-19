@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Conclusion for operationalizing agentic AI
-<a name="conclusion"></a>
 
 Agentic AI represents more than a technological shift. It marks the emergence of a new operating system for the enterprise. Organizations that embrace this transformation move beyond narrow automation use cases and build intelligence into the foundation of their operations. This shift is about redesigning how decisions are made, how systems adapt, and how outcomes are realized at scale.
 

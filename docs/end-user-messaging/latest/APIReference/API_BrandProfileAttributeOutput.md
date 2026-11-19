@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # BrandProfileAttributeOutput
-<a name="API_BrandProfileAttributeOutput"></a>
 
 Contains information about an attribute that was created for a brand profile.
 

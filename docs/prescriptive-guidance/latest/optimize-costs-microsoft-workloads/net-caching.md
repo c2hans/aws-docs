@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Use caching to reduce database demand
-<a name="net-caching"></a>
 
 ## Overview
 <a name="net-caching-overview"></a>

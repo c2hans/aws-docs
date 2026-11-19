@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DocumentR
 ---
 
 # DocumentRelevanceConfiguration
-<a name="API_DocumentRelevanceConfiguration"></a>
 
 Overrides the document relevance properties of a custom index field.
 

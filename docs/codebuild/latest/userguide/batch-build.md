@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/batch-build.h
 ---
 
 # Run builds in batches
-<a name="batch-build"></a>
 
 You can use AWS CodeBuild to run concurrent and coordinated builds of a project with batch builds.
 

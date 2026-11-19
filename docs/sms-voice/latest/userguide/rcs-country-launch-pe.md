@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-country-l
 ---
 
 # Launching RCS in Peru
-<a name="rcs-country-launch-pe"></a>
 
 **Important**
 RCS in Peru is available only to businesses with a local presence in Peru. International companies without Peruvian operations or a locally-registered entity cannot register for RCS in Peru.

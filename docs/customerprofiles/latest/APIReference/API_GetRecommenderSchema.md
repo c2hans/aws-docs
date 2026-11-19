@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetRecommenderSchema
-<a name="API_connect-customer-profiles_GetRecommenderSchema"></a>
 
 Retrieves information about a specific recommender schema in a domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Metric
 ---
 
 # MetricsConfig
-<a name="API_MetricsConfig"></a>
 
 The configuration for Utilization metrics.
 

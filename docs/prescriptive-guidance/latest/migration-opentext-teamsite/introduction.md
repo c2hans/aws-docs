@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Migrating OpenText TeamSite and Media Management workloads to the AWS Cloud
-<a name="introduction"></a>
 
 *Battulga Purevragchaa, Amazon Web Services*
 

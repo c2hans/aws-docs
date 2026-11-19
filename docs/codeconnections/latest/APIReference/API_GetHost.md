@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # GetHost
-<a name="API_GetHost"></a>
 
 Returns the host ARN and details such as status, provider type, endpoint, and, if applicable, the VPC configuration.
 

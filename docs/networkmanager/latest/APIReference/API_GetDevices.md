@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetDevices
-<a name="API_GetDevices"></a>
 
 Gets information about one or more of your devices in a global network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # ScalableTarget
-<a name="API_ScalableTarget"></a>
 
 Represents a scalable target.
 

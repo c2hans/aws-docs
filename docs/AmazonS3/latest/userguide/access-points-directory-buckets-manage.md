@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Managing your access points for directory buckets
-<a name="access-points-directory-buckets-manage"></a>
 
 This section explains how to manage your access points for directory buckets using the AWS Command Line Interface, Amazon S3 REST API, or AWS SDK.
 

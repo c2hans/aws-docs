@@ -5,12 +5,11 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RegexPatternSet
-<a name="aws-resource-wafv2-regexpatternset"></a>
 
 **Note**
 This is the latest version of ** AWS WAF **, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the [AWS WAF developer guide](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html).
 
-Use an [AWS::WAFv2::RegexPatternSet](#aws-resource-wafv2-regexpatternset) to have AWS WAF inspect a web request component for a specific set of regular expression patterns.
+Use an [AWS::WAFv2::RegexPatternSet](aws-resource-wafv2-regexpatternset.md) to have AWS WAF inspect a web request component for a specific set of regular expression patterns.
 
 You use a regex pattern set by providing its Amazon Resource Name (ARN) to the rule statement `RegexPatternSetReferenceStatement`, when you add a rule to a rule group or web ACL.
 

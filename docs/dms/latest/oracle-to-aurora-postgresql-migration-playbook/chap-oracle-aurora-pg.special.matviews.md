@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL materialized views
-<a name="chap-oracle-aurora-pg.special.matviews"></a>
 
 With AWS DMS, you can create and manage materialized views in Oracle and PostgreSQL databases to improve query performance and enable efficient data access. A materialized view is a database object that stores a pre-computed result set from a query, providing fast access to summarized or frequently accessed data.
 

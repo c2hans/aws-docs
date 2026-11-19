@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/delegat
 ---
 
 # Delegated administrator settings in License Manager
-<a name="delegated-administrator"></a>
 
 You can register a delegated administrator to perform administrative tasks for managed licenses and Linux subscriptions in License Manager. To simplify administration, we recommend using the License Manager console to register a single delegated administrator for each feature of License Manager. When you use this approach, you will have a single delegated administrator in your organization for License Manager.
 

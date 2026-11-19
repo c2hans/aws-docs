@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-redshi
 ---
 
 # Amazon Redshift Serverless events
-<a name="events-ref-redshift-serverless"></a>
 
 Redshift Serverless sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

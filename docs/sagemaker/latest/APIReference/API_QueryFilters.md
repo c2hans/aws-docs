@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_QueryF
 ---
 
 # QueryFilters
-<a name="API_QueryFilters"></a>
 
 A set of filters to narrow the set of lineage entities connected to the `StartArn`(s) returned by the `QueryLineage` API action.
 

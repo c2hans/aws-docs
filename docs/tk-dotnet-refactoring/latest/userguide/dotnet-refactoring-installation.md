@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/d
 AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container (A2C), AWS Toolkit for .NET Refactoring (TR), and AWS Microservice Extractor (ME) for .NET is no longer open to new customers. If you would like to use the service, sign up prior to November 7, 2025. Alternatively use [AWS Transform](https://aws.amazon.com/transform/), which is an agentic AI service developed to accelerate enterprise modernization of .NET.
 
 # Install Toolkit for .NET Refactoring
-<a name="dotnet-refactoring-installation"></a>
 
 You can install Toolkit for .NET Refactoring within Microsoft Visual Studio, or the extension is available as part of license included Visual Studio Amazon Machine Images (AMIs) on Amazon EC2.
 

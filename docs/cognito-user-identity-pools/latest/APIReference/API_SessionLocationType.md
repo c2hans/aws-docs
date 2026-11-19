@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # SessionLocationType
-<a name="API_SessionLocationType"></a>
 
 The geographic location of the most recent activity on a session, derived from the IP address.
 

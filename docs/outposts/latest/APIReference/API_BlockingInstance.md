@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Blockin
 ---
 
 # BlockingInstance
-<a name="API_BlockingInstance"></a>
 
 A running Amazon EC2 instance that can be stopped to free up capacity needed to run the capacity task.
 

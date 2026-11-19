@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/customizing-
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Customizing text elements
-<a name="customizing-web-experience-text-elements"></a>
 
 This topic shows how to customize text elements using the AWS Management Console and the AWS CLI.
 

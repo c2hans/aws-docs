@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCOPS05-BP01 Understand monitoring requirements in your Local Zones
-<a name="drhcops05-bp01"></a>
 
  Focus on similar observability and alerting as in an Availability Zone.
 

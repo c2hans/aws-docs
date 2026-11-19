@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Por
 ---
 
 # PortalOptions
-<a name="API_PortalOptions"></a>
 
 A structure that describes the options for the access portal associated with an application.
 

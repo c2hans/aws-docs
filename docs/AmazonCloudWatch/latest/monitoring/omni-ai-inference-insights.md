@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # AI Inference Insights
-<a name="omni-ai-inference-insights"></a>
 
 AI Inference Insights is the CloudWatch Omni observability experience for self-hosted inference engines. It covers inference workloads that run on Amazon ECS and on Amazon EKS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/launch-settings-source.htm
 ---
 
 # Review launch settings for a source server
-<a name="launch-settings-source"></a>
 
 The launch settings are a set of instructions that comprise an EC2 launch template and other settings, which determine how a test or cutover instance is launched for each source server on AWS.
 

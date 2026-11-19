@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-protectio
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Protecting Amazon EC2 instances and Network Load Balancers with Shield Advanced
-<a name="ddos-protections-ec2-nlb"></a>
 
 This page explains how to use AWS Shield Advanced protections for Amazon EC2 instances and Network Load Balancers.
 

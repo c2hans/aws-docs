@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FailedCap
 ---
 
 # FailedCapacityReservationFleetCancellationResult
-<a name="API_FailedCapacityReservationFleetCancellationResult"></a>
 
 Describes a Capacity Reservation Fleet that could not be cancelled.
 

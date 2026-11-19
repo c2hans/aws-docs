@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Creat
 ---
 
 # CreateBackupAccessPoint
-<a name="API_CreateBackupAccessPoint"></a>
 
 Creates a backup access point for an Amazon S3 recovery point. A backup access point provides on-demand, read-only access to the backup data in a recovery point through an Amazon S3 access point, without initiating a restore.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_Create
 ---
 
 # CreatePermission
-<a name="API_CreatePermission"></a>
 
 Grants one or more permissions on a private CA to the AWS Certificate Manager (ACM) service principal (`acm.amazonaws.com`). These permissions allow ACM to issue and renew ACM certificates that reside in the same AWS account as the CA.
 

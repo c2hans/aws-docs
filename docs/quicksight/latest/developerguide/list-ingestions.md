@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/list-in
 ---
 
 # ListIngestions
-<a name="list-ingestions"></a>
 
 Use the `ListIngestions` operation to list the history of SPICE ingestioned for a dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Contr
 ---
 
 # ContributionAnalysisDefault
-<a name="API_ContributionAnalysisDefault"></a>
 
 The contribution analysis visual display for a line, pie, or bar chart.
 

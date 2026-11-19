@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Ec2ImageBuilderComponentFulfillmentOption
-<a name="API_marketplace-discovery_Ec2ImageBuilderComponentFulfillmentOption"></a>
 
 Describes an EC2 Image Builder component fulfillment option.
 

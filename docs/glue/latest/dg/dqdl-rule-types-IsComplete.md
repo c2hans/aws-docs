@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-IsComplet
 ---
 
 # IsComplete
-<a name="dqdl-rule-types-IsComplete"></a>
 
 Checks whether all of the values in a column are complete (non-null).
 

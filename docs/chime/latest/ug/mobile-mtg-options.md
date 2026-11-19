@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/mobile-mtg-options.html
 ---
 
 # Additional meeting actions
-<a name="mobile-mtg-options"></a>
 
 When you join a meeting, a vertical ellipsis appears in the upper-right corner on all meetings pages except for the **Chat** page. Choosing the ellipsis opens a menu of additional actions you can take during the meeting. The following sections explain how to use the menu's commands:
 

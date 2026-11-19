@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/dev-by-la
 ---
 
 # SDKs by language
-<a name="dev-by-language"></a>
 
 **SDK Versions**
 We recommend that you use the most recent build of the AWS SDK, and any other SDKs, that you use in your projects, and to keep the SDKs up to date. The AWS SDK provides you with the latest features and functionality, and also security updates. To find the latest build of the AWS SDK for JavaScript, for example, see the [browser installation ](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/index.html#In_the_Browser) topic in the *AWS SDK for JavaScript* documentation.

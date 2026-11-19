@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-b
 ---
 
 # Brokers broker-id Promote
-<a name="brokers-broker-id-promote"></a>
 
 ## URI
 <a name="brokers-broker-id-promote-url"></a>

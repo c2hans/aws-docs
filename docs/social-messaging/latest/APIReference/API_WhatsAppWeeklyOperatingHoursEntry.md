@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppWeeklyOperatingHoursEntry
-<a name="API_WhatsAppWeeklyOperatingHoursEntry"></a>
 
 A single entry in a weekly calling schedule, defining the open and close times for one day of the week.
 

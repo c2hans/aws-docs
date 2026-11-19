@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-serv
 ---
 
 # Cost and usage data for all AWS services at hourly granularity (without resource-level data)
-<a name="ce-services-hourly"></a>
 
 By default, Cost Explorer provides up to 14 months of data at daily and monthly granularity. However, you can opt in to hourly granularity for the past 14 days.
 

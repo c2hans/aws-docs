@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Recomm
 ---
 
 # RecommendationJobCompiledOutputConfig
-<a name="API_RecommendationJobCompiledOutputConfig"></a>
 
 Provides information about the output configuration for the compiled model.
 

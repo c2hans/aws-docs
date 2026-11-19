@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng_de
 ---
 
 # Deleting a compute node group in AWS PCS
-<a name="working-with_cng_delete"></a>
 
 This topic provides an overview of available options and describes what to consider when you delete an compute node group in AWS PCS.
 

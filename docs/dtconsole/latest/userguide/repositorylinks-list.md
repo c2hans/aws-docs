@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/repositorylin
 ---
 
 # List repository links
-<a name="repositorylinks-list"></a>
 
 You can use the **list-repository-links** command in the AWS Command Line Interface (AWS CLI) to list repository links for your account.
 

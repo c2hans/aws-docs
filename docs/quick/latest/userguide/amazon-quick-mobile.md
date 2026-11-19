@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/amazon-quick-mobi
 ---
 
 # AWS Quick on mobile
-<a name="amazon-quick-mobile"></a>
 
 AWS Quick is available as a companion app for iOS and Android that works alongside the desktop application. Use the mobile app to chat with Quick, review your activity feed, and open dashboards while you are away from your computer. You sign in with the same account, and your conversations stay in sync across your devices.
 

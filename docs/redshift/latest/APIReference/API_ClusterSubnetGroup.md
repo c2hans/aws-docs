@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Cluster
 ---
 
 # ClusterSubnetGroup
-<a name="API_ClusterSubnetGroup"></a>
 
 Describes a subnet group.
 

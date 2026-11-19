@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 3: Create a AWS Service Catalog portfolio
-<a name="getstarted-portfolio-Terraform"></a>
 
 You can create a portfolio in your AWS Service Catalog administrator account (hub account) for easy product organization and distribution to end user accounts (spoke accounts).
 

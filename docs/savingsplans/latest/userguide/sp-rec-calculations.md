@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-rec-cal
 ---
 
 # Understanding your recommendation calculations
-<a name="sp-rec-calculations"></a>
 
 Savings Plans recommendations examine your usage over a selected time period. Based on the usage, we calculate what your bill could have been if you had purchased an additional Savings Plans commitment for that time period. We identify and recommend the commitment value that we estimate will result in the largest savings.
 

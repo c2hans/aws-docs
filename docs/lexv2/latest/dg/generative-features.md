@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/generative-features.html
 ---
 
 # Optimize Lex V2 bot creation and performance by using generative AI
-<a name="generative-features"></a>
 
 Take advantage of Amazon Bedrock's generative AI capabilities to automate and speed up your Amazon Lex V2 bot building process. You can carry out the following processes with the help of Amazon Bedrock.
 
@@ -21,7 +20,7 @@ You can activate generative AI capabilities for Amazon Lex V2 either through the
 **Note**
 Before you can take advantage of the generative AI features, you must fulfill the following prerequisites
 For information about pricing for using Amazon Bedrock, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/).
-Turn on the generative AI capabilities for your bot locale. To do so, follow the steps at [Optimize Lex V2 bot creation and performance by using generative AI](#generative-features).
+Turn on the generative AI capabilities for your bot locale. To do so, follow the steps at [Optimize Lex V2 bot creation and performance by using generative AI](generative-features.md).
 
 ------
 #### [ Using the console ]

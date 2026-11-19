@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Use `GetCredentialsForIdentity` with an AWS SDK
-<a name="cognito-identity_example_cognito-identity_GetCredentialsForIdentity_section"></a>
 
 The following code example shows how to use `GetCredentialsForIdentity`.
 

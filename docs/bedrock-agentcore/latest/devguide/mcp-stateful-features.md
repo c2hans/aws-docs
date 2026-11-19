@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/mcp-st
 ---
 
 # Stateful MCP server features
-<a name="mcp-stateful-features"></a>
 
 The Model Context Protocol (MCP) provides a standardized way for AI applications to interact with external data and capabilities. This guide shows how to build an MCP server that uses resources, prompts, tools, elicitation, sampling, and progress notifications, and how to test it locally and on Amazon Bedrock AgentCore.
 

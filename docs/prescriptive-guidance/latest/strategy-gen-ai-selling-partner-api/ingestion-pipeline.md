@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Building the data ingestion pipeline for your Amazon selling partner data
-<a name="ingestion-pipeline"></a>
 
 This section provides a strategy to ingests Amazon vendor and seller data from the Amazon Selling Partner API (SP-API) to a data lake in your AWS account. This data pipeline architecture is designed for agility. After the data is available in your account, you can implement analytics and generative AI capabilities to obtain advanced business insights from this data. This data helps you understand your business, inventory details, and analytics at scale across all marketplaces.
 

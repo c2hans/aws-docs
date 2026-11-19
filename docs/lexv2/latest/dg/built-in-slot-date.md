@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-date.html
 ---
 
 # AMAZON.Date
-<a name="built-in-slot-date"></a>
 
 Converts words that represent dates into a date format.
 

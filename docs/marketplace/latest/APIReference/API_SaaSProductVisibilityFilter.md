@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_SaaS
 ---
 
 # SaaSProductVisibilityFilter
-<a name="API_SaaSProductVisibilityFilter"></a>
 
 Object that allows filtering on the visibility of the product in the AWS Marketplace.
 

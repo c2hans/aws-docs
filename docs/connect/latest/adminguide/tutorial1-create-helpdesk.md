@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/tutorial1-crea
 ---
 
 # Create an IT help desk in Connect Customer
-<a name="tutorial1-create-helpdesk"></a>
 
 This tutorial shows you how to create an IT Help Desk. It shows how to create an Amazon Lex bot that finds out why the customer is calling. You next create a flow to use the customer's input to route them to the right queue.
 

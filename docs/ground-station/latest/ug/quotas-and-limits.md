@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/quotas-and-limi
 ---
 
 # Quotas and limits
-<a name="quotas-and-limits"></a>
 
  You can view the supported regions, their associated endpoints, and quotas at [AWS Ground Station endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/gs.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetS
 ---
 
 # GetServiceNetworkServiceAssociation
-<a name="API_GetServiceNetworkServiceAssociation"></a>
 
 Retrieves information about the specified association between a service network and a service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/titan-text-embeddings/
 ---
 
 # Amazon Titan Text Embeddings
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/titan-text-embeddings/images/card-background.jpg)
 

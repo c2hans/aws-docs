@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/instance-select.ht
 ---
 
 # Choosing a DLAMI instance type
-<a name="instance-select"></a>
 
 More generally, consider the following when choosing an instance type for a DLAMI.
 + If you're new to deep learning, then an instance with a single GPU might suit your needs.

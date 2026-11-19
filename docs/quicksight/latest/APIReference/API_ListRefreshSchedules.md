@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListR
 ---
 
 # ListRefreshSchedules
-<a name="API_ListRefreshSchedules"></a>
 
 Lists the refresh schedules of a dataset. Each dataset can have up to 5 schedules.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-r
 ---
 
 # Deleting or disabling automation rules
-<a name="automation-rules-delete"></a>
 
 When you delete an automation rule, Compute Optimizer permanently removes it from your account, and it no longer implements recommended actions. Previously implemented actions remain unchanged. To restore the automation rule, you must create a new rule. As an alternative to deletion, you can disable a rule. This retains the rule for future use, but Compute Optimizer won't apply the rule to any matching recommendations until you enable it.
 

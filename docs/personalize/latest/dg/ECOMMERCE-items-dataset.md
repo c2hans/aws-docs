@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/ECOMMERCE-items-da
 ---
 
 # Items dataset requirements (ECOMMERCE domain)
-<a name="ECOMMERCE-items-dataset"></a>
 
  An *Items dataset* stores metadata about your ECOMMERCE items. This might include information such as price, category, and product description for each item. For more information on the types of item data you can import into Amazon Personalize, see [Item metadata](items-datasets.md). For information about general Amazon Personalize schema requirements, such as formatting requirements and available field data types, see [Creating schema JSON files for Amazon Personalize schemas](how-it-works-dataset-schema.md). These requirements apply to all schemas, regardless of domain.
 

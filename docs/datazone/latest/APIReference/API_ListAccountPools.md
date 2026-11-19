@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListAcc
 ---
 
 # ListAccountPools
-<a name="API_ListAccountPools"></a>
 
 Lists existing account pools.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemake
 ---
 
 # SAP ASCS and Cluster Setup
-<a name="sap-nw-pacemaker-sles-setup"></a>
 
 This section covers the following topics.
 

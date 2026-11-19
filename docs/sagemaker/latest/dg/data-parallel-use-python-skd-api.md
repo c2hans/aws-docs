@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-use-py
 ---
 
 # Use the SageMaker AI generic estimator to extend pre-built DLC containers
-<a name="data-parallel-use-python-skd-api"></a>
 
 You can customize SageMaker AI prebuilt containers or extend them to handle any additional functional requirements for your algorithm or model that the prebuilt SageMaker AI Docker image doesn't support. For an example of how you can extend a pre-built container, see [Extend a Prebuilt Container](https://docs.aws.amazon.com/sagemaker/latest/dg/prebuilt-containers-extend.html).
 

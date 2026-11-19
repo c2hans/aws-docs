@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/viajes.htm
 ---
 
 # .viajes
-<a name="viajes"></a>
 
 Used by travel agencies, tour operators, travel blogs, tour companies, rental services, travel bloggers, and travel retailers.
 

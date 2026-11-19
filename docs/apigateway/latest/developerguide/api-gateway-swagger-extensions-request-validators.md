@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-request-validators object
-<a name="api-gateway-swagger-extensions-request-validators"></a>
 
  Defines the supported request validators for the containing API as a map between a validator name and the associated request validation rules. This extension applies to a REST API.
 

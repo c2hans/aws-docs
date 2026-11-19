@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.A
 ---
 
 # Adding a source identifier to an Amazon RDS event notification subscription
-<a name="USER_Events.AddingSource"></a>
 
 You can add a source identifier (the Amazon RDS source generating the event) to an existing subscription.
 

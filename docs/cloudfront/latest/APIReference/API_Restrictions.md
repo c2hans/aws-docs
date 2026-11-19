@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Restr
 ---
 
 # Restrictions
-<a name="API_Restrictions"></a>
 
 A complex type that identifies ways in which you want to restrict distribution of your content.
 

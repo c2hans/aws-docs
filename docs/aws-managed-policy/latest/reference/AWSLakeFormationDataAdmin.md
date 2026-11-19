@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLakeFormationDataAdmin
-<a name="AWSLakeFormationDataAdmin"></a>
 
 **Description**: Grants administrative access to AWS Lake Formation and related services, such as AWS Glue, to manage data lakes
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-vpc-networkin
 ---
 
 # Connecting HealthOmics workflows to a VPC
-<a name="workflows-vpc-networking"></a>
 
 With Amazon Virtual Private Cloud (Amazon VPC), you can launch AWS resources in a private, virtual network that you've defined. You can give your HealthOmics workflows access to resources in your VPC by configuring your runs to use VPC networking mode. When VPC networking is enabled, your runs can access resources within your VPC and connect to external resources over the public internet if your VPC has internet access configured.
 

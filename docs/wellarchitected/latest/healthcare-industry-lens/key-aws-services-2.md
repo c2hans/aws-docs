@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Key AWS services
-<a name="key-aws-services-2"></a>
 
  The AWS service that is key to ensuring reliability is Amazon CloudWatch, which monitors runtime metrics. Other services and features that support the four areas of reliability are as follows:
 

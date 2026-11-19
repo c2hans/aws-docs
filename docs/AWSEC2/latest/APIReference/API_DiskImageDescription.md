@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DiskImage
 ---
 
 # DiskImageDescription
-<a name="API_DiskImageDescription"></a>
 
 Describes a disk image.
 

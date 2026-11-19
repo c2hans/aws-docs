@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/troubleshooting.htm
 ---
 
 # Troubleshooting Elastic Disaster Recovery
-<a name="troubleshooting"></a>
 
 Use this section to troubleshoot issues with AWS Elastic Disaster Recovery. Find the category that matches your issue below.
 

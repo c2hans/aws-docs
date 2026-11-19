@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-js-tut
 ---
 
 # IVS Chat Client Messaging SDK: JavaScript Tutorial Part 2: Messages and Events
-<a name="chat-sdk-js-tutorial-messages-events"></a>
 
 This second (and last) part of the tutorial is broken up into several sections:
 

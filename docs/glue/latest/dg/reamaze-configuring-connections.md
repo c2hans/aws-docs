@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/reamaze-configuring-conne
 ---
 
 # Configuring Re:amaze connections
-<a name="reamaze-configuring-connections"></a>
 
 Re:amaze connections use basic authentication. You store the credential in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

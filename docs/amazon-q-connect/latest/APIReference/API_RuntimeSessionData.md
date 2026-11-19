@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # RuntimeSessionData
-<a name="API_amazon-q-connect_RuntimeSessionData"></a>
 
 The list of key-value pairs that are stored on the session.
 

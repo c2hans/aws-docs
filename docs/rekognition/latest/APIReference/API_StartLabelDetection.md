@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Star
 ---
 
 # StartLabelDetection
-<a name="API_StartLabelDetection"></a>
 
 Starts asynchronous detection of labels in a stored video.
 

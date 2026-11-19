@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_QueueSnaps
 ---
 
 # QueueSnapshotCapacityUsage
-<a name="API_QueueSnapshotCapacityUsage"></a>
 
 The configured capacity usage for a job queue snapshot, including the unit of measure and quantity of resources being used.
 

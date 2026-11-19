@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Solut
 ---
 
 # Amazon CloudWatch solution: Prometheus metric collection on Amazon ECS
-<a name="Solution-Prometheus-On-ECS"></a>
 
 This solution helps you collect Prometheus-compatible metrics from your Amazon ECS tasks without running or scaling your own collection infrastructure. Your tasks expose metrics through Prometheus exporters, and a Amazon CloudWatch managed Prometheus collector discovers the tasks in your VPC through DNS-based service discovery, scrapes their `/metrics` endpoints, and delivers the metrics to CloudWatch. Because Amazon ECS tasks are ephemeral and their IP addresses change, this solution uses AWS Cloud Map service discovery so that the collector always scrapes the current set of tasks. For general information about all CloudWatch observability solutions, see [CloudWatch observability solutions](Monitoring-Solutions.md). For more information about managed collectors, see [Amazon CloudWatch managed Prometheus collectors](managed-prometheus-collectors.md).
 

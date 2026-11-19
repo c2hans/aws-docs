@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # AWS Identity and Access Management template snippets
-<a name="quickref-iam"></a>
 
 This section contains AWS Identity and Access Management template snippets.
 

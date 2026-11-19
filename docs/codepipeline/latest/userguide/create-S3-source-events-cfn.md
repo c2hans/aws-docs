@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/create-S3-
 ---
 
 # Create pipelines with an S3 source enabled for events (CloudFormation template)
-<a name="create-S3-source-events-cfn"></a>
 
 This procedure is for a pipeline where the source bucket has events enabled.
 

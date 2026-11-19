@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsNetw
 ---
 
 # AwsNetworkFirewallRuleGroupDetails
-<a name="API_AwsNetworkFirewallRuleGroupDetails"></a>
 
 Details about an AWS Network Firewall rule group. Rule groups are used to inspect and control network traffic. Stateless rule groups apply to individual packets. Stateful rule groups apply to packets in the context of their traffic flow.
 

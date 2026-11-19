@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/load-testin
 ---
 
 # Implications of load testing
-<a name="implications"></a>
 
 The following sections cover possible side effects, which are the common pitfalls when running load tests.
 

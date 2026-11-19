@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/containe
 ---
 
 # Specifying a container restart policy in an Amazon ECS task definition
-<a name="container-restart-policy-example"></a>
 
 To specify a restart policy for a container in a task definition, within the container definition, specify the `restartPolicy` object. For more information about the `restartPolicy` object, see [Restart policy](task_definition_parameters.md#container_definition_restart_policy).
 

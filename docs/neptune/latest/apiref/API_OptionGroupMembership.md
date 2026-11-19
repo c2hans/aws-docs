@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_OptionGroupMem
 ---
 
 # OptionGroupMembership
-<a name="API_OptionGroupMembership"></a>
 
 Not supported by Neptune.
 

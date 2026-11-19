@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Aircraft Turn Tracking Passive Data Collection
-<a name="aircraft-turn-tracking"></a>
 
 Publication date: **March 10, 2021 ([Diagram history](#turn-tracking-history))**
 

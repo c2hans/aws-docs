@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/supported-capti
 ---
 
 # Reference: Supported captions
-<a name="supported-captions"></a>
 
 This section provides reference information about the captions formats that Elemental Live supports.
 

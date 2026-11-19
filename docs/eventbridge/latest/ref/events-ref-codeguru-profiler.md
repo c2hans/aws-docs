@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-codegu
 ---
 
 # Amazon CodeGuru Profiler events
-<a name="events-ref-codeguru-profiler"></a>
 
 CodeGuru Profiler sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

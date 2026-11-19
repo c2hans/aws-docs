@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/reso
 ---
 
 # Resources
-<a name="resources"></a>
 
 The Amazon EventBridge Schemas REST API includes the following resources.
 

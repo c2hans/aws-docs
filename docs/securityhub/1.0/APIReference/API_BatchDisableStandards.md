@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchDi
 ---
 
 # BatchDisableStandards
-<a name="API_BatchDisableStandards"></a>
 
 Disables the standards specified by the provided `StandardsSubscriptionArns`.
 

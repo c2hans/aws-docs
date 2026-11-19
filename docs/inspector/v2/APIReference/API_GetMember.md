@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetMember.
 ---
 
 # GetMember
-<a name="API_GetMember"></a>
 
 Gets member information for your organization.
 

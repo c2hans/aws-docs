@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateEma
 ---
 
 # UpdateEmailIdentityPolicy
-<a name="API_UpdateEmailIdentityPolicy"></a>
 
 Updates the specified sending authorization policy for the given identity (an email address or a domain). This API returns successfully even if a policy with the specified name does not exist.
 

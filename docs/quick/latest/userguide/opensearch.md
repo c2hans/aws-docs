@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/opensearch.html
 ---
 
 # Authorizing connections to Amazon OpenSearch Service
-<a name="opensearch"></a>
 
 |  |
 | --- |

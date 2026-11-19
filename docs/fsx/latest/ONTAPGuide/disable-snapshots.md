@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/disable-snapshots.
 ---
 
 # Disabling automatic snapshots
-<a name="disable-snapshots"></a>
 
 Automatic snapshots are enabled by the default snapshot policy for volumes in your FSx for ONTAP file system. If you don't need snapshots of your data (for example, if you're using test data), you can disable snapshots by setting the volume's [snapshot policy](snapshots-ontap.md#snapshot-policies) to `none` using the AWS Management Console, AWS CLI and API, and the ONTAP CLI, as described in the following procedures.
 

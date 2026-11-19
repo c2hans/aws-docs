@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StringL
 ---
 
 # StringListConfigurationOptions
-<a name="API_StringListConfigurationOptions"></a>
 
  The options for customizing a security control parameter that is a list of strings.
 

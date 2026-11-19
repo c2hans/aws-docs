@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Im
 ---
 
 # ImportAssetsFromRedshiftDataSharesRequestDetails
-<a name="API_ImportAssetsFromRedshiftDataSharesRequestDetails"></a>
 
 Details from an import from Amazon Redshift datashare request.
 

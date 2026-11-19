@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Specify the AWS Region for the AWS Tools for PowerShell
-<a name="pstools-installing-specifying-region"></a>
 
 There are two ways to specify the AWS Region to use when running AWS Tools for PowerShell commands:
 + Use the `-Region` common parameter on individual commands.

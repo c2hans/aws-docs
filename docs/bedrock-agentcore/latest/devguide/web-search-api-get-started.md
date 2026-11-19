@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/web-se
 ---
 
 # Get started with AgentCore Web Search
-<a name="web-search-api-get-started"></a>
 
 To search the web with AgentCore Web Search, grant a principal permission to call the `InvokeWebSearch` API, and then call it with the AWS SDKs or the AWS Command Line Interface (AWS CLI).
 

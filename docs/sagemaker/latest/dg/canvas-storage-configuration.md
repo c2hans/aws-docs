@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-storage-confi
 ---
 
 # Configure your Amazon S3 storage
-<a name="canvas-storage-configuration"></a>
 
 When you set up your SageMaker Canvas application, the default storage location for model artifacts, datasets, and other application data is an Amazon S3 bucket that Canvas creates. This default Amazon S3 bucket follows the naming pattern `s3://sagemaker-{{{Region}}}-{{{your-account-id}}}` and exists in the same Region as your Canvas application. However, you can customize the storage location and specify your own Amazon S3 bucket for storing Canvas application data. You might want to use your own Amazon S3 bucket for storing application data for any of the following reasons:
 + Your organization has internal naming conventions for Amazon S3 buckets.

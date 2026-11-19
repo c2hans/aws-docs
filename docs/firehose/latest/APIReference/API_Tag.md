@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Tag.htm
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Metadata that you can assign to a Firehose stream, consisting of a key-value pair.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-add-per
 ---
 
 # Add permissions to the token exchange service (TES) role
-<a name="gs-add-permissions"></a>
 
 Grant the token exchange service (TES) role to the device that assumes permissions to look at the secrets. This is necessary for the AWS Secrets Manager AWS IoT Greengrass component to work correctly.
 

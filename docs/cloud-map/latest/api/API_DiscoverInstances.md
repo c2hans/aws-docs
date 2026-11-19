@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstanc
 ---
 
 # DiscoverInstances
-<a name="API_DiscoverInstances"></a>
 
 Discovers registered instances for a specified namespace and service. You can use `DiscoverInstances` to discover instances for any type of namespace. `DiscoverInstances` returns a randomized list of instances allowing customers to distribute traffic evenly across instances. For public and private DNS namespaces, you can also use DNS queries to discover instances.
 

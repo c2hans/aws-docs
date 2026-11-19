@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-security
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Security model and parent instance trust assumptions
-<a name="sandboxing-security-model"></a>
 
 Isolated and confidential pods run your workload inside a Nitro Sandbox, which provides hardware-enforced isolation from the parent instance. However, the parent instance still controls resources that the sandbox depends on: CPU, memory, network, and storage. This page describes what the parent instance can and cannot do, and what assumptions your workload code should make.
 

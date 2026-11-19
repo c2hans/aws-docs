@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetCatalogs.html
 ---
 
 # GetCatalogs
-<a name="API_GetCatalogs"></a>
 
 Retrieves all catalogs defined in a catalog in the AWS Glue Data Catalog. For a Redshift-federated catalog use case, this operation returns the list of catalogs mapped to Redshift databases in the Redshift namespace catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-timestream.h
 ---
 
 # Amazon Athena Timestream connector
-<a name="connectors-timestream"></a>
 
 The Amazon Athena Timestream connector enables Amazon Athena to communicate with [Amazon Timestream](https://aws.amazon.com/timestream/), making your time series data accessible through Amazon Athena. You can optionally use AWS Glue Data Catalog as a source of supplemental metadata.
 

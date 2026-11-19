@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Viewing your Accelerate Alarm Manager configuration
-<a name="acc-mem-view-am"></a>
 
 Both the **AMSManagedAlarms** and **CustomerManagedAlarms** can be reviewed in AppConfig with [GetConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_GetConfiguration.html).
 

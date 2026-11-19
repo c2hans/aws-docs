@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/hcx-optimize-verify
 ---
 
 # Optimize and verify HCX migration
-<a name="hcx-optimize-verify"></a>
 
 After you prepare your Amazon Elastic VMware Service environment, you can turn on optional VMware Hybrid Cloud Extension (HCX) features that improve migration traffic, and then verify HCX connectivity. You do these steps in HCX and NSX, using the Broadcom documentation for each feature.
 

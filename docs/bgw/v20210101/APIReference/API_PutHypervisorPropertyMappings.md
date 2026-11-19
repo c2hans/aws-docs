@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_PutHyperv
 ---
 
 # PutHypervisorPropertyMappings
-<a name="API_PutHypervisorPropertyMappings"></a>
 
 This action sets the property mappings for the specified hypervisor. A hypervisor property mapping displays the relationship of entity properties available from the hypervisor to the properties available in AWS.
 

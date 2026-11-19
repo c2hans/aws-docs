@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.h
 ---
 
 # AWS CLI
-<a name="aws-cli"></a>
 
 The AWS CLI provides commands to set up AI coding agents with the Agent Toolkit for AWS. You can manage installed AWS skills from the command line. The CLI works with any AI coding agent that the toolkit detects on your system, including Kiro, Cursor, Claude Code, and Devin.
 

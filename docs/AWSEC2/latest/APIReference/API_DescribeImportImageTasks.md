@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeImportImageTasks
-<a name="API_DescribeImportImageTasks"></a>
 
 Displays details about an import virtual machine or import snapshot tasks that are already created.
 

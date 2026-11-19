@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Covera
 ---
 
 # CoverageResourceDetails
-<a name="API_CoverageResourceDetails"></a>
 
 Information about the resource for each individual EKS cluster.
 

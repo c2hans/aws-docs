@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.DETERM
 ---
 
 # DETERMINISTIC\_DECRYPT
-<a name="recipe-actions.DETERMINISTIC_DECRYPT"></a>
 
 Decrypts data encrypted with DETERMINISTIC\_ENCRYPT.
 

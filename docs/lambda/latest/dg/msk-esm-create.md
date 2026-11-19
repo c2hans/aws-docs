@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/msk-esm-create.html
 ---
 
 # Creating a Lambda event source mapping for an Amazon MSK event source
-<a name="msk-esm-create"></a>
 
 To create an event source mapping, you can use the Lambda console, the [AWS Command Line Interface (CLI)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), or an [AWS SDK](https://aws.amazon.com/getting-started/tools-sdks/).
 

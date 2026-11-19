@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 ---
 
 # Content Domain 5: Incident and Event Response
-<a name="devops-engineer-professional-02-domain5"></a>
 
 ## Task Statement 5.1: Manage event sources to process, notify, and take action in response to events.
 <a name="dop-02-task-5-1"></a>

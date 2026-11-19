@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Replication-Related-FAQ.ht
 ---
 
 # Replication questions
-<a name="Replication-Related-FAQ"></a>
 
 This section contains answers to questions about data replication.
 

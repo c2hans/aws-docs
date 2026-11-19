@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BillingConductor::CustomLineItem PresentationDetails
-<a name="aws-properties-billingconductor-customlineitem-presentationdetails"></a>
 
 An object that defines how custom line item charges are presented in the bill, containing specifications for service presentation.
 

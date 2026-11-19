@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/integrate-infoblox-ipam.
 ---
 
 # Integrate VPC IPAM with Infoblox infrastructure
-<a name="integrate-infoblox-ipam"></a>
 
 Amazon VPC IPAM and Infoblox integration connects your AWS VPC IP Address Manager (IPAM) with [Infoblox](https://www.infoblox.com/), enabling you to manage AWS IP addresses through your existing Infoblox workflows while gaining cloud-native AWS capabilities.
 

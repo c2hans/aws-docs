@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-integration.requestTemplates object
-<a name="api-gateway-swagger-extensions-integration-requestTemplates"></a>
 
  Specifies mapping templates for a request payload of the specified MIME types.
 

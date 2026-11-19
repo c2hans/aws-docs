@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorial-s3-ba
 ---
 
 # Tutorial: Batch-transcoding videos with S3 Batch Operations
-<a name="tutorial-s3-batchops-lambda-mediaconvert-video"></a>
 
 Video consumers use devices of all shapes, sizes, and vintages to enjoy media content. This wide array of devices presents a challenge for content creators and distributors. Instead of being in a one-size-fits-all format, videos must be converted so that they can span a broad range of sizes, formats, and bitrates. This conversion task is even more challenging when you have a large number of videos that must be converted.
 

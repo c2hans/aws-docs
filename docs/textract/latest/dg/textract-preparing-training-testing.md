@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-preparing-tr
 ---
 
 # Preparing training and testing datasets
-<a name="textract-preparing-training-testing"></a>
 
 **Training and Testing Datasets**
 The training dataset is the basis for creating an adapter. You must provide an annotated training dataset to train an adapter. This training dataset consists of user uploaded document pages, queries, and annotated query answers. The model learns from this dataset to improve its performance on the type of documents you provide.

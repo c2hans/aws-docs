@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentEnrichmentConfiguration
-<a name="API_DocumentEnrichmentConfiguration"></a>
 
 Provides the configuration information for altering document metadata and content during the document ingestion process.
 

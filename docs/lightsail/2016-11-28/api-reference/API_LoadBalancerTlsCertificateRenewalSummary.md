@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_L
 ---
 
 # LoadBalancerTlsCertificateRenewalSummary
-<a name="API_LoadBalancerTlsCertificateRenewalSummary"></a>
 
 Contains information about the status of Lightsail's managed renewal for the certificate.
 

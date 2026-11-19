@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Language basics
-<a name="functions-jsonata-basics"></a>
 
 ## Path navigation
 <a name="functions-jsonata-dot-notation"></a>

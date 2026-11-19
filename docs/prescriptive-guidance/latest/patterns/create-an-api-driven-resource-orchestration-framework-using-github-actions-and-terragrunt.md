@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create an API-driven resource orchestration framework using GitHub Actions and Terragrunt
-<a name="create-an-api-driven-resource-orchestration-framework-using-github-actions-and-terragrunt"></a>
 
 *Tamilselvan P, Abhigyan Dandriyal, Sandeep Gawande, and Akash Kumar, Amazon Web Services*
 

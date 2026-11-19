@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ScopedActions
-<a name="API_ScopedActions"></a>
 
 A group of actions within an access grant, together with the resource scopes and context conditions that apply to exactly those actions.
 

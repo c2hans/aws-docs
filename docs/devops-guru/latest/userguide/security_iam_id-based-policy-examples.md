@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/userguide/security_ia
 End of support notice: Amazon DevOps Guru will stop accepting new customers on October 29, 2026. Current customers will not be impacted and can continue using Amazon DevOps Guru until September 30, 2027. After September 30, 2027 you will no longer be able to access Amazon DevOps Guru. For more information, see [Amazon DevOps Guru end of support](devops-guru-end-of-support.md).
 
 # Identity-based policies for Amazon DevOps Guru
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify DevOps Guru resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

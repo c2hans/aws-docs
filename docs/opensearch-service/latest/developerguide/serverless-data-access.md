@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Data access control for Amazon OpenSearch Serverless
-<a name="serverless-data-access"></a>
 
 With data access control in Amazon OpenSearch Serverless, you can allow users to access collections and indexes, regardless of their access mechanism or network source. You can provide access to IAM roles and [SAML identities](serverless-saml.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # IaC tools
-<a name="iac-tools"></a>
 
 This guide explores five different IaC tools that can be used to provision AWS resources. It compares these tools and guides you through the process of choosing one that meets the needs of your team, organization, and cloud talent. The key is to align the chosen IaC tool with your organization goals and the skillsets of your developers.
 

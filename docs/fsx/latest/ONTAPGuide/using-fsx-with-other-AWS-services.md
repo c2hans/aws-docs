@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/using-fsx-with-oth
 ---
 
 # Accessing data from other AWS services
-<a name="using-fsx-with-other-AWS-services"></a>
 
 In addition to Amazon EC2, you can use other AWS services with your volumes to access your data.
 

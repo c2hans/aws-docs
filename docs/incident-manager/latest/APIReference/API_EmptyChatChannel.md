@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # EmptyChatChannel
-<a name="API_EmptyChatChannel"></a>
 
 Used to remove the chat channel from an incident record or response plan.
 

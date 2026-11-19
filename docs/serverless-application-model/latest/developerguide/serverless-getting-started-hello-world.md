@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Tutorial: Deploy a Hello World application with AWS SAM
-<a name="serverless-getting-started-hello-world"></a>
 
 In this tutorial, you use the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) to complete the following:
 + Initialize, build, and deploy a sample **Hello World** application.

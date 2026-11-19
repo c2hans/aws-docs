@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/pro.html
 ---
 
 # .pro
-<a name="pro"></a>
 
 Used by licensed and credentialed professionals and professional organizations.
 

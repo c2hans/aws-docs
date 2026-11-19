@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pinpoint::Segment SegmentGroups
-<a name="aws-properties-pinpoint-segment-segmentgroups"></a>
 
 Specifies the set of segment criteria to evaluate when handling segment groups for the segment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-explore-data-
 ---
 
 # Explore your data using visualization techniques
-<a name="canvas-explore-data-visualization"></a>
 
 **Note**
 You can only use SageMaker Canvas visualizations for models built on tabular datasets. Multi-category text prediction models are also excluded.

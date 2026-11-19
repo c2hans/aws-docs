@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Batch
 ---
 
 # BatchGetDeploymentGroups
-<a name="API_BatchGetDeploymentGroups"></a>
 
 Gets information about one or more deployment groups.
 

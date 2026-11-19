@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_D
 ---
 
 # DeleteDedicatedIpPool
-<a name="API_DeleteDedicatedIpPool"></a>
 
 Delete a dedicated IP pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ViewSear
 ---
 
 # ViewSearchCriteria
-<a name="API_ViewSearchCriteria"></a>
 
 Defines the search criteria for filtering views.
 
@@ -12,12 +11,12 @@ Defines the search criteria for filtering views.
 
  ** AndConditions **   <a name="connect-Type-ViewSearchCriteria-AndConditions"></a>
 A list of conditions that must all be satisfied.
-Type: Array of [ViewSearchCriteria](#API_ViewSearchCriteria) objects
+Type: Array of [ViewSearchCriteria](API_ViewSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-ViewSearchCriteria-OrConditions"></a>
 A list of conditions to be met, where at least one condition must be satisfied.
-Type: Array of [ViewSearchCriteria](#API_ViewSearchCriteria) objects
+Type: Array of [ViewSearchCriteria](API_ViewSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-ViewSearchCriteria-StringCondition"></a>

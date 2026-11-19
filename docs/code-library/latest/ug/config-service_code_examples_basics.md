@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/config-service_co
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for AWS Config using AWS SDKs
-<a name="config-service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of AWS Config with AWS SDKs.
 

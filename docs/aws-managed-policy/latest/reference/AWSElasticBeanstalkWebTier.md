@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkWebTier
-<a name="AWSElasticBeanstalkWebTier"></a>
 
 **Description**: Provide the instances in your web server environment access to upload log files to Amazon S3.
 

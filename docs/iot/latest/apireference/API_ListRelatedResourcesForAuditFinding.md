@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListRelatedR
 ---
 
 # ListRelatedResourcesForAuditFinding
-<a name="API_ListRelatedResourcesForAuditFinding"></a>
 
 The related resources of an Audit finding. The following resources can be returned from calling this API:
 + DEVICE\_CERTIFICATE

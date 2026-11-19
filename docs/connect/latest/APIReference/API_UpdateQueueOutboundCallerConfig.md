@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQueueOutboundCallerConfig
-<a name="API_UpdateQueueOutboundCallerConfig"></a>
 
 Updates the outbound caller ID name, number, and outbound whisper flow for a specified queue.
 

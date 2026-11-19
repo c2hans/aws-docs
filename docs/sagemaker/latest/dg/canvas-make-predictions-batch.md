@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-make-predicti
 ---
 
 # Batch predictions in SageMaker Canvas
-<a name="canvas-make-predictions-batch"></a>
 
 Make batch predictions when you have an entire dataset for which you’d like to generate predictions. Amazon SageMaker Canvas supports batch predictions for datasets up to PBs in size.
 

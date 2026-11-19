@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListFoun
 ---
 
 # ListFoundationModelAgreementOffers
-<a name="API_ListFoundationModelAgreementOffers"></a>
 
 Get the offers associated with the specified model.
 

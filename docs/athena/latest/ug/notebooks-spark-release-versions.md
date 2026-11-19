@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-release
 ---
 
 # Release versions
-<a name="notebooks-spark-release-versions"></a>
 
 Amazon Athena for Apache Spark offers the following release versions:
 

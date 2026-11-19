@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDashboard
-<a name="API_DescribeDashboard"></a>
 
 Provides a summary for a dashboard.
 

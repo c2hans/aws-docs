@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_G
 ---
 
 # GetDataCellsFilter
-<a name="API_GetDataCellsFilter"></a>
 
 Returns a data cells filter.
 

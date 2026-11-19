@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/troubleshootin
 ---
 
 # Troubleshooting: on-premises gateway issues
-<a name="troubleshooting-on-premises-gateway-issues"></a>
 
 You can find information following about typical issues that you might encounter working with your on-premises gateways, and how to allow Support to connect to your gateway to assist with troubleshooting.
 

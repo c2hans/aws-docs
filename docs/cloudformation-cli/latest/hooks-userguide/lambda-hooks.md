@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Lambda Hooks
-<a name="lambda-hooks"></a>
 
 To use an AWS Lambda Hook in your account, you must first *activate* the Hook for the account and Region where you want to use it. Activating a Hook makes it usable in stack operations in the account and Region where it's activated.
 

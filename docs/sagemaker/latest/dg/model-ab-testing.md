@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-ab-testing.htm
 ---
 
 # Testing models with production variants
-<a name="model-ab-testing"></a>
 
  In production ML workflows, data scientists and engineers frequently try to improve performance using various methods, such as [Automatic model tuning with SageMaker AI](automatic-model-tuning.md), training on additional or more-recent data, improving feature selection, using better updated instances and serving containers. You can use production variants to compare your models, instances and containers, and choose the best performing candidate to respond to inference requests.
 

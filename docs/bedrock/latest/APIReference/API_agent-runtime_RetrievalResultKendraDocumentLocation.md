@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalResultKendraDocumentLocation
-<a name="API_agent-runtime_RetrievalResultKendraDocumentLocation"></a>
 
 The location of a result in Amazon Kendra.
 

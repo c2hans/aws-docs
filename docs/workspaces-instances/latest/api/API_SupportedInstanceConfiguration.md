@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Supp
 ---
 
 # SupportedInstanceConfiguration
-<a name="API_SupportedInstanceConfiguration"></a>
 
 Represents a single valid configuration combination that an instance type supports, combining tenancy, platform type, and billing mode into one complete configuration specification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
 The structure of a data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Neptune Analytics
-<a name="amazonneptuneanalytics"></a>
 
 Amazon Neptune Analytics provides the following APIs for data retrieval.
 

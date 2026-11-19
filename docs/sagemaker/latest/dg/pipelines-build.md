@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-build.html
 ---
 
 # Pipelines actions
-<a name="pipelines-build"></a>
 
 You can use either the Amazon SageMaker Pipelines Python SDK or the drag-and-drop visual designer in Amazon SageMaker Studio to author, view, edit, execute, and monitor your ML workflows.
 

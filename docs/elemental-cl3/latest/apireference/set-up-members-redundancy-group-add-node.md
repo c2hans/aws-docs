@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST: Add a Node to a Redundancy Group
-<a name="set-up-members-redundancy-group-add-node"></a>
 
 Add a node to the specified redundancy group and assign the node’s role as active or backup. The redundancy group must already exist.
 

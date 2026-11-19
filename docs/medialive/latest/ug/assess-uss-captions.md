@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/assess-uss-captions.
 ---
 
 # Assess captions
-<a name="assess-uss-captions"></a>
 
 If you plan to include captions in an output group, you must determine if MediaLive can use the captions format in the source to produce the captions format that you want in the output.
 

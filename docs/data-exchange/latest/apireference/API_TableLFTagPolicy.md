@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ta
 ---
 
 # TableLFTagPolicy
-<a name="API_TableLFTagPolicy"></a>
 
 The LF-tag policy for a table resource.
 

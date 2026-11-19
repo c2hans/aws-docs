@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # RecommendationReportDetails
-<a name="API_RecommendationReportDetails"></a>
 
  Contains detailed information about a recommendation report.
 

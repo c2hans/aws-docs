@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Access
 ---
 
 # S3AccessControlPolicy
-<a name="API_control_S3AccessControlPolicy"></a>
 
 ## Contents
 <a name="API_control_S3AccessControlPolicy_Contents"></a>

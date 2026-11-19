@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 ---
 
 # Get started with the API
-<a name="getting-started-api"></a>
 
 This section describes how to set up your environment to make Amazon Bedrock requests through the AWS API. AWS offers the following tools to streamline your experience:
 + AWS Command Line Interface (AWS CLI)

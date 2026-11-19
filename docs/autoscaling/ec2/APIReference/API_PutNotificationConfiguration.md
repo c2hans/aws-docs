@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutNoti
 ---
 
 # PutNotificationConfiguration
-<a name="API_PutNotificationConfiguration"></a>
 
 Configures an Auto Scaling group to send notifications when specified events take place. Subscribers to the specified topic can have messages delivered to an endpoint such as a web server or an email address.
 

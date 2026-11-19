@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Oracle
-<a name="migration-migration-patterns-by-workload-oracle-pattern-list"></a>
 
 **Topics**
 + [Convert VARCHAR2(1) data type for Oracle to Boolean data type for Amazon Aurora PostgreSQL](convert-varchar2-1-data-type-for-oracle-to-boolean-data-type-for-amazon-aurora-postgresql.md)
@@ -20,7 +19,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 + [Migrate an Oracle database to Amazon RDS for Oracle by using Oracle GoldenGate flat file adapters](migrate-an-oracle-database-to-amazon-rds-for-oracle-by-using-oracle-goldengate-flat-file-adapters.md)
 + [Migrate an Oracle Database to Amazon Redshift using AWS DMS and AWS SCT](migrate-an-oracle-database-to-amazon-redshift-using-aws-dms-and-aws-sct.md)
 + [Migrate an Oracle database to Aurora PostgreSQL using AWS DMS and AWS SCT](migrate-an-oracle-database-to-aurora-postgresql-using-aws-dms-and-aws-sct.md)
-+ [Migrate an Oracle JD Edwards EnterpriseOne database to AWS by using Oracle Data Pump and AWS DMS](migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms.md)
 + [Migrate an Oracle partitioned table to PostgreSQL by using AWS DMS](migrate-an-oracle-partitioned-table-to-postgresql-by-using-aws-dms.md)
 + [Migrate an Oracle PeopleSoft database to AWS by using AWS DMS](migrate-an-oracle-peoplesoft-database-to-aws-by-using-aws-dms.md)
 + [Migrate data from an on-premises Oracle database to Aurora PostgreSQL](migrate-data-from-an-on-premises-oracle-database-to-aurora-postgresql.md)

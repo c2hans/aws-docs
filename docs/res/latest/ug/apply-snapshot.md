@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/res/latest/ug/apply-snapshot.html
 End of development notice: AWS is discontinuing development of Research and Engineering Studio on AWS (RES). 2026.09 is the final release, supported through September 30, 2027. RES remains open source and keeps running in your account. For more information, see [RES end of support](res-end-of-support.md).
 
 # Apply a snapshot
-<a name="apply-snapshot"></a>
 
 Once you have created a snapshot of an environment, you can apply that snapshot to a new environment to migrate data. You will need to add a new policy to the bucket allowing the environment to read the snapshot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # Client
-<a name="structures-Client"></a>
 
 Object specifying the client software.
 

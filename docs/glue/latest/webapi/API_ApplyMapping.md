@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ApplyMapping.html
 ---
 
 # ApplyMapping
-<a name="API_ApplyMapping"></a>
 
 Specifies a transform that maps data property keys in the data source to data property keys in the data target. You can rename keys, modify the data types for keys, and choose which keys to drop from the dataset.
 

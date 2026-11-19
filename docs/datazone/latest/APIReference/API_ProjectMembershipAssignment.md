@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Project
 ---
 
 # ProjectMembershipAssignment
-<a name="API_ProjectMembershipAssignment"></a>
 
 A map of user or group profiles to designations that need to be assigned in the project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # UserSummary
-<a name="API_UserSummary"></a>
 
 A structure containing a subset of the fields of a user object from a directory.
 

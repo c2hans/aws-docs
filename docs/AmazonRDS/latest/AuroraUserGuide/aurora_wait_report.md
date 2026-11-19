@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_wait\_report
-<a name="aurora_wait_report"></a>
 
 This function shows wait event activity over a period of time.
 

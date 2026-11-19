@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeEngineDefaultClusterParameters
-<a name="API_DescribeEngineDefaultClusterParameters"></a>
 
 Returns the default engine and system parameter information for the cluster database engine.
 

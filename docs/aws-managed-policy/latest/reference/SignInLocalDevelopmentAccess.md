@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sign
 ---
 
 # SignInLocalDevelopmentAccess
-<a name="SignInLocalDevelopmentAccess"></a>
 
 **Description**: Provides permissions for programmatic access to AWS through the AWS Sign-in service, including OAuth2 token creation for developer tools and applications.
 

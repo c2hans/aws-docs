@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelP
 ---
 
 # ModelPackageContainerDefinition
-<a name="API_ModelPackageContainerDefinition"></a>
 
 Describes the Docker container for the model package.
 

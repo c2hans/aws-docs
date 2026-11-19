@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/nova-customization-s
 ---
 
 # Nova Customization SDK
-<a name="nova-customization-sdk"></a>
 
 The Amazon Nova Customization SDK is a comprehensive Python SDK for customizing Amazon Nova models across their entire lifecycle—from training and evaluation to deployment and inference.
 

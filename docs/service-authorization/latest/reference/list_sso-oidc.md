@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS IAM Identity Center OIDC service
-<a name="list_sso-oidc"></a>
 
 AWS IAM Identity Center OIDC service (service prefix: `sso-oauth`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

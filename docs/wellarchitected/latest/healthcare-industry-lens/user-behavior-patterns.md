@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # User behavior patterns
-<a name="user-behavior-patterns"></a>
 
 | HCL\_SUS2. How do you match workload infrastructure to user behavior patterns? |
 | --- |

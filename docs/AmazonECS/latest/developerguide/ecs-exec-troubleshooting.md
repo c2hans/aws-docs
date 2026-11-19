@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-exec
 ---
 
 # Troubleshoot Amazon ECS Exec issues
-<a name="ecs-exec-troubleshooting"></a>
 
 The following are troubleshooting notes to help diagnose why you may be getting an error when using ECS Exec.
 

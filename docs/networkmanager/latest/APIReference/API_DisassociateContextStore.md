@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DisassociateContextStore
-<a name="API_DisassociateContextStore"></a>
 
 Disassociates a transit gateway from a context store. The association must be in the `ASSOCIATED` or `FAILED` state. The association stays in the `DISASSOCIATING` state until the disassociation completes.
 

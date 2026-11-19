@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultReu
 ---
 
 # ResultReuseByAgeConfiguration
-<a name="API_ResultReuseByAgeConfiguration"></a>
 
 Specifies whether previous query results are reused, and if so, their maximum age.
 

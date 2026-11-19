@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UntagResource
-<a name="API_agent_UntagResource"></a>
 
 Remove tags from a resource.
 

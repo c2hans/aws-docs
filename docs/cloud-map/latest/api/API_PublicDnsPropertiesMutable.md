@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_PublicDnsProper
 ---
 
 # PublicDnsPropertiesMutable
-<a name="API_PublicDnsPropertiesMutable"></a>
 
 DNS properties for the public DNS namespace.
 

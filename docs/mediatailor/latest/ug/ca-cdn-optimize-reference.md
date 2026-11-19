@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ca-cdn-optimize-re
 ---
 
 # Complete channel assembly CDN optimization
-<a name="ca-cdn-optimize-reference"></a>
 
 For detailed CDN optimization guidance specific to channel assembly implementations, including caching strategies, request routing configuration, performance benchmarks, and advanced optimization techniques, see [CDN performance optimization](cdn-optimization.md).
 

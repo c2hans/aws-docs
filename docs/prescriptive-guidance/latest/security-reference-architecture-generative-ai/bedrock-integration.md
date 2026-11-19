@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Integrating a traditional cloud workload with Amazon Bedrock
-<a name="bedrock-integration"></a>
 
 |  |
 | --- |

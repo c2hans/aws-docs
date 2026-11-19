@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CallbackTimedOutDe
 ---
 
 # CallbackTimedOutDetails
-<a name="API_CallbackTimedOutDetails"></a>
 
 Contains details about a callback operation that timed out, including timeout duration and any partial results.
 

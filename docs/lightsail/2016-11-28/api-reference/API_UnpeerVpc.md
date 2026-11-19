@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_U
 ---
 
 # UnpeerVpc
-<a name="API_UnpeerVpc"></a>
 
 Unpeers the Lightsail VPC from the user's default VPC.
 

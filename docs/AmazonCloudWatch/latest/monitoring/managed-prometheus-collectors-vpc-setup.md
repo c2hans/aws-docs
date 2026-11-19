@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manag
 ---
 
 # VPC-connected managed collector
-<a name="managed-prometheus-collectors-vpc-setup"></a>
 
 The VPC-connected Amazon CloudWatch managed Prometheus collector scrapes Prometheus-compatible metrics from any resource reachable within your VPC — Amazon EC2 instances and Amazon ECS tasks. You provide subnets and a security group; the collector creates elastic network interfaces (ENIs) and scrapes Prometheus `/metrics` endpoints according to your configuration.
 

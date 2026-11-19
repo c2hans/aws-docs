@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/work-with-s
 ---
 
 # Working with standard accelerators in AWS Global Accelerator
-<a name="work-with-standard-accelerators"></a>
 
 This chapter includes procedures and recommendations for creating standard accelerators in AWS Global Accelerator, including configuring accelerators, listeners, endpoint groups, and endpoints. With a standard accelerator, Global Accelerator chooses the closest healthy endpoint for your traffic.
 

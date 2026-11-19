@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/rust_iot_code_exa
 ---
 
 # AWS IoT examples using SDK for Rust
-<a name="rust_iot_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Rust with AWS IoT.
 

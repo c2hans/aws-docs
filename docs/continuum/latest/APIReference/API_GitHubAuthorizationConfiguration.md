@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GitHub
 ---
 
 # GitHubAuthorizationConfiguration
-<a name="API_GitHubAuthorizationConfiguration"></a>
 
 Write-only OAuth credentials used to authorize a GitHub.com integration. Not stored or returned after creation.
 

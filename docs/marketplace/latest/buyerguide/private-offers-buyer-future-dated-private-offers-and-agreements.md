@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-of
 ---
 
 # Future dated agreements and private offers in AWS Marketplace
-<a name="private-offers-buyer-future-dated-private-offers-and-agreements"></a>
 
 With future dated agreements (FDA) in AWS Marketplace, you can subscribe to products where the product usage begins at a future date. You can manage when you buy a product *independently* from when you pay for, and when you use the product.
 

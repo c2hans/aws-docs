@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Stag
 ---
 
 # Stage
-<a name="API_Stage"></a>
 
 Object specifying a stage.
 

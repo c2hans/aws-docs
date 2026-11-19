@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # UpdateLicenseConfiguration
-<a name="API_UpdateLicenseConfiguration"></a>
 
 Modifies the attributes of an existing license configuration.
 

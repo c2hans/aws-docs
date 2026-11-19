@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # ListTagsForResource
-<a name="API_iotdeviceadvisor_ListTagsForResource"></a>
 
 Lists the tags attached to an IoT Device Advisor resource.
 

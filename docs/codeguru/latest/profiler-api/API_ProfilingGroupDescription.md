@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Profili
 ---
 
 # ProfilingGroupDescription
-<a name="API_ProfilingGroupDescription"></a>
 
  Contains information about a profiling group.
 

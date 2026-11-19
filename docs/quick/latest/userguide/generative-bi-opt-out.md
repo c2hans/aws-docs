@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/generative-bi-opt
 ---
 
 # Opting out of Generative BI
-<a name="generative-bi-opt-out"></a>
 
 Quick accounts are charged if Generative BI is active in the account. Generative BI is considered active if your account uses any of the following capabilities:
 + Pro users

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/managin
 ---
 
 # Manage geofence collection resources with Amazon Location
-<a name="managing-geofence-collections"></a>
 
 Manage your geofence collections using the Amazon Location console, the AWS CLI, or the Amazon Location APIs.
 

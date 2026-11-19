@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Creat
 ---
 
 # CreatePolicy
-<a name="API_CreatePolicy"></a>
 
 Creates a resilience policy that defines availability and disaster recovery requirements.
 

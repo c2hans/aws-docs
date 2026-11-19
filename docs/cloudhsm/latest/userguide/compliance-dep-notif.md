@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/compliance-dep
 ---
 
 # Deprecation Notifications
-<a name="compliance-dep-notif"></a>
 
 From time to time, AWS CloudHSM may deprecate functionality in order to remain compliant with the requirements of FIPS 140, PCI-DSS, PCI-PIN, PCI-3DS, SOC2, or because of end-of-support hardware. This page lists the changes that currently apply.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateS
 ---
 
 # UpdateSecurityControl
-<a name="API_UpdateSecurityControl"></a>
 
  Updates the properties of a security control.
 

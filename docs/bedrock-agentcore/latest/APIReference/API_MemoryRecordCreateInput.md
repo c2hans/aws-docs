@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryRecordCreateInput
-<a name="API_MemoryRecordCreateInput"></a>
 
 Input structure to create a new memory record.
 

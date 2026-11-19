@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-dashboards.
 ---
 
 # Exploring interactive dashboards in AWS Quick Sight
-<a name="using-dashboards"></a>
 
 |  |
 | --- |

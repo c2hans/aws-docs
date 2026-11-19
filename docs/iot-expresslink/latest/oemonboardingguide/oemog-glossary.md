@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguid
 ---
 
 # Appendix D - Glossary
-<a name="oemog-glossary"></a>
 
  This is a glossary, containing all the terms used in this guide.
 

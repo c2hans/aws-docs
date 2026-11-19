@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Upda
 ---
 
 # UpdateAccessLogSubscription
-<a name="API_UpdateAccessLogSubscription"></a>
 
 Updates the specified access log subscription.
 

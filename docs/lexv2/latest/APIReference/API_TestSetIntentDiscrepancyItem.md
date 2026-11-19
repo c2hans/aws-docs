@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetInt
 ---
 
 # TestSetIntentDiscrepancyItem
-<a name="API_TestSetIntentDiscrepancyItem"></a>
 
 Contains information about discrepancy in an intent information between the test set and the bot.
 

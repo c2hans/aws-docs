@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # RiskExceptionConfigurationType
-<a name="API_RiskExceptionConfigurationType"></a>
 
 Exceptions to the risk evaluation configuration, including always-allow and always-block IP address ranges.
 

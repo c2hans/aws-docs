@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_InputConfigu
 ---
 
 # InputConfiguration
-<a name="API_InputConfiguration"></a>
 
  The transport parameters that are associated with an incoming media stream.
 

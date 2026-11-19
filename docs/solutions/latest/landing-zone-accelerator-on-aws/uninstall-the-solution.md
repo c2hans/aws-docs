@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 You can uninstall the Landing Zone Accelerator on AWS solution from the AWS Management Console or by using the AWS Command Line Interface. You must manually delete the Amazon S3 buckets and CloudFormation stacks created by this solution. AWS Solutions Implementations don’t automatically delete these resources in case you have stored data to retain.
 

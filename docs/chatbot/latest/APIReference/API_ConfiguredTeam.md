@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_Configur
 ---
 
 # ConfiguredTeam
-<a name="API_ConfiguredTeam"></a>
 
 A Microsoft Teams team that is authorized with Amazon Q Developer.
 

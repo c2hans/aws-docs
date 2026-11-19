@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Discovering public parameters in Parameter Store
-<a name="parameter-store-finding-public-parameters"></a>
 
 You can search for public parameters using the Parameter Store console or the AWS Command Line Interface.
 

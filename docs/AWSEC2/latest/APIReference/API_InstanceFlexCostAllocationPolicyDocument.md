@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceF
 ---
 
 # InstanceFlexCostAllocationPolicyDocument
-<a name="API_InstanceFlexCostAllocationPolicyDocument"></a>
 
 Describes the cost allocation policy document for EC2 instances.
 

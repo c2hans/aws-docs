@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket ReplicationRuleFilter
-<a name="aws-properties-s3-bucket-replicationrulefilter"></a>
 
 A filter that identifies the subset of objects to which the replication rule applies. A `Filter` must specify exactly one `Prefix`, `TagFilter`, or an `And` child element.
 

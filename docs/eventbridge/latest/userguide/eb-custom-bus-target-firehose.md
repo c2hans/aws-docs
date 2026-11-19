@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Amazon Data Firehose stream target
-<a name="eb-custom-bus-target-firehose"></a>
 
 To deliver to an Amazon Data Firehose stream, set `TargetArn` to the stream ARN. A Firehose target takes no parameter block; EventBridge infers the target type from the ARN.
 

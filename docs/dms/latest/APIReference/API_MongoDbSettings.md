@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MongoDbSetti
 ---
 
 # MongoDbSettings
-<a name="API_MongoDbSettings"></a>
 
 Provides information that defines a MongoDB endpoint.
 

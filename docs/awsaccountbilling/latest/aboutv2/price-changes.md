@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-c
 ---
 
 # Calling AWS services and prices using the AWS Price List
-<a name="price-changes"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-overview-dashboard.ht
 ---
 
 # Review overall wave status
-<a name="wave-overview-dashboard"></a>
 
 The **Overview** dashboard provides an overview of the overall wave status, including:
 +  **Description** – The description of the wave.

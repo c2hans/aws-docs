@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_I
 ---
 
 # IdentityCenter
-<a name="API_IdentityCenter"></a>
 
 Specifies the IAM Identity Center instance to use as the identity source for an application.
 

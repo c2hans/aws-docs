@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/encryption-co
 ---
 
 # SPEKE API v2.1 - Encryption contract
-<a name="encryption-contract-v2-1"></a>
 
 The encryption contract defines which content keys are protecting which tracks inside a given streamset, based on the tracks characteristics.
 

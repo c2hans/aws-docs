@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Adding Cost Allocation Tags
-<a name="adding-cost-allocation-tags"></a>
 
 ## DEPRECATED
 <a name="deprecated"></a>

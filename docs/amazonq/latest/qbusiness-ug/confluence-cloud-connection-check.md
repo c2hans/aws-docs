@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/confluence-c
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Checking Confluence (Cloud) connectivity
-<a name="confluence-cloud-connection-check"></a>
 
 Before you sync your Confluence (Cloud) data source connector after [configuring it](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/confluence-cloud-console.html), we recommend you check the connection between Amazon Q Business and Confluence (Cloud). The following are the cURL commands you need to check Confluence (Cloud) connectivity.
 

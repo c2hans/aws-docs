@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Im
 ---
 
 # ImportSecurityRequirements
-<a name="API_ImportSecurityRequirements"></a>
 
 Imports security requirements from uploaded documents into a customer managed security requirement pack. The import process asynchronously extracts and generates structured security requirements from the provided source files.
 

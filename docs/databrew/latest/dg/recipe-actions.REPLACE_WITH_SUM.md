@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.REPLAC
 ---
 
 # REPLACE\_WITH\_SUM
-<a name="recipe-actions.REPLACE_WITH_SUM"></a>
 
 Replaces each invalid value in a column with the sum of all other values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-
 ---
 
 # Configure security groups for your Classic Load Balancer
-<a name="elb-vpc-security-groups"></a>
 
 When you use the AWS Management Console to create a load balancer, you can choose an existing security group or create a new one. If you choose an existing security group, it must allow traffic in both directions to the listener and health check ports for the load balancer. If you choose to create a security group, the console automatically adds rules to allow all traffic on these ports.
 

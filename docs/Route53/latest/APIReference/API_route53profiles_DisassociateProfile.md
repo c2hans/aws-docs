@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # DisassociateProfile
-<a name="API_route53profiles_DisassociateProfile"></a>
 
  Dissociates a specified Route 53 Profile from the specified VPC.
 

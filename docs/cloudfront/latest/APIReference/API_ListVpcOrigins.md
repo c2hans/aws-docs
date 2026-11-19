@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListV
 ---
 
 # ListVpcOrigins
-<a name="API_ListVpcOrigins"></a>
 
 List the CloudFront VPC origins in your account.
 

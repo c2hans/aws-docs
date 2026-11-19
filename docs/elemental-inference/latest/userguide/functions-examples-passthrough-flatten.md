@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Example – Reshape contextual metadata without a model
-<a name="functions-examples-passthrough-flatten"></a>
 
 A passthrough function that publishes each scene's classification in a flat shape of your own, with no model invocation and no model cost. Use it when you want a different schema, not a new analysis. Requires an enabled contextual metadata output on the feed, and a per-scene trigger.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Updating a stateful rule group
-<a name="rule-group-stateful-updating"></a>
 
 To change your stateful rule group settings, use the following procedure.
 

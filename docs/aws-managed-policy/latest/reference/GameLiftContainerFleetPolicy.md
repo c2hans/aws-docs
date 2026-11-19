@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Game
 ---
 
 # GameLiftContainerFleetPolicy
-<a name="GameLiftContainerFleetPolicy"></a>
 
 **Description**: Grants the required permissions for compute actions in an Amazon GameLift container fleet, including access to dependencies such as Amazon S3.
 

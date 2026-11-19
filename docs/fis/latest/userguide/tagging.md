@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/tagging.html
 ---
 
 # Tagging your AWS FIS resources
-<a name="tagging"></a>
 
 A *tag* is a metadata label that either you or AWS assigns to an AWS resource. Each tag consists of a *key* and a *value*. For tags that you assign, you define the key and the value. For example, you might define the key as `purpose` and the value as `test` for a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Alignment to demand
-<a name="alignment-to-demand"></a>
 
 | MIDASUS02: How do you optimize manufacturing workloads to align with production demands? |
 | --- |

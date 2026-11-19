@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.htm
 ---
 
 # How IAM works
-<a name="intro-structure"></a>
 
 AWS Identity and Access Management provides the infrastructure necessary to control authentication and authorization for your AWS account.
 

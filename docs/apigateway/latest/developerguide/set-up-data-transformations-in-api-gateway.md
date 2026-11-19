@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-
 ---
 
 # Tutorial: Modify the integration request and response for integrations to AWS services
-<a name="set-up-data-transformations-in-api-gateway"></a>
 
 The following tutorial shows how to use mapping template transformations to set up mapping templates to transform integration requests and responses using the console and AWS CLI.
 

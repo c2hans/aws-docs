@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_FieldSumma
 ---
 
 # FieldSummary
-<a name="API_connect-cases_FieldSummary"></a>
 
 Object for the summarized details of the field.
 

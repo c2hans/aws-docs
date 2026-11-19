@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_HoursOfO
 ---
 
 # HoursOfOperation
-<a name="API_HoursOfOperation"></a>
 
 Information about of the hours of operation.
 

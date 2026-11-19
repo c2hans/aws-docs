@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/mpa-concepts.html
 ---
 
 # Terms and concepts for Multi-party approval
-<a name="mpa-concepts"></a>
 
 To help you understand Multi-party approval, this topic describes some of the key terms and concepts.
 

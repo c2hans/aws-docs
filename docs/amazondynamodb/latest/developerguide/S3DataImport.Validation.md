@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3D
 ---
 
 # Import format quotas and validation
-<a name="S3DataImport.Validation"></a>
 
 ## Import quotas
 <a name="S3DataImport.Validation.limits"></a>

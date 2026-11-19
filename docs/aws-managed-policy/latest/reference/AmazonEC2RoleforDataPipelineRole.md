@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2RoleforDataPipelineRole
-<a name="AmazonEC2RoleforDataPipelineRole"></a>
 
 **Description**: Default policy for the Amazon EC2 Role for Data Pipeline service role.
 

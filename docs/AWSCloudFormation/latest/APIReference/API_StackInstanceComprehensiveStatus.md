@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackInstanceComprehensiveStatus
-<a name="API_StackInstanceComprehensiveStatus"></a>
 
 The detailed status of the stack instance.
 

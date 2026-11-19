@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Fmtp.html
 ---
 
 # Fmtp
-<a name="API_Fmtp"></a>
 
  A set of parameters that define the media stream.
 

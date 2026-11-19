@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Managing fund requests in AWS Partner Central
-<a name="partner-funding"></a>
 
 AWS Partner Funding benefits are tailored to meet your business needs around training, new product and solution development, and go-to-market activities, enabling you to reach new customers and differentiate your business. AWS Partners may receive funding in the form of cash or AWS Promotional Credits depending on the specific funding option. [Discover how to make the most of your available funding options](https://aws.amazon.com/partners/funding/) and [how to submit funding requests](https://aws.amazon.com/partners/funding/) below.
 

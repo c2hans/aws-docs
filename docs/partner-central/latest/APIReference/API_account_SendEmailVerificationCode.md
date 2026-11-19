@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # SendEmailVerificationCode
-<a name="API_account_SendEmailVerificationCode"></a>
 
 Sends an email verification code to the specified email address for account verification purposes.
 

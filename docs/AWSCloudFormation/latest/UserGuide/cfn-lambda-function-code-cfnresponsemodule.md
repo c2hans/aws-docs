@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-l
 ---
 
 # `cfn-response` module
-<a name="cfn-lambda-function-code-cfnresponsemodule"></a>
 
 In your CloudFormation template, you can specify a Lambda function as the target of a custom resource. When you use the `ZipFile` property to specify your [function's](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html) source code, you can load the `cfn-response` module to send responses from your Lambda function to a custom resource. The `cfn-response` module is a library that simplifies sending responses to the custom resource that invoked your Lambda function. The module has a `send` method that sends a [response object](crpg-ref.md#crpg-ref-responses) to a custom resource by way of an Amazon S3 presigned URL (the `ResponseURL`).
 

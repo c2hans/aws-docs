@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Har
 ---
 
 # HarvesterScheduleConfiguration
-<a name="API_HarvesterScheduleConfiguration"></a>
 
 Defines the schedule configuration for a harvest job.
 

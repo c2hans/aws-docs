@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # ListIdentityPools
-<a name="API_ListIdentityPools"></a>
 
 Lists all of the Cognito identity pools registered for your account.
 

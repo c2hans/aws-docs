@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MilestoneBasedInvestment
-<a name="API_billing_MilestoneBasedInvestment"></a>
 
 An investment with a fixed value that is disbursed on a schedule. This corresponds to the `MILESTONE_BASED` investment type.
 

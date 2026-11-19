@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Activi
 ---
 
 # ActivityTaskScheduledEventAttributes
-<a name="API_ActivityTaskScheduledEventAttributes"></a>
 
 Provides the details of the `ActivityTaskScheduled` event.
 

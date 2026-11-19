@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Trans
 ---
 
 # TransformationOutputDataConfig
-<a name="API_TransformationOutputDataConfig"></a>
 
 The Amazon S3 output location and encryption configuration for a transformation job.
 

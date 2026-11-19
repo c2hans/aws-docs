@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-instance-m
 ---
 
 # Maintaining Amazon DocumentDB
-<a name="db-instance-maintain"></a>
 
 Amazon DocumentDB periodically performs two kinds of maintenance:
 + **Cluster maintenance** updates the database engine. Engine updates carry security fixes, bug fixes, new features, and other engine enhancements.

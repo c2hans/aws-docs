@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowTraceNodeOutputNext
-<a name="API_agent-runtime_FlowTraceNodeOutputNext"></a>
 
 Represents the next node that receives output data from a flow trace.
 

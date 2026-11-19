@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/analysis-ru
 ---
 
 # Aggregation analysis rule
-<a name="analysis-rules-aggregation"></a>
 
 In AWS Clean Rooms, an *aggregation analysis rule* generates aggregate statistics using COUNT, SUM, and/or AVG functions along optional dimensions. When the aggregation analysis rule is added to a configured table, it enables the member who can query to run queries on the configured table.
 

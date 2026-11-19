@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/best
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Best Practices for Using the AWS Mobile SDK for .NET and Xamarin
-<a name="best-practices"></a>
 
 There are only a few fundamentals and best practices that are helpful to know when using the AWS Mobile SDK for .NET and Xamarin.
 + Use Amazon Cognito to obtain AWS credentials instead of hardcoding your credentials in your application. If you hard code your credentials in your application, you may end up exposing them to the public, allowing others to make calls to AWS using your credentials. For instructions on how to use Amazon Cognito to obtain AWS credentials, see [Setting Up the AWS Mobile SDK for .NET and Xamarin](setup.md).

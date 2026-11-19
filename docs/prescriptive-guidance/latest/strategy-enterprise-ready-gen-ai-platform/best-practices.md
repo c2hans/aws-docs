@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Best practices for enterprise generative AI adoption and scaling
-<a name="best-practices"></a>
 
 Successfully adopting and scaling generative AI across an enterprise requires a strategic balance of organizational structure, standardized processes, and technical capabilities. The following best practices draw from successful implementations across various organizations, providing a framework for effective enterprise-wide adoption.
 

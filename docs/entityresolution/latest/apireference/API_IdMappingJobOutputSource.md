@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdMappingJobOutputSource
-<a name="API_IdMappingJobOutputSource"></a>
 
 An object containing `KMSArn`, `outputS3Path`, and `roleARN`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Using capacity provider system logs
-<a name="lambda-managed-instances-monitoring-system-logs-usage"></a>
 
 Capacity provider system logs record what Lambda does on your behalf. This topic explains how to find the logs, how to filter them, and how to read and correlate each type of log. For the full list of events and metadata fields, see [Capacity provider system log event reference](lambda-managed-instances-monitoring-system-log-events.md).
 

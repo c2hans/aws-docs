@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/pqtls-details.html
 ---
 
 # Enabling hybrid post-quantum TLS
-<a name="pqtls-details"></a>
 
 AWS SDKs and tools have cryptographic capabilities and configuration that differ across language and runtime. There are three ways that an AWS SDK or tool currently provides PQ TLS support:
 

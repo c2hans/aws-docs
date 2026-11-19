@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAccountCustomization
-<a name="API_DescribeAccountCustomization"></a>
 
 Describes the customizations associated with the provided AWS account and Amazon Quick Sight namespace. The Quick Sight console evaluates which customizations to apply by running this API operation with the `Resolved` flag included.
 

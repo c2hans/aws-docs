@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BatchGetCalculatedAttributeForProfile
-<a name="API_connect-customer-profiles_BatchGetCalculatedAttributeForProfile"></a>
 
 Fetch the possible attribute values given the attribute name.
 

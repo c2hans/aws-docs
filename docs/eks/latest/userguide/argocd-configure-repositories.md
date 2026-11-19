@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-configure-re
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure repository access
-<a name="argocd-configure-repositories"></a>
 
 Before deploying applications, configure Argo CD to access your Git repositories and Helm chart registries. Argo CD supports multiple authentication methods for GitHub, GitLab, Bitbucket, AWS CodeCommit, and AWS ECR.
 

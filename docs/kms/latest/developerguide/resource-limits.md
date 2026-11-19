@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/resource-limit
 ---
 
 # Resource quotas
-<a name="resource-limits"></a>
 
 AWS KMS establishes resource quotas to ensure that it can provide fast and resilient service to all of our customers. Some resource quotas apply only to resources that you create, but not to resources that AWS services create for you. Resources that you use, but that aren't in your AWS account, such as [AWS owned keys](concepts.md#aws-owned-key), do not count against these quotas.
 

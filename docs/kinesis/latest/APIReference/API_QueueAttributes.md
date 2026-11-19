@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_QueueAtt
 ---
 
 # QueueAttributes
-<a name="API_QueueAttributes"></a>
 
 The configuration attributes for a queue.
 

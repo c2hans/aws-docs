@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # SessionDescriptionType
-<a name="API_SessionDescriptionType"></a>
 
 Describes an active user session. Amazon Cognito returns this type in the responses of `ListUserSessions` and `AdminListUserSessions`, for both token sessions and SSO sessions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Cost
 ---
 
 # CostOptimizationHubReadOnlyAccess
-<a name="CostOptimizationHubReadOnlyAccess"></a>
 
 **Description**: This managed policy provides read-only access to Cost Optimization Hub.
 

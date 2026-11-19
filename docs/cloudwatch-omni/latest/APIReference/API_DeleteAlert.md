@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DeleteAlert
-<a name="API_DeleteAlert"></a>
 
 Deletes an alert by its identifier.
 

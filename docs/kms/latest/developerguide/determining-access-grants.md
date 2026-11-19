@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/determining-ac
 ---
 
 # Examining grants
-<a name="determining-access-grants"></a>
 
 Grants are advanced mechanisms for specifying permissions that you or an AWS service integrated with AWS KMS can use to specify how and when a KMS key can be used. Grants are attached to a KMS key, and each grant contains the principal who receives permission to use the KMS key and a list of operations that are allowed. Grants are an alternative to the key policy, and are useful for specific use cases. For more information, see [Grants in AWS KMS](grants.md).
 

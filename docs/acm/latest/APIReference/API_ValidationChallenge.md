@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ValidationCh
 ---
 
 # ValidationChallenge
-<a name="API_ValidationChallenge"></a>
 
 Contains the challenge details that you use to prove domain ownership. Only one member is set, depending on the validation method.
 

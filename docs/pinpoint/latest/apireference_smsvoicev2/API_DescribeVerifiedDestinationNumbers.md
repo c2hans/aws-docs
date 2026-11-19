@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeVerifiedDestinationNumbers
-<a name="API_DescribeVerifiedDestinationNumbers"></a>
 
 Retrieves the specified verified destination numbers.
 

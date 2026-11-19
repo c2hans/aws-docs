@@ -3,28 +3,27 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/rpm-in
 ---
 
 # RPM installation validation
-<a name="rpm-install-validation"></a>
 
 The latest RPM version, MD5 hash validated from RPM, and SHA256 hash using sha256sum are shown below. These values, combined, can be used to validate the RPM version being used for the AWS Ground Station Agent.
 
 ## Latest Agent Version
 <a name="gs-agent-releases-latest"></a>
 
-### Version 1.0.5953.0
-<a name="gs-agent-version-1-0-5953-0"></a>
+### Version 1.0.8022.0
+<a name="gs-agent-version-1-0-8022-0"></a>
 
-Release Date: 06/29/2026
+Release Date: 2026-11-17
 
-AL2023 RPM Checksums:
-+ SHA256: `083eaf4da2095250ab901251446c67b764a574a3cee34c7d2c6d41aa5790ae16`
-+ MD5: `76fedce9de360cbb0464986214bcfbc1`
+The Amazon Linux 2023 RPM has the following checksums:
++ SHA256: `1b63585d1d2032118598d8ffcd53e4fde495dd2304f23a405b446c6e43547362`
++ MD5: `18ab683256ed52498147e4bb733a02e8`
 
-AL2 RPM Checksums:
-+ SHA256: `f2905ff0da26473669ac2d3c096b04c8e423166be3e5b1dcf39912a2f6002915`
-+ MD5: `c178f0d7f1ad86e0717c7fac2c6edaf2`
+The Amazon Linux 2 RPM has the following checksums:
++ SHA256: `442c32f2bea5ce7697ffe729a237d8a74c2013aaea7e563ff9d7ebd0dea4dad9`
++ MD5: `eb3ceacfcc2932272c0bc5f272d4facf`
 
-Changes:
-+ Add support for Amazon Linux 2023
+This version includes the following changes:
++ Support dataflow endpoints whose Elastic IP is on a secondary network interface
 
 ## Verify the RPM
 <a name="verify-installation"></a>

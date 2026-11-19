@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/mounting-ec2-i
 ---
 
 # Mounting from an Amazon EC2 instance
-<a name="mounting-ec2-instance"></a>
 
 You can mount your cache from an Amazon EC2 instance.
 

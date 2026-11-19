@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Updat
 ---
 
 # UpdateComponent
-<a name="API_UpdateComponent"></a>
 
 Updates the custom component name and/or the list of resources that make up the component.
 

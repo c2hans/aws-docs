@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # CCoE engineering and business functions
-<a name="ccoe-functions"></a>
 
 The CCoE functional scope can be separated into engineering functions and business functions. Clearly define which functions are in scope of the CCoE based on specific goals and priorities.
 

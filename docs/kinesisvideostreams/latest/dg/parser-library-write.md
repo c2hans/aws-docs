@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/parser-lib
 ---
 
 # Examine the code
-<a name="parser-library-write"></a>
 
 In this section, you examine the Java library and test code, and learn how to use the tools from the library in your own code.
 

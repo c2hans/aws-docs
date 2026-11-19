@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/find-handle-fo
 ---
 
 # Find the AWS CloudHSM key for a KMS key
-<a name="find-handle-for-cmk-id"></a>
 
 You can use the KMS key ID of a KMS key in an AWS CloudHSM key store to identify the key in your AWS CloudHSM cluster that serves as its key material.
 

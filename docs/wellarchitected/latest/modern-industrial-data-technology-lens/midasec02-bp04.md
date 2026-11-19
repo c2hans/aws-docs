@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC02-BP04 Develop a mechanism for regular review of IAM roles and policies
-<a name="midasec02-bp04"></a>
 
  Establish processes to regularly review IAM roles and permissions to help prevent privilege creep and maintain access integrity over time.
 

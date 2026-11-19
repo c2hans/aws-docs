@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/getting-started-do
 ---
 
 # Getting started with a Domain dataset group (SDK for JavaScript v3)
-<a name="getting-started-domain-js"></a>
 
 This tutorial shows you how to use the AWS SDK for JavaScript v3 to create a Domain dataset group for the VIDEO\_ON\_DEMAND domain. In this tutorial, you create a recommender for the *Top picks for you* use case.
 

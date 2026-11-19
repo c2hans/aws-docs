@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_PutTelemetryRecords.
 ---
 
 # PutTelemetryRecords
-<a name="API_PutTelemetryRecords"></a>
 
 Used by the AWS X-Ray daemon to upload telemetry.
 

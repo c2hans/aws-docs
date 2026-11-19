@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeIpRestriction
-<a name="API_DescribeIpRestriction"></a>
 
 Provides a summary and status of IP rules.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/example_kinesis_AddTa
 ---
 
 # Use `AddTagsToStream` with an AWS SDK or CLI
-<a name="example_kinesis_AddTagsToStream_section"></a>
 
 The following code examples show how to use `AddTagsToStream`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Validate the result
-<a name="ttm-validate"></a>
 
 After the transformer has run, confirm that the resulting indexes and mappings on the target match the strategy you chose. Use the `console` CLI from the Migration Console pod (`migration-console-0`) to inspect the target.
 

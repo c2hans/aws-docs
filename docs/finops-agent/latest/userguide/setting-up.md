@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/setting-up
 AWS FinOps Agent is in preview release and is subject to change.
 
 # AWS FinOps Agent IAM setup guide
-<a name="setting-up"></a>
 
 When you create an agent, the creation wizard can create the required IAM roles and attach the policies for you. Most customers do not need to configure IAM manually. For the standard flow, see [Creating an agent](creating-an-agent.md).
 

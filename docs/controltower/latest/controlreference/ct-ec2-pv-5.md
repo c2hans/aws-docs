@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.EC2.PV.5] Disallow the use of Amazon EC2 VM import and export
-<a name="ct-ec2-pv-5"></a>
 
 This control disallows use of EC2 VM Import/Export APIs that can be used to import and export EC2 instance, snapshot, image and volume data.
 

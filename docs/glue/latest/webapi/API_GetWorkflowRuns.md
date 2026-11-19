@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetWorkflowRuns.h
 ---
 
 # GetWorkflowRuns
-<a name="API_GetWorkflowRuns"></a>
 
 Retrieves metadata for all runs of a given workflow.
 

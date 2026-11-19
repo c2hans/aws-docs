@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/interfaces
 ---
 
 # Apply an interface to an asset model
-<a name="interfaces-link-asset-model"></a>
 
 When applying an interface to an asset model, you map asset model properties and hierarchies to their interface counterparts. For unmapped interface properties, corresponding properties are automatically created in the asset model. After linking, the service prevents changes to the asset model that would violate interface standards.
 

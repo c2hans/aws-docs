@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Recurr
 ---
 
 # RecurringCharge
-<a name="API_RecurringCharge"></a>
 
 This data type is used as a response element in the `DescribeReservedDBInstances` and `DescribeReservedDBInstancesOfferings` actions.
 

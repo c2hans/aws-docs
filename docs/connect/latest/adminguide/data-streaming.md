@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-streaming
 ---
 
 # Enable data streaming for your Connect Customer instance
-<a name="data-streaming"></a>
 
 You can export contact records and agent events from Connect Customer and perform real-time analysis on contacts. Data streaming sends data to Amazon Kinesis.
 

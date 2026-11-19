@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ComponentChild
-<a name="API_ComponentChild"></a>
 
 A nested UI configuration within a parent `Component`.
 
@@ -27,7 +26,7 @@ Required: Yes
 
  ** children **   <a name="amplifyuibuilder-Type-ComponentChild-children"></a>
 The list of `ComponentChild` instances for this component.
-Type: Array of [ComponentChild](#API_ComponentChild) objects
+Type: Array of [ComponentChild](API_ComponentChild.md) objects
 Required: No
 
  ** events **   <a name="amplifyuibuilder-Type-ComponentChild-events"></a>

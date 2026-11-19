@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Free Tier
-<a name="API_Types_AWS_Free_Tier"></a>
 
 The following data types are supported by AWS Free Tier:
 +  [ActivityReward](API_freetier_ActivityReward.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Specify the authorization type and credentials to access the gateway target
-<a name="gateway-building-adding-targets-authorization"></a>
 
 In the [CreateGatewayTarget](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreateGatewayTarget.html) request body, you specify the credential provider configuration in the `credentialProviderConfigurations` array. The configuration depends on the outbound authorization type that you set up. For reference information about the API structure for the credential provider configuration, see [CredentialProviderConfiguration](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CredentialProviderConfiguration.html) . For more information on outbound authorization, see [Set up outbound authorization for your gateway](gateway-outbound-auth.md).
 

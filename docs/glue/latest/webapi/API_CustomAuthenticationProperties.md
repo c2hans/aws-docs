@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CustomAuthenticat
 ---
 
 # CustomAuthenticationProperties
-<a name="API_CustomAuthenticationProperties"></a>
 
 Custom authentication configuration that allows for flexible authentication mechanisms beyond standard Basic and OAuth2 flows.
 

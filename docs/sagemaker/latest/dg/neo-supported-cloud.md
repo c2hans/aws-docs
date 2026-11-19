@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-supported-cloud.
 ---
 
 # Supported Instance Types and Frameworks
-<a name="neo-supported-cloud"></a>
 
 Amazon SageMaker Neo supports popular deep learning frameworks for both compilation and deployment. You can deploy your model to cloud instances or AWS Inferentia instance types.
 

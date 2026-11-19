@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Example 5: Origin audience routing
-<a name="monetization-functions-examples-origin-routing"></a>
 
 ## Scenario
 <a name="monetization-functions-examples-origin-routing-scenario"></a>

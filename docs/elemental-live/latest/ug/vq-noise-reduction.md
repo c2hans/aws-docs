@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-noise-reduct
 ---
 
 # Noise reduction
-<a name="vq-noise-reduction"></a>
 
 ## Description
 <a name="description-vq-noise"></a>

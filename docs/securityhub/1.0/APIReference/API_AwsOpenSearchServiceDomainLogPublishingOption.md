@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOpen
 ---
 
 # AwsOpenSearchServiceDomainLogPublishingOption
-<a name="API_AwsOpenSearchServiceDomainLogPublishingOption"></a>
 
 Configuration details for a log publishing option.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ObjectLockLegalH
 ---
 
 # ObjectLockLegalHold
-<a name="API_ObjectLockLegalHold"></a>
 
 A legal hold configuration for an object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Phone number override rules in AWS End User Messaging
-<a name="nx-features-sms-protect-rule-override"></a>
 
 You can use a phone number override rule to override the country mode and ensure important phone numbers are always allowed or blocked. For example if you have an application that you only want to be able to send messages to your employees, you could block sending to every country and add phone number override rules for each employee phone number.
 

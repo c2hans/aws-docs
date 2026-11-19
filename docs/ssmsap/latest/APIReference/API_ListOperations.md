@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListOpera
 ---
 
 # ListOperations
-<a name="API_ListOperations"></a>
 
 Lists the operations performed by AWS Systems Manager for SAP.
 

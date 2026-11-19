@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/access-
 ---
 
 # Access your Lightsail for Research virtual computer's operating system
-<a name="access-computer-operating-system"></a>
 
 Complete the following steps to access the operating system for your Lightsail for Research virtual computer.
 

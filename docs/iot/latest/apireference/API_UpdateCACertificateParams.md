@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCACert
 ---
 
 # UpdateCACertificateParams
-<a name="API_UpdateCACertificateParams"></a>
 
 Parameters to define a mitigation action that changes the state of the CA certificate to inactive.
 

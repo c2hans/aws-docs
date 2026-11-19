@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/channels-e
 ---
 
 # Editing a channel in AWS Elemental MediaPackage
-<a name="channels-edit"></a>
 
 These steps show how to edit the description on a channel in MediaPackage and your channel's policy settings. You can't edit the name of the channel.
 

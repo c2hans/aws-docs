@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/dm-postgresql-step-2.html
 ---
 
 # Step 2: Configure Your Source Database
-<a name="dm-postgresql-step-2"></a>
 
 In this step, you create a new database user on your source PostgreSQL database and configure the data replication.
 

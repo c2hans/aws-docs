@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Where each component logs
-<a name="mon-log-groups"></a>
 
 | Component | Log group |
 | --- | --- |

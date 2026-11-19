@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListIdentity
 ---
 
 # ListIdentityProviderConfigs
-<a name="API_ListIdentityProviderConfigs"></a>
 
 Lists the identity provider configurations for your cluster.
 

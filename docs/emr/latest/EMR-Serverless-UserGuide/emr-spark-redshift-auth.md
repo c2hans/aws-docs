@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-
 ---
 
 # Authenticating with the Amazon Redshift integration for Apache Spark
-<a name="emr-spark-redshift-auth"></a>
 
 ## Use AWS Secrets Manager to retrieve credentials and connect to Amazon Redshift
 <a name="emr-spark-redshift-secrets"></a>

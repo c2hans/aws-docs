@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Collecting vLLM metrics with OTel Container Insights
-<a name="container-insights-eks-otel-vllm"></a>
 
 vLLM is an open-source inference engine that serves large language models through an OpenAI-compatible API. You can run it as your own Kubernetes Deployment, or as the model server of a KServe InferenceService. Container Insights collects the metrics that each vLLM server exports on its `/metrics` endpoint. You do not need to set up Prometheus or Grafana manually, and you do not need to label or annotate your pods.
 

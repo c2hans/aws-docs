@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/validate-emergency-a
 ---
 
 # Validating addresses for emergency calls
-<a name="validate-emergency-addresses"></a>
 
 To use building addresses for emergency calls, you enter and validate the addresses that the calls can originate from. The Amazon Chime SDK then routes the calls to the nearest local Public Safety Answering Point (PSAP). Remember the following:
 + You only need to validate an address once, but you can validate it multiple times.

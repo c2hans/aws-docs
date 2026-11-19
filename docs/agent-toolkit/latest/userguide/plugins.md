@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/plugins.h
 ---
 
 # Plugins
-<a name="plugins"></a>
 
 Plugins for the Agent Toolkit for AWS are single-install packages that bundle the AWS MCP Server configuration and a curated set of agent skills. Instead of configuring MCP endpoints and installing skills individually, you install one plugin. Your agent is then ready to work with AWS.
 

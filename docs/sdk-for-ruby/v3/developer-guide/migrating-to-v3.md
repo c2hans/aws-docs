@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/migratin
 ---
 
 # Migrating from AWS SDK for Ruby version 1 or 2 to AWS SDK for Ruby version 3
-<a name="migrating-to-v3"></a>
 
 This topic includes details to help you migrate from version 1 or 2 of the AWS SDK for Ruby to version 3.
 

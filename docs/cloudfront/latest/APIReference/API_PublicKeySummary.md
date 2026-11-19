@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Publi
 ---
 
 # PublicKeySummary
-<a name="API_PublicKeySummary"></a>
 
 Contains information about a public key.
 

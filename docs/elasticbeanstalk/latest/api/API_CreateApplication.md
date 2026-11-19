@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CreateAp
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Creates an application that has one configuration template named `default` and no application versions.
 

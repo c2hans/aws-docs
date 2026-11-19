@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AvailabilityZoneInfo
-<a name="API_AvailabilityZoneInfo"></a>
 
 Information about an Availability Zone on a domain.
 

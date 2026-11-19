@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/modelcollections-vie
 ---
 
 # View a Model Group's Parent Collection
-<a name="modelcollections-view-parent"></a>
 
 You can view the Collections which contain a particular Model Group in the Amazon SageMaker Studio console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Perform operations
-<a name="ddb-en-client-gs-use"></a>
 
 After the table is created, use the `DynamoDbTable` instance to perform operations against the DynamoDB table.
 

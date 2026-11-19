@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-design.ht
 ---
 
 # Design a flow in Amazon Bedrock
-<a name="flows-design"></a>
 
 In this section you design an Amazon Bedrock flow. Before designing a flow, we recommend that you read [How Amazon Bedrock Flows works](flows-how-it-works.md) to familiarize yourself with concepts and terms in Amazon Bedrock Flows and to learn about the types of nodes that are available to you. For example flows that you can try, see [Try example flows](flows-ex.md).
 

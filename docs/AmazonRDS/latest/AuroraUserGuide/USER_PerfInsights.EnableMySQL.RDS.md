@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Pe
 ---
 
 # Turn on the Performance Schema for Aurora MySQL
-<a name="USER_PerfInsights.EnableMySQL.RDS"></a>
 
 Assume that Database Insights is turned on for your DB instance but isn't currently managing the Performance Schema. If you want to allow Database Insights to manage the Performance Schema automatically, complete the following steps.
 

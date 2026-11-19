@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.ht
 ---
 
 # Request access to models
-<a name="model-access"></a>
 
 Access to many Amazon Bedrock foundation models is enabled by default with the correct AWS Marketplace permissions. To get started, simply select a model from the model catalog in the Amazon Bedrock console and open it in the playground or invoke the model using the [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) API operations. For information about the different models supported in Amazon Bedrock, see [Amazon Bedrock foundation model information](https://docs.aws.amazon.com/bedrock/latest/userguide/foundation-models-reference.html). For information about model pricing, see [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/).
 

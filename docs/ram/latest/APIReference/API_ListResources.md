@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListResource
 ---
 
 # ListResources
-<a name="API_ListResources"></a>
 
 Lists the resources that you added to a resource share or the resources that are shared with you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_KafkaSchemaRegistr
 ---
 
 # KafkaSchemaRegistryAccessConfig
-<a name="API_KafkaSchemaRegistryAccessConfig"></a>
 
 Specific access configuration settings that tell Lambda how to authenticate with your schema registry.
 

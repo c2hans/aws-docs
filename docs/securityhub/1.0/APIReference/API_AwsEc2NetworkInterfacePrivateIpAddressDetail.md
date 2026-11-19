@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2N
 ---
 
 # AwsEc2NetworkInterfacePrivateIpAddressDetail
-<a name="API_AwsEc2NetworkInterfacePrivateIpAddressDetail"></a>
 
 Provides information about a private IPv4 address that is with the network interface.
 

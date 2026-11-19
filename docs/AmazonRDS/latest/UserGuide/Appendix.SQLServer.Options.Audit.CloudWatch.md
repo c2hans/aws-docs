@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Configuring CloudWatch Log Stream
-<a name="Appendix.SQLServer.Options.Audit.CloudWatch"></a>
 
 By default, Amazon RDS for SQL Server Audit delivers completed audit files to an Amazon S3 bucket. You can also stream the audit logs to Amazon CloudWatch Logs — instead of Amazon S3, or in addition to it.
 

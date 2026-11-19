@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Advantages and disadvantages of the GitHub Flow strategy
-<a name="advantages-and-disadvantages-of-the-git-hub-flow-strategy"></a>
 
 The Github Flow branching strategy is well suited for smaller, mature, development teams that have strong communication skills. This strategy is well suited to teams that want to implement continuous delivery, and it is well supported by common CI/CD engines. GitHub Flow is lightweight, doesn't have too many rules, and is capable of supporting fast-moving teams. It is not well suited if your teams have strict compliance or release processes to follow. Merge conflicts are common in this model and will likely happen often. Resolution of merge conflicts is a key skill, and you must train all team members accordingly.
 

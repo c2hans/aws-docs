@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Har
 ---
 
 # HarvestJob
-<a name="API_HarvestJob"></a>
 
 Represents a harvest job resource in MediaPackage v2, which is used to export content from an origin endpoint to an S3 bucket.
 

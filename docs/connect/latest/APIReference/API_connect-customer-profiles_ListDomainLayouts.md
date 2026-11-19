@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListDomainLayouts
-<a name="API_connect-customer-profiles_ListDomainLayouts"></a>
 
 Lists the existing layouts that can be used to view data for a specific domain. This API can only be invoked from the Amazon Connect admin website.
 

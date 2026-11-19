@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Creat
 ---
 
 # Create a CloudWatch alarm based on anomaly detection
-<a name="Create_Anomaly_Detection_Alarm"></a>
 
 You can create an alarm based on CloudWatch anomaly detection, which analyzes past metric data and creates a model of expected values. The expected values take into account the typical hourly, daily, and weekly patterns in the metric.
 

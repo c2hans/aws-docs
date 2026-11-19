@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # Using DAX with AWS SDK for Java 1.x
-<a name="DAX.client.java-sdk-v1"></a>
 
 Follow this procedure to run the Java sample for Amazon DynamoDB Accelerator (DAX) on your Amazon EC2 instance.
 

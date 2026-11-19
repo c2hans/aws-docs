@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # MatchmakingFailed
-<a name="match-events-matchmakingfailed"></a>
 
 Matchmaking ticket has encountered an error. This may be due to the game session queue not being accessible or to an internal error.
 

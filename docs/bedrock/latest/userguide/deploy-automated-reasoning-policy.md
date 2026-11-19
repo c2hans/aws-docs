@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/deploy-automate
 ---
 
 # Deploy your Automated Reasoning policy in your application
-<a name="deploy-automated-reasoning-policy"></a>
 
 After you've tested your Automated Reasoning policy and are satisfied with its performance, you can deploy it for use in your application with Amazon Bedrock Guardrails. This page covers the full deployment workflow: saving an immutable version, attaching it to a guardrail, automating deployment with CloudFormation, and integrating into CI/CD pipelines.
 

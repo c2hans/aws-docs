@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # DocumentCustomOutputConfiguration
-<a name="API_data-automation_DocumentCustomOutputConfiguration"></a>
 
 Custom output configuration for document processing.
 

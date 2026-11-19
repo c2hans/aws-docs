@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auth-configmap.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Grant IAM users access to Kubernetes with a ConfigMap
-<a name="auth-configmap"></a>
 
 **Important**
 The `aws-auth ConfigMap` is deprecated. For the recommended method to manage access to Kubernetes APIs, see [Grant IAM users access to Kubernetes with EKS access entries](access-entries.md).

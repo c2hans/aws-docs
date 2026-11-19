@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # InsightFeedbackEntity
-<a name="API_InsightFeedbackEntity"></a>
 
 Specifies the entity for which to submit insight feedback. An entity represents an Amazon OpenSearch Service domain.
 

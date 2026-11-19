@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRu
 ---
 
 # GetRun
-<a name="API_GetRun"></a>
 
 Gets information about a run.
 

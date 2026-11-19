@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/customerma
 ---
 
 # Setting up customer managed SAML 2.0 applications
-<a name="customermanagedapps-saml2-setup"></a>
 
 If you use customer managed applications that support [SAML 2.0](https://wiki.oasis-open.org/security), you can federate your IdP to IAM Identity Center through SAML 2.0 and use IAM Identity Center to manage user access to those applications. You can select a SAML 2.0 application from a catalog of commonly used applications in the IAM Identity Center console, or you can set up your own SAML 2.0 application.
 

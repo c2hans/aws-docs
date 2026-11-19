@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # ListWhatsAppMessageTemplates
-<a name="API_ListWhatsAppMessageTemplates"></a>
 
 Lists WhatsApp message templates for a specific WhatsApp Business Account.
 

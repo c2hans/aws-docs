@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Considerations and discussion
-<a name="considerations-and-discussion"></a>
 
 ## Where does SaaS fit?
 <a name="where-does-saas-fit-.f94ae161-ab2f-5e28-a60e-474cd2f95474"></a>

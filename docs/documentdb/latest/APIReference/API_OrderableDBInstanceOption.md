@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Order
 ---
 
 # OrderableDBInstanceOption
-<a name="API_OrderableDBInstanceOption"></a>
 
 The options that are available for an instance.
 

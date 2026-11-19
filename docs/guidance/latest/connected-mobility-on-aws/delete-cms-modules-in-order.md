@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Delete CMS on AWS modules in order
-<a name="delete-cms-modules-in-order"></a>
 
 Use the provided Makefile targets to tear down all stacks in the correct reverse order. The make targets prompt for confirmation before destroying resources.
 

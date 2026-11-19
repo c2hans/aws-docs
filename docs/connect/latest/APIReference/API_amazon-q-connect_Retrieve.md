@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # Retrieve
-<a name="API_amazon-q-connect_Retrieve"></a>
 
 Retrieves content from knowledge sources based on a query.
 

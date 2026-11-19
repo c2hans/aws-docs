@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/compute-
 ---
 
 # ![AWS Compute Services category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/compute-icon.jpg)Compute
-<a name="compute-services"></a>
 
 Millions of organizations run diverse workloads using AWS compute services.
 

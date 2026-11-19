@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingPlanFilter
-<a name="API_TrainingPlanFilter"></a>
 
 A filter to apply when listing or searching for training plans.
 

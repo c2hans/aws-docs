@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateWor
 ---
 
 # CreateWorkGroup
-<a name="API_CreateWorkGroup"></a>
 
 Creates a workgroup with the specified name. A workgroup can be an Apache Spark enabled workgroup or an Athena SQL workgroup.
 

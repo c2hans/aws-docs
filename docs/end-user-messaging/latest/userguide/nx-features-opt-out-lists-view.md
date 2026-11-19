@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # View the details of an opt-out list in AWS End User Messaging
-<a name="nx-features-opt-out-lists-view"></a>
 
 Use the AWS End User Messaging console or AWS CLI to manage your opt-out lists.
 

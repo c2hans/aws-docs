@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/codeartifact-info
 ---
 
 # Logging CodeArtifact API calls with AWS CloudTrail
-<a name="codeartifact-information-in-cloudtrail"></a>
 
 CodeArtifact is integrated with [AWS CloudTrail](https://aws.amazon.com/cloudtrail), a service that provides a record of actions taken by a user, role, or an AWS service in CodeArtifact. CloudTrail captures all API calls for CodeArtifact as events, including calls from package manager clients.
 

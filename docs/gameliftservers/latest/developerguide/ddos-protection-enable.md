@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/dd
 ---
 
 # Enable player gateway on fleets
-<a name="ddos-protection-enable"></a>
 
 Enable player gateway when creating a fleet to route game traffic through relay endpoints that validate and rate limit incoming UDP traffic to your game servers.
 

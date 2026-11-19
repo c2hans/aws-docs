@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_LifeCycle.ht
 ---
 
 # LifeCycle
-<a name="API_LifeCycle"></a>
 
 Lifecycle.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/ST_Points-function.ht
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ST\_Points
-<a name="ST_Points-function"></a>
 
 ST\_Points returns a multipoint geometry containing all nonempty points in the input geometry. ST\_Points doesn't remove points that are duplicated in the input, including the start and end points of ring geometries.
 

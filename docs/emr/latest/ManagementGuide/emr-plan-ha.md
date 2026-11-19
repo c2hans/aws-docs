@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-ha.h
 ---
 
 # Plan and configure primary nodes in your Amazon EMR cluster
-<a name="emr-plan-ha"></a>
 
 When you launch an Amazon EMR cluster, you can choose to have one or three primary nodes in your cluster. High availability for *instance fleets* is supported with Amazon EMR releases 5.36.1, 5.36.2, 6.8.1, 6.9.1, 6.10.1, 6.11.1, 6.12.0, and higher. For *instance groups*, high availability is supported with Amazon EMR releases 5.23.0 and higher. To further improve cluster availability, Amazon EMR can use Amazon EC2 placement groups to ensure that primary nodes are placed on distinct underlying hardware. For more information, see [Amazon EMR integration with EC2 placement groups](emr-plan-ha-placementgroup.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/mult
 ---
 
 # Data retrieval APIs for Multi-party approval
-<a name="multi-partyapproval"></a>
 
 Multi-party approval provides the following APIs for data retrieval.
 

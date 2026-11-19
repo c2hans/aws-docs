@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/configuration-c
 ---
 
 # Run Configuration Checks with Systems Manager for SAP
-<a name="configuration-checks"></a>
 
 You can run configuration checks on your registered SAP applications to validate their setup and ensure they follow best practices. Configuration checks are organized to help you execute checks and understand their results:
 +  **Configuration Check** - The top level at which checks are executed. Each check comprehensively answers a question such as "Have I chosen the right instance?" or "Is my storage configured correctly?"

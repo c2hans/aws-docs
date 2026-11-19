@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Delete
 ---
 
 # DeleteFleet
-<a name="API_DeleteFleet"></a>
 
 Deletes a compute fleet. When you delete a compute fleet, its builds are not deleted.
 

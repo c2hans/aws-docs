@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteS
 ---
 
 # DeleteSubscriptionGrant
-<a name="API_DeleteSubscriptionGrant"></a>
 
 Deletes and subscription grant in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DiskMap
-<a name="API_DiskMap"></a>
 
 Describes a block storage disk mapping.
 

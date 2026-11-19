@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/security-iam-athena-cal
 ---
 
 # Use CalledVia context keys for Athena
-<a name="security-iam-athena-calledvia"></a>
 
 When a [principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-principal) makes a [request](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-structure.html#intro-structure-request) to AWS, AWS gathers the request information into a *request context* that evaluates and authorizes the request. You can use the `Condition` element of a JSON policy to compare keys in the request context with key values that you specify in your policy. *Global condition context keys* are condition keys with an `aws:` prefix.
 

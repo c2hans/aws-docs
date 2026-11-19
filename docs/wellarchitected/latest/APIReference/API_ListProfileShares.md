@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListProfileShares
-<a name="API_ListProfileShares"></a>
 
 List profile shares.
 

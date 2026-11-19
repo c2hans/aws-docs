@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_U
 ---
 
 # UpdateLibraryItem
-<a name="API_qapps_UpdateLibraryItem"></a>
 
 Updates the library item for an Amazon Q App.
 

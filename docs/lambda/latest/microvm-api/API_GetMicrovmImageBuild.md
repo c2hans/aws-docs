@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_GetMicrovm
 ---
 
 # GetMicrovmImageBuild
-<a name="API_GetMicrovmImageBuild"></a>
 
 Retrieves the details of a specific MicroVM image build, including its state, target architecture, and snapshot information.
 

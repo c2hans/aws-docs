@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RawResponse
-<a name="API_agent-runtime_RawResponse"></a>
 
 Contains the raw output from the foundation model.
 

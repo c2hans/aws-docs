@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Se
 ---
 
 # SessionState
-<a name="API_runtime_SessionState"></a>
 
 The state of the user's session with Amazon Lex.
 

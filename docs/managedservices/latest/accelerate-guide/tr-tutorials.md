@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Configure remediation tutorials
-<a name="tr-tutorials"></a>
 
 The following tutorials provide examples of creating common remediations in Trusted Remediator
 

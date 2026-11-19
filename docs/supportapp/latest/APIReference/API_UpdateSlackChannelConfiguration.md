@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_Updat
 ---
 
 # UpdateSlackChannelConfiguration
-<a name="API_UpdateSlackChannelConfiguration"></a>
 
 Updates the configuration for a Slack channel, such as case update notifications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Conta
 ---
 
 # ContainerProvider
-<a name="API_ContainerProvider"></a>
 
 The information about the container provider.
 

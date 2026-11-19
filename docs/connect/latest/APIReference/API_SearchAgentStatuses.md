@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchAg
 ---
 
 # SearchAgentStatuses
-<a name="API_SearchAgentStatuses"></a>
 
 Searches AgentStatuses in an Connect Customer instance, with optional filtering.
 

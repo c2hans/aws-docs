@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/using-lightsa
 ---
 
 # Integrate Lightsail with other AWS services with VPC peering
-<a name="using-lightsail-with-other-aws-services"></a>
 
 Amazon Lightsail uses a focused set of AWS services like Amazon EC2 and AWS Identity and Access Management to make it easier to get started. But that doesn't mean you're limited to those services\!
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # Limits
-<a name="alarm-limits"></a>
 
 ## General CloudWatch quotas
 <a name="general-cloudwatch-quotas"></a>

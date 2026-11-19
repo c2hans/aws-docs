@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Protecting your Data on AWS
-<a name="protecting-your-data-on-aws"></a>
 
 Article 32 of the GDPR requires that organizations must “[…] implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including […] the pseudonymization and encryption of personal data [...]”. In addition, organizations must safeguard against the unauthorized disclosure of, or access to personal data.
 

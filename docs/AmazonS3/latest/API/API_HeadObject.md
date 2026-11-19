@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_HeadObject.html
 ---
 
 # HeadObject
-<a name="API_HeadObject"></a>
 
 The `HEAD` operation retrieves metadata from an object without returning the object itself. This operation is useful if you're interested only in an object's metadata.
 

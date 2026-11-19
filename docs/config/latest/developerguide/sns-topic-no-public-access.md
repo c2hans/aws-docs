@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-n
 ---
 
 # sns-topic-no-public-access
-<a name="sns-topic-no-public-access"></a>
 
 Checks if the SNS topic access policy allows public access. The rule is NON\_COMPLIANT if the SNS topic access policy allows public access.
 

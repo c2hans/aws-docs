@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-search.html
 ---
 
 # Searching certificates
-<a name="sdk-search"></a>
 
 The following Java example shows how to use the [SearchCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_SearchCertificates.html) function.
 

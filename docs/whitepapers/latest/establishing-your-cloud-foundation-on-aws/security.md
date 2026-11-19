@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Security
-<a name="security"></a>
 
 Create a secure, high-performing, and resilient foundation for your cloud environment. The capabilities within this area enable you to design and implement security policies and controls across different levels of the stack to protect your resources from external or internal vulnerabilities and threats. They ensure confidentiality, availability, integrity, and usability, while providing priorities and advice to assist with remediation.
 

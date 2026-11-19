@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ModifyCluste
 ---
 
 # ModifyCluster
-<a name="API_ModifyCluster"></a>
 
 Modifies the number of steps that can be executed concurrently for the cluster specified using ClusterID.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AntennaUplinkConfig
-<a name="API_AntennaUplinkConfig"></a>
 
 Information about the uplink `Config` of an antenna.
 

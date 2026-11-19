@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/run-sample.htm
 ---
 
 # Use IDT to run the sample test suite
-<a name="run-sample"></a>
 
 To run the sample test suite, run the following commands on your host computer:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/bulk-uploader-best-pr
 ---
 
 # Best Practices for Bulk Document Uploader
-<a name="bulk-uploader-best-practices"></a>
 
 The Bulk Document Uploader is an AWS Management Console tool intended to help you quickly evaluate how Textract performs on a set of your own documents, without the need to write any code. You can use the Bulk Document Uploader to process as many as 150 documents with one of Textract’s features, instead of uploading and processing documents individually. You can bulk- upload documents directly from your computer or import documents from an existing Amazon S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # GetRegisteredSubscriptionProvider
-<a name="API_GetRegisteredSubscriptionProvider"></a>
 
 Get details for a Bring Your Own License (BYOL) subscription that's registered to your account.
 

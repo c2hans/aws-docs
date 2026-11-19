@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Ec2Ins
 ---
 
 # Ec2Instance
-<a name="API_Ec2Instance"></a>
 
 Details about the potentially impacted Amazon EC2 instance resource.
 

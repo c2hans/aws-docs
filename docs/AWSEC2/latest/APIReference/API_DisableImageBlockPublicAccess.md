@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableIm
 ---
 
 # DisableImageBlockPublicAccess
-<a name="API_DisableImageBlockPublicAccess"></a>
 
 Disables *block public access for AMIs* at the account level in the specified AWS Region. This removes the *block public access* restriction from your account. With the restriction removed, you can publicly share your AMIs in the specified AWS Region.
 

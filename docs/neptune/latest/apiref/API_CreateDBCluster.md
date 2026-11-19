@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_CreateDBCluste
 ---
 
 # CreateDBCluster
-<a name="API_CreateDBCluster"></a>
 
 Creates a new Amazon Neptune DB cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Third-party firewalls on Amazon EC2
-<a name="third-party-firewalls"></a>
 
  While AWS WAF is the recommended solution, many customers have third-party firewalls that they want to keep using when they move to the cloud. Many major firewall providers have AMI that can be used on EC2 instances. However, these EC2-based WAFs must be carefully architected to prevent them from becoming bottlenecks during DDoS attacks.
 

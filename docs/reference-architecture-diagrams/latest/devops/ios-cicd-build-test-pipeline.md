@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # iOS CI/CD build and test pipeline
-<a name="ios-cicd-build-test-pipeline"></a>
 
 Publication date: **November 17, 2021 ([Diagram history](diagram-history.md))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/setting-timezone.ht
 ---
 
 # Setting the time zone
-<a name="setting-timezone"></a>
 
 Amazon DCV can set your session's time zone to either your local time zone or the time zone where the remote desktop is located. This is called time zone redirection.
 

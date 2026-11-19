@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchUserE
 ---
 
 # BatchUserErrorResponseItem
-<a name="API_BatchUserErrorResponseItem"></a>
 
 Contains error information for a user operation that failed in a batch user request.
 

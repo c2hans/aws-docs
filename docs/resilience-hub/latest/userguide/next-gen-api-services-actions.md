@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Services
-<a name="next-gen-api-services-actions"></a>
 
 | Action | Method | Description |
 | --- | --- | --- |

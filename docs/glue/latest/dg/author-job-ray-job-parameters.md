@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/author-job-ray-job-parame
 ---
 
 # Using job parameters in Ray jobs
-<a name="author-job-ray-job-parameters"></a>
 
 **Important**
 AWS Glue for Ray is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Glue for Ray end of support](https://docs.aws.amazon.com/glue/latest/dg/awsglue-ray-jobs-availability-change.html).

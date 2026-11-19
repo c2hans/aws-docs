@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAddons.h
 ---
 
 # ListAddons
-<a name="API_ListAddons"></a>
 
 Lists the installed add-ons.
 

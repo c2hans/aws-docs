@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Graviton instance migration
-<a name="3-migration-to-graviton"></a>
 
 AWS Graviton (arm64) instances, deliver up to 40% better price-performance compared to equivalent x86 instances.
 

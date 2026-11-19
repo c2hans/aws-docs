@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Step 1: Select filters and test the policy
-<a name="device-posture-policy-assistant-step1"></a>
 
 In the **Test policy** view, you select filters to load a connection's context, then edit and test your policy against that context. The Client VPN endpoint is selected automatically. You can set the following filters:
 + **Authorization decision** (required) — the most recent allow or deny decision to use from the connection logs.

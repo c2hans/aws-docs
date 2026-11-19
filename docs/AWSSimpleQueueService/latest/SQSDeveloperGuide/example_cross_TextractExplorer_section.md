@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Create an Amazon Textract explorer application
-<a name="example_cross_TextractExplorer_section"></a>
 
 The following code examples show how to explore Amazon Textract output through an interactive application.
 

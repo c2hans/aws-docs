@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-direct-inges
 ---
 
 # Ingest documents directly into a knowledge base
-<a name="kb-direct-ingestion-add"></a>
 
 This topic describes how to ingest documents directly into a knowledge base. Restrictions apply for the types of documents that you can directly ingest depending on your data source. Refer to the following table for restrictions on the methods that you can use to specify the documents to ingest:
 

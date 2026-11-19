@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/tag
 ---
 
 # Tagging `EnabledControl` resources in AWS Control Tower
-<a name="tagging"></a>
 
 You can add tags to `EnabledControl` resources by means of CloudFormation templates, through the AWS Control Tower console, and by calling the AWS Control Tower APIs.
 

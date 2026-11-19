@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/securi
 ---
 
 # AWS Billing Conductor resource-based policy examples
-<a name="security_iam_resource-based-policy-examples"></a>
 
 **Topics**
 + [Restricting Amazon S3 bucket access to specific IP addresses](#security_iam_resource-based-policy-examples-restrict-bucket-by-ip)

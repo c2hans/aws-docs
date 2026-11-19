@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec02-b
 ---
 
 # SEC02-BP01 Identify principals and identity use-cases
-<a name="sec02-bp01"></a>
 
  Every workload authenticates people, services, and devices, each with different risks and access needs. Before you choose authentication methods or providers, identify who and what interacts with your workload and what each interaction requires. This inventory shapes an identity design that scales as users and services grow.
 

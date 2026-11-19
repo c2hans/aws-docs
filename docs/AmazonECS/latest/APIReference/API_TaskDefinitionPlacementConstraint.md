@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskDe
 ---
 
 # TaskDefinitionPlacementConstraint
-<a name="API_TaskDefinitionPlacementConstraint"></a>
 
 The constraint on task placement in the task definition. For more information, see [Task placement constraints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html) in the *Amazon Elastic Container Service Developer Guide*.
 

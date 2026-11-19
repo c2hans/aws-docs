@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/lam-invoke
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # 'AWS Lambda invoke' action YAML
-<a name="lam-invoke-action-ref"></a>
 
 The following is the YAML definition of the **AWS Lambda invoke** action. To learn how to use this action, see [Invoking a Lambda function using a workflow](lam-invoke-action.md).
 

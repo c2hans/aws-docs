@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SimplifiedAp
 ---
 
 # SimplifiedApplication
-<a name="API_SimplifiedApplication"></a>
 
 The returned release label application names or versions.
 

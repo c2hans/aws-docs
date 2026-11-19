@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-eval-serv
 ---
 
 # Service role requirements for human-based model evaluation jobs
-<a name="model-eval-service-roles"></a>
 
 To create a model evaluation job that uses human evaluators, you must specify two service roles.
 

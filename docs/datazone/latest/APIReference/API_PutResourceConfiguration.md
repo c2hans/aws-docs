@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_PutReso
 ---
 
 # PutResourceConfiguration
-<a name="API_PutResourceConfiguration"></a>
 
 The resource configuration that is used to configure the environment blueprint.
 

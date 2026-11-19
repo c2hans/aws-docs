@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # NeighborConnectionDetail
-<a name="API_NeighborConnectionDetail"></a>
 
 Details about neighboring servers.
 

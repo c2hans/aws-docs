@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Practice Cloud Financial Management
-<a name="practice-cloud-financial-management"></a>
 
 | DRHCCOST01: Have you defined a tagging strategy for your hybrid edge workloads? |
 | --- |

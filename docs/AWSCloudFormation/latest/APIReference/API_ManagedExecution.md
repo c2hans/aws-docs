@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ManagedExecution
-<a name="API_ManagedExecution"></a>
 
 Describes whether StackSets performs non-conflicting operations concurrently and queues conflicting operations.
 

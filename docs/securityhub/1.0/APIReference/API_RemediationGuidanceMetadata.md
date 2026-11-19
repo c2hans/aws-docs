@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationGuidanceMetadata
-<a name="API_RemediationGuidanceMetadata"></a>
 
 The metadata of the remediation guidance.
 

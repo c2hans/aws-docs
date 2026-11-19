@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_JobRunS
 ---
 
 # JobRunSummary
-<a name="API_JobRunSummary"></a>
 
 The job run summary.
 

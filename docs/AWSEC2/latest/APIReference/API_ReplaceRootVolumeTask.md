@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceRo
 ---
 
 # ReplaceRootVolumeTask
-<a name="API_ReplaceRootVolumeTask"></a>
 
 Information about a root volume replacement task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Ebs.htm
 ---
 
 # Ebs
-<a name="API_Ebs"></a>
 
 Describes information used to set up an Amazon EBS volume specified in a block device mapping.
 

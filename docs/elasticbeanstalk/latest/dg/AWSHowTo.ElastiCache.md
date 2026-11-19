@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.Elas
 ---
 
 # Using Elastic Beanstalk with Amazon ElastiCache
-<a name="AWSHowTo.ElastiCache"></a>
 
 Amazon ElastiCache is a web service that enables setting up, managing, and scaling distributed in-memory cache environments in the cloud. It provides a high-performance, scalable, and cost-effective in-memory cache, while removing the complexity associated with deploying and managing a distributed cache environment. ElastiCache is protocol-compliant with Redis and Memcached, so the code, applications, and most popular tools that you use today with your existing Redis and Memcached environments will work seamlessly with the service. For more information about ElastiCache, go to the [Amazon ElastiCache](https://aws.amazon.com/elasticache/) product page.
 

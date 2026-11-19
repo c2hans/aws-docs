@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableLoggingForALBAndCLB`
-<a name="automation-aws-enable-logging-alb-clb"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Troubleshooting Container Insights
-<a name="ContainerInsights-troubleshooting"></a>
 
 The following sections can help if you're having trouble issues with Container Insights.
 

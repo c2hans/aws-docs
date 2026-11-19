@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteDefaultSenderId
-<a name="API_DeleteDefaultSenderId"></a>
 
 Deletes an existing default sender ID on a configuration set.
 

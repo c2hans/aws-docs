@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/example_auto-s
 ---
 
 # Use `DescribeNotificationConfigurations` with a CLI
-<a name="example_auto-scaling_DescribeNotificationConfigurations_section"></a>
 
 The following code examples show how to use `DescribeNotificationConfigurations`.
 

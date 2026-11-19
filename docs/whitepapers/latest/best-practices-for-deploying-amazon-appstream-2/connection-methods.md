@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Connection methods
-<a name="connection-methods"></a>
 
  When streaming sessions in WorkSpaces Applications, users have two connection methods available:
 +  **Web Browser Access** — Any HTML5-capable browser is supported. No plug- ins or downloads are required.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/presigned-urls.ht
 ---
 
 # Creating presigned URLs using the AWS SDK for Rust
-<a name="presigned-urls"></a>
 
  You can presign requests for some AWS API operations so that another caller can use the request later without presenting their own credentials.
 

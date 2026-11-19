@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-ec2-insta
 ---
 
 # Delete an EC2 Instance Connect Endpoint
-<a name="delete-ec2-instance-connect-endpoint"></a>
 
 When you are finished with an EC2 Instance Connect Endpoint, you can delete it.
 

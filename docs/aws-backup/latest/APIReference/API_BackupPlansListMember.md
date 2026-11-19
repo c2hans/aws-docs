@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Backu
 ---
 
 # BackupPlansListMember
-<a name="API_BackupPlansListMember"></a>
 
 Contains metadata about a backup plan.
 

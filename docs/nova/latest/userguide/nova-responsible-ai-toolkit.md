@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-responsible-a
 ---
 
 # Responsible AI Toolkit and content moderation
-<a name="nova-responsible-ai-toolkit"></a>
 
 ## Responsible AI Toolkit
 <a name="nova-responsible-ai-toolkit-overview"></a>

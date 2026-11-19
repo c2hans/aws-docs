@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data-
 ---
 
 # Data Validation Error Export
-<a name="data-validation-error-export"></a>
 
 Error records can be exported by choosing **Download** on the **Data Validation** report page when the validation is checking individual data points that failed.
 

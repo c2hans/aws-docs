@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/interface-
 ---
 
 # Additional interface examples
-<a name="interface-additional-examples"></a>
 
 Here are additional examples of how interfaces can be used in different industrial scenarios:
 

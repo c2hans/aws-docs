@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/lf-athena-limitations-c
 ---
 
 # Configure cross-account Data Catalog access
-<a name="lf-athena-limitations-cross-account"></a>
 
 To access a data catalog in another account, you can use Athena's cross-account AWS Glue feature or set up cross-account access in Lake Formation.
 

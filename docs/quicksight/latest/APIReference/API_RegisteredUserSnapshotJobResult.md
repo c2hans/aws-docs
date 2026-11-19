@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserSnapshotJobResult
-<a name="API_RegisteredUserSnapshotJobResult"></a>
 
 A structure that contains information about files that are requested for registered user during a `StartDashboardSnapshotJob` API call.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [DescribeReportCreation](API_DescribeReportCreation.md)

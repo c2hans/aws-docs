@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Profile
 ---
 
 # ProfileTime
-<a name="API_ProfileTime"></a>
 
  Contains the start time of a profile.
 

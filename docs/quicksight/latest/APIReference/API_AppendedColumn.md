@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Appen
 ---
 
 # AppendedColumn
-<a name="API_AppendedColumn"></a>
 
 Represents a column that will be included in the result of an append operation, combining data from multiple sources.
 

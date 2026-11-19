@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/populate-id
 ---
 
 # Populating an existing ID mapping table
-<a name="populate-id-mapping-table"></a>
 
 When new data is added to an ID namespace, use this workflow. If you have chosen to turn on incremental processing when you [created the ID mapping table](create-id-mapping-table.md#create-id-mapping-table-rule-based), you have the ability to processes only new, updated, or deleted records in either the Source or Target ID namespace, rather than recreating the entire ID mapping table.
 

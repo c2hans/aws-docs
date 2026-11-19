@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/chime-voice-connecto
 ---
 
 # Setting up third-party emergency routing numbers
-<a name="chime-voice-connector-emergency-calling"></a>
 
 To use emergency call routing numbers, you need the following:
 + An Amazon Chime SDK Voice Connector.

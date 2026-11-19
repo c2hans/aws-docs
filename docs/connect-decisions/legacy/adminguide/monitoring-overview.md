@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/moni
 ---
 
 # Logging and Monitoring AWS Supply Chain
-<a name="monitoring-overview"></a>
 
 Logging and Monitoring is an important part of maintaining the reliability, availability, and performance of AWS Supply Chain and your other AWS solutions. AWS provides the AWS CloudTrail monitoring tool to watch AWS Supply Chain, report when something is wrong, and take automatic actions when appropriate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Configure the Windows page file on Deadline Cloud workers
-<a name="examples-host-config-page-file"></a>
 
 The [worker\_configuration/windows/configure\_page\_file.ps1](https://github.com/aws-deadline/deadline-cloud-samples/blob/mainline/host_configuration_scripts/worker_configuration/windows/configure_page_file.ps1) script on the GitHub website configures the Windows page file size and placement on Deadline Cloud workers. It prefers local NVMe instance storage when available for the best performance.
 

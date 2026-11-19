@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetUsagePlan.h
 ---
 
 # GetUsagePlan
-<a name="API_GetUsagePlan"></a>
 
 Gets a usage plan of a given plan identifier.
 

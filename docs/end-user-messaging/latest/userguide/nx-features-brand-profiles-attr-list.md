@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # List brand profile attributes
-<a name="nx-features-brand-profiles-attr-list"></a>
 
 List every attribute on a brand profile. Each entry includes the attribute name, type, category, and when it was last updated.
 

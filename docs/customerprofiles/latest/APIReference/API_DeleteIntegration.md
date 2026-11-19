@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteIntegration
-<a name="API_connect-customer-profiles_DeleteIntegration"></a>
 
 Removes an integration from a specific domain.
 

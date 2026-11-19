@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/deployment-
 ---
 
 # Get deployment and component health status notifications
-<a name="deployment-health-notifications"></a>
 
 Amazon EventBridge event rules provide you with notifications about state changes for your Greengrass deployments received by your devices and for installed components on your device. EventBridge delivers a near real-time stream of system events that describes changes in AWS resources. AWS IoT Greengrass sends these events to EventBridge on a *best-effort* basis. This means that AWS IoT Greengrass attempts to send all events to EventBridge but, in some rare cases, an event might not be delivered. Additionally, AWS IoT Greengrass might send multiple copies of a given event, which means that your event listeners might not receive the events in the order that the events occurred.
 

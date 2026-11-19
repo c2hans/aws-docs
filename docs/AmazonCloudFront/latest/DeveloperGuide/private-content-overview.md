@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Restrict access to files
-<a name="private-content-overview"></a>
 
 You can control user access to your private content in two ways:
 + [Restrict access to files in CloudFront caches](#private-content-overview-edge-caches).

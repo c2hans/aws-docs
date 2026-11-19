@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/setting-env-var
 ---
 
 # Setting environment variables
-<a name="setting-env-vars"></a>
 
 Use the following instructions to set environment variables for an application in the Amplify console.
 

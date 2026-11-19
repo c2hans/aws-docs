@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/issues-cre
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Creating an issues view
-<a name="issues-creating-view"></a>
 
 You can create [views](issues-concepts.md#issues-concepts-views-definition) to quickly view issues that match a particular set of filters. This can help you save time and quickly view issues you have previously filtered, grouped, or sorted by.
 

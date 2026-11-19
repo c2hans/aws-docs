@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Limitations and considerations of local write forwarding in Aurora PostgreSQL
-<a name="aurora-postgresql-write-forwarding-limitations"></a>
 
  The following limitations currently apply to local write forwarding in Aurora PostgreSQL:
 +  Local write forwarding is not supported with RDS Proxy.

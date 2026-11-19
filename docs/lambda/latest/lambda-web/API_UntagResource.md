@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_UntagResour
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a web function.
 

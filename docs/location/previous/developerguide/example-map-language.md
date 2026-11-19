@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 ---
 
 # Example: Change the map language
-<a name="example-map-language"></a>
 
 ![Map of North America with city names labeled in Japanese characters.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/language-japanese_small.png)
 

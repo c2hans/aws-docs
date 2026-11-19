@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Create SaaS manager resources AWS SDK
-<a name="example_cloudfront_CreateSaasResources_section"></a>
 
 The following code example shows how to create a multi-tenant distribution and distribution tenant with various configurations.
 

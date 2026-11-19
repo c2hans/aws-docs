@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # Best practices
-<a name="cicd-best-practices"></a>
 
 The following are best practices for fully CI/CD pipelines:
 + **Secure the production environment** – Because it's possible to accomplish virtually everything necessary for account and environment maintenance by using IaC, it's important to make every effort to secure the production environment by limiting console and programmatic access. We recommend limiting access to only a few, or even zero, users. When you deploy IaC through AWS CloudFormation, the user needs limited permissions. Most permissions are assigned to the CloudFormation service through a service role. For more information, see [Service role](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-servicerole.html) in the CloudFormation documentation and [Implementing policies for least-privilege permissions for AWS CloudFormation](https://docs.aws.amazon.com/prescriptive-guidance/latest/least-privilege-cloudformation/introduction.html).

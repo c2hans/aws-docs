@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Range
-<a name="API_connect-customer-profiles_Range"></a>
 
 The relative time period over which data is included in the aggregation.
 

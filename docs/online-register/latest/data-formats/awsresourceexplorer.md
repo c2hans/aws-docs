@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 ---
 
 # Data retrieval APIs for AWS Resource Explorer
-<a name="awsresourceexplorer"></a>
 
 AWS Resource Explorer provides the following APIs for data retrieval.
 

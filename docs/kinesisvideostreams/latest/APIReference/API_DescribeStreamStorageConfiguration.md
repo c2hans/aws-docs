@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # DescribeStreamStorageConfiguration
-<a name="API_DescribeStreamStorageConfiguration"></a>
 
 Retrieves the current storage configuration for the specified Kinesis video stream.
 

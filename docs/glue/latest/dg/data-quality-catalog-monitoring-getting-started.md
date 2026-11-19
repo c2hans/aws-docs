@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-catalog-moni
 ---
 
 # Getting started with data quality monitoring at the catalog and database level
-<a name="data-quality-catalog-monitoring-getting-started"></a>
 
 Data quality monitoring at the catalog and database level evaluates every table in a AWS Glue Data Catalog catalog or database from a single data quality evaluation configuration, including tables that you add later. To learn how configurations choose tables, triggers, and rulesets, see [Data quality monitoring at the catalog and database level](data-quality-catalog-monitoring.md).
 

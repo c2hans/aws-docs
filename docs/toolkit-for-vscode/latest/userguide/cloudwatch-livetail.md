@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/clou
 ---
 
 # Amazon CloudWatch Logs Live Tail
-<a name="cloudwatch-livetail"></a>
 
 Live stream your CloudWatch log events as they are ingested into a particular Log Group with Amazon CloudWatch Logs Live Tail.
 

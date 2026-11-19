@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/snapchat-ads-support.html
 ---
 
 # AWS Glue support for Snapchat Ads
-<a name="snapchat-ads-support"></a>
 
 AWS Glue supports Snapchat Ads as follows:
 

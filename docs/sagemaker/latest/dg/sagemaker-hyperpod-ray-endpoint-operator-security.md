@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Security best practices for the HyperPod Ray Endpoint Operator
-<a name="sagemaker-hyperpod-ray-endpoint-operator-security"></a>
 
 The following best practices help you secure your HyperPod Ray Endpoint Operator deployment. For installation instructions, see [Installing the HyperPod Ray Endpoint Operator](sagemaker-hyperpod-ray-endpoint-operator.md).
 

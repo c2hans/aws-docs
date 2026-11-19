@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJo
 ---
 
 # RegisterJobDefinition
-<a name="API_RegisterJobDefinition"></a>
 
 Registers an AWS Batch job definition.
 

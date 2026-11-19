@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Test your knowledge base with queries and responses
-<a name="knowledge-base-test"></a>
 
 After you set up your knowledge base, you can test its behavior in the following ways:
 

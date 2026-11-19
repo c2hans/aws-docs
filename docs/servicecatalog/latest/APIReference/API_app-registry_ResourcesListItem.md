@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # ResourcesListItem
-<a name="API_app-registry_ResourcesListItem"></a>
 
  The resource in a list of resources.
 

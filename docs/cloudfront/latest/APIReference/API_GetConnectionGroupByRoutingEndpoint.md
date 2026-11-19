@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCo
 ---
 
 # GetConnectionGroupByRoutingEndpoint
-<a name="API_GetConnectionGroupByRoutingEndpoint"></a>
 
 Gets information about a connection group by using the endpoint that you specify.
 

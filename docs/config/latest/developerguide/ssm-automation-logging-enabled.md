@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ssm-automat
 ---
 
 # ssm-automation-logging-enabled
-<a name="ssm-automation-logging-enabled"></a>
 
 Checks if AWS Systems Manager Automation has Amazon CloudWatch logging enabled. The rule returns NON\_COMPLIANT if Systems Manager Automation doesn't have CloudWatch logging enabled.
 

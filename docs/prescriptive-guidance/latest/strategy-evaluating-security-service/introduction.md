@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ev
 ---
 
 # Deciding to adopt an AWS security service
-<a name="introduction"></a>
 
 *Diogo Guedes, Amazon Web Services*
 

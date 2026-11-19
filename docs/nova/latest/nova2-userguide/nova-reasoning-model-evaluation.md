@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-reasoni
 ---
 
 # Reasoning model evaluation
-<a name="nova-reasoning-model-evaluation"></a>
 
 ## Overview
 <a name="nova-reasoning-overview"></a>

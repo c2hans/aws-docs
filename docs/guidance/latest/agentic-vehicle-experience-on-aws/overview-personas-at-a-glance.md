@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Personas at a Glance
-<a name="overview-personas-at-a-glance"></a>
 
 AVX defines six personas. Each persona configures the agent’s data access scope (which ADP data products to load into LTM), its knowledge base filters (which categories of reference content to retrieve), and its communication style.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeNotebookInstance
-<a name="API_DescribeNotebookInstance"></a>
 
 Returns information about a notebook instance.
 

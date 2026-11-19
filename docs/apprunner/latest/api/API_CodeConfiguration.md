@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_CodeConfigurati
 ---
 
 # CodeConfiguration
-<a name="API_CodeConfiguration"></a>
 
 Describes the configuration that AWS App Runner uses to build and run an App Runner service from a source code repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Creating a directional business case
-<a name="directional-business-case"></a>
 
 Stakeholders from across the business should understand and buy into the business case for transformation each step along the way.
 

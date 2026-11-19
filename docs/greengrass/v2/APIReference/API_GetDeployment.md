@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_GetDeploy
 ---
 
 # GetDeployment
-<a name="API_GetDeployment"></a>
 
 Gets a deployment. Deployments define the components that run on Greengrass core devices.
 

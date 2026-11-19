@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # CloudTrail Lake availability change
-<a name="cloudtrail-lake-service-availability-change"></a>
 
 **Note**
 AWS CloudTrail Lake will no longer be open to new customers starting on May 31, 2026. For capabilities similar to CloudTrail Lake, explore CloudWatch.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_IdentityC
 ---
 
 # IdentityCenterConfiguration
-<a name="API_IdentityCenterConfiguration"></a>
 
 Specifies whether the workgroup is IAM Identity Center supported.
 

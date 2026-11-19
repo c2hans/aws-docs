@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_LocalHea
 ---
 
 # LocalHealthEventsConfig
-<a name="API_LocalHealthEventsConfig"></a>
 
 A complex type with the configuration information that determines the threshold and other conditions for when Internet Monitor creates a health event for a local performance or availability issue, when scores cross a threshold for one or more city-networks.
 

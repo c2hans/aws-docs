@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GroupQuery.h
 ---
 
 # GroupQuery
-<a name="API_GroupQuery"></a>
 
 A mapping of a query attached to a resource group that determines the AWS resources that are members of the group.
 

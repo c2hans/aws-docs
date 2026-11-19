@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateWirelessDeviceImportTask
-<a name="API_UpdateWirelessDeviceImportTask"></a>
 
 Update an import task to add more devices to the task.
 

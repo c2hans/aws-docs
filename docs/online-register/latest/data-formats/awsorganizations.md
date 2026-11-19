@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awso
 ---
 
 # Data retrieval APIs for AWS Organizations
-<a name="awsorganizations"></a>
 
 AWS Organizations provides the following APIs for data retrieval.
 

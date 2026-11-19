@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Lis
 ---
 
 # ListAccessTokens
-<a name="API_ListAccessTokens"></a>
 
 Lists all personal access tokens (PATs) associated with the user who calls the API. You can only list PATs associated with your AWS Builder ID.
 

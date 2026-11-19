@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/expor
 ---
 
 # Sample filters
-<a name="export-filter-samples"></a>
 
 ## Sample filter: Specifying vertex and edge properties for export
 <a name="export-filter-samples-1"></a>

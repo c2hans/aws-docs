@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CloudFo
 ---
 
 # CloudFormationProperties
-<a name="API_CloudFormationProperties"></a>
 
 Part of the provisioning properties of the environment blueprint.
 

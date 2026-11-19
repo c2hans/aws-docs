@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/wo
 ---
 
 # Workflows
-<a name="workflows"></a>
 
  To use Amazon MWAA Serverless for orchestration, first create a workflow as a YAML definition file. If you already have a Python DAG file, convert it to YAML with the [DAG converter](https://pypi.org/project/python-to-yaml-dag-converter-mwaa-serverless/) tool. For instructions, refer to [Convert Python DAG to YAML definition](workflows-migrate.md).
 

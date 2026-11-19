@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeTapes
-<a name="API_DescribeTapes"></a>
 
 Returns a description of virtual tapes that correspond to the specified Amazon Resource Names (ARNs). If `TapeARN` is not specified, returns a description of the virtual tapes associated with the specified gateway. This operation is only supported for the tape gateway type.
 

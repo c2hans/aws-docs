@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMachineLearningBatchPredictionsAccess
-<a name="AmazonMachineLearningBatchPredictionsAccess"></a>
 
 **Description**: Grants users permission to request Amazon Machine Learning batch predictions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Searching for FHIR Subscriptions with AWS HealthLake
-<a name="managing-fhir-subscriptions-searching"></a>
 
 `Subscription` and `SubscriptionTopic` resources are also searchable. HealthLake supports all the common [search parameters](https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhir-search-parameters.html#search-parameter-types) for Subscription and SubscriptionTopic resources.
 

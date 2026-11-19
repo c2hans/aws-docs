@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Planning the architecture
-<a name="plan-your-architecture"></a>
 
 The following diagram shows the baseline architecture of edge VPC and application VPCs that are connected by AWS Transit Gateway. The VPCs can be part of the same or different accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # UpdateContainerGroupDefinition
-<a name="API_UpdateContainerGroupDefinition"></a>
 
  **This API works with the following fleet types:** Container
 

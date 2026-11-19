@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mcp-sap/latest/awsforsapmcp/configuratio
 ---
 
 # Configuration Reference
-<a name="configuration-reference"></a>
 
 You configure the AWS for SAP Model Context Protocol (MCP) Server by using environment variables that begin with the prefix `MCP_SERVER_`. These variables fall into two groups: mandatory variables that must be set for the server to start, and optional variables that come with default values. When the server starts, it validates all configurations and returns a descriptive error if any validation rule is violated. After deployment, you can edit these configuration variables directly in the Amazon Bedrock AgentCore Runtime console.
 

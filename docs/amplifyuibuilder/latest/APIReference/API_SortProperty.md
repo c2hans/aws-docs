@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # SortProperty
-<a name="API_SortProperty"></a>
 
 Describes how to sort the data that you bind to a component.
 

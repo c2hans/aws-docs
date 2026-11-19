@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-eks-authrole.html
 ---
 
 # AWS.Compute.EKS.AuthRole
-<a name="node-eks-authrole"></a>
 
 An AuthRole allows you to add IAM roles to the Amazon EKS cluster `aws-auth` `ConfigMap` so that users can access the Amazon EKS cluster using an IAM role.
 

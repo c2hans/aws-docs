@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagementConsoleBasicUserAccess
-<a name="AWSManagementConsoleBasicUserAccess"></a>
 
 **Description**: Grants access to essential AWS Management Console features and user experience (UX) capabilities for non-administrative users.
 

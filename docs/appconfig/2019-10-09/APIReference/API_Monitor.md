@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Mo
 ---
 
 # Monitor
-<a name="API_Monitor"></a>
 
 Amazon CloudWatch alarms to monitor during the deployment process.
 

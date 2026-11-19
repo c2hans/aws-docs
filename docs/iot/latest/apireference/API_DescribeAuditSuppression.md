@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAudi
 ---
 
 # DescribeAuditSuppression
-<a name="API_DescribeAuditSuppression"></a>
 
  Gets information about a Device Defender audit suppression.
 

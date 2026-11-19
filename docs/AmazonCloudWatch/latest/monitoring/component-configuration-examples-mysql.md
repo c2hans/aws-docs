@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # RDS MariaDB and RDS MySQL
-<a name="component-configuration-examples-mysql"></a>
 
 The following example shows a component configuration in JSON format for RDS MariaDB and RDS MySQL.
 

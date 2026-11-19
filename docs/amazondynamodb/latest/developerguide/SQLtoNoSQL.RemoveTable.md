@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences between a relational (SQL) database and DynamoDB when removing a table
-<a name="SQLtoNoSQL.RemoveTable"></a>
 
 In SQL, you use the `DROP TABLE` statement to remove a table. In Amazon DynamoDB, you use the `DeleteTable` operation.
 

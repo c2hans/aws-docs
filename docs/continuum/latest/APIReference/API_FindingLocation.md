@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Findin
 ---
 
 # FindingLocation
-<a name="API_FindingLocation"></a>
 
 A code location a finding points at.
 

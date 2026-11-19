@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/account-service-r
 ---
 
 # Managing the account service role with the API
-<a name="account-service-role-apis"></a>
 
 |  |
 | --- |

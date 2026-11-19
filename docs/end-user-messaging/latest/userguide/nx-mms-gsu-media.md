@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-m
 ---
 
 # Step 2: Store your media in Amazon S3
-<a name="nx-mms-gsu-media"></a>
 
 AWS End User Messaging sends MMS media from an Amazon S3 bucket. You store your image, audio, video, or other media files in Amazon S3, and reference each file by its Amazon S3 URI when you send. The Amazon S3 bucket must be in the same AWS account and AWS Region as your MMS-capable origination identity, and the identity that calls `send-media-message` must have read access to the bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # RuleReference
-<a name="API_RuleReference"></a>
 
 A reference to a rule in a create or update request.
 

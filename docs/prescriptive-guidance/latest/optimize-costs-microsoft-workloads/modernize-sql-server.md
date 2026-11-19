@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Modernize SQL Server databases
-<a name="modernize-sql-server"></a>
 
 ## Overview
 <a name="modernize-sql-server-overview"></a>

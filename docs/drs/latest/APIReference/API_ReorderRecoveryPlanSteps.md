@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ReorderRecov
 ---
 
 # ReorderRecoveryPlanSteps
-<a name="API_ReorderRecoveryPlanSteps"></a>
 
 Reorders steps in a Recovery Plan. Accepts a complete ordered list of step ARNs.
 

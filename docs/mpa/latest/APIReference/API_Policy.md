@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_Policy.html
 ---
 
 # Policy
-<a name="API_Policy"></a>
 
 Contains details for a policy. Policies define what operations a team that define the permissions for team resources.
 

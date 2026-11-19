@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Start
 ---
 
 # StartCopyJob
-<a name="API_StartCopyJob"></a>
 
 Starts a job to create a one-time copy of the specified resource.
 

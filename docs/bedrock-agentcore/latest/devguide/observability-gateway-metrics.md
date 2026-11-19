@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observ
 ---
 
 # AgentCore generated gateway observability data
-<a name="observability-gateway-metrics"></a>
 
 The following sections describe the gateway metrics, logs, and spans output by AgentCore to Amazon CloudWatch. These metrics aren’t available on the CloudWatch generative AI observability page. Gateway metrics are batched at one minute intervals. To learn more about viewing gateway metrics, see [View observability data for your Amazon Bedrock AgentCore agents](observability-view.md).
 

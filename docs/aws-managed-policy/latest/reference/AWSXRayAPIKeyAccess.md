@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSX
 ---
 
 # AWSXRayAPIKeyAccess
-<a name="AWSXRayAPIKeyAccess"></a>
 
 **Description**: Grants permissions to call AWS X-Ray using API key authentication.
 

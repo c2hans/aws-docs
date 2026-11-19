@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rea
 ---
 
 # DynamoDB read and write operations
-<a name="read-write-operations"></a>
 
 DynamoDB read operations allow you to retrieve one or more items from a table by specifying the partition key value and, optionally, the sort key value. Using DynamoDB write operations, you can insert, update, or delete items in a table. This topic explains capacity unit consumption for these two operations.
 

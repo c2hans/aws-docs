@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # Amazon Elastic Container Service deploy action reference
-<a name="action-reference-ECS"></a>
 
 You can use an Amazon ECS action to deploy an Amazon ECS service and task set. An Amazon ECS service is a container application that is deployed to an Amazon ECS cluster. An Amazon ECS cluster is a collection of instances that host your container application in the cloud. The deployment requires a task definition that you create in Amazon ECS and an image definitions file that CodePipeline uses to deploy the image.
 

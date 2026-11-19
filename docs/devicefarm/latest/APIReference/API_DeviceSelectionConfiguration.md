@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Devic
 ---
 
 # DeviceSelectionConfiguration
-<a name="API_DeviceSelectionConfiguration"></a>
 
 Represents the device filters used in a test run and the maximum number of devices to be included in the run. It is passed in as the `deviceSelectionConfiguration` request parameter in [ScheduleRun](API_ScheduleRun.md).
 

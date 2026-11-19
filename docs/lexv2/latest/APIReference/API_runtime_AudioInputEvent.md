@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Au
 ---
 
 # AudioInputEvent
-<a name="API_runtime_AudioInputEvent"></a>
 
 Represents a chunk of audio sent from the client application to Amazon Lex. The audio is all or part of an utterance from the user.
 

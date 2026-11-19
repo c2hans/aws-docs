@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/about-pointbas
 ---
 
 # How point-based scoring is calculated in Connect Customer
-<a name="about-pointbased-scoring"></a>
 
 The overall evaluation score in point-based mode is calculated as follows:
 

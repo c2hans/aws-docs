@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-runtim
 ---
 
 # Specify two runtimes
-<a name="sample-runtime-two-major-version-runtimes"></a>
 
 You can specify more than one runtime in the same CodeBuild build project. This sample project uses two source files: one that uses the Go runtime and one that uses the Node.js runtime.
 

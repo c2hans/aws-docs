@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CreateSt
 ---
 
 # CreateStorageLocation
-<a name="API_CreateStorageLocation"></a>
 
 Creates a bucket in Amazon S3 to store application versions, logs, and other files used by Elastic Beanstalk environments. The Elastic Beanstalk console and EB CLI call this API the first time you create an environment in a region. If the storage location already exists, `CreateStorageLocation` still returns the bucket name but does not create a new bucket.
 

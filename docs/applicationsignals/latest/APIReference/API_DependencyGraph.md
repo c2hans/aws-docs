@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # DependencyGraph
-<a name="API_DependencyGraph"></a>
 
 A structure that represents the dependency relationships relevant to an audit finding, containing nodes and edges that show how services and resources are connected.
 

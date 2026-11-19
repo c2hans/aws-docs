@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AudioSpeci
 ---
 
 # AudioSpecification
-<a name="API_AudioSpecification"></a>
 
 Specifies the audio input specifications.
 

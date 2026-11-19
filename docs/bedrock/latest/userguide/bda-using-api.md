@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-using-api.h
 ---
 
 # Using the Bedrock Data Automation API
-<a name="bda-using-api"></a>
 
 The Amazon Bedrock Data Automation (BDA) feature provides a streamlined API workflow for processing your data. For all modalities, this workflow consists of three main steps: creating a project, invoking the analysis, and retrieving the results. To retrieve custom output for your processed data, you provide the Blueprint ARN when you invoke the analysis operation.
 

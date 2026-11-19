@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-addlist.html
 ---
 
 # Address Lists
-<a name="eb-addlist"></a>
 
 Address Lists is a Mail Manager feature that allows you to create and manage lists of email addresses and domains that you can use in traffic policies and rule sets to process incoming mail based on whether or not the recipient or sender of a message belongs to a specific list. Address Lists lends themselves to more granular control over email flows and help to simplify management of complex email routing scenarios.
 

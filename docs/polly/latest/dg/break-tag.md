@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/break-tag.html
 ---
 
 # Adding a pause
-<a name="break-tag"></a>
 
 *<break>*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SecurityConfigura
 ---
 
 # SecurityConfiguration
-<a name="API_SecurityConfiguration"></a>
 
 Specifies a security configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Secur
 ---
 
 # SecurityConfigurationData
-<a name="API_SecurityConfigurationData"></a>
 
 Configurations related to the security configuration for the request.
 

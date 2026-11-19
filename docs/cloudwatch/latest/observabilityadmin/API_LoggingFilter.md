@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # LoggingFilter
-<a name="API_LoggingFilter"></a>
 
  Configuration that determines which WAF log records to keep or drop based on specified conditions.
 

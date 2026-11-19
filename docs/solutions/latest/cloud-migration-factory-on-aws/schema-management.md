@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Schema management
-<a name="schema-management"></a>
 
 The Cloud Migration Factory on AWS solution provides a fully extensible metadata repository, allowing data for automation, auditing and status tracking to be stored in a single tool. The repository provides a default set of entities (Waves, Applications, Servers, and Databases) and attributes at deployment time to get you started with capturing and using the most frequently used data, and from here you can customize the schema as required.
 

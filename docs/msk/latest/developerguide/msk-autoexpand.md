@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-autoexpand
 ---
 
 # Automatic scaling for Amazon MSK clusters
-<a name="msk-autoexpand"></a>
 
 To automatically expand your cluster's storage in response to increased usage, you can configure an Application Auto-Scaling policy for Amazon MSK. In an auto-scaling policy, you set the target disk utilization and the maximum scaling capacity.
 

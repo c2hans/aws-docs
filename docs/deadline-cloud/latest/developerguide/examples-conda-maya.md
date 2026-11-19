@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Build an Autodesk Maya conda package for Deadline Cloud
-<a name="examples-conda-maya"></a>
 
 The samples repository on the GitHub website includes the following Maya conda recipes. Each recipe configures the `MAYA_MODULE_PATH` environment variable so that Maya loads plugin `.mod` files placed in the standard plugin paths:
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-m
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Agent profiles
-<a name="agent-manage-profiles"></a>
 
 After you create an agent profile, you can manage it from the AWS WA Agent console in **Agent profiles**. You can update goals, pillars, accounts, and application context at any time. If you have multiple profiles, you can switch between them to view profile-scoped recommendations and reviews.
 

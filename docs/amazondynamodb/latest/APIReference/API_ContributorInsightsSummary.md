@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # ContributorInsightsSummary
-<a name="API_ContributorInsightsSummary"></a>
 
 Represents a Contributor Insights summary entry.
 

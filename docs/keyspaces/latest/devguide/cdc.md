@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cdc.html
 ---
 
 # Working with change data capture (CDC) streams in Amazon Keyspaces
-<a name="cdc"></a>
 
 Amazon Keyspaces change data capture (CDC) records row-level change events from an Amazon Keyspaces table in near-real time.
 

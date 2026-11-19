@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-alertman
 ---
 
 # Create an alert manager configuration in Amazon Managed Service for Prometheus to manage and route alerts
-<a name="AMP-alertmanager-config"></a>
 
 To use alert manager and templating in Amazon Managed Service for Prometheus, you create an alert manager configuration YAML file. An Amazon Managed Service for Prometheus alert manager file has two main sections:
 + `template_files:` contains the templates used for messages sent by receivers. For more information, see [Template Reference](https://prometheus.io/docs/prometheus/latest/configuration/template_reference/) and [Template Examples](https://prometheus.io/docs/prometheus/latest/configuration/template_examples/) in the Prometheus documentation.

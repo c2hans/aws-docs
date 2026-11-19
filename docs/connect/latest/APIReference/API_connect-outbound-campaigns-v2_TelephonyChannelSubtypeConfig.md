@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TelephonyChannelSubtypeConfig
-<a name="API_connect-outbound-campaigns-v2_TelephonyChannelSubtypeConfig"></a>
 
 The configuration for the telephony channel subtype.
 

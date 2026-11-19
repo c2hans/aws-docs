@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/notebook-interface-e
 ---
 
 # Connect to a Notebook Instance Through a VPC Interface Endpoint
-<a name="notebook-interface-endpoint"></a>
 
 You can connect to your notebook instance from your VPC through an [interface endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in your Virtual Private Cloud (VPC) instead of connecting over the public internet. When you use a VPC interface endpoint, communication between your VPC and the notebook instance is conducted entirely and securely within the AWS network.
 

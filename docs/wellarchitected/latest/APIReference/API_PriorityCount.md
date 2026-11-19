@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # PriorityCount
-<a name="API_PriorityCount"></a>
 
 Pair of a recommendation Priority and the number of recommendations attributed to it in a CoverageSummary.
 

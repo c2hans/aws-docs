@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GitHub
 ---
 
 # GitHubTarget
-<a name="API_GitHubTarget"></a>
 
 The git Hub Target.
 

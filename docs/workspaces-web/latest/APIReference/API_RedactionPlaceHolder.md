@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_R
 ---
 
 # RedactionPlaceHolder
-<a name="API_RedactionPlaceHolder"></a>
 
 The redaction placeholder that will replace the redacted text in session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QuickCon
 ---
 
 # QuickConnectContactData
-<a name="API_QuickConnectContactData"></a>
 
  Contact data associated with quick connect operations.
 

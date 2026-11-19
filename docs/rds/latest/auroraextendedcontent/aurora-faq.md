@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Amazon Aurora FAQ
-<a name="aurora-faq"></a>
 
 ## What is Amazon Aurora?
 <a name="aurora-faq-what-is-amazon-aurora"></a>

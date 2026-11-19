@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_CreateFileSy
 ---
 
 # CreateFileSystem
-<a name="API_CreateFileSystem"></a>
 
 Creates a new, empty file system. The operation requires a creation token in the request that Amazon EFS uses to ensure idempotent creation (calling the operation with same creation token has no effect). If a file system does not currently exist that is owned by the caller's AWS account with the specified creation token, this operation does the following:
 + Creates a new, empty file system. The file system will have an Amazon EFS assigned ID, and an initial lifecycle state `creating`.
@@ -233,7 +232,7 @@ Type: String
 Valid Values: `creating | available | updating | deleting | deleted | error`
 
  ** [Name](#API_CreateFileSystem_ResponseSyntax) **   <a name="efs-CreateFileSystem-response-Name"></a>
-You can add tags to a file system, including a `Name` tag. For more information, see [CreateFileSystem](#API_CreateFileSystem). If the file system has a `Name` tag, Amazon EFS returns the value in this field.
+You can add tags to a file system, including a `Name` tag. For more information, see [CreateFileSystem](API_CreateFileSystem.md). If the file system has a `Name` tag, Amazon EFS returns the value in this field.
 Type: String
 Length Constraints: Maximum length of 256.
 Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`

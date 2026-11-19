@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Im
 ---
 
 # ImportStatistics
-<a name="API_ImportStatistics"></a>
 
  Provides statistics for the specified `ImportID`. CloudTrail does not update import statistics in real-time. Returned values for parameters such as `EventsCompleted` may be lower than the actual value, because CloudTrail updates statistics incrementally over the course of the import.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheUsageLimits
-<a name="API_CacheUsageLimits"></a>
 
 The usage limits for storage and ElastiCache Processing Units for the cache.
 

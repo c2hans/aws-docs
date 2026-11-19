@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_RdsDbU
 ---
 
 # RdsDbUserDetails
-<a name="API_RdsDbUserDetails"></a>
 
 Contains information about the user and authentication details for a database instance involved in the finding.
 

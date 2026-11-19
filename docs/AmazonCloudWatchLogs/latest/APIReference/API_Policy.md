@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # Policy
-<a name="API_Policy"></a>
 
 A structure that contains information about one delivery destination policy.
 

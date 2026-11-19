@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteSchedu
 ---
 
 # DeleteScheduledAudit
-<a name="API_DeleteScheduledAudit"></a>
 
 Deletes a scheduled audit.
 

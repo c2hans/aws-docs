@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetSourc
 ---
 
 # GetSourceApiAssociation
-<a name="API_GetSourceApiAssociation"></a>
 
 Retrieves a `SourceApiAssociation` object.
 

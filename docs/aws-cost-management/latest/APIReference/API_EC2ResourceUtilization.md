@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EC2ResourceUtilization
-<a name="API_EC2ResourceUtilization"></a>
 
 Utilization metrics for the instance.
 

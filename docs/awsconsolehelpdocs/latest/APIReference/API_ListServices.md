@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/A
 ---
 
 # ListServices
-<a name="API_ListServices"></a>
 
 Returns a paginated list of AWS service identifiers that you can use as values for the `visibleServices` setting in [UpdateAccountCustomizations](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/API_UpdateAccountCustomizations.html). The available services vary by AWS partition. Use pagination to retrieve all results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AntennaDownlinkDemodDecodeConfig
-<a name="API_AntennaDownlinkDemodDecodeConfig"></a>
 
 Information about how AWS Ground Station should conﬁgure an antenna for downlink demod decode during a contact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/sync-shadow
 ---
 
 # Sync local device shadows with AWS IoT Core
-<a name="sync-shadows-with-iot-core"></a>
 
 The shadow manager component enables AWS IoT Greengrass to sync local device shadow states with AWS IoT Core. You must modify the configuration of the shadow manager component to include the `synchronization` configuration parameter, and specify the AWS IoT thing names for your devices, and the shadows that you want to sync.
 

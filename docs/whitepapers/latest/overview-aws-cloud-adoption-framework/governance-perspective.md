@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-ad
 Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-CAF-Audiobook/B0B48D8ZXL?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare), [Kindle](https://www.amazon.com/dp/B09X9DBL4V/ref=cm_sw_em_r_mt_dp_44NEN2KA1F5VN2AQCMCT), and as an [eBook](https://d1.awsstatic.com/whitepapers/aws-caf-ebook.pdf).
 
 # Governance perspective: control and oversight
-<a name="governance-perspective"></a>
 
 The *governance* perspective focuses on orchestrating your cloud initiatives while maximizing organizational benefits and minimizing transformation-related risks. It comprises seven capabilities shown in the following figure. Common stakeholders include chief transformation officer, CIO, CTO, CFO, CDO, and CRO.
 

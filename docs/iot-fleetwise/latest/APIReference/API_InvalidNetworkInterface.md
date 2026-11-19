@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_In
 ---
 
 # InvalidNetworkInterface
-<a name="API_InvalidNetworkInterface"></a>
 
 A reason a vehicle network interface isn't valid.
 

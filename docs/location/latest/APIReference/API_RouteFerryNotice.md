@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteFe
 ---
 
 # RouteFerryNotice
-<a name="API_RouteFerryNotice"></a>
 
 Notices are additional information returned that indicate issues that occurred during route calculation.
 

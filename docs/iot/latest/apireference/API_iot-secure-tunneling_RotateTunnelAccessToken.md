@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-t
 ---
 
 # RotateTunnelAccessToken
-<a name="API_iot-secure-tunneling_RotateTunnelAccessToken"></a>
 
 Revokes the current client access token (CAT) and returns new CAT for clients to use when reconnecting to secure tunneling to access the same tunnel.
 

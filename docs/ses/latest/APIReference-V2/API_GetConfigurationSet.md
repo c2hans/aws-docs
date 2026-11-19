@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetConfig
 ---
 
 # GetConfigurationSet
-<a name="API_GetConfigurationSet"></a>
 
 Get information about an existing configuration set, including the dedicated IP pool that it's associated with, whether or not it's enabled for sending email, and more.
 

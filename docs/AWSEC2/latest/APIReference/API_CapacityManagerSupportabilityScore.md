@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityM
 ---
 
 # CapacityManagerSupportabilityScore
-<a name="API_CapacityManagerSupportabilityScore"></a>
 
  The supportability score for a single instance type and Availability Zone combination.
 

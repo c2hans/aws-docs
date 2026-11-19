@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Descr
 ---
 
 # DescribeDatabase
-<a name="API_DescribeDatabase"></a>
 
 Returns information about the database, including the database name, time that the database was created, and the total number of tables found within the database. [Service quotas apply](https://docs.aws.amazon.com/timestream/latest/developerguide/ts-limits.html). See [code sample](https://docs.aws.amazon.com/timestream/latest/developerguide/code-samples.describe-db.html) for details.
 

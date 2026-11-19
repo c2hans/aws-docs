@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KGKey
 ---
 
 # KGKeyPairIds
-<a name="API_KGKeyPairIds"></a>
 
 A list of identifiers for the public keys that CloudFront can use to verify the signatures of signed URLs and signed cookies.
 

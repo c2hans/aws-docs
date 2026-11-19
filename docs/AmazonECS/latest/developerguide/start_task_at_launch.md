@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/start_ta
 ---
 
 # Running a script when you launch an Amazon ECS Linux container instance
-<a name="start_task_at_launch"></a>
 
 You might need to run a specific container on every container instance to deal with operations or security concerns such as monitoring, security, metrics, service discovery, or logging.
 

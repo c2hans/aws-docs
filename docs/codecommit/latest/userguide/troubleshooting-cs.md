@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/troubleshoot
 ---
 
 # Troubleshooting console errors and AWS CodeCommit
-<a name="troubleshooting-cs"></a>
 
 The following information might help you troubleshoot console errors when using AWS CodeCommit repositories.
 

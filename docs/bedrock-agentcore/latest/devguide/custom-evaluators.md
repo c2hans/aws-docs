@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/custom
 ---
 
 # Custom evaluators
-<a name="custom-evaluators"></a>
 
 Custom evaluators in AgentCore Evaluations allow you to define your own evaluator model, evaluation instruction and scoring schemas. You can create custom evaluators that are tailored to your specific use cases and evaluation requirements.
 

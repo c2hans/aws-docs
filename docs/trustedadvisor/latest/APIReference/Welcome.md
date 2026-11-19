@@ -3,8 +3,7 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/Welco
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 TrustedAdvisor Public API
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

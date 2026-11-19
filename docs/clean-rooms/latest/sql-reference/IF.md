@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/IF.html
 ---
 
 # IF expression
-<a name="IF"></a>
 
 The IF conditional function returns one of two values based on a condition.
 

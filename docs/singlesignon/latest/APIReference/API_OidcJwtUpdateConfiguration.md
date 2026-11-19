@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Oid
 ---
 
 # OidcJwtUpdateConfiguration
-<a name="API_OidcJwtUpdateConfiguration"></a>
 
 A structure that describes updated configuration settings for a trusted token issuer that supports OpenID Connect (OIDC) and JSON Web Tokens (JWTs).
 

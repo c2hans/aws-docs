@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Executi
 ---
 
 # ExecutionEvent
-<a name="API_ExecutionEvent"></a>
 
 Represents an event that occurred during a plan execution. These events provide a detailed timeline of the execution process.
 

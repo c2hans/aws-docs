@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Changes that introduce high or very high security risks in your environment
-<a name="acc-sec-high-risk-con"></a>
 
 The following changes introduce high or very high security risk in your environment:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Con
 ---
 
 # ConnectionStatusResourceTypeEventConfiguration
-<a name="API_ConnectionStatusResourceTypeEventConfiguration"></a>
 
 Connection status resource type event configuration object for enabling or disabling topic.
 

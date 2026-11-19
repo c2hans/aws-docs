@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_NdiSourceInf
 ---
 
 # NdiSourceInfo
-<a name="API_NdiSourceInfo"></a>
 
  Information about a single NDI® sender, including its name.
 

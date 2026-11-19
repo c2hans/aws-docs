@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-disable-
 ---
 
 # Disable code interpretation in Amazon Bedrock
-<a name="agents-disable-code-interpretation"></a>
 
 You can disable code interpretation in Amazon Bedrock at any time.
 

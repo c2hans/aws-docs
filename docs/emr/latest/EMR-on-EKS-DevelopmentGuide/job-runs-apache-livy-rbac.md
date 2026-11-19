@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Setting up the Apache Livy and Spark application permissions with role-based access control (RBAC)
-<a name="job-runs-apache-livy-rbac"></a>
 
 To deploy Livy, Amazon EMR on EKS creates a server service account and role and a Spark service account and role. These roles must have the necessary RBAC permissions to finish setup and run Spark applications.
 

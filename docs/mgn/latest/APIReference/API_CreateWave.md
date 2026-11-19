@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateWave.h
 ---
 
 # CreateWave
-<a name="API_CreateWave"></a>
 
 Create wave.
 

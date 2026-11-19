@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/DIV.htm
 ---
 
 # DIV function
-<a name="DIV"></a>
 
 The DIV operator returns the integral part of the division of dividend by divisor.
 

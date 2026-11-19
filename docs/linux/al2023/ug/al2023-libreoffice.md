@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/al2023-libreoffice.html
 ---
 
 # Tutorial: Install LibreOffice on AL2023
-<a name="al2023-libreoffice"></a>
 
 LibreOffice is a free, open-source office productivity suite that includes applications for word processing, spreadsheets, presentations, diagrams, databases, and formula editing. You can install LibreOffice on Amazon Linux 2023 (AL2023) instances to provide users with a full-featured desktop office suite.
 

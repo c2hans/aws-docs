@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/invoice
 ---
 
 # Troubleshooting topics for deleting invoice units
-<a name="invoice-configuration-delete-troubleshooting"></a>
 
 You can use the information on this page to resolve common issues when deleting invoice units or accounts.
 

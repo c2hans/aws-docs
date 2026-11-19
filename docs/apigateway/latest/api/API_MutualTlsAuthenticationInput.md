@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_MutualTlsAuthe
 ---
 
 # MutualTlsAuthenticationInput
-<a name="API_MutualTlsAuthenticationInput"></a>
 
 The mutual TLS authentication configuration for a custom domain name. If specified, API Gateway performs two-way authentication between the client and the server. Clients must present a trusted certificate to access your API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences in querying a table
-<a name="SQLtoNoSQL.ReadData.Query"></a>
 
 Another common access pattern is reading multiple items from a table, based on your query criteria.
 

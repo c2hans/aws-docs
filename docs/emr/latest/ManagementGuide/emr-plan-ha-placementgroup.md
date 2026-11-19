@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-ha-p
 ---
 
 # Amazon EMR integration with EC2 placement groups
-<a name="emr-plan-ha-placementgroup"></a>
 
 When you launch an Amazon EMR multiple primary node cluster on Amazon EC2, you have the option to use placement group strategies to specify how you want the primary node instances deployed to protect against hardware failure.
 

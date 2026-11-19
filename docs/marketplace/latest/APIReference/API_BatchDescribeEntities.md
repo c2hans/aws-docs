@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Batc
 ---
 
 # BatchDescribeEntities
-<a name="API_BatchDescribeEntities"></a>
 
 Returns metadata and content for multiple entities. This is the Batch version of the `DescribeEntity` API and uses the same IAM permission action as `DescribeEntity` API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelC
 ---
 
 # ModelCard
-<a name="API_ModelCard"></a>
 
 An Amazon SageMaker Model Card.
 

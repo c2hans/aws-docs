@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS User Notifications and AWS Organizations
-<a name="services-that-can-integrate-uno"></a>
 
 [AWS User Notifications](https://aws.amazon.com/notifications) is a central location for your AWS notifications.
 

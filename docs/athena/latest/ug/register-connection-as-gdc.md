@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/register-connection-as-
 ---
 
 # Register your connection as a Glue Data Catalog
-<a name="register-connection-as-gdc"></a>
 
 **Note**
 **AWS Glue Data Catalog federated connectors without Lambda** are already registered as a Glue Data Catalog and work with fine-grained access control and can ignore this section. See [Connector type support by data source](federated-queries.md#federated-queries-connector-support) for a list of connectors.

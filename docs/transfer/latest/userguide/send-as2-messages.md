@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/send-as2-messa
 ---
 
 # Sending and receiving AS2 messages
-<a name="send-as2-messages"></a>
 
 This section describes the processes for sending and receiving AS2 messages. It also provide details on filenames and locations associated with AS2 messages.
 

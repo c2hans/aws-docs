@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/colla
 ---
 
 # Collaborating with other AWS Supply Chain users
-<a name="collaboration"></a>
 
 You can collaborate with other AWS Supply Chain users to discuss supply chain related issues.
 

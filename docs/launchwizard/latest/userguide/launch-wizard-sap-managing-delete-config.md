@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Delete infrastructure configuration
-<a name="launch-wizard-sap-managing-delete-config"></a>
 
 1. From the left navigation pane, choose **SAP**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport_imag
 ---
 
 # Export a VM from an Amazon Machine Image (AMI) using VM Import/Export
-<a name="vmexport_image"></a>
 
 Exporting a VM file based on an Amazon Machine Image (AMI) is useful when you want to deploy a new, standardized instance in your virtualization environment. You can export most AMIs to Citrix Xen, Microsoft Hyper-V, or VMware vSphere.
 

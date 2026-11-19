@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_v
 ---
 
 # View an Amazon S3 Storage Lens dashboard configuration details
-<a name="storage_lens_viewing"></a>
 
 You can view a Amazon S3 Storage Lens dashboard from the Amazon S3 console, AWS CLI, and SDK for Java.
 

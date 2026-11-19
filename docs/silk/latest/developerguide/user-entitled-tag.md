@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/user-entitled
 ---
 
 # Learn about the silk:is-user-entitled meta tag
-<a name="user-entitled-tag"></a>
 
 The `<meta name="silk:is-user-entitled" content="true|false">` tag is a new meta tag introduced by the Amazon Silk web browser application. This tag is designed to inform Silk whether the current user is entitled to the content on the web page. It is particularly useful in scenarios where the webpage implements a paywall or other content restriction mechanism. Silk uses the value of this tag to decide whether the page content might be used by features such as web page summarization and Alexa on-screen intelligence.
 

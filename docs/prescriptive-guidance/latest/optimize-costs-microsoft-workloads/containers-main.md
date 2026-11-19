@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Containers
-<a name="containers-main"></a>
 
 Modernization is a transformational journey that offers many options, including decomposing monoliths to microservices, re-architecting applications to be event-driven by using serverless functions (AWS Lambda), and repurposing databases from SQL Server to Amazon Aurora or purpose-built managed databases. The modernization pathways to replatform .NET Framework applications to Linux and Windows containers require less effort than other modernization options. Containers offer the following benefits:
 + **Accelerate innovation** – Moving to containers makes it easier to automate stages of the development lifecycle that include building, testing, and deploying applications. By automating these processes, development and operations teams have more time to focus on innovating.

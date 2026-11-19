@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/bu
 ---
 
 # Build a serverless React Native mobile app by using AWS Amplify
-<a name="build-a-serverless-react-native-mobile-app-by-using-aws-amplify"></a>
 
 *Deekshitulu Pentakota, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Standalone applications
-<a name="standalone-applications"></a>
 
 In the following diagram, applications A and B are standalone mainframe applications. Each application consists of programs and subprograms that it uses exclusively.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # Switch back to user-managed partition keys
-<a name="service-managed-pk-configure-disable"></a>
 
 To switch a stream back to user-managed partition keys, call the `UpdateStreamRecordDistributionStrategy` API with `RecordDistributionStrategy` set to `USER_PARTITION_KEY`.
 

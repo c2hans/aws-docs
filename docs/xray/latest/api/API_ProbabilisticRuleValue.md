@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ProbabilisticRuleVal
 ---
 
 # ProbabilisticRuleValue
-<a name="API_ProbabilisticRuleValue"></a>
 
  The indexing rule configuration for probabilistic sampling.
 

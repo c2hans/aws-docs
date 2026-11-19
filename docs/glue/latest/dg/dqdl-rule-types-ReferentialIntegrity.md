@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-Referenti
 ---
 
 # ReferentialIntegrity
-<a name="dqdl-rule-types-ReferentialIntegrity"></a>
 
 Checks to what extent the values of a set of columns in the primary dataset are a subset of the values of a set of columns in a reference dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ListSessions
 ---
 
 # ListSessions
-<a name="API_ListSessions"></a>
 
 Returns a list of approval sessions. For more information, see [Session](https://docs.aws.amazon.com/mpa/latest/userguide/mpa-concepts.html) in the *Multi-party approval User Guide*.
 

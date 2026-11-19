@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-strlen.htm
 ---
 
 # JSON.STRLEN
-<a name="json-strlen"></a>
 
 Get lengths of the JSON string values at the path.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Multiple deployments with different namespaces
-<a name="multiple-deployments"></a>
 
 You can deploy multiple independent instances of Innovation Sandbox within the same AWS Organization by using a different namespace for each deployment. The **Namespace** parameter, which you set on each stack, prefixes all resources that the solution creates. As a result, deployments with different namespaces are fully isolated and do not interfere with one another.
 

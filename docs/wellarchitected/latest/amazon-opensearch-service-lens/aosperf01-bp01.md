@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF01-BP01 Maintain shard sizes at recommended ranges
-<a name="aosperf01-bp01"></a>
 
  Shard size is recommended in a range of 10 GiB to 50 GiB.
 

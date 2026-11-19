@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/company.ht
 ---
 
 # .company
-<a name="company"></a>
 
 Used as a generic extension for companies of all kinds.
 

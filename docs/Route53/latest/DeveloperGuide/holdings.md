@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/holdings.h
 ---
 
 # .holdings
-<a name="holdings"></a>
 
 Used by financial advisors, stockbrokers, and those who work with investments.
 

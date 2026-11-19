@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Server-side persona inference
-<a name="pt-persona-inference"></a>
 
 ## Why inference is server-side
 <a name="pt-inference-why"></a>

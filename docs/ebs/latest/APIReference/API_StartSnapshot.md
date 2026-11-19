@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/APIReference/API_StartSnapsho
 ---
 
 # StartSnapshot
-<a name="API_StartSnapshot"></a>
 
 Creates a new Amazon EBS snapshot. The new snapshot enters the `pending` state after the request completes.
 

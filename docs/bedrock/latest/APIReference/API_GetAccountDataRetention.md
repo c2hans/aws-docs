@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetAccou
 ---
 
 # GetAccountDataRetention
-<a name="API_GetAccountDataRetention"></a>
 
 Returns the account-wide data retention mode for Amazon Bedrock.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel11-b
 ---
 
 # REL11-BP01 Monitor all components of the workload to detect failures
-<a name="rel11-bp01"></a>
 
  You cannot heal, fail over, or scale a component until you know it has failed. Monitor every layer of your workload continuously and measure both technical health and business outcomes. When detection is fast and complete, automated and human responses have time to limit customer impact.
 

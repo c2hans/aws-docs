@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-sqoop-consid
 ---
 
 # Considerations with Sqoop on Amazon EMR
-<a name="emr-sqoop-considerations"></a>
 
 Consider the following items when you run Sqoop on Amazon EMR.
 

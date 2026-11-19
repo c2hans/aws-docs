@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Rule
 ---
 
 # RuleAction
-<a name="API_RuleAction"></a>
 
 Describes the action for a rule.
 

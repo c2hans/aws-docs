@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HealthChe
 ---
 
 # HealthCheckPathDestinationRequestObject
-<a name="API_HealthCheckPathDestinationRequestObject"></a>
 
 Describes a destination for a health check path in a request. Destinations can be in a different Availability Zone than the source (cross-AZ) or in a Local Zone (AZ to Local Zone), enabling remote health validation of your application.
 

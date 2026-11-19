@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationEventDatasetTargetDetails
-<a name="API_DataIntegrationEventDatasetTargetDetails"></a>
 
 The target dataset details for a DATASET event type.
 

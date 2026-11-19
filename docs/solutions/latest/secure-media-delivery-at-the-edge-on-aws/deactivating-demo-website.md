@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Deactivating demo website
-<a name="deactivating-demo-website"></a>
 
  **By redeploying CDK stack**
 

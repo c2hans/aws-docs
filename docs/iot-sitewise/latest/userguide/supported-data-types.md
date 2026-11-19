@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/supported-
 ---
 
 # Supported data types
-<a name="supported-data-types"></a>
 
 AWS IoT SiteWise query language supports the following data types.
 

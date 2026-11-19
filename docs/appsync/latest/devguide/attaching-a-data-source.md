@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/attaching-a-data
 ---
 
 # Attaching a data source in AWS AppSync
-<a name="attaching-a-data-source"></a>
 
 Data sources are resources in your AWS account that GraphQL APIs can interact with. AWS AppSync supports a multitude of data sources like AWS Lambda, Amazon DynamoDB, relational databases (Amazon Aurora Serverless), Amazon OpenSearch Service, and HTTP endpoints. An AWS AppSync API can be configured to interact with multiple data sources, enabling you to aggregate data in a single location. AWS AppSync can use existing AWS resources from your account or provision DynamoDB tables on your behalf from a schema definition.
 

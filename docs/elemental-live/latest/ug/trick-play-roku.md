@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/trick-play-roku
 ---
 
 # Trick-play track via the Image Media Playlist specification
-<a name="trick-play-roku"></a>
 
 In an HLS output group, you can support a trick-play track by providing an asset that follows the Image Media Playlist specification, version 0.4. The Elemental Live implementation follows the time-based method of the specification. The specification is located here:
 

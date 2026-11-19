@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-ds.htm
 ---
 
 # AWS Directory Service events
-<a name="events-ref-ds"></a>
 
 Directory Service sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

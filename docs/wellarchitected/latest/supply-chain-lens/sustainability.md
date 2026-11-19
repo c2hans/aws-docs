@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
  The sustainability pillar provides design principles, operational guidance, best-practices, and improvement plans to meet sustainability targets for your Amazon Web Services workloads.
 

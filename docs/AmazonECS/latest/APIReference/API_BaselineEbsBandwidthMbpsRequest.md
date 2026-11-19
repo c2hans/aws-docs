@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Baseli
 ---
 
 # BaselineEbsBandwidthMbpsRequest
-<a name="API_BaselineEbsBandwidthMbpsRequest"></a>
 
 The minimum and maximum baseline Amazon EBS bandwidth in megabits per second (Mbps) for instance type selection. This is important for workloads with high storage I/O requirements.
 

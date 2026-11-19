@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-analytic
 ---
 
 # Embedding AWS Quick Sight visuals and dashboards for anonymous users with a 1-click embed code
-<a name="embedded-analytics-1-click-public"></a>
 
 |  |
 | --- |

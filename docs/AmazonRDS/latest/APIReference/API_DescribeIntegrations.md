@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeIntegrations
-<a name="API_DescribeIntegrations"></a>
 
 Describe one or more zero-ETL integrations with Amazon Redshift.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Should a Single-AZ cell fail over if an AZ becomes unavailable? Or in the event of a gray failure?
-<a name="should-a-single-az-cell-fail-over-in-case-an-az-becomes-unavailable-or-even-in-case-of-gray-failure"></a>
 
  Cells are implemented primarily to limit the scope of a failure's impact. The failures this mainly helps with are those that cause cascading failures. Mainly, they are excessive load of resources and deployments with problems or bugs. This means that the cells isolate failure from deficiencies caused by single or multiple client load or an incorrect deployment in that cell. Cells were not intended to mitigate dependency failures or single points of failure. Therefore, they were not designed as failover domains.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Retaining Accelerate alarms
-<a name="acc-mem-retain-alarm"></a>
 
 When resources monitored by AMS are deleted, any alarms created by Alarm Manager for those resources are automatically deleted by Alarm Manager. If you need to retain certain alarms for auditing, compliance, or historical purposes, use the Alarm Manager retain-tagging capability.
 

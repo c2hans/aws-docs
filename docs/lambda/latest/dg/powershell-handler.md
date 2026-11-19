@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/powershell-handler.html
 ---
 
 # Define Lambda Event Function handler in PowerShell
-<a name="powershell-handler"></a>
 
 When a Lambda function is invoked, the Lambda handler invokes the PowerShell script.
 

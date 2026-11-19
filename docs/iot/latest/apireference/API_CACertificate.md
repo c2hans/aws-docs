@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CACertificat
 ---
 
 # CACertificate
-<a name="API_CACertificate"></a>
 
 A CA certificate.
 

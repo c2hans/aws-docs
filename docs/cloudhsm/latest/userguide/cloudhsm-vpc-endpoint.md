@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-vpc-e
 ---
 
 # AWS CloudHSM and VPC endpoints
-<a name="cloudhsm-vpc-endpoint"></a>
 
 You can establish a private connection between your VPC and AWS CloudHSM by creating an *interface VPC endpoint*. Interface endpoints are powered by [AWS PrivateLink](https://aws.amazon.com/privatelink), a technology that enables you to privately access AWS CloudHSM APIs without an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC don't need public IP addresses to communicate with AWS CloudHSM APIs. Traffic between your VPC and AWS CloudHSM does not leave the Amazon network.
 

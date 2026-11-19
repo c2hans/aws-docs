@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteRegist
 ---
 
 # DeleteRegistrationCode
-<a name="API_DeleteRegistrationCode"></a>
 
 Deletes a CA certificate registration code.
 

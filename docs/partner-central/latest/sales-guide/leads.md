@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/leads
 ---
 
 # Receiving leads shared by AWS
-<a name="leads"></a>
 
 Lead invitations from AWS appear in the **Lead invitations** tab, where you can accept or reject them within a 5-business-day window. You must accept a lead invitation before the full lead detail, including contact information, is made visible. Rejected leads are automatically removed from the **Lead invitations** tab.
 

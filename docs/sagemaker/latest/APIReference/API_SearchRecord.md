@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search
 ---
 
 # SearchRecord
-<a name="API_SearchRecord"></a>
 
 A single resource returned as part of the [Search](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) API response.
 

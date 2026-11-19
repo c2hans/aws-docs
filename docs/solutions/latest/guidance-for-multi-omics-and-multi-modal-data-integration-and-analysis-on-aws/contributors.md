@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Contributors
-<a name="contributors"></a>
 +  Karl Gutwin (Bioteam)
 +  Nicholas George (Bioteam)
 +  Sujaya Srinivasan (AWS)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/supported-ver
 ---
 
 # AWS CodeConnections supported providers and versions
-<a name="supported-versions-connections"></a>
 
 This chapter provides information about the providers and versions that AWS CodeConnections supports.
 

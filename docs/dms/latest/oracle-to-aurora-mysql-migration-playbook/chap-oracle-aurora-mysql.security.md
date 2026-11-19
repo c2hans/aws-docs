@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL security
-<a name="chap-oracle-aurora-mysql.security"></a>
 
 This section includes pages about Oracle and MySQL security-related topics.
 

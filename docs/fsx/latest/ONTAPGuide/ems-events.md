@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/ems-events.html
 ---
 
 # Monitoring FSx for ONTAP EMS events
-<a name="ems-events"></a>
 
 You can monitor FSx for ONTAP file system events using NetAPP ONTAP's native Events Management System (EMS). You can view these events using the NetApp ONTAP CLI.
 

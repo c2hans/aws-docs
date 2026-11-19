@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/billing-medialive-an
 ---
 
 # MediaLive Anywhere usage types
-<a name="billing-medialive-anywhere"></a>
 
 MediaLive Anywhere (EMLA) uses a simpler format than cloud-based channels:
 

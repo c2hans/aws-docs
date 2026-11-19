@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AwsEksWork
 ---
 
 # AwsEksWorkloadInfo
-<a name="API_AwsEksWorkloadInfo"></a>
 
 Information about the workload.
 

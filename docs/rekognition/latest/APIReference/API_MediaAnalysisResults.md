@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Medi
 ---
 
 # MediaAnalysisResults
-<a name="API_MediaAnalysisResults"></a>
 
 Contains the results for a media analysis job created with StartMediaAnalysisJob.
 

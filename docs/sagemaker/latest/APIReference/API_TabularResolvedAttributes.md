@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Tabula
 ---
 
 # TabularResolvedAttributes
-<a name="API_TabularResolvedAttributes"></a>
 
 The resolved attributes specific to the tabular problem type.
 

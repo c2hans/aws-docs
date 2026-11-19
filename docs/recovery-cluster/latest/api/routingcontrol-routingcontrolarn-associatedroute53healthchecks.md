@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontr
 ---
 
 # ListAssociatedRoute53HealthChecks
-<a name="routingcontrol-routingcontrolarn-associatedroute53healthchecks"></a>
 
 ## URI
 <a name="routingcontrol-routingcontrolarn-associatedroute53healthchecks-url"></a>

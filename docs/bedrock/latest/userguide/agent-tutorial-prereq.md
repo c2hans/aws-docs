@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agent-tutorial-
 ---
 
 # Prerequisites
-<a name="agent-tutorial-prereq"></a>
 
 Before you begin this tutorial, make sure you have the following:
 + AWS account with the following managed policies:

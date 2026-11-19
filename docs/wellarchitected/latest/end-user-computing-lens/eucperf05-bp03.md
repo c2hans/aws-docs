@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF05-BP03 Understand integrated storage capabilities (WorkSpaces)
-<a name="eucperf05-bp03"></a>
 
  Most existing workloads, either physical or virtual, will make use of integrated storage that provides the system drive and data drives. For virtualized desktops and servers, this will be virtual drives created from hyperconverged storage. Some workloads, if not already virtualized, may also have fast boot and data drives (like SSD or NVMe) or additional integrated storage in the form of internal hard drives or externally-connected hard drives that deliver large or faster storage for specific applications.
 

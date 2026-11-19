@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetPropertyg
 ---
 
 # GetPropertygraphSummary
-<a name="API_GetPropertygraphSummary"></a>
 
 Gets a graph summary for a property graph.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # PredictiveScalingMetric
-<a name="API_PredictiveScalingMetric"></a>
 
  Describes the scaling metric.
 

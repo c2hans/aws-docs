@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableFas
 ---
 
 # EnableFastSnapshotRestores
-<a name="API_EnableFastSnapshotRestores"></a>
 
 Enables fast snapshot restores for the specified snapshots in the specified Availability Zones.
 

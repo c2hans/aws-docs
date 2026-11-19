@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ba
 ---
 
 # BadRequestDetails
-<a name="API_BadRequestDetails"></a>
 
 Detailed information about the input that failed to satisfy the constraints specified by a call.
 

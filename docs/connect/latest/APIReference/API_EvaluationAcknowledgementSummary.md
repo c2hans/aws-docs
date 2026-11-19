@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationAcknowledgementSummary
-<a name="API_EvaluationAcknowledgementSummary"></a>
 
 Summary information about an evaluation acknowledgement.
 

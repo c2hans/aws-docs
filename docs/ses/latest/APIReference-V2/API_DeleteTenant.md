@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteTen
 ---
 
 # DeleteTenant
-<a name="API_DeleteTenant"></a>
 
 Delete an existing tenant.
 

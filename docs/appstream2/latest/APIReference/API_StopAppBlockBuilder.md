@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_StopA
 ---
 
 # StopAppBlockBuilder
-<a name="API_StopAppBlockBuilder"></a>
 
 Stops an app block builder.
 

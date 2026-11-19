@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTenan
 ---
 
 # ListTenants
-<a name="API_ListTenants"></a>
 
 List all tenants associated with your account in the current AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/edit
 ---
 
 # Editing the trust relationship for an existing IAM role
-<a name="edit_trust"></a>
 
 You can assign your existing IAM roles to your Directory Service users and groups. To do this, however, the role must have a trust relationship with Directory Service. When you use Directory Service to create a role using the procedure in [Creating a new IAM role](create_role.md), this trust relationship is automatically set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/freertos-po
 ---
 
 # Porting the Cellular Interface library
-<a name="freertos-porting-cellular"></a>
 
 FreeRTOS supports the AT commands of a TCP offloaded cellular abstraction layer. For more information, see the [Cellular Interface Library](https://freertos.org/cellular/index.html) and [Porting the Cellular Interface Library](https://freertos.org/cellular-porting-guide.html) on freertos.org.
 

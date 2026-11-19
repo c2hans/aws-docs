@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifec
 ---
 
 # Understanding the query lifecycle in Amazon Redshift
-<a name="introduction"></a>
 
 *Ethan Stark, Amazon Web Services*
 

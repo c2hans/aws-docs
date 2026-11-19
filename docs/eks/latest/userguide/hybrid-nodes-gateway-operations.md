@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-gatewa
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Amazon EKS Hybrid Nodes gateway operations
-<a name="hybrid-nodes-gateway-operations"></a>
 
 This page covers day-2 operations for the Amazon EKS Hybrid Nodes gateway, including high availability, failover behavior, monitoring, scaling, and VXLAN tunnel lifecycle. For installation instructions, see [Get started with EKS Hybrid Nodes gateway](hybrid-nodes-gateway-getting-started.md).
 

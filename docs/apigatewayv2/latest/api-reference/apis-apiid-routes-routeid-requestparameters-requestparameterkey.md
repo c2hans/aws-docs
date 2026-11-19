@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # RouteRequestParameter
-<a name="apis-apiid-routes-routeid-requestparameters-requestparameterkey"></a>
 
 Represents a route request parameter.
 

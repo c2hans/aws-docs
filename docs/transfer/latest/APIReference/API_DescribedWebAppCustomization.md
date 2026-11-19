@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedWebAppCustomization
-<a name="API_DescribedWebAppCustomization"></a>
 
 A structure that contains the customization fields for the web app. You can provide a title, logo, and icon to customize the appearance of your web app.
 

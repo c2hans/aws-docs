@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdminUpdateUserAttributes
-<a name="API_AdminUpdateUserAttributes"></a>
 
 Updates the specified user's attributes. To delete an attribute from your user, submit the attribute in your API request with a blank value.
 

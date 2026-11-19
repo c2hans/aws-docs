@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRuleDetails
-<a name="API_AwsWafRuleDetails"></a>
 
 Provides information about a AWS WAF rule. This rule specifies the web requests that you want to allow, block, or count.
 

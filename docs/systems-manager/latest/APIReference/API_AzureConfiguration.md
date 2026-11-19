@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AzureConfiguration
-<a name="API_AzureConfiguration"></a>
 
 The access details and targets for connecting to a Microsoft Azure tenant, including the application registration used for authentication and the subscriptions to target.
 

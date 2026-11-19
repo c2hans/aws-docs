@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/l
 ---
 
 # Deleting an AWS Lambda function by using the AWS Toolkit for JetBrains
-<a name="lambda-delete"></a>
 
 You can use the AWS Toolkit to delete an AWS Lambda function that is part of an AWS serverless application, or you can delete a standalone Lambda function.
 

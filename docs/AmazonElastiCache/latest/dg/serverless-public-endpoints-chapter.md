@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-p
 ---
 
 # Create a Valkey serverless cache with a public endpoint
-<a name="serverless-public-endpoints-chapter"></a>
 
 With a public endpoint, you can connect to an ElastiCache Serverless cache directly over the internet without a VPC. Public endpoints are available on ElastiCache Serverless for Valkey 9.0 or later.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # Putting the pieces together: EBS volume attachment
-<a name="putting-the-pieces-together-ebs-volume-attachment"></a>
 
  To create a better picture of how many of the pieces of the Nitro System operate together, let’s review what happens when a customer makes a public EC2 API call that changes the running state of their EC2 instance on a Nitro System. In particular, we’ll look at the case where a customer attaches an existing encrypted EBS volume to a running instance.
 

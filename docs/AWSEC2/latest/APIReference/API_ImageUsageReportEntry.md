@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageUsag
 ---
 
 # ImageUsageReportEntry
-<a name="API_ImageUsageReportEntry"></a>
 
 A single entry in an image usage report, detailing how an image is being used by a specific AWS account and resource type.
 

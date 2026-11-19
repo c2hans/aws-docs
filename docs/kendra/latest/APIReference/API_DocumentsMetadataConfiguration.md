@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Documents
 ---
 
 # DocumentsMetadataConfiguration
-<a name="API_DocumentsMetadataConfiguration"></a>
 
 Document metadata files that contain information such as the document access control information, source URI, document author, and custom attributes. Each metadata file contains metadata about a single document.
 

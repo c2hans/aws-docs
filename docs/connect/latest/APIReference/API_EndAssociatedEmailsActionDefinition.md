@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EndAssoc
 ---
 
 # EndAssociatedEmailsActionDefinition
-<a name="API_EndAssociatedEmailsActionDefinition"></a>
 
 End associated emails related to a case.
 

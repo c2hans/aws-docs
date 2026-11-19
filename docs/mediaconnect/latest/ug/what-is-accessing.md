@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/what-is-accessing
 ---
 
 # Accessing MediaConnect
-<a name="what-is-accessing"></a>
 
 You can access AWS Elemental MediaConnect using any of the following methods:
 + **AWS Management Console** – The procedures throughout this guide explain how to use the AWS Management Console to perform tasks for MediaConnect. To access MediaConnect using the console:

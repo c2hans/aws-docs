@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/routing-control/latest/APIReference/API_
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 There was a validation error on the request.
 

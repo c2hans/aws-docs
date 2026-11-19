@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/native-recipe-next
 ---
 
 # Next-Best-Action recipe
-<a name="native-recipe-next-best-action"></a>
 
 The Next-Best-Action (aws-next-best-action) recipe generates real-time recommendations for the next best actions for your users. The next best action for a user is the action that they will most likely take. For example, enrolling in your loyalty program, downloading your app, or applying for a credit card.
 

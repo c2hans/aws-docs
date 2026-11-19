@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/monito
 ---
 
 # Monitoring
-<a name="monitoring"></a>
 
 ## Dashboard
 <a name="dashboard"></a>

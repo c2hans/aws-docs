@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateSt
 ---
 
 # UpdateStreamRecordDistributionStrategy
-<a name="API_UpdateStreamRecordDistributionStrategy"></a>
 
 Updates the record distribution strategy for the specified Amazon Kinesis Data Streams on-demand data stream. The record distribution strategy determines how Amazon Kinesis Data Streams distributes records across the shards in a stream.
 

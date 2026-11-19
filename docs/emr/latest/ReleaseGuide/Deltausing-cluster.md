@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Deltausing-clust
 ---
 
 # Using a cluster with Delta Lake installed
-<a name="Deltausing-cluster"></a>
 
 **Topics**
 + [Use a Delta Lake cluster with Flink](Deltacluster-flink.md)

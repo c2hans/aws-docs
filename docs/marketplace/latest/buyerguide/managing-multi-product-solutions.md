@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/managing-m
 ---
 
 # Managing Your Multi-Product Solutions
-<a name="managing-multi-product-solutions"></a>
 
 ## Viewing Your Solutions
 <a name="viewing-your-solutions"></a>

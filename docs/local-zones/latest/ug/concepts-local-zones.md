@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/local-zones/latest/ug/concepts-local-zon
 ---
 
 # AWS Local Zones concepts
-<a name="concepts-local-zones"></a>
 
 These are the essential concepts in AWS Local Zones:
 + **Local Zone** — An extension of an AWS Region in geographic proximity to your users, where the Local Zone infrastructure is deployed.

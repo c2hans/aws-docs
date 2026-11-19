@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # MessageAttributeValue
-<a name="API_messaging-chime_MessageAttributeValue"></a>
 
 A list of message attribute values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/eq-aggregatio
 ---
 
 # $eq
-<a name="eq-aggregation"></a>
 
 The `$eq` aggregation operator compares two values and returns `true` if they are equal, otherwise returns `false`.
 

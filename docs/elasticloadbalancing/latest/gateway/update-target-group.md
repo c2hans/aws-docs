@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/upda
 ---
 
 # Update the target group for your Gateway Load Balancer listener
-<a name="update-target-group"></a>
 
 When you create a listener, you specify a rule for routing requests. This rule forwards requests to the specified target group. You can update the listener rule to forward requests to a different target group.
 

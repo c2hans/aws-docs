@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_Regis
 ---
 
 # RegisterSlackWorkspaceForOrganization
-<a name="API_RegisterSlackWorkspaceForOrganization"></a>
 
 Registers a Slack workspace for your AWS account. To call this API, your account must be part of an organization in AWS Organizations.
 

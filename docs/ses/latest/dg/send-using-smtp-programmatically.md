@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-using-smtp-programmat
 ---
 
 # Sending emails programmatically through the Amazon SES SMTP interface
-<a name="send-using-smtp-programmatically"></a>
 
 To send an email using the Amazon SES SMTP interface, you can use an SMTP-enabled programming language, email server, or application. Before you start, complete the tasks in [Getting started with sending email](getting-started-sending.md). You also need to get the following information:
 + Your Amazon SES SMTP credentials, which enable you to connect to the Amazon SES SMTP endpoint. To get your Amazon SES SMTP credentials, see [Obtaining Amazon SES SMTP credentials](smtp-credentials.md).

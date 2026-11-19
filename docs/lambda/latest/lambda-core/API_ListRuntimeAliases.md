@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_ListRuntim
 ---
 
 # ListRuntimeAliases
-<a name="API_ListRuntimeAliases"></a>
 
 Returns a paginated list of aliases for the specified runtime.
 

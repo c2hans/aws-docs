@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/permitt
 ---
 
 # Elements permitted in Amazon MQ for ActiveMQ configurations
-<a name="permitted-elements"></a>
 
 The following is a detailed listing of the elements permitted in Amazon MQ for ActiveMQ configurations. For more information, see [XML Configuration](https://activemq.apache.org/xml-configuration.html) in the Apache ActiveMQ documentation.
 

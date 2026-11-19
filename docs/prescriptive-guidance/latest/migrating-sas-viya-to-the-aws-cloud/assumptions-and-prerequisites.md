@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-s
 ---
 
 # Assumptions and prerequisites
-<a name="assumptions-and-prerequisites"></a>
 
 ## Knowledge requirements
 <a name="knowledge-requirements"></a>

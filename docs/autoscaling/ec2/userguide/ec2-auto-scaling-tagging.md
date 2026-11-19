@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Tag Auto Scaling groups and instances
-<a name="ec2-auto-scaling-tagging"></a>
 
 A *tag* is a custom attribute label that you assign or that AWS assigns to an AWS resource. Each tag has two parts:
 + A tag key (for example, `costcenter`, `environment`, or `project`)

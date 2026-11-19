@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Interpreting Amazon SQS JSON API responses
-<a name="sqs-json-api-responses"></a>
 
 When you send a request to Amazon SQS, it returns a JSON response with the results. The response structure depends on the API action you used.
 

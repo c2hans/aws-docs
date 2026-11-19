@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Serv
 ---
 
 # ServiceIntegrationConfig
-<a name="API_ServiceIntegrationConfig"></a>
 
  Information about the integration of DevOps Guru with another AWS service, such as AWS Systems Manager.
 

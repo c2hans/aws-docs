@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_List
 ---
 
 # ListIngestConfigurations
-<a name="API_ListIngestConfigurations"></a>
 
 Lists all IngestConfigurations in your account, in the AWS region where the API request is processed.
 

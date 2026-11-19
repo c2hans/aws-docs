@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_P
 ---
 
 # PeeringError
-<a name="API_PeeringError"></a>
 
 Describes an error associated with a peering request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BlockDevi
 ---
 
 # BlockDeviceMapping
-<a name="API_BlockDeviceMapping"></a>
 
 Describes a block device mapping, which defines the EBS volumes and instance store volumes to attach to an instance at launch.
 

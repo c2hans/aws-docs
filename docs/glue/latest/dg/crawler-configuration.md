@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/crawler-configuration.htm
 ---
 
 # Customizing crawler behavior
-<a name="crawler-configuration"></a>
 
 When you configure an AWS Glue crawler, you have several options for defining the behavior of your crawler.
 + **Incremental crawls** – You can configure a crawler to run incremental crawls to add only new partitions to the table schema.

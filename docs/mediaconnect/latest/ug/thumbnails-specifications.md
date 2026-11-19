@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/thumbnails-specif
 ---
 
 # Requirements for thumbnails
-<a name="thumbnails-specifications"></a>
 
 ## Requirements for the video source
 <a name="thumbnails-source-video-requirements"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/dev-mapli
 ---
 
 # Use Amazon Location MapLibre Geocoder GL plugin
-<a name="dev-maplibre-geocoder"></a>
 
 The Amazon Location MapLibre geocoder plugin is designed to make it easier for you to incorporate Amazon Location functionality into your JavaScript applications, when working with map rendering and geocoding using the [maplibre-gl-geocoder](https://github.com/maplibre/maplibre-gl-geocoder) library.
 

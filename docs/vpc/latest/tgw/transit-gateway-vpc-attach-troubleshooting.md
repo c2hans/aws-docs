@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/transit-gateway-vpc-attac
 ---
 
 # Troubleshoot AWS Transit Gateway VPC attachment creation
-<a name="transit-gateway-vpc-attach-troubleshooting"></a>
 
 The following topic can help you troubleshoot problems that you might have when you create a VPC attachment.
 

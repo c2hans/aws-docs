@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-provision
 ---
 
 # Customize a provisioning timeout period for cluster resize in Amazon EMR
-<a name="emr-provisioning-timeout-resize"></a>
 
 You can define a timeout period for provisioning Spot Instances for each fleet in your cluster. If Amazon EMR can't provision the Spot capacity, it cancels the resize request and stops its attempts to provision additional Spot capacity. When you create a cluster, you can configure the timeout. For a running cluster, you can add or update a timeout.
 

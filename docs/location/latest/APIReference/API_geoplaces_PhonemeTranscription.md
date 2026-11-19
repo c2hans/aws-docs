@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # PhonemeTranscription
-<a name="API_geoplaces_PhonemeTranscription"></a>
 
 How to pronounce the various components of the address or place.
 

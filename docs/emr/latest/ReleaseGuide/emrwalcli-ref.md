@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emrwalcli-ref.ht
 ---
 
 # Amazon EMR WAL (EMRWAL) CLI reference
-<a name="emrwalcli-ref"></a>
 
 The *EMRWAL Command Line Interface (EMRWAL CLI)* is a unified tool to manage your write-ahead log (WAL) for Amazon EMR. The EMRWAL CLI ships with EMR clusters when you enable WAL at the time that you create a cluster. For more information about enabling WAL, see [Write-ahead logs (WAL) for Amazon EMR](emr-hbase-wal.md).
 

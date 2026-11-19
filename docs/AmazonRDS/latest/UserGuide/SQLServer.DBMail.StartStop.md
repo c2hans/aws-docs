@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.DBM
 ---
 
 # Starting and stopping mail queue
-<a name="SQLServer.DBMail.StartStop"></a>
 
 Use the following instructions to start and stop the DB mail queue:
 

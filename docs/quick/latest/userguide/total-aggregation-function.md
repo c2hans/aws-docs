@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/total-aggregation
 ---
 
 # Total aggregation computation
-<a name="total-aggregation-function"></a>
 
 The total aggregation computation creates a grand total of the value. For example, you can create a computation to find the total revenue.
 

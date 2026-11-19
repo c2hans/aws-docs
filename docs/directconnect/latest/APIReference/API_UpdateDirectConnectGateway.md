@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Up
 ---
 
 # UpdateDirectConnectGateway
-<a name="API_UpdateDirectConnectGateway"></a>
 
 Updates the name of a current Direct Connect gateway.
 

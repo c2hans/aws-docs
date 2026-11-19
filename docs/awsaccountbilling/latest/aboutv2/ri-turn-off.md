@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn
 ---
 
 # Reserved Instances and Savings Plans discount sharing
-<a name="ri-turn-off"></a>
 
 The management account of an organization can control Reserved Instance discount and Savings Plans discount sharing for any accounts in that organization. AWS offers enhanced sharing capabilities by allowing organizations to define how commitment discounts are applied across their AWS accounts.
 

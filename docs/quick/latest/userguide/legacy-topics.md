@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/legacy-topics.htm
 ---
 
 # Working with legacy Topics
-<a name="legacy-topics"></a>
 
 |  |
 | --- |

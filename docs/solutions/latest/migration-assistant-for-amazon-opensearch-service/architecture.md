@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Architecture
-<a name="architecture"></a>
 
 This section describes the architecture of the Migration Assistant for Amazon OpenSearch Service solution.
 +  [Architecture overview](architecture-overview.md) — high-level diagram and description of the solution components.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Pr
 ---
 
 # PromptFlowNodeResourceConfiguration
-<a name="API_agent_PromptFlowNodeResourceConfiguration"></a>
 
 Contains configurations for a prompt from Prompt management to use in a node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # RenewalSummary
-<a name="API_RenewalSummary"></a>
 
 Describes the status of a SSL/TLS certificate renewal managed by Amazon Lightsail.
 

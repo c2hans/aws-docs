@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateConfiguredTableAssociation
-<a name="API_UpdateConfiguredTableAssociation"></a>
 
 Updates a configured table association.
 

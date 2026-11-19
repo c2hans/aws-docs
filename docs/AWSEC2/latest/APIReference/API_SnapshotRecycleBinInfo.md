@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SnapshotR
 ---
 
 # SnapshotRecycleBinInfo
-<a name="API_SnapshotRecycleBinInfo"></a>
 
 Information about a snapshot that is currently in the Recycle Bin.
 

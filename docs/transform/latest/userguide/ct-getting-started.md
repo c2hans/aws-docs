@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/ct-getting-st
 ---
 
 # Getting started
-<a name="ct-getting-started"></a>
 
 ## Prerequisites
 <a name="ct-prerequisites"></a>

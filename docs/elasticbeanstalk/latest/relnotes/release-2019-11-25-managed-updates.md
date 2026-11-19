@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk console enables managed updates by default on November 25, 2019
-<a name="release-2019-11-25-managed-updates"></a>
 
 Managed platform updates are now enabled by default for new environments created in the Elastic Beanstalk console.
 

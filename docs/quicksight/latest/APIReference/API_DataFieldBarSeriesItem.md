@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataF
 ---
 
 # DataFieldBarSeriesItem
-<a name="API_DataFieldBarSeriesItem"></a>
 
 The data field series item configuration of a `BarChartVisual`.
 

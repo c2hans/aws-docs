@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBInstanceStat
 ---
 
 # DBInstanceStatusInfo
-<a name="API_DBInstanceStatusInfo"></a>
 
 Provides a list of status information for a DB instance.
 

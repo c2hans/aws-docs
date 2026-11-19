@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-troublesho
 ---
 
 # Configuring interface VPC endpoints for Amazon SageMaker Unified Studio MCP
-<a name="spark-troubleshooting-agent-vpc-endpoints"></a>
 
-You can establish a private connection between your VPC and Amazon SageMaker Unified Studio MCP service by creating an *interface VPC endpoint*. Interface endpoints are powered by [Amazon VPC](https://aws.amazon.com/vpc/), which enables you to privately access the MCP server in your VPC without an internet gateway, NAT device, VPN connection, or connection. Instances in your VPC don't need public IP addresses to communicate with the MCP service and traffic between your VPC and MCP service does not leave the Amazon network.
+You can establish a private connection between your VPC and Amazon SageMaker Unified Studio MCP service by creating an *interface VPC endpoint*. Interface endpoints are powered by [Amazon VPC](https://aws.amazon.com/vpc/), which enables you to privately access the MCP server in your VPC without an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC don't need public IP addresses to communicate with the MCP service and traffic between your VPC and MCP service does not leave the Amazon network.
 
-Each interface endpoint is represented by one or more [Elastic Network Interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) in your VPC subnets. For more information, see [Interface VPC endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html) in the *Amazon VPC User Guide*.
+Each interface endpoint is represented by one or more [elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) in your VPC subnets. For more information, see [Interface VPC endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html) in the *Amazon VPC User Guide*.
 
 ## Step 1: Creating an interface VPC endpoint for Amazon SageMaker Unified Studio MCP
 <a name="create-vpc-endpoint"></a>
@@ -83,4 +82,4 @@ In both cases, the curl command returns a response: `{"Message":"...."}`. Return
 ## Step 4: Start using the MCP VPC endpoint
 <a name="use-vpc-endpoint"></a>
 
-Once you have verified the connection, you can follow the steps to configure the MCP in [Set up the Apache Spark agents](spark-troubleshooting-agent-setup.md). Simply use the private VPC endpoint in your MCP configuration.
+After you have verified the connection, you can follow the steps to configure the MCP server in [Set up the Apache Spark agents](spark-troubleshooting-agent-setup.md). Use the private VPC endpoint in your MCP configuration.

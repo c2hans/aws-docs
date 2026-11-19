@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/apigatewaymanagem
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `PostToConnection` with an AWS SDK or CLI
-<a name="apigatewaymanagementapi_example_apigatewaymanagementapi_PostToConnection_section"></a>
 
 The following code examples show how to use `PostToConnection`.
 

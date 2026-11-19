@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # INITCAP
-<a name="sql-reference-initcap"></a>
 
 ```
 INITCAP ( <character-expression> )

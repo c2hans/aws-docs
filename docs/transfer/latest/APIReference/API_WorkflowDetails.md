@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Workflo
 ---
 
 # WorkflowDetails
-<a name="API_WorkflowDetails"></a>
 
 Container for the `WorkflowDetail` data type. It is used by actions that trigger a workflow to begin execution.
 

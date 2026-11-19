@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/error-han
 ---
 
 # Handling errors in the AWS SDK for C\+\+
-<a name="error-handling"></a>
 
 The AWS SDK for C\+\+ does not use exceptions; however, you can use exceptions in your code. Every service client returns an outcome object that includes the result and an error code.
 

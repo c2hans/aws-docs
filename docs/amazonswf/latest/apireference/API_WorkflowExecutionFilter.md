@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionFilter
-<a name="API_WorkflowExecutionFilter"></a>
 
 Used to filter the workflow executions in visibility APIs by their `workflowId`.
 

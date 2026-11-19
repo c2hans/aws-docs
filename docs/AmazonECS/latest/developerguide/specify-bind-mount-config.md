@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-
 ---
 
 # Specify a bind mount in an Amazon ECS task definition
-<a name="specify-bind-mount-config"></a>
 
 For Amazon ECS tasks that are hosted on either Fargate or Amazon EC2 instances, the following task definition JSON snippet shows the syntax for the `volumes`, `mountPoints`, and `ephemeralStorage` objects for a task definition.
 

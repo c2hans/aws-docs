@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateCap
 ---
 
 # CreateCapacityReservation
-<a name="API_CreateCapacityReservation"></a>
 
 Creates a capacity reservation with the specified name and number of requested data processing units.
 

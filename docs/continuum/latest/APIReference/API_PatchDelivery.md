@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_PatchD
 ---
 
 # PatchDelivery
-<a name="API_PatchDelivery"></a>
 
 Delivery of a patch to a destination the customer owns: an object in the environment's source bucket or a pull request in the source repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Star
 ---
 
 # StartParticipantReplication
-<a name="API_StartParticipantReplication"></a>
 
 Starts replicating a publishing participant from a source stage to a destination stage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 9.3 – Have a documented plan for responding to security events
-<a name="best-practice-9-3"></a>
 
 Without a documented plan for addressing a security event involving your SAP applications, the security team’s response may be delayed, less comprehensive, and less effective both in mitigating the event and understanding its cause. Document security response patterns thoroughly for your SAP applications.
 

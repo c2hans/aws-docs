@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # fields
-<a name="CWL_QuerySyntax-Fields"></a>
 
  Use `fields` to show specific fields in query results.
 

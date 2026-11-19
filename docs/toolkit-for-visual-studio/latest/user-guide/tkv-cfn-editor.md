@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Using the CloudFormation Template Editor for Visual Studio
-<a name="tkv-cfn-editor"></a>
 
 The Toolkit for Visual Studio includes an CloudFormation template editor and CloudFormation template projects for Visual Studio. The supported features include:
 + Creating new templates (either empty or copied from an existing stack or sample template) using the supplied CloudFormation template project type.

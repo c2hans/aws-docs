@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.CA.3] Implement systematic exception tracking and review processes
-<a name="ag.ca.3-implement-systematic-exception-tracking-and-review-processes"></a>
 
  **Category:** FOUNDATIONAL
 

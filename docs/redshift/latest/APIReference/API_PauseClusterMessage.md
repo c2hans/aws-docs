@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_PauseCl
 ---
 
 # PauseClusterMessage
-<a name="API_PauseClusterMessage"></a>
 
 Describes a pause cluster operation. For example, a scheduled action to run the `PauseCluster` API operation.
 

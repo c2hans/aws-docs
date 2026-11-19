@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ByteContentDoc
-<a name="API_agent-runtime_ByteContentDoc"></a>
 
 This property contains the document to chat with, along with its attributes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 The ID of an EC2 instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/datadog-plu
 ---
 
 # Configuring the Amazon Q Developer Datadog plugin
-<a name="datadog-plugin"></a>
 
 The Datadog plugin is now part of the AWS assistant.
 

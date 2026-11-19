@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Use the solution
-<a name="use-the-solution"></a>
 
 This section explains how to use MDAA’s configuration capabilities to manage your data platform architecture.
 

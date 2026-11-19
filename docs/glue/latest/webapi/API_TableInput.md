@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TableInput.html
 ---
 
 # TableInput
-<a name="API_TableInput"></a>
 
 A structure used to define a table.
 

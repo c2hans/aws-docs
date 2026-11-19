@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_X12ControlN
 ---
 
 # X12ControlNumbers
-<a name="API_X12ControlNumbers"></a>
 
 Contains configuration for X12 control numbers used in X12 EDI generation. Control numbers are used to uniquely identify interchanges, functional groups, and transaction sets.
 

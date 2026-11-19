@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteRelationalDatabase
-<a name="API_DeleteRelationalDatabase"></a>
 
 Deletes a database in Amazon Lightsail.
 

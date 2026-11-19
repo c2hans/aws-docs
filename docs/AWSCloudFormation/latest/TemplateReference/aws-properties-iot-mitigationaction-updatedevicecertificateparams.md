@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::MitigationAction UpdateDeviceCertificateParams
-<a name="aws-properties-iot-mitigationaction-updatedevicecertificateparams"></a>
 
 Parameters to define a mitigation action that changes the state of the device certificate to inactive.
 

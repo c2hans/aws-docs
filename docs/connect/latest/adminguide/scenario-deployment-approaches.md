@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scenario-deplo
 ---
 
 # Scenario and deployment approaches in Connect Customer
-<a name="scenario-deployment-approaches"></a>
 
 Connect Customer offers self-service configuration and enables dynamic, personal, and natural customer engagement at any scale with a variety of migration and integration options. In this section, we explain the following scenarios and deployment approaches to consider when designing a workload for Connect Customer:
 + Traditional contact center

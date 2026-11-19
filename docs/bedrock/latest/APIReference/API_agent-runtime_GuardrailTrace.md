@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GuardrailTrace
-<a name="API_agent-runtime_GuardrailTrace"></a>
 
 The trace details used in the Guardrail.
 

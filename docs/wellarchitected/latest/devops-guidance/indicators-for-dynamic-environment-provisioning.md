@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for dynamic environment provisioning
-<a name="indicators-for-dynamic-environment-provisioning"></a>
 
 Practices for creating, maintaining, and managing multiple environments within a landing zone using automated processes.
 

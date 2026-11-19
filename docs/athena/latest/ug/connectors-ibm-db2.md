@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-ibm-db2.html
 ---
 
 # Amazon Athena IBM Db2 connector
-<a name="connectors-ibm-db2"></a>
 
 The Amazon Athena connector for Db2 enables Amazon Athena to run SQL queries on your IBM Db2 databases using JDBC.
 

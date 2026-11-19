@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-d
 ---
 
 # Describe or Update Discoverer
-<a name="v1-discoverers-id-discovererid"></a>
 
 ## URI
 <a name="v1-discoverers-id-discovererid-url"></a>

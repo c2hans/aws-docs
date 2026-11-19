@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetTy
 ---
 
 # AssetTypeItem
-<a name="API_AssetTypeItem"></a>
 
 The details of the asset type.
 

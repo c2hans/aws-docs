@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/lz-api-lis
 ---
 
 # Identify your landing zone
-<a name="lz-api-list"></a>
 
 Calling `ListLandingZones` can help you determine if your account is already set up with AWS Control Tower. This API returns one landing zone identifier (ARN) across any **commercial** region, regardless of the landing zone's home region. Landing zone ARNs are regionally unique.
 

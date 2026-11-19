@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/secretsmana
 ---
 
 # secretsmanager-using-cmk
-<a name="secretsmanager-using-cmk"></a>
 
 Checks if all secrets in AWS Secrets Manager are encrypted using the AWS managed key (`aws/secretsmanager`) or a customer managed key that was created in AWS Key Management Service (AWS KMS). The rule is COMPLIANT if a secret is encrypted using a customer managed key. This rule is NON\_COMPLIANT if a secret is encrypted using `aws/secretsmanager`.
 

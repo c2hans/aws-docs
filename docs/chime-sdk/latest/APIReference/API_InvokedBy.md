@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Invoke
 ---
 
 # InvokedBy
-<a name="API_InvokedBy"></a>
 
 Specifies the type of message that triggers a bot.
 

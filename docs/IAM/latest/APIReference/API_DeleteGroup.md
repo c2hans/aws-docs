@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteGroup.
 ---
 
 # DeleteGroup
-<a name="API_DeleteGroup"></a>
 
 Deletes the specified IAM group. The group must not contain any users or have any attached policies.
 

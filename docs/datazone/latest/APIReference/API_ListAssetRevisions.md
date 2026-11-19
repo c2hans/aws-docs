@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListAss
 ---
 
 # ListAssetRevisions
-<a name="API_ListAssetRevisions"></a>
 
 Lists the revisions for the asset.
 

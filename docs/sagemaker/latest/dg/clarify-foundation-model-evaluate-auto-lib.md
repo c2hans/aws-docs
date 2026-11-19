@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-m
 ---
 
 # Use the `fmeval` library to run an automatic evaluation
-<a name="clarify-foundation-model-evaluate-auto-lib"></a>
 
 Using the `fmeval` library in your own code gives you the most flexibility to customize your work flow. You can use the `fmeval`library to evaluate any LLM, and also to have more flexibility with your custom input datasets. The following steps show you how to set up your environment and how to run both a starting and a customized work flow using the `fmeval` library.
 

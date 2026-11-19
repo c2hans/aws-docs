@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-security-best-practice
 ---
 
 # Amazon SNS security best practices
-<a name="sns-security-best-practices"></a>
 
 AWS provides many security features for Amazon SNS. Review these security features in the context of your own security policy.
 

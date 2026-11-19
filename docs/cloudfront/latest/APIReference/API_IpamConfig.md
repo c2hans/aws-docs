@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_IpamC
 ---
 
 # IpamConfig
-<a name="API_IpamConfig"></a>
 
 The configuration IPAM settings that includes the quantity of CIDR configurations and the list of IPAM CIDR configurations.
 

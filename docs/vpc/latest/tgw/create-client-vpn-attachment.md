@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/create-client-vpn-attachm
 ---
 
 # Create a Client VPN attachment in AWS Transit Gateway
-<a name="create-client-vpn-attachment"></a>
 
 **Prerequisites**
 + You must have an existing transit gateway in your account.

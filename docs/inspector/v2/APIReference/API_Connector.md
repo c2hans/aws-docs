@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Connector.
 ---
 
 # Connector
-<a name="API_Connector"></a>
 
 Describes a connector that links an external cloud provider to Amazon Inspector for vulnerability scanning.
 

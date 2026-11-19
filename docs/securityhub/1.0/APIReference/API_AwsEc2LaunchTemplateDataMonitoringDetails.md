@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataMonitoringDetails
-<a name="API_AwsEc2LaunchTemplateDataMonitoringDetails"></a>
 
  The monitoring for an Amazon EC2 instance.
 

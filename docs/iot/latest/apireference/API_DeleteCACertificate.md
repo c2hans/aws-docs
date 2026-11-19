@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCACert
 ---
 
 # DeleteCACertificate
-<a name="API_DeleteCACertificate"></a>
 
 Deletes a registered CA certificate.
 

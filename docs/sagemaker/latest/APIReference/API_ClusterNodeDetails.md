@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterNodeDetails
-<a name="API_ClusterNodeDetails"></a>
 
 Details of an instance (also called a *node* interchangeably) in a SageMaker HyperPod cluster.
 

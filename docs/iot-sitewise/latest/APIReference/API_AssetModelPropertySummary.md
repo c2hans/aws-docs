@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetModelPropertySummary
-<a name="API_AssetModelPropertySummary"></a>
 
 Contains a summary of a property associated with a model. This includes information about which interfaces the property belongs to, if any.
 

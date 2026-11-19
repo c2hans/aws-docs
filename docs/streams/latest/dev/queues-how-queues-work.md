@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/queues-how-queues-wor
 ---
 
 # How queues work
-<a name="queues-how-queues-work"></a>
 
 A queue delivers records from a stream to a queue consumer, tracks the delivery state of each record, and redelivers any record that is not acknowledged in time. A queue consumer works in a repeating cycle: it receives a batch of visible records, processes them, and acknowledges the ones it successfully processes. A receive call waits up to `WaitTimeSeconds` for records to arrive before it returns, 9 seconds by default and up to 20, so a consumer instance that finds the queue empty does not need to back off and retry on its own. Acknowledging a record tells the queue that the record is processed, so the queue does not deliver it again. A queue can deliver a record only while the stream still retains it, so a record that is never acknowledged expires when the stream's retention period ends for that record.
 

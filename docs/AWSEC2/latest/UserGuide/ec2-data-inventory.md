@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-data-invento
 ---
 
 # Create an inventory of your EC2 instances
-<a name="ec2-data-inventory"></a>
 
 Amazon EC2 provides on-demand, scalable computing capacity. An EC2 instance is a virtual server that runs in the AWS network.
 

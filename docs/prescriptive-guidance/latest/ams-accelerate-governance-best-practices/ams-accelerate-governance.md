@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ams-acceler
 ---
 
 # AMS Accelerate operations plan governance
-<a name="ams-accelerate-governance"></a>
 
 ## Roles and responsibilities (RACI matrix)
 <a name="roles-and-responsibilities--raci-matrix-.9dc4440b-71e0-5ab7-af2c-0fd8cbd99a9b"></a>

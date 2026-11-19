@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_UpdateNetw
 ---
 
 # UpdateNetwork
-<a name="API_UpdateNetwork"></a>
 
 Updates the properties of an existing Wickr network, such as its name or encryption key configuration.
 

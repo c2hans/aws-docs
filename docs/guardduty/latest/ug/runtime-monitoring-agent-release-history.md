@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring-a
 ---
 
 # GuardDuty security agent release versions
-<a name="runtime-monitoring-agent-release-history"></a>
 
 GuardDuty releases an updated agent version from time to time. When GuardDuty manages the agent automatically, GuardDuty is designed to update the agent on your behalf. When you manage the agent manually, you are responsible to update the agent version for your resource types – Amazon EC2 instances, Amazon ECS clusters, and Amazon EKS clusters.
 

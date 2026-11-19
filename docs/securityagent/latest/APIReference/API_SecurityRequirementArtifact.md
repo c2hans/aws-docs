@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Se
 ---
 
 # SecurityRequirementArtifact
-<a name="API_SecurityRequirementArtifact"></a>
 
 A document used as source material for importing security requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Amazon Bedrock Agents
-<a name="bedrock-agents"></a>
 
 Amazon Bedrock Agents is a fully managed service that enables you to build and configure autonomous agents in your applications. It can orchestrate interactions between foundation models, data sources, software applications, and user conversations. Its streamlined approach to creating agents doesn't require you to provision capacity, manage infrastructure, or write custom code. For more information, see [What is Amazon Bedrock?](https://docs.aws.amazon.com/bedrock/latest/userguide/)
 

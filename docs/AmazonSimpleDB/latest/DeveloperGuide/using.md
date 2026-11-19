@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/usi
 ---
 
 # Using Amazon SimpleDB
-<a name="using"></a>
 
 **Topics**
 + [Available Libraries](AWSLibraries.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # FileInput
-<a name="API_benefits_FileInput"></a>
 
 Represents input information for uploading a file to a benefit application.
 

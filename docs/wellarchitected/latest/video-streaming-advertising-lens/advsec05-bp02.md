@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSEC05-BP02 Design for compliance across both linear and digital data flows
-<a name="advsec05-bp02"></a>
 
  When you design across datasets that can intersect, treat the joined result as its own compliance case. For example, household data and device data might each be fine on their own, but when you match them, they can pinpoint one person. The combined dataset then falls under tighter privacy obligations, even though you followed every rule on either data source.
 

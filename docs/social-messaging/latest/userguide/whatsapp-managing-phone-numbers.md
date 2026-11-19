@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/whatsa
 ---
 
 # Phone numbers in AWS End User Messaging Social
-<a name="whatsapp-managing-phone-numbers"></a>
 
 All WABAs contain one or more phone numbers used to verify your identity with WhatsApp and are used as part of your sending identity. You can have multiple phone numbers associated with a WhatsApp Business Account (WABA) and use each phone number for a different brand.
 

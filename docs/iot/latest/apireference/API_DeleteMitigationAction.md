@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteMitiga
 ---
 
 # DeleteMitigationAction
-<a name="API_DeleteMitigationAction"></a>
 
 Deletes a defined mitigation action from your AWS accounts.
 

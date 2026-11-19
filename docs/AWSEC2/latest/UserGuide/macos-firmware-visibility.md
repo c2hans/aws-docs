@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/macos-firmware-v
 ---
 
 # Find supported macOS versions for your Amazon EC2 Mac Dedicated Host
-<a name="macos-firmware-visibility"></a>
 
 You can view the latest macOS versions supported by your Amazon EC2 Mac Dedicated Host. With this functionality, you can validate whether your Dedicated Host can support instance launches with your preferred macOS versions.
 

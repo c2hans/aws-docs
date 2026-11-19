@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/dm-prerequisites.ht
 ---
 
 # Setting up homogeneous data migrations in AWS DMS
-<a name="dm-prerequisites"></a>
 
 To set up homogeneous data migrations in AWS DMS, complete the following prerequisite tasks.
 

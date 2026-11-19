@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 ---
 
 # Getting Started with CodeCatalyst and the AWS Toolkit for JetBrains
-<a name="codecatalyst-setup"></a>
 
 To get started working with CodeCatalyst from the JetBrains Gateway, complete the following.
 

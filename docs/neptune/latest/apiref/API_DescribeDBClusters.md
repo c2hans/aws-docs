@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeDBClus
 ---
 
 # DescribeDBClusters
-<a name="API_DescribeDBClusters"></a>
 
 Returns information about provisioned DB clusters, and supports pagination.
 
@@ -32,7 +31,7 @@ Type: Array of [Filter](API_Filter.md) objects
 Required: No
 
  ** Marker **
-An optional pagination token provided by a previous [DescribeDBClusters](#API_DescribeDBClusters) request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by `MaxRecords`.
+An optional pagination token provided by a previous [DescribeDBClusters](API_DescribeDBClusters.md) request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by `MaxRecords`.
 Type: String
 Required: No
 

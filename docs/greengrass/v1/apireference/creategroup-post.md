@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/creategroup-p
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # CreateGroup
-<a name="creategroup-post"></a>
 
 Creates a group. You can provide the initial version of the group or use `CreateGroupVersion` at a later time. Tip: You can use the `gg_group_setup` package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
 

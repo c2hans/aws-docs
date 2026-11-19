@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchHo
 ---
 
 # SearchHoursOfOperations
-<a name="API_SearchHoursOfOperations"></a>
 
 Searches the hours of operation in an Connect Customer instance, with optional filtering.
 

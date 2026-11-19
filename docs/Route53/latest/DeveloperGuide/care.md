@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/care.html
 ---
 
 # .care
-<a name="care"></a>
 
 Used by businesses or agencies in the care-giving field. Also used by charitable organizations.
 

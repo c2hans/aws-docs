@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetManage
 ---
 
 # GetManagedPrefixListEntries
-<a name="API_GetManagedPrefixListEntries"></a>
 
 Gets information about the entries for a specified managed prefix list.
 

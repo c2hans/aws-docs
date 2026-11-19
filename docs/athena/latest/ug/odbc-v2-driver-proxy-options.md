@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-proxy-op
 ---
 
 # Proxy options
-<a name="odbc-v2-driver-proxy-options"></a>
 
 ## Proxy host
 <a name="odbc-v2-driver-proxy-options-proxy-host"></a>

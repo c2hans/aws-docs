@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TaskAtta
 ---
 
 # TaskAttachment
-<a name="API_TaskAttachment"></a>
 
 Information about the task attachment files.
 

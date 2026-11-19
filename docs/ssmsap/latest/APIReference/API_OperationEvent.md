@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Operation
 ---
 
 # OperationEvent
-<a name="API_OperationEvent"></a>
 
 An operation event returns details for an operation, including key milestones which can be used to monitor and track operations in progress.
 

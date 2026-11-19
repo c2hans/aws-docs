@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Select
 ---
 
 # SelectiveExecutionConfig
-<a name="API_SelectiveExecutionConfig"></a>
 
 The selective execution configuration applied to the pipeline run.
 

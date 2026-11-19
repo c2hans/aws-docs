@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_List
 ---
 
 # ListStageSessions
-<a name="API_ListStageSessions"></a>
 
 Gets all sessions for a specified stage.
 

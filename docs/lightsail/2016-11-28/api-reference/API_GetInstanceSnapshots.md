@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetInstanceSnapshots
-<a name="API_GetInstanceSnapshots"></a>
 
 Returns all instance snapshots for the user's account.
 

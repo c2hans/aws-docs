@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/requirements-for-inf
 ---
 
 # Requirements for Elemental Inference
-<a name="requirements-for-inference"></a>
 
 Your organization might implement [AWS Elemental Inference features](elemental-inference.md) in a channel. Users who configure the channel to use these features need permissions to work with feeds.
 + Users need permissions to work with feeds. Users need these permissions even though they are using the MediaLive console or API to set up the feeds and to associate the channel with the feed.

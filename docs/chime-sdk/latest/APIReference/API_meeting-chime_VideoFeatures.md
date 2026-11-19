@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # VideoFeatures
-<a name="API_meeting-chime_VideoFeatures"></a>
 
 The video features set for the meeting. Applies to all attendees.
 

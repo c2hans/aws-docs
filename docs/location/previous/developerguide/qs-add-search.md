@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-add-
 ---
 
 # Add Amazon Location search to your application
-<a name="qs-add-search"></a>
 
 The last step for your application is to add searching on the map. In this case, you will add a reverse geocoding search, where you find the items at a location.
 

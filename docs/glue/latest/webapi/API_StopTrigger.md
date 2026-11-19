@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StopTrigger.html
 ---
 
 # StopTrigger
-<a name="API_StopTrigger"></a>
 
 Stops a specified trigger.
 

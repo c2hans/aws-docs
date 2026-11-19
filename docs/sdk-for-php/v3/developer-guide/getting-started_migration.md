@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-s
 ---
 
 # Migrating from Version 2 of the AWS SDK for PHP
-<a name="getting-started_migration"></a>
 
 This topic shows how to migrate your code to use version 3 of the AWS SDK for PHP and how the new version differs from version 2 of the SDK.
 

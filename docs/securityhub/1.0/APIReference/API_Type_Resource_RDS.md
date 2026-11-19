@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Amazon Relational Database Service (RDS) objects
-<a name="API_Type_Resource_RDS"></a>
 
 ****Amazon Relational Database Service (RDS) objects****
 + [AwsRdsDbClusterAssociatedRole](API_AwsRdsDbClusterAssociatedRole.md)

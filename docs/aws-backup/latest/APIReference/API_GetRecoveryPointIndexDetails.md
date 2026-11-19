@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetRe
 ---
 
 # GetRecoveryPointIndexDetails
-<a name="API_GetRecoveryPointIndexDetails"></a>
 
 This operation returns the metadata and details specific to the backup index associated with the specified recovery point.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # DnsThreatProtectionRuleTypeConfig
-<a name="API_route53resolver_DnsThreatProtectionRuleTypeConfig"></a>
 
 The configuration for a DNS threat protection rule type within the rule type framework.
 

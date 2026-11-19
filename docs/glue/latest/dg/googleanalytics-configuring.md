@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleanalytics-configuri
 ---
 
 # Configuring Google Analytics 4
-<a name="googleanalytics-configuring"></a>
 
 Before you can use AWS Glue to transfer from Google Analytics 4, you must meet these requirements:
 

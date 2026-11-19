@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ServiceView
-<a name="API_ServiceView"></a>
 
 Contains the configuration and properties of a Resource Explorer service view.
 

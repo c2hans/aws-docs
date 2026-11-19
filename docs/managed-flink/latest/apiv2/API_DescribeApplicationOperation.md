@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeA
 ---
 
 # DescribeApplicationOperation
-<a name="API_DescribeApplicationOperation"></a>
 
 Provides a detailed description of a specified application operation. To see a list of all the operations of an application, invoke the [ListApplicationOperations](API_ListApplicationOperations.md) operation.
 

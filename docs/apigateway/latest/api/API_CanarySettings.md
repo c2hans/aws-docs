@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CanarySettings
 ---
 
 # CanarySettings
-<a name="API_CanarySettings"></a>
 
 Configuration settings of a canary deployment.
 

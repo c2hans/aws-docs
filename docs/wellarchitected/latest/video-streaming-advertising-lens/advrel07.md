@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Privacy-enhanced collaboration reliability
-<a name="advrel07"></a>
 
  Privacy-enhanced collaboration systems (allowing multiple parties to work together on advertising campaigns and data analysis while protecting individual user privacy) require high reliability to maintain secure and consistent data sharing between parties while verifying data integrity and availability. Implementing reliable practices involves designing resilient architectures, maintaining data consistency, and verifying dependable recovery mechanisms while preserving privacy.
 

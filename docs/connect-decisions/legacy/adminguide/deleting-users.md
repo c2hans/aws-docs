@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/dele
 ---
 
 # Deleting users
-<a name="deleting-users"></a>
 
 As an AWS Supply Chain administrator, you can delete users from the AWS Supply Chain web application. Follow these steps to delete users.
 

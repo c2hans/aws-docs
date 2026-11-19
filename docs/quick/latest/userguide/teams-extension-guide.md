@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/teams-extension-g
 ---
 
 # AWS Quick Microsoft Teams extension
-<a name="teams-extension-guide"></a>
 
 **Note**
 Before you deploy a Microsoft Teams extension as an author, your Quick admin must [configure AWS Quick access to Microsoft Teams](https://docs.aws.amazon.com/quicksuite/latest/userguide/teams-extension.html).

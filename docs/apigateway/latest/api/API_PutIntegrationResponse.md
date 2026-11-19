@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_PutIntegration
 ---
 
 # PutIntegrationResponse
-<a name="API_PutIntegrationResponse"></a>
 
 Represents a put integration.
 

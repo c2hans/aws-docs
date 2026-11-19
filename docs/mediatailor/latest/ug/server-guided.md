@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/server-guided.html
 ---
 
 # MediaTailor server-guided ad insertion overview and implementation
-<a name="server-guided"></a>
 
 AWS Elemental MediaTailor server-guided ad insertion (SGAI) provides an alternative to server-side ad insertion by referencing ads as separate playlists rather than stitching them directly into media playlists. This approach improves performance through cacheable manifests and enables better scalability.
 

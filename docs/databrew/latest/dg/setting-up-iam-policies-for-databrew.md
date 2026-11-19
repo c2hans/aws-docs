@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/setting-up-iam-polici
 ---
 
 # Setting up IAM policies for DataBrew
-<a name="setting-up-iam-policies-for-databrew"></a>
 
 You use IAM policies to manage permissions. A policy makes it easier to add related permissions all at once, rather than one at a time.
 

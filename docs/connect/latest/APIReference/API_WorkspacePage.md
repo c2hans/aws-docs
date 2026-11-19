@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspacePage
-<a name="API_WorkspacePage"></a>
 
 Contains information about a page configuration in a workspace, including the view assigned to the page.
 

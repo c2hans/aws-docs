@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-view
 ---
 
 # View information about your guardrails
-<a name="guardrails-view"></a>
 
 You can view information about your guardrails by following these steps for the AWS Console or API:
 

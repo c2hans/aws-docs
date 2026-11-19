@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # UpdateBrowserStream
-<a name="API_UpdateBrowserStream"></a>
 
 Updates a browser stream. To use this operation, you must have permissions to perform the bedrock:UpdateBrowserStream action.
 

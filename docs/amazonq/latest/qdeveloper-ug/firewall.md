@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/firewall.ht
 ---
 
 # Configuring a firewall, proxy server, or data perimeter for Amazon Q Developer
-<a name="firewall"></a>
 
 If you're using a firewall, proxy server, or [data perimeter](https://aws.amazon.com/identity/data-perimeters-on-aws/), make sure to allowlist traffic to the following URLs and Amazon Resource Names (ARNs) so that Amazon Q works as expected.
 

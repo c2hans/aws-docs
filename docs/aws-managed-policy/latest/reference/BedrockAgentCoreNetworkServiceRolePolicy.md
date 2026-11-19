@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Bedr
 ---
 
 # BedrockAgentCoreNetworkServiceRolePolicy
-<a name="BedrockAgentCoreNetworkServiceRolePolicy"></a>
 
 **Description**: Allows access to other AWS service resources that are required to run Amazon Bedrock AgentCore in VPC mode
 

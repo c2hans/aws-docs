@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableBucketMaintenanceConfiguration
-<a name="API_s3Buckets_GetTableBucketMaintenanceConfiguration"></a>
 
 Gets details about a maintenance configuration for a given table bucket. For more information, see [Amazon S3 table bucket maintenance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-table-buckets-maintenance.html) in the *Amazon Simple Storage Service User Guide*.
 

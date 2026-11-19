@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateLexBot
-<a name="API_DisassociateLexBot"></a>
 
 This API is in preview release for Connect Customer and is subject to change.
 

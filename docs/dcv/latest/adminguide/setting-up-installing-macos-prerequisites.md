@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-install
 ---
 
 # Prerequisites for macOS Amazon DCV server on an Amazon EC2 instances
-<a name="setting-up-installing-macos-prerequisites"></a>
 
 This topic describes how to prepare your Amazon EC2 Mac instance before you install the Amazon DCV server.
 

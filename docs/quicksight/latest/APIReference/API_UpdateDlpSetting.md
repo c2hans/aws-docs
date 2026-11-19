@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDlpSetting
-<a name="API_UpdateDlpSetting"></a>
 
 Updates an existing DLP setting configuration in an AWS account. Fields that are omitted from the request retain their current values.
 

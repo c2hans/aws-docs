@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListConta
 ---
 
 # ListContactLists
-<a name="API_ListContactLists"></a>
 
 Lists all of the contact lists available.
 

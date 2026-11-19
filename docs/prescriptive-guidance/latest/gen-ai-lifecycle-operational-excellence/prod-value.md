@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Delivering and sustaining the value of a generative AI application
-<a name="prod-value"></a>
 
 The transition from the preproduction stage to the production stage marks a fundamental shift in the primary objective of a generative AI initiative. The preproduction stage is designed to answer critical questions of operational readiness, such as whether the solution is reliable under a realistic load, whether it is secure and compliance, and whether it is safe and viable for enterprise use. Preproduction is a phase of hardening, testing, and derisking.
 

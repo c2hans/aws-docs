@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-file-mess
 ---
 
 # Sending RCS file messages
-<a name="rcs-file-messages"></a>
 
 You can use the `FileMessage` content type in the `SendRcsMessage` API to send images, videos, audio files, and PDFs as standalone messages to your recipients. File messages appear as inline media in the recipient's messaging app.
 

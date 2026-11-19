@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetDataProtectionPolicy
-<a name="API_GetDataProtectionPolicy"></a>
 
 Returns information about a log group data protection policy.
 

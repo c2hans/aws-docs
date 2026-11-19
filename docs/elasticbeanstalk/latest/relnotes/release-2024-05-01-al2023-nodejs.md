@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Amazon Linux 2023 Node.js platform updates on May 01, 2024
-<a name="release-2024-05-01-al2023-nodejs"></a>
 
 This release is an emergent AWS Elastic Beanstalk Node.js platform update for Amazon Linux 2023. It addresses a security vulnerability and also updates Apache HTTP server on the Node.js AL2023 platforms.
 

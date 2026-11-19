@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Point 6. Make It Stick
-<a name="make-it-stick"></a>
 
 Make It Stick takes the work of the change acceleration framework and builds sustainability to stand and last the test of time. In this workstream, you create feedback loops for repeatable patterns and lessons learned, actively manage adoption, and create a post-implementation and sustainability plan so that the change acceleration team can be disbanded, and the changes, behaviors, and culture that has been created can be operationally and passively (rather than actively) managed. Make it Stick has three subpoints:
 + [6.1 Establish feedback loop](#sustain-feedback)

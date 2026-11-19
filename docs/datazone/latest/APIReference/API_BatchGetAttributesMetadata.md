@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_BatchGe
 ---
 
 # BatchGetAttributesMetadata
-<a name="API_BatchGetAttributesMetadata"></a>
 
 Gets the attribute metadata.
 

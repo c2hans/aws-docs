@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationMigrationNetworkMigrationCustomResource
-<a name="AWSApplicationMigrationNetworkMigrationCustomResource"></a>
 
 **Description**: Provides permissions for Network Migration custom resource
 

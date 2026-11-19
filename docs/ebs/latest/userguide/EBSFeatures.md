@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/EBSFeatures.html
 ---
 
 # Features and benefits of Amazon EBS volumes
-<a name="EBSFeatures"></a>
 
 EBS volumes provide benefits that are not provided by instance store volumes.
 

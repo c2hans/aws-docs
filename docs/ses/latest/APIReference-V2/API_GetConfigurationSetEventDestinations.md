@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetConfig
 ---
 
 # GetConfigurationSetEventDestinations
-<a name="API_GetConfigurationSetEventDestinations"></a>
 
 Retrieve a list of event destinations that are associated with a configuration set.
 

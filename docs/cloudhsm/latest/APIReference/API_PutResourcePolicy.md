@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_PutReso
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Creates or updates an AWS CloudHSM resource policy. A resource policy helps you to define the IAM entity (for example, an AWS account) that can manage your AWS CloudHSM resources. The following resources support AWS CloudHSM resource policies:
 +  Backup - The resource policy allows you to describe the backup and restore a cluster from the backup in another AWS account.

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Definition
-<a name="sec-def"></a>
 
  There are six best practice areas for security in the cloud:
 +  **Security**

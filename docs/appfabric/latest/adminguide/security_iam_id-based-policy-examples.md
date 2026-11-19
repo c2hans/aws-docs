@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/security_iam
 ---
 
 # Identity-based policy examples for AWS AppFabric
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify AppFabric resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

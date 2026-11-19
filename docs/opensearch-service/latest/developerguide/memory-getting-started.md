@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Getting started with Amazon OpenSearch Memory
-<a name="memory-getting-started"></a>
 
 This tutorial shows the basic Amazon OpenSearch Memory workflow with the AWS Command Line Interface (AWS CLI). You create a space, send a short conversation to it as an event, search the memories that OpenSearch Memory extracts, and then delete the space.
 

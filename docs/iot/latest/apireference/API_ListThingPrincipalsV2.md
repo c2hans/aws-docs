@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingPri
 ---
 
 # ListThingPrincipalsV2
-<a name="API_ListThingPrincipalsV2"></a>
 
 Lists the principals associated with the specified thing. A principal can be an X.509 certificate or an Amazon Cognito ID.
 

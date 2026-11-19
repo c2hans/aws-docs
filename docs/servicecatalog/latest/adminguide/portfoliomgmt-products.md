@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/portfol
 ---
 
 # Adding products
-<a name="portfoliomgmt-products"></a>
 
  You can add products to a portfolio by uploading a new product directly to an existing portfolio or by associating an existing product from your catalog to the portfolio.
 

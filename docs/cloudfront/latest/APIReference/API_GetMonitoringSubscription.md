@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetMo
 ---
 
 # GetMonitoringSubscription
-<a name="API_GetMonitoringSubscription"></a>
 
 Gets information about whether additional CloudWatch metrics are enabled for the specified CloudFront distribution.
 

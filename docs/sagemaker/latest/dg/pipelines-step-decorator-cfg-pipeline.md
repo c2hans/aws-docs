@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-step-decor
 ---
 
 # Configure your pipeline
-<a name="pipelines-step-decorator-cfg-pipeline"></a>
 
 You are advised to use the SageMaker AI config file to set the defaults for the pipeline. For information about the SageMaker AI configuration file, see [Configuring and using defaults with the SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/overview.html#configuring-and-using-defaults-with-the-sagemaker-python-sdk). Any configuration added to the config file applies to all steps in the pipeline. If you want to override options for any of the steps, provide new values in the `@step` decorator arguments. The following topic describes how to set up a config file.
 

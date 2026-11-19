@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/general-nodegroups.htm
 ---
 
 # Work with node groups
-<a name="general-nodegroups"></a>
 
 ## Creating nodegroups
 <a name="_creating_nodegroups"></a>

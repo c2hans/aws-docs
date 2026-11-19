@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/tutorial-s
 ---
 
 # Use a base image parameter in your recipe
-<a name="tutorial-ssm-parameters-recipe"></a>
 
 When you create a recipe for image customizations, there are several ways to identify the base image that you start with. If you specify the Amazon Machine Image (AMI) ID for your base image and that base image is updated, its AMI ID might change and you would need to update your recipe to match.
 

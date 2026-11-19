@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationC
 ---
 
 # ReplicationConfig
-<a name="API_ReplicationConfig"></a>
 
 This object provides configuration information about a serverless replication.
 

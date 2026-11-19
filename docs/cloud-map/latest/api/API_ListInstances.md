@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_ListInstances.h
 ---
 
 # ListInstances
-<a name="API_ListInstances"></a>
 
 Lists summary information about the instances that you registered by using a specified service.
 

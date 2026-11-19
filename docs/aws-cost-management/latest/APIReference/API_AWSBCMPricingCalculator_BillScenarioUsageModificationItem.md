@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillScenarioUsageModificationItem
-<a name="API_AWSBCMPricingCalculator_BillScenarioUsageModificationItem"></a>
 
  Represents a usage modification item in a bill scenario.
 

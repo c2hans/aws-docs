@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/task-manag
 AWS FinOps Agent is in preview release and is subject to change.
 
 # Task management
-<a name="task-management"></a>
 
 AWS FinOps Agent supports three task types: on-demand, scheduled, and event-based. Each runs through a shared task queue.
 

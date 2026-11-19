@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-a-named-query.ht
 ---
 
 # Create a named query
-<a name="create-a-named-query"></a>
 
 The `CreateNamedQueryExample` shows how to create a named query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterOrchestratorSlurmConfig
-<a name="API_ClusterOrchestratorSlurmConfig"></a>
 
 The configuration settings for the Slurm orchestrator used with the SageMaker HyperPod cluster.
 

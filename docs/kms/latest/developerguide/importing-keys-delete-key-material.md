@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys
 ---
 
 # Delete imported key material
-<a name="importing-keys-delete-key-material"></a>
 
 You can delete the imported key material from a KMS key at any time. Also, when imported key material with an expiration date expires, AWS KMS deletes the key material. In either case, when the key material is deleted, the [key state](key-state.md) of the KMS key changes to *Pending import*, and the KMS key can't be used in any cryptographic operations.
 

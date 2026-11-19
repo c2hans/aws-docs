@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Deployment Architecture
-<a name="deployment-architecture"></a>
 
 The solution is deployed using AWS CloudFormation with nested stacks:
 

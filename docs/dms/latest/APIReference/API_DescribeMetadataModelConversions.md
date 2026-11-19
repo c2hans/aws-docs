@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMeta
 ---
 
 # DescribeMetadataModelConversions
-<a name="API_DescribeMetadataModelConversions"></a>
 
 Returns a paginated list of metadata model conversion requests for a migration project, initiated by [StartMetadataModelConversion](https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadataModelConversion.html).
 

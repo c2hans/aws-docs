@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-example-cfn.html
 ---
 
 # Automating Amazon SNS message archiving with an CloudFormation template
-<a name="firehose-example-cfn"></a>
 
 To automate the deployment of the Amazon SNS [message archiving and analytics example use case](firehose-example-use-case.md), you can use the following YAML template:
 

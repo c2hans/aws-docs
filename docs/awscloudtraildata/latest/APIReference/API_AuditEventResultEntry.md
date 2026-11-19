@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/AP
 ---
 
 # AuditEventResultEntry
-<a name="API_AuditEventResultEntry"></a>
 
 A response that includes successful and failed event results.
 

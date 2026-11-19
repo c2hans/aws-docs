@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_M
 ---
 
 # MultiMeasureAttributeMapping
-<a name="API_MultiMeasureAttributeMapping"></a>
 
 A mapping of a source event data field to a measure in a Timestream for LiveAnalytics record.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotVer
 ---
 
 # ListBotVersions
-<a name="API_ListBotVersions"></a>
 
 Gets information about all of the versions of a bot.
 

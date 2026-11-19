@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_P
 ---
 
 # PortalSummary
-<a name="API_PortalSummary"></a>
 
 The summary of the portal.
 

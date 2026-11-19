@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/cluster-secret-rota
 ---
 
 # Frequently asked questions about cluster secret rotation in AWS PCS
-<a name="cluster-secret-rotation-faq"></a>
 
 Find answers to common questions about cluster secret rotation in AWS PCS.
 

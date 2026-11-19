@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Filters.
 ---
 
 # Filters
-<a name="API_Filters"></a>
 
 Contains the filter to apply when retrieving metrics.
 

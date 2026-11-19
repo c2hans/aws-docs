@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # FilterInput
-<a name="API_FilterInput"></a>
 
 Contains filter criteria for listing events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CurrentM
 ---
 
 # CurrentMetricResult
-<a name="API_CurrentMetricResult"></a>
 
 Contains information about a set of real-time metrics.
 

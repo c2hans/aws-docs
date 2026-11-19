@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdatePrivateConnectionCertificate
-<a name="API_UpdatePrivateConnectionCertificate"></a>
 
 Updates the certificate associated with a Private Connection.
 

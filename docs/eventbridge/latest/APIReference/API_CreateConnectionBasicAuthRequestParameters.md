@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Crea
 ---
 
 # CreateConnectionBasicAuthRequestParameters
-<a name="API_CreateConnectionBasicAuthRequestParameters"></a>
 
 Contains the Basic authorization parameters to use for the connection.
 

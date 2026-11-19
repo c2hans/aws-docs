@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Metrics reference
-<a name="msk-replicator-metrics-ref"></a>
 
 The following metrics describes performance or connection metrics for the MSK Replicator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-emr-
 ---
 
 # Choosing the right storage
-<a name="storage"></a>
 
 Configure your cluster's [instance types and capacity](capacity.md). Core and task nodes need processing and compute power, but only the core nodes store data. Select the most cost-effective type of storage for your core nodes.
 

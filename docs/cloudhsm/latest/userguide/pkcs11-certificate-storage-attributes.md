@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-certifi
 ---
 
 # Certificate storage attributes
-<a name="pkcs11-certificate-storage-attributes"></a>
 
  The following table lists the supported certificate object attributes and their values:
 

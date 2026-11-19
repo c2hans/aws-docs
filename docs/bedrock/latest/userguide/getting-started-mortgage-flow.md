@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 ---
 
 # Tutorial: Create a flow that processes mortgage applications
-<a name="getting-started-mortgage-flow"></a>
 
 To get familiar with Amazon Bedrock resources and their capabilities, we'll use an CloudFormation template to set up a [flow](flows.md) that automates a mortgage application process processes by combining various Amazon Bedrock and other AWS resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/origin-server-hls-em
 ---
 
 # HLS output group to MediaPackage v2
-<a name="origin-server-hls-empv2"></a>
 
 Follow this procedure if you [determined](delivering-to-mediapackage.md) that you will create an HLS output group, and will send to MediaPackage v2. You and the operator of the downstream system must agree about the destination for the output of the HLS output group.
 

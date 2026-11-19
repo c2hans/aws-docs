@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Type
 ---
 
 # AWS Marketplace Catalog Service
-<a name="API_Types_AWS_Marketplace_Catalog_Service"></a>
 
 The following data types are supported by AWS Marketplace Catalog Service:
 +  [AmiProductEntityIdFilter](API_AmiProductEntityIdFilter.md)

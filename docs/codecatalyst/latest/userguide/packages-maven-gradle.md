@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/packages-m
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Configuring and using Gradle Groovy
-<a name="packages-maven-gradle"></a>
 
 To use Gradle Groovy with CodeCatalyst, you must connect Gradle Groovy to your package repository and provide a personal access token (PAT) for authentication. You can view instructions for connecting Gradle Groovy to your package repository in the CodeCatalyst console.
 

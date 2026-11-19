@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RelayAction
-<a name="API_RelayAction"></a>
 
 The action relays the email via SMTP to another specific SMTP server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_MultiReg
 ---
 
 # MultiRegionAccessPointRoute
-<a name="API_control_MultiRegionAccessPointRoute"></a>
 
 A structure for a Multi-Region Access Point that indicates where Amazon S3 traffic can be routed. Routes can be either active or passive. Active routes can process Amazon S3 requests through the Multi-Region Access Point, but passive routes are not eligible to process Amazon S3 requests.
 

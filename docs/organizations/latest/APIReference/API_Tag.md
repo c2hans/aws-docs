@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ta
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A custom key-value pair associated with a resource within your organization.
 

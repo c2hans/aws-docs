@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_T
 ---
 
 # TelemetrySinkConfig
-<a name="API_TelemetrySinkConfig"></a>
 
 Information about a telemetry sink `Config`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Optional: Add zero-downtime capture and replay
-<a name="pb-es68-capture-replay"></a>
 
 If your source takes live writes that you cannot pause, add capture and replay so no writes are lost during the migration. With this pattern, you reroute client traffic through the capture proxy first, then run backfill, then replay the captured traffic to bring the target up to the live edge before cutover.
 

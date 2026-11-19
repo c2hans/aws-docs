@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/query
 ---
 
 # Query your CloudWatch metrics with CloudWatch Metrics Insights
-<a name="query_with_cloudwatch-metrics-insights"></a>
 
 CloudWatch Metrics Insights is a powerful high-performance SQL query engine that you can use to query your metrics at scale. You can identify trends and patterns within all of your CloudWatch metrics in real time, with access to up to two weeks of historical data for comprehensive trend analysis.
 

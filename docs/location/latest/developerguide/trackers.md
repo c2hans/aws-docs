@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/trackers.
 ---
 
 # Amazon Location Service trackers
-<a name="trackers"></a>
 
 ![This diagram shows you how to create and use tracker resources.](https://docs.aws.amazon.com/location/latest/developerguide/images/illustration-trackers.PNG)
 

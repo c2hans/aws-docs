@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 **Note**
 AWS Chatbot is now Amazon Q Developer. [Learn more](https://docs.aws.amazon.com/chatbot/latest/adminguide/service-rename.html)
@@ -22,4 +21,4 @@ The Amazon Q Developer in chat applications console can only be used in US East 
 **Note**
 Your AWS CloudTrail events are logged in whatever Region you call from, not US East (N. Virginia) by default.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

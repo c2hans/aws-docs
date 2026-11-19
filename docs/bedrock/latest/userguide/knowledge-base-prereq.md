@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Prerequisites for creating an Amazon Bedrock knowledge basewith a unstructured data source
-<a name="knowledge-base-prereq"></a>
 
 Amazon Bedrock knowledge bases require data and models to retrieve and generate responses, a vector store to store the vector representation of the data, and AWS Identity and Access Management permissions to access your data and perform actions.
 

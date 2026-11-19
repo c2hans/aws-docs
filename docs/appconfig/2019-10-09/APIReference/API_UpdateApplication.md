@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Up
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Updates an application.
 

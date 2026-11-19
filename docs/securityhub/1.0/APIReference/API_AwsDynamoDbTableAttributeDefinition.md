@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableAttributeDefinition
-<a name="API_AwsDynamoDbTableAttributeDefinition"></a>
 
 Contains a definition of an attribute for the table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Start
 ---
 
 # StartRestoreJob
-<a name="API_StartRestoreJob"></a>
 
 Recovers the saved resource identified by an Amazon Resource Name (ARN).
 

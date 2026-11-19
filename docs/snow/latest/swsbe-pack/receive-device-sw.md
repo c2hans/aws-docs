@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snow/latest/swsbe-pack/receive-device-sw
 ---
 
 # Receiving the Snow Family device
-<a name="receive-device-sw"></a>
 
 **Important**
 Snow Family devices are the property of AWS. Tampering with a Snow device is a violation of the AWS Acceptable Use Policy.

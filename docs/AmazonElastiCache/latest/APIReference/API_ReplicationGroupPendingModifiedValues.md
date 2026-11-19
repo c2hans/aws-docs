@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ReplicationGroupPendingModifiedValues
-<a name="API_ReplicationGroupPendingModifiedValues"></a>
 
 The settings to be applied to the Valkey or Redis OSS replication group, either immediately or during the next maintenance window.
 

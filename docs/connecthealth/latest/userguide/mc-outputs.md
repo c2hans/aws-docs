@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/mc-output
 ---
 
 # Medical coding outputs
-<a name="mc-outputs"></a>
 
 When a job reaches `SUCCEEDED`, medical coding writes a results file to the Amazon S3 output location you specified. The `GetMedicalCodingJob` response points to that file.
 

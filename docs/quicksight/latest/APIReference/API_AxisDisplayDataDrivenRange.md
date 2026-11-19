@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisD
 ---
 
 # AxisDisplayDataDrivenRange
-<a name="API_AxisDisplayDataDrivenRange"></a>
 
 The options that are saved for future extension.
 

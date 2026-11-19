@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateThreatIntelSet
-<a name="API_UpdateThreatIntelSet"></a>
 
 Updates the ThreatIntelSet specified by the ThreatIntelSet ID.
 

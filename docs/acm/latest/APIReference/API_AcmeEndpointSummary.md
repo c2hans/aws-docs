@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_AcmeEndpoint
 ---
 
 # AcmeEndpointSummary
-<a name="API_AcmeEndpointSummary"></a>
 
 Contains summary information about an ACME endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyBuildLog
-<a name="API_AutomatedReasoningPolicyBuildLog"></a>
 
 Contains detailed logging information about the policy build process, including steps taken, decisions made, and any issues encountered.
 

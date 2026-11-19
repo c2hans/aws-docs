@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_EventLog
 ---
 
 # EventLogConfig
-<a name="API_EventLogConfig"></a>
 
 Describes the CloudWatch Logs configuration for the Event API.
 

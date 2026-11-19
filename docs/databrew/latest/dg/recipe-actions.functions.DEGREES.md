@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # DEGREES
-<a name="recipe-actions.functions.DEGREES"></a>
 
 Converts radians for an angle to degrees and returns the result in a new column.
 

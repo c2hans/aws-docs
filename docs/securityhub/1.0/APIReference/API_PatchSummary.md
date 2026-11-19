@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_PatchSu
 ---
 
 # PatchSummary
-<a name="API_PatchSummary"></a>
 
 Provides an overview of the patch compliance status for an instance against a selected compliance standard.
 

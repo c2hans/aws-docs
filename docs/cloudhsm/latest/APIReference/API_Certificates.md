@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Certifi
 ---
 
 # Certificates
-<a name="API_Certificates"></a>
 
 Contains one or more certificates or a certificate signing request (CSR).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rul
 ---
 
 # Managing Custom Detection Rules
-<a name="custom-detection-rules-managing"></a>
 
 GuardDuty applies a rule to an account through an *association*. An association links a rule to your account and records the mode, live or dry run, in which the rule operates.
 

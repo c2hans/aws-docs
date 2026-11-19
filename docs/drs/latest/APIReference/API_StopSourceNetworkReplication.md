@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StopSourceNe
 ---
 
 # StopSourceNetworkReplication
-<a name="API_StopSourceNetworkReplication"></a>
 
 Stops replication for a Source Network. This action would make the Source Network unprotected.
 

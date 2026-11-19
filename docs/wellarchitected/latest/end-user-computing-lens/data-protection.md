@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
 |  EUCSEC13: How do you address data residency requirements in your EUC environment?  |
 | --- |

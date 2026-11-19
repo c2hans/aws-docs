@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # MemberLogPublishingConfiguration
-<a name="API_MemberLogPublishingConfiguration"></a>
 
 Configuration properties for logging events associated with a member of a Managed Blockchain network.
 

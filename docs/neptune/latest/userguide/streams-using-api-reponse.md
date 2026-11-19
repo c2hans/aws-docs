@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/streams-using-a
 ---
 
 # Neptune Streams API Response Format
-<a name="streams-using-api-reponse"></a>
 
 A response to a Neptune Streams REST API request has the following fields:
 + `lastEventId`   –   Sequence identifier of the last change in the stream response. An event ID is composed of two fields: A `commitNum` identifies a transaction that changed the graph, and an `opNum` identifies a specific operation within that transaction. This is shown in the following example.

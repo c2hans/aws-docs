@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/REGEXP_
 ---
 
 # REGEXP\_COUNT function
-<a name="REGEXP_COUNT"></a>
 
 Searches a string for a regular expression pattern and returns an integer that indicates the number of times the pattern occurs in the string. If no match is found, then the function returns 0.
 

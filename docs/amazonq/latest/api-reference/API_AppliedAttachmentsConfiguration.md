@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Applied
 ---
 
 # AppliedAttachmentsConfiguration
-<a name="API_AppliedAttachmentsConfiguration"></a>
 
 Configuration information about the file upload during chat feature for your application.
 

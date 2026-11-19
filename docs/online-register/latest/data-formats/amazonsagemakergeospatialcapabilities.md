@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon SageMaker geospatial capabilities
-<a name="amazonsagemakergeospatialcapabilities"></a>
 
 Amazon SageMaker geospatial capabilities provides the following APIs for data retrieval.
 

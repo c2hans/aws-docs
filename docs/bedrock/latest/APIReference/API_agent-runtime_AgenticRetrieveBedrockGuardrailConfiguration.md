@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveBedrockGuardrailConfiguration
-<a name="API_agent-runtime_AgenticRetrieveBedrockGuardrailConfiguration"></a>
 
 Configuration for a Bedrock guardrail applied during agentic retrieval.
 

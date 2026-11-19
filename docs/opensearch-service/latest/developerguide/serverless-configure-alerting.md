@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Configuring alerting for Amazon OpenSearch Serverless
-<a name="serverless-configure-alerting"></a>
 
 Alerting automatically monitors your OpenSearch data on a defined schedule and notifies you when trigger conditions are met. A monitor is a job that runs a query against your data, evaluates trigger conditions, and generates alerts. When a trigger fires, the monitor runs actions that send notifications through configured channels. For a conceptual overview of monitors, triggers, and actions, see [Alerting](https://docs.opensearch.org/latest/observing-your-data/alerting/index/) on the OpenSearch website.
 

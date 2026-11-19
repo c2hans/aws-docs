@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedu
 ---
 
 # Configuring binary log file position replication with an external source instance
-<a name="MySQL.Procedural.Importing.External.Repl"></a>
 
 You can set up replication between an RDS for MySQL or MariaDB DB instance and a MySQL or MariaDB instance that is external to Amazon RDS using binary log file replication.
 

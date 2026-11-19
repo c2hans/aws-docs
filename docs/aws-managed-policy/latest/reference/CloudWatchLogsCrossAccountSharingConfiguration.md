@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchLogsCrossAccountSharingConfiguration
-<a name="CloudWatchLogsCrossAccountSharingConfiguration"></a>
 
 **Description**: Provides capabilities to manage Observability Access Manager links and establish sharing of CloudWatch Logs resources
 

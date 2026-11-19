@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ContainerProductTitleFilter
-<a name="API_ContainerProductTitleFilter"></a>
 
 Object that allows filtering on product title.
 

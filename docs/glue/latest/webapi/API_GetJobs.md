@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetJobs.html
 ---
 
 # GetJobs
-<a name="API_GetJobs"></a>
 
 Retrieves all current job definitions.
 

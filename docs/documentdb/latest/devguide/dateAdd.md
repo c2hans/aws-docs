@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dateAdd.html
 ---
 
 # $dateAdd
-<a name="dateAdd"></a>
 
 New from version 5.0
 

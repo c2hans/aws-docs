@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # Using development value stream mapping to identify constraints to DevOps outcomes
-<a name="introduction"></a>
 
 *Michael Kingery, Amazon Web Services*
 

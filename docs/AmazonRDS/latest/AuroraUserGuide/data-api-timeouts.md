@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 ---
 
 # Controlling Data API timeout behavior
-<a name="data-api-timeouts"></a>
 
  All calls to the Data API are synchronous. Suppose that you perform a Data API operation that runs a SQL statement such as `INSERT` or `CREATE TABLE`. If the Data API call returns successfully, the SQL processing is finished when the call returns.
 

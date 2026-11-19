@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hudi-work-wi
 ---
 
 # Work with a Hudi dataset
-<a name="emr-hudi-work-with-dataset"></a>
 
 Hudi supports inserting, updating, and deleting data in Hudi datasets through Spark. For more information, see [Writing Hudi tables](https://hudi.apache.org/docs/writing_data.html) in Apache Hudi documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/monitor
 ---
 
 # License Manager event recipients and patterns
-<a name="monitoring-eventbridge-recipients"></a>
 
 Each AWS account that can view a license or grant receives events on its default event bus:
 

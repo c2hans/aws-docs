@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListVpcEndpointAccess
-<a name="API_ListVpcEndpointAccess"></a>
 
 Retrieves information about each AWS principal that is allowed to access a given Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
 

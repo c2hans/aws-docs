@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Variables
-<a name="msk-data-delivery-s3-template-variables"></a>
 
 Variables use the `!{name}` syntax. The supported variables are:
 

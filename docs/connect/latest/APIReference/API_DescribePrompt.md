@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribePrompt
-<a name="API_DescribePrompt"></a>
 
 Describes the prompt.
 

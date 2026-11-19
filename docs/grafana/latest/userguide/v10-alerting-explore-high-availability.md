@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-alerting-ex
 ---
 
 # Alerting high availability
-<a name="v10-alerting-explore-high-availability"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 10.x**.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PullR
 ---
 
 # PullRequestCreatedEventMetadata
-<a name="API_PullRequestCreatedEventMetadata"></a>
 
 Metadata about the pull request that is used when comparing the pull request source with its destination.
 

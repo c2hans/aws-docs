@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/advanced-networ
 ---
 
 # Content Domain 4: Network Security, Compliance, and Governance
-<a name="advanced-networking-specialty-01-domain4"></a>
 
 **Topics**
 + [Task 4.1: Implement and maintain network features to meet security and compliance needs and requirements](#advanced-networking-specialty-01-domain4-task1)

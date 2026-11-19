@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # ScheduledChange
-<a name="API_ScheduledChange"></a>
 
 A pending change on a subscription that takes effect at the end of the current billing period, such as a tier downgrade or cancellation.
 

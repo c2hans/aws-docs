@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_SendPro
 ---
 
 # SendProjectSessionAction
-<a name="API_SendProjectSessionAction"></a>
 
 Performs a recipe step within an interactive DataBrew session that's currently open.
 

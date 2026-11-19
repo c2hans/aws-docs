@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-act
 ---
 
 # Compare
-<a name="flow-control-actions-compare"></a>
 
 Allows comparisons against the specified value.
 

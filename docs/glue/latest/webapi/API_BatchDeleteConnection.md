@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchDeleteConnec
 ---
 
 # BatchDeleteConnection
-<a name="API_BatchDeleteConnection"></a>
 
 Deletes a list of connection definitions from the Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Aggregated
 ---
 
 # AggregatedUtterancesFilter
-<a name="API_AggregatedUtterancesFilter"></a>
 
 Filters responses returned by the `ListAggregatedUtterances` operation.
 

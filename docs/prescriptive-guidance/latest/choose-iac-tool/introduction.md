@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # Choosing an infrastructure as code tool for your organization
-<a name="introduction"></a>
 
 *Siamak Heshmati, Mason Cahill, Sandip Gangapadhyay, Sandeep Gawande, and RAJNEESH TYAGI, Amazon Web Services*
 

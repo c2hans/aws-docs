@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_CreateRece
 ---
 
 # Use `CreateReceiptRule` with an AWS SDK
-<a name="ses_example_ses_CreateReceiptRule_section"></a>
 
 The following code examples show how to use `CreateReceiptRule`.
 

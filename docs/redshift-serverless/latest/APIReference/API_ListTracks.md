@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListTracks
-<a name="API_ListTracks"></a>
 
 List the Amazon Redshift Serverless versions.
 

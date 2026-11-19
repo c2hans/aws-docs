@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ObjectFilter
-<a name="API_connect-customer-profiles_ObjectFilter"></a>
 
 The filter applied to `ListProfileObjects` response to include profile objects with the specified index values.
 

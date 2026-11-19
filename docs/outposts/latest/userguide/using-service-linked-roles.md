@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/userguide/using-service-
 ---
 
 # Service-linked roles for AWS Outposts
-<a name="using-service-linked-roles"></a>
 
 AWS Outposts uses AWS Identity and Access Management (IAM) service-linked roles. A service-linked role is a type of service role that is linked directly to AWS Outposts. AWS Outposts defines service-linked roles and includes all the permissions that it requires to call other AWS services on your behalf.
 

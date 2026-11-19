@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Provis
 ---
 
 # ProvisioningParameter
-<a name="API_ProvisioningParameter"></a>
 
 A key value pair used when you provision a project as a service catalog product. For information, see [What is AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html).
 

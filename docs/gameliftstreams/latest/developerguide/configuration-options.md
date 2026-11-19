@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/co
 ---
 
 # Configuration options
-<a name="configuration-options"></a>
 
 ## Runtime environments
 <a name="configuration-options-runtime"></a>

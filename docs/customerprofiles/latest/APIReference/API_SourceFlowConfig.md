@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # SourceFlowConfig
-<a name="API_connect-customer-profiles_SourceFlowConfig"></a>
 
 Contains information about the configuration of the source connector used in the flow.
 

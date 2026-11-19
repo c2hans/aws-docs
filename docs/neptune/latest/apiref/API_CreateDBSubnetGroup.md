@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_CreateDBSubnet
 ---
 
 # CreateDBSubnetGroup
-<a name="API_CreateDBSubnetGroup"></a>
 
 Creates a new DB subnet group. DB subnet groups must contain at least one subnet in at least two AZs in the Amazon Region.
 

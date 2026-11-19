@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BinaryColumnStati
 ---
 
 # BinaryColumnStatisticsData
-<a name="API_BinaryColumnStatisticsData"></a>
 
 Defines column statistics supported for bit sequence data values.
 

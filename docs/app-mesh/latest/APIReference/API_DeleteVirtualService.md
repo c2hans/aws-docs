@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteV
 ---
 
 # DeleteVirtualService
-<a name="API_DeleteVirtualService"></a>
 
 Deletes an existing virtual service.
 

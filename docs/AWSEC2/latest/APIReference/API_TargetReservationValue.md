@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TargetRes
 ---
 
 # TargetReservationValue
-<a name="API_TargetReservationValue"></a>
 
 The total value of the new Convertible Reserved Instances.
 

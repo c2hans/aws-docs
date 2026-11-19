@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-packaging-job-c
 ---
 
 # Package a Model (Amazon SageMaker AI Console)
-<a name="edge-packaging-job-console"></a>
 
 You can create a SageMaker Edge Manager packaging job using the SageMaker AI console at [https://console.aws.amazon.com/sagemaker/](https://console.aws.amazon.com/sagemaker/). Before continuing, make sure you have satisfied the [Complete prerequisites](edge-packaging-job-prerequisites.md).
 

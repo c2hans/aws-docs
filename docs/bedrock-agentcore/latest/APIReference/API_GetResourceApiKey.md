@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetResourceApiKey
-<a name="API_GetResourceApiKey"></a>
 
 Retrieves the API key associated with an API key credential provider.
 

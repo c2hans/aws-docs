@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # ListServices
-<a name="API_ListServices"></a>
 
 Lists the names and codes for the AWS services integrated with Service Quotas.
 

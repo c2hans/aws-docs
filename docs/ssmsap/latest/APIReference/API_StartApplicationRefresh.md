@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StartAppl
 ---
 
 # StartApplicationRefresh
-<a name="API_StartApplicationRefresh"></a>
 
 Refreshes a registered application.
 

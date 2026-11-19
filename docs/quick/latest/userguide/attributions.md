@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/attributions.html
 ---
 
 # Attributions
-<a name="attributions"></a>
 
 Following, you can find out about attributions and third-party licenses for material used in Quick documentation.
 

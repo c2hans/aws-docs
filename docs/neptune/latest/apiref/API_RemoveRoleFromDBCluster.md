@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_RemoveRoleFrom
 ---
 
 # RemoveRoleFromDBCluster
-<a name="API_RemoveRoleFromDBCluster"></a>
 
 Disassociates an Identity and Access Management (IAM) role from a DB cluster.
 

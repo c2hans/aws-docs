@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-n
 ---
 
 # Spending and limits
-<a name="nx-notify-scale-spending"></a>
 
 Notify has its own dedicated monthly spend limit, separate from your SMS, MMS, and voice spend limits. Sending messages through Notify does not count against your SMS or voice spend limits. Your Notify spend limit reflects the combined cost of the messaging channel fee and the Notify service fee for each message sent.
 

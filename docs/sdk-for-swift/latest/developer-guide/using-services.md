@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/usi
 ---
 
 # Working with AWS services using the AWS SDK for Swift
-<a name="using-services"></a>
 
 This chapter contains information about how to work with AWS services by using the SDK for Swift.
 

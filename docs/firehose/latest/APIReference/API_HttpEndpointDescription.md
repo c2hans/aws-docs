@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_HttpEnd
 ---
 
 # HttpEndpointDescription
-<a name="API_HttpEndpointDescription"></a>
 
 Describes the HTTP endpoint selected as the destination.
 

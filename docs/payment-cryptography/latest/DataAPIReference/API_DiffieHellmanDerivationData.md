@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # DiffieHellmanDerivationData
-<a name="API_DiffieHellmanDerivationData"></a>
 
 The shared information used when deriving a key using ECDH.
 

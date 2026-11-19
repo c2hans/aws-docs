@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/understand
 ---
 
 # Example Amazon Cognito events
-<a name="understanding-amazon-cognito-entries"></a>
 
 Amazon Cognito logs information to AWS CloudTrail about user authentication activity and administrative management activity. This applies to both user pools and identity pools. For example, you can see `GetId` and `UpdateIdentityPool` events in the same trail, or `UpdateAuthEventFeedback` and `SetRiskConfiguration` events. You'll also see user pool logs for hosted UI activity that doesn't correspond to operations in the user pools API. This section has some examples of logs you might see. To understand the CloudTrail event schema for any operation, generate a request for that operation and review the events that it creates in your trail.
 

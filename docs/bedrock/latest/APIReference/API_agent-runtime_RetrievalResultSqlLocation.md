@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalResultSqlLocation
-<a name="API_agent-runtime_RetrievalResultSqlLocation"></a>
 
 Contains information about the SQL query used to retrieve the result.
 

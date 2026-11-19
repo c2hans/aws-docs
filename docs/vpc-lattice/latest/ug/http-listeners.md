@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/http-listeners.htm
 ---
 
 # HTTP listeners for VPC Lattice services
-<a name="http-listeners"></a>
 
 A listener is a process that checks for connection requests. You can define a listener when you create your VPC Lattice service. You can add listeners to your service at any time.
 

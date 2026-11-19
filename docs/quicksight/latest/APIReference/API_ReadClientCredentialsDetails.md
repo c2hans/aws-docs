@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadC
 ---
 
 # ReadClientCredentialsDetails
-<a name="API_ReadClientCredentialsDetails"></a>
 
 Read-only details for OAuth2 client credentials, containing non-sensitive configuration information.
 

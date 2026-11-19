@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-serverl
 ---
 
 # Additional configuration for Neptune Serverless DB clusters and instances
-<a name="neptune-serverless-configuration"></a>
 
 In addition to [setting minimum and maximum capacity](neptune-serverless-capacity-scaling.md) for your Neptune Serverless DB cluster, there are a few other configuration choices to consider.
 

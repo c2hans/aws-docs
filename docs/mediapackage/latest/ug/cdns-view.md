@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cdns-view.html
 ---
 
 # Viewing a Distribution
-<a name="cdns-view"></a>
 
 As described in [Viewing channel details](channels-view.md), you can view basic information about a distribution that was created in MediaPackage, such as the distribution ID and description. Note that the ID links to the CloudFront management console.
 

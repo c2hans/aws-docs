@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListFirewallDomainLists
-<a name="API_route53resolver_ListFirewallDomainLists"></a>
 
 Retrieves the firewall domain lists that you have defined. For each firewall domain list, you can retrieve the domains that are defined for a list by calling [ListFirewallDomains](API_route53resolver_ListFirewallDomains.md).
 

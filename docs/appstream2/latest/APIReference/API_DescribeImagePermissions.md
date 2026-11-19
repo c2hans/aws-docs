@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeImagePermissions
-<a name="API_DescribeImagePermissions"></a>
 
 Retrieves a list that describes the permissions for shared AWS account IDs on a private image that you own.
 

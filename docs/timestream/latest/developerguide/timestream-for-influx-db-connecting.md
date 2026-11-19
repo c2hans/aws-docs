@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestr
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Connecting to an Amazon Timestream for InfluxDB DB instance
-<a name="timestream-for-influx-db-connecting"></a>
 
 Before you can connect to a DB instance, you must create the DB instance. For information, see [Creating a DB instance](timestream-for-influx-configuring.md#timestream-for-influx-configuring-create-db). After Amazon Timestream provisions your DB instance, use the InfluxDB API, influx CLI, or any compatible client or utility for InfluxDB to connect to the DB instance.
 

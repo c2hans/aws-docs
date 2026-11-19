@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/iam-examp
 ---
 
 # Using IAM account aliases with AWS SDK for PHP Version 3
-<a name="iam-examples-using-account-aliases"></a>
 
 If you want the URL for your sign-in page to contain your company name or other friendly identifier instead of your AWS account ID, you can create an alias for your AWS account ID. If you create an AWS account alias, your sign-in page URL changes to incorporate the alias.
 

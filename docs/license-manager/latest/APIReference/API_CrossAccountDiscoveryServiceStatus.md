@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CrossAccountDiscoveryServiceStatus
-<a name="API_CrossAccountDiscoveryServiceStatus"></a>
 
 Status information for cross-account discovery service.
 

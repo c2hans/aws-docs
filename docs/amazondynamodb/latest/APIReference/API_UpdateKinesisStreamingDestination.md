@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_U
 ---
 
 # UpdateKinesisStreamingDestination
-<a name="API_UpdateKinesisStreamingDestination"></a>
 
 The command to update the Kinesis stream destination.
 

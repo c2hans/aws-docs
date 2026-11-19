@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/view-custom
 ---
 
 # Read Configuration Items with AWS Config for Third-Party Resources using the AWS CLI
-<a name="view-custom-resource-type-cli"></a>
 
 Read a configuration item for a third-party resource or a custom resource type using the following procedure:
 

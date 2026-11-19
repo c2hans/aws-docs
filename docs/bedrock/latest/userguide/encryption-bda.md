@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-bda.
 ---
 
 # Encryption in Amazon Bedrock Data Automation
-<a name="encryption-bda"></a>
 
  Amazon Bedrock Data Automation (BDA) uses encryption to protect your data at rest. This includes the blueprints, projects, libraries, and extracted insights stored by the service. BDA offers two options for encrypting your data:
 

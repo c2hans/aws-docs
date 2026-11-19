@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Preventing unauthorized access and data exfiltration
-<a name="prevent-unauthorized-access"></a>
 
 According to [2022 Cost of a Data Breach Report](https://securityintelligence.com/series/2022-cost-of-a-data-breach-report/) (Ponemon Institute report), the average cost of a data breach in 2022 was USD4.3 million. For semiconductor companies, protecting intellectual property (IP) is critical. Loss of IP due to unauthorized access can result in financial loss, reputational damage, or even regulatory consequences. These potential consequences make controlling access to the data and the flow of data critical aspects of a well-architected design.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/enforcing-tls.htm
 ---
 
 # Enforce a minimum TLS version in the AWS SDK for Rust
-<a name="enforcing-tls"></a>
 
 The AWS SDK for Rust uses TLS to increase security when communicating with AWS services. The SDK enforces a minimum TLS version of 1.2 by default. By default, the SDK also negotiates the highest version of TLS available to both the client application and the service. For example, the SDK might be able to negotiate TLS 1.3.
 

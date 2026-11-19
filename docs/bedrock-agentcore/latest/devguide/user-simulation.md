@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/user-s
 ---
 
 # User simulation
-<a name="user-simulation"></a>
 
 User simulation uses an LLM-backed actor to play the role of an end user interacting with your agent. You define the actor’s profile and goal, and the actor drives a multi-turn conversation with your agent until the goal is met or the turn limit is reached.
 

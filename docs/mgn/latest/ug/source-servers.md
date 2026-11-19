@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/source-servers.html
 ---
 
 # Source Servers in AWS Transform MGN
-<a name="source-servers"></a>
 
 You must add your source servers to the AWS Transform MGN console in order to migrate them into AWS. Source servers are added by installing the AWS Replication Agent on each individual server. This documentation provides installation paths for both Linux and Windows servers. Ensure that your servers are supported by AWS Transform MGN by reviewing the [Supported operating systems](Supported-Operating-Systems.md)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/louva
 ---
 
 # Louvain mutate algorithm
-<a name="louvain-mutate"></a>
 
  The [Louvain algorithm](louvain.md) is a hierarchical clustering method for detecting community structures within networks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/tutorial-troub
 ---
 
 # Troubleshoot errors
-<a name="tutorial-troubleshooting-custom"></a>
 
 Use the following information to help resolve any issues with completing the tutorial.
 

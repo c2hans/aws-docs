@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/Appendix-
 ---
 
 # Appendix: Authenticating requests (AWS signature version 2)
-<a name="Appendix-Sigv2"></a>
 
 **Important**
 This section describes how to authenticate requests using AWS Signature Version 2. Signature Version 2 is being turned off (deprecated), Amazon S3 will only accept API requests that are signed using Signature Version 4. For more information, see [AWS Signature Version 2 turned off (deprecated) for Amazon S3](specify-signature-version.md#UsingAWSSDK-sig2-deprecation)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Glossar
 ---
 
 # GlossaryItem
-<a name="API_GlossaryItem"></a>
 
 The details of a business glossary.
 

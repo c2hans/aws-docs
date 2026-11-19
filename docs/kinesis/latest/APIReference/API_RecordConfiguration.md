@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_RecordCo
 ---
 
 # RecordConfiguration
-<a name="API_RecordConfiguration"></a>
 
 Specifies the format of records read from the source stream.
 

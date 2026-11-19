@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Threat modeling for generative AI applications
-<a name="threat-modeling-for-generative-ai-applications"></a>
 
  Threats on AI and machine learning (AI/ML) systems are becoming more frequent, moving beyond controlled environments to real-world production deployments. These threats target vulnerabilities such as exposure to personally identifiable information (PII), lack of oversight in decision-making, and insufficient logging and monitoring.
 

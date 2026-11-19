@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # InvalidFirewallReasons
-<a name="API_InvalidFirewallReasons"></a>
 
 Details about the ways in which a firewall's configuration differs from the intended configuration.
 

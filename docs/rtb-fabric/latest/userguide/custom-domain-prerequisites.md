@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/custom-domai
 ---
 
 # Prerequisites
-<a name="custom-domain-prerequisites"></a>
 
 Before you configure inbound external links with custom domains, verify that you meet the following prerequisites. For general setup requirements, see Setting up AWS RTB Fabric.
 

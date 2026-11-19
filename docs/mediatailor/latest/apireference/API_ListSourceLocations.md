@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_List
 ---
 
 # ListSourceLocations
-<a name="API_ListSourceLocations"></a>
 
 Lists the source locations for a channel. A source location defines the host server URL, and contains a list of sources.
 

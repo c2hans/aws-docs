@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_KmsEn
 ---
 
 # KmsEncryptionConfig
-<a name="API_KmsEncryptionConfig"></a>
 
 The customer-managed-key (CMK) used when creating a data store. If a customer-owned key is not specified, an AWS-owned key is used for encryption.
 

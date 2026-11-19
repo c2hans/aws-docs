@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-ssm.html
 ---
 
 # AWS.Store.SSMParameters
-<a name="node-ssm"></a>
 
 You can create SSM parameters through AWS TNB. The SSM parameters that you create are created in SSM and prefixed by the AWS TNB network instance ID. This prevents parameter values from an override when multiple instances are instantiated and upgraded using the same NSD template.
 

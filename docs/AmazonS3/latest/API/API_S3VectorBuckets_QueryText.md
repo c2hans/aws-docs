@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # QueryText
-<a name="API_S3VectorBuckets_QueryText"></a>
 
 A full-text search query for a single metadata key.
 

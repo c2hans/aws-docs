@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/security-updates.html
 ---
 
 # Security updates
-<a name="security-updates"></a>
 
  Amazon Linux 2023 improves upon the hardening present in AL2. For more information, see [Security and Compliance in Amazon Linux](security.md). For more information on kernel hardening changes from AL2, see [Security focused kernel config changes](compare-with-al2-kernel.md#security-kernel-config-changes).
 

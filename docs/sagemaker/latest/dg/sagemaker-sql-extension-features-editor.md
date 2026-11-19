@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # SQL editor features of the JupyterLab SQL extension
-<a name="sagemaker-sql-extension-features-editor"></a>
 
 The SQL extension provides magic commands that enable the SQL editor functionalities within your JupyterLab notebook cells.
 

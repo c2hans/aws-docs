@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Serv
 ---
 
 # ServiceNowConfiguration
-<a name="API_ServiceNowConfiguration"></a>
 
 Configuration for ServiceNow instance integration.
 

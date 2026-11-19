@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # PostalCodeDetails
-<a name="API_geoplaces_PostalCodeDetails"></a>
 
 Contains details about the postal code of the place or result.
 

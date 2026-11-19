@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Di
 ---
 
 # DisassociateAgentCollaborator
-<a name="API_agent_DisassociateAgentCollaborator"></a>
 
 Disassociates an agent collaborator.
 

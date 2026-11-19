@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisSegmentExtractedInformation
-<a name="API_RealTimeContactAnalysisSegmentExtractedInformation"></a>
 
 Segment containing information extracted from the conversation. Each segment represents the results for a single extraction definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Expense
 ---
 
 # ExpenseDetection
-<a name="API_ExpenseDetection"></a>
 
 An object used to store information about the Value or Label detected by Amazon Textract.
 

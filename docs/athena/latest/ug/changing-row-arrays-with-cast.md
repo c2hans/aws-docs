@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/changing-row-arrays-wit
 ---
 
 # Change field names in arrays using `CAST`
-<a name="changing-row-arrays-with-cast"></a>
 
 To change the field name in an array that contains `ROW` values, you can `CAST` the `ROW` declaration:
 

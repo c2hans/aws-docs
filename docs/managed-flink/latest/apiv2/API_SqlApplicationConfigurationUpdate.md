@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SqlApplic
 ---
 
 # SqlApplicationConfigurationUpdate
-<a name="API_SqlApplicationConfigurationUpdate"></a>
 
 Describes updates to the input streams, destination streams, and reference data sources for a SQL-based Kinesis Data Analytics application.
 

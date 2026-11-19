@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Prerequisites
-<a name="transform-vmware-ms-prerequisites"></a>
 
 If you completed all the steps of an end-to-end migration job in AWS Transform, your target accounts, inventory file, and network infrastructure are already prepared. You can proceed to Configure Migration Defaults.
 

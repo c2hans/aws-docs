@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Subscribe to AI Agent contact ready event in Connect Customer agent workspace
-<a name="3P-apps-ai-agents-onaiagentcontactready"></a>
 
 Subscribes a handler that fires when the session and agentic state have been resolved for a contact. Use this event to know when AI Agents features are available for a specific contact.
 

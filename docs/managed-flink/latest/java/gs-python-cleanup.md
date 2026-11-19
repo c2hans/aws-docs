@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/gs-python-clea
 ---
 
 # Clean up AWS resources
-<a name="gs-python-cleanup"></a>
 
 This section includes procedures for cleaning up AWS resources created in the Getting Started (Python) tutorial.
 

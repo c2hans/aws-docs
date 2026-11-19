@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/updating-licenses.
 ---
 
 # Updating the production license
-<a name="updating-licenses"></a>
 
 The Amazon DCV server checks licenses on the RLM server every few minutes. In case the license is updated on the RLM server, Amazon DCV server automatically updates the used license for the running sessions. The following procedure details how to update a DCV license on RLM.
 

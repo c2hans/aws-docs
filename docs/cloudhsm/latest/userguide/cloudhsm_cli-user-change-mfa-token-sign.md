@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-u
 ---
 
 # Change a user's MFA setup with CloudHSM CLI
-<a name="cloudhsm_cli-user-change-mfa-token-sign"></a>
 
 Use the **user change-mfa token-sign** command in CloudHSM CLI to update a user account's multi-factor authentication (MFA) setup. Any user account can run this command. Accounts with the Admin role can run this command for other users.
 

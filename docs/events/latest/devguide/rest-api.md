@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-api.html
 ---
 
 # Using the REST API
-<a name="rest-api"></a>
 
  All requests go to `https://api.awsevents.com`. Every path is versioned and begins with `/v1`. Requests and responses are JSON.
 

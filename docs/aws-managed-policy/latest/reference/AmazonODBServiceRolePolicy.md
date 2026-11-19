@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonODBServiceRolePolicy
-<a name="AmazonODBServiceRolePolicy"></a>
 
 **Description**: Allows Oracle Database@AWS to manage AWS resources on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # Writing context-aware rules
-<a name="context-aware-rules-writing"></a>
 
 You author rules that match on the context of a flow's source or destination: its VPC, subnet, transit gateway attachment, or Amazon VPC security group. This works in the firewall and IPS rule groups of a Next Generation Firewall policy, including rule groups that you embed directly in the policy, and in the Suricata compatible rule strings (`RulesString`) and structured stateful rules (`StatefulRules`) of a Classic stateful rule group.
 

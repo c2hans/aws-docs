@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PhysicalConnectio
 ---
 
 # PhysicalConnectionRequirements
-<a name="API_PhysicalConnectionRequirements"></a>
 
 The OAuth client app in GetConnection response.
 

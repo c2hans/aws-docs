@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AccountAgg
 ---
 
 # AccountAggregationResponse
-<a name="API_AccountAggregationResponse"></a>
 
 An aggregation of findings by AWS account ID.
 

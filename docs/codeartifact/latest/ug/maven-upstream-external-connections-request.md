@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/maven-upstream-ex
 ---
 
 # Requesting Maven packages from upstreams and external connections
-<a name="maven-upstream-external-connections-request"></a>
 
 ## Importing standard asset names
 <a name="maven-import-standard-asset-names"></a>

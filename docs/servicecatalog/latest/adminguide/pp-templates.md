@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/pp-temp
 ---
 
 # Updating templates for provisioned products
-<a name="pp-templates"></a>
 
 You can change the current template of a provisioned product to a different template. For example if you have an EC2 product in Service Catalog, you can update that EC2 product to retain the same provisioned product ID, but change the template to a S3 bucket.
 

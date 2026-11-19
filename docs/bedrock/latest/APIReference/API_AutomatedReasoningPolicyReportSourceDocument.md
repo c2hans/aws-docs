@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyReportSourceDocument
-<a name="API_AutomatedReasoningPolicyReportSourceDocument"></a>
 
 Represents a source document that was analyzed during fidelity report generation, including the document's metadata and its content broken down into atomic statements.
 

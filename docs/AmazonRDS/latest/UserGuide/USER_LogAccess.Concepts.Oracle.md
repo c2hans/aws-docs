@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAcces
 ---
 
 # Amazon RDS for Oracle database log files
-<a name="USER_LogAccess.Concepts.Oracle"></a>
 
 You can access Oracle alert logs, audit files, and trace files by using the Amazon RDS console or API. For more information about viewing, downloading, and watching file-based database logs, see [Monitoring Amazon RDS log files](USER_LogAccess.md).
 

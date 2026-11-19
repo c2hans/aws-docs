@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Logs
 ---
 
 # LogsAnomalyDetectionIntegrationConfig
-<a name="API_LogsAnomalyDetectionIntegrationConfig"></a>
 
  Information about the integration of DevOps Guru with CloudWatch log groups for log anomaly detection. You can use this to update the configuration.
 

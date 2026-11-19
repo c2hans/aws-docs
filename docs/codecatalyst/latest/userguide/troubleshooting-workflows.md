@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/troublesho
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Troubleshooting problems with workflows
-<a name="troubleshooting-workflows"></a>
 
 Consult the following sections to troubleshoot problems related to workflows in Amazon CodeCatalyst. For more information about workflows, see [Build, test, and deploy with workflows](workflow.md).
 

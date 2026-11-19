@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CspmPro
 ---
 
 # CspmProviderUpdateConfiguration
-<a name="API_CspmProviderUpdateConfiguration"></a>
 
 The cloud provider configuration for updating a connector. This is a union type that currently supports Azure.
 

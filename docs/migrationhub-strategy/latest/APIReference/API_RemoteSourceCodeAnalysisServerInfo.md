@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # RemoteSourceCodeAnalysisServerInfo
-<a name="API_RemoteSourceCodeAnalysisServerInfo"></a>
 
 Information about the server configured for source code analysis.
 

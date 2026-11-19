@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/deprecated.html
 ---
 
 # Deprecated Functionality in AL2023
-<a name="deprecated"></a>
 
  Functionality deprecated in AL2 and not present in AL2023 is documented here. This is functionality such as features and packages that are present in AL2, but not in AL2023 and will not be added to AL2023. For more information about how the long the functionality is supported in AL2, see [Deprecated functionality in AL2](https://docs.aws.amazon.com/linux/al2/ug/deprecated.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # CreateView
-<a name="API_CreateView"></a>
 
 Creates a view that users can query by using the [Search](API_Search.md) operation. Results from queries that you make using this view include only resources that match the view's `Filters`. For more information about AWS Resource Explorer views, see [Managing views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views.html) in the * AWS Resource Explorer User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # Supported AWS Regions
-<a name="agentcore-regions"></a>
 
 The following table shows which features are supported in each AWS Region:
 

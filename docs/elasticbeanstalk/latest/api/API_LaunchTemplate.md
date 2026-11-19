@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_LaunchTe
 ---
 
 # LaunchTemplate
-<a name="API_LaunchTemplate"></a>
 
 Describes an Amazon EC2 launch template.
 

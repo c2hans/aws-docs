@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Pa
 ---
 
 # PatientInsightsEncounterContext
-<a name="API_PatientInsightsEncounterContext"></a>
 
 Details for an encounter
 

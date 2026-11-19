@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/general-faq.h
 ---
 
 # General FAQ
-<a name="general-faq"></a>
 
 ## How does the integration work?
 <a name="how-does-the-integration-work"></a>

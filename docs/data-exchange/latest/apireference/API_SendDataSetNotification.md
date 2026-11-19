@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Se
 ---
 
 # SendDataSetNotification
-<a name="API_SendDataSetNotification"></a>
 
 The type of event associated with the data set.
 

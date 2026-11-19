@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-data-integration
 ---
 
 # Data integration
-<a name="rise-data-integration"></a>
 
 RISE with SAP Extensibility for Data Integration with AWS is a technical framework that enables data flow between SAP systems, AWS services, and third-party solutions. This integration architecture provides standardized APIs, connectors, and protocols to establish secure communication channels, addressing the critical need for seamless enterprise data integration in modern cloud environments.
 

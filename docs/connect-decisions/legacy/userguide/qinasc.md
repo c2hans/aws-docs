@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/qinas
 ---
 
 # Amazon Q in AWS Supply Chain
-<a name="qinasc"></a>
 
 **Note**
 **Powered by Amazon Bedrock:** AWS implements [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html). Because Amazon Q in AWS Supply Chain is built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).

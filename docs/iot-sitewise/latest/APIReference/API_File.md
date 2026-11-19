@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Fil
 ---
 
 # File
-<a name="API_File"></a>
 
 The file in Amazon S3 where your data is saved.
 

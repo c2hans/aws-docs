@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/securing-mari
 ---
 
 # Securing MariaDB DB instance connections
-<a name="securing-mariadb-connections"></a>
 
 You can manage the security of your MariaDB DB instances.
 

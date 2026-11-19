@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # ListInstances
-<a name="API_ListInstances"></a>
 
 List all AWS Supply Chain instances for a specific account. Enables you to programmatically list all AWS Supply Chain instances based on their account ID, instance name, and state of the instance (active or delete).
 

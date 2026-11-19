@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/dm-postgresql-step-1.html
 ---
 
 # Step 1: Create AWS Resources
-<a name="dm-postgresql-step-1"></a>
 
 In this step, you create and configure the required AWS resources for homogeneous data migrations in AWS DMS.
 

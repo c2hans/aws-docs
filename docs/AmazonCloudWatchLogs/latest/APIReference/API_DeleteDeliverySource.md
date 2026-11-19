@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteDeliverySource
-<a name="API_DeleteDeliverySource"></a>
 
 Deletes a *delivery source*. A delivery is a connection between a logical *delivery source* and a logical *delivery destination*.
 

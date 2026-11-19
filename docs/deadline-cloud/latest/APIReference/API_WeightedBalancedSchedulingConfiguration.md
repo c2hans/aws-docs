@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_W
 ---
 
 # WeightedBalancedSchedulingConfiguration
-<a name="API_WeightedBalancedSchedulingConfiguration"></a>
 
 Configuration for weighted balanced scheduling. Workers are assigned to jobs based on a weighted formula:
 

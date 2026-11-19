@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UsernameConfigurationType
-<a name="API_UsernameConfigurationType"></a>
 
 The configuration of a user pool for username case sensitivity.
 

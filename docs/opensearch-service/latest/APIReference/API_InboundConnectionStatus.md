@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # InboundConnectionStatus
-<a name="API_InboundConnectionStatus"></a>
 
 The status of an inbound cross-cluster connection for OpenSearch Service.
 

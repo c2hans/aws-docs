@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/device-defe
 ---
 
 # AWS IoT Device Defender
-<a name="device-defender-component"></a>
 
 The AWS IoT Device Defender component (`aws.greengrass.DeviceDefender`) notifies administrators about changes in the state of Greengrass core devices. This can help identify unusual behavior that might indicate a compromised device. For more information, see [AWS IoT Device Defender](https://docs.aws.amazon.com/iot/latest/developerguide/device-defender.html) in the *AWS IoT Core Developer Guide*.
 

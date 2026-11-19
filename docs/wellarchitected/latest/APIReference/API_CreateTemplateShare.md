@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateTemplateShare
-<a name="API_CreateTemplateShare"></a>
 
 Create a review template share.
 

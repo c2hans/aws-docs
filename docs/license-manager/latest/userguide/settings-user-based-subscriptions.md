@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/setting
 ---
 
 # User-based subscription settings in License Manager
-<a name="settings-user-based-subscriptions"></a>
 
 The following settings are available depending on which products you require for user-based subscriptions.
 

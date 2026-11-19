@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CancelJobExe
 ---
 
 # CancelJobExecution
-<a name="API_CancelJobExecution"></a>
 
 Cancels the execution of a job for a given thing.
 

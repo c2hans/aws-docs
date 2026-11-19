@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 ---
 
 # Shadow
-<a name="device-advisor-tests-shadow"></a>
 
 Use these tests to verify your devices under test use AWS IoT Device Shadow service correctly. See [AWS IoT Device Shadow service](iot-device-shadows.md) for more information. If these test cases are configured in your test suite, then providing a thing is required when starting the suite run.
 

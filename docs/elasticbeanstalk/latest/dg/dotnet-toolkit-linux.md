@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-toolki
 ---
 
 # The AWS Toolkit for Visual Studio - Working with .Net Core on Elastic Beanstalk
-<a name="dotnet-toolkit-linux"></a>
 
 This topic shows how you can do the following tasks using the AWS Toolkit for Visual Studio:
 + Create an ASP.NET Core web application using a Visual Studio template.

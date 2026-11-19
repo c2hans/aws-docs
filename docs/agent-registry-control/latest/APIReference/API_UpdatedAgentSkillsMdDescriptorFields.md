@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedAgentSkillsMdDescriptorFields
-<a name="API_UpdatedAgentSkillsMdDescriptorFields"></a>
 
 The set of agent skills markdown descriptor fields that can be individually updated.
 

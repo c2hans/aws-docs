@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ro
 ---
 
 # Row
-<a name="API_Row"></a>
 
 Represents a single row in the query results.
 

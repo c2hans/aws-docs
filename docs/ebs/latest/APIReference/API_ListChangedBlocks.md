@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/APIReference/API_ListChangedB
 ---
 
 # ListChangedBlocks
-<a name="API_ListChangedBlocks"></a>
 
 Returns information about the blocks that are different between two Amazon EBS snapshots of the same volume or between two snapshot copies of the same source snapshot.
 

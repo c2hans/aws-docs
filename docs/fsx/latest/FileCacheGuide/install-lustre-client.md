@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/install-lustre
 ---
 
 # Installing the Lustre client
-<a name="install-lustre-client"></a>
 
 To mount your cache from a Linux instance, first install the open-source Lustre client. Amazon File Cache version 2.12 supports access from the 2.12 versions of the Lustre client. Then, depending on your operating system version, use one of the following procedures.
 

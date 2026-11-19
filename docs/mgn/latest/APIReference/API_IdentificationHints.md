@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Identificati
 ---
 
 # IdentificationHints
-<a name="API_IdentificationHints"></a>
 
 Identification hints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-chime.
 ---
 
 # Amazon Chime events
-<a name="events-ref-chime"></a>
 
 Amazon Chime sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

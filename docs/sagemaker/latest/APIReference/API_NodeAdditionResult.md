@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_NodeAd
 ---
 
 # NodeAdditionResult
-<a name="API_NodeAdditionResult"></a>
 
 Information about a node that was successfully added to the cluster.
 

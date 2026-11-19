@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CaseIdenti
 ---
 
 # CaseIdentifierUnion
-<a name="API_connect-cases_CaseIdentifierUnion"></a>
 
 Identifies a case by its case ID or its reference ID. Specify only one member.
 

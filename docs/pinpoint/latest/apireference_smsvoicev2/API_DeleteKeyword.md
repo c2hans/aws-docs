@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteKeyword
-<a name="API_DeleteKeyword"></a>
 
 Deletes an existing keyword from an origination phone number or pool.
 

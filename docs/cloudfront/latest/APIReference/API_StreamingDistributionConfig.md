@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Strea
 ---
 
 # StreamingDistributionConfig
-<a name="API_StreamingDistributionConfig"></a>
 
 The RTMP distribution's configuration information.
 

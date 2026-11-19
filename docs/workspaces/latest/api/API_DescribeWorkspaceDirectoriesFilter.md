@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorksp
 ---
 
 # DescribeWorkspaceDirectoriesFilter
-<a name="API_DescribeWorkspaceDirectoriesFilter"></a>
 
 Describes the filter conditions for the WorkSpaces to return.
 

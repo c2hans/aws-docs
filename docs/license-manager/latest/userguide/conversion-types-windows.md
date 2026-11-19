@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/convers
 ---
 
 # Eligible license types for Windows and SQL Server in License Manager
-<a name="conversion-types-windows"></a>
 
 **Important**
 Instances that were originally launched from an Amazon provided Amazon Machine Image (AMI) are not eligible for license type conversion to BYOL.

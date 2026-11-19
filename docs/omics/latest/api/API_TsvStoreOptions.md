@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_TsvStoreOptions.htm
 ---
 
 # TsvStoreOptions
-<a name="API_TsvStoreOptions"></a>
 
 File settings for a TSV store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/appstre
 ---
 
 # Fleet Usage Metrics for Single-session Fleets
-<a name="appstream-dimensions"></a>
 
 The following are fleet usage metrics for single-session fleets.
 

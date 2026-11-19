@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TagValues
-<a name="API_budgets_TagValues"></a>
 
 The values that are available for a tag.
 

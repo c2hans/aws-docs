@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # GroupSummary
-<a name="API_GroupSummary"></a>
 
 A structure containing some information about a group.
 

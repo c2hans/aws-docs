@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/concepts-routi
 ---
 
 # Queue priority and delay examples to help you load balance Connect Customer contacts
-<a name="concepts-routing-profiles-priority"></a>
 
 This topic provides several example priority and delay settings for queues, and explains how contacts are routed in each scenario. Use these examples to load balance contacts using the priority and delay features.
 

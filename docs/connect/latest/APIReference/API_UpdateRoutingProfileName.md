@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRo
 ---
 
 # UpdateRoutingProfileName
-<a name="API_UpdateRoutingProfileName"></a>
 
 Updates the name and description of a routing profile. The request accepts the following data in JSON format. At least `Name` or `Description` must be provided.
 

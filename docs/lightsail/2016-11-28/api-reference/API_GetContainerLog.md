@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetContainerLog
-<a name="API_GetContainerLog"></a>
 
 Returns the log events of a container of your Amazon Lightsail container service.
 

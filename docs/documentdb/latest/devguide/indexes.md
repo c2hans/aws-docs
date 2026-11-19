@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/indexes.html
 ---
 
 # Indexes
-<a name="indexes"></a>
 
 Indexes improve query performance by allowing Amazon DocumentDB to quickly locate documents without scanning every document in a collection. You can create indexes on fields that your application queries frequently to reduce latency and I/O costs.
 

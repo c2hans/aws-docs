@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Applicati
 ---
 
 # ApplicationStatusReason
-<a name="API_ApplicationStatusReason"></a>
 
 Describes the reason for an application status check result.
 

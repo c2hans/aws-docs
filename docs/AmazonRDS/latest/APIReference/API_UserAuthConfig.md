@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_UserAu
 ---
 
 # UserAuthConfig
-<a name="API_UserAuthConfig"></a>
 
 Specifies the details of authentication used by a proxy to log in as a specific database user.
 

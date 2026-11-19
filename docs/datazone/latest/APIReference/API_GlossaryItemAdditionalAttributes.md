@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Glossar
 ---
 
 # GlossaryItemAdditionalAttributes
-<a name="API_GlossaryItemAdditionalAttributes"></a>
 
 The additional attributes of an Amazon DataZone glossary.
 

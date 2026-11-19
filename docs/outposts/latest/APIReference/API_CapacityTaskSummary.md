@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Capacit
 ---
 
 # CapacityTaskSummary
-<a name="API_CapacityTaskSummary"></a>
 
 The summary of the capacity task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_Deregister
 ---
 
 # DeregisterJobDefinition
-<a name="API_DeregisterJobDefinition"></a>
 
 Deregisters an AWS Batch job definition. Job definitions are permanently deleted after 180 days.
 

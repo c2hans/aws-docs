@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Rollb
 ---
 
 # RollbackInfo
-<a name="API_RollbackInfo"></a>
 
 Information about a deployment rollback.
 

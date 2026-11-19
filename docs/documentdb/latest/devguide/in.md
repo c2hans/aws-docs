@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/in.html
 ---
 
 # $in
-<a name="in"></a>
 
 The `$in` operator in Amazon DocumentDB is a logical query operator that allows you to find documents where the value of a field equals any of the values specified in an array.
 

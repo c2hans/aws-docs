@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteModelCard
-<a name="API_DeleteModelCard"></a>
 
 Deletes an Amazon SageMaker Model Card.
 

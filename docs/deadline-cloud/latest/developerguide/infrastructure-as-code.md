@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/inf
 ---
 
 # Manage Deadline Cloud infrastructure as code
-<a name="infrastructure-as-code"></a>
 
 You can define AWS Deadline Cloud (Deadline Cloud) farms, queues, and fleets as code. Deploy them with AWS CloudFormation (CloudFormation), the AWS Cloud Development Kit (AWS CDK), or Terraform. All three tools build on the same Deadline Cloud resource types, so they create equivalent infrastructure. Choose the tool your team already uses to manage the rest of your AWS infrastructure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/lates
 ---
 
 # Latest changes
-<a name="latest-changes"></a>
 
 The following table describes the important changes to the AWS Device Qualification Program for FreeRTOS since the last release.
 

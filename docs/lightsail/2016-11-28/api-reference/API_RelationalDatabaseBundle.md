@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # RelationalDatabaseBundle
-<a name="API_RelationalDatabaseBundle"></a>
 
 Describes a database bundle. A bundle describes the performance specifications of the database.
 

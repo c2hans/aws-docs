@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/creating-a-
 ---
 
 # Create a site using AWS Network Manager
-<a name="creating-a-site"></a>
 
 Create a site to represent the physical location of your network. Location information is used in the Network Manager transit gateway dashboards.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # CloudTrail record contents for aggregated events
-<a name="cloudtrail-event-reference-aggregated-events"></a>
 
 AWS CloudTrail aggregated event records include fields that are different from other CloudTrail events in their JSON payload. Aggregated events contain the following fields:
 

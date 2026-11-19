@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/instances.ht
 ---
 
 # Working with instances for CodeDeploy
-<a name="instances"></a>
 
 CodeDeploy supports deployments to instances running Amazon Linux, Ubuntu Server, Red Hat Enterprise Linux (RHEL), and Windows Server.
 

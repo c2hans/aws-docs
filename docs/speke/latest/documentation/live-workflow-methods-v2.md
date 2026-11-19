@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/live-workflow
 ---
 
 # SPEKE API v2.0 - Live workflow method call examples
-<a name="live-workflow-methods-v2"></a>
 
  *Request Syntax Example*
 

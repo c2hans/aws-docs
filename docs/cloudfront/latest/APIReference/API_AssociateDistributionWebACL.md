@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Assoc
 ---
 
 # AssociateDistributionWebACL
-<a name="API_AssociateDistributionWebACL"></a>
 
 Associates the AWS WAF web ACL with a distribution.
 

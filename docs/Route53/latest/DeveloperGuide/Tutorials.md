@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Tutorials.
 ---
 
 # Tutorials
-<a name="Tutorials"></a>
 
 This section covers the following tutorials:
 

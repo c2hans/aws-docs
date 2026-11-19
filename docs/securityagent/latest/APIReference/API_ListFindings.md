@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListFindings
-<a name="API_ListFindings"></a>
 
 Lists the security findings for a pentest job.
 

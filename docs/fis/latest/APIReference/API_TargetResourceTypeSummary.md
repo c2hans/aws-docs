@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_TargetResour
 ---
 
 # TargetResourceTypeSummary
-<a name="API_TargetResourceTypeSummary"></a>
 
 Describes a resource type.
 

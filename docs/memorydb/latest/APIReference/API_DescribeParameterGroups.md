@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Describ
 ---
 
 # DescribeParameterGroups
-<a name="API_DescribeParameterGroups"></a>
 
 Returns a list of parameter group descriptions. If a parameter group name is specified, the list contains only the descriptions for that group.
 

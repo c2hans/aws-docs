@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Use country and URI in HTTP flood Athena log parser
-<a name="use-country-and-uri-in-http-flood-athena-log-parser"></a>
 
 You can group by IPs along with country and URI in the Athena query to detect and block HTTP flood attacks that have unpredictable URI patterns. To do so, select one of the options (`Country`, `URI`, `Country and URI`) for the **Group By Requests in HTTP Flood Athena Query** parameter when [launching the stack](step-1.-launch-the-stack.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # Example
-<a name="channel-scheduling-create-a-one-time-schedule-example"></a>
 
 ```
 POST http://192.0.2.16/channels/1/schedules

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DescribeEphemeris
-<a name="API_DescribeEphemeris"></a>
 
 Retrieve information about an existing ephemeris.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Deplo
 ---
 
 # DeploymentTarget
-<a name="API_DeploymentTarget"></a>
 
  Information about the deployment target.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SigningConfigurati
 ---
 
 # SigningConfiguration
-<a name="API_SigningConfiguration"></a>
 
 The configuration of a signing operation.
 

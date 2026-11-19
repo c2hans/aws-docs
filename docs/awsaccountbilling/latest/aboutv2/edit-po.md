@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/edit-po
 ---
 
 # Editing your purchase orders
-<a name="edit-po"></a>
 
 You can edit your purchase order, line item information, and status using the Billing and Cost Management console. You can't change your purchase order ID in this process.<a name="edit-po-steps"></a>
 

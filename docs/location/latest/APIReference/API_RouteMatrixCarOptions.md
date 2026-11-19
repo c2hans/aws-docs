@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixCarOptions
-<a name="API_RouteMatrixCarOptions"></a>
 
 Travel mode options when the provided travel mode is `Car`.
 

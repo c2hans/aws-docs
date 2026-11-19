@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # Metric
-<a name="API_Metric"></a>
 
 This structure defines the metric used for a service level indicator, including the metric name, namespace, and dimensions
 

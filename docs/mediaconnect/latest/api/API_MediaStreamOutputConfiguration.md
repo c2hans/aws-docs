@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaStreamO
 ---
 
 # MediaStreamOutputConfiguration
-<a name="API_MediaStreamOutputConfiguration"></a>
 
  The media stream that is associated with the output, and the parameters for that association.
 

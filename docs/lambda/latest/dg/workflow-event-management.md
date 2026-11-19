@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/workflow-event-manageme
 ---
 
 # Managing Lambda workflows and events
-<a name="workflow-event-management"></a>
 
 When building serverless applications with Lambda, you often need ways to orchestrate function execution and handle events. AWS provides several approaches for coordinating Lambda Event Functions:
 + [Lambda durable functions](durable-functions.md) for code-first workflow orchestration within Lambda

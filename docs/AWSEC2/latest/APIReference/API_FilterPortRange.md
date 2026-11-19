@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FilterPor
 ---
 
 # FilterPortRange
-<a name="API_FilterPortRange"></a>
 
 Describes a port range.
 

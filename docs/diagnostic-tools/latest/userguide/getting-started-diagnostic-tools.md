@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/userguide/gettin
 ---
 
 # Get started with AWS Diagnostic Tools
-<a name="getting-started-diagnostic-tools"></a>
 
 **Topics**
 + [Overview](#getting-started-overview)

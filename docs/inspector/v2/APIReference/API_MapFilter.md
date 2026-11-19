@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_MapFilter.
 ---
 
 # MapFilter
-<a name="API_MapFilter"></a>
 
 An object that describes details of a map filter.
 

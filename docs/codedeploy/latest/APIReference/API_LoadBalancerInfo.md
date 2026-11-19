@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_LoadB
 ---
 
 # LoadBalancerInfo
-<a name="API_LoadBalancerInfo"></a>
 
 Information about the Elastic Load Balancing load balancer or target group used in a deployment.
 

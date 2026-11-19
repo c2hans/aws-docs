@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Smart crop (`smartCrop`)
-<a name="smart-crop-smartcrop"></a>
 
 The `smartCrop` transformation accepts one of three value forms:
 +  `true`: face-based cropping with default shaping (shorthand).

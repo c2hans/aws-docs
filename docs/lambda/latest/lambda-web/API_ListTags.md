@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_ListTags.ht
 ---
 
 # ListTags
-<a name="API_ListTags"></a>
 
 Returns a list of tags applied to a web function.
 

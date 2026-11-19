@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_P
 ---
 
 # PutHypervisorPropertyMappings
-<a name="API_BGW_PutHypervisorPropertyMappings"></a>
 
 This action sets the property mappings for the specified hypervisor. A hypervisor property mapping displays the relationship of entity properties available from the hypervisor to the properties available in AWS.
 

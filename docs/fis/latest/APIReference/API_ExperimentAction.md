@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentAc
 ---
 
 # ExperimentAction
-<a name="API_ExperimentAction"></a>
 
 Describes the action for an experiment.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic TopicRangeFilterConstant
-<a name="aws-properties-quicksight-topic-topicrangefilterconstant"></a>
 
 A constant value that is used in a range filter to specify the endpoints of the range.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # ListTagsForResource
-<a name="API_connect-outbound-campaigns_ListTagsForResource"></a>
 
 Lists tags for a resource.
 

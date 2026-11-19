@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListSystemVe
 ---
 
 # ListSystemVersions
-<a name="API_ListSystemVersions"></a>
 
 Returns information about the system versions that are available for a VM cluster for the specified `giVersion` and `shape`.
 

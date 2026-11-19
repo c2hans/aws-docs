@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/deleting-tapes
 ---
 
 # Deleting virtual tapes from your Tape Gateway
-<a name="deleting-tapes-vtl"></a>
 
 You can delete virtual tapes from your Tape Gateway by using the Storage Gateway console.
 

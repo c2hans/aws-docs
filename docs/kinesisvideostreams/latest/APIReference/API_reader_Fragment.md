@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # Fragment
-<a name="API_reader_Fragment"></a>
 
 Represents a segment of video or other time-delimited data.
 

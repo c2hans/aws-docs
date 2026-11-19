@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_P
 ---
 
 # PublishAppVersion
-<a name="API_PublishAppVersion"></a>
 
 Publishes a new version of a specific AWS Resilience Hub application.
 

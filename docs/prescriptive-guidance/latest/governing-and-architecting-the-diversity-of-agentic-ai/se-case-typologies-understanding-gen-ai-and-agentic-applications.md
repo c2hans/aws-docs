@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/governing-a
 ---
 
 # Use case typologies – understanding generative AI and agentic applications
-<a name="se-case-typologies-understanding-gen-ai-and-agentic-applications"></a>
 
 Generative AI and agentic applications serve diverse purposes across organizations. Understanding these use case categories helps establish appropriate governance frameworks, risk assessments, and operational controls.
 

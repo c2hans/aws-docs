@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DestinationSummary
-<a name="API_connect-customer-profiles_DestinationSummary"></a>
 
 Summary information about the Kinesis data stream
 

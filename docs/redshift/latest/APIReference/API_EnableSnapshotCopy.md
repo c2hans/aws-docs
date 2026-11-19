@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_EnableS
 ---
 
 # EnableSnapshotCopy
-<a name="API_EnableSnapshotCopy"></a>
 
 Enables the automatic copy of snapshots from one region to another region for a specified cluster.
 

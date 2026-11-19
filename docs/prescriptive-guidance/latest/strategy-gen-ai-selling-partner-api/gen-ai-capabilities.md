@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Implementing a generative AI strategy for your Amazon selling partner data
-<a name="gen-ai-capabilities"></a>
 
 Amazon vendors and sellers can use generative artificial intelligence (generative AI) services and features on AWS to gain deeper insights, automate repetitive tasks, and enhance your customer experience on Amazon. For example, you can use generative AI to automatically create optimized, high-quality product descriptions for your Amazon listings, generate marketing copy or customer communications, or forecast sales, inventory, and other key business metrics. Generative AI can provide insights into the data that you've ingested from the Amazon Selling Partner API.
 

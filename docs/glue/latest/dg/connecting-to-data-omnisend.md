@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-omnise
 ---
 
 # Connecting to Omnisend in AWS Glue Studio
-<a name="connecting-to-data-omnisend"></a>
 
 Omnisend is an email/SMS/push marketing platform for e-commerce. Because you are an Omnisend user, you can connect AWS Glue to your Omnisend account. You can then use Omnisend as a data source in your AWS Glue ETL jobs to transfer data between Omnisend and AWS services or other supported applications.
 

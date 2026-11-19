@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateTopicPermissions
-<a name="API_UpdateTopicPermissions"></a>
 
 Updates the permissions of a topic.
 

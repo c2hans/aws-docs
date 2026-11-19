@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/event
 ---
 
 # Repository Sync Status Change event detail
-<a name="event-detail-respository-sync-status-change"></a>
 
 Below are the detail fields for Repository Sync Status Change events.
 

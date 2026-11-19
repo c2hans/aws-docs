@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ExportTaskSu
 ---
 
 # ExportTaskSummary
-<a name="API_ExportTaskSummary"></a>
 
 Export task summary.
 

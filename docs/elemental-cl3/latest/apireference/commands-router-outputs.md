@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/comman
 ---
 
 # Router Outputs
-<a name="commands-router-outputs"></a>
 
 | Nickname | Action | Signature | Description |
 | --- | --- | --- | --- |

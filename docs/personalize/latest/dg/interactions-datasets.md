@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/interactions-datas
 ---
 
 # Preparing item interaction data for training
-<a name="interactions-datasets"></a>
 
  An *item interaction* is a positive interaction event between a user and an item in your catalogue. For example, a user watching a movie, viewing a listing, or purchasing a pair of shoes. You import data about your users' interactions with your items into a *Item interactions dataset*. You can record multiple event types, such as *click*, *watch* or *purchase*.
 

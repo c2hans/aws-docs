@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/tagging-newtags.htm
 ---
 
 # Tagging a new resource
-<a name="tagging-newtags"></a>
 
 You can add tags to an **Analysis job**, a **Custom classification** model, a **Custom entity recognition** model, or **endpoints**.
 

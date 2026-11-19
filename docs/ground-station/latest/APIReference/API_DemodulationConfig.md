@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DemodulationConfig
-<a name="API_DemodulationConfig"></a>
 
 Information about the demodulation `Config`.
 

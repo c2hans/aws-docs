@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Create a Security Group Using Windows PowerShell
-<a name="pstools-ec2-sg"></a>
 
 You can use the AWS Tools for PowerShell to create and configure a security group. The response is the ID of the security group.
 

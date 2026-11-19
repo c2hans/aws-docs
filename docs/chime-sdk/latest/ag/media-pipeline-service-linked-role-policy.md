@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/media-pipeline-servi
 ---
 
 # AWS managed policy: AmazonChimeSDKMediaPipelinesServiceLinkedRolePolicy
-<a name="media-pipeline-service-linked-role-policy"></a>
 
 You can't attach the `AmazonChimeSDKMediaPipelinesServiceLinkedRolePolicy` to your IAM entities.
 

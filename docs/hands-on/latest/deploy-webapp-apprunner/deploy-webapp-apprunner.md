@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deploy-webapp-apprunner/
 ---
 
 # Deploy a Web App on Nginx Server using AWS App Runner
-<a name="deploy-webapp-apprunner"></a>
 
 |  |  |
 | --- |--- |

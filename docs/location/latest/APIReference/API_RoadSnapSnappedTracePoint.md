@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoadSna
 ---
 
 # RoadSnapSnappedTracePoint
-<a name="API_RoadSnapSnappedTracePoint"></a>
 
 TracePoints snapped onto the road network.
 

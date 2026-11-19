@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_IsNotNu
 ---
 
 # IsNotNullExpression
-<a name="API_IsNotNullExpression"></a>
 
 Specifies that the expression is not null.
 

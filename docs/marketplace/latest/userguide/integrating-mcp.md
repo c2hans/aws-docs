@@ -3,13 +3,12 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/integrating
 ---
 
 # Integrating MCP
-<a name="integrating-mcp"></a>
 
 AWS MCP Server (MCP) is an open standard that enables seamless communication between AI agents and external tools. When you implement MCP in your AI agent or tool, customers can integrate your solution directly into their existing agentic workflows without complex API integration work.
 
 MCP transforms how AI agents access external capabilities. Instead of building custom integrations for each tool, agents use a standardized protocol to discover, connect, and interact with MCP-compatible services. This approach reduces integration complexity and enables ready-to-use functionality.
 
-For more information about implementing AWS MCP Server in your agent or tool, see [Integrating MCP](#integrating-mcp).
+For more information about implementing AWS MCP Server in your agent or tool, see [Integrating MCP](integrating-mcp.md).
 
 **Topics**
 + [Key Benefits of AWS MCP Server integration](#mcp-benefits)

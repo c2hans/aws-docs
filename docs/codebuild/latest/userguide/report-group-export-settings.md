@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/report-group-
 ---
 
 # Update a report group
-<a name="report-group-export-settings"></a>
 
  When you update a report group, you can specify information about whether to export the raw test result data to files in an Amazon S3 bucket. If you choose to export to an S3 bucket, you can specify the following for your report group:
 + Whether the raw test results files are compressed in a ZIP file.

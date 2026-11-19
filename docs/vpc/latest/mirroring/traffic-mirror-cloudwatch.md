@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirror-clou
 ---
 
 # Monitor mirrored traffic using Amazon CloudWatch
-<a name="traffic-mirror-cloudwatch"></a>
 
 You can monitor your mirrored traffic using Amazon CloudWatch, which collects information from your network interface that is part of a traffic mirror session, and creates readable, near real-time metrics. You can use this information to monitor and troubleshoot Traffic Mirroring.
 

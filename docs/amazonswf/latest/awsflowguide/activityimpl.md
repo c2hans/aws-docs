@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/activityim
 ---
 
 # Activity Implementation
-<a name="activityimpl"></a>
 
 Activities are implemented by providing an implementation of the `@Activities` interface. The AWS Flow Framework for Java uses the activity implementation instances configured on the worker to process activity tasks at run time. The worker automatically looks up the activity implementation of the appropriate type.
 

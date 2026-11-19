@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/reple
 ---
 
 # shipment\_stop\_order
-<a name="replenishment-shipment-stop-order-entity"></a>
 
 **Primary key (PK)**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_A
 ---
 
 # AccountLevelBpaSync
-<a name="API_AccountLevelBpaSync"></a>
 
 Describes the synchronization status of the Amazon Simple Storage Service (Amazon S3) account-level block public access (BPA) feature for your Lightsail buckets.
 

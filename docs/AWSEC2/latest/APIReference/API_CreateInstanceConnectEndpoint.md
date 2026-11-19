@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIns
 ---
 
 # CreateInstanceConnectEndpoint
-<a name="API_CreateInstanceConnectEndpoint"></a>
 
 Creates an EC2 Instance Connect Endpoint.
 

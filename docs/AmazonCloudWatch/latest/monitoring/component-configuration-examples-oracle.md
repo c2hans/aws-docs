@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # RDS Oracle
-<a name="component-configuration-examples-oracle"></a>
 
 The following example shows a component configuration in JSON format for RDS Oracle.
 

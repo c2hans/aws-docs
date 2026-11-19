@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Smart Metering for Water Utilities
-<a name="smart-metering-for-water-utilities"></a>
 
 Publication date: **March 16, 2022 ([Diagram history](#diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AssessmentRiskRecommendation
-<a name="API_AssessmentRiskRecommendation"></a>
 
 Indicates a specific risk identified in the AWS Resilience Hub assessment and the corresponding recommendation provided to address that risk.
 

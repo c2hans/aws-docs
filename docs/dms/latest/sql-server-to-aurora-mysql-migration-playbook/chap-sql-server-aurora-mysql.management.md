@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Migrating management features to Aurora MySQL
-<a name="chap-sql-server-aurora-mysql.management"></a>
 
 This chapter provides reference information for migrating databases that use management features from Microsoft SQL Server 2019 to Amazon Aurora MySQL. You can gain insights into how these two database systems handle tasks such as job scheduling, event notifications, email functionality, ETL processes, logging, maintenance, monitoring, resource management, linked servers, and scripting.
 

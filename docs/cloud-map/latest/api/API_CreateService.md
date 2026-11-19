@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_CreateService.h
 ---
 
 # CreateService
-<a name="API_CreateService"></a>
 
 Creates a service. This action defines the configuration for the following entities:
 + For public and private DNS namespaces, one of the following combinations of DNS records in Amazon Route 53:

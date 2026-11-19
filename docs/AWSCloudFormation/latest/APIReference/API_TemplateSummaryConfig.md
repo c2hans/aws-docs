@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # TemplateSummaryConfig
-<a name="API_TemplateSummaryConfig"></a>
 
 Options for the `GetTemplateSummary` API action.
 

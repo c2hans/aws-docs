@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # Amazon EC2 Dedicated Host pricing and billing
-<a name="dedicated-hosts-billing"></a>
 
 The price for a Dedicated Host varies by payment option.
 

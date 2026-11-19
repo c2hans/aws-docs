@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/modbus-tcp-
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Modbus-TCP Protocol Adapter connector
-<a name="modbus-tcp-connector"></a>
 
 The Modbus-TCP Protocol Adapter [connector](connectors.md) collects data from local devices through the ModbusTCP protocol and publishes it to the selected `StreamManager` streams.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/transactions.
 ---
 
 # Transactions in Amazon DocumentDB
-<a name="transactions"></a>
 
 Amazon DocumentDB (with MongoDB compatibility) supports transactions in Amazon DocumentDB 4.0 and later. You can perform transactions across multiple documents, statements, collections, and databases. Transactions simplify application development by enabling you to perform atomic, consistent, isolated, and durable (ACID) operations across one or more documents within an Amazon DocumentDB cluster. Common use cases for transactions include financial processing, fulfilling and managing orders, and building multi-player games.
 

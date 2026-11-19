@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/default-vpc-compone
 ---
 
 # Default VPC components
-<a name="default-vpc-components"></a>
 
 When we create a default VPC, we do the following to set it up for you:
 + Create a VPC with a size `/16` IPv4 CIDR block (`172.31.0.0/16`). This provides up to 65,536 private IPv4 addresses.

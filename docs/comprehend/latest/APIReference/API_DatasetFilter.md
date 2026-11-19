@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Datas
 ---
 
 # DatasetFilter
-<a name="API_DatasetFilter"></a>
 
 Filter the datasets based on creation time or dataset status.
 

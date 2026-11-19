@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/data-entities
 ---
 
 # Creating, editing, or deleting data actions
-<a name="data-entities-edit-data-actions"></a>
 
 Data actions are used in applications to run actions on an entity's data, such as fetching all records, or fetching a record by ID. Data actions can be used to locate and return data matching specified conditions to be viewed in components such as tables or detail views.
 

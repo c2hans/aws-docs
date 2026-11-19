@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Enable HTTPS on your WordPress instance with Let's Encrypt and Certbot
-<a name="amazon-lightsail-lets-encrypt-certbot-wordpress"></a>
 
 **Tip**
 Amazon Lightsail offers Lightsail Setup, which automates the installation, configuration, and renewal of a Let's Encrypt certificate on your WordPress instance. We highly recommend that you use Lightsail Setup instead of following the manual steps in this tutorial. For more information, see [Launch and configure a WordPress instance](amazon-lightsail-launch-and-configure-wordpress.md).

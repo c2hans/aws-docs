@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Blo
 ---
 
 # BlockerDeclaration
-<a name="API_BlockerDeclaration"></a>
 
 Reserved for future use.
 

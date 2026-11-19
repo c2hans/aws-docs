@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_TargetTrackingScal
 ---
 
 # TargetTrackingScalingPolicy
-<a name="API_TargetTrackingScalingPolicy"></a>
 
 A scaling policy for the capacity provider that automatically adjusts capacity to maintain a target value for a specific metric.
 
@@ -13,7 +12,7 @@ A scaling policy for the capacity provider that automatically adjusts capacity t
  ** PredefinedMetricType **   <a name="lambda-Type-TargetTrackingScalingPolicy-PredefinedMetricType"></a>
 The predefined metric type to track for scaling decisions.
 Type: String
-Valid Values: `LambdaCapacityProviderAverageCPUUtilization`
+Valid Values: `LambdaCapacityProviderAverageCPUUtilization | LambdaCapacityProviderAverageGPUUtilization`
 Required: Yes
 
  ** TargetValue **   <a name="lambda-Type-TargetTrackingScalingPolicy-TargetValue"></a>

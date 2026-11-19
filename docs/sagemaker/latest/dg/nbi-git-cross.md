@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/nbi-git-cross.html
 ---
 
 # Associate a CodeCommit Repository in a Different AWS Account with a Notebook Instance
-<a name="nbi-git-cross"></a>
 
 To associate a CodeCommit repository in a different AWS account with your notebook instance, set up cross-account access for the CodeCommit repository.
 

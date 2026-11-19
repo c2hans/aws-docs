@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::ContainerFleet DeploymentConfiguration
-<a name="aws-properties-gamelift-containerfleet-deploymentconfiguration"></a>
 
 Set of rules for processing a deployment for a container fleet update. For how Amazon GameLift Servers validates and rolls out a deployment, see [Container fleet deployments](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/containers-deployment-validation.html).
 

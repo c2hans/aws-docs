@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # Amazon Kinesis Video Streams
-<a name="API_Types_Amazon_Kinesis_Video_Streams"></a>
 
 The following data types are supported by Amazon Kinesis Video Streams:
 +  [ChannelInfo](API_ChannelInfo.md)

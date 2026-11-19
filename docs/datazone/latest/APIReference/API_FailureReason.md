@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Failure
 ---
 
 # FailureReason
-<a name="API_FailureReason"></a>
 
 The details of a resource deletion failure during a cascade deletion of the domain.
 

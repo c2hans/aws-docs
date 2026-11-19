@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/secrets-manager_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Getting started with document databases
-<a name="secrets-manager_example_docdb_GettingStarted_025_section"></a>
 
 The following code example shows how to:
 + Create a DB subnet group

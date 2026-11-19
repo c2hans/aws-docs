@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/calendly-connection-optio
 ---
 
 # Calendly connection options
-<a name="calendly-connection-options"></a>
 
 The following are connection options for Calendly:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Calendly object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aurora-serverles
 ---
 
 # Using Aurora PostgreSQL with Data API in AWS AppSync
-<a name="aurora-serverless-tutorial-js"></a>
 
 Learn how to connect your GraphQL API to Aurora PostgreSQL databases using AWS AppSync. This integration enables you to build scalable, data-driven applications by executing SQL queries and mutations through GraphQL operations. AWS AppSync provides a data source for executing SQL statements against Amazon Aurora clusters that are enabled with a Data API. You can use AWS AppSync resolvers to run SQL statements against the data API with GraphQL queries, mutations, and subscriptions.
 

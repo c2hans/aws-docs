@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/auction.ht
 ---
 
 # .auction
-<a name="auction"></a>
 
 Used for events related to auctions and auction-based buying and selling.
 

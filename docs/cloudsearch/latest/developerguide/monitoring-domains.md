@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/monito
 ---
 
 # Monitoring Amazon CloudSearch Domains
-<a name="monitoring-domains"></a>
 
 The AWS Management Console enables you to easily monitor the status and configuration of your search domains and view your Amazon CloudSearch usage. You can also get configuration information about particular domains with the AWS CLI and AWS SDKs.
 

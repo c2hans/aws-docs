@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/stdevpOver-functi
 ---
 
 # stdevpOver
-<a name="stdevpOver-function"></a>
 
 The `stdevpOver` function calculates the standard deviation of the specified measure, partitioned by the chosen attribute or attributes, based on a biased population.
 

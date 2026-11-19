@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # KnowledgeBaseAssociationConfigurationData
-<a name="API_amazon-q-connect_KnowledgeBaseAssociationConfigurationData"></a>
 
 The data of the configuration for a `KNOWLEDGE_BASE` type Amazon Q in Connect Assistant Association.
 

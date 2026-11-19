@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotOptio
 ---
 
 # SpotOptionsRequest
-<a name="API_SpotOptionsRequest"></a>
 
 Describes the configuration of Spot Instances in an EC2 Fleet request.
 

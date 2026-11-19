@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/handle-err
 ---
 
 # Handling Errors in the AWS SDK for Go V2
-<a name="handle-errors"></a>
 
  The AWS SDK for Go returns errors that satisfy the Go `error` interface type. You can use the `Error()` method to get a formatted string of the SDK error message without any special handling. Errors returned by the SDK may implement an `Unwrap` method. The `Unwrap` method is used by the SDK to provide additional contextual information to errors, while providing access to the underlying error or chain of errors. The `Unwrap` method should be used with the [errors.As](https://golang.org/pkg/errors#As) to handle unwrapping error chains.
 

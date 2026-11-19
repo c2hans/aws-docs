@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Appendix B: Implementation checklist for an ADM TOM
-<a name="appendix-checklist"></a>
 
 This comprehensive checklist provides you with a structured approach to implementing an application development and maintenance (ADM) target operating model (TOM). The checklist considers governance, organizational structure, personnel roles, processes, and tools for each of the following phases of implementation:
 + [Phase 1: Foundation setting](#appendix-b-foundation)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-in
 ---
 
 # Logs sent to Firehose
-<a name="AWS-logs-infrastructure-Firehose"></a>
 
 This section applies when the types of logs listed in the table in the preceding section are sent to Firehose:
 

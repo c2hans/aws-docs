@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Globally scoped operations best practices
-<a name="globally-scoped-operations-best-practices"></a>
 
 This section provides best practices for using services with globally scoped operations, particularly dependencies on Route 53, in your recovery operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-quota
 ---
 
 # Unsupported features, limits, and quotas
-<a name="s3-files-quotas"></a>
 
 This page describes the limitations and quotas when using S3 Files.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-agentic
 ---
 
 # Create and manage retrieval instructions
-<a name="kb-test-agentic-retrieve-instruction"></a>
 
 A retrieval instruction is a reusable resource that steers agentic retrieval. It sets how the agent searches your knowledge bases, who the assistant is, how the assistant formats answers, and when it declines to answer. You write the instruction once, Amazon Bedrock reviews it, and then you reference it from `AgenticRetrieveStream` requests.
 

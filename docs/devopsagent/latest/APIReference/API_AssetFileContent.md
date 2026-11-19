@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asse
 ---
 
 # AssetFileContent
-<a name="API_AssetFileContent"></a>
 
 A single file with path and content
 

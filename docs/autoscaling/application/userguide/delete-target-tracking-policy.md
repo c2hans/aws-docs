@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/delete
 ---
 
 # Delete a target tracking scaling policy for Application Auto Scaling using the AWS CLI
-<a name="delete-target-tracking-policy"></a>
 
 When you are finished with a target tracking scaling policy, you can delete it using the [delete-scaling-policy](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/delete-scaling-policy.html) command.
 

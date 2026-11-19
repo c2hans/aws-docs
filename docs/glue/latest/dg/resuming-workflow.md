@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/resuming-workflow.html
 ---
 
 # Repairing and resuming a workflow run
-<a name="resuming-workflow"></a>
 
  If one or more nodes (jobs or crawlers) in a workflow do not successfully complete, this means that the workflow only partially ran. After you find the root causes and make corrections, you can select one or more nodes to resume the workflow run from, and then resume the workflow run. The selected nodes and all nodes that are downstream from those nodes are then run.
 

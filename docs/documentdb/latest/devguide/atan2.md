@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/atan2.html
 ---
 
 # $atan2
-<a name="atan2"></a>
 
 New from version 8.0.1.
 

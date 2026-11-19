@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Dis
 ---
 
 # Distribution
-<a name="API_Distribution"></a>
 
 Defines the settings for a specific Region.
 

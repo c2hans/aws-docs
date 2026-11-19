@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # VoiceToneAnalysisTask
-<a name="API_media-pipelines-chime_VoiceToneAnalysisTask"></a>
 
 A representation of an asynchronous request to perform voice tone analysis on a media insights pipeline.
 

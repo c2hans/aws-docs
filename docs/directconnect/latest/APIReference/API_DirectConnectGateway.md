@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Di
 ---
 
 # DirectConnectGateway
-<a name="API_DirectConnectGateway"></a>
 
 Information about a Direct Connect gateway, which enables you to connect virtual interfaces and virtual private gateway or transit gateways.
 

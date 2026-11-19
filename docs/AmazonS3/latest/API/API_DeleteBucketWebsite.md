@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketWebs
 ---
 
 # DeleteBucketWebsite
-<a name="API_DeleteBucketWebsite"></a>
 
 **Note**
 This operation is not supported for directory buckets.

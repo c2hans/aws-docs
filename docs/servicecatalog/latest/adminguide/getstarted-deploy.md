@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 7: Grant end users access to the portfolio
-<a name="getstarted-deploy"></a>
 
 Now that you have created a portfolio and added a product, you are ready to grant access to end users.
 

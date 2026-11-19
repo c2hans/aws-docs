@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ge
 ---
 
 # GetMedicalCodingJob
-<a name="API_GetMedicalCodingJob"></a>
 
 Retrieves information about a medical coding job, including its status and, when it succeeds, the location of its results.
 

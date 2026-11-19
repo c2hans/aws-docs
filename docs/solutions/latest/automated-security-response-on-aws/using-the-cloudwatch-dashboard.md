@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Using the CloudWatch dashboard
-<a name="using-the-cloudwatch-dashboard"></a>
 
 To view the dashboard:
 

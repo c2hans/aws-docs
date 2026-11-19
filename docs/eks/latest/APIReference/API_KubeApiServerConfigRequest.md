@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_KubeApiServe
 ---
 
 # KubeApiServerConfigRequest
-<a name="API_KubeApiServerConfigRequest"></a>
 
 The configuration for the Kubernetes API server on an Amazon EKS cluster.
 

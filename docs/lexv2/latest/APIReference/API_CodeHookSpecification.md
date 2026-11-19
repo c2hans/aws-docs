@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CodeHookSp
 ---
 
 # CodeHookSpecification
-<a name="API_CodeHookSpecification"></a>
 
 Contains information about code hooks that Amazon Lex calls during a conversation.
 

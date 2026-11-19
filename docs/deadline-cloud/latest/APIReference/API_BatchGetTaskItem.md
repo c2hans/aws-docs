@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetTaskItem
-<a name="API_BatchGetTaskItem"></a>
 
 The details of a task returned in a batch get operation.
 

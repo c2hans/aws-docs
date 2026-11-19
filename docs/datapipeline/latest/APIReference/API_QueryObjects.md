@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Que
 ---
 
 # QueryObjects
-<a name="API_QueryObjects"></a>
 
 Queries the specified pipeline for the names of objects that match the specified set of conditions.
 

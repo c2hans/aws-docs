@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/testing-language
 ---
 
 # Flow action started
-<a name="testing-language-events-flow-action-started"></a>
 
 Observes when a specific flow action begins execution. This allows you to detect when particular flow actions are executed during the simulation.
 

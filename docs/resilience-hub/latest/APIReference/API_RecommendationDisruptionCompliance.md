@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # RecommendationDisruptionCompliance
-<a name="API_RecommendationDisruptionCompliance"></a>
 
 Defines a disruption compliance recommendation.
 

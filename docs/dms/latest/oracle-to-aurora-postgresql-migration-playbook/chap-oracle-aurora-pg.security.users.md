@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle database users and PostgreSQL users
-<a name="chap-oracle-aurora-pg.security.users"></a>
 
 With AWS DMS, you can migrate data from Oracle and PostgreSQL databases to Amazon Aurora. Database users are accounts that control authentication and authorization for a specific database instance.
 

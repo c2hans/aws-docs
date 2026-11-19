@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Wo
 ---
 
 # DB parameter groups for Amazon Aurora DB instances
-<a name="USER_WorkingWithDBInstanceParamGroups"></a>
 
 DB instances use DB parameter groups. The following sections describe configuring and managing DB instance parameter groups.
 

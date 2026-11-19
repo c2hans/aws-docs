@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Retrieve
 ---
 
 # RetrieveEnvironmentInfo
-<a name="API_RetrieveEnvironmentInfo"></a>
 
 Retrieves the compiled information from a [RequestEnvironmentInfo](API_RequestEnvironmentInfo.md) request.
 

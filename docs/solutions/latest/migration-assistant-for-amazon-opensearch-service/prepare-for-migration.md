@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Prepare for migration
-<a name="prepare-for-migration"></a>
 
 Use this section before you submit a workflow. It moves from architecture to planning to deployment so you can make the main decisions once, then use those decisions in the migration workflow.
 +  [Architecture](architecture.md) - understand the deployed components and how data moves from the source cluster to the target.

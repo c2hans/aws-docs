@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Provision baseline standards to isolated resource environments
-<a name="provision-baseline-standards-isolated-resource-environments"></a>
 
 In addition to provisioning guardrails to isolated resource environments, it is also necessary to provision other baseline requirements within the environment. This can include roles, network components and connectivity, and security applications or services.
 

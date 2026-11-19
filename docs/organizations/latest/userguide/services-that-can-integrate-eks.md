@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # Amazon Elastic Kubernetes Service and AWS Organizations
-<a name="services-that-can-integrate-eks"></a>
 
 The Amazon Elastic Kubernetes Service Dashboard is a consolidated dashboard that you can use to monitor, manage, and gain visibility into your Kubernetes clusters across multiple AWS Regions and AWS Accounts. The EKS Dashboard provides you with comprehensive control and insights for your Amazon EKS infrastructure through a centralized interface.
 

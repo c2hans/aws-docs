@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting previewing apps
-<a name="troubleshooting-preview"></a>
 
 This topic contains information about troubleshooting issues when trying to preview apps.
 

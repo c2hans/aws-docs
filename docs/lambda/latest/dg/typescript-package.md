@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/typescript-package.html
 ---
 
 # Deploy transpiled TypeScript code in Lambda with .zip file archives
-<a name="typescript-package"></a>
 
 Before you can deploy TypeScript code to AWS Lambda, you need to transpile it into JavaScript. This page explains three ways to build and deploy TypeScript code to Lambda with .zip file archives:
 + [Using AWS Serverless Application Model (AWS SAM)](#aws-sam-ts)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/tag-collections.ht
 ---
 
 # Tagging collections
-<a name="tag-collections"></a>
 
 You can identify, organize, search for, and filter Amazon Rekognition collections by using tags. Each tag is a label consisting of a user-defined key and value.
 

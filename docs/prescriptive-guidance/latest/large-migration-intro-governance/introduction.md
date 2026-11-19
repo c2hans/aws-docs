@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Introduction to governance for AWS large migrations
-<a name="introduction"></a>
 
 *Pratik Chunawala and Bill David, Amazon Web Services*
 

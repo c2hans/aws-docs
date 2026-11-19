@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-7.2.0-flink-20240610
-<a name="emr-eks-7.2.0-flink-20240610"></a>
 
 **Release notes**: `7.2.0-flink-20240610` was released in December 2023. This is the initial release of Amazon EMR 7.2.0 (Flink).
 

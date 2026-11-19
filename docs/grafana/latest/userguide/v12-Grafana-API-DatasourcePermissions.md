@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-Grafana-API
 ---
 
 # Data Source Permissions API
-<a name="v12-Grafana-API-DatasourcePermissions"></a>
 
 Use the Data Source Permissions API to enable, disable, list, add, and remove permissions for data sources.
 

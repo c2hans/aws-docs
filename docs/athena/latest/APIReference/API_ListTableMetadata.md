@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListTable
 ---
 
 # ListTableMetadata
-<a name="API_ListTableMetadata"></a>
 
 Lists the metadata for the tables in the specified data catalog database.
 

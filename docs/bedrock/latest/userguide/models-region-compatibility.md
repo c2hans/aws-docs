@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-c
 ---
 
 # Regional availability by models
-<a name="models-region-compatibility"></a>
 
 Amazon Bedrock gives you three options so you can match the routing behavior of your inference calls to the scale, compliance, and cost requirements of your workload.
 

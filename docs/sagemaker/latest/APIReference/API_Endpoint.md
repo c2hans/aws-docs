@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Endpoi
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 A hosted endpoint for real-time inference.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/smux-cluster-usa
 ---
 
 # Components of AWS Elemental Statmux in a cluster
-<a name="smux-cluster-usage-components"></a>
 
 To create an MPTS using Elemental Statmux, you need:
 + Elemental Live channels that produce an SPTS output.

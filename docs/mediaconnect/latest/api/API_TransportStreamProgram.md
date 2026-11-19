@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_TransportStr
 ---
 
 # TransportStreamProgram
-<a name="API_TransportStreamProgram"></a>
 
  The metadata of a single transport stream program.
 

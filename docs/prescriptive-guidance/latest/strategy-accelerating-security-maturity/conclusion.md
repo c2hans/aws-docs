@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Conclusion: Crawl, walk, run, then fly\!
-<a name="conclusion"></a>
 
 In summary, the *crawl, walk, run* model is a framework that helps you gradually improve your security posture and adopt best practices for securing AWS infrastructure. This process continues to evolve as new technologies and business needs arise. By following this framework and using the resources provided by AWS, you can establish a solid foundation for cloud security, effectively manage security risks, accelerate security maturity, and drive innovation.
 

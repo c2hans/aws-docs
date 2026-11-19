@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # UnifiedConversationalSource
-<a name="API_UnifiedConversationalSource"></a>
 
 The source of a conversation. Set exactly one member. Currently, the only member is `object`.
 

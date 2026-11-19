@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-preset-f
 ---
 
 # Creating a preset
-<a name="creating-preset-from-scratch"></a>
 
 Output presets specify the settings that apply to a single output of a transcoding job. System presets have the output settings that are specified for you; custom presets have settings that are specified by you or by another user of your AWS account.
 

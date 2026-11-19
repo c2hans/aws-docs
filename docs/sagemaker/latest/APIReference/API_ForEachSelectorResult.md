@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ForEac
 ---
 
 # ForEachSelectorResult
-<a name="API_ForEachSelectorResult"></a>
 
 The result of the selector that identifies an iteration of a ForEach step.
 

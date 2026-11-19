@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/gett
 ---
 
 # Getting started with the PricingPlanManager API
-<a name="getting-started-pricingplanmanager-api"></a>
 
 You can use the AWS CLI or the PricingPlanManager API to create, modify, and cancel flat-rate pricing plan subscriptions programmatically. The PricingPlanManager service manages subscriptions across plan families. Currently, `CloudFront` (CloudFront flat-rate pricing) is the only supported plan family.
 

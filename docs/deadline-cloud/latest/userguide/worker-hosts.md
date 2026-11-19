@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/worker-h
 ---
 
 # Secure worker hosts
-<a name="worker-hosts"></a>
 
 On customer-managed fleets, you configure the worker host operating system. The following practices keep the worker agent, queue users, and their data separated from each other on the host:
 + Review host configuration scripts before you use them, and test configuration changes before rolling them out to your fleet. An incorrect configuration can make workers unstable or stop them from working.

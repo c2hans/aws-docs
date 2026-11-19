@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/api-inference-e
 ---
 
 # Code examples
-<a name="api-inference-examples-claude-messages-code-examples"></a>
 
 The following code examples show how to use the messages API.
 

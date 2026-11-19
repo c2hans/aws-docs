@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_LastR
 ---
 
 # LastReportGenerationExecutionError
-<a name="API_LastReportGenerationExecutionError"></a>
 
 Describes the error that is returned when a usage report can't be generated.
 

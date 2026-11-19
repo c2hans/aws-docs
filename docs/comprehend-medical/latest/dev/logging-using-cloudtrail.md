@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/logging-us
 ---
 
 # Logging Amazon Comprehend Medical API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon Comprehend Medical is integrated with AWS CloudTrail. CloudTrail is a service that provides a record of actions taken by a user, role, or an AWS service from within Amazon Comprehend Medical. CloudTrail captures all API calls for Amazon Comprehend Medical as events. The calls captured include calls from the Amazon Comprehend Medical console and code calls to the Amazon Comprehend Medical API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Amazon Comprehend Medical. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine several things such as:
 + The request that was made to Amazon Comprehend Medical

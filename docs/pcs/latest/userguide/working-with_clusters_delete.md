@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # Deleting a cluster in AWS PCS
-<a name="working-with_clusters_delete"></a>
 
 This topic provides an overview of how to delete an AWS PCS cluster.
 

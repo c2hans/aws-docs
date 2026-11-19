@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/service-network-ac
 ---
 
 # Edit access settings for a VPC Lattice service network
-<a name="service-network-access"></a>
 
 Access settings enable you to configure and manage client access to a service network. Access settings include *auth type* and *auth policies*. Auth policies help you authenticate and authorize traffic flowing to services within VPC Lattice. Access settings of the service network do not apply to the resource configurations associated to the service network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/what-is-appsync.
 ---
 
 # What is AWS AppSync?
-<a name="what-is-appsync"></a>
 
 AWS AppSync enables developers to connect their applications and services to data and events with secure, serverless and high-performing GraphQL and Pub/Sub APIs. You can do the following with AWS AppSync:
 + Access data from one or more data sources from a single GraphQL API endpoint.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdatePosition
-<a name="API_UpdatePosition"></a>
 
  *This action has been deprecated.*
 

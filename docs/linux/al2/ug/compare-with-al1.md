@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/compare-with-al1.html
 ---
 
 # Compare AL1 and AL2
-<a name="compare-with-al1"></a>
 
 The following topics describe key differences between AL1 and AL2. They also contain information about lifespan and support, and package changes.
 

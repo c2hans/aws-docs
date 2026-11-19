@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Migration governance
-<a name="migration-governance"></a>
 
 The migration governance workstream includes managing migration scope, schedule, resource plan, issues and risks, and communication to all stakeholders. Multiple applications are migrated in multiple streams, impacting multiple teams, so an early focus on planning can help organize the project. The migration plan considers critical factors such as the order in which workloads will migrate, when resources are needed, and how the progress of the migration will be tracked. We recommend agile delivery methodologies, project control best practices, a robust business communication plan, and a well-defined delivery approach.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIBenc
 ---
 
 # AIBenchmarkOutputResult
-<a name="API_AIBenchmarkOutputResult"></a>
 
 The output result of an AI benchmark job, including the Amazon S3 location and CloudWatch log information.
 

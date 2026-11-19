@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Function types and composition
-<a name="monetization-functions-types"></a>
 
 AWS Elemental MediaTailor provides six function types, each designed for a different category of work. You choose a type when you create a function, and the type determines what the function can do at runtime. This page explains how each type executes, when to use it, and how to compose functions into multi-step pipelines.
 

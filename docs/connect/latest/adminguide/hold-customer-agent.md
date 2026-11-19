@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/hold-customer-
 ---
 
 # Flow block in Connect Customer: Hold customer or agent
-<a name="hold-customer-agent"></a>
 
 This topic defines the flow block for placing a customer or agent on hold, and resuming the call afterward.
 

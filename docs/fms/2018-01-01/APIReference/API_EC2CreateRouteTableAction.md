@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_EC2Creat
 ---
 
 # EC2CreateRouteTableAction
-<a name="API_EC2CreateRouteTableAction"></a>
 
 Information about the CreateRouteTable action in Amazon EC2.
 

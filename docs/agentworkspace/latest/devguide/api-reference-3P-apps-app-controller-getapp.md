@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Get application information in Connect Customer agent workspace
-<a name="api-reference-3P-apps-app-controller-getapp"></a>
 
 Returns the application information for the given application instance ID in the Connect Customer agent workspace.
 

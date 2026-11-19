@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJob.
 ---
 
 # DescribeJob
-<a name="API_DescribeJob"></a>
 
 Describes a job.
 

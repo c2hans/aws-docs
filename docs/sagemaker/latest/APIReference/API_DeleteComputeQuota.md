@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteComputeQuota
-<a name="API_DeleteComputeQuota"></a>
 
 Deletes the compute allocation from the cluster.
 

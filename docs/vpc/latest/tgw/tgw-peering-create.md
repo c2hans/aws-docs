@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-peering-create.html
 ---
 
 # Create a peering attachment in AWS Transit Gateway
-<a name="tgw-peering-create"></a>
 
 Before you begin, ensure that you have the ID of the transit gateway that you want to attach. If the transit gateway is in another AWS account, ensure that you have the AWS account ID of the owner of the transit gateway. After you create the peering attachment, the owner of the accepter transit gateway must accept or reject the attachment request.
 

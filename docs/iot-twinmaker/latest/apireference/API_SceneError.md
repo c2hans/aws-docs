@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Sc
 ---
 
 # SceneError
-<a name="API_SceneError"></a>
 
 The scene error.
 

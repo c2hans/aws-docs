@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationAzureBlob
-<a name="API_UpdateLocationAzureBlob"></a>
 
 Modifies the following configurations of the Microsoft Azure Blob Storage transfer location that you're using with AWS DataSync.
 

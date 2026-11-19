@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormSearchCriteria
-<a name="API_EvaluationFormSearchCriteria"></a>
 
 The search criteria to be used to return evaluation forms.
 
@@ -12,7 +11,7 @@ The search criteria to be used to return evaluation forms.
 
  ** AndConditions **   <a name="connect-Type-EvaluationFormSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [EvaluationFormSearchCriteria](#API_EvaluationFormSearchCriteria) objects
+Type: Array of [EvaluationFormSearchCriteria](API_EvaluationFormSearchCriteria.md) objects
 Required: No
 
  ** BooleanCondition **   <a name="connect-Type-EvaluationFormSearchCriteria-BooleanCondition"></a>
@@ -33,7 +32,7 @@ Required: No
 
  ** OrConditions **   <a name="connect-Type-EvaluationFormSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [EvaluationFormSearchCriteria](#API_EvaluationFormSearchCriteria) objects
+Type: Array of [EvaluationFormSearchCriteria](API_EvaluationFormSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-EvaluationFormSearchCriteria-StringCondition"></a>

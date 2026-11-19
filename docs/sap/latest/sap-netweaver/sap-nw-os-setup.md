@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-os-setup
 ---
 
 # Launch and Setup Instance
-<a name="sap-nw-os-setup"></a>
 
 **Topics**
 + [Launch an instance](#sap-nw-os-setup-launch)

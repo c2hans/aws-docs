@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListR
 ---
 
 # ListResponseHeadersPolicies
-<a name="API_ListResponseHeadersPolicies"></a>
 
 Gets a list of response headers policies.
 

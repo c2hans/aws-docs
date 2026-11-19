@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Use case 4 – IN or EXISTS
-<a name="in-exists"></a>
 
 If the query has `IN` or `NOT IN` operators, we recommend checking the query plan to confirm that the proper index is being used. If the proper index isn't being used and query performance is taking more time than expected, try to rewrite the query using the `EXISTS` or `NOT EXISTS` conditions.
 

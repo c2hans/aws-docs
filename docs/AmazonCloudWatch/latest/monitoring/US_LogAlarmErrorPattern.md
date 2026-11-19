@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_Lo
 ---
 
 # Create a Log Alarm on error patterns
-<a name="US_LogAlarmErrorPattern"></a>
 
 You can create a Log Alarm that monitors your logs for error patterns and sends a notification when the error count exceeds a threshold.
 

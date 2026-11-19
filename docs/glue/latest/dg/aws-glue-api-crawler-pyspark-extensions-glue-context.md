@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # GlueContext class
-<a name="aws-glue-api-crawler-pyspark-extensions-glue-context"></a>
 
 Wraps the Apache Spark [SparkContext](https://spark.apache.org/docs/latest/api/java/org/apache/spark/SparkContext.html) object, and thereby provides mechanisms for interacting with the Apache Spark platform.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-n
 ---
 
 # Sample programmatic commands for EMR Notebooks
-<a name="emr-managed-notebooks-headless"></a>
 
 ## Overview
 <a name="emr-managed-notebooks-headless-overview"></a>

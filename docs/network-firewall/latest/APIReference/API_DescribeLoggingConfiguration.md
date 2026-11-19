@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeLoggingConfiguration
-<a name="API_DescribeLoggingConfiguration"></a>
 
 Returns the logging configuration for the specified firewall.
 

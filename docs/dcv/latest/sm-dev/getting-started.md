@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-dev/getting-started.html
 ---
 
 # Getting started with Session Manager API
-<a name="getting-started"></a>
 
 The Amazon DCV Session Manager API provides an automated interface for managing remote desktop sessions. Through this API, developers can create, list, start, stop, and otherwise control DCV sessions programmatically. This allows for the integration of Amazon DCV functionality into custom applications and workflows. By leveraging this API, organizations can streamline the management of remote visualization workloads, automating many common tasks.
 

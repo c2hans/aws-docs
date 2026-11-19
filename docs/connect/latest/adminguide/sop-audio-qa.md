@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sop-audio-qa.h
 ---
 
 # Troubleshoot audio quality issues by using `QualityMetrics` in the contact record
-<a name="sop-audio-qa"></a>
 
 **Important**
 The topics and content in this section are for IT administrators who have experience with investigating network and telephony issues.

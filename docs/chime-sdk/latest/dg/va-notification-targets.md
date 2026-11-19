@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/va-notification-targ
 ---
 
 # Understanding notifications for the Amazon Chime SDK
-<a name="va-notification-targets"></a>
 
 Voice analytics automatically sends events to a target when speaker search or voice tone analysis tasks start, while they run, and when they finish. You use notification targets to receive those events. We recommend using multiple notification targets if your workflow or application needs high availability.
 

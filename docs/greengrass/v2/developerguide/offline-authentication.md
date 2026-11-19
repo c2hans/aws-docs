@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/offline-aut
 ---
 
 # Authenticating clients while offline
-<a name="offline-authentication"></a>
 
 With *offline authentication* you can configure your AWS IoT Greengrass Core device so that client devices can connect to a core device, even when the core device isn't connected to the cloud. When you use offline authentication, your Greengrass devices can continue to work in a partially offline environment.
 

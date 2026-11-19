@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_E
 ---
 
 # EntitlementSummary
-<a name="API_EntitlementSummary"></a>
 
 Contains summary information about an entitlement.
 

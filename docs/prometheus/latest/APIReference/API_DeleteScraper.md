@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Delet
 ---
 
 # DeleteScraper
-<a name="API_DeleteScraper"></a>
 
 The `DeleteScraper` operation deletes one scraper, and stops any metrics collection that the scraper performs.
 

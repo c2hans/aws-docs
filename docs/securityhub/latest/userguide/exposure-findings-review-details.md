@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-fi
 ---
 
 # Reviewing details for exposure findings
-<a name="exposure-findings-review-details"></a>
 
  This topic describes how to review details about exposure findings in the AWS Security Hub console and with the API.
 

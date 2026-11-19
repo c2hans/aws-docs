@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_PostgreSqlDa
 ---
 
 # PostgreSqlDataProviderSettings
-<a name="API_PostgreSqlDataProviderSettings"></a>
 
 Provides information that defines a PostgreSQL data provider.
 

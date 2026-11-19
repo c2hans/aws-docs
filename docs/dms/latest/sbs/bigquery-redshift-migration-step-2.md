@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/bigquery-redshift-migrati
 ---
 
 # Step 2: Create an Amazon Redshift Cluster
-<a name="bigquery-redshift-migration-step-2"></a>
 
 To store your data in the AWS cloud, you can use your existing Amazon Redshift cluster or create a new one. You don’t need to create any tables because AWS SCT automates this process.
 

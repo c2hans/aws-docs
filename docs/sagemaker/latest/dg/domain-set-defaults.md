@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-set-defaults.
 ---
 
 # Default settings for Amazon SageMaker AI domains
-<a name="domain-set-defaults"></a>
 
  With SageMaker AI, you can set default settings for your resources at the Amazon SageMaker AI domain level. These default settings are used in the creation of resources within the domain. The following sections list default settings for domain and give information on using context keys when setting defaults.
 

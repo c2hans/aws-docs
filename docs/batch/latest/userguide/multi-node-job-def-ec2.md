@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/multi-node-job-de
 ---
 
 # Tutorial: Create a multi-node parallel job definition on Amazon EC2 resources
-<a name="multi-node-job-def-ec2"></a>
 
 To create a multi-node parallel job definition on Amazon Elastic Compute Cloud (Amazon EC2) resources.
 

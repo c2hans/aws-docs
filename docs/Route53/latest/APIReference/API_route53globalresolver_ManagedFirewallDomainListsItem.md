@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ManagedFirewallDomainListsItem
-<a name="API_route53globalresolver_ManagedFirewallDomainListsItem"></a>
 
 Summary information about a managed firewall domain list.
 

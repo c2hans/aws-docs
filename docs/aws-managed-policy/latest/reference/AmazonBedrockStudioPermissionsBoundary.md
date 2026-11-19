@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBedrockStudioPermissionsBoundary
-<a name="AmazonBedrockStudioPermissionsBoundary"></a>
 
 **Description**: Defines the maximum permissions of IAM roles that Amazon Bedrock Studio creates for operating Amazon Bedrock Studio resources.
 

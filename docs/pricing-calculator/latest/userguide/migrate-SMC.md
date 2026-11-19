@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/migr
 ---
 
 # Migrating Simple Monthly Calculator estimates to Pricing Calculator
-<a name="migrate-SMC"></a>
 
 **Important**
 Simple Monthly Calculator (SMC) is no longer supported. You can convert your saved SMC estimates to AWS Pricing Calculator using the steps outlined in this section. This conversion feature closes on December 31, 2023 at 11.59PM PST.

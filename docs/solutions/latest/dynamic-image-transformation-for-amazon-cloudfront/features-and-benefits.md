@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 This solution deploys as either a Lambda architecture or an ECS architecture. The ECS architecture is the latest option and includes the solution’s full feature set; the Lambda architecture is a cost-optimized option that supports a focused subset. Each feature below notes where it is available. For a comparison of the two options, see [Architecture options](architecture-options.md).
 

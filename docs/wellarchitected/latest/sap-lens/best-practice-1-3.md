@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 1.3 – Implement application and database monitoring for SAP
-<a name="best-practice-1-3"></a>
 
 Set up your application and database monitoring to provide information about its internal state, status, and achievement of business outcomes. Some examples include transaction response time, available work processes, queue depth, error and dump messages, stalled batch jobs, and transaction throughput. Use this information to determine when a corrective action is required.
 

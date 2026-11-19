@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/catering.h
 ---
 
 # .catering
-<a name="catering"></a>
 
 Used by catering businesses or those who share information about food-related events.
 

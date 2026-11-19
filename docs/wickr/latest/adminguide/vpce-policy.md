@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide/vpce-policy.html
 This guide documents the new AWS Wickr administration console, released on March 13, 2025. For documentation on the classic version of the AWS Wickr administration console, see [Classic Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide-classic/what-is-wickr.html).
 
 # VPC endpoint policies for AWS Wickr
-<a name="vpce-policy"></a>
 
 A VPC endpoint policy is an IAM resource policy that you attach to a VPC endpoint to control which resources and actions are accessible through that endpoint. You can attach VPC endpoint policies to Wickr Messaging and Wickr Admin endpoints.
 

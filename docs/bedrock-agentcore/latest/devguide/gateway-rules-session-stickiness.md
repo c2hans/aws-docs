@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Session stickiness for weighted rules
-<a name="gateway-rules-session-stickiness"></a>
 
 When you use weighted rules for A/B testing or canary deployments, you want each session to receive a consistent experience across multiple requests. Without session stickiness, a session could receive different configuration bundles or route to different targets on each request. Routing to a different target means a new agent runtime with no context from previous requests, which breaks the user experience.
 

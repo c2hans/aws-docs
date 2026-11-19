@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/d
 ---
 
 # Customize Docker images for interactive endpoints
-<a name="docker-custom-images-managed-endpoint"></a>
 
 You can also customize Docker images for interactive endpoints so that you can run customized base kernel images. This helps you ensure that you have the dependencies you need when you run interactive workloads from EMR Studio.
 

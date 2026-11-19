@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_SybaseSettin
 ---
 
 # SybaseSettings
-<a name="API_SybaseSettings"></a>
 
 Provides information that defines a SAP ASE endpoint.
 

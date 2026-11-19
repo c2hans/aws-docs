@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRolePolicyForWorkspacesInstances
-<a name="AWSServiceRolePolicyForWorkspacesInstances"></a>
 
 **Description**: This managed policy provides administrative access to Amazon WorkSpaces to manage EC2 instances in your AWS account
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lineage
 ---
 
 # LineageNodeTypeItem
-<a name="API_LineageNodeTypeItem"></a>
 
 The details of a data lineage node type.
 

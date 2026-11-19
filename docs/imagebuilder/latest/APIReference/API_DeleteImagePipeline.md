@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 ---
 
 # DeleteImagePipeline
-<a name="API_DeleteImagePipeline"></a>
 
 Deletes an image pipeline. Images that the pipeline created aren't deleted - remove those separately with [DeleteImage](API_DeleteImage.md). You can delete a pipeline while a build that it started is still running. The build continues independently.
 

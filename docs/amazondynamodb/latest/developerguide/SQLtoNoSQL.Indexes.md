@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences between a relational (SQL) database and DynamoDB when managing indexes
-<a name="SQLtoNoSQL.Indexes"></a>
 
 Indexes give you access to alternate query patterns, and can speed up queries. This section compares and contrasts index creation and usage in SQL and Amazon DynamoDB.
 

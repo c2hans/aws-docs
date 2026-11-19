@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/region-how
 ---
 
 # How AWS Regions Work With AWS Control Tower
-<a name="region-how"></a>
 
 AWS Control Tower is supported in the following AWS Regions:
 + US East (N. Virginia)

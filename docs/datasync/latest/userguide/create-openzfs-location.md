@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/create-openzfs
 ---
 
 # Configuring DataSync transfers with Amazon FSx for OpenZFS
-<a name="create-openzfs-location"></a>
 
 To transfer data to or from your Amazon FSx for OpenZFS file system, you must create an AWS DataSync transfer *location*. DataSync can use this location as a source or destination for transferring data.
 

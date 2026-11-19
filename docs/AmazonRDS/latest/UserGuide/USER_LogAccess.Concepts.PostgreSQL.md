@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAcces
 ---
 
 # RDS for PostgreSQL database log files
-<a name="USER_LogAccess.Concepts.PostgreSQL"></a>
 
 You can monitor the following types of log files:
 + PostgreSQL log

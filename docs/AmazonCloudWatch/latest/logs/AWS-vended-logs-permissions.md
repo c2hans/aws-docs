@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-vended-
 ---
 
 # Logging that requires additional permissions [V1]
-<a name="AWS-vended-logs-permissions"></a>
 
 Some AWS services use a common infrastructure to send their logs to CloudWatch Logs, Amazon S3, or Firehose. To enable the AWS services listed in the preceding table to send their logs to these destinations, you must be logged in as a user that has certain permissions.
 

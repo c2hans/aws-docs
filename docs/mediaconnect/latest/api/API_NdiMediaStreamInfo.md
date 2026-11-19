@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_NdiMediaStre
 ---
 
 # NdiMediaStreamInfo
-<a name="API_NdiMediaStreamInfo"></a>
 
  Detailed information about a single media stream that is part of an NDI® source. This includes details about the stream type, codec, resolution, frame rate, audio channels, and sample rate.
 

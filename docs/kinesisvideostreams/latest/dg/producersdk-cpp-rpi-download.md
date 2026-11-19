@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Download and build the Kinesis Video Streams C\+\+ producer SDK
-<a name="producersdk-cpp-rpi-download"></a>
 
 Follow the procedures below to download and build the [Kinesis Video Streams C\+\+ producer SDK](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp). Make sure you've installed the software prerequisites; see [Install software prerequisites](producersdk-cpp-rpi-software.md) for those steps.
 

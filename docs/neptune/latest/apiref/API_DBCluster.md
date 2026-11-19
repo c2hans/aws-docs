@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBCluster.html
 ---
 
 # DBCluster
-<a name="API_DBCluster"></a>
 
 Contains the details of an Amazon Neptune DB cluster.
 

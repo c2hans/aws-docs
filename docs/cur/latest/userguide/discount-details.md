@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/discount-details.ht
 ---
 
 # Discount details
-<a name="discount-details"></a>
 
 Columns under the **discount** header are included in AWS Cost and Usage Reports only when the account has a discount applied during the report's billing period. This includes the following columns:
 

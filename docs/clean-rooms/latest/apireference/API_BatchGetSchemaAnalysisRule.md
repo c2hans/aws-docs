@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Batc
 ---
 
 # BatchGetSchemaAnalysisRule
-<a name="API_BatchGetSchemaAnalysisRule"></a>
 
 Retrieves multiple analysis rule schemas.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/console-edit-script.html
 ---
 
 # Jobs (legacy)
-<a name="console-edit-script"></a>
 
 A script contains the code that performs extract, transform, and load (ETL) work. You can provide your own script, or AWS Glue can generate a script with guidance from you. For information about creating your own scripts, see [Providing your own custom scripts](console-custom-created.md).
 

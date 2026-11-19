@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-con
 ---
 
 # Managed Conformance Pack Catalog for AWS Config
-<a name="managed-conformance-pack-catalog"></a>
 
 The Managed Conformance Pack Catalog provides details about the managed conformance packs that are available in AWS Config. Managed conformance packs are predefined collections of AWS Config rules that are created and maintained by AWS. For more information, see [How managed conformance packs work in AWS Config](managed-conformance-packs-how-it-works.md).
 

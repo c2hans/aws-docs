@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Supported AWS Regions for Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-Regions"></a>
 
 The following table lists the AWS Regions where Performance Monitor is available.
 

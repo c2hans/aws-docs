@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Automat
 ---
 
 # AutomationRulesConfig
-<a name="API_AutomationRulesConfig"></a>
 
  Defines the configuration of an automation rule.
 

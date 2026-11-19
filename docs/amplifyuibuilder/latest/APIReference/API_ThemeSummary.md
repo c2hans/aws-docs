@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ThemeSummary
-<a name="API_ThemeSummary"></a>
 
 Describes the basic information about a theme.
 

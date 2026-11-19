@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationMappingUpdates
-<a name="API_ListNetworkMigrationMappingUpdates"></a>
 
 Lists mapping update jobs, which apply customer modifications to the generated network mappings.
 

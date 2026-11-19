@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Senti
 ---
 
 # SentimentDetectionJobProperties
-<a name="API_SentimentDetectionJobProperties"></a>
 
 Provides information about a sentiment detection job.
 

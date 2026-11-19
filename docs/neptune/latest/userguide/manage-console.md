@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/manage-console.
 ---
 
 # Managing Your Amazon Neptune Database
-<a name="manage-console"></a>
 
  This section shows how to manage and maintain your Neptune DB cluster using the AWS Management Console and the AWS CLI.
 

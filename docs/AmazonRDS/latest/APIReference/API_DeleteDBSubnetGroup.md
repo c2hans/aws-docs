@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteDBSubnetGroup
-<a name="API_DeleteDBSubnetGroup"></a>
 
 Deletes a DB subnet group.
 

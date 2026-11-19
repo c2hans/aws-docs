@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/filefsxw/MaintenanceT
 Amazon FSx File Gateway is no longer available to new customers. Existing customers of FSx File Gateway can continue to use the service normally. For capabilities similar to FSx File Gateway, visit [this blog post](https://aws.amazon.com/blogs/storage/switch-your-file-share-access-from-amazon-fsx-file-gateway-to-amazon-fsx-for-windows-file-server/).
 
 # Configuring a Network Time Protocol (NTP) server for your gateway
-<a name="MaintenanceTimeSync-fgw"></a>
 
 You can view and edit Network Time Protocol (NTP) server configurations and synchronize the VM time on your gateway with your hypervisor host.
 

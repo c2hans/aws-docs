@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Using browser profiles
-<a name="browser-profiles"></a>
 
 Browser profiles enable you to persist and reuse browser profile data across multiple browser sessions. A browser profile stores session information including cookies and local storage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransi
 ---
 
 # GetTransitGatewayPolicyTableAssociations
-<a name="API_GetTransitGatewayPolicyTableAssociations"></a>
 
 Gets a list of the transit gateway policy table associations.
 

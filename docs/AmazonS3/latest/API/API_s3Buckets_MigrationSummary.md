@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Migrat
 ---
 
 # MigrationSummary
-<a name="API_s3Buckets_MigrationSummary"></a>
 
 A summary of a migration.
 

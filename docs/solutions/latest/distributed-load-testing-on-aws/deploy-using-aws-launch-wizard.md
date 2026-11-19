@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Deploy using AWS Launch Wizard
-<a name="deploy-using-aws-launch-wizard"></a>
 
 This solution features a guided deployment process using AWS Launch Wizard. Follow these steps to deploy Distributed Load Testing on AWS into your account.
 

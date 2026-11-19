@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 ---
 
 # REST API
-<a name="rest-api"></a>
 
  REST APIs help create APIs that follow the [REST architectural style](https://en.wikipedia.org/wiki/Representational_state_transfer). Developers can use their existing knowledge and apply best practices while building REST APIs in API Gateway.
 

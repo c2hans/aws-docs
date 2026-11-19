@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Cutover
-<a name="cutover"></a>
 
 In mainframe modernization, one of the most critical challenges is minimizing downtime and risk during the transition to a new platform. The blue/green deployment strategy offers a powerful and flexible approach to system migration.
 

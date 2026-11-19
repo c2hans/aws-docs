@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListComponentTypes
-<a name="API_ListComponentTypes"></a>
 
 Lists all component types in a workspace.
 

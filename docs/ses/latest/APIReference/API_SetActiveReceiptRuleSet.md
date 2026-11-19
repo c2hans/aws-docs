@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SetActiveRec
 ---
 
 # SetActiveReceiptRuleSet
-<a name="API_SetActiveReceiptRuleSet"></a>
 
 Sets the specified receipt rule set as the active receipt rule set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Sn
 ---
 
 # SnsMessageAttributeValue
-<a name="API_SnsMessageAttributeValue"></a>
 
 A custom SNS message attribute (data type plus string or binary value).
 

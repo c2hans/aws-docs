@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_PutAcco
 ---
 
 # PutAccountName
-<a name="API_PutAccountName"></a>
 
 Updates the account name of the specified account. To use this API, IAM principals must have the `account:PutAccountName` IAM permission.
 

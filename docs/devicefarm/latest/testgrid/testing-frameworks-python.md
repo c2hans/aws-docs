@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/testing-frame
 ---
 
 # Migrating Python tests to Device Farm desktop browser testing
-<a name="testing-frameworks-python"></a>
 
  Follow the steps in this topic to get your tests running on Python.
 

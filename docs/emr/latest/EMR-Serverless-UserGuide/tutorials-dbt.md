@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/tuto
 ---
 
 # Using dbt-core with EMR Serverless
-<a name="tutorials-dbt"></a>
 
 With Amazon EMR release `emr-7.13.0` and later, you can use dbt-core with [Spark Connect enabled interactive sessions](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/spark-connect.html) to run transformations on EMR Serverless.
 

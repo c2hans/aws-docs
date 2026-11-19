@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/limit
 ---
 
 # Guidelines and quotas in Amazon Rekognition Custom Labels
-<a name="limits"></a>
 
 The following sections provide guidelines and quotas when using Amazon Rekognition Custom Labels.
 

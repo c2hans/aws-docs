@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/dynamic-m
 ---
 
 # Dynamic maps
-<a name="dynamic-maps"></a>
 
 **Note**
 You must use the political view feature to comply with applicable laws, including those related to mapping the country or region where maps, images, and other data you access through Amazon Location Service are made available.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # IPAddressTypeStatus
-<a name="API_IPAddressTypeStatus"></a>
 
 The IP address type status for the domain.
 

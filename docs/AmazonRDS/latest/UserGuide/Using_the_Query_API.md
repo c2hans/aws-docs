@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Using_the_Que
 ---
 
 # Using the Query API
-<a name="Using_the_Query_API"></a>
 
 The following sections briefly discuss the parameters and request authentication used with the Query API.
 

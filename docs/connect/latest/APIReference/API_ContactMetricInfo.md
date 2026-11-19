@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactM
 ---
 
 # ContactMetricInfo
-<a name="API_ContactMetricInfo"></a>
 
 Contains the details of a metric to be retrieved for a contact. Use this object to specify which contact level metrics you want to include in your GetContactMetrics request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSecurityIncidentResponseReadOnlyAccess
-<a name="AWSSecurityIncidentResponseReadOnlyAccess"></a>
 
 **Description**: Policy provides customers with Read-only permissions to all resources associated to the Security Incident Response service. Permission includes access to GetCaseAttachmentDownloadUrl as well for the ability to get case attachment download URLs.
 

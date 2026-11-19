@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/ppe-example-image-
 ---
 
 # Example: Drawing bounding boxes around face covers
-<a name="ppe-example-image-bounding-box"></a>
 
 The following examples shows you how to draw bounding boxes around face covers detected on persons. For an example that uses AWS Lambda and Amazon DynamoDB, see the [AWS Documentation SDK examples GitHub repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/javav2/usecases/creating_lambda_ppe).
 

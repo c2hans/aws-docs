@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Lis
 ---
 
 # ListWorkflowRuns
-<a name="API_ListWorkflowRuns"></a>
 
 Retrieves a list of workflow runs of a specified workflow.
 

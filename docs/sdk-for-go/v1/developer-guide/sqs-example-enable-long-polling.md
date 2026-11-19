@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/sqs-exampl
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Enabling Long Polling in Amazon SQS Queues
-<a name="sqs-example-enable-long-polling"></a>
 
 These AWS SDK for Go examples show you how to:
 + Enable long polling when you create an Amazon SQS queue

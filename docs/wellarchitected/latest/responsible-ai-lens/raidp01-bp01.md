@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIDP01-BP01 Identify evaluation datasets needed to measure system performance against release criteria
-<a name="raidp01-bp01"></a>
 
  Work backwards from your release criteria to identify the specific evaluation datasets needed to test each one. Validate that each dataset has the right characteristics for its purpose (for example, demographic labels for fairness testing, harmful content examples for safety testing, and sufficient sample sizes for statistical confidence). Track mappings between datasets and criteria so you can verify complete coverage and maintain traceability between your release criteria and testing approach.
 

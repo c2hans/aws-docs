@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_T
 ---
 
 # TimePeriod
-<a name="API_TimePeriod"></a>
 
 Represents a duration of time defined by start and end timestamps. If there is no impact data available for a selected period, the response returns an empty `Results` array.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_AccessLogSetti
 ---
 
 # AccessLogSettings
-<a name="API_AccessLogSettings"></a>
 
 Access log settings, including the access log format and access log destination ARN.
 

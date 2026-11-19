@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Configuration overview and setup order
-<a name="ecs-configuration-overview"></a>
 
 The ECS architecture has three configuration entities. Create them in the following order, because each step builds on the previous one:
 

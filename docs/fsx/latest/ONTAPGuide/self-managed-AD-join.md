@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-managed-AD-jo
 ---
 
 # How joining SVMs to Microsoft Active Directory works
-<a name="self-managed-AD-join"></a>
 
 Your organization might manage identities and devices using an Active Directory, whether on-premises or in the cloud. With FSx for ONTAP, you can join your SVMs directly to your existing Active Directory domain in the following ways:
 + Joining new SVMs to an Active Directory at creation:

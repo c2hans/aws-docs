@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetTokensFromRefreshToken
-<a name="API_GetTokensFromRefreshToken"></a>
 
 Given a refresh token, issues new ID, access, and optionally refresh tokens for the user who owns the submitted token. This operation issues a new refresh token and invalidates the original refresh token after an optional grace period when refresh token rotation is enabled. If refresh token rotation is disabled, issues new ID and access tokens only.
 
@@ -102,7 +101,7 @@ The following data is returned in JSON format by the service.
 
  ** [AuthenticationResult](#API_GetTokensFromRefreshToken_ResponseSyntax) **   <a name="CognitoUserPools-GetTokensFromRefreshToken-response-AuthenticationResult"></a>
 The object that your application receives after authentication. Contains tokens and information for device authentication.
-This data type is a response parameter of authentication operations like [InitiateAuth](API_InitiateAuth.md), [AdminInitiateAuth](API_AdminInitiateAuth.md), [RespondToAuthChallenge](API_RespondToAuthChallenge.md), [AdminRespondToAuthChallenge](API_AdminRespondToAuthChallenge.md), and [GetTokensFromRefreshToken](#API_GetTokensFromRefreshToken). `GetTokensFromRefreshToken` doesn't return `NewDeviceMetadata`.
+This data type is a response parameter of authentication operations like [InitiateAuth](API_InitiateAuth.md), [AdminInitiateAuth](API_AdminInitiateAuth.md), [RespondToAuthChallenge](API_RespondToAuthChallenge.md), [AdminRespondToAuthChallenge](API_AdminRespondToAuthChallenge.md), and [GetTokensFromRefreshToken](API_GetTokensFromRefreshToken.md). `GetTokensFromRefreshToken` doesn't return `NewDeviceMetadata`.
 Type: [AuthenticationResultType](API_AuthenticationResultType.md) object
 
 ## Errors

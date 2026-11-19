@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/troublesh
 ---
 
 # Getting started troubleshooting runtime errors in the AWS SDK for C\+\+
-<a name="troubleshooting-runtime-errors"></a>
 
 As you learn to develop applications with the AWS SDK for C\+\+, it's also valuable to get comfortable in using both the AWS Management Console and the AWS CLI. These tools can be used interchangeably for various troubleshooting and diagnostics when runtime errors are encountered.
 

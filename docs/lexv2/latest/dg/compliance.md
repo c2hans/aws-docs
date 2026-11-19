@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/compliance.html
 ---
 
 # Compliance validation for Amazon Lex V2
-<a name="compliance"></a>
 
 Third-party auditors assess the security and compliance of Amazon Lex V2 as part of multiple AWS compliance programs. Amazon Lex V2 is a HIPAA eligible service. It is PCI, SOC, and ISO compliant.
 

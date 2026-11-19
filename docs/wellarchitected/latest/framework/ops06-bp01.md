@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops06-b
 ---
 
 # OPS06-BP01 Create actionable alerts
-<a name="ops06-bp01"></a>
 
  When each alert maps to a defined response, operators know what to do when it fires, and important signals aren't lost in low-value noise.
 

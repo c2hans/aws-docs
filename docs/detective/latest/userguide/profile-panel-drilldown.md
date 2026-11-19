@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/profile-panel
 ---
 
 # Exploring activity details on a profile panel
-<a name="profile-panel-drilldown"></a>
 
 During an investigation, you might want to investigate further into the pattern of activity for an entity.
 

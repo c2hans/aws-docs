@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/data-exports-migrat
 ---
 
 # Method one: Create an export with an SQL query using the CUR schema
-<a name="data-exports-migrate-one"></a>
 
 You can create an export with an SQL query. The export schema matches what you receive today in CUR. You do this using the AWS API or SDK.
 

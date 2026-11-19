@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ContributorSummary
-<a name="API_ContributorSummary"></a>
 
 Counts of contributors currently breaching each severity threshold.
 

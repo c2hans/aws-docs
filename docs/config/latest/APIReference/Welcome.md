@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Config provides a way to keep track of the configurations of all the AWS resources associated with your AWS account. You can use AWS Config to get the current and historical configurations of each AWS resource and also to get information about the relationship between the resources. An AWS resource can be an Amazon Compute Cloud (Amazon EC2) instance, an Elastic Block Store (EBS) volume, an elastic network Interface (ENI), or a security group. For a complete list of resources currently supported by AWS Config, see [Supported AWS resources](https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html#supported-resources).
 
@@ -154,4 +153,4 @@ Use the following APIs for AWS Config:
 +  [ListStoredQueries](API_ListStoredQueries.md), lists the stored queries for a single AWS account and a single AWS Region.
 +  [DeleteStoredQuery](API_DeleteStoredQuery.md), deletes the stored query for a single AWS account and a single AWS Region.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

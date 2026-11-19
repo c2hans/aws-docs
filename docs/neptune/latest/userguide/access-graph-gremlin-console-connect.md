@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # An alternate way to connect to the Gremlin console
-<a name="access-graph-gremlin-console-connect"></a>
 
 **Drawbacks of the normal connection approach**
 

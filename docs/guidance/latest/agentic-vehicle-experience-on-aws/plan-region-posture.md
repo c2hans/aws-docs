@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Supported Region Posture
-<a name="plan-region-posture"></a>
 
 ## Single-region, co-located deployment
 <a name="plan-region-single-region"></a>

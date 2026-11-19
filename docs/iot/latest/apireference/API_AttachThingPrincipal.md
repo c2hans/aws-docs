@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AttachThingP
 ---
 
 # AttachThingPrincipal
-<a name="API_AttachThingPrincipal"></a>
 
 Attaches the specified principal to the specified thing. A principal can be X.509 certificates, Amazon Cognito identities or federated identities.
 

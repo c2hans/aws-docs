@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-
 ---
 
 # Monitor a gateway
-<a name="gateway-monitoring"></a>
 
 You can monitor Amazon ECS Gateway to view the status of a gateway, identify the infrastructure that it manages, and inspect the connections between gateways and Amazon ECS services. You can also use Amazon CloudWatch and Elastic Load Balancing to monitor request traffic and the health of the targets receiving that traffic.
 

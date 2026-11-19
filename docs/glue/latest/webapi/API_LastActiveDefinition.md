@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_LastActiveDefinit
 ---
 
 # LastActiveDefinition
-<a name="API_LastActiveDefinition"></a>
 
 When there are multiple versions of a blueprint and the latest version has some errors, this attribute indicates the last successful blueprint definition that is available with the service.
 

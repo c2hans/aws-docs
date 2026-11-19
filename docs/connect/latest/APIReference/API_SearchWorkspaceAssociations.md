@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchWo
 ---
 
 # SearchWorkspaceAssociations
-<a name="API_SearchWorkspaceAssociations"></a>
 
 Searches for workspace associations with users or routing profiles based on various criteria.
 

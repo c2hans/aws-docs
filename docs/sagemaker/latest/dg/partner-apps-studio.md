@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/partner-apps-studio.
 ---
 
 # Partner AI Apps in Studio
-<a name="partner-apps-studio"></a>
 
  After the admin has added the required permissions and authorized users, users can view the Amazon SageMaker Partner AI App in Amazon SageMaker Studio. From Studio, users can launch apps that have been approved for use by their administrator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/uploading-logs
 ---
 
 # Uploading device-side logs by using AWS IoT rules
-<a name="uploading-logs-rules-action-procedure"></a>
 
 You can use the AWS IoT rules engine to upload log records from existing device-side log files (system, application, and device-client logs) to Amazon CloudWatch. When device-side logs are published to an MQTT topic, the CloudWatch Logs rules action transfers the messages to CloudWatch Logs. This process outlines how to upload device logs in batches using the rules action `batchMode` parameter turned on (set to `true`).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # Create a stream with service-managed record distribution
-<a name="service-managed-pk-configure-create"></a>
 
 To create a new stream with service-managed record distribution, include the `RecordDistributionStrategy` parameter set to `AUTO` in your [CreateStream](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_CreateStream.html) API call. If you do not specify this parameter, the stream defaults to `USER_PARTITION_KEY` (user-managed partition keys).
 

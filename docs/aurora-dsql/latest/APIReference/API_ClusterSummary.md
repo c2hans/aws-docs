@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Clus
 ---
 
 # ClusterSummary
-<a name="API_ClusterSummary"></a>
 
 A summary of the properties of a cluster.
 

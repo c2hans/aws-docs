@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/deploy-sample-application.
 ---
 
 # Step 1: Deploying the sample Amazon SNS application
-<a name="deploy-sample-application"></a>
 
 1. Sign in to the [AWS Lambda console](https://console.aws.amazon.com/lambda/).
 

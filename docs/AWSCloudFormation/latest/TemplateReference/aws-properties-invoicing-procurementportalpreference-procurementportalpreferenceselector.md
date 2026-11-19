@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Invoicing::ProcurementPortalPreference ProcurementPortalPreferenceSelector
-<a name="aws-properties-invoicing-procurementportalpreference-procurementportalpreferenceselector"></a>
 
 <a name="aws-properties-invoicing-procurementportalpreference-procurementportalpreferenceselector-description"></a>The `ProcurementPortalPreferenceSelector` property type specifies Property description not available. for an [AWS::Invoicing::ProcurementPortalPreference](aws-resource-invoicing-procurementportalpreference.md).
 

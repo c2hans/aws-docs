@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Insta
 ---
 
 # InstallToRemoteAccessSession
-<a name="API_InstallToRemoteAccessSession"></a>
 
 Installs an application to the device in a remote access session. For Android applications, the file must be in .apk format. For iOS applications, the file must be in .ipa format.
 

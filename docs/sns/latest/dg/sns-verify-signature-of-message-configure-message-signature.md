@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-verify-signature-of-me
 ---
 
 # Configuring the message signature version on Amazon SNS topics
-<a name="sns-verify-signature-of-message-configure-message-signature"></a>
 
 Configuring the message signature version on Amazon SNS topics allows you to enhance the security and compatibility of your message verification process.
 

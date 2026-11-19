@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Starting an OS process on a managed node using Fleet Manager
-<a name="fleet-manager-start-process"></a>
 
 You can use Fleet Manager to start a process on a managed node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NodeEthereumAttributes
-<a name="API_NodeEthereumAttributes"></a>
 
 Attributes of an Ethereum node.
 

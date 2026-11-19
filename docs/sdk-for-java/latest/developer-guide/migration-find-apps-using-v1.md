@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Find applications using AWS SDK for Java 1.x clients
-<a name="migration-find-apps-using-v1"></a>
 
 Before migrating to the AWS SDK for Java 2.x, you need to identify which applications in your environment use SDK for Java 1.x clients. You can use CloudTrail logs to trace SDK usage, search application logs for deprecation warnings, inspect your source code and build configurations, or examine your deployable Java artifacts. Use whichever methods are available in your environment.
 

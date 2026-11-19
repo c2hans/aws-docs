@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteRunBatch.html
 ---
 
 # DeleteRunBatch
-<a name="API_DeleteRunBatch"></a>
 
 Deletes the individual workflow runs within a batch. This operation is separate from `DeleteBatch`, which removes the batch metadata.
 

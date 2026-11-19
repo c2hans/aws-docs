@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDAOPS01-BP01 Implement a process to periodically review compliance requirements relevant to your industrial data infrastructure
-<a name="midaops01-bp01"></a>
 
  Implement a process to periodically review compliance requirements relevant to your industrial data infrastructure. Regular assessment of compliance requirements is crucial for manufacturing environments where industrial data is subject to various regulations such as GDPR, HIPAA, ISO 27001, or industry-specific standards. Establish a systematic review process to verify ongoing compliance and adapt to changing requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_SybaseAseDat
 ---
 
 # SybaseAseDataProviderSettings
-<a name="API_SybaseAseDataProviderSettings"></a>
 
 Provides information that defines an SAP ASE data provider.
 

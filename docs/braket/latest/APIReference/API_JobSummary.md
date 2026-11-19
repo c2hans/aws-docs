@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_JobSummar
 ---
 
 # JobSummary
-<a name="API_JobSummary"></a>
 
 Provides summary information about an Amazon Braket hybrid job.
 

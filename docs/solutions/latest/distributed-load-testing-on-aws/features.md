@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Features
-<a name="features"></a>
 
 The solution provides the following features:
 

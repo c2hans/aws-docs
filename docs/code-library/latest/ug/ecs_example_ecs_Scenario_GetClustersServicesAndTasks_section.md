@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ecs_example_ecs_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get ARN information for Amazon ECS clusters, services, and tasks using an AWS SDK
-<a name="ecs_example_ecs_Scenario_GetClustersServicesAndTasks_section"></a>
 
 The following code example shows how to:
 + Get a list of all clusters.

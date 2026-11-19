@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-push
 ---
 
 # Optimizing reads with pushdown in AWS Glue ETL
-<a name="aws-glue-programming-pushdown"></a>
 
  Pushdown is an optimization technique that pushes logic about retrieving data closer to the source of your data. The source could be a database or a file system such as Amazon S3. When executing certain operations directly on the source, you can save time and processing power by not bringing all the data over the network to the Spark engine managed by AWS Glue.
 

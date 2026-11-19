@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomPromptInputParameters
-<a name="API_CustomPromptInputParameters"></a>
 
 The parameters for configuring a custom prompt for an agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/use-interme
 ---
 
 # Using an intermediate table in analyses
-<a name="use-intermediate-table"></a>
 
 After you populate an intermediate table and attach an analysis rule, you can reference it in queries just like a configured table.
 

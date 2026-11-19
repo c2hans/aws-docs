@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Image.html
 ---
 
 # Image
-<a name="API_Image"></a>
 
 Contains details about a container image involved in a finding.
 

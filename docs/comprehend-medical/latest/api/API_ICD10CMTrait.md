@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_ICD10C
 ---
 
 # ICD10CMTrait
-<a name="API_ICD10CMTrait"></a>
 
 Contextual information for the entity. The traits recognized by InferICD10CM are `DIAGNOSIS`, `SIGN`, `SYMPTOM`, and `NEGATION`.
 

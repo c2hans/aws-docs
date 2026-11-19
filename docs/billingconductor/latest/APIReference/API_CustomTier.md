@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # CustomTier
-<a name="API_CustomTier"></a>
 
  A custom tier for the pricing rule. Each custom tier applies a rate to the usage that falls within the tier's range.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-templ
 ---
 
 # Creating custom email templates using the Amazon SES API and the AWS SDK for PHP Version 3
-<a name="ses-template"></a>
 
 Amazon Simple Email Service (Amazon SES) enables you to send emails that are personalized for each recipient by using templates. Templates include a subject line and the text and HTML parts of the email body. The subject and body sections can also contain unique values that are personalized for each recipient.
 

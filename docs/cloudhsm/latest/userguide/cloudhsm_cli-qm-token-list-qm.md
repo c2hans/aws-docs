@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-q
 ---
 
 # Show quorum values using CloudHSM CLI
-<a name="cloudhsm_cli-qm-token-list-qm"></a>
 
 Use the **quorum token-sign list-quorum-values** command in CloudHSM CLI to lists the quorum values set in your AWS CloudHSM cluster.
 

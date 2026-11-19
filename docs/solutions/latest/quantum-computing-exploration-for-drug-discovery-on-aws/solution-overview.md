@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quantum-computing-explo
 ---
 
 # An open-source solution for studying drug discovery problems using classical and quantum compute resources
-<a name="solution-overview"></a>
 
 **Important**
 This AWS Solution is no longer available. To explore related use cases and solutions, visit [Solutions for Healthcare, Life Sciences, and Genomics.](https://aws.amazon.com/solutions/health)

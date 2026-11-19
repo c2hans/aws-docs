@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Descr
 ---
 
 # DescribeLogPattern
-<a name="API_DescribeLogPattern"></a>
 
 Describe a specific log pattern from a `LogPatternSet`.
 

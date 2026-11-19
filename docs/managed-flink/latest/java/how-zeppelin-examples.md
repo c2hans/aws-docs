@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-zeppelin-e
 ---
 
 # Examples and tutorials for Studio notebooks in Managed Service for Apache Flink
-<a name="how-zeppelin-examples"></a>
 
 **Topics**
 + [Tutorial: Create a Studio notebook in Managed Service for Apache Flink](example-notebook.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # SeveritySummary
-<a name="API_SeveritySummary"></a>
 
 The number of managed nodes found for each patch severity level defined in the request filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # ListServiceQuotas
-<a name="API_ListServiceQuotas"></a>
 
 Lists the applied quota values for the specified AWS service. For some quotas, only the default values are available. If the applied quota value is not available for a quota, the quota is not retrieved. Filter responses to return applied quota values at either the account level, resource level, or all levels.
 
@@ -54,7 +53,7 @@ Valid Values: `ACCOUNT | RESOURCE | ALL`
 Required: No
 
  ** [QuotaCode](#API_ListServiceQuotas_RequestSyntax) **   <a name="servicequotas-ListServiceQuotas-request-QuotaCode"></a>
-Specifies the quota identifier. To find the quota code for a specific quota, use the [ListServiceQuotas](#API_ListServiceQuotas) operation, and look for the `QuotaCode` response in the output for the quota you want.
+Specifies the quota identifier. To find the quota code for a specific quota, use the [ListServiceQuotas](API_ListServiceQuotas.md) operation, and look for the `QuotaCode` response in the output for the quota you want.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[a-zA-Z][a-zA-Z0-9-]{1,128}`

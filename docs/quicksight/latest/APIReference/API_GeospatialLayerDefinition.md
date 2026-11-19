@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialLayerDefinition
-<a name="API_GeospatialLayerDefinition"></a>
 
 The definition properties for a geospatial layer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # PutProfileOutboundRequestBatch
-<a name="API_connect-outbound-campaigns-v2_PutProfileOutboundRequestBatch"></a>
 
 Takes in a list of profile outbound requests to be placed as part of an outbound campaign. For more information on profiles, see [What is a customer profile in Connect Customer?](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles-what-data.html).
 

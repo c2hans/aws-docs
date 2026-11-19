@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_B
 ---
 
 # BatchAssociateServiceActionWithProvisioningArtifact
-<a name="API_BatchAssociateServiceActionWithProvisioningArtifact"></a>
 
 Associates multiple self-service actions with provisioning artifacts.
 

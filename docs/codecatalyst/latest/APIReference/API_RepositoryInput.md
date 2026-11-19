@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Rep
 ---
 
 # RepositoryInput
-<a name="API_RepositoryInput"></a>
 
 Information about a repository that will be cloned to a Dev Environment.
 

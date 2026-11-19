@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Supported AWS services
-<a name="supported-aws-services"></a>
 
 Most of the supported AWS services output logs to Amazon CloudWatch Logs, Amazon S3, Amazon Kinesis Data Streams, or Amazon Kinesis DataFirehose. The log outputs must be in the same AWS Region as the Centralized Logging with OpenSearch solution.
 

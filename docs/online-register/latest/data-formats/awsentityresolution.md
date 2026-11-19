@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 ---
 
 # Data retrieval APIs for AWS Entity Resolution
-<a name="awsentityresolution"></a>
 
 AWS Entity Resolution provides the following APIs for data retrieval.
 

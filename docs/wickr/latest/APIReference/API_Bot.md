@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_Bot.html
 ---
 
 # Bot
-<a name="API_Bot"></a>
 
 Represents a bot account in a Wickr network with all its informational fields.
 

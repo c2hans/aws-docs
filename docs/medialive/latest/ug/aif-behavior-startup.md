@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/aif-behavior-startup
 ---
 
 # Starting the channel
-<a name="aif-behavior-startup"></a>
 
 Start the MediaLive channel in the usual way. MediaLive follows this behavior when you start the channel:
 + If the input attachment list contains only the input failover pair, MediaLive starts with the primary input, which always appears first in the attachments.

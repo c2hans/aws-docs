@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/subscriptio
 ---
 
 # Concepts
-<a name="subscription-concepts"></a>
 
 Each subscription filter is made up of the following key elements:
 

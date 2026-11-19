@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Sy
 ---
 
 # SyntheticDataConfiguration
-<a name="API_SyntheticDataConfiguration"></a>
 
 Configuration settings for synthetic data generation, including the parameters that control data synthesis and the evaluation scores that measure the quality and privacy characteristics of the generated synthetic data.
 

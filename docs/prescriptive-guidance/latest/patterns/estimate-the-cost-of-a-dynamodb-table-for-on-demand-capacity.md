@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/es
 ---
 
 # Estimate the cost of a DynamoDB table for on-demand capacity
-<a name="estimate-the-cost-of-a-dynamodb-table-for-on-demand-capacity"></a>
 
 *Moinul Al-Mamun, Amazon Web Services*
 

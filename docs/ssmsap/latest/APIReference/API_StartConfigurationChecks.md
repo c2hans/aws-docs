@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StartConf
 ---
 
 # StartConfigurationChecks
-<a name="API_StartConfigurationChecks"></a>
 
 Initiates configuration check operations against a specified application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-fine-tune-1.h
 ---
 
 # Fine-tune Nova 1.0
-<a name="nova-fine-tune-1"></a>
 
 **Note**
 You can fine-tune Amazon Nova 1.0 models using supervised fine-tuning (SFT) with full-rank or LoRA approaches. For fine-tuning Nova 2.0 models, see [Fine-tune Nova 2.0](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-fine-tune-2.html).

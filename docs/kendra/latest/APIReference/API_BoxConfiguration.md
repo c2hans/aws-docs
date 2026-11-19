@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_BoxConfig
 ---
 
 # BoxConfiguration
-<a name="API_BoxConfiguration"></a>
 
 Provides the configuration information to connect to Box as your data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge
 ---
 
 # MQTT bridge
-<a name="mqtt-bridge-component"></a>
 
 The MQTT bridge component (`aws.greengrass.clientdevices.mqtt.Bridge`) relays MQTT messages between client devices, local Greengrass publish/subscribe, and AWS IoT Core. You can use this component to act on MQTT messages from client devices in custom components and sync client devices with the AWS Cloud.
 

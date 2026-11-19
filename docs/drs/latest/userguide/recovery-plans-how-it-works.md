@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-how-
 ---
 
 # How a recovery plan runs
-<a name="recovery-plans-how-it-works"></a>
 
 When you start an execution, AWS Elastic Disaster Recovery does the following:
 

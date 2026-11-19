@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # Create a Lambda@Edge function
-<a name="lambda-edge-create-in-lambda-console"></a>
 
 To set up AWS Lambda to run Lambda functions that are based on CloudFront events, follow this procedure.<a name="lambda-edge-create-function-procedure"></a>
 

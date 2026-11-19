@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateFlow
-<a name="API_UpdateFlow"></a>
 
 Updates an existing flow. Supply only the fields you want to change. Updates both DRAFT and PUBLISHED versions. When `FlowDefinition` is provided, all existing steps are replaced with the new definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/microvms-launching.html
 ---
 
 # Running and using MicroVMs
-<a name="microvms-launching"></a>
 
 This section describes how to start MicroVMs, connect to your running applications, manage the MicroVM lifecycle, and handle scaling.
 

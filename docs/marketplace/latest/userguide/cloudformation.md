@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/cloudformat
 ---
 
 # Add CloudFormation templates to your product
-<a name="cloudformation"></a>
 
 AWS Marketplace sellers can list AMI-based products that are delivered to AWS Marketplace buyers by using AWS CloudFormation templates. Adding a CloudFormation template to your AMI-based product allows your buyers to deploy your solution without having to manually configure the resources and dependencies. You can use the templates to define a cluster or distributed architecture for the products or to select different AMI combinations or product configurations. Single AMI solutions can contain a maximum of three CloudFormation templates.
 

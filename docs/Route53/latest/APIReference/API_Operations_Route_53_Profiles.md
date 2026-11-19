@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Operatio
 ---
 
 # Route 53 Profiles
-<a name="API_Operations_Route_53_Profiles"></a>
 
 The following actions are supported by Route 53 Profiles:
 +  [AssociateProfile](API_route53profiles_AssociateProfile.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/monitoring
 ---
 
 # Monitoring AWS Elemental MediaPackage with EventBridge events
-<a name="monitoring-eventbridge-events"></a>
 
 WIth Amazon EventBridge, you can automate your AWS services and respond automatically to system events such as application availability issues or error conditions. AWS services deliver events to EventBridge in near real-time. You can write simple rules to indicate which events are of interest to you, and what automated actions to take when an event matches a rule. The actions that can be automatically triggered include the following:
 + Invoking an AWS Lambda function

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-pca-co
 ---
 
 # AWS Private CA Connector for Active Directory events
-<a name="events-ref-pca-connector-ad"></a>
 
 AWS Private CA Connector for Active Directory sends service events directly to EventBridge.
 

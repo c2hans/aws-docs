@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Model deployment
-<a name="model-customize-mtrl-deployment"></a>
 
  After your training job completes, the trained model is available as a Model Package in your Output Model Package Group. You have two options for deploying it.
 

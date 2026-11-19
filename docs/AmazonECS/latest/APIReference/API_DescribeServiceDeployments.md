@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeServiceDeployments
-<a name="API_DescribeServiceDeployments"></a>
 
 Describes one or more of your service deployments.
 

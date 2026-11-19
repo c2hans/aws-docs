@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Rate limit enforcement
-<a name="gateway-rate-limits-enforcement"></a>
 
 This topic describes how the gateway evaluates and enforces rate limits at runtime, including interaction with other gateway features, throttled response formats, and observability.
 

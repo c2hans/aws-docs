@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/lambda-invoke-
 ---
 
 # Invoke Lambda functions
-<a name="lambda-invoke-functions"></a>
 
 ## Step 1: Create a Lambda function
 <a name="lambda-create-function"></a>

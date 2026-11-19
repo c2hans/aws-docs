@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentAvailabilityZoneBalance
-<a name="API_InferenceComponentAvailabilityZoneBalance"></a>
 
 Configuration for balancing inference component copies across Availability Zones.
 

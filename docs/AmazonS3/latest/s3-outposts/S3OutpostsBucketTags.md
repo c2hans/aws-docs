@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsBu
 ---
 
 # Adding tags for S3 on Outposts buckets
-<a name="S3OutpostsBucketTags"></a>
 
 You can add tags for your Amazon S3 on Outposts buckets to track storage costs and other criteria for individual projects or groups of projects.
 

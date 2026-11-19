@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DBClu
 ---
 
 # DBClusterParameterGroup
-<a name="API_DBClusterParameterGroup"></a>
 
 Detailed information about a cluster parameter group.
 

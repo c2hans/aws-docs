@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayListener
-<a name="API_VirtualGatewayListener"></a>
 
 An object that represents a listener for a virtual gateway.
 

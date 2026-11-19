@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonPrometheusScraperServiceRolePolicy
-<a name="AmazonPrometheusScraperServiceRolePolicy"></a>
 
 **Description**: Provides access to AWS Resources managed or used by Amazon Managed Service for Prometheus Collector
 

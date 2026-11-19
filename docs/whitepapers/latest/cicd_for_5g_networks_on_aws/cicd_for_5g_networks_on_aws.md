@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Continuous Integration and Continuous Delivery for 5G Networks on AWS
-<a name="cicd_for_5g_networks_on_aws"></a>
 
 Publication date: **March 08, 2021** ([Document revisions](document-revisions.md))
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/create-
 ---
 
 # Creating Default Environment Variables for Your Linux Users
-<a name="create-default-variables-linux"></a>
 
 You can create environment variables on a Linux Image Builder instance. Creating environment variables makes them available on streaming instances created from that image.
 

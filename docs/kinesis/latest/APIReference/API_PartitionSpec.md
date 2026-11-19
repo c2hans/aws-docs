@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Partitio
 ---
 
 # PartitionSpec
-<a name="API_PartitionSpec"></a>
 
 Specifies how the destination table is partitioned.
 

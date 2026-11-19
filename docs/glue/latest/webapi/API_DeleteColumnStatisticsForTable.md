@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteColumnStati
 ---
 
 # DeleteColumnStatisticsForTable
-<a name="API_DeleteColumnStatisticsForTable"></a>
 
 Retrieves table statistics of columns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-stepfun
 ---
 
 # Start a new AWS Step Functions state machine from a running execution
-<a name="connect-stepfunctions"></a>
 
 Step Functions integrates with its own API as a service integration. Learn how to use Step Functions to start a new execution of a state machine directly from the task state of a running execution. When building new workflows, use [nested workflow executions](concepts-nested-workflows.md) to reduce the complexity of your main workflows and to reuse common processes.
 
@@ -155,7 +154,7 @@ For a state machine that calls `StartExecution` for a single nested workflow exe
 For more information, see the following:
 + [Integrating services with Step Functions](integrate-services.md)
 + [Passing parameters to a service API in Step Functions](connect-parameters.md)
-+ [Start a new AWS Step Functions state machine from a running execution](#connect-stepfunctions)
++ [Start a new AWS Step Functions state machine from a running execution](connect-stepfunctions.md)
 
 ------
 #### [ Synchronous ]<a name="sync-async-iam-policies"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/ecma-iteration.html
 ---
 
 # Iteration statement
-<a name="ecma-iteration"></a>
 
 Iteration statements can be any one of the following:
 

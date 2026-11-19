@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PacketHea
 ---
 
 # PacketHeaderStatement
-<a name="API_PacketHeaderStatement"></a>
 
 Describes a packet header statement.
 

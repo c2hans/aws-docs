@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotAliasLo
 ---
 
 # BotAliasLocaleSettings
-<a name="API_BotAliasLocaleSettings"></a>
 
 Specifies settings that are unique to a locale. For example, you can use different Lambda function depending on the bot's locale.
 

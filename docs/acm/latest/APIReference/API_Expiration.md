@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_Expiration.h
 ---
 
 # Expiration
-<a name="API_Expiration"></a>
 
 Specifies an expiration configuration.
 

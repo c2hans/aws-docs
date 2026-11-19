@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateDirectConnectGatewayAttachment
-<a name="API_CreateDirectConnectGatewayAttachment"></a>
 
 Creates an AWS Direct Connect gateway attachment
 

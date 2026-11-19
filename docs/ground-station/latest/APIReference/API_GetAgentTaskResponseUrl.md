@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_G
 ---
 
 # GetAgentTaskResponseUrl
-<a name="API_GetAgentTaskResponseUrl"></a>
 
 **Note**
  For use by AWS Ground Station Agent and shouldn't be called directly.

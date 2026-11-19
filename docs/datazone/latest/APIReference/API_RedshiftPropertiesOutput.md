@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Redshif
 ---
 
 # RedshiftPropertiesOutput
-<a name="API_RedshiftPropertiesOutput"></a>
 
 The Amazon Redshift properties.
 

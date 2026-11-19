@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProjectView
-<a name="API_ProjectView"></a>
 
  Provides the project view of an opportunity resource shared through a snapshot.
 

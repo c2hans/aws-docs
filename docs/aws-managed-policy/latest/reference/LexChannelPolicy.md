@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/LexC
 ---
 
 # LexChannelPolicy
-<a name="LexChannelPolicy"></a>
 
 **Description**: Policy for AWS Lex Channel use case
 

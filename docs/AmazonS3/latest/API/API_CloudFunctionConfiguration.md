@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CloudFunctionCon
 ---
 
 # CloudFunctionConfiguration
-<a name="API_CloudFunctionConfiguration"></a>
 
 Container for specifying the AWS Lambda notification configuration.
 

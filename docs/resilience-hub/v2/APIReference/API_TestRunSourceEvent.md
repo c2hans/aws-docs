@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunSourceEvent
-<a name="API_TestRunSourceEvent"></a>
 
 A state-change event observed for a test run monitoring source.
 

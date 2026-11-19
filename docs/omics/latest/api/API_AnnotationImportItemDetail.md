@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_AnnotationImportIte
 ---
 
 # AnnotationImportItemDetail
-<a name="API_AnnotationImportItemDetail"></a>
 
 Details about an imported annotation item.
 

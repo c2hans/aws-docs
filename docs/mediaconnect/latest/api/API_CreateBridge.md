@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_CreateBridge
 ---
 
 # CreateBridge
-<a name="API_CreateBridge"></a>
 
  Creates a new bridge. The request must include one source.
 

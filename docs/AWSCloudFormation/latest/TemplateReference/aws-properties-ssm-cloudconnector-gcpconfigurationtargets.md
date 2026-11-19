@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::CloudConnector GcpConfigurationTargets
-<a name="aws-properties-ssm-cloudconnector-gcpconfigurationtargets"></a>
 
 <a name="aws-properties-ssm-cloudconnector-gcpconfigurationtargets-description"></a>The `GcpConfigurationTargets` property type specifies Property description not available. for an [AWS::SSM::CloudConnector](aws-resource-ssm-cloudconnector.md).
 

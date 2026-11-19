@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Configure automatic snapshots for Lightsail instances and disks
-<a name="amazon-lightsail-configuring-automatic-snapshots"></a>
 
 When you enable the automatic snapshots feature of your instance or block storage disk, Amazon Lightsail creates daily snapshots of your resource during the default automatic snapshot time, or during a [time you specify](amazon-lightsail-changing-automatic-snapshot-time.md). Just like a manual snapshot, you can use an automatic snapshot as a baseline to create new resources or for data backup.
 

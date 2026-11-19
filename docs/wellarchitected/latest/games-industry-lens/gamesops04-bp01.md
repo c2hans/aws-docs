@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMESOPS04-BP01 Instrument the game to detect and monitor player-impacting issues
-<a name="gamesops04-bp01"></a>
 
  In addition to responding to social media and player reports of issues, instrument your game with monitoring solutions to detect and investigate player-impacting issues.
 

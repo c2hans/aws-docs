@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/find-meeting-id.html
 ---
 
 # Finding meeting IDs
-<a name="find-meeting-id"></a>
 
 To join Amazon Chime meetings without a registered user account, or to join meetings early, you need to enter a meeting ID. You find meeting IDs in meeting invitations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Authorization flow
-<a name="policy-authorization-flow"></a>
 
 Amazon Bedrock AgentCore Gateway evaluates Cedar policies against incoming requests. This section explains how authorization information flows from the request to policy evaluation.
 

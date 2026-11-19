@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Instan
 ---
 
 # InstancePlacementConfig
-<a name="API_InstancePlacementConfig"></a>
 
 Configuration for how instances are placed and allocated within UltraServers. This is only applicable for UltraServer capacity.
 

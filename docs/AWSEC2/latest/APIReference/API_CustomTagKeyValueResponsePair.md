@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CustomTag
 ---
 
 # CustomTagKeyValueResponsePair
-<a name="API_CustomTagKeyValueResponsePair"></a>
 
 Describes a tag key-value pair for an application status check association.
 

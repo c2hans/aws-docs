@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateCloudA
 ---
 
 # CreateCloudAutonomousVmCluster
-<a name="API_CreateCloudAutonomousVmCluster"></a>
 
 Creates a new Autonomous VM cluster in the specified Exadata infrastructure.
 

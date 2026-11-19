@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # RequestedTerm
-<a name="API_marketplace-agreements_RequestedTerm"></a>
 
 Defines what is being accepted as part of the agreement creation or update request, and it includes their configurations.
 

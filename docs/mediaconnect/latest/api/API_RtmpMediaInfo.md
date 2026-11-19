@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RtmpMediaInf
 ---
 
 # RtmpMediaInfo
-<a name="API_RtmpMediaInfo"></a>
 
 Metadata about the audio and video media that is part of the RTMP source content. This includes details about the individual streams.
 

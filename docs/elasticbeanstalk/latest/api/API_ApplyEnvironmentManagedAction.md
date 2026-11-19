@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ApplyEnv
 ---
 
 # ApplyEnvironmentManagedAction
-<a name="API_ApplyEnvironmentManagedAction"></a>
 
 Applies a scheduled managed action immediately. A managed action can be applied only if its status is `Scheduled`. Get the status and action ID of a managed action with [DescribeEnvironmentManagedActions](API_DescribeEnvironmentManagedActions.md).
 

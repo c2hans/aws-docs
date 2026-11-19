@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DeleteWorkspac
 ---
 
 # DeleteWorkspaceBundle
-<a name="API_DeleteWorkspaceBundle"></a>
 
 Deletes the specified WorkSpace bundle. For more information about deleting WorkSpace bundles, see [ Delete a Custom WorkSpaces Bundle or Image](https://docs.aws.amazon.com/workspaces/latest/adminguide/delete_bundle.html).
 

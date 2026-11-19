@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Connector
 ---
 
 # ConnectorFilter
-<a name="API_ConnectorFilter"></a>
 
 Filters connectors based on the connector provider.
 

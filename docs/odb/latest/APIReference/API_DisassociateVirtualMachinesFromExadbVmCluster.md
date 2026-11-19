@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateVirtualMachinesFromExadbVmCluster
-<a name="API_DisassociateVirtualMachinesFromExadbVmCluster"></a>
 
 Removes virtual machines from the specified Exascale VM cluster.
 

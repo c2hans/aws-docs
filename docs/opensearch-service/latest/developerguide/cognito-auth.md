@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Configuring Amazon Cognito authentication for OpenSearch Dashboards
-<a name="cognito-auth"></a>
 
 You can authenticate and protect your Amazon OpenSearch Service default installation of OpenSearch Dashboards using [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html). Amazon Cognito authentication is optional and available only for domains using OpenSearch or Elasticsearch 5.1 or later. If you don't configure Amazon Cognito authentication, you can still protect Dashboards using an [IP-based access policy](ac.md#ac-types-ip) and a [proxy server](dashboards.md#dashboards-proxy), HTTP basic authentication, or [SAML](saml.md).
 

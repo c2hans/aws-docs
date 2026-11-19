@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/wizard-about.html
 ---
 
 # About the workflow wizard
-<a name="wizard-about"></a>
 
 ## Supported inputs
 <a name="wizard-inputs"></a>

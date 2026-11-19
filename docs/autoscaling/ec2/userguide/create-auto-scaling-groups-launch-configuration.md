@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-auto-sc
 ---
 
 # Create Auto Scaling groups using launch configurations
-<a name="create-auto-scaling-groups-launch-configuration"></a>
 
 **Important**
 Limitations:

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-advanced-secur
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure advanced security settings for nodes
-<a name="auto-advanced-security"></a>
 
 This topic describes how to configure advanced security settings for Amazon EKS Auto Mode nodes using the `advancedSecurity` specification in your Node Class.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountPr
 ---
 
 # GetAccountProperties
-<a name="API_GetAccountProperties"></a>
 
 Retrieves the account-level properties for the caller's AWS account. Account properties are configuration settings that control account-wide IAM features such as Role Manager.
 

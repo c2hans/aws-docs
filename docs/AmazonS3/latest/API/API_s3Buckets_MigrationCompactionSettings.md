@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Migrat
 ---
 
 # MigrationCompactionSettings
-<a name="API_s3Buckets_MigrationCompactionSettings"></a>
 
 The compaction settings that a migration applies to the destination table.
 

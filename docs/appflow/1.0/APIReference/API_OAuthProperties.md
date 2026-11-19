@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_OAuthProper
 ---
 
 # OAuthProperties
-<a name="API_OAuthProperties"></a>
 
  The OAuth properties required for OAuth type authentication.
 

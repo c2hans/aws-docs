@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/static-ma
 ---
 
 # Static maps
-<a name="static-maps"></a>
 
 **Note**
 Static maps only support Standard and Satellite styles. For more information, see [AWS map styles and features](map-styles.md).

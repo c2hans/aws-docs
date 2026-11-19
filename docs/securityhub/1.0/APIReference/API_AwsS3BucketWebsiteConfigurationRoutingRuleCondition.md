@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketWebsiteConfigurationRoutingRuleCondition
-<a name="API_AwsS3BucketWebsiteConfigurationRoutingRuleCondition"></a>
 
 The condition that must be met in order to apply the routing rule.
 

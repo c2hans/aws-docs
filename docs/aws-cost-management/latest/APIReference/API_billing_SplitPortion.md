@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SplitPortion
-<a name="API_billing_SplitPortion"></a>
 
 One new credit to create from a split.
 

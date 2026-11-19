@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ProxyC
 ---
 
 # ProxyConfiguration
-<a name="API_ProxyConfiguration"></a>
 
 The configuration details for the App Mesh proxy.
 

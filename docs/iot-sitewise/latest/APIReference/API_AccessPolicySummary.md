@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Acc
 ---
 
 # AccessPolicySummary
-<a name="API_AccessPolicySummary"></a>
 
 Contains an access policy that defines an identity's access to an AWS IoT SiteWise Monitor resource.
 

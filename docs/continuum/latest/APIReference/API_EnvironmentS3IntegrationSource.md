@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentS3IntegrationSource
-<a name="API_EnvironmentS3IntegrationSource"></a>
 
 An S3 source for one environment, backed by a previously-created S3 integration.
 

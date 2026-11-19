@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/res
 ---
 
 # DynamoDB reserved capacity
-<a name="reserved-capacity"></a>
 
 For provisioned capacity tables that use the Standard [table class](HowItWorks.TableClasses.md), DynamoDB offers the ability to purchase reserved capacity for your read and write capacity. A reserved capacity purchase is an agreement to pay for a minimum amount of provisioned throughput capacity, for the duration of the term of the agreement, in exchange for discounted pricing.
 

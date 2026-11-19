@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference
 ---
 
 # Required permissions for batch inference
-<a name="batch-inference-permissions"></a>
 
 To carry out batch inference, you must set up permissions for the following IAM identities:
 

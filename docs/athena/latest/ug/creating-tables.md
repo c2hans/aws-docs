@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/creating-tables.html
 ---
 
 # Create tables in Athena
-<a name="creating-tables"></a>
 
 To create tables, you can run DDL statements in the Athena console, use the Athena [**Create table** form](creating-tables-how-to.md#to-create-a-table-using-the-wizard), or use a JDBC or an ODBC driver. Athena uses Apache Hive to define tables and create databases, which are essentially a logical namespace of tables. Athena supports a variety of serializer-deserializer (SerDe) libraries for creating tables for specific data formats. For a list of supported SerDe libraries, see [Choose a SerDe for your data](supported-serdes.md).
 

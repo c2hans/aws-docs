@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TotalH
 ---
 
 # TotalHits
-<a name="API_TotalHits"></a>
 
 Represents the total number of matching results and indicates how accurate that count is.
 

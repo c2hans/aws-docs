@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Setting up IAM roles for service accounts (IRSA) for spark-submit
-<a name="spark-submit-security-irsa"></a>
 
 The following sections explain how to set up IAM roles for service accounts (IRSA) to authenticate and authorize Kubernetes service accounts so you can run Spark applications stored in Amazon S3.
 

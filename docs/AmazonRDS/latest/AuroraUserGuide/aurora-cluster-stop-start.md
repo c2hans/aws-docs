@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Stopping and starting an Amazon Aurora DB cluster
-<a name="aurora-cluster-stop-start"></a>
 
 Stopping and starting Aurora DB clusters helps you manage costs for development and test environments. You can temporarily stop all the DB instances in your cluster, instead of setting up and tearing down all the DB instances each time that you use the cluster.
 

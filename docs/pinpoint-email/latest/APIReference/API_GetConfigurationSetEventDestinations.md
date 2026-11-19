@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_G
 ---
 
 # GetConfigurationSetEventDestinations
-<a name="API_GetConfigurationSetEventDestinations"></a>
 
 Retrieve a list of event destinations that are associated with a configuration set.
 

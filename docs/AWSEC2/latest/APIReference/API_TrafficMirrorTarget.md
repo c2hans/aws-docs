@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TrafficMi
 ---
 
 # TrafficMirrorTarget
-<a name="API_TrafficMirrorTarget"></a>
 
 Describes a Traffic Mirror target.
 

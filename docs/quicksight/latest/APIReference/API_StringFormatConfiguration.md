@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Strin
 ---
 
 # StringFormatConfiguration
-<a name="API_StringFormatConfiguration"></a>
 
 Formatting configuration for string fields.
 

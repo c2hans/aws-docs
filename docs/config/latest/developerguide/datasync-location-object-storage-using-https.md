@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/datasync-lo
 ---
 
 # datasync-location-object-storage-using-https
-<a name="datasync-location-object-storage-using-https"></a>
 
 Checks if AWS DataSync location object storage servers use the HTTPS protocol to communicate. The rule is NON\_COMPLIANT if configuration.ServerProtocol is not 'HTTPS'.
 

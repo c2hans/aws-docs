@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Benefits of using organizational units (OUs)
-<a name="benefits-of-using-organizational-units-ous"></a>
 
 The following benefits of using OUs helped shape [Recommended OUs and accounts](recommended-ous-and-accounts.md).
 

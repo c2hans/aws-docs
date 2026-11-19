@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetReservationOffering
-<a name="API_GetReservationOffering"></a>
 
 Returns the reservation offering. The offering determines the payment schedule for the reservation.
 

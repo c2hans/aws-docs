@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransformCustomExecuteTransformations
-<a name="AWSTransformCustomExecuteTransformations"></a>
 
 **Description**: Provides access to execute transformations in AWS Transform custom.
 

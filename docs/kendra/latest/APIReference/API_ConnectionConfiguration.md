@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Connectio
 ---
 
 # ConnectionConfiguration
-<a name="API_ConnectionConfiguration"></a>
 
 Provides the configuration information that's required to connect to a database.
 

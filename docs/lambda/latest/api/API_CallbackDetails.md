@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CallbackDetails.ht
 ---
 
 # CallbackDetails
-<a name="API_CallbackDetails"></a>
 
 Contains details about a callback operation in a durable execution, including the callback token and timeout configuration.
 

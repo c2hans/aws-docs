@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalytics::Application InputSchema
-<a name="aws-properties-kinesisanalytics-application-inputschema"></a>
 
 Describes the format of the data in the streaming source, and how each data element maps to corresponding columns in the in-application stream that is being created.
 

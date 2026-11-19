@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/securit
 ---
 
 # How Amazon Aurora works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon Aurora, you should understand what IAM features are available to use with Aurora.
 

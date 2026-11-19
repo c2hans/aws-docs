@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.
 ---
 
 # Connecting to AL2023 instances
-<a name="connecting-to-instances"></a>
 
 Use SSH or AWS Systems Manager to connect to your AL2023 instance.
 

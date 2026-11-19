@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/wwe-troubles
 ---
 
 # Common troubleshooting steps and best practices with ElastiCache
-<a name="wwe-troubleshooting"></a>
 
 The following topics provide troubleshooting advice for errors and issues that you could encounter when using ElastiCache. If you find an issue that isn't listed here, you can use the feedback button on this page to report it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/docker-compos
 ---
 
 # QuickStart: Deploy a Docker Compose application to Elastic Beanstalk
-<a name="docker-compose-quickstart"></a>
 
 This QuickStart tutorial walks you through the process of creating a multi-container Docker Compose application and deploying it to an AWS Elastic Beanstalk environment. You'll create a Flask web application with an nginx reverse proxy to demonstrate how Docker Compose simplifies orchestrating multiple containers.
 

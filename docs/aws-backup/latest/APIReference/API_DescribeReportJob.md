@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeReportJob
-<a name="API_DescribeReportJob"></a>
 
 Returns the details associated with creating a report as specified by its `ReportJobId`.
 

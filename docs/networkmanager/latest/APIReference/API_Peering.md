@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_P
 ---
 
 # Peering
-<a name="API_Peering"></a>
 
 Describes a peering connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/byol-window
 ---
 
 # Bring Your Own Windows desktop licenses in WorkSpaces
-<a name="byol-windows-images"></a>
 
 If your licensing agreement with Microsoft allows it, you can bring and deploy your Windows 10 or 11 desktop on your WorkSpaces. To do this, you must enable Bring Your Own License (BYOL) and provide a Windows 10 or 11 license that meets the requirements below. For more information about using Microsoft software on AWS, see [Amazon Web Services and Microsoft](https://aws.amazon.com/windows/faq/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A container of a key value name pair.
 

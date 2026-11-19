@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/wha
 ---
 
 # What is a Deadline Cloud workload
-<a name="what-is-a-deadline-cloud-workload"></a>
 
  With AWS Deadline Cloud, you can submit jobs to run your applications in the cloud and process data for the production of content or insights important to your business. Deadline Cloud uses Open Job Description (OpenJD) as the syntax for job templates, a specification designed for the needs of visual compute pipelines but applicable to many other use cases. For more information, see the [OpenJD specification](https://github.com/OpenJobDescription/openjd-specifications) on the GitHub website. Some example workloads include computer graphics rendering, physics simulation, and photogrammetry.
 

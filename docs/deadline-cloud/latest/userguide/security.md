@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/security
 ---
 
 # Security in Deadline Cloud
-<a name="security"></a>
 
 Security in Deadline Cloud comes down to three questions: who can see and manage your farm, what the service and your jobs can do on your behalf, and how workloads stay separate from each other. For a map of the controls that answer each question and where to configure them, start with [Security controls in Deadline Cloud](security-controls.md). For hands-on guidance for each part of your farm, see [Security best practices for Deadline Cloud](security-best-practices.md).
 

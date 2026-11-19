@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_DomainSumm
 ---
 
 # DomainSummary
-<a name="API_connect-cases_DomainSummary"></a>
 
 Object for the summarized details of the domain.
 

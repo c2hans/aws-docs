@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Summariz
 ---
 
 # SummarizedCounter
-<a name="API_SummarizedCounter"></a>
 
 The counter that describes a DDoS attack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FinalH
 ---
 
 # FinalHyperParameterTuningJobObjectiveMetric
-<a name="API_FinalHyperParameterTuningJobObjectiveMetric"></a>
 
 Shows the latest objective metric emitted by a training job that was launched by a hyperparameter tuning job. You define the objective metric in the `HyperParameterTuningJobObjective` parameter of [HyperParameterTuningJobConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperParameterTuningJobConfig.html).
 

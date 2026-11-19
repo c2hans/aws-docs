@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteTr
 ---
 
 # DeleteTrafficPolicy
-<a name="API_DeleteTrafficPolicy"></a>
 
 Deletes a traffic policy.
 

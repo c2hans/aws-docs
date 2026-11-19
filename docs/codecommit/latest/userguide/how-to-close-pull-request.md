@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-close
 ---
 
 # Close a pull request in an AWS CodeCommit repository
-<a name="how-to-close-pull-request"></a>
 
 If you want to close a pull request without merging the code, you can do so in one of several ways:
 + In the console, you can close a pull request without merging the code. You might want to do this if you want to use the **git merge** command to merge the branches manually, or if the code in the pull request source branch isn't code you want merged into the destination branch.

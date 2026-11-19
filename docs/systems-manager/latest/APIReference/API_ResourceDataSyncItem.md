@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResourceDataSyncItem
-<a name="API_ResourceDataSyncItem"></a>
 
 Information about a resource data sync configuration, including its current status and last successful sync.
 

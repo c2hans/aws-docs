@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Us
 ---
 
 # UserContext
-<a name="API_UserContext"></a>
 
 Details for user initiating insights job
 

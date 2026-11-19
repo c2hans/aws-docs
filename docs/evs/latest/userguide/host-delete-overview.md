@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/host-delete-overvie
 ---
 
 # Delete a host
-<a name="host-delete-overview"></a>
 
 1. In Amazon EVS, you delete the host with the Amazon EVS console or the AWS CLI. WARNING: Remove the host in VCF before you delete it in Amazon EVS. If you delete a host without removing it first, stale data stays in vCenter Server and SDDC Manager. Before you delete a host, make sure that the cluster keeps enough hosts for your VCF topology.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Delete designations
-<a name="delete-designations"></a>
 
 You can delete a designation only when **Allow delete** is selected for the designation. You can't delete managed designations (Owner and Contributor).
 

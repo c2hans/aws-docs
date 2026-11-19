@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryInst
 ---
 
 # RecoveryInstanceDataReplicationInitiationStep
-<a name="API_RecoveryInstanceDataReplicationInitiationStep"></a>
 
 Data replication initiation step.
 

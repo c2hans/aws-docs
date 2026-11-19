@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchCreat
 ---
 
 # BatchCreateUserRequestItem
-<a name="API_BatchCreateUserRequestItem"></a>
 
 Contains the details for a single user to be created in a batch user creation request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DeleteVpcEndpoint
-<a name="API_DeleteVpcEndpoint"></a>
 
 Deletes an Amazon OpenSearch Service-managed interface VPC endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is
 ---
 
 # Key Concepts of Amazon WorkSpaces Applications
-<a name="what-is-concepts"></a>
 
 To get the most out of WorkSpaces Applications, be familiar with the following concepts:
 

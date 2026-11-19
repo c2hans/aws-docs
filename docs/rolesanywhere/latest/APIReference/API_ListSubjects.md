@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Li
 ---
 
 # ListSubjects
-<a name="API_ListSubjects"></a>
 
 Lists the subjects in the authenticated account and AWS Region.
 

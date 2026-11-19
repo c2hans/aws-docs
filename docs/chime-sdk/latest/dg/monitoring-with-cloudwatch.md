@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/monitoring-with-clou
 ---
 
 # Monitoring call analytics pipelines for the Amazon Chime SDK with Amazon CloudWatch
-<a name="monitoring-with-cloudwatch"></a>
 
 You can use Amazon CloudWatch to monitor Amazon Chime SDK call analytics pipelines. You can also set alarms that watch for certain thresholds, and send notifications or take actions when those thresholds are met. For more information about CloudWatch, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
 

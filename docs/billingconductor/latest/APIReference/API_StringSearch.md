@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # StringSearch
-<a name="API_StringSearch"></a>
 
  A structure that defines string search parameters.
 

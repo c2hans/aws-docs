@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/allElementsTr
 ---
 
 # $allElementsTrue
-<a name="allElementsTrue"></a>
 
 New from version 4.0
 

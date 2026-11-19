@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/lambda-cfn-fli
 ---
 
 # Use CloudFormation with Managed Service for Apache Flink
-<a name="lambda-cfn-flink"></a>
 
 The following exercise shows how to start a Flink application created with CloudFormation using a Lambda function in the same stack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Revo
 ---
 
 # RevokeConnectionToken
-<a name="API_RevokeConnectionToken"></a>
 
 Revokes the specified connection token so that it can no longer connect to a stage. This operation disconnects any participant currently connected with the revoked token.
 

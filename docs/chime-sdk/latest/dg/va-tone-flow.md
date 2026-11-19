@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/va-tone-flow.html
 ---
 
 # Sample voice tone analysis workflow for the Amazon Chime SDK
-<a name="va-tone-flow"></a>
 
 **Important**
 Voice tone analysis involves making predictions on a speaker’s sentiment based on linguistic and tonal information. You must not use sentiment analysis in any manner prohibited by law, including in relation to making decisions about an individual that would produce legal or similarly significant impacts on such individuals (e.g., related to employment, housing, credit worthiness, or financial offers, etc.).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/vpc-default
 ---
 
 # vpc-default-security-group-closed
-<a name="vpc-default-security-group-closed"></a>
 
 Checks if the default security group of any Amazon Virtual Private Cloud (Amazon VPC) does not allow inbound or outbound traffic. The rule is NON\_COMPLIANT if the default security group has one or more inbound or outbound traffic rules.
 

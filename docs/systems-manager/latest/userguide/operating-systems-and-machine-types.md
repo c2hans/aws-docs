@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/operati
 ---
 
 # Supported operating systems and machine types
-<a name="operating-systems-and-machine-types"></a>
 
 Before working with Systems Manager, verify that your operating system (OS), OS version, and machine type are supported as managed nodes.
 

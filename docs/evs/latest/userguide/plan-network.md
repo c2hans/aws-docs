@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-network.html
 ---
 
 # Plan your network
-<a name="plan-network"></a>
 
 Amazon Elastic VMware Service deploys your environment into a VPC that you provide, and creates the VLAN subnets for VMware Cloud Foundation (VCF) in that VPC. You can’t change the VPC CIDR block, add VLAN subnets, or change the VLAN subnet CIDR blocks after you create the environment. Make the following decisions before you create the environment, in this order.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/image-verif
 ---
 
 # Locally verify an image after signing
-<a name="image-verification"></a>
 
 After you sign a container image using AWS Signer and Notation, you or an authorized member of your team can verify the origin and integrity of the image by cryptographic means.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/n
 ---
 
 # AWS Network Firewall no-source-preservation mode
-<a name="nfw-no-source-preservation"></a>
 
 **Note**
 Network Firewall no-source-preservation mode is in public preview and is available only in the US East (Ohio) Region (us-east-2). Features and behavior are subject to change.

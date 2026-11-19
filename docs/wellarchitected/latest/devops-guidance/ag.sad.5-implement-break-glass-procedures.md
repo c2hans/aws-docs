@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.SAD.5] Implement break-glass procedures
-<a name="ag.sad.5-implement-break-glass-procedures"></a>
 
  **Category:** FOUNDATIONAL
 

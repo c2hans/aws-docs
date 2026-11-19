@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/grammar-weights.html
 ---
 
 # Weights
-<a name="grammar-weights"></a>
 
 You can add the *weight* attribute to an element. Weight is a positive floating point value that represents the degree to which the phrase in the item is boosted during speech recognition. For more information, see [Weights](https://www.w3.org/TR/speech-grammar/) in the Speech recognition grammar specification version 1 W3C recommendation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteDBProxy
-<a name="API_DeleteDBProxy"></a>
 
 Deletes an existing DB proxy.
 

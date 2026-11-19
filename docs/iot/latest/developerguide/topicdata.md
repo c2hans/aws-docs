@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/topicdata.html
 ---
 
 # MQTT message payload
-<a name="topicdata"></a>
 
 The message payload that is sent in your MQTT messages isn't specified by AWS IoT, unless it's for one of the [Reserved topics](reserved-topics.md). To accommodate your application's needs, we recommend you define the message payload for your topics within the constraints of the [AWS IoT Core Service Quotas for Protocols](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#iot-protocol-limits).
 

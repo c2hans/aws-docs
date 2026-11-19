@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sourc
 ---
 
 # SourceTable
-<a name="API_SourceTable"></a>
 
 A source table that provides initial data from either a physical table or parent dataset.
 

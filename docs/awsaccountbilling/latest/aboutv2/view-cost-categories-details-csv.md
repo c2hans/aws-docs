@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/view-co
 ---
 
 # Downloading your cost category values
-<a name="view-cost-categories-details-csv"></a>
 
 You can download an offline copy of your month-to-date cost category spend from your cost category dashboard details page. The details page is presented after you create or edit your cost category.<a name="view-cost-categories-details-csv-steps"></a>
 

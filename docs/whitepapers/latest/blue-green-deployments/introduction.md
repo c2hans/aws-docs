@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Introduction
-<a name="introduction"></a>
 
  In a traditional approach to application deployment, you typically fix a failed deployment by redeploying an earlier, stable version of the application. Redeployment in traditional data centers is typically done on the same set of resources due to the cost and effort of provisioning additional resources. Although this approach works, it has many shortcomings. Rollback isn’t easy because it’s implemented by redeployment of an earlier version from scratch. This process takes time, making the application potentially unavailable for long periods. Even in situations where the application is only impaired, a rollback is required, which overwrites the faulty version. As a result, you have no opportunity to debug the faulty application in place.
 

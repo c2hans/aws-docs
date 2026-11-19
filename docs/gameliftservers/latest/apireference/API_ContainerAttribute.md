@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ContainerAttribute
-<a name="API_ContainerAttribute"></a>
 
 A unique identifier for a container in a container fleet compute.
 

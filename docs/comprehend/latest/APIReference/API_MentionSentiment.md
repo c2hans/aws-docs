@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Menti
 ---
 
 # MentionSentiment
-<a name="API_MentionSentiment"></a>
 
 Contains the sentiment and sentiment score for one mention of an entity.
 

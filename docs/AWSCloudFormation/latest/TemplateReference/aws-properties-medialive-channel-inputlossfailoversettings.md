@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Channel InputLossFailoverSettings
-<a name="aws-properties-medialive-channel-inputlossfailoversettings"></a>
 
 MediaLive will perform a failover if content is not detected in this input for the specified period.
 

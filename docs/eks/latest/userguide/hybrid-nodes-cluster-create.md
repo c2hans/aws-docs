@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cluste
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create an Amazon EKS cluster with hybrid nodes
-<a name="hybrid-nodes-cluster-create"></a>
 
 This topic provides an overview of the available options and describes what to consider when you create a hybrid nodes-enabled Amazon EKS cluster. EKS Hybrid Nodes have the same [Kubernetes version support](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html) as Amazon EKS clusters with cloud nodes, including standard and extended support.
 

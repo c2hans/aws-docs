@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetails
-<a name="API_AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetails"></a>
 
 A block device for the instance.
 

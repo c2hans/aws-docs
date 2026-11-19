@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ConnectPeerError
-<a name="API_ConnectPeerError"></a>
 
 Describes an error associated with a Connect peer request
 

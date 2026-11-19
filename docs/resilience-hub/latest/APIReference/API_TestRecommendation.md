@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_T
 ---
 
 # TestRecommendation
-<a name="API_TestRecommendation"></a>
 
 Defines a test recommendation.
 

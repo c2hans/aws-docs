@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/node-de
 ---
 
 # Viewing individual node details and taking action on a node
-<a name="node-detail-actions"></a>
 
 From a list in the **Explore nodes** page in Systems Manager, you can select an individual node to view comprehensive details about the machine or perform a variety of actions on the node. The **General** page in the detail page presents comprehensive information about the node.
 

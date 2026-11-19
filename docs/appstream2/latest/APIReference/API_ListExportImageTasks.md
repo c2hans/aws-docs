@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_ListE
 ---
 
 # ListExportImageTasks
-<a name="API_ListExportImageTasks"></a>
 
 Lists export image tasks, with optional filtering and pagination. Use this operation to monitor the status of multiple export operations.
 

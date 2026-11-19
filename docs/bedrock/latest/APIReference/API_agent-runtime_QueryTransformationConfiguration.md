@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # QueryTransformationConfiguration
-<a name="API_agent-runtime_QueryTransformationConfiguration"></a>
 
 To split up the prompt and retrieve multiple sources, set the transformation type to `QUERY_DECOMPOSITION`.
 

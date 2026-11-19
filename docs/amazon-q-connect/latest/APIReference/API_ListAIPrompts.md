@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ListAIPrompts
-<a name="API_amazon-q-connect_ListAIPrompts"></a>
 
 Lists the AI Prompts available on the Amazon Q in Connect assistant.
 

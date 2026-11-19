@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRe
 ---
 
 # RouteRentalTravelOnlySummary
-<a name="API_RouteRentalTravelOnlySummary"></a>
 
 Summary including duration and distance for the travel portion of the leg only.
 

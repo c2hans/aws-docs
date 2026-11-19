@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/waiters.html
 ---
 
 # Using waiters in the AWS SDK for Rust
-<a name="waiters"></a>
 
  Waiters are a client-side abstraction used to poll a resource until a desired state is reached, or until it is determined that the resource will not enter the desired state. This is a common task when working with services that are eventually consistent, like Amazon Simple Storage Service, or services that asynchronously create resources, like Amazon Elastic Compute Cloud. Writing logic to continuously poll the status of a resource can be cumbersome and error-prone. The goal of waiters is to move this responsibility out of customer code and into the AWS SDK for Rust, which has in-depth knowledge of the timing aspects for the AWS operation.
 

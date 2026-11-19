@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAcces
 ---
 
 # GetAccessGrantsInstanceResourcePolicy
-<a name="API_control_GetAccessGrantsInstanceResourcePolicy"></a>
 
 Returns the resource policy of the S3 Access Grants instance.
 

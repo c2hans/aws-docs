@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudwatc
 ---
 
 # Creating CloudWatch alarms for CloudTrail events: examples
-<a name="cloudwatch-alarms-for-cloudtrail"></a>
 
 This topic describes how to configure alarms for CloudTrail events, and includes examples.
 

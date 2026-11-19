@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/auth-conc
 ---
 
 # API key concepts
-<a name="auth-concept-apikeys"></a>
 
 An API key is a credential that associates a plain text key value with specific Amazon Location Service resources and permitted actions. When your application includes an API key in a request, Amazon Location Service authorizes the request based on the key's configuration without requiring any other authentication.
 

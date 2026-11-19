@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/support-nvidia
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Support NVIDIA-Imex with p6e-gb200 instance
-<a name="support-nvidia-imex-p6e-gb200-instance"></a>
 
 This tutorial shows you how to get started with AWS ParallelCluster on P6e-GB200, to leverage the highest GPU performance for AI training and inference. [ p6e-gb200.36xlarge instances are only available via P6e-GB200 UltraServers](https://aws.amazon.com/ec2/instance-types/p6/) where the `u-p6e-gb200x72` is Ultraserver Size and `p6e-gb200.36xlarge` is the [InstanceType](Scheduling-v3.md#yaml-Scheduling-SlurmQueues-ComputeResources-InstanceType) which forms the ultraserver. On purchasing an Ultraserver `u-p6e-gb200x72` it will be available through a [EC2 Capacity Blocks for ML](https://aws.amazon.com/ec2/capacityblocks/) which will have 18 `p6e-gb200.36xlarge` instances. To learn more, see [P6e-GB200](https://aws.amazon.com/ec2/instance-types/p6/).
 

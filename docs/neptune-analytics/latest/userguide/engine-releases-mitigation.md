@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/engin
 ---
 
 # Mitigation for query plan cache issue
-<a name="engine-releases-mitigation"></a>
 
 We have detected an issue in query plan cache when `skip` or `limit` is used in an inner `WITH` clause and are parameterized. For example:
 

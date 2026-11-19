@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-Grafana-API
 ---
 
 # Folder Permissions API
-<a name="v10-Grafana-API-FolderPermissions"></a>
 
 Use the Folder API to update or retrieve the permissions for a folder.
 

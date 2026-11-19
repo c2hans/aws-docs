@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceCatalogSyncServiceRolePolicy
-<a name="AWSServiceCatalogSyncServiceRolePolicy"></a>
 
 **Description**: A Service Linked Role for AWS ServiceCatalog to sync Provisioning Artifacts from source repositories
 

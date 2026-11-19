@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # Cross-account memory access
-<a name="memory-cross-account-access"></a>
 
 Amazon Bedrock AgentCore Memory supports cross-account access, enabling you to build multi-account architectures where memory resources and consuming agents span multiple AWS accounts. Cross-account access covers two scenarios:
 +  **Data plane operations from another account** — Principals in Account B can call memory data plane APIs (create events, write records, retrieve records) against a memory resource in Account A. This is configured by attaching a resource-based policy to the memory resource.

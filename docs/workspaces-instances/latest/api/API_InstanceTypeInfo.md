@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Inst
 ---
 
 # InstanceTypeInfo
-<a name="API_InstanceTypeInfo"></a>
 
 Provides details about a specific WorkSpace Instance type.
 

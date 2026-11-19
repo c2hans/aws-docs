@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateTopic
-<a name="API_CreateTopic"></a>
 
 Creates a new Q topic.
 

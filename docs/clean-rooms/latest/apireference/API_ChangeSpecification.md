@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Chan
 ---
 
 # ChangeSpecification
-<a name="API_ChangeSpecification"></a>
 
 A union that contains the specification details for different types of changes.
 

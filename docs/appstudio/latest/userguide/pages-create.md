@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/pages-create.
 ---
 
 # Creating a page
-<a name="pages-create"></a>
 
 Use the following procedure to create a page in an application in App Studio. For information about duplicating an existing page, see [Duplicating a page](pages-duplicate.md).
 

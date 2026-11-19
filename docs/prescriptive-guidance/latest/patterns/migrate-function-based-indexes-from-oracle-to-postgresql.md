@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate function-based indexes from Oracle to PostgreSQL
-<a name="migrate-function-based-indexes-from-oracle-to-postgresql"></a>
 
 *Veeranjaneyulu Grandhi and Navakanth Talluri, Amazon Web Services*
 

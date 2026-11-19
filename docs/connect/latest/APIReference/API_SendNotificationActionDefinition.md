@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SendNoti
 ---
 
 # SendNotificationActionDefinition
-<a name="API_SendNotificationActionDefinition"></a>
 
 Information about the send notification action.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Sandboxing on Amazon EKS with isolated and confidential pods
-<a name="sandboxing"></a>
 
 In a standard Amazon EKS cluster, pods on the same node share a Linux kernel. A container escape or kernel vulnerability can expose one workload to another. Isolated and confidential pods address this by running each pod inside its own Nitro Sandbox, a dedicated hardware-isolated environment backed by the AWS Nitro System. Each sandbox runs as a first-level guest with direct hardware-assisted virtualization, not through emulation or nested virtualization. The Nitro hypervisor enforces memory and CPU isolation between sandboxes, providing a hardware trust boundary around every pod.
 

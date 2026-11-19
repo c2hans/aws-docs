@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CreateAPIKey
 ---
 
 # CreateAPIKey
-<a name="API_CreateAPIKey"></a>
 
 Creates an API key that contains a set of token domains.
 

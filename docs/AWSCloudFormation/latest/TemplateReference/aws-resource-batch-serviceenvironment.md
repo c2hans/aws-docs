@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::ServiceEnvironment
-<a name="aws-resource-batch-serviceenvironment"></a>
 
 Creates a service environment for running service jobs. Service environments define capacity limits for specific service types such as SageMaker Training jobs.
 

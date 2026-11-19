@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/error-codes.
 ---
 
 # Error codes for AWS CodeDeploy
-<a name="error-codes"></a>
 
 This topic provides reference information about CodeDeploy errors.
 

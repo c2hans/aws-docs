@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Brand
 ---
 
 # BrandSummary
-<a name="API_BrandSummary"></a>
 
 A summary of the brand.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StopCrawlerSchedu
 ---
 
 # StopCrawlerSchedule
-<a name="API_StopCrawlerSchedule"></a>
 
 Sets the schedule state of the specified crawler to `NOT_SCHEDULED`, but does not stop the crawler if it is already running.
 

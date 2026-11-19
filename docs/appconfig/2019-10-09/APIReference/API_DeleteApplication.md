@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes an application.
 

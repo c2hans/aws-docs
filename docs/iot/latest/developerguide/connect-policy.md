@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/connect-policy
 ---
 
 # Connect policy examples
-<a name="connect-policy"></a>
 
 The following policy denies permission to client IDs `client1` and `client2` to connect to AWS IoT Core, while allowing devices to connect using a client ID. The client ID matches the name of a thing that's registered in the AWS IoT Core registry and attached to the principal that's used for connection:
 

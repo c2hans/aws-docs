@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Best practices for cutting over network traffic to AWS during a migration
-<a name="introduction"></a>
 
 *Damien Renner, Ernest Asare, Martin Fluck, Khurram Mahmood, and Mark Willis, Amazon Web Services*
 

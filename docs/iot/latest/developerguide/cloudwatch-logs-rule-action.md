@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/cloudwatch-log
 ---
 
 # CloudWatch Logs
-<a name="cloudwatch-logs-rule-action"></a>
 
 The CloudWatch Logs (`cloudwatchLogs`) action sends data to Amazon CloudWatch Logs. You can use `batchMode` to upload and timestamp multiple device log records in one message. You can also specify the log group where the action sends data.
 

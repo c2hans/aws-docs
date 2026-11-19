@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # IntegerCriteriaCondition
-<a name="API_automation_IntegerCriteriaCondition"></a>
 
 Defines a condition for filtering based on integer values with comparison operators.
 

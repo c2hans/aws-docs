@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RecommendedActionSummary
-<a name="API_automation_RecommendedActionSummary"></a>
 
 Summary information about recommended actions, grouped by specific criteria with totals and counts.
 

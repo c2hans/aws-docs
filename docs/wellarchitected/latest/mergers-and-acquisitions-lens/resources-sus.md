@@ -3,5 +3,4 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # Resources
-<a name="resources-sus"></a>
 +  [AWS enables sustainability solutions](https://aws.amazon.com/sustainability/)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Appli
 ---
 
 # ApplicableTo
-<a name="API_ApplicableTo"></a>
 
 The scoping configuration that determines which principals an approval policy applies to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/monitoring_scaling-
 ---
 
 # Scaling logs in AWS PCS
-<a name="monitoring_scaling-logs"></a>
 
 Scaling logs give you a record of how AWS Parallel Computing Service scales the compute node groups in your cluster. Each log entry records one state transition for one compute node: for example, an instance launch, a node registration, a scale-down, or a launch failure with its reason. You can use scaling logs to answer questions such as why a node group did not reach its target size, which launches failed for capacity reasons, and when a specific node started or stopped.
 

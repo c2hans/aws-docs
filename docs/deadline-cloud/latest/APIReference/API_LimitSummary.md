@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # LimitSummary
-<a name="API_LimitSummary"></a>
 
 Provides information about a specific limit.
 

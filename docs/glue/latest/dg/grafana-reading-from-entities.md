@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/grafana-reading-from-enti
 ---
 
 # Reading from Grafana entities
-<a name="grafana-reading-from-entities"></a>
 
 **Prerequisites**
 

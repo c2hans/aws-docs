@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteDBClusterEndpoint
-<a name="API_DeleteDBClusterEndpoint"></a>
 
 Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
 

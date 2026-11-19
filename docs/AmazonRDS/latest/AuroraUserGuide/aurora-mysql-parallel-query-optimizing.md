@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Optimizing parallel query in Aurora MySQL
-<a name="aurora-mysql-parallel-query-optimizing"></a>
 
 To optimize your DB cluster for parallel query, consider which DB clusters would benefit from parallel query and whether to upgrade for parallel query. Then, tune your workload and create schema objects for parallel query.
 

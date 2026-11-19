@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/understand-ins
 ---
 
 # Understand the default values for an instance refresh
-<a name="understand-instance-refresh-default-values"></a>
 
 Before you start an instance refresh, you can customize various preferences that affect the instance refresh. Some preference defaults are different depending on whether you use the console or the command line (AWS CLI or AWS SDK).
 

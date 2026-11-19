@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/dm-postgresql-step-9.html
 ---
 
 # Step 9: Running and Monitoring a Data Migration
-<a name="dm-postgresql-step-9"></a>
 
 After you create a data migration, you can run it and monitor its status.
 

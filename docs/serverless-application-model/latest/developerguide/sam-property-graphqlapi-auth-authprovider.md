@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AuthProvider
-<a name="sam-property-graphqlapi-auth-authprovider"></a>
 
 Optional authorization configuration for your additional GraphQL API authorization types.
 

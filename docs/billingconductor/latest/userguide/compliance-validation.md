@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/compli
 ---
 
 # Compliance validation for AWS Billing Conductor
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of AWS services as part of multiple AWS compliance programs. AWS Billing Conductor is not in scope of any AWS compliance programs.
 

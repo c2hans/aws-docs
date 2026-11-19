@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/g
 ---
 
 # Getting started with the AWS Toolkit for JetBrains
-<a name="getting-started"></a>
 
 The AWS Toolkit for JetBrains makes your AWS services and resources available directly from your JetBrains integrated development environment (IDE).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/okta-configuring.html
 ---
 
 # Configuring Okta
-<a name="okta-configuring"></a>
 
 Before you can use AWS Glue to transfer data to or from Okta, you must meet these requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDataExchangeReadOnly
-<a name="AWSDataExchangeReadOnly"></a>
 
 **Description**: Grants read-only access to AWS Data Exchange and AWS Marketplace actions using the AWS Management Console and SDK.
 

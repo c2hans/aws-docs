@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DataBindingValue
-<a name="API_DataBindingValue"></a>
 
 Represents a value used in a data binding. It can be an asset property or an asset model property.
 

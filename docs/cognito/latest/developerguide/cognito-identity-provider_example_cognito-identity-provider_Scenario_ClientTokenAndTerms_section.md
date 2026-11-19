@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Get M2M client tokens and discover Terms with Amazon Cognito using an AWS SDK
-<a name="cognito-identity-provider_example_cognito-identity-provider_Scenario_ClientTokenAndTerms_section"></a>
 
 The following code example shows how to use Amazon Cognito machine-to-machine (M2M) authorization and Terms discovery.
 + Deploy a CloudFormation stack with Cognito resources (user pool, resource server, app client, Terms documents).

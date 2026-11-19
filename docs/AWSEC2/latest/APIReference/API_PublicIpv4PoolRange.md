@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PublicIpv
 ---
 
 # PublicIpv4PoolRange
-<a name="API_PublicIpv4PoolRange"></a>
 
 Describes an address range of an IPv4 address pool.
 

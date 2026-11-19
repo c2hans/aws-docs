@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # DukptAttributes
-<a name="API_DukptAttributes"></a>
 
 Parameters that are used for Derived Unique Key Per Transaction (DUKPT) derivation algorithm.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to geocode for the time zone of a city
-<a name="how-to-geocode-timezone"></a>
 
 You can use the Geocode API to provide time zone information such as UTC offset and time zone name.
 

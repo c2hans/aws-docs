@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ssh-tunne
 ---
 
 # Option 1: Set up an SSH tunnel to the Amazon EMR primary node using local port forwarding
-<a name="emr-ssh-tunnel-local"></a>
 
 To connect to the local web server on the primary node, you create an SSH tunnel between your computer and the primary node. This is also known as *port forwarding*. If you do not wish to use a SOCKS proxy, you can set up an SSH tunnel to the primary node using local port forwarding. With local port forwarding, you specify unused local ports that are used to forward traffic to specific remote ports on the primary node's local web server.
 

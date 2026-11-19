@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/insta
 ---
 
 # Step B: Install (kickstart) the operating system software
-<a name="install-lv-ig-install-ks"></a>
 
 Install the operating system on the node. This action is known as *kickstarting* the system.
 

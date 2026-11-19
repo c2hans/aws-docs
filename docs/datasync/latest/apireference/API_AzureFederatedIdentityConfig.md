@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_AzureFe
 ---
 
 # AzureFederatedIdentityConfig
-<a name="API_AzureFederatedIdentityConfig"></a>
 
 Specifies federated identity parameters that allow AWS DataSync to obtain an OpenID Connect token for access to customer Azure Blob Storage. The token allows for temporary, short-term access to the storage. DataSync automatically refreshes the token to assure uninterrupted access to the storage.
 

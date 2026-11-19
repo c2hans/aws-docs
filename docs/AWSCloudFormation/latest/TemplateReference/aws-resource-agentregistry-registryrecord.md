@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::RegistryRecord
-<a name="aws-resource-agentregistry-registryrecord"></a>
 
 The `AWS::AgentRegistry::RegistryRecord` resource specifies a registry record within a registry. A registry record describes a discoverable resource, such as a Model Context Protocol (MCP) server, an agent, an agent skill, or a custom resource.
 

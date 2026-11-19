@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-catalog-cloudwatch-m
 ---
 
 # Monitoring Data Catalog usage metrics in Amazon CloudWatch
-<a name="data-catalog-cloudwatch-metrics"></a>
 
 AWS Glue Data Catalog usage metrics are now available with Amazon CloudWatch, simplifying the monitoring and understanding of resource utilization in your Data Catalog. You now have immediate visibility into your Glue Catalog API usage of catalogs, databases, tables, partitions, and connections, making it easier to maintain oversight of your Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Cr
 ---
 
 # CreateWorkspace
-<a name="API_CreateWorkspace"></a>
 
 Creates a workplace.
 

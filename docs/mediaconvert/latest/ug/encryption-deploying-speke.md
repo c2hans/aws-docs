@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/encryption-deploy
 ---
 
 # Deploying SPEKE
-<a name="encryption-deploying-speke"></a>
 
 Your digital rights management (DRM) system provider can help you get set up to use DRM encryption in MediaConvert. Generally, the provider gives you a SPEKE gateway to deploy in your AWS account in the same AWS Region where MediaConvert is running.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_RemoveN
 ---
 
 # RemoveNotificationChannel
-<a name="API_RemoveNotificationChannel"></a>
 
 Remove one anomaly notifications channel for a profiling group.
 

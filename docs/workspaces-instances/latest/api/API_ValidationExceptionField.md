@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Vali
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Represents a validation error field in an API request.
 

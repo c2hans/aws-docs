@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/sap-ibm-pacemaker-d
 ---
 
 # Document Revisions
-<a name="sap-ibm-pacemaker-document-revisions"></a>
 
 | Date | Change |
 | --- | --- |

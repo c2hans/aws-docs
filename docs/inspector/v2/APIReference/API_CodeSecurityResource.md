@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeSecuri
 ---
 
 # CodeSecurityResource
-<a name="API_CodeSecurityResource"></a>
 
 Identifies a specific resource in a code repository that will be scanned.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AggregationT
 ---
 
 # AggregationType
-<a name="API_AggregationType"></a>
 
 The type of aggregation queries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/search.
 ---
 
 # Search
-<a name="search"></a>
 
 ## URI
 <a name="search-url"></a>

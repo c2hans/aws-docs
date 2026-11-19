@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ZonalStatisticsConfigInput
-<a name="API_geospatial_ZonalStatisticsConfigInput"></a>
 
 The structure representing input configuration of ZonalStatistics operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # SageMaker HyperPod AMI releases for Amazon EKS
-<a name="sagemaker-hyperpod-release-ami-eks"></a>
 
 The following release notes track the latest updates for Amazon SageMaker HyperPod AMI releases for Amazon EKS orchestration. Each release note includes a summarized list of packages pre-installed or pre-configured in the SageMaker HyperPod DLAMIs for Amazon EKS support. Each DLAMI is built on AL2023 and supports a specific Kubernetes version. For HyperPod DLAMI releases for Slurm orchestration, see [SageMaker HyperPod AMI releases for Slurm](sagemaker-hyperpod-release-ami-slurm.md). For information about Amazon SageMaker HyperPod feature releases, see [Amazon SageMaker HyperPod release notes](sagemaker-hyperpod-release-notes.md).
 

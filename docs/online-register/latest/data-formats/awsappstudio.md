@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS App Studio
-<a name="awsappstudio"></a>
 
 AWS App Studio provides the following APIs for data retrieval.
 

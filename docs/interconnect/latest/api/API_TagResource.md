@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_TagResource.
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Add new tags to the specified resource.
 

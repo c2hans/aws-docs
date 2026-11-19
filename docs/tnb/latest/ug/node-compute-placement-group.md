@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-compute-placement-gro
 ---
 
 # AWS.Compute.PlacementGroup
-<a name="node-compute-placement-group"></a>
 
 A PlacementGroup node supports different strategies to place Amazon EC2 instances.
 

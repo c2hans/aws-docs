@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/octopus-reading-from-enti
 ---
 
 # Reading from Octopus Deploy entities
-<a name="octopus-reading-from-entities"></a>
 
 **Prerequisites**
 

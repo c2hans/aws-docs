@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAp
 ---
 
 # ListApps
-<a name="API_ListApps"></a>
 
 Lists apps.
 

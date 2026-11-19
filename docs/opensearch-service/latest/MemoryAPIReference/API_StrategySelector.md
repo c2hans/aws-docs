@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # StrategySelector
-<a name="API_StrategySelector"></a>
 
 A memory type and, optionally, specific strategy names of that type. A space can hold several strategies of the same type, so the type and its names are given together.
 

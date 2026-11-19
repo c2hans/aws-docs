@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedHttpDescriptorFields
-<a name="API_UpdatedHttpDescriptorFields"></a>
 
 The set of HTTP descriptor fields that can be individually updated.
 

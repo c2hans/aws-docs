@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobEntityIdentifiersUnion
-<a name="API_JobEntityIdentifiersUnion"></a>
 
 The details of a job entity identifier.
 

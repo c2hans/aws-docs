@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/bilingual-voices.html
 ---
 
 # Bilingual voices
-<a name="bilingual-voices"></a>
 
 Amazon Polly has two ways of producing bilingual voices:
 + [Accented bilingual voices](#accented-bilingual)

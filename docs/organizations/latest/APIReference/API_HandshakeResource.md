@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ha
 ---
 
 # HandshakeResource
-<a name="API_HandshakeResource"></a>
 
 Contains additional details for a handshake.
 
@@ -12,7 +11,7 @@ Contains additional details for a handshake.
 
  ** Resources **   <a name="organizations-Type-HandshakeResource-Resources"></a>
 An array of `HandshakeResource` objects. When needed, contains additional details for a handshake. For example, the email address for the sender.
-Type: Array of [HandshakeResource](#API_HandshakeResource) objects
+Type: Array of [HandshakeResource](API_HandshakeResource.md) objects
 Required: No
 
  ** Type **   <a name="organizations-Type-HandshakeResource-Type"></a>

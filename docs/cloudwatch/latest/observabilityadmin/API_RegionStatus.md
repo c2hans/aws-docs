@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # RegionStatus
-<a name="API_RegionStatus"></a>
 
  Represents the status of a multi-region operation in a specific AWS Region. This structure is used to report per-region progress for both telemetry evaluation and telemetry rule replication.
 

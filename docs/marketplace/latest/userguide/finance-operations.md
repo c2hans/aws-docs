@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/finance-ope
 ---
 
 # Dashboards for finance operations
-<a name="finance-operations"></a>
 
 AWS Marketplace provides multiple dashboards to help you track your financial data.
 

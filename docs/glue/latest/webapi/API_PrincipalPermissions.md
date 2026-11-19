@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PrincipalPermissi
 ---
 
 # PrincipalPermissions
-<a name="API_PrincipalPermissions"></a>
 
 Permissions granted to a principal.
 

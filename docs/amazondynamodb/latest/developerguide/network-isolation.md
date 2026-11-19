@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/net
 ---
 
 # Infrastructure security in Amazon DynamoDB
-<a name="network-isolation"></a>
 
 As a managed service, Amazon DynamoDB is protected by the AWS global network security procedures that are described in [Infrastructure protection](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/infrastructure-protection.html) located in the AWS Well-Architected Framework.
 

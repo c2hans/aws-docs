@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/leide
 ---
 
 # Leiden mutate algorithm
-<a name="leiden-mutate"></a>
 
  The [Leiden algorithm](leiden.md) is an improvement over the [Louvain algorithm](louvain.md) that guarantees well-connected communities.
 

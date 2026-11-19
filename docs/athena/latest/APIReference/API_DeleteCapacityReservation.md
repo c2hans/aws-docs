@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteCap
 ---
 
 # DeleteCapacityReservation
-<a name="API_DeleteCapacityReservation"></a>
 
 Deletes a cancelled capacity reservation. A reservation must be cancelled before it can be deleted. A deleted reservation is immediately removed from your account and can no longer be referenced, including by its ARN. A deleted reservation cannot be called by `GetCapacityReservation`, and deleted reservations do not appear in the output of `ListCapacityReservations`.
 

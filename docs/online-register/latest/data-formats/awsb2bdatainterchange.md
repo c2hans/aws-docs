@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 ---
 
 # Data retrieval APIs for AWS B2B Data Interchange
-<a name="awsb2bdatainterchange"></a>
 
 AWS B2B Data Interchange provides the following APIs for data retrieval.
 

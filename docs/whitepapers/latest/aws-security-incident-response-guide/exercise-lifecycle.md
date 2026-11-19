@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Exercise lifecycle
-<a name="exercise-lifecycle"></a>
 
  Regardless of the type of simulation you choose, simulations generally follow these steps:
 

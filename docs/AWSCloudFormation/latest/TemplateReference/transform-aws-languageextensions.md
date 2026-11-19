@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `AWS::LanguageExtensions` transform
-<a name="transform-aws-languageextensions"></a>
 
 This topic describes how to use the `AWS::LanguageExtensions` transform to enable additional functions and capabilities that are not available by default.
 

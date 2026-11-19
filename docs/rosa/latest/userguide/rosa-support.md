@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/rosa-support.html
 ---
 
 # Getting ROSA support
-<a name="rosa-support"></a>
 
 With ROSA, you can receive support from Support and the Red Hat support teams. Support cases can be opened with either organization, and are routed to the correct team to resolve your issue.
 

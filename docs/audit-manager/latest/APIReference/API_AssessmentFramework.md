@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentFramework
-<a name="API_AssessmentFramework"></a>
 
  The file used to structure and automate AWS Audit Manager assessments for a given compliance standard.
 

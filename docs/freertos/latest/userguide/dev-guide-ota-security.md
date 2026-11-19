@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dev-guide-ota-
 ---
 
 # OTA security
-<a name="dev-guide-ota-security"></a>
 
 The following are three aspects of over-the-air (OTA) security:
 

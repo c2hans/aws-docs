@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DataReplicat
 ---
 
 # DataReplicationInfo
-<a name="API_DataReplicationInfo"></a>
 
 Request data replication info.
 

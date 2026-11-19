@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/user-po
 ---
 
 # User Pool End User Experience for Amazon WorkSpaces Applications
-<a name="user-pool-end-user"></a>
 
 The following steps summarize the initial connection experience for users in the user pool.
 

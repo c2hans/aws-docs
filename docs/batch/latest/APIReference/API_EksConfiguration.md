@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksConfigu
 ---
 
 # EksConfiguration
-<a name="API_EksConfiguration"></a>
 
 Configuration for the Amazon EKS cluster that supports the AWS Batch compute environment. The cluster must exist before the compute environment can be created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pstn-model.html
 ---
 
 # Understanding the Amazon Chime SDK PSTN audio service programming model
-<a name="pstn-model"></a>
 
 **Note**
 Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](https://docs.aws.amazon.com/chime-sdk/latest/ag/sip-applications-maintenance-mode.html).

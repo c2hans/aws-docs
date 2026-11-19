@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/mssql.html
 ---
 
 # Host setup for MSSQL
-<a name="mssql"></a>
 
 Use the following procedure to create volumes and LUNs for MSSQL server.
 

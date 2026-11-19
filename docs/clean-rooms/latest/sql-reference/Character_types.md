@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Charact
 ---
 
 # Character types
-<a name="Character_types"></a>
 
 Character data types include CHAR (character) and VARCHAR (character varying).
 

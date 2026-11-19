@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/member-usage-
 ---
 
 # Monitoring usage for a Detective member account
-<a name="member-usage-tracking"></a>
 
 Amazon Detective bills each account for the data used in each behavior graph that the account belongs to. Detective charges a tiered flat rate per GB for all data regardless of the source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/resource-tags-colum
 ---
 
 # Resource tags details
-<a name="resource-tags-columns"></a>
 
 You can use the **resource** columns in AWS Cost and Usage Reports to find information about the specific resources covered by a line item. These columns include user-defined cost allocation tags. Examples include the following:
 

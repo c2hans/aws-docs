@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/logging.h
 ---
 
 # Configuring and using logging in the AWS SDK for C\+\+
-<a name="logging"></a>
 
 The AWS SDK for C\+\+ includes configurable logging that generates a record of actions performed by the SDK during execution. To enable logging, set the `LogLevel` of `SDKOptions` to the appropriate verbosity for your application.
 

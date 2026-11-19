@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_Role.html
 ---
 
 # Role
-<a name="API_Role"></a>
 
 Contains information about an IAM role. This structure is returned as a response element in several API operations that interact with roles.
 

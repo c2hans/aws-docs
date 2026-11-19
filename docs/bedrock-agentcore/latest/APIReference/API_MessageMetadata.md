@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MessageMetadata
-<a name="API_MessageMetadata"></a>
 
 Metadata information associated with this message.
 

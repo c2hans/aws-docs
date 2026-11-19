@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_PutRes
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
  Stores a resource policy for the ARN of a `Project` or `ReportGroup` object.
 

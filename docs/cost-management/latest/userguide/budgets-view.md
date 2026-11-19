@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/budgets
 ---
 
 # Viewing your budgets
-<a name="budgets-view"></a>
 
 You can view the state of your budgets at a glance on the **Budgets Overview** page. Your budgets are listed in a filterable table along with the following data:
 + Your current costs and usage incurred for a budget during the budget period

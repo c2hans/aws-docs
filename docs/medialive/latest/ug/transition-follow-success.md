@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/transition-follow-su
 ---
 
 # Handling the transition when the next input is follow
-<a name="transition-follow-success"></a>
 
 When planning the schedule, you should ensure that a switch from one input to a "follow input" can succeed.
 

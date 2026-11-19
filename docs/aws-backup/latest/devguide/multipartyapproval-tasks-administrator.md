@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/multipartyapp
 ---
 
 # Administrator tasks
-<a name="multipartyapproval-tasks-administrator"></a>
 
 Several tasks involving AWS Backup and Multi-party overview required a user with admin permissions and access to the management account.
 

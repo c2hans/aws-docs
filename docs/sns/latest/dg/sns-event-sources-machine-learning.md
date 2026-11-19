@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-machine-
 ---
 
 # Machine learning services
-<a name="sns-event-sources-machine-learning"></a>
 
 The following table describes how Amazon SNS integrates with AWS machine learning services, such as Amazon CodeGuru, Amazon DevOps Guru, Amazon Lookout for Metrics, Amazon Rekognition, and Amazon SageMaker AI, to provide notifications for anomalies, operational insights, and data labeling activities.
 

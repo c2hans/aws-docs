@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/minDistance.h
 ---
 
 # $minDistance
-<a name="minDistance"></a>
 
 `$minDistance` is a find operator used in conjunction with `$nearSphere` or `$geoNear` to filter documents that are at least at the specified minimum distance from the center point. This operator is supported in Amazon DocumentDB and functions similarly to its counterpart in MongoDB.
 

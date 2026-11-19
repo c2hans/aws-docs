@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/create-volume-
 ---
 
 # Creating a Volume Gateway
-<a name="create-volume-gateway"></a>
 
 In this section, you can find instructions on how to download, deploy, and activate a Volume Gateway.
 

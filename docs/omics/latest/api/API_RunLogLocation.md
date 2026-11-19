@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_RunLogLocation.html
 ---
 
 # RunLogLocation
-<a name="API_RunLogLocation"></a>
 
 The URI for the run log.
 

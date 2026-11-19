@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AmplifyUIBuilder::Component ComponentChild
-<a name="aws-properties-amplifyuibuilder-component-componentchild"></a>
 
 The `ComponentChild` property specifies a nested UI configuration within a parent `Component`.
 
@@ -49,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `Children`  <a name="cfn-amplifyuibuilder-component-componentchild-children"></a>
 The list of `ComponentChild` instances for this component.
 *Required*: No
-*Type*: Array of [ComponentChild](#aws-properties-amplifyuibuilder-component-componentchild)
+*Type*: Array of [ComponentChild](aws-properties-amplifyuibuilder-component-componentchild.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ComponentType`  <a name="cfn-amplifyuibuilder-component-componentchild-componenttype"></a>

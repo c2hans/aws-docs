@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/parameters-defaul
 ---
 
 # Creating parameter defaults in AWS Quick
-<a name="parameters-default-values"></a>
 
 Use this section to learn more about the types of parameter defaults that are available, and how to set up each of them.
 

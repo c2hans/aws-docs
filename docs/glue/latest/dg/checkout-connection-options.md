@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/checkout-connection-optio
 ---
 
 # Checkout.com connection options
-<a name="checkout-connection-options"></a>
 
 The following are connection options for Checkout.com:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Checkout.com object to read.

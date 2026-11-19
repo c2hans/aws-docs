@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/amazon-linux-source-package
 ---
 
 # AL2 Source Packages
-<a name="amazon-linux-source-packages"></a>
 
 You can view the source of packages you have installed on your instance for reference purposes by using tools provided in Amazon Linux. Source packages are available for all of the packages included in Amazon Linux and the online package repository. Determine the package name for the source package you want to install and use the **yumdownloader --source** command to view source within your running instance. For example:
 

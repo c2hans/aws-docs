@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-comman
 ---
 
 # Command Reference
-<a name="custom-command-reference"></a>
 
 This section provides a comprehensive reference of all AWS Transform custom CLI commands.
 

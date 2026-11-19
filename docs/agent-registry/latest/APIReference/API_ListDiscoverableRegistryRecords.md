@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_L
 ---
 
 # ListDiscoverableRegistryRecords
-<a name="API_ListDiscoverableRegistryRecords"></a>
 
  Lists the discoverable registry records in a registry. You can optionally filter and paginate the results.
 

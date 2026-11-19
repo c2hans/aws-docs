@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-wit
 ---
 
 # Primary keys in Aurora DSQL
-<a name="working-with-primary-keys"></a>
 
 In Aurora DSQL, a primary key is a feature that physically organizes table data. It's similar to the `CLUSTER` operation in PostgreSQL or a clustered index in other databases. When you define a primary key, Aurora DSQL creates an index that includes all columns in the table. The primary key structure in Aurora DSQL ensures efficient data access and management.
 

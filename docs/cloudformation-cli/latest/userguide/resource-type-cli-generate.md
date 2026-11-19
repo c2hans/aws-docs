@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # generate
-<a name="resource-type-cli-generate"></a>
 
 ## Description
 <a name="resource-type-cli-generate-description"></a>

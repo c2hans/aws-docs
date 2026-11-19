@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-untagresource.h
 ---
 
 # Removing tags from a resource
-<a name="sdk-untagresource"></a>
 
 The following example shows how to use the [UntagResource](https://docs.aws.amazon.com/acm/latest/APIReference/API_UntagResource.html) function. This API supports all ACM resource types except the `certificate` resource type. For certificate resources, use [RemoveTagsFromCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_RemoveTagsFromCertificate.html).
 

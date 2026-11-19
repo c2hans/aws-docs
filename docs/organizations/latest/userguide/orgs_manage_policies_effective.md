@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Viewing effective declarative policies
-<a name="orgs_manage_policies_effective"></a>
 
 Determine the effective declarative policy for an account in your organization.
 

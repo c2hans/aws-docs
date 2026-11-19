@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Enterprise-grade security and governance for generative AI applications
-<a name="prod-monitoring-security"></a>
 
 Enterprise deployment of generative AI applications requires robust security controls and governance frameworks that address both traditional cybersecurity concerns and AI-specific vulnerabilities. This section outlines comprehensive approaches for implementing security measures, risk management protocols, and compliance controls specifically designed for generative AI systems. It examines the unique threat landscape these applications face, including prompt injection attacks and model manipulation, along with corresponding mitigation strategies. It also covers regulatory compliance requirements across multiple jurisdictions and presents operational frameworks for implementing responsible AI practices. These components form an essential foundation for maintaining secure, compliant, and ethically sound generative AI applications in production environments.
 

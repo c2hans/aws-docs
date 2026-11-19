@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateA
 ---
 
 # UpdateAutomationRulesRequestItem
-<a name="API_UpdateAutomationRulesRequestItem"></a>
 
  Specifies the parameters to update in an existing automation rule.
 

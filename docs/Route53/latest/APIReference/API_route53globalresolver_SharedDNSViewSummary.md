@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # SharedDNSViewSummary
-<a name="API_route53globalresolver_SharedDNSViewSummary"></a>
 
 Summary information about a DNS view that has been shared with your AWS account through AWS RAM.
 

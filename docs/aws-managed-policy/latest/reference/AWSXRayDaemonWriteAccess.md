@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSX
 ---
 
 # AWSXRayDaemonWriteAccess
-<a name="AWSXRayDaemonWriteAccess"></a>
 
 **Description**: Allow the AWS X-Ray Daemon to relay raw trace segments data to the service's API and retrieve sampling data (rules, targets, etc.) to be used by the X-Ray SDK.
 

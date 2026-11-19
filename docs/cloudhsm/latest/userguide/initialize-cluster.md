@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/initialize-clu
 ---
 
 # Initialize the cluster in AWS CloudHSM
-<a name="initialize-cluster"></a>
 
 After you create your cluster and add your hardware security module (HSM) in AWS CloudHSM, you can initialize the cluster. Complete the steps in the following topics to initialize your cluster.
 

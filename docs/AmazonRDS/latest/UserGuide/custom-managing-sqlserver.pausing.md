@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-managi
 ---
 
 # Pausing and resuming RDS Custom automation
-<a name="custom-managing-sqlserver.pausing"></a>
 
 RDS Custom automatically provides monitoring and instance recovery for an RDS Custom for SQL Server DB instance. If you need to customize the instance, do the following:
 

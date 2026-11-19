@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/attach-valida
 ---
 
 # Attach a validated SSL/TLS certificate to your Lightsail load balancer
-<a name="attach-validated-certificate-to-load-balancer"></a>
 
 After you verify that you control your domain, the certificate's status will change to **Valid**.
 

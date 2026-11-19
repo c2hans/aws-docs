@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DeleteDBSubnet
 ---
 
 # DeleteDBSubnetGroup
-<a name="API_DeleteDBSubnetGroup"></a>
 
 Deletes a DB subnet group.
 

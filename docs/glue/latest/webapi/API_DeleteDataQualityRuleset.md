@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteDataQuality
 ---
 
 # DeleteDataQualityRuleset
-<a name="API_DeleteDataQualityRuleset"></a>
 
 Deletes a data quality ruleset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressTlsProtocolExpression
-<a name="API_IngressTlsProtocolExpression"></a>
 
 The structure for a TLS related condition matching on the incoming mail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides known issue resolution when deploying the solution.
 

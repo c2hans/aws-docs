@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetImageTooltipText
-<a name="API_SheetImageTooltipText"></a>
 
 The text that appears in the sheet image tooltip.
 

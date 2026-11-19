@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Terminat
 ---
 
 # TerminateEnvironment
-<a name="API_TerminateEnvironment"></a>
 
 Terminates the specified environment.
 

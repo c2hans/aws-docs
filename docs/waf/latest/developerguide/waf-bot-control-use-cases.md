@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-bot-contro
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Choosing and configuring Bot Control for your use case
-<a name="waf-bot-control-use-cases"></a>
 
 Bot Control protects against a range of automated threats. The right configuration depends on what you're protecting and what threats you face. Use this topic to choose the right protection level and configure Bot Control for common application scenarios.
 

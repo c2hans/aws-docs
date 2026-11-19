@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Deplo
 ---
 
 # DeploymentReadyOption
-<a name="API_DeploymentReadyOption"></a>
 
 Information about how traffic is rerouted to instances in a replacement environment in a blue/green deployment.
 

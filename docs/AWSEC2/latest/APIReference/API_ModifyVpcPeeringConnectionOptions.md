@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpc
 ---
 
 # ModifyVpcPeeringConnectionOptions
-<a name="API_ModifyVpcPeeringConnectionOptions"></a>
 
 Modifies the VPC peering connection options on one side of a VPC peering connection.
 

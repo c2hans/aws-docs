@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Cre
 ---
 
 # CreatePermissionSet
-<a name="API_CreatePermissionSet"></a>
 
 Creates a permission set within a specified IAM Identity Center instance.
 

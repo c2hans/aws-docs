@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationTableStatistics
-<a name="API_DescribeReplicationTableStatistics"></a>
 
 Returns table and schema statistics for one or more provisioned replications that use a given AWS DMS Serverless replication configuration.
 

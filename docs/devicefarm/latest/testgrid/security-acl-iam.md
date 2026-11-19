@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/security-acl-
 ---
 
 # Access control and IAM
-<a name="security-acl-iam"></a>
 
 Be aware of the following when you use the desktop browser testing feature:
 + Your AWS access and secret keys are used for all actions with the SDK and CLI.

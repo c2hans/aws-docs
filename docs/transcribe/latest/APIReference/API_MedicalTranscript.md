@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Medic
 ---
 
 # MedicalTranscript
-<a name="API_MedicalTranscript"></a>
 
 Provides you with the Amazon S3 URI you can use to access your transcript.
 

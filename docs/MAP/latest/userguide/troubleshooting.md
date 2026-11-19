@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/troubleshooting.htm
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 ## Verify and Fix map-migrated cost-allocation tag
 <a name="getting-started-manual"></a>

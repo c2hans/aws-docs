@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Retriever RetrieverConfiguration
-<a name="aws-properties-qbusiness-retriever-retrieverconfiguration"></a>
 
 Provides information on how the retriever used for your Amazon Q Business application is configured.
 

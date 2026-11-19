@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/powerpoint-extens
 ---
 
 # AWS Quick Microsoft PowerPoint extension
-<a name="powerpoint-extension-guide"></a>
 
 The AWS Quick extension for PowerPoint helps you create compelling, data-driven presentations by integrating your enterprise data, AI-powered design assistance, and intelligent content generation directly into PowerPoint.
 

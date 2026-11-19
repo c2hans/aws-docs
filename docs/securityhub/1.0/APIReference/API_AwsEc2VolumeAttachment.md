@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2V
 ---
 
 # AwsEc2VolumeAttachment
-<a name="API_AwsEc2VolumeAttachment"></a>
 
 An attachment to an Amazon EC2 volume.
 

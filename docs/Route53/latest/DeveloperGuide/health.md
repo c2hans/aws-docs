@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health.htm
 ---
 
 # .health
-<a name="health"></a>
 
 Used for health, medical, and wellness-related websites and organizations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use `BatchExecuteStatement` with an AWS SDK
-<a name="example_dynamodb_BatchExecuteStatement_section"></a>
 
 The following code examples show how to use `BatchExecuteStatement`.
 

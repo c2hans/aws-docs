@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # IngestData
-<a name="API_IngestData"></a>
 
 Submits content directly for ingestion to generate long-term memory records in a AgentCore Memory resource.
 

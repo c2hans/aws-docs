@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/findings-stati
 ---
 
 # Finding Statistics
-<a name="findings-statistics"></a>
 
 The Finding Statistics resource provides aggregated statistical data about the findings for your Amazon Macie account. This primarily includes data about the total number of findings, grouped by a key value such as severity, finding type, or affected resource. The data is available for all the findings that Macie stores for your account.
 

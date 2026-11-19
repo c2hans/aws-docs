@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DeviceiSCSIAttributes
-<a name="API_DeviceiSCSIAttributes"></a>
 
 Lists iSCSI information about a VTL device.
 

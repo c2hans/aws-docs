@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_Principal.ht
 ---
 
 # Principal
-<a name="API_Principal"></a>
 
 Describes a principal for use with AWS Resource Access Manager.
 

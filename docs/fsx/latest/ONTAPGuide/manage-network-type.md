@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/manage-network-typ
 ---
 
 # Managing network type
-<a name="manage-network-type"></a>
 
 When you create an FSx for ONTAP file system, you must specify a network type, which must be one of the following options:
 + `IPv4` allows your file system to communicate using only Internet Protocol version 4 (IPv4).

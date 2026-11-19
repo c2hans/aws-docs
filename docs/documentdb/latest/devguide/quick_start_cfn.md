@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/quick_start_c
 ---
 
 # Amazon DocumentDB quick start using CloudFormation
-<a name="quick_start_cfn"></a>
 
 This section contains steps and other information to help you get started quickly with Amazon DocumentDB (with MongoDB compatibility) using [CloudFormation](https://docs.aws.amazon.com/en_us/AWSCloudFormation/latest/UserGuide/Welcome.html). For general information about Amazon DocumentDB, see [What is Amazon DocumentDB (with MongoDB compatibility)](what-is.md).
 

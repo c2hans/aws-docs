@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ScopeConfi
 ---
 
 # ScopeConfigurationInput
-<a name="API_ScopeConfigurationInput"></a>
 
 The scope of resources to scan for a single scanning type. Provide this as part of an `AzureScopeConfigurationInput` when you create or update a connector.
 

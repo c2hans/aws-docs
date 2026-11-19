@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/BOOTSTRAP_FAI
 ---
 
 # BOOTSTRAP\_FAILURE\_INSUFFICIENT\_DISK\_SPACE\_WORKER
-<a name="BOOTSTRAP_FAILURE_INSUFFICIENT_DISK_SPACE_WORKER"></a>
 
 ## Overview
 <a name="BOOTSTRAP_FAILURE_INSUFFICIENT_DISK_SPACE_WORKER_overview"></a>

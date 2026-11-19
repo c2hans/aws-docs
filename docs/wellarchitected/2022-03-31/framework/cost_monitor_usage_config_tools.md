@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST03-BP04 Configure billing and cost management tools
-<a name="cost_monitor_usage_config_tools"></a>
 
  Configure AWS Cost Explorer and AWS Budgets inline with your organization policies.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerArchive ArchiveRetention
-<a name="aws-properties-ses-mailmanagerarchive-archiveretention"></a>
 
 The retention policy for an email archive that specifies how long emails are kept before being automatically deleted.
 

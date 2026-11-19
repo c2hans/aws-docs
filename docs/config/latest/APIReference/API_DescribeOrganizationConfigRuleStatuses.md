@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeO
 ---
 
 # DescribeOrganizationConfigRuleStatuses
-<a name="API_DescribeOrganizationConfigRuleStatuses"></a>
 
 Provides organization AWS Config rule deployment status for an organization.
 

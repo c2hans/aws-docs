@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/large-model-inferenc
 ---
 
 # Deploying uncompressed models
-<a name="large-model-inference-uncompressed"></a>
 
  When deploying ML models, one option is to archive and compress the model artifacts into a `tar.gz` format. Although this method works well for small models, compressing a large model artifact with hundreds of billions of parameters and then decompressing it on an endpoint can take a significant amount of time. For large model inference, we recommend that you deploy uncompressed ML model. This guide shows how you can deploy uncompressed ML model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_launch
 ---
 
 # Useful launch template parameters
-<a name="working-with_launch-templates_parameters"></a>
 
 This section describes some launch template parameters that may be broadly useful with AWS PCS.
 

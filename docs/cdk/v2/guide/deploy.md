@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/deploy.html
 ---
 
 # Deploying AWS CDK applications
-<a name="deploy"></a>
 
 An AWS Cloud Development Kit (AWS CDK) deployment is the process of provisioning your infrastructure on AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_Mapping.htm
 ---
 
 # Mapping
-<a name="API_Mapping"></a>
 
 Specifies the mapping template for the transformer. This template is used to map the parsed EDI file using JSONata or XSLT.
 

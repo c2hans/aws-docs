@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/avro-serde.html
 ---
 
 # Avro SerDe
-<a name="avro-serde"></a>
 
 Use the Avro SerDe to create Athena tables from Avro data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Supported releases for Amazon EMR on EKS with Apache Flink
-<a name="jobruns-flink-security-release-versions"></a>
 
 Apache Flink is available with the following Amazon EMR on EKS releases. For information on all of the releases that are available, see [Amazon EMR on EKS releases](emr-eks-releases.md).
 

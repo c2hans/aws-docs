@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-d
 ---
 
 # Sweden long code registration
-<a name="nx-dednum-sweden"></a>
 
 Registering a dedicated number is the first step in creating an origination identity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/cdn-auth-t
 ---
 
 # Troubleshoot MediaPackage CDN authorization errors
-<a name="cdn-auth-troubleshooting"></a>
 
 When AWS Elemental MediaPackage CDN authorization fails, you may encounter various error codes and authorization issues. This section helps you identify and resolve common problems with CDN authorization configuration, secret management, and IAM permissions.
 

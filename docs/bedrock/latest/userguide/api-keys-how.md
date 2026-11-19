@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys-how.ht
 ---
 
 # How Amazon Bedrock API keys work
-<a name="api-keys-how"></a>
 
 The following image compares the default process to get credentials to the use of the Amazon Bedrock API key:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQuery
-<a name="API_ProtectedQuery"></a>
 
 The parameters for an AWS Clean Rooms protected query.
 

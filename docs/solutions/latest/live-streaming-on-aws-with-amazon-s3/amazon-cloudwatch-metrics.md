@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Amazon CloudWatch metrics
-<a name="amazon-cloudwatch-metrics"></a>
 
 The Live Streaming on AWS with Amazon S3 solution activates Amazon CloudWatch metrics to monitor Amazon S3 requests made to the live stream distribution bucket. Out of the 16 metrics available for Amazon S3 requests, the following metrics are used for this solution:
 + All requests

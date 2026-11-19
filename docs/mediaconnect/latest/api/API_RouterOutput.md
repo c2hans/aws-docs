@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterOutput
 ---
 
 # RouterOutput
-<a name="API_RouterOutput"></a>
 
 A router output in AWS Elemental MediaConnect. A router output is a destination for media content that can receive input from one or more router inputs.
 

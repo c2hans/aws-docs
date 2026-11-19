@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_S3Locati
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The bucket and key of an item stored in Amazon S3.
 

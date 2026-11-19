@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 Migrating a contact center to the AWS Cloud can provide the following benefits:
 + [AI-based self-service](#ai-based-self-service)

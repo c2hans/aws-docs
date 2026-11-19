@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_MetricC
 ---
 
 # MetricCollectionType
-<a name="API_MetricCollectionType"></a>
 
 Describes a metric.
 

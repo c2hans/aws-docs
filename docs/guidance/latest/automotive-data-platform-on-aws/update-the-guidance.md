@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Update the guidance
-<a name="update-the-guidance"></a>
 
 This chapter describes how to update the Automotive Data Platform foundation and migrate from previous releases.
 

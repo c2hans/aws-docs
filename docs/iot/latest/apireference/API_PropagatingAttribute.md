@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PropagatingA
 ---
 
 # PropagatingAttribute
-<a name="API_PropagatingAttribute"></a>
 
 An object that represents the connection attribute, thing attribute, and the user property key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-data-co
 ---
 
 # Data concepts in Scenario Discovery
-<a name="sd-data-concepts"></a>
 
 Before you manage your workflow, take a moment to understand the key data concepts in this section. Understanding these concepts and the reasoning behind them enables you to use the system more efficiently. In the previous sections, you learned about the Account and Workspace data entities. This section takes you deeper into the data entities in the system.
 

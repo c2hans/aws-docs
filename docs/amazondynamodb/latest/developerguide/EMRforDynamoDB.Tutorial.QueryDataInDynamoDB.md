@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMR
 ---
 
 # Step 6: Query the data in the DynamoDB table
-<a name="EMRforDynamoDB.Tutorial.QueryDataInDynamoDB"></a>
 
 In this step, you will use HiveQL to query the Features table in DynamoDB. Try the following Hive queries:
 

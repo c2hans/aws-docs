@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Confluenc
 ---
 
 # ConfluencePageConfiguration
-<a name="API_ConfluencePageConfiguration"></a>
 
 Configuration of the page settings for the Confluence data source.
 

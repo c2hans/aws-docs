@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/tag-based-access-
 ---
 
 # Using tags to control access to CodeArtifact resources
-<a name="tag-based-access-control"></a>
 
 Conditions in IAM user policy statements are part of the syntax that you use to specify permissions to resources required by CodeArtifact actions. Using tags in conditions is one way to control access to resources and requests. For information about tagging CodeArtifact resources, see [Tagging resources](tag-resources.md). This topic discusses tag-based access control.
 

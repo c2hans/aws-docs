@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/new-AL2023.12
 ---
 
 # New packages in AL2027 since AL2023.12
-<a name="new-AL2023.12-AL2027"></a>
 
  Comparing AL2023.12 version 2023.12.20260608 to AL2027 version [2027.0.20260903](relnotes-2027.0.20260903.md).
 

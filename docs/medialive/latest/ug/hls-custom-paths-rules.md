@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-custom-paths-rul
 ---
 
 # Rules for custom paths
-<a name="hls-custom-paths-rules"></a>
 
 After you have set up to customize the manifests in a MediaLive HLS output group, you should share the following rules with your contact person at the downstream system.
 

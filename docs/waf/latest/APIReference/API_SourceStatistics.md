@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_SourceStatis
 ---
 
 # SourceStatistics
-<a name="API_SourceStatistics"></a>
 
 Revenue statistics for a single AI bot source, including the bot name, revenue amount, request count, and verification status.
 

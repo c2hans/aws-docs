@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/concepts-queue
 ---
 
 # Standard queues and agent queues in your Connect Customer contact center
-<a name="concepts-queues-standard-and-agent"></a>
 
 There are two types of queues:
 + **Standard queues**: This is where contacts wait before they are routed to and accepted by agents.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/builder-guide/cre
 ---
 
 # Creating a solution
-<a name="creating-a-solution"></a>
 
 The first step to gain visibility and engagement with AWS customers and sales teams is to create your solutions on AWS Partner Central.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Add a tag to a Step Functions resource.
 

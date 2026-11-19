@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/configguide/config-
 This is version 2.18 of the AWS Elemental Conductor File documentation. This is the latest version. For prior versions, see the *Archive* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server).
 
 # Open Ports on the Firewall for AWS Elemental Server Nodes
-<a name="config-wrkr-cf-cg-firewall"></a>
 
 The procedure for opening ports on the firewall for AWS Elemental Server nodes is the same as for AWS Elemental Conductor File nodes.
 

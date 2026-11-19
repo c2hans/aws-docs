@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteDoma
 ---
 
 # DeleteDomain
-<a name="API_connect-cases_DeleteDomain"></a>
 
 Deletes a Cases domain.
 

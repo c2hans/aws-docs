@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-r
 ---
 
 # Query
-<a name="js-aws-appsync-resolver-reference-dynamodb-query"></a>
 
 The `Query` request object lets you tell the AWS AppSync DynamoDB resolver to make a `Query` request to DynamoDB, and enables you to specify the following:
 + Key expression

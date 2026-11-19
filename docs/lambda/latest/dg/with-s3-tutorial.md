@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-s3-tutorial.html
 ---
 
 # Tutorial: Using an Amazon S3 trigger to create thumbnail images
-<a name="with-s3-tutorial"></a>
 
 In this tutorial, you create and configure a Lambda Event Function that resizes images added to an Amazon Simple Storage Service (Amazon S3) bucket. When you add an image file to your bucket, Amazon S3 invokes your Lambda Event Function. The function then creates a thumbnail version of the image and outputs it to a different Amazon S3 bucket.
 

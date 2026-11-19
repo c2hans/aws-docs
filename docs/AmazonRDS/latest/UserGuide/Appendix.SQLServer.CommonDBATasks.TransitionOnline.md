@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Transitioning a Amazon RDS for SQL Server database from OFFLINE to ONLINE
-<a name="Appendix.SQLServer.CommonDBATasks.TransitionOnline"></a>
 
 You can transition your Microsoft SQL Server database on an Amazon RDS DB instance from `OFFLINE` to `ONLINE`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/v1-rel-RE
 ---
 
 # PUT Bucket lifecycle (Deprecated)
-<a name="v1-rel-RESTBucketPUTlifecycle"></a>
 
 ## Description
 <a name="v1-rel-RESTBucketPUTlifecycle-description"></a>

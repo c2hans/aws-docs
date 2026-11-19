@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # OpenSearch UI endpoints and quotas
-<a name="opensearch-ui-endpoints-quotas"></a>
 
 To connect programmatically to an AWS service, you use an endpoint. Service quotas, also referred to as limits, are the maximum number of service resources or operations for your AWS account.
 

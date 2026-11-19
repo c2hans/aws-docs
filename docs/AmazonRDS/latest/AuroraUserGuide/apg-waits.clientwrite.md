@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # Client:ClientWrite
-<a name="apg-waits.clientwrite"></a>
 
 The `Client:ClientWrite` event occurs when Aurora PostgreSQL is waiting to write data to the client.
 

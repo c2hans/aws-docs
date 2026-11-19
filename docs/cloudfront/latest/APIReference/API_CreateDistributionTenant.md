@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateDistributionTenant
-<a name="API_CreateDistributionTenant"></a>
 
 Creates a distribution tenant.
 

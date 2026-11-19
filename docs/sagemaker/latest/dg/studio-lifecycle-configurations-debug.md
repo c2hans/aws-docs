@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lifecycle-con
 ---
 
 # Debug lifecycle configurations
-<a name="studio-lifecycle-configurations-debug"></a>
 
 The following topics show how to get information about and debug your lifecycle configurations.
 

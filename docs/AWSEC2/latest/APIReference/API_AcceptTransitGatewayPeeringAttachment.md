@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptTra
 ---
 
 # AcceptTransitGatewayPeeringAttachment
-<a name="API_AcceptTransitGatewayPeeringAttachment"></a>
 
 Accepts a transit gateway peering attachment request. The peering attachment must be in the `pendingAcceptance` state.
 

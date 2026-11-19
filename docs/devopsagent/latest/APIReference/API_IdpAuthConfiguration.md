@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_IdpA
 ---
 
 # IdpAuthConfiguration
-<a name="API_IdpAuthConfiguration"></a>
 
 Configuration for external Identity Provider OIDC authentication flow for the Operator App.
 

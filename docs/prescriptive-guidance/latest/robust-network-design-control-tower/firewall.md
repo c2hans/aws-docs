@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Centralized network firewall
-<a name="firewall"></a>
 
 Deploy AWS Network Firewall in the firewall VPC. This VPC plays a crucial role by hosting the firewall that inspects traffic moving from source to destination and traffic coming from the internet.
 

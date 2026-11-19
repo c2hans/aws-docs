@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateModelBiasJobDefinition
-<a name="API_CreateModelBiasJobDefinition"></a>
 
 Creates the definition for a model bias job.
 

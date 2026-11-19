@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-manage-automa
 ---
 
 # Delete an automatic configuration
-<a name="canvas-manage-automations-delete"></a>
 
 You might want to delete a configuration to stop your automated workflow in SageMaker Canvas.
 

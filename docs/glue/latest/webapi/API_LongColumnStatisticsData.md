@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_LongColumnStatist
 ---
 
 # LongColumnStatisticsData
-<a name="API_LongColumnStatisticsData"></a>
 
 Defines column statistics supported for integer data columns.
 

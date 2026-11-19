@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/getting-started
 ---
 
 # Deploy a Next.js app to Amplify Hosting
-<a name="getting-started-next"></a>
 
 This tutorial walks you through building and deploying a Next.js application from a Git repository.
 

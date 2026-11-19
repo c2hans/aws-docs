@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # UpdateForm
-<a name="API_UpdateForm"></a>
 
 Updates an existing form.
 

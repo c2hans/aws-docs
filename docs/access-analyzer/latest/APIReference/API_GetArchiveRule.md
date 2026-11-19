@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # GetArchiveRule
-<a name="API_GetArchiveRule"></a>
 
 Retrieves information about an archive rule.
 

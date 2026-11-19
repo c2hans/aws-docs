@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sesv2_example_sesv2_ListCo
 ---
 
 # Use `ListContacts` with an AWS SDK
-<a name="sesv2_example_sesv2_ListContacts_section"></a>
 
 The following code examples show how to use `ListContacts`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DLM.3] Automate data processes for reliable collection, transformation, and storage using pipelines
-<a name="ag.dlm.3-automate-data-processes-for-reliable-collection-transformation-and-storage-using-pipelines"></a>
 
  **Category:** FOUNDATIONAL
 

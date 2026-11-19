@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # WKLD.02 Restrict credential usage scope with resource-based policies
-<a name="wkld-02"></a>
 
 *Policies* define permissions or specify access conditions for AWS resources. There are two primary types of policies:
 + *Identity-based policies* are attached to principals and define what the principal's permissions are in the AWS environment.

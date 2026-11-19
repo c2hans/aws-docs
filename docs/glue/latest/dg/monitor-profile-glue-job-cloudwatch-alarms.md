@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/monitor-profile-glue-job-
 ---
 
 # Setting up Amazon CloudWatch alarms on AWS Glue job profiles
-<a name="monitor-profile-glue-job-cloudwatch-alarms"></a>
 
 AWS Glue metrics are also available in Amazon CloudWatch. You can set up alarms on any AWS Glue metric for scheduled jobs.
 

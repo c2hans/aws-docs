@@ -5,9 +5,8 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/compute-resource-s
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `[compute_resource]` section
-<a name="compute-resource-section"></a>
 
-Defines configuration settings for a compute resource. [`[compute_resource]` sections](#compute-resource-section) are referenced by the [`compute_resource_settings`](queue-section.md#queue-compute-resource-settings) setting in the [`[queue]` section](queue-section.md). [`[compute_resource]` sections](#compute-resource-section) are only supported when [`scheduler`](cluster-definition.md#scheduler) is set to `slurm`.
+Defines configuration settings for a compute resource. [`[compute_resource]` sections](compute-resource-section.md) are referenced by the [`compute_resource_settings`](queue-section.md#queue-compute-resource-settings) setting in the [`[queue]` section](queue-section.md). [`[compute_resource]` sections](compute-resource-section.md) are only supported when [`scheduler`](cluster-definition.md#scheduler) is set to `slurm`.
 
 The format is `[compute_resource {{<compute-resource-name>}}]`. {{compute-resource-name}} must start with a letter, contain no more than 30 characters, and only contain letters, numbers, hyphens (-), and underscores (\_).
 
@@ -21,7 +20,7 @@ spot_price = 0.5
 ```
 
 **Note**
-Support for the [`[compute_resource]` section](#compute-resource-section) was added in AWS ParallelCluster version 2.9.0.
+Support for the [`[compute_resource]` section](compute-resource-section.md) was added in AWS ParallelCluster version 2.9.0.
 
 **Topics**
 + [`initial_count`](#compute-resource-initial-count)
@@ -46,7 +45,7 @@ initial_count = 2
 ## `instance_type`
 <a name="compute-resource-instance-type"></a>
 
-**(Required)** Defines the Amazon EC2 instance type that's used for this compute resource. The architecture of the instance type must be the same as the architecture used for the [`master_instance_type`](cluster-definition.md#master-instance-type) setting. The `instance_type` setting must be unique for each [`[compute_resource]` section](#compute-resource-section) referenced by a [`[queue]` section](queue-section.md). This setting replaces the [`compute_instance_type`](cluster-definition.md#compute-instance-type) setting.
+**(Required)** Defines the Amazon EC2 instance type that's used for this compute resource. The architecture of the instance type must be the same as the architecture used for the [`master_instance_type`](cluster-definition.md#master-instance-type) setting. The `instance_type` setting must be unique for each [`[compute_resource]` section](compute-resource-section.md) referenced by a [`[queue]` section](queue-section.md). This setting replaces the [`compute_instance_type`](cluster-definition.md#compute-instance-type) setting.
 
 ```
 instance_type = t2.micro

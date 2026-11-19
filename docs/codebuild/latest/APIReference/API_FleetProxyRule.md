@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_FleetP
 ---
 
 # FleetProxyRule
-<a name="API_FleetProxyRule"></a>
 
 Information about the proxy rule for your reserved capacity instances.
 

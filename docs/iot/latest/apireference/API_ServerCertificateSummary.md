@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ServerCertif
 ---
 
 # ServerCertificateSummary
-<a name="API_ServerCertificateSummary"></a>
 
 An object that contains information about a server certificate.
 

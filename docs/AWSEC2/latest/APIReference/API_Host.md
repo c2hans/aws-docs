@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Host.html
 ---
 
 # Host
-<a name="API_Host"></a>
 
 Describes the properties of the Dedicated Host.
 

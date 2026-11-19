@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ResourceUri.html
 ---
 
 # ResourceUri
-<a name="API_ResourceUri"></a>
 
 The URIs for function resources.
 

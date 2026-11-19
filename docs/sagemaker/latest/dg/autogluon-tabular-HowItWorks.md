@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autogluon-tabular-Ho
 ---
 
 # How AutoGluon-Tabular works
-<a name="autogluon-tabular-HowItWorks"></a>
 
 AutoGluon-Tabular performs advanced data processing, deep learning, and multi-layer model ensemble methods. It automatically recognizes the data type in each column for robust data preprocessing, including special handling of text fields.
 

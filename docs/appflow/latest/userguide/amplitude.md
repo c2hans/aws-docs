@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/amplitude.html
 ---
 
 # Amplitude
-<a name="amplitude"></a>
 
 The following are the requirements and connection instructions for using Amplitude with Amazon AppFlow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_LogEventConf
 ---
 
 # LogEventConfiguration
-<a name="API_LogEventConfiguration"></a>
 
  Configuration for event-based logging that specifies which event types to log and their logging settings. Used for account-level logging overrides.
 

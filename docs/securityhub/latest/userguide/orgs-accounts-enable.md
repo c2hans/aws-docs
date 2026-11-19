@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/orgs-accoun
 ---
 
 # Manually enabling Security Hub CSPM in new organization accounts
-<a name="orgs-accounts-enable"></a>
 
 If you don't automatically enable Security Hub CSPM in new organization accounts when they join the organization, then you can add those accounts as members and enable Security Hub CSPM in them manually after they join the organization. You must also manually enable Security Hub CSPM in AWS accounts that you previously disassociated from an organization.
 

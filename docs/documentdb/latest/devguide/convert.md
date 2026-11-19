@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/convert.html
 ---
 
 # $convert
-<a name="convert"></a>
 
 New from version 4.0
 

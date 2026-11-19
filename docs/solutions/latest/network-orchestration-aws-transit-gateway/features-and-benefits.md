@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 This Guidance provides the following features:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/findings-managing.
 ---
 
 # Managing findings in Amazon Inspector
-<a name="findings-managing"></a>
 
  With Amazon Inspector, you can manage your findings in different ways. You can filter your findings based on their status. You can search your findings based on filter criteria. You can create suppression rules to exclude findings from your list of findings. You can also export findings to AWS Security Hub CSPM, Amazon EventBridge, and Amazon Simple Storage Service (Amazon S3).
 

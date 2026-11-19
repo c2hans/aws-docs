@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Cell routing
-<a name="cell-routing"></a>
 
  The router layer is a shared component between cells, and therefore cannot follow the same compartmentalization strategy as with cells.
 

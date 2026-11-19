@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/h
 ---
 
 # Payor Strategic Focus Areas
-<a name="healthcare-payor-strategic-focus-areas"></a>
 
 Publication date: **May 22, 2024 ([Diagram history](#diagram-history))**
 

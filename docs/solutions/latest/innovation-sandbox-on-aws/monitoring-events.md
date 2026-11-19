@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Events
-<a name="monitoring-events"></a>
 
 Innovation Sandbox publishes domain events to a dedicated Amazon EventBridge event bus (`<namespace>-ISBEventBus`). You can use these events for audit trails, custom automation, or integration with external systems.
 

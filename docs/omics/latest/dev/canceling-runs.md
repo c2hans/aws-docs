@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/canceling-runs.html
 ---
 
 # Cancel a run in HealthOmics
-<a name="canceling-runs"></a>
 
 You can cancel a run if its status is `PENDING`, `STARTING`, `RUNNING`, or `STOPPING`.
 

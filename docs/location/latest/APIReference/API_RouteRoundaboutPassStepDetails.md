@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRo
 ---
 
 # RouteRoundaboutPassStepDetails
-<a name="API_RouteRoundaboutPassStepDetails"></a>
 
 Details about the step.
 

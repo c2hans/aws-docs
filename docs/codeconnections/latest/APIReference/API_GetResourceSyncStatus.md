@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # GetResourceSyncStatus
-<a name="API_GetResourceSyncStatus"></a>
 
 Returns the status of the sync with the Git repository for a specific AWS resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchStopJobRunEr
 ---
 
 # BatchStopJobRunError
-<a name="API_BatchStopJobRunError"></a>
 
 Records an error that occurred when attempting to stop a specified job run.
 

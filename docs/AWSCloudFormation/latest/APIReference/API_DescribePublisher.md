@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribePublisher
-<a name="API_DescribePublisher"></a>
 
 Returns information about a CloudFormation extension publisher.
 

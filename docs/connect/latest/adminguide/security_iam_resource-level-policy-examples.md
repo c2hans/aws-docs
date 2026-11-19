@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/security_iam_r
 ---
 
 # Connect Customer resource-level policy examples
-<a name="security_iam_resource-level-policy-examples"></a>
 
 Connect Customer supports resource-level permissions for users, so you can specify actions for them for an instance, as shown in the following policies.
 

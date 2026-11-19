@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/teams-extension-u
 ---
 
 # AWS Quick Microsoft Teams extension user guide
-<a name="teams-extension-user-guide"></a>
 
 As a user, you can access Quick directly within Microsoft Teams to get AI-powered assistance without leaving your workspace. The extension integrates seamlessly into your Microsoft Teams environment, providing instant access to knowledge bases and intelligent responses.
 

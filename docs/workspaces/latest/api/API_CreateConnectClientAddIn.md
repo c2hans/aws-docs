@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateConnectC
 ---
 
 # CreateConnectClientAddIn
-<a name="API_CreateConnectClientAddIn"></a>
 
 Creates a client-add-in for Connect Customer within a directory. You can create only one Connect Customer client add-in within a directory.
 

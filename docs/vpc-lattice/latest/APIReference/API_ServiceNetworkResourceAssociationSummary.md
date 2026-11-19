@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Serv
 ---
 
 # ServiceNetworkResourceAssociationSummary
-<a name="API_ServiceNetworkResourceAssociationSummary"></a>
 
 Summary information about an association between a service network and a resource configuration.
 

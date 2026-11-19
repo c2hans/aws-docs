@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # ContactInterceptorContext in Connect Customer agent workspace
-<a name="3P-apps-contact-interceptor-context"></a>
 
 Defines the invocation context that the contact interceptor methods receive.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # AwsCredentials
-<a name="API_AwsCredentials"></a>
 
  AWS account security credentials that allow interactions with Amazon GameLift Servers resources. The credentials are temporary and valid for a limited time span. You can request fresh credentials at any time.
 

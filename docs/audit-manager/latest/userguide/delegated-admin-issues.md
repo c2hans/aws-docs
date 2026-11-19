@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/delegated
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Troubleshooting delegated administrator and AWS Organizations issues
-<a name="delegated-admin-issues"></a>
 
 You can use the information on this page to resolve common delegated administrator issues in Audit Manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/creat
 ---
 
 # Creating insight watchlist
-<a name="creating-insights"></a>
 
 You can create an insight watchlist to track and notify you on supply chain risks and deviations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AssociateWorks
 ---
 
 # AssociateWorkspaceApplication
-<a name="API_AssociateWorkspaceApplication"></a>
 
 Associates the specified application to the specified WorkSpace.
 

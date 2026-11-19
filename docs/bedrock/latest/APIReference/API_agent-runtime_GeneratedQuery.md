@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GeneratedQuery
-<a name="API_agent-runtime_GeneratedQuery"></a>
 
 Contains information about a query generated for a natural language query.
 

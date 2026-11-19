@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/filter.html
 ---
 
 # $filter
-<a name="filter"></a>
 
 The `$filter` operator in Amazon DocumentDB is used to apply a filter expression to each element of an array and return an array containing only the elements that match the specified condition. This operator is useful when you need to perform complex filtering operations on array fields within your documents.
 

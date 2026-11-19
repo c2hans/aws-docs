@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StatusDetails.htm
 ---
 
 # StatusDetails
-<a name="API_StatusDetails"></a>
 
 A structure containing information about an asynchronous change to a table.
 

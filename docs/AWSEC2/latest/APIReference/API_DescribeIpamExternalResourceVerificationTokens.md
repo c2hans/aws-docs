@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeIpamExternalResourceVerificationTokens
-<a name="API_DescribeIpamExternalResourceVerificationTokens"></a>
 
 Describe verification tokens.
 

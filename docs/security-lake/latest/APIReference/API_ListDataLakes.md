@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Li
 ---
 
 # ListDataLakes
-<a name="API_ListDataLakes"></a>
 
 Retrieves the Amazon Security Lake configuration object for the specified AWS Regions. You can use this operation to determine whether Security Lake is enabled for a Region.
 

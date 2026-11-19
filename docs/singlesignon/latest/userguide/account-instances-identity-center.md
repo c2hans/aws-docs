@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/account-in
 ---
 
 # Account instances of IAM Identity Center
-<a name="account-instances-identity-center"></a>
 
  With an account instance of IAM Identity Center, you can deploy supported AWS managed applications and OIDC-based customer managed applications. Account instances support isolated deployments of applications in a single AWS account, leveraging IAM Identity Center workforce identity and access portal features.
 

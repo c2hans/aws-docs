@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # AWS Lambda deploy action reference
-<a name="action-reference-LambdaDeploy"></a>
 
 You use an AWS Lambda deploy action to manage deploying your application code for your serverless deployment. You can deploy a function and use deployment strategies for traffic deployment as follows:
 + Canary and linear deployments for traffic shifting

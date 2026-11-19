@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-
 ---
 
 # Create a launch template for an Auto Scaling group
-<a name="create-launch-template"></a>
 
 Before you can create an Auto Scaling group using a launch template, you must create a launch template that contains the configuration information to launch an instance, including the ID of the Amazon Machine Image (AMI).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ClusterState
 ---
 
 # ClusterStateChangeReason
-<a name="API_ClusterStateChangeReason"></a>
 
 The reason that the cluster changed to its current state.
 

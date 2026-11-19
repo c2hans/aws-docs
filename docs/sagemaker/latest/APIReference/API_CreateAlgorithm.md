@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateAlgorithm
-<a name="API_CreateAlgorithm"></a>
 
 Create a machine learning algorithm that you can use in SageMaker and list in the AWS Marketplace.
 

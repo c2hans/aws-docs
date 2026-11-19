@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceM
 ---
 
 # InstanceMarketOptionsRequest
-<a name="API_InstanceMarketOptionsRequest"></a>
 
 Describes the market (purchasing) option for the instances.
 

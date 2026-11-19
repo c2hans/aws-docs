@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/step-4-cal
 ---
 
 # Step 4. Call your blueprint to create a customized account
-<a name="step-4-call-the-blueprint"></a>
 
 When you follow the **Create account** workflow in the AWS Control Tower console, you'll see an optional section where you can enter information about the blueprint you'd like to use for customizing accounts.
 

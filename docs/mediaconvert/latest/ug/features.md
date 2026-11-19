@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/features.html
 ---
 
 # MediaConvert features
-<a name="features"></a>
 
 This chapter contains detailed information for implementing AWS Elemental MediaConvert features. You set up these features when you create a job.
 

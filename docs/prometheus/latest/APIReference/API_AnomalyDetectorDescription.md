@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Anoma
 ---
 
 # AnomalyDetectorDescription
-<a name="API_AnomalyDetectorDescription"></a>
 
 Detailed information about an anomaly detector.
 

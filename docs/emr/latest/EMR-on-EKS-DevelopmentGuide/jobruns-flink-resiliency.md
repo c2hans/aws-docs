@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # How Flink supports high availability and job resiliency
-<a name="jobruns-flink-resiliency"></a>
 
 The following sections outline how Flink makes jobs more reliable and highly available. It does this through built-in capabilities like Flink high availability and various recovery capabilities if failures occur.
 

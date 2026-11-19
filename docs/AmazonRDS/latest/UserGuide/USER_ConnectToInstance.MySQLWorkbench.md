@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 ---
 
 # Connecting from MySQL Workbench
-<a name="USER_ConnectToInstance.MySQLWorkbench"></a>
 
 **To connect from MySQL Workbench**
 

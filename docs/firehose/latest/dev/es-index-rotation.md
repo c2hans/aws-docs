@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/es-index-rotation.ht
 ---
 
 # Configure index rotation for OpenSearch Service
-<a name="es-index-rotation"></a>
 
 For the OpenSearch Service destination, you can specify a time-based index rotation option from one of the following five options: **NoRotation**, **OneHour**, **OneDay**, **OneWeek**, or **OneMonth**.
 

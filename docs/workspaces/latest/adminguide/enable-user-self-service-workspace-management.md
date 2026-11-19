@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/enable-user
 ---
 
 # Enable self-service WorkSpaces management capabilities for your users in WorkSpaces Personal
-<a name="enable-user-self-service-workspace-management"></a>
 
 In WorkSpaces, you can enable self-service WorkSpace management capabilities for your users to provide them with more control over their experience. It can also reduce your IT support staff workload for WorkSpaces. When you enable self-service capabilities, users can perform one or more of the following tasks directly from their WorkSpaces client:
 + Cache their credentials on their client. This lets them reconnect to their WorkSpace without re-entering their credentials.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshootin
 ---
 
 # Troubleshoot server access logging
-<a name="troubleshooting-server-access-logging"></a>
 
 The following topics can help you troubleshoot issues that you might encounter when setting up logging with Amazon S3.
 

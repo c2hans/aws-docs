@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/codecs-containe
 ---
 
 # Video: H.264 (AVC) support
-<a name="codecs-containers-h264"></a>
 
 H.264 is supported in the following variations.
 

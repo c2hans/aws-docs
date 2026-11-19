@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_CreateRunGroup.html
 ---
 
 # CreateRunGroup
-<a name="API_CreateRunGroup"></a>
 
 Creates a run group to limit the compute resources for the runs that are added to the group. Returns an ARN, ID, and tags for the run group.
 

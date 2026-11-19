@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 5: Enable Storage modules (Optional)
-<a name="enable-storage-module"></a>
 
 The solution supports two Amazon FSx storage options. Choose the storage module that best fits your workload requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # Common Parameters
-<a name="SDB_API_ParametersDescription"></a>
 
 This section describes parameters used by Amazon SimpleDB operations.
 

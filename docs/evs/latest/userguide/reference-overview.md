@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/reference-overview.
 ---
 
 # Reference
-<a name="reference-overview"></a>
 
 The Plan, Deploy, and Operate chapters link to these lookup tables instead of repeating their rows. Start with [Supported VCF versions and instance types](versions-provided.md) and [VCF feature support on Amazon EVS](vcf-feature-support.md), because most design choices depend on them.
 

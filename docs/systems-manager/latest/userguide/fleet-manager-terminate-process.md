@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Terminating an OS process using Fleet Manager
-<a name="fleet-manager-terminate-process"></a>
 
 **To terminate an OS process using Fleet Manager**
 

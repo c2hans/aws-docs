@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DescribePolicy
-<a name="API_DescribePolicy"></a>
 
 Retrieves information about a policy.
 

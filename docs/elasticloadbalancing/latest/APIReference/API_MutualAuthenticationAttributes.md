@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # MutualAuthenticationAttributes
-<a name="API_MutualAuthenticationAttributes"></a>
 
 Information about the mutual authentication attributes of a listener.
 

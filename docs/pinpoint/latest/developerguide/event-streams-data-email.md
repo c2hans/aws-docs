@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/event-str
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Email event data stream from Amazon Pinpoint
-<a name="event-streams-data-email"></a>
 
 If you use Amazon Pinpoint to send emails, Amazon Pinpoint can stream event data about those emails. After you set up event streaming, Amazon Pinpoint retrieves your event data from the destination that you specified during setup for you to view. For information about how to set up event streaming, see [Set up Amazon Pinpoint to stream app event data through Amazon Kinesis or Amazon Data Firehose](event-streams-setup.md). Amazon Pinpoint streams data about the following types of events for email messages:
 + Sends

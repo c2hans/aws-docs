@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ActionSu
 ---
 
 # ActionSummary
-<a name="API_ActionSummary"></a>
 
 Information about an action.
 

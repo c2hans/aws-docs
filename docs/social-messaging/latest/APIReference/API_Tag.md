@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 The tag for a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-input-hls.html
 ---
 
 # Create an HLS input
-<a name="setup-input-hls"></a>
 
 After you have obtained information from the upstream system, you can create an HLS input.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_RevisionWei
 ---
 
 # RevisionWeight
-<a name="API_RevisionWeight"></a>
 
 Specifies a revision and its traffic weight for an endpoint. You can assign weights to up to two revisions to split traffic for canary or blue-green deployments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteP
 ---
 
 # DeleteParameterGroup
-<a name="API_DeleteParameterGroup"></a>
 
 Deletes the specified parameter group. You cannot delete a parameter group if it is associated with any clusters. You cannot delete the default parameter groups in your account.
 

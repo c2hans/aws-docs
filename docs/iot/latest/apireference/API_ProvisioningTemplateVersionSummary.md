@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Provisioning
 ---
 
 # ProvisioningTemplateVersionSummary
-<a name="API_ProvisioningTemplateVersionSummary"></a>
 
 A summary of information about a fleet provision template version.
 

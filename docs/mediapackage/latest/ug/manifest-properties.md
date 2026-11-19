@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/manifest-properti
 ---
 
 # Manifest properties
-<a name="manifest-properties"></a>
 
 These are the main properties in a manifest that determine if it's live or VOD:
 + For HLS and CMAF VOD manifests, `EXT-X-ENDLIST` is at the end of the bitrate manifests. In live manifests, this tag isn't present.

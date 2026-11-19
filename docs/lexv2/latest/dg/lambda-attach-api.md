@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/lambda-attach-api.html
 ---
 
 # Attach an AWS Lambda function to a Amazon Lex V2 bot using API operations
-<a name="lambda-attach-api"></a>
 
 You must first attach a Lambda function to your Amazon Lex V2 bot alias before you can invoke it. You can only associate one Lambda function with each bot alias. Perform these steps to attach the Lambda function using API operations.
 

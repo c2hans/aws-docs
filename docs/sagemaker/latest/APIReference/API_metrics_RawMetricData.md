@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_metric
 ---
 
 # RawMetricData
-<a name="API_metrics_RawMetricData"></a>
 
 The raw metric data to associate with the resource.
 

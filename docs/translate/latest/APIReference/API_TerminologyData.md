@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Termin
 ---
 
 # TerminologyData
-<a name="API_TerminologyData"></a>
 
 The data associated with the custom terminology. For information about the custom terminology file, see [ Creating a Custom Terminology](https://docs.aws.amazon.com/translate/latest/dg/creating-custom-terminology.html) in the Amazon Translate Developer Guide.
 

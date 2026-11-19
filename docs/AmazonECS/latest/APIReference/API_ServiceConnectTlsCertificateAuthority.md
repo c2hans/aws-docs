@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceConnectTlsCertificateAuthority
-<a name="API_ServiceConnectTlsCertificateAuthority"></a>
 
 The certificate root authority that secures your service.
 

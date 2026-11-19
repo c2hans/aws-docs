@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # WebSearchResult
-<a name="API_WebSearchResult"></a>
 
 A web search result.
 

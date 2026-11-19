@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/clusters.prepar
 ---
 
 # Preparing a cluster
-<a name="clusters.prepare"></a>
 
 Following, you can find instructions on creating a cluster using the MemoryDB console, the AWS CLI, or the MemoryDB API.
 

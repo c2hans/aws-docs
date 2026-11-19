@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/large-model-inferenc
 ---
 
 # Deploy large models for inference with TorchServe
-<a name="large-model-inference-tutorials-torchserve"></a>
 
 This tutorial demonstrates how to deploy large models and serve inference in Amazon SageMaker AI with TorchServe on GPUs. This example deploys the [OPT-30b](https://huggingface.co/facebook/opt-30b) model to an `ml.g5` instance. You can modify this to work with other models and instance types. Replace the `{{italicized placeholder text}}` in the examples with your own information.
 

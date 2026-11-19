@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ZendeskDest
 ---
 
 # ZendeskDestinationProperties
-<a name="API_ZendeskDestinationProperties"></a>
 
 The properties that are applied when Zendesk is used as a destination.
 

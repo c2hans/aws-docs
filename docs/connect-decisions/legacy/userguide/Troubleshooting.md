@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/Troub
 ---
 
 # Troubleshooting
-<a name="Troubleshooting"></a>
 
 This section contains information about how to troubleshoot order planning and tracking issues that may occur.
 

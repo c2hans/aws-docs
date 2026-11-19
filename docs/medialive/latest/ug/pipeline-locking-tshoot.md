@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/pipeline-locking-tsh
 ---
 
 # Troubleshooting
-<a name="pipeline-locking-tshoot"></a>
 
 Pipeline locking ensures that the pipelines are frame accurate with each other, in the output groups where MediaLive performs pipeline locking.
 

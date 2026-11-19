@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/CBRT.ht
 ---
 
 # CBRT function
-<a name="CBRT"></a>
 
  The CBRT function is a mathematical function that calculates the cube root of a number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # HelmOperatingSystem
-<a name="API_marketplace-discovery_HelmOperatingSystem"></a>
 
 Describes an operating system supported by a Helm chart fulfillment option.
 

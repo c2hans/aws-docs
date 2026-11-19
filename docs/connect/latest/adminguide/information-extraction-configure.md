@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/information-ex
 ---
 
 # Configure voice and chat information extraction
-<a name="information-extraction-configure"></a>
 
 Configuring information extraction requires two steps:
 + **Create information extraction definitions** – Define what information to extract from contacts
@@ -128,4 +127,4 @@ In addition to rules-based extraction for voice and chat, you can extract inform
 
 1. On the **Success** branch, use a **Set contact attributes** block or **Check contact attributes** block to read the extracted fields from `$.ExtractedInformation.ResultData`.
 
-For more information, see [Information Extraction](information-extraction-block.md) and [Configure voice and chat information extraction](#information-extraction-configure).
+For more information, see [Information Extraction](information-extraction-block.md) and [Configure voice and chat information extraction](information-extraction-configure.md).

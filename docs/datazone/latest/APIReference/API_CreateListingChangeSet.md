@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateL
 ---
 
 # CreateListingChangeSet
-<a name="API_CreateListingChangeSet"></a>
 
 Publishes a listing (a record of an asset at a given time) or removes a listing from the catalog.
 

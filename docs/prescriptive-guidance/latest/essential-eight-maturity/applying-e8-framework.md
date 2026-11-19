@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Reinterpreting the Essential Eight strategies
-<a name="applying-e8-framework"></a>
 
 The following are the original Essential Eight mitigation strategies that were designed for Microsoft-based internet-connected networks:
 + Application control

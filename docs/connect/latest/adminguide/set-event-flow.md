@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-event-flow
 ---
 
 # Flow block in Connect Customer: Set event flow
-<a name="set-event-flow"></a>
 
 This topic defines the flow block for specifying a flow to run during an interaction with a contact.
 

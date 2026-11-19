@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/working-with-
 ---
 
 # Build projects
-<a name="working-with-build-projects"></a>
 
 A *build project* includes information about how to run a build, including where to get the source code, which build environment to use, which build commands to run, and where to store the build output.
 

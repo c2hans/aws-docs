@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVir
 ---
 
 # ListVirtualNodes
-<a name="API_ListVirtualNodes"></a>
 
 Returns a list of existing virtual nodes.
 

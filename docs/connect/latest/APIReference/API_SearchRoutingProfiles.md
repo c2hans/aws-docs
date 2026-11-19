@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchRo
 ---
 
 # SearchRoutingProfiles
-<a name="API_SearchRoutingProfiles"></a>
 
 Searches routing profiles in an Connect Customer instance, with optional filtering.
 

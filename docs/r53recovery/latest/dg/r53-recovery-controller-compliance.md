@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/r53-recovery-contr
 ---
 
 # Compliance validation for Amazon Application Recovery Controller
-<a name="r53-recovery-controller-compliance"></a>
 
 Third-party auditors assess the security and compliance of Amazon Application Recovery Controller as part of multiple AWS compliance programs. These include SOC, PCI, HIPAA, and others.
 

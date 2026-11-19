@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/stepping-stone.html
 ---
 
 # Using Amazon Chime SDK Voice Connector as a stepping stone to Amazon Connect Customer
-<a name="stepping-stone"></a>
 
 Your organization might not be ready to fully adopt Amazon Connect Customer today, but you might have existing telephony infrastructure to maintain. In that case, Amazon Chime SDK Voice Connector can serve as an interim step on your migration path:
 + **Start with Amazon Chime SDK Voice Connector** to connect your existing PBX or SBC to AWS and establish PSTN connectivity through the AWS cloud.

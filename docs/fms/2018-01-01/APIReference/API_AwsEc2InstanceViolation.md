@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_AwsEc2In
 ---
 
 # AwsEc2InstanceViolation
-<a name="API_AwsEc2InstanceViolation"></a>
 
 Violation detail for an EC2 instance resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ObjectLockConfig
 ---
 
 # ObjectLockConfiguration
-<a name="API_ObjectLockConfiguration"></a>
 
 The container element for Object Lock configuration parameters.
 

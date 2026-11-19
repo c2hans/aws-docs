@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-quot
 ---
 
 # Recovery plan quotas
-<a name="recovery-plans-quotas"></a>
 
 The following quotas apply to recovery plans in each AWS account and Region:
 

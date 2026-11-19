@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/standalone-admin-
 ---
 
 # Administering AWS Quick (Free/Plus/Max)
-<a name="standalone-admin-guide"></a>
 
 This section covers administration for AWS Quick Free, Plus, and Max accounts that you create at [aws.com/quick](https://aws.com/quick). Free, Plus, and Max accounts use email or social login for authentication and don't require an AWS account. You can manage users, assets, billing, and account settings directly from the AWS Quick web interface.
 

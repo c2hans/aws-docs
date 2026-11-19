@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ec2_example_ecs_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a container task for the serverless launch type
-<a name="ec2_example_ecs_GettingStarted_086_section"></a>
 
 The following code example shows how to:
 + Create the cluster

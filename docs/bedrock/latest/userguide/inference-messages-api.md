@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-messa
 ---
 
 # Inference using Anthropic Messages API
-<a name="inference-messages-api"></a>
 
 The Anthropic Messages API provides native access to Claude models using the Anthropic request and response format. You can use the Messages API on both the `bedrock-runtime` and `bedrock-mantle` endpoints. For new applications, we recommend the `bedrock-runtime` endpoint.
 

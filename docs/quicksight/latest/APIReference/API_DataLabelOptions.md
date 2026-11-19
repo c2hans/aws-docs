@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataL
 ---
 
 # DataLabelOptions
-<a name="API_DataLabelOptions"></a>
 
 The options that determine the presentation of the data labels.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AccountJiraConfigurationOutput
-<a name="API_AccountJiraConfigurationOutput"></a>
 
 Account-level: Output configuration of the Jira integration.
 

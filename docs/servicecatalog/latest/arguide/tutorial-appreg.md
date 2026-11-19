@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/arguide/tutorial-a
 AWS Service Catalog AppRegistry is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Service Catalog AppRegistry availability change](https://docs.aws.amazon.com/servicecatalog/latest/arguide/app-registry-availability-change.html).
 
 # Tutorial: Create your first application and attribute group in AppRegistry
-<a name="tutorial-appreg"></a>
 
  The procedures in this topic describe how to get started with AppRegistry.
 

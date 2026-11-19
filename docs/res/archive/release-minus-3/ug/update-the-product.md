@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/update-th
 ---
 
 # Update the product
-<a name="update-the-product"></a>
 
 Research and Engineering Studio (RES) has two methods of updating the product which depend on if the version update is major or minor.
 

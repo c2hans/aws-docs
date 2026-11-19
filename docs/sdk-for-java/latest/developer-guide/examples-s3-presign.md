@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with Amazon S3 pre-signed URLs
-<a name="examples-s3-presign"></a>
 
 Pre-signed URLs provide temporary access to private S3 objects without requiring users to have AWS credentials or permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CreateCacheSecurityGroup
-<a name="API_CreateCacheSecurityGroup"></a>
 
 Creates a new cache security group. Use a cache security group to control access to one or more clusters.
 

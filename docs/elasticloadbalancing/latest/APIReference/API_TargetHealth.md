@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # TargetHealth
-<a name="API_TargetHealth"></a>
 
 Information about the current health of a target.
 

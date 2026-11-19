@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/adp.
 ---
 
 # Demand Planning
-<a name="adp"></a>
 
 The following APIs are used in AWS Supply Chain to create and manage forecasts, demand plans, or workbooks.
 

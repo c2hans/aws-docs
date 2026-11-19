@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/troubleshooting-connectio
 ---
 
 # Troubleshooting connection issues in AWS Glue
-<a name="troubleshooting-connection"></a>
 
 When an AWS Glue crawler or a job uses connection properties to access a data store, you might encounter errors when you try to connect. AWS Glue uses private IP addresses in the subnet when it creates elastic network interfaces in your specified virtual private cloud (VPC) and subnet. Security groups specified in the connection are applied on each of the elastic network interfaces. Check to see whether security groups allow outbound access and if they allow connectivity to the database cluster.
 

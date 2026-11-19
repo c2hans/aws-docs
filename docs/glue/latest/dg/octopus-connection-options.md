@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/octopus-connection-option
 ---
 
 # Octopus Deploy connection options
-<a name="octopus-connection-options"></a>
 
 The following are connection options for Octopus Deploy:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Octopus Deploy object to read.

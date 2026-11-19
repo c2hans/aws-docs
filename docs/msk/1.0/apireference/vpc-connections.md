@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/vpc-connections.htm
 ---
 
 # Vpc-connections
-<a name="vpc-connections"></a>
 
 ## URI
 <a name="vpc-connections-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSsmP
 ---
 
 # AwsSsmPatchComplianceDetails
-<a name="API_AwsSsmPatchComplianceDetails"></a>
 
 Provides information about the state of a patch on an instance based on the patch baseline that was used to patch the instance.
 

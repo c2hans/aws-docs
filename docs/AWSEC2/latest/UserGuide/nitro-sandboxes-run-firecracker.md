@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitro-sandboxes-
 ---
 
 # Run Nitro Sandboxes with Firecracker
-<a name="nitro-sandboxes-run-firecracker"></a>
 
 You can run Nitro Sandboxes on an Amazon EC2 instance with your own orchestrator and Firecracker. For a container-focused flow in which Amazon Elastic Kubernetes Service (Amazon EKS) or Amazon Elastic Container Service (Amazon ECS) runs each pod or task in its own Nitro Sandbox, see [Sandboxing on Amazon EKS with isolated and confidential pods](https://docs.aws.amazon.com/eks/latest/userguide/sandboxing.html) in the *Amazon EKS User Guide* and [Isolated and confidential tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/isolated-confidential-tasks.html) in the *Amazon Elastic Container Service Developer Guide*. The operating system that runs in a Nitro Sandbox is called the *guest*. Your orchestrator operates the parent instance, and you are responsible for the following tasks:
 + Building guest images with the settings that your workload needs.

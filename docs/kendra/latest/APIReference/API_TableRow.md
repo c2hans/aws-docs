@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_TableRow.
 ---
 
 # TableRow
-<a name="API_TableRow"></a>
 
 Information about a row in a table excerpt.
 

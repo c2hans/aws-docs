@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/edit-vp-domain.html
 ---
 
 # Editing voice profile domains
-<a name="edit-vp-domain"></a>
 
 You can edit any voice profile domain, regardless of who created it.
 

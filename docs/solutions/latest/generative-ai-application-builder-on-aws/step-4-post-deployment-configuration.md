@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Step 4: Post-deployment configuration
-<a name="step-4-post-deployment-configuration"></a>
 
 This section provides recommendations for configuring the solution after deployment.
 

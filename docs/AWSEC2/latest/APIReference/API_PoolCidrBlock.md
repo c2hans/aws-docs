@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PoolCidrB
 ---
 
 # PoolCidrBlock
-<a name="API_PoolCidrBlock"></a>
 
 Describes a CIDR block for an address pool.
 

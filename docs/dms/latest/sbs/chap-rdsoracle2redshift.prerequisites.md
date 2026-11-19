@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2redshift.p
 ---
 
 # Prerequisites for migrating from Amazon RDS for Oracle to Amazon Redshift
-<a name="chap-rdsoracle2redshift.prerequisites"></a>
 
 The following prerequisites are also required to complete this walkthrough:
 + Familiarity with Amazon RDS, Amazon Redshift, the applicable database technologies, and SQL.

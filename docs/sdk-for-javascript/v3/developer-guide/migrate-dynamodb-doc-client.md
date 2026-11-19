@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # DynamoDB document client
-<a name="migrate-dynamodb-doc-client"></a>
 
 ## Basic usage of DynamoDB document client in v3
 <a name="basic-usage-of-dynamodb-document-client-in-v3"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RetryP
 ---
 
 # RetryPipelineExecution
-<a name="API_RetryPipelineExecution"></a>
 
 Retry the execution of the pipeline.
 

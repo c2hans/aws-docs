@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/remove-members-multicast-
 ---
 
 # Deregister members from a multicast group in AWS Transit Gateway
-<a name="remove-members-multicast-group"></a>
 
 You don't need to follow this procedure unless you manually added a member to the multicast group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/algorithms-tabular.h
 ---
 
 # Built-in SageMaker AI Algorithms for Tabular Data
-<a name="algorithms-tabular"></a>
 
 Amazon SageMaker AI provides built-in algorithms that are tailored to the analysis of tabular data. Tabular data refers to any datasets that are organized in tables consisting of rows (observations) and columns (features). The built-in SageMaker AI algorithms for tabular data can be used for either classification or regression problems.
 + [AutoGluon-Tabular](autogluon-tabular.md)—an open-source AutoML framework that succeeds by ensembling models and stacking them in multiple layers.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/get-started-sec
 ---
 
 # Securing access to an Amazon Neptune cluster
-<a name="get-started-security"></a>
 
 There are multiple ways for you to secure your Amazon Neptune clusters.
 

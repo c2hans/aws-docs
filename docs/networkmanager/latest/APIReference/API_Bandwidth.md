@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_B
 ---
 
 # Bandwidth
-<a name="API_Bandwidth"></a>
 
 Describes bandwidth information.
 

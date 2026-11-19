@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # RuleBasedMatchingRequest
-<a name="API_connect-customer-profiles_RuleBasedMatchingRequest"></a>
 
 The request to enable the rule-based matching.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSSOServiceRolePolicy
-<a name="AWSSSOServiceRolePolicy"></a>
 
 **Description**: Grants AWS SSO permissions to manage AWS resources, including IAM roles, policies and SAML IdP on your behalf.
 

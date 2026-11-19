@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeConfigurationRecorders
-<a name="API_DescribeConfigurationRecorders"></a>
 
 Returns details for the configuration recorder you specify.
 

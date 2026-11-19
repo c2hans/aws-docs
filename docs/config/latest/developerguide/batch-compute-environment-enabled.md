@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/batch-compu
 ---
 
 # batch-compute-environment-enabled
-<a name="batch-compute-environment-enabled"></a>
 
 Checks if AWS Batch compute environments are enabled. The rule is NON\_COMPLIANT if configuration.State is 'DISABLED'.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Sche
 ---
 
 # SchemaSummary
-<a name="API_SchemaSummary"></a>
 
 The schema summary for the objects listed by the request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-on-outpos
 ---
 
 # Amazon RDS on AWS Outposts
-<a name="rds-on-outposts"></a>
 
 Amazon RDS on AWS Outposts extends RDS for SQL Server, RDS for MySQL, RDS for PostgreSQL, and RDS for Oracle databases to AWS Outposts Rack Gen1 and Gen2 environments. AWS Outposts uses the same hardware as in public AWS Regions to bring AWS services, infrastructure, and operation models on-premises. With RDS on Outposts, you can provision managed DB instances close to the business applications that must run on-premises. For more information about AWS Outposts, see the [AWS Outposts documentation](https://docs.aws.amazon.com/outposts/) and the [AWS Outposts product page](https://aws.amazon.com/outposts/).
 

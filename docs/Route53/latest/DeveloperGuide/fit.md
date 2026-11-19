@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fit.html
 ---
 
 # .fit
-<a name="fit"></a>
 
 Used for fitness, health, and wellness-related websites and businesses.
 

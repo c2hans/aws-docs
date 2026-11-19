@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CapabilityCo
 ---
 
 # CapabilityConfigurationResponse
-<a name="API_CapabilityConfigurationResponse"></a>
 
 The response object containing capability configuration details.
 

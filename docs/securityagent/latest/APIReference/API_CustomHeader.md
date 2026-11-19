@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cu
 ---
 
 # CustomHeader
-<a name="API_CustomHeader"></a>
 
 A custom HTTP header to include in network traffic during penetration testing.
 

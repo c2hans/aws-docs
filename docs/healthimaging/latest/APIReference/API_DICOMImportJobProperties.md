@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DI
 ---
 
 # DICOMImportJobProperties
-<a name="API_DICOMImportJobProperties"></a>
 
 Properties of the import job.
 

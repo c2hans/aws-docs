@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationKubernetesConfigurationResult
-<a name="API_OrganizationKubernetesConfigurationResult"></a>
 
 The current configuration of all Kubernetes data sources for the organization.
 

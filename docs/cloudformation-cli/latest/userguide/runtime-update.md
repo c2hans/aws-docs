@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/runt
 ---
 
 # Updating Lambda runtimes for resource types and hooks
-<a name="runtime-update"></a>
 
 AWS CloudFormation resource types and hooks are developed using CloudFormation CLI language plug-ins available for Go, Java, Python, and TypeScript. The language plug-ins eventually need to be updated in order to maintain compatibility.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/promoting-items.ht
 ---
 
 # Promoting items in real-time recommendations
-<a name="promoting-items"></a>
 
  With all domain use cases and some custom recipes, you can specify a promotion when you get real-time recommendations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ChallengeRes
 ---
 
 # ChallengeResponse
-<a name="API_ChallengeResponse"></a>
 
 The result from the inspection of the web request for a valid challenge token.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-emr-serv
 ---
 
 # Run an EMR Serverless job
-<a name="sample-emr-serverless-job"></a>
 
 This sample project demonstrates how to create and start an EMR Serverless application and run multiple jobs within it.
 

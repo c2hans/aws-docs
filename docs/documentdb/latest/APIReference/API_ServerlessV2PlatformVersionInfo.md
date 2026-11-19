@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Serve
 ---
 
 # ServerlessV2PlatformVersionInfo
-<a name="API_ServerlessV2PlatformVersionInfo"></a>
 
 Contains details about a specific Amazon DocumentDB Serverless platform version, including its version number, status, engine, and supported features.
 

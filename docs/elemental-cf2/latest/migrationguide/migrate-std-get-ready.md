@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/migrationguide/migr
 ---
 
 # Step A: Get ready to migrate an AWS Elemental Conductor File cluster
-<a name="migrate-std-get-ready"></a>
 
 ## Read the essential notes
 <a name="migrate-std-essential-notes"></a>

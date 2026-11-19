@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/define-crawler-choose-dat
 ---
 
 # Step 2: Choose data sources and classifiers
-<a name="define-crawler-choose-data-sources"></a>
 
 Next, configure the data sources and classifiers for the crawler.
 

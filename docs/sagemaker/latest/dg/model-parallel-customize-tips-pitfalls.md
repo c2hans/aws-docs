@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-custo
 ---
 
 # The SageMaker Distributed Model Parallelism Library Configuration Tips and Pitfalls
-<a name="model-parallel-customize-tips-pitfalls"></a>
 
 Review the following tips and pitfalls before using Amazon SageMaker AI's model parallelism library. This list includes tips that are applicable across frameworks. For TensorFlow and PyTorch specific tips, see [Modify a TensorFlow training script](model-parallel-customize-training-script-tf.md) and [Modify a PyTorch Training Script](model-parallel-customize-training-script-pt.md), respectively.
 

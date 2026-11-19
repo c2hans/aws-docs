@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # IdentityCenterConfiguration
-<a name="API_IdentityCenterConfiguration"></a>
 
 Identity Center specific configuration.
 

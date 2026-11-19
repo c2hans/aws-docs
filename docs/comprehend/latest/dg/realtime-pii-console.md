@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/realtime-pii-consol
 ---
 
 # PII real-time analysis (Console)
-<a name="realtime-pii-console"></a>
 
 You can use the console to run PII real-time detection of a text document. The maximum text size is 100 kilobytes of UTF-8 encoded characters. The console displays the results so that you can review the analysis.
 

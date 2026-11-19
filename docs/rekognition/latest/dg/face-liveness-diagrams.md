@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-diag
 ---
 
 # Architecture and Sequence Diagrams
-<a name="face-liveness-diagrams"></a>
 
  The following diagrams detail how Amazon Rekognition Face Liveness operates regarding the feature's architecture and sequence of operations:
 

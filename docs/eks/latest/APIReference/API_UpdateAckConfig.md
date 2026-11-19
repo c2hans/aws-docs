@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateAckCon
 ---
 
 # UpdateAckConfig
-<a name="API_UpdateAckConfig"></a>
 
 Configuration updates for an ACK (AWS Controllers for Kubernetes) capability. You only need to specify the fields that you want to update.
 

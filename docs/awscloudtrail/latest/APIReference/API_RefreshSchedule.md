@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Re
 ---
 
 # RefreshSchedule
-<a name="API_RefreshSchedule"></a>
 
  The schedule for a dashboard refresh.
 

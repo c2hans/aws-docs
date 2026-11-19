@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_WordC
 ---
 
 # WordCloudAggregatedFieldWells
-<a name="API_WordCloudAggregatedFieldWells"></a>
 
 The aggregated field wells of a word cloud.
 

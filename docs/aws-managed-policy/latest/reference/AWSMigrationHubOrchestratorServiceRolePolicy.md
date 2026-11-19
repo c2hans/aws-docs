@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubOrchestratorServiceRolePolicy
-<a name="AWSMigrationHubOrchestratorServiceRolePolicy"></a>
 
 **Description**: Provides permissions necessary for Migration Hub Orchestrator to migrate and modernize your on-premises workloads
 

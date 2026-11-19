@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # StartEarthObservationJob
-<a name="API_geospatial_StartEarthObservationJob"></a>
 
 Use this operation to create an Earth observation job.
 

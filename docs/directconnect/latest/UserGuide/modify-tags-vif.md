@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/modify-ta
 ---
 
 # Add or remove Direct Connect virtual interface tags
-<a name="modify-tags-vif"></a>
 
 Tags provide a way to identify the virtual interface. You can add or remove a tag using either the Direct Connect console or using the command line or API if you are the account owner for the virtual interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tro
 ---
 
 # Troubleshooting internal server errors in Amazon DynamoDB
-<a name="TroubleshootingInternalServerErrors"></a>
 
 In DynamoDB, internal server errors (500 errors) indicate that the service is unable to serve the request. These errors can occur for various reasons, such as transient network issues in the fleet, infrastructure issues, storage node related issues, and more.
 

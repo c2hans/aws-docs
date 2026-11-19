@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_S
 ---
 
 # SearchProductsAsAdmin
-<a name="API_SearchProductsAsAdmin"></a>
 
 Gets information about the products for the specified portfolio or all products.
 

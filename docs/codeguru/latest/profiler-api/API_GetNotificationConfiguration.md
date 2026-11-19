@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetNoti
 ---
 
 # GetNotificationConfiguration
-<a name="API_GetNotificationConfiguration"></a>
 
 Get the current configuration for anomaly notifications for a profiling group.
 

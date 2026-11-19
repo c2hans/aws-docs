@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/list-control
 ---
 
 # List control panels
-<a name="list-control-panels"></a>
 
 A control panel is a logical grouping for organizing your Amazon Application Recovery Controller routing controls. When you create a cluster, Amazon Application Recovery Controller automatically provides a control panel for you called `DefaultControlPanel`. You can use this control panel right away.
 

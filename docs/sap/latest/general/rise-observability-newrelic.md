@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-observability-ne
 ---
 
 # New Relic Monitoring for SAP
-<a name="rise-observability-newrelic"></a>
 
 New Relic Monitoring for SAP is a comprehensive observability solution that provides a holistic, end-to-end view connecting SAP performance to business outcomes and non-SAP systems. The solution enables organizations to monitor their entire enterprise stack through a single pane of glass, offering unified visibility across SAP landscapes with AI-driven insights and powerful visualizations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sessi
 ---
 
 # SessionTag
-<a name="API_SessionTag"></a>
 
 The key-value pair used for the row-level security tags feature.
 

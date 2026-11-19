@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/proserv-pro
 ---
 
 # Providing details for a professional services product in AWS Marketplace
-<a name="proserv-product-details"></a>
 
 When you publish a professional services product on AWS Marketplace, you must provide the product metadata. Product metadata includes product settings for visibility and pricing and product information that provide buyers with more information about your professional services product. You can edit product descriptions, additional resources, pricing dimensions, and product visibility. The following sections provide information that you can use as you prepare or edit your product details.
 

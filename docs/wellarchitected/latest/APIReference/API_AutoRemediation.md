@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AutoRemediation
-<a name="API_AutoRemediation"></a>
 
 The per-resource auto-remediation for a single affected resource. Represents one AWS Systems Manager (SSM) runbook execution that targets the resource. Present only when the resource's check is backed by an SSM automation runbook.
 

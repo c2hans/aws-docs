@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/skills.ht
 ---
 
 # Skills
-<a name="skills"></a>
 
 Agent skills are curated packages of instructions, code scripts, and reference materials that help AI coding agents complete specific AWS tasks. Skills bridge the gap between what AI models know from training data and what they need to work effectively with AWS. This is especially important for newer services, complex multi-service workflows, and tasks where best practices matter.
 

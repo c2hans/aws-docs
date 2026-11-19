@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-at
 ---
 
 # Attaching a project policy (SDK)
-<a name="md-attach-project-policy"></a>
 
 You attach a project policy to an Amazon Rekognition Custom Labels project by calling the [PutProjectpolicy](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_PutProjectPolicy) operation.
 

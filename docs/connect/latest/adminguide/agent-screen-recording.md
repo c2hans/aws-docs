@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-screen-r
 ---
 
 # Set up and review agent screen recordings in Connect Customer
-<a name="agent-screen-recording"></a>
 
 To help coach your agents to provide great customer service, you can use the screen recording feature to gain quality management insights. It records the agent's desktop, which helps you identify opportunities to improve performance. This information is also useful for ensuring compliance.
 

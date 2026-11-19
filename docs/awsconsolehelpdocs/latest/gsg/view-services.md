@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/view-servi
 ---
 
 # Viewing all AWS services in AWS Console Home
-<a name="view-services"></a>
 
 You can view a list of all AWS services and access their consoles from Console Home.
 

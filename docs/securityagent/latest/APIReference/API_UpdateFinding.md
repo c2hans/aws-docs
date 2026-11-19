@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdateFinding
-<a name="API_UpdateFinding"></a>
 
 Updates the status or risk level of a security finding.
 

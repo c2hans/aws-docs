@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/develo
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
 ## Source code
 <a name="source-code"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/example_me
 ---
 
 # Use `ListImageSetVersions` with an AWS SDK or CLI
-<a name="example_medical-imaging_ListImageSetVersions_section"></a>
 
 The following code examples show how to use `ListImageSetVersions`.
 

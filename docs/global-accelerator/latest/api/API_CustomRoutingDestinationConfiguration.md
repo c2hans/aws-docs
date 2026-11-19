@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Custom
 ---
 
 # CustomRoutingDestinationConfiguration
-<a name="API_CustomRoutingDestinationConfiguration"></a>
 
 For a custom routing accelerator, sets the port range and protocol for all endpoints (virtual private cloud subnets) in an endpoint group to accept client traffic on.
 

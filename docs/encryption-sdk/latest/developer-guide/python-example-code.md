@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/py
 ---
 
 # AWS Encryption SDK for Python example code
-<a name="python-example-code"></a>
 
 The following examples show you how to use the AWS Encryption SDK for Python to encrypt and decrypt data.
 

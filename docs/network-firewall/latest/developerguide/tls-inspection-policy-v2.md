@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/t
 ---
 
 # TLS inspection with a Next Generation policy in AWS Network Firewall
-<a name="tls-inspection-policy-v2"></a>
 
 You can use TLS inspection with a Next Generation policy. For information about Next Generation policies, see [Next Generation policies](firewall-policies-v2.md).
 

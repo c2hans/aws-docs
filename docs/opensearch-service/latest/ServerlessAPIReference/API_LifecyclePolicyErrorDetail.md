@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # LifecyclePolicyErrorDetail
-<a name="API_LifecyclePolicyErrorDetail"></a>
 
 Error information for an OpenSearch Serverless request.
 

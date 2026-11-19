@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::EventSourceMapping SchemaValidationConfig
-<a name="aws-properties-lambda-eventsourcemapping-schemavalidationconfig"></a>
 
 Specific schema validation configuration settings that tell Lambda the message attributes you want to validate and filter using your schema registry.
 

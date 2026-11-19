@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/uops-workload-inc
 ---
 
 # Unified Operations Workload incident management
-<a name="uops-workload-inc-management"></a>
 
 Workload incident management includes the following key elements:
 + AWS Support case creation.

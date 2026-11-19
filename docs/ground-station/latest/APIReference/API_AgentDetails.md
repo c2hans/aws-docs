@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AgentDetails
-<a name="API_AgentDetails"></a>
 
 Detailed information about the agent.
 

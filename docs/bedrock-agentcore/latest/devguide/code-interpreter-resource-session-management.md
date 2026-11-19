@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Resource and session management
-<a name="code-interpreter-resource-session-management"></a>
 
 The following topics show how the Amazon Bedrock AgentCore Code Interpreter works and how you can create the resources and manage sessions.
 

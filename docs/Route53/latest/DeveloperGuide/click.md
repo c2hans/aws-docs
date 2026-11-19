@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/click.html
 ---
 
 # .click
-<a name="click"></a>
 
 Used by businesses that want to associate the action of clicking with their websites, for example, clicking products on a website to purchase them.
 

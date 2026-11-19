@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Iterating the prioritization criteria
-<a name="iterating-prioritization-criteria"></a>
 
 Before you create migration wave plans, we recommend that you iterate the application prioritization criteria to pivot from pilot application selection to long-term wave planning.
 

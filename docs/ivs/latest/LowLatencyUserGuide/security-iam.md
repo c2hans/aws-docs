@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/security-
 ---
 
 # Identity and Access Management in IVS
-<a name="security-iam"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an account administrator securely control access to AWS resources. Every AWS resource is owned by an AWS account, and permissions to create or access a resource are governed by permissions policies. IAM account administrators control who can be authenticated (signed in) and authorized (have permissions) to use Amazon IVS resources. IAM is a feature of your AWS account offered at no additional charge.
 

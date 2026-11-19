@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/s3-i
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Using the Service Level S3 APIs
-<a name="s3-integration-lowlevelapi"></a>
 
 In addition to using the S3 TransferUtility, you can also interact with S3 using the low-level S3 APIs.
 

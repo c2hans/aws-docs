@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeliveryDestinationConfiguration
-<a name="API_DeliveryDestinationConfiguration"></a>
 
 A structure that contains information about one logs delivery destination.
 

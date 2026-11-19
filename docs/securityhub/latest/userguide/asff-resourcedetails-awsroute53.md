@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # AwsRoute53 resources in ASFF
-<a name="asff-resourcedetails-awsroute53"></a>
 
 The following are examples of the AWS Security Finding Format (ASFF) syntax for `AwsRoute53` resources.
 

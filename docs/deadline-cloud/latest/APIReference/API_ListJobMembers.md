@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListJobMembers
-<a name="API_ListJobMembers"></a>
 
 Lists members on a job.
 

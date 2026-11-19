@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Bul
 ---
 
 # Bulk put items output and reconciliation
-<a name="BulkPutItems.Output"></a>
 
 When a bulk put items operation completes, DynamoDB outputs a report to the Amazon S3 bucket you specified in [OutputS3Configuration](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_OutputS3Configuration.html). This report contains details about items that were not written.
 

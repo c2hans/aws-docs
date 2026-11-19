@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/listing-services.htm
 ---
 
 # Listing AWS Cloud Map services in a namespace
-<a name="listing-services"></a>
 
 To view a list of the services that you created in a namespace, perform the following procedure.
 

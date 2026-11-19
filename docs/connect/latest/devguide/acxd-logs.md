@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-logs.html
 ---
 
 # Logs
-<a name="acxd-logs"></a>
 
 Query conversation event logs with time-based and attribute-based filters.
 

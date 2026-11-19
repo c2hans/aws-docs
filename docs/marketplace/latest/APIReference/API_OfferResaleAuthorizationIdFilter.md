@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferResaleAuthorizationIdFilter
-<a name="API_OfferResaleAuthorizationIdFilter"></a>
 
 Allows filtering on the `ResaleAuthorizationId` of an offer.
 

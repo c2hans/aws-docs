@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # Security
-<a name="security"></a>
 
 A fully CI/CD process provides a fully automated single source of truth approach to deployment. The pipeline has a single point of entry. Software updates enter the pipeline at the beginning and are passed as-is from one environment to the next. If an issue is discovered at any stage in the pipeline, the code changes that fix it must go through the same process and start at the first stage. Reducing the points of entry in a pipeline also reduces the possible ways that vulnerabilities can be introduced into the pipeline.
 

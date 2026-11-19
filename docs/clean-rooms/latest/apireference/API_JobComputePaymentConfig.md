@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_JobC
 ---
 
 # JobComputePaymentConfig
-<a name="API_JobComputePaymentConfig"></a>
 
 An object representing the collaboration member's payment responsibilities set by the collaboration creator for query and job compute costs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_WaitStartedDetails
 ---
 
 # WaitStartedDetails
-<a name="API_WaitStartedDetails"></a>
 
 Details about a wait operation that has started.
 

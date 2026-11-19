@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMESEC03-BP05 Provide an option for players to set up multi-factor authentication (MFA) on their accounts
-<a name="gamsec03-bp05"></a>
 
  Player accounts can be an asset to bad actors, particularly in games that support in-game currency and purchases. Due to the pervasiveness of player account hacking and social engineering attacks, provide players with the option to enhance the security of their accounts by configuring multi-factor authentication (MFA).
 

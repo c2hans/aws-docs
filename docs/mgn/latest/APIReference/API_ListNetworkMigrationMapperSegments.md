@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationMapperSegments
-<a name="API_ListNetworkMigrationMapperSegments"></a>
 
 Lists mapper segments, which represent logical groupings of network resources to be migrated together.
 

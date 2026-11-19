@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_KubeControll
 ---
 
 # KubeControllerManagerConfigResponse
-<a name="API_KubeControllerManagerConfigResponse"></a>
 
 The Kubernetes controller manager configuration for an Amazon EKS cluster.
 

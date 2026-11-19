@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/troubleshooting-efs-mounti
 ---
 
 # Troubleshooting mount issues
-<a name="troubleshooting-efs-mounting"></a>
 
 Following, you can find information about troubleshooting EFS file system mounting issues.
 

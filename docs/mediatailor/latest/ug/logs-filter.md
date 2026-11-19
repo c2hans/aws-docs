@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/logs-filter.html
 ---
 
 # Filtering AWS Elemental MediaTailor logs and events
-<a name="logs-filter"></a>
 
 Logs emitted from a playback configuration in MediaTailor include information about a variety of activities that happen during the playback session. These activities are identified in the event type of the logs. Many events are logged by default. To help control the cost of logs in Amazon CloudWatch, you can specify the logs that MediaTailor emits.
 

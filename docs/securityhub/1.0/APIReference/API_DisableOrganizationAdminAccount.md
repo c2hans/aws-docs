@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Disable
 ---
 
 # DisableOrganizationAdminAccount
-<a name="API_DisableOrganizationAdminAccount"></a>
 
 Disables a Security Hub CSPM administrator account. Can only be called by the organization management account.
 

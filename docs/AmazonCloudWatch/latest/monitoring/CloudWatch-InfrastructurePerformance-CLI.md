@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Monitor using the AWS CLI
-<a name="CloudWatch-InfrastructurePerformance-CLI"></a>
 
 Use the `get-aws-network-performance-data` command to return network performance metrics. For more information, see [GetAwsNetworkPerformanceData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAwsNetworkPerformanceData.html) in the *Amazon EC2 API Reference*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GlobalTableWitnessDescription
-<a name="API_GlobalTableWitnessDescription"></a>
 
 Represents the properties of a witness Region in a MRSC global table.
 

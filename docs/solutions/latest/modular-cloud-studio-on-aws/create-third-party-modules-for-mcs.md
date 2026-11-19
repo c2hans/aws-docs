@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Create Third-Party Modules for MCS
-<a name="create-third-party-modules-for-mcs"></a>
 
 You can create your own third-party MCS modules by following these steps:
 

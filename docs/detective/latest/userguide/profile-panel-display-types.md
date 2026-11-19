@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/profile-panel
 ---
 
 # Types of profile panel visualizations
-<a name="profile-panel-display-types"></a>
 
 Profile panel content can take one of the following forms.
 

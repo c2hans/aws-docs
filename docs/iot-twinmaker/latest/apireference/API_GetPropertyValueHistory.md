@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ge
 ---
 
 # GetPropertyValueHistory
-<a name="API_GetPropertyValueHistory"></a>
 
 Retrieves information about the history of a time series property value for a component, component type, entity, or workspace.
 

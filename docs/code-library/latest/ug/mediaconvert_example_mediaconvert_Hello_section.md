@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/mediaconvert_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Hello MediaConvert
-<a name="mediaconvert_example_mediaconvert_Hello_section"></a>
 
 The following code example shows how to get started using AWS Elemental MediaConvert.
 

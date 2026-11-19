@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ScaleInPolicyUpdate
 ---
 
 # ScaleInPolicyUpdate
-<a name="API_ScaleInPolicyUpdate"></a>
 
 An update to the connector's scale-in policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Pre-session initialization
-<a name="monetization-functions-hooks-pre-session"></a>
 
 ## When it fires
 <a name="monetization-functions-hooks-pre-session-when"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # AWS Industrial Anomaly Detection Using AWS IoT
-<a name="industrial-anomaly-detection-iot"></a>
 
 Publication date: **October 12, 2021 ([Diagram history](#iad-diagram-history))**
 

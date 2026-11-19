@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateStep
-<a name="API_UpdateStep"></a>
 
 Updates a step.
 

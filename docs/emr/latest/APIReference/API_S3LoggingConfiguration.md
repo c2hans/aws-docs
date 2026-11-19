@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_S3LoggingCon
 ---
 
 # S3LoggingConfiguration
-<a name="API_S3LoggingConfiguration"></a>
 
 Configuration for S3 logging behavior in EMR clusters. Defines how different types of logs are uploaded to S3 based on the specified upload policies for each log type.
 

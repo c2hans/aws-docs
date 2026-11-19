@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BatchDelet
 ---
 
 # BatchDeleteCustomVocabularyItem
-<a name="API_BatchDeleteCustomVocabularyItem"></a>
 
 Delete a batch of custom vocabulary items for a given bot locale's custom vocabulary.
 

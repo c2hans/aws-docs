@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/organizat
 ---
 
 # Sharing AWS Data Exchange license subscriptions in an organization
-<a name="organizations-sharing"></a>
 
 When you subscribe to AWS Data Exchange products, an agreement is created that grants you license to use those products. If your AWS account is a member of an organization, you can share that license for AWS Data Exchange products with the other accounts in that organization.
 

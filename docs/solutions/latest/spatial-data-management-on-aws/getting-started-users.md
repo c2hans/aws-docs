@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Getting Started for users
-<a name="getting-started-users"></a>
 
 ## Test or Proof of Concept Setup
 <a name="test-proof-of-concept-setup"></a>

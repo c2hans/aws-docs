@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/apply-sna
 ---
 
 # Apply a snapshot
-<a name="apply-snapshot"></a>
 
 Once you have created a snapshot of an environment, you can apply that snapshot to a new environment to migrate data. You will need to add a new policy to the bucket allowing the environment to read the snapshot.
 

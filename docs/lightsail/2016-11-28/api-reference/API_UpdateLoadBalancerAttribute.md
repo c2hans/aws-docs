@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_U
 ---
 
 # UpdateLoadBalancerAttribute
-<a name="API_UpdateLoadBalancerAttribute"></a>
 
 Updates the specified attribute for a load balancer. You can only update one attribute at a time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FoundByKeyValue
-<a name="API_connect-customer-profiles_FoundByKeyValue"></a>
 
 A data type pair that consists of a `KeyName` and `Values` list that were used to find a profile returned in response to a [SearchProfiles](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html) request.
 

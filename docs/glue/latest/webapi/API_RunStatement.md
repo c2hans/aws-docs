@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RunStatement.html
 ---
 
 # RunStatement
-<a name="API_RunStatement"></a>
 
 Executes the statement.
 

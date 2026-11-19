@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeCommunications
-<a name="API_DescribeCommunications"></a>
 
 Returns communications and attachments for one or more support cases. Use the `afterTime` and `beforeTime` parameters to filter by date. You can use the `caseId` parameter to restrict the results to a specific case.
 

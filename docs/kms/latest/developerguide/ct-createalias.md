@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-createalias
 ---
 
 # CreateAlias
-<a name="ct-createalias"></a>
 
 The following example shows an AWS CloudTrail log entry for the [CreateAlias](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateAlias.html) operation. The `resources` element includes fields for the alias and KMS key resources. For information about creating aliases in AWS KMS, see [Create aliases](alias-create.md).
 

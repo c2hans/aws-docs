@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/certificate-types.h
 ---
 
 # Types of certificates in AWS Certificate Manager
-<a name="certificate-types"></a>
 
 AWS Certificate Manager (ACM) supports three types of certificates. Each type serves different use cases depending on your security requirements and infrastructure needs.
 

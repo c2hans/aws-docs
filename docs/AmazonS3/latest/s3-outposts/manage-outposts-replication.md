@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/manage-outpo
 ---
 
 # Managing your replication
-<a name="manage-outposts-replication"></a>
 
 This section describes additional replication configuration options that are available in S3 on Outposts, how to determine the replication status, and how to troubleshot replication. For information about core replication configuration, see [Setting up replication](outposts-replication-how-setup.md).
 

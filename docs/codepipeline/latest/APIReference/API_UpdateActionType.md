@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Upd
 ---
 
 # UpdateActionType
-<a name="API_UpdateActionType"></a>
 
 Updates an action type that was created with any supported integration model, where the action type is to be used by customers of the action type provider. Use a JSON file with the action definition and `UpdateActionType` to provide the full structure.
 

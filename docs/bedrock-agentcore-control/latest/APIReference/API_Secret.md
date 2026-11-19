@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Secret
-<a name="API_Secret"></a>
 
 Contains information about a secret in AWS Secrets Manager.
 

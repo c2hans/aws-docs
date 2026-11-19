@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWi
 ---
 
 # Connecting to your DB cluster using IAM authentication and the AWS SDK for Python (Boto3)
-<a name="UsingWithRDS.IAMDBAuth.Connecting.Python"></a>
 
 You can connect to an Aurora MySQL or Aurora PostgreSQL DB cluster with the AWS SDK for Python (Boto3) as described following.
 

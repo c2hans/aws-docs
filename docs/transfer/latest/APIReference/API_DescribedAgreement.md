@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedAgreement
-<a name="API_DescribedAgreement"></a>
 
 Describes the properties of an agreement.
 

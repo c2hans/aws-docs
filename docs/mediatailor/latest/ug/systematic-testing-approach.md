@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/systematic-testing
 ---
 
 # Systematic testing methodology for CDN and MediaTailor integrations
-<a name="systematic-testing-approach"></a>
 
 AWS Elemental MediaTailor content delivery network (CDN) integration testing should follow a systematic, phased approach to ensure comprehensive coverage. Follow this structured approach to comprehensively test your content delivery network and MediaTailor integration. Each phase builds on the previous one to isolate potential issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_Item.html
 ---
 
 # Item
-<a name="API_UBS_Item"></a>
 
 Represents item metadata added to an Items dataset using the `PutItems` API. For more information see [Importing items individually](https://docs.aws.amazon.com/personalize/latest/dg/importing-items.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # RepositoryCatalogDataInput
-<a name="API_RepositoryCatalogDataInput"></a>
 
 An object that contains the catalog data for a repository. This data is publicly visible in the Amazon ECR Public Gallery.
 

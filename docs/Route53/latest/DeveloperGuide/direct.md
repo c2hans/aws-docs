@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/direct.htm
 ---
 
 # .direct
-<a name="direct"></a>
 
 Used as a general extension, but ideal for those who sell products directly to customers through an e-commerce website.
 

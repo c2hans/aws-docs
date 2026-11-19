@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Integration Planning
-<a name="integration-planning"></a>
 
 ## External Systems
 <a name="external-systems"></a>

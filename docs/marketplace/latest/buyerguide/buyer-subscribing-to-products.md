@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-subs
 ---
 
 # Buying products in AWS Marketplace
-<a name="buyer-subscribing-to-products"></a>
 
 In AWS Marketplace, buying a product means that you have accepted the terms of the product as shown on the product detail page. This includes pricing terms and the seller’s end user license agreement (EULA), and that you agree to use such product in accordance with the [AWS Customer Agreement](https://aws.amazon.com/agreement/). You will receive an email notification to the email address associated with your AWS account for offers accepted in AWS Marketplace.
 

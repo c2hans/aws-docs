@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CloudWatchDirectQueryDataSource
-<a name="API_CloudWatchDirectQueryDataSource"></a>
 
  Configuration details for a CloudWatch Logs data source that can be used for direct queries.
 

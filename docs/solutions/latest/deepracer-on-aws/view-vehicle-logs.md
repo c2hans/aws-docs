@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/view-v
 ---
 
 # View vehicle logs
-<a name="view-vehicle-logs"></a>
 
 Your AWS DeepRacer vehicle logs operational events that can be helpful for troubleshooting issues encountered in running your vehicle. There are two types of AWS DeepRacer vehicle logs:
 + The system event log keeps track of operations taking place in the vehicle’s computer operating system, such as process managing, Wi-Fi connecting or password reset events.

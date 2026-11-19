@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # ROLLING\_KTH\_LARGEST
-<a name="recipe-actions.functions.ROLLING_KTH_LARGEST"></a>
 
 Returns in a new column the rolling *k*th largest value from a specified number of rows before to a specified number of rows after the current row in the specified column.
 

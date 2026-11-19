@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-studio-data-preparat
 ---
 
 # Import a AWS Glue DataBrew recipe in AWS Glue Studio
-<a name="glue-studio-data-preparation-import-recipe"></a>
 
  In AWS Glue DataBrew, a recipe is a set of data transformation steps. AWS Glue DataBrew recipes prescribes how to transform data that have already been read and doesn't describe where and how to read data, as well as how and where to write data. This is configured in Source and Target nodes in AWS Glue Studio. For more information on recipes, see [ Creating and using AWS Glue DataBrew recipes ](https://docs.aws.amazon.com/databrew/latest/dg/recipes.html).
 

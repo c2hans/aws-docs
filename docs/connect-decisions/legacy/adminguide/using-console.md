@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/usin
 ---
 
 # Using AWS Supply Chain console
-<a name="using-console"></a>
 
 Using the console is the easiest way to manage your service resources and configurations. The console provides an intuitive web-based interface where you can view, create, modify, and monitor your resources. This section shows you how to access and navigate the console to perform common management tasks.
 

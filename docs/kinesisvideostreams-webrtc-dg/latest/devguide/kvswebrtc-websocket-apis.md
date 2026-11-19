@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # API reference
-<a name="kvswebrtc-websocket-apis"></a>
 
 **Topics**
 + [WebSocket endpoint APIs](api-endpoint.md)

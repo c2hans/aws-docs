@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-tags
 ---
 
 # View tags on an Amazon EMR cluster
-<a name="emr-plan-tags-view"></a>
 
 If you want to see all tags associated with a cluster, you can view them with the console or the AWS CLI.
 

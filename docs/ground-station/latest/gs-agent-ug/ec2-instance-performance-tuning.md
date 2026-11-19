@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/ec2-in
 ---
 
 # Tune your EC2 instance for performance
-<a name="ec2-instance-performance-tuning"></a>
 
 **Note**
 If you provisioned your AWS resources using CloudFormation templates these tunings are automatically applied. If you used an AMI or manually created your EC2 instance then these performance tunings must be applied to achieve the most reliable performance.

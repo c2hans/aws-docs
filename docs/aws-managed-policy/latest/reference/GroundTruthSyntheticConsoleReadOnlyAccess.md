@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Grou
 ---
 
 # GroundTruthSyntheticConsoleReadOnlyAccess
-<a name="GroundTruthSyntheticConsoleReadOnlyAccess"></a>
 
 **Description**: This policy grants read-only access to SageMaker Ground Truth Synthetic via the AWS Management Console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threa
 ---
 
 # Cyber threat intelligence sharing on AWS
-<a name="introduction"></a>
 
 *Jess Modini, Alexa Donovan, and Byron Pogson, Amazon Web Services*
 

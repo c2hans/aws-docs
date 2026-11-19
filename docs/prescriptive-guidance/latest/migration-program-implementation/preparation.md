@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Preparation
-<a name="preparation"></a>
 
 The preparation stage of the migration consists of these steps:
 

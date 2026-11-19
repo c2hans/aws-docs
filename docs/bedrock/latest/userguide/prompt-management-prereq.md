@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-manageme
 ---
 
 # Prerequisites for prompt management
-<a name="prompt-management-prereq"></a>
 
 For a role to use prompt management, you need to allow it to perform a certain set of API actions. Review the following prerequisites and fulfill the ones that apply to your use case:
 

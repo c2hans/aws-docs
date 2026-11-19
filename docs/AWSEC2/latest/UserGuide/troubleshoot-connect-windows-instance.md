@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshoot-con
 ---
 
 # Troubleshoot issues connecting to your Amazon EC2 Windows instance
-<a name="troubleshoot-connect-windows-instance"></a>
 
 The following information and common errors can help you troubleshoot issues when connecting to your Windows instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetEnterpriseSupportContractDetails
-<a name="API_billing_GetEnterpriseSupportContractDetails"></a>
 
 Returns Enterprise Support contract details.
 

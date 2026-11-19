@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Using AgentCore Browser with Nova Act
-<a name="browser-quickstart-nova-act"></a>
 
 You can build a browser agent using Nova Act to automate web interactions:
 

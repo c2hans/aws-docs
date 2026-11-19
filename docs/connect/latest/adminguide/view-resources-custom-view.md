@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/view-resources
 ---
 
 # Custom views in Connect Customer
-<a name="view-resources-custom-view"></a>
 
 You can create your own views with Connect Customer APIs. Views support AWS CloudFormation, AWS CloudTrail, and tagging.
 

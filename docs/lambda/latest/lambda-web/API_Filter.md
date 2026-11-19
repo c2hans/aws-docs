@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A filter to apply when listing resources.
 

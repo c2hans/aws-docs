@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessEnvironmentArtifact
-<a name="API_HarnessEnvironmentArtifact"></a>
 
 The environment artifact for a harness, such as a container image containing custom dependencies.
 

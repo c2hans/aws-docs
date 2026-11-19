@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisScanRes
 ---
 
 # CisScanResultsAggregatedByTargetResourceFilterCriteria
-<a name="API_CisScanResultsAggregatedByTargetResourceFilterCriteria"></a>
 
 The scan results aggregated by target resource filter criteria.
 

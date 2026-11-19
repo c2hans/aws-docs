@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_TransportStr
 ---
 
 # TransportStreamIdConfiguration
-<a name="API_TransportStreamIdConfiguration"></a>
 
 The configuration settings for the transport stream ID (TSID).
 

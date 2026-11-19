@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/inges
 ---
 
 # Custom log data from CloudWatch Logs or an Amazon S3 bucket
-<a name="ingestion-custom-data-sources"></a>
 
 You can create pipelines for custom data sources using the following approaches:
 

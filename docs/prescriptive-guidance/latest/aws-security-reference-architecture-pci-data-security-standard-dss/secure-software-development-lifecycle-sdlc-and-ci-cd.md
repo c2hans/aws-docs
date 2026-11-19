@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # Secure Software Development Lifecycle (SDLC) and CI/CD
-<a name="secure-software-development-lifecycle-sdlc-and-ci-cd"></a>
 
 The Software Development Lifecycle (SDLC) is a foundational control area aimed at ensuring that security is embedded into every phase of software development that processes, stores, or transmits cardholder data. PCI DSS requires organizations to define, implement, and maintain a structured development process that integrates security requirements from design through deployment and maintenance. This includes secure coding standards, threat modeling, code review practices, vulnerability management, and security testing such as static and dynamic analysis. The goal is to prevent common software vulnerabilities (e.g., injection flaws, insecure authentication, and misconfigurations) before applications are released into production environments.
 

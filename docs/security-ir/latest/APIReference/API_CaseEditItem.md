@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Case
 ---
 
 # CaseEditItem
-<a name="API_CaseEditItem"></a>
 
 ## Contents
 <a name="API_CaseEditItem_Contents"></a>

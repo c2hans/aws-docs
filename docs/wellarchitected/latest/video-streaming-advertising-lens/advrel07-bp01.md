@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL07-BP01 Design resilient architectures with privacy-preserving fault tolerance
-<a name="advrel07-bp01"></a>
 
  Deploy privacy-enhancing data collaboration environments across multiple regions with replicated privacy policies, differential privacy budgets, and encrypted collaboration configurations so that privacy-protected analytics continue during regional outages.
 

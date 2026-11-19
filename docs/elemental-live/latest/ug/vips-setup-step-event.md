@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vips-setup-step
 ---
 
 # Step 2: Set up the event
-<a name="vips-setup-step-event"></a>
 
 These steps show you how to configure the event with information about the POIS server.
 

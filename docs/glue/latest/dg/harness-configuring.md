@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/harness-configuring.html
 ---
 
 # Configuring Harness
-<a name="harness-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Harness, you must meet the following requirements:
 

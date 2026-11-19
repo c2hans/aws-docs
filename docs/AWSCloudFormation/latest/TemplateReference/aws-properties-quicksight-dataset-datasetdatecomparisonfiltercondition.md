@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DataSetDateComparisonFilterCondition
-<a name="aws-properties-quicksight-dataset-datasetdatecomparisonfiltercondition"></a>
 
 A filter condition that compares date values using operators like `BEFORE`, `AFTER`, or their inclusive variants.
 

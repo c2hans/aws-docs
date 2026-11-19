@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentS3
 ---
 
 # ExperimentS3LogConfiguration
-<a name="API_ExperimentS3LogConfiguration"></a>
 
 Describes the configuration for experiment logging to Amazon S3.
 

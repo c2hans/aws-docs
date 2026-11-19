@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StorageLo
 ---
 
 # StorageLocation
-<a name="API_StorageLocation"></a>
 
 Describes a storage location in Amazon S3.
 

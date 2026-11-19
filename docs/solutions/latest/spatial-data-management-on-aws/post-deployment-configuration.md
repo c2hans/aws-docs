@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Post-Deployment Configuration
-<a name="post-deployment-configuration"></a>
 
 ## 1. Create Initial User
 <a name="create-initial-user"></a>

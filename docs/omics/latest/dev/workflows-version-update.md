@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-version-updat
 ---
 
 # Update a workflow version
-<a name="workflows-version-update"></a>
 
 You can update the description and the default run storage configuration for a private workflow version. To change any other information in the workflow version, create a new version.
 

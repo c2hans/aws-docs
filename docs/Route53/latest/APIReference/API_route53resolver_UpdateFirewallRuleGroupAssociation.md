@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # UpdateFirewallRuleGroupAssociation
-<a name="API_route53resolver_UpdateFirewallRuleGroupAssociation"></a>
 
 Changes the association of a [FirewallRuleGroup](API_route53resolver_FirewallRuleGroup.md) with a VPC. The association enables DNS filtering for the VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetExascaleD
 ---
 
 # GetExascaleDbStorageVault
-<a name="API_GetExascaleDbStorageVault"></a>
 
 Returns information about the specified Exascale storage vault.
 

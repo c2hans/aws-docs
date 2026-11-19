@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateSnapsh
 ---
 
 # UpdateSnapshot
-<a name="API_UpdateSnapshot"></a>
 
 Updates the name of an Amazon FSx for OpenZFS snapshot.
 

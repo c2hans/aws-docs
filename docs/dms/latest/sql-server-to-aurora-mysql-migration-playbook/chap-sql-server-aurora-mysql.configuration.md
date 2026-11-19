@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Configuration overview
-<a name="chap-sql-server-aurora-mysql.configuration"></a>
 
 This chapter reference information for configuring software and resource settings when migrating from Microsoft SQL Server 2019 to Amazon Aurora MySQL, focusing on database upgrades, session options, system variables, and configuration settings. These topics describe how each platform handles runtime settings, database-level options, and server configurations, highlighting the unique approaches of Aurora MySQL such as parameter groups and cluster-level settings.
 

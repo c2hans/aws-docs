@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3GlueParquetTarg
 ---
 
 # S3GlueParquetTarget
-<a name="API_S3GlueParquetTarget"></a>
 
 Specifies a data target that writes to Amazon S3 in Apache Parquet columnar storage.
 

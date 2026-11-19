@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/global-endp
 ---
 
 # global-endpoint-event-replication-enabled
-<a name="global-endpoint-event-replication-enabled"></a>
 
 Checks if event replication is enabled for Amazon EventBridge global endpoints. The rule is NON\_COMPLIANT if event replication is not enabled.
 

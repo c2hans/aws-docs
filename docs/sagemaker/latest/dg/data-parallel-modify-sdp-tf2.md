@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-modify
 ---
 
 # Use the SMDDP library in your TensorFlow training script (deprecated)
-<a name="data-parallel-modify-sdp-tf2"></a>
 
 **Important**
 The SMDDP library discontinued support for TensorFlow and is no longer available in DLCs for TensorFlow later than v2.11.0. To find previous TensorFlow DLCs with the SMDDP library installed, see [Supported frameworks](distributed-data-parallel-support.md#distributed-data-parallel-supported-frameworks).

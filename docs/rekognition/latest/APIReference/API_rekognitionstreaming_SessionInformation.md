@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # SessionInformation
-<a name="API_rekognitionstreaming_SessionInformation"></a>
 
 Information required for the streaming session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-type.ht
 ---
 
 # JSON.TYPE
-<a name="json-type"></a>
 
 Reports the type of values at the given path.
 

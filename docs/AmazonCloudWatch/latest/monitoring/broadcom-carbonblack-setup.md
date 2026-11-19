@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/broad
 ---
 
 # Broadcom Carbon Black integration configuration
-<a name="broadcom-carbonblack-setup"></a>
 
 [Broadcom Carbon Black](https://www.broadcom.com/products/carbon-black/threat-prevention/carbon-black-cloud) is a cloud-native endpoint protection platform (EPP) that combines next-generation antivirus (NGAV), behavioral detection, and endpoint detection and response (EDR). It provides continuous monitoring of endpoints and workloads from a single console to detect and stop ransomware, malware, and fileless attacks.
 

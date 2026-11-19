@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_F
 ---
 
 # FrameworkMappingDetails
-<a name="API_FrameworkMappingDetails"></a>
 
 A structure that contains details about a framework mapping, including the framework name and specific item within the framework that the control maps to.
 

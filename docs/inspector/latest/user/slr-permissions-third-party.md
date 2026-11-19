@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/slr-permissions-th
 ---
 
 # Service-linked role permissions for Amazon Inspector multi-cloud scans
-<a name="slr-permissions-third-party"></a>
 
 Amazon Inspector multi-cloud scanning uses the service-linked role named `AWSServiceRoleForAmazonInspector2ThirdParty`. This SLR allows Amazon Inspector to perform actions on your behalf for multi-cloud resource scanning, including managing cloud connectors, configuration recorders, and vulnerability assessments of resources in external cloud environments. This service-linked role trusts the `thirdparty.inspector2.amazonaws.com` service to assume the role.
 

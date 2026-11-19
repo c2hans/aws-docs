@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListAgentSpaces
-<a name="API_ListAgentSpaces"></a>
 
 Lists all AgentSpaces with optional pagination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Loggin
 ---
 
 # LoggingEnabled
-<a name="API_s3Buckets_LoggingEnabled"></a>
 
 Describes where logs are stored and the prefix that Amazon S3 assigns to all log object keys for a table bucket.
 

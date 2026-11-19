@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ca-data-lake.html
 ---
 
 # Creating an Amazon Chime SDK data lake
-<a name="ca-data-lake"></a>
 
 The Amazon Chime SDK call analytics data lake allows you to stream your machine learning powered insights and any metadata from Amazon Kinesis Data Stream to your Amazon S3 bucket. For example, using the data lake to access URLs to recordings. To create the data lake, you deploy a set of AWS CloudFormation templates from either the Amazon Chime SDK console or programmatically using the AWS CLI. The data lake enables you to query your call metadata and voice analytics data by referencing AWS Glue data tables in Amazon Athena.
 

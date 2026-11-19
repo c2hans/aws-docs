@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # AgentCardDefinition
-<a name="API_AgentCardDefinition"></a>
 
  The agent card definition for A2A descriptors, including the schema version and inline content that describes the agent's capabilities.
 

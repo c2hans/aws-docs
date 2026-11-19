@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ApacheKafkaClusterD
 ---
 
 # ApacheKafkaClusterDescription
-<a name="API_ApacheKafkaClusterDescription"></a>
 
 The description of the Apache Kafka cluster to which the connector is connected.
 

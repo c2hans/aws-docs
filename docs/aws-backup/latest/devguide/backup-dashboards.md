@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-dashbo
 ---
 
 # AWS Backup console dashboards
-<a name="backup-dashboards"></a>
 
 **Note**
 The jobs dashboard is available in all Regions where AWS Backup Audit Manager is supported. See [Feature availability by AWS Region](backup-feature-availability.md#features-by-region) for those Regions. All other Regions will be able to access the [CloudWatch Dashboard](cloudwatch.md#cloudwatch-dashboard).

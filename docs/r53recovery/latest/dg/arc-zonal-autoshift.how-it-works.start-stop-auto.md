@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshif
 ---
 
 # When AWS starts and stops autoshifts
-<a name="arc-zonal-autoshift.how-it-works.start-stop-auto"></a>
 
 When you enable zonal autoshift for a resource, you authorize AWS to shift away resource traffic for an application from an Availability Zone during events, on your behalf, to help reduce time to recovery.
 

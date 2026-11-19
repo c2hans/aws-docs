@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
 ---
 
 # Resources
-<a name="resources"></a>
 + [Investing in chaos engineering as a strategic necessity](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-chaos-engineering-journey/roi-chaos-engineering.html)
 + [Chaos Engineering Stories](https://chaosengineeringstories.com/)
 + [Amazon CloudWatch documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)

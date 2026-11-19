@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_C
 ---
 
 # CancelJobRun
-<a name="API_CancelJobRun"></a>
 
 Cancels a job run.
 

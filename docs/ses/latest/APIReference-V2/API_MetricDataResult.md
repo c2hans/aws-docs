@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricDat
 ---
 
 # MetricDataResult
-<a name="API_MetricDataResult"></a>
 
 The result of a single metric data query.
 

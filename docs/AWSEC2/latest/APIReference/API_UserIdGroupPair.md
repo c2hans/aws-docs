@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UserIdGro
 ---
 
 # UserIdGroupPair
-<a name="API_UserIdGroupPair"></a>
 
 Describes a security group and AWS account ID pair.
 

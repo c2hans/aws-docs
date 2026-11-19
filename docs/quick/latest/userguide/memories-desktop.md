@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/memories-desktop.
 ---
 
 # Memories
-<a name="memories-desktop"></a>
 
 AWS Quick learns facts, preferences, procedures, and patterns from your conversations and saves them as memories. Quick uses these memories to tailor future responses. Each memory shows a confidence score, how often it has been used, and its source.
 

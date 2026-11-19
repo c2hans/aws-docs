@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/cr
 ---
 
 # Installing the AWS Encryption SDK command line interface
-<a name="crypto-cli-install"></a>
 
 This topic explains how to install the AWS Encryption CLI. For detailed information, see the [aws-encryption-sdk-cli](https://github.com/aws/aws-encryption-sdk-cli/) repository on GitHub and [Read the Docs](https://aws-encryption-sdk-cli.readthedocs.io/en/latest/).
 

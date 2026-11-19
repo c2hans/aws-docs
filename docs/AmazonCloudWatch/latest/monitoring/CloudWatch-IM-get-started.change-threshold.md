@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Change health event thresholds for a monitor
-<a name="CloudWatch-IM-get-started.change-threshold"></a>
 
 Internet Monitor uses a default threshold to determine when to create a health event for your monitor. Optionally, you can change that default global threshold, to set another value. You can also set local threshold. This section describes how global and local thresholds work together, and provides steps for setting custom thresholds.
 

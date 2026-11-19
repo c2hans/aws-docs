@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Recording
 ---
 
 # RecordingModeOverride
-<a name="API_RecordingModeOverride"></a>
 
 An object for you to specify your overrides for the recording mode.
 

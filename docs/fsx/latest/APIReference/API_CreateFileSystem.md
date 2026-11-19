@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSy
 ---
 
 # CreateFileSystem
-<a name="API_CreateFileSystem"></a>
 
 Creates a new, empty Amazon FSx file system. You can create the following supported Amazon FSx file systems using the `CreateFileSystem` API operation:
 + Amazon FSx for Lustre

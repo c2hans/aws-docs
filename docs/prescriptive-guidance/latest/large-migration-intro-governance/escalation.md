@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Escalation plan
-<a name="escalation"></a>
 
 One key challenge for nearly all migrations is securing commitment from the application owners and technical support resources to support the wave plan. Therefore, in addition to having a well-defined communication plan, it is even more important to define an escalation plan. For each wave, starting with the T-28 commit meeting through the T-0 cutover date, you need to ensure that you facilitate commitment on a weekly basis. If any issues arise or an application owner cannot commit to the cutover date, you initiate the escalation plan.
 

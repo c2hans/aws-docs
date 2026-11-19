@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/consuming-with-queues
 ---
 
 # Consume records from a stream with queues
-<a name="consuming-with-queues"></a>
 
 A queue delivers records from an On-demand Kinesis data stream to a queue consumer and tracks the delivery state of each record. A queue works alongside your existing stream consumers and requires no changes to your producers. A queue counts as one registered consumer and shares the stream's registered consumer limit with enhanced fan-out consumers.
 

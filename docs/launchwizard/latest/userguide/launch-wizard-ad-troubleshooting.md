@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Troubleshoot AWS Launch Wizard for Active Directory
-<a name="launch-wizard-ad-troubleshooting"></a>
 
 Each deployment in your account in the same AWS Region can be uniquely identified by the name specified at the time of a deployment. The deployment name can be used to view the details related to the deployment on the **Deployments** page of the Launch Wizard console.
 

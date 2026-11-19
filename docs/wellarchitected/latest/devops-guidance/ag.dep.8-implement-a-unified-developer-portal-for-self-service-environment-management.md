@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DEP.8] Implement a unified developer portal for self-service environment management
-<a name="ag.dep.8-implement-a-unified-developer-portal-for-self-service-environment-management"></a>
 
  **Category:** OPTIONAL
 

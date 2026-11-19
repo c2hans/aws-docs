@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_BatchAsso
 ---
 
 # BatchAssociateClientDeviceWithCoreDevice
-<a name="API_BatchAssociateClientDeviceWithCoreDevice"></a>
 
 Associates a list of client devices with a core device. Use this API operation to specify which client devices can discover a core device through cloud discovery. With cloud discovery, client devices connect to AWS IoT Greengrass to retrieve associated core devices' connectivity information and certificates. For more information, see [Connect client devices to core devices](https://docs.aws.amazon.com/greengrass/v2/developerguide/connect-client-devices.html) in the * AWS IoT Greengrass V2 Developer Guide*.
 

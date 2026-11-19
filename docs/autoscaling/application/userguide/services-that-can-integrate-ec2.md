@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Amazon EC2 Spot Fleet and Application Auto Scaling
-<a name="services-that-can-integrate-ec2"></a>
 
 You can scale Spot Fleets using target tracking scaling policies, step scaling policies, and scheduled scaling.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # Dependency
-<a name="API_Dependency"></a>
 
 A structure that contains information about a dependency for a canary.
 

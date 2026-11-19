@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/clou
 ---
 
 # Searching CloudWatch log groups
-<a name="cloud-watch-search"></a>
 
 You can use Search Log Group to search all log streams in a log group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteBillScenario
-<a name="API_AWSBCMPricingCalculator_DeleteBillScenario"></a>
 
  Deletes an existing bill scenario.
 

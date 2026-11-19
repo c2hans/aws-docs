@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AssociateIpGro
 ---
 
 # AssociateIpGroups
-<a name="API_AssociateIpGroups"></a>
 
 Associates the specified IP access control group with the specified directory.
 

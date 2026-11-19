@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Domain Operations
-<a name="domain-operations"></a>
 
 Once logged into the Centralized Logging with OpenSearch console, you can import an Amazon OpenSearch Service domain.
 

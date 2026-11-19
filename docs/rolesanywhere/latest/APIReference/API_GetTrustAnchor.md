@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Ge
 ---
 
 # GetTrustAnchor
-<a name="API_GetTrustAnchor"></a>
 
 Gets a trust anchor.
 

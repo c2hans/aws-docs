@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/sap-ibm-pacemaker-d
 ---
 
 # Deployment
-<a name="sap-ibm-pacemaker-deployment"></a>
 
 This section discusses high level deployment process and steps. Table 2 lists the steps in the order they should be done, and each step’s purpose.
 

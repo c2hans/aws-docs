@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/analytics-overview.html
 ---
 
 # Overview: a summary of your bot performance
-<a name="analytics-overview"></a>
 
 The overview page summarizes your bot’s performance on conversations, utterance recognition, and intent usage. The overview consists of the following sections:
 + [Conversation performance](#conversations-performance)

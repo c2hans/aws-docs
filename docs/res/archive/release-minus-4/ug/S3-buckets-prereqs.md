@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/S3-bucket
 ---
 
 # Amazon S3 bucket prerequisites for isolated VPC deployments
-<a name="S3-buckets-prereqs"></a>
 
 If you're deploying Research and Engineering Studio in an isolated VPC, follow these steps to update the lambda configuration parameters after you deploy RES in your AWS account.
 

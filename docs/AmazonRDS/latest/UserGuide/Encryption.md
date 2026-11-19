@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Encryption.ht
 ---
 
 # Protecting data using encryption
-<a name="Encryption"></a>
 
 You can enable encryption for database resources. You can also encrypt connections to DB instances.
 

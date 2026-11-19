@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Establishing Your Cloud Foundation on AWS
-<a name="welcome"></a>
 
 Publication date: **September 13, 2023** ([Document revisions](document-revisions.md))
 

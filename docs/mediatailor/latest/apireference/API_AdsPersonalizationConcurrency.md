@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_AdsP
 ---
 
 # AdsPersonalizationConcurrency
-<a name="API_AdsPersonalizationConcurrency"></a>
 
 The concurrency settings for ad decision server interactions during ad personalization.
 

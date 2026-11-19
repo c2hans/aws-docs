@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetS
 ---
 
 # GetStorageConfiguration
-<a name="API_GetStorageConfiguration"></a>
 
 Gets the storage configuration for the specified ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Delet
 ---
 
 # DeleteWorkspace
-<a name="API_DeleteWorkspace"></a>
 
 Deletes an existing workspace.
 

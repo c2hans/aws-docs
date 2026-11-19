@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Delete a monitor in Network Flow Monitor
-<a name="CloudWatch-NetworkFlowMonitor-configure-monitors-delete"></a>
 
 To delete a monitor in Network Flow Monitor, follow the steps here.
 

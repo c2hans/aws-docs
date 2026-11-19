@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rootly-reading-from-entit
 ---
 
 # Reading from Rootly entities
-<a name="rootly-reading-from-entities"></a>
 
 **Prerequisites**
 

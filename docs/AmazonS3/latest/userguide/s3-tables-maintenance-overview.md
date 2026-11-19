@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-main
 ---
 
 # S3 Tables maintenance
-<a name="s3-tables-maintenance-overview"></a>
 
 Amazon S3 automatically performs maintenance to enhance the performance of your tables in S3 table buckets. Maintenance is performed at the table bucket and individual table level and includes the following:
 

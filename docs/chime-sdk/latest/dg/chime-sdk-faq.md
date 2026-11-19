@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/chime-sdk-faq.html
 ---
 
 # Frequently asked questions for the Amazon Chime SDK
-<a name="chime-sdk-faq"></a>
 
 The topics in the following sections provide answers to frequently asked questions about the Amazon Chime SDK. Expand the topics to learn more.
 

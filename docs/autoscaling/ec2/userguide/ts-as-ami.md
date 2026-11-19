@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ts-as-ami.html
 ---
 
 # Troubleshoot Amazon EC2 Auto Scaling: AMI issues
-<a name="ts-as-ami"></a>
 
 This page provides information about the issues associated with your AMIs, potential causes, and the steps you can take to resolve the issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-sql-ser
 ---
 
 # Step 1: Create AWS Resources
-<a name="schema-conversion-sql-server-mysql-step-1"></a>
 
 In this step, you create and configure the required AWS resources for DMS Schema Conversion.
 

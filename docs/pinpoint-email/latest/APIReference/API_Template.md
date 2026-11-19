@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_T
 ---
 
 # Template
-<a name="API_Template"></a>
 
 An object that defines the email template to use for an email message, and the values to use for any message variables in that template. An *email template* is a type of message template that contains content that you want to define, save, and reuse in email messages that you send for any of your Amazon Pinpoint projects.
 

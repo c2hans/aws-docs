@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CPU.h
 ---
 
 # CPU
-<a name="API_CPU"></a>
 
 Represents the amount of CPU that an app is using on a physical device. Does not represent system-wide CPU usage.
 

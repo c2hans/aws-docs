@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # PutProtectConfigurationRuleSetNumberOverride
-<a name="API_PutProtectConfigurationRuleSetNumberOverride"></a>
 
 Create or update a phone number rule override and associate it with a protect configuration.
 

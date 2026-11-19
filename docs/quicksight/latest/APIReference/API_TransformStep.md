@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Trans
 ---
 
 # TransformStep
-<a name="API_TransformStep"></a>
 
 A step in data preparation that performs a specific operation on the data.
 

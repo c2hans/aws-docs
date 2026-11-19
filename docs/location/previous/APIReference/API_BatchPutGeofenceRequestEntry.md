@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchPutGeofenceRequestEntry
-<a name="API_BatchPutGeofenceRequestEntry"></a>
 
 Contains geofence geometry details.
 

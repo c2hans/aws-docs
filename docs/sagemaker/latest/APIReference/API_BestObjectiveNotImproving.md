@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BestOb
 ---
 
 # BestObjectiveNotImproving
-<a name="API_BestObjectiveNotImproving"></a>
 
 A structure that keeps track of which training jobs launched by your hyperparameter tuning job are not improving model performance as evaluated against an objective function.
 

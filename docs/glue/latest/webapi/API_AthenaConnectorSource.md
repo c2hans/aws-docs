@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AthenaConnectorSo
 ---
 
 # AthenaConnectorSource
-<a name="API_AthenaConnectorSource"></a>
 
 Specifies a connector to an Amazon Athena data source.
 

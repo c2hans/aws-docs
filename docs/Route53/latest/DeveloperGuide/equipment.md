@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/equipment.
 ---
 
 # .equipment
-<a name="equipment"></a>
 
 Used for information about equipment, equipment retailers or manufacturers, and rental shops.
 

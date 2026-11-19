@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/creating-tables-how-to.
 ---
 
 # Create tables using AWS Glue or the Athena console
-<a name="creating-tables-how-to"></a>
 
 You can create tables in Athena by using AWS Glue, the add table form, or by running a DDL statement in the Athena query editor.
 

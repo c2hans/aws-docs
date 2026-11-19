@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/golang-package.html
 ---
 
 # Deploy Go Lambda Event Functions with .zip file archives
-<a name="golang-package"></a>
 
 Your AWS Lambda function's code consists of scripts or compiled programs and their dependencies. You use a *deployment package* to deploy your function code to Lambda. Lambda supports two types of deployment packages: container images and .zip file archives.
 
@@ -30,7 +29,7 @@ If your function uses the AWS SDK for Go, download the standard set of SDK modul
 ### Using the provided runtime family
 <a name="golang-package-mac-linux-al2"></a>
 
-Go is implemented differently than other managed runtimes. Because Go compiles natively to an executable binary, it doesn't require a dedicated language runtime. Use an [OS-only runtime](runtimes-provided.md) (the `provided` runtime family) to deploy Go Event Functions to Lambda.
+Go is implemented differently than other managed runtimes. Because Go compiles natively to an executable binary, it doesn't require a dedicated language runtime. Use an [OS-only runtime](lambda-runtimes.md#runtimes-provided) (the `provided` runtime family) to deploy Go Event Functions to Lambda.
 
 **To create a .zip deployment package (macOS/Linux)**
 
@@ -99,7 +98,7 @@ If your function uses the AWS SDK for Go, download the standard set of SDK modul
 ### Using the provided runtime family
 <a name="golang-package-windows-al2"></a>
 
-Go is implemented differently than other managed runtimes. Because Go compiles natively to an executable binary, it doesn't require a dedicated language runtime. Use an [OS-only runtime](runtimes-provided.md) (the `provided` runtime family) to deploy Go Event Functions to Lambda.
+Go is implemented differently than other managed runtimes. Because Go compiles natively to an executable binary, it doesn't require a dedicated language runtime. Use an [OS-only runtime](lambda-runtimes.md#runtimes-provided) (the `provided` runtime family) to deploy Go Event Functions to Lambda.
 
 **To create a .zip deployment package (Windows)**
 

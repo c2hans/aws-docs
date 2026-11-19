@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_UpdateConnector.htm
 ---
 
 # UpdateConnector
-<a name="API_UpdateConnector"></a>
 
 Updates the specified connector. For request body, specify only one parameter: either `capacity` or `connectorConfiguration`.
 

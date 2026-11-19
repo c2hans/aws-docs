@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadServer
 ---
 
 # UploadServerCertificate
-<a name="API_UploadServerCertificate"></a>
 
 Uploads a server certificate entity for the AWS account. The server certificate entity includes a public key certificate, a private key, and an optional certificate chain, which should all be PEM-encoded.
 

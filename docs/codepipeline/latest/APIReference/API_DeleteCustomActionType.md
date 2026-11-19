@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Del
 ---
 
 # DeleteCustomActionType
-<a name="API_DeleteCustomActionType"></a>
 
 Marks a custom action as deleted. `PollForJobs` for the custom action fails after the action is marked for deletion. Used for custom actions only.
 

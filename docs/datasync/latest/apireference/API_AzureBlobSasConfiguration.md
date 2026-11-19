@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_AzureBl
 ---
 
 # AzureBlobSasConfiguration
-<a name="API_AzureBlobSasConfiguration"></a>
 
 The shared access signature (SAS) configuration that allows AWS DataSync to access your Microsoft Azure Blob Storage.
 

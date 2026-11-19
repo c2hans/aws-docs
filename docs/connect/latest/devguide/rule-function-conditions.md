@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/rule-function-co
 ---
 
 # Conditions in Connect Customer Rules Function language
-<a name="rule-function-conditions"></a>
 
 A rule function needs to start with either an AND or OR Operator. The Operands of AND or OR Operators is a list of conditions. Conditions vary depending on the TriggerEventSource.
 

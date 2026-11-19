@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-Sum.html
 ---
 
 # Sum
-<a name="dqdl-rule-types-Sum"></a>
 
 Checks the sum of all the values in a column against a given expression.
 

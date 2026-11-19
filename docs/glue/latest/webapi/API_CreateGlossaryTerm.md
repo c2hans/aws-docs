@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateGlossaryTer
 ---
 
 # CreateGlossaryTerm
-<a name="API_CreateGlossaryTerm"></a>
 
 Creates a glossary term within a business glossary in AWS Glue Data Catalog.
 

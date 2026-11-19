@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterNetworkInterface PublicRouterNetworkInterfaceRule
-<a name="aws-properties-mediaconnect-routernetworkinterface-publicrouternetworkinterfacerule"></a>
 
 A rule that allows a specific CIDR block to access the public router network interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_FailedMemb
 ---
 
 # FailedMemberAccountEc2DeepInspectionStatusState
-<a name="API_FailedMemberAccountEc2DeepInspectionStatusState"></a>
 
 An object that contains details about a member account in your organization that failed to activate Amazon Inspector deep inspection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_CpuO
 ---
 
 # CpuOptionsRequest
-<a name="API_CpuOptionsRequest"></a>
 
 Configures CPU-specific settings for WorkSpace Instance.
 

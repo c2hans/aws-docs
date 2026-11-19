@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazo
 ---
 
 # Amazon S3 Files
-<a name="API_Operations_Amazon_S3_Files"></a>
 
 The following actions are supported by Amazon S3 Files:
 +  [CreateAccessPoint](API_S3Files_CreateAccessPoint.md)

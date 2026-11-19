@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetConfigurationBundleVersion
-<a name="API_GetConfigurationBundleVersion"></a>
 
 Gets a specific version of a configuration bundle by its version identifier.
 

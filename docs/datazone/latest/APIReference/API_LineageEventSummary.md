@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lineage
 ---
 
 # LineageEventSummary
-<a name="API_LineageEventSummary"></a>
 
 The data lineage event summary.
 

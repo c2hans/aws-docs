@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConfigurationBundleAction
-<a name="API_ConfigurationBundleAction"></a>
 
 An action that applies a configuration bundle override, either as a static override or a weighted split for A/B testing.
 

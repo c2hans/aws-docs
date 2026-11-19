@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy
-<a name="security-iam-awsmanpol-SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy"></a>
 
 This policy allows Amazon Bedrock Knowledge Bases to access Amazon Bedrock models and data sources in Amazon SageMaker Unified Studio.
 

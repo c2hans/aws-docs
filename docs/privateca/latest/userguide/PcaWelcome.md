@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaWelcome.ht
 ---
 
 # What is AWS Private CA?
-<a name="PcaWelcome"></a>
 
 AWS Private CA enables creation of private certificate authority (CA) hierarchies, including root and subordinate CAs, without the investment and maintenance costs of operating an on-premises CA. Your private CAs can issue end-entity X.509 certificates useful in scenarios including:
 + Creating encrypted TLS communication channels

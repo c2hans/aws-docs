@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/ssc-overvie
 ---
 
 # Overview of IVS Server-Side Composition
-<a name="ssc-overview"></a>
 
 This diagram illustrates how server-side composition works:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-tes
 ---
 
 # A/B testing
-<a name="ab-testing"></a>
 
 A/B testing splits live production traffic between two variants and continuously evaluates performance with statistical significance. The AgentCore Gateway handles traffic routing; your agent code does not change.
 

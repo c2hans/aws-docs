@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Searc
 ---
 
 # SearchForPositionResult
-<a name="API_SearchForPositionResult"></a>
 
 Contains a search result from a position search query that is run on a place index resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteConfiguration
 ---
 
 # DeleteConfiguration
-<a name="API_DeleteConfiguration"></a>
 
 Delete an existing configuration.
 

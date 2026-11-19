@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_cross_LambdaSch
 ---
 
 # Use scheduled events to invoke a Lambda function
-<a name="example_cross_LambdaScheduledEvents_section"></a>
 
 The following code examples show how to create an AWS Lambda function invoked by an Amazon EventBridge scheduled event.
 

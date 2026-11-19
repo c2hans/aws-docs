@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Advanced
 ---
 
 # AdvancedPromptOptimizationOutputConfig
-<a name="API_AdvancedPromptOptimizationOutputConfig"></a>
 
 The output data configuration for an advanced prompt optimization job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-ad
 ---
 
 # Git repos in JupyterLab
-<a name="studio-updated-jl-admin-guide-git-attach"></a>
 
 JupyterLab offers a Git extension to enter the URL of a Git repository (repo), clone it into an environment, push changes, and view the commit history. You can also attach suggested Git repo URLs to a Amazon SageMaker AI domain (domain) or user profile.
 

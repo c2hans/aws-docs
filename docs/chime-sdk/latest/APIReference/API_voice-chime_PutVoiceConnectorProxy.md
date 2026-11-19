@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # PutVoiceConnectorProxy
-<a name="API_voice-chime_PutVoiceConnectorProxy"></a>
 
 Puts the specified proxy configuration to the specified Amazon Chime SDK Voice Connector.
 

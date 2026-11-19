@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Connecti
 ---
 
 # ConnectionData
-<a name="API_ConnectionData"></a>
 
 Information required to join the call.
 

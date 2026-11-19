@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_ListAge
 ---
 
 # ListAgents
-<a name="API_ListAgents"></a>
 
 Returns a list of AWS DataSync agents that belong to an AWS account in the AWS Region specified in the request.
 

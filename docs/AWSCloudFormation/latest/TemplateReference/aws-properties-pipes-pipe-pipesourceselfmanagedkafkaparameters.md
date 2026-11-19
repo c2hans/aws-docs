@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe PipeSourceSelfManagedKafkaParameters
-<a name="aws-properties-pipes-pipe-pipesourceselfmanagedkafkaparameters"></a>
 
 The parameters for using a self-managed Apache Kafka stream as a source.
 

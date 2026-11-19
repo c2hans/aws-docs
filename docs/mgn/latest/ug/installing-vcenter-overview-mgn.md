@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/installing-vcenter-overvie
 ---
 
 # Agentless replication overview
-<a name="installing-vcenter-overview-mgn"></a>
 
 **Important**
 Agentless replication is no longer available for new deployments. We recommend agent-based replication for all migrations. To learn more, see [Why we recommend agent-based replication](#why-agent-based).

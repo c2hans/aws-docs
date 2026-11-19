@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-fleet.htm
 ---
 
 # Delete an EC2 Fleet request and the instances in the fleet
-<a name="delete-fleet"></a>
 
 If you no longer require an EC2 Fleet request, you can delete it. After you delete a fleet request, all Spot requests associated with the fleet are canceled, so that no new Spot Instances are launched.
 

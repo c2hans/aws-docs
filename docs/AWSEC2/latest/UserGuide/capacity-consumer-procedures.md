@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-consume
 ---
 
 # Interruptible Capacity Reservations for capacity consumers
-<a name="capacity-consumer-procedures"></a>
 
 The capacity consumer is the account that launches instances into shared interruptible Capacity Reservations, understanding that their instances may be terminated when the owner reclaims capacity.
 

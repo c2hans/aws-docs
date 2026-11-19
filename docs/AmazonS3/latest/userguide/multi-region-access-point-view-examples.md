@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/multi-region-a
 ---
 
 # Viewing Amazon S3 Multi-Region Access Points configuration details
-<a name="multi-region-access-point-view-examples"></a>
 
 The following example demonstrates how to view Multi-Region Access Point configuration details by using the Amazon S3 console.
 

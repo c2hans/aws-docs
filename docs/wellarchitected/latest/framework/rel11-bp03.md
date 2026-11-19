@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel11-b
 ---
 
 # REL11-BP03 Automate healing on all layers
-<a name="rel11-bp03"></a>
 
  When a component fails, automated actions should remediate it. Some degradations heal through a service's own internal mechanisms, while others need a resource to be restarted, replaced, or removed. Automate healing on all layers to improve recovery time and reduce manual intervention.
 

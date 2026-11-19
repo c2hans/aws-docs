@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sw-edge-co
 ---
 
 # AWS IoT Greengrass components for AWS IoT SiteWise Edge
-<a name="sw-edge-components"></a>
 
 SiteWise Edge uses AWS IoT Greengrass components to collect, process, and transmit industrial data at the edge. These components work together to enable local data processing and seamless integration with the AWS IoT SiteWise cloud service.
 

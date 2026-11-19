@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Unproc
 ---
 
 # UnprocessedAccount
-<a name="API_UnprocessedAccount"></a>
 
 A member account that was included in a request but for which the request could not be processed.
 

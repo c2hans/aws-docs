@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_AssetLo
 ---
 
 # AssetLocation
-<a name="API_AssetLocation"></a>
 
  Information about the position of the asset in a rack.
 

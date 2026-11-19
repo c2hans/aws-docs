@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-authorization-dele
 ---
 
 # Sending emails for the identity owner for Amazon SES sending authorization
-<a name="sending-authorization-delegate-sender-tasks-email"></a>
 
 As a delegate sender, you send emails the same way that other Amazon SES senders do, except that you provide the Amazon Resource Name (ARN) of the identity that the identity owner has authorized you to use. When you call Amazon SES to send the email, Amazon SES checks to see if the identity that you specified has a policy that authorizes you to send for it.
 

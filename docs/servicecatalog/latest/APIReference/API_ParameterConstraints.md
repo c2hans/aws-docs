@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ParameterConstraints
-<a name="API_ParameterConstraints"></a>
 
 The constraints that the administrator has put on the parameter.
 

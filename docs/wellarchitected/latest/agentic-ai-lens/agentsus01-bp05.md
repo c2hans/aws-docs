@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSUS01-BP05 Adopt specification-driven tasks for frontier agents and long-running workflows
-<a name="agentsus01-bp05"></a>
 
  Long-running agents without explicit success criteria and resource budgets drift into exploration that never quite terminates, consuming compute hours on paths that don't deliver value. Specifications that declare acceptable outputs, cost ceilings, and termination conditions up front make extended execution a bounded investment rather than an open-ended one.
 

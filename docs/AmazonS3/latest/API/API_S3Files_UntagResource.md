@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_UntagRes
 ---
 
 # UntagResource
-<a name="API_S3Files_UntagResource"></a>
 
 Removes tags from S3 Files resources.
 

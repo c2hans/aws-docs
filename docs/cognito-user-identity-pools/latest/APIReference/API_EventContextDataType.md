@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # EventContextDataType
-<a name="API_EventContextDataType"></a>
 
 The context data that your application submitted in an authentication request with threat protection, as displayed in an `AdminListUserAuthEvents` response.
 

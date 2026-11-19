@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Cloud
 ---
 
 # CloudWatchLogDestination
-<a name="API_CloudWatchLogDestination"></a>
 
 Configuration details for logging to CloudWatch Logs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/create-sequence-store.h
 ---
 
 # Creating a HealthOmics sequence store
-<a name="create-sequence-store"></a>
 
 HealthOmics sequence stores support storage of genomic files in the unaligned formats of `FASTQ` (gzip-only) and `uBAM`. It also supports the aligned formats of `BAM` and `CRAM`.
 

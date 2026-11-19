@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Outpu
 ---
 
 # OutputColumnNameOverride
-<a name="API_OutputColumnNameOverride"></a>
 
 Specifies a mapping to override the name of an output column from a transform operation.
 

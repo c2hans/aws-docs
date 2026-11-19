@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-support.html
 ---
 
 # AWS Glue support for Salesforce
-<a name="salesforce-support"></a>
 
 AWS Glue supports Salesforce as follows:
 

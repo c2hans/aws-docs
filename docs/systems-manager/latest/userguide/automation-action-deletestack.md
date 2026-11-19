@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:deleteStack` – Delete an CloudFormation stack
-<a name="automation-action-deletestack"></a>
 
 Deletes an AWS CloudFormation stack.
 

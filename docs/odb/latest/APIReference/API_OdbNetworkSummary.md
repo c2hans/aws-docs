@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_OdbNetworkSu
 ---
 
 # OdbNetworkSummary
-<a name="API_OdbNetworkSummary"></a>
 
 Information about an ODB network.
 

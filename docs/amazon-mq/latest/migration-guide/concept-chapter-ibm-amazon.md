@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/concept
 ---
 
 # Migrating from IBM MQ queue manager to Amazon MQ
-<a name="concept-chapter-ibm-amazon"></a>
 
  You can migrate you IBM MQ system to Amazon MQ while keeping the same configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AwsProductOptimization
-<a name="API_AwsProductOptimization"></a>
 
 Specific optimization strategies partners can implement to reduce costs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Attachmen
 ---
 
 # Attachment
-<a name="API_Attachment"></a>
 
  Contains metadata and attachment raw content.
 

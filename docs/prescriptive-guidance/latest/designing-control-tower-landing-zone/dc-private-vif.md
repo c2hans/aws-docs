@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Direct Connect with private VIF over virtual private gateway
-<a name="dc-private-vif"></a>
 
 The following diagram shows how you can connect VPCs and on-premises environments through a virtual private gateway over a private VIF by using Direct Connect.
 

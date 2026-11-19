@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/salesforce-
 ---
 
 # Solution components
-<a name="components"></a>
 
 Direct Connect requires you to either create your own [dedicated connection](https://docs.aws.amazon.com/directconnect/latest/UserGuide/dedicated_connection.html) to AWS, or work with an Direct Connect Partner to create a [hosted connection](https://docs.aws.amazon.com/directconnect/latest/UserGuide/hosted_connection.html). This article provides guidance for using Megaport as an Direct Connect Partner to facilitate hybrid and multiple use cases for connecting to Salesforce Hyperforce.
 

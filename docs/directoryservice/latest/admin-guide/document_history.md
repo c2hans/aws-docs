@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/docu
 ---
 
 # Document history
-<a name="document_history"></a>
 
 The following table describes the important changes since the last release of the *AWS Directory Service Administrator Guide*.
 

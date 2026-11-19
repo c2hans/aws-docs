@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/snapstart-runtime-hooks
 ---
 
 # Lambda SnapStart runtime hooks for Java
-<a name="snapstart-runtime-hooks-java"></a>
 
 You can use runtime hooks to implement code before Lambda creates a snapshot or after Lambda resumes an Event Function from a snapshot. Runtime hooks are available as part of the open-source Coordinated Restore at Checkpoint (CRaC) project. CRaC is in development for the [Open Java Development Kit (OpenJDK)](https://wiki.openjdk.org/display/crac). For an example of how to use CRaC with a reference application, see the [CRaC](https://github.com/CRaC/docs/blob/master/STEP-BY-STEP.md) repository on GitHub. CRaC uses three main elements:
 + `Resource` – An interface with two methods, `beforeCheckpoint()` and `afterRestore()`. Use these methods to implement the code that you want to run before a snapshot and after a restore.

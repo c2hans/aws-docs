@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Trigger
 ---
 
 # Trigger
-<a name="API_Trigger"></a>
 
 Defines a condition that can automatically trigger the execution of a Region switch plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/persona-support.html
 ---
 
 # AWS Glue support for Persona
-<a name="persona-support"></a>
 
 AWS Glue supports Persona as follows:
 

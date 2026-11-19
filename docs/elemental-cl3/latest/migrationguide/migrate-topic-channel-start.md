@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Restarting channels
-<a name="migrate-topic-channel-start"></a>
 
 **To restart one channel**
 

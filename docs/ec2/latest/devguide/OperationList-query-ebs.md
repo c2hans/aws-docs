@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/OperationList-query-
 ---
 
 # Amazon EBS actions
-<a name="OperationList-query-ebs"></a>
 
 The following API actions are available for Amazon EBS. To learn more about Amazon EBS, see the [Amazon EBS product page](https://aws.amazon.com/ebs) and the [Amazon EBS documentation](https://docs.aws.amazon.com/ebs/).
 

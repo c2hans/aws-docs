@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/minute.html
 ---
 
 # $minute
-<a name="minute"></a>
 
 The `$minute` aggregation pipeline stage in Amazon DocumentDB extracts the minute value from a date or timestamp field.
 

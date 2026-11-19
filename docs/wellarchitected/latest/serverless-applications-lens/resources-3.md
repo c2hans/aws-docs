@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Resources
-<a name="resources-3"></a>
 
  Refer to the following resources to learn more about our best practices for performance efficiency.
 

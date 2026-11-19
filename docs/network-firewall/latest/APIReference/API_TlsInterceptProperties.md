@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # TlsInterceptProperties
-<a name="API_TlsInterceptProperties"></a>
 
 TLS decryption on traffic to filter on attributes in the HTTP header.
 

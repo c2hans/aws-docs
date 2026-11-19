@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # CreateRegistrationsFromBrandProfile
-<a name="API_CreateRegistrationsFromBrandProfile"></a>
 
 Creates one or more registrations in the DRAFT state and prefills their fields from the attributes of a brand profile. This operation runs asynchronously. Use the GetJob operation to track its progress.
 

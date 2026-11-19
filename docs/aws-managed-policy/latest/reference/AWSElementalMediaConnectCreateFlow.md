@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaConnectCreateFlow
-<a name="AWSElementalMediaConnectCreateFlow"></a>
 
 **Description**: Provides full access to create MediaConnect Flows and all its associated sub-resources.
 

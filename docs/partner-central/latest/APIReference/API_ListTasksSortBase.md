@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListTasksSortBase
-<a name="API_ListTasksSortBase"></a>
 
  Defines the sorting parameters for listing tasks. This structure allows for specifying the field to sort by and the order of sorting.
 

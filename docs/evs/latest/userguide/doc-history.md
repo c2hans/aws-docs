@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/doc-history.html
 ---
 
 # Document history for the Amazon Elastic VMware Service User Guide
-<a name="doc-history"></a>
 
 The following table describes the documentation releases for Amazon Elastic VMware Service.
 

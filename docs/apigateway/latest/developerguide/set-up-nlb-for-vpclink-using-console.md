@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-
 ---
 
 # Set up a Network Load Balancer for API Gateway private integrations (legacy)
-<a name="set-up-nlb-for-vpclink-using-console"></a>
 
 **Note**
 The following implementation of private integrations uses VPC links V1. VPC links V1 are legacy resources. We recommend that you use [VPC links V2 for REST APIs](apigateway-vpc-links-v2.md).

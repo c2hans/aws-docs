@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Model ModelDataSource
-<a name="aws-properties-sagemaker-model-modeldatasource"></a>
 
 Specifies the location of ML model data to deploy. If specified, you must specify one and only one of the available data sources.
 

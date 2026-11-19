@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cdm
 ---
 
 # CdmaObj
-<a name="API_CdmaObj"></a>
 
 CDMA (Code-division multiple access) object.
 

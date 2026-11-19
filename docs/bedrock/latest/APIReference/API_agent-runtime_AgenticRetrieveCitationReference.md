@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveCitationReference
-<a name="API_agent-runtime_AgenticRetrieveCitationReference"></a>
 
 A reference to a specific result item.
 

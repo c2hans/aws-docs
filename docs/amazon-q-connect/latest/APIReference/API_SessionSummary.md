@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SessionSummary
-<a name="API_amazon-q-connect_SessionSummary"></a>
 
 Summary information about the session.
 

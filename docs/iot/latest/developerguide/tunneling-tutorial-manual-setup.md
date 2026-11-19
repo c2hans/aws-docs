@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/tunneling-tuto
 ---
 
 # Open a tunnel using manual setup and connect to remote device
-<a name="tunneling-tutorial-manual-setup"></a>
 
 When you open a tunnel, you can choose the quick setup or the manual setup method for opening a tunnel into the remote device. This tutorial shows how to open a tunnel using the manual setup method and configure and start the local proxy to connect to the remote device.
 

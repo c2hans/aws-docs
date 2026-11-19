@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Creating an AWS Managed Microsoft AD user
-<a name="ms_ad_manage_users_groups_create_user"></a>
 
 You can create AWS Managed Microsoft AD users with the Active Directory Administration Tools and PowerShell. Before you can create user with the Active Directory Administration Tools, you will need to complete the procedure in [Installing Active Directory Administration Tools for AWS Managed Microsoft AD](ms_ad_install_ad_tools.md).
 

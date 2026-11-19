@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Phase 1: Assess
-<a name="phase-1-prepare-assess"></a>
 
 The assess phase focuses on collecting and analyzing information about the source Oracle database. It's the fundamental part of migration because all subsequent phases are based on the data points that are collected in this phase. The analysis result of this phase is the input of the remaining phases. It determines the most appropriate choice for the replatforming option, migration tool, and approach.
 

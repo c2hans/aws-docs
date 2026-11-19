@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateNetworkPerformanceOptions
-<a name="API_LaunchTemplateNetworkPerformanceOptions"></a>
 
 With network performance options, you can adjust your bandwidth preferences to meet the needs of the workload that runs on your instance at launch.
 

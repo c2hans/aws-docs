@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/forsale.ht
 ---
 
 # .forsale
-<a name="forsale"></a>
 
 Used for selling goods and services.
 

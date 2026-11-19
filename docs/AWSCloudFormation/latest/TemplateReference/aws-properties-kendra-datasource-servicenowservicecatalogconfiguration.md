@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource ServiceNowServiceCatalogConfiguration
-<a name="aws-properties-kendra-datasource-servicenowservicecatalogconfiguration"></a>
 
 Provides the configuration information for crawling service catalog items in the ServiceNow site
 

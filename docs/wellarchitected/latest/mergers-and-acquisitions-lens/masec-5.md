@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # MASEC 5: How do you plan to maintain your network security posture?
-<a name="masec-5"></a>
 
  Both companies involved in an integration must understand each organization's network security requirements. Organizations need to understand network connectivity across regions and on-premises data centers if applicable.
 

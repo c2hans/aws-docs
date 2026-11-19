@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-lam
 ---
 
 # Prerequisites
-<a name="tutorial-lambda-sam-prereqs"></a>
 
 To complete this tutorial, you must first:
 +  Complete the steps in [Getting started with CodeDeploy](getting-started-codedeploy.md).

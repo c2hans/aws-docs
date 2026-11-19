@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # BatchPutProfileObjectRequestItem
-<a name="API_connect-customer-profiles_BatchPutProfileObjectRequestItem"></a>
 
 An item to add to the domain as part of a batch request.
 

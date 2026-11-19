@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssignPri
 ---
 
 # AssignPrivateIpAddresses
-<a name="API_AssignPrivateIpAddresses"></a>
 
 Assigns the specified secondary private IP addresses to the specified network interface.
 

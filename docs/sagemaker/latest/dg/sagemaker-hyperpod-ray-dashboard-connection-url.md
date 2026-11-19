@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Generating a dashboard connection URL
-<a name="sagemaker-hyperpod-ray-dashboard-connection-url"></a>
 
 A dashboard connection URL is an authenticated link to a Ray cluster's dashboard. You create a `RayDashboardConnection` resource for the cluster, and the endpoint operator returns the URL on the resource status.
 

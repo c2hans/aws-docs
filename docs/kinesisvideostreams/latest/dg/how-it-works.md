@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-it-wor
 ---
 
 # Kinesis Video Streams: How it works
-<a name="how-it-works"></a>
 
 **Topics**
 + [Kinesis Video Streams API and producer libraries support](how-it-works-kinesis-video-api-producer-sdk.md)

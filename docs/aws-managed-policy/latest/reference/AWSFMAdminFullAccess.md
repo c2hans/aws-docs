@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSF
 ---
 
 # AWSFMAdminFullAccess
-<a name="AWSFMAdminFullAccess"></a>
 
 **Description**: Full access for AWS FM Administrator
 

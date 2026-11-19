@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Resourc
 ---
 
 # ResourceNotFoundException
-<a name="API_ResourceNotFoundException"></a>
 
 The requested resource was not found.
 

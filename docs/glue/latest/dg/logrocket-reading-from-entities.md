@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/logrocket-reading-from-en
 ---
 
 # Reading from LogRocket entities
-<a name="logrocket-reading-from-entities"></a>
 
 **Prerequisites**
 

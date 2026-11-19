@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_AccessDenied
 ---
 
 # AccessDeniedException
-<a name="API_AccessDeniedException"></a>
 
 You do not have sufficient access to perform this action. Check your permissions, and try again.
 

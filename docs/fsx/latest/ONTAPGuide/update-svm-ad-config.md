@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/update-svm-ad-conf
 ---
 
 # Updating existing SVM Active Directory configurations using the AWS Management Console, AWS CLI, and API
-<a name="update-svm-ad-config"></a>
 
 Use the following procedure to update the Active Directory configuration of an SVM that is already joined to an Active Directory.
 

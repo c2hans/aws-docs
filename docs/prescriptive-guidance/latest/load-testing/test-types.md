@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/load-testin
 ---
 
 # Load test types
-<a name="test-types"></a>
 
 The following test types are based on the foundational questions listed earlier in the guide.
 

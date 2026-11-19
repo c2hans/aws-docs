@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/c
 ---
 
 # Step 1: Create a KeyValueStore for revoked certificates
-<a name="create-kvs-revoked-certificates"></a>
 
 Create a KeyValueStore to store revoked certificate serial numbers that your Connection Function can check during mTLS connections.
 

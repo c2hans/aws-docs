@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateOpenID
 ---
 
 # CreateOpenIDConnectProvider
-<a name="API_CreateOpenIDConnectProvider"></a>
 
 Creates an IAM entity to describe an identity provider (IdP) that supports [OpenID Connect (OIDC)](http://openid.net/connect/).
 

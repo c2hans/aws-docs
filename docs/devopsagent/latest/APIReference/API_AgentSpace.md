@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Agen
 ---
 
 # AgentSpace
-<a name="API_AgentSpace"></a>
 
 Represents a complete AgentSpace with all its properties, timestamps, encryption settings, and unique identifier.
 

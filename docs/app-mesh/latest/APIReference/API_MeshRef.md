@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshRef
 ---
 
 # MeshRef
-<a name="API_MeshRef"></a>
 
 An object that represents a service mesh returned by a list operation.
 

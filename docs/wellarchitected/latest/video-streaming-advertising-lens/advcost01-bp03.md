@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVCOST01-BP03 Consolidate identity resolution to reduce redundant matching across linear and digital audiences
-<a name="advcost01-bp03"></a>
 
  You pay twice for matching and resolution when you maintain separate identity graphs for linear and digital audiences, often through different vendors with overlapping capabilities. A single resolution process builds one unified audience graph, cuts redundant matching costs, and deduplicates audiences across screens.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MacHost.h
 ---
 
 # MacHost
-<a name="API_MacHost"></a>
 
  Information about the EC2 Mac Dedicated Host.
 

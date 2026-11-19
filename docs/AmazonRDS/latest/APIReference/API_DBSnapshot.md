@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBSnap
 ---
 
 # DBSnapshot
-<a name="API_DBSnapshot"></a>
 
 Contains the details of an Amazon RDS DB snapshot.
 

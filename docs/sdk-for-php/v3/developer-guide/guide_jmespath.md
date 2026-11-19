@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_jme
 ---
 
 # JMESPath expressions in the AWS SDK for PHP Version 3
-<a name="guide_jmespath"></a>
 
  [JMESPath](http://jmespath.org/) enables you to declaratively specify how to extract elements from a JSON document. The AWS SDK for PHP has a dependency on [jmespath.php](https://github.com/jmespath/jmespath.php) to power some of the high-level abstractions like [Paginators in the AWS SDK for PHP Version 3](guide_paginators.md) and [Waiters in the AWS SDK for PHP Version 3](guide_waiters.md), but also exposes JMESPath searching on `Aws\ResultInterface` and `Aws\ResultPaginator`.
 

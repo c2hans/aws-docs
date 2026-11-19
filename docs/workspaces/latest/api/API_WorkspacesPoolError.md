@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspacesPool
 ---
 
 # WorkspacesPoolError
-<a name="API_WorkspacesPoolError"></a>
 
 Describes a pool error.
 

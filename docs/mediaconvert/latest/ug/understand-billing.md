@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/understand-billin
 ---
 
 # Understanding billing and usage in MediaConvert
-<a name="understand-billing"></a>
 
 When using AWS Elemental MediaConvert, you don't have to pay any upfront fees or commit to how much content you'll transcode. Like other AWS services, you pay as you go and pay only for what you use.
 

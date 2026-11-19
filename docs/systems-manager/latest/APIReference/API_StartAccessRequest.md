@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # StartAccessRequest
-<a name="API_StartAccessRequest"></a>
 
 Starts the workflow for just-in-time node access sessions.
 

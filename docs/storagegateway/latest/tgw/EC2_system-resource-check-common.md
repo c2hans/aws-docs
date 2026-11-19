@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/EC2_system-res
 ---
 
 # Viewing your gateway system resource status
-<a name="EC2_system-resource-check-common"></a>
 
 When your gateway starts, it checks its virtual CPU cores, root volume size, and RAM. It then determines whether these system resources are sufficient for your gateway to function properly. You can view the results of this check on the gateway's local console.
 

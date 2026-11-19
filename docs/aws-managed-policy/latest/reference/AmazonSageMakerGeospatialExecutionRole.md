@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerGeospatialExecutionRole
-<a name="AmazonSageMakerGeospatialExecutionRole"></a>
 
 **Description**: This policy provide access to services that are commonly needed to use SageMaker geospatial.
 

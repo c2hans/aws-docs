@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-data-source
 ---
 
 # Connect to data sources
-<a name="AMG-data-sources"></a>
 
 Amazon Managed Grafana supports many different *data sources*. Data sources are storage backends that you can query in Grafana to do things like building dashboards. Each data source has a specific query editor that is customized for the features and capabilities that the particular data source exposes.
 

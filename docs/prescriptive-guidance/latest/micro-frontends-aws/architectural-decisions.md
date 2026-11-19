@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Architectural decisions in micro-frontends
-<a name="architectural-decisions"></a>
 
 Teams that apply a micro-frontend architecture pattern for their applications must make several decisions about architecture early on:
 + [Identification of micro-frontends and definition of boundaries](micro-frontend-boundaries.md)

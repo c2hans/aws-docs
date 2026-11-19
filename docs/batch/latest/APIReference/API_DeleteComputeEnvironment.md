@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DeleteComp
 ---
 
 # DeleteComputeEnvironment
-<a name="API_DeleteComputeEnvironment"></a>
 
 Deletes an AWS Batch compute environment.
 

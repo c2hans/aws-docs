@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Geome
 ---
 
 # Geometry
-<a name="API_Geometry"></a>
 
 Information about the location of items on a document page.
 

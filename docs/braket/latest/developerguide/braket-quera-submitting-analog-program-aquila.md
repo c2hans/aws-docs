@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-quer
 ---
 
 # Submit an analog program using QuEra Aquila
-<a name="braket-quera-submitting-analog-program-aquila"></a>
 
 This page provides a comprehensive documentation about the capabilities of the Aquila machine from QuEra. Details covered here are the following:
 

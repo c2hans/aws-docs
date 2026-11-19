@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteMlflowApp
-<a name="API_DeleteMlflowApp"></a>
 
 Deletes an MLflow App.
 

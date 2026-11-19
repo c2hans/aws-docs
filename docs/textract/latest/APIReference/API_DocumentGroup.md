@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Documen
 ---
 
 # DocumentGroup
-<a name="API_DocumentGroup"></a>
 
 Summary information about documents grouped by the same document type.
 

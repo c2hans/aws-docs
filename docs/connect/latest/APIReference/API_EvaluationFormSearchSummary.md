@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormSearchSummary
-<a name="API_EvaluationFormSearchSummary"></a>
 
 Information about the returned evaluation forms.
 

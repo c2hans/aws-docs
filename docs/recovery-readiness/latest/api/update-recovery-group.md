@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/update-rec
 ---
 
 # Update a recovery group
-<a name="update-recovery-group"></a>
 
 The following is an example of a request to update a recovery group to add two cells, and the response.
 

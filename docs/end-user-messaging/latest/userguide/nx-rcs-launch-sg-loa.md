@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Letter of Authorization (LOA)
-<a name="nx-rcs-launch-sg-loa"></a>
 
 The Singapore registration form collects brand information (the display name must match your SGNIC registered sender name), use case selection, a screen recording, privacy policy and terms of service URLs, your Singapore business registration document (Bizfile) from ACRA, and an RBM Letter of Authorization (LOA) template. Although the Bizfile and LOA fields are marked optional in the form, they are required for Singtel carrier approval – Singtel is the largest carrier in Singapore, so we strongly recommend providing both documents when you submit your registration.
 

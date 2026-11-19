@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_As2Conn
 ---
 
 # As2ConnectorConfig
-<a name="API_As2ConnectorConfig"></a>
 
 Contains the details for an AS2 connector object. The connector object is used for AS2 outbound processes, to connect the AWS Transfer Family customer with the trading partner.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/millisecond.h
 ---
 
 # $millisecond
-<a name="millisecond"></a>
 
 The `$millisecond` operator in Amazon DocumentDB is used to extract the millisecond portion of a date value.
 

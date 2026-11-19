@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceIm
 ---
 
 # ReplaceImageInstanceTypeSpecification
-<a name="API_ReplaceImageInstanceTypeSpecification"></a>
 
 Replaces or removes the instance type specification for an AMI. The instance type specification defines which instance types are compatible with the AMI.
 

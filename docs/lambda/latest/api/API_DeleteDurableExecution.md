@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteDurableExecu
 ---
 
 # DeleteDurableExecution
-<a name="API_DeleteDurableExecution"></a>
 
 Deletes a completed Lambda [durable execution](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html) and its data. The execution must be in a terminal state (`SUCCEEDED`, `FAILED`, `STOPPED`, or `TIMED_OUT`). Otherwise, this operation returns a `ResourceConflictException`.
 

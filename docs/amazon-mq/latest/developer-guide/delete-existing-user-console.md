@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/delete-
 ---
 
 # Delete an ActiveMQ broker user
-<a name="delete-existing-user-console"></a>
 
  When you no longer need a user, you can delete the user.
 

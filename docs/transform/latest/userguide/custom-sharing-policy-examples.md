@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ---
 
 # Identity-based policy examples for sharing
-<a name="custom-sharing-policy-examples"></a>
 
 The simplest way to grant access is with AWS managed policies, plus the AWS Transform custom actions for sharing that they don't include. The following table shows what each role needs.
 

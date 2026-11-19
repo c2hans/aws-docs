@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to geocode using filters
-<a name="how-to-geocode-filters"></a>
 
 The Geocode API enables you to use filters to get desired results.
 

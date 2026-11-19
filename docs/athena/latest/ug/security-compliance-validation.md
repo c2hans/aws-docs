@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/security-compliance-val
 ---
 
 # Compliance validation for
-<a name="security-compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, and others.
 

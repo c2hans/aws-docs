@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-ec2-instance
 ---
 
 # How EC2 instance stop and start works
-<a name="how-ec2-instance-stop-start-works"></a>
 
 When you stop an Amazon EC2 instance, changes are registered at the operating system (OS) level of the instance, some resources are lost, and some resources persist. When you start an instance, changes are registered at the instance level.
 

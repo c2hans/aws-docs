@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ProviderDescription
-<a name="API_ProviderDescription"></a>
 
 The details of a user pool identity provider (IdP), including name and type.
 

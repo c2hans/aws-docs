@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # TaskDetails
-<a name="API_account_TaskDetails"></a>
 
 Contains detailed information about a profile update task including the changes to be made.
 

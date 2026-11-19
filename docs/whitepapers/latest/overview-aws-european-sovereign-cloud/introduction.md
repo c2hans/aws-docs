@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-european
 ---
 
 # Introduction
-<a name="introduction"></a>
 
 From day one, [Amazon Web Services (AWS)](https://aws.amazon.com/) has given customers control over their data and choices for how they secure and manage that data in the cloud. In November 2022, we introduced the [AWS Digital Sovereignty Pledge](https://aws.amazon.com/blogs/security/aws-digital-sovereignty-pledge-control-without-compromise/), our commitment to offering all AWS customers the most advanced set of sovereignty controls and features available in the cloud. We pledged to work to understand the evolving needs and requirements of both customers and regulators, and to rapidly adapt and innovate to meet them. AWS provides solutions that help our customers with the heavy lifting of compliance so that they can invest their valuable time and resources into the work of furthering their own organizational missions. The AWS European Sovereign Cloud is a direct result of that commitment and a new option to enable our customers to achieve their goals.
 

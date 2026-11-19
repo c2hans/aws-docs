@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_E
 ---
 
 # EphemerisFilter
-<a name="API_EphemerisFilter"></a>
 
 Filter for selecting contacts that use a specific ephemeris".
 

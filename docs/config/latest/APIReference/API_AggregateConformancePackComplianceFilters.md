@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregate
 ---
 
 # AggregateConformancePackComplianceFilters
-<a name="API_AggregateConformancePackComplianceFilters"></a>
 
 Filters the conformance packs based on an account ID, region, compliance type, and the name of the conformance pack.
 

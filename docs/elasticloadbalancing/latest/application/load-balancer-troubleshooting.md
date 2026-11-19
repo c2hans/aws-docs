@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Troubleshoot your Application Load Balancers
-<a name="load-balancer-troubleshooting"></a>
 
 The following information can help you troubleshoot issues with your Application Load Balancer.
 

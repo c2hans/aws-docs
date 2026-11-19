@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/user-co
 ---
 
 # User Connections to Amazon WorkSpaces Applications
-<a name="user-connections-to-appstream2"></a>
 
 Users can connect to WorkSpaces Applications streaming instances through the default public internet endpoint, or by using an interface VPC endpoint (interface endpoint) that you create in your virtual private cloud (VPC). For more information, see [Tutorial: Creating and Streaming from Interface VPC Endpoints](creating-streaming-from-interface-vpc-endpoints.md).
 

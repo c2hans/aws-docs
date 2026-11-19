@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/monitoring-cloudw
 ---
 
 # Monitoring AWS Quick using CloudWatch Logs
-<a name="monitoring-cloudwatch-logs"></a>
 
 You can use [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html) to deliver chat conversations, user feedback, agent hours usage, and index storage usage in AWS Quick for you to analyze. These logs can be delivered to multiple destinations, such as CloudWatch, Amazon S3, or Amazon Data Firehose (standard rates apply).
 

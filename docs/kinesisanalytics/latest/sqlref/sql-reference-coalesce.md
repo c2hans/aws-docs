@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # COALESCE
-<a name="sql-reference-coalesce"></a>
 
 ```
 COALESCE (

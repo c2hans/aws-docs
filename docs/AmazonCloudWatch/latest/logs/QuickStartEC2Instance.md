@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartE
 ---
 
 # Quick Start: Install and configure the CloudWatch Logs agent on a running EC2 Linux instance
-<a name="QuickStartEC2Instance"></a>
 
 **Important**
 The older logs agent is deprecated. CloudWatch includes a unified agent that can collect both logs and metrics from EC2 instances and on-premises servers. For more information, see [Getting started with CloudWatch Logs](CWL_GettingStarted.md).

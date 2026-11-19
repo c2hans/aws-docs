@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 **Important**
 When uninstalling the solution, make sure to uninstall all custom schedule stacks before uninstalling the solution itself.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenGenericDataModel
-<a name="API_CodegenGenericDataModel"></a>
 
 Describes a model in a generic data schema.
 

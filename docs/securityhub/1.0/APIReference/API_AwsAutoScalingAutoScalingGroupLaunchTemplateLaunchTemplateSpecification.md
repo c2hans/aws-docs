@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecification
-<a name="API_AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecification"></a>
 
 Details about the launch template to use.
 

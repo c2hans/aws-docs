@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from Amazon RDS for Oracle to Amazon RDS for MySQL
-<a name="migrate-from-amazon-rds-for-oracle-to-amazon-rds-for-mysql"></a>
 
 *Jitender Kumar, Srini Ramaswamy, and Neha Sharma, Amazon Web Services*
 

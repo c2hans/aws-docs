@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/vpc-s3.html
 ---
 
 # (Example) Restrict data access to your Amazon S3 data using VPC
-<a name="vpc-s3"></a>
 
 You can use a VPC to restrict access to data in your Amazon S3 buckets. For further security, you can configure your VPC with no internet access and create an endpoint for it with AWS PrivateLink. You can also restrict access by attaching resource-based policies to the VPC endpoint or to the S3 bucket.
 

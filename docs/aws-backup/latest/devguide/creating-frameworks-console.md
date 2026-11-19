@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/creating-fram
 ---
 
 # Creating frameworks using the AWS Backup console
-<a name="creating-frameworks-console"></a>
 
 After turning on resource tracking, create a framework using the following steps.
 

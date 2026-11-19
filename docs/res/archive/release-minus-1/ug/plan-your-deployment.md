@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/plan-your
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section contains information on cost, security, supported regions, and quotas that can help you plan your deployment of Research and Engineering Studio on AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_As
 ---
 
 # Assets
-<a name="API_Assets"></a>
 
 The collection of assets used in a pentest configuration, including endpoints, actors, documents, source code repositories, and integrated repositories.
 

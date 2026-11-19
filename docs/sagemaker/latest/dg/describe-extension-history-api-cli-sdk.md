@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/describe-extension-h
 ---
 
 # View extension history
-<a name="describe-extension-history-api-cli-sdk"></a>
 
 Use the [`DescribeTrainingPlanExtensionHistory`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlanExtensionHistory.html) API to view the complete extension history for a training plan.
 

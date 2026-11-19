@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/operations.htm
 ---
 
 # Operations
-<a name="operations"></a>
 
 The Amazon Macie REST API includes the following operations.
 + [AcceptInvitation](invitations-accept.md#AcceptInvitation)

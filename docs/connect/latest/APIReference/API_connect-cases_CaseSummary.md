@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CaseSummary
-<a name="API_connect-cases_CaseSummary"></a>
 
 Case summary information.
 

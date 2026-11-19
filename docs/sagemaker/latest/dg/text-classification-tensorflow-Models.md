@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/text-classification-
 ---
 
 # TensorFlow Hub Models
-<a name="text-classification-tensorflow-Models"></a>
 
 The following pretrained models are available to use for transfer learning with the Text Classification - TensorFlow algorithm.
 

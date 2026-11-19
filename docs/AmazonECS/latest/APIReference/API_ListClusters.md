@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListCl
 ---
 
 # ListClusters
-<a name="API_ListClusters"></a>
 
 Returns a list of existing clusters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetUseCa
 ---
 
 # GetUseCaseForModelAccess
-<a name="API_GetUseCaseForModelAccess"></a>
 
  Returns the use case for requesting access to Anthropic models.
 

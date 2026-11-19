@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Unmat
 ---
 
 # UnmaterializedCalculatedColumn
-<a name="API_UnmaterializedCalculatedColumn"></a>
 
 A calculated column that is not materialized in the prepared data. The column is computed at analysis time and can use aggregate expressions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_AsyncRes
 ---
 
 # AsyncResponseDetails
-<a name="API_control_AsyncResponseDetails"></a>
 
 A container for the response details that are returned when querying about an asynchronous request.
 

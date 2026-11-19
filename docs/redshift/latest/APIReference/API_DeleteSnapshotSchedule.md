@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteS
 ---
 
 # DeleteSnapshotSchedule
-<a name="API_DeleteSnapshotSchedule"></a>
 
 Deletes a snapshot schedule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonOpenSearchIngestionFullAccess
-<a name="AmazonOpenSearchIngestionFullAccess"></a>
 
 **Description**: Allows Amazon OpenSearch Ingestion to access other AWS services on your behalf.
 

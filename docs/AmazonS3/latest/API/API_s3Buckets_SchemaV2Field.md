@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Schema
 ---
 
 # SchemaV2Field
-<a name="API_s3Buckets_SchemaV2Field"></a>
 
 Contains details about a schema field in the V2 format. This field format supports nested and complex data types such as `struct`, `list`, and `map`, in addition to primitive types.
 

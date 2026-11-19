@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvoiceCurrencyAmount
-<a name="API_invoicing_InvoiceCurrencyAmount"></a>
 
  The amount charged after taxes, in the preferred currency.
 

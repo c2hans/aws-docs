@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ResourceLink
-<a name="API_ResourceLink"></a>
 
 An external reference associated with remediation steps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/best-pr
 ---
 
 # Best practices for network resilience and monitoring in Amazon MQ for RabbitMQ
-<a name="best-practices-network-resilience"></a>
 
  Network resilience and monitoring broker metrics are essential for maintaining reliable messaging applications. Complete the following best practices to implement automatic recovery mechanisms and resource monitoring strategies.
 

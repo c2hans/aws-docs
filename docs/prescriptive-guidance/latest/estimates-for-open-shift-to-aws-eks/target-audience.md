@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Target audience
-<a name="target-audience"></a>
 + Platform engineers responsible for Amazon EKS cluster design and configuration
 + Migration leads coordinating cross-team execution
 + Project managers developing timelines and resource plans

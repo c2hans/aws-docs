@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Managing Security Hub CSPM for multiple accounts with AWS Organizations
-<a name="securityhub-accounts-orgs"></a>
 
 You can integrate AWS Security Hub CSPM with AWS Organizations, and then manage Security Hub CSPM for accounts in your organization.
 

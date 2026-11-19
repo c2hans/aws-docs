@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FieldSortExpression
-<a name="API_FieldSortExpression"></a>
 
 The field sorting order and name of the field.
 

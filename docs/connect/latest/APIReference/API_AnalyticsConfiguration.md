@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Analytic
 ---
 
 # AnalyticsConfiguration
-<a name="API_AnalyticsConfiguration"></a>
 
 The configuration for conversational analytics.
 

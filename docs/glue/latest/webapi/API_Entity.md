@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Entity.html
 ---
 
 # Entity
-<a name="API_Entity"></a>
 
 An entity supported by a given `ConnectionType`.
 

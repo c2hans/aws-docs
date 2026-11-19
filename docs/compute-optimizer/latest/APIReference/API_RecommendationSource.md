@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RecommendationSource
-<a name="API_RecommendationSource"></a>
 
 Describes the source of a recommendation, such as an Amazon EC2 instance or Auto Scaling group.
 

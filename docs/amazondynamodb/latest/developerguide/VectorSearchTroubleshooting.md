@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Vec
 ---
 
 # Troubleshooting vector indexes
-<a name="VectorSearchTroubleshooting"></a>
 
 The following table lists common issues when working with vector indexes and how to resolve them.
 

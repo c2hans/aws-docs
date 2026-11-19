@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Testing
-<a name="testing"></a>
 
 ## Functional tests
 <a name="functional-tests"></a>

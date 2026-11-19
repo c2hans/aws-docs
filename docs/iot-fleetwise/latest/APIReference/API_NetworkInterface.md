@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ne
 ---
 
 # NetworkInterface
-<a name="API_NetworkInterface"></a>
 
 Represents a node and its specifications in an in-vehicle communication network. All signal decoders must be associated with a network node.
 

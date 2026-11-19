@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/ascp-pod
 ---
 
 # Use AWS Secrets and Configuration Provider CSI with Pod Identity for Amazon EKS
-<a name="ascp-pod-identity-integration"></a>
 
 The AWS Secrets and Configuration Provider integration with the Pod Identity Agent for Amazon Elastic Kubernetes Service provides enhanced security, simplified configuration, and improved performance for applications running on Amazon EKS. Pod Identity simplifies IAM authentication for Amazon EKS when retrieving secrets from Secrets Manager or parameters from AWS Systems Manager Parameter Store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Document revisions
-<a name="revisions"></a>
 
 The following table describes important changes to this documentation.
 

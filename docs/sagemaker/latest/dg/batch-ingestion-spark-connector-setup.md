@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/batch-ingestion-spar
 ---
 
 # Batch ingestion with Amazon SageMaker Feature Store Spark
-<a name="batch-ingestion-spark-connector-setup"></a>
 
 Amazon SageMaker Feature Store Spark is a Spark connector that connects the Spark library to Feature Store. Feature Store Spark simplifies data ingestion from Spark `DataFrame`s to feature groups. Feature Store supports batch data ingestion with Spark, using your existing ETL pipeline, on Amazon EMR, GIS, an AWS Glue job, an Amazon SageMaker Processing job, or a SageMaker notebook.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/dolby-atmos.html
 ---
 
 # Dolby Atmos
-<a name="dolby-atmos"></a>
 
 Dolby Atmos provides an immersive audio experience in cinemas and home theaters. With the right audio input files, you can use AWS Elemental MediaConvert to create Dolby Atmos outputs. You can create streaming outputs that end viewers can experience in their home theaters or file outputs that you can use in your professional workflows.
 

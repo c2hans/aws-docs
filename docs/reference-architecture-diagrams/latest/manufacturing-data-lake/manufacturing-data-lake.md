@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Manufacturing Data Lake on AWS
-<a name="manufacturing-data-lake"></a>
 
 Publication date: **June 29, 2020 ([Diagram history](#mdl-diagram-history))**
 

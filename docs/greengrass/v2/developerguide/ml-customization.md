@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/ml-customiz
 ---
 
 # Customize your machine learning components
-<a name="ml-customization"></a>
 
 In AWS IoT Greengrass, you can configure sample [machine learning components](perform-machine-learning-inference.md#ml-components) to customize how you perform machine learning inference on your devices with the inference, model, and runtime components as the building blocks. AWS IoT Greengrass also provides you the flexibility to use the sample components as templates and create your own custom components as needed. You can mix and match this modular approach to customize your machine learning inference components in the following ways:
 

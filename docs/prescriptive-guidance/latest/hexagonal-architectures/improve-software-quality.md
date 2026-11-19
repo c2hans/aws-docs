@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 ---
 
 # Quality by design
-<a name="improve-software-quality"></a>
 
 Adopting a hexagonal architecture helps promote the quality of your code base from the start of your project. It is important to build a process that helps you meet expected quality requirements from the beginning, without slowing down the development process.
 

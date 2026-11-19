@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # WorkSpaces requirements
-<a name="workspaces-requirements"></a>
 
  The Amazon WorkSpaces service requires three components to deploy successfully:
 +  **WorkSpaces client application** — An Amazon WorkSpaces-supported client device. Refer to [Getting Started with Your WorkSpace](https://docs.aws.amazon.com/workspaces/latest/adminguide/client_help.html#client_list).

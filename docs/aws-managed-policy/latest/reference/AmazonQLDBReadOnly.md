@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonQLDBReadOnly
-<a name="AmazonQLDBReadOnly"></a>
 
 **Description**: Provides read only access to Amazon QLDB.
 

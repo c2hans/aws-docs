@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/capabilit
 ---
 
 # Capabilities
-<a name="capabilities"></a>
 
 In addition to the [general-purpose AWS knowledge and API tools](understanding-mcp-server-tools.md), AWS MCP Server provides capabilities. A capability groups a set of helper functions that work together to handle a specific kind of AWS task. This document describes the capabilities that AWS MCP Server provides and what they do.
 

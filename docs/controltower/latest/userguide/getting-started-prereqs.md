@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/getting-st
 ---
 
 # Prerequisite: Automated pre-launch checks for your management account
-<a name="getting-started-prereqs"></a>
 
 Before AWS Control Tower sets up the landing zone, it automatically runs a series of pre-launch checks in your account. There's no action required on your part for these checks, which ensure that your management account is ready for the changes that establish your landing zone. Here are the checks that AWS Control Tower runs before setting up a landing zone:
 + The existing service limits for the AWS account must be sufficient for AWS Control Tower to launch. For more information, see [Limitations and quotas in AWS Control Tower](limits.md).

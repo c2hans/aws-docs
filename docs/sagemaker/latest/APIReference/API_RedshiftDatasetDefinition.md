@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Redshi
 ---
 
 # RedshiftDatasetDefinition
-<a name="API_RedshiftDatasetDefinition"></a>
 
 Configuration for Redshift Dataset Definition input.
 

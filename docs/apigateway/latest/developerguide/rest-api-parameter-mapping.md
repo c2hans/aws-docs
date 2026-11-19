@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Parameter mapping for REST APIs in API Gateway
-<a name="rest-api-parameter-mapping"></a>
 
 **Note**
 If you are using an HTTP API, see [Transform API requests and responses for HTTP APIs in API Gateway](http-api-parameter-mapping.md).

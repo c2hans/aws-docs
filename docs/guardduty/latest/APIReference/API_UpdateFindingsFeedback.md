@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateFindingsFeedback
-<a name="API_UpdateFindingsFeedback"></a>
 
 Marks the specified GuardDuty findings as useful or not useful.
 

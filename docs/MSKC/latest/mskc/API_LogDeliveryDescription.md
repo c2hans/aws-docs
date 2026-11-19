@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_LogDeliveryDescript
 ---
 
 # LogDeliveryDescription
-<a name="API_LogDeliveryDescription"></a>
 
 The description of the log delivery settings.
 

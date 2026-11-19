@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkPolicyVersion
-<a name="API_CoreNetworkPolicyVersion"></a>
 
 Describes a core network policy version.
 

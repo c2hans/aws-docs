@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ge
 ---
 
 # GetDomain
-<a name="API_GetDomain"></a>
 
 Retrieves information about a Domain.
 

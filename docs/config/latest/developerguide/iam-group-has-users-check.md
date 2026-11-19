@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-group-h
 ---
 
 # iam-group-has-users-check
-<a name="iam-group-has-users-check"></a>
 
 Checks whether IAM groups have at least one IAM user.
 

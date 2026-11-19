@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/assign-authori
 ---
 
 # Assign authorization policies to projects within an Amazon DataZone domain unit
-<a name="assign-authorization-policies-to-projects-in-domain-unit"></a>
 
 In Amazon DataZone, domain units enable you to organize your assets and other domain entities under specific business units and teams. For more information, see [Amazon DataZone terminology and concepts](datazone-concepts.md).
 

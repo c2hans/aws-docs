@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_LatestServ
 ---
 
 # LatestServiceJobAttempt
-<a name="API_LatestServiceJobAttempt"></a>
 
 Information about the latest attempt of a service job. A Service job can transition from `SCHEDULED` back to `RUNNABLE` state when they encounter capacity constraints.
 

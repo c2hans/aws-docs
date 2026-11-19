@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # MetricMetadata
-<a name="API_MetricMetadata"></a>
 
 A single metric observed on a context graph node.
 

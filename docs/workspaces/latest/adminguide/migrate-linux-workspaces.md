@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/migrate-lin
 ---
 
 # Migrate a Linux WorkSpace to a different operating system
-<a name="migrate-linux-workspaces"></a>
 
 You can migrate an existing Linux WorkSpace to a different Linux operating system bundle while preserving the user's home directory, files, and data. Migration replaces the root volume (operating system) with a new bundle while keeping the user volume (`/home`) intact. This is different from a rebuild, which refreshes the root volume with the same OS bundle.
 

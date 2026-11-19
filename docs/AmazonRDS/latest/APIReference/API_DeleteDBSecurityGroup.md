@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteDBSecurityGroup
-<a name="API_DeleteDBSecurityGroup"></a>
 
 Deletes a DB security group.
 

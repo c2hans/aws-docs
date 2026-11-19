@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/spark_and_pyspark.html
 ---
 
 # AWS Glue Spark and PySpark jobs
-<a name="spark_and_pyspark"></a>
 
 AWS Glue support Spark and PySpark jobs. A Spark job is run in an Apache Spark environment managed by AWS Glue. It processes data in batches. A streaming ETL job is similar to a Spark job, except that it performs ETL on data streams. It uses the Apache Spark Structured Streaming framework. Some Spark job features are not available to streaming ETL jobs.
 

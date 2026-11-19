@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForEC2ScheduledInstances
-<a name="AWSServiceRoleForEC2ScheduledInstances"></a>
 
 **Description**: Allows EC2 Scheduled Instances to launch and manage spot instances.
 

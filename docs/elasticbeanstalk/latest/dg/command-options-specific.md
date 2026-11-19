@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-optio
 ---
 
 # Platform specific options
-<a name="command-options-specific"></a>
 
 Some Elastic Beanstalk platforms define option namespaces that are specific to the platform. These namespaces and their options are listed below for each platform.
 

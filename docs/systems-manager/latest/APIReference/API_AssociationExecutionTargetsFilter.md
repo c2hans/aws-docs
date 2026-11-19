@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AssociationExecutionTargetsFilter
-<a name="API_AssociationExecutionTargetsFilter"></a>
 
 Filters for the association execution.
 

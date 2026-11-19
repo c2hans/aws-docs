@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_IPSetSummary
 ---
 
 # IPSetSummary
-<a name="API_IPSetSummary"></a>
 
 High-level information about an [IPSet](API_IPSet.md), returned by operations like create and list. This provides information like the ID, that you can use to retrieve and manage an `IPSet`, and the ARN, that you provide to the [IPSetReferenceStatement](API_IPSetReferenceStatement.md) to use the address set in a [Rule](API_Rule.md).
 

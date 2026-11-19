@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/assi
 ---
 
 # Assigning users or groups to an existing IAM role
-<a name="assign_role"></a>
 
 You can assign an existing IAM role to an AWS Managed Microsoft AD user or group. To do this, make sure you have completed the following.
 

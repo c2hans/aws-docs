@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/understanding
 ---
 
 # Monitor Lightsail resources with health metrics
-<a name="understanding-instance-health-metrics-in-amazon-lightsail"></a>
 
 You can view the following Amazon Lightsail resource metrics over different time periods. For more information about resource metrics in Lightsail, see [Resource metrics](amazon-lightsail-resource-health-metrics.md).
 

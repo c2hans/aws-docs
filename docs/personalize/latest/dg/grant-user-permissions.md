@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/grant-user-permiss
 ---
 
 # Giving users permission to access Amazon Personalize
-<a name="grant-user-permissions"></a>
 
  To provide your users access to Amazon Personalize, you create an IAM policy that grants permission to access your Amazon Personalize resources and pass your service role to Amazon Personalize. Then you use that policy when you add permissions to your users, groups or roles.
 

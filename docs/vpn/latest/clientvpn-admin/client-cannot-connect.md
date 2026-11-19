@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-cannot
 ---
 
 # Troubleshooting AWS Client VPN: Client software returns a TLS error when trying to connect to Client VPN
-<a name="client-cannot-connect"></a>
 
 **Problem**
 I used to be able to connect my clients to the Client VPN successfully, but now the OpenVPN-based client returns one of the following errors when it tries to connect:

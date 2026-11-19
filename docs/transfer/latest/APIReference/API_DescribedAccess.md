@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedAccess
-<a name="API_DescribedAccess"></a>
 
 Describes the properties of the access that was specified.
 

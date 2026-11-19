@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Resour
 ---
 
 # ResourceSpec
-<a name="API_ResourceSpec"></a>
 
 Specifies the ARN's of a SageMaker AI image and SageMaker AI image version, and the instance type that the version runs on.
 

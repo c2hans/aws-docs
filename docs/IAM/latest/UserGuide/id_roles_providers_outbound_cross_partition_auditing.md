@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 ---
 
 # Auditing cross-partition identity federation
-<a name="id_roles_providers_outbound_cross_partition_auditing"></a>
 
 The `GetWebIdentityToken` CloudTrail event captures the token request in the source account. The `AssumeRoleWithWebIdentity` CloudTrail event captures the role assumption request in the destination account. Match `webIdentityTokenId` values to connect the source and destination events, and use `sourcePrincipalArn` and `sourceRegion` to identify who requested the token and where it was issued.
 

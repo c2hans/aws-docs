@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Spark jobs optimization
-<a name="8-handling-spark-jobs"></a>
 
 Apache Spark jobs on EKS have unique characteristics, they require large burst capacity, run for variable durations, and can waste resources if drivers outlive executors or if executor pools are over-provisioned.
 

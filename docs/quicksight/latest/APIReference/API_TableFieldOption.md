@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableFieldOption
-<a name="API_TableFieldOption"></a>
 
 The options for a table field.
 

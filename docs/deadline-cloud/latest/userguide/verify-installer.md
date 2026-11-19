@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/verify-i
 ---
 
 # Verify the authenticity of downloaded software
-<a name="verify-installer"></a>
 
 Verify your software's authenticity after downloading the installer to protect against file tampering. This procedure works for both Windows and Linux systems.
 

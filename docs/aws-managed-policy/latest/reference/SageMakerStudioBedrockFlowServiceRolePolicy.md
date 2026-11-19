@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioBedrockFlowServiceRolePolicy
-<a name="SageMakerStudioBedrockFlowServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Bedrock Flows to access Amazon Bedrock models and other resources attached to a flow in SageMaker Studio.
 

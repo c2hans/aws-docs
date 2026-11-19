@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_No
 ---
 
 # NoteTemplateSettingsResponse
-<a name="API_NoteTemplateSettingsResponse"></a>
 
 Response containing note template settings
 

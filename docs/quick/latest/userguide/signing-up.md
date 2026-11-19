@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/signing-up.html
 ---
 
 # Signing up through the AWS Console
-<a name="signing-up"></a>
 
 **Note**
 This section covers signing up for AWS Quick through the AWS Management Console for organizations that already use AWS. If you want to sign up without an AWS account, see [Signing up at aws.com/quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/standalone-signup.html) for a faster setup process using email or social login. For a comparison of features available with each account type, see [Pricing and availability](https://docs.aws.amazon.com/quicksuite/latest/userguide/what-is.html#pricing).

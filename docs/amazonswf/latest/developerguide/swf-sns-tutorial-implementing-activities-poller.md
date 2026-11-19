@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-sns-
 ---
 
 # Subscription Workflow Tutorial Part 4: Implementing the Activities Task Poller
-<a name="swf-sns-tutorial-implementing-activities-poller"></a>
 
 In Amazon SWF, activity tasks for a running workflow execution appear on the *activity task list*, which is provided when you schedule an activity in the workflow.
 

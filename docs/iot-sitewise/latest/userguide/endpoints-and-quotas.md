@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/endpoints-
 ---
 
 # AWS IoT SiteWise endpoints and quotas
-<a name="endpoints-and-quotas"></a>
 
 The following sections describe the endpoints and quotas for AWS IoT SiteWise.
 

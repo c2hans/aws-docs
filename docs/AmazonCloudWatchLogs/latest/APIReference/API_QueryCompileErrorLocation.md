@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # QueryCompileErrorLocation
-<a name="API_QueryCompileErrorLocation"></a>
 
 Reserved.
 

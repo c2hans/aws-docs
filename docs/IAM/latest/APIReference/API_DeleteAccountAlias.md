@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccoun
 ---
 
 # DeleteAccountAlias
-<a name="API_DeleteAccountAlias"></a>
 
  Deletes the specified AWS account alias. For information about using an AWS account alias, see [Creating, deleting, and listing an AWS account alias](https://docs.aws.amazon.com/signin/latest/userguide/CreateAccountAlias.html) in the * AWS Sign-In User Guide*.
 

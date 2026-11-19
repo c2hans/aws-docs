@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/security_iam_
 ---
 
 # AWS Transform permissions reference
-<a name="security_iam_permissions"></a>
 
 This section provides information about the APIs used by AWS Transform, and what they do.
 

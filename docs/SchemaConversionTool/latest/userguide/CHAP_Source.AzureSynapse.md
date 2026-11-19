@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Connecting Azure Synapse Analytics with AWS Schema Conversion Tool
-<a name="CHAP_Source.AzureSynapse"></a>
 
 You can use AWS SCT to convert schemas, code objects, and application code from Azure Synapse Analytics to Amazon Redshift.
 

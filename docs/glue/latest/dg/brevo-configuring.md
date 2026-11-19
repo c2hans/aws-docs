@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/brevo-configuring.html
 ---
 
 # Configuring Brevo
-<a name="brevo-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Brevo, you must meet the following requirements:
 

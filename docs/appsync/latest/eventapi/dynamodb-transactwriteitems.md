@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/dynamodb-transac
 ---
 
 # TransactWriteItems
-<a name="dynamodb-transactwriteitems"></a>
 
 **Note**
 We recommend using the DynamoDB built-in module to generate your request. For more information, see [Amazon DynamoDB built-in module](built-in-modules.md#DDB-built-in-module).

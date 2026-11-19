@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_KeyNameC
 ---
 
 # KeyNameConstraint
-<a name="API_control_KeyNameConstraint"></a>
 
 If provided, the generated manifest includes only source bucket objects whose object keys match the string constraints specified for `MatchAnyPrefix`, `MatchAnySuffix`, and `MatchAnySubstring`.
 

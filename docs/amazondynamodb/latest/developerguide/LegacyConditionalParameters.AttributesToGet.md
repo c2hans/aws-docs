@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Leg
 ---
 
 # AttributesToGet (legacy)
-<a name="LegacyConditionalParameters.AttributesToGet"></a>
 
 **Note**
 We recommend that you use the new expression parameters instead of these legacy parameters whenever possible. For more information, see [Using expressions in DynamoDB](Expressions.md). For specific information on the new parameter replacing this one, [Use *ProjectionExpression* instead](#ProjectionExpression.instead).

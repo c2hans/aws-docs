@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeLogConfiguration
-<a name="API_PipeLogConfiguration"></a>
 
 The logging configuration settings for the pipe.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ActionHistoryDetails
-<a name="API_budgets_ActionHistoryDetails"></a>
 
 The description of the details for the event.
 

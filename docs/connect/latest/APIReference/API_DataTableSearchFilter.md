@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTabl
 ---
 
 # DataTableSearchFilter
-<a name="API_DataTableSearchFilter"></a>
 
 A data table search filter.
 

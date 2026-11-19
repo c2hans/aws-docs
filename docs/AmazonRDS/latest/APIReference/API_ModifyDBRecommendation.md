@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyDBRecommendation
-<a name="API_ModifyDBRecommendation"></a>
 
 Updates the recommendation status and recommended action status for the specified recommendation.
 

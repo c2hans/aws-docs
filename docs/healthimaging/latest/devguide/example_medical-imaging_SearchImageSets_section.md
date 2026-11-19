@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/example_me
 ---
 
 # Use `SearchImageSets` with an AWS SDK or CLI
-<a name="example_medical-imaging_SearchImageSets_section"></a>
 
 The following code examples show how to use `SearchImageSets`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeleteExtension
-<a name="API_DeleteExtension"></a>
 
 Deletes an AWS AppConfig extension. You must delete all associations to an extension before you delete the extension.
 

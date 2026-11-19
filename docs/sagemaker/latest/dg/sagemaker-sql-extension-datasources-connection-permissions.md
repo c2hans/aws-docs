@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Set up the IAM permissions to access the data sources (for administrators)
-<a name="sagemaker-sql-extension-datasources-connection-permissions"></a>
 
 Administrators should ensure that the execution role used by the JupyterLab applications has the necessary AWS IAM permissions to access the data through the configured AWS Glue connections.
 + **Connections created by administrators using the AWS CLI**: To view the AWS Glue connections [created by administrators](sagemaker-sql-extension-datasources-glue-connection.md) and access their data, users need to have their administrator attach specific permissions to the SageMaker AI execution role used by their JupyterLab application in Studio. This includes access to AWS Glue, Secrets Manager, and database-specific permissions. Connections created by administrators are visible to all applications sharing the execution role granted the permissions to view specific AWS Glue catalogs or databases. To learn about the list of required permissions per type of data source, see the admin-defined connections permissions in [Admin-defined connections required IAM permissions](#admin-defined-connections-permissions).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/lambda-functions.h
 ---
 
 # Lambda functions as targets in VPC Lattice
-<a name="lambda-functions"></a>
 
 You can register your Lambda functions as targets with a VPC Lattice target group, and configure a listener rule to forward requests to the target group for your Lambda function. When the service forwards the request to a target group with a Lambda function as a target, it invokes your Lambda function and passes the content of the request to the Lambda function, in JSON format.
 

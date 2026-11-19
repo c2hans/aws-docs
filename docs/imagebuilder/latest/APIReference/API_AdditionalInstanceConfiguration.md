@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Add
 ---
 
 # AdditionalInstanceConfiguration
-<a name="API_AdditionalInstanceConfiguration"></a>
 
 In addition to your infrastructure configuration, these settings provide an extra layer of control over your build instances. You can also specify commands to run on launch for all of your build instances.
 

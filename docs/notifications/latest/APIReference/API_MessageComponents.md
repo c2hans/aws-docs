@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Me
 ---
 
 # MessageComponents
-<a name="API_MessageComponents"></a>
 
 Describes the components of a notification message.
 

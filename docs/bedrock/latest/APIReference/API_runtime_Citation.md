@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # Citation
-<a name="API_runtime_Citation"></a>
 
 Contains information about a citation that references a specific source document. Citations provide traceability between the model's generated response and the source documents that informed that response.
 

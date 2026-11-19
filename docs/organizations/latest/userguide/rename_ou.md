@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/rename_ou
 ---
 
 # Renaming an organizational unit (OU) with AWS Organizations
-<a name="rename_ou"></a>
 
 When you sign in to your organization's management account, you can rename an OU. To do this, complete the following steps.
 

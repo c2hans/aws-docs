@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CognitoOptions
-<a name="API_CognitoOptions"></a>
 
 Container for the parameters required to enable Cognito authentication for an OpenSearch Service domain. For more information, see [Configuring Amazon Cognito authentication for OpenSearch Dashboards](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/cognito-auth.html).
 

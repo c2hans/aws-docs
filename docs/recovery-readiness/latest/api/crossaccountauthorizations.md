@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/crossaccou
 ---
 
 # ListCrossAccountAuthorizations, CreateCrossAccountAuthorization
-<a name="crossaccountauthorizations"></a>
 
 ## URI
 <a name="crossaccountauthorizations-url"></a>

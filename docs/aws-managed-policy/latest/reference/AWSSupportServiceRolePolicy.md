@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSupportServiceRolePolicy
-<a name="AWSSupportServiceRolePolicy"></a>
 
 **Description**: Allows AWS Support to access AWS resources to provide billing, administrative, and support services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AgentCoreRuntimeSourceDetails
-<a name="API_AgentCoreRuntimeSourceDetails"></a>
 
 The source details for a registry record that was auto-detected from an Amazon Bedrock AgentCore Runtime resource.
 

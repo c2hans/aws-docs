@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_TestConnecti
 ---
 
 # TestConnection
-<a name="API_TestConnection"></a>
 
 Tests the connection between the replication instance and the endpoint.
 

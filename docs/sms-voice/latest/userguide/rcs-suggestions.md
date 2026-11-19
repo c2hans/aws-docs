@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-suggestio
 ---
 
 # Configuring RCS suggestions
-<a name="rcs-suggestions"></a>
 
 Suggestions are interactive chips that appear below or within an RCS message. They guide recipients through a conversation by presenting predefined replies and actions, such as opening a URL, calling a phone number, or sharing a location, without requiring the recipient to type. Suggestions are how you build interactive, conversational experiences with `SendRcsMessage`.
 

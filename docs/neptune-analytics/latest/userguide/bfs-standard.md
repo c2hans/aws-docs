@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bfs-s
 ---
 
 # Standard breadth-first search (BFS) algorithm
-<a name="bfs-standard"></a>
 
 Standard breadth-first search (BFS) is an algorithm for finding nodes from a starting node or nodes in a graph in breadth-first order.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_S3Destin
 ---
 
 # S3DestinationDescription
-<a name="API_S3DestinationDescription"></a>
 
 The configuration for delivery to a general purpose Amazon S3 bucket. Returned in [ChannelDescription](API_ChannelDescription.md).
 

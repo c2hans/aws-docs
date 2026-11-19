@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_St
 ---
 
 # StreamKey
-<a name="API_StreamKey"></a>
 
 Object specifying a stream key.
 

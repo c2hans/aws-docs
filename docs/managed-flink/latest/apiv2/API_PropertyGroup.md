@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_PropertyG
 ---
 
 # PropertyGroup
-<a name="API_PropertyGroup"></a>
 
 Property key-value pairs passed into an application.
 

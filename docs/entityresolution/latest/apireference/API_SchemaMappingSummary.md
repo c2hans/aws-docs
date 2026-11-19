@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # SchemaMappingSummary
-<a name="API_SchemaMappingSummary"></a>
 
 An object containing `schemaName`, `schemaArn`, `createdAt`, `updatedAt`, and `hasWorkflows`.
 

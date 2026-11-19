@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ge
 ---
 
 # GetPropertyValue
-<a name="API_GetPropertyValue"></a>
 
 Gets the property values for a component, component type, entity, or workspace.
 

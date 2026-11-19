@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeRoutingProfile
-<a name="API_DescribeRoutingProfile"></a>
 
 Describes the specified routing profile.
 

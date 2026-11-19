@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Descr
 ---
 
 # DescribeEntityRecognizer
-<a name="API_DescribeEntityRecognizer"></a>
 
 Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
 

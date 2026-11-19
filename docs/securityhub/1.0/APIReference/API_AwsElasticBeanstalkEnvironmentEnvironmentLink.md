@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticBeanstalkEnvironmentEnvironmentLink
-<a name="API_AwsElasticBeanstalkEnvironmentEnvironmentLink"></a>
 
 Contains information about a link to another environment that is in the same group.
 

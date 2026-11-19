@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate and replicate VSAM files to Amazon RDS or Amazon MSK using Connect from Precisely
-<a name="migrate-and-replicate-vsam-files-to-amazon-rds-or-amazon-msk-using-connect-from-precisely"></a>
 
 *Prachi Khanna and Boopathy GOPALSAMY, Amazon Web Services*
 

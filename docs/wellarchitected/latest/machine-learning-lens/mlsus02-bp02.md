@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLSUS02-BP02 Select sustainable Regions
-<a name="mlsus02-bp02"></a>
 
  Choose the Regions where you implement your workloads based on both your business requirements and sustainability goals.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepParameter
-<a name="API_StepParameter"></a>
 
 The details of a step parameter.
 

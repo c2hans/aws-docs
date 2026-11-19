@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch
 ---
 
 # Switch to an IAM role (AWS CLI)
-<a name="id_roles_use_switch-role-cli"></a>
 
 A *role* specifies a set of permissions that you can use to access AWS resources that you need. In that sense, it is similar to a [user in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html) (IAM). When you sign in as a user, you get a specific set of permissions. However, you don't sign in to a role, but after signing in as a user, you can switch to a role. This temporarily sets aside your original user permissions and instead gives you the permissions assigned to the role. The role can be in your own account or any other AWS account. For more information about roles, their benefits, and how to create and configure them, see [IAM roles](id_roles.md), and [IAM role creation](id_roles_create.md). To learn about the different methods that you can use to assume a role, see [Methods to assume a role](id_roles_manage-assume.md).
 

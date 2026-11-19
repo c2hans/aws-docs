@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-service-
 ---
 
 # Sending events to an AWS service in another account in EventBridge
-<a name="eb-service-cross-account"></a>
 
 EventBridge can send events from an event bus in one AWS account to supported AWS services in another account, thereby simplifying the architecture of your event-driven solutions and reducing latency.
 

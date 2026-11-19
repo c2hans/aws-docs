@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_UpdateLinkModu
 ---
 
 # UpdateLinkModuleFlow
-<a name="API_UpdateLinkModuleFlow"></a>
 
 Updates a link module flow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/update-
 ---
 
 # UpdateFolderPermissions
-<a name="update-folder-permissions"></a>
 
 Use the `UpdateFolderPermissions` operation to update the permissions of a folder. You can grant or revoke permissions in the same command. To use this operation, you need the ID of the folder whose permissions you want to view. The folder ID is part of the folder URL in Quick Sight. You can also use the `ListFolders` operation to get the ID.
 

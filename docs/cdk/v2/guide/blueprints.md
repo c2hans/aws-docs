@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/blueprints.html
 ---
 
 # Configure constructs with CDK Blueprints
-<a name="blueprints"></a>
 
 Use AWS CDK Blueprints to standardize and distribute L2 construct configurations across your organization. With Blueprints, you can ensure that AWS resources are configured consistently according to your organizational standards and best practices. For example, you can automatically enable encryption for all Amazon S3 buckets, apply specific logging configurations to all AWS Lambda functions, or enforce standard security rules for all security groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIdentitySyncFullAccess
-<a name="AWSIdentitySyncFullAccess"></a>
 
 **Description**: Grants full access to the Identity Sync service
 

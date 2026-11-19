@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDlpSetting
-<a name="API_DescribeDlpSetting"></a>
 
 Describes the full configuration of a DLP setting in an AWS account.
 

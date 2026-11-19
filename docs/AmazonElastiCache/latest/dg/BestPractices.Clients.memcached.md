@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/BestPractice
 ---
 
 # Best practices for clients (Memcached)
-<a name="BestPractices.Clients.memcached"></a>
 
 Learn best practices for common scenarios with ElastiCache for Memcached clusters.
 

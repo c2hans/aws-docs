@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Creat
 ---
 
 # CreateRestoreTestingPlan
-<a name="API_CreateRestoreTestingPlan"></a>
 
 Creates a restore testing plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # Manage tags for a configuration set in AWS End User Messaging SMS
-<a name="configuration-set-tags"></a>
 
 Tags are pairs of keys and values that you can optionally apply to your AWS resources to control access or usage. Adding a tag to a resource can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. You can use tags to easily find existing resources, or to control which users can access specific resources.
 

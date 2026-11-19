@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Li
 ---
 
 # LiteralArrayOptions
-<a name="API_LiteralArrayOptions"></a>
 
 ## Description
 <a name="API_LiteralArrayOptions_Description"></a>

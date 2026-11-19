@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-candidate-
 ---
 
 # Find and run the candidate definition notebook
-<a name="autopilot-candidate-generation-notebook"></a>
 
 The candidate definition notebook contains each suggested preprocessing step, algorithm, and hyperparameter ranges.
 

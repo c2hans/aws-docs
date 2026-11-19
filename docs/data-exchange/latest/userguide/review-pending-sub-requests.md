@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/review-pe
 ---
 
 # Reviewing your pending AWS Data Exchange subscription requests
-<a name="review-pending-sub-requests"></a>
 
 Review your pending subscriptions for AWS Data Exchange products that require subscription verification.
 

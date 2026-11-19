@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # Channel
-<a name="API_messaging-chime_Channel"></a>
 
 The details of a channel.
 

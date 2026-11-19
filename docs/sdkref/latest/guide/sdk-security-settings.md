@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/sdk-security-setting
 ---
 
 # AWS SDKs and tools security settings
-<a name="sdk-security-settings"></a>
 
 This section addresses some security settings common to all AWS SDKs. However, for comprehensive information about security for individual AWS SDKs, please refer to the dedicated **Security** chapter in the relevent AWS SDK Developer Guide:
 + [AWS SDK for C\+\+ Security chapter](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/security.html)

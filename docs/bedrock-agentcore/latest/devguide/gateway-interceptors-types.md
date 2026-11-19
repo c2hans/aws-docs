@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Types of interceptors
-<a name="gateway-interceptors-types"></a>
 
 There are two types of interceptors that you can configure on your gateway: REQUEST interceptors and RESPONSE interceptors. The interceptor payload structure depends on the target type configured on your gateway.
 

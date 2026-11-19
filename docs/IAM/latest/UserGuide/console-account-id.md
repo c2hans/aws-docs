@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/console-account-id.
 ---
 
 # Viewing your AWS account ID
-<a name="console-account-id"></a>
 
 If you are signed into the console, you can view the account ID for your AWS account using the following methods.
 

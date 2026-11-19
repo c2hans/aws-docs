@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Trust
 ---
 
 # TrustedAdvisorCheckDescription
-<a name="API_TrustedAdvisorCheckDescription"></a>
 
 The description and metadata for a Trusted Advisor check.
 

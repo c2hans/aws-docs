@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GcpCapabil
 ---
 
 # GcpCapabilityScopeInput
-<a name="API_GcpCapabilityScopeInput"></a>
 
 The scope of Google Cloud Platform (GCP) resources to scan for a single scanning type. Provide this as part of a `GcpScopeConfigurationInput` when you create or update a connector.
 

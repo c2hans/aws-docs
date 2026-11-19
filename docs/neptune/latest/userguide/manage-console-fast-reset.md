@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/manage-console-
 ---
 
 # Empty an Amazon Neptune DB cluster using the fast reset API
-<a name="manage-console-fast-reset"></a>
 
 The Neptune fast reset REST API lets you reset a Neptune graph quicky and easily, removing all of its data.
 

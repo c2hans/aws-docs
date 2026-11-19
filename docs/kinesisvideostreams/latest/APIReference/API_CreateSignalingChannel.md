@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # CreateSignalingChannel
-<a name="API_CreateSignalingChannel"></a>
 
 Creates a signaling channel.
 

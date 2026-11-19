@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Memory
-<a name="harness-memory"></a>
 
 When memory is enabled, the harness persists conversation state in [AgentCore Memory](memory.md). On subsequent invocations with the same session ID, the agent loads the stored history before it reasons.
 

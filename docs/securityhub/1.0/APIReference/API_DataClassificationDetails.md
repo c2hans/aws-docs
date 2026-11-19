@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DataCla
 ---
 
 # DataClassificationDetails
-<a name="API_DataClassificationDetails"></a>
 
 Provides details about sensitive data that was detected on a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-fast-launch-
 ---
 
 # Configure EC2 Fast Launch settings for your Amazon EC2 Windows Server AMI
-<a name="win-fast-launch-configure"></a>
 
 You can configure EC2 Fast Launch for Windows AMIs that you own, or AMIs that are shared with you from the AWS Management Console, API, SDKs, CloudFormation, or AWS Command Line Interface (AWS CLI). Before you configure EC2 Fast Launch, verify that your AMI meets all of the prerequisites that are required to create the pre-provisioned snapshots. For more information, see [EC2 Fast Launch prerequisites for Windows](win-start-fast-launch-prereqs.md).
 

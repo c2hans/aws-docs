@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/tagging-recov
 ---
 
 # Add or remove tags on existing recovery points
-<a name="tagging-recovery-points"></a>
 
 In addition to copying tags from source resources at backup creation time, you can add, modify, or remove tags on existing recovery points.
 

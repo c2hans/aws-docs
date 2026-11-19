@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FieldVal
 ---
 
 # FieldValue
-<a name="API_FieldValue"></a>
 
 Object for case field values.
 

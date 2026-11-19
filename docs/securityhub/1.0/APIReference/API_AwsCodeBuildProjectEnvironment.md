@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCode
 ---
 
 # AwsCodeBuildProjectEnvironment
-<a name="API_AwsCodeBuildProjectEnvironment"></a>
 
 Information about the build environment for this build project.
 

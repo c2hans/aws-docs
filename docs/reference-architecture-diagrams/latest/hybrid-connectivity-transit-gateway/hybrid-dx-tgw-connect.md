@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/h
 ---
 
 # AWS Direct Connect and Transit Gateway Connect Attachments
-<a name="hybrid-dx-tgw-connect"></a>
 
 Publication date: **August 17, 2022 ([Diagram history](#hc7-diagram-history))**
 

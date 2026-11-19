@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # ListRepositoryLinks
-<a name="API_ListRepositoryLinks"></a>
 
 Lists the repository links created for connections in your account.
 

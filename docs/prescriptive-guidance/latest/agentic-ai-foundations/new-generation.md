@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Software agents to agentic AI
-<a name="new-generation"></a>
 
 Software agents are autonomous digital entities that are designed to perceive their environment, reason about their goals, and act accordingly. Unlike traditional software programs that follow fixed logic, agents adapt their behavior based on contextual inputs and decision frameworks. This makes them ideal for dynamic, distributed environments such as cloud-native systems, robotics, intelligent automation, and now, generative AI orchestration.
 

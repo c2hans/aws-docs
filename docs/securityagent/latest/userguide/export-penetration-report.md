@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/export-pe
 ---
 
 # Exporting a penetration test report
-<a name="export-penetration-report"></a>
 
 Exporting a penetration test report generates a downloadable PDF record of your test results. Use the report to preserve test evidence and share findings with stakeholders. For example, you can share it with an auditor or attach it to an internal risk assessment record.
 

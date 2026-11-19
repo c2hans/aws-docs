@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswo
 ---
 
 # GetPasswordData
-<a name="API_GetPasswordData"></a>
 
 Retrieves the encrypted administrator password for a running Windows instance.
 

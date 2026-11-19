@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyWorkflowTypeContent
-<a name="API_AutomatedReasoningPolicyWorkflowTypeContent"></a>
 
 Defines the content and configuration for different types of policy build workflows.
 

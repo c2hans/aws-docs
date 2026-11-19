@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/writing-with-msk.htm
 ---
 
 # Configure source settings for Amazon MSK
-<a name="writing-with-msk"></a>
 
 When you choose Amazon MSK to send information to a Firehose stream, you can choose between MSK provisioned and MSK-Serverless clusters. You can then use Firehose to read data easily from a specific Amazon MSK cluster and topic and load it into the specified S3 destination.
 

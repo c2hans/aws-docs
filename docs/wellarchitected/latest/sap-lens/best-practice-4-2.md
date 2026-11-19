@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 4.2 – Regularly perform patch management for software currency
-<a name="best-practice-4-2"></a>
 
 Perform regular patch management to gain features, address issues, and remain compliant with governance. Consider patches at the operating system, database and SAP application layer. Understand whether your patching process will be to patch your existing servers, or provision and patch a new server. Automate patch management to reduce errors caused by manual processes, reduce the level of effort to patch and reduce the application downtime required for major SAP, database, and kernel patching.
 

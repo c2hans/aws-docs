@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPrefi
 ---
 
 # IpamPrefixListResolverRule
-<a name="API_IpamPrefixListResolverRule"></a>
 
 Describes a CIDR selection rule.
 

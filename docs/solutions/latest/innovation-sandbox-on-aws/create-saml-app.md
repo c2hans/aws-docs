@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Create a SAML 2.0 application
-<a name="create-saml-app"></a>
 
 Before you launch the stacks, create the AWS IAM Identity Center SAML 2.0 application. You need its metadata URL to complete [Step 3 of Launch the stacks](step3-deploy-data-stack.md) (deploying the Data stack), so finish this task first.
 

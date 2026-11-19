@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_IntegerHyperPa
 ---
 
 # IntegerHyperParameterRange
-<a name="API_IntegerHyperParameterRange"></a>
 
 Provides the name and range of an integer-valued hyperparameter.
 

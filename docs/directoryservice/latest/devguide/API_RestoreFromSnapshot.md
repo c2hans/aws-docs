@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Res
 ---
 
 # RestoreFromSnapshot
-<a name="API_RestoreFromSnapshot"></a>
 
 Restores a directory using an existing directory snapshot.
 

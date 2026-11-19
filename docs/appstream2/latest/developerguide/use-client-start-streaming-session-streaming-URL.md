@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/use-cli
 ---
 
 # Streaming URL
-<a name="use-client-start-streaming-session-streaming-URL"></a>
 
 To create a streaming URL, use one of the following methods:
 + WorkSpaces Applications console

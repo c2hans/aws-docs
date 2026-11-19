@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-sns-example.html
 ---
 
 # Tutorial: Using AWS Lambda with Amazon Simple Notification Service
-<a name="with-sns-example"></a>
 
 In this tutorial, you use a Lambda Event Function in one AWS account to subscribe to an Amazon Simple Notification Service (Amazon SNS) topic in a separate AWS account. When you publish messages to your Amazon SNS topic, your Lambda Event Function reads the contents of the message and outputs it to Amazon CloudWatch Logs. To complete this tutorial, you use the AWS Command Line Interface (AWS CLI).
 

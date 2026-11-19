@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/intrinsic-funct
 ---
 
 # Intrinsic functions for JSONPath states in Step Functions
-<a name="intrinsic-functions"></a>
 
 **Managing state and transforming data**
 Learn about [Passing data between states with variables](workflow-variables.md) and [Transforming data with JSONata](transforming-data.md).

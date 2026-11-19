@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Workload architecture
-<a name="workload-architecture"></a>
 
 |  LSREL05: How do you design for resilience when network connectivity between on-premises lab equipment and cloud resources is disrupted?  |
 | --- |

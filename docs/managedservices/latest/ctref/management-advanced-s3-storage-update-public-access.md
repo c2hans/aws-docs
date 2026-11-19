@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # S3 Storage \| Update Public Access
-<a name="management-advanced-s3-storage-update-public-access"></a>
 
 Update the existing S3 Block Public Access setting for a specified bucket. Block Public Access for S3 buckets defaults to 'true' at account level when your account is created. This setting overrides policies, roles, ACLs, and access points that might allow public access to buckets in that account.
 

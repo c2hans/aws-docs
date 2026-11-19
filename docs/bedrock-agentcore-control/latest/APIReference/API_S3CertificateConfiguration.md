@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # S3CertificateConfiguration
-<a name="API_S3CertificateConfiguration"></a>
 
 A reference to a PEM-encoded private CA certificate stored as an Amazon S3 object.
 

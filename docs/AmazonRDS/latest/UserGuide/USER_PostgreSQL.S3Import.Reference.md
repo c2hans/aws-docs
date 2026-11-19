@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreS
 ---
 
 # Function reference
-<a name="USER_PostgreSQL.S3Import.Reference"></a>
 
 **Topics**
 + [aws\_s3.table\_import\_from\_s3](#aws_s3.table_import_from_s3)

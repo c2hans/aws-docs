@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # GetWhatsAppMessageTemplate
-<a name="API_GetWhatsAppMessageTemplate"></a>
 
 Retrieves a specific WhatsApp message template.
 

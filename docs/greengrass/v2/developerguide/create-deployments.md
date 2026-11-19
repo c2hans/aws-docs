@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/create-depl
 ---
 
 # Create deployments
-<a name="create-deployments"></a>
 
 You can create a deployment that targets a thing or thing group.
 

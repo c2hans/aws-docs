@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_WebAppU
 ---
 
 # WebAppUnits
-<a name="API_WebAppUnits"></a>
 
 Contains an integer value that represents the value for number of concurrent connections or the user sessions on your web app.
 

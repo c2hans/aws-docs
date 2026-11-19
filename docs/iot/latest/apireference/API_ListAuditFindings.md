@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditFin
 ---
 
 # ListAuditFindings
-<a name="API_ListAuditFindings"></a>
 
 Lists the findings (results) of a Device Defender audit or of the audits performed during a specified time period. (Findings are retained for 90 days.)
 

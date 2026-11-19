@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Access policy language overview for Amazon API Gateway
-<a name="apigateway-control-access-policy-language-overview"></a>
 
 This page describes the basic elements used in Amazon API Gateway resource policies.
 

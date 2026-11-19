@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StopReplicat
 ---
 
 # StopReplicationTask
-<a name="API_StopReplicationTask"></a>
 
 Stops the replication task.
 

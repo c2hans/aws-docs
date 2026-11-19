@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Accessing and analyzing user collected feedback
-<a name="accessing-and-analyzing-user-collected-feedback"></a>
 
 As of v3.0.0, the Deployment Dashboard deploys a nested feedback stack which allows Text and Bedrock Agent usecases deployed with the Dashboard to have the functionality of feedback collection for the responses that the LLM/Agent generates. Particularly, users can provide a positive or negative feedback along with an optional comment. If the user provides a negative feedback, they can further select one of these negative categories: 'Inaccurate', 'Incomplete or insufficient', 'Harmful' and/or 'Other'.
 

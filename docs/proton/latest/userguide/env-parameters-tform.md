@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/env-parameters-t
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # Terraform infrastructure as code (IaC) file parameter details and examples
-<a name="env-parameters-tform"></a>
 
 You can include Terraform input variables in `variable.tf` files in your template bundle. You can also create a schema to create AWS Proton managed variables. AWS Proton creates variable `.tf files` from your schema file. For more information, see [Terraform IaC files](ag-infrastructure-tmp-files-terraform.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSecr
 ---
 
 # AwsSecretsManagerSecretDetails
-<a name="API_AwsSecretsManagerSecretDetails"></a>
 
 Details about an AWS Secrets Manager secret.
 

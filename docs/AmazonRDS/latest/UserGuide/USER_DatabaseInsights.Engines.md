@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Database
 ---
 
 # Amazon RDS DB engine, Region, and instance class support for Database Insights
-<a name="USER_DatabaseInsights.Engines"></a>
 
 The following table provides Amazon RDS DB engines that support Database Insights.
 

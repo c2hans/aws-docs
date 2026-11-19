@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalFilter
-<a name="API_agent-runtime_RetrievalFilter"></a>
 
 Specifies the filters to use on the metadata attributes in the knowledge base data sources before returning results. For more information, see [Query configurations](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.html). See the examples below to see how to use these filters.
 
@@ -19,7 +18,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** andAll **   <a name="bedrock-Type-agent-runtime_RetrievalFilter-andAll"></a>
 Knowledge base data sources are returned if their metadata attributes fulfill all the filter conditions inside this list.
-Type: Array of [RetrievalFilter](#API_agent-runtime_RetrievalFilter) objects
+Type: Array of [RetrievalFilter](API_agent-runtime_RetrievalFilter.md) objects
 Array Members: Minimum number of 2 items.
 Required: No
 
@@ -90,7 +89,7 @@ Required: No
 
  ** orAll **   <a name="bedrock-Type-agent-runtime_RetrievalFilter-orAll"></a>
 Knowledge base data sources are returned if their metadata attributes fulfill at least one of the filter conditions inside this list.
-Type: Array of [RetrievalFilter](#API_agent-runtime_RetrievalFilter) objects
+Type: Array of [RetrievalFilter](API_agent-runtime_RetrievalFilter.md) objects
 Array Members: Minimum number of 2 items.
 Required: No
 

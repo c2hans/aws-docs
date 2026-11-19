@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/monitoring-stora
 ---
 
 # Monitoring storage type updates
-<a name="monitoring-storage-type-updates"></a>
 
 After you update your file system's storage type from HDD to SSD storage, you can monitor the progress of the storage type update using the Amazon FSx console, the AWS CLI, or the API, as described in the following procedures.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # Export
-<a name="API_Export"></a>
 
 The `Export` structure describes the exported output values for a stack.
 

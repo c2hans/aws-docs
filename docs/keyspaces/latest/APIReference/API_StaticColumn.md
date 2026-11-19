@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Static
 ---
 
 # StaticColumn
-<a name="API_StaticColumn"></a>
 
 The static columns of the table. Static columns store values that are shared by all rows in the same partition.
 

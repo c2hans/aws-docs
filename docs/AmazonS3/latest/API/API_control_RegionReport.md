@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_RegionRe
 ---
 
 # RegionReport
-<a name="API_control_RegionReport"></a>
 
 A combination of a bucket and Region that's part of a Multi-Region Access Point.
 

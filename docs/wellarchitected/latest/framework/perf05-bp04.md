@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf05-
 ---
 
 # PERF05-BP04 Keep your workload and services up-to-date
-<a name="perf05-bp04"></a>
 
  Cloud providers regularly release new services, instance types, and features, and many can deliver better price-performance for what you already run. Review new releases and adopt the ones that benefit your workload.
 

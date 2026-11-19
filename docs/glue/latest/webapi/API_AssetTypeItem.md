@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AssetTypeItem.htm
 ---
 
 # AssetTypeItem
-<a name="API_AssetTypeItem"></a>
 
 A summary of an asset type.
 

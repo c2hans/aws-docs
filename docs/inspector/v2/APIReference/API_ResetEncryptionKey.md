@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ResetEncry
 ---
 
 # ResetEncryptionKey
-<a name="API_ResetEncryptionKey"></a>
 
 Resets an encryption key. After the key is reset your resources will be encrypted by an AWS owned key.
 

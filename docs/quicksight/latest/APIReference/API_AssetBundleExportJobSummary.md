@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobSummary
-<a name="API_AssetBundleExportJobSummary"></a>
 
 A summary of the export job that includes details of the job's configuration and its current status.
 

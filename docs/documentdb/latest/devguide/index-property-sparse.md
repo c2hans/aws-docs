@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-propert
 ---
 
 # Index Property: sparse
-<a name="index-property-sparse"></a>
 
 ## Supported index types
 <a name="index-property-sparse-supported"></a>

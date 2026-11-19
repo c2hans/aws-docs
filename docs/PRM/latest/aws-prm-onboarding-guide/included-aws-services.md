@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/incl
 ---
 
 # Included AWS services
-<a name="included-aws-services"></a>
 
 Partner Revenue Measurement supports specific AWS services for revenue attribution measurement. The supported services vary by implementation method.
 + [AWS Marketplace Metering included services](included-aws-services-marketplace-metering.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Building Rust Lambda Event Functions with Cargo Lambda in AWS SAM
-<a name="building-rust"></a>
 
 Use the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) with your Rust AWS Lambda Event Functions.
 

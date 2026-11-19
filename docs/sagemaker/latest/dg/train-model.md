@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-model.html
 ---
 
 # Model training
-<a name="train-model"></a>
 
 The training stage of the full machine learning (ML) lifecycle spans from accessing your training dataset to generating a final model and selecting the best performing model for deployment. The following sections provide an overview of available SageMaker training features and resources with in-depth technical information for each.
 

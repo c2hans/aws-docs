@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/SUBSTRI
 ---
 
 # SUBSTRING function
-<a name="SUBSTRING"></a>
 
 Returns the subset of a string based on the specified start position.
 

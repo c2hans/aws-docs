@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/speech-errors.html
 ---
 
 # Handling errors with Amazon Nova Sonic
-<a name="speech-errors"></a>
 
 When errors occur, we recommend trying the following steps:
 

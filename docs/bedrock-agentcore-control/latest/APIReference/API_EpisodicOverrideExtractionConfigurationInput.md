@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EpisodicOverrideExtractionConfigurationInput
-<a name="API_EpisodicOverrideExtractionConfigurationInput"></a>
 
 Configurations for overriding the extraction step of the episodic memory strategy.
 

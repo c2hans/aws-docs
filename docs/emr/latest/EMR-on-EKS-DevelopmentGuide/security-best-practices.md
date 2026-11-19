@@ -3,12 +3,11 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Amazon EMR on EKS security best practices
-<a name="security-best-practices"></a>
 
 Amazon EMR on EKS provides a number of security features to consider as you develop and implement your own security policies. The following best practices are general guidelines and don’t represent a complete security solution. Because these best practices might not be appropriate or sufficient for your environment, treat them as helpful considerations rather than prescriptions.
 
 **Note**
-For more security best practices, see [Amazon EMR on EKS security best practices](#security-best-practices).
+For more security best practices, see [Amazon EMR on EKS security best practices](security-best-practices.md).
 
 ## Apply principle of least privilege
 <a name="security-least-privilege"></a>

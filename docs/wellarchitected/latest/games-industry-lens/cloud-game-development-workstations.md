@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Cloud game development: Workstations
-<a name="cloud-game-development-workstations"></a>
 
  Game development often involves distributed teams working remotely from various locations, requiring access to shared infrastructure and the ability to support collaborative, geographically dispersed development. This trend towards a more distributed game development process, including the use of work-for-hire studios and remote work, necessitates the implementation of robust technologies and workflows to facilitate productivity, shared expertise, and agile development practices.
 

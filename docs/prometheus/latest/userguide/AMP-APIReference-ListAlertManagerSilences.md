@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # ListAlertManagerSilences
-<a name="AMP-APIReference-ListAlertManagerSilences"></a>
 
 The `ListAlertManagerSilences` operation retrieves information about the alert silences configured in the workspace.
 

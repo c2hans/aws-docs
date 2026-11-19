@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-aws-cli.
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # AWS CLI and aws-shell tutorial for AWS Cloud9
-<a name="sample-aws-cli"></a>
 
 The following tutorial enables you to set up the AWS Command Line Interface (AWS CLI), the aws-shell, or both in an AWS Cloud9 development environment. The AWS CLI and the aws-shell are unified tools that provide a consistent interface for interacting with all parts of AWS. You can use the AWS CLI instead of the AWS Management Console to quickly run commands to interact with AWS, and some of these commands can be run with the AWS CLI or alternatively using AWS CloudShell.
 

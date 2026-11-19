@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Manage blueprint authorization
-<a name="authorization-for-blueprints"></a>
 
 You can perform the following procedure to manage the authorization configuration of a blueprint.
 

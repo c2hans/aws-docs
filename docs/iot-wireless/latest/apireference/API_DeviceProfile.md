@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dev
 ---
 
 # DeviceProfile
-<a name="API_DeviceProfile"></a>
 
 Describes a device profile.
 

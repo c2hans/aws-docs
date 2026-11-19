@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/tutorial_trans
 ---
 
 # Configuring AWS DataSync transfers with Google Cloud Storage
-<a name="tutorial_transfer-google-cloud-storage"></a>
 
 With AWS DataSync, you can transfer data between Google Cloud Storage and the following AWS storage services:
 + Amazon S3

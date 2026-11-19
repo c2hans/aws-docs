@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/creating-backups
 ---
 
 # Creating user-initiated backups
-<a name="creating-backups"></a>
 
 In addition to automatic daily file system backups, you can create a user-initiated file system backup at anytime, using the Amazon FSx console as described in the following procedure.
 

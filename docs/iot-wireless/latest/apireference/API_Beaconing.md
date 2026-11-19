@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Bea
 ---
 
 # Beaconing
-<a name="API_Beaconing"></a>
 
 Beaconing parameters for configuring the wireless gateways.
 

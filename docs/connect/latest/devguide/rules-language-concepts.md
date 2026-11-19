@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/rules-language-c
 ---
 
 # Concepts
-<a name="rules-language-concepts"></a>
 
 The following terms are used in the Rules Function language.
 

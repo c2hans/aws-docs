@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListCompo
 ---
 
 # ListComponents
-<a name="API_ListComponents"></a>
 
 Retrieves a paginated list of component summaries. This list includes components that you have permission to view.
 

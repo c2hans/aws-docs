@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/security-and-compliance.htm
 ---
 
 # Security and Compliance in AL2
-<a name="security-and-compliance"></a>
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a data center and network architecture that is built to meet the requirements of the most security-sensitive organizations.
 

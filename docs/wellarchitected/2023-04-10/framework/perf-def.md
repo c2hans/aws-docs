@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Definition
-<a name="perf-def"></a>
 
  There are four best practice areas for performance efficiency in the cloud:
 +  **Selection**

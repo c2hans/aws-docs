@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeTe
 ---
 
 # DescribeTestExecution
-<a name="API_DescribeTestExecution"></a>
 
 Gets metadata information about the test execution.
 

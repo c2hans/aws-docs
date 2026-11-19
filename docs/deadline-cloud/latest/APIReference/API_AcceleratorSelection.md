@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AcceleratorSelection
-<a name="API_AcceleratorSelection"></a>
 
 Describes a specific GPU accelerator required for an Amazon Elastic Compute Cloud worker host.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-s3.html
 ---
 
 # Process Amazon S3 event notifications with Lambda
-<a name="with-s3"></a>
 
 You can use Lambda to process [event notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/NotificationHowTo.html) from Amazon Simple Storage Service. Amazon S3 can send an event to a Lambda Event Function when an object is created or deleted. You configure notification settings on a bucket, and grant Amazon S3 permission to invoke a function on the function's resource-based permissions policy.
 

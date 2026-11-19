@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Pricing columns
-<a name="table-dictionary-cur2-pricing"></a>
 
 Pricing columns contain data about the pricing for a line item.
 

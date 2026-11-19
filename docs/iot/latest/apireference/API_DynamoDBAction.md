@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DynamoDBActi
 ---
 
 # DynamoDBAction
-<a name="API_DynamoDBAction"></a>
 
 Describes an action to write to a DynamoDB table.
 

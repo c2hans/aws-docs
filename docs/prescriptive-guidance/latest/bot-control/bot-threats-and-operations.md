@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Understanding bot threats and operations
-<a name="bot-threats-and-operations"></a>
 
 According to [Security Today](https://securitytoday.com/articles/2023/05/17/report-47-percent-of-internet-traffic-is-from-bots.aspx), more than 47% of all traffic on the internet is due to bots. This includes the helpful portion of bots, those that self-identify and provide value. About 30% of bot traffic is unidentified bots that are performing malicious activities, such as DDoS attacks, ticket scalping, inventory scraping, or hoarding. [Security Magazine](https://www.securitymagazine.com/articles/99823-there-was-a-387-increase-in-attack-activity-from-q1-to-q2-2023) reports a 300% increase in volumetric DDoS events during the first half of 2023. This makes this topic more relevant, and it makes knowledge about the available preventative and protective tools and technology all the more important.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Upda
 ---
 
 # UpdateTargetGroup
-<a name="API_UpdateTargetGroup"></a>
 
 Updates the specified target group.
 

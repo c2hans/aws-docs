@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/connect-g
 ---
 
 # Connect AWS Security Agent to GitLab Self-Managed
-<a name="connect-gitlab-self-managed"></a>
 
 Connect your AWS Security Agent to a GitLab Self-Managed instance to enable code review, threat modeling, penetration testing, and automated remediation capabilities for repositories hosted on your own infrastructure.
 

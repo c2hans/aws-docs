@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/cloudfront/index.html
 title: 'Amazon CloudFront Documentation'
 canonical_url: https://docs.aws.amazon.com/cloudfront/
 source: aws-documentation
-generated_on: 2026-11-17
+generated_on: 2026-11-18
 ---
 
 # Amazon CloudFront Documentation

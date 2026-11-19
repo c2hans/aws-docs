@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-
 ---
 
 # Create an EC2/On-Premises Compute Platform deployment (CLI)
-<a name="deployments-create-cli"></a>
 
 To use the AWS CLI to deploy a revision to the EC2/On-Premises compute platform:
 

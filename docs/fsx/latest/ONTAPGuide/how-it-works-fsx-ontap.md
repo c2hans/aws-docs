@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/how-it-works-fsx-o
 ---
 
 # How Amazon FSx for NetApp ONTAP works
-<a name="how-it-works-fsx-ontap"></a>
 
 This topic introduces the major features of Amazon FSx for NetApp ONTAP file systems and how they work, with links to sections with in-depth descriptions, important implementation details, and step-by-step configuration procedures.
 

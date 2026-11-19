@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetRecommender
-<a name="API_connect-customer-profiles_GetRecommender"></a>
 
 Retrieves a recommender.
 

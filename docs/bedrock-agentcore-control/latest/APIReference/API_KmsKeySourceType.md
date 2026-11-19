@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # KmsKeySourceType
-<a name="API_KmsKeySourceType"></a>
 
 Contains the AWS KMS key configuration for a JWT client assertion.
 

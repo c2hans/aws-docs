@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/customer_managed_po
 ---
 
 # Console Read-Only Access Policy - AWSElasticDisasterRecoveryReadOnlyAccess
-<a name="customer_managed_policies_drs_readonly"></a>
 
 You can attach the AWSElasticDisasterRecoveryReadOnlyAccess policy to your IAM identities.
 

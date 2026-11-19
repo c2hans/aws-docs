@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel08.h
 ---
 
 # Implement change
-<a name="rel08"></a>
 
  Controlled change is how you deploy new functionality and keep workloads running known, properly patched software. When change is uncontrolled, the effect of each release becomes hard to predict, and problems that surface are hard to trace back to what caused them. The same procedure run manually produces different results depending on who runs it, and a reversal that was never tested is an assumption rather than a capability.
 

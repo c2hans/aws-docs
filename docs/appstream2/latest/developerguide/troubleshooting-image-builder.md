@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/trouble
 ---
 
 # Troubleshooting Image Builders
-<a name="troubleshooting-image-builder"></a>
 
 The following are issues that might occur when you use Amazon WorkSpaces Applications image builders.
 

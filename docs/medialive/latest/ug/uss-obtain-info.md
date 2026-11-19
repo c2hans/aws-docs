@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/uss-obtain-info.html
 ---
 
 # Assess source formats and packaging
-<a name="uss-obtain-info"></a>
 
 Consult the following table for information about how to assess the source formats and packaging. Read across each row.
 

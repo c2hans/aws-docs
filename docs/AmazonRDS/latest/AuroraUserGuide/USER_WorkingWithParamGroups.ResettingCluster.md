@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Wo
 ---
 
 # Resetting parameters in a DB cluster parameter groupin Amazon Aurora
-<a name="USER_WorkingWithParamGroups.ResettingCluster"></a>
 
 You can reset parameters to their default values in a customer-created DB cluster parameter group. Changes to parameters in a customer-created DB cluster parameter group are applied to all DB clusters that are associated with the DB cluster parameter group.
 

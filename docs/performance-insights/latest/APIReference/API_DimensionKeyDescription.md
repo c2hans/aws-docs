@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # DimensionKeyDescription
-<a name="API_DimensionKeyDescription"></a>
 
 An object that includes the requested dimension key values and aggregated metric values within a dimension group.
 

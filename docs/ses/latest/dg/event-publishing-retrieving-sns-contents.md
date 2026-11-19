@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/event-publishing-retrievin
 ---
 
 # Contents of event data that Amazon SES publishes to Amazon SNS
-<a name="event-publishing-retrieving-sns-contents"></a>
 
 Amazon SES publishes email sending event records to Amazon Simple Notification Service in JSON format.
 

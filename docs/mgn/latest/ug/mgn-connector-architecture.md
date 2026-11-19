@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/mgn-connector-architecture
 ---
 
 # Architecture overview for MGN connector
-<a name="mgn-connector-architecture"></a>
 
 The following diagram describes the architecture overview when using AWS Transform MGN with MGN connector.
 

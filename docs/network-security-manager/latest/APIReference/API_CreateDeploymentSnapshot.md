@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # CreateDeploymentSnapshot
-<a name="API_CreateDeploymentSnapshot"></a>
 
 Creates a snapshot of the current published version of the specified deployment.
 

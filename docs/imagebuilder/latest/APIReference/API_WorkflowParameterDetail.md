@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Wor
 ---
 
 # WorkflowParameterDetail
-<a name="API_WorkflowParameterDetail"></a>
 
 Defines a parameter that's used to provide configuration details for the workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.dml.delete
 ---
 
 # DELETE
-<a name="cql.dml.delete"></a>
 
 Use the `DELETE` statement to remove a row from a table.
 

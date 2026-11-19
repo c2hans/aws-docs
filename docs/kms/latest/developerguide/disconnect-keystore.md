@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/disconnect-key
 ---
 
 # Disconnect an AWS CloudHSM key store
-<a name="disconnect-keystore"></a>
 
 When you disconnect an AWS CloudHSM key store, AWS KMS logs out of the AWS CloudHSM client, disconnects from the associated AWS CloudHSM cluster, and removes the network infrastructure that it created to support the connection.
 

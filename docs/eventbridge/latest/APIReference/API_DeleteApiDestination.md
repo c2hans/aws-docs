@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Dele
 ---
 
 # DeleteApiDestination
-<a name="API_DeleteApiDestination"></a>
 
 Deletes the specified API destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-c
 ---
 
 # Creating the Amazon Q Developer profile
-<a name="subscribe-create-profile"></a>
 
 **Note**
 This section does not apply to personal accounts (Builder IDs).

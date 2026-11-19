@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Versio
 ---
 
 # VersionInfo
-<a name="API_VersionInfo"></a>
 
 The Docker and Amazon ECS container agent version information about a container instance.
 

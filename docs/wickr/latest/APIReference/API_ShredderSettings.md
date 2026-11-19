@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ShredderSe
 ---
 
 # ShredderSettings
-<a name="API_ShredderSettings"></a>
 
 Configuration for the Wickr shredder feature, which writes random data over free memory and disk space on client devices. You can configure your Wickr shredder intensity using the parameters below.
 

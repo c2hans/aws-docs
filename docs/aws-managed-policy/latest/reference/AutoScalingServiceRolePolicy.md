@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Auto
 ---
 
 # AutoScalingServiceRolePolicy
-<a name="AutoScalingServiceRolePolicy"></a>
 
 **Description**: Enables access to AWS services and Resources used or managed by Auto Scaling
 

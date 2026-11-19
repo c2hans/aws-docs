@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_TargetT
 ---
 
 # TargetTrackingConfiguration
-<a name="API_TargetTrackingConfiguration"></a>
 
 Represents a target tracking scaling policy configuration to use with Amazon EC2 Auto Scaling.
 

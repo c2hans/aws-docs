@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/geoNear.html
 ---
 
 # $geoNear
-<a name="geoNear"></a>
 
 The `$geoNear` aggregation stage returns documents in order of proximity to a specified point. It calculates the distance from the point and includes the distance in the output documents.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/replication-server-
 ---
 
 # Replication infrastructure errors
-<a name="replication-server-errors"></a>
 
 This topic covers errors related to the replication server infrastructure, including launching, booting, disk operations, and firewall rules. Each section describes the error message, cause, and resolution.
 

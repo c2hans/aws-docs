@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteIdenti
 ---
 
 # DeleteIdentity
-<a name="API_DeleteIdentity"></a>
 
 Deletes the specified identity (an email address or a domain) from the list of verified identities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Bi
 ---
 
 # BitbucketIntegrationInput
-<a name="API_BitbucketIntegrationInput"></a>
 
 The configuration for creating a Bitbucket integration.
 

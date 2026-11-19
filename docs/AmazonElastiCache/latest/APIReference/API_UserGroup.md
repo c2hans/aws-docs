@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # UserGroup
-<a name="API_UserGroup"></a>
 
 ## Contents
 <a name="API_UserGroup_Contents"></a>

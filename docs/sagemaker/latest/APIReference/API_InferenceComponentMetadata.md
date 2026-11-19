@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentMetadata
-<a name="API_InferenceComponentMetadata"></a>
 
  The metadata of the inference component.
 

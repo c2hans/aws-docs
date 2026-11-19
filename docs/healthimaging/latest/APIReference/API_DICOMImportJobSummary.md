@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DI
 ---
 
 # DICOMImportJobSummary
-<a name="API_DICOMImportJobSummary"></a>
 
 Summary of import job.
 

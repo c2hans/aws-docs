@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Del
 ---
 
 # DeleteMulticastGroup
-<a name="API_DeleteMulticastGroup"></a>
 
 Deletes a multicast group if it is not in use by a FUOTA task.
 

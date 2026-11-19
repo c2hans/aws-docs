@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/lte-aggregati
 ---
 
 # $lte
-<a name="lte-aggregation"></a>
 
 The `$lte` aggregation operator compares two values and returns `true` if the first value is less than or equal to the second, otherwise returns `false`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSZ
 ---
 
 # AWSZonalAutoshiftPracticeRunSLRPolicy
-<a name="AWSZonalAutoshiftPracticeRunSLRPolicy"></a>
 
 **Description**: Provides administrative access for ARC zonal shift practice runs, and access to CloudWatch alarm statuses to monitor practice runs.
 

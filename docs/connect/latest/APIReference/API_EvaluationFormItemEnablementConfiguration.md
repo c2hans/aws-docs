@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormItemEnablementConfiguration
-<a name="API_EvaluationFormItemEnablementConfiguration"></a>
 
 An item enablement configuration.
 

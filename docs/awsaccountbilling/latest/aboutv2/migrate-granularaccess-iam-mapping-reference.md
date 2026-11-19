@@ -3,14 +3,13 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/migrate
 ---
 
 # Mapping fine-grained IAM actions reference
-<a name="migrate-granularaccess-iam-mapping-reference"></a>
 
 **Note**
 The following AWS Identity and Access Management (IAM) actions have reached the end of standard support on July 2023:
 `aws-portal` namespace
 `purchase-orders:ViewPurchaseOrders`
 `purchase-orders:ModifyPurchaseOrders`
-If you're using AWS Organizations, you can use the [bulk policy migrator scripts](migrate-iam-permissions.md) or bulk policy migrator to update polices from your payer account. You can also use the [old to granular action mapping reference](#migrate-granularaccess-iam-mapping-reference) to verify the IAM actions that need to be added.
+If you're using AWS Organizations, you can use the [bulk policy migrator scripts](migrate-iam-permissions.md) or bulk policy migrator to update polices from your payer account. You can also use the [old to granular action mapping reference](migrate-granularaccess-iam-mapping-reference.md) to verify the IAM actions that need to be added.
 If you have an AWS account, or are a part of an AWS Organizations created on or after March 6, 2023, 11:00 AM (PDT), the fine-grained actions are already in effect in your organization.
 
 You will need to migrate the following IAM actions in your permission policies or service control policies (SCP):

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS pricing models
 <a name="resources-pricing-models"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/ready-c
 ---
 
 # Accessing the nodes
-<a name="ready-conductor-live-config-access"></a>
 
 The procedures in this guide require you to access the AWS Elemental Conductor Live nodes and the worker nodes. You might need to work with a node using the web interface or using the CLI (command line interface).
 

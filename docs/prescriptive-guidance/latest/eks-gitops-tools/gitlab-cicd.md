@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # GitLab CI/CD
-<a name="gitlab-cicd"></a>
 
 GitLab CI/CD is an integrated part of the GitLab platform that provides continuous integration, delivery, and deployment capabilities. Although GitLab CI/CD isn't exclusively a GitOps tool, you can configure it to implement GitOps principles, especially when you use it for Kubernetes deployments.
 

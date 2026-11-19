@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Minimal Starter Package
-<a name="minimal-starter-package"></a>
 
 The Minimal Starter Package deploys the foundational governance layer required by all MDAA architectures: IAM roles, Glue Catalog encryption, and Lake Formation settings. Use this as a starting point when you want to build your own architecture from scratch by adding modules incrementally.
 

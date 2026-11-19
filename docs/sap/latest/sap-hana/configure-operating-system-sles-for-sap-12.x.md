@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/configure-operating-
 ---
 
 # Configure SLES 12/15 for SAP
-<a name="configure-operating-system-sles-for-sap-12.x"></a>
 
 **Important**
 In the following steps, you need to update several configuration files. We recommend taking a backup of the files before you modify them. This will help you to revert to the previous configuration if needed.

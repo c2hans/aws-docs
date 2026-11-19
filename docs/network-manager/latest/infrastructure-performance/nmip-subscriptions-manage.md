@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/infrastructure-pe
 ---
 
 # Manage CloudWatch subscriptions using the AWS Network Manager console
-<a name="nmip-subscriptions-manage"></a>
 
 Subscriptions allow you to send and view Infrastructure Performance metrics in Amazon CloudWatch. Using the console you can either subscribe to, or unsubscribe from, CloudWatch performance metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/monitoring
 ---
 
 # Logging CodePipeline API calls with AWS CloudTrail
-<a name="monitoring-cloudtrail-logs"></a>
 
 AWS CodePipeline is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in CodePipeline. CloudTrail captures all API calls for CodePipeline as events. The calls captured include calls from the CodePipeline console and code calls to the CodePipeline API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for CodePipeline. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to CodePipeline, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

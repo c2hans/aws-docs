@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # GetTagValues
-<a name="API_GetTagValues"></a>
 
 Returns all tag values for the specified key that are used in the specified AWS Region for the calling account.
 

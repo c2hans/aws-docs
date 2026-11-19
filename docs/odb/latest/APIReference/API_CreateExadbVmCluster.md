@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateExadbV
 ---
 
 # CreateExadbVmCluster
-<a name="API_CreateExadbVmCluster"></a>
 
 Creates an Exascale VM cluster.
 

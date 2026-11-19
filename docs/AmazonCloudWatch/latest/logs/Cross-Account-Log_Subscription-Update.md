@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Cross-Accou
 ---
 
 # Updating an existing cross-account subscription
-<a name="Cross-Account-Log_Subscription-Update"></a>
 
 If you currently have a cross-account logs subscription where the destination account grants permissions only to specific sender accounts, and you want to update this subscription so that the destination account grants access to all accounts in an organization, follow the steps in this section.
 

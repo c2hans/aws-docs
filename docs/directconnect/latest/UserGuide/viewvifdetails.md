@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/viewvifde
 ---
 
 # View Direct Connect virtual interface details
-<a name="viewvifdetails"></a>
 
 You can view the current status of your virtual interface using either the Direct Connect console or using the command line or API. Details include:
 + Connection state

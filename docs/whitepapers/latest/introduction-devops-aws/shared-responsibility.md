@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # AWS Shared Responsibility Model
-<a name="shared-responsibility"></a>
 
 Security is a shared responsibility between AWS and the customer. The different parts of the Shared Responsibility Model are:
 + **AWS responsibility “Security of the Cloud”** - AWS is responsible for protecting the infrastructure that runs all of the services offered in the AWS Cloud. This infrastructure is composed of the hardware, software, networking, and facilities that run AWS Cloud services.

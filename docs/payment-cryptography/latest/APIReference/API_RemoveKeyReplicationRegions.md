@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # RemoveKeyReplicationRegions
-<a name="API_RemoveKeyReplicationRegions"></a>
 
 Removes Replication Regions from an existing AWS Payment Cryptography key, disabling the key's availability for cryptographic operations in the specified AWS Regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMESEC03-BP02 Authenticate requests that are sent to your game backend service
-<a name="gamesec03-bp02"></a>
 
  Authenticating requests that are sent to your game backend service can block unwanted requests from succeeding.
 

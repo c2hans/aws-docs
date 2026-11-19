@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tag
 ---
 
 # Tagging resources in DynamoDB
-<a name="Tagging.Operations"></a>
 
 You can use the Amazon DynamoDB console or the AWS Command Line Interface (AWS CLI) to add, list, edit, or delete tags. You can then activate these user-defined tags so that they appear on the AWS Billing and Cost Management console for cost allocation tracking. For more information, see [Using DynamoDB tags to create cost allocation reports](Tagging.md#CostAllocationReports).
 

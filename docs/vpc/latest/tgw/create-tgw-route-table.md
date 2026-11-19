@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/create-tgw-route-table.ht
 ---
 
 # Create a transit gateway route table in AWS Transit Gateway
-<a name="create-tgw-route-table"></a>
 
 **To create a transit gateway route table using the console**
 

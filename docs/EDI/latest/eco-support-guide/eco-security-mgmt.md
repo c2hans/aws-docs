@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-securit
 ---
 
 # Security management for EDI
-<a name="eco-security-mgmt"></a>
 
 ECO uses AWS Managed Services (AMS) for security management. AMS uses multiple controls to protect your information assets and to help you keep your AWS infrastructure secure.
 

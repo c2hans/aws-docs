@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Identity and Access Management (IAM) \| Reset Service-Specific Credentials
-<a name="management-advanced-identity-and-access-management-iam-reset-service-specific-credentials"></a>
 
 Reset the password for the specified service-specific credential.
 

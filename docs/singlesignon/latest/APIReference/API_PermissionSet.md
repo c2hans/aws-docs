@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Per
 ---
 
 # PermissionSet
-<a name="API_PermissionSet"></a>
 
 An entity that contains IAM policies.
 
@@ -16,7 +15,7 @@ Type: Timestamp
 Required: No
 
  ** Description **   <a name="singlesignon-Type-PermissionSet-Description"></a>
-The description of the [PermissionSet](#API_PermissionSet).
+The description of the [PermissionSet](API_PermissionSet.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 700.
 Pattern: `[\u0009\u000A\u000D\u0020-\u007E\u00A1-\u00FF]*`

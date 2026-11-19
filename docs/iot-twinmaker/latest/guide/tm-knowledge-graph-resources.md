@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-knowledge-
 ---
 
 # AWS IoT TwinMaker knowledge graph additional resources
-<a name="tm-knowledge-graph-resources"></a>
 
 This section provides basic examples of the PartiQL syntax used to write queries in the knowledge graph, as well as links to PartiQL documentation that provide information on the knowledge graph data model.
 + [ PartiQL graph data model documentation](https://partiql.org/gpml/graph_model.html)

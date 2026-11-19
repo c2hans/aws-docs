@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # GetMLModel
-<a name="API_GetMLModel"></a>
 
 Returns an `MLModel` that includes detailed metadata, data source information, and the current status of the `MLModel`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # LoadBalancerState
-<a name="API_LoadBalancerState"></a>
 
 Information about the state of the load balancer.
 

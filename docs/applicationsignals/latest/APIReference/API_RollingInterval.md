@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # RollingInterval
-<a name="API_RollingInterval"></a>
 
 If the interval for this SLO is a rolling interval, this structure contains the interval specifications.
 

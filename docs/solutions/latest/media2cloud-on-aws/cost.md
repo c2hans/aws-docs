@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/cost
 ---
 
 # Cost
-<a name="cost"></a>
 
  You are responsible for the cost of the AWS services used while running this solution. The total cost for running this solution depends on the amount of data being ingested and analyzed, running the solution's OpenSearch Service cluster, and the size and length of media files analyzed with Amazon Rekognition, Amazon Transcribe, and Amazon Comprehend.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/provision-task-su
 ---
 
 # Provision task subscription
-<a name="provision-task-subscription"></a>
 
 Use these methods to subscribe to provision-related tasks from the managed integrations components.
 

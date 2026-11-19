@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTo
 ---
 
 # RouteTollOptions
-<a name="API_RouteTollOptions"></a>
 
 Options related to Tolls on a route.
 

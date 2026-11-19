@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Conduct an CloudWatch investigation without additional configuration
-<a name="Investigations-Ephemeral"></a>
 
 You can conduct a CloudWatch investigations AI-powered root cause analysis without any additional configuration of your AWS account using the **Investigations** feature available in **Operational troubleshooting**.
 

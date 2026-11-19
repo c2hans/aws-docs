@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Modern Serverless Mobile/Web Application Architecture
-<a name="modern-serverless-mobile-web"></a>
 
 Publication date: **May 10, 2021 ([Diagram history](#diagram-history))**
 

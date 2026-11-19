@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Limitl
 ---
 
 # LimitlessDatabase
-<a name="API_LimitlessDatabase"></a>
 
 Contains details for Aurora Limitless Database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Preparing the organization for a large migration
-<a name="preparing-organization"></a>
 
 For a large migration, your organization needs to scale up operational processes that directly or indirectly affect your ability to deliver the project on time and within budget. The following are key areas that you need to consider when preparing your organization:
 + [Tagging strategy](#tagging)

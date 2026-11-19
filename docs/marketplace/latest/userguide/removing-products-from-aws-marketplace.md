@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/removing-pr
 ---
 
 # Removing a product from AWS Marketplace
-<a name="removing-products-from-aws-marketplace"></a>
 
 After you publish your product, you can remove it from AWS Marketplace. This is also referred to as *sunsetting*. To remove a product, identify the product and submit a request to remove it, along with a reason for removal and a contact email address for you. You can also provide a replacement product ID if you're replacing the current product with a new one.
 

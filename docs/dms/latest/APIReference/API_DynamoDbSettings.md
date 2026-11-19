@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DynamoDbSett
 ---
 
 # DynamoDbSettings
-<a name="API_DynamoDbSettings"></a>
 
 Provides the Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role used to define an Amazon DynamoDB target endpoint.
 

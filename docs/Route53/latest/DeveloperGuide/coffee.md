@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/coffee.htm
 ---
 
 # .coffee
-<a name="coffee"></a>
 
 Used by those in the coffee industry.
 

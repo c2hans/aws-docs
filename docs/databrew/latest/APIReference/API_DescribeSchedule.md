@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Describ
 ---
 
 # DescribeSchedule
-<a name="API_DescribeSchedule"></a>
 
 Returns the definition of a specific DataBrew schedule.
 

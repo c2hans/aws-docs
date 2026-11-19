@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ZonalShiftCo
 ---
 
 # ZonalShiftConfigResponse
-<a name="API_ZonalShiftConfigResponse"></a>
 
 The status of zonal shift configuration for the cluster
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentError
-<a name="API_EnvironmentError"></a>
 
 The failure reasons for the environment deployment.
 

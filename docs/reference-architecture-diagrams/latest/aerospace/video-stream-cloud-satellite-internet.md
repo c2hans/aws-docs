@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Video Stream from Cloud to Satellite and Internet
-<a name="video-stream-cloud-satellite-internet"></a>
 
 Publication date: **March 28, 2023 ([Diagram history](diagram-history.md))**
 

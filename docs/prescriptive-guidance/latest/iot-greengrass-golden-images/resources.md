@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengr
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS IoT Greengrass Developer Guide
 <a name="9999999999999999gg--developer-guide.032a08b7-5318-5a71-9f11-f0e0f44f31cd"></a>

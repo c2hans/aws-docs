@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL05-BP07 Implement emergency levers
-<a name="rel_mitigate_interaction_failure_emergency_levers"></a>
 
  Emergency levers are rapid processes that can mitigate availability impact on your workload.
 

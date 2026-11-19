@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcop
 ---
 
 # Data management
-<a name="telcoperf05"></a>
 
 |  TELCOPERF05: How do you select the appropriate storage solution for your telco workloads?  |
 | --- |

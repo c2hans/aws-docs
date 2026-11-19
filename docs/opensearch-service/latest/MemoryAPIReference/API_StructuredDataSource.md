@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # StructuredDataSource
-<a name="API_StructuredDataSource"></a>
 
 The source of structured content. Set exactly one member. Currently, the only member is `json`.
 

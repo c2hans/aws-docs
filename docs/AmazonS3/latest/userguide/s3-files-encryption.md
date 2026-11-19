@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-encry
 ---
 
 # Encryption
-<a name="s3-files-encryption"></a>
 
 S3 Files provides comprehensive encryption capabilities to protect your data both at rest and in transit.
 

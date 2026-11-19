@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateRouter
 ---
 
 # UpdateRouterInput
-<a name="API_UpdateRouterInput"></a>
 
 Updates the configuration of an existing router input in AWS Elemental MediaConnect.
 

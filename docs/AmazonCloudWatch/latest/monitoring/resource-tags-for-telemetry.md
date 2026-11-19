@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/resou
 ---
 
 # Resource tags for telemetry
-<a name="resource-tags-for-telemetry"></a>
 
 Use Amazon CloudWatch to enrich your AWS infrastructure metrics and CloudWatch Logs with AWS resource tags. You can set up comprehensive monitoring with CloudWatch metrics and alarms using tags. This helps monitor cloud infrastructure at scale by adapting alarms and metrics analysis as resources change.
 

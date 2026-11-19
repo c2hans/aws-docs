@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: AWS Elastic Beanstalk extends support for tagging to all resources on March 11, 2019
-<a name="release-2019-03-11-tagging"></a>
 
 Elastic Beanstalk extended support for tagging, and tag-based access control, to all Elastic Beanstalk resources.
 

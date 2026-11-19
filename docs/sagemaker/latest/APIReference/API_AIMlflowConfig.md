@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIMlfl
 ---
 
 # AIMlflowConfig
-<a name="API_AIMlflowConfig"></a>
 
 The MLflow tracking configuration for logging metrics and parameters to a SageMaker managed MLflow tracking server.
 

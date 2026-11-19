@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateUsagePla
 ---
 
 # CreateUsagePlan
-<a name="API_CreateUsagePlan"></a>
 
 Creates a usage plan with the throttle and quota limits, as well as the associated API stages, specified in the payload.
 

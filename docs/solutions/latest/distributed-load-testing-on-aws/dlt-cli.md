@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # DLT CLI
-<a name="dlt-cli"></a>
 
 The DLT CLI lets you interact with the Distributed Load Testing on AWS REST API directly from your terminal. It enables scripted automation of load tests, allowing you to list, inspect, and start test scenarios and query run results as part of repeatable workflows.
 

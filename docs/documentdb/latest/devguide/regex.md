@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/regex.html
 ---
 
 # $regex
-<a name="regex"></a>
 
 The `$regex` operator allows you to perform regular expression matching on string fields. It is a powerful tool for searching and filtering documents based on complex patterns.
 

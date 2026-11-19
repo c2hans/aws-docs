@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Optimize costs for Microsoft workloads on AWS
-<a name="introduction"></a>
 
 *Bill Pfeiffer, Chase Lindeman, and Kevin Sookhan, Amazon Web Services*
 

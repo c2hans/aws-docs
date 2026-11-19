@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/api-pr
 ---
 
 # The API Protocol
-<a name="api-protocol"></a>
 
 The Conductor Live API can be accessed using HTTP or HTTPS. The API follows the REST architectural framework. In accordance with REST guidelines, the API exposes four types of operations based on the requesting HTTP(S) method:
 + POST

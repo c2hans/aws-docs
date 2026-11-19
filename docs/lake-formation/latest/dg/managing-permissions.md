@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/managing-permis
 ---
 
 # Managing Lake Formation permissions
-<a name="managing-permissions"></a>
 
 Lake Formation provides central access controls for data in your data lake. You can define security policy-based rules for your users and applications by role in Lake Formation, and integration with AWS Identity and Access Management authenticates those users and roles. Once the rules are defined, Lake Formation enforces your access controls at table, column, and ro-level granularity for users of Amazon Redshift Spectrum and Amazon Athena.
 

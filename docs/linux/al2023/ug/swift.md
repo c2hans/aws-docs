@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/swift.html
 ---
 
 # Swift in AL2023
-<a name="swift"></a>
 
  AL2023 currently provides the [Swift](https://https://www.swift.org) runtime and SDK.
 

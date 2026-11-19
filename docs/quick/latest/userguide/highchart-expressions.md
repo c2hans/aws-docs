@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/highchart-express
 ---
 
 # AWS Quick JSON expression language for Highcharts visuals
-<a name="highchart-expressions"></a>
 
 Highcharts visuals accept most [valid JSON values](https://www.w3schools.com/js/js_json_datatypes.asp), standard arithmetic operators, string operators, and conditional operators. The following JSON values are not supported for Highcharts visuals:
 + Functions

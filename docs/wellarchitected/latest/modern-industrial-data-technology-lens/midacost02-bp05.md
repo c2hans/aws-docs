@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDACOST02-BP05 Develop cloud resource policies aligned with manufacturing operations
-<a name="midacost02-bp05"></a>
 
  Create well-defined policies for cloud resource provisioning, usage, and management that reflect specific manufacturing processes, compliance requirements, and cost optimization goals. These policies should consider both IT and OT needs while maintaining operational efficiency.
 

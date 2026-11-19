@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/using-servi
 ---
 
 # Using roles to create secrets for API destinations in EventBridge
-<a name="using-service-linked-roles-service-action-1"></a>
 
 The following topic details usage of the ****AWSServiceRoleForAmazonEventBridgeApiDestinations**** service-linked role.
 

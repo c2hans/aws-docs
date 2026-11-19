@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateWorkspac
 ---
 
 # UpdateWorkspaceImagePermission
-<a name="API_UpdateWorkspaceImagePermission"></a>
 
 Shares or unshares an image with one account in the same AWS Region by specifying whether that account has permission to copy the image. If the copy image permission is granted, the image is shared with that account. If the copy image permission is revoked, the image is unshared with the account.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/making-sigv4
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Making authenticated Amazon Q Business API calls using IAM Identity Center
-<a name="making-sigv4-authenticated-api-calls"></a>
 
 **Important**
 **This documentation is for developers building custom applications that integrate with Amazon Q Business APIs.** These instructions help you create a trusted backend component in your custom application that can make authenticated API calls on behalf of your users. This is NOT for the built-in Amazon Q Business web experience — that handles authentication automatically through the AWS console.

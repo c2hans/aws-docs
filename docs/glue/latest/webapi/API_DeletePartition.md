@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeletePartition.h
 ---
 
 # DeletePartition
-<a name="API_DeletePartition"></a>
 
 Deletes a specified partition.
 

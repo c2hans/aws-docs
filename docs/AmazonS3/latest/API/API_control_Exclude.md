@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Exclude.
 ---
 
 # Exclude
-<a name="API_control_Exclude"></a>
 
 A container for what Amazon S3 Storage Lens will exclude.
 

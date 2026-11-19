@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_AssociateEip
 ---
 
 # AssociateEipToVlan
-<a name="API_AssociateEipToVlan"></a>
 
 Associates an Elastic IP address with a public HCX VLAN. This operation is only allowed for public HCX VLANs at this time.
 

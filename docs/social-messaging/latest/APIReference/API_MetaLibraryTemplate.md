@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # MetaLibraryTemplate
-<a name="API_MetaLibraryTemplate"></a>
 
 Represents a template from Meta's library with customization options.
 

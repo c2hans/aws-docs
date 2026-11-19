@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Query
 ---
 
 # QueryExecutionOptions
-<a name="API_QueryExecutionOptions"></a>
 
 A structure that describes the query execution options.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Dea
 ---
 
 # DeactivatePipeline
-<a name="API_DeactivatePipeline"></a>
 
 Deactivates the specified running pipeline. The pipeline is set to the `DEACTIVATING` state until the deactivation process completes.
 

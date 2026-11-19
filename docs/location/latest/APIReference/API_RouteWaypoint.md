@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteWa
 ---
 
 # RouteWaypoint
-<a name="API_RouteWaypoint"></a>
 
 Waypoint between the Origin and Destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-sharing
 ---
 
 # Sharing a DNS view that you own
-<a name="gr-sharing-dns-views-share"></a>
 
 To share a DNS view, you create a resource share in AWS RAM. A resource share specifies the resources to share, the managed permission to apply, and the principals (accounts, organizational units, or organization) to share with.
 

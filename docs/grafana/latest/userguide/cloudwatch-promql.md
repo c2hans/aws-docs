@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/cloudwatch-prom
 ---
 
 # Query Amazon CloudWatch metrics using PromQL
-<a name="cloudwatch-promql"></a>
 
 You can query Amazon CloudWatch metrics using PromQL by configuring an Amazon Managed Service for Prometheus data source that points to the CloudWatch PromQL endpoint. This approach lets you use PromQL syntax to query metrics that are ingested into CloudWatch through OpenTelemetry Protocol (OTLP).
 

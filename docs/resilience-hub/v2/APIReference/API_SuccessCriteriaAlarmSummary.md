@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Succe
 ---
 
 # SuccessCriteriaAlarmSummary
-<a name="API_SuccessCriteriaAlarmSummary"></a>
 
 Summary information about a configured success criteria alarm.
 

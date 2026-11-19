@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/building-
 ---
 
 # Agent workspace startup process
-<a name="building-3P-services-startup-process"></a>
 
 Third-party services follow this process in the Connect Customer agent workspace:
 

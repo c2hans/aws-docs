@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_lambda_b
 ---
 
 # aws-lambda-bedrockinferenceprofile
-<a name="aws_lambda_bedrockinferenceprofile"></a>
 
 ![Stability:Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
 

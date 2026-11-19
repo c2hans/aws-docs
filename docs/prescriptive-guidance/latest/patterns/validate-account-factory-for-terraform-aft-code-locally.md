@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/va
 ---
 
 # Validate Account Factory for Terraform (AFT) code locally
-<a name="validate-account-factory-for-terraform-aft-code-locally"></a>
 
 *Alexandru Pop and Michal Gorniak, Amazon Web Services*
 

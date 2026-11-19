@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_T
 ---
 
 # TemporaryCredentials
-<a name="API_TemporaryCredentials"></a>
 
 A temporary set of credentials for an AWS Lake Formation user. These credentials are scoped down to only access the raw data sources that the user has access to.
 

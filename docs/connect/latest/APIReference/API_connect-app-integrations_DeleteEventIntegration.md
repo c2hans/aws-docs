@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteEventIntegration
-<a name="API_connect-app-integrations_DeleteEventIntegration"></a>
 
 Deletes the specified existing event integration. If the event integration is associated with clients, the request is rejected.
 

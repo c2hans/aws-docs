@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-insta
 ---
 
 # Manage your Spot Instances
-<a name="using-spot-instances-request"></a>
 
 Amazon EC2 launches a Spot Instance when capacity is available. A Spot Instance runs until it is interrupted or you terminate it yourself.
 

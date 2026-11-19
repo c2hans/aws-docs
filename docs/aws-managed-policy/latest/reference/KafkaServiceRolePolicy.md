@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Kafk
 ---
 
 # KafkaServiceRolePolicy
-<a name="KafkaServiceRolePolicy"></a>
 
 **Description**: IAM service linked role policy for Kafka.
 

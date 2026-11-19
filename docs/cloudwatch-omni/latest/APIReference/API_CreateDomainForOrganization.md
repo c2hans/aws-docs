@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateDomainForOrganization
-<a name="API_CreateDomainForOrganization"></a>
 
 Creates an organization-scoped domain for the caller's AWS Organization. Only the organization's management account can call this operation.
 

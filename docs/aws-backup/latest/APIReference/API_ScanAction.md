@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ScanA
 ---
 
 # ScanAction
-<a name="API_ScanAction"></a>
 
 Defines a scanning action that specifies the malware scanner and scan mode to use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Int
 ---
 
 # InterpolatedAssetPropertyValue
-<a name="API_InterpolatedAssetPropertyValue"></a>
 
 Contains information about an interpolated asset property value.
 

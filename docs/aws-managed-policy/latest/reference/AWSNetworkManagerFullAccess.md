@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSN
 ---
 
 # AWSNetworkManagerFullAccess
-<a name="AWSNetworkManagerFullAccess"></a>
 
 **Description**: Provides full access to Amazon NetworkManager via the AWS Management Console.
 

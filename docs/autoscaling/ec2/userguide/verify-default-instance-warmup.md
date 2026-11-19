@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/verify-default
 ---
 
 # Verify the default instance warmup time for a group
-<a name="verify-default-instance-warmup"></a>
 
 Use the following procedure to verify the default instance warmup time for an Auto Scaling group using the AWS CLI.
 

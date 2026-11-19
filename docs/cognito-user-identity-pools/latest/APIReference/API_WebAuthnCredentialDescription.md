@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # WebAuthnCredentialDescription
-<a name="API_WebAuthnCredentialDescription"></a>
 
 The details of a passkey, or webauthN, biometric or security-key authentication factor for a user.
 

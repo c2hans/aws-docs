@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-text-class
 ---
 
 # Deploy your model at scale
-<a name="jumpstart-text-classification-scale"></a>
 
 Set up auto-scaling and CloudWatch monitoring for your SageMaker AI endpoint to make it production-ready.
 

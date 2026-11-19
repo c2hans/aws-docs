@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Using AMS Resource Scheduler
-<a name="res-sched-using-periods"></a>
 
 How to use AMS Resource Scheduler periods in AMS Accelerate accounts.
 

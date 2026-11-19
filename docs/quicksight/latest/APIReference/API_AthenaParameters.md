@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Athen
 ---
 
 # AthenaParameters
-<a name="API_AthenaParameters"></a>
 
 Parameters for Amazon Athena.
 

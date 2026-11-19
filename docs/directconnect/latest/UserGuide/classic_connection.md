@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/classic_c
 ---
 
 # Direct Connect Classic connection
-<a name="classic_connection"></a>
 
 A Classic connection offers a straightforward approach to establishing dedicated network connectivity between your on-premises infrastructure and AWS. This connection type is ideal for organizations that prefer to manage their own network configurations and have existing Direct Connect infrastructure in place. The Classic connection does not rely on the AWS Direct Connect Resiliency Toolkit.
 

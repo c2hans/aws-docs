@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Rule
 ---
 
 # RuleUpdateFailure
-<a name="API_RuleUpdateFailure"></a>
 
 Describes a rule update that failed.
 

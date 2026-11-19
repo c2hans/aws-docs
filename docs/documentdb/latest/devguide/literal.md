@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/literal.html
 ---
 
 # $literal
-<a name="literal"></a>
 
 The `$literal` operator in Amazon DocumentDB is used to represent a literal value within an aggregation pipeline stage. It allows you to include a specific value, such as a number, string, or boolean, without interpreting it as a field reference or expression.
 

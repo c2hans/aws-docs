@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Deleting an AgentCore Code Interpreter
-<a name="code-interpreter-delete"></a>
 
 When you no longer need a Code Interpreter, you can delete it to free up resources and avoid unnecessary charges.
 

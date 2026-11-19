@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/exampl
 ---
 
 # Principal-scoped policies
-<a name="example-policies-principal"></a>
 
 The policies in this section decide from **who is calling**. They match on the principal — a JWT identity or an IAM caller — and leave the action and input either unconstrained or only loosely constrained.
 

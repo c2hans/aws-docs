@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-man
 ---
 
 # Managing Custom Vocabulary Entities
-<a name="bda-library-managing-cv-entities"></a>
 
 This section describes how to add, update, delete, and view custom vocabulary entities/lists within your Data Automation Libraries. Custom vocabulary entities contain domain-specific terms and phrases that improve extraction accuracy for audio and video content in your target languages.
 

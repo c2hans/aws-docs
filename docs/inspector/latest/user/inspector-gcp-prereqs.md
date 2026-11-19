@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-gcp-prer
 ---
 
 # Prerequisites for integrating Amazon Inspector with Google Cloud Platform
-<a name="inspector-gcp-prereqs"></a>
 
 Before you create a connector, verify that your AWS account and Google Cloud Platform (GCP) environment meet the following requirements. The GCP setup script handles most GCP configuration for you: workload identity federation, the service account and its roles, audit logs, log sinks, the Cloud Asset Inventory feed, and Pub/Sub topics and subscriptions.
 

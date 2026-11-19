@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateCpuOptionsRequest
-<a name="API_LaunchTemplateCpuOptionsRequest"></a>
 
 The CPU options for the instance. Both the core count and threads per core must be specified in the request.
 

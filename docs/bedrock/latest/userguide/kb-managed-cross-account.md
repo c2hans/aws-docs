@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-cros
 ---
 
 # Resource policies for managed knowledge bases
-<a name="kb-managed-cross-account"></a>
 
 A resource-based policy is a JSON document that you attach directly to a managed knowledge base. It controls which IAM principals can perform actions on the knowledge base, enabling use cases such as cross-account access. The policy supports both `Allow` and `Deny` effects.
 

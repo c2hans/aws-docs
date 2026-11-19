@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-spark-8.0.0-20260421
-<a name="emr-eks-spark-8.0.0-20260421"></a>
 
 Release label
 Use `emr-spark-8.0.0-20260421` as the `--release-label` value in the [StartJobRun](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html) API.

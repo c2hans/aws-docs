@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity
 ---
 
 # Best practices for updating capacity providers for Amazon ECS Managed Instances
-<a name="capacity-provider-managed-instances-best-practices"></a>
 
 For the highest level of safety and rollback support, we recommend treating capacity providers as immutable resources. When you need to update a capacity provider configuration, follow this recommended workflow:
 

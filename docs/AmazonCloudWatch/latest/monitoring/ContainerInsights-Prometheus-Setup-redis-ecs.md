@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Tutorial for scraping Redis OSS Prometheus metrics on Amazon ECS Fargate
-<a name="ContainerInsights-Prometheus-Setup-redis-ecs"></a>
 
 This tutorial provides a hands-on introduction to scrape the Prometheus metrics of a sample Redis OSS application in an Amazon ECS Fargate cluster. The Redis OSS Prometheus exporter target will be auto-discovered by the CloudWatch agent with Prometheus metric support based on the container's Docker labels.
 

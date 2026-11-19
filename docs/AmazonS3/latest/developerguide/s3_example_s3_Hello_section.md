@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Hello Amazon S3
-<a name="s3_example_s3_Hello_section"></a>
 
 The following code examples show how to get started using Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DeleteBridge
 ---
 
 # DeleteBridge
-<a name="API_DeleteBridge"></a>
 
  Deletes a bridge. Before you can delete a bridge, you must stop the bridge.
 

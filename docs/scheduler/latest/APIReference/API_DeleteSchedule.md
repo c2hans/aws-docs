@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Delete
 ---
 
 # DeleteSchedule
-<a name="API_DeleteSchedule"></a>
 
 Deletes the specified schedule.
 

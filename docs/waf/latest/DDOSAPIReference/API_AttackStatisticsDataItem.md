@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_AttackSt
 ---
 
 # AttackStatisticsDataItem
-<a name="API_AttackStatisticsDataItem"></a>
 
 A single attack statistics data record. This is returned by [DescribeAttackStatistics](API_DescribeAttackStatistics.md) along with a time range indicating the time period that the attack statistics apply to.
 

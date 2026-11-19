@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Getting patient data with `Patient/$everything`
-<a name="reference-fhir-operations-everything"></a>
 
  The `Patient/$everything` operation is used to query a FHIR `Patient` resource, along with any other resources related to that `Patient`. The operation can be used to provide a patient with access to their entire record or for a provider to perform a bulk data download related to a patient. HealthLake supports `Patient/$everything` for a specific patient `id`.
 

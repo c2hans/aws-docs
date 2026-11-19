@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetIPSet.htm
 ---
 
 # GetIPSet
-<a name="API_GetIPSet"></a>
 
 Retrieves the specified [IPSet](API_IPSet.md).
 

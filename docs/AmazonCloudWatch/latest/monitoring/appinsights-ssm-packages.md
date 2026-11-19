@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # AWS Systems Manager (SSM) packages used by CloudWatch Application Insights
-<a name="appinsights-ssm-packages"></a>
 
 The packages listed in this section are used by Application Insights, and can be independently managed and deployed with AWS Systems Manager Distributor. For more information about SSM Distributor, see [AWS Systems Manager Distributor](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor.html) in the *AWS Systems Manager User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Li
 ---
 
 # ListDomains
-<a name="API_ListDomains"></a>
 
 Lists Domains for a given account.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Usage guidelines for triggers and branches
-<a name="workflows-add-trigger-considerations"></a>
 
 This section describes some of the main guidelines when setting up Amazon CodeCatalyst triggers that include branches.
 

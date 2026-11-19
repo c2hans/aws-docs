@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_ScriptMod
 ---
 
 # ScriptModeConfig
-<a name="API_ScriptModeConfig"></a>
 
 Contains information about algorithm scripts used for the Amazon Braket hybrid job.
 

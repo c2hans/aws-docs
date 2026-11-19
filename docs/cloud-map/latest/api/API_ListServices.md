@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_ListServices.ht
 ---
 
 # ListServices
-<a name="API_ListServices"></a>
 
 Lists summary information for all the services that are associated with one or more namespaces.
 

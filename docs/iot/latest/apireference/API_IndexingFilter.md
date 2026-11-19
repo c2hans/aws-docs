@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_IndexingFilt
 ---
 
 # IndexingFilter
-<a name="API_IndexingFilter"></a>
 
 Provides additional selections for named shadows and geolocation data.
 

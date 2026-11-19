@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/gettingstartedguide/add
 ---
 
 # Additional resources for Amazon RDS
-<a name="additional-resources"></a>
 
 Amazon RDS offers multiple tools, configurations, and best practices to help you optimize your database management. To deepen your understanding of Amazon RDS, you can explore additional resources that provide practical guidance on advanced configurations, performance tuning, security enhancements, and cost management strategies. These resources can help you scale, secure, and manage your databases for diverse workloads and organizational needs.
 

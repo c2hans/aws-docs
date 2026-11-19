@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Custom field type transformer (JavaScript)
-<a name="tft-custom-transformer"></a>
 
 When a field type is not covered by the built-in transformations, you can supply a custom JavaScript transformer that rewrites mappings as metadata is migrated. The transformer is a JavaScript function that receives each metadata document and returns the modified document. For workflow runs, reference the script with `metadataTransforms`; for one-off manual runs, pass a raw transformer descriptor to the metadata migration command.
 

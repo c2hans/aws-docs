@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # ParameterTextFieldControl
-<a name="API_ParameterTextFieldControl"></a>
 
 A control to display a text box that is used to enter a single entry.
 

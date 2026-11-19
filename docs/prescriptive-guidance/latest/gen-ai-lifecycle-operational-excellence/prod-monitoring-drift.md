@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Detecting drift in production applications
-<a name="prod-monitoring-drift"></a>
 
 In the context of LLMs, *drift* refers to the gradual degradation of its performance over time. This is typically caused by changes in data distributions or user behavior that the model was not originally trained on. Like ML models, the output of generative AI models is dictated by their input. When the input changes, the output from these models can drift from the original intent. This can lead to a degradation of the generative AI application. In extreme cases, it can produce detrimental outcomes in terms of safety, legal, or monetary losses.  A proactive drift-monitoring framework is essential for maintaining quality and reliability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_F
 ---
 
 # FrequencyBandwidth
-<a name="API_FrequencyBandwidth"></a>
 
 Object that describes the frequency bandwidth.
 

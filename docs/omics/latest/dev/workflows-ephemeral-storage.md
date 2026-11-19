@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-ephemeral-sto
 ---
 
 # Ephemeral storage for HealthOmics workflow tasks
-<a name="workflows-ephemeral-storage"></a>
 
 HealthOmics provides ephemeral storage for workflow tasks using the `/tmp` directory. This storage is temporary and unique to each task in a workflow. HealthOmics allocates 16 GiB of ephemeral storage to each task instance by default. You can increase the amount of ephemeral storage allocated to individual tasks in your workflow definition, up to a maximum of 3,072 GiB per task. All data stored in `/tmp` is encrypted at rest.
 

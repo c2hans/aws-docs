@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/adding-insights.h
 ---
 
 # Adding custom insights to your analysis
-<a name="adding-insights"></a>
 
 If you don't want to use any of the suggested insights, you can create your own custom insight. Use the following procedure to create a custom computational insight.
 

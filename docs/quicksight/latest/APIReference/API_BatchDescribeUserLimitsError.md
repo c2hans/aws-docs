@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Batch
 ---
 
 # BatchDescribeUserLimitsError
-<a name="API_BatchDescribeUserLimitsError"></a>
 
 Information about a user whose limits could not be described in a batch operation.
 

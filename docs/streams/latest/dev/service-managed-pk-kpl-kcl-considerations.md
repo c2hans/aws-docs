@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-kp
 ---
 
 # KCL considerations
-<a name="service-managed-pk-kpl-kcl-considerations"></a>
 
 If you use the Kinesis Client Library (KCL) to consume from service-managed streams, no KCL changes are required. KCL continues to process records from shards in sequence as it does today, and handles records with a null partition key without modification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Enabling and disabling parts of the solution
-<a name="enabling-and-disabling-parts-of-solution"></a>
 
 As a solution administrator, you have the following controls over which functionalities of the solution are enabled.
 

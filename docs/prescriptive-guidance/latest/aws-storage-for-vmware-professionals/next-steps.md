@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide was intended to help VMware professionals transition from on-premises environments to AWS storage solutions. It covered fundamental storage concepts, advanced management practices, and the required technical knowledge to successfully migrate workloads and adopt AWS technologies. The following lists provide an overview of AWS benefits, migration tools, and migration steps.
 

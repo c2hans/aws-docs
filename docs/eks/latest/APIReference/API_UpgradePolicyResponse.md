@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpgradePolic
 ---
 
 # UpgradePolicyResponse
-<a name="API_UpgradePolicyResponse"></a>
 
 This value indicates if extended support is enabled or disabled for the cluster.
 

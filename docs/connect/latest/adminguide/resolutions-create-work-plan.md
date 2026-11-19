@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-cr
 ---
 
 # Create and publish a Work plan
-<a name="resolutions-create-work-plan"></a>
 
  In this procedure, you turn a standard operating procedure (SOP) into a published Work plan. You upload the SOP, answer the Resolutions AI assistant's questions, resolve open configuration items, generate flows, and publish. The screenshots show a sample mortgage approval SOP.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceGrou
 ---
 
 # InstanceGroupModifyConfig
-<a name="API_InstanceGroupModifyConfig"></a>
 
 Modify the size or configurations of an instance group.
 

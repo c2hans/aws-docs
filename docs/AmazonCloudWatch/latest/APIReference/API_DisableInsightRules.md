@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DisableInsightRules
-<a name="API_DisableInsightRules"></a>
 
 Disables the specified Contributor Insights rules. When rules are disabled, they do not analyze log groups and do not incur costs.
 

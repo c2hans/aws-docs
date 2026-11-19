@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_PutSolNetwor
 ---
 
 # PutSolNetworkPackageContentMetadata
-<a name="API_PutSolNetworkPackageContentMetadata"></a>
 
 Update metadata in a network package.
 

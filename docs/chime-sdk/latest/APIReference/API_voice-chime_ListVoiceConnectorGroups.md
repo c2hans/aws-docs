@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # ListVoiceConnectorGroups
-<a name="API_voice-chime_ListVoiceConnectorGroups"></a>
 
 Lists the Amazon Chime SDK Voice Connector groups in the administrator's AWS account.
 

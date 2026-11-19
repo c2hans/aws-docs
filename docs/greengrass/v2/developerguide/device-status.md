@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/device-stat
 ---
 
 # Check Greengrass core device status
-<a name="device-status"></a>
 
 Greengrass core devices report the status of their software components to AWS IoT Greengrass. You can check the health summary of each device, and you can check the status of each component on each device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingFailover.
 ---
 
 # Using Amazon S3 Multi-Region Access Point failover controls
-<a name="UsingFailover"></a>
 
 This section explains how to manage and use your Amazon S3 Multi-Region Access Points failover controls by using the AWS Management Console.
 

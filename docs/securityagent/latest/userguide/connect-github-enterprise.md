@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/connect-g
 ---
 
 # Connect AWS Security Agent to GitHub Enterprise
-<a name="connect-github-enterprise"></a>
 
 Connect AWS Security Agent to GitHub Enterprise (GHE) to enable code review, threat modeling, penetration testing, and automated remediation for your repositories.
 

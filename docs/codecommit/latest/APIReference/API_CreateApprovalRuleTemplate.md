@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Creat
 ---
 
 # CreateApprovalRuleTemplate
-<a name="API_CreateApprovalRuleTemplate"></a>
 
 Creates a template for approval rules that can then be associated with one or more repositories in your AWS account. When you associate a template with a repository, AWS CodeCommit creates an approval rule that matches the conditions of the template for all pull requests that meet the conditions of the template. For more information, see [AssociateApprovalRuleTemplateWithRepository](API_AssociateApprovalRuleTemplateWithRepository.md).
 

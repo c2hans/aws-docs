@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyContentTypeOptions
-<a name="API_ResponseHeadersPolicyContentTypeOptions"></a>
 
 Determines whether CloudFront includes the `X-Content-Type-Options` HTTP response header with its value set to `nosniff`.
 

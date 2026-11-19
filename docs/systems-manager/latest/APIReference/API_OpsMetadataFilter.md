@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsMetadataFilter
-<a name="API_OpsMetadataFilter"></a>
 
 A filter to limit the number of OpsMetadata objects displayed.
 

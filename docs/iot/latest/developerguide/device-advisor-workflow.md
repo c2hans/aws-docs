@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 ---
 
 # Device Advisor workflow
-<a name="device-advisor-workflow"></a>
 
 This tutorial explains how to create a custom test suite and run tests against the device you want to test in the console. After the tests are complete, you can view the test results and detailed logs.
 

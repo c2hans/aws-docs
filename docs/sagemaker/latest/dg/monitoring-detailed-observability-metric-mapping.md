@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-detailed-
 ---
 
 # Metric name mapping: legacy to OTel
-<a name="monitoring-detailed-observability-metric-mapping"></a>
 
 For metrics that exist in both CloudWatch classic and OpenTelemetry, the underlying data is the same but the naming conventions differ. In CloudWatch classic, a single metric name such as `Invocations` is distinguished by its dimension set (for example, EndpointName alone versus EndpointName plus InstanceId). In OpenTelemetry, each granularity level has its own metric name (for example, `Invocations` versus `InvocationsByInstanceId`).
 

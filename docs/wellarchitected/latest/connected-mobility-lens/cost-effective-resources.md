@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Cost-effective resources
-<a name="cost-effective-resources"></a>
 
 | CMCOST\_1: How do you optimize your raw vehicle data storage?  |
 | --- |

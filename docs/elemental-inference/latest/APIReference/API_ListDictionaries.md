@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # ListDictionaries
-<a name="API_ListDictionaries"></a>
 
 Lists the dictionaries in your account.
 

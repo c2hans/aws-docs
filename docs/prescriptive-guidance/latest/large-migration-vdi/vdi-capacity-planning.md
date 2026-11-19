@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Instance capacity planning for large VDI migrations
-<a name="vdi-capacity-planning"></a>
 
 VDI solutions tend to require the deployment of hundreds or thousands of EC2 instances. To avoid [insufficient instance capacity errors](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshooting-launch.html#troubleshooting-launch-capacity), we recommend that you develop a rollout plan and work with AWS Support or your AWS Technical Account Manager to coordinate the capacity requirements with the AWS service team.
 

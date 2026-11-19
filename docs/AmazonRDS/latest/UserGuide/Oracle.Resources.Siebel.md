@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Resour
 ---
 
 # Installing a Siebel database on Oracle on Amazon RDS
-<a name="Oracle.Resources.Siebel"></a>
 
 You can use Amazon RDS to host a Siebel Database on an Oracle DB instance. The Siebel Database is part of the Siebel Customer Relationship Management (CRM) application architecture. For an illustration, see [ Generic architecture of Siebel business application](https://docs.oracle.com/cd/E63029_01/books/PerformTun/performtun_archinfra.htm#i1043361).
 

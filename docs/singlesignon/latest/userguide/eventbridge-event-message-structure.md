@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/eventbridg
 ---
 
 # EventBridge event message structure
-<a name="eventbridge-event-message-structure"></a>
 
 The event message that the IAM Identity Center Identity Store sends to Amazon EventBridge (EventBridge) is in JSON format. Every event contains the following fields.
 + `version` – Currently 0 (zero) for all events. This is an Amazon EventBridge envelope field and isn't used for schema versioning. For event schema versioning, see the `event-version` field in the `detail` field.

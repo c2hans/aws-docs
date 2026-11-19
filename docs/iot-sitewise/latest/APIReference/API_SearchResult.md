@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Sea
 ---
 
 # SearchResult
-<a name="API_SearchResult"></a>
 
 A single matching segment of time-series data returned by a search.
 

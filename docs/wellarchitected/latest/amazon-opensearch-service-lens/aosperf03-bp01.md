@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF03-BP01 Establish storage utilization thresholds
-<a name="aosperf03-bp01"></a>
 
  Maintain efficient resource utilization by keeping domain storage usage under 75% to prevent potential performance issues or cluster write blocks.
 

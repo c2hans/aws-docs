@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdateAgentSpace
-<a name="API_UpdateAgentSpace"></a>
 
 Updates the configuration of an existing agent space, including its name, description, AWS resources, target domains, and code review settings.
 

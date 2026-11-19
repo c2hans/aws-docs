@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::BackupPlan BackupRuleResourceType
-<a name="aws-properties-backup-backupplan-backupruleresourcetype"></a>
 
 Specifies an object containing properties used to schedule a task to back up a selection of resources.
 

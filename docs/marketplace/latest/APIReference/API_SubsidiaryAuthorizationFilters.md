@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationFilters
-<a name="API_SubsidiaryAuthorizationFilters"></a>
 
 The filters that you can use with the `ListEntities` operation to filter subsidiary authorizations. You can filter by `EntityId`, `Status`, `ResourceId`, `ResourceName`, `Name`, `SubsidiaryAccountId`, `CreatedDate`, and `LastModifiedDate`. You can add only one wildcard filter in a single `ListEntities` request.
 

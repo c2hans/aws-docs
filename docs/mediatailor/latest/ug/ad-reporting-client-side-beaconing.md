@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-clien
 ---
 
 # Client-side beaconing
-<a name="ad-reporting-client-side-beaconing"></a>
 
 With the client-side tracking `startTimeInSeconds` element, you can use MediaTailor to support beacons timing.
 

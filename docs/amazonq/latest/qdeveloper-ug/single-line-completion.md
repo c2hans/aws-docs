@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/single-line
 ---
 
 # Using Amazon Q Developer for single-line code completion
-<a name="single-line-completion"></a>
 
 When you start typing out single lines of code, Amazon Q makes suggestions based on your current and previous inputs.
 

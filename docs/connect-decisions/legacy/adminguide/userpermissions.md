@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/user
 ---
 
 # User roles
-<a name="userpermissions"></a>
 
 The following APIs are used for managing users, user roles, user notifications, and chat messages in AWS Supply Chain.
 

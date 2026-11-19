@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/gs-st
 ---
 
 # Step 4: Analyze an image with your model
-<a name="gs-step-get-a-prediction"></a>
 
 You analyze an image by calling the [DetectCustomLabels](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectCustomLabels) API. In this step, you use the `detect-custom-labels` AWS Command Line Interface (AWS CLI) command to analyze an example image. You get the AWS CLI command from the Amazon Rekognition Custom Labels console. The console configures the AWS CLI command to use your model. You only need to supply an image that's stored in an Amazon S3 bucket. This topic provides an image that you can use for each example project.
 

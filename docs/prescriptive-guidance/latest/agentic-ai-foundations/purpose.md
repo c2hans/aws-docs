@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # The purpose of software agents
-<a name="purpose"></a>
 
 As modern systems have become increasingly complex, distributed, and intelligent, the role of software agents has gained prominence across domains that range from autonomous operations to user-assistive technologies. But what is the underlying purpose of software agents? Why do we design systems that go beyond scripts, services, or static models, and instead delegate tasks to entities that are capable of perceiving, reasoning, and acting?
 

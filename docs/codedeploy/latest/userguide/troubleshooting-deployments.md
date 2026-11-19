@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshoot
 ---
 
 # Troubleshoot EC2/On-Premises deployment issues
-<a name="troubleshooting-deployments"></a>
 
 **Topics**
 + [CodeDeploy plugin CommandPoller missing credentials error](#troubleshooting-agent-commandpoller-error)

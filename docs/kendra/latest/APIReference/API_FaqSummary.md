@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_FaqSummar
 ---
 
 # FaqSummary
-<a name="API_FaqSummary"></a>
 
 Summary information for frequently asked questions and answers included in an index.
 

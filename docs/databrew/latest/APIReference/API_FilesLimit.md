@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_FilesLi
 ---
 
 # FilesLimit
-<a name="API_FilesLimit"></a>
 
 Represents a limit imposed on number of Amazon S3 files that should be selected for a dataset from a connected Amazon S3 path.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_CodeRepository.
 ---
 
 # CodeRepository
-<a name="API_CodeRepository"></a>
 
 Describes a source code repository.
 

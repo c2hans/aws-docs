@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/using-startup-scri
 ---
 
 # Using a startup script with Amazon MWAA
-<a name="using-startup-script"></a>
 
 A startup script is a shell (`.sh`) script you host in your environment's Amazon S3 bucket similar to your DAGs, requirements, and plugins. Amazon MWAA runs this script during startup on every individual Apache Airflow component (worker, scheduler, and web server) before installing requirements and initializing the Apache Airflow process. Use a startup script to do the following:
 + **Install runtimes** – Install Linux runtimes required by your workflows and connections.

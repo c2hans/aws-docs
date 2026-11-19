@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/types-
 ---
 
 # Types of users
-<a name="types-of-users"></a>
 
  **Racers** are the most common type of user in DeepRacer on AWS, and any account that is created will automatically be created as a racer. Racers can learn the fundamentals of reinforcement learning; build, train, and evaluate models; and they can submit their trained models to live races that are hosted on the deployment. They can also import or export models from the deployment, allowing them to take a model to another deployment and use it there. Where the deployment is used to run [physical racing events](race-management.md), racers can view those events and the results of the runs recorded at them.
 

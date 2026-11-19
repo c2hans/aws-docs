@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # WarningProperty
-<a name="API_WarningProperty"></a>
 
 A specific property that is impacted by a warning.
 

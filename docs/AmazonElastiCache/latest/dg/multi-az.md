@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/multi-az.htm
 ---
 
 # Minimizing downtime with Multi-AZ
-<a name="multi-az"></a>
 
 There are a number of instances where ElastiCache Valkey or Redis OSS may need to replace a primary node; these include certain types of planned maintenance and the unlikely event of a primary node or Availability Zone failure.
 

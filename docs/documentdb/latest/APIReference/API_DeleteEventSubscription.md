@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Delet
 ---
 
 # DeleteEventSubscription
-<a name="API_DeleteEventSubscription"></a>
 
 Deletes an Amazon DocumentDB event notification subscription.
 

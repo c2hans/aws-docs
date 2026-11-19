@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Desired
 ---
 
 # DesiredConfiguration
-<a name="API_DesiredConfiguration"></a>
 
 Describes the desired configuration for an instance refresh.
 

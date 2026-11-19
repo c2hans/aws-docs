@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_EnableM
 ---
 
 # EnableMetricsCollection
-<a name="API_EnableMetricsCollection"></a>
 
 Enables group metrics collection for the specified Auto Scaling group.
 

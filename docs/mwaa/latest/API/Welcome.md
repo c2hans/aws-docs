@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This section contains the Amazon Managed Workflows for Apache Airflow (MWAA) API reference documentation. For more information, see [What is Amazon MWAA?](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html).
 
@@ -26,4 +25,4 @@ This section contains the Amazon Managed Workflows for Apache Airflow (MWAA) API
 
 For a list of supported regions, see [Amazon MWAA endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/mwaa.html) in the * AWS General Reference*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

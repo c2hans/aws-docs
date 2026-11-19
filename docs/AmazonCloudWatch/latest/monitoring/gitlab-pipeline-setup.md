@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/gitla
 ---
 
 # CloudWatch pipelines configuration for GitLab
-<a name="gitlab-pipeline-setup"></a>
 
 Collects log data from GitLab using Personal Access Token authentication through the GitLab REST API and GraphQL API.
 

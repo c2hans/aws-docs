@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOp
 ---
 
 # AIOpsReadOnlyAccess
-<a name="AIOpsReadOnlyAccess"></a>
 
 **Description**: Grants ReadOnly permissions to the Amazon AI Operations service and its required resources.
 

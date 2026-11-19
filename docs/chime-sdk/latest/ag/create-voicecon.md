@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/create-voicecon.html
 ---
 
 # Creating an Amazon Chime SDK Voice Connector
-<a name="create-voicecon"></a>
 
 You use the Amazon Chime SDK console to create Amazon Chime SDK Voice Connectors.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Dep
 ---
 
 # DeployTargetEventContext
-<a name="API_DeployTargetEventContext"></a>
 
 The context for the event for the deploy action.
 

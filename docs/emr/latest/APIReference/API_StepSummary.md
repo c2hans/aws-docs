@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StepSummary.
 ---
 
 # StepSummary
-<a name="API_StepSummary"></a>
 
 The summary of the cluster step.
 

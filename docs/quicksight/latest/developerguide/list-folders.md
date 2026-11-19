@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/list-fo
 ---
 
 # ListFolders
-<a name="list-folders"></a>
 
 Use the `ListFolders` operation to list all folders in an Quick Sight account.
 

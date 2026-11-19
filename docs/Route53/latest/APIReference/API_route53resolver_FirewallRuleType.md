@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # FirewallRuleType
-<a name="API_route53resolver_FirewallRuleType"></a>
 
 The rule-type configuration for a DNS Firewall rule. `FirewallRuleType` is a tagged union — exactly one member must be set per rule, and the member determines what the rule matches against. This shape is mutually exclusive with the top-level `FirewallDomainListId` and `DnsThreatProtection` fields on [CreateFirewallRule](API_route53resolver_CreateFirewallRule.md) and [UpdateFirewallRule](API_route53resolver_UpdateFirewallRule.md).
 

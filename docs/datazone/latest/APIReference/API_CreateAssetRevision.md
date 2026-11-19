@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateA
 ---
 
 # CreateAssetRevision
-<a name="API_CreateAssetRevision"></a>
 
 Creates a revision of the asset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationAnalysisResultTarget
-<a name="API_NetworkMigrationAnalysisResultTarget"></a>
 
 The target resource information for an analysis result.
 

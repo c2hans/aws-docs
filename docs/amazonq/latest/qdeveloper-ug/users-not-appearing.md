@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/users-not-a
 ---
 
 # Can't see subscribed users
-<a name="users-not-appearing"></a>
 
 **Problem: Subscribed users are not appearing in the Amazon Q Developer console.**
 

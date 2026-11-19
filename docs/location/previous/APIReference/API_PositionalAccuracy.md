@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Posit
 ---
 
 # PositionalAccuracy
-<a name="API_PositionalAccuracy"></a>
 
 Defines the level of certainty of the position.
 

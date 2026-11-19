@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/tutorials-tran
 ---
 
 # Transfer Family tutorials
-<a name="tutorials-transfer"></a>
 
 The AWS Transfer Family user guide provides detailed walkthroughs for several use cases.
 +  [Getting started with AWS Transfer Family server endpoints](getting-started.md) - Create an SFTP Transfer Family server with a service-managed user and transfer files using a client.

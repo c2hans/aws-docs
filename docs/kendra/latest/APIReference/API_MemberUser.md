@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_MemberUse
 ---
 
 # MemberUser
-<a name="API_MemberUser"></a>
 
 The users that belong to a group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WorkingWithE
 ---
 
 # Working with ElastiCache
-<a name="WorkingWithElastiCache"></a>
 
  In this section you can find details about how to manage the various components of your ElastiCache implementation.
 

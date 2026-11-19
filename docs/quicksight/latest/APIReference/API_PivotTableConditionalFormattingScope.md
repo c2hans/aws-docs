@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableConditionalFormattingScope
-<a name="API_PivotTableConditionalFormattingScope"></a>
 
 The scope of the cell for conditional formatting.
 

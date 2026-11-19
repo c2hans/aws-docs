@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/que
 ---
 
 # Step D: Query the metadata
-<a name="query-metadata-query"></a>
 
 Use the Elemental Inference GetEndpoint operation to obtain the metadata that Elemental Inference generates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/tutoria
 ---
 
 # Get started with data science applications on Lightsail for Research
-<a name="tutorials"></a>
 
 The following tutorials provide additional information about how to get started with specific applications that are available in Lightsail for Research.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateEve
 ---
 
 # CreateEventLogConfiguration
-<a name="API_CreateEventLogConfiguration"></a>
 
 Set the event log configuration for the account, resource type, or specific resource.
 

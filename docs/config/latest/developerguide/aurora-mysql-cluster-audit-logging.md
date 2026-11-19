@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aurora-mysq
 ---
 
 # aurora-mysql-cluster-audit-logging
-<a name="aurora-mysql-cluster-audit-logging"></a>
 
 Checks if Amazon Aurora MySQL DB clusters have audit logging enabled. The rule is NON\_COMPLIANT if a DB cluster does not have audit logging enabled.
 

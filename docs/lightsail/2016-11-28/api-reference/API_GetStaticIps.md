@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetStaticIps
-<a name="API_GetStaticIps"></a>
 
 Returns information about all static IPs in the user's account.
 

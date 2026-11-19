@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-dfe-sta
 ---
 
 # Managing statistics for the Neptune DFE to use
-<a name="neptune-dfe-statistics"></a>
 
 **Note**
 Support for openCypher depends on the DFE query engine in Neptune.

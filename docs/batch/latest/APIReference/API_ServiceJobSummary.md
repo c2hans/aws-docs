@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJob
 ---
 
 # ServiceJobSummary
-<a name="API_ServiceJobSummary"></a>
 
 Summary information about a service job.
 

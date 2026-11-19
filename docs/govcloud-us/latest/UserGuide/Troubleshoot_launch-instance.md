@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/Troubleshoo
 ---
 
 # Client.UnsupportedOperation: Instances can only be launched within Amazon VPC in this region
-<a name="Troubleshoot_launch-instance"></a>
 
  **Service:** Amazon EC2
 

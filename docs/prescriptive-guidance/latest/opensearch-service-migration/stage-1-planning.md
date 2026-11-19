@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Stage 1 - Planning
-<a name="stage-1-planning"></a>
 
 Migration starts with planning the target environment that you are going to build to meet your requirements. Planning involves looking at a set of focus areas, each of which will require careful consideration:
 + [Sizing](sizing.md)

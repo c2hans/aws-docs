@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Redshift-prereq
 ---
 
 # Prerequisites
-<a name="Redshift-prereq"></a>
 
 To use the AWS managed policies for Amazon Managed Grafana, complete the following tasks before you configure the Amazon Redshift data source:
 + Tag your Amazon Redshift cluster with `GrafanaDataSource: true`. Otherwise, it won't be accessible.

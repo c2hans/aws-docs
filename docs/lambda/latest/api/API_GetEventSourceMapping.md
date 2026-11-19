@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetEventSourceMapp
 ---
 
 # GetEventSourceMapping
-<a name="API_GetEventSourceMapping"></a>
 
 Returns details about an event source mapping. You can get the identifier of a mapping from the output of [ListEventSourceMappings](API_ListEventSourceMappings.md).
 

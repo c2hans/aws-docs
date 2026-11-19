@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/su-sd
 ---
 
 # Set up SDK permissions
-<a name="su-sdk-permissions"></a>
 
 To use Amazon Rekognition Custom Labels SDK operations, you need access permissions to the Amazon Rekognition Custom Labels API and the Amazon S3 bucket used for model training.
 

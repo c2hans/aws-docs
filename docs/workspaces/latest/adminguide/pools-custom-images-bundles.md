@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/pools-custo
 ---
 
 # Bundle options for WorkSpaces Pools
-<a name="pools-custom-images-bundles"></a>
 
 Before selecting a bundle to use with WorkSpaces Pool, ensure the bundle you want to select is compatible with your WorkSpaces' protocol, operating system, network, and compute type. We recommend testing the performance of bundles you want to choose in a test environment by running and using applications that replicate your users' daily tasks. For more information about protocols, see [Protocols for WorkSpaces Personal](amazon-workspaces-networking.md#amazon-workspaces-protocols). For more information about networks, see [Client network requirements for WorkSpaces Personal](workspaces-network-requirements.md).
 

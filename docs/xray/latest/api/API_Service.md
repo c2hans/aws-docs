@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_Service.html
 ---
 
 # Service
-<a name="API_Service"></a>
 
 Information about an application that processed requests, users that made requests, or downstream services, resources, and applications that an application used.
 

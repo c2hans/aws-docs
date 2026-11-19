@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_AcceptConnec
 ---
 
 # AcceptConnectionProposal
-<a name="API_AcceptConnectionProposal"></a>
 
 Accepts a connection proposal which was generated at a supported partner's portal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeInstancePatchStatesForPatchGroup
-<a name="API_DescribeInstancePatchStatesForPatchGroup"></a>
 
 Retrieves the high-level patch state for the managed nodes in the specified patch group.
 

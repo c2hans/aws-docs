@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ResilienceHub::ResiliencyPolicy PolicyMap
-<a name="aws-properties-resiliencehub-resiliencypolicy-policymap"></a>
 
 The type of resiliency policy to be created, including the recovery time objective (RTO) and recovery point objective (RPO) in seconds.
 

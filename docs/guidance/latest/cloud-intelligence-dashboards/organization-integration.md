@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Organization (OU) integration
-<a name="organization-integration"></a>
 
 This content is DEPRECATED. Please use [Organizational Taxonomy Guide](add-org-taxonomy.md).
 

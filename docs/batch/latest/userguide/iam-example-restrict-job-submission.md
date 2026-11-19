@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/iam-example-restr
 ---
 
 # Resource: Restrict to job definition prefix on job submission
-<a name="iam-example-restrict-job-submission"></a>
 
 Use the following policy to submit jobs to any job queue with any job definition name that starts with {{JobDefA}}.
 

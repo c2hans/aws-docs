@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # ListInvestigationGroups
-<a name="API_ListInvestigationGroups"></a>
 
 Returns the ARN and name of each investigation group in the account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-
 ---
 
 # Give SageMaker AI Access to Resources in your Amazon VPC
-<a name="infrastructure-give-access"></a>
 
 SageMaker AI runs the following job types in an Amazon Virtual Private Cloud by default.
 + Processing

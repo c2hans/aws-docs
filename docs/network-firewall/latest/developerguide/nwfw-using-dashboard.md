@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/n
 ---
 
 # Working with the firewall monitoring dashboard
-<a name="nwfw-using-dashboard"></a>
 
 The firewall monitoring dashboard provides multiple options for viewing key metrics about your firewall. Review the guidance in this section to understand the dashboard's capabilities.
 

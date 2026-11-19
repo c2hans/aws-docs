@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Gra
 ---
 
 # GrantItem
-<a name="API_GrantItem"></a>
 
 A structure that defines a single grant and its configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Exp
 ---
 
 # DynamoDB condition expression CLI example
-<a name="Expressions.ConditionExpressions"></a>
 
 The following are some AWS Command Line Interface (AWS CLI) examples of using condition expressions. These examples are based on the `ProductCatalog` table, which was introduced in [Referring to item attributes when using expressions in DynamoDB](Expressions.Attributes.md). The partition key for this table is `Id`; there is no sort key. The following `PutItem` operation creates a sample `ProductCatalog` item that the examples refer to.
 

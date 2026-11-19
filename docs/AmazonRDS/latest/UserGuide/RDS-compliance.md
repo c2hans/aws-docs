@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS-complianc
 ---
 
 # Compliance validation for Amazon RDS
-<a name="RDS-compliance"></a>
 
 Third-party auditors assess the security and compliance of Amazon RDS as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others.
 

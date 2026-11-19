@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_EC2Ta
 ---
 
 # EC2TagSet
-<a name="API_EC2TagSet"></a>
 
 Information about groups of Amazon EC2 instance tags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/custom-even
 ---
 
 # custom-eventbus-policy-attached
-<a name="custom-eventbus-policy-attached"></a>
 
 Checks if Amazon EventBridge custom event buses have a resource-based policy attached. The rule is NON\_COMPLIANT if a custom event bus policy does not have an attached resource-based policy.
 

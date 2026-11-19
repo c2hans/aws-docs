@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DelegatedAdministrator
-<a name="API_DelegatedAdministrator"></a>
 
 Contains information about the delegated administrator.
 

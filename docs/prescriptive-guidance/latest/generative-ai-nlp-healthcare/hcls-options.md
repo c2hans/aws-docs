@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-
 ---
 
 # Generative AI and NLP approaches for healthcare and life sciences
-<a name="hcls-options"></a>
 
 Natural language processing (NLP) is a machine learning technology that gives computers the ability to interpret, manipulate, and comprehend human language. Healthcare and life science organizations have large volumes of data from patient records. They can use NLP software to automatically process this data. For example, they can combine NLP with generative AI to streamline medical coding, extract patient information, and summarize records.
 

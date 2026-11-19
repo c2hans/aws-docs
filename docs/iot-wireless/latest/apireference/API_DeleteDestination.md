@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Del
 ---
 
 # DeleteDestination
-<a name="API_DeleteDestination"></a>
 
 Deletes a destination.
 

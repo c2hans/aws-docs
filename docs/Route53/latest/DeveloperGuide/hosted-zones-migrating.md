@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zon
 ---
 
 # Migrating a hosted zone to a different AWS account
-<a name="hosted-zones-migrating"></a>
 
 When migrating a hosted zone to a different AWS account, follow these recommended steps.
 

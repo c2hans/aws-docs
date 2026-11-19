@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/aas-pr
 ---
 
 # How Application Auto Scaling predictive scaling works
-<a name="aas-predictive-scaling-how-it-works"></a>
 
 To use predictive scaling, create a predictive scaling policy that specifies the CloudWatch metric to monitor and analyze. You can use a predefined metric or a custom metric. For predictive scaling to start forecasting future values, this metric must have at least 24 hours of data.
 

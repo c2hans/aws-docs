@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-DeleteDynamoDbTableBackups`
-<a name="automation-aws-deletedynamodbtablebackups"></a>
 
  **Description**
 

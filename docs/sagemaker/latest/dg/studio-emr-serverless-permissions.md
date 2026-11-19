@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-emr-serverles
 ---
 
 # Set up the permissions to enable listing and launching Amazon EMR applications from SageMaker Studio
-<a name="studio-emr-serverless-permissions"></a>
 
 In this section, we detail the roles and permissions required to list and connect to EMR Serverless applications from SageMaker Studio, considering scenarios where Studio and the EMR Serverless applications are deployed in the same AWS account or across different accounts.
 

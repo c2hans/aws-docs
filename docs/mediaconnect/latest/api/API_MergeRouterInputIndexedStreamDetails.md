@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MergeRouterI
 ---
 
 # MergeRouterInputIndexedStreamDetails
-<a name="API_MergeRouterInputIndexedStreamDetails"></a>
 
 Configuration details for an indexed stream in a merge router input setup.
 

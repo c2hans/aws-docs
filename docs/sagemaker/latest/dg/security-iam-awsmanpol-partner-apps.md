@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS managed policies for Amazon SageMaker Partner AI Apps
-<a name="security-iam-awsmanpol-partner-apps"></a>
 
 These AWS managed policies add permissions required to use Amazon SageMaker Partner AI Apps. The policies are available in your AWS account and are used by execution roles created from the SageMaker AI console.
 

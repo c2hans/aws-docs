@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filter-u
 ---
 
 # Using a custom vocabulary filter
-<a name="vocabulary-filter-using"></a>
 
 Once your custom vocabulary filter is created, you can include it in your transcription requests; refer to the following sections for examples.
 

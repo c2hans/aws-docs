@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListN
 ---
 
 # ListNamespaces
-<a name="API_ListNamespaces"></a>
 
 Lists the namespaces for the specified AWS account. This operation doesn't list deleted namespaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/miro-connection-options.h
 ---
 
 # Miro connection options
-<a name="miro-connection-options"></a>
 
 The following are connection options for Miro:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Miro object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetLinks
-<a name="API_GetLinks"></a>
 
 Gets information about one or more links in a specified global network.
 

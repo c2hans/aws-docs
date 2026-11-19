@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-view-pro
 ---
 
 # View test reports for a build
-<a name="test-view-project-reports"></a>
 
 **To view test reports for a build**
 

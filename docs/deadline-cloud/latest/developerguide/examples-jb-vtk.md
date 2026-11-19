@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Run VTK visualization scripts on Deadline Cloud
-<a name="examples-jb-vtk"></a>
 
 The [vtk-latest](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vtk-latest) job bundle on the GitHub website runs VTK (Visualization Toolkit) Python scripts on Deadline Cloud. The bundle is generalizable for any VTK-based Python script that accepts command-line parameters for output path, width, and height, and saves visualization output to a specified location.
 

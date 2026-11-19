@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Register
 ---
 
 # RegisterMarketplaceModelEndpoint
-<a name="API_RegisterMarketplaceModelEndpoint"></a>
 
 Registers an existing Amazon SageMaker endpoint with Amazon Bedrock Marketplace, allowing it to be used with Amazon Bedrock APIs.
 

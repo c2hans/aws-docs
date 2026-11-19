@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # AssociateResourceResponseElement
-<a name="API_AssociateResourceResponseElement"></a>
 
 A resource association result for a percentage custom line item.
 

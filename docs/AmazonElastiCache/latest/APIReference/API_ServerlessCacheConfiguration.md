@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ServerlessCacheConfiguration
-<a name="API_ServerlessCacheConfiguration"></a>
 
 The configuration settings for a specific serverless cache.
 

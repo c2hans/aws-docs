@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioBedrockFlowServiceRolePolicy
-<a name="security-iam-awsmanpol-SageMakerStudioBedrockFlowServiceRolePolicy"></a>
 
 This policy allows Amazon Bedrock Flows to access Amazon Bedrock models and other resources attached to a flow in Amazon SageMaker Unified Studio.
 

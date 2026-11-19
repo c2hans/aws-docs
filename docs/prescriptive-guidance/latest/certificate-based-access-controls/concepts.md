@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate
 ---
 
 # Key concepts for using certificate-based access controls in AWS
-<a name="concepts"></a>
 
 Certificate-based access controls in AWS require understanding several interdependent authentication and authorization concepts. For example, the principle of least privilege determines the scope of permissions granted through certificate-based authentication, which directly affects AWS Identity and Access Management (IAM) role and policy design. Certificate-based authentication itself relies on digital certificate (X.509 or ML-DSA) validation against configured trust anchors, which define the cryptographic trust chain for certificate verification. The temporary security credentials generated through this process have specific lifecycle characteristics that impact session management and credential rotation strategies. Additionally, AWS Identity and Access Management Roles Anywhere implements a dual-layer permission model where both IAM role policies and profile configurations must authorize access. Without understanding how these concepts interact, implementations can result in authentication failures, over-privileged access, or security gaps in the certificate-validation chain. These concepts form the technical foundation required to correctly configure trust relationships, permission boundaries, and credential lifecycles in certificate-based AWS access control systems.
 

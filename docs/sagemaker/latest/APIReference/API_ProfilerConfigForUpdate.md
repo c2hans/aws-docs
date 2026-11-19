@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Profil
 ---
 
 # ProfilerConfigForUpdate
-<a name="API_ProfilerConfigForUpdate"></a>
 
 Configuration information for updating the Amazon SageMaker Debugger profile parameters, system and framework metrics configurations, and storage paths.
 

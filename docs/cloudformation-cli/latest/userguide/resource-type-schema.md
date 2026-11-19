@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Resource type schema
-<a name="resource-type-schema"></a>
 
 To be considered valid, your resource type's schema must adhere to the [Resource provider definition schema](https://github.com/aws-cloudformation/aws-cloudformation-rpdk/blob/master/src/rpdk/core/data/schema/provider.definition.schema.v1.json). This meta-schema provides a means of validating your resource specification during resource development.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Storage modules
-<a name="storage-modules"></a>
 
 Storage modules create the necessary resources to allow workstations to save and retrieve data from file systems in the post production environment. The following Storage modules are available in MCS after deployment:
 + FSx for Windows File Server module - Deploys a new Amazon FSx Windows Server file system and registers to the Microsoft Active Directory

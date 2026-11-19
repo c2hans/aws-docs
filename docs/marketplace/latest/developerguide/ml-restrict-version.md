@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/ml-res
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Restrict a version
-<a name="ml-restrict-version"></a>
 
  You can use the Catalog API to restrict a version of your machine learning product in AWS Marketplace. When restricted, new buyers cannot access that version. Existing subscribers retain access to restricted versions. AWS Marketplace guidelines require continued support for existing buyers for 90 days after restriction.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Co
 ---
 
 # ContextKeySelector
-<a name="API_ContextKeySelector"></a>
 
 An object that contains information types to be included in CloudTrail enriched events.
 

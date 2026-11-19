@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Avoid COLLECT(DISTINCT())
-<a name="best-practices-content-11"></a>
 
 **Note**
 As of engine version [ 1.4.7.0](engine-releases-1.4.7.0.md), this recommended rewrite is no longer needed.

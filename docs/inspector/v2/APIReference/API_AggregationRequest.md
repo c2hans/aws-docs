@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Aggregatio
 ---
 
 # AggregationRequest
-<a name="API_AggregationRequest"></a>
 
 Contains details about an aggregation request.
 

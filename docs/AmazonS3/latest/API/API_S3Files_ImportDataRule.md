@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_ImportDa
 ---
 
 # ImportDataRule
-<a name="API_S3Files_ImportDataRule"></a>
 
 Specifies a rule that controls how data is imported from S3 into the file system.
 

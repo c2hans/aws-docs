@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Keyspa
 ---
 
 # KeyspaceSummary
-<a name="API_KeyspaceSummary"></a>
 
 Represents the properties of a keyspace.
 

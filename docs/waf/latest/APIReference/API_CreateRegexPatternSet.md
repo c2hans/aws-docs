@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CreateRegexP
 ---
 
 # CreateRegexPatternSet
-<a name="API_CreateRegexPatternSet"></a>
 
 Creates a [RegexPatternSet](API_RegexPatternSet.md), which you reference in a [RegexPatternSetReferenceStatement](API_RegexPatternSetReferenceStatement.md), to have AWS WAF inspect a web request component for the specified patterns.
 

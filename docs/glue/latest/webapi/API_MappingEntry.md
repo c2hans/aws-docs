@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MappingEntry.html
 ---
 
 # MappingEntry
-<a name="API_MappingEntry"></a>
 
 Defines a mapping.
 

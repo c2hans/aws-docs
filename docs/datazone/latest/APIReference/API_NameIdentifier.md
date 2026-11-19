@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_NameIde
 ---
 
 # NameIdentifier
-<a name="API_NameIdentifier"></a>
 
 The name identifier.
 

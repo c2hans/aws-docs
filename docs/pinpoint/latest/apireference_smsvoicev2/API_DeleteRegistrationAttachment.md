@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteRegistrationAttachment
-<a name="API_DeleteRegistrationAttachment"></a>
 
 Permanently delete the specified registration attachment.
 

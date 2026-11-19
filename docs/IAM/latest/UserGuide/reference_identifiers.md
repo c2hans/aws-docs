@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifie
 ---
 
 # IAM identifiers
-<a name="reference_identifiers"></a>
 
 IAM uses a few different identifiers for users, IAM groups, roles, policies, and server certificates. This section describes the identifiers and when you use each.
 

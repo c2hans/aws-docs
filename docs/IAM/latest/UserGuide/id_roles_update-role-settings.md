@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_update-rol
 ---
 
 # Update settings for a role
-<a name="id_roles_update-role-settings"></a>
 
 Use the following procedures to update a role's description or change the maximum session duration for a role.
 

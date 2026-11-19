@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # AutoScalingGroupEstimatedMonthlySavings
-<a name="API_AutoScalingGroupEstimatedMonthlySavings"></a>
 
  An object that describes the estimated monthly savings possible by adopting Compute Optimizer’s Auto Scaling group recommendations. This is based on the Savings Plans and Reserved Instances discounts.
 

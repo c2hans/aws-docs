@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/security-iam-system-tab
 ---
 
 # Configure access to system tables
-<a name="security-iam-system-tables"></a>
 
 System tables add the `system-table` resource type, with the ARN `arn:{partition}:athena:{region}:{account}:system-table/{tableName}`. They also add five actions: `athena:CreateSystemTableConfiguration`, `athena:UpdateSystemTableConfiguration`, `athena:DeleteSystemTableConfiguration`, `athena:GetSystemTableConfiguration`, and `athena:ListSystemTableStatuses`. Grant the permissions to manage system tables separately from the permissions to query them. For least-privilege example policies, see [IAM permissions](athena-system-tables.md#athena-system-tables-iam-permissions).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Update
 ---
 
 # UpdateInvestigationState
-<a name="API_UpdateInvestigationState"></a>
 
 Updates the state of an investigation.
 

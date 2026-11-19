@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResolvedTargets
-<a name="API_ResolvedTargets"></a>
 
 Information about targets that resolved during the Automation execution.
 

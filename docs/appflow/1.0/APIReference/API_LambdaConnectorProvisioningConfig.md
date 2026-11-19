@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_LambdaConne
 ---
 
 # LambdaConnectorProvisioningConfig
-<a name="API_LambdaConnectorProvisioningConfig"></a>
 
 Contains information about the configuration of the lambda which is being registered as the connector.
 

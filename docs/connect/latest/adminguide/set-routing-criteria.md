@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-routing-cr
 ---
 
 # Flow block in Connect Customer: Set routing criteria
-<a name="set-routing-criteria"></a>
 
 This topic defines the flow block for routing a contact in any channel to the appropriate queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataB
 ---
 
 # DataBarsOptions
-<a name="API_DataBarsOptions"></a>
 
 The options for data bars.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergTableUpdat
 ---
 
 # IcebergTableUpdate
-<a name="API_IcebergTableUpdate"></a>
 
 Defines a complete set of updates to be applied to an Iceberg table, including schema changes, partitioning modifications, sort order adjustments, location updates, and property changes.
 

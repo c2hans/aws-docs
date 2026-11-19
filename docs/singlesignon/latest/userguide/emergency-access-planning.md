@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/emergency-
 ---
 
 # How to plan your access model
-<a name="emergency-access-planning"></a>
 
 Before you configure emergency access, create a plan for how the access model will work. Use the following process to create this plan.
 

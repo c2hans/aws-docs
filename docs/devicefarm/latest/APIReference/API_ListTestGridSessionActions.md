@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListT
 ---
 
 # ListTestGridSessionActions
-<a name="API_ListTestGridSessionActions"></a>
 
 Returns a list of the actions taken in a [TestGridSession](API_TestGridSession.md).
 

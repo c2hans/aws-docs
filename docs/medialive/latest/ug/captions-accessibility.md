@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/captions-accessibili
 ---
 
 # Including accessibility data in captions in MediaLive
-<a name="captions-accessibility"></a>
 
 In the captions in CMAF Ingest, HLS, MediaPackage, or Microsoft Smooth output groups, you can include accessibility data. This data describes the type of accessibility that the encode represents. For example, a captions track might provide a written translation (into another language) of the speech in the content. Accessibility data is also known as accessibility signaling.
 

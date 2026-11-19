@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateWorkspac
 ---
 
 # CreateWorkspaceImage
-<a name="API_CreateWorkspaceImage"></a>
 
 Creates a new WorkSpace image from an existing WorkSpace.
 

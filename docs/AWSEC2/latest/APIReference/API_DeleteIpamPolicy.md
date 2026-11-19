@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpa
 ---
 
 # DeleteIpamPolicy
-<a name="API_DeleteIpamPolicy"></a>
 
 Deletes an IPAM policy.
 

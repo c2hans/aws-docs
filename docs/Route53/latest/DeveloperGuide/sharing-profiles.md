@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/sharing-pr
 ---
 
 # Working with shared Route 53 Profiles
-<a name="sharing-profiles"></a>
 
 You can share a Profile with other accounts by:
 + Granting read-only permissions, which means the other account can associate the Profile to their VPCs. In this case all the DNS resources and configurations will be in effect on the associated VPCs.

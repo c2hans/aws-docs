@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-ope
 ---
 
 # Red Hat OpenShift on AWS implementation strategies
-<a name="introduction"></a>
 
 *Yogesh Bhatia and Francis Nelson, Amazon Web Services*
 

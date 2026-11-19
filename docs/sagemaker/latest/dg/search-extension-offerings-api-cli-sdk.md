@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/search-extension-off
 ---
 
 # Search for extension offerings
-<a name="search-extension-offerings-api-cli-sdk"></a>
 
 Use the [`SearchTrainingPlanOfferings`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SearchTrainingPlanOfferings.html) API with the `TrainingPlanArn` parameter to find available extension offerings for your training plan.
 

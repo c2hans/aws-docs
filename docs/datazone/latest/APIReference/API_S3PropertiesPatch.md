@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_S3Prope
 ---
 
 # S3PropertiesPatch
-<a name="API_S3PropertiesPatch"></a>
 
 The Amazon S3 properties patch of a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ArcCo
 ---
 
 # ArcConfiguration
-<a name="API_ArcConfiguration"></a>
 
 The arc configuration of a `GaugeChartVisual`.
 

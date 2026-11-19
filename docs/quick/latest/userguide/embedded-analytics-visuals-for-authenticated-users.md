@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-analytic
 ---
 
 # Embedding AWS Quick Sight visuals for registered users
-<a name="embedded-analytics-visuals-for-authenticated-users"></a>
 
 |  |
 | --- |

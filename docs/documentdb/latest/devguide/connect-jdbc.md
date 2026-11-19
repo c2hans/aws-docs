@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/connect-jdbc.
 ---
 
 # Connect using the Amazon DocumentDB JDBC driver
-<a name="connect-jdbc"></a>
 
 The JDBC driver for Amazon DocumentDB provides an SQL-relational interface for developers and enables connectivity from BI tools such as Tableau and DbVisualizer.
 

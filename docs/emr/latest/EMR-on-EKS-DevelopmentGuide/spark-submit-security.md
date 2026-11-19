@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Verify Spark driver service account security requirements for spark-submit
-<a name="spark-submit-security"></a>
 
 The Spark driver pod uses a Kubernetes service account to access the Kubernetes API server to create and watch executor pods. Driver service account must have appropriate permissions to list, create, edit, patch and delete pods in your cluster. You can verify that you can list these resources by running the following command:
 

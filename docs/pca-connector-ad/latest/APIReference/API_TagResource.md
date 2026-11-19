@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds one or more tags to your resource.
 

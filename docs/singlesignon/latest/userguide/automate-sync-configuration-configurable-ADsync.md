@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/automate-s
 ---
 
 # Automate your sync configuration for configurable AD sync
-<a name="automate-sync-configuration-configurable-ADsync"></a>
 
 To ensure that your automated workflow works as expected with configurable AD sync, we recommend that you perform the following steps to automate your sync configuration.
 

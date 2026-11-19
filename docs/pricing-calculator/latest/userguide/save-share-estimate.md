@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/save
 ---
 
 # Sharing your estimate
-<a name="save-share-estimate"></a>
 
 You can create a unique, public link for each estimate that you create. Use this link to share the estimate with stakeholders or access the estimate again at a later time. Estimates are saved to AWS public servers.
 

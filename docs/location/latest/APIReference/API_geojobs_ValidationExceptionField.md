@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # ValidationExceptionField
-<a name="API_geojobs_ValidationExceptionField"></a>
 
 The input fails to satisfy the constraints specified by the Amazon Location Service.
 

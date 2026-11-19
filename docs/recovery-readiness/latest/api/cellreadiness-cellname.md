@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/cellreadin
 ---
 
 # GetCellReadinessSummary
-<a name="cellreadiness-cellname"></a>
 
 ## URI
 <a name="cellreadiness-cellname-url"></a>

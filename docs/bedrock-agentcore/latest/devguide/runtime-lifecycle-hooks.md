@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Configure lifecycle hooks for AgentCore Runtime
-<a name="runtime-lifecycle-hooks"></a>
 
 A lifecycle hook is an endpoint in your container that AgentCore Runtime calls at a specific point in your agent runtime’s lifecycle. Use hooks to run your own code at those points, for example to prepare your agent before sessions start. You configure hooks with the `hooksConfiguration` field of [CreateAgentRuntime](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_CreateAgentRuntime.html) and [UpdateAgentRuntime](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_UpdateAgentRuntime.html), grouped by the lifecycle phase that they belong to.
 

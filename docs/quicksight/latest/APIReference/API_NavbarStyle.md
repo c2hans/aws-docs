@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Navba
 ---
 
 # NavbarStyle
-<a name="API_NavbarStyle"></a>
 
 The navigation bar style.
 

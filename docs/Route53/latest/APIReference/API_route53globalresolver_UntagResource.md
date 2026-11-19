@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # UntagResource
-<a name="API_route53globalresolver_UntagResource"></a>
 
 Removes tags from a Route 53 Global Resolver resource.
 

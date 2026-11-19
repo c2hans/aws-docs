@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/setup-win
 ---
 
 # Building the AWS SDK for C\+\+ on Windows
-<a name="setup-windows"></a>
 
 To set up the AWS SDK for C\+\+, you can either build the SDK yourself directly from the source or download the libraries using a package manager.
 

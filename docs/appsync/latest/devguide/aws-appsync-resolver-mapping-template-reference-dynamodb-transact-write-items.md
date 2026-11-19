@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # TransactWriteItems
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-transact-write-items"></a>
 
 The `TransactWriteItems` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a `TransactWriteItems` request to DynamoDB to write multiple items, potentially to multiple tables. For this request template, you must specify the following:
 + The destination table name of each request item

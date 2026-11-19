@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Get
 ---
 
 # GetInterpolatedAssetPropertyValues
-<a name="API_GetInterpolatedAssetPropertyValues"></a>
 
 Get interpolated values for an asset property for a specified time interval, during a period of time. If your time series is missing data points during the specified time interval, you can use interpolation to estimate the missing data.
 

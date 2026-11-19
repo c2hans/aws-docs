@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/export-history.html
 ---
 
 # View export history
-<a name="export-history"></a>
 
 Select the **Export history** tab to view the files exported in the last 7 days, including their status, progress, and the task’s start and end time.
 

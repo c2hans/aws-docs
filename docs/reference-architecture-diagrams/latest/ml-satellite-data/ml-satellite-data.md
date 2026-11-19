@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Run Machine Learning Algorithms with Satellite Data
-<a name="ml-satellite-data"></a>
 
 Publication date: **May 24, 2021 ([Diagram history](#diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DeleteRule
-<a name="API_DeleteRule"></a>
 
 Deletes the specified rule.
 

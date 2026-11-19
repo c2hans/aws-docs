@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/medical-c
 ---
 
 # Medical coding
-<a name="medical-coding"></a>
 
 Every patient encounter must be translated into standardized codes before the provider is paid. A coder reads the clinical note and identifies each diagnosis and each procedure or service. The coder then assigns International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM) codes to the diagnoses and Current Procedural Terminology (CPT) codes, with any required modifiers, to the procedures and services. For office and telehealth visits, the coder sets the evaluation and management (E/M) level from the documented medical decision making (MDM). Finally, the coder confirms that the diagnoses support medical necessity for every billed service. The work is skilled, manual, and repeated for every visit. Coding backlogs delay claim submission, and coding errors lead to denials, rework, and compliance exposure.
 

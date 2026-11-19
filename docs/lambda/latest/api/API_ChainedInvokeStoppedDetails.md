@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ChainedInvokeStopp
 ---
 
 # ChainedInvokeStoppedDetails
-<a name="API_ChainedInvokeStoppedDetails"></a>
 
 Details about a chained invocation that was stopped.
 

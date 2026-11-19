@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Route 53 template snippets
-<a name="quickref-route53"></a>
 
 **Topics**
 + [Amazon Route 53 resource record set using hosted zone name or ID](#scenario-route53-recordset-by-host)

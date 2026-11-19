@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_Filters.html
 ---
 
 # Filters
-<a name="API_Filters"></a>
 
 This structure can be used in the [ListCertificates](API_ListCertificates.md) action to filter the output of the certificate list.
 

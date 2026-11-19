@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-tags.html
 ---
 
 # **eb tags**
-<a name="eb3-tags"></a>
 
 ## Description
 <a name="eb3-tagsdescription"></a>

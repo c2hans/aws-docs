@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-conditions-acme
 ---
 
 # Condition keys for ACME certificate requests
-<a name="acm-conditions-acme"></a>
 
 Certificate issuance and revocation through an ACME endpoint are authorized as standard ACM actions. This authorization uses the IAM role attached to the ACME client's external account binding. The ACM condition keys therefore apply to ACME requests as well, and you can use them in the role's permissions policy, in an IAM policy, in a Service Control Policy (SCP), or in a VPC endpoint policy.
 

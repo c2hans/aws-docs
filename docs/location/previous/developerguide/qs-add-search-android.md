@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-add-
 ---
 
 # Add Amazon Location reverse geocoding search to your application
-<a name="qs-add-search-android"></a>
 
 You will now add reverse geocoding search to your application, where you find the items at a location. To simplify using an Android app, we will search the center of the screen. To find a new location, move the map to where you want to search. We will place a marker at the centre of the map to show where we are searching.
 

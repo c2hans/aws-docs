@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyContentSecurityPolicy
-<a name="API_ResponseHeadersPolicyContentSecurityPolicy"></a>
 
 The policy directives and their values that CloudFront includes as values for the `Content-Security-Policy` HTTP response header.
 

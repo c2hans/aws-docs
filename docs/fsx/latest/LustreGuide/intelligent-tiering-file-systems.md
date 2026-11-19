@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/intelligent-tieri
 ---
 
 # Performance characteristics of Intelligent-Tiering storage class
-<a name="intelligent-tiering-file-systems"></a>
 
 The FSx for Lustre Intelligent-Tiering storage class offers elastic, cost-optimized storage for workloads that traditionally run on HDD-based or mixed HDD-/SDD-based high-performance file storage file systems. File systems using the Intelligent-Tiering storage class utilize fully elastic, intelligently tiered, regional storage which automatically grows and shrinks to fit your workload as it changes. For information on how it tiers data, see [How the Intelligent-Tiering storage class tiers data](using-fsx-lustre.md#how-INT-tiering-works).
 

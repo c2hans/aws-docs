@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_R
 ---
 
 # ResourceInfo
-<a name="API_ResourceInfo"></a>
 
 A structure containing information about an AWS Lake Formation resource.
 

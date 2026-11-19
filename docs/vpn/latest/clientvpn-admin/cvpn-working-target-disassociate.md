@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Disassociate a target network from an AWS Client VPN endpoint
-<a name="cvpn-working-target-disassociate"></a>
 
 When you disassociate a target network, any routes that were manually added to the Client VPN endpoint's route table are deleted, as well as the route that was automatically created when the target network association was made (the local route of the VPC). If you disassociate all target networks from a Client VPN endpoint, clients can no longer establish a VPN connection.
 

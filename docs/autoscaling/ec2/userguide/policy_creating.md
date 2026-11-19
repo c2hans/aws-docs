@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/policy_creatin
 ---
 
 # Create a target tracking scaling policy
-<a name="policy_creating"></a>
 
 To create a target tracking scaling policy for your Auto Scaling group, use one of the following methods.
 

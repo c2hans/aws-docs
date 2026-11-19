@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 ---
 
 # Amazon CodeCatalyst for JetBrains
-<a name="codecatalyst-service"></a>
 
 ## What is Amazon CodeCatalyst?
 <a name="codecatalyst-intro"></a>

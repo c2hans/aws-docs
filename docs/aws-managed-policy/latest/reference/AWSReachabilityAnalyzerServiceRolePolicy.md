@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSReachabilityAnalyzerServiceRolePolicy
-<a name="AWSReachabilityAnalyzerServiceRolePolicy"></a>
 
 **Description**: Allows VPC Reachability Analyzer to access AWS resources and integrate with AWS Organizations on your behalf.
 

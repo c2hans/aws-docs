@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeTrafficDistributionGroup
-<a name="API_DescribeTrafficDistributionGroup"></a>
 
 Gets details and status of a traffic distribution group.
 

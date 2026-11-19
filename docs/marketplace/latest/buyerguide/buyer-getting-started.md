@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-gett
 ---
 
 # Getting started as a buyer using AWS Marketplace
-<a name="buyer-getting-started"></a>
 
 The following topics outline getting started with software products as an AWS Marketplace buyer.
 

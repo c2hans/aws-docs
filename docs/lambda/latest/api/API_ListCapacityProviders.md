@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListCapacityProvid
 ---
 
 # ListCapacityProviders
-<a name="API_ListCapacityProviders"></a>
 
 Returns a list of capacity providers in your account.
 

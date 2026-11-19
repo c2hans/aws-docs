@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/start
 ---
 
 # Starting the CloudWatch agent
-<a name="start-CloudWatch-Agent-on-premise-SSM-onprem"></a>
 
 You can start the CloudWatch agent using either Systems Manager Run Command or the command line.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Cost monitoring
-<a name="monitoring-cost"></a>
 
 Innovation Sandbox applies AWS Organizations account tags to sandbox accounts throughout the lease lifecycle and activates them as cost allocation tags. This allows you to analyze sandbox costs by lease, user, cost report group, lease template, and account state.
 

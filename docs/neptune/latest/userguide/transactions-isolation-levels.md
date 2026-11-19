@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/transactions-is
 ---
 
 # Definition of Isolation Levels
-<a name="transactions-isolation-levels"></a>
 
 The "I" in `ACID` stands for *isolation*. The degree of isolation of a transaction determines how much or little other concurrent transactions can affect the data that it operates on.
 

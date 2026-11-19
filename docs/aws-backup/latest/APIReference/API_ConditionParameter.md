@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Condi
 ---
 
 # ConditionParameter
-<a name="API_ConditionParameter"></a>
 
 Includes information about tags you define to assign tagged resources to a backup plan.
 

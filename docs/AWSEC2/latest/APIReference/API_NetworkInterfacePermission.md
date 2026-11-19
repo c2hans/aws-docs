@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkIn
 ---
 
 # NetworkInterfacePermission
-<a name="API_NetworkInterfacePermission"></a>
 
 Describes a permission for a network interface.
 

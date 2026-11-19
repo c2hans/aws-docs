@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/im-co
 ---
 
 # Viewing the confusion matrix for a model
-<a name="im-confusion-matrix"></a>
 
 A confusion matrix allows you to see the labels that your model confuses with other labels in your model. By using a confusion matrix, you can focus your improvements to the model.
 

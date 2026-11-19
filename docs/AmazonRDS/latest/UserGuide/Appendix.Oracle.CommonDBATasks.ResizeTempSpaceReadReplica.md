@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Resizing tablespaces, data files, and tempfiles in RDS for Oracle
-<a name="Appendix.Oracle.CommonDBATasks.ResizeTempSpaceReadReplica"></a>
 
 By default, Oracle tablespaces are created with auto-extend turned on and no maximum size. Because of these default settings, tablespaces can sometimes grow too large. We recommend that you specify an appropriate maximum size on permanent and temporary tablespaces, and that you carefully monitor space usage.
 

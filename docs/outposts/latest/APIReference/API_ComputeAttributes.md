@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Compute
 ---
 
 # ComputeAttributes
-<a name="API_ComputeAttributes"></a>
 
  Information about compute hardware assets.
 

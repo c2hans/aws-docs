@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html
 ---
 
 # Decrypt
-<a name="API_Decrypt"></a>
 
 Decrypts ciphertext that was encrypted by a KMS key using any of the following operations:
 +  [Encrypt](API_Encrypt.md)
@@ -199,11 +198,11 @@ HTTP Status Code: 400
 HTTP Status Code: 400
 
  ** IncorrectKeyException **
-The request was rejected because the specified KMS key cannot decrypt the data. The `KeyId` in a [Decrypt](#API_Decrypt) request and the `SourceKeyId` in a [ReEncrypt](API_ReEncrypt.md) request must identify the same KMS key that was used to encrypt the ciphertext.
+The request was rejected because the specified KMS key cannot decrypt the data. The `KeyId` in a [Decrypt](API_Decrypt.md) request and the `SourceKeyId` in a [ReEncrypt](API_ReEncrypt.md) request must identify the same KMS key that was used to encrypt the ciphertext.
 HTTP Status Code: 400
 
  ** InvalidCiphertextException **
-From the [Decrypt](#API_Decrypt) or [ReEncrypt](API_ReEncrypt.md) operation, the request was rejected because the specified ciphertext, or additional authenticated data incorporated into the ciphertext, such as the encryption context, is corrupted, missing, or otherwise invalid.
+From the [Decrypt](API_Decrypt.md) or [ReEncrypt](API_ReEncrypt.md) operation, the request was rejected because the specified ciphertext, or additional authenticated data incorporated into the ciphertext, such as the encryption context, is corrupted, missing, or otherwise invalid.
 From the [ImportKeyMaterial](API_ImportKeyMaterial.md) operation, the request was rejected because AWS KMS could not decrypt the encrypted (wrapped) key material.
 From the [Decapsulate](API_Decapsulate.md) operation, the request was rejected because the length of the `SharedSecretCiphertextBlob` is inconsistent with the specified ML-KEM key spec.
 HTTP Status Code: 400

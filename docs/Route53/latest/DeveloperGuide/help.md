@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/help.html
 ---
 
 # .help
-<a name="help"></a>
 
 Used as a general extension, but ideal for websites that provide online help and information.
 

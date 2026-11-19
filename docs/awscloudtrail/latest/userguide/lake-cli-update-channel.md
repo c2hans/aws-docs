@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-cli-
 ---
 
 # Update a channel with the AWS CLI
-<a name="lake-cli-update-channel"></a>
 
 This section describes how you can use the AWS CLI to update a channel for a CloudTrail Lake integration. You can run the `update-channel` command to update the name of the channel or to specify a different destination event data store. You cannot update the source of a channel.
 

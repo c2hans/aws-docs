@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Named
 ---
 
 # NamedEntitySort
-<a name="API_NamedEntitySort"></a>
 
 A structure that represents a sort for a named entity.
 

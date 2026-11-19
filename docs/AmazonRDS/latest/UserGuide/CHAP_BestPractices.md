@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPrac
 ---
 
 # Best practices for Amazon RDS
-<a name="CHAP_BestPractices"></a>
 
 Learn best practices for working with Amazon RDS. As new best practices are identified, we will keep this section up to date.
 

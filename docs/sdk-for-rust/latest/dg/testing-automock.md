@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/testing-automock.
 ---
 
 # Automatically generate mocks using `mockall` in the AWS SDK for Rust
-<a name="testing-automock"></a>
 
 The AWS SDK for Rust provides multiple approaches for testing your code that interacts with AWS services. You can automatically generate the majority of the mock implementations that your tests need by using the popular `[automock](https://docs.rs/mockall/latest/mockall/attr.automock.html)` from the `[mockall](https://docs.rs/mockall/latest/mockall)` crate .
 

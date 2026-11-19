@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Resource
 ---
 
 # ResourceSet
-<a name="API_ResourceSet"></a>
 
 A set of resources to include in a policy.
 

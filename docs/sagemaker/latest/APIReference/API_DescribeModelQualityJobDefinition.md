@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeModelQualityJobDefinition
-<a name="API_DescribeModelQualityJobDefinition"></a>
 
 Returns a description of a model quality job definition.
 

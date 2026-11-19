@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Step 5: Tenant onboarding
-<a name="deploy-step5-tenant-onboarding"></a>
 
 ## Seed demo data (staging and initial production)
 <a name="seed-demo-data-staging-and-initial-production"></a>

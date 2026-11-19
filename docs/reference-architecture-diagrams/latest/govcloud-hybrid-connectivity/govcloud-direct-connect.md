@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/g
 ---
 
 # Using AWS Direct Connect
-<a name="govcloud-direct-connect"></a>
 
 Publication date: **November 22, 2024 ([Diagram history](#gdx-diagram-history))**
 

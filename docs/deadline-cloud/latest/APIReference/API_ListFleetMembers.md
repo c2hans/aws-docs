@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListFleetMembers
-<a name="API_ListFleetMembers"></a>
 
 Lists fleet members.
 

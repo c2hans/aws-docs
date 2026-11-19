@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Execution parameters
-<a name="execution-parameters"></a>
 
  Execution parameters control how the transformation and enrichment jobs are orchestrated.
 

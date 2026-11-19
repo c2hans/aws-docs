@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RtmpPushSour
 ---
 
 # RtmpPushSourceSettings
-<a name="API_RtmpPushSourceSettings"></a>
 
 The settings for the RTMP (Real-Time Messaging Protocol) source.
 

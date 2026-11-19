@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # LiveConnectorRTMPConfiguration
-<a name="API_media-pipelines-chime_LiveConnectorRTMPConfiguration"></a>
 
 The media pipeline's RTMP configuration object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/r
 ---
 
 # Run/Debug Configurations dialog box (local function settings)
-<a name="run-debug-configurations-dialog-local"></a>
 
 This dialog box is displayed whenever you update settings for the *local* version of an AWS Lambda function.
 

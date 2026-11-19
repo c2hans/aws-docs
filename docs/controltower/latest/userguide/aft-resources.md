@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-resour
 ---
 
 # Resource considerations for AWS Control Tower Account Factory for Terraform
-<a name="aft-resources"></a>
 
 When you set up your landing zone using AWS Control Tower Account Factory for Terraform, several types of AWS resources are created within your AWS accounts.
 

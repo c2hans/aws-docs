@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_StartSch
 ---
 
 # StartSchemaCreation
-<a name="API_StartSchemaCreation"></a>
 
 Adds a new schema to your GraphQL API.
 

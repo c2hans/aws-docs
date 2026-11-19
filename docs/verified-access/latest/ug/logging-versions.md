@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/logging-versio
 ---
 
 # Verified Access logging versions
-<a name="logging-versions"></a>
 
 By default, the Verified Access logging system uses Open Cybersecurity Schema Framework (OCSF) version 0.1. For sample logs that use version 0.1 see [OCSF version 0.1 log examples for Verified Access](ocsfv01-examples.md).
 

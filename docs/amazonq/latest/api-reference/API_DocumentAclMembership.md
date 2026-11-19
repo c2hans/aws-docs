@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentAclMembership
-<a name="API_DocumentAclMembership"></a>
 
 Represents membership rules in the document's ACL, defining how users or groups are associated with access permissions.
 

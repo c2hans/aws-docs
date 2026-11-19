@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/edit-i
 ---
 
 # Editing an ID namespace
-<a name="edit-id-namespaces"></a>
 
 You can only edit an ID namespace before you associate it to an ID mapping workflow. After you've associated an ID namespace to an ID mapping workflow, you can't edit it.
 

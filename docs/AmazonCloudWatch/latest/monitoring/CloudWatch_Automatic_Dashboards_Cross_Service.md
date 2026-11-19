@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Viewing the cross-service CloudWatch dashboard
-<a name="CloudWatch_Automatic_Dashboards_Cross_Service"></a>
 
  You can switch to the Cross-service dashboard screen and interact with dashboards for all of the AWS services that you're using. The CloudWatch Console displays your dashboards in alphabetical order and displays one or two key metrics from each service.
 

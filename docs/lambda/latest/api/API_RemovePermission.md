@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_RemovePermission.h
 ---
 
 # RemovePermission
-<a name="API_RemovePermission"></a>
 
 Revokes function-use permission from an AWS service or another AWS account. You can get the ID of the statement from the output of [GetPolicy](API_GetPolicy.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Component configuration sections
-<a name="component-config-sections"></a>
 
 A component configuration includes several major sections. Sections in a component configuration can be listed in any order.
 + **alarmMetrics (optional)**

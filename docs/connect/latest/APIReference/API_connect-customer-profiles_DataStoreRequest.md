@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DataStoreRequest
-<a name="API_connect-customer-profiles_DataStoreRequest"></a>
 
 The data store request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/range_queries.
 ---
 
 # Estimate the capacity consumption of range queries in Amazon Keyspaces
-<a name="range_queries"></a>
 
  To look at the read capacity consumption of a range query, we use the following example table which is using on-demand capacity mode.
 

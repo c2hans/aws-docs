@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Code
-<a name="API_Code"></a>
 
 The source code configuration that specifies the location and details of the code to be executed.
 

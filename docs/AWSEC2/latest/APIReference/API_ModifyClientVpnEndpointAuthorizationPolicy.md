@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyCli
 ---
 
 # ModifyClientVpnEndpointAuthorizationPolicy
-<a name="API_ModifyClientVpnEndpointAuthorizationPolicy"></a>
 
 Creates or updates the authorization policy for a Client VPN endpoint. A Client VPN endpoint can have one authorization policy. If a policy already exists for the endpoint, the values that you specify replace the corresponding values in the existing policy, and values that you do not specify remain unchanged.
 

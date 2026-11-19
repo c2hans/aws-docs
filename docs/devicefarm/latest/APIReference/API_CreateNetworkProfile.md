@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateNetworkProfile
-<a name="API_CreateNetworkProfile"></a>
 
 Creates a network profile.
 

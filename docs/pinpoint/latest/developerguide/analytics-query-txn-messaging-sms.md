@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/analytics
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Query Amazon Pinpoint data for transactional SMS messages
-<a name="analytics-query-txn-messaging-sms"></a>
 
 To query the data for transactional SMS messages that were sent for a project, you use the [Application Metrics](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-kpis-daterange-kpi-name.html) API and specify values for the following required parameters:
 + **application-id** – The project ID, which is the unique identifier for the project. In Amazon Pinpoint, the terms *project* and *application* have the same meaning.

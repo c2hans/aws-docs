@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelM
 ---
 
 # ModelMetrics
-<a name="API_ModelMetrics"></a>
 
 Contains metrics captured from a model.
 

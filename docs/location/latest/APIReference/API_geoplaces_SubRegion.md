@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # SubRegion
-<a name="API_geoplaces_SubRegion"></a>
 
 The sub-region.
 

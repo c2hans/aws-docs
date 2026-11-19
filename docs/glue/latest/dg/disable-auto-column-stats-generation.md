@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/disable-auto-column-stats
 ---
 
 # Disabling catalog-level column statistics generation
-<a name="disable-auto-column-stats-generation"></a>
 
  You can disable automatic column statistics generation for new tables using the AWS Lake Formation console, the `glue:UpdateCatalogSettings` API, or the `glue:DeleteColumnStatisticsTaskSettings` API.
 

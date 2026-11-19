@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobValidationStrategy
-<a name="API_AssetBundleExportJobValidationStrategy"></a>
 
 The option to relax the validation that is required to export each asset. When `StrictModeForAllResource` is set to `false`, validation is skipped for specific UI errors.
 

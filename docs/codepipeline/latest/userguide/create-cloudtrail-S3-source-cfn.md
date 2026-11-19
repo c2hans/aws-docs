@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/create-clo
 ---
 
 # Create an EventBridge rule for an Amazon S3 source (CloudFormation template)
-<a name="create-cloudtrail-S3-source-cfn"></a>
 
 To use CloudFormation to create a rule, update your template as shown here.<a name="proc-cfn-event-s3-createrule"></a>
 

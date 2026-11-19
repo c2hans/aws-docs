@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/search-engi
 ---
 
 # Optimizing your AWS Marketplace products for search
-<a name="search-engine-optimization"></a>
 
 As an AWS Marketplace seller, you can optimize your products for search so that buyers can more easily find them. Search is a critical tool in the buyer’s journey that enables customers to find the best product to meet their unique needs. For AWS Marketplace customers, searches happen in two primary locations: search engines (for example, Google or Bing) and the search function in AWS Marketplace. This topic provides information on how to optimize your listing for both locations.
 

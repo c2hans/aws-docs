@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/encryption-
 ---
 
 # Encryption at rest
-<a name="encryption-at-rest"></a>
 
 AWS IoT Greengrass stores your data:
 + [Data at rest in the AWS Cloud](#data-at-rest-cloud). This data is encrypted.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DestinationConfigurations
-<a name="API_DataExports_DestinationConfigurations"></a>
 
 The destinations used for data exports.
 

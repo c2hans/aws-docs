@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTo
 ---
 
 # RouteTollPriceValueRange
-<a name="API_RouteTollPriceValueRange"></a>
 
 Price range with a minimum and maximum value, if a range.
 

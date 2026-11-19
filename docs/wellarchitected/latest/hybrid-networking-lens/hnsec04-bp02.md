@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC04-BP02 Implement routing controls for network segments
-<a name="hnsec04-bp02"></a>
 
  Implementing routing controls for network segments involves strategically managing traffic flow between different parts of your network infrastructure. This includes setting up route tables to direct traffic based on security policies. These controls should enforce the principle of least privilege, ensuring network components can only communicate with authorized segments.
 

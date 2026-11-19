@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/copy-model-copy
 ---
 
 # Copy a model to a Region
-<a name="copy-model-copy"></a>
 
 After you [fulfill the prerequisites](copy-model-prereq.md), you can copy a model. You can copy a model that you own into a different Region, or a model that has been shared with you into a Region so that you can use it. Choose the tab for your preferred method, and then follow the steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/release-notes.
 ---
 
 # Release notes
-<a name="release-notes"></a>
 
 ## Version summary
 <a name="version-summary"></a>

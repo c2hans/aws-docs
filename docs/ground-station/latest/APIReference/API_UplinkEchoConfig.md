@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 ---
 
 # UplinkEchoConfig
-<a name="API_UplinkEchoConfig"></a>
 
 Information about an uplink echo `Config`.
 

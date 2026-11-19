@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to commonly raised questions about using Amazon RDS Proxy.
 

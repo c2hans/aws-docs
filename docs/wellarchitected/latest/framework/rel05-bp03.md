@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel05-b
 ---
 
 # REL05-BP03 Control and limit retry calls
-<a name="rel05-bp03"></a>
 
  Retries recover from transient failures, but uncontrolled retries turn a small impairment into a large one. Retry requests at progressively longer intervals using exponential backoff, randomize those intervals with jitter, and cap the total number of attempts. Controlled retries release resources and give a struggling system time to recover.
 

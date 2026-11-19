@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Create a knowledge base by connecting to a data source in Amazon Bedrock Knowledge Bases
-<a name="knowledge-base-create"></a>
 
 **Important**
 For optimized retrieval accuracy and a managed experience, we recommend [Amazon Bedrock Managed Knowledge Base](kb-build-managed.md).

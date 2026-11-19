@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_KeyPh
 ---
 
 # KeyPhrasesDetectionJobProperties
-<a name="API_KeyPhrasesDetectionJobProperties"></a>
 
 Provides information about a key phrases detection job.
 

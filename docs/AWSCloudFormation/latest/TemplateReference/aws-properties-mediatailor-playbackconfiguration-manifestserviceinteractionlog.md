@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::PlaybackConfiguration ManifestServiceInteractionLog
-<a name="aws-properties-mediatailor-playbackconfiguration-manifestserviceinteractionlog"></a>
 
 Settings for customizing what events are included in logs for interactions with the origin server.
 

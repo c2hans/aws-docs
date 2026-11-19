@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/about-slg-types.htm
 ---
 
 # Supported configuration types and parameters
-<a name="about-slg-types"></a>
 
 Resource Groups supports using the following configuration types. Each configuration type has a set of parameters that are valid for that type.
 

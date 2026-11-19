@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkMailMessageFlowFullAccess
-<a name="AmazonWorkMailMessageFlowFullAccess"></a>
 
 **Description**: Full access to the WorkMail Message Flow APIs
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/security_iam_reso
 ---
 
 # AWS Elemental MediaConnect resource-based policy examples
-<a name="security_iam_resource-based-policy-examples"></a>
 
 To access the AWS Elemental MediaConnect console, you must have a minimum set of permissions that allows you to list and view details about the MediaConnect resources in your AWS account. The IAM policies in this section show examples of policies that allow specific actions on resources in AWS Elemental MediaConnect.
 

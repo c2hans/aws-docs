@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  With AWS Outposts rack, you can build, manage, and scale highly available on-premises applications using familiar AWS tools and services like Amazon EC2, Amazon EBS, Amazon S3 on Outposts, Amazon ECS, Amazon EKS, and Amazon RDS. Workloads can run locally, serve clients, access applications and systems in your on-premises networks, and access the full set of services in the AWS Region. Outposts rack is ideal for workloads that require low latency access to on-premises systems, local data processing, data residency, and migration of applications with local system interdependencies.
 

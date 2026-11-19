@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # GpuDescription
-<a name="structures-GpuDescription"></a>
 
 Object specifying client GPU characteristics.
 

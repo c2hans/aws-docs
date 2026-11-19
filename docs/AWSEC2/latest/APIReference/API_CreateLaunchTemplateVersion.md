@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLau
 ---
 
 # CreateLaunchTemplateVersion
-<a name="API_CreateLaunchTemplateVersion"></a>
 
 Creates a new version of a launch template. You must specify an existing launch template, either by name or ID. You can determine whether the new version inherits parameters from a source version, and add or overwrite parameters as needed.
 

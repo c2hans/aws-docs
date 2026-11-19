@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Ingest pipelines in Amazon OpenSearch Serverless
-<a name="serverless-ingest-pipelines"></a>
 
 An ingest pipeline is an ordered sequence of *processors* that transforms and enriches documents before they are indexed. For example, a pipeline can rename a field, normalize the case of a string, parse a timestamp, or generate vector embeddings for semantic search.
 

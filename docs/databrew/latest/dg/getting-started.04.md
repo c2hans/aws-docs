@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/getting-started.04.ht
 ---
 
 # Step 4: Review your DataBrew resources
-<a name="getting-started.04"></a>
 
 Now that you worked with a sample project, review the DataBrew resources you created so far.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/polling-kafka-queue.htm
 ---
 
 # Polling Kafka topics in Queue mode
-<a name="polling-kafka-queue"></a>
 
 Queue mode is a consumption mode that uses share groups, which became available in Apache Kafka 4.0 (the Kafka Queue Poller requires version 4.2 or later). With Queue mode, you can process Kafka topic messages in an unordered, high-throughput way using share groups. Unlike traditional Kafka consumer groups that assign partitions exclusively to consumers, share groups let multiple consumers read from the same partitions concurrently. This is similar to how Amazon SQS processes messages from a queue.
 

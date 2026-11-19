@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-manage
 ---
 
 # Workforces
-<a name="sms-workforce-management"></a>
 
 A *workforce* is the group of workers that you have selected to label your dataset. You can choose a vendor-managed workforce or create your own private workforce to label or review your dataset. Whichever workforce type you choose, Amazon SageMaker AI takes care of sending tasks to workers.
 

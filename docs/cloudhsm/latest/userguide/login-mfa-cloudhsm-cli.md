@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/login-mfa-clou
 ---
 
 # Log in users with MFA enabled for CloudHSM CLI
-<a name="login-mfa-cloudhsm-cli"></a>
 
 Follow these steps to log in AWS CloudHSM users with multi-factor authentication (MFA) enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/best-practi
 ---
 
 # Best practices for building AMIs for use with AWS Marketplace
-<a name="best-practices-for-building-your-amis"></a>
 
 This topic provides best practices and references to help you build Amazon Machine Images (AMIs) for use with AWS Marketplace. AMIs built and submitted to AWS Marketplace must adhere to all AWS Marketplace product policies. For more information, see the following sections.
 

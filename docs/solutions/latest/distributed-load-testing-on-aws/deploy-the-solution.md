@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
 This solution offers three web console hosting options. The backend architecture and Amazon Cognito authentication model are identical across all options.
 

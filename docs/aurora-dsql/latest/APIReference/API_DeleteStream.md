@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Dele
 ---
 
 # DeleteStream
-<a name="API_DeleteStream"></a>
 
 Deletes a stream from a cluster.
 

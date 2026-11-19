@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Service request management in Accelerate
-<a name="service-request-management"></a>
 
 **Topics**
 + [When to use a service request for Accelerate](when-to-use-sr.md)

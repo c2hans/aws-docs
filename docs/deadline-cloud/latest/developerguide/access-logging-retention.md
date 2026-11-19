@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/acc
 ---
 
 # Access, logging, and data retention in Deadline Cloud
-<a name="access-logging-retention"></a>
 
 Many of the security controls for a Deadline Cloud farm sit outside Deadline Cloud: in your identity provider (IdP), in your AWS account, or with AWS itself. The following sections describe how authentication, sessions, logging, data retention, and AWS access work for a farm, name the layer that owns each control, and link to where you configure it. Use the sections you need, whether you're answering a security questionnaire or looking for where a setting lives.
 

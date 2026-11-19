@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iotsitewise-ru
 ---
 
 # AWS IoT SiteWise
-<a name="iotsitewise-rule-action"></a>
 
 The AWS IoT SiteWise (`iotSiteWise`) action sends data from an MQTT message to asset properties in AWS IoT SiteWise.
 

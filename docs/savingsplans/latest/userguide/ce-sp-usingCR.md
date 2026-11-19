@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/ce-sp-usin
 ---
 
 # Using the Savings Plans coverage report
-<a name="ce-sp-usingCR"></a>
 
 The Savings Plans coverage report shows what percentage of your applicable AWS usage costs are being covered by your Savings Plans during your selected time period.
 

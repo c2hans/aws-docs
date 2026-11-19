@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Central Logging and Analytics in Hybrid Environments
-<a name="central-logging-analytics-hybrid"></a>
 
 Publication date: **July 21, 2020 ([Diagram history](#diagram-history))**
 

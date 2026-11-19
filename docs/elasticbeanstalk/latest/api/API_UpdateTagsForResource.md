@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateTa
 ---
 
 # UpdateTagsForResource
-<a name="API_UpdateTagsForResource"></a>
 
 Update the list of tags applied to an AWS Elastic Beanstalk resource. Two lists can be passed: `TagsToAdd` for tags to add or update, and `TagsToRemove`.
 

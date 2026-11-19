@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-run-
 ---
 
 # Running hybrid jobs during a reservation
-<a name="braket-run-hybrid-jobs-with-reservation"></a>
 
 Once you have a Python function to run as a hybrid job, you can run the hybrid job in a reservation by passing the `reservation_arn` keyword argument. All the tasks within the hybrid job use the reservation ARN. Importantly, the hybrid job with `reservation_arn` *only spins up the classical compute once your reservation starts*.
 

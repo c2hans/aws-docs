@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backing-up-vm
 ---
 
 # Backing up virtual machines
-<a name="backing-up-vms"></a>
 
 After [Adding a hypervisor](working-with-hypervisors.md#add-hypervisor), Backup gateway automatically lists your virtual machines. You can view your virtual machines by choosing either **Hypervisors** or **Virtual machines** in the left navigation pane.
 + Choose **Hypervisors** to view only the virtual machines managed by a specific hypervisor. With this view, you can work with one virtual machine at a time.

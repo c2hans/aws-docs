@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/provider-
 ---
 
 # Getting started as a provider in AWS Data Exchange
-<a name="provider-getting-started"></a>
 
 The following topics describe the complete process of becoming a data product provider on AWS Data Exchange using the AWS Data Exchange console. The process has the following steps:
 

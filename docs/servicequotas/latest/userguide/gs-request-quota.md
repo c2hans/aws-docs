@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-reques
 ---
 
 # Viewing service quotas
-<a name="gs-request-quota"></a>
 
 **Note**
 If you are searching for service quotas for a specific AWS service, review [Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html) in the *AWS General Reference guide*.

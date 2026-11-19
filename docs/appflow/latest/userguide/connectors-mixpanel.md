@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixp
 ---
 
 # Mixpanel connector for Amazon AppFlow
-<a name="connectors-mixpanel"></a>
 
 Mixpanel is a service that provides analytics about user engagement in web and mobile applications. If you use Mixpanel, you can also use Amazon AppFlow to transfer your data to certain AWS services or other supported applications.
 

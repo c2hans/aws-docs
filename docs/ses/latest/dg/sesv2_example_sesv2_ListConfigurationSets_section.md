@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sesv2_example_sesv2_ListCo
 ---
 
 # Use `ListConfigurationSets` with an AWS SDK
-<a name="sesv2_example_sesv2_ListConfigurationSets_section"></a>
 
 The following code example shows how to use `ListConfigurationSets`.
 

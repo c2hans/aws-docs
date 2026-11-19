@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Supported AWS Regions
-<a name="supported-aws-regions"></a>
 
 Spatial Data Management on AWS is available in the following AWS Regions:
 

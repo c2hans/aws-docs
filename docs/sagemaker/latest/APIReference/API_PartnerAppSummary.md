@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Partne
 ---
 
 # PartnerAppSummary
-<a name="API_PartnerAppSummary"></a>
 
 A subset of information related to a SageMaker Partner AI App. This information is used as part of the `ListPartnerApps` API response.
 

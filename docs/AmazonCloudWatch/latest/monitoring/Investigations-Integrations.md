@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Integrations with other systems
-<a name="Investigations-Integrations"></a>
 
 **Topics**
 + [Integration with AWS Systems Manager Automation](#Investigations-Integrations-SSM)

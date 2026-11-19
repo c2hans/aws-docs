@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_PutResour
 ---
 
 # PutResourcePermission
-<a name="API_PutResourcePermission"></a>
 
 Adds permissions to the target database.
 

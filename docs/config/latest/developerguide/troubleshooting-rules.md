@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/troubleshoo
 ---
 
 # Troubleshooting for AWS Config rules
-<a name="troubleshooting-rules"></a>
 
 Check the following issues to troubleshoot if you cannot delete an AWS Config rule or receive an error similair to the following: "An error has occurred with AWS Config."
 

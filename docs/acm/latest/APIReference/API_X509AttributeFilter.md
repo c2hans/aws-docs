@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_X509Attribut
 ---
 
 # X509AttributeFilter
-<a name="API_X509AttributeFilter"></a>
 
 Filters certificates by X.509 attributes.
 

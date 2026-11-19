@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddUserToGro
 ---
 
 # AddUserToGroup
-<a name="API_AddUserToGroup"></a>
 
 Adds the specified user to the specified group.
 

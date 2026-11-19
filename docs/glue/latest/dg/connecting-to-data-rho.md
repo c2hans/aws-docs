@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-rho.ht
 ---
 
 # Connecting to Rho in AWS Glue Studio
-<a name="connecting-to-data-rho"></a>
 
 Rho is a business-banking / corporate-card / spend-management platform. Because you are a Rho user, you can connect AWS Glue to your Rho account. You can then use Rho as a data source in your AWS Glue ETL jobs to transfer data between Rho and AWS services or other supported applications.
 

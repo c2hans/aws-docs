@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awso
 ---
 
 # Data retrieval APIs for AWS OpsWorks
-<a name="awsopsworks"></a>
 
 AWS OpsWorks provides the following APIs for data retrieval.
 

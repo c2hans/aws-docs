@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Confluenc
 ---
 
 # ConfluenceBlogConfiguration
-<a name="API_ConfluenceBlogConfiguration"></a>
 
 Configuration of blog settings for the Confluence data source. Blogs are always indexed unless filtered from the index by the `ExclusionPatterns` or `InclusionPatterns` fields in the `ConfluenceConfiguration` object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributions
-<a name="API_ListDistributions"></a>
 
 List CloudFront distributions.
 

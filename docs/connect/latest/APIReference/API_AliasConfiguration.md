@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AliasCon
 ---
 
 # AliasConfiguration
-<a name="API_AliasConfiguration"></a>
 
 Configuration information of an email alias.
 

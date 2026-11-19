@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-v
 ---
 
 # Step 2: Set up a phone pool
-<a name="nx-voice-get-set-up-pool"></a>
 
 A phone pool is a container for the origination identities you send from. It groups identities that share the same settings, maps each message to an appropriate identity for the destination country, and fails over to another identity in the pool if one is unavailable. Using a pool is the recommended way to send, because you can send through a pool in every send API request, such as `SendTextMessage`, `SendMediaMessage`, `SendVoiceMessage`, and `SendRcsMessage`, and you can add or change origination identities later without changing your sending code.
 

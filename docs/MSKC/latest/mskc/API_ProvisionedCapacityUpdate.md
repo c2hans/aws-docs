@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ProvisionedCapacity
 ---
 
 # ProvisionedCapacityUpdate
-<a name="API_ProvisionedCapacityUpdate"></a>
 
 An update to a connector's fixed capacity.
 

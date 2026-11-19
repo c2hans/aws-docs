@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Managing dependencies with runtime\_env
-<a name="sagemaker-hyperpod-ray-runtime-env"></a>
 
 Ray `runtime_env` installs pip packages and ships a working directory to the cluster at run time. You add a dependency without rebuilding a container image, which keeps interactive development fast.
 

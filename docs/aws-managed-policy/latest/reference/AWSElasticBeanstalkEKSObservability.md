@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkEKSObservability
-<a name="AWSElasticBeanstalkEKSObservability"></a>
 
 **Description**: Observability permissions for Elastic Beanstalk environments running in Elastic Kubernetes Service cluster
 

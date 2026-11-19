@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/manifest-hls-examp
 ---
 
 # HLS manifest examples
-<a name="manifest-hls-example"></a>
 
 The following sections provide examples of HLS origin manifests and personalized manifests. Understanding these examples can help you configure and troubleshoot your MediaTailor workflows.
 

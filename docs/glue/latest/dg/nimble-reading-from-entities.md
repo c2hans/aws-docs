@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/nimble-reading-from-entit
 ---
 
 # Reading from Nimble entities
-<a name="nimble-reading-from-entities"></a>
 
 **Prerequisites**
 

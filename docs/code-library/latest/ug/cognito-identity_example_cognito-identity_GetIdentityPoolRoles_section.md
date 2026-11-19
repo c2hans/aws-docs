@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cognito-identity_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetIdentityPoolRoles` with a CLI
-<a name="cognito-identity_example_cognito-identity_GetIdentityPoolRoles_section"></a>
 
 The following code examples show how to use `GetIdentityPoolRoles`.
 

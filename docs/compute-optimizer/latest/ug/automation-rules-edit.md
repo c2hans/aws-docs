@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-r
 ---
 
 # Editing automation rule order
-<a name="automation-rules-edit"></a>
 
 Rule order sets which rule applies when an action matches more than one rule. Compute Optimizer uses the active rule that has the lowest order value. The lowest value is the top priority. It wins no matter when the rule is set to run. You can change the order at any time. You can change only one rule at a time. For organization rules, you can also set the rule group. The group sets whether a rule applies before or after member account rules.
 

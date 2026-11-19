@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Improving query performance for Aurora PostgreSQL with Aurora Optimized Reads
-<a name="AuroraPostgreSQL.optimized.reads"></a>
 
 You can achieve faster query processing for Aurora PostgreSQL with Aurora Optimized Reads. An Aurora PostgreSQL DB instance that uses Aurora Optimized Reads delivers up to 8x improved query latency and up to 30% cost savings for applications with large datasets, that exceed the memory capacity of a DB instance.
 

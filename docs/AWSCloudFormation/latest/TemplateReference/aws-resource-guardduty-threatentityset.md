@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GuardDuty::ThreatEntitySet
-<a name="aws-resource-guardduty-threatentityset"></a>
 
 The `AWS::GuardDuty::ThreatEntitySet` resource helps you create a list of known malicious threat entities in your AWS environment. Once you activate this list, GuardDuty will use the entries in this list as an additional source of threat detection and generate findings when there is an activity associated with these known malicious threat entities. GuardDuty continues to monitor independently of this custom threat entity set.
 

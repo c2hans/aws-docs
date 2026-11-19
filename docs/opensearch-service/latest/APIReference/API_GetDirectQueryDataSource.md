@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetDirectQueryDataSource
-<a name="API_GetDirectQueryDataSource"></a>
 
  Returns detailed configuration information for a specific direct query data source in Amazon OpenSearch Service.
 

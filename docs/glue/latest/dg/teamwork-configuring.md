@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/teamwork-configuring.html
 ---
 
 # Configuring Teamwork
-<a name="teamwork-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Teamwork, you must meet the following requirements:
 

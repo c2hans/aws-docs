@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ExportDiffieHellmanTr31KeyBlock
-<a name="API_ExportDiffieHellmanTr31KeyBlock"></a>
 
 Key derivation parameter information for key material export using asymmetric ECDH key exchange method.
 

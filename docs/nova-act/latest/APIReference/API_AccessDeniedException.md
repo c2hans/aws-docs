@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_AccessD
 ---
 
 # AccessDeniedException
-<a name="API_AccessDeniedException"></a>
 
 You don't have sufficient permissions to perform this action.
 

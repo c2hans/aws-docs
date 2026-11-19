@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Subscriptio
 ---
 
 # Account-level subscription filters
-<a name="SubscriptionFilters-AccountLevel"></a>
 
 **Important**
 There is a risk of causing an infinite recursive loop with subscription filters that can lead to a large increase in ingestion billing if not addressed. To mitigate this risk, we recommend that you use selection criteria in your account-level subscription filters to exclude log groups that ingest log data from resources that are part of the subscription delivery workflow. For more information on this problem and determining which log groups to exclude, see [Log recursion prevention](Subscriptions-recursion-prevention.md).

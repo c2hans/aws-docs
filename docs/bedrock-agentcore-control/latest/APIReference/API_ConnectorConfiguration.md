@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConnectorConfiguration
-<a name="API_ConnectorConfiguration"></a>
 
 Configuration for a single tool within a connector.
 

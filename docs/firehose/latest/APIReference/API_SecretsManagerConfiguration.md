@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Secrets
 ---
 
 # SecretsManagerConfiguration
-<a name="API_SecretsManagerConfiguration"></a>
 
 The structure that defines how Firehose accesses the secret.
 

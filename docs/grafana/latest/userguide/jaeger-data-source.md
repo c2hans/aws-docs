@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/jaeger-data-sou
 ---
 
 # Connect to a Jaeger data source
-<a name="jaeger-data-source"></a>
 
  The Jaeger data source provides open-source, end-to-end distributed tracing.
 

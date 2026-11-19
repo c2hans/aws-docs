@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Unsuccess
 ---
 
 # UnsuccessfulInstanceCreditSpecificationItem
-<a name="API_UnsuccessfulInstanceCreditSpecificationItem"></a>
 
 Describes the burstable performance instance whose credit option for CPU usage was not modified.
 

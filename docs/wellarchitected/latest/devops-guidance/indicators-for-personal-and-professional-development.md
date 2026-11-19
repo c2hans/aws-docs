@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for personal and professional development
-<a name="indicators-for-personal-and-professional-development"></a>
 
 Nurture a culture of innovation and adaptability by providing continuous growth opportunities.
 

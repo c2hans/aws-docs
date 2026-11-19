@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-email-suppression-
 ---
 
 # Managing tenant suppression list entries
-<a name="sending-email-suppression-list-tenant-level-manage"></a>
 
 You manage entries on a tenant's suppression list by using the same Amazon Simple Email Service (SES) API operations that you use for the account-level suppression list. To target a specific tenant's list, include the `--tenant-name` parameter in each request. When you omit this parameter, the operations target the account-level list. Use the AWS CLI to add, check, remove, and list suppressed addresses for a specific tenant.
 

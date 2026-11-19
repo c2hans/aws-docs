@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AnnotationError.h
 ---
 
 # AnnotationError
-<a name="API_AnnotationError"></a>
 
 A failed annotation.
 

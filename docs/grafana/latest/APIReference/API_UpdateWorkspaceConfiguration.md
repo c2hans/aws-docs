@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_UpdateWo
 ---
 
 # UpdateWorkspaceConfiguration
-<a name="API_UpdateWorkspaceConfiguration"></a>
 
 Updates the configuration string for the given workspace
 

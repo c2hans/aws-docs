@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-encrypt
 ---
 
 # Encryption at rest
-<a name="sd-encryption"></a>
 
 AWS IoT SiteWise encrypts all Scenario Discovery session data at rest. By default, AWS IoT SiteWise uses an AWS owned key to encrypt your data at no additional charge and with no administrative overhead. You can also choose to encrypt session data with a customer managed key for full control and auditability of the encryption key that protects your resources.
 

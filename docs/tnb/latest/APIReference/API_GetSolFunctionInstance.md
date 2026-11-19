@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolFuncti
 ---
 
 # GetSolFunctionInstance
-<a name="API_GetSolFunctionInstance"></a>
 
 Gets the details of a network function instance, including the instantiation state and metadata from the function package descriptor in the network function package.
 

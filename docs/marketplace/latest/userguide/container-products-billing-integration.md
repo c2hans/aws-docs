@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-p
 ---
 
 # Container product billing, metering, and licensing integrations
-<a name="container-products-billing-integration"></a>
 
 AWS Marketplace integrates with other AWS services to provide both metering and contract-based pricing for your container product. For container-based products with usage pricing, you can use the [AWS Marketplace Metering Service](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/Welcome.html) for both checking entitlement to use your product and metering usage for billing. For container-based products with contract pricing, you can use the AWS License Manager to associate licenses with your product. The following sections provide more information about hourly and custom metering with AWS Marketplace Metering Service and contract pricing with AWS License Manager.
 

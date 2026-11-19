@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/ml-behavior
 ---
 
 # IAM behaviors for Clean Rooms ML Custom Models
-<a name="ml-behaviors-byom"></a>
 
 ## Cross-account jobs
 <a name="ml-behaviors-byom-cross-account-jobs"></a>

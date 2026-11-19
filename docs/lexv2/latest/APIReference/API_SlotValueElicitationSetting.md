@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotValueE
 ---
 
 # SlotValueElicitationSetting
-<a name="API_SlotValueElicitationSetting"></a>
 
 Specifies the elicitation setting details eliciting a slot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/object2vec-hyperpara
 ---
 
 # Object2Vec Hyperparameters
-<a name="object2vec-hyperparameters"></a>
 
 In the `CreateTrainingJob` request, you specify the training algorithm. You can also specify algorithm-specific hyperparameters as string-to-string maps. The following table lists the hyperparameters for the Object2Vec training algorithm.
 

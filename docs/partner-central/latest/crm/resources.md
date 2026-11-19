@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/resources.htm
 ---
 
 # Integration resources
-<a name="resources"></a>
 
 AWS provides the following resources to help you create a custom integration.
 

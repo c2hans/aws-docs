@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ServerSid
 ---
 
 # ServerSideEncryptionConfiguration
-<a name="API_ServerSideEncryptionConfiguration"></a>
 
 Provides the identifier of the AWS KMS key used to encrypt data indexed by Amazon Kendra. Amazon Kendra doesn't support asymmetric keys.
 

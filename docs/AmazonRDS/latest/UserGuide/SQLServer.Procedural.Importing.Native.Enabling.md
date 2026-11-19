@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Pro
 ---
 
 # Setting up for native backup and restore
-<a name="SQLServer.Procedural.Importing.Native.Enabling"></a>
 
 To set up for native backup and restore, you need three components:
 

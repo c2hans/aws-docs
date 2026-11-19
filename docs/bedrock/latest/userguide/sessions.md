@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/sessions.html
 ---
 
 # Store and retrieve conversation history and context with session management APIs
-<a name="sessions"></a>
 
 **Note**
 The session management APIs are in preview and are subject to change.

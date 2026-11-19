@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::StreamingDistribution S3Origin
-<a name="aws-properties-cloudfront-streamingdistribution-s3origin"></a>
 
 A complex type that contains information about the Amazon S3 bucket from which you want CloudFront to get your media files for distribution.
 

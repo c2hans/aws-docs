@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # ExtraParam
-<a name="API_domains_ExtraParam"></a>
 
 ExtraParam includes the following elements.
 

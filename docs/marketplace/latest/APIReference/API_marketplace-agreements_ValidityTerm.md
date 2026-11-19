@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ValidityTerm
-<a name="API_marketplace-agreements_ValidityTerm"></a>
 
 Defines the conditions that will keep an agreement created from this offer valid.
 
@@ -14,19 +13,19 @@ Defines the conditions that will keep an agreement created from this offer valid
 In the following list, the required parameters are described first.
 
  ** agreementDuration **   <a name="AWSMarketplaceService-Type-marketplace-agreements_ValidityTerm-agreementDuration"></a>
-Defines the duration that the agreement remains active. If `AgreementStartDate` isn’t provided, the agreement duration is relative to the agreement signature time. The duration is represented in the ISO\_8601 format.
+Defines the duration that the agreement remains active. If `AgreementStartDate` isn't provided, the agreement duration is relative to the agreement signature time. The duration is represented in the ISO\_8601 format.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `(.)+`
 Required: No
 
  ** agreementEndDate **   <a name="AWSMarketplaceService-Type-marketplace-agreements_ValidityTerm-agreementEndDate"></a>
-Defines the date when the agreement ends. The agreement ends at 23:59:59.999 UTC on the date provided. If `AgreementEndDate` isn’t provided, the agreement end date is determined by the validity of individual terms.
+Defines the date when the agreement ends. The agreement ends at 23:59:59.999 UTC on the date provided. If `AgreementEndDate` isn't provided, the agreement end date is determined by the validity of individual terms.
 Type: Timestamp
 Required: No
 
  ** agreementStartDate **   <a name="AWSMarketplaceService-Type-marketplace-agreements_ValidityTerm-agreementStartDate"></a>
-Defines the date when agreement starts. The agreement starts at 00:00:00.000 UTC on the date provided. If `AgreementStartDate` isn’t provided, the agreement start date is determined based on agreement signature time.
+Defines the date when agreement starts. The agreement starts at 00:00:00.000 UTC on the date provided. If `AgreementStartDate` isn't provided, the agreement start date is determined based on agreement signature time.
 Type: Timestamp
 Required: No
 

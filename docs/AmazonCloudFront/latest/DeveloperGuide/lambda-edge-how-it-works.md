@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # Get started with Lambda@Edge functions (console)
-<a name="lambda-edge-how-it-works"></a>
 
 With Lambda@Edge, you can use CloudFront triggers to invoke a Lambda function. When you associate a CloudFront distribution with a Lambda function, CloudFront [intercepts requests and responses](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html) at CloudFront edge locations and runs the function. Lambda functions can improve security or customize information close to your viewers to improve performance.
 

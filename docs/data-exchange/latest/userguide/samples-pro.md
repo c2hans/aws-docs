@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/samples-p
 ---
 
 # Sample data in AWS Data Exchange
-<a name="samples-pro"></a>
 
 A *sample* is a small part of the data in your product on AWS Data Exchange that is intended to show what the entire data set is like.
 

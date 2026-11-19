@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # ListDomains
-<a name="SDB_API_ListDomains"></a>
 
 ## Description
 <a name="SDB_API_ListDomains_Description"></a>

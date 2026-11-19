@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Descriptors
-<a name="API_Descriptors"></a>
 
 Contains descriptor-type-specific configurations for a registry record. Only the descriptor matching the record's `descriptorType` should be populated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_DateFi
 ---
 
 # DateFilter
-<a name="API_DateFilter"></a>
 
 Contains details on the time range used to filter data.
 

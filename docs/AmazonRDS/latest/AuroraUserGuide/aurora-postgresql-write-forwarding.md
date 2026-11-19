@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Local write forwarding in Aurora PostgreSQL
-<a name="aurora-postgresql-write-forwarding"></a>
 
  *Local (in-cluster) write forwarding* allows your applications to issue read/write transactions directly on an Aurora Replica. The write commands are then forwarded to the writer DB instance to be committed. You can use local write forwarding for your applications that have occasional writes and require *read-after-write consistency*, which is the ability to read the latest write in a transaction.
 

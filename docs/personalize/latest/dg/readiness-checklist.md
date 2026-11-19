@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/readiness-checklis
 ---
 
 # Readiness checklist
-<a name="readiness-checklist"></a>
 
 This checklist provides lists of Amazon Personalize features, requirements, and data guidance. It can help you plan, or you can use it as a reference as you create resources in Amazon Personalize.
 

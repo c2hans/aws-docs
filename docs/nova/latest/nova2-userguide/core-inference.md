@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/core-inferen
 ---
 
 # Core inference
-<a name="core-inference"></a>
 
 Inference is the process of sending a request to a Amazon Nova model and receiving a generated response. Amazon Nova models support inferencing through two API options:
 + **Converse API** ([Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html), [ConverseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ConverseStream.html)): Provides a consistent interface across different models, making it easier to switch between models or build applications that work with multiple models. Recommended for most use cases.

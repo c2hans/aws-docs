@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Crea
 ---
 
 # CreateAsset
-<a name="API_CreateAsset"></a>
 
 Creates a new asset in the specified agent space
 

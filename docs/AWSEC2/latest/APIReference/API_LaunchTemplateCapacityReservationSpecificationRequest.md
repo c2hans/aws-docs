@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateCapacityReservationSpecificationRequest
-<a name="API_LaunchTemplateCapacityReservationSpecificationRequest"></a>
 
 Describes an instance's Capacity Reservation targeting option. You can specify only one option at a time. Use the `CapacityReservationPreference` parameter to configure the instance to run in On-Demand capacity or to run in any `open` Capacity Reservation that has matching attributes (instance type, platform, Availability Zone). Use the `CapacityReservationTarget` parameter to explicitly target a specific Capacity Reservation or a Capacity Reservation group.
 

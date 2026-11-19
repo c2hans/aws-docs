@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-key-pair.
 ---
 
 # Delete your key pair
-<a name="delete-key-pair"></a>
 
 You can delete a key pair, which removes the public key that is stored in Amazon EC2. Deleting a key pair does not delete the matching private key.
 

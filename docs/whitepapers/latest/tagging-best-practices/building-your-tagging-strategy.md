@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Building your tagging strategy
-<a name="building-your-tagging-strategy"></a>
 
  As with many practices in operations, implementing a tagging strategy is *a process of iteration and improvement*. Start small with your immediate priority and grow the tagging schema as you need to.
 

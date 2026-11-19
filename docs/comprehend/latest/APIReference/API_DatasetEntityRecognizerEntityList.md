@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Datas
 ---
 
 # DatasetEntityRecognizerEntityList
-<a name="API_DatasetEntityRecognizerEntityList"></a>
 
 Describes the dataset entity list for an entity recognizer model.
 

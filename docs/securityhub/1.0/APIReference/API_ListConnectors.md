@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListCon
 ---
 
 # ListConnectors
-<a name="API_ListConnectors"></a>
 
 Lists the CSPM connectors and their metadata for the calling account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Inventory in Security Hub
-<a name="securityhub-v2-inventory"></a>
 
 Security Hub maintains an inventory of your cloud resources, the software installed on your compute resources, and the managed and self-hosted AI assets in your environment. Use the inventory to see which resources Security Hub monitors, find the resources that a software package or a finding affects, and prioritize security work by resource criticality. In the Security Hub console, the **Inventory** section contains the following pages.
 + **Resources** – The resources in your AWS accounts and in other cloud providers that you connect to Security Hub, with the findings on each resource and its criticality. For more information, see [Resources in Security Hub](resources-adv.md).

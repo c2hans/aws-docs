@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_ImportApiKeys.
 ---
 
 # ImportApiKeys
-<a name="API_ImportApiKeys"></a>
 
 Import API keys from an external source, such as a CSV-formatted file.
 

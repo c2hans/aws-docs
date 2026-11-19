@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Sample App Mesh workload for Amazon ECS clusters
-<a name="ContainerInsights-Prometheus-Sample-Workloads-ECS-appmesh"></a>
 
 To collect metrics from a sample Prometheus workload for Amazon ECS, you must be running Container Insights in the cluster. For information about installing Container Insights, see [Amazon ECS](deploy-container-insights-ECS.md).
 

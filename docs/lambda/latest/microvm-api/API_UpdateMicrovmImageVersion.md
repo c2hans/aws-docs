@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_UpdateMicr
 ---
 
 # UpdateMicrovmImageVersion
-<a name="API_UpdateMicrovmImageVersion"></a>
 
 Updates the status of a specific MicroVM image version.
 

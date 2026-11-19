@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListAgentVersions
-<a name="API_agent_ListAgentVersions"></a>
 
 Lists the versions of an agent and information about each version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/fips-encryp
 ---
 
 # Configure FedRAMP authorization or DoD SRG compliance for WorkSpaces Pools
-<a name="fips-encryption-pools"></a>
 
 To comply with the [Federal Risk and Authorization Management Program (FedRAMP)](https://aws.amazon.com/compliance/fedramp/) or the [Department of Defense (DoD) Cloud Computing Security Requirements Guide (SRG)](https://aws.amazon.com/compliance/dod/), you must configure Amazon WorkSpaces Pools to use Federal Information Processing Standards (FIPS) endpoint encryption at the directory level. You must also use a US AWS Region that has FedRAMP authorization or is DoD SRG compliant.
 

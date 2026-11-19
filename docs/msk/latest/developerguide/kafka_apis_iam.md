@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/kafka_apis_iam
 ---
 
 # Authentication and authorization for Apache Kafka APIs
-<a name="kafka_apis_iam"></a>
 
 You can use IAM to authenticate clients and to allow or deny Apache Kafka actions. Alternatively, you can use TLS or SASL/SCRAM to authenticate clients, and Apache Kafka ACLs to allow or deny actions.
 

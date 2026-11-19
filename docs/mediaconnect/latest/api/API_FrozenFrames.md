@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FrozenFrames
 ---
 
 # FrozenFrames
-<a name="API_FrozenFrames"></a>
 
  Configures settings for the `FrozenFrames` metric.
 

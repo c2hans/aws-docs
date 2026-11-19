@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-privat
 ---
 
 # Private registry with AWS Secrets Manager sample for CodeBuild
-<a name="sample-private-registry"></a>
 
  This sample shows you how to use a Docker image that is stored in a private registry as your AWS CodeBuild runtime environment. The credentials for the private registry are stored in AWS Secrets Manager. Any private registry works with CodeBuild. This sample uses Docker Hub.
 

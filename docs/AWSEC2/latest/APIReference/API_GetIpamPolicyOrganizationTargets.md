@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPo
 ---
 
 # GetIpamPolicyOrganizationTargets
-<a name="API_GetIpamPolicyOrganizationTargets"></a>
 
 Gets the AWS Organizations targets for an IPAM policy.
 

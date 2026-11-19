@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-trouble
 ---
 
 # Troubleshoot table errors
-<a name="notebooks-spark-troubleshooting-tables"></a>
 
 Use the information in this section to troubleshoot Athena for Spark table errors.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListA
 ---
 
 # ListApplicationRevisions
-<a name="API_ListApplicationRevisions"></a>
 
 Lists information about revisions for an application.
 

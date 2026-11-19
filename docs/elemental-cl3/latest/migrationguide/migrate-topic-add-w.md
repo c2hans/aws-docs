@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Adding worker nodes
-<a name="migrate-topic-add-w"></a>
 
 **Topics**
 + [Step A: Add worker nodes to the cluster](#migrate-topic-add-w-cluster)

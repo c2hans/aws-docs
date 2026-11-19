@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Troubleshooting
-<a name="sagemaker-hyperpod-studio-troubleshoot"></a>
 
 The following section lists troubleshooting solutions for HyperPod in Studio.
 

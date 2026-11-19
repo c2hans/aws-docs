@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/pages-delete.
 ---
 
 # Deleting a page
-<a name="pages-delete"></a>
 
 Use the following procedure to delete a page from an application in App Studio.
 

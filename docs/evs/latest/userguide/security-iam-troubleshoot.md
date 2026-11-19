@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/security-iam-troubl
 ---
 
 # Troubleshoot Amazon EVS identity and access
-<a name="security-iam-troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Amazon Elastic VMware Service and IAM. For other problems, see [Troubleshooting](troubleshooting.md).
 

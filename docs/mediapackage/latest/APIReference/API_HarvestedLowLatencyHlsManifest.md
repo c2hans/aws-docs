@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Har
 ---
 
 # HarvestedLowLatencyHlsManifest
-<a name="API_HarvestedLowLatencyHlsManifest"></a>
 
 Information about a harvested Low-Latency HLS manifest.
 

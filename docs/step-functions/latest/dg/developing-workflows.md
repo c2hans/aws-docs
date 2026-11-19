@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/developing-work
 ---
 
 # Developing workflows with Step Functions
-<a name="developing-workflows"></a>
 
 We recommend starting to build workflows in the Step Functions console and Workflow Studio visual editor. You can start from a blank canvas or choose starter templates for common scenarios.
 

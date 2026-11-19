@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ForgotPassword
-<a name="API_ForgotPassword"></a>
 
 Sends a password-reset confirmation code to the email address or phone number of the requested username. The message delivery method is determined by the user's available attributes and the `AccountRecoverySetting` configuration of the user pool.
 

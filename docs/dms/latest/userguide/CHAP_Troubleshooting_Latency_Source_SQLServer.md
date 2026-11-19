@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Troubleshootin
 ---
 
 # SQL Server Endpoint Troubleshooting
-<a name="CHAP_Troubleshooting_Latency_Source_SQLServer"></a>
 
 This section contains replication scenarios specific to SQL Server. To determine what changes to replicate from SQL server AWS DMS reads the transaction logs, and runs periodic scans on the source database. Replication latency usually results from SQL Server throttling these scans because of resource constraints. It can also result from a significant increase in the number of events written to the transaction log in a short time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dist
 ---
 
 # DistributeDatasetEntries
-<a name="API_DistributeDatasetEntries"></a>
 
 **Note**
 This operation applies only to Amazon Rekognition Custom Labels.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageResponseInProgressEvent
-<a name="API_SendMessageResponseInProgressEvent"></a>
 
 Event emitted while the response is being generated
 

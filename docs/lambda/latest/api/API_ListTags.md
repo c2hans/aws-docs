@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListTags.html
 ---
 
 # ListTags
-<a name="API_ListTags"></a>
 
 Returns a function, event source mapping, or code signing configuration's [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html). You can also view function tags with [GetFunction](API_GetFunction.md).
 

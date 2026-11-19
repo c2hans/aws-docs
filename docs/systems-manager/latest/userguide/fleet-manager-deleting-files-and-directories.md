@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Deleting OS files and directories using Fleet Manager
-<a name="fleet-manager-deleting-files-and-directories"></a>
 
 You can use Fleet Manager to delete files and directories on a managed node in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateG
 ---
 
 # CreateGlossaryPolicyGrantDetail
-<a name="API_CreateGlossaryPolicyGrantDetail"></a>
 
 The details of the policy grant.
 

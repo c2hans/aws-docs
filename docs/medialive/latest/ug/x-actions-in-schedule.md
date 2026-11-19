@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/x-actions-in-schedul
 ---
 
 # Types of actions in the schedule
-<a name="x-actions-in-schedule"></a>
 
 The schedule is a list of actions that a channel performs as it is running. You can use actions to do the following:
 + Switch the input that the running channel is ingesting.

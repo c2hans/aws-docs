@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-utilit
 ---
 
 # Amazon S3 Utilities
-<a name="sdk-utilities-s3"></a>
 
 ## Amazon S3 Transfer Managers
 <a name="transfer-managers"></a>

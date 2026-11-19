@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ConsumptionConfiguration
-<a name="API_ConsumptionConfiguration"></a>
 
 Details about a consumption configuration.
 

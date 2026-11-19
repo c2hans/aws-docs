@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ac
 ---
 
 # Accelerate the discovery and migration of Microsoft workloads to AWS
-<a name="accelerate-the-discovery-and-migration-of-microsoft-workloads-to-aws"></a>
 
 *Ali Alzand, Amazon Web Services*
 

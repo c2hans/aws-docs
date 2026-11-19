@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Labe
 ---
 
 # LabelAlias
-<a name="API_LabelAlias"></a>
 
 A potential alias of for a given label.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 ---
 
 # Context parallelism
-<a name="model-parallel-core-features-v2-context-parallelism"></a>
 
 *Context parallelism* is a type of model parallelism that partitions the model activations along the sequence dimension. Unlike other [sequence parallelism](https://arxiv.org/abs/2205.05198) techniques, which only partition the `LayerNorm` and `RMSNorm`, context parallelism partitions the network inputs and all intermediate activations along the sequence dimension.
 

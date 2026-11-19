@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/deman
 ---
 
 # Demand Patterns Components
-<a name="demand-patterns-components"></a>
 
 Demand Patterns analysis happens on three dimensions:
 + Demand Patterns (based on how demand changes over time and in quantity)

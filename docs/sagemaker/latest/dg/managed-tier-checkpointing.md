@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/managed-tier-checkpo
 ---
 
 # HyperPod managed tiered checkpointing
-<a name="managed-tier-checkpointing"></a>
 
 This section explains how managed tiered checkpointing works and the benefits it provides for large-scale model training.
 

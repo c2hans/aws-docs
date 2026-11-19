@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CancelContractualInvestmentAttestation
-<a name="API_billing_CancelContractualInvestmentAttestation"></a>
 
 Cancels a contractual investment attestation. This operation is idempotent, so retrying is safe. You can cancel an attestation only while it is still pending (its `isCancellable` value is `true`).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed
 ---
 
 # Run your first agent with self-hosted compute
-<a name="bedrock-managed-agents-openai-self-hosted"></a>
 
 This tutorial connects a local or remote host to a BMA session. The host runs `codex exec-server`, and BMA uses that connection for tool execution. The example creates IAM roles in your AWS account and uses a workspace on your host.
 

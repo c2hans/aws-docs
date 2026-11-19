@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # SplitRows class
-<a name="aws-glue-api-crawler-pyspark-transforms-SplitRows"></a>
 
 Creates a `DynamicFrameCollection` that contains two `DynamicFrames`. One `DynamicFrame` contains only the specified rows to be split, and the other contains all remaining rows.
 

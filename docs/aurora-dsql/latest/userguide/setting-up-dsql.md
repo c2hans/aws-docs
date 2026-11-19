@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/setting-up-
 ---
 
 # Managing Aurora DSQL clusters
-<a name="setting-up-dsql"></a>
 
 Aurora DSQL provides several configuration options to help you establish the right database infrastructure for your needs. To set up your Aurora DSQL cluster infrastructure, review the following sections.
 

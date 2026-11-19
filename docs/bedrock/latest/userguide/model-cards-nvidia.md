@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-nvi
 ---
 
 # NVIDIA
-<a name="model-cards-nvidia"></a>
 
 The following NVIDIA models are available in Amazon Bedrock:
 

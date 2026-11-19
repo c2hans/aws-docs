@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Open-source licenses
-<a name="open-source-licenses"></a>
 
  Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS uses the following open-source bioinformatics tools as part of ETL jobs and Jupyter notebooks. The tools are publicly available under open-source licenses as provided in the following table. Ensure that these license specifications meet your organizational requirements.
 

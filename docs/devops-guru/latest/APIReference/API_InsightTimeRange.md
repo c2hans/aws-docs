@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Insi
 ---
 
 # InsightTimeRange
-<a name="API_InsightTimeRange"></a>
 
  A time ranged that specifies when the observed behavior in an insight started and ended.
 

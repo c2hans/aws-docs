@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ConditionResultEvent
-<a name="API_agent-runtime_ConditionResultEvent"></a>
 
 Contains information about a condition evaluation result during a flow execution. This event is generated when a condition node in the flow evaluates its conditions.
 

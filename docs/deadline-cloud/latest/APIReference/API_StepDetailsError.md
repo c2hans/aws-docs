@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepDetailsError
-<a name="API_StepDetailsError"></a>
 
 The details of the step error.
 

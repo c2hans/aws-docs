@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/live.html
 ---
 
 # .live
-<a name="live"></a>
 
 Used as a general extension, and suitable for a wide range of businesses, groups, and individuals.
 

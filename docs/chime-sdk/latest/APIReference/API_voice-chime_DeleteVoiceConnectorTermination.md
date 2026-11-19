@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DeleteVoiceConnectorTermination
-<a name="API_voice-chime_DeleteVoiceConnectorTermination"></a>
 
 Deletes the termination settings for the specified Amazon Chime SDK Voice Connector.
 

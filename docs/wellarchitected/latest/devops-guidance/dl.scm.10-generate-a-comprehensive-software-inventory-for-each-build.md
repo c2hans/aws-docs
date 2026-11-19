@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.SCM.10] Generate a comprehensive software inventory for each build
-<a name="dl.scm.10-generate-a-comprehensive-software-inventory-for-each-build"></a>
 
  **Category:** RECOMMENDED
 

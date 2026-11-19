@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Custo
 ---
 
 # CustomizedLoadMetricSpecification
-<a name="API_CustomizedLoadMetricSpecification"></a>
 
 Represents a CloudWatch metric of your choosing that can be used for predictive scaling.
 

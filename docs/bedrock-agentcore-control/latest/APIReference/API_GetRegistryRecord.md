@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetRegistryRecord
-<a name="API_GetRegistryRecord"></a>
 
 Retrieves information about a specific registry record.
 

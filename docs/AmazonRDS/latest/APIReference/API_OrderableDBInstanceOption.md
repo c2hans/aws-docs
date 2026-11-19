@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Ordera
 ---
 
 # OrderableDBInstanceOption
-<a name="API_OrderableDBInstanceOption"></a>
 
 Contains a list of available options for a DB instance.
 

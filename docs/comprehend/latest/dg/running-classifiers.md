@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/running-classifiers
 ---
 
 # Running asynchronous jobs
-<a name="running-classifiers"></a>
 
 After you train a custom classifier, you can use asynchronous jobs to analyze large documents or multiple documents in one batch.
 

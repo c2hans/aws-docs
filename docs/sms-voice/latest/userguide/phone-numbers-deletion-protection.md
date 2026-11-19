@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers
 ---
 
 # Using phone number deletion protection in AWS End User Messaging SMS
-<a name="phone-numbers-deletion-protection"></a>
 
 When you turn on deletion protection you will not be able to release the phone number until deletion protection is disabled. By default deletion protection is turned off.
 

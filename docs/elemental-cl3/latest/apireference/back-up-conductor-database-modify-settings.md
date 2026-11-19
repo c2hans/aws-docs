@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/back-u
 ---
 
 # PUT: Modify Database Backup Settings
-<a name="back-up-conductor-database-modify-settings"></a>
 
 You can view and modify the current backup settings for the conductor database on the web UI at Settings>Backups. The following command allows you to modify these settings via REST.
 

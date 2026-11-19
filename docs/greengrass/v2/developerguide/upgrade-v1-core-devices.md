@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/upgrade-v1-
 ---
 
 # Upgrade Greengrass V1 core devices to Greengrass V2
-<a name="upgrade-v1-core-devices"></a>
 
 After you verify that your applications and components work on an AWS IoT Greengrass V2 core device, you can install the AWS IoT Greengrass Core software v2.x on your devices that currently run v1.x, such as production devices. Then, deploy Greengrass V2 components to run your Greengrass applications on the devices.
 

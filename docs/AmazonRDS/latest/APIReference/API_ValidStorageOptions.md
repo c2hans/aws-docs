@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ValidS
 ---
 
 # ValidStorageOptions
-<a name="API_ValidStorageOptions"></a>
 
 Information about valid modifications that you can make to your DB instance. Contains the result of a successful call to the `DescribeValidDBInstanceModifications` action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Pu
 ---
 
 # PutEventsRequestEntry
-<a name="API_PutEventsRequestEntry"></a>
 
 A single event entry in a PutEvents request.
 

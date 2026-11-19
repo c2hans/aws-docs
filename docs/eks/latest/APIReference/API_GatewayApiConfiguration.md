@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_GatewayApiCo
 ---
 
 # GatewayApiConfiguration
-<a name="API_GatewayApiConfiguration"></a>
 
 Indicates the current configuration of the Kubernetes Gateway API for the load balancing capability on your EKS Auto Mode cluster. For more information, see EKS Auto Mode load balancing capability in the *Amazon EKS User Guide*.
 

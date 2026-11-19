@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteBrand
-<a name="API_DeleteBrand"></a>
 
 **Important**
 This API permanently deletes the specified Quick Sight brand. When you delete a brand:

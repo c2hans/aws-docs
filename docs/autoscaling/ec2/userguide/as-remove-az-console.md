@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-remove-az-c
 ---
 
 # Remove an Availability Zone
-<a name="as-remove-az-console"></a>
 
 To remove an Availability Zone from your Auto Scaling group and load balancer, use the following procedure.
 

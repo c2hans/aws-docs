@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2V
 ---
 
 # AwsEc2VpnConnectionRoutesDetails
-<a name="API_AwsEc2VpnConnectionRoutesDetails"></a>
 
 A static routes associated with the VPN connection.
 

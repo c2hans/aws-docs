@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitoring-cloudw
 ---
 
 # MediaConnect flow health event
-<a name="monitoring-cloudwatch-events-flow-health"></a>
 
 AWS Elemental MediaConnect publishes flow health events after a flow health indicator state changes.
 

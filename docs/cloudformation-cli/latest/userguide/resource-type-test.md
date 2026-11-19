@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Testing resource types using contract tests
-<a name="resource-type-test"></a>
 
 As you model and develop your resource type, you should have the CloudFormation CLI perform tests to ensure that the resource type is behaving as expected during each event in the resource lifecycle. The CloudFormation CLI performs a suite of tests called contract tests to enforce CloudFormation’s [handler contract](resource-type-test-contract.md). Developing and registering your resource type in CloudFormation signifies an agreement that your resource is compliant and doesn't break any framework expectations. All resources that fail contract tests are blocked from publishing into our registry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Migrate the hub stack (optional)
-<a name="Migrate-the-Hub-stack-optional"></a>
 
 Follow the step-by-step instructions in this section to migrate the hub stack from earlier versions to the latest version.
 

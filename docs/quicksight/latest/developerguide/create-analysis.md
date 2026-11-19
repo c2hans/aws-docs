@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/create-
 ---
 
 # CreateAnalysis
-<a name="create-analysis"></a>
 
 Use the `CreateAnalysis` API operation to create an analysis in AWS Quick Sight for a specified user. Following is an example AWS CLI command for this operation.
 

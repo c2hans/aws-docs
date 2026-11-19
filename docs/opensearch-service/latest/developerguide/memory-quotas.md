@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Endpoints and quotas for Amazon OpenSearch Memory
-<a name="memory-quotas"></a>
 
 This topic lists the service endpoints, quotas, and limits for Amazon OpenSearch Memory. You can request an increase to a quota that is marked as adjustable. Unless noted otherwise, a request that exceeds a limit fails with `ValidationException`. A [CreateSpace](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_CreateSpace.html) or [UpdateSpace](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_UpdateSpace.html) request that would exceed an account quota, such as the number of strategies in a space, fails with `ServiceQuotaExceededException`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_SsmContro
 ---
 
 # SsmControls
-<a name="API_SsmControls"></a>
 
  AWS Systems Manager (SSM) specific remediation controls.
 

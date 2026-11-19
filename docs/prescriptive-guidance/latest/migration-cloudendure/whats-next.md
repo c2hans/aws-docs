@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # Next steps
-<a name="whats-next"></a>
 
 Because CloudEndure Migration minimizes cutover downtime and provides continuous replication, it handles migration scenarios such as migrating your servers to AWS, deploying a block-level replication solution, or supporting real-time replication requirements much better than other migration tools.
 

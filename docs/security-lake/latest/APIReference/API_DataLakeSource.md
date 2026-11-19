@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeSource
-<a name="API_DataLakeSource"></a>
 
 Amazon Security Lake collects logs and events from supported AWS services and custom sources. For the list of supported AWS services, see the [Amazon Security Lake User Guide](https://docs.aws.amazon.com/security-lake/latest/userguide/internal-sources.html).
 

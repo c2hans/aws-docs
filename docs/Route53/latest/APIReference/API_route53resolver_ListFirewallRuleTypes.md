@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListFirewallRuleTypes
-<a name="API_route53resolver_ListFirewallRuleTypes"></a>
 
 Retrieves the rule-type variants that can be used in the `FirewallRuleType` field of [CreateFirewallRule](API_route53resolver_CreateFirewallRule.md) and [UpdateFirewallRule](API_route53resolver_UpdateFirewallRule.md). Each returned [FirewallRuleTypeDefinition](API_route53resolver_FirewallRuleTypeDefinition.md) identifies one variant \+ value combination — for example, `FirewallAdvancedContentCategory` \+ `VIOLENCE_AND_HATE_SPEECH`, or `PartnerThreatProtection` \+ a partner-managed feed.
 

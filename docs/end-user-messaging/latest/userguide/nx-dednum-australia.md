@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-d
 ---
 
 # Australia long code registration
-<a name="nx-dednum-australia"></a>
 
 Registering a dedicated number is the first step in creating an origination identity.
 

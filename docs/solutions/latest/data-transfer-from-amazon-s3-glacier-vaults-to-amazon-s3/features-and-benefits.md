@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
  The Guidance provides the following features:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Scatt
 ---
 
 # ScatterPlotUnaggregatedFieldWells
-<a name="API_ScatterPlotUnaggregatedFieldWells"></a>
 
 The unaggregated field wells of a scatter plot.
 

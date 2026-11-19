@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policy: AWSElasticDisasterRecoveryConsoleFullAccess\_v2
-<a name="security-iam-awsmanpol-AWSElasticDisasterRecoveryConsoleFullAccess_v2"></a>
 
 You can attach the **AWSElasticDisasterRecoveryConsoleFullAccess\_v2** policy to your IAM identities.
 

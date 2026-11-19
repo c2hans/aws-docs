@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribePatchProperties
-<a name="API_DescribePatchProperties"></a>
 
 Lists the properties of available patches organized by product, product family, classification, severity, and other properties of available patches. You can use the reported properties in the filters you specify in requests for operations such as [CreatePatchBaseline](API_CreatePatchBaseline.md), [UpdatePatchBaseline](API_UpdatePatchBaseline.md), [DescribeAvailablePatches](API_DescribeAvailablePatches.md), and [DescribePatchBaselines](API_DescribePatchBaselines.md).
 

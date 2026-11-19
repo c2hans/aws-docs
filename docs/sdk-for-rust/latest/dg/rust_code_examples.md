@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/rust_code_example
 ---
 
 # SDK for Rust code examples
-<a name="rust_code_examples"></a>
 
 The code examples in this topic show you how to use the AWS SDK for Rust with AWS.
 

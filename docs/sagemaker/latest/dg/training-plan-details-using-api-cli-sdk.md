@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-detail
 ---
 
 # View training plan details
-<a name="training-plan-details-using-api-cli-sdk"></a>
 
 To monitor the status or retrieve details of a training plan, you can use the [`DescribeTrainingPlan`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrainingPlan.html) API. The API response includes a `Status` field, which reflects the current state of the training plan:
 + If the plan purchase fails, the status is set to `Failed`.

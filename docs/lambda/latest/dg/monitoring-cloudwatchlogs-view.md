@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/monitoring-cloudwatchlo
 ---
 
 # Viewing CloudWatch logs for Lambda Event Functions
-<a name="monitoring-cloudwatchlogs-view"></a>
 
 You can view Amazon CloudWatch logs for your Lambda Event Function using the Lambda console, the CloudWatch console, or the AWS Command Line Interface (AWS CLI). Follow the instructions in the following sections to access your Event Function's logs.
 

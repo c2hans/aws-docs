@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorCo
 ---
 
 # ConnectorConfiguration
-<a name="API_ConnectorConfiguration"></a>
 
  The configuration settings related to a given connector.
 

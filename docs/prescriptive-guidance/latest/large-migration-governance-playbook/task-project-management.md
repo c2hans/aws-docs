@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task: Defining project management processes and tools
-<a name="task-project-management"></a>
 
 Any large migration project requires well established management processes and tools. With a large migration, there are nuances to sharing information, tracking performance metrics, identifying the correct meeting participants, and assigning tasks to owners. In this task, you document key migration tasks and owners, determine key performance indicators (KPIs) for the migration and decide how to measure them, track the budget, and develop tools for managing risks and tracking decisions.
 

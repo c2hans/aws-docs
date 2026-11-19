@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_GetSch
 ---
 
 # GetSchedule
-<a name="API_GetSchedule"></a>
 
 Retrieves the specified schedule.
 

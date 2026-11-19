@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ClientCertif
 ---
 
 # ClientCertificateConfig
-<a name="API_ClientCertificateConfig"></a>
 
 An object that speciﬁes the client certificate conﬁguration for a domain.
 

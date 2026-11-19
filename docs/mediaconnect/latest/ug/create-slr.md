@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/create-slr.html
 ---
 
 # Creating a service-linked role for MediaConnect
-<a name="create-slr"></a>
 
 You don't need to manually create a service-linked role. When you create an associated MediaConnect resource in the AWS Management Console, the AWS CLI, or the AWS API, MediaConnect creates the service-linked role for you.
 

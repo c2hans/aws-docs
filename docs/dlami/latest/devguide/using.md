@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/using.html
 ---
 
 # Using a DLAMI
-<a name="using"></a>
 
 **Topics**
 + [Using the Deep Learning AMI with Conda](tutorial-conda.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceE
 ---
 
 # InstanceExportDetails
-<a name="API_InstanceExportDetails"></a>
 
 Describes an instance to export.
 

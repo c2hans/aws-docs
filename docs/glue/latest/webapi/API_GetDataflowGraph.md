@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDataflowGraph.
 ---
 
 # GetDataflowGraph
-<a name="API_GetDataflowGraph"></a>
 
 Transforms a Python script into a directed acyclic graph (DAG).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asse
 ---
 
 # AssetFileSummary
-<a name="API_AssetFileSummary"></a>
 
 Summary of a file within an asset, including its path, version, and timestamps.
 

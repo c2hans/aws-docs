@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_EnterSt
 ---
 
 # EnterStandby
-<a name="API_EnterStandby"></a>
 
 Moves the specified instances into the standby state.
 

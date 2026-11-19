@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/sdi-ro
 ---
 
 # Step E: Use the router inputs
-<a name="sdi-rou-using"></a>
 
 When you create a profile or event, the inputs that you created are displayed in the **Input** field.
 

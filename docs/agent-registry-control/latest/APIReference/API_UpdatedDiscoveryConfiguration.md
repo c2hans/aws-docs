@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedDiscoveryConfiguration
-<a name="API_UpdatedDiscoveryConfiguration"></a>
 
 The discovery configuration fields to update on a registry. Omit this structure to leave the discovery configuration unchanged.
 

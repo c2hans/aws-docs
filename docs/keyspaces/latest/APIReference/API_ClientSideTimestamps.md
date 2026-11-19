@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Client
 ---
 
 # ClientSideTimestamps
-<a name="API_ClientSideTimestamps"></a>
 
 The client-side timestamp setting of the table.
 

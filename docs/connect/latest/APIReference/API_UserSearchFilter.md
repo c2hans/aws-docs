@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserSear
 ---
 
 # UserSearchFilter
-<a name="API_UserSearchFilter"></a>
 
 Filters to be applied to search results.
 

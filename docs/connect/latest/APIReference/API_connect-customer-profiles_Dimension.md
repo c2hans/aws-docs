@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Dimension
-<a name="API_connect-customer-profiles_Dimension"></a>
 
 Object that holds what profile and calculated attributes to segment on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_networ
 ---
 
 # AWS PCS Networking
-<a name="working-with_networking"></a>
 
 Your AWS PCS cluster is created in an Amazon VPC. This chapter includes the following topics about networking for your cluster’s scheduler and nodes.
 

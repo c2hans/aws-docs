@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-5212-release
 ---
 
 # Amazon EMR release 5.21.2
-<a name="emr-5212-release"></a>
 
 ## 5.21.2 application versions
 <a name="emr-5212-app-versions"></a>

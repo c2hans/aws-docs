@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/configure-
 ---
 
 # Select your attributes for access control
-<a name="configure-abac-attributes"></a>
 
 Use the following procedure to set up attributes for your ABAC configuration.
 

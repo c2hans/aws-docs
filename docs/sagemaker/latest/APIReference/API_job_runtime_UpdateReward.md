@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_job_ru
 ---
 
 # UpdateReward
-<a name="API_job_runtime_UpdateReward"></a>
 
 Updates the reward values for a trajectory and transitions it to reward-received status, signaling that it is eligible for processing. Call this operation after CompleteRollout to provide the computed reward scores.
 

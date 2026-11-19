@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_VpcIngressConne
 ---
 
 # VpcIngressConnection
-<a name="API_VpcIngressConnection"></a>
 
 The AWS App Runner resource that specifies an App Runner endpoint for incoming traffic. It establishes a connection between a VPC interface endpoint and a App Runner service, to make your App Runner service accessible from only within an Amazon VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BulkEmail
 ---
 
 # BulkEmailEntryResult
-<a name="API_BulkEmailEntryResult"></a>
 
 The result of the `SendBulkEmail` operation of each specified `BulkEmailEntry`.
 

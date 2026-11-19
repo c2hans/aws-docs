@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-express-one-zo
 ---
 
 # Query S3 Express One Zone data
-<a name="querying-express-one-zone"></a>
 
 The Amazon S3 Express One Zone storage class is a highly performant Amazon S3 storage class that provides single-digit millisecond response times. As such, it is useful for applications that frequently access data with hundreds of thousands of requests per second.
 

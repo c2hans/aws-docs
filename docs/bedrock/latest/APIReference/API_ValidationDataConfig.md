@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Validati
 ---
 
 # ValidationDataConfig
-<a name="API_ValidationDataConfig"></a>
 
 Array of up to 10 validators.
 

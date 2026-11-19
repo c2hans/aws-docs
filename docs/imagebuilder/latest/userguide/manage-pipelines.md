@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pip
 ---
 
 # Manage custom image creation in Image Builder through a repeatable pipeline process
-<a name="manage-pipelines"></a>
 
 Image Builder image pipelines provide an automation framework for creating and maintaining custom AMIs and container images. Pipelines deliver the following functionality:
 + Assemble the base image, build and test components for image customization, infrastructure configuration, and distribution settings.

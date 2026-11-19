@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-configurat
 ---
 
 # Get configuration metadata
-<a name="msk-configuration-operations-describe"></a>
 
 The following procedure shows how to describe an Amazon MSK configuration to get metadata about the configuration.
 

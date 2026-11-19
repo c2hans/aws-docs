@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/fis-tutorial-run-cp
 ---
 
 # Tutorial: Run CPU stress on an instance using AWS FIS
-<a name="fis-tutorial-run-cpu-stress"></a>
 
 You can use AWS Fault Injection Service (AWS FIS) to test how your applications handle CPU stress. Use this tutorial to create an experiment template that uses AWS FIS to run a pre-configured SSM document that runs CPU stress on an instance. The tutorial uses a stop condition to halt the experiment when the CPU utilization of the instance exceeds a configured threshold.
 

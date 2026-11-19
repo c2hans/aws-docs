@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMFADelete
 ---
 
 # Deleting an object from an MFA delete-enabled bucket
-<a name="UsingMFADelete"></a>
 
 When you configure MFA delete, only the root user can permanently delete object versions or change the versioning configuration on your S3 bucket. You must use an MFA device to authenticate the root user to perform the delete action.
 

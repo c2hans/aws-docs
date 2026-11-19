@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateAutoMLJob
-<a name="API_CreateAutoMLJob"></a>
 
 Creates an Autopilot job also referred to as Autopilot experiment or AutoML job.
 

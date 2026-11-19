@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPolic
 ---
 
 # IpamPolicyAllocationRule
-<a name="API_IpamPolicyAllocationRule"></a>
 
 Information about an IPAM policy allocation rule.
 

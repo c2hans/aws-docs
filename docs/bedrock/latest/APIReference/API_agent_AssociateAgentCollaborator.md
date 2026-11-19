@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_As
 ---
 
 # AssociateAgentCollaborator
-<a name="API_agent_AssociateAgentCollaborator"></a>
 
 Makes an agent a collaborator for another agent.
 

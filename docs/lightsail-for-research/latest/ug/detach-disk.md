@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/detach-
 ---
 
 # Detach a disk from a virtual computer in Lightsail for Research
-<a name="detach-disk"></a>
 
 Complete the following steps to detach a disk from a computer.
 

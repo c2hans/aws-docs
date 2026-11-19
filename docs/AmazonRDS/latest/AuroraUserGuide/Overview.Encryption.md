@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Overvie
 ---
 
 # Encrypting Amazon Aurora resources
-<a name="Overview.Encryption"></a>
 
 Amazon Aurora protects your data both at rest and in transit—whether moving between on-premises clients and Amazon Aurora, or between Amazon Aurora and other AWS resources. Amazon Aurora encrypts all user data in your Amazon Aurora DB clusters including logs, automated backups, and snapshots.
 

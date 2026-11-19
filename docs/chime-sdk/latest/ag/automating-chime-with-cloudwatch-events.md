@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/automating-chime-wit
 ---
 
 # Automating the Amazon Chime SDK with EventBridge
-<a name="automating-chime-with-cloudwatch-events"></a>
 
 Amazon EventBridge lets you automate your AWS services and respond automatically to system events, such as application availability issues or resource changes. For more information about the meeting events, see [Meeting events](https://docs.aws.amazon.com/chime/latest/dg/using-events.html) in the *Amazon Chime SDK Developer Guide*.
 

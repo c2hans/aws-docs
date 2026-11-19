@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Assess phase
-<a name="assess-phase"></a>
 
 In order to mobilize your workforce and resources to migrate your enterprise at scale, you must first assess your readiness and inventory your portfolio. These steps enable you to build a business case with right key performance indicators (KPIs) and metrics, and to align key stakeholders and leadership on business goals. You will run the Migration Readiness Assessment (MRA) workstream during this phase.
 

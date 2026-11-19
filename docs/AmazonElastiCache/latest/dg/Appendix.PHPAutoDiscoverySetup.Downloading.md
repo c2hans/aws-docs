@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Appendix.PHP
 ---
 
 # Downloading the installation package
-<a name="Appendix.PHPAutoDiscoverySetup.Downloading"></a>
 
 To ensure that you use the correct version of the ElastiCache Cluster Client for PHP, you will need to know what version of PHP is installed on your Amazon EC2 instance. You will also need to know whether your Amazon EC2 instance is running a 64-bit or 32-bit version of Linux.
 

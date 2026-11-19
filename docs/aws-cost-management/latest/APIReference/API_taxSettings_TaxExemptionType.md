@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TaxExemptionType
-<a name="API_taxSettings_TaxExemptionType"></a>
 
 The tax exemption type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # Create a Cloud Connector (AWS Management Console)
-<a name="cloud-connector-create-console"></a>
 
 We recommend that you use the AWS Management Console to create a Cloud Connector. The console wizard collects your Azure tenant and subscription details, and then generates a setup script that configures the Azure side for you. The generated script creates or reuses Microsoft Entra ID application registrations and service principals. It also configures the OIDC federated credentials and assigns the least-privilege Azure roles. If you record with AWS Config, the script also creates the Event Hub resources and diagnostic settings for activity-log streaming.
 

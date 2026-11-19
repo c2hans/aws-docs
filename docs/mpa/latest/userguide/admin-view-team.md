@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/admin-view-team.htm
 ---
 
 # View an approval team
-<a name="admin-view-team"></a>
 
 When you sign in to your organization's management account, you can view your approval teams and teams that have been shared with you by navigating to the Multi-party approval console.
 

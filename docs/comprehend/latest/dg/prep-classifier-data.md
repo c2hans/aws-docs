@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/prep-classifier-dat
 ---
 
 # Preparing classifier training data
-<a name="prep-classifier-data"></a>
 
 For custom classification, you train the model in either multi-class mode or multi-label mode. Multi-class mode associates a single class with each document. Multi-label mode associates one or more classes with each document. The input file formats are different for each mode, so choose the mode to use before you create the training data.
 

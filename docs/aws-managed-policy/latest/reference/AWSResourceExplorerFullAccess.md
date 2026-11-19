@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSResourceExplorerFullAccess
-<a name="AWSResourceExplorerFullAccess"></a>
 
 **Description**: This policy grants administrative permissions to access Resource Explorer resources and grants read-only permissions to other AWS services to support this access.
 

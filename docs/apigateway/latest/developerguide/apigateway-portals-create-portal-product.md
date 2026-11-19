@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Create a portal product in API Gateway
-<a name="apigateway-portals-create-portal-product"></a>
 
 The following procedure shows how to create a portal product. A portal is a collection of *portal products*. After you create your portal product, you create product REST endpoints and product pages. To learn about portal products, see [Portal products in API Gateway](apigateway-portals-portal-product.md).
 

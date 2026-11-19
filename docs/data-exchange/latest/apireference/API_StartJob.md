@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_St
 ---
 
 # StartJob
-<a name="API_StartJob"></a>
 
 This operation starts a job.
 

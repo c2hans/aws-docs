@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/how-
 ---
 
 # How does IAM work with Amazon Connect Decisions
-<a name="how-does-iam-work-with-amazon-connect-decisions"></a>
 
 Before you use IAM to manage access to Amazon Connect Decisions, learn what IAM features are available to use with Amazon Connect Decisions. To get a high-level view of how Amazon Connect Decisions and other AWS services work with most IAM features, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
 

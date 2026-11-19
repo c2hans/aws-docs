@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConfigurationBundleReference
-<a name="API_ConfigurationBundleReference"></a>
 
 A reference to a specific version of a configuration bundle.
 

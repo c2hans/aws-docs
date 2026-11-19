@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/stage-roll
 ---
 
 # View rollback status in execution listing
-<a name="stage-rollback-view-listing"></a>
 
 You can view the status and target execution ID for a rollback execution.
 

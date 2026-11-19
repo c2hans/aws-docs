@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentClassifierOutputDataConfig
-<a name="API_DocumentClassifierOutputDataConfig"></a>
 
 Provide the location for output data from a custom classifier job. This field is mandatory if you are training a native document model.
 

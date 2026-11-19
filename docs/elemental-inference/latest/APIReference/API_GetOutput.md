@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # GetOutput
-<a name="API_GetOutput"></a>
 
 Contains configuration information about one output in a feed. It is used in the GetFeed response.
 

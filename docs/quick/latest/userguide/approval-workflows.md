@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/approval-workflow
 ---
 
 # Approval workflows
-<a name="approval-workflows"></a>
 
 |  |
 | --- |

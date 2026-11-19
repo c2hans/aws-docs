@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Monitoring performance and operations with Amazon CloudWatch
-<a name="monitoring-performance-ops-with-amazon-cloudwatch"></a>
 
 The guidance captures all the Druid data logs in Amazon CloudWatch for monitoring purposes. This includes alarms, logs and a dashboard for reporting purposes.
 

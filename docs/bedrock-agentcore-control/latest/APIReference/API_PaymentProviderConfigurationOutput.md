@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PaymentProviderConfigurationOutput
-<a name="API_PaymentProviderConfigurationOutput"></a>
 
 Provider configuration output — no raw secrets, only ARNs. Varies by vendor type.
 

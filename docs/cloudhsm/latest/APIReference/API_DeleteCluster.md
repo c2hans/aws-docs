@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteC
 ---
 
 # DeleteCluster
-<a name="API_DeleteCluster"></a>
 
 Deletes the specified AWS CloudHSM cluster. Before you can delete a cluster, you must delete all HSMs in the cluster. To see if the cluster contains any HSMs, use [DescribeClusters](API_DescribeClusters.md). To delete an HSM, use [DeleteHsm](API_DeleteHsm.md).
 

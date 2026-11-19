@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListCustom
 ---
 
 # ListCustomVocabularyItems
-<a name="API_ListCustomVocabularyItems"></a>
 
 Paginated list of custom vocabulary items for a given bot locale's custom vocabulary.
 

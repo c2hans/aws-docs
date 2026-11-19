@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Suppo
 ---
 
 # SupportedLanguage
-<a name="API_SupportedLanguage"></a>
 
  A JSON-formatted object that contains the available ISO 639-1 language `code`, `language` name and langauge `display` value. The language code is what should be used in the [CreateCase](API_CreateCase.md) call.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/analytics-filter.html
 ---
 
 # Filtering results
-<a name="analytics-filter"></a>
 
 At the top of each page, you can filter the results for your bot analytics.
 

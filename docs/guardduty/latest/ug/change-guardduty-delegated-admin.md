@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/change-guardduty-del
 ---
 
 # Changing the delegated GuardDuty administrator account
-<a name="change-guardduty-delegated-admin"></a>
 
 You can remove the delegated GuardDuty administrator account for your organization in each Region and then delegate a new administrator in each Region. To maintain the security posture for your organization's member accounts in a Region, you must have a delegated GuardDuty administrator account in that Region.
 

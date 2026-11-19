@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/getting-started-dis
 ---
 
 # Step 4a (diskless): Prepare diskless hosts and the VCF Installer
-<a name="getting-started-diskless"></a>
 
 Diskless hosts have no local storage for VMware Cloud Foundation (VCF). They boot from an Amazon EBS volume, and vSAN and local VMFS datastores aren’t available, so you provide external storage for the management domain. For the instance types that are diskless, see [Supported VCF versions and instance types](versions-provided.md). In this step, you create the external storage, prepare the first host, deploy the VCF Installer appliance, download the VCF software, and add the remaining hosts. In [Step 4b (diskless): Create the specification and deploy](deploy-diskless-spec.md), you create the deployment specification and deploy VCF.
 

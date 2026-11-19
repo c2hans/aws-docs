@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Organization
-<a name="organization"></a>
 
 |  SCOPS01: How do you identify and track all stakeholders interacting with the supply chain application?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_No
 ---
 
 # NotificationSettingDetail
-<a name="API_NotificationSettingDetail"></a>
 
 The state of a notification setting.
 

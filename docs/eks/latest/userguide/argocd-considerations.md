@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-consideratio
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Argo CD considerations
-<a name="argocd-considerations"></a>
 
 This topic covers important considerations for using the EKS Capability for Argo CD, including planning, permissions, authentication, and multi-cluster deployment patterns.
 

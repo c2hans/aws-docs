@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessHookSnsTarget
-<a name="API_HarnessHookSnsTarget"></a>
 
 The configuration for an Amazon SNS hook target.
 

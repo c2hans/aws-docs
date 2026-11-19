@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # PutGroupingConfiguration
-<a name="API_PutGroupingConfiguration"></a>
 
 Creates or updates the grouping configuration for this account. This operation allows you to define custom grouping attributes that determine how services are logically grouped based on telemetry attributes, AWS tags, or predefined mappings. These grouping attributes can then be used to organize and filter services in the Application Signals console and APIs.
 

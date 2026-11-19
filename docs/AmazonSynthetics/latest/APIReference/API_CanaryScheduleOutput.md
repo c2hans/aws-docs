@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryScheduleOutput
-<a name="API_CanaryScheduleOutput"></a>
 
 How long, in seconds, for the canary to continue making regular runs according to the schedule in the `Expression` value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetRegistry.html
 ---
 
 # GetRegistry
-<a name="API_GetRegistry"></a>
 
 Describes the specified registry in detail.
 

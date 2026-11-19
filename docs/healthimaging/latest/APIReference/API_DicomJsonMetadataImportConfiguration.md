@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Di
 ---
 
 # DicomJsonMetadataImportConfiguration
-<a name="API_DicomJsonMetadataImportConfiguration"></a>
 
 The configuration parameters that are specific to DICOM JSON metadata import operations.
 

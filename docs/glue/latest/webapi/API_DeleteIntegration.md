@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteIntegration
 ---
 
 # DeleteIntegration
-<a name="API_DeleteIntegration"></a>
 
 Deletes the specified Zero-ETL integration.
 

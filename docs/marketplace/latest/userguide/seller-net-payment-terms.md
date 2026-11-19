@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/seller-net-
 ---
 
 # Configuring net payment terms for private offers
-<a name="seller-net-payment-terms"></a>
 
 When you create a private offer, you can specify net payment terms that apply to that offer. With this feature, you can honor negotiated payment terms and close deals that require them.
 

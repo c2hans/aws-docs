@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_M
 ---
 
 # MapIterationEventDetails
-<a name="API_MapIterationEventDetails"></a>
 
 Contains details about an iteration of a Map state.
 

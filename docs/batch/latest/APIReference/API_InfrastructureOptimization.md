@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_Infrastruc
 ---
 
 # InfrastructureOptimization
-<a name="API_InfrastructureOptimization"></a>
 
 The infrastructure optimization configuration for an Amazon ECS Managed Instances capacity provider. Specifies the idle-instance scale-in behavior.
 

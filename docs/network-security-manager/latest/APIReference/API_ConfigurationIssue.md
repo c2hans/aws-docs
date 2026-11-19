@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ConfigurationIssue
-<a name="API_ConfigurationIssue"></a>
 
 Describes a single configuration value that does not match the intended configuration.
 

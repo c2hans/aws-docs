@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/configurations.htm
 ---
 
 # Using AWS Elemental MediaTailor to insert ads
-<a name="configurations"></a>
 
 A configuration is an object that you interact with in AWS Elemental MediaTailor. The configuration holds the mapping information for the origin server and the ad decision server (ADS). You can also define a default playback for MediaTailor to use when an ad isn't available or doesn't fill the entire ad avail.
 

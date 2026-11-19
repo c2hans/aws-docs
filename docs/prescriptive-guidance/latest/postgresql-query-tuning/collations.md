@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Use case 1 – Collations
-<a name="collations"></a>
 
 In a database, a collation is a set of rules for determining how data is sorted and compared. A collation is usually applied to how text data is sorted in different languages for indexing for making comparisons between text values. Different languages have different character sets and ordering. With a collation, you can sort character data for a given language by using rules that define the correct character sequence. You can also specify the following:
 + Case-sensitivity

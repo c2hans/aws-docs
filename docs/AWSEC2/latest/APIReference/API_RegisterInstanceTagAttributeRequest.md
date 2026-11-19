@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterI
 ---
 
 # RegisterInstanceTagAttributeRequest
-<a name="API_RegisterInstanceTagAttributeRequest"></a>
 
 Information about the tag keys to register for the current Region. You can either specify individual tag keys or register all tag keys in the current Region. You must specify either `IncludeAllTagsOfInstance` or `InstanceTagKeys` in the request
 

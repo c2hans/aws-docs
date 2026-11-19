@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/budget-
 ---
 
 # Using a budget template (simplified)
-<a name="budget-templates"></a>
 
 You can create a budget using a template with recommended configurations. Budget templates are a simplified way to start using AWS Budgets, with a single page workflow, unlike the 5-step workflow that is required for [Customizing a budget (advanced)](custom-budgets.md).
 

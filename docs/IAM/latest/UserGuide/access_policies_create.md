@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_cre
 ---
 
 # Define custom IAM permissions with customer managed policies
-<a name="access_policies_create"></a>
 
 [Policies](access_policies.md) define permissions for identities or resources in AWS. You can create *customer managed policies* in IAM using the AWS Management Console, AWS CLI, or AWS API. Customer managed policies are standalone policies that you manage in your own AWS account. You can then attach the policies to identities (users, groups, and roles) in your AWS account.
 

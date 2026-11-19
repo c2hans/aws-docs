@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/security_iam_
 ---
 
 # Identity-based policy examples
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, IAM users and roles who have one of the managed policies for AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy, or AWS CodePipeline applied have permissions to connections, notifications, and notification rules that align with the intent of those policies. For example, IAM users or roles that have one of the full access policies (**AWSCodeCommitFullAccess**, **AWSCodeBuildAdminAccess**, **AWSCodeDeployFullAccess**, or **AWSCodePipeline\_FullAccess**) applied to them also have full access to notifications and notification rules created for the resources for those services.
 

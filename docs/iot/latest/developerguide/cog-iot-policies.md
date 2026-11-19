@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/cog-iot-polici
 ---
 
 # Authorization with Amazon Cognito identities
-<a name="cog-iot-policies"></a>
 
 There are two types of Amazon Cognito identities: unauthenticated and authenticated. If your app supports unauthenticated Amazon Cognito identities, no authentication is performed, so you don't know who the user is.
 

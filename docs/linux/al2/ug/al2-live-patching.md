@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/al2-live-patching.html
 ---
 
 # Kernel Live Patching on AL2
-<a name="al2-live-patching"></a>
 
 **Important**
 Amazon Linux will end live patching for AL2 Kernel 4.14 on 2025-10-31. Customers are encouraged to use kernel 5.10 as the default kernel for AL2 (see [AL2 supported kernels](https://docs.aws.amazon.com/linux/al2/ug/aml2-kernel.html)) or move to AL2023 with kernels 6.1 and 6.12.

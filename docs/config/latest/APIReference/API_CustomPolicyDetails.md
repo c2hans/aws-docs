@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_CustomPol
 ---
 
 # CustomPolicyDetails
-<a name="API_CustomPolicyDetails"></a>
 
 Provides the runtime system, policy definition, and whether debug logging enabled. You can specify the following CustomPolicyDetails parameter values only for AWS Config Custom Policy rules.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/view-def-detail-note
 ---
 
 # View notebook job definitions
-<a name="view-def-detail-notebook-auto-run"></a>
 
 **Note**
 If you scheduled your notebook job with the SageMaker Python SDK, skip this section. Only notebook jobs created in Studio or local JupyterLab environments create job definitions. Therefore, if you created your notebook job with the SageMaker Python SDK, you won’t see job definitions in the Notebook Jobs dashboard. You can, however, view your notebook jobs as described in [View notebook jobs](view-notebook-jobs.md).

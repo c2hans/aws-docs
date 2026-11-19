@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_St
 ---
 
 # StopDeployment
-<a name="API_StopDeployment"></a>
 
 Stops a deployment. This API action works only on deployments that have a status of `DEPLOYING`, unless an `AllowRevert` parameter is supplied. If the `AllowRevert` parameter is supplied, the status of an in-progress deployment will be `ROLLED_BACK`. The status of a completed deployment will be `REVERTED`. AWS AppConfig only allows a revert within 72 hours of deployment completion.
 

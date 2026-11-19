@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptTra
 ---
 
 # AcceptTransitGatewayMulticastDomainAssociations
-<a name="API_AcceptTransitGatewayMulticastDomainAssociations"></a>
 
 Accepts a request to associate subnets with a transit gateway multicast domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_G
 ---
 
 # GetWorkUnitResults
-<a name="API_GetWorkUnitResults"></a>
 
 Returns the work units resulting from the query. Work units can be executed in any order and in parallel.
 

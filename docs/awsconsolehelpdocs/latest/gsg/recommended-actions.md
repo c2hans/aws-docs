@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/recommende
 ---
 
 # AWS Recommended Actions in the AWS Management Console
-<a name="recommended-actions"></a>
 
 AWS Recommended Actions helps you work more efficiently in the AWS Management Console by providing contextual suggestions for completing tasks and implementing best practices. When relevant recommendations are available, a dynamic button appears that you can use to quickly take action based on these suggestions.
 

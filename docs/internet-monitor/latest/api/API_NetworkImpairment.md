@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_NetworkI
 ---
 
 # NetworkImpairment
-<a name="API_NetworkImpairment"></a>
 
 Information about the network impairment for a specific network measured by Internet Monitor.
 

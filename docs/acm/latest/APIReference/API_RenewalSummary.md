@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_RenewalSumma
 ---
 
 # RenewalSummary
-<a name="API_RenewalSummary"></a>
 
 Contains information about the status of ACM's [managed renewal](https://docs.aws.amazon.com/acm/latest/userguide/acm-renewal.html) for the certificate. This structure exists only when the certificate type is `AMAZON_ISSUED`.
 

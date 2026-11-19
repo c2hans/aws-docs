@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Capaci
 ---
 
 # CapacitySizeConfig
-<a name="API_CapacitySizeConfig"></a>
 
 The configuration of the size measurements of the AMI update. Using this configuration, you can specify whether SageMaker should update your instance group by an amount or percentage of instances.
 

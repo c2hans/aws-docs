@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-api-sta
 ---
 
 # Gremlin query cancellation
-<a name="gremlin-api-status-cancel"></a>
 
 To get the status of Gremlin queries, use HTTP `GET` or `POST` to make a request to the `https://{{your-neptune-endpoint}}:{{port}}/gremlin/status` endpoint.
 

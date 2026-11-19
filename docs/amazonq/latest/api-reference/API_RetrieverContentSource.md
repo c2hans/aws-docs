@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Retriev
 ---
 
 # RetrieverContentSource
-<a name="API_RetrieverContentSource"></a>
 
 Specifies a retriever as the content source for a search.
 

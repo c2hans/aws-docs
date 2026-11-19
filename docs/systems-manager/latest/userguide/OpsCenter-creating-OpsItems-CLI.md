@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Creating OpsItems manually (AWS CLI)
-<a name="OpsCenter-creating-OpsItems-CLI"></a>
 
 The following procedure describes how to create an OpsItem by using the AWS Command Line Interface (AWS CLI).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # PillarCount
-<a name="API_PillarCount"></a>
 
 Pair of a Well-Architected pillar and the number of recommendations attributed to it in a CoverageSummary.
 

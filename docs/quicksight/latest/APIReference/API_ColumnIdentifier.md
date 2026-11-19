@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnIdentifier
-<a name="API_ColumnIdentifier"></a>
 
 A column of a data set.
 

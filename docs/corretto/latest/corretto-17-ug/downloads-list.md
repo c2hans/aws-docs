@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads
 ---
 
 # Downloads for Amazon Corretto 17
-<a name="downloads-list"></a>
 
 This topic lists all the downloads available for Amazon Corretto 17. You can choose Permanent URLs pointing to the latest version, or use Version Specific URLs which point to a specific version.
 

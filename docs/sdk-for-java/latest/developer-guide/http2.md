@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 ---
 
 # Work with HTTP/2 in the AWS SDK for Java
-<a name="http2"></a>
 
 HTTP/2 is a major revision of the HTTP protocol. This new version has several enhancements to improve performance:
 + Binary data encoding provides more efficient data transfer.

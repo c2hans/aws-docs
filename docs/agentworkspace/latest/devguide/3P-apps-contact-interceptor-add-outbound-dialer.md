@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Intercept the outbound dialer action in Connect Customer agent workspace
-<a name="3P-apps-contact-interceptor-add-outbound-dialer"></a>
 
 Registers an interceptor for the outbound dialer action, which runs when the user chooses the number pad or outbound dialer. To block the built-in outbound dialer and present your own dialer UI, return `{ continue: false }` (or `false`).
 

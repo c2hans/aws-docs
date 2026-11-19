@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AzElEphemerisFilter
-<a name="API_AzElEphemerisFilter"></a>
 
 Filter for selecting contacts that use a specific [AzElEphemeris](API_AzElEphemeris.md).
 

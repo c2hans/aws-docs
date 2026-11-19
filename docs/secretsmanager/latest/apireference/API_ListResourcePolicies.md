@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_L
 ---
 
 # ListResourcePolicies
-<a name="API_ListResourcePolicies"></a>
 
 Lists the resource-based policies attached to a secret. The response contains only the names of the policies, not their contents. Secrets Manager lists `default` first, followed by any other policies in alphabetical order. To get the contents of a policy, use [GetResourcePolicy](API_GetResourcePolicy.md). You can modify only the `default` policy.
 

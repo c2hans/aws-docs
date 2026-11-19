@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # JobDetails
-<a name="API_JobDetails"></a>
 
 Contains details about the policy generation request.
 

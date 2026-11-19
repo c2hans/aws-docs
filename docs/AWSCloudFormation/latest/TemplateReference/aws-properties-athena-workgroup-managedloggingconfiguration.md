@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Athena::WorkGroup ManagedLoggingConfiguration
-<a name="aws-properties-athena-workgroup-managedloggingconfiguration"></a>
 
 Configuration settings for delivering logs to Amazon S3 buckets.
 

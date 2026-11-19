@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCl
 ---
 
 # ListClusterSchedulerConfigs
-<a name="API_ListClusterSchedulerConfigs"></a>
 
 List the cluster policy configurations.
 

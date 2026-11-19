@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule Field
-<a name="aws-properties-connect-rule-field"></a>
 
 <a name="aws-properties-connect-rule-field-description"></a>The `Field` property type specifies Property description not available. for an [AWS::Connect::Rule](aws-resource-connect-rule.md).
 

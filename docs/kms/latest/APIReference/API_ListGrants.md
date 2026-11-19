@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ListGrants.h
 ---
 
 # ListGrants
-<a name="API_ListGrants"></a>
 
 Gets a list of all grants for the specified KMS key.
 

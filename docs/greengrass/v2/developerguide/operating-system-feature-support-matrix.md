@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/operating-s
 ---
 
 # Greengrass feature compatibility
-<a name="operating-system-feature-support-matrix"></a>
 
 AWS IoT Greengrass supports devices that run various operating systems. Some features are supported on only certain operating systems. Use the following tables to learn which features are available for each supported operating system. For more information about supported operating systems, requirements, and how to set up Greengrass core devices, see [Setting up AWS IoT Greengrass core devices](setting-up.md).
 

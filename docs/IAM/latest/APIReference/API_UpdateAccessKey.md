@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccess
 ---
 
 # UpdateAccessKey
-<a name="API_UpdateAccessKey"></a>
 
 Changes the status of the specified access key from Active to Inactive, or vice versa. This operation can be used to disable a user's key as part of a key rotation workflow.
 

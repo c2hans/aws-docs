@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateProfileShare
-<a name="API_CreateProfileShare"></a>
 
 Create a profile share.
 

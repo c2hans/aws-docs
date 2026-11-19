@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AzureDe
 ---
 
 # AzureDetail
-<a name="API_AzureDetail"></a>
 
 The detailed Azure configuration for a connector.
 

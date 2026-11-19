@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-s
 ---
 
 # s3-bucket-ssl-requests-only
-<a name="s3-bucket-ssl-requests-only"></a>
 
 Checks if S3 buckets have policies that require requests to use SSL/TLS. The rule is NON\_COMPLIANT if any S3 bucket has policies allowing HTTP requests.
 

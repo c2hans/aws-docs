@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_EngineVer
 ---
 
 # EngineVersion
-<a name="API_EngineVersion"></a>
 
 The Athena engine version for running queries, or the PySpark engine version for running sessions.
 

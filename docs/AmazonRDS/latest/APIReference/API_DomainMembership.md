@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Domain
 ---
 
 # DomainMembership
-<a name="API_DomainMembership"></a>
 
 An Active Directory Domain membership record associated with the DB instance or cluster.
 

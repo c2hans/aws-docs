@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/invento
 ---
 
 # Metadata collected by Inventory
-<a name="inventory-schema"></a>
 
 The following sample shows the complete list of metadata collected by each AWS Systems Manager Inventory plugin.
 

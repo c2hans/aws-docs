@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshoot problems with Amazon EKS clusters and nodes
-<a name="troubleshooting"></a>
 
 This chapter covers some common errors that you may see while using Amazon EKS and how to work around them. If you need to troubleshoot specific Amazon EKS areas, see the separate [Troubleshooting IAM](security-iam-troubleshoot.md), [Troubleshoot Amazon EKS Connector issues](troubleshooting-connector.md), and [Troubleshooting for ADOT using EKS Add-Ons](https://aws-otel.github.io/docs/getting-started/adot-eks-add-on/troubleshooting) topics.
 

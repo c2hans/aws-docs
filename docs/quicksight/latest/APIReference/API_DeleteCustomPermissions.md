@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteCustomPermissions
-<a name="API_DeleteCustomPermissions"></a>
 
 Deletes a custom permissions profile.
 

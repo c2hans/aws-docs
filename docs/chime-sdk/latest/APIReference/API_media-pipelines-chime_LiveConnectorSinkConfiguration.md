@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # LiveConnectorSinkConfiguration
-<a name="API_media-pipelines-chime_LiveConnectorSinkConfiguration"></a>
 
 The media pipeline's sink configuration settings.
 

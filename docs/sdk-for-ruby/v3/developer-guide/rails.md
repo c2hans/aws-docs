@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/rails.ht
 ---
 
 # Using the AWS SDK for Ruby with Ruby on Rails
-<a name="rails"></a>
 
  [Ruby on Rails](http://rubyonrails.org/) provides a web development framework that makes it easy to create websites with Ruby.
 

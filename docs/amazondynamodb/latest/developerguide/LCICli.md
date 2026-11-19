@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LCI
 ---
 
 # Working with Local Secondary Indexes in DynamoDB AWS CLI
-<a name="LCICli"></a>
 
 You can use the AWS CLI to create an Amazon DynamoDB table with one or more Local Secondary Indexes, describe the indexes on the table, and perform queries using the indexes.
 

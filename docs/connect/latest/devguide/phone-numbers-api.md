@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/phone-numbers-ap
 ---
 
 # Phone number actions
-<a name="phone-numbers-api"></a>
 
 The following API actions are available for phone numbers:
 + [AssociatePhoneNumberContactFlow](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociatePhoneNumberContactFlow.html)

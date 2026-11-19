@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/ami-selection-ord
 ---
 
 # AMI selection order
-<a name="ami-selection-order"></a>
 
 AWS Batch determines the Amazon Machine Image (AMI) for compute resources using the following priority order. Understanding this order helps you understand why AWS Batch chose a particular AMI for your compute environment:
 

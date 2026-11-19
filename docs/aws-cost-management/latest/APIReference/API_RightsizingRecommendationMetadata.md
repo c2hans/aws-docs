@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RightsizingRecommendationMetadata
-<a name="API_RightsizingRecommendationMetadata"></a>
 
 Metadata for a recommendation set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/recoverygr
 ---
 
 # GetRecoveryGroupReadinessSummary
-<a name="recoverygroupreadiness-recoverygroupname"></a>
 
 ## URI
 <a name="recoverygroupreadiness-recoverygroupname-url"></a>

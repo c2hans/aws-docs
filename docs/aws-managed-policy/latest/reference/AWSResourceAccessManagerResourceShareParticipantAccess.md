@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSResourceAccessManagerResourceShareParticipantAccess
-<a name="AWSResourceAccessManagerResourceShareParticipantAccess"></a>
 
 **Description**: Provides access to AWS Resource Access Manager APIs needed by a resource share participant.
 

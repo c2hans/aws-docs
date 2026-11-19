@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway-component
 ---
 
 # MediaConnect Gateway networks
-<a name="gateway-components-networks"></a>
 
 An AWS Elemental MediaConnect Gateway *network* is a collection of IP information that will be used by the instances and bridges to communicate on your local data center network. The gateway network information must match the local data center network that you are using to communicate with the gateway. Each gateway may contain a maximum of two networks. All gateways must contain at least one network.
 

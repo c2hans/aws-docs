@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-event-
 ---
 
 # Event flow sequence
-<a name="sonic-event-flow"></a>
 
 A typical conversation follows this event sequence:
 

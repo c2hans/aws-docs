@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_DeleteRequeste
 ---
 
 # DeleteRequesterGateway
-<a name="API_DeleteRequesterGateway"></a>
 
 Deletes a requester gateway.
 

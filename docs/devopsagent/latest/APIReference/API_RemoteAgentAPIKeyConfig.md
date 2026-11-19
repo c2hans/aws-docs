@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Remo
 ---
 
 # RemoteAgentAPIKeyConfig
-<a name="API_RemoteAgentAPIKeyConfig"></a>
 
 API key configuration for remote A2A agent.
 

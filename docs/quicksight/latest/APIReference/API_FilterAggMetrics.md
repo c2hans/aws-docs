@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterAggMetrics
-<a name="API_FilterAggMetrics"></a>
 
 The definition for the `FilterAggMetrics`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoin
 ---
 
 # Configure an endpoint service
-<a name="configure-endpoint-service"></a>
 
 After you create an endpoint service, you can update its configuration.
 

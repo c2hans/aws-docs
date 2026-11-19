@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-expl
 ---
 
 # Share an AMI with specific AWS accounts
-<a name="sharingamis-explicit"></a>
 
 You can share an AMI with specific AWS accounts without making the AMI public. All you need are the AWS account IDs.
 

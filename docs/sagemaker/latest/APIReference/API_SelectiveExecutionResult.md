@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Select
 ---
 
 # SelectiveExecutionResult
-<a name="API_SelectiveExecutionResult"></a>
 
 The ARN from an execution of the current pipeline.
 

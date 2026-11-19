@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-replica
 ---
 
 # Enabling GTID-based replication for existing read replicas for RDS for MySQL
-<a name="mysql-replication-gtid.configuring-existing-read-replicas"></a>
 
 For an existing MySQL DB instance with read replicas that doesn't use GTID-based replication, you can configure GTID-based replication between the DB instance and the read replicas.
 

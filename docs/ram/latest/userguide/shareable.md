@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/shareable.html
 ---
 
 # Shareable AWS resources
-<a name="shareable"></a><a name="permissions-rbp-supported-resource-types"></a>
+<a name="permissions-rbp-supported-resource-types"></a>
 
 With AWS Resource Access Manager (AWS RAM), you can share resources that are created and managed by other AWS services. You can share resources with individual AWS accounts. You can also share resources with the accounts in an organization or organizational units (OUs) in AWS Organizations. Some supported resource types also let you share resources with individual AWS Identity and Access Management (IAM) roles and users.
 

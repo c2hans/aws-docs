@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/bb-communication.
 ---
 
 # Communication
-<a name="bb-communication"></a>
 
 This section covers Blocks for sending messages to users.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-createper
 ---
 
 # CreatePersonalTime
-<a name="rest-op-createpersonaltime"></a>
 
 Adds a block of time that is your own, rather than a session — travel, a meeting, a break. You must sign in.
 

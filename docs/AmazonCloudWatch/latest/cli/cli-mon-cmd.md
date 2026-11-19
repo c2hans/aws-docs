@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-cmd.
 ---
 
 # mon-cmd
-<a name="cli-mon-cmd"></a>
 
 ## Description
 <a name="w2aab9c11b3"></a>

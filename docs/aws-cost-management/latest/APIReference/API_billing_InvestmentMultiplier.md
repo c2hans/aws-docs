@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvestmentMultiplier
-<a name="API_billing_InvestmentMultiplier"></a>
 
 A multiplier used to convert attestation input into an investment value.
 

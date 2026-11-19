@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessContentBlockStart
-<a name="API_HarnessContentBlockStart"></a>
 
 The start payload for a content block.
 

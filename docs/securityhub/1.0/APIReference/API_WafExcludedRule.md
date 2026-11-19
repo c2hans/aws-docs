@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_WafExcl
 ---
 
 # WafExcludedRule
-<a name="API_WafExcludedRule"></a>
 
 Details about a rule to exclude from a rule group.
 

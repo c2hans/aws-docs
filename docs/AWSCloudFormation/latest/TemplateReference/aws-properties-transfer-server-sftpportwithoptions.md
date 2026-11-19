@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::Server SftpPortWithOptions
-<a name="aws-properties-transfer-server-sftpportwithoptions"></a>
 
 Specifies the configuration for a single SFTP port on a Transfer Family server that uses the SFTP protocol and has a `PUBLIC` endpoint. Each entry in the `SftpPorts` list is an `SftpPortWithOptions` object that pairs a port number with a communication mode.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Update Lambda architecture
-<a name="update-lambda-architecture"></a>
 
 Follow these steps to update an existing Lambda architecture deployment to the latest version:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Viewing custom endpoints
-<a name="aurora-endpoint-viewing"></a>
 
 ## Console
 <a name="aurora-view-endpoint.console"></a>

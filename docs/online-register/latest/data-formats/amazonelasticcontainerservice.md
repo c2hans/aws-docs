@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Elastic Container Service
-<a name="amazonelasticcontainerservice"></a>
 
 Amazon Elastic Container Service provides the following APIs for data retrieval.
 

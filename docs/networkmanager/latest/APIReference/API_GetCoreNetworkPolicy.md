@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetCoreNetworkPolicy
-<a name="API_GetCoreNetworkPolicy"></a>
 
 Returns details about a core network policy. You can get details about your current live policy or any previous policy version.
 

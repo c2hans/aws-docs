@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Send custom attributes to Amazon Cognito and inject them into tokens
-<a name="send-custom-attributes-cognito"></a>
 
 *Carlos Alessandro Ribeiro and Mauricio Mendoza, Amazon Web Services*
 

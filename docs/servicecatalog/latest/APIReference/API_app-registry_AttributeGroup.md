@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # AttributeGroup
-<a name="API_app-registry_AttributeGroup"></a>
 
 Represents a AWS Service Catalog AppRegistry attribute group that is rich metadata which describes an application and its components.
 

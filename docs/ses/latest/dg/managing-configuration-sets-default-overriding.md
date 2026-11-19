@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/managing-configuration-set
 ---
 
 # Override the current default configuration set used by the identity using the SES API
-<a name="managing-configuration-sets-default-overriding"></a>
 
 You can use the [SendEmail](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation to send email with a different configuration set. If you do, the configuration set that you specify overrides the default configuration set for the identity.
 

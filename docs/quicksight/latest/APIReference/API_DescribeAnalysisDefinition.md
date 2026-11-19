@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAnalysisDefinition
-<a name="API_DescribeAnalysisDefinition"></a>
 
 Provides a detailed description of the definition of an analysis.
 

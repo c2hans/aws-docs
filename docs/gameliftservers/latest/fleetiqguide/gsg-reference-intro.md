@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 ---
 
 # Amazon GameLift Servers FleetIQ reference guides
-<a name="gsg-reference-intro"></a>
 
 This section contains reference documentation for use with Amazon GameLift Servers FleetIQ.
 

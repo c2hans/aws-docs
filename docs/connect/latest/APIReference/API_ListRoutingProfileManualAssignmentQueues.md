@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRout
 ---
 
 # ListRoutingProfileManualAssignmentQueues
-<a name="API_ListRoutingProfileManualAssignmentQueues"></a>
 
 Lists the manual assignment queues associated with a routing profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-idt-dev-te
 ---
 
 # Set up the LTS qualification prerequisites
-<a name="lts-idt-dev-tester-prereqs"></a>
 
 This section describes the prerequisites for testing microcontrollers with AWS IoT Device Tester.
 

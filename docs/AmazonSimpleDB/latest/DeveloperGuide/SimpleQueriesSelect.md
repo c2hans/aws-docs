@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Sim
 ---
 
 # Simple Queries
-<a name="SimpleQueriesSelect"></a>
 
 This section shows simple queries and their results.
 

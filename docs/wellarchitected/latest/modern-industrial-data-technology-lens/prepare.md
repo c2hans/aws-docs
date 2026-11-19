@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Prepare
-<a name="prepare"></a>
 
 |  MIDAOPS01: How do you assess your industrial data workload against compliance requirements?  |
 | --- |

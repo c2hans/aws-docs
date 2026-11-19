@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-
 ---
 
 # Start batch evaluation
-<a name="batch-evaluations-start"></a>
 
 Start a batch evaluation to run evaluators against multiple agent sessions. The service discovers sessions from CloudWatch Logs, runs each evaluator against each session, and produces aggregate results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-devenv
 ---
 
 # Setting up your .NET development environment
-<a name="dotnet-devenv"></a>
 
 This topic provides instructions to set up a .NET Windows development environment to test your application locally prior to deploying it to AWS Elastic Beanstalk. It also references websites that provide installation instructions for useful tools.
 

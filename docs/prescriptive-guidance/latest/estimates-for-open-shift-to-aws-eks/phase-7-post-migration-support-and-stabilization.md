@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Phase 7: Post-migration support and stabilization
-<a name="phase-7-post-migration-support-and-stabilization"></a>
 
 **Considering migration** **scope of 1 cluster \| 100\+ applications. The following table represents the post-migration suppoet and stabilization effort.**
 

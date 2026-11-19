@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/o
 ---
 
 # AWS Outposts Networking Reference Architecture
-<a name="outposts-networking"></a>
 
 Publication date: **August 5, 2022 ([Diagram history](#diagram-history))**
 

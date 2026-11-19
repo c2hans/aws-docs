@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/start-green
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Install and run AWS IoT Greengrass on the core device
-<a name="start-greengrass"></a>
 
 **Note**
 This tutorial provides instructions for you to run the AWS IoT Greengrass Core software on a Raspberry Pi, but you can use any supported device.

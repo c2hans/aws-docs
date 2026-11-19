@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/organi
 ---
 
 # Organize devices into fleets
-<a name="organize-devices-into-fleets"></a>
 
 With fleets, you can quickly pick the devices that are relevant to a given location. Only administrators can manage fleets.
 

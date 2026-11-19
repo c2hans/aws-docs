@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ReasonCodeSummary
-<a name="API_ReasonCodeSummary"></a>
 
 A summary of a finding reason code.
 

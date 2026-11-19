@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ECSServiceProjectedUtilizationMetric
-<a name="API_ECSServiceProjectedUtilizationMetric"></a>
 
  Describes the projected utilization metrics of an Amazon ECS service recommendation option.
 

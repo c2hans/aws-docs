@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/securit
 ---
 
 # Integrating ActiveMQ brokers with LDAP
-<a name="security-authentication-authorization"></a>
 
 **Important**
 Amazon MQ does not support server certificate issued by a private CA.

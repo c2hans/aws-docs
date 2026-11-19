@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayConnectorHealthCheck
-<a name="API_GatewayConnectorHealthCheck"></a>
 
 The health check configuration that a gateway uses to evaluate the targets associated with a gateway connector.
 

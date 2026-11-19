@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/config
 ---
 
 # Configuring Domain Endpoint Options in Amazon CloudSearch
-<a name="configuring-domain-endpoint-options"></a>
 
 Amazon CloudSearch domains let you require that all traffic to the domain arrive over HTTPS. This security feature helps you block clients that send unencrypted requests to the domain.
 

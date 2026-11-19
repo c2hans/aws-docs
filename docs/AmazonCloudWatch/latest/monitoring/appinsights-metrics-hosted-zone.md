@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Amazon Route 53 hosted zone
-<a name="appinsights-metrics-hosted-zone"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableCellConditionalFormatting
-<a name="API_TableCellConditionalFormatting"></a>
 
 The cell conditional formatting option for a table.
 

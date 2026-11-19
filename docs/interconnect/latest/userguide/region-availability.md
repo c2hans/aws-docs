@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/userguide/region-ava
 ---
 
 # Regional Availability
-<a name="region-availability"></a>
 
 ## AWS Interconnect – last mile
 <a name="last-mile-availability"></a>

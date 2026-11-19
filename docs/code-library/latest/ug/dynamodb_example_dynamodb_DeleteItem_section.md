@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/dynamodb_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DeleteItem` with an AWS SDK or CLI
-<a name="dynamodb_example_dynamodb_DeleteItem_section"></a>
 
 The following code examples show how to use `DeleteItem`.
 

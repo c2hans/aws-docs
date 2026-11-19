@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CloudWatchDi
 ---
 
 # CloudWatchDimensionConfiguration
-<a name="API_CloudWatchDimensionConfiguration"></a>
 
 Contains the dimension configuration to use when you publish email sending events to Amazon CloudWatch.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/control-your-costs-free-
 ---
 
 # Control Your AWS Costs
-<a name="control-your-costs-free-tier-budgets"></a>
 
 |  |  |
 | --- |--- |

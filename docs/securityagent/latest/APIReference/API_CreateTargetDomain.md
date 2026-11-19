@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateTargetDomain
-<a name="API_CreateTargetDomain"></a>
 
 Creates a new target domain for penetration testing. A target domain is a web domain that must be registered and verified before it can be tested.
 

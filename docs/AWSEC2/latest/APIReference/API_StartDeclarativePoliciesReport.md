@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StartDecl
 ---
 
 # StartDeclarativePoliciesReport
-<a name="API_StartDeclarativePoliciesReport"></a>
 
 Generates an account status report. The report is generated asynchronously, and can take several hours to complete.
 

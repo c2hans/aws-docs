@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # MacAlgorithmDukpt
-<a name="API_MacAlgorithmDukpt"></a>
 
 Parameters required for DUKPT MAC generation and verification.
 

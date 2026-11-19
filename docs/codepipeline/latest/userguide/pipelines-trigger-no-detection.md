@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Add trigger to turn off change detection
-<a name="pipelines-trigger-no-detection"></a>
 
 Triggers allow you to configure your pipeline to start on a particular event type, such as a code push or pull request. Triggers are configurable for source actions with connections that use the `CodeStarSourceConnection` action in CodePipeline, such as GitHub, Bitbucket, and GitLab.
 

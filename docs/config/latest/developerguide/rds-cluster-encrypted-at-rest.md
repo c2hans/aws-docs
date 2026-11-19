@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster
 ---
 
 # rds-cluster-encrypted-at-rest
-<a name="rds-cluster-encrypted-at-rest"></a>
 
 Checks if an Amazon Relational Database Service (Amazon RDS) cluster is encrypted at rest. The rule is NON\_COMPLIANT if an Amazon RDS cluster is not encrypted at rest.
 

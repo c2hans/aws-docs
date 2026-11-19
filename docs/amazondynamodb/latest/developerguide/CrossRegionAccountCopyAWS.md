@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Cro
 ---
 
 # Copying a backup of a DynamoDB table with AWS Backup
-<a name="CrossRegionAccountCopyAWS"></a>
 
 You can make a copy of a current backup. You can copy backups to multiple AWS accounts or AWS Regions on demand or automatically as part of a scheduled backup plan. You can also automate a sequence of cross-account and cross-Region copies for Amazon DynamoDB Encryption Client.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # LambdaFunctionSinkConfiguration
-<a name="API_media-pipelines-chime_LambdaFunctionSinkConfiguration"></a>
 
 A structure that contains the configuration settings for an AWS Lambda function's data sink.
 

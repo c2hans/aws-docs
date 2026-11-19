@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/point-in-time
 ---
 
 # Continuous backups and point-in-time recovery (PITR)
-<a name="point-in-time-recovery"></a>
 
 For some resources, AWS Backup supports continuous backups and point-in-time recovery (PITR) in addition to snapshot backups.
 

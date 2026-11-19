@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Step C: Split the cluster
-<a name="migrate-split-c-split"></a>
 
 **Note**
 In this procedure, the Conductor nodes change their roles. Therefore, the node that is originally the primary node is called node X. The node that is originally the secondary node is called node Y.

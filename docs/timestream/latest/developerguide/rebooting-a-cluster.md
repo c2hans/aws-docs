@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/rebooti
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Reboot a cluster in Timestream for InfluxDB 3
-<a name="rebooting-a-cluster"></a>
 
  You can reboot your cluster in Amazon Timestream in the event of a cluster health issue.
 

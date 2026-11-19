@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_RedshiftCon
 ---
 
 # RedshiftConnectorProfileProperties
-<a name="API_RedshiftConnectorProfileProperties"></a>
 
  The connector-specific profile properties when using Amazon Redshift.
 

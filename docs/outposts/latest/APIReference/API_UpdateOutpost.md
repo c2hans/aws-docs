@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_UpdateO
 ---
 
 # UpdateOutpost
-<a name="API_UpdateOutpost"></a>
 
  Updates an Outpost.
 

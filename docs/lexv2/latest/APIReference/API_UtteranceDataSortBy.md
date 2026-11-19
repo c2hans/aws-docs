@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UtteranceD
 ---
 
 # UtteranceDataSortBy
-<a name="API_UtteranceDataSortBy"></a>
 
 An object specifying the measure and method by which to sort the utterance data.
 

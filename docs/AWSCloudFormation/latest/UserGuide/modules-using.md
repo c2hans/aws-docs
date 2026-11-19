@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/modul
 ---
 
 # Use modules from the CloudFormation private registry
-<a name="modules-using"></a>
 
 This topic explains how to use modules in CloudFormation templates. Think of modules as pre-made bundles of resources that you can add to your templates.
 

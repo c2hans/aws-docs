@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Bedrock Runtime
-<a name="API_Types_Amazon_Bedrock_Runtime"></a>
 
 The following data types are supported by Amazon Bedrock Runtime:
 +  [AnyToolChoice](API_runtime_AnyToolChoice.md)

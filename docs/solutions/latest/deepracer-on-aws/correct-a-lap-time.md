@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/correc
 ---
 
 # Correct a recorded lap time
-<a name="correct-a-lap-time"></a>
 
 **Note**
 Only admins can correct a recorded lap time.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingTypeMet
 ---
 
 # ThingTypeMetadata
-<a name="API_ThingTypeMetadata"></a>
 
 The ThingTypeMetadata contains additional information about the thing type including: creation date and time, a value indicating whether the thing type is deprecated, and a date and time when time was deprecated.
 

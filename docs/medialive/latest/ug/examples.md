@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/examples.html
 ---
 
 # Examples of handling captions in MediaLive
-<a name="examples"></a>
 
 The following examples describe how to implement the use cases from [Typical scenarios for handling captions](typical-scenarios.md).
 

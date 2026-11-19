@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_NluImprove
 ---
 
 # NluImprovementSpecification
-<a name="API_NluImprovementSpecification"></a>
 
 Configures the Assisted Natural Language Understanding (NLU) feature for your bot. This specification determines whether enhanced intent recognition and utterance understanding capabilities are active.
 

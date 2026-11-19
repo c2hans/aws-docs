@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/iam-user-po
 ---
 
 # AWS Marketplace metering and entitlement API permissions
-<a name="iam-user-policy-for-aws-marketplace-actions"></a>
 
 Software as a service (SaaS) products, Amazon Machine Image (AMI) products, and container products can use the AWS Marketplace Metering Service and AWS Marketplace Entitlement Service APIs. Each type requires different AWS Identity and Access Management (IAM) permissions. For your product or products, you meter for all usage, and customers are billed by AWS based on the metering records that you provide. To enable the integration required to provide AWS Marketplace your metering records, the service account that the integration is using needs a constrained IAM policy to enable access. Attach the policy for the product type that you're sending metering information for to the user or role that you're using for the integration.
 

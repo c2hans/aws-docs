@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Getting Started with GDPR Compliance on AWS
-<a name="getting-started-with-gdpr-compliance-on-aws"></a>
 
 AWS makes available services, features, and documentation that customers can use to configure their environments in alignment with GDPR requirements. Customers remain responsible for evaluating their own use of AWS services and defining their individual compliance approach.
 

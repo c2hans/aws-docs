@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-manage-apps-a
 ---
 
 # Check for active applications
-<a name="canvas-manage-apps-active"></a>
 
 To check if you have any actively running SageMaker Canvas applications, use the following procedure.
 

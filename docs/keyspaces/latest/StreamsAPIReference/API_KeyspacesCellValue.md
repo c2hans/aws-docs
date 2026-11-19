@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # KeyspacesCellValue
-<a name="API_KeyspacesCellValue"></a>
 
 Represents the value of a cell in an Amazon Keyspaces table, supporting various data types with type-specific fields.
 

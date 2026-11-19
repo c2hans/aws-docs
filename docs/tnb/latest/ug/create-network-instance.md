@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/create-network-instance.ht
 ---
 
 # Create a network instance using AWS TNB
-<a name="create-network-instance"></a>
 
 You create a network instance after creating a network package. After you create a network instance, instantiate it.
 

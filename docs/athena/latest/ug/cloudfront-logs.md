@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/cloudfront-logs.html
 ---
 
 # Query Amazon CloudFront logs
-<a name="cloudfront-logs"></a>
 
 You can configure Amazon CloudFront CDN to export Web distribution access logs to Amazon Simple Storage Service. Use these logs to explore users' surfing patterns across your web properties served by CloudFront.
 

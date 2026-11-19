@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Gitflow branching strategy
-<a name="gitflow-branching-strategy"></a>
 
 Gitflow is a branching model that involves the use of multiple branches to move code from development to production. Gitflow works well for teams that have scheduled release cycles and a need to define a collection of features as a release. Development is completed in individual feature branches that are merged, with approval, into a develop branch, which is used for integration. The features in this branch are considered ready for production. When all planned features have accumulated in the develop branch, a release branch is created for deployments to upper environments. This separation improves control over which changes are moving to which named environment on a defined schedule. If necessary, you can accelerate this process into a faster deployment model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLDataSource
-<a name="API_AutoMLDataSource"></a>
 
 The data source for the Autopilot job.
 

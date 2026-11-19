@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/logging-API-us
 ---
 
 # Log API calls with AWS CloudTrail
-<a name="logging-API-using-cloudtrail"></a>
 
 **Note**
 AWS CloudTrail logs are available for Amazon MSK only when you use [IAM access control](iam-access-control.md).

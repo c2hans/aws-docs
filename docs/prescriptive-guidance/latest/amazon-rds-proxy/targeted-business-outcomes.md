@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 This section discusses the following business outcomes:
 + Increase application scalability

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicNamedEntity
-<a name="API_TopicNamedEntity"></a>
 
 A structure that represents a named entity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataMaintenanceOptionsDetails
-<a name="API_AwsEc2LaunchTemplateDataMaintenanceOptionsDetails"></a>
 
  The maintenance options of an Amazon EC2 instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # NonCompliantSummary
-<a name="API_NonCompliantSummary"></a>
 
 A summary of resources that aren't compliant. The summary is organized according to resource type.
 

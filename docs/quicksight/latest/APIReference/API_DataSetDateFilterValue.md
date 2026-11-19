@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetDateFilterValue
-<a name="API_DataSetDateFilterValue"></a>
 
 Represents a date value used in filter conditions.
 

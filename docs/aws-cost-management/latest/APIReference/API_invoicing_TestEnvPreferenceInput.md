@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TestEnvPreferenceInput
-<a name="API_invoicing_TestEnvPreferenceInput"></a>
 
 Input parameters for configuring test environment preferences for a procurement portal.
 

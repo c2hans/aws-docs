@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LinkedinOauth2ProviderConfigOutput
-<a name="API_LinkedinOauth2ProviderConfigOutput"></a>
 
 The configuration details returned for a LinkedIn OAuth2 provider, including the client ID and OAuth2 discovery information.
 

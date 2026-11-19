@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-table-
 ---
 
 # Query Iceberg table data
-<a name="querying-iceberg-table-data"></a>
 
 To query an Iceberg dataset, use a standard `SELECT` statement like the following. Queries follow the Apache Iceberg [format v2 spec](https://iceberg.apache.org/spec/#format-versioning) and perform merge-on-read of both position and equality deletes.
 

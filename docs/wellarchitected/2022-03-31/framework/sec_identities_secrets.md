@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC02-BP03 Store and use secrets securely
-<a name="sec_identities_secrets"></a>
 
  For workforce and machine identities that require secrets such as passwords to third-party applications, store them with automatic rotation using the latest industry standards in a specialized service, such as for credentials that are not IAM-related and cannot take advantage of temporary credentials, such as database logins, use a service that is designed to handle management of secrets, such as AWS Secrets Manager. Secrets Manager makes it easy to manage, rotate, and securely store encrypted secrets using supported services. Calls to access the secrets are logged in AWS CloudTrail for auditing purposes, and IAM permissions can grant least-privilege access to them.
 

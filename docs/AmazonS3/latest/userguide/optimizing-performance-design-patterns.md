@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-per
 ---
 
 # Performance design patterns for Amazon S3
-<a name="optimizing-performance-design-patterns"></a>
 
 When designing applications to upload and retrieve objects from Amazon S3, use our best practices design patterns for achieving the best performance for your application. We also offer [Performance guidelines for Amazon S3 ](optimizing-performance-guidelines.md) for you to consider when planning your application architecture.
 

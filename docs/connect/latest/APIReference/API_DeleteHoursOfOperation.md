@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteHo
 ---
 
 # DeleteHoursOfOperation
-<a name="API_DeleteHoursOfOperation"></a>
 
 Deletes an hours of operation.
 

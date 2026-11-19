@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/listi
 ---
 
 # Listing managed views
-<a name="listing-managed-views"></a>
 
 You can see which managed views you have access to on the **Views** page in the Resource Explorer console. You can also run AWS CLI commands or their equivalent API operations in an AWS SDK to list the managed views you have access to in your currently selected AWS Region and retrieve view details.
 

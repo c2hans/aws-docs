@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # PhysicalNetworkInterface
-<a name="API_devicemanagement_PhysicalNetworkInterface"></a>
 
 The details about the physical network interface for the device.
 

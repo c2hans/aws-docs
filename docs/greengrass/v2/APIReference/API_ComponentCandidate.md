@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Component
 ---
 
 # ComponentCandidate
-<a name="API_ComponentCandidate"></a>
 
 Contains information about a component that is a candidate to deploy to a Greengrass core device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Del
 ---
 
 # DeleteTrust
-<a name="API_DeleteTrust"></a>
 
 Deletes an existing trust relationship between your AWS Managed Microsoft AD directory and an external domain.
 

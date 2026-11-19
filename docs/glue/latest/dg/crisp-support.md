@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/crisp-support.html
 ---
 
 # AWS Glue support for Crisp
-<a name="crisp-support"></a>
 
 AWS Glue supports Crisp as follows:
 

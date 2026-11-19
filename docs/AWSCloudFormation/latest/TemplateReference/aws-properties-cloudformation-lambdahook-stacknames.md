@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::LambdaHook StackNames
-<a name="aws-properties-cloudformation-lambdahook-stacknames"></a>
 
 Specifies the stack names for the `StackFilters` property type to include or exclude specific stacks from Hook invocations.
 

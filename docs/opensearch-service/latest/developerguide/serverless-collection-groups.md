@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Amazon OpenSearch Serverless collection groups
-<a name="serverless-collection-groups"></a>
 
 *Collection groups* in Amazon OpenSearch Serverless organize multiple collections and enable compute resource sharing across collections with different KMS keys. This shared compute model reduces costs by eliminating the need for separate OpenSearch Compute Units (OCUs) for each KMS key.
 

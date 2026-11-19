@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/suppor
 ---
 
 # OpenAI Agents
-<a name="supported-frameworks-openai-agents"></a>
 
 This page explains how to instrument an [OpenAI Agents](https://openai.github.io/openai-agents-python/) agent, how spans are identified, and how evaluation fields are extracted. AgentCore Evaluations supports OpenAI Agents built in Python and TypeScript; this page covers each language separately, in [Python agent support](#openai-agents-python) and [TypeScript agent support](#openai-agents-typescript).
 

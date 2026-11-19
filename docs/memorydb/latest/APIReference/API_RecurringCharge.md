@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Recurri
 ---
 
 # RecurringCharge
-<a name="API_RecurringCharge"></a>
 
 The recurring charge to run this reserved node.
 

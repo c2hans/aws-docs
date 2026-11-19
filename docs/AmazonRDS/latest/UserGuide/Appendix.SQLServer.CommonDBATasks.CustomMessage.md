@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Creating custom error messages for Amazon RDS for SQL Server
-<a name="Appendix.SQLServer.CommonDBATasks.CustomMessage"></a>
 
 Applications often define their own error messages in `sys.messages` so that they can raise them with `RAISERROR`. On an Amazon RDS DB instance, to add a custom message to `sys.messages`, use the `rds_create_custom_message` stored procedure. The procedure passes its parameters to `sp_addmessage`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Descri
 ---
 
 # DescribeActivityType
-<a name="API_DescribeActivityType"></a>
 
 Returns information about the specified activity type. This includes configuration settings provided when the type was registered and other general information about the type.
 

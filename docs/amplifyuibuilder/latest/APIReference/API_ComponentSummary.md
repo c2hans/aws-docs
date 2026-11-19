@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ComponentSummary
-<a name="API_ComponentSummary"></a>
 
 Contains a summary of a component. This is a read-only data type that is returned by `ListComponents`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/interactions-inv
 ---
 
 # InvokeLambdaFunction
-<a name="interactions-invokelambdafunction"></a>
 
 Invokes an AWS Lambda function with a collection of optional parameters. This AWS Lambda function is also given a copy of the flow run data if there is an associated contact with the flow.
 

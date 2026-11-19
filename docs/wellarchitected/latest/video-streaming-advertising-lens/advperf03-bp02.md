@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVPERF03-BP02 Use object storage to store and analyze raw data from ad servers, DSPs, and DMPs
-<a name="advperf03-bp02"></a>
 
  [Amazon S3](https://aws.amazon.com/s3/) can store massive amounts of advertising data while balancing cost and performance. Use object storage to build data lakes and analyze this data, from real-time bid analytics to historical attribution modeling.
 

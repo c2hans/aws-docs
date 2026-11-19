@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteCustomDBEngineVersion
-<a name="API_DeleteCustomDBEngineVersion"></a>
 
 Deletes a custom engine version. To run this command, make sure you meet the following prerequisites:
 + The CEV must not be the default for RDS Custom. If it is, change the default before running this command.

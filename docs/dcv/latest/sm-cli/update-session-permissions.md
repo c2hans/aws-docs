@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/update-session-permiss
 ---
 
 # update-session-permissions
-<a name="update-session-permissions"></a>
 
 Updates the user permissions for a specific Amazon DCV session.
 

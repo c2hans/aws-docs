@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/permissio
 ---
 
 # Permission policy
-<a name="permission-profiles"></a>
 
 Research and Engineering Studio (RES) allows an administrative user to create custom permission profiles that grant selected users additional permissions to manage the project that they are part of. Each project comes with two [default permission profiles](permission-matrix.md)- "Project Member" and "Project Owner" that can be customized after deployment.
 

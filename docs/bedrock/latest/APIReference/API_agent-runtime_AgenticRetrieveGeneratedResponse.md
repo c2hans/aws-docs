@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveGeneratedResponse
-<a name="API_agent-runtime_AgenticRetrieveGeneratedResponse"></a>
 
 The generated response synthesized from retrieved results.
 

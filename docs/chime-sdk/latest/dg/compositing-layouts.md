@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/compositing-layouts.
 ---
 
 # Using the layout configurations for compositing in Amazon Chime SDK meetings
-<a name="compositing-layouts"></a>
 
 The following topics explain how to use the different configuration layouts. The layouts only take effect when someone starts a content share. Expand each section to learn more.
 

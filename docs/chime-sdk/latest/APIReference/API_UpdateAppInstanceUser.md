@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Update
 ---
 
 # UpdateAppInstanceUser
-<a name="API_UpdateAppInstanceUser"></a>
 
 Updates the details of an `AppInstanceUser`. You can update names and metadata.
 

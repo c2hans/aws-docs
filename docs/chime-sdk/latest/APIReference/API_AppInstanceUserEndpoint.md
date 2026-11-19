@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_AppIns
 ---
 
 # AppInstanceUserEndpoint
-<a name="API_AppInstanceUserEndpoint"></a>
 
 An endpoint under an Amazon Chime `AppInstanceUser` that receives messages for a user. For push notifications, the endpoint is a mobile device used to receive mobile push notifications for a user.
 

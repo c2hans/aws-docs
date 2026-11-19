@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_Rea
 ---
 
 # RealtimeContactAnalysisSegment
-<a name="API_connect-contact-lens_RealtimeContactAnalysisSegment"></a>
 
 An analyzed segment for a real-time analysis session.
 

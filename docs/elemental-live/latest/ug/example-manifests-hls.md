@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/example-manifes
 ---
 
 # Example manifests for Apple HLS
-<a name="example-manifests-hls"></a>
 
 This section lists example manifests for the Apple HLS manifest styles that AWS Elemental supports.
 

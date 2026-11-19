@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBClusterParameters
-<a name="API_DescribeDBClusterParameters"></a>
 
 Returns the detailed parameter list for a particular DB cluster parameter group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeleteQu
 ---
 
 # DeleteQueue
-<a name="API_DeleteQueue"></a>
 
 Deletes the specified queue. Records that are in flight when you delete the queue are not delivered again, and receipt handles issued by the queue stop being valid.
 

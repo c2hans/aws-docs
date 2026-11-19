@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_GetTer
 ---
 
 # GetTerminology
-<a name="API_GetTerminology"></a>
 
 Retrieves a custom terminology.
 

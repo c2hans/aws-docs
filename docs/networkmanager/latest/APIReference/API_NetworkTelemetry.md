@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_N
 ---
 
 # NetworkTelemetry
-<a name="API_NetworkTelemetry"></a>
 
 Describes the telemetry information for a resource.
 

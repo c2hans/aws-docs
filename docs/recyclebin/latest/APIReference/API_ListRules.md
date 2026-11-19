@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_ListR
 ---
 
 # ListRules
-<a name="API_ListRules"></a>
 
 Lists the Recycle Bin retention rules in the Region.
 

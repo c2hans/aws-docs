@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Delet
 ---
 
 # DeleteTestGridProject
-<a name="API_DeleteTestGridProject"></a>
 
  Deletes a Selenium testing project and all content generated under it. You cannot delete a project if it has active sessions.
 

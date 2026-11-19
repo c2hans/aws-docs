@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_RelatedIte
 ---
 
 # RelatedItemEventIncludedData
-<a name="API_connect-cases_RelatedItemEventIncludedData"></a>
 
 Details of what related item data is published through the case event stream.
 

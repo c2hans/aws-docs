@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchD
 ---
 
 # BatchDescribeModelPackage
-<a name="API_BatchDescribeModelPackage"></a>
 
 This action batch describes a list of versioned model packages
 

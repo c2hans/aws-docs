@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeGuruProfiler::ProfilingGroup AgentPermissions
-<a name="aws-properties-codeguruprofiler-profilinggroup-agentpermissions"></a>
 
 The agent permissions attached to a profiling group. Granting `AgentPermissions` to a role or user allows that role or user to perform actions required by the profiling agent, `ConfigureAgent` and `PostAgentProfile`. For more information, see [Resource-based policies in CodeGuru Profiler](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/resource-based-policies.html) in the *Amazon CodeGuru Profiler User Guide*.
 

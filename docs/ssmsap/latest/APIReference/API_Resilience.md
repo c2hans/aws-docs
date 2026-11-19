@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Resilienc
 ---
 
 # Resilience
-<a name="API_Resilience"></a>
 
 Details of the SAP HANA system replication for the instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Co
 ---
 
 # Control
-<a name="API_Control"></a>
 
  A control in AWS Audit Manager.
 

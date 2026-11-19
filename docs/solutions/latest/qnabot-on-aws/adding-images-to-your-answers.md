@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/adding-im
 ---
 
 # Adding images to your answers
-<a name="adding-images-to-your-answers"></a>
 
 You can augment your answers with image attachments that can be displayed on an end user’s Amazon Lex web client user interface, Alexa smartphone app, or Amazon Echo Show device touch screen. For example, you can use images to display maps, diagrams, or photographs to depict places and products relevant to a question.
 

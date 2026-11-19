@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/sso-
 ---
 
 # AWS IAM Identity Center
-<a name="sso-credentials"></a>
 
 AWS IAM Identity Center is the recommended best practice for managing your AWS account authentication.
 

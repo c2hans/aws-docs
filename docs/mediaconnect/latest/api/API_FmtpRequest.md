@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FmtpRequest.
 ---
 
 # FmtpRequest
-<a name="API_FmtpRequest"></a>
 
  The settings that you want to use to define the media stream.
 

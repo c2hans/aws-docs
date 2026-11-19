@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_StopJob
 ---
 
 # StopJobRun
-<a name="API_StopJobRun"></a>
 
 Stops a particular run of a job.
 

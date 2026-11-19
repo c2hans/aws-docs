@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InlineGroundTruth
-<a name="API_InlineGroundTruth"></a>
 
 Inline ground truth data containing assertions, expected trajectories, and per-turn expected responses.
 

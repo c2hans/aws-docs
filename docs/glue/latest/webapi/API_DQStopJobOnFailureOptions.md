@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DQStopJobOnFailur
 ---
 
 # DQStopJobOnFailureOptions
-<a name="API_DQStopJobOnFailureOptions"></a>
 
 Options to configure how your job will stop if your data quality evaluation fails.
 

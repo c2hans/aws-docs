@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/buil
 ---
 
 # AWS Lambda Functions
-<a name="building-lambda"></a>
 
 The AWS Toolkit for Visual Studio Code provides comprehensive support for AWS Lambda functions, enabling you to build, test, and deploy directly from VS Code.
 

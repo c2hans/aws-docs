@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # RDSMetadata
-<a name="API_RDSMetadata"></a>
 
 The datasource details that are specific to Amazon RDS.
 

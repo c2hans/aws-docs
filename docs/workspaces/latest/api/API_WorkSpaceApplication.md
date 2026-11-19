@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkSpaceAppli
 ---
 
 # WorkSpaceApplication
-<a name="API_WorkSpaceApplication"></a>
 
 Describes the WorkSpace application.
 

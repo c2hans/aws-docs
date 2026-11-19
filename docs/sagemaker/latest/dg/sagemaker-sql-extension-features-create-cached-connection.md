@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Create cached connections
-<a name="sagemaker-sql-extension-features-create-cached-connection"></a>
 
 You can create cached connections by specifying a connection name in the `--connection-name` parameter of your connection string. This is particularly useful when multiple connection properties are overridden for a specific use case, and there's a need to reuse the same properties without retyping them.
 

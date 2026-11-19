@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DescribeInstanceTypeLimits
-<a name="API_DescribeInstanceTypeLimits"></a>
 
 Describes the instance count, storage, and master node limits for a given OpenSearch or Elasticsearch version and instance type.
 

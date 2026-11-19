@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/import-RS
 ---
 
 # Importing AWS Data Exchange assets from an AWS Data Exchange datashare for Amazon Redshift
-<a name="import-RS-asset"></a>
 
 When you import assets using AWS Data Exchange datashare for Amazon Redshift, you can begin querying, analyzing, and operationalizing third-party Amazon Redshift tables after subscribing.
 

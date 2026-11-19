@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Remov
 ---
 
 # Removing a service from appearing in the CloudWatch cross-service dashboard
-<a name="Remove_service_from_Cross_Service_Dashboard"></a>
 
 You can prevent a service's metrics from appearing in the cross-service dashboard. This helps you focus your cross-service dashboard on the services you most want to monitor.
 

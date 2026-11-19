@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-upd
 ---
 
 # Updating domain settings
-<a name="domain-update-settings"></a>
 
 This section provides information on the following topics related to managing domain settings in Route 53:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotAnonymousUserRedacted
-<a name="API_SnapshotAnonymousUserRedacted"></a>
 
 Use this structure to redact sensitive information that you provide about an anonymous user from the snapshot.
 

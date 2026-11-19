@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSREL10-BP02 Validate end-to-end reliability of regulated workloads
-<a name="lsrel10-bp02"></a>
 
  Conduct end-to-end reliability validation exercises that test not just recovery but the overall system's ability to maintain adherence and functionality during adverse events. These tests should validate high availability, monitoring alerts, automated failover, and controls in production-like scenarios.
 

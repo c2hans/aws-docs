@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Auditing SQL Server instances, database objects, and logins in Amazon RDS and Amazon EC2
-<a name="introduction"></a>
 
 *Ashish Srivastava, Bhavani Akundi, and Sreenivas Nettem, Amazon Web Services*
 

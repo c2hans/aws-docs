@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetDe
 ---
 
 # GetDevicePool
-<a name="API_GetDevicePool"></a>
 
 Gets information about a device pool.
 

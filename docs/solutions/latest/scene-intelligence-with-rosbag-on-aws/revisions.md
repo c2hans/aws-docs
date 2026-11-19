@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *November 2023*
 

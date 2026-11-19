@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_OperationUni
 ---
 
 # OperationUnion
-<a name="API_OperationUnion"></a>
 
 A union type representing the operation to perform on a construct during a mapping update.
 

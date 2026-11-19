@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL tables and indexes
-<a name="chap-oracle-aurora-pg.tables"></a>
 
 This section provides reference pages for Oracle and PostgreSQL tables and indexes.
 

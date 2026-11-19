@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data
 ---
 
 # Creating a HealthLake data store
-<a name="managing-data-stores-create"></a>
 
 Use `CreateFHIRDatastore` to create an AWS HealthLake data store conformant to the FHIR R4 specification. HealthLake data stores are used for importing, managing, searching, and exporting FHIR data. You can choose to import (preload) Synthea open source FHIR R4 health data into your data store when you create it. For more information, see [Preloaded data types](reference-healthlake-preloaded-data-types.md).
 

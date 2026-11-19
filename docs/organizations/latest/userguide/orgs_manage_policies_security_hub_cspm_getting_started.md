@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Getting started with Security Hub CSPM policies
-<a name="orgs_manage_policies_security_hub_cspm_getting_started"></a>
 
 Before you configure Security Hub CSPM policies, make sure that you understand the prerequisites and implementation requirements. This topic guides you through the process of setting up and managing these policies in your organization.
 

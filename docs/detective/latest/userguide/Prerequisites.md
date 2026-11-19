@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/Prerequisites
 ---
 
 # Before you begin integrating Detective with Security Lake
-<a name="Prerequisites"></a>
 
 This topic describes the preliminary steps such as delegating a Security Lake administrator for your organization, enabling Security Lake for your Detective administrator account, and verifying that Security Lake is collecting logs and events.
 

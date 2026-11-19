@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/security_iam_id-bas
 ---
 
 # Identity-based policies for Oracle Database@AWS
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Oracle Database@AWS resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

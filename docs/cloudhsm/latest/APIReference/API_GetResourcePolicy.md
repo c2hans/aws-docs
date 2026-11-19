@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_GetReso
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
  Retrieves the resource policy document attached to a given resource.
 

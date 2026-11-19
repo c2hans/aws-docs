@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteE
 ---
 
 # DeleteEventSubscription
-<a name="API_DeleteEventSubscription"></a>
 
 Deletes an Amazon Redshift event notification subscription.
 

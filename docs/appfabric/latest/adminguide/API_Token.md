@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/API_Token.ht
 ---
 
 # Token
-<a name="API_Token"></a>
 
 |  |
 | --- |

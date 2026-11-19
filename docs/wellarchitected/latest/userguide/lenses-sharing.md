@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Sharing a custom lens in AWS WA Tool
-<a name="lenses-sharing"></a>
 
 You can share a custom lens with other AWS accounts, users, AWS Organizations, and organization units (OUs).
 

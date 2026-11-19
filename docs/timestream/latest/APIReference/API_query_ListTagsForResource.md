@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ListTagsForResource
-<a name="API_query_ListTagsForResource"></a>
 
 List all tags on a Timestream query resource.
 

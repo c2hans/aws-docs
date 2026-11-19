@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # DisassociateResource
-<a name="API_DisassociateResource"></a>
 
 Removes a canary from a group. You must run this operation in the Region where the canary exists.
 

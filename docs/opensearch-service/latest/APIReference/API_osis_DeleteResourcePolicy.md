@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DeleteResourcePolicy
-<a name="API_osis_DeleteResourcePolicy"></a>
 
 Deletes a resource-based policy from an OpenSearch Ingestion resource.
 

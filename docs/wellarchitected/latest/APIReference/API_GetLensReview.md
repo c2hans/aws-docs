@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetLensReview
-<a name="API_GetLensReview"></a>
 
 Get lens review.
 

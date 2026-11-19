@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_St
 ---
 
 # StoppingCondition
-<a name="API_StoppingCondition"></a>
 
 The criteria used to stop model training.
 

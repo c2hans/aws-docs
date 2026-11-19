@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Databases
-<a name="amazon-lightsail-faq-databases"></a>
 
 ## What are Lightsail managed databases?
 <a name="what-are-lightsail-databases"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Parame
 ---
 
 # ParameterRange
-<a name="API_ParameterRange"></a>
 
 Defines the possible values for categorical, continuous, and integer hyperparameters to be used by an algorithm.
 

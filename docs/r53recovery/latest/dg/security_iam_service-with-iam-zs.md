@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_servi
 ---
 
 # How zonal shift works with IAM
-<a name="security_iam_service-with-iam-zs"></a>
 
 Before you use IAM to manage access to zonal shift in Amazon Application Recovery Controller (ARC), learn what IAM features are available to use with zonal shift.
 

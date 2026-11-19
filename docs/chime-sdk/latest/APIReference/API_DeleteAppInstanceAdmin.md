@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Delete
 ---
 
 # DeleteAppInstanceAdmin
-<a name="API_DeleteAppInstanceAdmin"></a>
 
 Demotes an `AppInstanceAdmin` to an `AppInstanceUser` or `AppInstanceBot`. This action does not delete the user.
 

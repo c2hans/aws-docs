@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Platform components
-<a name="cms-on-aws-stacks-and-services"></a>
 
 The high-level architectural descriptions for the Platform components are as follows:
 

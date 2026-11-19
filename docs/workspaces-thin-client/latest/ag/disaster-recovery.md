@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/disaste
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/workspacesthinclient-end-of-support.html).
 
 # Business continuity
-<a name="disaster-recovery"></a>
 
 WorkSpaces Thin Client provides support for Business continuity as part of a [Business Continuity Plan (BCP)](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/business-continuity-plan-bcp.html). WorkSpaces Thin Client business continuity is available for use with WorkSpaces Personal only. For more information on business continuity, see [Business continuity for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/business-continuity.html) in the *Amazon WorkSpaces Administration guide*.
 

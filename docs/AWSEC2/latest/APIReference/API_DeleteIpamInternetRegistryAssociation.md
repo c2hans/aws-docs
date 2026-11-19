@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpa
 ---
 
 # DeleteIpamInternetRegistryAssociation
-<a name="API_DeleteIpamInternetRegistryAssociation"></a>
 
 Deletes an IPAM internet registry association. Before deleting, you must remove all routing policy registrations associated with the internet registry.
 

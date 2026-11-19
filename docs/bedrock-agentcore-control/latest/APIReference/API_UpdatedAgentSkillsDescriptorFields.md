@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdatedAgentSkillsDescriptorFields
-<a name="API_UpdatedAgentSkillsDescriptorFields"></a>
 
 Individual agent skills descriptor fields that can be updated independently.
 

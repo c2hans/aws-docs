@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Running distributed training workloads with Slurm on HyperPod
-<a name="sagemaker-hyperpod-run-jobs-slurm-distributed-training-workload"></a>
 
 SageMaker HyperPod is specialized for workloads of training large language models (LLMs) and foundation models (FMs). These workloads often require the use of multiple parallelism techniques and optimized operations for ML infrastructure and resources. Using SageMaker HyperPod, you can use the following SageMaker AI distributed training frameworks:
 + The [SageMaker AI distributed data parallelism (SMDDP) library](data-parallel.md) that offers collective communication operations optimized for AWS.

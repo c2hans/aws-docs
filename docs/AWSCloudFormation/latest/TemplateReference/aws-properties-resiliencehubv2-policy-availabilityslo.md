@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ResilienceHubV2::Policy AvailabilitySlo
-<a name="aws-properties-resiliencehubv2-policy-availabilityslo"></a>
 
 Defines the availability service level objective (SLO) for a resilience policy.
 

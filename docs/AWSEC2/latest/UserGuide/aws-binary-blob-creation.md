@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/aws-binary-blob-
 ---
 
 # Create the AWS binary blob for UEFI Secure Boot
-<a name="aws-binary-blob-creation"></a>
 
 You can use the following steps to customize the UEFI Secure Boot variables during AMI creation. The KEK that is used in these steps is current as of September 2021. If Microsoft updates the KEK, you must use the latest KEK.
 

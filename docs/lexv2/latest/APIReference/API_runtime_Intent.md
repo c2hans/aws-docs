@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_In
 ---
 
 # Intent
-<a name="API_runtime_Intent"></a>
 
 The current intent that Amazon Lex is attempting to fulfill.
 

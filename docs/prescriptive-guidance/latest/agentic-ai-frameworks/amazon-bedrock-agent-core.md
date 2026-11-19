@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Amazon Bedrock AgentCore
-<a name="amazon-bedrock-agent-core"></a>
 
 [Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/) is an agentic service that helps you build, deploy, and operate highly capable agents securely at scale by using any framework, model, or protocol. With AgentCore, you can do the following, all without infrastructure management:
 + Build agents faster.

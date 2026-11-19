@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/aba
 ---
 
 # Using ABAC with DynamoDB Streams
-<a name="abac-implementation-streams"></a>
 
 The following steps show how to set up permissions using ABAC for DynamoDB Streams. In this example scenario, you add tags to a DynamoDB stream and create an IAM role with a policy that includes tag-based conditions. Then, you test the allowed permissions on the DynamoDB stream by matching the tag conditions.
 

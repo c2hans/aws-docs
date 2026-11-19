@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # StartUploadJob
-<a name="API_connect-customer-profiles_StartUploadJob"></a>
 
 This API starts the processing of an upload job to ingest profile data.
 

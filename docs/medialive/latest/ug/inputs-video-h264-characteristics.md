@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/inputs-video-h264-ch
 ---
 
 # Encoding schemes for an AVC (H.264) source
-<a name="inputs-video-h264-characteristics"></a>
 
 The AVC (H.264) codec encoding schemes for input video include profile, bit depth, and chroma sampling. In the following table, each row is a different scheme that MediaLive supports.
 

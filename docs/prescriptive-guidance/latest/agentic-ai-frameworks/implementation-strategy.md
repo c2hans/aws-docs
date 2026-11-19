@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Implementation strategy for agentic protocols
-<a name="implementation-strategy"></a>
 
 To effectively implement agentic protocols across your organization, consider the following strategic steps:
 

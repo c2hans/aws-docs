@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Working with solution-specific variables
-<a name="working-with-solution-specific-variables"></a>
 
 This section provides information about working with variables.
 

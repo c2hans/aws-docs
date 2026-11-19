@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html
 ---
 
 # Controlling access to AWS resources using tags
-<a name="access_tags"></a>
 
 You can use tags to control access to your AWS resources that support tagging, including IAM resources. You can tag IAM users and roles to control what they can access. To learn how to tag IAM users and roles, see [Tags for AWS Identity and Access Management resources](id_tags.md). Additionally, you can control access to the following IAM resources: customer managed policies, IAM identity providers, instance profiles, server certificates, and virtual MFA devices. To view a tutorial for creating and testing a policy that allows IAM roles with principal tags to access resources with matching tags, see [IAM tutorial: Define permissions to access AWS resources based on tags](tutorial_attribute-based-access-control.md). Use the information in the following section to control access to other AWS resources, including IAM resources, without tagging IAM users or roles.
 

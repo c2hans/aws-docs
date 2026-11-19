@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverl
 ---
 
 # Amazon DocumentDB serverless scaling configuration
-<a name="docdb-serverless-scaling-config"></a>
 
 **Topics**
 + [Choosing the scaling capacity range for a DocumentDB serverless cluster](#docdb-serverless-scaling-capacity-choosing)

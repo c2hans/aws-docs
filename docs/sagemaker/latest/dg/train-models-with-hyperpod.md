@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-models-with-hy
 ---
 
 # Train a PyTorch model
-<a name="train-models-with-hyperpod"></a>
 
 This topic walks you through the process of training a PyTorch model using HyperPod.
 

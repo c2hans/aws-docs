@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetStage.html
 ---
 
 # GetStage
-<a name="API_GetStage"></a>
 
 Gets information about a Stage resource.
 

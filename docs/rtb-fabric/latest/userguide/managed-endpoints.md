@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/managed-endp
 ---
 
 # Managed endpoints
-<a name="managed-endpoints"></a>
 
 Managed endpoints is an optional feature for responder gateways that allows RTB Fabric to distribute load directly across bidder hosts in your fleet. This feature bypasses the need for a separate load balancer by using RTB Fabric to send traffic directly to your responder application hosts.
 

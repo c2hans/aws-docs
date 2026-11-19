@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load
 ---
 
 # Access logs for your Network Load Balancer
-<a name="load-balancer-access-logs"></a>
 
 Elastic Load Balancing provides access logs that capture detailed information about the TLS connections established with your Network Load Balancer. You can use these access logs to analyze traffic patterns and troubleshoot issues.
 

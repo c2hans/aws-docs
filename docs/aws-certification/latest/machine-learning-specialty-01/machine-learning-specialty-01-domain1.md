@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/machine-learnin
 ---
 
 # Content Domain 1: Data Engineering
-<a name="machine-learning-specialty-01-domain1"></a>
 
 **Topics**
 + [Task 1.1: Create data repositories for ML](#machine-learning-specialty-01-domain1-task1)

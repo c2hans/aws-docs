@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Sear
 ---
 
 # SearchFacesByImage
-<a name="API_SearchFacesByImage"></a>
 
 For a given input image, first detects the largest face in the image, and then searches the specified collection for matching faces. The operation compares the features of the input face with faces in the specified collection.
 

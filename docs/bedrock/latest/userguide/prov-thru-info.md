@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prov-thru-info.
 ---
 
 # View information about a Provisioned Throughput
-<a name="prov-thru-info"></a>
 
 To learn how to view information about a Provisioned Throughput that you've purchased, choose the tab for your preferred method, and then follow the steps:
 

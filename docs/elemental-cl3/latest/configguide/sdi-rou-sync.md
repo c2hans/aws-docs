@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/sdi-rou
 ---
 
 # Step F: Sync the Routers
-<a name="sdi-rou-sync"></a>
 
 Perform this procedure on the Conductor Live node.
 

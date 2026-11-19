@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # S3ConfigurationType
-<a name="API_S3ConfigurationType"></a>
 
 Configuration for the Amazon S3 bucket destination of user activity log export with threat protection.
 

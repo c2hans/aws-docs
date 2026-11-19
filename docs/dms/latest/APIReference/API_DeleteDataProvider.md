@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteDataPr
 ---
 
 # DeleteDataProvider
-<a name="API_DeleteDataProvider"></a>
 
 Deletes the specified data provider.
 

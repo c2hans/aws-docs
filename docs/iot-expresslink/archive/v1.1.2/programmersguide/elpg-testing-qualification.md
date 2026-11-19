@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programme
 ---
 
 # 12 Testing and qualification
-<a name="elpg-testing-qualification"></a>
 
 ## 12.1 Test hardware
 <a name="elpg-testing-qualification-hardware"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/manage-console-
 ---
 
 # Performance and Scaling in Amazon Neptune
-<a name="manage-console-performance-scaling"></a>
 
 Neptune DB clusters and instances scale at three different levels:
 + [Storage Scaling](#manage-console-performance-scaling-storage)

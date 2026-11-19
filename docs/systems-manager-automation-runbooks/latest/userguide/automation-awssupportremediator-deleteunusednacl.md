@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-DeleteUnusedNacl`
-<a name="automation-awssupportremediator-deleteunusednacl"></a>
 
 **Description**
 

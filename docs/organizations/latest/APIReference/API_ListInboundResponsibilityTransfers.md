@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListInboundResponsibilityTransfers
-<a name="API_ListInboundResponsibilityTransfers"></a>
 
 Lists transfers that allow you to manage the specified responsibilities for another organization. This operation returns both transfer invitations and transfers.
 

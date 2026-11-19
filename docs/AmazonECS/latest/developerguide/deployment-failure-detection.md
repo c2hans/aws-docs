@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployme
 ---
 
 # Amazon ECS deployment failure detection
-<a name="deployment-failure-detection"></a>
 
 Amazon ECS provides two methods for detecting deployment failures:
 + Deployment Circuit Breaker

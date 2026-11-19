@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-bcm-da
 ---
 
 # AWS Billing and Cost Management Data Exports events
-<a name="events-ref-bcm-data-exports"></a>
 
 Billing and Cost Management Data Exports sends service events to EventBridge via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 2a. Launch the prerequisite stack (optional)
-<a name="step-2a.-launch-the-prerequisite-stack-optional"></a>
 
 **Note**
 Use the prerequisite stack only for Organizations deployments.

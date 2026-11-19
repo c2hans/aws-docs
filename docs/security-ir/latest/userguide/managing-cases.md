@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/managing-ca
 ---
 
 # Managing Cases
-<a name="managing-cases"></a>
 
 **Topics**
 + [Changing the case status](changing-the-case-status.md)

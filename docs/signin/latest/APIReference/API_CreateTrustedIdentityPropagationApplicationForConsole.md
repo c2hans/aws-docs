@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_CreateTru
 ---
 
 # CreateTrustedIdentityPropagationApplicationForConsole
-<a name="API_CreateTrustedIdentityPropagationApplicationForConsole"></a>
 
 Creates an IAM Identity Center application that represents the AWS Management Console on an IAM Identity Center organization instance. This application supports identity-aware sessions in IAM Identity Center, which enables additional user context to be included in the user's AWS Management Console session.
 

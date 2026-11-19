@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CreateForm
-<a name="API_CreateForm"></a>
 
 Creates a new form for an Amplify app.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationFeatureConfiguration
-<a name="API_OrganizationFeatureConfiguration"></a>
 
 A list of features which will be configured for the organization.
 

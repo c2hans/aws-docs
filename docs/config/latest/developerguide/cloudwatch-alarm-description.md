@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudwatch-
 ---
 
 # cloudwatch-alarm-description
-<a name="cloudwatch-alarm-description"></a>
 
 Checks if AWS CloudWatch Alarm resources contain an alarm description. The rule is NON\_COMPLIANT if the CloudWatch Alarm resource does not contain an AlarmDescription field or the AlarmDescription is empty.
 

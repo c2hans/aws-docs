@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Mappings API
-<a name="mappings-api"></a>
 
 Manage path-based or host-header based routing to map requests to specific origins and policies.
 

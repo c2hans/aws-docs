@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DescribeUserPoolDomain
-<a name="API_DescribeUserPoolDomain"></a>
 
 Given a user pool domain name, returns information about the domain configuration.
 

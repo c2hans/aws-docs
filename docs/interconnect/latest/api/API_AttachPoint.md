@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_AttachPoint.
 ---
 
 # AttachPoint
-<a name="API_AttachPoint"></a>
 
 A generalization of an AWS network location to which a [Connection](API_Connection.md) can be attached.
 

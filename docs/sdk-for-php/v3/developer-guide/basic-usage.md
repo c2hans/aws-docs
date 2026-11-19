@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/basic-usa
 ---
 
 # Basic usage
-<a name="basic-usage"></a>
 
 The following example shows how to use the S3 Transfer Manager:
 

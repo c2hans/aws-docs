@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AmazonRedshiftAdv
 ---
 
 # AmazonRedshiftAdvancedOption
-<a name="API_AmazonRedshiftAdvancedOption"></a>
 
 Specifies an optional value when connecting to the Redshift cluster.
 

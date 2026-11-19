@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/capacity-management-add
 ---
 
 # Add workgroups to a reservation
-<a name="capacity-management-adding-workgroups-to-a-reservation"></a>
 
 After you create a capacity reservation, you can add up to 20 workgroups to the reservation. Adding a workgroup to a reservation tells Athena which queries should execute on your reserved capacity. Queries from workgroups that are not associated with a reservation continue to run using the default per terabyte (TB) scanned pricing model.
 

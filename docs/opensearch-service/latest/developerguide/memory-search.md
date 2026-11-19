@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Searching memories and events in Amazon OpenSearch Memory
-<a name="memory-search"></a>
 
 Amazon OpenSearch Memory searches memories and events with a query that you write in a subset of the OpenSearch Query DSL. You pass the query clause in the `query` parameter of [SearchMemories](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_SearchMemories.html) or [SearchEvents](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/API_SearchEvents.html), and an optional `sort` clause. OpenSearch Memory validates the query, runs it against one actor's data, and returns results ranked by relevance.
 

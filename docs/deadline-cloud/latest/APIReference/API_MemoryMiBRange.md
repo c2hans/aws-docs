@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_M
 ---
 
 # MemoryMiBRange
-<a name="API_MemoryMiBRange"></a>
 
 The range of memory in MiB.
 

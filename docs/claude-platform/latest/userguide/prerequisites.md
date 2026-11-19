@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/prerequ
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 Before making API calls, ensure you have:
 

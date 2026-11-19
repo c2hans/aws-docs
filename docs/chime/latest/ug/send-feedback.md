@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/send-feedback.html
 ---
 
 # Sending diagnostic logs
-<a name="send-feedback"></a>
 
 If something goes wrong with Amazon Chime, you can send diagnostic logs to help troubleshoot any problems.
 

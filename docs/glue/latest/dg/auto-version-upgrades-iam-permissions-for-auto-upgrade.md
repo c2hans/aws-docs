@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades-iam
 ---
 
 # IAM permissions for auto upgrade
-<a name="auto-version-upgrades-iam-permissions-for-auto-upgrade"></a>
 
 This section describes the IAM permissions that users and the job role need for auto upgrade.
 

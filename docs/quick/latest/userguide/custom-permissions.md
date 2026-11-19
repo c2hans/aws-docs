@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/custom-permission
 ---
 
 # Custom permissions
-<a name="custom-permissions"></a>
 
 **Applies to**
 Applies to: Enterprise Edition

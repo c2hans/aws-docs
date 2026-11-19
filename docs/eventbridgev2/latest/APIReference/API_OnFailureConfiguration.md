@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_On
 ---
 
 # OnFailureConfiguration
-<a name="API_OnFailureConfiguration"></a>
 
 On-failure configuration: where a failed delivery is sent. Shared by the subscriber and the EventSource.
 

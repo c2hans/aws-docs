@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Ev
 ---
 
 # EventSourceSummary
-<a name="API_EventSourceSummary"></a>
 
 Summary of an EventSource, as returned by ListEventSources.
 

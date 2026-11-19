@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam_A
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `AttachRolePolicy` with an AWS SDK or CLI
-<a name="iam_example_iam_AttachRolePolicy_section"></a>
 
 The following code examples show how to use `AttachRolePolicy`.
 

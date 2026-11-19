@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateRequestV
 ---
 
 # UpdateRequestValidator
-<a name="API_UpdateRequestValidator"></a>
 
 Updates a RequestValidator of a given RestApi.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeClusterSecurityGroups
-<a name="API_DescribeClusterSecurityGroups"></a>
 
 Returns information about Amazon Redshift security groups. If the name of a security group is specified, the response will contain only information about only that security group.
 
@@ -26,7 +25,7 @@ Length Constraints: Maximum length of 2147483647.
 Required: No
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeClusterSecurityGroups](#API_DescribeClusterSecurityGroups) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeClusterSecurityGroups](API_DescribeClusterSecurityGroups.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Constraints: You must specify either the **ClusterSecurityGroupName** parameter or the **Marker** parameter, but not both.
 Type: String
 Length Constraints: Maximum length of 2147483647.

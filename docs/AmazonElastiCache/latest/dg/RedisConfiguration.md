@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/RedisConfigu
 ---
 
 # Valkey and Redis OSS configuration and limits
-<a name="RedisConfiguration"></a>
 
 The Valkey and Redis OSS engines each provides a number of configuration parameters, some of which are modifiable in ElastiCache for Redis OSS and some of which are not modifiable to provide stable performance and reliability.
 

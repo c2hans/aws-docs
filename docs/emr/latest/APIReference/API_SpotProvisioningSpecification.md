@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SpotProvisio
 ---
 
 # SpotProvisioningSpecification
-<a name="API_SpotProvisioningSpecification"></a>
 
 The launch specification for Spot Instances in the instance fleet, which determines the defined duration, provisioning timeout behavior, and allocation strategy.
 

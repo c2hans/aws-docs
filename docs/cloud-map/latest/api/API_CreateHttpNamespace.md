@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_CreateHttpNames
 ---
 
 # CreateHttpNamespace
-<a name="API_CreateHttpNamespace"></a>
 
 Creates an HTTP namespace. Service instances registered using an HTTP namespace can be discovered using a `DiscoverInstances` request but can't be discovered using DNS.
 

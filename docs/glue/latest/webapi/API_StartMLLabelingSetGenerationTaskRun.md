@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartMLLabelingSe
 ---
 
 # StartMLLabelingSetGenerationTaskRun
-<a name="API_StartMLLabelingSetGenerationTaskRun"></a>
 
 Starts the active learning workflow for your machine learning transform to improve the transform's quality by generating label sets and adding labels.
 

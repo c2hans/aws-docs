@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/okta-reading-from-entitie
 ---
 
 # Reading from Okta entities
-<a name="okta-reading-from-entities"></a>
 
  **Prerequisites**
 +  A Okta Object you would like to read from. Refer the supported entities table below to check the available entities.

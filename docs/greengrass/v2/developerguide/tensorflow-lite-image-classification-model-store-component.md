@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-
 ---
 
 # TensorFlow Lite image classification model store
-<a name="tensorflow-lite-image-classification-model-store-component"></a>
 
 The TensorFlow Lite image classification model store (`variant.TensorFlowLite.ImageClassification.ModelStore`) is a machine learning model component that contains a pre-trained MobileNet v1 model as a Greengrass artifact. The sample model used in this component is fetched from the [TensorFlow Hub](https://tfhub.dev/) and implemented using [TensorFlow Lite](https://www.tensorflow.org/lite/guide/python).
 

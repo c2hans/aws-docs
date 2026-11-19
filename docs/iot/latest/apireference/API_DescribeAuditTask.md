@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAudi
 ---
 
 # DescribeAuditTask
-<a name="API_DescribeAuditTask"></a>
 
 Gets information about a Device Defender audit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reco
 ---
 
 # RecommendationRelatedAnomalySourceDetail
-<a name="API_RecommendationRelatedAnomalySourceDetail"></a>
 
  Contains an array of `RecommendationRelatedCloudWatchMetricsSourceDetail` objects that contain the name and namespace of an Amazon CloudWatch metric.
 

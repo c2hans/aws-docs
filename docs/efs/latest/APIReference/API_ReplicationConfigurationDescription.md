@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_ReplicationC
 ---
 
 # ReplicationConfigurationDescription
-<a name="API_ReplicationConfigurationDescription"></a>
 
 Describes the replication configuration for a specific file system.
 

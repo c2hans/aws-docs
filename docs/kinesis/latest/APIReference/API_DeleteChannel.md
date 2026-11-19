@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeleteCh
 ---
 
 # DeleteChannel
-<a name="API_DeleteChannel"></a>
 
 Deletes the specified channel. Deleting a channel stops delivery from the source stream to the destination. Data already delivered to the destination is not deleted.
 

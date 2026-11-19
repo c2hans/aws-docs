@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_PauseDetails.html
 ---
 
 # PauseDetails
-<a name="API_PauseDetails"></a>
 
 Details about a [durable execution](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html) that is pausing or paused.
 

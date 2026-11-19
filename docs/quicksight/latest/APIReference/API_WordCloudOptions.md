@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_WordC
 ---
 
 # WordCloudOptions
-<a name="API_WordCloudOptions"></a>
 
 The word cloud options for a word cloud visual.
 

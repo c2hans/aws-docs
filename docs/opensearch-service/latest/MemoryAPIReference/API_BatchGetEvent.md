@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # BatchGetEvent
-<a name="API_BatchGetEvent"></a>
 
 Gets up to 10 events by ID, each as `GetEvent` returns it, including its payload.
 

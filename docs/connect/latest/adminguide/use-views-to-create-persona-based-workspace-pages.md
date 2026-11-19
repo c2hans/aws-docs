@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/use-views-to-c
 ---
 
 # Use views to create custom workspace pages
-<a name="use-views-to-create-persona-based-workspace-pages"></a>
 
 With views, you can create customized pages within workspaces that are assigned to different Connect Customer users. To create a new view, begin by selecting the appropriate Workspace purpose. After you access the UI builder, you can filter and select from the available UI components that are ready to use in your view.
 

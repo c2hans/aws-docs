@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CrossR
 ---
 
 # CrossRegionTrafficConfig
-<a name="API_CrossRegionTrafficConfig"></a>
 
 The cross-Region traffic cap for an endpoint. The cap limits the requests per second that the endpoint accepts from inference routers in other AWS Regions. The cap is `MaxCrossRegionPercentPerEndpoint` percent of `MaxInvocationsPerSecondPerInstance` multiplied by the number of `InService` instances, rounded up. All production variants and inference components of the endpoint share it. Requests that you send to the endpoint directly aren't counted. A request over the cap fails with a `ThrottlingException`.
 

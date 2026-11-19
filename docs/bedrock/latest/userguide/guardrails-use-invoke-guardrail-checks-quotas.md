@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-use-
 ---
 
 # Quotas
-<a name="guardrails-use-invoke-guardrail-checks-quotas"></a>
 
 The following quotas are enforced for `InvokeGuardrailChecks`. Quotas marked as adjustable can be raised through Service Quotas; others are hard limits.
 

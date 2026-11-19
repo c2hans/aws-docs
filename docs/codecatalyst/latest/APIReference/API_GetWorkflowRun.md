@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Get
 ---
 
 # GetWorkflowRun
-<a name="API_GetWorkflowRun"></a>
 
 Returns information about a specified run of a workflow.
 

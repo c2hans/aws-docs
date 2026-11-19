@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/getting-sta
 ---
 
 # Prerequisites
-<a name="getting-started-prerequisites"></a>
 
 To complete this getting started tutorial, you need the following:
 + An AWS account. If you don't have one, see [Step 2: Set up your environment](getting-started-set-up-environment.md).

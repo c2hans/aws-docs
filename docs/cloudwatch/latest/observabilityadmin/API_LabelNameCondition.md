@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # LabelNameCondition
-<a name="API_LabelNameCondition"></a>
 
  Condition that matches based on WAF rule labels, with label names limited to 1024 characters.
 

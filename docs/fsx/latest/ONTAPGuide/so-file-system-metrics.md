@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/so-file-system-met
 ---
 
 # Second-generation file system metrics
-<a name="so-file-system-metrics"></a>
 
 The following metrics are provided for FSx for ONTAP second-generation file systems. For the metrics, a datapoint is emitted for each HA pair and for each aggregate (for storage utilization metrics).
 

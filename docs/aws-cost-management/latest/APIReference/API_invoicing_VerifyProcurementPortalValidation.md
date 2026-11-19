@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # VerifyProcurementPortalValidation
-<a name="API_invoicing_VerifyProcurementPortalValidation"></a>
 
  * **This feature API is subject to changing at any time. For more information, see the [AWS Service Terms](https://aws.amazon.com/service-terms/) (Betas and Previews).** *
 

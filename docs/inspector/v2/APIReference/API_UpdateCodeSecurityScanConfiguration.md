@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateCode
 ---
 
 # UpdateCodeSecurityScanConfiguration
-<a name="API_UpdateCodeSecurityScanConfiguration"></a>
 
 Updates an existing code security scan configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Descr
 ---
 
 # DescribeCertificateAuthorityAuditReport
-<a name="JavaApi-DescribeCertificateAuthorityAuditReport"></a>
 
 The following Java sample shows how to use the [DescribeCertificateAuthorityAuditReport](https://docs.aws.amazon.com/privateca/latest/APIReference/API_DescribeCertificateAuthorityAuditReport.html) operation.
 

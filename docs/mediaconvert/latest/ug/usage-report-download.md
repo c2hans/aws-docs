@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/usage-report-down
 ---
 
 # Downloading the MediaConvert usage report
-<a name="usage-report-download"></a>
 
 You can download a usage report as an XML or a comma-separated values (CSV) file.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # LogAlarm
-<a name="API_LogAlarm"></a>
 
 The details about a log alarm.
 

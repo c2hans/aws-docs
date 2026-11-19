@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_HoursOfO
 ---
 
 # HoursOfOperationSummary
-<a name="API_HoursOfOperationSummary"></a>
 
 Contains summary information about hours of operation for a contact center.
 

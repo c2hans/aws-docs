@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # UpdateGlobalSettings
-<a name="API_UpdateGlobalSettings"></a>
 
 Update whether the AWS account is opted into organization sharing and discovery integration features.
 

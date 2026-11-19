@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-configurat
 ---
 
 # Create a configuration
-<a name="msk-configuration-operations-create"></a>
 
 This process describes how to create a custom Amazon MSK configuration and how to perform operations on it.
 

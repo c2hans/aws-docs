@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Fil
 ---
 
 # FilterConfiguration
-<a name="API_FilterConfiguration"></a>
 
 Filter configuration includes settings for manifest filtering, start and end times, and time delay that apply to all of your egress requests for this manifest.
 

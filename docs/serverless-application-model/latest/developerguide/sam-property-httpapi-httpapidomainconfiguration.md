@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # HttpApiDomainConfiguration
-<a name="sam-property-httpapi-httpapidomainconfiguration"></a>
 
 Configures a custom domain for an API.
 

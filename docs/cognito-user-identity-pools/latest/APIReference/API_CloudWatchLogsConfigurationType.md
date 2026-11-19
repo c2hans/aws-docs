@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CloudWatchLogsConfigurationType
-<a name="API_CloudWatchLogsConfigurationType"></a>
 
 Configuration for the CloudWatch log group destination of user pool detailed activity logging, or of user activity log export with threat protection.
 

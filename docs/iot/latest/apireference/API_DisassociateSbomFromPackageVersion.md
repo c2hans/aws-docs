@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Disassociate
 ---
 
 # DisassociateSbomFromPackageVersion
-<a name="API_DisassociateSbomFromPackageVersion"></a>
 
 Disassociates the selected software bill of materials (SBOM) from a specific software package version.
 

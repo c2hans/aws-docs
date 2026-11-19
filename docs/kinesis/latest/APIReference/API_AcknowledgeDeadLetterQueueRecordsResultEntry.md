@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Acknowle
 ---
 
 # AcknowledgeDeadLetterQueueRecordsResultEntry
-<a name="API_AcknowledgeDeadLetterQueueRecordsResultEntry"></a>
 
 A dead-letter record that was acknowledged.
 

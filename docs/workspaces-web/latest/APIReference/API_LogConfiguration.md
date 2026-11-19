@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # LogConfiguration
-<a name="API_LogConfiguration"></a>
 
 The configuration of the log.
 

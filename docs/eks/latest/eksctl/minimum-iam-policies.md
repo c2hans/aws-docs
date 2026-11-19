@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/minimum-iam-policies.h
 ---
 
 # Minimum IAM policies
-<a name="minimum-iam-policies"></a>
 
 This document describes the minimum IAM policies needed to run the main use cases of eksctl. These are the ones used to run the integration tests.
 

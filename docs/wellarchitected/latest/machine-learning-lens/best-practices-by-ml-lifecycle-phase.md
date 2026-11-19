@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Best practices by ML lifecycle
-<a name="best-practices-by-ml-lifecycle-phase"></a>
 
  There are six phases in the machine learning lifecycle. The following index lists the best practices by lifecycle phase.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/building-consumers.ht
 ---
 
 # Read data from Kinesis data streams
-<a name="building-consumers"></a>
 
 A *stream consumer* is an application that reads a Kinesis data stream directly and processes all the data in it. When a stream consumer uses *enhanced fan-out*, it gets its own 2 MB/sec allotment of read throughput, allowing multiple stream consumers to read data from the same stream in parallel, without contending for read throughput with other stream consumers. To use the enhanced fan-out capability of shards, see [Develop enhanced fan-out consumers with dedicated throughput](enhanced-consumers.md). For [Stateless processing](key-concepts.md#stateless-processing-concept) of an On-demand stream, a *queue consumer* is an alternative: it consumes the stream through a queue, which tracks the delivery state of each record so that the consumer does not coordinate work across its instances. For more information, see [Consume records from a stream with queues](consuming-with-queues.md).
 

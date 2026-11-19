@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-permissio
 ---
 
 # Create a service role for Amazon Bedrock Flows in Amazon Bedrock
-<a name="flows-permissions"></a>
 
 To create and manage a flow in Amazon Bedrock, you must use a service role with the necessary permissions outlined on this page. You can use a service role that Amazon Bedrock automatically creates for you in the console or use one that you customize yourself.
 

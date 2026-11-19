@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerCanvasBedrockAccess
-<a name="AmazonSageMakerCanvasBedrockAccess"></a>
 
 **Description**: This policy grants permissions to use Amazon Bedrock in SageMaker Canvas by providing access to downstream services such as S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/search-ne
 ---
 
 # How to use SearchNearby
-<a name="search-nearby-how-to"></a>
 
 This section contains a variety of how to guides and examples for how to use SearchNearby.
 

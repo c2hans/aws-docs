@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-properties
 ---
 
 # Use runtime properties in Managed Service for Apache Flink
-<a name="how-properties"></a>
 
 You can use *runtime properties* to configure your application without recompiling your application code.
 

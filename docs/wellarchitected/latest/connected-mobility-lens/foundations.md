@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Foundations
-<a name="foundations"></a>
 
 | CMREL\_1: Have you defined your message prioritization policy?  |
 | --- |

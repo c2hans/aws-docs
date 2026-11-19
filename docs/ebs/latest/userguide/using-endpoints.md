@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/using-endpoints.htm
 ---
 
 # Service endpoints for EBS direct APIs
-<a name="using-endpoints"></a>
 
 An *endpoint* is a URL that serves as an entry point for an AWS web service. EBS direct APIs supports the following endpoint types:
 + IPv4 endpoints

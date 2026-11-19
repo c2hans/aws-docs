@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTOTAUpdate
-<a name="AWSIoTOTAUpdate"></a>
 
 **Description**: Allows access to create AWS IoT Job and describe the AWS code signer job
 

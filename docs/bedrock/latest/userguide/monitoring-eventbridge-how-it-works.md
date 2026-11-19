@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-even
 ---
 
 # How EventBridge for Amazon Bedrock works
-<a name="monitoring-eventbridge-how-it-works"></a>
 
 Amazon EventBridge is a serverless event bus that ingests state change events from AWS services, SaaS partners, and customer applications. It processes events based on rules or patterns that you create, and routes these events to one or more *targets* that you choose, such as AWS Lambda, Amazon Simple Queue Service, and Amazon Simple Notification Service. You can configure downstream workflows based on the contents of the event.
 

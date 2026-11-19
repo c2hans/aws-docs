@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SessionConfig
-<a name="API_SessionConfig"></a>
 
  The configuration that defines how agent sessions are detected and when they are considered complete for evaluation.
 

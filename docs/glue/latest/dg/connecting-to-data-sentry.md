@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-sentry
 ---
 
 # Connecting to Sentry in AWS Glue Studio
-<a name="connecting-to-data-sentry"></a>
 
 Sentry is application error and performance monitoring. Because you are a Sentry user, you can connect AWS Glue to your Sentry account. You can then use Sentry as a data source in your AWS Glue ETL jobs to transfer data between Sentry and AWS services or other supported applications.
 

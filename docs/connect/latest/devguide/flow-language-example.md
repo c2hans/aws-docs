@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-language-ex
 ---
 
 # Example flow in Connect Customer Flow language
-<a name="flow-language-example"></a>
 
 The following example shows a JSON string that represents the content of the flow. It shows a simple flow that plays a prompt using static text and disconnects.
 

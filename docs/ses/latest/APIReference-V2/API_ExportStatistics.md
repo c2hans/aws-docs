@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportSta
 ---
 
 # ExportStatistics
-<a name="API_ExportStatistics"></a>
 
 Statistics about the execution of an export job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Migration to CUR 2.0
-<a name="migration-to-cur"></a>
 
 ## Migration Overview
 <a name="migration-overview"></a>

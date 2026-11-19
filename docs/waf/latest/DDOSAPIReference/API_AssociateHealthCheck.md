@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Associat
 ---
 
 # AssociateHealthCheck
-<a name="API_AssociateHealthCheck"></a>
 
 Adds health-based detection to the Shield Advanced protection for a resource. Shield Advanced health-based detection uses the health of your AWS resource to improve responsiveness and accuracy in attack detection and response.
 

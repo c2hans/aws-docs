@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_WiFiA
 ---
 
 # WiFiAccessPoint
-<a name="API_WiFiAccessPoint"></a>
 
 Wi-Fi access point.
 

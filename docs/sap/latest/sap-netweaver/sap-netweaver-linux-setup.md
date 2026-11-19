@@ -3,4 +3,3 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-netweaver-l
 ---
 
 # SAP NetWeaver Environment Setup for Linux on AWS
-<a name="sap-netweaver-linux-setup"></a>

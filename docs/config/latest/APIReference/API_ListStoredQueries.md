@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ListStore
 ---
 
 # ListStoredQueries
-<a name="API_ListStoredQueries"></a>
 
 Lists the stored queries for a single AWS account and a single AWS Region. The default is 100.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # CloudFormation resources generated when AWS::Serverless::WebFunction is specified
-<a name="sam-specification-generated-resources-webfunction"></a>
 
 When you specify an `AWS::Serverless::WebFunction`, AWS Serverless Application Model (AWS SAM) generates the following base CloudFormation resources.
 

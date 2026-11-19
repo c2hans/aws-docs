@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/getting-sta
 ---
 
 # Getting started with a custom routing accelerator
-<a name="getting-started-custom-routing"></a>
 
 This section provides steps for creating a custom routing accelerator, which routes traffic deterministically to Amazon EC2 instance destinations in virtual private cloud (VPC) subnet endpoints.
 

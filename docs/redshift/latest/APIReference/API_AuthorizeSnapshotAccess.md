@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Authori
 ---
 
 # AuthorizeSnapshotAccess
-<a name="API_AuthorizeSnapshotAccess"></a>
 
 Authorizes the specified AWS account to restore the specified snapshot.
 

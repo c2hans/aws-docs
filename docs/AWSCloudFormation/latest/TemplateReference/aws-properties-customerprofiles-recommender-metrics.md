@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Recommender Metrics
-<a name="aws-properties-customerprofiles-recommender-metrics"></a>
 
 <a name="aws-properties-customerprofiles-recommender-metrics-description"></a>The `Metrics` property type specifies Property description not available. for an [AWS::CustomerProfiles::Recommender](aws-resource-customerprofiles-recommender.md).
 

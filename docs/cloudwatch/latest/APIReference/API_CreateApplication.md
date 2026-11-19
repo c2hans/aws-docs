@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Creat
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Adds an application that is created from a resource group.
 

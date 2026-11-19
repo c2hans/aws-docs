@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CodeConfiguration
-<a name="API_CodeConfiguration"></a>
 
 The configuration for the source code that defines how the agent runtime code should be executed, including the code location, runtime environment, and entry point.
 

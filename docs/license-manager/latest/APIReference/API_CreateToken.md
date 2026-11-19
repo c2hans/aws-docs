@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CreateToken
-<a name="API_CreateToken"></a>
 
 Creates a long-lived token.
 

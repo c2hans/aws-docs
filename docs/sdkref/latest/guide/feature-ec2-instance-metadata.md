@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/feature-ec2-instance
 ---
 
 # Amazon EC2 instance metadata
-<a name="feature-ec2-instance-metadata"></a>
 
 **Note**
 For help in understanding the layout of settings pages, or in interpreting the **Support by AWS SDKs and tools** table that follows, see [Understanding the settings pages of this guide](settings-reference.md#settingsPages).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/embedded.html
 ---
 
 # Embedded (CEA/EIA-608, CEA/EIA-708), embedded\+SCTE-20, and SCTE-20\+embedded input captions
-<a name="embedded"></a>
 
 If your input captions are in any of the following formats, the service handles them as "embedded":
 + CEA-608

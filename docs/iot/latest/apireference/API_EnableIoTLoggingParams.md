@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_EnableIoTLog
 ---
 
 # EnableIoTLoggingParams
-<a name="API_EnableIoTLoggingParams"></a>
 
 Parameters used when defining a mitigation action that enable AWS IoT Core logging.
 

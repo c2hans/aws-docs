@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/linux.html
 ---
 
 # Connect to an AWS Client VPN endpoint using an OpenVPN client application
-<a name="linux"></a>
 
 These sections describe how to establish a VPN connection using either OpenVPN - Network Manager or OpenVPN.
 

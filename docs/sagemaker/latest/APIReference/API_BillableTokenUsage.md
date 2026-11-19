@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Billab
 ---
 
 # BillableTokenUsage
-<a name="API_BillableTokenUsage"></a>
 
 The billable token usage for a training session, broken down by operation type.
 

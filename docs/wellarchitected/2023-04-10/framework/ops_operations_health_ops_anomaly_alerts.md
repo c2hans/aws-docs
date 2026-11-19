@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS09-BP07 Alert when operations anomalies are detected
-<a name="ops_operations_health_ops_anomaly_alerts"></a>
 
  Raise an alert when operations anomalies are detected so that you can respond appropriately if necessary.
 

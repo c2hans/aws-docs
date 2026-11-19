@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CodeGenEdge.html
 ---
 
 # CodeGenEdge
-<a name="API_CodeGenEdge"></a>
 
 Represents a directional edge in a directed acyclic graph (DAG).
 

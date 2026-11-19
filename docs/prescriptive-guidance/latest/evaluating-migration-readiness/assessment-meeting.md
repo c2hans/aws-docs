@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-
 ---
 
 # Conducting the assessment meeting
-<a name="assessment-meeting"></a>
 
 We recommend that you include all parties who will be involved in the migration effort in the assessment meeting. One of the primary outcomes of this activity is alignment on the current state of capabilities, and this consensus is best built through dialog with all interested parties.
 

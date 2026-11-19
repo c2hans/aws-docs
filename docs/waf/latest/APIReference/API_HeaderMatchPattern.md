@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_HeaderMatchP
 ---
 
 # HeaderMatchPattern
-<a name="API_HeaderMatchPattern"></a>
 
 The filter to use to identify the subset of headers to inspect in a web request.
 

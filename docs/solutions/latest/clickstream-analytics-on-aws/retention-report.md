@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Retention report
-<a name="retention-report"></a>
 
 You can use the Retention report to get insights into how frequently and for how long users engage with your website or mobile app after their first visit. This helps you understand how effective your product is at attracting users to return after their initial visit.
 

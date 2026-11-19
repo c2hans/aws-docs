@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/w
 ---
 
 # Working with AWS services from the AWS Toolkit Explorer
-<a name="working-with-aws"></a>
 
 Your AWS services and resources are available through the AWS Toolkit for JetBrains Explorer.
 

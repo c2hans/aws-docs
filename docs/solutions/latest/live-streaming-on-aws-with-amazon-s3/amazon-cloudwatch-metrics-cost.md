@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Amazon CloudWatch metrics cost
-<a name="amazon-cloudwatch-metrics-cost"></a>
 
 Amazon CloudWatch charges $0.30 per metric per month for the first 10,000 metrics. This solution uses 11 metrics, so the cost for an hour-long stream can be determined by:
 

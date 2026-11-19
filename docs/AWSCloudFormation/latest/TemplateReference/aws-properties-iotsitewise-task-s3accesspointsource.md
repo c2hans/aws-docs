@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::Task S3AccessPointSource
-<a name="aws-properties-iotsitewise-task-s3accesspointsource"></a>
 
 <a name="aws-properties-iotsitewise-task-s3accesspointsource-description"></a>The `S3AccessPointSource` property type specifies Property description not available. for an [AWS::IoTSiteWise::Task](aws-resource-iotsitewise-task.md).
 

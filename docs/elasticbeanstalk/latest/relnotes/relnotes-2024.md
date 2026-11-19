@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/relnote
 ---
 
 # Elastic Beanstalk release notes for 2024
-<a name="relnotes-2024"></a>
 
 All of the AWS Elastic Beanstalk release notes for the year 2024, latest first, are under this page in the table of contents.
 

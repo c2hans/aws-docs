@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/adminguide/view-data-gover
 ---
 
 # View data governance
-<a name="view-data-governance"></a>
 
 The data governance page is a read-only page that displays your data retention and data residency settings. To view it, navigate to **Settings** > **Data Management** > **Data governance**.
 

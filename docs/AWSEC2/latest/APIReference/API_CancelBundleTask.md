@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelBun
 ---
 
 # CancelBundleTask
-<a name="API_CancelBundleTask"></a>
 
 Cancels a bundling operation for an instance store-backed Windows instance.
 

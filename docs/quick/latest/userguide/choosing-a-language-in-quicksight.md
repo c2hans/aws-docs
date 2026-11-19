@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/choosing-a-langua
 ---
 
 # Choosing a language in AWS Quick
-<a name="choosing-a-language-in-quicksight"></a>
 
 You can choose the language that you want to use in the AWS Quick user interface. This option is set separately for each individual user. The first time a user signs in, AWS Quick detects and selects a suitable language. This choice is based on the user's browser preferences and interactions with localized AWS websites.
 

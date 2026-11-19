@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Orchestration
-<a name="orchestration"></a>
 
 In this approach, a single orchestrator is responsible for calling each microservice, determining whether to issue calls in sequence or in parallel, manipulating individual service responses along the way, and compiling the end result. An orchestrator can mix synchronous and asynchronous invocations.
 

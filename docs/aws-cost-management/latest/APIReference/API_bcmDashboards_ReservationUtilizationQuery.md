@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservationUtilizationQuery
-<a name="API_bcmDashboards_ReservationUtilizationQuery"></a>
 
 Defines the parameters for querying Reserved Instance utilization data, including grouping options and time granularity.
 

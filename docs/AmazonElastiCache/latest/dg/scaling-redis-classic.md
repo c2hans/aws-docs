@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/scaling-redi
 ---
 
 # Scaling for Valkey or Redis OSS (Cluster Mode Disabled) clusters
-<a name="scaling-redis-classic"></a>
 
 Valkey or Redis OSS (cluster mode disabled) clusters can be a single-node cluster with 0 shards or multi-node clusters with 1 shard. Single-node clusters use the one node for both reads and writes. Multi-node clusters always have 1 node as the read/write primary node with 0 to 5 read-only replica nodes.
 

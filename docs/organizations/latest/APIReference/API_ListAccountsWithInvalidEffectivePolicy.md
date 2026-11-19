@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListAccountsWithInvalidEffectivePolicy
-<a name="API_ListAccountsWithInvalidEffectivePolicy"></a>
 
 Lists all the accounts in an organization that have invalid effective policies. An *invalid effective policy* is an [effective policy](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_effective.html) that fails validation checks, resulting in the effective policy not being fully enforced on all the intended accounts within an organization.
 

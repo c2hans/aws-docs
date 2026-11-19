@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Project
 ---
 
 # ProjectGrantFilter
-<a name="API_ProjectGrantFilter"></a>
 
 The project grant filter.
 

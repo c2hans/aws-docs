@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomJWTAuthorizerConfiguration
-<a name="API_CustomJWTAuthorizerConfiguration"></a>
 
 Configuration for inbound JWT-based authorization, specifying how incoming requests should be authenticated.
 

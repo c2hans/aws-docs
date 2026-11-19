@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DeleteSpace
-<a name="API_DeleteSpace"></a>
 
 Removes a space and all of its resources.
 

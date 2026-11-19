@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-b
 ---
 
 # Updating the deployment strategy from Amazon ECS blue/green to rolling update
-<a name="update-bluegreen-to-rolling"></a>
 
 You can migrate a blue/green deployment to a rolling update deployment.
 

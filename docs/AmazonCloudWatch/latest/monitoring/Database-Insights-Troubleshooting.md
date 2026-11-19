@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Datab
 ---
 
 # Troubleshooting for CloudWatch Database Insights
-<a name="Database-Insights-Troubleshooting"></a>
 
 Use the following information to troubleshoot issues for CloudWatch Database Insights.
 

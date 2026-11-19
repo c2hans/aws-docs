@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Threat
 ---
 
 # ThreatIntelligenceDetail
-<a name="API_ThreatIntelligenceDetail"></a>
 
 An instance of a threat intelligence detail that constitutes evidence for the finding.
 

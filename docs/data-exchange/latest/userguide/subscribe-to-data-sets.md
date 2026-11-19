@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/subscribe
 ---
 
 # Subscribing to AWS Data Exchange data products on AWS Data Exchange
-<a name="subscribe-to-data-sets"></a>
 
 At a high level, this is how to subscribe to AWS Data Exchange data products available through AWS Marketplace:
 

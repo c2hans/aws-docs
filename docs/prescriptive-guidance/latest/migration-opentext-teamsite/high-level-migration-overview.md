@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # High-level migration overview
-<a name="high-level-migration-overview"></a>
 
 The following table shows a high-level overview of an OpenText TeamSite and Media Management migration to the AWS Cloud.
 

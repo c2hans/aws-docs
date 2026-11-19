@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Metadata that help you categorize IT assets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Auto
 ---
 
 # AutoParticipantRecordingConfiguration
-<a name="API_AutoParticipantRecordingConfiguration"></a>
 
 Object specifying a configuration for individual participant recording.
 

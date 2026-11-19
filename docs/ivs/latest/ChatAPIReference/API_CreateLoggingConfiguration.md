@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateLo
 ---
 
 # CreateLoggingConfiguration
-<a name="API_CreateLoggingConfiguration"></a>
 
 Creates a logging configuration that allows clients to store and record sent messages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_TableR
 ---
 
 # TableReplicationConfiguration
-<a name="API_s3Buckets_TableReplicationConfiguration"></a>
 
 The replication configuration for an individual table. This configuration defines how the table is replicated to destination tables.
 

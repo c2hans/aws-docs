@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Co
 ---
 
 # Event triggers for RDS for PostgreSQL
-<a name="PostgreSQL.Concepts.General.FeatureSupport.EventTriggers"></a>
 
 All current PostgreSQL versions support event triggers, and so do all available versions of RDS for PostgreSQL. You can use the main user account (default, `postgres`) to create, modify, rename, and delete event triggers. Event triggers are at the DB instance level, so they can apply to all databases on an instance.
 

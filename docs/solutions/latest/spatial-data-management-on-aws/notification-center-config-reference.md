@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Configuration reference
-<a name="notification-center-config-reference"></a>
 
 | Field | Required | Description |
 | --- | --- | --- |

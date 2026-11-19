@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_CodeRev
 ---
 
 # CodeReviewType
-<a name="API_CodeReviewType"></a>
 
 The type of a code review. There are two code review types:
 +  `PullRequest` - A code review that is automatically triggered by a pull request on an associated repository.

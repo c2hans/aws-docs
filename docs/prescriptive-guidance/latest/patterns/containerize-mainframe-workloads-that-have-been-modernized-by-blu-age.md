@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Containerize mainframe workloads that have been modernized by Blu Age
-<a name="containerize-mainframe-workloads-that-have-been-modernized-by-blu-age"></a>
 
 *Richard Milner-Watts, Amazon Web Services*
 

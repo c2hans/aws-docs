@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # Document revisions
-<a name="document-revisions"></a>
 
 |   **Date**   |   **Description**   |
 | --- | --- |

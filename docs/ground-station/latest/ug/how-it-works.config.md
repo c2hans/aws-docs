@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/how-it-works.co
 ---
 
 # Use AWS Ground Station Configs
-<a name="how-it-works.config"></a>
 
  *Configs* are resources that AWS Ground Station uses to define the parameters for each aspect of your contact. Add the configs you want to a mission profile, and then that mission profile will be used when executing the contact. You can define several different types of configs. The configs can be grouped into three categories:
 + Tracking configs

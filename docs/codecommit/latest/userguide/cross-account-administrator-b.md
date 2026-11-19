@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/cross-accoun
 ---
 
 # Cross-account repository access: Actions for the administrator in AccountB
-<a name="cross-account-administrator-b"></a>
 
 To allow users or groups in AccountB to access a repository in AccountA, the AccountB administrator must create a group in AccountB. This group must be configured with a policy that allows group members to assume the role created by the AccountA administrator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # ImportJob
-<a name="API_ImportJob"></a>
 
 Details about an import job.
 

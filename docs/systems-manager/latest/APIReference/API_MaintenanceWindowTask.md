@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowTask
-<a name="API_MaintenanceWindowTask"></a>
 
 Information about a task defined for a maintenance window.
 

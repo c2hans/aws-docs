@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-view-al
 ---
 
 # Viewing all endpoints associated with a channel
-<a name="endpoints-view-all"></a>
 
 View all endpoints that are associated with a specific channel to ensure that the content is available in all necessary stream formats.
 

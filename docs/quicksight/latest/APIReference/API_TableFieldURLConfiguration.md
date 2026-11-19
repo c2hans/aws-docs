@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableFieldURLConfiguration
-<a name="API_TableFieldURLConfiguration"></a>
 
 The URL configuration for a table field.
 

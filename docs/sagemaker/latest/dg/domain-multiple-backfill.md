@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-multiple-back
 ---
 
 # Backfill domain tags
-<a name="domain-multiple-backfill"></a>
 
 You can improve resource filtering by adding domain tags to untagged resources. If you have resources that are not tagged, you can backfill them.
 

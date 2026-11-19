@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/bac-deployment.html
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # Deploying the BAC
-<a name="bac-deployment"></a>
 
 The BAC is available as a secured single web application, using the web-archive format (.war). It is intended to be deployed alongside the AWS Transform for mainframe Gapwalk-Application, in an Apache Tomcat application server, but can also be deployed as a standalone application. The BAC inherits the access to the Blusam storage from the Gapwalk-Application configuration if present.
 

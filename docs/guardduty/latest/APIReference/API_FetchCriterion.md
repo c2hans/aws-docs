@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_FetchC
 ---
 
 # FetchCriterion
-<a name="API_FetchCriterion"></a>
 
 Contains a filter condition that GuardDuty applied when it retrieved data.
 

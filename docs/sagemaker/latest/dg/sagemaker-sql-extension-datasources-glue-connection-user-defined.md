@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Create user-defined AWS Glue connections
-<a name="sagemaker-sql-extension-datasources-glue-connection-user-defined"></a>
 
 **Note**
 All AWS Glue connections created by users via the SQL extension UI are automatically tagged with the following:

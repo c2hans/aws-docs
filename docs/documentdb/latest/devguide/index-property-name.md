@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-propert
 ---
 
 # Index Property: name
-<a name="index-property-name"></a>
 
 ## Supported index types
 <a name="index-property-name-supported"></a>

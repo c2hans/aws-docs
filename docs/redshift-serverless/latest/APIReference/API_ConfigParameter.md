@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ConfigParameter
-<a name="API_ConfigParameter"></a>
 
 An array of key-value pairs to set for advanced control over Amazon Redshift Serverless.
 

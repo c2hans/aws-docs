@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/queues-monitoring.htm
 ---
 
 # Monitor a queue
-<a name="queues-monitoring"></a>
 
 When you consume records from a stream with a queue, Kinesis Data Streams sends metrics for the queue to CloudWatch every minute in the `AWS/Kinesis` namespace. Kinesis Data Streams publishes these metrics with the `QueueId` and `QueueName` dimensions.
 

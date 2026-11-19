@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/clients
 ---
 
 # WorkSpaces Applications Access Methods and Clients
-<a name="clients-access-methods-user"></a>
 
 You can connect to WorkSpaces Applications by using a web browser or the WorkSpaces Applications client for Windows.
 

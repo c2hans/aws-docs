@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/notify-gettin
 ---
 
 # Getting started with Notify
-<a name="notify-getting-started"></a>
 
 This tutorial walks you through creating a Notify configuration and sending your first OTP message. You can complete this tutorial in about 5 minutes.
 

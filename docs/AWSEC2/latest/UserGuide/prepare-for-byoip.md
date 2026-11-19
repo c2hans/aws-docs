@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/prepare-for-byoi
 ---
 
 # Prerequisites for BYOIP in Amazon EC2
-<a name="prepare-for-byoip"></a>
 
 The onboarding process for BYOIP has two phases, for which you must perform three steps. These steps correspond to the steps depicted in the following diagram. We include manual steps in this documentation, but your RIR might offer managed services to help you with these steps.
 

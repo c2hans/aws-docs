@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/null_co
 ---
 
 # Null condition
-<a name="null_condition-spark"></a>
 
 The NULL condition tests for nulls, when a value is missing or unknown.
 

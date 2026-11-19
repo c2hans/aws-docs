@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/service-rename
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Amazon Q Developer in chat applications rename - Summary of changes
-<a name="service-rename"></a>
 
 On February 19, 2025, we renamed AWS Chatbot to Amazon Q Developer.
 

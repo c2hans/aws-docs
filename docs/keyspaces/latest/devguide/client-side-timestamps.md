@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/client-side-ti
 ---
 
 # Client-side timestamps in Amazon Keyspaces
-<a name="client-side-timestamps"></a>
 
 In Amazon Keyspaces, client-side timestamps are Cassandra-compatible timestamps that are persisted for each cell in your table. You can use client-side timestamps for conflict resolution by letting your client applications determine the order of writes. For example, when clients of a globally distributed application make updates to the same data, client-side timestamps persist the order in which the updates were made on the clients. Amazon Keyspaces uses these timestamps to process the writes.
 

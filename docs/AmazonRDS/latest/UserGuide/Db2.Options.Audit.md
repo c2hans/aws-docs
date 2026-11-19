@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Db2.Options.A
 ---
 
 # Db2 audit logging
-<a name="Db2.Options.Audit"></a>
 
 With Db2 audit logging, Amazon RDS records database activity, including users logging on to the database and queries run against the database. RDS uploads the completed audit logs to your Amazon S3 bucket, using the AWS Identity and Access Management (IAM) role that you provide.
 

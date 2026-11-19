@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # PriceList
-<a name="API_pricing_PriceList"></a>
 
 This is the type of price list references that match your request.
 

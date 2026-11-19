@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3JobMan
 ---
 
 # S3JobManifestGenerator
-<a name="API_control_S3JobManifestGenerator"></a>
 
 The container for the service that will create the S3 manifest.
 

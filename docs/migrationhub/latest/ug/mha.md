@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/mha.html
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # AWS Migration Hub Automation
-<a name="mha"></a>
 
 **Note**
 The AWS Migration Hub Automation feature is in preview release. It is available in US East (N. Virginia). To use this feature, you must set your AWS Region to US East (N. Virginia). You must also set the AWS Migration Hub home Region to US East (N. Virginia). For instructions on how to set the AWS Migration Hub home Region, see [Managing your AWS Migration Hub home Region](home-region.md).

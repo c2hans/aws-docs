@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/entra
 ---
 
 # CloudWatch pipelines configuration for Microsoft Entra ID
-<a name="entraid-pipeline-setup"></a>
 
 Collects log data from Microsoft Entra ID (formerly Azure Active Directory) using OAuth2 authentication.
 

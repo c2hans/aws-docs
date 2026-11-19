@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/configuring-bl
 ---
 
 # Configuring block public access settings for your S3 buckets
-<a name="configuring-block-public-access-bucket"></a>
 
 Amazon S3 Block Public Access provides settings for access points, buckets, organizations, and accounts to help you manage public access to Amazon S3 resources. By default, new buckets, access points, and objects do not allow public access. For more information, see [Blocking public access to your Amazon S3 storage](access-control-block-public-access.md).
 

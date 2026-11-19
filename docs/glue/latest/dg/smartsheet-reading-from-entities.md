@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/smartsheet-reading-from-e
 ---
 
 # Reading from Smartsheet entities
-<a name="smartsheet-reading-from-entities"></a>
 
  **Prerequisites**
 

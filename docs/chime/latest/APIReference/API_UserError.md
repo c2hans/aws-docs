@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/APIReference/API_UserError.
 **End of support notice**: On February 20, 2026, AWS will end support for the Amazon Chime service. After February 20, 2026, you will no longer be able to access the Amazon Chime console or Amazon Chime application resources. For more information, visit the [blog post](https://aws.amazon.com/blogs/messaging-and-targeting/update-on-support-for-amazon-chime/). **Note:** This does not impact the availability of the [Amazon Chime SDK service](https://aws.amazon.com/chime/chime-sdk/).
 
 # UserError
-<a name="API_UserError"></a>
 
 The list of errors returned when errors are encountered during the [BatchSuspendUser](API_BatchSuspendUser.md), [BatchUnsuspendUser](API_BatchUnsuspendUser.md), or [BatchUpdateUser](API_BatchUpdateUser.md) actions. This includes user IDs, error codes, and error messages.
 

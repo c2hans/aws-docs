@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeInstancePatches
-<a name="API_DescribeInstancePatches"></a>
 
 Retrieves information about the patches on the specified managed node and their state relative to the patch baseline being used for the node.
 

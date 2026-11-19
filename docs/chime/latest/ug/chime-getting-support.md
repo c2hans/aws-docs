@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-getting-support.ht
 ---
 
 # Getting support from an Amazon Chime administrator
-<a name="chime-getting-support"></a>
 
 **Note**
 For help with your Amazon shopping account, go to [Customer Service on amazon.com](https://www.amazon.com/hz/contact-us/foresight/hubgateway).

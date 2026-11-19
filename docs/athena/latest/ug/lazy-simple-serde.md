@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/lazy-simple-serde.html
 ---
 
 # Lazy Simple SerDe for CSV, TSV, and custom-delimited files
-<a name="lazy-simple-serde"></a>
 
 Because this is the default SerDe in Athena for data in CSV, TSV, and custom-delimited formats, specifying it is optional. In your `CREATE TABLE` statement, if you don't specify a SerDe and specify only `ROW FORMAT DELIMITED`, Athena uses this SerDe. Use this SerDe if your data does not have values enclosed in quotes.
 

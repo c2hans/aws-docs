@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/notific
 ---
 
 # SNMP traps
-<a name="notification-trap"></a>
 
 AWS Elemental Conductor Live generates SNMP traps for activity on the cluster. You can set up to receive SNMP traps from Conductor Live. (If you prefer to poll the SNMP interface for messages, see [SNMP polling](notification-polling.md).)
 

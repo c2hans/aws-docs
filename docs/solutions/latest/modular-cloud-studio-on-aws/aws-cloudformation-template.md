@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # AWS CloudFormation Template
-<a name="aws-cloudformation-template"></a>
 
 You can download the CloudFormation template for this solution before deploying it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/al2027-container-ami.htm
 ---
 
 # Comparing packages installed on Amazon Linux 2027 Minimal AMI and Container Images
-<a name="al2027-container-ami"></a>
 
 A comparison of the RPMs present on the AL2027 Minimal AMI to the RPMs present on the AL2027 base and minimal container images.
 

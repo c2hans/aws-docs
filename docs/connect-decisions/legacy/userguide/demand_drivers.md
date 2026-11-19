@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/deman
 ---
 
 # Forecast based on demand drivers
-<a name="demand_drivers"></a>
 
 To enhance forecast accuracy while configuring your forecast, you can use demand drivers. *Demand drivers* are related time series inputs that capture product trends and seasons. Instead of depending on historical demand, you can use demand drivers to influence the supply chain based on various factors. For example, promotions, price changes, and marketing campaigns. Demand Planning supports both historical and future demand drivers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snp-work-launch.
 ---
 
 # Enable AMD SEV-SNP for an EC2 instance
-<a name="snp-work-launch"></a>
 
 You can launch an instance with AMD SEV-SNP enabled. You can't enable AMD SEV-SNP after launch.
 

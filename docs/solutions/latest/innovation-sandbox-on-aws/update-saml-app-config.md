@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Update the SAML application configuration
-<a name="update-saml-app-config"></a>
 
 After deploying the Data stack, update the SAML 2.0 application you created earlier with the actual ACS URL and audience values from the Data stack outputs. To enable IdP-initiated sign-in from the AWS access portal, you also set the **Application start URL** to the solution’s web UI URL.
 

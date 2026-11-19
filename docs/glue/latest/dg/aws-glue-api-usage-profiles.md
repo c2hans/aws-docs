@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-usage-profil
 ---
 
 # Usage profiles
-<a name="aws-glue-api-usage-profiles"></a>
 
 The Usage profiles API describes the data types and API related to creating, updating, or viewing usage profiles in AWS Glue.
 

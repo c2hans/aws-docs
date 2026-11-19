@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceRead-only
-<a name="AWSMarketplaceRead-only"></a>
 
 **Description**: Provides the ability to review AWS Marketplace subscriptions
 

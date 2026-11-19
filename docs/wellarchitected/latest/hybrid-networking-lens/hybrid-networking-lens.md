@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # Hybrid Networking Lens - AWS Well-Architected Framework
-<a name="hybrid-networking-lens"></a>
 
 Publication date: **February 2, 2026** ([Document revisions](document-revisions.md))
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransi
 ---
 
 # GetTransitGatewayRouteTableAssociations
-<a name="API_GetTransitGatewayRouteTableAssociations"></a>
 
 Gets information about the associations for the specified transit gateway route table.
 

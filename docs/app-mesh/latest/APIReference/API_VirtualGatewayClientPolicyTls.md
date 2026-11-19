@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayClientPolicyTls
-<a name="API_VirtualGatewayClientPolicyTls"></a>
 
 An object that represents a Transport Layer Security (TLS) client policy.
 

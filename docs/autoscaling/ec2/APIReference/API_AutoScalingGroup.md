@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AutoSca
 ---
 
 # AutoScalingGroup
-<a name="API_AutoScalingGroup"></a>
 
 Describes an Auto Scaling group.
 

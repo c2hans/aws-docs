@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ClonedBlueGreenUpgradeDetails
-<a name="API_ClonedBlueGreenUpgradeDetails"></a>
 
 The state of a cloned blue/green upgrade. Members that don't apply are omitted.
 

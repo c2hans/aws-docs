@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/neptune-ana
 ---
 
 # Reliability pillar
-<a name="reliability-pillar"></a>
 
 The AWS Well-Architected Framework [reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/reliability.html) encompasses the ability of a workload to perform its intended function correctly and consistently when it's expected to. This includes the ability to operate and test the workload through its entire lifecycle.
 

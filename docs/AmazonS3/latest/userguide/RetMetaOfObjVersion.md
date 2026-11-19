@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/RetMetaOfObjVe
 ---
 
 # Retrieving the metadata of an object version
-<a name="RetMetaOfObjVersion"></a>
 
 If you only want to retrieve the metadata of an object (and not its content), you use the `HEAD` operation. By default, you get the metadata of the most recent version. To retrieve the metadata of a specific object version, you specify its version ID.
 

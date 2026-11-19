@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS_
 ---
 
 # AWS\_ConfigRole
-<a name="AWS_ConfigRole"></a>
 
 **Description**: Default policy for AWS Config service role. Provides permissions required for AWS Config to track changes to your AWS resources.
 

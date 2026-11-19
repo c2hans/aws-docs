@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_CreateApprov
 ---
 
 # CreateApprovalTeam
-<a name="API_CreateApprovalTeam"></a>
 
 Creates a new approval team. For more information, see [Approval team](https://docs.aws.amazon.com/mpa/latest/userguide/mpa-concepts.html) in the *Multi-party approval User Guide*.
 

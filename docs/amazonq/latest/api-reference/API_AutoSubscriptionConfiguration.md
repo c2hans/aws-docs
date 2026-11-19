@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AutoSub
 ---
 
 # AutoSubscriptionConfiguration
-<a name="API_AutoSubscriptionConfiguration"></a>
 
 Subscription configuration information for an Amazon Q Business application using IAM identity federation for user management.
 

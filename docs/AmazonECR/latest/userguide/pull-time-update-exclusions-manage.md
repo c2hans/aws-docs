@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/pull-time-upd
 ---
 
 # Managing pull-time update exclusions
-<a name="pull-time-update-exclusions-manage"></a>
 
 To manage pull-time update exclusions, you need the following IAM permissions:
 + `ecr:CreatePullTimeUpdateExclusion` – Grants permission to add a role ARN to the exclusion list.

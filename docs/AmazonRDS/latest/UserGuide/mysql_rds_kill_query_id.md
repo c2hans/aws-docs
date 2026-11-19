@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql_rds_kil
 ---
 
 # mysql.rds\_kill\_query\_id
-<a name="mysql_rds_kill_query_id"></a>
 
 Ends a query running against the MariaDB server in order to terminate long-running or problematic queries. You can identify the query ID and effectively stop a specific query to address performance issues and maintain optimal database operation.
 

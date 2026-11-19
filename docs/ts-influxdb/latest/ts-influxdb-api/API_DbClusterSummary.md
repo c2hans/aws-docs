@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_D
 ---
 
 # DbClusterSummary
-<a name="API_DbClusterSummary"></a>
 
 Describes a summary of a Timestream for InfluxDB cluster.
 

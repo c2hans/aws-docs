@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Encryption at rest for multi-turn reinforcement learning
-<a name="model-customize-mtrl-encryption-at-rest"></a>
 
 ## Options for encryption at rest
 <a name="model-customize-mtrl-encryption-options"></a>

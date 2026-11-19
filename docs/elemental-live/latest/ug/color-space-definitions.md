@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-def
 ---
 
 # Definitions
-<a name="color-space-definitions"></a>
 
 There are four aspects to color space:
 + The specific *color space* that applies to the video content. The color space specifies a range of pixel colors that can apply to the content.

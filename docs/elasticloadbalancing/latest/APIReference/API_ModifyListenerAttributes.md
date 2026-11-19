@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # ModifyListenerAttributes
-<a name="API_ModifyListenerAttributes"></a>
 
 Modifies the specified attributes of the specified listener.
 

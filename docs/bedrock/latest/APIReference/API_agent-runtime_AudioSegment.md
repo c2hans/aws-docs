@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AudioSegment
-<a name="API_agent-runtime_AudioSegment"></a>
 
 Contains information about an audio segment retrieved from a knowledge base, including its location and transcription.
 

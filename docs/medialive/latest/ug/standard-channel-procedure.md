@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/standard-channel-pro
 ---
 
 # Setting up a standard channel
-<a name="standard-channel-procedure"></a>
 
 When you followed the [guidelines](pipeline-redundancy-guidelines.md) for implementing pipeline redundancy in a MediaLive channel, you might have decided that you might want to implement pipeline redundancy. In this case, make sure that you set up the inputs as standard-class inputs and set up the channel as a standard channel.
 

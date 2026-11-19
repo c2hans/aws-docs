@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-networ
 ---
 
 # AWS Backup network
-<a name="backup-network"></a>
 
 ## AWS Backup endpoints
 <a name="backup-endpoints"></a>

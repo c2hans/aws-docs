@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Outbound
 ---
 
 # OutboundEmailConfig
-<a name="API_OutboundEmailConfig"></a>
 
 The outbound email address ID.
 

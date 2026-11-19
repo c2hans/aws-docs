@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Shorten prompts
-<a name="advanced-prompt-optimization-shorten"></a>
 
 By default, Advanced Prompt Optimization optimizes your prompt for quality only. There is no constraint on prompt length. An optimized prompt can be longer than the original. A longer prompt increases input token costs and can increase time to first token (TTFT). If you are cost-sensitive or latency-constrained, you can enable prompt shortening. When enabled, the optimizer looks for a prompt that is shorter than your original and scores at least as high on your evaluation.
 

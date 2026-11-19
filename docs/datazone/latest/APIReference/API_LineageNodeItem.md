@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lineage
 ---
 
 # LineageNodeItem
-<a name="API_LineageNodeItem"></a>
 
 The summary and output forms of a LineageNode
 

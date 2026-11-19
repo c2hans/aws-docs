@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/create-connec
 ---
 
 # Enable connection logging for an existing AWS Client VPN endpoint
-<a name="create-connection-log-existing"></a>
 
 You can enable connection logging for an existing Client VPN endpoint by using the console or the command line.
 

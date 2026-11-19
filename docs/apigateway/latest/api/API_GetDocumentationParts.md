@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetDocumentati
 ---
 
 # GetDocumentationParts
-<a name="API_GetDocumentationParts"></a>
 
 Gets documentation parts.
 

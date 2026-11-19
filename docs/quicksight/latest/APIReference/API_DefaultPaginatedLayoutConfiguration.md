@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultPaginatedLayoutConfiguration
-<a name="API_DefaultPaginatedLayoutConfiguration"></a>
 
 The options that determine the default settings for a paginated layout configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Cluster
 ---
 
 # Cluster
-<a name="API_Cluster"></a>
 
 Contains all of the attributes of a specific cluster.
 

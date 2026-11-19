@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListListeners
-<a name="API_ListListeners"></a>
 
 Lists the listeners for the specified service.
 

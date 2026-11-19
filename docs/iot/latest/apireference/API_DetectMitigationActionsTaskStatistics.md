@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DetectMitiga
 ---
 
 # DetectMitigationActionsTaskStatistics
-<a name="API_DetectMitigationActionsTaskStatistics"></a>
 
  The statistics of a mitigation action task.
 

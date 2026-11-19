@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/l
 ---
 
 # Life Sciences Data Collection, Storage, and Processing
-<a name="life-sciences-data-collection-storage-processing"></a>
 
 Publication date: **July 20, 2022 ([Diagram history](#diagram-history))**
 

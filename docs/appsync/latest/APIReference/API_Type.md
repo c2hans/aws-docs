@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Type.htm
 ---
 
 # Type
-<a name="API_Type"></a>
 
 Describes a type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/testing-locally-build-with-
 ---
 
 # Building AWS CDK applications with AWS SAM
-<a name="testing-locally-build-with-sam-cli"></a>
 
 The AWS SAM CLI provides support for building Lambda functions and layers defined in your AWS CDK application with ` [sam build](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-build.html) `.
 

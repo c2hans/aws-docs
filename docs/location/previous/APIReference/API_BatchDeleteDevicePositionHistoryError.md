@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchDeleteDevicePositionHistoryError
-<a name="API_BatchDeleteDevicePositionHistoryError"></a>
 
 Contains the tracker resource details.
 

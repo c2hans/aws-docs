@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/l
 ---
 
 # Linking AWS Partner Central and AWS accounts
-<a name="linking-accounts"></a>
 
 AWS recently updated the [AWS Partner Central Network (APN) fee policy](https://partnercentral.awspartner.com/partnercentral2/s/newsletter?url=APN-Fee-Requirement-Changes-for-2025). The change requires partners to link an AWS account to their AWS Partner Central account in order to confirm their AWS Partner Network (APN) membership. The linked AWS account becomes the primary account for managing Partner Central engagements and activities, including APN fee billing, solutions management, and APN Customer Engagement (ACE) opportunity tracking using the Partner Central APIs.
 

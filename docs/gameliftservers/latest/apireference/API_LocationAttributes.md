@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # LocationAttributes
-<a name="API_LocationAttributes"></a>
 
 Details about a location in a multi-location fleet.
 

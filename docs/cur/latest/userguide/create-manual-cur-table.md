@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/create-manual-cur-t
 ---
 
 # Creating a Cost and Usage Reports status table
-<a name="create-manual-cur-table"></a>
 
 AWS refreshes your AWS CUR multiple times a day. There isn't a way for Athena to tell when AWS is in the process of refreshing your report, which can lead to query results with a combination of old and new data. To mitigate this, create a table to track whether AWS is refreshing your Cost and Usage Reports and query that table to see if AWS is refreshing your data. You only need to create this table once. After that, AWS keeps the table up to date.<a name="create-refresh-table"></a>
 

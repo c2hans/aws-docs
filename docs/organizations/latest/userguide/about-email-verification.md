@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/about-ema
 ---
 
 # Email address verification with AWS Organizations
-<a name="about-email-verification"></a>
 
 After you create an organization and before you can invite accounts to join, you must verify that you own the email address provided for the management account in the organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-actions-menu.html
 ---
 
 # Manage selected waves
-<a name="wave-actions-menu"></a>
 
 The **Actions** menu allows you to perform actions on selected waves.
 

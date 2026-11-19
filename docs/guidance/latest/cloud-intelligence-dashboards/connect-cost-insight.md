@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Amazon Connect Cost Insight Dashboard
-<a name="connect-cost-insight"></a>
 
 ## Introduction
 <a name="introduction"></a>

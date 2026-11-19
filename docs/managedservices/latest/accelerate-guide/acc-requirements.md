@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Requirements for monitoring and incident management for Amazon EKS in AMS Accelerate
-<a name="acc-requirements"></a>
 
 These are the supported and/or required resources for monitoring and incident management for Amazon EKS for AMS Accelerate
 + **Supported Kubernetes versions:** See [Amazon EKS Kubernetes versions](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html) in the **Amazon EKS User Guide**.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, see:
 +  [NET318 – re:Invent 2025: From threat to threat intel: 360 degrees of DDoS](https://youtu.be/XPWAm4NILn0?si=shQgPWzKsflNe6UU) (YouTube video)

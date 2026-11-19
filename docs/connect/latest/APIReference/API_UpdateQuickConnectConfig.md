@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQuickConnectConfig
-<a name="API_UpdateQuickConnectConfig"></a>
 
 Updates the configuration settings for the specified quick connect.
 

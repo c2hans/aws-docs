@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling.htm
 ---
 
 # Scheduling in Connect Customer
-<a name="scheduling"></a>
 
 Contact center schedulers or managers need to create agent schedules for day-to-day workloads that are flexible and meet business and compliance requirements. Connect Customer helps you create efficient schedules that are optimized for per-channel Service Level or Average speed of answer targets. You can generate and manage agent schedules based on the following:
 + A short-term published forecast

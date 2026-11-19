@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/How
 ---
 
 # Supported data types and naming rules in Amazon DynamoDB
-<a name="HowItWorks.NamingRulesDataTypes"></a>
 
 This section describes the Amazon DynamoDB naming rules and the various data types that DynamoDB supports. There are limits that apply to data types. For more information, see [Data types](Constraints.md#limits-data-types).
 

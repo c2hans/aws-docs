@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_G
 ---
 
 # GetSearchJob
-<a name="API_BKS_GetSearchJob"></a>
 
 This operation retrieves metadata of a search job, including its progress.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourceFindingsSummary
-<a name="API_ResourceFindingsSummary"></a>
 
 A list of summaries for all finding types on a resource.
 

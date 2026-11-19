@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_St
 ---
 
 # StateTemplateSummary
-<a name="API_StateTemplateSummary"></a>
 
 Information about a state template.
 

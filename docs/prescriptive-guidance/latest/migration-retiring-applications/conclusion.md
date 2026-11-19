@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 This guide outlined six best practices to consider when retiring applications in your migration plan. They provide a framework for you to use when evaluating the applications scheduled for retirement and their potential impact.
 

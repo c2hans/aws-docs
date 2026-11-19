@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetCertificates
-<a name="API_GetCertificates"></a>
 
 Returns information about one or more Amazon Lightsail SSL/TLS certificates.
 

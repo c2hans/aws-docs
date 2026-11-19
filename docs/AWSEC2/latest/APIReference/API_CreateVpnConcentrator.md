@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpn
 ---
 
 # CreateVpnConcentrator
-<a name="API_CreateVpnConcentrator"></a>
 
 Creates a VPN concentrator that aggregates multiple VPN connections to a transit gateway.
 

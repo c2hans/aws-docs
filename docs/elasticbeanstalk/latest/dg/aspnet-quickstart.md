@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/aspnet-quicks
 ---
 
 # QuickStart: Deploy an ASP.NET application to Elastic Beanstalk
-<a name="aspnet-quickstart"></a>
 
 This QuickStart tutorial walks you through the process of creating a ASP.NET application and deploying it to an AWS Elastic Beanstalk environment.
 

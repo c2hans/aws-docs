@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/importing-fhi
 ---
 
 # Importing FHIR data with AWS HealthLake
-<a name="importing-fhir-data"></a>
 
 After creating a HealthLake data store, the next step is to import files from an Amazon Simple Storage Service (S3) bucket. You can start a FHIR import job using the AWS Management Console, AWS CLI, or AWS SDKs. Use native AWS HealthLake actions to start, describe, and list FHIR import jobs.
 

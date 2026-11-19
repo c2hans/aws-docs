@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Decrypt
 ---
 
 # DecryptStepDetails
-<a name="API_DecryptStepDetails"></a>
 
 Each step type has its own `StepDetails` structure.
 

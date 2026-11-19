@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 ---
 
 # Using pgAdmin to connect to a RDS for PostgreSQL DB instance
-<a name="USER_ConnectToPostgreSQLInstance.pgAdmin"></a>
 
 You can use the open-source tool pgAdmin to connect to your RDS for PostgreSQL DB instance. You can download and install pgAdmin from [http://www.pgadmin.org/](http://www.pgadmin.org/) without having a local instance of PostgreSQL on your client computer.
 

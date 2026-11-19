@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UpdateEnv
 ---
 
 # UpdateEnvironmentMembership
-<a name="API_UpdateEnvironmentMembership"></a>
 
 Changes the settings of an existing environment member for an AWS Cloud9 development environment.
 

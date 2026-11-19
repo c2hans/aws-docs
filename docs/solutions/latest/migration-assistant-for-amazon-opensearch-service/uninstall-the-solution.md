@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 Cleanup should happen last, not immediately after the first successful run. Wait until:
 + Production traffic has been stable on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection.

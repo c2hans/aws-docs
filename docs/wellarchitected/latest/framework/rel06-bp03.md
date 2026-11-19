@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel06-b
 ---
 
 # REL06-BP03 Send notifications with real-time processing and alarming
-<a name="rel06-bp03"></a>
 
  Real-time notifications alert responders and trigger automation the moment a metric crosses a threshold or a significant event occurs. The design challenge is setting thresholds that catch real problems without burying responders in noise.
 

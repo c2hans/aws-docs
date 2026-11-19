@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/event-refer
 ---
 
 # Amazon EventBridge events detail reference
-<a name="event-reference"></a>
 
 EventBridge itself emits the following events. These events are automatically sent to the default event bus as with any other AWS service.
 

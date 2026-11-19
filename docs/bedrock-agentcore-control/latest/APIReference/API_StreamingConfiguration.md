@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # StreamingConfiguration
-<a name="API_StreamingConfiguration"></a>
 
 The streaming configuration for an MCP gateway. This structure defines settings that control response streaming behavior.
 

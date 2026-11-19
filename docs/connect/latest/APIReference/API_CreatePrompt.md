@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePr
 ---
 
 # CreatePrompt
-<a name="API_CreatePrompt"></a>
 
 Creates a prompt. For more information about prompts, such as supported file types and maximum length, see [Create prompts](https://docs.aws.amazon.com/connect/latest/adminguide/prompts.html) in the *Connect Customer Administrator Guide*.
 

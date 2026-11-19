@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-q
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # AWS Well-Architected Agent Quotas and limits
-<a name="agent-quotas"></a>
 
 ## Access and entitlements
 <a name="agent-access"></a>

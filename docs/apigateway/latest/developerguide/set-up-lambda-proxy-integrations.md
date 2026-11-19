@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-
 ---
 
 # Lambda proxy integrations in API Gateway
-<a name="set-up-lambda-proxy-integrations"></a>
 
 The following section shows how to use a Lambda proxy integration.
 

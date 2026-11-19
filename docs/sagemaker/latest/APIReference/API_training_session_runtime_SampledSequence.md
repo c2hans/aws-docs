@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # SampledSequence
-<a name="API_training_session_runtime_SampledSequence"></a>
 
 A single generated sequence from the model.
 

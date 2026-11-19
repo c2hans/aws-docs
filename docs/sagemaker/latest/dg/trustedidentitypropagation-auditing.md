@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/trustedidentitypropa
 ---
 
 # Monitoring and auditing with CloudTrail
-<a name="trustedidentitypropagation-auditing"></a>
 
 With trusted identity propagation enabled, AWS CloudTrail logs include the identity information of the specific user who performed an action, rather than just the IAM role. This provides enhanced auditing capabilities for compliance and security.
 

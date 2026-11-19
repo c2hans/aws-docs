@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-spar
 ---
 
 # Connecting to Spark Connect within a VPC
-<a name="interactive-sessions-spark-connect-vpc"></a>
 
 You can use AWS PrivateLink to connect to a Spark Connect session from within your VPC. When you use an interface VPC endpoint, communication between your VPC and the AWS Glue Spark Connect endpoint stays entirely within the AWS network.
 

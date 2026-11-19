@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # Node
-<a name="API_Node"></a>
 
 A structure that represents a node in a dependency graph, containing information about a service, resource, or other entity and its characteristics.
 

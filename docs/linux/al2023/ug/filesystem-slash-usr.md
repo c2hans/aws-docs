@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-slash-usr.htm
 ---
 
 # `/usr` (System Resources)
-<a name="filesystem-slash-usr"></a>
 
  The `/usr` hierarchy is for vendor supplied Operating System resources. Except for the [`/usr/local`](#filesystem-slash-usr-local) hierarchy, nothing should modify anything under `/usr` except the OS package manager.
 

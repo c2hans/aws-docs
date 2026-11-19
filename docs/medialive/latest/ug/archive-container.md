@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/archive-container.ht
 ---
 
 # Fields for the output container
-<a name="archive-container"></a>
 
 The following fields relate to the packaging and delivery of the archive transport stream:
 + In **Output settings** – **Container Settings** section

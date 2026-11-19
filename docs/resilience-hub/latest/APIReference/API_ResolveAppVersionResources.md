@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # ResolveAppVersionResources
-<a name="API_ResolveAppVersionResources"></a>
 
 Resolves the resources for an application version.
 

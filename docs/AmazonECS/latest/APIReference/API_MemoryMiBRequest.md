@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Memory
 ---
 
 # MemoryMiBRequest
-<a name="API_MemoryMiBRequest"></a>
 
 The minimum and maximum amount of memory in mebibytes (MiB) for instance type selection. This ensures that selected instance types have adequate memory for your workloads.
 

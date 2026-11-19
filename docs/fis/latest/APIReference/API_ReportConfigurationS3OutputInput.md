@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ReportConfig
 ---
 
 # ReportConfigurationS3OutputInput
-<a name="API_ReportConfigurationS3OutputInput"></a>
 
 Specifies the S3 destination for the experiment report.
 

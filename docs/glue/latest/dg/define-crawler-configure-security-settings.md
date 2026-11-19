@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/define-crawler-configure-
 ---
 
 # Step 3: Configure security settings
-<a name="define-crawler-configure-security-settings"></a>
 
 **IAM role**
 The crawler assumes this role. It must have permissions similar to the AWS managed policy `AWSGlueServiceRole`. For Amazon S3 and DynamoDB sources, it must also have permissions to access the data store. If the crawler reads Amazon S3 data encrypted with AWS Key Management Service (AWS KMS), then the role must have decrypt permissions on the AWS KMS key.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/copper-reading-from-entit
 ---
 
 # Reading from Copper entities
-<a name="copper-reading-from-entities"></a>
 
 **Prerequisites**
 

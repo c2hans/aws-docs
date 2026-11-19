@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/protection-plans-aut
 ---
 
 # Auto-enable options
-<a name="protection-plans-auto-enable"></a>
 
 Each protection plan provides the following auto-enable options for organization accounts:
 

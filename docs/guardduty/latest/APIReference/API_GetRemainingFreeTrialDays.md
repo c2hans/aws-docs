@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetRem
 ---
 
 # GetRemainingFreeTrialDays
-<a name="API_GetRemainingFreeTrialDays"></a>
 
 Provides the number of days left for each data source used in the free trial period.
 

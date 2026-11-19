@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/gettingstartedguide/adv
 ---
 
 # Advanced security options in Amazon RDS
-<a name="advanced-security"></a>
 
 It's important to secure your Amazon RDS DB instance to protecting your data and ensuring compliance with organizational and regulatory standards. This section covers advanced network configurations and encryption techniques to improve your database security.
 

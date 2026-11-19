@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-illumina-drag
 ---
 
 # Illumina DRAGEN on HealthOmics private workflows
-<a name="workflows-illumina-dragen"></a>
 
 Illumina DRAGEN v4.6 includes a software mode (SW mode) that runs on standard x86 CPU instances and produces results that match FPGA-based DRAGEN. You can run DRAGEN SW mode as a task in a HealthOmics private workflow in all Regions where HealthOmics is available. DRAGEN SW mode doesn't use FPGA instances, and you don't specify a task accelerator.
 

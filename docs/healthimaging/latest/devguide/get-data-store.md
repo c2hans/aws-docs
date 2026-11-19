@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/get-data-s
 ---
 
 # Getting data store properties
-<a name="get-data-store"></a>
 
 Use the `GetDatastore` action to retrieve AWS HealthImaging [data store](getting-started-concepts.md#concept-data-store) properties. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`GetDatastore`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDatastore.html) in the [*AWS HealthImaging API Reference*](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetDatastore.html).
 

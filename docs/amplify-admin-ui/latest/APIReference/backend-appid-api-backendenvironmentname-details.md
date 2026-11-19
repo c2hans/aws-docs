@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Api backendEnvironmentName Details
-<a name="backend-appid-api-backendenvironmentname-details"></a>
 
 This contains resource-level configuration details for your configured data model.
 

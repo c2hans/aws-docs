@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_B
 ---
 
 # BatchUpdateRecommendationStatusFailedEntry
-<a name="API_BatchUpdateRecommendationStatusFailedEntry"></a>
 
 List of operational recommendations that did not get included or excluded.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteSpace
-<a name="API_DeleteSpace"></a>
 
 Used to delete a space.
 

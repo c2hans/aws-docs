@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ResponseInsp
 ---
 
 # ResponseInspectionStatusCode
-<a name="API_ResponseInspectionStatusCode"></a>
 
 Configures inspection of the response status code. This is part of the `ResponseInspection` configuration for `AWSManagedRulesATPRuleSet` and `AWSManagedRulesACFPRuleSet`.
 

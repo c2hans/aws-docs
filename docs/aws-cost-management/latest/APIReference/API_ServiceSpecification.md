@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ServiceSpecification
-<a name="API_ServiceSpecification"></a>
 
 Hardware specifications for the service that you want recommendations for.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # FHIR R4 `$attribution-status` operation for HealthLake
-<a name="reference-fhir-operations-attribution-status"></a>
 
 Retrieves the attribution status for a specific member, returning a Bundle containing all attribution resources related to the Patient. This operation is part of the [FHIR Member Attribution (ATR) List IG 2.1.0 implementation.](https://build.fhir.org/ig/HL7/davinci-atr/spec.html)
 

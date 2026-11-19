@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Using Gateway Load Balancer with Transit Gateway for centralized network security
-<a name="using-gwlb-with-tg-for-cns"></a>
 
 Often times, customers want to incorporate virtual appliances to handle the traffic filtering and to provide security inspection capabilities. In such use cases, they can integrate Gateway Load Balancer, virtual appliances, and Transit Gateway to deploy a centralized architecture for inspecting VPC-to-VPC and VPC-to-on-premises traffic.
 

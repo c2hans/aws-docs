@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AwsAcco
 ---
 
 # AwsAccount
-<a name="API_AwsAccount"></a>
 
 The account ID of a project.
 

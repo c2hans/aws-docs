@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetSummary
-<a name="API_AssetSummary"></a>
 
 Contains a summary of an asset.
 

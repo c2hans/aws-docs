@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/partner-app-onboard.
 ---
 
 # Set up Partner AI Apps
-<a name="partner-app-onboard"></a>
 
  The following topics describe the permissions needed to start using Amazon SageMaker Partner AI Apps. The permissions required are split into two parts, depending on the user permissions level:
 +  **Administrative permissions** – Permissions for administrators setting up data scientist and machine learning (ML) developer environments.

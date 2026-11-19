@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Alignment to demand
-<a name="alignment-to-demand"></a>
 
 |  EUCSUS01: How do you select the type of fleet and running mode for your end users?  |
 | --- |

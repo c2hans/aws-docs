@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ToolsDefinition
-<a name="API_ToolsDefinition"></a>
 
  The MCP tools definition with a protocol version and inline content. The `protocolVersion` identifies the MCP protocol version that the tools conform to. This differs from `schemaVersion` in the server definition, which identifies the server configuration schema format.
 

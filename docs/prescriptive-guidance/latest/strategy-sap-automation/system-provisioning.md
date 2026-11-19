@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Example: Automating system provisioning
-<a name="system-provisioning"></a>
 
 *System provisioning* is the process of setting up infrastructure in the cloud, including establishing user, system, and service access to the applications, data, and cloud resources. The benefits of automatic system provisioning are:
 + Reduced human errors during the deployment

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_LifeCycle.ht
 ---
 
 # LifeCycle
-<a name="API_LifeCycle"></a>
 
 An object representing the Source Server Lifecycle.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Deciding where to deploy each stack
-<a name="deciding-where-to-deploy-each-stack"></a>
 
 The three templates will be referred to by the following names and contain the following resources:
 + Admin stack: orchestrator step function, event rules and Security Hub custom action.

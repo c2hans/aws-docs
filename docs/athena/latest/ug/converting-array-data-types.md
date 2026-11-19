@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/converting-array-data-t
 ---
 
 # Convert array data types
-<a name="converting-array-data-types"></a>
 
 To convert data in arrays to supported data types, use the `CAST` operator, as `CAST(value AS type)`. Athena supports all of the native Presto data types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentClassifierProperties
-<a name="API_DocumentClassifierProperties"></a>
 
 Provides information about a document classifier.
 

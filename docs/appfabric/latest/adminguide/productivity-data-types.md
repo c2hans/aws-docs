@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/productivity
 ---
 
 # API data types for AppFabric for productivity (preview)
-<a name="productivity-data-types"></a>
 
 |  |
 | --- |

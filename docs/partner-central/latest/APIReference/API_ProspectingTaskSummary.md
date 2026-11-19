@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProspectingTaskSummary
-<a name="API_ProspectingTaskSummary"></a>
 
 A summary of a single prospecting task, returned by `ListProspectingFromEngagementTasks`. Contains key metrics and status information without the full per-engagement detail available from `GetProspectingFromEngagementTask`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Best practices for assessing applications to be retired during a migration to the AWS Cloud
-<a name="introduction"></a>
 
 *Damien Renner, Amazon Web Services*
 

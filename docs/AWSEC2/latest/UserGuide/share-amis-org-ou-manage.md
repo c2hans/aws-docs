@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/share-amis-org-o
 ---
 
 # Manage AMI sharing with an organization or OU
-<a name="share-amis-org-ou-manage"></a>
 
 You can manage AMI sharing with organizations and organization units (OU) to control whether they can launch Amazon EC2 instances.
 

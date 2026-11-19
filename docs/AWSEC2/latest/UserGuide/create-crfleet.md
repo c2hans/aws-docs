@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-crfleet.h
 ---
 
 # Create a Capacity Reservation Fleet
-<a name="create-crfleet"></a>
 
 When you create a Capacity Reservation Fleet it automatically creates Capacity Reservations for the instance types specified in the Fleet request, up to the specified total target capacity. The number of instances for which the Capacity Reservation Fleet reserves capacity depends on the total target capacity and instance type weights that you specify in the request. For more information, see [Instance type weight](crfleet-concepts.md#instance-weight) and [Total target capacity](crfleet-concepts.md#target-capacity).
 

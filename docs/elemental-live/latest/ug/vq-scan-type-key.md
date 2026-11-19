@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-scan-type-ke
 ---
 
 # Key fields for converting scan type
-<a name="vq-scan-type-key"></a>
 
 ## Description
 <a name="description-vq-scan-type-key"></a>

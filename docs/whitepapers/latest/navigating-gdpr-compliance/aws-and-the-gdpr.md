@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # AWS and the GDPR
-<a name="aws-and-the-gdpr"></a>
 
 AWS customers can use all AWS services to process personal data (as defined in the GDPR) that is uploaded to the AWS services under their AWS accounts (customer data) in compliance with the GDPR. In addition to our own compliance, AWS is committed to offering services and resources to our customers to help them comply with the GDPR requirements that may apply to their activities. New features are launched regularly, and AWS has 500\+ features and services focused on security and compliance.
 

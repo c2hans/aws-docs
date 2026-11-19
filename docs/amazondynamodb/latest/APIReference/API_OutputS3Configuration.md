@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_O
 ---
 
 # OutputS3Configuration
-<a name="API_OutputS3Configuration"></a>
 
 Contains the Amazon S3 location, encryption settings, and output types for a bulk operation. The `S3Bucket` and `OutputType` fields are required.
 

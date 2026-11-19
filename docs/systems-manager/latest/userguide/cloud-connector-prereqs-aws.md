@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # AWS prerequisites
-<a name="cloud-connector-prereqs-aws"></a>
 
 Complete the following steps in your AWS account.
 

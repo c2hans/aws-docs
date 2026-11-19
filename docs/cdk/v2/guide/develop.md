@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/develop.html
 ---
 
 # Developing AWS CDK applications
-<a name="develop"></a>
 
 Manage your infrastructure on AWS by developing applications using the AWS Cloud Development Kit (AWS CDK).
 

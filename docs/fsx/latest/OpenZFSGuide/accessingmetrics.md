@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/accessingmetrics
 ---
 
 # Accessing CloudWatch metrics
-<a name="accessingmetrics"></a>
 
 You can access Amazon FSx metrics for CloudWatch in the following ways:
 + The Amazon FSx console.

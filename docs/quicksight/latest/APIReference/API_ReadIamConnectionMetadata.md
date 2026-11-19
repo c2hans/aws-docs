@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadI
 ---
 
 # ReadIamConnectionMetadata
-<a name="API_ReadIamConnectionMetadata"></a>
 
 Read-only metadata for IAM-based connections, containing role and source ARN information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps
 ---
 
 # GetGlyphs
-<a name="API_geomaps_GetGlyphs"></a>
 
  `GetGlyphs` returns the map's glyphs.
 

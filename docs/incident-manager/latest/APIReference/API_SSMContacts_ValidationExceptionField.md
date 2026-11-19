@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ValidationExceptionField
-<a name="API_SSMContacts_ValidationExceptionField"></a>
 
 Provides information about which field caused the exception.
 

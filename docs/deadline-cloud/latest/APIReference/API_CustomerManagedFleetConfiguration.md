@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # CustomerManagedFleetConfiguration
-<a name="API_CustomerManagedFleetConfiguration"></a>
 
 The configuration details for a customer managed fleet.
 

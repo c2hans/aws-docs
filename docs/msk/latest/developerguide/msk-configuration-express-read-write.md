@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-configurat
 ---
 
 # Custom MSK Express broker configurations (Read/Write access)
-<a name="msk-configuration-express-read-write"></a>
 
 You can update read/write broker configurations either by using Amazon MSK’s [update configuration feature](msk-update-cluster-config.md) or using Apache Kafka’s AlterConfig API. Apache Kafka broker configurations are either static or dynamic. Static configurations require a broker restart for the configuration to be applied, while dynamic configurations do not need a broker restart. For more information about configuration properties and update modes, see [Updating broker configs](https://kafka.apache.org/documentation/#dynamicbrokerconfigs).
 

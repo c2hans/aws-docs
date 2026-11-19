@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SourceControlDeta
 ---
 
 # SourceControlDetails
-<a name="API_SourceControlDetails"></a>
 
 The details for a source control configuration for a job, allowing synchronization of job artifacts to or from a remote repository.
 

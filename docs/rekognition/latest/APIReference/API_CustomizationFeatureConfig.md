@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Cust
 ---
 
 # CustomizationFeatureConfig
-<a name="API_CustomizationFeatureConfig"></a>
 
 Feature specific configuration for the training job. Configuration provided for the job must match the feature type parameter associated with project. If configuration and feature type do not match an InvalidParameterException is returned.
 

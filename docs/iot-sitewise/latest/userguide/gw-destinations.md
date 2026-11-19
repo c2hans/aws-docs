@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/gw-destina
 ---
 
 # Destinations and path filters
-<a name="gw-destinations"></a>
 
 Destinations in AWS IoT SiteWise Edge provide a flexible and efficient way to manage how your industrial data flows from edge devices to the cloud. This section explains how to configure destinations, use path filters to route specific data streams, and choose the right destination type for your use case.
 

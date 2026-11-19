@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/patient-p
 ---
 
 # Patient profile
-<a name="patient-profile"></a>
 
 The patient profile is a unified view displayed in the Amazon Connect Customer Agent Workspace that provides human agents with upstream call leg context when they are connected with a caller. Whether the call is transferred after successful patient verification or escalated during appointment management, this profile reduces the need for patients to repeat information and reduces cognitive burden on human agents.
 

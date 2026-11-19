@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCert
 ---
 
 # AwsCertificateManagerCertificateResourceRecord
-<a name="API_AwsCertificateManagerCertificateResourceRecord"></a>
 
 Provides details about the CNAME record that is added to the DNS database for domain validation.
 

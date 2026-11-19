@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Overview
-<a name="overview"></a>
 
 Monitoring and alerting are included in four pillars of the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/).
 + The [operational excellence pillar](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/design-telemetry.html) prescribes that your workload should be designed to include telemetry and monitoring. AWS services such as [Amazon Relational Database Service](https://aws.amazon.com/rds/) (Amazon RDS) provide the information necessary for you to understand your workload's internal state (for example, metrics, logs, events, and traces). When you operate your Amazon RDS databases, you will want to understand the health of your databases instances, detect operational events, and be able to respond to both planned and unplanned events. AWS provides monitoring tools that help you determine when organizational and business outcomes are at risk, or potentially might be at risk, so you can take the appropriate actions at the right time.

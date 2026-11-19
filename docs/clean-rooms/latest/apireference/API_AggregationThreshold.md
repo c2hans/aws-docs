@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Aggr
 ---
 
 # AggregationThreshold
-<a name="API_AggregationThreshold"></a>
 
 Specifies the minimum number of distinct identities that each query output group must represent.
 

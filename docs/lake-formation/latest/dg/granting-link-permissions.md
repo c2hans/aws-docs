@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/granting-link-p
 ---
 
 # Granting resource link permissions
-<a name="granting-link-permissions"></a>
 
 Follow these steps to grant AWS Lake Formation permissions on one or more resource links to a principal in your AWS account.
 

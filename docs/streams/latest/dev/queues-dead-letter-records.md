@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/queues-dead-letter-re
 ---
 
 # Handle dead-letter records in a queue
-<a name="queues-dead-letter-records"></a>
 
 When a queue consumer receives a record `MaxReceiveCount` times without acknowledging it, the queue marks the record as a dead-letter record and stops delivering it on the normal receive path. A record that reaches `MaxReceiveCount` without an acknowledgment usually cannot be processed as it stands, and setting it aside stops the queue from redelivering it to your consumer instances.
 

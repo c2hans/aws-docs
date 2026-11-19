@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # Spain registration
-<a name="nx-country-reg-es"></a>
 
 The following registrations are available for Spain.
 

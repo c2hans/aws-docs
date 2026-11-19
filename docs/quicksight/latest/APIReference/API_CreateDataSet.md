@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateDataSet
-<a name="API_CreateDataSet"></a>
 
 Creates a dataset.
 

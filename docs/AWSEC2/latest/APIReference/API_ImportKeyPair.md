@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportKey
 ---
 
 # ImportKeyPair
-<a name="API_ImportKeyPair"></a>
 
 Imports the public key from an RSA or ED25519 key pair that you created using a third-party tool. You give AWS only the public key. The private key is never transferred between you and AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Trigg
 ---
 
 # TriggerConfig
-<a name="API_TriggerConfig"></a>
 
 Information about notification triggers for the deployment group.
 

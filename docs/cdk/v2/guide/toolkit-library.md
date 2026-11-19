@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/toolkit-library.html
 ---
 
 # Perform programmatic actions using the CDK Toolkit Library
-<a name="toolkit-library"></a>
 
 ## Understanding the CDK Toolkit Library
 <a name="toolkit-library-intro"></a>

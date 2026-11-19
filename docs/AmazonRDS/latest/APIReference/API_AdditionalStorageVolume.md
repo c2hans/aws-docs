@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Additi
 ---
 
 # AdditionalStorageVolume
-<a name="API_AdditionalStorageVolume"></a>
 
 Contains details about an additional storage volume for a DB instance. RDS support additional storage volumes for RDS for Oracle and RDS for SQL Server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel01-b
 ---
 
 # REL01-BP04 Monitor and manage quotas
-<a name="rel01-bp04"></a>
 
  Quota usage changes as a workload grows, and an increase request takes time to approve. Monitor consumption against each quota and raise quotas ahead of demand to support planned growth. Without monitoring, the first sign that you have run out of headroom is a failed operation in production.
 

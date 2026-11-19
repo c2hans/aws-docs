@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 ---
 
 # Getting the state of a change calendar
-<a name="change-calendar-getstate"></a>
 
 You can get the overall state of a calendar or the state of a calendar at a specific time in Change Calendar. You can also show the next time that the calendar state changes from `OPEN` to `CLOSED`, or the reverse.
 

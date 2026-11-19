@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # MatchScoreDetails
-<a name="API_geoplaces_MatchScoreDetails"></a>
 
 Details related to the match score.
 

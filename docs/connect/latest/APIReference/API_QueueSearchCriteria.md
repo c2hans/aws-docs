@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QueueSea
 ---
 
 # QueueSearchCriteria
-<a name="API_QueueSearchCriteria"></a>
 
 The search criteria to be used to return queues.
 
@@ -15,12 +14,12 @@ The `name` and `description` fields support "contains" queries with a minimum of
 
  ** AndConditions **   <a name="connect-Type-QueueSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [QueueSearchCriteria](#API_QueueSearchCriteria) objects
+Type: Array of [QueueSearchCriteria](API_QueueSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-QueueSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [QueueSearchCriteria](#API_QueueSearchCriteria) objects
+Type: Array of [QueueSearchCriteria](API_QueueSearchCriteria.md) objects
 Required: No
 
  ** QueueTypeCondition **   <a name="connect-Type-QueueSearchCriteria-QueueTypeCondition"></a>

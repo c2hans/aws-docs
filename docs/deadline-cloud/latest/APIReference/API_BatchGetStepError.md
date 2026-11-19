@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetStepError
-<a name="API_BatchGetStepError"></a>
 
 The error details for a step that could not be retrieved in a batch get operation.
 

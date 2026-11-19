@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputationModelDataBindingUsageSummary
-<a name="API_ComputationModelDataBindingUsageSummary"></a>
 
 A summary of how a specific data binding is used across computation models. This tracks dependencies between data sources and computation models, allowing you to understand the impact of changes to data sources.
 

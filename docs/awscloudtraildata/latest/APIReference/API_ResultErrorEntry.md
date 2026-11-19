@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtraildata/latest/APIReference/AP
 ---
 
 # ResultErrorEntry
-<a name="API_ResultErrorEntry"></a>
 
 Includes the error code and error message for events that could not be ingested by CloudTrail.
 

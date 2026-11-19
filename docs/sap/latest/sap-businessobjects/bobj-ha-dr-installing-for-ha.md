@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobj-ha-d
 ---
 
 # Installing SAP BusinessObjects BI Platform for HA
-<a name="bobj-ha-dr-installing-for-ha"></a>
 
 ## Creating a VPC
 <a name="bobj-ha-dr-creating-a-vpc"></a>

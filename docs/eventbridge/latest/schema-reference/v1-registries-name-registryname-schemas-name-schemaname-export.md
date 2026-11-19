@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-r
 ---
 
 # Export
-<a name="v1-registries-name-registryname-schemas-name-schemaname-export"></a>
 
 Exports a schema.
 

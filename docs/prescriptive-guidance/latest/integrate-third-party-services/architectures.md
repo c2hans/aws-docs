@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-t
 ---
 
 # Integration architectures
-<a name="architectures"></a>
 
 This section discusses individual architectures that you can use to integrate third-party services in the AWS Cloud.
 

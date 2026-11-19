@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/unders
 ---
 
 # Understanding workload identities
-<a name="understanding-agent-identities"></a>
 
 Workload identities represent the digital identity of your agents within the AWS environment. They serve as a stable anchor point that persists across different deployment environments and authentication schemes, allowing agents to maintain consistent identity whether they’re using IAM roles for AWS resource access, OAuth2 tokens for external service integration, or API keys for third-party tool access. The identity system abstracts the complexity of managing multiple credential types while providing a unified interface for authentication and authorization operations.
 

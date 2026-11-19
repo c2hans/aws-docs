@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/data-lo
 ---
 
 # Data Loss Prevention
-<a name="data-loss-prevention"></a>
 
 We'll look at two kinds of data loss prevention.
 

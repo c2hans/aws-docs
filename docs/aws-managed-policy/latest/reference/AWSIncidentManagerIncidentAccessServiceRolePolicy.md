@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIncidentManagerIncidentAccessServiceRolePolicy
-<a name="AWSIncidentManagerIncidentAccessServiceRolePolicy"></a>
 
 **Description**: Grants Incident Manager permissions to call other AWS services as a part of managing an incident.
 

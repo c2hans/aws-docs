@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 ---
 
 # Encryption at rest for Replay Session
-<a name="agent-access-replay-session-encryption"></a>
 
 Replay Session encrypts your recordings at rest by default. While a session is recorded and processed, Replay Session holds the screen frames, their metadata, and the finished artifacts that are waiting for delivery in storage that AWS owns. By default, this content is encrypted at rest with Amazon S3 managed keys (SSE-S3). You don't need to take any action.
 

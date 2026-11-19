@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UnfilteredPartiti
 ---
 
 # UnfilteredPartition
-<a name="API_UnfilteredPartition"></a>
 
 A partition that contains unfiltered metadata.
 

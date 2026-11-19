@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/waf
 ---
 
 # AWS WAF regional controls
-<a name="waf-regional-rules"></a>
 
 **Topics**
 + [[CT.WAF-REGIONAL.PR.1] Require any AWS WAF regional rule to have a condition](#ct-waf-regional-pr-1-description)

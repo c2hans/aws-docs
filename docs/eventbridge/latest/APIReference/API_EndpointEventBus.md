@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Endp
 ---
 
 # EndpointEventBus
-<a name="API_EndpointEventBus"></a>
 
 The event buses the endpoint is associated with.
 

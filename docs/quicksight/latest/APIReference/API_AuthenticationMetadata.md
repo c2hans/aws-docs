@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Authe
 ---
 
 # AuthenticationMetadata
-<a name="API_AuthenticationMetadata"></a>
 
 Union type containing authentication metadata for different authentication methods.
 

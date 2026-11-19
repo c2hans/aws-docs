@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_ListD
 ---
 
 # ListDominantLanguageDetectionJobs
-<a name="API_ListDominantLanguageDetectionJobs"></a>
 
 Gets a list of the dominant language detection jobs that you have submitted.
 

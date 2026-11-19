@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-create-secur
 ---
 
 # Set up security configurations for your knowledge base
-<a name="kb-create-security"></a>
 
 After you've created a knowledge base, you might have to set up the following security configurations:
 

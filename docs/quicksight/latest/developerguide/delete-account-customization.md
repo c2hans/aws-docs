@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/delete-
 ---
 
 # DeleteAccountCustomization
-<a name="delete-account-customization"></a>
 
 Use the `DeleteAccountCustomization` API operation to delete all AWS Quick Sight customizations in this AWS Region for the specified AWS account and Quick Sight namespace. Following is an example AWS CLI command for this operation.
 

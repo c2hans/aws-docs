@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_H
 ---
 
 # HostConfiguration
-<a name="API_HostConfiguration"></a>
 
 Provides a script that runs as a worker is starting up that you can use to provide additional configuration for workers in your fleet.
 

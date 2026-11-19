@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # Lock:transactionid
-<a name="apg-waits.locktransactionid"></a>
 
 The `Lock:transactionid` event occurs when a transaction is waiting for a row-level lock.
 

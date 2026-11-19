@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationPerformanceTarget
-<a name="API_AIRecommendationPerformanceTarget"></a>
 
 The performance targets for an AI recommendation job.
 

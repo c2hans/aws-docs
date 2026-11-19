@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FilterConfigurati
 ---
 
 # FilterConfiguration
-<a name="API_FilterConfiguration"></a>
 
 Configuration that defines how filter predicates are applied to REST API requests, supporting both query parameter and filter string strategies.
 

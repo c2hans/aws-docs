@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/s3-outposts-
 ---
 
 # Authorization and authentication caching
-<a name="s3-outposts-auth-cache"></a>
 
 S3 on Outposts securely caches authentication and authorization data locally on Outposts racks. The cache removes round trips to the parent AWS Region for every request. This eliminates the variability that is introduced by network round trips. With the authentication and authorization cache in S3 on Outposts, you get consistent latencies that are independent from the latency of the connection between the Outposts and the AWS Region.
 

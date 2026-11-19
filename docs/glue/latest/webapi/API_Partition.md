@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Partition.html
 ---
 
 # Partition
-<a name="API_Partition"></a>
 
 Represents a slice of table data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGreengrassFullAccess
-<a name="AWSGreengrassFullAccess"></a>
 
 **Description**: This policy gives full access to the AWS Greengrass configuration, management and deployment actions
 

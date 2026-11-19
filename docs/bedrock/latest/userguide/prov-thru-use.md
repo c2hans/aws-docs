@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prov-thru-use.h
 ---
 
 # Use a Provisioned Throughput with an Amazon Bedrock resource
-<a name="prov-thru-use"></a>
 
 After you purchase a Provisioned Throughput, you can use it with the following features:
 + **Model inference** – You can test the Provisioned Throughput in an Amazon Bedrock console playground. When you're ready to deploy the Provisioned Throughput, set up your application to invoke the provisioned model. Choose the tab for your preferred method, and then follow the steps:

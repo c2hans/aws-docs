@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ResourceK
 ---
 
 # ResourceKey
-<a name="API_ResourceKey"></a>
 
 The details that identify a resource within AWS Config, including the resource type and resource ID.
 

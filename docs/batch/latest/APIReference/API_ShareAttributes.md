@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ShareAttri
 ---
 
 # ShareAttributes
-<a name="API_ShareAttributes"></a>
 
 Specifies the weights for the share identifiers for the fair-share policy. Share identifiers that aren't included have a default weight of `1.0`.
 

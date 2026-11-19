@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Di
 ---
 
 # DirectConnectGatewayAssociation
-<a name="API_DirectConnectGatewayAssociation"></a>
 
 Information about an association between a Direct Connect gateway and a virtual private gateway or transit gateway.
 

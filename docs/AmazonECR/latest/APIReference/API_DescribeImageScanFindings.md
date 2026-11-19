@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Descri
 ---
 
 # DescribeImageScanFindings
-<a name="API_DescribeImageScanFindings"></a>
 
 Returns the scan findings for the specified image.
 

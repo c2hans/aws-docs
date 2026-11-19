@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageGroupOriginRestriction
-<a name="API_PackageGroupOriginRestriction"></a>
 
 Contains information about the configured restrictions of the origin controls of a package group.
 

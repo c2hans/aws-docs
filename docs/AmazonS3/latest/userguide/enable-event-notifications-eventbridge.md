@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/enable-event-n
 ---
 
 # Enabling Amazon EventBridge
-<a name="enable-event-notifications-eventbridge"></a>
 
 You can enable Amazon EventBridge by using the S3 console, AWS Command Line Interface (AWS CLI), or Amazon S3 REST API.
 

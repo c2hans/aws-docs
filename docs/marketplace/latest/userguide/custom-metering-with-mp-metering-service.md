@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/custom-mete
 ---
 
 # Configuring custom metering for AMI products with AWS Marketplace Metering Service
-<a name="custom-metering-with-mp-metering-service"></a>
 
 **Note**
 For AMI-based products with custom metering pricing, your software must call the [MeterUsage API](https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-metering_MeterUsage.html) using temporary AWS credentials of the IAM role for Amazon Elastic Compute Cloud attached to the Amazon EC2 instance. Using long-term access keys is not supported.

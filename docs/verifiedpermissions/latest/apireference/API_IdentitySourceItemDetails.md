@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # IdentitySourceItemDetails
-<a name="API_IdentitySourceItemDetails"></a>
 
  *This data type has been deprecated.*
 

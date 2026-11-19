@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Strategic focus areas for agentic AI
-<a name="focus-areas"></a>
 
 To move from early prototypes to production-grade and value-generating systems, teams need a coherent strategy that blends architecture, process, and product thinking.
 

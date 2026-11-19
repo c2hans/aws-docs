@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Dat
 ---
 
 # Dates
-<a name="Dates"></a>
 
 To convert dates to strings, we recommend following the ISO 8601 format, which supports lexicographical order comparisons.
 

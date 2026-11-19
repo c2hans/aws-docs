@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/bring-own-c
 ---
 
 # Recipe for bringing your own container
-<a name="bring-own-container-recipe"></a>
 
 In this section, we provide a step-by-step guide of what you need to bring your own container (BYOC) to Braket Hybrid Jobs — the scripts, files, and steps to combine them to get up and running with your custom Docker images. The recipes for two common cases:
 

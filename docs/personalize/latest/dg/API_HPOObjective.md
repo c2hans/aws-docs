@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_HPOObjective.h
 ---
 
 # HPOObjective
-<a name="API_HPOObjective"></a>
 
 The metric to optimize during hyperparameter optimization (HPO).
 

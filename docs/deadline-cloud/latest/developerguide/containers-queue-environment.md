@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/con
 ---
 
 # Docker queue environment overview
-<a name="containers-queue-environment"></a>
 
 The default Docker queue environment declares the `EXPR` and `WRAP_ACTIONS` OpenJD extensions. Its own enter and exit actions manage the rootless Docker daemon and session container on the worker. Three wrap actions replace the actions of inner environments and tasks while the queue environment is active.
 

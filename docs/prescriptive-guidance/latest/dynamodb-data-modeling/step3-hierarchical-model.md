@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 3: Identify your data-access patterns
-<a name="step3-hierarchical-model"></a>
 
 This example use case has the following access patterns for managing relationships between different car components.
 

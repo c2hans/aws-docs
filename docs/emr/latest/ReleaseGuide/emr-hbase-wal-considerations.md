@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-wal-co
 ---
 
 # Considerations and Regions for Amazon EMR WAL
-<a name="emr-hbase-wal-considerations"></a>
 
 ## Considerations for Amazon EMR WAL
 <a name="emr-hbase-wal-consid"></a>

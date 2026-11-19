@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/start-development-endpoin
 ---
 
 # Setting up networking for development for AWS Glue
-<a name="start-development-endpoint"></a>
 
 To run your extract, transform, and load (ETL) scripts with AWS Glue, you can develop and test your scripts using a *development endpoint*. Development endpoints are not supported for use with AWS Glue version 2.0 jobs. For versions 2.0 and later, the preferred development method is using Jupyter Notebook with one of the AWS Glue kernels. For more information, see [Getting started with AWS Glue interactive sessions using Livy](interactive-sessions.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambd
 ---
 
 # Example telemetry event in CloudWatch Lambda Insights
-<a name="Lambda-Insights-example-event"></a>
 
 Each invocation of a Lambda function that has Lambda Insights enabled writes a single log event to the `/aws/lambda-insights` log group. Each log event contains metrics in embedded metric format. For more information about embedded metric format, see [Embedding metrics within logs](CloudWatch_Embedded_Metric_Format.md).
 

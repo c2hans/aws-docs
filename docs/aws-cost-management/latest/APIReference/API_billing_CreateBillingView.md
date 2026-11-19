@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateBillingView
-<a name="API_billing_CreateBillingView"></a>
 
  Creates a billing view with the specified billing view attributes.
 

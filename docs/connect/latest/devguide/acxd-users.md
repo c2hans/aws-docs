@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-users.html
 ---
 
 # Users
-<a name="acxd-users"></a>
 
 Manage users in the account. Users are human identities (as opposed to programmatic users which are machine identities).
 

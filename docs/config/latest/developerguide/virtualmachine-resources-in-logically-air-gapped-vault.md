@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/virtualmach
 ---
 
 # virtualmachine-resources-in-logically-air-gapped-vault
-<a name="virtualmachine-resources-in-logically-air-gapped-vault"></a>
 
 Checks if AWS Backup-Gateway VirtualMachines are in a logically air-gapped vault. The rule is NON\_COMPLIANT if an AWS Backup-Gateway VirtualMachines is not in a logically air-gapped vault within the specified time period.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # ColumnLFTag
-<a name="API_ColumnLFTag"></a>
 
 A structure containing the name of a column resource and the LF-tags attached to it.
 

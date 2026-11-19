@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ListSolFunct
 ---
 
 # ListSolFunctionInstanceMetadata
-<a name="API_ListSolFunctionInstanceMetadata"></a>
 
 Lists network function instance metadata.
 

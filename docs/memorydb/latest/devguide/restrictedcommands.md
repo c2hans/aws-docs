@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/restrictedcomma
 ---
 
 # Restricted commands
-<a name="restrictedcommands"></a>
 
 To deliver a managed service experience, MemoryDB restricts access to certain commands that require advanced privileges. The following commands are unavailable:
 + `acl deluser`

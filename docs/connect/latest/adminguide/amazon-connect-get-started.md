@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 ---
 
 # Get started with Connect Customer
-<a name="amazon-connect-get-started"></a>
 
 **Tip**
 For an online workshop that uses a case study and includes hands-on labs, see [Introduction to Connect Customer](https://catalog.workshops.aws/amazon-connect-introduction/en-US/introduction) by AWS Workshop Studio.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_IpR
 ---
 
 # IpRouteInfo
-<a name="API_IpRouteInfo"></a>
 
 Information about one or more IP address blocks.
 
@@ -28,7 +27,7 @@ Pattern: `^((([0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4})|(([0-9a-fA-F]{1,4}:){1,7}:)
 Required: No
 
  ** Description **   <a name="DirectoryService-Type-IpRouteInfo-Description"></a>
-Description of the [IpRouteInfo](#API_IpRouteInfo).
+Description of the [IpRouteInfo](API_IpRouteInfo.md).
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `^([a-zA-Z0-9_])[\\a-zA-Z0-9_@#%*+=:?./!\s-]*$`

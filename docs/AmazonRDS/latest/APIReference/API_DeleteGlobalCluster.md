@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteGlobalCluster
-<a name="API_DeleteGlobalCluster"></a>
 
 Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first.
 

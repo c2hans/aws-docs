@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Large migration considerations for VDI operating modes
-<a name="vdi-operating-modes"></a>
 
 You can deploy VDIs in either persistent or non-persistent mode:
 + In *persistent* mode, a user can connect to the same virtual desktop every time. Changes from a previous session are saved for the next time the user connects. Persistent VDIs are typically faster to deploy, but you must manage patching and updating, and they require at least some storage capacity.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-not
 ---
 
 # IVS Release Notes \| Real-Time Streaming
-<a name="release-notes"></a>
 
 This document contains all Amazon IVS Real-Time Streaming release notes, latest first, organized by date of release.
 

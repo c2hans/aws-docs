@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationVersionStatusHistory
-<a name="API_RegistrationVersionStatusHistory"></a>
 
 The **RegistrationVersionStatusHistory** object contains the time stamps for when the reservations status changes.
 

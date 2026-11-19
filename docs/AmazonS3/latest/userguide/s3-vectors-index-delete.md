@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-ind
 ---
 
 # Deleting a vector index
-<a name="s3-vectors-index-delete"></a>
 
 You can delete a vector index when you no longer need it. This operation permanently removes the index and all vectors that are stored within it.
 

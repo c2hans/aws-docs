@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-o
 ---
 
 # Using rules in multiple Regions
-<a name="resolver-overview-forward-vpc-to-network-using-rules-multiple-regions"></a>
 
 Route 53 VPC Resolver is a Regional service, so objects that you create in one AWS Region are available only in that Region. To use the same rule in more than one Region, you must create the rule in each Region.
 

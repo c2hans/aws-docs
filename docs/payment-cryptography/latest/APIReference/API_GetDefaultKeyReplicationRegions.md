@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # GetDefaultKeyReplicationRegions
-<a name="API_GetDefaultKeyReplicationRegions"></a>
 
 Retrieves the list of AWS Regions where [Multi-Region key replication](https://docs.aws.amazon.com/payment-cryptography/latest/userguide/keys-multi-region-replication.html) is currently enabled for your AWS account.
 

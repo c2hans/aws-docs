@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/using-requests.h
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Making requests and handling responses
-<a name="using-requests"></a>
 
 Each service package of the AWS SDK for Python v4 provides a generated client with one method for each service operation. You call an operation with keyword arguments. It returns a typed output object. Type checkers use the generated types to check arguments and response members before the application runs.
 

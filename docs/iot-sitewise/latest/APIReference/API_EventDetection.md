@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Eve
 ---
 
 # EventDetection
-<a name="API_EventDetection"></a>
 
 Configuration for event detection enrichment on video time-series data.
 

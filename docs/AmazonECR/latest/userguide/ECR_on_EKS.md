@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_EKS.ht
 ---
 
 # Using Amazon ECR Images with Amazon EKS
-<a name="ECR_on_EKS"></a>
 
 You can use your Amazon ECR images with Amazon EKS.
 

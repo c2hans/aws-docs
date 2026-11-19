@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/t
 ---
 
 # Troubleshooting general issues in AWS Network Firewall
-<a name="troubleshooting-general-issues"></a>
 
 Use the information here to help you diagnose and fix common issues when you work with Network Firewall.
 

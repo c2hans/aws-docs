@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_X12Function
 ---
 
 # X12FunctionalGroupHeaders
-<a name="API_X12FunctionalGroupHeaders"></a>
 
 Part of the X12 message structure. These are the functional group headers for the X12 EDI object.
 

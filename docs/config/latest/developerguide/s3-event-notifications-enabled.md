@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-event-no
 ---
 
 # s3-event-notifications-enabled
-<a name="s3-event-notifications-enabled"></a>
 
 Checks if Amazon S3 Events Notifications are enabled on an S3 bucket. The rule is NON\_COMPLIANT if S3 Events Notifications are not set on a bucket, or if the event type or destination do not match the `eventTypes` and destinationArn parameters.
 

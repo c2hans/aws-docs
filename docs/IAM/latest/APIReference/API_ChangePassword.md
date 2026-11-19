@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ChangePasswo
 ---
 
 # ChangePassword
-<a name="API_ChangePassword"></a>
 
 Changes the password of the IAM user who is calling this operation. This operation can be performed using the AWS CLI, the AWS API, or the **My Security Credentials** page in the AWS Management Console. The AWS account root user password is not affected by this operation.
 

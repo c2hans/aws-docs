@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-accel
 ---
 
 # Compare using global static IP addresses to regional static IP addresses
-<a name="about-accelerators.eip-accelerator"></a>
 
 If you want to use a static IP address in front of an AWS resource, such as an Amazon EC2 instance, you have several options. For example, you can allocate an Elastic IP address, which is a static IPv4 address that you can associate with an Amazon EC2 instance or network interface in a single AWS Region.
 

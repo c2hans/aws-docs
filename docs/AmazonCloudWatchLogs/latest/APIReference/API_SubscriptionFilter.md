@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # SubscriptionFilter
-<a name="API_SubscriptionFilter"></a>
 
 Represents a subscription filter.
 

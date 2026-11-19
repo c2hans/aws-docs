@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Reference
-<a name="reference"></a>
 
 This solution includes information about an optional feature for collecting unique metrics for this solution and a list of builders who contributed to this solution.
 

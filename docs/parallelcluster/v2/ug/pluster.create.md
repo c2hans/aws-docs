@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/pluster.create.htm
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `pcluster create`
-<a name="pluster.create"></a>
 
 Creates a new cluster.
 
@@ -35,7 +34,7 @@ Defaults to `~/.parallelcluster/config`.
 **-r {{REGION}}, --region {{REGION}}**
 Specifies the AWS Region to use. The priority order used to select the AWS Region for a new cluster is as follows:
 
-1. `-r` or `--region` parameter to [`pcluster create`](#pluster.create).
+1. `-r` or `--region` parameter to [`pcluster create`](pluster.create.md).
 
 1. `AWS_DEFAULT_REGION` environment variable.
 

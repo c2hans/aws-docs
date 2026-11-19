@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # FindingSource
-<a name="API_FindingSource"></a>
 
 The source of the finding. This indicates how the access that generated the finding is granted. It is populated for Amazon S3 bucket findings.
 

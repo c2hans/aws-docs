@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/managing.html
 ---
 
 # Managing Oracle Database@AWS
-<a name="managing"></a>
 
 You can modify and delete some Oracle Database@AWS resources after you create them.
 

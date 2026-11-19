@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/releasenotes/rn-2-
 ---
 
 # New features in version 2.26 and 3.26
-<a name="rn-2-26-features"></a>
 
 ## New features in Elemental Live and Statmux 2.26
 <a name="rn-2-26-features-live"></a>

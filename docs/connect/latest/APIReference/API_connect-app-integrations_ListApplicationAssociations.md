@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListApplicationAssociations
-<a name="API_connect-app-integrations_ListApplicationAssociations"></a>
 
 Returns a paginated list of application associations for an application.
 

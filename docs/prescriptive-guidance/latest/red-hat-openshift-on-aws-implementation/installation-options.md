@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-ope
 ---
 
 # Installation options
-<a name="installation-options"></a>
 
 There are two main ways to install Red Hat OpenShift on AWS:
 + Installer-provisioned infrastructure (IPI) ‒ The user provides the basic information (such as the number of control plane machines) and can choose default values for most of the questions. The Red Hat OpenShift Service on AWS command line utility (`rosa `CLI) can be placed in an IPI structure, as discussed in the next section.

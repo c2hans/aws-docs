@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster
 ---
 
 # rds-cluster-auto-minor-version-upgrade-enable
-<a name="rds-cluster-auto-minor-version-upgrade-enable"></a>
 
 Checks if automatic minor version upgrades are enabled for Amazon RDS Multi-AZ cluster deployments. The rule is NON\_COMPLIANT if autoMinorVersionUpgrade is set to false.
 

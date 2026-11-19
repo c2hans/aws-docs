@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_GetQuery
 ---
 
 # GetQueryResults
-<a name="API_GetQueryResults"></a>
 
 Return the data for a query with the Internet Monitor query interface. Specify the query that you want to return results for by providing a `QueryId` and a monitor name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # CI/CD and automation for serverless AI
-<a name="cicd-and-automation"></a>
 
 In traditional software development, continuous integration and deployment (CI/CD) enables teams to test and release changes rapidly and safely. In serverless AI systems, CI/CD becomes even more critical because of the ephemeral, event-driven nature of services and the volatile behavior of AI models and prompts.
 

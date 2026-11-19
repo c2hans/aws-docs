@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Step 2. Associate the web ACL with your web application
-<a name="step-2.-associate-the-web-acl-with-your-web-application"></a>
 
 Update your CloudFront distribution(s) or ALB(s) to activate AWS WAF and logging using the resources you generated in [Step 1. Launch the stack](step-1.-launch-the-stack.md).
 

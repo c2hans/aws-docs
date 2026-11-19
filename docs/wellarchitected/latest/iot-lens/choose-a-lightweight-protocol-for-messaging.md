@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/choose-a
 ---
 
 # Choose a lightweight protocol for messaging
-<a name="choose-a-lightweight-protocol-for-messaging"></a>
 
  IoT devices can use a number of application layer protocols to communicate with each other as well as the cloud.  The most common protocol for IoT devices is [MQTT](https://mqtt.org/mqtt-specification/).
 

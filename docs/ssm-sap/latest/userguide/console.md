@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/console.html
 ---
 
 # AWS Console for SAP applications
-<a name="console"></a>
 
 The AWS Console for SAP applications provides a centralized view for managing your SAP applications on AWS. To open the console, search for "AWS for SAP" in the AWS Management Console search bar, or navigate directly to https://console.aws.amazon.com/awsforsap/home.
 

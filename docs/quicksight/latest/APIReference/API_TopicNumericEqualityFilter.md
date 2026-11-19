@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicNumericEqualityFilter
-<a name="API_TopicNumericEqualityFilter"></a>
 
 A filter that filters topics based on the value of a numeric field. The filter includes only topics whose numeric field value matches the specified value.
 

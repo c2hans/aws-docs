@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationEbsVolumesResult
-<a name="API_OrganizationEbsVolumesResult"></a>
 
 An object that contains information on the status of whether EBS volumes scanning will be enabled as a data source for an organization.
 

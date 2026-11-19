@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-batch-la
 ---
 
 # Run an AWS Batch job with Lambda
-<a name="sample-batch-lambda"></a>
 
 This sample project demonstrates how to use Step Functions to pre-process data with AWS Lambda functions and then orchestrate AWS Batch jobs.
 

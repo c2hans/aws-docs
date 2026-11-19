@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-cfig-delete.h
 ---
 
 # Deleting a packaging configuration
-<a name="pkg-cfig-delete"></a>
 
 To remove a playback endpoint from an asset, delete the packaging configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/network
 ---
 
 # Network Interfaces in Amazon WorkSpaces Applications
-<a name="network-interfaces"></a>
 
 Each WorkSpaces Applications streaming instance has the following network interfaces:
 + The customer network interface provides connectivity to the resources within your VPC, as well as the internet, and is used to join the streaming instance to your directory.

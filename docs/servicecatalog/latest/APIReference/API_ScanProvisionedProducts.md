@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_S
 ---
 
 # ScanProvisionedProducts
-<a name="API_ScanProvisionedProducts"></a>
 
 Lists the provisioned products that are available (not terminated).
 

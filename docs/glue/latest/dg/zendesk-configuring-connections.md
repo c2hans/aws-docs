@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zendesk-configuring-conne
 ---
 
 # Configuring Zendesk connections
-<a name="zendesk-configuring-connections"></a>
 
 The Zendesk connector supports the Authorization Code grant type.
 + This grant type is considered "three-legged" OAuth as it relies on redirecting users to a third-party authorization server to authenticate the user. It is used when creating connections via the AWS Glue console. The user creating a connection may by default rely on an AWS Glue-owned connected app (AWS Glue-managed client application) where they do not need to provide any OAuth related information except for their Zendesk instance URL. The AWS Glue console will redirect the user to Zendesk where the user must login and allow AWS Glue the requested permissions to access their Zendesk instance.

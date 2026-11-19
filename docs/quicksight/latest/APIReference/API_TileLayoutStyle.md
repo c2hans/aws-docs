@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TileL
 ---
 
 # TileLayoutStyle
-<a name="API_TileLayoutStyle"></a>
 
 The display options for the layout of tiles on a sheet.
 

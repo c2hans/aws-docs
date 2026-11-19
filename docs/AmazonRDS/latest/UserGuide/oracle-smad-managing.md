@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-smad-m
 ---
 
 # Managing a DB instance in a self-managed Active Directory domain
-<a name="oracle-smad-managing"></a>
 
 You can use the AWS Management Console, the AWS CLI, or the Amazon RDS API to manage your Amazon RDS for Oracle DB instance and its relationship with your self-managed Active Directory (AD) domain. For example, you can move the DB instance into, out of, or between domains.
 

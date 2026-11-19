@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ve
 ---
 
 # VendedMetricsSettings
-<a name="API_VendedMetricsSettings"></a>
 
 The configuration settings for vended metrics in your AWS AppConfig account.
 

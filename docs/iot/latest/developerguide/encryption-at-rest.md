@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/encryption-at-
 ---
 
 # Data encryption at rest in AWS IoT Core
-<a name="encryption-at-rest"></a>
 
 By default, all AWS IoT Core data at rest is encrypted using AWS owned keys. AWS IoT Core also supports symmetric customer managed keys from AWS Key Management Service (AWS KMS). With customer managed keys, you can create, own, and manage the AWS KMS keys in your AWS account. AWS IoT Core will use your KMS keys to encrypt your data at rest. You have full control over these KMS keys, including creating and maintaining their key policies. You can also configure IAM policies for the roles that access AWS KMS to control permissions for these keys.
 

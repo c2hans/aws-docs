@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSSMAutomationApproverAccess
-<a name="AmazonSSMAutomationApproverAccess"></a>
 
 **Description**: Provides access to view automation executions and send approval decisions to automation waiting for approval
 

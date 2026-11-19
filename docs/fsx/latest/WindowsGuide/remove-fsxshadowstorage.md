@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/remove-fsxshadow
 ---
 
 # Deleting shadow copy storage, schedule, and all shadow copies
-<a name="remove-fsxshadowstorage"></a>
 
  You can delete your shadow copy configuration, including all existing shadow copies and the shadow copy schedule. At the same time, you can release the shadow copy storage on the file system.
 

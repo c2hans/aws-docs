@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ChimeSdkMeetingConfiguration
-<a name="API_media-pipelines-chime_ChimeSdkMeetingConfiguration"></a>
 
 The configuration object of the Amazon Chime SDK meeting for a specified media pipeline. `SourceType` must be `ChimeSdkMeeting`.
 

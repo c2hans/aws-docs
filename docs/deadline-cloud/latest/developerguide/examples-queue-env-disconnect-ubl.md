@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Disconnect Deadline Cloud usage-based licensing with a queue environment
-<a name="examples-queue-env-disconnect-ubl"></a>
 
 The disconnect\_ubl\_queue\_env.yaml queue environment unsets Deadline Cloud usage-based license (UBL) environment variables. Use this queue environment when you want to turn off all connections to Deadline Cloud UBL for your queue and force the use of a custom license server. For more information about the queue environment, see [disconnect\_ubl\_queue\_env.yaml](https://github.com/aws-deadline/deadline-cloud-samples/blob/mainline/queue_environments/disconnect_ubl_queue_env.yaml) on the GitHub website. For more information about bring your own license, see [Connect service-managed fleets to a custom license server](smf-byol.md).
 

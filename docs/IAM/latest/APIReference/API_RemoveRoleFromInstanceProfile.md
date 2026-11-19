@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_RemoveRoleFr
 ---
 
 # RemoveRoleFromInstanceProfile
-<a name="API_RemoveRoleFromInstanceProfile"></a>
 
 Removes the specified IAM role from the specified Amazon EC2 instance profile.
 

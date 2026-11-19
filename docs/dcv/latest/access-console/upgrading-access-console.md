@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/upgrading-acce
 ---
 
 # Upgrading the Access Console
-<a name="upgrading-access-console"></a>
 
 The following section explains how to update Amazon DCV Access Console components on a single host and on separate multiple hosts.
 

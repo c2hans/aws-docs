@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Cli
 ---
 
 # ClientCertAuthSettings
-<a name="API_ClientCertAuthSettings"></a>
 
 Contains information about the client certificate authentication settings for the `RegisterCertificate` and `DescribeCertificate` operations.
 

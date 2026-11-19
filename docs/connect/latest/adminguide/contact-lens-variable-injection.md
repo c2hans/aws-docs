@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-v
 ---
 
 # Specify variables for certain parameters when creating or managing rules using Connect Customer APIs
-<a name="contact-lens-variable-injection"></a>
 
 When you create or manage rules programmatically using Connect Customer APIs (such as [CreateRule](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateRule.html) or [UpdateRule](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRule.html)), you can specify variables for certain parameters. The variables are resolved at runtime when the action is triggered, based on the value of the [EventSourceName](https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleTriggerEventSource.html) parameter.
 

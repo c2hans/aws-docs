@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-sns-
 ---
 
 # Subscription Workflow Tutorial: Running the Workflow
-<a name="swf-sns-tutorial-running-the-workflow"></a>
 
 Now that you've completed the implementation of your workflow, activities, and the workflow and activity pollers, you're ready to run the workflow.
 

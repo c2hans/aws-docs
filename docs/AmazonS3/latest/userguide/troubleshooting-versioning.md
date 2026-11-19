@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting versioning
-<a name="troubleshooting-versioning"></a>
 
 The following topics can help you troubleshoot some common Amazon S3 versioning issues.
 

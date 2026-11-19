@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListR
 ---
 
 # ListRouteCalculatorsResponseEntry
-<a name="API_ListRouteCalculatorsResponseEntry"></a>
 
 A route calculator resource listed in your AWS account.
 

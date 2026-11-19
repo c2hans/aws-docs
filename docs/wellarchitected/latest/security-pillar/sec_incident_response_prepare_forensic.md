@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC10-BP03 Prepare forensic capabilities
-<a name="sec_incident_response_prepare_forensic"></a>
 
 Ahead of a security incident, consider developing forensics capabilities to support security event investigations.
 

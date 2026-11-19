@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-show-c
 ---
 
 # SHOW COLUMNS
-<a name="querying-iceberg-show-columns"></a>
 
 Shows the columns in a table.
 

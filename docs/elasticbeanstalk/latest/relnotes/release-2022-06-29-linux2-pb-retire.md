@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Amazon Linux 2 platform branches retired on June 29, 2022
-<a name="release-2022-06-29-linux2-pb-retire"></a>
 
 This release announces the retirement of several platform branches based on Amazon Linux 2.
 

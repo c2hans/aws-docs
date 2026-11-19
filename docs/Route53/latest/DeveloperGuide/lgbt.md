@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/lgbt.html
 ---
 
 # .lgbt
-<a name="lgbt"></a>
 
 Used by the community of lesbian, gay, bisexual, and transgender people.
 

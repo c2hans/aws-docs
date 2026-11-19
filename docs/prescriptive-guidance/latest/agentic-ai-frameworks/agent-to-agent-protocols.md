@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Agent-to-agent protocols
-<a name="agent-to-agent-protocols"></a>
 
 The following table provides an overview of agentic protocols that enable multiple agents to collaborate, delegate tasks, and share information.
 

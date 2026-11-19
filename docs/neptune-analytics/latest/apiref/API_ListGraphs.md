@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_List
 ---
 
 # ListGraphs
-<a name="API_ListGraphs"></a>
 
 Lists available Neptune Analytics graphs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BuiltInSlo
 ---
 
 # BuiltInSlotTypeSummary
-<a name="API_BuiltInSlotTypeSummary"></a>
 
 Provides summary information about a built-in slot type for the [ ListBuiltInSlotTypes ](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBuiltInSlotTypes.html) operation.
 

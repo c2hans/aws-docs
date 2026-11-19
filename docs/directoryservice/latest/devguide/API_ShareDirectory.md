@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Sha
 ---
 
 # ShareDirectory
-<a name="API_ShareDirectory"></a>
 
 Shares a specified directory (`DirectoryId`) in your AWS account (directory owner) with another AWS account (directory consumer). With this operation you can use your directory from any AWS account and from any Amazon VPC within an AWS Region.
 

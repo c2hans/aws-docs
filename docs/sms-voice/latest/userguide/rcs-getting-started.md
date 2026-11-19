@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-getting-s
 ---
 
 # Getting started with RCS
-<a name="rcs-getting-started"></a>
 
 This guide walks you through setting up your first RCS agent in AWS End User Messaging, and sending and receiving your first RCS message. By the end, you will have a working RCS testing environment. Estimated time to complete: 15–30 minutes.
 

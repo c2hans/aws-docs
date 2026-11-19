@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_DeleteResponde
 ---
 
 # DeleteResponderGateway
-<a name="API_DeleteResponderGateway"></a>
 
 Deletes a responder gateway.
 

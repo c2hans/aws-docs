@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Har
 ---
 
 # HarvestedManifests
-<a name="API_HarvestedManifests"></a>
 
 A collection of harvested manifests of different types.
 

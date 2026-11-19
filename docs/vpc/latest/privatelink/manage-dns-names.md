@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/manage-dns-names.
 ---
 
 # Manage DNS names for VPC endpoint services
-<a name="manage-dns-names"></a>
 
 Service providers can configure private DNS names for their endpoint services. Suppose that a service provider makes their service available through a public endpoint and as an endpoint service. If the service provider uses the DNS name of the public endpoint as the private DNS name of the endpoint service, then service consumers can access the public endpoint or the endpoint service using the same client application, without modification. If a request comes from the service consumer VPC, the private DNS servers resolve the DNS name to the IP addresses of the endpoint network interfaces. Otherwise, the public DNS servers resolve the DNS name to the public endpoint.
 

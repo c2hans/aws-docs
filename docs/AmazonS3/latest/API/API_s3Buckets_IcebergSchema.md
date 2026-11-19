@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Iceber
 ---
 
 # IcebergSchema
-<a name="API_s3Buckets_IcebergSchema"></a>
 
 Contains details about the schema for an Iceberg table.
 

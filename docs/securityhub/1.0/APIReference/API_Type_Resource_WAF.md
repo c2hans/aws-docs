@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # AWS WAF objects
-<a name="API_Type_Resource_WAF"></a>
 
 ****AWS WAF objects****
 + [AwsWafRateBasedRuleDetails](API_AwsWafRateBasedRuleDetails.md)

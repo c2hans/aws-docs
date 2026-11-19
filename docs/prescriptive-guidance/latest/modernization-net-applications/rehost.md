@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Rehosting
-<a name="rehost"></a>
 
 Rehosting (lift and shift) is the process of migrating your on-premises application to the cloud without modifying it. This strategy is used mostly to migrate large-scale applications to satisfy specific business goals, such as launching a product in an accelerated timeline or leaving an on-premises data center. The applications are rehosted on Amazon Elastic Compute Cloud (Amazon EC2) Windows instances that meet the requirements of the applications you migrate.
 

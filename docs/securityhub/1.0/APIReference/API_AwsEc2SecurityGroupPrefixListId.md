@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2S
 ---
 
 # AwsEc2SecurityGroupPrefixListId
-<a name="API_AwsEc2SecurityGroupPrefixListId"></a>
 
 A prefix list ID.
 

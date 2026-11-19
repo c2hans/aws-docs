@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SourceServer
 ---
 
 # SourceServerConnectorAction
-<a name="API_SourceServerConnectorAction"></a>
 
 Source Server connector action.
 

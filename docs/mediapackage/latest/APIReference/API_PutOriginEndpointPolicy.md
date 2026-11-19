@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Put
 ---
 
 # PutOriginEndpointPolicy
-<a name="API_PutOriginEndpointPolicy"></a>
 
 Attaches an IAM policy to the specified origin endpoint. You can attach only one policy with each request.
 

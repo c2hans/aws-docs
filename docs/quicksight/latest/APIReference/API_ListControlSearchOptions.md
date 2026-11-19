@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListC
 ---
 
 # ListControlSearchOptions
-<a name="API_ListControlSearchOptions"></a>
 
 The configuration of the search options in a list control.
 

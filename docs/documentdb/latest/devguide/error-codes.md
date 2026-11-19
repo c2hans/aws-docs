@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/error-codes.h
 ---
 
 # Error codes
-<a name="error-codes"></a>
 
 When a command fails, you receive an error from Amazon DocumentDB (with MongoDB compatibility) that contains a numeric error `code` and a descriptive message (`errmsg`). Use the following table to identify the error codes that Amazon DocumentDB 8.0 might return to your client application. Where an error code corresponds to a single condition, the description matches the message text returned by the server. Codes that cover multiple conditions have a general description.
 

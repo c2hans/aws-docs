@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # UpdateDomainLayout
-<a name="API_connect-customer-profiles_UpdateDomainLayout"></a>
 
 Updates the layout used to view data for a specific domain. This API can only be invoked from the Amazon Connect admin website.
 

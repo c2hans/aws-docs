@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListP
 ---
 
 # ListPolicyEvents
-<a name="API_ListPolicyEvents"></a>
 
 Lists events for a resilience policy, including services that started or stopped using it, changes to cross-account sharing, and deletion of the policy.
 

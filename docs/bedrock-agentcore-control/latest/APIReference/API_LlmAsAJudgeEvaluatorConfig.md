@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LlmAsAJudgeEvaluatorConfig
-<a name="API_LlmAsAJudgeEvaluatorConfig"></a>
 
  The configuration for LLM-as-a-Judge evaluation that uses a language model to assess agent performance based on custom instructions and rating scales.
 

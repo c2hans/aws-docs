@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/python2.7-no-more.html
 ---
 
 # Python 2.7 has been replaced with Python 3
-<a name="python2.7-no-more"></a>
 
  AL2 provides support and security patches for Python 2.7 until June 2025, as part of our long-term support (LTS) commitment for AL2 core packages. This support extends beyond the upstream Python community declaration of Python 2.7 end-of-life of January 2020.
 

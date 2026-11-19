@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateOauth2CredentialProvider
-<a name="API_CreateOauth2CredentialProvider"></a>
 
 Creates a new OAuth2 credential provider.
 

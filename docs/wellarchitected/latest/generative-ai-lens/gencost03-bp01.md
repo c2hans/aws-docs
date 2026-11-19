@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENCOST03-BP01 Optimize prompt token length
-<a name="gencost03-bp01"></a>
 
  Long prompts tend to be filled with lots of context, additional information, and requests for a foundation model when it is conducting inference. Reducing prompt length lowers the amount of compute needed to serve inference.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/describe
 ---
 
 # Add an application to AWS Resilience Hub
-<a name="describe-applicationlication"></a>
 
 AWS Resilience Hub offers resiliency assessment and validation that integrates into your software development lifecycle. AWS Resilience Hub helps you proactively prepare and protect your AWS applications from disruptions by:
 + Uncovering resiliency weaknesses.

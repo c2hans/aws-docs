@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ConfigureEC2Metadata`
-<a name="automation-awssupport-configureec2metadata"></a>
 
  **Description**
 

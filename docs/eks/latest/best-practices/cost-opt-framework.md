@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/cost-opt-frame
 ---
 
 # Cost Optimization Framework
-<a name="cost-opt-framework"></a>
 
 AWS Cloud Economics is a discipline that helps customers increase efficiency and reduce their costs through the adoption of modern compute technologies like Amazon EKS. The discipline recommends following a methodology called the "Cloud Financial Management (CFM) framework" which consists of 4 pillars:
 

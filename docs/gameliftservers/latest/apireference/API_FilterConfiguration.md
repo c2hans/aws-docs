@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # FilterConfiguration
-<a name="API_FilterConfiguration"></a>
 
 A list of fleet locations where a game session queue can place new game sessions. You can use a filter to temporarily exclude specific locations from receiving placements. For queues that have multi-location fleets, you can use a filter configuration to allow placement with some, but not all, of a fleet's locations.
 

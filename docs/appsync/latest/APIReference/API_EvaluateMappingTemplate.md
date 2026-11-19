@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Evaluate
 ---
 
 # EvaluateMappingTemplate
-<a name="API_EvaluateMappingTemplate"></a>
 
 Evaluates a given template and returns the response. The mapping template can be a request or response template.
 

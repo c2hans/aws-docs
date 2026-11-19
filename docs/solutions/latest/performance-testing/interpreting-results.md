@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/int
 ---
 
 # Interpreting Results and Taking Action
-<a name="interpreting-results"></a>
 
 Raw load test data is noise without a framework for interpretation. The goal is not to generate graphs but to make decisions: is this release safe to deploy? Do we need to scale differently? Which component is the bottleneck?
 

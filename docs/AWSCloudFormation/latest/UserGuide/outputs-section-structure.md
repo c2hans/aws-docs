@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outpu
 ---
 
 # CloudFormation template Outputs syntax
-<a name="outputs-section-structure"></a>
 
 The optional `Outputs` section declares output values for the stack. These output values can be used in various ways:
 + **Capture important details about your resources** – An output is a convenient way to capture important information about your resources. For example, you can output the S3 bucket name for a stack to make the bucket easier to find. You can view output values in the **Outputs** tab of the CloudFormation console or by using the [describe-stacks](service_code_examples.md#describe-stacks-sdk) CLI command.

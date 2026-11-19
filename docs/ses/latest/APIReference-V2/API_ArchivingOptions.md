@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Archiving
 ---
 
 # ArchivingOptions
-<a name="API_ArchivingOptions"></a>
 
 Used to associate a configuration set with a MailManager archive.
 

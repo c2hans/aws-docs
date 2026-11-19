@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-b
 ---
 
 # User
-<a name="brokers-broker-id-users-username"></a>
 
 **Note**
 Does not apply to RabbitMQ brokers.

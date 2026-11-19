@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # FilesystemConfiguration
-<a name="API_FilesystemConfiguration"></a>
 
 Configuration for a filesystem that can be mounted into the AgentCore Runtime.
 

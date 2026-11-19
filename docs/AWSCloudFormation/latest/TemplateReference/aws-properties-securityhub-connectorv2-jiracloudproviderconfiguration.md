@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::ConnectorV2 JiraCloudProviderConfiguration
-<a name="aws-properties-securityhub-connectorv2-jiracloudproviderconfiguration"></a>
 
 The initial configuration settings required to establish an integration between Security Hub and Jira Cloud.
 

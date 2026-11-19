@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Del
 ---
 
 # DeleteLandingZone
-<a name="API_DeleteLandingZone"></a>
 
 Decommissions a landing zone. This API call starts an asynchronous operation that deletes AWS Control Tower resources deployed in accounts managed by AWS Control Tower.
 

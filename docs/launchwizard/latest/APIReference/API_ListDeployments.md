@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Lis
 ---
 
 # ListDeployments
-<a name="API_ListDeployments"></a>
 
 Lists the deployments that have been created.
 

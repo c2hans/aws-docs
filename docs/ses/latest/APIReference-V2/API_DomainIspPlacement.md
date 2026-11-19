@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DomainIsp
 ---
 
 # DomainIspPlacement
-<a name="API_DomainIspPlacement"></a>
 
 An object that contains inbox placement data for email sent from one of your email domains to a specific email provider.
 

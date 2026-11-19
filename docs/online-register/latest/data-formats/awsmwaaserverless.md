@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 ---
 
 # Data retrieval APIs for AWS MWAA Serverless
-<a name="awsmwaaserverless"></a>
 
 AWS MWAA Serverless provides the following APIs for data retrieval.
 

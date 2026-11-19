@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_AppIns
 ---
 
 # AppInstanceAdminSummary
-<a name="API_AppInstanceAdminSummary"></a>
 
 Summary of the details of an `AppInstanceAdmin`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/import-main.html
 ---
 
 # Importing your data inventory
-<a name="import-main"></a>
 
 The **Import** feature allows you to easily import your inventory of servers, applications, and waves from a CSV file that is saved in your local disk or an S3 bucket.
 

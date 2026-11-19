@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonOpenSearchServerlessServiceRolePolicy
-<a name="AmazonOpenSearchServerlessServiceRolePolicy"></a>
 
 **Description**: Allow Amazon OpenSearch Serverless to access other AWS services such as CloudWatch APIs on your behalf.
 

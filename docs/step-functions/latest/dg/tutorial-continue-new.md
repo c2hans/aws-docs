@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-contin
 ---
 
 # Continue long-running workflows using Step Functions API (recommended)
-<a name="tutorial-continue-new"></a>
 
 AWS Step Functions is designed to run workflows with a finite duration and number of steps. Standard workflow executions have a maximum duration of one year and 25,000 events (see [Step Functions service quotas](service-quotas.md)).
 

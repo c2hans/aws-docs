@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/accessing-memor
 ---
 
 # Accessing your cluster
-<a name="accessing-memorydb"></a>
 
 Your MemoryDB instances are designed to be accessed through an Amazon EC2 instance.
 

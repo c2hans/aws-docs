@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/transform-C
 ---
 
 # Amazon Q Developer command line transformation tool version history
-<a name="transform-CLI-versions"></a>
 
 Review the following information for details about current and past releases of the Amazon Q Developer command line transformation tool. The table includes the download link, release date, and release notes for each version.
 

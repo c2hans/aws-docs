@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Best practices for working with DynamoDB zero-ETL integration and OpenSearch Service
-<a name="bp-integration-opensearch"></a>
 
 DynamoDB has a [DynamoDB zero-ETL integration with ](OpenSearchIngestionForDynamoDB.md)Amazon OpenSearch Service. For more information, see the [DynamoDB plugin for OpenSearch Ingestion](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configure-client-ddb.html) and [specific best practices for Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html).
 

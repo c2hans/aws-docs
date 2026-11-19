@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-alias-mod
 ---
 
 # Modify an alias of a flow in Amazon Bedrock
-<a name="flows-alias-modify"></a>
 
 To learn how to modify an alias of a flow, choose the tab for your preferred method, and then follow the steps:
 

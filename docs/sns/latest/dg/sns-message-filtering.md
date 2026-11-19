@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html
 ---
 
 # Amazon SNS message filtering
-<a name="sns-message-filtering"></a>
 
 By default, an Amazon SNS topic subscriber receives every message that's published to the topic. To receive only a subset of the messages, a subscriber must assign a *filter policy* to the topic subscription.
 

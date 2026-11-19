@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-sites.ht
 ---
 
 # Sites and links in AWS Global Networks for Transit Gateways
-<a name="nm-sites"></a>
 
 After you've added any devices to your AWS global network, you can associate of your devices with that particular site using a connection, or link. For information on adding devices, see [Devices in AWS Global Networks for Transit Gateways](nm-devices.md).
 

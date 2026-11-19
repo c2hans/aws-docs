@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/image-gen-code-exa
 ---
 
 # Code examples
-<a name="image-gen-code-examples"></a>
 
 The following examples provide sample code for various image generation tasks.
 

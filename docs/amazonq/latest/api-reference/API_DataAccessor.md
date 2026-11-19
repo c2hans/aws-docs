@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DataAcc
 ---
 
 # DataAccessor
-<a name="API_DataAccessor"></a>
 
 Provides summary information about a data accessor.
 

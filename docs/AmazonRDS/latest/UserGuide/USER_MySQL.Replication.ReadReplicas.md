@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_MySQL.Re
 ---
 
 # Working with MySQL read replicas
-<a name="USER_MySQL.Replication.ReadReplicas"></a>
 
 Following, you can find specific information about working with read replicas on RDS for MySQL. For general information about read replicas and instructions for using them, see [Working with DB instance read replicas](USER_ReadRepl.md).
 

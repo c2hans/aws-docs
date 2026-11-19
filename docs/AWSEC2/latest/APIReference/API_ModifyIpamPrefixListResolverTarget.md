@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpa
 ---
 
 # ModifyIpamPrefixListResolverTarget
-<a name="API_ModifyIpamPrefixListResolverTarget"></a>
 
 Modifies an IPAM prefix list resolver target. You can update version tracking settings and the desired version of the target prefix list.
 

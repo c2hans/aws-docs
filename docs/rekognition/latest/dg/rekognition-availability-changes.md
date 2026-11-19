@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/rekognition-availa
 ---
 
 # Amazon Rekognition feature availability changes
-<a name="rekognition-availability-changes"></a>
 
 **Note**
 Streaming Video and Bulk Image Analysis features will no longer be available to new customers, effective April 30, 2026.

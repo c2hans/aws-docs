@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 ---
 
 # Create a model
-<a name="serverless-endpoints-create-model"></a>
 
 To create your model, you must provide the location of your model artifacts and container image. You can also use a model version from [SageMaker Model Registry](model-registry.md). The examples in the following sections show you how to create a model using the [CreateModel](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateModel.html) API, Model Registry, and the [Amazon SageMaker AI console](https://console.aws.amazon.com/sagemaker/home).
 

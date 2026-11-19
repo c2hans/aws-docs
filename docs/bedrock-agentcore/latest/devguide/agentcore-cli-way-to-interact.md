@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # AgentCore CLI
-<a name="agentcore-cli-way-to-interact"></a>
 
 The AgentCore CLI is a command-line tool for building, deploying, and operating agents and Amazon Bedrock AgentCore resources. Use project workflows to define related resources and deploy them together. Use resource commands to work with individual deployed resources directly. Most resource commands read, list, or invoke resources.
 

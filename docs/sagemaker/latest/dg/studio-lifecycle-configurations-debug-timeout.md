@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lifecycle-con
 ---
 
 # Lifecycle configuration timeout
-<a name="studio-lifecycle-configurations-debug-timeout"></a>
 
 There is a lifecycle configuration timeout limitation of 5 minutes. If a lifecycle configuration script takes longer than 5 minutes to run, you get an error.
 

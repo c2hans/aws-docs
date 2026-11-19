@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-feature
 ---
 
 # Preserving access to an Amazon Machine Image (AMI) for a retired platform
-<a name="using-features.customenv-env-copy"></a>
 
 Elastic Beanstalk sets a platform branch status to *retired* when the operating system or major component used by the branch reaches End of Life. The *base *Elastic Beanstalk AMI for the platform branch may also be made private to prevent the use of this out-of-date AMI. Environments using AMIs that have been made private will no longer be able to launch instances.
 

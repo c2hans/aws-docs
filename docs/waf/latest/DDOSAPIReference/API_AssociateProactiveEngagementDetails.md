@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Associat
 ---
 
 # AssociateProactiveEngagementDetails
-<a name="API_AssociateProactiveEngagementDetails"></a>
 
 Initializes proactive engagement and sets the list of contacts for the Shield Response Team (SRT) to use. You must provide at least one phone number in the emergency contact list.
 

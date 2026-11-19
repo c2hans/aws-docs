@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # DomainSummary
-<a name="API_domains_DomainSummary"></a>
 
 Summary information about one domain.
 

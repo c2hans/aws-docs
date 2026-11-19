@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/TTL-how-to-cre
 ---
 
 # Create a new table with default Time to Live (TTL) settings
-<a name="TTL-how-to-create-table"></a>
 
 In Amazon Keyspaces, you can set a default TTL value for all rows in a table when the table is created.
 

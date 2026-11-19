@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable GlobalTableWitness
-<a name="aws-properties-dynamodb-globaltable-globaltablewitness"></a>
 
 The witness Region for the MRSC global table. A MRSC global table can be configured with either three replicas, or with two replicas and one witness.
 

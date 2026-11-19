@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/tutorial-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Tutorial for Audit Owners: Creating an assessment
-<a name="tutorial-for-audit-owners"></a>
 
 This tutorial provides an introduction to AWS Audit Manager. In this tutorial, you create an assessment using the [AWS Audit Manager Sample Framework](Sample.md). By creating an assessment, you start the ongoing process of automated evidence collection for the controls in that framework.
 

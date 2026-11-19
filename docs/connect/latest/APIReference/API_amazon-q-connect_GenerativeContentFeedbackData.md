@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # GenerativeContentFeedbackData
-<a name="API_amazon-q-connect_GenerativeContentFeedbackData"></a>
 
 The feedback information for a generative target type.
 

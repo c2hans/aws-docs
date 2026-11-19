@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Re
 ---
 
 # ResourcePolicySummary
-<a name="API_ResourcePolicySummary"></a>
 
 A structure that contains resource policy ID and Amazon Resource Name (ARN).
 

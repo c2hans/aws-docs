@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/alias-access.h
 ---
 
 # Controlling access to aliases
-<a name="alias-access"></a>
 
 When you create or change an alias, you affect the alias and its associated KMS key. Therefore, principals who manage aliases must have permission to call the alias operation on the alias and on all affected KMS keys. You can provide these permissions by using [key policies](key-policies.md), [IAM policies](iam-policies.md) and [grants](grants.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inhe
 ---
 
 # InheritedDisallowedOutputColumns
-<a name="API_InheritedDisallowedOutputColumns"></a>
 
 Contains the inherited disallowed output columns constraint and the column lineage tracing each column to its source.
 

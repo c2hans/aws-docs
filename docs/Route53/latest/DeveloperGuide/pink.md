@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/pink.html
 ---
 
 # .pink
-<a name="pink"></a>
 
 Used by those who like the color pink or those who want to associate the color pink with their business or brand.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateSlot
 ---
 
 # CreateSlotType
-<a name="API_CreateSlotType"></a>
 
 Creates a custom slot type
 

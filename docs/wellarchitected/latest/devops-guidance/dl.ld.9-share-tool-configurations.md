@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.LD.9] Share tool configurations
-<a name="dl.ld.9-share-tool-configurations"></a>
 
  **Category:** OPTIONAL
 

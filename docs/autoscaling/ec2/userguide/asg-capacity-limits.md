@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-capacity-l
 ---
 
 # Set scaling limits for your Auto Scaling group
-<a name="asg-capacity-limits"></a>
 
 Scaling limits represent the minimum and maximum group size that you want for your Auto Scaling group. You set limits separately for the minimum and maximum size.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # EKS Local Cluster on Outposts
-<a name="eks-local-cluster"></a>
 
 When there are disconnections of Outposts service link from the parent region, there might be challenges with services as EKS Extended Cluster, where the control plane lives in the region. Among the challenges is the loss of communication between the EKS control plane and the worker nodes and PODs. Although both worker nodes and PODs can continue to operate and service applications that resides on Outposts locally, the Kubernetes control plane may consider them unhealthy and schedule their replacement when the connection to the control plane recovers. This may lead to application downtimes when connectivity is restored.
 

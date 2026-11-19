@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_TooManyTagsE
 ---
 
 # TooManyTagsException
-<a name="API_TooManyTagsException"></a>
 
 **Note**
  `TooManyTagsException` is deprecated. See [`ServiceQuotaExceededException`](https://docs.aws.amazon.com/evs/latest/APIReference/API_ServiceQuotaExceededException.html) instead.

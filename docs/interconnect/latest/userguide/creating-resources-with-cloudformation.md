@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/userguide/creating-r
 ---
 
 # Creating AWS Interconnect resources with AWS CloudFormation
-<a name="creating-resources-with-cloudformation"></a>
 
 AWS Interconnect is integrated with AWS CloudFormation, a service that helps you model and set up your AWS resources so that you can spend less time creating and managing your resources and infrastructure. You create a template that describes all the AWS resources that you want (like Connections), and AWS CloudFormation takes care of provisioning and configuring those resources for you.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::AccessPoint
-<a name="aws-resource-s3-accesspoint"></a>
 
 The AWS::S3::AccessPoint resource is an Amazon S3 resource type that you can use to access buckets.
 

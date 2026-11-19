@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/dvb-sub-or-scte
 ---
 
 # Information for DVB-Sub or SCTE-27
-<a name="dvb-sub-or-scte27"></a>
 
 This section provides information specific to DVB-Sub or SCTE-27 input captions. It describes the fields that appear when you choose **DVB-Sub** or **SCTE-27** in the **Source** field in the **Caption Selector** section of the event. For more context, see the steps earlier in this section.
 

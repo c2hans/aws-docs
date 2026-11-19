@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListTelemetryQuerySessions
-<a name="API_ListTelemetryQuerySessions"></a>
 
 Lists telemetry query sessions.
 

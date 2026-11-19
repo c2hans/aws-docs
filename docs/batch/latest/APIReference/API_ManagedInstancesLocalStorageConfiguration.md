@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ManagedIns
 ---
 
 # ManagedInstancesLocalStorageConfiguration
-<a name="API_ManagedInstancesLocalStorageConfiguration"></a>
 
 The local storage configuration for Amazon ECS Managed Instances.
 

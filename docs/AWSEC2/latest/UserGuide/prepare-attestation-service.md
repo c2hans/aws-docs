@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/prepare-attestat
 ---
 
 # Prepare AWS KMS for attestation
-<a name="prepare-attestation-service"></a>
 
 **Note**
 If you are attesting to a third-party service, you must build your own custom mechanisms for receiving, parsing, and validating Attestation Documents. For more information, see [Validate a NitroTPM Attestation Document](nitrotpm-attestation-document-validate.md).

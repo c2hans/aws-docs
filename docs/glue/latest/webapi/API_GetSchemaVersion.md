@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetSchemaVersion.
 ---
 
 # GetSchemaVersion
-<a name="API_GetSchemaVersion"></a>
 
 Get the specified schema by its unique ID assigned when a version of the schema is created or registered. Schema versions in Deleted status will not be included in the results.
 

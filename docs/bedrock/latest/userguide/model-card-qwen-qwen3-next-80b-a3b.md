@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen
 ---
 
 # Qwen3 Next 80B A3B
-<a name="model-card-qwen-qwen3-next-80b-a3b"></a>
 
 ## ![Qwen logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/qwen.png) Qwen — Qwen3 Next 80B A3B
 <a name="model-card-qwen-qwen3-next-80b-a3b-header"></a>

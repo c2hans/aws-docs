@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_D
 Amazon Cloud Directory is no longer open to new customers, and will reach end of support on July 24, 2027. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
 
 # DeleteFacet
-<a name="API_DeleteFacet"></a>
 
 Deletes a given [Facet](API_Facet.md). All attributes and [Rule](API_Rule.md)s that are associated with the facet will be deleted. Only development schema facets are allowed deletion.
 

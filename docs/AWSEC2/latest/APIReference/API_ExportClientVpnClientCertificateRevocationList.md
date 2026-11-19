@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportCli
 ---
 
 # ExportClientVpnClientCertificateRevocationList
-<a name="API_ExportClientVpnClientCertificateRevocationList"></a>
 
 Downloads the client certificate revocation list for the specified Client VPN endpoint.
 

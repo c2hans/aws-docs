@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost06.
 ---
 
 # Select the correct resource type, size, and number
-<a name="cost06"></a>
 
  Choosing the right resources for a workload is fundamental to cost efficiency in the cloud. This capability covers selecting resource types, sizing each resource to its technical requirements, and running the correct number of resources at the lowest cost. The practice is called right-sizing, and it depends on a workload's characteristics, performance requirements, and usage patterns rather than on peak-load estimates.
 

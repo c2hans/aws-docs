@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ImportErrorD
 ---
 
 # ImportErrorData
-<a name="API_ImportErrorData"></a>
 
 Import error data.
 

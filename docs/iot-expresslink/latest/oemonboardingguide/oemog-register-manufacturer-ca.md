@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguid
 ---
 
 # Appendix B - Register the ExpressLink manufacturer certificate authority (CA)
-<a name="oemog-register-manufacturer-ca"></a>
 
  After a claim-thing certificate is obtained, the next steps is to register the ExpressLink certificate with the manufacturer certificate authority (CA). This four step process walks the user through registering with the certificate authority (CA).
 

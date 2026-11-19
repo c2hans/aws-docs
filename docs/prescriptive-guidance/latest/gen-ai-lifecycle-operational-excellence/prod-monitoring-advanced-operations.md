@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Advanced operations for generative AI applications in production
-<a name="prod-monitoring-advanced-operations"></a>
 
 This section helps you consolidate the operational practices that are required to run a generative AI application at an enterprise scale. It builds upon the foundations of security, governance, and deployment that were established in the preproduction stage, and it details how these practices are maintained and evolved in a live, dynamic environment.
 

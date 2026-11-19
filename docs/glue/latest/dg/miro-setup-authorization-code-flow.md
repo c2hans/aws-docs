@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/miro-setup-authorization-
 ---
 
 # Setting up the authorization code flow for Miro
-<a name="miro-setup-authorization-code-flow"></a>
 
 Before you create the connection, create a client app in your Miro developer team. For more information, see [Get started with OAuth 2.0 and Miro](https://developers.miro.com/docs/getting-started-with-oauth) on the Miro Developer Platform website.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # CreateIndex
-<a name="API_CreateIndex"></a>
 
 Turns on AWS Resource Explorer in the AWS Region in which you called this operation by creating an index. Resource Explorer begins discovering the resources in this Region and stores the details about the resources in the index so that they can be queried by using the [Search](API_Search.md) operation. You can create only one index in a Region.
 

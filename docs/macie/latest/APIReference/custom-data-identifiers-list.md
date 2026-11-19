@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/custom-data-id
 ---
 
 # Custom Data Identifier List
-<a name="custom-data-identifiers-list"></a>
 
 The Custom Data Identifier List resource represents the repository of custom data identifiers for your Amazon Macie account. A *custom data identifier* is a set of criteria that you define to detect sensitive data in a data source.
 

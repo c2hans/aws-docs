@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/retrieve-data-wi
 ---
 
 # Using GraphQL queries to retrieve data from a DynamoDB table in the AWS AppSync console
-<a name="retrieve-data-with-graphql-query"></a>
 
 Now that a record exists in your database, you'll get results when you run a query. A query is one of the other fundamental operations of GraphQL. It's used to parse and retrieve information from your data source. In terms of REST APIs, this is similar to the `GET` operation. The main advantage of GraphQL queries is the ability to specify your application's exact data requirements so that you fetch the relevant data at the right time.
 

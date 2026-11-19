@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Security
-<a name="security"></a>
 
 The Security pillar encompasses the ability to protect data, systems, and assets to take advantage of cloud technologies to improve your security.
 

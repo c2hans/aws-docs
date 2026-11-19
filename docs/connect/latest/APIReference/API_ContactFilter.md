@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFilter
-<a name="API_ContactFilter"></a>
 
 Filters user data based on the contact information that is associated to the users. It contains a list of [contact states](https://docs.aws.amazon.com/connect/latest/adminguide/about-contact-states.html).
 

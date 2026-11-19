@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Contains the filter to apply to requests. You can specify up to 10 filters for a request.
 

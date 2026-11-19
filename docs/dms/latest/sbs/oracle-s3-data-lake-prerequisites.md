@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/oracle-s3-data-lake-prere
 ---
 
 # Prerequisites for migrating an RDS for Oracle database to an Amazon S3 data lake
-<a name="oracle-s3-data-lake-prerequisites"></a>
 
 The following prerequisites are required to complete this walkthrough:
 + Understand Amazon Relational Database Service (Amazon RDS), the applicable database technologies, and SQL.

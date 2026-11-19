@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-cross-
 ---
 
 # Share online feature groups with AWS Resource Access Manager
-<a name="feature-store-cross-account-access-online-store"></a>
 
 With AWS Resource Access Manager (AWS RAM) you can securely share Amazon SageMaker Feature Store online feature groups with other AWS accounts. Members of your team can explore and access feature groups that span multiple accounts, promoting data consistency, streamlining collaboration, and reducing duplication of effort.
 

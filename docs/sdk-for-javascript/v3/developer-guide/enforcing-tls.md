@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/en
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Enforce a minimum TLS version
-<a name="enforcing-tls"></a>
 
 To add increased security when communicating with AWS services, configure the AWS SDK for JavaScript to use TLS 1.2 or later.
 

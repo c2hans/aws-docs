@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/consid
 ---
 
 # Considerations and limitations
-<a name="considerations-and-limitations"></a>
 
 Consider the following when you use device management.
 + Remote commands, including emergency stop, are not sub-second. Devices are reachable only through an outbound AWS Systems Manager connection, so allow a few seconds for a command to take effect.

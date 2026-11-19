@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Dash
 ---
 
 # DashPlaylistSettings
-<a name="API_DashPlaylistSettings"></a>
 
 Dash manifest configuration parameters.
 

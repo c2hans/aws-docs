@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # Limits
-<a name="SDBLimits"></a>
 
 Following is a table that describes current limits within Amazon SimpleDB.
 

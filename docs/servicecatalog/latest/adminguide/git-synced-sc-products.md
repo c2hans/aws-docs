@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/git-syn
 ---
 
 # Syncing products to template files from GitHub, GitHub Enterprise, or Bitbucket
-<a name="git-synced-sc-products"></a>
 
 AWS Service Catalog allows you to sync products to template files that are managed through external repository provider. AWS Service Catalog refers to products with this type of template connection as *Git-synced* products. Repository options include GitHub, GitHub Enterprise, or Bitbucket. After you authorize your AWS account with an external repository account, you can create new AWS Service Catalog products or update existing products to sync to a template file in the repository. When changes are made to the template file and committed in the repository (for example, using git-push), AWS Service Catalog automatically detects the changes and creates a new product version (artifact).
 

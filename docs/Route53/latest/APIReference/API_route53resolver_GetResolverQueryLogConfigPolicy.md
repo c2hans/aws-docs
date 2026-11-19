@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # GetResolverQueryLogConfigPolicy
-<a name="API_route53resolver_GetResolverQueryLogConfigPolicy"></a>
 
 Gets information about a query logging policy. A query logging policy specifies the Resolver query logging operations and resources that you want to allow another AWS account to be able to use.
 

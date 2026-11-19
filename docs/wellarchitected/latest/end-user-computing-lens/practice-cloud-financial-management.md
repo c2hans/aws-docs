@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Practice Cloud Financial Management
-<a name="practice-cloud-financial-management"></a>
 
 |  EUCCOST01: How do you establish ownership of cost optimization for your EUC services?  |
 | --- |

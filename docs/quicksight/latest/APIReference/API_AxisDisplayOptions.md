@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisD
 ---
 
 # AxisDisplayOptions
-<a name="API_AxisDisplayOptions"></a>
 
 The display options for the axis label.
 

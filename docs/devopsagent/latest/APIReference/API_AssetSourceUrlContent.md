@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asse
 ---
 
 # AssetSourceUrlContent
-<a name="API_AssetSourceUrlContent"></a>
 
 Content for an asset sourced from an external URL.
 

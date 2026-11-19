@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/java
 ---
 
 # Amazon Pinpoint examples using SDK for Java 2.x
-<a name="java_pinpoint_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Java 2.x with Amazon Pinpoint.
 

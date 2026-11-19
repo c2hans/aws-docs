@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateThreatEntitySet
-<a name="API_UpdateThreatEntitySet"></a>
 
 Updates the threat entity set associated with the specified `threatEntitySetId`.
 

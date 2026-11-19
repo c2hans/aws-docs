@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/dimensi
 ---
 
 # Amazon CloudWatch dimensions for Aurora
-<a name="dimensions"></a>
 
 You can filter Aurora metrics data by using any dimension in the following table.
 

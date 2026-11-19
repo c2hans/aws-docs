@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/manag
 ---
 
 # Demoting the aggregator index to a local index
-<a name="manage-aggregator-region-turn-off"></a>
 
 You can demote an aggregator index to a local index, such as when you want to move the aggregator index to a different AWS Region.
 

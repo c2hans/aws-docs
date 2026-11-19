@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbomgen-plugin-tes
 ---
 
 # Plugin testing guide
-<a name="sbomgen-plugin-testing-guide"></a>
 
  Plugin authors write and test Lua plugins entirely in Lua — no Go toolchain required. Tests are co-located with the plugin under `init_test.lua` and run via the `inspector-sbomgen plugin test` command.
 

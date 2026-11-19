@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-use
 ---
 
 # Managing users
-<a name="transform-user-management"></a>
 
 How you manage user access to AWS Transform depends on the access model you chose during setup. If you configured IAM Identity Center, you add users through IAM Identity Center. If you configured a third-party identity provider, you manage users in that provider. If you chose IAM-only access, user access is managed through IAM policies.
 

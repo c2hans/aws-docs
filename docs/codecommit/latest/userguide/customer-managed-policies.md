@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/customer-man
 ---
 
 # Customer managed policy examples
-<a name="customer-managed-policies"></a>
 
 You can create your own custom IAM policies to allow permissions for CodeCommit actions and resources. You can attach these custom policies to the IAM users or groups that require those permissions. You can also create your own custom IAM policies for integration between CodeCommit and other AWS services.
 

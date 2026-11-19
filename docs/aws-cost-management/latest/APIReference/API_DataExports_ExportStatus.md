@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ExportStatus
-<a name="API_DataExports_ExportStatus"></a>
 
 The status of the data export.
 

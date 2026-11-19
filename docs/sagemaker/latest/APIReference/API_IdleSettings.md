@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_IdleSe
 ---
 
 # IdleSettings
-<a name="API_IdleSettings"></a>
 
 Settings related to idle shutdown of Studio applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/csharp-image.html
 ---
 
 # Deploy .NET Lambda Event Functions with container images
-<a name="csharp-image"></a>
 
 There are three ways to build a container image for a .NET Lambda Event Function:
 + [Using an AWS base image for .NET](#csharp-image-instructions)

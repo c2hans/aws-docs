@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/getting
 ---
 
 # Use an API Gateway-generated certificate for backend authentication in API Gateway
-<a name="getting-started-client-side-ssl-authentication"></a>
 
  You can use API Gateway to generate an SSL certificate and then use its public key in the backend to verify that HTTP requests to your backend system are from API Gateway. This allows your HTTP backend to control and accept only requests that originate from Amazon API Gateway, even if the backend is publicly accessible.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RegistrantVerificationResponse
-<a name="API_account_RegistrantVerificationResponse"></a>
 
 Contains the response information from a registrant verification process, including any verification-specific data and next steps for the individual verification workflow.
 

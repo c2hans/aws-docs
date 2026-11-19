@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Repository
 ---
 
 # RepositoryAggregation
-<a name="API_RepositoryAggregation"></a>
 
 The details that define an aggregation based on repository.
 

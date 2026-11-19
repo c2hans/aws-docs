@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DomainEndpointOptionsStatus
-<a name="API_DomainEndpointOptionsStatus"></a>
 
 The configured endpoint options for a domain and their current status.
 

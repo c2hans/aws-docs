@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
  This section provides a reference implementation architecture diagram for the components deployed with this guidance.
 

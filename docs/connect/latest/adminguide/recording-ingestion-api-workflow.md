@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/recording-inge
 ---
 
 # API workflow
-<a name="recording-ingestion-api-workflow"></a>
 
 Recording ingestion and conversational analytics uses a workflow of three sequential API calls:
 + [CreateContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContact.html) – Create a voice contact to represent the call

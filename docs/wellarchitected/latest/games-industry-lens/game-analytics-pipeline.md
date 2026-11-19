@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Game analytics pipeline
-<a name="game-analytics-pipeline"></a>
 
  Game developers are increasingly looking for ways to better understand player behavior so that they can improve the gameplay experience to retain and grow their player base. Game analytics represents the technical infrastructure and processes that is required to understand and analyze the data that is generated from the game and related services. This typically requires the use of an analytics pipeline architecture that can support this end-to-end process, such as the [Game Analytics Pipeline](https://aws.amazon.com/solutions/implementations/game-analytics-pipeline/) solution implementation.
 

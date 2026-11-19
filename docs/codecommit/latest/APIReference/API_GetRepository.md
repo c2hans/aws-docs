@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetRe
 ---
 
 # GetRepository
-<a name="API_GetRepository"></a>
 
 Returns information about a repository.
 

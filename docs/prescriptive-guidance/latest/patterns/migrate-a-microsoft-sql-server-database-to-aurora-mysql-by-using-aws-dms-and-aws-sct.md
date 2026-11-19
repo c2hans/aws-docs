@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate a Microsoft SQL Server database to Aurora MySQL by using AWS DMS and AWS SCT
-<a name="migrate-a-microsoft-sql-server-database-to-aurora-mysql-by-using-aws-dms-and-aws-sct"></a>
 
 *Mark Szalkiewicz and Pavan Pusuluri, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-skill-assets.html
 ---
 
 # Skill assets for AI agents
-<a name="catalog-skill-assets"></a>
 
 **Note**
 Business context and semantic search is in preview for AWS Glue and is subject to change.

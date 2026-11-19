@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cr
 ---
 
 # CreateRetrievalInstructionVersion
-<a name="API_agent_CreateRetrievalInstructionVersion"></a>
 
 Creates an immutable numbered version from the retrieval instruction's current reviewed content. The service creates the version synchronously.
 

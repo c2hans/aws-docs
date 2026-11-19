@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # QueryRecommendationTriggerData
-<a name="API_amazon-q-connect_QueryRecommendationTriggerData"></a>
 
 Data associated with the QUERY RecommendationTriggerType.
 

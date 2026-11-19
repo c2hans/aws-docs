@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/catalog-integrati
 ---
 
 # Behavior of created datasets
-<a name="catalog-integration-dataset-behavior"></a>
 
 Datasets created through the agentic catalog experience have the following characteristics:
 + **Semantics inherited indicator** – Created datasets display a **Semantics inherited** badge to show that definitions come from the upstream catalog.

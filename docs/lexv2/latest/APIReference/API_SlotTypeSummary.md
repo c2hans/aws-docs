@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotTypeSu
 ---
 
 # SlotTypeSummary
-<a name="API_SlotTypeSummary"></a>
 
 Provides summary information about a slot type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetNdaF
 ---
 
 # GetNdaForAgreement
-<a name="API_GetNdaForAgreement"></a>
 
 Retrieve the NDA document for an agreement.
 

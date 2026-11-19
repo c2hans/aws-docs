@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/scim-loggi
 ---
 
 # Logging IAM Identity Center SCIM API calls with AWS CloudTrail
-<a name="scim-logging-using-cloudtrail"></a>
 
 [IAM Identity Center SCIM](other-idps.md) is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures API calls for SCIM as events. Using the information collected by CloudTrail, you can determine the information about the requested action, the date and time of the action, request parameters, and so on. To learn more about CloudTrail, see [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
 

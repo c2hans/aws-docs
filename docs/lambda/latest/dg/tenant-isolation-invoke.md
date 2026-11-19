@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/tenant-isolation-invoke
 ---
 
 # Invoking Lambda Event Functions with tenant isolation
-<a name="tenant-isolation-invoke"></a>
 
 When invoking an Event Function that has tenant isolation enabled, you must provide a `tenant-id` parameter. This parameter ensures that your Event Function invocation is processed in an execution environment dedicated to that specific tenant.
 

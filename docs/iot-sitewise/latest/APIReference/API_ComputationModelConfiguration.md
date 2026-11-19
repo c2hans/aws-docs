@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputationModelConfiguration
-<a name="API_ComputationModelConfiguration"></a>
 
 The configuration for the computation model.
 

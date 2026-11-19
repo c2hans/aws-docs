@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # PUT: Modify a Router Output
-<a name="set-up-router-outputs-modify"></a>
 
 Modify the attributes of the specified output on the specified router. Modify the attributes if a cable from the router output moves to a different SDI card input.
 

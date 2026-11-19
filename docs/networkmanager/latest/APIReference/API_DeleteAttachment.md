@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteAttachment
-<a name="API_DeleteAttachment"></a>
 
 Deletes an attachment. Supports all attachment types.
 

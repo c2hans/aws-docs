@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityRuleRe
 ---
 
 # DataQualityRuleResultsOptions
-<a name="API_DataQualityRuleResultsOptions"></a>
 
 The configuration for writing data quality rule results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 3: Deploy Migration Assistant into the existing VPC
-<a name="pb-es68-deploy"></a>
 
 Run the bootstrap script to deploy Migration Assistant on Amazon EKS, importing your existing VPC and subnets. The `--deploy-import-vpc-cfn` flag tells the solution to import an existing VPC rather than create a new one.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # High performance workloads
-<a name="directory-bucket-high-performance"></a>
 
 ## S3 Express One Zone
 <a name="s3-express-one-zone"></a>

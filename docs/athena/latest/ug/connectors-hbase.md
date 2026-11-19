@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-hbase.html
 ---
 
 # Amazon Athena HBase connector
-<a name="connectors-hbase"></a>
 
 The Amazon Athena HBase connector enables Amazon Athena to communicate with your Apache HBase instances so that you can query your HBase data with SQL.
 

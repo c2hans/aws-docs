@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePr
 ---
 
 # CreatePredefinedAttribute
-<a name="API_CreatePredefinedAttribute"></a>
 
 Creates a new predefined attribute for the specified Connect Customer instance. A *predefined attribute* is made up of a name and a value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023
 ---
 
 # Amazon Linux 2023 2023.6 release notes
-<a name="relnotes-2023.6"></a>
 
 The following releases are updates to the sixth quarterly release of AL2023.
 

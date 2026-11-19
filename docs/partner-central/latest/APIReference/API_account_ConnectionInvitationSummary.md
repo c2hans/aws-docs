@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ConnectionInvitationSummary
-<a name="API_account_ConnectionInvitationSummary"></a>
 
 A summary view of a connection invitation containing key information without full details.
 

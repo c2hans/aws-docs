@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/cvc-linked-role-poli
 ---
 
 # AWS managed policy: AmazonChimeVoiceConnectorServiceLinkedRolePolicy
-<a name="cvc-linked-role-policy"></a>
 
 The `AmazonChimeVoiceConnectorServiceLinkedRolePolicy` enables Amazon Chime SDK Voice Connectors to stream media to Amazon Kinesis Video Streams, provide streaming notifications, and synthesize speech using Amazon Polly. This policy grants the Amazon Chime SDK Voice Connector service permissions to access customer’s Amazon Kinesis Video Streams, send notification events to the Amazon Simple Notification Service (SNS) and Amazon Simple Queue Service (SQS), and use Amazon Polly to synthesize speech when using the Amazon Chime SDK Voice Applications `Speak` and `SpeakAndGetDigits` actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awstraining/latest/user-guide/team-skill
 ---
 
 # Troubleshooting
-<a name="team-skills-planner-troubleshooting"></a>
 
 Common issues and resolutions:
 +  **I can’t edit my goal** — Goals can’t be edited after a baseline starts.

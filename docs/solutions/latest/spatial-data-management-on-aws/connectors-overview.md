@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Connectors overview
-<a name="connectors-overview"></a>
 
 A connector is a governed contract between a class of assets and an external system. It says what should happen to an asset when it changes — which external work to run, on which files, under which credentials — and how the results become part of that asset. SDMA runs the contract every time the asset changes, and records what it did.
 

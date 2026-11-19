@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/reverseArray.
 ---
 
 # $reverseArray
-<a name="reverseArray"></a>
 
 The `$reverseArray` operator in Amazon DocumentDB is used to reverse the elements of an array in the specified order. This operator is useful when you need to reorder the elements of an array in the reverse direction.
 

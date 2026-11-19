@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StaleSecu
 ---
 
 # StaleSecurityGroup
-<a name="API_StaleSecurityGroup"></a>
 
 Describes a stale security group (a security group that contains stale rules).
 

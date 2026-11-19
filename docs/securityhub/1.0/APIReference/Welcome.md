@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/Welcome.htm
 ---
 
 # AWS Security Hub CSPM API Reference
-<a name="Welcome"></a>
 
 AWS Security Hub CSPM provides you with a comprehensive view of your security state in AWS and helps you assess your AWS environment against security industry standards and best practices.
 

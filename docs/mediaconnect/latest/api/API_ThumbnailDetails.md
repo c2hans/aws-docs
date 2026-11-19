@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ThumbnailDet
 ---
 
 # ThumbnailDetails
-<a name="API_ThumbnailDetails"></a>
 
  The details of the thumbnail, including thumbnail base64 string, timecode and the time when thumbnail was generated.
 

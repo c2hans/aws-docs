@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_PointInTimeR
 ---
 
 # PointInTimeRestoreConfiguration
-<a name="API_PointInTimeRestoreConfiguration"></a>
 
 The configuration for creating an Autonomous Database by restoring to a point in time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeleteThreatModelFailure
-<a name="API_DeleteThreatModelFailure"></a>
 
 Contains information about a threat model that failed to delete.
 

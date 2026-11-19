@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_GetAccountSe
 ---
 
 # GetAccountSettings
-<a name="API_GetAccountSettings"></a>
 
 Returns the configured EVS settings for your AWS account in the specified AWS Region. If no settings have been set, an empty list is returned.
 

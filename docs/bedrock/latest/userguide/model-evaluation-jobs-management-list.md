@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # List automatic model evaluation jobs in Amazon Bedrock
-<a name="model-evaluation-jobs-management-list"></a>
 
 You can list your current automatic model evaluation jobs that you've already created using the AWS CLI, or a supported AWS SDK. In the Amazon Bedrock console, you can also view a table containing your current model evaluation jobs.
 

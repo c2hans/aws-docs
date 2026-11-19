@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-job-tag
 ---
 
 # Deleting the tags from an S3 Batch Operations job
-<a name="delete-job-tags"></a>
 
 You can use these examples to delete the tags from an Amazon S3 Batch Operations job.
 

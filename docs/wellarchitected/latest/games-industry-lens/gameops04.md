@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Health monitoring
-<a name="gameops04"></a>
 
 |  GAMEOPS04: How do you monitor the health of the game?  |
 | --- |

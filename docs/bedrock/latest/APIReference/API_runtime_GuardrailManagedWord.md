@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailManagedWord
-<a name="API_runtime_GuardrailManagedWord"></a>
 
 A managed word configured in a guardrail.
 

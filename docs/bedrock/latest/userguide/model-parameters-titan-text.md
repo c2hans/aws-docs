@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Amazon Titan Text models
-<a name="model-parameters-titan-text"></a>
 
 The Amazon Titan Text models support the following inference parameters.
 

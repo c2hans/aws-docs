@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/billing.htm
 ---
 
 # Submit EDI billing questions
-<a name="billing"></a>
 
 To submit a billing-related question:
 

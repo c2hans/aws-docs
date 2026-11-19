@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/self-deployed-add-h
 ---
 
 # Step 3: Add hosts
-<a name="self-deployed-add-hosts"></a>
 
 Add enough hosts to serve the topology of your target VMware Cloud Foundation (VCF) version. Charges for the Amazon EC2 bare-metal instances begin when you add a host. For more information, see [Billing](getting-started-self-deployed.md#self-deployed-costs). You can add hosts with the Amazon Elastic VMware Service console or the AWS CLI.
 

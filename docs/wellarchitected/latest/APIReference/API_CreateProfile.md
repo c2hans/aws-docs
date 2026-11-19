@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateProfile
-<a name="API_CreateProfile"></a>
 
 Create a profile.
 

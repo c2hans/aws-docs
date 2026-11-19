@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Assign users to groups
-<a name="assign-users-groups"></a>
 
 As you add new users to IAM Identity Center, you will have to assign them to one of the groups for them to access Innovation Sandbox.
 

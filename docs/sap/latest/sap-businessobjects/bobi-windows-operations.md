@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-wind
 ---
 
 # Operations
-<a name="bobi-windows-operations"></a>
 
 ## Tagging AWS Resources
 <a name="bobi-windows-tagging-aws-resources"></a>

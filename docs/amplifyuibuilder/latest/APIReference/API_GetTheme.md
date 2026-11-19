@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # GetTheme
-<a name="API_GetTheme"></a>
 
 Returns an existing theme for an Amplify app.
 

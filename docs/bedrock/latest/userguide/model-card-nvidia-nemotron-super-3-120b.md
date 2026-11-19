@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvid
 ---
 
 # NVIDIA Nemotron 3 Super 120B
-<a name="model-card-nvidia-nemotron-super-3-120b"></a>
 
 ## ![NVIDIA logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nvidia.png) NVIDIA — NVIDIA Nemotron 3 Super 120B
 <a name="model-card-nvidia-nemotron-super-3-120b-header"></a>

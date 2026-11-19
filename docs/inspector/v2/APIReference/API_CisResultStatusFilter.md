@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisResultS
 ---
 
 # CisResultStatusFilter
-<a name="API_CisResultStatusFilter"></a>
 
 The CIS result status filter.
 

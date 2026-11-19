@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_cross_CognitoAu
 ---
 
 # Automatically confirm known Amazon Cognito users with a Lambda function using an AWS SDK
-<a name="example_cross_CognitoAutoConfirmUser_section"></a>
 
 The following code examples show how to automatically confirm known Amazon Cognito users with a Lambda function.
 + Configure a user pool to call a Lambda function for the `PreSignUp` trigger.

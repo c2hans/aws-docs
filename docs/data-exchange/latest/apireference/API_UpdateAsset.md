@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Up
 ---
 
 # UpdateAsset
-<a name="API_UpdateAsset"></a>
 
 This operation updates an asset.
 

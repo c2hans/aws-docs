@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RuleSum
 ---
 
 # RuleSummary
-<a name="API_RuleSummary"></a>
 
 The summary of the rule.
 

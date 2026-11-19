@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v9-dash-dashboa
 ---
 
 # Dashboard JSON model
-<a name="v9-dash-dashboard-json-model"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 9.x**.
@@ -73,8 +72,8 @@ The following describes each field in the dashboard JSON.
 | **editable** | if a dashboard is editable or not |
 | **graphTooltip** | 0 for no shared crosshair or tooltip (default), 1 for shared crosshair, 2 for shared crosshair and shared tooltip |
 | **time** | time range for dashboard, such as *last 6 hours* or *last 7 days* |
-| **timepicker** | timepicker metadata, see [timepicker section](#v9-dash-dashboard-json-model) for details |
-| **templating** | templating metadata, see [templating section](#v9-dash-dashboard-json-model) for details |
+| **timepicker** | timepicker metadata, see [timepicker section](v9-dash-dashboard-json-model.md) for details |
+| **templating** | templating metadata, see [templating section](v9-dash-dashboard-json-model.md) for details |
 | **annotations** | annotations metadata, see [annotations](v9-panels-annotate-visualizations.md) for how to add them |
 | **refresh** | auto-refresh interval |
 | **schemaVersion** | version of the JSON schema (integer), incremented each time a Grafana update brings changes to said schema |

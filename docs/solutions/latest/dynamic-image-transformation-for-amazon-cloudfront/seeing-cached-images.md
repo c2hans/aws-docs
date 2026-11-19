@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Seeing cached images even after making configuration changes on Admin UI
-<a name="seeing-cached-images"></a>
 
  **Problem:** Images continue to show previous transformations even after updating origins, policies, or mappings through the Admin UI.
 

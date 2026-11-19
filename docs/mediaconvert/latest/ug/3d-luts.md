@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/3d-luts.html
 ---
 
 # Color conversion with 3D LUTs
-<a name="3d-luts"></a>
 
 When you convert a video from one color space to another, AWS Elemental MediaConvert automatically maps colors from your input color space to your output color space. To optionally specify your own custom color mapping, use **3D LUTs** (3D lookup tables).
 

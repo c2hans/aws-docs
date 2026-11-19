@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-networking-security-g
 ---
 
 # AWS.Networking.SecurityGroup
-<a name="node-networking-security-group"></a>
 
 AWS TNB supports security groups to automate the provisioning of [Amazon EC2 Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) which you can attach to Amazon EKS Kubernetes cluster node groups.
 

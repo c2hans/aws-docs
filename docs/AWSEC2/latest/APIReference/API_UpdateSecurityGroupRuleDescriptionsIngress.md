@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UpdateSec
 ---
 
 # UpdateSecurityGroupRuleDescriptionsIngress
-<a name="API_UpdateSecurityGroupRuleDescriptionsIngress"></a>
 
 Updates the description of an ingress (inbound) security group rule. You can replace an existing description, or add a description to a rule that did not have one previously. You can remove a description for a security group rule by omitting the description parameter in the request.
 

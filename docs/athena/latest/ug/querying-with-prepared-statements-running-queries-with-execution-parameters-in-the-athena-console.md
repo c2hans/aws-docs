@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-with-prepared-
 ---
 
 # Run queries with execution parameters in the Athena console
-<a name="querying-with-prepared-statements-running-queries-with-execution-parameters-in-the-athena-console"></a>
 
 When you run a parameterized query that has execution parameters (question marks) in the Athena console, you are prompted for the values in the order in which the question marks occur in the query.
 

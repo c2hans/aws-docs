@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCACe
 ---
 
 # RegisterCACertificate
-<a name="API_RegisterCACertificate"></a>
 
 Registers a CA certificate with AWS IoT Core. There is no limit to the number of CA certificates you can register in your AWS account. You can register up to 10 CA certificates with the same `CA subject field` per AWS account.
 

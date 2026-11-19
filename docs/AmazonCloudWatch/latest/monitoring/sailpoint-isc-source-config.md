@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sailp
 ---
 
 # Source configuration for SailPoint ISC
-<a name="sailpoint-isc-source-config"></a>
 
 ## Supported API and schema versions
 <a name="sailpoint-isc-supported-versions"></a>

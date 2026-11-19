@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # UntagResource
-<a name="API_media-pipelines-chime_UntagResource"></a>
 
 Removes any tags from a media pipeline.
 

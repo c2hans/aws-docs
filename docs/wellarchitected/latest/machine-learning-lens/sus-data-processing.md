@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Data processing
-<a name="sus-data-processing"></a>
 
 **Topics**
 + [MLSUS03-BP01 Minimize idle resources](mlsus03-bp01.md)

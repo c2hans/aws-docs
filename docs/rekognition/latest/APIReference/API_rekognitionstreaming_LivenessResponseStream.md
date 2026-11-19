@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # LivenessResponseStream
-<a name="API_rekognitionstreaming_LivenessResponseStream"></a>
 
 Contains information event details and exception information for a Face Liveness verification response stream.
 

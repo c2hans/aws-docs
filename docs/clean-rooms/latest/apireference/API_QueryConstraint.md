@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Quer
 ---
 
 # QueryConstraint
-<a name="API_QueryConstraint"></a>
 
 Provides any necessary query constraint information.
 

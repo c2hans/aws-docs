@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/mo
 ---
 
 # Task 2: Initialize the Amplify Backend
-<a name="module-two"></a>
 
 |  |  |
 | --- |--- |

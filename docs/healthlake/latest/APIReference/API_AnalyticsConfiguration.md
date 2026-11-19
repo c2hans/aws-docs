@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Analy
 ---
 
 # AnalyticsConfiguration
-<a name="API_AnalyticsConfiguration"></a>
 
 The analytics configuration for a data store.
 

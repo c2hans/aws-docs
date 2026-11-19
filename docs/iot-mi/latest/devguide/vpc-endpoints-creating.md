@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/vpc-endpoints-cre
 ---
 
 # Creating an interface VPC endpoint for AWS IoT Managed Integrations
-<a name="vpc-endpoints-creating"></a>
 
 You can create a VPC endpoint for the AWS IoT Managed Integrations service using either the Amazon VPC Console or the AWS CLI (AWS CLI).
 

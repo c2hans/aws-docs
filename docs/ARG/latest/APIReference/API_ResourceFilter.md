@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_ResourceFilt
 ---
 
 # ResourceFilter
-<a name="API_ResourceFilter"></a>
 
 A filter name and value pair that is used to obtain more specific results from a list of resources.
 

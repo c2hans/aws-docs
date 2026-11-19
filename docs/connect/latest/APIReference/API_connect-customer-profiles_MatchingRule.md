@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # MatchingRule
-<a name="API_connect-customer-profiles_MatchingRule"></a>
 
 Specifies how does the rule-based matching process should match profiles. You can choose from the following attributes to build the matching Rule:
 + AccountNumber

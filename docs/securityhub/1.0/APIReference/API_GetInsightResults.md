@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetInsi
 ---
 
 # GetInsightResults
-<a name="API_GetInsightResults"></a>
 
 Lists the results of the Security Hub CSPM insight specified by the insight ARN.
 

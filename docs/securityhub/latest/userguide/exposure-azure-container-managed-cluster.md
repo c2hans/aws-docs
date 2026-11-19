@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-az
 ---
 
 # Remediating exposures for Azure Kubernetes Service clusters
-<a name="exposure-azure-container-managed-cluster"></a>
 
 AWS Security Hub can generate exposure findings for Azure Kubernetes Service (AKS) clusters.
 

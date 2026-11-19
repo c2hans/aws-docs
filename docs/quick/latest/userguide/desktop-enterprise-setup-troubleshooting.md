@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-enterpris
 ---
 
 # Troubleshooting enterprise sign-in for AWS Quick on desktop
-<a name="desktop-enterprise-setup-troubleshooting"></a>
 
 |  |
 | --- |

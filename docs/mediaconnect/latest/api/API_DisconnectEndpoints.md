@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DisconnectEn
 ---
 
 # DisconnectEndpoints
-<a name="API_DisconnectEndpoints"></a>
 
 Disconnects a source endpoint from a destination endpoint.
 

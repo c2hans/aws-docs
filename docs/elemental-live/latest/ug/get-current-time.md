@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/get-current-tim
 ---
 
 # Get current time
-<a name="get-current-time"></a>
 
 You can obtain the timecode of the frame that is currently being processed in the specified event. Refer to the following tables.
 

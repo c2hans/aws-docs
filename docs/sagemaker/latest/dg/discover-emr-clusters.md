@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/discover-emr-cluster
 ---
 
 # List Amazon EMR clusters from Studio or Studio Classic
-<a name="discover-emr-clusters"></a>
 
 Data scientists and data engineers can discover, and then connect to Amazon EMR clusters from Studio. The Amazon EMR clusters may be in the same AWS account as Studio or in a different AWS account.
 

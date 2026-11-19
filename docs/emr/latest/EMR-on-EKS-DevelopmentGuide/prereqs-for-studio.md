@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/p
 ---
 
 # Prerequisites to create an interactive endpoint on Amazon EMR on EKS
-<a name="prereqs-for-studio"></a>
 
 This section describes prerequisites to set up an interactive endpoint that EMR Studio can use to connect to an Amazon EMR on EKS cluster and run interactive workloads.
 

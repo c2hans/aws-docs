@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # UpdateView
-<a name="API_UpdateView"></a>
 
 Updates an existing view's definition and/or description.
 

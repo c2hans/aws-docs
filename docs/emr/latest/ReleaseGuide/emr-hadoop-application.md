@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hadoop-appli
 ---
 
 # Create or run a Hadoop application
-<a name="emr-hadoop-application"></a>
 
 **Topics**
 + [Build binaries using Amazon EMR](emr-build-binaries.md)

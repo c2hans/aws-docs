@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # KubernetesMetadata
-<a name="API_KubernetesMetadata"></a>
 
 Meta data about Kubernetes resources.
 

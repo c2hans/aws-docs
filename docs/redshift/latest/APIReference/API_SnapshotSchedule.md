@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Snapsho
 ---
 
 # SnapshotSchedule
-<a name="API_SnapshotSchedule"></a>
 
 Describes a snapshot schedule. You can set a regular interval for creating snapshots of a cluster. You can also schedule snapshots for specific dates.
 

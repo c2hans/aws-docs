@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Update the guidance
-<a name="update-the-guidance"></a>
 
 ## Update AWS CDK deployments
 <a name="update-aws-cdk-deployments"></a>

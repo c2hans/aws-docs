@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_As
 ---
 
 # AssociatedCoreNetwork
-<a name="API_AssociatedCoreNetwork"></a>
 
 The AWS Cloud WAN core network that the Direct Connect gateway is associated to. This is only returned when a Direct Connect gateway is associated to a Cloud WAN core network.
 

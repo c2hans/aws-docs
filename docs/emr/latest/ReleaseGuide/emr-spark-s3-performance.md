@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-s3-per
 ---
 
 # Improve Spark performance with Amazon S3
-<a name="emr-spark-s3-performance"></a>
 
 Amazon EMR offers features to help optimize performance when using Spark to query, read and write data saved in Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_queues
 ---
 
 # Deleting a queue in AWS PCS
-<a name="working-with_queues_delete"></a>
 
 This topic provides an overview of how to delete an queue in AWS PCS.
 

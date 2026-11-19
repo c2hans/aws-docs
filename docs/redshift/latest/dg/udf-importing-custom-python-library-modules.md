@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/udf-importing-custom-
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Example: Importing custom Python library modules
-<a name="udf-importing-custom-python-library-modules"></a>
 
 You define scalar functions using Python language syntax. You can use the Python Standard Library modules and Amazon Redshift preinstalled modules. You can also create your own custom Python library modules and import the libraries into your clusters, or use existing libraries from Python or third parties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # How this solution works
-<a name="how-this-solution-works"></a>
 
 The Migration Assistant for Amazon OpenSearch Service solution simplifies zero-downtime migrations to Amazon OpenSearch Service and Amazon OpenSearch Serverless NextGen by capturing, replicating, and replaying traffic between source and target clusters. Migration Assistant 3.0 deploys to Amazon Elastic Kubernetes Service (Amazon EKS) and runs migrations as Kubernetes-managed workloads orchestrated by Argo Workflows.
 

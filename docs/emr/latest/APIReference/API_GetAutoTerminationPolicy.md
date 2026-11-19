@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_GetAutoTermi
 ---
 
 # GetAutoTerminationPolicy
-<a name="API_GetAutoTerminationPolicy"></a>
 
 Returns the auto-termination policy for an Amazon EMR cluster.
 

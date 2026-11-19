@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Measu
 ---
 
 # MeasureField
-<a name="API_MeasureField"></a>
 
 The measure (metric) type field.
 

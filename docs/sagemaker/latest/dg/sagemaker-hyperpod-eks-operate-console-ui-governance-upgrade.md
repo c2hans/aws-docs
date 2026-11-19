@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Upgrade the task governance add-on
-<a name="sagemaker-hyperpod-eks-operate-console-ui-governance-upgrade"></a>
 
 Use this section to upgrade the HyperPod task governance Amazon EKS add-on between versions. Each subsection provides version-specific procedures for upgrading your add-on while preserving your existing configuration.
 

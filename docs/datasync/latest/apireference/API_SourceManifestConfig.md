@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_SourceM
 ---
 
 # SourceManifestConfig
-<a name="API_SourceManifestConfig"></a>
 
 Specifies the manifest that you want AWS DataSync to use and where it's hosted. For more information and configuration examples, see [Specifying what DataSync transfers by using a manifest](https://docs.aws.amazon.com/datasync/latest/userguide/transferring-with-manifest.html).
 

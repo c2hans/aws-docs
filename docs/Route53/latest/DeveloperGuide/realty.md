@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/realty.htm
 ---
 
 # .realty
-<a name="realty"></a>
 
 Used by real estate agents, brokers, and property-related businesses.
 

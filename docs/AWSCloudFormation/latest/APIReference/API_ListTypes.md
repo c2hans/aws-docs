@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListTypes
-<a name="API_ListTypes"></a>
 
 Returns summary information about all extensions, including your private resource types, modules, and Hooks as well as all public extensions from AWS and third-party publishers.
 

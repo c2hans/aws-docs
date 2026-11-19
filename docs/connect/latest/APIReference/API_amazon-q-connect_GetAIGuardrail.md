@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # GetAIGuardrail
-<a name="API_amazon-q-connect_GetAIGuardrail"></a>
 
 Gets the Amazon Q in Connect AI Guardrail.
 

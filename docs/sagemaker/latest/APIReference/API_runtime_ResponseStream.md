@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtim
 ---
 
 # ResponseStream
-<a name="API_runtime_ResponseStream"></a>
 
 A stream of payload parts. Each part contains a portion of the response for a streaming inference request.
 

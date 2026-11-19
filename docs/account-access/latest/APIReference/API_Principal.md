@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_P
 ---
 
 # Principal
-<a name="API_Principal"></a>
 
 Identifies a principal (user or group) that can be granted entitlements.
 

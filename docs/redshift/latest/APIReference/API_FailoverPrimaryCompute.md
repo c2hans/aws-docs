@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Failove
 ---
 
 # FailoverPrimaryCompute
-<a name="API_FailoverPrimaryCompute"></a>
 
 Fails over the primary compute unit of the specified Multi-AZ cluster to another Availability Zone.
 

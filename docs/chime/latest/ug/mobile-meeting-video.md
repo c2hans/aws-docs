@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/mobile-meeting-video.htm
 ---
 
 # Using video
-<a name="mobile-meeting-video"></a>
 
 The video control appears on all meeting pages except the meeting chat page. Choosing the video control starts your camera and displays your video tile.
 

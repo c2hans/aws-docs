@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticDisasterRecoveryConsoleFullAccess\_v2
-<a name="AWSElasticDisasterRecoveryConsoleFullAccess_v2"></a>
 
 **Description**: This policy provides full access to all public APIs of AWS Elastic Disaster Recovery (AWS DRS), as well as all public APIs in other AWS services used by AWS DRS Console. Attach this policy to your users or roles.
 

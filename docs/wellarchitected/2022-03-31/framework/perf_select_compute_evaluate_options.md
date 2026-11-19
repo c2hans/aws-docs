@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF02-BP01 Evaluate the available compute options
-<a name="perf_select_compute_evaluate_options"></a>
 
  Understand how your workload can benefit from the use of different compute options, such as instances, containers and functions.
 

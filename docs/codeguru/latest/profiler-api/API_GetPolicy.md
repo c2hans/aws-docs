@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetPoli
 ---
 
 # GetPolicy
-<a name="API_GetPolicy"></a>
 
  Returns the JSON-formatted resource-based policy on a profiling group.
 

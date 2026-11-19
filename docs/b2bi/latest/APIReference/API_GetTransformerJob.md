@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_GetTransfor
 ---
 
 # GetTransformerJob
-<a name="API_GetTransformerJob"></a>
 
 Returns the details of the transformer run, based on the Transformer job ID.
 

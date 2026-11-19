@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/blackbaud-connection-opti
 ---
 
 # Blackbaud Raiser's Edge NXT connection options
-<a name="blackbaud-connection-options"></a>
 
 The following are connection options for Blackbaud Raiser's Edge NXT:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in Blackbaud Raiser's Edge NXT.

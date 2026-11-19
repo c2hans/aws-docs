@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-
 ---
 
 # Deleting provisioned products
-<a name="enduser-delete"></a>
 
 To remove all AWS resources a provisioned product uses, delete the provisioned product.
 

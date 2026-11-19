@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_WrapOptions
 ---
 
 # WrapOptions
-<a name="API_WrapOptions"></a>
 
 Contains options for wrapping (line folding) in X12 EDI files. Wrapping controls how long lines are handled in the EDI output.
 

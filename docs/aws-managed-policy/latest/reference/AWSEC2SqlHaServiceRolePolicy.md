@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSEC2SqlHaServiceRolePolicy
-<a name="AWSEC2SqlHaServiceRolePolicy"></a>
 
 **Description**: EC2 SQL High Availability service permissions to detect standby/passive instances
 

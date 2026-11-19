@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetLifecycleExecution
-<a name="API_GetLifecycleExecution"></a>
 
 Retrieves runtime information for a lifecycle execution – a single run of lifecycle actions that a lifecycle policy or a [StartResourceStateUpdate](API_StartResourceStateUpdate.md) request started.
 

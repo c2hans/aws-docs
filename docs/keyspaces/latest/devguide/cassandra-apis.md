@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cassandra-apis
 ---
 
 # Supported Cassandra APIs, operations, functions, and data types
-<a name="cassandra-apis"></a>
 
 Amazon Keyspaces (for Apache Cassandra) is compatible with Cassandra Query Language (CQL) 3.11 API (backward-compatible with version 2.x).
 

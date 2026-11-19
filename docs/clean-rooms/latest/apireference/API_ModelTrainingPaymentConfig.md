@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Mode
 ---
 
 # ModelTrainingPaymentConfig
-<a name="API_ModelTrainingPaymentConfig"></a>
 
 An object representing the collaboration member's model training payment responsibilities set by the collaboration creator.
 

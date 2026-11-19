@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeAppBlockBuilderAppBlockAssociations
-<a name="API_DescribeAppBlockBuilderAppBlockAssociations"></a>
 
 Retrieves a list that describes one or more app block builder associations.
 

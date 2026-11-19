@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeStorediSCSIVolumes
-<a name="API_DescribeStorediSCSIVolumes"></a>
 
 Returns the description of the gateway volumes specified in the request. The list of gateway volumes in the request must be from one gateway. In the response, Storage Gateway returns volume information sorted by volume ARNs. This operation is only supported in stored volume gateway type.
 
@@ -71,7 +70,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [StorediSCSIVolumes](#API_DescribeStorediSCSIVolumes_ResponseSyntax) **   <a name="StorageGateway-DescribeStorediSCSIVolumes-response-StorediSCSIVolumes"></a>
-Describes a single unit of output from [DescribeStorediSCSIVolumes](#API_DescribeStorediSCSIVolumes). The following fields are returned:
+Describes a single unit of output from [DescribeStorediSCSIVolumes](API_DescribeStorediSCSIVolumes.md). The following fields are returned:
 +  `ChapEnabled`: Indicates whether mutual CHAP is enabled for the iSCSI target.
 +  `LunNumber`: The logical disk number.
 +  `NetworkInterfaceId`: The network interface ID of the stored volume that initiator use to map the stored volume as an iSCSI target.

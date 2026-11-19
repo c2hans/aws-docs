@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkListDevicesForImportInfo
-<a name="API_SidewalkListDevicesForImportInfo"></a>
 
 The Sidewalk-related object containing positioning information used to configure Sidewalk devices during import.
 

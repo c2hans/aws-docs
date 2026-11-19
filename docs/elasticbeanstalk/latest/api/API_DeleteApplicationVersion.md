@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_DeleteAp
 ---
 
 # DeleteApplicationVersion
-<a name="API_DeleteApplicationVersion"></a>
 
 Deletes the specified version from the specified application.
 

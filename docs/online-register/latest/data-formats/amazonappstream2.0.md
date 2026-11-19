@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon AppStream 2.0
-<a name="amazonappstream2.0"></a>
 
 Amazon AppStream 2.0 provides the following APIs for data retrieval.
 

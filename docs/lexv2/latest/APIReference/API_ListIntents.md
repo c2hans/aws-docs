@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListIntent
 ---
 
 # ListIntents
-<a name="API_ListIntents"></a>
 
 Get a list of intents that meet the specified criteria.
 

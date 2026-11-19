@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deployment-guardrail
 ---
 
 # Use linear traffic shifting
-<a name="deployment-guardrails-blue-green-linear"></a>
 
 Linear traffic shifting enables you to gradually shift traffic from your old fleet (blue fleet) to your new fleet (green fleet). With linear traffic shifting, you can shift traffic in multiple steps, minimizing the chance of a disruption to your endpoint. This blue/green deployment option gives you the most granular control over traffic shifting.
 

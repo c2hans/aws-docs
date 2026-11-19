@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDRSVPCManagement
-<a name="AmazonDRSVPCManagement"></a>
 
 **Description**: Provides access to manage VPC settings for Amazon managed customer configurations
 

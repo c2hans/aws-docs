@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsBack
 ---
 
 # AwsBackupRecoveryPointCreatedByDetails
-<a name="API_AwsBackupRecoveryPointCreatedByDetails"></a>
 
 Contains information about the backup plan and rule that AWS Backup used to initiate the recovery point backup.
 

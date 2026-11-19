@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting AWS CloudHSM
-<a name="troubleshooting"></a>
 
 If you encounter problems with AWS CloudHSM, the following topics can help you resolve them.
 

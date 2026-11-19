@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 A certificate to install in the browser or code interpreter.
 

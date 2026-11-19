@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # UpdateDeployment
-<a name="API_UpdateDeployment"></a>
 
 Updates the specified deployment. To prevent conflicting concurrent updates, provide the current `updateToken`. Use `isPublished` to publish the update or keep the deployment as a draft.
 

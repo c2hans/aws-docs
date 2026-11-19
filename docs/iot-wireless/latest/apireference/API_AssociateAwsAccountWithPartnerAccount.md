@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ass
 ---
 
 # AssociateAwsAccountWithPartnerAccount
-<a name="API_AssociateAwsAccountWithPartnerAccount"></a>
 
 Associates a partner account with your AWS account.
 

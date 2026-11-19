@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # HttpApiFunctionAuth
-<a name="sam-property-function-httpapifunctionauth"></a>
 
 Configures authorization at the event level.
 

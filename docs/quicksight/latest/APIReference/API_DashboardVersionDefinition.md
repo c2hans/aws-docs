@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardVersionDefinition
-<a name="API_DashboardVersionDefinition"></a>
 
 The contents of a dashboard.
 

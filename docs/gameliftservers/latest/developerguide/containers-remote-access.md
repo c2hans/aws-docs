@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/co
 ---
 
 # Connecting to containers
-<a name="containers-remote-access"></a>
 
 For Amazon GameLift Servers container fleets, you can access game server containers running on a fleet instance. Use container access to troubleshoot game sessions, inspect logs, and debug runtime issues.
 

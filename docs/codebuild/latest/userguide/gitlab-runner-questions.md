@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/gitlab-runner
 ---
 
 # About the CodeBuild-hosted GitLab runner
-<a name="gitlab-runner-questions"></a>
 
 The following are some common questions about the CodeBuild-hosted GitLab runner.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Oracle CLOB values to individual rows in PostgreSQL on AWS
-<a name="migrate-oracle-clob-values-to-individual-rows-in-postgresql-on-aws"></a>
 
 *Sai Krishna Namburu and Sindhusha Paturu, Amazon Web Services*
 

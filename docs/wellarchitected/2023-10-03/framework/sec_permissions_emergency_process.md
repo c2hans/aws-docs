@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC03-BP03 Establish emergency access process
-<a name="sec_permissions_emergency_process"></a>
 
  Create a process that allows for emergency access to your workloads in the unlikely event of an issue with your centralized identity provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/lamb
 ---
 
 # AWS Lambda remote debugging
-<a name="lambda-remote-debug"></a>
 
 The AWS Toolkit for Visual Studio Code enables you to debug your AWS Lambda functions that are running in the cloud, directly in VS Code. With AWS Lambda remote debugging you can inspect running functions, set breakpoints, examine variables, and step-through debugging without modifying their existing development workflow.
 

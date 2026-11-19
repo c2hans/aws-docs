@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListB
 ---
 
 # ListBranches
-<a name="API_ListBranches"></a>
 
 Gets information about one or more branches in a repository.
 

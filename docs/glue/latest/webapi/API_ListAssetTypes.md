@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListAssetTypes.ht
 ---
 
 # ListAssetTypes
-<a name="API_ListAssetTypes"></a>
 
 Lists the asset types defined in AWS Glue Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # StepScalingPolicyConfiguration
-<a name="API_StepScalingPolicyConfiguration"></a>
 
 Represents a step scaling policy configuration to use with Application Auto Scaling.
 

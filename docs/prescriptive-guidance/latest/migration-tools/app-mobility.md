@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Application mobility migration tools
-<a name="app-mobility"></a>
 
 Migrating applications to the AWS Cloud can be streamlined through AWS and AWS Partner tools that are specifically designed for application mobility. Application mobility tools capture resource information about the host server, configuration, storage, network state, application language, and frameworks. Then, then they can provision, configure, rehost, refactor, and automatically convert the application code based on your migration and modernization approach.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/sdi-ro
 ---
 
 # Step A: Get ready
-<a name="sdi-rou-ready"></a>
 
 To get ready to add an SDI video router, perform the following steps.
 

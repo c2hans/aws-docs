@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/installguide/instal
 ---
 
 # Step B: Install (Kickstart) the operating system software
-<a name="install-cl3-ig-install-ks"></a>
 
 **To kickstart the system**
 

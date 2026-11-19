@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_DnsDupli
 ---
 
 # DnsDuplicateRuleGroupViolation
-<a name="API_DnsDuplicateRuleGroupViolation"></a>
 
 A DNS Firewall rule group that Firewall Manager tried to associate with a VPC is already associated with the VPC and can't be associated again.
 

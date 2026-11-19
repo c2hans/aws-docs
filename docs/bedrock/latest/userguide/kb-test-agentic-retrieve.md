@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-agentic
 ---
 
 # Use agentic retrieval to query a knowledge base
-<a name="kb-test-agentic-retrieve"></a>
 
 Agentic retrieval uses a foundation model to intelligently decompose complex queries into sub-queries, iteratively retrieve relevant information from your knowledge bases, and evaluate whether the retrieved results are sufficient to answer the original query. This approach improves retrieval accuracy for complex, multi-step questions that a single retrieval pass might not fully address.
 

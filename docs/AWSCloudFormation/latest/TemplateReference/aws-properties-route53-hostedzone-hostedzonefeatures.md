@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53::HostedZone HostedZoneFeatures
-<a name="aws-properties-route53-hostedzone-hostedzonefeatures"></a>
 
 Represents the features configuration for a hosted zone, including the status of various features and any associated failure reasons.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDataCatalogEnc
 ---
 
 # GetDataCatalogEncryptionSettings
-<a name="API_GetDataCatalogEncryptionSettings"></a>
 
 Retrieves the security configuration for a specified catalog.
 

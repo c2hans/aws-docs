@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Date and time functions for T-SQL
-<a name="chap-sql-server-aurora-pg.tsql.datetime"></a>
 
 This topic provides reference information about date and time functions in PostgreSQL compared to Microsoft SQL Server, which is valuable for database administrators and developers migrating from SQL Server to Amazon Aurora PostgreSQL. You can understand the differences in function names, syntax, and behavior between the two database systems when working with temporal data. The topic highlights key date and time functions, their equivalents across platforms, and offers guidance on handling potential compatibility issues.
 

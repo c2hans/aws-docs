@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/using-policy-generator.htm
 ---
 
 # Using the policy generator
-<a name="using-policy-generator"></a>
 
 You can use the policy generator to create a simple authorization policy by following these steps.
 

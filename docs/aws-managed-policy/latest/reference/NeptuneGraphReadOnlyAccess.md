@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Nept
 ---
 
 # NeptuneGraphReadOnlyAccess
-<a name="NeptuneGraphReadOnlyAccess"></a>
 
 **Description**: Provides read only access to all Amazon Neptune Analytics resources along with read only permissions for dependent services.
 

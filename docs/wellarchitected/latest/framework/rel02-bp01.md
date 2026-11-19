@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel02-b
 ---
 
 # REL02-BP01 Use highly available network connectivity for your workload public endpoints
-<a name="rel02-bp01"></a>
 
  Users reach your workload through its public endpoints. If the network path fails, users can't reach the workload even when it is healthy and running. Highly available connectivity spreads that path across redundant components for name resolution, content delivery, load balancing, and traffic routing. If one component fails, users still reach the workload.
 

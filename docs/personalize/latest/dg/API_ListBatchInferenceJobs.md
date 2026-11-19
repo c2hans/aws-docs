@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_ListBatchInfer
 ---
 
 # ListBatchInferenceJobs
-<a name="API_ListBatchInferenceJobs"></a>
 
 Gets a list of the batch inference jobs that have been performed off of a solution version.
 

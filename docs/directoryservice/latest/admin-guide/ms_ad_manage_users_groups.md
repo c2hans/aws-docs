@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # User and group management in AWS Managed Microsoft AD
-<a name="ms_ad_manage_users_groups"></a>
 
  You can manage users and groups in AWS Managed Microsoft AD. You create a user to represent a person or entity that can access your directory. You can also create a group to grant and deny permissions to more than one user at a time. You can add not only users to a group, but also groups to a group. When you add a user to a group, the user inherits the roles and permissions assigned to the group. When you add a group to a group, the groups share a parent-child relationship, where the child group inherits the roles and permissions assigned to the parent group. You can also copy a user's group memberships into another user.
 

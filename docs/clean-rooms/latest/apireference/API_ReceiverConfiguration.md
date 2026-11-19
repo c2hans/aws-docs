@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Rece
 ---
 
 # ReceiverConfiguration
-<a name="API_ReceiverConfiguration"></a>
 
  The receiver configuration for a protected query.
 

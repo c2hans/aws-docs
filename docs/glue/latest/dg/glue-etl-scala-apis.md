@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis.html
 ---
 
 # APIs in the AWS Glue Scala library
-<a name="glue-etl-scala-apis"></a>
 
 AWS Glue supports an extension of the PySpark Scala dialect for scripting extract, transform, and load (ETL) jobs. The following sections describe the APIs in the AWS Glue Scala library.
 

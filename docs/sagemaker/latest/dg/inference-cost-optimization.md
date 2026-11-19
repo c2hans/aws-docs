@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-cost-optim
 ---
 
 # Inference cost optimization best practices
-<a name="inference-cost-optimization"></a>
 
 The following content provides techniques and considerations for optimizing the cost of endpoints. You can use these recommendations to optimize the cost for both new and existing endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ChangeSetHookTargetDetails
-<a name="API_ChangeSetHookTargetDetails"></a>
 
 Specifies target details for an activated Hook.
 

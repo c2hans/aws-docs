@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # UDPEndpoint
-<a name="API_UDPEndpoint"></a>
 
 The domain name and port information for a UDP endpoint.
 

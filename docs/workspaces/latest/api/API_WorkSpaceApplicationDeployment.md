@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkSpaceAppli
 ---
 
 # WorkSpaceApplicationDeployment
-<a name="API_WorkSpaceApplicationDeployment"></a>
 
 Describes the WorkSpace application deployment.
 

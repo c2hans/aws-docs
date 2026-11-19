@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/creatin
 ---
 
 # Creating Your AWS Elemental MediaConvert Job Specification
-<a name="creating-your-json-job-specification"></a>
 
 When you submit your MediaConvert jobs programmatically, you submit a payload with your job settings. When you use the AWS SDK for Python (Boto3) or the AWS CLI, you pass in your job settings directly as a JSON object. When you use the other AWS SDKs, translate the JSON job settings according to the SDK documentation.
 

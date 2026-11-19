@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/viewing-vector
 ---
 
 # Viewing vector index tags
-<a name="viewing-vector-index-tags"></a>
 
 You can view or list tags applied to Amazon S3 vector indexes. For more information about tagging vector indexes, see [Using tags with S3 vector indexes](vector-index-tagging.md).
 

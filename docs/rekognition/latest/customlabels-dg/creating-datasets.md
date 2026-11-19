@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/creat
 ---
 
 # Creating training and test datasets
-<a name="creating-datasets"></a>
 
 A dataset is a set of images and labels that describe those images. Your project needs a training dataset and a test dataset. Amazon Rekognition Custom Labels uses the training dataset to train your model. After training, Amazon Rekognition Custom Labels uses the test dataset to verify how well the trained model predicts the correct labels.
 

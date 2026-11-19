@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Account
 ---
 
 # AccountInfo
-<a name="API_AccountInfo"></a>
 
 The account information within an account pool.
 

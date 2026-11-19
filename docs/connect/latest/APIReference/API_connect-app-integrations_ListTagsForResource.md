@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListTagsForResource
-<a name="API_connect-app-integrations_ListTagsForResource"></a>
 
 Lists the tags for the specified resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Provisioning
 ---
 
 # ProvisioningHook
-<a name="API_ProvisioningHook"></a>
 
 Structure that contains `payloadVersion` and `targetArn`.
 

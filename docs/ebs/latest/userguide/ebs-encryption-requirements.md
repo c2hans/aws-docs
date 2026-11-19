@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption-requ
 ---
 
 # Requirements for Amazon EBS encryption
-<a name="ebs-encryption-requirements"></a>
 
 Before you begin, verify that the following requirements are met.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_UntagR
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes a specific tag associated with an Amazon Translate resource. For more information, see [ Tagging your resources](https://docs.aws.amazon.com/translate/latest/dg/tagging.html) in the Amazon Translate Developer Guide.
 

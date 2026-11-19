@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/mapping-zendes
 ---
 
 # Mapping Zendesk objects to the standard case in Connect Customer Customer Profiles
-<a name="mapping-zendesk-objects-case"></a>
 
 This topic lists which fields in Zendesk objects map to fields in the standard case in Customer Profiles.
 

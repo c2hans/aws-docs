@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USERRec
 ---
 
 # Modifying dismissed Amazon Aurora recommendations to active recommendations
-<a name="USERRecommendationsManage.DismissToActiveRecommendation"></a>
 
 You can move one or more dismissed Amazon Aurora recommendations to active recommendations using the Amazon RDS console, AWS CLI, or Amazon RDS API.
 

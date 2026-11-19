@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-referen
 ---
 
 # AWS AppSync JavaScript resolver function reference for HTTP
-<a name="resolver-reference-http-js"></a>
 
 The AWS AppSync HTTP resolver functions enable you to send requests from AWS AppSync to any HTTP endpoint, and responses from your HTTP endpoint back to AWS AppSync. With your request handler, you can provide hints to AWS AppSync about the nature of the operation to be invoked. This section describes the different configurations for the supported HTTP resolver.
 

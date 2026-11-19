@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # sam local execution history
-<a name="sam-cli-command-reference-sam-local-execution-history"></a>
 
 Get execution history of a durable function execution.
 

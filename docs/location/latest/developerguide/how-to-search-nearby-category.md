@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search nearby places based on category
-<a name="how-to-search-nearby-category"></a>
 
 The SearchNearby API enables querying for points of interest (POI) with the inclusion or exclusion of specified categories. This can help users explore neighborhoods, discover local POIs, and more. The API requires a `QueryPosition`, which can be based on a device's location, IP position, or the center of the map viewport. Alternatively, users can specify a city or place, and the application will bias results based on that location’s coordinates.
 

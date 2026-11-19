@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Evaluatio
 ---
 
 # Evaluation
-<a name="API_Evaluation"></a>
 
 Identifies an AWS resource and indicates whether it complies with the AWS Config rule that it was evaluated against.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # ContainerServiceECRImagePullerRoleRequest
-<a name="API_ContainerServiceECRImagePullerRoleRequest"></a>
 
 Describes a request to activate or deactivate the role that you can use to grant an Amazon Lightsail container service access to Amazon Elastic Container Registry (Amazon ECR) private repositories.
 

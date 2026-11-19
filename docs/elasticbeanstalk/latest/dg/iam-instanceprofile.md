@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/iam-instancep
 ---
 
 # Managing Elastic Beanstalk instance profiles
-<a name="iam-instanceprofile"></a>
 
 An instance profile is a container for an AWS Identity and Access Management (IAM) role that you can use to pass role information to an Amazon EC2 instance when the instance starts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_OwnedResourc
 ---
 
 # OwnedResourceShareDetails
-<a name="API_OwnedResourceShareDetails"></a>
 
 The cross-account sharing details for an endpoint that this account owns and shares with other accounts.
 

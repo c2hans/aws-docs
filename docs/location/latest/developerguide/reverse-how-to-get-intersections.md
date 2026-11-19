@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/reverse-h
 ---
 
 # How to get intersections
-<a name="reverse-how-to-get-intersections"></a>
 
 ReverseGeocode API can retrieve nearby intersections to the specified location.
 

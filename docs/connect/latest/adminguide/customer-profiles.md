@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 ---
 
 # Customer Profiles in Connect Customer
-<a name="customer-profiles"></a>
 
 To help agents deliver more efficient and personalized customer service, you can use Connect Customer to combine information from external applications, such as Salesforce, Zendesk, ServiceNow, or other Customer relationship management (CRM) products, with contact history from Connect Customer. This creates a customer profile that has all the information agents need during customer interactions in a single place.
 

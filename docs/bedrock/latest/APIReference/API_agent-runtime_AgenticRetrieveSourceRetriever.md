@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveSourceRetriever
-<a name="API_agent-runtime_AgenticRetrieveSourceRetriever"></a>
 
 A source retriever that produced retrieval results.
 

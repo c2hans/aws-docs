@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # StaticPolicyDefinition
-<a name="API_StaticPolicyDefinition"></a>
 
 Contains information about a static policy.
 

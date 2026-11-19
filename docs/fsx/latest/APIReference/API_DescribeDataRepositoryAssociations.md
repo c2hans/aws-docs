@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeData
 ---
 
 # DescribeDataRepositoryAssociations
-<a name="API_DescribeDataRepositoryAssociations"></a>
 
 Returns the description of specific Amazon FSx for Lustre or Amazon File Cache data repository associations, if one or more `AssociationIds` values are provided in the request, or if filters are used in the request. Data repository associations are supported on Amazon File Cache resources and all FSx for Lustre 2.12 and 2,15 file systems, excluding `scratch_1` deployment type.
 

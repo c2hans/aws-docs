@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/exampl
 ---
 
 # Use `PutScheduledAction` with a CLI
-<a name="example_application-auto-scaling_PutScheduledAction_section"></a>
 
 The following code examples show how to use `PutScheduledAction`.
 

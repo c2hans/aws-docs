@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-lega
 ---
 
 # Using S3 Batch Operations to turn off S3 Object Lock legal holds
-<a name="batch-ops-legal-hold-off"></a>
 
 The following example builds on the previous examples of creating a trust policy, and setting S3 Batch Operations and S3 Object Lock configuration permissions. This example shows how to disable Object Lock legal hold on objects using Batch Operations.
 

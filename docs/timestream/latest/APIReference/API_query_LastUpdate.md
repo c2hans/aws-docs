@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # LastUpdate
-<a name="API_query_LastUpdate"></a>
 
 Configuration object that contains the most recent account settings update, visible only if settings have been updated previously.
 

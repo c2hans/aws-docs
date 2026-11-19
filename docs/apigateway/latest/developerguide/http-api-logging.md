@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Configure logging for HTTP APIs in API Gateway
-<a name="http-api-logging"></a>
 
 You can turn on logging to write logs to CloudWatch Logs. You can use [logging variables](http-api-logging-variables.md) to customize the content of your logs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/med-example.h
 ---
 
 # HealthLake Integrated NLP libraries
-<a name="med-example"></a>
 
 HealthLake infers data found in the `DocumentReference` resource type using Amazon Comprehend Medical libraries. The Amazon Comprehend Medical API operations `DetectEntities-V2`, `InferICD10-CM`, and `InferRxNorm` detect medical conditions as *traits*. Each operation provides different insights.
 

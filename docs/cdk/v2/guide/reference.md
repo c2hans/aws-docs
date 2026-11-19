@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/reference.html
 ---
 
 # AWS CDK API reference
-<a name="reference"></a>
 
 This section contains reference information for the AWS Cloud Development Kit (AWS CDK).
 

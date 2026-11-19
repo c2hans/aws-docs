@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-ai-guar
 ---
 
 # Create AI guardrails for AI agents
-<a name="create-ai-guardrails"></a>
 
 An *AI guardrail* is a resource that you can use to implement safeguards based on your use cases and responsible AI policies.
 

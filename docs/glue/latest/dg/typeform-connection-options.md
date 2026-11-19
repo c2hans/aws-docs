@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/typeform-connection-optio
 ---
 
 # Typeform connection options
-<a name="typeform-connection-options"></a>
 
 The following are connection options for Typeform:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Typeform object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-ecr.html
 ---
 
 # Container images for private workflows
-<a name="workflows-ecr"></a>
 
 When you create a workflow, you can specify the container registries and images required by your workflow. HealthOmics runs the container images that your workflow tasks use. You can use images from your own Amazon ECR private repositories and from third-party container registries. HealthOmics supports container images from Amazon ECR Public, Docker Hub, Quay, GitHub Container Registry, Kubernetes container image registry, Microsoft Azure Container Registry, GitLab Container Registry, Seqera Containers, NVIDIA NGC, Google Artifact Registry, and Google Container Registry.
 

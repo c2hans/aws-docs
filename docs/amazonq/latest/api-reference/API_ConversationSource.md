@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Convers
 ---
 
 # ConversationSource
-<a name="API_ConversationSource"></a>
 
 The source reference for an existing attachment in an existing conversation.
 

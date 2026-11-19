@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_So
 ---
 
 # SourceCodeRepository
-<a name="API_SourceCodeRepository"></a>
 
 Represents a source code repository used for security analysis during a pentest.
 

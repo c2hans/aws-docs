@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobSummary
-<a name="API_JobSummary"></a>
 
 A summary of job details.
 

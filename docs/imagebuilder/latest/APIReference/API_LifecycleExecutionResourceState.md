@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecycleExecutionResourceState
-<a name="API_LifecycleExecutionResourceState"></a>
 
 Contains the state of an impacted resource that the runtime instance of the lifecycle policy identified for action.
 

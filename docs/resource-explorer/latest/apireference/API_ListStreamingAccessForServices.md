@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ListStreamingAccessForServices
-<a name="API_ListStreamingAccessForServices"></a>
 
 Returns a list of AWS services that have been granted streaming access to your Resource Explorer data. Streaming access allows AWS services to receive real-time updates about your resources as they are indexed by Resource Explorer.
 

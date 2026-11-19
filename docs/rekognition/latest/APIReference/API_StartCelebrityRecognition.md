@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Star
 ---
 
 # StartCelebrityRecognition
-<a name="API_StartCelebrityRecognition"></a>
 
 Starts asynchronous recognition of celebrities in a stored video.
 

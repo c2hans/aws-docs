@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-k
 ---
 
 # List keys for a user with CloudHSM CLI
-<a name="cloudhsm_cli-key-list"></a>
 
 Use the **key list** command in CloudHSM CLI to find all keys for the current user present in your AWS CloudHSM cluster. The output includes keys that the user owns and shares, as well as all public keys in the CloudHSM cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringAlertActions
-<a name="API_MonitoringAlertActions"></a>
 
 A list of alert actions taken in response to an alert going into `InAlert` status.
 

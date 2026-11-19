@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/service_code_example
 ---
 
 # Code examples for Amazon EC2 using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Amazon EC2 with an AWS software development kit (SDK).
 

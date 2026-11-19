@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/activate-triggers.html
 ---
 
 # Activating and deactivating triggers
-<a name="activate-triggers"></a>
 
 You can activate or deactivate a trigger using the AWS Glue console, the AWS Command Line Interface (AWS CLI), or the AWS Glue API.
 

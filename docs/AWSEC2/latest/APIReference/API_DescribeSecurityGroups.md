@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSecurityGroups
-<a name="API_DescribeSecurityGroups"></a>
 
 Describes the specified security groups or all of your security groups.
 

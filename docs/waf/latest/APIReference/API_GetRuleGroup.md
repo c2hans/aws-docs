@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetRuleGroup
 ---
 
 # GetRuleGroup
-<a name="API_GetRuleGroup"></a>
 
 Retrieves the specified [RuleGroup](API_RuleGroup.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PackageVersi
 ---
 
 # PackageVersionSummary
-<a name="API_PackageVersionSummary"></a>
 
 A summary of information about a package version.
 

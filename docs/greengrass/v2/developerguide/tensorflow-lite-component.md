@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-
 ---
 
 # TensorFlow Lite runtime
-<a name="tensorflow-lite-component"></a>
 
 The TensorFlow Lite runtime component (`variant.TensorFlowLite`) contains a script that installs [TensorFlow Lite](https://www.tensorflow.org/lite/guide/python) version 2.5.0 and its dependencies in a virtual environment on your device. The [TensorFlow Lite image classification](tensorflow-lite-image-classification-component.md) and [TensorFlow Lite object detection](tensorflow-lite-object-detection-component.md) component use this runtime component as a dependency for installing TensorFlow Lite.
 

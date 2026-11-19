@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_KubeControll
 ---
 
 # KubeControllerManagerVersionConfig
-<a name="API_KubeControllerManagerVersionConfig"></a>
 
 The Kubernetes controller manager version-specific configuration defaults and constraints.
 

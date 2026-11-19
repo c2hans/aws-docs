@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 5.2 Workstream and role redesign
-<a name="redesign"></a>
 
 ## Overview
 <a name="redesign-overview"></a>

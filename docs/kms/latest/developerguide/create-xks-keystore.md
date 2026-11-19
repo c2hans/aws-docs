@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/create-xks-key
 ---
 
 # Create an external key store
-<a name="create-xks-keystore"></a>
 
 You can create one or many external key stores in each AWS account and Region. Each external key store must be associated with an external key manager outside of AWS, and an external key store proxy (XKS proxy) that mediates communication between AWS KMS and your external key manager. For details, see [Choose an external key store proxy connectivity option](choose-xks-connectivity.md). Before you begin, [confirm that you need an external key store](keystore-external.md#do-i-need-xks). Most customer can use KMS keys backed by AWS KMS key material.
 

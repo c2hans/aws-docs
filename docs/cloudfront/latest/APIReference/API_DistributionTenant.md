@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Distr
 ---
 
 # DistributionTenant
-<a name="API_DistributionTenant"></a>
 
 The distribution tenant.
 

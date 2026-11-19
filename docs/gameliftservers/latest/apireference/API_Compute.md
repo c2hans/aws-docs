@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # Compute
-<a name="API_Compute"></a>
 
 An Amazon GameLift Servers compute resource for hosting your game servers. Computes in an Amazon GameLift Servers fleet differ depending on the fleet's compute type property as follows:
 + For managed EC2 fleets, a compute is an EC2 instance.

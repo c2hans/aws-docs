@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/certifi
 ---
 
 # Manage Certificate-based Authentication
-<a name="certificate-based-authentication-manage"></a>
 
 After you enable certificate-based authentication, review the following tasks.
 

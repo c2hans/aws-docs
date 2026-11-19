@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-large-payload-raw-mess
 ---
 
 # Amazon SNS raw message delivery
-<a name="sns-large-payload-raw-message-delivery"></a>
 
 To avoid having [Fanout to Firehose delivery streams](sns-firehose-as-subscriber.md), [Amazon SQS](sns-sqs-as-subscriber.md), and [HTTP/S](sns-http-https-endpoint-as-subscriber.md) endpoints process the JSON formatting of messages, Amazon SNS allows raw message delivery:
 + When you enable raw message delivery for or Amazon SQS endpoints, any Amazon SNS metadata is stripped from the published message and the message is sent as is.

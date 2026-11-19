@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Tag.h
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 The key or keys of the key-value pairs for the resource tag or tags assigned to the resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_BatchCreat
 ---
 
 # BatchCreateRelatedItem
-<a name="API_connect-cases_BatchCreateRelatedItem"></a>
 
 Creates a comment and associates it with multiple cases in a single request. All cases must belong to the same domain. This operation supports only the Comment related item type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Migrate and manage large-scale migrations of workloads to AWS**
 

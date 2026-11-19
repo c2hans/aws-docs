@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Bi
 ---
 
 # BitbucketRepositoryResource
-<a name="API_BitbucketRepositoryResource"></a>
 
 A Bitbucket repository integrated as a resource.
 

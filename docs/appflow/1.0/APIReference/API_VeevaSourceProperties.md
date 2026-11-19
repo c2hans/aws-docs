@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_VeevaSource
 ---
 
 # VeevaSourceProperties
-<a name="API_VeevaSourceProperties"></a>
 
  The properties that are applied when using Veeva as a flow source.
 

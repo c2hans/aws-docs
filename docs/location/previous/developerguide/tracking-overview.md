@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/trackin
 ---
 
 # Learn about trackers in Amazon Location Service
-<a name="tracking-overview"></a>
 
 A tracker stores position updates for a collection of devices. The tracker can be used to query the devices' current location or location history. It stores the updates, but reduces storage space and visual noise by filtering the locations before storing them.
 

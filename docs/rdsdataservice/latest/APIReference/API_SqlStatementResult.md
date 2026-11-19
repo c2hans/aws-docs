@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_S
 ---
 
 # SqlStatementResult
-<a name="API_SqlStatementResult"></a>
 
 The result of a SQL statement.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # NetworkConfiguration
-<a name="API_NetworkConfiguration"></a>
 
 SecurityConfig for the Agent.
 

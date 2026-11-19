@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # PreferenceUpdate
-<a name="API_PreferenceUpdate"></a>
 
 A caller's requested change to one preference, supplied to PutAgentPreferences.
 

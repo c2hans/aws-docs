@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/api-act
 ---
 
 # Lightsail for Research API actions
-<a name="api-actions"></a>
 
 You can use the following API actions, which are part of the Lightsail API, to manage Amazon Lightsail for Research resources. Choose the name of the action to view more information about that action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergCompaction
 ---
 
 # IcebergCompactionMetrics
-<a name="API_IcebergCompactionMetrics"></a>
 
 Compaction metrics for Iceberg for the optimizer run.
 

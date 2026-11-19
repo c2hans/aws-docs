@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ge
 ---
 
 # Generate a static outbound IP address using a Lambda function, Amazon VPC, and a serverless architecture
-<a name="generate-a-static-outbound-ip-address-using-a-lambda-function-amazon-vpc-and-a-serverless-architecture"></a>
 
 *Thomas Scott, Amazon Web Services*
 

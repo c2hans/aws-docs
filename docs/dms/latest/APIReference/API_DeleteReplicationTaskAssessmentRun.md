@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteReplic
 ---
 
 # DeleteReplicationTaskAssessmentRun
-<a name="API_DeleteReplicationTaskAssessmentRun"></a>
 
 Deletes the record of a single premigration assessment run.
 

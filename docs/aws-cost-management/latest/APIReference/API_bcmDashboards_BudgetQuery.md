@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BudgetQuery
-<a name="API_bcmDashboards_BudgetQuery"></a>
 
 Defines the parameters for querying budget data. Budget widgets display budget names, spend amounts, forecasted spend, and budget thresholds. Supports optional filtering by budget dimensions such as `BUDGET_NAME` or `BUDGET_TYPE`.
 

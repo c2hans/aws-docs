@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHoste
 ---
 
 # GetHostedZone
-<a name="API_GetHostedZone"></a>
 
 Gets information about a specified hosted zone including the four name servers assigned to the hosted zone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Insta
 ---
 
 # InstanceInfo
-<a name="API_InstanceInfo"></a>
 
 Information about an on-premises instance.
 

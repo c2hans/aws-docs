@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/tagging.managin
 ---
 
 # Managing your cost allocation tags using the MemoryDB API
-<a name="tagging.managing.api"></a>
 
 You can use the MemoryDB API to add, modify, or remove cost allocation tags.
 

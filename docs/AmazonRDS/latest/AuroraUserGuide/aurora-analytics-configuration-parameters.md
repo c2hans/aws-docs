@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Configuration parameters
-<a name="aurora-analytics-configuration-parameters"></a>
 
 You can configure analytics behavior and performance using PostgreSQL configuration parameters. You can set these parameters at the session, database, user, or DB cluster parameter group level using standard PostgreSQL commands.
 

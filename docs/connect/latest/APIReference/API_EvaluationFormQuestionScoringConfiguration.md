@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormQuestionScoringConfiguration
-<a name="API_EvaluationFormQuestionScoringConfiguration"></a>
 
 Scoring configuration for a question in an evaluation form.
 

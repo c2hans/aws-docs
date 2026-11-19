@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/viewing-acco
 ---
 
 # Managing accounts and preferences
-<a name="viewing-accounts"></a>
 
 The **Accounts** page of the Compute Optimizer console lists the recommendation settings that are turned on for your account or organization, such as [enhanced infrastructure metrics]().
 

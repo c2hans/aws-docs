@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Tagging AgentCore Identity resources
-<a name="identity-tagging"></a>
 
 Amazon Bedrock AgentCore Identity supports comprehensive tagging capabilities across its resource hierarchy to enable better resource management, cost allocation, access control, and operational visibility. For general information about tags, including syntax and usage, see [Tagging AgentCore resources](tagging.md).
 

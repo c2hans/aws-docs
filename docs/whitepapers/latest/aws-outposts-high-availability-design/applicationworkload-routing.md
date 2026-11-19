@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Application/workload routing
-<a name="applicationworkload-routing"></a>
 
 There are two paths out of the Outpost for application workloads:
 + The service link path: Consider that application traffic will compete with Outposts control plane traffic, in addition to limiting the [MTU to 1300 bytes](https://docs.aws.amazon.com/outposts/latest/userguide/region-connectivity.html#service-links).

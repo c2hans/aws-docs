@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectTra
 ---
 
 # RejectTransitGatewayClientVpnAttachment
-<a name="API_RejectTransitGatewayClientVpnAttachment"></a>
 
 Rejects a Transit Gateway attachment request for a Client VPN endpoint. The Transit Gateway owner can reject the attachment request to prevent the Client VPN endpoint from routing traffic through the Transit Gateway.
 

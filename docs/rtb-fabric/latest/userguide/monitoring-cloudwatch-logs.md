@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/monitoring-c
 ---
 
 # Logging RTB Fabric link activity using vended logs
-<a name="monitoring-cloudwatch-logs"></a>
 
 AWS RTB Fabric publishes application logs as vended logs, an AWS-managed log-delivery pipeline. You can route the logs to:
 + *Amazon S3*, for high-volume log retention and downstream analytics.

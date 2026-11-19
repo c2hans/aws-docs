@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # Record
-<a name="API_Record"></a>
 
 Represents a test record structure used for pipeline testing operations to validate data processing.
 

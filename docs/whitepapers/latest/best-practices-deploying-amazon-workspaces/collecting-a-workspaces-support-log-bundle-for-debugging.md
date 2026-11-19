@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Collecting a WorkSpaces support log bundle for debugging
-<a name="collecting-a-workspaces-support-log-bundle-for-debugging"></a>
 
  When troubleshooting WorkSpaces issues, it is necessary to gather the log bundle from the affected WorkSpace and the host where the WorkSpaces client is installed. There are two fundamental categories of logs:
 +  **Server-side logs**: The WorkSpace is the server in this scenario, so these are logs that live on the WorkSpace itself.

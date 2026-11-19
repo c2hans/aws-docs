@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Accelerate development and deployment of connected vehicle assets
-<a name="solution-overview"></a>
 
 Publication date: *October 2023 ([last update](revisions.md): April 2026)*
 

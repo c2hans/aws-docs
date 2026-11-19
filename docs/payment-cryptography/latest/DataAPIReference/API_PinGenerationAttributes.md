@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # PinGenerationAttributes
-<a name="API_PinGenerationAttributes"></a>
 
 Parameters that are required for PIN data generation.
 

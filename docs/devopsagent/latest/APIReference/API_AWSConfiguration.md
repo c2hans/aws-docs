@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_AWSC
 ---
 
 # AWSConfiguration
-<a name="API_AWSConfiguration"></a>
 
 Configuration for AWS monitor account integration, allowing AIDevOps to monitor AWS resources.
 

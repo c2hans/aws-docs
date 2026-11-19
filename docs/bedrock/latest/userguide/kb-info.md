@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-info.html
 ---
 
 # View information about an Amazon Bedrock knowledge base
-<a name="kb-info"></a>
 
 You can view information about a knowledge base, such as the settings and status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateR
 ---
 
 # UpdateRoute
-<a name="API_UpdateRoute"></a>
 
 Updates an existing route for a specified service mesh and virtual router.
 

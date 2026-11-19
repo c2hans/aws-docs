@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JobBookmarkEntry.
 ---
 
 # JobBookmarkEntry
-<a name="API_JobBookmarkEntry"></a>
 
 Defines a point that a job can resume processing.
 

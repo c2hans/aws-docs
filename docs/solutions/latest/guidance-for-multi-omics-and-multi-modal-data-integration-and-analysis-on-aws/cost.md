@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Cost
-<a name="cost"></a>
 
  You are responsible for the cost of the AWS services used while running this reference deployment. As of the date of publication, the cost for running this guidance with default settings in the US East (N. Virginia) Region is approximately **$61.00 per month**.
 

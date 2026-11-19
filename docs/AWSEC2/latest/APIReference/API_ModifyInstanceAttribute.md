@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIns
 ---
 
 # ModifyInstanceAttribute
-<a name="API_ModifyInstanceAttribute"></a>
 
 Modifies the specified attribute of the specified instance. You can specify only one attribute at a time.
 

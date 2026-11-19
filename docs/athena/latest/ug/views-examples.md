@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/views-examples.html
 ---
 
 # Examples of Athena views
-<a name="views-examples"></a>
 
 To show the syntax of the view query, use [SHOW CREATE VIEW](show-create-view.md).
 

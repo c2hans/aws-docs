@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-manageme
 ---
 
 # Create a prompt using Prompt management
-<a name="prompt-management-create"></a>
 
 When you create a prompt, you have the following options:
 + Write the prompt message that serves as input for an FM to generate an output.

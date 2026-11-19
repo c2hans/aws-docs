@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/elastic-clust
 ---
 
 # Maintaining Amazon DocumentDB elastic clusters
-<a name="elastic-cluster-maintenance"></a>
 
 **Topics**
 + [Viewing pending elastic cluster maintenance actions](#view-elastic-cluster-maintenance)

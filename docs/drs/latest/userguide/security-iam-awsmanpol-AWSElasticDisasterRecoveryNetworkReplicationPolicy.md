@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policy: AWSElasticDisasterRecoveryNetworkReplicationPolicy
-<a name="security-iam-awsmanpol-AWSElasticDisasterRecoveryNetworkReplicationPolicy"></a>
 
 This policy allows AWS Elastic Disaster Recovery (DRS) to support network replication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetCostEstimate
-<a name="API_GetCostEstimate"></a>
 
 Retrieves information about the cost estimate for a specified resource. A cost estimate will not generate for a resource that has been deleted.
 

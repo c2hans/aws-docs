@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshooting-
 ---
 
 # Troubleshoot Amazon EC2 instance launch issues
-<a name="troubleshooting-launch"></a>
 
 The following are troubleshooting tips to help you solve issues when launching an Amazon EC2 instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ModelSummary
-<a name="API_amazon-q-connect_ModelSummary"></a>
 
 The summary of a model available to an Amazon Q in Connect assistant.
 

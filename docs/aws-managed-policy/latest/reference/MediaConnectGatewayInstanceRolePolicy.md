@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Medi
 ---
 
 # MediaConnectGatewayInstanceRolePolicy
-<a name="MediaConnectGatewayInstanceRolePolicy"></a>
 
 **Description**: This policy grants permission to register MediaConnect Gateway Instances to a MediaConnect Gateway.
 

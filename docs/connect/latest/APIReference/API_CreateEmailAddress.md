@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateEm
 ---
 
 # CreateEmailAddress
-<a name="API_CreateEmailAddress"></a>
 
 Create new email address in the specified Connect Customer instance. For more information about email addresses, see [Create email addresses](https://docs.aws.amazon.com/connect/latest/adminguide/create-email-address1.html) in the Connect Customer Administrator Guide.
 

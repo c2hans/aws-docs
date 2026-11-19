@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Infra
 ---
 
 # InfrastructureAndCodeRecommendation
-<a name="API_InfrastructureAndCodeRecommendation"></a>
 
 An infrastructure and code recommendation to address a finding.
 

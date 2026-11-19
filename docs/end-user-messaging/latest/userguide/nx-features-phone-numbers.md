@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Phone numbers
-<a name="nx-features-phone-numbers"></a>
 
 A phone number is an identity that your recipients see on their devices when you send them an SMS or MMS message. There are several types of identities, including long codes (standard phone numbers that typically have 10 or more digits), 10 digit long codes (10DLC), toll free numbers (TFN) and short codes (phone numbers that contain between four and seven digits).
 

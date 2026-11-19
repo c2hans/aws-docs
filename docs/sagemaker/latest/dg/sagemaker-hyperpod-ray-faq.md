@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Ray on HyperPod FAQs
-<a name="sagemaker-hyperpod-ray-faq"></a>
 
 ## Does HyperPod modify Ray or KubeRay?
 <a name="sagemaker-hyperpod-ray-faq-modify"></a>

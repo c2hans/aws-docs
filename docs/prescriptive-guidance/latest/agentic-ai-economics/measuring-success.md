@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Measuring success and ROI
-<a name="measuring-success"></a>
 
 Measuring success in agentic AI system implementation requires a systematic approach. This section provides a clear methodology for evaluation and ongoing optimization that uses your existing analysis rather than starting from scratch.
 

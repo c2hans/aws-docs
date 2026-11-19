@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationEntityIdFilter
-<a name="API_ResaleAuthorizationEntityIdFilter"></a>
 
 Allows filtering on `EntityId` of a ResaleAuthorization.
 

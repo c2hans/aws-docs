@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Orderin
 ---
 
 # OrderingRequirement
-<a name="API_OrderingRequirement"></a>
 
 A requirement that must be met before an order can be submitted for a quote.
 

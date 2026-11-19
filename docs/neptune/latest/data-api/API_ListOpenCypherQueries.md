@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ListOpenCyph
 ---
 
 # ListOpenCypherQueries
-<a name="API_ListOpenCypherQueries"></a>
 
 Lists active openCypher queries. See [Neptune openCypher status endpoint](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-status.html) for more information.
 

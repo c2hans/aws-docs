@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListLicenseConfigurationsForOrganization
-<a name="API_ListLicenseConfigurationsForOrganization"></a>
 
 Lists license configurations for an organization.
 

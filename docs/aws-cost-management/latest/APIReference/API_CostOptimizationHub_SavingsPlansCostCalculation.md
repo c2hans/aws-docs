@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansCostCalculation
-<a name="API_CostOptimizationHub_SavingsPlansCostCalculation"></a>
 
 Cost impact of the purchase recommendation.
 

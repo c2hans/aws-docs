@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/lambda-parser.h
 ---
 
 # Write a custom parser Lambda function in Amazon Bedrock Agents
-<a name="lambda-parser"></a>
 
 Each prompt template includes a parser Lambda function. You can write your own custom parser Lambda function and specify the templates whose default parser function you want to override. To write a custom parser Lambda function, you must understand the input event that your agent sends and the response that the agent expects as the output from the Lambda function. You write a handler function to manipulate variables from the input event and to return the response. For more information about how AWS Lambda works, see [Event-driven invocation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html#event-driven-invocation) in the AWS Lambda Developer Guide.
 

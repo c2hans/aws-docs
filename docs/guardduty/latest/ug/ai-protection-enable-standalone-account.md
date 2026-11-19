@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/ai-protection-enable
 ---
 
 # Enabling AI Protection for a standalone account
-<a name="ai-protection-enable-standalone-account"></a>
 
 A standalone account owns the decision to enable or disable a protection plan in its AWS account in a specific Region.
 

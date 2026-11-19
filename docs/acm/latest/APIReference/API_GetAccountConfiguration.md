@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_GetAccountCo
 ---
 
 # GetAccountConfiguration
-<a name="API_GetAccountConfiguration"></a>
 
 Returns the account configuration options associated with an AWS account.
 

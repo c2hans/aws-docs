@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Working with Publish to AWS in Visual Studio
-<a name="publish-experience"></a>
 
 **Publish to AWS** is an interactive deployment experience that assists you with publishing your .NET applications to AWS deployment targets, supporting applications targeting .NET Core 3.1 and later. Working with Publish to AWS keeps your work flow inside of Visual Studio by making these deployment features available, directly from your IDE:
 + The ability to deploy your application with a single click.

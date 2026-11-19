@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # AWS sourcing and distribution tools
-<a name="aws-sourcing-and-distribution-tools"></a>
 
  The following AWS services can be used to help you meet the prescribed benefits of the M&G Guide:
 

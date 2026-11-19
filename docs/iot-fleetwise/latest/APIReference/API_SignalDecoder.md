@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Si
 ---
 
 # SignalDecoder
-<a name="API_SignalDecoder"></a>
 
 Information about a signal decoder.
 

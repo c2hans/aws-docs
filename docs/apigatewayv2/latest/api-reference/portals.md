@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/portal
 ---
 
 # Portals
-<a name="portals"></a>
 
 Represents a collection of portals.
 

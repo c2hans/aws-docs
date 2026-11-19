@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deregi
 ---
 
 # DeregisterContainerInstance
-<a name="API_DeregisterContainerInstance"></a>
 
 Deregisters an Amazon ECS container instance from the specified cluster. This instance is no longer available to run tasks.
 

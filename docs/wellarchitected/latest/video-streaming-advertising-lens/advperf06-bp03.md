@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVPERF06-BP03 Optimize Agentic RTB Framework (ARTF) agent container performance for sub-millisecond to single-digit-millisecond latency
-<a name="advperf06-bp03"></a>
 
  ARTF agent containers process bid requests through gRPC and return OpenRTB Patch mutations under strict auction deadlines. Container image size, startup sequence, serialization format, memory layout, and inference engine affect whether your agent responds within the auction window. ARTF targets sub-millisecond to single-digit-millisecond response times.
 

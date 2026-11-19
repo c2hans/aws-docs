@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteAssetType.h
 ---
 
 # DeleteAssetType
-<a name="API_DeleteAssetType"></a>
 
 Deletes an asset type from AWS Glue Data Catalog.
 

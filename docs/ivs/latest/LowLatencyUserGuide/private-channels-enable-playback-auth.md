@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-c
 ---
 
 # Enable Playback Authorization on IVS Channels
-<a name="private-channels-enable-playback-auth"></a>
 
 A channel’s authorization requirement can be configured when the channel is created or later (using an update operation). Note that the steps are the same whether you want to enable or disable playback authorization.
 

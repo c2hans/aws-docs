@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCCOST05-BP01 Gather usage data and hardware requirements in your existing environment
-<a name="euccost05-bp01"></a>
 
  Before selecting a service for your EUC workload, gather usage data in your existing EUC environment. Collect data in different areas, like usage patterns and resource utilization. Usage patterns portray how intensively your applications are being used (for example, hours per day and days per week). Resource utilization details how efficiently your compute resources are being used by these applications (like CPU, RAM, GPU, disk space, and disk IO). Both areas help you select the optimal service for a given application or set of applications. You can gather this data using OS or third-party tools.
 

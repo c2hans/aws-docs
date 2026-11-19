@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/step-2-cre
 ---
 
 # Step 2. Create the AWS Service Catalog product
-<a name="step-2-create-blueprint-product"></a>
 
 To create an AWS Service Catalog product, follow the steps at [Creating products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/productmgmt-cloudresource.html) in the *AWS Service Catalog Administrator Guide*. You'll add your account blueprint as a template when you create the AWS Service Catalog product.
 

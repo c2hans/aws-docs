@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::RegistryRecord SourceOnlyDescriptorSource
-<a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsource"></a>
 
 The source configuration for a source-only descriptor, such as an HTTP or Agent-User Interaction (AG-UI) descriptor. Unlike other descriptor sources, a source-only descriptor source doesn't support credential providers.
 

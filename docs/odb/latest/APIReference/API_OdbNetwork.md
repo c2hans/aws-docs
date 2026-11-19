@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_OdbNetwork.h
 ---
 
 # OdbNetwork
-<a name="API_OdbNetwork"></a>
 
 Information about an ODB network.
 

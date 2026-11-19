@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # LocationIdentifier
-<a name="API_LocationIdentifier"></a>
 
 Identifies an instrumentation configuration by code location or location hash. Used in the Get, Delete, and GetStatus operations to allow flexible identification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobRefreshScheduleOverrideParameters
-<a name="API_AssetBundleImportJobRefreshScheduleOverrideParameters"></a>
 
 A list of overrides for a specific `RefreshsSchedule` resource that is present in the asset bundle that is imported.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/appointme
 ---
 
 # Appointment management
-<a name="appointment-management"></a>
 
 Appointment management handles appointment scheduling, rescheduling, cancellation, and lookup through natural conversation, using real-time provider availability from your EHR.
 

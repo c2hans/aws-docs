@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Add destinations to AWS IoT Core for LoRaWAN
-<a name="lorawan-create-destinations"></a>
 
 AWS IoT Core for LoRaWAN destinations describe the AWS IoT rule that processes a device's data for use by AWS services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RetrievalFlowNodeServiceConfiguration
-<a name="API_agent_RetrievalFlowNodeServiceConfiguration"></a>
 
 Contains configurations for the service to use for retrieving data to return as the output from the node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cost-mgmt-reque
 ---
 
 # Per-request metadata tagging
-<a name="cost-mgmt-request-metadata"></a>
 
 Request metadata lets you attach key-value tags to individual Amazon Bedrock inference calls on the [`bedrock-runtime`](endpoints.md) endpoint. The tags are recorded with the request in your [model invocation logs](model-invocation-logging.md). You can then attribute usage to a team, application, environment, experiment, or any other dimension that varies per call. There is no resource to create or configure ahead of time — each call can carry a different set of tags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Success metrics and KPIs for FMEA
-<a name="metrics-kpis"></a>
 
 Measuring the effectiveness of your Failure Mode and Effects Analysis (FMEA) implementation requires tracking both process health and business outcomes. The metrics below are organized into leading indicators (predictive measures of process adoption), lagging indicators (outcome-based measures of business impact), and business value metrics (cost and compliance measures). For each metric, a definition, target, calculation method, and recommended tracking frequency are provided.
 

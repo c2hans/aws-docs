@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/API_ListMigration
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # ListMigrationTasks
-<a name="API_ListMigrationTasks"></a>
 
 Lists all, or filtered by resource name, migration tasks associated with the user account making this call. This API has the following traits:
 + Can show a summary list of the most recent migration tasks.

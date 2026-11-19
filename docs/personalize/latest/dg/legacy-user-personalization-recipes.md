@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/legacy-user-person
 ---
 
 # Legacy HRNN recipes
-<a name="legacy-user-personalization-recipes"></a>
 
 Legacy HRNN recipes are no longer available. This documentation is for reference purposes.
 

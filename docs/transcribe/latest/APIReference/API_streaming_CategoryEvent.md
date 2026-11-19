@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # CategoryEvent
-<a name="API_streaming_CategoryEvent"></a>
 
 Provides information on any `TranscriptFilterType` categories that matched your transcription output. Matches are identified for each segment upon completion of that segment.
 

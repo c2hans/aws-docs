@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedProjectInput
-<a name="API_SubscribedProjectInput"></a>
 
 The project that is to be given a subscription grant.
 

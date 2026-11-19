@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cre
 ---
 
 # Create a deployment strategy
-<a name="appconfig-creating-deployment-strategy-create"></a>
 
 If you don't want to use one of the predefined deployment strategies, you can create your own. You can create a maximum of 20 deployment strategies. When you deploy a configuration, you can choose the deployment strategy that works best for the application and the environment.
 

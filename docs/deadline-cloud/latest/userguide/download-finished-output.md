@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/download
 ---
 
 # Download finished output in Deadline Cloud
-<a name="download-finished-output"></a>
 
 After a job is finished, you can use the AWS Deadline Cloud monitor to download the results to your workstation. The output file is stored with the name and location that you specified when you created the job.
 

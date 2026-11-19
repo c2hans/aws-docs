@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Associ
 ---
 
 # AssociatedCollector
-<a name="API_AssociatedCollector"></a>
 
 The associated Collector.
 

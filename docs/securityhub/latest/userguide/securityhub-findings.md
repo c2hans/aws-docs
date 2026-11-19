@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Creating and updating findings in Security Hub CSPM
-<a name="securityhub-findings"></a>
 
 In AWS Security Hub CSPM, a *finding* is an observable record of a security check or security-related detection. A finding can originate from one of the following sources:
 + A security check for a control in Security Hub CSPM.

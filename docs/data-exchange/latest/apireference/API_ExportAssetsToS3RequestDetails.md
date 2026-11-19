@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ex
 ---
 
 # ExportAssetsToS3RequestDetails
-<a name="API_ExportAssetsToS3RequestDetails"></a>
 
 Details of the operation to be performed by the job.
 

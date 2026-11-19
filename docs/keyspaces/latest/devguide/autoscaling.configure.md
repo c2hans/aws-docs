@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/autoscaling.co
 ---
 
 # Configure and update Amazon Keyspaces automatic scaling policies
-<a name="autoscaling.configure"></a>
 
 You can use the console, CQL, or the AWS Command Line Interface (AWS CLI) to configure Amazon Keyspaces automatic scaling for new and existing tables. You can also modify automatic scaling settings or disable automatic scaling.
 

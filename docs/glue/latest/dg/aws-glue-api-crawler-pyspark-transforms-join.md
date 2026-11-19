@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # Join class
-<a name="aws-glue-api-crawler-pyspark-transforms-join"></a>
 
 Performs an equality join on two `DynamicFrames`.
 

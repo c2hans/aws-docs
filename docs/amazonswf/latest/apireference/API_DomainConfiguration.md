@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Domain
 ---
 
 # DomainConfiguration
-<a name="API_DomainConfiguration"></a>
 
 Contains the configuration settings of a domain.
 

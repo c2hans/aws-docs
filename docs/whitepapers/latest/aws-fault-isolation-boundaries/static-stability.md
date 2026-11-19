@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Static stability
-<a name="static-stability"></a>
 
  Although the data plane is logically separate from the control plane, it still depends on information and instructions provided by the control plane. This makes the control plane a dependency of the data plane. However, AWS services are intentionally designed so that data planes minimize availability impacts when their dependencies are impaired. In distributed systems, this property is commonly described as *graceful degradation*: when a dependency fails, the system continues to operate in a predictable, though potentially degraded, mode. This provides *stability*: users can continue to use existing data plane functionality even if management or configuration operations are unavailable.
 

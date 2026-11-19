@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_ListLayout
 ---
 
 # ListLayouts
-<a name="API_connect-cases_ListLayouts"></a>
 
 Lists all layouts in the given cases domain. Each list item is a condensed summary object of the layout.
 

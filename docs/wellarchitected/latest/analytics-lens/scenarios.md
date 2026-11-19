@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/sc
 ---
 
 # Scenarios
-<a name="scenarios"></a>
 
 In this section, we cover the seven key scenarios that are common in many analytics applications. We describe how they inﬂuence the design and architecture of your analytics environment in AWS. We present the assumptions made for each of these scenarios, the common drivers for the design, and a reference architecture for how these scenarios should be implemented.
 

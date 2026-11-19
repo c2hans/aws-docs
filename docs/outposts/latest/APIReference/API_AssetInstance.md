@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_AssetIn
 ---
 
 # AssetInstance
-<a name="API_AssetInstance"></a>
 
 An Amazon EC2 instance.
 

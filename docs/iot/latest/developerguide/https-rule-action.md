@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/https-rule-act
 ---
 
 # HTTP
-<a name="https-rule-action"></a>
 
 The HTTPS (`http`) action sends data from an MQTT message to an HTTPS endpoint, which can point to a web application or service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Custom type transformer
-<a name="ttm-custom-transformer"></a>
 
 When you need routing beyond the default union strategy, configure the `TypeMappingSanitizationTransformerProvider` directly in a transformation configuration. This lets you map source index/type pairs to target index names and pin the source version so the transformer interprets the mappings correctly.
 

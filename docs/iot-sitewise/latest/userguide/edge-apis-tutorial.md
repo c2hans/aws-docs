@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/edge-apis-
 ---
 
 # Tutorial: List asset models on an AWS IoT SiteWise Edge gateway
-<a name="edge-apis-tutorial"></a>
 
 You can use a subset of the available AWS IoT SiteWise APIs along with edge-specific APIs to interact with asset models and their assets on the edge. This tutorial will walk you through getting temporary credentials to an AWS IoT SiteWise Edge gateway and getting a list of the asset models on the SiteWise Edge gateway.
 

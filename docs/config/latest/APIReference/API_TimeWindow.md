@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_TimeWindo
 ---
 
 # TimeWindow
-<a name="API_TimeWindow"></a>
 
 Filters evaluation results based on start and end times.
 

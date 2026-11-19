@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-trai
 ---
 
 # Containers with custom training algorithms
-<a name="your-algorithms-training-algo"></a>
 
 This section explains how Amazon SageMaker AI interacts with a Docker container that runs your custom training algorithm. Use this information to write training code and create a Docker image for your training algorithms.
 

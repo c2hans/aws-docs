@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/security-iam-polici
 ---
 
 # Example IAM policies for AWS RAM
-<a name="security-iam-policies-examples"></a>
 
 This topic includes examples of IAM policies for AWS RAM that demonstrate sharing specific resources and resource types, restricting sharing, and controlling the use of managed permissions.
 

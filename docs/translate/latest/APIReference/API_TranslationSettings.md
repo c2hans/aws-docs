@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Transl
 ---
 
 # TranslationSettings
-<a name="API_TranslationSettings"></a>
 
 Settings to configure your translation output. You can configure the following options:
 + Brevity: reduces the length of the translation output for most translations. Available for `TranslateText` only.

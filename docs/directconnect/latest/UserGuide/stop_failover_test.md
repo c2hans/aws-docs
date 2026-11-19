@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/stop_fail
 ---
 
 # Stop an AWS Direct Connect Resiliency Toolkit virtual interface failover test
-<a name="stop_failover_test"></a>
 
 You can stop the virtual interface failover test using the Direct Connect console, or the AWS CLI.
 

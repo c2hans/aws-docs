@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Comp
 ---
 
 # CompositionSummary
-<a name="API_CompositionSummary"></a>
 
 Summary information about a Composition.
 

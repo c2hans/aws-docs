@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-secrets-manager.ht
 ---
 
 # Use Secrets Manager secrets in Lambda Event Functions
-<a name="with-secrets-manager"></a>
 
 AWS Secrets Manager helps you manage credentials, API keys, and other secrets that your Lambda Event Functions need. You have two main approaches for retrieving secrets in your Lambda Event Functions, both offering better performance and lower costs compared to retrieving secrets directly using the AWS SDK:
 + **AWS parameters and secrets Lambda extension** - A runtime-agnostic solution that provides a simple HTTP interface for retrieving secrets

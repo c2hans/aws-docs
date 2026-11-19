@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Polic
 ---
 
 # PolicyEvent
-<a name="API_PolicyEvent"></a>
 
 An event on the timeline of a resilience policy.
 

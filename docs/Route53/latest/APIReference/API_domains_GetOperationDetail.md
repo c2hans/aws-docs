@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # GetOperationDetail
-<a name="API_domains_GetOperationDetail"></a>
 
 This operation returns the current status of an operation that is not completed.
 

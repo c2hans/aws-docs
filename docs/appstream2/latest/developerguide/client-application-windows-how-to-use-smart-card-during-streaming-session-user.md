@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # How to Use a Smart Card During a Streaming Session
-<a name="client-application-windows-how-to-use-smart-card-during-streaming-session-user"></a>
 
 Depending on the authentication settings that your administrator has enabled, you might need to use a smart card for authentication during an WorkSpaces Applications streaming session. For example, if you open a browser during your streaming session and navigate to an internal organizational site that requires smart card authentication, you must enter your smart card credentials.
 

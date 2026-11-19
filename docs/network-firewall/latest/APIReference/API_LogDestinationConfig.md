@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # LogDestinationConfig
-<a name="API_LogDestinationConfig"></a>
 
 Defines where AWS Network Firewall sends logs for the firewall for one log type. This is used in [LoggingConfiguration](API_LoggingConfiguration.md). You can send each type of log to an Amazon S3 bucket, a CloudWatch log group, or a Firehose delivery stream.
 

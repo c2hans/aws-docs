@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-marketing-clou
 ---
 
 # AWS Glue support for Salesforce Marketing Cloud
-<a name="salesforce-marketing-cloud-support"></a>
 
 AWS Glue supports Salesforce Marketing Cloud as follows:
 

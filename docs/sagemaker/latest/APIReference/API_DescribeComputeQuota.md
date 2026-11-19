@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeComputeQuota
-<a name="API_DescribeComputeQuota"></a>
 
 Description of the compute allocation definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Names
 ---
 
 # NamespaceInfoV2
-<a name="API_NamespaceInfoV2"></a>
 
 The error type.
 

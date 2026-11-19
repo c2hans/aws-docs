@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkIn
 ---
 
 # NetworkInsightsAnalysis
-<a name="API_NetworkInsightsAnalysis"></a>
 
 Describes a network insights analysis.
 

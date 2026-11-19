@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategorySplitChargeRule
-<a name="API_CostCategorySplitChargeRule"></a>
 
 Use the split charge rule to split the cost of one cost category value across several other target values.
 

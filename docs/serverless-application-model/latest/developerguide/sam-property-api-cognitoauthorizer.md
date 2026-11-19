@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # CognitoAuthorizer
-<a name="sam-property-api-cognitoauthorizer"></a>
 
 Define a Amazon Cognito User Pool authorizer.
 

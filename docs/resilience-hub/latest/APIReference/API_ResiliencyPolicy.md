@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # ResiliencyPolicy
-<a name="API_ResiliencyPolicy"></a>
 
 Defines a resiliency policy.
 

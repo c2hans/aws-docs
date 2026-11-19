@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Service control policy examples
-<a name="orgs_manage_policies_scps_examples"></a>
 
 The example [service control policies (SCPs)](orgs_manage_policies_scps.md) displayed in this topic are for information purposes only.
 

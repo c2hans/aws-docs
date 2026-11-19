@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Delet
 ---
 
 # DeleteUserJourney
-<a name="API_DeleteUserJourney"></a>
 
 Deletes a user journey.
 

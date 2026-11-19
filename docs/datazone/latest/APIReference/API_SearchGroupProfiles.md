@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SearchG
 ---
 
 # SearchGroupProfiles
-<a name="API_SearchGroupProfiles"></a>
 
 Searches group profiles in Amazon DataZone.
 

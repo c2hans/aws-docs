@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsLamb
 ---
 
 # AwsLambdaFunctionLayer
-<a name="API_AwsLambdaFunctionLayer"></a>
 
 An AWS Lambda layer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DescribeSubscribersForNotification
-<a name="API_budgets_DescribeSubscribersForNotification"></a>
 
 Lists the subscribers that are associated with a notification.
 

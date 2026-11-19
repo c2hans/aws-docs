@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sesv2_example_ses
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetEmailIdentity` with an AWS SDK
-<a name="sesv2_example_sesv2_GetEmailIdentity_section"></a>
 
 The following code examples show how to use `GetEmailIdentity`.
 

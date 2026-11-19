@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-vp
 ---
 
 # AWS Site-to-Site VPN in AWS GovCloud (US)
-<a name="govcloud-vpn"></a>
 
 AWS Site-to-Site VPN enables you to securely connect your on-premises network or branch office site to your Amazon Virtual Private Cloud (Amazon VPC).
 

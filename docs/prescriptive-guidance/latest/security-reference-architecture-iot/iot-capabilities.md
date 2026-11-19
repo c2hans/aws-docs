@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # IoT security capabilities
-<a name="iot-capabilities"></a>
 
 |  |
 | --- |

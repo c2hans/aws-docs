@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # PillarMetric
-<a name="API_PillarMetric"></a>
 
 A metric for a particular pillar in a lens.
 

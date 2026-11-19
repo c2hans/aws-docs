@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remove-bi
 ---
 
 # Remove a Bitbucket integration
-<a name="remove-bitbucket"></a>
 
 Remove a Bitbucket integration when you no longer need AWS Security Agent to access repositories from a specific Bitbucket workspace.
 

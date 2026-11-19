@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ConnectionProperties
-<a name="API_ConnectionProperties"></a>
 
 The connection properties of an outbound connection.
 

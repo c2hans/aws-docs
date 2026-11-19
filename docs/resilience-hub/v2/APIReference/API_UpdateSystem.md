@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Updat
 ---
 
 # UpdateSystem
-<a name="API_UpdateSystem"></a>
 
 Updates an existing system.
 

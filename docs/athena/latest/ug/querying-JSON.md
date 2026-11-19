@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-JSON.html
 ---
 
 # Query JSON data
-<a name="querying-JSON"></a>
 
 Amazon Athena lets you query JSON-encoded data, extract data from nested JSON, search for values, and find length and size of JSON arrays. To learn the basics of querying JSON data in Athena, consider the following sample planet data:
 

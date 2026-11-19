@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/securityhub
 ---
 
 # securityhub-enabled
-<a name="securityhub-enabled"></a>
 
 Checks if AWS Security Hub is enabled for an AWS Account. The rule is NON\_COMPLIANT if AWS Security Hub is not enabled.
 

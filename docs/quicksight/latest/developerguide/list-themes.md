@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/list-th
 ---
 
 # ListThemes
-<a name="list-themes"></a>
 
 Use the `ListThemes` operation to list all the themes in the current AWS account.
 

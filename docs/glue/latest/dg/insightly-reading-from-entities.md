@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/insightly-reading-from-en
 ---
 
 # Reading from Insightly entities
-<a name="insightly-reading-from-entities"></a>
 
 **Prerequisites**
 

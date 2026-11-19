@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/ota-updates-prere
 ---
 
 # Prerequisites for OTA updates
-<a name="ota-updates-prerequisites-configuration"></a>
 
 Before creating Over-the-Air (OTA) tasks, you need to complete the following configuration tasks in your environment.
 

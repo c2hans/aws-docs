@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reco
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
  Recommendation information to help you remediate detected anomalous behavior that generated an insight.
 

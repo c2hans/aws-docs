@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Failure management
-<a name="failure-management"></a>
 
 | HPCREL03: How does your application recover from failures?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-use-augmented-ai
 ---
 
 # Using Amazon Augmented AI for Human Review
-<a name="a2i-use-augmented-ai-a2i-human-review-loops"></a>
 
 **Note**
 Amazon SageMaker A2I is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for A2I, but we do not plan to introduce new features.

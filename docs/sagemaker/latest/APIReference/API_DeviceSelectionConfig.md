@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Device
 ---
 
 # DeviceSelectionConfig
-<a name="API_DeviceSelectionConfig"></a>
 
 Contains information about the configurations of selected devices.
 

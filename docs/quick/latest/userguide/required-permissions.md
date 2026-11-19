@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/required-permissi
 ---
 
 # Required permissions
-<a name="required-permissions"></a>
 
 When you connect to a AWS Quick Sight data source that requires a user name, the user name must have `SELECT` permissions on some system tables. These permissions allow AWS Quick Sight to do things such as discover table schemas and estimate table size.
 

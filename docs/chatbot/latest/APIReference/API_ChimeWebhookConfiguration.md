@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_ChimeWeb
 ---
 
 # ChimeWebhookConfiguration
-<a name="API_ChimeWebhookConfiguration"></a>
 
 An Amazon Q Developer configuration for Amazon Chime.
 

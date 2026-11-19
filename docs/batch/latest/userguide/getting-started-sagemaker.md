@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/getting-started-s
 ---
 
 # Getting started with AWS Batch on SageMaker AI
-<a name="getting-started-sagemaker"></a>
 
 AWS Batch service jobs enable you to submit SageMaker Training jobs through AWS Batch job queues with scheduling, prioritization, and queuing capabilities. This tutorial demonstrates how to set up and run a simple SageMaker Training job using AWS Batch service jobs.
 

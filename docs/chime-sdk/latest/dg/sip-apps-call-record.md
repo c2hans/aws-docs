@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/sip-apps-call-record
 ---
 
 # Using call recording
-<a name="sip-apps-call-record"></a>
 
 The call recording actions for SIP media applications enable you to build call recording and post-call transcription solutions for a variety of uses. For example, you can record customer-care calls and use them for training.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPrac
 ---
 
 # Security best practices for Amazon RDS
-<a name="CHAP_BestPractices.Security"></a>
 
 Use AWS Identity and Access Management (IAM) accounts to control access to Amazon RDS API operations, especially operations that create, modify, or delete Amazon RDS resources. Such resources include DB instances , security groups, and parameter groups. Also use IAM to control actions that perform common administrative actions such as backing up and restoring DB instances .
 + Create an individual user for each person who manages Amazon RDS resources, including yourself. Don't use AWS root credentials to manage Amazon RDS resources.

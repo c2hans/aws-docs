@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/StartSpeechSynthesisTask
 ---
 
 # StartSpeechSynthesisTask
-<a name="StartSpeechSynthesisTask"></a>
 
 The following Java code sample show how to use Java-based applications to synthesize a long speech (up to 100,000 billed characters) and store it directly in an Amazon S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/moving-acc
 ---
 
 # Enable backup on moved accounts
-<a name="moving-accounts-and-backup"></a>
 
 If you move an account into an AWS Control Tower OU that has AWS Backup enabled, and the account is not enrolled in AWS Control Tower, your backup plan does not apply to the account automatically.
 

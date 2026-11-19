@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # VisaPinVerificationValue
-<a name="API_VisaPinVerificationValue"></a>
 
 Parameters that are required to generate or verify Visa PVV (PIN Verification Value).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/using-servi
 ---
 
 # Using Service-Linked Roles for Third-Party Cloud Integrations
-<a name="using-service-linked-roles-config-third-party"></a>
 
 ## Service-Linked Role Permissions for AWS Config Third Party
 <a name="slr-permissions-third-party"></a>

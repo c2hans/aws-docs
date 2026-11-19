@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # PostProcessingModelInvocationOutput
-<a name="API_agent-runtime_PostProcessingModelInvocationOutput"></a>
 
 The foundation model output from the post-processing step.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-outpos
 ---
 
 # AWS Outposts events
-<a name="events-ref-outposts"></a>
 
 AWS Outposts sends service events to EventBridge via AWS CloudTrail.
 

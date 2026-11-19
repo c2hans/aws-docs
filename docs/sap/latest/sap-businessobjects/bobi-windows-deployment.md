@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-wind
 ---
 
 # Deployment
-<a name="bobi-windows-deployment"></a>
 
 In this deployment, we will provision an Amazon EC2 instance for installing the SAP application servers and the CMS database (if you are using database on EC2). When using Amazon RDS for CMS database, follow [Step 7. (Only for CMS Database on EC2 Instance) Installing CMS Database](#bobi-windows-step-7-only-for-cms-database-on-ec2-instance-installing-cms-database).
 

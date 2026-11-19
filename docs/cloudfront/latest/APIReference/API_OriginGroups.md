@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginGroups
-<a name="API_OriginGroups"></a>
 
 A complex data type for the origin groups specified for a distribution.
 

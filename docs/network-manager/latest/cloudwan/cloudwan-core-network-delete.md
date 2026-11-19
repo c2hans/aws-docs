@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Delete an AWS Cloud WAN core network
-<a name="cloudwan-core-network-delete"></a>
 
 Delete a core network if the core network is no longer needed. Deleting a core network can't be undone. Before you delete a core network you'll need to first delete any network resources associated with it.
 

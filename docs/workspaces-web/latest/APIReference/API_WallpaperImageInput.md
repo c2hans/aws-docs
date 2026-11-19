@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_W
 ---
 
 # WallpaperImageInput
-<a name="API_WallpaperImageInput"></a>
 
 The input for a wallpaper image. Provide the image as either a binary image file or an S3 URI. Maximum 5 MB in JPEG or PNG format.
 

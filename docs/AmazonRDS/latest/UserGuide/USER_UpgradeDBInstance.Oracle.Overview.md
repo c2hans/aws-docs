@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Overview of RDS for Oracle engine upgrades
-<a name="USER_UpgradeDBInstance.Oracle.Overview"></a>
 
 Before upgrading your RDS for Oracle DB instance, familiarize yourself with the following concepts.
 

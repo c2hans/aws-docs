@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/deleting-services.ht
 ---
 
 # Deleting an AWS Cloud Map service
-<a name="deleting-services"></a>
 
 Before you can delete a service, you must deregister all service instances that were registered using the service. For more information, see [Deregistering an AWS Cloud Map service instance](deregistering-instances.md).
 

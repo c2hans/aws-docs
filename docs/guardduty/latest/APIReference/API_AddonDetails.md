@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_AddonD
 ---
 
 # AddonDetails
-<a name="API_AddonDetails"></a>
 
 Information about the installed EKS add-on (GuardDuty security agent).
 

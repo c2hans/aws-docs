@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualSubtitleFontConfiguration
-<a name="API_VisualSubtitleFontConfiguration"></a>
 
 Configures the display properties of the visual sub-title.
 

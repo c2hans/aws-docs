@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Appro
 ---
 
 # ApprovalRuleTemplate
-<a name="API_ApprovalRuleTemplate"></a>
 
 Returns information about an approval rule template.
 

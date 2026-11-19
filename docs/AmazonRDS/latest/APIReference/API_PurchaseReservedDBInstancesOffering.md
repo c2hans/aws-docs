@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Purcha
 ---
 
 # PurchaseReservedDBInstancesOffering
-<a name="API_PurchaseReservedDBInstancesOffering"></a>
 
 Purchases a reserved DB instance offering.
 

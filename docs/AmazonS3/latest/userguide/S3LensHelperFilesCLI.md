@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3LensHelperFi
 ---
 
 # Helper files for using Amazon S3 Storage Lens
-<a name="S3LensHelperFilesCLI"></a>
 
 Use the following JSON files and its key inputs for your examples.
 

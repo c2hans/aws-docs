@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Managing SageMaker HyperPod EKS clusters using the SageMaker console
-<a name="sagemaker-hyperpod-eks-operate-console-ui"></a>
 
 The following topics provide guidance on how to manage SageMaker HyperPod in the SageMaker AI console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # OmniDashboard
-<a name="API_OmniDashboard"></a>
 
 A dashboard within a space, including its body.
 

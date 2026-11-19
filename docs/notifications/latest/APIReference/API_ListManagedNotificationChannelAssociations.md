@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListManagedNotificationChannelAssociations
-<a name="API_ListManagedNotificationChannelAssociations"></a>
 
 Returns a list of Account contacts and Channels associated with a `ManagedNotificationConfiguration`, in paginated format.
 

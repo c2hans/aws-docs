@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Goal
 ---
 
 # GoalSchedule
-<a name="API_GoalSchedule"></a>
 
 Schedule configuration for goal evaluations
 

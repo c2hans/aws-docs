@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/delete-identity-sou
 ---
 
 # Disable Multi-party approval
-<a name="delete-identity-source"></a>
 
 When you sign in to your organization's management account, you can disable Multi-party approval by navigating to the Multi-party approval console and deleting the Multi-party approval identity source.
 

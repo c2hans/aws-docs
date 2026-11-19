@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ImageConfigRespons
 ---
 
 # ImageConfigResponse
-<a name="API_ImageConfigResponse"></a>
 
 Response to a `GetFunctionConfiguration` request.
 

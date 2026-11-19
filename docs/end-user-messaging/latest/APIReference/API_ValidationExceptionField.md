@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Describes a field in the request that failed to satisfy the modeled constraints of the service.
 

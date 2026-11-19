@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeBack
 ---
 
 # DescribeBackupPolicy
-<a name="API_DescribeBackupPolicy"></a>
 
 Returns the backup policy for the specified EFS file system.
 

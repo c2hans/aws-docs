@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetAudienceModel
-<a name="API_GetAudienceModel"></a>
 
 Returns information about an audience model
 

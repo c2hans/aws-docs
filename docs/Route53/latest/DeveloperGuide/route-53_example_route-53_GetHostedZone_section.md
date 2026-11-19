@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53_e
 ---
 
 # Use `GetHostedZone` with a CLI
-<a name="route-53_example_route-53_GetHostedZone_section"></a>
 
 The following code examples show how to use `GetHostedZone`.
 

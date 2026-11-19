@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteP
 ---
 
 # DeleteProgress
-<a name="API_DeleteProgress"></a>
 
 The progress of a domain deletion, including the number of projects that Amazon DataZone successfully deleted. Amazon DataZone returns this structure in the response to a `GetDomain` request while a cascade deletion is in progress.
 

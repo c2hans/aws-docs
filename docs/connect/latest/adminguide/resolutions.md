@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions.ht
 ---
 
 # Resolve operational work with Resolutions in Amazon Connect Customer
-<a name="resolutions"></a>
 
  Resolutions in Amazon Connect Customer is an agentic solution for high-volume operational work such as refund requests, dispute resolution, fraud investigations, insurance claims, and loan applications. Resolutions turns your standard operating procedures (SOPs) into structured Work plans. AI agents run each Work plan from intake through verified resolution. Specialists in your organization step in for approvals and exceptions.
 

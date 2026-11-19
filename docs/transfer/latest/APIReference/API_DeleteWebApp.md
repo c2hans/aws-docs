@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteW
 ---
 
 # DeleteWebApp
-<a name="API_DeleteWebApp"></a>
 
 Deletes the specified web app.
 

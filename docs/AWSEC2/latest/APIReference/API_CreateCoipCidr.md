@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCoi
 ---
 
 # CreateCoipCidr
-<a name="API_CreateCoipCidr"></a>
 
  Creates a range of customer-owned IP addresses.
 

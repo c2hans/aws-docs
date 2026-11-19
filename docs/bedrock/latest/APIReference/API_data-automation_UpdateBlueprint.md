@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # UpdateBlueprint
-<a name="API_data-automation_UpdateBlueprint"></a>
 
 Updates a blueprint.
 

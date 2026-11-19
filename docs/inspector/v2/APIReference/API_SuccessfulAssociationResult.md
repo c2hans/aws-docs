@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Successful
 ---
 
 # SuccessfulAssociationResult
-<a name="API_SuccessfulAssociationResult"></a>
 
 Details about a successful association or disassociation between a code repository and a scan configuration.
 

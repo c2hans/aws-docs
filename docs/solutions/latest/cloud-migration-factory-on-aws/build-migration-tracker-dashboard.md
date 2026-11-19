@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 10: (Optional) Build a migration tracker dashboard
-<a name="build-migration-tracker-dashboard"></a>
 
 If you deployed the optional migration tracker component, you can set up an Amazon QuickSight dashboard that will visualize the migration metadata stored in the Amazon DynamoDB table.
 

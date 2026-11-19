@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListWirelessDeviceImportTasks
-<a name="API_ListWirelessDeviceImportTasks"></a>
 
 List of import tasks and summary information of onboarding status of devices in each import task.
 

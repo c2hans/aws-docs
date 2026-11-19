@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeNodeConfigurationOptions
-<a name="API_DescribeNodeConfigurationOptions"></a>
 
 Returns properties of possible node configurations such as node type, number of nodes, and disk usage for the specified action type.
 
@@ -30,7 +29,7 @@ Type: Array of [NodeConfigurationOptionsFilter](API_NodeConfigurationOptionsFilt
 Required: No
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeNodeConfigurationOptions](#API_DescribeNodeConfigurationOptions) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeNodeConfigurationOptions](API_DescribeNodeConfigurationOptions.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No

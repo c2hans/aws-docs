@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # View all configuration sets in AWS End User Messaging
-<a name="nx-features-configuration-sets-list"></a>
 
 Use the AWS CLI to view your configuration sets.
 

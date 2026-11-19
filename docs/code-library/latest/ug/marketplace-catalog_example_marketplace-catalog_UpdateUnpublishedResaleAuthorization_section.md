@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Update name and description of one-time or multi-use resale authorization using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_UpdateUnpublishedResaleAuthorization_section"></a>
 
 The following code examples show how to update name and description of one-time or multi-use resale authorization before publishing for any product type.
 

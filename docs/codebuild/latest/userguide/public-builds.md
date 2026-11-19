@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/public-builds
 ---
 
 # Get public build project URLs
-<a name="public-builds"></a>
 
 AWS CodeBuild allows you to make the build results, logs, and artifacts for your build projects available to the general public. This allows contributors to your source repositories to view the results and download the artifacts of a build, without requiring them to have access to an AWS account.<a name="public-builds.warning"></a>
 

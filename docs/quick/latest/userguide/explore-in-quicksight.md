@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/explore-in-quicks
 ---
 
 # Exploring your AWS data in AWS Quick
-<a name="explore-in-quicksight"></a>
 
 |  |
 | --- |

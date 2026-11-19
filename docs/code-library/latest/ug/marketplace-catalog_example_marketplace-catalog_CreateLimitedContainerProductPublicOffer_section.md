@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a limited container product with public offer, contract pricing using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_CreateLimitedContainerProductPublicOffer_section"></a>
 
 The following code examples show how to create a limited container product with a public offer, contract pricing, and standard EULA.
 

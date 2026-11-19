@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/reserving-conta
 ---
 
 # Reserve contacts with custom ephemeris
-<a name="reserving-contacts-with-custom-ephemeris"></a>
 
 ## Overview
 <a name="w2aac28c19b3"></a>

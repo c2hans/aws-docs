@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-send-custom-platform-s
 ---
 
 # Publishing Amazon SNS notifications with platform-specific payloads
-<a name="sns-send-custom-platform-specific-payloads-mobile-devices"></a>
 
 You can use the AWS Management Console or Amazon SNS APIs to send custom messages with platform-specific payloads to mobile devices. For information about using the Amazon SNS APIs, see [Mobile push API actions](mobile-push-api.md) and the `SNSMobilePush.java` file in `[snsmobilepush.zip](samples/snsmobilepush.zip)`.
 

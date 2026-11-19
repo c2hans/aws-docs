@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/verify-nitrotpm-
 ---
 
 # Verify that an AMI is enabled for NitroTPM
-<a name="verify-nitrotpm-support-on-ami"></a>
 
 To enable NitroTPM for an instance, you must launch the instance using an AMI with NitroTPM enabled. You can describe an image to verify that it is enabled for NitroTPM. If you are the AMI owner, you can describe the `tpmSupport` image attribute.
 

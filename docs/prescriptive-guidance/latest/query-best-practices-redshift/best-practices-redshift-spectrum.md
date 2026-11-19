@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-
 ---
 
 # Best practices for using Amazon Redshift Spectrum
-<a name="best-practices-redshift-spectrum"></a>
 
 This section provides an overview of best practices for using [Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-using-spectrum.html). We recommend that you follow these best practices to achieve optimal performance when you use Redshift Spectrum:
 + Consider that file types have a significant influence on Redshift Spectrum query performance. To improve performance, use columnar encoded files such as ORC or Parquet, and use CSV format only for very small dimension tables.

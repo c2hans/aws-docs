@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/list-faces-in-coll
 ---
 
 # Listing faces and associated users in a collection
-<a name="list-faces-in-collection-procedure"></a>
 
 You can use the [ListFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_ListFaces.html) operation to list faces and their associated users in a collection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentBlueprintSummary
-<a name="API_EnvironmentBlueprintSummary"></a>
 
 The details of an environment blueprint summary.
 

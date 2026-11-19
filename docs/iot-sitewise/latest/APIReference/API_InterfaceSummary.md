@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Int
 ---
 
 # InterfaceSummary
-<a name="API_InterfaceSummary"></a>
 
 Contains summary information about an interface that a property belongs to.
 

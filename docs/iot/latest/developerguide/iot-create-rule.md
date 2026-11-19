@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-rul
 ---
 
 # Creating an AWS IoT rule
-<a name="iot-create-rule"></a>
 
 You can create AWS IoT rules to route data from your connected things to interact with other AWS services. An AWS IoT rule consists of the following components:
 

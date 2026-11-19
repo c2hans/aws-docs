@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_upload-lis
 ---
 
 # Customizing threat detection with entity lists and IP address lists
-<a name="guardduty_upload-lists"></a>
 
 Amazon GuardDuty monitors the security of your AWS environment by analyzing and processing VPC Flow Logs, AWS CloudTrail event logs, and DNS logs. By enabling one or more [Use-case focused GuardDuty protection plans](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html#features-of-guardduty) (except [Runtime Monitoring](runtime-monitoring.md)), you can expand the monitoring capabilities within GuardDuty.
 

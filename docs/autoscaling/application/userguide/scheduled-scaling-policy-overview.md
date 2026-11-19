@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/schedu
 ---
 
 # How scheduled scaling for Application Auto Scaling works
-<a name="scheduled-scaling-policy-overview"></a>
 
 This topic describes how scheduled scaling works and introduces the key considerations you need to understand to use it effectively.
 

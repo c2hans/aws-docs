@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualServiceBackend
-<a name="API_VirtualServiceBackend"></a>
 
 An object that represents a virtual service backend for a virtual node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/player-we
 ---
 
 # IVS Player SDK: Web Guide
-<a name="player-web"></a>
 
 The Amazon Interactive Video Service (IVS) Web player SDK can be integrated with [player frameworks](#web-framework-integrations) like Video.js or used standalone on top of an HTML `<video>` element.
 

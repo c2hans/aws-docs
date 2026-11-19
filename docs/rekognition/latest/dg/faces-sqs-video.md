@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/faces-sqs-video.ht
 ---
 
 # Detecting faces in a stored video
-<a name="faces-sqs-video"></a>
 
 Amazon Rekognition Video can detect faces in videos that are stored in an Amazon S3 bucket and provide information such as:
 + The time or times faces are detected in a video.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # LFTagPolicyResource
-<a name="API_LFTagPolicyResource"></a>
 
 A structure containing a list of LF-tag conditions or saved LF-Tag expressions that apply to a resource's LF-tag policy.
 

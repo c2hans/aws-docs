@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListWaitingWorkflowSteps
-<a name="API_ListWaitingWorkflowSteps"></a>
 
 Lists the workflow steps in your AWS account that have paused at a `WaitForAction` step, and are waiting for you to respond. To send a response, call [SendWorkflowStepAction](API_SendWorkflowStepAction.md).
 

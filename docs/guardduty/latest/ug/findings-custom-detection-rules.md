@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/findings-custom-dete
 ---
 
 # Custom Detection Rules finding types
-<a name="findings-custom-detection-rules"></a>
 
 This page lists the finding types that GuardDuty generates from Custom Detection Rules, grouped by data source. Each finding type aggregates one or more signals into a single finding. For more information about enabling Custom Detection Rules, see [Custom Detection Rules in GuardDuty](custom-detection-rules.md).
 

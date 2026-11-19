@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageResponseFailedEvent
-<a name="API_SendMessageResponseFailedEvent"></a>
 
 Event emitted when the response fails
 

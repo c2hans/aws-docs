@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cloud
 ---
 
 # CloudFrontOriginAccessIdentityConfig
-<a name="API_CloudFrontOriginAccessIdentityConfig"></a>
 
 Origin access identity configuration. Send a `GET` request to the `/CloudFront API version/CloudFront/identity ID/config` resource.
 

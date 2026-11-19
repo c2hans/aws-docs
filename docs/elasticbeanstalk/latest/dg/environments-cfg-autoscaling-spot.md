@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Spot Instance support for your Elastic Beanstalk environment
-<a name="environments-cfg-autoscaling-spot"></a>
 
 This topic describes the configuration options that are available for you to manage the capacity and load balancing of Spot Instances in your Elastic Beanstalk environment. It also provides details and examples for the methods you can use to configure these options. You can use the [Elastic Beanstalk console](environments-cfg-autoscaling-configuration-approaches.md#environments-cfg-autoscaling-console), [namespace configuration options](environments-cfg-autoscaling-configuration-approaches.md#environments-cfg-autoscaling-namespace), the [AWS CLI](environments-cfg-autoscaling-configuration-approaches.md#environments-cfg-autoscaling-aws-cli), or the [EB CLI](environments-cfg-autoscaling-configuration-approaches.md#environments-cfg-autoscaling-ebcli) to manage the configuration options.
 

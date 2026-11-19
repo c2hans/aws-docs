@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/getting-started
 ---
 
 # Getting started with MemoryDB
-<a name="getting-started"></a>
 
 This exercise leads you through the steps to create, grant access to, connect to, and finally delete a MemoryDB cluster using the MemoryDB Management Console.
 

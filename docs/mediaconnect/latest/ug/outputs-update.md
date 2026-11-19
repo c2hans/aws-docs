@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/outputs-update.ht
 ---
 
 # Updating outputs on a MediaConnect flow
-<a name="outputs-update"></a>
 
 You can update outputs on a flow, even when the flow is active.
 

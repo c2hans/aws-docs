@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateCsvClassifi
 ---
 
 # UpdateCsvClassifierRequest
-<a name="API_UpdateCsvClassifierRequest"></a>
 
 Specifies a custom CSV classifier to be updated.
 

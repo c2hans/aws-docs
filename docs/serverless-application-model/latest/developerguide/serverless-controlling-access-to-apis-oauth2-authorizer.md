@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # OAuth 2.0/JWT authorizer example for AWS SAM
-<a name="serverless-controlling-access-to-apis-oauth2-authorizer"></a>
 
 You can control access to your APIs using JWTs as part of [OpenID Connect (OIDC)](https://openid.net/specs/openid-connect-core-1_0.html) and [OAuth 2.0](https://oauth.net/2/) frameworks. To do this, you use the [HttpApiAuth](sam-property-httpapi-httpapiauth.md) data type.
 

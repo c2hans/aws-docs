@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Descri
 ---
 
 # DescribeListener
-<a name="API_DescribeListener"></a>
 
 Describe a listener.
 

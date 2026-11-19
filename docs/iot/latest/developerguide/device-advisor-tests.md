@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 ---
 
 # Device Advisor test cases
-<a name="device-advisor-tests"></a>
 
 Device Advisor provides prebuilt tests in six categories.
 + [TLS](device-advisor-tests-tls.md)

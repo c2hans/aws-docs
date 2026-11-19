@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Adding and managing SAML identity providers in a user pool
-<a name="cognito-user-pools-managing-saml-idp"></a>
 
 After you configure your identity provider to work with Amazon Cognito, you can add it to your user pools and app clients. The following procedures demonstrate how to create, modify, and delete SAML providers in an Amazon Cognito user pool.
 

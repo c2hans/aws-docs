@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd04-b
 ---
 
 # FND04-BP05 Establish service quota management
-<a name="fnd04-bp05"></a>
 
  Service quotas (formerly service limits) control how many of each AWS resource type an account can provision. Unmanaged quotas cause failures when workloads hit a limit during a scaling event, a failover, or a large deployment. A central quota management capability gives workload teams visibility into their current consumption and a predictable path to request increases before they run out.
 

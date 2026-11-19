@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/co
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 The following individuals and organizations contributed to this version of this whitepaper:
 + Russell Jackson, Senior Specialist Solutions Architect, Analytics, Amazon Web Services

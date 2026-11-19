@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AwsCredentials
-<a name="API_AwsCredentials"></a>
 
 A set of temporary AWS credentials.
 

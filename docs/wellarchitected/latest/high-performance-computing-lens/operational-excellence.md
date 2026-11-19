@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Operational excellence
-<a name="operational-excellence"></a>
 
  The operational excellence pillar contains best practices for organizing your team, designing your workload, operating it at scale, and evolving it over time to deliver business value and continuously improve supporting processes and procedures.
 

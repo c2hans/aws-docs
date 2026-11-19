@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchUpdateBillScenarioUsageModificationError
-<a name="API_AWSBCMPricingCalculator_BatchUpdateBillScenarioUsageModificationError"></a>
 
  Represents an error that occurred when updating usage in a Bill Scenario.
 

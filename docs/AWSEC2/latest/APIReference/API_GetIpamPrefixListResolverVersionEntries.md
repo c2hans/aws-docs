@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPr
 ---
 
 # GetIpamPrefixListResolverVersionEntries
-<a name="API_GetIpamPrefixListResolverVersionEntries"></a>
 
 Retrieves the CIDR entries for a specific version of an IPAM prefix list resolver. This shows the actual CIDRs that were selected and synchronized at a particular point in time.
 

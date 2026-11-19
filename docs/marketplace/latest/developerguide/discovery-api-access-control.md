@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/discov
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Access control for the AWS Marketplace Discovery API
-<a name="discovery-api-access-control"></a>
 
 The Discovery API uses AWS Identity and Access Management (IAM) for authentication and authorization. Any AWS customer can call the Discovery API by configuring the appropriate IAM permissions.
 

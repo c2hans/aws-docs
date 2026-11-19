@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # ServerSessionInformationEvent
-<a name="API_rekognitionstreaming_ServerSessionInformationEvent"></a>
 
 Event containing session information for the server.
 

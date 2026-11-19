@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBClusterSnapshots
-<a name="API_DescribeDBClusterSnapshots"></a>
 
 Returns information about DB cluster snapshots. This API action supports pagination.
 

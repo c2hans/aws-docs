@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnCaseUpdate.htm
 ---
 
 # OnCaseUpdate
-<a name="OnCaseUpdate"></a>
 
 ## Assigned queue condition
 <a name="OnCaseUpdate-aq-condition"></a>

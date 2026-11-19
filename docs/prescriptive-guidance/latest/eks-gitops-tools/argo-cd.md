@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Argo CD
-<a name="argo-cd"></a>
 
 Argo CD is a widely used GitOps continuous delivery (CD) tool for Kubernetes that complies with several key GitOps principles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/network-interfac
 ---
 
 # Network interface attachments for your EC2 instance
-<a name="network-interface-attachments"></a>
 
 You can create network interfaces to be used by your EC2 instances as primary or secondary network interfaces. You must attach a network interface to an EC2 instance if it is in the same Availability Zone as the network interface. The instance type of an instance determines how many network interfaces you can attach to the instance. For more information, see [Maximum IP addresses per network interface](AvailableIpPerENI.md).
 

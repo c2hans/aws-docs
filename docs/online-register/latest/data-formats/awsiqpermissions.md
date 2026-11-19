@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 ---
 
 # Data retrieval APIs for AWS IQ Permissions
-<a name="awsiqpermissions"></a>
 
 AWS IQ Permissions provides the following APIs for data retrieval.
 

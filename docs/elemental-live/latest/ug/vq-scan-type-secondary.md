@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-scan-type-se
 ---
 
 # Secondary fields for converting scan type
-<a name="vq-scan-type-secondary"></a>
 
 ## Description
 <a name="description-vq-scan-type-secondary"></a>

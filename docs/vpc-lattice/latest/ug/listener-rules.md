@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/listener-rules.htm
 ---
 
 # Listener rules for your VPC Lattice service
-<a name="listener-rules"></a>
 
 Each listener has a default rule and additional rules that you can define. Each rule consists of a priority, one or more actions, and one or more conditions. You can add or edit rules at any time.
 

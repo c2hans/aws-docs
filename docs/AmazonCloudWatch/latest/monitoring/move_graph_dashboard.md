@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/move_
 ---
 
 # Moving a graph on a CloudWatch dashboard
-<a name="move_graph_dashboard"></a>
 
 **To move a graph on a dashboard**
 

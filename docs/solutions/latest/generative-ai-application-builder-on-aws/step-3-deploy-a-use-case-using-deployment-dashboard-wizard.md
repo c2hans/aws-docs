@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Step 3: Deploy a use case using the Deployment dashboard wizard
-<a name="step-3-deploy-a-use-case-using-deployment-dashboard-wizard"></a>
 
 In the Deployment dashboard wizard, you must choose between the following:
 +  [Text use case](#step-3a-deploy-a-text-use-case) - Deploys a chat application, with optional RAG capabilities

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingC
 ---
 
 # RoutingCriteriaInputStep
-<a name="API_RoutingCriteriaInputStep"></a>
 
 Step defines the list of agents to be routed or route based on the agent requirements such as ProficiencyLevel, Name, or Value.
 

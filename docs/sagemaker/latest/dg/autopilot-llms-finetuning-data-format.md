@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-llms-finet
 ---
 
 # Dataset file types and input data format
-<a name="autopilot-llms-finetuning-data-format"></a>
 
 Instruction-based fine-tuning uses labeled datasets to improve the performance of pre-trained LLMs on specific natural language processing (NLP) tasks. The labeled examples are formatted as prompt-response pairs and phrased as instructions.
 

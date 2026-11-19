@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SingularSou
 ---
 
 # SingularSourceProperties
-<a name="API_SingularSourceProperties"></a>
 
  The properties that are applied when Singular is being used as a source.
 

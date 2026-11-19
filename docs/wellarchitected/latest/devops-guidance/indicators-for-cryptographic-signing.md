@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for cryptographic signing
-<a name="indicators-for-cryptographic-signing"></a>
 
 Authenticate and verify software component origins and integrity, ensuring a secure software supply chain.
 

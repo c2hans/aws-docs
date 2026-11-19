@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AppInputSource
-<a name="API_AppInputSource"></a>
 
 The list of AWS Resilience Hub application input sources.
 

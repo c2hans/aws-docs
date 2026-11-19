@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # VectorOptions
-<a name="API_VectorOptions"></a>
 
 Configuration options for vector search capabilities in an OpenSearch Serverless collection.
 

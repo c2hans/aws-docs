@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 ---
 
 # Retries and Timeouts
-<a name="configure-retries-timeouts"></a>
 
  The AWS SDK for Go enables you to configure the retry behavior of requests to HTTP services. By default, service clients use [retry.Standard](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/aws/retry#Standard) as their default retryer. If the default configuration or behavior does not meet your application requirements, you can adjust the retryer configuration or provide your own retryer implementation.
 

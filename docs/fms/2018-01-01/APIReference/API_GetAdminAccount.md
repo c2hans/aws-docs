@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetAdmin
 ---
 
 # GetAdminAccount
-<a name="API_GetAdminAccount"></a>
 
 Returns the AWS Organizations account that is associated with AWS Firewall Manager as the AWS Firewall Manager default administrator.
 

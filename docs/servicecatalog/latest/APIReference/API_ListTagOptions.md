@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListTagOptions
-<a name="API_ListTagOptions"></a>
 
 Lists the specified TagOptions or all TagOptions.
 

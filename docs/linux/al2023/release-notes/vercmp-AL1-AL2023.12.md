@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/vercmp-AL1-AL
 ---
 
 # AL2023.12 upgrades from AL1
-<a name="vercmp-AL1-AL2023.12"></a>
 
  Comparing AL1 version 2018.03 to AL2023.12 version [2023.12.20261021](relnotes-2023.12.20261021.md).
 

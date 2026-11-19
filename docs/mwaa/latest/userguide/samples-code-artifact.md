@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-code-artif
 ---
 
 # Refreshing a CodeArtifact token
-<a name="samples-code-artifact"></a>
 
 If you're using CodeArtifact to install Python dependencies, Amazon MWAA requires an active token. To allow Amazon MWAA to access an CodeArtifact repository at runtime, you can use a [startup script](using-startup-script.md) and set the [`PIP_EXTRA_INDEX_URL`](https://pip.pypa.io/en/stable/cli/pip_install/#cmdoption-extra-index-url) with the token.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Resilient training
-<a name="sagemaker-hyperpod-ray-resilient-training"></a>
 
 HyperPod resiliency runs beneath your Ray workloads. Health checks detect faulty nodes and recover them, host-level detection catches silent stalls, and tiered checkpointing shortens recovery after a failure. These capabilities apply to Ray without changes to your Ray code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Delete unused Lightsail snapshots to avoid monthly charges
-<a name="amazon-lightsail-deleting-snapshots"></a>
 
 Delete instance, database, and disk snapshots in Amazon Lightsail if you no longer need them to avoid incurring a monthly charge.
 

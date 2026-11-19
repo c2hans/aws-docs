@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/live-conte
 ---
 
 # Delivering live content from AWS Elemental MediaPackage
-<a name="live-content"></a>
 
 AWS Elemental MediaPackage uses the following resources for live content:
 + A *channel group* is the top-level resource that consists of channels and origin endpoints that are associated with it and that provides predictable URLs for stream delivery. All channels and origin endpoints within the channel group are guaranteed to share the DNS.

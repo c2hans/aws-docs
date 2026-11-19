@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-s
 ---
 
 # Sample flows in Connect Customer
-<a name="contact-flow-samples"></a>
 
 Connect Customer includes a set of sample flows that show you how to perform common functions. They are designed to help you learn how to create your own flows that work in a similar way. For example, if you want to add a queued callback flow to your call center, take a look at the [Sample queued callback flow in Connect Customer](sample-queued-callback.md) flow.
 

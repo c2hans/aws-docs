@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Prepare
-<a name="prepare"></a>
 
 |  LSOPS05: How do you demonstrate control over the environment within which GxP workloads operate?  |
 | --- |

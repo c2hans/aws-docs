@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Appendix: Application modernization questionnaire
-<a name="appendix-application-modernization-questionnaire"></a>
 
 Use the questionnaire in this section as a starting point to gather information for the modernization assessment and planning phases of your project. You can [download this questionnaire](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/samples/oracle-database-migration.questionnaire.zip) in Microsoft Excel format and use it to record your information.
 

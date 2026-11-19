@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Scale.
 ---
 
 # Scale
-<a name="API_Scale"></a>
 
 A floating-point percentage of the desired number of tasks to place and keep running in the task set.
 

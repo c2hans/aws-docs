@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_DeleteRunt
 ---
 
 # DeleteRuntimeVersion
-<a name="API_DeleteRuntimeVersion"></a>
 
 Schedules a runtime version to be deleted. Runtime versions scheduled for deletion enter the PENDING\_DELETION state and can be restored during the scheduled deletion window. Function invokes fail for functions using a runtime version that is deleted or pending deletion.
 

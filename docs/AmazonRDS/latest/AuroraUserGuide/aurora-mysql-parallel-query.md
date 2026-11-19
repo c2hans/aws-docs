@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Parallel query for Amazon Aurora MySQL
-<a name="aurora-mysql-parallel-query"></a><a name="parallel_query"></a><a name="pq"></a>
+<a name="parallel_query"></a><a name="pq"></a>
 
 This topic describes the parallel query performance optimization for Amazon Aurora MySQL-Compatible Edition. This feature uses a special processing path for certain data-intensive queries, taking advantage of the Aurora shared storage architecture. Parallel query works best with Aurora MySQL DB clusters that have tables with millions of rows and analytic queries that take minutes or hours to complete.
 

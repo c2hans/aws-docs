@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_g
 ---
 
 # Group type and group scope
-<a name="ad_group_type_and_scope"></a>
 
 Groups in AWS Managed Microsoft AD have both a group type and a group scope. See the following sections for more information on each.
 

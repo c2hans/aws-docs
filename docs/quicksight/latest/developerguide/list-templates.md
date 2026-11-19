@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/list-te
 ---
 
 # ListTemplates
-<a name="list-templates"></a>
 
 Use the `ListTemplates` operation to list all the templates in the current Quick Sight account.
 

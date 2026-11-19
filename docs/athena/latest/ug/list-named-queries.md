@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/list-named-queries.html
 ---
 
 # List named queries
-<a name="list-named-queries"></a>
 
 The `ListNamedQueryExample` shows how to obtain a list of named query IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # HTTP request
-<a name="monetization-functions-types-http-request"></a>
 
 ## When to use
 <a name="monetization-functions-types-http-request-when"></a>

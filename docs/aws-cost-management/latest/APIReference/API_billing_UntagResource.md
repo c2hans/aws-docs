@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UntagResource
-<a name="API_billing_UntagResource"></a>
 
  Removes one or more tags from a resource. Specify only tag keys in your request. Don't specify the value.
 

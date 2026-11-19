@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Execution
 ---
 
 # ExecutionControls
-<a name="API_ExecutionControls"></a>
 
 The controls that AWS Config uses for executing remediations.
 

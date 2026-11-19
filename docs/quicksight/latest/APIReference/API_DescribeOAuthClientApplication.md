@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeOAuthClientApplication
-<a name="API_DescribeOAuthClientApplication"></a>
 
 Describes an OAuthClientApplication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-configu
 ---
 
 # Configure DNS monitoring and logging with Route 53 Global Resolver
-<a name="gr-configure-dns-monitoring"></a>
 
 Configure DNS monitoring in Route 53 Global Resolver to capture detailed information about DNS queries, responses, and security actions. This section covers the steps to set up logging destinations and configure monitoring tools.
 

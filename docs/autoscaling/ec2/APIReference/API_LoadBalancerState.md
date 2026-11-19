@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_LoadBal
 ---
 
 # LoadBalancerState
-<a name="API_LoadBalancerState"></a>
 
 Describes the state of a Classic Load Balancer.
 

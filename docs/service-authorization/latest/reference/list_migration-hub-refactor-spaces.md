@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Migration Hub Refactor Spaces
-<a name="list_migration-hub-refactor-spaces"></a>
 
 AWS Migration Hub Refactor Spaces (service prefix: `refactor-spaces`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

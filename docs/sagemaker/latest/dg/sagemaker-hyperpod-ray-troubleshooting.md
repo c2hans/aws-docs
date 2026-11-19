@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Troubleshooting Ray on HyperPod
-<a name="sagemaker-hyperpod-ray-troubleshooting"></a>
 
 Use this page to diagnose common problems with Ray clusters, dashboards, jobs, and observability on HyperPod. Each entry gives the symptom, the cause, and the resolution.
 

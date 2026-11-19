@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-de
 ---
 
 # Describing a model (SDK)
-<a name="md-describing-model-sdk"></a>
 
 You can use the `DescribeProjectVersions` API to get information about a version of a model. If you don't specify `VersionName`, `DescribeProjectVersions` returns descriptions for all model versions in the project.
 

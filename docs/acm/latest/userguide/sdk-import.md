@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-import.html
 ---
 
 # Importing a certificate
-<a name="sdk-import"></a>
 
 The following example shows how to use the [ImportCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_ImportCertificate.html) function.
 

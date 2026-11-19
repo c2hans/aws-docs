@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EC2Specification
-<a name="API_EC2Specification"></a>
 
 The Amazon EC2 hardware specifications that you want AWS to provide recommendations for.
 

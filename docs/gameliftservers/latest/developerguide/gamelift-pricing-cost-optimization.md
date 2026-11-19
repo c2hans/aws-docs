@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Cost optimization strategies
-<a name="gamelift-pricing-cost-optimization"></a>
 
 Use these strategies with a managed hosting solution to help reduce your cloud hosting costs while maintaining high performance and player experience.
 

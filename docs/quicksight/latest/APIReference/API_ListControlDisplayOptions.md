@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListC
 ---
 
 # ListControlDisplayOptions
-<a name="API_ListControlDisplayOptions"></a>
 
 The display options of a control.
 

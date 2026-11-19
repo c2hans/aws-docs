@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/cl3-node-design.
 ---
 
 # Number of Conductor Live nodes
-<a name="cl3-node-design"></a>
 
 You need two Conductor Live nodes if you plan to implement Conductor Live node redundancy. Otherwise, you need only one node.
 

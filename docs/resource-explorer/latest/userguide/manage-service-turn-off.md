@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/manag
 ---
 
 # Turning off Resource Explorer
-<a name="manage-service-turn-off"></a>
 
 When you no longer need to search for resources in a specific AWS Region, you can turn off AWS Resource Explorer in only that Region by deleting its index, or you can delete Resource Explorer in all AWS Regions. When you do this, Resource Explorer stops scanning for new or updated resources in that Region. If your account contains an aggregator index, then replication from the deleted index stops, and the information from the deleted index is removed from the aggregator index and stops appearing in search results. It can take up to 24 hours for all resources from the deleted index to disappear from search results in the Region with the aggregator index.
 

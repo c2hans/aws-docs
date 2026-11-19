@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/usergui
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Migration Hub Orchestrator events in EventBridge
-<a name="event-bridge"></a>
 
 AWS Migration Hub Orchestrator generates status change events through Amazon EventBridge. Migration Hub Orchestrator sends these events to EventBridge as [best effort](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-service-event-list.html) delivery attempts. Events are only delivered to the Region where Migration Hub Orchestrator operations are invoked from. For more information, see [What Is Amazon EventBridge?](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) in the *EventBridge User Guide*.
 

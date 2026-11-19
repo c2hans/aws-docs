@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ams-acceler
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## What languages does AMS Accelerate support?
 <a name="what-languages-does-ams-accelerate-support-.7f9a4dac-8284-5e46-9a26-77f0bef12f46"></a>

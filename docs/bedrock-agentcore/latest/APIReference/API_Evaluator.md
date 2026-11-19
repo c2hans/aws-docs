@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # Evaluator
-<a name="API_Evaluator"></a>
 
 An evaluator to run against sessions during batch evaluation.
 

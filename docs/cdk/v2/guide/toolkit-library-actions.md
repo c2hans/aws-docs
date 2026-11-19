@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/toolkit-library-actions.htm
 ---
 
 # Configuring CDK Toolkit programmatic actions
-<a name="toolkit-library-actions"></a>
 
 The AWS CDK Toolkit Library provides programmatic interfaces for application lifecycle actions such as synthesis, deployment, and stack management. This guide explains how to use each action in your code.
 

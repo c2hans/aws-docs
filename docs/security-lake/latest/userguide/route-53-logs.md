@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/route-53-
 ---
 
 # Route 53 resolver query logs in Security Lake
-<a name="route-53-logs"></a>
 
 Route 53 resolver query logs track DNS queries made by resources within your Amazon Virtual Private Cloud (Amazon VPC). This helps you understand how your applications are operating and spot security threats.
 

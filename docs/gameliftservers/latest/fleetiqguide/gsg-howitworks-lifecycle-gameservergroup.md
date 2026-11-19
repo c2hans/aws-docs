@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 ---
 
 # Life of a game server group
-<a name="gsg-howitworks-lifecycle-gameservergroup"></a>
 
 Game server groups go through the following life cycle, including provisioning and status updates. A game server group is expected to be a long-lived resource.
 

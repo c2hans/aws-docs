@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FileSystemLocation
-<a name="API_FileSystemLocation"></a>
 
 The details of the file system location for the resource.
 

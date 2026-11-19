@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAppS
 ---
 
 # AwsAppSyncGraphQlApiDetails
-<a name="API_AwsAppSyncGraphQlApiDetails"></a>
 
  Provides details about an AWS AppSync Graph QL API, which lets you query multiple databases, microservices, and APIs from a single GraphQL endpoint.
 

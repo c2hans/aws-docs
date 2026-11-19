@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # How a feed uses a question set version
-<a name="custom-questions-versions-in-feeds"></a>
 
 In a contextual metadata output, you name a question set and a version separately for shots and for scenes. The version is either `DRAFT` or a published version number. The shot and scene questions can come from different question sets, from different versions of the same set, or from the same version.
 

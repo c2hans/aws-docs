@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/differentia
 ---
 
 # AWS Clean Rooms Differential Privacy
-<a name="differential-privacy"></a>
 
 AWS Clean Rooms Differential Privacy helps you protect the privacy of your users with a mathematically-backed technique that is implemented with intuitive controls in a few clicks. As a fully managed capability, no prior differential privacy experience is needed to help you prevent the re-identification of your users. AWS Clean Rooms automatically adds a carefully calibrated amount of noise to query results at runtime in order to help protect your individual-level data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CR.4] Comprehensive code reviews with an emphasis on business logic
-<a name="dl.cr.4-comprehensive-code-reviews-with-an-emphasis-on-business-logic"></a>
 
  **Category:** FOUNDATIONAL
 

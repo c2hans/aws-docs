@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Configure data compression
-<a name="compression"></a>
 
 You can compress the tables and indexes in EnterpriseOne business data and control tables by using page or row compression. Most EnterpriseOne workloads on AWS exhibit the best performance with page compression, but extremely large workloads (multiples of uncompressed terabytes) might perform better with row compression. A detailed discussion of page versus row compression is beyond the scope of this guide. This section focuses primarily on page compression.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/application-event-notifica
 ---
 
 # Amazon SNS application event notifications for mobile applications
-<a name="application-event-notifications"></a>
 
 Amazon SNS provides support to trigger notifications when certain application events occur. You can then take some programmatic action on that event. Your application must include support for a push notification service such as Apple Push Notification Service (APNs), Firebase Cloud Messaging (FCM), and Windows Push Notification Services (WNS). You set application event notifications using the Amazon SNS console, AWS CLI, or the AWS SDKs.
 

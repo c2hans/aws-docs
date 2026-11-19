@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/service_co
 ---
 
 # Code examples for AWS IoT SiteWise using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use AWS IoT SiteWise with an AWS software development kit (SDK).
 

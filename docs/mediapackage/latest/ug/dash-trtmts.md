@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/dash-trtmts.html
 ---
 
 # DASH manifest options in AWS Elemental MediaPackage
-<a name="dash-trtmts"></a>
 
 This section describes the options that AWS Elemental MediaPackage offers for modifying live output DASH manifests.
 

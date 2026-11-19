@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Failov
 ---
 
 # FailoverDBCluster
-<a name="API_FailoverDBCluster"></a>
 
 Forces a failover for a DB cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # ChannelParameters
-<a name="API_ChannelParameters"></a>
 
 The channel-specific parameters used to render and deliver a one-time passcode. Each member configures the parameters for one delivery route. Populate only the channels that a configuration or send request supports. A notify code configuration can carry every channel at once, and a send request resolves to a single route that selects the matching channel at send time.
 

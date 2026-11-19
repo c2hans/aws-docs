@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-streaming-concepts.h
 ---
 
 # AWS Glue Streaming concepts
-<a name="glue-streaming-concepts"></a>
 
  AWS Glue Streaming supports two execution models: micro-batch mode and real-time mode. The following sections describe these execution models and the anatomy of a streaming job.
 

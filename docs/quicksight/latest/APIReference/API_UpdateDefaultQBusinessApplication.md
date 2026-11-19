@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDefaultQBusinessApplication
-<a name="API_UpdateDefaultQBusinessApplication"></a>
 
 Updates a Amazon Q Business application that is linked to a Quick Sight account.
 

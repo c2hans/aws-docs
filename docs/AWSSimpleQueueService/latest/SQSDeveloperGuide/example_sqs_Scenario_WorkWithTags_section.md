@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Work with queue tags and Amazon SQS using an AWS SDK
-<a name="example_sqs_Scenario_WorkWithTags_section"></a>
 
 The following code example shows how to perform tagging operation with Amazon SQS.
 

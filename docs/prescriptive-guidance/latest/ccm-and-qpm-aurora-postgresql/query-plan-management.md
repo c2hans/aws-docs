@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ccm-and-qpm
 ---
 
 # Query plan management
-<a name="query-plan-management"></a>
 
 Changes to statistics, constraints, environment settings, query parameter bindings, and upgrades to the PostgreSQL database engine can all cause query plan regression. *Query plan regression* is when the optimizer chooses a less optimal plan than it did before a given change to the database environment.
 

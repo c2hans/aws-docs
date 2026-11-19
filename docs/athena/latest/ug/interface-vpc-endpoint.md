@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/interface-vpc-endpoint.
 ---
 
 # Connect to Amazon Athena using an interface VPC endpoint
-<a name="interface-vpc-endpoint"></a>
 
 You can improve the security posture of your VPC by using an [interface VPC endpoint (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html) and an [AWS Glue VPC endpoint](https://docs.aws.amazon.com/glue/latest/dg/vpc-endpoint.html) in your Virtual Private Cloud (VPC). An interface VPC endpoint improves security by giving you control over what destinations can be reached from inside your VPC. Each VPC endpoint is represented by one or more [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) (ENIs) with private IP addresses in your VPC subnets.
 

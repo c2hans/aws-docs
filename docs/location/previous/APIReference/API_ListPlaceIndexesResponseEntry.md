@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListP
 ---
 
 # ListPlaceIndexesResponseEntry
-<a name="API_ListPlaceIndexesResponseEntry"></a>
 
 A place index resource listed in your AWS account.
 

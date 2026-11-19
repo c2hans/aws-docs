@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Uninstalling Apache Livy with Amazon EMR on EKS
-<a name="job-runs-apache-livy-uninstall"></a>
 
 Follow these steps to uninstall Apache Livy.
 

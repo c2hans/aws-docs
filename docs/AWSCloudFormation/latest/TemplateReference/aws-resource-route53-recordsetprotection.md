@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53::RecordSetProtection
-<a name="aws-resource-route53-recordsetprotection"></a>
 
 The `AWS::Route53::RecordSetProtection` resource specifies a protection for a record set in a hosted zone. A protection covers every record set that has the specified name and type, including record sets that have a `SetIdentifier`. While the protection exists, Route 53 refuses changes to those record sets and refuses to create additional record sets with that name and type, for example a weighted record set that has a new `SetIdentifier`.
 

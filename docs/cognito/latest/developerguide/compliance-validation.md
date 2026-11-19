@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/compliance
 ---
 
 # Compliance validation for Amazon Cognito
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of Amazon Cognito as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Bucket
 ---
 
 # BucketLevelPermissions
-<a name="API_BucketLevelPermissions"></a>
 
 Contains information about the bucket level permissions for the S3 bucket.
 

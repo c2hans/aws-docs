@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Troubleshooting
-<a name="discovery-tool-troubleshooting"></a>
 
 ## Incomplete or failed export
 <a name="discovery-tool-export-troubleshooting"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # System Requirements and Feature Support (WorkSpaces Applications Client)
-<a name="client-system-requirements-feature-support"></a>
 
 This topic provides information to help you understand the requirements for the WorkSpaces Applications client and supported features.
 

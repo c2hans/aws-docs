@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-optimizati
 ---
 
 # Generative AI
-<a name="inference-optimization-genai"></a>
 
 Optimize and benchmark your generative AI inference deployments.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Initializ
 ---
 
 # InitializationStatusDetails
-<a name="API_InitializationStatusDetails"></a>
 
 Information about the volume initialization. For more information, see [Initialize Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/initalize-volume.html).
 

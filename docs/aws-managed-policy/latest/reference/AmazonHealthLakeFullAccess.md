@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonHealthLakeFullAccess
-<a name="AmazonHealthLakeFullAccess"></a>
 
 **Description**: Provides full access to Amazon HealthLake service.
 

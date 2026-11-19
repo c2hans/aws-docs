@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Clarif
 ---
 
 # ClarifyExplainerConfig
-<a name="API_ClarifyExplainerConfig"></a>
 
 The configuration parameters for the SageMaker Clarify explainer.
 

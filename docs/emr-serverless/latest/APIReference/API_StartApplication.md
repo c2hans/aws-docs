@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_S
 ---
 
 # StartApplication
-<a name="API_StartApplication"></a>
 
 Starts a specified application and initializes initial capacity if configured.
 

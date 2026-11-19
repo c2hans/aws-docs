@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTr
 ---
 
 # ListTrainingJobsForHyperParameterTuningJob
-<a name="API_ListTrainingJobsForHyperParameterTuningJob"></a>
 
 Gets a list of [TrainingJobSummary](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrainingJobSummary.html) objects that describe the training jobs that a hyperparameter tuning job launched.
 

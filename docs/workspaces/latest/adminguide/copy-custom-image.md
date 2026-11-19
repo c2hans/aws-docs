@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/copy-custom
 ---
 
 # Copy a custom image in WorkSpaces Personal
-<a name="copy-custom-image"></a>
 
 You can copy a custom WorkSpaces image within or across AWS Regions. Copying an image results in the creation of an identical image with its own unique identifier.
 

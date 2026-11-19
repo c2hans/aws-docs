@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_DeleteMicr
 ---
 
 # DeleteMicrovmImageVersion
-<a name="API_DeleteMicrovmImageVersion"></a>
 
 Deletes a specific version of a MicroVM image. This operation is idempotent; deleting a version that has already been deleted succeeds without error.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationManufacturerLegalNameFilter
-<a name="API_ResaleAuthorizationManufacturerLegalNameFilter"></a>
 
 Allows filtering on the `ManufacturerLegalName` of a ResaleAuthorization.
 

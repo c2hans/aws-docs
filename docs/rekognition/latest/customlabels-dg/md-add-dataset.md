@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-ad
 ---
 
 # Adding a dataset to a project
-<a name="md-add-dataset"></a>
 
 You can add a training dataset or a test dataset to an existing project. If you want to replace an existing dataset, first delete the existing dataset. For more information, see [Deleting a dataset](md-delete-dataset.md). Then, add the new dataset.
 

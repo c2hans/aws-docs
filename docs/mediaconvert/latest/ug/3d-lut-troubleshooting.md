@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/3d-lut-troublesho
 ---
 
 # Troubleshooting
-<a name="3d-lut-troubleshooting"></a>
 
 The following is a list of issues you might encounter while working with 3D LUT files and troubleshooting tips:
 

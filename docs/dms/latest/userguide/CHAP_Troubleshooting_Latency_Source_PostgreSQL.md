@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Troubleshootin
 ---
 
 # PostgreSQL Endpoint Troubleshooting
-<a name="CHAP_Troubleshooting_Latency_Source_PostgreSQL"></a>
 
 This section contains replication scenarios specific to PostgreSQL.
 

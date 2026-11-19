@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListUsageT
 ---
 
 # ListUsageTotals
-<a name="API_ListUsageTotals"></a>
 
 Lists the Amazon Inspector usage totals over the last 30 days.
 

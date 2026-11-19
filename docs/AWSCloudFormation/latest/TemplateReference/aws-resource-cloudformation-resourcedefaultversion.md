@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::ResourceDefaultVersion
-<a name="aws-resource-cloudformation-resourcedefaultversion"></a>
 
 The `AWS::CloudFormation::ResourceDefaultVersion` resource specifies the default version of a resource. The default version of a resource will be used in CloudFormation operations.
 

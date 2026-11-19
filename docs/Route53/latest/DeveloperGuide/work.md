@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/work.html
 ---
 
 # .work
-<a name="work"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

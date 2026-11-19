@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cy
 ---
 
 # Examples of positive risk
-<a name="examples"></a>
 
 The following are some examples of positive risk for technology, project management, and cybersecurity.
 

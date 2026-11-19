@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html
 ---
 
 # Managing lexicons
-<a name="managing-lexicons"></a>
 
 Pronunciation lexicons enable you to customize the pronunciation of words. Amazon Polly provides API operations that you can use to store lexicons in an AWS region. Those lexicons are then specific to that particular region. You can use one or more of the lexicons from that region when synthesizing the text by using the `SynthesizeSpeech` operation. This applies the specified lexicon to the input text before the synthesis begins. For more information, see [SynthesizeSpeech](https://docs.aws.amazon.com/polly/latest/APIReference/API_SynthesizeSpeech.html).
 

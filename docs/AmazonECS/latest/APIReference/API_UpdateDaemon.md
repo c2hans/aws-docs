@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdateDaemon
-<a name="API_UpdateDaemon"></a>
 
 Updates the specified daemon. When you update a daemon, a new deployment is triggered that progressively rolls out the changes to the container instances associated with the daemon's capacity providers. For more information, see [Daemon deployments](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/daemon-deployments.html) in the *Amazon Elastic Container Service Developer Guide*.
 

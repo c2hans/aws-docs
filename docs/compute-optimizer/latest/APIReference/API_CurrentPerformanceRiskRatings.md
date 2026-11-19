@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # CurrentPerformanceRiskRatings
-<a name="API_CurrentPerformanceRiskRatings"></a>
 
 Describes the performance risk ratings for a given resource type.
 

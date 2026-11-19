@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-enable-encryption-for-
 ---
 
 # Setting up Amazon SNS topic encryption with server-side encryption
-<a name="sns-enable-encryption-for-topic"></a>
 
 Amazon SNS supports server-side encryption (SSE) to protect the contents of messages using AWS Key Management Service (AWS KMS). Follow the instructions below to enable SSE using the Amazon SNS console or CDK.
 

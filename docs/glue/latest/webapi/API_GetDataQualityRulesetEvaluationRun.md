@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDataQualityRul
 ---
 
 # GetDataQualityRulesetEvaluationRun
-<a name="API_GetDataQualityRulesetEvaluationRun"></a>
 
 Retrieves a specific run where a ruleset is evaluated against a data source.
 

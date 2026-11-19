@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEFS.html
 ---
 
 # Use Amazon EFS with Amazon EC2 Linux instances
-<a name="AmazonEFS"></a>
 
 **Note**
 Amazon EFS is not supported on Windows instances.

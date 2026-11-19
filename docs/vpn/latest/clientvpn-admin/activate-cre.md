@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/activate-cre.
 ---
 
 # Activate Client Route Enforcement for an AWS Client VPN endpoint
-<a name="activate-cre"></a>
 
 You can activate Client Route Enforcement on existing Client VPN endpoints using either the console or the AWS CLI.
 

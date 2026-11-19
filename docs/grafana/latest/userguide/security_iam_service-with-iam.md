@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/security_iam_se
 ---
 
 # How Amazon Managed Grafana works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon Managed Grafana, learn what IAM features are available to use with Amazon Managed Grafana.
 

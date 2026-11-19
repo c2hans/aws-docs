@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ResourceTagsCriteriaCondition
-<a name="API_automation_ResourceTagsCriteriaCondition"></a>
 
 Criteria condition for filtering resources based on their tags, including comparison operators and values.
 

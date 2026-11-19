@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution
 ---
 
 # JobExecution
-<a name="API_JobExecution"></a>
 
 The job execution object represents the execution of a job on a particular device.
 

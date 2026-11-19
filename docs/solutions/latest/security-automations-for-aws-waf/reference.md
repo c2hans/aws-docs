@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Reference
-<a name="reference"></a>
 
 This section includes information about an optional feature for collecting unique metrics for this solution, pointers to [related resources](#related-resources), and a [list of builders](#contributors) who contributed to this solution.
 

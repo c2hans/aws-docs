@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListOpportunities
-<a name="API_ListOpportunities"></a>
 
 This request accepts a list of filters that retrieve opportunity subsets as well as sort options. This feature is available to partners from [Partner Central](https://partnercentral.awspartner.com/) using the `ListOpportunities` API action.
 

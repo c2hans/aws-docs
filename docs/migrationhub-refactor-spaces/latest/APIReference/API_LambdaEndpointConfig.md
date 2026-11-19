@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # LambdaEndpointConfig
-<a name="API_LambdaEndpointConfig"></a>
 
 The configuration for the AWS Lambda endpoint type.
 

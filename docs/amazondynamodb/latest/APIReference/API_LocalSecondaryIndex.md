@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_L
 ---
 
 # LocalSecondaryIndex
-<a name="API_LocalSecondaryIndex"></a>
 
 Represents the properties of a local secondary index.
 

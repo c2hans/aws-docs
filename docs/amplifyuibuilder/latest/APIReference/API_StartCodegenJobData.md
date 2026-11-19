@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # StartCodegenJobData
-<a name="API_StartCodegenJobData"></a>
 
 The code generation job resource configuration.
 

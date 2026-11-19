@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Managing devices with AWS IoT Core for LoRaWAN
-<a name="lorawan-manage-end-devices"></a>
 
 Following are some important considerations when using your devices with AWS IoT Core for LoRaWAN. For information about how to add your device to AWS IoT Core for LoRaWAN, see [Onboard your devices to AWS IoT Core for LoRaWAN](lorawan-onboard-end-devices.md).
 

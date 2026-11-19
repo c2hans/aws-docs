@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteAnomalyMonitor
-<a name="API_DeleteAnomalyMonitor"></a>
 
 Deletes a cost anomaly monitor.
 

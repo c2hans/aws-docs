@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Imp
 ---
 
 # ImportComponent
-<a name="API_ImportComponent"></a>
 
 Imports a component and transforms its data into a component document. For the `SHELL` format, Image Builder wraps your script in a component document with a single step that runs the script.
 

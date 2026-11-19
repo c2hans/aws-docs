@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/pp-gett
 ---
 
 # Getting started with Private Pricing pages
-<a name="pp-getting-started"></a>
 
 This topic walks you through the prerequisites, how to access Private Pricing pages, and how to verify access to your contract.
 

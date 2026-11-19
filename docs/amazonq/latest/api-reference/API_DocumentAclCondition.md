@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentAclCondition
-<a name="API_DocumentAclCondition"></a>
 
 Represents a condition in the document's ACL, specifying access rules for users and groups.
 

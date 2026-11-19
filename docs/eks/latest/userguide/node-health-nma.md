@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/node-health-nma.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Detect node health issues with the EKS node monitoring agent
-<a name="node-health-nma"></a>
 
 This topic details the node health issues detected by the EKS node monitoring agent, how those issues are surfaced as node conditions or events, and how to configure the EKS node monitoring agent.
 

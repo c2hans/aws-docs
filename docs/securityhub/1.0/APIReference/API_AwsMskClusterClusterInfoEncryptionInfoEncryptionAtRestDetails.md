@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterClusterInfoEncryptionInfoEncryptionAtRestDetails
-<a name="API_AwsMskClusterClusterInfoEncryptionInfoEncryptionAtRestDetails"></a>
 
  The data-volume encryption details. You can't update encryption at rest settings for existing clusters.
 

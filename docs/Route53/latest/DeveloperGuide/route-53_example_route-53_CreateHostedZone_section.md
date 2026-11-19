@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53_e
 ---
 
 # Use `CreateHostedZone` with a CLI
-<a name="route-53_example_route-53_CreateHostedZone_section"></a>
 
 The following code examples show how to use `CreateHostedZone`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lab-onboard.h
 ---
 
 # Onboard to Amazon SageMaker Studio Lab
-<a name="studio-lab-onboard"></a>
 
 To onboard to Amazon SageMaker Studio Lab, follow the steps in this guide. In the following sections, you learn how to request a Studio Lab account, create your account, and sign in.
 

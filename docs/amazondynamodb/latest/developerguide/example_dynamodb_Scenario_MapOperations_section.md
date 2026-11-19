@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Perform map operations in DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_MapOperations_section"></a>
 
 The following code examples show how to perform map operations in DynamoDB.
 + Add and update nested attributes in map structures.

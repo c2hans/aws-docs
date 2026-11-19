@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # MasterCardAttributes
-<a name="API_MasterCardAttributes"></a>
 
 Parameters to derive the confidentiality and integrity keys for a Mastercard payment card.
 

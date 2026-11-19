@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DeleteBatchPrediction
-<a name="API_DeleteBatchPrediction"></a>
 
 Assigns the DELETED status to a `BatchPrediction`, rendering it unusable.
 

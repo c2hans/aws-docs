@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/standards-r
 ---
 
 # Standards reference for Security Hub CSPM
-<a name="standards-reference"></a>
 
 In AWS Security Hub CSPM, a *security standard* is a set of requirements that's based on regulatory frameworks, industry best practices, or company policies. Security Hub CSPM maps these requirements to controls, and runs security checks on the controls to assess whether the requirements of a standard are being met. Each standard includes multiple controls.
 

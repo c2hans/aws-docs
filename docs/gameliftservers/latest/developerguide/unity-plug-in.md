@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/un
 ---
 
 # Amazon GameLift Servers plugin for Unity (server SDK 5.x)
-<a name="unity-plug-in"></a>
 
 This plugin adds the Amazon GameLift Servers C\# server SDK and tools to the Unity editor. Use the guided UI workflows to integrate server SDK functionality into your game project and deploy an Amazon GameLift Servers hosting solution for your game server.
 

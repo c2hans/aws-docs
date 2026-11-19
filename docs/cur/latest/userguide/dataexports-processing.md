@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/dataexports-process
 ---
 
 # Processing data exports
-<a name="dataexports-processing"></a>
 
 In the following sections, you'll find information about processing your data exports.
 

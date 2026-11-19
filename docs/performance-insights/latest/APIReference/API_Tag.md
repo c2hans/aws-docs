@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Metadata assigned to an Amazon RDS resource consisting of a key-value pair.
 

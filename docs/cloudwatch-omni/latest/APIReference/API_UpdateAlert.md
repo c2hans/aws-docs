@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # UpdateAlert
-<a name="API_UpdateAlert"></a>
 
 Updates an existing alert.
 

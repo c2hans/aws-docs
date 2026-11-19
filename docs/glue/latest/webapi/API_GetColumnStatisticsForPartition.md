@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetColumnStatisti
 ---
 
 # GetColumnStatisticsForPartition
-<a name="API_GetColumnStatisticsForPartition"></a>
 
 Retrieves partition statistics of columns.
 

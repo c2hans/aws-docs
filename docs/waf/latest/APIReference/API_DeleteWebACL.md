@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DeleteWebACL
 ---
 
 # DeleteWebACL
-<a name="API_DeleteWebACL"></a>
 
 Deletes the specified [WebACL](API_WebACL.md).
 

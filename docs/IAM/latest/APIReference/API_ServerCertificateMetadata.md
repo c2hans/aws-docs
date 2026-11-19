@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ServerCertif
 ---
 
 # ServerCertificateMetadata
-<a name="API_ServerCertificateMetadata"></a>
 
 Contains information about a server certificate without its certificate body, certificate chain, and private key.
 

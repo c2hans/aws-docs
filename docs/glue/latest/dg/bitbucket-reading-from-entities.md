@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bitbucket-reading-from-en
 ---
 
 # Reading from Bitbucket entities
-<a name="bitbucket-reading-from-entities"></a>
 
 **Prerequisites**
 

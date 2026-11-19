@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Sear
 ---
 
 # SearchUsers
-<a name="API_SearchUsers"></a>
 
 Searches for UserIDs within a collection based on a `FaceId` or `UserId`. This API can be used to find the closest UserID (with a highest similarity) to associate a face. The request must be provided with either `FaceId` or `UserId`. The operation returns an array of UserID that match the `FaceId` or `UserId`, ordered by similarity score with the highest similarity first.
 

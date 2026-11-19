@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # S3DeliveryConfiguration
-<a name="API_S3DeliveryConfiguration"></a>
 
 This structure contains delivery configurations that apply only when the delivery destination resource is an S3 bucket.
 

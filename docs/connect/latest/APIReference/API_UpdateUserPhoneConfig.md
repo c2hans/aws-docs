@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUs
 ---
 
 # UpdateUserPhoneConfig
-<a name="API_UpdateUserPhoneConfig"></a>
 
 Updates the phone configuration settings for the specified user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-met
 ---
 
 # Amazon ECS task metadata v4 examples
-<a name="task-metadata-endpoint-v4-examples"></a>
 
 The following examples show example outputs from each of the task metadata endpoints.
 

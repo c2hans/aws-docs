@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-updates-
 ---
 
 # Planning for Amazon Neptune major engine version life-span
-<a name="engine-updates-eol-planning"></a>
 
 Neptune engine versions almost always reach their end of life at the end of a calendar quarter. Exceptions occur only when important security or availability issues arise.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamP
 ---
 
 # AwsIamPolicyVersion
-<a name="API_AwsIamPolicyVersion"></a>
 
 A version of an IAM policy.
 

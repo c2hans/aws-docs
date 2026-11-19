@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Crawl.html
 ---
 
 # Crawl
-<a name="API_Crawl"></a>
 
 The details of a crawl in the workflow.
 

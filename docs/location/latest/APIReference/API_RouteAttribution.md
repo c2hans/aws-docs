@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteAt
 ---
 
 # RouteAttribution
-<a name="API_RouteAttribution"></a>
 
 Required attribution to display.
 

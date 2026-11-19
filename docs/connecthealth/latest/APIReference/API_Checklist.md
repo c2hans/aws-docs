@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ch
 ---
 
 # Checklist
-<a name="API_Checklist"></a>
 
 Contains the sections of a note template checklist and the discussion status of each section.
 

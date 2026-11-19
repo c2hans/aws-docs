@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/
 ---
 
 # Configure account B
-<a name="consumer-account-setup"></a>
 
 To configure the receipient account, account B, the Lake Formation administrator accepts the AWS Resource Access Manager (AWS RAM) shares, creates resource links that point to the shared catalog, database, and tables, and configures permissions for the AWS Glue execution role ({{`Glue-execution-role`}}).
 

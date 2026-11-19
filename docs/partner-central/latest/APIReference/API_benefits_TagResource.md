@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # TagResource
-<a name="API_benefits_TagResource"></a>
 
 Adds or updates tags for a specified resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransformSecretsManagerConnectorPolicy
-<a name="AWSTransformSecretsManagerConnectorPolicy"></a>
 
 **Description**: Enables the AWS Transform service to read a specified SecretsManager Secret in connection to specified KMS key. This policy grants permissions to read the specified secret value and decrypt it is the secret is encrypted
 

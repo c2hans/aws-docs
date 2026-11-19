@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/ConfiguringMra
 ---
 
 # Configuring Multi-Region Access Point opt-in Regions
-<a name="ConfiguringMrapOptInRegions"></a>
 
 An AWS opt-in Region is a Region that isn’t enabled by default in your AWS account. In contrast, Regions that are enabled by default are known as AWS Regions or commercial Regions.
 

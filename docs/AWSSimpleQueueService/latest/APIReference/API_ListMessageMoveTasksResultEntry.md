@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # ListMessageMoveTasksResultEntry
-<a name="API_ListMessageMoveTasksResultEntry"></a>
 
 Contains the details of a message movement task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_DestinationResul
 ---
 
 # DestinationResult
-<a name="API_DestinationResult"></a>
 
  The destination information for the S3 Metadata configuration.
 

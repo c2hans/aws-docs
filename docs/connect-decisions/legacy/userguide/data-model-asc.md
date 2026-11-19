@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data-
 ---
 
 # Data entities supported in AWS Supply Chain
-<a name="data-model-asc"></a>
 
 The following is an overview of the data entities supported in AWS Supply Chain.
 

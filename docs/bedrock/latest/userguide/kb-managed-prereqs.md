@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-prer
 ---
 
 # Prerequisites
-<a name="kb-managed-prereqs"></a>
 
 Amazon Bedrock managed knowledge bases require data and AWS Identity and Access Management permissions to access your data and perform actions. By default, managed knowledge bases use service-managed embedding and reranking models, so no Bedrock model access is required for those. If you provide your own embedding or reranking models, you also need access to those Bedrock models.
 

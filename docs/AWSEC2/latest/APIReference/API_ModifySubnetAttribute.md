@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifySub
 ---
 
 # ModifySubnetAttribute
-<a name="API_ModifySubnetAttribute"></a>
 
 Modifies a subnet attribute. You can only modify one attribute at a time.
 

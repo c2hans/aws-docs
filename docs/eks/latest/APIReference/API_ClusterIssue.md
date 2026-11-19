@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ClusterIssue
 ---
 
 # ClusterIssue
-<a name="API_ClusterIssue"></a>
 
 An issue with your Amazon EKS cluster.
 

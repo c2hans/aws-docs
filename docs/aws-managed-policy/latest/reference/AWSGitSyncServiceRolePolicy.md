@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGitSyncServiceRolePolicy
-<a name="AWSGitSyncServiceRolePolicy"></a>
 
 **Description**: Policy which allows AWS Code Connections to sync content from your git repository
 

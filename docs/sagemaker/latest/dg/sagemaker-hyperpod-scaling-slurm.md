@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Continuous provisioning for enhanced cluster operations with Slurm
-<a name="sagemaker-hyperpod-scaling-slurm"></a>
 
 Amazon SageMaker HyperPod clusters created with Slurm orchestration now support continuous provisioning, a capability that enables greater flexibility and efficiency when running large-scale AI/ML workloads. Continuous provisioning lets you start training quickly, scale seamlessly, perform maintenance without disrupting operations, and have granular visibility into cluster operations.
 

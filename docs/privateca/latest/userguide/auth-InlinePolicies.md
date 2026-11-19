@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/auth-InlinePo
 ---
 
 # Inline policies
-<a name="auth-InlinePolicies"></a>
 
 Inline policies are policies that you create and manage and embed directly into a user, group, or role. The following policy examples show how to assign permissions to perform AWS Private CA actions. For general information about inline policies, see [Working with Inline Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#inline-policies) in the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/). You can use the AWS Management Console, the AWS Command Line Interface (AWS CLI), or the IAM API to create and embed inline policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerSpacesRouterPolicy
-<a name="AmazonSageMakerSpacesRouterPolicy"></a>
 
 **Description**: Grants Systems KMS key operations permissions required for the SageMaker Spaces Router to enable secure remote access to EKS SageMaker Spaces.
 

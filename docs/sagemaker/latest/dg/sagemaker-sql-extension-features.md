@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # SQL extension features and usage
-<a name="sagemaker-sql-extension-features"></a>
 
 This section details the various features of the JupyterLab SQL extension in Studio, and provides instructions on how to use them. Before you can use the SQL extension to access and query data from your JupyterLab notebooks, an administrator must first configure the connection to your data sources. For information on how administrators can create connections to data sources, see [SQL extension data source connections](sagemaker-sql-extension-datasources-connection.md).
 

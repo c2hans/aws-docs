@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # ListRegistryRecords
-<a name="API_ListRegistryRecords"></a>
 
 Lists the registry records within a registry, with optional filtering by name, status, and record type
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-ki
 ---
 
 # Amazon Data Firehose example
-<a name="partition-projection-kinesis-firehose-example"></a>
 
 When you use Firehose to deliver data to Amazon S3, the default configuration writes objects with keys that look like the following example:
 

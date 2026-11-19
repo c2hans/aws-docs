@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-get
 ---
 
 # Getting Library Details
-<a name="bda-library-getting-details"></a>
 
 Use the [GetDataAutomationLibrary](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-automation_GetDataAutomationLibrary.html) API to retrieve information about an existing library.
 

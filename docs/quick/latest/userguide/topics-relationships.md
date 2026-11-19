@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-relationsh
 ---
 
 # Defining relationships between datasets in a Topic
-<a name="topics-relationships"></a>
 
 |  |
 | --- |

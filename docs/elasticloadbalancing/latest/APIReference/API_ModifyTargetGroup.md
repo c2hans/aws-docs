@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # ModifyTargetGroup
-<a name="API_ModifyTargetGroup"></a>
 
 Modifies the health checks used when evaluating the health state of the targets in the specified target group.
 

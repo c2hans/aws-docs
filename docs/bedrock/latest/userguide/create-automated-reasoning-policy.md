@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/create-automate
 ---
 
 # Create your Automated Reasoning policy
-<a name="create-automated-reasoning-policy"></a>
 
 When you create an Automated Reasoning policy, your source document is translated into a set of formal logic rules and a schema of variables and types. This page walks you through preparing your document, creating the policy, and reviewing the results.
 

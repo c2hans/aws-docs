@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_B
 Amazon Cloud Directory is no longer open to new customers, and will reach end of support on July 24, 2027. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
 
 # BatchUpdateLinkAttributes
-<a name="API_BatchUpdateLinkAttributes"></a>
 
 Updates a given typed link’s attributes inside a [BatchRead](API_BatchRead.md) operation. Attributes to be updated must not contribute to the typed link’s identity, as defined by its `IdentityAttributeOrder`. For more information, see [UpdateLinkAttributes](API_UpdateLinkAttributes.md) and [BatchRead:Operations](API_BatchRead.md#amazoncds-BatchRead-request-Operations).
 

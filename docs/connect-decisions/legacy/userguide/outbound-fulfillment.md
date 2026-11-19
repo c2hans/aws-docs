@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/outbo
 ---
 
 # Outbound fulfillment
-<a name="outbound-fulfillment"></a>
 
 This section lists the data entities within the outbound fulfillment category.
 

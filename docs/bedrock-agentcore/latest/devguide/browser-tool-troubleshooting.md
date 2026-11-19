@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Troubleshoot AgentCore Browser
-<a name="browser-tool-troubleshooting"></a>
 
 This section provides solutions to common issues you might encounter when using the Amazon Bedrock AgentCore Browser.
 

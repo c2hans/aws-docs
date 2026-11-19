@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ide
 ---
 
 # Identity
-<a name="API_Identity"></a>
 
 Contains an identity that can access an AWS IoT SiteWise Monitor resource.
 

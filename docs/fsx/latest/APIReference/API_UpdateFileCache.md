@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileCa
 ---
 
 # UpdateFileCache
-<a name="API_UpdateFileCache"></a>
 
 Updates the configuration of an existing Amazon File Cache resource. You can update multiple properties in a single request.
 

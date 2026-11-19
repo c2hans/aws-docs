@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Troubleshoot notification delivery in Lightsail
-<a name="amazon-lightsail-troubleshooting-notifications"></a>
 
 If don't receive notifications when you expect to be notified, then there are a few things you should check to confirm that your notification contacts are configured correctly. To learn more about notifications, see [Notifications](amazon-lightsail-notifications.md).
 

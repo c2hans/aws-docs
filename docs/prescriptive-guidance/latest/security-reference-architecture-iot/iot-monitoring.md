@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 5. Providing security monitoring and incident response
-<a name="iot-monitoring"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # ImageTagDetail
-<a name="API_ImageTagDetail"></a>
 
 An object that represents the image tag details for an image.
 

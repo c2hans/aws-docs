@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Event sourcing pattern
-<a name="event-sourcing-pattern"></a>
 
 ## Intent
 <a name="event-sourcing-intent"></a>

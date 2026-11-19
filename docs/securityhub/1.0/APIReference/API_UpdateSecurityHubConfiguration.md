@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateS
 ---
 
 # UpdateSecurityHubConfiguration
-<a name="API_UpdateSecurityHubConfiguration"></a>
 
 Updates configuration options for Security Hub CSPM.
 

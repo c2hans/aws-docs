@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # Blueprint
-<a name="API_data-automation-runtime_Blueprint"></a>
 
 Details about a data automation blueprint.
 

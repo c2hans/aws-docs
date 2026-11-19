@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/unit-testi
 ---
 
 # Unit Testing with the AWS SDK for Go v2
-<a name="unit-testing"></a>
 
  When using the SDK in your application, you'll want to mock out the SDK for your application's unit test. Mocking out the SDK allows your test to be focused on what you want to test, not the internals of the SDK.
 

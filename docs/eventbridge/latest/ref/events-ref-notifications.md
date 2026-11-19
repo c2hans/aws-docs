@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-notifi
 ---
 
 # AWS User Notifications events
-<a name="events-ref-notifications"></a>
 
 User Notifications sends service events to EventBridge via AWS CloudTrail.
 

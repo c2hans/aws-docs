@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/storage-efs.html
 ---
 
 # Shared file storage with Amazon Elastic File System
-<a name="storage-efs"></a>
 
 With Amazon Elastic File System (Amazon EFS), you can mount a shared, elastic, POSIX-compliant file system across many pods at the same time. Amazon EFS is the ROSA option for ReadWriteMany (RWX) workloads, such as content management systems, shared application data, and machine learning training data that is read by many pods.
 

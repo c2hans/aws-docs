@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ModuleConfigur
 ---
 
 # ModuleConfiguration
-<a name="API_ModuleConfiguration"></a>
 
 Describes the configuration of a module.
 

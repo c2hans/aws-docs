@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/How-to-crea
 ---
 
 # Include Process Checks Within a Conformance Pack
-<a name="How-to-create-a-Process-Check-Rule"></a>
 
 1. Add a process check in the conformance pack template. Refer to [Sample Conformance Pack Template for Creating Process Checks](Sample-CPack-Template-for-Creating-Process-Check-Rule.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DomainValida
 ---
 
 # DomainValidationSummary
-<a name="API_DomainValidationSummary"></a>
 
 Contains per-domain validation information for a certificate. This structure is returned as a member of the [ListCertificateDomainValidations](API_ListCertificateDomainValidations.md) response.
 

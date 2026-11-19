@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListResourceGroupingRecommendations
-<a name="API_ListResourceGroupingRecommendations"></a>
 
 Lists the resource grouping recommendations suggested by AWS Resilience Hub for your application.
 

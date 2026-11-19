@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeregisterManagedInstance
-<a name="API_DeregisterManagedInstance"></a>
 
 Removes the server or virtual machine from the list of registered servers.
 

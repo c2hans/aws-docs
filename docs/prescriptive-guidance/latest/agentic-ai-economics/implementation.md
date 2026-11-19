@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Implementing agentic AI systems
-<a name="implementation"></a>
 
 [State of Enterprise AI Adoption](https://isg-one.com/state-of-enterprise-ai-adoption-report-2025) (ISG 2025 report) reveals that the primary barrier to successful AI implementation is not technical capability but the *learning gap*. This term refers to systems that cannot adapt, remember context, or improve over time. Organizations that implement static AI tools see high failure rates. The following are common characteristics of agentic AI systems that achieve success:
 + **Contextual memory** – Systems that retain conversation history and user preferences

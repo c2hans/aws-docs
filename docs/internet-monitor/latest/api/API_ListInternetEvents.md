@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_ListInte
 ---
 
 # ListInternetEvents
-<a name="API_ListInternetEvents"></a>
 
 Lists internet events that cause performance or availability issues for client locations. Internet Monitor displays information about recent global health events, called internet events, on a global outages map that is available to all AWS customers.
 

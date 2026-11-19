@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/fine-tune-prepare-
 ---
 
 # Preparing data for multimodal fine-tuning
-<a name="fine-tune-prepare-data-understanding"></a>
 
 **Important**
 Before you begin preparing your dataset, make sure supervised fine-tuning (SFT) is the right approach for your use case. SFT teaches the model new *behaviors*, response formats, and reasoning patterns. It does not teach the model new factual knowledge. If your primary goal is to introduce domain-specific facts, terminology, or knowledge the model hasn't seen, consider retrieval-augmented generation (RAG) to supply that context at inference time. For guidance on choosing between SFT, reinforcement fine-tuning (RFT), and RAG, see [Amazon Nova customization on SageMaker Training Jobs](nova-model-training-job.md).

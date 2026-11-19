@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AnnotationTableC
 ---
 
 # AnnotationTableConfigurationUpdates
-<a name="API_AnnotationTableConfigurationUpdates"></a>
 
 Specifies updates to apply to the annotation table configuration. Used as the request body for `UpdateBucketMetadataAnnotationTableConfiguration`.
 

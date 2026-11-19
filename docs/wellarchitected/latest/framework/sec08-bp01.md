@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec08-b
 ---
 
 # SEC08-BP01 Implement secure key management
-<a name="sec08-bp01"></a>
 
  Secure key management covers how you generate, store, control access to, rotate, and monitor key material across its lifecycle. Treat keys as the most sensitive asset in your workload
 

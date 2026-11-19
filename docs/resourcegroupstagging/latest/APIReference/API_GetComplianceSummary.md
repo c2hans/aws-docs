@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # GetComplianceSummary
-<a name="API_GetComplianceSummary"></a>
 
 Returns a table that shows counts of resources that are noncompliant with their tag policies.
 

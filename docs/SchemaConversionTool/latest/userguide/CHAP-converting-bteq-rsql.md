@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Converting Teradata BTEQ scripts to Amazon Redshift RSQL with AWS SCT
-<a name="CHAP-converting-bteq-rsql"></a>
 
 You can use the AWS Schema Conversion Tool (AWS SCT) to convert Teradata Basic Teradata Query (BTEQ) scripts to Amazon Redshift RSQL.
 

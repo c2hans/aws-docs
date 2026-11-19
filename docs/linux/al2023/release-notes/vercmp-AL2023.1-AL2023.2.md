@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/vercmp-AL2023
 ---
 
 # AL2023.2 upgrades from AL2023.1
-<a name="vercmp-AL2023.1-AL2023.2"></a>
 
  Comparing AL2023.1 version 2023.1.20230628 to AL2023.2 version [2023.2.20230920](relnotes-2023.2.20230920.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Step 3: Test the policy in shadow mode
-<a name="device-posture-step3"></a>
 
 Attach the policy with shadow mode enabled. In shadow mode, Client VPN evaluates the policy and records the decision in your connection logs, but never blocks a connection.
 

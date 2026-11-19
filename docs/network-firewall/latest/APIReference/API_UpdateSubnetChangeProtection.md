@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UpdateSubnetChangeProtection
-<a name="API_UpdateSubnetChangeProtection"></a>
 
 ## Request Syntax
 <a name="API_UpdateSubnetChangeProtection_RequestSyntax"></a>

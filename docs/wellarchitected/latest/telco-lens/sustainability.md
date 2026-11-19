@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/sustai
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
  The sustainability pillar focuses on environmental impacts, especially energy consumption and efficiency since they are important levers for architects to inform direct action to reduce resource usage. Environmental sustainability is a shared responsibility between customers and AWS. AWS is responsible for sustainability of the cloud, delivering efficient, shared infrastructure, water stewardship, and sourcing renewable power. Customers are responsible for sustainability in the cloud, optimizing workloads and resource utilization.
 

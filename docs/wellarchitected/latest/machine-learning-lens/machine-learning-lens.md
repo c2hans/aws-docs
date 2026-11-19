@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Machine Learning Lens - AWS Well-Architected Framework
-<a name="machine-learning-lens"></a>
 
  Publication date: **November 19, 2025** ([Document revisions](document-revisions.md))
 

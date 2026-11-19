@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 Before deployment, ensure that there are no new uploads or deletes of archives occurring on your source Glacier vault. Your Glacier vault content must be static.
 +  Ensure you have reviewed the [cost section ](cost.md)before deployment.

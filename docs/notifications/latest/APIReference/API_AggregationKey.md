@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ag
 ---
 
 # AggregationKey
-<a name="API_AggregationKey"></a>
 
 Key-value collection that indicate how notifications are grouped.
 

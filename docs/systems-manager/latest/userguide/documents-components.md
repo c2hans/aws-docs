@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/documen
 ---
 
 # Document components
-<a name="documents-components"></a>
 
 This section includes information about the components that make up SSM documents.
 

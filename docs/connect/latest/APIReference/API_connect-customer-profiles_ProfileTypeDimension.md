@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ProfileTypeDimension
-<a name="API_connect-customer-profiles_ProfileTypeDimension"></a>
 
 Object to hold the dimension of a profile type field to segment on.
 

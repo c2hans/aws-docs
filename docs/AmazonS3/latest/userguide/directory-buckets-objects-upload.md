@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Uploading objects to a directory bucket
-<a name="directory-buckets-objects-upload"></a>
 
 After you create an Amazon S3 directory bucket, you can upload objects to it. The following examples show how to upload an object to a directory bucket by using the S3 console and the AWS SDKs. For information about bulk object upload operations with S3 Express One Zone, see [Object management](directory-bucket-high-performance.md#s3-express-features-object-management).
 

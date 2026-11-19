@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_KinesisFireh
 ---
 
 # KinesisFirehoseDestination
-<a name="API_KinesisFirehoseDestination"></a>
 
 Contains the delivery stream ARN and the IAM role ARN associated with an Amazon Kinesis Firehose event destination.
 

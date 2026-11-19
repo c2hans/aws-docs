@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-
 ---
 
 # Reading and writing from and to Amazon Redshift
-<a name="emr-spark-redshift-readwrite"></a>
 
 The following code examples use PySpark to read and write sample data from and to an Amazon Redshift database with a data source API and with SparkSQL.
 

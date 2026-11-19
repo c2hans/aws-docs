@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-destinations-htt
 ---
 
 # Fields for the output destination – sending to an HTTP server
-<a name="hls-destinations-http"></a>
 
 When you [planned the destinations for the HLS output group](origin-server-http.md), you might have decided to send the output to an HTTP server.
 

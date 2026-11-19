@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Actin
 ---
 
 # Acting on alarm changes
-<a name="Acting_Alarm_Changes"></a>
 
 CloudWatch can notify users on two types of alarm changes: when an alarm changes state, and when the configuration of an alarm gets updated.
 

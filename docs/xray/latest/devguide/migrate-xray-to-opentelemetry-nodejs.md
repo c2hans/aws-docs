@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/migrate-xray-to-ope
 ---
 
 # Migrate to OpenTelemetry Node.js
-<a name="migrate-xray-to-opentelemetry-nodejs"></a>
 
 This section explains how to migrate your Node.js applications from X-Ray SDK to OpenTelemetry. It covers both automatic and manual instrumentation approaches, and provides specific examples for common use cases.
 

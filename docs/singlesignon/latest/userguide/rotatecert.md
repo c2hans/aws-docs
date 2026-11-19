@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/rotatecert
 ---
 
 # Rotate an IAM Identity Center certificate
-<a name="rotatecert"></a>
 
 Rotating an IAM Identity Center certificate is a multistep process that involves the following:
 + Generating a new certificate

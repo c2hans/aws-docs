@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelC
 ---
 
 # ModelCompilationConfig
-<a name="API_ModelCompilationConfig"></a>
 
 Settings for the model compilation technique that's applied by a model optimization job.
 

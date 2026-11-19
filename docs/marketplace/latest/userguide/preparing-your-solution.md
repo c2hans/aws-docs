@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/preparing-y
 ---
 
 # Preparing your solution listing
-<a name="preparing-your-solution"></a>
 
 ## What is a solution?
 <a name="what-is-solution-listing"></a>
@@ -175,4 +174,4 @@ This must be the Product ID from AWS Partner Central or the AWS Marketplace cata
   + You coordinated with the product owner to obtain product IDs.
   + The product owner is ready to provide selling authorization to create channel partner private offers.
   + You obtained consent from the product owner to showcase their product in your public solution listing.
-+ No more than five public solutions live on AWS Marketplace.
++ Your account can have up to 100 public solutions at a time. Limited and Restricted solutions don't count toward this limit.

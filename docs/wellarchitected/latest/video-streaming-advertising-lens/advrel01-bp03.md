@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL01-BP03 Architect for variable demand
-<a name="advrel01-bp03"></a>
 
  Architect to elastically launch resources for variable demand, including peak events such as flash crowds and thundering herds. Advertising workloads spike during live events, product launches, and seasonal campaigns. Infrastructure must absorb these peaks without degrading bid win rates or dropping ad requests.
 

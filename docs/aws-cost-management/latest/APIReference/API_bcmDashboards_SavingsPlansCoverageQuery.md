@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansCoverageQuery
-<a name="API_bcmDashboards_SavingsPlansCoverageQuery"></a>
 
 Defines the parameters for querying Savings Plans coverage data, including metrics, grouping options, and time granularity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadat
 ---
 
 # StartMetadataModelExportAsScript
-<a name="API_StartMetadataModelExportAsScript"></a>
 
 Queues an export of metadata models (database objects such as tables, views, and procedures) as a data definition language (DDL) script. The script is stored as a ZIP archive in the Amazon S3 bucket associated with the migration project. If other requests created by `Start*` operations are already in the migration project's queue, the export begins after they complete.
 

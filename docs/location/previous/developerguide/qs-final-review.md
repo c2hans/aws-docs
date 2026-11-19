@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-fina
 ---
 
 # Review the final Amazon Location application
-<a name="qs-final-review"></a>
 
 The final source code for this application is included in this section. You can also find the final project [on GitHub](https://github.com/aws-geospatial/amazon-location-samples-js/tree/main/quick-start-using-api-keys).
 

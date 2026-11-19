@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/mapping-salesf
 ---
 
 # Mapping Salesforce objects to the standard asset in Customer Profiles
-<a name="mapping-salesforce-objects-to-asset"></a>
 
 This topic lists which fields in Salesforce objects map to fields in the standard asset object in Customer Profiles.
 

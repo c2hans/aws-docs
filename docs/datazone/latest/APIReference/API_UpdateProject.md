@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateP
 ---
 
 # UpdateProject
-<a name="API_UpdateProject"></a>
 
 Updates the specified project in Amazon DataZone.
 

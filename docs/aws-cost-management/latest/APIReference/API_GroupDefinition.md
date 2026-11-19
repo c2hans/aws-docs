@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GroupDefinition
-<a name="API_GroupDefinition"></a>
 
 Represents a group when you specify a group by criteria or in the response to a query with a specific grouping.
 

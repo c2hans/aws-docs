@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ValidationEx
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 The input failed to meet the constraints specified by the service in a specified field. Make sure you provided the correct input and try again.
 

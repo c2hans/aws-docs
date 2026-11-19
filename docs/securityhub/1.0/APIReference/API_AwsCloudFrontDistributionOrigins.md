@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFrontDistributionOrigins
-<a name="API_AwsCloudFrontDistributionOrigins"></a>
 
 A complex type that contains information about origins and origin groups for this CloudFront distribution.
 

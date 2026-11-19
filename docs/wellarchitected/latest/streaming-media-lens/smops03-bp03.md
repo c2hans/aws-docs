@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMOPS03-BP03 Establish war room and incident readiness procedures for high-profile events
-<a name="smops03-bp03"></a>
 
 During large-scale streaming events, establish dedicated war room and incident readiness procedures that coordinate response and drive rapid resolution of any issues. This approach enables structured decision-making and clear communication during critical streaming periods.
 

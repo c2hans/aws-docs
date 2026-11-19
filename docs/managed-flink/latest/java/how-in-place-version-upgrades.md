@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-in-place-v
 ---
 
 # Use in-place version upgrades for Apache Flink
-<a name="how-in-place-version-upgrades"></a>
 
 With in-place version upgrades for Apache Flink, you retain application traceability against a single ARN across Apache Flink versions. This includes snapshots, logs, metrics, tags, Flink configurations, resource limit increases, VPCs, and more.
 

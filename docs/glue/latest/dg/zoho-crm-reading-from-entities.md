@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zoho-crm-reading-from-ent
 ---
 
 # Reading from Zoho CRM entities
-<a name="zoho-crm-reading-from-entities"></a>
 
 **Prerequisite**
 

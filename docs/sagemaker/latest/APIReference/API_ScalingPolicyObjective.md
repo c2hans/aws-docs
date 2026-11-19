@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Scalin
 ---
 
 # ScalingPolicyObjective
-<a name="API_ScalingPolicyObjective"></a>
 
 An object where you specify the anticipated traffic pattern for an endpoint.
 

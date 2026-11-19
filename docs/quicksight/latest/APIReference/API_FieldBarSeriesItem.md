@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Field
 ---
 
 # FieldBarSeriesItem
-<a name="API_FieldBarSeriesItem"></a>
 
 The field series item configuration of a `BarChartVisual`.
 

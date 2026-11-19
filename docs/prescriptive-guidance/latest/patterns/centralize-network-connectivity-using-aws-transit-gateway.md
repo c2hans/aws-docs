@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ce
 ---
 
 # Centralize network connectivity using AWS Transit Gateway
-<a name="centralize-network-connectivity-using-aws-transit-gateway"></a>
 
 *Mydhili Palagummi and Nikhil Marrapu, Amazon Web Services*
 

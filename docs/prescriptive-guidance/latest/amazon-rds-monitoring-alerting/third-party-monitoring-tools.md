@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Third-party monitoring tools
-<a name="third-party-monitoring-tools"></a>
 
 In some scenarios, in addition to the full suite of cloud-native observability and monitoring tools that AWS provides for Amazon RDS, you might want to use monitoring tools from other software vendors. Such scenarios include hybrid deployments, where you might have a number of databases running in your on-premises data center and another set of databases running in the AWS Cloud. If you have already established your corporate observability solution, you might want to continue using your existing tools and extend them to your AWS Cloud deployments. The challenge in setting up a third-party monitoring solution often lies in the safeguards imposed by Amazon RDS as a cloud managed service. For example, you cannot install agent software on the host operating system that runs the DB instance, because access to the database host machine is denied. However, you can integrate many third-party monitoring solutions with Amazon RDS by building on top of CloudWatch and other AWS Cloud services. For example, Amazon RDS metrics, logs, events, and traces can be exported and then imported into the third-party monitoring tool for further analysis, visualization, and alerting. Some of these third-party solutions include Prometheus, Grafana, and Percona.
 

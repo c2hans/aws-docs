@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_RegexMat
 ---
 
 # RegexMatchSetSummary
-<a name="API_waf_RegexMatchSetSummary"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.

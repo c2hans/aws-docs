@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingTyp
 ---
 
 # ListThingTypes
-<a name="API_ListThingTypes"></a>
 
 Lists the existing thing types.
 

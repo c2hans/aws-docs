@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/exercise-1.html
 ---
 
 # Exercise 1: Create a chatbot from a template
-<a name="exercise-1"></a>
 
 In this exercise, you create your first Amazon Lex V2 chatbot and test it in the Amazon Lex V2 console. For this exercise, you use the **OrderFlowers** template, which demonstrates a practical, real-world use case for e-commerce.
 

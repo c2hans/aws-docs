@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/set-up-aws-ac
 ---
 
 # Setting up an AWS account
-<a name="set-up-aws-account"></a>
 
 If you do not have an AWS account, complete the following steps to create one.
 

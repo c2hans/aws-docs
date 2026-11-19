@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/choosing-between-
 ---
 
 # Choosing between input and output overlays
-<a name="choosing-between-input-overlay-and-output-overlay"></a>
 
 You can add still image overlays to your inputs, your outputs, or both. Where you specify your image overlays affects where in your transcoded assets the overlays appear.
 

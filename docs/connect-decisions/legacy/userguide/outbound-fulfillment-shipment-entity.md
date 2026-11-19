@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/outbo
 ---
 
 # outbound\_shipment
-<a name="outbound-fulfillment-shipment-entity"></a>
 
 **Primary key (PK)**
 

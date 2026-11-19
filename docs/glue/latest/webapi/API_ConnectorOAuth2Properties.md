@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectorOAuth2Pr
 ---
 
 # ConnectorOAuth2Properties
-<a name="API_ConnectorOAuth2Properties"></a>
 
 OAuth2 configuration container that defines the authentication properties and flow-specific configurations for OAuth2-based connections.
 

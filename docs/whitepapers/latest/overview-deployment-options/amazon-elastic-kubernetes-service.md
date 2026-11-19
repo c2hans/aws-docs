@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Amazon Elastic Kubernetes Service
-<a name="amazon-elastic-kubernetes-service"></a>
 
  [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/) (Amazon EKS) is a fully-managed, certified [Kubernetes](https://kubernetes.io/) conformant service that simplifies the process of building, securing, operating, and maintaining Kubernetes clusters on AWS. Amazon EKS integrates with core AWS services such as CloudWatch, Auto Scaling Groups, and IAM to provide a seamless experience for monitoring, scaling, and load balancing your containerized applications.
 

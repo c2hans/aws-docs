@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # IdentityPoolShortDescription
-<a name="API_IdentityPoolShortDescription"></a>
 
 A description of the identity pool.
 

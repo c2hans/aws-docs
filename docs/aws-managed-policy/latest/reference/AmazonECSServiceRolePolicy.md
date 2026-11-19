@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonECSServiceRolePolicy
-<a name="AmazonECSServiceRolePolicy"></a>
 
 **Description**: Policy to enable Amazon ECS to manage your cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AgentTools.h
 ---
 
 # Agent tools for ElastiCache
-<a name="AgentTools"></a>
 
 AI coding agents can use ElastiCache through purpose-built integrations from the AWS Agent Toolkit. These integrations provide service-specific guidance, reference material, and safety checks so an agent can evaluate, create, connect to, and operate ElastiCache workloads correctly.
 

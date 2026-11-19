@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Adding new parameters to imported templates with Infrastructure Composer
-<a name="using-composer-services-vpc-import-add"></a>
 
 When you import an existing template with parameters defined, you can also create new parameters. Instead of selecting an existing parameter from the dropdown list, provide a new type and value. The following is an example that creates a new parameter named `MySecurityGroup`:
 

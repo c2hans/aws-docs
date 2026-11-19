@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # AWS Network Security Manager quotas
-<a name="quotas"></a>
 
 Your AWS account has the following default quotas for AWS Network Security Manager. Unless otherwise noted, each quota is per account, per Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CoverageHours
-<a name="API_CoverageHours"></a>
 
 How long a running instance either used a reservation or was On-Demand.
 

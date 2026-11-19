@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation
 ---
 
 # Available foundation models
-<a name="jumpstart-foundation-models-latest"></a>
 
 Amazon SageMaker JumpStart offers state-of-the-art, built-in publicly available and proprietary foundation models to customize and integrate into your generative AI workflows.
 

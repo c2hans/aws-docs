@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InternetG
 ---
 
 # InternetGatewayAttachment
-<a name="API_InternetGatewayAttachment"></a>
 
 Describes the attachment of a VPC to an internet gateway or an egress-only internet gateway.
 

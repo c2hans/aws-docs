@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetConnectAttachment
-<a name="API_GetConnectAttachment"></a>
 
 Returns information about a core network Connect attachment.
 

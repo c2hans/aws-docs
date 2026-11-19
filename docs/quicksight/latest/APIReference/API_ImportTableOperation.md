@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Impor
 ---
 
 # ImportTableOperation
-<a name="API_ImportTableOperation"></a>
 
 A transform operation that imports data from a source table.
 

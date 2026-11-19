@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-rate
 ---
 
 # Understanding rates, discounts, and purchase commitments
-<a name="pc-rates-discounts"></a>
 
 This section outlines AWS rates, discounts, and commitments supported by Pricing Calculator and how they apply to both workload and bill estimate types. Before discount and after discount rates only apply to workload estimates. Bill estimate considers your own rates based on your existing usage and commitments, other discounts, and credits. Your choice of a rate type does not impact the bill estimate calculation.
 

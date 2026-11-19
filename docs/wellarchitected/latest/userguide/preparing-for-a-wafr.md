@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/prepari
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Preparing for a WAFR
-<a name="preparing-for-a-wafr"></a>
 
  It's important not to rush into running a Well-Architected Framework Review (WAFR) without sufficient preparation. Rushing can lead to the process taking longer than expected, which provides a less favorable outcome and makes taking action more difficult.
 

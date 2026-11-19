@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Inval
 ---
 
 # InvalidRequestDetail
-<a name="API_InvalidRequestDetail"></a>
 
 Provides additional detail about why the request failed.
 

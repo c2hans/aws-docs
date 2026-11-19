@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/hierarchy-filter.
 ---
 
 # Hierarchy filters
-<a name="hierarchy-filter"></a>
 
 A *hierarchy filter* lets you offer rich, multi-level filtering in a single compact control. Instead of adding separate filter controls for each level of a dimension, such as Region, Country, and City, you combine them into one control. Readers drill through this control from broadest to most detailed. This reduces clutter on the sheet and guides readers to the data they need in fewer clicks.
 

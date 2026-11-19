@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 1. Providing secure edge computing and connectivity
-<a name="secure-edge"></a>
 
 |  |
 | --- |

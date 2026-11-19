@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Amazon VPC NAT gateways
-<a name="appinsights-metrics-nat-gateways"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

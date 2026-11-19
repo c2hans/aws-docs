@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Defining a variable
-<a name="workflows-working-with-variables-define-input"></a>
 
 You can define variables in two ways:
 + In the `Inputs` section of a workflow action – see [To define a variable in the 'Inputs' section](#workflows-to-define-variable-input)

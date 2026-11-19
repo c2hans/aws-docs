@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/apps-limitations.
 ---
 
 # Limitations of apps in Quick
-<a name="apps-limitations"></a>
 
 The following limitations apply to apps in AWS Quick in its current release.
 

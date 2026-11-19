@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # DatetimeRange
-<a name="API_DatetimeRange"></a>
 
 Describes a time range, in ISO8601-UTC format.
 

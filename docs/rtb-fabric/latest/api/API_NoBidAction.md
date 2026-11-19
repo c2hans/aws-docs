@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_NoBidAction.ht
 ---
 
 # NoBidAction
-<a name="API_NoBidAction"></a>
 
 Describes a no bid action.
 

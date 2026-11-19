@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobDataSetOverrideProperties
-<a name="API_AssetBundleExportJobDataSetOverrideProperties"></a>
 
 Controls how a specific `DataSet` resource is parameterized in the returned CloudFormation template.
 

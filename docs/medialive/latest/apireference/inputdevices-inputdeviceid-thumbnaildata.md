@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 ---
 
 # Input devices: thumbnail data
-<a name="inputdevices-inputdeviceid-thumbnaildata"></a>
 
 ## URI
 <a name="inputdevices-inputdeviceid-thumbnaildata-url"></a>

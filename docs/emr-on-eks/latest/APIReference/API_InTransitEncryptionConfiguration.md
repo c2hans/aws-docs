@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_InTra
 ---
 
 # InTransitEncryptionConfiguration
-<a name="API_InTransitEncryptionConfiguration"></a>
 
 Configurations related to in-transit encryption for the security configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ev
 ---
 
 # EventRuleStatusSummary
-<a name="API_EventRuleStatusSummary"></a>
 
 Provides additional information about the current `EventRule` status.
 

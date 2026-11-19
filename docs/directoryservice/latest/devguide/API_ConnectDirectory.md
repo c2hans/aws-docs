@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Con
 ---
 
 # ConnectDirectory
-<a name="API_ConnectDirectory"></a>
 
 Creates an AD Connector to connect to a self-managed directory.
 

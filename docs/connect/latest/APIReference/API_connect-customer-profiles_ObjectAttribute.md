@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ObjectAttribute
-<a name="API_connect-customer-profiles_ObjectAttribute"></a>
 
 The criteria that a specific object attribute must meet to trigger the destination.
 

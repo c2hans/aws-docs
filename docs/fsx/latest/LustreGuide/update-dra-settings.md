@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/update-dra-settin
 ---
 
 # Updating data repository association settings
-<a name="update-dra-settings"></a>
 
 You can update an existing data repository association's settings using the AWS Management Console, the AWS CLI, and the Amazon FSx API, as shown in the following procedures.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGat
 ---
 
 # HttpGatewayRoute
-<a name="API_HttpGatewayRoute"></a>
 
 An object that represents an HTTP gateway route.
 

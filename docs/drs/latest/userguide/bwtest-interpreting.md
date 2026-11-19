@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/bwtest-interpreting
 ---
 
 # Interpreting the result
-<a name="bwtest-interpreting"></a>
 
 Before you quote a figure, be clear about what it represents and what it does not.
 

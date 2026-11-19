@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # Examples
-<a name="channel-scheduling-create-a-repeating-schedule-example"></a>
 
 Create a schedule repeating every Monday 8:00 PM Pacific Daylight Time (UTC-07:00) for an hour:
 

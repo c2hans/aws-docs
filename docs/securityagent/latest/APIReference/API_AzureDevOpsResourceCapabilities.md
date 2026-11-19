@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Az
 ---
 
 # AzureDevOpsResourceCapabilities
-<a name="API_AzureDevOpsResourceCapabilities"></a>
 
 Capabilities for an integrated Azure DevOps repository.
 

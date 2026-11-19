@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_De
 ---
 
 # DescribeEventSource
-<a name="API_DescribeEventSource"></a>
 
 Returns the full configuration and lifecycle state of an EventSource.
 

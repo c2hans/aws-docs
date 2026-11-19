@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_StopB
 ---
 
 # StopBackupJob
-<a name="API_StopBackupJob"></a>
 
 Attempts to cancel a job to create a one-time backup of a resource.
 

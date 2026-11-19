@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CacheBehavior
-<a name="API_CacheBehavior"></a>
 
 Describes the default cache behavior of an Amazon Lightsail content delivery network (CDN) distribution.
 

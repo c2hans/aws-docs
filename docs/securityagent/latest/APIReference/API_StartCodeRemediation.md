@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_St
 ---
 
 # StartCodeRemediation
-<a name="API_StartCodeRemediation"></a>
 
 Initiates code remediation for one or more security findings. This creates pull requests in integrated repositories to fix the identified vulnerabilities.
 

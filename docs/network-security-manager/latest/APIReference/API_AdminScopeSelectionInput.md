@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AdminScopeSelectionInput
-<a name="API_AdminScopeSelectionInput"></a>
 
 A selection of accounts and organizational units. This is the input form, which uses account and organizational unit IDs.
 

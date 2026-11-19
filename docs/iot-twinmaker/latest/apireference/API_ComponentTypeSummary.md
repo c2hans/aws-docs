@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Co
 ---
 
 # ComponentTypeSummary
-<a name="API_ComponentTypeSummary"></a>
 
 An object that contains information about a component type.
 

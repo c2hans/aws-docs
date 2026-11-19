@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Integ
 ---
 
 # IntegerDatasetParameter
-<a name="API_IntegerDatasetParameter"></a>
 
 An integer parameter for a dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # People-based detection
-<a name="people-based-detection"></a>
 
  Up to this point, we have discussed technology-based detection. The other important source of detection comes from people inside or outside the customer’s organization. *Insiders* can be defined as an employee or contractor, and *outsiders* are entities such as security researchers, law enforcement, the news, and social media.
 

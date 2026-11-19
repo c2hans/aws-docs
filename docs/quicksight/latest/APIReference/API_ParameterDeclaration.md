@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # ParameterDeclaration
-<a name="API_ParameterDeclaration"></a>
 
 The declaration definition of a parameter.
 

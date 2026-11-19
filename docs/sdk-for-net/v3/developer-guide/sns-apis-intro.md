@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # Sending Notifications From the Cloud Using Amazon Simple Notification Service
-<a name="sns-apis-intro"></a>
 
 **Note**
 The information in this topic is specific to projects based on .NET Framework and the AWS SDK for .NET version 3.3 and earlier.

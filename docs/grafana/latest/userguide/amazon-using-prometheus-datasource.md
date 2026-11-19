@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/amazon-using-pr
 ---
 
 # Using the Prometheus data source
-<a name="amazon-using-prometheus-datasource"></a>
 
 **Note**
 The Amazon Managed Service for Prometheus data source is available starting in Amazon Managed Grafana version 12.

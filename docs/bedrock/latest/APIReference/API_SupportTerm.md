@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_SupportT
 ---
 
 # SupportTerm
-<a name="API_SupportTerm"></a>
 
 Describes a support term.
 

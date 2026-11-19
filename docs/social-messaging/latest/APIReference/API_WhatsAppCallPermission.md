@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppCallPermission
-<a name="API_WhatsAppCallPermission"></a>
 
 The current calling permission state for a business phone number and a specific WhatsApp end user.
 

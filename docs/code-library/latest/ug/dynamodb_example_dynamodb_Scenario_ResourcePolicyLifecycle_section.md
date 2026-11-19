@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/dynamodb_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Manage DynamoDB resource-based policies using AWS Command Line Interface v2
-<a name="dynamodb_example_dynamodb_Scenario_ResourcePolicyLifecycle_section"></a>
 
 The following code example shows how to manage the complete lifecycle of resource-based policies for DynamoDB tables.
 + Create a table with a resource policy.

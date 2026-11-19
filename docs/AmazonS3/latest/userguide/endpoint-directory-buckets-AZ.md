@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/endpoint-direc
 ---
 
 # Regional and Zonal endpoints for directory buckets in an Availability Zone
-<a name="endpoint-directory-buckets-AZ"></a>
 
 To access your objects and directory buckets stored in S3 Express One Zone, you use gateway VPC endpoints. Directory buckets use Regional and Zonal API endpoints. Depending on the Amazon S3 API operation that you use, either a Regional or Zonal endpoint is required. There is no additional charge for using gateway endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Fas
 ---
 
 # FastLaunchConfiguration
-<a name="API_FastLaunchConfiguration"></a>
 
 Defines and configures EC2 Fast Launch for output Windows AMIs.
 

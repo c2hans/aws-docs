@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-interface-end
 ---
 
 # Create a VPC Endpoint
-<a name="mlflow-interface-endpoint-create"></a>
 
 You can create an interface endpoint to connect to SageMaker AI MLflow. For instructions, see [Creating an interface endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint). Make sure that you create interface endpoints for all of the subnets in your VPC from which you want to connect to SageMaker AI MLflow.
 

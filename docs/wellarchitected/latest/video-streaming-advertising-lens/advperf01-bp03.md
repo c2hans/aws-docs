@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVPERF01-BP03 Design for low latency with appropriate compute, storage, and network considerations
-<a name="advperf01-bp03"></a>
 
  Use purpose-built AWS compute, storage, and network features to minimize latency at every layer of your advertising stack. When you match each infrastructure component to the demands of ad serving and bidding workloads, you get the consistent single-digit-millisecond response times that programmatic advertising requires.
 

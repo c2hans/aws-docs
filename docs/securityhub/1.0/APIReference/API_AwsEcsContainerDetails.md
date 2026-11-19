@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsC
 ---
 
 # AwsEcsContainerDetails
-<a name="API_AwsEcsContainerDetails"></a>
 
 Provides information about an Amazon ECS container.
 

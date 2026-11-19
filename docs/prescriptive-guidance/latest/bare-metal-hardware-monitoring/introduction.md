@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bare-metal-
 ---
 
 # Bare-metal hardware monitoring on AWS by using Telegraf and Redfish
-<a name="introduction"></a>
 
 *Tamilselvan P, Naveen Suthar, and RAJNEESH TYAGI, Amazon Web Services*
 

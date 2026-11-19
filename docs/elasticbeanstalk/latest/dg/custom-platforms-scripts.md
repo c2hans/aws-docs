@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/custom-platfo
 ---
 
 # Platform script tools for your Elastic Beanstalk environments
-<a name="custom-platforms-scripts"></a>
 
 This topic describes tools that AWS Elastic Beanstalk provides for environments that use Amazon Linux platforms. The tools are located on the Amazon EC2 instances of the Elastic Beanstalk environments.
 

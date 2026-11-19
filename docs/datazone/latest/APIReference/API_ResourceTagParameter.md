@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Resourc
 ---
 
 # ResourceTagParameter
-<a name="API_ResourceTagParameter"></a>
 
 The resource tag parameter of the project profile.
 

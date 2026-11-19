@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobManif
 ---
 
 # JobManifestGeneratorFilter
-<a name="API_control_JobManifestGeneratorFilter"></a>
 
 The filter used to describe a set of objects for the job's manifest.
 

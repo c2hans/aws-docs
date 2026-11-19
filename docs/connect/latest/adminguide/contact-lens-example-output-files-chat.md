@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-e
 ---
 
 # Example conversational analytics output files for a chat analyzed by conversational analytics
-<a name="contact-lens-example-output-files-chat"></a>
 
 This section shows an example schema for a chat conversation that has been analyzed by conversational analytics. The example shows inferred sentiment, matched categories, contact summary, and response time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/co
 ---
 
 # Concepts in the AWS Encryption SDK
-<a name="concepts"></a>
 
 This section introduces the concepts used in the AWS Encryption SDK, and provides a glossary and reference. It's designed to help you understand how the AWS Encryption SDK works and the terms we use to describe it.
 

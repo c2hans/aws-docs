@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/drupa
 ---
 
 # CloudWatch pipelines configuration for Drupal Core
-<a name="drupal-core-pipeline-setup"></a>
 
 Collects audit logs from Drupal Core using basic authentication.
 

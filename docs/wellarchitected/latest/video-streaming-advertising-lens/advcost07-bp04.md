@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVCOST07-BP04 Use serverless pricing engines that scale with transaction volume
-<a name="advcost07-bp04"></a>
 
  You pay continual hosting costs for linear TV pricing engines used only during upfront season, even though the workload is episodic. Serverless pricing engines reduce idle compute costs during off-peak periods.
 

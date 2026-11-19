@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Authenticating requests for Amazon SQS
-<a name="sqs-api-request-authentication"></a>
 
 Authentication is the process of identifying and verifying the party that sends a request. During the first stage of authentication, AWS verifies the identity of the producer and whether the producer is [registered to use AWS](https://aws.amazon.com/) (for more information, see [Setting up Amazon SQS](sqs-setting-up.md)). Next, AWS abides by the following procedure:
 

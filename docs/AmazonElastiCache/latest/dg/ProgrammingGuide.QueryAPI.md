@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ProgrammingG
 ---
 
 # Using the query API
-<a name="ProgrammingGuide.QueryAPI"></a>
 
 ## Query parameters
 <a name="query-parameters"></a>

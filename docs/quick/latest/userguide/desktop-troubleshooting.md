@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-troublesh
 ---
 
 # Troubleshooting
-<a name="desktop-troubleshooting"></a>
 
 ## Installation and launch issues
 <a name="desktop-ts-install"></a>

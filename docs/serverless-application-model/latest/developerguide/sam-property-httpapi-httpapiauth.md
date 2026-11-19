@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # HttpApiAuth
-<a name="sam-property-httpapi-httpapiauth"></a>
 
 Configure authorization to control access to your Amazon API Gateway HTTP API.
 

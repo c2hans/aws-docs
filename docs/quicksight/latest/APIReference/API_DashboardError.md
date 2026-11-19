@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardError
-<a name="API_DashboardError"></a>
 
 Dashboard error.
 

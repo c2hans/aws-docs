@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ScalingPolicy
-<a name="API_ScalingPolicy"></a>
 
 Rule that controls how a fleet is scaled. Scaling policies are uniquely identified by the combination of name and fleet ID.
 

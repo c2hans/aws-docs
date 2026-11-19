@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/paths-code-hook.html
 ---
 
 # Invoke dialog code hook
-<a name="paths-code-hook"></a>
 
 At each step in the conversation when Amazon Lex V2 sends a message to the user, you can use a Lambda function as the next step in the conversation. You can use the function to implement business logic based on current state of the conversation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/cw-exampl
 ---
 
 # Sending events to Amazon CloudWatch Events with AWS SDK for PHP Version 3
-<a name="cw-examples-sending-events"></a>
 
 CloudWatch Events delivers a near real-time stream of system events that describe changes in Amazon Web Services (AWS) resources to any of various targets. Using simple rules, you can match events and route them to one or more target functions or streams.
 

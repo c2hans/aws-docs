@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_DeleteGroup.
 ---
 
 # DeleteGroup
-<a name="API_DeleteGroup"></a>
 
 Deletes the specified resource group. Deleting a resource group does not delete any resources that are members of the group; it only deletes the group structure.
 

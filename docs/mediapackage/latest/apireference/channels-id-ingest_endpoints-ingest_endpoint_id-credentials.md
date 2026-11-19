@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/apireference/channel
 ---
 
 # Channels id Ingest\_endpoints ingest\_endpoint\_id Credentials
-<a name="channels-id-ingest_endpoints-ingest_endpoint_id-credentials"></a>
 
 ## URI
 <a name="channels-id-ingest_endpoints-ingest_endpoint_id-credentials-url"></a>

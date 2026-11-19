@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Test the Lambda Function
-<a name="integrations-kinesis-testing"></a>
 
 After you create the function, you can test it by adding a new record to the data stream using the AWS CLI:
 

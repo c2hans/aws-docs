@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-3
 ---
 
 # Using DeepAR with the IVS Broadcast SDK
-<a name="broadcast-3p-camera-filters-integrating-deepar"></a>
 
 This document explains how to use the DeepAR SDK with the IVS broadcast SDK.
 

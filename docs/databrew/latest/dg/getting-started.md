@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/getting-started.html
 ---
 
 # Getting started with AWS Glue DataBrew
-<a name="getting-started"></a>
 
 You can use the following tutorial to guide you in creating your first DataBrew project. You load a sample dataset, run transformations on that dataset, build a recipe to capture those transformations, and run a job to write the transformed data to Amazon S3.
 

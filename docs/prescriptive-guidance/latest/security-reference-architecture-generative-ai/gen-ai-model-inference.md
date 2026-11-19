@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 1. Providing developers and data scientists secure access to generative AI FMs (model inference)
-<a name="gen-ai-model-inference"></a>
 
 |  |
 | --- |

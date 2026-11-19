@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchGetBlueprint
 ---
 
 # BatchGetBlueprints
-<a name="API_BatchGetBlueprints"></a>
 
 Retrieves information about a list of blueprints.
 

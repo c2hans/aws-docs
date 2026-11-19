@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-uss-rtmp-vpc.h
 ---
 
 # Ensure correct setup on the upstream system
-<a name="setup-uss-rtmp-vpc"></a>
 
 You must make sure that the upstream system sets up correctly with your VPC and pushes content to the correct locations in MediaLive.
 

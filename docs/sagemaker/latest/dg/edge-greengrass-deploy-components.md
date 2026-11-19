@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-greengrass-depl
 ---
 
 # Deploy the components to your device
-<a name="edge-greengrass-deploy-components"></a>
 
 Deploy your components with the AWS IoT console or with the AWS CLI.
 

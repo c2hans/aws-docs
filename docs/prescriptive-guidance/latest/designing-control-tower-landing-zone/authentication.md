@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Authentication and authorization
-<a name="authentication"></a>
 
 Central cloud administrators and end users can use AWS IAM Identity Center to manage access to multiple AWS accounts and business applications. When you set up a landing zone, AWS Control Tower gives you two options for authentication:
 + AWS managed account access with IAM Identity Center

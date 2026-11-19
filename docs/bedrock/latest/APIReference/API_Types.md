@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Types.ht
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon Bedrock:
 +  [AccountEnforcedGuardrailInferenceInputConfiguration](API_AccountEnforcedGuardrailInferenceInputConfiguration.md)
@@ -389,6 +388,7 @@ The following data types are supported by Agents for Amazon Bedrock:
 +  [Message](API_agent_Message.md)
 +  [MetadataAttribute](API_agent_MetadataAttribute.md)
 +  [MetadataAttributeValue](API_agent_MetadataAttributeValue.md)
++  [MetadataConfiguration](API_agent_MetadataConfiguration.md)
 +  [MetadataConfigurationForReranking](API_agent_MetadataConfigurationForReranking.md)
 +  [MismatchedNodeInputTypeFlowValidationDetails](API_agent_MismatchedNodeInputTypeFlowValidationDetails.md)
 +  [MismatchedNodeOutputTypeFlowValidationDetails](API_agent_MismatchedNodeOutputTypeFlowValidationDetails.md)

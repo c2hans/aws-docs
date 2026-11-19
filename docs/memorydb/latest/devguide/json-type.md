@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-type.html
 ---
 
 # JSON.TYPE
-<a name="json-type"></a>
 
 Report type of the values at the given path.
 

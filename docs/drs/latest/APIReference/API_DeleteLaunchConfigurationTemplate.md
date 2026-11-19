@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DeleteLaunch
 ---
 
 # DeleteLaunchConfigurationTemplate
-<a name="API_DeleteLaunchConfigurationTemplate"></a>
 
 Deletes a single Launch Configuration Template by ID.
 

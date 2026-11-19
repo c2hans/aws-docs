@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Manage keywords for a phone pool
-<a name="nx-features-keywords-pool"></a>
 
 Use the AWS End User Messaging console or AWS CLI to add, view, edit, and delete the keyword responses for a phone pool. When you manage a keyword on a pool, the change applies to the origination identities in that pool.
 

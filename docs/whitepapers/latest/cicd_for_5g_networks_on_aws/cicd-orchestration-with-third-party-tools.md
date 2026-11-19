@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # CI/CD orchestration with third party and open-source tools
-<a name="cicd-orchestration-with-third-party-tools"></a>
 
 The orchestration layer uses IaC to deploy and configure the underlying infrastructure required to run the 5G network functions. This layer should be designed to be modular, portable and reusable.
 

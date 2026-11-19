@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-reboot-bro
 ---
 
 # Reboot a broker for an Amazon MSK cluster
-<a name="msk-reboot-broker"></a>
 
 Use this Amazon MSK operation when you want to reboot a broker for your MSK cluster. To reboot a broker for a cluster, make sure that the cluster in the `ACTIVE` state.
 

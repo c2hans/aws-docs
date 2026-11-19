@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ctr-contact-re
 ---
 
 # Contact record templates in Connect Customer Customer Profiles
-<a name="ctr-contact-record-template"></a>
 
 A contact record is a profile object that captures contact trace record (CTR) data from contacts, such as phone calls or chats. Connect Customer Customer Profiles uses contact records to document and analyze your interactions with customers.
 

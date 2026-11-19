@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Configu
 ---
 
 # ConfigurableActionParameter
-<a name="API_ConfigurableActionParameter"></a>
 
 The details of the parameters for the configurable environment action.
 

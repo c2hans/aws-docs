@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/baseline-a
 ---
 
 # Examples for baseline API usage
-<a name="baseline-api-examples"></a>
 
  This section contains examples of input and output parameters for the AWS Control Tower baseline APIs.
 

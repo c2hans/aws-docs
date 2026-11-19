@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DescribeVpcEndpoints
-<a name="API_DescribeVpcEndpoints"></a>
 
 Describes one or more Amazon OpenSearch Service-managed VPC endpoints.
 

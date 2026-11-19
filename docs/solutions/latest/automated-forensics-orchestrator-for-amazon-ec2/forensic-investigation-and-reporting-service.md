@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Forensic investigation and reporting service
-<a name="forensic-investigation-and-reporting-service"></a>
 
 The diagram below represents the logical interaction view of forensic memory and disk investigation service. Once forensic acquisition is completed, forensic investigation flow is initiated, isolation of EC2 instance or EKS cluster is done based on the AWS Security Hub event type.
 

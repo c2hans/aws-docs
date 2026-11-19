@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # MessageTemplateVersionSummary
-<a name="API_amazon-q-connect_MessageTemplateVersionSummary"></a>
 
 The summary of the message template version.
 

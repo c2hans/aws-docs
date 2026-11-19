@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-pyspark-tran
 ---
 
 # RemoveDuplicates class
-<a name="aws-glue-api-pyspark-transforms-RemoveDuplicates"></a>
 
  The `RemoveDuplicates` transform deletes an entire row, if a duplicate value is encountered in a selected source column.
 

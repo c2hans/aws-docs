@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/custom-min-
 ---
 
 # Minimum aggregation thresholds
-<a name="custom-min-agg-thresholds"></a>
 
 Data aggregation is a privacy-enhancing technique that helps enforce anonymization by preventing queries from returning results about individuals or small groups. When minimum aggregation thresholds are configured on your tables, AWS Clean Rooms suppresses results that do not meet the data provider's specified minimum threshold.
 

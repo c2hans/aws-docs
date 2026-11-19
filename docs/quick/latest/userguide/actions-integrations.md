@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/actions-integrati
 ---
 
 # Integrations
-<a name="actions-integrations"></a>
 
 ## AWS Services
 <a name="aws-services"></a>

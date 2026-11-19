@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Statele
 ---
 
 # StatelessCustomActionDefinition
-<a name="API_StatelessCustomActionDefinition"></a>
 
 The definition of a custom action that can be used for stateless packet handling.
 

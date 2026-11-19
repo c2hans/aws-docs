@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-data-sou
 ---
 
 # Connect your knowledge base to a custom data source
-<a name="custom-data-source-connector"></a>
 
 **Important**
 For optimized retrieval accuracy and a managed experience, we recommend [Amazon Bedrock Managed Knowledge Base](kb-build-managed.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SmimeSign
 ---
 
 # SmimeSigningScheme
-<a name="API_SmimeSigningScheme"></a>
 
 Specifies that Amazon SES API v2 signs messages sent with the configuration set using S/MIME.
 

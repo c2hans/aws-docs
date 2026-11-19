@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/video-attribute.html
 ---
 
 # Setting border and corner attributes for compositing in Amazon Chime SDK meetings
-<a name="video-attribute"></a>
 
 As desired, you can use the `VideoAttribute` parameter to specify border and corner settings for your video tiles. You can specify colors, widths, and rounded corners. You can also specify a highlight color, and the border changes to that color when someone speaks.
 

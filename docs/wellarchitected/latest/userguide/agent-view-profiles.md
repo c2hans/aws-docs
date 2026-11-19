@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-v
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Viewing your agent profiles
-<a name="agent-view-profiles"></a>
 
 ## Console
 <a name="agent-view-profiles-console"></a>

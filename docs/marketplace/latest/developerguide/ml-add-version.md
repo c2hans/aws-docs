@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/ml-add
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Add a new version
-<a name="ml-add-version"></a>
 
 You can use the Catalog API or the AWS Marketplace Management Portal to add a new version to a machine learning product. For more information about using the portal, refer to [Adding a new version](https://docs.aws.amazon.com/marketplace/latest/userguide/machine-learning-products.html) in the *AWS Marketplace Seller Guide*.
 

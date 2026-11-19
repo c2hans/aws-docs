@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Component
 ---
 
 # ComponentLatestVersion
-<a name="API_ComponentLatestVersion"></a>
 
 Contains information about the latest version of a component.
 

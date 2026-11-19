@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/example-rou
 ---
 
 # Example: Route analysis for peered transit gateways
-<a name="example-route-analyzer"></a>
 
 In the following example, transit gateway 1 has two VPC attachments, and a peering attachment to transit gateway 2. Transit gateway 2 has a Site-to-Site VPN attachment to your on-premises network. You want to use the Route Analyzer to ensure that the VPCs and Site-to-Site VPN connections can route traffic to each other through the transit gateways.
 

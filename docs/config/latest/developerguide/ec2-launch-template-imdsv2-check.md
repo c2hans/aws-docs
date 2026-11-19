@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-
 ---
 
 # ec2-launch-template-imdsv2-check
-<a name="ec2-launch-template-imdsv2-check"></a>
 
 Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2). The rule is NON\_COMPLIANT if 'Metadata version' is not specified as V2 (IMDSv2).
 

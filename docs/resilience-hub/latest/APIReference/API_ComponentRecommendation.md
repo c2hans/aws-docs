@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_C
 ---
 
 # ComponentRecommendation
-<a name="API_ComponentRecommendation"></a>
 
 Defines recommendations for an AWS Resilience Hub AppComponent, returned as an object. This object contains component names, configuration recommendations, and recommendation statuses.
 

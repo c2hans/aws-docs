@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/reve
 ---
 
 # Revenue Attribution ID
-<a name="revenue-attribution-id"></a>
 
 A revenue attribution ID is a unique identifier that associates your AWS Marketplace offers and/or APN Customer Engagements (ACE) opportunities to a Marketplace product listing allowing AWS to determine the AWS revenue generated from those offers and opportunities. Revenue attribution builds on top of product-level Partner Revenue Measurement (PRM) implementation. PRM is your foundation — capturing total attributed revenue across your products or service delivery engagements. Revenue attribution is your deal-level overlay — assisting AWS in mapping revenue to specific offers and opportunities for which you are requesting AWS deal-level incentives.
 

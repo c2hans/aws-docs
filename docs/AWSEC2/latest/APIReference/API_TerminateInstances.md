@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Terminate
 ---
 
 # TerminateInstances
-<a name="API_TerminateInstances"></a>
 
 Terminates (deletes) the specified instances. This operation is [idempotent](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html); if you terminate an instance more than once, each call succeeds.
 

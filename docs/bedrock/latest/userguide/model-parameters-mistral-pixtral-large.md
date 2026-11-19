@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Pixtral Large (25.02) parameters and inference
-<a name="model-parameters-mistral-pixtral-large"></a>
 
 Pixtral Large 25.02 is a 124B parameter multimodal model that combines state-of-the-art image understanding with powerful text processing capabilities. AWS is the first cloud provider to deliver Pixtral Large (25.02) as a fully-managed, serverless model. This model delivers frontier-class performance when performing document analysis, chart interpretation, and natural image understanding tasks, while maintaining the advanced text capabilities of Mistral Large 2.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSec
 ---
 
 # DeleteSecondaryNetwork
-<a name="API_DeleteSecondaryNetwork"></a>
 
 Deletes a secondary network. You must delete all secondary subnets in the secondary network before you can delete the secondary network.
 

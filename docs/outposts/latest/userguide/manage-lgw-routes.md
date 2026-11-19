@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/userguide/manage-lgw-rou
 ---
 
 # Local gateway route table routes
-<a name="manage-lgw-routes"></a>
 
 You can create local gateway route tables and inbound routes to network interfaces on your Outpost. You can also modify an existing local gateway inbound route to change the target network interface.
 

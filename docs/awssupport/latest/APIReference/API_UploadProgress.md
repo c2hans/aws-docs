@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Uploa
 ---
 
 # UploadProgress
-<a name="API_UploadProgress"></a>
 
 The progress of a multipart attachment upload, returned by [DescribeAttachmentUploadStatus](API_DescribeAttachmentUploadStatus.md).
 

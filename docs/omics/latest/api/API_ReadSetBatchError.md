@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReadSetBatchError.h
 ---
 
 # ReadSetBatchError
-<a name="API_ReadSetBatchError"></a>
 
 An error from a batch read set operation.
 

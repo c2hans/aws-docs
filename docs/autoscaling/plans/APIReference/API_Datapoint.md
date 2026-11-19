@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Datap
 ---
 
 # Datapoint
-<a name="API_Datapoint"></a>
 
 Represents a single value in the forecast data used for predictive scaling.
 

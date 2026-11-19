@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Crede
 ---
 
 # Credentials
-<a name="API_Credentials"></a>
 
 The structure containing the session token being returned.
 

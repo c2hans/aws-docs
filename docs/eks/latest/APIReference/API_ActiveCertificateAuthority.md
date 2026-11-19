@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ActiveCertif
 ---
 
 # ActiveCertificateAuthority
-<a name="API_ActiveCertificateAuthority"></a>
 
 Identifies the certificate authority that is currently signing certificates for the cluster.
 

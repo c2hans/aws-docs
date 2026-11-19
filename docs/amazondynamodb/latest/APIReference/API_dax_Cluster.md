@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # Cluster
-<a name="API_dax_Cluster"></a>
 
 Contains all of the attributes of a specific DAX cluster.
 

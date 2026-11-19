@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/cw-example-log
 ---
 
 # Example CloudWatch log entries
-<a name="cw-example-logs"></a>
 
 This topic presents example log entries.
 

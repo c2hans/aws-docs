@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-te
 ---
 
 # Common Amazon Cognito terms and concepts
-<a name="cognito-terms"></a>
 
 Amazon Cognito provides credentials for web and mobile apps. It draws from and builds on terms that are common in *identity and access management*. Many guides to universal identity and access terms are available. Some examples are:
 + [Terminology](https://bok.idpro.org/article/id/41/) in the IDPro Body of Knowledge

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFle
 ---
 
 # DeleteFleetSuccessItem
-<a name="API_DeleteFleetSuccessItem"></a>
 
 Describes an EC2 Fleet that was successfully deleted.
 

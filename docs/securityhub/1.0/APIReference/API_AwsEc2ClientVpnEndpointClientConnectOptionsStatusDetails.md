@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2C
 ---
 
 # AwsEc2ClientVpnEndpointClientConnectOptionsStatusDetails
-<a name="API_AwsEc2ClientVpnEndpointClientConnectOptionsStatusDetails"></a>
 
  Describes the status of the Client VPN endpoint attribute.
 

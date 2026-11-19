@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaVersionErro
 ---
 
 # SchemaVersionErrorItem
-<a name="API_SchemaVersionErrorItem"></a>
 
 An object that contains the error details for an operation on a schema version.
 

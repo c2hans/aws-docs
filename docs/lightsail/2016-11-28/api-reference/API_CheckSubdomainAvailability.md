@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CheckSubdomainAvailability
-<a name="API_CheckSubdomainAvailability"></a>
 
 Checks whether a Lightsail subdomain is available to create. Optionally, reserves the subdomain for your account for 15 minutes.
 

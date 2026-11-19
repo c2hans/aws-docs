@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateS
 ---
 
 # UpdateServer
-<a name="API_UpdateServer"></a>
 
 Updates the file transfer protocol-enabled server's properties after that server has been created.
 

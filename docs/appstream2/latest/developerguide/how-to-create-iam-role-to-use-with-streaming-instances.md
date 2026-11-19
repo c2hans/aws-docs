@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/how-to-
 ---
 
 # How to Create an IAM Role to Use With WorkSpaces Applications Streaming Instances
-<a name="how-to-create-iam-role-to-use-with-streaming-instances"></a>
 
 This topic describes how to create a new IAM role so that you can use it with image builders and fleet streaming instances.
 

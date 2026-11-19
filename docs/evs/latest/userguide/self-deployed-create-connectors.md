@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/self-deployed-creat
 ---
 
 # Step 6: Create connectors
-<a name="self-deployed-create-connectors"></a>
 
 A connector is an Amazon Elastic VMware Service sub-resource that represents a persistent connection from Amazon EVS to a specific VMware Cloud Foundation (VCF) management appliance. Amazon EVS uses connectors to monitor your deployment. Create them after VCF is installed and its management appliances are reachable over your VCF management network. You can create connectors with the Amazon EVS console or the AWS CLI. For more information, see [Manage connectors and credentials](connectors-overview.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/using-key
 ---
 
 # Using keyword filters for more accurate answers and customizing `"don’t know"` answers
-<a name="using-keyword-filters-for"></a>
 
 The keyword filter feature helps the guidance to be more accurate when answering questions with OpenSearch Service, and to admit more readily when it doesn’t know the answer.
 

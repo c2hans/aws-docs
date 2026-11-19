@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # The FHIR Subscription lifecycle with AWS HealthLake
-<a name="managing-fhir-subscriptions-lifecycle"></a>
 
 Follow these steps to understand the FHIR Subscription lifecycle:
 

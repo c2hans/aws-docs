@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Solr schema
-<a name="solr-schema"></a>
 
 The schema for a Solr collection is defined in `schema.xml`, which contains definitions for fields and field types. The schema consists of the following elements: `fieldType`, `field`, `copyField`, `dynamicField`, `similarity`, and `uniqueKey`. The following sections describe and provide examples of schema elements. For an example of the full schema, see the [appendix](appendix.md). For more information, see [Schema Elements](https://solr.apache.org/guide/solr/latest/indexing-guide/schema-elements.html) in the Solr documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/FileSharePrexi
 ---
 
 # Using file shares on buckets with pre-existing objects
-<a name="FileSharePrexistingObjects"></a>
 
 You can export a file share on an Amazon S3 bucket with objects created outside of the File Gateway using either NFS or SMB. Objects in the bucket that were created outside of the gateway display as files in either the NFS or SMB file system when your file system clients access them. Standard Portable Operating System Interface (POSIX) access and permissions are used in the file share. When you write files back to an Amazon S3 bucket, the files assume the properties and access rights that you give them.
 

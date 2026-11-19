@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/application-source-server-
 ---
 
 # Review source server data replication status
-<a name="application-source-server-migration-metrics-drs"></a>
 
 The source server **Data replication status** migration metric presents an aggregated overview of the application associated servers data replication status. You can look up an individual source server's **Data replication status** at the **Source servers** table at the bottom of the page.
 

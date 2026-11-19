@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Disk.html
 ---
 
 # Disk
-<a name="API_Disk"></a>
 
 The disk identifier.
 

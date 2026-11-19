@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # VideoSegment
-<a name="API_agent-runtime_VideoSegment"></a>
 
 Contains information about a video segment retrieved from a knowledge base, including its location and summary.
 

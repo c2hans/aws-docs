@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/attachments
 ---
 
 # Attachments
-<a name="attachments"></a>
 
  Your incident responders can add attachments to a case that help other incident responders with their investigation for self-managed cases.
 

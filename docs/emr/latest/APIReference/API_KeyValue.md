@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_KeyValue.htm
 ---
 
 # KeyValue
-<a name="API_KeyValue"></a>
 
 A key-value pair.
 

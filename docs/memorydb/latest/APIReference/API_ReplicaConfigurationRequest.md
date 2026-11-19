@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Replica
 ---
 
 # ReplicaConfigurationRequest
-<a name="API_ReplicaConfigurationRequest"></a>
 
 A request to configure the number of replicas in a shard
 

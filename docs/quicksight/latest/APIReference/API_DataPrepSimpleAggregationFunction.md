@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPrepSimpleAggregationFunction
-<a name="API_DataPrepSimpleAggregationFunction"></a>
 
 A simple aggregation function that performs standard statistical operations on a column.
 

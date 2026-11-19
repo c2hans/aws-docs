@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mainten
 ---
 
 # Maintenance window scheduling and active period options
-<a name="maintenance-windows-schedule-options"></a>
 
 When you create a maintenance window, you must specify how often the maintenance window runs by using a [Cron or rate expression](reference-cron-and-rate-expressions.md). Optionally, you can specify a date range during which the maintenance window can run on its regular schedule and a time zone on which to base that regular schedule.
 

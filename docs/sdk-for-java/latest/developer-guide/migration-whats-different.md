@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # What's different between the AWS SDK for Java 1.x and 2.x
-<a name="migration-whats-different"></a>
 
 This section describes the main changes to be aware of when converting an application from using the AWS SDK for Java version 1.x to version 2.x.
 

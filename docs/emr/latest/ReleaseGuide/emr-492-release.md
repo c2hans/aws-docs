@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-492-release.
 ---
 
 # Amazon EMR release 4.9.2
-<a name="emr-492-release"></a>
 
 ## 4.9.2 application versions
 <a name="emr-492-app-versions"></a>

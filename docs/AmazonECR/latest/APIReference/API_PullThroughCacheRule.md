@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PullTh
 ---
 
 # PullThroughCacheRule
-<a name="API_PullThroughCacheRule"></a>
 
 The details of a pull through cache rule.
 

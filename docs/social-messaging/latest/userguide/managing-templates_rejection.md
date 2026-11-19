@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Reasons why a template is rejected in WhatsApp
-<a name="managing-templates_rejection"></a>
 
 If your message template is reviewed and rejected by Meta, you will receive an email explaining why the template was rejected. You can appeal the rejection or modify your message template. These are some of the common reasons Meta might reject a message template:
 + Variable parameters contain special characters, such as a \#, $, or %.

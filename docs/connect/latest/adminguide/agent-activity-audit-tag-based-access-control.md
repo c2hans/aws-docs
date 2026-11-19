@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-activity
 ---
 
 # Agent activity audit tag-based access control in Connect Customer
-<a name="agent-activity-audit-tag-based-access-control"></a>
 
 You can use resource tags and access control tags to apply granular access to users for the agent activity audit report. For example, you can control who has access to view agent status history for specific users in the report. The following images provide example views of the agent activity audit report with and without tag-based access controls:
 

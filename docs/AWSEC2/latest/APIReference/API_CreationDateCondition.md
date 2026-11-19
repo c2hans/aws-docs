@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreationD
 ---
 
 # CreationDateCondition
-<a name="API_CreationDateCondition"></a>
 
 The maximum age for allowed images.
 

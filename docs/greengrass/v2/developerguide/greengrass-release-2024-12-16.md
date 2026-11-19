@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Release: AWS IoT Greengrass Core v2.14.0 software update on December 16, 2024
-<a name="greengrass-release-2024-12-16"></a>
 
 This release provides version 2.14.0 of the Greengrass nucleus component, and new AWS IoT Greengrass nucleus lite updates. The AWS IoT Greengrass nucleus lite is a new runtime, available for AWS IoT Greengrass version 2. It provides a reduced memory footprint alternative. This is a good option for resource-constrained devices. It implements a subset of the nucleus functionality with increased featured compatibility planned for future releases. The source code is available now on [Github](https://github.com/aws-greengrass/aws-greengrass-lite). With the nucleus lite runtime you can:
 + Deploy components to Greengrass core devices. Use the same recipe format, though some advanced features may not be available yet.

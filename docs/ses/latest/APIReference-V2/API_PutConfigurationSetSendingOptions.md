@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfig
 ---
 
 # PutConfigurationSetSendingOptions
-<a name="API_PutConfigurationSetSendingOptions"></a>
 
 Enable or disable email sending for messages that use a particular configuration set in a specific AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Postgre
 ---
 
 # Examples: Invoking Lambda functions from your Aurora PostgreSQL DB cluster
-<a name="PostgreSQL-Lambda-examples"></a>
 
 Following, you can find several examples of calling the [aws\_lambda.invoke](PostgreSQL-Lambda-functions.md#aws_lambda.invoke) function. Most of the examples use the composite structure `aws_lambda_arn_1` that you create in [Step 4: Use Lambda helper functions with your Aurora PostgreSQL DB cluster (Optional)](PostgreSQL-Lambda.md#PostgreSQL-Lambda-specify-function) to simplify passing the function details. For an example of asynchronous invocation, see [Example: Asynchronous (Event) invocation of Lambda functions](#PostgreSQL-Lambda-Event). All the other examples listed use synchronous invocation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdminDeleteUser
-<a name="API_AdminDeleteUser"></a>
 
 Deletes a user profile in your user pool.
 

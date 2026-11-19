@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/managed-entitle
 ---
 
 # Troubleshooting
-<a name="managed-entitlements-troubleshooting"></a>
 
 This section provides solutions to common issues you may encounter when using Managed Entitlements for Amazon Bedrock.
 

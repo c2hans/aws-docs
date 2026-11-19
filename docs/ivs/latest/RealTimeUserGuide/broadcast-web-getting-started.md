@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-w
 ---
 
 # Getting Started​ with the IVS Web Broadcast SDK \| Real-Time Streaming
-<a name="broadcast-web-getting-started"></a>
 
 This document takes you through the steps involved in getting started with the IVS real-time streaming Web broadcast SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LongF
 ---
 
 # LongFormatText
-<a name="API_LongFormatText"></a>
 
 The text format for a subtitle.
 

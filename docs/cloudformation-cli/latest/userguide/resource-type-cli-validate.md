@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # validate
-<a name="resource-type-cli-validate"></a>
 
 ## Description
 <a name="resource-type-cli-validate-description"></a>

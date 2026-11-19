@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-dev/GetSessionConnectionDa
 ---
 
 # GetSessionConnectionData
-<a name="GetSessionConnectionData"></a>
 
 Gets connection information for a specific user's connection to a specific Amazon DCV session.
 

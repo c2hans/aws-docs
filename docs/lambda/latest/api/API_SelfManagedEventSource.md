@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_SelfManagedEventSo
 ---
 
 # SelfManagedEventSource
-<a name="API_SelfManagedEventSource"></a>
 
 The self-managed Apache Kafka cluster for your event source.
 

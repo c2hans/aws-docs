@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQueueStatus
-<a name="API_UpdateQueueStatus"></a>
 
 Updates the status of the queue.
 

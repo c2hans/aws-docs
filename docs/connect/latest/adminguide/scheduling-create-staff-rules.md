@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-cre
 ---
 
 # Create staff rules for scheduling in Connect Customer
-<a name="scheduling-create-staff-rules"></a>
 
 Use staff rules to specify optional details for individual agents and supervisors, such as their local time zone, start and end dates, and contract details.
 

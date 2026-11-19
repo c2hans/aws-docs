@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Step 3: Build and deploy the AVX CDK infrastructure
-<a name="deploy-step3-cdk-infrastructure"></a>
 
 ## Build Lambda assets
 <a name="build-lambda-assets"></a>

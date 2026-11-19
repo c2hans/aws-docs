@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterListConfiguration
-<a name="API_FilterListConfiguration"></a>
 
 A list of filter configurations.
 

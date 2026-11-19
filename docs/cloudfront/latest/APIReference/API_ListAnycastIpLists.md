@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListA
 ---
 
 # ListAnycastIpLists
-<a name="API_ListAnycastIpLists"></a>
 
 Lists your Anycast static IP lists.
 

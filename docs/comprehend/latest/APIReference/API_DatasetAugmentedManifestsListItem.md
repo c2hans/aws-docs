@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Datas
 ---
 
 # DatasetAugmentedManifestsListItem
-<a name="API_DatasetAugmentedManifestsListItem"></a>
 
 An augmented manifest file that provides training data for your custom model. An augmented manifest file is a labeled dataset that is produced by Amazon SageMaker Ground Truth.
 

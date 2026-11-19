@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/sample.html
 ---
 
 # $sample
-<a name="sample"></a>
 
 The `$sample` aggregation stage in Amazon DocumentDB is used to randomly select a specified number of documents from a collection. This is useful for tasks such as data analysis, testing, and generating samples for further processing.
 

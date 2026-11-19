@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/how-input.html
 ---
 
 # Data input and output
-<a name="how-input"></a>
 
 Amazon Transcribe takes audio data, as a media file in an Amazon S3 bucket or a media stream, and converts it to text data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-domain-con
 ---
 
 # What is a domain configuration?
-<a name="iot-domain-configuration-what-is"></a>
 
 In AWS IoT Core, a domain configuration refers to the setup and configuration of a domain (either AWS managed domain or customer managed domain) for your AWS IoT Core data endpoints. AWS IoT Core also provides a default endpoint for your AWS account (`iot:Data-ATS`) for devices to communicate with AWS IoT Core.
 

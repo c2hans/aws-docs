@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Fai
 ---
 
 # FailedDataSegmentAssociation
-<a name="API_FailedDataSegmentAssociation"></a>
 
 Contains error information for a data segment association that failed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/fis-tutorial-recurr
 ---
 
 # Tutorial: Schedule a recurring experiment
-<a name="fis-tutorial-recurring-experiment"></a>
 
 With AWS Fault Injection Service (AWS FIS), you can perform fault injection experiments on your AWS workloads. These experiments run on templates that contain one or more actions to run on specified targets. When you also use Amazon EventBridge, you can schedule your experiments as a one-time task or recurring tasks.
 

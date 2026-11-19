@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/b
 ---
 
 # Bring your own IP to CloudFront using IPAM
-<a name="bring-your-own-ip-address-using-ipam"></a>
 
 This tutorial shows how to use IPAM to manage your BYOIP CIDRs for CloudFront Anycast Static IP lists.
 

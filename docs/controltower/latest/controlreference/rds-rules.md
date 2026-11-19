@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/rds
 ---
 
 # Amazon Relational Database Service (Amazon RDS) controls
-<a name="rds-rules"></a>
 
 **Topics**
 + [[CT.RDS.PR.1] Require that an Amazon RDS database instance is configured with multiple Availability Zones](#ct-rds-pr-1-description)

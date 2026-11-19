@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Set up the Gremlin console to connect to a Neptune DB instance
-<a name="access-graph-gremlin-console"></a>
 
 The Gremlin Console allows you to experiment with TinkerPop graphs and queries in a REPL (read-eval-print loop) environment.
 

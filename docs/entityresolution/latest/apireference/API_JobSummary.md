@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # JobSummary
-<a name="API_JobSummary"></a>
 
 An object containing the `jobId`, `status`, `startTime`, and `endTime` of a job.
 

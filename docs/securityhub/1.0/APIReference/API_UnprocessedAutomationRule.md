@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Unproce
 ---
 
 # UnprocessedAutomationRule
-<a name="API_UnprocessedAutomationRule"></a>
 
  A list of objects containing `RuleArn`, `ErrorCode`, and `ErrorMessage`. This parameter tells you which automation rules the request didn't process and why.
 

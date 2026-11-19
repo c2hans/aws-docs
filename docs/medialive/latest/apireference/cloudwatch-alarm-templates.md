@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
 ---
 
 # Workflow monitor: CloudWatch alarm templates
-<a name="cloudwatch-alarm-templates"></a>
 
 ## URI
 <a name="cloudwatch-alarm-templates-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Security
-<a name="msk-replicator-security"></a>
 
 This section describes the security model for MSK Replicator, including the service execution role, encryption in transit, and IAM permissions reference.
 

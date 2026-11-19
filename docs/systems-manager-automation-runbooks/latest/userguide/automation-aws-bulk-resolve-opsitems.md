@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-BulkResolveOpsItems`
-<a name="automation-aws-bulk-resolve-opsitems"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fu
 ---
 
 # FunctionSchema
-<a name="API_agent_FunctionSchema"></a>
 
 Defines functions that each define parameters that the agent needs to invoke from the user. Each function represents an action in an action group.
 

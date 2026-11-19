@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Se
 ---
 
 # SessionSummaryConfiguration
-<a name="API_agent_SessionSummaryConfiguration"></a>
 
 Configuration for SESSION\_SUMMARY memory type enabled for the agent.
 

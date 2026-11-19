@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Upload the firmware file to an Amazon S3 bucket and add an IAM role
-<a name="lorawan-upload-firmware-s3bucket"></a>
 
 **Note**
 You'll need to perform these steps only if you're using the AWS CLI to create a wireless gateway task definition and perform the update. If you're using the AWS Management Console, you can skip these steps and proceed to [Schedule and run gateway firmware update task](lorawan-schedule-firmware-update.md).

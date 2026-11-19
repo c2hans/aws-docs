@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/typescript-context.html
 ---
 
 # Using the Lambda context object to retrieve TypeScript Event Function information
-<a name="typescript-context"></a>
 
 When Lambda runs your Event Function, it passes a context object to the [handler](typescript-handler.md). This object provides methods and properties that provide information about the invocation, function, and execution environment.
 

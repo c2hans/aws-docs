@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/configure-thir
 ---
 
 # Configure third-party text-to-speech (TTS) providers
-<a name="configure-third-party-tts"></a>
 
 Use the following instructions to configure a third-party text-to-speech (TTS) provider.
 

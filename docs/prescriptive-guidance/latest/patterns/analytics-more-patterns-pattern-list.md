@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/an
 ---
 
 # More patterns
-<a name="analytics-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Authenticate existing React application users by using Amazon Cognito and AWS Amplify UI](authenticate-react-app-users-cognito-amplify-ui.md)
@@ -12,6 +11,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/an
 + [Create detailed cost and usage reports for Amazon EMR clusters by using AWS Cost Explorer](create-detailed-cost-and-usage-reports-for-amazon-emr-clusters-by-using-aws-cost-explorer.md)
 + [Create detailed cost and usage reports for Amazon RDS and Amazon Aurora](create-detailed-cost-and-usage-reports-for-amazon-rds-and-amazon-aurora.md)
 + [Create detailed cost and usage reports for AWS Glue jobs by using AWS Cost Explorer](create-detailed-cost-and-usage-reports-for-aws-glue-jobs-by-using-aws-cost-explorer.md)
++ [Embed AWS Quick Sight visual components into web applications by using Amazon Cognito and IaC automation](embed-quick-sight-visual-components-into-web-apps-cognito-iac.md)
 + [Execute Amazon Redshift SQL queries by using Terraform](execute-redshift-sql-queries-using-terraform.md)
 + [Extract and query AWS IoT SiteWise metadata attributes in a data lake](extract-and-query-aws-iot-sitewise-metadata-attributes-in-a-data-lake.md)
 + [Generate Db2 z/OS data insights by using AWS Mainframe Modernization and Amazon Q in Quick Sight](generate-db2-zos-data-insights-aws-mainframe-modernization-amazon-q-in-quicksight.md)

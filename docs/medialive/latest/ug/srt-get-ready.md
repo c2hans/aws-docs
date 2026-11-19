@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/srt-get-ready.html
 ---
 
 # Plan for delivery using Amazon VPC
-<a name="srt-get-ready"></a>
 
 You might set up the MediaLive channel for the SRT output to have [output endpoints in Amazon Virtual Private Cloud](delivery-out-vpc.md) (Amazon VPC). Following are some guidelines for setting up the secret in Secrets Manager and for delivery of the output to MediaConnect (if MediaConnect is the destination).
 

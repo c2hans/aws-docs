@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DeleteSnapshotSchedule
-<a name="API_DeleteSnapshotSchedule"></a>
 
 Deletes a snapshot of a volume.
 

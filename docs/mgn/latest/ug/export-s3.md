@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/export-s3.html
 ---
 
 # Exporting your data inventory to an S3 bucket
-<a name="export-s3"></a>
 
 To export your inventory to an S3 bucket, take the following steps:
 

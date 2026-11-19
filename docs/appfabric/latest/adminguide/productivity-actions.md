@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/productivity
 ---
 
 # API actions for AppFabric for productivity (preview)
-<a name="productivity-actions"></a>
 
 |  |
 | --- |

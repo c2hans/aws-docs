@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 ---
 
 # Cost
-<a name="cost"></a>
 
  You are responsible for the cost of the AWS services used while running this solution. The total cost for running this solution depends on the size of your videos, the number of outputs created, and the number of views the published content receives through CloudFront. After encoding all of your videos with this solution, the monthly cost will be for Amazon S3 storage, and any CloudFront costs from streaming your new video content to users.
 

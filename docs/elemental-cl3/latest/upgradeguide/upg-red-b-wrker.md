@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-re
 ---
 
 # Step D: Upgrade the backup worker nodes
-<a name="upg-red-b-wrker"></a>
 
 The role of backup nodes is not to run channels but to take over from an active node that fails. If you have any nodes that are strictly backup nodes, then upgrade these nodes first before performing the upgrade.
 

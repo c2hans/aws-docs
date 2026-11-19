@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search for an address
-<a name="how-to-search-address"></a>
 
 The `SearchText` API enables you to search for an address.
 

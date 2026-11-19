@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Creating Amazon Verified Permissions policy store aliases
-<a name="policy-store-aliases-create"></a>
 
 You can create a policy store alias to reference a policy store using a friendly name. The name of a policy store alias must be unique per AWS account and Region. Policy store aliases may only be associated with policy stores that are owned by the same AWS account and active in the same Region as the policy store alias. Policy store aliases are separate resources with their own ARNs and IAM authorization.
 

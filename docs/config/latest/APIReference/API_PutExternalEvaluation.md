@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutExtern
 ---
 
 # PutExternalEvaluation
-<a name="API_PutExternalEvaluation"></a>
 
 Add or updates the evaluations for process checks. This API checks if the rule is a process check when the name of the AWS Config rule is provided.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-goog
 ---
 
 # Google Sheets connector for Amazon AppFlow
-<a name="connectors-google-sheets"></a>
 
 Google Sheets is a spreadsheet based collaboration service that helps teams share data in real time across multiple devices. If you’re a Google Sheets user, your account contains data about spreadsheets, documents, slides, meetings, security, and more. You can use Amazon AppFlow to transfer data from Google Sheets to certain AWS services or other supported applications.
 

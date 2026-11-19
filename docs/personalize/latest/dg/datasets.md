@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/datasets.html
 ---
 
 # Types of data Amazon Personalize can use
-<a name="datasets"></a>
 
  The following topics introduce the different types of data that you can import into Amazon Personalize.
 

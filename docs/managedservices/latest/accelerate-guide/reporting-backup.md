@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # AMS Backup reports
-<a name="reporting-backup"></a>
 
 **Topics**
 + [Backup Job Success / Failure report](#reporting-backup-success-failure)

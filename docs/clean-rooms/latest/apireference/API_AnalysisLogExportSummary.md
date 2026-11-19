@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisLogExportSummary
-<a name="API_AnalysisLogExportSummary"></a>
 
 A summary of an analysis log export, including its identifier, status, analysis type, and creation time. Returned by `ListAnalysisLogExports`.
 

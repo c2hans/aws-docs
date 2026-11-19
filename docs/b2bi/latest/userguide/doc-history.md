@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/doc-history.html
 ---
 
 # Document history for the AWS B2B Data Interchange User Guide
-<a name="doc-history"></a>
 
 The following table describes the documentation releases for AWS B2B Data Interchange.
 

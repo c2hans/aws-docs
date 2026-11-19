@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Integ
 ---
 
 # IntegerDatasetParameterDefaultValues
-<a name="API_IntegerDatasetParameterDefaultValues"></a>
 
 The default values of an integer parameter.
 

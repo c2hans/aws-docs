@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeleteDeploymentStrategy
-<a name="API_DeleteDeploymentStrategy"></a>
 
 Deletes a deployment strategy.
 

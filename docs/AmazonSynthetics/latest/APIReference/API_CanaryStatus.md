@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryStatus
-<a name="API_CanaryStatus"></a>
 
 A structure that contains the current state of the canary.
 

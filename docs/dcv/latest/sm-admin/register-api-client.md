@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/register-api-client.
 ---
 
 # register-api-client
-<a name="register-api-client"></a>
 
 Registers a Session Manager client with the broker and generates client credentials that can be used by the client to retrieve an OAuth 2.0 access token, which is needed to make API requests.
 

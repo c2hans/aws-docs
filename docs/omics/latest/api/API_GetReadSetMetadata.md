@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetReadSetMetadata.
 ---
 
 # GetReadSetMetadata
-<a name="API_GetReadSetMetadata"></a>
 
 Retrieves the metadata for a read set from a sequence store in JSON format. This operation does not return tags. To retrieve the list of tags for a read set, use the `ListTagsForResource` API operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-delete.html
 ---
 
 # Delete certificates managed by AWS Certificate Manager
-<a name="gs-acm-delete"></a>
 
 You can use the ACM console or the AWS CLI to delete a certificate. Deleting a ticket is eventually consistent. A certificate may appear in lists for a short time after it's deleted.
 

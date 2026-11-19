@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InlineAgentResponseStream
-<a name="API_agent-runtime_InlineAgentResponseStream"></a>
 
 The response from invoking the agent and associated citations and trace information.
 

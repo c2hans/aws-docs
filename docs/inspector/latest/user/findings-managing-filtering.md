@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/findings-managing-
 ---
 
 # Filtering your Amazon Inspector findings
-<a name="findings-managing-filtering"></a>
 
  You can filter your Amazon Inspector findings using filter criteria. If a finding doesn't match your filter criteria, Amazon Inspector excludes the finding from view. This section describes how to filter your Amazon Inspector findings using filter criteria.
 

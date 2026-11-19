@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileSystem.h
 ---
 
 # FileSystem
-<a name="API_FileSystem"></a>
 
 A description of a specific Amazon FSx file system.
 

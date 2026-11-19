@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2I
 ---
 
 # EC2InstanceConnect
-<a name="EC2InstanceConnect"></a>
 
 **Description**: Allows customers to call EC2 Instance Connect to publish ephemeral keys to their EC2 instances and connect via ssh or the EC2 Instance Connect CLI.
 

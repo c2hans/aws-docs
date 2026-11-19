@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeLifecycleHooks
-<a name="API_DescribeLifecycleHooks"></a>
 
 Gets information about the lifecycle hooks for the specified Auto Scaling group.
 

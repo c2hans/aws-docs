@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-matching
 ---
 
 # Set up matching rules for rule-based Identity Resolution in Connect Customer
-<a name="setup-matching-rule-examples"></a>
 
 ## Limits
 <a name="setup-matching-rule-example-limits"></a>

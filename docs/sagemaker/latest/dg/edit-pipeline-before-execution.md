@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edit-pipeline-before
 ---
 
 # Edit a pipeline
-<a name="edit-pipeline-before-execution"></a>
 
 To make changes to a pipeline before running it, do the following:
 

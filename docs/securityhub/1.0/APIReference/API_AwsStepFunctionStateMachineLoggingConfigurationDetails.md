@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsStep
 ---
 
 # AwsStepFunctionStateMachineLoggingConfigurationDetails
-<a name="API_AwsStepFunctionStateMachineLoggingConfigurationDetails"></a>
 
  The `LoggingConfiguration` data type is used to set CloudWatch Logs options.
 

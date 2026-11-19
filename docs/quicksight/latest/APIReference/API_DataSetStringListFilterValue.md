@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetStringListFilterValue
-<a name="API_DataSetStringListFilterValue"></a>
 
 Represents a list of string values used in filter conditions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstancesPlacement
-<a name="API_ScheduledInstancesPlacement"></a>
 
 Describes the placement for a Scheduled Instance.
 

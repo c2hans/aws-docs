@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/update-da
 ---
 
 # Updating a data dictionary in AWS Marketplace Management Portal
-<a name="update-data-dictionary"></a>
 
 You can update a data dictionary in AWS Marketplace Management Portal by first removing the existing data dictionary and then uploading a new one.
 

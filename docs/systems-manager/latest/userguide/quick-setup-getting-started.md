@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-s
 ---
 
 # Getting started with Quick Setup
-<a name="quick-setup-getting-started"></a>
 
 Use the information in this topic to help you prepare to use Quick Setup.
 

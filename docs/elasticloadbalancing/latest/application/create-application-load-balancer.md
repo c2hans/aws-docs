@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Create an Application Load Balancer
-<a name="create-application-load-balancer"></a>
 
 An Application Load Balancer takes requests from clients and distributes them across targets in a target group, such as EC2 instances. For more information, see [How Elastic Load Balancing works.](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html) in the *Elastic Load Balancing User Guide*.
 

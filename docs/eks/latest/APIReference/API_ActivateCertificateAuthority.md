@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ActivateCert
 ---
 
 # ActivateCertificateAuthority
-<a name="API_ActivateCertificateAuthority"></a>
 
 Activates a successor certificate authority (CA) as the signing certificate authority for your cluster, completing a CA rotation.
 

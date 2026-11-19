@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Tag.
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A key-value pair associated with an AWS resource. In EventBridge, rules and event buses support tagging.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/monitoring-
 ---
 
 # Monitoring Amazon Q Developer with Amazon CloudWatch
-<a name="monitoring-cloudwatch"></a>
 
 **Note**
 The metrics discussed here only pertain to using [Amazon Q in your IDE](q-in-IDE.md).

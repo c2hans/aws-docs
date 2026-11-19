@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourceTag
-<a name="API_ResourceTag"></a>
 
 Represents tag information associated with AWS resources.
 

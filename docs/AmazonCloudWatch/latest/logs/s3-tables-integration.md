@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/s3-tables-i
 ---
 
 # Access logs with S3 Tables Integration
-<a name="s3-tables-integration"></a>
 
 The S3 Tables Integration with CloudWatch allows you to access log data ingested into CloudWatch using analytics engines such as Amazon Athena, Amazon Redshift, and third-party tools that support connection to Apache Iceberg-compatible stores. This integration enables you to perform comprehensive log analysis using tools of your preference and correlate data in CloudWatch Logs with non-CloudWatch data. **This feature is available at no additional cost.**
 

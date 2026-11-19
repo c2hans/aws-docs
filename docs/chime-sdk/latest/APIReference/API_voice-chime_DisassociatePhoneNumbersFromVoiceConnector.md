@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DisassociatePhoneNumbersFromVoiceConnector
-<a name="API_voice-chime_DisassociatePhoneNumbersFromVoiceConnector"></a>
 
 Disassociates the specified phone numbers from the specified Amazon Chime SDK Voice Connector.
 

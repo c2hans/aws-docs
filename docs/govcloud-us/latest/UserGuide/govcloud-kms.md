@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-km
 ---
 
 # AWS Key Management Service in AWS GovCloud (US)
-<a name="govcloud-kms"></a>
 
 AWS Key Management Service (KMS) is an encryption and key management service scaled for the cloud. KMS keys and functionality are used by other AWS services, and you can use them to protect data in your own applications that use AWS.
 

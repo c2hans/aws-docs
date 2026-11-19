@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JDBCConnectorSour
 ---
 
 # JDBCConnectorSource
-<a name="API_JDBCConnectorSource"></a>
 
 Specifies a connector to a JDBC data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Theme
 ---
 
 # ThemeFooterLink
-<a name="API_ThemeFooterLink"></a>
 
 The website links that display in the catalog page footer.
 

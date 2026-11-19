@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Perform set operations in DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_SetOperations_section"></a>
 
 The following code examples show how to perform set operations in DynamoDB.
 + Add elements to a set attribute.

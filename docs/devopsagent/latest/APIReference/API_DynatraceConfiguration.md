@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dyna
 ---
 
 # DynatraceConfiguration
-<a name="API_DynatraceConfiguration"></a>
 
 Configuration for Dynatrace monitoring integration.
 

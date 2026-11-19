@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 1: Validating the migration patterns and metadata
-<a name="task-one-pattern-validation"></a>
 
 In this task, you validate the migration patterns identified in the assessment and wave planning activities in the portfolio workstream, and then you validate the migration metadata source. The goal is to verify that sufficient data has been collected to support each migration pattern.
 

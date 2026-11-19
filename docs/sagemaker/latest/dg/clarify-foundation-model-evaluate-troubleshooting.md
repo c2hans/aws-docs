@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-m
 ---
 
 # Resolve errors when creating a model evaluation job in Amazon SageMaker AI
-<a name="clarify-foundation-model-evaluate-troubleshooting"></a>
 
 **Important**
 In order to use SageMaker Clarify Foundation Model Evaluations (FMEval), you must upgrade to the new Studio experience.

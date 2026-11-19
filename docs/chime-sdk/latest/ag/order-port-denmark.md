@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-denmark.h
 ---
 
 # Denmark
-<a name="order-port-denmark"></a>
 
 The following tables list and describe the requirements for ordering and porting phone numbers in Denmark.
 

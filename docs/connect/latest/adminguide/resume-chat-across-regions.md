@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resume-chat-ac
 ---
 
 # Enable users to resume chat conversations across active Regions
-<a name="resume-chat-across-regions"></a>
 
 Customers often start a chat, then leave the conversation and return later to continue chatting. When you run Connect Customer Global Resiliency (ACGR) across your linked Regions with global routing, or in a business continuity setup, you can let users resume these conversations with the context, metadata, and transcripts carried forward across Regions. Users don't need to repeat themselves when they return to a chat, regardless of which active Region serves them.
 

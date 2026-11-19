@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotFileSheetSelection
-<a name="API_SnapshotFileSheetSelection"></a>
 
 A structure that contains information that identifies the snapshot that needs to be generated.
 

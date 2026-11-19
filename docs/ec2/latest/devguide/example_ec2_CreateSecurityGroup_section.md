@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_CreateSe
 ---
 
 # Use `CreateSecurityGroup` with an AWS SDK or CLI
-<a name="example_ec2_CreateSecurityGroup_section"></a>
 
 The following code examples show how to use `CreateSecurityGroup`.
 

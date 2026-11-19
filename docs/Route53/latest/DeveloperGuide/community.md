@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/community.
 ---
 
 # .community
-<a name="community"></a>
 
 Used by any type of community, club, organization, or special interest group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases
 ---
 
 # Amazon Neptune Engine Version 1.0.2.1 (2019-11-22)
-<a name="engine-releases-1.0.2.1"></a>
 
 ## Subsequent Patch Releases for This Release
 <a name="engine-releases-1.0.2.1-patches"></a>

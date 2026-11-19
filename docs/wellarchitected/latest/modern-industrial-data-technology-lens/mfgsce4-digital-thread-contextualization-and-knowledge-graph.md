@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MFGSCE4: Digital thread: contextualization and knowledge graph
-<a name="mfgsce4-digital-thread-contextualization-and-knowledge-graph"></a>
 
  In most manufacturing organizations, the product lifecycle data is typically stored in enterprise systems such as Product Lifecycle Management (PLM), Enterprise Resource Planning (ERP), Manufacturing Execution Systems (MES) and Customer Relationship Management (CRM). Due to the disconnected nature of enterprise infrastructure, the generated data is often fragmented and unused.
 

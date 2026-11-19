@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdatePartition.h
 ---
 
 # UpdatePartition
-<a name="API_UpdatePartition"></a>
 
 Updates a partition.
 

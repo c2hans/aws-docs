@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/build-cma
 ---
 
 # Creating a simple application using the AWS SDK for C\+\+
-<a name="build-cmake"></a>
 
  [CMake](https://cmake.org/) is a build tool that you use to manage your application’s dependencies and to create makefiles suitable for the platform you’re building on. You can use CMake to create and build projects using the AWS SDK for C\+\+.
 

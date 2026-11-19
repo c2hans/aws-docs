@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-faq.ht
 ---
 
 # Amazon SageMaker AI distributed data parallelism library FAQ
-<a name="data-parallel-faq"></a>
 
 Use the following to find answers to commonly asked questions about the SMDDP library.
 

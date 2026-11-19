@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # AccountEnrollmentStatus
-<a name="API_AccountEnrollmentStatus"></a>
 
 Describes the enrollment status of an organization's member accounts in AWS Compute Optimizer.
 

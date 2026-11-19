@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_TagResource.ht
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Add a list of tags to a resource.
 

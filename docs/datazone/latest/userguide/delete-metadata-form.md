@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/delete-metadat
 ---
 
 # Delete a metadata form in Amazon DataZone
-<a name="delete-metadata-form"></a>
 
 In Amazon DataZone, metadata forms are simple forms to augment additional business context to the asset metadata in the catalog. It serves as an extensible mechanism for data owners to enrich the asset with information that can help data users when they search and find that data. Metadata forms can also serve a mechanism to enforce consistency to all assets being published to the Amazon DataZone catalog.
 

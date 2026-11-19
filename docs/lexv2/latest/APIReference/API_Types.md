@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon Lex Model Building V2:
 +  [ActiveContext](API_ActiveContext.md)

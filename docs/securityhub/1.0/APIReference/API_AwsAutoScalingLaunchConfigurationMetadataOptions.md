@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingLaunchConfigurationMetadataOptions
-<a name="API_AwsAutoScalingLaunchConfigurationMetadataOptions"></a>
 
 The metadata options for the instances.
 

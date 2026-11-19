@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ServiceQ
 ---
 
 # ServiceQuotaExceededExceptionReason
-<a name="API_ServiceQuotaExceededExceptionReason"></a>
 
 The reason for the exception.
 

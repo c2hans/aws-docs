@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-data-par
 ---
 
 # Supported frameworks, AWS Regions, and instances types
-<a name="distributed-data-parallel-support"></a>
 
 Before using the SageMaker AI distributed data parallelism (SMDDP) library, check what are the supported ML frameworks and instance types and if there are enough quotas in your AWS account and AWS Region.
 

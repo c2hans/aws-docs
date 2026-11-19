@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Logging
 ---
 
 # LoggingConfiguration
-<a name="API_LoggingConfiguration"></a>
 
 Consists of the logging role and the log group name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.CM.8] Hold operational review meetings for data transparency
-<a name="o.cm.8-hold-operational-review-meetings-for-data-transparency"></a>
 
  **Category:** RECOMMENDED
 

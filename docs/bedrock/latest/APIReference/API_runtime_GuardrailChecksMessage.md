@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksMessage
-<a name="API_runtime_GuardrailChecksMessage"></a>
 
 A message to evaluate against guardrail checks, containing a role and content blocks.
 

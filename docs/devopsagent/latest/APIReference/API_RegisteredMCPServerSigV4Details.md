@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredMCPServerSigV4Details
-<a name="API_RegisteredMCPServerSigV4Details"></a>
 
 Details specific to a registered SigV4-authenticated MCP server.
 

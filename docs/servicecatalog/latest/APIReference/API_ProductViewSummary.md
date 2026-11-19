@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ProductViewSummary
-<a name="API_ProductViewSummary"></a>
 
 Summary information about a product view.
 
@@ -16,7 +15,7 @@ Type: String
 Required: No
 
  ** HasDefaultPath **   <a name="servicecatalog-Type-ProductViewSummary-HasDefaultPath"></a>
-Indicates whether the product has a default path. If the product does not have a default path, call [ListLaunchPaths](API_ListLaunchPaths.md) to disambiguate between paths. Otherwise, [ListLaunchPaths](API_ListLaunchPaths.md) is not required, and the output of [ProductViewSummary](#API_ProductViewSummary) can be used directly with [DescribeProvisioningParameters](API_DescribeProvisioningParameters.md).
+Indicates whether the product has a default path. If the product does not have a default path, call [ListLaunchPaths](API_ListLaunchPaths.md) to disambiguate between paths. Otherwise, [ListLaunchPaths](API_ListLaunchPaths.md) is not required, and the output of [ProductViewSummary](API_ProductViewSummary.md) can be used directly with [DescribeProvisioningParameters](API_DescribeProvisioningParameters.md).
 Type: Boolean
 Required: No
 

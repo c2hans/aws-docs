@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ComputeNodeG
 ---
 
 # ComputeNodeGroup
-<a name="API_ComputeNodeGroup"></a>
 
 A compute node group associated with a cluster.
 

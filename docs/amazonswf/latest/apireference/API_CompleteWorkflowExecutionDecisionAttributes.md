@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Comple
 ---
 
 # CompleteWorkflowExecutionDecisionAttributes
-<a name="API_CompleteWorkflowExecutionDecisionAttributes"></a>
 
 Provides the details of the `CompleteWorkflowExecution` decision.
 

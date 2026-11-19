@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Migrating from AWS Resilience Hub
-<a name="next-gen-migrating"></a>
 
 If you're an existing AWS Resilience Hub (v1) customer, this guide helps you understand what changes with the next generation of Resilience Hub and how to migrate your applications. The following table summarizes key changes between the two versions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteDefaultQBusinessApplication
-<a name="API_DeleteDefaultQBusinessApplication"></a>
 
 Deletes a linked Amazon Q Business application from an Quick Sight account
 

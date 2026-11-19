@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/degree.htm
 ---
 
 # .degree
-<a name="degree"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

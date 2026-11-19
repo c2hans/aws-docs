@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.
 ---
 
 # Connecting to your DB instance using IAM authentication and the AWS SDK for Python (Boto3)
-<a name="UsingWithRDS.IAMDBAuth.Connecting.Python"></a>
 
 You can connect to an RDS for MariaDB, MySQL, or PostgreSQL DB instance with the AWS SDK for Python (Boto3) as described following.
 

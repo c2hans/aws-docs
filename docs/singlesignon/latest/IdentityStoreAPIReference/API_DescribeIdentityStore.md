@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # DescribeIdentityStore
-<a name="API_DescribeIdentityStore"></a>
 
 Retrieves details about the specified identity store, including its Amazon Resource Name (ARN) and network configuration.
 

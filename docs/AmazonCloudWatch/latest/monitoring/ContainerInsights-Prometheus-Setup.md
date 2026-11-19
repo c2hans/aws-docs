@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Install the CloudWatch agent with Prometheus metrics collection on Amazon EKS and Kubernetes clusters
-<a name="ContainerInsights-Prometheus-Setup"></a>
 
 This section explains how to set up the CloudWatch agent with Prometheus monitoring in a cluster running Amazon EKS or Kubernetes. After you do this, the agent automatically scrapes and imports metrics for the following workloads running in that cluster.
 + AWS App Mesh

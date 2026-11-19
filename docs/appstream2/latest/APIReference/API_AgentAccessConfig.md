@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Agent
 ---
 
 # AgentAccessConfig
-<a name="API_AgentAccessConfig"></a>
 
 The configuration for agent access on a stack. Agent access enables AI agents to interact with desktop applications during streaming sessions.
 

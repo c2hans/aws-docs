@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/sample-manifest-e
 ---
 
 # Sample manifest: Elemental ad markers
-<a name="sample-manifest-elemental-ad-markers"></a>
 
 To generate the following sample manifest, choose **Apple HLS group settings**, **Advanced**, **Ad markers**, **Elemental**:
 

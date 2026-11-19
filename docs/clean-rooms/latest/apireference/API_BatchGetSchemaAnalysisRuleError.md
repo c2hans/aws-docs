@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Batc
 ---
 
 # BatchGetSchemaAnalysisRuleError
-<a name="API_BatchGetSchemaAnalysisRuleError"></a>
 
 An error that describes why a schema could not be fetched.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Cancel
 ---
 
 # CancelTimerDecisionAttributes
-<a name="API_CancelTimerDecisionAttributes"></a>
 
 Provides the details of the `CancelTimer` decision.
 

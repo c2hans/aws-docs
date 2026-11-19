@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/childworkf
 ---
 
 # Child Workflow Executions
-<a name="childworkflow"></a>
 
 In the examples so far, we have started workflow execution directly from an application. However, a workflow execution may be started from within a workflow by calling the workflow entry point method on the generated client. When a workflow execution is started from the context of another workflow execution, it is called a child workflow execution. This allows you to refactor complex workflows into smaller units and potentially share them across different workflows. For example, you can create a payment processing workflow and call it from an order processing workflow.
 

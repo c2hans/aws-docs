@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # DatabaseMigrationPreference
-<a name="API_DatabaseMigrationPreference"></a>
 
  Preferences for migrating a database to AWS.
 

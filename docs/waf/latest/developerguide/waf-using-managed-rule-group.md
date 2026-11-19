@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-using-mana
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Adding a managed rule group to a protection pack (web ACL) through the console
-<a name="waf-using-managed-rule-group"></a>
 
 This section explains how to add a managed rule group to a protection pack (web ACL) through the console. This guidance applies to all AWS Managed Rules rule groups and to the AWS Marketplace rule groups that you're subscribed to.
 

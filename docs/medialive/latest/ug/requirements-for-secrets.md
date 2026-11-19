@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/requirements-for-sec
 ---
 
 # Requirements for Secrets Manager secrets
-<a name="requirements-for-secrets"></a>
 
 Your deployment might include the following resources:
 + SRT inputs for SRT content that is encrypted by the upstream system.

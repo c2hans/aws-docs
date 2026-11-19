@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # Creating a development value stream map
-<a name="create-value-stream-map"></a>
 
 The following are the steps to create a development value stream map (DVSM):
 + [Step 1: Identify the value stream](#step-1)

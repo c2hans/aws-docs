@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteC
 ---
 
 # DeleteClusterParameterGroup
-<a name="API_DeleteClusterParameterGroup"></a>
 
 Deletes a specified Amazon Redshift parameter group.
 

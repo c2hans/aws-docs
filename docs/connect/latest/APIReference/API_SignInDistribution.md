@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SignInDi
 ---
 
 # SignInDistribution
-<a name="API_SignInDistribution"></a>
 
 The distribution of sign in traffic between the instance and its replica(s).
 

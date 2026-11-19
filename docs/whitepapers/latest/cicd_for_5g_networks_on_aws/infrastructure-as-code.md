@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Infrastructure as Code
-<a name="infrastructure-as-code"></a>
 
 As detailed in the [*5G Network Evolution with AWS*](https://d1.awsstatic.com/whitepapers/5g-network-evolution-with-aws.pdf)* whitepaper*, IaC is a key driver to automate the provisioning process and life cycle management for both the application and its environment. Rather than relying on manually performed steps, both network/IT administrators and developers can instantiate infrastructure using configuration files. IaC treats these configuration files as software code. These files can be used to produce a set of artifacts: namely the compute, storage, network, and application services that comprise an operating environment. IaC eliminates configuration drift through automation, thereby increasing the speed and agility of infrastructure deployments.
 

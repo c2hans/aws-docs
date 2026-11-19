@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Swap the Environment of an Elastic Beanstalk Application
-<a name="swap-the-environment-of-an-elastic-beanstalk-application"></a>
 
  Elastic Beanstalk enables quick and easier deployment and management of applications without having to worry about the infrastructure that runs those applications. To deploy an application using Elastic Beanstalk, upload an application version in the form of an application bundle (for example, Java `.war` file or `.zip` file), and then provide some information about your application. Based on application information, Elastic Beanstalk deploys the application in the blue environment and provides a URL to access the environment (typically for web server environments).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIotRoboRunnerReadOnly
-<a name="AWSIotRoboRunnerReadOnly"></a>
 
 **Description**: This policy grants permissions that allow read-only access to AWS Iot RoboRunner.
 

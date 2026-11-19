@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Websocke
 ---
 
 # Websocket
-<a name="API_Websocket"></a>
 
 The websocket that a chat participant uses to receive messages and events for the chat.
 

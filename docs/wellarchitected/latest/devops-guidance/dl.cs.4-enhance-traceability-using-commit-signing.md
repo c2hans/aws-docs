@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CS.4] Enhance traceability using commit signing
-<a name="dl.cs.4-enhance-traceability-using-commit-signing"></a>
 
  **Category:** OPTIONAL
 

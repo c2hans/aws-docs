@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/setting-up.html
 ---
 
 # Sign up for AWS and create an administrative user
-<a name="setting-up"></a>
 
 Complete the following tasks to set up for AWS Parallel Computing Service (AWS PCS).
 

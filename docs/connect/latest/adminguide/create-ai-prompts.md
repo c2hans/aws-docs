@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-ai-prom
 ---
 
 # Create AI prompts in Connect Customer
-<a name="create-ai-prompts"></a>
 
 An *AI prompt* is a task for the large language model (LLM) to do. It provides a task description or instruction for how the model should perform. For example, *Given a list of customer orders and available inventory, determine which orders can be fulfilled and which items have to be restocked*.
 

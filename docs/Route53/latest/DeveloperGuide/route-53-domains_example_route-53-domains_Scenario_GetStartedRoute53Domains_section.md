@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53-d
 ---
 
 # Learn the basics of Route 53 domain registration with an AWS SDK
-<a name="route-53-domains_example_route-53-domains_Scenario_GetStartedRoute53Domains_section"></a>
 
 The following code examples show how to:
 + List current domains, and list operations in the past year.

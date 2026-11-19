@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-data-de
 ---
 
 # Managing data deduplication
-<a name="managing-data-dedup"></a>
 
 You can manage your file system's [data deduplication settings](managing-storage-configuration.md#using-data-dedup) using the Amazon FSx CLI for remote management on PowerShell. For more information about using the Amazon FSx CLI remote management on PowerShell, see [Using the Amazon FSx CLI for PowerShell](administering-file-systems.md#remote-pwrshell).
 

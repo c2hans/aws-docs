@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/
 ---
 
 # 13 Bluetooth Low Energy (BLE)
-<a name="elpg-ble"></a>
 
 ExpressLink modules can take advantage of additional (local) connectivity capabilities, optionally available on selected SoCs. Bluetooth Low Energy (BLE) is one prominent example of such capabilities used to communicate with accessories and other modules or gateways over a local (personal) area network.
 

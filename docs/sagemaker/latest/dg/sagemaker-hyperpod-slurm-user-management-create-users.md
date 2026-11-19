@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Creating users on a Slurm cluster on SageMaker HyperPod
-<a name="sagemaker-hyperpod-slurm-user-management-create-users"></a>
 
 There are three ways to create POSIX users across the nodes of a Slurm cluster on SageMaker HyperPod. They differ in *when* users are created and *how much* lifecycle configuration you have to manage. Choose the option that matches your cluster and workflow, listed here from easiest to most advanced.
 

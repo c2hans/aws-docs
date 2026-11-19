@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-dp-actions.
 ---
 
 # IAM actions for data access in Amazon Neptune
-<a name="iam-dp-actions"></a>
 
 Note that Neptune data-access actions have the prefix `neptune-db:`, whereas administrative actions in Neptune have the prefix `rds:`.
 

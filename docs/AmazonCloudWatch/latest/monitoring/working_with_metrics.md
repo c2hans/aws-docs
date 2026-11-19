@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/worki
 ---
 
 # Metrics in Amazon CloudWatch
-<a name="working_with_metrics"></a>
 
 Metrics are data about the performance of your systems. Amazon CloudWatch collects metrics through two paths: AWS vended metrics from services such as Amazon EC2, Amazon EBS, and Amazon RDS, and custom metrics that you publish using the OpenTelemetry Protocol (OTLP) or the CloudWatch API.
 

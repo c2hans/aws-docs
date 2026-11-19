@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisCharacterInterval
-<a name="API_RealTimeContactAnalysisCharacterInterval"></a>
 
 Begin and end offsets for a part of text.
 

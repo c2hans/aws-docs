@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-me
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Amazon Q Business index metrics
-<a name="qbusiness-metrics-index"></a>
 
 The following table shows the [Index](concepts-terms.md#index) metrics that Amazon Q Business sends to CloudWatch in real time.
 

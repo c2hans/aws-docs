@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackResourceDriftInformationSummary
-<a name="API_StackResourceDriftInformationSummary"></a>
 
 Summarizes information about whether the resource's actual configuration differs, or has *drifted*, from its expected configuration.
 

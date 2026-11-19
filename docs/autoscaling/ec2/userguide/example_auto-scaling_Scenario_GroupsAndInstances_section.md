@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/example_auto-s
 ---
 
 # Learn the basics of Auto Scaling with an AWS SDK
-<a name="example_auto-scaling_Scenario_GroupsAndInstances_section"></a>
 
 The following code examples show how to:
 + Create an Amazon EC2 Auto Scaling group with a launch template and Availability Zones, and get information about running instances.

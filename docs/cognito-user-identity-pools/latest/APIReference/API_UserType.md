@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UserType
-<a name="API_UserType"></a>
 
 A user profile in a Amazon Cognito user pool.
 

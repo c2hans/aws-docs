@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Apply a changed transformer configuration
-<a name="ttm-restart-required"></a>
 
 **Important**
 Whenever you change the type-mapping transformer configuration for a workflow-managed run, edit the workflow configuration and resubmit the workflow so metadata migration, backfill, and replay use the same behavior. Previously migrated data and metadata may also need to be cleared first to avoid an inconsistent state, because indexes and documents that were already written using the old configuration will not be rewritten automatically.

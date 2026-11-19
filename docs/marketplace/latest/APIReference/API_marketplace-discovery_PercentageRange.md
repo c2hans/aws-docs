@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PercentageRange
-<a name="API_marketplace-discovery_PercentageRange"></a>
 
 A price increase percentage range with minimum, maximum, and default values.
 

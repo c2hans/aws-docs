@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # TimeRange
-<a name="API_SSMContacts_TimeRange"></a>
 
 A range of between two set times
 

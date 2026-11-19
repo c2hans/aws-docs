@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSSUS05-BP01 Design sustainable clinical trial architecture
-<a name="lssus05-bp01"></a>
 
  Implement decentralized clinical trial architectures that minimize data movement and reduce environmental impact through regional data processing strategies and edge computing solutions. Design clinical trial systems that process data closer to trial populations, reducing network requirements while maintaining regulatory adherence and data integrity. Use standardized data management services and smart archiving strategies to optimize resource utilization throughout the clinical trial lifecycle.
 

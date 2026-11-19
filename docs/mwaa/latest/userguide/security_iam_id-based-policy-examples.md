@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/security_iam_id-ba
 ---
 
 # Amazon MWAA identity-based policy examples
-<a name="security_iam_id-based-policy-examples"></a>
 
 To access the Amazon MWAA policies, refer to [Managing access to an Amazon MWAA environment](manage-access.md).
 

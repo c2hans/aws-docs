@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Using high availability (HA) for Flink Operators and Flink Applications
-<a name="jobruns-flink-using-ha"></a>
 
 This topic shows how to configure high availability and describes how it works for a few different use cases. These include when you're using the Job manager and when you're using Flink native kubernetes.
 

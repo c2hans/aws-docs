@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 ---
 
 # Notifications in the workspace header
-<a name="amazon-connect-notifications"></a>
 
 ## Understanding in-app notifications
 <a name="understanding-notifications"></a>

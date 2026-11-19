@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/security_ia
 ---
 
 # How AWS Config works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS Config, learn what IAM features are available to use with AWS Config.
 

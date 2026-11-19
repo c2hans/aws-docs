@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-alias-vi
 ---
 
 # View information about aliases of agents in Amazon Bedrock
-<a name="agents-alias-view"></a>
 
 To learn how to view information about the aliases of an agent, choose the tab for your preferred method, and then follow the steps:
 

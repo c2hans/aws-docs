@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/run-CLI-tra
 ---
 
 # Running a transformation on the command line with Amazon Q Developer
-<a name="run-CLI-transformations"></a>
 
 Complete these steps to transform your code on the command line with the Amazon Q Developer command line tool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentDataCacheConfig
-<a name="API_InferenceComponentDataCacheConfig"></a>
 
 Settings that affect how the inference component caches data.
 

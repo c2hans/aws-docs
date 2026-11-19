@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.AWE.5] Organize team-building activities and social events to foster a sense of community and promote collaboration
-<a name="oa.awe.5-organize-team-building-activities-and-social-events-to-foster-a-sense-of-community-and-promote-collaboration"></a>
 
  **Category:** OPTIONAL
 

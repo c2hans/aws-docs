@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/daemonset-on-batc
 ---
 
 # Run a DaemonSet on AWS Batch managed nodes
-<a name="daemonset-on-batch-eks-nodes"></a>
 
 AWS Batch sets taints on AWS Batch managed Kubernetes nodes. You can target a DaemonSet to run on AWS Batch managed nodes with the following `tolerations`.
 

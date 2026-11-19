@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Bill columns
-<a name="table-dictionary-cur2-bill"></a>
 
 Bill columns contain data about your bill for the billing period.
 

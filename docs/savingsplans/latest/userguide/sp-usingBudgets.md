@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-usingBu
 ---
 
 # Using budgets for Savings Plans
-<a name="sp-usingBudgets"></a>
 
 You can use AWS Budgets to set budgets for your Savings Plan utilization, coverage, and costs. You can track your costs as you continue to optimize through AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # AWS Change Acceleration 6-Point Framework and Organizational Change Management Toolkit
-<a name="introduction"></a>
 
 *Nicole Lenz, Melanie Gladwell, Sevan Latavitz, Amanda Rankin, Scott Watson, and Lanya Xiang, Amazon Web Services*
 

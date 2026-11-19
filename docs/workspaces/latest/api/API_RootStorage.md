@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RootStorage.ht
 ---
 
 # RootStorage
-<a name="API_RootStorage"></a>
 
 Describes the root volume for a WorkSpace bundle.
 

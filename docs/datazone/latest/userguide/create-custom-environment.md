@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/create-custom-
 ---
 
 # Create an environment using a custom AWS service blueprint
-<a name="create-custom-environment"></a>
 
 Complete the following procedure to create an environment using a custom AWS service blueprint.
 

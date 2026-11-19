@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListEngagementResourceAssociations
-<a name="API_ListEngagementResourceAssociations"></a>
 
 Lists the associations between resources and engagements where the caller is a member and has at least one snapshot in the engagement.
 

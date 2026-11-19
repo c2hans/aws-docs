@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AdminPasswor
 ---
 
 # AdminPasswordSourceSummary
-<a name="API_AdminPasswordSourceSummary"></a>
 
 A summary of the admin password source configuration for an Autonomous Database.
 

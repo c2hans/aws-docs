@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-sta
 ---
 
 # AWS DevOps Agent CLI onboarding guide
-<a name="getting-started-with-aws-devops-agent-cli-onboarding-guide"></a>
 
 ## Overview
 <a name="overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ass
 ---
 
 # AssociateWirelessDeviceWithMulticastGroup
-<a name="API_AssociateWirelessDeviceWithMulticastGroup"></a>
 
 Associates a wireless device with a multicast group.
 

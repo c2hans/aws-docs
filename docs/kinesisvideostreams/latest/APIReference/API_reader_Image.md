@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # Image
-<a name="API_reader_Image"></a>
 
 A structure that contains the `Timestamp`, `Error`, and `ImageContent`.
 

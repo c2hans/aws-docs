@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProgramManagementAccountSummary
-<a name="API_channel_ProgramManagementAccountSummary"></a>
 
 Summary information about a program management account.
 

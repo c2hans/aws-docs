@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon AppFlow
-<a name="amazonappflow"></a>
 
 Amazon AppFlow provides the following APIs for data retrieval.
 

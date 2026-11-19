@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/githu
 ---
 
 # CloudWatch pipelines configuration for GitHub Audit Log
-<a name="github-audit-log-pipeline-setup"></a>
 
 **Note**
  Important: GitHub Enterprise accounts are required to use this connector. GitHub Personal or Organization accounts are not supported.

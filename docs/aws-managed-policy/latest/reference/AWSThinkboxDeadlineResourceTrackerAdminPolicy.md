@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSThinkboxDeadlineResourceTrackerAdminPolicy
-<a name="AWSThinkboxDeadlineResourceTrackerAdminPolicy"></a>
 
 **Description**: Grants permissions required to create, destroy, and administer AWS Thinkbox's Deadline Resource Tracker.
 

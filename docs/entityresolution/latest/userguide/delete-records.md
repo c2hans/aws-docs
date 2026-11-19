@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/delete
 ---
 
 # Deleting records from a rule-based or ML-based matching workflow
-<a name="delete-records"></a>
 
 If you need to comply with data management regulations, you can delete the records from either a rule-based or ML-based matching workflow.
 

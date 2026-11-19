@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/data-encrypti
 ---
 
 # Data encryption in AWS Transform
-<a name="data-encryption"></a>
 
 This topic provides information specific to AWS Transform about encryption in transit and encryption at rest.
 

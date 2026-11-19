@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/fro
 ---
 
 # Submit a job to Deadline Cloud using a script
-<a name="from-a-script"></a>
 
  To automate submitting jobs to Deadline Cloud, you can script them using tools such as bash, Powershell, and batch files.
 

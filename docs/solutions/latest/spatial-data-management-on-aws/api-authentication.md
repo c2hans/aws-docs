@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # API Authentication
-<a name="api-authentication"></a>
 
 You can authenticate with the Spatial Data Management on AWS representational state transfer (REST) API using AWS IAM credentials and Signature Version 4 (SigV4) signing.
 

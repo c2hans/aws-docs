@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Use an AgentCore gateway
-<a name="gateway-using"></a>
 
 After [setting up your gateway with targets](gateway-building.md) , you can configure your application or agent to use the gateway through the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) . The MCP provides a standardized way for agents to discover and invoke tools.
 

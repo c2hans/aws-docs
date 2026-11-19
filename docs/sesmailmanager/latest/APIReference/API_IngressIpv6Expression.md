@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressIpv6Expression
-<a name="API_IngressIpv6Expression"></a>
 
 The union type representing the allowed types for the left hand side of an IPv6 condition.
 

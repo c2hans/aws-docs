@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DatasetEnrichmentEntry
-<a name="API_DatasetEnrichmentEntry"></a>
 
 Contains enrichment status information for a specific data type in a dataset.
 

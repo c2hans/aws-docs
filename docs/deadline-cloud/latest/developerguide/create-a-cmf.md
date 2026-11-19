@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cre
 ---
 
 # Create a customer-managed fleet
-<a name="create-a-cmf"></a>
 
 To create a customer-managed fleet (CMF), complete the following steps.
 

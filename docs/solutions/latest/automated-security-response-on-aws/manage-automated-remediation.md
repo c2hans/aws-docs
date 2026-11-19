@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Manage automated remediation
-<a name="manage-automated-remediation"></a>
 
 When the Web UI is enabled, you manage automated remediation from the **Controls** page instead of editing the Remediation Configuration Amazon DynamoDB table directly. From this page you enable automated remediation for individual controls and scope which findings the solution acts on by applying reusable resource filters.
 
@@ -34,7 +33,7 @@ The following screenshot shows the Controls table filtered to Custom Runbooks. I
 
 1. (Optional) Apply one or more resource filters to a control, and choose a filter mode (include or exclude).
 
-1. Choose **Save** to persist your changes. The solution validates and applies all pending changes together.
+1. Choose **Save changes** to persist your changes. The solution validates and applies all pending changes together.
 
 **Deadline enforcement is a separate path to automated remediation**
 Enabling automated remediation on this page is the primary path: when a matching finding arrives, the solution remediates it only if the control is enabled here (subject to any applied resource filters). A second, independent path exists — **deadline enforcement**. If a finding-type notification configuration has `enforceDeadline` turned on, the solution automatically remediates matching overdue findings **regardless of whether the control is enabled on this page**. If you disable a control here to prevent automated remediation, also confirm that no enforcing notification configuration matches those findings. For details, see [Deadline enforcement](configure-notifications.md#deadline-enforcement).
@@ -67,3 +66,34 @@ A finding matches a filter when it matches every criterion set in that filter: a
 
 **Use account, OU, or ARN criteria to exclude specific resources**
 Tag criteria are evaluated against the resource tags in the finding. AWS Security Hub sometimes delivers a finding without resource tags. A finding with no tags does not match tag criteria, so an exclude-mode filter with any tag criteria does not exclude it, and the finding is remediated. To reliably keep specific resources out of fully automated remediation, build exclude-mode filters from account IDs, organizational units, or ARN patterns.
+
+## Filter a remediation by resource type
+<a name="filter-by-resource-type"></a>
+
+A multi-service remediation (see [Multi-service remediation](multi-service-remediation.md)) can act on more than one resource type. For example, `IAMAccessAnalyzer.ExternalAccess` remediates AWS Identity and Access Management Access Analyzer (IAM Access Analyzer) external access findings. It tightens the resource policies of both Amazon S3 buckets and AWS Key Management Service (AWS KMS) keys. You enable or disable automated remediation for the control as a whole, so it applies to every resource type that the remediation supports. To automatically remediate only some of those resource types, apply a resource filter with an ARN pattern that matches the resource type in the resource ARN.
+
+The following ARN patterns match each resource type that `IAMAccessAnalyzer.ExternalAccess` supports:
+
+| Resource type | ARN pattern |
+| --- | --- |
+| Amazon S3 bucket |  `arn:*:s3:::*`  |
+| AWS KMS key |  `arn:*:kms:*:*:key/*`  |
+
+For example, to automatically remediate findings for S3 buckets but leave KMS key policies unchanged:
+
+1. Open the Web UI and go to the **Filters** page.
+
+1. Choose **Create filter**, enter a unique name, and add the ARN pattern `arn:*:kms:*:*:key/*`.
+
+1. Go to the **Controls** page. Apply the filter to `IAMAccessAnalyzer.ExternalAccess` in **Exclude** mode, and enable automated remediation for the control.
+
+1. Choose **Save changes**.
+
+The solution now automatically remediates findings for S3 buckets, and does not automatically remediate findings for KMS keys. To get the same result with an include-mode filter, use the S3 bucket pattern instead.
+
+Deadline enforcement does not apply control filters. If a notification configuration enforces a deadline for these findings, also scope it with a resource filter. For details, see [Deadline enforcement](configure-notifications.md#deadline-enforcement).
+
+The filter mode applies to every filter on the control. If the control already has include-mode filters, use the include-mode approach so that those filters keep working.
+
+**Apply resource-type filters to a single control**
+Do not apply a resource-type filter with **Apply to all controls**. That action adds the filter to every control. Each control keeps its existing filter mode. Include mode is the default, so most controls use it. Controls in include mode stop automatically remediating every finding that does not match the pattern. Controls in exclude mode stop automatically remediating findings that match it. For example, if `KMS.4` is in exclude mode, it stops automatically remediating every KMS key.

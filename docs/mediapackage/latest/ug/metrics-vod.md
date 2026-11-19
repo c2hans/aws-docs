@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/metrics-vod.html
 ---
 
 # AWS Elemental MediaPackage VOD content metrics
-<a name="metrics-vod"></a>
 
 The `AWS/MediaPackage` namespace includes the following metrics for video on demand (VOD) content. AWS Elemental MediaPackage publishes metrics to CloudWatch every minute, if not sooner.
 

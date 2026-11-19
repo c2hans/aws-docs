@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ge
 ---
 
 # GetAsset
-<a name="API_GetAsset"></a>
 
 This operation returns information about an asset.
 

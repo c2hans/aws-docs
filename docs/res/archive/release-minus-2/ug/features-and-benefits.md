@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/features-
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 Research and Engineering Studio on AWS provides the following features:
 

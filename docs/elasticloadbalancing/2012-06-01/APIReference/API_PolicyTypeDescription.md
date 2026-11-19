@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # PolicyTypeDescription
-<a name="API_PolicyTypeDescription"></a>
 
 Information about a policy type.
 

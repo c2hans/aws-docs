@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # Mastercard specific functions
-<a name="use-cases-issuers.networkfunctions.mastercard"></a>
 
 **Topics**
 + [DCVC3](#use-cases-issuers.networkfunctions.mastercard.dcvc)

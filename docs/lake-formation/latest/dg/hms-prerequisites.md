@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/hms-prerequisit
 ---
 
 # Prerequisites for connecting the Data Catalog to the Hive metastore
-<a name="hms-prerequisites"></a>
 
 To connect the AWS Glue Data Catalog to an external Apache Hive metastore and set up data access permissions, you need to complete the following requirements:
 **Note**

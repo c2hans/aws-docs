@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Limitations
-<a name="aws-glue-programming-etl-datalake-native-frameworks-limitations"></a>
 
 Consider the following limitations before you use data lake frameworks with AWS Glue.
 + The following AWS Glue `GlueContext` methods for DynamicFrame don't support reading and writing data lake framework tables. Use the `GlueContext` methods for DataFrame or Spark DataFrame API instead.

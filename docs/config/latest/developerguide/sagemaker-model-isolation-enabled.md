@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-m
 ---
 
 # sagemaker-model-isolation-enabled
-<a name="sagemaker-model-isolation-enabled"></a>
 
 Checks if an Amazon SageMaker model has network isolation enabled. The rule is NON\_COMPLIANT if configuration.EnableNetworkIsolation is false.
 

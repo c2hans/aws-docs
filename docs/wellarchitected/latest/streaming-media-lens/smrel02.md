@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Content processing
-<a name="smrel02"></a>
 
 Processing transforms ingested content into distribution formats. Failures in encoding or packaging can stop content from reaching viewers or degrade quality. Reliable processing requires redundancy, idempotent workflows, and automatic error recovery.
 

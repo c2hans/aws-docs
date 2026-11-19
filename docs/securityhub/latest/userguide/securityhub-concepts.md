@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Concepts and terminology in Security Hub CSPM
-<a name="securityhub-concepts"></a>
 
 In AWS Security Hub CSPM, we build on common AWS concepts and terminology and use these additional terms.
 

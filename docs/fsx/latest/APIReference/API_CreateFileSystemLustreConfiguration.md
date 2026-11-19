@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSy
 ---
 
 # CreateFileSystemLustreConfiguration
-<a name="API_CreateFileSystemLustreConfiguration"></a>
 
 The Lustre configuration for the file system being created.
 

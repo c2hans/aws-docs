@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/marketo.html
 ---
 
 # Marketo
-<a name="marketo"></a>
 
 The following are the requirements and connection instructions for using Marketo with Amazon AppFlow.
 

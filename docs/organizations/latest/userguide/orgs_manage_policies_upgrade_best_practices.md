@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Best practices for using upgrade rollout policies
-<a name="orgs_manage_policies_upgrade_best_practices"></a>
 
 AWS recommends the following best practices for using upgrade rollout policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_HttpContext.
 ---
 
 # HttpContext
-<a name="API_HttpContext"></a>
 
 Specifies the HTTP context to use for the test authorizer request.
 

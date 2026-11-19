@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ResourceMa
 ---
 
 # ResourceMapFilter
-<a name="API_ResourceMapFilter"></a>
 
 A resource map filter for a software bill of material report.
 

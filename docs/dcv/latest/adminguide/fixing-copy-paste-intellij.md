@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/fixing-copy-paste-
 ---
 
 # Fixing Copy and Paste to IntelliJ IDEA
-<a name="fixing-copy-paste-intellij"></a>
 
 When trying to copy text from the macOS Amazon DCV Client to IntelliJ IDEA, the text cannot be pasted. IntelliJ can't accept the cross-platform format that Amazon DCV uses by default. To disable cross-platform text on Amazon DCV so you can paste text into IntelliJ, modify the `disabled-targets` field on the Amazon DCV Server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Troubleshoot issues in Network Flow Monitor
-<a name="CloudWatch-NetworkFlowMonitor-troubleshooting"></a>
 
 This section provides guidance for troubleshooting errors with Network Flow Monitor, including solving issues with installing agents.
 

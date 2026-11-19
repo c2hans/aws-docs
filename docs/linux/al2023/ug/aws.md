@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/aws.html
 ---
 
 # Using AL2023 on AWS
-<a name="aws"></a>
 
 You can set up AL2023 for use with other AWS services. For example, you can choose an AL2023 AMI when you launch an [Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) (Amazon EC2) instance.
 

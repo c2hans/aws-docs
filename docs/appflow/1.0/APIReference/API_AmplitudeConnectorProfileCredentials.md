@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_AmplitudeCo
 ---
 
 # AmplitudeConnectorProfileCredentials
-<a name="API_AmplitudeConnectorProfileCredentials"></a>
 
  The connector-specific credentials required when using Amplitude.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # IdleSummary
-<a name="API_IdleSummary"></a>
 
 Describes the findings summary of the idle resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-performin
 ---
 
 # Performing common system tasks for Amazon RDS for Db2 DB instances
-<a name="db2-performing-common-system-tasks-db-instances"></a>
 
 You can perform certain common database administrator tasks related to the system on your Amazon RDS DB instances running Db2. To deliver a managed service experience, Amazon RDS doesn't provide shell access to DB instances, and restricts access to certain system procedures and tables that require advanced privileges.
 

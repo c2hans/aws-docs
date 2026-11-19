@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Sou
 ---
 
 # SourceRevision
-<a name="API_SourceRevision"></a>
 
 Information about the version (or revision) of a source artifact that initiated a pipeline execution.
 

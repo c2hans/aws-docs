@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # RejectGrant
-<a name="API_RejectGrant"></a>
 
 Rejects the specified grant.
 

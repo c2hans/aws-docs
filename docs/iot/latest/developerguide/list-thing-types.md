@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/list-thing-typ
 ---
 
 # List thing types
-<a name="list-thing-types"></a>
 
 You can use the **ListThingTypes** command to list thing types:
 

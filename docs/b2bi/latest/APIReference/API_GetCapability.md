@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_GetCapabili
 ---
 
 # GetCapability
-<a name="API_GetCapability"></a>
 
 Retrieves the details for the specified capability. A trading capability contains the information required to transform incoming EDI documents into JSON or XML outputs.
 

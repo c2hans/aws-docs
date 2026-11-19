@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateCo
 ---
 
 # CreateContactFlowVersion
-<a name="API_CreateContactFlowVersion"></a>
 
 Publishes a new version of the flow provided. Versions are immutable and monotonically increasing. If the `FlowContentSha256` provided is different from the `FlowContentSha256` of the `$LATEST` published flow content, then an error is returned.
 

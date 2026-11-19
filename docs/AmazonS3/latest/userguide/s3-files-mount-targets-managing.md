@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-mount
 ---
 
 # Managing mount targets
-<a name="s3-files-mount-targets-managing"></a>
 
 You can add or remove security groups associated with a mount target. Security groups define inbound and outbound access. When you change security groups associated with a mount target, make sure that you authorize necessary inbound and outbound access. Doing so enables your compute resource to communicate with the file system. See [Security groups](s3-files-prereq-policies.md#s3-files-prereq-security-groups) in the prerequisites to understand the security group configurations required to start using your file system.
 

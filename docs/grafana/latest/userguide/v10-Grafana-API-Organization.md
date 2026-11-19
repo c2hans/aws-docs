@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-Grafana-API
 ---
 
 # Organization API
-<a name="v10-Grafana-API-Organization"></a>
 
 Use the Organization API to work with organizations in an Amazon Managed Grafana workspace.
 

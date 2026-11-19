@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # CarrierStatusInformation
-<a name="API_CarrierStatusInformation"></a>
 
 Contains carrier-level launch status details for an RCS agent within a country.
 

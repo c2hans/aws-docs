@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Delete Guard Hooks in your account
-<a name="guard-hooks-delete-hooks"></a>
 
 When you no longer need an activated Guard Hook, use the following procedures to delete it in your account.
 

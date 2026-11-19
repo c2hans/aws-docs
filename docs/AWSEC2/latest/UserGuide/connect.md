@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect.html
 ---
 
 # Connect to your EC2 instance
-<a name="connect"></a>
 
 Your Amazon EC2 instance is a virtual server in the AWS Cloud. To log on to your instance, you must establish a connection to the instance. How you connect to your instance depends on the operating system of the instance and the operating system on the computer that you use to connect to the instance. The following table details the requirements for each connection method.
 

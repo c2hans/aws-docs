@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_StartAppl
 ---
 
 # StartApplication
-<a name="API_StartApplication"></a>
 
 Starts the specified Managed Service for Apache Flink application. After creating an application, you must exclusively call this operation to start your application.
 

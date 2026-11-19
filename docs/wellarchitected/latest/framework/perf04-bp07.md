@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf04-
 ---
 
 # PERF04-BP07 Optimize network configuration based on metrics
-<a name="perf04-bp07"></a>
 
  Base your network configuration on measured behavior. When you collect and analyze network telemetry, you can tune configuration to real traffic and confirm each change improves performance.
 

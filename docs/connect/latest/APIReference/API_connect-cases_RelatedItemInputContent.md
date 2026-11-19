@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # RelatedItemInputContent
-<a name="API_connect-cases_RelatedItemInputContent"></a>
 
 Represents the content of a related item to be created.
 

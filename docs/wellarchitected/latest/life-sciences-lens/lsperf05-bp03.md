@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSPERF05-BP03 Implement a comprehensive system optimization strategy
-<a name="lsperf05-bp03"></a>
 
  Establish comprehensive workload profiling, benchmarking, and monitoring practices covering each computational aspect (compute, memory, storage, and network), enabling data-driven decisions for resource allocation and identifying bottlenecks before they impact research timelines.
 

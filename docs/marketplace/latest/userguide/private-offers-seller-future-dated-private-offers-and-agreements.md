@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/private-off
 ---
 
 # Creating future dated agreements for private offers
-<a name="private-offers-seller-future-dated-private-offers-and-agreements"></a>
 
 As an AWS Marketplace seller, you can use future dated agreements to sell a product that a buyer will receive on a *predetermined future date*. In a typical AWS Marketplace transaction, the buyer receives the product license or entitlement *immediately* after the offer is accepted or the agreement is created. In contrast, with a future dated agreement (FDA), the buyer receives the product license or entitlement on a *predetermined future date*. FDA can be used to setup renewals for existing transactions with the buyer. FDA is supported for software as a service (SaaS) products for contract and contracts with consumption (CCP) pricing, with and without flexible payments. The following sections provide information about working with future dated agreements.
 

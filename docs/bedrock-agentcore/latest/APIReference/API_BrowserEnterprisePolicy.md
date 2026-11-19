@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BrowserEnterprisePolicy
-<a name="API_BrowserEnterprisePolicy"></a>
 
 Browser enterprise policy configuration.
 

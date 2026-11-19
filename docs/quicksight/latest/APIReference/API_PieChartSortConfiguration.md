@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_PieCh
 ---
 
 # PieChartSortConfiguration
-<a name="API_PieChartSortConfiguration"></a>
 
 The sort configuration of a pie chart.
 

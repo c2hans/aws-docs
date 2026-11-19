@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Scenario 13: Implementation of unified AdSales for converged television on AWS
-<a name="scenario-13-unified-adsales-converged-tv"></a>
 
  Publishers operating both linear TV and digital/CTV advertising face incompatible buying models (upfront/scatter with GRP guarantees compared to programmatic with audience-based targeting), fragmented measurement, and duplicated tech stacks. This scenario addresses how to converge these operations into a unified architecture that enables cross-platform campaign management, unified measurement, and data-driven yield optimization.
 

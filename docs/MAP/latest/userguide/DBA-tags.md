@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/DBA-tags.html
 ---
 
 # Database and analytics tags
-<a name="DBA-tags"></a>
 
 Use the following tables for migration plans whose Migration Tracking and Incentive Guide includes database and analytics MAP credits.
 

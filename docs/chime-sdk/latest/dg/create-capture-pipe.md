@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-capture-pipe.
 ---
 
 # Creating the Amazon Chime SDK media capture pipeline
-<a name="create-capture-pipe"></a>
 
 After you create and configure your Amazon S3 bucket or buckets, you create a media capture pipeline.
 

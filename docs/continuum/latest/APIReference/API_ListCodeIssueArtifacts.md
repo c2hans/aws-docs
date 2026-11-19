@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_ListCo
 ---
 
 # ListCodeIssueArtifacts
-<a name="API_ListCodeIssueArtifacts"></a>
 
 Lists the artifacts attached to an issue in descending artifactId order. Content is returned by GetCodeIssueArtifact.
 

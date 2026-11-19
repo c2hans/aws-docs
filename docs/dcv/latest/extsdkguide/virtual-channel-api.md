@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/virtual-channel-a
 ---
 
 # Virtual Channel API
-<a name="virtual-channel-api"></a>
 
 ## SetupVirtualChannel
 <a name="setupvirtualchannel"></a>

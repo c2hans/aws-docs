@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanDe
 ---
 
 # ScanDetections
-<a name="API_ScanDetections"></a>
 
 Contains a complete view providing malware scan result details.
 

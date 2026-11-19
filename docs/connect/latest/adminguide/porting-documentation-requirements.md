@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/porting-docume
 ---
 
 # Documentation requirements for porting numbers to Connect Customer
-<a name="porting-documentation-requirements"></a>
 
 The Letter of Authorization (LOA) is an industry standard document type used by carriers to authorize the transfer of a phone number from one carrier to another. In many cases, the LOA is specific to the country or region, carrier, or porting relationship between the losing and winning carriers.
 

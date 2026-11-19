@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/analytics
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Use Amazon Pinpoint analytics JSON query results
-<a name="analytics-query-results"></a>
 
 When you use Amazon Pinpoint Analytics APIs to query analytics data, Amazon Pinpoint returns the results in a JSON response. For application metrics, campaign metrics, and journey engagement metrics, the data in the response adheres to a standard JSON schema for reporting Amazon Pinpoint analytics data.
 

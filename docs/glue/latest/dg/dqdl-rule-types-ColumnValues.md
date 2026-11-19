@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-ColumnVal
 ---
 
 # ColumnValues
-<a name="dqdl-rule-types-ColumnValues"></a>
 
 Runs an expression against the values in a column.
 

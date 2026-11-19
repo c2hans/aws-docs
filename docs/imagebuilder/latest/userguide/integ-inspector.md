@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/integ-insp
 ---
 
 # Amazon Inspector integration in Image Builder
-<a name="integ-inspector"></a>
 
 Image Builder integrates with Amazon Inspector to scan the images that you build for software vulnerabilities. Amazon Inspector is a paid service.
 

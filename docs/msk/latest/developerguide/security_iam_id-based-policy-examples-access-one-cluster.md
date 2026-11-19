@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/security_iam_i
 ---
 
 # Accessing one Amazon MSK cluster
-<a name="security_iam_id-based-policy-examples-access-one-cluster"></a>
 
 In this example, you want to grant an IAM user in your Amazon Web Services account access to one of your clusters, `purchaseQueriesCluster`. This policy allows the user to describe the cluster, get its bootstrap brokers, list its broker nodes, and update it.
 

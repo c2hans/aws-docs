@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CodeRe
 ---
 
 # CodeRepositorySummary
-<a name="API_CodeRepositorySummary"></a>
 
 Specifies summary information about a Git repository.
 

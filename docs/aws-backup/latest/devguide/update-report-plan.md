@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/update-report
 ---
 
 # Updating report plans
-<a name="update-report-plan"></a>
 
 You can update an existing report plan's description, its delivery destination, and format. If applicable, you can also add or remove frameworks from the report plan.
 

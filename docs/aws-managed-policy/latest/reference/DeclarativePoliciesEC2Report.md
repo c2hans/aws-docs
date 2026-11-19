@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Decl
 ---
 
 # DeclarativePoliciesEC2Report
-<a name="DeclarativePoliciesEC2Report"></a>
 
 **Description**: Provides access to read-only APIs needed to run EC2 Declarative Policies Account Status Report.
 

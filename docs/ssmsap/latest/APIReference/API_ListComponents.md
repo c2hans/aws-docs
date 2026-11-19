@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListCompo
 ---
 
 # ListComponents
-<a name="API_ListComponents"></a>
 
 Lists all the components registered with AWS Systems Manager for SAP.
 

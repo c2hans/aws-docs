@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_FirewallMana
 ---
 
 # FirewallManagerRuleGroup
-<a name="API_FirewallManagerRuleGroup"></a>
 
 A rule group that's defined for an AWS Firewall Manager AWS WAF policy.
 

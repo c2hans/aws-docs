@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/encryption-in-transit.h
 ---
 
 # Encryption in transit
-<a name="encryption-in-transit"></a>
 
 In addition to encrypting data at rest in Amazon S3, Amazon Athena uses Transport Layer Security (TLS) encryption for data in-transit between Athena and Amazon S3, and between Athena and customer applications accessing it.
 

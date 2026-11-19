@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_S
 ---
 
 # S3BucketSource
-<a name="API_S3BucketSource"></a>
 
  The S3 bucket that is being imported from.
 

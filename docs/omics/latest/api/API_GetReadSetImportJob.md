@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetReadSetImportJob
 ---
 
 # GetReadSetImportJob
-<a name="API_GetReadSetImportJob"></a>
 
 Gets detailed and status information about a read set import job and returns the data in JSON format.
 

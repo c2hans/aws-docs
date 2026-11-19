@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketEncr
 ---
 
 # DeleteBucketEncryption
-<a name="API_DeleteBucketEncryption"></a>
 
 This implementation of the DELETE action resets the default encryption for the bucket as server-side encryption with Amazon S3 managed keys (SSE-S3).
 

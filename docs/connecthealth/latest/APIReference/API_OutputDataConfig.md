@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ou
 ---
 
 # OutputDataConfig
-<a name="API_OutputDataConfig"></a>
 
 Configuration details for insights output.
 

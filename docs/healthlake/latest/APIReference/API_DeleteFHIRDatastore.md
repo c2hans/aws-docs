@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Delet
 ---
 
 # DeleteFHIRDatastore
-<a name="API_DeleteFHIRDatastore"></a>
 
 Delete a FHIR-enabled data store.
 

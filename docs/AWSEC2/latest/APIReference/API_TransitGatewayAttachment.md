@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayAttachment
-<a name="API_TransitGatewayAttachment"></a>
 
 Describes an attachment between a resource and a transit gateway.
 

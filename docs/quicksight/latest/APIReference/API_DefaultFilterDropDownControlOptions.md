@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultFilterDropDownControlOptions
-<a name="API_DefaultFilterDropDownControlOptions"></a>
 
 The default options that correspond to the `Dropdown` filter control type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Opera
 ---
 
 # Amazon DocumentDB Elastic Clusters
-<a name="API_Operations_Amazon_DocumentDB_Elastic_Clusters"></a>
 
 The following actions are supported by Amazon DocumentDB Elastic Clusters:
 +  [ApplyPendingMaintenanceAction](API_elastic_ApplyPendingMaintenanceAction.md)

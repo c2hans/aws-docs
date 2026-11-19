@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # S3 Storage \| Update Encryption
-<a name="management-advanced-s3-storage-update-encryption"></a>
 
 Enable or update S3 bucket encryption setting through direct API calls. The S3 bucket can be standalone or belong to a CloudFormation stack; in the latter case, the change might cause stack drift. To avoid causing stack drift, please use ct-1gi93jhvj28eg instead, or ct-361tlo1k7339x if the S3 bucket was provisioned via CFN ingestion.
 

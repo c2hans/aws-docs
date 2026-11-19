@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migrating Active Directory
-<a name="migrating-active-directory-workloads"></a>
 
 Active Directory is a typical identity and access management solution for many corporate environments. The coupling of DNS, user, and machine management makes Active Directory an ideal choice for both Microsoft and Linux workloads for centralized user authentication. When you're planning your journey to the cloud or to AWS, you're faced with the choice of extending Active Directory into AWS or using a managed service to offload the management of the directory service infrastructure. We recommend that you understand the risks and benefits of each option when deciding the right approach for your organization.
 

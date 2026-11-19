@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_InstanceConf
 ---
 
 # InstanceConfig
-<a name="API_InstanceConfig"></a>
 
 An EC2 instance configuration AWS PCS uses to launch compute nodes.
 

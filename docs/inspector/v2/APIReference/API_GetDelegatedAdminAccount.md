@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetDelegat
 ---
 
 # GetDelegatedAdminAccount
-<a name="API_GetDelegatedAdminAccount"></a>
 
 Retrieves information about the Amazon Inspector delegated administrator for your organization.
 

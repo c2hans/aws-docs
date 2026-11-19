@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ETag.html
 ---
 
 # ETag
-<a name="API_ETag"></a>
 
 The entity tag (ETag) is a hash of the object representing its semantic content.
 

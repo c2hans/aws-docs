@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeUserHierarchyStructure
-<a name="API_DescribeUserHierarchyStructure"></a>
 
 Describes the hierarchy structure of the specified Connect Customer instance.
 

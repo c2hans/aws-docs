@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::OTAUpdate AwsJobPresignedUrlConfig
-<a name="aws-properties-iot-otaupdate-awsjobpresignedurlconfig"></a>
 
 Configuration information for pre-signed URLs. Valid when `protocols` contains HTTP.
 

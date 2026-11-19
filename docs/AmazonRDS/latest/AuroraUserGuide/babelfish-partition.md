@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Understanding partitioning in Babelfish
-<a name="babelfish-partition"></a>
 
 Starting with version 4.3.0, Babelfish introduces table and index partitioning with limited support. The following sections provide details on creating partition functions, defining partition schemes, and implementing partitioned tables and indexes in Babelfish.
 

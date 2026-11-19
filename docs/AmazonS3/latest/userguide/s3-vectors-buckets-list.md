@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-buc
 ---
 
 # Listing vector buckets
-<a name="s3-vectors-buckets-list"></a>
 
 You can view all your vector buckets using the Amazon S3 console, AWS CLI, or AWS SDKs. The listing operations support prefix-based filtering to help you find specific buckets when you have many vector buckets in your account. For more information about `ListVectorBuckets`, prefix limits, and response limits, see [ListVectorBuckets](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_ListVectorBuckets.html) in the *Amazon S3 API Reference*.
 

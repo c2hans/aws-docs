@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Deliver
 ---
 
 # DeliveryStreamEncryptionConfigurationInput
-<a name="API_DeliveryStreamEncryptionConfigurationInput"></a>
 
 Specifies the type and Amazon Resource Name (ARN) of the CMK to use for Server-Side Encryption (SSE).
 

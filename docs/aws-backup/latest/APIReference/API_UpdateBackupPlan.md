@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Updat
 ---
 
 # UpdateBackupPlan
-<a name="API_UpdateBackupPlan"></a>
 
 Updates the specified backup plan. The new version is uniquely identified by its ID.
 

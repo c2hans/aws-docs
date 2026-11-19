@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/generative-ai-infere
 ---
 
 # Optimized generative AI inference recommendations
-<a name="generative-ai-inference-recommendations"></a>
 
 Amazon SageMaker AI now supports inference recommendations, a capability that eliminates manual optimization and benchmarking to deliver optimal inference performance. Instead of manually testing combinations of GPU instance types, serving containers, parallelism strategies, and optimization techniques, you provide your model and workload requirements, and SageMaker AI returns validated, deployment-ready configurations with real performance metrics.
 

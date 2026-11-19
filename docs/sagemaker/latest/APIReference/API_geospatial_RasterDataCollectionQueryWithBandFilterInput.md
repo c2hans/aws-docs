@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # RasterDataCollectionQueryWithBandFilterInput
-<a name="API_geospatial_RasterDataCollectionQueryWithBandFilterInput"></a>
 
 This is a RasterDataCollectionQueryInput containing AreaOfInterest, Time Range filter and Property filters.
 

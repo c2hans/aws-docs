@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel06-b
 ---
 
 # REL06-BP01 Monitor all components for the workload (Generation)
-<a name="rel06-bp01"></a>
 
  Collect telemetry from each tier so you can detect degradation early and confirm that the workload delivers its intended business outcomes. Without broad instrumentation, failures surface first as customer complaints.
 

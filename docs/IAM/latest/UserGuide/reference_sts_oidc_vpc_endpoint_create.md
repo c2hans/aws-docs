@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sts_oidc_
 ---
 
 # Create a VPC endpoint for AWS STS OIDC discovery
-<a name="reference_sts_oidc_vpc_endpoint_create"></a>
 
 AWS Security Token Service (AWS STS) OIDC discovery is a pair of public endpoints that serve the metadata and verification keys relying parties need to validate JSON Web Tokens (JWTs) issued by [outbound identity federation](id_roles_providers_outbound.md).
 

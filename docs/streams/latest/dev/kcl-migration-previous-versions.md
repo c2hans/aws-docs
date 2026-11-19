@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-migration-previou
 ---
 
 # Migrate from previous KCL versions
-<a name="kcl-migration-previous-versions"></a>
 
 This topic explains how to migrate from previous versions of the Kinesis Client Library (KCL).
 

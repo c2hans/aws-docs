@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_UpdateWo
 ---
 
 # UpdateWorkspaceAuthentication
-<a name="API_UpdateWorkspaceAuthentication"></a>
 
 Use this operation to define the identity provider (IdP) that this workspace authenticates users from, using SAML. You can also map SAML assertion attributes to workspace user information and define which groups in the assertion attribute are to have the `Admin` and `Editor` roles in the workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/ConfiguringiSC
 ---
 
 # Connecting your volumes to a Linux client
-<a name="ConfiguringiSCSIClientInitiatorRedHatClient"></a>
 
 **Topics**
 

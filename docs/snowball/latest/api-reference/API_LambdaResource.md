@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_Lambda
 ---
 
 # LambdaResource
-<a name="API_LambdaResource"></a>
 
 **Note**
  AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
@@ -14,7 +13,7 @@ Identifies
 <a name="API_LambdaResource_Contents"></a>
 
  ** EventTriggers **   <a name="Snowball-Type-LambdaResource-EventTriggers"></a>
-The array of ARNs for [S3Resource](API_S3Resource.md) objects to trigger the [LambdaResource](#API_LambdaResource) objects associated with this job.
+The array of ARNs for [S3Resource](API_S3Resource.md) objects to trigger the [LambdaResource](API_LambdaResource.md) objects associated with this job.
 Type: Array of [EventTriggerDefinition](API_EventTriggerDefinition.md) objects
 Required: No
 

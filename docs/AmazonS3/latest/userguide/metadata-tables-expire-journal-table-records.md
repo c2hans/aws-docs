@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metadata-table
 ---
 
 # Expiring journal table records
-<a name="metadata-tables-expire-journal-table-records"></a>
 
 By default, the records in your journal table don't expire. To help minimize the storage costs for your journal table, you can enable journal table record expiration.
 

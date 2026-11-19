@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Deploying to AWS
-<a name="deployment-chapt"></a>
 
 The Toolkit for Visual Studio supports application deployment to AWS Elastic Beanstalk containers or CloudFormation stacks.
 

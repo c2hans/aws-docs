@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # GetTemplate
-<a name="API_GetTemplate"></a>
 
 Returns the template body for a specified stack. You can get the template for running or deleted stacks.
 

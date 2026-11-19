@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Creating sandbox accounts
-<a name="creating-sandbox-accounts"></a>
 
 The Innovation Sandbox on AWS solution works with existing AWS accounts and does not create new accounts. Create new accounts using AWS Organizations. For more information, refer to [Creating a member account in an organization with AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html).
 

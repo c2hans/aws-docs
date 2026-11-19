@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Recovering DLT data after stack deletion
-<a name="recover-data-after-stack-deletion"></a>
 
 This section describes how to restore test scenarios and run history into a new DLT stack after the original stack has been deleted. It applies when the customer’s S3 buckets and DynamoDB tables were retained (the default behavior) and the customer wants to reconnect them to a fresh deployment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/allow-lists.ht
 ---
 
 # Allow Lists
-<a name="allow-lists"></a>
 
 In Amazon Macie, an allow list defines specific text or a text pattern that you want Macie to ignore when it inspects a data source for sensitive data. If data matches text or a text pattern in an allow list, Macie doesn't report the data. This is the case even if the data matches the criteria of a managed data identifier or a custom data identifier. You can create and use allow lists in all the AWS Regions where Macie is currently available except the Asia Pacific (Osaka) Region.
 

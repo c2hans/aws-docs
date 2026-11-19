@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # Managing rule groups and rules in DNS Firewall
-<a name="resolver-dns-firewall-rule-group-managing"></a>
 
 To manage rule groups and rules in the console, follow the guidance in this section.
 

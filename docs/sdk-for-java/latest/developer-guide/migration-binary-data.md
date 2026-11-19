@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Binary data handling changes
-<a name="migration-binary-data"></a>
 
 In version 1, binary data was handled using `ByteBuffer` objects directly. In version 2, the SDK uses `SdkBytes` objects that provide a more convenient and type-safe way to work with binary data.
 

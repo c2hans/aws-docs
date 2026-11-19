@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Configuring Automations to monitor CloudWatch Alarms
-<a name="automation-cw-alarm-monitoring"></a>
 
 You can configure your Automation runbook executions to monitor CloudWatch alarms. If a specified alarm enters `ALARM` state, Automation stops the execution. For executions using rate control mode or running across multiple accounts, Automation cancels all pending executions. If you define `onCancel` steps in your runbook, those steps run before the execution ends. This prevents runbooks from continuing when monitored resources are unhealthy.
 

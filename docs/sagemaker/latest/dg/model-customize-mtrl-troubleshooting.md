@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Troubleshooting
-<a name="model-customize-mtrl-troubleshooting"></a>
 
 If your training job fails or behaves unexpectedly, the following sections can help you identify and resolve the issue. Checking your job status can help narrow down whether the issue is in your configuration or your agent, and the agent-specific sections below cover logs and common issues for each deployment path.
 

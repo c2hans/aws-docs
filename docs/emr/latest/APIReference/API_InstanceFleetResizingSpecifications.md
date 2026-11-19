@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceFlee
 ---
 
 # InstanceFleetResizingSpecifications
-<a name="API_InstanceFleetResizingSpecifications"></a>
 
 The resize specification for On-Demand and Spot Instances in the fleet.
 

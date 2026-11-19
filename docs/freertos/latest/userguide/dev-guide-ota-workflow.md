@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dev-guide-ota-
 ---
 
 # OTA tutorial
-<a name="dev-guide-ota-workflow"></a>
 
 This section contains a tutorial for updating firmware on devices running FreeRTOS using OTA updates. In addition to firmware images, you can use an OTA update to send any type of file to a device connected to AWS IoT.
 

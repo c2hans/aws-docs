@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.
 ---
 
 # Configure and customize queries and response generation
-<a name="kb-test-config"></a>
 
 You can configure and customize retrieval and response generation, further improving the relevancy of responses. For example, you can apply filters to document metadata fields/attributes to use the most recently updated documents or documents with recent modification times.
 

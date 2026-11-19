@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListPermissi
 ---
 
 # ListPermissionAssociations
-<a name="API_ListPermissionAssociations"></a>
 
 Lists information about the managed permission and its associations to any resource shares that use this managed permission. This lets you see which resource shares use which versions of the specified managed permission.
 

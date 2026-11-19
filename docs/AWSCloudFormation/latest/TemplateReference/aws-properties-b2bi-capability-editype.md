@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Capability EdiType
-<a name="aws-properties-b2bi-capability-editype"></a>
 
 <a name="aws-properties-b2bi-capability-editype-description"></a>The `EdiType` property type specifies Property description not available. for an [AWS::B2BI::Capability](aws-resource-b2bi-capability.md).
 

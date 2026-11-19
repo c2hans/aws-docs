@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/developerguide/delet
 ---
 
 # DeleteUser
-<a name="deleteuser"></a>
 
 A user can be deleted by making a `DELETE` request to the `/Users` endpoint with an existing user ID.
 

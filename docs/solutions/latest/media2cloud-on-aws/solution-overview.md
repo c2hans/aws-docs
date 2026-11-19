@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/solu
 ---
 
 # Extract key details from your media files in your AWS accounts
-<a name="solution-overview"></a>
 
 Publication date: *January 2019 ([last update](revisions.md): November 2023*)
 

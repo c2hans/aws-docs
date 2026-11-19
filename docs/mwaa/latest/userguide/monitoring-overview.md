@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/monitoring-overvie
 ---
 
 # Monitoring overview on Amazon MWAA
-<a name="monitoring-overview"></a>
 
 This page describes the AWS services used to monitor an Amazon Managed Workflows for Apache Airflow environment.
 

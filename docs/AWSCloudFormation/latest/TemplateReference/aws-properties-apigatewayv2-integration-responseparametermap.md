@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Integration ResponseParameterMap
-<a name="aws-properties-apigatewayv2-integration-responseparametermap"></a>
 
 <a name="aws-properties-apigatewayv2-integration-responseparametermap-description"></a>The `ResponseParameterMap` property type specifies Property description not available. for an [AWS::ApiGatewayV2::Integration](aws-resource-apigatewayv2-integration.md).
 

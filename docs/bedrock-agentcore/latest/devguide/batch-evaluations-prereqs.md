@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-
 ---
 
 # Prerequisites
-<a name="batch-evaluations-prereqs"></a>
 
 Before you can run batch evaluations, make sure the following are in place.
 

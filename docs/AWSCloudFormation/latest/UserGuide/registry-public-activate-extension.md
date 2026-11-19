@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/regis
 ---
 
 # Activate a third-party public extension in your account
-<a name="registry-public-activate-extension"></a>
 
 The following topic shows you how to activate a third-party public extension in your account, which makes it usable in the account and Region it was activated in.
 

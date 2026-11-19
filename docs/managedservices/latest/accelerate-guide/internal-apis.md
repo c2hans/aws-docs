@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Internal API operations
-<a name="internal-apis"></a>
 
 If you monitor API operations, you might see calls to the following internal-only operations:
 + `GetDashboardUrl`

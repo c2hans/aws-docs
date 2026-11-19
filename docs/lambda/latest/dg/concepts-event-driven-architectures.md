@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-a
 ---
 
 # Creating event-driven architectures with Lambda
-<a name="concepts-event-driven-architectures"></a>
 
 An event is anything that triggers a Lambda function to run. Events can trigger a Lambda function in two ways: through direct invocation (push) and event source mappings (pull).
 

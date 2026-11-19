@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListNo
 ---
 
 # ListNotebookInstanceLifecycleConfigs
-<a name="API_ListNotebookInstanceLifecycleConfigs"></a>
 
 Lists notebook instance lifestyle configurations created with the [CreateNotebookInstanceLifecycleConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateNotebookInstanceLifecycleConfig.html) API.
 

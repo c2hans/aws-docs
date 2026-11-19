@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/opera
 ---
 
 # Operation
-<a name="operation"></a>
 
 This section lists the data entities within the operation category.
 

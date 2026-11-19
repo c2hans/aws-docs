@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Aggrega
 ---
 
 # AggregationOutput
-<a name="API_AggregationOutput"></a>
 
 The aggregation for an attribute.
 

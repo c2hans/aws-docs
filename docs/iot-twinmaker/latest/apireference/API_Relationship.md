@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Re
 ---
 
 # Relationship
-<a name="API_Relationship"></a>
 
 An object that specifies a relationship with another component type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_StorageVirtu
 ---
 
 # StorageVirtualMachineFilter
-<a name="API_StorageVirtualMachineFilter"></a>
 
 A filter used to restrict the results of describe calls for Amazon FSx for NetApp ONTAP storage virtual machines (SVMs). You can use multiple filters to return results that meet all applied filter requirements.
 

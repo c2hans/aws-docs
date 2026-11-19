@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_LogPa
 ---
 
 # LogPattern
-<a name="API_LogPattern"></a>
 
 An object that defines the log patterns that belongs to a `LogPatternSet`.
 

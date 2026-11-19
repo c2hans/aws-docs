@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_P
 ---
 
 # PutEmailIdentityMailFromAttributes
-<a name="API_PutEmailIdentityMailFromAttributes"></a>
 
 Used to enable or disable the custom Mail-From domain configuration for an email identity.
 

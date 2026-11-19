@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledControlParameterSummary
-<a name="API_EnabledControlParameterSummary"></a>
 
 Returns a summary of information about the parameters of an enabled control.
 

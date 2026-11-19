@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # The create new environment wizard
-<a name="environments-create-wizard"></a>
 
 This topic describes the **Create environment** wizard and all the ways you can use it to configure the environment you want to create.
 

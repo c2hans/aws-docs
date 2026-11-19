@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-a
 ---
 
 # Overview of managing access permissions to your IAM Identity Center resources
-<a name="iam-auth-access-overview"></a>
 
 Every AWS resource is owned by an AWS account, and permissions to create or access the resources are governed by permissions policies. To provide access, an account administrator can add permissions to IAM identities (that is, users, groups, and roles). Some services (such as AWS Lambda) also support adding permissions to resources.
 

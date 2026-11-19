@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RateBasedSta
 ---
 
 # RateBasedStatementCustomKey
-<a name="API_RateBasedStatementCustomKey"></a>
 
 Specifies a single custom aggregate key for a rate-base rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/allowed-t
 ---
 
 # Allowed prefixes interactions for Direct Connect gateways
-<a name="allowed-to-prefixes"></a>
 
 Learn how allowed prefixes interact with Transit Gateways and virtual private gateways. For more information, see [Routing policies and BGP communities](routing-and-bgp.md).
 

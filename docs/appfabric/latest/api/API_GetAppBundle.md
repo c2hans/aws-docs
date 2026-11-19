@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_GetAppBundle.ht
 ---
 
 # GetAppBundle
-<a name="API_GetAppBundle"></a>
 
 Returns information about an app bundle.
 

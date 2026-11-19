@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSSUS04-BP01 Continuously improve the monitoring of resource consumption
-<a name="lssus04-bp01"></a>
 
  Implement comprehensive monitoring systems that track resource consumption across manufacturing and laboratory equipment to enable data-driven sustainability improvements. Deploy IoT sensors and real-time monitoring solutions that provide visibility into energy usage, material consumption, and operational efficiency patterns. Establish predictive analytics capabilities that identify optimization opportunities and support proactive maintenance strategies.
 

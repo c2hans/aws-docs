@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTDeviceDefenderUpdateDeviceCertMitigationAction
-<a name="AWSIoTDeviceDefenderUpdateDeviceCertMitigationAction"></a>
 
 **Description**: Provides write access to IoT certificates for execution of UPDATE\_DEVICE\_CERTIFICATE mitigation action
 

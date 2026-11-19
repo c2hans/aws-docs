@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Findin
 ---
 
 # FindingResource
-<a name="API_FindingResource"></a>
 
 A cloud or application resource a finding concerns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.REPLAC
 ---
 
 # REPLACE\_WITH\_MOST\_FREQUENT
-<a name="recipe-actions.REPLACE_WITH_MOST_FREQUENT"></a>
 
 Replaces each invalid value in a column with the most frequent column value.
 

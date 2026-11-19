@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailContextualGroundingTierConfig
-<a name="API_GuardrailContextualGroundingTierConfig"></a>
 
 Specifies the tier that your guardrail uses for contextual grounding checks.
 

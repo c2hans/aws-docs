@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Filtering by policy, account, Region, and system
-<a name="next-gen-dashboard-filtering"></a>
 
 You can filter dashboard views using the following filters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Range.html
 ---
 
 # Range
-<a name="API_Range"></a>
 
 The range of values that the property supports.
 

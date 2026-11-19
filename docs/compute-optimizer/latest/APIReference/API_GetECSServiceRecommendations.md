@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetECSServiceRecommendations
-<a name="API_GetECSServiceRecommendations"></a>
 
  Returns Amazon ECS service recommendations.
 

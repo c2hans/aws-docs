@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_BundleResource
 ---
 
 # BundleResourceAssociation
-<a name="API_BundleResourceAssociation"></a>
 
 Describes the association between an application and a bundle resource.
 

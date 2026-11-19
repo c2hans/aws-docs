@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/understa
 ---
 
 # Understanding your identity source
-<a name="understanding-identity-source"></a>
 
 IAM Identity Center uses an identity source to define where users are managed. There are two types of identity sources:
 

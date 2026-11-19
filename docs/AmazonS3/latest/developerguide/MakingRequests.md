@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/MakingReq
 ---
 
 # Making requests
-<a name="MakingRequests"></a>
 
 Amazon S3 is a REST service. You can send requests to Amazon S3 using the REST API or the AWS SDK (see [Sample Code and Libraries](https://aws.amazon.com/code)) wrapper libraries that wrap the underlying Amazon S3 REST API, simplifying your programming tasks.
 

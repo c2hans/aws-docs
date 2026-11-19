@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/about-overlay-sca
 ---
 
 # Sizing your overlay for scaling
-<a name="about-overlay-scaling"></a>
 
 In jobs that scale the video resolution, whether your overlay scales with your video depends on where you specify the image overlay. Motion image overlays and input overlays scale with the video; output overlays don't.
 

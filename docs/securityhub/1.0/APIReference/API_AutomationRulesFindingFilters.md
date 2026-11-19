@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Automat
 ---
 
 # AutomationRulesFindingFilters
-<a name="API_AutomationRulesFindingFilters"></a>
 
  The criteria that determine which findings a rule applies to.
 

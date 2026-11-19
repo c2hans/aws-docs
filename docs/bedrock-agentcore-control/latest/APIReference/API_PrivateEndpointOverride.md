@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PrivateEndpointOverride
-<a name="API_PrivateEndpointOverride"></a>
 
 A mapping of a specific domain to a private endpoint for secure connectivity through a VPC Lattice resource configuration.
 

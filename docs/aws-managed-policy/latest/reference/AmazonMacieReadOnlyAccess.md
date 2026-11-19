@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMacieReadOnlyAccess
-<a name="AmazonMacieReadOnlyAccess"></a>
 
 **Description**: Provides readonly access to Amazon Macie.
 

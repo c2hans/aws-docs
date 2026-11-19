@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Delete the custom application in IAM Identity Center
-<a name="delete-saml-app"></a>
 
 In this step, delete the SAML2.0 application you created using the instructions in the [Create SAML application](create-saml-app.md) section.
 

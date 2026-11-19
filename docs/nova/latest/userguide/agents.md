@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/agents.html
 ---
 
 # Building AI agents with Amazon Nova
-<a name="agents"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For information about how to build AI agents with Amazon Nova 2, visit [Building AI agents](https://docs.aws.amazon.com/nova/latest/nova2-userguide/building-ai-agents.html).

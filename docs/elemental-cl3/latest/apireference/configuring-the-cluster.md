@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/config
 ---
 
 # Configuring the Cluster
-<a name="configuring-the-cluster"></a>
 
 The entities in this chapter are those that you typically work with only when setting up your cluster. For background information on these entities, see the [AWS Elemental Conductor Live Configuration Guide](https://docs.aws.amazon.com/elemental-cl3/latest/configguide/).
 

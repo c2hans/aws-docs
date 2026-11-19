@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-re
 ---
 
 # Step K: Re-designate the backup worker node
-<a name="upg-red-redesignate"></a>
 
 Re-designate the backup worker as a backup so that it only runs active channels that have failed over from an active worker node.
 

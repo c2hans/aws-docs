@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Delete
 ---
 
 # DeleteCrossAccountAttachment
-<a name="API_DeleteCrossAccountAttachment"></a>
 
 Delete a cross-account attachment. When you delete an attachment, AWS Global Accelerator revokes the permission to use the resources in the attachment from all principals in the list of principals. AWS Global Accelerator revokes the permission for specific resources.
 

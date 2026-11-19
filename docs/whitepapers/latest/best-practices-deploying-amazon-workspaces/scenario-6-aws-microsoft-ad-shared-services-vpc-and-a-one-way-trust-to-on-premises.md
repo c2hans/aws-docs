@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Scenario 6: AWS Microsoft AD, shared services VPC, and a one-way trust to on-premises
-<a name="scenario-6-aws-microsoft-ad-shared-services-vpc-and-a-one-way-trust-to-on-premises"></a>
 
 This scenario, as shown in the following figure, uses an existing on-premises Active Directory for users, and introduces a separate Managed Active Directory in AWS Cloud to host the computer objects associated with the WorkSpaces. This scenario allows the computer objects and Active Directory group policies to be managed independently from the corporate Active Directory.
 

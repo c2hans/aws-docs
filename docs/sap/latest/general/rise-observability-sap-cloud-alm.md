@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-observability-sa
 ---
 
 # SAP Cloud ALM
-<a name="rise-observability-sap-cloud-alm"></a>
 
  [SAP Cloud Application Lifecycle Management (ALM)](https://support.sap.com/en/alm/sap-cloud-alm.html) serves as the primary tool for observability in cloud and hybrid landscapes. It provides a cloud-native approach to monitoring SAP solutions with a focus on standardization rather than extensive customization. Cloud ALM is provided to customers with active cloud services and can be used for both cloud and on-premises SAP solutions, making it suitable for hybrid environments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CfnSta
 ---
 
 # CfnStackParameter
-<a name="API_CfnStackParameter"></a>
 
  A key-value pair representing a parameter used in the CloudFormation stack.
 

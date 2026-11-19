@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use Step Functions to invoke Lambda functions
-<a name="example_cross_ServerlessWorkflows_section"></a>
 
 The following code example shows how to create an AWS Step Functions state machine that invokes AWS Lambda functions in sequence.
 

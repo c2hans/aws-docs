@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-marketing-clou
 ---
 
 # Configuring Salesforce Marketing Cloud
-<a name="salesforce-marketing-cloud-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Salesforce Marketing Cloud, you must meet these requirements:
 

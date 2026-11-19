@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/make-request.html
 ---
 
 # Making AWS service requests using the AWS SDK for Rust
-<a name="make-request"></a>
 
  To programmatically access AWS services, the AWS SDK for Rust uses a client struct for each AWS service. For example, if your application needs to access Amazon EC2, your application creates an Amazon EC2 client struct to interface with that service. You then use the service client to make requests to that AWS service.
 

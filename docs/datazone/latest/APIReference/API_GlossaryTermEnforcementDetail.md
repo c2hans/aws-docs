@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Glossar
 ---
 
 # GlossaryTermEnforcementDetail
-<a name="API_GlossaryTermEnforcementDetail"></a>
 
 The enforcement details of a glossary term.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-basic-co
 ---
 
 # Basic connection parameters
-<a name="jdbc-v3-driver-basic-connection-parameters"></a>
 
 The following sections describe the basic connection parameters for the JDBC 3.x driver.
 

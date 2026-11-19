@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/public-repositor
 ---
 
 # Public repository policy examples in Amazon ECR Public
-<a name="public-repository-policy-examples"></a>
 
 The following examples show policy statements that you use to control the permissions that users have to your public repositories.
 

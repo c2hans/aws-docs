@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Encryption at Rest for Amazon EventBridge Custom Event Bus
-<a name="eb-custom-bus-encryption"></a>
 
 ## Options for Encryption at Rest
 <a name="eb-custom-bus-encryption-at-rest"></a>

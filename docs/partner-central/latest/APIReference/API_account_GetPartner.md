@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetPartner
-<a name="API_account_GetPartner"></a>
 
 Retrieves detailed information about a specific partner account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EbsVolume
-<a name="API_automation_EbsVolume"></a>
 
 Represents an Amazon EBS volume with its configuration and snapshot usage information.
 

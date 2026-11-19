@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_C
 ---
 
 # CategoryInput
-<a name="API_qapps_CategoryInput"></a>
 
 A label that web experience users associate with a library item. Web experience users use Categories to tag and filter library items.
 

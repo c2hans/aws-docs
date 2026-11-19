@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageR
 ---
 
 # ImageReferrer
-<a name="API_ImageReferrer"></a>
 
 An object representing an artifact associated with a subject image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_TextInfe
 ---
 
 # TextInferenceConfig
-<a name="API_TextInferenceConfig"></a>
 
 The configuration details for text generation using a language model via the `RetrieveAndGenerate` function.
 

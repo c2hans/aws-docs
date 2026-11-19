@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_InsightResou
 ---
 
 # InsightResourceDetail
-<a name="API_InsightResourceDetail"></a>
 
 Returns information about the resource being evaluated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Remove an authorization rule from an AWS Client VPN endpoint
-<a name="cvpn-working-rule-remove"></a>
 
 You can remove authorization rules for a specific Client VPN endpoint using the console and the AWS CLI.
 

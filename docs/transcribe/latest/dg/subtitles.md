@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/subtitles.html
 ---
 
 # Creating video subtitles
-<a name="subtitles"></a>
 
 Amazon Transcribe supports WebVTT (\*.vtt) and SubRip (\*.srt) output for use as video subtitles. You can select one or both file types when setting up your batch video transcription job. When using the subtitle feature, your selected subtitle file(s) and a regular transcript file (containing additional information) are produced. Subtitle and transcription files are output to the same destination.
 

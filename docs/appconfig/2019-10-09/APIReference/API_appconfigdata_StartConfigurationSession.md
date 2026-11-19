@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ap
 ---
 
 # StartConfigurationSession
-<a name="API_appconfigdata_StartConfigurationSession"></a>
 
 Starts a configuration session used to retrieve a deployed configuration. For more information about this API action and to view example AWS CLI commands that show how to use it with the [GetLatestConfiguration](API_appconfigdata_GetLatestConfiguration.md) API action, see [Retrieving feature flags and configuration data in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/retrieving-feature-flags.html) in the * AWS AppConfig User Guide*.
 

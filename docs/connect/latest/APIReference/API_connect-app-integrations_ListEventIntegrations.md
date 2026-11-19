@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListEventIntegrations
-<a name="API_connect-app-integrations_ListEventIntegrations"></a>
 
 Returns a paginated list of event integrations in the account.
 

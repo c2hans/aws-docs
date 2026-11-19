@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListSecu
 ---
 
 # ListSecurityProfiles
-<a name="API_ListSecurityProfiles"></a>
 
 Provides summary information about the security profiles for the specified Connect Customer instance.
 

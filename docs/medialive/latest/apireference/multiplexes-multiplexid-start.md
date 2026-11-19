@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
 ---
 
 # Multiplex: start
-<a name="multiplexes-multiplexid-start"></a>
 
 ## URI
 <a name="multiplexes-multiplexid-start-url"></a>

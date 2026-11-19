@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Prerequisites
-<a name="prerequisites-upload"></a>
 
 Before you begin, ensure you have:
 + Completed the solution deployment

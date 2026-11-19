@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByKeyGroup
-<a name="API_ListDistributionsByKeyGroup"></a>
 
 Gets a list of distribution IDs for distributions that have a cache behavior that references the specified key group.
 

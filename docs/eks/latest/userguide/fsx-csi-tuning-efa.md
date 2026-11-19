@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/fsx-csi-tuning-efa.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Optimize Amazon FSx for Lustre performance on nodes (EFA)
-<a name="fsx-csi-tuning-efa"></a>
 
 This topic describes how to set up Elastic Fabric Adapter (EFA) tuning with Amazon EKS and Amazon FSx for Lustre.
 

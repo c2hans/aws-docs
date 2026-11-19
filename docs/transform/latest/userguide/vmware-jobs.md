@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/vmware-jobs.h
 ---
 
 # Migration jobs
-<a name="vmware-jobs"></a>
 
 To start migrating, create a workspace and launch a migration job. A workspace is a logical container for one or more migration jobs, giving you a single place to manage your entire migration.
 

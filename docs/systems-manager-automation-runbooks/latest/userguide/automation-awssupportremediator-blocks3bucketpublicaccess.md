@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-BlockS3BucketPublicAccess`
-<a name="automation-awssupportremediator-blocks3bucketpublicaccess"></a>
 
 **Description**
 

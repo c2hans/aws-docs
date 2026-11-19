@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Identifying micro-frontend boundaries
-<a name="micro-frontend-boundaries"></a>
 
 To improve team autonomy, you can decompose the business capabilities of an application into several micro-frontends with minimal dependencies on each other.
 

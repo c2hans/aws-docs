@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchG
 ---
 
 # BatchGetReportGroups
-<a name="API_BatchGetReportGroups"></a>
 
  Returns an array of report groups.
 

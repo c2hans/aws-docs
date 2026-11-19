@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/srgs-rule-reference.html
 ---
 
 # Rule reference
-<a name="srgs-rule-reference"></a>
 
 The following table summarizes the various forms of rule reference that are possible within grammar documents. For more information, see [ Rule reference ](https://www.w3.org/TR/speech-grammar/#S2.2) in the *Speech recognition grammar specification version 1* W3C recommendation.
 

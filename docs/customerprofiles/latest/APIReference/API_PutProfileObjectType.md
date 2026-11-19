@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # PutProfileObjectType
-<a name="API_connect-customer-profiles_PutProfileObjectType"></a>
 
 Defines a ProfileObjectType.
 

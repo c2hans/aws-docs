@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ImageV
 ---
 
 # ImageVersion
-<a name="API_ImageVersion"></a>
 
 A version of a SageMaker AI `Image`. A version represents an existing container image.
 

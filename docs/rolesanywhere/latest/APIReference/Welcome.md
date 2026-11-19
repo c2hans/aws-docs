@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Identity and Access Management Roles Anywhere provides a secure way for your workloads such as servers, containers, and applications that run outside of AWS to obtain temporary AWS credentials. Your workloads can use the same IAM policies and roles you have for native AWS applications to access AWS resources. Using IAM Roles Anywhere eliminates the need to manage long-term credentials for workloads running outside of AWS.
 
@@ -11,4 +10,4 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/Welcom
 
 This guide describes the IAM Roles Anywhere operations that you can call programmatically. For more information about IAM Roles Anywhere, see the [IAM Roles Anywhere User Guide](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/manage-voice-profile
 ---
 
 # Managing voice profile domains
-<a name="manage-voice-profile-domains"></a>
 
 Amazon Chime SDK speaker search creates *voice profiles*, vector maps of a caller's voice. A voice profile domain represents a collection of voice profiles. You must create a voice profile domain before developers can call the [StartSpeakerSearchTask](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_StartSpeakerSearchTask.html) API.
 

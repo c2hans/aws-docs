@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Cluste
 ---
 
 # ClusterConfiguration
-<a name="API_ClusterConfiguration"></a>
 
 The execute command and managed storage configuration for the cluster.
 

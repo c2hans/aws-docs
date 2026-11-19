@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Executi
 ---
 
 # ExecutionStepResult
-<a name="API_ExecutionStepResult"></a>
 
 Specifies the following details for the step: error (if any), outputs (if any), and the step type.
 

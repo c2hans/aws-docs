@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Im
 ---
 
 # ImageFrameInformation
-<a name="API_ImageFrameInformation"></a>
 
 Information about the image frame (pixel data) identifier.
 

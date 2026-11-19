@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DeleteMetricDataQueryDefinition
-<a name="API_DeleteMetricDataQueryDefinition"></a>
 
 Deletes a metric data query definition.
 

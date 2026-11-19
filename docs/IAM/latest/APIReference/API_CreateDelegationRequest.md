@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateDelega
 ---
 
 # CreateDelegationRequest
-<a name="API_CreateDelegationRequest"></a>
 
 Creates an IAM delegation request for temporary access delegation.
 

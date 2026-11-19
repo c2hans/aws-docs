@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # Amazon OpenSearch Service
-<a name="API_Operations_Amazon_OpenSearch_Service"></a>
 
 The following actions are supported by Amazon OpenSearch Service:
 +  [AcceptInboundConnection](API_AcceptInboundConnection.md)

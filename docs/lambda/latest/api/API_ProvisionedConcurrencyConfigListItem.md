@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ProvisionedConcurr
 ---
 
 # ProvisionedConcurrencyConfigListItem
-<a name="API_ProvisionedConcurrencyConfigListItem"></a>
 
 Details about the provisioned concurrency configuration for a function alias or version.
 

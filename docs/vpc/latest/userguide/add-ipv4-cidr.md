@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/add-ipv4-cidr.html
 ---
 
 # Add or remove a CIDR block from your VPC
-<a name="add-ipv4-cidr"></a>
 
 This section describes how to add or remove IPv4 and IPv6 CIDR blocks from a VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Grou
 ---
 
 # GroundTruthSyntheticConsoleFullAccess
-<a name="GroundTruthSyntheticConsoleFullAccess"></a>
 
 **Description**: This policy grants permissions needed to use all features of the SageMaker Ground Truth Synthetic Console.
 

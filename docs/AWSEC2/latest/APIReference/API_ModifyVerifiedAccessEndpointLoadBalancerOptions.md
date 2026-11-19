@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessEndpointLoadBalancerOptions
-<a name="API_ModifyVerifiedAccessEndpointLoadBalancerOptions"></a>
 
 Describes a load balancer when creating an AWS Verified Access endpoint using the `load-balancer` type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Disassoci
 ---
 
 # DisassociateEmailIdentityCertificate
-<a name="API_DisassociateEmailIdentityCertificate"></a>
 
 Removes the association between an S/MIME certificate and an email identity. After the association is removed, Amazon SES API v2 stops adding an S/MIME signature to messages sent from that address.
 

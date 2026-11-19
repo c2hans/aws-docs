@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # GET List: Get List of All Channel Schedules
-<a name="channel-scheduling-get-list-of-all-channel-schedules"></a>
 
 Get a list of active and inactive schedules for a given channel.
 

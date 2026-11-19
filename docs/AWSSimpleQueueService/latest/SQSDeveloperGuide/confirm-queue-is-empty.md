@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Confirming that an Amazon SQS queue is empty
-<a name="confirm-queue-is-empty"></a>
 
 In most cases, you can use [long polling](sqs-short-and-long-polling.md#sqs-long-polling) to determine if a queue is empty. In rare cases, you might receive empty responses even when a queue still contains messages, especially if you specified a low value for **Receive message wait time** when you created the queue. This section describes how to confirm that a queue is empty.
 

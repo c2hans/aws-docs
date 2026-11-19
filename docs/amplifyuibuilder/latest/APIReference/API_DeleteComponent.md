@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # DeleteComponent
-<a name="API_DeleteComponent"></a>
 
 Deletes a component from an Amplify app.
 

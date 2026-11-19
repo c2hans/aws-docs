@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # AudioSource
-<a name="API_runtime_AudioSource"></a>
 
 The source of audio data, which can be provided either as raw bytes or a reference to an S3 location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/create-permissions-console
 ---
 
 # Create roles using the MGN console
-<a name="create-permissions-console"></a>
 
 When you add an MGN connector using the MGN console, MGN can create the required IAM roles for you. On the **MGN connectors** page, choose **Add connector**, and then select **Create IAM Roles**. MGN creates the following roles:
 + **AWSApplicationMigrationConnectorManagementRole** - created in the current account. This is the role that is assumed by the connector.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/optimi
 ---
 
 # Prerequisites
-<a name="optimization-prereqs"></a>
 
 Before using AgentCore optimization features, make sure the following are in place.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::Service CodeConfiguration
-<a name="aws-properties-apprunner-service-codeconfiguration"></a>
 
 Describes the configuration that AWS App Runner uses to build and run an App Runner service from a source code repository.
 

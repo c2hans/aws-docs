@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListS
 ---
 
 # ListServiceTopologyEdges
-<a name="API_ListServiceTopologyEdges"></a>
 
 Lists topology edges for a service.
 

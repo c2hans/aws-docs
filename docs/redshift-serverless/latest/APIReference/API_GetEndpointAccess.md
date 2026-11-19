@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetEndpointAccess
-<a name="API_GetEndpointAccess"></a>
 
 Returns information, such as the name, about a VPC endpoint.
 

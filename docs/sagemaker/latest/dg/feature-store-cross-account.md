@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-cross-
 ---
 
 # Cross account feature group discoverability and access
-<a name="feature-store-cross-account"></a>
 
 Data scientists and data engineers can benefit from exploring and accessing features that span multiple accounts, in order to promote data consistency, streamline collaboration, and reduce duplication of effort.
 

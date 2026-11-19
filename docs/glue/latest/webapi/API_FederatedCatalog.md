@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FederatedCatalog.
 ---
 
 # FederatedCatalog
-<a name="API_FederatedCatalog"></a>
 
 A catalog that points to an entity outside the AWS Glue Data Catalog.
 

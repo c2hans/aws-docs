@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Assessing your environment
-<a name="assess-environment"></a>
 
 To assess your SQL Server environment and find out whether your Enterprise SQL Server instance is using Enterprise feature, you can take one of the following approaches:
 + Using a T-SQL script

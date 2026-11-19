@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_DeleteW
 ---
 
 # DeleteWorkflowRun
-<a name="API_DeleteWorkflowRun"></a>
 
 Terminates and cleans up a workflow run, stopping all associated acts and sessions.
 

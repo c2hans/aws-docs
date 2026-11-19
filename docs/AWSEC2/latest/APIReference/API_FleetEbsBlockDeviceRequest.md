@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetEbsB
 ---
 
 # FleetEbsBlockDeviceRequest
-<a name="API_FleetEbsBlockDeviceRequest"></a>
 
 Describes a block device for an EBS volume.
 

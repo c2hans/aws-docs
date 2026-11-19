@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateCluste
 ---
 
 # UpdateClusterConfig
-<a name="API_UpdateClusterConfig"></a>
 
 Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with `DescribeUpdate`.
 

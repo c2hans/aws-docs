@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 ---
 
 # Data retrieval APIs for AWS WAF V2
-<a name="awswafv2"></a>
 
 AWS WAF V2 provides the following APIs for data retrieval.
 

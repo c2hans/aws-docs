@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransferLoggingAccess
-<a name="AWSTransferLoggingAccess"></a>
 
 **Description**: Allows AWS Transfer full access to create log streams and groups and put log events to your account
 

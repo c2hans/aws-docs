@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/tagging.html
 ---
 
 # Tagging your resources
-<a name="tagging"></a>
 
 A tag is a key-value pair that you can add to an Amazon Comprehend resource as metadata. You can use tags on **Analysis jobs**, **Custom classification** models, **Custom entity recognition** models, and **endpoints**. Tags have two major functions: organizing your resources and providing tag-based access control.
 

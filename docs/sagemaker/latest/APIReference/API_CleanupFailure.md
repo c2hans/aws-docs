@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cleanu
 ---
 
 # CleanupFailure
-<a name="API_CleanupFailure"></a>
 
 The Amazon S3 output resources associated with an upstream step that the Cleanup step could not delete.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UpdateLoggingConfiguration
-<a name="API_UpdateLoggingConfiguration"></a>
 
 Sets the logging configuration for the specified firewall.
 

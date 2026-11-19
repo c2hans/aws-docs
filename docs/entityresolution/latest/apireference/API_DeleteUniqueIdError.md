@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # DeleteUniqueIdError
-<a name="API_DeleteUniqueIdError"></a>
 
 The error information provided when the delete unique ID operation doesn't complete.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteDataMi
 ---
 
 # DeleteDataMigration
-<a name="API_DeleteDataMigration"></a>
 
 Deletes the specified data migration.
 

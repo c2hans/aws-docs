@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-ref
 ---
 
 # AWS Privacy Reference Architecture
-<a name="introduction"></a>
 
 *Amber Welch, Amazon Web Services*
 

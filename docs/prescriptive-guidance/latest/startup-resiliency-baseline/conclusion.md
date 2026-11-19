@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/startup-res
 ---
 
 # Next steps for startups
-<a name="conclusion"></a>
 
 Remember that late-night deployment that made your heart race? Or that moment when a major customer asked about your resilience measures? A startup's resilience journey isn't about eliminating these moments—it's about facing them with confidence.
 

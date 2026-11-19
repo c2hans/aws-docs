@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Snow
 ---
 
 # SnowflakeTableReference
-<a name="API_SnowflakeTableReference"></a>
 
  A reference to a table within Snowflake.
 

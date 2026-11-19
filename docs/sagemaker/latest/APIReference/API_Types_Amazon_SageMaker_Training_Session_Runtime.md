@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Types_
 ---
 
 # Amazon SageMaker Training Session Runtime
-<a name="API_Types_Amazon_SageMaker_Training_Session_Runtime"></a>
 
 The following data types are supported by Amazon SageMaker Training Session Runtime:
 +  [AdamParamsConfig](API_training_session_runtime_AdamParamsConfig.md)

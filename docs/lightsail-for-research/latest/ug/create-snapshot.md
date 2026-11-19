@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/create-
 ---
 
 # Create snapshots of Lightsail for Research virtual computers or disks
-<a name="create-snapshot"></a>
 
 Complete the following steps to create a snapshot of your Lightsail for Research virtual computer or disk.
 

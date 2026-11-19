@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-cr
 ---
 
 # Share conda environments between instance types
-<a name="studio-updated-jl-create-conda-share-environment"></a>
 
 You can share conda environments by saving them to an Amazon EFS directory outside of your Amazon EBS volume. Another user can access the environment in the directory where you saved it.
 

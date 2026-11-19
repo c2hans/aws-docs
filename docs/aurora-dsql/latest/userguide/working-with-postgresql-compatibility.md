@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-wit
 ---
 
 # SQL feature compatibility in Aurora DSQL
-<a name="working-with-postgresql-compatibility"></a>
 
 In the following sections, learn about Aurora DSQL support for PostgreSQL data types and SQL commands.
 

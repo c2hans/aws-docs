@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadat
 ---
 
 # StartMetadataModelConversion
-<a name="API_StartMetadataModelConversion"></a>
 
 Queues a conversion of the selected source metadata models (database objects such as tables, views, and procedures) to the target database format. If other requests created by `Start*` operations are already in the migration project's queue, the conversion begins after they complete.
 

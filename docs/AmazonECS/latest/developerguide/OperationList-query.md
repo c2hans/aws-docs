@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Operatio
 ---
 
 # Actions by Amazon ECS resource
-<a name="OperationList-query"></a>
 
 The following section lists the API actions by resource.
 

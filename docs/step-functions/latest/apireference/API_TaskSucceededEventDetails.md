@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TaskSucceededEventDetails
-<a name="API_TaskSucceededEventDetails"></a>
 
 Contains details about the successful completion of a task state.
 

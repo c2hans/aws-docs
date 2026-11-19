@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # SRA building blocks – AWS Organizations, accounts, and guardrails
-<a name="organizations"></a>
 
 AWS security services, their controls, and interactions work most effectively on a foundation of AWS[ multi-account strategy](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html) and identity and access management guardrails. These guardrails enable your implementation of least privilege, separation of duties, and privacy, and support decisions about what types of controls are needed, where each security service is managed, and how they can share data and permissions in the AWS SRA.
 

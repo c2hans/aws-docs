@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcor
 ---
 
 # TELCOREL03-BP01 Use a controlled change management mechanism for software updates in production
-<a name="telcorel03-bp01"></a>
 
  Follow a controlled change management approach that blocks automatic updates in production environments while making sure that changes are thoroughly tested in lower environments. This includes establishing proper testing procedures, implementing structured change management, and maintaining comprehensive rollback capabilities to minimize service disruption during system updates.
 

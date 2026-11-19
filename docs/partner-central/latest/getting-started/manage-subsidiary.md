@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/m
 ---
 
 # Managing AWS subsidiary account connections
-<a name="manage-subsidiary"></a>
 
 From **Account Connections** in AWS Partner Central, you can connect your subsidiary seller accounts to your primary partner account. Connecting accounts improves PRM attribution accuracy. You can also optionally consolidate qualifications across your organization.
 

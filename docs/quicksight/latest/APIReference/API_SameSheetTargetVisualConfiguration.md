@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SameS
 ---
 
 # SameSheetTargetVisualConfiguration
-<a name="API_SameSheetTargetVisualConfiguration"></a>
 
 The configuration of the same-sheet target visuals that you want to be filtered.
 

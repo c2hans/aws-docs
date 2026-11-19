@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBedrockWebSearchFullAccess
-<a name="AmazonBedrockWebSearchFullAccess"></a>
 
 **Description**: Provides full access to Amazon Bedrock Web Search. Data remains within the AWS network boundary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ConverseStreamOutput
-<a name="API_runtime_ConverseStreamOutput"></a>
 
 The messages output stream
 

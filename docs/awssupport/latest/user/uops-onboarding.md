@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/uops-onboarding.h
 ---
 
 # Unified Operations onboarding
-<a name="uops-onboarding"></a>
 
 **Onboarding kickoff**
 + Meet the team (customer and AWS allocated resources).

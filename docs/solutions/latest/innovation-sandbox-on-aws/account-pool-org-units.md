@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # AccountPool Organizational Units
-<a name="account-pool-org-units"></a>
 
 ![Diagram showing the AccountPool OU structure with Available Active Frozen Cleanup Quarantine Entry and Exit OUs](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/organizational-units.drawio.png)
 

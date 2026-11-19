@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteDataSource
-<a name="API_DeleteDataSource"></a>
 
 Deletes the data source permanently. This operation breaks all the datasets that reference the deleted data source.
 

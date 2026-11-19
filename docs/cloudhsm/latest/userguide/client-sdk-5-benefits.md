@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/client-sdk-5-b
 ---
 
 # Benefits of AWS CloudHSM Client SDK 5
-<a name="client-sdk-5-benefits"></a>
 
 Compared to AWS CloudHSM Client SDK 3, Client SDK 5 is easier to manage, offers superior configurability, and increased reliability. Client SDK 5 also provides some additional key advantages to Client SDK 3.
 

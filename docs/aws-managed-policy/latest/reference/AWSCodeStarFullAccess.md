@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeStarFullAccess
-<a name="AWSCodeStarFullAccess"></a>
 
 **Description**: Provides full access to AWS CodeStar via the AWS Management Console.
 

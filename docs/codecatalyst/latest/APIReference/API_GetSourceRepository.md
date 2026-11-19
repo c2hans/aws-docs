@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Get
 ---
 
 # GetSourceRepository
-<a name="API_GetSourceRepository"></a>
 
 Returns information about a source repository.
 

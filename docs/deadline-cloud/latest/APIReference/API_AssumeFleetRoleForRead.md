@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssumeFleetRoleForRead
-<a name="API_AssumeFleetRoleForRead"></a>
 
 Get AWS credentials from the fleet role. The IAM permissions of the credentials are scoped down to have read-only access.
 

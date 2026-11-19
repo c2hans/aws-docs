@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # GetAttributes
-<a name="SDB_API_GetAttributes"></a>
 
 ## Description
 <a name="SDB_API_GetAttributes_Description"></a>

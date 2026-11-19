@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_CreateRouter
 ---
 
 # CreateRouterNetworkInterface
-<a name="API_CreateRouterNetworkInterface"></a>
 
 Creates a new router network interface in AWS Elemental MediaConnect.
 

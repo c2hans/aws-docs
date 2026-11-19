@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateEventC
 ---
 
 # UpdateEventConfigurations
-<a name="API_UpdateEventConfigurations"></a>
 
 Updates the event configurations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-devices-
 ---
 
 # Edit a device using AWS Network Manager
-<a name="nm-devices-update"></a>
 
 Edit the details of a device, including whether the location type is either on-premises or AWS Cloud.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 6: Add a launch constraint to assign an IAM role
-<a name="getstarted-launchconstraint"></a>
 
  A launch constraint designates an IAM role that AWS Service Catalog assumes when an end user launches a product.
 

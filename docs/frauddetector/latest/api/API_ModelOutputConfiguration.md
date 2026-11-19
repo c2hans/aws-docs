@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_ModelOutput
 Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
 
 # ModelOutputConfiguration
-<a name="API_ModelOutputConfiguration"></a>
 
 Provides the Amazon Sagemaker model output configuration.
 

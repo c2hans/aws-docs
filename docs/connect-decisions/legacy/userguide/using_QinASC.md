@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/using
 ---
 
 # Using Amazon Q in AWS Supply Chain
-<a name="using_QinASC"></a>
 
 After enabling Amazon Q in AWS Supply Chain, perform the following procedure:
 

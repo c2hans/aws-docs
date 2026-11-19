@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/data-transfor
 ---
 
 # Understanding drift reports
-<a name="data-transformation-drift-report"></a>
 
  When drift detection is enabled, the bulk job writes an aggregate report named `jobLevelDriftResult.json` to your output location. The report tells you how much of your source data the profile actually captured, and what it missed: so you know where to improve your mappings.
 

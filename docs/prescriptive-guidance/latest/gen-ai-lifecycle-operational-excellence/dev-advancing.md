@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Advancing a generative AI PoC to preproduction
-<a name="dev-advancing"></a>
 
 The culmination of the PoC stage is a critical decision gate. It's the moment where the initial hypotheses are measured against real-world data. You make a formal, evidence-based decision about the future of the initiative. This is not a moment for intuition—it is a structured evaluation that determines whether to proceed with further investment, pivot the approach, or halt the project.
 

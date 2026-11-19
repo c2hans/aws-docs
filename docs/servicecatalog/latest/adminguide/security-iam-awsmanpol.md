@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/securit
 ---
 
 # AWS managed policies for AWS Service Catalog AppRegistry
-<a name="security-iam-awsmanpol"></a>
 
 ## AWS managed policy: `AWSServiceCatalogAdminFullAccess`
 <a name="security-iam-awsmanpol-AWSServiceCatalogAdminFullAccess"></a>

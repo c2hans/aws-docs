@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-s
 ---
 
 # Setting up
-<a name="dd-setting-up"></a>
 
 Before you use AWS IoT Device Defender for the first time, complete the following tasks:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Custom certificates and Route 53 DNS management for HyperPod Inference
-<a name="sagemaker-hyperpod-model-deployment-custom-certs"></a>
 
 The following steps show you how to use your own ACM certificates for HyperPod inference endpoints and optionally configure the operator to manage Route 53 DNS records for your custom domain.
 

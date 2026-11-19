@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ru
 ---
 
 # Run parallel reads of S3 objects by using Python in an AWS Lambda function
-<a name="run-parallel-reads-of-s3-objects-by-using-python-in-an-aws-lambda-function"></a>
 
 *Eduardo Bortoluzzi, Amazon Web Services*
 

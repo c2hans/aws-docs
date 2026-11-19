@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/wizcn
 ---
 
 # CloudWatch pipelines configuration for WIZ
-<a name="wizcnapp-pipeline-setup"></a>
 
 Collects cloud-native application protection platform (CNAPP) data from Wiz using OAuth2 authentication.
 

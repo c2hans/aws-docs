@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeWorkspace
-<a name="API_DescribeWorkspace"></a>
 
 Retrieves details about a workspace, including its configuration and metadata.
 

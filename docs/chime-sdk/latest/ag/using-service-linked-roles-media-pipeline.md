@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/using-service-linked
 ---
 
 # Using roles with Amazon Chime SDK media pipelines
-<a name="using-service-linked-roles-media-pipeline"></a>
 
 The information in the following sections explains how to create and manage a service-linked role for Amazon Chime SDK Media Pipelines.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Idempotency and Concurrency
-<a name="managing-fhir-resources-idempotency"></a>
 
 ## Idempotency Keys
 <a name="idempotency-keys"></a>

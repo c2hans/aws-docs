@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Generative AI application development project profile
-<a name="genai-application-development"></a>
 
 A Generative AI application development project profile enables generative AI solutions from Amazon Bedrock for your Amazon SageMaker unified domains. It provides project users in Amazon SageMaker Unified Studio with the access to the following generative AI tools: Bedrock Chat Agents, Bedrock Knowledge Bases, Bedrock Guardrails, Bedrock Functions, Bedrock Flows, Bedrock Prompts, and Bedrock Evaluations.
 

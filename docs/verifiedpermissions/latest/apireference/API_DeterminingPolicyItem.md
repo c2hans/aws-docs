@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # DeterminingPolicyItem
-<a name="API_DeterminingPolicyItem"></a>
 
 Contains information about one of the policies that determined an authorization decision.
 

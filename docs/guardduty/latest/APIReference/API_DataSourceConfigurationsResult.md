@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DataSo
 ---
 
 # DataSourceConfigurationsResult
-<a name="API_DataSourceConfigurationsResult"></a>
 
 Contains information on the status of data sources for the detector.
 

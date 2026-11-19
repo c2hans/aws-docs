@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Recomm
 ---
 
 # RecommendedAction
-<a name="API_RecommendedAction"></a>
 
 The recommended actions to apply to resolve the issues associated with your DB instances, DB clusters, and DB parameter groups.
 

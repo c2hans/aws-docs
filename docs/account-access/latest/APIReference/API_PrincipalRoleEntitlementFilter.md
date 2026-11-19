@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_P
 ---
 
 # PrincipalRoleEntitlementFilter
-<a name="API_PrincipalRoleEntitlementFilter"></a>
 
 Specifies filter criteria for principal-to-role entitlements. All specified criteria must match for an entitlement to be returned.
 

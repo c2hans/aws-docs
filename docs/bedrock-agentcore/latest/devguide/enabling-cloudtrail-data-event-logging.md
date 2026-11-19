@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/enabli
 ---
 
 # Enable CloudTrail data event logging for Amazon Bedrock AgentCore Gateway resources
-<a name="enabling-cloudtrail-data-event-logging"></a>
 
 You can use CloudTrail data events to get information about Amazon Bedrock AgentCore Gateway requests. To enable CloudTrail data events for Gateway, you must create a trail manually in CloudTrail backed by an Amazon S3 bucket.
 

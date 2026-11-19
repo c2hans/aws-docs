@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorksp
 ---
 
 # DescribeWorkspaces
-<a name="API_DescribeWorkspaces"></a>
 
 Describes the specified WorkSpaces.
 
@@ -62,7 +61,7 @@ Required: No
 
  ** [WorkspaceIds](#API_DescribeWorkspaces_RequestSyntax) **   <a name="WorkSpaces-DescribeWorkspaces-request-WorkspaceIds"></a>
 The identifiers of the WorkSpaces. You cannot combine this parameter with any other filter.
-Because the [CreateWorkspaces](API_CreateWorkspaces.md) operation is asynchronous, the identifier it returns is not immediately available. If you immediately call [DescribeWorkspaces](#API_DescribeWorkspaces) with this identifier, no information is returned.
+Because the [CreateWorkspaces](API_CreateWorkspaces.md) operation is asynchronous, the identifier it returns is not immediately available. If you immediately call [DescribeWorkspaces](API_DescribeWorkspaces.md) with this identifier, no information is returned.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 25 items.
 Pattern: `^ws-[0-9a-z]{8,63}$`

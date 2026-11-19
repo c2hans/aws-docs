@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Download S3 'directories' from an Amazon Simple Storage Service (Amazon S3) bucket
-<a name="s3_example_s3_Scenario_DownloadS3Directory_section"></a>
 
 The following code example shows how to download and filter the contents of Amazon S3 bucket 'directories'.
 

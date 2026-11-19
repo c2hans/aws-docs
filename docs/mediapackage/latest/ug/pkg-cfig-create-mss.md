@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-cfig-create-m
 ---
 
 # Creating a Microsoft Smooth packaging configuration
-<a name="pkg-cfig-create-mss"></a>
 
 Create a packaging configuration that formats content for devices that support Microsoft Smooth.
 

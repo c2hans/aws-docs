@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifec
 ---
 
 # Query plan in Amazon Redshift
-<a name="query-plan"></a>
 
 A *query plan* is a list of instructions that the execution engine must follow to execute a query on the data. You can create a query plan by running the [EXPLAIN](https://docs.aws.amazon.com/redshift/latest/dg/r_EXPLAIN.html) command followed by the actual query text, as the following example query shows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/edit-data-prod
 ---
 
 # Edit data products in Amazon DataZone
-<a name="edit-data-product"></a>
 
 Amazon DataZone enables data producers to group data assets into well-defined, self-contained packages called data products that are tailored for specific business use-cases. For more information, see [Amazon DataZone terminology and concepts](datazone-concepts.md).
 

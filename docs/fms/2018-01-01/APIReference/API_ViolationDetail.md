@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Violatio
 ---
 
 # ViolationDetail
-<a name="API_ViolationDetail"></a>
 
 Violations for a resource based on the specified AWS Firewall Manager policy and AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Reposi
 ---
 
 # RepositoryScanningConfigurationFailure
-<a name="API_RepositoryScanningConfigurationFailure"></a>
 
 The details about any failures associated with the scanning configuration of a repository.
 

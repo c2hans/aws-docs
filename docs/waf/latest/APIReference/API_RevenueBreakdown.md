@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RevenueBreak
 ---
 
 # RevenueBreakdown
-<a name="API_RevenueBreakdown"></a>
 
 A summary of AI bot monetization revenue, including total revenue, revenue by verification tier, and request counts.
 

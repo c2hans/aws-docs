@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-configure-sele
 ---
 
 # Using SelectFields to remove most data property keys
-<a name="transforms-configure-select-fields"></a>
 
 You can create a subset of data property keys from the dataset using the *SelectFields* transform. You indicate which data property keys you want to keep and the rest are removed from the dataset.
 

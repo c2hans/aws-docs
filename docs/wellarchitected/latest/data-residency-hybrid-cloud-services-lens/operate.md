@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Operate
-<a name="operate"></a>
 
 | DRHCOPS05: Which metrics do you need to understand your workload and operational health? |
 | --- |

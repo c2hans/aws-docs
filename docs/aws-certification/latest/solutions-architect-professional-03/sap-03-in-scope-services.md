@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/solutions-archi
 ---
 
 # In-Scope and Out-of-Scope Services and Features
-<a name="sap-03-in-scope-services"></a>
 
 **Topics**
 + [In-scope AWS services and features](#sap-03-in-scope-section)

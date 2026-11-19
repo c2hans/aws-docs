@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VersionManag
 ---
 
 # Version Management for ElastiCache
-<a name="VersionManagement"></a>
 
 Manage how you would like to update your ElastiCache caches and node-based clusters updated for the Valkey, Memcached, and Redis OSS engines.
 

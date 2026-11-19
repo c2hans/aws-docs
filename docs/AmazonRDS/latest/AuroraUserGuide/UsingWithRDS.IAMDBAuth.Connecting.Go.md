@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWi
 ---
 
 # Connecting to your DB cluster using IAM authentication and the AWS SDK for Go
-<a name="UsingWithRDS.IAMDBAuth.Connecting.Go"></a>
 
 You can connect to an Aurora MySQL or Aurora PostgreSQL DB cluster with the AWS SDK for Go as described following.
 

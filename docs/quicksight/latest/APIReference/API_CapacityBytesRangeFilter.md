@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Capac
 ---
 
 # CapacityBytesRangeFilter
-<a name="API_CapacityBytesRangeFilter"></a>
 
 A filter that matches users by total capacity range in bytes.
 

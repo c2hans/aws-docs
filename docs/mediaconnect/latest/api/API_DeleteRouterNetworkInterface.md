@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DeleteRouter
 ---
 
 # DeleteRouterNetworkInterface
-<a name="API_DeleteRouterNetworkInterface"></a>
 
 Deletes a router network interface from AWS Elemental MediaConnect.
 

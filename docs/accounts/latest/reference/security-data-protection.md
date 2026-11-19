@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/security-data-
 ---
 
 # Data protection in AWS Account Management
-<a name="security-data-protection"></a>
 
 The following information is relevant for all AWS accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Incorporating human feedback
-<a name="feedback"></a>
 
 No system is 100% successful, and failure is bound to happen. With every failure, there is an associated cost of change. *Human in the loop* is an AI approach where AI performs a task, but human intervention or approval is required. This approach must be used when the cost of failure is higher than the cost of having a human-in-the-loop solution.
 

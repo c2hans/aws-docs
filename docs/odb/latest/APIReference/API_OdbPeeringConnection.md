@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_OdbPeeringCo
 ---
 
 # OdbPeeringConnection
-<a name="API_OdbPeeringConnection"></a>
 
 A peering connection between an ODB network and either another ODB network or a customer-owned VPC.
 

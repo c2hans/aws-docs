@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/policy-acti
 ---
 
 # Policy Actions
-<a name="policy-actions"></a>
 
  ***Policy actions for AWS Security Incident Response***
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Pl
 ---
 
 # PlaybackInterruptionEvent
-<a name="API_runtime_PlaybackInterruptionEvent"></a>
 
 Event sent from Amazon Lex to indicate to the client application should stop playback of audio. For example, if the client is playing a prompt that asks for the user's telephone number, the user might start to say the phone number before the prompt is complete. Amazon Lex sends this event to the client application to indicate that the user is responding and that Amazon Lex is processing their input.
 

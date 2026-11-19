@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateBlueprint.h
 ---
 
 # CreateBlueprint
-<a name="API_CreateBlueprint"></a>
 
 Registers a blueprint with AWS Glue.
 

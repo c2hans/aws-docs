@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-core-ne
 ---
 
 # How core network endpoints work
-<a name="gr-core-network-endpoints-how-it-works"></a>
 
 A Cloud WAN core network is a managed, global network that connects your Amazon Virtual Private Clouds, AWS Regions, and on-premises locations. A core network is divided into *segments*, which are isolated routing domains that group network traffic.
 

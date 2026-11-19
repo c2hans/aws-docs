@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Overview
-<a name="overview"></a>
 
 The value realization of the cloud, beyond cost savings, is measured by how well your business adapts to the new ways of working that cloud technology creates. Change acceleration delivers value in business productivity and agility for your customers. Using a programmatic and data-driven approach to change acceleration establishes an organization's cloud fluency and readiness to address the impacts of cloud across their enterprises. AWS change acceleration dives deep into the cultural implications of the cloud, receptivity to change, history of change successes and failures, communication patterns, organizational structure, the key role of executive sponsors, leadership commitment, detailed change impacts, and cross-functional alignment of IT and business stakeholders.
 

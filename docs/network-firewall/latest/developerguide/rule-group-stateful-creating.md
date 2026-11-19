@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Creating a stateful rule group
-<a name="rule-group-stateful-creating"></a>
 
 This section provides guidance for creating a stateful rule group.
 

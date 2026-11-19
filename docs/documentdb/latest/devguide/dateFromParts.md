@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dateFromParts
 ---
 
 # $dateFromParts
-<a name="dateFromParts"></a>
 
 New from version 5.0.1 and 8.0
 

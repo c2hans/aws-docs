@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_L
 ---
 
 # ListObjectives
-<a name="API_ListObjectives"></a>
 
 Returns a paginated list of objectives from the Control Catalog.
 

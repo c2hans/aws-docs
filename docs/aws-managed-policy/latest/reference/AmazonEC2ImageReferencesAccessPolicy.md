@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2ImageReferencesAccessPolicy
-<a name="AmazonEC2ImageReferencesAccessPolicy"></a>
 
 **Description**: Provides read-only access to scan all supported resource types for relevant data when using DescribeImageReferences.
 

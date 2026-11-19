@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/layout-definit
 ---
 
 # Layout definition
-<a name="layout-definition"></a>
 
 Understanding the structure and components of Profile Explorer layouts.
 

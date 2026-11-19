@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Up
 ---
 
 # Performing a minor version upgrade
-<a name="USER_UpgradeDBInstance.PostgreSQL.MinorUpgrade"></a>
 
 You can use the following methods to upgrade the minor version of a DB cluster or to patch a DB cluster:
 

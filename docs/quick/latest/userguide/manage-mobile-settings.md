@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/manage-mobile-set
 ---
 
 # Managing mobile settings
-<a name="manage-mobile-settings"></a>
 
 Mobile settings allow AWS Quick admins to enhance data security and maintain compliance standards for users accessing Quick through mobile devices. These settings apply to all users accessing Quick through the mobile application.
 

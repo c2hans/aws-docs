@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/search
 ---
 
 # Searching for Text in Amazon CloudSearch
-<a name="searching-text"></a>
 
 You can search both text and literal fields for a text string:
 + `Text` and `text-array` fields are always searchable. You can search for individual terms as well as phrases. Searches within `text` and `text-array` fields are not case-sensitive.

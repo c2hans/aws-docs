@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateE
 ---
 
 # CreateEnvironmentProfilePolicyGrantDetail
-<a name="API_CreateEnvironmentProfilePolicyGrantDetail"></a>
 
 The details of the policy grant.
 

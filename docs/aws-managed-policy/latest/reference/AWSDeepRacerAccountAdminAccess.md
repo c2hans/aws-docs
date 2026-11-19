@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeepRacerAccountAdminAccess
-<a name="AWSDeepRacerAccountAdminAccess"></a>
 
 **Description**: DeepRacer admin access to all actions including toggling between multiuser and single user mode.
 

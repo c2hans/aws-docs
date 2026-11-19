@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ListStagingA
 ---
 
 # ListStagingAccounts
-<a name="API_ListStagingAccounts"></a>
 
 Returns an array of staging accounts for existing extended source servers.
 

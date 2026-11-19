@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # DukptEncryptionAttributes
-<a name="API_DukptEncryptionAttributes"></a>
 
 Parameters that are required to encrypt plaintext data using DUKPT.
 

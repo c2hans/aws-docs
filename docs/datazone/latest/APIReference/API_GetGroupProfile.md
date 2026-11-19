@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetGrou
 ---
 
 # GetGroupProfile
-<a name="API_GetGroupProfile"></a>
 
 Gets a group profile in Amazon DataZone.
 

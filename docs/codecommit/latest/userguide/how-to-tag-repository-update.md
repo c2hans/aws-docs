@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-tag-r
 ---
 
 # Edit tags for a repository
-<a name="how-to-tag-repository-update"></a>
 
 You can change the value for a tag associated with a repository. You can also change the name of the key, which is equivalent to removing the current tag and adding a different one with the new name and the same value as the other key. Keep in mind that there are limits on the characters you can use in the key and value fields. For more information, see [Limits](limits.md#limits-tags).
 

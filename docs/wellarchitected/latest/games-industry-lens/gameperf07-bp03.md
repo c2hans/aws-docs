@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF07-BP03 Regularly monitor matchmaking performance
-<a name="gameperf07-bp03"></a>
 
  One of the most noticeable ways to optimize the performance of a game for players is to reduce the time that they must wait before they can enter a game session. Long wait times can cause players to lose interest and lead to attrition, so it is important to consider this when designing your matchmaking solution.
 

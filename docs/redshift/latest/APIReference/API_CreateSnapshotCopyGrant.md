@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateS
 ---
 
 # CreateSnapshotCopyGrant
-<a name="API_CreateSnapshotCopyGrant"></a>
 
 Creates a snapshot copy grant that permits Amazon Redshift to use an encrypted symmetric key from AWS Key Management Service (KMS) to encrypt copied snapshots in a destination region.
 

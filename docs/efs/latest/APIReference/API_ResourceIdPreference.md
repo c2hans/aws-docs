@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_ResourceIdPr
 ---
 
 # ResourceIdPreference
-<a name="API_ResourceIdPreference"></a>
 
 Describes the resource type and its ID preference for the user's AWS account, in the current AWS Region.
 

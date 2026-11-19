@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-create-tracki
 ---
 
 # Create a tracking server using Studio
-<a name="mlflow-create-tracking-server-studio"></a>
 
 You can create a tracking server from the SageMaker Studio MLflow UI. If you created your SageMaker Studio domain following the **Set up for organizations** workflow, the service role for your SageMaker Studio domain has sufficient permissions to serve as the SageMaker AI IAM service roles and the tracking server IAM service role.
 

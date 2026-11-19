@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-mongodb-connecti
 ---
 
 # Creating a MongoDB connection
-<a name="creating-mongodb-connection"></a>
 
 **Prerequisites**:
 + If your MongoDB instance is in an Amazon VPC, configure Amazon VPC to allow your AWS Glue job to communicate with the MongoDB instance without traffic traversing the public internet.

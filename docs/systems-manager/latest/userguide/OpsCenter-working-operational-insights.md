@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Analyzing operational insights to reduce OpsItems
-<a name="OpsCenter-working-operational-insights"></a>
 
 OpsCenter *operational insights* display information about duplicate OpsItems. OpsCenter automatically analyzes OpsItems in your account and generates three types of *insights*. You can view this information in the **Operational insights** section of the OpsCenter **Summary** tab.
 + **Duplicate OpsItems** – An insight is generated when eight or more OpsItems have the same title for the same resource.

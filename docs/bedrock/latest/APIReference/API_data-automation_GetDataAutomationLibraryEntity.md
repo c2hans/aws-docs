@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # GetDataAutomationLibraryEntity
-<a name="API_data-automation_GetDataAutomationLibraryEntity"></a>
 
 Gets details about a data automation library entity.
 

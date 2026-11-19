@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL07-BP02 Maintain data consistency and availability across collaboration workflows
-<a name="advrel07-bp02"></a>
 
  Data consistency and availability matter when you work with multiple stakeholders in advertising collaboration workflows. Implement versioning, logging, and health checks across collaboration lifecycle events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Retry
 ---
 
 # RetryPolicyExecution
-<a name="API_RetryPolicyExecution"></a>
 
 The current status of the retry policy executed on the job.
 

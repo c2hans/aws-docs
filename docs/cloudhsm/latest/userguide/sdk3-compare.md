@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/sdk3-compare.h
 ---
 
 # Compare AWS CloudHSM Client SDK component support
-<a name="sdk3-compare"></a>
 
 In addition to the command-line tools, Client SDK 3 contains components that enable off-loading cryptographic operations to the HSM from various platform or language-based applications. Client SDK 5 has parity with Client SDK 3, except it does not yet support CNG and KSP providers. The following table compares component availability in Client SDK 3 and Client SDK 5.
 

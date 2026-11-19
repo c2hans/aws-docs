@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ge
 ---
 
 # GetRevision
-<a name="API_GetRevision"></a>
 
 This operation returns information about a revision.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SimulateCust
 ---
 
 # SimulateCustomPolicy
-<a name="API_SimulateCustomPolicy"></a>
 
 Simulate how a set of IAM policies and optionally a resource-based policy works with a list of API operations and AWS resources to determine the policies' effective permissions. The policies are provided as strings.
 

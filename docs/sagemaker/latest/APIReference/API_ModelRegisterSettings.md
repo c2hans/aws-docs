@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelR
 ---
 
 # ModelRegisterSettings
-<a name="API_ModelRegisterSettings"></a>
 
 The model registry settings for the SageMaker Canvas application.
 

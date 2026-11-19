@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # RTMP Push and RTP Push input configuration
-<a name="rtmp-push-and-rtp-push-input-configuration"></a>
 
 RTP and RTMP Push provide the option to push a transport stream (TS) MediaLive. In both options, the following parameters are required to configure the solution:
 +  **Source Input Type** - RTP\_PUSH / RTMP\_PUSH

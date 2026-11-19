@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Pu
 ---
 
 # PutRumEvents
-<a name="API_PutRumEvents"></a>
 
 Sends telemetry events about your application performance and user behavior to CloudWatch RUM. The code snippet that RUM generates for you to add to your application includes `PutRumEvents` operations to send this data to RUM.
 
@@ -33,6 +32,7 @@ Content-type: application/json
          "type": "{{string}}"
       }
    ],
+   "SessionMetadata": "{{string}}",
    "UserDetails": {
       "sessionId": "{{string}}",
       "userId": "{{string}}"
@@ -78,6 +78,11 @@ Required: Yes
 An array of structures that contain the telemetry event data.
 Type: Array of [RumEvent](API_RumEvent.md) objects
 Required: Yes
+
+ ** [SessionMetadata](#API_PutRumEvents_RequestSyntax) **   <a name="cloudwatchrum-PutRumEvents-request-SessionMetadata"></a>
+A JSON serialization of attributes that apply to every event in this batch, such as the browser, device, and operating system of the end user. CloudWatch RUM merges these attributes into each event in the batch, so you send them once for the batch instead of once for each event. If an attribute appears both here and in an individual event's `metadata`, CloudWatch RUM uses the value in the event's `metadata`.
+Type: String
+Required: No
 
  ** [UserDetails](#API_PutRumEvents_RequestSyntax) **   <a name="cloudwatchrum-PutRumEvents-request-UserDetails"></a>
 A structure that contains information about the user session that this batch of events was collected from.

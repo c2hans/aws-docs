@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/video-scaling.htm
 ---
 
 # Video scaling behavior and aspect ratios
-<a name="video-scaling"></a>
 
 You can choose how AWS Elemental MediaConvert scales your input video image to the output resolution that you specify by using **Scaling behavior**.
 

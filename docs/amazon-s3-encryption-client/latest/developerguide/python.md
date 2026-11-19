@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/devel
 ---
 
 # Amazon S3 Encryption Client for Python
-<a name="python"></a>
 
 This topic explains how to install and use the Amazon S3 Encryption Client for Python. For details about programming with the Amazon S3 Encryption Client for Python, see the [amazon-s3-encryption-client-python](https://github.com/aws/amazon-s3-encryption-client-python) repository on GitHub.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Training
 ---
 
 # TrainingDataConfig
-<a name="API_TrainingDataConfig"></a>
 
 S3 Location of the training data.
 

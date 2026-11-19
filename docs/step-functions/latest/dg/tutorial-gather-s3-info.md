@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-gather
 ---
 
 # Gather Amazon S3 bucket info using AWS SDK service integrations
-<a name="tutorial-gather-s3-info"></a>
 
 This tutorial shows you how to perform an [AWS SDK integration](supported-services-awssdk.md) with Amazon Simple Storage Service. The state machine you create in this tutorial gathers information about your Amazon S3 buckets, then list your buckets along with version information for each bucket in the current region.
 

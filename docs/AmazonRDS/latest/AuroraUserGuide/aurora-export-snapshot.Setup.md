@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Setting up access to an Amazon S3 bucket
-<a name="aurora-export-snapshot.Setup"></a>
 
 You identify the Amazon S3 bucket, then you give the snapshot permission to access it.
 

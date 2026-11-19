@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/monitor-in
 ---
 
 # Invite administrators in SiteWise Monitor
-<a name="monitor-invite-administrators"></a>
 
 To get started in your new portal, you must assign a portal administrator. The portal administrator creates projects, chooses project owners, and assigns assets to projects. Portal administrators can see all of your AWS IoT SiteWise assets.
 

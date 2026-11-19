@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/example_support_H
 ---
 
 # Hello Support
-<a name="example_support_Hello_section"></a>
 
 The following code examples show how to get started using Support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_Trace.html
 ---
 
 # Trace
-<a name="API_Trace"></a>
 
 A collection of segment documents with matching trace IDs.
 

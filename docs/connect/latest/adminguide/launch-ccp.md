@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/launch-ccp.htm
 ---
 
 # Launch the Contact Control Panel (CCP) in Connect Customer
-<a name="launch-ccp"></a>
 
 The URL to launch the CCP is:
 + https://{{instance name}}.my.connect.aws/ccp-v2/

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/accessing-array-element
 ---
 
 # Access array elements
-<a name="accessing-array-elements"></a>
 
 To access array elements, use the `[]` operator, with 1 specifying the first element, 2 specifying the second element, and so on, as in this example:
 

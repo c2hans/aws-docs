@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/setting-up-mpts-
 ---
 
 # Creating a standard MPTS
-<a name="setting-up-mpts-outputs"></a>
 
 With Conductor Live there are two steps to creating an MPTS—you create the MPTS, then you add SPTS channels to it. You perform all these steps in Conductor Live. You don't perform these steps in Elemental Statmux.
 

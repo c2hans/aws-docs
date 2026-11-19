@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/resour
 ---
 
 # Resource-based policies for Amazon Bedrock AgentCore
-<a name="resource-based-policies"></a>
 
 Resource-based policies in Amazon Bedrock AgentCore allow you to control which principals (AWS accounts, IAM users, or IAM roles) can invoke and manage your Amazon Bedrock AgentCore resources (supported for Runtime, Gateway and Memory). You can attach IAM-style policies directly to your resources to define rules around who can start runtime sessions, invoke a gateway, access memory or perform other management and invocation actions.
 

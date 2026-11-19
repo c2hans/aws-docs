@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Enable
 ---
 
 # EnableSagemakerServicecatalogPortfolio
-<a name="API_EnableSagemakerServicecatalogPortfolio"></a>
 
 Enables using Service Catalog in SageMaker. Service Catalog is used to create SageMaker projects.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lambda-even
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Can I apply Lambda event filtering and partial batch responses to my existing Lambda and Amazon SQS application?
 <a name="can-i-apply-lambda-event-filtering-and-partial-batch-responses-to-my-existing-lambda-and-amazon-sqs-application-.c53d238f-7457-5132-84ae-61ea5ed3e6a9"></a>

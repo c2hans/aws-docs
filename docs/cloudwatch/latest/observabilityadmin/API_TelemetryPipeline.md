@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # TelemetryPipeline
-<a name="API_TelemetryPipeline"></a>
 
 Represents a complete telemetry pipeline resource with configuration, status, and metadata for data processing and transformation.
 

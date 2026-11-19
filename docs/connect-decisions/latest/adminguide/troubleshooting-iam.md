@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/trou
 ---
 
 # Troubleshooting IAM
-<a name="troubleshooting-iam"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Amazon Connect Decisions and IAM.
 

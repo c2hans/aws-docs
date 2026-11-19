@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLJobArtifacts
-<a name="API_AutoMLJobArtifacts"></a>
 
 The artifacts that are generated during an AutoML job.
 

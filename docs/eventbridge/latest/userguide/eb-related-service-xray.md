@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-related-
 ---
 
 # Amazon EventBridge integration with AWS X-Ray
-<a name="eb-related-service-xray"></a>
 
 You can use AWS X-Ray to trace [events](eb-events.md) that pass through EventBridge. EventBridge passes the original trace header to the [target](eb-targets.md) so that target services can track, analyze, and debug.
 

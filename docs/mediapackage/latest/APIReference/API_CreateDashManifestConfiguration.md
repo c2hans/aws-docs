@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Cre
 ---
 
 # CreateDashManifestConfiguration
-<a name="API_CreateDashManifestConfiguration"></a>
 
 Create a DASH manifest configuration.
 

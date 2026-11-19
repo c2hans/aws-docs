@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/message-archiving-and-repl
 ---
 
 # Amazon SNS message archiving for FIFO topic owners
-<a name="message-archiving-and-replay-topic-owner"></a>
 
 Message archiving lets you archive a single copy of all messages published to your topic. You can store published messages within your topic by enabling the message archive policy on the topic, which enables message archiving for all subscriptions linked to that topic. Messages can be archived for a minimum of one day to a maximum of 365 days.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsS
 ---
 
 # AwsEcsServiceDetails
-<a name="API_AwsEcsServiceDetails"></a>
 
 Provides details about a service within an ECS cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateKnowledgeBasePermissions
-<a name="API_UpdateKnowledgeBasePermissions"></a>
 
 Updates the resource permissions for a knowledge base.
 

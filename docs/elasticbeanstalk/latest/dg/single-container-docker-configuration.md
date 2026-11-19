@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/single-contai
 ---
 
 # Preparing your Docker image for deployment to Elastic Beanstalk
-<a name="single-container-docker-configuration"></a>
 
 This section describes how to prepare your Docker image for deployment to Elastic Beanstalk with either of the *Docker running AL2 or AL2023* platform branches. The configuration files that you'll require depend on whether your images are local, remote, and if you're using Docker Compose.
 

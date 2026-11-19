@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Optimize SQL Server sizing by using Compute Optimizer
-<a name="sql-server-sizing-compute-optimizer"></a>
 
 ## Overview
 <a name="sql-server-sizing-compute-optimizer-overview"></a>

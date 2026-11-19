@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-key-management.html
 ---
 
 # Managing Amazon SNS encryption keys and costs
-<a name="sns-key-management"></a>
 
 The following sections provide information about working with keys managed in AWS Key Management Service (AWS KMS).
 

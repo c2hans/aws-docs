@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_ExportC
 ---
 
 # ExportComplianceInquiry
-<a name="API_ExportComplianceInquiry"></a>
 
 Export a compliance inquiry report.
 

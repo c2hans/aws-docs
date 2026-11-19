@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # When to choose Amazon EC2
-<a name="ec2-sql-choosing"></a>
 
 Amazon EC2 is a good migration option for your SQL Server database when:
 + You need full control over the database and access to its underlying operating system, database installation, and configuration.

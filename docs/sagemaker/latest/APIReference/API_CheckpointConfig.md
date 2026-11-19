@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Checkp
 ---
 
 # CheckpointConfig
-<a name="API_CheckpointConfig"></a>
 
 Contains information about the output location for managed spot training checkpoint data.
 

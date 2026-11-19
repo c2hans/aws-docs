@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Funne
 ---
 
 # FunnelChartVisual
-<a name="API_FunnelChartVisual"></a>
 
 A funnel chart.
 

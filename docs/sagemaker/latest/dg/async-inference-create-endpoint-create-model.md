@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference-crea
 ---
 
 # Create a Model
-<a name="async-inference-create-endpoint-create-model"></a>
 
 The following example shows how to create a model using the AWS SDK for Python (Boto3). The first few lines define:
 + `sagemaker_client`: A low-level SageMaker AI client object that makes it easy to send and receive requests to AWS services.

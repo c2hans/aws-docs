@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/paloa
 ---
 
 # CloudWatch pipelines configuration for Palo Alto Networks Next-Generation Firewalls
-<a name="paloalto-ngfw-pipeline-setup"></a>
 
 Collects log data from Palo Alto Next-Generation Firewall using basic authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SessionLimits
-<a name="API_SessionLimits"></a>
 
 The spending limits configuration for a payment session.
 

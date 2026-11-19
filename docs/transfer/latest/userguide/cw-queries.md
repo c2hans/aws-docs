@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/cw-queries.htm
 ---
 
 # Using queries to filter log entries
-<a name="cw-queries"></a>
 
 You can use CloudWatch queries to filter and identify log entries for Transfer Family. This section contains some examples.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Scan.h
 ---
 
 # Scan
-<a name="API_Scan"></a>
 
 Contains information about malware scans associated with GuardDuty Malware Protection for EC2.
 

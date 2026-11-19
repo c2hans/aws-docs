@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/l
 ---
 
 # Limitations
-<a name="limitations"></a>
 
 AWS SDK for SAP ABAP includes SDK modules for all AWS services. Some of these modules may have limitations, as described here.
 + Modules that rely on `MQTT` protocol bindings, such as `iotevents`, will not work. `MQTT` is not an HTTP-based protocol and is currently not supported by AWS SDK for SAP ABAP.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GuardrailAssessment
-<a name="API_agent-runtime_GuardrailAssessment"></a>
 
 Assessment details of the content analyzed by Guardrails.
 

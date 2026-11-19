@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteP
 ---
 
 # DeleteProfile
-<a name="API_DeleteProfile"></a>
 
 Deletes the profile that's specified in the `ProfileId` parameter.
 

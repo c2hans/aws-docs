@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/eventbridge
 ---
 
 # Using Amazon EventBridge with IVS Real-Time Streaming
-<a name="eventbridge"></a>
 
 You can use Amazon EventBridge to monitor your Amazon Interactive Video Service (IVS) streams.
 

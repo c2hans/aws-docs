@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkTraffic
-<a name="API_NetworkTraffic"></a>
 
 Contains the amount of data that network activity transferred.
 

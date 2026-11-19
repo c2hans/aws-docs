@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/working-wit
 ---
 
 # Custom Agents
-<a name="working-with-devops-agent-custom-agents-index"></a>
 
 Custom agents are user-defined AI agents that automate operational tasks specific to your infrastructure and workflows. Unlike the built-in AWS DevOps Agent capabilities — which focus on incident response, on-demand queries, and proactive prevention — custom agents let you define your own agent with a tailored system prompt, a curated set of tools, specialized skills, and attached memory stores.
 

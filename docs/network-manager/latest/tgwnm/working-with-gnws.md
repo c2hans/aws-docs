@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/working-wit
 ---
 
 # Modify a global network using AWS Network Manager
-<a name="working-with-gnws"></a>
 
 After setting up a global network you further modify it by performing a number of tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # SageMaker HyperPod AMI releases for Slurm
-<a name="sagemaker-hyperpod-release-ami-slurm"></a>
 
 The following release notes track the latest updates for Amazon SageMaker HyperPod AMI releases for Slurm orchestration. These HyperPod AMIs are built upon [AWS Deep Learning Base GPU AMI (Ubuntu 22.04)](https://aws.amazon.com/releasenotes/aws-deep-learning-base-gpu-ami-ubuntu-22-04/). The HyperPod service team distributes software patches through [SageMaker HyperPod DLAMI](sagemaker-hyperpod-ref.md#sagemaker-hyperpod-ref-hyperpod-ami). For HyperPod AMI releases for Amazon EKS orchestration, see [SageMaker HyperPod AMI releases for Amazon EKS](sagemaker-hyperpod-release-ami-eks.md). For information about Amazon SageMaker HyperPod feature releases, see [Amazon SageMaker HyperPod release notes](sagemaker-hyperpod-release-notes.md).
 

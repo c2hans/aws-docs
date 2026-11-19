@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # American Express specific functions
-<a name="use-cases-issuers.networkfunctions.amex"></a>
 
 **Topics**
 + [CSC1](#use-cases-issuers.networkfunctions.amex.csc)

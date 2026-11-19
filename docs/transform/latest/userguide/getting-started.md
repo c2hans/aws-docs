@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/getting-start
 ---
 
 # Getting started with AWS Transform
-<a name="getting-started"></a>
 
 **Topics**
 + [Setting up AWS Transform](transform-setup.md)

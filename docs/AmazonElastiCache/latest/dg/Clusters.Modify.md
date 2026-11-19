@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.Mod
 ---
 
 # Modifying an ElastiCache cluster
-<a name="Clusters.Modify"></a>
 
 In addition to adding or removing nodes from an ElastiCache cluster, there can be times where you need to make other changes such as adding a security group, changing the maintenance window or a parameter group.
 

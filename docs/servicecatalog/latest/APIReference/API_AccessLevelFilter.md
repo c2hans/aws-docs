@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_A
 ---
 
 # AccessLevelFilter
-<a name="API_AccessLevelFilter"></a>
 
 The access level to use to filter results.
 

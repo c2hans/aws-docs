@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-m
 ---
 
 # Subscribe users to Amazon Q Developer Pro in a member account
-<a name="subscribe-member"></a>
 
 A *member account* is an AWS account, other than the management account, that is part of an organization managed by [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html).
 

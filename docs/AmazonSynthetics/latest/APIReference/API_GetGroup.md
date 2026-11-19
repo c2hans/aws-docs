@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # GetGroup
-<a name="API_GetGroup"></a>
 
 Returns information about one group. Groups are a global resource, so you can use this operation from any Region.
 

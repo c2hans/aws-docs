@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.SCM.8] Use a versioning specification to manage software components
-<a name="dl.scm.8-use-a-versioning-specification-to-manage-software-components"></a>
 
  **Category:** RECOMMENDED
 

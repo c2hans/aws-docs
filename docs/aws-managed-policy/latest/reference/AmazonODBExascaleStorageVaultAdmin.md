@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonODBExascaleStorageVaultAdmin
-<a name="AmazonODBExascaleStorageVaultAdmin"></a>
 
 **Description**: Provides administrative access to manage Exascale storage vault resources in Oracle Database@AWS.
 

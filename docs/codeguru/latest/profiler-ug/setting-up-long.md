@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/setting-up-l
 ---
 
 # Set up in the CodeGuru Profiler console
-<a name="setting-up-long"></a>
 
 ## Step 2: Create a CodeGuru Profiler profiling group
 <a name="setting-up-step-2"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateEipFromVlan
-<a name="API_DisassociateEipFromVlan"></a>
 
 Disassociates an Elastic IP address from a public HCX VLAN. This operation is only allowed for public HCX VLANs at this time.
 

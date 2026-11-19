@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Key stores in the AWS Database Encryption SDK
-<a name="keystores"></a>
 
 In the AWS Database Encryption SDK, a *key store* is a Amazon DynamoDB table that persists hierarchical data used by the [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md). The key store helps reduce the number of calls that you need to make to AWS KMS to perform cryptographic operations with the Hierarchical keyring.
 

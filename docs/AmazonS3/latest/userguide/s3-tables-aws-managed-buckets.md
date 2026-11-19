@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-aws-
 ---
 
 # Working with AWS managed table buckets
-<a name="s3-tables-aws-managed-buckets"></a>
 
 AWS managed table buckets are specialized Amazon S3 table buckets designed to store AWS managed tables, such as [S3 Metadata](metadata-tables-overview.md) journal and live inventory tables. Unlike customer-managed table buckets that you create and manage directly, AWS managed table buckets are automatically provisioned by AWS when you configure features that require AWS managed tables. When managed tables are created, they belong to a predefined namespace that's based on the name of the source bucket. This predefined namespace can't be modified.
 

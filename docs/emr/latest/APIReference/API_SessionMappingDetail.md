@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SessionMappi
 ---
 
 # SessionMappingDetail
-<a name="API_SessionMappingDetail"></a>
 
 Details for an Amazon EMR Studio session mapping including creation time, user or group ID, Studio ID, and so on.
 

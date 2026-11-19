@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcos
 ---
 
 # Energy optimization
-<a name="telcosus01"></a>
 
 |  TELCOSUS01: How do you optimize energy consumption for telco networks?  |
 | --- |

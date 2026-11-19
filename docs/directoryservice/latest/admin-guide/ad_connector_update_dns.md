@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Updating the DNS address for your AD Connector
-<a name="ad_connector_update_dns"></a>
 
 Use the following steps to update the DNS addresses that your AD Connector is pointing to.
 

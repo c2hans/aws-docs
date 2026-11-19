@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/schema-for-capabi
 ---
 
 # Schema for capability definitions
-<a name="schema-for-capability-definitions"></a>
 
 A capability is documented using a declarative JSON document that provides a clear contract for how the capability should function within the system.
 

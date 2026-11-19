@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # LogsBackupConfiguration
-<a name="API_LogsBackupConfiguration"></a>
 
 Configuration for backing up centralized log data to a secondary region.
 

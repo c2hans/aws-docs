@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/how-pii-labels.html
 ---
 
 # Labeling PII entities
-<a name="how-pii-labels"></a>
 
 When you run PII detection, Amazon Comprehend returns the labels of identified PII entity types. For example, if you submit the following input text to Amazon Comprehend:
 

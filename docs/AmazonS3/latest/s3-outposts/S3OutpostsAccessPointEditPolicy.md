@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsAc
 ---
 
 # Adding or editing an access point policy
-<a name="S3OutpostsAccessPointEditPolicy"></a>
 
 Access points have distinct permissions and network controls that Amazon S3 on Outposts applies for any request that is made through that access point. Each access point enforces a customized access point policy that works in conjunction with the bucket policy that is attached to the underlying bucket. For more information, see [Access points](S3OutpostsWorkingBuckets.md#S3OutpostsAP).
 

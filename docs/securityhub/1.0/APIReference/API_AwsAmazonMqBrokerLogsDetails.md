@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAmaz
 ---
 
 # AwsAmazonMqBrokerLogsDetails
-<a name="API_AwsAmazonMqBrokerLogsDetails"></a>
 
  Provides information about logs to be activated for the specified broker.
 

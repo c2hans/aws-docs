@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ProvisioningArtifact
-<a name="API_ProvisioningArtifact"></a>
 
 Information about a provisioning artifact. A provisioning artifact is also known as a product version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-on
 ---
 
 # Prerequisites for configuring an on-premises instance
-<a name="instances-on-premises-prerequisites"></a>
 
 The following prerequisites must be met before you can register an on-premises instance.
 

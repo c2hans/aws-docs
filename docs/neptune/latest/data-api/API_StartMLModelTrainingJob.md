@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_StartMLModel
 ---
 
 # StartMLModelTrainingJob
-<a name="API_StartMLModelTrainingJob"></a>
 
 Creates a new Neptune ML model training job. See [Model training using the `modeltraining` command](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-api-modeltraining.html).
 

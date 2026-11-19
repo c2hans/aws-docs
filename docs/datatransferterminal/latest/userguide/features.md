@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datatransferterminal/latest/userguide/fe
 ---
 
 # Features
-<a name="features"></a>
 
 Using AWS Data Transfer Terminal makes getting your data into your AWS Cloud service easier from remote locations. The following are some of the advantages of Data Transfer Terminal for your remote data upload needs:
 

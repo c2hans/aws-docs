@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/enable-open-mo
 ---
 
 # Enable open monitoring on existing MSK Provisioned cluster
-<a name="enable-open-monitoring-after-creation"></a>
 
 To enable open monitoring, make sure that the MSK Provisioned cluster is in the `ACTIVE` state.
 

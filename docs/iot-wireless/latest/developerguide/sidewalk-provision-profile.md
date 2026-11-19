@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/sidew
 ---
 
 # Creating device profiles with factory support
-<a name="sidewalk-provision-profile"></a>
 
 Before you can bulk provision your Amazon Sidewalk devices, you must create a device profile and then contact the Amazon Sidewalk support team to request factory support for it. The Amazon Sidewalk team will then update your device profile with a new device attestation key (DAK) and add factory support to it. Sidewalk devices that use this profile are then qualified to be used with AWS IoT Core for Amazon Sidewalk, and can be onboarded for bulk provisioning.
 

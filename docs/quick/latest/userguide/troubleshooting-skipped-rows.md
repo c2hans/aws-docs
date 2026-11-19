@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshooting-s
 ---
 
 # Troubleshooting skipped row errors
-<a name="troubleshooting-skipped-rows"></a>
 
 When you import data, AWS Quick Sight previews a portion of your data. If it can't interpret a row for any reason, Quick Sight skips the row. In some cases, the import will fail. When this happens, Quick Sight returns an error message that explains the failure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSUS02-BP01 Prioritize critical components
-<a name="hnsus02-bp01"></a>
 
  Break down your workload into individual components (for example, microservices, databases, and APIs). Use metrics like CPU utilization, request rates, and business impact to classify them as critical or non-critical.
 

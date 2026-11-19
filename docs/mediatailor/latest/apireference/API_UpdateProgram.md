@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Upda
 ---
 
 # UpdateProgram
-<a name="API_UpdateProgram"></a>
 
 Updates a program within a channel.
 

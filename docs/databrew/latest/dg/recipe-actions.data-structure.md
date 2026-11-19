@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.data-s
 ---
 
 # Data structure recipe steps
-<a name="recipe-actions.data-structure"></a>
 
 Use these recipe steps to tabulate and summarize data from different perspectives, or to perform advanced functions.
 

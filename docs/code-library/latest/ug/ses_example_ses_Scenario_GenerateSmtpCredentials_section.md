@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ses_example_ses_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Generate credentials to connect to an Amazon SES SMTP endpoint
-<a name="ses_example_ses_Scenario_GenerateSmtpCredentials_section"></a>
 
 The following code example shows how to generate credentials to connect to an Amazon SES SMTP endpoint.
 

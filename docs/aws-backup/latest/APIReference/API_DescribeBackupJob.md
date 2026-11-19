@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeBackupJob
-<a name="API_DescribeBackupJob"></a>
 
 Returns backup job details for the specified `BackupJobId`.
 

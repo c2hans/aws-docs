@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceC
 ---
 
 # InstanceConnectEndpointPublicDnsNames
-<a name="API_InstanceConnectEndpointPublicDnsNames"></a>
 
 The public DNS names of the endpoint, including IPv4-only and dualstack DNS names.
 

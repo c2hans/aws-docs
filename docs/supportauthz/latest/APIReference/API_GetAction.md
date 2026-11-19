@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Get
 ---
 
 # GetAction
-<a name="API_GetAction"></a>
 
 Retrieves the description of a specific support action.
 

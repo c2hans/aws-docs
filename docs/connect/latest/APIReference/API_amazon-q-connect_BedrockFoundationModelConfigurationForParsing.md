@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # BedrockFoundationModelConfigurationForParsing
-<a name="API_amazon-q-connect_BedrockFoundationModelConfigurationForParsing"></a>
 
 Settings for a foundation model used to parse documents for a data source.
 

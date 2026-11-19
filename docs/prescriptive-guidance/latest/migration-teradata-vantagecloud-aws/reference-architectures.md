@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Reference architectures
-<a name="reference-architectures"></a>
 
 The following supported connectivity options can help you connect to Teradata VantageCloud Enterprise:
 + AWS Transit Gateway enables Cloud-to-cloud connections.

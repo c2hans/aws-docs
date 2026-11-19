@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteCoreNetwork
-<a name="API_DeleteCoreNetwork"></a>
 
 Deletes a core network along with all core network policies. This can only be done if there are no attachments on a core network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDmsR
 ---
 
 # AwsDmsReplicationTaskDetails
-<a name="API_AwsDmsReplicationTaskDetails"></a>
 
  Provides details about an AWS Database Migration Service (AWS DMS) replication task. A replication task moves a set of data from the source endpoint to the target endpoint.
 

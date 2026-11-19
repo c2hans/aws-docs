@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_ListMicr
 ---
 
 # ListMicrosoftTeamsChannelConfigurations
-<a name="API_ListMicrosoftTeamsChannelConfigurations"></a>
 
 Lists all Amazon Q Developer Microsoft Teams channel configurations in an AWS account.
 

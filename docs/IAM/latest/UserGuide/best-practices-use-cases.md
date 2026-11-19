@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices-use-
 ---
 
 # Security best practices and use cases in AWS Identity and Access Management
-<a name="best-practices-use-cases"></a>
 
 AWS Identity and Access Management (IAM) offers several security features to consider as you develop and implement your own security policies. The following best practices are general guidelines and don't represent a complete security solution.
 

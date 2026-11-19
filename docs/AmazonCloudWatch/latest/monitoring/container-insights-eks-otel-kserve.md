@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Collecting KServe metrics with OTel Container Insights
-<a name="container-insights-eks-otel-kserve"></a>
 
 KServe is an open-source model serving platform for Kubernetes. You describe a model in an InferenceService resource, and the KServe controller creates and maintains the pods that serve it. Container Insights collects the controller's own metrics, so you can see whether KServe is reconciling your InferenceServices.
 

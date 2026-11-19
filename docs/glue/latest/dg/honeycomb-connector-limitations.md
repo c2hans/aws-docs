@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/honeycomb-connector-limit
 ---
 
 # Limitations and notes for the Honeycomb connector
-<a name="honeycomb-connector-limitations"></a>
 
 The following are limitations and notes for the Honeycomb connector:
 + Honeycomb is supported as a source only. Writing to Honeycomb is not supported.

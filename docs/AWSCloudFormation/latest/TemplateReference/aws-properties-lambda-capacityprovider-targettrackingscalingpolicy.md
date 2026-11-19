@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::CapacityProvider TargetTrackingScalingPolicy
-<a name="aws-properties-lambda-capacityprovider-targettrackingscalingpolicy"></a>
 
 A scaling policy for the capacity provider that automatically adjusts capacity to maintain a target value for a specific metric.
 
@@ -36,10 +35,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-capacityprovider-targettrackingscalingpolicy-properties"></a>
 
 `PredefinedMetricType`  <a name="cfn-lambda-capacityprovider-targettrackingscalingpolicy-predefinedmetrictype"></a>
-The predefined metric type to track for scaling decisions.
+The predefined metric type to track for scaling decisions. Use `LambdaCapacityProviderAverageCPUUtilization` to scale on the average CPU utilization of compute instances, or `LambdaCapacityProviderAverageGPUUtilization` to scale on the average GPU utilization of GPU instances.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `LambdaCapacityProviderAverageCPUUtilization`
+*Allowed values*: `LambdaCapacityProviderAverageCPUUtilization | LambdaCapacityProviderAverageGPUUtilization`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TargetValue`  <a name="cfn-lambda-capacityprovider-targettrackingscalingpolicy-targetvalue"></a>

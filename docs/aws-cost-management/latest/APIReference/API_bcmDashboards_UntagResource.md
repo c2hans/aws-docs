@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UntagResource
-<a name="API_bcmDashboards_UntagResource"></a>
 
 Removes specified tags from a dashboard resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/secu
 ---
 
 # Identity and access management for Amazon Route 53 Global Resolver
-<a name="security-iam"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be *authenticated* (signed in) and *authorized* (have permissions) to use Route 53 Global Resolver resources. IAM is an AWS service that you can use with no additional charge.
 

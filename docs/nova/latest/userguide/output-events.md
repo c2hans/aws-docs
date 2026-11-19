@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/output-events.html
 ---
 
 # Handling output events with the bidirectional API
-<a name="output-events"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For the Amazon Nova 2 Sonic guide, visit [Handling output events with the bidirectional API](https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-output-events.html).

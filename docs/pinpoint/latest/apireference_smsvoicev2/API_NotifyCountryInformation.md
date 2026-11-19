@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # NotifyCountryInformation
-<a name="API_NotifyCountryInformation"></a>
 
 The information for a country that supports notify messaging.
 

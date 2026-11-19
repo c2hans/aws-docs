@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StopT
 ---
 
 # StopTrainingEntityRecognizer
-<a name="API_StopTrainingEntityRecognizer"></a>
 
 Stops an entity recognizer training job while in progress.
 

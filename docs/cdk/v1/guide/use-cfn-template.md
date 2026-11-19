@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cdk/v1/guide/use-cfn-template.html
 This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and will now only receive critical bug fixes and security patches. New features will be developed for CDK v2 exclusively. Support for CDK v1 will end entirely on June 1, 2023. [Migrate to CDK v2](work-with-cdk-v2.md) to have access to the latest features and fixes.
 
 # Import or migrate an existing CloudFormation template
-<a name="use-cfn-template"></a>
 
 The [`cloudformation-include.CfnInclude`](https://docs.aws.amazon.com/cdk/api/v1/docs/cloudformation-include-readme.html) construct converts the resources in an imported CloudFormation template to AWS CDK L1 constructs. You can work with these in your app just as if they were defined in AWS CDK code, even using them within higher-level AWS CDK constructs, letting you use (for example) the L2 permission grant methods with the resources they define.
 

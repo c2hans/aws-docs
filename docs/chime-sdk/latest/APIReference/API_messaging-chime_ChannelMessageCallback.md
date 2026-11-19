@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ChannelMessageCallback
-<a name="API_messaging-chime_ChannelMessageCallback"></a>
 
 Stores information about a callback.
 

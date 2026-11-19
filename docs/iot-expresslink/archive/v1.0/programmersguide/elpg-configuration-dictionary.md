@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmers
 ---
 
 # 5 Configuration Dictionary
-<a name="elpg-configuration-dictionary"></a>
 
 The configuration dictionary is a key-value store containing all the options necessary for the proper functioning of ExpressLink modules. All keys are case sensitive.
 

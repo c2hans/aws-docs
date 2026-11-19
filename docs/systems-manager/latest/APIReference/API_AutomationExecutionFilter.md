@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AutomationExecutionFilter
-<a name="API_AutomationExecutionFilter"></a>
 
 A filter used to match specific automation executions. This is used to limit the scope of Automation execution information returned.
 

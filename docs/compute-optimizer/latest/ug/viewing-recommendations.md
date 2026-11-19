@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/viewing-reco
 ---
 
 # Viewing resource recommendations
-<a name="viewing-recommendations"></a>
 
 The AWS Compute Optimizer console shows recommendations for your AWS resources on two pages.
 + The **Recommendations** page lists each resource you run. It also shows the top recommendation for each one.

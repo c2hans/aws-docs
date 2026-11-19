@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # GetMetricStream
-<a name="API_GetMetricStream"></a>
 
 Returns information about the metric stream that you specify.
 

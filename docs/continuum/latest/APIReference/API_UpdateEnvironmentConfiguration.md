@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Update
 ---
 
 # UpdateEnvironmentConfiguration
-<a name="API_UpdateEnvironmentConfiguration"></a>
 
 The update Environment Configuration.
 

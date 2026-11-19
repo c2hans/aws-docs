@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateTransitGatewayRouteTable
-<a name="API_AssociateTransitGatewayRouteTable"></a>
 
 Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
 

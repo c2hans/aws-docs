@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/file-downlo
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Download required files
-<a name="file-download"></a>
 
 1. If you haven't already done so, install the AWS IoT Device SDK for Python. For instructions, see step 1 in [Install the AWS IoT Device SDK for Python](IoT-SDK.md).
 

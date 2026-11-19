@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsi
 ---
 
 # Using tag-based access control for Database Insights
-<a name="USER_PerfInsights.access-control.tag-based-policy"></a>
 
 You can control access to Database Insights metrics using tags inherited from the parent DB instance. To control access to Database Insights operations, use IAM policies. These policies can check the tags on your DB instance to determine permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/output-locking.
 ---
 
 # Output locking
-<a name="output-locking"></a>
 
 You can implement output locking to produce video outputs that are *frame accurate *with each other. Implement output locking to enhance output redundancy, or to implement distributed encoding.
 

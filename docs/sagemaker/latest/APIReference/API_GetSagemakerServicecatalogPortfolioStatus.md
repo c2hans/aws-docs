@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GetSag
 ---
 
 # GetSagemakerServicecatalogPortfolioStatus
-<a name="API_GetSagemakerServicecatalogPortfolioStatus"></a>
 
 Gets the status of Service Catalog in SageMaker. Service Catalog is used to create SageMaker projects.
 

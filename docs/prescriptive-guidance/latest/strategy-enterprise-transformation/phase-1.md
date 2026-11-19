@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Phase 1: Prioritize - Define the path
-<a name="phase-1"></a>
 
 This phase involves rapid discovery for organizational transformation readiness, interactive sessions to align leaders and business priorities, and design sessions to develop the transformation strategy, value at stake, and high-level roadmap. It is illustrated in the following diagram.
 

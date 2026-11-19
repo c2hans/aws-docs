@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Signal.
 ---
 
 # Signal
-<a name="API_Signal"></a>
 
  Contains information about the signals involved in an Amazon GuardDuty Extended Threat Detection attack sequence. An attack sequence is a type of threat detected by GuardDuty. GuardDuty generates an attack sequence finding when multiple events, or signals, align to a potentially suspicious activity. When GuardDuty and AWS Security Hub CSPM are integrated, GuardDuty sends attack sequence findings to Security Hub CSPM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/airtable-integrat
 ---
 
 # Airtable integration
-<a name="airtable-integration"></a>
 
 With the Airtable connector, you can access the Airtable platform directly in AWS Quick through natural language. You can create and update records, manage bases and tables, filter views, and perform relational data operations without leaving AWS Quick.
 

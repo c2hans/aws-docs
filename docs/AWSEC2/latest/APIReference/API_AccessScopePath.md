@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AccessSco
 ---
 
 # AccessScopePath
-<a name="API_AccessScopePath"></a>
 
 Describes a path.
 

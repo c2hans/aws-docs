@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingFeatureFilter
-<a name="API_billing_BillingFeatureFilter"></a>
 
 A filter that narrows the set of preferences returned by `GetBillingPreferences`.
 

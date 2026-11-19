@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/best-pract
 ---
 
 # Subnet compatibility for Resolver endpoints
-<a name="best-practices-resolver-subnet-compatibility"></a>
 
 We recommend using [VPC Resolver on AWS Outposts](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/outpost-resolver-getting-started.html) to create endpoints on AWS Outposts Racks.
 

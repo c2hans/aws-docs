@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DeleteDataProtectionSettings
-<a name="API_DeleteDataProtectionSettings"></a>
 
 Deletes data protection settings.
 

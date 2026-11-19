@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListWirelessDevices
-<a name="API_ListWirelessDevices"></a>
 
 Lists the wireless devices registered to your AWS account.
 

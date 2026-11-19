@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/met
 ---
 
 # DynamoDB Metrics and dimensions
-<a name="metrics-dimensions"></a>
 
 When you interact with DynamoDB, it sends metrics and dimensions to CloudWatch.
 

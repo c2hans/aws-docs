@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListEventStreams
-<a name="API_connect-customer-profiles_ListEventStreams"></a>
 
 Returns a list of all the event streams in a specific domain.
 

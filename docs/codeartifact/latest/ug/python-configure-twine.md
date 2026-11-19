@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/python-configure-
 ---
 
 # Configure and use twine with CodeArtifact
-<a name="python-configure-twine"></a>
 
 [twine](https://pypi.org/project/twine/) is a package publishing utility for Python packages. To use twine to publish Python packages to your CodeArtifact repository, you must first configure twine with your CodeArtifact repository information and credentials.
 

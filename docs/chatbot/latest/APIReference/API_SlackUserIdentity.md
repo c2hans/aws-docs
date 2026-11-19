@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_SlackUse
 ---
 
 # SlackUserIdentity
-<a name="API_SlackUserIdentity"></a>
 
 Identifes a user level permission for a channel configuration.
 

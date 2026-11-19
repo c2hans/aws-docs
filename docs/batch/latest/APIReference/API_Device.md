@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_Device.htm
 ---
 
 # Device
-<a name="API_Device"></a>
 
 An object that represents a container instance host device.
 

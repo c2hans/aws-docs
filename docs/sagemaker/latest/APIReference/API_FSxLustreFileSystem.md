@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FSxLus
 ---
 
 # FSxLustreFileSystem
-<a name="API_FSxLustreFileSystem"></a>
 
 A custom file system in Amazon FSx for Lustre.
 

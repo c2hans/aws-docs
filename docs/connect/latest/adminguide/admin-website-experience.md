@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/admin-website-
 ---
 
 # Admin website experience
-<a name="admin-website-experience"></a>
 
 **Important**
 To use this feature, ensure that users, including admins and supervisors, who access the Connect Customer admin website are associated with a traffic distribution group.

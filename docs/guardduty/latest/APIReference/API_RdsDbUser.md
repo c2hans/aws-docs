@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_RdsDbU
 ---
 
 # RdsDbUser
-<a name="API_RdsDbUser"></a>
 
 Contains details about the user that logged in to an Amazon RDS database instance.
 

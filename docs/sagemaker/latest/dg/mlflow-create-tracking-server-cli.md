@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-create-tracki
 ---
 
 # Create a tracking server using the AWS CLI
-<a name="mlflow-create-tracking-server-cli"></a>
 
 You can create a tracking server using the AWS CLI for more granular security customization.
 

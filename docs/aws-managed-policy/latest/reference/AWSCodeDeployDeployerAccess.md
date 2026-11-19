@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeDeployDeployerAccess
-<a name="AWSCodeDeployDeployerAccess"></a>
 
 **Description**: Provides access to register and deploy a revision.
 

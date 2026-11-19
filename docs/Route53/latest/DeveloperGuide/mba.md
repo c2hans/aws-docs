@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/mba.html
 ---
 
 # .mba
-<a name="mba"></a>
 
 Used for websites that provide information about the master's degree in business administration (MBA).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_External
 ---
 
 # ExternalSourcesGenerationConfiguration
-<a name="API_ExternalSourcesGenerationConfiguration"></a>
 
 The response generation configuration of the external source wrapper object.
 

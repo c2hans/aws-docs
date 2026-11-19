@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DiscountsBreakdownAmount
-<a name="API_invoicing_DiscountsBreakdownAmount"></a>
 
  The discounted amount.
 

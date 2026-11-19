@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Configure Amazon EC2 instances with CloudFormation
-<a name="quickref-ec2-instance-config"></a>
 
 The following snippets demonstrate how to configure Amazon EC2 instances using CloudFormation.
 

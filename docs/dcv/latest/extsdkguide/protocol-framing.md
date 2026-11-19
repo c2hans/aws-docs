@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/protocol-framing.
 ---
 
 # Protocol and framing
-<a name="protocol-framing"></a>
 
  When Amazon DCV components start the extension on either server or client side, DCV uses standard input (`stdin`) and standard output (`stdout`), also known as anonymous pipes, to communicate with the extension.
 

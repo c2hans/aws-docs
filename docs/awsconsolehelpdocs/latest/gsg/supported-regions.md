@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/supported-
 ---
 
 # Supported Regions for myApplications
-<a name="supported-regions"></a>
 
 myApplications is available in the following AWS Regions:
 + US East (Ohio)

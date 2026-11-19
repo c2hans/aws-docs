@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards-xaccount
 ---
 
 # Set up cross-account support for Amazon SageMaker Model Cards
-<a name="model-cards-xaccount"></a>
 
 Use cross-account support in Amazon SageMaker Model Cards to share model cards between AWS accounts. The account where the model cards are created is the *model card account*. Users in the model card account share them with the *shared accounts*. The users in a shared account can update the model cards or create PDFs of them.
 

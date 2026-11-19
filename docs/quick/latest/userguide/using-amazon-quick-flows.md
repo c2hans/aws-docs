@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-amazon-quic
 ---
 
 # Using AWS Quick Flows
-<a name="using-amazon-quick-flows"></a>
 
 AWS Quick Flows is a capability within AWS Quick that lets any user create, customize, and share workflows that automate routine tasks. You can generate flows from conversations with chat agents, describe what you need in natural language, or build them manually using the visual editor — no technical skills required. Flows can also be published to an admin-managed library and shared with other AWS Quick users in your organization.
 

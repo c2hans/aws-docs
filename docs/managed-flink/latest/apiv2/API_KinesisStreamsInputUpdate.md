@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisSt
 ---
 
 # KinesisStreamsInputUpdate
-<a name="API_KinesisStreamsInputUpdate"></a>
 
 When you update the input configuration for a SQL-based Kinesis Data Analytics application, provides information about a Kinesis stream as the streaming source.
 

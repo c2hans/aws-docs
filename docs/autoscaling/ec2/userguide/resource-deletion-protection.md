@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/resource-delet
 ---
 
 # Configure deletion protection for your Amazon EC2 Auto Scaling resources
-<a name="resource-deletion-protection"></a>
 
  Protect your Amazon EC2 Auto Scaling infrastructure from accidental deletion by configuring multiple layers of protection. Auto Scaling provides several approaches to prevent unwanted resource deletion for your Auto Scaling groups and the Amazon EC2 instances that it manages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Access
 ---
 
 # AccessControlList
-<a name="API_AccessControlList"></a>
 
 Contains information on the current access control policies for the bucket.
 

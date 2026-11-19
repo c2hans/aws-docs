@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # PutFeedPolicy
-<a name="API_PutFeedPolicy"></a>
 
 Attaches or replaces a resource-based policy on the specified feed. A resource-based policy grants cross-account access to the feed.
 

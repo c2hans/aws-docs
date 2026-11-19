@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/launch-th
 ---
 
 # Step 1: Launch the product
-<a name="launch-the-product"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the product into your account.
 

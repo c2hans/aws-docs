@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListR
 ---
 
 # ListRestoreTestingSelections
-<a name="API_ListRestoreTestingSelections"></a>
 
 Returns a list of restore testing selections. Can be filtered by `MaxResults` and `RestoreTestingPlanName`.
 

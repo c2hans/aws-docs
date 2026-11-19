@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ServiceLevelObjectiveBudgetReportError
-<a name="API_ServiceLevelObjectiveBudgetReportError"></a>
 
 A structure containing information about one error that occurred during a [BatchGetServiceLevelObjectiveBudgetReport](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_BatchGetServiceLevelObjectiveBudgetReport.html) operation.
 

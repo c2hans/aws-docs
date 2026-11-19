@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/performance-tuning-s3-t
 ---
 
 # Optimize your queries
-<a name="performance-tuning-s3-throttling-optimizing-queries"></a>
 
 Use the suggestions in this section for optimizing your SQL queries in Athena.
 

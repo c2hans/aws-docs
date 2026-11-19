@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-a
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # API quickstart
-<a name="agent-api-quickstart"></a>
 
 You can set up AWS WA Agent entirely through the AWS CLI or SDK instead of the console. This quickstart walks through creating a profile, adding a goal, adding application context, and verifying eligibility.
 

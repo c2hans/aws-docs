@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rudderstack-reading-from-
 ---
 
 # Reading from RudderStack entities
-<a name="rudderstack-reading-from-entities"></a>
 
 **Prerequisites**
 

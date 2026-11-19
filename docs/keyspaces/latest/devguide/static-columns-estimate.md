@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/static-columns
 ---
 
 # Calculate the static column size per logical partition in Amazon Keyspaces
-<a name="static-columns-estimate"></a>
 
 This section provides details about how to estimate the encoded size of static columns in Amazon Keyspaces. The encoded size is used when you're calculating your bill and quota use. You should also use the encoded size when you calculate provisioned throughput capacity requirements for tables. To calculate the encoded size of static columns in Amazon Keyspaces, you can use the following guidelines.
 + Partition keys can contain up to 2048 bytes of data. Each key column in the partition key requires up to 3 bytes of metadata. These metadata bytes count towards your static data size quota of 1 MB per partition. When calculating the size of your static data, you should assume that each partition key column uses the full 3 bytes of metadata.

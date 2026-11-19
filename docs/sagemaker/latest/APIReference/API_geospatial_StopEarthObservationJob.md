@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # StopEarthObservationJob
-<a name="API_geospatial_StopEarthObservationJob"></a>
 
 Use this operation to stop an existing earth observation job.
 

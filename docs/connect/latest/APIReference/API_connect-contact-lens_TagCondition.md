@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TagCondition
-<a name="API_connect-contact-lens_TagCondition"></a>
 
 A tag condition that consists of a tag key, a tag value, and a comparison operator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # Datum
-<a name="API_training_session_runtime_Datum"></a>
 
 A single training datum containing model input and optional loss function inputs.
 

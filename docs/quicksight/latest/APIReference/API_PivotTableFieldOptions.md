@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableFieldOptions
-<a name="API_PivotTableFieldOptions"></a>
 
 The field options for a pivot table visual.
 

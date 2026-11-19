@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetTags
-<a name="API_GetTags"></a>
 
 Queries for available tag keys and tag values for a specified period. You can search the tag values for an arbitrary string.
 
@@ -103,7 +102,7 @@ Type: [Expression](API_Expression.md) object
 Required: No
 
  ** [MaxResults](#API_GetTags_RequestSyntax) **   <a name="awscostmanagement-GetTags-request-MaxResults"></a>
-This field is only used when SortBy is provided in the request. The maximum number of objects that are returned for this request. If MaxResults isn't specified with SortBy, the request returns 1000 results as the default value for this parameter.
+The maximum number of objects that are returned for this request. If MaxResults isn't specified with SortBy, the request returns 1000 results as the default value for this parameter. You can use this field only when you specify SortBy in the request. If you specify a nonzero MaxResults without SortBy, the request fails with a `ValidationException`.
 For `GetTags`, MaxResults has an upper quota of 1000.
 Type: Integer
 Valid Range: Minimum value of 1.
@@ -184,7 +183,7 @@ The tags that match your request.
 Type: Array of strings
 
  ** [TotalSize](#API_GetTags_ResponseSyntax) **   <a name="awscostmanagement-GetTags-response-TotalSize"></a>
-The total number of query results.
+The total number of query results. When you specify `SortBy`, `TotalSize` equals `ReturnSize`: the number of values that Cost Explorer returns after it applies the `MaxResults` limit, not the number of values that match the request. Without `SortBy`, `TotalSize` can be greater than `ReturnSize`.
 Type: Integer
 
 ## Errors

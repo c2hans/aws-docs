@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterTextAreaControl
-<a name="API_FilterTextAreaControl"></a>
 
 A control to display a text box that is used to enter multiple entries.
 

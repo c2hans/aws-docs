@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-slr.
 ---
 
 # Amazon Braket service-linked role
-<a name="braket-slr"></a>
 
 When you enable Amazon Braket, a *service-linked role* is created in your account.
 

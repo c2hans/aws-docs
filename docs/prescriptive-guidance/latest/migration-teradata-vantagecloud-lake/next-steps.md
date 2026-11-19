@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 We recommend that you consider the following next steps:
 + [Learn how organizations use Teradata Vantage](https://www.teradata.com/Customers) to connect and analyze data across their entire ecosystems, including data lakes, object stores, and cloud services.

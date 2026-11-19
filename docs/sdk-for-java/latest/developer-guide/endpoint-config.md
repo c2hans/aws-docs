@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/endp
 ---
 
 # Configuring client endpoints in the AWS SDK for Java 2.x
-<a name="endpoint-config"></a>
 
 The SDK for Java 2.x provides multiple ways to configure service endpoints. An endpoint is the URL that the SDK uses to make API calls to AWS services. By default, the SDK automatically determines the appropriate endpoint for each service based on the AWS Region you've configured. However, there are scenarios where you might need to customize or override these endpoints:
 + Working with local or third-party service implementations (such as LocalStack)

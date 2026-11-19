@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AcceptedTerm
-<a name="API_marketplace-agreements_AcceptedTerm"></a>
 
 A subset of terms proposed by the proposer, which have been accepted by the acceptor as part of agreement creation.
 
@@ -32,7 +31,7 @@ Type: [FixedUpfrontPricingTerm](API_marketplace-agreements_FixedUpfrontPricingTe
 Required: No
 
  ** freeTrialPricingTerm **   <a name="AWSMarketplaceService-Type-marketplace-agreements_AcceptedTerm-freeTrialPricingTerm"></a>
-Defines a short-term free pricing model where the buyers aren’t charged anything within a specified limit.
+Defines a short-term free pricing model where the buyers aren't charged anything within a specified limit.
 Type: [FreeTrialPricingTerm](API_marketplace-agreements_FreeTrialPricingTerm.md) object
 Required: No
 

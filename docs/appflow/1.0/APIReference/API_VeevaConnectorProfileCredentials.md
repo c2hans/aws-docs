@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_VeevaConnec
 ---
 
 # VeevaConnectorProfileCredentials
-<a name="API_VeevaConnectorProfileCredentials"></a>
 
  The connector-specific profile credentials required when using Veeva.
 

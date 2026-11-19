@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/emla-deploy-instance
 ---
 
 # Creating the instance role
-<a name="emla-deploy-instance-role"></a>
 
 To use MediaLive Anywhere, you must create a trusted entity configuration that lets AWS Systems Manager perform actions on the on-premises node hardware where MediaLive is running. You must create a role, attach some policies with specific content, and specify AWS Systems Manager (Systems Manager) as trusted entities for that role.
 

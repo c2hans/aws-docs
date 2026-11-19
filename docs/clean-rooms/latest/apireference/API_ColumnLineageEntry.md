@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Colu
 ---
 
 # ColumnLineageEntry
-<a name="API_ColumnLineageEntry"></a>
 
 Contains column lineage information that traces a disallowed output column back to its source in a base table.
 

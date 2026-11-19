@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Manage demand and supply resources
-<a name="manage-demand-and-supply-resources"></a>
 
 | DRHCCOST04: How do you manage the lifecycle of your edge data? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_StatusRe
 ---
 
 # StatusReport
-<a name="API_StatusReport"></a>
 
 A complex type that contains the status that one Amazon Route 53 health checker reports and the time of the health check.
 

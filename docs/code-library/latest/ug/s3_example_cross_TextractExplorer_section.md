@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/s3_example_cross_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create an Amazon Textract explorer application
-<a name="s3_example_cross_TextractExplorer_section"></a>
 
 The following code examples show how to explore Amazon Textract output through an interactive application.
 

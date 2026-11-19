@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListIn
 ---
 
 # ListInferenceComponents
-<a name="API_ListInferenceComponents"></a>
 
 Lists the inference components in your account and their properties.
 

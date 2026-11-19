@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateMemory
-<a name="API_CreateMemory"></a>
 
 Creates a new Amazon Bedrock AgentCore Memory resource.
 

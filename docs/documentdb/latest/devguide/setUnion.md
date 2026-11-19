@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/setUnion.html
 ---
 
 # $setUnion
-<a name="setUnion"></a>
 
 The `$setUnion` aggregation operator in Amazon DocumentDB is used to combine two or more sets of values and return a set that contains all the unique elements from the input sets. This operator is useful when you need to perform set-based operations on array fields in your documents.
 

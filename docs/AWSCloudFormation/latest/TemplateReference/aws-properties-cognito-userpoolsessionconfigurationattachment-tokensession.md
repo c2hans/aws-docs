@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolSessionConfigurationAttachment TokenSession
-<a name="aws-properties-cognito-userpoolsessionconfigurationattachment-tokensession"></a>
 
 <a name="aws-properties-cognito-userpoolsessionconfigurationattachment-tokensession-description"></a>The `TokenSession` property type specifies Property description not available. for an [AWS::Cognito::UserPoolSessionConfigurationAttachment](aws-resource-cognito-userpoolsessionconfigurationattachment.md).
 

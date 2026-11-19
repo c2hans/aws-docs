@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/security.mana
 ---
 
 # Managing Amazon DocumentDB users
-<a name="security.managing-users"></a>
 
 In Amazon DocumentDB, users authenticate to a cluster in conjunction with a password. Each cluster has primary sign-in credentials that are established during cluster creation.
 

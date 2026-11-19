@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/alias-ct.html
 ---
 
 # Find aliases in AWS CloudTrail logs
-<a name="alias-ct"></a>
 
 You can use an alias to represent an AWS KMS key in an AWS KMS API operation. When you do, the alias and the key ARN of the KMS key are recorded in the AWS CloudTrail log entry for the event. The alias appears in the `requestParameters` field. The key ARN appears in the `resources` field. This is true even when an AWS service uses an AWS managed key in your account.
 

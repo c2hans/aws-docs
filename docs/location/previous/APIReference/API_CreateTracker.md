@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Creat
 ---
 
 # CreateTracker
-<a name="API_CreateTracker"></a>
 
 Creates a tracker resource in your AWS account, which lets you retrieve current and historical location of devices.
 

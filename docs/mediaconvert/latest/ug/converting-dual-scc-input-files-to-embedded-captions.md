@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/converting-dual-s
 ---
 
 # Converting dual SCC input files to embedded captions
-<a name="converting-dual-scc-input-files-to-embedded-captions"></a>
 
 If you want to use two SCC files as your captions input and embed the captions as two output captions channels embedded in your output video stream, set up your captions according to this procedure.
 

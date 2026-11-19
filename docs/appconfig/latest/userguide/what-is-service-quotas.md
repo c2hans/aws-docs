@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-servi
 ---
 
 # AWS AppConfig quotas
-<a name="what-is-service-quotas"></a>
 
 You can view information about AWS AppConfig endpoints and service quotas in the [Amazon Web Services General Reference](https://docs.aws.amazon.com/general/latest/gr/appconfig.html).
 

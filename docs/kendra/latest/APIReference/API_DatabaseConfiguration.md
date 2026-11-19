@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DatabaseC
 ---
 
 # DatabaseConfiguration
-<a name="API_DatabaseConfiguration"></a>
 
 Provides the configuration information to an [Amazon Kendra supported database](https://docs.aws.amazon.com/kendra/latest/dg/data-source-database.html).
 

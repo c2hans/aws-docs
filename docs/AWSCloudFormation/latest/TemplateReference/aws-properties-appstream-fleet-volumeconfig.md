@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::Fleet VolumeConfig
-<a name="aws-properties-appstream-fleet-volumeconfig"></a>
 
 Configuration for the root volume of fleet instances and image builders. This allows you to customize the storage capacity beyond the default 200 GB.
 

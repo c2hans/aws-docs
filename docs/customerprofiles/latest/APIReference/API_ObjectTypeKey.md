@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ObjectTypeKey
-<a name="API_connect-customer-profiles_ObjectTypeKey"></a>
 
 An object that defines the Key element of a ProfileObject. A Key is a special element that can be used to search for a customer profile.
 

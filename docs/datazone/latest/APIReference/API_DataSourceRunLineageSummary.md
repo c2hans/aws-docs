@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DataSou
 ---
 
 # DataSourceRunLineageSummary
-<a name="API_DataSourceRunLineageSummary"></a>
 
 The run lineage summary of a data source.
 

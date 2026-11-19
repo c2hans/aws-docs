@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_InventoryDat
 ---
 
 # InventoryData
-<a name="API_InventoryData"></a>
 
 Describes a Fleet Advisor collector inventory.
 

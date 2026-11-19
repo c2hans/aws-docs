@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-kinesis-parame
 ---
 
 # Lambda parameters for Amazon Kinesis Data Streams event source mappings
-<a name="services-kinesis-parameters"></a>
 
 All Lambda event source mappings share the same [CreateEventSourceMapping](https://docs.aws.amazon.com/lambda/latest/api/API_CreateEventSourceMapping.html) and [UpdateEventSourceMapping](https://docs.aws.amazon.com/lambda/latest/api/API_UpdateEventSourceMapping.html) API operations. However, only some of the parameters apply to Kinesis.
 

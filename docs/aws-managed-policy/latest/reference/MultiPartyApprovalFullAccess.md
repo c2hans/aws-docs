@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Mult
 ---
 
 # MultiPartyApprovalFullAccess
-<a name="MultiPartyApprovalFullAccess"></a>
 
 **Description**: Provides full access to Multi-party approval. This policy also includes related permissions to AWS Organizations and AWS IAM Identity for managing approval teams and identity sources.
 

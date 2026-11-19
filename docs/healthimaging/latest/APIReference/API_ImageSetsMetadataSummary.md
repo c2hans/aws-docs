@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Im
 ---
 
 # ImageSetsMetadataSummary
-<a name="API_ImageSetsMetadataSummary"></a>
 
 Summary of the image set metadata.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/revi
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 |  Date  |  Change  |
 | --- | --- |

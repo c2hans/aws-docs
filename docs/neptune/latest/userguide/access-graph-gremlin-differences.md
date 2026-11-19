@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Gremlin standards compliance in Amazon Neptune
-<a name="access-graph-gremlin-differences"></a>
 
 The following sections provide an overview of the Neptune implementation of Gremlin and how it differs from the Apache TinkerPop implementation.
 

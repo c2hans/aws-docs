@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Sta
 ---
 
 # StageState
-<a name="API_StageState"></a>
 
 Represents information about the state of the stage.
 

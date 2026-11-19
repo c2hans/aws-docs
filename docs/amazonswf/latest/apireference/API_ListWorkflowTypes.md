@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ListWo
 ---
 
 # ListWorkflowTypes
-<a name="API_ListWorkflowTypes"></a>
 
 Returns information about workflow types in the specified domain. The results may be split into multiple pages that can be retrieved by making the call repeatedly.
 

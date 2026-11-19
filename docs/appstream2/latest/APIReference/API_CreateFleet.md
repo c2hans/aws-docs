@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateFleet
-<a name="API_CreateFleet"></a>
 
 Creates a fleet. A fleet consists of streaming instances that your users access for their applications and desktops.
 

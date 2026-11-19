@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Out
 ---
 
 # OutputResources
-<a name="API_OutputResources"></a>
 
 The resources produced by this image.
 

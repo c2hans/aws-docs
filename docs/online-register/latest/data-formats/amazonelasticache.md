@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon ElastiCache
-<a name="amazonelasticache"></a>
 
 Amazon ElastiCache provides the following APIs for data retrieval.
 

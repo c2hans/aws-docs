@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 ---
 
 # Migrating bulky Oracle databases to AWS for cross-platform environments
-<a name="introduction"></a>
 
 *Incheol Roh, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MemoryDbReservedInstances
-<a name="API_CostOptimizationHub_MemoryDbReservedInstances"></a>
 
 The MemoryDB reserved instances recommendation details.
 

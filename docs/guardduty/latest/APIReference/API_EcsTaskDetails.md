@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_EcsTas
 ---
 
 # EcsTaskDetails
-<a name="API_EcsTaskDetails"></a>
 
 Contains information about the task in an ECS cluster.
 

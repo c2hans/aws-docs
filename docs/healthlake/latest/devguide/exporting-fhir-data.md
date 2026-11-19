@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/exporting-fhi
 ---
 
 # Exporting FHIR data with AWS HealthLake
-<a name="exporting-fhir-data"></a>
 
 Use native AWS HealthLake actions to start, describe, and list FHIR export jobs. You can queue export jobs. The asynchronous export jobs are processed in a FIFO (First In First Out) manner. You can queue jobs the same way you start export jobs. If one is in progress, it will simply queue up. You can create, read, update, or delete FHIR resources while an export job is in progress.
 

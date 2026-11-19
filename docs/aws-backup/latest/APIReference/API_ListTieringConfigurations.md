@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListT
 ---
 
 # ListTieringConfigurations
-<a name="API_ListTieringConfigurations"></a>
 
 Returns a list of tiering configurations.
 

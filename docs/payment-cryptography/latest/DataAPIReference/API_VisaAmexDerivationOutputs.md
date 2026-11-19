@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # VisaAmexDerivationOutputs
-<a name="API_VisaAmexDerivationOutputs"></a>
 
 The attributes values used for Amex and Visa derivation methods.
 

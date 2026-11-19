@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/identities
 ---
 
 # Set up your workforce in IAM Identity Center
-<a name="identities"></a>
 
 IAM Identity Center is the AWS solution for connecting your workforce users to AWS managed applications such as Kiro and AWS Quick, and other AWS resources. You can connect your existing identity provider and synchronize users and groups from your directory, or create and manage your users directly in IAM Identity Center.
 

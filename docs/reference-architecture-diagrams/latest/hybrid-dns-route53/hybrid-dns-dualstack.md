@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/h
 ---
 
 # Hybrid DNS Resolution with Amazon Route 53 Resolver Endpoints (Dual-Stack)
-<a name="hybrid-dns-dualstack"></a>
 
 Publication date: **January 17, 2025 ([Diagram history](#hdnsd-diagram-history))**
 

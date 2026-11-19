@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerO
 ---
 
 # ContainerOverrides
-<a name="API_ContainerOverrides"></a>
 
 The overrides that should be sent to a container.
 

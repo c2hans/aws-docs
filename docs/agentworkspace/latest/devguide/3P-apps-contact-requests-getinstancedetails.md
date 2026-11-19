@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get the instance details for a contact in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-getinstancedetails"></a>
 
 Returns the AWS Region and the origin (URL scheme, host, and port) of the Connect Customer instance that handles the given contact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # TagDescription
-<a name="API_TagDescription"></a>
 
 The tags associated with a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_CreateConnector.htm
 ---
 
 # CreateConnector
-<a name="API_CreateConnector"></a>
 
 Creates a connector using the specified properties.
 

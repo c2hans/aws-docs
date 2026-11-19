@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingSessionModelConfig
-<a name="API_TrainingSessionModelConfig"></a>
 
 The configuration for the base model used in a training session.
 

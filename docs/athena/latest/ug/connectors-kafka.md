@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-kafka.html
 ---
 
 # Amazon Athena Apache Kafka connector
-<a name="connectors-kafka"></a>
 
 The Amazon Athena connector for Apache Kafka enables Amazon Athena to run SQL queries on your Apache Kafka topics. Use this connector to view [Apache Kafka](https://kafka.apache.org/) topics as tables and messages as rows in Athena.
 

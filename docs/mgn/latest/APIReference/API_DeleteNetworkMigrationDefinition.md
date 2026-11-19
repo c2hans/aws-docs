@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteNetwor
 ---
 
 # DeleteNetworkMigrationDefinition
-<a name="API_DeleteNetworkMigrationDefinition"></a>
 
 Deletes a network migration definition. This operation removes the migration definition and all associated metadata.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # RegistrationMetadataItem
-<a name="API_RegistrationMetadataItem"></a>
 
 Reserved for internal use.
 

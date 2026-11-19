@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Disable.ht
 ---
 
 # Disable
-<a name="API_Disable"></a>
 
 Disables Amazon Inspector scans for one or more AWS accounts. Disabling all scan types in an account disables the Amazon Inspector service.
 

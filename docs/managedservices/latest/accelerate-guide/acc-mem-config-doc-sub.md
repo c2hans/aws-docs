@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Accelerate Configuration profile: pseudoparameter substitution
-<a name="acc-mem-config-doc-sub"></a>
 
 In either of the configuration profiles, you can specify pseudoparameters that are substituted in place as follows:
 + Global - anywhere in the profile:

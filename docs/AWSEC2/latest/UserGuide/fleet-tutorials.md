@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/fleet-tutorials.
 ---
 
 # Tutorials for EC2 Fleet
-<a name="fleet-tutorials"></a>
 
 There are different ways to configure an EC2 Fleet. The configuration you choose depends on your specific use case.
 

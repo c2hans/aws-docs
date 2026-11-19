@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-customiza
 ---
 
 # Stop a model customization job
-<a name="model-customization-stop"></a>
 
 You can stop an Amazon Bedrock model customization job while it's in progress. Choose the tab for your preferred method, and then follow the steps:
 

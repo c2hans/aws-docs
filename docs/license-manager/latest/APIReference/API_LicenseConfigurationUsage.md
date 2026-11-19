@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # LicenseConfigurationUsage
-<a name="API_LicenseConfigurationUsage"></a>
 
 Details about the usage of a resource associated with a license configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Lambda Architecture
-<a name="lambda-architecture-planning"></a>
 
 This cost-optimized serverless architecture is ideal for most image transformation workloads with moderate performance requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_InforNexusM
 ---
 
 # InforNexusMetadata
-<a name="API_InforNexusMetadata"></a>
 
  The connector metadata specific to Infor Nexus.
 

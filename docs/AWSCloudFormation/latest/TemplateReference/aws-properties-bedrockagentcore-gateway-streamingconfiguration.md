@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Gateway StreamingConfiguration
-<a name="aws-properties-bedrockagentcore-gateway-streamingconfiguration"></a>
 
 The streaming configuration for an MCP gateway. This structure defines settings that control response streaming behavior.
 

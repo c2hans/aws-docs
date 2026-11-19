@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedExecution
-<a name="API_DescribedExecution"></a>
 
 The details for an execution object.
 

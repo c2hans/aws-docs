@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/programm
 ---
 
 # Using the AWS SDK for Ruby
-<a name="programming"></a>
 
 This section provides information about developing software with the AWS SDK for Ruby, including how to use some of the SDK’s advanced features.
 

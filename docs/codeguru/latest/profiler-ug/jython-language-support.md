@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/jython-langu
 ---
 
 # Jython
-<a name="jython-language-support"></a>
 
 You can add support for the CodeGuru Profiler agent into your Jython application by adding the following lines into your startup or `main` function.
 

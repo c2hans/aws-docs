@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisLogExport
-<a name="API_AnalysisLogExport"></a>
 
 An export of the redacted Apache Spark logs for a protected query.
 

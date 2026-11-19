@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/inboun
 ---
 
 # Configure inbound JWT authorizer
-<a name="inbound-jwt-authorizer"></a>
 
 The inbound authorizer authenticates and authorizes incoming OAuth 2.0 API requests to AgentCore Runtime and AgentCore Gateway. It validates JSON Web Tokens (JWTs) before allowing access to agents or gateways. The authorizer is Identity Provider (IdP) agnostic and works with any OAuth 2.0 compatible identity provider. When AgentCore Runtime or AgentCore Gateway receives an inbound request, the authorizer will use the configured discovery URL to fetch the public keys and authorization server endpoint to perform the JWT validation. You can configure the authorizer based on your IdP and allowed authorization scopes or claims.
 

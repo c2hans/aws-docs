@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_VPCEC
 ---
 
 # VPCEConfiguration
-<a name="API_VPCEConfiguration"></a>
 
 Represents an Amazon Virtual Private Cloud (VPC) endpoint configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/s3-admin-setup.ht
 ---
 
 # Administrator setup
-<a name="s3-admin-setup"></a>
 
 Before users can create Amazon S3 integrations and knowledge bases, an AWS Quick administrator must complete the following setup tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZoneSageMakerProvisioningRolePolicy
-<a name="AmazonDataZoneSageMakerProvisioningRolePolicy"></a>
 
 **Description**: The AmazonDataZoneSageMakerProvisioningRolePolicy policy grants Amazon DataZone the permissions required to interoperate with Amazon SageMaker.
 

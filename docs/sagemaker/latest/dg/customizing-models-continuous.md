@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-c
 ---
 
 # Continuous customization
-<a name="customizing-models-continuous"></a>
 
 With **continuous customization**, you can build on a previously customized model by applying additional training — either with a *different technique* or the *same technique* with new data. For example, start with [SFT](customizing-models-sft.md) to teach domain knowledge, then apply [DPO](customizing-models-dpo.md) to align with user preferences, then apply [RLVR](customizing-models-rft.md) to improve factual accuracy.
 

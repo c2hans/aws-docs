@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_G
 ---
 
 # GetKey
-<a name="API_kvs_GetKey"></a>
 
 Returns a key-value pair.
 

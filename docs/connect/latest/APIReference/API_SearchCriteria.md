@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchCr
 ---
 
 # SearchCriteria
-<a name="API_SearchCriteria"></a>
 
 A structure of search criteria to be used to return contacts.
 

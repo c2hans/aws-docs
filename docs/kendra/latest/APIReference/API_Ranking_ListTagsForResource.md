@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Ranking_L
 ---
 
 # ListTagsForResource
-<a name="API_Ranking_ListTagsForResource"></a>
 
 Gets a list of tags associated with a specified resource. A rescore execution plan is an example of a resource that can have tags associated with it.
 

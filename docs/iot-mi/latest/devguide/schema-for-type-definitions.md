@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/schema-for-type-d
 ---
 
 # Schema for type definitions
-<a name="schema-for-type-definitions"></a>
 
 The following sections detail the schema used for type definitions.
 

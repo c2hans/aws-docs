@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SummaryMemoryStrategyInput
-<a name="API_SummaryMemoryStrategyInput"></a>
 
 Input for creating a summary memory strategy.
 

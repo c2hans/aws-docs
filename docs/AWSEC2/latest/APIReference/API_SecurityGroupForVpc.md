@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecurityG
 ---
 
 # SecurityGroupForVpc
-<a name="API_SecurityGroupForVpc"></a>
 
 A security group that can be used by interfaces in the VPC.
 

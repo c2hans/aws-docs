@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 ---
 
 # Amazon CloudFront KeyValueStore
-<a name="kvs-with-functions"></a>
 
 CloudFront KeyValueStore is a secure, global, low-latency key value datastore that allows read access from within [CloudFront Functions](cloudfront-functions.md), enabling advanced customizable logic at the CloudFront edge locations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/data-prep-creating
 ---
 
 # Creating a schema and a dataset
-<a name="data-prep-creating-datasets"></a>
 
 After you [create a dataset group](data-prep-ds-group.md), you are ready to create an Amazon Personalize schema and a dataset for each type of data you are importing. A *schema* tells Amazon Personalize about the structure of your data and allows Amazon Personalize to parse the data. When you create a schema in Amazon Personalize, you use the JSON file you created in [Creating schema JSON files for Amazon Personalize schemas](how-it-works-dataset-schema.md).
 

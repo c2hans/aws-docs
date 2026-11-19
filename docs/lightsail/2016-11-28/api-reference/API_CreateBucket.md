@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateBucket
-<a name="API_CreateBucket"></a>
 
 Creates an Amazon Lightsail bucket.
 

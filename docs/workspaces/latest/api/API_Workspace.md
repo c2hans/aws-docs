@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_Workspace.html
 ---
 
 # Workspace
-<a name="API_Workspace"></a>
 
 Describes a WorkSpace.
 

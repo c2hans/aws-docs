@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/a
 ---
 
 # Simple single zone architecture with an internet gateway using AWS Network Firewall
-<a name="arch-single-zone-igw"></a>
 
 This topic provides a high-level view of a simple VPC configuration using an internet gateway and AWS Network Firewall. It describes the basic route table modifications that are required to use the firewall.
 

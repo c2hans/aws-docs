@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/what-is.html
 ---
 
 # What is Amazon Textract?
-<a name="what-is"></a>
 
 Amazon Textract helps you add document text detection and analysis to your applications. Using Amazon Textract, you can do the following:
 + Detect typed and handwritten text in a variety of documents, including financial reports, medical records, and tax forms.

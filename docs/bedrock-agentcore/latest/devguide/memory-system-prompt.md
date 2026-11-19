@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # System prompt for semantic memory strategy
-<a name="memory-system-prompt"></a>
 
 The semantic strategy includes instructions and output schemas in the default prompts for the extraction and consolidation steps.
 

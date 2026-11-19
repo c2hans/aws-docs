@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Moni
 ---
 
 # MonitronServiceRolePolicy
-<a name="MonitronServiceRolePolicy"></a>
 
 **Description**: Policy for AWS Monitron service linked role granting access to required customer resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/update-xks-key
 ---
 
 # Edit external key store properties
-<a name="update-xks-keystore"></a>
 
 You can edit selected properties of an existing external key store.
 
@@ -78,7 +77,7 @@ Use the `CustomKeyStoreId` parameter to identify the external key store. Use the
 
 The examples in this section use the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/), but you can use any supported programming language.
 
-Before you begin, [if necessary](#update-xks-keystore), [disconnect the external key store](xks-connect-disconnect.md) from its external key store proxy. After updating, if necessary, you can [reconnect the external key store](xks-connect-disconnect.md) to its external key store proxy. You can leave the external key store in the disconnected state, but you must reconnect it before you can create new KMS keys in the key store or use existing KMS keys in the key store for cryptographic operations.
+Before you begin, [if necessary](update-xks-keystore.md), [disconnect the external key store](xks-connect-disconnect.md) from its external key store proxy. After updating, if necessary, you can [reconnect the external key store](xks-connect-disconnect.md) to its external key store proxy. You can leave the external key store in the disconnected state, but you must reconnect it before you can create new KMS keys in the key store or use existing KMS keys in the key store for cryptographic operations.
 
 **Note**
 If you use AWS CLI version 1.0, run the following command before specifying a parameter with an HTTP or HTTPS value, such as the `XksProxyUriEndpoint` parameter.

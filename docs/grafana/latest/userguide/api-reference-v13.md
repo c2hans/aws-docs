@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/api-reference-v
 ---
 
 # Grafana version 13 API reference
-<a name="api-reference-v13"></a>
 
 You can use Grafana HTTP APIs with Amazon Managed Grafana workspaces. The following sections describe how to use the APIs, and then list which Grafana APIs are supported.
 

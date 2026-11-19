@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/delete-dat
 ---
 
 # Delete a data stream
-<a name="delete-data-streams-method"></a>
 
  When a property is removed from an asset model, AWS IoT SiteWise deletes the properties and their data streams from all assets that are managed by the asset model. It also deletes all properties and their data streams of an asset when the asset is deleted. If a data stream data must be preserved, it must be disassociated from the asset property before it is deleted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-config
 ---
 
 # Configuring custom start commands with a Procfileon Elastic Beanstalk
-<a name="nodejs-configuration-procfile"></a>
 
 You can include a file that's called `Procfile` at the root of your source bundle to specify the command that starts your application.
 

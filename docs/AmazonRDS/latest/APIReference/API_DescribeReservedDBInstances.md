@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeReservedDBInstances
-<a name="API_DescribeReservedDBInstances"></a>
 
 Returns information about reserved DB instances for this account, or about a specified reserved DB instance.
 

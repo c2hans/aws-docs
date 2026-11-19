@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/what-is-flow-gen.
 ---
 
 # General MediaPackage live processing flow
-<a name="what-is-flow-gen"></a>
 
 The following outlines the general flow of live content in MediaPackage:
 

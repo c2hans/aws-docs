@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_RedirectAllReque
 ---
 
 # RedirectAllRequestsTo
-<a name="API_RedirectAllRequestsTo"></a>
 
 Specifies the redirect behavior of all requests to a website endpoint of an Amazon S3 bucket.
 

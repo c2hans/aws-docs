@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Using Python Pika with Amazon MQ for RabbitMQ
-<a name="amazon-mq-rabbitmq-pika"></a>
 
  The following tutorial shows how you can set up a [Python Pika](https://github.com/pika/pika) client with TLS configured to connect to an Amazon MQ for RabbitMQ broker. Pika is a Python implementation of the AMQP 0-9-1 protocol for RabbitMQ. This tutorial guides you through installing Pika, declaring a queue, setting up a publisher to send messages to the broker's default exchange, and setting up a consumer to receive messages from the queue.
 

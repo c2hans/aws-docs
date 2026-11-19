@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # FixedModeScheduleActionStartSettings
-<a name="API_FixedModeScheduleActionStartSettings"></a>
 
 Sets the time at which a schedule action runs once. This is a type of ScheduleActionStartConfiguration.
 

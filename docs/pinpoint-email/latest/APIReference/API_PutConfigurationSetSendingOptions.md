@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_P
 ---
 
 # PutConfigurationSetSendingOptions
-<a name="API_PutConfigurationSetSendingOptions"></a>
 
 Enable or disable email sending for messages that use a particular configuration set in a specific AWS Region.
 

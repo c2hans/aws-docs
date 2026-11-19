@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/pii-redaction-outpu
 ---
 
 # Example PII redaction and identification output
-<a name="pii-redaction-output"></a>
 
 The following examples show redacted output from batch and streaming jobs, and PII identification from a streaming job.
 

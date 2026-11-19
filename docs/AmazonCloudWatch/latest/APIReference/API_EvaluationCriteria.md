@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # EvaluationCriteria
-<a name="API_EvaluationCriteria"></a>
 
 The evaluation criteria for an alarm. This is a union type that currently supports `PromQLCriteria`.
 

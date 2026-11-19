@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # AWS IAM credentials
-<a name="keys-profiles-credentials"></a>
 
 AWS IAM credentials authenticate with your AWS account through locally stored access keys.
 

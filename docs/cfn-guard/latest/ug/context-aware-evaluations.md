@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cfn-guard/latest/ug/context-aware-evalua
 ---
 
 # Writing clauses to perform context-aware evaluations
-<a name="context-aware-evaluations"></a>
 
 AWS CloudFormation Guard clauses are evaluated against hierarchical data. The Guard evaluation engine resolves queries against incoming data by following hierarchical data as specified, using a simple dotted notation. Frequently, multiple clauses are needed to evaluate against a map of data or a collection. Guard provides a convenient syntax to write such clauses. The engine is contextually aware and uses the corresponding data associated for evaluations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetControlLayoutConfiguration
-<a name="API_SheetControlLayoutConfiguration"></a>
 
 The configuration that determines the elements and canvas size options of sheet control.
 

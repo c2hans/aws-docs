@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/acctinfo.h
 ---
 
 # Accessing your AWS account, organization, service quota, and billing information in the AWS Management Console
-<a name="acctinfo"></a>
 
 If you have the necessary permissions, you can access information about your AWS account, service quotas, organization, and billing information from the console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSCOST03-BP01 Evaluate forecasting for your workloads
-<a name="aoscost03-bp01"></a>
 
  Reduce costs and improve predictability by setting up Reserved Instances for consistent workloads over one to three years, which can result in significant cost savings.
 

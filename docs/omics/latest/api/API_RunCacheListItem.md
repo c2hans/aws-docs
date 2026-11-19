@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_RunCacheListItem.ht
 ---
 
 # RunCacheListItem
-<a name="API_RunCacheListItem"></a>
 
 List entry for one run cache.
 

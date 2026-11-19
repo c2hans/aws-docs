@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CreateM
 ---
 
 # CreateMultiRegionCluster
-<a name="API_CreateMultiRegionCluster"></a>
 
 Creates a new multi-Region cluster.
 

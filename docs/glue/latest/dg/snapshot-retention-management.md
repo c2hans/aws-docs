@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/snapshot-retention-manage
 ---
 
 # Snapshot retention optimization
-<a name="snapshot-retention-management"></a>
 
 Apache Iceberg snapshot retention feature allows users to query historical data at specific points in time and revert unwanted modifications to their tables. In the AWS Glue Data Catalog, snapshot retention configuration controls how long these snapshots (versions of the table data) are kept before being expired and removed. This helps manage storage costs and metadata overhead by automatically removing older snapshots based on a configured retention period or maximum number of snapshots to keep.
 

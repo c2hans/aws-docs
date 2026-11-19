@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-kpl-integrati
 ---
 
 # Integrate the KPL with producer code
-<a name="kinesis-kpl-integration"></a>
 
 The Amazon Kinesis Producer Library (KPL) runs in a separate process, and communicates with your parent user process using IPC. This architecture is sometimes called a [microservice](http://en.wikipedia.org/wiki/Microservices), and is chosen for two main reasons:
 

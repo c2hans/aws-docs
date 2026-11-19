@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Record.
 ---
 
 # Record
-<a name="API_Record"></a>
 
 The unit of data in a Firehose stream.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/create-index-access-con
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Using a JSON Web Token (JWT) with a public key
-<a name="create-index-access-control-tokens-jwtpublic"></a>
 
 The following examples show how to use JSON Web Token (JWT) with a public key for user access control when you create an index. For more information about JWT, see [jwt.io](http://jwt.io).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_EndpointC
 ---
 
 # EndpointConfig
-<a name="API_EndpointConfig"></a>
 
 The configuration details for an endpoint, which defines how to connect to and communicate with external services.
 

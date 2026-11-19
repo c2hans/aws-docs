@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/ios-publish
 ---
 
 # How iOS Chooses Camera Resolution and Frame Rate
-<a name="ios-publish-subscribe-resolution-framerate"></a>
 
 The camera managed by the broadcast SDK optimizes its resolution and frame rate (frames-per-second, or FPS) to minimize heat production and energy consumption. This section explains how the resolution and frame rate are selected to help host applications optimize for their use cases.
 

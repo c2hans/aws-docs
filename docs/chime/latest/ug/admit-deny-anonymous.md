@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/admit-deny-anonymous.htm
 ---
 
 # Admitting or denying anonymous users
-<a name="admit-deny-anonymous"></a>
 
 Meeting hosts, moderators, delegates, and authorized attendees can admit anonymous users or prevent them from attending.
 

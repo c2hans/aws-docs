@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetEbsEnc
 ---
 
 # GetEbsEncryptionByDefault
-<a name="API_GetEbsEncryptionByDefault"></a>
 
 Describes whether EBS encryption by default is enabled for your account in the current Region.
 

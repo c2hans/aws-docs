@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetNetworkTelemetry
-<a name="API_GetNetworkTelemetry"></a>
 
 Gets the network telemetry of the specified global network.
 

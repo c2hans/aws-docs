@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_EcsTas
 ---
 
 # EcsTask
-<a name="API_EcsTask"></a>
 
 Contains information about Amazon ECS task involved in a GuardDuty finding, including task definition and container identifiers.
 

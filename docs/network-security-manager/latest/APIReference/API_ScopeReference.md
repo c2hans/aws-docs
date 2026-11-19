@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ScopeReference
-<a name="API_ScopeReference"></a>
 
 A reference to a scope in a create or update request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetReputa
 ---
 
 # GetReputationEntity
-<a name="API_GetReputationEntity"></a>
 
 Retrieve information about a specific reputation entity, including its reputation management policy, customer-managed status, AWS Amazon SES-managed status, and aggregate sending status.
 

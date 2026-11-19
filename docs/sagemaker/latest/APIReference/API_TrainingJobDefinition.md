@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingJobDefinition
-<a name="API_TrainingJobDefinition"></a>
 
 Defines the input needed to run a training job using the algorithm.
 

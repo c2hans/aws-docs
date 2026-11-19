@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-action
 ---
 
 # Chatting about your resources with Amazon Q Developer
-<a name="chat-actions"></a>
 
 This conversational experience is now part of the AWS assistant.
 

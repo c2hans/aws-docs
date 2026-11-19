@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-european
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Authors of this document include:
 + J.D. Bean, Principal Architect, AWS

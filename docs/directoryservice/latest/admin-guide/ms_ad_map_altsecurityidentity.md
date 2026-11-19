@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Enable Public Key Cryptography for Initial Authentication (PKINIT) for your AWS Managed Microsoft AD users
-<a name="ms_ad_map_altsecurityidentity"></a>
 
 AWS Managed Microsoft AD directories use strong certificate binding by default, which requires explicit mapping between certificates and AD objects. The following mappings are considered strong for AWS Managed Microsoft AD:
 + `altSecurityIdentities` Issuer and Serial Number

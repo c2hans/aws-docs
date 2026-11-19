@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-backup
 ---
 
 # AWS Backup events
-<a name="events-ref-backup"></a>
 
 AWS Backup sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

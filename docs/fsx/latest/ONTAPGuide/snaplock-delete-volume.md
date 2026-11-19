@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/snaplock-delete-vo
 ---
 
 # Deleting SnapLock volumes
-<a name="snaplock-delete-volume"></a>
 
 This section explains how to delete a SnapLock volume.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/referen
 ---
 
 # AWS Systems Manager reference
-<a name="reference"></a>
 
 The following information and topics can help you better implement AWS Systems Manager solutions.
 

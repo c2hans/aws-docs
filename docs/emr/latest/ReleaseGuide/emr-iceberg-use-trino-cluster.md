@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-iceberg-use-
 ---
 
 # Use an Iceberg cluster with Trino
-<a name="emr-iceberg-use-trino-cluster"></a>
 
 Starting with Amazon EMR version 6.6.0, you can use Iceberg with your Trino cluster.
 

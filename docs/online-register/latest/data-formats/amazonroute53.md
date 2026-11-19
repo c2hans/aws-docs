@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Route 53
-<a name="amazonroute53"></a>
 
 Amazon Route 53 provides the following APIs for data retrieval.
 

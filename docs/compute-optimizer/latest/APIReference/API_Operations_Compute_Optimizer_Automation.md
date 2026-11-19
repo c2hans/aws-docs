@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Compute Optimizer Automation
-<a name="API_Operations_Compute_Optimizer_Automation"></a>
 
 The following actions are supported by Compute Optimizer Automation:
 +  [AssociateAccounts](API_automation_AssociateAccounts.md)

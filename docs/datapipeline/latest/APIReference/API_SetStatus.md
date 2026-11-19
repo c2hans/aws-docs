@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Set
 ---
 
 # SetStatus
-<a name="API_SetStatus"></a>
 
 Requests that the status of the specified physical or logical pipeline objects be updated in the specified pipeline. This update might not occur immediately, but is eventually consistent. The status that can be set depends on the type of object (for example, DataNode or Activity). You cannot perform this operation on `FINISHED` pipelines and attempting to do so returns `InvalidRequestException`.
 

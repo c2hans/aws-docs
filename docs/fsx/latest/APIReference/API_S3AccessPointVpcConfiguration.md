@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_S3AccessPoin
 ---
 
 # S3AccessPointVpcConfiguration
-<a name="API_S3AccessPointVpcConfiguration"></a>
 
 If included, Amazon S3 restricts access to this access point to requests from the specified virtual private cloud (VPC).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_MixedIn
 ---
 
 # MixedInstancesPolicy
-<a name="API_MixedInstancesPolicy"></a>
 
 Use this structure to launch multiple instance types and configure how capacity is distributed across On-Demand, Spot, and supported Capacity Reservation types within a single Auto Scaling group.
 

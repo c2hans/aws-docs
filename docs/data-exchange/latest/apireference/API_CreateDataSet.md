@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Cr
 ---
 
 # CreateDataSet
-<a name="API_CreateDataSet"></a>
 
 This operation creates a data set.
 

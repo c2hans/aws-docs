@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # KeyUsageFlags
-<a name="API_KeyUsageFlags"></a>
 
 The key usage flags represent the purpose (e.g., encipherment, signature) of the key contained in the certificate.
 

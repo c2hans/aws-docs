@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/migrationguide/mig
 ---
 
 # Step D: Create a Elemental Live backup
-<a name="migrate-worker-backup"></a>
 
 You must create a backup of the data on the node. You back up data using the special lifeboat script.
 

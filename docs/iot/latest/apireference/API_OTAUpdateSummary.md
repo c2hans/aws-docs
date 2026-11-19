@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_OTAUpdateSum
 ---
 
 # OTAUpdateSummary
-<a name="API_OTAUpdateSummary"></a>
 
 An OTA update summary.
 

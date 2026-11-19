@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-
 ---
 
 # Troubleshoot a gateway
-<a name="gateway-troubleshooting"></a>
 
 Use this topic to troubleshoot issues with Amazon ECS Gateway, including service connection failures, gateway route provisioning failures, gateway configuration updates, and connectivity issues.
 
@@ -96,12 +95,12 @@ aws ecs describe-task-definition \
 
 Correct the connector or the task definition so the names match, and then retry the service operation. Check this again after you update a task definition, because a previously valid port name might no longer exist.
 
-### Updating health checks fails with the ROLLING deployment strategy
+### Updating health checks or the deregistration delay fails with the ROLLING deployment strategy
 <a name="gateway-ts-rolling-healthcheck"></a>
 
-Updating a gateway connector's health check settings returns an error stating that target group properties cannot be changed with the `ROLLING` deployment strategy. Changing those settings requires a replacement target group, and a service that uses the `ROLLING` deployment strategy does not support that replacement during an update.
+Updating a gateway connector's health check settings or deregistration delay returns an error stating that target group properties cannot be changed with the `ROLLING` deployment strategy. Changing those settings requires a replacement target group, and a service that uses the `ROLLING` deployment strategy does not support that replacement during an update.
 
-Keep the existing health check settings, or use a blue/green or canary deployment strategy for the change. If you must disconnect and reconnect the service to replace the target group, plan for the removal and recreation of its gateway route and hostname. For connector configuration, see [Connect Amazon ECS services to a gateway](gateway-connect-service.md).
+Keep the existing health check and deregistration delay settings, or use a blue/green or canary deployment strategy for the change. If you must disconnect and reconnect the service to replace the target group, plan for the removal and recreation of its gateway route and hostname. For connector configuration, see [Connect Amazon ECS services to a gateway](gateway-connect-service.md).
 
 ## Gateway route provisioning failures
 <a name="gateway-ts-route-provisioning"></a>
@@ -255,7 +254,7 @@ When requests to a gateway-generated HTTPS hostname time out or fail, check the 
 
    An `ACTIVE` gateway route means that ingress provisioning succeeded. It does not mean that the application targets are healthy.
 
-1. **Check the security groups.** Confirm that the load balancer's inbound security group allows traffic from the intended clients, and that the task security group allows traffic from the load balancer on the container port. When the platform team supplies the gateway's inbound security group, Amazon ECS does not manage its inbound rules.
+1. **Check the security groups.** Confirm that the load balancer's inbound security group allows traffic from the intended clients. Then confirm that the service security group that Amazon ECS attaches to the tasks allows traffic from the load balancer on the container port. When the platform team supplies the gateway's inbound security group, Amazon ECS does not manage its inbound rules.
 
 1. **Check the application and traffic controls.** Verify the container's listening port and health endpoint. If an AWS WAF web ACL is configured, check whether a rule is blocking the request. Use load balancer access logs and CloudWatch metrics to tell load balancer errors apart from application responses.
 

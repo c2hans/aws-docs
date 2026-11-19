@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/granting-view-p
 ---
 
 # Granting permissions on views using the named resource method
-<a name="granting-view-permissions"></a>
 
 The following steps explain how to grant permissions on views by using the named resource method and the **Grant permissions** page. The page is divided into the following sections:
 +  **Principal types** – The IAM users, roles, IAM Identity Center users and groups, AWS accounts, organizations, or organizational units to grant permissions. You can also grant permissions to principals with matching attributes.

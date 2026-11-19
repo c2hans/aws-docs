@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/create-fed-cata
 ---
 
 # Creating a federated catalog using an AWS Glue connection
-<a name="create-fed-catalog-data-source"></a>
 
  To connect the AWS Glue Data Catalog to external data sources, you need to use AWS Glue connections that enable communication with the external data sources. You can create AWS Glue connections using the AWS Glue console, [Create connection](https://docs.aws.amazon.com/glue/latest/webapi/API_CreateConnection.html) API, and Amazon SageMaker Lakehouse console.
 

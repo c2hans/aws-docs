@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationDefinitions
-<a name="API_ListNetworkMigrationDefinitions"></a>
 
 Lists all network migration definitions in the account, with optional filtering.
 

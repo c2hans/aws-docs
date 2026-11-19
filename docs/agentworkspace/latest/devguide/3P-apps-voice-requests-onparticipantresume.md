@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Subscribe to participant resume events in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-onparticipantresume"></a>
 
 Subscribes to events when any participant is taken off hold.
 

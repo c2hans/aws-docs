@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-accounting.ht
 ---
 
 # Slurm accounting in AWS PCS
-<a name="slurm-accounting"></a>
 
 **Note**
 Accounting is supported for Slurm 24.11 or later.

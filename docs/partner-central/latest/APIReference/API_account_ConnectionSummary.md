@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ConnectionSummary
-<a name="API_account_ConnectionSummary"></a>
 
 A summary view of an active connection between partners containing key information.
 

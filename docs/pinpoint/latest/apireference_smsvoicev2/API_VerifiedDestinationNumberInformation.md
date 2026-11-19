@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # VerifiedDestinationNumberInformation
-<a name="API_VerifiedDestinationNumberInformation"></a>
 
 Provides information about the requested verified destintion phone number.
 

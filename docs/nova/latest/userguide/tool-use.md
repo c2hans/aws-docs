@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/tool-use.html
 ---
 
 # Tool use (function calling) with Amazon Nova
-<a name="tool-use"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For information about using tools with Amazon Nova 2, visit [Using tools (function calling)](https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-tools.html).

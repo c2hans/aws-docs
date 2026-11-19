@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Dele
 ---
 
 # DeletePartnerEventSource
-<a name="API_DeletePartnerEventSource"></a>
 
 This operation is used by SaaS partners to delete a partner event source. This operation is not used by AWS customers.
 

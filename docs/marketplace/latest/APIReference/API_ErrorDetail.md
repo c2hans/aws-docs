@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Erro
 ---
 
 # ErrorDetail
-<a name="API_ErrorDetail"></a>
 
 Details about the error.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Certificate did not automatically renew
-<a name="amazon-lightsail-troubleshooting-wp-cert-renewal-lightsail"></a>
 
 Lightsail Setup configures automatic renewal of your Let's Encrypt SSL/TLS certificate. If your website displays a security or certificate error, your certificate might not have renewed automatically.
 

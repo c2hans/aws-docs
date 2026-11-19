@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/dedicated-ip-byo.html
 ---
 
 # Using your own IP addresses to send email using Amazon SES
-<a name="dedicated-ip-byo"></a>
 
 Amazon SES includes a feature called *Bring Your Own IP* (*BYOIP*), which makes it possible to use your own IP addresses to send email through Amazon SES. If you already use a range of IP addresses to send email, you can request that we make your IP range available for sending email through Amazon SES.
 

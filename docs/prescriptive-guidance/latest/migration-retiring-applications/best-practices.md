@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 Choosing to retire applications can be a complex decision, especially during a migration to the AWS Cloud. The following sections provide best practices to use in your decision-making process.
 + [Consider a migration factory approach](#best-practice-1)

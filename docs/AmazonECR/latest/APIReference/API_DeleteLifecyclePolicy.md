@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Delete
 ---
 
 # DeleteLifecyclePolicy
-<a name="API_DeleteLifecyclePolicy"></a>
 
 Deletes the lifecycle policy associated with the specified repository.
 

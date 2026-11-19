@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Automation and tooling
-<a name="automation"></a>
 
 Another core philosophy and practice of DevOps is *automation*. Automation focuses on the setup, configuration, deployment, and support of infrastructure and the applications that run on it. By using automation, you can set up environments more rapidly in a standardized and repeatable manner. The removal of manual processes is key to a successful DevOps strategy. Historically, server configuration and application deployment have been predominantly a manual process. Environments become non-standard, and reproducing an environment when issues arise is difficult.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/scaling-plan
 ---
 
 # Quotas for your scaling plans
-<a name="scaling-plan-quotas"></a>
 
 Your AWS account has the default quotas (previously referred to as limits) related to scaling plans. Unless otherwise noted, each quota is Region-specific. You can request increases for some quotas, and other quotas cannot be increased.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListStackSets
-<a name="API_ListStackSets"></a>
 
 Returns summary information about StackSets that are associated with the user.
 

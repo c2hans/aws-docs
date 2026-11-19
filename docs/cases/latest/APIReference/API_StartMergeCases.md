@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_StartMerge
 ---
 
 # StartMergeCases
-<a name="API_connect-cases_StartMergeCases"></a>
 
 Merges a secondary case into a primary case. The primary case, which you specify in the request URI, remains active. Both cases must belong to the same domain.
 

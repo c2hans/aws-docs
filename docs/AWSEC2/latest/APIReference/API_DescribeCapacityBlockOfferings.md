@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCapacityBlockOfferings
-<a name="API_DescribeCapacityBlockOfferings"></a>
 
 Describes Capacity Block offerings available for purchase in the AWS Region that you're currently using. With Capacity Blocks, you can purchase a specific GPU instance type or EC2 UltraServer for a period of time.
 

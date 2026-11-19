@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/view-access
 ---
 
 # Viewing a data access budget
-<a name="view-access-budget"></a>
 
 You can view a data access budget from the **Tables** tab or from the table details page.
 

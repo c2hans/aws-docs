@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ListApproval
 ---
 
 # ListApprovalTeams
-<a name="API_ListApprovalTeams"></a>
 
 Returns a list of approval teams.
 

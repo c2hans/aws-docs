@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_StartActiveA
 ---
 
 # StartActiveApprovalTeamDeletion
-<a name="API_StartActiveApprovalTeamDeletion"></a>
 
 Starts the deletion process for an active approval team.
 

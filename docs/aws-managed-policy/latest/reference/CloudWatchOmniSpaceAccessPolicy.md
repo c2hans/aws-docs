@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchOmniSpaceAccessPolicy
-<a name="CloudWatchOmniSpaceAccessPolicy"></a>
 
 **Description**: Provides access to manage CloudWatch Omni spaces, view Applications Telemetry, and other Observability and Monitoring features through the new CloudWatch Omni Product
 

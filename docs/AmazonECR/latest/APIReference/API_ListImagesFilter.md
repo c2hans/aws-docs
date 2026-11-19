@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListIm
 ---
 
 # ListImagesFilter
-<a name="API_ListImagesFilter"></a>
 
 An object representing a filter on a [ListImages](API_ListImages.md) operation.
 

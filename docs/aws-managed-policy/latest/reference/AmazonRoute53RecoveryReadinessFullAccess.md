@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53RecoveryReadinessFullAccess
-<a name="AmazonRoute53RecoveryReadinessFullAccess"></a>
 
 **Description**: Provides full access to Amazon Route 53 Recovery Readiness
 

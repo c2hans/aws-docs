@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/cdk-pipeline.html
 ---
 
 # Continuous integration and delivery (CI/CD) using CDK Pipelines
-<a name="cdk-pipeline"></a>
 
 Use the [CDK Pipelines](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.pipelines-readme.html) module from the AWS Construct Library to configure continuous delivery of AWS CDK applications. When you commit your CDK app’s source code into AWS CodeCommit, GitHub, or AWS CodeStar, CDK Pipelines can automatically build, test, and deploy your new version.
 

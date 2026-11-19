@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Databas
 ---
 
 # DatabaseSourceVPCConfiguration
-<a name="API_DatabaseSourceVPCConfiguration"></a>
 
  The structure for details of the VPC Endpoint Service which Firehose uses to create a PrivateLink to the database.
 

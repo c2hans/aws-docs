@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Basic health checks
-<a name="sagemaker-hyperpod-eks-resiliency-basic-health-check"></a>
 
 SageMaker HyperPod performs a set of *basic health checks* on cluster instances during the creation and update of HyperPod clusters. These basic health checks are orchestrator-agnostic, so these checks are applicable regardless of the underlying orchestration platforms supported by SageMaker HyperPod (Amazon EKS or Slurm).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.
 ---
 
 # GetSigningProfile
-<a name="API_GetSigningProfile"></a>
 
 Returns information on a specific signing profile.
 

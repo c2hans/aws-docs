@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Use secondary indexes with DynamoDB Mapper
-<a name="ddb-mapper-secondary-indexes"></a>
 
 A [secondary index](/amazondynamodb/latest/developerguide/SecondaryIndexes.html) lets you query a table using an alternate key. DynamoDB Mapper models an index as **its own item type**: a class describing the attributes projected into the index, with a schema whose keys are the index’s keys. You obtain an [`Index`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.model/-index/index.html) reference from a table and then run [`query`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) and [`scan`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.operations/index.html) operations on it, just as you would on a table.
 

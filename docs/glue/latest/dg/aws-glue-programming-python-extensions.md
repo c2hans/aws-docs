@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-pyth
 ---
 
 # AWS Glue PySpark extensions reference
-<a name="aws-glue-programming-python-extensions"></a>
 
 AWS Glue has created the following extensions to the PySpark Python dialect.
 + [Accessing parameters using `getResolvedOptions`](aws-glue-api-crawler-pyspark-extensions-get-resolved-options.md)

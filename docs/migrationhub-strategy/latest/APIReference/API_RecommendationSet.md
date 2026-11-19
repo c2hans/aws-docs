@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # RecommendationSet
-<a name="API_RecommendationSet"></a>
 
  Contains a recommendation set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/str-helpers-in-u
 ---
 
 # String helpers in util.str
-<a name="str-helpers-in-util-str-js"></a>
 
  `util.str` contains methods to help with common String operations.
 

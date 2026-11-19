@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # SaaS consumers operating on AWS
-<a name="options-aws"></a>
 
 This section discusses connectivity options if both you and your consumers are operating in the AWS Cloud. This scenario offers the largest flexibility because many AWS services natively integrate and because both parties have access to the entire AWS service portfolio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Use MCP sessions with your AgentCore gateway
-<a name="gateway-sessions"></a>
 
 MCP sessions enable stateful interactions between clients and your AgentCore gateway. When sessions are enabled, the gateway generates a unique session identifier during initialization and maintains state across multiple requests, enabling advanced MCP features such as elicitation and sampling.
 

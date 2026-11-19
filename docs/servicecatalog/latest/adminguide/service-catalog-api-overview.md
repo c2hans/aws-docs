@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/service
 ---
 
 # AWS Service Catalog API Overview
-<a name="service-catalog-api-overview"></a>
 
 **Benefits of Using the Service Catalog API**
 

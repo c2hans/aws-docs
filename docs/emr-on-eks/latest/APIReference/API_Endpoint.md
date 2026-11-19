@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Endpo
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 This entity represents the endpoint that is managed by Amazon EMR on EKS.
 

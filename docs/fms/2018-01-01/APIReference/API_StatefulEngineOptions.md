@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Stateful
 ---
 
 # StatefulEngineOptions
-<a name="API_StatefulEngineOptions"></a>
 
 Configuration settings for the handling of the stateful rule groups in a Network Firewall firewall policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/deletin
 ---
 
 # Deleting custom SSM documents
-<a name="deleting-documents"></a>
 
 If you no longer want to use a custom SSM document, you can delete it using the AWS Systems Manager console.
 

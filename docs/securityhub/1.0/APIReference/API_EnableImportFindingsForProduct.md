@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableI
 ---
 
 # EnableImportFindingsForProduct
-<a name="API_EnableImportFindingsForProduct"></a>
 
 Enables the integration of a partner product with Security Hub CSPM. Integrated products send findings to Security Hub CSPM.
 

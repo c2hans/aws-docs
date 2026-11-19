@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/examples-objec
 ---
 
 # Examples of object type mappings in Connect Customer Customer Profiles
-<a name="examples-object-type-mappings"></a>
 
 This topic builds a mapping from the ground up. Each example builds on the one before it.
 

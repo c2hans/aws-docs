@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Transportation and logistics data lake
-<a name="transportation-logistics-data-lake"></a>
 
 Publication date: **March 15, 2020 ([Diagram history](diagram-history.md))**
 

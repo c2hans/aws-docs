@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Environment actions
-<a name="environments-dashboard-actions"></a>
 
 This topic describes the common operations that you can select to perform on your environment from the **Actions** drop-down menu on the environment management console.
 

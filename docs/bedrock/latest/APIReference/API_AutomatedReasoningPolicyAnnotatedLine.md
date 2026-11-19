@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyAnnotatedLine
-<a name="API_AutomatedReasoningPolicyAnnotatedLine"></a>
 
 Represents a single line of text from a source document, annotated with its line number for precise referencing.
 

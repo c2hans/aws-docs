@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/v
 ---
 
 # Using a Security VPC for Inspecting SDDC Traffic
-<a name="vmware-security-vpc"></a>
 
 Publication date: **March 10, 2022 ([Diagram history](#vmsec-diagram-history))**
 

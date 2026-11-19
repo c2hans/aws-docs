@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_PutManagedRu
 ---
 
 # PutManagedRuleSetVersions
-<a name="API_PutManagedRuleSetVersions"></a>
 
 Defines the versions of your managed rule set that you are offering to the customers. Customers see your offerings as managed rule groups with versioning.
 

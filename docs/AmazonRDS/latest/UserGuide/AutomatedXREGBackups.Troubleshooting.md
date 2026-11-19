@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AutomatedXREG
 ---
 
 # Troubleshooting stopped cross-Region automated backups
-<a name="AutomatedXREGBackups.Troubleshooting"></a>
 
  Amazon RDS automatically stops cross-Region automated backup replication under specific circumstances to protect your data and maintain compliance with AWS operational requirements.
 

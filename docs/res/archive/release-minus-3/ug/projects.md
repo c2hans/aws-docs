@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/projects.
 ---
 
 # Projects
-<a name="projects"></a>
 
 Projects form a boundary for virtual desktops, teams, and budgets. When you create a project, you define its settings, such as the name, description, and environment configuration. Projects typically include one or more environments, which can be customized to meet the specific requirements of your project, such as the type and size of the compute resources, the software stack, and the networking configuration.
 

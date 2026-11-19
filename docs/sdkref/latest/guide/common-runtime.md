@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/common-runtime.html
 ---
 
 # AWS Common Runtime (CRT) libraries
-<a name="common-runtime"></a>
 
 The AWS Common Runtime (CRT) libraries are a base library of the SDKs. The CRT is a modular family of independent packages, written in C. Each package provides good performance and minimal footprint for different required functionalities. These functionalities are common and shared across all SDKs providing better code reuse, optimization, and accuracy. The packages are:
 + [`awslabs/aws-c-auth`](https://github.com/awslabs/aws-c-auth): AWS client-side authentication (standard credential providers and signing (sigv4))

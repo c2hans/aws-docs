@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DependencyCounts
-<a name="API_DependencyCounts"></a>
 
 The number of dependencies for the consumer.
 

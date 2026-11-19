@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenGenericDataNonModel
-<a name="API_CodegenGenericDataNonModel"></a>
 
 Describes a non-model in a generic data schema.
 

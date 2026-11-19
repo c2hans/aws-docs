@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SkillMdDefinition
-<a name="API_SkillMdDefinition"></a>
 
 The skill markdown definition for an agent skills descriptor.
 

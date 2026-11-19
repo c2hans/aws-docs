@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FilePart
-<a name="API_agent-runtime_FilePart"></a>
 
 Contains intermediate response for code interpreter if any files have been generated.
 

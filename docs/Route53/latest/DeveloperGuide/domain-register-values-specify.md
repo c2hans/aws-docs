@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-reg
 ---
 
 # Values that you specify when you register or transfer a domain
-<a name="domain-register-values-specify"></a>
 
 **Note**
 Route 53 has updated the domains console. During the transition period, you can continue to use the old console, or use the new console. Most of the information returned by Route 53 is the same for both consoles. The differences are noted in the following list.

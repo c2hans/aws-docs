@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_LF
 ---
 
 # LFTagPolicyDetails
-<a name="API_LFTagPolicyDetails"></a>
 
 Details about the LF-tag policy.
 

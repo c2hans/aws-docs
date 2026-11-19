@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/getting-s
 ---
 
 # Events and requests in Connect Customer agent workspace
-<a name="getting-started-events-and-requests"></a>
 
 App developers can easily create applications that seamlessly integrate into the agent workspace experience in the Connect Customer agent workspace with the event and request functionality natively supported by [Connect Customer SDK](https://github.com/amazon-connect/AmazonConnectSDK). You can build an app by leveraging the [Connect Customer SDK](https://github.com/amazon-connect/AmazonConnectSDK) to subscribe to agent/contact events (invoking a particular handler when the event occurs) and make requests to quickly retrieve agent/contact data.
 

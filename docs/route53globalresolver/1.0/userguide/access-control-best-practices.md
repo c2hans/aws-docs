@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/acce
 ---
 
 # Access control best practices and security considerations
-<a name="access-control-best-practices"></a>
 
 Follow these best practices to maintain secure and effective access controls for your Amazon Route 53 Global Resolver infrastructure.
 

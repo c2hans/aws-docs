@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-lo
 ---
 
 # EventBridge Pipes execution steps
-<a name="eb-pipes-logs-execution-steps"></a>
 
 Understanding the flow of pipe execution steps can aid you in troubleshooting or debugging your pipe's performance using logs.
 

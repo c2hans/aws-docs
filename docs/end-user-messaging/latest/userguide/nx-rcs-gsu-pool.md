@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Step 3: Set up a phone pool (optional)
-<a name="nx-rcs-gsu-pool"></a>
 
 For RCS, the sending identity is your AWS RCS Agent, so you can send RCS messages directly to the agent without a phone pool. A phone pool is optional for RCS and is used to enable SMS fallback: you create a pool that contains your AWS RCS Agent together with one or more SMS phone numbers, so that AWS End User Messaging automatically falls back to SMS when RCS delivery is not possible. For more information about creating and managing phone pools, see [Phone pools](nx-features-phone-pools.md). For how fallback works and how to configure it, see [Resiliency](nx-rcs-scale-fallback.md).
 

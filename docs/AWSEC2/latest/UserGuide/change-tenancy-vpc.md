@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-tenancy-v
 ---
 
 # Change the instance tenancy of a VPC
-<a name="change-tenancy-vpc"></a>
 
 You can change the instance tenancy of a virtual private cloud (VPC) from `dedicated` to `default` after you create it. Modifying the instance tenancy of a VPC does not affect the tenancy of any existing instances in the VPC. The next time that you launch an instance in the VPC, it has a tenancy of `default`, unless you specify otherwise during instance launch.
 

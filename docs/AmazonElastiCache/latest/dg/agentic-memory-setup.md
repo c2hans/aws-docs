@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agentic-memo
 ---
 
 # Setting up ElastiCache for Valkey as a vector store for agentic memory
-<a name="agentic-memory-setup"></a>
 
 The following walkthrough shows how to build a memory-enabled AI agent using Mem0 with ElastiCache for Valkey as the vector store.
 

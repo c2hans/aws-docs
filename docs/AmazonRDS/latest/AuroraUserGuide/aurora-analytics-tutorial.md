@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Tutorial: Querying Amazon S3 data
-<a name="aurora-analytics-tutorial"></a>
 
 This tutorial walks you through setting up the analytics feature from scratch and running your first analytical query against Parquet data in Amazon S3. By the end, you will have an Aurora PostgreSQL DB cluster querying Amazon S3 data through standard SQL.
 

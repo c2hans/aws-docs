@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_IpAddr
 ---
 
 # IpAddressDetail
-<a name="API_IpAddressDetail"></a>
 
 Detailed information for the IP addresses assigned to the Global Accelerator.
 

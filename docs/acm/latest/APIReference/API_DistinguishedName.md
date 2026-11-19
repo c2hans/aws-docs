@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_Distinguishe
 ---
 
 # DistinguishedName
-<a name="API_DistinguishedName"></a>
 
 Contains X.500 distinguished name information.
 

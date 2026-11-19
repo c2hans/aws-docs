@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/d
 ---
 
 # Working with Amazon DynamoDB tables the AWS Toolkit for JetBrains
-<a name="dynamodb-tables"></a>
 
 The primary resource of Amazon DynamoDB is a data-base table. The following sections describe how to work with DynamoDB tables from the AWS Toolkit for JetBrains.
 

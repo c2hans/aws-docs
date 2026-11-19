@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/port-configuring-connecti
 ---
 
 # Configuring Port connections
-<a name="port-configuring-connections"></a>
 
 Port connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

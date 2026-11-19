@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ResponseInsp
 ---
 
 # ResponseInspectionHeader
-<a name="API_ResponseInspectionHeader"></a>
 
 Configures inspection of the response header. This is part of the `ResponseInspection` configuration for `AWSManagedRulesATPRuleSet` and `AWSManagedRulesACFPRuleSet`.
 

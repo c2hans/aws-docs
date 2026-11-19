@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Termin
 ---
 
 # TerminologyProperties
-<a name="API_TerminologyProperties"></a>
 
 The properties of the custom terminology.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Validate, scope, and assess impact of alert
-<a name="validate-scope-assess-alert-impact"></a>
 
  During the analysis phase, comprehensive log analysis is performed with the goal to validate alerts, define scope, and assess impact of the possible compromise.
 +  *Validation* of the alert is the entry point of the analysis phase. Incident responders will be looking for log entries from various sources and directly engaging with owners of the affected workload.

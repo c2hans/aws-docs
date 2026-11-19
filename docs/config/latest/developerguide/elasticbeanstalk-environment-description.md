@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/elasticbean
 ---
 
 # elasticbeanstalk-environment-description
-<a name="elasticbeanstalk-environment-description"></a>
 
 Checks if AWS Elastic Beanstalk environments have a description. The rule is NON\_COMPLIANT if configuration.description does not exist or is an empty string.
 

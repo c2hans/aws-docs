@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationHdfs
-<a name="API_UpdateLocationHdfs"></a>
 
 Modifies the following configuration parameters of the Hadoop Distributed File System (HDFS) transfer location that you're using with AWS DataSync.
 

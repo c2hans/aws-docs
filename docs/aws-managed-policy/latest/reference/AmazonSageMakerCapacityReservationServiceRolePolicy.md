@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerCapacityReservationServiceRolePolicy
-<a name="AmazonSageMakerCapacityReservationServiceRolePolicy"></a>
 
 **Description**: This policy grants permissions to Amazon SageMaker Capacity Reservations to publish CloudWatch metrics into customer accounts for utilization visibility.
 

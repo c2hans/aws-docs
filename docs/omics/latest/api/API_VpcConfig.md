@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_VpcConfig.html
 ---
 
 # VpcConfig
-<a name="API_VpcConfig"></a>
 
 VPC configuration for workflow runs.
 

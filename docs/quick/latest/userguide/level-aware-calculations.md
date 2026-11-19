@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/level-aware-calcu
 ---
 
 # Using level-aware calculations in Quick Sight
-<a name="level-aware-calculations"></a>
 
 |  |
 | --- |

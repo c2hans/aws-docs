@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Salesforc
 ---
 
 # SalesforceStandardObjectConfiguration
-<a name="API_SalesforceStandardObjectConfiguration"></a>
 
 Provides the configuration information for indexing a single standard object.
 

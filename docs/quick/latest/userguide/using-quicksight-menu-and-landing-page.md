@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-quicksight-
 ---
 
 # Using the AWS Quick menu and landing page
-<a name="using-quicksight-menu-and-landing-page"></a>
 
 After you sign in to AWS Quick, you see the AWS Quick landing page. This page provides tabs for your analyses, dashboards, folders, data, and more. It also provides a menu bar at the top, with options for the following:
 + Searching AWS Quick

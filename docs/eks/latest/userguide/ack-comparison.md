@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ack-comparison.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Comparing EKS Capability for ACK to self-managed ACK
-<a name="ack-comparison"></a>
 
 The EKS Capability for ACK provides the same functionality as self-managed ACK controllers, but with significant operational advantages. For a general comparison of EKS Capabilities vs self-managed solutions, see [EKS Capabilities considerations](capabilities-considerations.md). This topic focuses on ACK-specific differences.
 
@@ -157,7 +156,7 @@ This creates a risk if you run a self-managed preview controller on a cluster th
 
 To avoid this, before you run a self-managed preview controller alongside the capability:
 + Enable leader election on the self-managed preview controller and point its lease at `kube-system`, using the same `leaderElection.enabled=true` and `leaderElection.namespace=kube-system` settings shown in the migration steps. This ensures that if the controller is promoted and the capability takes it over, the two coordinate through a shared lease rather than reconciling in parallel.
-+ Track the upstream GA status of any preview controllers you depend on, and plan to migrate them following the [migration path](#ack-comparison) when they are promoted. You can check the current status of each controller on the [ACK services page](https://aws-controllers-k8s.github.io/docs/services/) on the ACK website.
++ Track the upstream GA status of any preview controllers you depend on, and plan to migrate them following the [migration path](ack-comparison.md) when they are promoted. You can check the current status of each controller on the [ACK services page](https://aws-controllers-k8s.github.io/docs/services/) on the ACK website.
 
 ## Next steps
 <a name="_next_steps"></a>

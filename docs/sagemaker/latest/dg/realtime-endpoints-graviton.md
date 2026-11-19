@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-g
 ---
 
 # Migrate inference workload from x86 to AWS Graviton
-<a name="realtime-endpoints-graviton"></a>
 
  [AWS Graviton](https://aws.amazon.com/ec2/graviton/) is a series of ARM-based processors designed by AWS. They are more energy efficient than x86-based processors and offer a compelling price-performance ratio. Amazon SageMaker AI offers Graviton-based instances so that you can take advantage of these advanced processors for your inference needs.
 

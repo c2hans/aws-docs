@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/v
 ---
 
 # Verifiable credentials (claims) for government
-<a name="verifiable-credentials-claims-for-government"></a>
 
  There are several scenarios where verifiable credentials (VCs) make sense in a government context.  Verifiable credentials provide a repeatable pattern in scenarios where assertions about the state of something is useful and those assertions are valuable outside the four walls of government or a specific department.  Examples include trade, identity, technology bill of materials, inspections, and certifications.  The key concept for government is that they are in a unique position in society to be a *trust anchor* for specific types of claims that become a tether for *chains of claims*.
 

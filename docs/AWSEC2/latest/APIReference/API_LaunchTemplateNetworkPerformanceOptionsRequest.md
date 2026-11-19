@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateNetworkPerformanceOptionsRequest
-<a name="API_LaunchTemplateNetworkPerformanceOptionsRequest"></a>
 
 When you configure network performance options in your launch template, your instance is geared for performance improvements based on the workload that it runs as soon as it's available.
 

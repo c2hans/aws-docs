@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 ---
 
 # Test environment for Android devices
-<a name="custom-test-environments-hosts-android"></a>
 
 For the full list of available test hosts and how to select one, see [Hosts for custom test environments](custom-test-environments-hosts.md).
 

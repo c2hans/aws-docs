@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsOpenUrlAction
-<a name="API_RcsOpenUrlAction"></a>
 
 A suggested action that opens a URL in the recipient's browser or an in-app webview.
 

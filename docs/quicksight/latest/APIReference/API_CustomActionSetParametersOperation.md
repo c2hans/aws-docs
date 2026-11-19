@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomActionSetParametersOperation
-<a name="API_CustomActionSetParametersOperation"></a>
 
 The set parameter operation that sets parameters in custom action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_ListTagsF
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Shows the tags associated with this resource.
 

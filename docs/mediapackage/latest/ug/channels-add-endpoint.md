@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/channels-add-endp
 ---
 
 # Adding an endpoint to a channel
-<a name="channels-add-endpoint"></a>
 
 Add an endpoint to a channel to allow downstream video players and content delivery networks (CDNs) to start requesting content playback.
 

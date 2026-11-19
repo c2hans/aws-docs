@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # ListTrackers
-<a name="API_WaypointTracking_ListTrackers"></a>
 
 Lists tracker resources in your AWS account.
 

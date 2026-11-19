@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Zer
 ---
 
 # Zero Padding
-<a name="ZeroPadding"></a>
 
 After all the numbers in a data set are positive, ensure they are properly represented for lexicographical comparisons. For example, the string "10" comes before "2" in lexicographical order. If we zero pad the numbers to five digits, "00002" comes before "00010" and are compared correctly. Additionally, the offset is valid for numbers up to 5 digits and future numbers such as 00402 and 02987 are properly represented in this scheme.
 

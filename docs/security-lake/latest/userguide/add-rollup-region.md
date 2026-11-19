@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/add-rollu
 ---
 
 # Configuring rollup Regions in Security Lake
-<a name="add-rollup-region"></a>
 
 A rollup Region consolidates data from one or more contributing Regions. Specifying a rollup Region can help you comply with Regional compliance requirements.
 

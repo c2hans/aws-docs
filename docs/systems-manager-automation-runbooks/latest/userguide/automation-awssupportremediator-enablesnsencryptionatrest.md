@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableSnsEncryptionAtRest`
-<a name="automation-awssupportremediator-enablesnsencryptionatrest"></a>
 
 **Description**
 

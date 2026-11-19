@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Transforming indexes in Amazon OpenSearch Service
-<a name="transforms"></a>
 
 Whereas [index rollup jobs](rollup.md) let you reduce data granularity by rolling up old data into condensed indexes, transform jobs let you create a different, summarized view of your data centered around certain fields, so you can visualize or analyze the data in different ways.
 

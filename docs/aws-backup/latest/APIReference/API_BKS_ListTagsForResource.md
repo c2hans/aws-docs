@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_L
 ---
 
 # ListTagsForResource
-<a name="API_BKS_ListTagsForResource"></a>
 
 This operation returns the tags for a resource type.
 

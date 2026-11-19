@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/spank_faq.html
 ---
 
 # Frequently asked questions about SPANK plugins on AWS PCS
-<a name="spank_faq"></a>
 
 This section addresses common questions about installing and configuring SPANK plugins on AWS PCS clusters.
 

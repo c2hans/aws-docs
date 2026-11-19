@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/create-continuous-delive
 ---
 
 # Module 3: Create Build Project
-<a name="module-three"></a>
 
 |  |  |
 | --- |--- |

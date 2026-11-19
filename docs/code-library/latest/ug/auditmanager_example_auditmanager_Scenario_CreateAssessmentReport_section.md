@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/auditmanager_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create an Audit Manager assessment report that contains one day of evidence using an AWS SDK
-<a name="auditmanager_example_auditmanager_Scenario_CreateAssessmentReport_section"></a>
 
 The following code example shows how to create an Audit Manager assessment report that contains one day of evidence.
 

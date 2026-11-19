@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FlowLog.h
 ---
 
 # FlowLog
-<a name="API_FlowLog"></a>
 
 Describes a flow log.
 

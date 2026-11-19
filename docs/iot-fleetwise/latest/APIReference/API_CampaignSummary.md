@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ca
 ---
 
 # CampaignSummary
-<a name="API_CampaignSummary"></a>
 
 Information about a campaign.
 

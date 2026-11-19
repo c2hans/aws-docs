@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeImageUsageReportEntries
-<a name="API_DescribeImageUsageReportEntries"></a>
 
 Describes the entries in image usage reports, showing how your images are used across other AWS accounts.
 

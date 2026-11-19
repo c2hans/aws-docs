@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OpenZFSCreat
 ---
 
 # OpenZFSCreateRootVolumeConfiguration
-<a name="API_OpenZFSCreateRootVolumeConfiguration"></a>
 
 The configuration of an Amazon FSx for OpenZFS root volume.
 

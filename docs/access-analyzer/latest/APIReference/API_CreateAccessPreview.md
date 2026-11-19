@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # CreateAccessPreview
-<a name="API_CreateAccessPreview"></a>
 
 Creates an access preview that allows you to preview IAM Access Analyzer findings for your resource before deploying resource permissions.
 

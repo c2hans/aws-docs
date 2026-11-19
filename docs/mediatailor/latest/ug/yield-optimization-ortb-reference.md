@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # ORTB field reference
-<a name="yield-optimization-ortb-reference"></a>
 
 This page is a complete reference for every field in the OpenRTB bid request. Fields are categorized by how MediaTailor handles them and whether APS requires or recommends them for optimal ad fill.
 

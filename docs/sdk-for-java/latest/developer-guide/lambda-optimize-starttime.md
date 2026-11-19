@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/lamb
 ---
 
 # Reduce SDK startup time for AWS Lambda
-<a name="lambda-optimize-starttime"></a>
 
 One of the goals of the AWS SDK for Java 2.x is to reduce the startup latency for AWS Lambda functions. The SDK contains changes that reduce startup time, which are discussed at the end of this topic.
 

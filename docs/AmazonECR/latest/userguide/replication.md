@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/replication.h
 ---
 
 # Private image replication in Amazon ECR
-<a name="replication"></a>
 
 You can configure your Amazon ECR private registry to support the replication of your repositories. Amazon ECR supports both cross-Region and cross-account replication. For cross-account replication to occur, the destination account must configure a registry permissions policy to allow replication from the source registry to occur. For more information, see [Private registry permissions in Amazon ECR](registry-permissions.md). You can also enable replication of deletes on a replication rule so that Amazon ECR replicates image deletions and image tag removals from the source registry to the replication destinations. For more information, see [Replicating image deletions in Amazon ECR](replication-delete.md).
 

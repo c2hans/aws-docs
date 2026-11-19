@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/parametergroups
 ---
 
 # Listing a parameter group's values
-<a name="parametergroups.listingValues"></a>
 
 You can list the parameters and their values for a parameter group using the MemoryDB console, the AWS CLI, or the MemoryDB API.
 

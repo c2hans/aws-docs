@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # IteratorDescription
-<a name="API_IteratorDescription"></a>
 
 Provides information about the current iterator.
 

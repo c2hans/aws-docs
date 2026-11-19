@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_RedshiftCon
 ---
 
 # RedshiftConnectorProfileCredentials
-<a name="API_RedshiftConnectorProfileCredentials"></a>
 
  The connector-specific profile credentials required when using Amazon Redshift.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteRestApi.
 ---
 
 # DeleteRestApi
-<a name="API_DeleteRestApi"></a>
 
 Deletes the specified API.
 

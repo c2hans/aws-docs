@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upgrad
 ---
 
 # Reduced downtime Conductor Live upgrade
-<a name="upgrades-cl3-upg-red"></a>
 
 The process outlined in this section uses worker redundancy to limit the upgrade downtime. This process applies when the following are true:
 + The worker nodes are in a redundancy group.

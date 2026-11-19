@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_HsmClie
 ---
 
 # HsmClientCertificate
-<a name="API_HsmClientCertificate"></a>
 
 Returns information about an HSM client certificate. The certificate is stored in a secure Hardware Storage Module (HSM), and used by the Amazon Redshift cluster to encrypt data files.
 

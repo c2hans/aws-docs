@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeDomain
-<a name="API_DescribeDomain"></a>
 
 The description of the domain.
 

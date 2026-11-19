@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # EventDetail
-<a name="API_EventDetail"></a>
 
 The stored event's identifiers. Call `GetEvent` for the payload.
 

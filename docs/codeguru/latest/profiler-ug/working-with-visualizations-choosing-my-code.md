@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with
 ---
 
 # Choosing my code in visualizations
-<a name="working-with-visualizations-choosing-my-code"></a>
 
 CodeGuru Profiler differentiates your code in the overview visualization, so you can quickly identify the methods you are working on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/scenarios-enis.h
 ---
 
 # Multiple network interfaces for your Amazon EC2 instances
-<a name="scenarios-enis"></a>
 
 Attaching multiple network interfaces to an instance is useful when you need the following:
 + A [management network](#creating-a-management-network).

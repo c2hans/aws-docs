@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_S
 ---
 
 # StartSyncExecution
-<a name="API_StartSyncExecution"></a>
 
 Starts a Synchronous Express state machine execution. `StartSyncExecution` is not available for `STANDARD` workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-smooth-outp
 ---
 
 # Create a Microsoft Smooth output group
-<a name="creating-smooth-output-group"></a>
 
 When you [planned the workflow for your channel](identify-downstream-system.md), you might have determined that you want to include a Microsoft Smooth output group.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/userguide/ams-dr-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Disaster recovery response
-<a name="ams-dr-response"></a>
 
 In addition to the options described in the following sections, it is good for you to know what steps to take to initiate a disaster recovery (DR) with AMS.
 

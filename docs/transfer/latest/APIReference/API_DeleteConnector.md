@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteC
 ---
 
 # DeleteConnector
-<a name="API_DeleteConnector"></a>
 
 Deletes the connector that's specified in the provided `ConnectorId`.
 

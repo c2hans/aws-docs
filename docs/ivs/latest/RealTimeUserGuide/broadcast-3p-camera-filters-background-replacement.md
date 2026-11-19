@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-3
 ---
 
 # Using Background Replacement with the IVS Broadcast SDK
-<a name="broadcast-3p-camera-filters-background-replacement"></a>
 
 Background replacement is a type of camera filter that enables live-stream creators to change their backgrounds. As shown in the following diagram, replacing your background involves:
 

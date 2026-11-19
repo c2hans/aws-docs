@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/http-validation.htm
 ---
 
 # AWS Certificate Manager HTTP validation
-<a name="http-validation"></a>
 
 Hypertext Transfer Protocol (HTTP) is a foundational protocol for data communication on the World Wide Web. When you choose HTTP validation for certificates used with CloudFront, ACM leverages this protocol to verify your domain ownership. ACM works in conjunction with CloudFront to provide you with a specific URL and a unique token that must be made accessible at that URL on your domain. This token serves as proof that you control the domain. By setting up a redirect from your domain to an ACM-controlled location within the CloudFront infrastructure, you demonstrate your ability to modify content on the domain, thus validating your ownership. This seamless integration between ACM and CloudFront simplifies the certificate issuance process, especially for CloudFront distributions.
 

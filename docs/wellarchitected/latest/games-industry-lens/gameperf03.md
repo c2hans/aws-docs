@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Iterative development
-<a name="gameperf03"></a>
 
 |  GAMEPERF03: How can you use Amazon GameLift for iterative development performance efficiency?   |
 | --- |

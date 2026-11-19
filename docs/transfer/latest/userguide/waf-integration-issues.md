@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/waf-integratio
 ---
 
 # Troubleshoot Web Application Firewall integration issues
-<a name="waf-integration-issues"></a>
 
 This section describes possible solutions for issues related to integrating AWS WAF with Transfer Family.
 

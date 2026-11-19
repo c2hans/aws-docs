@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/misconfigured-svm.
 ---
 
 # Your storage virtual machine (SVM) is in a `MISCONFIGURED` state
-<a name="misconfigured-svm"></a>
 
 There are a number of potential causes for a Storage Virtual Machine to get into a `MISCONFIGURED` state, each with their own resolution, as follows.
 

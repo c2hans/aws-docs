@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 ---
 
 # InstanceCollection
-<a name="API_InstanceCollection"></a>
 
  Contains details about a collection of instances launched in the Auto Scaling group.
 

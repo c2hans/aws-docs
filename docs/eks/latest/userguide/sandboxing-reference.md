@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-referenc
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Sandboxes reference
-<a name="sandboxing-reference"></a>
 
 Reference material for understanding the Nitro Sandbox trust boundary, the Cedar policy schema, feature limitations, and the IAM permissions that specific features require.
 

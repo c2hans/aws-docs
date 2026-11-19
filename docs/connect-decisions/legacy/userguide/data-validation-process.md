@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data-
 ---
 
 # Data Validation Process
-<a name="data-validation-process"></a>
 
 After the preprocessing process described above completes, the data validation process begins. Data validation consists of three steps:
 

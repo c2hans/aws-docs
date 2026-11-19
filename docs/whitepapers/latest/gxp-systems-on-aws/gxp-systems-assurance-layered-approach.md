@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/gx
 ---
 
 # GxP systems assurance – The layered approach
-<a name="gxp-systems-assurance-layered-approach"></a>
 
 GxP regulations require you to demonstrate control over the environment within which GxP workloads will operate. A top-level assurance model is a good starting point to explain how each layer of the entire cloud environment will be kept under a state of control. The layered model that follows provides a structure to perhaps guide the creation of new quality management system (QMS) documents or highlight existing QMS documents in need of revision.
 

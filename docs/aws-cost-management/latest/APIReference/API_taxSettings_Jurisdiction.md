@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Jurisdiction
-<a name="API_taxSettings_Jurisdiction"></a>
 
 The jurisdiction details of the TRN information of the customers. This doesn't contain full legal address, and contains only country code and state/region/province.
 

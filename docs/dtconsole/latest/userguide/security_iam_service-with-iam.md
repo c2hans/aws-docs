@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/security_iam_
 ---
 
 # How features in the developer tools console work with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to features in the Developer Tools console, you should understand which IAM features are available to use with it. To get a high-level view of how notifications and other AWS services work with IAM, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
 

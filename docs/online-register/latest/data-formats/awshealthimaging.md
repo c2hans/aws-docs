@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsh
 ---
 
 # Data retrieval APIs for AWS HealthImaging
-<a name="awshealthimaging"></a>
 
 AWS HealthImaging provides the following APIs for data retrieval.
 

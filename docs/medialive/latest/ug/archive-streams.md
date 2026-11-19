@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/archive-streams.html
 ---
 
 # Fields for the video, audio, and captions streams (encodes)
-<a name="archive-streams"></a>
 
 The following fields relate to the encoding of the video, audio, and captions streams (encodes) in the output.
 + **Stream settings** section

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteGlossary.ht
 ---
 
 # DeleteGlossary
-<a name="API_DeleteGlossary"></a>
 
 Deletes a business glossary from AWS Glue Data Catalog. A glossary cannot be deleted if it still contains glossary terms.
 

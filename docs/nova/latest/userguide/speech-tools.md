@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/speech-tools.html
 ---
 
 # Tool Use, RAG, and Agentic Flows with Amazon Nova Sonic
-<a name="speech-tools"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For the Amazon Nova 2 Sonic guide, visit [Tool configuration](https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-tool-configuration.html).

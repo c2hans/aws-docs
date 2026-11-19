@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 This section discusses the expected outcomes associated with defining and building a disaster recovery (DR) plan for your databases on AWS.
 

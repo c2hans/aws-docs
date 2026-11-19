@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_Reposit
 ---
 
 # RepositoryHeadSourceCodeType
-<a name="API_RepositoryHeadSourceCodeType"></a>
 
 A [SourceCodeType](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_SourceCodeType) that specifies the tip of a branch in an associated repository.
 

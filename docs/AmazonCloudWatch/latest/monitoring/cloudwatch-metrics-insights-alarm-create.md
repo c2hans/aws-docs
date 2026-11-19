@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # Creating a Metrics Insights CloudWatch alarm
-<a name="cloudwatch-metrics-insights-alarm-create"></a>
 
 **To create an alarm on a Metrics Insights query using the console**
 

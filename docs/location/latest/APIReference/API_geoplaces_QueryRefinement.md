@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # QueryRefinement
-<a name="API_geoplaces_QueryRefinement"></a>
 
 Suggestions for refining individual query terms. Suggestions are returned as objects which note the term, suggested replacement, and its index in the query.
 

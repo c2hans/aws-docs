@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyS
 ---
 
 # ModifySnapshotSchedule
-<a name="API_ModifySnapshotSchedule"></a>
 
 Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
 

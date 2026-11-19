@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/exists.html
 ---
 
 # $exists
-<a name="exists"></a>
 
 The `$exists` operator is used to check whether a field exists in a document or not. `$exists` particularly useful when working with sparse indexes in Amazon DocumentDB, where the indexed field may not be present in all documents.
 

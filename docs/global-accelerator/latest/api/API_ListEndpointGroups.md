@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListEn
 ---
 
 # ListEndpointGroups
-<a name="API_ListEndpointGroups"></a>
 
 List the endpoint groups that are associated with a listener.
 

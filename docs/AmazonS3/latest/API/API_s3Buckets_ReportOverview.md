@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Report
 ---
 
 # ReportOverview
-<a name="API_s3Buckets_ReportOverview"></a>
 
 A report of a migration: the prefix it is written under and, once it is written, its key, its checksum and, for the compatibility reports, the number of blocking findings in each category.
 

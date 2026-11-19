@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle index-organized table and MySQL InnoDB clustered index
-<a name="chap-oracle-aurora-mysql.tables.iot"></a>
 
 With AWS DMS, you can migrate databases that utilize Oracle index-organized tables and MySQL InnoDB clustered indexes.
 

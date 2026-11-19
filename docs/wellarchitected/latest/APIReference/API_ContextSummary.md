@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ContextSummary
-<a name="API_ContextSummary"></a>
 
 Summary of a context associated with a profile, representing application or environment information used during recommendation generation.
 

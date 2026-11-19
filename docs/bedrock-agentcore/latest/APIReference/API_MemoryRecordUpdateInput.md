@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryRecordUpdateInput
-<a name="API_MemoryRecordUpdateInput"></a>
 
 Input structure to update an existing memory record.
 

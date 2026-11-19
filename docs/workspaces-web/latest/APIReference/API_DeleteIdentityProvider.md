@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DeleteIdentityProvider
-<a name="API_DeleteIdentityProvider"></a>
 
 Deletes the identity provider.
 

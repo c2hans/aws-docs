@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_PutAl
 ---
 
 # PutAlertManagerDefinition
-<a name="API_PutAlertManagerDefinition"></a>
 
 Updates an existing alert manager definition in a workspace. If the workspace does not already have an alert manager definition, don't use this operation to create it. Instead, use `CreateAlertManagerDefinition`.
 

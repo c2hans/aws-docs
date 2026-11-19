@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ListEdgeAgentConfigurations
-<a name="API_ListEdgeAgentConfigurations"></a>
 
 Returns an array of edge configurations associated with the specified Edge Agent.
 

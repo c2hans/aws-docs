@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-no-slr.html
 ---
 
 # Error: "Your account ID does not exist in an AWS organization"
-<a name="tshoot-no-slr"></a>
 
 ## Scenario
 <a name="tshoot-no-slr-scenario"></a>

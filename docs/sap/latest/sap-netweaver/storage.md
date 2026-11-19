@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/storage.html
 ---
 
 # Storage
-<a name="storage"></a>
 
 The following table lists the main directories for SQL Server database.
 

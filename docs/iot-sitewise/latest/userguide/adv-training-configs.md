@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/adv-traini
 ---
 
 # Advanced training configurations
-<a name="adv-training-configs"></a>
 
 ## Sample rate configuration
 <a name="sample-rate-configuration"></a>

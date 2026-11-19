@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Aurora MySQL stored procedure reference
-<a name="AuroraMySQL.Reference.StoredProcs"></a>
 
 You can manage your Aurora MySQL DB cluster by calling built-in stored procedures.
 

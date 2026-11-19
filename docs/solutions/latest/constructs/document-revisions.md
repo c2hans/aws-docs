@@ -3,4 +3,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/document-rev
 ---
 
 # Document Revisions
-<a name="document-revisions"></a>

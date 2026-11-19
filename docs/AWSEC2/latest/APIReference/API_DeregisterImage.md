@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deregiste
 ---
 
 # DeregisterImage
-<a name="API_DeregisterImage"></a>
 
 Deregisters the specified AMI. A deregistered AMI can't be used to launch new instances.
 

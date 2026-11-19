@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # ProgressEvent object schema
-<a name="resource-type-test-progressevent"></a>
 
 A `ProgressEvent` is a JSON object which represents the current operation status of the handler, the current live state of the resource, and any additional resource information the handler wishes to communicate to the CloudFormation CLI. Each handler MUST communicate a progress event to the CloudFormation CLI under certain circumstances, and SHOULD communicate a progress event under others. For more information, see [Handler Communication Contract](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-test-contract.html#resource-type-test-contract-communication).
 

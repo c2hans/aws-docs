@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gifts.html
 ---
 
 # .gifts
-<a name="gifts"></a>
 
 Used by businesses or organizations that sell gifts or provide gift-related services.
 

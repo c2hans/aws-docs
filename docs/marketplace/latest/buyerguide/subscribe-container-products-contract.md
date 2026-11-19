@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/subscribe-
 ---
 
 # Subscribing to a container product with contract pricing in AWS Marketplace
-<a name="subscribe-container-products-contract"></a>
 
 Sellers offer public or private contracts for container-based software products. You agree to make a one-time upfront payment for discrete quantities of licenses to access the software product.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AutoSca
 ---
 
 # AutoScalingInstanceDetails
-<a name="API_AutoScalingInstanceDetails"></a>
 
 Describes an EC2 instance associated with an Auto Scaling group.
 

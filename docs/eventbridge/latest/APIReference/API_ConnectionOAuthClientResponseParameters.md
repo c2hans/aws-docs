@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Conn
 ---
 
 # ConnectionOAuthClientResponseParameters
-<a name="API_ConnectionOAuthClientResponseParameters"></a>
 
 The client response parameters for the connection when OAuth is specified as the authorization type.
 

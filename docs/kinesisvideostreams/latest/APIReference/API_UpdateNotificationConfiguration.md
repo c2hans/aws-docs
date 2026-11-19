@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # UpdateNotificationConfiguration
-<a name="API_UpdateNotificationConfiguration"></a>
 
 Updates the notification information for a stream.
 

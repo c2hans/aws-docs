@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_ccm\_status
-<a name="aurora_ccm_status"></a>
 
 Displays the status of cluster cache manager.
 

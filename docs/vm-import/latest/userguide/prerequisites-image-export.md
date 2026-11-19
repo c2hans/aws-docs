@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/prerequisites
 ---
 
 # Prerequisites for exporting an image from Amazon EC2
-<a name="prerequisites-image-export"></a>
 
 To export a VM from Amazon EC2, first meet the following prerequisites.
 + Install the AWS CLI. For more information, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).

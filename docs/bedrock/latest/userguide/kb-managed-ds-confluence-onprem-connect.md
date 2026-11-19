@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-c
 ---
 
 # Connect a Confluence Data Center data source
-<a name="kb-managed-ds-confluence-onprem-connect"></a>
 
 After you set up VPC connectivity and store your credentials in an AWS Secrets Manager secret, create the Confluence Data Center data source in your knowledge base. This page describes how to create the data source with the AWS Management Console or the API, followed by a reference for the connector parameters you can configure.
 

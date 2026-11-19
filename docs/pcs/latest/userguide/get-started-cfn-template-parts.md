@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/get-started-cfn-tem
 ---
 
 # Parts of a CloudFormation template for AWS PCS
-<a name="get-started-cfn-template-parts"></a>
 
 A CloudFormation template has 1 or more sections that each serve a specific purpose. CloudFormation defines standard format, syntax, and language in a template. For more information, see [Working with CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) in the *AWS CloudFormation User Guide*.
 

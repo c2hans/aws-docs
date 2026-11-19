@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTCOST01-BP01 Use the reflection pattern to design efficient agent reasoning loops
-<a name="agentcost01-bp01"></a>
 
  Unbounded reasoning loops consume tokens unpredictably and can result in higher than expected token consumption for routine tasks. A bounded reflection pattern gives you predictable token budgets and preserves decision quality.
 

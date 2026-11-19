@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_SwapEnvi
 ---
 
 # SwapEnvironmentCNAMEs
-<a name="API_SwapEnvironmentCNAMEs"></a>
 
 Swaps the CNAMEs of two environments.
 

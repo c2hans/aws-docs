@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 ---
 
 # SQL functions
-<a name="sql-functions"></a>
 
  The function groups supported are:
 

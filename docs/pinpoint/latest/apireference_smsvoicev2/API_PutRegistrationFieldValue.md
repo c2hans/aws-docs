@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # PutRegistrationFieldValue
-<a name="API_PutRegistrationFieldValue"></a>
 
 Creates or updates a field value for a registration.
 

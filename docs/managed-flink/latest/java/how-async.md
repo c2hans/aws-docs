@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-async.html
 ---
 
 # Use Asynchronous I/O in Managed Service for Apache Flink
-<a name="how-async"></a>
 
 An Asynchronous I/O operator enriches stream data using an external data source such as a database. Managed Service for Apache Flink enriches the stream events asynchronously so that requests can be batched for greater efficiency.
 

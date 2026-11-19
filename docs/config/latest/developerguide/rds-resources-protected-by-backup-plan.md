@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-resourc
 ---
 
 # rds-resources-protected-by-backup-plan
-<a name="rds-resources-protected-by-backup-plan"></a>
 
 Checks if Amazon Relational Database Service (Amazon RDS) instances are protected by a backup plan. The rule is NON\_COMPLIANT if the Amazon RDS Database instance is not covered by a backup plan.
 

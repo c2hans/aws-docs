@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetWorkflow
-<a name="API_connect-customer-profiles_GetWorkflow"></a>
 
 Get details of specified workflow.
 

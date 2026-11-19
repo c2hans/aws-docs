@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksSensitiveInformationResultEntry
-<a name="API_runtime_GuardrailChecksSensitiveInformationResultEntry"></a>
 
 The detection result for a single sensitive information entity found in the evaluated messages.
 

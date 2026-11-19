@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chai
 ---
 
 # Best practices for supply chain metrics
-<a name="best-practices"></a>
 
 When establishing supply chain metrics, best practices include maintaining consistency and understanding the business value:
 + **Consistency** – Metrics must have the same definition each time they are used so that you can accurately compare time periods. If the calculation or definition is updated, make sure you have full documentation and stakeholder agreement before implementing.

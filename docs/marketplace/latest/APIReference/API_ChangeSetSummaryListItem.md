@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Chan
 ---
 
 # ChangeSetSummaryListItem
-<a name="API_ChangeSetSummaryListItem"></a>
 
 A summary of a change set returned in a list of change sets when the `ListChangeSets` action is called.
 

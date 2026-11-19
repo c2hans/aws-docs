@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleBooleanExpression
-<a name="API_RuleBooleanExpression"></a>
 
 A boolean expression to be used in a rule condition.
 

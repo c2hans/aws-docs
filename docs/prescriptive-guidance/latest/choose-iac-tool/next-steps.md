@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide discussed the advantages and disadvantages of several infrastructure as code (IaC) tools that you can use to build, deploy, and manage AWS resources and infrastructure. Based on the tool that you choose, we recommend that you visit the following resources to get started.
 

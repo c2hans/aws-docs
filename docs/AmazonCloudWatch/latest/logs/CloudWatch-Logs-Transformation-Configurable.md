@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # Configurable parser-type processors
-<a name="CloudWatch-Logs-Transformation-Configurable"></a>
 
 This section contains information about the configurable data parser processors that you can use in a log event transformer.
 

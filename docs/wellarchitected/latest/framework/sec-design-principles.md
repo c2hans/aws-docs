@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec-des
 ---
 
 # Design principles
-<a name="sec-design-principles"></a>
 
  In the cloud, a number of principles can help you strengthen your workload security:
 +  **Implement a strong identity foundation:** Implement the principle of least privilege and enforce separation of duties with appropriate authorization for each interaction with your AWS resources and workloads. Centralize identity management, and reduce reliance on long-term static credentials like IAM Users.

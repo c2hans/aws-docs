@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_NullCheckBoxList.
 ---
 
 # NullCheckBoxList
-<a name="API_NullCheckBoxList"></a>
 
 Represents whether certain values are recognized as null values for removal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/log-function.html
 ---
 
 # Log
-<a name="log-function"></a>
 
 `log` returns the base 10 logarithm of a given expression.
 

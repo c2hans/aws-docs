@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SerDeInfo.html
 ---
 
 # SerDeInfo
-<a name="API_SerDeInfo"></a>
 
 Information about a serialization/deserialization program (SerDe) that serves as an extractor and loader.
 

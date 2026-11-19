@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_M
 ---
 
 # MapRunStartedEventDetails
-<a name="API_MapRunStartedEventDetails"></a>
 
 Contains details about a Map Run that was started during a state machine execution.
 

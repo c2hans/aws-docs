@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/deman
 ---
 
 # Demand Planning
-<a name="demand-planning"></a>
 
 Demand Planning is a web-based application that allows business users to create, collaborate, and publish demand plans. Demand Planning generates forecasts using proprietary machine learning algorithms based on historical forecasting experience.
 

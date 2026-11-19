@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/inven
 ---
 
 # Inventory policies
-<a name="inventory-policies"></a>
 
 Auto Replenishment supports three different inventory policies. Each policy computes a plan based on a different algorithm, and each policy requires different inputs.
 

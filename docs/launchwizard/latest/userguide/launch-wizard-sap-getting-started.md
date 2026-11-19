@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Get started with AWS Launch Wizard for SAP
-<a name="launch-wizard-sap-getting-started"></a>
 
  This topic contains information to help you set up your environment and deploy AWS resources with Launch Wizard, such as:
 + How to create an IAM policy and attach it to your IAM user identity

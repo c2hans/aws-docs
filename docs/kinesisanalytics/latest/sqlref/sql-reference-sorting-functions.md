@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Sorting Functions
-<a name="sql-reference-sorting-functions"></a>
 
 The topics in this section describe the sorting functions for Amazon Kinesis Data Analytics streaming SQL.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Reputatio
 ---
 
 # ReputationOptions
-<a name="API_ReputationOptions"></a>
 
 Enable or disable collection of reputation metrics for emails that you send using this configuration set in the current AWS Region.
 

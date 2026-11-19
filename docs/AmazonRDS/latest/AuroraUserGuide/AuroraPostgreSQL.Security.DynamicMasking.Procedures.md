@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Procedures for managing data masking policies
-<a name="AuroraPostgreSQL.Security.DynamicMasking.Procedures"></a>
 
 You can manage masking policies using procedures provided by the `pg_columnmask` extension. To create, modify, or drop masking policies, you must have one of the following privileges:
 + Owner of the table on which you are creating the `pg_columnmask` policy.

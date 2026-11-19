@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Regist
 ---
 
 # RegisterPullTimeUpdateExclusion
-<a name="API_RegisterPullTimeUpdateExclusion"></a>
 
 Adds an IAM principal to the pull time update exclusion list for a registry. Amazon ECR will not record the pull time if an excluded principal pulls an image.
 

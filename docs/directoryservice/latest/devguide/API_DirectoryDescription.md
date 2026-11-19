@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dir
 ---
 
 # DirectoryDescription
-<a name="API_DirectoryDescription"></a>
 
 Contains information about an AWS Directory Service directory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Con
 ---
 
 # ContainerRecipeSummary
-<a name="API_ContainerRecipeSummary"></a>
 
 A summary of a container recipe.
 

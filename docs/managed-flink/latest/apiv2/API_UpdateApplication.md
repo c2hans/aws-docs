@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApp
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Updates an existing Managed Service for Apache Flink application. Using this operation, you can update application code, input configuration, and output configuration.
 

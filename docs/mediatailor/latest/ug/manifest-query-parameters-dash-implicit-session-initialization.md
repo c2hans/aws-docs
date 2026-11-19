@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/manifest-query-par
 ---
 
 # MediaTailor DASH implicit session initialization
-<a name="manifest-query-parameters-dash-implicit-session-initialization"></a>
 
 AWS Elemental MediaTailor creates a session for the client and redirects it with query parameters when the client makes a manifest request without a session. The following example shows this request format:
 

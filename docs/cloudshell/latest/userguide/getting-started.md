@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-star
 ---
 
 # Getting started with AWS CloudShell
-<a name="getting-started"></a>
 
 This introductory tutorial shows you how to launch AWS CloudShell and perform key tasks using the shell command line interface.
 

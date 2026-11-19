@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/secur
 ---
 
 # AWS managed policy: NeptuneGraphReadOnlyAccess
-<a name="security-iam-awsmanpol-graph-read-only"></a>
 
 The [NeptuneGraphReadOnlyAccess](https://console.aws.amazon.com/iam/home#policies/NeptuneGraphReadOnlyAccess) managed policy provides read-only access to all Neptune Analytics resources along with read-only permissions for dependent services.
 

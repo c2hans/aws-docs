@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_sns_Hello_section.
 ---
 
 # Hello Amazon SNS
-<a name="example_sns_Hello_section"></a>
 
 The following code examples show how to get started using Amazon SNS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ScopeConfi
 ---
 
 # ScopeConfiguration
-<a name="API_ScopeConfiguration"></a>
 
 The scope of resources that Amazon Inspector scans for a single scanning type, including the scope level, the targeted resources, and the current state.
 

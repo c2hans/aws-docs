@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/containeriz
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS services
 <a name="aws-services.02841011-5b14-5774-842c-6a73e3128798"></a>

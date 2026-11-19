@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-remote-debuggi
 ---
 
 # Access a training container through AWS Systems Manager for remote debugging
-<a name="train-remote-debugging"></a>
 
 You can securely connect to SageMaker training containers through AWS Systems Manager (SSM). This gives you a shell-level access to debug training jobs that are running within the container. You can also log commands and responses that are streamed to Amazon CloudWatch. If you use your own Amazon Virtual Private Cloud (VPC) to train a model, you can use AWS PrivateLink to set up a VPC endpoint for SSM and connect to containers privately through SSM.
 

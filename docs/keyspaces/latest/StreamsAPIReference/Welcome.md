@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/Wel
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon Keyspaces (for Apache Cassandra) change data capture (CDC) records change events for Amazon Keyspaces tables. The change events captured in a stream are time-ordered and de-duplicated write operations. Using stream data you can build event driven applications that incorporate near-real time change events from Amazon Keyspaces tables.
 
@@ -17,4 +16,4 @@ To learn how Amazon Keyspaces CDC API actions are recorded with AWS CloudTrail, 
 
 To see the metrics Amazon Keyspaces CDC sends to Amazon CloudWatch, see [Amazon Keyspaces change data capture (CDC) CloudWatch metrics](https://docs.aws.amazon.com/keyspaces/latest/devguide/metrics-dimensions.html#keyspaces-cdc-metrics) in the *Amazon Keyspaces Developer Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

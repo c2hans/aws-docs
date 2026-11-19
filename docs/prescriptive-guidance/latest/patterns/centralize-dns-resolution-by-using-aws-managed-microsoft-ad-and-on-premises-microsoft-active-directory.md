@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ce
 ---
 
 # Centralize DNS resolution by using AWS Managed Microsoft AD and on-premises Microsoft Active Directory
-<a name="centralize-dns-resolution-by-using-aws-managed-microsoft-ad-and-on-premises-microsoft-active-directory"></a>
 
 *Brian Westmoreland, Amazon Web Services*
 

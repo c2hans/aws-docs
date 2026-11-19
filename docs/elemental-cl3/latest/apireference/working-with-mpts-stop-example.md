@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Example
-<a name="working-with-mpts-stop-example"></a>
 
 This request stops the MPTS with the ID 4.
 

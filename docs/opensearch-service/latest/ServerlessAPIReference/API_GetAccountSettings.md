@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # GetAccountSettings
-<a name="API_GetAccountSettings"></a>
 
 Returns account-level settings related to OpenSearch Serverless.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/setting-up
 ---
 
 # Setting up trusted identity propagation with SageMaker Studio
-<a name="setting-up-trusted-identity-propagation-sagemaker-studio"></a>
 
 The following procedure walks you through setting up SageMaker Studio for trusted identity propagation and user background sessions.
 

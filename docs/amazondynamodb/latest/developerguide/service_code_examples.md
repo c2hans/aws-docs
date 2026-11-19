@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ser
 ---
 
 # Code examples for DynamoDB using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use DynamoDB with an AWS software development kit (SDK).
 

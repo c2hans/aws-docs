@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ContainerFulfillmentOption
-<a name="API_marketplace-discovery_ContainerFulfillmentOption"></a>
 
 Describes a container image fulfillment option for container-based deployment.
 

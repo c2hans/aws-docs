@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSp
 ---
 
 # RequestSpotFleet
-<a name="API_RequestSpotFleet"></a>
 
 Creates a Spot Fleet request.
 

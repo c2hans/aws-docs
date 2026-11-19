@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Before you begin
-<a name="before-you-begin"></a>
 
 Confirm that you are ready to proceed with defining project governance for your large migration as follows:
 + **Previous phases complete** – Defining project governance occurs in the third and final phase of a large migration. If you haven't already done so, we recommend you complete the assess and mobilize phases. For more information, see the [Guide for AWS large migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetCapaci
 ---
 
 # GetCapacityManagerSupportabilityScores
-<a name="API_GetCapacityManagerSupportabilityScores"></a>
 
  Scores how well each instance type and Availability Zone combination can support a capacity request, based on current Amazon EC2 capacity. The response includes a score for each combination and an aggregate score for all combinations in the request. This action doesn't launch or reserve instances, and a score doesn't guarantee that a later launch will succeed.
 

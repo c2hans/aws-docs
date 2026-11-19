@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 Before deploying this solution, ensure the following prerequisites are met.
 

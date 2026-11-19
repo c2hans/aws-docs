@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # RotationOverride
-<a name="API_SSMContacts_RotationOverride"></a>
 
 Information about an override specified for an on-call rotation.
 

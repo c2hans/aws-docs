@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Migrating on-premises Teradata Vantage environments to Teradata VantageCloud Enterprise on AWS
-<a name="introduction"></a>
 
 *Battulga Purevragchaa, Amazon Web Services*
 

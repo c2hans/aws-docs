@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF01-BP03 Check the number of shards per GiB of heap memory
-<a name="aosperf01-bp03"></a>
 
  Prevent inefficient resource utilization by keeping each data node's heap under a shard load of 25.
 

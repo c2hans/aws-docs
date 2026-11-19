@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_DeleteIden
 ---
 
 # Use `DeleteIdentity` with an AWS SDK or CLI
-<a name="ses_example_ses_DeleteIdentity_section"></a>
 
 The following code examples show how to use `DeleteIdentity`.
 

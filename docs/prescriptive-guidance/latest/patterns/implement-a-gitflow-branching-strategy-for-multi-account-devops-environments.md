@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/im
 ---
 
 # Implement a Gitflow branching strategy for multi-account DevOps environments
-<a name="implement-a-gitflow-branching-strategy-for-multi-account-devops-environments"></a>
 
 *Mike Stephens, Stephen DiCato, Abhilash Vinod, and Tim Wondergem, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCors
 ---
 
 # AwsCorsConfiguration
-<a name="API_AwsCorsConfiguration"></a>
 
 Contains the cross-origin resource sharing (CORS) configuration for the API. CORS is only supported for HTTP APIs.
 

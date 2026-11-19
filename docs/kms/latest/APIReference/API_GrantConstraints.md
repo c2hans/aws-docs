@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_GrantConstra
 ---
 
 # GrantConstraints
-<a name="API_GrantConstraints"></a>
 
 Use this structure to allow [cryptographic operations](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#cryptographic-operations) in the grant only when the operation request meets the specified constraints.
 

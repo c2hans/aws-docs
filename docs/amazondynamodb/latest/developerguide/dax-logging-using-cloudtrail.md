@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax
 ---
 
 # Logging DAX operations using AWS CloudTrail
-<a name="dax-logging-using-cloudtrail"></a>
 
 Amazon DynamoDB Accelerator (DAX) is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in DAX.
 

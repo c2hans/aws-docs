@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 Details of the S3 bucket that report generator reports are published to.
 

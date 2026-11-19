@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # EngagementContextDetails
-<a name="API_EngagementContextDetails"></a>
 
 Provides detailed context information for an Engagement. This structure allows for specifying the type of context and its associated payload.
 

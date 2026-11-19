@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/xgboost-72.html
 ---
 
 # XGBoost Version 0.72
-<a name="xgboost-72"></a>
 
 **Important**
 The XGBoost 0.72 is deprecated by Amazon SageMaker AI. You can still use this old version of XGBoost (as a built-in algorithm) by pulling its image URI as shown in the following code sample. For XGBoost, the image URI ending with `:1` is for the old version.

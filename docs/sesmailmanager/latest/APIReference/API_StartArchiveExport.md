@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # StartArchiveExport
-<a name="API_StartArchiveExport"></a>
 
 Initiates an export of emails from the specified archive.
 

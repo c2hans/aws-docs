@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-emr-eks
 ---
 
 # Create and manage Amazon EMR clusters on EKS with AWS Step Functions
-<a name="connect-emr-eks"></a>
 
 Learn how to integrate AWS Step Functions with Amazon EMR on EKS using the Amazon EMR on EKS service integration APIs. The service integration APIs are the same as the corresponding Amazon EMR on EKS APIs, but not all APIs support all integration patterns, as shown in the following table.
 

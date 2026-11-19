@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_FailedAcco
 ---
 
 # FailedAccount
-<a name="API_FailedAccount"></a>
 
 An object with details on why an account failed to enable Amazon Inspector.
 

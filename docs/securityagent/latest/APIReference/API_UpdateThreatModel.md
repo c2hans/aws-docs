@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdateThreatModel
-<a name="API_UpdateThreatModel"></a>
 
 Updates an existing threat model configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/aws-s
 ---
 
 # AWS services in this Guidance
-<a name="aws-services-in-this-solution"></a>
 
  The following AWS services are included in this Guidance:
 

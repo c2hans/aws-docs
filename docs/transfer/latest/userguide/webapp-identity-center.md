@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/webapp-identit
 ---
 
 # Configure your identity provider for Transfer Family web apps
-<a name="webapp-identity-center"></a>
 
 The following section describes how to configure your identity provider.
 

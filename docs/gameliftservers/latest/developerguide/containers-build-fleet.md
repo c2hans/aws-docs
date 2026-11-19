@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/co
 ---
 
 # Create an Amazon GameLift Servers managed container fleet
-<a name="containers-build-fleet"></a>
 
 Create an Amazon GameLift Servers managed container fleet to deploy and host your containerized game server in the AWS Cloud. When you create a container fleet, specify container group definitions that specify one or more container images (at least one that includes your game server build) and configuration settings.
 

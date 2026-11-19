@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Dest
 ---
 
 # DestinationDetail
-<a name="API_DestinationDetail"></a>
 
 Complex data type that defines destination-detail objects.
 

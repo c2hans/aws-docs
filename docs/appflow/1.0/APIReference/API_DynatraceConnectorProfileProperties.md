@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DynatraceCo
 ---
 
 # DynatraceConnectorProfileProperties
-<a name="API_DynatraceConnectorProfileProperties"></a>
 
  The connector-specific profile properties required by Dynatrace.
 

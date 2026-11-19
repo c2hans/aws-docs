@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PayerResp
 ---
 
 # PayerResponsibilityEntry
-<a name="API_PayerResponsibilityEntry"></a>
 
 Describes a payer responsibility setting for a VPC endpoint.
 

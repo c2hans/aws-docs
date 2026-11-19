@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/aif-setup-other-inpu
 ---
 
 # Setting up automatic input failover with RTMP and RTP inputs
-<a name="aif-setup-other-inputs"></a>
 
 To use RTMP push inputs and RTP inputs with automatic input failover in MediaLive, you must make sure that the upstream system provides sources in the correct way, and you must set up the inputs and the channels in a specific way.
 

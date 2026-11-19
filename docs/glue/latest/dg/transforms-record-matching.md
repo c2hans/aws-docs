@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-record-matchin
 ---
 
 # Using the Record Matching transform to invoke an existing data classification transform
-<a name="transforms-record-matching"></a>
 
 This transform invokes an existing Record Matching machine learning data classification transform.
 

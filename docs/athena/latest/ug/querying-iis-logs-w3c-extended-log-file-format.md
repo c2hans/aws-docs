@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iis-logs-w3c-e
 ---
 
 # Query W3C extended log file format
-<a name="querying-iis-logs-w3c-extended-log-file-format"></a>
 
 The [W3C extended](https://docs.microsoft.com/en-us/windows/win32/http/w3c-logging) log file data format has space-separated fields. The fields that appear in W3C extended logs are determined by a web server administrator who chooses which log fields to include. The following example log data has the fields `date, time`, `c-ip`, `s-ip`, `cs-method`, `cs-uri-stem`, `sc-status`, `sc-bytes`, `cs-bytes`, `time-taken`, and `cs-version`.
 

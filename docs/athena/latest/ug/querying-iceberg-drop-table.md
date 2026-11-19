@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-drop-t
 ---
 
 # DROP TABLE
-<a name="querying-iceberg-drop-table"></a>
 
 Drops an Iceberg table.
 

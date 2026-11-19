@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twel
 ---
 
 # Pegasus v1.2
-<a name="model-card-twelvelabs-pegasus-v1-2"></a>
 
 ## ![TwelveLabs logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/twelvelabs.png) TwelveLabs — Pegasus v1.2
 <a name="model-card-twelvelabs-pegasus-v1-2-header"></a>

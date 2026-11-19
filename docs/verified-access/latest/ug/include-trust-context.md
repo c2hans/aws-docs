@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/include-trust-
 ---
 
 # Enable or disable Verified Access trust context
-<a name="include-trust-context"></a>
 
 The trust context sent from your trust provider can optionally be enabled for inclusion in your Verified Access logs. This can be useful when defining policies that allow or deny access to your applications. After you enable it, the trust context is found in the log under the `data` field. If trust context is disabled, the `data` field is set to `null`. To configure Verified Access to include trust context in the logs, do the following procedure.
 

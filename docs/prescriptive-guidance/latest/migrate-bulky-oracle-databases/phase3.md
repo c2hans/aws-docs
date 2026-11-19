@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 ---
 
 # Phase 3: Transport phase
-<a name="phase3"></a>
 
 During this phase, the source system becomes read-only. You make the data files on the destination system consistent with the source system by applying a final incremental backup. Then, export the object metadata from the source system and import it into the destination system.
 

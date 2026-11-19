@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_SessionSt
 ---
 
 # SessionStatistics
-<a name="API_SessionStatistics"></a>
 
 Contains statistics for a session.
 

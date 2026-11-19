@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Distr
 ---
 
 # DistributionIdList
-<a name="API_DistributionIdList"></a>
 
 A list of distribution IDs.
 

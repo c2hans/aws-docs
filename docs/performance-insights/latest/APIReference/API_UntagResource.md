@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes the metadata tags from the Amazon RDS Performance Insights resource.
 

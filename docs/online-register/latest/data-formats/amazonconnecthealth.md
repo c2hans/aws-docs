@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Connect Health
-<a name="amazonconnecthealth"></a>
 
 Amazon Connect Health provides the following APIs for data retrieval.
 

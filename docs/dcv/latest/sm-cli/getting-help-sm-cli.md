@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/getting-help-sm-cli.ht
 ---
 
 # Getting help with commands
-<a name="getting-help-sm-cli"></a>
 
 You can get help with any command when using the Amazon DCV Session Manager CLI. To do so, simply type `--help` at the end of a command name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/call-history-chat.html
 ---
 
 # Using call history to chat
-<a name="call-history-chat"></a>
 
 Amazon Chime keeps a list of the calls (instant meetings) that you make, calls that you miss, and calls that you receive. The listings for each call include the contact who sent or received the call. You can message those contacts directly from your call history.
 

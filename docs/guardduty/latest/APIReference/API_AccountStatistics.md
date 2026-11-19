@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accoun
 ---
 
 # AccountStatistics
-<a name="API_AccountStatistics"></a>
 
 Represents a list of map of accounts with the number of findings associated with each account.
 

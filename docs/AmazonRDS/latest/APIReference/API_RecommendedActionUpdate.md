@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Recomm
 ---
 
 # RecommendedActionUpdate
-<a name="API_RecommendedActionUpdate"></a>
 
 The recommended status to update for the specified recommendation action ID.
 

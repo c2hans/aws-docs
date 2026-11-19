@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DescribeNotificationsForBudget
-<a name="API_budgets_DescribeNotificationsForBudget"></a>
 
 Lists the notifications that are associated with a budget.
 

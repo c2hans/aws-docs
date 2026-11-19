@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Descri
 ---
 
 # DescribeRepositories
-<a name="API_DescribeRepositories"></a>
 
 Describes image repositories in a registry.
 

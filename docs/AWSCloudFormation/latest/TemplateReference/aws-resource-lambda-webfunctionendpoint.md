@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::WebFunctionEndpoint
-<a name="aws-resource-lambda-webfunctionendpoint"></a>
 
 The `AWS::Lambda::WebFunctionEndpoint` resource creates an endpoint for a Lambda web function. An endpoint exposes the web function over HTTPS and routes traffic to one or more revisions. The endpoint type determines how the endpoint serves and routes traffic across Regions. For canary or blue-green deployments, you can split traffic between two revisions. To do this, specify two entries in the `RevisionWeights` property.
 

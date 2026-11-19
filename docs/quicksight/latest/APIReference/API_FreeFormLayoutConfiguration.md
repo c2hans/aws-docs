@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FreeF
 ---
 
 # FreeFormLayoutConfiguration
-<a name="API_FreeFormLayoutConfiguration"></a>
 
 The configuration of a free-form layout.
 

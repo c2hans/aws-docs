@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/record-single-acti
 ---
 
 # Recording a single action interaction event
-<a name="record-single-action-interaction"></a>
 
 After you create an Action interactions dataset, you are ready to record action interaction events with the [PutActionInteractions](API_UBS_PutActionInteractions.md) operation. The following code shows a `PutActionInteractions` operation that passes a TAKEN event. You might record this event when you show a user recommendations from Amazon Personalize and they take an action, such as applying for your credit card.
 

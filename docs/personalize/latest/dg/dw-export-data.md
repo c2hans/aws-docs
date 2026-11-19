@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/dw-export-data.htm
 ---
 
 # Processing data and importing it into Amazon Personalize
-<a name="dw-export-data"></a>
 
  When you are finished analyzing and transforming your data, you are ready to process it and import it into Amazon Personalize.
 +  **[Processing data](#dw-process-data)** – Processing the data applies your transform to your entire dataset and outputs it to a destination you specify. In this case you specify an Amazon S3 bucket.

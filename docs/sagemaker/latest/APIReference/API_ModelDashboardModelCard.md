@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelD
 ---
 
 # ModelDashboardModelCard
-<a name="API_ModelDashboardModelCard"></a>
 
 The model card for a model displayed in the Amazon SageMaker Model Dashboard.
 

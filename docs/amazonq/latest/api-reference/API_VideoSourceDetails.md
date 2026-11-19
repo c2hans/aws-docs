@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_VideoSo
 ---
 
 # VideoSourceDetails
-<a name="API_VideoSourceDetails"></a>
 
 Details about a video source, including its identifier, format, and time information.
 

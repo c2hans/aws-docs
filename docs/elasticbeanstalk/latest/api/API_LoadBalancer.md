@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_LoadBala
 ---
 
 # LoadBalancer
-<a name="API_LoadBalancer"></a>
 
 Describes a LoadBalancer.
 

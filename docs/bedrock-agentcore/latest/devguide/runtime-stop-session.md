@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Stop a running session
-<a name="runtime-stop-session"></a>
 
 The `StopRuntimeSession` operation lets you immediately terminate active agent AgentCore Runtime sessions for proper resource cleanup and session lifecycle management.
 

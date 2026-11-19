@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Tag
-<a name="API_CostOptimizationHub_Tag"></a>
 
 The tag structure that contains a tag key and value.
 

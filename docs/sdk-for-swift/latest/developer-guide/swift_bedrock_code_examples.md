@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/swi
 ---
 
 # Amazon Bedrock examples using SDK for Swift
-<a name="swift_bedrock_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Swift with Amazon Bedrock.
 

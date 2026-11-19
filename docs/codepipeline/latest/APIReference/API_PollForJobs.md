@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pol
 ---
 
 # PollForJobs
-<a name="API_PollForJobs"></a>
 
 Returns information about any jobs for CodePipeline to act on. `PollForJobs` is valid only for action types with "Custom" in the owner field. If the action type contains `AWS` or `ThirdParty` in the owner field, the `PollForJobs` action returns an error.
 

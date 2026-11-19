@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TestStateConfiguration
-<a name="API_TestStateConfiguration"></a>
 
 Contains configurations for the tested state.
 

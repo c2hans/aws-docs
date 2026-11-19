@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-crea
 ---
 
 # Creating a workload estimate
-<a name="pc-create-workload"></a>
 
 This section outlines how to generate a workload estimate.
 

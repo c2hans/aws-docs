@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/logging-usin
 ---
 
 # Logging AWS RTB Fabric API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS RTB Fabric is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for RTB Fabric as events. The calls captured include calls from the RTB Fabric console and code calls to the RTB Fabric API operations. Using the information collected by CloudTrail, you can determine the request that was made to RTB Fabric, the IP address from which the request was made, when it was made, and additional details.
 

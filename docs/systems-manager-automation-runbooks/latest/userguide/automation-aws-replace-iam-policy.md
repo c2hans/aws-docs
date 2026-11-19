@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-ReplaceIAMInlinePolicy`
-<a name="automation-aws-replace-iam-policy"></a>
 
  **Description**
 

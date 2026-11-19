@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Circl
 ---
 
 # Circle
-<a name="API_Circle"></a>
 
 A circle on the earth, as defined by a center point and a radius.
 

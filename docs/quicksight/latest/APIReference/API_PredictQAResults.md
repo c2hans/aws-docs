@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Predi
 ---
 
 # PredictQAResults
-<a name="API_PredictQAResults"></a>
 
 Predicts existing visuals or generates new visuals to answer a given query.
 

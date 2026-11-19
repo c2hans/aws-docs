@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Best practices for Amazon OpenSearch Memory
-<a name="memory-best-practices"></a>
 
 This topic provides recommendations for getting good memories out of Amazon OpenSearch Memory and for keeping your users' data separate and secure. The recommendations are general guidelines and don't represent a complete solution.
 

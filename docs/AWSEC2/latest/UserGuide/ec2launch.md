@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch.html
 ---
 
 # Use the EC2Launch v1 agent to perform tasks during EC2 Windows instance launch
-<a name="ec2launch"></a>
 
 Amazon managed AMIs for Windows Server 2016 and 2019 include a set of Windows Powershell scripts called EC2Launch. EC2Launch performs tasks during the initial instance boot. For information about the EC2Launch versions that are included in AWS Windows AMIs, see the [AWS Windows AMI Reference](https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/windows-amis.html).
 

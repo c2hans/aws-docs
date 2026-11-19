@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_Q
 ---
 
 # QPluginCard
-<a name="API_qapps_QPluginCard"></a>
 
 A card in an Q App that integrates with a third-party plugin or service.
 

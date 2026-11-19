@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchGroups
-<a name="API_SearchGroups"></a>
 
 Use the `SearchGroups` operation to search groups in a specified Quick Sight namespace using the supplied filters.
 

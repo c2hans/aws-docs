@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # AWS Agent Registry: Discover and manage agents, tools, and resources
-<a name="registry"></a>
 
 **Topics**
 + [What is AWS Agent Registry?](#registry-what-is)

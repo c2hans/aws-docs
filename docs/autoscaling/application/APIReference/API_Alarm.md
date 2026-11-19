@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # Alarm
-<a name="API_Alarm"></a>
 
 Represents a CloudWatch alarm associated with a scaling policy.
 

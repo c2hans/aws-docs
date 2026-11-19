@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/error-mitig
 ---
 
 # Error mitigation techniques on IonQ devices
-<a name="error-mitigation-ionq"></a>
 
 Error mitigation involves running multiple physical circuits and combining their measurements to give an improved result.
 

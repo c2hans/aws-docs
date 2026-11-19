@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetMarketplaceRevenueShareAllocation
-<a name="API_prm_GetMarketplaceRevenueShareAllocation"></a>
 
 Retrieves the details of a specific marketplace revenue share allocation.
 

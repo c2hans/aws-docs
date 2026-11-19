@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ca-regions.html
 ---
 
 # Call analytics service quotas for the Amazon Chime SDK
-<a name="ca-regions"></a>
 
 The tables in this section list the service quotas for Amazon Chime SDK call analytics.
 

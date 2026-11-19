@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/KPI-options.html
 ---
 
 # KPI options
-<a name="KPI-options"></a>
 
 You can customize KPIs in AWS Quick to meet your business needs. You can add contextual sparklines or progress bars, assign primary and secondary values, and add conditional formatting to your KPIs.
 

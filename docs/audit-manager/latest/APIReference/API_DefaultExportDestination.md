@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_De
 ---
 
 # DefaultExportDestination
-<a name="API_DefaultExportDestination"></a>
 
 The default s3 bucket where Audit Manager saves the files that you export from evidence finder.
 

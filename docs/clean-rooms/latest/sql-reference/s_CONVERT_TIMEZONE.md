@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/s_CONVE
 ---
 
 # CONVERT\_TIMEZONE function
-<a name="s_CONVERT_TIMEZONE"></a>
 
 CONVERT\_TIMEZONE converts a timestamp from one time zone to another. The function automatically adjusts for daylight saving time.
 

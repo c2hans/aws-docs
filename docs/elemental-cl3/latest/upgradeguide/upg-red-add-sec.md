@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-re
 ---
 
 # Step P: Add the secondary Conductor Live node
-<a name="upg-red-add-sec"></a>
 
 If you have only one Conductor Live, you don't need to do this step. The downgrade process is complete when you upgrade the single Conductor Live.
 

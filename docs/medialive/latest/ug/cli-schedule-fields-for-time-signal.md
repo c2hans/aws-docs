@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/cli-schedule-fields-
 ---
 
 # Time\_signal message – payload
-<a name="cli-schedule-fields-for-time-signal"></a>
 
 For information about the meaning and values for the fields in the following JSON, see [Fields for a time\_signal message](schedule-fields-for-time-signal.md).
 

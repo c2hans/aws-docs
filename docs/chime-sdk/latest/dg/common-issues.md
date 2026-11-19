@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/common-issues.html
 ---
 
 # Understanding common issues with Amazon Chime SDK meetings
-<a name="common-issues"></a>
 
 The following sections provide troubleshooting methods for common meeting issues.
 

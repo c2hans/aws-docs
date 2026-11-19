@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ru
 ---
 
 # Run AWS Systems Manager Automation tasks synchronously from AWS Step Functions
-<a name="run-aws-systems-manager-automation-tasks-synchronously-from-aws-step-functions"></a>
 
 *Elie El khoury, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-ConfigureS3BucketLogging`
-<a name="automation-aws-configures3bucketlogging"></a>
 
  **Description**
 

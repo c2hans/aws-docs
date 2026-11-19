@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/avoid-c
 ---
 
 # Avoiding unexpected charges after Free Tier
-<a name="avoid-charges-after-free-tier"></a>
 
 Your eligibility for the AWS Free Tier expires 6 months or when your credits are fully used - whichever occurs first. You can't extend your Free Tier eligibility after this time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFormationStackDriftInformationDetails
-<a name="API_AwsCloudFormationStackDriftInformationDetails"></a>
 
 Provides information about the stack's conformity to its expected template configuration.
 

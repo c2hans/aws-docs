@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # FindingSummary
-<a name="API_FindingSummary"></a>
 
 Identifying information about the finding.
 

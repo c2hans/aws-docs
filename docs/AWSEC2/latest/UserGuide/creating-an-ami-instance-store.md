@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-
 ---
 
 # Create an Amazon S3-backed AMI
-<a name="creating-an-ami-instance-store"></a>
 
 The AMI that you specify when you launch your instance determines the type of root volume.
 

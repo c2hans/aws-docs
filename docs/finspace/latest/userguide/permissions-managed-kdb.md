@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finspace/latest/userguide/permissions-ma
 After careful consideration, we decided to end support for Amazon FinSpace, effective October 7, 2026. Amazon FinSpace will no longer accept new customers beginning October 7, 2025. As an existing customer with an Amazon FinSpace environment created before October 7, 2025, you can continue to use the service as normal. After October 7, 2026, you will no longer be able to use Amazon FinSpace. For more information, see [Amazon FinSpace end of support](https://docs.aws.amazon.com/finspace/latest/userguide/amazon-finspace-end-of-support.html).
 
 # Permissions required for Managed kdb
-<a name="permissions-managed-kdb"></a>
 
 You must have certain IAM permissions to use Managed kdb. In addition to the [finspace:\*permissions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonfinspace.html), you might need additional permissions to use the resources in your AWS account. FinSpace uses these permissions on your behalf to configure resources in your account where it needs to function. Add these permissions by using the IAM policies to IAM roles that you use to interact with Managed kdb.
 

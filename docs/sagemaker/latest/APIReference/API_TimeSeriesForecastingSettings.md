@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TimeSe
 ---
 
 # TimeSeriesForecastingSettings
-<a name="API_TimeSeriesForecastingSettings"></a>
 
 Time series forecast settings for the SageMaker Canvas application.
 

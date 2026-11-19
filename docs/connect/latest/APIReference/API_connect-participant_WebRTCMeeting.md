@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # WebRTCMeeting
-<a name="API_connect-participant_WebRTCMeeting"></a>
 
 A meeting created using the Amazon Chime SDK.
 

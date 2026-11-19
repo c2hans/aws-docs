@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/typical-use-cases.ht
 ---
 
 # Typical use cases
-<a name="typical-use-cases"></a>
 
 Scheduled input switching in a MediaLive channel supports the following use cases.
 

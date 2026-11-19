@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetNe
 ---
 
 # GetNetworkProfile
-<a name="API_GetNetworkProfile"></a>
 
 Returns information about a network profile.
 

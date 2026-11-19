@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::TrustStoreRevocation TrustStoreRevocation
-<a name="aws-properties-elasticloadbalancingv2-truststorerevocation-truststorerevocation"></a>
 
 Information about a revocation file in use by a trust store.
 

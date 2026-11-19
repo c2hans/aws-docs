@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-m
 ---
 
 # Using prompt datasets and available evaluation dimensions in model evaluation jobs
-<a name="clarify-foundation-model-evaluate-overview"></a>
 
 The following sections provide an overview of how to use automatic and human-based model evaluation jobs.
 

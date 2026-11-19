@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FieldConfig
-<a name="API_FieldConfig"></a>
 
 Describes the configuration information for a field in a table.
 

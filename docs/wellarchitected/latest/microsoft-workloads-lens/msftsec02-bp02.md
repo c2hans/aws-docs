@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTSEC02-BP02 Implement logging to track access and authorization changes
-<a name="msftsec02-bp02"></a>
 
  Regularly log, analyze, and audit user access and authorization events in your Microsoft systems. Consolidate security events from Microsoft applications and databases with other architectural components to enable comprehensive tracing during security incidents. Implement a centralized security information and event management (SIEM) system to automate event analysis, allowing your operations team to identify unusual or suspicious activities.
 

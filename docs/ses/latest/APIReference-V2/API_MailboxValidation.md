@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MailboxVa
 ---
 
 # MailboxValidation
-<a name="API_MailboxValidation"></a>
 
 Contains detailed validation information about an email address.
 

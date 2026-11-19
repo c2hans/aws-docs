@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeClassicLinkInstances
-<a name="API_DescribeClassicLinkInstances"></a>
 
 **Note**
 This action is deprecated.

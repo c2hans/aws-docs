@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Types_
 ---
 
 # Amazon SageMaker Feature Store Runtime
-<a name="API_Types_Amazon_SageMaker_Feature_Store_Runtime"></a>
 
 The following data types are supported by Amazon SageMaker Feature Store Runtime:
 +  [BatchGetRecordError](API_feature_store_BatchGetRecordError.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # DeleteFirewallDomainList
-<a name="API_route53globalresolver_DeleteFirewallDomainList"></a>
 
 Deletes a firewall domain list. This operation cannot be undone.
 

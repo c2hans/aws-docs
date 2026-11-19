@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # Getting started with context-aware rules
-<a name="context-aware-rules-getting-started"></a>
 
 This topic walks you through creating your first context-aware rule in the console and deploying it to your network firewall. To configure context-aware rules with the API instead, use `CreateRuleGroup`. See [Writing context-aware rules](context-aware-rules-writing.md) for the API shapes, and [Listing context stores and their resources](#context-aware-rules-list-apis) for the APIs that list your context stores and their resources.
 

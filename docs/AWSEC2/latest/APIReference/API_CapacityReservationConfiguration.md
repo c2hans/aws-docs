@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationConfiguration
-<a name="API_CapacityReservationConfiguration"></a>
 
 Describes the configuration of a Capacity Reservation.
 

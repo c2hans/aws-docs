@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchCreateWorkloadEstimateUsageItem
-<a name="API_AWSBCMPricingCalculator_BatchCreateWorkloadEstimateUsageItem"></a>
 
  Represents a successfully created item in a batch operation for workload estimate usage.
 

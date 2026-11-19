@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Validating.htm
 ---
 
 # AWS DMS data validation
-<a name="CHAP_Validating"></a>
 
 **Topics**
 + [Replication task statistics](#CHAP_Validating.TaskStatistics)

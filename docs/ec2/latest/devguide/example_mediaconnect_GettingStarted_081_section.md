@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_mediaconnect
 ---
 
 # Getting started with video transport streaming
-<a name="example_mediaconnect_GettingStarted_081_section"></a>
 
 The following code example shows how to:
 + Verify access to Elemental MediaConnect

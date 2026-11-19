@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Updates the configuration and settings of an existing OpenSearch application.
 

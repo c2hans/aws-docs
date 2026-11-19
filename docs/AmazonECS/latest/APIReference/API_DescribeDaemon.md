@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeDaemon
-<a name="API_DescribeDaemon"></a>
 
 Describes the specified daemon.
 

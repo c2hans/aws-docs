@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Lis
 ---
 
 # ListSourceRepositoryBranches
-<a name="API_ListSourceRepositoryBranches"></a>
 
 Retrieves a list of branches in a specified source repository.
 

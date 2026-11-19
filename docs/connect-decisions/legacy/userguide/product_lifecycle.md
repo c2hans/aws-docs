@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/produ
 ---
 
 # Product lifecycle
-<a name="product_lifecycle"></a>
 
 Product lifecycle describes the lifecycle of a product from introduction to End of Life (EoL). AWS Supply Chain supports forecasting products through it's lifecycle. To enable the Product lifecycle feature, populate the *product\_introduction\_day* and *discontinue\_day* columns in the *Product* data entity. Demand Planning uses the data from these columns to create forecast for a product when the product is active. For more information data entities, see [Data entities and columns used in AWS Supply Chain](data-model.md).
 

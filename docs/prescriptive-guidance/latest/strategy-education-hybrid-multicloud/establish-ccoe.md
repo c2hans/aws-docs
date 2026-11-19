@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Establish a CCoE
-<a name="establish-ccoe"></a>
 
 Consider evolving your cloud leadership function through a transformation office or a [Cloud Center of Excellence (CCoE)](https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/building-a-cloud-center-of-excellence-ccoe-to-transform-the-entire-enterprise.html). A CCoE develops and evangelizes an approach for implementing cloud technology at scale across an organization. For successful cloud adoption, design your CCoE to include representatives who can speak for the teams and departments involved. Start small and incrementally evolve the CCoE to meet your needs as you progress through the transformation journey. Your primary cloud provider representatives, such as your AWS account manager and solutions architect, can provide resources to guide you through the creation of your CCoE. A CCoE accelerates your ability to establish subject matter expertise, achieve buy-in, earn trust across your organization, and establish effective guidelines for meeting your mission requirements. There is no single organizational structure that works for every institution, but the following questions will help you design your own CCoE.
 + **Who should you include in your CCoE?**

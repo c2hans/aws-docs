@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Cross-Accou
 ---
 
 # Step 1: Update the subscription filters
-<a name="Cross-Account-Log_Subscription-Update-filter-Account"></a>
 
 **Note**
 This step is needed only for cross-account subscriptions for logs that are created by the services listed in [Enable logging from AWS services](AWS-logs-and-resource-policy.md). If you are not working with logs created by one of these log groups, you can skip to [Step 2: Update the existing destination access policy](Cross-Account-Log_Subscription-Update-policy-Account.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/automate-app-consis
 ---
 
 # Automate application-consistent snapshots with Data Lifecycle Manager
-<a name="automate-app-consistent-backups"></a>
 
 You can automate application-consistent snapshots with Amazon Data Lifecycle Manager by enabling pre and post scripts in your snapshot lifecycle policies that target instances.
 

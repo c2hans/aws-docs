@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_RebootDbNode
 ---
 
 # RebootDbNode
-<a name="API_RebootDbNode"></a>
 
 Reboots the specified DB node in a VM cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_MessageR
 ---
 
 # MessageReviewHandler
-<a name="API_MessageReviewHandler"></a>
 
 Configuration information for optional message review.
 

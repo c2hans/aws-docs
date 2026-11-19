@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateD
 ---
 
 # CreateDataProduct
-<a name="API_CreateDataProduct"></a>
 
 Creates a data product.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_CreateSu
 ---
 
 # CreateSubscription
-<a name="API_CreateSubscription"></a>
 
 Activates AWS Shield Advanced for an account.
 

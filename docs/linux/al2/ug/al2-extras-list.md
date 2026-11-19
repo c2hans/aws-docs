@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/al2-extras-list.html
 ---
 
 # List of Amazon Linux 2 Extras
-<a name="al2-extras-list"></a>
 
 | Extra name | Deprecated Date |
 | --- | --- |

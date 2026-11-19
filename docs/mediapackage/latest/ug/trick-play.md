@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/trick-play.html
 ---
 
 # Working with trick-play in AWS Elemental MediaPackage
-<a name="trick-play"></a>
 
 Trick-play, sometimes called trick mode, provides a visual cue to viewers as they rewind, fast-forward, or seek through content in a digital video player. This helps the person using the video player to visualize where they are in the content timeline.
 

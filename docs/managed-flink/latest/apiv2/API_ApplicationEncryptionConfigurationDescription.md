@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationEncryptionConfigurationDescription
-<a name="API_ApplicationEncryptionConfigurationDescription"></a>
 
 Describes the encryption at rest configuration.
 

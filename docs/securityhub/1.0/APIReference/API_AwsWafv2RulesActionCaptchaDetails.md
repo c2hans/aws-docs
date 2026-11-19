@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2RulesActionCaptchaDetails
-<a name="API_AwsWafv2RulesActionCaptchaDetails"></a>
 
  Specifies that AWS WAF should run a CAPTCHA check against the request.
 

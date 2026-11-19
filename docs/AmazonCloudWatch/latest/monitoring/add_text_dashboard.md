@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_t
 ---
 
 # Adding a text widget to a CloudWatch dashboard
-<a name="add_text_dashboard"></a>
 
 **To add a text widget to a dashboard**
 

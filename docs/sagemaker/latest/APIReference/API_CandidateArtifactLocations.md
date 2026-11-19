@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Candid
 ---
 
 # CandidateArtifactLocations
-<a name="API_CandidateArtifactLocations"></a>
 
 The location of artifacts for an AutoML candidate job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # WorkSpaces Applications client for Windows
-<a name="appstream-2.0-client-for-windows"></a>
 
  The WorkSpaces Applications [*client for Windows*](https://clients.amazonappstream.com/) is an application that you install on your Windows PC. This application provides additional capabilities that are not available when you access WorkSpaces Applications using a web browser. For example, the WorkSpaces Applications client enables you do the following:
 +  Use more than two monitors or 4K resolution

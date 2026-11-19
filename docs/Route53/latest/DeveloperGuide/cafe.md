@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/cafe.html
 ---
 
 # .cafe
-<a name="cafe"></a>
 
 Used by cafe businesses and those who have an interest in cafe culture.
 

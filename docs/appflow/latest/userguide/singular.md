@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/singular.html
 ---
 
 # Singular
-<a name="singular"></a>
 
 The following are the requirements and connection instructions for using Singular with Amazon AppFlow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedScaling
-<a name="API_ManagedScaling"></a>
 
 The managed scaling settings for the Auto Scaling group capacity provider.
 

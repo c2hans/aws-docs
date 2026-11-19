@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/snapstart-runtime-hooks
 ---
 
 # Implementing SnapStart hooks for container images
-<a name="snapstart-runtime-hooks-custom"></a>
 
 ## Overview
 <a name="snapstart-custom-overview"></a>

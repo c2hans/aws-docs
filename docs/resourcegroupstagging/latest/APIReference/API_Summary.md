@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # Summary
-<a name="API_Summary"></a>
 
 A count of noncompliant resources.
 

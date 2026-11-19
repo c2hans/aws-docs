@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-wsl-on-e
 ---
 
 # Install Windows Subsystem for Linux on your EC2 Windows instance
-<a name="install-wsl-on-ec2-windows-instance"></a>
 
 The Windows Subsystem for Linux (WSL) is a feature of Microsoft Windows. By installing WSL on your EC2 Windows instance, you can run native Linux tools directly on your Windows instance.
 

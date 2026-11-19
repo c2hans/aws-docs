@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::MonitoringSchedule ClusterConfig
-<a name="aws-properties-sagemaker-monitoringschedule-clusterconfig"></a>
 
 Configuration for the cluster used to run model monitoring jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCloudWatchRUMServiceRolePolicy
-<a name="AmazonCloudWatchRUMServiceRolePolicy"></a>
 
 **Description**: Grants permission to Amazon CloudWatch RUM Service to publish monitoring data to other relevant AWS services
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Strea
 ---
 
 # StreamingLoggingConfig
-<a name="API_StreamingLoggingConfig"></a>
 
 A complex type that controls whether access logs are written for this streaming distribution.
 

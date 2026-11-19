@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/external-connecti
 ---
 
 # Requesting packages from external connections
-<a name="external-connection-requesting-packages"></a>
 
 The following sections describe how to request a package from an external connection and expected CodeArtifact behavior when requesting a package.
 

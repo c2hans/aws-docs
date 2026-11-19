@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example-ssml-synthesize-
 ---
 
 # Synthesizing an SSML-enhanced document
-<a name="example-ssml-synthesize-document"></a>
 
 For longer input text, you may find it easier to save your SSML content to a file and simply specify the file name in the `synthesize-speech` command. For example you could save the following to a file called `example.xml`:
 

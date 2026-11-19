@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanCo
 ---
 
 # ScanConfigurationRecoveryPoint
-<a name="API_ScanConfigurationRecoveryPoint"></a>
 
 Contains information about the recovery point configuration used in the scan.
 

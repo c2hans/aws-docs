@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Update
 ---
 
 # UpdateAppInstanceBot
-<a name="API_UpdateAppInstanceBot"></a>
 
 Updates the name and metadata of an `AppInstanceBot`.
 

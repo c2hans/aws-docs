@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Deploy using AWS Launch Wizard
-<a name="deploy-using-aws-launch-wizard"></a>
 
 This solution features a guided deployment process using AWS Launch Wizard. Follow these steps to deploy Dynamic Image Transformation for Amazon CloudFront into your account.
 

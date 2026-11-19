@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Data security and risk management
-<a name="data-security-and-risk-management"></a>
 
 Within an AWS environment, you will probably have accounts with differing compliance and security requirements. For example, you might have a developer sandbox, and an account hosting the production environment for a highly regulated workload, such as processing payments. By isolating them into different accounts, you can [apply distinct security controls](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html#apply-distinct-security-controls-by-environment), [constrain access to sensitive data](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html#constrain-access-to-sensitive-data), and reduce the scope of audit for regulated workloads.
 

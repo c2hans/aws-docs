@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/amplitude-configuring-con
 ---
 
 # Configuring Amplitude connections
-<a name="amplitude-configuring-connections"></a>
 
 Amplitude connections use basic authentication. You store your Amplitude credential in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

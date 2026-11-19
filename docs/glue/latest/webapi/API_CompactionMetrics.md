@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CompactionMetrics
 ---
 
 # CompactionMetrics
-<a name="API_CompactionMetrics"></a>
 
 A structure that contains compaction metrics for the optimizer run.
 

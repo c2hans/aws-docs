@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/ascp-exa
 ---
 
 # AWS Secrets and Configuration Provider code examples
-<a name="ascp-examples"></a>
 
 ## ASCP authentication and access control examples
 <a name="ascp-auth-access-examples"></a>

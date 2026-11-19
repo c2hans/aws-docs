@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # AWS CodeBuild build and test action reference
-<a name="action-reference-CodeBuild"></a>
 
 Allows you to run builds and tests as part of your pipeline. When you run a CodeBuild build or test action, commands specified in the buildspec are run inside of a CodeBuild container. All artifacts that are specified as input artifacts to a CodeBuild action are available inside of the container running the commands. CodeBuild can provide either a build or test action. For more information, see the [AWS CodeBuild User Guide](https://docs.aws.amazon.com/codebuild/latest/userguide/).
 

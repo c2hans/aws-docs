@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/testing-permis
 ---
 
 # Testing your permissions
-<a name="testing-permissions"></a>
 
 To use AWS KMS, you must have credentials that AWS can use to authenticate your API requests. The credentials must include the permission to access KMS keys and aliases. The permissions are determined by key policies, IAM policies, grants, and cross-account access controls. In addition to controlling access to KMS keys, you can control access to your CloudHSM, and to your custom key stores.
 

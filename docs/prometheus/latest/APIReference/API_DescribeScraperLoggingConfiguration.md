@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Descr
 ---
 
 # DescribeScraperLoggingConfiguration
-<a name="API_DescribeScraperLoggingConfiguration"></a>
 
 Describes the logging configuration for a Amazon Managed Service for Prometheus scraper.
 

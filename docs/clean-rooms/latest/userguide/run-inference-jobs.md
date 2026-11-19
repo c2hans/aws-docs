@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/run-inferen
 ---
 
 # Running inference on a trained model in AWS Clean Rooms ML
-<a name="run-inference-jobs"></a>
 
 Members with the ability to run queries can also initiate inference job once the training job is complete. They pick the inference dataset against which they want to run inference and reference the trained model outputs that they’d like to run inference container with.
 

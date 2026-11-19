@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Configure CloudWatch investigations
-<a name="Investigations-GetStarted"></a>
 
 Configuring CloudWatch investigations creates an investigation group that CloudWatch investigations will use to access telemetry and aggregate data related to the investigation. Before you create the investigation group, you can walk-through a sample investigation to get an overall idea of how they work.
 

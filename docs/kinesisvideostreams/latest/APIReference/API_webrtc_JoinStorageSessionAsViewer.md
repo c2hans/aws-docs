@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # JoinStorageSessionAsViewer
-<a name="API_webrtc_JoinStorageSessionAsViewer"></a>
 
 **Note**
 Before using this API, you must call the `GetSignalingChannelEndpoint` API to request the WEBRTC endpoint. You then specify the endpoint and region in your `JoinStorageSessionAsViewer` API request.

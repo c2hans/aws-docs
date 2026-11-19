@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupSSMDeploymentS3BucketRolePolicy
-<a name="AWSQuickSetupSSMDeploymentS3BucketRolePolicy"></a>
 
 **Description**: This policy grants permissions for listing all S3 buckets in an account; and for managing and retrieving information about specific buckets in the principal account that are managed through AWS CloudFormation templates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Applying the framework
-<a name="applying-framework"></a>
 
 The best way to apply the resilience analysis framework is by starting with a standard set of questions, organized by failure category, that you should ask about each component in the user story that you're analyzing. If some questions don't apply to every component in your workload, use the questions that are the most applicable.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Do you need a platform team?
-<a name="platform-team"></a>
 
 Some companies have a team that owns and maintains code, infrastructure, and processes that other teams adopt to work on micro-frontends. Common responsibilities include:
 + Create and maintain a continuous integration and continuous delivery (CI/CD) pipeline that you can use with repositories containing micro-frontends. Build and test code changes, and release them in multiple environments.

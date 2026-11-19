@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDeleteTypeValue
-<a name="API_AutomatedReasoningPolicyDeleteTypeValue"></a>
 
 Represents a value to be removed from an existing custom type in the policy.
 

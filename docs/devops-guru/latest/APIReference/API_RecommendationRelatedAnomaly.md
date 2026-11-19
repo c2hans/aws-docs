@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reco
 ---
 
 # RecommendationRelatedAnomaly
-<a name="API_RecommendationRelatedAnomaly"></a>
 
  Information about an anomaly that is related to a recommendation.
 

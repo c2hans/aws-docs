@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark810-rel
 ---
 
 # AWS runtime for Apache Spark (emr-spark-8.1.0)
-<a name="emr-spark810-release"></a>
 
 ## emr-spark-8.1.0 supported lifecycle
 <a name="emr-spark810-supported-lifecycle"></a>

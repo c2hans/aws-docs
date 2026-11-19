@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateAndAtt
 ---
 
 # CreateAndAttachS3AccessPointOpenZFSConfiguration
-<a name="API_CreateAndAttachS3AccessPointOpenZFSConfiguration"></a>
 
 Specifies the FSx for OpenZFS volume that the S3 access point will be attached to, and the file system user identity.
 

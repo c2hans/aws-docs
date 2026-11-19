@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_A
 ---
 
 # AddOn
-<a name="API_AddOn"></a>
 
 Describes an add-on that is enabled for an Amazon Lightsail resource.
 

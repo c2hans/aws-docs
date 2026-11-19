@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-migrate-karpen
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Migrate from Karpenter to EKS Auto Mode using kubectl
-<a name="auto-migrate-karpenter"></a>
 
 This topic walks you through the process of migrating workloads from Karpenter to Amazon EKS Auto Mode using kubectl. The migration can be performed gradually, allowing you to move workloads at your own pace while maintaining cluster stability and application availability throughout the transition.
 

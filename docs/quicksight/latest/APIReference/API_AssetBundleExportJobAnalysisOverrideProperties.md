@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobAnalysisOverrideProperties
-<a name="API_AssetBundleExportJobAnalysisOverrideProperties"></a>
 
 Controls how a specific `Analysis` resource is parameterized in the returned CloudFormation template.
 

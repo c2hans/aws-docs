@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-p
 ---
 
 # Automated patching for mutable instances in the hybrid cloud using AWS Systems Manager
-<a name="introduction"></a>
 
 *Chandra Allaka and Khurram Nizami, Amazon Web Services*
 

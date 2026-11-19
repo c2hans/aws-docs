@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/examples.pbs-da
 ---
 
 # Public broadcast satellite utilizing a dataflow endpoint (demodulated and decoded)
-<a name="examples.pbs-dataflow-endpoint-demod-decode"></a>
 
  This example builds off the analysis done in the [JPSS-1 - Public broadcast satellite (PBS) - Evaluation](examples.md#examples.pbs-definition) section of the user guide.
 

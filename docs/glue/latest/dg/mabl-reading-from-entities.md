@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mabl-reading-from-entitie
 ---
 
 # Reading from mabl entities
-<a name="mabl-reading-from-entities"></a>
 
 **Prerequisites**
 

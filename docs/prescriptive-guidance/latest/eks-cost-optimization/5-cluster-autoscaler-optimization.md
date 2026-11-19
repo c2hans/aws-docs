@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Cluster Autoscaler optimization
-<a name="5-cluster-autoscaler-optimization"></a>
 
 For clusters still running Cluster Autoscaler, the default configuration prioritizes safety over cost. Tuning these parameters controls how quickly underutilized nodes are reclaimed and how efficiently new capacity is provisioned.
 

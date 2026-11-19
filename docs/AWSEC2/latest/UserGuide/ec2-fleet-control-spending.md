@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-contro
 ---
 
 # Set a spending limit for your EC2 Fleet or Spot Fleet
-<a name="ec2-fleet-control-spending"></a>
 
 You can set a limit on how much you're willing to spend per hour on your EC2 Fleet or Spot Fleet. When your spending limit is reached, the fleet stops launching instances, even if the target capacity hasn't been reached.
 

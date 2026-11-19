@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-exampl
 ---
 
 # Using an Amazon S3 bucket as a static web host with AWS SDK for PHP Version 3
-<a name="s3-examples-static-web-host"></a>
 
 You can host a static website on Amazon S3. To learn more, see [Hosting a Static Website on Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html).
 

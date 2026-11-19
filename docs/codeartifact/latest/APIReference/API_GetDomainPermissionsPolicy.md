@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Get
 ---
 
 # GetDomainPermissionsPolicy
-<a name="API_GetDomainPermissionsPolicy"></a>
 
  Returns the resource policy attached to the specified domain.
 

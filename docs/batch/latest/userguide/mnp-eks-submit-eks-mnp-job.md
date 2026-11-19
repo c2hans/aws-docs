@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/mnp-eks-submit-ek
 ---
 
 # Submit an Amazon EKS MNP job
-<a name="mnp-eks-submit-eks-mnp-job"></a>
 
 To submit a job using the registered job definition, enter the following command. Replace the value of <EKS\_JOB\_QUEUE\_NAME> with the name or ARN of a pre-existing job queue associated with an Amazon EKS compute environment.
 

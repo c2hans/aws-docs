@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateA
 ---
 
 # DateAxisOptions
-<a name="API_DateAxisOptions"></a>
 
 The options that determine how a date axis is displayed.
 

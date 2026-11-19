@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CustomEntityType.
 ---
 
 # CustomEntityType
-<a name="API_CustomEntityType"></a>
 
 An object representing a custom pattern for detecting sensitive data across the columns and rows of your structured data.
 

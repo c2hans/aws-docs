@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Ev
 ---
 
 # Amazon RDS event categories and event messages for Aurora
-<a name="USER_Events.Messages"></a>
 
 Amazon RDS generates a significant number of events in categories that you can subscribe to using the Amazon RDS Console, AWS CLI, or the API.
 

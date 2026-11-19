@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Member
 ---
 
 # MembershipDatasources
-<a name="API_MembershipDatasources"></a>
 
 Details on data source packages for members of the behavior graph.
 

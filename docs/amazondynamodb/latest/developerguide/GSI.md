@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI
 ---
 
 # Using Global Secondary Indexes in DynamoDB
-<a name="GSI"></a>
 
 Some applications might need to perform many kinds of queries, using a variety of different attributes as query criteria. To support these requirements, you can create one or more* global secondary indexes* and issue `Query` requests against these indexes in Amazon DynamoDB.
 

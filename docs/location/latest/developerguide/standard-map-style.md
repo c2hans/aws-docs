@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/standard-
 ---
 
 # Standard map style
-<a name="standard-map-style"></a>
 
 The Standard map style offers a clean, modern, and general-purpose map design that can seamlessly fit into almost any application or website.
 

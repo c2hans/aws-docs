@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/view-vpc-resource-m
 ---
 
 # Visualize the resources in your VPC
-<a name="view-vpc-resource-map"></a>
 
 This section describes how you can see a visual representation of the resources in your VPC using the **Resource map** tab. The following resources are visible in the resource map:
 + VPC

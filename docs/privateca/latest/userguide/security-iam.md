@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/security-iam.
 ---
 
 # Identity and Access Management (IAM) for AWS Private Certificate Authority
-<a name="security-iam"></a>
 
  Access to AWS Private CA requires credentials that AWS can use to authenticate your requests. The following topics provide details on how you can use [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) to help secure your private certificate authorities (CAs) by controlling who can access them.
 

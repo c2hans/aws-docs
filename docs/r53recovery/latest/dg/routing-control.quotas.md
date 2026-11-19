@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.qu
 ---
 
 # Quotas for routing control
-<a name="routing-control.quotas"></a>
 
 Routing control in Amazon Application Recovery Controller (ARC) is subject to the following quotas (formerly referred to as limits).
 

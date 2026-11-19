@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_NdiConfig.ht
 ---
 
 # NdiConfig
-<a name="API_NdiConfig"></a>
 
 Specifies the configuration settings for NDI sources and outputs.
 

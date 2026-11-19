@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-best
 ---
 
 # Amazon ECS best practices
-<a name="ecs-best-practices"></a>
 
 You can use any of the following pages to learn the most important operational best practices for Amazon ECS networking.
 

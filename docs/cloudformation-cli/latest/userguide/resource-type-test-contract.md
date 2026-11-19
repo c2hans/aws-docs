@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Resource type handler contract
-<a name="resource-type-test-contract"></a>
 
 The resource type handler contract specifies the expected and required behavior to which a resource must adhere in each given event handler. It defines a set of specific, unambiguous rules with which `create`, `read`, `update`, `delete` and `list` resource handlers must comply. Following the contract will allow customers to interact with all resource types under a uniform set of behaviors and expectations, and prevents creation of unintended or duplicate resources.
 

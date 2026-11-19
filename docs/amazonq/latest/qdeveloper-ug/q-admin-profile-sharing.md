@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-admin-pro
 ---
 
 # Enabling profile sharing in Amazon Q Developer
-<a name="q-admin-profile-sharing"></a>
 
 **Note**
 This section does not apply to personal accounts (Builder IDs).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smart-crop-get-ready
 ---
 
 # Get ready
-<a name="smart-crop-get-ready"></a>
 
 ## Pricing
 <a name="smart-crop-pricing"></a>

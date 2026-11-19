@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetHubCon
 ---
 
 # GetHubConfiguration
-<a name="API_GetHubConfiguration"></a>
 
 Get a hub configuration.
 

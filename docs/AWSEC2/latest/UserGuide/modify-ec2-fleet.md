@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-ec2-fleet
 ---
 
 # Modify an EC2 Fleet
-<a name="modify-ec2-fleet"></a>
 
 You can modify the total target capacity, Spot capacity, and On-Demand capacity of an EC2 Fleet. You can also modify whether running instances should be terminated if the new total target capacity is reduced below the current size of the fleet.
 

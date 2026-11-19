@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Channel
 ---
 
 # Channel
-<a name="API_Channel"></a>
 
 Notification medium for users to get alerted for events that occur in application profile. We support SNS topic as a notification channel.
 

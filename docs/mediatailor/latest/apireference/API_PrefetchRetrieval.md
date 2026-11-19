@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Pref
 ---
 
 # PrefetchRetrieval
-<a name="API_PrefetchRetrieval"></a>
 
 A complex type that contains settings governing when MediaTailor prefetches ads, and which dynamic variables that MediaTailor includes in the request to the ad decision server.
 

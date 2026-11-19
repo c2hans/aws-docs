@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ListAliases
-<a name="API_ListAliases"></a>
 
 Lists the aliases for all keys in the caller's AWS account and AWS Region. You can filter the aliases by `keyARN`. For more information, see [Using aliases](https://docs.aws.amazon.com/payment-cryptography/latest/userguide/keys-managealias.html) in the * AWS Payment Cryptography User Guide*.
 

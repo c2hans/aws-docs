@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/detach-input.html
 ---
 
 # Detaching an input
-<a name="detach-input"></a>
 
 You can detach an input from a MediaLive channel. The channel must be idle.
 

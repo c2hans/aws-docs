@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/con
 ---
 
 # Getting started with CloudWatch Contributor Insights for DynamoDB
-<a name="contributorinsights_tutorial"></a>
 
 This section describes how to enable and use Amazon CloudWatch Contributor Insights in different modes to meet your monitoring needs using the Amazon DynamoDB console or the AWS Command Line Interface (AWS CLI).
 

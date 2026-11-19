@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/severity-
 ---
 
 # Severity ratings and CVSS metrics
-<a name="severity-and-cvss"></a>
 
 AWS Security Agent assigns each finding a severity rating, and penetration test findings also include a CVSS (Common Vulnerability Scoring System) metrics breakdown. Use this reference to interpret those values when you review findings.
 

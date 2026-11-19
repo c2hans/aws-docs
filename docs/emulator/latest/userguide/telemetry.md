@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/telemetry.html
 ---
 
 # Telemetry in AWS Emulator
-<a name="telemetry"></a>
 
  AWS Emulator collects usage data and reports it to AWS. This data never includes what’s in your requests or responses, your code, your credentials, or personal data. It also can’t be used to identify you or tie activity to your account or organization. We look at it only in aggregate, to find gaps in the emulator and spot issues that affect many users. Telemetry is on by default. To learn what data is collected and how to turn telemetry off, see [What is collected](#telemetry-collected) and [Turning telemetry off](#telemetry-opt-out).
 

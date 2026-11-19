@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/ontraport-reading-from-en
 ---
 
 # Reading from Ontraport entities
-<a name="ontraport-reading-from-entities"></a>
 
 **Prerequisites**
 

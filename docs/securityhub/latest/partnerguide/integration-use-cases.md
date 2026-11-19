@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/partnerguide/integrat
 ---
 
 # Integration use cases and required permissions
-<a name="integration-use-cases"></a>
 
 AWS Security Hub CSPM allows AWS customers to receive findings from APN Partners. The partner's products might run either inside or outside of the customer's AWS account. The permission configuration in the customer's account differs based on the model that the partner product uses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetDomai
 ---
 
 # GetDomainName
-<a name="API_GetDomainName"></a>
 
 Retrieves a custom `DomainName` object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # BlobPayload
-<a name="API_BlobPayload"></a>
 
 A document stored in Amazon S3, such as a PDF, PNG, or JPEG file, and its media type.
 

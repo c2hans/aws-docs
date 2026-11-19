@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/update-res
 ---
 
 # Update a resource set
-<a name="update-resource-set"></a>
 
 The following is an example of a request to update a resource set, and the response.
 

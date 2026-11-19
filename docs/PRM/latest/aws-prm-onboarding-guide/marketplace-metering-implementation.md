@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/mark
 ---
 
 # Implementation
-<a name="marketplace-metering-implementation"></a>
 
 Partner Revenue Measurement integrates with AWS Marketplace Metering to measure service usage and attribute the consumption to your product, without requiring any additional inputs such as tagging resources or implementing user agents. This is a zero-touch experience that leverages existing product metadata for revenue attribution.
 

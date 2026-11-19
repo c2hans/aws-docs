@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/applica
 ---
 
 # Tag resources in Application Manager
-<a name="application-manager-working-tags"></a>
 
 You can quickly add or delete tags on applications and AWS resources in Application Manager. Use the following procedure to add a tag to or delete a tag from an application and all AWS resources in that application.
 

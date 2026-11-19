@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AmazonRedshiftNod
 ---
 
 # AmazonRedshiftNodeData
-<a name="API_AmazonRedshiftNodeData"></a>
 
 Specifies an Amazon Redshift node.
 

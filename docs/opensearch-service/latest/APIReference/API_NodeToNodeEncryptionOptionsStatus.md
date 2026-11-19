@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # NodeToNodeEncryptionOptionsStatus
-<a name="API_NodeToNodeEncryptionOptionsStatus"></a>
 
 Status of the node-to-node encryption options for the specified domain.
 

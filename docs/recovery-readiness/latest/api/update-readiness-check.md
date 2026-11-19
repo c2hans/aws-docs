@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/update-rea
 ---
 
 # Update a readiness check
-<a name="update-readiness-check"></a>
 
 The following is an example of a request to update a readiness check, and the response.
 

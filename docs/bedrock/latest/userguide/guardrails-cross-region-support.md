@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-cros
 ---
 
 # Supported Regions for cross-Region guardrail inference
-<a name="guardrails-cross-region-support"></a>
 
 Cross-Region inference with Amazon Bedrock Guardrails routes your guardrail policy evaluations by using compute across different AWS Regions.
 

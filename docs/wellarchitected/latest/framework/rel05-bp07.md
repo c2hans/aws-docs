@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel05-b
 ---
 
 # REL05-BP07 Implement emergency levers
-<a name="rel05-bp07"></a>
 
  An emergency lever is a rapid, pre-tested process that reduces availability impact during an incident. It disables, throttles, or changes the behavior of a component or dependency, so you can shed a non-critical failure or absorb an unexpected demand spike. Your workload keeps performing its business-critical functions while the lever is active.
 

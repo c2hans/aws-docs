@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerTrainingSessionAccess
-<a name="AmazonSageMakerTrainingSessionAccess"></a>
 
 **Description**: Provides permissions for a caller identity to create and manage Amazon SageMaker training sessions, run training and sampling operations, use customer managed AWS KMS keys through SageMaker, pass an execution role to SageMaker, publish model packages, access public hub content, and manage SageMaker default Amazon S3 buckets.
 

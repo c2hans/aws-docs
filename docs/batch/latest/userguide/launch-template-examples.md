@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/launch-template-e
 ---
 
 # Reference: Amazon EC2 launch template examples
-<a name="launch-template-examples"></a>
 
 The following are example MIME multi-part files that you can use to create your own templates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Lo
 ---
 
 # LogLocation
-<a name="API_LogLocation"></a>
 
 The log location for a task, specifying where task execution logs are stored.
 

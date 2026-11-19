@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-endpo
 ---
 
 # Edit a standard endpoint
-<a name="about-endpoints-adding-endpoints-edit"></a>
 
 This section explains how to edit an endpoint on the AWS Global Accelerator console. If you want to use API operations with AWS Global Accelerator, see the [AWS Global Accelerator API Reference](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
 

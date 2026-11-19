@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_AcceptResour
 ---
 
 # AcceptResourceShareInvitation
-<a name="API_AcceptResourceShareInvitation"></a>
 
 Accepts an invitation to a resource share from another AWS account. After you accept the invitation, the resources included in the resource share are available to interact with in the relevant AWS Management Consoles and tools.
 

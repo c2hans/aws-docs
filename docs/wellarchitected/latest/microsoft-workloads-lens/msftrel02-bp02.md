@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTREL02-BP02 Develop a strategic plan for quickly reinstating service availability during outages
-<a name="msftrel02-bp02"></a>
 
  Microsoft workloads require specialized disaster recovery strategies due to their unique architectural dependencies and state management requirements. SQL Server Always On Availability Groups, Active Directory domain controllers, Exchange Database Availability Groups, and Windows Failover Clusters each have specific recovery procedures that differ from generic cloud workload restoration, requiring tailored approaches for rapid service reinstatement.
 

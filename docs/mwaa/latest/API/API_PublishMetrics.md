@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_PublishMetrics.html
 ---
 
 # PublishMetrics
-<a name="API_PublishMetrics"></a>
 
  *This action has been deprecated.*
 

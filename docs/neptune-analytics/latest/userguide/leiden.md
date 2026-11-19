@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/leide
 ---
 
 # Leiden algorithm
-<a name="leiden"></a>
 
  The Leiden algorithm is an improvement over the [Louvain algorithm](louvain.md) that guarantees well-connected communities. It adds a refinement phase before each aggregation step. This avoids Louvain's known shortcoming of producing arbitrarily badly connected or disconnected clusters. Like Louvain, it optimizes modularity through hierarchical clustering and can run in both weighted and unweighted modes. Leiden is particularly suited for applications where community cohesion matters. Use cases include detecting tightly-knit fraud rings in financial networks, identifying functionally coherent modules in biological systems, and discovering well-connected user groups in social platforms.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-s
 ---
 
 # Deregister a delegated administrator for Quick Setup
-<a name="quick-setup-deregister-delegated-administrator"></a>
 
 Use the following procedure to deregister a delegated administrator for Quick Setup.
 

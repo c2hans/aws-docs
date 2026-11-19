@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergStructFiel
 ---
 
 # IcebergStructField
-<a name="API_IcebergStructField"></a>
 
 Defines a single field within an Iceberg table schema, including its identifier, name, data type, nullability, and documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # ListRequestedServiceQuotaChangeHistoryByQuota
-<a name="API_ListRequestedServiceQuotaChangeHistoryByQuota"></a>
 
 Retrieves the quota increase requests for the specified quota. Filter responses to return quota requests at either the account level, resource level, or all levels.
 

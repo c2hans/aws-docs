@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListTestRecommendations
-<a name="API_ListTestRecommendations"></a>
 
 Lists the test recommendations for the AWS Resilience Hub application.
 

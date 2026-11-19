@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/auth-conc
 ---
 
 # Auth concepts
-<a name="auth-concepts"></a>
 
 The following topics provide foundational knowledge for implementing authentication in Amazon Location Service. Understanding these concepts helps you choose the right approach for your application and configure access securely.
 

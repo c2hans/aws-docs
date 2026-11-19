@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetReviewTemplateLensReview
-<a name="API_GetReviewTemplateLensReview"></a>
 
 Get a lens review associated with a review template.
 

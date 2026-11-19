@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AmendBenefitApplication
-<a name="API_benefits_AmendBenefitApplication"></a>
 
 Modifies an existing benefit application by applying amendments to specific fields while maintaining revision control. The following fields paths can be modified using this API based on benefit program type.
 

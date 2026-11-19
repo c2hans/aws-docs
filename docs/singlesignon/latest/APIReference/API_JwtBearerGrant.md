@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Jwt
 ---
 
 # JwtBearerGrant
-<a name="API_JwtBearerGrant"></a>
 
 A structure that defines configuration settings for an application that supports the JWT Bearer Token Authorization Grant. The `AuthorizedAudience` field is the aud claim. For more information, see [RFC 7523](https://datatracker.ietf.org/doc/html/rfc7523).
 

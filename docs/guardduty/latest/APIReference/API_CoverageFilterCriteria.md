@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Covera
 ---
 
 # CoverageFilterCriteria
-<a name="API_CoverageFilterCriteria"></a>
 
 Represents the criteria used in the filter.
 

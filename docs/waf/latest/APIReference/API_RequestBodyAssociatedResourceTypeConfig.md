@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RequestBodyA
 ---
 
 # RequestBodyAssociatedResourceTypeConfig
-<a name="API_RequestBodyAssociatedResourceTypeConfig"></a>
 
 Customizes the maximum size of the request body that your protected CloudFront, API Gateway, Amazon Cognito, App Runner, and Verified Access resources forward to AWS WAF for inspection. The default size is 16 KB (16,384 bytes). You can change the setting for any of the available resource types.
 

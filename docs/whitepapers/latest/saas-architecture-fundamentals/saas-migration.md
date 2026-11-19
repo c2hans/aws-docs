@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # SaaS migration
-<a name="saas-migration"></a>
 
  Many of the providers that adopt SaaS migrate to SaaS from a traditional installed software model (described previously). For these providers, it’s especially important to have good alignment on the core principles of SaaS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # NotifyParameters
-<a name="API_NotifyParameters"></a>
 
 The delivery parameters for the preapproved notify-template route over the SMS or voice channels.
 

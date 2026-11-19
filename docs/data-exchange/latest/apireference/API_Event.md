@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ev
 ---
 
 # Event
-<a name="API_Event"></a>
 
 What occurs to start an action.
 

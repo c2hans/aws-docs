@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Replicator operations
-<a name="msk-replicator-manage"></a>
 
 The topics in this section describe how to perform common MSK Replicator operations. For a list of all the operations that you can perform on an MSK Replicator, see the [Amazon MSK API Reference](https://docs.aws.amazon.com/msk/1.0/apireference-replicator/v1-replicators.html).
 

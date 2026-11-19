@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # DeleteBrandProfileAttribute
-<a name="API_DeleteBrandProfileAttribute"></a>
 
 Deletes a brand profile attribute. If the attribute stores media, this operation also deletes the associated media.
 

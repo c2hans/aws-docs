@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_SingleIn
 ---
 
 # SingleInstanceHealth
-<a name="API_SingleInstanceHealth"></a>
 
 Detailed health information about an Amazon EC2 instance in your Elastic Beanstalk environment.
 

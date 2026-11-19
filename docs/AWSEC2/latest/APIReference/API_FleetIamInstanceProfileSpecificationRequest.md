@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetIamI
 ---
 
 # FleetIamInstanceProfileSpecificationRequest
-<a name="API_FleetIamInstanceProfileSpecificationRequest"></a>
 
 Describes an IAM instance profile. Supported only for fleets of type `instant`.
 

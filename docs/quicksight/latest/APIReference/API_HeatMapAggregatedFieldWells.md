@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_HeatM
 ---
 
 # HeatMapAggregatedFieldWells
-<a name="API_HeatMapAggregatedFieldWells"></a>
 
 The aggregated field wells of a heat map.
 

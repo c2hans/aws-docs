@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-quo
 ---
 
 # IAM Access Analyzer quotas
-<a name="access-analyzer-quotas"></a>
 
 IAM Access Analyzer has the following quotas:
 

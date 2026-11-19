@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonKinesisFullAccess
-<a name="AmazonKinesisFullAccess"></a>
 
 **Description**: Provides full access to all streams via the AWS Management Console.
 

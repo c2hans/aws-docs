@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_T
 ---
 
 # TransitGatewayRegistration
-<a name="API_TransitGatewayRegistration"></a>
 
 Describes the registration of a transit gateway to a global network.
 

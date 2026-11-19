@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DynamoDBCapacityDetails
-<a name="API_DynamoDBCapacityDetails"></a>
 
 The DynamoDB reservations that AWS recommends that you purchase.
 

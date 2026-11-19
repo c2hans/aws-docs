@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/working-with-bot
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Key differences
-<a name="working-with-boto3-differences"></a>
 
 AWS SDK for Python (Boto3) and the AWS SDK for Python v4 have different Python client interfaces. The AWS SDK for Python v4 also adds asynchronous clients. The following table summarizes the API-model and execution differences that affect your application code. The operation, request, response, streaming, and error rows compare generated AWS SDK for Python v4 clients with Boto3 low-level clients.
 

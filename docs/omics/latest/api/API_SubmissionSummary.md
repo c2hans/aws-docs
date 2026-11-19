@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_SubmissionSummary.h
 ---
 
 # SubmissionSummary
-<a name="API_SubmissionSummary"></a>
 
 A summary of the submissions in a batch.
 

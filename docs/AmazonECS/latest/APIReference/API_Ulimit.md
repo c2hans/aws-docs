@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Ulimit
 ---
 
 # Ulimit
-<a name="API_Ulimit"></a>
 
 The `ulimit` settings to pass to the container.
 

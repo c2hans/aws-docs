@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Inge
 ---
 
 # IngestConfiguration
-<a name="API_IngestConfiguration"></a>
 
 Object specifying an ingest configuration.
 

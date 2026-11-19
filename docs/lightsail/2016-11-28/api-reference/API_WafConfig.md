@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_W
 ---
 
 # WafConfig
-<a name="API_WafConfig"></a>
 
 Describes the Web Application Firewall (WAF) configuration of a Lightsail distribution.
 

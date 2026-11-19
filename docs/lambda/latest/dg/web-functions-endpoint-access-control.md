@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-endpoint-
 ---
 
 # Lambda Web Function endpoint access control
-<a name="web-functions-endpoint-access-control"></a>
 
 You can control access to your AWS Lambda Web Function endpoints using the `AuthType` you set on each endpoint. Depending on the authentication type, you can also attach a resource-based policy to the Web Function to control who can invoke an endpoint.
 

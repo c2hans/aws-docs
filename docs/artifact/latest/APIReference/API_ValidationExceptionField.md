@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Validat
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Validation exception message and name.
 

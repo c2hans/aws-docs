@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-fi
 ---
 
 # Determining the severity level of an exposure finding
-<a name="exposure-findings-severity"></a>
 
 AWS Security Hub assigns each exposure finding a default severity of `CRITICAL`, `HIGH`, `MEDIUM`, or `LOW`. Exposure findings with a severity of `INFORMATIONAL` are not published. Security Hub determines the severity of an exposure finding by combining two dimensions, **likelihood** and **impact**, on a risk matrix. Likelihood reflects how easily the exposure can be exploited, and impact reflects the magnitude of harm if it is exploited.
 

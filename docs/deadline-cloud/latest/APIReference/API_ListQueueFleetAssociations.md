@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListQueueFleetAssociations
-<a name="API_ListQueueFleetAssociations"></a>
 
 Lists queue-fleet associations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/startupadvisor/latest/userguide/setting-
 ---
 
 # Setting up AWS Startup Advisor
-<a name="setting-up"></a>
 
 Before you use AWS Startup Advisor, review the following. You can use AWS Startup Advisor without an AWS account, but an AWS account is recommended, and it is required to deploy and build on AWS.
 

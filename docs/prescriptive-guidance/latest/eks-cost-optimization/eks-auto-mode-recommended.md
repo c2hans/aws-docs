@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Amazon EKS Auto Mode (managed option)
-<a name="eks-auto-mode-recommended"></a>
 
 [Amazon EKS Auto Mode](https://aws.amazon.com/eks/auto-mode/) (launched December 2024) automates compute management entirely — no Karpenter installation, no NodePool configuration, no autoscaler upgrades. AWS handles instance selection, Spot/On-Demand mixing, consolidation, and node patching automatically. EKS Auto Mode is best suited for teams without dedicated platform engineering capacity, or for dev/test environments where operational simplicity outweighs fine-grained cost control. It does not support separate NodePool configurations, custom disruption budgets, workload-specific taints, or explicit Spot/On-Demand ratio control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshSer
 ---
 
 # MeshServiceDiscovery
-<a name="API_MeshServiceDiscovery"></a>
 
 An object that represents the service discovery information for a service mesh.
 

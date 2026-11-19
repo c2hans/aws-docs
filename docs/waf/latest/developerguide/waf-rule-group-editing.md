@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-group
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Editing a rule group
-<a name="waf-rule-group-editing"></a>
 
 To add or remove rules from a rule group or change configuration settings, access the rule group using the procedure on this page.
 

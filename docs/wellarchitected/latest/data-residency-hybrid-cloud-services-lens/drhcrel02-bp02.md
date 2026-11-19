@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCREL02-BP02 Use AWS Direct Connect with redundant tunnels and connections to the AWS Region for Outposts control plane actions and high availability requirements
-<a name="drhcrel02-bp02"></a>
 
  AWS Outposts maintains connectivity to its parent Region through encrypted service link tunnels to anchor points in designated Availability Zones, requiring redundant network paths and dynamic routing for high availability of control plane operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Loading data into Aurora PostgreSQL Limitless Database
-<a name="limitless-load"></a>
 
 You can load data into Aurora PostgreSQL Limitless Database tables by using the `COPY` command or by using the data loading utility.
 

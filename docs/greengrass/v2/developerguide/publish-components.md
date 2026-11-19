@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/publish-com
 ---
 
 # Publish components to deploy to your core devices
-<a name="publish-components"></a>
 
 After you build or complete a version of a component, you can publish it to the AWS IoT Greengrass service. Then, you can deploy it to Greengrass core devices.
 

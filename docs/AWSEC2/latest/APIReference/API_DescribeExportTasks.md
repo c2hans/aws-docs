@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeE
 ---
 
 # DescribeExportTasks
-<a name="API_DescribeExportTasks"></a>
 
 Describes the specified export instance tasks or all of your export instance tasks.
 

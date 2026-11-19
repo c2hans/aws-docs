@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-cancelres
 ---
 
 # CancelReservation
-<a name="rest-op-cancelreservation"></a>
 
 Cancels one of your reservations, by session ID. If you have none for that session, the call returns `404`. So a `404` on a retry means it was already gone. You must sign in.
 

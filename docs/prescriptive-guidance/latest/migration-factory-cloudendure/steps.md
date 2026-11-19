@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # The Cloud Migration Factory migration process
-<a name="steps"></a>
 
 The Cloud Migration Factory process consists of five main steps. These are discussed in the following sections:
 + [Step 1. Prepare the CSV file and import the data into Cloud Migration Factory](step1.md)

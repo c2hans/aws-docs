@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationSearchSummary
-<a name="API_EvaluationSearchSummary"></a>
 
 Summary of evaluation obtained from the search operation.
 

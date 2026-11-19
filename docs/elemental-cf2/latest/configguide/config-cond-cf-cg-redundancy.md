@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/configguide/config-
 This is version 2.18 of the AWS Elemental Conductor File documentation. This is the latest version. For prior versions, see the *Archive* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server).
 
 # Configure Redundancy for AWS Elemental Conductor File Nodes
-<a name="config-cond-cf-cg-redundancy"></a>
 
 Read this section if you have two Conductor nodes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/t-apache-airflow-2
 ---
 
 # Troubleshooting: DAGs, Operators, Connections, and other issues
-<a name="t-apache-airflow-202"></a>
 
 The topics on this page describe resolutions to Apache Airflow v2 and v3 Python dependencies, custom plugins, DAGs, Operators, Connections, tasks, and webserver issues you can encounter on an Amazon Managed Workflows for Apache Airflow environment.
 

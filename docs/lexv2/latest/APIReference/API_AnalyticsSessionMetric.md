@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsS
 ---
 
 # AnalyticsSessionMetric
-<a name="API_AnalyticsSessionMetric"></a>
 
 Contains the metric and the summary statistic you want to calculate, and the order in which to sort the results, for the user sessions with the bot.
 

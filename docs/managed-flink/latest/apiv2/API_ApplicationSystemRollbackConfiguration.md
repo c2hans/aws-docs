@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationSystemRollbackConfiguration
-<a name="API_ApplicationSystemRollbackConfiguration"></a>
 
 Describes the system rollback configuration for a Managed Service for Apache Flink application.
 

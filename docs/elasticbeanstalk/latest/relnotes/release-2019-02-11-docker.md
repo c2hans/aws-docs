@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: AWS Elastic Beanstalk Docker platform updates on February 11, 2019
-<a name="release-2019-02-11-docker"></a>
 
 This release provides new Docker platform versions for AWS Elastic Beanstalk. The release includes security updates.
 

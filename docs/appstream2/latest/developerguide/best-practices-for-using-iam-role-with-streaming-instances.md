@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/best-pr
 ---
 
 # Best Practices for Using IAM Roles With WorkSpaces Applications Streaming Instances
-<a name="best-practices-for-using-iam-role-with-streaming-instances"></a>
 
 When you use IAM roles with WorkSpaces Applications streaming instances, we recommend that you follow these practices:
 + Limit the permissions that you grant to AWS API actions and resources.

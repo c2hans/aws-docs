@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationWaypoint
-<a name="API_WaypointOptimizationWaypoint"></a>
 
 Waypoint between the Origin and Destination.
 

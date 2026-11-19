@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prov-thru-prere
 ---
 
 # Prerequisites for Provisioned Throughput
-<a name="prov-thru-prereq"></a>
 
 Before you can purchase and manage Provisioned Throughput, you need to fulfill the following prerequisites:
 

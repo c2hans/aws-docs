@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/security_iam_ser
 ---
 
 # How AWS AppSync works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS AppSync, learn what IAM features are available to use with AWS AppSync.
 

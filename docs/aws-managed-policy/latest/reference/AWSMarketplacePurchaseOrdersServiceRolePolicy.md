@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplacePurchaseOrdersServiceRolePolicy
-<a name="AWSMarketplacePurchaseOrdersServiceRolePolicy"></a>
 
 **Description**: Enables access for AWS Marketplace services to purchase order management.
 

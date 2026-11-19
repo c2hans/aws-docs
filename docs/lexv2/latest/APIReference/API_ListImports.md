@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListImport
 ---
 
 # ListImports
-<a name="API_ListImports"></a>
 
 Lists the imports for a bot, bot locale, or custom vocabulary. Imports are kept in the list for 7 days.
 

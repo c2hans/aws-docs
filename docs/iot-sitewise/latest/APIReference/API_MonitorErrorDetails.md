@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Mon
 ---
 
 # MonitorErrorDetails
-<a name="API_MonitorErrorDetails"></a>
 
 Contains AWS IoT SiteWise Monitor error details.
 

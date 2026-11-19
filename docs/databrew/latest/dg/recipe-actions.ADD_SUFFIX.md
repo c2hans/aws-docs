@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.ADD_SU
 ---
 
 # ADD\_SUFFIX
-<a name="recipe-actions.ADD_SUFFIX"></a>
 
 Adds one more characters concatenating them as a suffix to the end of a column.
 

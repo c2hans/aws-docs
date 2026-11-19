@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-over
 ---
 
 # Overview
-<a name="ict-overview"></a>
 
 This section explains what isolated and confidential tasks are, how they work, and how the two isolation modes differ, so you can decide which one fits your workload.
 

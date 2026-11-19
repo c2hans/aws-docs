@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_SplunkD
 ---
 
 # SplunkDestinationDescription
-<a name="API_SplunkDestinationDescription"></a>
 
 Describes a destination in Splunk.
 

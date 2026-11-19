@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/retrieving-tar
 ---
 
 # Retrieve the target lifecycle state through instance metadata
-<a name="retrieving-target-lifecycle-state-through-imds"></a>
 
 Each Auto Scaling instance that you launch goes through several lifecycle states. To invoke custom actions from within an instance that act on specific lifecycle state transitions, you must retrieve the target lifecycle state through instance metadata.
 

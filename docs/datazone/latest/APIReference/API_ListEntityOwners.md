@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListEnt
 ---
 
 # ListEntityOwners
-<a name="API_ListEntityOwners"></a>
 
 Lists the entity (domain units) owners.
 

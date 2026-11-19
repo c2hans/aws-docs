@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Tailoring Data Collector schedules
-<a name="tailor-data-collector"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

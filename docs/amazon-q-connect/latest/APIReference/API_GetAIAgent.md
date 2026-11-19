@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GetAIAgent
-<a name="API_amazon-q-connect_GetAIAgent"></a>
 
 Gets an Amazon Q in Connect AI Agent.
 

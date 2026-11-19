@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GluePolicy.html
 ---
 
 # GluePolicy
-<a name="API_GluePolicy"></a>
 
 A structure for returning a resource policy.
 

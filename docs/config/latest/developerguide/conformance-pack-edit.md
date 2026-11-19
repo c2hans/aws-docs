@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/conformance
 ---
 
 # Editing Conformance Packs for AWS Config
-<a name="conformance-pack-edit"></a>
 
 You can use the AWS Config console or the AWS CLI to edit your conformance packs. For a managed conformance pack, you can change the resource scope, parameters, and tags. You can't change the name, the source, or the conformance pack type. To change the source or the type, delete the conformance pack and deploy it again.
 

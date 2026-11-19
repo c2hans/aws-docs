@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Associated accounts in Amazon SageMaker Unified Studio
-<a name="associated-accounts"></a>
 
 In Amazon SageMaker Unified Studio, associated accounts are other AWS accounts that can be associated with an Amazon SageMaker unified domains so that resources can be created and accessed in these accounts for various purposes.
 

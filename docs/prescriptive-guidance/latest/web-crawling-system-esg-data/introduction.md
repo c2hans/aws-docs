@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawlin
 ---
 
 # Building a scalable web crawling system for ESG data on AWS
-<a name="introduction"></a>
 
 *Vijit Vashishtha and Mansi Doshi, Amazon Web Services*
 

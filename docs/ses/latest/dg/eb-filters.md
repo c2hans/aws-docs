@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-filters.html
 ---
 
 # Traffic policies and policy statements
-<a name="eb-filters"></a>
 
 A traffic policy provides firewall-like filtering for incoming Simple Mail Transfer Protocol (SMTP) traffic at an ingress endpoint. With a traffic policy, you protect the ingress endpoint and downstream mail systems by allowing or rejecting recipients before accepted messages enter rule set processing.
 

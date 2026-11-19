@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/examp
 ---
 
 # Get started with CloudWatch alarms using an AWS SDK
-<a name="example_cloudwatch_Scenario_GettingStarted_section"></a>
 
 The following code example shows how to:
 + Create an alarm.

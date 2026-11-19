@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_S3Objec
 ---
 
 # S3Object
-<a name="API_S3Object"></a>
 
 The S3 bucket name and file name that identifies the document.
 

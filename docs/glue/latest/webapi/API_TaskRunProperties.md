@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TaskRunProperties
 ---
 
 # TaskRunProperties
-<a name="API_TaskRunProperties"></a>
 
 The configuration properties for the task run.
 

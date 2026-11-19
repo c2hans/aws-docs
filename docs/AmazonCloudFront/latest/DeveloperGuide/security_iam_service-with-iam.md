@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/s
 ---
 
 # How Amazon CloudFront works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to CloudFront, learn what IAM features are available to use with CloudFront.
 

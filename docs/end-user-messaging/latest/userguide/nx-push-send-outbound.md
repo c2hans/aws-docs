@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-p
 ---
 
 # Outbound messaging
-<a name="nx-push-send-outbound"></a>
 
 You send push notifications to specific device tokens or endpoints that your application has registered. When you send a message, you specify the application, the channel, the recipient, and the channel-specific payload.
 

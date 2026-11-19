@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_En
 ---
 
 # EnableNotificationsAccessForOrganization
-<a name="API_EnableNotificationsAccessForOrganization"></a>
 
 Enables service trust between AWS User Notifications and AWS Organizations.
 

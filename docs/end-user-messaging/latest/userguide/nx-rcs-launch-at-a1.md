@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # A1 Telekom carrier requirements
-<a name="nx-rcs-launch-at-a1"></a>
 
 **Important**
 A1 Telekom (one of three Austrian carriers) requires additional legal documentation for brand approval beyond the standard registration form. Other Austrian carriers (Hi3G and T-Mobile) follow the standard approval process with no additional documentation.

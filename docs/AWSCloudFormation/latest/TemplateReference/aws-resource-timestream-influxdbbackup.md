@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Timestream::InfluxDBBackup
-<a name="aws-resource-timestream-influxdbbackup"></a>
 
 <a name="aws-resource-timestream-influxdbbackup-description"></a>The `AWS::Timestream::InfluxDBBackup` resource Property description not available. for Timestream.
 

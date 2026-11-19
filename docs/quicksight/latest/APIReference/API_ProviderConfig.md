@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Provi
 ---
 
 # ProviderConfig
-<a name="API_ProviderConfig"></a>
 
 The provider-specific configuration for a DLP integration. This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
 

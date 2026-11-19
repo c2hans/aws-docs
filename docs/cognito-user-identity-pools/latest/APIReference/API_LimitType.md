@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # LimitType
-<a name="API_LimitType"></a>
 
 The limit definition and current limit values for a provisioned limit.
 

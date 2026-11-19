@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateQueueEnvironment
-<a name="API_UpdateQueueEnvironment"></a>
 
 Updates the queue environment.
 

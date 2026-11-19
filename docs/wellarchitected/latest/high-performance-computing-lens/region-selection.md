@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Region selection
-<a name="region-selection"></a>
 
 | HPCSUS01: Have you chosen an AWS Region that takes into consideration your sustainability KPI? |
 | --- |

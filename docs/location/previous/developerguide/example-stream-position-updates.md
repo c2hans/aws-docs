@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 ---
 
 # Example: Stream Position Updates
-<a name="example-stream-position-updates"></a>
 
 ![Map showing tracker locations along a river with pink highlighted areas and information panel.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/sampleappgeofenceKVS1.png)
 

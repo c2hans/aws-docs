@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Progress.html
 ---
 
 # Progress
-<a name="API_Progress"></a>
 
 This data type contains information about progress of an operation.
 

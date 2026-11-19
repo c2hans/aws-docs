@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetElementConfigurationOverrides
-<a name="API_SheetElementConfigurationOverrides"></a>
 
 The override configuration of the rendering rules of a sheet.
 

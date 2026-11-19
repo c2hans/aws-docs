@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RegexMatchSt
 ---
 
 # RegexMatchStatement
-<a name="API_RegexMatchStatement"></a>
 
 A rule statement used to search web request components for a match against a single regular expression.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/integra
 ---
 
 # Tutorial: Create a calculator REST API with two AWS service integrations and one Lambda non-proxy integration
-<a name="integrating-api-with-aws-services-lambda"></a>
 
 The [Tutorial: Create a REST API with a Lambda non-proxy integration](getting-started-lambda-non-proxy-integration.md) uses `Lambda Function` integration exclusively. `Lambda Function` integration is a special case of the `AWS Service` integration type that performs much of the integration setup for you, such as automatically adding the required resource-based permissions for invoking the Lambda function. Here, two of the three integrations use `AWS Service` integration. In this integration type, you have more control, but you'll need to manually perform tasks like creating and specifying an IAM role containing appropriate permissions.
 

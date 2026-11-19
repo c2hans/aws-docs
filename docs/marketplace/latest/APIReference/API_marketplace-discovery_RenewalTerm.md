@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # RenewalTerm
-<a name="API_marketplace-discovery_RenewalTerm"></a>
 
 Defines a renewal term that enables automatic agreement renewal.
 

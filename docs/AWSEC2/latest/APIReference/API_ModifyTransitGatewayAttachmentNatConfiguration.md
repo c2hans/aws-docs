@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTransitGatewayAttachmentNatConfiguration
-<a name="API_ModifyTransitGatewayAttachmentNatConfiguration"></a>
 
 Modifies the NAT configuration for the specified transit gateway attachment. Use this operation to do the following:
 + Enable or disable NAT gateway support for the attachment.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-agent_e
 ---
 
 # Hello Amazon Bedrock Agents
-<a name="bedrock-agent_example_bedrock-agent_Hello_section"></a>
 
 The following code example shows how to get started using Amazon Bedrock Agents.
 

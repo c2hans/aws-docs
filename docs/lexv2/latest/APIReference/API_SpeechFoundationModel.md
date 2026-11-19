@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SpeechFoun
 ---
 
 # SpeechFoundationModel
-<a name="API_SpeechFoundationModel"></a>
 
 Configuration for a foundation model used for speech synthesis and recognition capabilities.
 

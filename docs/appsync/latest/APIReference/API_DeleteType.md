@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteTy
 ---
 
 # DeleteType
-<a name="API_DeleteType"></a>
 
 Deletes a `Type` object.
 

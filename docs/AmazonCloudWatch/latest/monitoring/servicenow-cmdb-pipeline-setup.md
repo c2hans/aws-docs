@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/servi
 ---
 
 # CloudWatch pipelines configuration for ServiceNow CMDB Audit Log
-<a name="servicenow-cmdb-pipeline-setup"></a>
 
 Collects configuration management database (CMDB) data from ServiceNow using OAuth2 authentication.
 

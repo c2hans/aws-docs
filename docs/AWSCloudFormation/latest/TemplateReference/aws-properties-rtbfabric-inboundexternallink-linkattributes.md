@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::InboundExternalLink LinkAttributes
-<a name="aws-properties-rtbfabric-inboundexternallink-linkattributes"></a>
 
 <a name="aws-properties-rtbfabric-inboundexternallink-linkattributes-description"></a>The `LinkAttributes` property type specifies Property description not available. for an [AWS::RTBFabric::InboundExternalLink](aws-resource-rtbfabric-inboundexternallink.md).
 

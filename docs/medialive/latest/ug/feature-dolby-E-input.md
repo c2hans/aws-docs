@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/feature-dolby-E-inpu
 ---
 
 # Ingesting Dolby E input audio
-<a name="feature-dolby-E-input"></a>
 
 You can set up AWS Elemental MediaLive to ingest Dolby E audio. The Dolby E audio must be wrapped in a PCM streams tagged with SMPTE-337. The options for handling this audio source are the following:
 + Extract individual programs from the source audio, and then convert it or remix it in the output.

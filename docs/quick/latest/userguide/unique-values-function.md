@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/unique-values-fun
 ---
 
 # Unique values computation
-<a name="unique-values-function"></a>
 
 The unique values computation counts the unique values in a category field. For example, you can create a computation to count the number of unique values in a dimension, such as how many customers you have
 

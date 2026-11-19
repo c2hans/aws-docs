@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeRegistrationTypeDefinitions
-<a name="API_DescribeRegistrationTypeDefinitions"></a>
 
 Retrieves the specified registration type definitions. You can use DescribeRegistrationTypeDefinitions to view the requirements for creating, filling out, and submitting each registration type.
 
@@ -51,7 +50,7 @@ Pattern: `.+`
 Required: No
 
  ** [RegistrationTypes](#API_DescribeRegistrationTypeDefinitions_RequestSyntax) **   <a name="pinpoint-DescribeRegistrationTypeDefinitions-request-RegistrationTypes"></a>
-The type of registration form. The list of **RegistrationTypes** can be found using the [DescribeRegistrationTypeDefinitions](#API_DescribeRegistrationTypeDefinitions) action.
+The type of registration form. The list of **RegistrationTypes** can be found using the [DescribeRegistrationTypeDefinitions](API_DescribeRegistrationTypeDefinitions.md) action.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 64.
@@ -101,7 +100,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.+`
 
  ** [RegistrationTypeDefinitions](#API_DescribeRegistrationTypeDefinitions_ResponseSyntax) **   <a name="pinpoint-DescribeRegistrationTypeDefinitions-response-RegistrationTypeDefinitions"></a>
-The type of registration form. The list of **RegistrationTypes** can be found using the [DescribeRegistrationTypeDefinitions](#API_DescribeRegistrationTypeDefinitions) action.
+The type of registration form. The list of **RegistrationTypes** can be found using the [DescribeRegistrationTypeDefinitions](API_DescribeRegistrationTypeDefinitions.md) action.
 Type: Array of [RegistrationTypeDefinition](API_RegistrationTypeDefinition.md) objects
 
 ## Errors

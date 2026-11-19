@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_Operat
 ---
 
 # AWS Snowball Edge Device Management
-<a name="API_Operations_AWS_Snow_Device_Management"></a>
 
 The following actions are supported by AWS Snowball Edge Device Management:
 +  [CancelTask](API_devicemanagement_CancelTask.md)

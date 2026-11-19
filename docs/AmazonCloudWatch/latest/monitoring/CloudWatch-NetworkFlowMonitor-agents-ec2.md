@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Install and manage agents for EC2 instances
-<a name="CloudWatch-NetworkFlowMonitor-agents-ec2"></a>
 
 Follow the steps in this section to install Network Flow Monitor agents for workloads on Amazon EC2 instances. Installing agents requires two steps: first, configure permissions to allow the agents to send metrics to the Network Flow Monitor backend, and then install the agents using one of the available methods.
 

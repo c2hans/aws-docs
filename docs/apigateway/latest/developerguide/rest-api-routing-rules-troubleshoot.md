@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Troubleshooting issues with routing rules
-<a name="rest-api-routing-rules-troubleshoot"></a>
 
 The following troubleshooting guidance might help resolve issues with your routing rules.
 

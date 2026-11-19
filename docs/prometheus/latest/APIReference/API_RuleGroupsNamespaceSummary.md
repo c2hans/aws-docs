@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_RuleG
 ---
 
 # RuleGroupsNamespaceSummary
-<a name="API_RuleGroupsNamespaceSummary"></a>
 
 The high-level information about a rule groups namespace. To retrieve more information, use `DescribeRuleGroupsNamespace`.
 

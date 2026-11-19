@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/dcv-server-channel
 ---
 
 # Amazon DCV server channels
-<a name="dcv-server-channels"></a>
 
 Counters in this set provide information about individual channels in a client connection. There can be additional channels for extensions.
 

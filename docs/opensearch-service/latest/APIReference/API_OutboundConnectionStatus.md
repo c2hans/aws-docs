@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # OutboundConnectionStatus
-<a name="API_OutboundConnectionStatus"></a>
 
 The status of an outbound cross-cluster connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-env-hcx-interne
 ---
 
 # Configure HCX public internet connectivity
-<a name="evs-env-hcx-internet-access"></a>
 
 You can migrate workloads to Amazon Elastic VMware Service with VMware HCX over the internet by associating Elastic IP addresses with the public HCX VLAN subnet. You create the IPAM pool, the Elastic IP addresses and the VPC CIDR block before you create the environment, and associate the addresses after. You can use the consoles or the AWS CLI.
 

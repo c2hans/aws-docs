@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networki
 ---
 
 # Use Docker's virtual network for Amazon ECS Linux tasks
-<a name="networking-networkmode-bridge"></a>
 
 The `bridge` network mode is only supported for Amazon ECS tasks hosted on Amazon EC2 instances.
 

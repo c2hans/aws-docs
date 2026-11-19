@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # RuleBasedMatchingResponse
-<a name="API_connect-customer-profiles_RuleBasedMatchingResponse"></a>
 
 The response of the Rule-based matching request.
 

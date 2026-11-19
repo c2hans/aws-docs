@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/get-li
 ---
 
 # GET List: Get a List of Profiles
-<a name="get-list-of-profiles"></a>
 
 ## HTTP Request and Response
 <a name="get-list-of-profiles-http-request-response"></a>

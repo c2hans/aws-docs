@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateStreamingURL
-<a name="API_CreateStreamingURL"></a>
 
 Creates a temporary URL to start an WorkSpaces Applications streaming session for the specified user. A streaming URL enables application streaming to be tested without user setup.
 
@@ -88,7 +87,6 @@ Type: Timestamp
  ** [StreamingURL](#API_CreateStreamingURL_ResponseSyntax) **   <a name="WorkSpacesApplications-CreateStreamingURL-response-StreamingURL"></a>
 The URL to start the WorkSpaces Applications streaming session.
 Type: String
-Length Constraints: Minimum length of 1.
 
 ## Errors
 <a name="API_CreateStreamingURL_Errors"></a>

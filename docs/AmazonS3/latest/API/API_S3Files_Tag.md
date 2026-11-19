@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_Tag.html
 ---
 
 # Tag
-<a name="API_S3Files_Tag"></a>
 
 A key-value pair for resource tagging.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF 8. How do you use tradeoffs to improve performance?
-<a name="perf-08"></a>
 
  When architecting solutions, determining tradeoffs allows you to select the more effective approach. Often you can improve performance by trading consistency, durability, and space for time and latency.
 

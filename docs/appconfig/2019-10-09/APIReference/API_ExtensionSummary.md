@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ex
 ---
 
 # ExtensionSummary
-<a name="API_ExtensionSummary"></a>
 
 Information about an extension. Call `GetExtension` to get more information about an extension.
 

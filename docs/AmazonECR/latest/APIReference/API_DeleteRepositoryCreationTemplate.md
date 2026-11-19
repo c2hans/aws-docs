@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Delete
 ---
 
 # DeleteRepositoryCreationTemplate
-<a name="API_DeleteRepositoryCreationTemplate"></a>
 
 Deletes a repository creation template.
 

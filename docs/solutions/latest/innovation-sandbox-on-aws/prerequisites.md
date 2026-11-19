@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 Before launching the stacks, you must meet the following prerequisites:
 

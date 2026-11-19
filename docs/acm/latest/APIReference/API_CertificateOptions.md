@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CertificateO
 ---
 
 # CertificateOptions
-<a name="API_CertificateOptions"></a>
 
 Structure that contains options for your certificate. You can use this structure to change the domain validation method or specify whether to export your certificate.
 

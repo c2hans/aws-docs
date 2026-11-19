@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Patient Outcome Prediction
-<a name="patient-outcome-prediction"></a>
 
 Publication date: **September 14, 2022 ([Diagram history](#pop-history))**
 

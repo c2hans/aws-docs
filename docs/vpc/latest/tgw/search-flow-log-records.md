@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/search-flow-log-records.h
 ---
 
 # Search AWS Transit Gateway Flow Logs records
-<a name="search-flow-log-records"></a>
 
 You can search your flow log records that are published to CloudWatch Logs by using the CloudWatch Logs console. You can use [metric filters](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPatternSyntax.html) to filter flow log records. Flow log records are space delimited.
 

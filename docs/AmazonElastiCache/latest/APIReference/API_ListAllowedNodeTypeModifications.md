@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ListAllowedNodeTypeModifications
-<a name="API_ListAllowedNodeTypeModifications"></a>
 
 Lists all available node types that you can scale with your cluster's replication group's current node type.
 

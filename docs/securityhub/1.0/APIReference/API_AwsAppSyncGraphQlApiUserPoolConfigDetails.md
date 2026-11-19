@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAppS
 ---
 
 # AwsAppSyncGraphQlApiUserPoolConfigDetails
-<a name="API_AwsAppSyncGraphQlApiUserPoolConfigDetails"></a>
 
  Specifies the authorization configuration for using Amazon Cognito user pools with your AWS AppSync GraphQL API endpoint.
 

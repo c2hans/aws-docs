@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/working-client
 ---
 
 # Change AWS CloudHSM client key durability settings
-<a name="working-client-sync"></a>
 
 Key synchronization is mostly an automatic process, but you can manage client-side key durability settings. Client-side key durability settings works differently in Client SDK 5 and Client SDK 3.
 + In Client SDK 5, we introduce the concept of *key availability quorums* which requires you to run clusters with a minimum of two HSMs. You can use client-side key durability settings to opt out of the two HSM requirement. For more information about quorums, see [AWS CloudHSM key concepts](concepts-key-sync.md).

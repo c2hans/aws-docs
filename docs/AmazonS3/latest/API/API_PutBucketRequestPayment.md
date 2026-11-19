@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketRequest
 ---
 
 # PutBucketRequestPayment
-<a name="API_PutBucketRequestPayment"></a>
 
 **Note**
 This operation is not supported for directory buckets.

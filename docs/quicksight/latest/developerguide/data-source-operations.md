@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/data-so
 ---
 
 # Data source operations
-<a name="data-source-operations"></a>
 
 With data source operations, you can perform actions on data sources. For more information, see the following API operations.
 

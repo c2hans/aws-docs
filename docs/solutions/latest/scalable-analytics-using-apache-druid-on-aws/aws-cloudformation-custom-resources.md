@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # AWS CloudFormation custom resources
-<a name="aws-cloudformation-custom-resources"></a>
 
 The guidance incorporates AWS CloudFormation custom resources to handle the following parameters:
 + Set up default roles, permissions, and group mappings for OIDC authentication

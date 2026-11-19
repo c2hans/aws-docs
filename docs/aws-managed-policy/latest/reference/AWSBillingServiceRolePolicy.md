@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBillingServiceRolePolicy
-<a name="AWSBillingServiceRolePolicy"></a>
 
 **Description**: Allows billing service to validate access to billing view data for derived billing views
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-app
 ---
 
 # Transformation of mainframe applications
-<a name="transform-app-mainframe-workflow"></a>
 
 AWS Transform accelerates the transformation of your mainframe modernization applications. This topic describes the available capabilities.
 

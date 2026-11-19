@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCS::ComputeNodeGroup
-<a name="aws-resource-pcs-computenodegroup"></a>
 
 Creates an AWS PCS compute node group resource. For more information, see [Creating a compute node group in AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng_create.html) in the *AWS PCS User Guide*.
 

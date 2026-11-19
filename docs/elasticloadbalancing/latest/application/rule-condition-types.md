@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Condition types for listener rules
-<a name="rule-condition-types"></a>
 
 Conditions define the criteria that incoming requests must meet for a listener rule to take effect. If a request matches the conditions for a rule, the request is handled as specified by the rule's actions. Each rule condition has a type and configuration information. Application Load Balancers support the following condition types for listener rules.Condition types
 

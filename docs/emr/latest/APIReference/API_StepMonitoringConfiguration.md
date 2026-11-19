@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StepMonitori
 ---
 
 # StepMonitoringConfiguration
-<a name="API_StepMonitoringConfiguration"></a>
 
 Object that holds configuration properties for logging.
 

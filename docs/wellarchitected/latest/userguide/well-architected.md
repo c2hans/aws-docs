@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/well-ar
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # What is AWS Well-Architected?
-<a name="well-architected"></a>
 
 Last updated: **November 16, 2026** ([Release notes](release-notes.md))
 

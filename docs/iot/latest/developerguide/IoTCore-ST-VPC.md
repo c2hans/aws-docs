@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/IoTCore-ST-VPC
 ---
 
 # Using AWS IoT Device Management secure tunneling with interface VPC endpoints
-<a name="IoTCore-ST-VPC"></a>
 
 AWS IoT Device Management secure tunneling supports interface VPC endpoints. You can use VPC endpoints to keep traffic between your VPC and AWS IoT Secure Tunneling within the AWS network, without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
 

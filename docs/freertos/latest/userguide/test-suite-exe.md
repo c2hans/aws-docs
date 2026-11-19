@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/test-suite-exe
 ---
 
 # Create the test case executable
-<a name="test-suite-exe"></a>
 
 Test case executables contain the test logic that you want to run. A test suite can contain multiple test case executables. For this tutorial, you will create only one test case executable.
 

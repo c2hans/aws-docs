@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/case-agent-exp
 ---
 
 # Access Connect Customer Cases in the agent workspace
-<a name="case-agent-experience"></a>
 
 After you enable Connect Customer Cases, you need to take steps to make the functionality available through the agent workspace. This topic explains your options.
 

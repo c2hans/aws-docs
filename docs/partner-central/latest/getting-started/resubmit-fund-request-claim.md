@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/r
 ---
 
 # Resubmitting a fund request or claim
-<a name="resubmit-fund-request-claim"></a>
 
 If a Fund Request or Claim has been rejected, it can be revised and resubmitted.
 

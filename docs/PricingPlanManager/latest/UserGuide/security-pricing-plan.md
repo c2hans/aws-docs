@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/secu
 ---
 
 # Managing Access to AWS Flat-Rate Plans
-<a name="security-pricing-plan"></a>
 
 You can use AWS Identity and Access Management (IAM) to control access to AWS Flat-Rate Plans. The namespace for Flat-Rate Plans is `pricingplanmanager`.
 

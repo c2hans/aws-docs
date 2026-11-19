@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Amazon CloudWatch Logs and Alarms
-<a name="amazon-cw-logs-alarms"></a>
 
 This solution captures application and service logs by creating CloudWatch log groups in your account. Log retention depends on the deployment architecture:
 +  **Lambda architecture**: You control retention with the `LogRetentionPeriod` parameter. By default, logs are kept indefinitely and never expire. You can instead select any of the following retention periods, in days, which map to the CloudWatch `RetentionInDays` values: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, or 3653.

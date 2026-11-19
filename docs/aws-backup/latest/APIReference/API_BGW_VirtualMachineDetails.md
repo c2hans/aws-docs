@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_V
 ---
 
 # VirtualMachineDetails
-<a name="API_BGW_VirtualMachineDetails"></a>
 
 Your `VirtualMachine` objects, ordered by their Amazon Resource Names (ARNs).
 

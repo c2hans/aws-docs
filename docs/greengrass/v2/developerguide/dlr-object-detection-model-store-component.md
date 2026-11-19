@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-object-
 ---
 
 # DLR object detection model store
-<a name="dlr-object-detection-model-store-component"></a>
 
 The DLR object detection model store is a machine learning model component that contains pre-trained YOLOv3 models as Greengrass artifacts. The sample models used in this component are fetched from the [GluonCV Model Zoo](https://cv.gluon.ai/model_zoo/index.html) and compiled using SageMaker AI Neo [Deep Learning Runtime](https://github.com/neo-ai/neo-ai-dlr).
 

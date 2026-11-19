@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Example use cases
-<a name="identity-use-cases"></a>
 
 Amazon Bedrock AgentCore Identity supports a wide range of use cases across different industries and application types. This section provides detailed examples of how the service can be applied in specific scenarios, demonstrating both user-delegated access (OAuth 2.0 authorization code grant) and machine-to-machine authentication (OAuth 2.0 client credentials grant) patterns.
 

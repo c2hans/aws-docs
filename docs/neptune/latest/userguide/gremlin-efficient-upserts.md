@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-efficie
 ---
 
 # Making efficient upserts with Gremlin `mergeV()` and `mergeE()` steps
-<a name="gremlin-efficient-upserts"></a>
 
 An upsert (or conditional insert) reuses a vertex or edge if it already exists, or creates it if it doesn't. Efficient upserts can make a significant difference in the performance of Gremlin queries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/classic-st
 ---
 
 # Classic streams, V2 gateways for AWS IoT SiteWise Edge
-<a name="classic-streams-v2-gateway"></a>
 
 Understand the features and limitations of Classic streams, V2 gateways for AWS IoT SiteWise Edge.
 

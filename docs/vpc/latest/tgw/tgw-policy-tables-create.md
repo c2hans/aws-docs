@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-create.
 ---
 
 # Create a transit gateway policy table in AWS Transit Gateway
-<a name="tgw-policy-tables-create"></a>
 
 Create a policy table and associate it with your transit gateway.
 

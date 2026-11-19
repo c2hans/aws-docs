@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_SubDomai
 ---
 
 # SubDomain
-<a name="API_SubDomain"></a>
 
 The subdomain for the domain association.
 

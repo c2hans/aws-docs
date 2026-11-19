@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/setu
 ---
 
 # Set up a GraalVM Native Image project that uses the AWS SDK for Java 2.x
-<a name="setup-project-graalvm"></a>
 
 With versions 2.16.1 and later, the AWS SDK for Java 2.x provides out-of-the-box support for GraalVM Native Image applications. Use the `archetype-app-quickstart` Maven archetype to set up a project with built-in native image support.
 

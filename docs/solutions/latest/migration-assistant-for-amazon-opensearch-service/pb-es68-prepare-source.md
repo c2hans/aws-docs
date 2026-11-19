@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 1: Prepare the source cluster
-<a name="pb-es68-prepare-source"></a>
 
 Migration Assistant reads the source data from a snapshot in Amazon S3, so the source cluster must be able to write a snapshot to an S3 repository.
 

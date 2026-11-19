@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Elastic
 ---
 
 # ElasticIpStatus
-<a name="API_ElasticIpStatus"></a>
 
 Describes the status of the elastic IP (EIP) address.
 

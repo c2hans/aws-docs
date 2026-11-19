@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/upgra
 ---
 
 # Step F: Upgrade the license
-<a name="upgrades-lv-upg-lic"></a>
 
 The new version of the software might include a feature that is in an add-on package. Such a feature requires a license. Therefore, you must obtain a new license and install it.
 

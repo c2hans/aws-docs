@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_FirehoseLogDelivery
 ---
 
 # FirehoseLogDeliveryDescription
-<a name="API_FirehoseLogDeliveryDescription"></a>
 
 A description of the settings for delivering logs to Amazon Kinesis Data Firehose.
 

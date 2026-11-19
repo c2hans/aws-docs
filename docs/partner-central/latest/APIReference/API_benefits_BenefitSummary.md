@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # BenefitSummary
-<a name="API_benefits_BenefitSummary"></a>
 
 A summary view of a benefit containing key information for list operations.
 

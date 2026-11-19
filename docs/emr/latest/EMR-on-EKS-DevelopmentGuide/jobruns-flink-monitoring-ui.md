@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Use the Flink UI to monitor Flink jobs
-<a name="jobruns-flink-monitoring-ui"></a>
 
 To monitor the health and performance of a running Flink application, use the *Flink Web Dashboard*. This dashboard provides information about the status of the job, the number of TaskManagers, and the metrics and logs for the job. It also lets you view and modify the configuration of the Flink job, and to interact with the Flink cluster to submit or cancel jobs.
 

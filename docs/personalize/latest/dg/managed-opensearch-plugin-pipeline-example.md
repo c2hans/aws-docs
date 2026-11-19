@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/managed-opensearch
 ---
 
 # Creating a pipeline in Amazon OpenSearch Service
-<a name="managed-opensearch-plugin-pipeline-example"></a>
 
 After you [install the Amazon Personalize Search Ranking plugin](open-search-install-managed.md), you're ready to configure it by creating an OpenSearch search pipeline.
 

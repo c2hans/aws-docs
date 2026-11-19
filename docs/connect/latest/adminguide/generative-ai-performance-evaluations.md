@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-
 ---
 
 # Evaluate agent performance in Connect Customer using generative AI
-<a name="generative-ai-performance-evaluations"></a>
 
 **Note**
 **Powered by Amazon Bedrock**: AWS implements automated abuse detections. Because generative AI features in conversational analytics are built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).

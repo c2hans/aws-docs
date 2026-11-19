@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetLine
 ---
 
 # GetLineageNode
-<a name="API_GetLineageNode"></a>
 
 Gets the data lineage node.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/stopbulkdeplo
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # StopBulkDeployment
-<a name="stopbulkdeployment-put"></a>
 
 Stops the execution of a bulk deployment. This action returns a status of `Stopping` until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the `Stopping` state. This action doesn't roll back completed deployments or cancel pending deployments.
 

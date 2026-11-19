@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeLifecycleExpiration
-<a name="API_DataLakeLifecycleExpiration"></a>
 
 Provide expiration lifecycle details of Amazon Security Lake object.
 

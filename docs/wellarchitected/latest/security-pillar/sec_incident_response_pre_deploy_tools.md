@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC10-BP06 Pre-deploy tools
-<a name="sec_incident_response_pre_deploy_tools"></a>
 
 Verify that security personnel have the right tools pre-deployed to reduce the time for investigation through to recovery.
 

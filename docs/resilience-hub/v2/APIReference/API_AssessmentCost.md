@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Asses
 ---
 
 # AssessmentCost
-<a name="API_AssessmentCost"></a>
 
 Represents the cost of running a failure mode assessment.
 

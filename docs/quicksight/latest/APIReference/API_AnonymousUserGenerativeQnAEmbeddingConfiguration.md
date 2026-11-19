@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Anony
 ---
 
 # AnonymousUserGenerativeQnAEmbeddingConfiguration
-<a name="API_AnonymousUserGenerativeQnAEmbeddingConfiguration"></a>
 
 The settings that you want to use for the Generative Q&A experience.
 

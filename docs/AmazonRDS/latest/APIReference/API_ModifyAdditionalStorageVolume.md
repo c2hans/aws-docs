@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyAdditionalStorageVolume
-<a name="API_ModifyAdditionalStorageVolume"></a>
 
 Contains details about the modification of an additional storage volume.
 

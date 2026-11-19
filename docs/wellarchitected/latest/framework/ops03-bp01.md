@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops03-b
 ---
 
 # OPS03-BP01 Adopt a configuration, build, and release pipeline
-<a name="ops03-bp01"></a>
 
  Manual builds and hand-applied configuration changes drift over time and create non-reproducible environments. A pipeline that combines version control, configuration management, and automated release removes that drift by making every change tracked, tested, and repeatable. When the pipeline is shared infrastructure owned centrally, workload teams inherit it and ship changes safely without rebuilding the same tooling.
 

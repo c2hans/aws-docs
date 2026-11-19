@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/notify-dedica
 ---
 
 # Using dedicated numbers with Notify
-<a name="notify-dedicated-numbers"></a>
 
 By default, Notify uses AWS-managed origination identities to send messages. You can optionally associate an existing phone pool with your Notify configuration to use your own dedicated phone numbers alongside AWS-managed identities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentReportMetadata
-<a name="API_AssessmentReportMetadata"></a>
 
  The metadata objects that are associated with the specified assessment report.
 

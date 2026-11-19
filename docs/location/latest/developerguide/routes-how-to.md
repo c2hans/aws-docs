@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/routes-ho
 ---
 
 # How to
-<a name="routes-how-to"></a>
 
 This section provides guides for leveraging the Routes APIs to solve routing and navigation challenges. These tutorials cover the essential tasks for integrating routing functionality into your applications. Each topic focuses on a specific use case, enabling you to efficiently implement advanced routing features tailored to your business needs.
 

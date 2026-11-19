@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorOA
 ---
 
 # ConnectorOAuthRequest
-<a name="API_ConnectorOAuthRequest"></a>
 
  Used by select connectors for which the OAuth workflow is supported, such as Salesforce, Google Analytics, Marketo, Zendesk, and Slack.
 

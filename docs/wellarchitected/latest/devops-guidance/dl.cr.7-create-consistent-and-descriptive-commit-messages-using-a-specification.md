@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CR.7] Create consistent and descriptive commit messages using a specification
-<a name="dl.cr.7-create-consistent-and-descriptive-commit-messages-using-a-specification"></a>
 
  **Category:** RECOMMENDED
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/elasticache
 ---
 
 # elasticache-redis-cluster-automatic-backup-check
-<a name="elasticache-redis-cluster-automatic-backup-check"></a>
 
 Check if the Amazon ElastiCache Redis clusters have automatic backup turned on. The rule is NON\_COMPLIANT if the SnapshotRetentionLimit for Redis cluster is less than the SnapshotRetentionPeriod parameter. For example: If the parameter is 15 then the rule is non-compliant if the snapshotRetentionPeriod is between 0-15.
 

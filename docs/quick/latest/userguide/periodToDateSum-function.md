@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/periodToDateSum-f
 ---
 
 # periodToDateSum
-<a name="periodToDateSum-function"></a>
 
 The `periodToDateSum` function adds the specified measure for a given time granularity (for instance, a quarter) up to a point in time, relative to that period.
 

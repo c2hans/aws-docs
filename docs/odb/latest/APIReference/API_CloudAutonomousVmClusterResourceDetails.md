@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CloudAutonom
 ---
 
 # CloudAutonomousVmClusterResourceDetails
-<a name="API_CloudAutonomousVmClusterResourceDetails"></a>
 
 Resource details of an Autonomous VM cluster.
 

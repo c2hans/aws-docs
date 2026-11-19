@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Realt
 ---
 
 # RealtimeMetricsSubscriptionConfig
-<a name="API_RealtimeMetricsSubscriptionConfig"></a>
 
 A subscription configuration for additional CloudWatch metrics.
 

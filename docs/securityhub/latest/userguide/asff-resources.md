@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # Resources ASFF object
-<a name="asff-resources"></a>
 
 In the AWS Security Finding Format (ASFF), the `Resources` object provides information about the resources involved in a finding. It contains an array of up to 32 resource objects. To determine how resource names are formatted, see [AWS Security Finding Format (ASFF)](securityhub-findings-format.md). For examples of each resource object, select a resource from the following list.
 

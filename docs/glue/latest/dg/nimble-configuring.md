@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/nimble-configuring.html
 ---
 
 # Configuring Nimble
-<a name="nimble-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Nimble, you must meet the following requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_ListLoc
 ---
 
 # ListLocations
-<a name="API_ListLocations"></a>
 
 Returns a list of source and destination locations.
 

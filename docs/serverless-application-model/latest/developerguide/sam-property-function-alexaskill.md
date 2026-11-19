@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AlexaSkill
-<a name="sam-property-function-alexaskill"></a>
 
 The object describing an `AlexaSkill` event source type.
 

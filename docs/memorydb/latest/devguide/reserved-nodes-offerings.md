@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/reserved-nodes-
 ---
 
 # Offering types
-<a name="reserved-nodes-offerings"></a>
 
 Reserved nodes are available in three varieties – No Upfront, Partial Upfront, and All Upfront – that let you optimize your MemoryDB costs based on your expected usage.
 

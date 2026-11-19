@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DescribeOrganizationalUnit
-<a name="API_DescribeOrganizationalUnit"></a>
 
 Retrieves information about an organizational unit (OU).
 

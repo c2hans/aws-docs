@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Viewing service topology
-<a name="next-gen-viewing-hierarchy"></a>
 
 The Next generation Resilience Hub console provides a visual canvas view showing your service hierarchy, including resource topology and service functions.
 

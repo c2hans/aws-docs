@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/security_iam
 ---
 
 # How AWS CodeDeploy works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to CodeDeploy, you should understand which IAM features are available to use with CodeDeploy. For more information, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
 

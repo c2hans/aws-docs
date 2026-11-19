@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Elem
 ---
 
 # ElementalSupportCenterFullAccess
-<a name="ElementalSupportCenterFullAccess"></a>
 
 **Description**: Full access to view and take action on Elemental Appliance and Software support cases and product support content
 

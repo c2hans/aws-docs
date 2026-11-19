@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/delete-builder-i
 ---
 
 # Delete your AWS Builder ID
-<a name="delete-builder-id"></a>
 
 The following procedure describes how to delete your AWS Builder ID account.
 

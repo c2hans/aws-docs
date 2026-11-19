@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/private-regis
 ---
 
 # Configure a private registry credential for self-hosted runners
-<a name="private-registry-sample-configure-runners"></a>
 
 Use the following instructions to configure a registry credential for a self-hosted runner.
 

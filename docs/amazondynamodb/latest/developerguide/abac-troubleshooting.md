@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/aba
 ---
 
 # Troubleshooting common ABAC errors for DynamoDB tables and indexes
-<a name="abac-troubleshooting"></a>
 
 This topic provides troubleshooting advice for common errors and issues that you might encounter while implementing ABAC in DynamoDB tables or indexes.
 

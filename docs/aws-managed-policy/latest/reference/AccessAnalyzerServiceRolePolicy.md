@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Acce
 ---
 
 # AccessAnalyzerServiceRolePolicy
-<a name="AccessAnalyzerServiceRolePolicy"></a>
 
 **Description**: Allow Access Analyzer to analyze resource metadata
 
@@ -18,13 +17,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AccessAnalyzerServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: December 02, 2019, 17:13 UTC
-+ **Edited time:** February 12, 2026, 17:59 UTC
++ **Edited time:** November 17, 2026, 20:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AccessAnalyzerServiceRolePolicy`
 
 ## Policy version
 <a name="AccessAnalyzerServiceRolePolicy-version"></a>
 
-**Policy version:** v23 (default)
+**Policy version:** v24 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -133,9 +132,47 @@ The policy's default version is the version that defines the permissions for the
         "secretsmanager:GetResourcePolicy",
         "secretsmanager:ListSecrets",
         "sqs:GetQueueAttributes",
-        "sqs:ListQueues"
+        "sqs:ListQueues",
+        "tag:GetResources"
       ],
       "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowConfigRecorderScopedAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:PutServiceLinkedConfigurationRecorder",
+        "config:DeleteServiceLinkedConfigurationRecorder"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "config:ConfigurationRecorderServicePrincipal" : [
+            "access-analyzer.amazonaws.com"
+          ]
+        }
+      },
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowConfigRecorderReadAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "config:DescribeConfigurationRecorders",
+        "config:DescribeConfigurationRecorderStatus",
+        "config:SelectResourceConfig"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "CreateConfigServiceLinkedRole",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "arn:aws:iam::*:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+      "Condition" : {
+        "StringEquals" : {
+          "iam:AWSServiceName" : "config.amazonaws.com"
+        }
+      }
     }
   ]
 }

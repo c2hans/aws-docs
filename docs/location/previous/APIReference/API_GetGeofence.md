@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_GetGe
 ---
 
 # GetGeofence
-<a name="API_GetGeofence"></a>
 
 Retrieves the geofence details from a geofence collection.
 

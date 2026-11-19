@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedSettingsAdminAccess
-<a name="AWSManagedSettingsAdminAccess"></a>
 
 **Description**: Grants full administrative access to AWS account settings management. This policy allows owners to view and modify account information, billing, payments, tax registration, identity management, organization policies, budgets, cost analysis, and workspace notifications. Intended for workspace owners who need complete administrative access over account configuration and member management. The policy does not grant access to compute, storage, networking, or other infrastructure services unrelated to account settings.
 

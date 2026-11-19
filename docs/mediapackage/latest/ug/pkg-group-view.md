@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-group-view.ht
 ---
 
 # Viewing packaging group details
-<a name="pkg-group-view"></a>
 
 You can view all packaging groups that are configured in AWS Elemental MediaPackage or the details of a specific packaging group, including the packaging configurations that are associated with it.
 

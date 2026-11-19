@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregato
 ---
 
 # AggregatorFilterServicePrincipal
-<a name="API_AggregatorFilterServicePrincipal"></a>
 
 An object to filter service-linked configuration recorders in an aggregator based on the linked AWS service.
 

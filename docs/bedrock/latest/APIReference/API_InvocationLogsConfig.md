@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Invocati
 ---
 
 # InvocationLogsConfig
-<a name="API_InvocationLogsConfig"></a>
 
 Settings for using invocation logs to customize a model.
 

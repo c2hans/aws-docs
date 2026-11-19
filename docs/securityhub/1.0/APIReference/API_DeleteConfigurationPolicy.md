@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteC
 ---
 
 # DeleteConfigurationPolicy
-<a name="API_DeleteConfigurationPolicy"></a>
 
  Deletes a configuration policy. Only the AWS Security Hub CSPM delegated administrator can invoke this operation from the home Region. For the deletion to succeed, you must first disassociate a configuration policy from target accounts, organizational units, or the root by invoking the `StartConfigurationPolicyDisassociation` operation.
 

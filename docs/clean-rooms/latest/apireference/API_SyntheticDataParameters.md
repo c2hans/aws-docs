@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Synt
 ---
 
 # SyntheticDataParameters
-<a name="API_SyntheticDataParameters"></a>
 
 The parameters that control how synthetic data is generated, including privacy settings, column classifications, and other configuration options that affect the data synthesis process.
 

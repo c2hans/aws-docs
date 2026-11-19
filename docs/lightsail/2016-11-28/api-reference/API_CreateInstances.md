@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateInstances
-<a name="API_CreateInstances"></a>
 
 Creates one or more Amazon Lightsail instances.
 

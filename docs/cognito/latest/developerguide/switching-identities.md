@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/switching-
 ---
 
 # Switching unauthenticated users to authenticated users
-<a name="switching-identities"></a>
 
 Amazon Cognito identity pools support both authenticated and unauthenticated users. Unauthenticated users receive access to your AWS resources even if they aren't signed in with any of your identity providers (IdPs). This degree of access is useful to display content to users before they sign in. Each unauthenticated user has a unique identity in the identity pool, even though they haven't been individually signed in and authenticated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputationModelAnomalyDetectionConfiguration
-<a name="API_ComputationModelAnomalyDetectionConfiguration"></a>
 
 Contains the configuration of the type of anomaly detection computation model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/sap-ibm-pacemaker-f
 ---
 
 # FAQ
-<a name="sap-ibm-pacemaker-faq"></a>
 
  **Question:** Can I use Database Migration Service to migrate and deploy SAP NetWeaver on IBM Db2 based applications?
 

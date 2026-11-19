@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Analyze
 ---
 
 # AnalyzeID
-<a name="API_AnalyzeID"></a>
 
 Analyzes identity documents for relevant information. This information is extracted and returned as `IdentityDocumentFields`, which records both the normalized field and value of the extracted text. Unlike other Amazon Textract operations, `AnalyzeID` doesn't return any Geometry data.
 

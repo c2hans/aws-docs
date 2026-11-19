@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # IntegrationSummary
-<a name="API_IntegrationSummary"></a>
 
 Contains summary information about an S3 Table integration for listing operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Gat
 ---
 
 # GatewayCapabilitySummary
-<a name="API_GatewayCapabilitySummary"></a>
 
 Contains a summary of a gateway capability configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Restore
 ---
 
 # RestoreBackup
-<a name="API_RestoreBackup"></a>
 
 Restores a specified AWS CloudHSM backup that is in the `PENDING_DELETION` state. For more information on deleting a backup, see [DeleteBackup](API_DeleteBackup.md).
 

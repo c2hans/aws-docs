@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-ddb-batchfailu
 ---
 
 # Configuring partial batch response with DynamoDB and Lambda
-<a name="services-ddb-batchfailurereporting"></a>
 
 Before you configure partial batch responses, you must first create a DynamoDB event source mapping. For instructions, see [Process DynamoDB records with Lambda](services-dynamodb-eventsourcemapping.md).
 

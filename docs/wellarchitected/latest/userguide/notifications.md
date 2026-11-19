@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/notific
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Notifications
-<a name="notifications"></a>
 
 The **Notifications** page displays version differences for workloads and review templates that have lenses and profiles associated with them. You can upgrade to the newest version of a lens or profile for a workload from the Notifications page.
 

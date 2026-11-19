@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Detec
 ---
 
 # DetectKeyPhrases
-<a name="API_DetectKeyPhrases"></a>
 
 Detects the key noun phrases found in the text.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/cogn
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Amazon Cognito Identity
-<a name="cognito-identity"></a>
 
 ## What is Amazon Cognito Identity?
 <a name="what-is-amazon-cognito-identity"></a>

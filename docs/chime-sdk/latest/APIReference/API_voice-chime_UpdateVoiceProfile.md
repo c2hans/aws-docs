@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # UpdateVoiceProfile
-<a name="API_voice-chime_UpdateVoiceProfile"></a>
 
 Updates the specified voice profile’s voice print and refreshes its expiration timestamp.
 

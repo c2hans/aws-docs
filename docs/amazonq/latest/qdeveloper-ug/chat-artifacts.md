@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-artifa
 ---
 
 # Using Q artifacts in Amazon Q
-<a name="chat-artifacts"></a>
 
 Q artifacts are now part of the AWS assistant.
 

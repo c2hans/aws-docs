@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # BusinessGoals
-<a name="API_BusinessGoals"></a>
 
  Business goals that you specify.
 

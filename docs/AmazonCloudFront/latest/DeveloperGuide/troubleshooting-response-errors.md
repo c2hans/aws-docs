@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/t
 ---
 
 # Troubleshooting error response status codes in CloudFront
-<a name="troubleshooting-response-errors"></a>
 
 If CloudFront requests an object from your origin, and the origin returns an HTTP 4xx or 5xx status code, there's a problem with communication between CloudFront and your origin.
 

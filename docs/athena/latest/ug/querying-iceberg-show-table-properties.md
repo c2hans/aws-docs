@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-show-t
 ---
 
 # SHOW TBLPROPERTIES
-<a name="querying-iceberg-show-table-properties"></a>
 
 Shows one or more table properties of an Iceberg table. Only Athena-supported table properties are shown.
 

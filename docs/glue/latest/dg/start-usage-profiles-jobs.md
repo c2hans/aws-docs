@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/start-usage-profiles-jobs
 ---
 
 # Working with usage profiles
-<a name="start-usage-profiles-jobs"></a>
 
 ## Authoring jobs with usage profiles
 <a name="w2aac15c15c21b3"></a>

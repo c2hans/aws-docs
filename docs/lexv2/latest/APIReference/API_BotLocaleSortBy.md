@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotLocaleS
 ---
 
 # BotLocaleSortBy
-<a name="API_BotLocaleSortBy"></a>
 
 Specifies attributes for sorting a list of bot locales.
 

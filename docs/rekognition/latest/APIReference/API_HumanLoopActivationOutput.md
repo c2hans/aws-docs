@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Huma
 ---
 
 # HumanLoopActivationOutput
-<a name="API_HumanLoopActivationOutput"></a>
 
 Shows the results of the human in the loop evaluation. If there is no HumanLoopArn, the input did not trigger human review.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/troubleshoo
 ---
 
 # Troubleshooting issues with Java transformations
-<a name="troubleshooting-code-transformation"></a>
 
 The following information can help you troubleshoot common issues when transforming Java applications with Amazon Q Developer.
 

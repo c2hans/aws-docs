@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateData
 ---
 
 # GenerateDataKeyPairWithoutPlaintext
-<a name="API_GenerateDataKeyPairWithoutPlaintext"></a>
 
 Returns a unique asymmetric data key pair for use outside of AWS KMS. This operation returns a plaintext public key and a copy of the private key that is encrypted under the symmetric encryption KMS key you specify. Unlike [GenerateDataKeyPair](API_GenerateDataKeyPair.md), this operation does not return a plaintext private key. The bytes in the keys are random; they are not related to the caller or to the KMS key that is used to encrypt the private key.
 

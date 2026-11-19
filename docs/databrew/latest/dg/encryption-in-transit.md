@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/encryption-in-transit
 ---
 
 # Encryption in transit
-<a name="encryption-in-transit"></a>
 
 AWS provides Secure Sockets Layer (SSL) encryption for data in flight.
 

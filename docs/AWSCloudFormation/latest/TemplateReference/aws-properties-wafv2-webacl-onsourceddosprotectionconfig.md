@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL OnSourceDDoSProtectionConfig
-<a name="aws-properties-wafv2-webacl-onsourceddosprotectionconfig"></a>
 
 Configures the level of DDoS protection that applies to web ACLs associated with Application Load Balancers.
 

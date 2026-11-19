@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-impa
 ---
 
 # Controlling how server failures affect a plan
-<a name="recovery-plans-impact-levels"></a>
 
 Every server in a server step has an impact level that determines whether its failure stops the plan:
 

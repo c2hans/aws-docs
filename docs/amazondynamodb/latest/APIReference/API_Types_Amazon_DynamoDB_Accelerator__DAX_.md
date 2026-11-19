@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # DynamoDB Accelerator
-<a name="API_Types_Amazon_DynamoDB_Accelerator__DAX_"></a>
 
 The following data types are supported by DynamoDB Accelerator:
 +  [Cluster](API_dax_Cluster.md)

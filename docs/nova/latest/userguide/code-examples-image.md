@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/code-examples-imag
 ---
 
 # Generate an image
-<a name="code-examples-image"></a>
 
 The following code examples show how to invoke Amazon Nova Canvas on Amazon Bedrock to generate an image.
 

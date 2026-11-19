@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-databre
 ---
 
 # Start AWS Glue DataBrew jobs with Step Functions
-<a name="connect-databrew"></a>
 
 Learn how you can use the DataBrew integration to add data cleaning and data normalization steps into your analytics and machine learning workflows with Step Functions.
 

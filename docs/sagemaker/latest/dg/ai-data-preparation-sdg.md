@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ai-data-preparation-
 ---
 
 # Synthetic data generation
-<a name="ai-data-preparation-sdg"></a>
 
 With synthetic data generation (SDG), you describe the dataset that you need in a dataset specification, and SageMaker AI generates records that meet that specification. SDG produces large language model (LLM) data in JSON Lines format and tabular data in formats such as CSV, for training, evaluating, and testing models.
 

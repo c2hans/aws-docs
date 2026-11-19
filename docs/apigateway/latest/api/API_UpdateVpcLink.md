@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateVpcLink.
 ---
 
 # UpdateVpcLink
-<a name="API_UpdateVpcLink"></a>
 
 Updates an existing VpcLink of a specified identifier.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Manage Projects from Domain Administration
-<a name="manage-projects-domain-administration"></a>
 
 The Projects section in domain administration provides centralized management of all projects within your Amazon SageMaker Unified Studio domain. Domain administrators can view project details, monitor project status, create new projects, and manage project configurations.
 

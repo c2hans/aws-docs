@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-data-resour
 ---
 
 # IAM resource types for accessing data in Amazon Neptune
-<a name="iam-data-resources"></a>
 
 Data resources, like data actions, have a `neptune-db:` prefix.
 

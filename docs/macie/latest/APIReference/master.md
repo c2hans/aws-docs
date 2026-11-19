@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/master.html
 ---
 
 # Master Account
-<a name="master"></a>
 
 This resource has been deprecated and is retained only for backward compatibility. It provides information about the Amazon Macie administrator account for your account. To retrieve information about the Macie administrator account for your account, use the [Administrator](administrator.md) resource instead of this resource. To learn about the relationship between your account and its Macie administrator account, see [Managing multiple accounts](https://docs.aws.amazon.com/macie/latest/user/macie-accounts.html) in the *Amazon Macie User Guide*.
 

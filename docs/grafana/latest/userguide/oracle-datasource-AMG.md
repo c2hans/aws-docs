@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/oracle-datasour
 ---
 
 # Connect to an Oracle Database data source
-<a name="oracle-datasource-AMG"></a>
 
 **Note**
 This data source is for Grafana Enterprise only. For more information, see [Manage access to Enterprise plugins](upgrade-to-enterprise-plugins.md).

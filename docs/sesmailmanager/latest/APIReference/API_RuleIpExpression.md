@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleIpExpression
-<a name="API_RuleIpExpression"></a>
 
 An IP address expression matching certain IP addresses within a given range of IP addresses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/LambdaRedis.
 ---
 
 # Tutorial: Configuring Lambda to access ElastiCache in a VPC
-<a name="LambdaRedis"></a>
 
 In this tutorial you can learn how to create an ElastiCache serverless cache, create a Lambda function, then test the Lambda function, and optionally clean up after.
 

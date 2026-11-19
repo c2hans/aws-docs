@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-conda.htm
 ---
 
 # Using the Deep Learning AMI with Conda
-<a name="tutorial-conda"></a>
 
 **Topics**
 + [Introduction to the Deep Learning AMI with Conda](#tutorial-conda-overview)

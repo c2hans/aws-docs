@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Deliver resilient and secure real-time viewing experiences using AWS Elemental MediaLive and Amazon S3 services
-<a name="solution-overview"></a>
 
 Amazon Web Services (AWS) helps broadcasters and content owners to automate media supply chains, streamline content distribution, and cost-effectively broadcast live content to a global audience. With AWS, you can seamlessly scale your infrastructure to meet demand, and pay only for what you use, helping you build highly available and cost-effective solutions for live video streaming.
 

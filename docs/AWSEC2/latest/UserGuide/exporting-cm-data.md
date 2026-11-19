@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/exporting-cm-dat
 ---
 
 # Exporting your Capacity Manager data
-<a name="exporting-cm-data"></a>
 
 You can export capacity data from EC2 Capacity Manager to Amazon S3 to enable further analysis, create custom reports, or integrate with other AWS services. You can export your data in CSV or Parquet format. In the following sections, you'll find information on how to export your Capacity Manager data.
 

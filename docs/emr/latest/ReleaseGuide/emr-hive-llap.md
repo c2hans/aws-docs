@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hive-llap.ht
 ---
 
 # Using Hive Live Long and Process (LLAP)
-<a name="emr-hive-llap"></a>
 
 Amazon EMR 6.0.0 supports the Live Long and Process (LLAP) functionality for Hive. LLAP uses persistent daemons with intelligent in-memory caching to improve query performance compared to the previous default Tez container execution mode.
 

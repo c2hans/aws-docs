@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/cicd-jenkins.html
 ---
 
 # Using the Amazon Inspector Jenkins plugin
-<a name="cicd-jenkins"></a>
 
  The Amazon Inspector Jenkins plugin adds Amazon Inspector vulnerability scans to your Jenkins builds. The plugin runs the [Amazon Inspector SBOM Generator](https://docs.aws.amazon.com/inspector/latest/user/sbom-generator.html#sbomgen-supported) to create a software bill of materials (SBOM) for a container image. It sends the SBOM to the Amazon Inspector Scan API and produces detailed reports at the end of your build, so you can investigate and remediate risk before deployment. You can fail the build based on the number and severity of vulnerabilities, Exploit Prediction Scoring System (EPSS) scores, specific common vulnerabilities and exposures (CVEs), or malicious packages. For the latest version of the plugin, see [Amazon Inspector Scanner](https://plugins.jenkins.io/amazon-inspector-image-scanner/) on the Jenkins plugins website. The following steps describe how to set up the Amazon Inspector Jenkins plugin.
 

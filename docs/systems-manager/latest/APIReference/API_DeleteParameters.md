@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeleteParameters
-<a name="API_DeleteParameters"></a>
 
 Delete a list of parameters. After deleting a parameter, wait for at least 30 seconds to create a parameter with the same name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-q
 ---
 
 # Traffic Mirroring quotas
-<a name="traffic-mirroring-quotas"></a>
 
 The following are the quotas for Traffic Mirroring for your AWS account.
 

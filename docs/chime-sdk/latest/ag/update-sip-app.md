@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/update-sip-app.html
 ---
 
 # Updating a SIP media application
-<a name="update-sip-app"></a>
 
 You can update the name and Amazon Resource Names (ARNs) of your Lambda function for your SIP media applications. You can't update the AWS Region.
 

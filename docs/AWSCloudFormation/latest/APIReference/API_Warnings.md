@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # Warnings
-<a name="API_Warnings"></a>
 
 Contains any warnings returned by the `GetTemplateSummary` API action.
 

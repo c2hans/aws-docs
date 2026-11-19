@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Notifica
 ---
 
 # NotificationRecipientType
-<a name="API_NotificationRecipientType"></a>
 
 The type of notification recipient.
 

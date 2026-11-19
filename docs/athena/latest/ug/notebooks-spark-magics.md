@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-magics.
 ---
 
 # Use magic commands
-<a name="notebooks-spark-magics"></a>
 
 Magic commands, or magics, are special commands that you can run in a notebook cell. For example, `%env` shows the environment variables in a notebook session. Athena supports the magic functions in IPython 6.0.3.
 

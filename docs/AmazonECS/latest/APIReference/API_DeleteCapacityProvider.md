@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Delete
 ---
 
 # DeleteCapacityProvider
-<a name="API_DeleteCapacityProvider"></a>
 
 Deletes the specified capacity provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdMappingWorkflowInputSource
-<a name="API_IdMappingWorkflowInputSource"></a>
 
 An object containing `inputSourceARN`, `schemaName`, and `type`.
 

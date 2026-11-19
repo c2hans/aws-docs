@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/paloa
 ---
 
 # Source configuration for Palo Alto Networks Next-Generation Firewalls
-<a name="paloalto-ngfw-source-setup"></a>
 
 ## Integrating with Palo Alto Networks Next-Generation Firewalls
 <a name="paloalto-ngfw-integration"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Backfill
-<a name="backfill-phase"></a>
 
 Backfill moves the documents that already exist on the source cluster into the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection. Migration Assistant takes a point-in-time snapshot of the source in [Amazon Simple Storage Service](https://aws.amazon.com/s3) (Amazon S3) — the only time the source is touched — and then uses Reindex-from-Snapshot (RFS) to read Lucene segment files directly from the snapshot and bulk-index them into the target.
 

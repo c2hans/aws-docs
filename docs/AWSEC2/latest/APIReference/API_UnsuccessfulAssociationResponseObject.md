@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Unsuccess
 ---
 
 # UnsuccessfulAssociationResponseObject
-<a name="API_UnsuccessfulAssociationResponseObject"></a>
 
 Describes an unsuccessful application status check association.
 

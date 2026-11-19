@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sqs_example_cross
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a web application that sends and retrieves messages by using Amazon SQS
-<a name="sqs_example_cross_SQSMessageApp_section"></a>
 
 The following code examples show how to create a messaging application by using Amazon SQS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/change-
 ---
 
 # Changing Provisioned Product Owner
-<a name="change-pp-owner"></a>
 
  You can change the owner of a provisioned product anytime. You need to know the ARN of the user or role you want to set as the new owner.
 

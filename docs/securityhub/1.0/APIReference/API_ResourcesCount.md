@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesCount
-<a name="API_ResourcesCount"></a>
 
 Contains counts of resources for trend analysis.
 

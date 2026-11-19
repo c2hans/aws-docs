@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/how-maintenance-w
 ---
 
 # How maintenance works
-<a name="how-maintenance-works"></a>
 
 For router I/Os, MediaConnect automatically schedules maintenance every 60–66 days after the I/O is started. You configure a preferred day and start hour, and MediaConnect applies updates to the I/O within that two-hour window.
 

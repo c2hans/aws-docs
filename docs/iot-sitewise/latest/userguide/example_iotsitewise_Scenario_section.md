@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/example_io
 ---
 
 # Learn the basics of AWS IoT SiteWise with an AWS SDK
-<a name="example_iotsitewise_Scenario_section"></a>
 
 The following code examples show how to:
 + Create an AWS IoT SiteWise Asset Model.

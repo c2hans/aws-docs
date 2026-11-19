@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-s
 ---
 
 # AWS IoT Core for Amazon Sidewalk
-<a name="iot-sidewalk"></a>
 
 AWS IoT Core for Amazon Sidewalk provides the cloud services that you can use to connect your Sidewalk-enabled devices to the AWS Cloud and use other AWS services.
 

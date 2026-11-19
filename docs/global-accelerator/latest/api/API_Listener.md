@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Listen
 ---
 
 # Listener
-<a name="API_Listener"></a>
 
 A complex type for a listener.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ListResource
 ---
 
 # ListResourcePolicies
-<a name="API_ListResourcePolicies"></a>
 
 Returns a list of policies for a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dele
 ---
 
 # DeleteResourceGateway
-<a name="API_DeleteResourceGateway"></a>
 
 Deletes the specified resource gateway.
 

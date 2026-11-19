@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Anthropic Claude 3 Haiku
-<a name="model-evaluation-type-judge-prompt-haiku"></a>
 
 Prompts used with Anthropic Claude 3 Haiku.
 

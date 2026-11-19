@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/u
 ---
 
 # Update Configuration dialog box
-<a name="update-configuration-dialog"></a>
 
 The **Update Configuration** dialog box in the AWS Toolkit for JetBrains is displayed whenever you update the configuration for an AWS Lambda function. The information that you provide differs slightly depending on whether the project's Lambda function is of package type `Zip` or `Image`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeEndpointAuthorization
-<a name="API_DescribeEndpointAuthorization"></a>
 
 Describes an endpoint authorization.
 

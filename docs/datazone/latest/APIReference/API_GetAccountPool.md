@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetAcco
 ---
 
 # GetAccountPool
-<a name="API_GetAccountPool"></a>
 
 Gets the details of the account pool.
 

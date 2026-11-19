@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredGrafanaServerDetails
-<a name="API_RegisteredGrafanaServerDetails"></a>
 
 Details specific to a registered Grafana server, used by the built-in MCP server.
 

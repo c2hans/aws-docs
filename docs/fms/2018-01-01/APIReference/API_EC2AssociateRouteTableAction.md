@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_EC2Assoc
 ---
 
 # EC2AssociateRouteTableAction
-<a name="API_EC2AssociateRouteTableAction"></a>
 
 The action of associating an EC2 resource, such as a subnet or internet gateway, with a route table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/renaming-an-analy
 ---
 
 # Renaming an analysis
-<a name="renaming-an-analysis"></a>
 
 Use the following procedure to rename an analysis.
 

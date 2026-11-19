@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/visual-
 ---
 
 # Using the visual design experience
-<a name="visual-designer-use"></a>
 
 Learn to create, edit, and run runbook workflows using the visual design experience. When your workflow is ready, save or export it. You can also use it for rapid prototyping.
 

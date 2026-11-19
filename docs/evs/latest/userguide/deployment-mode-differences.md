@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/deployment-mode-dif
 ---
 
 # Differences between deployment modes
-<a name="deployment-mode-differences"></a>
 
 Amazon Elastic VMware Service (Amazon EVS) offers two deployment modes for VMware Cloud Foundation (VCF):
 + In **Self-deployed** mode, Amazon EVS creates the VLAN subnets when you create the environment. You add the hosts and install VCF yourself. You can deploy VCF 5.x or VCF 9.x in this mode.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListPu
 ---
 
 # ListPublishingDestinations
-<a name="API_ListPublishingDestinations"></a>
 
 Returns a list of publishing destinations associated with the specified `detectorId`.
 

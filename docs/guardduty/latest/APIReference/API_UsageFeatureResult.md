@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UsageF
 ---
 
 # UsageFeatureResult
-<a name="API_UsageFeatureResult"></a>
 
 Contains information about the result of the total usage based on the feature.
 

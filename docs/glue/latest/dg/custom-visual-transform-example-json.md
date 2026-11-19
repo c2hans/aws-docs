@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/custom-visual-transform-e
 ---
 
 # Usage examples
-<a name="custom-visual-transform-example-json"></a>
 
  The following is an example of all possible parameters in a .json config file.
 

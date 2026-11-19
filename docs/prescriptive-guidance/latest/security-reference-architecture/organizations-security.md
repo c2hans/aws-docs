@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Using AWS Organizations for security
-<a name="organizations-security"></a>
 
 [AWS Organizations](https://aws.amazon.com/organizations/) helps you centrally manage and govern your environment as you grow and scale your AWS resources. By using AWS Organizations, you can programmatically create new AWS accounts, allocate resources, group accounts to organize your workloads, and apply policies to accounts or groups of accounts for governance. An AWS organization consolidates your AWS accounts so that you can administer them as a single unit. It has one management account along with zero or more member accounts. We recommend that you use a multi-account structure managed by AWSAWS organization. [You can group accounts into AWS organizational units (OUs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html), which can represent different environments based on the workload's requirements and purpose. AWS Organizations also provides several policies that enable you to centrally apply additional security controls to all the member accounts in your organizations. This section focuses on service control policies (SCPs), resource control policies (RCPs), and declarative policies.
 

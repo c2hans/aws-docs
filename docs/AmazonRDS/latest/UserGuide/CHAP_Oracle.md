@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.h
 ---
 
 # Amazon RDS for Oracle
-<a name="CHAP_Oracle"></a>
 
 Amazon RDS supports DB instances that run the following versions and editions of Oracle Database:
 + Oracle Database 26ai (26.0.0.0)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/parameters-set-up
 ---
 
 # Setting up parameters in AWS Quick
-<a name="parameters-set-up"></a>
 
 Use the following procedure to create or edit a basic parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/h
 ---
 
 # Hybrid DNS Resolution with Amazon Route 53 Resolver Endpoints (IPv4)
-<a name="hybrid-dns-ipv4"></a>
 
 Publication date: **January 17, 2025 ([Diagram history](#hdns4-diagram-history))**
 

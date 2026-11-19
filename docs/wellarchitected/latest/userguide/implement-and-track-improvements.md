@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/impleme
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Implement and track improvements
-<a name="implement-and-track-improvements"></a>
 
  The ideal outcome of successful implementations is a reduction in HRIs and MRIs, resulting in an improvement to the architectural health of your workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/network-config.html
 ---
 
 # Network configuration and bandwidth requirements
-<a name="network-config"></a>
 
 The Amazon Chime SDK requires the destinations and ports described in this topic to support various services. If inbound or outbound traffic is blocked, this blockage might affect the ability to use various services, including audio, video, screen sharing, or chat.
 

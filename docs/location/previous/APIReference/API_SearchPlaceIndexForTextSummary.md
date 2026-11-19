@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Searc
 ---
 
 # SearchPlaceIndexForTextSummary
-<a name="API_SearchPlaceIndexForTextSummary"></a>
 
 A summary of the request sent by using `SearchPlaceIndexForText`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-marketp
 ---
 
 # Call the endpoint
-<a name="bedrock-marketplace-call-the-endpoint"></a>
 
 You can start using your model after you've deployed it to an endpoint. You use either the `Converse` or `InvokeModel` operations to call the models.
 

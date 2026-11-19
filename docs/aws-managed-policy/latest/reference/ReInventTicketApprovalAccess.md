@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ReIn
 ---
 
 # ReInventTicketApprovalAccess
-<a name="ReInventTicketApprovalAccess"></a>
 
 **Description**: Grants an IAM role or user full access to view re:Invent pass charge details and approve billing to their AWS accounts
 

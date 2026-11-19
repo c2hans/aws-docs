@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator.htm
 ---
 
 # Amazon Inspector SBOM Generator
-<a name="sbom-generator"></a>
 
  A Software Bill of Materials (SBOM) is [a formally structured list of components, libraries, and modules](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/software-bill-of-materials-sbom.html) required to build a piece of software. The Amazon Inspector SBOM Generator (Sbomgen) is a tool that produces an SBOM for archives, container images, directories, local systems, and compiled Go and Rust binaries. Sbomgen scans for files that contain information about installed packages. When Sbomgen finds a relevant file, it extracts package names, versions, and other metadata. Sbomgen then transforms package metadata into a CycloneDX SBOM. You can use Sbomgen to generate the CycloneDX SBOM as a file or in STDOUT and send SBOMs to Amazon Inspector for vulnerability detection. You can also use Sbomgen as part of [the CI/CD integration](https://docs.aws.amazon.com/inspector/latest/user/scanning-cicd.html), which scans container images automatically as part of your deployment pipeline.
 

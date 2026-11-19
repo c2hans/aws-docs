@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/sigv4-authenticate
 ---
 
 # SIGv4 authenticated requests for Amazon VPC Lattice
-<a name="sigv4-authenticated-requests"></a>
 
 VPC Lattice uses Signature Version 4 (SIGv4) or Signature Version 4A (SIGv4A) for client authentication. For more information, see [AWS Signature Version 4 for API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html) in the *IAM User Guide*.
 

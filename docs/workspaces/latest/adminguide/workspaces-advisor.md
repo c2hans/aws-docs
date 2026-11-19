@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-
 ---
 
 # What is Amazon WorkSpaces Advisor?
-<a name="workspaces-advisor"></a>
 
 Amazon WorkSpaces Advisor (Advisor) is an AI-powered agent that helps you keep your WorkSpaces Personal environment running smoothly. Advisor detects issues, diagnoses their likely cause, and recommends actions to resolve them, whether an issue affects one WorkSpace, a group of WorkSpaces across your fleet, or a user's session.
 

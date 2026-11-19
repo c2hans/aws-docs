@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GridL
 ---
 
 # GridLayoutScreenCanvasSizeOptions
-<a name="API_GridLayoutScreenCanvasSizeOptions"></a>
 
 The options that determine the sizing of the canvas used in a grid layout.
 

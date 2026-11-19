@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_AmplitudeMe
 ---
 
 # AmplitudeMetadata
-<a name="API_AmplitudeMetadata"></a>
 
  The connector metadata specific to Amplitude.
 

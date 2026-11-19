@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle unused columns
-<a name="chap-oracle-aurora-mysql.tables.alter"></a>
 
 With AWS DMS, you can identify and manage unused columns in Oracle databases during database migration and replication tasks.
 

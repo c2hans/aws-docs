@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ParameterDeclaration
-<a name="API_ParameterDeclaration"></a>
 
 The `ParameterDeclaration` data type.
 

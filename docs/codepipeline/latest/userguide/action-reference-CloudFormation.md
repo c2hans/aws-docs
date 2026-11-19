@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # CloudFormation deploy action reference
-<a name="action-reference-CloudFormation"></a>
 
 Executes an operation on an CloudFormation stack. A stack is a collection of AWS resources that you can manage as a single unit. The resources in a stack are defined by the stack's CloudFormation template. A change set creates a comparison that can be viewed without altering the original stack. For information about the types of CloudFormation actions that can be performed on stacks and change sets, see the `ActionMode` parameter.
 

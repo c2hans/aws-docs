@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # SearchedLogStream
-<a name="API_SearchedLogStream"></a>
 
 Represents the search status of a log stream.
 

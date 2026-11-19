@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Paths to the cloud
-<a name="cloud-paths"></a>
 
 This section describes a high-level approach for implementing best practices to migrate your Windows applications to AWS. Details of these migration strategies and steps are described in the subsequent sections of this guide.
 

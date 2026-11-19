@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SetRcsMessageSpendLimitOverride
-<a name="API_SetRcsMessageSpendLimitOverride"></a>
 
 Sets an account level monthly spend limit override for sending RCS messages. The requested spend limit must be less than or equal to the `MaxLimit`, which is set by AWS.
 

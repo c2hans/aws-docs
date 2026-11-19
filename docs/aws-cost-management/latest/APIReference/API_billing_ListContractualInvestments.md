@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListContractualInvestments
-<a name="API_billing_ListContractualInvestments"></a>
 
 Lists the investments within a specific investment summary. This operation is read-only and paginated.
 

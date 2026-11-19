@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Step 3: Deploy the Data stack
-<a name="step3-deploy-data-stack"></a>
 
 In this step, you deploy the data resources required for the ISB application.
 

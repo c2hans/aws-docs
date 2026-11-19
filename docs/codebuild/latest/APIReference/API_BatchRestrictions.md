@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchR
 ---
 
 # BatchRestrictions
-<a name="API_BatchRestrictions"></a>
 
 Specifies restrictions for the batch build.
 

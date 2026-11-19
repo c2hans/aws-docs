@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Redshift::ScheduledAction
-<a name="aws-resource-redshift-scheduledaction"></a>
 
 Creates a scheduled action. A scheduled action contains a schedule and an Amazon Redshift API action. For example, you can create a schedule of when to run the `ResizeCluster` API operation.
 
@@ -54,7 +53,7 @@ Properties:
 <a name="aws-resource-redshift-scheduledaction-properties"></a>
 
 `Enable`  <a name="cfn-redshift-scheduledaction-enable"></a>
-If true, the schedule is enabled. If false, the scheduled action does not trigger. For more information about `state` of the scheduled action, see [AWS::Redshift::ScheduledAction](#aws-resource-redshift-scheduledaction).
+If true, the schedule is enabled. If false, the scheduled action does not trigger. For more information about `state` of the scheduled action, see [AWS::Redshift::ScheduledAction](aws-resource-redshift-scheduledaction.md).
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

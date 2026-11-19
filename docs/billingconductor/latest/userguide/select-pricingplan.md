@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/select
 ---
 
 # Select an AWS managed pricing plan
-<a name="select-pricingplan"></a>
 
 Use the following steps to select an AWS managed pricing plan.
 

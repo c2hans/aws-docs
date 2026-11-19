@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Route.htm
 ---
 
 # Route
-<a name="API_Route"></a>
 
 Describes a route in a route table.
 

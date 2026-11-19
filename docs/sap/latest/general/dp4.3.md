@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/dp4.3.html
 ---
 
 # DataProvider 4.3
-<a name="dp4.3"></a>
 
 If you are new to AWS Data Provider for SAP, see [Installing DataProvider 4.3](data-provider-installation.md).
 

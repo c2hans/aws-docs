@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # CancelPolicyGeneration
-<a name="API_CancelPolicyGeneration"></a>
 
 Cancels the requested policy generation.
 

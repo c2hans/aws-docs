@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_IdcAuth
 ---
 
 # IdcAuthConfiguration
-<a name="API_IdcAuthConfiguration"></a>
 
 Information about the AWS IAM Identity Center Application used to configure authentication for a plugin.
 

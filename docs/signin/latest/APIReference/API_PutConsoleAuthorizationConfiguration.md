@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_PutConsol
 ---
 
 # PutConsoleAuthorizationConfiguration
-<a name="API_PutConsoleAuthorizationConfiguration"></a>
 
 Enables AWS Management Console authorization configuration for an AWS account or organization. The operation automatically detects whether the `targetId` is an account ID or an organization ID, and applies the appropriate authorization scope.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-tag-pr
 ---
 
 # View tags for a project
-<a name="how-to-tag-project-list"></a>
 
 Tags can help you identify and organize your AWS resources and manage access to them. For more information about using tags, see the [Tagging best practices](https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf) whitepaper. For examples of tag-based access policies, see [Using tags to control access to AWS CodeBuild resources](auth-and-access-control-using-tags.md).
 

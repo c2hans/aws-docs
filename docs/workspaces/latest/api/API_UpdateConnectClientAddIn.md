@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateConnectC
 ---
 
 # UpdateConnectClientAddIn
-<a name="API_UpdateConnectClientAddIn"></a>
 
 Updates a Connect Customer client add-in. Use this action to update the name and endpoint URL of a Connect Customer client add-in.
 

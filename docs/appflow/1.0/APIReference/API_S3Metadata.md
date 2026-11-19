@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3Metadata.
 ---
 
 # S3Metadata
-<a name="API_S3Metadata"></a>
 
  The connector metadata specific to Amazon S3.
 

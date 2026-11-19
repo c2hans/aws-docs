@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Jenkins X
-<a name="jenkins-x"></a>
 
 Jenkins X is a cloud-native, open-source CI/CD platform that implements GitOps principles for Kubernetes environments. Although Jenkins X isn't exclusively a GitOps tool such as Argo CD or Flux, it incorporates GitOps practices into its workflows.
 

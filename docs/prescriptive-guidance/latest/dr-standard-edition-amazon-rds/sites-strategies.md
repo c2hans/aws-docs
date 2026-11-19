@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # DR sites and common Amazon RDS DR strategies
-<a name="sites-strategies"></a>
 
 A disaster recovery (DR) site is a secondary location used by an organization for restoring its business-critical IT infrastructure and applications when a primary site has been impacted by disaster. DR sites are often built in a remote location to help ensure that the disaster affecting the main site will not also affect the secondary site. DR sites available to you within AWS can be broadly categorized as near DR and far DR:
 + Near DR is often referred to as in-Region disaster recovery. The DR solution is configured among the Availability Zones to protect the system when there is an Availability Zone outage or planned maintenance.

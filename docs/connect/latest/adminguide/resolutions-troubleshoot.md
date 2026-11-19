@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-tr
 ---
 
 # Troubleshoot Resolutions
-<a name="resolutions-troubleshoot"></a>
 
  This topic helps you troubleshoot common Resolutions problems with permissions, email, attachments, and external tool integrations. Most problems come from a few causes: missing permissions, a queue or flow that isn't set up to link to the Resolutions Case, Amazon SES sandbox restrictions, and attachment limits.
 

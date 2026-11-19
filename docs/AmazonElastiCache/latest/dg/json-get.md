@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-get.htm
 ---
 
 # JSON.GET
-<a name="json-get"></a>
 
 Returns the serialized JSON at one or multiple paths.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ReplicationC
 ---
 
 # ReplicationConfigurationTemplate
-<a name="API_ReplicationConfigurationTemplate"></a>
 
 ## Contents
 <a name="API_ReplicationConfigurationTemplate_Contents"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Impor
 ---
 
 # ImportModel
-<a name="API_ImportModel"></a>
 
 Creates a new custom model that replicates a source custom model that you import. The source model can be in your AWS account or another one.
 

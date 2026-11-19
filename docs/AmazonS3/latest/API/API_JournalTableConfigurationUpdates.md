@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_JournalTableConf
 ---
 
 # JournalTableConfigurationUpdates
-<a name="API_JournalTableConfigurationUpdates"></a>
 
  The specified updates to the S3 Metadata journal table configuration.
 

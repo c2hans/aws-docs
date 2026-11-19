@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/managing-subscrip
 ---
 
 # Managing Quick subscriptions
-<a name="managing-subscriptions"></a>
 
 Subscription management in AWS Quick involves configuring and optimizing your service usage to meet your organization's needs while controlling costs. This section covers essential subscription-related tasks including upgrading or downgrading user subscriptions between Quick Professional and Enterprise, managing SPICE memory capacity to ensure optimal performance for your in-memory datasets, and configuring data capacity limits for unstructured data storage. Proper subscription management helps you balance performance, functionality, and cost while ensuring your users have the resources they need to create and share insights effectively.
 

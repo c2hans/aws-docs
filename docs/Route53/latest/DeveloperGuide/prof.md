@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/prof.html
 ---
 
 # .prof
-<a name="prof"></a>
 
 Used by professors to showcase teaching credentials, research, and publications.
 

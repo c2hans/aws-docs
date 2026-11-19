@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AccountAccess::Application
-<a name="aws-resource-accountaccess-application"></a>
 
 Specifies the identity source for the application. The identity source defines the IAM Identity Center instance that provides principals for entitlements.
 

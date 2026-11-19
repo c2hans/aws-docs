@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mhj/latest/userguide/modules.html
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Modules
-<a name="modules"></a>
 
 A migration journey consists of phases. Phases consist of modules, which in turn consist of tasks and subtasks. Modules are logical containers that you use to organize the tasks in a phase.
 

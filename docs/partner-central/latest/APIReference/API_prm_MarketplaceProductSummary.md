@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # MarketplaceProductSummary
-<a name="API_prm_MarketplaceProductSummary"></a>
 
 Read-time AWS Marketplace product attributes returned in revenue attribution responses, including service-resolved fields.
 

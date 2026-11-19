@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_UserToken
 ---
 
 # UserTokenConfiguration
-<a name="API_UserTokenConfiguration"></a>
 
 Provides the configuration information for a token.
 

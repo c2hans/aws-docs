@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/testing-simula
 ---
 
 # Override system behavior actions
-<a name="testing-simulation-action-override"></a>
 
 Override System Behavior actions provide a powerful way to control how specific resources in your contact flow operate during test execution. When you override a resource, you're temporarily changing its behavior for testing purposes without modifying your actual contact flow configuration.
 

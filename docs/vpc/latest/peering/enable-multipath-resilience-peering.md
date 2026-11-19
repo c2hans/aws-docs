@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/enable-multipath-resi
 ---
 
 # Enable multipath resilience for a VPC peering connection
-<a name="enable-multipath-resilience-peering"></a>
 
 Multipath resilience for Amazon VPC peering connections replicates packets across multiple paths on the AWS global network and de-duplicates the copies at the destination Region, so the application receives each packet once. You enable multipath resilience on both sides of a cross-Region peering connection.
 

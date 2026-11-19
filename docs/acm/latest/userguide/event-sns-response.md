@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/event-sns-response.
 ---
 
 # Responding to an event with Amazon SNS
-<a name="event-sns-response"></a>
 
 This section shows how to configure Amazon SNS to send a text notification whenever ACM generates a health event.
 

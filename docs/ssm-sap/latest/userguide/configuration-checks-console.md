@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/configuration-c
 ---
 
 # Run Configuration Checks
-<a name="configuration-checks-console"></a>
 
 Use the following steps to evaluate the SAP configuration of a Systems Manager for SAP application, which is either of type SAP HANA or SAP ABAP.
 

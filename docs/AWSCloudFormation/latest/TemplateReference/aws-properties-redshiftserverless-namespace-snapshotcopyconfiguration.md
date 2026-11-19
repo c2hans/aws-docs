@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RedshiftServerless::Namespace SnapshotCopyConfiguration
-<a name="aws-properties-redshiftserverless-namespace-snapshotcopyconfiguration"></a>
 
 The object that you configure to copy snapshots from one namespace to a namespace in another AWS Region.
 

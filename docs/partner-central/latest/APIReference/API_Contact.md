@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Contact
-<a name="API_Contact"></a>
 
 An object that contains a `Customer Partner`'s contact details.
 

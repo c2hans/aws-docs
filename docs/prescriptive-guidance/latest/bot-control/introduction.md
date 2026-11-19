@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Implementing a bot control strategy on AWS
-<a name="introduction"></a>
 
 *Diana Alvarado, Geary Scherer, Tzoori Tamam, and Cameron Worrell, Amazon Web Services*
 

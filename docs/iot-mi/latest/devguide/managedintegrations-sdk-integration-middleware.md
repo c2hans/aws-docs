@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Integrate middleware with SDK
-<a name="managedintegrations-sdk-integration-middleware"></a>
 
 The middleware integration on the new hub is discussed in the following sections.
 

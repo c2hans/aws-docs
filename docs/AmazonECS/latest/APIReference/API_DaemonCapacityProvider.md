@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonCapacityProvider
-<a name="API_DaemonCapacityProvider"></a>
 
 Information about a capacity provider associated with a daemon revision.
 

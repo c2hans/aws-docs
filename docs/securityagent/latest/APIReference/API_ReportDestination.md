@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Re
 ---
 
 # ReportDestination
-<a name="API_ReportDestination"></a>
 
 Destination for publishing scan reports to an integrated document provider.
 

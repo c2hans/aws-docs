@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Outbound
 ---
 
 # OutboundRawMessage
-<a name="API_OutboundRawMessage"></a>
 
 Information about the raw email body content.
 

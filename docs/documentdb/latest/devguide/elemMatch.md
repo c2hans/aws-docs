@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/elemMatch.htm
 ---
 
 # $elemMatch
-<a name="elemMatch"></a>
 
 The `$elemMatch` operator in Amazon DocumentDB is used to query an array field and return documents where at least one element in the array matches the specified criteria. This operator is particularly useful when you have complex data structures with nested arrays or embedded documents.
 

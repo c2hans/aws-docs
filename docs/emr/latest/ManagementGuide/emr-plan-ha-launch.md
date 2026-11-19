@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-ha-l
 ---
 
 # Launch an Amazon EMR Cluster with multiple primary nodes
-<a name="emr-plan-ha-launch"></a>
 
 This topic provides configuration details and examples for launching an Amazon EMR cluster with multiple primary nodes.
 

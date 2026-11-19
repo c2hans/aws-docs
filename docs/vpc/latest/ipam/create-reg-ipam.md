@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/create-reg-ipam.html
 ---
 
 # Create a Regional IPv4 pool
-<a name="create-reg-ipam"></a>
 
 Follow the steps in this section to create a Regional pool within your top-level pool. If you need only a top-level pool, and don't need additional Regional and development pools, skip to [Allocate CIDRs from an IPAM pool](allocate-cidrs-ipam.md).
 

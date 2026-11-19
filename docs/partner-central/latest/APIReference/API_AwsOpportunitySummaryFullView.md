@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AwsOpportunitySummaryFullView
-<a name="API_AwsOpportunitySummaryFullView"></a>
 
 Provides a comprehensive view of AwsOpportunitySummaryFullView template.
 

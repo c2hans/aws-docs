@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ad
 ---
 
 # How to add a route to a static map
-<a name="how-to-add-route"></a>
 
 In this topic, you'll learn how to add a route to a static map using Amazon Location Service. You'll go through the steps to obtain a route using the CalculateRoutes API and then visualize it on a static map using GeoJSON and custom styling for points and lines.
 

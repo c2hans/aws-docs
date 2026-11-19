@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Scrol
 ---
 
 # ScrollBarOptions
-<a name="API_ScrollBarOptions"></a>
 
 The visual display options for a data zoom scroll bar.
 

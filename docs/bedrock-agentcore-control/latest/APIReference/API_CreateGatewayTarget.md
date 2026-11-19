@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateGatewayTarget
-<a name="API_CreateGatewayTarget"></a>
 
 Creates a target for a gateway. A target defines an endpoint that the gateway can connect to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/s
 ---
 
 # Security, identity, and compliance
-<a name="security-identity-compliance"></a>
 
 The following decision guides help you choose AWS services for security, identity, cryptography, and web application protection.
 

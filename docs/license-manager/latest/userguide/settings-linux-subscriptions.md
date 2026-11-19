@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/setting
 ---
 
 # Linux subscription settings in License Manager
-<a name="settings-linux-subscriptions"></a>
 
 During the process of discovery, License Manager searches the EC2 instances that are running under your AWS account for Linux subscriptions. It detects if you have more than one Linux subscription defined for any instances, and aggregates the data.
 

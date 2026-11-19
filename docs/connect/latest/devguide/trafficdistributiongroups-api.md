@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/trafficdistribut
 ---
 
 # Traffic distribution group actions
-<a name="trafficdistributiongroups-api"></a>
 
 The following API actions are available for traffic distribution groups:
 + [AssociateTrafficDistributionGroupUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateTrafficDistributionGroupUser.html)

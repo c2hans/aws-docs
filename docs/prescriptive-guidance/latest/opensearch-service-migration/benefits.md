@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Benefits of migrating to Amazon OpenSearch Service
-<a name="benefits"></a>
 
 Amazon OpenSearch Service helps with deployment and ongoing management tasks. It's cost-effective, and it provides scalability, which improves reliability. It also offers security and helps support your compliance needs.
 

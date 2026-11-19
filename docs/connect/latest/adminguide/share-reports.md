@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/share-reports.
 ---
 
 # Share saved reports in Connect Customer
-<a name="share-reports"></a>
 
 You can only share reports that you create and save. To share reports, you need the **Saved reports - Publish** permission on your security profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dg-r
 ---
 
 # Registering an Activity Type with Amazon SWF
-<a name="swf-dg-register-activity"></a>
 
 The following example registers an activity type by using the Amazon SWF API. The name and version that you specify during registration form a unique identifier for the activity type within the domain. The specified domain must have already been registered using the `RegisterDomain` action.
 

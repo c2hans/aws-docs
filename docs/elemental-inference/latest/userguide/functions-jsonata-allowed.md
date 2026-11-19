@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Allowed built-in functions
-<a name="functions-jsonata-allowed"></a>
 
 Elemental Inference allows the following built-in functions in both expressions. A call to any other built-in fails the evaluation. Elemental Inference rejects such a call when you save the function, except in the response expression of a model function, where it fails at run time. For more information, see [Writing function expressions](functions-expressions.md).
 

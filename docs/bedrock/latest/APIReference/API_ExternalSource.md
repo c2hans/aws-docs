@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_External
 ---
 
 # ExternalSource
-<a name="API_ExternalSource"></a>
 
 The unique external source of the content contained in the wrapper object.
 

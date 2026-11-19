@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ssd-instance-sto
 ---
 
 # SSD instance store volumes for EC2 instances
-<a name="ssd-instance-store"></a>
 
 Like other instance store volumes, you must map the SSD instance store volumes for your instance when you launch it. The data on an SSD instance volume persists only for the life of its associated instance. For more information, see [Add instance store volumes to an EC2 instance](add-instance-store-volumes.md).
 

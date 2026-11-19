@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListAccountAssignmentDeletionStatus
-<a name="API_ListAccountAssignmentDeletionStatus"></a>
 
 Lists the status of the AWS account assignment deletion requests for a specified IAM Identity Center instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/customer-onbo
 ---
 
 # Customer onboarding for SPEKE
-<a name="customer-onboarding"></a>
 
 Protect your content from unauthorized use by combining a Secure Packager and Encoder Key Exchange (SPEKE) digital rights management (DRM) key provider with your encryptor and with your media players. SPEKE defines the standard for communication between encryptors and packagers of media content and digital rights management (DRM) key providers. To onboard, you choose a DRM platform key provider and configure the communication between the key provider and your encryptors and players.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sendgrid-support.html
 ---
 
 # AWS Glue support for SendGrid
-<a name="sendgrid-support"></a>
 
 AWS Glue supports SendGrid as follows:
 

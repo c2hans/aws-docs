@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ki-openssl-pro
 ---
 
 # Known issues for the OpenSSL Provider for AWS CloudHSM
-<a name="ki-openssl-provider-sdk"></a>
 
 These are the known issues for OpenSSL Provider for AWS CloudHSM.
 

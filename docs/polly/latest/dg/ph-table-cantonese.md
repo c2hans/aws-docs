@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/ph-table-cantonese.html
 ---
 
 # Chinese (Cantonese) (yue-CN)
-<a name="ph-table-cantonese"></a>
 
 The following table lists the Jyutping and International Phonetic Alphabet (IPA) phonemes for the Cantonese voice that is supported by Amazon Polly. Jyutping is a romanization system of Cantonese which is commonly used in academia and among Cantonese speakers. IPA and X-SAMPA are not commonly used but are available for English support. The IPA and X-SAMPA symbols in the table are for reference only and should not be used for Chinese transcription. Jyutping examples and the corresponding visemes are also shown.
 

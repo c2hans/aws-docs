@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Lo
 ---
 
 # Viewing and listing database log files
-<a name="USER_LogAccess.Procedural.Viewing"></a>
 
 You can view database log files for your Amazon Aurora DB engine by using the AWS Management Console. You can list what log files are available for download or monitoring by using the AWS CLI or Amazon RDS API.
 

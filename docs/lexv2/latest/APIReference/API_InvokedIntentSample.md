@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_InvokedInt
 ---
 
 # InvokedIntentSample
-<a name="API_InvokedIntentSample"></a>
 
 An object containing the name of an intent that was invoked.
 

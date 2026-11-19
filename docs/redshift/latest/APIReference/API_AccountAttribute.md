@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Account
 ---
 
 # AccountAttribute
-<a name="API_AccountAttribute"></a>
 
 A name value pair that describes an aspect of an account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedAgentSkillsDefinitionDescriptorFields
-<a name="API_UpdatedAgentSkillsDefinitionDescriptorFields"></a>
 
 The set of agent skills definition descriptor fields that can be individually updated.
 

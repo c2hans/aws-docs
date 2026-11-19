@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/data-provider-example
 ---
 
 # Example of captured metrics
-<a name="data-provider-example-metrics"></a>
 
 This following show example metrics. Your system metrics may slightly differ.
 

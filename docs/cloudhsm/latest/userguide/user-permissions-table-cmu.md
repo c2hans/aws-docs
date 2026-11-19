@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/user-permissio
 ---
 
 # HSM user permissions table for AWS CloudHSM Management Utility
-<a name="user-permissions-table-cmu"></a>
 
 The following table lists hardware security module (HSM( operations sorted by the type of HSM user or session that can perform the operation in AWS CloudHSM.
 

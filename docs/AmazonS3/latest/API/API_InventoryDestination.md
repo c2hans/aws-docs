@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_InventoryDestina
 ---
 
 # InventoryDestination
-<a name="API_InventoryDestination"></a>
 
 Specifies the S3 Inventory configuration for an Amazon S3 bucket.
 

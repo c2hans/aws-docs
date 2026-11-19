@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Capaci
 ---
 
 # CapacityProviderStrategyItem
-<a name="API_CapacityProviderStrategyItem"></a>
 
 The details of a capacity provider strategy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/examples-new-s
 ---
 
 # Scala examples for Managed Service for Apache Flink
-<a name="examples-new-scala"></a>
 
 The following examples demonstrate how to create applications using Scala with Apache Flink.
 

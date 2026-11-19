@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ConsumedLicenseSummary
-<a name="API_ConsumedLicenseSummary"></a>
 
 Details about license consumption.
 

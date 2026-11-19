@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ScheduleConfiguration
-<a name="API_ScheduleConfiguration"></a>
 
 Contains the schedule expression and time-range offsets that define when a scheduled query runs and what time range each execution covers.
 

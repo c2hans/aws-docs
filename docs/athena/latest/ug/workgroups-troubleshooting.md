@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/workgroups-troubleshoot
 ---
 
 # Troubleshoot workgroup errors
-<a name="workgroups-troubleshooting"></a>
 
 Use the following tips to troubleshoot workgroups.
 + Check permissions for individual users in your account. They must have access to the location for query results, and to the workgroup in which they want to run queries. If they want to switch workgroups, they too need permissions to both workgroups. For information, see [Use IAM policies to control workgroup access](workgroups-iam-policy.md).

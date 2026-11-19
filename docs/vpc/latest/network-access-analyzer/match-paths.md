@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/match
 ---
 
 # Match conditions in Network Access Analyzer
-<a name="match-paths"></a>
 
 A match condition defines the types of network paths that should be produced as findings. A Network Access Scope must specify at least one match condition. A match condition can contain a source and a destination. Each source and destination can include a resource statement, a packet header statement, or both.
 

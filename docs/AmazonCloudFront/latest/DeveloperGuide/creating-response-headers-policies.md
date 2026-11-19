@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/c
 ---
 
 # Create response headers policies
-<a name="creating-response-headers-policies"></a>
 
 You can use a response headers policy to specify the HTTP headers that Amazon CloudFront adds or removes in HTTP responses. For more information about response headers policies and reasons to use them, see [Add or remove HTTP headers in CloudFront responses with a policy](modifying-response-headers.md).
 

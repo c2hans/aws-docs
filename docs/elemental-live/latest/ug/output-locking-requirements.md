@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/output-locking-
 ---
 
 # Requirements for inputs and outputs
-<a name="output-locking-requirements"></a>
 
 This section describes the requirements for source inputs and outputs, their characteristics, and which work for output locking.
 

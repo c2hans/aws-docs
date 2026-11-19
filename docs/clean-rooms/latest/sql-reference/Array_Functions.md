@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Array_F
 ---
 
 # Array functions
-<a name="Array_Functions"></a>
 
 This section describes the array functions for SQL supported in AWS Clean Rooms.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-instanc
 ---
 
 # rds-instance-public-access-check
-<a name="rds-instance-public-access-check"></a>
 
 Checks if the Amazon Relational Database Service (Amazon RDS) instances are not publicly accessible. The rule is NON\_COMPLIANT if the publiclyAccessible field is true in the instance configuration item.
 

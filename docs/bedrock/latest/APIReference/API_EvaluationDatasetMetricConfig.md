@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationDatasetMetricConfig
-<a name="API_EvaluationDatasetMetricConfig"></a>
 
 Defines the prompt datasets, built-in metric names and custom metric names, and the task type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/document-hist
 ---
 
 # Document history for Amazon Lightsail
-<a name="document-history"></a>
 
 The following table describes documentation changes and updates for Lightsail. To receive notifications for when this table adds a new entry, subscribe to the following URL with an RSS reader:
 
@@ -61,4 +60,4 @@ https://docs.aws.amazon.com/lightsail/latest/userguide/document_history.rss
 | [Lightsail added CORS support](https://docs.aws.amazon.com/lightsail/latest/userguide/configure-cors.html) | Lightsail now has CORS support for Lightsail buckets. | October 15, 2025 |
 | [Blueprint quick start guide updates](https://docs.aws.amazon.com/lightsail/latest/userguide/quick-start-chapter.html) | Updated multiple quick start guides with revised snapshot and static IP related content. | October 2, 2025 |
 | [Lightsail AWS Region expansion](https://docs.aws.amazon.com/lightsail/latest/userguide/understanding-regions-and-availability-zones-in-amazon-lightsail.html) | Lightsail is now available in the Asia Pacific (Jakarta) Region. | July 31, 2025 |
-| [Lightsail started tracking documentation updates](#document-history) | Initial publication of this document history page. | July 30, 2025 |
+| [Lightsail started tracking documentation updates](document-history.md) | Initial publication of this document history page. | July 30, 2025 |

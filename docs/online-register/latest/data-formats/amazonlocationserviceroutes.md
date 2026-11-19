@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Location Service Routes
-<a name="amazonlocationserviceroutes"></a>
 
 Amazon Location Service Routes provides the following APIs for data retrieval.
 

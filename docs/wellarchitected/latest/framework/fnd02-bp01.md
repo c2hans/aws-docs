@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP01 Protect account root users, and establish alternate contacts
-<a name="fnd02-bp01"></a>
 
  The root user is the most privileged identity in any cloud account. It has full administrative access to all resources and cannot be restricted by standard security policies. Strong controls around root user access reduce the risk of credential exposure and unauthorized account access. Protect root user credentials, keep contacts accurate, add detective controls, and use root only by exception.
 

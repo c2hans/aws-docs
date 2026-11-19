@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteHubContentReference
-<a name="API_DeleteHubContentReference"></a>
 
 Delete a hub content reference in order to remove a model from a private hub.
 

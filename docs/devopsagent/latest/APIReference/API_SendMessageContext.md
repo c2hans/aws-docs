@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageContext
-<a name="API_SendMessageContext"></a>
 
 Context object for additional message metadata
 

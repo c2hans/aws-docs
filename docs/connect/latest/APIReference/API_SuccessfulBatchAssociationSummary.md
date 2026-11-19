@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Successf
 ---
 
 # SuccessfulBatchAssociationSummary
-<a name="API_SuccessfulBatchAssociationSummary"></a>
 
 Contains information about a resource that was successfully associated with a workspace in a batch operation.
 

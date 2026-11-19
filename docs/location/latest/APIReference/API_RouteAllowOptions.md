@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteAl
 ---
 
 # RouteAllowOptions
-<a name="API_RouteAllowOptions"></a>
 
 Features that are allowed while calculating a route.
 

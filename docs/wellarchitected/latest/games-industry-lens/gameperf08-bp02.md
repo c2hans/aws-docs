@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF08-BP02 Align solution selection with engineering team skills and expertise
-<a name="gameperf08-bp02"></a>
 
  Assess your team's skills and expertise in managing and optimizing game server performance when choosing your hosting option. Self-hosted solutions like EC2 and containers require more knowledge of infrastructure management, performance tuning, and scaling. If your team lacks these skills, a managed service like GameLift may be more suitable, as it abstracts away many of the complexities and allows your team to focus on game-specific optimizations.
 

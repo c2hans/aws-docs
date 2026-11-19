@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_PutCapaci
 ---
 
 # PutCapacityAssignmentConfiguration
-<a name="API_PutCapacityAssignmentConfiguration"></a>
 
 Puts a new capacity assignment configuration for a specified capacity reservation. If a capacity assignment configuration already exists for the capacity reservation, replaces the existing capacity assignment configuration.
 

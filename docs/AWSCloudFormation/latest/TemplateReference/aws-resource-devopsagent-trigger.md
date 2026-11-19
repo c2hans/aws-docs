@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Trigger
-<a name="aws-resource-devopsagent-trigger"></a>
 
 The `AWS::DevOpsAgent::Trigger` resource specifies a time-based trigger attached to an Agent Space that fires scheduled automation workflows within the AWS DevOps Agent service.
 

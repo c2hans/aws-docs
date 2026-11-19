@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/getti
 ---
 
 # Getting started with Network Access Analyzer using the AWS CLI
-<a name="getting-started-cli"></a>
 
 The following procedure describes how to get started with Network Access Analyzer using the AWS CLI.
 

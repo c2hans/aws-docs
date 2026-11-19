@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # GetEvaluation
-<a name="API_GetEvaluation"></a>
 
 Returns an `Evaluation` that includes metadata as well as the current status of the `Evaluation`.
 

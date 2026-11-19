@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Pre-process data at edge
-<a name="pre-process-data-at-edge"></a>
 
 |  MIDAPERF05: How do you pre-process data at edge to avoid sending all data to the cloud?  |
 | --- |

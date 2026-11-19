@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateSubdomain
-<a name="API_CreateSubdomain"></a>
 
 Creates a Lightsail subdomain, such as `mysite`, with the web address `mysite.amazonlightsail.com`. After the subdomain is created, use the `UpdateSubdomainAssociation` action to associate it with a Lightsail resource.
 

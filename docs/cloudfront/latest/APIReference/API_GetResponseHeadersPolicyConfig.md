@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetRe
 ---
 
 # GetResponseHeadersPolicyConfig
-<a name="API_GetResponseHeadersPolicyConfig"></a>
 
 Gets a response headers policy configuration.
 

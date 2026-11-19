@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Responding to feedback
-<a name="raimon2"></a>
 
 | RAIMON02: How will you respond to feedback from monitoring? |
 | --- |

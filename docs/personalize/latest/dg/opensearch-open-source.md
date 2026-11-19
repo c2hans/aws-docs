@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/opensearch-open-so
 ---
 
 # Personalizing results from open source Open Search with Amazon Personalize
-<a name="opensearch-open-source"></a>
 
 To personalize results open source OpenSearch, you do the following:
 

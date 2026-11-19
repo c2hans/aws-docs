@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/efs-access-
 ---
 
 # efs-access-point-tagged
-<a name="efs-access-point-tagged"></a>
 
 Checks if Amazon Elastic File System (Amazon EFS) access points have tags. Optionally, you can specify tag keys. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present.
 

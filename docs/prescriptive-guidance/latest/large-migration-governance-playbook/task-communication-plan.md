@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task: Creating a communications plan
-<a name="task-communication-plan"></a>
 
 A critical element of the governance model is identifying who is responsible for communicating with application owners and how to escalate if an application owner doesn't respond. In this task, you define who is responsible for communications, determine what the regular communications and meetings will be, create your standard communication templates, and determine what happens if you need to escalate an issue.
 

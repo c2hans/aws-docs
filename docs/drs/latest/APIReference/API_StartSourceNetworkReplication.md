@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StartSourceN
 ---
 
 # StartSourceNetworkReplication
-<a name="API_StartSourceNetworkReplication"></a>
 
 Starts replication for a Source Network. This action would make the Source Network protected.
 

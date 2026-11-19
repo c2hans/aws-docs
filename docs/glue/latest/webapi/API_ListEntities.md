@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListEntities.html
 ---
 
 # ListEntities
-<a name="API_ListEntities"></a>
 
 Returns the available entities supported by the connection type.
 

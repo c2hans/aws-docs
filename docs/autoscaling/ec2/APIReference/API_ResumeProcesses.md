@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_ResumeP
 ---
 
 # ResumeProcesses
-<a name="API_ResumeProcesses"></a>
 
 Resumes the specified suspended auto scaling processes, or all suspended process, for the specified Auto Scaling group.
 

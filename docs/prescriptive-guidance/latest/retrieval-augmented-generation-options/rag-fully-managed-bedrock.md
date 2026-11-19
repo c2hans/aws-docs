@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Knowledge bases for Amazon Bedrock
-<a name="rag-fully-managed-bedrock"></a>
 
 [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) is a fully managed service that makes high-performing foundation models (FMs) from leading AI startups and Amazon available for your use through a unified API. [Knowledge bases](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html) is an Amazon Bedrock capability that helps you implement the entire RAG workflow, from ingestion to retrieval and prompt augmentation. There is no need to build custom integrations to data sources or to manage data flows. Session context management is built in so that your generative AI application can readily support multi-turn conversations.
 

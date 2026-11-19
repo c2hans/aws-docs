@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateFunction
-<a name="API_UpdateFunction"></a>
 
 Updates a CloudFront function.
 

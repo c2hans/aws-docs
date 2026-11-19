@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNot
 ---
 
 # UpdateNotebook
-<a name="API_UpdateNotebook"></a>
 
 Updates the contents of a Spark notebook.
 

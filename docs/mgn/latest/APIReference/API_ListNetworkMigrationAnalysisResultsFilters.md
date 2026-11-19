@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationAnalysisResultsFilters
-<a name="API_ListNetworkMigrationAnalysisResultsFilters"></a>
 
 Filters for listing network migration analysis results.
 

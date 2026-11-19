@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # LifecyclePolicyDetail
-<a name="API_LifecyclePolicyDetail"></a>
 
 Details about an OpenSearch Serverless lifecycle policy.
 

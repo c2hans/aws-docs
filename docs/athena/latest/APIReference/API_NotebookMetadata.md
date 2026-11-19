@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_NotebookM
 ---
 
 # NotebookMetadata
-<a name="API_NotebookMetadata"></a>
 
 Contains metadata for notebook, including the notebook name, ID, workgroup, and time created.
 

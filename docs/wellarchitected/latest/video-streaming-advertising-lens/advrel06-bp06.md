@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL06-BP06 Implement proactive schedule validation and channel health monitoring
-<a name="advrel06-bp06"></a>
 
  FAST channel failures usually come from scheduling errors, not infrastructure faults. Common causes include missing assets, incorrect timing, or gaps between programs. Pre-flight validation and synthetic monitoring catch these issues before they reach viewers.
 

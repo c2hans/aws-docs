@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/perfor
 ---
 
 # Example
-<a name="performing-bulk-tasks-get-list-of-task-reports-example"></a>
 
 The response to this request provides information on two bulk tasks. One task\_report has the ID 4; all of its 10 actions have completed. The other task\_report has the ID 5; three of its seven actions have completed.
 

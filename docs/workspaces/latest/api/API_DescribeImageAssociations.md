@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeImageA
 ---
 
 # DescribeImageAssociations
-<a name="API_DescribeImageAssociations"></a>
 
 Describes the associations between the applications and the specified image.
 

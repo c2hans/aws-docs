@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonKeyspacesReadOnlyAccess\_v2
-<a name="AmazonKeyspacesReadOnlyAccess_v2"></a>
 
 **Description**: Provide read only access to Amazon Keyspaces and related AWS services.
 

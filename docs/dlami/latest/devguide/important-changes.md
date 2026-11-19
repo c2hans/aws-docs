@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/important-changes.
 ---
 
 # Important NVIDIA driver changes to DLAMIs
-<a name="important-changes"></a>
 
 On November 15, 2023, AWS made important changes to AWS Deep Learning AMIs (DLAMI) related to the NIVIDA driver that DLAMIs use. For information about what changed and whether it affects your usage of DLAMIs, see [DLAMI NVIDIA driver change FAQs](#important-changes-faq).
 

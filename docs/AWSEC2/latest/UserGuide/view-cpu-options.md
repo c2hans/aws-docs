@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/view-cpu-options
 ---
 
 # View CPU threads and cores for an Amazon EC2 instance
-<a name="view-cpu-options"></a>
 
 You can view the CPU options for an existing instance by describing the instance.
 

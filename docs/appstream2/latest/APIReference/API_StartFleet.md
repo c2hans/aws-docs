@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Start
 ---
 
 # StartFleet
-<a name="API_StartFleet"></a>
 
 Starts the specified fleet.
 

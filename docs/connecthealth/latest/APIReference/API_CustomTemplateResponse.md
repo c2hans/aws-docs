@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Cu
 ---
 
 # CustomTemplateResponse
-<a name="API_CustomTemplateResponse"></a>
 
 Response containing custom template information
 

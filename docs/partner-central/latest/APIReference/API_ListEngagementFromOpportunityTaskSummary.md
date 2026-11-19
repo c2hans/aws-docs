@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListEngagementFromOpportunityTaskSummary
-<a name="API_ListEngagementFromOpportunityTaskSummary"></a>
 
  Provides a summary of a task related to creating an engagement from an opportunity. This structure contains key information about the task's status, associated identifiers, and any failure details.
 

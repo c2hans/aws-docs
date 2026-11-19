@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/v
 ---
 
 # With IAM Identity Center and Device Trust Provider - Initial Request
-<a name="verified-access-device-initial"></a>
 
 Publication date: **February 22, 2023 ([Diagram history](#vdi-diagram-history))**
 

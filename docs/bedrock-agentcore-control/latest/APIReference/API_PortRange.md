@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PortRange
-<a name="API_PortRange"></a>
 
 An inclusive range of ports. The value of `from` must be less than or equal to the value of `to`.
 

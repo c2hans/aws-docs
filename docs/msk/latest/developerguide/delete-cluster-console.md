@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/delete-cluster
 ---
 
 # Delete an Amazon MSK Provisioned cluster using the AWS Management Console
-<a name="delete-cluster-console"></a>
 
 This process describes how to delete an Amazon MSK Provisioned cluster using the AWS Management Console. Before you delete a MSK cluster, ensure that you have a backup of any important data stored in the cluster and that there aren't any scheduled tasks dependant on the cluster. You can't undo a MSK cluster deletion.
 

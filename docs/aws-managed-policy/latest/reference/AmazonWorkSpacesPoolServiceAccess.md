@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkSpacesPoolServiceAccess
-<a name="AmazonWorkSpacesPoolServiceAccess"></a>
 
 **Description**: This policy provides AWS WorkSpaces service access to required customer account resources for launching Workspaces Pools
 

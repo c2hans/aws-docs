@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MaintenanceW
 ---
 
 # MaintenanceWindow
-<a name="API_MaintenanceWindow"></a>
 
 An optional configuration within the `SchedulingConfig` to setup a recurring maintenance window with a predetermined start time and duration for the rollout of a job document to all devices in a target group for a job.
 

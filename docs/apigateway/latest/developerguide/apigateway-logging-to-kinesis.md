@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Log REST API calls to Amazon Data Firehose in API Gateway
-<a name="apigateway-logging-to-kinesis"></a>
 
 To help debug issues related to client access to your API, you can log API calls to Amazon Data Firehose. For more information about Firehose, see [What Is Amazon Data Firehose?](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html).
 

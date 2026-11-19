@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListServerCe
 ---
 
 # ListServerCertificates
-<a name="API_ListServerCertificates"></a>
 
 Lists the server certificates stored in IAM that have the specified path prefix. If none exist, the operation returns an empty list.
 

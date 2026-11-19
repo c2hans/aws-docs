@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_CreateRunt
 ---
 
 # CreateRuntimeAlias
-<a name="API_CreateRuntimeAlias"></a>
 
 Creates a new customer-managed runtime alias. The alias is a named pointer to a runtime version. Functions consume the customer-managed runtime through the runtime alias.
 

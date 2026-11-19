@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/waf-regiona
 ---
 
 # waf-regional-rulegroup-not-empty
-<a name="waf-regional-rulegroup-not-empty"></a>
 
 Checks if WAF Regional rule groups contain any rules. The rule is NON\_COMPLIANT if there are no rules present within a WAF Regional rule group.
 

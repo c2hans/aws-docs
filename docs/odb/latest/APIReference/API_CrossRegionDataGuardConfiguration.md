@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CrossRegionD
 ---
 
 # CrossRegionDataGuardConfiguration
-<a name="API_CrossRegionDataGuardConfiguration"></a>
 
 The configuration for creating an Autonomous Database as a cross-Region Oracle Data Guard peer.
 

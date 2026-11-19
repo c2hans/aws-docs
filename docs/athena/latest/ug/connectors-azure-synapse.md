@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-azure-synaps
 ---
 
 # Amazon Athena Azure Synapse connector
-<a name="connectors-azure-synapse"></a>
 
 The Amazon Athena connector for [Azure Synapse analytics](https://docs.microsoft.com/en-us/azure/synapse-analytics/overview-what-is) enables Amazon Athena to run SQL queries on your Azure Synapse databases using JDBC.
 

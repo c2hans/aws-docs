@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-d
 ---
 
 # Delete Endpoints and Resources
-<a name="realtime-endpoints-delete-resources"></a>
 
 Delete endpoints to stop incurring charges.
 

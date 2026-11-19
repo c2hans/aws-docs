@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/cer-annotation-pdf.
 ---
 
 # Annotating PDF files
-<a name="cer-annotation-pdf"></a>
 
 Before you can annotate your training PDFs in SageMaker AI Ground Truth, complete the following prerequisites:
 + Install python3.8.x

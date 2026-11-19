@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Err
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 Contains the details of an AWS IoT SiteWise error.
 

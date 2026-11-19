@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/requirements
 ---
 
 # Resource requirements
-<a name="requirements"></a>
 
 This page provides you with an overview of the resource requirements needed for AWS Compute Optimizer to generate optimization recommendations. For Compute Optimizer to generate recommendations, your AWS resources must meet Amazon CloudWatch metric and resource-specific requirements. Compute Optimizer has different CloudWatch metric data requirements for each resource type.
 

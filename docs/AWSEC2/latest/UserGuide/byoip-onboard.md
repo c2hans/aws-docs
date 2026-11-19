@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/byoip-onboard.ht
 ---
 
 # Onboard your address range for use in Amazon EC2
-<a name="byoip-onboard"></a>
 
 The onboarding process for BYOIP includes the following tasks, depending on your needs.
 

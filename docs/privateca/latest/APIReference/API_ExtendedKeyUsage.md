@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_Extend
 ---
 
 # ExtendedKeyUsage
-<a name="API_ExtendedKeyUsage"></a>
 
 Specifies additional purposes for which the certified public key may be used other than basic purposes indicated in the `KeyUsage` extension.
 

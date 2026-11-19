@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BatchEvaluationSummary
-<a name="API_BatchEvaluationSummary"></a>
 
 Summary representation for list responses.
 

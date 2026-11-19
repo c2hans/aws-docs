@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Tutorial: Getting started with security in Amazon OpenSearch Serverless (CLI)
-<a name="gsg-serverless-cli"></a>
 
 This tutorial covers the steps described in the [console getting started tutorial](gsg-serverless.md) for security, but uses the AWS CLI rather than the OpenSearch Service console.
 

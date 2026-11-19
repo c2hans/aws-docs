@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AlarmSp
 ---
 
 # AlarmSpecification
-<a name="API_AlarmSpecification"></a>
 
 Specifies the CloudWatch alarm specification to use in an instance refresh.
 

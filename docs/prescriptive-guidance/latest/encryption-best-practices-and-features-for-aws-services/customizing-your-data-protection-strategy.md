@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-
 ---
 
 # Customizing your data protection strategy
-<a name="customizing-your-data-protection-strategy"></a>
 
 ## Customizing your data protection strategy
 <a name="customizing-your-data-protection-strategy.15df6e7f-5829-557b-bfda-6b9574419f99"></a>

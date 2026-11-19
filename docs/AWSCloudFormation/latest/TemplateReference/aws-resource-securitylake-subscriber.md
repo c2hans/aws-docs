@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityLake::Subscriber
-<a name="aws-resource-securitylake-subscriber"></a>
 
 Creates a subscriber for accounts that are already enabled in Amazon Security Lake. You can create a subscriber with access to data in the current AWS Region.
 

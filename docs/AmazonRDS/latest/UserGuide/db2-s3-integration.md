@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-s3-integr
 ---
 
 # Integrating an Amazon RDS for Db2 DB instance with Amazon S3
-<a name="db2-s3-integration"></a>
 
 You can transfer files between your Amazon RDS for Db2 DB instance and an Amazon Simple Storage Service (Amazon S3) bucket with Amazon RDS stored procedures. For more information, see [Amazon RDS for Db2 stored procedure reference](db2-stored-procedures.md).
 

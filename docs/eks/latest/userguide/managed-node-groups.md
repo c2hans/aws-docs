@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Simplify node lifecycle with managed node groups
-<a name="managed-node-groups"></a>
 
 **Nitro Sandboxes on managed node groups**
 To run isolated or confidential pods with Nitro Sandboxes on managed node groups, use a custom AMI that includes the Nitro Sandbox runtime, and use instance types that support Nitro Enclaves. For how to build a compatible AMI, see [Create and update a Nitro Sandbox AMI](sandboxing-ami-create-update.md).

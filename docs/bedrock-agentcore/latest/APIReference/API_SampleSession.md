@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SampleSession
-<a name="API_SampleSession"></a>
 
 A session affected by an insight or root cause. Use the session ID to find the per-session evaluation results in CloudWatch Logs.
 

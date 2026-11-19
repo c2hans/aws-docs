@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec02-b
 ---
 
 # SEC02-BP05 Audit and rotate credentials periodically
-<a name="sec02-bp05"></a>
 
  Some credentials cannot be made temporary, and every long-term credential is a standing risk. The longer it lives, the more chances it has to be inadvertently disclosed, and the longer that disclosure stays useful. Regular auditing confirms that the right controls are in place, and regular rotation caps how long any single credential is valid.
 

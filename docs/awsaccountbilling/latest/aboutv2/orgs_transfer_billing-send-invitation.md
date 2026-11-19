@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/orgs_tr
 ---
 
 # Sending invitations
-<a name="orgs_transfer_billing-send-invitation"></a>
 
 When you sign in to your organization's management account, you can invite the management account of another organization to designate your account to manage and pay their consolidated bill.
 

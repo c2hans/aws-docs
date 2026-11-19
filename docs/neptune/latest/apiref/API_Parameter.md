@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_Parameter.html
 ---
 
 # Parameter
-<a name="API_Parameter"></a>
 
 Specifies a parameter.
 

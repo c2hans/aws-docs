@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardDest
 ---
 
 # StandardDestinationEndpointAssociatedResourceDetails
-<a name="API_StandardDestinationEndpointAssociatedResourceDetails"></a>
 
 The associated resource details for a standard destination endpoint. This type does not require any additional settings.
 

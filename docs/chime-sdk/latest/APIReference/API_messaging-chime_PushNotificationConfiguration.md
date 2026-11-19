@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # PushNotificationConfiguration
-<a name="API_messaging-chime_PushNotificationConfiguration"></a>
 
 The push notification configuration of the message.
 

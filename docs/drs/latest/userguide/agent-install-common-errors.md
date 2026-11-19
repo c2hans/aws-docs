@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/agent-install-commo
 ---
 
 # Common agent installation errors
-<a name="agent-install-common-errors"></a>
 
 This topic covers platform-agnostic installation errors related to AWS credentials, account configuration, IAM, and agent lifecycle. These errors occur on both Linux and Windows.
 

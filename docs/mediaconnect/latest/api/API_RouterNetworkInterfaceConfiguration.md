@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterNetwor
 ---
 
 # RouterNetworkInterfaceConfiguration
-<a name="API_RouterNetworkInterfaceConfiguration"></a>
 
 The configuration settings for a router network interface.
 

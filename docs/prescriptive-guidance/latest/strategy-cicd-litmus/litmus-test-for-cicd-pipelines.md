@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # Litmus test for CI/CD pipelines
-<a name="litmus-test-for-cicd-pipelines"></a>
 
 In chemistry, litmus paper is a thin strip of paper treated with a special red or blue dye that is used to determine the acidity of a substance. An acid turns blue litmus paper red, a base turns red litmus paper blue, and neutral substances don't affect the paper's color at all.
 

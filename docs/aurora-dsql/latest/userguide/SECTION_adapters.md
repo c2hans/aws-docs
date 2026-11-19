@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_ada
 ---
 
 # Adapters and dialects for Aurora DSQL
-<a name="SECTION_adapters"></a>
 
 Adapters and dialects for Amazon Aurora DSQL provide IAM authentication and improved Aurora DSQL compatibility for specific object-relational mapping (ORM) frameworks. Use an adapter or dialect when you work with a supported ORM framework.
 

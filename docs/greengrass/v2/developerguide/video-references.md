@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/video-refer
 ---
 
 # Video tutorials
-<a name="video-references"></a>
 
 ## Videos
 <a name="videos"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.TEM.4] Implement a unified test data repository for enhanced test efficiency
-<a name="qa.tem.4-implement-a-unified-test-data-repository-for-enhanced-test-efficiency"></a>
 
  **Category:** RECOMMENDED
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/usage-statisti
 ---
 
 # Usage Statistics
-<a name="usage-statistics"></a>
 
 The Usage Statistics resource provides information about current quotas and usage statistics for your Amazon Macie account. This includes metrics that report the estimated cost of using Macie to perform specific types of tasks, and current account quotas for those tasks. The data can help you track your use of the service and determine whether to adjust your quotas or use of the service. For information about how Macie calculates usage statistics and data for your account, see [Forecasting and monitoring costs](https://docs.aws.amazon.com/macie/latest/user/account-mgmt-costs.html) in the *Amazon Macie User Guide*.
 

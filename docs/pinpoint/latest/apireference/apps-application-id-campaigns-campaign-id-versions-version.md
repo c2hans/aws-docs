@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-applic
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Campaign Version
-<a name="apps-application-id-campaigns-campaign-id-versions-version"></a>
 
 A *campaign* represents a messaging initiative that engages a specific segment of users for an Amazon Pinpoint application. The Campaign Version resource provides information about a specific version of a campaign, such as the schedule, messaging limits, and message settings for that version of the campaign.
 

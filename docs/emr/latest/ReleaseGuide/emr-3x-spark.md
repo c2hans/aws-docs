@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-spark.htm
 ---
 
 # Spark application specifics with earlier AMI versions of Amazon EMR
-<a name="emr-3x-spark"></a>
 
 ## Use Spark interactively or in batch mode
 <a name="emr-3x-spark-interactive-batch"></a>

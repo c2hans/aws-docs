@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobDirectAnalysisConfigurationDetails
-<a name="API_ProtectedJobDirectAnalysisConfigurationDetails"></a>
 
 The protected job direct analysis configuration details.
 

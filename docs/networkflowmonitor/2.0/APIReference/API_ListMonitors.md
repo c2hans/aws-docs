@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # ListMonitors
-<a name="API_ListMonitors"></a>
 
 List all monitors in an account. Optionally, you can list only monitors that have a specific status, by using the `STATUS` parameter.
 

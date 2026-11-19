@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Does this guide cover all the use cases for migrating an on-premises PostgreSQL database to Amazon EC2?
 <a name="all-use-cases"></a>

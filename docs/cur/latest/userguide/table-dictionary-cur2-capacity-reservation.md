@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Capacity reservation columns
-<a name="table-dictionary-cur2-capacity-reservation"></a>
 
 Capacity reservation columns contain data about capacity reservations that apply to the line item.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Alarms the Guidance deploys
-<a name="mon-alarms"></a>
 
 | Stack | Alarms | Publishes to | Subscribed on deploy |
 | --- | --- | --- | --- |

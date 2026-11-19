@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/using-service-linke
 ---
 
 # Using service-linked roles for Resource Groups
-<a name="using-service-linked-roles"></a>
 
 AWS Resource Groups uses AWS Identity and Access Management (IAM)[ service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that is linked directly to Resource Groups. Service-linked roles are predefined by Resource Groups and include all the permissions that the service requires to call other AWS services on your behalf.
 

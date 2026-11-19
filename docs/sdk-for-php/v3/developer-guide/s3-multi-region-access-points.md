@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-multi-
 ---
 
 # Use Amazon S3 Multi-Region Access Points with the AWS SDK for PHP Version 3
-<a name="s3-multi-region-access-points"></a>
 
 [Amazon Simple Storage Service (S3) Multi-Region Access Points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiRegionAccessPoints.html) provide a global endpoint for routing Amazon S3 request traffic between AWS Regions.
 

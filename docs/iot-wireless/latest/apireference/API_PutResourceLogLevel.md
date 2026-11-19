@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Put
 ---
 
 # PutResourceLogLevel
-<a name="API_PutResourceLogLevel"></a>
 
 Sets the log-level override for a resource ID and resource type. A limit of 200 log level override can be set per account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SAPODataDes
 ---
 
 # SAPODataDestinationProperties
-<a name="API_SAPODataDestinationProperties"></a>
 
 The properties that are applied when using SAPOData as a flow destination
 

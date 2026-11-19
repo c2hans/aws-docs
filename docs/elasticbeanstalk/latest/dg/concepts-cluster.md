@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-clus
 ---
 
 # Elastic Beanstalk cluster environments
-<a name="concepts-cluster"></a>
 
 With a Beanstalk Cluster environment, Elastic Beanstalk runs your application as containers on an Amazon Elastic Kubernetes Service (Amazon EKS) cluster that it creates and operates. You provide a container image, or source code that Elastic Beanstalk builds into an image. Elastic Beanstalk provisions the cluster, deploys your application, applies rolling updates, scales the number of running replicas, and reports environment health. You use the same Elastic Beanstalk application, application version, environment, and configuration option concepts as a Beanstalk Standard environment.
 

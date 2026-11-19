@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_EC2Secu
 ---
 
 # EC2SecurityGroup
-<a name="API_EC2SecurityGroup"></a>
 
 Describes an Amazon EC2 security group.
 

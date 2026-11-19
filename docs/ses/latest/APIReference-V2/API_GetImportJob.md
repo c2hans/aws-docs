@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetImport
 ---
 
 # GetImportJob
-<a name="API_GetImportJob"></a>
 
 Provides information about an import job.
 

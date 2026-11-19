@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/nova-sonic-spe
 ---
 
 # Configure Amazon Nova Sonic Speech-to-Speech
-<a name="nova-sonic-speech-to-speech"></a>
 
 You can configure Amazon Nova Sonic as a Speech-to-Speech (S2S) model for a Conversational AI bot locale in Amazon Connect. With Speech-to-Speech, the bot converts customer speech directly into natural, expressive speech responses using Nova Sonic. Amazon Connect continues to manage orchestration, intents, and flows.
 

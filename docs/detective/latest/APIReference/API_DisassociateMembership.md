@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Disass
 ---
 
 # DisassociateMembership
-<a name="API_DisassociateMembership"></a>
 
 Removes the member account from the specified behavior graph. This operation can only be called by an invited member account that has the `ENABLED` status.
 

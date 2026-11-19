@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluato
 ---
 
 # EvaluatorUserUnion
-<a name="API_EvaluatorUserUnion"></a>
 
 Represents the entity that performed the action on the evaluation.
 

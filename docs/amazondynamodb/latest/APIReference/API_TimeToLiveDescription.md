@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # TimeToLiveDescription
-<a name="API_TimeToLiveDescription"></a>
 
 The description of the Time to Live (TTL) status on the specified table.
 

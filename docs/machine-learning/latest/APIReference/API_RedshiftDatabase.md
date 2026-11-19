@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # RedshiftDatabase
-<a name="API_RedshiftDatabase"></a>
 
 Describes the database details required to connect to an Amazon Redshift database.
 

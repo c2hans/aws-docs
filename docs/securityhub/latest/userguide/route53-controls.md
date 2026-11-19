@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/route53-con
 ---
 
 # Security Hub CSPM controls for Route 53
-<a name="route53-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon Route 53 service and resources.
 

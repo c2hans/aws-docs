@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # CloudFormation template examples for Deadline Cloud
-<a name="examples-cloudformation"></a>
 
 The deadline-cloud-samples repository contains CloudFormation templates that deploy Deadline Cloud farms and supporting infrastructure. Use these templates as a starting point and adapt them to your environment. For the templates, see the [cloudformation](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation) directory on the GitHub website.
 

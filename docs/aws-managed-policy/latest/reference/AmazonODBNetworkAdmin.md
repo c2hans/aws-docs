@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonODBNetworkAdmin
-<a name="AmazonODBNetworkAdmin"></a>
 
 **Description**: Provides administrative access to networking resources for Oracle Database@AWS
 

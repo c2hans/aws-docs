@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Types_
 ---
 
 # Amazon Chime SDK Media Pipelines
-<a name="API_Types_Amazon_Chime_SDK_Media_Pipelines"></a>
 
 The following data types are supported by Amazon Chime SDK Media Pipelines:
 +  [ActiveSpeakerOnlyConfiguration](API_media-pipelines-chime_ActiveSpeakerOnlyConfiguration.md)

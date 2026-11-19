@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/monitoring-metada
 ---
 
 # Monitoring metadata configuration updates
-<a name="monitoring-metadata-performance-increase"></a>
 
 You can monitor the progress of metadata configuration updates by using the Amazon FSx console, the API, or the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Failure mode assessments
-<a name="next-gen-api-assessment-actions"></a>
 
 | Action | Method | Description |
 | --- | --- | --- |

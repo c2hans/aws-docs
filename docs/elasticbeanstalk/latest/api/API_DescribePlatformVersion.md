@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribePlatformVersion
-<a name="API_DescribePlatformVersion"></a>
 
 Describes a platform version. Provides full details. Compare to [ListPlatformVersions](API_ListPlatformVersions.md), which provides summary information about a list of platform versions.
 

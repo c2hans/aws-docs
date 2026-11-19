@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Create a notify code configuration
-<a name="nx-features-notify-code-config-create"></a>
 
 A notify code configuration is a reusable passcode policy and message-template set for one-time passcode verifications. It defines the code type, length, validity period, and maximum attempts, plus per-channel templates for the text, voice, and WhatsApp channels. Any policy field you leave blank uses the service default at send time.
 

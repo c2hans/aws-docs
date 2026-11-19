@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/tut
 ---
 
 # Run an autonomous driving simulation sweep with CARLA
-<a name="tutorial-carla-simulation"></a>
 
 This tutorial walks you through running a CARLA autonomous driving simulation parameter sweep with configurable multi-sensor capture. [CARLA](https://carla.org/) on the CARLA website is an open-source simulator. You build a Docker image, push it to Amazon Elastic Container Registry (Amazon ECR), and submit the [autonomous driving CARLA job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/autonomous_driving_carla) on the GitHub website to a GPU fleet on your Deadline Cloud farm.
 

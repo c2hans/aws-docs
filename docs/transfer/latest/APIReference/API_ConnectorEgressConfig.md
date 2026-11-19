@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Connect
 ---
 
 # ConnectorEgressConfig
-<a name="API_ConnectorEgressConfig"></a>
 
 Configuration structure that defines how traffic is routed from the connector to the SFTP server. Contains VPC Lattice settings when using VPC\_LATTICE egress type for private connectivity through customer VPCs.
 

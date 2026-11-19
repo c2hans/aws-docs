@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_FormatOptions.html
 ---
 
 # FormatOptions
-<a name="API_FormatOptions"></a>
 
 Formatting options for a file.
 

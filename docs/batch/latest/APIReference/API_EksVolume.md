@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksVolume.
 ---
 
 # EksVolume
-<a name="API_EksVolume"></a>
 
 Specifies an Amazon EKS volume for a job definition.
 

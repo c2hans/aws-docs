@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTraf
 ---
 
 # ListTrafficDistributionGroupUsers
-<a name="API_ListTrafficDistributionGroupUsers"></a>
 
 Lists traffic distribution group users.
 

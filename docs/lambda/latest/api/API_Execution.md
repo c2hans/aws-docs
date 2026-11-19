@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_Execution.html
 ---
 
 # Execution
-<a name="API_Execution"></a>
 
 Information about a [durable execution](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html).
 

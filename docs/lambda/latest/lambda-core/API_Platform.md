@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_Platform.h
 ---
 
 # Platform
-<a name="API_Platform"></a>
 
 Describes a single OCI platform (CPU architecture and operating system) available for a runtime version.
 

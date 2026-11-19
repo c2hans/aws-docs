@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeVpcEndpointAssociation
-<a name="API_DescribeVpcEndpointAssociation"></a>
 
 Returns the data object for the specified VPC endpoint association.
 
@@ -81,7 +80,7 @@ The configuration settings for the VPC endpoint association. These settings incl
 Type: [VpcEndpointAssociation](API_VpcEndpointAssociation.md) object
 
  ** [VpcEndpointAssociationStatus](#API_DescribeVpcEndpointAssociation_ResponseSyntax) **   <a name="networkfirewall-DescribeVpcEndpointAssociation-response-VpcEndpointAssociationStatus"></a>
-Detailed information about the current status of a [VpcEndpointAssociation](API_VpcEndpointAssociation.md). You can retrieve this by calling [DescribeVpcEndpointAssociation](#API_DescribeVpcEndpointAssociation) and providing the VPC endpoint association ARN.
+Detailed information about the current status of a [VpcEndpointAssociation](API_VpcEndpointAssociation.md). You can retrieve this by calling [DescribeVpcEndpointAssociation](API_DescribeVpcEndpointAssociation.md) and providing the VPC endpoint association ARN.
 Type: [VpcEndpointAssociationStatus](API_VpcEndpointAssociationStatus.md) object
 
 ## Errors

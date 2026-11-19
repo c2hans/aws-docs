@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_In
 ---
 
 # IntegratedRepository
-<a name="API_IntegratedRepository"></a>
 
 Represents a code repository that is integrated with the service through a third-party provider.
 

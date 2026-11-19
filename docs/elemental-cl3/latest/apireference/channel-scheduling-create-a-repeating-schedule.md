@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # POST: Create a Repeating Schedule
-<a name="channel-scheduling-create-a-repeating-schedule"></a>
 
 Create a schedule that repeats regularly. Will only run if active. (See also [POST: Create a One-Time Schedule](channel-scheduling-create-a-one-time-schedule.md).
 

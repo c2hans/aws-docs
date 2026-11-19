@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Cross-account cross-Region metrics centralization
-<a name="CloudWatchMetrics_Centralization"></a>
 
 Amazon CloudWatch Metrics centralization automatically centralizes metrics from multiple source accounts and Regions into a single destination account within your AWS Organizations organization. You define rules to control what gets centralized, enabling unified monitoring, alarming, and analysis across your entire AWS infrastructure.
 

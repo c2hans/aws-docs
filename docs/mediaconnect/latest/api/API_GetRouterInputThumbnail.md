@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GetRouterInp
 ---
 
 # GetRouterInputThumbnail
-<a name="API_GetRouterInputThumbnail"></a>
 
 Retrieves the thumbnail for a router input in AWS Elemental MediaConnect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetTask
-<a name="API_BatchGetTask"></a>
 
 Retrieves multiple tasks in a single request. This is a batch version of the `GetTask` API.
 

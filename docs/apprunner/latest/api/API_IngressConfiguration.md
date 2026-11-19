@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_IngressConfigur
 ---
 
 # IngressConfiguration
-<a name="API_IngressConfiguration"></a>
 
 Network configuration settings for inbound network traffic.
 

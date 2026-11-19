@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateExperi
 ---
 
 # UpdateExperimentTemplateActionInputItem
-<a name="API_UpdateExperimentTemplateActionInputItem"></a>
 
 Specifies an action for an experiment template.
 

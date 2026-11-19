@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 ---
 
 # Compute
-<a name="compute"></a>
 
 The following decision guides help you choose AWS services for running compute workloads, including virtual machines, containers, serverless functions, and modern applications.
 

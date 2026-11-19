@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_LayerVersionConten
 ---
 
 # LayerVersionContentOutput
-<a name="API_LayerVersionContentOutput"></a>
 
 Details about a version of an [AWS Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html).
 

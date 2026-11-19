@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationEfs
-<a name="API_UpdateLocationEfs"></a>
 
 Modifies the following configuration parameters of the Amazon EFS transfer location that you're using with AWS DataSync.
 

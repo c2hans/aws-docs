@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_M
 ---
 
 # MockErrorOutput
-<a name="API_MockErrorOutput"></a>
 
 A JSON object that contains a mocked error.
 

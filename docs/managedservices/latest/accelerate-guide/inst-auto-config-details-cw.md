@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # CloudWatch configuration change details
-<a name="inst-auto-config-details-cw"></a>
 
 Additional detail on the CloudWatch configuration.
 + CloudWatch configuration file location on the instance:

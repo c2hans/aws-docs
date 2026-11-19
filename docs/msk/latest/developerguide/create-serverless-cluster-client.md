@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/create-serverl
 ---
 
 # Create a client machine to access MSK Serverless cluster
-<a name="create-serverless-cluster-client"></a>
 
 In the step, you perform two tasks. The first task is to create an Amazon EC2 instance to use as an Apache Kafka client machine. The second task is to install Java and Apache Kafka tools on the machine.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_CodeArt
 ---
 
 # CodeArtifacts
-<a name="API_CodeArtifacts"></a>
 
 Code artifacts are source code artifacts and build artifacts used in a repository analysis or a pull request review.
 + Source code artifacts are source code files in a Git repository that are compressed into a .zip file.

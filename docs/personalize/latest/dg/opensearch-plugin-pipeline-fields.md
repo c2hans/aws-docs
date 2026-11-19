@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/opensearch-plugin-
 ---
 
 # Fields for the `personalized_search_ranking` response processor
-<a name="opensearch-plugin-pipeline-fields"></a>
 
 When you create a search pipeline for the Amazon Personalize Search Ranking plugin, you specify a `personalized_search_ranking` response processor with the following fields.
 +  **campaign\_arn (required)** – Specify the Amazon Resource Name (ARN) of the Amazon Personalize campaign to use to personalize results.

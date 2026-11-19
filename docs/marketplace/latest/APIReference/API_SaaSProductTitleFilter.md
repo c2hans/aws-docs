@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_SaaS
 ---
 
 # SaaSProductTitleFilter
-<a name="API_SaaSProductTitleFilter"></a>
 
 Object that allows filtering on product title.
 

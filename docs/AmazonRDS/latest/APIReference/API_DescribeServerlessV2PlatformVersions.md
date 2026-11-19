@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeServerlessV2PlatformVersions
-<a name="API_DescribeServerlessV2PlatformVersions"></a>
 
 Describes the properties of specific platform versions for Aurora Serverless v2.
 

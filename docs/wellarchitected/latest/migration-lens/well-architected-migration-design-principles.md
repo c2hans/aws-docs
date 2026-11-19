@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/we
 ---
 
 # Design principles
-<a name="well-architected-migration-design-principles"></a>
 
  Well-Architected migration design principles are a set of considerations used as the basis for a well-architected migrated workload. The design principles are high-level guidance that we recommend you follow for a successful migration.
 

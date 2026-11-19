@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GuardrailRegexConfig
-<a name="API_amazon-q-connect_GuardrailRegexConfig"></a>
 
 The regular expression to configure for the AI Guardrail.
 

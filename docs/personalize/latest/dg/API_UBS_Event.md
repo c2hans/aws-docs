@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_Event.html
 ---
 
 # Event
-<a name="API_UBS_Event"></a>
 
 Represents item interaction event information sent using the `PutEvents` API.
 

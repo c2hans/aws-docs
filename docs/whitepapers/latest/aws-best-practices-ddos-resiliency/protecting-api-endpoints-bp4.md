@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Protecting API endpoints (BP4)
-<a name="protecting-api-endpoints-bp4"></a>
 
  When you must expose an API to the public, there's a risk that the API frontend could be targeted by a DDoS attack. To help reduce the risk, you can use [Amazon API Gateway](https://aws.amazon.com/api-gateway/) as an entryway to applications running on Amazon EC2, AWS Lambda, or other AWS services. By using Amazon API Gateway, you don't need your own servers for the API frontend and you can obfuscate other components of your application. By making it harder to detect your application's components, you can help prevent those AWS resources from being targeted by a DDoS attack.
 

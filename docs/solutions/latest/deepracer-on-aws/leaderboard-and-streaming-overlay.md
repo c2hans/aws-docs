@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/leader
 ---
 
 # Leaderboard and streaming overlay
-<a name="leaderboard-and-streaming-overlay"></a>
 
 Each physical event track provides two unauthenticated spectator views. To access a spectator view, use the **Live leaderboard** or **Streaming overlay** link for a track on the event details page.
 

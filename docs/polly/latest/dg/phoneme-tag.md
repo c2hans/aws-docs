@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/phoneme-tag.html
 ---
 
 # Using phonetic pronunciation
-<a name="phoneme-tag"></a>
 
 *<phoneme>*
 

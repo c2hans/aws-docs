@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RowFilt
 ---
 
 # RowFilterExpression
-<a name="API_RowFilterExpression"></a>
 
 The row filter expression.
 

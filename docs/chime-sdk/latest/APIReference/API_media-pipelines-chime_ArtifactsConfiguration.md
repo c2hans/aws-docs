@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ArtifactsConfiguration
-<a name="API_media-pipelines-chime_ArtifactsConfiguration"></a>
 
 The configuration for the artifacts.
 

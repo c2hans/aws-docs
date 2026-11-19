@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Prerequisites
-<a name="aurora-analytics-prerequisites"></a>
 
 Your Aurora PostgreSQL DB cluster can read Iceberg and Parquet data from Amazon S3, Amazon S3 Tables, and the AWS Glue Data Catalog on your behalf. Before you query that data, the cluster needs three things: a way to authenticate to those services, an engine version that includes the `aurora_analytics` extension, and a network path from your VPC to reach them. The following sections walk you through creating an IAM policy and role that grant read access to the specific data you plan to query, attaching that role to your DB cluster, enabling the extension in your DB cluster parameter group, and configuring the network path your cluster uses to reach Amazon S3 and AWS Glue. You can complete these steps on any existing Aurora PostgreSQL DB cluster that meets the version requirement.
 

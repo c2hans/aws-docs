@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/getting
 ---
 
 # Get Started with Amazon WorkSpaces Applications: Set Up With Sample Applications
-<a name="getting-started"></a>
 
 To stream your applications, Amazon WorkSpaces Applications requires an environment that includes a fleet that is associated with a stack, and at least one application image. This tutorial describes how to configure a sample WorkSpaces Applications environment for application streaming and give users access to that stream.
 

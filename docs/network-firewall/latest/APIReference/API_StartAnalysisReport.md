@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # StartAnalysisReport
-<a name="API_StartAnalysisReport"></a>
 
 Generates a traffic analysis report for the timeframe and traffic type you specify.
 

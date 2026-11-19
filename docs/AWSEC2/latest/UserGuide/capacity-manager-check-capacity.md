@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-manager
 ---
 
 # How to check capacity
-<a name="capacity-manager-check-capacity"></a>
 
 Call get-capacity-manager-supportability-scores through the console or the API. Provide your market type (on-demand or spot), how much capacity you need, where you want to launch, and either the instance types to consider or the attributes they must meet. The API returns a score for each instance type and Availability Zone combination in your request, plus an aggregate score for the entire set. This API checks current supportability only — it doesn't accept dates.
 
-Call get-capacity-manager-supportability-scores in the Region where you turned on Capacity Manager. A single call can check Availability Zones in any Region. Run checks when you plan or review a workload rather than on every launch, so launches in other Regions don't depend on a cross-Region call.
+Call get-capacity-manager-supportability-scores in the Region where you turned on Capacity Manager. A single call can check Availability Zones in any Region. Real-time supportability checks don't support Local Zones. Run checks when you plan or review a workload rather than on every launch, so launches in other Regions don't depend on a cross-Region call.
 
 The following AWS CLI command checks On-Demand capacity for a list of instance types:
 

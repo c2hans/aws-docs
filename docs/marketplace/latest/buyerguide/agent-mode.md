@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/agent-mode
 ---
 
 # Agent mode for AWS Marketplace
-<a name="agent-mode"></a>
 
 Agent mode is a conversational interface purpose-built for software procurement on AWS Marketplace. It is powered by a set of specialized agents to help you discover, evaluate, and select software solutions through natural conversation. You can describe your needs in plain language and receive personalized recommendations, recommendations, comparisons, and purchase proposals. Agent mode combines the AWS Marketplace product catalog with specialized knowledge from trusted third parties. It also includes real-time web intelligence.
 

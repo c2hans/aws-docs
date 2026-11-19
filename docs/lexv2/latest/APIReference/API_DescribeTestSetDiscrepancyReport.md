@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeTe
 ---
 
 # DescribeTestSetDiscrepancyReport
-<a name="API_DescribeTestSetDiscrepancyReport"></a>
 
 Gets metadata information about the test set discrepancy report.
 

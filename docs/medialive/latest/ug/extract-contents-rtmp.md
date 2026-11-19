@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/extract-contents-rtm
 ---
 
 # Identifying content in an RTMP source
-<a name="extract-contents-rtmp"></a>
 
 This procedure applies to both RTMP push and pull inputs from the internet, and to RTMP inputs from Amazon Virtual Private Cloud. The content in an RTMP input always consists of one video, one audio, and optional captions.
 

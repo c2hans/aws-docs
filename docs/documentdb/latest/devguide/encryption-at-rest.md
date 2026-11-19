@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/encryption-at
 ---
 
 # Encrypting Amazon DocumentDB data at rest
-<a name="encryption-at-rest"></a>
 
 **Note**
 AWS KMS is replacing the term *customer master key (CMK)* with *AWS KMS key* and *KMS key*. The concept has not changed. To prevent breaking changes, AWS KMS is keeping some variations of this term.

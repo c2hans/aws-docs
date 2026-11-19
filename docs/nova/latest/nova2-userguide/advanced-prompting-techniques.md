@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/advanced-pro
 ---
 
 # Advanced prompting techniques
-<a name="advanced-prompting-techniques"></a>
 
 These sections provide advanced guidance for how to improve the quality of your prompts and leverage key features like extended thinking.
 

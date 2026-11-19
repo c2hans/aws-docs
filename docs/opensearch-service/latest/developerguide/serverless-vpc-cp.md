@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Control plane access through AWS PrivateLink
-<a name="serverless-vpc-cp"></a>
 
 Amazon OpenSearch Serverless supports two types of AWS PrivateLink connections for control plane and data plane operations. Control plane operations include the creation and deletion of collections and the management of access policies. Data plane operations are for indexing and querying data within a collection. This page covers the control plane AWS PrivateLink endpoint. For information about data plane VPC endpoints, see [Data plane access through AWS PrivateLink](serverless-vpc.md).
 

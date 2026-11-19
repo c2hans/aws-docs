@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/timeke
 ---
 
 # Run an event with timekeeping
-<a name="timekeeping"></a>
 
 The **timekeeping** page is where a race facilitator runs each racer’s attempt: starting the run, recording each lap as the car crosses the line, and submitting the result to the leaderboard. Open it from the **Timekeep** link on the event’s **Tracks** tab or from the sidebar navigation.
 

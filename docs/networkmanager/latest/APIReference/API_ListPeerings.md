@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListPeerings
-<a name="API_ListPeerings"></a>
 
 Lists the peerings for a core network.
 

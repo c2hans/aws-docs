@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # ListRegistries
-<a name="API_ListRegistries"></a>
 
 Lists the registries in the caller's account and Region, with optional filtering by status and discovery authorizer type
 

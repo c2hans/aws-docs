@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelM
 ---
 
 # ModelMetadataSummary
-<a name="API_ModelMetadataSummary"></a>
 
 A summary of the model metadata.
 

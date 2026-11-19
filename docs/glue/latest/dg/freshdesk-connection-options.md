@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/freshdesk-connection-opti
 ---
 
 # Freshdesk connection options
-<a name="freshdesk-connection-options"></a>
 
 The following are connection options for Freshdesk:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in Freshdesk.

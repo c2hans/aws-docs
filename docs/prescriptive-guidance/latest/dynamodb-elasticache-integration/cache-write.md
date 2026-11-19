@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-el
 ---
 
 # Cache write behavior
-<a name="cache-write"></a>
 
 This guide describes a read-through cache where items are cached upon first read. A write-through cache would push entries into the cache during the write operation, but this guide does not suggest doing that, for two reasons:
 + When an item is written, there's no indication that it's going to be read anytime soon, and it's wasteful to write cache entries that aren't used.

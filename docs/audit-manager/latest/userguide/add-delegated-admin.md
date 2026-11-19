@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/add-deleg
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Adding a delegated administrator
-<a name="add-delegated-admin"></a>
 
 If you use AWS Organizations and want to enable multi-account support for AWS Audit Manager, you can designate a member account in your organization as the delegated administrator for Audit Manager.
 

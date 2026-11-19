@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-c
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # AWS Well-Architected Agent Concepts and terminology
-<a name="agent-concepts"></a>
 
 This topic defines the key concepts you need to understand before using AWS Well-Architected Agent.
 

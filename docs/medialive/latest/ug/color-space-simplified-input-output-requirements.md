@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-simplifi
 ---
 
 # Output requirements
-<a name="color-space-simplified-input-output-requirements"></a>
 
 **Supported output types**
 

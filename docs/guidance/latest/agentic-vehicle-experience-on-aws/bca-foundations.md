@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # CMS and ADP as the AVX data foundations
-<a name="bca-foundations"></a>
 
 AVX treats CMS and ADP as external service providers, not internal modules. Each foundation is independently deployable and independently governed. AVX holds no vehicle database, no knowledge corpus, and no analytical data lake of its own — all of that lives in the foundations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Enabling local write forwarding
-<a name="aurora-mysql-write-forwarding-enabling"></a>
 
 By default, local write forwarding isn't enabled for Aurora MySQL DB clusters. You enable local write forwarding at the cluster level, not at the instance level.
 

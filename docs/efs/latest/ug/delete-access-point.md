@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/delete-access-point.html
 ---
 
 # Deleting access points
-<a name="delete-access-point"></a>
 
 When you delete an access point, any clients that are using the access point lose access to the Amazon EFS file system that it's configured for.
 

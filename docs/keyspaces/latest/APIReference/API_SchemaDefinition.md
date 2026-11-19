@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Schema
 ---
 
 # SchemaDefinition
-<a name="API_SchemaDefinition"></a>
 
 Describes the schema of the table.
 

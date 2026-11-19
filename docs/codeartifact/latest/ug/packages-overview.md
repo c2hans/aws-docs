@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/packages-overview
 ---
 
 # Packages overview
-<a name="packages-overview"></a>
 
 A *package* is a bundle of software and the metadata that is required to resolve dependencies and install the software. In CodeArtifact, a package consists of a package name, an optional [namespace](codeartifact-concepts.md#welcome-concepts-package-namespace) such as `@types` in `@types/node`, a set of package versions, and package-level metadata such as npm tags.
 

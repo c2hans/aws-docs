@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ListPla
 ---
 
 # ListPlanExecutions
-<a name="API_ListPlanExecutions"></a>
 
 Lists the executions of a Region switch plan. This operation returns information about both current and historical executions.
 

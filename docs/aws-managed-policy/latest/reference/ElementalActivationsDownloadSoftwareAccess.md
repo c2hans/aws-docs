@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Elem
 ---
 
 # ElementalActivationsDownloadSoftwareAccess
-<a name="ElementalActivationsDownloadSoftwareAccess"></a>
 
 **Description**: Access to view purchased assets and download related software and kickstart files
 

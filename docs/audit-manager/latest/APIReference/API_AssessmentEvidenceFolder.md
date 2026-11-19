@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentEvidenceFolder
-<a name="API_AssessmentEvidenceFolder"></a>
 
  The folder where AWS Audit Manager stores evidence for an assessment.
 

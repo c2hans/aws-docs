@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-stor
 ---
 
 # Instance storage options and behavior in Amazon EMR
-<a name="emr-plan-storage"></a>
 
 ## Overview
 <a name="emr-plan-storage-ebs-storage-overview"></a>

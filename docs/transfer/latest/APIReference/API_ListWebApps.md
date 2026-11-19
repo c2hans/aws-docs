@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListWeb
 ---
 
 # ListWebApps
-<a name="API_ListWebApps"></a>
 
 Lists all web apps associated with your AWS account for your current region. The response includes the endpoint type for each web app, showing whether it is publicly accessible or VPC hosted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSISEC13: How do you secure AI/ML models and protect training data?
-<a name="fsisec13"></a>
 
  Financial institutions implementing generative AI must establish comprehensive security controls throughout the AI lifecycle, from data preparation to model deployment and monitoring. This includes protecting training data integrity, securing model development environments, and implementing robust controls for inference to prevent unauthorized access, model manipulation, and data poisoning attacks.
 

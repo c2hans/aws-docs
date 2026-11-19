@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Measure test properties
-<a name="rairc02"></a>
 
 | RAIRC02: How will you measure the properties tested by your release criteria? |
 | --- |

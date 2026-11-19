@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Transport.ht
 ---
 
 # Transport
-<a name="API_Transport"></a>
 
  Attributes related to the transport stream that are used in a source or output.
 

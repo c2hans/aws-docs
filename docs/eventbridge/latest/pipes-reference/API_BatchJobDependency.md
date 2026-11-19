@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_B
 ---
 
 # BatchJobDependency
-<a name="API_BatchJobDependency"></a>
 
 An object that represents an AWS Batch job dependency.
 

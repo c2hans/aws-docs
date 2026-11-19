@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # BatchGetDevicePosition
-<a name="API_WaypointTracking_BatchGetDevicePosition"></a>
 
 Lists the latest device positions for requested devices.
 

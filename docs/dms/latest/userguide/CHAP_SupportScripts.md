@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_SupportScripts
 ---
 
 # Working with diagnostic support scripts in AWS DMS
-<a name="CHAP_SupportScripts"></a>
 
 If you encounter an issue when working with AWS DMS, your support engineer might need more information about either your source or target database. We want to make sure that AWS Support gets as much of the required information as possible in the shortest possible time. Therefore, we developed scripts to query this information for several of the major relational database engines.
 

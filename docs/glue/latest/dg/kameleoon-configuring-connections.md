@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kameleoon-configuring-con
 ---
 
 # Configuring Kameleoon connections
-<a name="kameleoon-configuring-connections"></a>
 
 Kameleoon connections use OAuth 2.0 client credentials. You register an API client in Kameleoon to obtain a client ID and client secret, store them in Secrets Manager, and reference that secret when you create the connection in AWS Glue Studio. AWS Glue obtains and refreshes the access token for you; no user sign-in or consent step is required.
 

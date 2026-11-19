@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Da
 ---
 
 # DailySchedule
-<a name="API_agent_DailySchedule"></a>
 
 A daily sync. The run time is system-chosen (off-peak) and not configurable.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setting-up-multiplex
 ---
 
 # Setting up a multiplex
-<a name="setting-up-multiplex"></a>
 
 There are three components involved in an MPTS: a MediaLive multiplex, MediaLive programs, and MediaLive channels (and their attached MediaLive inputs). You must create these components in this order:
 + Create the MediaLive multiplex.

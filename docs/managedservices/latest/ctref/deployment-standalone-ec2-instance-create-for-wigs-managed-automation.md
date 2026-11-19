@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # EC2 Instance \| Create For WIGS (Managed Automation)
-<a name="deployment-standalone-ec2-instance-create-for-wigs-managed-automation"></a>
 
 Create an Amazon Elastic Compute Cloud (EC2) instance for use with Workload Ingest (WIGS) change type (ct-257p9zjk14ija). For information, see AMS documentation on WIGS in the AMS Application Developer's Guide.
 

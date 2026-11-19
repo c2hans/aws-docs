@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesAuditLogsConfiguration
-<a name="API_KubernetesAuditLogsConfiguration"></a>
 
 Describes whether Kubernetes audit logs are enabled as a data source.
 

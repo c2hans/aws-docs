@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/ppe-request-respon
 ---
 
 # Understanding the personal protective equipment detection API
-<a name="ppe-request-response"></a>
 
 The following information describes the [DetectProtectiveEquipment](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectProtectiveEquipment.html) API. For example code, see [Detecting personal protective equipment in an image](ppe-procedure-image.md).
 

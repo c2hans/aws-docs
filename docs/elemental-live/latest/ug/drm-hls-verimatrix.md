@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/drm-hls-verimat
 ---
 
 # HLS output with Verimatrix
-<a name="drm-hls-verimatrix"></a>
 
 Encryption mode: Always AES CTR (AES-128)
 

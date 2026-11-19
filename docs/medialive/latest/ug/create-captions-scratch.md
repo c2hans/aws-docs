@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/create-captions-scra
 ---
 
 # Creating a captions encode from scratch
-<a name="create-captions-scratch"></a>
 
 1. On the **Create channel** page, find the output group that you [created](creating-a-channel-step4.md).
 

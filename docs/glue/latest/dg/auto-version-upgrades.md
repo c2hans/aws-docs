@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades.htm
 ---
 
 # Automatic version upgrades for AWS Glue jobs
-<a name="auto-version-upgrades"></a>
 
 AWS Glue automatic version upgrades (auto upgrade) keep your AWS Glue for Apache Spark jobs on the latest stable AWS Glue version. Your jobs get new features, faster runs, and security fixes. You don't need a migration project.
 

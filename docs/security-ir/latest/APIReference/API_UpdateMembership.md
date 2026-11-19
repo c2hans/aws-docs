@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Upda
 ---
 
 # UpdateMembership
-<a name="API_UpdateMembership"></a>
 
 Updates membership configuration.
 

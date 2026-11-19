@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ami_cu
 ---
 
 # Step 5 – Create an AMI compatible with AWS PCS
-<a name="working-with_ami_custom_create-ami"></a>
 
 After you have installed the required software components, you create an AMI that you can reuse to launch instances in AWS PCS compute node groups.
 

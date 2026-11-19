@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/asynchron
 ---
 
 # Asynchronous programming using the AWS SDK for PHP Version 3
-<a name="asynchronous-requests"></a>
 
 You can send commands concurrently using the asynchronous features of the SDK. You can send requests asynchronously by suffixing an operation name with `Async`. This initiates the request and returns a promise.
 

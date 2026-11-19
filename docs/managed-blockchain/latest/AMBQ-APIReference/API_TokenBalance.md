@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # TokenBalance
-<a name="API_TokenBalance"></a>
 
 The balance of the token.
 

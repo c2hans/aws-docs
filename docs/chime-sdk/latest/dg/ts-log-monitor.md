@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ts-log-monitor.html
 ---
 
 # Setting up logging and monitoring for Amazon Chime SDK meetings
-<a name="ts-log-monitor"></a>
 
 Logging helps you collect information such as server-side meeting events and client-side browser console logs.
 

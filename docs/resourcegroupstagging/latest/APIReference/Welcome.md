@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 The AWS services in the following list support the Resource Groups Tagging API `TagResources` and `UntagResources` operations.
 
@@ -140,4 +139,4 @@ IAM users and roles can only be used in `TagResources` and `UntagResources` oper
   +  `server-certificate`
   +  `user`
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

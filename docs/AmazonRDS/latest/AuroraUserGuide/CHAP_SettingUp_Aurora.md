@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Se
 ---
 
 # Setting up your environment for Amazon Aurora
-<a name="CHAP_SettingUp_Aurora"></a>
 
 Before you use Amazon Aurora for the first time, complete the following tasks.
 

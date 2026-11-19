@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MySQL.h
 ---
 
 # Using a MySQL-compatible database as a source for AWS DMS
-<a name="CHAP_Source.MySQL"></a>
 
 You can migrate data from any MySQL-compatible database (MySQL, MariaDB, or Amazon Aurora MySQL) using AWS Database Migration Service.
 

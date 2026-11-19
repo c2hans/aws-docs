@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Sensiti
 ---
 
 # SensitiveDataDetections
-<a name="API_SensitiveDataDetections"></a>
 
 The list of detected instances of sensitive data.
 

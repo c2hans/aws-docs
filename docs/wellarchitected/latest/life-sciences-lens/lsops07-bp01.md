@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS07-BP01 Maintain a controlled multi-account environment
-<a name="lsops07-bp01"></a>
 
  Implement standardized account management using templated environments and automated account provisioning. Establish organizational guardrails through policies and baseline configurations. Maintain centralized control over shared services while providing consistent security across accounts.
 

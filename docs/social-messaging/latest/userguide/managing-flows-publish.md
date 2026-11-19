@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Publishing, deprecating, and previewing WhatsApp Flows
-<a name="managing-flows-publish"></a>
 
 ## Publishing a Flow
 <a name="managing-flows-publish-flow"></a>

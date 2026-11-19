@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS02-BP01 Implement monitoring across each layer of your advertising stack
-<a name="advops02-bp01"></a>
 
  Operational excellence in advertising workloads requires monitoring across ad-serving infrastructure, data pipelines, application performance, user experience, partner connectivity, and agentic AI. For publisher workloads, this includes sell-side monitoring on monetization, content delivery pipeline (SGAI), playout health (FAST), and rendering health for innovative ad formats. With a multi-layered approach, you can detect and resolve problems before they affect revenue or the viewer. You can also correlate signals across tiers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Anti-patterns for network access in the AWS Cloud
-<a name="anti-patterns"></a>
 
 An *anti-pattern* is a frequently used solution for a recurring issue where the solution is counter-productive, ineffective, or less effective than an alternative. The design options mentioned in this section usually work, but they come with significant disadvantages. If possible, they should be avoided because better alternatives are available.
 

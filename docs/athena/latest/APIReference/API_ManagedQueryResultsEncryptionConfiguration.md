@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ManagedQu
 ---
 
 # ManagedQueryResultsEncryptionConfiguration
-<a name="API_ManagedQueryResultsEncryptionConfiguration"></a>
 
 If you encrypt query and calculation results in Athena owned storage, this field indicates the encryption option (for example, SSE\_KMS or CSE\_KMS) and key information.
 

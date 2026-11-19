@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteKey
 ---
 
 # DeleteKeyPair
-<a name="API_DeleteKeyPair"></a>
 
 Deletes the specified key pair, by removing the public key from Amazon EC2.
 

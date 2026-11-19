@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Delet
 ---
 
 # DeleteEntityRecognizer
-<a name="API_DeleteEntityRecognizer"></a>
 
 Deletes an entity recognizer.
 

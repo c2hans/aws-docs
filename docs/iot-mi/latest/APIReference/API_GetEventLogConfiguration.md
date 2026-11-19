@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetEventL
 ---
 
 # GetEventLogConfiguration
-<a name="API_GetEventLogConfiguration"></a>
 
 Get an event log configuration.
 

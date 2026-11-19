@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # PredictiveScalingMetricSpecification
-<a name="API_PredictiveScalingMetricSpecification"></a>
 
  This structure specifies the metrics and target utilization settings for a predictive scaling policy.
 

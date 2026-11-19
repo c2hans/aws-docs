@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioDomainExecutionRolePolicy
-<a name="security-iam-awsmanpol-SageMakerStudioDomainExecutionRolePolicy"></a>
 
 Default policy for the SageMakerUnifiedStudioDomainExecutionRole service role. This role is used by Amazon SageMaker Unified Studio to catalog, discover, govern, share, and analyze data in the Amazon SageMaker Unified Studio domain.
 

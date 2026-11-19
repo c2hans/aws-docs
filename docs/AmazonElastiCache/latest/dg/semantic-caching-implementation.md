@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/semantic-cac
 ---
 
 # Implementing a semantic cache with ElastiCache for Valkey
-<a name="semantic-caching-implementation"></a>
 
 The following walkthrough shows how to implement a read-through semantic cache using ElastiCache for Valkey with Amazon Bedrock.
 

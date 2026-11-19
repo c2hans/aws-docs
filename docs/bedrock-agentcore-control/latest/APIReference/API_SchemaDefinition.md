@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SchemaDefinition
-<a name="API_SchemaDefinition"></a>
 
 A schema definition for a gateway target. This structure defines the structure of the API that the target exposes.
 
@@ -23,12 +22,12 @@ Required: No
 
  ** items **   <a name="bedrockagentcorecontrol-Type-SchemaDefinition-items"></a>
 The items in the schema definition. This field is used for array types to define the structure of the array elements.
-Type: [SchemaDefinition](#API_SchemaDefinition) object
+Type: [SchemaDefinition](API_SchemaDefinition.md) object
 Required: No
 
  ** properties **   <a name="bedrockagentcorecontrol-Type-SchemaDefinition-properties"></a>
 The properties of the schema definition. These properties define the fields in the schema.
-Type: String to [SchemaDefinition](#API_SchemaDefinition) object map
+Type: String to [SchemaDefinition](API_SchemaDefinition.md) object map
 Required: No
 
  ** required **   <a name="bedrockagentcorecontrol-Type-SchemaDefinition-required"></a>

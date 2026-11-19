@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-networ
 ---
 
 # AWS Network Firewall events
-<a name="events-ref-network-firewall"></a>
 
 Network Firewall sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

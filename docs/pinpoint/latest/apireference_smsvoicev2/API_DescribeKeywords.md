@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeKeywords
-<a name="API_DescribeKeywords"></a>
 
 Describes the specified keywords or all keywords on your origination phone number or pool.
 

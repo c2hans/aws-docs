@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Move out of the sandbox
-<a name="nx-rcs-scale-sandbox"></a>
 
 Every new AWS RCS Agent starts in a testing state. In the testing state you can send RCS messages only to devices that you have added as testers, which lets you validate your integration before you reach real recipients. To send to any recipient, you move the agent out of testing by submitting a country launch registration for each country where you want to send, and waiting for carrier approval. This topic explains the testing state and the path to production.
 

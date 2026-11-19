@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ParameterMapping
-<a name="API_query_ParameterMapping"></a>
 
 Mapping for named parameters.
 

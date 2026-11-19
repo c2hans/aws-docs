@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateHub
-<a name="API_CreateHub"></a>
 
 Create a hub.
 

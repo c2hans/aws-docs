@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Co
 ---
 
 # ConfigurationProfileSummary
-<a name="API_ConfigurationProfileSummary"></a>
 
 A summary of a configuration profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sigv4-str
 ---
 
 # Signature Calculations for the Authorization Header: Transferring Payload in Multiple Chunks (Chunked Upload) (AWS Signature Version 4)
-<a name="sigv4-streaming"></a>
 
 As described in the [Overview](sigv4-auth-using-authorization-header.md#sigv4-auth-header-overview), when authenticating requests using the `Authorization` header, you have an option of uploading the payload in chunks. You can send data in fixed size or variable size chunks. This section describes the signature calculation process in chunked upload, how you create the chunk body, and how the delayed signing works where you first upload the chunk, and send its signature in the subsequent chunk. The example section (see [Example: PUT Object](#example-signature-calculations-streaming)) shows signature calculations and resulting `Authorization` headers that you can use as a test suite to verify your code.
 

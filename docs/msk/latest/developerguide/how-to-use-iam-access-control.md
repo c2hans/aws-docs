@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/how-to-use-iam
 ---
 
 # How IAM access control for Amazon MSK works
-<a name="how-to-use-iam-access-control"></a>
 
 To use IAM access control for Amazon MSK, perform the following steps, which are described in detail in these topics:
 + [Create a Amazon MSK cluster that uses IAM access control](create-iam-access-control-cluster-in-console.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetC
 ---
 
 # GetCollaborationChangeRequest
-<a name="API_GetCollaborationChangeRequest"></a>
 
 Retrieves detailed information about a specific collaboration change request.
 

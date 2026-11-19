@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetQueueEnvironment
-<a name="API_GetQueueEnvironment"></a>
 
 Gets a queue environment.
 

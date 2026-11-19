@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/fis_example_iam_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Run CPU stress tests on virtual machine instances using fault injection
-<a name="fis_example_iam_GettingStarted_069_section"></a>
 
 The following code example shows how to:
 + Create IAM roles

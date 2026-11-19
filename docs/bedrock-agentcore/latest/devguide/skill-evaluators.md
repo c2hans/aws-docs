@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/skill-
 ---
 
 # Skill evaluators
-<a name="skill-evaluators"></a>
 
 A *skill* is a reusable `SKILL.md` instruction file that an agent loads at runtime to help with a task. Skills follow the open [Agent Skills](https://agentskills.io) standard for skill file structure. For terminology, see [Skill](evaluations-terminology.md#skill).
 

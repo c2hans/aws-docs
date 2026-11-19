@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ProfileQueryFailures
-<a name="API_connect-customer-profiles_ProfileQueryFailures"></a>
 
 Object that holds failures for membership.
 

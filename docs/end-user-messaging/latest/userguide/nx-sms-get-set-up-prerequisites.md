@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Prerequisites
-<a name="nx-sms-get-set-up-prerequisites"></a>
 
 Before you begin, complete the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/amazon-rds.html
 ---
 
 # Amazon RDS
-<a name="amazon-rds"></a>
 
 This guide provides security configuration requirements and implementation examples for Amazon RDS in accordance with FedRAMP requirements.
 

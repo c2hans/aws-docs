@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_CloudWatchLogsLogDe
 ---
 
 # CloudWatchLogsLogDeliveryDescription
-<a name="API_CloudWatchLogsLogDeliveryDescription"></a>
 
 A description of the log delivery settings.
 

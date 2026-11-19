@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/create
 ---
 
 # Creating message templates with the CreateWhatsAppMessageTemplate API
-<a name="create-message-templates-api"></a>
 
 You can create customized WhatsApp message templates using the API. This topic describes how to use the [CreateWhatsAppMessageTemplate](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_CreateWhatsAppMessageTemplate.html) to create a variety of message templates.
 

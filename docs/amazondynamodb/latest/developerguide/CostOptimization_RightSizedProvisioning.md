@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Cos
 ---
 
 # Evaluate your provisioned capacity for right-sized provisioning in your DynamoDB table
-<a name="CostOptimization_RightSizedProvisioning"></a>
 
 This section provides an overview of how to evaluate if you have right-sized provisioning on your DynamoDB tables. As your workload evolves, you should modify your operational procedures appropriately, especially when your DynamoDB table is configured in provisioned mode and you have the risk to over-provision or under-provision your tables.
 

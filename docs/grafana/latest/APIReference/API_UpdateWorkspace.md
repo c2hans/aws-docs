@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_UpdateWo
 ---
 
 # UpdateWorkspace
-<a name="API_UpdateWorkspace"></a>
 
 Modifies an existing Amazon Managed Grafana workspace. If you use this operation and omit any optional parameters, the existing values of those parameters are not changed.
 

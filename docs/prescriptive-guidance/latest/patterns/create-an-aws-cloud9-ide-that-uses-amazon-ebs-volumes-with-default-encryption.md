@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create an AWS Cloud9 IDE that uses Amazon EBS volumes with default encryption
-<a name="create-an-aws-cloud9-ide-that-uses-amazon-ebs-volumes-with-default-encryption"></a>
 
 *Janardhan Malyala and Dhrubajyoti Mukherjee, Amazon Web Services*
 

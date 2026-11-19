@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # Alarm
-<a name="API_Alarm"></a>
 
 A CloudWatch alarm you apply to an automation or command.
 

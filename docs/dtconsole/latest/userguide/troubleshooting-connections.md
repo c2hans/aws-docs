@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting connections
-<a name="troubleshooting-connections"></a>
 
 The following information might help you troubleshoot common issues with connections to resources in AWS CodeBuild, AWS CodeDeploy, and AWS CodePipeline.
 

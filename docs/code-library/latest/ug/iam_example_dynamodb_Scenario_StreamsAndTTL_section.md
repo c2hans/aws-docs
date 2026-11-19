@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_dynam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Work with DynamoDB Streams and Time-to-Live using AWS Command Line Interface v2
-<a name="iam_example_dynamodb_Scenario_StreamsAndTTL_section"></a>
 
 The following code example shows how to manage DynamoDB Streams and Time-to-Live features.
 + Create a table with Streams enabled.

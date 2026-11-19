@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_ListA
 ---
 
 # ListApplications
-<a name="API_ListApplications"></a>
 
 Lists the IDs of the applications that you are monitoring.
 

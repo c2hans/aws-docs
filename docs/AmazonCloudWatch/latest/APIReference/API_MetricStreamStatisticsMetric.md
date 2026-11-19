@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MetricStreamStatisticsMetric
-<a name="API_MetricStreamStatisticsMetric"></a>
 
 This object contains the information for one metric that is to be streamed with additional statistics.
 

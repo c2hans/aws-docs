@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormAIVersionLifecycle
-<a name="API_EvaluationFormAIVersionLifecycle"></a>
 
 Contains the status and availability dates for an AI version, indicating when the version became active and when it reaches end of life.
 

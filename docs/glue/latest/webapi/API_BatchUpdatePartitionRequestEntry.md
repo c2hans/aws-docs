@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchUpdatePartit
 ---
 
 # BatchUpdatePartitionRequestEntry
-<a name="API_BatchUpdatePartitionRequestEntry"></a>
 
 A structure that contains the values and structure used to update a partition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_CreateEnviro
 ---
 
 # CreateEnvironmentHost
-<a name="API_CreateEnvironmentHost"></a>
 
 Creates an ESX host and adds it to an Amazon EVS environment.
 

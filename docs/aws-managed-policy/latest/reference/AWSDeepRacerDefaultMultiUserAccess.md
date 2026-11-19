@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeepRacerDefaultMultiUserAccess
-<a name="AWSDeepRacerDefaultMultiUserAccess"></a>
 
 **Description**: DeepRacer MultiUser Default user access to use deepracer in multi-user mode
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/choosing-cont
 ---
 
 # Choosing your controls
-<a name="choosing-controls"></a>
 
 The following table lists the AWS Backup Audit Manager controls, their customizable parameters, and their AWS Config recording resource types.
 

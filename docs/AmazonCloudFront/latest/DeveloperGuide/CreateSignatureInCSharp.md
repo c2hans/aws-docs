@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/C
 ---
 
 # Create a URL signature using C\# and the .NET Framework
-<a name="CreateSignatureInCSharp"></a>
 
 The C\# examples in this section implement an example application that demonstrates how to create the signatures for CloudFront private distributions using canned and custom policy statements. The examples include utility functions based on the [AWS SDK for .NET](https://aws.amazon.com/sdkfornet) that can be useful in .NET applications.
 

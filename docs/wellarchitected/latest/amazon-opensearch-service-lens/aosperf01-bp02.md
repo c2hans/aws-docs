@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF01-BP02 Check shard-to-CPU ratio
-<a name="aosperf01-bp02"></a>
 
  Shards are allocated a minimum of 1.5 vCPUs per shard, supporting efficient processing and scalability.
 

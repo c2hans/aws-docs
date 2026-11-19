@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalCodingOutputDataConfig
-<a name="API_MedicalCodingOutputDataConfig"></a>
 
 The output configuration for a medical coding job.
 

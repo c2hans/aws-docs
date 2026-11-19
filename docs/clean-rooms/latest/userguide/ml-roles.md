@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/ml-roles.ht
 ---
 
 # Set up service roles for AWS Clean Rooms ML
-<a name="ml-roles"></a>
 
 The roles needed to perform lookalike modeling differ from those needed to use a custom model. The following sections describe the roles needed to perform each task.
 

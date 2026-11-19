@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-cmaf-ac
 ---
 
 # Access control settings fields
-<a name="endpoints-cmaf-access-control"></a>
 
 Define the access control values.
 

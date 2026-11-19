@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # GetMatchingJob
-<a name="API_GetMatchingJob"></a>
 
 Returns the status, metrics, and errors (if there are any) that are associated with a job.
 

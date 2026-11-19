@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 ---
 
 # Decision-making processes
-<a name="decision-making-processes"></a>
 
 Use the following steps to define your strategy for migrating from an on-premises Avaya contact center to Amazon Lex V2 and Amazon Connect Customer:
 + [Step 1: Define the business goals and schedule](#step-1)

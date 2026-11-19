@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/transfer
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Troubleshooting data transfer problems with Snowball Edge
-<a name="transfer-troubleshooting"></a>
 
 If you encounter performance issues while transferring data to or from a Snowball Edge, see [Recommendations for best data transfer performance to or from a Snowball Edge](BestPractices.md#performance) for recommendations and guidance on improving transfer performance. The following can help you troubleshoot issues that you might have with your data transfer to or from a Snowball Edge:
 + You can't transfer data into the root directory of the Snowball Edge. If you have trouble transferring data into the device, make sure that you're transferring data into a subdirectory. The top-level subdirectories have the names of the Amazon S3 buckets that you included in the job. Put your data in those subdirectories.

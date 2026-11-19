@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Engagement report
-<a name="engagement-report"></a>
 
 You can use the Engagement report to get insights into how users interact with your websites and apps. It shows metrics around user engagement levels, activities performed, and which pages/screens are most visited.
 

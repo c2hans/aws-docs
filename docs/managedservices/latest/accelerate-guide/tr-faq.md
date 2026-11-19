@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Trusted Remediator FAQs
-<a name="tr-faq"></a>
 
 The following are frequently asked questions about Trusted Remediator:
 

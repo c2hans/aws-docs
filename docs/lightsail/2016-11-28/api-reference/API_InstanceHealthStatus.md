@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InstanceHealthStatus
-<a name="API_InstanceHealthStatus"></a>
 
 Describes the status of an Amazon Lightsail instance.
 

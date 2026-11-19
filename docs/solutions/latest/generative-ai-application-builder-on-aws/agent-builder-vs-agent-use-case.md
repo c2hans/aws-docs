@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Agent Builder vs Bedrock Agent use case
-<a name="agent-builder-vs-agent-use-case"></a>
 
 This solution provides two distinct approaches for working with AI agents, each suited for different use cases and requirements:
 

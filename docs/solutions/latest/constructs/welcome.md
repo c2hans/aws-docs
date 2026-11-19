@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/welcome.html
 ---
 
 # AWS Solutions Constructs
-<a name="welcome"></a>
 
 Publication date: **February 2026** ([Document Revisions](document-revisions.md))
 

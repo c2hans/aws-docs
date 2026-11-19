@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL run plans
-<a name="chap-oracle-aurora-pg.tuning.plans"></a>
 
 With AWS DMS, you can analyze and optimize database query performance by examining Oracle and PostgreSQL run plans. A run plan is the sequence of operations that the database engine performs to execute a SQL statement.
 

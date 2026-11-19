@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_DeleteLo
 ---
 
 # DeleteLoggingConfiguration
-<a name="API_DeleteLoggingConfiguration"></a>
 
 Deletes the specified logging configuration.
 

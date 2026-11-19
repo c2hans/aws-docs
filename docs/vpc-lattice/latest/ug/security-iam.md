@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/security-iam.html
 ---
 
 # Identity and access management for Amazon VPC Lattice
-<a name="security-iam"></a>
 
 The following sections describe how you can use AWS Identity and Access Management (IAM) to help secure your VPC Lattice resources, by controlling who can perform VPC Lattice API actions.
 

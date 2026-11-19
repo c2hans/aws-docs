@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # MediaLiveConnectorPipeline
-<a name="API_media-pipelines-chime_MediaLiveConnectorPipeline"></a>
 
 The connector pipeline.
 

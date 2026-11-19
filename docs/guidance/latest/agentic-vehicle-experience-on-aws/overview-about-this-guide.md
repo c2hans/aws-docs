@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # How This Implementation Guide Is Organized
-<a name="overview-about-this-guide"></a>
 
 This guide is prescriptive. It explains how to build an agentic vehicle experience on AWS using AVX’s architecture and patterns and how to extend, customize, and operate it for a production customer-engagement workload.
 

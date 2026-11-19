@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcAttach
 ---
 
 # VpcAttachment
-<a name="API_VpcAttachment"></a>
 
 Describes an attachment between a virtual private gateway and a VPC.
 

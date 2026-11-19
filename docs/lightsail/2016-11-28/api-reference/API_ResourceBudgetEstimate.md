@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # ResourceBudgetEstimate
-<a name="API_ResourceBudgetEstimate"></a>
 
 Describes the estimated cost or usage that a budget tracks.
 

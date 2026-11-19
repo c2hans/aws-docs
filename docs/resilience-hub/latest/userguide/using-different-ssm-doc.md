@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/using-di
 ---
 
 # Using a custom SSM document instead of the default
-<a name="using-different-ssm-doc"></a>
 
 To replace the SSM document AWS Resilience Hub suggested for your SOP with a custom document you've created, work directly in your code base. In addition to adding your new custom SSM automation document, you'll also:
 

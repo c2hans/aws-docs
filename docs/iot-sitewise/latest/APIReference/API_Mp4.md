@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Mp4
 ---
 
 # Mp4
-<a name="API_Mp4"></a>
 
 The MP4 video format configuration for bulk import files.
 

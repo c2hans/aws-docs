@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/CDI-SDK/latest/ug/what-is.html
 ---
 
 # What is AWS Cloud Digital Interface Software Development Kit?
-<a name="what-is"></a>
 
 The AWS Cloud Digital Interface (CDI) SDK is a software development kit that makes it easy for AWS customers, technical partners, and independent software vendors (ISV) to build low-latency uncompressed video workflows at scale in the AWS Cloud.
 

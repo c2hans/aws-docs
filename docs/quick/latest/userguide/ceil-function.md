@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/ceil-function.htm
 ---
 
 # Ceil
-<a name="ceil-function"></a>
 
 `ceil` rounds a decimal value to the next highest integer. For example, `ceil(29.02)` returns `30`.
 

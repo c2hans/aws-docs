@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ScheduledActionAssociation
-<a name="API_ScheduledActionAssociation"></a>
 
 Contains names of objects associated with a scheduled action.
 

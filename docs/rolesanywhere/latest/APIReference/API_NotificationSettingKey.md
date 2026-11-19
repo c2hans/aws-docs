@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_No
 ---
 
 # NotificationSettingKey
-<a name="API_NotificationSettingKey"></a>
 
 A notification setting key to reset. A notification setting key includes the event and the channel.
 

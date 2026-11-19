@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_FormFac
 ---
 
 # FormFactorConfig
-<a name="API_FormFactorConfig"></a>
 
 A supported form factor and Outpost generation configuration for an instance type.
 

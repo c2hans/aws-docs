@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_Impacted
 ---
 
 # ImpactedLocation
-<a name="API_ImpactedLocation"></a>
 
 Information about a location impacted by a health event in Internet Monitor.
 

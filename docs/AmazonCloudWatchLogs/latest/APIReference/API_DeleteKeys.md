@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteKeys
-<a name="API_DeleteKeys"></a>
 
 This processor deletes entries from a log event. These entries are key-value pairs.
 

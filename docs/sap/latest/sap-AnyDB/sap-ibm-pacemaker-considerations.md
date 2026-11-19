@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/sap-ibm-pacemaker-c
 ---
 
 # Considerations
-<a name="sap-ibm-pacemaker-considerations"></a>
 
 ## Specialized Knowledge
 <a name="sap-ibm-pacemaker-specialized-knowledge"></a>

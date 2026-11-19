@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/healthch
 ---
 
 # Determine Amazon ECS task health using container health checks
-<a name="healthcheck"></a>
 
 When you create a task definition, you can configure a health check for your containers. Health checks are commands that run locally on a container and validate application health and availability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityObserv
 ---
 
 # DataQualityObservation
-<a name="API_DataQualityObservation"></a>
 
 Describes the observation generated after evaluating the rules and analyzers.
 

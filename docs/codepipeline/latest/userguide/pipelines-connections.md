@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Add third-party source providers to pipelines using AWS CodeConnections
-<a name="pipelines-connections"></a>
 
 You can use the AWS CodePipeline console or the AWS CLI to connect your pipeline to third-party repositories.
 

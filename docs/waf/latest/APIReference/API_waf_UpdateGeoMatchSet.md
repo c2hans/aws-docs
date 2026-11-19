@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_UpdateGe
 ---
 
 # UpdateGeoMatchSet
-<a name="API_waf_UpdateGeoMatchSet"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -19,7 +18,7 @@ To create and configure an `GeoMatchSet`, perform the following steps:
 
 1. Submit a [CreateGeoMatchSet](API_waf_CreateGeoMatchSet.md) request.
 
-1. Use [GetChangeToken](API_waf_GetChangeToken.md) to get the change token that you provide in the `ChangeToken` parameter of an [UpdateGeoMatchSet](#API_waf_UpdateGeoMatchSet) request.
+1. Use [GetChangeToken](API_waf_GetChangeToken.md) to get the change token that you provide in the `ChangeToken` parameter of an [UpdateGeoMatchSet](API_waf_UpdateGeoMatchSet.md) request.
 
 1. Submit an `UpdateGeoMatchSet` request to specify the country that you want AWS WAF to watch for.
 

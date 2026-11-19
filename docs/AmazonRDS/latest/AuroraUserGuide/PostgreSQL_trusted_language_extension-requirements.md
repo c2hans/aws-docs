@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Postgre
 ---
 
 # Requirements for using Trusted Language Extensions for PostgreSQL
-<a name="PostgreSQL_trusted_language_extension-requirements"></a>
 
 The following are requirements for setting up and using the TLE development kit.
 + ** Aurora PostgreSQL versions ** – Trusted Language Extensions is supported on Aurora PostgreSQL version 14.5 and higher versions only.

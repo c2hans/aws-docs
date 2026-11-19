@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # Using Amazon EMR container defaults classification
-<a name="emr-eks-job-submitter-container-defaults"></a>
 
 ## Overview
 <a name="emr-eks-job-submitter-container-defaults-overview"></a>

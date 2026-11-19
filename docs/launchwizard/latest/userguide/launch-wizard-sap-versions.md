@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Supported versions for SAP deployments
-<a name="launch-wizard-sap-versions"></a>
 
 **Topics**
 + [Operating systems](#launch-wizard-sap-ascs-support-os)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrialC
 ---
 
 # TrialComponentSimpleSummary
-<a name="API_TrialComponentSimpleSummary"></a>
 
 A short summary of a trial component.
 

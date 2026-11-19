@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Operati
 ---
 
 # Amazon Location Service Trackers
-<a name="API_Operations_Amazon_Location_Service_Trackers"></a>
 
 The following actions are supported by Amazon Location Service Trackers:
 +  [AssociateTrackerConsumer](API_WaypointTracking_AssociateTrackerConsumer.md)

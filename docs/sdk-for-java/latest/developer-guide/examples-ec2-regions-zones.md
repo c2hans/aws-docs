@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Use AWS Regions and Availability Zones
-<a name="examples-ec2-regions-zones"></a>
 
 ## Describe Regions
 <a name="describe-regions"></a>

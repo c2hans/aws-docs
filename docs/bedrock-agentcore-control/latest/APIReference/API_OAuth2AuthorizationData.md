@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # OAuth2AuthorizationData
-<a name="API_OAuth2AuthorizationData"></a>
 
 OAuth2-specific authorization data, including the authorization URL and user identifier for the authorization session.
 

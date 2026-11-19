@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_EC2CopyR
 ---
 
 # EC2CopyRouteTableAction
-<a name="API_EC2CopyRouteTableAction"></a>
 
 An action that copies the EC2 route table for use in remediation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DeleteSecret`
-<a name="automation-aws-delete-secret"></a>
 
  **Description**
 

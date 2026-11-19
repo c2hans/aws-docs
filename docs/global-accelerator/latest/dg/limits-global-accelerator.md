@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/limits-glob
 ---
 
 # Quotas for AWS Global Accelerator
-<a name="limits-global-accelerator"></a>
 
 Your AWS account has specific quotas, also known as limits, related to AWS Global Accelerator.
 

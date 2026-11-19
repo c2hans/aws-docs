@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/assign-p
 ---
 
 # Assign permissions to users and groups
-<a name="assign-permissions-procedure"></a>
 
 Use the Deadline Cloud console to assign access levels to users and groups at the farm, queue, or fleet level.
 

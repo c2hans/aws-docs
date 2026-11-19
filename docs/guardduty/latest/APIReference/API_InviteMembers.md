@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invite
 ---
 
 # InviteMembers
-<a name="API_InviteMembers"></a>
 
 Invites AWS accounts to become members of an organization administered by the AWS account that invokes this API. If you are using AWS Organizations to manage your GuardDuty environment, this step is not needed. For more information, see [Managing accounts with organizations](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_organizations.html).
 

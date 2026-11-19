@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-remote
 ---
 
 # Set up automated Studio space filtering when using the AWS Toolkit
-<a name="remote-access-remote-setup-filter"></a>
 
 Users can filter spaces in the AWS Toolkit for Visual Studio Code explorer to display only relevant spaces. This section provides information on filtering and how to set up automated filtering.
 

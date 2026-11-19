@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Wor
 ---
 
 # Workflow
-<a name="API_Workflow"></a>
 
 Defines a process that Image Builder runs during the build, test, or distribution stage of the image creation process.
 

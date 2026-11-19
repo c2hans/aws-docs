@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/cloudwatch-
 ---
 
 # Monitoring Aurora DSQL with Amazon CloudWatch
-<a name="cloudwatch-monitoring"></a>
 
 Monitor Aurora DSQL using CloudWatch, which collects raw data and processes it into readable, near real-time metrics. CloudWatch keeps these statistics for 15 months, helping you gain better perspective on your web application or service performance. Set alarms to watch for specific thresholds and send notifications or take actions when met. Review the following Usage and Observability metrics available for Aurora DSQL.
 
@@ -16,7 +15,7 @@ For a deeper understanding of the performance and cost of your clusters, see [Mo
 
 This table outlines observability metrics for Aurora DSQL. It includes metrics for tracking read-only and total transactions to provide overall workload characterization. Actionable metrics like query timeouts and OCC conflict rate are included to help identify performance issues and concurrency conflicts. Session-related metrics, both active and total, offer insights into the current load on the system.
 
-| CloudWatch Metric Name | Metric | Unit | Description |
+| CloudWatch metric name | Metric | Unit | Description |
 | --- |--- |--- |--- |
 | ReadOnlyTransactions | Read-only transactions | none | The number of read-only transactions |
 | TotalTransactions | Total transactions | none | The total number of transactions executed on the system, including read-only transactions. |
@@ -30,7 +29,7 @@ This table outlines observability metrics for Aurora DSQL. It includes metrics f
 
 Aurora DSQL also publishes the following metrics under the AWS/Usage namespace. Use these metrics to monitor connection attempts and active connection count for your clusters.
 
-| CloudWatch Metric Name | Type | Resource | ResourceId | Service | Unit | Description |
+| CloudWatch metric name | Type | Resource | ResourceId | Service | Unit | Description |
 | --- |--- |--- |--- |--- |--- |--- |
 | ResourceCount | Resource | ClusterConnectionCount | cluster/<cluster-id> | AuroraDSQL | None | The number of active connections for a cluster. |
 | CallCount | API | DbConnectAdmin or DbConnect | cluster/<cluster-id> | AuroraDSQL | None | The number of API calls for database connection operations (DbConnectAdmin or DbConnect). |
@@ -40,7 +39,7 @@ Aurora DSQL also publishes the following metrics under the AWS/Usage namespace. 
 
  Aurora DSQL measures all request-based activity, such as query processing, reads, and writes, using a single normalized billing unit called Distributed Processing Unit (DPU).
 
-| CloudWatch Metric Name | Metric | Dimension: ResourceId | Unit | Description |
+| CloudWatch metric name | Metric | Dimension: ResourceId | Unit | Description |
 | --- |--- |--- |--- |--- |
 | WriteDPU | Write Units | <cluster-id> | DPU | Approximates the write active-use component of your Aurora DSQL cluster DPU usage. |
 | MultiRegionWriteDPU | Multi-Region Write Units | <cluster-id> | DPU | Applicable for Multi-Region clusters: Approximates the multi-Region write active-use component of your Aurora DSQL cluster DPU usage. |
@@ -54,7 +53,7 @@ Aurora DSQL also publishes the following metrics under the AWS/Usage namespace. 
 
 Aurora DSQL publishes the following metrics for change data capture (CDC) streams. These metrics use the `ClusterId` and `StreamId` dimensions, so you can monitor each CDC stream independently. For more information about CDC streams, see [Change data capture (CDC) streams](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/cdc-streams.html).
 
-| CloudWatch Metric Name | Metric | Unit | Description |
+| CloudWatch metric name | Metric | Unit | Description |
 | --- |--- |--- |--- |
 | IsImpaired | Is impaired | none | Indicates whether the stream is impaired. The value is 1 when the stream is in the IMPAIRED state, and 0 when the stream is healthy. Use this metric to create a CloudWatch alarm that notifies you when a stream becomes impaired. |
 | PublishedBytes | Published bytes | bytes | The total number of bytes that Aurora DSQL wrote to the target Kinesis data stream. |
@@ -62,6 +61,18 @@ Aurora DSQL publishes the following metrics for change data capture (CDC) stream
 | BehindSourceLag | Behind source lag | milliseconds | The delay, in milliseconds, between when a transaction commits in Aurora DSQL and when the CDC system processes the resulting record. A rising value indicates that the CDC pipeline is falling behind the write workload. If lag grows beyond the failure threshold, the stream transitions to FAILED. |
 | BytesStreamed | Bytes streamed | bytes | The total bytes streamed through the CDC pipeline for billing purposes. This metric reflects the data volume used to calculate streaming charges. |
 | StreamDPU | Stream DPU | DPU | The Distributed Processing Units (DPU) consumed by the CDC stream. This metric reflects the processing cost of streaming change data. Aurora DSQL also publishes StreamDPU with only the ClusterId dimension, summed across all streams on the cluster. |
+
+## Audit logging metrics
+<a name="audit-logging-metrics"></a>
+
+Aurora DSQL publishes the following metrics for audit logging in the `AWS/AuroraDSQL` namespace. These metrics use the `ClusterId` dimension. Use the `Sum` statistic. For more information about monitoring audit logging, see [Monitoring audit logging](audit-logging-monitoring.md).
+
+| CloudWatch metric name | Metric | Unit | Description |
+| --- |--- |--- |--- |
+| AuditLogRecordsGenerated | Audit log records generated | none | The number of audit records that the cluster generated. |
+| AuditLogRecordsByCategory | Audit log records by category | none | The number of audit records that the cluster generated for each statement class. This metric also uses the Category dimension, whose value is the class of the records, such as READ, WRITE, or DDL. |
+| AuditLogMeteredBytes | Audit log metered bytes | bytes | The number of audit record bytes that Aurora DSQL metered for billing. |
+| AuditLogDeliveryNotConfigured | Audit log delivery not configured | none | The number of transactions that didn't generate audit records because audit log delivery isn't set up for the cluster. |
 
 ## Setting DPU cost alarms
 <a name="dpu-cost-alarms"></a>

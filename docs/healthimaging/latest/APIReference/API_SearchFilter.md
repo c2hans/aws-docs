@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Se
 ---
 
 # SearchFilter
-<a name="API_SearchFilter"></a>
 
 The search filter.
 

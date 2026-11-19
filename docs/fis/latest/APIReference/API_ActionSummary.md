@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ActionSummar
 ---
 
 # ActionSummary
-<a name="API_ActionSummary"></a>
 
 Provides a summary of an action.
 

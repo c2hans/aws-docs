@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-mana
 ---
 
 # Shadow manager
-<a name="shadow-manager-component"></a>
 
 The shadow manager component (`aws.greengrass.ShadowManager`) enables the local shadow service on your core device. The local shadow service allows components to use interprocess communication to [interact with local shadows](ipc-local-shadows.md). The shadow manager component manages the storage of local shadow documents, and also handles synchronization of local shadow states with the AWS IoT Device Shadow service.
 

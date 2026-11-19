@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Proactive brand approval email (required after registration)
-<a name="nx-rcs-launch-nl-approval"></a>
 
 **Important**
 In addition to the console registration, you must send a proactive brand approval email. Your registration cannot be fully approved until the carriers receive your brand authorization.

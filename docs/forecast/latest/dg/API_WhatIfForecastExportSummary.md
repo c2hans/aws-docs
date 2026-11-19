@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_WhatIfForecastExp
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # WhatIfForecastExportSummary
-<a name="API_WhatIfForecastExportSummary"></a>
 
 Provides a summary of the what-if forecast export properties used in the [ListWhatIfForecastExports](API_ListWhatIfForecastExports.md) operation. To get the complete set of properties, call the [DescribeWhatIfForecastExport](API_DescribeWhatIfForecastExport.md) operation, and provide the `WhatIfForecastExportArn` that is listed in the summary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/s3-outposts-
 ---
 
 # Amazon S3 on Outposts with local Amazon EMR on Outposts
-<a name="s3-outposts-emr"></a>
 
 Amazon EMR is a managed cluster platform that simplifies running big data frameworks, such as Apache Hadoop and Apache Spark, on AWS to process and analyze vast amounts of data. By using these frameworks and related open-source projects, you can process data for analytics purposes and business intelligence workloads. Amazon EMR also helps you transform and move large amounts of data into and out of other AWS data stores and databases, and supports Amazon S3 on Outposts. For more information about Amazon EMR, see [Amazon EMR on Outposts](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-outposts.html) in the *Amazon EMR Management Guide*.
 

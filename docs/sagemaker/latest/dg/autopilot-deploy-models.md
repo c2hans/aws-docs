@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-deploy-mod
 ---
 
 # Autopilot model deployment and prediction
-<a name="autopilot-deploy-models"></a>
 
 This Amazon SageMaker Autopilot guide includes steps for model deployment, setting up real-time inference, and running inference with batch jobs.
 

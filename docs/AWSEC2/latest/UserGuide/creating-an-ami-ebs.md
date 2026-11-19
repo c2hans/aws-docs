@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-
 ---
 
 # Create an Amazon EBS-backed AMI
-<a name="creating-an-ami-ebs"></a>
 
 You can create your own Amazon EBS-backed AMI from an Amazon EC2 instance or from a snapshot of the root volume of an Amazon EC2 instance.
 

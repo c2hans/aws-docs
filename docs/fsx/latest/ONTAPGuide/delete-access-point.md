@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/delete-access-poin
 ---
 
 # Deleting an S3 access point attachment
-<a name="delete-access-point"></a>
 
 This section explains how to delete S3 access points using the AWS Management Console, AWS Command Line Interface, or REST API.
 

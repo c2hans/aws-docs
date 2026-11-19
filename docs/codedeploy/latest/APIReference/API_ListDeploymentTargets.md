@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListD
 ---
 
 # ListDeploymentTargets
-<a name="API_ListDeploymentTargets"></a>
 
  Returns an array of target IDs that are associated a deployment.
 

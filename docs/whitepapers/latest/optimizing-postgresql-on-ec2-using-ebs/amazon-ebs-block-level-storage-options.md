@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 ---
 
 # Amazon EBS block-level storage options
-<a name="amazon-ebs-block-level-storage-options"></a>
 
  Amazon EBS provides flexible, cost effective, and easy-to-use data storage options for Amazon EC2 instances. Each option has a unique combination of performance and durability. These storage options can be used independently or in combination to suit workloads' requirements.
 

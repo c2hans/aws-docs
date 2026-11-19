@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-tagremove.html
 ---
 
 # Removing tags from a certificate
-<a name="sdk-tagremove"></a>
 
 The following example shows how to use the [RemoveTagsFromCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_RemoveTagsFromCertificate.html) function.
 

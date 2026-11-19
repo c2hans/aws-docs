@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Quic
 ---
 
 # QuickSightAccessForS3StorageManagementAnalyticsReadOnly
-<a name="QuickSightAccessForS3StorageManagementAnalyticsReadOnly"></a>
 
 **Description**: Policy used by QuickSight team to access customer data produced by S3 Storage Management Analytics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_LikeExp
 ---
 
 # LikeExpression
-<a name="API_LikeExpression"></a>
 
 Specifies that a value is like the expression.
 

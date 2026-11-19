@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_R
 ---
 
 # ResponseBudgetAction
-<a name="API_ResponseBudgetAction"></a>
 
 The details of a budget action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/native-recipe-pers
 ---
 
 # Personalized-Ranking-v2 recipe
-<a name="native-recipe-personalized-ranking-v2"></a>
 
 The Personalized-Ranking-v2 recipe generates personalized rankings of items. A *personalized ranking* is a list of recommended items that are re-ranked by relevance for a specific user. This is useful if you have a collection of ordered items, such as search results, promotions, or curated lists, and you want to provide a personalized re-ranking for each of your users.
 

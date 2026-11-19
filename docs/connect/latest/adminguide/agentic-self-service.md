@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agentic-self-s
 ---
 
 # Use agentic self-service
-<a name="agentic-self-service"></a>
 
 **Tip**
 Check out this course from AWS Workshop: [Building advanced, generative AI with AI agents](https://catalog.us-east-1.prod.workshops.aws/workshops/f77f49a2-1eae-4223-a9da-7044d6da51f8/en-US/01-introduction).

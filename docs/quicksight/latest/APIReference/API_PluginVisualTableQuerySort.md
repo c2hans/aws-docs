@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Plugi
 ---
 
 # PluginVisualTableQuerySort
-<a name="API_PluginVisualTableQuerySort"></a>
 
 The table query sorting options for the plugin visual.
 

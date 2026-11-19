@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMeta
 ---
 
 # DescribeMetadataModelExportsAsScript
-<a name="API_DescribeMetadataModelExportsAsScript"></a>
 
 Returns a paginated list of metadata model export requests for a migration project, initiated by [StartMetadataModelExportAsScript](https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadataModelExportAsScript.html).
 

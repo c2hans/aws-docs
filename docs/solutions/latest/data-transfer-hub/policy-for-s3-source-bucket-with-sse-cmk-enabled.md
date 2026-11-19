@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/polic
 ---
 
 # Policy for S3 Source Bucket with SSE-CMK enabled
-<a name="policy-for-s3-source-bucket-with-sse-cmk-enabled"></a>
 
  Data Transfer Hub has native support for data source using SSE-S3 and SSE-KMS. If your source bucket enabled *SSE-CMK*, please replace the source bucket policy with the following policy, and change the `<your-bucket-name>` in the policy statement accordingly.
 

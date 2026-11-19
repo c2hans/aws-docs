@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Authoring temporal policies
-<a name="policy-temporal-authoring"></a>
 
 You author a temporal policy in the Dogwood policy language and add it to a policy engine, the same way you create any other policy for Policy in AgentCore. A temporal policy is a `permit` or `forbid` rule whose session-aware conditions are placed in a `temporal` block; the principal, action, and resource the rule applies to are written using the standard `(principal, action, resource)` scope, the same as any other policy. The following sections show how to create a temporal policy and walk through common patterns you can express.
 

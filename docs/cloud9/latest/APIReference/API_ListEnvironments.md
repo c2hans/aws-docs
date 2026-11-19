@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_ListEnvir
 ---
 
 # ListEnvironments
-<a name="API_ListEnvironments"></a>
 
 Gets a list of AWS Cloud9 development environment identifiers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ams-acceler
 ---
 
 # Resources
-<a name="resources"></a>
 + [AWS Managed Services](https://aws.amazon.com/managed-services/)
 + [AWS Managed Services features](https://aws.amazon.com/managed-services/features/)
 + [AWS Managed Services resources](https://aws.amazon.com/managed-services/resources/)

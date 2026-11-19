@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTe
 ---
 
 # ExperimentTemplateExperimentOptions
-<a name="API_ExperimentTemplateExperimentOptions"></a>
 
 Describes the experiment options for an experiment template.
 

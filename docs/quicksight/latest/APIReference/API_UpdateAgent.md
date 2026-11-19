@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateAgent
-<a name="API_UpdateAgent"></a>
 
 Updates an existing agent.
 

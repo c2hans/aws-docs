@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/engine-versions-referen
 ---
 
 # Athena engine version 3
-<a name="engine-versions-reference-0003"></a>
 
 For engine version 3, Athena has introduced a continuous integration approach to open source software management that improves concurrency with the [Trino ](https://trino.io/) and [Presto](https://prestodb.io/) projects so that you get faster access to community improvements, integrated and tuned within the Athena engine.
 

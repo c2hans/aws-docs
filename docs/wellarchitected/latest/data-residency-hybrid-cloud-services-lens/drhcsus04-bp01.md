@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCSUS04-BP01 Consider sustainable object storage options for Local Zones
-<a name="drhcsus04-bp01"></a>
 
  Amazon S3 Object storage in AWS Regions used by workloads deployed in AWS Local Zones can be optimized to use the most energy-efficient and sustainable service tiers, based on data access and resiliency requirements.
 

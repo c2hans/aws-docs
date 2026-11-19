@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GraphqlA
 ---
 
 # GraphqlApi
-<a name="API_GraphqlApi"></a>
 
 Describes a GraphQL API.
 

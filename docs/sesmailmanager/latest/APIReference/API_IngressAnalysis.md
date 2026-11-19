@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressAnalysis
-<a name="API_IngressAnalysis"></a>
 
 The Add On ARN and its returned value that is evaluated in a policy statement's conditional expression to either deny or block the incoming email.
 

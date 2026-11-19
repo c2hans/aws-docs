@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-ek
 ---
 
 # Remediating exposures for Amazon EKS clusters
-<a name="exposure-eks-cluster"></a>
 
 AWS Security Hub can generate exposure findings for Amazon Elastic Kubernetes Service (Amazon EKS) clusters.
 

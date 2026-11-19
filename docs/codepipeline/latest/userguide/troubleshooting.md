@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/troublesho
 ---
 
 # Troubleshooting CodePipeline
-<a name="troubleshooting"></a>
 
 The following information might help you troubleshoot common issues in AWS CodePipeline.
 

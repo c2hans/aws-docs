@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/associated-kms-keys
 ---
 
 # Associated KMS keys
-<a name="associated-kms-keys"></a>
 
 An *associated KMS key* is an additional customer managed KMS key that you associate with an encrypted snapshot. A principal with access to the associated KMS key can access the snapshot's data for cross-account sharing and copying, without being granted access to the existing KMS key that encrypts the snapshot. The associated KMS key does not replace or change the existing KMS key that encrypts the snapshot, it does not grant access to that key, and associating it does not re-encrypt the snapshot's data.
 

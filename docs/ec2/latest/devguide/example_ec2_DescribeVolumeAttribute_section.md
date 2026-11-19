@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_Describe
 ---
 
 # Use `DescribeVolumeAttribute` with a CLI
-<a name="example_ec2_DescribeVolumeAttribute_section"></a>
 
 The following code examples show how to use `DescribeVolumeAttribute`.
 

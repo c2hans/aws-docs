@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference
 ---
 
 # Create a batch inference job
-<a name="batch-inference-create"></a>
 
 After you've set up an Amazon S3 bucket with files for running model inference, you can create a batch inference job. Before you begin, check that you set up the files in accordance with the instructions described in [Format and upload your batch inference data](batch-inference-data.md).
 

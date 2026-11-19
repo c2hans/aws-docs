@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateHubContentReference
-<a name="API_CreateHubContentReference"></a>
 
 Create a hub content reference in order to add a model in the JumpStart public hub to a private hub.
 

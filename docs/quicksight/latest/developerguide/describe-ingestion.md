@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/describ
 ---
 
 # DescribeIngestion
-<a name="describe-ingestion"></a>
 
 Use the `DescribeIngestion` operation to describe a SPICE ingestion.
 

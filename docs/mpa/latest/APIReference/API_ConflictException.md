@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ConflictExce
 ---
 
 # ConflictException
-<a name="API_ConflictException"></a>
 
 The request cannot be completed because it conflicts with the current state of a resource.
 

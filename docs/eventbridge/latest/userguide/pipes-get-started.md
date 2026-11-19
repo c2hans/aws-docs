@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/pipes-get-s
 ---
 
 # Getting started: Create an Amazon EventBridge pipe
-<a name="pipes-get-started"></a>
 
 To get familiar with pipes and their capabilities, we'll use a CloudFormation template to set up an EventBridge pipe and associated components. Then we can explore various pipe features.
 

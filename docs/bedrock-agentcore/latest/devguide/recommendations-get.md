@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/recomm
 ---
 
 # Get recommendation
-<a name="recommendations-get"></a>
 
 Retrieve the status and results of a recommendation. Poll this operation until the recommendation reaches a terminal state (`COMPLETED` or `FAILED`).
 

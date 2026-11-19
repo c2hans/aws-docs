@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/tag-proje
 ---
 
 # Add or remove tags from a project
-<a name="tag-project"></a>
 
 Project tags will assign tags to all instances created under that project.
 

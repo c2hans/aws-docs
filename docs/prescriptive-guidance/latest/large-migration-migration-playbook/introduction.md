@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Migration playbook for AWS large migrations
-<a name="introduction"></a>
 
 *Wally Lu, Chris Baker, Tuhin Mukherjee, and Senay Swinney, Amazon Web Services*
 

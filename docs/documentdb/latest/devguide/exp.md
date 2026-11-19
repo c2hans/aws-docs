@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/exp.html
 ---
 
 # $exp
-<a name="exp"></a>
 
 New from version 4.0
 

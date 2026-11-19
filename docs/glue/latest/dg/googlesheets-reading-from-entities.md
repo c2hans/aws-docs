@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googlesheets-reading-from
 ---
 
 # Reading from Google Sheets entities
-<a name="googlesheets-reading-from-entities"></a>
 
  **Prerequisites**
 +  A Google SpreadSheet that you would like to read from. You will need the SpreadSheet ID and tabName of the spreadsheet.

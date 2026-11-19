@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Dev
 ---
 
 # DevEnvironmentSessionSummary
-<a name="API_DevEnvironmentSessionSummary"></a>
 
 Information about active sessions for a Dev Environment.
 

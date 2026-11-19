@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # GetProfileResourceAssociation
-<a name="API_route53profiles_GetProfileResourceAssociation"></a>
 
  Returns information about a specified Route 53 Profile resource association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/creati
 ---
 
 # Configure Application Auto Scaling resources using AWS CloudFormation
-<a name="creating-resources-with-cloudformation"></a>
 
 Application Auto Scaling is integrated with AWS CloudFormation, a service that helps you to model and set up your AWS resources so that you can spend less time creating and managing your resources and infrastructure. You create a template that describes all the AWS resources that you want, and CloudFormation provisions and configures those resources for you.
 

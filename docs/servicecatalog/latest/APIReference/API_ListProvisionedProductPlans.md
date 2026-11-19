@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListProvisionedProductPlans
-<a name="API_ListProvisionedProductPlans"></a>
 
 Lists the plans for the specified provisioned product or all plans to which the user has access.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/a
 ---
 
 # Artificial intelligence in the public sector
-<a name="artificial-intelligence-in-the-public-sector"></a>
 
  Artificial intelligence (AI) provides significant opportunities for better public policy and services that deliver more equitable and scalable support for the community. But poorly designed AI systems can similarly create difficulty at a scale not possible in other sectors due to the special context of government. For this reason, careful design and governance of AI in government, including in the context of usage patterns and public impact, is critical for maintaining responsible and trustworthy AI systems in government.
 

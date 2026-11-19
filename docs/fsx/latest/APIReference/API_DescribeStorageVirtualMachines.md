@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeStor
 ---
 
 # DescribeStorageVirtualMachines
-<a name="API_DescribeStorageVirtualMachines"></a>
 
 Describes one or more Amazon FSx for NetApp ONTAP storage virtual machines (SVMs).
 

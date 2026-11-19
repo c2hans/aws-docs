@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/create-a-data-set
 ---
 
 # Creating a dataset from Salesforce
-<a name="create-a-data-set-salesforce"></a>
 
 Use the following procedure to create a dataset by connecting to Salesforce and selecting a report or object to provide data.
 

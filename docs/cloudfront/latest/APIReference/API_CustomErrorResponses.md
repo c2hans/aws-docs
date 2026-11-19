@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Custo
 ---
 
 # CustomErrorResponses
-<a name="API_CustomErrorResponses"></a>
 
 A complex type that controls:
 + Whether CloudFront replaces HTTP status codes in the 4xx and 5xx range with custom error messages before returning the response to the viewer.

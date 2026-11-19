@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/airship-connection-option
 ---
 
 # Airship connection options
-<a name="airship-connection-options"></a>
 
 The following are connection options for Airship:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Airship object to read.

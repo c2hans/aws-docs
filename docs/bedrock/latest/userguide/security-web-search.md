@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/security-web-se
 ---
 
 # Identity and access management for Web Search
-<a name="security-web-search"></a>
 
 Web Search on Amazon Bedrock uses AWS Identity and Access Management (IAM) to control who can run searches and fetches and in which Regions. This page describes the service's IAM prefix, actions, AWS managed policies, condition keys, example policies, and the controls administrators use to disable Web Search.
 

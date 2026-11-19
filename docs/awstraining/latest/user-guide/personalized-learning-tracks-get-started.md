@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awstraining/latest/user-guide/personaliz
 ---
 
 # Get started
-<a name="personalized-learning-tracks-get-started"></a>
 
 This section describes how personalized learning tracks work and how to build your first learning track.
 

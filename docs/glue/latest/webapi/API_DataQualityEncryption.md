@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityEncryp
 ---
 
 # DataQualityEncryption
-<a name="API_DataQualityEncryption"></a>
 
 Specifies how Data Quality assets in your account should be encrypted.
 

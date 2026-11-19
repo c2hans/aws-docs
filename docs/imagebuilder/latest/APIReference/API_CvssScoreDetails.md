@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cvs
 ---
 
 # CvssScoreDetails
-<a name="API_CvssScoreDetails"></a>
 
 Details about the source of the score, and the factors that determined the adjustments to create the final score.
 

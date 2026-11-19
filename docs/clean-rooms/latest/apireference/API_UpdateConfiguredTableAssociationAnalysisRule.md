@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateConfiguredTableAssociationAnalysisRule
-<a name="API_UpdateConfiguredTableAssociationAnalysisRule"></a>
 
  Updates the analysis rule for a configured table association.
 

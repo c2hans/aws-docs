@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/actions-list.html
 ---
 
 # Reference: API actions by category
-<a name="actions-list"></a>
 
 ## Common actions
 <a name="actions-list-common"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ProductViewAggregationValue
-<a name="API_ProductViewAggregationValue"></a>
 
 A single product view aggregation value/count pair, containing metadata about each product to which the calling user has access.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/vpc-creating-a-qu
 ---
 
 # Testing the connection to your VPC data source
-<a name="vpc-creating-a-quicksight-data-source-profile"></a>
 
 |  |
 | --- |

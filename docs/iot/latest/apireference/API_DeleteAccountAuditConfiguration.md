@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteAccoun
 ---
 
 # DeleteAccountAuditConfiguration
-<a name="API_DeleteAccountAuditConfiguration"></a>
 
 Restores the default settings for Device Defender audits for this account. Any configuration data you entered is deleted and all audit checks are reset to disabled.
 

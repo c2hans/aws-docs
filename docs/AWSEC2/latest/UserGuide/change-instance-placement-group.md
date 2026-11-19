@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-instance-
 ---
 
 # Change the placement for an EC2 instance
-<a name="change-instance-placement-group"></a>
 
 You can change the placement group for an instance as follows:
 + Add an instance to a placement group

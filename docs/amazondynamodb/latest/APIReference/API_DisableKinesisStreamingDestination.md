@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DisableKinesisStreamingDestination
-<a name="API_DisableKinesisStreamingDestination"></a>
 
 Stops replication from the DynamoDB table to the Kinesis data stream. This is done without deleting either of the resources.
 

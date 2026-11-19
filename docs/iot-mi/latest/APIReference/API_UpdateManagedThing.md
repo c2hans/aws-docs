@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UpdateMan
 ---
 
 # UpdateManagedThing
-<a name="API_UpdateManagedThing"></a>
 
 Update the attributes and capabilities associated with a managed thing.
 

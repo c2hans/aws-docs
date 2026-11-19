@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/open
 ---
 
 # OpenPGP key for the AWS SDK for Java
-<a name="openpgp"></a>
 
 All publicly available Maven artifacts for the AWS SDK for Java are signed using the OpenPGP standard. The public key that you need to verify the signature of an artifact is available in the following section.
 

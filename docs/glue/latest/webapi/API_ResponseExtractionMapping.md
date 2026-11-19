@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ResponseExtractio
 ---
 
 # ResponseExtractionMapping
-<a name="API_ResponseExtractionMapping"></a>
 
 Configuration that defines how to extract values from HTTP response content or headers for use in subsequent requests or parameter mapping.
 

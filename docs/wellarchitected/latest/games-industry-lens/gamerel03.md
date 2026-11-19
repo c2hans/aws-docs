@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Failure management
-<a name="gamerel03"></a>
 
 |  GAMEREL03: How do you persist game state during infrastructure disruptions?  |
 | --- |

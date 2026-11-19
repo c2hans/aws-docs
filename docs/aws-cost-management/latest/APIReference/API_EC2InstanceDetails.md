@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EC2InstanceDetails
-<a name="API_EC2InstanceDetails"></a>
 
 Details about the Amazon EC2 reservations that AWS recommends that you purchase.
 

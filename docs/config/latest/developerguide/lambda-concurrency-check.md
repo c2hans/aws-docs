@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/lambda-conc
 ---
 
 # lambda-concurrency-check
-<a name="lambda-concurrency-check"></a>
 
 Checks if the Lambda function is configured with a function-level concurrent execution limit. The rule is NON\_COMPLIANT if the Lambda function is not configured with a function-level concurrent execution limit.
 

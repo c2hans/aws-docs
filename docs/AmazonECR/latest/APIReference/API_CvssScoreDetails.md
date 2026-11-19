@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_CvssSc
 ---
 
 # CvssScoreDetails
-<a name="API_CvssScoreDetails"></a>
 
 Information about the CVSS score.
 

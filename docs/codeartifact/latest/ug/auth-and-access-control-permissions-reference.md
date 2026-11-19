@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/auth-and-access-c
 ---
 
 # AWS CodeArtifact permissions reference
-<a name="auth-and-access-control-permissions-reference"></a>
 
 ## AWS CodeArtifact resources and operations
 <a name="arn-formats"></a>

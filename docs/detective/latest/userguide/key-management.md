@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/key-managemen
 ---
 
 # Key management for Amazon Detective
-<a name="key-management"></a>
 
 Because Detective does not store any personally identifiable customer data, it uses AWS managed keys.
 

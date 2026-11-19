@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/restrict-ac
 ---
 
 # Restrict user access to certain notebook instances
-<a name="restrict-access-notebook-instances"></a>
 
 To restrict access for certain users to specific Braket notebook instances, you can add a *deny permissions* policy to a specific role, user, or group.
 

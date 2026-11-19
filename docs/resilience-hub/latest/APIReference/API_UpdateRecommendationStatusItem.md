@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_U
 ---
 
 # UpdateRecommendationStatusItem
-<a name="API_UpdateRecommendationStatusItem"></a>
 
 Defines the operational recommendation item that needs a status update.
 

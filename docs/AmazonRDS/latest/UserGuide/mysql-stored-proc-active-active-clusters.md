@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-stored-
 ---
 
 # Managing active-active clusters
-<a name="mysql-stored-proc-active-active-clusters"></a>
 
 The following stored procedures set up and manage RDS for MySQL active-active clusters. For more information, see [Configuring active-active clusters for RDS for MySQL](mysql-active-active-clusters.md).
 

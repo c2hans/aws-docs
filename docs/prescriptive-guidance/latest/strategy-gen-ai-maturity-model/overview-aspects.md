@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Aspects of generative AI maturity
-<a name="overview-aspects"></a>
 
 The successful adoption of generative AI requires a holistic understanding of multiple organizational dimensions. This section examines four key aspects that organizations must consider and develop throughout their maturity journey: the fundamental pillars that support AI adoption, the focus areas that guide strategic priorities, the key activities that drive implementation, and the transformation strategy that guides the organization's maturity advancement. Together, these aspects provide a comprehensive framework for assessing and advancing generative AI capabilities. Organizations can use this framework to identify gaps, prioritize investments, and create actionable plans for progression through the maturity levels. Each aspect has been chosen based on extensive field experience with enterprise AI adoption. They reflect the critical elements that distinguish successful implementations from unsuccessful ones.
 

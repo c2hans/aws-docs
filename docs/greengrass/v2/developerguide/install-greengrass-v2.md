@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/install-gre
 ---
 
 # Step 3: Install the AWS IoT Greengrass Core software
-<a name="install-greengrass-v2"></a>
 
 **Tip**
 We recommend you try out [AWS IoT Greengrass AI Agents Context Pack](https://github.com/aws-greengrass/greengrass-agent-context-pack) to quickly set up and experiment with AWS IoT Greengrass. The agent context pack will enable AI agents to set up Greengrass Nucleus and Nucleus Lite, deploy components, and troubleshoot common issues.

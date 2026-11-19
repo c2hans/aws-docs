@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/autosca
 ---
 
 # Scaling Concepts for Amazon WorkSpaces Applications
-<a name="autoscaling-concepts"></a>
 
 WorkSpaces Applications scaling is provided by Application Auto Scaling. For more information, see the [Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/).
 

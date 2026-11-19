@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ident-amazon-linux-speci
 ---
 
 # Amazon Linux-specific identification
-<a name="ident-amazon-linux-specific"></a>
 
  Some files are specific to Amazon Linux and can identify Amazon Linux and its version. For new code, use the [`/etc/os-release`](ident-os-release.md) standard for cross-distribution compatibility, and avoid the Amazon Linux-specific files.
 

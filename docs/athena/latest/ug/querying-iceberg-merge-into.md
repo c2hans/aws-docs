@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-merge-
 ---
 
 # MERGE INTO
-<a name="querying-iceberg-merge-into"></a>
 
 Conditionally updates, deletes, or inserts rows into an Iceberg table. A single statement can combine update, delete, and insert actions. For syntax, see [MERGE INTO](merge-into-statement.md).
 

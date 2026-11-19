@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_CreateTags.h
 ---
 
 # CreateTags
-<a name="API_CreateTags"></a>
 
 **Note**
 DEPRECATED - `CreateTags` is deprecated and not maintained. To create tags for EFS resources, use the [TagResource](API_TagResource.md) API action.

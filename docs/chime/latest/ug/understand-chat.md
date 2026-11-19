@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/understand-chat.html
 ---
 
 # Understanding the chat window
-<a name="understand-chat"></a>
 
 If you're new to Amazon Chime this section introduces you to Amazon Chime's chat features. Expand each section to learn more.
 

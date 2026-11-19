@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Scale Amazon ECS services based on an Amazon SQS queue
-<a name="service-autoscaling-queue"></a>
 
 You can scale your Amazon ECS service in response to the load in an Amazon Simple Queue Service (Amazon SQS) queue. This is useful for asynchronous applications in which the tasks in your service act as workers that consume and process messages from a queue. As the rate of incoming messages changes, Amazon ECS Service Auto Scaling adds tasks when the queue builds up and removes tasks when it drains. This keeps latency for messages waiting in the queue at an acceptable level without over-provisioning.
 

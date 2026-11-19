@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/create-a-vpc-with-p
 ---
 
 # Create a VPC with private subnets and NAT gateways using AWS CLI
-<a name="create-a-vpc-with-private-subnets-and-nat-gateways-using-aws-cli"></a>
 
 This tutorial demonstrates how to create a VPC that you can use for servers in a production environment using the AWS CLI. To improve resiliency, you'll deploy servers in two Availability Zones, using an Auto Scaling group and an Application Load Balancer. For additional security, you'll deploy the servers in private subnets. The servers will receive requests through the load balancer and can connect to the internet using NAT gateways. To improve resiliency, you'll deploy a NAT gateway in each Availability Zone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ListEnvironm
 ---
 
 # ListEnvironmentVlans
-<a name="API_ListEnvironmentVlans"></a>
 
 Lists environment VLANs that are associated with the specified environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sample-ctr.htm
 ---
 
 # View a contact record in the Connect Customer admin website
-<a name="sample-ctr"></a>
 
 1. Do a [contact search](contact-search.md). A list of contact IDs will be returned.
 

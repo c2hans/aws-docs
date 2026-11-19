@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/copy-image
 ---
 
 # Copying an image set
-<a name="copy-image-set"></a>
 
 Use the `CopyImageSet` action to copy an [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. You use this asynchronous process to copy the contents of an image set into a new or existing image set. You can copy into a *new* image set to split an image set, as well as to create a separate copy. You can also copy into an *existing* image set to merge two image sets together. For more information, see [`CopyImageSet`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_CopyImageSet.html) in the *AWS HealthImaging API Reference*.
 

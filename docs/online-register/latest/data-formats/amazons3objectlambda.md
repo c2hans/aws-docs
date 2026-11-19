@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon S3 Object Lambda
-<a name="amazons3objectlambda"></a>
 
 Amazon S3 Object Lambda provides the following APIs for data retrieval.
 

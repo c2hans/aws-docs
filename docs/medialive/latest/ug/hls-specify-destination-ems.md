@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-specify-destinat
 ---
 
 # Complete the fields on the console
-<a name="hls-specify-destination-ems"></a>
 
 After you have designed the output names and destination paths, you can set up the HLS output group.
 

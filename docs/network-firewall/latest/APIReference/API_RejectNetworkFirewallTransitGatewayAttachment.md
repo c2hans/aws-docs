@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # RejectNetworkFirewallTransitGatewayAttachment
-<a name="API_RejectNetworkFirewallTransitGatewayAttachment"></a>
 
 Rejects a transit gateway attachment request for Network Firewall. When you reject the attachment request, Network Firewall cancels the creation of routing components between the transit gateway and firewall endpoints.
 

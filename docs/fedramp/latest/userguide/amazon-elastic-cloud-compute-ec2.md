@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/amazon-elastic-
 ---
 
 # Amazon Elastic Compute Cloud (EC2)
-<a name="amazon-elastic-cloud-compute-ec2"></a>
 
 This guide provides security configuration requirements and implementation examples for Amazon Elastic Compute Cloud (EC2) in accordance with FedRAMP requirements.
 

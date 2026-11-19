@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-inferenti
 ---
 
 # Using PyTorch-Neuron and the AWS Neuron Compiler
-<a name="tutorial-inferentia-pytorch-neuron"></a>
 
 The PyTorch-Neuron compilation API provides a method to compile a model graph that you can run on an AWS Inferentia device.
 

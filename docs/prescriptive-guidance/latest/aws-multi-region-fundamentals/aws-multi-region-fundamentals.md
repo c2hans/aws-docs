@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-multi-r
 ---
 
 # AWS multi-Region fundamentals
-<a name="aws-multi-region-fundamentals"></a>
 
 *John Formento, Amazon Web Services*
 

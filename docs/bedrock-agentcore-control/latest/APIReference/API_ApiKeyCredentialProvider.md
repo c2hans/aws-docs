@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ApiKeyCredentialProvider
-<a name="API_ApiKeyCredentialProvider"></a>
 
 An API key credential provider for gateway authentication. This structure contains the configuration for authenticating with the target endpoint using an API key.
 

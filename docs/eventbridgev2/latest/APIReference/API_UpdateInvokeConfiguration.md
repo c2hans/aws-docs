@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Up
 ---
 
 # UpdateInvokeConfiguration
-<a name="API_UpdateInvokeConfiguration"></a>
 
 Update-able configuration for how the subscriber invokes its target.
 

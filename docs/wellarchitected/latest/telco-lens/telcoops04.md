@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoo
 ---
 
 # IP address representation and management
-<a name="telcoops04"></a>
 
 |  TELCOOPS04: How do you represent IP addresses to the internet and verify the quality of the address representation?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/getting-st
 ---
 
 # Expectations for landing zone configuration
-<a name="getting-started-configure"></a>
 
 The process of setting up your AWS Control Tower landing zone has multiple steps. Certain aspects of your AWS Control Tower landing zone are configurable. Other choices cannot be changed after setup.
 

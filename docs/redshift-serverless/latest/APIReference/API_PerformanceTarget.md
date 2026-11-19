@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # PerformanceTarget
-<a name="API_PerformanceTarget"></a>
 
 An object that represents the price performance target settings for the workgroup.
 

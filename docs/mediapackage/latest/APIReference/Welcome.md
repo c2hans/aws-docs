@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/Welcome
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 **Note**
 This guide is intended for creating AWS Elemental MediaPackage resources in MediaPackage Version 2 (v2) starting from May 2023. To get started with MediaPackage v2, create your MediaPackage resources. There isn't an automated process to migrate your resources from MediaPackage v1 to MediaPackage v2.
@@ -14,4 +13,4 @@ This is the AWS Elemental MediaPackage v2 Live REST API Reference. It describes 
 
 We assume that you have the IAM permissions that you need to use MediaPackage via the REST API. We also assume that you are familiar with the features and operations of MediaPackage, as described in the AWS Elemental MediaPackage User Guide.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

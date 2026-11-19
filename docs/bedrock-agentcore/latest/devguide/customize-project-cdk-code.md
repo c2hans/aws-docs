@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/custom
 ---
 
 # Customize the project’s CDK code
-<a name="customize-project-cdk-code"></a>
 
 The AgentCore CLI manages your project’s AWS resources with AWS CDK constructs from the `@aws/agentcore-cdk` package. The resources you declare in `agentcore/agentcore.json` are created by the `AgentCoreApplication` construct. To add other AWS resources, permissions, or configuration, edit the generated CDK stack in `agentcore/cdk/lib/cdk-stack.ts`.
 

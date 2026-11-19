@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-encrypte
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Encrypted container images
-<a name="sandboxing-encrypted-images"></a>
 
 Container image layers are visible to the parent instance unless encrypted. Encrypted images follow the OCI image encryption specification. Only layers are encrypted. The manifest and image config remain in plaintext so that registries and container runtimes can inspect them. When a pod uses an encrypted image, the parent instance transfers the encrypted layer blobs into the Nitro Sandbox. The sandbox unwraps the symmetric key by using AWS KMS and decrypts each layer before unpacking it.
 

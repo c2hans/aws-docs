@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListCollaborationTrainedModelExportJobs
-<a name="API_ListCollaborationTrainedModelExportJobs"></a>
 
 Returns a list of the export jobs for a trained model in a collaboration.
 

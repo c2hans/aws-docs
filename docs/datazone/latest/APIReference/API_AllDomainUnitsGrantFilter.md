@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AllDoma
 ---
 
 # AllDomainUnitsGrantFilter
-<a name="API_AllDomainUnitsGrantFilter"></a>
 
 The grant filter for all domain units.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AtlassianOauth2ProviderConfigInput
-<a name="API_AtlassianOauth2ProviderConfigInput"></a>
 
 Configuration settings for connecting to Atlassian services using OAuth2 authentication. This includes the client credentials required to authenticate with Atlassian's OAuth2 authorization server.
 

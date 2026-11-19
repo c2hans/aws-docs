@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_SetInst
 ---
 
 # SetInstanceProtection
-<a name="API_SetInstanceProtection"></a>
 
 Updates the instance protection settings of the specified instances. This operation cannot be called on instances in a warm pool.
 

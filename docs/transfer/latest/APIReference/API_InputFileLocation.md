@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_InputFi
 ---
 
 # InputFileLocation
-<a name="API_InputFileLocation"></a>
 
 Specifies the location for the file that's being processed.
 

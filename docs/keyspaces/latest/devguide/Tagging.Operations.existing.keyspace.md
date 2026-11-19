@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/Tagging.Operat
 ---
 
 # Add tags to a keyspace
-<a name="Tagging.Operations.existing.keyspace"></a>
 
 The following examples show how to add tags to a keyspace in Amazon Keyspaces.
 

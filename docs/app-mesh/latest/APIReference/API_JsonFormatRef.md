@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_JsonFor
 ---
 
 # JsonFormatRef
-<a name="API_JsonFormatRef"></a>
 
 An object that represents the key value pairs for the JSON.
 

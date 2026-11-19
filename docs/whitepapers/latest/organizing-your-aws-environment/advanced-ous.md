@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Advanced OUs
-<a name="advanced-ous"></a>
 
 ## Individual Business Users OU
 <a name="individual-business-users-ou"></a>

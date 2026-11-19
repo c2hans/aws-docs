@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartC
 ---
 
 # StartClusterHealthCheck
-<a name="API_StartClusterHealthCheck"></a>
 
 Start deep health checks for a SageMaker HyperPod cluster. You can use [DescribeClusterNode](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeClusterNode.html) API to track progress of the deep health checks. The unhealthy nodes will be automatically rebooted or replaced. Please see [ Resilience-related Kubernetes labels by SageMaker HyperPod](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-eks-resiliency-node-labels.html) for details.
 

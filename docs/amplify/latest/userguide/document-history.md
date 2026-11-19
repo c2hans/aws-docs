@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/document-histor
 ---
 
 # Document history for AWS Amplify
-<a name="document-history"></a>
 
 The following table describes the important changes to the documentation since the last release of AWS Amplify.
 + **Latest documentation update: **May 4, 2026

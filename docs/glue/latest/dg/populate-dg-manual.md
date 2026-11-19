@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/populate-dg-manual.html
 ---
 
 # Defining metadata manually
-<a name="populate-dg-manual"></a>
 
  The AWS Glue Data Catalog is a central repository that stores metadata about your data sources and data sets. While a crawler can automatically crawl and populate metadata for supported data sources, there are certain scenarios where you may need to define metadata manually in the Data Catalog:
 + Unsupported data formats – If you have data sources that are not supported by the crawler, you need to manually define the metadata for those data sources in the Data Catalog.

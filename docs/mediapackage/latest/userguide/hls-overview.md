@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/hls-overvi
 ---
 
 # HLS and LL-HLS in AWS Elemental MediaPackage
-<a name="hls-overview"></a>
 
 MediaPackage supports HTTP Live Streaming (HLS) and Low-Latency HLS (LL-HLS) for delivering content to a wide range of devices, particularly Apple devices and browsers. HLS is one of the most widely supported adaptive bitrate streaming protocols, while LL-HLS extends the standard HLS protocol to provide reduced latency for near real-time streaming experiences.
 

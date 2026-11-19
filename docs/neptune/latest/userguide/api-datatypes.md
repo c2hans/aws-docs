@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-datatypes.h
 ---
 
 # Common Neptune Datatypes
-<a name="api-datatypes"></a>
 
 **Structures:**
 + [AvailabilityZone (structure)](#AvailabilityZone)

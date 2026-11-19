@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AssociateSourceViews
-<a name="API_billing_AssociateSourceViews"></a>
 
  Associates one or more source billing views with an existing billing view. This allows creating aggregate billing views that combine data from multiple sources.
 

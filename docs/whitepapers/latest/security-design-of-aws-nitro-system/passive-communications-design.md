@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # Passive communications design
-<a name="passive-communications-design"></a>
 
  The AWS Nitro System follows a “passive communication” design principle. What that means is that during production operation, components of the system never initiate outbound communication including to any control plane, management, or cloud service. Instead, there is a single hardened trusted service listening on the network, they listen for commands on the network or system bus, take action based on those commands, and then return results—all through well-defined APIs with scoped-down access controls. Both sides of these communication paths also perform parameter validation to ensure that only valid parameters are sent and received.
 

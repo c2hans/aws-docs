@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Development metrics related to network access for SaaS offerings
-<a name="assessment-engineering-dev"></a>
 
 ## Deployment frequency, time to deploy, and sprint velocity
 <a name="assessment-engineering-dev-velocity"></a>

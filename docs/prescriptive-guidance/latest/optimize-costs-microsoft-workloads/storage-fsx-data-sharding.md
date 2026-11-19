@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Understand data sharding in FSx for Windows File Server
-<a name="storage-fsx-data-sharding"></a>
 
 ## Overview
 <a name="storage-fsx-data-sharding-overview"></a>

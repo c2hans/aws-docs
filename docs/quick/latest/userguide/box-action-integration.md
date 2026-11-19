@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/box-action-integr
 ---
 
 # Box action integration
-<a name="box-action-integration"></a>
 
 With the Box connector, you can access Box AI features, manage files and folders, and organize content in hubs directly in AWS Quick through natural language.
 

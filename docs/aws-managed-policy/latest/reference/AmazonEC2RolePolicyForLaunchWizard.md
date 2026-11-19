@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2RolePolicyForLaunchWizard
-<a name="AmazonEC2RolePolicyForLaunchWizard"></a>
 
 **Description**: Managed policy for the Amazon LaunchWizard service role for EC2
 

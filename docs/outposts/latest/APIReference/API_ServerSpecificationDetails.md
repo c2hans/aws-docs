@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_ServerS
 ---
 
 # ServerSpecificationDetails
-<a name="API_ServerSpecificationDetails"></a>
 
 The physical specification details for a server in a quote option.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Indica
 ---
 
 # Indicator
-<a name="API_Indicator"></a>
 
 Detective investigations triages indicators of compromises such as a finding and surfaces only the most critical and suspicious issues, so you can focus on high-level investigations. An `Indicator` lets you determine if an AWS resource is involved in unusual activity that could indicate malicious behavior and its impact.
 

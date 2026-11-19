@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_List
 ---
 
 # ListConfigurations
-<a name="API_ListConfigurations"></a>
 
 Returns configurations deployed by Quick Setup in the requesting AWS account and AWS Region.
 

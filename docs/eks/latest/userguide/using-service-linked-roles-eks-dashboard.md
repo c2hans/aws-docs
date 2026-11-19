@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/using-service-linke
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Using roles for Amazon EKS Dashboard
-<a name="using-service-linked-roles-eks-dashboard"></a>
 
 The Amazon EKS Dashboard uses this service-linked role to aggregate information about cluster resources from multiple regions and accounts. The dashboard integrates with AWS Organizations to securely read information about multiple accounts in your organization.
 

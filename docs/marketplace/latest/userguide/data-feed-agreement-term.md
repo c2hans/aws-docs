@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-a
 ---
 
 # Agreement Term data feed
-<a name="data-feed-agreement-term"></a>
 
 This data feed provides an overview about the agreement term associated with an agreement created by you as the seller of record.
 

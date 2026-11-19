@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IamInstan
 ---
 
 # IamInstanceProfile
-<a name="API_IamInstanceProfile"></a>
 
 Describes an IAM instance profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/id3-metadata.html
 ---
 
 # Working with ID3 metadata
-<a name="id3-metadata"></a>
 
 In MediaLive, you can include ID3 metadata in the following types of output groups:
 + Archive

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CreatePodIde
 ---
 
 # CreatePodIdentityAssociation
-<a name="API_CreatePodIdentityAssociation"></a>
 
 Creates an EKS Pod Identity association between a service account in an Amazon EKS cluster and an IAM role with *EKS Pod Identity*. Use EKS Pod Identity to give temporary IAM credentials to Pods and the credentials are rotated automatically.
 

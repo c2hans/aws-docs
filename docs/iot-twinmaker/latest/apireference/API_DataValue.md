@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Da
 ---
 
 # DataValue
-<a name="API_DataValue"></a>
 
 An object that specifies a value for a property.
 
@@ -34,7 +33,7 @@ Required: No
 
  ** listValue **   <a name="tm-Type-DataValue-listValue"></a>
 A list of multiple values.
-Type: Array of [DataValue](#API_DataValue) objects
+Type: Array of [DataValue](API_DataValue.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: No
 
@@ -45,7 +44,7 @@ Required: No
 
  ** mapValue **   <a name="tm-Type-DataValue-mapValue"></a>
 An object that maps strings to multiple `DataValue` objects.
-Type: String to [DataValue](#API_DataValue) object map
+Type: String to [DataValue](API_DataValue.md) object map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 256.
 Key Pattern: `.*`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # InstanceCredentials
-<a name="API_InstanceCredentials"></a>
 
 A set of credentials that allow remote access to an instance in an EC2 managed fleet. These credentials are returned in response to a call to [https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetInstanceAccess](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetInstanceAccess), which requests access for instances that are running game servers with the Amazon GameLift Servers server SDK version 4.x or earlier.
 

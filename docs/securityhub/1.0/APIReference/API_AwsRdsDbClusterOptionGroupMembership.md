@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbClusterOptionGroupMembership
-<a name="API_AwsRdsDbClusterOptionGroupMembership"></a>
 
 Information about an option group membership for a DB cluster.
 

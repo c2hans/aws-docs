@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/tag-permission
 ---
 
 # Controlling access to tags
-<a name="tag-permissions"></a>
 
 To add, view, and delete tags, either in the AWS KMS console or by using the API, principals need tagging permissions. You can provide these permissions in [key policies](key-policies.md). You can also provide them in IAM policies (including [VPC endpoint policies](https://docs.aws.amazon.com/vpc/latest/privatelink/interface-endpoints.html#edit-vpc-endpoint-policy)), but only if [the key policy allows it](key-policy-default.md#allow-iam-policies). The [AWSKeyManagementServicePowerUser](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSKeyManagementServicePowerUser) managed policy allows principals to tag, untag, and list tags on all KMS keys the account can access.
 

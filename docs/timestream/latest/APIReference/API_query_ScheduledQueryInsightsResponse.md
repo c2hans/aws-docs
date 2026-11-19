@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ScheduledQueryInsightsResponse
-<a name="API_query_ScheduledQueryInsightsResponse"></a>
 
 Provides various insights and metrics related to the `ExecuteScheduledQueryRequest` that was executed.
 

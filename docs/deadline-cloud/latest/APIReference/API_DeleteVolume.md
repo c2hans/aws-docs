@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteVolume
-<a name="API_DeleteVolume"></a>
 
 Deletes a persistent volume.
 

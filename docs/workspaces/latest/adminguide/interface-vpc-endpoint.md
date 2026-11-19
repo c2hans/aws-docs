@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/interface-v
 ---
 
 # Make Amazon WorkSpaces API requests through a VPC interface endpoint
-<a name="interface-vpc-endpoint"></a>
 
 You can connect directly to Amazon WorkSpaces API endpoints through an [interface endpoint](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html) in your virtual private cloud (VPC) instead of connecting over the internet. When you use a VPC interface endpoint, communication between your VPC and the Amazon WorkSpaces API endpoint is conducted entirely and securely within the AWS network.
 

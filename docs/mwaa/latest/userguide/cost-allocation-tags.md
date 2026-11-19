@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/cost-allocation-ta
 ---
 
 # Cost allocation tags in Amazon MWAA
-<a name="cost-allocation-tags"></a>
 
 A cost allocation tag is a key-value pair that you attach to an Amazon MWAA environment. After you activate a tag, AWS groups the environment's charges under that tag in your cost reports. You can then attribute the cost of each environment to a team, project, or cost center.
 

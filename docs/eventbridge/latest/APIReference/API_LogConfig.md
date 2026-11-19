@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_LogC
 ---
 
 # LogConfig
-<a name="API_LogConfig"></a>
 
 The logging configuration settings for the event bus.
 

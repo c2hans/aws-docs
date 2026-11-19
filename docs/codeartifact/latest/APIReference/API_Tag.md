@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Tag
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag is a key-value pair that can be used to manage, search for, or filter resources in AWS CodeArtifact.
 

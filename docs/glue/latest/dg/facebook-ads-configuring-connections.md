@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/facebook-ads-configuring-
 ---
 
 # Configuring Facebook Ads connections
-<a name="facebook-ads-configuring-connections"></a>
 
 Facebook Ads supports the AUTHORIZATION\_CODE grant type for OAuth2.
 + This grant type is considered three-legged OAuth as it relies on redirecting users to the third-party authorization server to authenticate the user. It is used when creating connections via the AWS Glue console.

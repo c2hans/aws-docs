@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_rol
 ---
 
 # Overview of role templates
-<a name="id_roles_create_role-template"></a>
 
 A role template is a role blueprint used to create new roles. The template sets the role's trust policy and permissions so you get a ready-to-use role for a service without writing the policies yourself.
 

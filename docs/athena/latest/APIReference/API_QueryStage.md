@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryStag
 ---
 
 # QueryStage
-<a name="API_QueryStage"></a>
 
 Stage statistics such as input and output rows and bytes, execution time and stage state. This information also includes substages and the query stage plan.
 
@@ -52,7 +51,7 @@ Required: No
 
  ** SubStages **   <a name="athena-Type-QueryStage-SubStages"></a>
 List of sub query stages that form this stage execution plan.
-Type: Array of [QueryStage](#API_QueryStage) objects
+Type: Array of [QueryStage](API_QueryStage.md) objects
 Required: No
 
 ## See Also

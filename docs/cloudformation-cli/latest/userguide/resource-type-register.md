@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Registering extensions for use in the CloudFormation registry
-<a name="resource-type-register"></a>
 
 Once you've completed developing your extension, you'll need to *register* it with CloudFormation to make it available for use in the CloudFormation registry. From the CloudFormation CLI, use the `submit` command to register your extension with CloudFormation. You can also register your resource directly using the [register-type](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/register-type.html) operation.
 

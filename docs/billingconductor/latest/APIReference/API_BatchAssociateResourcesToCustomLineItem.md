@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # BatchAssociateResourcesToCustomLineItem
-<a name="API_BatchAssociateResourcesToCustomLineItem"></a>
 
  Associates a batch of resources to a percentage custom line item.
 

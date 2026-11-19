@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # Databases
-<a name="databases"></a>
 
  Managing SQL Server costs effectively is crucial for organizations running Microsoft workloads on AWS. AWS provides various optimization strategies, from flexible licensing options and instance consolidation to edition right-sizing and modernization paths. Whether leveraging BYOL, exploring SQL Server on Linux, or considering migration to cloud-native alternatives like Aurora PostgreSQL with Babelfish, organizations can significantly reduce database costs while maintaining performance and reliability.
 

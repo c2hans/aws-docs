@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Databas
 ---
 
 # DatabaseInputDefinition
-<a name="API_DatabaseInputDefinition"></a>
 
 Connection information for dataset input files stored in a database.
 

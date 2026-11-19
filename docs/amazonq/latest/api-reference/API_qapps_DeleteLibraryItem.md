@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_D
 ---
 
 # DeleteLibraryItem
-<a name="API_qapps_DeleteLibraryItem"></a>
 
 Deletes a library item for an Amazon Q App, removing it from the library so it can no longer be discovered or used by other users.
 

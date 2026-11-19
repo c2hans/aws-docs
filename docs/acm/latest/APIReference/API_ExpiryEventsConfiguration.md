@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ExpiryEvents
 ---
 
 # ExpiryEventsConfiguration
-<a name="API_ExpiryEventsConfiguration"></a>
 
 Object containing expiration events options associated with an AWS account.
 

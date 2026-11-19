@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_GetJobQueu
 ---
 
 # GetJobQueueSnapshot
-<a name="API_GetJobQueueSnapshot"></a>
 
 Provides a snapshot of job queue state, including ordering of `RUNNABLE` jobs, as well as capacity utilization for already dispatched jobs. The first 100 `RUNNABLE` jobs in the job queue are listed in order of dispatch. For job queues with an attached quota-share policy, the first `RUNNABLE` job in each quota share is also listed. Capacity utilization for the job queue is provided, as well as break downs by share for job queues with attached fair-share or quota-share scheduling policies.
 

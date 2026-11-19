@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBSnap
 ---
 
 # DBSnapshotTenantDatabase
-<a name="API_DBSnapshotTenantDatabase"></a>
 
 Contains the details of a tenant database in a snapshot of a DB instance.
 

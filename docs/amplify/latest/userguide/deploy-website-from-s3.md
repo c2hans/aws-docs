@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/deploy-website-
 ---
 
 # Deploying a static website to Amplify from an Amazon S3 bucket
-<a name="deploy-website-from-s3"></a>
 
 You can use the integration between Amplify Hosting and Amazon S3 to host static website content stored on S3 with just a few clicks. Deploying to Amplify Hosting provides you with the following benefits and features.
 + Automatic deployment to the globally available AWS content delivery network (CDN) powered by CloudFront

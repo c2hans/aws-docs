@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonAuroraDSQLFullAccess
-<a name="AmazonAuroraDSQLFullAccess"></a>
 
 **Description**: Provides full administrative access to Aurora DSQL
 

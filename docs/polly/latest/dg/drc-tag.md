@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/drc-tag.html
 ---
 
 # Adding dynamic range compression
-<a name="drc-tag"></a>
 
 *<amazon:effect name="drc">*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_Action.html
 ---
 
 # Action
-<a name="API_Action"></a>
 
  **[Event-based policies only]** Specifies an action for an event-based policy.
 

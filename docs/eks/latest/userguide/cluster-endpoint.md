@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/cluster-endpoint.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Cluster API server endpoint
-<a name="cluster-endpoint"></a>
 
 This topic helps you to enable private access for your Amazon EKS cluster’s Kubernetes API server endpoint and limit, or completely disable, public access from the internet.
 

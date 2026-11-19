@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/twenty-connector-limitati
 ---
 
 # Limitations and notes for the Twenty CRM connector
-<a name="twenty-connector-limitations"></a>
 
 The following are limitations and notes for the Twenty CRM connector:
 + Twenty CRM is supported as a source only. Writing to Twenty CRM is not supported.

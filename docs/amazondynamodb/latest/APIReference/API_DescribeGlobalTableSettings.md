@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DescribeGlobalTableSettings
-<a name="API_DescribeGlobalTableSettings"></a>
 
 Describes Region-specific settings for a global table.
 

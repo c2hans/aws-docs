@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/getting-started-w
 ---
 
 # Getting started with AWS Batch and Fargate using the AWS CLI
-<a name="getting-started-with-fargate-using-the-aws-cli"></a>
 
 This tutorial demonstrates how to set up AWS Batch with AWS Fargate orchestration and run a simple "Hello World" job using the AWS Command Line Interface (AWS CLI). You'll learn how to create compute environments, job queues, job definitions, and submit jobs to AWS Batch.
 

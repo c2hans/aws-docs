@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/idt-greengr
 ---
 
 # Use IDT to run the AWS IoT Greengrass qualification suite
-<a name="idt-greengrass-qualification"></a>
 
 You can use AWS IoT Device Tester for AWS IoT Greengrass V2 to verify that the AWS IoT Greengrass Core software runs on your hardware and can communicate with the AWS Cloud. It also performs end-to-end tests with AWS IoT Core. For example, it verifies that your device can deploy components and upgrade them.
 

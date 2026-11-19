@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # DiscoveryConfiguration
-<a name="API_DiscoveryConfiguration"></a>
 
 Discovery configuration for the registry. Controls how consumers are authorized to search the registry and invoke its MCP endpoint.
 

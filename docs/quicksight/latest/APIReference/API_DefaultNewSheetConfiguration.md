@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultNewSheetConfiguration
-<a name="API_DefaultNewSheetConfiguration"></a>
 
 The configuration for default new sheet settings.
 

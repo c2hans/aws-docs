@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateMembership
-<a name="API_CreateMembership"></a>
 
 Creates a membership for a specific collaboration identifier and joins the collaboration.
 

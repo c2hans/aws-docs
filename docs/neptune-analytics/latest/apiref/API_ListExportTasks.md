@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_List
 ---
 
 # ListExportTasks
-<a name="API_ListExportTasks"></a>
 
 Retrieves a list of export tasks.
 

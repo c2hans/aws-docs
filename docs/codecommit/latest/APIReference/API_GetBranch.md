@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetBr
 ---
 
 # GetBranch
-<a name="API_GetBranch"></a>
 
 Returns information about a repository branch, including its name and the last commit ID.
 

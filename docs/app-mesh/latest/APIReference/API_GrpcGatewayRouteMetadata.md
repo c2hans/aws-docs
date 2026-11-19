@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcGat
 ---
 
 # GrpcGatewayRouteMetadata
-<a name="API_GrpcGatewayRouteMetadata"></a>
 
 An object representing the metadata of the gateway route.
 

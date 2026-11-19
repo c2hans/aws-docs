@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Conditi
 ---
 
 # ConditionExpression
-<a name="API_ConditionExpression"></a>
 
 Represents an individual condition that evaluates to true or false.
 

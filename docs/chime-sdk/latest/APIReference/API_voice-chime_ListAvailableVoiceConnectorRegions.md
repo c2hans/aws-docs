@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # ListAvailableVoiceConnectorRegions
-<a name="API_voice-chime_ListAvailableVoiceConnectorRegions"></a>
 
 Lists the available AWS Regions in which you can create an Amazon Chime SDK Voice Connector.
 

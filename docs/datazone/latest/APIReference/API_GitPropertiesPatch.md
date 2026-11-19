@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GitProp
 ---
 
 # GitPropertiesPatch
-<a name="API_GitPropertiesPatch"></a>
 
 The properties used to update an existing Git connection, such as the AWS CodeConnections ARN or the default branch.
 

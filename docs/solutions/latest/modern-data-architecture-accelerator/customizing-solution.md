@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Customizing the solution
-<a name="customizing-solution"></a>
 
 MDAA can be customized using:
 + Custom naming modules

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListWorkG
 ---
 
 # ListWorkGroups
-<a name="API_ListWorkGroups"></a>
 
 Lists available workgroups for the account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetDiskSnapshots
-<a name="API_GetDiskSnapshots"></a>
 
 Returns information about all block storage disk snapshots in your AWS account and region.
 

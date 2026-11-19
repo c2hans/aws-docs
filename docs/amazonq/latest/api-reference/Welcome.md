@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/Welcome.htm
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## QBusiness
 <a name="Welcome_QBusiness"></a>

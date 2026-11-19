@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Certif
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 A CA certificate for an AWS account.
 

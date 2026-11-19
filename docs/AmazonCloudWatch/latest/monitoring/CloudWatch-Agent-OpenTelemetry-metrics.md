@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Collect metrics and traces with OpenTelemetry
-<a name="CloudWatch-Agent-OpenTelemetry-metrics"></a>
 
  You can collect metrics and traces from your applications or services using the CloudWatch agent with the OpenTelemetry Protocol (OTLP), which is a popular open source solution. You can use any OpenTelemetry SDK to send metrics and traces to the CloudWatch agent. For more information about the available OpenTelemetry SDKs, see [ OpenTelemetry Supported Language APIs & SDKs.](https://opentelemetry.io/docs/languages/).
 

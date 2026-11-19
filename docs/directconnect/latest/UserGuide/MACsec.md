@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/MACsec.ht
 ---
 
 # MAC Security in Direct Connect
-<a name="MACsec"></a>
 
 MAC Security (MACsec) is an IEEE standard that provides data confidentiality, data integrity, and data origin authenticity. MACsec provides Layer 2 point-to-point encryption over the cross-connect to AWS, operating between two Layer 3 routers. While MACsec secures the connection between your router and Direct Connect location at Layer 2, AWS provides additional security by encrypting all data at the physical layer as it flows across the network between Direct Connect locations and AWS Regions. This creates a layered security approach where your traffic is protected both during initial entry into AWS and during transit across the AWS network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_App
 ---
 
 # ApplicationConfig
-<a name="API_ApplicationConfig"></a>
 
 LoRaWAN application configuration, which can be used to perform geolocation.
 

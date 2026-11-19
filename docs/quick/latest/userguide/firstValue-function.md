@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/firstValue-functi
 ---
 
 # firstValue
-<a name="firstValue-function"></a>
 
 The `firstValue` function calculates the first value of the aggregated measure or dimension partitioned and sorted by specified attributes.
 

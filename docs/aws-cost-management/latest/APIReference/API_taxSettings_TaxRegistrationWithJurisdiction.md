@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TaxRegistrationWithJurisdiction
-<a name="API_taxSettings_TaxRegistrationWithJurisdiction"></a>
 
 Your TRN information with jurisdiction details. This doesn't contain the full legal address associated with the TRN information.
 

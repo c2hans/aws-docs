@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/static-overlay-
 ---
 
 # Static overlay, creating and modifying a non-running event
-<a name="static-overlay-creating-and-modifying-a-non-running-event"></a>
 
 ## Overlays at top level
 <a name="overlays-at-top-level"></a>

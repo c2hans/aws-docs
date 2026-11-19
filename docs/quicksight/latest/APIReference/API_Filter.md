@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 With a `Filter`, you can remove portions of data from a particular visual or view.
 

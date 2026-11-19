@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_A
 ---
 
 # AddLFTagsToResource
-<a name="API_AddLFTagsToResource"></a>
 
 Attaches one or more LF-tags to an existing resource.
 

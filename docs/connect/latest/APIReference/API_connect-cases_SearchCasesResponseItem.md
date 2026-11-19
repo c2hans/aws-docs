@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SearchCasesResponseItem
-<a name="API_connect-cases_SearchCasesResponseItem"></a>
 
 A list of items that represent cases.
 

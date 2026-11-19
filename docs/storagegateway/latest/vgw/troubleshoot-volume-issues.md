@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/troubleshoot-v
 ---
 
 # Troubleshooting volume issues
-<a name="troubleshoot-volume-issues"></a>
 
 You can find information about the most typical issues you might encounter when working with volumes, and actions that we suggest that you take to fix them.
 

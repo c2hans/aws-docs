@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/context-fi
 AWS FinOps Agent is in preview release and is subject to change.
 
 # Reflect your organization with context files and memory
-<a name="context-files-and-memory"></a>
 
 The agent uses two inputs to apply your organization's structure: context files that you upload, and memory that the agent records from your preference. The agent uses both automatically the next time it answers a question, generates a report, or runs an automation.
 

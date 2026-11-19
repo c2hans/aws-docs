@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Pipeli
 ---
 
 # PipelineDefinitionS3Location
-<a name="API_PipelineDefinitionS3Location"></a>
 
 The location of the pipeline definition stored in Amazon S3.
 

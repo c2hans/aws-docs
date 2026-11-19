@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DescribeSuggesters
-<a name="API_DescribeSuggesters"></a>
 
 ## Description
 <a name="API_DescribeSuggesters_Description"></a>

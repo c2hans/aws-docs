@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 This section discusses the three expected outcomes from a cloud-readiness review: understanding the current state, identifying strengths and weaknesses, and creating an action plan.
 

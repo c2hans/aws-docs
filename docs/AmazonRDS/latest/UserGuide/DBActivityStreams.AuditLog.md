@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/DBActivityStr
 ---
 
 # Audit log contents and examples for database activity streams
-<a name="DBActivityStreams.AuditLog"></a>
 
 Monitored events are represented in the database activity stream as JSON strings. The structure consists of a JSON object containing a `DatabaseActivityMonitoringRecord`, which in turn contains a `databaseActivityEventList` array of activity events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_CreateExperi
 ---
 
 # CreateExperimentTemplateTargetInput
-<a name="API_CreateExperimentTemplateTargetInput"></a>
 
 Specifies a target for an experiment. You must specify at least one Amazon Resource Name (ARN) or at least one resource tag. You cannot specify both ARNs and tags.
 

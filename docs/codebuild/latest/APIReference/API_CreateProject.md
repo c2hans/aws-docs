@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Create
 ---
 
 # CreateProject
-<a name="API_CreateProject"></a>
 
 Creates a build project.
 

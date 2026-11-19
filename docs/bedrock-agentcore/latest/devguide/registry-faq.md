@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # Comprehensive registry migration guide
-<a name="registry-faq"></a>
 
  * AWS Agent Registry — Migrating to the new `agent-registry` namespace*
 

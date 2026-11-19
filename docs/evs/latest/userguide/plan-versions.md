@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-versions.html
 ---
 
 # Choose VCF and ESX versions
-<a name="plan-versions"></a>
 
 When you create an Amazon Elastic VMware Service environment, the value that you choose sets the deployment mode and, in EVS-deployed mode, the VMware Cloud Foundation (VCF) version. Choose the mode and the version first, because they decide who installs VCF, which instance types you can use, and which ESX builds your hosts can run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-scen
 ---
 
 # Stale and expired bill scenarios
-<a name="pc-scenario-stale"></a>
 
 This section describes the stale and expired status of your bill scenario.
 

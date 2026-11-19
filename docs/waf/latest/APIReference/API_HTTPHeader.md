@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_HTTPHeader.h
 ---
 
 # HTTPHeader
-<a name="API_HTTPHeader"></a>
 
 Part of the response from [GetSampledRequests](API_GetSampledRequests.md). This is a complex type that appears as `Headers` in the response syntax. `HTTPHeader` contains the names and values of all of the headers that appear in one of the web requests.
 

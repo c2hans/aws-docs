@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Monitor with Amazon CloudWatch Events
-<a name="cloudwan-cloudwatch-events"></a>
 
 You can monitor your core network using Amazon EventBridge, which delivers a near-real-time stream of system events that describe changes in your resources. You set up simple rules, which then can match events and route them to one or more target functions or streams. For more information, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/).
 

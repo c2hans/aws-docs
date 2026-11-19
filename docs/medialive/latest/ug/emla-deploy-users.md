@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/emla-deploy-users.ht
 ---
 
 # Setting up users
-<a name="emla-deploy-users"></a>
 
 You must set up IAM users with permissions so that they can configure a MediaLive Anywhere cluster, and/or so that they can run channels on on-premises node hardware.
 

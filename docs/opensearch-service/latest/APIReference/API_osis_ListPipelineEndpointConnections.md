@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListPipelineEndpointConnections
-<a name="API_osis_ListPipelineEndpointConnections"></a>
 
 Lists the pipeline endpoints connected to pipelines in your account.
 

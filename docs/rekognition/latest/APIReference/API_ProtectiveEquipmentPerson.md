@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Prot
 ---
 
 # ProtectiveEquipmentPerson
-<a name="API_ProtectiveEquipmentPerson"></a>
 
 A person detected by a call to [DetectProtectiveEquipment](API_DetectProtectiveEquipment.md). The API returns all persons detected in the input image in an array of `ProtectiveEquipmentPerson` objects.
 

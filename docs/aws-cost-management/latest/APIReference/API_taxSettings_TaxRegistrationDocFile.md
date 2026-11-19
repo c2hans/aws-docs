@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TaxRegistrationDocFile
-<a name="API_taxSettings_TaxRegistrationDocFile"></a>
 
 The tax registration document.
 

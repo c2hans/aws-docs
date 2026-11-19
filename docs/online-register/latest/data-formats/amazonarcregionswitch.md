@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon ARC Region switch
-<a name="amazonarcregionswitch"></a>
 
 Amazon ARC Region switch provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/use-theme-dete
 ---
 
 # Use theme detection in Connect Customer conversational analytics to discover issues with contacts
-<a name="use-theme-detection"></a>
 
 Use theme detection to discover previously unknown or emerging contact themes from thousands of customer interactions. For example, you can spot common reasons for customer outreach such as "cancel reservation" or "delayed order." You can then take appropriate actions to improve the customer experience by expediting issue resolution, and improving IVR options, knowledge base articles, and agent training.
 

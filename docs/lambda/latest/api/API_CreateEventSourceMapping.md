@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CreateEventSourceM
 ---
 
 # CreateEventSourceMapping
-<a name="API_CreateEventSourceMapping"></a>
 
 Creates a mapping between an event source and an AWS Lambda Event Function. Lambda reads items from the event source and invokes the function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/troubleshoot
 ---
 
 # Troubleshooting Git clients and AWS CodeCommit
-<a name="troubleshooting-git"></a>
 
 The following information might help you troubleshoot common issues when using Git with AWS CodeCommit repositories. For troubleshooting problems related to Git clients when using HTTPS or SSH, also see [Troubleshooting Git credentials (HTTPS)](troubleshooting-gc.md), [Troubleshooting SSH connections](troubleshooting-ssh.md), and [Troubleshooting the credential helper (HTTPS)](troubleshooting-ch.md).
 

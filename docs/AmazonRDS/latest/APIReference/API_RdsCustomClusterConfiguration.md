@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RdsCus
 ---
 
 # RdsCustomClusterConfiguration
-<a name="API_RdsCustomClusterConfiguration"></a>
 
 Reserved for future use.
 

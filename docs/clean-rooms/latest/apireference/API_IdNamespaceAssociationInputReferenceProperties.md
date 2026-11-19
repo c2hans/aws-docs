@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_IdNa
 ---
 
 # IdNamespaceAssociationInputReferenceProperties
-<a name="API_IdNamespaceAssociationInputReferenceProperties"></a>
 
 Provides the information for the ID namespace association input reference properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteS
 ---
 
 # DeleteScheduledAction
-<a name="API_DeleteScheduledAction"></a>
 
 Deletes the specified scheduled action.
 

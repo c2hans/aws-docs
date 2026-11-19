@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-get-
 ---
 
 # mon-get-stats
-<a name="cli-mon-get-stats"></a>
 
 ## Description
 <a name="w2aab9c39b3"></a>

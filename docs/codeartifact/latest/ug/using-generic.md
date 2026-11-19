@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/using-generic.htm
 ---
 
 # Using CodeArtifact with generic packages
-<a name="using-generic"></a>
 
 These topics show you how to consume and publish for generic packages using AWS CodeArtifact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetApproximateUsageRecords
-<a name="API_GetApproximateUsageRecords"></a>
 
 Retrieves estimated usage records for hourly granularity or resource-level data at daily granularity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateV
 ---
 
 # CreateVirtualService
-<a name="API_CreateVirtualService"></a>
 
 Creates a virtual service within a service mesh.
 

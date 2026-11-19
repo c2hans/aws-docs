@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListWorkflows
-<a name="API_connect-customer-profiles_ListWorkflows"></a>
 
 Query to list all workflows.
 

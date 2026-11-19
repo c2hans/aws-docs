@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_LookoutMetr
 ---
 
 # LookoutMetricsDestinationProperties
-<a name="API_LookoutMetricsDestinationProperties"></a>
 
  The properties that are applied when Amazon Lookout for Metrics is used as a destination.
 

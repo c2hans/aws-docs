@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-con
 ---
 
 # How managed conformance packs work in AWS Config
-<a name="managed-conformance-packs-how-it-works"></a>
 
 When you deploy a managed conformance pack, AWS Config deploys the AWS Config rules included in the pack to the selected AWS account and AWS Region. During deployment, you can configure the parameters for the rules in the managed conformance pack. If you don't specify a value for a parameter, AWS Config uses the default value for that parameter.
 

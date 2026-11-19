@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DescribeMLModels
-<a name="API_DescribeMLModels"></a>
 
 Returns a list of `MLModel` that match the search criteria in the request.
 

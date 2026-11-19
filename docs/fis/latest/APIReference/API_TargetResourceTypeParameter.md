@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_TargetResour
 ---
 
 # TargetResourceTypeParameter
-<a name="API_TargetResourceTypeParameter"></a>
 
 Describes the parameters for a resource type. Use parameters to determine which tasks are identified during target resolution.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53RecoveryReadiness::ResourceSet R53ResourceRecord
-<a name="aws-properties-route53recoveryreadiness-resourceset-r53resourcerecord"></a>
 
 The Amazon Route 53 resource that a DNS target resource record points to.
 

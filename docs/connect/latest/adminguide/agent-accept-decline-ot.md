@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-accept-d
 ---
 
 # Contact center agent ability to accept or decline overtime in Connect Customer
-<a name="agent-accept-decline-ot"></a>
 
 The following image shows pending Overtime requests in the agent calendars. Managers and agents can see overtime requests.
 

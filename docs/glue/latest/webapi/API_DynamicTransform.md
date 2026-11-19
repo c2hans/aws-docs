@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DynamicTransform.
 ---
 
 # DynamicTransform
-<a name="API_DynamicTransform"></a>
 
 Specifies the set of parameters needed to perform the dynamic transform.
 

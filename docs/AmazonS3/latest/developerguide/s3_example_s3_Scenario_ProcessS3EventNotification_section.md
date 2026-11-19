@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Receive and process Amazon S3 event notifications by using an AWS SDK
-<a name="s3_example_s3_Scenario_ProcessS3EventNotification_section"></a>
 
 The following code example shows how to work with S3 event notifications in an object-oriented way.
 

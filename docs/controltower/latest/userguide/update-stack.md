@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/update-sta
 ---
 
 # Update the stack
-<a name="update-stack"></a>
 
  If you previously deployed *Customizations for AWS Control Tower* (CfCT), follow the procedure to update the AWS CloudFormation stack for the latest version of the CfCT framework.
 

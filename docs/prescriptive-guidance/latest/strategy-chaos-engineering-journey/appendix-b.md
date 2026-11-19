@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # Appendix B ‒ Quantitative and qualitative measures
-<a name="appendix-b"></a>
 
 This section outlines quantitative metrics to track operational improvements and qualitative measures to assess broader organizational results from chaos engineering practices.
 

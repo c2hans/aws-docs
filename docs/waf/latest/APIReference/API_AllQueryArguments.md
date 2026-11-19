@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AllQueryArgu
 ---
 
 # AllQueryArguments
-<a name="API_AllQueryArguments"></a>
 
 Inspect all query arguments of the web request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/loading-dat
 ---
 
 # Loading data into Aurora DSQL
-<a name="loading-data"></a>
 
 Whether you are migrating from an existing database, importing files from Amazon Simple Storage Service, or loading data from your local system, Aurora DSQL provides multiple approaches for getting your data in. This section covers the recommended tools and techniques for data loads of all sizes, from gigabytes to hundreds of terabytes.
 

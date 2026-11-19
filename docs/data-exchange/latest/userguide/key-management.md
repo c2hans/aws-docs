@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/key-manag
 ---
 
 # Key management for Amazon S3 data access
-<a name="key-management"></a>
 
 This page is specific to the Amazon S3 data access type where the provider is sharing objects encrypted using SSE-KMS. The subscriber must have a grant on the keys used for access.
 

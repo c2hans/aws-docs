@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
 This section provides the source code for the solution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Connect a WordPress instance to a Lightsail bucket for static content
-<a name="amazon-lightsail-connecting-buckets-to-wordpress"></a>
 
 **This tutorial applies to instances that use WordPress packaged by Bitnami only**
 If your instance uses the WordPress blueprint packaged by Lightsail, see [WordPress](amazon-lightsail-wordpress.md) instead.
@@ -185,7 +184,7 @@ These are the general steps to manage your Lightsail object storage bucket:
 1. Change the storage plan of your bucket if it's running low on storage and network transfer. For more information, see [Changing the plan of your bucket in Amazon Lightsail](amazon-lightsail-changing-bucket-plans.md).
 
 1. Learn how to connect your bucket to other resources. For more information, see the following tutorials.
-   + [Tutorial: Connecting a WordPress instance to an Amazon Lightsail bucket](#amazon-lightsail-connecting-buckets-to-wordpress)
+   + [Tutorial: Connecting a WordPress instance to an Amazon Lightsail bucket](amazon-lightsail-connecting-buckets-to-wordpress.md)
    + [Tutorial: Using an Amazon Lightsail bucket with a Lightsail content delivery network distribution](amazon-lightsail-using-distributions-with-buckets.md)
 
 1. Delete your bucket if you're no longer using it. For more information, see [Deleting buckets in Amazon Lightsail](amazon-lightsail-deleting-buckets.md).

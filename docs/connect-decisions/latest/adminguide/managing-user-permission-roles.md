@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/mana
 ---
 
 # Managing user permission roles
-<a name="managing-user-permission-roles"></a>
 
 ## Adding users
 <a name="managing-user-permission-roles-adding-users"></a>

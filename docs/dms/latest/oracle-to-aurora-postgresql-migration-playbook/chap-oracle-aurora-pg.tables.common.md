@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Common Oracle and PostgreSQL data types
-<a name="chap-oracle-aurora-pg.tables.common"></a>
 
 With AWS DMS, you can seamlessly migrate data between different database platforms, including Oracle and PostgreSQL, while ensuring data type compatibility. Common Oracle and PostgreSQL data types refer to the fundamental data structures used to store and represent various types of information within these database systems.
 

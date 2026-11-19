@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_R
 ---
 
 # RecommendationResourceExclusion
-<a name="API_RecommendationResourceExclusion"></a>
 
 The request entry for Recommendation Resource exclusion. Each entry is a combination of Recommendation Resource ARN and corresponding exclusion status
 

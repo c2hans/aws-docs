@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd06-b
 ---
 
 # FND06-BP01 Configure detailed cost information sources
-<a name="fnd06-bp01"></a>
 
  Implement centralized cost management and reporting to provide detailed visibility into cloud spending across all accounts and resources in your organization.These reports support granular analysis of costs, automated reporting, and data-driven decision making for cloud financial management.
 

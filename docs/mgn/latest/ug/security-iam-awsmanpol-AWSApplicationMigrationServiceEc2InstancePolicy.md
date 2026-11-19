@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationServiceEc2InstancePolicy
-<a name="security-iam-awsmanpol-AWSApplicationMigrationServiceEc2InstancePolicy"></a>
 
 This policy allows installing and using the AWS Replication Agent, which is used by AWS Transform MGN to migrate source servers that run on EC2 (cross-Region or cross-AZ). An IAM role with this policy should be attached (as an EC2 Instance Profile) to the EC2 Instances. This policy can only be used within the same AWS account.
 

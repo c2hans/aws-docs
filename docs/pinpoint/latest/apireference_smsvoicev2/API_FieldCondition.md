@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # FieldCondition
-<a name="API_FieldCondition"></a>
 
 A single condition on a dependency field's value. Conditions are combined into a **ConditionalRule** and evaluated together with logical AND.
 

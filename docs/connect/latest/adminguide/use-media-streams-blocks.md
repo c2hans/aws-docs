@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/use-media-stre
 ---
 
 # Example flow for testing live media streaming in Connect Customer
-<a name="use-media-streams-blocks"></a>
 
 Here's how you can set up a flow to test live media streaming:
 

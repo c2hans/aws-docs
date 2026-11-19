@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_CEILING_FLOOR.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # CEILING (or CEIL) function
-<a name="r_CEILING_FLOOR"></a>
 
 The CEILING or CEIL function is used to round a number up to the next whole number. (The [FLOOR function](r_FLOOR.md) rounds a number down to the next whole number.)
 

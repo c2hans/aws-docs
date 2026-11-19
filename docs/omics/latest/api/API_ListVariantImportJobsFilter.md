@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListVariantImportJo
 ---
 
 # ListVariantImportJobsFilter
-<a name="API_ListVariantImportJobsFilter"></a>
 
 A filter for variant import jobs.
 

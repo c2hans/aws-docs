@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Regist
 ---
 
 # RegistryCredential
-<a name="API_RegistryCredential"></a>
 
  Information about credentials that provide access to a private Docker registry. When this is set:
 +  `imagePullCredentialsType` must be set to `SERVICE_ROLE`.

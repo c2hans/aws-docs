@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Det
 ---
 
 # DetailedError
-<a name="API_DetailedError"></a>
 
 Contains detailed error information.
 

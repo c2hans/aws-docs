@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # AWS Systems Manager Incident Manager Contacts
-<a name="API_Operations_AWS_Systems_Manager_Incident_Manager_Contacts"></a>
 
 The following actions are supported by AWS Systems Manager Incident Manager Contacts:
 +  [AcceptPage](API_SSMContacts_AcceptPage.md)

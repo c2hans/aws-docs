@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbSnapshotDetails
-<a name="API_AwsRdsDbSnapshotDetails"></a>
 
 Provides details about an Amazon RDS DB cluster snapshot.
 

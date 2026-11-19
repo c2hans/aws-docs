@@ -5,9 +5,8 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Runtime Tag
-<a name="aws-properties-lambda-runtime-tag"></a>
 
-<a name="aws-properties-lambda-runtime-tag-description"></a>The `Tag` property type specifies Property description not available. for an [AWS::Lambda::Runtime](aws-resource-lambda-runtime.md).
+A [tag](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html) to apply to the runtime.
 
 ## Syntax
 <a name="aws-properties-lambda-runtime-tag-syntax"></a>
@@ -36,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-runtime-tag-properties"></a>
 
 `Key`  <a name="cfn-lambda-runtime-tag-key"></a>
-Property description not available.
+The key for this tag.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -44,7 +43,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Value`  <a name="cfn-lambda-runtime-tag-value"></a>
-Property description not available.
+The value for this tag.
 *Required*: Yes
 *Type*: String
 *Minimum*: `0`

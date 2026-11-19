@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/design-rtmp-package.
 ---
 
 # Organize encodes in an RTMP output group
-<a name="design-rtmp-package"></a>
 
 An RTMP output group can contain the following:
 + One or more outputs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/s_hash-
 ---
 
 # Hash functions
-<a name="s_hash-functions"></a>
 
 A hash function is a mathematical function that converts a numerical input value into another value.
 

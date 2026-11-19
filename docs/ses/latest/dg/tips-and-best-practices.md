@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/tips-and-best-practices.ht
 ---
 
 # Maintaining a positive sender reputation
-<a name="tips-and-best-practices"></a>
 
 In Amazon SES, sender reputation refers to the credibility and trustworthiness of the email sender as perceived by email providers and spam filters. It is a measure of how likely your emails are to be considered legitimate and delivered successfully to the recipients' inboxes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 ---
 
 # Type conversion functions
-<a name="sql-functions-type-conv"></a>
 
  Type conversion functions are used to change the data type of a value from one to another. They are essential for ensuring data compatibility and performing operations that require data in a specific format.
 

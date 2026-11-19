@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ex
 ---
 
 # ExecuteQuery
-<a name="API_ExecuteQuery"></a>
 
 Run queries to access information from your knowledge graph of entities within individual workspaces.
 

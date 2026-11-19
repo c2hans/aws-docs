@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/how-it-works.h
 ---
 
 # Amazon Keyspaces: How it works
-<a name="how-it-works"></a>
 
 Amazon Keyspaces removes the administrative overhead of managing Cassandra. To understand why, it's helpful to begin with Cassandra architecture and then compare it to Amazon Keyspaces.
 

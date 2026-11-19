@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/how-it-
 ---
 
 # Amazon Location Service concepts
-<a name="how-it-works"></a>
 
 With Amazon Location Service, you can securely add location data to your application. Explore some of the capabilities by using the [visual and interactive tool](https://console.aws.amazon.com/location/explore/home), available on the Amazon Location console. Using the explore tool, you can manipulate a default map, search for points of interest, draw geofences around areas of interest, and simulate sending device locations to a tracker.
 

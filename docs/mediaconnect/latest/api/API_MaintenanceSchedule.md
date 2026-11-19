@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MaintenanceS
 ---
 
 # MaintenanceSchedule
-<a name="API_MaintenanceSchedule"></a>
 
 The details of the maintenance schedule.
 

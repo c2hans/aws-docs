@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AwsEcsMeta
 ---
 
 # AwsEcsMetadataDetails
-<a name="API_AwsEcsMetadataDetails"></a>
 
 Metadata about tasks where an image was in use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteKeyGroup
-<a name="API_DeleteKeyGroup"></a>
 
 Deletes a key group.
 

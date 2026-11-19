@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-byo
 ---
 
 # Troubleshooting BYOM engine version and DB instance
-<a name="sqlserver-byom-troubleshooting"></a>
 
 The following table helps you diagnose and resolve common issues when creating and managing Bring Your Own Media (BYOM) engine versions and DB instances for RDS for SQL Server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_FunctionCodeLocati
 ---
 
 # FunctionCodeLocationError
-<a name="API_FunctionCodeLocationError"></a>
 
 Contains details about an error that occurred when Lambda attempted to retrieve a function's deployment package.
 

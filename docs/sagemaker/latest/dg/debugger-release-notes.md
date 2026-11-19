@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-release-not
 ---
 
 # Release notes for debugging capabilities of Amazon SageMaker AI
-<a name="debugger-release-notes"></a>
 
 See the following release notes to track the latest updates for debugging capabilities of Amazon SageMaker AI.
 

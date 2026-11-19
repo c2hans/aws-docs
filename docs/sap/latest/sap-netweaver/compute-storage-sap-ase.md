@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/compute-storage
 ---
 
 # Compute & storage
-<a name="compute-storage-sap-ase"></a>
 
 ## Compute
 <a name="compute-operations-sap-ase"></a>

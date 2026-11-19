@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/workflow-templ
 ---
 
 # Create a workflow from a template
-<a name="workflow-template"></a>
 
 You can deploy an CloudFormation stack that creates a workflow and a server from a template. This procedure contains an example that you can use to quickly deploy a workflow.
 

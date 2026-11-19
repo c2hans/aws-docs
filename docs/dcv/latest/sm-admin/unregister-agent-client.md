@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/unregister-agent-cli
 ---
 
 # unregister-agent-client
-<a name="unregister-agent-client"></a>
 
 Unregister an agent from the broker.
 

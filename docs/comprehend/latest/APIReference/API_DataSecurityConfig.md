@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_DataS
 ---
 
 # DataSecurityConfig
-<a name="API_DataSecurityConfig"></a>
 
 Data security configuration.
 

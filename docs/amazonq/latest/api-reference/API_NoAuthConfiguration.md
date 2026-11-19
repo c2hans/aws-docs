@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_NoAuthC
 ---
 
 # NoAuthConfiguration
-<a name="API_NoAuthConfiguration"></a>
 
 Information about invoking a custom plugin without any authentication or authorization requirement.
 

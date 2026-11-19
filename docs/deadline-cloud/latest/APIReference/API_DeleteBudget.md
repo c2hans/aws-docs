@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteBudget
-<a name="API_DeleteBudget"></a>
 
 Deletes a budget.
 

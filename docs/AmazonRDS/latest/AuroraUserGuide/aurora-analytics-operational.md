@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Operational best practices
-<a name="aurora-analytics-operational"></a>
 
 **Topics**
 + [Handling instance restarts and failovers](#aurora-analytics-restarts-failovers)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_S3PrefixL
 ---
 
 # S3PrefixLocation
-<a name="API_S3PrefixLocation"></a>
 
 Specifies an Amazon S3 bucket and key prefix.
 

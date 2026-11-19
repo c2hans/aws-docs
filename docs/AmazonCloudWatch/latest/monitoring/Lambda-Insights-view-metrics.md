@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambd
 ---
 
 # Viewing your Lambda Insights metrics
-<a name="Lambda-Insights-view-metrics"></a>
 
 After you have installed the Lambda Insights extension on a Lambda function that has been invoked, you can use the CloudWatch console to see your metrics. You can see a multi-function overview, or focus on a single function. You can also view metrics for Lambda functions running on Managed Instances.
 

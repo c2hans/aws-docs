@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InsightRootCause
-<a name="API_InsightRootCause"></a>
 
 A root cause that contributes to an insight.
 

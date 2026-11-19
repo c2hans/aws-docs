@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Resolving cloud transformation challenges
-<a name="resolving-cloud-transformation-challenges"></a>
 
 In the [Key challenges in a cloud adoption journey](cloud-transformation-challenges.md) section, we discussed the common challenges and questions that decision makers have when preparing their organization for a cloud transformation. In this section, we discuss best practices and make recommendations to help decision makers work through those challenges and questions. The recommendations are structured according to the six perspectives of the AWS CAF:
 + [Business perspective](#business-perspective)

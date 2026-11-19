@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelD
 ---
 
 # ModelDashboardMonitoringSchedule
-<a name="API_ModelDashboardMonitoringSchedule"></a>
 
 A monitoring schedule for a model displayed in the Amazon SageMaker Model Dashboard.
 

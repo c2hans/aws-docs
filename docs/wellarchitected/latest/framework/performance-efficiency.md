@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perform
 ---
 
 # Performance efficiency
-<a name="performance-efficiency"></a>
 
  The performance efficiency pillar covers the efficient use of computing resources to meet your requirements, and keeping that efficiency as demand changes and technologies evolve. In on-premises environments, sustained performance is hard to achieve because capacity is fixed when you buy it and slow to change. The cloud removes that constraint, and the practices in this pillar help you build a high-performing architecture and keep it that way as your workload and the available technologies change.
 

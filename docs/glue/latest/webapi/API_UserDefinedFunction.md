@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UserDefinedFuncti
 ---
 
 # UserDefinedFunction
-<a name="API_UserDefinedFunction"></a>
 
 Represents the equivalent of a Hive user-defined function (`UDF`) definition.
 

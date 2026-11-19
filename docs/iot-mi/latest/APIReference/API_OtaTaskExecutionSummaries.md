@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OtaTaskEx
 ---
 
 # OtaTaskExecutionSummaries
-<a name="API_OtaTaskExecutionSummaries"></a>
 
 Structure representing one execution summary.
 

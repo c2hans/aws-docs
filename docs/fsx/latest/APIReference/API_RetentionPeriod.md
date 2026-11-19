@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_RetentionPer
 ---
 
 # RetentionPeriod
-<a name="API_RetentionPeriod"></a>
 
 Specifies the retention period of an FSx for ONTAP SnapLock volume. After it is set, it can't be changed. Files can't be deleted or modified during the retention period.
 

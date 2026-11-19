@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Amazon Bedrock AgentCore Gateway event types
-<a name="gateway-event-types"></a>
 
 This section provides information about the types of events that Amazon Bedrock AgentCore Gateway logs to CloudTrail.
 

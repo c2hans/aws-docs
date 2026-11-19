@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-dynamodb-event
 ---
 
 # Process DynamoDB records with Lambda
-<a name="services-dynamodb-eventsourcemapping"></a>
 
 Create an event source mapping to tell Lambda to send records from your stream to a Lambda Event Function. You can create multiple event source mappings to process the same data with multiple Lambda Event Functions, or to process items from multiple streams with a single function.
 

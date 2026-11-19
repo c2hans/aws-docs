@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_StartI
 ---
 
 # StartImageScan
-<a name="API_StartImageScan"></a>
 
 Starts a basic image vulnerability scan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Amazon RDS template snippets
-<a name="quickref-rds"></a>
 
 **Topics**
 + [Amazon RDS DB instance resource](#scenario-rds-instance)

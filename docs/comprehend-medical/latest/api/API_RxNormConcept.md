@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_RxNorm
 ---
 
 # RxNormConcept
-<a name="API_RxNormConcept"></a>
 
 The RxNorm concept that the entity could refer to, along with a score indicating the likelihood of the match.
 

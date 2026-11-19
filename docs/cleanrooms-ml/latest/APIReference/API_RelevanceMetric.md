@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Re
 ---
 
 # RelevanceMetric
-<a name="API_RelevanceMetric"></a>
 
 The relevance score of a generated audience.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_GetSMSSandboxAccountS
 ---
 
 # GetSMSSandboxAccountStatus
-<a name="API_GetSMSSandboxAccountStatus"></a>
 
 Retrieves the SMS sandbox status for the calling AWS account in the target AWS Region.
 

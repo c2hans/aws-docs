@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Microservices-based Headless DTC Website with Infosys Equinox on AWS
-<a name="dtc-website-infosys-equinox"></a>
 
 Publication date: **2021 ([Diagram history](#dtc-history))**
 

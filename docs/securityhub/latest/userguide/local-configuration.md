@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/local-confi
 ---
 
 # Understanding local configuration in Security Hub CSPM
-<a name="local-configuration"></a>
 
 Local configuration is the default way that an AWS organization is configured in Security Hub CSPM. If you don't use [declarative policies](accounts-orgs-policies.md) or central configuration, your organization uses local configuration by default.
 

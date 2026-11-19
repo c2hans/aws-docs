@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/step
 ---
 
 # Step 3: Create your face collection
-<a name="step-3-create-your-face-collection"></a>
 
  The web interface allows you to create your own Amazon Rekognition face collection and index and store faces in the collection to improve the analysis results.
 

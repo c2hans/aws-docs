@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetSipMediaApplication
-<a name="API_voice-chime_GetSipMediaApplication"></a>
 
 Retrieves the information for a SIP media application, including name, AWS Region, and endpoints.
 

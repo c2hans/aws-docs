@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Creating an assessment report in AWS Schema Conversion Tool
-<a name="CHAP_AssessmentReport.Create"></a>
 
 Use the following procedure to create a database migration assessment report.
 

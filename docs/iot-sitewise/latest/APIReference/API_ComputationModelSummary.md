@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputationModelSummary
-<a name="API_ComputationModelSummary"></a>
 
 Contains a summary of a computation model.
 

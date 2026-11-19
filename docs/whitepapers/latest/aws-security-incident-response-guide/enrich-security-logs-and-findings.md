@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Enrich security logs and findings
-<a name="enrich-security-logs-and-findings"></a>
 
 ## Enrichment with threat intelligence and organizational context
 <a name="enrichment-with-threat-intelligence"></a>

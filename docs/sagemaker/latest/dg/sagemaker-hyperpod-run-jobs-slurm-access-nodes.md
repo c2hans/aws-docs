@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Accessing your SageMaker HyperPod cluster nodes
-<a name="sagemaker-hyperpod-run-jobs-slurm-access-nodes"></a>
 
 You can access your **InService** cluster through AWS Systems Manager (SSM) by running the AWS CLI command `aws ssm start-session` with the SageMaker HyperPod cluster host name in format of `sagemaker-cluster:[cluster-id]_[instance-group-name]-[instance-id]`. You can retrieve the cluster ID, the instance ID, and the instance group name from the [SageMaker HyperPod console](sagemaker-hyperpod-operate-slurm-console-ui.md#sagemaker-hyperpod-operate-slurm-console-ui-view-details-of-clusters) or by running `describe-cluster` and `list-cluster-nodes` from the [AWS CLI commands for SageMaker HyperPod](sagemaker-hyperpod-operate-slurm-cli-command.md#sagemaker-hyperpod-operate-slurm-cli-command-list-cluster-nodes). For example, if your cluster ID is `aa11bbbbb222`, the cluster node name is `controller-group`, and the cluster node ID is `i-111222333444555aa`, the SSM `start-session` command should be the following.
 

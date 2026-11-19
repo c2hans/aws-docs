@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/setting-up-ap
 ---
 
 # Setting up AWS AppConfig
-<a name="setting-up-appconfig"></a>
 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>

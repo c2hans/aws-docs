@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-events.html
 ---
 
 # Neptune Events API
-<a name="api-events"></a>
 
 **Actions:**
 + [CreateEventSubscription (action)](#CreateEventSubscription)

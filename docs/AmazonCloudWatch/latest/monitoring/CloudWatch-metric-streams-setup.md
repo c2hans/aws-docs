@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Set up a metric stream
-<a name="CloudWatch-metric-streams-setup"></a>
 
 Use the steps in the following sections to set up a CloudWatch metric stream.
 

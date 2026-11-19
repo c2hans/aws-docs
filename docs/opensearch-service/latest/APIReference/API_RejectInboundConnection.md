@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # RejectInboundConnection
-<a name="API_RejectInboundConnection"></a>
 
 Allows the remote Amazon OpenSearch Service domain owner to reject an inbound cross-cluster connection request.
 

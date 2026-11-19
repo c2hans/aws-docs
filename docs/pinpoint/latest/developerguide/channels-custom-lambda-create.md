@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Create and configure a Lambda function for a Amazon Pinpoint campaign
-<a name="channels-custom-lambda-create"></a>
 
 This section provides an overview of the steps to create a Lambda function that sends messages over a custom channel. First, you create the function. Then, you add an execution policy to the function. This policy allows Amazon Pinpoint to execute the policy when a campaign runs.
 

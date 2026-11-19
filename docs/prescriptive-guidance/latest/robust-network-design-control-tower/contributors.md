@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this guide include:
 + T.V.R.L.Phani Kumar Dadi, Consultant – DevOps, AWS

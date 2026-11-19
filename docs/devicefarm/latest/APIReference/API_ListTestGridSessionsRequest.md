@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListT
 ---
 
 # ListTestGridSessionsRequest
-<a name="API_ListTestGridSessionsRequest"></a>
 
 ## Contents
 <a name="API_ListTestGridSessionsRequest_Contents"></a>

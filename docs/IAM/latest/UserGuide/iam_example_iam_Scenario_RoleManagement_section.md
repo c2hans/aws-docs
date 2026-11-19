@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Sce
 ---
 
 # Manage IAM roles using an AWS SDK
-<a name="iam_example_iam_Scenario_RoleManagement_section"></a>
 
 The following code example shows how to:
 + Create an IAM role.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonODBExadataInfrastructureAdmin
-<a name="AmazonODBExadataInfrastructureAdmin"></a>
 
 **Description**: Provides administrative access to manage Exadata Infrastructure resources in Oracle Database@AWS
 

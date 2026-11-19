@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ServerCertif
 ---
 
 # ServerCertificateConfig
-<a name="API_ServerCertificateConfig"></a>
 
 The server certificate configuration.
 

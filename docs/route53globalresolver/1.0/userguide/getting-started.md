@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/gett
 ---
 
 # Tutorial: Create your first Amazon Route 53 Global Resolver
-<a name="getting-started"></a>
 
 This getting started guide demonstrates the basic components of Amazon Route 53 Global Resolver and optionally creating a simple DNS filtering setup. This tutorial covers the core concepts but doesn't include production requirements like client configuration, logging, or private domain resolution.
 

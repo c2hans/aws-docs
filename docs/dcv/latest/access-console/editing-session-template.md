@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/editing-sessio
 ---
 
 # Editing a session template
-<a name="editing-session-template"></a>
 
 If you need to adjust any sessions details, you can edit the parameters of an existing session template.
 

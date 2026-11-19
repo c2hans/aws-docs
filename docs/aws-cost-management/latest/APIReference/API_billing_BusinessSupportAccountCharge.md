@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BusinessSupportAccountCharge
-<a name="API_billing_BusinessSupportAccountCharge"></a>
 
 Business Support charges for a linked account.
 

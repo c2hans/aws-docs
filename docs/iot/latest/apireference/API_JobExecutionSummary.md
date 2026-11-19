@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution
 ---
 
 # JobExecutionSummary
-<a name="API_JobExecutionSummary"></a>
 
 The job execution summary.
 

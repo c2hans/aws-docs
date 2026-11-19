@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # SQL and PL/SQL
-<a name="chap-oracle-aurora-pg.sql"></a>
 
 This section provides reference pages to Oracle and PostgreSQL functions, statements, and other commands.
 

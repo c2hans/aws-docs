@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Securing engineering collaboration with third parties
-<a name="securing-collaboration-with-third-parties"></a>
 
 Collaboration with third parties is essential during development in order to debug tool problems, get help with IP integration for designs, and to bring in external contractors with specialized skills. It can be difficult to provide secure access to third parties from on-premises infrastructure. By using AWS infrastructure as code (IaC), you can create a copy of your primary secure development environment, called a *collaboration chamber*. To help prevent data exfiltration, tighten the security posture of a collaboration chamber by not allowing access to the internet. A collaboration chamber has accounts for the collaborators, and you can curate the data, tools, and infrastructure in the chamber to include only what is required for the collaboration. When the collaboration is done, delete the collaboration chamber in order to reduce costs and to remove any potential access to the data. The following diagram shows how different participants in the design and manufacturing process might use various types of collaboration chambers.
 

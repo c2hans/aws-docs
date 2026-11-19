@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ServiceQuotaExceededException
-<a name="API_ServiceQuotaExceededException"></a>
 
 The request would cause the resource to exceed an allowed service quota. Resolve the issue before you try again.
 

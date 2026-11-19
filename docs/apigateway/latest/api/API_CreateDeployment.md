@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateDeployme
 ---
 
 # CreateDeployment
-<a name="API_CreateDeployment"></a>
 
 Creates a Deployment resource, which makes a specified RestApi callable over the internet.
 

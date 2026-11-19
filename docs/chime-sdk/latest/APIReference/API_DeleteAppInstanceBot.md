@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Delete
 ---
 
 # DeleteAppInstanceBot
-<a name="API_DeleteAppInstanceBot"></a>
 
 Deletes an `AppInstanceBot`.
 

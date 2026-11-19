@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # How Internet Monitor works
-<a name="CloudWatch-IM-inside-internet-monitor"></a>
 
 This section provides information about how Internet Monitor works. This includes descriptions of how AWS collects the data that it uses to help detect connectivity issues across the internet, and how performance and availability scores are calculated.
 

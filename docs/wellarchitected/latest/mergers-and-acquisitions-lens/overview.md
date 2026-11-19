@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # Overview
-<a name="overview"></a>
 
  This lens helps with workload discovery and analysis for migration to AWS. We also provide a questionnaire to identify third-party integrations and any impact they may have (like licensing) in case of migration to AWS. This lens provides guidance on region selection, data transfer cost, workload costs, and usage patterns, as well as best practices for choosing saving plans for combined organizations and setting up a common payer account for optimized governance.
 

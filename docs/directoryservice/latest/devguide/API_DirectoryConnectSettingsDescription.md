@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dir
 ---
 
 # DirectoryConnectSettingsDescription
-<a name="API_DirectoryConnectSettingsDescription"></a>
 
 Contains information about an AD Connector directory.
 

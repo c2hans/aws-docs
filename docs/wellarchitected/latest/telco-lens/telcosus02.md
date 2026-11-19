@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcos
 ---
 
 # Data processing and storage
-<a name="telcosus02"></a>
 
 |  TELCOSUS02: How do you optimize data processing and storage for sustainable telco operations?  |
 | --- |

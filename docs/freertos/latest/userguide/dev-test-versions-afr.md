@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dev-test-versi
 ---
 
 # Supported versions of AWS IoT Device Tester
-<a name="dev-test-versions-afr"></a>
 
 This topic lists supported versions of AWS IoT Device Tester for FreeRTOS. As a best practice, we recommend that you use the latest version of IDT for FreeRTOS that supports your target version of FreeRTOS. Each version of IDT for FreeRTOS has one or more corresponding versions of FreeRTOS that it supports. We recommend that you download a new version of IDT for FreeRTOS when a new version of FreeRTOS is released.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TextF
 ---
 
 # TextFieldControlDisplayOptions
-<a name="API_TextFieldControlDisplayOptions"></a>
 
 The display options of a control.
 

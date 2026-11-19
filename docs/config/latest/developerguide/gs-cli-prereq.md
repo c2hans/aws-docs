@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/gs-cli-prer
 ---
 
 # Prerequisites for Setting Up AWS Config with the AWS CLI
-<a name="gs-cli-prereq"></a>
 
 Before setting up AWS with the AWS CLI, you need to create an Amazon S3 bucket, an Amazon SNS topic, and an IAM role with attached policies as prerequisites. You can then use the AWS CLI to specify the bucket, topic, and role for AWS Config. Follow this procedure to set up your prerequisites for AWS Config.
 

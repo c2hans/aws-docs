@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example_polly_DeleteLexi
 ---
 
 # Use `DeleteLexicon` with an AWS SDK or CLI
-<a name="example_polly_DeleteLexicon_section"></a>
 
 The following code examples show how to use `DeleteLexicon`.
 

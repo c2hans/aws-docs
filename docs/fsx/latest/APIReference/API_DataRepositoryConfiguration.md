@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DataReposito
 ---
 
 # DataRepositoryConfiguration
-<a name="API_DataRepositoryConfiguration"></a>
 
 The data repository configuration object for Lustre file systems returned in the response of the `CreateFileSystem` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Event structure: data, metadata, and system metadata
-<a name="eb-custom-bus-addressing"></a>
 
 Filters, transformers, and target parameters share one addressing model. EventBridge delivers every event under three top-level names: `Data` holds the payload, `Metadata` holds the keys that you supplied with `PutRawEvents`, and `SystemMetadata` holds the fields that EventBridge assigns. Where your own fields sit inside `Data` depends on the publish API. Both APIs produce the same kind of event, and EventBridge filters and transforms both the same way. The difference is only what sits inside `Data`.
 

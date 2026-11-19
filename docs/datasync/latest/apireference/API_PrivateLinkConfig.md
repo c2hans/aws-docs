@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Private
 ---
 
 # PrivateLinkConfig
-<a name="API_PrivateLinkConfig"></a>
 
 Specifies how your AWS DataSync agent connects to AWS using a [virtual private cloud (VPC) service endpoint](https://docs.aws.amazon.com/datasync/latest/userguide/choose-service-endpoint.html#choose-service-endpoint-vpc). An agent that uses a VPC endpoint isn't accessible over the public internet.
 

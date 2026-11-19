@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNCOST06-BP01 Implement QoS policies for traffic prioritization
-<a name="hncost06-bp01"></a>
 
  Configure QoS rules on on-premises routers to prioritize latency-sensitive traffic such as voice and video over bulk transfers such as data syncs.
 

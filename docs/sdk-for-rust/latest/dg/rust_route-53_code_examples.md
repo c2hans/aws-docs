@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/rust_route-53_cod
 ---
 
 # Route 53 examples using SDK for Rust
-<a name="rust_route-53_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Rust with Route 53.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # ConnectorSummary
-<a name="API_ConnectorSummary"></a>
 
 Summary description of the AWS Private CA AD connectors belonging to an AWS account.
 

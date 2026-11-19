@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialCircleSymbolStyle
-<a name="API_GeospatialCircleSymbolStyle"></a>
 
 The properties for a circle symbol style.
 

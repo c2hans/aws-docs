@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Example
 ---
 
 # Examples with datetime types
-<a name="Examples_with_datetime_types"></a>
 
 The following examples show you how to work with datetime types that are supported by AWS Clean Rooms.
 

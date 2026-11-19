@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Joi
 ---
 
 # JoinEventConfiguration
-<a name="API_JoinEventConfiguration"></a>
 
 Join event configuration object for enabling or disabling topic.
 

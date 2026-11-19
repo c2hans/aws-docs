@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmers
 ---
 
 # 9 Additional services
-<a name="elpg-additional-services"></a>
 
 ## 9.1.1 TIME? ⁞  Request current time information
 <a name="elpg-timeq-command"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_TestG
 ---
 
 # TestGridVpcConfig
-<a name="API_TestGridVpcConfig"></a>
 
 The VPC security groups and subnets that are attached to a project.
 

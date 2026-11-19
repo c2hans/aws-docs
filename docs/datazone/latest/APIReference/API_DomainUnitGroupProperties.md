@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DomainU
 ---
 
 # DomainUnitGroupProperties
-<a name="API_DomainUnitGroupProperties"></a>
 
 The properties of a domain unit group.
 

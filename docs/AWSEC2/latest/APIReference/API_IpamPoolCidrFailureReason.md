@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPoolC
 ---
 
 # IpamPoolCidrFailureReason
-<a name="API_IpamPoolCidrFailureReason"></a>
 
 Details related to why an IPAM pool CIDR failed to be provisioned.
 

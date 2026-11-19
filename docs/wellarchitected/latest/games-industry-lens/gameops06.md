@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Optimize over time
-<a name="gameops06"></a>
 
 |  GAMEOPS06: How do you optimize your game over time?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateS
 ---
 
 # UpdateSubnetGroup
-<a name="API_UpdateSubnetGroup"></a>
 
 Updates a subnet group. For more information, see [Updating a subnet group](https://docs.aws.amazon.com/MemoryDB/latest/devguide/ubnetGroups.Modifying.html)
 

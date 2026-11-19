@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetWorkflowExecution
-<a name="API_GetWorkflowExecution"></a>
 
 Retrieves runtime information for a specific runtime instance of the workflow.
 

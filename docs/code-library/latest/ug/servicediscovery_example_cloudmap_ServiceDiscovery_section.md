@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/servicediscovery_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get started with service discovery
-<a name="servicediscovery_example_cloudmap_ServiceDiscovery_section"></a>
 
 The following code example shows how to:
 + Create a public DNS namespace with Route 53 hosted zone integration

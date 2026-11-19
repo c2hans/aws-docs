@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_GetManage
 ---
 
 # GetManagedResource
-<a name="API_GetManagedResource"></a>
 
 Get information about a resource that's been registered for zonal shifts with Amazon Application Recovery Controller in this AWS Region. Resources that are registered for zonal shifts are managed resources in ARC. You can start zonal shifts and configure zonal autoshift for managed resources.
 

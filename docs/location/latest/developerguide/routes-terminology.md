@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/routes-te
 ---
 
 # Routes Terminology
-<a name="routes-terminology"></a>
 
 **Route**
 A route provides details for traveling from a departure position through waypoint positions to a destination. It includes travel distance, travel time, route geometry, speed limits, spans, and other attributes.

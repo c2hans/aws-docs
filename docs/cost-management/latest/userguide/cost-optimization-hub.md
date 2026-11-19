@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/cost-op
 ---
 
 # Identifying opportunities with Cost Optimization Hub
-<a name="cost-optimization-hub"></a>
 
 Cost Optimization Hub is an AWS Billing and Cost Management feature that helps you consolidate and prioritize cost optimization recommendations across your AWS accounts and AWS Regions, so that you can get the most out of your AWS spend.
 
@@ -30,6 +29,7 @@ Cost Optimization Hub provides you with a console experience and a set of API op
 + [Prioritizing your cost optimization opportunities](coh-prioritize-opportunities.md)
 + [Understanding cost optimization strategies](coh-optimization-strategies.md)
 + [Viewing your savings opportunities](coh-savings-opportunities.md)
++ [Stopping idle resources](coh-stop-idle-resources.md)
 + [Estimating monthly savings](coh-estimated-monthly-savings.md)
 + [Supported resources](#coh-supported-resources)
 

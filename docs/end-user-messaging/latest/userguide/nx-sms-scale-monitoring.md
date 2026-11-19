@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Monitoring
-<a name="nx-sms-scale-monitoring"></a>
 
 AWS End User Messaging gives you two complementary views of your SMS messaging, plus a record of your API activity and a way to report message outcomes. This topic describes how to set up each one.
 

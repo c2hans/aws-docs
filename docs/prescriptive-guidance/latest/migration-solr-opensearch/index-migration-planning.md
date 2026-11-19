@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Data migration planning
-<a name="index-migration-planning"></a>
 
 This section explores data migration paths and helps you select the most appropriate strategy for your use case. Before you begin your data migration to OpenSearch, choose the approach that best fits your requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_C
 ---
 
 # CreateProbe
-<a name="API_CreateProbe"></a>
 
 Create a probe within a monitor. After you create a probe and it begins monitoring your network traffic, you will incur billing charges for that probe. This action requires the `monitorName` parameter. Run `ListMonitors` to get a list of monitor names, and note the name of the `monitorName` you want to create the probe for.
 

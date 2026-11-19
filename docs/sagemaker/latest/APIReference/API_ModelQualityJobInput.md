@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelQ
 ---
 
 # ModelQualityJobInput
-<a name="API_ModelQualityJobInput"></a>
 
 The input for the model quality monitoring job. Currently endpoints are supported for input for model quality monitoring jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PromotionalEmbeddedVideo
-<a name="API_marketplace-discovery_PromotionalEmbeddedVideo"></a>
 
 An embedded promotional video for a product.
 

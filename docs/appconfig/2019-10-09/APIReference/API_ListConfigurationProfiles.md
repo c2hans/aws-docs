@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Li
 ---
 
 # ListConfigurationProfiles
-<a name="API_ListConfigurationProfiles"></a>
 
 Lists the configuration profiles for an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-op
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
  Cost optimization is a continual process of refinement and improvement across a workload's lifecycle. The practices in this paper help you build and operate cost-aware workloads that achieve business outcomes while minimizing costs, so your organization can maximize its return on investment.
 

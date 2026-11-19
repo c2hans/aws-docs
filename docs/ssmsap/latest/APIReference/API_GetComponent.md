@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetCompon
 ---
 
 # GetComponent
-<a name="API_GetComponent"></a>
 
 Gets the component of an application registered with AWS Systems Manager for SAP.
 

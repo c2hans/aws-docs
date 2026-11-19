@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS01-BP01 Regularly identify and classify applicable regulatory frameworks
-<a name="lsops01-bp01"></a>
 
  Conduct a systematic assessment to identify applicable regulatory frameworks based on product type assessment, geographic analysis, data classification, development phase mapping, and risk-based classification for comprehensive regulatory coverage for your life sciences workloads. Repeat this process as the project and its requirements evolve over time.
 

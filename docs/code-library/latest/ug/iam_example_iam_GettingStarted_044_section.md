@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Creating a managed monitoring workspace
-<a name="iam_example_iam_GettingStarted_044_section"></a>
 
 The following code example shows how to:
 + Create an IAM role for your workspace

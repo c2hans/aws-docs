@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Updat
 ---
 
 # UpdateRecoveryPointIndexSettings
-<a name="API_UpdateRecoveryPointIndexSettings"></a>
 
 This operation updates the settings of a recovery point index.
 

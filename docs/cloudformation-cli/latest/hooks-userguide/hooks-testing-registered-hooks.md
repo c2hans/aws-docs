@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Testing a custom Hook for public use
-<a name="hooks-testing-registered-hooks"></a>
 
 In order to publish your registered custom Hook, it must pass all test requirements defined for it. The following is a list of requirements needed before publishing your custom Hook as a third-party extension.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_StopTe
 ---
 
 # StopTextTranslationJob
-<a name="API_StopTextTranslationJob"></a>
 
 Stops an asynchronous batch translation job that is in progress.
 

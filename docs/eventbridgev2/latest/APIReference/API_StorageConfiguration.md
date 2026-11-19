@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_St
 ---
 
 # StorageConfiguration
-<a name="API_StorageConfiguration"></a>
 
 Event storage configuration for an event bus.
 

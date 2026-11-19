@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonRevisionDetail
-<a name="API_DaemonRevisionDetail"></a>
 
 Details about a daemon revision, including the running task counts per capacity provider.
 

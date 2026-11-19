@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_ListEn
 ---
 
 # ListEnvironments
-<a name="API_ListEnvironments"></a>
 
 Lists all environments in your account in descending environmentId order.
 

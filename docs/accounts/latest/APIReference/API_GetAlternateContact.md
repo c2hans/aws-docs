@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_GetAlte
 ---
 
 # GetAlternateContact
-<a name="API_GetAlternateContact"></a>
 
 Retrieves the specified alternate contact attached to an AWS account.
 

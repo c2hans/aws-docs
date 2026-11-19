@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Start
 ---
 
 # StartDashboardSnapshotJob
-<a name="API_StartDashboardSnapshotJob"></a>
 
 Starts an asynchronous job that generates a snapshot of a dashboard's output. You can request one or several of the following format configurations in each API call.
 + 1 PDF

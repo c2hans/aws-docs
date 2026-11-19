@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Customiz
 ---
 
 # CustomizationConfig
-<a name="API_CustomizationConfig"></a>
 
 A model customization configuration
 

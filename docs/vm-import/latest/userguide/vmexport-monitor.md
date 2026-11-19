@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport-moni
 ---
 
 # Monitor an instance export task
-<a name="vmexport-monitor"></a>
 
 After you start an instance export task using VM Import/Export, you can monitor the export operation.
 

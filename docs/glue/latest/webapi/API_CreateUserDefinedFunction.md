@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateUserDefined
 ---
 
 # CreateUserDefinedFunction
-<a name="API_CreateUserDefinedFunction"></a>
 
 Creates a new function definition in the Data Catalog.
 

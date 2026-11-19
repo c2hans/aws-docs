@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/iam-cross-serv
 ---
 
 # Cross-service confused deputy prevention
-<a name="iam-cross-service-confused-deputy-prevention"></a>
 
 In AWS, cross-service impersonation can occur when one service (the calling service) calls another service (the called service). The calling service can be manipulated to act on another customer's resources even though it shouldn't have the proper permissions, resulting in the confused deputy problem.
 

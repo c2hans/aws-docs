@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/migrationguide/migr
 ---
 
 # Updating firmware
-<a name="migrate-topic-firmware"></a>
 
 ## Step 1: Update the firmware
 <a name="migrate-topic-firmware-update"></a>

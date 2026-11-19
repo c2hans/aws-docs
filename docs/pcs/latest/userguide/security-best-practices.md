@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/security-best-pract
 ---
 
 # Security best practices for AWS Parallel Computing Service
-<a name="security-best-practices"></a>
 
 This section describes security best practices that are specific to AWS Parallel Computing Service (AWS PCS). To learn more about security best practices in AWS, see [Best Practices for Security, Identity, and Compliance](https://aws.amazon.com/architecture/security-identity-compliance).
 

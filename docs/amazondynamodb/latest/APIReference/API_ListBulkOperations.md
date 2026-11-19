@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_L
 ---
 
 # ListBulkOperations
-<a name="API_ListBulkOperations"></a>
 
 Lists bulk operations that started within the past 90 days for the current AWS account and AWS Region, with the most recent operations first. Results are paginated. Use the `NextToken` parameter to retrieve additional results.
 

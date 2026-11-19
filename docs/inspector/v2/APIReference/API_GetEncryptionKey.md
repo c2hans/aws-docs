@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetEncrypt
 ---
 
 # GetEncryptionKey
-<a name="API_GetEncryptionKey"></a>
 
 Gets an encryption key.
 

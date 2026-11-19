@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Agent
 ---
 
 # AgentAccessConfigForUpdate
-<a name="API_AgentAccessConfigForUpdate"></a>
 
 The configuration for updating agent access on a stack. This type supports partial updates, so you only need to specify the fields you want to change.
 

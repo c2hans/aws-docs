@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Data
 ---
 
 # DatadogAuthorizationConfig
-<a name="API_DatadogAuthorizationConfig"></a>
 
 Authorization configuration for Datadog MCP server (uses authorization discovery only).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 After you finish reviewing this guide, we recommend that you take the following next steps to implement MACO:
 

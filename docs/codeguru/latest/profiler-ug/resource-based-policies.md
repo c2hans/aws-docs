@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/resource-bas
 ---
 
 # Resource-based policies in CodeGuru Profiler
-<a name="resource-based-policies"></a>
 
  You control access to profiling groups in Amazon CodeGuru Profiler using profiling group resource-based policies.
 

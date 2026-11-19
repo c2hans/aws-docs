@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetVo
 ---
 
 # GetVocabulary
-<a name="API_GetVocabulary"></a>
 
 Provides information about the specified custom vocabulary.
 

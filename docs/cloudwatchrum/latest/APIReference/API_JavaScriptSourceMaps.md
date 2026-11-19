@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ja
 ---
 
 # JavaScriptSourceMaps
-<a name="API_JavaScriptSourceMaps"></a>
 
  A structure that contains the configuration for how an app monitor can unminify JavaScript error stack traces using source maps.
 

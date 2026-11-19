@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/filter-batch.html
 ---
 
 # Filtering batch recommendations and user segments (custom resources)
-<a name="filter-batch"></a>
 
 Filtering batch recommendations and user segments works nearly the same as filtering real-time recommendations. It follows the same workflow described in [Getting batch item recommendations](getting-batch-recommendations.md) or [Getting batch user segments](getting-user-segments.md). To filter batch recommendations or user segments, you do the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/how-use-local-
 ---
 
 # How to use the local proxy
-<a name="how-use-local-proxy"></a>
 
 You can run the local proxy on the source and destination devices to transmit data to the secure tunneling endpoints. If your devices are in a network that use a web proxy, the web proxy can intercept the connections before forwarding them to the internet. In this case, you'll need to configure your local proxy to use the web proxy. For more information, see [Configure local proxy for devices that use web proxy](configure-local-proxy-web-proxy.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/alter-database-set-dbpr
 ---
 
 # ALTER DATABASE SET DBPROPERTIES
-<a name="alter-database-set-dbproperties"></a>
 
 Creates one or more properties for a database. The use of `DATABASE` and `SCHEMA` are interchangeable; they mean the same thing.
 

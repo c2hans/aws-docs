@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/auth-how-
 ---
 
 # How to
-<a name="auth-how-to"></a>
 
 This section provides instructions for setting up and using each authentication method with Amazon Location Service.
 

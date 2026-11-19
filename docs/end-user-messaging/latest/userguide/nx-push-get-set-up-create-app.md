@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-p
 ---
 
 # Step 2: Create an application and enable push channels
-<a name="nx-push-get-set-up-create-app"></a>
 
 An application is a storage container for your AWS End User Messaging Push settings and channels. Before you can send push notifications, you create an application and enable the push notification channels you want to use. To complete this procedure you are only required to enter an application name, and you can enable or disable any of the push channels at a later time. Before you enable a channel, make sure you have valid credentials for that push notification service, as described in the preceding section.
 

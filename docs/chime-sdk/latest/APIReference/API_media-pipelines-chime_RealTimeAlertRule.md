@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # RealTimeAlertRule
-<a name="API_media-pipelines-chime_RealTimeAlertRule"></a>
 
 Specifies the words or phrases that trigger an alert.
 

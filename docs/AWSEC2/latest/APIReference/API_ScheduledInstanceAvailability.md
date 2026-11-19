@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstanceAvailability
-<a name="API_ScheduledInstanceAvailability"></a>
 
 Describes a schedule that is available for your Scheduled Instances.
 

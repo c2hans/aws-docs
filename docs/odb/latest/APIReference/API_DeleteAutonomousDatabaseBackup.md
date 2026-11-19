@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteAutono
 ---
 
 # DeleteAutonomousDatabaseBackup
-<a name="API_DeleteAutonomousDatabaseBackup"></a>
 
 Deletes the specified Autonomous Database backup.
 

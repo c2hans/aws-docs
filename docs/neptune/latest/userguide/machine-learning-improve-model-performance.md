@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Model training best practices
-<a name="machine-learning-improve-model-performance"></a>
 
 There are things you can do to improve the performance of Neptune ML models.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-setting-up.html
 ---
 
 # Setting up access for Amazon SNS
-<a name="sns-setting-up"></a>
 
 Before you can use Amazon SNS for the first time, you must complete the following steps.
 

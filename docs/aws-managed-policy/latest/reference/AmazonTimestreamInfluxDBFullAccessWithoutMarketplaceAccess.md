@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonTimestreamInfluxDBFullAccessWithoutMarketplaceAccess
-<a name="AmazonTimestreamInfluxDBFullAccessWithoutMarketplaceAccess"></a>
 
 **Description**: Provides administrative access to manage Amazon Timestream InfluxDB instances and parameter groups except marketplace operations.
 

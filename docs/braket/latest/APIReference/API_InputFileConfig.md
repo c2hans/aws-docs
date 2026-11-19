@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_InputFile
 ---
 
 # InputFileConfig
-<a name="API_InputFileConfig"></a>
 
 A list of parameters that specify the input channels, type of input data, and where it is located.
 

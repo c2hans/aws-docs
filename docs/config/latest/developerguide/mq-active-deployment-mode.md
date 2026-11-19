@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/mq-active-d
 ---
 
 # mq-active-deployment-mode
-<a name="mq-active-deployment-mode"></a>
 
 Checks the deployment mode configured for Amazon MQ ActiveMQ broker engine. The rule is NON\_COMPLIANT if the default single-instance broker mode is being used.
 

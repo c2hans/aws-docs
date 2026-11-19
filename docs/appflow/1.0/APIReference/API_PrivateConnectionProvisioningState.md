@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PrivateConn
 ---
 
 # PrivateConnectionProvisioningState
-<a name="API_PrivateConnectionProvisioningState"></a>
 
  Specifies the private connection provisioning state.
 

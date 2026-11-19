@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRou
 ---
 
 # CreateRouteServerPeer
-<a name="API_CreateRouteServerPeer"></a>
 
 Creates a new BGP peer for a specified route server endpoint.
 

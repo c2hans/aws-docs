@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Building a cost allocation strategy
-<a name="building-a-cost-allocation-strategy"></a>
 
 ## Defining and implementing a cost allocation model
 <a name="defining-and-implementing-a-cost-allocation-model"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/da
 ---
 
 # Data channel communication between an application and web client
-<a name="data-channels"></a>
 
  Data channels allow you to securely communicate arbitrary messages between your Amazon GameLift Streams application and the web client (the JavaScript code running in the end-user's web browser). This allows end-users to interact with the application that Amazon GameLift Streams is streaming, via the web browser where they're viewing the stream.
 

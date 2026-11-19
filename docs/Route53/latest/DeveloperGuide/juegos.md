@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/juegos.htm
 ---
 
 # .juegos
-<a name="juegos"></a>
 
 **Important**
 You can no longer use Route 53 to register new .juegos domains or transfer .juegos domains to Route 53. We'll continue to support .juegos domains that are already registered with Route 53.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormAIVersionSummary
-<a name="API_EvaluationFormAIVersionSummary"></a>
 
 Contains the name and lifecycle information for an AI version that you can use when creating or updating an evaluation form.
 

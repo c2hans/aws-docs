@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/mwaa-quotas.html
 ---
 
 # Amazon Managed Workflows for Apache Airflow service endpoints and quotas
-<a name="mwaa-quotas"></a>
 
 Amazon Managed Workflows for Apache Airflow has the following service quotas and endpoints. Service quotas, also referred to as limits, are the maximum number of service resources or operations for your AWS account.
 

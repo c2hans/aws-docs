@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TrafficMi
 ---
 
 # TrafficMirrorSession
-<a name="API_TrafficMirrorSession"></a>
 
 Describes a Traffic Mirror session.
 

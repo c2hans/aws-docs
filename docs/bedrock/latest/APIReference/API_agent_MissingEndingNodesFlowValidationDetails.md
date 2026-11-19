@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mi
 ---
 
 # MissingEndingNodesFlowValidationDetails
-<a name="API_agent_MissingEndingNodesFlowValidationDetails"></a>
 
 Details about missing ending nodes (such as FlowOutputNode) in the flow.
 

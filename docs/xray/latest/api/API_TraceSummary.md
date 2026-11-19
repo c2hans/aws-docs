@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_TraceSummary.html
 ---
 
 # TraceSummary
-<a name="API_TraceSummary"></a>
 
 Metadata generated from the segment documents in a trace.
 

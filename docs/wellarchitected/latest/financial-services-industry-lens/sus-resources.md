@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Resources
-<a name="sus-resources"></a>
 
 ## Documentation and blogs
 <a name="documentation-and-blogs-1"></a>

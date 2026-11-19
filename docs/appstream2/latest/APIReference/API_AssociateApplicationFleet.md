@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Assoc
 ---
 
 # AssociateApplicationFleet
-<a name="API_AssociateApplicationFleet"></a>
 
 Associates the specified application with the specified fleet. This is only supported for Elastic fleets.
 

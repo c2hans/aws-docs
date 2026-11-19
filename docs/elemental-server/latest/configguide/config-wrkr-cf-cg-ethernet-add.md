@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/configguide/conf
 This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
 
 # Add Ethernet Devices
-<a name="config-wrkr-cf-cg-ethernet-add"></a>
 
 The eth0 device was automatically set up during installation. If you also set up eth1 at that time, no further configuration is required. If you didn't set up eth1 or want to set up more devices, use these instructions to do so.
 

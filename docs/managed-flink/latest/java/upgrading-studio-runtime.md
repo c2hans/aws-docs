@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/upgrading-stud
 ---
 
 # Upgrade Studio Runtime
-<a name="upgrading-studio-runtime"></a>
 
 This section contains information about how to upgrade your Studio notebook Runtime. We recommend that you always upgrade to the latest supported Studio Runtime.
 

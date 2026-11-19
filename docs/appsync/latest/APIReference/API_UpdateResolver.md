@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateRe
 ---
 
 # UpdateResolver
-<a name="API_UpdateResolver"></a>
 
 Updates a `Resolver` object.
 

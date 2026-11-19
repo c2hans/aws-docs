@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateArgoCd
 ---
 
 # UpdateArgoCdConfig
-<a name="API_UpdateArgoCdConfig"></a>
 
 Configuration updates for an Argo CD capability. You only need to specify the fields you want to update.
 

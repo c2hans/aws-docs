@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/security_iam_tro
 ---
 
 # Troubleshooting Amazon FSx for Windows File Server identity and access
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with FSx for Windows File Server and IAM.
 

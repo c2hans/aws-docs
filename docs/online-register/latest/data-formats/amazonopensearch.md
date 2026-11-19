@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon OpenSearch
-<a name="amazonopensearch"></a>
 
 Amazon OpenSearch provides the following APIs for data retrieval.
 

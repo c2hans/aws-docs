@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-prepar
 ---
 
 # Planning your SaaS product
-<a name="saas-prepare"></a>
 
 Before you add your software as a service (SaaS) product to AWS Marketplace, you must first do some planning. This step is critical to the success of your product. A lack of planning can result in billing issues or you might have to re-create your product in AWS Marketplace. The following sections show you how to plan for SaaS product,
 

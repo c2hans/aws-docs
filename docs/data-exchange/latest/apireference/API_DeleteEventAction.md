@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_De
 ---
 
 # DeleteEventAction
-<a name="API_DeleteEventAction"></a>
 
 This operation deletes the event action.
 

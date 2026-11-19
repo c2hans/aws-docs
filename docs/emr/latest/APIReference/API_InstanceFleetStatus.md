@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceFlee
 ---
 
 # InstanceFleetStatus
-<a name="API_InstanceFleetStatus"></a>
 
 The status of the instance fleet.
 

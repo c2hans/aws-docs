@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayRequestOptions
-<a name="API_TransitGatewayRequestOptions"></a>
 
 Describes the options for a transit gateway.
 

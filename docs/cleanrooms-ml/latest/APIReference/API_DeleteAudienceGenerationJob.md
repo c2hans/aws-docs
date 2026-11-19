@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_De
 ---
 
 # DeleteAudienceGenerationJob
-<a name="API_DeleteAudienceGenerationJob"></a>
 
 Deletes the specified audience generation job, and removes all data associated with the job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteFlowDefinition
-<a name="API_DeleteFlowDefinition"></a>
 
 Deletes the specified flow definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-acc-inst-typ
 ---
 
 # Maximize network bandwidth on Amazon EC2 instances with multiple network cards
-<a name="efa-acc-inst-types"></a>
 
 Many instances types that support EFA also have multiple network cards. For more information, see [Network cards](using-eni.md#network-cards). If you plan to use EFA with one of these instance types, we recommend the following basic configuration:
 + For the primary network interface (network card index `0`, device index `0`), create an ENA interface. You can't use an EFA-only network interface as the primary network interface.

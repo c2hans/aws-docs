@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_ListSc
 ---
 
 # ListSchedules
-<a name="API_ListSchedules"></a>
 
 Returns a paginated list of your EventBridge Scheduler schedules.
 

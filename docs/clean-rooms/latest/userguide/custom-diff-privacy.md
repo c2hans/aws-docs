@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/custom-diff
 ---
 
 # Custom analysis rule with differential privacy
-<a name="custom-diff-privacy"></a>
 
 In AWS Clean Rooms, the custom analysis rule supports differential privacy. Differential privacy is a mathematically-rigorous framework for data privacy protection that helps you protect your data against re-identification attempts.
 

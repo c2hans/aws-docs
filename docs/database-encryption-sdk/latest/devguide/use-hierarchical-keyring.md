@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # AWS KMS Hierarchical keyrings
-<a name="use-hierarchical-keyring"></a>
 
 |  |
 | --- |

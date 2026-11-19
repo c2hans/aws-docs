@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-
 ---
 
 # Retrieving the results of a remote access session in AWS Device Farm
-<a name="how-to-access-session-results"></a>
 
 For information about sessions, see [Sessions](sessions.md).
 + [Prerequisites](#how-to-access-session-results-prerequisites)

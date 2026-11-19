@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListDatab
 ---
 
 # ListDatabases
-<a name="API_ListDatabases"></a>
 
 Lists the databases in the specified data catalog.
 

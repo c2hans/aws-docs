@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Delete
 ---
 
 # DeleteWorkflowType
-<a name="API_DeleteWorkflowType"></a>
 
 Deletes the specified *workflow type*.
 

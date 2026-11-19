@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_CreateAppAuthor
 ---
 
 # CreateAppAuthorization
-<a name="API_CreateAppAuthorization"></a>
 
 Creates an app authorization within an app bundle, which allows AppFabric to connect to an application.
 

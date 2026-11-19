@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeletePolicy
 ---
 
 # DeletePolicyVersion
-<a name="API_DeletePolicyVersion"></a>
 
 Deletes the specified version of the specified policy. You cannot delete the default version of a policy using this action. To delete the default version of a policy, use [DeletePolicy](API_DeletePolicy.md). To find out which version of a policy is marked as the default version, use ListPolicyVersions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/s
 ---
 
 # Simplified AWS service information for programmatic access
-<a name="service-reference"></a>
 
 AWS provides service reference information in JSON format to streamline the automation of policy management workflows. With the service reference information, you can access available operations, actions, resources, and condition keys across AWS services from machine-readable files. Service reference information includes metadata beyond authorization details, including IAM action last accessed information and IAM Access Analyzer policy generation data.
 

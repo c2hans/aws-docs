@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListLinks.html
 ---
 
 # ListLinks
-<a name="API_ListLinks"></a>
 
 Lists links associated with gateways.
 

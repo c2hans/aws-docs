@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcRou
 ---
 
 # GrpcRouteMetadata
-<a name="API_GrpcRouteMetadata"></a>
 
 An object that represents the match metadata for the route.
 

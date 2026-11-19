@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/cost-alloc
 ---
 
 # Using cost allocation tagging
-<a name="cost-allocation-tagging"></a>
 
 AWS Marketplace supports cost allocation tagging for software products that you purchase. You can use activated cost allocation tags to identify and track AWS Marketplace resource usage through AWS Cost Explorer, AWS Cost and Usage Reports, AWS Budgets, or other cloud cost analysis tools.
 

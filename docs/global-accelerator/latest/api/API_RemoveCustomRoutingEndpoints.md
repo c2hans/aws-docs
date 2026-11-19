@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Remove
 ---
 
 # RemoveCustomRoutingEndpoints
-<a name="API_RemoveCustomRoutingEndpoints"></a>
 
 Remove endpoints from a custom routing accelerator.
 

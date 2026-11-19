@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/adminguide/getting-started
 ---
 
 # Create your Amazon Connect Talent instance
-<a name="getting-started-create"></a>
 
 ## Start using Amazon Connect Talent
 <a name="getting-started-start"></a>

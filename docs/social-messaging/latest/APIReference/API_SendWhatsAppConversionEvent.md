@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # SendWhatsAppConversionEvent
-<a name="API_SendWhatsAppConversionEvent"></a>
 
 Sends a conversion event to Meta's Conversions API for the specified WhatsApp Business Account dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_RdsLim
 ---
 
 # RdsLimitlessDbDetails
-<a name="API_RdsLimitlessDbDetails"></a>
 
 Contains information about the resource type `RDSLimitlessDB` that is involved in a GuardDuty finding.
 

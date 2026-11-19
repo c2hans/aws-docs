@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/supported-functio
 ---
 
 # Functions for pivot table calculations
-<a name="supported-functions"></a>
 
 You can use the following functions in pivot table calculations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/getting-started-f
 ---
 
 # Getting started with flows
-<a name="getting-started-flows"></a>
 
 This tutorial shows you how to use AWS Elemental MediaConnect to create and share flows. The tutorial is based on a scenario where you want to do all of the following:
 + Ingest a live video stream of an awards show that is taking place in New York City.

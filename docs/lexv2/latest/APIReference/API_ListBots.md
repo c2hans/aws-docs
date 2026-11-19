@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBots.h
 ---
 
 # ListBots
-<a name="API_ListBots"></a>
 
 Gets a list of available bots.
 

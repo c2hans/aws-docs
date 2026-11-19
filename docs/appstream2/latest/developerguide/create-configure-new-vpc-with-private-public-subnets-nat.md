@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/create-
 ---
 
 # Create and Configure a New VPC
-<a name="create-configure-new-vpc-with-private-public-subnets-nat"></a>
 
 This topic describes how to use the VPC wizard to create a VPC with a public subnet and one private subnet. As part of this process, the wizard creates an internet gateway and a NAT gateway. It also creates a custom route table associated with the public subnet and updates the main route table associated with the private subnet. The NAT gateway is automatically created in the public subnet of your VPC.
 

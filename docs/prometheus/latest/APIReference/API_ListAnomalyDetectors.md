@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_ListA
 ---
 
 # ListAnomalyDetectors
-<a name="API_ListAnomalyDetectors"></a>
 
 Returns a paginated list of anomaly detectors for a workspace with optional filtering by alias.
 

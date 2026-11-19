@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CacheBehaviorPerPath
-<a name="API_CacheBehaviorPerPath"></a>
 
 Describes the per-path cache behavior of an Amazon Lightsail content delivery network (CDN) distribution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/batch-build-b
 ---
 
 # Batch build buildspec reference
-<a name="batch-build-buildspec"></a>
 
 This topic contains the buildspec reference for batch build properties.
 

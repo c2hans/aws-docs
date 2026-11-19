@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle XML DB and MySQL XML
-<a name="chap-oracle-aurora-mysql.special.xmldb"></a>
 
 With AWS DMS, you can migrate data between different database engines, including Oracle XML DB and MySQL XML. Oracle XML DB is a feature that provides XML support for storing, processing, and managing XML data in an Oracle database. MySQL XML extends the MySQL server by providing an XML data type for storing XML documents, in addition to functions for extracting and searching XML data.
 

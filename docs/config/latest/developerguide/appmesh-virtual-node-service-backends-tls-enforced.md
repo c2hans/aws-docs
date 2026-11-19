@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/appmesh-vir
 ---
 
 # appmesh-virtual-node-service-backends-tls-enforced
-<a name="appmesh-virtual-node-service-backends-tls-enforced"></a>
 
 Checks if service backends for AWS App Mesh virtual nodes require the virtual nodes to communicate with all ports using TLS. The rule is NON\_COMPLIANT if any configuration.Spec.Backends[].ClientPolicy.Tls.Enforce is false.
 

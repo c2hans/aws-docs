@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SessionSpe
 ---
 
 # SessionSpecification
-<a name="API_SessionSpecification"></a>
 
 An object containing information about a specific session.
 

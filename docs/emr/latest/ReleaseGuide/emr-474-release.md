@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-474-release.
 ---
 
 # Amazon EMR release 4.7.4
-<a name="emr-474-release"></a>
 
 ## 4.7.4 application versions
 <a name="emr-474-app-versions"></a>

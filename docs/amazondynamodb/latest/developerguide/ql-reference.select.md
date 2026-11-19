@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # PartiQL select statements for DynamoDB
-<a name="ql-reference.select"></a>
 
 Use the `SELECT` statement to retrieve data from a table in Amazon DynamoDB.
 

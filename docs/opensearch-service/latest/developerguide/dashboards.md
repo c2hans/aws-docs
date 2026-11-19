@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using OpenSearch Dashboards with Amazon OpenSearch Service
-<a name="dashboards"></a>
 
 OpenSearch Dashboards is an open-source visualization tool designed to work with OpenSearch. Amazon OpenSearch Service provides an installation of Dashboards with every OpenSearch Service domain. Dashboards runs on the hot data nodes in the domain.
 

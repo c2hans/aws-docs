@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_UpdateMi
 ---
 
 # UpdateMicrosoftTeamsChannelConfiguration
-<a name="API_UpdateMicrosoftTeamsChannelConfiguration"></a>
 
 Updates an Microsoft Teams channel configuration.
 

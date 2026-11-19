@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/network-acl-associa
 ---
 
 # Manage network ACL associations for your VPC
-<a name="network-acl-associations"></a>
 
 Each subnet is associated with one network ACL. When you first create a subnet, it is associated with the default network ACL for the VPC. You can create a custom network ACL and associate it with one or more subnets, replacing the previous network ACL association.
 

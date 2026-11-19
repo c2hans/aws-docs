@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetDistributionMetricData
-<a name="API_GetDistributionMetricData"></a>
 
 Returns the data points of a specific metric for an Amazon Lightsail content delivery network (CDN) distribution.
 

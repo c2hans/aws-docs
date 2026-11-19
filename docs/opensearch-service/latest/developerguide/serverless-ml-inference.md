@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # ML inference pipelines in Amazon OpenSearch Serverless
-<a name="serverless-ml-inference"></a>
 
 The `ml_inference` processor in Amazon OpenSearch Serverless is a general-purpose processor that calls a configured machine learning model and maps the model's inputs and outputs to document or query fields. You control the mapping with the `input_map` and `output_map` parameters, which specify the document or query fields that supply the model input and the fields that receive the model output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSN
 ---
 
 # AWSNetworkFirewallIGWServiceRolePolicy
-<a name="AWSNetworkFirewallIGWServiceRolePolicy"></a>
 
 **Description**: Allows AWS Network Firewall to manage resources required for IGW Firewall on your behalf. Example of such resources include elastic IP addresses for network address translation.
 

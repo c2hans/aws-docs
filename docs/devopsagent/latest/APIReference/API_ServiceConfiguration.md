@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Serv
 ---
 
 # ServiceConfiguration
-<a name="API_ServiceConfiguration"></a>
 
 Union of all supported service configuration types. Each service has its own specific configuration structure.
 

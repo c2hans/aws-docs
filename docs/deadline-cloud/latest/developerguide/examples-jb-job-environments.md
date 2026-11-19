@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Use job environments on Deadline Cloud
-<a name="examples-jb-job-environments"></a>
 
 The following job bundles supplement the [Control the job environment with OpenJD queue environments](control-the-job-environment.md) section in the developer guide. Each demonstrates a different way to use [Open Job Description environments](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment) on the GitHub website. The following bundles are in the [deadline-cloud-samples](https://github.com/aws-deadline/deadline-cloud-samples) repository on the GitHub website:
 

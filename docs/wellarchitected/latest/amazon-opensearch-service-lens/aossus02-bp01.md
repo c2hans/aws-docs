@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSUS02-BP01 Evaluate instances in alignment to sustainability goals
-<a name="aossus02-bp01"></a>
 
  Reduce carbon footprint, improve sustainability performance, and enhance regulatory compliance by evaluating instance choices that align with your organization's sustainability goals.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/using-the-rest-
 ---
 
 # Using the REST API for static overlays
-<a name="using-the-rest-api-for-static-overlays"></a>
 
 **Topics**
 + [Static graphic overlay commands](static-graphic-overlay-commands.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-
 ---
 
 # Cancelling a device slot in Device Farm
-<a name="how-to-cancel-device-slots"></a>
 
 You can cancel the number of device slots for both automated testing and remote access. The amount charged to your account for the next billing cycle will be listed underneath the billing period field..
 

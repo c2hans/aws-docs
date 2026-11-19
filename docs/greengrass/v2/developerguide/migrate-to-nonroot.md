@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-to-
 ---
 
 # Migrate AWS IoT Greengrass V2 core devices to non-root
-<a name="migrate-to-nonroot"></a>
 
 **Important**
 This topic describes a recommended migration approach. You might need to adapt these steps for your device configuration, operating system, and installed software.

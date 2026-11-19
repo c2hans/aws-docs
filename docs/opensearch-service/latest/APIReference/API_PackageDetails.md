@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PackageDetails
-<a name="API_PackageDetails"></a>
 
 Basic information about a package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/working-wi
 ---
 
 # Configuring the AWS Management Console using Unified Settings
-<a name="working-with-console"></a>
 
 This topic describes how to configure your AWS Management Console using the Unified Settings page to set defaults that apply to all service consoles.
 

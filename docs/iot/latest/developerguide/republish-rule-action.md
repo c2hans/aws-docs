@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/republish-rule
 ---
 
 # Republish
-<a name="republish-rule-action"></a>
 
 The republish (`republish`) action republishes an MQTT message to another MQTT topic.
 
@@ -119,4 +118,4 @@ The following JSON example defines a republish action with `headers` in an AWS I
 ```
 
 **Note**
-The original source IP won't be passed though [Republish action](#republish-rule-action).
+The original source IP won't be passed though [Republish action](republish-rule-action.md).

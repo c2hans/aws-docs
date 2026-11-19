@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # relevantfields
-<a name="CWL_QuerySyntax-RelevantFields"></a>
 
 Use `relevantfields` to automatically identify which fields in your log data are most relevant to a given condition. The command compares the baseline logs against the subset matching your condition, and returns fields ranked by their relevance score.
 

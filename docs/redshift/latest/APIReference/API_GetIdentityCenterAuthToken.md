@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_GetIden
 ---
 
 # GetIdentityCenterAuthToken
-<a name="API_GetIdentityCenterAuthToken"></a>
 
 Generates an encrypted authentication token that propagates the caller's AWS IAM Identity Center identity to Amazon Redshift clusters. This API extracts the AWS IAM Identity Center identity from enhanced credentials and creates a secure token that Amazon Redshift drivers can use for authentication.
 

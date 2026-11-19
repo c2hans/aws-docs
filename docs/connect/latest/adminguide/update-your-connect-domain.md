@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/update-your-co
 ---
 
 # Update your Connect Customer domain
-<a name="update-your-connect-domain"></a>
 
 Connect Customer instances that were created before March 31, 2021, were given a domain that looks like this:
 +  https://{{your-instance-alias}}.**awsapps.com/connect/**

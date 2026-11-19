@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/devel
 ---
 
 # Asynchronous programming in the Amazon S3 Encryption Client for Java
-<a name="using-s3ec-async"></a>
 
 Version 3.*x* and later of the Amazon S3 Encryption Client provides a nonblocking asynchronous client that implements high concurrency across a few threads. The asynchronous client enables you to perform requests sequentially without waiting to view results between each request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 4: Map IAM identities on both sides
-<a name="pb-aoss-map-identities"></a>
 
 Both the source and the target use SigV4 in this migration, but with different service names. Load the version-matched sample and open the configuration:
 

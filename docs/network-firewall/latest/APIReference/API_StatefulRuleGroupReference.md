@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # StatefulRuleGroupReference
-<a name="API_StatefulRuleGroupReference"></a>
 
 Identifier for a single stateful rule group, used in a firewall policy to refer to a rule group.
 

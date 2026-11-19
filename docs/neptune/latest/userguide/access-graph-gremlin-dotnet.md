@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Using .NET to connect to a Neptune DB instance
-<a name="access-graph-gremlin-dotnet"></a>
 
 **Important**
 Choosing the correct Apache TinkerPop Gremlin driver version is critical for compatibility with your Neptune engine version. Using an incompatible version can result in connection failures or unexpected behavior. For detailed version compatibility information, see [Accessing a Neptune graph with Gremlin](access-graph-gremlin.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-data-pr
 ---
 
 # Preparing data for SFT on Amazon Nova 2
-<a name="nova-data-prep-sft-2"></a>
 
 SFT on Amazon Nova 2 supports text, image, video, and document understanding, as well as tool calling, with or without reasoning support. This page describes the constraints, supported formats, and best practices for preparing SFT training data for Amazon Nova 2 Understanding models.
 

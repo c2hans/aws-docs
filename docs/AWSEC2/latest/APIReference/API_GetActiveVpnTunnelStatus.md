@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetActive
 ---
 
 # GetActiveVpnTunnelStatus
-<a name="API_GetActiveVpnTunnelStatus"></a>
 
 Returns the currently negotiated security parameters for an active VPN tunnel, including IKE version, DH groups, encryption algorithms, and integrity algorithms.
 

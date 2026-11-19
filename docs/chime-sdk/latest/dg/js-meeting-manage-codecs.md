@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/js-meeting-manage-co
 ---
 
 # Configuring video codecs for Amazon Chime SDK meetings
-<a name="js-meeting-manage-codecs"></a>
 
 A client device uses a video codec to compress raw video before it is sent to the service, and to decompress received video before it's rendered.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaInvocation-DynamoDB
-<a name="AWSLambdaInvocation-DynamoDB"></a>
 
 **Description**: Provides read access to DynamoDB Streams.
 

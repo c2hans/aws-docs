@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ScheduledOpe
 ---
 
 # ScheduledOperationDetails
-<a name="API_ScheduledOperationDetails"></a>
 
 The scheduled start and stop times for an Autonomous Database on a specific day of the week.
 

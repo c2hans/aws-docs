@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Capabilit
 ---
 
 # CapabilityReportEndpoint
-<a name="API_CapabilityReportEndpoint"></a>
 
 The endpoint used in the capability report.
 

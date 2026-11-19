@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceIa
 ---
 
 # ReplaceIamInstanceProfileAssociation
-<a name="API_ReplaceIamInstanceProfileAssociation"></a>
 
 Replaces an IAM instance profile for the specified running instance. You can use this action to change the IAM instance profile that's associated with an instance without having to disassociate the existing IAM instance profile first.
 

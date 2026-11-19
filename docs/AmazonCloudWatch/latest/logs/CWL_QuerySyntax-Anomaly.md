@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # anomaly
-<a name="CWL_QuerySyntax-Anomaly"></a>
 
  Use `anomaly` to automatically identify unusual patterns and potential issues within your log data using machine learning.
 

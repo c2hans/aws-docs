@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Service
 ---
 
 # ServiceUpdateRequest
-<a name="API_ServiceUpdateRequest"></a>
 
 A request to apply a service update
 

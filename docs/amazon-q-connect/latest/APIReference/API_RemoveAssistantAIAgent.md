@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # RemoveAssistantAIAgent
-<a name="API_amazon-q-connect_RemoveAssistantAIAgent"></a>
 
 Removes the AI Agent that is set for use by default on an Amazon Q in Connect Assistant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DeleteConnectC
 ---
 
 # DeleteConnectClientAddIn
-<a name="API_DeleteConnectClientAddIn"></a>
 
 Deletes a client-add-in for Connect Customer that is configured within a directory.
 

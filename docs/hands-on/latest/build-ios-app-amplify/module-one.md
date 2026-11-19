@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/mo
 ---
 
 # Module 1: Create an iOS app
-<a name="module-one"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/templateswi
 ---
 
 # Example Templates with Remediation Action
-<a name="templateswithremediation"></a>
 
 ## Operational Best Practices For Amazon DynamoDB with Remediation
 <a name="operational-best-practices-for-amazon-dynamodb-with-remediation"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ListAccessPreviews
-<a name="API_ListAccessPreviews"></a>
 
 Retrieves a list of access previews for the specified analyzer.
 

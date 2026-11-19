@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/working-w
 ---
 
 # Calling AWS services from the AWS SDK for C\+\+
-<a name="working-with-aws-services"></a>
 
 The following sections contain examples, tutorials, tasks, and guides that show you how to use the AWS SDK for C\+\+ to work with AWS services.
 

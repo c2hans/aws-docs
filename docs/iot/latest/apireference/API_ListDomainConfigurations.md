@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListDomainCo
 ---
 
 # ListDomainConfigurations
-<a name="API_ListDomainConfigurations"></a>
 
 Gets a list of domain configurations for the user. This list is sorted alphabetically by domain configuration name.
 

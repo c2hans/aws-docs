@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/toxicity-using.html
 ---
 
 # Using toxic speech detection
-<a name="toxicity-using"></a>
 
 ## Using toxic speech detection in a batch transcription
 <a name="toxicity-using-batch"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/migrating-to
 ---
 
 # Migrating to ElastiCache
-<a name="migrating-to-elasticache"></a>
 
 With online migration, you point ElastiCache at your running self-managed source, and ElastiCache replicates your data into a target cache while your source keeps serving.
 

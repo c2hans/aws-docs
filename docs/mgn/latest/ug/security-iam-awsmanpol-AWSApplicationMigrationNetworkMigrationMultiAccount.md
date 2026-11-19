@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationNetworkMigrationMultiAccount
-<a name="security-iam-awsmanpol-AWSApplicationMigrationNetworkMigrationMultiAccount"></a>
 
 You can attach the `AWSApplicationMigrationNetworkMigrationMultiAccount` policy to your IAM identities.
 

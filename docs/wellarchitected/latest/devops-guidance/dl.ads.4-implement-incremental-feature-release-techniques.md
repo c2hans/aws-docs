@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.ADS.4] Implement Incremental Feature Release Techniques
-<a name="dl.ads.4-implement-incremental-feature-release-techniques"></a>
 
  **Category:** RECOMMENDED
 

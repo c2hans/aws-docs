@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # Strategies for homogeneous migration of Oracle databases to the AWS Cloud
-<a name="introduction"></a>
 
 *Rajesh kumar Sabankar, Viqash Adwani, and Jeevan Shetty, Amazon Web Services*
 

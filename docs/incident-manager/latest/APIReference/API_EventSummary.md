@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # EventSummary
-<a name="API_EventSummary"></a>
 
 Details about a timeline event during an incident.
 

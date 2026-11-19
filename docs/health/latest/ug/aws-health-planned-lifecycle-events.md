@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/aws-health-planned-life
 ---
 
 # Planned lifecycle events for AWS Health
-<a name="aws-health-planned-lifecycle-events"></a>
 
 Learn about planned lifecycle events for AWS Health.
 

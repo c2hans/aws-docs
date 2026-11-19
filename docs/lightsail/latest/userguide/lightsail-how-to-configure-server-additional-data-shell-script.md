@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-how
 ---
 
 # Configure Linux/Unix instances with launch scripts in Lightsail
-<a name="lightsail-how-to-configure-server-additional-data-shell-script"></a>
 
 When you create a Linux or Unix-based instance, you can add a launch script to add or update software, or configure your instance in some other way. To configure a Windows-based instance with additional data, see [Configure your new Lightsail instance using Windows PowerShell](create-powershell-script-that-runs-when-you-create-windows-based-instance-in-lightsail.md).
 

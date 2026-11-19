@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/joining-data.html
 ---
 
 # Joining data
-<a name="joining-data"></a>
 
 You can use the join interface in AWS Quick Sight to join objects from one or more data sources. By using AWS Quick Sight to join the data, you can merge disparate data without duplicating the data from different sources.
 

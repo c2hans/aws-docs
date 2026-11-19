@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Cost Optimization Hub
-<a name="API_Operations_Cost_Optimization_Hub"></a>
 
 The following actions are supported by AWS Cost Optimization Hub:
 +  [GetPreferences](API_CostOptimizationHub_GetPreferences.md)

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolRegionalConfigurationAttachment EmailConfiguration
-<a name="aws-properties-cognito-userpoolregionalconfigurationattachment-emailconfiguration"></a>
 
 <a name="aws-properties-cognito-userpoolregionalconfigurationattachment-emailconfiguration-description"></a>The `EmailConfiguration` property type specifies Property description not available. for an [AWS::Cognito::UserPoolRegionalConfigurationAttachment](aws-resource-cognito-userpoolregionalconfigurationattachment.md).
 

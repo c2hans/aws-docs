@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/vpc-interface-endpoi
 ---
 
 # AWS PrivateLink for Amazon Chime SDK
-<a name="vpc-interface-endpoints"></a>
 
 With AWS PrivateLink, you can create interface virtual private cloud (VPC) endpoints to access Amazon Chime SDK Voice, Amazon Chime SDK Meetings, Amazon Chime SDK Messaging, Amazon Chime SDK Identity, and Amazon Chime SDK Media Pipelines APIs directly from your VPC. When you use an interface endpoint, traffic between your VPC and these services stays within the AWS network and doesn't traverse the public internet.
 

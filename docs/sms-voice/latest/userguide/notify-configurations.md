@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/notify-config
 ---
 
 # Managing Notify configurations
-<a name="notify-configurations"></a>
 
 A Notify configuration is the central resource for Notify. It defines your display name, use case, enabled channels, enabled countries, and optional settings like a default template and associated phone pool.
 

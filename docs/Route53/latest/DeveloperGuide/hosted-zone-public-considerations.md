@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zon
 ---
 
 # Considerations when working with public hosted zones
-<a name="hosted-zone-public-considerations"></a>
 
 Note the following considerations when working with public hosted zones:
 

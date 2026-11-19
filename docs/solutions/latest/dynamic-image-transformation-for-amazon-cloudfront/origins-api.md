@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Origins API
-<a name="origins-api"></a>
 
 Manage origin configurations that define source locations for images.
 

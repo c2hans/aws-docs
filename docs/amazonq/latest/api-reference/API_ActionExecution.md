@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ActionE
 ---
 
 # ActionExecution
-<a name="API_ActionExecution"></a>
 
 Performs an Amazon Q Business plugin action during a non-streaming chat conversation.
 

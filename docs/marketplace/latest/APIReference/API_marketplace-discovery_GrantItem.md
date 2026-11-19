@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # GrantItem
-<a name="API_marketplace-discovery_GrantItem"></a>
 
 An entitlement granted to the buyer as part of a pricing term.
 

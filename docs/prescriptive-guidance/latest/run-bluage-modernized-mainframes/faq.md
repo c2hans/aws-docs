@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/run-bluage-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## What performance controls are available for modernized mainframe workloads?
 <a name="faq1"></a>

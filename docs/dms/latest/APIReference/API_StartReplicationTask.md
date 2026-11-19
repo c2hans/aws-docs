@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartReplica
 ---
 
 # StartReplicationTask
-<a name="API_StartReplicationTask"></a>
 
 Starts the replication task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/viewing-consol
 ---
 
 # Customize your console view
-<a name="viewing-console-customize"></a>
 
 You can customize the view of the AWS KMS console to make it easier to find your KMS keys. Customize the tables that appear on the **AWS managed keys** and **Customer managed keys** pages to display the information that you need the most, or sort and filter the KMS keys returned in the tables.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AIMLOptionsInput
-<a name="API_AIMLOptionsInput"></a>
 
 Container for parameters required to enable all machine learning features.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/set-langu
 ---
 
 # How to set language for static maps
-<a name="set-language-static-map"></a>
 
 You can set the language for a static map, in case you don't want to use the default language.
 

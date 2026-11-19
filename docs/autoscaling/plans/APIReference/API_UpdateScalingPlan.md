@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Updat
 ---
 
 # UpdateScalingPlan
-<a name="API_UpdateScalingPlan"></a>
 
 Updates the specified scaling plan.
 

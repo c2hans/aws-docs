@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-iot-twinmak
 ---
 
 # Connect to an AWS IoT TwinMaker data source
-<a name="AMG-iot-twinmaker"></a>
 
 ****
 This plugin is supported in Grafana versions <=12.4.

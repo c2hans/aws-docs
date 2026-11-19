@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Scenario 4: Privacy-enhanced collaboration
-<a name="scenario-04-privacy-enhanced-collaboration"></a>
 
  Publishers, advertisers, and measurement providers need to collaborate on audience analysis, campaign attribution, and reach measurement without sharing raw personal data across organizational boundaries. Privacy-enhancing technologies (PETs) enable these insights while maintaining individual privacy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GitL
 ---
 
 # GitLabDetails
-<a name="API_GitLabDetails"></a>
 
 Service details for GitLab integration.
 

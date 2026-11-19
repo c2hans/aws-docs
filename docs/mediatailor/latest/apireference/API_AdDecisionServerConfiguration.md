@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_AdDe
 ---
 
 # AdDecisionServerConfiguration
-<a name="API_AdDecisionServerConfiguration"></a>
 
 Configuration parameters for customizing HTTP requests sent to the ad decision server (ADS). This allows you to specify the HTTP method, headers, request body, and compression settings for ADS requests.
 

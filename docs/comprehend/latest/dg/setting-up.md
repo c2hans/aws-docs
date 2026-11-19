@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/setting-up.html
 ---
 
 # Setting up
-<a name="setting-up"></a>
 
 Before you use Amazon Comprehend for the first time, complete the following tasks.
 

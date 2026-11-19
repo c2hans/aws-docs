@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/channels-v
 ---
 
 # Viewing channel details in AWS Elemental MediaPackage
-<a name="channels-view"></a>
 
 These steps show how to view all channels that are configured in AWS Elemental MediaPackage. You can view specific channel details, including the origin endpoints that are associated with it. You can use the MediaPackage console, the AWS Command Line Interface (AWS CLI), or the MediaPackage API to view channel details.
 

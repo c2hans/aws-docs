@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/customizing-table
 ---
 
 # Customizing tables and pivot tables in AWS Quick Sight
-<a name="customizing-tables-pivot-tables"></a>
 
 Reader customization for tables and pivot tables is enabled by default. You can change the visual to fit your analysis needs without requesting updates from the dashboard author. Your customizations are private – other readers of the same dashboard don't see your changes unless you share them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Dimension
 ---
 
 # DimensionCondition
-<a name="API_DimensionCondition"></a>
 
  Specifies a condition for filtering capacity data based on dimension values. Used to create precise filters for metric queries and dimension lookups.
 

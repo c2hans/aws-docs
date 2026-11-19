@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GatewayProtocolConfiguration
-<a name="API_GatewayProtocolConfiguration"></a>
 
 The configuration for a gateway protocol. This structure defines how the gateway communicates with external services.
 

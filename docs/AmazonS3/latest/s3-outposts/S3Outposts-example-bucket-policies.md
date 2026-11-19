@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3Outposts-e
 ---
 
 # Bucket policy examples
-<a name="S3Outposts-example-bucket-policies"></a>
 
 With S3 on Outposts bucket policies, you can secure access to objects in your S3 on Outposts buckets, so that only users with the appropriate permissions can access them. You can even prevent authenticated users without the appropriate permissions from accessing your S3 on Outposts resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Transiti
 ---
 
 # Transition
-<a name="API_control_Transition"></a>
 
 Specifies when an object transitions to a specified storage class. For more information about Amazon S3 Lifecycle configuration rules, see [ Transitioning objects using Amazon S3 Lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/dev/lifecycle-transition-general-considerations.html) in the *Amazon S3 User Guide*.
 

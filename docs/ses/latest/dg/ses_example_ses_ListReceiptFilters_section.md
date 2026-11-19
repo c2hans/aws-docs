@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_ListReceip
 ---
 
 # Use `ListReceiptFilters` with an AWS SDK
-<a name="ses_example_ses_ListReceiptFilters_section"></a>
 
 The following code examples show how to use `ListReceiptFilters`.
 

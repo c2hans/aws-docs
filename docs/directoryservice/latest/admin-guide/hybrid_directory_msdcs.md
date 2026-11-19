@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/hybr
 ---
 
 # DNS `_msdcs` zone modernization
-<a name="hybrid_directory_msdcs"></a>
 
 Modernizing a DNS `_msdcs` zone is a mandatory prerequisite before Hybrid AD directory creation. In modern Active Directory environments, `_msdcs.<ForestRoot>` is created as a separate, forest-wide replicated zone stored in the ForestDnsZones application partition. In legacy environments originally built on Windows NT 4.0 or Windows 2000 (and subsequently upgraded), `_msdcs` was never separated; it exists simply as a standard subdomain (subfolder) directly inside the parent domain zone file.
 

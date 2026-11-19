@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # Grassroots chaos engineering initiatives
-<a name="grassroots-chaos-engineering"></a>
 
 The chaos engineering journey often starts at the grassroots level, where engineering teams identify needs and begin experimenting with chaos engineering independently.
 

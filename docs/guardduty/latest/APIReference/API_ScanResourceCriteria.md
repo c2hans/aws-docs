@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanRe
 ---
 
 # ScanResourceCriteria
-<a name="API_ScanResourceCriteria"></a>
 
 Contains information about criteria used to filter resources before triggering malware scan.
 

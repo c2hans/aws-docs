@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/v
 ---
 
 # Complete the identity and business verification processes
-<a name="verification-process"></a>
 
 AWS Partner Central requires new partners to complete both identity verification and business verification processes during registration. To maintain the security and integrity of the AWS Partner Network for partners and AWS customers, the verification step is required. These verification steps validate individual identities and business credentials through government and public data sources.
 

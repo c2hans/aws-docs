@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InventoryDeletionSummary
-<a name="API_InventoryDeletionSummary"></a>
 
 Information about the delete operation.
 

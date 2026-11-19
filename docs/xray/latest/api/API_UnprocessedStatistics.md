@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_UnprocessedStatistic
 ---
 
 # UnprocessedStatistics
-<a name="API_UnprocessedStatistics"></a>
 
 Sampling statistics from a call to [GetSamplingTargets](https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingTargets.html) that X-Ray could not process.
 

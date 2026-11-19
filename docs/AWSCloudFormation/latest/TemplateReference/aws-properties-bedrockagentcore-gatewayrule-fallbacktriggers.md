@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayRule FallbackTriggers
-<a name="aws-properties-bedrockagentcore-gatewayrule-fallbacktriggers"></a>
 
 The conditions that trigger a fallback to the next target. A fallback occurs if the response matches any of the specified status codes or errors.
 

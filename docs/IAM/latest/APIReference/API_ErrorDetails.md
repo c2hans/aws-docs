@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ErrorDetails
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 Contains information about the reason that the operation failed.
 

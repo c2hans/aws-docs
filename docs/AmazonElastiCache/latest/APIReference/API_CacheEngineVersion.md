@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheEngineVersion
-<a name="API_CacheEngineVersion"></a>
 
 Provides all of the details about a particular cache engine version.
 

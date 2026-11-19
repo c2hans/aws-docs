@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCapacityReservationFleets
-<a name="API_DescribeCapacityReservationFleets"></a>
 
 Describes one or more Capacity Reservation Fleets.
 

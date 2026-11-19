@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/delete-thing.h
 ---
 
 # Delete a thing
-<a name="delete-thing"></a>
 
 You can use the **DeleteThing** command to delete a thing:
 

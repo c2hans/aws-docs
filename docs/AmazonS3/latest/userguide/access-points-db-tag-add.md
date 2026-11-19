@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Adding a tag to an access point for directory buckets
-<a name="access-points-db-tag-add"></a>
 
 You can add tags to Amazon S3 Access Points for directory buckets and modify these tags. For additional information, see [Using tags with S3 Access Points for directory buckets](access-points-db-tagging.md).
 

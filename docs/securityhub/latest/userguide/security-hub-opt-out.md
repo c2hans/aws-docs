@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/security-hu
 ---
 
 # Opting out of using your data for service improvement
-<a name="security-hub-opt-out"></a>
 
 **Note**
  This documentation page is only applicable to the enhanced AWS Security Hub launched on December 2, 2025. If you are a customer of the original AWS Security Hub (now AWS Security Hub CSPM), the data usage described below will apply only after you have enabled the enhanced AWS Security Hub.

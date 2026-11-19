@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Resourc
 ---
 
 # ResourceTag
-<a name="API_ResourceTag"></a>
 
 The resource tag of the project.
 

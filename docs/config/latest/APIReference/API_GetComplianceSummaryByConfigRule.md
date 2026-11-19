@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetCompli
 ---
 
 # GetComplianceSummaryByConfigRule
-<a name="API_GetComplianceSummaryByConfigRule"></a>
 
 Returns the number of AWS Config rules that are compliant and noncompliant, up to a maximum of 25 for each.
 

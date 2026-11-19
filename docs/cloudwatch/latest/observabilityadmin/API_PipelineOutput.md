@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # PipelineOutput
-<a name="API_PipelineOutput"></a>
 
 Contains the output from pipeline test operations, including processed records and any errors encountered.
 

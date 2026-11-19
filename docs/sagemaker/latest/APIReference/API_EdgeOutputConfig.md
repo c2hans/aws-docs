@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EdgeOu
 ---
 
 # EdgeOutputConfig
-<a name="API_EdgeOutputConfig"></a>
 
 The output configuration.
 

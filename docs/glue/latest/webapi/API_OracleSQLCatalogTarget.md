@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OracleSQLCatalogT
 ---
 
 # OracleSQLCatalogTarget
-<a name="API_OracleSQLCatalogTarget"></a>
 
 Specifies a target that uses Oracle SQL.
 

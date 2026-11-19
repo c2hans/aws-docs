@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Cr
 ---
 
 # CreateEventAction
-<a name="API_CreateEventAction"></a>
 
 This operation creates an event action.
 

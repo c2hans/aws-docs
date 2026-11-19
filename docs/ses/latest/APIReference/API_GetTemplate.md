@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_GetTemplate.
 ---
 
 # GetTemplate
-<a name="API_GetTemplate"></a>
 
 Displays the template object (which includes the Subject line, HTML part and text part) for the template you specify.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 4. Providing data protection and governance
-<a name="iot-data"></a>
 
 |  |
 | --- |

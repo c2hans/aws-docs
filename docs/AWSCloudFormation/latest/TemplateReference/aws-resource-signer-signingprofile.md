@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Signer::SigningProfile
-<a name="aws-resource-signer-signingprofile"></a>
 
 Creates a signing profile. A signing profile is a code-signing template that can be used to carry out a pre-defined signing job.
 

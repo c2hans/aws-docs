@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # TraceElements
-<a name="API_agent-runtime_TraceElements"></a>
 
 Contains trace elements for flow execution tracking.
 

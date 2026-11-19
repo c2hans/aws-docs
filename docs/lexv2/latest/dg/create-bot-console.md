@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/create-bot-console.html
 ---
 
 # Creating a bot using the Amazon Lex V2 console
-<a name="create-bot-console"></a>
 
 You create an Amazon Lex V2 bot to interact with your users to elicit information to accomplish a task. For example, you can create a bot that gathers the information needed to order flowers or to book a hotel room. To create a bot using the AWS Console, start by defining the name, description, and some basic information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteResource
 ---
 
 # DeleteResource
-<a name="API_DeleteResource"></a>
 
 Deletes a Resource resource.
 

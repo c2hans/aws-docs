@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Configure reverse DNS to prevent email spam for your Lightsail instance
-<a name="amazon-lightsail-configuring-reverse-dns"></a>
 
 A reverse Domain Name System (DNS) lookup is used by email servers to track where a message originated from, and confirm that it’s not spam or malicious. A reverse DNS lookup returns the domain name of an IP address. This is in contrast to a forward DNS lookup, which returns the IP address of a domain.
 

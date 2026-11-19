@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeadLett
 ---
 
 # DeadLetterQueueS3Configuration
-<a name="API_DeadLetterQueueS3Configuration"></a>
 
 The Amazon S3 dead-letter queue configuration for records that cannot be delivered.
 

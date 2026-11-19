@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_HumanWor
 ---
 
 # HumanWorkflowConfig
-<a name="API_HumanWorkflowConfig"></a>
 
 Contains `SageMakerFlowDefinition` object. The object is used to specify the prompt dataset, task type, rating method and metric names.
 

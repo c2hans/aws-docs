@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/az-availability-sce
 ---
 
 # AZ Availability: Power Interruption
-<a name="az-availability-scenario"></a>
 
  You can use the AZ Availability: Power Interruption scenario to induce the expected symptoms of a complete interruption of power in an Availability Zone (AZ).
 

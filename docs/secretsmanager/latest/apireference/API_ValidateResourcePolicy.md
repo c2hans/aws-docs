@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_V
 ---
 
 # ValidateResourcePolicy
-<a name="API_ValidateResourcePolicy"></a>
 
 Validates that a resource policy does not grant a wide range of principals access to your secret. A resource-based policy is optional for secrets.
 

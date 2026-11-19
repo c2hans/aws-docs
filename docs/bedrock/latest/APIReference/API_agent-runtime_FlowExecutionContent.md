@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowExecutionContent
-<a name="API_agent-runtime_FlowExecutionContent"></a>
 
 Contains the content of an flow execution input or output field.
 

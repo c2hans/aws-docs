@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # Amazon S3 deploy action reference
-<a name="action-reference-S3Deploy"></a>
 
 You use an Amazon S3 deploy action to deploy files to an Amazon S3 bucket for static website hosting or archive. You can specify whether to extract deployment files before upload to your bucket.
 

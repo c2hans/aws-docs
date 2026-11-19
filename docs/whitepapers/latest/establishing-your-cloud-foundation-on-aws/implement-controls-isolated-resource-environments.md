@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Implement controls on isolated resource environments
-<a name="implement-controls-isolated-resource-environments"></a>
 
 Implementing controls on isolated resource environments provide cloud consumers the autonomy to build workloads to meet their business objectives while keeping the organization compliant to standards and regulations. Controls can take the form of either preventative or detective.
 

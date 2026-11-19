@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_e
 ---
 
 # Signing an Amazon OpenSearch Service search request with AWS SDK for PHP Version 3
-<a name="service_es-data-plane"></a>
 
 Amazon OpenSearch Service is a managed service that makes it easy to deploy, operate, and scale Amazon OpenSearch Service, a popular open-source search, and analytics engine. OpenSearch Service offers direct access to the Amazon OpenSearch Service API. This means that developers can use the tools with which they’re familiar, as well as robust security options. Many Amazon OpenSearch Service clients support request signing, but if you’re using a client that doesn’t, you can sign arbitrary PSR-7 requests with the built-in credential providers and signers of the AWS SDK for PHP.
 

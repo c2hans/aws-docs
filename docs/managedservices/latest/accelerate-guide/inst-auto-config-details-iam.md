@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # IAM permissions change details
-<a name="inst-auto-config-details-iam"></a>
 
 Each managed instance must have an AWS Identity and Access Management role that includes the following managed policies:
 + arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore

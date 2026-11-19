@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # Resource attributes in the ASFF
-<a name="asff-resources-attributes"></a>
 
 Here are descriptions and examples for the `Resources` object in the AWS Security Finding Format (ASFF). For more information about these fields, see [Resources](asff-required-attributes.md#Resources).
 

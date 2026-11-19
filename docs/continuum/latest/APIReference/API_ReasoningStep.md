@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Reason
 ---
 
 # ReasoningStep
-<a name="API_ReasoningStep"></a>
 
 One step in the validation agent's reasoning chain.
 

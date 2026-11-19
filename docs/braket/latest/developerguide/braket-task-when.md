@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-task
 ---
 
 # When will my quantum task run?
-<a name="braket-task-when"></a>
 
 When you submit a circuit, Amazon Braket sends it to the device you specify. Quantum Processing Unit (QPU) and on-demand simulator quantum tasks are queued and processed in the order they are received. The time required to process your quantum task after you submit it varies depending on the number and complexity of tasks submitted by other Amazon Braket customers and the availability of the QPU selected.
 

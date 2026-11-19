@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Modif
 ---
 
 # ModifyDBCluster
-<a name="API_ModifyDBCluster"></a>
 
 Modifies a setting for an Amazon DocumentDB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request.
 

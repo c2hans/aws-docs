@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-analyses.html
 ---
 
 # Perform exploratory data analysis (EDA)
-<a name="canvas-analyses"></a>
 
 Data Wrangler includes built-in analyses that help you generate visualizations and data analyses in a few clicks. You can also create custom analyses using your own code.
 

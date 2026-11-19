@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/appendi
 ---
 
 # Understanding the behavior of autovacuum with invalid databases
-<a name="appendix.postgresql.commondbatasks.autovacuumbehavior"></a>
 
  A new value `-2` is introduced into the `datconnlimit` column in the `pg_database` catalog to indicate databases that have been interrupted in the middle of the DROP DATABASE operation as invalid.
 

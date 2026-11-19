@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # How resolved IP validation works
-<a name="route53-resolved-ip-validation-how-it-works"></a>
 
 When a resource in your VPC resolves a domain through the Amazon Route 53 Resolver, the resolver records the resulting IP addresses for that domain. Network Firewall validates a connection's destination IP address against those recorded resolutions. The validation scope is the set of VPCs that are associated with the Amazon Route 53 Resolver DNS Firewall rule group that you reference in the policy.
 

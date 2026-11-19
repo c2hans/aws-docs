@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Enhanc
 ---
 
 # EnhancedImageScanFinding
-<a name="API_EnhancedImageScanFinding"></a>
 
 The details of an enhanced image scan. This is returned when enhanced scanning is enabled for your private registry.
 

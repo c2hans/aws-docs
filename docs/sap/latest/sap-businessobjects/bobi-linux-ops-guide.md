@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-linu
 ---
 
 # SAP BusinessObjects Business Intelligence Platform on AWS Deployment and Operations Guide for Linux
-<a name="bobi-linux-ops-guide"></a>
 
  *SAP specialists, Amazon Web Services*
 

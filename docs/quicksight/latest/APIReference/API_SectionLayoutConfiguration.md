@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Secti
 ---
 
 # SectionLayoutConfiguration
-<a name="API_SectionLayoutConfiguration"></a>
 
 The layout configuration of a section.
 

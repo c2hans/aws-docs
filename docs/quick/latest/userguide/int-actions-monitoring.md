@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-monit
 ---
 
 # Monitoring and maintenance
-<a name="int-actions-monitoring"></a>
 
 Monitoring your connectors helps ensure reliable performance and identify issues before they impact users. Regular monitoring allows you to track usage patterns, optimize performance, and maintain healthy connections to external services.
 

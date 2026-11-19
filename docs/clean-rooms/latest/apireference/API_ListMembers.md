@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListMembers
-<a name="API_ListMembers"></a>
 
 Lists all members within a collaboration.
 

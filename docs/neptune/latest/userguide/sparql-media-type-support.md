@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-media-ty
 ---
 
 # RDF media types used by SPARQL in Neptune
-<a name="sparql-media-type-support"></a>
 
 Resource Description Framework (RDF) data can be serialized in many different ways, most of which SPARQL can consume or output:
 

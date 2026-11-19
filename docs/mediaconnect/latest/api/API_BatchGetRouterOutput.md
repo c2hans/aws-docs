@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BatchGetRout
 ---
 
 # BatchGetRouterOutput
-<a name="API_BatchGetRouterOutput"></a>
 
 Retrieves information about multiple router outputs in AWS Elemental MediaConnect.
 

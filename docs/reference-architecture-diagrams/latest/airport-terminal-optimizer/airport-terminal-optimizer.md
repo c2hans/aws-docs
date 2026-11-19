@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Airport Terminal Optimizer
-<a name="airport-terminal-optimizer"></a>
 
 Publication date: **April 16, 2020 ([Diagram history](#terminal-optimizer-history))**
 

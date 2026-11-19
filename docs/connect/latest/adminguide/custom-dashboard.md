@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/custom-dashboa
 ---
 
 # Customize the home page
-<a name="custom-dashboard"></a>
 
 Administrators can:
 + Use views to create home page layouts

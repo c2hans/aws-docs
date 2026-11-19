@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway-component
 ---
 
 # MediaConnect Gateway bridges
-<a name="gateway-components-bridges"></a>
 
 A *bridge* is a connection between your data center's instances and the AWS Cloud. Depending on the selected bridge type, a bridge can be used to send content from the AWS Cloud to your data center or from your data center to the AWS Cloud.
 

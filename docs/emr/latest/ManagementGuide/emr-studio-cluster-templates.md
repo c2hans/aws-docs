@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-cl
 ---
 
 # Create AWS CloudFormation templates for Amazon EMR Studio
-<a name="emr-studio-cluster-templates"></a>
 
 ## About EMR Studio cluster templates
 <a name="emr-studio-about-cluster-templates"></a>

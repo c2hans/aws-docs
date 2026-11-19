@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListAcc
 ---
 
 # ListAccesses
-<a name="API_ListAccesses"></a>
 
 Lists the details for all the accesses you have on your server.
 

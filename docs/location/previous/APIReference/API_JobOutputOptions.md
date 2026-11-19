@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_JobOu
 ---
 
 # JobOutputOptions
-<a name="API_JobOutputOptions"></a>
 
 Configuration for output data location and format.
 

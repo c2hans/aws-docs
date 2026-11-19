@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/greengrass
 ---
 
 # Use AWS IoT Greengrass stream manager in AWS IoT SiteWise
-<a name="greengrass-stream-manager"></a>
 
 AWS IoT Greengrass stream manager is an integration feature that facilitates the transfer of data streams from local sources to the AWS Cloud. It acts as an intermediary layer that manages data flows, enabling devices operating at the edge to gather and store data before it is sent to AWS IoT SiteWise, for further analysis and processing.
 

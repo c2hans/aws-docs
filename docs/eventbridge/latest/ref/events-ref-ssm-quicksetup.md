@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-ssm-qu
 ---
 
 # AWS Systems Manager Quick Setup events
-<a name="events-ref-ssm-quicksetup"></a>
 
 Quick Setup sends service events to EventBridge via AWS CloudTrail.
 

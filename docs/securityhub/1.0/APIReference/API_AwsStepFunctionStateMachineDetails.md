@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsStep
 ---
 
 # AwsStepFunctionStateMachineDetails
-<a name="API_AwsStepFunctionStateMachineDetails"></a>
 
  Provides details about an AWS Step Functions state machine, which is a workflow consisting of a series of event- driven steps.
 

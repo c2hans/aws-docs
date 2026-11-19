@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # DescribeGeofenceCollection
-<a name="API_WaypointGeofencing_DescribeGeofenceCollection"></a>
 
 Retrieves the geofence collection details.
 

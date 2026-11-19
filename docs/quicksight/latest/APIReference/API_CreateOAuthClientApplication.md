@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateOAuthClientApplication
-<a name="API_CreateOAuthClientApplication"></a>
 
 Creates an OAuthClientApplication.
 

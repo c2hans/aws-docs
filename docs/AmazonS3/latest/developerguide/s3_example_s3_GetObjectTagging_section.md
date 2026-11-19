@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Use `GetObjectTagging` with a CLI
-<a name="s3_example_s3_GetObjectTagging_section"></a>
 
 The following code examples show how to use `GetObjectTagging`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_T
 ---
 
 # TaggedDatabase
-<a name="API_TaggedDatabase"></a>
 
 A structure describing a database resource with LF-tags.
 

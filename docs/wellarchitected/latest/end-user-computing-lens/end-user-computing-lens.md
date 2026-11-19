@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # End User Computing (EUC) Lens - AWS Well-Architected Framework
-<a name="end-user-computing-lens"></a>
 
 Publication date: **September 18, 2025** ([Document revisions](document-revisions.md))
 

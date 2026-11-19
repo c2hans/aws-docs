@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_St
 ---
 
 # StopCodeReviewJob
-<a name="API_StopCodeReviewJob"></a>
 
 Stops a running code review job. The job transitions to a stopping state and then to stopped after cleanup completes.
 

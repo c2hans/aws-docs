@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-auth-e
 ---
 
 # Enable SAML for AWS Client VPN
-<a name="client-auth-enable-saml"></a>
 
  You can enable SAML for single sign-on for Client VPN by completing the following steps. Alternatively, if you enabled the self-service portal for your Client VPN endpoint, instruct your users to go to the self-service portal to get the configuration file and AWS provided client. For more information, see [AWS Client VPN access to the self-service portal](cvpn-self-service-portal.md).
 

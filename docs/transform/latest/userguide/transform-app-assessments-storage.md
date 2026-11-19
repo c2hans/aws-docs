@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-app
 ---
 
 # Storage assessments
-<a name="transform-app-assessments-storage"></a>
 
 AWS Transform models your storage footprint and recommends AWS storage services and configurations based on your current storage usage and performance requirements. Storage attached to servers is right-sized alongside the compute recommendation, and AWS Transform also models detached storage across block, object, and file storage services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Mani
 ---
 
 # ManifestServiceInteractionLog
-<a name="API_ManifestServiceInteractionLog"></a>
 
 Settings for customizing what events are included in logs for interactions with the origin server.
 

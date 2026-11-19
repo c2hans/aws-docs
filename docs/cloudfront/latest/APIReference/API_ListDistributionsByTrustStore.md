@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByTrustStore
-<a name="API_ListDistributionsByTrustStore"></a>
 
 Lists distributions by trust store.
 

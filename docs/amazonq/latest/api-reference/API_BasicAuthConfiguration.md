@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_BasicAu
 ---
 
 # BasicAuthConfiguration
-<a name="API_BasicAuthConfiguration"></a>
 
 Information about the basic authentication credentials used to configure a plugin.
 

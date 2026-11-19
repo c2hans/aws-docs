@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCo
 ---
 
 # GetContinuousDeploymentPolicy
-<a name="API_GetContinuousDeploymentPolicy"></a>
 
 Gets a continuous deployment policy, including metadata (the policy's identifier and the date and time when the policy was last modified).
 

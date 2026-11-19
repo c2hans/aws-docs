@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lineage
 ---
 
 # LineageSyncInput
-<a name="API_LineageSyncInput"></a>
 
 Contains the settings for configuring lineage sync on a Snowflake connection, including the schedule, timezone, and enabled state.
 

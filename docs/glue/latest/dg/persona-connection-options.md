@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/persona-connection-option
 ---
 
 # Persona connection options
-<a name="persona-connection-options"></a>
 
 The following are connection options for Persona:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Persona object to read.

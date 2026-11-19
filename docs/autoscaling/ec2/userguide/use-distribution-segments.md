@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/use-distributi
 ---
 
 # Use Distribution Segments to target multiple Capacity Reservation types
-<a name="use-distribution-segments"></a>
 
 Use distribution segments to configure your Auto Scaling group to consume multiple Capacity Reservation types – On-Demand Capacity Reservations, Capacity Blocks for ML, and interruptible Capacity Reservations – with priority ordering. You target these reservation types by pointing your Auto Scaling group at a Capacity Reservation Resource Group that contains a mix of different Capacity Reservations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteBillingView
-<a name="API_billing_DeleteBillingView"></a>
 
 Deletes the specified billing view.
 

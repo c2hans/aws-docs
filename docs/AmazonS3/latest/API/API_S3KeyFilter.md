@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3KeyFilter.html
 ---
 
 # S3KeyFilter
-<a name="API_S3KeyFilter"></a>
 
 A container for object key name prefix and suffix filtering rules.
 

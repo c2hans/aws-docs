@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sg-pods-example-dep
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Use a security group policy for an Amazon EKS Pod
-<a name="sg-pods-example-deployment"></a>
 
 To use security groups for Pods, you must have an existing security group. The following steps show you how to use the security group policy for a Pod. Unless otherwise noted, complete all steps from the same terminal because variables are used in the following steps that don’t persist across terminals.
 

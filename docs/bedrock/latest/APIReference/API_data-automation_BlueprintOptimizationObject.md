@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # BlueprintOptimizationObject
-<a name="API_data-automation_BlueprintOptimizationObject"></a>
 
 A blueprint to be optimized.
 

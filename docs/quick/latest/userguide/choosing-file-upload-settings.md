@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/choosing-file-upl
 ---
 
 # Choosing file upload settings
-<a name="choosing-file-upload-settings"></a>
 
 If you are using a file data source, confirm the upload settings, and correct them if necessary.
 

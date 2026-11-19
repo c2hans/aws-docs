@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with Kinesis
-<a name="examples-kinesis"></a>
 
 This section provides examples of programming [Amazon Kinesis](https://docs.aws.amazon.com/kinesis/) using the AWS SDK for Java 2.x.
 

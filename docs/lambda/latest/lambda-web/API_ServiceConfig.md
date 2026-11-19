@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_ServiceConf
 ---
 
 # ServiceConfig
-<a name="API_ServiceConfig"></a>
 
 The service configuration for a web function revision, including execution role, timeout, VPC network access, concurrency, and telemetry settings.
 

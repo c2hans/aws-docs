@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/monthly
 ---
 
 # Reviewing your monthly billing best practices
-<a name="monthly-billing-checklist"></a>
 
 AWS uses information that you provide in the AWS Billing and Cost Management console to prepare and issue your invoices with proper header information, such as your preferred payment currency, tax settings, business legal name and address.
 

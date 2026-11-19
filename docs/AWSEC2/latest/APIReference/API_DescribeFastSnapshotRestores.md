@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeF
 ---
 
 # DescribeFastSnapshotRestores
-<a name="API_DescribeFastSnapshotRestores"></a>
 
 Describes the state of fast snapshot restores for your snapshots.
 

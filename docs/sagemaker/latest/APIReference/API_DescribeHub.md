@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeHub
-<a name="API_DescribeHub"></a>
 
 Describes a hub.
 

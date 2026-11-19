@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketPayerVal
 ---
 
 # Retrieving the requestPayment configuration using the REST API
-<a name="BucketPayerValues"></a>
 
 You can determine the `Payer` value that is set on a bucket by requesting the resource `requestPayment`.
 

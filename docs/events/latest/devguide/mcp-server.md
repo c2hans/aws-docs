@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/mcp-server.html
 ---
 
 # Using the MCP server
-<a name="mcp-server"></a>
 
  The MCP server offers the same operations as the REST API, as tools that an AI assistant can call.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ListReleaseL
 ---
 
 # ListReleaseLabels
-<a name="API_ListReleaseLabels"></a>
 
 Retrieves release labels of Amazon EMR services in the Region where the API is called.
 

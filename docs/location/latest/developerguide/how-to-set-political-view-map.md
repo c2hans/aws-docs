@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to set the political view of a map
-<a name="how-to-set-political-view-map"></a>
 
 Amazon Location Service enables you to set the political view to ensure your application complies with local laws. You can set a political view and compare maps from different political perspectives.
 

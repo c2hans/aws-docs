@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTREL05-BP01 Implement disaster recovery automation
-<a name="msftrel05-bp01"></a>
 
  Disaster recovery (DR) automation is essential for Microsoft workloads due to their complex interdependencies and stateful nature. Microsoft environments often involve intricate relationships between Active Directory, SQL Server databases, file services, and application servers that require coordinated recovery procedures to maintain business continuity and data integrity.
 

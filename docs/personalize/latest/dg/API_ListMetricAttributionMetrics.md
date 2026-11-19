@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_ListMetricAttr
 ---
 
 # ListMetricAttributionMetrics
-<a name="API_ListMetricAttributionMetrics"></a>
 
 Lists the metrics for the metric attribution.
 

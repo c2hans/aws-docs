@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEMRServicePolicyForSessions
-<a name="AmazonEMRServicePolicyForSessions"></a>
 
 **Description**: Provides permissions to provision and manage Network Load Balancers, VPC endpoint services, and security groups required for Amazon EMR Spark Connect interactive sessions on EMR on EC2 clusters.
 

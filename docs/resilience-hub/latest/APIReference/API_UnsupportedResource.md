@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_U
 ---
 
 # UnsupportedResource
-<a name="API_UnsupportedResource"></a>
 
 Defines a resource that is not supported by AWS Resilience Hub.
 

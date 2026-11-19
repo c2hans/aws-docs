@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 ---
 
 # UpdateMissionProfile
-<a name="API_UpdateMissionProfile"></a>
 
 Updates a mission profile.
 

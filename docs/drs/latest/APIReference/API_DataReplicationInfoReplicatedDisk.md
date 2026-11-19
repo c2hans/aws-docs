@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DataReplicat
 ---
 
 # DataReplicationInfoReplicatedDisk
-<a name="API_DataReplicationInfoReplicatedDisk"></a>
 
 A disk that should be replicated.
 

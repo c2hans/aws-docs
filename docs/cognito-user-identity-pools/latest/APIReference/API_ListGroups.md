@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ListGroups
-<a name="API_ListGroups"></a>
 
 Given a user pool ID, returns user pool groups and their details.
 

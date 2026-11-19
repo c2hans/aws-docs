@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssignedSession
-<a name="API_AssignedSession"></a>
 
 The assigned session for the worker.
 

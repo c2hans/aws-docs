@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Paye
 ---
 
 # PayerResponsibilityEntry
-<a name="API_PayerResponsibilityEntry"></a>
 
 Specifies which account pays for a category of charges on a VPC endpoint association.
 

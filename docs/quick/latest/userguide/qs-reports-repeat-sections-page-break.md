@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qs-reports-repeat
 ---
 
 # Add page breaks to repeating sections
-<a name="qs-reports-repeat-sections-page-break"></a>
 
 Similar to section page breaks, you can add page breaks to repeating sections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Current and past contributors to this document include:
 +  Anna McAbee, Senior Security Solutions Architect, Amazon Web Services

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Updating directory network type
-<a name="ms_ad_update-directory-type"></a>
 
 You can update your Directory Service directory's network type from IPv4 to Dual-stack (IPv4 and IPv6). Updating the network type to include IPv6 IP addresses provides a larger address space than IPv4. IPv4 and IPv6 communication are independent of each other.
 

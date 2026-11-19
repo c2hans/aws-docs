@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetKeyPairs
-<a name="API_GetKeyPairs"></a>
 
 Returns information about all key pairs in the user's account.
 

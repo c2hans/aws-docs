@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Extern
 ---
 
 # ExternalWorkflowExecutionCancelRequestedEventAttributes
-<a name="API_ExternalWorkflowExecutionCancelRequestedEventAttributes"></a>
 
 Provides the details of the `ExternalWorkflowExecutionCancelRequested` event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Aggregate Functions
-<a name="sql-reference-aggregate-functions"></a>
 
 Instead of returning a result calculated from a single row, an aggregate function returns a result calculated from aggregated data contained in a finite set of rows, or from information about a finite set of rows. An aggregate function may appear in any of the following:
 + <selection list> portion of a [SELECT clause](sql-reference-select-clause.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/t
 ---
 
 # Troubleshooting the AWS Toolkit for JetBrains
-<a name="troubleshoot"></a>
 
 The following sections contain general troubleshooting information about the AWS Toolkit for JetBrains.
 

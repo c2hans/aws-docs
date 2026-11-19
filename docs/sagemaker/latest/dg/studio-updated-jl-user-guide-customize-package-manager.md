@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-us
 ---
 
 # Customize your environment using a package manager
-<a name="studio-updated-jl-user-guide-customize-package-manager"></a>
 
 Use pip or conda to customize your environment. We recommend using package managers instead of lifecycle configuration scripts.
 

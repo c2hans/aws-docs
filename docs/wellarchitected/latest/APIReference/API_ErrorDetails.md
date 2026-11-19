@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 Details about an error that occurred during recommendation generation.
 

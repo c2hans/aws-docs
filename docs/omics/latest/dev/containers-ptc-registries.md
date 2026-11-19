@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/containers-ptc-registri
 ---
 
 # Using third-party registries supported by pull through cache
-<a name="containers-ptc-registries"></a>
 
 You can use Amazon ECR pull through cache rules to synchronize repositories in a supported upstream registry with your Amazon ECR private repositories. For more information, see [Sync an upstream registry](https://docs.aws.amazon.com/AmazonECR/latest/userguide/pull-through-cache.html) in the *Amazon Elastic Container Registry User Guide*.
 

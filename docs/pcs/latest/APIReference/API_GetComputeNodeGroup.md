@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_GetComputeNo
 ---
 
 # GetComputeNodeGroup
-<a name="API_GetComputeNodeGroup"></a>
 
 Returns detailed information about a compute node group. This API action provides networking information, EC2 instance type, compute node group status, and scheduler (such as Slurm) configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # Changing (updating) AWS Serverless application settings by using the AWS Toolkit for JetBrains
-<a name="sam-update"></a>
 
 You must first deploy the AWS serverless application that you want to change, if you haven't deployed it already.
 **Note**

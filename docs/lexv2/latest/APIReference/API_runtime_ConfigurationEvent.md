@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Co
 ---
 
 # ConfigurationEvent
-<a name="API_runtime_ConfigurationEvent"></a>
 
 The initial event sent from the application to Amazon Lex to configure the conversation, including session and request attributes and the response content type.
 

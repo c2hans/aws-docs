@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/get
 ---
 
 # Step 2: Write data to a DynamoDB table
-<a name="getting-started-step-2"></a>
 
 In this step, you insert several items into the `Music` table that you created in [Step 1: Create a table in DynamoDB](getting-started-step-1.md).
 

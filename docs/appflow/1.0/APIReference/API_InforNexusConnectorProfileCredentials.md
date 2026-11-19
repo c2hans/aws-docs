@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_InforNexusC
 ---
 
 # InforNexusConnectorProfileCredentials
-<a name="API_InforNexusConnectorProfileCredentials"></a>
 
  The connector-specific profile credentials required by Infor Nexus.
 

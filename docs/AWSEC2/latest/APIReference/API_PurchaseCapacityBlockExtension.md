@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseC
 ---
 
 # PurchaseCapacityBlockExtension
-<a name="API_PurchaseCapacityBlockExtension"></a>
 
 Purchase the Capacity Block extension for use with your account. You must specify the ID of the Capacity Block extension offering you are purchasing.
 

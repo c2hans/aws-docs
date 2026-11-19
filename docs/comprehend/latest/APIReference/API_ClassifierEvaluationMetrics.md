@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Class
 ---
 
 # ClassifierEvaluationMetrics
-<a name="API_ClassifierEvaluationMetrics"></a>
 
 Describes the result metrics for the test data associated with an documentation classifier.
 

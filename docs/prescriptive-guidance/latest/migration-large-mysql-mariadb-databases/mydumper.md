@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-l
 ---
 
 # MyDumper
-<a name="mydumper"></a>
 
 [MyDumper](https://github.com/mydumper/mydumper#what-is-mydumper) (GitHub) is an open-source, logical migration tool that consists of two utilities:
 + MyDumper exports a consistent backup of MySQL databases. It supports backing up the database by using multiple parallel threads, up to one thread per available CPU core.

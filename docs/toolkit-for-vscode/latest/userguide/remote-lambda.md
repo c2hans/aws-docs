@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/remo
 ---
 
 # Working with AWS Lambda Functions
-<a name="remote-lambda"></a>
 
 The AWS Toolkit for Visual Studio Code allows you to work with your AWS Lambda functions in your local VS Code environment. With the AWS Toolkit, you can create, edit, test, debug, and deploy your Lambda functions, without having to leave the IDE. For detailed information about the AWS Lambda service, see the [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) Developer Guide.
 

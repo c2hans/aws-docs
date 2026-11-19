@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListReal
 ---
 
 # ListRealtimeContactAnalysisSegmentsV2
-<a name="API_ListRealtimeContactAnalysisSegmentsV2"></a>
 
 Provides a list of analysis segments for a real-time chat analysis session. This API supports CHAT channels only.
 

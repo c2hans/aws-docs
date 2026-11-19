@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Part
 ---
 
 # ParticipantThumbnailConfiguration
-<a name="API_ParticipantThumbnailConfiguration"></a>
 
 An object representing a configuration of thumbnails for recorded video from an individual participant.
 

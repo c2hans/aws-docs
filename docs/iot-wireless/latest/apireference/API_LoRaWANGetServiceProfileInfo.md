@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANGetServiceProfileInfo
-<a name="API_LoRaWANGetServiceProfileInfo"></a>
 
 LoRaWANGetServiceProfileInfo object.
 

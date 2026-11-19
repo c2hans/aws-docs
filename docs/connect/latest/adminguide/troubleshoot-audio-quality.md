@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/troubleshoot-a
 ---
 
 # Troubleshoot audio quality issues in Connect Customer
-<a name="troubleshoot-audio-quality"></a>
 
 Audio quality issues—choppy or robotic audio, echo, delay, one-way audio, humming, or dead air—can originate anywhere along the call path. This page is the starting point for diagnosing them. It helps you narrow down *where* in the path the problem occurs, then directs you to the specialized topic that resolves it.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/jdbc20-configuratio
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Options for JDBC driver version 2.x configuration
-<a name="jdbc20-configuration-options"></a>
 
 Following, you can find descriptions for the options that you can specify for version 2.x of the Amazon Redshift JDBC driver. Configuration options are not case sensitive.
 

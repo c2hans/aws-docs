@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-ru
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Notifications for AWS Managed Rules rule groups deployments
-<a name="waf-managed-rule-groups-deployments-notifications"></a>
 
 This section explains how Amazon SNS notifications work with AWS Managed Rules rule groups.
 

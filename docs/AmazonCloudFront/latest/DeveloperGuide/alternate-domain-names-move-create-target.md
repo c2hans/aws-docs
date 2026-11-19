@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/a
 ---
 
 # Set up the target standard distribution or distribution tenant
-<a name="alternate-domain-names-move-create-target"></a>
 
 Before you can move an alternate domain name, you must set up the target resource. This is the target standard distribution or distribution tenant that you're moving the alternate domain name to.
 

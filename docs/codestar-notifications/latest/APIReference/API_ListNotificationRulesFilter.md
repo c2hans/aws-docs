@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # ListNotificationRulesFilter
-<a name="API_ListNotificationRulesFilter"></a>
 
 Information about a filter to apply to the list of returned notification rules. You can filter by event type, owner, resource, or target.
 

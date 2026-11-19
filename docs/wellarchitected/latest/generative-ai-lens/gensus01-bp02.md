@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENSUS01-BP02 Use efficient model customization services
-<a name="gensus01-bp02"></a>
 
  To maximize efficiency and sustainability in large-scale generative AI model deployments, adopt best practices for distributed training and parameter-efficient fine-tuning. These techniques optimize resource utilization and reduce energy consumption, leading to cost savings and enhanced performance. This helps maintain a balance between computational demands and environmental considerations, promoting responsible cloud resource use.
 

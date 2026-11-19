@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteFarm
-<a name="API_DeleteFarm"></a>
 
 Deletes a farm.
 

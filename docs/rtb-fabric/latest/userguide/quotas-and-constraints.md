@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/quotas-and-c
 ---
 
 # Quotas and constraints
-<a name="quotas-and-constraints"></a>
 
 ## Supported and unsupported features
 <a name="supported-unsupported-features"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Direc
 ---
 
 # DirectoryConfig
-<a name="API_DirectoryConfig"></a>
 
 Describes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
 

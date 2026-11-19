@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Timezo
 ---
 
 # Timezone
-<a name="API_Timezone"></a>
 
 A time zone associated with a `DBInstance` or a `DBSnapshot`. This data type is an element in the response to the `DescribeDBInstances`, the `DescribeDBSnapshots`, and the `DescribeDBEngineVersions` actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Industrial Internet of Things (IIoT)
-<a name="iiot"></a>
 
 Typical manufacturing facilities have thousands of sensors and devices that generate a lot of data. Most of this data goes unused. MES can contextualize this data and make it usable with the help of cloud-native services. MES can also connect with machines and devices, collect information automatically—for example, from process parameters and test results—and use it to respond in real time to events, save time, and eliminate the possibility of error due to manual entry. For example, you could collect results from testing machines, determine the product quality, and create non-conformance records or secondary inspection workflows in an automated manner without any manual data entry. Over time, cloud-native IoT services can help find specific patterns and root causes for defects, and you can prevent the defects from occurring by modifying the manufacturing process.
 

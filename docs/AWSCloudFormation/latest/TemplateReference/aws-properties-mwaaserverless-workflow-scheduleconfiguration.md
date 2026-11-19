@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MWAAServerless::Workflow ScheduleConfiguration
-<a name="aws-properties-mwaaserverless-workflow-scheduleconfiguration"></a>
 
 Contains the configuration used to schedule automated workflow execution. Only one version of a workflow can have an active schedule at any time.
 

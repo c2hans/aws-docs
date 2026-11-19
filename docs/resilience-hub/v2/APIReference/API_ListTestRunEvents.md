@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListT
 ---
 
 # ListTestRunEvents
-<a name="API_ListTestRunEvents"></a>
 
 Lists the events in a test run's timeline.
 

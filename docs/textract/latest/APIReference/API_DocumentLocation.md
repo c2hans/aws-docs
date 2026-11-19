@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Documen
 ---
 
 # DocumentLocation
-<a name="API_DocumentLocation"></a>
 
 The Amazon S3 bucket that contains the document to be processed. It's used by asynchronous operations.
 

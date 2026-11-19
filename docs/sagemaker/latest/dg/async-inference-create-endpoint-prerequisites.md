@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference-crea
 ---
 
 # Complete the prerequisites
-<a name="async-inference-create-endpoint-prerequisites"></a>
 
 The following topic describes the prerequisites that you must complete before creating an asyncrhonous endpoint. These prerequisites include properly storing your model artifacts, configuring an AWS IAM with the correct permissions, and selecting a container image.
 

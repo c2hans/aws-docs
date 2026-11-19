@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # DescribeParameters
-<a name="API_dax_DescribeParameters"></a>
 
 Returns the detailed parameter list for a particular parameter group.
 

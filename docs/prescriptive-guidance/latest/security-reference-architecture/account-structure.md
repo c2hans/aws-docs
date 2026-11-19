@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # AWS organization and account structure of the AWS SRA
-<a name="account-structure"></a>
 
 The following diagram captures the high-level structure of the AWS SRA without displaying specific services. It reflects the dedicated accounts structure discussed in the previous section, and this diagram orients the discussion around the primary components of the architecture:
 + All accounts that are shown in the diagram are part of a single AWS organization.

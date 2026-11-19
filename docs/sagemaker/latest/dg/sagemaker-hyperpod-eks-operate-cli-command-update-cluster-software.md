@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Updating the SageMaker HyperPod platform software
-<a name="sagemaker-hyperpod-eks-operate-cli-command-update-cluster-software"></a>
 
 When you create your SageMaker HyperPod cluster, SageMaker HyperPod selects an Amazon Machine Image (AMI) corresponding to the Kubernetes version of your Amazon EKS cluster.
 

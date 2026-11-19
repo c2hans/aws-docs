@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Federated
 ---
 
 # FederatedAuthentication
-<a name="API_FederatedAuthentication"></a>
 
 Describes the IAM SAML identity providers used for federated authentication.
 

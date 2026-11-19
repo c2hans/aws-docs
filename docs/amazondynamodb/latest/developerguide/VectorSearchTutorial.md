@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Vec
 ---
 
 # Tutorial: Your first vector search
-<a name="VectorSearchTutorial"></a>
 
 Imagine a product catalog where shoppers describe what they want in their own words instead of matching exact keywords. You can store a vector embedding of each product description in DynamoDB and then query a vector index to find the closest matches.
 

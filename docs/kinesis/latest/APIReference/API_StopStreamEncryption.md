@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_StopStre
 ---
 
 # StopStreamEncryption
-<a name="API_StopStreamEncryption"></a>
 
 Disables server-side encryption for a specified stream.
 

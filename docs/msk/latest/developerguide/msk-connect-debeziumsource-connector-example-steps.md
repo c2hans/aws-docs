@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-de
 ---
 
 # Create a Debezium source connector
-<a name="msk-connect-debeziumsource-connector-example-steps"></a>
 
 This procedure describes how to create a Debezium source connector.
 

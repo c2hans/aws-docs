@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeReportPlan
-<a name="API_DescribeReportPlan"></a>
 
 Returns a list of all report plans for an AWS account and AWS Region.
 

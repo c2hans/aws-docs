@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityAggreg
 ---
 
 # DataQualityAggregatedMetrics
-<a name="API_DataQualityAggregatedMetrics"></a>
 
 A summary of metrics showing the total counts of processed rows and rules, including their pass/fail statistics based on row-level results.
 

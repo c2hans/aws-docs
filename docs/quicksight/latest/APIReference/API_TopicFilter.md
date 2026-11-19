@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicFilter
-<a name="API_TopicFilter"></a>
 
 A structure that represents a filter used to select items for a topic.
 

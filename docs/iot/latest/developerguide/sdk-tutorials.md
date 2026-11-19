@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/sdk-tutorials.
 ---
 
 # Tutorial: Connecting a device to AWS IoT Core by using the AWS IoT Device SDK
-<a name="sdk-tutorials"></a>
 
 This tutorial demonstrates how to connect a device to AWS IoT Core so that it can send and receive data to and from AWS IoT. After you complete this tutorial, your device will be configured to connect to AWS IoT Core and you'll understand how devices communicate with AWS IoT.
 

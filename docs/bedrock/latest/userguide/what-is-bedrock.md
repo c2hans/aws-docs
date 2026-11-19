@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock
 ---
 
 # Overview
-<a name="what-is-bedrock"></a>
 
 Amazon Bedrock is a fully managed service that provides secure, enterprise-grade access to [high-performing foundation models](models.md) from leading AI companies, enabling you to build and scale generative AI applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UnregisterC
 ---
 
 # UnregisterConnector
-<a name="API_UnregisterConnector"></a>
 
 Unregisters the custom connector registered in your account that matches the connector label provided in the request.
 

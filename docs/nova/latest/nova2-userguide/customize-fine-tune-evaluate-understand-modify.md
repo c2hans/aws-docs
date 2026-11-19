@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/customize-fi
 ---
 
 # Understanding the recipe parameters
-<a name="customize-fine-tune-evaluate-understand-modify"></a>
 
 **Run configuration**
 The following is a general run configuration and an explanation of the parameters involved.

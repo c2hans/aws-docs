@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops07.h
 ---
 
 # Learn and evolve from events
-<a name="ops07"></a>
 
  Learn, share, and continuously improve to sustain operational excellence. Dedicate work cycles to making continual incremental improvements. Perform post-incident analysis of all customer-impacting events. Identify the contributing factors and preventive action to limit or help prevent recurrence. Communicate contributing factors with affected communities as appropriate. Regularly evaluate and prioritize opportunities for improvement (for example, feature requests, issue remediation, and compliance requirements), including both the workload and operations procedures.
 

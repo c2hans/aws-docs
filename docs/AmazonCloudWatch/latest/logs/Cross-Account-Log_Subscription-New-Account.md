@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Cross-Accou
 ---
 
 # Setting up a new cross-account subscription
-<a name="Cross-Account-Log_Subscription-New-Account"></a>
 
 Follow the steps in these sections to set up a new cross-account log subscription.
 

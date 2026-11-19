@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VersionManag
 ---
 
 # Upgrading engine versions including cross engine upgrades
-<a name="VersionManagement.HowTo"></a>
 
 **Valkey and Redis OSS**
 

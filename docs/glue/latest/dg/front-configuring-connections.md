@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/front-configuring-connect
 ---
 
 # Configuring Front connections
-<a name="front-configuring-connections"></a>
 
 Front connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

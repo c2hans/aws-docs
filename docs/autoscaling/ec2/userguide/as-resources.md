@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-resources.h
 ---
 
 # Related information
-<a name="as-resources"></a>
 
 The following related resources can help you as you work with this service.
 

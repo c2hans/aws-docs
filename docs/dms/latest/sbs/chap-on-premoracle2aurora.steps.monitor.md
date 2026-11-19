@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-on-premoracle2aurora
 ---
 
 # Step 7: Monitor Your Migration Task
-<a name="chap-on-premoracle2aurora.steps.monitor"></a>
 
 Three sections in the console provide visibility into what your migration task is doing:
 + Task monitoring — The **Task Monitoring** tab provides insight into your full load throughput and also your change capture and apply latencies.

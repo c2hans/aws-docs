@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Associate service with system
-<a name="next-gen-tutorial-associate-service"></a>
 
 After creating your system and service, associate the service with the system by creating a user journey.
 

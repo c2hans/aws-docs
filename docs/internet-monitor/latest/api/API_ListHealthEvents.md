@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_ListHeal
 ---
 
 # ListHealthEvents
-<a name="API_ListHealthEvents"></a>
 
 Lists all health events for a monitor in Internet Monitor. Returns information for health events including the event start and end times, and the status.
 

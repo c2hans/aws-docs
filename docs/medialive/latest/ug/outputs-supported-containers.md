@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/outputs-supported-co
 ---
 
 # Output types supported in MediaLive
-<a name="outputs-supported-containers"></a>
 
 MediaLive supports the following containers. Each of these containers is a different type of output group.
 + Archive

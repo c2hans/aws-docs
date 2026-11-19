@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/best-pr
 ---
 
 # Best practices for performance optimization and efficiency in Amazon MQ for RabbitMQ
-<a name="best-practices-performance"></a>
 
  You can optimize your Amazon MQ for RabbitMQ broker performance by maximizing throughput, minimizing latency, and ensuring efficient resource utilization. Complete the following best practices to optimize your application performance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/evaluations-ex
 ---
 
 # Ingest agent activities from third-party applications to evaluate agent performance
-<a name="evaluations-external-activities"></a>
 
 You can import agent activities completed in third-party applications into Connect Customer. These activities are imported as Connect Customer tasks, which you can evaluate alongside work completed in Connect Customer. This provides managers with a unified application for quality management.
 

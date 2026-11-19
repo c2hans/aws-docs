@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_AddInstanceG
 ---
 
 # AddInstanceGroups
-<a name="API_AddInstanceGroups"></a>
 
 Adds one or more instance groups to a running cluster.
 

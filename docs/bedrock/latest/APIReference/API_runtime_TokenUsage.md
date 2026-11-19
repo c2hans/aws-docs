@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # TokenUsage
-<a name="API_runtime_TokenUsage"></a>
 
 The tokens used in a message API inference call.
 

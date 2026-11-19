@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_SplunkB
 ---
 
 # SplunkBufferingHints
-<a name="API_SplunkBufferingHints"></a>
 
 The buffering options. If no value is specified, the default values for Splunk are used.
 

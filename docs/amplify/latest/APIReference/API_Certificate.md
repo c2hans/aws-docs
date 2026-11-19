@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Certific
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 Describes the current SSL/TLS certificate that is in use for the domain. If you are using `CreateDomainAssociation` to create a new domain association, `Certificate` describes the new certificate that you are creating.
 

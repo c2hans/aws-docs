@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resilien
 ---
 
 # Understand pod eviction during zonal disruptions
-<a name="pod-eviction"></a>
 
 When a full Availability Zone disruption occurs—that is, when all nodes in that Availability Zone lose connectivity to the Kubernetes control plane—the [node lifecycle controller ](https://kubernetes.io/docs/concepts/architecture/cloud-controller/)in Kubernetes detects the situation and evicts pods from the impacted zone. Pods on unreachable nodes are marked as `Terminating` and new pods are scheduled on healthy nodes in available Availability Zones. During this period, affected nodes display a `NotReady` status, the scheduler prevents new pods from being placed on those nodes, and the EndpointSlice controller removes endpoints that are associated with the impaired Availability Zone from service routing until connectivity is restored.
 

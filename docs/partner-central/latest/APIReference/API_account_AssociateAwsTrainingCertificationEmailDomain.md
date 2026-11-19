@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AssociateAwsTrainingCertificationEmailDomain
-<a name="API_account_AssociateAwsTrainingCertificationEmailDomain"></a>
 
 Associates an email domain with AWS training and certification for the partner account, enabling automatic verification of employee certifications.
 

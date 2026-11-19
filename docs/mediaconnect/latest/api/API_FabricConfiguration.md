@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FabricConfig
 ---
 
 # FabricConfiguration
-<a name="API_FabricConfiguration"></a>
 
 The fabric configuration settings for the router output.
 

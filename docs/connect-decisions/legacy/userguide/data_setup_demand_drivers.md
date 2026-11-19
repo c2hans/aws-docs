@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data_
 ---
 
 # Demand driver recommendations
-<a name="data_setup_demand_drivers"></a>
 
 While configuring aggregation and filling methods for demand drivers, a general guideline is to assign *mean* aggregation for both boolean and continuous data types. To fill a missing value, use *zero* filling for boolean data while *mean* filling is suitable for continuous data.
 

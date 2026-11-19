@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeWarmPool
-<a name="API_DescribeWarmPool"></a>
 
 Gets information about a warm pool and its instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # GetBillingGroupCostReport
-<a name="API_GetBillingGroupCostReport"></a>
 
 Retrieves the margin summary report, which includes the AWS cost and charged amount (pro forma cost) by AWS service for a specific billing group.
 

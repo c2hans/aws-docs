@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # CreateGlobalTableWitnessGroupMemberAction
-<a name="API_CreateGlobalTableWitnessGroupMemberAction"></a>
 
 Specifies the action to add a new witness Region to a MRSC global table. A MRSC global table can be configured with either three replicas, or with two replicas and one witness.
 

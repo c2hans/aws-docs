@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC03-BP01 Implement strong authentication for agent identities
-<a name="agentsec03-bp01"></a>
 
  Shared API keys and one-way TLS give agents enough network reachability to be useful and enough ambiguity to be impersonated. Cryptographic identity for both sides of every call, with automated lifecycle and immediate revocation, is the control that makes every agent communication auditable and reversible.
 

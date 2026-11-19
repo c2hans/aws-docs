@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/recipes.ht
 ---
 
 # .recipes
-<a name="recipes"></a>
 
 Used by those with recipes to share.
 

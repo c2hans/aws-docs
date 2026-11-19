@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Step 4: Launch the hub stack
-<a name="step-4-launch-the-hub-stack"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the hub stack into your hub account.
 

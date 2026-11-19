@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-eks-cloudwa
 ---
 
 # Use CloudWatch Logs to monitor AWS Batch on Amazon EKS jobs
-<a name="batch-eks-cloudwatch-logs"></a>
 
 You can use Amazon CloudWatch Logs to monitor, store, and view all your log files in one location. Using CloudWatch Logs, you can search, filter, and analyze log data from multiple sources.
 

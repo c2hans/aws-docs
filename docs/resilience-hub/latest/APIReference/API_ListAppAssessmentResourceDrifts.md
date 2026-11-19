@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListAppAssessmentResourceDrifts
-<a name="API_ListAppAssessmentResourceDrifts"></a>
 
 List of resource drifts that were detected while running an assessment.
 

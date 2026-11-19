@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/shoes.html
 ---
 
 # .shoes
-<a name="shoes"></a>
 
 Used by shoe retailers, designers, manufacturers, or fashion bloggers.
 

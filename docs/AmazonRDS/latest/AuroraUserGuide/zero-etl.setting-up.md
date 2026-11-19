@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/zero-et
 ---
 
 # Getting started with Aurora zero-ETL integrations
-<a name="zero-etl.setting-up"></a>
 
 Before you create a zero-ETL integration, configure your Aurora DB cluster and your data warehouse with the required parameters and permissions. During setup, you'll complete the following steps:
 

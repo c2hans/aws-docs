@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_cre
 ---
 
 # Understanding the default credential provider chain in the AWS SDK for PHP Version 3
-<a name="guide_credentials_default_chain"></a>
 
 The default credential provider chain is made up of a series of built-in credential providers that the SDK invokes. It is implemented by the [defaultProvider](defaultprovider-provider.md) credential provider function with no parameters. After valid credentials are found, the search is stopped.
 

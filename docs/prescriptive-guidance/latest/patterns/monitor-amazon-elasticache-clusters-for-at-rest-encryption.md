@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Monitor Amazon ElastiCache clusters for at-rest encryption
-<a name="monitor-amazon-elasticache-clusters-for-at-rest-encryption"></a>
 
 *Abhishek Agawane, Amazon Web Services*
 

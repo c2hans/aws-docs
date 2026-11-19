@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationEksCluster
-<a name="API_InvestigationEksCluster"></a>
 
 Contains details about an Amazon EKS cluster.
 

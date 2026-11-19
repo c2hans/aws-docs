@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterOrchestrator
-<a name="API_ClusterOrchestrator"></a>
 
 The type of orchestrator used for the SageMaker HyperPod cluster.
 

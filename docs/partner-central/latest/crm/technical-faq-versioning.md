@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/technical-faq
 ---
 
 # Technical FAQ—versioning and backward compatibility
-<a name="technical-faq-versioning"></a>
 
  **Q: What is a payload in Amazon Web Services (AWS) data exchange?**
 

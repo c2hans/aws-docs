@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CoinbaseCdpTokenResponseOutput
-<a name="API_CoinbaseCdpTokenResponseOutput"></a>
 
 Coinbase CDP token response.
 

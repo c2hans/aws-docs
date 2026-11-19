@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-cata
 ---
 
 # Catalogs API
-<a name="aws-glue-api-catalog-catalogs"></a>
 
 The Catalogs API describes the APIs for creating, deleting, locating, updating, and listing catalogs.
 

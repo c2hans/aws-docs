@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ma
 ---
 
 # MalformedConditionExpressionFlowValidationDetails
-<a name="API_agent_MalformedConditionExpressionFlowValidationDetails"></a>
 
 Details about a malformed condition expression in a node.
 

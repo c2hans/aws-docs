@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/awspowershell-modu
 ---
 
 # AWS Tools for Windows PowerShell Script task
-<a name="awspowershell-module-script"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ImportKey
-<a name="API_ImportKey"></a>
 
 Imports symmetric keys and public key certificates in PEM format (base64 encoded) into AWS Payment Cryptography.
 

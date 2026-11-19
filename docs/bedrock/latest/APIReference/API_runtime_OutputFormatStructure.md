@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # OutputFormatStructure
-<a name="API_runtime_OutputFormatStructure"></a>
 
  The structure that the model's output must adhere to.
 

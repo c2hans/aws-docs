@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/create-cluster
 ---
 
 # Create an MSK Provisioned cluster with a custom Amazon MSK configuration using the AWS CLI
-<a name="create-cluster-cli-custom-config"></a>
 
 For information about custom Amazon MSK configurations and how to create them, see [Amazon MSK Provisioned configuration](msk-configuration.md).
 

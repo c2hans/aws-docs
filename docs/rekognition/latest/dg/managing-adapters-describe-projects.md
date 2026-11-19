@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/managing-adapters-
 ---
 
 # Describing projects
-<a name="managing-adapters-describe-projects"></a>
 
 You can use the [DescribeProjects](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjects.html) API to get information about your projects, including information about all the adapters associated with a project.
 

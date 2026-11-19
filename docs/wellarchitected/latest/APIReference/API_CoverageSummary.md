@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CoverageSummary
-<a name="API_CoverageSummary"></a>
 
 Counts describing the coverage of a completed Organizational Report. Includes the number of accounts in scope, how many had a profile, how many failed, and aggregated recommendation counts by pillar and priority. Returned only by GetAgentOrganizationalReport after the report reaches COMPLETED status. Not returned on the list response.
 

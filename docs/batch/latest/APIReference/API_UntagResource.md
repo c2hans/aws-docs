@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_UntagResou
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes specified tags from an AWS Batch resource.
 

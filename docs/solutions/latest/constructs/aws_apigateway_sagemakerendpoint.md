@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_apigatew
 ---
 
 # aws-apigateway-sagemakerendpoint
-<a name="aws_apigateway_sagemakerendpoint"></a>
 
 ![Stability:Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
 

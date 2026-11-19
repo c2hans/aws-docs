@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/register-endpoint.ht
 ---
 
 # Register a mobile device endpoint as an App Instance user for Amazon Chime SDK messaging
-<a name="register-endpoint"></a>
 
 To receive push notifications, app instance users must first use the [RegisterAppInstanceUserEndpoint](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_identity-chime_RegisterAppInstanceUserEndpoint.html) API to register a mobile device. They must register from a mobile app that has access to the device token for the device's operating system.
 

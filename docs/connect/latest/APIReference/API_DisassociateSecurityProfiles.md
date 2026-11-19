@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateSecurityProfiles
-<a name="API_DisassociateSecurityProfiles"></a>
 
  Disassociates a security profile attached to a Q in Connect AI Agent Entity in an Amazon Connect instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/re
 ---
 
 # Server SDK 5.x for Amazon GameLift Servers
-<a name="reference-serversdk"></a>
 
 This section provides reference documentation for the server SDK 5.x for Amazon GameLift Servers. The server SDK provides core functionality that your game server uses to interact with the Amazon GameLift Servers service. For example, your game server receives prompts from the service to start and stop game sessions and it provides regular game session status updates to the service. Integrate your game servers with the server SDK before you deploy them for hosting.
 

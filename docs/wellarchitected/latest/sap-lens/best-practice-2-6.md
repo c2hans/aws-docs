@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 2.6 – Make frequent, small, and reversible changes
-<a name="best-practice-2-6"></a>
 
 Frequent, small, and reversible changes reduce the scope and impact of a change. Although many SAP NetWeaver solutions only support a “patch forward” approach, consider using feature toggles in custom development to allow rollback. This eases troubleshooting, enables faster remediation, and provides the option to roll back a change.
 

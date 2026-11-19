@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/snapshots-seedi
 ---
 
 # Seeding a new cluster with an externally created snapshot
-<a name="snapshots-seeding-redis"></a>
 
 When you create a new MemoryDB cluster, you can seed it with data from a Valkey or Redis OSS .rdb snapshot file.
 

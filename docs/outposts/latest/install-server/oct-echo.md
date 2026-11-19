@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/oct-echo.
 ---
 
 # echo
-<a name="oct-echo"></a>
 
 The **echo** command displays the value that you set for a variable using the [export](oct-export.md) command.
 

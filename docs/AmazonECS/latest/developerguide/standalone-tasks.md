@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/standalo
 ---
 
 # Amazon ECS standalone tasks
-<a name="standalone-tasks"></a>
 
 You can run your application as a task when you have an application that performs some work, and then stops, for example a batch process. If you want to run a task one time, you can use the console, AWS CLI, APIs, or SDKs.
 

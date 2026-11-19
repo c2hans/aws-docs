@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Pro
 ---
 
 # ProductCodeListItem
-<a name="API_ProductCodeListItem"></a>
 
 Information about a single product code.
 

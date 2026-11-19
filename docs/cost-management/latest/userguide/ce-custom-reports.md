@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-cust
 ---
 
 # Creating a Cost Explorer report
-<a name="ce-custom-reports"></a>
 
 You can use the console to save the results of a Cost Explorer query as a report.
 

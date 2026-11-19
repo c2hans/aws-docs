@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-ml-m
 ---
 
 # Creating a lookalike model
-<a name="create-ml-model-create-model"></a>
 
 After you have created a training dataset, you are ready to create a lookalike model. You can create many lookalike models from a single training dataset.
 

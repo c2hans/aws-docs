@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Registering a custom Hook with CloudFormation
-<a name="registering-hooks"></a>
 
 Once you have created a custom Hook, you need to register it with CloudFormation so you can use it. In this section, you'll learn to package and register your Hook for use in your AWS account.
 

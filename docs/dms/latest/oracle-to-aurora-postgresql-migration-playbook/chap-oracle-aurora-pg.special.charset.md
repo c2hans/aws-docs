@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle character sets and PostgreSQL encoding
-<a name="chap-oracle-aurora-pg.special.charset"></a>
 
 With AWS DMS, you can migrate databases between different database platforms while handling character set and encoding differences. Oracle databases use character sets to define which characters are allowed, while PostgreSQL uses encodings for the same purpose.
 

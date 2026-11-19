@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/gt.html
 ---
 
 # $gt
-<a name="gt"></a>
 
 The `$gt` operator in Amazon DocumentDB is used to select documents where the value of the specified field is greater than the specified value. This operator is useful for filtering and querying data based on numerical comparisons.
 

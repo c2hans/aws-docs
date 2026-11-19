@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Ack
 ---
 
 # AcknowledgeThirdPartyJob
-<a name="API_AcknowledgeThirdPartyJob"></a>
 
 Confirms a job worker has received the specified job. Used for partner actions only.
 

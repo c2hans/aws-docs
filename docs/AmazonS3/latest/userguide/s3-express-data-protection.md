@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-dat
 ---
 
 # Data protection and encryption
-<a name="s3-express-data-protection"></a>
 
  For more information about how you can configure encryption for directory buckets, see the following topics.
 

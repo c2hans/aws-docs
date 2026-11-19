@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetPubli
 ---
 
 # GetPublicAccessBlock
-<a name="API_control_GetPublicAccessBlock"></a>
 
 **Note**
 This operation is not supported by directory buckets.

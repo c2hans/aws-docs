@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Webhoo
 ---
 
 # WebhookFilter
-<a name="API_WebhookFilter"></a>
 
 A filter used to determine which webhooks trigger a build.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListNotificationHubs
-<a name="API_ListNotificationHubs"></a>
 
 Returns a list of `NotificationHubs`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Lis
 ---
 
 # Use `ListGroupsForUser` with a CLI
-<a name="iam_example_iam_ListGroupsForUser_section"></a>
 
 The following code examples show how to use `ListGroupsForUser`.
 

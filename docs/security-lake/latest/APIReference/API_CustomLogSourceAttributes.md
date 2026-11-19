@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Cu
 ---
 
 # CustomLogSourceAttributes
-<a name="API_CustomLogSourceAttributes"></a>
 
 The attributes of a third-party custom source.
 

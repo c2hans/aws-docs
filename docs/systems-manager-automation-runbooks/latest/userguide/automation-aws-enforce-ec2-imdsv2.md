@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnforceEC2InstanceIMDSv2`
-<a name="automation-aws-enforce-ec2-imdsv2"></a>
 
 **Description**
 

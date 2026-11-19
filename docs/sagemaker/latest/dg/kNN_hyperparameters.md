@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/kNN_hyperparameters.
 ---
 
 # k-NN Hyperparameters
-<a name="kNN_hyperparameters"></a>
 
 The following table lists the hyperparameters that you can set for the Amazon SageMaker AI k-nearest neighbors (k-NN) algorithm.
 

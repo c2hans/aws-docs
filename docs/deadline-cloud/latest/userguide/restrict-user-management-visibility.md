@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/restrict
 ---
 
 # Restricting which users can access the monitor
-<a name="restrict-user-management-visibility"></a>
 
 To sign in to the Deadline Cloud monitor, a user needs two levels of access:
 + **AWS IAM Identity Center (IAM Identity Center) application access** – Permission to sign in to the Deadline Cloud monitor application.

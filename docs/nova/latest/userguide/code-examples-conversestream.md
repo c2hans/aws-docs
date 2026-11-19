@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/code-examples-conv
 ---
 
 # Send a message with the ConverseStream API
-<a name="code-examples-conversestream"></a>
 
 The following code examples show how to send a text message to Amazon Nova, using Bedrock's Converse API and process the response stream in real-time.
 

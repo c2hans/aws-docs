@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/add-rules-for-
 ---
 
 # Add real-time alerts to conversational analytics for supervisors based on keywords and phrases in a call
-<a name="add-rules-for-alerts"></a>
 
 After you [enable real-time analytics](enable-analytics.md) in your flow, you can add rules that automatically alert supervisors when a customer experience issue occurs.
 

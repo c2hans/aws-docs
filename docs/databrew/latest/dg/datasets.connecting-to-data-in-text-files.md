@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/datasets.connecting-t
 ---
 
 # Connecting to data in a text file with DataBrew
-<a name="datasets.connecting-to-data-in-text-files"></a>
 
 You can configure the following format options for the input files that DataBrew supports:
 + **Comma-separated value (CSV) files**

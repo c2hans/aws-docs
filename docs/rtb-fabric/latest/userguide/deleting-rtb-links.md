@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/deleting-rtb
 ---
 
 # Deleting links
-<a name="deleting-rtb-links"></a>
 
 When you no longer need a link, you can delete it from either the requester or responder gateway. This action permanently removes the connection and stops all communication between the linked gateways.
 

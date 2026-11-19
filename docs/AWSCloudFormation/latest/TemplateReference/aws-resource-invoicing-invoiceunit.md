@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Invoicing::InvoiceUnit
-<a name="aws-resource-invoicing-invoiceunit"></a>
 
 An invoice unit is a set of mutually exclusive account that correspond to your business entity. Invoice units allow you separate AWS account costs and configures your invoice for each business entity going forward.
 

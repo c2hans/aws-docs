@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/high-volume-e
 ---
 
 # Viewing details for high-volume entities in Detective
-<a name="high-volume-entities"></a>
 
 In the [behavior graph](behavior-graph-data-about.md), Amazon Detective tracks relationships between entities. For example, each behavior graph tracks when an AWS user creates an AWS role and when an EC2 instance connects to an IP address.
 

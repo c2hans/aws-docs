@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/configuring-java
 ---
 
 # Configure applications to use a specific Java Virtual Machine
-<a name="configuring-java8"></a>
 
 Amazon EMR releases have different default Java Virtual Machine (JVM) versions. This page explains the JVM support for different releases and applications.
 

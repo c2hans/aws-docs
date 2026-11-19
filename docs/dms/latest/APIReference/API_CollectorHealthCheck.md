@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CollectorHea
 ---
 
 # CollectorHealthCheck
-<a name="API_CollectorHealthCheck"></a>
 
 Describes the last Fleet Advisor collector health check.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WabaSetupFinalization
-<a name="API_WabaSetupFinalization"></a>
 
 The registration details for a linked WhatsApp Business Account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/upgrading-agent.html
 ---
 
 # Upgrading the Amazon DCV Session Manager agent
-<a name="upgrading-agent"></a>
 
 Amazon DCV Session Manager agents receive instructions from the broker and run them on their respective Amazon DCV servers. As part of routine maintenance, agents need to be upgraded to meet new standards and requirements. This section walks you through the upgrading process of your Session Manager agents.
 

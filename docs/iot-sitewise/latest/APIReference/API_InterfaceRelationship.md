@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Int
 ---
 
 # InterfaceRelationship
-<a name="API_InterfaceRelationship"></a>
 
 Contains information about the relationship between an asset model and an interface asset model that is applied to it.
 

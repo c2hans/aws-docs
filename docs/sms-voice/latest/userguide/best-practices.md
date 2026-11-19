@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/best-practice
 ---
 
 # AWS End User Messaging SMS Best Practices
-<a name="best-practices"></a>
 
 For the best results for creating and sending messages, we recommend that you perform the following best practices.
 

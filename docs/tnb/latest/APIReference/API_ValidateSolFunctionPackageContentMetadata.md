@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ValidateSolF
 ---
 
 # ValidateSolFunctionPackageContentMetadata
-<a name="API_ValidateSolFunctionPackageContentMetadata"></a>
 
 Validates function package content metadata.
 

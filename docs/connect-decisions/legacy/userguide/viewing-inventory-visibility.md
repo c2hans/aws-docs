@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/viewi
 ---
 
 # Viewing inventory visibility
-<a name="viewing-inventory-visibility"></a>
 
 You can use inventory visibility to view the inventory projections for all the ingested products and site combinations. You can change the projections view by product or location.
 

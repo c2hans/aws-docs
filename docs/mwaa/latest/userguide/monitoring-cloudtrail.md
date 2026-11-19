@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/monitoring-cloudtr
 ---
 
 # Accessing audit logs in AWS CloudTrail
-<a name="monitoring-cloudtrail"></a>
 
 AWS CloudTrail is enabled on your AWS account when you create it. CloudTrail logs the activity taken by an IAM entity or an AWS service, such as Amazon Managed Workflows for Apache Airflow, which is recorded as a CloudTrail event. You can view, search, and download the past 90 days of event history in the CloudTrail console. CloudTrail captures all events on the Amazon MWAA console and all calls to Amazon MWAA APIs. It doesn't capture read-only actions, such as `GetEnvironment`, or the `PublishMetrics` action. This page describes how to use CloudTrail to monitor events for Amazon MWAA.
 
@@ -23,7 +22,9 @@ You need to create a trail to access an ongoing record of events in your AWS acc
 ## Logging data plane events
 <a name="monitoring-cloudtrail-invoke-rest-api"></a>
 
-The following Amazon MWAA API actions are data plane events: `InvokeRestApi`, `CreateWebLoginToken`, and `CreateCliToken`. Unlike management events, AWS CloudTrail does not log data events by default, and they do not appear in CloudTrail Event History. You must configure a trail that explicitly includes data events. Additional charges apply. For more information, see [Logging data events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html) in the AWS CloudTrail User Guide.
+The following Amazon MWAA API actions are data plane events: `InvokeRestApi`, `CreateWebLoginToken`, `CreateCliToken`, and `CheckAuthorization`. Unlike management events, AWS CloudTrail does not log data events by default, and they do not appear in CloudTrail Event History. You must configure a trail that explicitly includes data events. Additional charges apply. For more information, see [Logging data events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html) in the AWS CloudTrail User Guide.
+
+Amazon MWAA calls `CheckAuthorization` in environments that have IAM Identity Center integration enabled. When a user performs an action in the Apache Airflow UI, Amazon MWAA uses the user's Permission Set credentials to check whether the action is allowed. Each `CheckAuthorization` event identifies the individual user, the Apache Airflow resource and action, and the authorization decision. Amazon MWAA caches decisions for a short time, so not every Apache Airflow UI action produces an event. For more information, see [Using IAM Identity Center with Amazon Managed Workflows for Apache Airflow](identity-center-integration.md).
 
 **To log data plane events**
 
@@ -39,14 +40,117 @@ The following Amazon MWAA API actions are data plane events: `InvokeRestApi`, `C
 
 1. Review your settings and choose **Create trail**.
 
-After the trail is active, CloudTrail delivers data plane events such as `InvokeRestApi`, `CreateWebLoginToken`, and `CreateCliToken` to your Amazon S3 bucket within approximately 15 minutes. If you configured Amazon CloudWatch Logs, use the following filter pattern to find these events:
+After the trail is active, CloudTrail delivers data plane events such as `InvokeRestApi`, `CreateWebLoginToken`, `CreateCliToken`, and `CheckAuthorization` to your Amazon S3 bucket within approximately 15 minutes. If you configured Amazon CloudWatch Logs, use the following filter pattern to find these events:
 
 ```
-{ ($.eventName = "InvokeRestApi") || ($.eventName = "CreateWebLoginToken") || ($.eventName = "CreateCliToken") }
+{ ($.eventName = "InvokeRestApi") || ($.eventName = "CreateWebLoginToken") || ($.eventName = "CreateCliToken") || ($.eventName = "CheckAuthorization") }
 ```
 
 **Response payload is not logged**
 CloudTrail redacts the `RestApiResponse` field in log entries. CloudTrail records the call and its status code but does not log the response payload.
+
+To find the activity of a specific IAM Identity Center user, filter `CheckAuthorization` events on the role session name, which is the user's IAM Identity Center user name. The following filter pattern matches events for the user {{mary\_major}}:
+
+```
+{ ($.eventName = "CheckAuthorization") && ($.userIdentity.arn = %AWSReservedSSO_.*/mary_major$%) }
+```
+
+The following example is a `CheckAuthorization` log entry for an authorization check that Amazon MWAA made for an IAM Identity Center user. The user {{mary\_major}} signed in with the {{AirflowDataEngineer}} Permission Set, and the Apache Airflow UI checked whether the user can read a DAG. The following elements identify the caller and the request:
++ `userIdentity` shows the `AWSReservedSSO_*` role that IAM Identity Center created for the Permission Set. The role session name is the user's IAM Identity Center user name.
++ `onBehalfOf` identifies the IAM Identity Center user and the identity store on whose behalf the request was made. It can also include the IAM Identity Center instance.
++ `requestParameters` shows the Apache Airflow resource and action that Amazon MWAA checked. Optional elements, such as `ResourceId`, `DagAccessEntity`, and `TeamNames`, appear only when the check includes them.
++ `sourceIPAddress` and `userAgent` belong to the Amazon MWAA web server that makes the call, not to the user's browser. The source IP address is the web server's NAT gateway IP address, and the user agent is the web server's HTTP client.
+
+```
+{
+  "eventVersion": "1.11",
+  "userIdentity": {
+    "type": "AssumedRole",
+    "principalId": "AROA123456789EXAMPLE:{{mary_major}}",
+    "arn": "arn:aws:sts::{{123456789012}}:assumed-role/AWSReservedSSO_{{AirflowDataEngineer}}_{{0123456789abcdef}}/{{mary_major}}",
+    "accountId": "{{123456789012}}",
+    "accessKeyId": "{{access-key-id}}",
+    "sessionContext": {
+      "sessionIssuer": {
+        "type": "Role",
+        "principalId": "AROA123456789EXAMPLE",
+        "arn": "arn:aws:iam::{{123456789012}}:role/aws-reserved/sso.amazonaws.com/{{us-east-1}}/AWSReservedSSO_{{AirflowDataEngineer}}_{{0123456789abcdef}}",
+        "accountId": "{{123456789012}}",
+        "userName": "AWSReservedSSO_{{AirflowDataEngineer}}_{{0123456789abcdef}}"
+      },
+      "attributes": {
+        "creationDate": "2026-11-12T16:20:41Z",
+        "mfaAuthenticated": "false"
+      }
+    },
+    "onBehalfOf": {
+      "userId": "{{idc-user-id}}",
+      "identityStoreArn": "arn:aws:identitystore::{{idc-account-id}}:identitystore/{{d-1234567890}}",
+      "identityCenterInstanceArn": "arn:aws:sso:::instance/{{ssoins-instanceid}}"
+    }
+  },
+  "eventTime": "2026-11-12T16:21:05Z",
+  "eventSource": "airflow.amazonaws.com",
+  "eventName": "CheckAuthorization",
+  "awsRegion": "{{us-east-1}}",
+  "sourceIPAddress": "{{source-ip-address}}",
+  "userAgent": "python-requests/{{version}}",
+  "requestParameters": {
+    "Name": "{{my-env}}",
+    "ResourceType": "DAG",
+    "ResourceAction": "GET",
+    "ResourceId": "{{example_dag}}",
+    "TeamNames": [
+      "{{data-eng}}"
+    ]
+  },
+  "responseElements": {
+    "Access-Control-Expose-Headers": "x-amzn-RequestId,x-amzn-ErrorType",
+    "Decision": "ALLOW"
+  },
+  "requestID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+  "eventID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+  "readOnly": false,
+  "resources": [
+    {
+      "accountId": "{{123456789012}}",
+      "type": "AWS::MWAA::Environment",
+      "ARN": "arn:aws:airflow:{{us-east-1}}:{{123456789012}}:environment/{{my-env}}"
+    }
+  ],
+  "eventType": "AwsApiCall",
+  "managementEvent": false,
+  "recipientAccountId": "{{123456789012}}",
+  "eventCategory": "Data"
+}
+```
+
+If the user's Permission Set doesn't allow the action, CloudTrail records the call as denied. A denied `CheckAuthorization` event doesn't contain `Decision`. Instead, it contains an `errorCode` element, and the `responseElements` element contains the IAM error message. The following example shows the elements that differ from the previous example:
+
+```
+{
+  "eventName": "CheckAuthorization",
+  "errorCode": "AccessDenied",
+  "requestParameters": {
+    "Name": "{{my-env}}",
+    "ResourceType": "DAG",
+    "ResourceAction": "GET",
+    "TeamNames": [
+      "{{data-eng}}"
+    ]
+  },
+  "responseElements": {
+    "Access-Control-Expose-Headers": "x-amzn-errortype,x-amzn-requestid,x-amzn-trace-id",
+    "message": "User: arn:aws:sts::{{123456789012}}:assumed-role/AWSReservedSSO_{{AirflowDataEngineer}}_{{0123456789abcdef}}/{{mary_major}} is not authorized to perform: airflow:AccessAirflowResource on resource: arn:aws:airflow:{{us-east-1}}:{{123456789012}}:environment/{{my-env}} because no identity-based policy allows the airflow:AccessAirflowResource action"
+  }
+}
+```
+
+To find denied authorization checks, use the following filter pattern:
+
+```
+{ ($.eventName = "CheckAuthorization") && ($.errorCode = "AccessDenied") }
+```
 
 ## Accessing events with CloudTrail Event History
 <a name="monitoring-cloudtrail-view"></a>
@@ -159,7 +263,7 @@ This example shows temporary credentials from an assumed role, which is the reco
   "eventSource": "airflow.amazonaws.com",
   "eventName": "InvokeRestApi",
   "awsRegion": "us-west-2",
-  "sourceIPAddress": "203.0.113.10",
+  "sourceIPAddress": "{{source-ip-address}}",
   "userAgent": "Boto3/1.28.0 Python/3.11.0",
   "requestParameters": {
     "Name": "MyAirflowEnvironment",

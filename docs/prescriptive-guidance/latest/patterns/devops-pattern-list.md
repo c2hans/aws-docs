@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # DevOps
-<a name="devops-pattern-list"></a>
 
 **Topics**
 + [Automate Supply Chain data lakes deployment in a multi-repository setup](automate-the-deployment-of-aws-supply-chain-data-lakes.md)

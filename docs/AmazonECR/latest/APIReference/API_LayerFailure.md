@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_LayerF
 ---
 
 # LayerFailure
-<a name="API_LayerFailure"></a>
 
 An object representing an Amazon ECR image layer failure.
 

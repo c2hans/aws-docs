@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeRuleGroup
-<a name="API_DescribeRuleGroup"></a>
 
 Returns the data objects for the specified rule group.
 
@@ -329,13 +328,13 @@ The object that defines the rules in an IPS engine rule group, for use in a Next
 Type: [IpsRuleGroup](API_IpsRuleGroup.md) object
 
  ** [RuleGroup](#API_DescribeRuleGroup_ResponseSyntax) **   <a name="networkfirewall-DescribeRuleGroup-response-RuleGroup"></a>
-The object that defines the rules in a rule group. This, along with [RuleGroupResponse](API_RuleGroupResponse.md), define the rule group. You can retrieve all objects for a rule group by calling [DescribeRuleGroup](#API_DescribeRuleGroup).
+The object that defines the rules in a rule group. This, along with [RuleGroupResponse](API_RuleGroupResponse.md), define the rule group. You can retrieve all objects for a rule group by calling [DescribeRuleGroup](API_DescribeRuleGroup.md).
  AWS Network Firewall uses a rule group to inspect and control network traffic. You define stateless rule groups to inspect individual packets and you define stateful rule groups to inspect packets in the context of their traffic flow.
 To use a rule group, you include it by reference in an Network Firewall firewall policy, then you use the policy in a firewall. You can reference a rule group from more than one firewall policy, and you can use a firewall policy in more than one firewall.
 Type: [RuleGroup](API_RuleGroup.md) object
 
  ** [RuleGroupResponse](#API_DescribeRuleGroup_ResponseSyntax) **   <a name="networkfirewall-DescribeRuleGroup-response-RuleGroupResponse"></a>
-The high-level properties of a rule group. This, along with the [RuleGroup](API_RuleGroup.md), define the rule group. You can retrieve all objects for a rule group by calling [DescribeRuleGroup](#API_DescribeRuleGroup).
+The high-level properties of a rule group. This, along with the [RuleGroup](API_RuleGroup.md), define the rule group. You can retrieve all objects for a rule group by calling [DescribeRuleGroup](API_DescribeRuleGroup.md).
 Type: [RuleGroupResponse](API_RuleGroupResponse.md) object
 
  ** [UpdateToken](#API_DescribeRuleGroup_ResponseSyntax) **   <a name="networkfirewall-DescribeRuleGroup-response-UpdateToken"></a>

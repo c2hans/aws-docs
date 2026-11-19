@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # DeleteRegionAction
-<a name="API_DeleteRegionAction"></a>
 
 Defines the information about the AWS Region you're deleting from your replication set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agentic-assist
 ---
 
 # Use Connect Customer agentic assistance
-<a name="agentic-assistance"></a>
 
 Connect Customer provides AI agents that help customer service representatives solve live interactions with end customers. These AI agents make proactive recommendations based on real-time customer interactions and help guide representatives down the right path to resolve issues efficiently. The AI agents can look up information from disparate sources, complete transactions both in Connect Customer and third-party applications, and perform traditional retrieval augmented generation (RAG) Q&A.
 

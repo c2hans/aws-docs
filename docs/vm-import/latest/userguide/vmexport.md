@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html
 ---
 
 # Export an EC2 instance as a VM using VM Import/Export
-<a name="vmexport"></a>
 
 Exporting as a VM is useful when you want to deploy a copy of an Amazon EC2 instance in your virtualization environment. You can export most EC2 instances to Citrix Xen, Microsoft Hyper-V, or VMware vSphere.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # PolicyConfiguration
-<a name="API_PolicyConfiguration"></a>
 
 Configuration settings that control a policy's behavior.
 

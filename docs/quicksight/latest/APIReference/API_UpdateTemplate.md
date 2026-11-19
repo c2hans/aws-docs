@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateTemplate
-<a name="API_UpdateTemplate"></a>
 
 Updates a template from an existing Amazon Quick Sight analysis or another template.
 

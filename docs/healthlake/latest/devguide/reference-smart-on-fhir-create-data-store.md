@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-sma
 ---
 
 # Creating a SMART on FHIR enabled HealthLake data store
-<a name="reference-smart-on-fhir-create-data-store"></a>
 
 To use the SMART on FHIR framework with HealthLake, create a HealthLake data store with the `IdentityProviderConfiguration` parameter specified in your `CreateFHIRDatastore` request. In the `IdentityProviderConfiguration` parameter you specify the following information:
 + Set the [AuthorizationStrategy](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_IdentityProviderConfiguration.html) equal to `SMART_ON_FHIR_V1`.

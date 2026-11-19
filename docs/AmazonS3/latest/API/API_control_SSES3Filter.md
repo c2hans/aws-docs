@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_SSES3Fil
 ---
 
 # SSES3Filter
-<a name="API_control_SSES3Filter"></a>
 
 A filter that returns objects that are encrypted by server-side encryption with Amazon S3 managed keys (SSE-S3).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ListContentAssociations
-<a name="API_amazon-q-connect_ListContentAssociations"></a>
 
 Lists the content associations.
 

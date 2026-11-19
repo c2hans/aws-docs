@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/new-AL2023.11
 ---
 
 # New packages in AL2023.12 since AL2023.11
-<a name="new-AL2023.11-AL2023.12"></a>
 
  Comparing AL2023.11 version 2023.11.20260406 to AL2023.12 version [2023.12.20260608](relnotes-2023.12.20260608.md).
 

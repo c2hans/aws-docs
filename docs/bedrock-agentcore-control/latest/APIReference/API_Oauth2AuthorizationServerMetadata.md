@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Oauth2AuthorizationServerMetadata
-<a name="API_Oauth2AuthorizationServerMetadata"></a>
 
 Contains the authorization server metadata for an OAuth2 provider.
 

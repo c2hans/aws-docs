@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dele
 ---
 
 # DeleteProjectVersion
-<a name="API_DeleteProjectVersion"></a>
 
 Deletes a Rekognition project model or project version, like a Amazon Rekognition Custom Labels model or a custom adapter.
 

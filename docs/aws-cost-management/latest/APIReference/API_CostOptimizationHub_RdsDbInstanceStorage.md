@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RdsDbInstanceStorage
-<a name="API_CostOptimizationHub_RdsDbInstanceStorage"></a>
 
 Contains the details of an Amazon RDS DB instance storage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeCapacityReservation
-<a name="API_DescribeCapacityReservation"></a>
 
 Describes the capacity reservation status for the specified load balancer.
 

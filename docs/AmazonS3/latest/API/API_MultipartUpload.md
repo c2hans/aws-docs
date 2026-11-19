@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_MultipartUpload.
 ---
 
 # MultipartUpload
-<a name="API_MultipartUpload"></a>
 
 Container for the `MultipartUpload` for the Amazon S3 object.
 
@@ -53,6 +52,13 @@ Required: No
 
  ** UploadId **   <a name="AmazonS3-Type-MultipartUpload-UploadId"></a>
 Upload ID that identifies the multipart upload.
+Type: String
+Required: No
+
+ ** VersionId **   <a name="AmazonS3-Type-MultipartUpload-VersionId"></a>
+Version ID of the object.
+Returns the Version ID of the object for the multipart upload, if bucket versioning is enabled.
+This functionality is not supported for directory buckets.
 Type: String
 Required: No
 

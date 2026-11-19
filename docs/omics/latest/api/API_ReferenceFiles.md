@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReferenceFiles.html
 ---
 
 # ReferenceFiles
-<a name="API_ReferenceFiles"></a>
 
 A set of genome reference files.
 

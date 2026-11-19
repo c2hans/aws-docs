@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/co
 ---
 
 # Configure client endpoints
-<a name="config-endpoint"></a>
 
 When the AWS SDK for Kotlin calls an AWS service, one of its first steps is to determine where to route the request. This process is known as endpoint resolution.
 

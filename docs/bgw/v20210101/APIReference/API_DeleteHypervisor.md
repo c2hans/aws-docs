@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_DeleteHyp
 ---
 
 # DeleteHypervisor
-<a name="API_DeleteHypervisor"></a>
 
 Deletes a hypervisor.
 

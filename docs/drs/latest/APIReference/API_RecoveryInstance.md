@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryInst
 ---
 
 # RecoveryInstance
-<a name="API_RecoveryInstance"></a>
 
 A Recovery Instance is a replica of a Source Server running on EC2.
 

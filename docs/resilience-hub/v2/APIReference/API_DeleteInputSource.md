@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Delet
 ---
 
 # DeleteInputSource
-<a name="API_DeleteInputSource"></a>
 
 Deletes an input source.
 

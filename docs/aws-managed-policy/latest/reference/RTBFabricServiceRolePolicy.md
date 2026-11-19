@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/RTBF
 ---
 
 # RTBFabricServiceRolePolicy
-<a name="RTBFabricServiceRolePolicy"></a>
 
 **Description**: A service-linked role required for AWS RTBFabric to create and manage your network interface resources and deliver metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Elastic Load Balancing objects
-<a name="API_Type_Resource_ELB"></a>
 
 ****Elastic Load Balancing objects****
 + [AwsElbAppCookieStickinessPolicy](API_AwsElbAppCookieStickinessPolicy.md)

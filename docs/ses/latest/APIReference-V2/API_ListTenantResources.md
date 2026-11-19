@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTenan
 ---
 
 # ListTenantResources
-<a name="API_ListTenantResources"></a>
 
 List all resources associated with a specific tenant.
 

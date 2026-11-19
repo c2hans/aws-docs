@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-c
 ---
 
 # Verify a signature signed with the HashEdDSA mechanism in CloudHSM CLI
-<a name="cloudhsm_cli-crypto-verify-ed25519ph"></a>
 
 **Important**
 HashEdDSA signature verification operations are only supported on hsm2m.medium instances in non-FIPS mode.

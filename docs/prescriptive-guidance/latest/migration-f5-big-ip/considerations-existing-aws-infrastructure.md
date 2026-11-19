@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Connecting to your AWS infrastructure
-<a name="considerations-existing-aws-infrastructure"></a>
 
 The following table shows key consideration for when you connect to your new AWS infrastructure during an F5 BIG-IP migration.
 

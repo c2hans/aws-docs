@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ---
 
 # Related resources
-<a name="resources"></a>
 
 This AWS Prescriptive Guidance leverages **W3C Semantic Web standards** — including RDF, RDFS, OWL, SPARQL, SHACL, R2RML, and SWRL — to ensure interoperability, longevity, and ecosystem compatibility. These open standards enable organizations to build semantic data foundations that integrate seamlessly with best-of-breed tools and platforms, avoiding vendor lock-in while benefiting from decades of research and production deployments across industries.
 

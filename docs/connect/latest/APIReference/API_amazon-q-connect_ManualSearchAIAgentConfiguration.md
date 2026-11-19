@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ManualSearchAIAgentConfiguration
-<a name="API_amazon-q-connect_ManualSearchAIAgentConfiguration"></a>
 
 The configuration for the `MANUAL_SEARCH` AI Agent type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-twe
 ---
 
 # TwelveLabs
-<a name="model-cards-twelvelabs"></a>
 
 The following TwelveLabs models are available in Amazon Bedrock:
 

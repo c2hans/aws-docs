@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Creating and editing WhatsApp Flows
-<a name="managing-flows-create"></a>
 
 You can create a WhatsApp Flow using the AWS End User Messaging Social console or the AWS End User Messaging Social API. When you create a Flow, it is placed in DRAFT status. You can optionally provide a Flow JSON definition at creation time, or add it later using the update assets operation.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/elastic-load-bala
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Hello Elastic Load Balancing
-<a name="elastic-load-balancing-v2_example_elastic-load-balancing-v2_Hello_section"></a>
 
 The following code examples show how to get started using Elastic Load Balancing.
 

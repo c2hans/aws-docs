@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Snowflake connections
-<a name="aws-glue-programming-etl-connect-snowflake-home"></a>
 
 You can use AWS Glue for Spark to read from and write to tables in Snowflake in AWS Glue 4.0 and later versions. You can read from Snowflake with a SQL query. You can connect to Snowflake using one of three methods - basic authentication (using username and password), OAuth authentication, or key-pair authentication. You can refer to Snowflake credentials stored in AWS Secrets Manager through the AWS Glue Data connections. Data connection Snowflake credentials for AWS Glue for Spark are stored separately from Data Catalog Snowflake credentials for crawlers. You must choose a `SNOWFLAKE` type connection and not a `JDBC` type connection configured to connect to Snowflake.
 

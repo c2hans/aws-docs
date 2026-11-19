@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/monitoring-volume-m
 ---
 
 # Monitor the progress of Amazon EBS volume modifications
-<a name="monitoring-volume-modifications"></a>
 
 When you modify an EBS volume, it goes through a sequence of states. The volume enters the `modifying` state, the `optimizing` state, and finally the `completed` state. At this point, the volume is ready to be further modified.
 

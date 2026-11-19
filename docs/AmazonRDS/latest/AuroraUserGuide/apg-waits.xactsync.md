@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # IO:XactSync
-<a name="apg-waits.xactsync"></a>
 
 The `IO:XactSync` event occurs when the database is waiting for the Aurora storage subsystem to acknowledge the commit of a regular transaction, or the commit or rollback of a prepared transaction. A prepared transaction is part of PostgreSQL's support for a two-phase commit. This event can also occur when a query is waiting for another transaction to commit, particularly in cases where auto-commit is turned off. In such scenarios, updates might appear to be waiting on XactSync even though they haven't been committed yet.
 

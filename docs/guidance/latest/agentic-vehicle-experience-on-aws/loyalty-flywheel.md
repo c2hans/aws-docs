@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # The loyalty flywheel — four autonomous agents
-<a name="loyalty-flywheel"></a>
 
 The four agents address different points in the ownership lifecycle. Five more agents work for fleet operators and product engineers; see [Fleet Intelligence agents](fi-agents.md). Agent 1 covers daily energy use and cost. Agent 2 covers vehicle health and service. Agent 3 covers coverage entitlements and loyalty. Agent 4 covers household mobility position.
 

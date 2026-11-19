@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioAdminIAMConsolePolicy
-<a name="security-iam-awsmanpol-SageMakerStudioAdminIAMConsolePolicy"></a>
 
 This policy provides initial administrative and individual setup privileges for Amazon SageMaker Unified Studio via the AWS Management Console and SDK. It grants permissions for launching Amazon SageMaker Unified Studio.
 + Amazon DataZone permissions are required to allow principals full access to all Amazon DataZone actions.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_FetchQ
 ---
 
 # FetchQuery
-<a name="API_FetchQuery"></a>
 
 Contains the parameters of a request that GuardDuty made to retrieve data during an investigation. The members that are set depend on the `FetchType` of the record.
 

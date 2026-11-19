@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/core-toolchain.html
 ---
 
 # Core toolchain packages glibc, gcc, binutils
-<a name="core-toolchain"></a>
 
 AL2027 includes the following core toolchain versions:
 + **GCC 16.1** (up from 11.5 in AL2023)

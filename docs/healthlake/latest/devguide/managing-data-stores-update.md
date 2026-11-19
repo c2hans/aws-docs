@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data
 ---
 
 # Updating a HealthLake data store
-<a name="managing-data-stores-update"></a>
 
 Use `UpdateFHIRDatastore` to update the configuration of an existing AWS HealthLake data store. You can update the data store name, the natural language processing (NLP) configuration, the analytics configuration, the default FHIR validation profiles, and the identity provider configuration. The encryption configuration that you chose when you created the data store can't be changed.
 

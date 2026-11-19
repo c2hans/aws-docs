@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_SseConfig.html
 ---
 
 # SseConfig
-<a name="API_SseConfig"></a>
 
 Server-side encryption (SSE) settings for a store.
 

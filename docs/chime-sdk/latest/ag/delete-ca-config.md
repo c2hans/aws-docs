@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/delete-ca-config.htm
 ---
 
 # Deleting call analytics configurations
-<a name="delete-ca-config"></a>
 
 The steps in this section explain how to permanently delete an Amazon Chime SDK call analytics configuration.
 

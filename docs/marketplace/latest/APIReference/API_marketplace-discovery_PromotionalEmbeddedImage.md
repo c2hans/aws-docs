@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PromotionalEmbeddedImage
-<a name="API_marketplace-discovery_PromotionalEmbeddedImage"></a>
 
 An embedded promotional image for a product.
 

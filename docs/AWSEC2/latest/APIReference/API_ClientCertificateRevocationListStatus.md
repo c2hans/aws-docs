@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientCer
 ---
 
 # ClientCertificateRevocationListStatus
-<a name="API_ClientCertificateRevocationListStatus"></a>
 
 Describes the state of a client certificate revocation list.
 

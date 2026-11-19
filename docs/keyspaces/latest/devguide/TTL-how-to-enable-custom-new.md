@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/TTL-how-to-ena
 ---
 
 # Create table with custom Time to Live (TTL) settings enabled
-<a name="TTL-how-to-enable-custom-new"></a>
 
 To create a new table with Time to Live custom settings that can be applied to rows and columns without enabling TTL default settings for the entire table, you can use the following commands.
 

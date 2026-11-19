@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS AppConfig
-<a name="awsappconfig"></a>
 
 AWS AppConfig provides the following APIs for data retrieval.
 

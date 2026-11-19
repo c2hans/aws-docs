@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListConfiguredAudienceModels
-<a name="API_ListConfiguredAudienceModels"></a>
 
 Returns a list of the configured audience models.
 

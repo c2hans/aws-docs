@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetArchiveMessageContent
-<a name="API_GetArchiveMessageContent"></a>
 
 Returns the textual content of a specific email message stored in the archive. Attachments are not included.
 

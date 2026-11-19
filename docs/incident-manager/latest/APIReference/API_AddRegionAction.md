@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # AddRegionAction
-<a name="API_AddRegionAction"></a>
 
 Defines the AWS Region and AWS KMS key to add to the replication set.
 

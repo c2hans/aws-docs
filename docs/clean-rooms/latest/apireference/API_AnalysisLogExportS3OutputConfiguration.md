@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisLogExportS3OutputConfiguration
-<a name="API_AnalysisLogExportS3OutputConfiguration"></a>
 
 Contains output information for an analysis log export with an S3 output type.
 

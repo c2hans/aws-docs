@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/default-security-gr
 ---
 
 # Default security groups for your VPCs
-<a name="default-security-group"></a>
 
 Your default VPCs and any VPCs that you create come with a default security group. The name of the default security group is "default".
 

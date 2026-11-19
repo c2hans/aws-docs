@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateRela
 ---
 
 # CreateRelatedItem
-<a name="API_connect-cases_CreateRelatedItem"></a>
 
 Creates a related item (comments, tasks, and contacts) and associates it with a case.
 

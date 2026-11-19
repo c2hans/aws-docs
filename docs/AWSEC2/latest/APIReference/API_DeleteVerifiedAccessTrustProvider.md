@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVer
 ---
 
 # DeleteVerifiedAccessTrustProvider
-<a name="API_DeleteVerifiedAccessTrustProvider"></a>
 
 Delete an AWS Verified Access trust provider.
 

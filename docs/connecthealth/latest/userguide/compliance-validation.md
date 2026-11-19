@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/complianc
 ---
 
 # Compliance validation for Amazon Connect Health
-<a name="compliance-validation"></a>
 
 To learn whether an AWS service is within the scope of specific compliance programs, see [AWS Services in Scope by Compliance Program](http://aws.amazon.com/compliance/services-in-scope/) and choose the compliance program that you are interested in. For general information, see [AWS Compliance Programs](http://aws.amazon.com/compliance/programs/).
 

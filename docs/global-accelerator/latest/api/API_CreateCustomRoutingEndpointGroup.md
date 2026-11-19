@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Create
 ---
 
 # CreateCustomRoutingEndpointGroup
-<a name="API_CreateCustomRoutingEndpointGroup"></a>
 
 Create an endpoint group for the specified listener for a custom routing accelerator. An endpoint group is a collection of endpoints in one AWS Region.
 

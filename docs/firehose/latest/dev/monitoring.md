@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/monitoring.html
 ---
 
 # Monitor Amazon Data Firehose
-<a name="monitoring"></a>
 
 You can monitor Amazon Data Firehose using the following features:
 

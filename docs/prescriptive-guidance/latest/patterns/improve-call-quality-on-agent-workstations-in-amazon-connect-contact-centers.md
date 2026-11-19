@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/im
 ---
 
 # Improve call quality on agent workstations in Amazon Connect contact centers
-<a name="improve-call-quality-on-agent-workstations-in-amazon-connect-contact-centers"></a>
 
 *Ernest Ozdoba, Amazon Web Services*
 

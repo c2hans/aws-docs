@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcos
 ---
 
 # Investment protection
-<a name="telcosus03"></a>
 
 |  TELCOSUS03: How are you protecting investments in the telco network assets?  |
 | --- |

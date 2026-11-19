@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3DirectSourceAdd
 ---
 
 # S3DirectSourceAdditionalOptions
-<a name="API_S3DirectSourceAdditionalOptions"></a>
 
 Specifies additional connection options for the Amazon S3 data store.
 

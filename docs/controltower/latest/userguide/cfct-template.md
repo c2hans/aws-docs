@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cfct-templ
 ---
 
 # Template and source code
-<a name="cfct-template"></a>
 
  Customizations for AWS Control Tower (CfCT) are deployed in your management account after you launch your AWS CloudFormation template. You can download [the template](  https://github.com/aws-solutions/aws-control-tower-customizations/blob/main/customizations-for-aws-control-tower.template) from GitHub and then launch it from [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-1).
 

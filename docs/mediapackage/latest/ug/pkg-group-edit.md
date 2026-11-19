@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-group-edit.ht
 ---
 
 # Editing a packaging group
-<a name="pkg-group-edit"></a>
 
 Edit the packaging group to configure access control settings.
 

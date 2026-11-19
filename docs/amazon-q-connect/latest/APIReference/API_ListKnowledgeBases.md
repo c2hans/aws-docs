@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ListKnowledgeBases
-<a name="API_amazon-q-connect_ListKnowledgeBases"></a>
 
 Lists the knowledge bases.
 

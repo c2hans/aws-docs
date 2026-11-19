@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/net.nz.htm
 ---
 
 # .net.nz (New Zealand)
-<a name="net.nz"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeIntegrations
-<a name="API_DescribeIntegrations"></a>
 
 Describes one or more zero-ETL or S3 event integrations with Amazon Redshift.
 

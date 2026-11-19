@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Incident report terminology
-<a name="Investigations-IncidentReports-terms"></a>
 
 The following terms are used in CloudWatch investigations incident reports:
 

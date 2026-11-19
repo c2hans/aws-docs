@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-doc-history
 ---
 
 # Document history
-<a name="hana-ops-doc-history"></a>
 
 **​**
 

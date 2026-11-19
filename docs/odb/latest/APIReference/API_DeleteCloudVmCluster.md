@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteCloudV
 ---
 
 # DeleteCloudVmCluster
-<a name="API_DeleteCloudVmCluster"></a>
 
 Deletes the specified VM cluster.
 

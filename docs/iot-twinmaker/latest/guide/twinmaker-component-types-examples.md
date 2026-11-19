@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-com
 ---
 
 # Example component types
-<a name="twinmaker-component-types-examples"></a>
 
 This topic contains examples that show how to implement key concepts of component types.
 

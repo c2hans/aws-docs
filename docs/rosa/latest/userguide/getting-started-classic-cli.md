@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/getting-started-cl
 ---
 
 # Create a ROSA classic cluster using the ROSA CLI
-<a name="getting-started-classic-cli"></a>
 
 The following sections describe how to get started with ROSA classic using AWS STS and the ROSA CLI. For steps to create a ROSA classic cluster using Terraform, see [the Red Hat documentation](https://docs.openshift.com/rosa/rosa_install_access_delete_clusters/terraform/rosa-classic-creating-a-cluster-quickly-terraform.html). To learn more about the Terraform provider for creating ROSA clusters, see [the Terraform documentation](https://registry.terraform.io/providers/terraform-redhat/rhcs/latest/docs).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Related resources
-<a name="amazon-mq-related-resources"></a>
 
 ## Amazon MQ resources
 <a name="amazon-mq-resources"></a>

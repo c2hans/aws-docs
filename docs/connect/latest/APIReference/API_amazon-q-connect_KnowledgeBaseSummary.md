@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # KnowledgeBaseSummary
-<a name="API_amazon-q-connect_KnowledgeBaseSummary"></a>
 
 Summary information about the knowledge base.
 

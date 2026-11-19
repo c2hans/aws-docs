@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # OptimizerStepResult
-<a name="API_OptimizerStepResult"></a>
 
 The result of an optimizer step.
 

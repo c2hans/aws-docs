@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_GeoMatch
 ---
 
 # GeoMatchSet
-<a name="API_waf_GeoMatchSet"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -21,7 +20,7 @@ Type: Array of [GeoMatchConstraint](API_waf_GeoMatchConstraint.md) objects
 Required: Yes
 
  ** GeoMatchSetId **   <a name="WAF-Type-waf_GeoMatchSet-GeoMatchSetId"></a>
-The `GeoMatchSetId` for an `GeoMatchSet`. You use `GeoMatchSetId` to get information about a `GeoMatchSet` (see [GeoMatchSet](#API_waf_GeoMatchSet)), update a `GeoMatchSet` (see [UpdateGeoMatchSet](API_waf_UpdateGeoMatchSet.md)), insert a `GeoMatchSet` into a `Rule` or delete one from a `Rule` (see [UpdateRule](API_waf_UpdateRule.md)), and delete a `GeoMatchSet` from AWS WAF (see [DeleteGeoMatchSet](API_waf_DeleteGeoMatchSet.md)).
+The `GeoMatchSetId` for an `GeoMatchSet`. You use `GeoMatchSetId` to get information about a `GeoMatchSet` (see [GeoMatchSet](API_waf_GeoMatchSet.md)), update a `GeoMatchSet` (see [UpdateGeoMatchSet](API_waf_UpdateGeoMatchSet.md)), insert a `GeoMatchSet` into a `Rule` or delete one from a `Rule` (see [UpdateRule](API_waf_UpdateRule.md)), and delete a `GeoMatchSet` from AWS WAF (see [DeleteGeoMatchSet](API_waf_DeleteGeoMatchSet.md)).
  `GeoMatchSetId` is returned by [CreateGeoMatchSet](API_waf_CreateGeoMatchSet.md) and by [ListGeoMatchSets](API_waf_ListGeoMatchSets.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
@@ -29,7 +28,7 @@ Pattern: `.*\S.*`
 Required: Yes
 
  ** Name **   <a name="WAF-Type-waf_GeoMatchSet-Name"></a>
-A friendly name or description of the [GeoMatchSet](#API_waf_GeoMatchSet). You can't change the name of an `GeoMatchSet` after you create it.
+A friendly name or description of the [GeoMatchSet](API_waf_GeoMatchSet.md). You can't change the name of an `GeoMatchSet` after you create it.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `.*\S.*`

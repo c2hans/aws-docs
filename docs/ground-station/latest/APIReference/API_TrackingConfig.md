@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_T
 ---
 
 # TrackingConfig
-<a name="API_TrackingConfig"></a>
 
 Object that determines whether tracking should be used during a contact executed with this `Config` in the mission profile.
 

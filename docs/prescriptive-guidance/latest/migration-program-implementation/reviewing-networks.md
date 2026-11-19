@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Reviewing current cloud adoption and migration networks
-<a name="reviewing-networks"></a>
 
 When organizations contemplate migrating to AWS at scale, they are somewhere along the path of what is called the *stages of adoption*, as shown in the following ﬁgure. The four stages are project, foundation, migration, and reinvention.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_SsmSend
 ---
 
 # SsmSendCommandConfiguration
-<a name="API_SsmSendCommandConfiguration"></a>
 
 Configuration for an AWS Systems Manager `SendCommand` execution block in a Region switch plan. This execution block runs a Systems Manager document on the managed nodes that you target in each AWS Region of the plan.
 

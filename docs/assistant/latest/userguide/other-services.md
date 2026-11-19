@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/other-service
 ---
 
 # Working with other AWS services
-<a name="other-services"></a>
 
 The AWS assistant works with the following AWS services. Each entry links to the topic in this guide that describes the integration.
 

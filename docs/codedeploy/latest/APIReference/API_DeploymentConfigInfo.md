@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Deplo
 ---
 
 # DeploymentConfigInfo
-<a name="API_DeploymentConfigInfo"></a>
 
 Information about a deployment configuration.
 

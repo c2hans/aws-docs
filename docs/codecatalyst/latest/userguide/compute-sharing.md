@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/compute-sh
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Sharing compute across actions
-<a name="compute-sharing"></a>
 
 By default, actions in a workflow run on separate instances in a [ﬂeet](workflows-working-compute.md#compute.fleets). This behavior provides actions with isolation and predictability on the state of inputs. The default behavior requires explicit configuration to share context such as files and variables between actions.
 

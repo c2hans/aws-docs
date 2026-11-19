@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Image
 ---
 
 # ImageConfiguration
-<a name="API_ImageConfiguration"></a>
 
 The logo image configuration.
 

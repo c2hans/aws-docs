@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Plan.ht
 ---
 
 # Plan
-<a name="API_Plan"></a>
 
 Represents a Region switch plan. A plan defines the steps required to shift traffic from one AWS Region to another.
 

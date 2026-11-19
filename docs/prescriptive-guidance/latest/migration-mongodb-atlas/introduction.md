@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migrating to MongoDB Atlas on AWS
-<a name="introduction"></a>
 
 *Battulga Purevragchaa and Igor Alekseev, Amazon Web Services*
 

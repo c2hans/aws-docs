@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Custom ASP.NET Core Elastic Beanstalk Deployments
-<a name="deployment-beanstalk-custom-netcore"></a>
 
 This topic describes how deployment works and what you can do customize deployments when creating ASP.NET Core applications with Elastic Beanstalk and the Toolkit for Visual Studio.
 

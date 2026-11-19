@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/tag-basics.html
 ---
 
 # Tag basics
-<a name="tag-basics"></a>
 
 A tag is a label that you assign to an AWS resource. Each tag consists of a *key* and an optional *value*, both of which you define.
 

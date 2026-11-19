@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeSche
 ---
 
 # DescribeSchemas
-<a name="API_DescribeSchemas"></a>
 
 Returns information about the schema for the specified endpoint.
 

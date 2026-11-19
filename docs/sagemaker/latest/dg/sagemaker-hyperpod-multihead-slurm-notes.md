@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Considering important notes
-<a name="sagemaker-hyperpod-multihead-slurm-notes"></a>
 
 This section provides several important notes which you might find helpful.
 

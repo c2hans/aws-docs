@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_F
 ---
 
 # Frequency
-<a name="API_Frequency"></a>
 
 Object that describes the frequency.
 

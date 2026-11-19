@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Next steps and resources
-<a name="conclusion"></a>
 
 Use AWS Managed Services (AMS) to perform undifferentiated, yet important cloud infrastructure and security operational activities. By using AMS, your cloud operations teams can focus on learning and using in-demand technology skills, such as CI/CD and artificial intelligence and machine learning (AI/ML), instead of spending their time on mundane operational tasks. Providing cloud operations teams the opportunity to learn and use in-demand technology skills through AMS can also improve staff retention.
 

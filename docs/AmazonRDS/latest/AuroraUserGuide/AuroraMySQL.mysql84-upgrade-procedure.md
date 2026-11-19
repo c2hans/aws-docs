@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Upgrading to Aurora MySQL version 8.4
-<a name="AuroraMySQL.mysql84-upgrade-procedure"></a>
 
 You can upgrade from Aurora MySQL version 3 to version 8.4 using an in-place major version upgrade. Direct upgrades from Aurora MySQL version 2 to version 8.4 are not supported. If you are running version 2, you must first upgrade to version 3.
 

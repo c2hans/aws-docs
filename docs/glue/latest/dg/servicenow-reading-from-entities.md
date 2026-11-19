@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/servicenow-reading-from-e
 ---
 
 # Reading from ServiceNow entities
-<a name="servicenow-reading-from-entities"></a>
 
 **Prerequisite**
 

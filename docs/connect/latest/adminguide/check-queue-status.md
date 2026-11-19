@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/check-queue-st
 ---
 
 # Flow block in Connect Customer: Check queue status
-<a name="check-queue-status"></a>
 
 This topic defines the flow block for checking the status of a customer queue based on conditions set for that queue.
 

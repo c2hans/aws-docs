@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/examp
 ---
 
 # Example Network Access Scopes in Network Access Analyzer
-<a name="example-scopes"></a>
 
 The following are examples of Network Access Scopes.
 

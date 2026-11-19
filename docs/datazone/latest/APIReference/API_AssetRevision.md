@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetRe
 ---
 
 # AssetRevision
-<a name="API_AssetRevision"></a>
 
 The revision of an inventory asset.
 

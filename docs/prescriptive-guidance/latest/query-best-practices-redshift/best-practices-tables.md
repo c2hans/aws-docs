@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-
 ---
 
 # Best practices for designing Amazon Redshift tables
-<a name="best-practices-tables"></a>
 
 This section provides an overview of best practices for designing database tables. We recommend that you follow these best practices to achieve optimal query performance and efficiency.
 

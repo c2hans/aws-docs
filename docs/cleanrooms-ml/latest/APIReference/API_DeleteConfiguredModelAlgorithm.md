@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_De
 ---
 
 # DeleteConfiguredModelAlgorithm
-<a name="API_DeleteConfiguredModelAlgorithm"></a>
 
 Deletes a configured model algorithm.
 

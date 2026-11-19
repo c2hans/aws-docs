@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 ---
 
 # AWS IoT Device Advisor troubleshooting guide
-<a name="device-advisor-troubleshooting"></a>
 
 **Help us improve this topic**
  [Let us know what would help make it better](https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/device-advisor-troubleshooting.html) General

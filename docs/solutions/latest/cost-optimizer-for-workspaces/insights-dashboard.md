@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Operation Insights Dashboard
-<a name="insights-dashboard"></a>
 
 Cost Optimizer for Amazon Workspaces comes with an Operational Insights dashboard that allows you to monitor the operation of the solution and get insight into the running hours that have been saved by using this solution.
 

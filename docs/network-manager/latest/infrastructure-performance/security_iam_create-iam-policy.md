@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/infrastructure-pe
 ---
 
 # Allow IAM users or groups to access Infrastructure Performance
-<a name="security_iam_create-iam-policy"></a>
 
 Any user user that signs in to the AWS Management Console or AWS Command Line Interface (AWS CLI) must have permissions to access specific resources. You provide those permissions by using AWS Identity and Access Management (IAM), through policies.
 

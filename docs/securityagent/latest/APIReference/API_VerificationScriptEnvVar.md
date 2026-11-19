@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ve
 ---
 
 # VerificationScriptEnvVar
-<a name="API_VerificationScriptEnvVar"></a>
 
 Represents an environment variable required to run a verification script.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/channel-security-gro
 ---
 
 # When to use channel security groups
-<a name="channel-security-groups-use-cases"></a>
 
 Channel security groups are required in the following situations:
 + **SRT outputs in listener mode** – When you configure an SRT output in listener mode, you must attach a channel security group to the channel. The channel security group defines which downstream systems (SRT callers) are allowed to connect to the MediaLive listener endpoint.

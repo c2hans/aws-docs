@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Delete
 ---
 
 # DeleteActivityType
-<a name="API_DeleteActivityType"></a>
 
 Deletes the specified *activity type*.
 

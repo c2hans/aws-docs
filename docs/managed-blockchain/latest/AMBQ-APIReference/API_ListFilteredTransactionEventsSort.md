@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # ListFilteredTransactionEventsSort
-<a name="API_ListFilteredTransactionEventsSort"></a>
 
 Lists all the transaction events for an address on the blockchain.
 

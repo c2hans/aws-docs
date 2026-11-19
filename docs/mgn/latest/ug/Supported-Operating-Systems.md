@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Supported-Operating-System
 ---
 
 # Operating systems supported by MGN
-<a name="Supported-Operating-Systems"></a>
 
 AWS Transform MGN supports replication of physical, virtual or cloud-based source servers for multiple versions of Windows and Linux operating systems.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_Scenario
 ---
 
 # Learn the basics of Amazon EC2 with an AWS SDK
-<a name="example_ec2_Scenario_GetStartedInstances_section"></a>
 
 The following code examples show how to:
 + Create a key pair and security group.

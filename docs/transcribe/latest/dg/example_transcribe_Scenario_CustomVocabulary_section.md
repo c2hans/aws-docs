@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/example_transcribe_
 ---
 
 # Create and refine an Amazon Transcribe custom vocabulary using an AWS SDK
-<a name="example_transcribe_Scenario_CustomVocabulary_section"></a>
 
 The following code example shows how to:
 + Upload an audio file to Amazon S3.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-troubleshooting-
 ---
 
 # Troubleshoot Ambarella Errors
-<a name="neo-troubleshooting-target-devices-ambarella"></a>
 
 SageMaker Neo requires models to be packaged in a compressed TAR file (`*.tar.gz`). Ambarella devices require additional files to be included within the compressed TAR file before it is sent for compilation. Include the following files within your compressed TAR file if you want to compile a model for Ambarella targets with SageMaker Neo:
 + A trained model using a framework supported by SageMaker Neo

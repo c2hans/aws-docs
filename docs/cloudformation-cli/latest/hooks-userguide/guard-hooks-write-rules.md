@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Write Guard rules to evaluate resources for Guard Hooks
-<a name="guard-hooks-write-rules"></a>
 
 AWS CloudFormation Guard is an open-source and general purpose domain specific language (DSL) you can use to author policy-as-code. This topic explains how to use Guard to author example rules which can be run in the Guard Hook to automatically evaluate CloudFormation and AWS Cloud Control API operations. It will also focus on the different types of inputs available to your Guard rules depending on when your Guard Hook runs. A Guard Hook can be configured to run during the following types of operations:
 + Resource operations

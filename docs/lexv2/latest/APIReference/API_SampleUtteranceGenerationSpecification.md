@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SampleUtte
 ---
 
 # SampleUtteranceGenerationSpecification
-<a name="API_SampleUtteranceGenerationSpecification"></a>
 
 Contains specifications for the sample utterance generation feature.
 

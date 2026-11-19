@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteTopicR
 ---
 
 # DeleteTopicRule
-<a name="API_DeleteTopicRule"></a>
 
 Deletes the rule.
 

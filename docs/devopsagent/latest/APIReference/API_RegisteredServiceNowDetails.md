@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredServiceNowDetails
-<a name="API_RegisteredServiceNowDetails"></a>
 
 Details specific to a registered ServiceNow instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssignedSessionActionDefinition
-<a name="API_AssignedSessionActionDefinition"></a>
 
 The definition of the assigned session action.
 

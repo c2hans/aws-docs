@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/trou
 ---
 
 # Troubleshooting Partner Revenue Measurement
-<a name="troubleshooting"></a>
 
 This section provides troubleshooting guidance for each Partner Revenue Measurement implementation method:
 + [AWS Marketplace Metering Issues](#marketplace-metering-troubleshooting)

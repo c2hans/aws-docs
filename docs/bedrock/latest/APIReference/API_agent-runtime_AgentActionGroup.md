@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgentActionGroup
-<a name="API_agent-runtime_AgentActionGroup"></a>
 
  Contains details of the inline agent's action group.
 

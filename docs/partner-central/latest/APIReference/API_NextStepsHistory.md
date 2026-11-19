@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # NextStepsHistory
-<a name="API_NextStepsHistory"></a>
 
 Read-only; shows the last 50 values and change dates for the `NextSteps` field.
 

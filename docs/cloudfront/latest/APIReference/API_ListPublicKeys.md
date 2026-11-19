@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListP
 ---
 
 # ListPublicKeys
-<a name="API_ListPublicKeys"></a>
 
 List all public keys that have been added to CloudFront for this account.
 

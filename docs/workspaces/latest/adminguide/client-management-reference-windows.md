@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/client-mana
 ---
 
 # Client management reference (Windows)
-<a name="client-management-reference-windows"></a>
 
 This topic provides reference information for administrators who manage WorkSpaces client application settings on Windows devices. Use these settings to control client behavior across your organization through the Windows registry or Group Policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/m
 ---
 
 # Migrating legacy channel accounts
-<a name="migrating-legacy-channel-accounts"></a>
 
 This guide explains how AWS Channel Partners can migrate their existing channel end customers in partner-controlled AWS Organizations to billing transfer, enabling customers to maintain independent AWS Organizations while partners retain billing responsibility.
 

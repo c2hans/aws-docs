@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-paid-amis-
 ---
 
 # Find a paid AMI
-<a name="using-paid-amis-finding-paid-ami"></a>
 
 A paid AMI is an Amazon Machine Image (AMI) that is available for purchase. A paid AMI also has a product code. You can find AMIs that are available for purchase in the AWS Marketplace.
 

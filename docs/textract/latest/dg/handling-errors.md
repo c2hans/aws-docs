@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/handling-errors.html
 ---
 
 # Handling Connection Errors
-<a name="handling-errors"></a>
 
 An Amazon Textract operation can fail if you exceed the maximum number of transactions per second (TPS), causing the service to throttle your application, or when your connection drops. For example, if you make too many calls to Amazon Textract operations in a short period of time, it throttles your calls and sends a `ProvisionedThroughputExceededException` error in the operation response. For information about Amazon Textract TPS quotas, see [Amazon Textract Quotas](https://docs.aws.amazon.com/general/latest/gr/textract.html). To change a limit, you can access the Amazon Textract option in the Service Quotas console.
 

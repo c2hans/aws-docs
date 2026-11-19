@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DkimSigni
 ---
 
 # DkimSigningAttributes
-<a name="API_DkimSigningAttributes"></a>
 
 An object that contains configuration for Bring Your Own DKIM (BYODKIM), or, for Easy DKIM
 

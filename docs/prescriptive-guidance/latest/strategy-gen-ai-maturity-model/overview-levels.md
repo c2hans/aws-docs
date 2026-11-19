@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Levels in the generative AI maturity model
-<a name="overview-levels"></a>
 
 The generative AI maturity model is structured across four primary levels. Each level represents an organization's progress toward using generative AI capabilities. This model can help organizations understand where they currently stand and guide them toward the next steps in their generative AI journey. The following diagram shows the four levels of the generative AI maturity model and key activities for each level.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationSignals::Discovery
-<a name="aws-resource-applicationsignals-discovery"></a>
 
 **Note**
 If you have existing `AWS::ApplicationSignals::Discovery` resources that were created prior to the Application Map release, you will need to delete and recreate these resources in your account to enable Application Map.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/accounts-invi
 ---
 
 # Inviting a list of member accounts to a behavior graph
-<a name="accounts-invited-members-add-csv"></a>
 
 From the Detective console, you can provide a `.csv` file containing a list of member accounts to invite to your behavior graph.
 

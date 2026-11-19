@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Region enablement
-<a name="region-enablement"></a>
 
 This section is optional and only required if you want to set up a multi-Region deployment. The solution initially deploys in a single hub Region. All additional AWS Regions enabled through this workflow become spoke Regions that can connect back to the hub Region for centralized management.
 

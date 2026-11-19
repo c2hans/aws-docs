@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSpotFleetRequestHistory
-<a name="API_DescribeSpotFleetRequestHistory"></a>
 
 Describes the events for the specified Spot Fleet request during the specified time.
 

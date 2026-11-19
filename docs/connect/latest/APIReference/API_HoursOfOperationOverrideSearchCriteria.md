@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_HoursOfO
 ---
 
 # HoursOfOperationOverrideSearchCriteria
-<a name="API_HoursOfOperationOverrideSearchCriteria"></a>
 
 The search criteria to be used to return hours of operations overrides.
 
@@ -12,7 +11,7 @@ The search criteria to be used to return hours of operations overrides.
 
  ** AndConditions **   <a name="connect-Type-HoursOfOperationOverrideSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [HoursOfOperationOverrideSearchCriteria](#API_HoursOfOperationOverrideSearchCriteria) objects
+Type: Array of [HoursOfOperationOverrideSearchCriteria](API_HoursOfOperationOverrideSearchCriteria.md) objects
 Required: No
 
  ** DateCondition **   <a name="connect-Type-HoursOfOperationOverrideSearchCriteria-DateCondition"></a>
@@ -22,7 +21,7 @@ Required: No
 
  ** OrConditions **   <a name="connect-Type-HoursOfOperationOverrideSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [HoursOfOperationOverrideSearchCriteria](#API_HoursOfOperationOverrideSearchCriteria) objects
+Type: Array of [HoursOfOperationOverrideSearchCriteria](API_HoursOfOperationOverrideSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-HoursOfOperationOverrideSearchCriteria-StringCondition"></a>

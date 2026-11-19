@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeStep
 ---
 
 # DescribeStep
-<a name="API_DescribeStep"></a>
 
 Provides more detail about the cluster step.
 

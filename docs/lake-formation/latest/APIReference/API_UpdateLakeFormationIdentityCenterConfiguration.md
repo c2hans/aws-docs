@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_U
 ---
 
 # UpdateLakeFormationIdentityCenterConfiguration
-<a name="API_UpdateLakeFormationIdentityCenterConfiguration"></a>
 
 Updates the IAM Identity Center connection parameters.
 

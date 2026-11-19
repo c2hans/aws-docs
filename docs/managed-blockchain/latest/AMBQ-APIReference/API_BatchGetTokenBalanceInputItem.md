@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # BatchGetTokenBalanceInputItem
-<a name="API_BatchGetTokenBalanceInputItem"></a>
 
 The container for the input for getting a token balance.
 

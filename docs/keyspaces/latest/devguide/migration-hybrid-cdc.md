@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/migration-hybr
 ---
 
 # Migrate data using change data capture (CDC)
-<a name="migration-hybrid-cdc"></a>
 
 If you're already familiar with configuring a change data capture (CDC) pipeline with [Debezium](https://debezium.io/), you can use this option to migrate data to Amazon Keyspaces as an alternative to using CQLReplicator. Debezium is an open-source, distributed platform for CDC, designed to monitor a database and capture row-level changes reliably.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-nested
 ---
 
 # Nested object queries
-<a name="iot-sql-nested-queries"></a>
 
 You can use nested SELECT clauses to query for attributes within arrays and inner JSON objects. Supported by SQL version 2016-03-23 and later.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/awsbatchcli.html
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # AWS Batch (`awsbatch`)
-<a name="awsbatchcli"></a>
 
 For information about AWS Batch, see [AWS Batch](https://aws.amazon.com/batch/). For documentation, see the [AWS Batch User Guide](https://docs.aws.amazon.com/batch/latest/userguide/).
 

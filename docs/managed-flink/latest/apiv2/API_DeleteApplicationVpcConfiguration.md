@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApp
 ---
 
 # DeleteApplicationVpcConfiguration
-<a name="API_DeleteApplicationVpcConfiguration"></a>
 
 Removes a VPC configuration from a Managed Service for Apache Flink application.
 

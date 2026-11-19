@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InstanceAttributeUpdates
-<a name="API_InstanceAttributeUpdates"></a>
 
 Describes the attributes to update on a Lightsail instance when it starts.
 

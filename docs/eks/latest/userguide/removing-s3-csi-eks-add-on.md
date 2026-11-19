@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/removing-s3-csi-eks
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Remove the Mountpoint for Amazon S3 Amazon EKS add-on
-<a name="removing-s3-csi-eks-add-on"></a>
 
 You have two options for removing the [Mountpoint for Amazon S3 CSI driver](s3-csi.md).
 +  **Preserve add-on software on your cluster** – This option removes Amazon EKS management of any settings. It also removes the ability for Amazon EKS to notify you of updates and automatically update the Amazon EKS add-on after you initiate an update. However, it preserves the add-on software on your cluster. This option makes the add-on a self-managed installation, rather than an Amazon EKS add-on. With this option, there’s no downtime for the add-on. The commands in this procedure use this option.

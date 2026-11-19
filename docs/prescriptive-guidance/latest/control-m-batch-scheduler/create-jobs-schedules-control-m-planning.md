@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Create jobs and schedules in Control-M Planning
-<a name="create-jobs-schedules-control-m-planning"></a>
 
 Now that you have the plug-in deployed and a connection profile for Micro Focus connectivity, you can start creating and running jobs.
 

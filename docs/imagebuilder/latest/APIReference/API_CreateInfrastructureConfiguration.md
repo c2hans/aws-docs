@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 ---
 
 # CreateInfrastructureConfiguration
-<a name="API_CreateInfrastructureConfiguration"></a>
 
 Creates a new infrastructure configuration. An infrastructure configuration defines the environment in which your image will be built and tested.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/e
 ---
 
 # Updating firewalls and gateways to allow access
-<a name="endpoints"></a>
 
 If you filter access to specific AWS domains or URL endpoints by using a web-content filtering solution, the following endpoints must be allow listed in order to access all of the services and features available through the AWS Toolkit for JetBrains and Amazon Q.
 

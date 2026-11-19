@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ge
 ---
 
 # GetNotificationEvent
-<a name="API_GetNotificationEvent"></a>
 
 Returns a specified `NotificationEvent`.
 

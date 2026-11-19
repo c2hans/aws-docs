@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreatePr
 ---
 
 # CreatePromptRouter
-<a name="API_CreatePromptRouter"></a>
 
 Creates a prompt router that manages the routing of requests between multiple foundation models based on the routing criteria.
 

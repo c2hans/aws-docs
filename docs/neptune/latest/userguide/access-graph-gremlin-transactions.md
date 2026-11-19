@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Gremlin transactions in Neptune
-<a name="access-graph-gremlin-transactions"></a>
 
 There are several contexts within which Gremlin [transactions](transactions.md) are executed. When working with Gremlin it is important to understand the context you are working within and what its implications are:
 + **`Script-based`**   –   Requests are made using text-based Gremlin strings, like this:

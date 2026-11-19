@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoo
 ---
 
 # Organize
-<a name="telcoops01"></a>
 
 |  TELCOOPS01: How do you create the optimal cross-functional team?  |
 | --- |

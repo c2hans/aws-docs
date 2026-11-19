@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform-erro
 ---
 
 # Troubleshooting
-<a name="batch-transform-errors"></a>
 
 If you are having errors in Amazon SageMaker AI Batch Transform, refer to the following troubleshooting tips.
 

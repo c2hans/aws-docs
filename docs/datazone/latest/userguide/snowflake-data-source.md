@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/snowflake-data
 ---
 
 # Connect Snowflake as a data source in Amazon DataZone
-<a name="snowflake-data-source"></a>
 
 Amazon DataZone supports Snowflake as a third-party data source. After you connect Snowflake to a Amazon DataZone project, the catalog can index your Snowflake databases and schemas, capture column-level lineage from Snowflake's query history, and let you query Snowflake tables from through federation. This page walks you through creating a Snowflake connection using the AWS CLI.
 

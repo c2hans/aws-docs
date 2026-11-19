@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Steps to build LiME module and volatility profile using SSM document
-<a name="steps-to-build-volatility-profile-using-ssm-document"></a>
 
 The below diagram explains the overall architecture of building volatility profile.
 

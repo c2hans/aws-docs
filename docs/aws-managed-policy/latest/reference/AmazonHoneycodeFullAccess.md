@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonHoneycodeFullAccess
-<a name="AmazonHoneycodeFullAccess"></a>
 
 **Description**: Provides full access to Honeycode via the AWS Management Console and the SDK.
 

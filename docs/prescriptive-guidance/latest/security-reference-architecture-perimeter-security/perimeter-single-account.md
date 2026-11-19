@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Deploying perimeter services in a single Network account
-<a name="perimeter-single-account"></a>
 
 |  |
 | --- |

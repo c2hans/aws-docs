@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-link-result.ht
 ---
 
 # Result of this procedure
-<a name="setup-link-result"></a>
 
 As a result of this setup, an Elemental Link input (the blue box) exists that identifies the AWS Elemental Link device or devices (the purple box) that are connected to MediaLive. There is no other setup for you to perform, because the AWS Elemental Link device is designed to work seamlessly with MediaLive.
 

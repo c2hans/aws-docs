@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp
 ---
 
 # Granting permissions to create temporary security credentials
-<a name="id_credentials_temp_control-access_enable-create"></a>
 
 By default, IAM users do not have permission to create temporary security credentials for AWS STS federated user sessions and roles. You must use a policy to provide your users with these permissions. Although you can grant permissions directly to a user, we strongly recommend that you grant permissions to a group. This makes management of the permissions much easier. When someone no longer needs to perform the tasks associated with the permissions, you simply remove them from the group. If someone else needs to perform that task, add them to the group to grant the permissions.
 

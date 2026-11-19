@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_metric
 ---
 
 # MetricQueryResult
-<a name="API_metrics_MetricQueryResult"></a>
 
 The result of a query to retrieve training metrics from SageMaker.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateCh
 ---
 
 # CreateChannelNamespace
-<a name="API_CreateChannelNamespace"></a>
 
 Creates a `ChannelNamespace` for an `Api`.
 

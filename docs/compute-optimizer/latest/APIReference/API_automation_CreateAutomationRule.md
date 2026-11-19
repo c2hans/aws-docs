@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # CreateAutomationRule
-<a name="API_automation_CreateAutomationRule"></a>
 
  Creates a new automation rule to apply recommended actions to resources based on specified criteria.
 

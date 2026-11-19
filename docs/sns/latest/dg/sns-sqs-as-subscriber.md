@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-sqs-as-subscriber.html
 ---
 
 # Fanout Amazon SNS notifications to Amazon SQS queues for asynchronous processing
-<a name="sns-sqs-as-subscriber"></a>
 
 [Amazon SNS](https://aws.amazon.com/sns/) works closely with Amazon Simple Queue Service (Amazon SQS). These services provide different benefits for developers.
 

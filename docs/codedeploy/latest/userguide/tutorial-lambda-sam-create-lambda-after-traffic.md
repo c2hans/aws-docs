@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-lam
 ---
 
 # Create a file for your AfterAllowTraffic Lambda function
-<a name="tutorial-lambda-sam-create-lambda-after-traffic"></a>
 
 Create the file for your `afterAllowTraffic` hook Lambda function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec06-b
 ---
 
 # SEC06-BP04 Validate software integrity
-<a name="sec06-bp04"></a>
 
  Software artifacts can be altered between when a vendor publishes them and when your workload runs them. Use cryptographic signatures to confirm an artifact was not altered and came from its claimed source. Sign your own code and images so your compute environments run only what you approved.
 

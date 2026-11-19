@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/d
 ---
 
 # Document history for AWS Network Firewall
-<a name="document-history"></a>
 
 This page lists significant changes to this documentation.
 

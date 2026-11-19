@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplatePlacementRequest
-<a name="API_LaunchTemplatePlacementRequest"></a>
 
 Describes the placement of an instance.
 

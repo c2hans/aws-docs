@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-dat
 ---
 
 # UpdateJobExecution
-<a name="API_iot-jobs-data_UpdateJobExecution"></a>
 
 Updates the status of a job execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-copy-adapter
 ---
 
 # Copying adapters
-<a name="textract-copy-adapters"></a>
 
 Adapter Versions can be copied from one AWS account to another within AWS Regions.
 

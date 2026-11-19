@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_IpRe
 ---
 
 # IpResource
-<a name="API_IpResource"></a>
 
 Describes an IP resource.
 

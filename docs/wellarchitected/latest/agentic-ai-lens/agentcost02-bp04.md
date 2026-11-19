@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTCOST02-BP04 Implement model customization for long-term cost reduction
-<a name="agentcost02-bp04"></a>
 
  Customizing smaller models for a high-volume recurring task can optimize per-invocation costs into a one-time training expense that amortizes across every future call. The math only works when volume and task stability are high enough to justify the investment, so the decision needs to start with a break-even calculation, not an enthusiasm for fine-tuning.
 

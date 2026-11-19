@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Comp
 ---
 
 # CompositionThumbnailConfiguration
-<a name="API_CompositionThumbnailConfiguration"></a>
 
 An object representing a configuration of thumbnails for recorded video for a [Composition](API_Composition.md).
 

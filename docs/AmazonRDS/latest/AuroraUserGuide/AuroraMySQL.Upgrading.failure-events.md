@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Finding the reasons for Aurora MySQL major version upgrade failures
-<a name="AuroraMySQL.Upgrading.failure-events"></a>
 
 In the [tutorial](AuroraMySQL.Upgrading.Tutorial.md), the upgrade from Aurora MySQL version 2 to version 3 succeeded. But if the upgrade had failed, you would want to know why.
 

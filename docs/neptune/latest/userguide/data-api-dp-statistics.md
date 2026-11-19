@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-sta
 ---
 
 # Neptune dataplane statistics and graph summary APIs
-<a name="data-api-dp-statistics"></a>
 
 **Property graph statistics actions:**
 + [GetPropertygraphStatistics (action)](#GetPropertygraphStatistics)

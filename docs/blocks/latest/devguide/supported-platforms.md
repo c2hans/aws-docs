@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/supported-platfor
 ---
 
 # Supported platforms
-<a name="supported-platforms"></a>
 
  AWS Blocks supports web, desktop, and mobile platforms. Your backend API is defined once in TypeScript, and type-safe clients are available for every supported platform.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ModuleParamete
 ---
 
 # ModuleParameters
-<a name="API_ModuleParameters"></a>
 
 Describes the parameters of a module.
 

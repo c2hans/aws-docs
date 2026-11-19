@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-mcp-
 ---
 
 # Getting Started with the Amazon ECS MCP Server
-<a name="ecs-mcp-getting-started"></a>
 
 This guide walks you through the steps to set up and use the Amazon ECS MCP Server with your AI code assistants. You'll learn how to configure your environment, connect to the server, and start managing your Amazon ECS clusters through natural language interactions.
 

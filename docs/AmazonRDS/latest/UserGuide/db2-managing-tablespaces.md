@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-managing-
 ---
 
 # Common tasks for tablespaces
-<a name="db2-managing-tablespaces"></a>
 
 You can create, alter, rename, or drop tablespaces for an RDS for Db2 database. Creating, altering, renaming, or dropping tablespaces requires higher-level `SYSADM` authority, which isn't available to the master user. Instead, use Amazon RDS stored procedures.
 

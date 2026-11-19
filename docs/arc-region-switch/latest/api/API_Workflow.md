@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Workflo
 ---
 
 # Workflow
-<a name="API_Workflow"></a>
 
 Represents a workflow in a Region switch plan. A workflow defines a sequence of steps to execute during a Region switch.
 

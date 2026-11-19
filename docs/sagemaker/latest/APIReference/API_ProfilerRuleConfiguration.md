@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Profil
 ---
 
 # ProfilerRuleConfiguration
-<a name="API_ProfilerRuleConfiguration"></a>
 
 Configuration information for profiling rules.
 

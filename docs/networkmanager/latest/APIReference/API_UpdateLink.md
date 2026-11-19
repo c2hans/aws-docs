@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateLink
-<a name="API_UpdateLink"></a>
 
 Updates the details for an existing link. To remove information for any of the parameters, specify an empty string.
 

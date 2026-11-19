@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PublicSource
 ---
 
 # PublicSourceEndpointNetworkingConfigurationAllowRule
-<a name="API_PublicSourceEndpointNetworkingConfigurationAllowRule"></a>
 
 A rule that allows a specific CIDR block to connect to the public source endpoint.
 

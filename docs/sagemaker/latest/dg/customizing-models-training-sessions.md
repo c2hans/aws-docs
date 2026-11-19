@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-t
 ---
 
 # Training session APIs
-<a name="customizing-models-training-sessions"></a>
 
 The SageMaker AI training session APIs run model customization on stateful, serverless GPU sessions where you orchestrate training operations directly. Existing high-level fine-tuning APIs constrain your training loop to predefined workflows such as supervised fine-tuning (SFT). You cannot write custom loss functions or run frontier reinforcement learning (RL) with elastic rollouts. You are also locked into the infrastructure decisions those APIs make for you.
 

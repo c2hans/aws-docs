@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReloadReplic
 ---
 
 # ReloadReplicationTables
-<a name="API_ReloadReplicationTables"></a>
 
 Reloads the target database table with the source data for a given AWS DMS Serverless replication configuration.
 

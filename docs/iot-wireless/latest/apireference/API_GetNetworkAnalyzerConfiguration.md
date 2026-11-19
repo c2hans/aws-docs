@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetNetworkAnalyzerConfiguration
-<a name="API_GetNetworkAnalyzerConfiguration"></a>
 
 Get network analyzer configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Create
 ---
 
 # CreateScheduleGroup
-<a name="API_CreateScheduleGroup"></a>
 
 Creates the specified schedule group.
 

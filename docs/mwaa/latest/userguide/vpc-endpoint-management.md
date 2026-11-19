@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/vpc-endpoint-manag
 ---
 
 # Managing your own Amazon VPC endpoints on Amazon MWAA
-<a name="vpc-endpoint-management"></a>
 
 Amazon MWAA uses Amazon VPC endpoints to integrate with various AWS services necessary to set up an Apache Airflow environment. Managing your own endpoints has two primary use cases:
 

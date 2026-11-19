@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-instanc
 ---
 
 # ec2-instance-multiple-eni-check
-<a name="ec2-instance-multiple-eni-check"></a>
 
 Checks if Amazon Elastic Compute Cloud (Amazon EC2) uses multiple Elastic Network Interfaces (ENIs) or Elastic Fabric Adapters (EFAs). The rule is NON\_COMPLIANT an Amazon EC2 instance use multiple network interfaces.
 

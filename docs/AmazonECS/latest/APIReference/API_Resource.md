@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Resour
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 Describes the resources available for a container instance.
 

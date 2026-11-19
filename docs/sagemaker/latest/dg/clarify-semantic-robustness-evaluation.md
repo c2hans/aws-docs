@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-semantic-rob
 ---
 
 # Semantic Robustness
-<a name="clarify-semantic-robustness-evaluation"></a>
 
  Evaluates how much your model output changes as the result of small, semantic-preserving changes in the input. Foundation Model Evaluations (FMEval) measure how your model output changes as a result of keyboard typos, random changes to uppercase, and random additions or deletions of white spaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Vali
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 ## Contents
 <a name="API_ValidationExceptionField_Contents"></a>

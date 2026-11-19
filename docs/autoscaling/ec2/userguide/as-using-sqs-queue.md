@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-q
 ---
 
 # Scaling policy based on Amazon SQS
-<a name="as-using-sqs-queue"></a>
 
 **Important**
 The following information and steps shows you how to calculate the Amazon SQS queue backlog per instance using the `ApproximateNumberOfMessages` queue attribute before publishing it as a custom metric to CloudWatch. However, you can now save the cost and effort put into publishing your own metric by using metric math. For more information, see [Create a target tracking scaling policy using metric math](ec2-auto-scaling-target-tracking-metric-math.md).

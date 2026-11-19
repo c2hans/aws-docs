@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Clust
 ---
 
 # ClusterMarkerConfiguration
-<a name="API_ClusterMarkerConfiguration"></a>
 
 The cluster marker configuration of the geospatial map selected point style.
 

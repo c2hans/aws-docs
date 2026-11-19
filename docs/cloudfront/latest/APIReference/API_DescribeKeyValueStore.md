@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Descr
 ---
 
 # DescribeKeyValueStore
-<a name="API_DescribeKeyValueStore"></a>
 
 Specifies the key value store and its configuration.
 

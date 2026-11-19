@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-discov
 ---
 
 # AWS Marketplace Discovery events
-<a name="events-ref-discovery-marketplace"></a>
 
 AWS Marketplace Discovery sends service events to EventBridge via AWS CloudTrail.
 

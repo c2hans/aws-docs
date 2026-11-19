@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting-br
 ---
 
 # Connecting to a Amazon DCV session using the web browser client
-<a name="using-connecting-browser-connect"></a>
 
 The steps for connecting to a Amazon DCV session are the same across all supported web browsers. The client connects to the Amazon DCV server using your web browser's proxy settings. To connect using different proxy settings, see the documentation for your specific web browser.
 

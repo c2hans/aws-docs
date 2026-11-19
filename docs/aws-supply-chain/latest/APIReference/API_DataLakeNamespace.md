@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataLakeNamespace
-<a name="API_DataLakeNamespace"></a>
 
 The data lake namespace details.
 

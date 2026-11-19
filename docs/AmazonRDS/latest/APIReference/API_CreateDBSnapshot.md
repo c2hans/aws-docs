@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateDBSnapshot
-<a name="API_CreateDBSnapshot"></a>
 
 Creates a snapshot of a DB instance. The source DB instance must be in the `available` or `storage-optimization` state.
 

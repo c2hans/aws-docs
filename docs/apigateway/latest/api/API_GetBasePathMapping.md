@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetBasePathMap
 ---
 
 # GetBasePathMapping
-<a name="API_GetBasePathMapping"></a>
 
 Describe a BasePathMapping resource.
 

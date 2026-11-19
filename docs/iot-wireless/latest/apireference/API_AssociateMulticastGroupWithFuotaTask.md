@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ass
 ---
 
 # AssociateMulticastGroupWithFuotaTask
-<a name="API_AssociateMulticastGroupWithFuotaTask"></a>
 
 Associate a multicast group with a FUOTA task.
 

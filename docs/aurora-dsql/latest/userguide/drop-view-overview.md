@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/drop-view-o
 ---
 
 # `DROP VIEW`
-<a name="drop-view-overview"></a>
 
 The `DROP VIEW` statement removes an existing view. Aurora DSQL supports the full PostgreSQL syntax for this command.
 

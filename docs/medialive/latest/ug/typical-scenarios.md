@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/typical-scenarios.ht
 ---
 
 # Typical scenarios for handling captions
-<a name="typical-scenarios"></a>
 
 Following are some sample use cases for captions in MediaLive. The use cases are ordered from less to more complicated. They are intended to illustrate many of the capabilities of MediaLive.
 

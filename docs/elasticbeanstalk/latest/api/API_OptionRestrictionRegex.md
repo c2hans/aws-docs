@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_OptionRe
 ---
 
 # OptionRestrictionRegex
-<a name="API_OptionRestrictionRegex"></a>
 
 A regular expression representing a restriction on a string configuration option value.
 

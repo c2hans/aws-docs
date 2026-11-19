@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Predict
 ---
 
 # PredictionConfiguration
-<a name="API_PredictionConfiguration"></a>
 
 The configuration of the prediction.
 

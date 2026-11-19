@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_RestoreFromB
 ---
 
 # RestoreFromBackupConfiguration
-<a name="API_RestoreFromBackupConfiguration"></a>
 
 The configuration for creating an Autonomous Database by restoring from a backup.
 

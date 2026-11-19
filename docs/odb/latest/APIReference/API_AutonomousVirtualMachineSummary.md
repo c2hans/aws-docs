@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousVi
 ---
 
 # AutonomousVirtualMachineSummary
-<a name="API_AutonomousVirtualMachineSummary"></a>
 
 A summary of an Autonomous Virtual Machine (VM) within an Autonomous VM cluster.
 

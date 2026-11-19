@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-e2e-tes
 ---
 
 # Tutorial: Run end-to-end tests using Greengrass Testing Framework and Greengrass Development Kit
-<a name="run-e2e-tests-tutorial"></a>
 
 AWS IoT Greengrass Testing Framework (GTF) and Greengrass Development Kit (GDK) offer developers ways to run end-to-end tests. You can complete this tutorial to initialize a GDK project with a component, initialize a GDK project with an end-to-end test module, and build a custom test case. After you build your custom test case, you can then run the test.
 

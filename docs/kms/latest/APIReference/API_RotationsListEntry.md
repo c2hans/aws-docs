@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_RotationsLis
 ---
 
 # RotationsListEntry
-<a name="API_RotationsListEntry"></a>
 
 Each entry contains information about one of the key materials associated with a KMS key.
 

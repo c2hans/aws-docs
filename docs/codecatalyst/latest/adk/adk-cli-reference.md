@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/adk/adk-cli-referenc
 ---
 
 # ADK API reference and CLI commands
-<a name="adk-cli-reference"></a>
 
 The following information is about the ADK API reference and CLI commands to build an action.
 

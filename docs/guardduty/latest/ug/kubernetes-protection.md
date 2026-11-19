@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/kubernetes-protectio
 ---
 
 # GuardDuty EKS Protection
-<a name="kubernetes-protection"></a>
 
 **Note**
 You can configure EKS Protection along with all other protection plans from a single page in the GuardDuty console. For more information, see [Configuring protection plans](protection-plans.md).

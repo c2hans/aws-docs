@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/bb-hosting.html
 ---
 
 # Hosting
-<a name="bb-hosting"></a>
 
 The Hosting construct provides frontend deployment with server-side rendering (SSR) support. Hosting auto-detects your frontend framework (Next.js, Nuxt, Astro, or SPA) and provisions the required AWS resources. Import from `@aws-blocks/blocks/cdk` and use in your CDK layer file (`aws-blocks/index.cdk.ts`).
 

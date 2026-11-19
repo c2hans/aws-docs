@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_SetTopicAttributes.ht
 ---
 
 # SetTopicAttributes
-<a name="API_SetTopicAttributes"></a>
 
 Allows a topic owner to set an attribute of the topic to a new value.
 

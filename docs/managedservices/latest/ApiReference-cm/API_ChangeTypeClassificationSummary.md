@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # ChangeTypeClassificationSummary
-<a name="API_ChangeTypeClassificationSummary"></a>
 
 The category, subcategory, item, and operation values of a change type.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/php_3_auto-scalin
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Auto Scaling examples using SDK for PHP
-<a name="php_3_auto-scaling_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with Auto Scaling.
 

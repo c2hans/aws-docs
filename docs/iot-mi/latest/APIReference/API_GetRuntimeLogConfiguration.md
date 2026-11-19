@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetRuntim
 ---
 
 # GetRuntimeLogConfiguration
-<a name="API_GetRuntimeLogConfiguration"></a>
 
 Get the runtime log configuration for a specific managed thing.
 

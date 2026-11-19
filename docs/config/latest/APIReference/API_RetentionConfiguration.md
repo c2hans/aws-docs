@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Retention
 ---
 
 # RetentionConfiguration
-<a name="API_RetentionConfiguration"></a>
 
 An object with the name of the retention configuration and the retention period in days. The object stores the configuration for data retention in AWS Config.
 

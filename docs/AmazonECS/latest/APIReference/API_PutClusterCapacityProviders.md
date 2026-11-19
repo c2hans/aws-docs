@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PutClu
 ---
 
 # PutClusterCapacityProviders
-<a name="API_PutClusterCapacityProviders"></a>
 
 Modifies the available capacity providers and the default capacity provider strategy for a cluster.
 

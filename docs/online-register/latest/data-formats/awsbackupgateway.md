@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 ---
 
 # Data retrieval APIs for AWS Backup Gateway
-<a name="awsbackupgateway"></a>
 
 AWS Backup Gateway provides the following APIs for data retrieval.
 

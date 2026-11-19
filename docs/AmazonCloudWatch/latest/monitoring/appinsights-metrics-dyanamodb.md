@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Amazon DynamoDB table
-<a name="appinsights-metrics-dyanamodb"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

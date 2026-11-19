@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-stored-
 ---
 
 # Replicating transactions using GTIDs
-<a name="mysql-stored-proc-gtid"></a>
 
 The following stored procedures control how transactions are replicated using global transaction identifiers (GTIDs) with RDS for MySQL. For more information about replication based on GTIDs with RDS for MySQL, see [Using GTID-based replication](mysql-replication-gtid.md).
 

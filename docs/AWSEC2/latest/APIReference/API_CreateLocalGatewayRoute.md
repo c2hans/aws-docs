@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateLoc
 ---
 
 # CreateLocalGatewayRoute
-<a name="API_CreateLocalGatewayRoute"></a>
 
 Creates a static route for the specified local gateway route table. You must specify one of the following targets:
 +  `LocalGatewayVirtualInterfaceGroupId`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-dynamod
 ---
 
 # Creating a simple post application using DynamoDB JavaScript resolvers
-<a name="tutorial-dynamodb-resolvers-js"></a>
 
 In this tutorial, you will import your Amazon DynamoDB tables to AWS AppSync and connect them to build a fully-functional GraphQL API using JavaScript pipeline resolvers that you can leverage in your own application.
 

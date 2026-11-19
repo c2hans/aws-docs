@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/ccloudwa
 ---
 
 # Download an AWS Cloud WAN core network policy
-<a name="ccloudwan-policy-version-download"></a>
 
 Download any policy version or your current LIVE policy as a JSON file. You can open the downloaded file in any JSON editor.
 

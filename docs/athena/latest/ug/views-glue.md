@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/views-glue.html
 ---
 
 # Use Data Catalog views in Athena
-<a name="views-glue"></a>
 
 Creating Data Catalog views in Amazon Athena requires a special `CREATE VIEW` statement. Querying them uses conventional SQL `SELECT` syntax. Data Catalog views are also referred to as *multi dialect* views, or MDVs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/walkthroug
 ---
 
 # Walkthroughs
-<a name="walkthroughs"></a>
 
 This chapter contains walkthrough procedures that can help you in your use of AWS Control Tower.
 

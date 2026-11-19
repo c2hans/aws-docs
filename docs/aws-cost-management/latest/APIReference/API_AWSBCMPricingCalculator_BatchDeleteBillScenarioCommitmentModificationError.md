@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchDeleteBillScenarioCommitmentModificationError
-<a name="API_AWSBCMPricingCalculator_BatchDeleteBillScenarioCommitmentModificationError"></a>
 
  Represents an error that occurred when deleting a commitment in a Bill Scenario.
 

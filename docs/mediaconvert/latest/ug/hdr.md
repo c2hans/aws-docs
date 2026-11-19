@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/hdr.html
 ---
 
 # Creating HDR outputs
-<a name="hdr"></a>
 
 AWS Elemental MediaConvert supports HDR with HEVC video assets in the following outputs: MPEG2-TS, MP4, DASH, and CMAF.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Az
 ---
 
 # AzureDevOpsIntegrationInput
-<a name="API_AzureDevOpsIntegrationInput"></a>
 
 Connection details for an Azure DevOps integration.
 

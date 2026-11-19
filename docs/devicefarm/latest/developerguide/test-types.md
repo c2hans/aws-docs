@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-ty
 ---
 
 # Test frameworks and built-in tests in AWS Device Farm
-<a name="test-types"></a>
 
 This section describes Device Farm support for testing frameworks and built-in test types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/windows-harden
 ---
 
 # Hardening Windows container images
-<a name="windows-hardening-containers-images"></a>
 
 Are you hardening your Windows container images? Over the years, I’ve worked with customers globally to help them migrate legacy workloads to containers, particularly Windows workloads. With more than 20 years of experience, I’ve seen organizations dedicate substantial effort and resources to hardening their Windows Servers, implementing everything from CIS Benchmarks to runtime antivirus protection to safeguard sensitive data.
 

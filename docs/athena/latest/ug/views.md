@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/views.html
 ---
 
 # Work with views
-<a name="views"></a>
 
 A view in Amazon Athena is a logical table, not a physical table. The query that defines a view runs each time the view is referenced in a query. You can create a view from a `SELECT` query and then reference this view in future queries.
 

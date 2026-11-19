@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotAli
 ---
 
 # ListBotAliases
-<a name="API_ListBotAliases"></a>
 
 Gets a list of aliases for the specified bot.
 

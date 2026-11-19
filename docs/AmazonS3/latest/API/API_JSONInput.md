@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_JSONInput.html
 ---
 
 # JSONInput
-<a name="API_JSONInput"></a>
 
 Specifies JSON as object's input serialization format.
 

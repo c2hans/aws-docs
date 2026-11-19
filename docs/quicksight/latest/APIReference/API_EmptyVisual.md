@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Empty
 ---
 
 # EmptyVisual
-<a name="API_EmptyVisual"></a>
 
 An empty visual.
 

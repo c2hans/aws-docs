@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetGlueIdentityCe
 ---
 
 # GetGlueIdentityCenterConfiguration
-<a name="API_GetGlueIdentityCenterConfiguration"></a>
 
 Retrieves the current AWS Glue Identity Center configuration details, including the associated Identity Center instance and application information.
 

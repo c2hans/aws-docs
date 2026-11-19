@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Best practices with Amazon Q Developer for in-line and assistant code generation
-<a name="introduction"></a>
 
 *Joe King, Manohar Reddy Arranagu, Prateek Gupta, Soumik Roy, and Sanket Shinde, Amazon Web Services*
 

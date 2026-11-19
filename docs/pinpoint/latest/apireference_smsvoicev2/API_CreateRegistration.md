@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # CreateRegistration
-<a name="API_CreateRegistration"></a>
 
 Creates a new registration based on the **RegistrationType** field.
 

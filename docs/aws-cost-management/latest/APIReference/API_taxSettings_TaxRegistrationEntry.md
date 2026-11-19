@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TaxRegistrationEntry
-<a name="API_taxSettings_TaxRegistrationEntry"></a>
 
 The TRN information you provide when you add a new TRN, or update.
 

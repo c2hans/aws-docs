@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Eligibl
 ---
 
 # EligibleDataSource
-<a name="API_EligibleDataSource"></a>
 
 The identifier of the data source Amazon Q Business will generate responses from.
 

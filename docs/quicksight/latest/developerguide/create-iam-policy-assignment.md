@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/create-
 ---
 
 # CreateIAMPolicyAssignment
-<a name="create-iam-policy-assignment"></a>
 
 Use the `CreateIAMPolicyAssignment` API operation to create an assignment with one specified IAM policy, identified by its Amazon Resource Name (ARN). This policy assignment is attached to the specified groups or users of AWS Quick Sight. Assignment names are unique for each AWS account. To avoid overwriting rules in other namespaces, use assignment names that are unique.
 

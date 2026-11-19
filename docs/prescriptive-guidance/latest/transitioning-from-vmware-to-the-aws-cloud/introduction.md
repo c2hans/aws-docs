@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioni
 ---
 
 # Transitioning from VMware to the AWS Cloud
-<a name="introduction"></a>
 
 *Phurba Sherpa and Phani Lingamallu, Amazon Web Services*
 

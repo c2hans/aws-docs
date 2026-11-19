@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/troubleshooting-lau
 ---
 
 # Troubleshooting launch errors
-<a name="troubleshooting-launch"></a>
 
 Use this section to troubleshoot issues that occur when launching drill or recovery instances.
 

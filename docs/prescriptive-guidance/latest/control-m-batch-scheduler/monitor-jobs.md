@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Monitor jobs
-<a name="monitor-jobs"></a>
 
 You can monitor and validate the processing of jobs within the Control-M Monitoring domain and through the AWS Management Console, ensuring comprehensive observation and verification across both these platforms.
 

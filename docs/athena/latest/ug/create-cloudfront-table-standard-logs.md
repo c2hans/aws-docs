@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudfront-table
 ---
 
 # Create a table for CloudFront standard logs (legacy)
-<a name="create-cloudfront-table-standard-logs"></a>
 
 **Note**
 The following procedure works for the Web distribution access logs in CloudFront. It does not apply to streaming logs from RTMP distributions.

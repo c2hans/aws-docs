@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateComp
 ---
 
 # UpdateComputeEnvironment
-<a name="API_UpdateComputeEnvironment"></a>
 
 Updates an AWS Batch compute environment.
 

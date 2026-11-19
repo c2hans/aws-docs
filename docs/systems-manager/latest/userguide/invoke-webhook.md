@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/invoke-
 ---
 
 # `aws:invokeWebhook` – Invoke an Automation webhook integration
-<a name="invoke-webhook"></a>
 
 Invokes the specified Automation webhook integration. For information about creating Automation integrations, see [Creating webhook integrations for Automation](creating-webhook-integrations.md).
 

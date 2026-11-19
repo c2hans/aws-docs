@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateBotA
 ---
 
 # UpdateBotAlias
-<a name="API_UpdateBotAlias"></a>
 
 Updates the configuration of an existing bot alias.
 

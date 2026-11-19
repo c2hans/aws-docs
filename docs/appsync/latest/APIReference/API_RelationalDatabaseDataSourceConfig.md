@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Relation
 ---
 
 # RelationalDatabaseDataSourceConfig
-<a name="API_RelationalDatabaseDataSourceConfig"></a>
 
 Describes a relational database data source configuration.
 

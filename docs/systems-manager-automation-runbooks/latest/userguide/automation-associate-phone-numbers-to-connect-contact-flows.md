@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-AssociatePhoneNumbersToConnectContactFlows`
-<a name="automation-associate-phone-numbers-to-connect-contact-flows"></a>
 
  **Description**
 

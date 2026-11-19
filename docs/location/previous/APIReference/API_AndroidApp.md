@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Andro
 ---
 
 # AndroidApp
-<a name="API_AndroidApp"></a>
 
 Unique identifying information for an Android app. Consists of a package name and a 20 byte SHA-1 certificate fingerprint.
 

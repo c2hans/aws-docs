@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-pool
 ---
 
 # Modify a pool
-<a name="modify-pool"></a>
 
 After creating a WorkSpaces Pool, you can modify the following:
 + Directory ID (if the WorkSpaces Pool is stopped)

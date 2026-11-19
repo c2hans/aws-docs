@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Hardware and services
-<a name="hardware-and-services"></a>
 
 | MIDASUS05: How do you optimize hardware resources for manufacturing workloads? |
 | --- |

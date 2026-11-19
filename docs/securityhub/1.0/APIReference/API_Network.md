@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Network
 ---
 
 # Network
-<a name="API_Network"></a>
 
 The details of network-related information about a finding.
 

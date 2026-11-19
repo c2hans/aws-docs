@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-
 ---
 
 # Configure storage settings in AWS IoT SiteWise
-<a name="configure-storage"></a>
 
 You can configure storage settings to opt in to service managed warm tier storage, and also to replicate data to the cold tier. To learn more about the retention period for the warm and hot tier, see [Data retention impact](#retention-period). While configuring the storage settings, do the following:
 +  **Hot tier retention** — Set a retention period for how long your data is stored in the hot tier before it's deleted, and moved to the service managed warm tier storage or cold tier storage based on your storage settings. AWS IoT SiteWise will delete any data in the hot tier that existed before the retention period ends. If you don't set a retention period, your data is stored indefinitely in the hot tier.

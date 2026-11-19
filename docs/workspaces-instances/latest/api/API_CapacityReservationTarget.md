@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Capa
 ---
 
 # CapacityReservationTarget
-<a name="API_CapacityReservationTarget"></a>
 
 Identifies a specific capacity reservation.
 

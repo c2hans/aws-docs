@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_FormatOptio
 ---
 
 # FormatOptions
-<a name="API_FormatOptions"></a>
 
 A structure that contains the X12 transaction set and version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # ListConnectors
-<a name="API_ListConnectors"></a>
 
 Lists the connectors belonging to your AWS account.
 

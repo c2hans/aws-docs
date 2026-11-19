@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Get a brand profile attribute
-<a name="nx-features-brand-profiles-attr-get"></a>
 
 View a single attribute to see its value, type, category, and (for image and document attributes) a download URL for the stored file.
 

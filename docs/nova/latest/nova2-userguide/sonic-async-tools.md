@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-async-
 ---
 
 # Asynchronous tool calling
-<a name="sonic-async-tools"></a>
 
 Unlike traditional synchronous tool calling where the AI waits silently for tool results, Amazon Nova 2 Sonic's asynchronous approach allows it to:
 + Continue accepting user input while tools are running

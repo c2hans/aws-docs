@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.AWE.4] Provide adaptable workspaces for effective on-site collaboration
-<a name="oa.awe.4-provide-adaptable-workspaces-for-effective-onsite-collaboration"></a>
 
  **Category:** RECOMMENDED
 

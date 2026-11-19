@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobS3OutputConfigurationInput
-<a name="API_ProtectedJobS3OutputConfigurationInput"></a>
 
 Contains input information for protected jobs with an S3 output type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ResourceTag
-<a name="API_bcmDashboards_ResourceTag"></a>
 
 A key-value pair that can be attached to a dashboard for organization and management purposes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Metadata that is associated with AWS resources. In particular, a name-value pair that can be associated with an AWS Cloud9 development environment. There are two types of tags: *user tags* and *system tags*. A user tag is created by the user. A system tag is automatically created by AWS services. A system tag is prefixed with `"aws:"` and cannot be modified by the user.
 

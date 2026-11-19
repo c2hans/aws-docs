@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/tenab
 ---
 
 # CloudWatch pipelines configuration for Tenable Vulnerability Management
-<a name="tenable-pipeline-setup"></a>
 
 Collects vulnerability management data from Tenable using API key authentication.
 

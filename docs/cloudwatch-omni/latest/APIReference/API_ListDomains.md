@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListDomains
-<a name="API_ListDomains"></a>
 
 Returns the caller's domains: the account-scoped domain and the organization-scoped domain, if either exists. At most two domains are returned.
 

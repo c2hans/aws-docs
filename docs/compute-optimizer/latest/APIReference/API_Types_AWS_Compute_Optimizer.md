@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # AWS Compute Optimizer
-<a name="API_Types_AWS_Compute_Optimizer"></a>
 
 The following data types are supported by AWS Compute Optimizer:
 +  [AccountEnrollmentStatus](API_AccountEnrollmentStatus.md)

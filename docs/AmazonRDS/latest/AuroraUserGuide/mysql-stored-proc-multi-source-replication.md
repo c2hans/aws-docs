@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-s
 ---
 
 # Managing multi-source replication
-<a name="mysql-stored-proc-multi-source-replication"></a>
 
 The following stored procedures set up and manage replication channels on a Aurora MySQL multi-source replica. For more information, see [Configure multi-source replication for Amazon Aurora MySQL](AuroraMySQL.Replication.MultiSource.md).
 

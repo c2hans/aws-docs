@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Relate
 ---
 
 # RelatedFindingDetail
-<a name="API_RelatedFindingDetail"></a>
 
 Details related activities associated with a potential security event. Lists all distinct categories of evidence that are connected to the resource or the finding group.
 

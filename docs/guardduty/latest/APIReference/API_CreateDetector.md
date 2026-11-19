@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Create
 ---
 
 # CreateDetector
-<a name="API_CreateDetector"></a>
 
 Creates a single GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region. All data sources are enabled in a new detector by default.
 + When you don't specify any `features`, with an exception to `RUNTIME_MONITORING`, all the optional features are enabled by default.

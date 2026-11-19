@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_UntagResource.html
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a resource.
 

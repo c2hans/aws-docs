@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Graviton Savings Dashboard
-<a name="graviton-savings-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/neptune-ana
 ---
 
 # Operational excellence pillar
-<a name="operational-excellence-pillar"></a>
 
 The [operational excellence pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html) of the AWS Well-Architected Framework focuses on running and monitoring systems, and continually improving processes and procedures. It includes the ability to support development and run workloads effectively, gain insight into their operation, and continuously improve supporting processes and procedures to deliver business value. You can reduce operational complexity through self-healing workloads, which detect and remediate most issues without human intervention. You can work toward this goal by following the best practices described in this section, and use Amazon Neptune Analytics metrics, APIs, and mechanisms to properly respond when your workload deviates from expected behavior.
 

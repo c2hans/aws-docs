@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Get a notify code configuration
-<a name="nx-features-notify-code-config-get"></a>
 
 View a single notify code configuration to see its passcode policy, channel templates, deletion protection setting, and identifiers.
 

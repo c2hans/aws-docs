@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_P
 ---
 
 # PutDraftAppVersionTemplate
-<a name="API_PutDraftAppVersionTemplate"></a>
 
 Adds or updates the app template for an AWS Resilience Hub application draft version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TotalLoca
 ---
 
 # TotalLocalStorageGB
-<a name="API_TotalLocalStorageGB"></a>
 
 The minimum and maximum amount of total local storage, in GB.
 

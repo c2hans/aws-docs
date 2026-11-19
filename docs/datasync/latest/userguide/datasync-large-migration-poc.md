@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/datasync-large
 ---
 
 # Running a DataSync proof of concept
-<a name="datasync-large-migration-poc"></a>
 
 Running a proof of concept (POC) with AWS DataSync helps you validate the following aspects of your data migration planning:
 + Verify network connectivity between source and destination locations.

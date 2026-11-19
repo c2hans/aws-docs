@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-placement
 ---
 
 # Create a placement group for your EC2 instances
-<a name="create-placement-group"></a>
 
 You can use a placement group to control the placement of instances relative to each other. After you create a placement group, you can launch instances in the placement group.
 

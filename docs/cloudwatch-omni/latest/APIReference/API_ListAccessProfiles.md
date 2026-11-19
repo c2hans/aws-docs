@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListAccessProfiles
-<a name="API_ListAccessProfiles"></a>
 
 Returns the access profiles in a space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/launchguide/education.h
 ---
 
 # Education and enablement
-<a name="education"></a>
 
 Education and enablement play a fundamental role in cloud transformation by ensuring that employees have the knowledge, skills, and mindset needed to adapt to change, contribute effectively to the transformation process, and ultimately help the organization achieve its strategic goals.
 

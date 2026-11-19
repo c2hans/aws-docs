@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Message
 ---
 
 # MessageUsefulnessFeedback
-<a name="API_MessageUsefulnessFeedback"></a>
 
 End user feedback on an AI-generated web experience chat message usefulness.
 

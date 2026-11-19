@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # How Performance Monitor works
-<a name="CloudWatch-PerformanceMonitor-how-it-works"></a>
 
 This section provides information about how Performance Monitor works.
 

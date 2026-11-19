@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Fu
 ---
 
 # FunctionResponse
-<a name="API_FunctionResponse"></a>
 
 The function response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_S
 ---
 
 # SessionLoggerSummary
-<a name="API_SessionLoggerSummary"></a>
 
 The summary of the session logger resource.
 

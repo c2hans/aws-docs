@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-email-suppression-
 ---
 
 # Using the Amazon SES account-level suppression list
-<a name="sending-email-suppression-list"></a>
 
 The Amazon SES account-level suppression list was introduced so that customers can create and control their own suppression list and manage their reputation, thus, your account-level suppression list applies to your account only. The account-level suppression list interface in the SES console provides an easy way to manage addresses in your account-level suppression list, including bulk actions to add or remove addresses.
 

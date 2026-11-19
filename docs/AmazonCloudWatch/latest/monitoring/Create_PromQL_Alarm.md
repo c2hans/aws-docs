@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Creat
 ---
 
 # Create an alarm using a PromQL query
-<a name="Create_PromQL_Alarm"></a>
 
 You can create a CloudWatch alarm that uses a PromQL instant query to monitor metrics ingested through the CloudWatch OTLP endpoint. All matching time series returned by the query are considered breaching, and the alarm tracks each breaching time series as a contributor. For more information about how PromQL alarms work, see [PromQL alarms](alarm-promql.md).
 

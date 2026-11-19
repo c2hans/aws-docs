@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-smtp-software-p
 ---
 
 # Sending email through Amazon SES using software packages
-<a name="send-email-smtp-software-package"></a>
 
 There are a number of commercial and open source software packages that support sending email through SMTP. Here are some examples:
 + Blogging platforms

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Li
 ---
 
 # ListHostedConfigurationVersions
-<a name="API_ListHostedConfigurationVersions"></a>
 
 Lists configurations stored in the AWS AppConfig hosted configuration store by version.
 

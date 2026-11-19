@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Integra
 ---
 
 # IntegrationError
-<a name="API_IntegrationError"></a>
 
 The error of an inbound integration.
 

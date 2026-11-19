@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-account
 ---
 
 # Viewing the status of an organization's member accounts
-<a name="view-account-opt-in"></a>
 
 This section provides you with instructions on how to view member accounts of an organization that are opted in to Compute Optimizer.
 

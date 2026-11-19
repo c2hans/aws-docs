@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
  [Known issue resolution](#known-issue-resolution) provides instructions to mitigate known errors. If these instructions don’t address your issue, [Contact AWS Support](contact-aws-support.md) provides instructions for opening an AWS Support case for this solution.
 

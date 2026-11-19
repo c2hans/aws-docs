@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/feature-ab-watermark
 ---
 
 # Creating A/B forensic video watermarks
-<a name="feature-ab-watermark"></a>
 
 A/B forensic video watermarking embeds an imperceptible forensic identifier into frames of live video. You can use forensic watermarks to trace the source of unauthorized redistribution. A/B forensic watermarking is a MediaLive feature that watermarking providers implement. Irdeto is the first A/B forensic watermarking implementation available in MediaLive.
 

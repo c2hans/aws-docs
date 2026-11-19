@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/notify-
 ---
 
 # Enabling purchase order notifications
-<a name="notify-po-details"></a>
 
 You can enable email notifications on the Billing and Cost Management console by adding contacts to your purchase orders. You need at least one purchase order contact added to receive notifications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeN
 ---
 
 # DescribeNetworkInsightsAccessScopes
-<a name="API_DescribeNetworkInsightsAccessScopes"></a>
 
 Describes the specified Network Access Scopes.
 

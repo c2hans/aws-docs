@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Stat
 ---
 
 # StatusSummary
-<a name="API_StatusSummary"></a>
 
 A summarized description of the status.
 

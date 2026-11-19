@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sandbox-troub
 ---
 
 # Troubleshooting AWS CodeBuild sandbox SSH connection issues
-<a name="sandbox-troubleshooting"></a>
 
 Use the information in this topic to help you identify, diagnose, and address CodeBuild sandbox SSH connection issues.
 

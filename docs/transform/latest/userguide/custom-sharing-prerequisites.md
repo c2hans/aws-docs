@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ---
 
 # Prerequisites for sharing
-<a name="custom-sharing-prerequisites"></a>
 
 **Owner account**
 + Your account must own the TD. You can't share a TD that was shared with you.

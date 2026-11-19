@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/Main_TapesIssu
 ---
 
 # Troubleshooting virtual tape issues
-<a name="Main_TapesIssues-vtl"></a>
 
 You can find information following about actions to take if you experience unexpected issues with your virtual tapes.
 

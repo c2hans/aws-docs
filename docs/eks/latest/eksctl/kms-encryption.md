@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/kms-encryption.html
 ---
 
 # KMS Envelope Encryption for EKS clusters
-<a name="kms-encryption"></a>
 
 **Note**
 Amazon Elastic Kubernetes Service (Amazon EKS) provides default envelope encryption for all Kubernetes API data in EKS clusters running Kubernetes version 1.28 or higher. For more information, see [Default envelope encryption for all Kubernetes API Data](https://docs.aws.amazon.com/eks/latest/userguide/envelope-encryption.html) in the *EKS User Guide*.

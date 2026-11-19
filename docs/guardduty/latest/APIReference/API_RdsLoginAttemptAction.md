@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_RdsLog
 ---
 
 # RdsLoginAttemptAction
-<a name="API_RdsLoginAttemptAction"></a>
 
 Indicates that a login attempt was made to the potentially compromised database from a remote IP address.
 

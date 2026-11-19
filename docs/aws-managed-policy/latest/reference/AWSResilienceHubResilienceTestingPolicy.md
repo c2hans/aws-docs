@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSResilienceHubResilienceTestingPolicy
-<a name="AWSResilienceHubResilienceTestingPolicy"></a>
 
 **Description**: Policy for AWS Resilience Hub service role which allows access to AWS Fault Injection Service in order to start resilience testing.
 

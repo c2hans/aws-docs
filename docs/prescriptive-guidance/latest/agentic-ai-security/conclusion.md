@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Conclusion and resources
-<a name="conclusion"></a>
 
 Securing agentic AI systems requires applying established security practices with AI-specific adaptations rather than entirely new approaches. The autonomous nature of these systems demands particular attention to input validation, access controls, and system recovery capabilities. Ongoing threat-modeling activities support safe expansion of system features, new model inference, wider user bases, and version uplifts. Continuous monitoring remains important as threat landscapes evolve. Organizations that establish these security foundations and establish them into ongoing operational schedules are better positioned to implement agentic AI systems safely and effectively.
 

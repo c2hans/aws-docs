@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Microsoft to AWS migration guidelines
 <a name="resources-msft-aws-migration"></a>

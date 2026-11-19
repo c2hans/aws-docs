@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Cluster
 ---
 
 # ClusterAssociatedToSchedule
-<a name="API_ClusterAssociatedToSchedule"></a>
 
 ## Contents
 <a name="API_ClusterAssociatedToSchedule_Contents"></a>

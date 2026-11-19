@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/troubleshooting.h
 ---
 
 # Troubleshooting AWS CodeArtifact
-<a name="troubleshooting"></a>
 
 The following information might help you troubleshoot common issues with CodeArtifact.
 

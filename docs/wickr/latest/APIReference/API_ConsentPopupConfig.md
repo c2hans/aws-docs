@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ConsentPop
 ---
 
 # ConsentPopupConfig
-<a name="API_ConsentPopupConfig"></a>
 
 Consent popup configuration displayed to users on login.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMem
 ---
 
 # GetMemberDetectors
-<a name="API_GetMemberDetectors"></a>
 
 Describes which data sources are enabled for the member account's detector.
 

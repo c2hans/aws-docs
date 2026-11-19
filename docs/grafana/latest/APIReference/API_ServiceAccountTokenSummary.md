@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_ServiceA
 ---
 
 # ServiceAccountTokenSummary
-<a name="API_ServiceAccountTokenSummary"></a>
 
 A structure that contains the information about a service account token.
 

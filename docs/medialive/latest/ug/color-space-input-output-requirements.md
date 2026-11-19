@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-input-ou
 ---
 
 # Input and output requirements
-<a name="color-space-input-output-requirements"></a>
 
 **Topics**
 + [Supported inputs](#color-space-supported-inputs)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LifecycleHook
-<a name="API_LifecycleHook"></a>
 
 A lifecycle hook, which defines the action that AgentCore Runtime runs at a point in the runtime's lifecycle.
 

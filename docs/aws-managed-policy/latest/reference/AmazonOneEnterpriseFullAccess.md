@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonOneEnterpriseFullAccess
-<a name="AmazonOneEnterpriseFullAccess"></a>
 
 **Description**: This policy grants administrative permissions that allow access to all Amazon One Enterprise resources and operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeQuery
-<a name="API_DescribeQuery"></a>
 
 Retrieves information about a query, including its status.
 

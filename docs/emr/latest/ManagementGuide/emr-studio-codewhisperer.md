@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-co
 ---
 
 # Amazon CodeWhisperer integration with EMR Studio Workspaces
-<a name="emr-studio-codewhisperer"></a>
 
 ## Overview
 <a name="emr-studio-codewhisperer-overview"></a>

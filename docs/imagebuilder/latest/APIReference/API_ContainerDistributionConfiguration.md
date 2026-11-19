@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Con
 ---
 
 # ContainerDistributionConfiguration
-<a name="API_ContainerDistributionConfiguration"></a>
 
 Defines how the output container image is distributed in a specific AWS Region: the target repository, the image tags to apply to the distributed image, and an optional description.
 

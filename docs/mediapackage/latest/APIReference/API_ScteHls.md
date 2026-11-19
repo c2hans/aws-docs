@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Sct
 ---
 
 # ScteHls
-<a name="API_ScteHls"></a>
 
 The SCTE configuration.
 

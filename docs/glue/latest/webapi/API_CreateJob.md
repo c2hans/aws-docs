@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateJob.html
 ---
 
 # CreateJob
-<a name="API_CreateJob"></a>
 
 Creates a new job definition.
 

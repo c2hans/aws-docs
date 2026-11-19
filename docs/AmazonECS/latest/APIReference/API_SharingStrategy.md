@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Sharin
 ---
 
 # SharingStrategy
-<a name="API_SharingStrategy"></a>
 
 The strategy that a container uses to share a GPU with other containers. Specify exactly one member.
 

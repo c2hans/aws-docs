@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormQuestionAutomationAnswerSource
-<a name="API_EvaluationFormQuestionAutomationAnswerSource"></a>
 
 A question automation answer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/filled-maps.html
 ---
 
 # Creating filled maps
-<a name="filled-maps"></a>
 
 You can create filled maps in Quick to show the difference between data values for each location by varying shades of color.
 

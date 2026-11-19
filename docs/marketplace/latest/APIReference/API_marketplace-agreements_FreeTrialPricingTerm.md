@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # FreeTrialPricingTerm
-<a name="API_marketplace-agreements_FreeTrialPricingTerm"></a>
 
-Defines a short-term free pricing model where the buyers aren’t charged anything within a specified limit.
+Defines a short-term free pricing model where the buyers aren't charged anything within a specified limit.
 
 ## Contents
 <a name="API_marketplace-agreements_FreeTrialPricingTerm_Contents"></a>

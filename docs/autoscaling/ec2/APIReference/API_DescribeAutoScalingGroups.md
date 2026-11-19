@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeAutoScalingGroups
-<a name="API_DescribeAutoScalingGroups"></a>
 
 Gets information about the Auto Scaling groups in the account and Region.
 

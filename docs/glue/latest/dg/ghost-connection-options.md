@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/ghost-connection-options.
 ---
 
 # Ghost connection options
-<a name="ghost-connection-options"></a>
 
 The following are connection options for Ghost:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Ghost object to read.

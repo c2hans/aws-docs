@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Best practices for using Amazon Inspector policies
-<a name="orgs_manage_policies_inspector_best_practices"></a>
 
 When implementing Amazon Inspector policies across your organization, following established best practices helps ensure successful deployment and maintenance.
 

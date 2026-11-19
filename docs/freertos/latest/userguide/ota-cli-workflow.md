@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-cli-workfl
 ---
 
 # Creating an OTA update with the AWS CLI
-<a name="ota-cli-workflow"></a>
 
 When you use the AWS CLI to create an OTA update, you:
 

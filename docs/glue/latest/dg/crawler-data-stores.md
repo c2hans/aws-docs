@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/crawler-data-stores.html
 ---
 
 # Supported data sources for crawling
-<a name="crawler-data-stores"></a>
 
 Crawlers can crawl the following file-based and table-based data stores.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RegisterWorksp
 ---
 
 # RegisterWorkspaceDirectory
-<a name="API_RegisterWorkspaceDirectory"></a>
 
 Registers the specified directory. This operation is asynchronous and returns before the WorkSpace directory is registered. If this is the first time you are registering a directory, you will need to create the workspaces\_DefaultRole role before you can register a directory. For more information, see [ Creating the workspaces\_DefaultRole Role](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-access-control.html#create-default-role).
 

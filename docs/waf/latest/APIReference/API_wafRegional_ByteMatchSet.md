@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # ByteMatchSet
-<a name="API_wafRegional_ByteMatchSet"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -31,7 +30,7 @@ Type: Array of [ByteMatchTuple](API_wafRegional_ByteMatchTuple.md) objects
 Required: Yes
 
  ** Name **   <a name="WAF-Type-wafRegional_ByteMatchSet-Name"></a>
-A friendly name or description of the [ByteMatchSet](#API_wafRegional_ByteMatchSet). You can't change `Name` after you create a `ByteMatchSet`.
+A friendly name or description of the [ByteMatchSet](API_wafRegional_ByteMatchSet.md). You can't change `Name` after you create a `ByteMatchSet`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `.*\S.*`

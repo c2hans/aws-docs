@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/pipeline-redundancy-
 ---
 
 # Changing pipeline redundancy in an existing channel
-<a name="pipeline-redundancy-change"></a>
 
 To enable or disable pipeline redundancy on an existing MediaLive channel, you must update the channel class.
 

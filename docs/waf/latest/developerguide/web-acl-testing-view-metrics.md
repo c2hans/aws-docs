@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-testin
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Viewing metrics for your web ACL
-<a name="web-acl-testing-view-metrics"></a>
 
 This section describes how to view metrics for your protection pack (web ACL).
 

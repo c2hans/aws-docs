@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationSort
-<a name="API_SubsidiaryAuthorizationSort"></a>
 
 Specifies the field to sort subsidiary authorizations by and the order (ascending or descending) to apply.
 

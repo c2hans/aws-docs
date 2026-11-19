@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobResourceIdOverrideConfiguration
-<a name="API_AssetBundleImportJobResourceIdOverrideConfiguration"></a>
 
 An optional structure that configures resource ID overrides for the import job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # UpdateContactRoutingBehavior
-<a name="contact-actions-updatecontactroutingbehavior"></a>
 
 Updates the contact's routing details. This can move the contact forward or backward in queue, or specify a queue priority.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-s
 ---
 
 # Connect a Salesforce data source
-<a name="kb-managed-ds-salesforce-connect"></a>
 
 After you set up authentication and store your credentials in an AWS Secrets Manager secret, create the Salesforce data source in your knowledge base. This page describes how to create the data source with the AWS Management Console or the API, followed by a reference for the connector parameters you can configure.
 

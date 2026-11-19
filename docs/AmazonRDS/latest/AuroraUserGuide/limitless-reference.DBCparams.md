@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # DB cluster parameters in Aurora PostgreSQL Limitless Database
-<a name="limitless-reference.DBCparams"></a>
 
 You can use the following DB cluster parameters to configure Aurora PostgreSQL Limitless Database.
 

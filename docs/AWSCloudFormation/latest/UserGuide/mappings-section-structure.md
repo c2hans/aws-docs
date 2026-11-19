@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappi
 ---
 
 # CloudFormation template Mappings syntax
-<a name="mappings-section-structure"></a>
 
 The optional `Mappings` section helps you create key-value pairs that can be used to specify values based on certain conditions or dependencies.
 

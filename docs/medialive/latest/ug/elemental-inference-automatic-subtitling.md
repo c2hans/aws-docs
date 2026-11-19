@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/elemental-inference-
 ---
 
 # Smart Subtitles using Elemental Inference
-<a name="elemental-inference-automatic-subtitling"></a>
 
 In an AWS Elemental MediaLive channel, you can enable the Smart Subtitles feature to automatically generate subtitles from the audio in your source media. This feature uses AWS Elemental Inference smart subtitles, which applies automatic speech recognition (ASR) to transcribe audio into timed subtitle text.
 

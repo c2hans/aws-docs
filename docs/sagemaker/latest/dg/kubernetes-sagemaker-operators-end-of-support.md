@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/kubernetes-sagemaker
 ---
 
 # Old SageMaker AI Operators for Kubernetes
-<a name="kubernetes-sagemaker-operators-end-of-support"></a>
 
 This section is based on the original version of [SageMaker AI Operators for Kubernetes](https://github.com/aws/amazon-sagemaker-operator-for-k8s).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ModifyUser
-<a name="API_ModifyUser"></a>
 
 Changes user password(s) and/or access string.
 

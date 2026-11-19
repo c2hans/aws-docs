@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # SecretCacheHook
-<a name="retrieving-secrets_cache-ref-secretcachehook"></a>
 
 An interface to hook into a [SecretCache](retrieving-secrets_cache-ref-secretcache.md) to perform actions on the secrets being stored in the cache.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDeleteVariableAnnotation
-<a name="API_AutomatedReasoningPolicyDeleteVariableAnnotation"></a>
 
 An annotation for removing a variable from an Automated Reasoning policy.
 

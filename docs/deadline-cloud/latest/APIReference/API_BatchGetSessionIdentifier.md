@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetSessionIdentifier
-<a name="API_BatchGetSessionIdentifier"></a>
 
 The identifiers for a session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-overview.
 ---
 
 # Overview of Db2 on Amazon RDS
-<a name="db2-overview"></a>
 
 You can read the following sections to get an overview of Db2 on Amazon RDS.
 

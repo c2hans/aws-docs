@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Example: Auto scaling SAP applications
-<a name="auto-scaling"></a>
 
 You can automate *SAP application auto scaling*, which automatically detects SAP application server demand and scales up or scales down Amazon EC2 instances accordingly. This capability can adapt to spikes and dips for concurrent user logins, month-end close, payment runs, and a variety of both predictable and unpredictable workloads. The capability can horizontally scale up (start new compute services as application servers) and scale down (stop existing compute services). The following are the benefits of this automation:
 + Dynamic adjusting of application server capacity based on user demand

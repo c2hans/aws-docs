@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/cost-opt-stora
 ---
 
 # Storage
-<a name="cost-opt-storage"></a>
 
 ## Overview
 <a name="_overview"></a>

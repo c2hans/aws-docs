@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/opt-out-list-
 ---
 
 # Set up self managed opt-outs for a phone pool or phone number in AWS End User Messaging SMS
-<a name="opt-out-list-managed"></a>
 
 If you enable this feature, you're responsible for responding to HELP and STOP requests. You're also responsible for tracking and honoring opt-out requests.
 

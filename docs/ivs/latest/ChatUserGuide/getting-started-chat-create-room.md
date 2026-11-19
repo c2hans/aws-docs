@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/getting-started
 ---
 
 # Step 2: Create a Chat Room
-<a name="getting-started-chat-create-room"></a>
 
 An Amazon IVS chat room has configuration information associated with it (e.g., maximum message length).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ApproverDetails
-<a name="API_billing_ApproverDetails"></a>
 
 Information about the executive approver who signs off on an investment attestation.
 

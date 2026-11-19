@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_pro
 ---
 
 # Aurora DSQL Connector for Go pgx
-<a name="SECTION_program-with-go-pgx-connector"></a>
 
 The [Aurora DSQL Connector for Go](https://github.com/awslabs/aurora-dsql-connectors/tree/main/go/pgx) wraps [pgx](https://github.com/jackc/pgx) with automatic IAM authentication. The connector handles token generation, SSL configuration, and connection management so you can focus on your application logic.
 

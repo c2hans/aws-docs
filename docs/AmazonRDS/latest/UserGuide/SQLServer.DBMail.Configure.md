@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.DBM
 ---
 
 # Configuring Database Mail
-<a name="SQLServer.DBMail.Configure"></a>
 
 You perform the following tasks to configure Database Mail:
 

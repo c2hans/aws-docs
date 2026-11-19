@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Associat
 ---
 
 # AssociateVPCWithHostedZone
-<a name="API_AssociateVPCWithHostedZone"></a>
 
 Associates an Amazon VPC with a private hosted zone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/health-scribe-insig
 ---
 
 # AWS HealthScribe Clinical Documentation file
-<a name="health-scribe-insights"></a>
 
 AWS HealthScribe can use one of the following templates for the clinical note summary. The default is `HISTORY_AND_PHYSICAL`.
 + HISTORY\_AND\_PHYSICAL: Provides summaries for key sections of the clinical documentation. Examples of sections include Chief Complaint, History of Present Illness, Review of Systems, Past Medical History, Assessment, and Plan.

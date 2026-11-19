@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-reso
 ---
 
 # Using resource-based policies for guardrails
-<a name="guardrails-resource-based-policies"></a>
 
 Amazon Bedrock Guardrails supports resource-based policies for guardrails and guardrails inference profiles. Resource-based policies let you define access permissions by specifying who has access to each resource, and the actions they are allowed to perform on each resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DataflowEndpointListItem
-<a name="API_DataflowEndpointListItem"></a>
 
 Item in a list of `DataflowEndpoint` groups.
 

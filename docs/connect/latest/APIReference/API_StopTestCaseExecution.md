@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StopTest
 ---
 
 # StopTestCaseExecution
-<a name="API_StopTestCaseExecution"></a>
 
 Stops a running test execution.
 

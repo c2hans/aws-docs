@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteVolume
 ---
 
 # DeleteVolumeOntapConfiguration
-<a name="API_DeleteVolumeOntapConfiguration"></a>
 
 Use to specify skipping a final backup, adding tags to a final backup, or bypassing the retention period of an FSx for ONTAP SnapLock Enterprise volume when deleting an FSx for ONTAP volume.
 

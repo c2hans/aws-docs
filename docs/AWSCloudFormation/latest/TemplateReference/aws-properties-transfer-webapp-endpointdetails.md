@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Transfer::WebApp EndpointDetails
-<a name="aws-properties-transfer-webapp-endpointdetails"></a>
 
 Contains the endpoint configuration for a web app, including VPC settings when the endpoint is hosted within a VPC.
 

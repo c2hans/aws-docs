@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Long-term support (LTS) and beta releases for Amazon Aurora MySQL
-<a name="AuroraMySQL.Update.SpecialVersions"></a>
 
 Aurora MySQL provides long-term support (LTS) and beta releases for some Aurora MySQL engine versions.
 

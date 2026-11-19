@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # DeleteForm
-<a name="API_DeleteForm"></a>
 
 Deletes a form from an Amplify app.
 

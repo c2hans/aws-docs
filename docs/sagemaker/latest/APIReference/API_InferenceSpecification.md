@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceSpecification
-<a name="API_InferenceSpecification"></a>
 
 Defines how to perform inference generation after a training job is run.
 

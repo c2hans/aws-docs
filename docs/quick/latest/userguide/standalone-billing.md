@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/standalone-billin
 ---
 
 # Plan and billing for AWS Quick Free, Plus, and Max accounts
-<a name="standalone-billing"></a>
 
 This topic describes how to view and manage your plan and billing information for AWS Quick Free, Plus, and Max accounts created at [aws.com/quick](https://aws.com/quick).
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::ContainerFleet LocationConfiguration
-<a name="aws-properties-gamelift-containerfleet-locationconfiguration"></a>
 
 A remote location where a multi-location fleet can deploy game servers for game hosting.
 

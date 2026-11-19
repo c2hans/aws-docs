@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-c
 ---
 
 # Create AWS IoT client certificates
-<a name="device-certs-create"></a>
 
 AWS IoT provides client certificates that are signed by the Amazon Root certificate authority (CA).
 

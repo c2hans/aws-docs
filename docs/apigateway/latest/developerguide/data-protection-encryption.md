@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/data-pr
 ---
 
 # Data encryption in Amazon API Gateway
-<a name="data-protection-encryption"></a>
 
 Data protection refers to protecting data while in transit (as it travels to and from API Gateway) and at rest (while it is stored in AWS).
 

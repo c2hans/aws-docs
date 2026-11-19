@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd-des
 ---
 
 # Design principles
-<a name="fnd-design-principles"></a>
 
  The following design principles serve as fundamental guidelines that shape the recommendations while preparing your AWS environment:
 +  **Establish consistent patterns, processes, and configurations across the organization:** Standardization reduces complexity, improves operational efficiency, and enables effective governance at scale.

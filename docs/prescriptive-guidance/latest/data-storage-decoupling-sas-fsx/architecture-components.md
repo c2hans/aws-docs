@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-storag
 ---
 
 # Architecture components
-<a name="architecture-components"></a>
 
 This section outlines the specifications of the following important functional architecture components:
 + **SAS server** – This server is the central compute component for analytics processing and includes local direct-attached storage (DAS).

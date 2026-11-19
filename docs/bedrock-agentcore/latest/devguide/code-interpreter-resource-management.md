@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Resource management
-<a name="code-interpreter-resource-management"></a>
 
 The AgentCore Code Interpreter provides two types of resources:
 

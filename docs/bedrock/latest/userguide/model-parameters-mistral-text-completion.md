@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Mistral AI text completion
-<a name="model-parameters-mistral-text-completion"></a>
 
 The Mistral AI text completion API lets you generate text with a Mistral AI model.
 

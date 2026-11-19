@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileSystemLu
 ---
 
 # FileSystemLustreMetadataConfiguration
-<a name="API_FileSystemLustreMetadataConfiguration"></a>
 
 The Lustre metadata performance configuration of an Amazon FSx for Lustre file system using a `PERSISTENT_2` deployment type. The configuration enables the file system to support increasing metadata performance.
 

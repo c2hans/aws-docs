@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Batch
 ---
 
 # BatchDetectKeyPhrases
-<a name="API_BatchDetectKeyPhrases"></a>
 
 Detects the key noun phrases found in a batch of documents.
 

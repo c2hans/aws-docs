@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DeleteJobQ
 ---
 
 # DeleteJobQueue
-<a name="API_DeleteJobQueue"></a>
 
 Deletes the specified job queue. You must first disable submissions for a queue with the [UpdateJobQueue](API_UpdateJobQueue.md) operation. All jobs in the queue are eventually terminated when you delete a job queue.
 

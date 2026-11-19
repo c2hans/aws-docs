@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListRecommenderFilters
-<a name="API_connect-customer-profiles_ListRecommenderFilters"></a>
 
 Returns a list of recommender filters in the specified domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/disaster-recovery
 ---
 
 # Resilience in AWS Quick
-<a name="disaster-recovery-resiliency"></a>
 
 Quick is built by AWS and runs on AWS-managed infrastructure. It takes full advantage of the high availability features provided by AWS.
 

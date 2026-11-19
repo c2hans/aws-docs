@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/applicat
 ---
 
 # Describing and managing AWS Resilience Hub Applications
-<a name="applications"></a>
 
 An AWS Resilience Hub application is a collection of AWS resources that are structured to prevent and recover AWS application disruptions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/account-linking-f
 ---
 
 # Account linking workflow
-<a name="account-linking-flow"></a>
 
 For a customer's managed integrations for AWS IoT Device Management platform to interact with an end-user’s devices on your third-party platform through your C2C connector, it obtains the access token through the following workflow:
 

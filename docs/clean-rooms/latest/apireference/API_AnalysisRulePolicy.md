@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisRulePolicy
-<a name="API_AnalysisRulePolicy"></a>
 
 Controls on the query specifications that can be run on configured table.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/userguide/migrat
 AWS Systems Manager Incident Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Incident Manager availability change](https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html).
 
 # Migration guides
-<a name="migration-guides"></a>
 
 As AWS Systems Manager Incident Manager will no longer be adding new features or capabilities, it's important for you to understand your alternatives for incident management. This section provides migration guides to help you transition from Incident Manager to alternative solutions.
 

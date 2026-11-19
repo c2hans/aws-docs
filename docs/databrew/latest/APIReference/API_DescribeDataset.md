@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Describ
 ---
 
 # DescribeDataset
-<a name="API_DescribeDataset"></a>
 
 Returns the definition of a specific DataBrew dataset.
 

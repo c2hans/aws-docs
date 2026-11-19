@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoFailover
 ---
 
 # Minimizing downtime in ElastiCache by using Multi-AZ with Valkey and Redis OSS
-<a name="AutoFailover"></a>
 
 There are a number of instances where ElastiCache for Valkey and Redis OSS may need to replace a primary node; these include certain types of planned maintenance and the unlikely event of a primary node or Availability Zone failure.
 

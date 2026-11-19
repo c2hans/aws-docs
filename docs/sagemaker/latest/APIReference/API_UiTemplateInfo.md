@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UiTemp
 ---
 
 # UiTemplateInfo
-<a name="API_UiTemplateInfo"></a>
 
 Container for user interface template information.
 

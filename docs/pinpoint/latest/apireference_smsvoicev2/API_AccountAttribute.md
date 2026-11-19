@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # AccountAttribute
-<a name="API_AccountAttribute"></a>
 
 Displays the attributes associated with a single AWS account.
 

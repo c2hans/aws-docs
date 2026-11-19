@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # Deploy your first network security protection
-<a name="getting-started"></a>
 
 This tutorial walks you through deploying an AWS WAF web ACL using the AWS Network Security Manager console. You complete the following steps:
 

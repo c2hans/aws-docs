@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # FirewallRulesItem
-<a name="API_route53globalresolver_FirewallRulesItem"></a>
 
 Summary information about a firewall rule.
 

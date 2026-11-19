@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/manage-w
 ---
 
 # Amazon ECS Windows container instance management
-<a name="manage-windows"></a>
 
 When you use EC2 instances for your Amazon ECS workloads, you are responsible for maintaining the instances.
 

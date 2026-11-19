@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios-
 ---
 
 # Sample tracking and geofencing application for iOS
-<a name="qs-ios-tracking"></a>
 
 This topic covers the iOS tutorial designed to demonstrate the key features of using the Amazon Location geofences and trackers in a mobile application. The applications demonstrate how a tracker and geonfence interact using a combination of Lambda, AWS IoT and Amazon Location features.
 

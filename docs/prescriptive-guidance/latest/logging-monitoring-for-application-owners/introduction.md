@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # Logging and monitoring guide for application owners
-<a name="introduction"></a>
 
 *John Buckley, Amazon Web Services*
 

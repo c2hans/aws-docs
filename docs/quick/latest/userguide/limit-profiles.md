@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/limit-profiles.ht
 ---
 
 # Limit profiles
-<a name="limit-profiles"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Delet
 ---
 
 # DeleteRemoteAccessSession
-<a name="API_DeleteRemoteAccessSession"></a>
 
 Deletes a completed remote access session and its results. You cannot delete a remote access session if it is still active.
 

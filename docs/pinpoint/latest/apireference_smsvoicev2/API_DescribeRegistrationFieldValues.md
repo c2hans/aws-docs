@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeRegistrationFieldValues
-<a name="API_DescribeRegistrationFieldValues"></a>
 
 Retrieves the specified registration field values.
 

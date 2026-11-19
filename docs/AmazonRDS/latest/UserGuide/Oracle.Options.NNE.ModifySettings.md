@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Option
 ---
 
 # Modifying NATIVE\_NETWORK\_ENCRYPTION option settings
-<a name="Oracle.Options.NNE.ModifySettings"></a>
 
 After you enable the `NATIVE_NETWORK_ENCRYPTION` option, you can modify its settings. Currently, you can modify `NATIVE_NETWORK_ENCRYPTION` option settings only with the AWS CLI or RDS API. You can't use the console. The following example modifies two settings in the option.
 

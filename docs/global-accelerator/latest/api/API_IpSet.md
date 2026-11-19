@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_IpSet.
 ---
 
 # IpSet
-<a name="API_IpSet"></a>
 
 A complex type for the set of IP addresses for an accelerator.
 

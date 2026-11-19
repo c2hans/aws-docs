@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Up
 ---
 
 # UpdateConnection
-<a name="API_UpdateConnection"></a>
 
 Updates the Direct Connect connection configuration.
 

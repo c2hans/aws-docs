@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Amazon Aurora and Application Auto Scaling
-<a name="services-that-can-integrate-aurora"></a>
 
 You can scale Aurora DB clusters using target tracking scaling policies, step scaling policies, and scheduled scaling.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/set-up-vpc-dns.html
 ---
 
 # Setting up DNS in your VPC
-<a name="set-up-vpc-dns"></a>
 
 Domain Name System (DNS) is a standard by which names used on the internet are resolved to their corresponding IP addresses. A DNS hostname uniquely names a computer and consists of a host name and a domain name. DNS servers resolve DNS hostnames to their corresponding IP addresses.
 

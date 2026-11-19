@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Information about a request field that failed validation.
 

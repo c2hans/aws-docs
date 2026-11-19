@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Attribut
 ---
 
 # Attribute
-<a name="API_Attribute"></a>
 
 A toggle for an individual feature at the instance level.
 

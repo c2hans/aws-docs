@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/onedrive-knowledg
 ---
 
 # Microsoft OneDrive knowledge base integration
-<a name="onedrive-knowledge-base"></a>
 
 Microsoft OneDrive is a cloud storage service for storing, sharing, and collaborating on files across your organization. With the AWS Quick OneDrive connector, you can create knowledge bases from your OneDrive content to power AI-driven search and Q&A.
 

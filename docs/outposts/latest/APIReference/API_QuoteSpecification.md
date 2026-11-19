@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_QuoteSp
 ---
 
 # QuoteSpecification
-<a name="API_QuoteSpecification"></a>
 
 A physical specification for a quote option. Describes the rack or server configuration that would be deployed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/wha
 ---
 
 # What Is AWS Amplify Admin UI?
-<a name="what-is-admin-ui"></a>
 
 Welcome to AWS Amplify Admin UI API Reference. Admin UI is now a part of Amplify Studio. This guide is provided for reference purposes, and we strongly recommend that you use Amplify Studio to manage the backend for your Amplify app. For more information, see [Introduction](https://docs.amplify.aws/console/adminui/intro) in the *Amplify Docs*.
 

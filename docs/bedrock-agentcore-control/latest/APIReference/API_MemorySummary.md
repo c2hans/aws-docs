@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MemorySummary
-<a name="API_MemorySummary"></a>
 
 Contains summary information about a memory resource.
 

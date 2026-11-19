@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/api-async-roles.html
 ---
 
 # Configuring Amazon Textract for Asynchronous Operations
-<a name="api-async-roles"></a>
 
 The following procedures show you how to configure Amazon Textract to use with an Amazon Simple Notification Service (Amazon SNS) topic and an Amazon Simple Queue Service (Amazon SQS) queue.
 

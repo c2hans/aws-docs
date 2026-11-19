@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Conf
 ---
 
 # ConfigurationManagerSummary
-<a name="API_ConfigurationManagerSummary"></a>
 
 A summary of a Quick Setup configuration manager.
 

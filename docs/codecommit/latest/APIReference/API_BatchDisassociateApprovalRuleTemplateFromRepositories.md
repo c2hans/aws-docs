@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Batch
 ---
 
 # BatchDisassociateApprovalRuleTemplateFromRepositories
-<a name="API_BatchDisassociateApprovalRuleTemplateFromRepositories"></a>
 
 Removes the association between an approval rule template and one or more specified repositories.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # Amazon MQ for RabbitMQ sizing guidelines
-<a name="rabbitmq-sizing-guidelines"></a>
 
  You can choose the broker instance type that best supports your application. When choosing an instance type, consider factors that will affect broker performance:
 + the number of clients and queues

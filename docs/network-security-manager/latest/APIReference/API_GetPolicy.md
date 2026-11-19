@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # GetPolicy
-<a name="API_GetPolicy"></a>
 
 Retrieves the details of the specified policy.
 

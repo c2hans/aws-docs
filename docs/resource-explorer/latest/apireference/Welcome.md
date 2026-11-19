@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/We
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Resource Explorer is a resource search and discovery service. By using Resource Explorer, you can explore your resources using an internet search engine-like experience. Examples of resources include Amazon Relational Database Service (Amazon RDS) instances, Amazon Simple Storage Service (Amazon S3) buckets, or Amazon DynamoDB tables. You can search for your resources using resource metadata like names, tags, and IDs. Resource Explorer can search across all of the AWS Regions in your account in which you turn the service on, to simplify your cross-Region workloads.
 
@@ -20,4 +19,4 @@ The example HTTP query requests and responses in this guide are displayed with t
 
 Our goal is to help you get everything you can from Resource Explorer. If this guide helps you to do that, then let us know. If the guide isn't helping you, then we want to hear from you so we can address the issue. Use the **Feedback** link that's in the upper-right corner of every page. That sends your comments directly to the writers of this guide. We review every submission, looking for opportunities to improve the documentation. Thank you in advance for your help\!
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

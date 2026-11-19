@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-models-framew
 ---
 
 # Deploy models with TorchServe
-<a name="deploy-models-frameworks-torchserve"></a>
 
 TorchServe is the recommended model server for PyTorch, preinstalled in the AWS PyTorch Deep Learning Container (DLC). This powerful tool offers customers a consistent and user-friendly experience, delivering high performance in deploying multiple PyTorch models across various AWS instances, including CPU, GPU, Neuron, and Graviton, regardless of the model size or distribution.
 

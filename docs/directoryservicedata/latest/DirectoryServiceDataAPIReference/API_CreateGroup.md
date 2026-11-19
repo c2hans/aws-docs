@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # CreateGroup
-<a name="API_CreateGroup"></a>
 
 Creates a new group.
 

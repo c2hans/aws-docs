@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-ki
 ---
 
 # How to choose partition keys
-<a name="partition-projection-kinesis-firehose-example-choosing-partition-keys"></a>
 
 You can specify how partition projection maps the partition locations to partition keys. In the `CREATE TABLE` example in the previous section, the date and hour were combined into one partition key called datehour, but other schemes are possible. For example, you could also configure a table with separate partition keys for the year, month, day, and hour.
 

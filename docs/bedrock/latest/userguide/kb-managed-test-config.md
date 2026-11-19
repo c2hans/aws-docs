@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-test
 ---
 
 # Configure and customize queries for managed knowledge bases
-<a name="kb-managed-test-config"></a>
 
 You can configure and customize retrieval, further improving the relevancy of results. For example, you can apply filters to document metadata fields/attributes to use the most recently updated documents or documents with recent modification times.
 
@@ -19,9 +18,6 @@ When you query a knowledge base, Amazon Bedrock returns up to five results in th
 
 **Note**
 The actual number of results in the response might be less than the specified `numberOfResults` value, since this parameter sets the maximum number of results to return. If you have configured hierarchical chunking for your chunking strategy, the `numberOfResults` parameter maps to the number of child chunks that the knowledge base will retrieve. Since child chunks that share the same parent chunk are replaced with the parent chunk in the final response, the number of results returned might be less than the requested amount.
-
-**Expanded retrieval**
-For top scoring chunks, Amazon Bedrock can expand them to a larger context window from the same document, so that the results include more of the surrounding content.
 
 To modify the maximum number of results to return, choose the tab for your preferred method, and then follow the steps:
 

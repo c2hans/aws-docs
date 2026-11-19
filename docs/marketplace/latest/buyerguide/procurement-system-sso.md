@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/procuremen
 ---
 
 # Enabling SSO for procurement system integration
-<a name="procurement-system-sso"></a>
 
 You can enable single sign-on (SSO) for your AWS Marketplace procurement system integration so that users are automatically signed in using your organization's existing identity provider, without needing a separate AWS login. When enabled, users who access AWS Marketplace through your procurement system are redirected to your organization's SSO login page instead of the standard AWS sign-in page. You enable SSO by passing your organization's SSO login portal URL as a query parameter in the punchout configuration.
 

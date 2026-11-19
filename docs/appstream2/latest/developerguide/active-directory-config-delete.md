@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/active-
 ---
 
 # Deleting a Directory Configuration
-<a name="active-directory-config-delete"></a>
 
 You can delete an WorkSpaces Applications directory configuration that is no longer needed. Directory configurations that are associated with any image builders or fleets cannot be deleted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # fillmissing
-<a name="CWL_QuerySyntax-Fillmissing"></a>
 
 Use the `fillmissing` command to insert rows for empty time bins after `stats ... by bin()`. You can optionally fill fields with a constant value.
 

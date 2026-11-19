@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Gi
 ---
 
 # GitHubRepositoryResource
-<a name="API_GitHubRepositoryResource"></a>
 
 Represents a GitHub repository resource used in an integration.
 

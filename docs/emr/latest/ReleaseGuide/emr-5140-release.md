@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-5140-release
 ---
 
 # Amazon EMR release 5.14.0
-<a name="emr-5140-release"></a>
 
 ## 5.14.0 application versions
 <a name="emr-5140-app-versions"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-direct-api-idem
 ---
 
 # Ensure idempotency in StartSnapshot API requests
-<a name="ebs-direct-api-idempotency"></a>
 
 Idempotency ensures that an API request completes only once. With an idempotent request, if the original request completes successful, the subsequent retries return the result from the original successful request and they have no additional effect.
 

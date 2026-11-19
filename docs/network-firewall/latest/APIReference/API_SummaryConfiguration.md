@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # SummaryConfiguration
-<a name="API_SummaryConfiguration"></a>
 
 A complex type that specifies which Suricata rule metadata fields to use when displaying threat information. Contains:
 +  `RuleOptions` - The Suricata rule options fields to extract and display

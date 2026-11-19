@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 ---
 
 # Other options for analysis
-<a name="other-options-for-analysis"></a>
 
  For further log analysis, Amazon Redshift, a fully-managed data warehouse service, and [Quick](https://aws.amazon.com/quicksight/), a scalable business intelligence service, offer effective solutions. QuickSight provides easy connectivity to various AWS data services such as Redshift, RDS, Aurora, EMR, DynamoDB, Amazon S3, and Kinesis, simplifying data access.
 

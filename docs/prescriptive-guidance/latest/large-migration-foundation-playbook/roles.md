@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Roles
-<a name="roles"></a>
 
 The following are the common roles in a large migration project. Because these roles might go by another title in your organization, a brief description of each role is provided. If a role is not available in your organization, you might investigate whether other resources in your organization can perform this role or seek outside support in the form of a consultant.
 

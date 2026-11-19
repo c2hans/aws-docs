@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/spot-fleet-roles-
 ---
 
 # Create Amazon EC2 spot fleet roles in the AWS Management Console
-<a name="spot-fleet-roles-console"></a>
 
 **To create the `AmazonEC2SpotFleetTaggingRole` IAM service-linked role for Amazon EC2 Spot Fleet**
 

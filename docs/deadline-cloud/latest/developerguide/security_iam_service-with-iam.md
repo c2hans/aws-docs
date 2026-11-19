@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sec
 ---
 
 # How Deadline Cloud works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Deadline Cloud, learn what IAM features are available to use with Deadline Cloud.
 

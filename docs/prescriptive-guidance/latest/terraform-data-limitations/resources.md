@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-d
 ---
 
 # Resources
-<a name="resources"></a>
 
 **Terraform references:**
 + [HashiCorp Well-Architected Framework](https://developer.hashicorp.com/well-architected-framework/what-is)

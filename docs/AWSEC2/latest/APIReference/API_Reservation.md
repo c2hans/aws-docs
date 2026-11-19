@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Reservati
 ---
 
 # Reservation
-<a name="API_Reservation"></a>
 
 Describes a launch request for one or more instances, and includes owner, requester, and security group information that applies to all instances in the launch request.
 

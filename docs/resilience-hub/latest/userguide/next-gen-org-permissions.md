@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Required IAM permissions for delegated administrator setup
-<a name="next-gen-org-permissions"></a>
 
 The following IAM permissions are required for each role in the Organizations integration:
 

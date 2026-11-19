@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-default
 ---
 
 # ECO default backup plan
-<a name="eco-default-backup"></a>
 
 AWS Backup doesn't support "continuous backups" for ECO default backup plans. For information about different types of backup plans, see [Continuous backups and point-in-time recovery (PITR)](https://docs.aws.amazon.com/aws-backup/latest/devguide/point-in-time-recovery.html).
 

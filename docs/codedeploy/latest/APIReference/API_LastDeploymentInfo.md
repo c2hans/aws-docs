@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_LastD
 ---
 
 # LastDeploymentInfo
-<a name="API_LastDeploymentInfo"></a>
 
 Information about the most recent attempted or successful deployment to a deployment group.
 

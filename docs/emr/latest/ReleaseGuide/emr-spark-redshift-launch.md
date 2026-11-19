@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-redshi
 ---
 
 # Launching a Spark application using the Amazon Redshift integration for Apache Spark
-<a name="emr-spark-redshift-launch"></a>
 
 For Amazon EMR releases 6.4 through 6.9, you must use the `--jars` or `--packages` option to specify which of the following JAR files you want to use. The `--jars` option specifies dependencies stored locally, in HDFS, or using HTTP/S. To see other file locations supported by the `--jars` option, see [Advanced Dependency Management](https://spark.apache.org/docs/latest/submitting-applications.html#advanced-dependency-management) in the Spark documentation. The `--packages` option specifies dependencies stored in the public Maven repo.
 + `spark-redshift.jar`

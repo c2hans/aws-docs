@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_ASCII.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ASCII function
-<a name="r_ASCII"></a>
 
 The ASCII function returns the ASCII code, or the Unicode code-point, of the first character in the string that you specify. The function returns `0` if the string is empty. It returns `NULL` if the string is null.
 

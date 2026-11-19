@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Learn how internet traffic is routed to your website in Lightsail
-<a name="amazon-lightsail-internet-traffic-routing"></a>
 
 All computers on the internet, including smart phones, laptops, and website servers, communicate with one another by using unique strings of characters. These strings, known as IP addresses, are in one of the following formats:
 + Internet Protocol version 4 (IPv4) format, such as 192.0.2.44

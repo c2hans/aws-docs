@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/industrial
 ---
 
 # Ingest data to AWS IoT SiteWise
-<a name="industrial-data-ingestion"></a>
 
 AWS IoT SiteWise is designed to efficiently collect and correlate industrial data with corresponding assets, representing various aspects of industrial operations. This documentation focuses on the practical aspects of ingesting data into AWS IoT SiteWise, offering multiple methods tailored to diverse industrial use cases. For instructions to build your virtual industrial operation, see [Model industrial assets](industrial-asset-models.md).
 

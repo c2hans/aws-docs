@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # View peering details in an AWS Cloud WAN core network
-<a name="cloudwan-peerings-view"></a>
 
 View information about a transit gateway used for peering.
 

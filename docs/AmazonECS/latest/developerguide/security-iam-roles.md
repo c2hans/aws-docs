@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security
 ---
 
 # Best practices for IAM roles in Amazon ECS
-<a name="security-iam-roles"></a>
 
 The roles Amazon ECS requires depend on the task definition launch type and the features that you use. We recommend that you create separate roles in the table instead of sharing roles.
 

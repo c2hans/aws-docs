@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-set-lif
 ---
 
 # Setting an S3 Lifecycle configuration on a bucket
-<a name="how-to-set-lifecycle-configuration-intro"></a>
 
 You can set an Amazon S3 Lifecycle configuration on a bucket by using the Amazon S3 console, the AWS Command Line Interface (AWS CLI), the AWS SDKs, or the Amazon S3 REST API. For information about S3 Lifecycle configuration, see [Managing the lifecycle of objects](object-lifecycle-mgmt.md).
 

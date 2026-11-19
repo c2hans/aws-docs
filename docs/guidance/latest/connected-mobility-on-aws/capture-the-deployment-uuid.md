@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Capture the deployment UUID
-<a name="capture-the-deployment-uuid"></a>
 
 Capture and store the deployment UUIDs (Universally Unique ID) of the guidance. This is used to look for any resources not destroyed by CloudFormation after teardown completes.
 

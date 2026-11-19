@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-t
 ---
 
 # What type of pipeline is right for me?
-<a name="pipeline-types-planning"></a>
 
 The pipeline type is determined by the set of characteristics and features supported by each pipeline version.
 

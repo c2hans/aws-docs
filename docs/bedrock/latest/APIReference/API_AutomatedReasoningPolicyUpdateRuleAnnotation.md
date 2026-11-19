@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyUpdateRuleAnnotation
-<a name="API_AutomatedReasoningPolicyUpdateRuleAnnotation"></a>
 
 An annotation for modifying an existing rule in an Automated Reasoning policy.
 

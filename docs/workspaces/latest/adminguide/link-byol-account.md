@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/link-byol-a
 ---
 
 # Link BYOL accounts in WorkSpaces
-<a name="link-byol-account"></a>
 
 You can use BYOL linking to link accounts and share BYOL configurations. BYOL configurations include the CIDR range used by your accounts and the images you use to create WorkSpaces with your Windows license. All accounts that are linked share the same underlying hardware infrastructure.
 

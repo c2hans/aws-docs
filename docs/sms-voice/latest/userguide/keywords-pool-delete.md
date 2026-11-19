@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/keywords-pool
 ---
 
 # Delete a keyword from a phone pool in AWS End User Messaging SMS
-<a name="keywords-pool-delete"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to delete a keyword from your phone pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-device-fleet-re
 ---
 
 # Register a Device
-<a name="edge-device-fleet-register"></a>
 
 **Important**
 Device registration is required to use any part of SageMaker Edge Manager.

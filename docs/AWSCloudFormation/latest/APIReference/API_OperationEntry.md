@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # OperationEntry
-<a name="API_OperationEntry"></a>
 
 Contains information about a CloudFormation operation.
 

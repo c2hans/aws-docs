@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/conne
 ---
 
 # Slack connector
-<a name="connector-slack"></a>
 
 Use the Slack connector to send storefront notifications to your Slack workspace.
 

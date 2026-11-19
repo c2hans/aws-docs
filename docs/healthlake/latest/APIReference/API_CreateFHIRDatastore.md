@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Creat
 ---
 
 # CreateFHIRDatastore
-<a name="API_CreateFHIRDatastore"></a>
 
 Create a FHIR-enabled data store.
 

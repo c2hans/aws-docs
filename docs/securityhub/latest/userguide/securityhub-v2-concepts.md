@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Security Hub concepts
-<a name="securityhub-v2-concepts"></a>
 
  In Security Hub, we build on common AWS concepts and terminology and use these additional terms.
 

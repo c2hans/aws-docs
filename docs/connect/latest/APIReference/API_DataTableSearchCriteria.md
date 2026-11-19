@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTabl
 ---
 
 # DataTableSearchCriteria
-<a name="API_DataTableSearchCriteria"></a>
 
 A data table search criteria.
 
@@ -12,12 +11,12 @@ A data table search criteria.
 
  ** AndConditions **   <a name="connect-Type-DataTableSearchCriteria-AndConditions"></a>
 The criteria's and conditions.
-Type: Array of [DataTableSearchCriteria](#API_DataTableSearchCriteria) objects
+Type: Array of [DataTableSearchCriteria](API_DataTableSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-DataTableSearchCriteria-OrConditions"></a>
 The criteria's or conditions.
-Type: Array of [DataTableSearchCriteria](#API_DataTableSearchCriteria) objects
+Type: Array of [DataTableSearchCriteria](API_DataTableSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-DataTableSearchCriteria-StringCondition"></a>

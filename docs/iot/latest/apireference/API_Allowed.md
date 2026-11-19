@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Allowed.html
 ---
 
 # Allowed
-<a name="API_Allowed"></a>
 
 Contains information that allowed the authorization.
 

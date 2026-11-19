@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Associate
 ---
 
 # AssociateClientDeviceWithCoreDeviceEntry
-<a name="API_AssociateClientDeviceWithCoreDeviceEntry"></a>
 
 Contains a request to associate a client device with a core device. The [BatchAssociateClientDeviceWithCoreDevice](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_BatchAssociateClientDeviceWithCoreDevice.html) operation consumes a list of these requests.
 

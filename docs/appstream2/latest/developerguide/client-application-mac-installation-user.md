@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # Setup and installation for macOS
-<a name="client-application-mac-installation-user"></a>
 
 Follow these steps to download and install the client application.
 

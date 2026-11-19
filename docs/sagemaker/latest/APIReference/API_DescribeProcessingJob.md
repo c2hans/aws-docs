@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeProcessingJob
-<a name="API_DescribeProcessingJob"></a>
 
 Returns a description of a processing job.
 

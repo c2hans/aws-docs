@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/security-b
 ---
 
 # Security best practices
-<a name="security-best-practices"></a>
 
 **Topics**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_BatchG
 ---
 
 # BatchGetRepositoryScanningConfiguration
-<a name="API_BatchGetRepositoryScanningConfiguration"></a>
 
 Gets the scanning configuration for one or more repositories.
 

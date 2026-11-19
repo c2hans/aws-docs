@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Algori
 ---
 
 # AlgorithmStatusItem
-<a name="API_AlgorithmStatusItem"></a>
 
 Represents the overall status of an algorithm.
 

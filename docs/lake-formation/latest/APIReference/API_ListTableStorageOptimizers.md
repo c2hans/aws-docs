@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # ListTableStorageOptimizers
-<a name="API_ListTableStorageOptimizers"></a>
 
 Returns the configuration of all storage optimizers associated with a specified table.
 

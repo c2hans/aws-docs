@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/coh-pre
 ---
 
 # Customizing your Cost Optimization Hub preferences
-<a name="coh-preferences"></a>
 
 In **Cost Management preferences**, you can customize various Cost Optimization Hub settings, including how savings are estimated and your commitment preferences.
 

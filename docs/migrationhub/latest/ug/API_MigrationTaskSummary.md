@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/API_MigrationTask
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # MigrationTaskSummary
-<a name="API_MigrationTaskSummary"></a>
 
 MigrationTaskSummary includes `MigrationTaskName`, `ProgressPercent`, `ProgressUpdateStream`, `Status`, and `UpdateDateTime` for each task.
 

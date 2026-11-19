@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/rust_api-gateway_
 ---
 
 # API Gateway examples using SDK for Rust
-<a name="rust_api-gateway_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Rust with API Gateway.
 

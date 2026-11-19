@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DataReplicat
 ---
 
 # DataReplicationInfo
-<a name="API_DataReplicationInfo"></a>
 
 Information about Data Replication
 

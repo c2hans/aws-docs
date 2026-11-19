@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/share-s3-tables-catalog.h
 ---
 
 # Sharing S3 Tables catalog objects
-<a name="share-s3-tables-catalog"></a>
 
 When using IAM access control, you can share S3 Tables catalog objects with other users using AWS Glue resource links for same-account sharing. For cross-account sharing, you can share S3 table buckets with another AWS account and the IAM role or user in the recipient account can create a AWS Glue catalog object using the shared table bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/environment-vari
 ---
 
 # Using environment variables in AWS AppSync
-<a name="environment-variables"></a>
 
 You can use environment variables to adjust your AWS AppSync resolvers' and functions' behavior without updating your code. Environment variables are pairs of strings stored with your API configuration that are made available to your resolvers and functions to leverage at runtime. They're particularly useful for situations in which you must reference configuration data that's only available during the initial setup but needs to be used by your resolvers and functions during the run. Environment variables expose configuration data in your code, thereby reducing the need to hard-code those values.
 

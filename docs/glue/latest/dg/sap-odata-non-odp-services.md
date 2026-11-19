@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-non-odp-service
 ---
 
 # OData Services (Non-ODP Sources)
-<a name="sap-odata-non-odp-services"></a>
 
 ## Full Load
 <a name="sap-odata-non-odp-full-load"></a>

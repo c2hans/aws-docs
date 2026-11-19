@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowLambdaParameters
-<a name="API_MaintenanceWindowLambdaParameters"></a>
 
 The parameters for a `LAMBDA` task type.
 

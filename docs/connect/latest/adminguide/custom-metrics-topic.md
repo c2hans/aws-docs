@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/custom-metrics
 ---
 
 # Custom metrics
-<a name="custom-metrics-topic"></a>
 
 In [Connect Customer](enable-nextgeneration-amazonconnect.md) instances, you can create and manage custom metrics with advanced filters and functions on metric primitives and have them available for your dashboards.
 

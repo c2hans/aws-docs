@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerAccountDiscoveryServicePolicy
-<a name="AWSSystemsManagerAccountDiscoveryServicePolicy"></a>
 
 **Description**: Grants AWS Systems Manager (SSM) permission to discover AWS account information.
 

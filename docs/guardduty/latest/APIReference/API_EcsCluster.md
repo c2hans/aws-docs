@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_EcsClu
 ---
 
 # EcsCluster
-<a name="API_EcsCluster"></a>
 
 Contains information about the Amazon ECS cluster involved in a GuardDuty finding, including cluster identification and status.
 

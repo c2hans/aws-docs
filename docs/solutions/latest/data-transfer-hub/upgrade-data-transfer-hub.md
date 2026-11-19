@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/upgra
 ---
 
 # Upgrade Data Transfer Hub
-<a name="upgrade-data-transfer-hub"></a>
 
  Time to upgrade: Approximately 20 minutes
 

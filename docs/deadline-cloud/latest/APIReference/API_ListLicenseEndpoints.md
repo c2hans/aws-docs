@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListLicenseEndpoints
-<a name="API_ListLicenseEndpoints"></a>
 
 Lists license endpoints.
 

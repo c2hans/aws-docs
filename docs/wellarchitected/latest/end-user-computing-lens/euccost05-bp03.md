@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCCOST05-BP03 Rightsize your EUC resources
-<a name="euccost05-bp03"></a>
 
  Choosing the right Amazon WorkSpaces bundle or Amazon WorkSpaces Applications instance type for your EUC workloads is important to operate your EUC environment in a cost-effective manner. The chosen configuration needs to support the hardware requirements of your applications, while at the same time avoiding over-provisioning resources.
 

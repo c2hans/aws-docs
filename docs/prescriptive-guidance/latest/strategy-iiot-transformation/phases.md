@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Phases of an IIoT digital transformation journey
-<a name="phases"></a>
 
 AWS Professional Services uses a phased approach to build and realize a plan for an IIoT digital transformation journey:
 + [Phase 1: Identifying business objectives](phase-1.md) – Clearly identify and prioritize the business opportunities or problems to address. These are the main driver and the foundation for the overall process. Your business objectives should be ambitious yet achievable, with top-down shared goals for the organization. A typical IIoT digital transformation journey is more than a single project. We recommend a holistic approach for success by thinking big, starting small, and scaling fast.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Private Certificate Authority
-<a name="list_acm-pca"></a>
 
 AWS Private Certificate Authority (service prefix: `acm-pca`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

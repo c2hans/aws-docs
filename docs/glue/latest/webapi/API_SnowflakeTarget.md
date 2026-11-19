@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SnowflakeTarget.h
 ---
 
 # SnowflakeTarget
-<a name="API_SnowflakeTarget"></a>
 
 Specifies a Snowflake target.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/deploy-ipv6-cluster
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploying an Amazon EKS `IPv6` cluster and managed Amazon Linux nodes
-<a name="deploy-ipv6-cluster"></a>
 
 In this tutorial, you deploy an `IPv6` Amazon VPC, an Amazon EKS cluster with the `IPv6` family, and a managed node group with Amazon EC2 Amazon Linux nodes. You can’t deploy Amazon EC2 Windows nodes in an `IPv6` cluster. You can also deploy Fargate nodes to your cluster, though those instructions aren’t provided in this topic for simplicity.
 

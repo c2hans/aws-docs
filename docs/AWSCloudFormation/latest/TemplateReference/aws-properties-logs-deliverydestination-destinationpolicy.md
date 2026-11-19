@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::DeliveryDestination DestinationPolicy
-<a name="aws-properties-logs-deliverydestination-destinationpolicy"></a>
 
 An IAM policy that grants permissions to CloudWatch Logs to deliver logs cross-account to a specified destination in this account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Scenarios
-<a name="scenarios"></a>
 
  This section explores common data residency scenarios, framing out best practices and implementation guidance within the context of the Well-Architected pillars. These scenarios serve as foundational experiences shaping the guidance offered in the lens. By exploring each case, we provide actionable guidance tailored to the complexities of data residency requirements.
 

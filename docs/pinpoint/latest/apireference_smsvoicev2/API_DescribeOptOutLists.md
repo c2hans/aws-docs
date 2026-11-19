@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeOptOutLists
-<a name="API_DescribeOptOutLists"></a>
 
 Describes the specified opt-out list or all opt-out lists in your account.
 

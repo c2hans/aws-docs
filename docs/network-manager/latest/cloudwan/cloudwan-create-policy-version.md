@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Core network policy versions in AWS Cloud WAN
-<a name="cloudwan-create-policy-version"></a>
 
 Create a version of your current network policy any time you want to make changes to your network. Policy versions can be created using the console, through either the visual editor mode or directly in JSON, or you can download a version of any policy and make changes to that policy in any JSON editor. Once you create a new version of a policy you can compare that version against an older version to view changes.
 

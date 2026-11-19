@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-data-lake-archit
 ---
 
 # Data Lake Architecture
-<a name="rise-data-lake-architecture"></a>
 
 The [Data lake](https://aws.amazon.com/what-is/data-lake/) architecture provides building blocks that demonstrate how to combine and consolidate SAP and non-SAP data from disparate sources using analytics and machine learning services on AWS.
 

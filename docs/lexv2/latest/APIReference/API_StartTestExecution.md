@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_StartTestE
 ---
 
 # StartTestExecution
-<a name="API_StartTestExecution"></a>
 
 The action to start test set execution.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Specifying a workflow action's source repository
-<a name="workflows-sources-specify-action"></a>
 
 Use the following instructions to specify a source repository to use with a workflow action. On startup, the action bundles the files at the configured source repository into an artifact, downloads the artifact to the [runtime environment Docker image](build-images.md) where the action is running, and then completes its processing using the downloaded files.
 

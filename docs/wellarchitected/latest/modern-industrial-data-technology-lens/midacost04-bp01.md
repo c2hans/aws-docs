@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDACOST04-BP01 Perform an analysis on the historical manufacturing workloads
-<a name="midacost04-bp01"></a>
 
  Make data-driven resource provisioning decisions based on accurate historical usage patterns in manufacturing environments. This involves analyzing at least one full production cycle's data, considering seasonal variations, and accounting for planned maintenance windows in resource forecasting.
 

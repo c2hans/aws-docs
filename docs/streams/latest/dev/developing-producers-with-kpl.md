@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/developing-producers-
 ---
 
 # Develop producers using the Amazon Kinesis Producer Library (KPL)
-<a name="developing-producers-with-kpl"></a>
 
 An Amazon Kinesis Data Streams producer is an application that puts user data records into a Kinesis data stream (also called *data ingestion*). The Amazon Kinesis Producer Library (KPL) simplifies producer application development, letting developers achieve high write throughput to a Kinesis data stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PipelineDestination
-<a name="API_osis_PipelineDestination"></a>
 
 An object representing the destination of a pipeline.
 

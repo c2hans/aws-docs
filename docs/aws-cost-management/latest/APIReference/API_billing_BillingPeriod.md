@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingPeriod
-<a name="API_billing_BillingPeriod"></a>
 
 A specific billing period identified by year and month.
 

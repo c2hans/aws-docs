@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListWorkloads
-<a name="API_ListWorkloads"></a>
 
 Paginated list of workloads.
 

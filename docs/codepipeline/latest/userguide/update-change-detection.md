@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/update-cha
 ---
 
 # Migrate polling pipelines to use event-based change detection
-<a name="update-change-detection"></a>
 
 AWS CodePipeline supports full, end-to-end continuous delivery, which includes starting your pipeline whenever there is a code change. There are two supported ways to start your pipeline upon a code change: event-based change detection and polling. We recommend using event-based change detection for pipelines.
 

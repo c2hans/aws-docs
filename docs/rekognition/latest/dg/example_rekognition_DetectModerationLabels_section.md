@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/example_rekognitio
 ---
 
 # Use `DetectModerationLabels` with an AWS SDK or CLI
-<a name="example_rekognition_DetectModerationLabels_section"></a>
 
 The following code examples show how to use `DetectModerationLabels`.
 

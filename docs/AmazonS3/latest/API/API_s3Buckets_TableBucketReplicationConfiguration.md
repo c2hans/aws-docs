@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_TableB
 ---
 
 # TableBucketReplicationConfiguration
-<a name="API_s3Buckets_TableBucketReplicationConfiguration"></a>
 
 The replication configuration for a table bucket. This configuration defines how tables in the source bucket are replicated to destination table buckets, including the IAM role used for replication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetMethodRespo
 ---
 
 # GetMethodResponse
-<a name="API_GetMethodResponse"></a>
 
 Describes a MethodResponse resource.
 

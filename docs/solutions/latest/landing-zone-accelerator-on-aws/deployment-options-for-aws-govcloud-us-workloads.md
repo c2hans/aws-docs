@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Deployment options for AWS GovCloud (US) workloads
-<a name="deployment-options-for-aws-govcloud-us-workloads"></a>
 
 We base the following options on amount of access type of workloads:
 +  [Option 1](option-1-deploy-to-new-standard-and-aws-govcloud-us-accounts.md) - Deploy to new standard and AWS GovCloud (US) accounts. This is recommended for customers who are planning to host workloads in both standard and AWS GovCloud (US) Regions. Both Region types will have a Landing Zone Accelerator on AWS.

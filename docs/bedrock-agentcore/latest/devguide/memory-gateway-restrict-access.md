@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # Restrict direct access to Memory
-<a name="memory-gateway-restrict-access"></a>
 
 The fine-grained access control policies on your gateway govern requests that arrive *through the gateway*. They do not stop a principal that has IAM permissions on the Memory resource from calling the Memory data plane directly and bypassing the gateway. To ensure Memory can only be reached through your gateway, attach a resource-based policy to the Memory resource that allows access only when the request was forwarded by that gateway. This is a JSON resource-based policy on Memory, not a Cedar policy, and it complements the Cedar policies on your gateway.
 

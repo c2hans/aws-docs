@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Crea
 ---
 
 # CreateIngestConfiguration
-<a name="API_CreateIngestConfiguration"></a>
 
 Creates a new IngestConfiguration resource, used to specify the ingest protocol for a stage.
 

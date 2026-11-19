@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SignatureValidityP
 ---
 
 # SignatureValidityPeriod
-<a name="API_SignatureValidityPeriod"></a>
 
 The validity period for a signing job.
 

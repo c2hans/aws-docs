@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/machine-learning-teaching
 ---
 
 # Teaching the Find Matches transform
-<a name="machine-learning-teaching"></a>
 
 Each `FindMatches` transform must be taught what should be considered a match and what should not be considered a match. You teach your transform by adding labels to a file and uploading your choices to AWS Glue.
 

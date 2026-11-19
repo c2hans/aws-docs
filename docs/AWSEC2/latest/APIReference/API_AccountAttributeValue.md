@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AccountAt
 ---
 
 # AccountAttributeValue
-<a name="API_AccountAttributeValue"></a>
 
 Describes a value of an account attribute.
 

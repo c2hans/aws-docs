@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/t
 ---
 
 # Using Volcano as a custom scheduler for Apache Spark on Amazon EMR on EKS
-<a name="tutorial-volcano"></a>
 
 With Amazon EMR on EKS, you can use Spark operator or spark-submit to run Spark jobs with Kubernetes custom schedulers. This tutorial covers how to run Spark jobs with a Volcano scheduler on a custom queue.
 

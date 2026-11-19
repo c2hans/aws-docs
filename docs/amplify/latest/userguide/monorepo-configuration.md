@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/monorepo-config
 ---
 
 # Configuring monorepo build settings
-<a name="monorepo-configuration"></a>
 
 When you store multiple projects or microservices in a single repository, it is called a monorepo. You can use Amplify Hosting to deploy applications in a monorepo without creating multiple build configurations or branch configurations.
 

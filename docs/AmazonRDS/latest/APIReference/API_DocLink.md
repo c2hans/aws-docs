@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DocLin
 ---
 
 # DocLink
-<a name="API_DocLink"></a>
 
 A link to documentation that provides additional information for a recommendation.
 

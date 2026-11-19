@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-model-sagemak
 ---
 
 # SageMaker Inference
-<a name="nova-model-sagemaker-inference"></a>
 
 Custom Amazon Nova models are now available on SageMaker inference. With Amazon Nova on SageMaker, you can start getting predictions, or inferences, from your trained custom Amazon Nova models. SageMaker provides a broad selection of ML infrastructure and model deployment options to help meet all your ML inference needs. With SageMaker inference, you can scale your model deployment, manage models more effectively in production, and reduce operational burden.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/configure-spal-repositor
 ---
 
 # Tutorial: Configure SPAL repository on AL2023
-<a name="configure-spal-repository"></a>
 
 Supplementary Packages for Amazon Linux (SPAL) is an additional package repository for AL2023 that provides customers access to thousands of open-source packages.
 

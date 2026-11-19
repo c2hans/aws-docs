@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/elastic-beanstalk
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `UpdateApplication` with an AWS SDK or CLI
-<a name="elastic-beanstalk_example_elastic-beanstalk_UpdateApplication_section"></a>
 
 The following code examples show how to use `UpdateApplication`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Algori
 ---
 
 # AlgorithmValidationProfile
-<a name="API_AlgorithmValidationProfile"></a>
 
 Defines a training job and a batch transform job that SageMaker runs to validate your algorithm.
 

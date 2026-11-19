@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Other supported resources in Amazon OpenSearch Service
-<a name="supported-resources"></a>
 
 This topic describes additional resources that Amazon OpenSearch Service supports.
 

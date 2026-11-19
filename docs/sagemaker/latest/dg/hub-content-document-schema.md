@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hub-content-document
 ---
 
 # HubContentDocument schema
-<a name="hub-content-document-schema"></a>
 
 A `HubContentDocument` is a JSON-formatted document that describes information about a piece of hub content, such as its type, associated containers, scripts, and more. The [DescribeHubContent](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeHubContent.html) operation returns this document in the `HubContentDocument` response field as a string. To list the hub content items that are available before describing one, use [ListHubContents](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListHubContents.html).
 

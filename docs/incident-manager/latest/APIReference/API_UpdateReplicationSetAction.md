@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # UpdateReplicationSetAction
-<a name="API_UpdateReplicationSetAction"></a>
 
 Details used when updating the replication set.
 

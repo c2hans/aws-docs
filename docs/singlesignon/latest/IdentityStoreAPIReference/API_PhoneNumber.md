@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # PhoneNumber
-<a name="API_PhoneNumber"></a>
 
 The phone number associated with the user.
 

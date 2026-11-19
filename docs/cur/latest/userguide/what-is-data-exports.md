@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-export
 ---
 
 # What is AWS Data Exports?
-<a name="what-is-data-exports"></a>
 
 AWS Data Exports enables you to create billing and cost management data exports and carbon emissions data exports using basic SQL, and visualize data by integrating with Amazon QuickSight.
 

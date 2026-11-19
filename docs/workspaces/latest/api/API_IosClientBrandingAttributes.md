@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_IosClientBrand
 ---
 
 # IosClientBrandingAttributes
-<a name="API_IosClientBrandingAttributes"></a>
 
 The client branding attributes for iOS device types. These attributes are displayed on the iOS client login screen only.
 

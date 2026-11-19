@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/descri
 ---
 
 # Describe scheduled scaling for Application Auto Scaling using the AWS CLI
-<a name="describe-scheduled-scaling"></a>
 
 These example AWS CLI commands describe scaling activities and scheduled actions using resources from services that integrate with Application Auto Scaling. For a different scalable target, specify its namespace in `--service-namespace`, its scalable dimension in `--scalable-dimension`, and its resource ID in `--resource-id`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ge
 ---
 
 # GetNotificationsAccessForOrganization
-<a name="API_GetNotificationsAccessForOrganization"></a>
 
 Returns the AccessStatus of Service Trust Enablement for AWS User Notifications and AWS Organizations.
 

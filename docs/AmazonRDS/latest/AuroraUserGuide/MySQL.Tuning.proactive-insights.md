@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/MySQL.T
 ---
 
 # Tuning Aurora MySQL with Amazon DevOps Guru proactive insights
-<a name="MySQL.Tuning.proactive-insights"></a>
 
 DevOps Guru proactive insights detect known problematic conditions on your Aurora MySQL DB clusters before they occur. DevOps Guru can do the following:
 + Prevent many common database issues by cross-checking your database configuration against common recommended settings.

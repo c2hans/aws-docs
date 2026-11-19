@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-glue.h
 ---
 
 # Use AWS Glue Data Catalog with Spark on Amazon EMR
-<a name="emr-spark-glue"></a>
 
 Using Amazon EMR release 5.8.0 or later, you can configure Spark to use the AWS Glue Data Catalog as its Apache Hive metastore. We recommend this configuration when you require a persistent Hive metastore or a Hive metastore shared by different clusters, services, applications, or AWS accounts.
 

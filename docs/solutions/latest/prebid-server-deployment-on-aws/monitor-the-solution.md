@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Monitor the solution
-<a name="monitor-the-solution"></a>
 
 This solution defines several CloudWatch alarms to monitor its health and performance. Each alarm has a fixed threshold or an anomaly-based threshold that causes state to transit between `OK` and `ALARM`. Review the full list of alarms with details in the [Amazon CloudWatch Alarms](traffic-monitoring.md#amazon-cloudwatch-alarms) section. You can view the alarms in the Amazon CloudWatch console and configure alarm notifications as needed after stack deployment. For general information about CloudWatch alarms and alarm actions, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) in the *Amazon CloudWatch User Guide*.
 

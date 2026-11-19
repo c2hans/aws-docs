@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-how-i
 ---
 
 # How connectors work
-<a name="int-actions-how-it-works"></a>
 
 Connectors in AWS Quick create secure connections between AWS Quick and external services. When you configure these integrations, you can perform actions based on your authentication level and permissions.
 

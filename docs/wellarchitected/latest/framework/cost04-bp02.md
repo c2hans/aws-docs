@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost04-
 ---
 
 # COST04-BP02 Perform data transfer modeling
-<a name="cost04-bp02"></a>
 
  Data transfer is a significant part of a workload's cost. What you pay depends on where data moves, how often, and how those patterns change as the workload grows. Model data transfer during design to compare architectural options on cost alongside performance and resilience.
 

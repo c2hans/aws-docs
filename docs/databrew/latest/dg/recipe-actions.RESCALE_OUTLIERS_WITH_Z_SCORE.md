@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.RESCAL
 ---
 
 # RESCALE\_OUTLIERS\_WITH\_Z\_SCORE
-<a name="recipe-actions.RESCALE_OUTLIERS_WITH_Z_SCORE"></a>
 
 Returns a new column with a rescaled outlier value in each row, based on the settings in the parameters. This action also applies Z-score normalization to linearly scale data values to have a mean (μ) of 0 and standard deviation (σ) of 1. We recommend this action for handling outliers.
 

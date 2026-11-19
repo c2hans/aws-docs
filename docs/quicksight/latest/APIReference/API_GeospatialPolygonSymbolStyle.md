@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialPolygonSymbolStyle
-<a name="API_GeospatialPolygonSymbolStyle"></a>
 
 The polygon symbol style for a polygon layer.
 

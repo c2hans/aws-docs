@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/build-green
 ---
 
 # Build the AWS IoT Greengrass container image from a Dockerfile
-<a name="build-greengrass-dockerfile"></a>
 
 AWS provides a Dockerfile that you can download and use to run AWS IoT Greengrass Core software in a Docker container. Dockerfiles contain source code for building AWS IoT Greengrass container images.
 

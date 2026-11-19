@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteUs
 ---
 
 # DeleteUserHierarchyGroup
-<a name="API_DeleteUserHierarchyGroup"></a>
 
 Deletes an existing user hierarchy group. It must not be associated with any agents or have any active child groups.
 

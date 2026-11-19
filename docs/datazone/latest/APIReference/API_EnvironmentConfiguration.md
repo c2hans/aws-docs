@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentConfiguration
-<a name="API_EnvironmentConfiguration"></a>
 
 The configuration of an environment.
 

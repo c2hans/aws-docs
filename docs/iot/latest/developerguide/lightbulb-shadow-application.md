@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/lightbulb-shad
 ---
 
 # Tutorial: Installing the Device SDK and running the sample application for Device Shadows
-<a name="lightbulb-shadow-application"></a>
 
 This section shows how you can install the required software and the AWS IoT Device SDK for Python and run the `shadow.py` sample application to edit the Shadow document and control the shadow's state.
 

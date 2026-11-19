@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateSpace
-<a name="API_UpdateSpace"></a>
 
 Updates the settings of a space.
 

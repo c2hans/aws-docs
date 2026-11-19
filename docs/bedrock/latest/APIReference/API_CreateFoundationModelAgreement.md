@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateFo
 ---
 
 # CreateFoundationModelAgreement
-<a name="API_CreateFoundationModelAgreement"></a>
 
 Request a model access agreement for the specified model.
 

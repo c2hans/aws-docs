@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileCacheFai
 ---
 
 # FileCacheFailureDetails
-<a name="API_FileCacheFailureDetails"></a>
 
 A structure providing details of any failures that occurred.
 

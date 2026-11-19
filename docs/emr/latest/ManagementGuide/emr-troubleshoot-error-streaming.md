@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troublesh
 ---
 
 # Streaming Amazon EMR cluster errors
-<a name="emr-troubleshoot-error-streaming"></a>
 
  You can usually find the cause of a streaming error in a `syslog` file. Link to it on the **Steps** pane.
 

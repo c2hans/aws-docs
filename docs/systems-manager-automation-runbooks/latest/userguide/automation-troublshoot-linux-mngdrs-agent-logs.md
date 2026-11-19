@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootLinuxMGNDRSAgentLogs`
-<a name="automation-troublshoot-linux-mngdrs-agent-logs"></a>
 
  **Description**
 

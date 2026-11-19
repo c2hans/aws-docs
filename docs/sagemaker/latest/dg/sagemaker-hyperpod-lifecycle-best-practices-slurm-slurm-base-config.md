@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-l
 ---
 
 # Base lifecycle scripts provided by HyperPod
-<a name="sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-base-config"></a>
 
 This section walks you through every component of the basic flow of setting up Slurm on HyperPod in a ***top-down*** approach. It starts from preparing a HyperPod cluster creation request to run the `CreateCluster` API, and dives deep into the hierarchical structure down to lifecycle scripts. Use the sample lifecycle scripts provided in the [Awsome Distributed Training GitHub repository](https://github.com/aws-samples/awsome-distributed-training/). Clone the repository by running the following command.
 

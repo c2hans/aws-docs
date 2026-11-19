@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubOrchestratorInstanceRolePolicy
-<a name="AWSMigrationHubOrchestratorInstanceRolePolicy"></a>
 
 **Description**: This policy needs to be attached for SAP and MGN migrated instance for our service to orchestrate instances by downloading scripts from S3 and to fetch secret values inside EC2 instance.
 

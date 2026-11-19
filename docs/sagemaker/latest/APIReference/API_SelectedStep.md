@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Select
 ---
 
 # SelectedStep
-<a name="API_SelectedStep"></a>
 
 A step selected to run in selective execution mode.
 

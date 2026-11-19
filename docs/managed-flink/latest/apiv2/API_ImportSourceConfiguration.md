@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ImportSou
 ---
 
 # ImportSourceConfiguration
-<a name="API_ImportSourceConfiguration"></a>
 
 Describes the source of the savepoint data to import.
 

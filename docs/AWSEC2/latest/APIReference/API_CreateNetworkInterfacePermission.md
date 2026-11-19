@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNet
 ---
 
 # CreateNetworkInterfacePermission
-<a name="API_CreateNetworkInterfacePermission"></a>
 
 Grants an AWS-authorized account permission to attach the specified network interface to an instance in their account.
 

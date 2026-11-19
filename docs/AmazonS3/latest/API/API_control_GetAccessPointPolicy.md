@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAcces
 ---
 
 # GetAccessPointPolicy
-<a name="API_control_GetAccessPointPolicy"></a>
 
 Returns the access point policy associated with the specified access point.
 

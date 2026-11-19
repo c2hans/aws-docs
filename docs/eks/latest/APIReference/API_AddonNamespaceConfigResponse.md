@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AddonNamespa
 ---
 
 # AddonNamespaceConfigResponse
-<a name="API_AddonNamespaceConfigResponse"></a>
 
 The namespace configuration response object containing information about the namespace where an addon is installed.
 

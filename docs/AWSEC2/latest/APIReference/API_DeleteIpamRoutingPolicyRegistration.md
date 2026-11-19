@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIpa
 ---
 
 # DeleteIpamRoutingPolicyRegistration
-<a name="API_DeleteIpamRoutingPolicyRegistration"></a>
 
 Deletes a routing policy registration for a specified CIDR prefix.
 

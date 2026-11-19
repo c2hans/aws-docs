@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-r5
 ---
 
 # Amazon Route 53 in AWS GovCloud (US)
-<a name="govcloud-r53"></a>
 
  Route 53 is a highly available and scalable Domain Name System (DNS) web service. In the AWS GovCloud (US), you can use Route 53 public and private DNS and health checking.
 

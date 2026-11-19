@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeleteOpsItem
-<a name="API_DeleteOpsItem"></a>
 
 Delete an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to delete an OpsItem.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/billing-ownershi
 ---
 
 # Monitor billing assignment requests for shared Capacity Reservations
-<a name="billing-ownership-events"></a>
 
 Amazon EC2 sends Amazon EventBridge events when the state of a billing assignment request changes.
 + Events are sent to the Capacity Reservation owner when a request enters the following states: `accepted` \| `rejected` \| `expired` \| `revoked`.

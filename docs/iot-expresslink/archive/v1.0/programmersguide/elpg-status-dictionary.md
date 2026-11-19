@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmers
 ---
 
 # 6 Status dictionary
-<a name="elpg-status-dictionary"></a>
 
 The status dictionary has been removed since revision 0.6 of the ExpressLink Specifications.
 

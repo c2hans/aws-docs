@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/setDifference
 ---
 
 # $setDifference
-<a name="setDifference"></a>
 
 New from version 4.0.
 

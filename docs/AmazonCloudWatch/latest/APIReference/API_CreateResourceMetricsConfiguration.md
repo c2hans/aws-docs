@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # CreateResourceMetricsConfiguration
-<a name="API_CreateResourceMetricsConfiguration"></a>
 
 Creates a resource metrics configuration for an AWS resource. After you create a configuration, Amazon CloudWatch collects detailed metrics for that resource.
 

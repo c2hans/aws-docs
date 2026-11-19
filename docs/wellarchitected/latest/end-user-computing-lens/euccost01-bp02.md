@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCCOST01-BP02 Increase awareness of the EUC cost model in your cloud business office to promote cost optimization
-<a name="euccost01-bp02"></a>
 
  In case your cloud business office lacks the required knowledge in the EUC domain, consider additional training and enablement to close these gaps.
 

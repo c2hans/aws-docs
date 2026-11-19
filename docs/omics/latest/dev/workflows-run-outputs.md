@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-run-outputs.h
 ---
 
 # HealthOmics run outputs
-<a name="workflows-run-outputs"></a>
 
 When a run completes, HealthOmics exports the run outputs to the Amazon S3 output location (`outputUri`) that you specify when you start the run. By default, HealthOmics writes your workflow outputs under prefixes that it adds within the output URI you specify: a prefix named after the run ID, and for WDL and CWL workflows, an `out` prefix. These prefixes keep runs that use the same output URI from overwriting each other. You can choose to write the outputs directly under your output URI, without these prefixes.
 

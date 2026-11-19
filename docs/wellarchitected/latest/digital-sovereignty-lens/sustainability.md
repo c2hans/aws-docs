@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
  The digital sovereignty lens doesn't add new best practices to the sustainability pillar. Best practices already defined under the [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html) provide adequate advice.
 

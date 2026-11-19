@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/troubleshoot-self-d
 ---
 
 # Troubleshoot Self-deployed deployments
-<a name="troubleshoot-self-deployed"></a>
 
 Use the following sections to fix problems in Self-deployed environments that run VMware Cloud Foundation (VCF) 9.x, from environment creation through VCF bringup and NSX Edge configuration. Some symptoms are specific to diskless hosts. For status checks, host operations, and VPC networking, see [Troubleshoot environment status checks](troubleshoot-status-checks.md), [Troubleshoot hosts](troubleshoot-hosts.md), and [Troubleshoot networking](troubleshoot-networking.md).
 

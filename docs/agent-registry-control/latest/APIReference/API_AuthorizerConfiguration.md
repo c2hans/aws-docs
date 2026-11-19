@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AuthorizerConfiguration
-<a name="API_AuthorizerConfiguration"></a>
 
 The authorizer configuration for a registry. Exactly one member is set.
 

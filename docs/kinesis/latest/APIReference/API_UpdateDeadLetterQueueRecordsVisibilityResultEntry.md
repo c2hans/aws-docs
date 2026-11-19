@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateDe
 ---
 
 # UpdateDeadLetterQueueRecordsVisibilityResultEntry
-<a name="API_UpdateDeadLetterQueueRecordsVisibilityResultEntry"></a>
 
 A dead-letter record whose visibility timeout was changed.
 

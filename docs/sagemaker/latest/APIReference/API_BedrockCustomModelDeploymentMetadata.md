@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Bedroc
 ---
 
 # BedrockCustomModelDeploymentMetadata
-<a name="API_BedrockCustomModelDeploymentMetadata"></a>
 
  The metadata of the Amazon Bedrock custom model deployment.
 

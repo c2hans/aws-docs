@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Getting started with upgrade rollout policies
-<a name="orgs_manage_policies_upgrade_getting_started"></a>
 
 Follow these steps to implement upgrade rollout policies in your organization. Each step links to detailed information to help you complete the implementation successfully.
 

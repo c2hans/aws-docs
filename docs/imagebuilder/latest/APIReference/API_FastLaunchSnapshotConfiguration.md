@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Fas
 ---
 
 # FastLaunchSnapshotConfiguration
-<a name="API_FastLaunchSnapshotConfiguration"></a>
 
 Configuration settings for creating and managing pre-provisioned snapshots for a fast-launch enabled Windows AMI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AgentCoreRuntimeProtocolConfiguration
-<a name="API_AgentCoreRuntimeProtocolConfiguration"></a>
 
 The protocol configuration of an AgentCore Runtime resource that a registry record was auto-detected from.
 

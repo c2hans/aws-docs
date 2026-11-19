@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_S3Referen
 ---
 
 # S3ReferenceDataSource
-<a name="API_S3ReferenceDataSource"></a>
 
 For a SQL-based Kinesis Data Analytics application, identifies the Amazon S3 bucket and object that contains the reference data.
 

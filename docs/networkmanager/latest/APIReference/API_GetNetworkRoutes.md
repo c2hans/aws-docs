@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetNetworkRoutes
-<a name="API_GetNetworkRoutes"></a>
 
 Gets the network routes of the specified global network.
 

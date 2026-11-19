@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ProviderFi
 ---
 
 # ProviderFilter
-<a name="API_ProviderFilter"></a>
 
 A filter that matches connectors by cloud provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Plugi
 ---
 
 # PluginVisual
-<a name="API_PluginVisual"></a>
 
 A flexible visualization type that allows engineers to create new custom charts in Quick Sight.
 

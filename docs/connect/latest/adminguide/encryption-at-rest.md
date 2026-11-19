@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/encryption-at-
 ---
 
 # Encryption at rest in Connect Customer
-<a name="encryption-at-rest"></a>
 
 Contact data classified as PII, or data that represents customer content being stored by Connect Customer, is encrypted at rest (that is, before it is put, stored, or saved to a disk) using AWS KMS encryption keys owned by AWS. For information about AWS KMS keys, see [What is AWS Key Management Service?](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) in the *AWS Key Management Service Developer Guide*. Contact data in non-temporary storage is encrypted such that data encryption keys generated from the KMS keys are not shared across Amazon Connect instances.
 

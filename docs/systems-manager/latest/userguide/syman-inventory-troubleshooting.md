@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/syman-i
 ---
 
 # Troubleshooting problems with Systems Manager Inventory
-<a name="syman-inventory-troubleshooting"></a>
 
 This topic includes information about how to troubleshoot common errors or problems with AWS Systems Manager Inventory. If you're having trouble viewing your nodes in Systems Manager, see [Troubleshooting managed node availability](fleet-manager-troubleshooting-managed-nodes.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # ListTasks
-<a name="API_devicemanagement_ListTasks"></a>
 
 Returns a list of tasks that can be filtered by state.
 

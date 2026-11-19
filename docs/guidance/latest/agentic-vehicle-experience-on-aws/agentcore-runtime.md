@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Amazon Bedrock AgentCore runtime
-<a name="agentcore-runtime"></a>
 
 Amazon Bedrock AgentCore is the managed container runtime that hosts the AVX supervisor agent. It handles container lifecycle, WebSocket connection management, SigV4 authentication, and session multiplexing, freeing the agent code to focus on orchestration.
 

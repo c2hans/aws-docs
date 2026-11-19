@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormItemEnablementSourceValue
-<a name="API_EvaluationFormItemEnablementSourceValue"></a>
 
 An enablement expression source value.
 

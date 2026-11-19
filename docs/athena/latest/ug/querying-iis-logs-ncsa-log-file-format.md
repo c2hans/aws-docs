@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iis-logs-ncsa-
 ---
 
 # Query NCSA log file format
-<a name="querying-iis-logs-ncsa-log-file-format"></a>
 
 IIS also uses the [NCSA logging](https://docs.microsoft.com/en-us/windows/win32/http/ncsa-logging) format, which has a fixed number of fields in ASCII text format separated by spaces. The structure is similar to the common log format used for Apache access logs. Fields in the NCSA common log data format include the client IP address, client ID (not typically used), domain\\user ID, request received timestamp, text of the client request, server status code, and size of the object returned to the client.
 

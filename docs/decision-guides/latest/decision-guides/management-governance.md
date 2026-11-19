@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 ---
 
 # Management & Governance
-<a name="management-governance"></a>
 
 The following decision guides help you choose AWS services for monitoring, governance, and cost management.
 

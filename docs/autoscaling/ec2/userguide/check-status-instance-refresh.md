@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/check-status-i
 ---
 
 # Monitor an instance refresh using the AWS Management Console or AWS CLI
-<a name="check-status-instance-refresh"></a>
 
 You can monitor an in progress instance refresh or look up the status of past instance refreshes from the last six weeks using the AWS Management Console or AWS CLI.
 

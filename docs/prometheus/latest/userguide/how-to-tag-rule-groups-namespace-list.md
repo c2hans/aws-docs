@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/how-to-tag-r
 ---
 
 # View tags for a rule groups namespace
-<a name="how-to-tag-rule-groups-namespace-list"></a>
 
 Tags can help you identify and organize your AWS resources and manage access to them. For more information about tagging strategies, see [Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Consumer
 ---
 
 # ConsumerDescription
-<a name="API_ConsumerDescription"></a>
 
 An object that represents the details of a registered consumer. This type of object is returned by [DescribeStreamConsumer](API_DescribeStreamConsumer.md).
 

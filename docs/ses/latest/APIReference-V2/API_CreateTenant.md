@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateTen
 ---
 
 # CreateTenant
-<a name="API_CreateTenant"></a>
 
 Create a tenant.
 

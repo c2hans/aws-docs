@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # SMUS Research Environment Starter Package
-<a name="smus-research-environment-starter-package"></a>
 
 The SMUS Research Environment Starter Package deploys a SageMaker Unified Studio (SMUS) environment for organizations with multiple research teams operating within a single AWS account. It provides a governed ML platform where teams collaborate on data and ML projects through the SMUS portal, with centralized identity management via IAM Identity Center.
 

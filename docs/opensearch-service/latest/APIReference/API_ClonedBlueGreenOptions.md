@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ClonedBlueGreenOptions
-<a name="API_ClonedBlueGreenOptions"></a>
 
 Options for a cloned blue/green upgrade.
 

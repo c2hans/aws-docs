@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/deadline
 ---
 
 # Deadline Cloud jobs
-<a name="deadline-cloud-jobs"></a>
 
 A *job* is a set of instructions that AWS Deadline Cloud uses to schedule and run work on available workers. When you create a job, you choose the farm and queue to send the job to.
 

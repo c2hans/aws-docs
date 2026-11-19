@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Observability
-<a name="browser-observability"></a>
 
 The Amazon Bedrock AgentCore Browser provides built-in observability features including live view, session recording, session replay, and CloudWatch metrics.
 

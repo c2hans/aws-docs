@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec01-b
 ---
 
 # SEC01-BP01 Separate workloads using accounts
-<a name="sec01-bp01"></a>
 
  An account is the strongest isolation boundary available to you. When you group unrelated workloads in a single account, a mistake or unauthorized access in one workload can reach the others. Separating workloads by environment and business criticality limits how far that reach extends, clarifies ownership, and makes cost and access boundaries explicit.
 

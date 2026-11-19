@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListQueues
-<a name="API_ListQueues"></a>
 
 Lists queues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/gs-cli-subs
 ---
 
 # Starting AWS Config with a customer managed configuration recorder using the AWS CLI
-<a name="gs-cli-subscribe"></a>
 
 You can start AWS Config by creating a customer managed configuration recorder. To create a customer managed configuration recorder with the AWS CLI, use the following commands: [`put-configuration-recorder`](https://docs.aws.amazon.com/cli/latest/reference/configservice/put-configuration-recorder.html), [`put-delivery-channel`](https://docs.aws.amazon.com/cli/latest/reference/configservice/put-delivery-channel.html), and [`start-configuration-recorder`](https://docs.aws.amazon.com/cli/latest/reference/configservice/start-configuration-recorder.html).
 + The `put-configuration-recorder` command creates a customer managed configuration recorder.

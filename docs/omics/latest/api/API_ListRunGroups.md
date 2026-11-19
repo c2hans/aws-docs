@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListRunGroups.html
 ---
 
 # ListRunGroups
-<a name="API_ListRunGroups"></a>
 
 Retrieves a list of all run groups and returns the metadata for each run group.
 

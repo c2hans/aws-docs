@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Copy
 ---
 
 # CopyProjectVersion
-<a name="API_CopyProjectVersion"></a>
 
 **Note**
 This operation applies only to Amazon Rekognition Custom Labels.

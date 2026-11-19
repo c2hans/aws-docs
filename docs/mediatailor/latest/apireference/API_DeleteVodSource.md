@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Dele
 ---
 
 # DeleteVodSource
-<a name="API_DeleteVodSource"></a>
 
 The video on demand (VOD) source to delete.
 

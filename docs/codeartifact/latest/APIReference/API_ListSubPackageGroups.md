@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Lis
 ---
 
 # ListSubPackageGroups
-<a name="API_ListSubPackageGroups"></a>
 
 Returns a list of direct children of the specified package group.
 

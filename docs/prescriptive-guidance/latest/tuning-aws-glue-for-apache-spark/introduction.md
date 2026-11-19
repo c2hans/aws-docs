@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-
 ---
 
 # Best practices for performance tuning AWS Glue for Apache Spark jobs
-<a name="introduction"></a>
 
 *Roman Myers, Takashi Onikura, and Noritaka Sekiyama, Amazon Web Services*
 

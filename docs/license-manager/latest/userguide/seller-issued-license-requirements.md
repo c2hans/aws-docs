@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/seller-
 ---
 
 # Permissions required to track seller issued license usage in License Manager
-<a name="seller-issued-license-requirements"></a>
 
 To get started with this feature, you need permission to call the following License Manager API actions.
 

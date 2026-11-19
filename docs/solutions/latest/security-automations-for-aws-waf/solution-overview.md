@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Automatically deploy a single web access control list that filters web-based attacks with Security Automations on AWS WAF
-<a name="solution-overview"></a>
 
 **Important**
  [Security Automations for AWS WAF](https://docs.aws.amazon.com/solutions/security-automations-for-aws-waf/) will retire in December 2026. Deployments (via CloudFormation or GitHub) will remain operational, but customers will assume responsibility for maintenance and API-related updates post-retirement. Customers can explore using native AWS WAF capabilities including [AWS Managed Rules](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups.html), native rate-based rules, and the [AWS WAF Console](https://console.aws.amazon.com/wafv2/) for intuitive configuration and management. These native capabilities provide superior functionality, better performance, real-time updates, and enhanced security features compared to the solution.

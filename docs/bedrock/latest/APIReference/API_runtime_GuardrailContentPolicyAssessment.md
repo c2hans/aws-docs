@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailContentPolicyAssessment
-<a name="API_runtime_GuardrailContentPolicyAssessment"></a>
 
 An assessment of a content policy for a guardrail.
 

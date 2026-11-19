@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # AWS Service Management Connectors
-<a name="aws-service-management-connectors"></a>
 
  The M&G Guide recommends using AWS-supplied service management connectors that enable you to access AWS services and features in familiar ITSM tooling, such as ServiceNow and Atlassian. By using your existing service management tools to provide governance, your organization can accelerate its migration and adoption of AWS at scale.
 

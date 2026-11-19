@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Gro
 ---
 
 # GroupIdentity
-<a name="API_GroupIdentity"></a>
 
 Contains information for a group identity in an access policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Re
 ---
 
 # ResourcePolicySummary
-<a name="API_ResourcePolicySummary"></a>
 
 Summary of a policy attached to a resource: its name and revision ID.
 

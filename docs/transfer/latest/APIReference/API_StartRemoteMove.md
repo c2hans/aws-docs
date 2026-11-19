@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartRe
 ---
 
 # StartRemoteMove
-<a name="API_StartRemoteMove"></a>
 
 Moves or renames a file or directory on the remote SFTP server.
 

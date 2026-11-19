@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkSecurityManager::Template
-<a name="aws-resource-networksecuritymanager-template"></a>
 
 The `AWS::NetworkSecurityManager::Template` resource specifies an AWS Network Security Manager template. A template groups one or more rules so that you can reuse the same set of protections across policies. You can also associate rules with a policy directly, without using a template.
 

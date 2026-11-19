@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/usb-redirect
 ---
 
 # USB redirection for DCV WorkSpaces
-<a name="usb-redirection-dcv"></a>
 
 Starting with WorkSpaces Windows client version 5.30.0, Amazon WorkSpaces supports generic USB redirection for the WorkSpaces app on Windows. This allows you to access local USB devices within your virtual desktop environment. This feature complements existing optimized redirection solutions for specific device classes such as printers and WebAuthn.
 

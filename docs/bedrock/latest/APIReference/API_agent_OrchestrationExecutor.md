@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Or
 ---
 
 # OrchestrationExecutor
-<a name="API_agent_OrchestrationExecutor"></a>
 
  Contains details about the Lambda function containing the orchestration logic carried out upon invoking the custom orchestration.
 

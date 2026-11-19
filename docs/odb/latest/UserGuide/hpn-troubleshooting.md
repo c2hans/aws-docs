@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/hpn-troubleshooting
 ---
 
 # Troubleshooting
-<a name="hpn-troubleshooting"></a>
 
 ## Handling Insufficient Capacity Errors (ICE)
 <a name="handling-ice-errors"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteCustomDetectionRuleAssociation
-<a name="API_DeleteCustomDetectionRuleAssociation"></a>
 
 Disables a custom detection rule by deleting its association. This operation is idempotent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/g
 ---
 
 # Getting started with AWS Network Firewall
-<a name="getting-started"></a>
 
 AWS Network Firewall provides network traffic filtering protection for your Amazon Virtual Private Cloud VPCs. This chapter provides tutorials for getting started with Network Firewall using the AWS Management Console. You can also use Network Firewall API operations to create and manage your firewalls. For more information about working with Network Firewall API operations, see the [AWS Network Firewall API Reference](https://docs.aws.amazon.com/network-firewall/latest/APIReference/).
 

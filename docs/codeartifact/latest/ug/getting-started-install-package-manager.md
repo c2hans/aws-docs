@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/getting-started-i
 ---
 
 # Install your package manager or build tool
-<a name="getting-started-install-package-manager"></a>
 
 To publish or consume packages from CodeArtifact, you must use a package manager. There are different package managers for each package type. The following list contains some package managers that you can use with CodeArtifact. If you haven't already, install the package managers for the package type you want to use.
 + For npm, use the [npm CLI](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [pnpm](https://pnpm.io/installation).

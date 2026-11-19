@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Interval
-<a name="API_billing_Interval"></a>
 
 A time period bounded by an inclusive start date and an inclusive end date.
 

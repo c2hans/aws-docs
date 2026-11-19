@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Overrid
 ---
 
 # OverrideProjectOwnersPolicyGrantDetail
-<a name="API_OverrideProjectOwnersPolicyGrantDetail"></a>
 
 The details of the override project owners policy grant.
 

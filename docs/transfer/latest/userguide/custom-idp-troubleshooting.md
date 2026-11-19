@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/custom-idp-tro
 ---
 
 # Troubleshoot custom identity provider issues
-<a name="custom-idp-troubleshooting"></a>
 
 This section describes possible solutions for issues related to custom identity providers with Transfer Family.
 

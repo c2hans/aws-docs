@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Applications that share programs
-<a name="applications-that-share-programs"></a>
 
 The following diagram illustrates mainframe applications A and B that run a shared program called program AB.1. This case is also applicable when applications A and B include programs that call shared subprograms.
 

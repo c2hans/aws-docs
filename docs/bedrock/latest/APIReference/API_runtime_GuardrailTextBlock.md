@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailTextBlock
-<a name="API_runtime_GuardrailTextBlock"></a>
 
 The text block to be evaluated by the guardrail.
 

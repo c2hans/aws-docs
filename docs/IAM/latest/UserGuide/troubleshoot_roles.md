@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_roles.
 ---
 
 # Troubleshoot IAM roles
-<a name="troubleshoot_roles"></a>
 
 Use the information here to help you diagnose and fix common issues that you might encounter when working with IAM roles.
 

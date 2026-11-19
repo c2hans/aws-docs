@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InvokeAgentRuntimeCommandStreamOutput
-<a name="API_InvokeAgentRuntimeCommandStreamOutput"></a>
 
 The streaming output union for the `InvokeAgentRuntimeCommand` operation. This union delivers typed events: `contentStart` (first), `contentDelta` (middle), and `contentStop` (last).
 

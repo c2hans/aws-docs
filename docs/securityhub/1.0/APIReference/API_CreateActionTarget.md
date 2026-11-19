@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateA
 ---
 
 # CreateActionTarget
-<a name="API_CreateActionTarget"></a>
 
 Creates a custom action target in Security Hub CSPM.
 

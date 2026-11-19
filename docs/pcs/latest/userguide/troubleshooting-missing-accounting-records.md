@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/troubleshooting-mis
 ---
 
 # Troubleshooting missing job records in Slurm accounting
-<a name="troubleshooting-missing-accounting-records"></a>
 
 Jobs that ran to completion are missing from Slurm accounting reports, such as the output of the `sacct` or `sreport` commands. Records are absent only for a limited time window, typically one that follows a period of very high job submission rate. Accounting reports are complete before and after that window. This topic applies to clusters that have Slurm accounting enabled. For more information about accounting, see [Slurm accounting in AWS PCS](slurm-accounting.md).
 

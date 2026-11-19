@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/ethernet-ip
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # IoT Ethernet IP Protocol Adapter connector
-<a name="ethernet-ip-connector"></a>
 
 The IoT Ethernet IP Protocol Adapter [connector](connectors.md) collects data from local devices using the Ethernet/IP protocol. You can use this connector to collect data from multiple devices and publish it to a `StreamManager` message stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PaymentInput
-<a name="API_PaymentInput"></a>
 
 The payment input details, which vary by payment type.
 

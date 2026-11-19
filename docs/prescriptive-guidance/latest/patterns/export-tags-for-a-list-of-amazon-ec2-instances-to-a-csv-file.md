@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ex
 ---
 
 # Export tags for a list of Amazon EC2 instances to a CSV file
-<a name="export-tags-for-a-list-of-amazon-ec2-instances-to-a-csv-file"></a>
 
 *Sida Ju and Pac Joonhyun, Amazon Web Services*
 

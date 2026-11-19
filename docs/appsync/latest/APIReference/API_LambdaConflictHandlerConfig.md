@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_LambdaCo
 ---
 
 # LambdaConflictHandlerConfig
-<a name="API_LambdaConflictHandlerConfig"></a>
 
 The `LambdaConflictHandlerConfig` object when configuring `LAMBDA` as the Conflict Handler.
 

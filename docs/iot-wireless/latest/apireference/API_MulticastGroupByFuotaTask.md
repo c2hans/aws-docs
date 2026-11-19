@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Mul
 ---
 
 # MulticastGroupByFuotaTask
-<a name="API_MulticastGroupByFuotaTask"></a>
 
 A multicast group that is associated with a FUOTA task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Redactio
 ---
 
 # RedactionConfiguration
-<a name="API_RedactionConfiguration"></a>
 
 The redaction configuration for conversational analytics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/deterministic-upgrades.h
 ---
 
 # Deterministic upgrades through versioned repositories on AL2023
-<a name="deterministic-upgrades"></a>
 
 **Note**
 By default, your AL2023 instance doesn't automatically receive additional critical and important security updates at launch. Your instance initially contains the updates that were available in the version of AL2023 and the chosen AMI.

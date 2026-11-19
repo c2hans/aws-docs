@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/eml-metrics-input-me
 ---
 
 # Input metrics
-<a name="eml-metrics-input-metrics"></a>
 
 Input metrics relate to the video and audio input assets that are presented to MediaLive.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/publish-capaci
 ---
 
 # Publish a capacity plan in Connect Customer
-<a name="publish-capacity-plan"></a>
 
 When you are satisfied with the capacity plan outputs, choose **Publish plan** to finalize your plan.
 

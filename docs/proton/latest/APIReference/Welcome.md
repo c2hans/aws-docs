@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/APIReference/Welcome.html
 AWS has decided to discontinue AWS Proton, with support ending on October 7, 2026. New customers will not be able to sign up after October 7, 2025, but existing customers can continue to use the service until October 7, 2026.For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the AWS Proton Service API Reference. It provides descriptions, syntax and usage examples for each of the [actions](https://docs.aws.amazon.com/proton/latest/APIReference/API_Operations.html) and [data types](https://docs.aws.amazon.com/proton/latest/APIReference/API_Types.html) for the AWS Proton service.
 
@@ -93,4 +92,4 @@ Asynchronous idempotent delete APIs:
 + DeleteEnvironment
 + DeleteService
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

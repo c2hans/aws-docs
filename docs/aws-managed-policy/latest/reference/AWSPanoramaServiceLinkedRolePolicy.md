@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPanoramaServiceLinkedRolePolicy
-<a name="AWSPanoramaServiceLinkedRolePolicy"></a>
 
 **Description**: Allows AWS Panorama to manage resources in AWS IoT, AWS Secrets Manager and AWS Panorama.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/configuration-alia
 ---
 
 # MediaTailor configuration aliases troubleshooting guide
-<a name="configuration-aliases-troubleshooting"></a>
 
 AWS Elemental MediaTailor provides systematic troubleshooting guidance for common configuration aliases issues and error scenarios.
 

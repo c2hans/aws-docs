@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Sentimen
 ---
 
 # SentimentConfiguration
-<a name="API_SentimentConfiguration"></a>
 
 The sentiment configuration for conversational analytics.
 

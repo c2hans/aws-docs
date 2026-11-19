@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_EncryptionAlgorith
 ---
 
 # EncryptionAlgorithmOptions
-<a name="API_EncryptionAlgorithmOptions"></a>
 
 The encryption algorithm options that are available to a code-signing job.
 

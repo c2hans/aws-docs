@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/specifying
 ---
 
 # Using IAM policy conditions for fine-grained access control
-<a name="specifying-conditions-route53"></a>
 
 In Route 53, you can specify conditions when granting permissions using an IAM policy (see [Access control](security-iam.md#access-control)). For example, you can:
 + Grant permissions to allow access to a single resource record set.

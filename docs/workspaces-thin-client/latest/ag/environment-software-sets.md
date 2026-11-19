@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/environ
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/workspacesthinclient-end-of-support.html).
 
 # WorkSpaces Thin Client software releases
-<a name="environment-software-sets"></a>
 
 WorkSpaces Thin Client is an AWS End User Computing service that provides users access to virtual desktops on a device. These devices are periodically updated with new software sets. The following table describes all the released software sets. Administrators can use the [AWS management console](https://aws.amazon.com) to view available software sets.
 

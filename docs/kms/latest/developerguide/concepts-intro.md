@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/concepts-intro
 ---
 
 # AWS KMS concepts
-<a name="concepts-intro"></a>
 
 Learn the basic terms and concepts used in AWS Key Management Service (AWS KMS) and how they work together to help protect your data.
 

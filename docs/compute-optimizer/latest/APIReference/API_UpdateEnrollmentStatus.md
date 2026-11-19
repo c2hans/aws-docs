@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # UpdateEnrollmentStatus
-<a name="API_UpdateEnrollmentStatus"></a>
 
 Updates the enrollment (opt in and opt out) status of an account to the AWS Compute Optimizer service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-i
 ---
 
 # Performance improvement tips
-<a name="performance-improvement-tips"></a>
 
 This section provides five performance optimization strategies for Amazon DocumentDB to improve application efficiency and query execution.
 

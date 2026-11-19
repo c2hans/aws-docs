@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_User.html
 ---
 
 # User
-<a name="API_User"></a>
 
 Contains information about an IAM user entity.
 

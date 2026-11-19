@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_SearchJob
 ---
 
 # SearchJobsFilter
-<a name="API_SearchJobsFilter"></a>
 
 A filter used to search for Amazon Braket hybrid jobs. You can combine multiple filters in a single request, except that `jobArn` cannot be combined with any other filter.
 

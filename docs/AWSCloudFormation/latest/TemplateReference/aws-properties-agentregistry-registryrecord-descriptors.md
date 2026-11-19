@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::RegistryRecord Descriptors
-<a name="aws-properties-agentregistry-registryrecord-descriptors"></a>
 
 This property type contains the typed set of descriptors for a registry record. A descriptor holds the content that describes the discoverable resource, such as a server definition or an agent card.
 

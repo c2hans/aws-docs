@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/blur-background.html
 ---
 
 # Blurring your video background
-<a name="blur-background"></a>
 
 If you want to reduce visual distractions in your video tile during a meeting, you can turn on background blur. You can turn this feature on or off before you join a meeting, as well as adjust the strength of the blurring effect. To turn this setting on or off, or adjust the blur strength during the meeting, you use the **Video** menu.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ex
 ---
 
 # Execute Amazon Redshift SQL queries by using Terraform
-<a name="execute-redshift-sql-queries-using-terraform"></a>
 
 *Sylvia Qi and Aditya Ambati, Amazon Web Services*
 

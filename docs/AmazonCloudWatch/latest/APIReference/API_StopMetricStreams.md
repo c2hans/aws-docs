@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # StopMetricStreams
-<a name="API_StopMetricStreams"></a>
 
 Stops the streaming of metrics for one or more of your metric streams.
 

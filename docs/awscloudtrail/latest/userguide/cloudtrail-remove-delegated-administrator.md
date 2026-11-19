@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Remove a CloudTrail delegated administrator
-<a name="cloudtrail-remove-delegated-administrator"></a>
 
 You can remove a CloudTrail delegated administrator using the CloudTrail console or the AWS CLI.
 

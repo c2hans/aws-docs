@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Setting up systems management
-<a name="iam_example_iam_GettingStarted_046_section"></a>
 
 The following code example shows how to:
 + Create IAM permissions for Systems Manager

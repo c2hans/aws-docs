@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-ex
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Example Policies for AWS Data Pipeline
-<a name="dp-example-tag-policies"></a>
 
 The following examples demonstrate how to grant users full or restricted access to pipelines.
 

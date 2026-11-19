@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cassandra::Type Field
-<a name="aws-properties-cassandra-type-field"></a>
 
 The name and data type of an individual field in a user-defined type (UDT). In addition to a Cassandra data type, you can also use another UDT. When you nest another UDT or collection data type, you have to declare them with the `FROZEN` keyword.
 

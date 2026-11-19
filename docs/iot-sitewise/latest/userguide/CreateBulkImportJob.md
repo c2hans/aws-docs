@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/CreateBulk
 ---
 
 # Create an AWS IoT SiteWise bulk import job (AWS CLI)
-<a name="CreateBulkImportJob"></a>
 
 Use the [CreateBulkImportJob](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateBulkImportJob.html) API operation to transfer data from Amazon S3 to AWS IoT SiteWise. The [CreateBulkImportJob](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateBulkImportJob.html) API enables ingestion of large volumes of historical data, and buffered ingestion of analytical data streams in small batches. It provides a cost-effective primitive for data ingestion. The following example uses the AWS CLI.
 

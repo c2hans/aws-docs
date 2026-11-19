@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/output-file-names
 ---
 
 # Output file names and paths
-<a name="output-file-names-and-paths"></a>
 
 The EventBridge job `COMPLETE` notification includes details about your output in JSON. This information includes the file names and paths for the outputs of the job—including manifests and media assets.
 

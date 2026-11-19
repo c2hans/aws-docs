@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListAccou
 ---
 
 # ListAccountAssociations
-<a name="API_ListAccountAssociations"></a>
 
 Lists all account associations, with optional filtering by connector destination ID.
 

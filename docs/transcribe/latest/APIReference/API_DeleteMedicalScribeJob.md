@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Delet
 ---
 
 # DeleteMedicalScribeJob
-<a name="API_DeleteMedicalScribeJob"></a>
 
 Deletes a Medical Scribe job. To use this operation, specify the name of the job you want to delete using `MedicalScribeJobName`. Job names are case sensitive.
 

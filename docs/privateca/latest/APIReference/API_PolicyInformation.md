@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_Policy
 ---
 
 # PolicyInformation
-<a name="API_PolicyInformation"></a>
 
 Defines the X.509 `CertificatePolicies` extension.
 

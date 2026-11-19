@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Foundational best practices
-<a name="foundational-best-practices"></a>
 
 The general best practices that help protect other AWS API requests also apply to presigned requests. This section reviews two of the most relevant practices: least privilege and data perimeters. These practices provide layered controls that other practices build on.
 

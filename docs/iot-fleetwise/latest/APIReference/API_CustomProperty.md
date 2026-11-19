@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Cu
 ---
 
 # CustomProperty
-<a name="API_CustomProperty"></a>
 
 Represents a member of the complex data structure. The data type of the property can be either primitive or another `struct`.
 

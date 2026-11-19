@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetPolicyVer
 ---
 
 # GetPolicyVersion
-<a name="API_GetPolicyVersion"></a>
 
 Gets information about the specified policy version.
 

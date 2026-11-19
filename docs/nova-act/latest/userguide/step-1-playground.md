@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/step-1-playgro
 ---
 
 # Step 1: Explore Nova Act in the playground
-<a name="step-1-playground"></a>
 
 The Nova Act playground allows you to explore the capabilities of Nova Act in a hosted web environment, no setup and no AWS account required.
 

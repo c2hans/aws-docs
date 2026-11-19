@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetE
 ---
 
 # GetEncoderConfiguration
-<a name="API_GetEncoderConfiguration"></a>
 
 Gets information about the specified EncoderConfiguration resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/ph-table-dutch.html
 ---
 
 # Dutch (nl-NL)
-<a name="ph-table-dutch"></a>
 
 The following table lists the International Phonetic Alphabet (IPA) phonemes, the Extended Speech Assessment Methods Phonetic Alphabet (X-SAMPA) symbols, and the corresponding visemes for the Dutch voices that are supported by Amazon Polly.
 

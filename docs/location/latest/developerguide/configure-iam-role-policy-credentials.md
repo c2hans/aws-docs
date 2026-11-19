@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/configure
 ---
 
 # Configure IAM permissions
-<a name="configure-iam-role-policy-credentials"></a>
 
 Amazon Location Jobs requires an IAM execution role that grants the service permission to access your Amazon S3 buckets. When you run a job, Amazon Location assumes this role to read input files from your input bucket and write output results to your output bucket on your behalf. You provide these permissions by creating an IAM policy with the required Amazon S3 permissions and attaching it to an IAM role with a trust policy that allows the Amazon Location service to assume the role.
 

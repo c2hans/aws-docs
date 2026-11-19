@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_CidrAu
 ---
 
 # CidrAuthorizationContext
-<a name="API_CidrAuthorizationContext"></a>
 
 Provides authorization for Amazon to bring a specific IP address range to a specific AWS account using bring your own IP addresses (BYOIP).
 

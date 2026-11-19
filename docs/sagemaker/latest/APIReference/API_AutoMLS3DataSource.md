@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLS3DataSource
-<a name="API_AutoMLS3DataSource"></a>
 
 Describes the Amazon S3 data source.
 

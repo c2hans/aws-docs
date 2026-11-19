@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 ---
 
 # Work with key value data
-<a name="kvs-with-functions-kvp"></a>
 
 This topic describes how to add key-value pairs to an existing key value store. To include key-value pairs when you initially create the key value stores, see [Create a key value store](kvs-with-functions-create.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_VirtualMFADe
 ---
 
 # VirtualMFADevice
-<a name="API_VirtualMFADevice"></a>
 
 Contains information about a virtual MFA device.
 

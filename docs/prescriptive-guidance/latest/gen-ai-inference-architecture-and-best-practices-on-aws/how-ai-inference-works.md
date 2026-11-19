@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # How AI Inference works
-<a name="how-ai-inference-works"></a>
 
 AI inference is the process of using a trained model to generate predictions or outputs from new input data. Inputs can be text, images, audio, video, or structured data — and outputs span generated text, images, audio, embeddings, classifications, or any combination of these. A single inference request can involve **multiple stages or even multiple models** working together to produce the final output. For example, a voice assistant may chain an automatic speech recognition (ASR) model, a large language model, and a text-to-speech (TTS) model in sequence. A [retrieval-augmented generation (RAG)](https://aws.amazon.com/what-is/retrieval-augmented-generation/) pipeline combines an [embedding model](https://aws.amazon.com/what-is/embeddings-in-machine-learning/), a [re-ranker](https://docs.aws.amazon.com/bedrock/latest/userguide/rerank.html), and an LLM. An image generation workflow may pass through a text encoder, a diffusion model, and a super-resolution model.
 

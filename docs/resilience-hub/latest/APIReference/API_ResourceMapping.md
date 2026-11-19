@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # ResourceMapping
-<a name="API_ResourceMapping"></a>
 
 Defines a resource mapping.
 

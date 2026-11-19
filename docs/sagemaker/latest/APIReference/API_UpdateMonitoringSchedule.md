@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateMonitoringSchedule
-<a name="API_UpdateMonitoringSchedule"></a>
 
 Updates a previously created schedule.
 

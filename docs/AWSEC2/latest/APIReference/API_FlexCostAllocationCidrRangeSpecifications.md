@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FlexCostA
 ---
 
 # FlexCostAllocationCidrRangeSpecifications
-<a name="API_FlexCostAllocationCidrRangeSpecifications"></a>
 
 Specifies the CIDR ranges and labels to use for cost allocation when the reporting granularity is `cidr`.
 

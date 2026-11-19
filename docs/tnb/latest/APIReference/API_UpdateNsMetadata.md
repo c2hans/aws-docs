@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_UpdateNsMeta
 ---
 
 # UpdateNsMetadata
-<a name="API_UpdateNsMetadata"></a>
 
 Metadata related to the configuration properties used during update of a network instance.
 

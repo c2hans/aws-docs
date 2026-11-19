@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-rest-api-faq.
 ---
 
 # Slurm REST API frequently asked questions in AWS PCS
-<a name="slurm-rest-api-faq"></a>
 
 This section answers frequently asked questions about the Slurm REST API in AWS PCS.
 

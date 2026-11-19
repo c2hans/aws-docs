@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Dependency validation
-<a name="next-gen-resilience-testing-dependency-validation"></a>
 
 The **Dependency validation** test blocks dependencies within the Region to see how your service behaves when they are unavailable. It can help you validate that your service remains healthy when soft dependencies are impaired, and surface dependencies you may not have known were hard. You can also include known hard dependencies to understand their impact.
 

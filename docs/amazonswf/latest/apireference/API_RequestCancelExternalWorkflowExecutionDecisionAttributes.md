@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Reques
 ---
 
 # RequestCancelExternalWorkflowExecutionDecisionAttributes
-<a name="API_RequestCancelExternalWorkflowExecutionDecisionAttributes"></a>
 
 Provides the details of the `RequestCancelExternalWorkflowExecution` decision.
 

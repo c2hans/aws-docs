@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/findings-sampl
 ---
 
 # Finding Samples
-<a name="findings-sample"></a>
 
 The Finding Samples resource provides a set of findings that use example data and placeholder values to help you understand and analyze the types of findings that Amazon Macie can generate. A *finding* is a detailed report of a potential issue with the security or privacy of an Amazon Simple Storage Service (Amazon S3) general purpose bucket or sensitive data in an S3 object. For information about the types of findings that Macie can generate, see [Types of findings](https://docs.aws.amazon.com/macie/latest/user/findings-types.html) in the *Amazon Macie User Guide*.
 

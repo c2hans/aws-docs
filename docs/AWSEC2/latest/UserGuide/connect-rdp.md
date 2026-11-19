@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-rdp.html
 ---
 
 # Connect to your Windows instance using an RDP client
-<a name="connect-rdp"></a>
 
 You can connect to your Windows instance using an RDP client as follows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Cr
 ---
 
 # CreateGovCloudAccount
-<a name="API_CreateGovCloudAccount"></a>
 
 This action is available if all of the following are true:
 + You're authorized to create accounts in the AWS GovCloud (US) Region. For more information on the AWS GovCloud (US) Region, see the [* AWS GovCloud User Guide*.](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/welcome.html)
@@ -149,7 +148,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [CreateAccountStatus](#API_CreateGovCloudAccount_ResponseSyntax) **   <a name="organizations-CreateGovCloudAccount-response-CreateAccountStatus"></a>
-Contains the status about a [CreateAccount](API_CreateAccount.md) or [CreateGovCloudAccount](#API_CreateGovCloudAccount) request to create an AWS account or an AWS GovCloud (US) account in an organization.
+Contains the status about a [CreateAccount](API_CreateAccount.md) or [CreateGovCloudAccount](API_CreateGovCloudAccount.md) request to create an AWS account or an AWS GovCloud (US) account in an organization.
 Type: [CreateAccountStatus](API_CreateAccountStatus.md) object
 
 ## Errors

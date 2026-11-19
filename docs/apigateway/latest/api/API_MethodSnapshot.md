@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_MethodSnapshot
 ---
 
 # MethodSnapshot
-<a name="API_MethodSnapshot"></a>
 
 Represents a summary of a Method resource, given a particular date and time.
 

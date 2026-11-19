@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_las
 ---
 
 # Example scenarios for using last accessed information
-<a name="access_policies_last-accessed-example-scenarios"></a>
 
 You can use last accessed information to make decisions about the permissions that you grant to your IAM entities or AWS Organizations entities. For more information, see [Refine permissions in AWS using last accessed information](access_policies_last-accessed.md).
 

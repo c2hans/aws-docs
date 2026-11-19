@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/product
 ---
 
 # Deleting products
-<a name="productmgmt-delete"></a>
 
 When you delete a product, AWS Service Catalog removes all product versions from every portfolio containing the product.
 

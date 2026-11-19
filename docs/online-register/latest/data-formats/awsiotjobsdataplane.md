@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 ---
 
 # Data retrieval APIs for AWS IoT Jobs DataPlane
-<a name="awsiotjobsdataplane"></a>
 
 AWS IoT Jobs DataPlane provides the following APIs for data retrieval.
 

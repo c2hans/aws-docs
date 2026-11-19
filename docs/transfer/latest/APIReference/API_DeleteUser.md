@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteU
 ---
 
 # DeleteUser
-<a name="API_DeleteUser"></a>
 
 Deletes the user belonging to a file transfer protocol-enabled server you specify.
 

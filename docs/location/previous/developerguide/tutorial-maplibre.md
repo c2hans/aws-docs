@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tutoria
 ---
 
 # Using the MapLibre library with Amazon Location Service
-<a name="tutorial-maplibre"></a>
 
 The following tutorials walk you through using the MapLibre Library with Amazon Location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_U
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes the tag from the specified resource.
 

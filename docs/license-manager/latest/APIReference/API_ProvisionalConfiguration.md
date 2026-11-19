@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ProvisionalConfiguration
-<a name="API_ProvisionalConfiguration"></a>
 
 Details about a provisional configuration.
 

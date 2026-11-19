@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialMapAggregatedFieldWells
-<a name="API_GeospatialMapAggregatedFieldWells"></a>
 
 The aggregated field wells for a geospatial map.
 

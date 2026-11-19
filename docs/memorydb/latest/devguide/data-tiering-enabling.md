@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/data-tiering-en
 ---
 
 # Using data tiering
-<a name="data-tiering-enabling"></a>
 
 ## Using data tiering using the AWS Management Console
 <a name="data-tiering-enabling-console"></a>

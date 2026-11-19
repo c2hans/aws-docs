@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ListDataAutomationProjects
-<a name="API_data-automation_ListDataAutomationProjects"></a>
 
 Gets a list of data automation projects in your account, or public projects provided by the service.
 

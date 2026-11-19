@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/spaces-dev
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Viewing Dev Environments for your space
-<a name="spaces-devenv-view"></a>
 
 You can view the type, status, and details for all Dev Environments in your space. For more information about creating and running Dev Environments, see [Creating a Dev Environment](devenvironment-create.md).
 

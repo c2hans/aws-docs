@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # SGAI operations
-<a name="advops05"></a>
 
  Server-Guided Ad Insertion (SGAI) has two patterns with materially different operational characteristics: hybrid and personalized.
 

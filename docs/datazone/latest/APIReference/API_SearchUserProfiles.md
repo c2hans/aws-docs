@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SearchU
 ---
 
 # SearchUserProfiles
-<a name="API_SearchUserProfiles"></a>
 
 Searches user profiles in Amazon DataZone.
 

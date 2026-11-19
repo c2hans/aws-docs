@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-ebs-optim
 ---
 
 # Enable EBS optimization for an Amazon EC2 instance
-<a name="modify-ebs-optimized-attribute"></a>
 
 You can manually enable EBS optimization only for previous generation instances types that optionally support EBS optimization. If you enable EBS optimization for these instance types, there is an [additional hourly fee](https://aws.amazon.com/ec2/previous-generation/#EBS-optimized_instances)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/encryption
 ---
 
 # Data encryption in transit for AWS IoT SiteWise
-<a name="encryption-in-transit"></a>
 
 AWS IoT SiteWise uses encryption in transit to secure the data transmitted between your devices, gateways, and the AWS Cloud. Communication with AWS IoT SiteWise is encrypted using HTTPS and TLS 1.2, ensuring that your data remains confidential and protected from unauthorized access or interception.
 

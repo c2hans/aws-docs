@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Rem
 ---
 
 # RemoveIpRoutes
-<a name="API_RemoveIpRoutes"></a>
 
 Removes IP address blocks from a directory.
 

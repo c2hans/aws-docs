@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/tableau-connection-option
 ---
 
 # Tableau connection options
-<a name="tableau-connection-options"></a>
 
 The following are connection options for Tableau:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Tableau object to read.

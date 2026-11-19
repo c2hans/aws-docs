@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/recording-events-e
 ---
 
 # Recording multiple item interaction events with event value data
-<a name="recording-events-example-event-value"></a>
 
 After you create an *Item interactions dataset* and an [event tracker](event-get-tracker.md) for your dataset group, you are ready to record item interaction events. The following example shows how to record multiple item interaction events with different event types and different event values.
 

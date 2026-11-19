@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lifecycle-con
 ---
 
 # Lifecycle configurations within Amazon SageMaker Studio
-<a name="studio-lifecycle-configurations"></a>
 
 Lifecycle configurations (LCCs) are scripts that administrators and users can use to automate the customization of the following applications within your Amazon SageMaker Studio environment:
 + Amazon SageMaker AI JupyterLab

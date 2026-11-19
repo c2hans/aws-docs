@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoactiv
 ---
 
 # Activating the AWS access portal for first-time IAM Identity Center users
-<a name="howtoactivateaccount"></a>
 
 If this is your first time attempting to sign in to the AWS access portal, check your email for instructions on how to activate your user credentials.
 

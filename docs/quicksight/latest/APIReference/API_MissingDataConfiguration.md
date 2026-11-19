@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Missi
 ---
 
 # MissingDataConfiguration
-<a name="API_MissingDataConfiguration"></a>
 
 The configuration options that determine how missing data is treated during the rendering of a line chart.
 

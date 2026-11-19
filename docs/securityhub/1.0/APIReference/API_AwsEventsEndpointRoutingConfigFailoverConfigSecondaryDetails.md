@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEven
 ---
 
 # AwsEventsEndpointRoutingConfigFailoverConfigSecondaryDetails
-<a name="API_AwsEventsEndpointRoutingConfigFailoverConfigSecondaryDetails"></a>
 
  The AWS Region that events are routed to when failover is triggered or event replication is enabled.
 

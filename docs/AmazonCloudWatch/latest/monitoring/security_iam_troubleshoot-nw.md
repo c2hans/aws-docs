@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/secur
 ---
 
 # Troubleshooting Network Synthetic Monitor identity and access
-<a name="security_iam_troubleshoot-nw"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Network Synthetic Monitor and IAM.
 

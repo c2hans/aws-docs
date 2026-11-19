@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-configu
 ---
 
 # Auto Scaling launch configurations
-<a name="launch-configurations"></a>
 
 **Important**
 Limitations:

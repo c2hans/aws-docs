@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-clou
 ---
 
 # AWS Elemental MediaConnect metrics to monitor router input health
-<a name="monitor-with-cloudwatch-metrics-router-input-health"></a>
 
 AWS Elemental MediaConnect sends metrics to CloudWatch. You can review specific metrics to evaluate the health of your router inputs. For details about each metric, see the tables in this section.
 

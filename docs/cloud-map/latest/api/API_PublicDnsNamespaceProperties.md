@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_PublicDnsNamesp
 ---
 
 # PublicDnsNamespaceProperties
-<a name="API_PublicDnsNamespaceProperties"></a>
 
 DNS properties for the public DNS namespace.
 

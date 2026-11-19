@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Required AWS End User Messaging opt-out list keywords
-<a name="nx-features-opt-out-lists-keywords"></a>
 
 Where required by local laws and regulations (such as in the US and Canada), SMS and MMS recipients can use their devices to opt out by replying to the message with any of the following:
 + ARRET

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedGatewa
 ---
 
 # ListedGatewayInstance
-<a name="API_ListedGatewayInstance"></a>
 
  A summary of an instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoc
 ---
 
 # Expenditure and usage awareness
-<a name="telcocost01"></a>
 
 |  TELCOCOST01: How do you want to measure the cost of your telco workload across various domains?  |
 | --- |

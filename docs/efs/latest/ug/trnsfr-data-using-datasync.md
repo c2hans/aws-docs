@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/trnsfr-data-using-datasync
 ---
 
 # Using AWS DataSync to transfer data
-<a name="trnsfr-data-using-datasync"></a>
 
 AWS DataSync is an online data transfer service that simplifies, automates, and accelerates moving and replicating data between on-premises storage systems, and also between AWS storage services. DataSync can copy data between Network File System (NFS), Server Message Block (SMB) file servers, self-managed object storage, AWS Snowball Edge, Amazon S3 buckets, EFS file systems, and FSx for Windows File Server file systems.
 

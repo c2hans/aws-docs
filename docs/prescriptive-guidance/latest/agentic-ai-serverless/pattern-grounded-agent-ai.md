@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Pattern 5: Grounded agent AI workflow
-<a name="pattern-grounded-agent-ai"></a>
 
 Large language models (LLMs) are powerful, but they're unbounded by default. They lack awareness of proprietary data, business rules, or operational constraints, making them risky for direct interaction with users or systems.
 

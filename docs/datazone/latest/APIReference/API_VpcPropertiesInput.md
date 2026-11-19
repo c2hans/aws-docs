@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_VpcProp
 ---
 
 # VpcPropertiesInput
-<a name="API_VpcPropertiesInput"></a>
 
 The VPC connection properties used when creating a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingP
 ---
 
 # RoutingProfileQueueReference
-<a name="API_RoutingProfileQueueReference"></a>
 
 Contains the channel and queue identifier for a routing profile.
 

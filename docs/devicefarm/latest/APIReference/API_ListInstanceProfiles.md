@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListI
 ---
 
 # ListInstanceProfiles
-<a name="API_ListInstanceProfiles"></a>
 
 Returns information about all the instance profiles in an AWS account.
 

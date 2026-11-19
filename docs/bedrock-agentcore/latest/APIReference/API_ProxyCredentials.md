@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ProxyCredentials
-<a name="API_ProxyCredentials"></a>
 
 Union type representing different proxy authentication methods. Currently supports HTTP Basic Authentication (username and password).
 

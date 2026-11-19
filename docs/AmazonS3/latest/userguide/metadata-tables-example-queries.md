@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metadata-table
 ---
 
 # Example metadata table queries
-<a name="metadata-tables-example-queries"></a>
 
 The following examples show how you can get different types information from your S3 Metadata tables by using standard SQL queries.
 

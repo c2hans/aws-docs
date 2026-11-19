@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Prompt.h
 ---
 
 # Prompt
-<a name="API_Prompt"></a>
 
 Information about a prompt.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-uplo
 ---
 
 # Upload data to Amazon S3
-<a name="emr-plan-upload-s3"></a>
 
 For information on how to upload objects to Amazon S3, see [ Add an object to your bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PuttingAnObjectInABucket.html) in the *Amazon Simple Storage Service User Guide*. For more information about using Amazon S3 with Hadoop, see [http://wiki.apache.org/hadoop/AmazonS3](http://wiki.apache.org/hadoop2/AmazonS3).
 

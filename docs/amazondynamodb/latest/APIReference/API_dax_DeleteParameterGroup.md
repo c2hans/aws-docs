@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # DeleteParameterGroup
-<a name="API_dax_DeleteParameterGroup"></a>
 
 Deletes the specified parameter group. You cannot delete a parameter group if it is associated with any DAX clusters.
 

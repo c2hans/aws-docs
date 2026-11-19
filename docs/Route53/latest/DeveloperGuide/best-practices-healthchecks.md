@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/best-pract
 ---
 
 # Best practices for Amazon Route 53 health checks
-<a name="best-practices-healthchecks"></a>
 
 Effective health check configuration is essential for maintaining a highly available and resilient infrastructure. Here are some best practices to consider when setting up and managing Amazon Route 53 health checks:
 

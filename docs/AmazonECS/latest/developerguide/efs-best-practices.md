@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/efs-best
 ---
 
 # Best practices for using Amazon EFS volumes with Amazon ECS
-<a name="efs-best-practices"></a>
 
 Make note of the following best practice recommendations when you use Amazon EFS with Amazon ECS.
 

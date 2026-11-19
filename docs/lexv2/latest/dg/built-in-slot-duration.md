@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-duration.h
 ---
 
 # AMAZON.Duration
-<a name="built-in-slot-duration"></a>
 
 Converts words that indicate durations into a numeric duration.
 

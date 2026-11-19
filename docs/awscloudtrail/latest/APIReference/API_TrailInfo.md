@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Tr
 ---
 
 # TrailInfo
-<a name="API_TrailInfo"></a>
 
 Information about a CloudTrail trail, including the trail's name, home Region, and Amazon Resource Name (ARN).
 

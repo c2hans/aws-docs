@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ChainedInvokeStart
 ---
 
 # ChainedInvokeStartedDetails
-<a name="API_ChainedInvokeStartedDetails"></a>
 
 Contains details about a chained function invocation that has started execution, including start time and execution context.
 

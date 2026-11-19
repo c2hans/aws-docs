@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/viewing-re
 ---
 
 # Viewing resources in myApplications
-<a name="viewing-resources"></a>
 
 You can view your application resources from myApplications and the **Services** menu.
 

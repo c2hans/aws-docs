@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-cli-filter-pl
 ---
 
 # Configure Slurm CLI Filter Plugins on an AWS PCS cluster
-<a name="slurm-cli-filter-plugins-configure"></a>
 
 Configure CLI Filter Plugins when you create a new AWS PCS cluster. You can enable or disable CLI Filter Plugins on existing clusters using the Update API or console without recreating the cluster.
 

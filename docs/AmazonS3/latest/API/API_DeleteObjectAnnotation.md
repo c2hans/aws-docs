@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObjectAnno
 ---
 
 # DeleteObjectAnnotation
-<a name="API_DeleteObjectAnnotation"></a>
 
 Deletes a specific annotation from an Amazon S3 object. Use the `x-amz-object-if-match` header to perform a conditional delete that only succeeds if the object's ETag matches the provided value, preventing race conditions during concurrent updates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_HoursOfO
 ---
 
 # HoursOfOperationSearchFilter
-<a name="API_HoursOfOperationSearchFilter"></a>
 
 Filters to be applied to search results.
 

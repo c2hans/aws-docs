@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Performance Monitor API operations
-<a name="CloudWatch-PerformanceMonitor-API-operations"></a>
 
 Performance Monitor API operations are part of the Network Flow Monitor API. Scope operations are shared with Network Flow Monitor. The following table lists the Performance Monitor API operations, with links to the reference documentation.
 

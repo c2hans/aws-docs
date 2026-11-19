@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-manifests-how-wo
 ---
 
 # How manifests work
-<a name="hls-manifests-how-work"></a>
 
 The following sections describe how MediaLive handles manifest paths.
 

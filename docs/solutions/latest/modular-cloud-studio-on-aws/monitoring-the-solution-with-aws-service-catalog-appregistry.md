@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Monitoring the solution with AWS Service catalog appregistry
-<a name="monitoring-the-solution-with-aws-service-catalog-appregistry"></a>
 
 The solution includes a Service Catalog AppRegistry resource to register the CloudFormation template and underlying resources as an application in both Service Catalog AppRegistry and Application Manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/performance
 ---
 
 # The pillars of performance engineering
-<a name="performance-engineering-pillars"></a>
 
 To enable a performance engineering mindset, it's important to build a strong foundation while setting up performance engineering for the application. Performance engineering requires setting up four major pillars:
 + **Test-data generation** – Performance engineers set up tools to generate the test data.

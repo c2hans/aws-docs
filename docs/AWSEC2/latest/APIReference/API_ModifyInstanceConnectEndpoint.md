@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIns
 ---
 
 # ModifyInstanceConnectEndpoint
-<a name="API_ModifyInstanceConnectEndpoint"></a>
 
 Modifies the specified EC2 Instance Connect Endpoint.
 

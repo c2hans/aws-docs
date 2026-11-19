@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/create
 ---
 
 # Create and manage races
-<a name="create-manage-races"></a>
 
 **Note**
 Only admins and race facilitators can create and manage races.

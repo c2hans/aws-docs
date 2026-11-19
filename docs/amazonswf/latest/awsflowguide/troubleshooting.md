@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/troublesho
 ---
 
 # Troubleshooting and debugging tips for AWS Flow Framework for Java
-<a name="troubleshooting"></a>
 
 **Topics**
 + [Compilation errors](#troubleshooting.compilation)

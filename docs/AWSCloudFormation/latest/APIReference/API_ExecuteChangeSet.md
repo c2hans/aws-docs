@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ExecuteChangeSet
-<a name="API_ExecuteChangeSet"></a>
 
 Updates a stack using the input information that was provided when the specified change set was created. After the call successfully completes, CloudFormation starts updating the stack. Use the [DescribeStacks](API_DescribeStacks.md) action to view the status of the update.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/qualy
 ---
 
 # Troubleshooting the Qualys CSAM integration
-<a name="qualys-csam-troubleshooting"></a>
 
 ## Common errors
 <a name="qualys-csam-common-errors"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Re
 ---
 
 # RegisterNotificationHub
-<a name="API_RegisterNotificationHub"></a>
 
 Registers a `NotificationHub` in the specified Region.
 

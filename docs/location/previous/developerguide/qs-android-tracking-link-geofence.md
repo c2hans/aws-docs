@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-andr
 ---
 
 # Tutorial: Link a tracker to a geofence collection
-<a name="qs-android-tracking-link-geofence"></a>
 
 To link a tracker to a geofence collection you can use either the console, API, or CLI. The following procedures walk you through each option.
 

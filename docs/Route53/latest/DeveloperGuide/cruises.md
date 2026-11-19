@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/cruises.ht
 ---
 
 # .cruises
-<a name="cruises"></a>
 
 Used by the voyage industry.
 

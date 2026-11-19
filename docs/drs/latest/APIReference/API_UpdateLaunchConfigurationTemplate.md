@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateLaunch
 ---
 
 # UpdateLaunchConfigurationTemplate
-<a name="API_UpdateLaunchConfigurationTemplate"></a>
 
 Updates an existing Launch Configuration Template by ID.
 

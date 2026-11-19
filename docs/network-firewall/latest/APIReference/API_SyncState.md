@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # SyncState
-<a name="API_SyncState"></a>
 
 The status of the firewall endpoint and firewall policy configuration for a single VPC subnet. This is part of the [FirewallStatus](API_FirewallStatus.md).
 

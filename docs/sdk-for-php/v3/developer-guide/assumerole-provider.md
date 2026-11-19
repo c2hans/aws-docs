@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/assumerol
 ---
 
 # `assumeRole` provider in the SDK for PHP
-<a name="assumerole-provider"></a>
 
 If you use `Aws\Credentials\AssumeRoleCredentialProvider` to create credentials by assuming a role, you need to provide `'client'` information with an `StsClient` object and `'assume_role_params'` details, as shown.
 

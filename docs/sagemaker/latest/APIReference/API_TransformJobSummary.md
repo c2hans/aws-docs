@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Transf
 ---
 
 # TransformJobSummary
-<a name="API_TransformJobSummary"></a>
 
 Provides a summary of a transform job. Multiple `TransformJobSummary` objects are returned as a list after in response to a [ListTransformJobs](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTransformJobs.html) call.
 

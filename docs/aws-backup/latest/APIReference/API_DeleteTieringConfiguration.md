@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteTieringConfiguration
-<a name="API_DeleteTieringConfiguration"></a>
 
 Deletes the tiering configuration specified by a tiering configuration name.
 

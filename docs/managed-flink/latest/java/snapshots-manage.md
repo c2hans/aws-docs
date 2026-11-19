@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/snapshots-mana
 ---
 
 # Create and manage enhanced snapshots
-<a name="snapshots-manage"></a>
 
 Use the procedures on this page to create, describe, list, and delete enhanced snapshots in Amazon Managed Service for Apache Flink. The page also lists the errors that these operations return.
 

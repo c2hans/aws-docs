@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/rbp-attach-
 ---
 
 # Adding and editing resource-based policies for clusters
-<a name="rbp-attach-policy"></a>
 
 When you attach a policy or create a cluster with one, the policy must meet these requirements:
 + It's no longer than 20,480 characters.

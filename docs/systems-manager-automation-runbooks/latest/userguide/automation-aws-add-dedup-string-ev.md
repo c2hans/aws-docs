@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-AddOpsItemDedupStringToEventBridgeRule`
-<a name="automation-aws-add-dedup-string-ev"></a>
 
  **Description**
 

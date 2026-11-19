@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/create-a-label.h
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Create label
-<a name="create-a-label"></a>
 
 You can create labels in the Amazon Fraud Detector console, using the [put-label](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/frauddetector/put-label.html) command, using the [PutLabel](https://docs.aws.amazon.com/frauddetector/latest/api/API_PutLabel.html) API, or using the AWS SDK for Python (Boto3).
 

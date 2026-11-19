@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/data-protec
 ---
 
 # IAM permissions required to create or work with a data protection policy
-<a name="data-protection-policy-permissions"></a>
 
 To be able to work with data protection policies for log groups, you must have certain permissions as shown in the following tables. The permissions are different for account-wide data protection policies and for data protection policies that apply to a single log group.
 

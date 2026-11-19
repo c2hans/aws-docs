@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dog.html
 ---
 
 # .dog
-<a name="dog"></a>
 
 Used by dog lovers and those who provide canine services and products.
 

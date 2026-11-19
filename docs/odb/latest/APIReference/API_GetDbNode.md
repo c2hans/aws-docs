@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetDbNode.ht
 ---
 
 # GetDbNode
-<a name="API_GetDbNode"></a>
 
 Returns information about the specified DB node.
 

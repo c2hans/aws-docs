@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVpcEndpointServices
-<a name="API_DescribeVpcEndpointServices"></a>
 
 Describes available services to which you can create a VPC endpoint.
 

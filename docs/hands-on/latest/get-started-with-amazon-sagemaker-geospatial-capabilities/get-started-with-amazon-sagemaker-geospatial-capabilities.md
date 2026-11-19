@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/get-started-with-amazon-
 ---
 
 # Get started with Amazon SageMaker AI geospatial capabilities
-<a name="get-started-with-amazon-sagemaker-geospatial-capabilities"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListNotifications
-<a name="API_ListNotifications"></a>
 
 List lens notifications.
 

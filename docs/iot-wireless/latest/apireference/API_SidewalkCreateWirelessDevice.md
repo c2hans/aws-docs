@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkCreateWirelessDevice
-<a name="API_SidewalkCreateWirelessDevice"></a>
 
 Sidewalk object for creating a wireless device.
 

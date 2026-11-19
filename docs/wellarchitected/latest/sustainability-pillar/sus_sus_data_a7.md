@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS04-BP06 Use shared file systems or storage to access common data
-<a name="sus_sus_data_a7"></a>
 
 Adopt shared file systems or storage to avoid data duplication and allow for more efficient infrastructure for your workload.
 

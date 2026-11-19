@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenGenericDataField
-<a name="API_CodegenGenericDataField"></a>
 
 Describes a field in a generic data schema.
 

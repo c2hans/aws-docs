@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_RevokeE
 ---
 
 # RevokeEndpointAccess
-<a name="API_RevokeEndpointAccess"></a>
 
 Revokes access to a cluster.
 

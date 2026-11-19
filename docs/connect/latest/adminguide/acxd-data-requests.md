@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-data-requ
 ---
 
 # Data requests
-<a name="acxd-data-requests"></a>
 
 Data requests are custom integrations that let agentic CX designer send data to, or retrieve data from, external systems during a conversation.
 

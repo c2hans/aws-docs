@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-
 ---
 
 # TensorFlow Lite image classification
-<a name="tensorflow-lite-image-classification-component"></a>
 
 The TensorFlow Lite image classification component (`aws.greengrass.TensorFlowLiteImageClassification`) contains sample inference code to perform image classification inference using the [TensorFlow Lite](https://www.tensorflow.org/lite/guide/python) runtime and a sample pre-trained MobileNet 1.0 quantized model. This component uses the variant [TensorFlow Lite image classification model store](tensorflow-lite-image-classification-model-store-component.md) and the [TensorFlow Lite runtime](tensorflow-lite-component.md) components as dependencies to download the TensorFlow Lite runtime and the sample model.
 

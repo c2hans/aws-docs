@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-reportin
 ---
 
 # Machine learning reports in AWS Marketplace
-<a name="ml-reporting"></a>
 
 AWS Marketplace produces reports for your Amazon SageMaker AI products that include data about buyers, financials, usage, and taxes. All reports are available in the AWS Marketplace Management Portal on the [Reports page](https://aws.amazon.com/marketplace/management/reports). For more information, see [Seller Reports](https://docs.aws.amazon.com/marketplace/latest/userguide/Reporting.html). The following sections provide summary information about reports for machine learning products.
 

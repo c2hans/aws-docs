@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-
 ---
 
 # Tutorial: Create a pipeline that runs commands with compute (V2 type)
-<a name="tutorials-commands"></a>
 
 In this tutorial, you configure a pipeline that continuously runs provided build commands using the Commands action in a build stage. For more information about the Commands action, see [Commands action reference](action-reference-Commands.md).
 

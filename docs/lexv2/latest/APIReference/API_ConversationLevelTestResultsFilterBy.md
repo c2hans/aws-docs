@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Conversati
 ---
 
 # ConversationLevelTestResultsFilterBy
-<a name="API_ConversationLevelTestResultsFilterBy"></a>
 
 The selection to filter the test set results data at the conversation level.
 

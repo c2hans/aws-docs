@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-getting-started
 ---
 
 # Register and Authenticate Your Device Fleet
-<a name="edge-getting-started-step3"></a>
 
 In this section you will create your AWS IoT thing object, create a device fleet, register your device fleet so it can interact with the cloud, create X.509 certificates to authenticate your devices to AWS IoT Core, associate the role alias with AWS IoT that was generated when you created your fleet, get your AWS account-specific endpoint for the credentials provider, get an official Amazon Root CA file, and upload the Amazon CA file to Amazon S3.
 

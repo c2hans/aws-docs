@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateModel.ht
 ---
 
 # UpdateModel
-<a name="API_UpdateModel"></a>
 
 Changes information about a model. The maximum size of the model is 400 KB.
 

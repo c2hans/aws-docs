@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ValidateSolF
 ---
 
 # ValidateSolFunctionPackageContent
-<a name="API_ValidateSolFunctionPackageContent"></a>
 
 Validates function package content. This can be used as a dry run before uploading function package content with [PutSolFunctionPackageContent](https://docs.aws.amazon.com/tnb/latest/APIReference/API_PutSolFunctionPackageContent.html).
 

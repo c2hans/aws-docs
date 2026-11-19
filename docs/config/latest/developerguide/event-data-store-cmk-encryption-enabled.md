@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/event-data-
 ---
 
 # event-data-store-cmk-encryption-enabled
-<a name="event-data-store-cmk-encryption-enabled"></a>
 
 Checks if AWS Cloud Trail event data stores have customer managed AWS KMS keys enabled. The rule is NON\_COMPLIANT if an event data store has disabled customer managed KMS keys. Optionally, you can specify a list of KMS keys for the rule to check.
 

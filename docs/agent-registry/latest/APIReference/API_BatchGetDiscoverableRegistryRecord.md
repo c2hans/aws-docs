@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_B
 ---
 
 # BatchGetDiscoverableRegistryRecord
-<a name="API_BatchGetDiscoverableRegistryRecord"></a>
 
  Retrieves multiple discoverable registry records by ID from a single registry. Records that cannot be retrieved are reported individually in the `errors` list rather than failing the entire request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ExportSumm
 ---
 
 # ExportSummary
-<a name="API_ExportSummary"></a>
 
 Provides summary information about an export in an export list.
 

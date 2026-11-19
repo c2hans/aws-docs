@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListMarketplaceRevenueShareAllocations
-<a name="API_prm_ListMarketplaceRevenueShareAllocations"></a>
 
 Returns a paginated list of allocations under a marketplace revenue share, with optional filtering by status and effective date range. Supports historical reads at a specific share revision.
 

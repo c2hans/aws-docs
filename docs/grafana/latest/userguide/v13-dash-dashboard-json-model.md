@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-dash-dashbo
 ---
 
 # Dashboard JSON model
-<a name="v13-dash-dashboard-json-model"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 13.x**.

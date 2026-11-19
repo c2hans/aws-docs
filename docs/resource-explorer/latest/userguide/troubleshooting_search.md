@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/troub
 ---
 
 # Troubleshooting Resource Explorer search issues
-<a name="troubleshooting_search"></a>
 
 Use the information here to help you diagnose and fix common errors that can occur when you search for resources by using Resource Explorer.
 

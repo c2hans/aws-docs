@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListIntegrationItem
-<a name="API_connect-customer-profiles_ListIntegrationItem"></a>
 
 An integration in list of integrations.
 

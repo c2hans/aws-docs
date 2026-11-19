@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practic
 ---
 
 # Best practices and strategies
-<a name="best-practices-and-strats"></a>
 
 These sections provide information about best practices and strategies when tagging your AWS resources and using Tag Editor.
 

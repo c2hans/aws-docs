@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # How to Republish Your Application to an Elastic Beanstalk Environment (Legacy)
-<a name="deployment-beanstalk-republish"></a>
 
 **Important**
 This documentation refers to legacy services and features. For updated guides and content, see the [AWS .NET deployment tool](https://aws.github.io/aws-dotnet-deploy/) guide.

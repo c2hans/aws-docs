@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-th
 ---
 
 # AWS services comparison
-<a name="services-comparison"></a>
 
 The following table compares key features of Application Load Balancer, Amazon API Gateway, and AWS Lambda function URLs for creating endpoints to support microservices.
 

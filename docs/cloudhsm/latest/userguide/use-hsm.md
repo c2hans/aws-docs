@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/use-hsm.html
 ---
 
 # Offload operations with AWS CloudHSM Client SDKs
-<a name="use-hsm"></a>
 
 Use a Client SDK to offload cryptographic operations from platform or language-based applications to hardware security modules (HSMs).
 

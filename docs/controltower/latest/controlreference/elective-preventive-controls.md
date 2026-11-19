@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ele
 ---
 
 # Elective controls with preventive behavior
-<a name="elective-preventive-controls"></a>
 
 The following elective controls have preventive behavior.
 

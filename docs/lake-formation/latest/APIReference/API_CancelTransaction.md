@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # CancelTransaction
-<a name="API_CancelTransaction"></a>
 
 Attempts to cancel the specified transaction. Returns an exception if the transaction was previously committed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/q-cli-featur
 ---
 
 # Using Kiro CLI in CloudShell
-<a name="q-cli-features-in-cloudshell"></a>
 
 With Kiro CLI, you can interact with Kiro from the command line. For more information, see [Kiro CLI](https://kiro.dev/docs/cli/) on the Kiro website.
 

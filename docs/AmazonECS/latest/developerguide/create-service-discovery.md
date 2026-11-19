@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-s
 ---
 
 # Creating an Amazon ECS service that uses Service Discovery
-<a name="create-service-discovery"></a>
 
 Learn how to create a service containing a Fargate task that uses service discovery with the AWS CLI.
 

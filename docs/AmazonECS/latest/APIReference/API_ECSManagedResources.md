@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ECSMan
 ---
 
 # ECSManagedResources
-<a name="API_ECSManagedResources"></a>
 
 Represents the AWS resources managed by Amazon ECS for an Express service, including ingress paths, auto-scaling policies, metric alarms, and security groups.
 

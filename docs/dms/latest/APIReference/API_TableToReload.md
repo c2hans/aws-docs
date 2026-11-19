@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_TableToReloa
 ---
 
 # TableToReload
-<a name="API_TableToReload"></a>
 
 Provides the name of the schema and table to be reloaded.
 

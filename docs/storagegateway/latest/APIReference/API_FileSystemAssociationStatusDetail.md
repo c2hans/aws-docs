@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_F
 ---
 
 # FileSystemAssociationStatusDetail
-<a name="API_FileSystemAssociationStatusDetail"></a>
 
 Detailed information on file system association status.
 

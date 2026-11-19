@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-mx-record.
 ---
 
 # Publishing an MX record for Amazon SES email receiving
-<a name="receiving-email-mx-record"></a>
 
 A *mail exchanger* record (*MX record*) is a configuration that specifies which mail servers can accept email that's sent to your domain.
 

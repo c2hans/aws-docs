@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Se
 ---
 
 # SearchImageSets
-<a name="API_SearchImageSets"></a>
 
 Search image sets based on defined input attributes.
 

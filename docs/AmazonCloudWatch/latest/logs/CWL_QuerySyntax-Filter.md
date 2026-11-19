@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # filter
-<a name="CWL_QuerySyntax-Filter"></a>
 
  Use `filter` to get log events that match one or more conditions.
 

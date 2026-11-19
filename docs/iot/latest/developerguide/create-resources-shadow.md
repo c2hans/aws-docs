@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/create-resourc
 ---
 
 # Tutorial: Preparing your Raspberry Pi to run the shadow application
-<a name="create-resources-shadow"></a>
 
 This tutorial demonstrates how to set up and configure a Raspberry Pi device and create the AWS IoT resources that a device requires to connect and exchange MQTT messages.
 

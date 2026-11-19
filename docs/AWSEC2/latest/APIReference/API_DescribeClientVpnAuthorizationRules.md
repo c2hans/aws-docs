@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeClientVpnAuthorizationRules
-<a name="API_DescribeClientVpnAuthorizationRules"></a>
 
 Describes the authorization rules for a specified Client VPN endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ec2-lamp-amazon-linux-20
 ---
 
 # Tutorial: Install a LAMP server on AL2023
-<a name="ec2-lamp-amazon-linux-2023"></a>
 
 The following procedures help you install an Apache web server with PHP and [MariaDB](https://mariadb.org/about/) (a community-developed fork of MySQL) support on your AL2023 instance (sometimes called a LAMP web server or LAMP stack). You can use this server to host a static website or deploy a dynamic PHP application that reads and writes information to a database.
 

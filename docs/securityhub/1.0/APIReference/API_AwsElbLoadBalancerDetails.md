@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbL
 ---
 
 # AwsElbLoadBalancerDetails
-<a name="API_AwsElbLoadBalancerDetails"></a>
 
 Contains details about a Classic Load Balancer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DescribeFlow
 ---
 
 # DescribeFlowSourceThumbnail
-<a name="API_DescribeFlowSourceThumbnail"></a>
 
  Describes the thumbnail for the flow source.
 

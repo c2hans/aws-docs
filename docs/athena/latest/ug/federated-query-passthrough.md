@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/federated-query-passthr
 ---
 
 # Use federated passthrough queries
-<a name="federated-query-passthrough"></a>
 
 In Athena, you can run queries on federated data sources using the query language of the data source itself and push the full query down to the data source for execution. These queries are called passthrough queries. To run passthrough queries, you use a table function in your Athena query. You include the passthrough query to run on the data source in one of the arguments to the table function. Pass through queries return a table that you can analyze using Athena SQL.
 

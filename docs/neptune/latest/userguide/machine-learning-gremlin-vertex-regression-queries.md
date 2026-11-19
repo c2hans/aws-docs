@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Gremlin node regression queries in Neptune ML
-<a name="machine-learning-gremlin-vertex-regression-queries"></a>
 
 Node regression is similar to node classification, except that the value inferred from the regression model for each node is numeric. You can use the same Gremlin queries for node regression as for node classification except for the following differences:
 + Again, in Neptune ML, nodes refer to vertices.

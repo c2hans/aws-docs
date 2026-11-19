@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ResourceSc
 ---
 
 # ResourceScanMetadata
-<a name="API_ResourceScanMetadata"></a>
 
 An object that contains details about the metadata for an Amazon ECR resource.
 

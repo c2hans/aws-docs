@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-get-help.html
 ---
 
 # Get support and troubleshooting help for CDN and MediaTailor integrations
-<a name="cdn-get-help"></a>
 
 AWS Elemental MediaTailor CDN integration issues can be complex to diagnose and resolve. Use this guide when you need additional help with CDN and MediaTailor integration issues that you can't resolve through self-service troubleshooting.
 

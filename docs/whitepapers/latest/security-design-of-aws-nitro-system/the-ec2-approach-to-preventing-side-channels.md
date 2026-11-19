@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # The EC2 approach to preventing side-channels
-<a name="the-ec2-approach-to-preventing-side-channels"></a>
 
  Since its inception, EC2 has consistently taken a conservative approach to designing and operating secure multi-tenant systems for our customers. Our design approach favors simple and reliable abstractions, which provide strong isolation between security domains and limit the sharing of critical system resources across customers. AWS designs our systems to not only provide defense-in-depth against known security threats, but also to avoid impact from classes of potential security issues which do not have known practical exploitation techniques. In addition to the thoroughly tested and well-established security mechanisms we employ in production, AWS is actively engaged with the cutting edge of security research to ensure that we remain not only up-to-date, but are actively looking around corners for security issues on behalf of our customers.
 

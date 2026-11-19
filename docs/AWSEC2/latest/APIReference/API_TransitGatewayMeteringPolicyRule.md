@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayMeteringPolicyRule
-<a name="API_TransitGatewayMeteringPolicyRule"></a>
 
 Describes the traffic matching criteria for a transit gateway metering policy rule.
 

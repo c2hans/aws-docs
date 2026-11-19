@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Updat
 ---
 
 # UpdateFramework
-<a name="API_UpdateFramework"></a>
 
 Updates the specified framework.
 

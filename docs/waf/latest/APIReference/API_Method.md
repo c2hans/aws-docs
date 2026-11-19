@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Method.html
 ---
 
 # Method
-<a name="API_Method"></a>
 
 Inspect the HTTP method of the web request. The method indicates the type of operation that the request is asking the origin to perform.
 

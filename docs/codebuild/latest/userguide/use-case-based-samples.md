@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/use-case-base
 ---
 
 # Use case-based samples for CodeBuild
-<a name="use-case-based-samples"></a>
 
 You can use these use case-based samples to experiment with AWS CodeBuild:
 

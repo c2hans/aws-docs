@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Secure sensitive data in CloudWatch Logs by using Amazon Macie
-<a name="secure-cloudwatch-logs-using-macie"></a>
 
 *Anisha Salunkhe, Omar Franco, and David Guardiola, Amazon Web Services*
 

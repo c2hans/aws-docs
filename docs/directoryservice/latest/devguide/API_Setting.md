@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Set
 ---
 
 # Setting
-<a name="API_Setting"></a>
 
 Contains information about the configurable settings for a directory.
 

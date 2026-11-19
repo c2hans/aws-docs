@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Migration tools and services
-<a name="chap-oracle-aurora-pg.tools"></a>
 
 Each of the pages in this section describe the various tools for automating the migration of schema, objects and data, and how to use them.
 

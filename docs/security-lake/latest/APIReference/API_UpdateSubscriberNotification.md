@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Up
 ---
 
 # UpdateSubscriberNotification
-<a name="API_UpdateSubscriberNotification"></a>
 
 Updates an existing notification method for the subscription (SQS or HTTPs endpoint) or switches the notification subscription endpoint for a subscriber.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/entru
 ---
 
 # Source configuration for Entrust IDaaS
-<a name="entrust-idaas-source-setup"></a>
 
 ## Integrating with Entrust IDaaS
 <a name="entrust-idaas-integration"></a>

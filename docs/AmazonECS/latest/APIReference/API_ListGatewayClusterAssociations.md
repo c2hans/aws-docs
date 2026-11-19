@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListGa
 ---
 
 # ListGatewayClusterAssociations
-<a name="API_ListGatewayClusterAssociations"></a>
 
 Returns a list of the associations between gateways and clusters. You can filter the results by gateway, cluster, and status. The results are paginated. We recommend that you use pagination to ensure that the operation returns quickly and successfully.
 

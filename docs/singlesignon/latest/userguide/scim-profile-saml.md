@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/scim-profi
 ---
 
 # SCIM profile and SAML 2.0 implementation
-<a name="scim-profile-saml"></a>
 
 Both SCIM and SAML are important considerations for configuring IAM Identity Center.
 

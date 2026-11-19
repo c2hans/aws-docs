@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Condition.ht
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 A single match condition for a [Filter](API_Filter.md).
 

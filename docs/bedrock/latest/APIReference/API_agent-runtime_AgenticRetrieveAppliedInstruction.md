@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveAppliedInstruction
-<a name="API_agent-runtime_AgenticRetrieveAppliedInstruction"></a>
 
 The retrieval instruction, identified by its ID and version, that was applied to the request.
 

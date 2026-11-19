@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_D
 ---
 
 # DeleteStateMachine
-<a name="API_DeleteStateMachine"></a>
 
 Deletes a state machine. This is an asynchronous operation. It sets the state machine's status to `DELETING` and begins the deletion process. A state machine is deleted only when all its executions are completed. On the next state transition, the state machine's executions are terminated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Git
 ---
 
 # GitConfiguration
-<a name="API_GitConfiguration"></a>
 
 A type of trigger configuration for Git-based source actions.
 

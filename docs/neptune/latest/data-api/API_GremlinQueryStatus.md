@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GremlinQuery
 ---
 
 # GremlinQueryStatus
-<a name="API_GremlinQueryStatus"></a>
 
 Captures the status of a Gremlin query (see the [Gremlin query status API](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-api-status.html) page).
 

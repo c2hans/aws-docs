@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # WKLD.08 Encrypt Amazon EBS volumes
-<a name="wkld-08"></a>
 
 Verify that encryption by default is enabled for Amazon Elastic Block Store (Amazon EBS) volumes in your AWS account. Enabling encryption by default helps encrypt new Amazon EBS volumes and snapshots automatically, removing the need to configure encryption for each volume individually. Encrypted volumes have the same input/output operations per second (IOPS) performance as unencrypted volumes with a minimal effect on latency. For more information, see [Must-know best practices for Amazon EBS encryption](https://aws.amazon.com/blogs/compute/must-know-best-practices-for-amazon-ebs-encryption/) on the AWS Compute Blog.
 

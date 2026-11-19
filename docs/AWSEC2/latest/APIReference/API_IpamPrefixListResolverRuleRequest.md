@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPrefi
 ---
 
 # IpamPrefixListResolverRuleRequest
-<a name="API_IpamPrefixListResolverRuleRequest"></a>
 
 Describes a CIDR selection rule to include in a request. This is used when creating or modifying resolver rules.
 

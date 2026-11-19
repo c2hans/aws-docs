@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-container.html
 ---
 
 # Fields for the HLS container
-<a name="hls-container"></a>
 
 The following fields configure the container in each output.
 + **HLS outputs** –** Output settings **– **HLS settings** section

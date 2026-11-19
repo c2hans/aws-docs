@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/cm-enrichment-setup.
 ---
 
 # Set up contextual metadata enrichment
-<a name="cm-enrichment-setup"></a>
 
 To enable contextual metadata enrichment, add the enrichment method `SCTE35_ELEMENTAL_INFERENCE_QUERY_PARAMS` to the `EnrichmentMethods` array in the channel's `InferenceSettings`. This method requires no additional settings—the Elemental Inference feed ARN is already configured at the `InferenceSettings` level.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al1/ug/support-info-by-package.htm
 ---
 
 # AL1 package support status
-<a name="support-info-by-package"></a>
 
 This is current as of 2023-07-12T21:54:00.270245.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Loc
 ---
 
 # Location
-<a name="API_Location"></a>
 
 Contains location information about the cited text and where it's stored.
 

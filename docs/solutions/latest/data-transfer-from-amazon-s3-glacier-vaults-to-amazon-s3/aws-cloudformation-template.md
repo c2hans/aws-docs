@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # AWS CloudFormation template
-<a name="aws-cloudformation-template"></a>
 
  You can download the CloudFormation template for this Guidance before deploying it.
 

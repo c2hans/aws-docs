@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Configure any external identity provider
-<a name="external-identity-provider"></a>
 
 This page describes the protocol-level configuration that applies to any OpenID Connect (OIDC) or SAML 2.0 identity provider, along with the steps to enable, verify, and troubleshoot federation. For a detailed walkthrough of a specific provider, see [Configure Microsoft Entra ID](configure-entra-id.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationSectionDisplayHints
-<a name="API_RegistrationSectionDisplayHints"></a>
 
 Provides help information on the registration section.
 

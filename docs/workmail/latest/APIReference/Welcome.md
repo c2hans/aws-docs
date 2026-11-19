@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/Welcome.htm
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon WorkMail
 <a name="Welcome_Amazon_WorkMail"></a>

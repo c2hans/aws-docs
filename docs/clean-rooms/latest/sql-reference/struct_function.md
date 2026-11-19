@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/struct_
 ---
 
 # STRUCT constructor function
-<a name="struct_function"></a>
 
 The STRUCT constructor function creates a struct with the given field values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # WorkflowStepOutputUnion
-<a name="API_WorkflowStepOutputUnion"></a>
 
 A structure to hold multiple values of an output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Servi
 ---
 
 # Application observability for AWS Action
-<a name="Service-Application-Observability-for-AWS-GitHub-Action"></a>
 
 The Application Observability for AWS GitHub Action provides an end-to-end application observability investigation workflow that connects your source code and live production telemetry data to AI agent. It leverages CloudWatch MCPs and generates custom prompts to provide the context that AI agents need for troubleshooting and applying code fixes.
 

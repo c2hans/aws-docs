@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationCodeGenerationSegment
-<a name="API_NetworkMigrationCodeGenerationSegment"></a>
 
 A segment of generated code representing a logical grouping of infrastructure resources.
 

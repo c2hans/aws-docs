@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/searc
 ---
 
 # CloudWatch search expression syntax
-<a name="search-expression-syntax"></a>
 
 A valid search expression has the following format.
 

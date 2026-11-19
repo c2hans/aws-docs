@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/test-executabl
 ---
 
 # Create IDT test case executable
-<a name="test-executables"></a>
 
 You can create and place test case executable in a test suite folder in the following ways:
 + For test suites that use arguments or environment variables from the `test.json` files to determine which tests to run, you can create a single test case executable for the entire test suite, or a test executable for each test group in the test suite.

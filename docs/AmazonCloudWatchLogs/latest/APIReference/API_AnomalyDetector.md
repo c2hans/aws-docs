@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # AnomalyDetector
-<a name="API_AnomalyDetector"></a>
 
 Contains information about one anomaly detector in the account.
 

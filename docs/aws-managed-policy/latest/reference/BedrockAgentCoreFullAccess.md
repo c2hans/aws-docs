@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Bedr
 ---
 
 # BedrockAgentCoreFullAccess
-<a name="BedrockAgentCoreFullAccess"></a>
 
 **Description**: Provides full access to Bedrock AgentCore as well as limited access to related services
 

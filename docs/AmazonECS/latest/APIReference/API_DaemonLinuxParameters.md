@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonLinuxParameters
-<a name="API_DaemonLinuxParameters"></a>
 
 The Linux-specific options that are applied to the daemon container, such as Linux kernel capabilities.
 

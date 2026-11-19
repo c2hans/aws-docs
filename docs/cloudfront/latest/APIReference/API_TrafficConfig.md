@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Traff
 ---
 
 # TrafficConfig
-<a name="API_TrafficConfig"></a>
 
 The traffic configuration of your continuous deployment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/concept
 ---
 
 # Migrating from TIBCO EMS server to Amazon MQ
-<a name="concept-chapter-tibco-amazon"></a>
 
  You can migrate from TIBCO EMS to Amazon MQ.
 

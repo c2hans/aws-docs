@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_BasicAu
 ---
 
 # BasicAuthenticationCredentials
-<a name="API_BasicAuthenticationCredentials"></a>
 
 The basic authentication credentials of a connection.
 

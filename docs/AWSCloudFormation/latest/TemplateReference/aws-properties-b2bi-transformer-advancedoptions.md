@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Transformer AdvancedOptions
-<a name="aws-properties-b2bi-transformer-advancedoptions"></a>
 
 A structure that contains advanced options for EDI processing. Currently, only X12 advanced options are supported.
 

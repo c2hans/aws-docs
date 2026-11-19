@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Important reference notes for AWS SAM
-<a name="important-notes"></a>
 
 This section contains important notes and announcements for AWS Serverless Application Model (AWS SAM).
 

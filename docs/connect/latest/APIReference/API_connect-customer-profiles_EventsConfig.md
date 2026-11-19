@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # EventsConfig
-<a name="API_connect-customer-profiles_EventsConfig"></a>
 
 Configuration settings that define how events are processed and tracked.
 

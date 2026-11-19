@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/services-emr.h
 ---
 
 # How Amazon EMR uses AWS KMS
-<a name="services-emr"></a>
 
 When you use an [Amazon EMR](https://aws.amazon.com/emr/) cluster, you can configure the cluster to encrypt data *at rest* before saving it to a persistent storage location. You can encrypt data at rest on the EMR File System (EMRFS), on the storage volumes of cluster nodes, or both. To encrypt data at rest, you can use an AWS KMS key. The following topics explain how an Amazon EMR cluster uses a KMS key to encrypt data at rest.
 

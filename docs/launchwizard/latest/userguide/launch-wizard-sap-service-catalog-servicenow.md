@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Launch AWS Service Catalog products with ServiceNow
-<a name="launch-wizard-sap-service-catalog-servicenow"></a>
 
 ServiceNow users can natively browse and provision AWS Service Catalog products created with AWS Launch Wizard by using the AWS Management Connector for ServiceNow.
 

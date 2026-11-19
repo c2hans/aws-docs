@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_DeleteWe
 ---
 
 # DeleteWebhook
-<a name="API_DeleteWebhook"></a>
 
 Deletes a webhook.
 

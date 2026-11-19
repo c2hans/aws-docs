@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartT
 ---
 
 # StartTimerFailedEventAttributes
-<a name="API_StartTimerFailedEventAttributes"></a>
 
 Provides the details of the `StartTimerFailed` event.
 

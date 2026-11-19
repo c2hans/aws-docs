@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-
 ---
 
 # JSON data format for manual approval notifications in CodePipeline
-<a name="approvals-json-format"></a>
 
 For approval actions that use Amazon SNS notifications, JSON data about the action is created and published to Amazon SNS when the pipeline stops. You can use the JSON output to send messages to Amazon SQS queues or invoke functions in AWS Lambda.
 

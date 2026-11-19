@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_GpuDev
 ---
 
 # GpuDevice
-<a name="API_GpuDevice"></a>
 
 The state of a GPU on a container instance, including its sharing mode and the memory that's available for new containers.
 

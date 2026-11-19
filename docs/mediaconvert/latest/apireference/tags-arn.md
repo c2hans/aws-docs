@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/tags-ar
 ---
 
 # Tags arn
-<a name="tags-arn"></a>
 
 ## URI
 <a name="tags-arn-url"></a>

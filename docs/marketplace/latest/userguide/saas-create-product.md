@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-create
 ---
 
 # Creating a SaaS product in AWS Marketplace
-<a name="saas-create-product"></a>
 
 As an AWS Marketplace seller, you can add your software as a service (SaaS) product to AWS Marketplace. This includes creating your SaaS product and integrating it with the appropriate AWS Marketplace API operations, based on your billing model. To sell software as a SaaS products in AWS Marketplace, you follow these broad steps:
 + Create the SaaS product in AWS Marketplace.

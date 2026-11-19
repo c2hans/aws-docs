@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/faces-comparefaces
 ---
 
 # Comparing faces in images
-<a name="faces-comparefaces"></a>
 
 With Rekognition you can compare faces between two images using the [CompareFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CompareFaces.html) operation. This feature is useful for applications like identity verification or photo matching.
 

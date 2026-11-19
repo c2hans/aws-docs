@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-c
 ---
 
 # Activate a cluster with CloudHSM CLI
-<a name="cloudhsm_cli-cluster-activate"></a>
 
 Use the **cluster activate** command in CloudHSM CLI to [activate a new cluster](activate-cluster.md) in AWS CloudHSM. This command must be run before the cluster can be used to perform cryptographic operations.
 

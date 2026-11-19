@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Contin
 ---
 
 # ContinueServiceDeployment
-<a name="API_ContinueServiceDeployment"></a>
 
 Continues or rolls back an Amazon ECS service deployment that is paused at a lifecycle hook.
 

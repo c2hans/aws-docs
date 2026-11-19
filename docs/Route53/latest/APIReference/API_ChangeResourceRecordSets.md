@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeRe
 ---
 
 # ChangeResourceRecordSets
-<a name="API_ChangeResourceRecordSets"></a>
 
 Creates, changes, or deletes a resource record set, which contains authoritative DNS information for a specified domain name or subdomain name. For example, you can use `ChangeResourceRecordSets` to create a resource record set that routes traffic for test.example.com to a web server that has an IP address of 192.0.2.44.
 

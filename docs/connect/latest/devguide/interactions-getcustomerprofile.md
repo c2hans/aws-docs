@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/interactions-get
 ---
 
 # GetCustomerProfile
-<a name="interactions-getcustomerprofile"></a>
 
 Retrieve a customer profile based any search identifier, up to five total. Customer Profiles must be enabled for your Connect Customer instance.
 

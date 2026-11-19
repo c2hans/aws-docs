@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/process-mq-messages-wit
 ---
 
 # Configuring Amazon MQ event source for Lambda
-<a name="process-mq-messages-with-lambda"></a>
 
 **Topics**
 + [Configure network security](#process-mq-messages-with-lambda-networkconfiguration)

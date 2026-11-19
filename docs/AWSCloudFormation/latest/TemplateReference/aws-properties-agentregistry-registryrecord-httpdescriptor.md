@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::RegistryRecord HttpDescriptor
-<a name="aws-properties-agentregistry-registryrecord-httpdescriptor"></a>
 
 A registry record descriptor for the HTTP protocol. This descriptor is source-only. Its content is synchronized from the configured source URL rather than supplied inline.
 

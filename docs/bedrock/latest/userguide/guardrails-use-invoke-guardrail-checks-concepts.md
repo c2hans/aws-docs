@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-use-
 ---
 
 # Concepts: Messages, content block types, and checks
-<a name="guardrails-use-invoke-guardrail-checks-concepts"></a>
 
 The following concepts describe the structure of requests to the `InvokeGuardrailChecks` API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Content
 ---
 
 # ContentRetrievalRule
-<a name="API_ContentRetrievalRule"></a>
 
 Rules for retrieving content from data sources connected to a Amazon Q Business application for a specific topic control configuration.
 

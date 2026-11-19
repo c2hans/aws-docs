@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_DeleteProper
 ---
 
 # DeletePropertygraphStatistics
-<a name="API_DeletePropertygraphStatistics"></a>
 
 Deletes statistics for Gremlin and openCypher (property graph) data.
 

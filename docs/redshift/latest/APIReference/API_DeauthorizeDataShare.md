@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Deautho
 ---
 
 # DeauthorizeDataShare
-<a name="API_DeauthorizeDataShare"></a>
 
 From a datashare producer account, removes authorization from the specified datashare.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ccm-and-qpm
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 You can use this guide to achieve the following business outcomes with cluster cache management (CCM):
 + In the event of a failover, recover quickly to help maintain stable and optimal workload performance.

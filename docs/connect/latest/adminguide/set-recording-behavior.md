@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-recording-
 ---
 
 # Flow block in Connect Customer: Set recording and analytics behavior
-<a name="set-recording-behavior"></a>
 
 **Note**
 This block remains supported in existing flows for backwards compatibility, but it is replaced by [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) for new flows or modifications.

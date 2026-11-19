@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/vecto
 ---
 
 # The  `.vectors.distance`  algorithm (deprecated)
-<a name="vectors-distance"></a>
 
 The `.vectors.distance` algorithm computes the distance between two nodes based on their embeddings. The default distance is the squared L2 norm.
 

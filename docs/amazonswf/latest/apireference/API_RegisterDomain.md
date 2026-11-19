@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Regist
 ---
 
 # RegisterDomain
-<a name="API_RegisterDomain"></a>
 
 Registers a new domain.
 

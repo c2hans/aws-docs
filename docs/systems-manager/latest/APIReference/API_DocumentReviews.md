@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentReviews
-<a name="API_DocumentReviews"></a>
 
 Information about a document approval review.
 

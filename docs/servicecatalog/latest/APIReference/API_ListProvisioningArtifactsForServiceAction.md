@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListProvisioningArtifactsForServiceAction
-<a name="API_ListProvisioningArtifactsForServiceAction"></a>
 
 Lists all provisioning artifacts (also known as versions) for the specified self-service action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateInstanceSecondaryInterfaceSpecification
-<a name="API_LaunchTemplateInstanceSecondaryInterfaceSpecification"></a>
 
 Describes a secondary interface specification in a launch template.
 

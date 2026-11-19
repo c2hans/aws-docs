@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIdF
 ---
 
 # ModifyIdFormat
-<a name="API_ModifyIdFormat"></a>
 
 Modifies the ID format for the specified resource on a per-Region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created.
 

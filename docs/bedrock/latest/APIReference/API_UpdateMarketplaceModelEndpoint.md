@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateMa
 ---
 
 # UpdateMarketplaceModelEndpoint
-<a name="API_UpdateMarketplaceModelEndpoint"></a>
 
 Updates the configuration of an existing endpoint for a model from Amazon Bedrock Marketplace.
 

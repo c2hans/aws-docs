@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Search workloads
-<a name="search-workloads"></a>
 
  Full-text search capabilities empower customer applications within internal networks, including content management systems and legal documents. Additionally, they are used in internet-facing applications such as catalog search on ecommerce websites and content search. Let's explore a scenario in which Amazon OpenSearch Service is used in the context of an ecommerce platform.
 

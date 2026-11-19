@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF 1. How do you select the best performing architecture?
-<a name="perf-01"></a>
 
  Often, multiple approaches are required more efficient performance across a workload. Well-architected systems use multiple solutions and features to improve performance.
 

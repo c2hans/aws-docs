@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/understand
 ---
 
 # Understanding import jobs
-<a name="understanding-import-jobs"></a>
 
 After creating a [data store](getting-started-concepts.md#concept-data-store) in AWS HealthImaging, you must import your medical imaging data from your Amazon S3 input bucket into your data store to create [image sets](getting-started-concepts.md#concept-image-set). You can use the AWS Management Console, AWS CLI, and AWS SDKs to start, describe, and list import jobs.
 

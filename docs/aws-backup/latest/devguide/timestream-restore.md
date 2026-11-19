@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/timestream-re
 ---
 
 # Restore an Amazon Timestream table
-<a name="timestream-restore"></a>
 
 When you restore a Amazon Timestream table, there are several options to configure, including the new table name, the destination database, your storage allocation preferences (memory and magnetic storage), and which role you’ll use to complete the restore job. You can also choose an Amazon S3 bucket in which to store error logs. Magnetic storage writes are asynchronous, so you may wish you log the errors.
 

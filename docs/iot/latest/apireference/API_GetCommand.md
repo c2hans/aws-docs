@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetCommand.h
 ---
 
 # GetCommand
-<a name="API_GetCommand"></a>
 
 Gets information about the specified command.
 

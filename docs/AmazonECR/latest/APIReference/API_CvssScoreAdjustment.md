@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_CvssSc
 ---
 
 # CvssScoreAdjustment
-<a name="API_CvssScoreAdjustment"></a>
 
 Details on adjustments Amazon Inspector made to the CVSS score for a finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # UpdateGlobalSettings
-<a name="API_voice-chime_UpdateGlobalSettings"></a>
 
 Updates global settings for the Amazon Chime SDK Voice Connectors in an AWS account.
 

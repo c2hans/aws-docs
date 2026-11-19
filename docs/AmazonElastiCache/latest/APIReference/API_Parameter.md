@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # Parameter
-<a name="API_Parameter"></a>
 
 Describes an individual setting that controls some aspect of ElastiCache behavior.
 

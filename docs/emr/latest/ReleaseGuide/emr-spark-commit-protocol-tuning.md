@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-commit
 ---
 
 # Job tuning considerations
-<a name="emr-spark-commit-protocol-tuning"></a>
 
 On Spark executors, the EMRFS S3-optimized commit protocol consumes a small amount of memory for each file written by a task attempt until the task gets committed or aborted. In most jobs, the amount of memory consumed is negligible.
 

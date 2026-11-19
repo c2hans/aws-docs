@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetC
 ---
 
 # GetCollaborationAnalysisTemplate
-<a name="API_GetCollaborationAnalysisTemplate"></a>
 
 Retrieves an analysis template within a collaboration.
 

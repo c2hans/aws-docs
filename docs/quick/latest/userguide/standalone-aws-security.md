@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/standalone-aws-se
 ---
 
 # AWS security in Quick
-<a name="standalone-aws-security"></a>
 
 AWS Quick Free, Plus, and Max accounts rely on AWS security to operate on your behalf. This section describes the AWS managed policy that AWS Quick uses for these accounts.
 

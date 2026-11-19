@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # Index
-<a name="API_S3VectorBuckets_Index"></a>
 
 The attributes of a vector index.
 

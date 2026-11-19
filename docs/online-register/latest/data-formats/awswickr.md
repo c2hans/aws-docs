@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 ---
 
 # Data retrieval APIs for AWS Wickr
-<a name="awswickr"></a>
 
 AWS Wickr provides the following APIs for data retrieval.
 

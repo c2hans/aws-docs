@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Deploying an ASP.NET Core 2.0 App to Amazon ECS (Fargate) (Legacy)
-<a name="deployment-ecs-aspnetcore-fargate"></a>
 
 **Important**
 This documentation refers to legacy services and features. For updated guides and content, see the [AWS .NET deployment tool](https://aws.github.io/aws-dotnet-deploy/) guide and the updated [Deploying to AWS](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/deployment-chapt.html) table of contents.

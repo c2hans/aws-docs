@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-ma
 ---
 
 # Manage Work plans and versions
-<a name="resolutions-manage-work-plans"></a>
 
  The **Resolutions** page lists every Work plan on your instance with its description, the number of Case templates it's associated with, and its creation date. Choose a Work plan to open it.
 

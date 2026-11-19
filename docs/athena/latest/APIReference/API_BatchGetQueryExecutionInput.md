@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetQ
 ---
 
 # BatchGetQueryExecutionInput
-<a name="API_BatchGetQueryExecutionInput"></a>
 
 Contains an array of query execution IDs.
 

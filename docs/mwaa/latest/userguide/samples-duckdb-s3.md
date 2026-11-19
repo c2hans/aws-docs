@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-duckdb-s3.
 ---
 
 # Using a DAG to read and write Amazon S3 data with DuckDB
-<a name="samples-duckdb-s3"></a>
 
 You can use the following code example to write a directed acyclic graph (DAG) that uses DuckDB to generate, check, and summarize sample order data in Amazon S3. The DAG runs on your Amazon MWAA environment's workers and reads and writes files in Amazon S3 as your environment's execution role. The DAG has three tasks:
 + `write_orders` generates a day of sample orders and writes them to Amazon S3 as a gzip-compressed CSV file, in a folder for the run's logical date.

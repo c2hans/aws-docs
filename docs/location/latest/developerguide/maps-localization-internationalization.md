@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/maps-loca
 ---
 
 # Localization and internationalization
-<a name="maps-localization-internationalization"></a>
 
 Amazon Location Service supports localization features that enable you to customize maps for specific languages and regions. This includes support for local place names and the ability to render maps in different languages.
 

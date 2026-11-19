@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshSta
 ---
 
 # MeshStatus
-<a name="API_MeshStatus"></a>
 
 An object that represents the status of a service mesh.
 

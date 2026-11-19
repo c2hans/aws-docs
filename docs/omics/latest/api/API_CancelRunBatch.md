@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_CancelRunBatch.html
 ---
 
 # CancelRunBatch
-<a name="API_CancelRunBatch"></a>
 
 Cancels all runs within a specified batch. This operation prevents not-yet-submitted runs from starting and submits `CancelRun` requests for runs that have already started.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/jvm-system-propertie
 ---
 
 # Using JVM system properties to globally configure AWS SDK for Java and AWS SDK for Kotlin
-<a name="jvm-system-properties"></a>
 
 [JVM system properties](https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html) provide another way to specify configuration options and credentials for SDKs that run on the JVM such as the AWS SDK for Java and the AWS SDK for Kotlin. For a list of JVM system properties supported by SDKs, see [Settings reference](settings-reference.md#JVMSettings).
 

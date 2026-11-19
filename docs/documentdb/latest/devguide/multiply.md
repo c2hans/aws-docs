@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/multiply.html
 ---
 
 # $multiply
-<a name="multiply"></a>
 
 The `$multiply` operator in Amazon DocumentDB is used to multiply the values of two or more fields or expressions. This operator is particularly useful for performing arithmetic operations on numeric fields within documents. It can be employed in various stages of the aggregation pipeline, such as `$project` and `$addFields`, to create new fields or modify existing ones.
 

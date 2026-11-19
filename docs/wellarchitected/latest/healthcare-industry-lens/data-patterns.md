@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Data patterns
-<a name="data-patterns"></a>
 
 | HCL\_SUS6. How does your organization remove unneeded or redundant health data? |
 | --- |

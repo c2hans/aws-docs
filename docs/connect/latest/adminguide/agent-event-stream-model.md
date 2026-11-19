@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-event-st
 ---
 
 # Agent event streams data model in Connect Customer
-<a name="agent-event-stream-model"></a>
 
 Agent event streams are created in JavaScript Object Notation (JSON) format. For each event type, a JSON blob is sent to the Kinesis data stream. The following event types are included in agent event streams:
 + LOGIN—An agent login to the contact center.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetRecommendationError
-<a name="API_GetRecommendationError"></a>
 
 Describes an error experienced when getting recommendations.
 

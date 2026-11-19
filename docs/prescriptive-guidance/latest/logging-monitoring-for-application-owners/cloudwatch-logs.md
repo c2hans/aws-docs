@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # Amazon CloudWatch Logs
-<a name="cloudwatch-logs"></a>
 
 [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) enables you to centralize the logs from all of your systems, applications, and AWS services that you use, in a single, highly scalable service. You can then easily view them, search them for specific error codes or patterns, filter them based on specific fields, or archive them securely for future analysis. You can see all of your log events, regardless of their source, as a single and consistent flow of events ordered by time. You can query them and sort them, group them by specific fields, create custom computations, and visualize log data in dashboards.
 

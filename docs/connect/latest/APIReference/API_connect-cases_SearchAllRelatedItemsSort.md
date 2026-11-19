@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SearchAllRelatedItemsSort
-<a name="API_connect-cases_SearchAllRelatedItemsSort"></a>
 
 The order in which all returned related items should be sorted.
 

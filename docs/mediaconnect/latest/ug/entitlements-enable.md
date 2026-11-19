@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/entitlements-enab
 ---
 
 # Enabling an entitlement that has been temporarily disabled
-<a name="entitlements-enable"></a>
 
 If an entitlement has been [disabled](entitlements-disable.md), you can enable it to start streaming content to the subscriber’s flow again.
 

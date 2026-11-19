@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-pur
 ---
 
 # What is a package URL?
-<a name="sbom-generator-purl-sbom"></a>
 
  [A package URL or PURL](https://github.com/package-url/purl-spec) is a standardized format used to identify software packages, components, and libraries across different package management systems. The format makes it easier to track, analyze, and manage dependencies in software projects, particularly when generating a Software Bill of Materials (SBOMs).
 

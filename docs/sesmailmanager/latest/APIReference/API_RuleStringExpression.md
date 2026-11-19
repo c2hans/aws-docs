@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleStringExpression
-<a name="API_RuleStringExpression"></a>
 
 A string expression is evaluated against strings or substrings of the email.
 

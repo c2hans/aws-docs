@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetEnvi
 ---
 
 # GetEnvironmentBlueprint
-<a name="API_GetEnvironmentBlueprint"></a>
 
 Gets an Amazon DataZone blueprint.
 

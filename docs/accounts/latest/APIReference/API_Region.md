@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_Region.
 ---
 
 # Region
-<a name="API_Region"></a>
 
 This is a structure that expresses the Region for a given account, consisting of a name and opt-in status.
 

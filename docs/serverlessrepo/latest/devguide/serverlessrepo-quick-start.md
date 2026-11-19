@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/serverles
 ---
 
 # Quick Start: Publishing Applications
-<a name="serverlessrepo-quick-start"></a>
 
 This guide walks you through the steps to download, build, test and publish an example serverless application to the AWS Serverless Application Repository using AWS SAM CLI. You can use this example application as a starting point for developing and publishing your own serverless application.
 

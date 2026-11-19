@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.
 ---
 
 # Best practices for AWS Database Migration Service
-<a name="CHAP_BestPractices"></a>
 
 To use AWS Database Migration Service (AWS DMS) most effectively, see this section's recommendations on the most efficient way to migrate your data.
 

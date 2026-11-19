@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/user-po
 ---
 
 # Resetting a Forgotten Password in Amazon WorkSpaces Applications
-<a name="user-pool-end-user-reset-password"></a>
 
 If users forget their password, follow these steps to connect to the login portal link (provided in the welcome email) and choose a new password.
 

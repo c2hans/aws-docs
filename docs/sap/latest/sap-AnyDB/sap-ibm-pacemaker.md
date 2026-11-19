@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/sap-ibm-pacemaker.h
 ---
 
 # SAP on AWS – IBM Db2 HADR with Pacemaker
-<a name="sap-ibm-pacemaker"></a>
 
 SAP on AWS – IBM Db2 HADR with Pacemaker
 

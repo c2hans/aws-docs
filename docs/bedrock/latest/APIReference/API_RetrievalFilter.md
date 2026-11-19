@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Retrieva
 ---
 
 # RetrievalFilter
-<a name="API_RetrievalFilter"></a>
 
 Specifies the filters to use on the metadata attributes/fields in the knowledge base data sources before returning results.
 
@@ -15,7 +14,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** andAll **   <a name="bedrock-Type-RetrievalFilter-andAll"></a>
 Knowledge base data sources are returned if their metadata attributes fulfill all the filter conditions inside this list.
-Type: Array of [RetrievalFilter](#API_RetrievalFilter) objects
+Type: Array of [RetrievalFilter](API_RetrievalFilter.md) objects
 Array Members: Minimum number of 2 items.
 Required: No
 
@@ -75,7 +74,7 @@ Required: No
 
  ** orAll **   <a name="bedrock-Type-RetrievalFilter-orAll"></a>
 Knowledge base data sources are returned if their metadata attributes fulfill at least one of the filter conditions inside this list.
-Type: Array of [RetrievalFilter](#API_RetrievalFilter) objects
+Type: Array of [RetrievalFilter](API_RetrievalFilter.md) objects
 Array Members: Minimum number of 2 items.
 Required: No
 

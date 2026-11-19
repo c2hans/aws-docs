@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_LoadBal
 ---
 
 # LoadBalancerState
-<a name="API_LoadBalancerState"></a>
 
 Information about the state of the load balancer.
 

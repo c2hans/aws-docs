@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/test-and-debug.
 ---
 
 # Testing and debugging Step Functions state machines
-<a name="test-and-debug"></a>
 
 Step Functions provides the following ways to test and debug state machines:
 

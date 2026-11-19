@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Describe
 ---
 
 # DescribeAccountSettings
-<a name="API_DescribeAccountSettings"></a>
 
 Describes the account-level settings for Amazon Kinesis Data Streams. This operation returns information about the minimum throughput billing commitments and other account-level configurations.
 

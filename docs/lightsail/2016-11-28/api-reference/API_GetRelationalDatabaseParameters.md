@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetRelationalDatabaseParameters
-<a name="API_GetRelationalDatabaseParameters"></a>
 
 Returns all of the runtime parameters offered by the underlying database software, or engine, for a specific database in Amazon Lightsail.
 

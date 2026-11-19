@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Destination
 ---
 
 # DestinationConnectorProperties
-<a name="API_DestinationConnectorProperties"></a>
 
  This stores the information that is required to query a particular connector.
 

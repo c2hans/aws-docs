@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/xml-structure-s
 ---
 
 # XML structure
-<a name="xml-structure-static"></a>
 
 **Topics**
 + [Static overlay, creating and modifying a non-running event](static-overlay-creating-and-modifying-a-non-running-event.md)

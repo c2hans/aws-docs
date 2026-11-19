@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # StopSearchJob
-<a name="API_BKS_StopSearchJob"></a>
 
 This operations ends a search job.
 

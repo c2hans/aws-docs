@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/gpu-jobs.html
 ---
 
 # Run GPU jobs
-<a name="gpu-jobs"></a>
 
 GPU jobs help you to run jobs that use an instance's GPUs.
 

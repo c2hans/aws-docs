@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetBot.htm
 ---
 
 # GetBot
-<a name="API_GetBot"></a>
 
 Retrieves detailed information about a specific bot in a Wickr network, including its status, group membership, and authentication details.
 

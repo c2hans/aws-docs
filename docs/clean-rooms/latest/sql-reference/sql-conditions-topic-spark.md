@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-con
 ---
 
 # AWS Clean Rooms Spark SQL conditions
-<a name="sql-conditions-topic-spark"></a>
 
  Conditions are statements of one or more expressions and logical operators that evaluate to true, false, or unknown. Conditions are also sometimes referred to as predicates.
 

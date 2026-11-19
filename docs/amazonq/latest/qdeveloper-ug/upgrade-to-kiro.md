@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/upgrade-to-
 ---
 
 # Upgrade to Kiro
-<a name="upgrade-to-kiro"></a>
 
 The Amazon Q Developer CLI has been rebranded to Kiro.
 

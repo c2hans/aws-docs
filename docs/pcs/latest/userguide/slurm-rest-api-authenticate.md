@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-rest-api-auth
 ---
 
 # Authenticating with Slurm REST API in AWS PCS
-<a name="slurm-rest-api-authenticate"></a>
 
 The Slurm REST API in AWS PCS uses JSON Web Token (JWT) authentication to ensure secure access to your cluster resources. AWS PCS provides a managed signing key stored in AWS Secrets Manager, which you use to generate JWT tokens containing specific user identity claims.
 

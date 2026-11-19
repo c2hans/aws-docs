@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ParameterStringFilter
-<a name="API_ParameterStringFilter"></a>
 
 One or more filters. Use a filter to return a more specific list of results.
 

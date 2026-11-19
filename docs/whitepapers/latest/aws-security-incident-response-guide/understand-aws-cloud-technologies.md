@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Understand AWS Cloud technologies
-<a name="understand-aws-cloud-technologies"></a>
 
  To reduce dependencies and decrease response time, ensure that your security teams and responders are educated about cloud services and have opportunities for hands-on practice with the specific cloud environment that your organization uses. For incident responders to be effective, it’s important to understand AWS foundations, IAM, AWS Organizations, AWS logging and monitoring services, and AWS security services.
 

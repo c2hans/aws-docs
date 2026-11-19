@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_St
 ---
 
 # StorageFlowNodeConfiguration
-<a name="API_agent_StorageFlowNodeConfiguration"></a>
 
 Contains configurations for a Storage node in a flow. This node stores the input in an Amazon S3 location that you specify.
 

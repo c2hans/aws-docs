@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsBlockD
 ---
 
 # EbsBlockDeviceResponse
-<a name="API_EbsBlockDeviceResponse"></a>
 
 Describes a block device for an EBS volume.
 

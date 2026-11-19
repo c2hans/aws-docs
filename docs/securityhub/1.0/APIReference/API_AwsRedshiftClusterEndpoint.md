@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterEndpoint
-<a name="API_AwsRedshiftClusterEndpoint"></a>
 
 The connection endpoint for an Amazon Redshift cluster.
 

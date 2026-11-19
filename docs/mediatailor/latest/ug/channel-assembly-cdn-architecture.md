@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-c
 ---
 
 # Understand MediaTailor channel assembly CDN architecture
-<a name="channel-assembly-cdn-architecture"></a>
 
 AWS Elemental MediaTailor channel assembly integrates with content delivery networks (CDNs) to deliver linear streaming channels with improved performance and global reach. The recommended architecture positions the CDN between viewers and channel assembly, with channel assembly accessing content directly from your origin. This topic explains the core architecture components and how they work together to deliver your content.
 

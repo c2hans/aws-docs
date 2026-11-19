@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/VPCL
 ---
 
 # VPCLatticeServicesInvokeAccess
-<a name="VPCLatticeServicesInvokeAccess"></a>
 
 **Description**: Provides access to invoking Amazon VPC Lattice services.
 

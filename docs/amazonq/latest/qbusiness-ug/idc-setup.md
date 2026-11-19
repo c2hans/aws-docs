@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/idc-setup.ht
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring an IAM Identity Center instance for an Amazon Q Business application
-<a name="idc-setup"></a>
 
 Amazon Q Business integrates with IAM Identity Center to enable managing end user access to your Amazon Q Business application. IAM Identity Center is the recommended method for managing human access to AWS resources. We recommend enabling and pre-configuring an IAM Identity Center instance before creating your Amazon Q Business application.
 

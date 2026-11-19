@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegionGeo
 ---
 
 # RegionGeography
-<a name="API_RegionGeography"></a>
 
 Describes the geography information for a Region.
 

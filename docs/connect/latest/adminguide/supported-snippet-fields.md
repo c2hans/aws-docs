@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/supported-snip
 ---
 
 # Supported widget snippet fields in Connect Customer that are customizable
-<a name="supported-snippet-fields"></a>
 
 The following table lists the communications widget snippet fields that you can customize. Example code after the table shows how to use the snippet fields.
 

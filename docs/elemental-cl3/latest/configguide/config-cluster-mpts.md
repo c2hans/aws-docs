@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # Dedicating interfaces to MPTS
-<a name="config-cluster-mpts"></a>
 
 This section applies only of your cluster includes AWS Elemental Statmux nodes.
 

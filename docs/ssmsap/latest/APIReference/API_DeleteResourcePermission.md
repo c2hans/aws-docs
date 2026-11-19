@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_DeleteRes
 ---
 
 # DeleteResourcePermission
-<a name="API_DeleteResourcePermission"></a>
 
 Removes permissions associated with the target database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ServerlessTrack
-<a name="API_ServerlessTrack"></a>
 
 Defines a track that determines which Amazon Redshift version to apply after a new version is released. If the value for `ServerlessTrack` is `current`, the workgroup is updated to the most recently certified release. If the value is `trailing`, the workgroup is updated to the previously certified release.
 

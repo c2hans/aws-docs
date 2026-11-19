@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3
 ---
 
 # Backup and restore your SAP HANA system with the AWS Backint Agent for SAP HANA
-<a name="aws-backint-agent-s3-backup-restore"></a>
 
 When the AWS Backint agent is installed and configured on your Amazon EC2 instance, you can initiate backup and recovery using SQL statements, SAP HANA Cockpit, or SAP HANA Studio.
 

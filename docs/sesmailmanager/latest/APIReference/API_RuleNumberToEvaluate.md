@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleNumberToEvaluate
-<a name="API_RuleNumberToEvaluate"></a>
 
 The number to evaluate in a numeric condition expression.
 

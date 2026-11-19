@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Migrating a full configuration
-<a name="migration-at-a-glance"></a>
 
 In this approach, you take a configuration from an existing system and migrate it to a new system. This process will copy an existing configuration, IP addresses, certificates, keys, pass phrases, and sign-in credentials.
 

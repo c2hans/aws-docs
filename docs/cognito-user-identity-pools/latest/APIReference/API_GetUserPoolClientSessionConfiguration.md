@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetUserPoolClientSessionConfiguration
-<a name="API_GetUserPoolClientSessionConfiguration"></a>
 
 Retrieves the session configuration for a user pool app client. If you have never called `SetUserPoolClientSessionConfiguration` for the app client, this operation returns the default SSO session maximum validity of `60` minutes.
 

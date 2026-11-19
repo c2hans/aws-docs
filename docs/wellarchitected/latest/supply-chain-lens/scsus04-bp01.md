@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSUS04-BP01 Optimize your compute workloads for your supply chain sustainability
-<a name="scsus04-bp01"></a>
 
  Consider configuring AWS Compute Optimizer to analyze and investigate supply chain sustainability related workloads, to support your analysis on how to optimize the usage of compute resources to sustain your supply chain workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/da
 ---
 
 # Data key caching
-<a name="data-key-caching"></a>
 
 *Data key caching* stores [data keys](concepts.md#DEK) and [related cryptographic material](data-caching-details.md#cache-entries) in a cache. When you encrypt or decrypt data, the AWS Encryption SDK looks for a matching data key in the cache. If it finds a match, it uses the cached data key rather than generating a new one. Data key caching can improve performance, reduce cost, and help you stay within service limits as your application scales.
 

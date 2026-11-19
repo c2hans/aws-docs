@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gdk-cli-con
 ---
 
 # Greengrass Development Kit CLI configuration file
-<a name="gdk-cli-configuration-file"></a>
 
 The AWS IoT Greengrass Development Kit Command-Line Interface (GDK CLI) reads from a configuration file named `gdk-config.json` to build and publish components. This configuration file must exist in the root of the component repository. You can use the GDK CLI [init command](greengrass-development-kit-cli-component.md#greengrass-development-kit-cli-component-init) to initialize component repositories with this configuration file.
 

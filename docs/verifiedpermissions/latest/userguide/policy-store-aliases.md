@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Amazon Verified Permissions policy store aliases
-<a name="policy-store-aliases"></a>
 
 A policy store alias is a friendly name for a policy store. For example, policy store aliases let you refer to a policy store using `policy-store-alias/example-policy-store` instead of `PSEXAMPLEabcdefg111111`. Policy store aliases can be used in any Verified Permissions operation that accepts a `policyStoreId` input parameter.
 

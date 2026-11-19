@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # BatchGetProfileError
-<a name="API_connect-customer-profiles_BatchGetProfileError"></a>
 
 Error object describing why a specific profile failed.
 

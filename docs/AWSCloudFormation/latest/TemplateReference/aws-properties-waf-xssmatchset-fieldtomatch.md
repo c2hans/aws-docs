@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAF::XssMatchSet FieldToMatch
-<a name="aws-properties-waf-xssmatchset-fieldtomatch"></a>
 
 The part of a web request that you want to inspect, such as a specified header or a query string.
 

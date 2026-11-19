@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Appendix: FMEA spreadsheet template
-<a name="appendix-fmea-spreadsheet-template"></a>
 
 The following table is a sample Failure Mode and Effects Analysis (FMEA) register pre-populated with common AWS service failure modes. Use it as a starting point for your own analysis. Adjust the severity, occurrence, and detection scores to reflect your application architecture and business context, and add rows as you identify new failure modes during sprint planning.
 

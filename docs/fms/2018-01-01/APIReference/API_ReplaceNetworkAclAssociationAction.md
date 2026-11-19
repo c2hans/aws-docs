@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ReplaceN
 ---
 
 # ReplaceNetworkAclAssociationAction
-<a name="API_ReplaceNetworkAclAssociationAction"></a>
 
 Information about the `ReplaceNetworkAclAssociation` action in Amazon EC2. This is a remediation option in `RemediationAction`.
 

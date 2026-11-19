@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SageMakerEndpoint
-<a name="API_CostOptimizationHub_SageMakerEndpoint"></a>
 
 The SageMaker endpoint recommendation details.
 

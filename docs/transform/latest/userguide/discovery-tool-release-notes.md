@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Release notes
-<a name="discovery-tool-release-notes"></a>
 
 This section describes the features, improvements, and bug fixes for the AWS Transform discovery tool, organized by release date.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-SetupManagedInstance`
-<a name="automation-aws-setupmanagedinstance"></a>
 
  **Description**
 

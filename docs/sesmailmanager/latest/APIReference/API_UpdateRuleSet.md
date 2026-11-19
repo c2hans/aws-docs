@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_U
 ---
 
 # UpdateRuleSet
-<a name="API_UpdateRuleSet"></a>
 
 Update attributes of an already provisioned rule set.
 

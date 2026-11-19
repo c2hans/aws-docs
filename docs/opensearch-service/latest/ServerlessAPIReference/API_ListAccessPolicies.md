@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # ListAccessPolicies
-<a name="API_ListAccessPolicies"></a>
 
 Returns information about a list of OpenSearch Serverless access policies.
 

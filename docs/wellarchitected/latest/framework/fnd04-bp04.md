@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd04-b
 ---
 
 # FND04-BP04 Implement mechanisms for patch management
-<a name="fnd04-bp04"></a>
 
  Effective patch management helps keep systems across your cloud environment secure and running well. As a foundation practice, you need mechanisms that operate patch management across accounts and hybrid infrastructure at scale. Automation applies updates consistently and on time, and cuts manual work.
 

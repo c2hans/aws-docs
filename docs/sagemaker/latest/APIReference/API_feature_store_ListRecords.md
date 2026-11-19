@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # ListRecords
-<a name="API_feature_store_ListRecords"></a>
 
 Lists the `RecordIdentifier` values of all records stored in a `FeatureGroup`'s `OnlineStore`. This enables you to discover which records exist without retrieving the full record data.
 

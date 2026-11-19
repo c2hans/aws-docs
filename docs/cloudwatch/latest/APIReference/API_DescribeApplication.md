@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Descr
 ---
 
 # DescribeApplication
-<a name="API_DescribeApplication"></a>
 
 Describes the application.
 

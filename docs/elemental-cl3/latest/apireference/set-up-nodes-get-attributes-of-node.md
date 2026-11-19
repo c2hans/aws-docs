@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET: Get the Attributes of a Node
-<a name="set-up-nodes-get-attributes-of-node"></a>
 
 Get the attributes on the specified node.
 

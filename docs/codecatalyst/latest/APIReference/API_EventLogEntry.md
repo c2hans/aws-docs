@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Eve
 ---
 
 # EventLogEntry
-<a name="API_EventLogEntry"></a>
 
 Information about an entry in an event log of Amazon CodeCatalyst activity.
 

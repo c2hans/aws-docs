@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/ag-infrastructur
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # CloudFormation IaC files
-<a name="ag-infrastructure-tmp-files-cloudformation"></a>
 
 Learn how to use AWS CloudFormation infrastructure as code files with AWS Proton. CloudFormation is an infrastructure as code (IaC) service that helps you model and set up your AWS resources. You define your infrastructure resources in templates, using Jinja on top of the CloudFormation template file format for parametrization. AWS Proton expands parameters and renders the full CloudFormation template. CloudFormation provisions the defined resources as CloudFormation stack. For more information, see [What is CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) in *the CloudFormation User Guide*.
 

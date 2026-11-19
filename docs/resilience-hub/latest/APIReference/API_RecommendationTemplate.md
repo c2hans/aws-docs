@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # RecommendationTemplate
-<a name="API_RecommendationTemplate"></a>
 
 Defines a recommendation template created with the [CreateRecommendationTemplate](API_CreateRecommendationTemplate.md) action.
 

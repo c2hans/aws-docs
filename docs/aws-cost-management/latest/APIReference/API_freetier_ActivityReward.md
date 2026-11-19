@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ActivityReward
-<a name="API_freetier_ActivityReward"></a>
 
  The summary of the rewards granted as a result of activities completed.
 

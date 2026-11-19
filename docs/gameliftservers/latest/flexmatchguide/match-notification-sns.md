@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Tutorial: Set up an Amazon SNS topic
-<a name="match-notification-sns"></a>
 
 You can have Amazon GameLift Servers publish all events that a FlexMatch matchmaker generates to an Amazon SNS topic.
 

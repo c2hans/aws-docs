@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # GitOps tools for EKS clusters
-<a name="gitops-tools"></a>
 
 There are several GitOps tools for Kubernetes that are currently available in the market. Here's a list of some of the most widely used options:
 + [Argo CD](argo-cd.md)

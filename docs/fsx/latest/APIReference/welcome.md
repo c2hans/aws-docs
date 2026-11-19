@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/welcome.html
 ---
 
 # Amazon FSx API Reference
-<a name="welcome"></a>
 
 The Amazon FSx API is a network protocol based on [HTTP (RFC 2616)](https://www.ietf.org/rfc/rfc2616.txt). For each API call, you make an HTTP request to the region-specific Amazon FSx API endpoint for the AWS Region where you want to manage file systems. The API uses JSON (RFC 4627) documents for HTTP request/response bodies.
 

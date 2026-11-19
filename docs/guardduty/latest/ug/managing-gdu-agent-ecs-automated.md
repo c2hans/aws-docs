@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/managing-gdu-agent-e
 ---
 
 # Managing automated security agent for Fargate (Amazon ECS only)
-<a name="managing-gdu-agent-ecs-automated"></a>
 
 Runtime Monitoring supports managing the security agent for your Amazon ECS clusters (AWS Fargate) only through GuardDuty. There is no support for managing the security agent manually on Amazon ECS clusters.
 

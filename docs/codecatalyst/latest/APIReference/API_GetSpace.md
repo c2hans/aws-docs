@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Get
 ---
 
 # GetSpace
-<a name="API_GetSpace"></a>
 
 Returns information about an space.
 

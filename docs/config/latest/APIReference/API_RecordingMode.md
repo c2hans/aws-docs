@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Recording
 ---
 
 # RecordingMode
-<a name="API_RecordingMode"></a>
 
 Specifies the default recording frequency that AWS Config uses to record configuration changes. AWS Config supports *Continuous recording* and *Daily recording*.
 + Continuous recording allows you to record configuration changes continuously whenever a change occurs.

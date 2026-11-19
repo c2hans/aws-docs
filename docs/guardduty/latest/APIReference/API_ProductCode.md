@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Produc
 ---
 
 # ProductCode
-<a name="API_ProductCode"></a>
 
 Contains information about the product code for the EC2 instance.
 

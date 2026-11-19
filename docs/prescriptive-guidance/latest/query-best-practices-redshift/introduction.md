@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-
 ---
 
 # Query best practices for Amazon Redshift
-<a name="introduction"></a>
 
 *Ethan Stark, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/detailed-billing-mi
 ---
 
 # Migrating from Detailed Billing Reports to Cost and Usage Reports
-<a name="detailed-billing-migrate"></a>
 
 Detailed Billing Reports (DBR) and AWS Cost and Usage Reports (AWS CUR) both provide information about your charges. However, if you're using DBR, we recommend you transfer your report to Cost and Usage Reports.
 

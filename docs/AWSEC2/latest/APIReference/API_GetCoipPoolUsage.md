@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetCoipPo
 ---
 
 # GetCoipPoolUsage
-<a name="API_GetCoipPoolUsage"></a>
 
 Describes the allocations from the specified customer-owned address pool.
 

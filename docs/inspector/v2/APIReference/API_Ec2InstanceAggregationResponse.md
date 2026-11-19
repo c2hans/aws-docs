@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Ec2Instanc
 ---
 
 # Ec2InstanceAggregationResponse
-<a name="API_Ec2InstanceAggregationResponse"></a>
 
 A response that contains the results of a finding aggregation by Amazon EC2 instance.
 

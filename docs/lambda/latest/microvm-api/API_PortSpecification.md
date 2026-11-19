@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_PortSpecif
 ---
 
 # PortSpecification
-<a name="API_PortSpecification"></a>
 
 Specifies which ports are accessible on a MicroVM. Only one of the port specification options can be set.
 

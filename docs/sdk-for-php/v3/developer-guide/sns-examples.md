@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sns-examp
 ---
 
 # Amazon SNS examples using the AWS SDK for PHP Version 3
-<a name="sns-examples"></a>
 
 Amazon Simple Notification Service (Amazon SNS) is a web service that coordinates and manages the delivery or sending of messages to subscribing endpoints or clients.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ath
 ---
 
 # Amazon Athena controls
-<a name="athena-rules"></a>
 
 **Topics**
 + [[CT.ATHENA.PR.2] Require an Amazon Athena workgroup to encrypt Athena query results at rest with an AWS Key Management Service (KMS) key](#ct-athena-pr-2-description)

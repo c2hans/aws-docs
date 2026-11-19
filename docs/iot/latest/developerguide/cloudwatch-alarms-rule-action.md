@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/cloudwatch-ala
 ---
 
 # CloudWatch alarms
-<a name="cloudwatch-alarms-rule-action"></a>
 
 The CloudWatch alarm (`cloudWatchAlarm`) action changes the state of an Amazon CloudWatch alarm. You can specify the state change reason and value in this call.
 

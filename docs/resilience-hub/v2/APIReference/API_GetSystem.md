@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetSy
 ---
 
 # GetSystem
-<a name="API_GetSystem"></a>
 
 Retrieves a system by ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sum
 ---
 
 # SummaryMetricConfiguration
-<a name="API_SummaryMetricConfiguration"></a>
 
 The configuration of summary metrics.
 

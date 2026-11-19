@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InventoryResultEntity
-<a name="API_InventoryResultEntity"></a>
 
 Inventory query results.
 

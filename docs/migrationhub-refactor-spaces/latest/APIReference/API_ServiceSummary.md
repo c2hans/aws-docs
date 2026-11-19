@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # ServiceSummary
-<a name="API_ServiceSummary"></a>
 
 A summary for the service as a response to `ListServices`.
 

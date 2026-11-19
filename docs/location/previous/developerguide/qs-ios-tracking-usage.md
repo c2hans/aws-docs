@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios-
 ---
 
 # Tutorial: Use the sample app
-<a name="qs-ios-tracking-usage"></a>
 
 After setting up the sample code you can now run the app on an iOS simulator or a physical device.
 

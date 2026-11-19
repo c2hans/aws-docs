@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/en
 ---
 
 # Enable encrypted connections for PostgreSQL DB instances in Amazon RDS
-<a name="enable-encrypted-connections-for-postgresql-db-instances-in-amazon-rds"></a>
 
 *Rohit Kapoor, Amazon Web Services*
 

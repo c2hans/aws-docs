@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeEndp
 ---
 
 # DescribeEndpointSettings
-<a name="API_DescribeEndpointSettings"></a>
 
 Returns information about the possible endpoint settings available when you create an endpoint for a specific database engine.
 

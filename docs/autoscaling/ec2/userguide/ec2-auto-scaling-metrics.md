@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Amazon CloudWatch metrics for Amazon EC2 Auto Scaling
-<a name="ec2-auto-scaling-metrics"></a>
 
 Amazon EC2 Auto Scaling publishes the following metrics in the `AWS/AutoScaling` namespace. The actual Auto Scaling group metrics made available will depend on whether you have group metrics enabled, and which group metrics you enabled. Group metrics are available at one-minute granularity at no additional charge, but you must enable them.
 

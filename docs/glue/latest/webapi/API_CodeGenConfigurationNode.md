@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CodeGenConfigurat
 ---
 
 # CodeGenConfigurationNode
-<a name="API_CodeGenConfigurationNode"></a>
 
  `CodeGenConfigurationNode` enumerates all valid Node types. One and only one of its member variables can be populated.
 

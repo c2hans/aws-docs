@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 ---
 
 # ListQueries
-<a name="query-APIs-list-queries"></a>
 
 ListQueries API fetches the list of running/waiting/cancelling queries on the graph.
 

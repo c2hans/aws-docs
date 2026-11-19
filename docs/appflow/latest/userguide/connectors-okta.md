@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-okta
 ---
 
 # Okta connector for Amazon AppFlow
-<a name="connectors-okta"></a>
 
 Okta is an identity and access management solution. If you you're an Okta user, your account contains data about your Okta objects, such as your users, groups, devices and applications. You can use Amazon AppFlow to transfer data from Okta to certain AWS services or other supported applications.
 

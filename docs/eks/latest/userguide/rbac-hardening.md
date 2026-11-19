@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/rbac-hardening.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Harden Kubernetes RBAC in Amazon EKS
-<a name="rbac-hardening"></a>
 
 Kubernetes role-based access control (RBAC) controls what actions identities can perform inside a cluster. Many cluster components, including CSI drivers and other add-ons installed as DaemonSets, require broad permissions to function. Reviewing and scoping these permissions reduces the potential scope of any unintended access.
 

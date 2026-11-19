@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zohobooks-support.html
 ---
 
 # AWS Glue support for Zoho Books
-<a name="zohobooks-support"></a>
 
 AWS Glue supports Zoho Books as follows:
 

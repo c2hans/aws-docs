@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor-use-life
 ---
 
 # Create a lifecycle configuration to clone repositories into a Code Editor application
-<a name="code-editor-use-lifecycle-configurations-repositories"></a>
 
 This section shows how to clone a repository and create a Code Editor application with the lifecycle configuration attached.
 

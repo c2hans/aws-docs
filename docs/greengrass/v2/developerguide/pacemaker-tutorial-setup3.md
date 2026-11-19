@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/pacemaker-t
 ---
 
 # Active/active AWS IoT Greengrass V2 component
-<a name="pacemaker-tutorial-setup3"></a>
 
 In this setup, you manage a AWS IoT Greengrass V2 component with Pacemaker using a custom OCF (Open Cluster Framework) resource agent. This allows Pacemaker to monitor the health of a AWS IoT Greengrass V2 component and trigger recovery actions when the component enters a broken state.
 

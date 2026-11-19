@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Design considerations
-<a name="design-considerations"></a>
 
 ## Event-driven vs. continuous polling
 <a name="event-driven-vs.-continuous-polling"></a>

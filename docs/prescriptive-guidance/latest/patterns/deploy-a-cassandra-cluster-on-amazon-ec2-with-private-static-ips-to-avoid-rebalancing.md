@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Deploy a Cassandra cluster on Amazon EC2 with private static IPs to avoid rebalancing
-<a name="deploy-a-cassandra-cluster-on-amazon-ec2-with-private-static-ips-to-avoid-rebalancing"></a>
 
 *Dipin Jain, Amazon Web Services*
 

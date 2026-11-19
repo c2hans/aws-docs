@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-test-orche
 ---
 
 # Configure the IDT test orchestrator
-<a name="idt-test-orchestrator"></a>
 
 Starting in IDT v4.5.2, IDT includes a new *test orchestrator* component. The test orchestrator is an IDT component that controls the test suite execution flow, and generates the test report after IDT finishes running all tests. The test orchestrator determines test selection and the order in which tests are run based on user-defined rules.
 

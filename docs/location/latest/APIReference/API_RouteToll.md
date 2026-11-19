@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTo
 ---
 
 # RouteToll
-<a name="API_RouteToll"></a>
 
 Provides details about toll information along a route, including the payment sites, applicable toll rates, toll systems, and the country associated with the toll collection.
 

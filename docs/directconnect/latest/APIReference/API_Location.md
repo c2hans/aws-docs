@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Lo
 ---
 
 # Location
-<a name="API_Location"></a>
 
 Information about an Direct Connect location.
 

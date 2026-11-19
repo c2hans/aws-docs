@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/view-upgrade-policy
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # View current cluster upgrade policy
-<a name="view-upgrade-policy"></a>
 
 The **cluster upgrade policy** determines what happens to your cluster when it leaves the standard support period. If your upgrade policy is `EXTENDED`, the cluster will not be automatically upgraded, and will enter extended support. If your upgrade policy is `STANDARD`, it will be automatically upgraded.
 

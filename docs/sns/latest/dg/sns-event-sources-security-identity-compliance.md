@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-security
 ---
 
 # Security, identity, & compliance services
-<a name="sns-event-sources-security-identity-compliance"></a>
 
 The following table describes how Amazon SNS integrates with AWS security, identity, and compliance services, such as Directory Service, Amazon GuardDuty, Amazon Inspector, and AWS Security Hub CSPM, to provide notifications for directory status changes, security findings, Inspector events, and security hub announcements.
 

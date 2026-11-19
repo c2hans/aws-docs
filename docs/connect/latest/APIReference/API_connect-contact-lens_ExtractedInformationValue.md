@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ExtractedInformationValue
-<a name="API_connect-contact-lens_ExtractedInformationValue"></a>
 
 An individual value extracted from the conversation, including its content and the locations where it was found.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshootin
 ---
 
 # AWS CloudHSM Client SDK 3 verify HSM performance with the pkpspeed tool
-<a name="troubleshooting-verify-hsm-performance"></a>
 
 This topic describes how to verify AWS CloudHSM hardware security module (HSM) performance with Client SDK 3.
 

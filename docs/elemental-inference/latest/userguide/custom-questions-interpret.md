@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Interpreting the answers
-<a name="custom-questions-interpret"></a>
 
 Use the following information to interpret the answers.
 

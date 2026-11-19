@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_GetDe
 ---
 
 # GetDeploymentGroup
-<a name="API_GetDeploymentGroup"></a>
 
 Gets information about a deployment group.
 

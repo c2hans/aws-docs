@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # GameSessionQueueLogConfiguration
-<a name="API_GameSessionQueueLogConfiguration"></a>
 
 A configuration that delivers game session placement insight logs to one or more destinations of your choice.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_List
 ---
 
 # ListComments
-<a name="API_ListComments"></a>
 
 Returns comments for a designated case.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # SampleOperationResult
-<a name="API_training_session_runtime_SampleOperationResult"></a>
 
 The result of a completed sampling operation. Exactly one member is populated, corresponding to the operation type that was submitted.
 

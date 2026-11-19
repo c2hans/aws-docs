@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-archive-
 ---
 
 # Deleting event archives in Amazon EventBridge
-<a name="eb-archive-delete"></a>
 
 When you delete an archive, EventBridge deletes the following resources:
 + The archive and any events it contains.

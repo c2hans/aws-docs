@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-re
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to commonly raised questions about the process outlined in this guide for selecting Oracle and SQL Server databases to refactor on AWS.
 

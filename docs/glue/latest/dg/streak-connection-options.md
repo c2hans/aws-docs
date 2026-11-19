@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/streak-connection-options
 ---
 
 # Streak connection options
-<a name="streak-connection-options"></a>
 
 The following are connection options for Streak:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Streak object to read.

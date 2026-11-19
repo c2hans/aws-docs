@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/cancel-jo
 ---
 
 # CancelJob
-<a name="cancel-job-api"></a>
 
 The `CancelJob` operation stops a running or pending job. Only jobs in **Pending** or **Running** states can be cancelled. Cancellation is asynchronous, so you should monitor the job status to confirm completion. Cancelled jobs may have partial results in the output location depending on when cancellation occurs during processing.
 

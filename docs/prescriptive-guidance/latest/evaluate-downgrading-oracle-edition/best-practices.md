@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 We recommend the following best practices for assessing and downgrading your Oracle Database Enterprise Edition (EE) to Standard Edition 2 (SE2) on Amazon RDS for Oracle:
 + **Validate vendor support for Oracle Database SE2** – Confirm that your application is certified to run on Oracle Database SE2. Check directly with the software vendor or their documentation. Downgrading to Oracle Database SE2 without vendor confirmation might invalidate support for an application.

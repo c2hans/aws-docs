@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_TableM
 ---
 
 # TableMaintenanceJobStatusValue
-<a name="API_s3Buckets_TableMaintenanceJobStatusValue"></a>
 
 Details about the status of a maintenance job.
 

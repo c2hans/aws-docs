@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # StorageTypeLimit
-<a name="API_StorageTypeLimit"></a>
 
 Limits that are applicable for the given Amazon OpenSearch Service storage type.
 

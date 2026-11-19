@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AssetType
-<a name="API_AssetType"></a>
 
 An image file from a managed login branding style in a user pool.
 
