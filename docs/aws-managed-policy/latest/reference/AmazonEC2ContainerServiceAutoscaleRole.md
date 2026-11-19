@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2ContainerServiceAutoscaleRole
-<a name="AmazonEC2ContainerServiceAutoscaleRole"></a>
 
 **Description**: Policy to enable Task Autoscaling for Amazon EC2 Container Service
 

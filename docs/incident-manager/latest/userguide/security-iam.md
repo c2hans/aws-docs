@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/userguide/securi
 AWS Systems Manager Incident Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Systems Manager Incident Manager availability change](https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-manager-availability-change.html).
 
 # Identity and Access Management for AWS Systems Manager Incident Manager
-<a name="security-iam"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be *authenticated* (signed in) and *authorized* (have permissions) to use Incident Manager resources. IAM is an AWS service that you can use with no additional charge.
 

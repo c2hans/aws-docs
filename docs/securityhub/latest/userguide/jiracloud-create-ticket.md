@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud-c
 ---
 
 # Creating a ticket for a Jira Cloud integration
-<a name="jiracloud-create-ticket"></a>
 
  After you create an integration with Jira Cloud, you can create a ticket for a finding.
 

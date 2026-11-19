@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Polic
 ---
 
 # PolicyDeletedMetadata
-<a name="API_PolicyDeletedMetadata"></a>
 
 Contains details about a policy that was deleted, including the number of services that were affected.
 

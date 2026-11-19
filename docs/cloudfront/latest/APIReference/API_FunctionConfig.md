@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Funct
 ---
 
 # FunctionConfig
-<a name="API_FunctionConfig"></a>
 
 Contains configuration information about a CloudFront function.
 

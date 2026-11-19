@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationStatistics
-<a name="API_OrganizationStatistics"></a>
 
 Information about the coverage statistics of the features for the entire AWS organization.
 

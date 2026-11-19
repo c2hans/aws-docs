@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/outbound-tutorial-
 ---
 
 # Step 2: Creating your business profile
-<a name="outbound-tutorial-step2-profile"></a>
 
 **Note**
 If you created a profile for inbound EDI processing, you can reuse it here. Profiles can be used across multiple trading capabilities and partnerships.

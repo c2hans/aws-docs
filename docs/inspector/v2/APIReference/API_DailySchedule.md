@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_DailySched
 ---
 
 # DailySchedule
-<a name="API_DailySchedule"></a>
 
 A daily schedule.
 

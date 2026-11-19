@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gauge
 ---
 
 # GaugeChartFieldWells
-<a name="API_GaugeChartFieldWells"></a>
 
 The field well configuration of a `GaugeChartVisual`.
 

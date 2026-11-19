@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Redis-Global
 ---
 
 # Using global datastores (console)
-<a name="Redis-Global-Datastores-Console"></a>
 
 To create a global datastore using the console, follow this two-step process:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 ---
 
 # Integrate Amazon GameLift Servers with a Unity game client project
-<a name="integration-unity-client-sdk4"></a>
 
 **Note**
 This topic provides information for an earlier version of the Amazon GameLift Servers plugin for Unity. Version 1.x uses the server SDK for Amazon GameLift Servers 4.x or earlier. For documentation on the latest plugin version, which uses server SDK 5.x and supports newer features such as Amazon GameLift Servers Anywhere and managed container hosting, see [Amazon GameLift Servers plugin for Unity (server SDK 5.x)](unity-plug-in.md).

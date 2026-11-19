@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search
 ---
 
 # SearchExpression
-<a name="API_SearchExpression"></a>
 
 A multi-expression that searches for the specified resource or resources in a search. All resource objects that satisfy the expression's condition are included in the search results. You must specify at least one subexpression, filter, or nested filter. A `SearchExpression` can contain up to twenty elements.
 
@@ -36,7 +35,7 @@ Required: No
 
  ** SubExpressions **   <a name="sagemaker-Type-SearchExpression-SubExpressions"></a>
 A list of search expression objects.
-Type: Array of [SearchExpression](#API_SearchExpression) objects
+Type: Array of [SearchExpression](API_SearchExpression.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 20 items.
 Required: No
 

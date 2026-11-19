@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/securi
 ---
 
 # Use IAM condition keys with AgentCore VPC settings
-<a name="security-vpc-condition"></a>
 
 Use Amazon Bedrock AgentCore-specific condition keys for VPC settings to more precisely control permissions for your AgentCore resources. For example, require that all runtimes in your organization are connected to a VPC, or enforce that gateway targets deploy into approved subnets. Specify the subnets and security groups that users can and cannot use.
 

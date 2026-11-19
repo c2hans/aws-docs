@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-i
 ---
 
 # Working with CloudTrail Insights
-<a name="logging-insights-events-with-cloudtrail"></a>
 
 AWS CloudTrail Insights help AWS users identify and respond to unusual activity associated with API call rates and API error rates by continuously analyzing CloudTrail management and data events. CloudTrail Insights analyzes your past management and data events to establish your normal patterns of API call rates and API error rates, also called the *baseline*. CloudTrail then generates Insights events when the current API call rates or error rates deviate from the baseline.
 

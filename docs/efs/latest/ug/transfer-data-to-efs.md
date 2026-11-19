@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/transfer-data-to-efs.html
 ---
 
 # Transferring data in and out of Amazon EFS
-<a name="transfer-data-to-efs"></a>
 
 You can use AWS DataSync and AWS Transfer Family to transfer data in and out of your Amazon EFS file systems. AWS DataSync is an online data transfer service that can copy data between Network File System (NFS), Server Message Block (SMB) file servers, self-managed object storage, and also between AWS services. For more information about using DataSync with Amazon EFS, see [Using AWS DataSync to transfer data](trnsfr-data-using-datasync.md).
 

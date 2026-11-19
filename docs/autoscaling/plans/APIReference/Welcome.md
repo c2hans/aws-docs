@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This API reference describes the AWS Auto Scaling APIs used to create and manage scaling plans. You can use scaling plans to configure auto scaling for related or associated scalable resources in a matter of minutes.
 
@@ -21,4 +20,4 @@ You can use this API to accomplish the following tasks:
 
 The documentation for each action shows the request syntax, the request parameters, and the response elements and provides links to language-specific SDK reference topics. You can call the API directly in your application code, or you can use one of the AWS SDKs. For more information, see [AWS SDKs](http://aws.amazon.com/tools/#SDKs).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Overview
-<a name="solr-overview"></a>
 
 The solution migrates [Apache Solr](https://solr.apache.org/) 6.x through 9.x sources, running in either SolrCloud or standalone mode, to OpenSearch 3.x on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection. Apache Solr sources are supported for OpenSearch 3.x targets only; OpenSearch 1.x and 2.x targets are not supported for Solr migrations.
 

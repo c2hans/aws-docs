@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AdminScope
-<a name="API_AdminScope"></a>
 
 Defines the accounts, organizational units, and firewall types that an administrator can manage.
 

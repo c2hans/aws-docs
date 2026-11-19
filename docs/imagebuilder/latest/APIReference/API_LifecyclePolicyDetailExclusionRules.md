@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicyDetailExclusionRules
-<a name="API_LifecyclePolicyDetailExclusionRules"></a>
 
 Specifies resources that lifecycle policy actions should not apply to.
 

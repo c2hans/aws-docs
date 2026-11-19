@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Set up an HA/DR architecture for Oracle E-Business Suite on Amazon RDS Custom with an active standby database
-<a name="set-up-an-ha-dr-architecture-for-oracle-e-business-suite-on-amazon-rds-custom-with-an-active-standby-database"></a>
 
 *Simon Cunningham, Jaydeep Nandy, and Nitin Saxena, Amazon Web Services*
 

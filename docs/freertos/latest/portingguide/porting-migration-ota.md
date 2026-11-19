@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/porting-mig
 ---
 
 # Migrating from version 1 to version 3 for OTA applications
-<a name="porting-migration-ota"></a>
 
 This guide will help you migrate your application from OTA library version 1 to version 3.
 

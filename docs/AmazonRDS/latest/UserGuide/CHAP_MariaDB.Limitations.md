@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MariaDB.
 ---
 
 # Known issues and limitations for RDS for MariaDB
-<a name="CHAP_MariaDB.Limitations"></a>
 
 The following items are known issues and limitations when using RDS for MariaDB.
 

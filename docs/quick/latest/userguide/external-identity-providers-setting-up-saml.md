@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/external-identity
 ---
 
 # Setting up IdP federation using IAM and AWS Quick
-<a name="external-identity-providers-setting-up-saml"></a>
 
 |  |
 | --- |

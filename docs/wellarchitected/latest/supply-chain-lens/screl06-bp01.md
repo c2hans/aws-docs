@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCREL06-BP01 Use machine learning models to analyze historical data and external factors, predicting disruptions and optimizing inventory
-<a name="screl06-bp01"></a>
 
  Implement machine learning models that analyze patterns across historical supply chain disruptions, correlating them with external factors such as weather events, geopolitical developments, and economic indicators to identify emerging risk patterns. Train predictive algorithms on comprehensive datasets that combine internal operational metrics with external variables to forecast potential disruption impacts on specific supply chain nodes and transportation lanes.
 

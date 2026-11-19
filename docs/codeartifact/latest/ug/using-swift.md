@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/using-swift.html
 ---
 
 # Using CodeArtifact with Swift
-<a name="using-swift"></a>
 
 These topics describe how to use the Swift Package Manager with CodeArtifact to install and publish Swift packages.
 

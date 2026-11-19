@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DefinitionRepositor
 ---
 
 # DefinitionRepositoryDetails
-<a name="API_DefinitionRepositoryDetails"></a>
 
 Contains detailed information about the source code repository that hosts the workflow definition files.
 

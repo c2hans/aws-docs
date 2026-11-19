@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/job_definition_pa
 ---
 
 # Job definition parameters for ContainerProperties
-<a name="job_definition_parameters"></a>
 
 Job definitions that use [`ContainerProperties`](https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerProperties.html) are split into several parts:
 + The job definition name

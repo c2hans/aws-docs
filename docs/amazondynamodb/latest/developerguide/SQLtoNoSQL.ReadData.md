@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences between a relational (SQL) database and DynamoDB when reading data from a table
-<a name="SQLtoNoSQL.ReadData"></a>
 
 With SQL, you use the `SELECT` statement to retrieve one or more rows from a table. You use the `WHERE` clause to determine the data that is returned to you.
 

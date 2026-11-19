@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Bill
 ---
 
 # BilledResourceUtilization
-<a name="API_BilledResourceUtilization"></a>
 
  Information related to the utilization of resources that have been billed or charged for in a given context, such as a protected query.
 

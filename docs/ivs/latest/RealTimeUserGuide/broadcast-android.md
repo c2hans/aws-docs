@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-a
 ---
 
 # IVS Broadcast SDK: Android Guide \| Real-Time Streaming
-<a name="broadcast-android"></a>
 
 The IVS real-time streaming Android broadcast SDK enables participants to send and receive video on Android.
 

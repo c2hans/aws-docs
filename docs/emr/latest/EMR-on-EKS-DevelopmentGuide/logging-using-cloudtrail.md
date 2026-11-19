@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/l
 ---
 
 # Logging Amazon EMR on EKS API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon EMR on EKS is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Amazon EMR on EKS. CloudTrail captures all API calls for Amazon EMR on EKS as events. The calls captured include calls from the Amazon EMR on EKS console and code calls to the Amazon EMR on EKS API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Amazon EMR on EKS. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to Amazon EMR on EKS, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-statmux/latest/configguide/con
 This is version 2.20 of the AWS Elemental Statmux documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Statmux and AWS Elemental Live Documentation](https://docs.aws.amazon.com/elemental-live).
 
 # Create New User Roles
-<a name="config-wrkr-sm-cg-users-create"></a>
 
 The policies determine what actions a user can perform on the node. AWS Elemental Statmux comes with administrator, manager, operator, and viewer default policies. You can't edit these default policies, but you can create new ones if the defaults don't meet your requirements.
 

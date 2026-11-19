@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Scrap
 ---
 
 # ScraperLoggingDestination
-<a name="API_ScraperLoggingDestination"></a>
 
 The destination where scraper logs are sent.
 

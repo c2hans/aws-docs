@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel04-b
 ---
 
 # REL04-BP04 Make mutating operations idempotent
-<a name="rel04-bp04"></a>
 
  An idempotent operation produces the same result whether it runs once or many times, so a client can safely retry a request. Retries and duplicate delivery are normal in distributed systems, and idempotency makes these operations safer and more consistent.
 

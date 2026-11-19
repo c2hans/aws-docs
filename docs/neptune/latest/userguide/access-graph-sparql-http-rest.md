@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-sp
 ---
 
 # Using the HTTP REST endpoint to connect to a Neptune DB instance
-<a name="access-graph-sparql-http-rest"></a>
 
 **Note**
 Neptune does not currently support HTTP/2 for REST API requests. Clients must use HTTP/1.1 when connecting to endpoints.

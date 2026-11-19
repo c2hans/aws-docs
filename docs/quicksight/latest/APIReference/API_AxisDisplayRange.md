@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisD
 ---
 
 # AxisDisplayRange
-<a name="API_AxisDisplayRange"></a>
 
 The range setup of a numeric axis display range.
 

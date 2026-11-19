@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_SlackWor
 ---
 
 # SlackWorkspace
-<a name="API_SlackWorkspace"></a>
 
 A Slack workspace.
 

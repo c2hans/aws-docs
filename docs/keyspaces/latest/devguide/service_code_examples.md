@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/service_code_e
 ---
 
 # Code examples for Amazon Keyspaces using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Amazon Keyspaces with an AWS software development kit (SDK).
 

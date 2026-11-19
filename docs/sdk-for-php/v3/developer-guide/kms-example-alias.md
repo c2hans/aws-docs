@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kms-examp
 ---
 
 # Working with aliases using the AWS KMS API and the AWS SDK for PHP Version 3
-<a name="kms-example-alias"></a>
 
 AWS Key Management Service (AWS KMS) provides an optional display name for an [AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys) called an alias.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/dlm-service-endpoin
 ---
 
 # Service endpoints for Amazon Data Lifecycle Manager
-<a name="dlm-service-endpoints"></a>
 
 An *endpoint* is a URL that serves as an entry point for an AWS web service. Amazon Data Lifecycle Manager supports the following endpoint types:
 + IPv4 endpoints

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Casca
 ---
 
 # CascadingControlSource
-<a name="API_CascadingControlSource"></a>
 
 The source controls that are used in a `CascadingControlConfiguration`.
 

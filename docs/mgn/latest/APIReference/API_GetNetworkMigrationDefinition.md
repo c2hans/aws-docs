@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_GetNetworkMi
 ---
 
 # GetNetworkMigrationDefinition
-<a name="API_GetNetworkMigrationDefinition"></a>
 
 Retrieves the details of a network migration definition including source and target configurations.
 

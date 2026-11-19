@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTraf
 ---
 
 # ListTrafficPolicyInstancesByPolicy
-<a name="API_ListTrafficPolicyInstancesByPolicy"></a>
 
 Gets information about the traffic policy instances that you created by using a specify traffic policy version.
 

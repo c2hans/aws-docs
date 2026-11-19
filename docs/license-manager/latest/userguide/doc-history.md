@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/doc-his
 ---
 
 # Document history for License Manager
-<a name="doc-history"></a>
 
 The following table describes the releases of AWS License Manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/server-userguide/local-n
 ---
 
 # Local network interfaces for your Outposts servers
-<a name="local-network-interface"></a>
 
 With Outposts servers, a *local network interface* is a logical networking component that connects the Amazon EC2 instances in your Outposts subnet to your on-premises network.
 

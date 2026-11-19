@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agent-computer-
 ---
 
 # Handle computer use tool requests from agents in conversations
-<a name="agent-computer-use-handle-tools"></a>
 
 When your agent requests a tool, the response to your InvokeAgent API operation includes a `returnControl` payload that includes the tool to use and the tool action in the invocationInputs. For more information about return control to agent developer, see [Return control to the agent developer by sending elicited information in an InvokeAgent response](agents-returncontrol.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteZo
 ---
 
 # RouteZone
-<a name="API_RouteZone"></a>
 
 The zone.
 

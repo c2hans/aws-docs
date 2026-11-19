@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search nearby within a country
-<a name="how-to-search-nearby-country"></a>
 
 The SearchNearby API enables you to search for nearby places within a specific country. To use the API, you need to provide a QueryPosition, which can be:
 + A device position

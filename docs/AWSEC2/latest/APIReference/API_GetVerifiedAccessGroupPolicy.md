@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVerifi
 ---
 
 # GetVerifiedAccessGroupPolicy
-<a name="API_GetVerifiedAccessGroupPolicy"></a>
 
 Shows the contents of the Verified Access policy associated with the group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-addit
 ---
 
 # Additional resources
-<a name="what-is-additional-resources"></a>
 
 The following resources can help you learn more about AWS AppConfig.
 

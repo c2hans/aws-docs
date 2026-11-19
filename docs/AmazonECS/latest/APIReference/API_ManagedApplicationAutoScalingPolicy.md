@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedApplicationAutoScalingPolicy
-<a name="API_ManagedApplicationAutoScalingPolicy"></a>
 
 The Application Auto Scaling policy created by Amazon ECS when you create an Express service.
 

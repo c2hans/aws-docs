@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/signin-even
 ---
 
 # Understanding AWS sign-in events for WorkSpaces Personal users
-<a name="signin-events"></a>
 
 AWS CloudTrail logs successful and unsuccessful sign-in events for WorkSpaces Personal users. These events are generated for all authentication methods supported by the WorkSpaces Personal user login flow, including password-based authentication and smart cards. Each event captures when a user is prompted to solve a specific credential challenge or factor, as well as the status of that particular credential verification request. A user is signed in only after completing all required credential challenges, which results in a `UserAuthentication` event being logged.
 

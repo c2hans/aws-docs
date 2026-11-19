@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # ListClusterSnapshots
-<a name="API_elastic_ListClusterSnapshots"></a>
 
 Returns information about snapshots for a specified elastic cluster.
 

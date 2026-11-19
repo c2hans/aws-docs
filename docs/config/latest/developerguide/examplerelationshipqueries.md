@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/examplerela
 ---
 
 # Example Relationship Queries for AWS Config
-<a name="examplerelationshipqueries"></a>
 
 View the following example relationship queries.
 

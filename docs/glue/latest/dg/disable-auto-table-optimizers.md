@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/disable-auto-table-optimi
 ---
 
 # Disabling catalog-level table optimization
-<a name="disable-auto-table-optimizers"></a>
 
  You can disable table optimization for new tables using the AWS Lake Formation console, the `glue:UpdateCatalog` API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateR
 ---
 
 # UpdateRootDomainUnitOwner
-<a name="API_UpdateRootDomainUnitOwner"></a>
 
 Updates the owner of the root domain unit.
 

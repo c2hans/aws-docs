@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Replication with Amazon Aurora PostgreSQL
-<a name="AuroraPostgreSQL.Replication"></a>
 
 Following, you can find information about replication with Amazon Aurora PostgreSQL, including how to monitor and use logical replication.
 

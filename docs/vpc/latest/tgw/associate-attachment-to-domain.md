@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/associate-attachment-to-d
 ---
 
 # Associating VPC attachments and subnets with a multicast domain in AWS Transit Gateway
-<a name="associate-attachment-to-domain"></a>
 
 Use the following procedure to associate a VPC attachment with a multicast domain. When you create an association, you can then select the subnets to include in the multicast domain.
 

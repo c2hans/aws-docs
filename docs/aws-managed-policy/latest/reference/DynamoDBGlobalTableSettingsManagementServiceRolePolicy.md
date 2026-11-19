@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Dyna
 ---
 
 # DynamoDBGlobalTableSettingsManagementServiceRolePolicy
-<a name="DynamoDBGlobalTableSettingsManagementServiceRolePolicy"></a>
 
 **Description**: Permissions required by DynamoDB to manage global table replica settings
 

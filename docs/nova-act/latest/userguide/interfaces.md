@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/interfaces.htm
 ---
 
 # Understand the available interfaces for using Nova Act
-<a name="interfaces"></a>
 
 Nova Act consists of the Nova Act AWS service for production deployment and monitoring, plus Nova Act developer tools (SDK, CLI, and IDE extension) that support your development journey from exploration to production. The Nova Act Playground provides a separate environment for initial exploration at [nova.amazon.com/act](https://nova.amazon.com/act).
 

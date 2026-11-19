@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/config-com-wid
 ---
 
 # Integrate in-app, web, video calling, and screen sharing natively into your application
-<a name="config-com-widget2"></a>
 
 To integrate Connect Customer in-app, web, video calling, and screen sharing with your application:
 

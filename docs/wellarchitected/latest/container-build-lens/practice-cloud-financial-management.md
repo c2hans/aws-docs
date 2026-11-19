@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Practice cloud financial management
-<a name="practice-cloud-financial-management"></a>
 
 | CONTAINER\_BUILD\_COST\_01: How do you design your container build process to avoid unnecessary cost? |
 | --- |

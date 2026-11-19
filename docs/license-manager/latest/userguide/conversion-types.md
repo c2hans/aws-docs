@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/convers
 ---
 
 # Eligible license types for license type conversion in License Manager
-<a name="conversion-types"></a>
 
 You can use License Manager license type conversion with supported versions and combinations of Windows Server and Microsoft SQL Server licenses. You can also use license type conversion with Ubuntu Linux subscriptions.
 

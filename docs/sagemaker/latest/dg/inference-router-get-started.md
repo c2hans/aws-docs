@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-router-get
 ---
 
 # Get started with inference routers
-<a name="inference-router-get-started"></a>
 
 In this tutorial, you create an inference router that routes between endpoints in `us-west-2` and `us-east-1`, invoke it with the AWS CLI and the AWS SDK for Python (Boto3), and then delete it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate DNS records in bulk to an Amazon Route 53 private hosted zone
-<a name="migrate-dns-records-in-bulk-to-a-route-53"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

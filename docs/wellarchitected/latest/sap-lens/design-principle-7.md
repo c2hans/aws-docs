@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/design-p
 ---
 
 # 7 – Control access to your SAP workload through identity and permissions
-<a name="design-principle-7"></a>
 
  **How do you control access to your SAP workload?** Use mechanisms provided by AWS, SAP, and other third parties to ensure that end users and interfacing systems are properly identified and authenticated. How are permissions controlled to ensure least privilege? How is access audited and reported on? Start by identifying your user categories and then systematically work through the controls and your identity management approach to limit access to your SAP workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_cross_Transcri
 ---
 
 # Build an Amazon Transcribe streaming app
-<a name="ses_example_cross_TranscriptionStreamingApp_section"></a>
 
 The following code example shows how to build an app that records, transcribes, and translates live audio in real-time, and emails the results.
 

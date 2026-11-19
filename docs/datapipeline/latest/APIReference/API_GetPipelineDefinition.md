@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Get
 ---
 
 # GetPipelineDefinition
-<a name="API_GetPipelineDefinition"></a>
 
 Gets the definition of the specified pipeline. You can call `GetPipelineDefinition` to retrieve the pipeline definition that you provided using [PutPipelineDefinition](API_PutPipelineDefinition.md).
 

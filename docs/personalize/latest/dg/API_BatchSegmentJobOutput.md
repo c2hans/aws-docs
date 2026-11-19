@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_BatchSegmentJo
 ---
 
 # BatchSegmentJobOutput
-<a name="API_BatchSegmentJobOutput"></a>
 
 The output configuration parameters of a batch segment job.
 

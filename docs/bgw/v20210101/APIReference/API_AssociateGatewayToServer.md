@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_Associate
 ---
 
 # AssociateGatewayToServer
-<a name="API_AssociateGatewayToServer"></a>
 
 Associates a backup gateway with your server. After you complete the association process, you can back up and restore your VMs through the gateway.
 

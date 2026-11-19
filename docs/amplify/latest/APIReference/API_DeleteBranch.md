@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_DeleteBr
 ---
 
 # DeleteBranch
-<a name="API_DeleteBranch"></a>
 
 Deletes a branch for an Amplify app.
 

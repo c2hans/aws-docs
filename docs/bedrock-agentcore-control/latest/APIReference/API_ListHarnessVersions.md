@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListHarnessVersions
-<a name="API_ListHarnessVersions"></a>
 
 Operation to list the versions of a Harness.
 

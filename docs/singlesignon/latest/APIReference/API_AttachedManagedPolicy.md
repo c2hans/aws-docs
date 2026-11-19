@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Att
 ---
 
 # AttachedManagedPolicy
-<a name="API_AttachedManagedPolicy"></a>
 
 A structure that stores a list of managed policy ARNs that describe the associated AWS managed policy.
 

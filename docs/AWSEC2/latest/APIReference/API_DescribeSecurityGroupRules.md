@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSecurityGroupRules
-<a name="API_DescribeSecurityGroupRules"></a>
 
 Describes one or more of your security group rules.
 

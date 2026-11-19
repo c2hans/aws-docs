@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings-s
 ---
 
 # Finding details
-<a name="guardduty_findings-summary"></a>
 
 In the Amazon GuardDuty console, you can view finding details in the finding summary section. Finding details vary based on the finding type.
 

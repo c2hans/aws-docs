@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/Explore
 ---
 
 # Editing Systems Manager Explorer data sources
-<a name="Explorer-using-editing-data-sources"></a>
 
 For AWS Regions that are available [by default](https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html), AWS Systems Manager Explorer displays data from the following sources. You can edit Explorer settings to add or remove data sources:
 + Amazon Elastic Compute Cloud (Amazon EC2)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # IAM JSON policy elements: Condition
-<a name="reference_policies_elements_condition"></a>
 
 The `Condition` element (or `Condition` *block*) lets you specify conditions for when a policy is in effect. The `Condition` element is optional. In the `Condition` element, you build expressions in which you use [condition operators](reference_policies_elements_condition_operators.md) (equal, less than, and others) to match the context keys and values in the policy against keys and values in the request context. To learn more about the request context, see [Components of a request](intro-structure.md#intro-structure-request).
 

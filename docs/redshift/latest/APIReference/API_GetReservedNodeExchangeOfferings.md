@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_GetRese
 ---
 
 # GetReservedNodeExchangeOfferings
-<a name="API_GetReservedNodeExchangeOfferings"></a>
 
 Returns an array of DC2 ReservedNodeOfferings that matches the payment type, term, and usage price of the given DC1 reserved node.
 

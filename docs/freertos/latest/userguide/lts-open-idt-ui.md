@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-open-idt-u
 ---
 
 # Open the IDT for FreeRTOS UI
-<a name="lts-open-idt-ui"></a>
 
 This topic explains how to open the IDT for FreeRTOS UI to use the FreeRTOS qualification suite.
 

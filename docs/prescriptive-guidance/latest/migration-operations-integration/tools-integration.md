@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Tools integration
-<a name="tools-integration"></a>
 
 Most enterprises rely on ITSM tools to automate their on-premises operations. When these organizations move to the cloud, they need to maintain their existing ITSM tools and processes. Attempting to completely replace existing ITSM tools and retrain staff on new operational processes would be costly and time-consuming, and could significantly delay migration initiatives.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # 1. Data-centric management
-<a name="data-management"></a>
 
 Data management is the practice of ensuring that data used in training, testing, and inference is properly managed, secured, and validated. When building models at scale, data is the primary commodity that enables high model performance.
 

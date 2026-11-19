@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-
 ---
 
 # Running workflows in Amazon SWF
-<a name="swf-dev-run-workflows"></a>
 
 After the coordination logic and the activities have been designed, you register these components as workflow and activity types with Amazon SWF. During registration, you specify a name, a version, and default configuration values for each type.
 

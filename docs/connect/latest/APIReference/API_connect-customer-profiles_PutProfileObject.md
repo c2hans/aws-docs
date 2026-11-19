@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # PutProfileObject
-<a name="API_connect-customer-profiles_PutProfileObject"></a>
 
 Adds additional objects to customer profiles of a given ObjectType.
 

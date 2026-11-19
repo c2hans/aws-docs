@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/create-su
 ---
 
 # Creating a subscriber with data access in Security Lake
-<a name="create-subscriber-data-access"></a>
 
 Choose one of the following access methods to create a subscriber with access to data in the current AWS Region.
 

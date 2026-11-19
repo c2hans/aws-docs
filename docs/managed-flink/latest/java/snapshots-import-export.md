@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/snapshots-impo
 ---
 
 # Import and export enhanced snapshots
-<a name="snapshots-import-export"></a>
 
 You can export an enhanced snapshot to an Amazon S3 bucket. You can also import an Apache Flink savepoint from an Amazon S3 bucket as a new enhanced snapshot.
 

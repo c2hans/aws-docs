@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBSnapshotAttributes
-<a name="API_DescribeDBSnapshotAttributes"></a>
 
 Returns a list of DB snapshot attribute names and values for a manual DB snapshot.
 

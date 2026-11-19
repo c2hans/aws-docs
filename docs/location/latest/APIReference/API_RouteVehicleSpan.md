@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteVe
 ---
 
 # RouteVehicleSpan
-<a name="API_RouteVehicleSpan"></a>
 
 Span computed for the requested SpanAdditionalFeatures.
 

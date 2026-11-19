@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Use Anthropic Claude 3.7 Sonnet's reasoning capability on Amazon Bedrock
-<a name="bedrock-runtime_example_bedrock-runtime_Converse_AnthropicClaudeReasoning_section"></a>
 
 The following code example shows how to use Anthropic Claude 3.7 Sonnet's reasoning capability on Amazon Bedrock
 

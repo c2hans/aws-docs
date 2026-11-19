@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_WafOver
 ---
 
 # WafOverrideAction
-<a name="API_WafOverrideAction"></a>
 
 Details about an override action for a rule.
 

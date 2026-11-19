@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Manage Amazon EC2 instances
-<a name="examples-ec2-instances"></a>
 
 ## Create an instance
 <a name="create-an-instance"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to get the details for PlaceId in a specific language
-<a name="how-to-get-place-details-language-place-id"></a>
 
 The feature allows you to select a preferred response language from BCP47-compliant codes. It detects the query language based on name variants and uses the preferred language for unmatched tokens and ambiguous cases. If no requested language is stated, the Places API provides results in whatever language the country uses, but it prioritizes the regional language in regions where it differs. As a fallback, Places APIs return addresses in the default language when some address elements are unavailable in the requested language.
 

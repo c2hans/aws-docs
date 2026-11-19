@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Proa
 ---
 
 # ProactiveInsightSummary
-<a name="API_ProactiveInsightSummary"></a>
 
 Details about a proactive insight. This object is returned by `DescribeInsight.`
 

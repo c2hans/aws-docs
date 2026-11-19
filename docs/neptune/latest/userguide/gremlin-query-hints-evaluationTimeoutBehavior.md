@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-query-h
 ---
 
 # Gremlin `evaluationTimeoutBehavior` query hint
-<a name="gremlin-query-hints-evaluationTimeoutBehavior"></a>
 
 By default, when a Gremlin query exceeds the query timeout, Neptune cancels the query and returns an error. The `evaluationTimeoutBehavior` query hint changes this behavior so that Neptune streams back any partial results that were computed before the timeout occurred, instead of returning an error.
 

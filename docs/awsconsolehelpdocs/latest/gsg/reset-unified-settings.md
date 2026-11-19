@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/reset-unif
 ---
 
 # Resetting Unified Settings in the AWS Management Console
-<a name="reset-unified-settings"></a>
 
 You can delete all Unified Settings configurations and restore the default settings by resetting Unified Settings.
 

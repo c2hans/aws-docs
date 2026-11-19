@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Supported Regions and Aurora DB engines for exporting cluster data to Amazon S3
-<a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.ExportClusterToS3"></a>
 
 You can export Aurora DB cluster data to an Amazon S3 bucket. After the data is exported, you can analyze the exported data directly through tools like Amazon Athena or Amazon Redshift Spectrum. For more information, see [Exporting DB cluster data to Amazon S3](export-cluster-data.md).
 

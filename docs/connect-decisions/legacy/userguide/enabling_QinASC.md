@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/enabl
 ---
 
 # Enabling Amazon Q in AWS Supply Chain
-<a name="enabling_QinASC"></a>
 
 **Note**
 Only an AWS Supply Chain administrator can enable Amazon Q in AWS Supply Chain.

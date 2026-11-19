@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Private NAT Gateway
-<a name="private-nat-gateway"></a>
 
 Teams often work independently and they might create a new VPC for a project, which may have overlapping classless inter-domain routing (CIDR) blocks. For integration, they might want to enable communication between networks with overlapping CIDRs, which is not achievable through features such as VPC peering and Transit Gateway. A private NAT gateway can help with this use case. Private NAT gateway uses a unique private IP address to perform source NAT for the overlapping source IP address, and ELB does the destination NAT for the overlapping destination IP address. You can route traffic from your private NAT gateway to other VPCs or on-premises networks using Transit Gateway or a virtual private gateway.
 

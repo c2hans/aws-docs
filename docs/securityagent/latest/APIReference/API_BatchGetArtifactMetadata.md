@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchGetArtifactMetadata
-<a name="API_BatchGetArtifactMetadata"></a>
 
 Retrieves metadata for one or more artifacts in an agent space.
 

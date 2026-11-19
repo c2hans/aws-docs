@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/doc-history.html
 ---
 
 # Document history for the AWS PCS User Guide
-<a name="doc-history"></a>
 
 The following table describes the important changes to the documentation for AWS PCS.
 

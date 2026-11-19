@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/lda_hyperparameters.
 ---
 
 # LDA Hyperparameters
-<a name="lda_hyperparameters"></a>
 
 In the `CreateTrainingJob` request, you specify the training algorithm. You can also specify algorithm-specific hyperparameters as string-to-string maps. The following table lists the hyperparameters for the LDA training algorithm provided by Amazon SageMaker AI. For more information, see [How LDA Works](lda-how-it-works.md).
 

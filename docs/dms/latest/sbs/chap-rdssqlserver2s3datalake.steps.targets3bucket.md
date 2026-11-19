@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdssqlserver2s3datal
 ---
 
 # Step 4: Configure a Target Amazon S3 Bucket
-<a name="chap-rdssqlserver2s3datalake.steps.targets3bucket"></a>
 
 You can integrate Amazon S3 with other AWS and third-party services to take advantage of the following:
 + Data analysis using Amazon Athena query engine. This service helps reduce cost as you do not pay for dedicated resources and instead pay based on the amount data being scanned.

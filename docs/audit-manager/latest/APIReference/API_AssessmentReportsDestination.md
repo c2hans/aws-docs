@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentReportsDestination
-<a name="API_AssessmentReportsDestination"></a>
 
  The location where AWS Audit Manager saves assessment reports for the given assessment.
 

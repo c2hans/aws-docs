@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-serve
 ---
 
 # Server-side tracking with server-guided ad insertion (SGAI)
-<a name="ad-reporting-server-side-sgai"></a>
 
 When you use server-guided ad insertion (SGAI), server-side tracking uses a *sessionless beaconing* mechanism that differs from the stitched-mode approach described above. Instead of MediaTailor stitching ad segments into the content manifest (where it tracks `/v1/segment` requests), SGAI returns ad references as separate playlists in an asset list response with beacon metadata embedded in the ad URIs.
 

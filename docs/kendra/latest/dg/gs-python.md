@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/gs-python.html
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Getting started (AWS SDK for Python (Boto3))
-<a name="gs-python"></a>
 
 The following program is an example of using Amazon Kendra in a Python program. The program performs the following actions:
 

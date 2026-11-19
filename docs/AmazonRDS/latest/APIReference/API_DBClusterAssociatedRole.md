@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBClusterAssociatedRole
-<a name="API_DBClusterAssociatedRole"></a>
 
 Contains information about an AWS Identity and Access Management (IAM) role to associate with a DB cluster. You can specify this structure in the `AssociatedRoles` parameter of [CreateDBCluster](API_CreateDBCluster.md), [RestoreDBClusterFromS3](API_RestoreDBClusterFromS3.md), [RestoreDBClusterFromSnapshot](API_RestoreDBClusterFromSnapshot.md), and [RestoreDBClusterToPointInTime](API_RestoreDBClusterToPointInTime.md).
 

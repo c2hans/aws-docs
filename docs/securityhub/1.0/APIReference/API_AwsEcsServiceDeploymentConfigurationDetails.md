@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsS
 ---
 
 # AwsEcsServiceDeploymentConfigurationDetails
-<a name="API_AwsEcsServiceDeploymentConfigurationDetails"></a>
 
 Optional deployment parameters for the service.
 

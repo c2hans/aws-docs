@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListProvi
 ---
 
 # ListProvisioningProfiles
-<a name="API_ListProvisioningProfiles"></a>
 
 List the provisioning profiles within the AWS account.
 

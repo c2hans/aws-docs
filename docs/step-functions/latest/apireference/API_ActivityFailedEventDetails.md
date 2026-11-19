@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_A
 ---
 
 # ActivityFailedEventDetails
-<a name="API_ActivityFailedEventDetails"></a>
 
 Contains details about an activity that failed during an execution.
 

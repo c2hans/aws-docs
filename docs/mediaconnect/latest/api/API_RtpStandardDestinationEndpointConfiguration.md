@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RtpStandardD
 ---
 
 # RtpStandardDestinationEndpointConfiguration
-<a name="API_RtpStandardDestinationEndpointConfiguration"></a>
 
 The configuration settings for a destination endpoint that uses the RTP protocol.
 

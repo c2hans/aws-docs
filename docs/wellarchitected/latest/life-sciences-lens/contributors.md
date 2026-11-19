@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 The following individuals and organizations contributed to this document:
 +  Denny Daugherty, Principal Technical Account Manager, Amazon Web Services

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-opt-in-
 ---
 
 # Opt-in Region considerations for Route 53 Global Resolver
-<a name="gr-opt-in-regions"></a>
 
 Some AWS Regions are active by default for your AWS account. Certain Regions are activated only when you manually select them. This document refers to those Regions as opt-in Regions. In contrast, Regions that are active by default, as soon as your AWS account is created, are referred to as commercial Regions, default Regions, or simply, Regions.
 

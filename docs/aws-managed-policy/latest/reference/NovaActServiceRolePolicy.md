@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Nova
 ---
 
 # NovaActServiceRolePolicy
-<a name="NovaActServiceRolePolicy"></a>
 
 **Description**: This policy allows NovaAct to create and manage the necessary resources to operate the Nova Act agents.
 

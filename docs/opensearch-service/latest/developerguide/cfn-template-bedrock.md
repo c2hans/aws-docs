@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Amazon Bedrock templates
-<a name="cfn-template-bedrock"></a>
 
 The Amazon Bedrock CloudFormation templates provision the AWS resources needed to create connectors between OpenSearch Service and Amazon Bedrock.
 

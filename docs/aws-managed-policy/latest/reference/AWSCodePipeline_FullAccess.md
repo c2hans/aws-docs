@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodePipeline\_FullAccess
-<a name="AWSCodePipeline_FullAccess"></a>
 
 **Description**: Provides full access to AWS CodePipeline via the AWS Management Console.
 

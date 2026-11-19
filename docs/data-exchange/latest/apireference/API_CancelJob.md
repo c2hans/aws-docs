@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ca
 ---
 
 # CancelJob
-<a name="API_CancelJob"></a>
 
 This operation cancels a job. Jobs can be cancelled only when they are in the WAITING state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Validating FHIR Resources with `$validate`
-<a name="reference-fhir-operations-validate"></a>
 
 AWS HealthLake now supports the `$validate` operation for FHIR resources, enabling you to validate a resource against the FHIR specification and check its conformance to a specified profile or base resource definition without performing any storage operations. This operation is particularly useful when you need to:
 + Validate FHIR CMS compliance requirements

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_Network.
 ---
 
 # Network
-<a name="API_Network"></a>
 
 An internet service provider (ISP) or network (ASN) in Internet Monitor.
 

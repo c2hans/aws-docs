@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/human-worker-ev
 ---
 
 # Manage a work team for human evaluations of models in Amazon Bedrock
-<a name="human-worker-evaluations"></a>
 
 For evaluation jobs that use human workers you need to have a work team. A work team is a group of workers that *you* choose. These can be employees of your company or a group of subject-matter experts from your industry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # LicenseConfigurationAssociation
-<a name="API_LicenseConfigurationAssociation"></a>
 
 Describes an association with a license configuration.
 

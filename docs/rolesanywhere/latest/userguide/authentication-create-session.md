@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/authentic
 ---
 
 # IAM Roles Anywhere CreateSession API
-<a name="authentication-create-session"></a>
 
 The CreateSession API returns temporary security credentials for workloads that have been authenticated with IAM Roles Anywhere to access AWS resources. For endpoints, see [Roles Anywhere Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/rolesanywhere.html). To get temporary security credentials through this API, see [Get temporary security credentials from IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html), or, for Java applications on the AWS SDK for Java v2, see [Get temporary security credentials with the IAM Roles Anywhere plugin for the AWS SDK for Java](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/java-plugin.html).
 

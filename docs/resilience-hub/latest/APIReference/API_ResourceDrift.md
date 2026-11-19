@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # ResourceDrift
-<a name="API_ResourceDrift"></a>
 
 Indicates the resources that have drifted in the current application version.
 

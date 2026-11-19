@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTWirelessFullAccess
-<a name="AWSIoTWirelessFullAccess"></a>
 
 **Description**: Allows the associated identity full access to all AWS IoT Wireless operations.
 

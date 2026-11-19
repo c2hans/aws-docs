@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CD.6] Refine delivery pipelines using metrics for continuous improvement
-<a name="dl.cd.6-refine-delivery-pipelines-using-metrics-for-continuous-improvement"></a>
 
  **Category:** RECOMMENDED
 

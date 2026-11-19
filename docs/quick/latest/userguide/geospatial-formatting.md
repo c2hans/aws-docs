@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/geospatial-format
 ---
 
 # Map and geospatial chart formatting options in Quick
-<a name="geospatial-formatting"></a>
 
 In AWS Quick, you can choose from multiple formatting options for your maps and geospatial charts. You can view formatting options by opening the **Properties** pane from the on-visual menu located at the top right of the currently selected geospatial map.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/receiv
 ---
 
 # Example of responding to a message with a reaction in AWS End User Messaging Social
-<a name="receive-message-emoji"></a>
 
 You can add a reaction to the message, like a thumbs up.
 

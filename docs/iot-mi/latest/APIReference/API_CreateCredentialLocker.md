@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateCre
 ---
 
 # CreateCredentialLocker
-<a name="API_CreateCredentialLocker"></a>
 
 Create a credential locker.
 

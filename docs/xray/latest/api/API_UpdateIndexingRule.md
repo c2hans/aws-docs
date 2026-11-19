@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_UpdateIndexingRule.h
 ---
 
 # UpdateIndexingRule
-<a name="API_UpdateIndexingRule"></a>
 
  Modifies an indexing rule’s configuration.
 

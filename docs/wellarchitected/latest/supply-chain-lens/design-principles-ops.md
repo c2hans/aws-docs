@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Design principles
-<a name="design-principles-ops"></a>
 +  Establish clear, measurable, and regularly reviewed key performance indicators (KPIs) across the entire supply chain to drive data-informed decisions and foster continuous improvement.
 +  Empower supply chain teams with the necessary data, tools, and authority to make real-time, autonomous decisions that optimize operations and respond rapidly to dynamic conditions.
 +  Prioritize and integrate artificial intelligence (AI) strategically within the supply chain, facilitating clear understanding of roles, responsibilities, and organizational structures to maximize AI-driven outcomes.

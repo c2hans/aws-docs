@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListFarmMembers
-<a name="API_ListFarmMembers"></a>
 
 Lists the members of a farm.
 

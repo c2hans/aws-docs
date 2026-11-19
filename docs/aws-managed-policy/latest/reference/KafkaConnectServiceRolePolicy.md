@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Kafk
 ---
 
 # KafkaConnectServiceRolePolicy
-<a name="KafkaConnectServiceRolePolicy"></a>
 
 **Description**: This policy grants Kafka Connect permission to manage AWS resources on your behalf.
 

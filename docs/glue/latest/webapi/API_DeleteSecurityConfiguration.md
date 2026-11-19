@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteSecurityCon
 ---
 
 # DeleteSecurityConfiguration
-<a name="API_DeleteSecurityConfiguration"></a>
 
 Deletes a specified security configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # ChangeTypeOperationSummary
-<a name="API_ChangeTypeOperationSummary"></a>
 
 The operation values and change type IDs for a particular category, subcategory, and item value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # ListGroups
-<a name="API_ListGroups"></a>
 
  Returns group information for the specified directory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/create-
 ---
 
 # Create cost control rules for your Lightsail for Research virtual computers
-<a name="create-cost-control-rules"></a>
 
 Complete the following steps to create a rule for your Lightsail for Research virtual computer.
 

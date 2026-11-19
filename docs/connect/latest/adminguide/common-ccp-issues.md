@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/common-ccp-iss
 ---
 
 # Contact Control Panel (CCP) Issues
-<a name="common-ccp-issues"></a>
 
 This topic is for IT administrators who are experienced with investigating issues with their network. It discusses the most common issues agents might encounter when using the Contact Control Panel (CCP).
 

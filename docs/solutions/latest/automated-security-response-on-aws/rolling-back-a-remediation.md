@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Rolling back a remediation
-<a name="rolling-back-a-remediation"></a>
 
 If you enabled rollback by setting the **EnableRollback** parameter to `yes` when deploying the administrator stack, you can reverse a completed remediation for supported controls and return the resource to its pre-remediation state. For an overview of how rollback works, see [Remediation rollback](remediation-rollback.md).
 

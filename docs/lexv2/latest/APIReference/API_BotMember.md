@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotMember.
 ---
 
 # BotMember
-<a name="API_BotMember"></a>
 
 A bot that is a member of a network of bots.
 

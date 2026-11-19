@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Managing configuration of member accounts in an AWS Organization
-<a name="securityhub-v2-da-policy"></a>
 
  The delegated administrator for an AWS Organization can configure security capabilities across member accounts and Regions. You can currently control configuration for AWS Security Hub, AWS Security Hub CSPM, Amazon Inspector, and Amazon GuardDuty.
 

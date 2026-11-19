@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HubCon
 ---
 
 # HubContent
-<a name="API_HubContent"></a>
 
 Contains information about a hub content resource, including its name, version, type, associated documents, dependencies, and status, as returned by a search result.
 

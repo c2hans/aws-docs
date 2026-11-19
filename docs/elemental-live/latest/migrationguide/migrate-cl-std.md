@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/migrationguide/mig
 ---
 
 # Migrating to AWS Elemental Live version 2.26
-<a name="migrate-cl-std"></a>
 
 This procedure describes how to upgrade an appliance that is running AWS Elemental Live from a version below x.26.0 and migrate them to version x.26.1 or higher.
 

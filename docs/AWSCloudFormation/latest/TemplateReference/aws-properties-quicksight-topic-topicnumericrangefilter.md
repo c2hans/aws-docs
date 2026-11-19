@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Topic TopicNumericRangeFilter
-<a name="aws-properties-quicksight-topic-topicnumericrangefilter"></a>
 
 A filter that filters topics based on the value of a numeric field. The filter includes only topics whose numeric field value falls within the specified range.
 

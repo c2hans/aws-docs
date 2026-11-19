@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/plan-encode-sharing.
 ---
 
 # Identify encode sharing opportunities
-<a name="plan-encode-sharing"></a>
 
 If you have already identified the details for all the output encodes, you can now identify opportunities for encode sharing.
 

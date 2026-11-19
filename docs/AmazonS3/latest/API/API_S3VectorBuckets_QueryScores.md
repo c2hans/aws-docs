@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # QueryScores
-<a name="API_S3VectorBuckets_QueryScores"></a>
 
 Relevance scores for a full-text-only or hybrid search result.
 

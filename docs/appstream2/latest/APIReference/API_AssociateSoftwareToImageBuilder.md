@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Assoc
 ---
 
 # AssociateSoftwareToImageBuilder
-<a name="API_AssociateSoftwareToImageBuilder"></a>
 
 Associates license included application(s) with an existing image builder instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_Des
 ---
 
 # DescribeSavingsPlanRates
-<a name="API_DescribeSavingsPlanRates"></a>
 
 Describes the rates for a specific, existing Savings Plan.
 

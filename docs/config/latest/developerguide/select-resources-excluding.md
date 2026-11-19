@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/select-reso
 ---
 
 # Excluding resources from recording with AWS Config
-<a name="select-resources-excluding"></a>
 
 AWS Config allows you to exclude specific types of AWS resources from inventory tracking and compliance monitoring while still tracking all other supported resource types currently available in AWS Config, including those that will be added in the future. You can use this feature to concentrate on critical resources that are subject to your compliance and governance standards.
 

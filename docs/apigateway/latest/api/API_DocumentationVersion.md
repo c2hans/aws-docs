@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DocumentationV
 ---
 
 # DocumentationVersion
-<a name="API_DocumentationVersion"></a>
 
 A snapshot of the documentation of an API.
 

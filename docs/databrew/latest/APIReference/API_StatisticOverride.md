@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Statist
 ---
 
 # StatisticOverride
-<a name="API_StatisticOverride"></a>
 
 Override of a particular evaluation for a profile job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # Welcome
-<a name="integ-api-welcome"></a>
 
 The Amazon Interactive Video Service (IVS) broadcast software integration API is intended for software developers who want to implement client support for multitrack video. The API is REST compatible, using a standard HTTP API. JSON is used for both requests and responses, including errors.
 

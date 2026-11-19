@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-s
 ---
 
 # IVS Real-Time Streaming Optimizations
-<a name="real-time-streaming-optimization"></a>
 
 To ensure that your users have the best experience when streaming and viewing video using IVS real-time streaming, there are several ways you can improve or optimize for parts of the experience, using features that we offer today.
 

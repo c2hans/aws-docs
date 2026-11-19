@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/data-protectio
 ---
 
 # Data protection in Amazon S3
-<a name="data-protection"></a>
 
 In addition to the resilience offered by the AWS global infrastructure, Amazon S3 offers a number of features to help protect your data against accidental deletions or Regional failures.
 

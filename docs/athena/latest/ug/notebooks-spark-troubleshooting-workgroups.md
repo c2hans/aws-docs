@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-trouble
 ---
 
 # Troubleshoot Spark-enabled workgroups
-<a name="notebooks-spark-troubleshooting-workgroups"></a>
 
 Use the following information to troubleshoot Spark-enabled workgroups in Athena.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with CloudWatch
-<a name="examples-cloudwatch"></a>
 
 This section provides examples of programming [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) by using the AWS SDK for Java 2.x.
 

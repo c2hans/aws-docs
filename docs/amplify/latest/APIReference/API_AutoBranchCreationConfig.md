@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_AutoBran
 ---
 
 # AutoBranchCreationConfig
-<a name="API_AutoBranchCreationConfig"></a>
 
 Describes the automated branch creation configuration.
 

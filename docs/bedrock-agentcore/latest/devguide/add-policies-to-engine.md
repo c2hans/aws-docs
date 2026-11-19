@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/add-po
 ---
 
 # Add policies to the Policy Engine
-<a name="add-policies-to-engine"></a>
 
 You can create one or more policies in your policy engine to control how agents interact with your enterprise tools and data through Amazon Bedrock AgentCore Gateway.
 

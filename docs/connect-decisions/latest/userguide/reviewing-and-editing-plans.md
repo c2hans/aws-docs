@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/revie
 ---
 
 # Reviewing and Editing Plans
-<a name="reviewing-and-editing-plans"></a>
 
 To review a supply plan:
 

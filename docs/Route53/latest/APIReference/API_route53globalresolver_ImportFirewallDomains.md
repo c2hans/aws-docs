@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ImportFirewallDomains
-<a name="API_route53globalresolver_ImportFirewallDomains"></a>
 
 Imports a list of domains from an Amazon S3 file into a firewall domain list. The file should contain one domain per line.
 

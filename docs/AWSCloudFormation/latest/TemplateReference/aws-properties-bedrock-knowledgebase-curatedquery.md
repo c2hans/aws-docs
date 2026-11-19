@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase CuratedQuery
-<a name="aws-properties-bedrock-knowledgebase-curatedquery"></a>
 
 Contains configurations for a query, each of which defines information about example queries to help the query engine generate appropriate SQL queries.
 

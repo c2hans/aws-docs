@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/extract-contents-cdi
 ---
 
 # Identifying content in a CDI source
-<a name="extract-contents-cdi"></a>
 
 The content in a CDI source always consists of uncompressed video, uncompressed audio, and captions.
 

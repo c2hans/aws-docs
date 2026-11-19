@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/supported-iam-actio
 ---
 
 # Grant permission to tag resources during creation
-<a name="supported-iam-actions-tagging"></a>
 
 Some resource-creating Amazon DRS API actions allow you to specify tags when you create the resource. You can use resource tags to implement attribute-based access control (ABAC).
 

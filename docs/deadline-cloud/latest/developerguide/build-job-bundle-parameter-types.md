@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 ---
 
 # Job parameter types
-<a name="build-job-bundle-parameter-types"></a>
 
 Each entry in a job template's `parameterDefinitions` list declares one job parameter. Every parameter has a `name` and a `type`, and can have a `description`, a `default`, and a `userInterface` block with a `label`, a `groupLabel`, and a `control`. The type determines which values the parameter accepts, which constraint fields it supports, and which control the submission dialog shows for it by default. A template refers to the value as `{{Param.{{Name}}}}`. The types are as follows.
 

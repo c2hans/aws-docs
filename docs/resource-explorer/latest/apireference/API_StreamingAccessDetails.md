@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # StreamingAccessDetails
-<a name="API_StreamingAccessDetails"></a>
 
 Contains information about an AWS service that has been granted streaming access to your Resource Explorer data.
 

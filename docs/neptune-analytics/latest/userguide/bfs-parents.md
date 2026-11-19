@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bfs-p
 ---
 
 # Parents breadth-first search (BFS) algorithm
-<a name="bfs-parents"></a>
 
 The `parents` variant of breadth-first search is an algorithm for finding nodes from a starting node or vertices in breadth-first order and then performing a breadth-first search for the parent of each node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_L
 ---
 
 # ListDeliverabilityTestReports
-<a name="API_ListDeliverabilityTestReports"></a>
 
 Show a list of the predictive inbox placement tests that you've performed, regardless of their statuses. For predictive inbox placement tests that are complete, you can use the `GetDeliverabilityTestReport` operation to view the results.
 

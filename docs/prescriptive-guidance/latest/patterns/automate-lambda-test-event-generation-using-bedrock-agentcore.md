@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate Lambda test event generation using Amazon Bedrock AgentCore
-<a name="automate-lambda-test-event-generation-using-bedrock-agentcore"></a>
 
 *Ishita Gupta and Kriti Gupta, Amazon Web Services*
 

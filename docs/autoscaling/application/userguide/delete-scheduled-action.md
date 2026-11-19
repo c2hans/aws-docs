@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/delete
 ---
 
 # Delete a scheduled action for Application Auto Scaling using the AWS CLI
-<a name="delete-scheduled-action"></a>
 
 When you are finished with a scheduled action, you can delete it.
 

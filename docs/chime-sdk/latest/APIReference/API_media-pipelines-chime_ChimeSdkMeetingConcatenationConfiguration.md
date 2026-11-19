@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ChimeSdkMeetingConcatenationConfiguration
-<a name="API_media-pipelines-chime_ChimeSdkMeetingConcatenationConfiguration"></a>
 
 The configuration object of the Amazon Chime SDK meeting concatenation for a specified media pipeline.
 

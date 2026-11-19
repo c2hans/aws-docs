@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/micro
 ---
 
 # Microsoft 365 integration configuration
-<a name="microsoft365-setup"></a>
 
 This section describes how to configure Microsoft 365 as a data source for CloudWatch Pipeline.
 

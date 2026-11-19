@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/projects.html
 ---
 
 # Projects (OpenAI-compatible)
-<a name="projects"></a>
 
 Amazon Bedrock Projects API provides application-level isolation for your generative AI workloads using [OpenAI-compatible APIs](inference-responses-api.md). Projects enable you to organize and manage your AI applications with improved access control, cost tracking, and observability across your organization.
 

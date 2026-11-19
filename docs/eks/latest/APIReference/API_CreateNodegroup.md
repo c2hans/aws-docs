@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateNodegr
 ---
 
 # CreateNodegroup
-<a name="API_CreateNodegroup"></a>
 
 Creates a managed node group for an Amazon EKS cluster.
 

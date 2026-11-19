@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Input Smpte2110ReceiverGroup
-<a name="aws-properties-medialive-input-smpte2110receivergroup"></a>
 
 A receiver group is a collection of video, audio, and ancillary streams that you want to group together and attach to one input.
 

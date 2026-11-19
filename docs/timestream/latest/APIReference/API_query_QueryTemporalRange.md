@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # QueryTemporalRange
-<a name="API_query_QueryTemporalRange"></a>
 
 Provides insights into the temporal range of the query, including the table with the largest (max) time range.
 

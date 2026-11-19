@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # How assessments use assertions
-<a name="next-gen-how-assertions-are-used"></a>
 
 A failure mode assessment treats assertions as authoritative facts about your environment. Assertions take precedence over what the assessment can or cannot observe in your resource configuration. During an assessment, the next generation of Resilience Hub uses assertions to:
 + **Calibrate the analysis** – For example, an assertion about peak traffic lets the assessment evaluate whether your capacity, quotas, and scaling configuration are adequate instead of speculating about load.

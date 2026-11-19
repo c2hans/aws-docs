@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteFileSy
 ---
 
 # DeleteFileSystemWindowsResponse
-<a name="API_DeleteFileSystemWindowsResponse"></a>
 
 The response object for the Microsoft Windows file system used in the `DeleteFileSystem` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThin
 ---
 
 # DescribeThingRegistrationTask
-<a name="API_DescribeThingRegistrationTask"></a>
 
 Describes a bulk thing provisioning task.
 

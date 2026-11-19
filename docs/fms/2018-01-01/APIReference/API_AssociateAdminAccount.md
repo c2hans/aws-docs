@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Associat
 ---
 
 # AssociateAdminAccount
-<a name="API_AssociateAdminAccount"></a>
 
 Sets a AWS Firewall Manager default administrator account. The Firewall Manager default administrator account can manage third-party firewalls and has full administrative scope that allows administration of all policy types, accounts, organizational units, and Regions. This account must be a member account of the organization in AWS Organizations whose resources you want to protect.
 

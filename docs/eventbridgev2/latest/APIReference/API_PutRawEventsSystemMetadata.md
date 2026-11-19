@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Pu
 ---
 
 # PutRawEventsSystemMetadata
-<a name="API_PutRawEventsSystemMetadata"></a>
 
 System metadata for PutRawEvents entries. ContentType is required because PutRawEvents supports arbitrary binary formats.
 

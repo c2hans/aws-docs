@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/FLOOR.h
 ---
 
 # FLOOR function
-<a name="FLOOR"></a>
 
 The FLOOR function rounds a number down to the next whole number.
 

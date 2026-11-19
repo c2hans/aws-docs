@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Encryp
 ---
 
 # EncryptionConfigurationForRepositoryCreationTemplate
-<a name="API_EncryptionConfigurationForRepositoryCreationTemplate"></a>
 
 The encryption configuration to associate with the repository creation template.
 

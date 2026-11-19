@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/delete-hybrid-a
 ---
 
 # Removing principals and resources from hybrid access mode
-<a name="delete-hybrid-access"></a>
 
  Follow these steps to remove databases, tables, and principals from hybrid access mode.
 

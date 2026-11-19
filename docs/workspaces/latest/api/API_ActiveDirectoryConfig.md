@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ActiveDirector
 ---
 
 # ActiveDirectoryConfig
-<a name="API_ActiveDirectoryConfig"></a>
 
 Information about the Active Directory config.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/building-srgs.html
 ---
 
 # Grammar slot type
-<a name="building-srgs"></a>
 
 **Important**
 Amazon Lex V2 grants access to grammar slot types for each AWS account. If your account doesn't have access, Amazon Lex V2 rejects attempts to add a grammar slot type to a bot. Amazon Lex V2 also rejects builds for locales that include a grammar slot type. To request access for your account, contact AWS Support. If you don't need to author your own grammar, you can use a custom slot type instead.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/getting-started-step
 ---
 
 # Step 9: Create your channel
-<a name="getting-started-step7"></a>
 
 You have entered the minimum required information, so you are ready to create the channel.
 

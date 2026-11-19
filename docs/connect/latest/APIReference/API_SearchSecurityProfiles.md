@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchSe
 ---
 
 # SearchSecurityProfiles
-<a name="API_SearchSecurityProfiles"></a>
 
 Searches security profiles in an Connect Customer instance, with optional filtering.
 

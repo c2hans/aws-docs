@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisS
 ---
 
 # AxisScale
-<a name="API_AxisScale"></a>
 
 The scale setup options for a numeric axis display.
 

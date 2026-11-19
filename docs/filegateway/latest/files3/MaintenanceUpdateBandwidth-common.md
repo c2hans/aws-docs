@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/MaintenanceUpd
 ---
 
 # Managing bandwidth for your Amazon S3 File Gateway
-<a name="MaintenanceUpdateBandwidth-common"></a>
 
 You can limit the upload throughput from your gateway to AWS to control the amount of network bandwidth the gateway uses. By default, an activated gateway has no rate limits.
 

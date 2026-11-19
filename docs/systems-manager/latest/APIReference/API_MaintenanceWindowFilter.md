@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowFilter
-<a name="API_MaintenanceWindowFilter"></a>
 
 Filter used in the request. Supported filter keys depend on the API operation that includes the filter. API operations that use `MaintenanceWindowFilter>` include the following:
 +  [DescribeMaintenanceWindowExecutions](API_DescribeMaintenanceWindowExecutions.md)

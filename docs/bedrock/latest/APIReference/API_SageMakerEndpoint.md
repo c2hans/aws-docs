@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_SageMake
 ---
 
 # SageMakerEndpoint
-<a name="API_SageMakerEndpoint"></a>
 
 Specifies the configuration for a Amazon SageMaker endpoint.
 

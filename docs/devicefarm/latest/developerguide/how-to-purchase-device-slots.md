@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-
 ---
 
 # Purchasing a device slot in Device Farm
-<a name="how-to-purchase-device-slots"></a>
 
 Device farm has two billing methods for testing on public mobile devices: metered and unmetered. With metered billing, you pay-as-you-go based on device minutes. To learn more about metered, pay-as-you-go pricing, visit here: [https://aws.amazon.com/device-farm/pricing/](https://aws.amazon.com/device-farm/pricing/). With unmetered billing, you reserve device concurrency through Device slots, which are billed at a flat monthly rate. This page covers unmetered, device slot billing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeEngineDefaultParameters
-<a name="API_DescribeEngineDefaultParameters"></a>
 
 Returns the default engine and system parameter information for the specified database engine.
 

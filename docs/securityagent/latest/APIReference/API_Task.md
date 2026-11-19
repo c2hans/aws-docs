@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ta
 ---
 
 # Task
-<a name="API_Task"></a>
 
 Represents an individual security test task within a pentest job. Each task targets a specific risk type or endpoint and executes independently.
 

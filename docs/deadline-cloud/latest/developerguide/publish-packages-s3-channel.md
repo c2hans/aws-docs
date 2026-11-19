@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/pub
 ---
 
 # Publish packages to an Amazon S3 conda channel
-<a name="publish-packages-s3-channel"></a>
 
 You can publish conda packages to an Amazon Simple Storage Service (Amazon S3) bucket so that AWS Deadline Cloud (Deadline Cloud) workers can install them for running jobs. The `rattler-build publish` command works with Amazon S3 the same way as with a local filesystem channel. The command can build a recipe and publish the result, or publish a package file that you already built. In both cases, the command uploads the package to the bucket and indexes the channel in one step.
 

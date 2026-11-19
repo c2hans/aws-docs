@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/filter-real-time.h
 ---
 
 # Filtering real-time recommendations
-<a name="filter-real-time"></a>
 
 You can filter real-time recommendations with the Amazon Personalize console, AWS Command Line Interface (AWS CLI), or the AWS SDKs.
 

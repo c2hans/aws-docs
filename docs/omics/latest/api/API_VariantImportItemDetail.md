@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_VariantImportItemDe
 ---
 
 # VariantImportItemDetail
-<a name="API_VariantImportItemDetail"></a>
 
 Details about an imported variant item.
 

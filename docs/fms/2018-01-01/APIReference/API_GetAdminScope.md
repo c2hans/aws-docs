@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetAdmin
 ---
 
 # GetAdminScope
-<a name="API_GetAdminScope"></a>
 
 Returns information about the specified account's administrative scope. The administrative scope defines the resources that an Firewall Manager administrator can manage.
 

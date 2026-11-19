@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # KnowledgeBase
-<a name="API_agent-runtime_KnowledgeBase"></a>
 
  Details of the knowledge base associated withe inline agent.
 

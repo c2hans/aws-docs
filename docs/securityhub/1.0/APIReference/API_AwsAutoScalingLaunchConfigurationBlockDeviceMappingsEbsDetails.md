@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetails
-<a name="API_AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetails"></a>
 
 Parameters that are used to automatically set up EBS volumes when an instance is launched.
 

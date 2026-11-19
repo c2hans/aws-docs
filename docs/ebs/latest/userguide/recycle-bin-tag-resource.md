@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-tag-res
 ---
 
 # Tag a Recycle Bin retention rule
-<a name="recycle-bin-tag-resource"></a>
 
 You can assign custom tags to your retention rules to categorize them in different ways, for example, by purpose, owner, or environment. This helps you to efficiently find a specific retention rule based on the custom tags that you assigned.
 

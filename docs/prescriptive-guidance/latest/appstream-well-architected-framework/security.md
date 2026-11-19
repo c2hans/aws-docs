@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 ---
 
 # Security pillar
-<a name="security"></a>
 
 The [Security pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/security.html) of the AWS Well-Architected Framework focuses on using cloud capabilities to help you protect your information, infrastructure, and resources. The pillar's design principles and best practices help you improve your security posture while you continue to innovate.
 

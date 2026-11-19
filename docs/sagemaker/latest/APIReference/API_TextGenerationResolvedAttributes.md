@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TextGe
 ---
 
 # TextGenerationResolvedAttributes
-<a name="API_TextGenerationResolvedAttributes"></a>
 
 The resolved attributes specific to the text generation problem type.
 

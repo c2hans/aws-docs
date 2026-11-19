@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Updat
 ---
 
 # UpdateWorkspaceConfiguration
-<a name="API_UpdateWorkspaceConfiguration"></a>
 
 Use this operation to create or update the label sets, label set limits, and retention period of a workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetVoiceConnectorTerminationHealth
-<a name="API_voice-chime_GetVoiceConnectorTerminationHealth"></a>
 
 Retrieves information about the last time a `SIP OPTIONS` ping was received from your SIP infrastructure for the specified Amazon Chime SDK Voice Connector.
 

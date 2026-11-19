@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel07-b
 ---
 
 # REL07-BP02 Obtain resources upon detection of impairment to a workload
-<a name="rel07-bp02"></a>
 
  Adding or replacing unhealthy resources automatically can restore service before your customers feel the impact. This requires quick detection and a defined response. Reactive scaling is a recovery mechanism, distinct from scaling that anticipates rising demand.
 

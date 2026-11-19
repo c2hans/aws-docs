@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Serverl
 ---
 
 # ServerlessIdentifier
-<a name="API_ServerlessIdentifier"></a>
 
 The identifier for a serverless namespace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/accessing-cach
 ---
 
 # Accessing caches
-<a name="accessing-caches"></a>
 
 In the following topics, you can learn how to access your cache on a Linux instance. In addition, you can find how to use the file `fstab` to automatically remount your cache after any system restarts.
 

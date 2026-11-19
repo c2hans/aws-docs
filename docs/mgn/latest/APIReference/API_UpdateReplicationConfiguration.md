@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateReplic
 ---
 
 # UpdateReplicationConfiguration
-<a name="API_UpdateReplicationConfiguration"></a>
 
 Allows you to update multiple ReplicationConfigurations by Source Server ID.
 

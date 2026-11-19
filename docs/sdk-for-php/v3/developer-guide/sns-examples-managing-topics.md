@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sns-examp
 ---
 
 # Managing topics in Amazon SNS with the AWS SDK for PHP Version 3
-<a name="sns-examples-managing-topics"></a>
 
 To send notifications to Amazon Simple Queue Service (Amazon SQS), HTTP/HTTPS URLs, email, AWS SMS, or AWS Lambda, you must first create a topic that manages the delivery of messages to any subscribers of that topic.
 

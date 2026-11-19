@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MetricsByTime
-<a name="API_CostOptimizationHub_MetricsByTime"></a>
 
 Contains efficiency metrics for a specific point in time, including an efficiency score, potential savings, optimizable spend, and timestamp.
 

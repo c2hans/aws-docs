@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/gs-c
 ---
 
 # Getting started with EMR Serverless from the console
-<a name="gs-console"></a>
 
 This section describes working with EMR Serverless, including creating an EMR Studio. It also describes how to submit job runs and view logs.
 

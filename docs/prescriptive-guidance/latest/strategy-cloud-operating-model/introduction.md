@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Building your Cloud Operating Model
-<a name="introduction"></a>
 
 *David Stanley, Russell Easter, and Brian Quinn, Amazon Web Services*
 

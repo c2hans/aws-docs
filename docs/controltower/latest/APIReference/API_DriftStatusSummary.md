@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Dri
 ---
 
 # DriftStatusSummary
-<a name="API_DriftStatusSummary"></a>
 
 The drift summary of the enabled control.
 

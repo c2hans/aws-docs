@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/quantum-
 ---
 
 # ![AWS Management Console icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/quantum-technologies-icon.jpg)Quantum technologies
-<a name="quantum-technologies"></a>
 
 ------
 #### [ Amazon Braket ]

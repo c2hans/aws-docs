@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Snowfla
 ---
 
 # SnowflakeRoleConfiguration
-<a name="API_SnowflakeRoleConfiguration"></a>
 
 Optionally configure a Snowflake role. Otherwise the default user role will be used.
 

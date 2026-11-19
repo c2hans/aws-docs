@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/security-i
 ---
 
 # Image Builder identity-based policies
-<a name="security-iam-identity-based-policies"></a>
 
 **Topics**
 + [Identity-based policy best practices](#security-iam-service-policy-best-practices)

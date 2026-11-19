@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ken
 ---
 
 # KendraSourceDetail
-<a name="API_KendraSourceDetail"></a>
 
 The source details for the Kendra dataset source.
 

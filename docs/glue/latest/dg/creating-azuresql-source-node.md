@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-azuresql-source-
 ---
 
 # Creating a Azure SQL source node
-<a name="creating-azuresql-source-node"></a>
 
 ## Prerequisites needed
 <a name="creating-azuresql-source-node-prerequisites"></a>

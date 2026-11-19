@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Further reading
-<a name="resources"></a>
 
 For additional information, see the following resources.
 

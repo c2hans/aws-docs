@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # IceServer
-<a name="API_signaling_IceServer"></a>
 
 A structure for the ICE server connection data.
 

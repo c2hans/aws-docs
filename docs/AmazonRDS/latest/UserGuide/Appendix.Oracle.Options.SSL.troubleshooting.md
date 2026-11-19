@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Troubleshooting SSL connections
-<a name="Appendix.Oracle.Options.SSL.troubleshooting"></a>
 
 You might query your database and receive the `ORA-28860` error.
 

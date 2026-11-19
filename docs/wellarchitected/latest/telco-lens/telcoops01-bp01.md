@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoo
 ---
 
 # TELCOOPS01-BP01 Promote cross-functional collaboration across internal and external stakeholders
-<a name="telcoops01-bp01"></a>
 
  Involve key stakeholders, including business, development, and operations teams, to determine where to focus efforts on external and internal goals. Identify long-term and short-term goals that help prioritize tasks with added efficiency. Encourage collaboration between different teams, such as network engineers, cloud architects, ISV architects, and security experts, to enable efficient communication and knowledge sharing across the organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # PortSet
-<a name="API_PortSet"></a>
 
 A set of port ranges for use in the rules in a rule group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_GetRequesterGa
 ---
 
 # GetRequesterGateway
-<a name="API_GetRequesterGateway"></a>
 
 Retrieves information about a requester gateway.
 

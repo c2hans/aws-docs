@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mcp-sap/latest/awsforsapmcp/doc-history.
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 The following table describes important changes to the AWS for SAP MCP Server User Guide.
 

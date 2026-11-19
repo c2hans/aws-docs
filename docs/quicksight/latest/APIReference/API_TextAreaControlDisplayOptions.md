@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TextA
 ---
 
 # TextAreaControlDisplayOptions
-<a name="API_TextAreaControlDisplayOptions"></a>
 
 The display options of a control.
 

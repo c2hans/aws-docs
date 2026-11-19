@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListJ
 ---
 
 # ListJobsResponseEntry
-<a name="API_ListJobsResponseEntry"></a>
 
 Job summary information returned in list operations.
 

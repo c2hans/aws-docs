@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-mtu
 ---
 
 # Set the MTU for your Amazon EC2 instances
-<a name="ec2-instance-mtu"></a>
 
 The maximum transmission unit (MTU) of a network connection is the size, in bytes, of the largest permissible packet that can be passed over the connection. All Amazon EC2 instances support standard frames (1500 MTU) and all current generation instance types support jumbo frames (9001 MTU).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/video-passthrough
 ---
 
 # Video passthrough codec support and job settings requirements
-<a name="video-passthrough-feature-restrictions"></a>
 
 The following table shows which combinations of input video codec and output container support video passthrough.
 

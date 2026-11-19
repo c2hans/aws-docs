@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-sms-m
 ---
 
 # What is AWS End User Messaging SMS?
-<a name="what-is-sms-mms"></a>
 
 **Note**
 The SMS, MMS, and voice (text to speech) features of Amazon Pinpoint are now called AWS End User Messaging.

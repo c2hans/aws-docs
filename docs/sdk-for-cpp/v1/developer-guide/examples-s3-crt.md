@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Using `S3CrtClient` for Amazon S3 operations
-<a name="examples-s3-crt"></a>
 
 The `S3CrtClient` class is available in version 1.9 of the AWS SDK for C\+\+ and improves the throughput of uploading and downloading large data files to and from Amazon S3. For more information on the improvements of this release, see [Improving Amazon S3 Throughput with AWS SDK for C\+\+ v1.9 ](https://github.com/aws/aws-sdk-cpp/wiki/Improving-S3-Throughput-with-AWS-SDK-for-CPP-v1.9)
 

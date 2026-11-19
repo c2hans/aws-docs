@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/logg
 ---
 
 # Logging and monitoring
-<a name="logging-monitoring"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of EMR Serverless applications and jobs. You should collect monitoring data from all of the parts of your EMR Serverless solutions so that multipoint failures can be debugged more easily if they occur.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/race-m
 ---
 
 # Race Management
-<a name="race-management"></a>
 
 Race Management covers running **physical** racing events on your deployment. At these events, participants drive real vehicles on a real track, and a race facilitator records their lap times as the cars complete laps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListBack
 ---
 
 # ListBackendEnvironments
-<a name="API_ListBackendEnvironments"></a>
 
 Lists the backend environments for an Amplify app.
 

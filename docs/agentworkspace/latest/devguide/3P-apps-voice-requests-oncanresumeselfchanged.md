@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Subscribe to self resume capability change events in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-oncanresumeselfchanged"></a>
 
 Subscribes to events when the current user's capability to be resumed from hold changes.
 

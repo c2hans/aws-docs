@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_H
 ---
 
 # Hive
-<a name="API_Hive"></a>
 
 The configurations for the Hive job driver.
 

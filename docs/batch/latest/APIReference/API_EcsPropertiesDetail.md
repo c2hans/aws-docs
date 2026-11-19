@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EcsPropert
 ---
 
 # EcsPropertiesDetail
-<a name="API_EcsPropertiesDetail"></a>
 
 An object that contains the details for the Amazon ECS resources of a job.
 

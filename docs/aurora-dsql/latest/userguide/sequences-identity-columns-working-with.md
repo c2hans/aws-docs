@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/sequences-i
 ---
 
 # Working with sequences and identity columns
-<a name="sequences-identity-columns-working-with"></a>
 
 This section helps you understand how best to use sequences and identity columns based on workload patterns.
 

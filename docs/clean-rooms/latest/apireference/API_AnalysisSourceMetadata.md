@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisSourceMetadata
-<a name="API_AnalysisSourceMetadata"></a>
 
 The analysis source metadata.
 

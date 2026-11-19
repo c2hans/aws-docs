@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-met
 ---
 
 # Meta
-<a name="model-cards-meta"></a>
 
 The following Meta models are available in Amazon Bedrock:
 

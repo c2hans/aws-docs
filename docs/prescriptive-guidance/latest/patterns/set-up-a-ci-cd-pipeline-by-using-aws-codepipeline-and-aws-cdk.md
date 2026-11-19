@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Set up a CI/CD pipeline by using AWS CodePipeline and AWS CDK
-<a name="set-up-a-ci-cd-pipeline-by-using-aws-codepipeline-and-aws-cdk"></a>
 
 *Konstantin Zarudaev, Yasha Dabas, Lars Kinder, and Cizer Pereira, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/failback-failover-d
 ---
 
 # Running the DRSFA client
-<a name="failback-failover-drsfa-running"></a>
 
 Navigate to the `drs_failback_automation_client` directory, set the required environment variables, and run the client.
 

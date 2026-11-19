@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListMobileSd
 ---
 
 # ListMobileSdkReleases
-<a name="API_ListMobileSdkReleases"></a>
 
 Retrieves a list of the available releases for the mobile SDK and the specified device platform.
 

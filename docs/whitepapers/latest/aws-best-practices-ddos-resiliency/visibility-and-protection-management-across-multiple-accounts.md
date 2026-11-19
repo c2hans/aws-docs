@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Visibility and protection management across multiple accounts
-<a name="visibility-and-protection-management-across-multiple-accounts"></a>
 
 In scenarios when you operate across multiple AWS accounts and have multiple components to protect, use techniques that enable you to operate at scale and reduce operational overhead to increase your mitigation capabilities.
 

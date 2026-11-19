@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TaskTemp
 ---
 
 # TaskTemplateConstraints
-<a name="API_TaskTemplateConstraints"></a>
 
 Describes constraints that apply to the template fields.
 

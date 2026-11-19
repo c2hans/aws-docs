@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/bu
 ---
 
 # Build a data pipeline to ingest, transform, and analyze Google Analytics data using the AWS DataOps Development Kit
-<a name="build-a-data-pipeline-to-ingest-transform-and-analyze-google-analytics-data-using-the-aws-dataops-development-kit"></a>
 
 *Anton Kukushkin and Rudy Puig, Amazon Web Services*
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-projects.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Working with Argo CD Projects
-<a name="argocd-projects"></a>
 
 Argo CD Projects (AppProject) provide logical grouping and access control for Applications. Projects define which Git repositories, target clusters, and namespaces Applications can use, enabling multi-tenancy and security boundaries in shared Argo CD instances.
 

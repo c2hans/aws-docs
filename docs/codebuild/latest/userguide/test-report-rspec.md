@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-report-r
 ---
 
 # Set up test reporting with RSpec
-<a name="test-report-rspec"></a>
 
 The following procedure demonstrates how to set up test reporting in AWS CodeBuild with the [RSpec testing framework](https://rspec.info/).
 

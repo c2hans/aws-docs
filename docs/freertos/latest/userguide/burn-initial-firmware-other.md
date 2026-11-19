@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/burn-initial-f
 ---
 
 # Install the initial version of firmware on a custom board
-<a name="burn-initial-firmware-other"></a>
 
 Using your IDE, build the `aws_demos` project, making sure to include the OTA library. For more information about the structure of the FreeRTOS source code, see [FreeRTOS demos](freertos-next-steps.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicyDetailExclusionRulesAmisLastLaunched
-<a name="API_LifecyclePolicyDetailExclusionRulesAmisLastLaunched"></a>
 
 Defines criteria to exclude AMIs from lifecycle actions based on the last time they were used to launch an instance.
 

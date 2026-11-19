@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartC
 ---
 
 # StartChildWorkflowExecutionDecisionAttributes
-<a name="API_StartChildWorkflowExecutionDecisionAttributes"></a>
 
 Provides the details of the `StartChildWorkflowExecution` decision.
 

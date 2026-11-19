@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListPrivateConnections
-<a name="API_ListPrivateConnections"></a>
 
 Lists the private connections in your account.
 

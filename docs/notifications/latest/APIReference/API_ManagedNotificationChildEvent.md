@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ma
 ---
 
 # ManagedNotificationChildEvent
-<a name="API_ManagedNotificationChildEvent"></a>
 
 A notification-focused representation of an event. They contain semantic information used to create aggregated or non-aggregated end-user notifications.
 

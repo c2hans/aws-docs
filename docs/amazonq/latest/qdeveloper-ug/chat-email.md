@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-email.
 ---
 
 # Chatting about email sending
-<a name="chat-email"></a>
 
 This conversational experience is now part of the AWS assistant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 ---
 
 # Using Amazon EFS to transfer dump files
-<a name="dump-files-to-amazon-efs"></a>
 
 [Amazon Elastic File System](https://docs.aws.amazon.com/efs/latest/ug/) (Amazon EFS) provides serverless, fully elastic file storage for sharing file data without managing capacity or performance. With this approach, you can transfer Oracle Data Pump files between your Oracle DB instance and your Amazon RDS for Oracle DB instance by using Amazon EFS. You don't need to copy these files locally because Data Pump imports directly from the Amazon EFS file system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtim
 ---
 
 # InvokeEndpoint
-<a name="API_runtime_InvokeEndpoint"></a>
 
 After you deploy a model into production using Amazon SageMaker AI hosting services, your client applications use this API to get inferences from the model hosted at the specified endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/version.html
 ---
 
 # Determining the Amazon Silk build version
-<a name="version"></a>
 
 Each version of Amazon Silk includes a build version and a browser version. In some troubleshooting scenarios, you may need to know both the browser and build versions for a given Amazon Silk client. You can find these values from the Amazon Silk user agent string.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # GetResolverDnssecConfig
-<a name="API_route53resolver_GetResolverDnssecConfig"></a>
 
 Gets DNSSEC validation information for a specified resource.
 

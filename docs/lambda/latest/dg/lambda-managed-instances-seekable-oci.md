@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Lazy-load container images with Seekable OCI (SOCI)
-<a name="lambda-managed-instances-seekable-oci"></a>
 
 For Lambda Event Functions deployed as container images on Lambda Managed Instances, Lambda downloads and unpacks the image on each instance before it starts an execution environment. For large images, this pull is the largest part of the time between publishing a function version or scaling out and the execution environment handling its first invocation. With Seekable OCI (SOCI), Lambda can start the execution environment before the whole image has been downloaded.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-propert
 ---
 
 # Index Property: expireAfterSeconds
-<a name="index-property-expireafterseconds"></a>
 
 ## Supported index types
 <a name="index-property-expireafterseconds-supported"></a>

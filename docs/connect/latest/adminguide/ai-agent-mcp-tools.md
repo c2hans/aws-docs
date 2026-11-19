@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-mcp-t
 ---
 
 # Enable AI agents to retrieve information and complete actions with MCP tools
-<a name="ai-agent-mcp-tools"></a>
 
 Connect Customer supports Model Context Protocol (MCP), enabling AI agents for both end-customer self-service and employee assistance to use standardized tools for retrieving information and completing actions. With MCP support, you can enhance your AI agents with extensible tool capabilities that reduce contact handle time and increase issue resolution across customer and agent interactions.
 

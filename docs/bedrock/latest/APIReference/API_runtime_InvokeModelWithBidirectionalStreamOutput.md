@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # InvokeModelWithBidirectionalStreamOutput
-<a name="API_runtime_InvokeModelWithBidirectionalStreamOutput"></a>
 
 Output from the bidirectional stream that was used for model invocation.
 

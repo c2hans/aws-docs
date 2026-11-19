@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ResponseConfigura
 ---
 
 # ResponseConfiguration
-<a name="API_ResponseConfiguration"></a>
 
 Configuration that defines how to parse JSON responses from REST API calls, including paths to result data and error information.
 

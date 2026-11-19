@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_St
 ---
 
 # StartConversationResponseEventStream
-<a name="API_runtime_StartConversationResponseEventStream"></a>
 
 Represents a stream of events between Amazon Lex and your application.
 

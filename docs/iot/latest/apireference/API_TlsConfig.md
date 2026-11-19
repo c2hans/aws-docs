@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TlsConfig.ht
 ---
 
 # TlsConfig
-<a name="API_TlsConfig"></a>
 
 An object that specifies the TLS configuration for a domain.
 

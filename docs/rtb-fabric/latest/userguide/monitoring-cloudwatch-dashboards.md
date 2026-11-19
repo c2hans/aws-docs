@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/monitoring-c
 ---
 
 # Creating CloudWatch dashboards for RTB Fabric
-<a name="monitoring-cloudwatch-dashboards"></a>
 
 You can create CloudWatch dashboards to visualize RTB Fabric metrics and monitor the health and performance of your RTB gateways and links in real time.
 

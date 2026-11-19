@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Create an EventBridge rule for a CodeCommit source (CLI)
-<a name="pipelines-trigger-source-repo-changes-cli"></a>
 
 Call the **put-rule** command, specifying:
 + A name that uniquely identifies the rule you are creating. This name must be unique across all of the pipelines you create with CodePipeline associated with your AWS account.

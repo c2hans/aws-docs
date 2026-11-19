@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::Function CustomOutputConfiguration
-<a name="aws-properties-mediatailor-function-customoutputconfiguration"></a>
 
 The configuration for a `CUSTOM_OUTPUT` function. MediaTailor evaluates the output expressions against the current session state and commits the results as output bindings. `CUSTOM_OUTPUT` functions do not make external calls. For more information, see [CUSTOM\_OUTPUT](https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions-types-custom-output.html) in the *MediaTailor User Guide*.
 

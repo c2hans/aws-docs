@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides troubleshooting information for Spatial Data Management on AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Details
-<a name="backend-appid-details"></a>
 
 Project-level details for your Amplify project.
 

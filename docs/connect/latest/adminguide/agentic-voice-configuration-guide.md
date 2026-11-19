@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agentic-voice-
 ---
 
 # Agentic voice configuration guide
-<a name="agentic-voice-configuration-guide"></a>
 
 Amazon Connect agentic voice is a next-generation speech experience that delivers expressive voice capabilities and enhanced automatic speech recognition (ASR). It integrates natively with your existing Amazon Connect contact flows and bot configurations.
 

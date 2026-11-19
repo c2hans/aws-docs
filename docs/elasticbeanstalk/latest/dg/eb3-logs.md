@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-logs.html
 ---
 
 # **eb logs**
-<a name="eb3-logs"></a>
 
 ## Description
 <a name="eb3-logsdescription"></a>

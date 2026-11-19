@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/create-cu
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Making an editable copy of an existing framework in AWS Audit Manager
-<a name="create-custom-frameworks-from-existing"></a>
 
 Instead of creating a custom framework from scratch, you can use an existing framework as a starting point and make an editable copy. When you do this, the existing framework remains in the framework library, and a new custom framework is created with your specific settings.
 

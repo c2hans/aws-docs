@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/version-differe
 ---
 
 # Differences between Grafana versions
-<a name="version-differences"></a>
 
 When [creating a Grafana workspace](AMG-create-workspace.md), you must choose a Grafana version to create. Amazon Managed Grafana supports versions 9, 10, 12, and 13. Each of these has added functionality from the previous version. The following topics describe the changes in versions 9, 10, 12, and 13, including changes that might break functionality that you use in previous versions.
 

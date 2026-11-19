@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_OdbPeeringCo
 ---
 
 # OdbPeeringConnectionSummary
-<a name="API_OdbPeeringConnectionSummary"></a>
 
 A summary of an ODB peering connection.
 

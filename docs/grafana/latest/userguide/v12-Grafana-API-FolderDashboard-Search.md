@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-Grafana-API
 ---
 
 # Folder/Dashboard Search API
-<a name="v12-Grafana-API-FolderDashboard-Search"></a>
 
 Use the FolderDashboard-Search API to search folders and dashboards in an Amazon Managed Grafana workspace.
 

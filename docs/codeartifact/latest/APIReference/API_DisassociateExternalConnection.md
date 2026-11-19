@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Dis
 ---
 
 # DisassociateExternalConnection
-<a name="API_DisassociateExternalConnection"></a>
 
  Removes an existing external connection from a repository.
 

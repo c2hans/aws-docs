@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ExportEncryptionC
 ---
 
 # ExportEncryptionConfiguration
-<a name="API_ExportEncryptionConfiguration"></a>
 
 The encryption configuration for exported data catalog metadata.
 

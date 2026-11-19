@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/performance-sys
 ---
 
 # System bandwidth
-<a name="performance-system-bandwidth"></a>
 
 System bandwidth is the rate at which network and data traffic moves between process on each core, and between those cores and memory.
 

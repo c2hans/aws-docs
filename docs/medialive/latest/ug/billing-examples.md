@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/billing-examples.htm
 ---
 
 # Examples
-<a name="billing-examples"></a>
 
 The following examples show how to decode MediaLive usage type strings.
 

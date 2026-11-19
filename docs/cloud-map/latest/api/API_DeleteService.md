@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_DeleteService.h
 ---
 
 # DeleteService
-<a name="API_DeleteService"></a>
 
 Deletes a specified service and all associated service attributes. If the service still contains one or more registered instances, the request fails.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource.
 

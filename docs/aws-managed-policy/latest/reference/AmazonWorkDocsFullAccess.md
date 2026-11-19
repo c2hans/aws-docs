@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkDocsFullAccess
-<a name="AmazonWorkDocsFullAccess"></a>
 
 **Description**: Provides full access to Amazon WorkDocs via the AWS Management Console
 

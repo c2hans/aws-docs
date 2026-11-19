@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-migration-rollfor
 ---
 
 # Roll forward to KCL 3.5.x after a rollback from KCL 3.5.x
-<a name="kcl-migration-rollforward"></a>
 
 This topic explains the steps to roll forward your consumer back to KCL 3.5.x after a rollback. When you need to roll forward, you must go through a two-step process:
 

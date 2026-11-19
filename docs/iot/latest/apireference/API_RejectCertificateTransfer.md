@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_RejectCertif
 ---
 
 # RejectCertificateTransfer
-<a name="API_RejectCertificateTransfer"></a>
 
 Rejects a pending certificate transfer. After AWS IoT rejects a certificate transfer, the certificate status changes from **PENDING\_TRANSFER** to **INACTIVE**.
 

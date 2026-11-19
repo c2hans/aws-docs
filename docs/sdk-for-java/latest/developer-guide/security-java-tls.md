@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/secu
 ---
 
 # Working with TLS in the SDK for Java
-<a name="security-java-tls"></a>
 
 The AWS SDK for Java uses the TLS capabilities of its underlying Java platform. In this topic, we show examples using the OpenJDK implementation used by [Amazon Corretto 17](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/index.html).
 

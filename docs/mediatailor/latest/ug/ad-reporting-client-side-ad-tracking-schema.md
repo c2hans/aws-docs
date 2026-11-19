@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-clien
 ---
 
 # Client-side ad-tracking schema and properties
-<a name="ad-reporting-client-side-ad-tracking-schema"></a>
 
 With the MediaTailor client-side ad-tracking feature, you can integrate detailed client-side ad tracking data into your player environment. The following sections cover the overall ad-tracking schema, as well as the specific properties and values that make up the schema.
 

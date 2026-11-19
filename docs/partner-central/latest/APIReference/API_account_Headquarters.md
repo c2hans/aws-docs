@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Headquarters
-<a name="API_account_Headquarters"></a>
 
 Contains the partner's headquarters location using International Organization for Standardization (ISO) 3166 country and subdivision codes.
 

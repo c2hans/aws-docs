@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.cdbf27af-1fae-5c4c-9359-7e467975f06c"></a>

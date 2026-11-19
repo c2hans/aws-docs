@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Protecting your origin (BP1, BP5)
-<a name="protecting-your-origin-bp1-bp5"></a>
 
  When using [Amazon CloudFront](https://aws.amazon.com/cloudfront/) with an origin inside your VPC, it's crucial to ensure that only your CloudFront distribution can forward requests to your origin. AWS provides several approaches to implement this security control, with CloudFront VPC origins being the newest and recommended solution.
 

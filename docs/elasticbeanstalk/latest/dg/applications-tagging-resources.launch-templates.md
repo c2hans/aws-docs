@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-
 ---
 
 # Tag propagation to launch templates
-<a name="applications-tagging-resources.launch-templates"></a>
 
 **Note**
 This applies only to Beanstalk Standard. Beanstalk Cluster doesn't use Amazon EC2 Auto Scaling launch templates.

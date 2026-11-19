@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/unregister-auth-serv
 ---
 
 # unregister-auth-server
-<a name="unregister-auth-server"></a>
 
 Unregisters an external authentication server. After you unregister an external authentication server, it can no longer be used to generate OAuth 2.0 access tokens.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeCert
 ---
 
 # DescribeCertificateProvider
-<a name="API_DescribeCertificateProvider"></a>
 
 Describes a certificate provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/difference-functi
 ---
 
 # difference
-<a name="difference-function"></a>
 
 The `difference` function calculates the difference between a measure based on one set of partitions and sorts, and a measure based on another.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/iam-policy-to-use-s3-
 ---
 
 # IAM policy to use Amazon S3 objects with DataBrew
-<a name="iam-policy-to-use-s3-for-data-resource-role"></a>
 
 The `AwsGlueDataBrewSpecificS3BucketPolicy` policy grants the permissions needed to access S3 on behalf of nonadministrative users.
 

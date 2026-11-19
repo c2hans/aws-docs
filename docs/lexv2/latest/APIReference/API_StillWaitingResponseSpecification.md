@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_StillWaiti
 ---
 
 # StillWaitingResponseSpecification
-<a name="API_StillWaitingResponseSpecification"></a>
 
 Defines the messages that Amazon Lex sends to a user to remind them that the bot is waiting for a response.
 

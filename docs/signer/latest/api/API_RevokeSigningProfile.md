@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_RevokeSigningProfi
 ---
 
 # RevokeSigningProfile
-<a name="API_RevokeSigningProfile"></a>
 
 Changes the state of a signing profile to `REVOKED`. This indicates that signatures generated using the signing profile after an effective start date are no longer valid. A revoked profile is still viewable with the `ListSigningProfiles` operation, but it cannot perform new signing jobs. See [Data Retention](https://docs.aws.amazon.com/signer/latest/developerguide/retention.html) for more information on scheduled deletion of a revoked signing profile.
 

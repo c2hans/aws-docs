@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestS
 ---
 
 # TestSummary
-<a name="API_TestSummary"></a>
 
 Contains summary information about a test.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_B
 ---
 
 # BrowserSettingsSummary
-<a name="API_BrowserSettingsSummary"></a>
 
 The summary for browser settings.
 

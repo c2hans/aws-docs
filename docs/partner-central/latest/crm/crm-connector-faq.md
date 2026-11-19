@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/crm-connector
 ---
 
 # AWS Partner CRM connector FAQ
-<a name="crm-connector-faq"></a>
 
 The topics in this section help answer frequently asked questions about AWS Partner CRM integration and using the CRM connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cfcn-byo-c
 ---
 
 # Set up a configuration package for CloudFormation StackSets
-<a name="cfcn-byo-cfn-stacksets"></a>
 
 This section explains how to set up a configuration package for CloudFormation StackSets. The two main parts of this process are: (1) prepare the manifest file, and (2) update the folder structure.
 

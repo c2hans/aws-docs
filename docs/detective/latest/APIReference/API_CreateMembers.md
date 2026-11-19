@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Create
 ---
 
 # CreateMembers
-<a name="API_CreateMembers"></a>
 
  `CreateMembers` is used to send invitations to accounts. For the organization behavior graph, the Detective administrator account uses `CreateMembers` to enable organization accounts as member accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/passth
 ---
 
 # Passthrough of Live Event POST Commands
-<a name="passthrough-live-event-post-commands"></a>
 
 ## HTTP Request and Response
 <a name="passthrough-live-event-post-commands-http-request-response"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/variables-session.
 ---
 
 # MediaTailor session variables for ADS requests
-<a name="variables-session"></a>
 
 AWS Elemental MediaTailor sends session data to the Ad Decision Server (ADS) when you configure AWS Elemental MediaTailor to specify one or more of the variables listed in this section in the template ADS URL. You can use individual variables, and you can concatenate multiple variables to create a single value. MediaTailor generates some values and obtains the rest from sources like the manifest and the player's session initialization request.
 

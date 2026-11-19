@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/create-vpc-end
 ---
 
 # Create a VPC endpoint for Storage Gateway
-<a name="create-vpc-endpoint"></a>
 
 Follow these instructions to create a VPC endpoint. If you already have a VPC endpoint for Storage Gateway, you can use it.<a name="create-vpc-steps"></a>
 

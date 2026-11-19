@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UnknownConnectionConditionFlowValidationDetails
-<a name="API_agent_UnknownConnectionConditionFlowValidationDetails"></a>
 
 Details about an unknown condition for a connection.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/delegatio
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Deleting your completed delegations in AWS Audit Manager
-<a name="delegation-for-audit-owners-cancel-delegations"></a>
 
 There may be circumstances where you create a delegation but later no longer need assistance reviewing that control set. When this happens, you can delete an active delegation in Audit Manager. You can also delete completed delegations that you no longer want to see on the delegations page.
 

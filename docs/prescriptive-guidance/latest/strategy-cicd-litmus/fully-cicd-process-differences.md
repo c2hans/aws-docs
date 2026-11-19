@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # How fully CI/CD processes are different
-<a name="fully-cicd-process-differences"></a>
 
 CI/CD pipelines use a modern *trunk-based workflow*, in which developers merge small, frequent updates into a main branch (or *trunk*) that is built and tested through the CD portion of the CI/CD pipeline. This workflow has replaced the *Gitflow workflow*, in which development and release branches are separated by a release schedule. In many organizations, Gitflow is still a popular method of version control and deployment. However, it is now considered legacy, and it can be challenging to integrate into a CI/CD pipeline.
 

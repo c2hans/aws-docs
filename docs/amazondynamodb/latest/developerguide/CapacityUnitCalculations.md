@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Cap
 ---
 
 # DynamoDB item sizes and formats
-<a name="CapacityUnitCalculations"></a>
 
 DynamoDB tables are schemaless, except for the primary key, so the items in a table can all have different attributes, sizes, and data types.
 

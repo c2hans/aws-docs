@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # RouteResponses
-<a name="apis-apiid-routes-routeid-routeresponses"></a>
 
 Represents the collection of responses for a route. Supported only for WebSocket APIs.
 

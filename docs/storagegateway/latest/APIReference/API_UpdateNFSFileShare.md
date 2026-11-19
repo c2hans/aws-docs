@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_U
 ---
 
 # UpdateNFSFileShare
-<a name="API_UpdateNFSFileShare"></a>
 
 Updates a Network File System (NFS) file share. This operation is only supported in S3 File Gateways.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/consume-con
 ---
 
 # Consume context from a context store
-<a name="consume-context-store"></a>
 
 This topic is for developers of security appliances, such as firewalls, and integrations that consume context from a context store. AWS Transit Gateway adds source context identifiers to traffic. The security appliance retrieves context records from the context store to map those identifiers to AWS resources and use the resolved context when enforcing policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # GetAccessToken
-<a name="API_GetAccessToken"></a>
 
 Gets a temporary access token to use with AssumeRoleWithWebIdentity. Access tokens are valid for one hour.
 

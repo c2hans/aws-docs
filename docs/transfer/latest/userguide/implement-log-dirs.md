@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/implement-log-
 ---
 
 # Implementing logical directories
-<a name="implement-log-dirs"></a>
 
 **Important**
 **Root directory requirements**

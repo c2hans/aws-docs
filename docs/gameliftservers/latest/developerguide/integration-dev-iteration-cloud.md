@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 ---
 
 # Building a cloud-based test environment
-<a name="integration-dev-iteration-cloud"></a>
 
 **Note**
 This topic covers iterative testing for games that are integrated with the server SDK for Amazon GameLift Servers version 5.x. If your game uses server SDK version 4.x or earlier, see [Testing your integration using Amazon GameLift Servers Local](integration-testing-local.md).

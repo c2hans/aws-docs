@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotPriori
 ---
 
 # SlotPriority
-<a name="API_SlotPriority"></a>
 
 Sets the priority that Amazon Lex should use when eliciting slot values from a user.
 

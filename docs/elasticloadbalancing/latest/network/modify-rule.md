@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/modi
 ---
 
 # Edit a listener rule
-<a name="modify-rule"></a>
 
 You can edit the conditions, actions, and priority of a listener rule.
 

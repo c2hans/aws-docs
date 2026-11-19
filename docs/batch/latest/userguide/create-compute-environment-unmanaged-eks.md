@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-compute-en
 ---
 
 # Tutorial: Create an unmanaged compute environment using Amazon EKS resources
-<a name="create-compute-environment-unmanaged-eks"></a>
 
 Complete the following steps to create an unmanaged compute environment using Amazon Elastic Kubernetes Service (Amazon EKS) resources.
 

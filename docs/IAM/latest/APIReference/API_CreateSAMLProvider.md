@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateSAMLPr
 ---
 
 # CreateSAMLProvider
-<a name="API_CreateSAMLProvider"></a>
 
 Creates an IAM resource that describes an identity provider (IdP) that supports SAML 2.0.
 

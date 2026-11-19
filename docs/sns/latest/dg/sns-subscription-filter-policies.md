@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-subscription-filter-po
 ---
 
 # Amazon SNS subscription filter policies
-<a name="sns-subscription-filter-policies"></a>
 
 A subscription filter policy allows you to specify property names and assign a list of values to each property name. For more information, see [Amazon SNS message filtering](sns-message-filtering.md).
 

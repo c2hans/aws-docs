@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Me
 ---
 
 # MembershipSummary
-<a name="API_MembershipSummary"></a>
 
 Contains summary information about a membership.
 

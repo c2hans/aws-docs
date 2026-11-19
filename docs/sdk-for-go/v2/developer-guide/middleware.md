@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/middleware
 ---
 
 # Customizing the AWS SDK for Go v2 Client Requests with Middleware
-<a name="middleware"></a>
 
 **Warning**
  Modifying the client request pipeline can result in malformed/invalid requests, or can result in unexpected application errors. This functionality is meant for advanced uses cases not provided by the SDK interface by default.

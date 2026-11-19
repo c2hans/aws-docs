@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/anomaly-de
 ---
 
 # Detect anomalies with Lookout for Equipment
-<a name="anomaly-detection"></a>
 
 **Note**
 Anomaly detection is only available in the Regions where Amazon Lookout for Equipment is available.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/monthly-report.html
 ---
 
 # Downloading a monthly report
-<a name="monthly-report"></a>
 
 You can download a monthly report of your estimated AWS charges from the **Bills** page of the Billing and Cost Management console.
 

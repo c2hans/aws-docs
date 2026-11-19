@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zoho-crm-configuring.html
 ---
 
 # Configuring Zoho CRM
-<a name="zoho-crm-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Zoho CRM, you must meet these requirements:
 

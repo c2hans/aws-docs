@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MySQLSetting
 ---
 
 # MySQLSettings
-<a name="API_MySQLSettings"></a>
 
 Provides information that defines a MySQL endpoint.
 

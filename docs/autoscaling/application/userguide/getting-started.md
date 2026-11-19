@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/gettin
 ---
 
 # Application Auto Scaling concepts
-<a name="getting-started"></a>
 
 This topic explains key concepts to help you learn about Application Auto Scaling and start using it.
 

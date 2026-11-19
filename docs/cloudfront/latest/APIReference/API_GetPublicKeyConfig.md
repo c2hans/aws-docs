@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetPu
 ---
 
 # GetPublicKeyConfig
-<a name="API_GetPublicKeyConfig"></a>
 
 Gets a public key configuration.
 

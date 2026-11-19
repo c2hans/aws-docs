@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # UpdateFirewallRule
-<a name="API_route53globalresolver_UpdateFirewallRule"></a>
 
 Updates the configuration of a DNS firewall rule.
 

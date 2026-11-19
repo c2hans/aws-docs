@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportToS
 ---
 
 # ExportToS3Task
-<a name="API_ExportToS3Task"></a>
 
 Describes the format and location for the export task.
 

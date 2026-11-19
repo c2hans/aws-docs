@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamP
 ---
 
 # AwsIamPolicyDetails
-<a name="API_AwsIamPolicyDetails"></a>
 
 Represents an IAM permissions policy.
 

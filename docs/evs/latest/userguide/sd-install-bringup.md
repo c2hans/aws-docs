@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/sd-install-bringup.
 ---
 
 # Step 4b (local storage): Run VCF bringup
-<a name="sd-install-bringup"></a>
 
 With the VMware Cloud Foundation (VCF) software downloaded, you create your VCF deployment specification, validate it, and run the deployment in the VCF Installer. Bringup deploys the VCF management appliances and creates the vSAN datastore. After bringup, you reclaim the temporary datastore.
 

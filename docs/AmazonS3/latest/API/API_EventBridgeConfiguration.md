@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_EventBridgeConfi
 ---
 
 # EventBridgeConfiguration
-<a name="API_EventBridgeConfiguration"></a>
 
 A container for specifying the configuration for Amazon EventBridge.
 

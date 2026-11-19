@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeKnowledgeBasePermissions
-<a name="API_DescribeKnowledgeBasePermissions"></a>
 
 Describes the resource permissions for a knowledge base.
 

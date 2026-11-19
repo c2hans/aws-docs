@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # Modify the Capacity Reservation settings of your instance
-<a name="capacity-reservations-modify-instance"></a>
 
 You can modify the following Capacity Reservation settings for a stopped instance at any time:
 + Start in any Capacity Reservation that has matching attributes (instance type, platform, Availability Zone, and tenancy) and available capacity.

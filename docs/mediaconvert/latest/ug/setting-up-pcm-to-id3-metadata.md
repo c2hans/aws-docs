@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/setting-up-pcm-to
 ---
 
 # Configuring PCM to ID3 metadata
-<a name="setting-up-pcm-to-id3-metadata"></a>
 
 To use this feature, your input must have PCM audio that contains Nielsen watermarks. You provide your Nielsen distributor ID to MediaConvert and then, during the transcode, MediaConvert inserts the watermark information into the ID3 metadata of your output.
 

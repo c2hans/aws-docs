@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/l
 ---
 
 # Prerequisites
-<a name="linking-prerequisites"></a>
 
 The following topics list the prerequisites needed to link AWS Partner Central and AWS accounts. We recommend following the topics in the order listed.
 

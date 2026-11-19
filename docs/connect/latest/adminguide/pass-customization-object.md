@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/pass-customiza
 ---
 
 # Additional customizations for your Connect Customer chat widget
-<a name="pass-customization-object"></a>
 
 You can add the following optional customizations to your chat user interface:
 + Display the **End chat** button in the header dropdown menu instead of in the footer.

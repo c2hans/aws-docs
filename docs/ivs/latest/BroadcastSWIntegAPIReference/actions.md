@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # Actions
-<a name="actions"></a>
 
 The following actions are supported:
 + [GetClientConfiguration](actions-GetClientConfiguration.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListGlossaryTerms
 ---
 
 # ListGlossaryTerms
-<a name="API_ListGlossaryTerms"></a>
 
 Lists glossary terms within a business glossary in AWS Glue Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aurora-mysq
 ---
 
 # aurora-mysql-backtracking-enabled
-<a name="aurora-mysql-backtracking-enabled"></a>
 
 Checks if an Amazon Aurora MySQL cluster has backtracking enabled. The rule is NON\_COMPLIANT if the Aurora cluster uses MySQL and it does not have backtracking enabled.
 

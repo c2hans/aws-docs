@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/jamf-
 ---
 
 # CloudWatch pipelines configuration for Jamf Protect
-<a name="jamf-protect-pipeline-setup"></a>
 
 The Jamf Protect setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 

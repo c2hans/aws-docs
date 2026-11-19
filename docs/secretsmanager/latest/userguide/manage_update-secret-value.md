@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_u
 ---
 
 # Update the value for an AWS Secrets Manager secret
-<a name="manage_update-secret-value"></a>
 
 To update the value of your secret, you can use the console, the CLI, or an SDK. When you update the secret value, Secrets Manager creates a new version of the secret with the staging label `AWSCURRENT`. You can still access the old version, which has the label `AWSPREVIOUS`. You can also add your own labels. For more information, see [Secrets Manager versioning](whats-in-a-secret.md#term_version).
 

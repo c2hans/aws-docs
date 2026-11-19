@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/immobilien
 ---
 
 # .immobilien
-<a name="immobilien"></a>
 
 Used for information about real estate.
 

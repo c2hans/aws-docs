@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/solut
 ---
 
 # Framework for secure, scalable, and trackable data transfer for Amazon Simple Storage Service (Amazon S3) objects and Amazon Elastic Container Registry (Amazon ECR) images
-<a name="solution-overview"></a>
 
 Publication date: *December 2021 ([last update](revisions.md): November 2024)*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Lo
 ---
 
 # LogConfiguration
-<a name="API_LogConfiguration"></a>
 
 Log configuration for a subscriber.
 

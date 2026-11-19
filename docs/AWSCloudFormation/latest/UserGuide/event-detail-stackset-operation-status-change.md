@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/event
 ---
 
 # StackSet Operation Status Change event detail
-<a name="event-detail-stackset-operation-status-change"></a>
 
 Below are the detail fields for StackSet Operation Status Change events.
 

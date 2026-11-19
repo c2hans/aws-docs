@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/what
 ---
 
 # What is Amazon Route 53 Global Resolver?
-<a name="what-is-global-resolver"></a>
 
 Amazon Route 53 Global Resolver is a DNS resolver reachable over the internet and over your private connections (managed through AWS Cloud WAN) that provides easy, secure, and reliable DNS resolution for authorized clients in your organization across remote locations, branch offices, and on-premises environments. You can resolve queries for domains hosted on Amazon Route 53 private hosted zones or public domains on the internet, while maintaining high availability through global anycast architecture. Amazon Route 53 Global Resolver helps you protect your clients from DNS-based data exfiltration attacks, by filtering queries to potentially malicious domains.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ch
 ---
 
 # ChecklistItem
-<a name="API_ChecklistItem"></a>
 
 Contains a checklist item and its discussion status.
 

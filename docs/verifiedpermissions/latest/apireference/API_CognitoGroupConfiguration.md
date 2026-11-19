@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # CognitoGroupConfiguration
-<a name="API_CognitoGroupConfiguration"></a>
 
 The type of entity that a policy store maps to groups from an Amazon Cognito user pool identity source.
 

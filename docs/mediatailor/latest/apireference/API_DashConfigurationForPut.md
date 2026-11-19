@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Dash
 ---
 
 # DashConfigurationForPut
-<a name="API_DashConfigurationForPut"></a>
 
 The configuration for DASH PUT operations.
 

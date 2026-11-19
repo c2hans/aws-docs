@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-defau
 ---
 
 # Enable Amazon EBS encryption by default
-<a name="encryption-by-default"></a>
 
 You can configure your AWS account to enforce the encryption of the new EBS volumes and snapshot copies that you create. For example, Amazon EBS encrypts the EBS volumes created when you launch an instance and the snapshots that you copy from an unencrypted snapshot. For examples of transitioning from unencrypted to encrypted EBS resources, see [Encrypt unencrypted resources](ebs-encryption.md#encrypt-unencrypted).
 

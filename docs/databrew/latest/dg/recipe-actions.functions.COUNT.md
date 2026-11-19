@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # COUNT
-<a name="recipe-actions.functions.COUNT"></a>
 
  Returns the number of values from the selected source columns in a new column. Empty and null values are ignored.
 

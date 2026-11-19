@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/connect-acc
 ---
 
 # Update the AD Connector account (AD Connector) for WorkSpaces Personal
-<a name="connect-account"></a>
 
 You can update the AD Connector account that is used to read users and groups and join WorkSpaces machine accounts to your AD Connector directory.
 

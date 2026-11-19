@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stre
 ---
 
 # StreamProcessorInput
-<a name="API_StreamProcessorInput"></a>
 
 Information about the source streaming video.
 

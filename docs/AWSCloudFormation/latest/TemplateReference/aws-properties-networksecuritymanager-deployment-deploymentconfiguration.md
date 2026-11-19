@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkSecurityManager::Deployment DeploymentConfiguration
-<a name="aws-properties-networksecuritymanager-deployment-deploymentconfiguration"></a>
 
 The configuration settings that control the behavior of the deployment. If you omit this property, CloudFormation creates the deployment with cross-account visibility disabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/Welcome.html
 ---
 
 # HealthOmics API Reference
-<a name="Welcome"></a>
 
 This document provides detailed information about the AWS HealthOmics API actions and their parameters.
 

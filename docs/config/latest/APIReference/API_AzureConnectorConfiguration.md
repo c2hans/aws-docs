@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_AzureConn
 ---
 
 # AzureConnectorConfiguration
-<a name="API_AzureConnectorConfiguration"></a>
 
 The configuration details for connecting to Microsoft Azure.
 

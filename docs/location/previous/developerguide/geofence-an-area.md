@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/geofenc
 ---
 
 # Geofencing an area of interest using Amazon Location
-<a name="geofence-an-area"></a>
 
 A geofencing application evaluates a tracked device’s position relative to previously registered areas of interest. This enables actions to be taken based on position updates. For example, you can initiate an event that prompts a notification when a customer who ordered coffee on their mobile app is near a store.
 

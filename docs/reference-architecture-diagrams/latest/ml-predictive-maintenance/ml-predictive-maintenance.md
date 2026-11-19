@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Machine Learning Enabled Predictive Maintenance on AWS
-<a name="ml-predictive-maintenance"></a>
 
 Publication date: **September 13, 2022 ([Diagram history](#mlpm-diagram-history))**
 

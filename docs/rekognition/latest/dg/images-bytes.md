@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/images-bytes.html
 ---
 
 # Analyzing an image loaded from a local file system
-<a name="images-bytes"></a>
 
 Amazon Rekognition Image operations can analyze images that are supplied as image bytes or images stored in an Amazon S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 ---
 
 # Connect Customer Client Application
-<a name="amazon-connect-client-app"></a>
 
 Connect Customer screen recording is supported in Windows and Chrome OS. This page provides the download and installation instructions for the screen recording application in each operating system, and the minimum system requirements for the agent devices.
 

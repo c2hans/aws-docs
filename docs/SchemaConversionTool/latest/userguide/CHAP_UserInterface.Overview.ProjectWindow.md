@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Viewing the Project Window in AWS SCT
-<a name="CHAP_UserInterface.Overview.ProjectWindow"></a>
 
 The illustration following is what you see in AWS SCT when you create a schema migration project, and then convert a schema.
 

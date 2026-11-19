@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Wcd
 ---
 
 # WcdmaLocalId
-<a name="API_WcdmaLocalId"></a>
 
 WCDMA local identification (local ID) information.
 

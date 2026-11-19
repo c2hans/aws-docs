@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationFsxOntap
-<a name="API_UpdateLocationFsxOntap"></a>
 
 Modifies the following configuration parameters of the Amazon FSx for NetApp ONTAP transfer location that you're using with AWS DataSync.
 

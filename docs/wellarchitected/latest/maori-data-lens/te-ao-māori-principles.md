@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/t
 ---
 
 # Te Ao Māori principles
-<a name="te-ao-māori-principles"></a>
 
  This section explains important Māori values and principles that Māori technologists and data experts identified. Consider these design principles and the AWS Well-Architected Framework pillars when creating a culturally-responsive Māori data framework.
 

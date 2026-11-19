@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Total
 ---
 
 # TotalAggregationComputation
-<a name="API_TotalAggregationComputation"></a>
 
 The total aggregation computation configuration.
 

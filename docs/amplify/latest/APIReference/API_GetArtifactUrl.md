@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetArtif
 ---
 
 # GetArtifactUrl
-<a name="API_GetArtifactUrl"></a>
 
 Returns the artifact info that corresponds to an artifact id.
 

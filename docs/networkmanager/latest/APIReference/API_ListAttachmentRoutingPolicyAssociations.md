@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListAttachmentRoutingPolicyAssociations
-<a name="API_ListAttachmentRoutingPolicyAssociations"></a>
 
 Lists the routing policy associations for attachments in a core network.
 

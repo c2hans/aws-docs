@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Robust network design with AWS Control Tower
-<a name="introduction"></a>
 
 *T.V.R.L.Phani Kumar Dadi, Chintamani Aphale, JAGDISH KOMAKULA, Pratap Kumar Nanda, Pradip kumar Pandey, Aarti Rajput, and Mayuri Shinde, Amazon Web Services*
 

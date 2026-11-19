@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchL
 ---
 
 # Create an account-level field index policy
-<a name="CloudWatchLogs-Field-Indexing-CreateAccountLevel"></a>
 
 Use the steps in this section to create a field index policy that applies to all log groups in the account, or to multiple log groups that have log group names that start with the same string.
 

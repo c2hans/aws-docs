@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_QuotaShare
 ---
 
 # QuotaShareDetail
-<a name="API_QuotaShareDetail"></a>
 
 Detailed information about a quota share, including its configuration, state, and capacity limits.
 

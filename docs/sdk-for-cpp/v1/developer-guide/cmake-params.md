@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/cmake-par
 ---
 
 # CMake parameters for building the AWS SDK for C\+\+
-<a name="cmake-params"></a>
 
 Use the [CMake](https://cmake.org/) parameters listed in this section to customize how your SDK builds.
 

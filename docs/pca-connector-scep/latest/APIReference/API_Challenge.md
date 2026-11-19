@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # Challenge
-<a name="API_Challenge"></a>
 
 For Connector for SCEP for general-purpose. An object containing information about the specified connector's SCEP challenge passwords.
 

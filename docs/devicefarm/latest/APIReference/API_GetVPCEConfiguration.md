@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetVP
 ---
 
 # GetVPCEConfiguration
-<a name="API_GetVPCEConfiguration"></a>
 
 Returns information about the configuration settings for your Amazon Virtual Private Cloud (VPC) endpoint.
 

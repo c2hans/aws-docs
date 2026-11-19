@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMacieFullAccess
-<a name="AmazonMacieFullAccess"></a>
 
 **Description**: Provides full access to Amazon Macie.
 

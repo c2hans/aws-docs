@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TriggerUpdate.htm
 ---
 
 # TriggerUpdate
-<a name="API_TriggerUpdate"></a>
 
 A structure used to provide information used to update a trigger. This object updates the previous trigger definition by overwriting it completely.
 

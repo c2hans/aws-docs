@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSREL07-BP03 Use staged validation and data quarantine mechanisms
-<a name="lsrel07-bp03"></a>
 
  Introduce controlled validation stages where data is quarantined before being processed further. Apply automated rules for schema conformity, metadata completeness, and domain-specific plausibility (for example, genomic variants outside biological ranges). Only data that passes validation and adherence data standards (such as CDISC or FHIR) proceeds. Isolate data that fails for human review, with full audit trails to support regulatory adherence.
 

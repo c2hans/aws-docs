@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/web-bro
 ---
 
 # Touchscreen Devices
-<a name="web-browser-using-touchscreen-devices-user"></a>
 
 WorkSpaces Applications supports gestures on touch-enabled iPads, Android tablets, and Windows devices. Examples of supported touch gestures include long-tap to right-click, swipe to scroll, pinch to zoom, and two-finger rotation for supporting applications.
 

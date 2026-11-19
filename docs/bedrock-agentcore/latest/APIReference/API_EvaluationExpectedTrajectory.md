@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EvaluationExpectedTrajectory
-<a name="API_EvaluationExpectedTrajectory"></a>
 
  The expected tool call trajectory for trajectory-based evaluation.
 

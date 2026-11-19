@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_FailoverDBClus
 ---
 
 # FailoverDBCluster
-<a name="API_FailoverDBCluster"></a>
 
 Forces a failover for a DB cluster.
 

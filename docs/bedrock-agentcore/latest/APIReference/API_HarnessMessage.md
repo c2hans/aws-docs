@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessMessage
-<a name="API_HarnessMessage"></a>
 
 A message in the conversation.
 

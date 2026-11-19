@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/an
 ---
 
 # Data Analytics Lens - AWS Well-Architected Framework
-<a name="analytics-lens"></a>
 
 Publication date: **December 22, 2023** ([Document revisions](document-revisions.md))
 

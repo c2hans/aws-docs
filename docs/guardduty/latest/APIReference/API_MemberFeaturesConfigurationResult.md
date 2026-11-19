@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Member
 ---
 
 # MemberFeaturesConfigurationResult
-<a name="API_MemberFeaturesConfigurationResult"></a>
 
 Contains information about the features for the member account.
 

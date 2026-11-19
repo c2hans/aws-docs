@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_BatchListItem.html
 ---
 
 # BatchListItem
-<a name="API_BatchListItem"></a>
 
 A summary of a batch returned by `ListBatch`.
 

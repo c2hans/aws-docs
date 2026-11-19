@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Delete an AWS CloudHSM key using KMU
-<a name="key_mgmt_util-deleteKey"></a>
 
 Use the **deleteKey** command in the AWS CloudHSM key\_mgmt\_util to delete a key from the hardware security module (HSM) in an AWS CloudHSM cluster. You can only delete one key at a time. Deleting one key in a key pair has no effect on the other key in the pair.
 

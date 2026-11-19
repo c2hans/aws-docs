@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::AgentAlias
-<a name="aws-resource-bedrock-agentalias"></a>
 
 Specifies an agent alias as a resource in a top-level template. Minimally, you must specify the following properties:
 + AgentAliasName – Specify a name for the alias.

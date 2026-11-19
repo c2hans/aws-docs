@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Publishing Hooks for public use
-<a name="hooks-publishing"></a>
 
 To develop a public third-party Hook, develop your Hook as a private extension. Then, in each AWS Region in which you want to make the extension publicly available:
 

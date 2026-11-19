@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ReasoningConfiguration
-<a name="API_ReasoningConfiguration"></a>
 
  The reasoning configuration that controls how a reasoning model allocates effort during evaluation.
 

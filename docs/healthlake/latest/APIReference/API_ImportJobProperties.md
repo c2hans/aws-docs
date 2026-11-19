@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Impor
 ---
 
 # ImportJobProperties
-<a name="API_ImportJobProperties"></a>
 
 The import job properties.
 

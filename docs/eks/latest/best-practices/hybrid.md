@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/hybrid.html
 ---
 
 # Best Practices for Hybrid Deployments
-<a name="hybrid"></a>
 
 This guide provides guidance on running deployments in on-premise or edge environments with EKS Hybrid Nodes or EKS Anywhere.
 

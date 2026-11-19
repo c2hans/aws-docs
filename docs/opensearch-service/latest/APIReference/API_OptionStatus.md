@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # OptionStatus
-<a name="API_OptionStatus"></a>
 
 Provides the current status of an entity.
 

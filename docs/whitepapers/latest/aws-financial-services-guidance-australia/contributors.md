@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Katherine Velos, Legal, Amazon Web Services

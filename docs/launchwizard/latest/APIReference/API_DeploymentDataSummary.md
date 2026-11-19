@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Dep
 ---
 
 # DeploymentDataSummary
-<a name="API_DeploymentDataSummary"></a>
 
 A summary of the deployment data.
 

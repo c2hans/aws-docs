@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_PosixUse
 ---
 
 # PosixUser
-<a name="API_S3Files_PosixUser"></a>
 
 Specifies the POSIX identity with uid, gid, and secondary group IDs for user enforcement.
 

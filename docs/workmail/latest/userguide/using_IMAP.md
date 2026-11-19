@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/userguide/using_IMAP.htm
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMail. After March 31, 2027, you will no longer be able to access the Amazon WorkMail console or Amazon WorkMail resources. For more information, see [Amazon WorkMail end of support](https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html).
 
 # Setting up IMAP for Amazon WorkMail
-<a name="using_IMAP"></a>
 
 You can connect any IMAP-compatible software to Amazon WorkMail by providing the following information.
 

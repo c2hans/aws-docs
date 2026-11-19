@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # How Infrastructure Performance works with IAM
-<a name="CloudWatch-InfrastructurePerformance-IAM-How-It-Works"></a>
 
 The following sections describe how Infrastructure Performance works with IAM.
 

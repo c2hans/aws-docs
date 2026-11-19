@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Filter.htm
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Details about a filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UnifiedSpe
 ---
 
 # UnifiedSpeechSettings
-<a name="API_UnifiedSpeechSettings"></a>
 
 Unified configuration settings that combine speech recognition and synthesis capabilities.
 

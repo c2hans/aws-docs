@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-batc
 ---
 
 # Running multiple programs
-<a name="braket-batching-tasks"></a>
 
 Amazon Braket offers two approaches for running multiple quantum programs efficiently: Program sets and quantum task batching.
 

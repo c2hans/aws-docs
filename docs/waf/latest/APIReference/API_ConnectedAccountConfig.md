@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ConnectedAcc
 ---
 
 # ConnectedAccountConfig
-<a name="API_ConnectedAccountConfig"></a>
 
 A connected account configuration for AI bot monetization. Specifies the connected account that payments settle to and the per-network pricing. Settlement through a connected account is an alternative to the self-managed wallets in `CryptoConfig`; wallet addresses are managed for the connected account rather than configured by you. If the referenced connected account is not active or not enabled for crypto settlement, the `CreateWebACL`, `UpdateWebACL`, `CreateRuleGroup`, or `UpdateRuleGroup` request that includes it is rejected. Specifically, a request that references the account is rejected with `WAFInvalidOperationException` if the account or its crypto settlement capability isn't active, `WAFNonexistentItemException` if the ARN no longer exists, `AccessDeniedException` if you don't have `payments:GetConnectedAccount`, or `WAFInvalidParameterException` if the ARN is invalid or the partition is unsupported. Connected accounts are available only in the commercial AWS partition.
 

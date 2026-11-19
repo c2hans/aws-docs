@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppPhoneNumberDetail
-<a name="API_WhatsAppPhoneNumberDetail"></a>
 
 The details of your WhatsApp phone number.
 

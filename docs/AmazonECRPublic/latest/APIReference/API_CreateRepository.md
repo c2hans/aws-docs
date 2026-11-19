@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # CreateRepository
-<a name="API_CreateRepository"></a>
 
 Creates a repository in a public registry. For more information, see [Public repositories](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repositories.html) in the *Amazon Elastic Container Registry Public User Guide*.
 

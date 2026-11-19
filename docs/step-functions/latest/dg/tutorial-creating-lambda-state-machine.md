@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-creati
 ---
 
 # Creating a Step Functions state machine that uses Lambda
-<a name="tutorial-creating-lambda-state-machine"></a>
 
 In this tutorial, you will create a single-step workflow using AWS Step Functions to invoke an AWS Lambda function.
 

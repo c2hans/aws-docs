@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Creates or updates a resource policy. Currently, you can use policies to share snapshots across AWS accounts.
 

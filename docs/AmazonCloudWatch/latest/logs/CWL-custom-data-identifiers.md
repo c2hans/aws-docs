@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL-custom-
 ---
 
 # Custom data identifiers
-<a name="CWL-custom-data-identifiers"></a>
 
 **Topics**
 + [What are custom data identifiers?](#what-are-custom-data-identifiers)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-supported-device
 ---
 
 # Supported Frameworks
-<a name="neo-supported-devices-edge-frameworks"></a>
 
 Amazon SageMaker Neo supports the following frameworks.
 

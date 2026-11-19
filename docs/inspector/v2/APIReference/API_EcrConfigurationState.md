@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_EcrConfigu
 ---
 
 # EcrConfigurationState
-<a name="API_EcrConfigurationState"></a>
 
 Details about the state of the ECR scans for your environment.
 

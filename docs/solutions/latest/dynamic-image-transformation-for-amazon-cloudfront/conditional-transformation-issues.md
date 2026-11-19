@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Conditional transformation issues
-<a name="conditional-transformation-issues"></a>
 
  **Symptoms:** - Conditional transformations not triggering - Wrong transformation applied based on conditions - Client hints not being evaluated correctly
 

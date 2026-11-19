@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/split-tunnel-
 ---
 
 # Split-tunnel on AWS Client VPN endpoints
-<a name="split-tunnel-vpn"></a>
 
 By default, when you have a Client VPN endpoint, all traffic from clients is routed over the Client VPN tunnel. When you enable split-tunnel on the Client VPN endpoint, we push the routes on the [Client VPN endpoint route table](cvpn-working-routes.md) to the device that is connected to the Client VPN endpoint. This ensures that only traffic with a destination to the network matching a route from the Client VPN endpoint route table is routed over the Client VPN tunnel.
 

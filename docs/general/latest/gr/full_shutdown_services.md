@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/general/latest/gr/full_shutdown_services
 ---
 
 # Services in Full Shutdown
-<a name="full_shutdown_services"></a>
 
 Full shutdown represents the final stage in the lifecycle of a service or feature. Services and features in full shutdown are completely removed from the AWS portfolio and are no longer available or supported in any capacity. This state is reached after careful planning and execution of the preceding phases so that there is minimal disruption to customer operations.
 

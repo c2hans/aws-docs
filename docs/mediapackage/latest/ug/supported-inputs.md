@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs.
 ---
 
 # Supported inputs and outputs
-<a name="supported-inputs"></a>
 
 This section describes the input types, input codecs, and output codecs that AWS Elemental MediaPackage supports for live and video on demand (VOD) content.
 

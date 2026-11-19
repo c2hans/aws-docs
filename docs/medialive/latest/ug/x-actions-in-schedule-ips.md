@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/x-actions-in-schedul
 ---
 
 # How input switch actions work
-<a name="x-actions-in-schedule-ips"></a>
 
 You can set up an action to switch the input that the running channel is ingesting. The channel stops ingesting the current input and starts ingesting the specified input.
 

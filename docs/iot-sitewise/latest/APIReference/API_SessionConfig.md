@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ses
 ---
 
 # SessionConfig
-<a name="API_SessionConfig"></a>
 
 Contains the session configuration for a session-type dataset.
 

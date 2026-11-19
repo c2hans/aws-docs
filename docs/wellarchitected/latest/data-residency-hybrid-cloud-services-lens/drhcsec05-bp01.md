@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCSEC05-BP01 Implement detective controls that notify a security operations team when resources are found in unauthorized locations
-<a name="drhcsec05-bp01"></a>
 
  Automate the detection and notification to security operations teams if data is stored is locations out of compliance with your data residency compliance requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-t
 ---
 
 # Training types
-<a name="customizing-models-training-types"></a>
 
 Training types determine how model weights are updated during customization. Every [customization technique](customizing-models-techniques.md) (SFT, DPO, RFT) can be combined with either training type. Choose based on your quality requirements, compute budget, and use case.
 

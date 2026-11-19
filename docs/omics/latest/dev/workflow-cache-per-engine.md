@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-cache-per-engi
 ---
 
 # Engine-specific caching features
-<a name="workflow-cache-per-engine"></a>
 
 HealthOmics tries to provide a consistent implementation of call caching across workflow engines. There are some differences based on how each workflow engine handles specific cases:
 

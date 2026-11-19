@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Updat
 ---
 
 # UpdateGeofenceCollection
-<a name="API_UpdateGeofenceCollection"></a>
 
 Updates the specified properties of a given geofence collection.
 

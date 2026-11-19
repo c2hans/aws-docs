@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CompositeS
 ---
 
 # CompositeSlotTypeSetting
-<a name="API_CompositeSlotTypeSetting"></a>
 
 A composite slot is a combination of two or more slots that capture multiple pieces of information in a single user input.
 

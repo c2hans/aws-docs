@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateAutono
 ---
 
 # CreateAutonomousDatabaseWallet
-<a name="API_CreateAutonomousDatabaseWallet"></a>
 
 Creates a new wallet for the specified Autonomous Database.
 

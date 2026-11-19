@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 ---
 
 # Content Domain 4: Security and Compliance
-<a name="sysops-administrator-associate-03-domain4"></a>
 
 **Topics**
 + [Task 4.1: Implement and manage security and compliance tools and policies.](#sysops-administrator-associate-03-domain4-task1)

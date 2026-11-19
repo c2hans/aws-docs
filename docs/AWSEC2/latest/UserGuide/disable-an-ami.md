@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/disable-an-ami.h
 ---
 
 # Disable an Amazon EC2 AMI
-<a name="disable-an-ami"></a>
 
 You can disable an AMI to prevent it from being used for instance launches. You can't launch new instances from a disabled AMI. You can re-enable a disabled AMI so that it can be used again for instance launches.
 

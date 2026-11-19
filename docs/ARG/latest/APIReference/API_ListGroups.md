@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListGroups.h
 ---
 
 # ListGroups
-<a name="API_ListGroups"></a>
 
 Returns a list of existing Resource Groups in your account.
 

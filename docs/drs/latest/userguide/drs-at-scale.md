@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/drs-at-scale.html
 ---
 
 # Disaster recovery at scale
-<a name="drs-at-scale"></a>
 
 When protecting a large number of servers (100\+) with AWS Elastic Disaster Recovery, additional planning is required to ensure reliable replication, successful recovery, and manageable operations. This section provides guidance for operating Elastic Disaster Recovery at scale.
 

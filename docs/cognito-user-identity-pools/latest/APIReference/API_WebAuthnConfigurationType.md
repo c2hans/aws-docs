@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # WebAuthnConfigurationType
-<a name="API_WebAuthnConfigurationType"></a>
 
 Settings for authentication (MFA) with passkey, or webauthN, biometric and security-key devices in a user pool. Configures the following:
 + Configuration for requiring user-verification support in passkeys.

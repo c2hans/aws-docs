@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # DeleteAutomationRule
-<a name="API_automation_DeleteAutomationRule"></a>
 
  Deletes an existing automation rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/quick-find.html
 ---
 
 # Quick Find Index
-<a name="quick-find"></a>
 
 The following index has been created to help you quickly find things in Amazon SES by providing two ways of searching - either by how-tos or concepts. The how-tos describe "how to" do something while concepts explain the bigger picture.
 

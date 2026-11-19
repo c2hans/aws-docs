@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_StartCalc
 ---
 
 # StartCalculationExecution
-<a name="API_StartCalculationExecution"></a>
 
 Submits calculations for execution within a session. You can supply the code to run as an inline code block within the request.
 

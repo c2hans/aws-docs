@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/worker-types.html
 ---
 
 # AWS Glue worker types
-<a name="worker-types"></a>
 
 ## Overview
 <a name="worker-types-overview"></a>

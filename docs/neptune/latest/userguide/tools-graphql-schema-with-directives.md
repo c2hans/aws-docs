@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tools-graphql-s
 ---
 
 # Working with directives for a GraphQL schema
-<a name="tools-graphql-schema-with-directives"></a>
 
 You can start from a GraphQL schema that already has directives, using a command like the following:
 

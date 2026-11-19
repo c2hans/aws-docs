@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Param
 ---
 
 # Parameter
-<a name="API_Parameter"></a>
 
 Detailed information about an individual parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # BatchEvaluateGeofences
-<a name="API_WaypointGeofencing_BatchEvaluateGeofences"></a>
 
 Evaluates device positions against the geofence geometries from a given geofence collection.
 

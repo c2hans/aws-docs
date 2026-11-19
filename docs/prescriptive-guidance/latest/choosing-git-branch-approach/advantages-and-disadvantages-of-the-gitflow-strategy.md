@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Advantages and disadvantages of the Gitflow strategy
-<a name="advantages-and-disadvantages-of-the-gitflow-strategy"></a>
 
 The Gitflow branching strategy is well suited to larger, more distributed teams that have strict release and compliance requirements. Gitflow contributes to a predictable release cycle for the organization, and this is often preferred by larger organizations. Gitflow is also well suited for teams that require guardrails to complete their software development lifecycle properly. This is because there are multiple opportunities for reviews and quality assurance built into the strategy. Gitflow is also well suited for teams that must maintain multiple versions of production releases simultaneously. Some disadvantages of GItflow are that is it more complex than other branching models and requires strict adherence to the pattern to complete successfully. Gitflow does not work well for organizations striving for continuous delivery due to the rigid nature of managing release branches. Gitflow release branches can be long-lived branches that can accumulate technical debt if not properly addressed in a timely manner.
 

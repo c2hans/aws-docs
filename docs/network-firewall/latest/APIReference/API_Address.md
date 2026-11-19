@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # Address
-<a name="API_Address"></a>
 
 A single IP address specification. This is used in the [MatchAttributes](API_MatchAttributes.md) source and destination specifications.
 

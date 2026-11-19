@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # The evolution of software agents
-<a name="evolution"></a>
 
 The journey from simple automated systems to intelligent, autonomous, and goal-directed software agents reflects decades of evolution in computer science, artificial intelligence, and distributed systems.
 

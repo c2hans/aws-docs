@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel
 ---
 
 # ListRoutingControls
-<a name="controlpanel-controlpanelarn-routingcontrols"></a>
 
 ## URI
 <a name="controlpanel-controlpanelarn-routingcontrols-url"></a>

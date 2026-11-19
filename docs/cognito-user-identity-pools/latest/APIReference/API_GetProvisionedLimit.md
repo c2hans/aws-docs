@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetProvisionedLimit
-<a name="API_GetProvisionedLimit"></a>
 
 Returns the current provisioned limit for a specific API category.
 

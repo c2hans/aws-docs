@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Vi
 ---
 
 # VideoSegmentationConfiguration
-<a name="API_agent_VideoSegmentationConfiguration"></a>
 
 Configuration for segmenting video content during multimodal knowledge base ingestion. Determines how video files are divided into chunks for processing.
 

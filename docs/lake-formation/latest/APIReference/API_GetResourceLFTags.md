@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_G
 ---
 
 # GetResourceLFTags
-<a name="API_GetResourceLFTags"></a>
 
 Returns the LF-tags applied to a resource.
 

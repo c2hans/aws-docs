@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Amazon ECS service event messages
-<a name="service-event-messages-list"></a>
 
 The following are examples of service event messages you may see in the Amazon ECS console.
 

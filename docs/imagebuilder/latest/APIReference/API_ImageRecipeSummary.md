@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageRecipeSummary
-<a name="API_ImageRecipeSummary"></a>
 
 A summary of an image recipe.
 

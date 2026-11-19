@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Invoicing
-<a name="API_Types_AWS_Invoicing"></a>
 
 The following data types are supported by AWS Invoicing:
 +  [AmountBreakdown](API_invoicing_AmountBreakdown.md)

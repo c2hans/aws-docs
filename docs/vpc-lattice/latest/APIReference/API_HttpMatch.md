@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Http
 ---
 
 # HttpMatch
-<a name="API_HttpMatch"></a>
 
 Describes criteria that can be applied to incoming requests.
 

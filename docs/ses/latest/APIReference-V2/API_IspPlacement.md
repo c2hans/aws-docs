@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_IspPlacem
 ---
 
 # IspPlacement
-<a name="API_IspPlacement"></a>
 
 An object that describes how email sent during the predictive inbox placement test was handled by a certain email provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Problem: Configuration file issue
-<a name="problem-configuration-file-issue"></a>
 
 ## Resolution
 <a name="resolution"></a>

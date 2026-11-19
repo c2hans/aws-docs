@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-account
 ---
 
 # Set up an account
-<a name="gs-account"></a>
 
 Before you use Amazon Kinesis Video Streams for the first time, complete the following tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Particip
 ---
 
 # ParticipantDetails
-<a name="API_ParticipantDetails"></a>
 
 The details of the participant, including their display name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Set up AWS CloudHSM key\_mgmt\_util
-<a name="key_mgmt_util-setup"></a>
 
 Complete the following setup before you use AWS CloudHSM key\_mgmt\_util (KMU).
 

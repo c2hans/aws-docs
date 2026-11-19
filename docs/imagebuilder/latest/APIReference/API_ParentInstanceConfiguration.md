@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Par
 ---
 
 # ParentInstanceConfiguration
-<a name="API_ParentInstanceConfiguration"></a>
 
 Settings for building on an instance that is already running, instead of an instance that Image Builder launches for the build.
 

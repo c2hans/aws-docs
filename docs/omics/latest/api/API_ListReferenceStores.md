@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListReferenceStores
 ---
 
 # ListReferenceStores
-<a name="API_ListReferenceStores"></a>
 
 Retrieves a list of reference stores linked to your account and returns their metadata in JSON format.
 

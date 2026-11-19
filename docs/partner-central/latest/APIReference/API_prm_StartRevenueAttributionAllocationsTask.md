@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # StartRevenueAttributionAllocationsTask
-<a name="API_prm_StartRevenueAttributionAllocationsTask"></a>
 
 Submits a batch of up to 250 allocation changes (CREATE and/or UPDATE) for asynchronous processing. Returns a TaskId for tracking.
 

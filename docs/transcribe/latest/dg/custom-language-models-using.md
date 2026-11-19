@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/custom-language-mod
 ---
 
 # Using a custom language model
-<a name="custom-language-models-using"></a>
 
 Once you've created your custom language model, you can include it in your transcription requests; refer to the following sections for examples.
 

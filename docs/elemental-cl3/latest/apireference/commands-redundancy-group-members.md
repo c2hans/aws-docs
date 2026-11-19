@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/comman
 ---
 
 # Members of a Redundancy Group
-<a name="commands-redundancy-group-members"></a>
 
 | Nickname | Action | Signature | Description |
 | --- | --- | --- | --- |

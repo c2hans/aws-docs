@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-amazon-quic
 ---
 
 # Using AWS Quick automations
-<a name="using-amazon-quick-automations"></a>
 
 Quick unifies AI agents for research, business insights, and automation into a single experience, helping business users make better decisions and act on them faster. Quick's automation capabilities handle everything from individual daily tasks to mission-critical enterprise processes, so teams can focus on higher-value work.
 

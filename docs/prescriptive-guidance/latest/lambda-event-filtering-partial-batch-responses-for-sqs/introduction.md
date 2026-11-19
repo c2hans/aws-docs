@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lambda-even
 ---
 
 # Improve performance using AWS Lambda event filtering and partial batch responses for Amazon SQS
-<a name="introduction"></a>
 
 *Alan Oberto Jimenez and Connor Kirkpatrick, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ca
 ---
 
 # CachePointBlock
-<a name="API_agent_CachePointBlock"></a>
 
 Indicates where a cache checkpoint is located. All information before this checkpoint is cached to be accessed on subsequent requests.
 

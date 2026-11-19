@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Amazon S3 connector
-<a name="connector-s3"></a>
 
 The Amazon S3 connector is a multi-purpose primitive that can publish structured metadata to S3 buckets, derive metadata from S3-hosted CSV or JSON files, and serve reference data from S3 files as selectable field values during template authoring.
 

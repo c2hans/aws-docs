@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # DecreaseReplicationFactor
-<a name="API_dax_DecreaseReplicationFactor"></a>
 
 Removes one or more nodes from a DAX cluster.
 

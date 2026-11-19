@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Industrial edge computing
-<a name="edge"></a>
 
 MES is critical to manufacturing operations. Some microservices or functionalities within MES require low latency and cannot tolerate intermittent connectivity to the cloud. These microservices are better suited to run on premises. [AWS edge services](https://aws.amazon.com/edge/) extend infrastructure, services, APIs, and tools offered in the cloud to an on-premises data center or co-location space. AWS services for the edge are available for infrastructure, storage, content delivery, rugged and disconnected edge, robotics, machine learning, and IoT.
 

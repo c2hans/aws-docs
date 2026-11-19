@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # GetStackPolicy
-<a name="API_GetStackPolicy"></a>
 
 Returns the stack policy for a specified stack. If a stack doesn't have a policy, a null value is returned.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Calcu
 ---
 
 # CalculatedColumn
-<a name="API_CalculatedColumn"></a>
 
 A calculated column for a dataset.
 

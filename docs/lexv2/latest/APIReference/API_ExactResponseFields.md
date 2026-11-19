@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ExactRespo
 ---
 
 # ExactResponseFields
-<a name="API_ExactResponseFields"></a>
 
 Contains the names of the fields used for an exact response to the user.
 

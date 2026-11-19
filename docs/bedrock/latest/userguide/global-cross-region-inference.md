@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/global-cross-re
 ---
 
 # Global cross-Region inference
-<a name="global-cross-region-inference"></a>
 
 Global cross-Region inference extends cross-Region inference beyond geographic boundaries, enabling the routing of inference requests to supported commercial AWS Regions worldwide.
 

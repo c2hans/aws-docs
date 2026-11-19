@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # GetNotifyCodeConfiguration
-<a name="API_GetNotifyCodeConfiguration"></a>
 
 Retrieves a notify code configuration.
 

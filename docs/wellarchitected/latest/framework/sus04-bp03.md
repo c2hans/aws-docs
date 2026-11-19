@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus04-b
 ---
 
 # SUS04-BP03 Implement distributed systems appropriately
-<a name="sus04-bp03"></a>
 
  Designing efficient distributed systems requires careful consideration of both what components should be distributed and where they should be located. Properly architected distributed systems can significantly reduce resource consumption by placing processing close to data, minimizing data movement, and optimizing communication patterns between components.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-w
 ---
 
 # Bootstrapping Windows-based CloudFormation stacks
-<a name="cfn-windows-stacks-bootstrapping"></a>
 
 This topic describes how to bootstrap a Windows stack and troubleshoot stack creation issues.
 

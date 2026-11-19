@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_ProvidedCont
 ---
 
 # ProvidedContext
-<a name="API_ProvidedContext"></a>
 
 Contains information about the provided context. This includes the signed and encrypted trusted context assertion and the context provider ARN from which the trusted context assertion was generated.
 

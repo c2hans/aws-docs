@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Additional support
-<a name="additional-support"></a>
 
  For additional information, see:
 +  [Cloud Operations on AWS](https://aws.amazon.com/training/classroom/cloud-operations-on-aws/)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/auth.html
 ---
 
 # Authenticating with the Valkey and Redis OSS AUTH command
-<a name="auth"></a>
 
 **Note**
 The **AUTH** has been superseded by [Role-Based Access Control (RBAC)](Clusters.RBAC.md). All serverless caches must use RBAC for authentication. With RBAC, you can also use Secrets Manager for automatic password rotation. For more information, see [Automatically rotating passwords for users](User-Secrets-Manager.md).
@@ -231,7 +230,7 @@ aws elasticache modify-replication-group ^
 			--apply-immediately
 ```
 
-For more information, see [Authenticating with the Valkey and Redis OSS AUTH command](#auth).
+For more information, see [Authenticating with the Valkey and Redis OSS AUTH command](auth.md).
 
 **Note**
 If you need to disable access control on an ElastiCache Cluster, see [Disabling access control on an ElastiCache Valkey or Redis OSS cache](in-transit-encryption-disable.md).

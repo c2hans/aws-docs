@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-serverless-web-app
 ---
 
 # Build a serverless web application using generative AI
-<a name="build-serverless-web-app-lambda-amplify-bedrock-cognito-gen-ai"></a>
 
 |  |  |
 | --- |--- |

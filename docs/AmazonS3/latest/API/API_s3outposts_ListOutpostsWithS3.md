@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3outposts_ListO
 ---
 
 # ListOutpostsWithS3
-<a name="API_s3outposts_ListOutpostsWithS3"></a>
 
 Lists the Outposts with S3 on Outposts capacity for your AWS account. Includes S3 on Outposts that you have access to as the Outposts owner, or as a shared user from Resource Access Manager (RAM).
 

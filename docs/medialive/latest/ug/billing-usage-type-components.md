@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/billing-usage-type-c
 ---
 
 # Usage type components
-<a name="billing-usage-type-components"></a>
 
 The following table describes each component that can appear in a MediaLive usage type string.
 

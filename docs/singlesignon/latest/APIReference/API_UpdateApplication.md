@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Upd
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Updates application properties.
 

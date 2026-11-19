@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/accepting
 ---
 
 # Accepting data grants and accessing data on AWS Data Exchange
-<a name="accepting-data-grants-and-accessing-data"></a>
 
 The following steps describe the process of accepting a data grant on AWS Data Exchange using the AWS Data Exchange console:
 

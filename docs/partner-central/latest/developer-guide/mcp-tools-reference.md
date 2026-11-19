@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/m
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Tools Reference
-<a name="mcp-tools-reference"></a>
 
 The Partner Central Agent MCP Server exposes two MCP tools: `sendMessage` for all agent interactions, and `getSession` for retrieving session state. All Partner Central operations — opportunity queries, funding applications, document analysis — are handled through natural language via `sendMessage`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfi
 ---
 
 # Best practices for the planning phase
-<a name="planning"></a>
 
 During the planning phase of a greenfield SAP implementation, the project typically encounters various challenges and opportunities. This section discusses five key learnings based on SAP on AWS greenfield implementations that the AWS Professional Services team has been involved in.  You can implement some of these recommendations even before your project kicks off or the consulting team gets involved.  Providing drafts of documents such as the roles and responsibilities matrix or team contacts list helps speed up the ramp-up process.
 

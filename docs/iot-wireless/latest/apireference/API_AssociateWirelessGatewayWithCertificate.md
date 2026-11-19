@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ass
 ---
 
 # AssociateWirelessGatewayWithCertificate
-<a name="API_AssociateWirelessGatewayWithCertificate"></a>
 
 Associates a wireless gateway with a certificate.
 

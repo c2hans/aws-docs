@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # Built-in processors for AWS vended logs
-<a name="CloudWatch-Logs-Transformation-BuiltIn"></a>
 
 This section contains information about the built-in processors that you can use with AWS services that vend logs.
 

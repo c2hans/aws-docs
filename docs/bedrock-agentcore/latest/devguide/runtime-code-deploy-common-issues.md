@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Troubleshooting direct code deployment
-<a name="runtime-code-deploy-common-issues"></a>
 
 Common issues and solutions when getting started with Amazon Bedrock AgentCore direct code deployment. For more troubleshooting information, see [Troubleshoot Amazon Bedrock AgentCore Runtime](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-troubleshooting.html).
 

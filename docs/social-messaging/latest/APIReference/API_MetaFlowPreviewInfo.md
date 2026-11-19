@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # MetaFlowPreviewInfo
-<a name="API_MetaFlowPreviewInfo"></a>
 
 Contains the preview URL for testing a WhatsApp Flow and its expiration timestamp.
 

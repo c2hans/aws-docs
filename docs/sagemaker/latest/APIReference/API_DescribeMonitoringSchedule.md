@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeMonitoringSchedule
-<a name="API_DescribeMonitoringSchedule"></a>
 
 Describes the schedule for a monitoring job.
 

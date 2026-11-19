@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ModelEntry
-<a name="API_ModelEntry"></a>
 
 A model entry that specifies a model supported for an inference operation.
 

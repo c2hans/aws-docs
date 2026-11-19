@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Cr
 ---
 
 # CreateControlMappingSource
-<a name="API_CreateControlMappingSource"></a>
 
 The mapping attributes that determine the evidence source for a given control, along with related parameters and metadata. This doesn't contain `mappingID`.
 

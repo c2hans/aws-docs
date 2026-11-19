@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-ai-traffic
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Getting started with AI traffic monetization
-<a name="waf-ai-traffic-monetization-getting-started"></a>
 
 ## Prerequisites
 <a name="waf-ai-traffic-monetization-prerequisites"></a>

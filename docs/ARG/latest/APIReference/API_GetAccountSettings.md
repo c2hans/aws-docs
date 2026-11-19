@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GetAccountSe
 ---
 
 # GetAccountSettings
-<a name="API_GetAccountSettings"></a>
 
 Retrieves the current status of optional features in Resource Groups.
 

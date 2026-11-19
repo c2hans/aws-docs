@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplic
 ---
 
 # AddApplicationVpcConfiguration
-<a name="API_AddApplicationVpcConfiguration"></a>
 
 Adds a Virtual Private Cloud (VPC) configuration to the application. Applications can use VPCs to store and access resources securely.
 

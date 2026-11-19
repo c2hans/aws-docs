@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This solution does not have troubleshooting instructions. For instructions on how to open an AWS Support case for this solution, read the following section.
 

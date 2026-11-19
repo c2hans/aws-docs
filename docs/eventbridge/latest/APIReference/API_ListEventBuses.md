@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_List
 ---
 
 # ListEventBuses
-<a name="API_ListEventBuses"></a>
 
 Lists all the event buses in your account, including the default event bus, custom event buses, and partner event buses.
 

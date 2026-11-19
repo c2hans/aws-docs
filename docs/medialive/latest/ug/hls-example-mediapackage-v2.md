@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-example-mediapac
 ---
 
 # MediaPackage v2 example
-<a name="hls-example-mediapackage-v2"></a>
 
 This example shows how to set up the destination fields if the downstream system for the HLS output group is standard MediaPackage.
 

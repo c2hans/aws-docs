@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/enable-virt-mfa-for
 ---
 
 # Enable a virtual MFA device for the root user (console)
-<a name="enable-virt-mfa-for-root"></a>
 
 You can use the AWS Management Console to configure and enable a virtual MFA device for your root user. To enable MFA devices for the AWS account, you must be signed in to AWS using your root user credentials.
 

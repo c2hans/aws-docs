@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAcce
 ---
 
 # ListAccessGrantsLocations
-<a name="API_control_ListAccessGrantsLocations"></a>
 
 Returns a list of the locations registered in your S3 Access Grants instance.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/sample-custom-
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Sample use cases
-<a name="sample-custom-action"></a>
 
 This page includes examples of functional use cases for custom actions that you can leverage for your specific needs.
 

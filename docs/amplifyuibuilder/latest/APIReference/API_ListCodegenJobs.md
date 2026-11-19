@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ListCodegenJobs
-<a name="API_ListCodegenJobs"></a>
 
 Retrieves a list of code generation jobs for a specified Amplify app and backend environment.
 

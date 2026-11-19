@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-ChangeDDBRWCapacityMode`
-<a name="change-read-write-capacity"></a>
 
 **Description**
 

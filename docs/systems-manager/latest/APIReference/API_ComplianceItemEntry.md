@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ComplianceItemEntry
-<a name="API_ComplianceItemEntry"></a>
 
 Information about a compliance item.
 

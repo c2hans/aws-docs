@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DefaultInteger
 ---
 
 # DefaultIntegerHyperParameterRange
-<a name="API_DefaultIntegerHyperParameterRange"></a>
 
 Provides the name and default range of a integer-valued hyperparameter and whether the hyperparameter is tunable. A tunable hyperparameter can have its value determined during hyperparameter optimization (HPO).
 

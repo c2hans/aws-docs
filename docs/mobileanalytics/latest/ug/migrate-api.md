@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mobileanalytics/latest/ug/migrate-api.ht
 ---
 
 # Migrating to the Amazon Pinpoint API
-<a name="migrate-api"></a>
 
 After April 30, 2018, the Mobile Analytics REST API will automatically redirect requests to the Amazon Pinpoint API. Events that your application reports to Mobile Analytics are automatically sent to Amazon Pinpoint.
 

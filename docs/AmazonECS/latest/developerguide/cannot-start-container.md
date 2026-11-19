@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cannot-s
 ---
 
 # Troubleshooting Amazon ECS CannotStartContainerError errors
-<a name="cannot-start-container"></a>
 
 The following are some CannotStartContainerError error messages and actions that you can take to fix the errors.
 

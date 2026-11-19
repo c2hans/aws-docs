@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/Troubleshoo
 ---
 
 # Deactivating AWS GovCloud (US) MFA devices
-<a name="Troubleshoot_deactivating_MFA_devices"></a>
 
 If you are having trouble signing in with a multi-factor authentication (MFA) device as an IAM user, contact your administrator for help.
 

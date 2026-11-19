@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_CapacityUpdate.html
 ---
 
 # CapacityUpdate
-<a name="API_CapacityUpdate"></a>
 
 The target capacity for the connector. The capacity can be auto scaled or provisioned.
 

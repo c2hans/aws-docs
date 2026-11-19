@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/customize-desktop
 ---
 
 # Customize
-<a name="customize-desktop"></a>
 
 **Customize** is the hub for managing everything that powers your agents. It has five tabs:
 + **Agents**: build and manage agents. For more information, see [Agents](agents-desktop.md).

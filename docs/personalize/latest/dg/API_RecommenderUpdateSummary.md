@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_RecommenderUpd
 ---
 
 # RecommenderUpdateSummary
-<a name="API_RecommenderUpdateSummary"></a>
 
 Provides a summary of the properties of a recommender update. For a complete listing, call the [DescribeRecommender](https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeRecommender.html) API.
 

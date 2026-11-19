@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-q
 ---
 
 # AWS resources that you can send VPC Resolver query logs to
-<a name="resolver-query-logs-choosing-target-resource"></a>
 
 **Note**
 If you expect to log queries for workloads with high queries per second (QPS), you should use Amazon S3 to make sure your query logs are not throttled when written to your destination. If you use Amazon CloudWatch, you can increase your requests per second limit for the `PutLogEvents` operation. To learn more about increasing your CloudWatch limits, see [CloudWatch Logs quotas](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html) in the *Amazon CloudWatch User Guide*.

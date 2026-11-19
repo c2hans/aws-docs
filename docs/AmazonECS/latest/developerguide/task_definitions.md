@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_def
 ---
 
 # Amazon ECS task definitions
-<a name="task_definitions"></a>
 
 A *task definition* is a blueprint for your application. It is a text file in JSON format that describes the parameters and one or more containers that form your application.
 

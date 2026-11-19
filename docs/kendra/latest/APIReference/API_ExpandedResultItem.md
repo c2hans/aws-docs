@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ExpandedR
 ---
 
 # ExpandedResultItem
-<a name="API_ExpandedResultItem"></a>
 
  A single expanded result in a collapsed group of search results.
 

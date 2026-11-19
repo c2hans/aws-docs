@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/wr-quick-start.html
 ---
 
 # Visual quick start guide
-<a name="wr-quick-start"></a>
 
 When anonymous users try to join a meeting, the **Waiting Room** section appears in the **Attendees** panel. The following image shows the section. Numbers in the image correspond to the numbered text below.
 

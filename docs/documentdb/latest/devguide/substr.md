@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/substr.html
 ---
 
 # $substr
-<a name="substr"></a>
 
 The `$substr` operator in Amazon DocumentDB is used to extract a substring from a given string. It is particularly useful when you need to define substrings based on a range of characters, rather than a range of bytes. This is especially important when dealing with Unicode strings, where the number of bytes used to represent a character can vary.
 

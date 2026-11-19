@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/valid
 ---
 
 # Validate stack deployments
-<a name="validate-stack-deployments"></a>
 
 With pre-deployment validation, you can identify and resolve potential deployment issues before CloudFormation provisions resources. Pre-deployment validation runs automatically on Create Stack, Update Stack, and Create Change Set operations, catching common errors in seconds.
 

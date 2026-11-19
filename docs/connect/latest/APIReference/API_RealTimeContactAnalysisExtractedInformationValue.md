@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisExtractedInformationValue
-<a name="API_RealTimeContactAnalysisExtractedInformationValue"></a>
 
 An individual value extracted from the conversation, including its content and the locations where it was found.
 

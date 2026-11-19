@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/configure-custom-open-clic
 ---
 
 # Configuring custom domains to handle open and click tracking
-<a name="configure-custom-open-click-domains"></a>
 
 When you use [event publishing](monitor-using-event-publishing.md) to capture open and click events, Amazon SES makes minor changes to the emails you send. To capture open events, SES adds a 1 pixel by 1 pixel transparent GIF image in each email sent through SES which includes a unique file name for each email, and is hosted on a server operated by SES; when the image is downloaded, SES can tell exactly which message was opened and by whom.
 

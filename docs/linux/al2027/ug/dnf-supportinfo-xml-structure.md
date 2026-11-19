@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/dnf-supportinfo-xml-stru
 ---
 
 # SupportInfo XML structure
-<a name="dnf-supportinfo-xml-structure"></a>
 
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads.

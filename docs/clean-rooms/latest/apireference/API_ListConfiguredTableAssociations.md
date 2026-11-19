@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListConfiguredTableAssociations
-<a name="API_ListConfiguredTableAssociations"></a>
 
 Lists configured table associations for a membership.
 

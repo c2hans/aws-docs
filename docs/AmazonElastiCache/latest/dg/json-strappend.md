@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-strappe
 ---
 
 # JSON.STRAPPEND
-<a name="json-strappend"></a>
 
 Appends a string to the JSON strings at the path.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CommandCa
 ---
 
 # CommandCapability
-<a name="API_CommandCapability"></a>
 
 The command capabilities added for the managed thing
 

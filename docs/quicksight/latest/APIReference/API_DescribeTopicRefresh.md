@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeTopicRefresh
-<a name="API_DescribeTopicRefresh"></a>
 
 Describes the status of a topic refresh.
 

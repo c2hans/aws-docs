@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListDataQualitySt
 ---
 
 # ListDataQualityStatistics
-<a name="API_ListDataQualityStatistics"></a>
 
 Retrieves a list of data quality statistics.
 

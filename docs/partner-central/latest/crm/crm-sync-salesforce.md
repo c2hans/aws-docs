@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/crm-sync-sale
 ---
 
 # Synchronizing Salesforce with your AWS Marketplace products
-<a name="crm-sync-salesforce"></a>
 
 Before you can work with AWS Marketplace products, you must first synchronize them with Salesforce. Synchronizing ensures that you have the latest product details.
 

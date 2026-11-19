@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AgUiDescriptor
-<a name="API_AgUiDescriptor"></a>
 
 A registry record descriptor for the AG-UI (Agent-User Interaction) protocol.
 

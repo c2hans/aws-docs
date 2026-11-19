@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateT
 ---
 
 # DateTimeHierarchy
-<a name="API_DateTimeHierarchy"></a>
 
 The option that determines the hierarchy of any `DateTime` fields.
 

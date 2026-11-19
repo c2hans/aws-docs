@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/vi
 ---
 
 # Visualize IAM credential reports for all AWS accounts using AWS Quick Sight
-<a name="visualize-iam-credential-reports-for-all-aws-accounts-using-amazon-quicksight"></a>
 
 *Parag Nagwekar and Arun Chandapillai, Amazon Web Services*
 

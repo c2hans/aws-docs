@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # SQL Server 2018 deprecated features list
-<a name="chap-sql-server-aurora-pg.deprecatedfeatures"></a>
 
 This topic provides reference information related to migrating from Microsoft SQL Server 2019 to Amazon Aurora PostgreSQL. It covers a range of database concepts and features that differ between the two systems, including data types, table creation, maintenance operations, and query syntax. You’ll find information on how various SQL Server constructs and functionalities map to their PostgreSQL equivalents or alternatives.
 

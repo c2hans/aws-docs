@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListApplicationGrants
-<a name="API_ListApplicationGrants"></a>
 
 List the grants associated with an application.
 

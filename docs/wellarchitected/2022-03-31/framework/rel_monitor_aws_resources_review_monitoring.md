@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL06-BP06 Conduct reviews regularly
-<a name="rel_monitor_aws_resources_review_monitoring"></a>
 
  Frequently review how workload monitoring is implemented and update it based on significant events and changes.
 

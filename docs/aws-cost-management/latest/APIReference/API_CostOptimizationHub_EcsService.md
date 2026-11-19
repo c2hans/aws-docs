@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EcsService
-<a name="API_CostOptimizationHub_EcsService"></a>
 
 The ECS service recommendation details.
 

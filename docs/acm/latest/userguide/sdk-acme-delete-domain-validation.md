@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-delete-dom
 ---
 
 # Deleting an ACME domain validation
-<a name="sdk-acme-delete-domain-validation"></a>
 
 The following example shows how to use the [DeleteAcmeDomainValidation](https://docs.aws.amazon.com/acm/latest/APIReference/API_DeleteAcmeDomainValidation.html) function.
 

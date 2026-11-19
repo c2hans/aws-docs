@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Batch
 ---
 
 # BatchGetApplicationRevisions
-<a name="API_BatchGetApplicationRevisions"></a>
 
 Gets information about one or more application revisions. The maximum number of application revisions that can be returned is 25.
 

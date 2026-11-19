@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DataAcc
 ---
 
 # DataAccessorAuthenticationDetail
-<a name="API_DataAccessorAuthenticationDetail"></a>
 
 Contains the authentication configuration details for a data accessor. This structure defines how the ISV authenticates when accessing data through the data accessor.
 

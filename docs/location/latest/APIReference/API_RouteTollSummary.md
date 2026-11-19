@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTo
 ---
 
 # RouteTollSummary
-<a name="API_RouteTollSummary"></a>
 
 The toll summary for the complete route.
 

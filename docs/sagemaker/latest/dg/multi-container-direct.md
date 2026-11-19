@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/multi-container-dire
 ---
 
 # Invoke a multi-container endpoint with direct invocation
-<a name="multi-container-direct"></a>
 
 SageMaker AI multi-container endpoints enable customers to deploy multiple containers to deploy different models on a SageMaker AI endpoint. You can host up to 15 different inference containers on a single endpoint. By using direct invocation, you can send a request to a specific inference container hosted on a multi-container endpoint.
 

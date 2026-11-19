@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-sha
 ---
 
 # Using shared plan cache
-<a name="apg-shared-plan-cache"></a>
 
 ## Overview
 <a name="apg-shared-plan-cache-overview"></a>

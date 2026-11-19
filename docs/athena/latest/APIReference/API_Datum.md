@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Datum.htm
 ---
 
 # Datum
-<a name="API_Datum"></a>
 
 A piece of data (a field in the table).
 

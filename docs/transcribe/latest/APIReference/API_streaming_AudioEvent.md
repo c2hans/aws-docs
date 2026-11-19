@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # AudioEvent
-<a name="API_streaming_AudioEvent"></a>
 
 A wrapper for your audio chunks. Your audio stream consists of one or more audio events, which consist of one or more audio chunks.
 

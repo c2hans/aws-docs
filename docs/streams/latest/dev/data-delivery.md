@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery.html
 ---
 
 # Streaming tables and S3 delivery for Amazon Kinesis Data Streams
-<a name="data-delivery"></a>
 
 With Amazon Kinesis Data Streams, you can deliver streaming data from your Kinesis data streams to two destination types: streaming tables on Apache Iceberg (Amazon S3 Tables), or general purpose Amazon S3 buckets. You don't need to manage any infrastructure, and you can start delivering within minutes. Amazon Kinesis Data Streams reads from your stream, buffers and aggregates records, and delivers them to your configured destination. Delivery is fully managed – there are no connectors, consumer applications, or compute resources to provision.
 

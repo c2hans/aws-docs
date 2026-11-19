@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Perf
 ---
 
 # PerformanceInsightsMetricsDetail
-<a name="API_PerformanceInsightsMetricsDetail"></a>
 
 Details about Performance Insights metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-a
 ---
 
 # Release an Elastic IP address
-<a name="using-instance-addressing-eips-releasing"></a>
 
 If you no longer need an Elastic IP address, we recommend that you release it. The Elastic IP address to release must not be currently associated with an AWS resource.
 

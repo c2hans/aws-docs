@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-time-t
 ---
 
 # Perform time travel and version travel queries
-<a name="querying-iceberg-time-travel-and-version-travel-queries"></a>
 
 Each Apache Iceberg table maintains a versioned manifest of the Amazon S3 objects that it contains. Previous versions of the manifest can be used for time travel and version travel queries.
 

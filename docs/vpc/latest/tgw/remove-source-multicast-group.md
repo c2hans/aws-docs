@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/remove-source-multicast-g
 ---
 
 # Deregister sources from a multicast group in AWS Transit Gateway
-<a name="remove-source-multicast-group"></a>
 
 You don't need to follow this procedure unless you manually added a source to the multicast group.
 

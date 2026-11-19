@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceN
 ---
 
 # InstanceNetworkInterfaceAssociation
-<a name="API_InstanceNetworkInterfaceAssociation"></a>
 
 Describes association information for an Elastic IP address (IPv4).
 

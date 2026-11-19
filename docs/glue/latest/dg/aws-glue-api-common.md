@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-common.html
 ---
 
 # Common data types
-<a name="aws-glue-api-common"></a>
 
 The Common data types describes miscellaneous common data types in AWS Glue.
 

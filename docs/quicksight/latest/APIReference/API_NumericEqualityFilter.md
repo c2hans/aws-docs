@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numer
 ---
 
 # NumericEqualityFilter
-<a name="API_NumericEqualityFilter"></a>
 
 A `NumericEqualityFilter` filters values that are equal to the specified value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_ListRecipes.ht
 ---
 
 # ListRecipes
-<a name="API_ListRecipes"></a>
 
 Returns a list of available recipes. The response provides the properties for each recipe, including the recipe's Amazon Resource Name (ARN).
 

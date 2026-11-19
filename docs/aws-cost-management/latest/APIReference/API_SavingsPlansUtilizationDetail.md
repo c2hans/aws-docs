@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansUtilizationDetail
-<a name="API_SavingsPlansUtilizationDetail"></a>
 
 A single daily or monthly Savings Plans utilization rate and details for your account. A management account in an organization have access to member accounts. You can use `GetDimensionValues` to determine the possible dimension values.
 

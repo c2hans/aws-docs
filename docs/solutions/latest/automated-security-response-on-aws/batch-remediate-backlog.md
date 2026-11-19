@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Batch remediate a backlog of findings using the API
-<a name="batch-remediate-backlog"></a>
 
 The Web UI and the AWS Security Hub CSPM custom action are convenient for remediating a small number of findings interactively. To work through a large backlog of existing findings programmatically — for example, immediately after deploying the solution — call the solution’s REST API directly.
 

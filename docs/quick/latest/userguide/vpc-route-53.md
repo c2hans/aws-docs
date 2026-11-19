@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/vpc-route-53.html
 ---
 
 # Inbound endpoints for Amazon Route 53 Resolver
-<a name="vpc-route-53"></a>
 
 *Amazon Route 53 Resolver* provides DNS query capabilities to your VPC. Route 53 Resolver resolves all local DNS queries and recursively looks up any DNS queries that aren't local on public DNS servers.
 

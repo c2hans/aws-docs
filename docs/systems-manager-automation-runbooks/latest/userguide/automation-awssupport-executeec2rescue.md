@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ExecuteEC2Rescue`
-<a name="automation-awssupport-executeec2rescue"></a>
 
  **Description**
 

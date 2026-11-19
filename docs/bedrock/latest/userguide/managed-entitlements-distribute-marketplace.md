@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/managed-entitle
 ---
 
 # Distributing from AWS Marketplace
-<a name="managed-entitlements-distribute-marketplace"></a>
 
 Use the following steps to distribute a private offer to every account in your organization when you accept it. You don't need to set up AWS License Manager, create grants, or activate them first.
 

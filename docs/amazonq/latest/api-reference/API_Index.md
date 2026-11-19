@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Index.h
 ---
 
 # Index
-<a name="API_Index"></a>
 
 Summary information for your Amazon Q Business index.
 

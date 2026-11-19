@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_StorageL
 ---
 
 # StorageLensGroupAndOperator
-<a name="API_control_StorageLensGroupAndOperator"></a>
 
  A logical operator that allows multiple filter conditions to be joined for more complex comparisons of Storage Lens group data.
 

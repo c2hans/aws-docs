@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::PaymentCredentialProvider PaymentProviderConfigurationInput
-<a name="aws-properties-bedrockagentcore-paymentcredentialprovider-paymentproviderconfigurationinput"></a>
 
 Provider configuration input containing credentials for creation and update operations. Credentials are stored as secrets in AWS Secrets Manager.
 

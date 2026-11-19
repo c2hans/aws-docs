@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DerivedEvaluatorConfig
-<a name="API_DerivedEvaluatorConfig"></a>
 
  The configuration for a derived evaluator. It reuses an existing evaluator's logic on your own model.
 

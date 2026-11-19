@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dev-guide-free
 ---
 
 # FreeRTOS Libraries
-<a name="dev-guide-freertos-libraries"></a>
 
 FreeRTOS libraries provide additional functionality to the FreeRTOS kernel and its internal libraries. You can use FreeRTOS libraries for networking and security in embedded applications. FreeRTOS libraries also enable your applications to interact with AWS IoT services. FreeRTOS includes libraries that make it possible to:
 + Securely connect devices to the AWS IoT Cloud using MQTT and device shadows.

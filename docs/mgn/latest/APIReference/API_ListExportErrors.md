@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListExportEr
 ---
 
 # ListExportErrors
-<a name="API_ListExportErrors"></a>
 
 List export errors.
 

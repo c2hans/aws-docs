@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_OnPremC
 ---
 
 # OnPremConfig
-<a name="API_OnPremConfig"></a>
 
 The AWS DataSync agents that can connect to your Network File System (NFS) file server.
 

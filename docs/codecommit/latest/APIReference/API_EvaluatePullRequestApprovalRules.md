@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Evalu
 ---
 
 # EvaluatePullRequestApprovalRules
-<a name="API_EvaluatePullRequestApprovalRules"></a>
 
 Evaluates whether a pull request has met all the conditions specified in its associated approval rules.
 

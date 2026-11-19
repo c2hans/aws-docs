@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListSyste
 ---
 
 # ListSystemTableStatuses
-<a name="API_ListSystemTableStatuses"></a>
 
 Lists the system tables that the account-level configuration activates, along with whether each is currently enabled. Because system tables are enabled at the account level, every entry reflects the same account-wide state.
 

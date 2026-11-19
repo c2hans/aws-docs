@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resourc
 ---
 
 # Identifying resources with AWS Cloud Control API
-<a name="resource-identifier"></a>
 
 Every resource type has a property that is defined as its *primary identifier*. The value of this property must be unique for each resource of that type in a given AWS account and AWS Region. For example, many resource types include a `Name` property that must be unique for each resource of that type. In some cases, the primary identifier is defined as a combination of multiple properties that together form a unique identifier. By using this primary identifier, combined with the resource type, you can specify exactly which resource on which you want to perform resource operations such as `update-resource` or `delete-resource`.
 

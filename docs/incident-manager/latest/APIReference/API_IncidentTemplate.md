@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # IncidentTemplate
-<a name="API_IncidentTemplate"></a>
 
 Basic details used in creating a response plan. The response plan is then used to create an incident record.
 

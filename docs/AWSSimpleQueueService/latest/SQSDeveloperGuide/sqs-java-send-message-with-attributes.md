@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Sending message attributes to an Amazon SQS queue
-<a name="sqs-java-send-message-with-attributes"></a>
 
 You can include structured metadata (such as timestamps, geospatial data, signatures, and identifiers) with messages using *message attributes*. For more information, see [Amazon SQS message attributes](sqs-message-metadata.md#sqs-message-attributes).
 

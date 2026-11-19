@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectionPropert
 ---
 
 # ConnectionPropertiesConfiguration
-<a name="API_ConnectionPropertiesConfiguration"></a>
 
 Configuration that defines the base URL and additional request parameters needed during connection creation.
 

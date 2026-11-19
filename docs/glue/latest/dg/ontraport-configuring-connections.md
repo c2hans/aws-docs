@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/ontraport-configuring-con
 ---
 
 # Configuring Ontraport connections
-<a name="ontraport-configuring-connections"></a>
 
 Ontraport connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

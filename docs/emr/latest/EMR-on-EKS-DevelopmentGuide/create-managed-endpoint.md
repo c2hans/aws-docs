@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/c
 ---
 
 # Creating an interactive endpoint for your virtual cluster
-<a name="create-managed-endpoint"></a>
 
 This topic describes a couple ways to create an interactive endpoint using the AWS Command Line Interface (AWS CLI) and includes details on available configuration parameters.
 

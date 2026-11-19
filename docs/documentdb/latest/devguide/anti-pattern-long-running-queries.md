@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/anti-pattern-
 ---
 
 # Long running queries
-<a name="anti-pattern-long-running-queries"></a>
 
 ## Overview
 <a name="long-queries-overview"></a>

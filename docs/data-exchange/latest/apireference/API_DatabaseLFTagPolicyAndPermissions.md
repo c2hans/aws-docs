@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Da
 ---
 
 # DatabaseLFTagPolicyAndPermissions
-<a name="API_DatabaseLFTagPolicyAndPermissions"></a>
 
 The LF-tag policy and permissions for database resources.
 

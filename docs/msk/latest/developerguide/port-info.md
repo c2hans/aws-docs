@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/port-info.html
 ---
 
 # Port information
-<a name="port-info"></a>
 
 Use the following port numbers so that Amazon MSK can communicate with client machines:
 + To communicate with brokers in plaintext, use port 9092.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskExe
 ---
 
 # TaskExecutionListEntry
-<a name="API_TaskExecutionListEntry"></a>
 
 Represents a single entry in a list of AWS DataSync task executions that's returned with the [ListTaskExecutions](https://docs.aws.amazon.com/datasync/latest/userguide/API_ListTaskExecutions.html) operation.
 

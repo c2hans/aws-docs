@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/troubleshooting-search-
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Troubleshooting document search results
-<a name="troubleshooting-search-results"></a>
 
 This section can help you fix issues in your Amazon Kendra search results.
 

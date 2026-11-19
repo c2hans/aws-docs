@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DestinationE
 ---
 
 # DestinationEndpoint
-<a name="API_DestinationEndpoint"></a>
 
 The details of a destination endpoint in MediaConnect, including its configuration, state, and connection details.
 

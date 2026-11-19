@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deregiste
 ---
 
 # DeregisterInstanceTagAttributeRequest
-<a name="API_DeregisterInstanceTagAttributeRequest"></a>
 
 Information about the tag keys to deregister for the current Region. You can either specify individual tag keys or deregister all tag keys in the current Region. You must specify either `IncludeAllTagsOfInstance` or `InstanceTagKeys` in the request
 

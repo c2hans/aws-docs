@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/monitoring_ove
 ---
 
 # Monitoring AWS IoT
-<a name="monitoring_overview"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of AWS IoT and your AWS solutions.
 

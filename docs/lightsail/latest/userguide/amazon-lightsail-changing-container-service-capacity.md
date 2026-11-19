@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Scale capacity for your Lightsail container service
-<a name="amazon-lightsail-changing-container-service-capacity"></a>
 
 The capacity of your Amazon Lightsail container service is made up of its scale and power. The scale specifies the number of compute nodes in your container service, and the power specifies the memory and vCPUs of each node in your service. You pick the scale based on the number of nodes you want powering your service for better availability and higher capacity
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateTr
 ---
 
 # UpdateTrafficDistribution
-<a name="API_UpdateTrafficDistribution"></a>
 
 Updates the traffic distribution for a given traffic distribution group.
 

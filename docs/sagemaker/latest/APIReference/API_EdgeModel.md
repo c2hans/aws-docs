@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EdgeMo
 ---
 
 # EdgeModel
-<a name="API_EdgeModel"></a>
 
 The model on the edge device.
 

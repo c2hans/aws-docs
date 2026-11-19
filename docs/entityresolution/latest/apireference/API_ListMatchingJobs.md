@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ListMatchingJobs
-<a name="API_ListMatchingJobs"></a>
 
 Lists all jobs for a given workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_D
 ---
 
 # DeleteIngressPoint
-<a name="API_DeleteIngressPoint"></a>
 
 Delete an ingress endpoint resource.
 

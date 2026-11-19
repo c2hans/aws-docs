@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_TagE
 ---
 
 # TagEntry
-<a name="API_TagEntry"></a>
 
 Key-value pairs of metadata.
 

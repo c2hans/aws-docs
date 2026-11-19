@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # Setting up an Amazon Managed Grafana workspace
-<a name="sagemaker-hyperpod-cluster-observability-slurm-managed-grafana-ws"></a>
 
 Create a new Amazon Managed Grafana workspace or update an existing Amazon Managed Grafana workspace with Amazon Managed Service for Prometheus as the data source.
 

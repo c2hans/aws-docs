@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-m
 ---
 
 # IVS Broadcast SDK: Mobile Audio Modes \| Real-Time Streaming
-<a name="broadcast-mobile-audio-modes"></a>
 
 Audio quality is an important part of any real-team media experience, and there isn’t a one-size-fits-all audio configuration that works best for every use case. To ensure that your users have the best experience when listening to an IVS real-time stream, our mobile SDKs provide several preset audio configurations, as well as more powerful customizations as needed.
 

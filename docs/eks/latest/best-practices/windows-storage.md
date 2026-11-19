@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/windows-storag
 ---
 
 # Persistent storage options
-<a name="windows-storage"></a>
 
 ## What is an in-tree vs. out-of-tree volume plugin?
 <a name="_what_is_an_in_tree_vs_out_of_tree_volume_plugin"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Create a collection (CLI)
-<a name="serverless-create-cli"></a>
 
 Use the procedures in this section to create an OpenSearch Serverless collection using the AWS CLI.
 

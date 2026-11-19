@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/sc
 ---
 
 # Scan Git repositories for sensitive information and security issues by using git-secrets
-<a name="scan-git-repositories-for-sensitive-information-and-security-issues-by-using-git-secrets"></a>
 
 *Saurabh Singh, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Map classes to DynamoDB items by using the DynamoDB Mapper
-<a name="ddb-mapper"></a>
 
 DynamoDB Mapper is a high-level library that maps your Kotlin classes to Amazon DynamoDB tables and indexes, similar to the AWS SDK for Java’s [DynamoDB Enhanced Client](/sdk-for-java/latest/developer-guide/dynamodb-enhanced-client.html) or the AWS SDK for .NET’s [Object Persistence Model](/amazondynamodb/latest/developerguide/DotNetSDKHighLevel.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # SAP HANA Setup and HSR
-<a name="sap-hana-pacemaker-rhel-hana-setup-hsr"></a>
 
 Prepare SAP HANA for System Replication (HSR) by configuring parameters and creating required backups.
 

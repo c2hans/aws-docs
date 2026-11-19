@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/resource-limiting-raw-cg
 ---
 
 # Limiting process resource usage in AL2027 using cgroups
-<a name="resource-limiting-raw-cgroups"></a>
 
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads.

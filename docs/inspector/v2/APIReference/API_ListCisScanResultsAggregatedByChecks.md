@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCisSca
 ---
 
 # ListCisScanResultsAggregatedByChecks
-<a name="API_ListCisScanResultsAggregatedByChecks"></a>
 
 Lists scan results aggregated by checks.
 

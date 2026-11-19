@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateFargat
 ---
 
 # CreateFargateProfile
-<a name="API_CreateFargateProfile"></a>
 
 Creates an AWS Fargate profile for your Amazon EKS cluster. You must have at least one Fargate profile in a cluster to be able to run pods on Fargate.
 

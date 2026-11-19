@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/lambda_example_se
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Connecting to an Amazon RDS database in a Lambda function
-<a name="lambda_example_serverless_connect_RDS_Lambda_section"></a>
 
 The following code examples show how to implement a Lambda function that connects to an RDS database. The function makes a simple database request and returns the result.
 

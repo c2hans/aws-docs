@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Publishing Performance Insights metrics to Amazon CloudWatch
-<a name="publishing-performance-insights-to-cloudwatch"></a>
 
 Amazon RDS Performance Insights monitors most of the DB instance metrics and dimensions and makes them available through the [Performance Insights dashboard](https://console.aws.amazon.com/rds/home#performance-insights-v20206:) on the AWS Management Console. This dashboard is well-suited for database troubleshooting and root cause analysis. However, it is not possible to create alarms in Performance Insights for performance-related metrics. If you want to create alarms based on Performance Insights metrics, those metrics must be in CloudWatch.
 

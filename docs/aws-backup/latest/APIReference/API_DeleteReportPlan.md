@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteReportPlan
-<a name="API_DeleteReportPlan"></a>
 
 Deletes the report plan specified by a report plan name.
 

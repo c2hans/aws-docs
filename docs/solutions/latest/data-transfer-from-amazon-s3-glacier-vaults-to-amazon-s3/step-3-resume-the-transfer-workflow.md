@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Step 3: Resume the transfer workflow
-<a name="step-3-resume-the-transfer-workflow"></a>
 
 1.  Sign in to the [Systems Manager console](https://console.aws.amazon.com/systems-manager).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Configura
 ---
 
 # ConfigurationStatus
-<a name="API_ConfigurationStatus"></a>
 
 Provides the status of the default encryption configuration for an AWS account.
 

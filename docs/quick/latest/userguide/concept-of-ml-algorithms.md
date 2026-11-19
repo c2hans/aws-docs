@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/concept-of-ml-alg
 ---
 
 # Understanding the ML algorithm used by AWS Quick Sight
-<a name="concept-of-ml-algorithms"></a>
 
 |  |
 | --- |

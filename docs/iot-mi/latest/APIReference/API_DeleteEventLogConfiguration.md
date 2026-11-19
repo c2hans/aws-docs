@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_DeleteEve
 ---
 
 # DeleteEventLogConfiguration
-<a name="API_DeleteEventLogConfiguration"></a>
 
 Delete an event log configuration.
 

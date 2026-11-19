@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan Workflow
-<a name="aws-properties-arcregionswitch-plan-workflow"></a>
 
 Represents a workflow in a Region switch plan. A workflow defines a sequence of steps to execute during a Region switch.
 

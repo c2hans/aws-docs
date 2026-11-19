@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Rout
 ---
 
 # Route53PrivateHealthChecksServiceRolePolicy
-<a name="Route53PrivateHealthChecksServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Route 53 health checks to describe subnets in your VPC. Helps Amazon Route 53 health checks determine whether IPv6 should be enabled for a customer's resource.
 

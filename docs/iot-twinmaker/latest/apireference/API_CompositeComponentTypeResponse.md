@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Co
 ---
 
 # CompositeComponentTypeResponse
-<a name="API_CompositeComponentTypeResponse"></a>
 
 An object that returns information about the composite component types of a component type.
 

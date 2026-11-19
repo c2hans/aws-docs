@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Uninstall the Guidance
-<a name="uninstall-the-Guidance"></a>
 
  You can uninstall the Data Transfer from Amazon Glacier Vaults to Amazon S3 Guidance from the AWS Management Console or by using the AWS Command Line Interface. Manually delete the following resources:
 +  S3 buckets (other than the output bucket if you intend to keep the transferred archives)

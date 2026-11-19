@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryInst
 ---
 
 # RecoveryInstanceDisk
-<a name="API_RecoveryInstanceDisk"></a>
 
 An object representing a block storage device on the Recovery Instance.
 

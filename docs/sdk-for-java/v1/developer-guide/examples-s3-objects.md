@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Performing Operations on Amazon S3 Objects
-<a name="examples-s3-objects"></a>
 
 An Amazon S3 object represents a *file* or collection of data. Every object must reside within a [bucket](examples-s3-buckets.md).
 

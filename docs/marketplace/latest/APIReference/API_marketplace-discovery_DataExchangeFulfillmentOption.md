@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # DataExchangeFulfillmentOption
-<a name="API_marketplace-discovery_DataExchangeFulfillmentOption"></a>
 
 Describes an AWS Data Exchange fulfillment option for data set delivery.
 

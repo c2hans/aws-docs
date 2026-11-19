@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  Microservices architecture, a versatile design approach that provides an alternative to traditional monolithic systems, assists in scaling applications, boosting development speed, and fostering organizational growth. With its adaptability, it can be implemented using containers, serverless approaches, or a blend of the two, tailoring to specific needs.
 

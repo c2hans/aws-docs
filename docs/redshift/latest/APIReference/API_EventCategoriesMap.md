@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_EventCa
 ---
 
 # EventCategoriesMap
-<a name="API_EventCategoriesMap"></a>
 
 Describes event categories.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationSuggestedAnswer
-<a name="API_EvaluationSuggestedAnswer"></a>
 
 The information about the suggested answer for the question.
 

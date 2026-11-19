@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Validati
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 A structure that contains information about a request parameter that caused an error.
 

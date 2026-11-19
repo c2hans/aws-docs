@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Choosing the right DB instance class
-<a name="aurora-analytics-instance-class"></a>
 
 The right instance class depends on how your foreign table queries use memory, storage, and CPU. For details about each of these resources, see [Resource management](aurora-analytics-resource-management.md).
 

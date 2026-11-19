@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionState
-<a name="API_ActionState"></a>
 
 Represents information about the state of an action.
 

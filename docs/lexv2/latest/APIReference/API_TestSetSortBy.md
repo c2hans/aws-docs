@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetSor
 ---
 
 # TestSetSortBy
-<a name="API_TestSetSortBy"></a>
 
 Contains information about the methods by which to sort the test set.
 

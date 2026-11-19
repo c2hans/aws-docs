@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-f
 ---
 
 # Start uploading a file to Connect Customer agent workspace
-<a name="3P-apps-file-requests-startattachedfileupload"></a>
 
 Provides a pre-signed Amazon S3 URL in response to upload a new attached file.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-create-inputs-ti
 ---
 
 # Create the inputs
-<a name="ips-create-inputs-tips"></a>
 
 This section is a supplement to the information in [Working with inputs](creating-input.md). It provides information that applies specifically to creating inputs for use in a MediaLive channel that contains multiple input attachments.
 

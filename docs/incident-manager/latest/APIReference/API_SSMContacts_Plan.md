@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Plan
-<a name="API_SSMContacts_Plan"></a>
 
 Information about the stages and on-call rotation teams associated with an escalation plan or engagement plan.
 

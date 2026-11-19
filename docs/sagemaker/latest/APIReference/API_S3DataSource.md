@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3Data
 ---
 
 # S3DataSource
-<a name="API_S3DataSource"></a>
 
 Describes the S3 data source.
 

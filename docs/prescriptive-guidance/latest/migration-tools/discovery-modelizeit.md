@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # modelizeIT
-<a name="discovery-modelizeit"></a>
 
 *Last update: June 19, 2026*
 

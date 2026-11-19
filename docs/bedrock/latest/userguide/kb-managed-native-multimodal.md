@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-nati
 ---
 
 # Native multimodal processing
-<a name="kb-managed-native-multimodal"></a>
 
 With *native multimodal processing*, a managed Amazon Bedrock knowledge base sends each file directly to a multimodal embedding model. The model then creates embeddings from the raw image, audio, and video content.
 

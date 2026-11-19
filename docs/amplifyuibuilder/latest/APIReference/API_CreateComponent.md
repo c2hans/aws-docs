@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CreateComponent
-<a name="API_CreateComponent"></a>
 
 Creates a new component for an Amplify app.
 

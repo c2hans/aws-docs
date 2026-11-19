@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-ro-troubleshoo
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshoot EKS Auto Mode resource optimization
-<a name="auto-ro-troubleshoot"></a>
 
 Use `kubectl` to find out why EKS Auto Mode resource optimization isn’t doing what you expect. This topic covers how to stop changes during an incident. It also covers the common reasons a workload isn’t managed, has no recommendation, or doesn’t get a recommendation applied. If you need to stop changes now, see [Stop changes and revert values during an incident](#auto-ro-troubleshoot-stop).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-
 ---
 
 # AWS Glue Scala DynamicRecord class
-<a name="glue-etl-scala-apis-glue-dynamicrecord-class"></a>
 
 **Topics**
 + [Def addField](#glue-etl-scala-apis-glue-dynamicrecord-class-defs-addField)
@@ -198,7 +197,7 @@ def apply( row : Row,
            schema : SparkStructType )
 ```
 
-Apply method to convert an Apache Spark SQL `Row` to a [DynamicRecord](#glue-etl-scala-apis-glue-dynamicrecord-class).
+Apply method to convert an Apache Spark SQL `Row` to a [DynamicRecord](glue-etl-scala-apis-glue-dynamicrecord-class.md).
 + `row` — A Spark SQL `Row`.
 + `schema` — The `Schema` of that row.
 

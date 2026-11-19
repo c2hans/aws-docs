@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialLineStyle
-<a name="API_GeospatialLineStyle"></a>
 
 The visualization style for a line layer.
 

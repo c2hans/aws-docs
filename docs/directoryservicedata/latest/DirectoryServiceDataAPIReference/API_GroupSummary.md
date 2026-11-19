@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # GroupSummary
-<a name="API_GroupSummary"></a>
 
 A structure containing a subset of fields of a group object from a directory.
 

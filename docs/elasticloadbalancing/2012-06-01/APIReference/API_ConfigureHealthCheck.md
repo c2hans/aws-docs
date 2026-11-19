@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # ConfigureHealthCheck
-<a name="API_ConfigureHealthCheck"></a>
 
 Specifies the health check settings to use when evaluating the health state of your EC2 instances.
 

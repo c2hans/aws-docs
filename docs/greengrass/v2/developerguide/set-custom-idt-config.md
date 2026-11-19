@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/set-custom-
 ---
 
 # Configure settings for test runners
-<a name="set-custom-idt-config"></a>
 
 To run custom test suites, test runners must configure their settings based on the test suite that they want to run. Settings are specified based on configuration file templates located in the `{{<device-tester-extract-location>}}/configs/` folder. If required, test runners must also set up AWS credentials that IDT will use to connect to the AWS cloud.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 ---
 
 # Choosing a modern application strategy
-<a name="modern-apps-strategy-on-aws-how-to-choose"></a>
 
 **Taking the first step**
 

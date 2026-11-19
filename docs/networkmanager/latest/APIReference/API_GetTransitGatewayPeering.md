@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetTransitGatewayPeering
-<a name="API_GetTransitGatewayPeering"></a>
 
 Returns information about a transit gateway peer.
 

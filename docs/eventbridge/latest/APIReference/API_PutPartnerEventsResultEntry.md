@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutP
 ---
 
 # PutPartnerEventsResultEntry
-<a name="API_PutPartnerEventsResultEntry"></a>
 
 The result of an event entry the partner submitted in this request. If the event was successfully submitted, the entry has the event ID in it. Otherwise, you can use the error code and error message to identify the problem with the entry.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/installer.html
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Using the AWS Cloud9 Installer for AWS Cloud9 SSH environments
-<a name="installer"></a>
 
 Before you create an AWS Cloud9 SSH development environment, the cloud compute instance (for example an Amazon EC2 instance) or your own server that you want to connect to the environment must meet the [SSH Host Requirements](ssh-settings.md#ssh-settings-requirements). One of these requirements is that you must download and run the AWS Cloud9 Installer on the instance or server. The AWS Cloud9 Installer is a Linux shell script that checks whether the instance or server is running on an operating system platform and architecture that AWS Cloud9 supports. If this check succeeds, the script then attempts to install components and their dependencies that AWS Cloud9 requires to be on the instance or server.
 

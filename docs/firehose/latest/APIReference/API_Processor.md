@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Process
 ---
 
 # Processor
-<a name="API_Processor"></a>
 
 Describes a data processor.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/prerequi
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 Before you can use the AWS Resilience Hub, you must complete the following prerequisites:
 + AWS accounts – Create one or more AWS accounts for each account type (primary/secondary/resource accounts) you want use within AWS Resilience Hub. For more information about creating and managing AWS accounts, see the following:

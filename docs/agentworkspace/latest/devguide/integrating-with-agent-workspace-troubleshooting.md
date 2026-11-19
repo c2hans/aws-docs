@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrati
 ---
 
 # Troubleshoot application setup in Connect Customer agent workspace
-<a name="integrating-with-agent-workspace-troubleshooting"></a>
 
 You can use the [Connect Customer SDK's](https://github.com/amazon-connect/AmazonConnectSDK) ` AppConfig` object to retrieve data about your applications’s setup in the Connect Customer agent workspace, including its permissions. This will allow you to inspect its state and determine which permissions were assigned to your app. Accessing its ` permissions` property will return a list of strings, each representing a permissions that grants access to a set of events and requests. Performing an action, whether subscribing to an event or making a request, will fail if your app does not have the corresponding permission that grants the action. You may have to ask your account admin to assign the permissions required for your app to function. To review the full list of permissions assignable to apps, please see the admin guide.
 

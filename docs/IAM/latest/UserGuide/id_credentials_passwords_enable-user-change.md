@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_pass
 ---
 
 # Permit IAM users to change their own passwords
-<a name="id_credentials_passwords_enable-user-change"></a>
 
 **Note**
 Users with federated identities will use the process defined by their identity provider to change their passwords. As a [best practice](best-practices.md), require human users to use federation with an identity provider to access AWS using temporary credentials.
@@ -100,7 +99,7 @@ To update the account password policy, call the following operation:
 <a name="HowToPwdIAMUser-moreinfo"></a>
 
 For more information on managing credentials, see the following topics:
-+ [Permit IAM users to change their own passwords](#id_credentials_passwords_enable-user-change)
++ [Permit IAM users to change their own passwords](id_credentials_passwords_enable-user-change.md)
 + [User passwords in AWS](id_credentials_passwords.md)
 + [Set an account password policy for IAM users](id_credentials_passwords_account-policy.md)
 + [Manage IAM policies](access_policies_manage.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBParameterGro
 ---
 
 # DBParameterGroup
-<a name="API_DBParameterGroup"></a>
 
 Contains the details of an Amazon Neptune DB parameter group.
 

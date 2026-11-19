@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.tro
 ---
 
 # Troubleshooting for RDS Proxy
-<a name="rds-proxy.troubleshooting"></a>
 
  Following, you can find troubleshooting ideas for some common RDS Proxy issues and information on CloudWatch logs for RDS Proxy.
 

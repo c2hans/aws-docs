@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Measuring replication lag among pgactive members
-<a name="Appendix.PostgreSQL.CommonDBATasks.pgactive.replicationlag"></a>
 
 You can use the following query to view the replication lag among the `pgactive` members. Run this query on every `pgactive` node to get the full picture.
 

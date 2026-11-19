@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeScanJob
-<a name="API_DescribeScanJob"></a>
 
 Returns scan job details for the specified ScanJobID.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Amazon OpenSearch Ingestion and interface endpoints API (AWS PrivateLink)
-<a name="osis-access-apis-using-privatelink"></a>
 
 You can establish a private connection between your VPC and OpenSearch Ingestion API endpoints by creating an *interface VPC endpoint*. Interface endpoints are powered by [AWS PrivateLink](https://aws.amazon.com/privatelink).
 

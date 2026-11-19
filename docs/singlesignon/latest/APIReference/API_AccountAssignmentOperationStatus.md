@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Acc
 ---
 
 # AccountAssignmentOperationStatus
-<a name="API_AccountAssignmentOperationStatus"></a>
 
 The status of the creation or deletion operation of an assignment that a principal needs to access an account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Best practices for choosing a GitOps tool
-<a name="best-practices"></a>
 
 This section provides considerations, tips, and best practices for choosing a GitOps tool for your EKS cluster. The right choice depends on your specific context, requirements, and long-term strategy. It's often beneficial to conduct a proof of concept with your top choices before you make a final decision.
 

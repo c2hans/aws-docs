@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Perform list operations in DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_ListOperations_section"></a>
 
 The following code examples show how to perform list operations in DynamoDB.
 + Add elements to a list attribute.

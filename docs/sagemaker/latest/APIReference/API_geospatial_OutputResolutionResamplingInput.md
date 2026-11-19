@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # OutputResolutionResamplingInput
-<a name="API_geospatial_OutputResolutionResamplingInput"></a>
 
 OutputResolution Configuration indicating the target resolution for the output of Resampling operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListCustomerManagedPolicyReferencesInPermissionSet
-<a name="API_ListCustomerManagedPolicyReferencesInPermissionSet"></a>
 
 Lists all customer managed policies attached to a specified [PermissionSet](API_PermissionSet.md).
 

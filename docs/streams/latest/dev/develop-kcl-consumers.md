@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/develop-kcl-consumers
 ---
 
 # Develop consumers with KCL
-<a name="develop-kcl-consumers"></a>
 
 You can use the Kinesis Client Library (KCL) to build consumer applications that process data from your Kinesis data streams.
 

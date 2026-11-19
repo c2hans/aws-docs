@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListMember
 ---
 
 # ListMembers
-<a name="API_ListMembers"></a>
 
 List members associated with the Amazon Inspector delegated administrator for your organization.
 

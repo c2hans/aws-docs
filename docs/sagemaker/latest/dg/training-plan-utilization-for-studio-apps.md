@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-utiliz
 ---
 
 # Using training plans in Studio applications
-<a name="training-plan-utilization-for-studio-apps"></a>
 
 You can use SageMaker training plans with SageMaker Studio apps by specifying the training plan ARN in the resource specification when you create a Studio app. A Studio app can only use a training plan if it is in the `Active` status. Only `JupyterLab` and `CodeEditor` app types are supported with training plans.
 

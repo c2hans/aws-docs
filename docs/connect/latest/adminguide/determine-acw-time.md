@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/determine-acw-
 ---
 
 # Determine the contact center agent's ACW (After Contact Work) time
-<a name="determine-acw-time"></a>
 
 There's no event in the agent event stream that tells you how long a contact is in the After Contact Work (ACW) state, and by extension how long an agent spends doing ACW. However, there's other data in the agent event stream that you can use to figure this out.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ki-all.html
 ---
 
 # Known issues for all HSM instances
-<a name="ki-all"></a>
 
 The following issues impact all AWS CloudHSM users regardless of whether they use the key\_mgmt\_util command line tool, the PKCS \#11 SDK, the JCE SDK, or the OpenSSL SDK.
 

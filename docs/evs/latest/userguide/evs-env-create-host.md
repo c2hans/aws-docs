@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-env-create-host
 ---
 
 # Add a host (VCF 5.x)
-<a name="evs-env-create-host"></a>
 
 This page applies to EVS-deployed environments (VCF 5.2.x). For Self-deployed environments that run VCF 9.x, see [Manage hosts](host-management.md).
 

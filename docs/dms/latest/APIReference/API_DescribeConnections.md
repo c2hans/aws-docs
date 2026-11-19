@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConn
 ---
 
 # DescribeConnections
-<a name="API_DescribeConnections"></a>
 
 Describes the status of the connections that have been made between the replication instance and an endpoint. Connections are created when you test an endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-narratives-
 ---
 
 # Adding URLs
-<a name="using-narratives-expression-editor-urls"></a>
 
 Using the **URL** button on the editing menu of the narrative expression editor, you can add static and dynamic URLs (hyperlinks) into a narrative. You can also use the following keyboard shortcuts: ⌘\+⇧\+L or Ctrl\+⇧\+L.
 

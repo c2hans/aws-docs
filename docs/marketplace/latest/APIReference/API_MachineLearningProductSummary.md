@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Mach
 ---
 
 # MachineLearningProductSummary
-<a name="API_MachineLearningProductSummary"></a>
 
 A summary of a machine learning product.
 

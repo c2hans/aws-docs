@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/toolkit-library-gs.html
 ---
 
 # Getting started with the CDK Toolkit Library
-<a name="toolkit-library-gs"></a>
 
 Get started with using the AWS CDK Toolkit Library to programmatically perform CDK actions, such as synthesis and deployment, in your code.
 

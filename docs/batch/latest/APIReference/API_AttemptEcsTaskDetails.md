@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_AttemptEcs
 ---
 
 # AttemptEcsTaskDetails
-<a name="API_AttemptEcsTaskDetails"></a>
 
 An object that represents the details of a task.
 

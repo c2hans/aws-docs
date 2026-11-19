@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/start-bot-conversati
 ---
 
 # StartBotConversation
-<a name="start-bot-conversation"></a>
 
 The `StartBotConversation` action establishes a voice conversation between an end user and your Amazon Lex V2 v2 bot. The user provides the required information to the bot. The bot then returns the information to the public switched telephone network (PSTN) Audio Lambda function, and the function performs the requested tasks.
 
@@ -398,6 +397,6 @@ AWS bills you for the following costs:
 + Amazon Polly usage for synthesizing text responses from your bot. For more information, see [ Amazon Polly Pricing](https://aws.amazon.com/polly/pricing/).
 
 You also need to be aware of the following service quotas:
-+ The Amazon Chime SDK has a service quota for the maximum number of Amazon Lex bots you can use with the PSTN audio [StartBotConversation](#start-bot-conversation) action. For more information, refer to [SIP trunking and voice quotas](https://docs.aws.amazon.com/general/latest/gr/chime-sdk.html#chm-sdk-pstn-quotas), in the *AWS General Reference*.
++ The Amazon Chime SDK has a service quota for the maximum number of Amazon Lex bots you can use with the PSTN audio [StartBotConversation](start-bot-conversation.md) action. For more information, refer to [SIP trunking and voice quotas](https://docs.aws.amazon.com/general/latest/gr/chime-sdk.html#chm-sdk-pstn-quotas), in the *AWS General Reference*.
 + Amazon Lex V2 has a service quota for the maximum number of concurrent voice conversations per Lex bot. You can contact the Amazon Lex service team for quota increases. For more information, see the Amazon Lex V2 [Guidelines and quotas](https://docs.aws.amazon.com/lexv2/latest/dg/quotas.html) in the *Amazon Lex V2 Developer Guide*.
 + Amazon Polly has a service quota for synthesizing text responses. You can contact the Amazon Polly service team for quota increases. For more information about Amazon Polly service quotas, see [Quotas in Amazon Polly](https://docs.aws.amazon.com/polly/latest/dg/limits.html), in the *Amazon Polly Developer Guide*.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/holiday.ht
 ---
 
 # .holiday
-<a name="holiday"></a>
 
 Used by those in the travel industry and individuals and businesses involved in party planning and special occasions.
 

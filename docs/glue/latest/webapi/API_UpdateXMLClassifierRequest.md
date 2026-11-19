@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateXMLClassifi
 ---
 
 # UpdateXMLClassifierRequest
-<a name="API_UpdateXMLClassifierRequest"></a>
 
 Specifies an XML classifier to be updated.
 

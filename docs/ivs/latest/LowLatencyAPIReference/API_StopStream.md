@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_St
 ---
 
 # StopStream
-<a name="API_StopStream"></a>
 
 Disconnects the incoming RTMPS stream for the specified channel. Can be used in conjunction with [DeleteStreamKey](API_DeleteStreamKey.md) to prevent further streaming to a channel.
 

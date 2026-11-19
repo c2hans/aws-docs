@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Determining which lens to upgrade in AWS WA Tool
-<a name="lenses-selecting"></a>
 
 You can find which workloads aren't using the most current lens version by viewing the **Notifications** page.
 

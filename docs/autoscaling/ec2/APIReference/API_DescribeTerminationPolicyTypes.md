@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeTerminationPolicyTypes
-<a name="API_DescribeTerminationPolicyTypes"></a>
 
 Describes the termination policies supported by Amazon EC2 Auto Scaling.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddo
 ---
 
 # DescribeAddonVersions
-<a name="API_DescribeAddonVersions"></a>
 
 Describes the versions for an add-on.
 

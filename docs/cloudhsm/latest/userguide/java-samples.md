@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/java-samples.h
 ---
 
 # Code samples for the AWS CloudHSM software library for Java for Client SDK 5
-<a name="java-samples"></a>
 
 This topic provides resources and information on Java code samples for AWS CloudHSM Client SDK 5.
 

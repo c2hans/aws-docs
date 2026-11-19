@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/get-action-recomme
 ---
 
 # Real-time action recommendations in Amazon Personalize
-<a name="get-action-recommendations"></a>
 
  If you use a PERSONALIZED\_ACTIONS recipe, you can get action recommendations from your campaign in real time. You can get action recommendations with the Amazon Personalize console, AWS Command Line Interface (AWS CLI), or AWS SDKs.
 

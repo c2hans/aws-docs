@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Lis
 ---
 
 # ListDashManifestConfiguration
-<a name="API_ListDashManifestConfiguration"></a>
 
 List the DASH manifest configuration.
 

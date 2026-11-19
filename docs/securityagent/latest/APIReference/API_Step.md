@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_St
 ---
 
 # Step
-<a name="API_Step"></a>
 
 Represents a step in the pentest job execution pipeline. Steps include preflight, static analysis, pentest, and finalizing.
 

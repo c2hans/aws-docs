@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPoolS
 ---
 
 # IpamPoolSourceResourceRequest
-<a name="API_IpamPoolSourceResourceRequest"></a>
 
 The resource used to provision CIDRs to a resource planning pool.
 

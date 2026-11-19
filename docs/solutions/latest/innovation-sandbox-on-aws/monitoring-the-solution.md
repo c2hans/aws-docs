@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Monitoring the solution
-<a name="monitoring-the-solution"></a>
 
 This section describes the observability tools included with Innovation Sandbox on AWS and how to use them to monitor your deployment.
 +  [Logs and tracing](monitoring-logs-and-tracing.md)

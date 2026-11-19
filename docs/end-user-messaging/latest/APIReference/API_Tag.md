@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Describes a tag as a key and value pair that you can associate with a resource.
 

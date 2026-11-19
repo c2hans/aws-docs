@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_A
 ---
 
 # AssignedVariablesDetails
-<a name="API_AssignedVariablesDetails"></a>
 
 Provides details about assigned variables in an execution history event.
 

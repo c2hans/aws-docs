@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/examples.pbs-to
 ---
 
 # Public broadcast satellite utilizing Amazon S3 data delivery
-<a name="examples.pbs-to-s3"></a>
 
  This example builds off the analysis done in the [JPSS-1 - Public broadcast satellite (PBS) - Evaluation](examples.md#examples.pbs-definition) section of the user guide.
 

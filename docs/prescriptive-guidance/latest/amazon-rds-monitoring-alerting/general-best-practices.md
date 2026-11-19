@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # General best practices
-<a name="general-best-practices"></a>
 
 The following best practices help you gain sufficient visibility into the health of your Amazon RDS workload and take appropriate actions in response to operational events and monitoring data.
 + **Identify KPIs.** Identify key performance indicators (KPIs) based on desired business outcomes. Evaluate KPIs to determine workload success. For example, if your core business is ecommerce, one of your desired business outcomes could be that your e-shop is available 24/7 for your customers to do their shopping. To achieve that business outcome, you define the availability KPI for the backend Amazon RDS database that your e-shop application uses, and set the baseline KPI to 99.99% on a weekly basis. Evaluating the actual availability KPI against the baseline value helps you determine if you are meeting the desired database availability of 99.99% and thus achieving the business outcome of having a 24/7 service.

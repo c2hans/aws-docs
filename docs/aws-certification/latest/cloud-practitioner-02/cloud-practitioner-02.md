@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/cloud-practitio
 ---
 
 # AWS Certified Cloud Practitioner (CLF-C02)
-<a name="cloud-practitioner-02"></a>
 
 The AWS Certified Cloud Practitioner (CLF-C02) exam is intended for individuals who can effectively demonstrate overall knowledge of the AWS Cloud, independent of a specific job role.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackRefactorSummary
-<a name="API_StackRefactorSummary"></a>
 
 The summary of a stack refactor operation.
 

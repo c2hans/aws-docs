@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UnspecifiedFlowValidationDetails
-<a name="API_agent_UnspecifiedFlowValidationDetails"></a>
 
 Details about an unspecified validation that doesn't fit other categories.
 

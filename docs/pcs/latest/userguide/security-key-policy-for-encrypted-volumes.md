@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/security-key-policy
 ---
 
 # Required KMS key policy for use with encrypted EBS volumes in AWS PCS
-<a name="security-key-policy-for-encrypted-volumes"></a>
 
 AWS PCS uses [service-linked roles](service-linked-roles.md) to delegate permissions to other AWS services. The AWS PCS service-linked role is predefined and includes permissions that AWS PCS requires to call other AWS services on your behalf. The predefined permissions also include access to your AWS managed keys but not to your customer managed keys.
 

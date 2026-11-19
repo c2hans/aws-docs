@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ChannelL
 ---
 
 # ChannelLoggingConfiguration
-<a name="API_ChannelLoggingConfiguration"></a>
 
 The Amazon CloudWatch Logs configuration for a channel.
 

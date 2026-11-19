@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-delete
 ---
 
 # Delete a feature group
-<a name="feature-store-delete-feature-group"></a>
 
 You can use the console or the Amazon SageMaker Feature Store API to delete your feature group. The instructions on using Feature Store through the console depends on if you have enabled Studio or Studio Classic as your default experience. For more information about the differences between the two, or how to change your default, see [Amazon SageMaker Studio](studio-updated.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_S3Loc
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 Describes the S3 location.
 

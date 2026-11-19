@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # GetVectorEnrichmentJob
-<a name="API_geospatial_GetVectorEnrichmentJob"></a>
 
 Retrieves details of a Vector Enrichment Job for a given job Amazon Resource Name (ARN).
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/a
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Notifications for the AWS Partner Central Account API
-<a name="account-api-events"></a>
 
 Partner Account Connection notifications enable partners to stay informed about connection lifecycle events that directly impact their business relationships and operational workflows. These events are critical for partners to:
 + React promptly to new collaboration

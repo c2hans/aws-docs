@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/bot.html
 ---
 
 # .bot
-<a name="bot"></a>
 
 Used for chatbot and AI-related products and services. This domain extension helps convey the nature of automated systems, conversational interfaces, and emerging technologies in artificial intelligence.
 

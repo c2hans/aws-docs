@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableOptions
-<a name="API_TableOptions"></a>
 
 The table options for a table visual.
 

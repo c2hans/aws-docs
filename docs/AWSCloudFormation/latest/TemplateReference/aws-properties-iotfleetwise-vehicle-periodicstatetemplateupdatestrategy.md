@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::Vehicle PeriodicStateTemplateUpdateStrategy
-<a name="aws-properties-iotfleetwise-vehicle-periodicstatetemplateupdatestrategy"></a>
 
 Vehicles associated with the state template will stream telemetry data during a specified time period.
 

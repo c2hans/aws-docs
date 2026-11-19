@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ingest-api
 ---
 
 # BatchPutAssetPropertyValue API
-<a name="ingest-api-batch-putasset"></a>
 
 Use the [BatchPutAssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchPutAssetPropertyValue.html) operation to upload your data. With this operation, you can upload multiple data entries at a time to collect data from several devices and send it all in a single request.
 

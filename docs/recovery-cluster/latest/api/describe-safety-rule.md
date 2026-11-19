@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/describe-saf
 ---
 
 # Describe a safety rule
-<a name="describe-safety-rule"></a>
 
 The following is an example of a request to describe a type of safety rule, and the response. This safety rule is an assertion rule.
 

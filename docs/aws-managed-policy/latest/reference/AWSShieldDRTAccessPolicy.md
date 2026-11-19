@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSShieldDRTAccessPolicy
-<a name="AWSShieldDRTAccessPolicy"></a>
 
 **Description**: Provides the AWS DDoS Response Team with limited access to your AWS account to assist with DDoS attack mitigation during a high-severity event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateStream
 ---
 
 # UpdateStream
-<a name="API_UpdateStream"></a>
 
 Updates an existing stream. The stream version will be incremented by one.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Process and culture
-<a name="process-and-culture"></a>
 
 | HPCSUS04: What are your methods to rapidly introduce sustainability improvements? |
 | --- |

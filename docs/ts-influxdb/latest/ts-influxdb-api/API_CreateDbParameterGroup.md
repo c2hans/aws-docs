@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_C
 ---
 
 # CreateDbParameterGroup
-<a name="API_CreateDbParameterGroup"></a>
 
 Creates a new Timestream for InfluxDB DB parameter group to associate with DB instances.
 

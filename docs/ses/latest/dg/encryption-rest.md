@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/encryption-rest.html
 ---
 
 # Data encryption at rest for Amazon SES
-<a name="encryption-rest"></a>
 
 By default, Amazon SES encrypts all data at rest. Encryption by default helps reduce the operational overhead and complexity involved in protecting data. Encryption also enables you to create Mail Manager archives that meet strict encryption compliance and regulatory requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/kms.html
 ---
 
 # Using cryptographic attestation with AWS KMS
-<a name="kms"></a>
 
 This section explains how to set up attestation to work with AWS Key Management Service. AWS KMS integrates with Nitro Enclaves to provide built-in attestation support.
 

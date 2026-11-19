@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ViewStatus
-<a name="API_ViewStatus"></a>
 
 Contains information about the status of a Resource Explorer view operation in a specific Region.
 

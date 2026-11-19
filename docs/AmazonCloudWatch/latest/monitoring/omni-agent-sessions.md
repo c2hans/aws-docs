@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Agent sessions
-<a name="omni-agent-sessions"></a>
 
 The Agent sessions view groups the traces that belong to the same conversation or user interaction, so you can follow a multi-turn exchange from start to finish and see where it went wrong across turns. For how traces, spans, and sessions relate, see [Monitor AI agents](omni-monitor-ai-agents.md).
 

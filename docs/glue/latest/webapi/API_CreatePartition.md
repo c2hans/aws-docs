@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreatePartition.h
 ---
 
 # CreatePartition
-<a name="API_CreatePartition"></a>
 
 Creates a new partition.
 

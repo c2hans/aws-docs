@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/example_comprehend_
 ---
 
 # Train a custom Amazon Comprehend classifier and classify documents using an AWS SDK
-<a name="example_comprehend_Usage_ComprehendClassifier_section"></a>
 
 The following code example shows how to:
 + Create an Amazon Comprehend multi-label classifier.

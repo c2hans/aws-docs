@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ValidationExceptionField
-<a name="API_taxSettings_ValidationExceptionField"></a>
 
 The information about the specified parameter in the request that caused an error.
 

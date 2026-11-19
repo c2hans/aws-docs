@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_UpdateSolNet
 ---
 
 # UpdateSolNetworkPackage
-<a name="API_UpdateSolNetworkPackage"></a>
 
 Updates the operational state of a network package.
 

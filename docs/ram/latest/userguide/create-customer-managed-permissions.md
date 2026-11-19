@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/create-customer-man
 ---
 
 # Creating and using customer managed permissions in AWS RAM
-<a name="create-customer-managed-permissions"></a>
 
 AWS Resource Access Manager (AWS RAM) provides at least one AWS managed permission for every resource type that you can share. However, those managed permissions might not provide [least privilege access](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) for your sharing use case. When one of the provided AWS managed permissions doesn't work, you can create your own *customer managed permission*.
 

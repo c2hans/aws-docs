@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/create-cwe
 ---
 
 # Create an EventBridge rule for an Amazon ECR source (CloudFormation template)
-<a name="create-cwe-ecr-source-cfn"></a>
 
 To use CloudFormation to create a rule, use the template snippet as shown here.
 

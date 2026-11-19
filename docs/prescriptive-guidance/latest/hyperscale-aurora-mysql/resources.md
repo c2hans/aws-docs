@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-
 ---
 
 # Resources
-<a name="resources"></a>
 + [Journey to Adopt Cloud-Native Architecture Series: \#1 – Preparing your Applications for Hypergrowth](https://aws.amazon.com/blogs/architecture/journey-to-adopt-cloud-native-architecture-series-1-preparing-your-applications-for-hypergrowth/) (blog post)
 + [Journey to Adopt Cloud-Native Architecture Series: \#2 – Maximizing System Throughput](https://aws.amazon.com/blogs/architecture/journey-to-adopt-cloud-native-architecture-series-2-maximizing-system-throughput/) (blog post)
 + [Using Amazon RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy.html)

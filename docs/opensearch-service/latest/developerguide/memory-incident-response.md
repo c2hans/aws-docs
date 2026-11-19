@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Incident response in Amazon OpenSearch Memory
-<a name="memory-incident-response"></a>
 
 Security is the highest priority at AWS. As part of the AWS Cloud shared responsibility model, AWS manages a data center, network, and software architecture that meets the requirements of the most security-sensitive organizations. AWS is responsible for any incident response with respect to the Amazon OpenSearch Memory service itself. As an AWS customer, you are responsible for incident response on your side of the shared responsibility model: the access you grant, the data you store, and the agents that use it.
 

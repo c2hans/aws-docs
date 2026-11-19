@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/application-overview-dashb
 ---
 
 # Review overall application status
-<a name="application-overview-dashboard"></a>
 
 The **Overview** dashboard provides an overview of the overall application status, including:
 +  **Description** – The description of the application.

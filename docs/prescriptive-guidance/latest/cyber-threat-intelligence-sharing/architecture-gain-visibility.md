@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threa
 ---
 
 # Gaining visibility
-<a name="architecture-gain-visibility"></a>
 
 The ability to view the security events that have occurred is just as important as establishing proper security controls. In the security pillar of the AWS Well-Architected Framework, detection best practices include [Configure service and application logging](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_detect_investigate_events_app_service_logging.html) and [Capture logs, findings, and metrics in standardized locations](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_detect_investigate_events_logs.html). To implement these best practices, you must record the information that helps you identify events and then process that information into a human-consumable format, ideally in a centralized location.
 

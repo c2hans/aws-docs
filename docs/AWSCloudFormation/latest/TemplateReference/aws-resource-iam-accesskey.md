@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IAM::AccessKey
-<a name="aws-resource-iam-accesskey"></a>
 
  Creates a new AWS secret access key and corresponding AWS access key ID for the specified user. The default status for new keys is `Active`.
 

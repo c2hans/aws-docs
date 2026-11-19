@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # CreateOptOutList
-<a name="API_CreateOptOutList"></a>
 
 Creates a new opt-out list.
 

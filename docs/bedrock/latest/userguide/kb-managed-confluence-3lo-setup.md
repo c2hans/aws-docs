@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-conf
 ---
 
 # User-managed setup (3LO)
-<a name="kb-managed-confluence-3lo-setup"></a>
 
 With user-managed setup, you sign in to Confluence Cloud directly to authorize the connection, and Amazon Bedrock Managed Knowledge Base handles authentication. Users can complete setup in a few minutes. After you authorize the connection, create the data source with `authType` set to `MANAGED_OAUTH2`. See [Connect a Confluence data source](kb-managed-ds-confluence-connect.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/setting
 ---
 
 # Setting extents for a map using MapLibre
-<a name="setting-map-extents"></a>
 
 There are times that you do not want your users to be able to pan or zoom around the entire world. If you are using MapLibre's map control, you can limit the *extents*, or *bounds*, of the map control with the `maxBounds` option, and constrain the zoom with `minZoom` and `maxZoom` options.
 

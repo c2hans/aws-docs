@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_S3Par
 ---
 
 # S3Parameters
-<a name="API_S3Parameters"></a>
 
 The parameters for S3.
 

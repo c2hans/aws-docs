@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # Lambda@Edge example functions
-<a name="lambda-examples"></a>
 
 See the following examples to use Lambda functions with Amazon CloudFront.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJob
 ---
 
 # ServiceJobPreemptedAttempt
-<a name="API_ServiceJobPreemptedAttempt"></a>
 
 Detailed information about a preempted attempt of a service job.
 

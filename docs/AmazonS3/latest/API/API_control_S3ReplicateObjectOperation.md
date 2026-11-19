@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Replic
 ---
 
 # S3ReplicateObjectOperation
-<a name="API_control_S3ReplicateObjectOperation"></a>
 
 Directs the specified job to invoke `ReplicateObject` on every object in the job's manifest.
 

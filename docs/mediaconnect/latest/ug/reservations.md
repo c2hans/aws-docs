@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/reservations.html
 ---
 
 # Reservations for AWS Elemental MediaConnect
-<a name="reservations"></a>
 
 Reservations provide you with significant savings on your AWS Elemental MediaConnect costs compared to on-demand pricing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMPERF02-BP02 Use specialized media transport and acceleration protocols
-<a name="smperf02-bp02"></a>
 
 Use specialized transport protocols for media contribution to reduce
 

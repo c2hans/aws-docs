@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/custom-vocabulary-c
 ---
 
 # Creating a custom vocabulary using a list
-<a name="custom-vocabulary-create-list"></a>
 
 **Important**
 Custom vocabularies in list format are being deprecated, so if you're creating a new custom vocabulary, we strongly recommend using the [table format](custom-vocabulary-create-table.md).

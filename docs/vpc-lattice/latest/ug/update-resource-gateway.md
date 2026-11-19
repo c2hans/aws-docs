@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/update-resource-ga
 ---
 
 # Update a resource gateway in VPC Lattice
-<a name="update-resource-gateway"></a>
 
 After you create a resource gateway, you can update its security groups and its Resource Config DNS Resolution setting.
 

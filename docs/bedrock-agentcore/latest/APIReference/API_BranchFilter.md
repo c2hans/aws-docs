@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BranchFilter
-<a name="API_BranchFilter"></a>
 
 Contains filter criteria for branches when listing events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/heartbeat.htm
 ---
 
 # SPEKE API v1 - Heartbeat
-<a name="heartbeat"></a>
 
  *Request Syntax Example*
 

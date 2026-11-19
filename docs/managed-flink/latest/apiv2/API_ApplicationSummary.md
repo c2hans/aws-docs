@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationSummary
-<a name="API_ApplicationSummary"></a>
 
 Provides application summary information, including the application Amazon Resource Name (ARN), name, and status.
 

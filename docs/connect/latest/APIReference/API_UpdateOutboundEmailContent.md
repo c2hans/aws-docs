@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateOu
 ---
 
 # UpdateOutboundEmailContent
-<a name="API_UpdateOutboundEmailContent"></a>
 
 Contains the updated body content for an outbound email draft.
 

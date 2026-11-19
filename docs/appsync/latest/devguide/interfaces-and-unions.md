@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/interfaces-and-u
 ---
 
 # Interfaces and unions in GraphQL
-<a name="interfaces-and-unions"></a>
 
 The GraphQL type system supports [Interfaces](https://graphql.org/learn/schema/#interfaces). An interface exposes a certain set of fields that a type must include to implement the interface.
 

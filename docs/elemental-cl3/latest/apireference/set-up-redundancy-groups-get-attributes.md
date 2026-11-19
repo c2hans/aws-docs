@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET: Get Attributes of a Redundancy Group
-<a name="set-up-redundancy-groups-get-attributes"></a>
 
 Get the attributes of the specified redundancy group.
 

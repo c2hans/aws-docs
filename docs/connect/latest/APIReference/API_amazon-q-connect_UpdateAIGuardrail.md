@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # UpdateAIGuardrail
-<a name="API_amazon-q-connect_UpdateAIGuardrail"></a>
 
 Updates an AI Guardrail.
 

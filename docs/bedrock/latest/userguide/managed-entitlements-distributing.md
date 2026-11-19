@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/managed-entitle
 ---
 
 # Distributing licenses
-<a name="managed-entitlements-distributing"></a>
 
 After you have subscribed to a third-party Bedrock model and verified that a license has been created, you can create grants to distribute access to other accounts in your organization.
 

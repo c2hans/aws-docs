@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-b
 ---
 
 # Container-based products on AWS Marketplace
-<a name="container-based-products"></a>
 
 **Important**
 On March 1, 2026, AWS Marketplace will discontinue Quick Launch for Helm chart deployments on Amazon EKS. Existing deployments will continue running normally. You can still deploy using standard Helm commands or container images on Amazon ECS.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ListIdentiti
 ---
 
 # ListIdentities
-<a name="API_ListIdentities"></a>
 
 Returns a list containing all of the identities (email addresses and domains) for your AWS account in the current AWS Region, regardless of verification status.
 

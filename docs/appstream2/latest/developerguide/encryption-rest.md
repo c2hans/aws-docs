@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/encrypt
 ---
 
 # Encryption at Rest
-<a name="encryption-rest"></a>
 
 WorkSpaces Applications fleet instances are ephemeral in nature. After a user's streaming session is finished, the underlying instance and its associated Amazon Elastic Block Store (Amazon EBS) volume are terminated. In addition, WorkSpaces Applications periodically recycles unused instances for freshness.
 

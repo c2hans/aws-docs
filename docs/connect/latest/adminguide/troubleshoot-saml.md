@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/troubleshoot-s
 ---
 
 # Troubleshoot SAML with Connect Customer
-<a name="troubleshoot-saml"></a>
 
 This article explains how to troubleshoot and resolve some of the most common issues customers encounter when using SAML with Connect Customer.
 

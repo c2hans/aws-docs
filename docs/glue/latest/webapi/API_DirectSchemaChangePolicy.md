@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DirectSchemaChang
 ---
 
 # DirectSchemaChangePolicy
-<a name="API_DirectSchemaChangePolicy"></a>
 
 A policy that specifies update behavior for the crawler.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteReplic
 ---
 
 # DeleteReplicationConfig
-<a name="API_DeleteReplicationConfig"></a>
 
 Deletes an AWS DMS Serverless replication configuration. This effectively deprovisions any and all replications that use this configuration. You can't delete the configuration for an AWS DMS Serverless replication that is ongoing. You can delete the configuration when the replication is in a non-RUNNING and non-STARTING state.
 

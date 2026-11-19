@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-la
 ---
 
 # Create a LAG at a Direct Connect endpoint
-<a name="create-lag"></a>
 
 You can create a LAG by provisioning new connections, or aggregating existing connections.
 

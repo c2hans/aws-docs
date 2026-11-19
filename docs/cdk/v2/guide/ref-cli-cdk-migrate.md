@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cdk-migrate.html
 ---
 
 # `cdk migrate`
-<a name="ref-cli-cdk-migrate"></a>
 
 Migrate deployed AWS resources, AWS CloudFormation stacks, and CloudFormation templates into a new AWS CDK project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom.html
 ---
 
 # Custom
-<a name="custom"></a>
 
 ## What is AWS Transform custom?
 <a name="custom-what-is"></a>

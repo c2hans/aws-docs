@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refre
 ---
 
 # RefreshConfiguration
-<a name="API_RefreshConfiguration"></a>
 
 The refresh configuration of a dataset.
 

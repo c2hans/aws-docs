@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostAllocationTagStatusEntry
-<a name="API_CostAllocationTagStatusEntry"></a>
 
 The cost allocation tag status. The status of a key can either be active or inactive.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Listing
 ---
 
 # ListingRevision
-<a name="API_ListingRevision"></a>
 
 A revision of an asset published in a Amazon DataZone catalog.
 

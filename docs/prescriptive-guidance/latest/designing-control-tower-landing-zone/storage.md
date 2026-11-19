@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Storage
-<a name="storage"></a>
 
 The storage solution in the Log Archive account is implemented by using Amazon Simple Storage Service (Amazon S3). AWS Control Tower automatically sets up and manages the S3 buckets for AWS Control Tower according to AWS best practices.
 

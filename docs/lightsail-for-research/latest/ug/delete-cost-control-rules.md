@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/delete-
 ---
 
 # Delete cost control rules for your Lightsail for Research virtual computers
-<a name="delete-cost-control-rules"></a>
 
 Complete the following steps to delete a rule for your Lightsail for Research virtual computer.
 

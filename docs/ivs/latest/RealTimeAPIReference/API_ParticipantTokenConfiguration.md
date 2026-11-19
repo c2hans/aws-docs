@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Part
 ---
 
 # ParticipantTokenConfiguration
-<a name="API_ParticipantTokenConfiguration"></a>
 
 Object specifying a participant token configuration in a stage.
 

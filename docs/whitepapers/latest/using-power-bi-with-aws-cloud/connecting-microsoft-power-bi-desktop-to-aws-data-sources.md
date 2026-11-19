@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Connecting Microsoft Power BI Desktop to AWS data sources
-<a name="connecting-microsoft-power-bi-desktop-to-aws-data-sources"></a>
 
 Most often customers who start with Microsoft Power BI Desktop are interested in how they can connect to AWS data sources from their on-premises computers and network. The desktop application is typically running on their local Windows laptop and physical and logical connectivity to AWS data sources are the biggest perceived barriers to entry.
 

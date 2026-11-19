@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/configuring-networ
 ---
 
 # Configuring network access for Amazon S3 access points
-<a name="configuring-network-access-for-s3-access-points"></a>
 
 When you create an Amazon S3 access point for an FSx for ONTAP volume, you configure how the access point can be reached over the network and who is authorized to use it. This section helps you choose the right network and access control configuration for your environment.
 

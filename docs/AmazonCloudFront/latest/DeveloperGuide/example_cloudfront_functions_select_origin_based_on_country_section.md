@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Route requests to an origin closer to the viewer in a CloudFront Functions viewer request event
-<a name="example_cloudfront_functions_select_origin_based_on_country_section"></a>
 
 The following code example shows how to route requests to an origin closer to the viewer in a CloudFront Functions viewer request event.
 

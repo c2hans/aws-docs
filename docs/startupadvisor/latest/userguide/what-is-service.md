@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/startupadvisor/latest/userguide/what-is-
 ---
 
 # What is AWS Startup Advisor?
-<a name="what-is-service"></a>
 
  AWS Startup Advisor is an AI-powered build assistant for startups. It provides AWS-vetted, Solutions Architect-curated skills and guidance for startups on account setup, architecture, Activate credits, cost, security, migration, AI, scalability, and operations. AWS Startup Advisor delivers this guidance as skills that founders and their coding agents can use. You receive recommendations directly in your development environment, so you can act on them as you build.
 

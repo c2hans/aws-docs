@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_PutSolFuncti
 ---
 
 # PutSolFunctionPackageContent
-<a name="API_PutSolFunctionPackageContent"></a>
 
 Uploads the contents of a function package.
 

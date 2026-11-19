@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/source-ip-address
 ---
 
 # Determining a source's peer IP address
-<a name="source-ip-address"></a>
 
 A source peer IP address shows which device is currently sending content to your flow. This information is valuable for troubleshooting and monitoring, as it helps you to diagnose connectivity issues on your own without having to contact AWS support.
 

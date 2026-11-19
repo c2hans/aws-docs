@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RecordingConfig
-<a name="API_RecordingConfig"></a>
 
 The recording configuration for a browser. This structure defines how browser sessions are recorded.
 

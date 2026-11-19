@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/managing-ipam-policies.h
 ---
 
 # Managing IPAM policies
-<a name="managing-ipam-policies"></a>
 
 This section describes the prerequisites for IPAM policies and how to create and enable them.
 

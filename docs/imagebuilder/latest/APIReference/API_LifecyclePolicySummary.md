@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicySummary
-<a name="API_LifecyclePolicySummary"></a>
 
 Contains a summary of lifecycle policy resources.
 

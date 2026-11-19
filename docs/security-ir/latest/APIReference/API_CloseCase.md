@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Clos
 ---
 
 # CloseCase
-<a name="API_CloseCase"></a>
 
 Closes an existing case.
 

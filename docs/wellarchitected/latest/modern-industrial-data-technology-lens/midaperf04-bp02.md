@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDAPERF04-BP02 Decouple data ingestion from processing in manufacturing systems
-<a name="midaperf04-bp02"></a>
 
  In manufacturing environments, tightly coupled data pipelines create single points of failure that can lead to data loss and operational disruptions. Implementing a decoupled architecture that separates ingestion from processing enhances system resilience, enables independent scaling of components, and provides the foundation for reliable data processing even during partial system failures common in industrial settings.
 

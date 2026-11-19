@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # ST\_Point
-<a name="access-graph-opencypher-22-spatial-functions-st-point"></a>
 
 ST\_Point returns a point from the input coordinate values.
 

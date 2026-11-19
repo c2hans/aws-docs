@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SubnetIpv
 ---
 
 # SubnetIpv6CidrBlockAssociation
-<a name="API_SubnetIpv6CidrBlockAssociation"></a>
 
 Describes an association between a subnet and an IPv6 CIDR block.
 

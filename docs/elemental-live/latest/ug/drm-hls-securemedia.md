@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/drm-hls-securem
 ---
 
 # HLS output with SecureMedia
-<a name="drm-hls-securemedia"></a>
 
 Encryption mode: Always AES CTR (AES-128)
 

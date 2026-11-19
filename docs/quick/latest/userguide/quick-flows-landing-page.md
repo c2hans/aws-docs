@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quick-flows-landi
 ---
 
 # AWS Quick Flows landing page
-<a name="quick-flows-landing-page"></a>
 
 When you access AWS Quick Flows, you are directed to the landing page. The landing page has three navigation tabs:
 + **Flows library** — Browse, search, and manage your flows and flows that others have shared with you.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserHier
 ---
 
 # UserHierarchyGroupSearchCriteria
-<a name="API_UserHierarchyGroupSearchCriteria"></a>
 
 The search criteria to be used to return userHierarchyGroup.
 
@@ -12,12 +11,12 @@ The search criteria to be used to return userHierarchyGroup.
 
  ** AndConditions **   <a name="connect-Type-UserHierarchyGroupSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [UserHierarchyGroupSearchCriteria](#API_UserHierarchyGroupSearchCriteria) objects
+Type: Array of [UserHierarchyGroupSearchCriteria](API_UserHierarchyGroupSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-UserHierarchyGroupSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [UserHierarchyGroupSearchCriteria](#API_UserHierarchyGroupSearchCriteria) objects
+Type: Array of [UserHierarchyGroupSearchCriteria](API_UserHierarchyGroupSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-UserHierarchyGroupSearchCriteria-StringCondition"></a>

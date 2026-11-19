@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guar
 ---
 
 # Adding Runtime Monitoring an Amazon ECS cluster
-<a name="ecs-guard-duty-configure-manual-customize"></a>
 
 Configure Runtime Monitoring for the cluster, and then install the GuardDuty security agent on your EC2 container instances.
 

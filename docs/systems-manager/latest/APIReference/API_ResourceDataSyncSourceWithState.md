@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResourceDataSyncSourceWithState
-<a name="API_ResourceDataSyncSourceWithState"></a>
 
 The data type name for including resource data sync state. There are four sync states:
 

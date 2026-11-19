@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_CodeRev
 ---
 
 # CodeReview
-<a name="API_CodeReview"></a>
 
 Information about a code review. A code review belongs to the associated repository that contains the reviewed code.
 

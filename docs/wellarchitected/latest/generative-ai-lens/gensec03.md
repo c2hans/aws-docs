@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Event monitoring
-<a name="gensec03"></a>
 
 | GENSEC03: How do you monitor and audit events associated with your generative AI workloads? |
 | --- |

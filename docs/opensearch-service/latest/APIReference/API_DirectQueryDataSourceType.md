@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DirectQueryDataSourceType
-<a name="API_DirectQueryDataSourceType"></a>
 
  The type of data source that is used for direct queries. This is a supported AWS service, such as CloudWatch Logs or Security Lake.
 

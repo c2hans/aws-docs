@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/select-ou.h
 ---
 
 # Select an organizational unit for WorkSpaces Personal
-<a name="select-ou"></a>
 
 **Note**
 This feature is only available for directories managed through AWS Directory Service, including AD Connector, AWS Managed Microsoft AD, and Simple AD.

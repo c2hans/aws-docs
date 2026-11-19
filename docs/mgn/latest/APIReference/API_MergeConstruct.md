@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_MergeConstru
 ---
 
 # MergeConstruct
-<a name="API_MergeConstruct"></a>
 
 A construct reference specifying the source segment and construct to merge.
 

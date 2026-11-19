@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ListComputeN
 ---
 
 # ListComputeNodeGroups
-<a name="API_ListComputeNodeGroups"></a>
 
 Returns a list of all compute node groups associated with a cluster.
 

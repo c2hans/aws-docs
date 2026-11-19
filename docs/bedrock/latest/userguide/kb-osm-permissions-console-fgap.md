@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-osm-permissi
 ---
 
 # Configuring OpenSearch permissions with fine-grained access control
-<a name="kb-osm-permissions-console-fgap"></a>
 
 While optional, we strongly recommend that you enable fine-grained access control for your OpenSearch domain. Using fine-grained access control, you can use role-based access control, which enables you to create an OpenSearch role with specific permissions and map it to the Knowledge Base service role. The mapping grants your knowledge base the minimum required permissions that allows it to access and perform operations on the OpenSearch domain and index.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Update
 ---
 
 # S3UpdateObjectEncryptionOperation
-<a name="API_control_S3UpdateObjectEncryptionOperation"></a>
 
 With the `UpdateObjectEncryption` operation, you can atomically update the server-side encryption type of an existing object in a general purpose bucket without any data movement.
 

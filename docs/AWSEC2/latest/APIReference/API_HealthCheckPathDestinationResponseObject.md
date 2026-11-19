@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HealthChe
 ---
 
 # HealthCheckPathDestinationResponseObject
-<a name="API_HealthCheckPathDestinationResponseObject"></a>
 
 Describes a destination for a health check path.
 

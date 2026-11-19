@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJob
 ---
 
 # ServiceJobEvaluateOnExit
-<a name="API_ServiceJobEvaluateOnExit"></a>
 
 Specifies conditions for when to exit or retry a service job based on the exit status or status reason.
 

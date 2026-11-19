@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/ST_Equals-function.ht
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ST\_Equals
-<a name="ST_Equals-function"></a>
 
 ST\_Equals returns true if the 2D projections of the input geometries are geometrically equal. Geometries are considered geometrically equal if they have equal point sets and their interiors have a nonempty intersection.
 

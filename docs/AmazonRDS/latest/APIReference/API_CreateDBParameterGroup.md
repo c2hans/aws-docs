@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateDBParameterGroup
-<a name="API_CreateDBParameterGroup"></a>
 
 Creates a new DB parameter group.
 

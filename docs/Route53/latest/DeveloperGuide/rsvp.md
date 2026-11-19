@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rsvp.html
 ---
 
 # .rsvp
-<a name="rsvp"></a>
 
 Used for events and reservations, from weddings to fundraisers to business bookings.
 

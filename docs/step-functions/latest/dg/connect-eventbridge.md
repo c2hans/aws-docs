@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-eventbr
 ---
 
 # Add EventBridge events with Step Functions
-<a name="connect-eventbridge"></a>
 
 Step Functions provides a service integration API for integrating with Amazon EventBridge. Learn how to build event-driven applications by sending custom events directly from Step Functions workflows.
 

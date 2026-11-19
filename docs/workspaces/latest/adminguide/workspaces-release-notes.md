@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-
 ---
 
 # DCV host agent versions in WorkSpaces Personal
-<a name="workspaces-release-notes"></a>
 
 DCV host agent is a host agent that runs inside your WorkSpace. It streams the pixels of your WorkSpace to a client application and includes in-session features, such as two-way audio and video, and printing. For more information about DCV, see [Protocols for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-protocols.html).
 

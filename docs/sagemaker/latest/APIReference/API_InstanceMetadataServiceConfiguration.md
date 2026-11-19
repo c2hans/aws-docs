@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Instan
 ---
 
 # InstanceMetadataServiceConfiguration
-<a name="API_InstanceMetadataServiceConfiguration"></a>
 
 Information on the IMDS configuration of the notebook instance
 

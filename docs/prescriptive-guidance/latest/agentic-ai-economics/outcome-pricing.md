@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Outcome-based pricing
-<a name="outcome-pricing"></a>
 
 The shift from traditional fixed-cost models to outcome-based pricing represents a fundamental transformation in how organizations structure their economic operations and manage risk. This transformation serves as a pathway for constant modernization of existing processes while financing the agentic AI transformation. It enables organizations to evolve from static, resource-intensive operations to dynamic, results-driven business models.
 

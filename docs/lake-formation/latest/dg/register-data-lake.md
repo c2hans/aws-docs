@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/register-data-l
 ---
 
 # Adding an Amazon S3 location to your data lake
-<a name="register-data-lake"></a>
 
 To add a data location as storage in your data lake, you *register* the location (**Data lake location**) with AWS Lake Formation. You can then use Lake Formation permissions for fine-grained access control to AWS Glue Data Catalog objects that point to this location and to the underlying data in the location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyBuildWorkflowSource
-<a name="API_AutomatedReasoningPolicyBuildWorkflowSource"></a>
 
 Defines the source content for a policy build workflow, which can include documents, repair instructions, or other input materials.
 

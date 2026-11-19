@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-source
 ---
 
 # Specify a GitHub repository version with a commit ID
-<a name="sample-source-version-github"></a>
 
 You can specify a source version with only a commit ID, such as `12345678901234567890123467890123456789`. If you do this, CodeBuild must download the entire repository to find the version.
 

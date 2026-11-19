@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_S3A
 ---
 
 # S3ArtifactLocation
-<a name="API_S3ArtifactLocation"></a>
 
 The location of the S3 bucket that contains a revision.
 

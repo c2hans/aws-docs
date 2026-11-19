@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Data mesh principles
-<a name="data-mesh-principles-section"></a>
 
 ## 1. Domain-Oriented Decentralized Data Ownership
 <a name="1-domain-oriented-decentralized-data-ownership"></a>

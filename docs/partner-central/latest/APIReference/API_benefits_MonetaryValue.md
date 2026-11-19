@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # MonetaryValue
-<a name="API_benefits_MonetaryValue"></a>
 
 Represents a monetary amount with its associated currency.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetI
 ---
 
 # GetIntermediateTableAnalysisRule
-<a name="API_GetIntermediateTableAnalysisRule"></a>
 
 Retrieves the analysis rule for an intermediate table.
 

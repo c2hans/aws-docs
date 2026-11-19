@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ListCustomPlugins.h
 ---
 
 # ListCustomPlugins
-<a name="API_ListCustomPlugins"></a>
 
 Returns a list of all of the custom plugins in this account and Region.
 

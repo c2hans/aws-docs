@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deprovisi
 ---
 
 # DeprovisionIpamByoasn
-<a name="API_DeprovisionIpamByoasn"></a>
 
 Deprovisions your Autonomous System Number (ASN) from your AWS account. This action can only be called after any BYOIP CIDR associations are removed from your AWS account with [DisassociateIpamByoasn](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateIpamByoasn.html). For more information, see [Tutorial: Bring your ASN to IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoasn.html) in the *Amazon VPC IPAM guide*.
 

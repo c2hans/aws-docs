@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/config
 ---
 
 # Create a configuration bundle
-<a name="configuration-bundles-create"></a>
 
 Create a configuration bundle to store a versioned snapshot of your agent’s dynamic configuration. The bundle is created with an initial version on the `mainline` branch.
 

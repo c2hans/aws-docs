@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Recur
 ---
 
 # RecurringCharge
-<a name="API_RecurringCharge"></a>
 
 Specifies whether charges for devices are recurring.
 

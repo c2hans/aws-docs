@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/mod-query.htm
 ---
 
 # $mod
-<a name="mod-query"></a>
 
 The `$mod` query operator selects documents where a field value divided by a divisor has a specified remainder. This is useful for filtering documents based on modulo arithmetic conditions.
 

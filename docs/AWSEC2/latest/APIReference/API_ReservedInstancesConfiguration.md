@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedI
 ---
 
 # ReservedInstancesConfiguration
-<a name="API_ReservedInstancesConfiguration"></a>
 
 Describes the configuration settings for the modified Reserved Instances.
 

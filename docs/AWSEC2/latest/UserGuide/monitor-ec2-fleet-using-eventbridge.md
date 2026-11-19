@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-ec2-flee
 ---
 
 # Monitor and programmatically respond to the events emitted by your EC2 Fleet or Spot Fleet using Amazon EventBridge
-<a name="monitor-ec2-fleet-using-eventbridge"></a>
 
 When the state of an EC2 Fleet or Spot Fleet changes, it emits a notification. The notification is made available as an event that is sent to Amazon EventBridge (formerly known as Amazon CloudWatch Events). Events are emitted on a best effort basis.
 

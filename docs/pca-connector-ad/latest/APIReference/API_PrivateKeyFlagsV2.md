@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # PrivateKeyFlagsV2
-<a name="API_PrivateKeyFlagsV2"></a>
 
 Private key flags for v2 templates specify the client compatibility, if the private key can be exported, and if user input is required when using a private key.
 

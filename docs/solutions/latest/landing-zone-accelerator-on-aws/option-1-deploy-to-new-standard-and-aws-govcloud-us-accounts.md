@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Option 1: Deploy to new standard and AWS GovCloud (US) accounts
-<a name="option-1-deploy-to-new-standard-and-aws-govcloud-us-accounts"></a>
 
 Deploying this solution with the default parameters builds the following environment in the AWS GovCloud (US) Region(s).
 

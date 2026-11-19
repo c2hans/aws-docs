@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MessageBasedTrigger
-<a name="API_MessageBasedTrigger"></a>
 
 The trigger configuration based on a message.
 

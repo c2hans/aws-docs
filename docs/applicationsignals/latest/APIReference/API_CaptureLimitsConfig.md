@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # CaptureLimitsConfig
-<a name="API_CaptureLimitsConfig"></a>
 
 Guardrails that prevent instrumentation from impacting application performance by limiting how much data is captured.
 

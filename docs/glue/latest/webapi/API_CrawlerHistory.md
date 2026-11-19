@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CrawlerHistory.ht
 ---
 
 # CrawlerHistory
-<a name="API_CrawlerHistory"></a>
 
 Contains the information for a run of a crawler.
 

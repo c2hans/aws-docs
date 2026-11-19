@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/search
 ---
 
 # Searching for Numbers in Amazon CloudSearch
-<a name="searching-numbers"></a>
 
 You can use structured queries to search any search enabled numeric field for a particular value or [range of values](searching-ranges.md). Amazon CloudSearch supports four numeric field types: `double`, `double-array`, `int`, and `int-array`. For more information, see [Configuring Index Fields](configuring-index-fields.md).
 

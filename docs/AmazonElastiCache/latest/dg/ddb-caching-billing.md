@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ddb-caching-
 ---
 
 # Billing for DynamoDB caching
-<a name="ddb-caching-billing"></a>
 
 Amazon DynamoDB caching is available at no additional cost. You pay only for the Amazon ElastiCache Serverless and DynamoDB resources used. For more information, see the [ElastiCache Serverless pricing page](https://aws.amazon.com/elasticache/pricing/).
 

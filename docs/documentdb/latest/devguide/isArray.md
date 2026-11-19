@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/isArray.html
 ---
 
 # $isArray
-<a name="isArray"></a>
 
 The `$isArray` operator in Amazon DocumentDB is used to check if a field in a document is an array. This operator can be useful in aggregation pipelines and conditional expressions to handle array-type fields.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/tool-use.html
 ---
 
 # Tool use beyond the browser (Preview)
-<a name="tool-use"></a>
 
 (Preview) Nova Act allows you to integrate external tools beyond the browser, such as an API call or database query, into workflows. This functionality enables developers to integrate remote MCP tools and agentic frameworks, such as Strands Agents, into their workflows.
 

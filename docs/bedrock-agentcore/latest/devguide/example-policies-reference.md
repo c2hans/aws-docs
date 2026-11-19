@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/exampl
 ---
 
 # Resource configuration for examples
-<a name="example-policies-reference"></a>
 
 The examples in this section are written against one illustrative gateway rather than against a gateway you already have. Nothing here exists in your account. `InsuranceAPI`, `ClaimsAgent`, and the three `Claims*` inference targets are invented names for an insurance-claims application, chosen so every example can share one set of tools, parameter types, and principals. Substitute your own gateway ARN, target names, and tool names when you adapt an example.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # AWS Security Incident Response Guide
-<a name="aws-security-incident-response-guide"></a>
 
 Publication date: **January 1, 2023** ([Document revisions](document-revisions.md))
 

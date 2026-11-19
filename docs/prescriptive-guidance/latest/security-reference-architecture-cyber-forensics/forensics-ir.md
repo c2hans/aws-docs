@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Forensics in the context of security incident response
-<a name="forensics-ir"></a>
 
 |  |
 | --- |

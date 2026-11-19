@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeadLetterConfig.h
 ---
 
 # DeadLetterConfig
-<a name="API_DeadLetterConfig"></a>
 
 The [dead-letter queue](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async-retain-records.html#invocation-dlq) for failed asynchronous invocations.
 

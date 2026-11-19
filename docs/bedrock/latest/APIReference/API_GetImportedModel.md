@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetImpor
 ---
 
 # GetImportedModel
-<a name="API_GetImportedModel"></a>
 
 Gets properties associated with a customized model you imported.
 

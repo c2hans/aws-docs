@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SingularMet
 ---
 
 # SingularMetadata
-<a name="API_SingularMetadata"></a>
 
  The connector metadata specific to Singular.
 

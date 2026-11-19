@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/configuring-multip
 ---
 
 # Configuring permissions when resources are in different accounts
-<a name="configuring-multiple-accounts"></a>
 
 If your OpenSearch Service and Amazon Personalize resources are in separate accounts, you create an IAM role in each account and grant the role access to the resources in the account.
 

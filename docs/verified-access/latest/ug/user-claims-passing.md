@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/user-claims-pa
 ---
 
 # User claims passing and signature verification in Verified Access
-<a name="user-claims-passing"></a>
 
 After an AWS Verified Access instance authenticates a user successfully, it sends the user claims received from the IdP to the Verified Access endpoint. The user claims are signed so that applications can verify the signatures and also verify that the claims were sent by Verified Access. During this process, the following HTTP header is added:
 

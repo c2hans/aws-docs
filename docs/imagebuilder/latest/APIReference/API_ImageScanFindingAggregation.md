@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageScanFindingAggregation
-<a name="API_ImageScanFindingAggregation"></a>
 
 This returns exactly one type of aggregation, based on the filter that Image Builder applies in its API action.
 

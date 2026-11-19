@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/DBActivityStr
 ---
 
 # Modifying a database activity stream for Amazon RDS
-<a name="DBActivityStreams.Modifying"></a>
 
 You might want to customize your Amazon RDS audit policy when your activity stream is started. If you don't want to lose time and data by stopping your activity stream, you can change the *audit policy state* to either of the following settings:
 

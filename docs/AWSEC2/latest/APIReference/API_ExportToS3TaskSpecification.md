@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportToS
 ---
 
 # ExportToS3TaskSpecification
-<a name="API_ExportToS3TaskSpecification"></a>
 
 Describes an export instance task.
 

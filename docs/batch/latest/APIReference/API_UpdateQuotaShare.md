@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateQuot
 ---
 
 # UpdateQuotaShare
-<a name="API_UpdateQuotaShare"></a>
 
 Updates a quota share.
 

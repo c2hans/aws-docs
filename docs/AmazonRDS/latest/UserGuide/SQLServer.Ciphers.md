@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Cip
 ---
 
 # Configuring SQL Server security protocols and ciphers
-<a name="SQLServer.Ciphers"></a>
 
 You can turn certain security protocols and ciphers on and off using DB parameters. The security parameters that you can configure (except for TLS version 1.2) are shown in the following table.
 

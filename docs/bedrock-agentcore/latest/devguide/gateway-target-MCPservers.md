@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # MCP servers targets
-<a name="gateway-target-MCPservers"></a>
 
 MCP servers provide local tools, data access, or custom functions for your interactions with models and agents in Bedrock AgentCore. In Bedrock AgentCore, you can define a preconfigured MCP server as a target when creating a gateway.
 

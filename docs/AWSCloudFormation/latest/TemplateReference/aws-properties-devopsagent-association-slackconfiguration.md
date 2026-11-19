@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association SlackConfiguration
-<a name="aws-properties-devopsagent-association-slackconfiguration"></a>
 
 Configuration for Slack workspace integration. Defines the workspace ID, the workspace name, and the transmission targets that specify which Slack channels receive notifications. With optional bidirectional communication settings, you can have the agent respond to mentions in those channels.
 

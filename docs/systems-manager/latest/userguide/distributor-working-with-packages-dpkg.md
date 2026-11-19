@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/distrib
 ---
 
 # Delete a Distributor package
-<a name="distributor-working-with-packages-dpkg"></a>
 
 This section describes how to a delete a package. You can't delete a version of a package, only the entire package.
 

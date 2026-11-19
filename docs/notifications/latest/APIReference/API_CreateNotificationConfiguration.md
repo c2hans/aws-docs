@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Cr
 ---
 
 # CreateNotificationConfiguration
-<a name="API_CreateNotificationConfiguration"></a>
 
 Creates a new `NotificationConfiguration`.
 

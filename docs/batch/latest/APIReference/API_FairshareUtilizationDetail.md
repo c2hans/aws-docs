@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_FairshareU
 ---
 
 # FairshareUtilizationDetail
-<a name="API_FairshareUtilizationDetail"></a>
 
 The fairshare utilization for a job queue, including the number of active shares and top capacity utilization.
 

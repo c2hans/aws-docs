@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/reading
 ---
 
 # Reading your purchase order details page
-<a name="reading-po-details"></a>
 
 You can review the contents of your individual purchase orders on the **Purchase order details** page of the Billing and Cost Management console.
 

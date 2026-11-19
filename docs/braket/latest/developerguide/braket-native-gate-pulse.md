@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-nati
 ---
 
 # Accessing native gates using pulses
-<a name="braket-native-gate-pulse"></a>
 
 Researchers often need to know exactly how the *native* gates supported by a particular QPU are implemented as pulses. Pulse sequences are carefully calibrated by hardware providers, but accessing them provides researchers the opportunity to design better gates or explore protocols for error mitigation such as zero noise extrapolation by stretching the pulses of specific gates.
 

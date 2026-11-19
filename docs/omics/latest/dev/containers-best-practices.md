@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/containers-best-practic
 ---
 
 # Best practices for container images
-<a name="containers-best-practices"></a>
 
 Follow these best practices when you build container images for HealthOmics workflows.
 

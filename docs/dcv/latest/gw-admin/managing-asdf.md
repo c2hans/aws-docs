@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/managing-asdf.html
 ---
 
 # Managing the Connection Gateway
-<a name="managing-asdf"></a>
 
 Effective management of the Amazon DCV Connection Gateway is essential for ensuring access to your Amazon DCV servers, as well as maintaining the overall security and integrity of the system. This section will provide detailed guidance on starting, stopping, and configuring the DCV Connection Gateway.
 

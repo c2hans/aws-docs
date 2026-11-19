@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeGlobalClusters
-<a name="API_DescribeGlobalClusters"></a>
 
 Returns information about Aurora global database clusters. This API supports pagination.
 

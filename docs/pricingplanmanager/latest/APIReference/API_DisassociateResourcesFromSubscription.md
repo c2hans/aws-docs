@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # DisassociateResourcesFromSubscription
-<a name="API_DisassociateResourcesFromSubscription"></a>
 
 Removes one or more resources from an existing subscription.
 

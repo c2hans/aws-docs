@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # DeleteMessagingStreamingConfigurations
-<a name="API_messaging-chime_DeleteMessagingStreamingConfigurations"></a>
 
 Deletes the streaming configurations for an `AppInstance`. For more information, see [Streaming messaging data](https://docs.aws.amazon.com/chime-sdk/latest/dg/streaming-export.html) in the *Amazon Chime SDK Developer Guide*.
 

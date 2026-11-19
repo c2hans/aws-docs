@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Automatic semantic enrichment for Serverless
-<a name="serverless-semantic-enrichment"></a>
 
 ## Overview
 <a name="serverless-semantic-enrichment-intro"></a>

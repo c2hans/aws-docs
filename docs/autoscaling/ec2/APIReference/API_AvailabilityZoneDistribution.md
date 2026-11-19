@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Availab
 ---
 
 # AvailabilityZoneDistribution
-<a name="API_AvailabilityZoneDistribution"></a>
 
  Describes an Availability Zone distribution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/analytics-permissions.ht
 ---
 
 # Managing access permissions for analytics
-<a name="analytics-permissions"></a>
 
 To provide a user access to analytics, attach a policy to an IAM role that permits the role to call the API operations for analytics. You can attach the [AWS managed policy: AmazonLexFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonLexFullAccess) to the IAM role to provide full access to Amazon Lex API operations, or you can create a custom policy allowing only permissions to analytics and attach it to an IAM role.
 

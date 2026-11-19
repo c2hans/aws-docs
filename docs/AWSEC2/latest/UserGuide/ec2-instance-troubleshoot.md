@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-tro
 ---
 
 # Troubleshoot issues with Amazon EC2 instances
-<a name="ec2-instance-troubleshoot"></a>
 
 The following procedures and tips can help you troubleshoot issues with your Amazon EC2 instances.
 

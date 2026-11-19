@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/compliance-validati
 ---
 
 # Compliance validation for Amazon EVS
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of AWS services as part of AWS compliance programs. To find out whether Amazon Elastic VMware Service (Amazon EVS) is in scope for a compliance program, see [AWS services in Scope by Compliance Program](https://aws.amazon.com/compliance/services-in-scope/). Then choose the program that you need. For general information, see [AWS Compliance Programs](https://aws.amazon.com/compliance/programs/).
 

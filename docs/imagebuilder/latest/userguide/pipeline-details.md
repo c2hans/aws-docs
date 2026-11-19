@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/pipeline-d
 ---
 
 # List and view pipeline details
-<a name="pipeline-details"></a>
 
 This section describes the various ways that you can find information and view details for your EC2 Image Builder image pipelines.
 

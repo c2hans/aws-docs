@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # ListVoiceProfileDomains
-<a name="API_voice-chime_ListVoiceProfileDomains"></a>
 
 Lists the specified voice profile domains in the administrator's AWS account.
 

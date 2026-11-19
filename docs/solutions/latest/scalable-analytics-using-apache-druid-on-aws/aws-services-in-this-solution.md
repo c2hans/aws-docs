@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # AWS services in this guidance
-<a name="aws-services-in-this-solution"></a>
 
 | AWS service | Description |
 | --- | --- |

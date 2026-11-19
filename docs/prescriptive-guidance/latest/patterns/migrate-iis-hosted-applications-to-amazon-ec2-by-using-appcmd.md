@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate IIS-hosted applications to Amazon EC2 by using appcmd.exe
-<a name="migrate-iis-hosted-applications-to-amazon-ec2-by-using-appcmd"></a>
 
 *Deepak Kumar, Amazon Web Services*
 

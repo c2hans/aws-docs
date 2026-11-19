@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # DevOps of AWS Mainframe Modernization
-<a name="dev-ops-aws-mainframe-modernization"></a>
 
 Mainframe systems have unique, but common, challenges. Here is how you can extend the DevOps framework to address those unique characteristics:
 + **Legacy technology stack** – Mainframes typically use legacy technology stacks and proprietary software, which can be vastly different from the modern, cloud-native technologies used in DevOps. Integrating these legacy systems into a DevOps pipeline requires specialized tools and expertise.

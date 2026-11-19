@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS Cost Optimization Hub
-<a name="awscostoptimizationhub"></a>
 
 AWS Cost Optimization Hub provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_SparqlRecord
 ---
 
 # SparqlRecord
-<a name="API_SparqlRecord"></a>
 
 A serialized SPARQL stream record capturing a change-log entry for the RDF graph.
 

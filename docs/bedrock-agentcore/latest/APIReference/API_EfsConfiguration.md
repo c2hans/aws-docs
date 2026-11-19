@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EfsConfiguration
-<a name="API_EfsConfiguration"></a>
 
 The configuration for mounting an Amazon Elastic File System (Amazon EFS) access point that you own into a session.
 

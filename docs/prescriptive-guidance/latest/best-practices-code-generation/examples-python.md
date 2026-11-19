@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Python examples
-<a name="examples-python"></a>
 
 The following Python examples demonstrate how you can get started generating inline code suggestions with Amazon Q Developer. These examples show you how to trigger the coding assistant for your own projects. Most of the examples also apply to other languages:
 + [Generate classes and functions](#classes-python)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/errors.html
 ---
 
 # Neptune Service Errors
-<a name="errors"></a>
 
 Amazon Neptune has two different sets of errors:
 + The graph engine errors that are for the Neptune DB cluster endpoints only.

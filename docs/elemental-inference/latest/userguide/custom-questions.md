@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Customer decisions for contextual metadata in Elemental Inference
-<a name="custom-questions"></a>
 
 With customer decisions, Elemental Inference makes your own decisions about each shot, each scene, or both, in a contextual metadata output. You write each decision as a question in a *question set*, and then you attach the question set to the contextual metadata output of a feed. In the API, a feed references the question set in its `customQuestions` setting.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/sett
 ---
 
 # Setting up an AWS account
-<a name="setting-up"></a>
 
 Use this section to set up your AWS account. For information on best practices to create an AWS account, see [ Establishing your best practice AWS environment](https://aws.amazon.com/organizations/getting-started/best-practices/).
 

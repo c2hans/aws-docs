@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobManif
 ---
 
 # JobManifestSpec
-<a name="API_control_JobManifestSpec"></a>
 
 Describes the format of a manifest. If the manifest is in CSV format, also describes the columns contained within the manifest.
 

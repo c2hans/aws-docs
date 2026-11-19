@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/refer
 ---
 
 # reference\_field
-<a name="reference-fields-entity"></a>
 
 **Primary key (PK)**
 

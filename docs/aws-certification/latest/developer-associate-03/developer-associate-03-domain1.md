@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/developer-assoc
 ---
 
 # Content Domain 1: Development with AWS Services
-<a name="developer-associate-03-domain1"></a>
 
 **Topics**
 + [Task 1.1: Develop code for applications that are hosted on AWS.](#dva-03-task1.1)

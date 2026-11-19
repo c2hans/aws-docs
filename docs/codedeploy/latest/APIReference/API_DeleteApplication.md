@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Delet
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes an application.
 

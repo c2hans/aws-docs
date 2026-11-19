@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/delete_bund
 ---
 
 # Delete a custom bundle or image in WorkSpaces Personal
-<a name="delete_bundle"></a>
 
 You can delete unused custom bundles or custom images as needed.
 

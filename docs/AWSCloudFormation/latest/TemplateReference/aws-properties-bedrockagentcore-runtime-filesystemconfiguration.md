@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Runtime FilesystemConfiguration
-<a name="aws-properties-bedrockagentcore-runtime-filesystemconfiguration"></a>
 
 Configuration for a filesystem that can be mounted into the AgentCore Runtime.
 

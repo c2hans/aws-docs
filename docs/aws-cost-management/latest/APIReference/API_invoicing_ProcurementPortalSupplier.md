@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ProcurementPortalSupplier
-<a name="API_invoicing_ProcurementPortalSupplier"></a>
 
 Contains metadata for a supplier configured within a procurement portal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # Example of `explain` output for a mathematical value expression function
-<a name="access-graph-opencypher-explain-example-4"></a>
 
 In this example, `RETURN abs(-10)` performs a simple evaluation, taking the absolute value of a constant, `-10`.
 

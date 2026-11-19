@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListLicenseAssetRulesets
-<a name="API_ListLicenseAssetRulesets"></a>
 
 Lists license asset rulesets.
 

@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Installing and configuring your toolchain for the AWS SDK for .NET
-<a name="net-dg-dev-env"></a>
 
 To use the AWS SDK for .NET, you must have certain development tools installed.
 

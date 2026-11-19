@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/u
 ---
 
 # Using AWS SDK for SAP ABAP
-<a name="using-sdk"></a>
 
 SDK for SAP ABAP has two major components.
 + SDK Runtime (package `/AWS1/RT`) – a set of objects that underpin the security, authentication, tracing, configuration, data conversion, and other cross-API functions. The API modules for Amazon S3, AWS STS, IAM Roles Anywhere, and Secrets Manager are mandatory.

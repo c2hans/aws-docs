@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Errors
-<a name="policy-use-errors"></a>
 
 Policy in AgentCore operations can return the following types of errors:
 

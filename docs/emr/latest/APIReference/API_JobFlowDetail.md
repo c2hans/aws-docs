@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_JobFlowDetai
 ---
 
 # JobFlowDetail
-<a name="API_JobFlowDetail"></a>
 
 A description of a cluster (job flow).
 

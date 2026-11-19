@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2RoleforAWSCodeDeployLimited
-<a name="AmazonEC2RoleforAWSCodeDeployLimited"></a>
 
 **Description**: Provides EC2 limited access to S3 bucket to download revision. This role is needed by the CodeDeploy agent on EC2 instances.
 

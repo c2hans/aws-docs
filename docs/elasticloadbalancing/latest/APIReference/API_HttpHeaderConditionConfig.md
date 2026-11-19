@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # HttpHeaderConditionConfig
-<a name="API_HttpHeaderConditionConfig"></a>
 
 Information about an HTTP header condition.
 

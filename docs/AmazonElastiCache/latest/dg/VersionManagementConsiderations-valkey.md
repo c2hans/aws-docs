@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VersionManag
 ---
 
 # Major version behavior and compatibility differences for Valkey
-<a name="VersionManagementConsiderations-valkey"></a>
 
 When upgrading to a new major Valkey version, review the following behavior changes that may affect your applications.
 

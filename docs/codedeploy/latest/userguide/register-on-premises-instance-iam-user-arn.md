@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/register-on-
 ---
 
 # Use the register-on-premises-instance command (IAM user ARN) to register an on-premises instance
-<a name="register-on-premises-instance-iam-user-arn"></a>
 
 **Important**
 Registering an instance using an IAM user is not recommended because it uses static (permanent) credentials for authentication. For improved security, we recommend registering an instance using temporary credentials for authentication. For more information, see [Use the register-on-premises-instance command (IAM Session ARN) to register an on-premises instance](register-on-premises-instance-iam-session-arn.md).

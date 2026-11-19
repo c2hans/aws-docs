@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_HTTP_En
 ---
 
 # Sending logs using the OTLP endpoint (OpenTelemetry Logs)
-<a name="CWL_HTTP_Endpoints_OTLP"></a>
 
 The OpenTelemetry Logs endpoint (`/v1/logs`) accepts OpenTelemetry Protocol (OTLP) log data in either JSON or Protobuf encoding. For detailed information about the OTLP endpoint, including configuration and usage, see [Send metrics and traces to CloudWatch with OpenTelemetry](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-OTLPEndpoint.html).
 

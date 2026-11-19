@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ServiceGroup
-<a name="API_ServiceGroup"></a>
 
 A structure that represents a logical grouping of services based on shared attributes such as business unit, environment, or entry point.
 

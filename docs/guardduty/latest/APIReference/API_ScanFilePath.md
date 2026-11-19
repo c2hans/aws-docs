@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanFi
 ---
 
 # ScanFilePath
-<a name="API_ScanFilePath"></a>
 
 Contains details of infected file including name, file path and hash.
 

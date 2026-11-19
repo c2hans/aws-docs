@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Inspector
-<a name="amazoninspector"></a>
 
 Amazon Inspector provides the following APIs for data retrieval.
 

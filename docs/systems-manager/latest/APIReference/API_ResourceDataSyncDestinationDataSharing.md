@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResourceDataSyncDestinationDataSharing
-<a name="API_ResourceDataSyncDestinationDataSharing"></a>
 
 Synchronize AWS Systems Manager Inventory data from multiple AWS accounts defined in AWS Organizations to a centralized Amazon S3 bucket. Data is synchronized to individual key prefixes in the central bucket. Each key prefix represents a different AWS account ID.
 

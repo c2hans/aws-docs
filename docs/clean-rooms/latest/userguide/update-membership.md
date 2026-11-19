@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/update-memb
 ---
 
 # Updating a membership
-<a name="update-membership"></a>
 
 After you join a collaboration, you can update your membership settings. You can change your analysis logging settings, default result settings, and payment configuration.
 

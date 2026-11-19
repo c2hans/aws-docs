@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ecs_GettingS
 ---
 
 # Create a container task for the serverless launch type
-<a name="example_ecs_GettingStarted_086_section"></a>
 
 The following code example shows how to:
 + Create the cluster

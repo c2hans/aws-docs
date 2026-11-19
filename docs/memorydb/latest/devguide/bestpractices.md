@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/bestpractices.h
 ---
 
 # Best practices
-<a name="bestpractices"></a>
 
 Following, you can find recommended best practices for MemoryDB. Following these improves your cluster's performance and reliability.
 

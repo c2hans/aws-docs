@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mhj/latest/userguide/account-connections
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # AWS account connections in AWS Migration Hub Journeys
-<a name="account-connections"></a>
 
 **Note**
 The account-connection feature is in preview release. It is available in US East (N. Virginia).

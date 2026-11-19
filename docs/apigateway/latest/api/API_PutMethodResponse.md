@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_PutMethodRespo
 ---
 
 # PutMethodResponse
-<a name="API_PutMethodResponse"></a>
 
 Adds a MethodResponse to an existing Method resource.
 

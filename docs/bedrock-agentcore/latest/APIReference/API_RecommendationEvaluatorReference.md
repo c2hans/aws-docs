@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # RecommendationEvaluatorReference
-<a name="API_RecommendationEvaluatorReference"></a>
 
 A reference to an evaluator used for recommendation assessment.
 

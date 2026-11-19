@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteSite
-<a name="API_DeleteSite"></a>
 
 Deletes an existing site. The site cannot be associated with any device or link.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSWorkerNodeMinimalPolicy
-<a name="AmazonEKSWorkerNodeMinimalPolicy"></a>
 
 **Description**: This policy allows Amazon EKS worker nodes to connect to Amazon EKS Clusters.
 

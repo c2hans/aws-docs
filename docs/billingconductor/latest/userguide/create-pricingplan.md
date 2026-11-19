@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/create
 ---
 
 # Creating pricing plans
-<a name="create-pricingplan"></a>
 
 Use the following steps to create a pricing plan (customer managed).
 

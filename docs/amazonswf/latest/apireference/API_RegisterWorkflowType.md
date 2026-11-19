@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Regist
 ---
 
 # RegisterWorkflowType
-<a name="API_RegisterWorkflowType"></a>
 
 Registers a new *workflow type* and its configuration settings in the specified domain.
 

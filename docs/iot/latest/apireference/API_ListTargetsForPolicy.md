@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListTargetsF
 ---
 
 # ListTargetsForPolicy
-<a name="API_ListTargetsForPolicy"></a>
 
 List targets for the specified policy.
 

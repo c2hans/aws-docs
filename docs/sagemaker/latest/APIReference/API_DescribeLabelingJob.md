@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeLabelingJob
-<a name="API_DescribeLabelingJob"></a>
 
 Gets information about a labeling job.
 

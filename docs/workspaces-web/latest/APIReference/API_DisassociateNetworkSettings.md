@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DisassociateNetworkSettings
-<a name="API_DisassociateNetworkSettings"></a>
 
 Disassociates network settings from a web portal.
 

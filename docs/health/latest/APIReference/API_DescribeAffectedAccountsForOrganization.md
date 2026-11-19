@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAffectedAccountsForOrganization
-<a name="API_DescribeAffectedAccountsForOrganization"></a>
 
 Returns a list of accounts in the organization from AWS Organizations that are affected by the provided event. For more information about the different types of AWS Health events, see [Event](https://docs.aws.amazon.com/health/latest/APIReference/API_Event.html).
 
@@ -18,6 +17,12 @@ This API operation uses pagination. Specify the `nextToken` parameter in the nex
 ```
 {
    "eventArn": "{{string}}",
+   "filter": {
+      "eventArn": "{{string}}",
+      "tags": {
+         "{{string}}" : [ "{{string}}" ]
+      }
+   },
    "maxResults": {{number}},
    "nextToken": "{{string}}"
 }
@@ -39,6 +44,11 @@ Length Constraints: Maximum length of 1600.
 Pattern: `arn:aws(-[a-z]+(-[a-z]+)?)?:health:[^:]*:[^:]*:event(?:/[\w-]+){3}`
 Required: Yes
 
+ ** [filter](#API_DescribeAffectedAccountsForOrganization_RequestSyntax) **   <a name="AWSHealth-DescribeAffectedAccountsForOrganization-request-filter"></a>
+Values to narrow the results returned.
+Type: [AffectedAccountFilter](API_AffectedAccountFilter.md) object
+Required: No
+
  ** [maxResults](#API_DescribeAffectedAccountsForOrganization_RequestSyntax) **   <a name="AWSHealth-DescribeAffectedAccountsForOrganization-request-maxResults"></a>
 The maximum number of items to return in one batch, between 10 and 100, inclusive.
 Type: Integer
@@ -57,6 +67,14 @@ Required: No
 
 ```
 {
+   "affectedAccountEntities": [
+      {
+         "accountId": "string",
+         "accountTags": {
+            "string" : "string"
+         }
+      }
+   ],
    "affectedAccounts": [ "string" ],
    "eventScopeCode": "string",
    "nextToken": "string"
@@ -69,6 +87,10 @@ Required: No
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [affectedAccountEntities](#API_DescribeAffectedAccountsForOrganization_ResponseSyntax) **   <a name="AWSHealth-DescribeAffectedAccountsForOrganization-response-affectedAccountEntities"></a>
+The list of affected account entities, including account IDs and their associated tags.
+Type: Array of [AccountEntity](API_AccountEntity.md) objects
 
  ** [affectedAccounts](#API_DescribeAffectedAccountsForOrganization_ResponseSyntax) **   <a name="AWSHealth-DescribeAffectedAccountsForOrganization-response-affectedAccounts"></a>
 A JSON set of elements of the affected accounts.

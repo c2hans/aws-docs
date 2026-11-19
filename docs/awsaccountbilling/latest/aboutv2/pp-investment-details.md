@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/pp-inve
 ---
 
 # Viewing outcome-based investment details
-<a name="pp-investment-details"></a>
 
 Outcome-based investments (also called credits) contain outcomes that you attest to earn investment disbursements. The investment detail page lists the individual outcomes in your contract.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GluePro
 ---
 
 # GluePropertiesOutput
-<a name="API_GluePropertiesOutput"></a>
 
 The properties of the AWS Glue connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ServiceNowSourceProperties
-<a name="API_connect-customer-profiles_ServiceNowSourceProperties"></a>
 
 The properties that are applied when ServiceNow is being used as a source.
 

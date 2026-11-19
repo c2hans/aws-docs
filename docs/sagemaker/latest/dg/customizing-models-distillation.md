@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-d
 ---
 
 # Distillation
-<a name="customizing-models-distillation"></a>
 
 Distillation transfers knowledge from a *teacher* model to a *student* model. The result is a student that gains domain expertise from the teacher while operating at the inference cost, latency, and memory requirements of the student model.
 

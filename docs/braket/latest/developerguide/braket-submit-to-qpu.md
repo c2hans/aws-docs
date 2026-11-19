@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-subm
 ---
 
 # Example: Submitting a quantum task to a QPU
-<a name="braket-submit-to-qpu"></a>
 
 Amazon Braket allows you to run a quantum circuit on a QPU device. The following example shows how to submit a quantum task to Rigetti or IonQ devices.
 

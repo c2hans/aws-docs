@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_UpdateStudio
 ---
 
 # UpdateStudio
-<a name="API_UpdateStudio"></a>
 
 Updates an Amazon EMR Studio configuration, including attributes such as name, description, and subnets.
 

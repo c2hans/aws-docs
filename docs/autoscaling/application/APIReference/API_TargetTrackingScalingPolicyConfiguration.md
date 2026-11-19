@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # TargetTrackingScalingPolicyConfiguration
-<a name="API_TargetTrackingScalingPolicyConfiguration"></a>
 
 Represents a target tracking scaling policy configuration to use with Application Auto Scaling.
 

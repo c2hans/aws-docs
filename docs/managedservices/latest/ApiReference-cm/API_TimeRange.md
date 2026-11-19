@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # TimeRange
-<a name="API_TimeRange"></a>
 
 A starting and ending date and time.
 

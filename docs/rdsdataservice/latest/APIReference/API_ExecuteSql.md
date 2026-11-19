@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_E
 ---
 
 # ExecuteSql
-<a name="API_ExecuteSql"></a>
 
 Runs one or more SQL statements.
 

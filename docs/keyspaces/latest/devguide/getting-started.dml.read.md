@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/getting-starte
 ---
 
 # Read data from a table using the CQL `SELECT` statement in Amazon Keyspaces
-<a name="getting-started.dml.read"></a>
 
 In the [Inserting and loading data into an Amazon Keyspaces table](getting-started.dml.create.md) section, you used the `SELECT` statement to verify that you had successfully added data to your table. In this section, you refine your use of `SELECT` to display specific columns, and only rows that meet specific criteria.
 

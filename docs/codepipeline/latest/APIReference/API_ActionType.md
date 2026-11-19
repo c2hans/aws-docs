@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionType
-<a name="API_ActionType"></a>
 
 Returns information about the details of an action type.
 

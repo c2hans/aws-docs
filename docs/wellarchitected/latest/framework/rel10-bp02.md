@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel10-b
 ---
 
 # REL10-BP02 Automate recovery for components constrained to a single location
-<a name="rel10-bp02"></a>
 
  Some components cannot run in more than one location. A licensing limit, a single-instance data store, or a legacy system may tie a component to one Availability Zone or one data center. When you cannot spread such a component across locations, resilience has to come from the ability to rebuild it quickly. Automating that rebuild keeps recovery within the time and data-loss limits the business has set.
 

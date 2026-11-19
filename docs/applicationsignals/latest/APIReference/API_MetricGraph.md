@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # MetricGraph
-<a name="API_MetricGraph"></a>
 
 A structure that contains metric data queries and time range information that provides context for audit findings through relevant performance metrics.
 

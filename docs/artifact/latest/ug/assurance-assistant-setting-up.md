@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/assurance-assistant-s
 ---
 
 # Setting up
-<a name="assurance-assistant-setting-up"></a>
 
 ## Prerequisites
 <a name="assurance-assistant-prerequisites"></a>

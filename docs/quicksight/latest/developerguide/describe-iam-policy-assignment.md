@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/describ
 ---
 
 # DescribeIAMPolicyAssignment
-<a name="describe-iam-policy-assignment"></a>
 
 Use the `DescribeIAMPolicyAssignment` API operation to describe an existing IAM policy assignment.
 

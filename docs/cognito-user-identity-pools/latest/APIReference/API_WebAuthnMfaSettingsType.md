@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # WebAuthnMfaSettingsType
-<a name="API_WebAuthnMfaSettingsType"></a>
 
 A user's preference for using passkey, or WebAuthn, multi-factor authentication (MFA). Turns passkey MFA on and off for the user. Unlike other MFA settings types, this type doesn't include a `PreferredMfa` option because passkey MFA applies only when passkey is the first authentication factor.
 

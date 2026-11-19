@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Bul
 ---
 
 # Amazon S3 input formats for bulk put items
-<a name="BulkPutItems.Format"></a>
 
 DynamoDB bulk put items reads input data from Amazon S3 in two formats: DynamoDB JSON and Amazon Ion. You can supply a single Amazon S3 object or multiple objects under the same [Amazon S3 key prefix](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html).
 

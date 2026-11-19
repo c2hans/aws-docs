@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/msk_troubleshooting.
 ---
 
 # Troubleshooting MSK As Source
-<a name="msk_troubleshooting"></a>
 
 This section describes common troubleshooting steps while using MSK As Source
 

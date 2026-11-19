@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-crea
 ---
 
 # Creating a bill estimate
-<a name="pc-create-bill-estimate"></a>
 
 This section outlines how to generate a bill estimate.
 

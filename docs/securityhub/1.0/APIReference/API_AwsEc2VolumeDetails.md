@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2V
 ---
 
 # AwsEc2VolumeDetails
-<a name="API_AwsEc2VolumeDetails"></a>
 
 Details about an EC2 volume.
 

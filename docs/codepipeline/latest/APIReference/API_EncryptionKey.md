@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Enc
 ---
 
 # EncryptionKey
-<a name="API_EncryptionKey"></a>
 
 Represents information about the key used to encrypt data in the artifact store, such as an AWS Key Management Service (AWS Key Management Service) key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dyna
 ---
 
 # DynatraceServiceAuthorizationConfig
-<a name="API_DynatraceServiceAuthorizationConfig"></a>
 
 Authorization configuration options for Dynatrace service.
 

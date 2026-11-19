@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Com
 ---
 
 # ComponentParameterDetail
-<a name="API_ComponentParameterDetail"></a>
 
 Defines a parameter that is used to provide configuration details for the component.
 

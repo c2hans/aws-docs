@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating Microsoft SQL Server databases to the AWS Cloud
-<a name="introduction"></a>
 
 *Sagar Patel, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/adk/deleting-action-
 ---
 
 # Deleting an action version
-<a name="deleting-action-version"></a>
 
 Use the following instructions to delete a published version of an action. Deleting a version removes it from the action catalog so that it is no longer available for use in workflows. Any workflows that currently use the deleted version will stop working.
 

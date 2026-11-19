@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsE
 ---
 
 # AwsRdsEventSubscriptionDetails
-<a name="API_AwsRdsEventSubscriptionDetails"></a>
 
 Details about an Amazon RDS event notification subscription. The subscription allows Amazon RDS to post events to an SNS topic.
 

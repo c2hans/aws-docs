@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # GetServiceView
-<a name="API_GetServiceView"></a>
 
 Retrieves details about a specific Resource Explorer service view. This operation returns the configuration and properties of the specified view.
 

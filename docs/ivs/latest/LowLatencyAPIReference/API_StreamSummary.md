@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_St
 ---
 
 # StreamSummary
-<a name="API_StreamSummary"></a>
 
 Summary information about a stream.
 

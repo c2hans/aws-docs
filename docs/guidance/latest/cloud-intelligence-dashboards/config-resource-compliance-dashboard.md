@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # AWS Config Resource Compliance Dashboard
-<a name="config-resource-compliance-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

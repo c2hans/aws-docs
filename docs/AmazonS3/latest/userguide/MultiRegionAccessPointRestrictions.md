@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiRegionAcc
 ---
 
 # Multi-Region Access Point restrictions and limitations
-<a name="MultiRegionAccessPointRestrictions"></a>
 
 Multi-Region Access Points in Amazon S3 have the following restrictions and limitations.
 

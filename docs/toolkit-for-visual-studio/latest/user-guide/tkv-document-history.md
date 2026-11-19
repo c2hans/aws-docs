@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Document history of the AWS Toolkit for Visual Studio User Guide
-<a name="tkv-document-history"></a>
 
 ## Document history
 <a name="doc-history-recent"></a>

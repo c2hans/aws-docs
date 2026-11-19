@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Using browser proxies
-<a name="browser-proxies"></a>
 
 Amazon Bedrock AgentCore Browser supports routing browser traffic through your own external proxy servers. This enables organizations to:
 +  **Achieve IP stability** by routing traffic through proxies with known egress IPs, eliminating re-authentication cycles caused by rotating AWS IP addresses

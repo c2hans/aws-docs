@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_TagResource.html
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Tags a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # StopArchiveSearch
-<a name="API_StopArchiveSearch"></a>
 
 Stops an in-progress archive search job.
 

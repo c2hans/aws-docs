@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # AccessRestriction
-<a name="API_geoplaces_AccessRestriction"></a>
 
 Indicates if the access location is restricted. Index correlates to that of an access point and indicates if access through this point has some form of restriction.
 

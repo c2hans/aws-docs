@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cleanu
 ---
 
 # CleanupStepMetadata
-<a name="API_CleanupStepMetadata"></a>
 
 The cleanup outcomes for Amazon S3 output resources associated with upstream steps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/a
 ---
 
 # Making HTTPS requests to AWS Network Firewall
-<a name="api-making-requests"></a>
 
 Network Firewall requests are HTTPS requests, as defined by [RFC 2616](https://datatracker.ietf.org/doc/html/rfc2616). Like any HTTP request, a request to Network Firewall contains a request method, a URI, request headers, and a request body. The response contains an HTTP status code, response headers, and sometimes a response body.
 

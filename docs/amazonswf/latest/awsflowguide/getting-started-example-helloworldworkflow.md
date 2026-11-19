@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/getting-st
 ---
 
 # HelloWorldWorkflow Application
-<a name="getting-started-example-helloworldworkflow"></a>
 
 Although the basic [HelloWorld](getting-started-example-helloworld.md) example is structured like a workflow, it differs from an Amazon SWF workflow in several key respects:
 

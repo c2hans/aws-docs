@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-configuring.ht
 ---
 
 # Configuring Salesforce
-<a name="salesforce-configuring"></a>
 
 Before you can use AWS Glue to transfer data to or from Salesforce, you must meet these requirements:
 

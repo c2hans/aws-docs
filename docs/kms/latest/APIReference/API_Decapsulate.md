@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_Decapsulate.
 ---
 
 # Decapsulate
-<a name="API_Decapsulate"></a>
 
 Recovers the shared secret that was encapsulated with the public key of an ML-KEM KMS key. Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM), specified in [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) on the NIST website, is a post-quantum algorithm for establishing a shared secret between two parties. For an example of how two parties establish a shared secret over an insecure channel using ML-KEM, see [ML-KEM keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/pqkeys.html#mlkem) in the * AWS Key Management Service Developer Guide*.
 
@@ -144,7 +143,7 @@ HTTP Status Code: 400
  ** InvalidCiphertextException **
 From the [Decrypt](API_Decrypt.md) or [ReEncrypt](API_ReEncrypt.md) operation, the request was rejected because the specified ciphertext, or additional authenticated data incorporated into the ciphertext, such as the encryption context, is corrupted, missing, or otherwise invalid.
 From the [ImportKeyMaterial](API_ImportKeyMaterial.md) operation, the request was rejected because AWS KMS could not decrypt the encrypted (wrapped) key material.
-From the [Decapsulate](#API_Decapsulate) operation, the request was rejected because the length of the `SharedSecretCiphertextBlob` is inconsistent with the specified ML-KEM key spec.
+From the [Decapsulate](API_Decapsulate.md) operation, the request was rejected because the length of the `SharedSecretCiphertextBlob` is inconsistent with the specified ML-KEM key spec.
 HTTP Status Code: 400
 
  ** InvalidGrantTokenException **

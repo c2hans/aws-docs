@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateS
 ---
 
 # CreateSubscriptionRequest
-<a name="API_CreateSubscriptionRequest"></a>
 
 Creates a subscription request in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_TTPsOb
 ---
 
 # TTPsObservedDetail
-<a name="API_TTPsObservedDetail"></a>
 
 Details tactics, techniques, and procedures (TTPs) used in a potential security event. Tactics are based on [MITRE ATT&CK Matrix for Enterprise](https://attack.mitre.org/matrices/enterprise/).
 

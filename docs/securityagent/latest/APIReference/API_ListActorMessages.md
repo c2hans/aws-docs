@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListActorMessages
-<a name="API_ListActorMessages"></a>
 
 Returns a paginated list of the email MFA messages received for an actor at its server-generated email address, most recent first.
 

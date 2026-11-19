@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_kinesiss
 ---
 
 # aws-kinesisstreams-kinesisfirehose-s3
-<a name="aws_kinesisstreams_kinesisfirehose_s3"></a>
 
 ![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
 

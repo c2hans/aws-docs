@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/requirements-for-mon
 ---
 
 # Requirements for Amazon CloudWatch—monitoring channel health
-<a name="requirements-for-monitor-channel-health"></a>
 
 The AWS Elemental MediaLive console includes a page (**Channel details**) that collects CloudWatch metrics information about the health of channels and displays it directly on the MediaLive console.
 

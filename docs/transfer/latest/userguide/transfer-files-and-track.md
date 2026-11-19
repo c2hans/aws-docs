@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/transfer-files
 ---
 
 # Transfer files
-<a name="transfer-files-and-track"></a>
 
 **Topics**
 + [Send and retrieve files by using an SFTP connector](#send-retrieve-connector-details)

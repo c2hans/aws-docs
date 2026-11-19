@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkRoleECS
-<a name="AWSElasticBeanstalkRoleECS"></a>
 
 **Description**: (Elastic Beanstalk operations role) Allows a multicontainer Docker environment to manage Amazon ECS clusters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_SortCri
 ---
 
 # SortCriterion
-<a name="API_SortCriterion"></a>
 
 A collection of finding attributes used to sort findings.
 

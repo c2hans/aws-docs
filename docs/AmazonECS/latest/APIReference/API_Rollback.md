@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Rollba
 ---
 
 # Rollback
-<a name="API_Rollback"></a>
 
 Information about the service deployment rollback.
 

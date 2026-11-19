@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ListFlowOperationResults
-<a name="API_ListFlowOperationResults"></a>
 
 Returns the results of a specific flow operation.
 

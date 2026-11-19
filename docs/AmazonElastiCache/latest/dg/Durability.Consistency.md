@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Durability.C
 ---
 
 # Consistency
-<a name="Durability.Consistency"></a>
 
 **Synchronous writes**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/Welcome
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS CodeArtifact is a fully managed artifact repository compatible with language-native package managers and build tools such as npm, Apache Maven, pip, and dotnet. You can use CodeArtifact to share packages with development teams and pull packages. Packages can be pulled from both public and CodeArtifact repositories. You can also create an upstream relationship between a CodeArtifact repository and another repository, which effectively merges their contents from the point of view of a package manager client.
 
@@ -83,4 +82,4 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/Welcome
 +  `UpdatePackageVersionsStatus`: Updates the status of one or more versions of a package.
 +  `UpdateRepository`: Updates the properties of a repository.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

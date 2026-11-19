@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-c
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # SharePoint (Online) connector overview
-<a name="sharepoint-cloud-overview"></a>
 
 The following table gives an overview of the Amazon Q Business SharePoint (Online) connector and its supported features.
 

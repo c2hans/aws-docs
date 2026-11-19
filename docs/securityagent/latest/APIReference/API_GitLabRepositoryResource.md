@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Gi
 ---
 
 # GitLabRepositoryResource
-<a name="API_GitLabRepositoryResource"></a>
 
 A GitLab repository integrated as a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UpsolverMet
 ---
 
 # UpsolverMetadata
-<a name="API_UpsolverMetadata"></a>
 
  The connector metadata specific to Upsolver.
 

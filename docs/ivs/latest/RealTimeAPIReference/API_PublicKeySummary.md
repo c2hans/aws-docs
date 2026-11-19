@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Publ
 ---
 
 # PublicKeySummary
-<a name="API_PublicKeySummary"></a>
 
 Summary information about a public key.
 

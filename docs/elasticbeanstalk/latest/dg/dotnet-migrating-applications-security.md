@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-migrat
 ---
 
 # Security configurations and IAM roles
-<a name="dotnet-migrating-applications-security"></a>
 
 The **eb migrate** command manages AWS security configurations through IAM roles, instance profiles, and service roles. Understanding these components ensures proper access control and security compliance during migration.
 

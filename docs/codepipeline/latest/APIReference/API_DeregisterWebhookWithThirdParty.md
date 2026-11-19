@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Der
 ---
 
 # DeregisterWebhookWithThirdParty
-<a name="API_DeregisterWebhookWithThirdParty"></a>
 
 Removes the connection between the webhook that was created by CodePipeline and the external tool with events to be detected. Currently supported only for webhooks that target an action type of GitHub.
 

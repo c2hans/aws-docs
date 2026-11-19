@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateGatewa
 ---
 
 # UpdateGatewayInstance
-<a name="API_UpdateGatewayInstance"></a>
 
 Updates an existing gateway instance.
 

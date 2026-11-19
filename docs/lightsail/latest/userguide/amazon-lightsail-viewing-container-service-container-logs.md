@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Analyze Lightsail container service logs
-<a name="amazon-lightsail-viewing-container-service-container-logs"></a>
 
 Every container in your Amazon Lightsail container service deployment generates a log. The container logs provide the stdout and stderr streams of processes that run inside your containers. Access your containers' logs periodically to diagnose their operations. The latest three days of log entries are stored before the oldest ones are replaced by the newest entries.
 

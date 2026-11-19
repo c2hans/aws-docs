@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Operati
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by Amazon Location Service Routes V2:
 +  [CalculateIsolines](API_CalculateIsolines.md)

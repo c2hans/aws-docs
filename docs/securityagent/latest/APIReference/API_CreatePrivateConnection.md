@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreatePrivateConnection
-<a name="API_CreatePrivateConnection"></a>
 
 Creates a private connection for reaching a self-hosted provider instance over private networking using Amazon VPC Lattice.
 

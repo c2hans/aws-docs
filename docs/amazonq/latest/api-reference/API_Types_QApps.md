@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Types_Q
 ---
 
 # QApps
-<a name="API_Types_QApps"></a>
 
 The following data types are supported by QApps:
 +  [AppDefinition](API_qapps_AppDefinition.md)

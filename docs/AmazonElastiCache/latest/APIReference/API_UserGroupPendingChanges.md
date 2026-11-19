@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # UserGroupPendingChanges
-<a name="API_UserGroupPendingChanges"></a>
 
 Returns the updates being applied to the user group.
 

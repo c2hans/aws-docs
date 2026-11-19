@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Content
 ---
 
 # ContentSource
-<a name="API_ContentSource"></a>
 
 Specifies the source of content to search in.
 

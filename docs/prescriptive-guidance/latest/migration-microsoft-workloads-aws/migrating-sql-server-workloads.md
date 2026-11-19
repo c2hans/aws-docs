@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migrating SQL Server
-<a name="migrating-sql-server-workloads"></a>
 
 In your journey to the cloud, you have multiple options for migrating your SQL Server environments to AWS. A successful [migration](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/welcome.html) is based on generating a detailed inventory of your SQL Server workloads and their dependencies, identifying your authentication scheme, capturing your high availability and disaster recovery (HADR) requirements, assessing your performance targets, and evaluating your [licensing options](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Concepts.General.Licensing.html). This inventory helps you determine the target database platform and define your migration options.
 

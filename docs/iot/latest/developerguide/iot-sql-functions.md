@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-functi
 ---
 
 # Functions
-<a name="iot-sql-functions"></a>
 
 You can use the following built-in functions in the SELECT or WHERE clauses of your SQL expressions.
 
@@ -716,10 +715,10 @@ Returns the default value in the second parameter if specified or else returns u
 `get_or_default()` takes the following parameters:
 
 expression
-Any valid expression containing [Data types](iot-sql-data-types.md), [Functions](#iot-sql-functions), [Literals](iot-sql-literals.md), [Variables](iot-sql-set.md#iot-sql-set-usage), [Nested object queries](iot-sql-nested-queries.md), or [JSON extensions](iot-sql-json.md).
+Any valid expression containing [Data types](iot-sql-data-types.md), [Functions](iot-sql-functions.md), [Literals](iot-sql-literals.md), [Variables](iot-sql-set.md#iot-sql-set-usage), [Nested object queries](iot-sql-nested-queries.md), or [JSON extensions](iot-sql-json.md).
 
 defaultValue
-(Optional) Any valid expression containing [Data types](iot-sql-data-types.md), [Functions](#iot-sql-functions), [Literals](iot-sql-literals.md), [Variables](iot-sql-set.md#iot-sql-set-usage), [Nested object queries](iot-sql-nested-queries.md), or [JSON extensions](iot-sql-json.md). This is the value to be returned whenever the first argument returns null, undefined, or fails.
+(Optional) Any valid expression containing [Data types](iot-sql-data-types.md), [Functions](iot-sql-functions.md), [Literals](iot-sql-literals.md), [Variables](iot-sql-set.md#iot-sql-set-usage), [Nested object queries](iot-sql-nested-queries.md), or [JSON extensions](iot-sql-json.md). This is the value to be returned whenever the first argument returns null, undefined, or fails.
 Functions that fetch data from customer-owned resources, such as get\_secret, get\_dynamodb, aws\_lambda, get\_thing\_shadow, and decode-protobuf, are not allowed for the defaultValue parameter.
 
 The following table shows acceptable function arguments for each argument and their associated outputs:

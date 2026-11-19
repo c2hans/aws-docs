@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-n
 ---
 
 # Network Requirements \| Real-Time Streaming
-<a name="real-time-network-requirements"></a>
 
 Amazon IVS real-time streaming relies on WebRTC and WebSocket protocols for the transmission of media and data. To ensure a seamless experience, the destinations and ports listed below must be accessible. Any restrictions on inbound or outbound traffic to these destinations may disrupt the functionality of IVS real-time streaming.
 

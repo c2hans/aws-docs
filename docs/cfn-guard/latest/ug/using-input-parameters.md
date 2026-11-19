@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cfn-guard/latest/ug/using-input-paramete
 ---
 
 # Using input parameters with AWS CloudFormation Guard rules
-<a name="using-input-parameters"></a>
 
 AWS CloudFormation Guard allows you to use input parameters for dynamic data lookups during validation. This feature is particularly useful when you need to reference external data in your rules. However, when specifying input parameter keys, Guard requires that there are no conflicting paths.
 

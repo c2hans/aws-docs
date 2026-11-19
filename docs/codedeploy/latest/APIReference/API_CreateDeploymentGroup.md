@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Creat
 ---
 
 # CreateDeploymentGroup
-<a name="API_CreateDeploymentGroup"></a>
 
 Creates a deployment group to which application revisions are deployed.
 

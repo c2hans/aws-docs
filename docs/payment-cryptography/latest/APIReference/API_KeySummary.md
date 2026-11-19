@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # KeySummary
-<a name="API_KeySummary"></a>
 
 Metadata about an AWS Payment Cryptography key.
 

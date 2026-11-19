@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_DeletePr
 ---
 
 # DeleteProtection
-<a name="API_DeleteProtection"></a>
 
 Deletes an AWS Shield Advanced [Protection](API_Protection.md).
 

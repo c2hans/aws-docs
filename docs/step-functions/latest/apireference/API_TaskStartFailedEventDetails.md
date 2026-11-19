@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TaskStartFailedEventDetails
-<a name="API_TaskStartFailedEventDetails"></a>
 
 Contains details about a task that failed to start during an execution.
 

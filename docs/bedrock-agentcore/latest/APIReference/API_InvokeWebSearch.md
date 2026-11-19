@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InvokeWebSearch
-<a name="API_InvokeWebSearch"></a>
 
 Searches the web and returns a ranked list of results. Each result includes a text extract from the page.
 

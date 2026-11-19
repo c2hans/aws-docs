@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # UpdateCognitoUserPoolConfiguration
-<a name="API_UpdateCognitoUserPoolConfiguration"></a>
 
 Contains configuration details of a Amazon Cognito user pool for use with an identity source.
 

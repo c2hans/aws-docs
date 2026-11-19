@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessEndpointEniOptions
-<a name="API_CreateVerifiedAccessEndpointEniOptions"></a>
 
 Describes the network interface options when creating an AWS Verified Access endpoint using the `network-interface` type.
 

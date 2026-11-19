@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Failure mode assessments
-<a name="next-gen-failure-mode-assessments"></a>
 
 Failure mode assessments in the next generation of Resilience Hub use GenAI-powered analysis to identify potential failure modes in your services and provide actionable recommendations. Assessments evaluate your architecture against your defined resilience policies, AWS Well-Architected best practices, and the AWS Resilience Analysis Framework.
 

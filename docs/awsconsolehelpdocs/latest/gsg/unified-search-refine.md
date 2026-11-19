@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/unified-se
 ---
 
 # Refining your search in the AWS Management Console
-<a name="unified-search-refine"></a>
 
 You can refine your search by content type and view additional information about search results.
 

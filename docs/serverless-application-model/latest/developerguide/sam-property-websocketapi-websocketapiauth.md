@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # WebSocketApiAuth
-<a name="sam-property-websocketapi-websocketapiauth"></a>
 
 Configure authorization to control access to your Amazon API Gateway WebSocket API.
 

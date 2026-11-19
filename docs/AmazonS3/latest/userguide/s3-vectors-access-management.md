@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-acc
 ---
 
 # Identity and Access management in S3 Vectors
-<a name="s3-vectors-access-management"></a>
 
 Access management in S3 Vectors follows AWS security best practices, providing multiple layers of control to ensure that only authorized users and applications can access your vector data. The service integrates with IAM and supports both identity-based and resource-based policies, giving you flexibility in how you structure and manage permissions across your organization.
 

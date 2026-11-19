@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-featur
 ---
 
 # AWS Backup feature availability
-<a name="backup-feature-availability"></a>
 
 AWS Backup features are offered according to resource and AWS Region. The following sections and tables can help you determine feature availability.
 

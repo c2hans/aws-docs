@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-prompt-stere
 ---
 
 # Prompt stereotyping
-<a name="clarify-prompt-stereotyping-evaluation"></a>
 
  Measures the probability that your model encodes biases in its response. These biases include those for race, gender, sexual orientation, religion, age, nationality, disability, physical appearance, and socioeconomic status. Foundation Model Evaluations (FMEval) can measure your model responses against your own custom dataset or use a built-in dataset based on the [CrowS-Pairs](https://github.com/nyu-mll/crows-pairs) open source challenge dataset.
 

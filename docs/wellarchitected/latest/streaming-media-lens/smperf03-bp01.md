@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMPERF03-BP01 Use a content delivery network and monitor your cache-hit-ratio
-<a name="smperf03-bp01"></a>
 
 Deploy a content delivery network (CDN) in front of your streaming
 

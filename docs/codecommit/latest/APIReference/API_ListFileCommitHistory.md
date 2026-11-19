@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListF
 ---
 
 # ListFileCommitHistory
-<a name="API_ListFileCommitHistory"></a>
 
 Retrieves a list of commits and changes to a specified file.
 

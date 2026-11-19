@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/multi-
 ---
 
 # Custom multi-dimension evaluators
-<a name="multi-dimension-evaluators"></a>
 
 A multi-dimension evaluator is a custom LLM-as-a-judge evaluator that rates one target on several named *dimensions* in a single judge call. Each dimension has its own instruction and its own rating scale, and produces its own result.
 

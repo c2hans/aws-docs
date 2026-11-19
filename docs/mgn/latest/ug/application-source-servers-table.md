@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/application-source-servers
 ---
 
 # Review application source servers
-<a name="application-source-servers-table"></a>
 
 The **Source servers** table lists all the servers that are associated with the application.
 

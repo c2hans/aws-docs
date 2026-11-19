@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Determining the integration approach for microservices in MES
-<a name="integration"></a>
 
 In a microservice-based MES, service-to-service communication is essential to exchange data, share information, and ensure seamless operations. MES microservices can exchange data on specific events or at regular intervals. For example, a user might provide the production quantity during a production confirmation transaction. Such a transaction can initiate several transactions in the background, such as sending the information to ERP, capturing the running hours of the machine, capturing quality information about products, and reporting labor hours. Different microservices could be responsible for these tasks, yet a single event initiates all of them through one microservice.
 

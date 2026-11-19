@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Devices in AWS Cloud WAN
-<a name="cloudwan-devices"></a>
 
 Devices represent a physical or virtual appliance. When you add a device to your core network, you can include optional information such as vendor, model and serial number to help you more easily identify the device.
 

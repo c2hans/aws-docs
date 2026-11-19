@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DetachPolicy
 ---
 
 # DetachPolicy
-<a name="API_DetachPolicy"></a>
 
 Detaches a policy from the specified target.
 

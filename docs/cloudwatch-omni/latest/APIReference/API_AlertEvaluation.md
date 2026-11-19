@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AlertEvaluation
-<a name="API_AlertEvaluation"></a>
 
 Evaluation cadence. `intervalSeconds` must be one of {30, 60, 120, 300, 600, 900, 1800, 3600}; `pendingDurationSeconds` and `recoveryDurationSeconds` must be multiples of `intervalSeconds`. A duration of 0 means fire/clear immediately with no delay.
 

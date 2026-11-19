@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StringA
 ---
 
 # StringAttributeBoostingConfiguration
-<a name="API_StringAttributeBoostingConfiguration"></a>
 
 Provides information on boosting `STRING` type document attributes.
 

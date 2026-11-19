@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Describ
 ---
 
 # DescribeProject
-<a name="API_DescribeProject"></a>
 
 Returns the definition of a specific DataBrew project.
 

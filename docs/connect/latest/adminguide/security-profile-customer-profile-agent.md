@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/security-profi
 ---
 
 # Update Customer Profiles permissions for agents
-<a name="security-profile-customer-profile-agent"></a>
 
 Assign the following **Customer profiles** permissions as needed to the agent's security profile:
 + **View**: Enables agents to see the Customer profiles application. They can:

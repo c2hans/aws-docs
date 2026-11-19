@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_DeleteO
 ---
 
 # DeleteOutpost
-<a name="API_DeleteOutpost"></a>
 
 Deletes the specified Outpost.
 

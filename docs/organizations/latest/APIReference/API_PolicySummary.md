@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Po
 ---
 
 # PolicySummary
-<a name="API_PolicySummary"></a>
 
 Contains information about a policy, but does not include the content. To see the content of a policy, see [DescribePolicy](API_DescribePolicy.md).
 

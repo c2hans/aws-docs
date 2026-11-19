@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started-cli.h
 ---
 
 # Tutorial: Create an AWS Transit Gateway using the AWS command line
-<a name="tgw-getting-started-cli"></a>
 
 In this tutorial, you'll learn how to use the AWS CLI to create a transit gateway and connect two VPCs to it. You'll create the transit gateway, attach both VPCs, and then configure the necessary routes to enable communication between the transit gateway and your VPCs.
 

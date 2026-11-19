@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-data-pr
 ---
 
 # Preparing data for CPT on Amazon Nova 2
-<a name="nova-data-prep-cpt-2"></a>
 
 CPT on Amazon Nova 2 trains on raw text to help the model acquire deeper knowledge of specific domains, terminology, and writing patterns. This page describes the data format, supported features, constraints, and best practices for preparing CPT training data for Amazon Nova 2 models.
 

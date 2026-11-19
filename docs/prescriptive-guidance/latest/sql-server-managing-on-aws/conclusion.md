@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 Understanding the possible solutions for backing up SQL Server on Amazon EC2 is key to safeguarding your data and insuring you meet your backup needs, as well as helping to ensure that you can recover from critical events.
 

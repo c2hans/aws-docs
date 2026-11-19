@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_App.html
 ---
 
 # App
-<a name="API_App"></a>
 
 Represents the different branches of a repository for building, deploying, and hosting an Amplify app.
 

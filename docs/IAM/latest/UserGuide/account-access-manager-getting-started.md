@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/account-access-mana
 ---
 
 # Getting started with account access manager
-<a name="account-access-manager-getting-started"></a>
 
 The following outlines how you can get started with account access manager. This assumes the IAM roles you want to assign already exist in their respective AWS accounts. If these roles do not exist, see [Create a role using custom trust policies](id_roles_create_for-custom.md) for information about how to create new roles.
 

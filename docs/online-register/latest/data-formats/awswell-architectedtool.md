@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 ---
 
 # Data retrieval APIs for AWS Well-Architected Tool
-<a name="awswell-architectedtool"></a>
 
 AWS Well-Architected Tool provides the following APIs for data retrieval.
 

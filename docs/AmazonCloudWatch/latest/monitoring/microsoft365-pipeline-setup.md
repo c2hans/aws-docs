@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/micro
 ---
 
 # CloudWatch pipelines configuration for Microsoft 365
-<a name="microsoft365-pipeline-setup"></a>
 
 Collects log data from Microsoft Office 365 Management API using OAuth2 authentication.
 

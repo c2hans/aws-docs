@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/adding-custom-
 ---
 
 # Adding your custom branding
-<a name="adding-custom-branding"></a>
 
 To customize the Amazon DCV Access Console with your organizational branding, you need to update the following with your preferred configurations:
 + Authentication Server

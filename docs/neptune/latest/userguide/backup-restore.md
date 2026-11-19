@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/backup-restore.
 ---
 
 # Backing up and restoring an Amazon Neptune DB cluster
-<a name="backup-restore"></a>
 
 This section shows how you can back up and restore Amazon Neptune DB clusters.
 

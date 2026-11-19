@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # S3Configuration
-<a name="API_S3Configuration"></a>
 
 Configuration for Amazon S3 destination where scheduled query results are delivered.
 

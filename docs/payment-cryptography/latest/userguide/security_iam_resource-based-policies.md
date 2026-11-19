@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/se
 ---
 
 # Resource-based policies for AWS Payment Cryptography
-<a name="security_iam_resource-based-policies"></a>
 
 Resource-based policies are JSON policy documents that you attach to a resource, such as a AWS Payment Cryptography key. In a resource-based policy, you specify who can access the key and the actions they can perform on it. You can use resource-based policies to:
 + Grant access to a single key to multiple users and roles.

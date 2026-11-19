@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/sidew
 ---
 
 # Amazon Sidewalk bulk provisioning workflow
-<a name="sidewalk-bulk-provisioning-workflow"></a>
 
 The following sections show you key concepts of bulk provisioning and how it works. The steps that are involved in bulk provisioning include:
 

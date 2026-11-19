@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/bulk-dat
 ---
 
 # Get your data in bulk
-<a name="bulk-data"></a>
 
 You have three options to access your data in bulk.
 

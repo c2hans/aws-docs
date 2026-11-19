@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Customer Engagement Using AI/ML for Airlines
-<a name="customer-engagement-airlines"></a>
 
 Publication date: **November 14, 2020 ([Diagram history](#engagement-airlines-history))**
 

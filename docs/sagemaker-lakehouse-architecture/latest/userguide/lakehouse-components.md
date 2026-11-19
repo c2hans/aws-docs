@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/
 ---
 
 # Key components of the lakehouse architecture of Amazon SageMaker
-<a name="lakehouse-components"></a>
 
 The lakehouse architecture has the following key components, in addition to the components of AWS Glue Data Catalog and AWS Lake Formation.
 

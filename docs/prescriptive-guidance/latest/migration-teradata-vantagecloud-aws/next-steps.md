@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 We recommend that you consider the following next steps:
 

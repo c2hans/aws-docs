@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/deploying-fea
 ---
 
 # Deploying feature flags and configuration data in AWS AppConfig
-<a name="deploying-feature-flags"></a>
 
 After you [create required artifacts](https://docs.aws.amazon.com/appconfig/latest/userguide/creating-feature-flags-and-configuration-data.html) for working with feature flags and freeform configuration data, you can create a new deployment. When you create a new deployment, you specify the following information:
 + An application ID

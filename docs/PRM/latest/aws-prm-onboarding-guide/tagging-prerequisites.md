@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/tagg
 ---
 
 # Method-Specific Requirements
-<a name="tagging-prerequisites"></a>
 
 In addition to the general [prerequisites](resource-tagging-prerequisites.md), ensure you meet the following requirements for resource tagging:
 + Ability to tag AWS resources in your own account or in customer's account

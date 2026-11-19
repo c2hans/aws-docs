@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Resource
 ---
 
 # ResourceRecordSetProtectionKey
-<a name="API_ResourceRecordSetProtectionKey"></a>
 
 The name and type that identify a resource record set protection.
 

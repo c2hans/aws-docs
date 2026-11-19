@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL01-BP04 Implement chaos engineering practices
-<a name="advrel01-bp04"></a>
 
  Advertising systems have components sensitive to disconnects, latency, and bandwidth changes. Proactive fault injection finds these sensitivities before they affect live campaigns.
 

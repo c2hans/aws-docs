@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/migrate-contac
 ---
 
 # Migrate flows to an instance, Region, or environment in Connect Customer
-<a name="migrate-contact-flows"></a>
 
 With Connect Customer, you can efficiently migrate flows to another instance. For example, you might want to expand into new Regions, or move flows from your development environment to your production environment.
 

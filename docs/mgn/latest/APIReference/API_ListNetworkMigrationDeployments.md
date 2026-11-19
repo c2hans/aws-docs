@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationDeployments
-<a name="API_ListNetworkMigrationDeployments"></a>
 
 Lists network migration deployment jobs and their current status.
 

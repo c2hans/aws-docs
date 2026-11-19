@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Step 2: Prepare your AWS Managed Microsoft AD
-<a name="ms_ad_tutorial_setup_trust_prepare_mad"></a>
 
 Now let's get your AWS Managed Microsoft AD ready for the trust relationship. Many of the following steps are almost identical to what you just completed for your self-managed domain. This time, however, you are working with your AWS Managed Microsoft AD.
 

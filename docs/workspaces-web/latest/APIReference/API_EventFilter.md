@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_E
 ---
 
 # EventFilter
-<a name="API_EventFilter"></a>
 
 The filter that specifies the events to monitor.
 

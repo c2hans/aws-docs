@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/manage-be
 ---
 
 # Assisted migration process to enable all features with Organizations
-<a name="manage-begin-all-features-assisted-migration"></a>
 
 If you are an Enterprise customer, it can be difficult to complete the standard migration process due to the large number of accounts you might manage. For example, you might have difficulty obtaining approval to migrate all invited accounts in large organizations.
 

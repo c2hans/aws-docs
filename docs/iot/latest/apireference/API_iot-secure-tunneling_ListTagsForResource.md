@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-t
 ---
 
 # ListTagsForResource
-<a name="API_iot-secure-tunneling_ListTagsForResource"></a>
 
 Lists the tags for the specified resource.
 

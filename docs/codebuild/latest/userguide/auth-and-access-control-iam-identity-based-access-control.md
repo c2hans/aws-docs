@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/auth-and-acce
 ---
 
 # Using identity-based policies for AWS CodeBuild
-<a name="auth-and-access-control-iam-identity-based-access-control"></a>
 
 This topic provides examples of identity-based policies that demonstrate how an account administrator can attach permissions policies to IAM identities (that is, users, groups, and roles) and thereby grant permissions to perform operations on AWS CodeBuild resources.
 

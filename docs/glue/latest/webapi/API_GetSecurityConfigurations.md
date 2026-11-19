@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetSecurityConfig
 ---
 
 # GetSecurityConfigurations
-<a name="API_GetSecurityConfigurations"></a>
 
 Retrieves a list of all security configurations.
 

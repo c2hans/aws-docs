@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/education.
 ---
 
 # .education
-<a name="education"></a>
 
 Used for information about education.
 

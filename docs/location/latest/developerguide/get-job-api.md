@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-job-a
 ---
 
 # GetJob
-<a name="get-job-api"></a>
 
 The `GetJob` operation retrieves information about a specific job, including its current status, configuration, timestamps, and any error information. Use this operation to monitor job progress and verify configuration details. For completed jobs, you can use this information to verify successful processing before accessing results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-arrinde
 ---
 
 # JSON.ARRINDEX
-<a name="json-arrindex"></a>
 
 Searches for the first occurrence of a scalar JSON value in the arrays at the path.
 + Out of range errors are treated by rounding the index to the array's start and end.

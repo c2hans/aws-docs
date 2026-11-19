@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-instanc
 ---
 
 # rds-instance-subnet-igw-check
-<a name="rds-instance-subnet-igw-check"></a>
 
 Checks if RDS DB instances are deployed in a public subnet with a route to the internet gateway. The rule is NON\_COMPLIANT if RDS DB instances is deployed in a public subnet
 

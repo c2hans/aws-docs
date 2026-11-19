@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Associates a set of provided tags with a notification rule.
 

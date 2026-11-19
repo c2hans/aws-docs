@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SubSlotVal
 ---
 
 # SubSlotValueElicitationSetting
-<a name="API_SubSlotValueElicitationSetting"></a>
 
 Subslot elicitation settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-instance-r
 ---
 
 # Rebooting an Amazon DocumentDB instance
-<a name="db-instance-reboot"></a>
 
 Occasionally, you might need to reboot your Amazon DocumentDB instance, usually for maintenance reasons. If you make certain changes, such as changing the cluster parameter group that is associated with a cluster, you must reboot the instances in the cluster for the changes to take effect. You can reboot a specified instance using the AWS Management Console or the AWS CLI.
 

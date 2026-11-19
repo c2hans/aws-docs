@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Defining the scope and requirements for database decomposition
-<a name="scope"></a>
 
 When you define the scope and identify requirements for your database decomposition project, you must work backward from your organization's needs. This requires a systematic approach that balances technical feasibility with business value. This initial step sets the foundation for the entire process and helps you make sure that the project's objectives align with the organization's goals and capabilities.
 

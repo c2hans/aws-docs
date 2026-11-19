@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/pe-sele
 ---
 
 # Selection
-<a name="pe-selection"></a>
 
 | SaaS PERF 1: How do you prevent one tenant from adversely impacting the experience of another tenant? |
 | --- |

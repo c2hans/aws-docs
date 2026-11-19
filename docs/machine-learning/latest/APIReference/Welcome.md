@@ -3,8 +3,7 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/Wel
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Definition of the public APIs exposed by Amazon Machine Learning
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

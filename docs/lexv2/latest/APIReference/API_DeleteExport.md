@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteExpo
 ---
 
 # DeleteExport
-<a name="API_DeleteExport"></a>
 
 Removes a previous export and the associated files stored in an S3 bucket.
 

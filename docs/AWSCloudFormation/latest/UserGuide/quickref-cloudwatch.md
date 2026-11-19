@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Amazon CloudWatch template snippets
-<a name="quickref-cloudwatch"></a>
 
 Use these sample template snippets to help describe your Amazon CloudWatch resources in CloudFormation. For more information, see the [Amazon CloudWatch resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_CloudWatch.html).
 

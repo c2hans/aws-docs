@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/concatenate-streams.
 ---
 
 # Concatenating data streams for Amazon Chime SDK media capture pipelines
-<a name="concatenate-streams"></a>
 
 **Note**
 To automate the process of concatenating media capture artifacts, refer to [Creating media concatenation pipelines for Amazon Chime SDK meetings](create-concat-pipe.md) in this guide.

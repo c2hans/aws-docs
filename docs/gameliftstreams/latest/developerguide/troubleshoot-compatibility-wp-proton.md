@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/tr
 ---
 
 # Troubleshoot compatibility on Proton
-<a name="troubleshoot-compatibility-wp-proton"></a>
 
  In this step, you will set up Proton on your own machine, so you can troubleshoot compatibility issues between your Amazon GameLift Streams application and Proton. Running your application in a simulated environment without the Amazon GameLift Streams server can help you identify issues specific to your application and runtime environment.
 

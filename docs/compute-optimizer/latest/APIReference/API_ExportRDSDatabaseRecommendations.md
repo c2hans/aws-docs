@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExportRDSDatabaseRecommendations
-<a name="API_ExportRDSDatabaseRecommendations"></a>
 
  Export optimization recommendations for your Amazon Aurora and Amazon Relational Database Service (Amazon RDS) databases.
 

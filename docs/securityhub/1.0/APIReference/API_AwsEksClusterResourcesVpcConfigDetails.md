@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEksC
 ---
 
 # AwsEksClusterResourcesVpcConfigDetails
-<a name="API_AwsEksClusterResourcesVpcConfigDetails"></a>
 
 Information about the VPC configuration used by the cluster control plane.
 

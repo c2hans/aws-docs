@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/connector-ove
 ---
 
 # CRM connector overview
-<a name="connector-overview"></a>
 
 The AWS Partner CRM connector enables you to integrate your Salesforce organization with AWS Partner Central and AWS Marketplace. Integration enables you to complete AWS Partner Central and AWS Marketplace tasks in Salesforce, such as two-way synching of ACE opportunities and attaching offers to opportunities.
 

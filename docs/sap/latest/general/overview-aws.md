@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/overview-aws.html
 ---
 
 # AWS Overview
-<a name="overview-aws"></a>
 
  AWS offers a broad set of global, cloud-based services, including compute, storage, networking, Internet of Things (IoT), and many others. These services help organizations move faster, lower IT costs, and support scalability. AWS is trusted by the largest enterprises and popular start-ups to power a wide variety of workloads, such as web and mobile applications, game development, data processing and warehousing, storage, and archiving.
 

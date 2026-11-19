@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # JobSummary
-<a name="API_JobSummary"></a>
 
 Contains summary information about an asynchronous job in a list response.
 

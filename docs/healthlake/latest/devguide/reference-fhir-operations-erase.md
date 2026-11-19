@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Permanently Removing Resources with `$erase`
-<a name="reference-fhir-operations-erase"></a>
 
 AWS HealthLake supports the `$erase` operation, enabling permanent deletion of a specific resource and its historical versions. This operation is particularly useful when you need to:
 + Permanently remove individual resources

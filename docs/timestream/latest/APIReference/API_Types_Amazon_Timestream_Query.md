@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Types
 ---
 
 # Amazon Timestream Query
-<a name="API_Types_Amazon_Timestream_Query"></a>
 
 The following data types are supported by Amazon Timestream Query:
 +  [AccountSettingsNotificationConfiguration](API_query_AccountSettingsNotificationConfiguration.md)

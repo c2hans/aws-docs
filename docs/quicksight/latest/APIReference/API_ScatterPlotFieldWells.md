@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Scatt
 ---
 
 # ScatterPlotFieldWells
-<a name="API_ScatterPlotFieldWells"></a>
 
 The field well configuration of a scatter plot.
 

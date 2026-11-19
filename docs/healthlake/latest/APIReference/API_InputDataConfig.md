@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Input
 ---
 
 # InputDataConfig
-<a name="API_InputDataConfig"></a>
 
  The import job input properties.
 

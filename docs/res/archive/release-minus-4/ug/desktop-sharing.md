@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/desktop-s
 ---
 
 # Share a desktop
-<a name="desktop-sharing"></a>
 
 1. From your desktop session, choose **Actions**.
 ![Virtual desktops](https://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-virtualdesktops.png)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-migrat
 ---
 
 # Advanced migration scenarios
-<a name="dotnet-migrating-applications-advanced-scenarios"></a>
 
 This section covers advanced migration scenarios for complex IIS deployments.
 

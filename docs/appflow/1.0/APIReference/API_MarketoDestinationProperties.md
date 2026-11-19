@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MarketoDest
 ---
 
 # MarketoDestinationProperties
-<a name="API_MarketoDestinationProperties"></a>
 
 The properties that Amazon AppFlow applies when you use Marketo as a flow destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayVpcAttachmentRequestOptions
-<a name="API_CreateTransitGatewayVpcAttachmentRequestOptions"></a>
 
 Describes the options for a VPC attachment.
 

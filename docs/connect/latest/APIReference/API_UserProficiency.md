@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserProf
 ---
 
 # UserProficiency
-<a name="API_UserProficiency"></a>
 
 Information about proficiency of a user.
 

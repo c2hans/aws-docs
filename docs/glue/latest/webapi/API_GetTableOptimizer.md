@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetTableOptimizer
 ---
 
 # GetTableOptimizer
-<a name="API_GetTableOptimizer"></a>
 
 Returns the configuration of all optimizers associated with a specified table.
 

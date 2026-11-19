@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Choosing the right database for your RTO and RPO requirements
-<a name="choosing-database"></a>
 
 When you have defined the DR strategy for your organization based on the table in the previous section, choose the databases that are the right fit for your RPO and RTO requirements. By default, all AWS database services provide backup and restore functionality. Use the following table to understand more advanced DR features provided by AWS database services and map them to your DR requirements.
 

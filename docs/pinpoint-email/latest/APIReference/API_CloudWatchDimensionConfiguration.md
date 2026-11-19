@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_C
 ---
 
 # CloudWatchDimensionConfiguration
-<a name="API_CloudWatchDimensionConfiguration"></a>
 
 An object that defines the dimension configuration to use when you send Amazon Pinpoint email events to Amazon CloudWatch.
 

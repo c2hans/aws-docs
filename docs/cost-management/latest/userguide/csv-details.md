@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/csv-det
 ---
 
 # Sharing your rightsizing recommendations
-<a name="csv-details"></a>
 
 You can download a rightsizing recommendations report in CSV format.
 

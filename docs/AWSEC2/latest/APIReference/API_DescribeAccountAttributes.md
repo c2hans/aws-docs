@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAccountAttributes
-<a name="API_DescribeAccountAttributes"></a>
 
 Describes attributes of your AWS account. The following are the supported account attributes:
 +  `default-vpc`: The ID of the default VPC for your account, or `none`.

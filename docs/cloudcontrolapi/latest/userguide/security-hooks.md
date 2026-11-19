@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/securit
 ---
 
 # CloudFormation Hooks
-<a name="security-hooks"></a>
 
 AWS CloudFormation Hooks is a feature that you can use to ensure that your AWS Cloud Control API resources are compliant with your organization's security, operational, and cost optimization best practices. With Hooks, you can provide code that proactively inspects the configuration of your resources before provisioning. If non-compliant resources are found, Cloud Control API either fails the operation and prevents the resources from being provisioned, or emits a warning and allows the provisioning operation to continue. You can use Hooks to evaluate your Cloud Control API resource configurations prior to create and update operations.
 

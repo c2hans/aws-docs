@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ResetTokenVaultKeyMaterial
-<a name="API_ResetTokenVaultKeyMaterial"></a>
 
 Resets the key material for a token vault whose customer managed AWS KMS key has been deleted, and re-encrypts the token vault with an AWS managed key so that you can use the token vault again.
 

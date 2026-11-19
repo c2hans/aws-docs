@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/upload
 ---
 
 # Uploading Data to an Amazon CloudSearch Domain
-<a name="uploading-data"></a>
 
 **Important**
 Before uploading data to an Amazon CloudSearch domain, follow these guidelines:

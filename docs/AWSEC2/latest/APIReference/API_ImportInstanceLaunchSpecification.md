@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportIns
 ---
 
 # ImportInstanceLaunchSpecification
-<a name="API_ImportInstanceLaunchSpecification"></a>
 
 Describes the launch specification for VM import.
 

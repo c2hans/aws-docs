@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Li
 ---
 
 # ListDataSetRevisions
-<a name="API_ListDataSetRevisions"></a>
 
 This operation lists a data set's revisions sorted by CreatedAt in descending order.
 

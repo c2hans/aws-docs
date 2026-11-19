@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # NotificationTargetItem
-<a name="API_NotificationTargetItem"></a>
 
 The SNS targets that are notified when updates are made to an incident.
 

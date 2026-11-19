@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAc
 ---
 
 # DeleteAccessGrantsInstanceResourcePolicy
-<a name="API_control_DeleteAccessGrantsInstanceResourcePolicy"></a>
 
 Deletes the resource policy of the S3 Access Grants instance. The resource policy is used to manage cross-account access to your S3 Access Grants instance. By deleting the resource policy, you delete any cross-account permissions to your S3 Access Grants instance.
 

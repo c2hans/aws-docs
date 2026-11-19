@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::ModuleVersion
-<a name="aws-resource-cloudformation-moduleversion"></a>
 
 The `AWS::CloudFormation::ModuleVersion` resource registers the specified version of the module with the CloudFormation registry. Registering a module makes it available for use in CloudFormation templates in your AWS account and Region.
 

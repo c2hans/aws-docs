@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip
 ---
 
 # Provision the address range for use with Global Accelerator
-<a name="using-byoip.provision"></a>
 
 When you provision an address range for use with AWS, you are confirming that you own the address range and authorize Amazon to advertise it. We'll verify that you own the address range.
 

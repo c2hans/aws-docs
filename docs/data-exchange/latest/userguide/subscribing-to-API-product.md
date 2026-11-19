@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/subscribi
 ---
 
 # Subscribing to and accessing an AWS Data Exchange product containing APIs
-<a name="subscribing-to-API-product"></a>
 
 The following topics describe the complete process of subscribing to and accessing a product containing APIs on AWS Data Exchange by using the AWS Data Exchange console.
 

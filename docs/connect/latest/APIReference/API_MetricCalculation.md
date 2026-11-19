@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricCa
 ---
 
 # MetricCalculation
-<a name="API_MetricCalculation"></a>
 
 Contains the formula and component metrics that define a custom metric calculation.
 

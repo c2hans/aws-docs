@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Capaci
 ---
 
 # CapacityProvider
-<a name="API_CapacityProvider"></a>
 
 The details for a capacity provider.
 

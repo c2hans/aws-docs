@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Protect sensitive data
-<a name="omni-data-protection"></a>
 
 Agent telemetry can contain sensitive information: prompts and responses often include user messages, retrieved documents, and personal data. You control what is captured and who can see it. CloudWatch Omni does not automatically detect or redact personally identifiable information (PII); no data is removed unless you configure it. Choose where in the pipeline filtering happens based on your compliance requirements.
 

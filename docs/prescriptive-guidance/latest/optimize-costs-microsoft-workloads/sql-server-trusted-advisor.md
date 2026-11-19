@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Review Trusted Advisor recommendations for SQL Server workloads
-<a name="sql-server-trusted-advisor"></a>
 
 ## Overview
 <a name="sql-server-trusted-advisor-overview"></a>

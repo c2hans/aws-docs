@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SpaceS
 ---
 
 # SpaceSettings
-<a name="API_SpaceSettings"></a>
 
 A collection of space settings.
 

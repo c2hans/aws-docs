@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/prog-ser
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Amazon SWF Examples Using the AWS SDK for Java
-<a name="prog-services-swf"></a>
 
  [Amazon SWF](https://aws.amazon.com/swf/) is a workflow-management service that helps developers build and scale distributed workflows that can have parallel or sequential steps consisting of activities, child workflows or even [Lambda](https://aws.amazon.com/lambda/) tasks.
 

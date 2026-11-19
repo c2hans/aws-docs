@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2S
 ---
 
 # AwsEc2SecurityGroupUserIdGroupPair
-<a name="API_AwsEc2SecurityGroupUserIdGroupPair"></a>
 
 A relationship between a security group and a user.
 

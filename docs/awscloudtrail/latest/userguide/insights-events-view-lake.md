@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/insights-
 ---
 
 # Viewing Insights events for event data stores
-<a name="insights-events-view-lake"></a>
 
 This section describes how you can view Insights events for an Insights event data store by viewing the **Insights events dashboard** and running sample queries.
 

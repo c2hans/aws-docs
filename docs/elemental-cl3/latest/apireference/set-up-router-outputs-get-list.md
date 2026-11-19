@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET List: Get Router Output List
-<a name="set-up-router-outputs-get-list"></a>
 
 Get the list of outputs for the specified router.
 

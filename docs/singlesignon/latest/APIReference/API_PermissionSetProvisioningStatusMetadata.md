@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Per
 ---
 
 # PermissionSetProvisioningStatusMetadata
-<a name="API_PermissionSetProvisioningStatusMetadata"></a>
 
 Provides information about the permission set provisioning status.
 

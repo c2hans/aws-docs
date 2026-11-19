@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # DeletePricingRule
-<a name="API_DeletePricingRule"></a>
 
  Deletes the pricing rule that's identified by the input Amazon Resource Name (ARN).
 

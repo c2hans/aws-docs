@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Project
 ---
 
 # ProjectPolicyGrantPrincipal
-<a name="API_ProjectPolicyGrantPrincipal"></a>
 
 The project policy grant principal.
 

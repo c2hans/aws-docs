@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/getinfo-about-runs.html
 ---
 
 # Get run information
-<a name="getinfo-about-runs"></a>
 
 After you start a run, you can retrieve its status, configuration, and task-level details using the HealthOmics API. This page describes how to:
 

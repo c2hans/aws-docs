@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsi
 ---
 
 # Overview of Database Insights on Amazon RDS
-<a name="USER_PerfInsights.Overview"></a>
 
 By default, RDS enables Database Insights in Advanced mode, which includes lock diagnostics, execution plan capture, and fleet-level monitoring.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/release
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Release notes
-<a name="release-notes"></a>
 
 This page describes changes to the AWS Well-Architected user guide. For notification about updates to this documentation, you can subscribe to the RSS feed.
 

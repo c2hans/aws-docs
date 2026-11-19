@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-deplo
 ---
 
 # View the Deployment History of a Model
-<a name="model-registry-deploy-history"></a>
 
 To view the deployments for a model version in the Amazon SageMaker Studio console, complete the following steps based on whether you use Studio or Studio Classic.
 

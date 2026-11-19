@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle automatic indexing
-<a name="chap-oracle-aurora-mysql.tables.autoindex"></a>
 
 With AWS DMS, you can leverage Oracle automatic indexing to optimize database performance and reduce manual tuning efforts.
 

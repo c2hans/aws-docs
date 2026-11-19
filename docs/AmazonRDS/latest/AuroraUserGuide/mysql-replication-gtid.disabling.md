@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-r
 ---
 
 # Disabling GTID-based replication for an Aurora MySQL DB cluster
-<a name="mysql-replication-gtid.disabling"></a>
 
 You can disable GTID-based replication for an Aurora MySQL DB cluster. Doing so means that the Aurora cluster can't perform inbound or outbound binlog replication with external databases that use GTID-based replication.
 

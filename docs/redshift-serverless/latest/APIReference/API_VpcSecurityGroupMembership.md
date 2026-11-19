@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # VpcSecurityGroupMembership
-<a name="API_VpcSecurityGroupMembership"></a>
 
 Describes the members of a VPC security group.
 

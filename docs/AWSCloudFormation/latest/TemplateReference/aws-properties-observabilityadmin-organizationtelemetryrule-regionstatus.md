@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationTelemetryRule RegionStatus
-<a name="aws-properties-observabilityadmin-organizationtelemetryrule-regionstatus"></a>
 
  Represents the status of a multi-region operation in a specific AWS Region. This structure is used to report per-region progress for both telemetry evaluation and telemetry rule replication.
 

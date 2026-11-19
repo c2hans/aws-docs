@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_SchemaVer
 ---
 
 # SchemaVersionListItem
-<a name="API_SchemaVersionListItem"></a>
 
 List item describing a schema version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/tag-resources-co
 ---
 
 # Adding tags to a public repository in Amazon ECR public
-<a name="tag-resources-console"></a>
 
 You can add tags to a public repository.
 

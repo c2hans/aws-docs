@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/StorageGateway
 ---
 
 # How Volume Gateway works
-<a name="StorageGatewayConcepts"></a>
 
 Following, you can find an architectural overview of the Volume Gateway solution.
 

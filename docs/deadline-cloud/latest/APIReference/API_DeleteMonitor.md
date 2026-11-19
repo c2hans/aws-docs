@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteMonitor
-<a name="API_DeleteMonitor"></a>
 
 Removes a Deadline Cloud monitor. After you delete a monitor, you can create a new one and attach farms to the monitor.
 

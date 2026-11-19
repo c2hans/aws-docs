@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ca
 ---
 
 # CanDbcDefinition
-<a name="API_CanDbcDefinition"></a>
 
 Configurations used to create a decoder manifest.
 

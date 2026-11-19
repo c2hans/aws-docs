@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 4.3 Engagement plan implementation
-<a name="engagement"></a>
 
 ## Overview
 <a name="engagement-overview"></a>

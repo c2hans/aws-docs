@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_PortPr
 ---
 
 # PortProbeAction
-<a name="API_PortProbeAction"></a>
 
 Contains information about the PORT\_PROBE action described in the finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_LambdaLaye
 ---
 
 # LambdaLayerAggregation
-<a name="API_LambdaLayerAggregation"></a>
 
 The details that define a findings aggregation based on an AWS Lambda function's layers.
 

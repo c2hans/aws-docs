@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_L
 ---
 
 # ListCacheReports
-<a name="API_ListCacheReports"></a>
 
 Returns a list of existing cache reports for all file shares associated with your AWS account. This list includes all information provided by the `DescribeCacheReport` action, such as report name, status, completion progress, start time, end time, filters, and tags.
 

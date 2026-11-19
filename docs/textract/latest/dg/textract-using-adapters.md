@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-using-adapte
 ---
 
 # Customizing your Queries Responses
-<a name="textract-using-adapters"></a>
 
 Amazon Textract lets you customize the output of its pretrained Queries feature using adapters. You can use the [Amazon Textract Console](https://console.aws.amazon.com/textract/) to create an adapter. This adapter can then be referenced when calling the [AnalyzeDocument](https://docs.aws.amazon.com/textract/latest/APIReference/API_AnalyzeDocument.html) and [StartDocumentAnalysis](https://docs.aws.amazon.com/textract/latest/APIReference/API_StartDocumentAnalysis.html) operations.
 

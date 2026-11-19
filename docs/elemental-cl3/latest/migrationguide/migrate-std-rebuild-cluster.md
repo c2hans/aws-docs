@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Step F: Rebuild the cluster
-<a name="migrate-std-rebuild-cluster"></a>
 
 ## Step F1: Add and configure the worker nodes
 <a name="migrate-std-rebuild-worker"></a>

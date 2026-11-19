@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/trigger-job.html
 ---
 
 # Starting jobs and crawlers using triggers
-<a name="trigger-job"></a>
 
 In AWS Glue, you can create Data Catalog objects called triggers, which you can use to either manually or automatically start one or more crawlers or extract, transform, and load (ETL) jobs. Using triggers, you can design a chain of dependent jobs and crawlers.
 

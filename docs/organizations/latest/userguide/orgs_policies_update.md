@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_poli
 ---
 
 # Updating organization policies with AWS Organizations
-<a name="orgs_policies_update"></a>
 
 When your policy requirements change, you can update an existing policy.
 

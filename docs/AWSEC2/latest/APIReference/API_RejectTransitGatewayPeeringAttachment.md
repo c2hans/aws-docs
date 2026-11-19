@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectTra
 ---
 
 # RejectTransitGatewayPeeringAttachment
-<a name="API_RejectTransitGatewayPeeringAttachment"></a>
 
 Rejects a transit gateway peering attachment request.
 

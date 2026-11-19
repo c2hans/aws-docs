@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-metadat
 ---
 
 # Transition to using Instance Metadata Service Version 2
-<a name="instance-metadata-transition-to-version-2"></a>
 
 If you want to configure your instances to only accept Instance Metadata Service Version 2 (IMDSv2) calls, we recommend that you use the following tools and transition path.
 

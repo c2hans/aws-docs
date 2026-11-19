@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Transf
 ---
 
 # TransformResources
-<a name="API_TransformResources"></a>
 
 Describes the resources, including ML instance types and ML instance count, to use for transform job.
 

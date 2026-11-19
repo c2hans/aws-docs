@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-clou
 ---
 
 # Edge infrastructure management
-<a name="infrastructure-mgmt"></a>
 
 AWS provides fully managed services that extend AWS infrastructure, services, APIs, and tools closer to your end users and data centers. The services that are available in Outposts and Local Zones are the same as those available in AWS Regions, so you can manage those services by using the same AWS console, AWS CLI, or AWS APIs. For supported services, see the [AWS Outposts feature comparison](https://aws.amazon.com/outposts/) table and [AWS Local Zones features](https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/).
 

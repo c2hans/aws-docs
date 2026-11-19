@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteSequenceStore
 ---
 
 # DeleteSequenceStore
-<a name="API_DeleteSequenceStore"></a>
 
 Deletes a sequence store and returns a response with no body if the operation is successful. You can only delete a sequence store when it does not contain any read sets.
 

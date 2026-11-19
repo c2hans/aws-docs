@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Dele
 ---
 
 # DeleteConfigurationManager
-<a name="API_DeleteConfigurationManager"></a>
 
 Deletes a configuration manager.
 

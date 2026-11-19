@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv6Range
 ---
 
 # Ipv6Range
-<a name="API_Ipv6Range"></a>
 
 Describes an IPv6 address range.
 

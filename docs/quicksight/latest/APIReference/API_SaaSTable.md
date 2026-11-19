@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SaaST
 ---
 
 # SaaSTable
-<a name="API_SaaSTable"></a>
 
 A table from a Software-as-a-Service (SaaS) data source, including connection details and column definitions.
 

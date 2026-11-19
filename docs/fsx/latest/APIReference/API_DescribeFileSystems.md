@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFile
 ---
 
 # DescribeFileSystems
-<a name="API_DescribeFileSystems"></a>
 
 Returns the description of specific Amazon FSx file systems, if a `FileSystemIds` value is provided for that file system. Otherwise, it returns descriptions of all file systems owned by your AWS account in the AWS Region of the endpoint that you're calling.
 

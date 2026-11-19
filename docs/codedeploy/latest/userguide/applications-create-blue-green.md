@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/applications
 ---
 
 # Create an application for a blue/green deployment (console)
-<a name="applications-create-blue-green"></a>
 
 To use the CodeDeploy console to create an application for a blue/green deployment:
 

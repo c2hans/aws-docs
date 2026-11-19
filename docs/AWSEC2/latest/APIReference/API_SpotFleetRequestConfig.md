@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotFleet
 ---
 
 # SpotFleetRequestConfig
-<a name="API_SpotFleetRequestConfig"></a>
 
 Describes a Spot Fleet request.
 

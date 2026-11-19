@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_TerminateSes
 ---
 
 # TerminateSession
-<a name="API_TerminateSession"></a>
 
 Terminates an active session. After you call this operation, the session enters the `TERMINATING` state and then transitions to `TERMINATED`.
 

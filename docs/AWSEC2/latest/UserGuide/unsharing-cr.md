@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/unsharing-cr.htm
 ---
 
 # Stop sharing a Capacity Reservation
-<a name="unsharing-cr"></a>
 
 The Capacity Reservation owner can stop sharing a Capacity Reservation at any time. The following rules apply:
 + Instances owned by consumers that were running in the shared capacity at the time sharing stops continue to run in the reserved capacity. The capacity is restored to the Capacity Reservation when consumers terminate the instances.

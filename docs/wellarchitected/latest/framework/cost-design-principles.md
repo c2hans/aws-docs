@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-de
 ---
 
 # Design principles
-<a name="cost-design-principles"></a>
 
  Consider the following design principles for cost optimization:
 +  **Implement Cloud Financial Management:** To optimize workload costs effectively, incorporate Cloud Financial Management practices into your development and operations processes. Build capabilities to understand, measure, and optimize the economics of your workloads throughout their lifecycle. Like security and operational excellence, cost optimization should be an integral part of your workload design and operation.

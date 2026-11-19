@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/ldap-setup-la
 ---
 
 # Launch an EMR cluster that authenticates with LDAP
-<a name="ldap-setup-launch"></a>
 
 Use the following steps to launch an EMR cluster with LDAP or Active Directory.
 

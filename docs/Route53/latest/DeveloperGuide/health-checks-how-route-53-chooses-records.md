@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-che
 ---
 
 # How Amazon Route 53 chooses records when health checking is configured
-<a name="health-checks-how-route-53-chooses-records"></a>
 
 If you configure health checking for all the records in a group of records that have the same name, the same type (such as A or AAAA), and the same routing policy (such as weighted or failover), Route 53 responds to DNS queries by choosing a healthy record and returning the applicable value from that record.
 

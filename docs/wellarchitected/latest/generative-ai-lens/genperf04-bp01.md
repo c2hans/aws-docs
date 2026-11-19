@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENPERF04-BP01 Test vector embeddings for latency and relevant performance
-<a name="genperf04-bp01"></a>
 
  Optimizing a data retrieval system for generative AI may have more to do with data architecture and meta-data than the foundation model selected. This best practice encourages high data quality and data architecture to accelerate data-driven generative AI workloads.
 

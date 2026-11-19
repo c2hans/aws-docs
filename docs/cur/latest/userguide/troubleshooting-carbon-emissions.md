@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting-car
 ---
 
 # Troubleshooting carbon emissions data exports
-<a name="troubleshooting-carbon-emissions"></a>
 
 **Topics**
 + [Why can't I create an export of the Carbon emissions table even though I have IAM permissions to use Data Exports and the CUR 2.0 table?](#carbon-emissions-permissions)

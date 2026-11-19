@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Logical replication
-<a name="logical-replication-considerations"></a>
 
 Logical replication is a method of replicating data objects and their changes based on the replication identity of the objects and their changes. Logical replication uses a *publish* and *subscribe* model where one or more subscribers subscribes to one or more publications on a publisher node. Subscribers pull data from the publications that they subscribe to.
 

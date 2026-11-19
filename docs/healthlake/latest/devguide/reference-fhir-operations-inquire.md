@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # FHIR `$inquire` operation for HealthLake
-<a name="reference-fhir-operations-inquire"></a>
 
 The `$inquire` operation enables you to check the status of a previously submitted prior authorization request. This operation implements the [Da Vinci Prior Authorization Support (PAS) Implementation Guide](https://hl7.org/fhir/us/davinci-pas/), providing a standardized FHIR-based workflow to retrieve the current authorization decision.
 

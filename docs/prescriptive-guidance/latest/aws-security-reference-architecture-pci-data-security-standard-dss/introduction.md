@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # AWS Security Reference Architecture - Payment Card Industry (PCI) Data Security Standard (DSS)
-<a name="introduction"></a>
 
 *Avik Mukherjee and Akanksha Chaturvedi, Amazon Web Services*
 

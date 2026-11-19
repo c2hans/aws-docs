@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_PutEncryptionConfig.
 ---
 
 # PutEncryptionConfig
-<a name="API_PutEncryptionConfig"></a>
 
 Updates the encryption configuration for X-Ray data.
 

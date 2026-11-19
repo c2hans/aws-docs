@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UpdateInt
 ---
 
 # UpdateInterruptibleCapacityReservationAllocation
-<a name="API_UpdateInterruptibleCapacityReservationAllocation"></a>
 
  Modifies the number of instances allocated to an interruptible reservation, allowing you to add more capacity or reclaim capacity to your source Capacity Reservation.
 

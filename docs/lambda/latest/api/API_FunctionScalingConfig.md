@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_FunctionScalingCon
 ---
 
 # FunctionScalingConfig
-<a name="API_FunctionScalingConfig"></a>
 
 Configuration that defines the scaling behavior for a Lambda Managed Instances function, including the minimum and maximum number of execution environments that can be provisioned.
 

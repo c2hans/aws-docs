@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/transfer-
 ---
 
 # Transfer files
-<a name="transfer-files"></a>
 
 Use File Transfer to use external file transfer applications to transfer files. You can select from the following applications and follow the on-screen directions to transfer files.
 + FileZilla (Windows, MacOS, Linux)

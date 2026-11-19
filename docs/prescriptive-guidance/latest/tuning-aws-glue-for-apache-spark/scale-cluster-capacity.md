@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-
 ---
 
 # Scale cluster capacity
-<a name="scale-cluster-capacity"></a>
 
 If your job is taking too much time, but executors are consuming sufficient resources and Spark is creating a large volume of tasks relative to available cores, consider scaling cluster capacity. To assess if this is appropriate, use the following metrics.
 

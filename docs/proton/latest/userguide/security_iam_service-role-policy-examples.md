@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/security_iam_ser
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # AWS Proton IAM service role policy examples
-<a name="security_iam_service-role-policy-examples"></a>
 
 Administrators own and manage the resources that AWS Proton creates as defined by the environment and service templates. They attach IAM service roles to their account that permit AWS Proton to create resources on their behalf. Administrators supply the IAM roles and AWS Key Management Service keys for resources that are later owned and managed by developers when AWS Proton deploys their application as an AWS Proton service in an AWS Proton environment. For more information about AWS KMS and data encryption, see [Data protection in AWS Proton](data-protection.md).
 

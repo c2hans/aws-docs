@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Fund the wallet and grant agent permissions
-<a name="payments-fund-wallet"></a>
 
 After you create a payment instrument, the end user must fund the wallet with USD Coin (USDC) and grant the agent permission to sign transactions. Until the end user completes both steps, the process payment operation fails with a client-side exception.
 

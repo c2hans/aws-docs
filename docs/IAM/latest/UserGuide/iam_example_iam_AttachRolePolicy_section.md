@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Att
 ---
 
 # Use `AttachRolePolicy` with an AWS SDK or CLI
-<a name="iam_example_iam_AttachRolePolicy_section"></a>
 
 The following code examples show how to use `AttachRolePolicy`.
 

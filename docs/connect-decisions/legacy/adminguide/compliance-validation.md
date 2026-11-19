@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/comp
 ---
 
 # Compliance validation for AWS Supply Chain
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of AWS Supply Chain as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others.
 

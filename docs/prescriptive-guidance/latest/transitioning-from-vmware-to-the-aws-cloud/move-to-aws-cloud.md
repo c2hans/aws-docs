@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioni
 ---
 
 # Transition to the AWS Cloud
-<a name="move-to-aws-cloud"></a>
 
 Moving to the AWS Cloud unlocks new opportunities for innovation, cost optimization, and business agility. Organizations can move beyond physical infrastructure constraints and leverage an extensive array of cloud-native services and capabilities. These range from highly scalable compute and storage resources to advanced analytics, machine learning, and serverless computing, providing a comprehensive platform for digital transformation.
 

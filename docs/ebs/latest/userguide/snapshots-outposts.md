@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/snapshots-outposts.
 ---
 
 # Amazon EBS local snapshots on Outposts
-<a name="snapshots-outposts"></a>
 
 Amazon EBS snapshots are a point-in-time copy of your EBS volumes.
 

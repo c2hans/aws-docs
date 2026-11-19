@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/managed-tier-checkpo
 ---
 
 # Set up managed tiered checkpointing
-<a name="managed-tier-checkpointing-setup"></a>
 
 This section contains setup process for managed tiered checkpointing for Amazon SageMaker HyperPod. You’ll learn how to enable the capability on your cluster and implement checkpointing in your training code.
 

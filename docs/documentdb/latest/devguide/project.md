@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/project.html
 ---
 
 # $project
-<a name="project"></a>
 
 The `$project` operator in Amazon DocumentDB allows you to selectively include or exclude fields from output documents, pass values to the next pipeline stage, and compute new fields from input document values.
 

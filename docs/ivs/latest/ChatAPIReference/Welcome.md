@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  **Introduction**
 
@@ -55,4 +54,4 @@ For more information:
 
 ARNs uniquely identify AWS resources. An ARN is required when you need to specify a resource unambiguously across all of AWS, such as in IAM policies and API calls. For more information, see [Amazon Resource Names](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) in the *AWS General Reference*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

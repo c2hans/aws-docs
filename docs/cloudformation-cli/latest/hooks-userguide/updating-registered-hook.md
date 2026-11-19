@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Updating a custom Hook
-<a name="updating-registered-hook"></a>
 
 Updating a custom Hook allows revisions in the Hook to be made available in the CloudFormation registry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # DeleteEdgeConfiguration
-<a name="API_DeleteEdgeConfiguration"></a>
 
 An asynchronous API that deletes a stream’s existing edge configuration, as well as the corresponding media from the Edge Agent.
 

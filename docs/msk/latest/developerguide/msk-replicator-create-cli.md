@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Create a replicator using the AWS CLI
-<a name="msk-replicator-create-cli"></a>
 
 Use the `create-replicator` command to create an MSK Replicator. Before you begin, make sure you have the [IAM permissions required to create an MSK Replicator](msk-replicator-create-iam-perms.md) and have completed [Prepare source and target clusters](msk-replicator-prepare-clusters.md).
 

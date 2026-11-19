@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-integration.response object
-<a name="api-gateway-swagger-extensions-integration-response"></a>
 
  Defines a response and specifies parameter mappings or payload mappings from the integration response to the method response.
 

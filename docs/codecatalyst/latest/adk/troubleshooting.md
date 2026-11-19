@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/adk/troubleshooting.
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 The following information can help you troubleshoot common issues in the Amazon CodeCatalyst ADK.
 

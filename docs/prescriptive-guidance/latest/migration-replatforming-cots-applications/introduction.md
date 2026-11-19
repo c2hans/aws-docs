@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Replatforming COTS and in-house applications during a migration to the AWS Cloud
-<a name="introduction"></a>
 
 *Anbu Selvan, Amazon Web Services*
 

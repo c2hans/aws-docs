@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/tutoria
 ---
 
 # Tutorial: Creating a MySQL DB cluster with a custom parameter group
-<a name="tutorial-creating-custom-OPG"></a>
 
 In this tutorial, you create a MySQL DB cluster with a custom parameter group. For more information about parameter groups, see [DB cluster parameter groups for Amazon Aurora DB clusters](USER_WorkingWithDBClusterParamGroups.md).
 

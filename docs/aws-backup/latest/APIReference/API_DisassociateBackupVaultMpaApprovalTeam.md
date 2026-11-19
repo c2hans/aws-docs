@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Disas
 ---
 
 # DisassociateBackupVaultMpaApprovalTeam
-<a name="API_DisassociateBackupVaultMpaApprovalTeam"></a>
 
 Removes the association between an MPA approval team and a backup vault, disabling the MPA approval workflow for restore operations.
 

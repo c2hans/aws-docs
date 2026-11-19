@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Excessive agency
-<a name="gensec05"></a>
 
 | GENSEC05: How do you avoid excessive agency for models? |
 | --- |

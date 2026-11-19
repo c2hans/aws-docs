@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # RegistryCatalogData
-<a name="API_RegistryCatalogData"></a>
 
 The metadata for a public registry.
 

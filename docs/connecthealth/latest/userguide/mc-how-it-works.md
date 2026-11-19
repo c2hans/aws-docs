@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/mc-how-it
 ---
 
 # How medical coding works
-<a name="mc-how-it-works"></a>
 
 Medical coding uses AI to follow the same reasoning a professional coder uses. It runs as an asynchronous job: you start a job, the service processes it in the background, and you retrieve the results when the job completes. This model suits coding workflows where documentation is finalized first and coded afterward, and it lets you submit many jobs without holding a connection open.
 

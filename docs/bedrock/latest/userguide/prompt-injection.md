@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-injectio
 ---
 
 # Prompt injection security
-<a name="prompt-injection"></a>
 
  As per the [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/), AWS is responsible for securing the underlying cloud infrastructure, including the hardware, software, networking, and facilities that run AWS services. However, customers are responsible for securing their applications, data, and resources deployed on AWS.
 

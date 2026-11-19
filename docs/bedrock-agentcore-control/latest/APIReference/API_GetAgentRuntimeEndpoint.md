@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetAgentRuntimeEndpoint
-<a name="API_GetAgentRuntimeEndpoint"></a>
 
 Gets information about an Amazon Secure AgentEndpoint.
 

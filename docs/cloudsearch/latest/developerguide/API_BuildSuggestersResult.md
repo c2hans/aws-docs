@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Bu
 ---
 
 # BuildSuggestersResult
-<a name="API_BuildSuggestersResult"></a>
 
 ## Description
 <a name="API_BuildSuggestersResult_Description"></a>

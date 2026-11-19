@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/apps.html
 ---
 
 # AWS CDK apps
-<a name="apps"></a>
 
 The AWS Cloud Development Kit (AWS CDK) application or *app* is a collection of one or more CDK [stacks](stacks.md). Stacks are a collection of one or more [constructs](constructs.md), which define AWS resources and properties. Therefore, the overall grouping of your stacks and constructs are known as your CDK app.
 

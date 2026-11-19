@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Environm
 ---
 
 # EnvironmentInfoDescription
-<a name="API_EnvironmentInfoDescription"></a>
 
 The information retrieved from the Amazon EC2 instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # AuthorizationData
-<a name="API_AuthorizationData"></a>
 
 An authorization token data object that corresponds to a public registry.
 

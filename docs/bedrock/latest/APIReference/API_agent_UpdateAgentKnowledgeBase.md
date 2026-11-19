@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Up
 ---
 
 # UpdateAgentKnowledgeBase
-<a name="API_agent_UpdateAgentKnowledgeBase"></a>
 
 Updates the configuration for a knowledge base that has been associated with an agent.
 

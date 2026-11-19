@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec07-b
 ---
 
 # SEC07-BP02 Apply data protection controls based on data sensitivity
-<a name="sec07-bp02"></a>
 
  Not all data needs the same protection. Applying controls that match each sensitivity level guards your most sensitive data from unauthorized access while keeping lower-sensitivity data available.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteIntegration
 ---
 
 # DeleteIntegrationTableProperties
-<a name="API_DeleteIntegrationTableProperties"></a>
 
 Deletes the table properties that have been created for the tables that need to be replicated.
 

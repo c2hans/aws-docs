@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/label-studio-securit
 ---
 
 # Security in Label Studio labeling spaces
-<a name="label-studio-security"></a>
 
 Security is a shared responsibility between AWS and you. You control what you put in a labeling space: who joins it, the IAM permissions you grant, and the bucket you export annotations to. For more information about how the responsibilities divide, see [Shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) on the AWS website.
 

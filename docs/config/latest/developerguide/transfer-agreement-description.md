@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/transfer-ag
 ---
 
 # transfer-agreement-description
-<a name="transfer-agreement-description"></a>
 
 Checks if AWS Transfer Family agreements have a description. The rule is NON\_COMPLIANT if configuration.Description does not exist.
 

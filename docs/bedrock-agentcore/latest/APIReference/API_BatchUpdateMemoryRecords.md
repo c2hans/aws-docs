@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BatchUpdateMemoryRecords
-<a name="API_BatchUpdateMemoryRecords"></a>
 
 Updates multiple memory records with custom content in a single batch operation within the specified memory.
 

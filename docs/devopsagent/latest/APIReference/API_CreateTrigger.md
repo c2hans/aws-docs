@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Crea
 ---
 
 # CreateTrigger
-<a name="API_CreateTrigger"></a>
 
 Creates a new Trigger in the specified agent space
 

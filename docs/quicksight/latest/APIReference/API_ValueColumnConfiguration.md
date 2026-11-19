@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Value
 ---
 
 # ValueColumnConfiguration
-<a name="API_ValueColumnConfiguration"></a>
 
 Configuration for how to handle value columns in pivot operations, including aggregation settings.
 

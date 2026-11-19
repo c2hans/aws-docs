@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SageMak
 ---
 
 # SageMakerRunConfigurationInput
-<a name="API_SageMakerRunConfigurationInput"></a>
 
 The Amazon SageMaker run configuration.
 

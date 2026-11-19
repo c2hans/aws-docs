@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/home-fo
 ---
 
 # Home Folder Formats
-<a name="home-folders-admin-folders"></a>
 
 The hierarchy of a user folder depends on how a user launches a streaming session, as described in the following sections.
 

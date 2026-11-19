@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-al
 ---
 
 # Organizing and tracking costs using AWS cost allocation tags
-<a name="cost-alloc-tags"></a>
 
 |  |
 | --- |

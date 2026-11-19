@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # Creating a schedule action
-<a name="feed-scheduling-create"></a>
 
 To create a schedule action, use the `create-schedule-action` command. Specify the feed ID, a name for the action, the start configuration, and the operations. In the examples that follow, replace `{{feed-id}}` with the ID of your feed, and `{{fixture-id}}` with the ID of the game that you want to clip.
 

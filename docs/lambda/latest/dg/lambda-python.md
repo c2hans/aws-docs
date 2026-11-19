@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-python.html
 ---
 
 # Building Lambda Event Functions with Python
-<a name="lambda-python"></a>
 
 You can run Python code in AWS Lambda Event Functions. Lambda provides [runtimes](lambda-runtimes.md) for Python that run your code to process events. Your code runs in an environment that includes the SDK for Python (Boto3), with credentials from an AWS Identity and Access Management (IAM) role that you manage. To learn more about the SDK versions included with the Python runtimes, see [Runtime-included SDK versions](#python-sdk-included).
 

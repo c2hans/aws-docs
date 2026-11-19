@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Configure notifications
-<a name="configure-notifications"></a>
 
 In addition to the solution-managed Amazon SNS topics described in [Example SNS notifications](example-sns-notifications.md), you can create notification configurations from the Web UI. Each configuration controls which events are delivered, where they are delivered, and what each message contains. The solution stores configurations in the admin account and applies them to findings and remediations aggregated to that account and Region.
 

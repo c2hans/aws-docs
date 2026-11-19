@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableBucketLogging
-<a name="API_s3Buckets_GetTableBucketLogging"></a>
 
 Gets the server access logging configuration for a table bucket. For more information, see [Server access logging for table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-server-logs.html) in the *Amazon Simple Storage Service User Guide*.
 

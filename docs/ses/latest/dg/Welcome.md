@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/Welcome.html
 ---
 
 # What is Amazon SES?
-<a name="Welcome"></a>
 
 [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses) is an email platform that provides an easy, cost-effective way for you to send and receive email using your own email addresses and domains.
 

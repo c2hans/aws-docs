@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-hsm-use
 ---
 
 # HSM user management with CloudHSM Management Utility (CMU)
-<a name="manage-hsm-users-cmu"></a>
 
  To manage hardware security module (HSM) users in AWS CloudHSM, you must log in to the HSM with the user name and password of a [cryptographic officer](understanding-users-cmu.md#crypto-officer) (CO). Only COs can manage users. The HSM contains a default CO named admin. You set the password for admin when you [activated the cluster](activate-cluster.md).
 

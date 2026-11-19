@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/header-fields.html
 ---
 
 # Amazon SES header fields
-<a name="header-fields"></a>
 
 Amazon SES can accept all email headers that follow the format described in [RFC 822](https://www.rfc-editor.org/rfc/rfc822.html).
 

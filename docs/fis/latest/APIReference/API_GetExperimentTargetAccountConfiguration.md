@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_GetExperimen
 ---
 
 # GetExperimentTargetAccountConfiguration
-<a name="API_GetExperimentTargetAccountConfiguration"></a>
 
 Gets information about the specified target account configuration of the experiment.
 

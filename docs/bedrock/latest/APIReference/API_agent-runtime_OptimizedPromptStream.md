@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # OptimizedPromptStream
-<a name="API_agent-runtime_OptimizedPromptStream"></a>
 
 The stream containing events in the prompt optimization process.
 

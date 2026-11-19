@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # SymmetricEncryptionAttributes
-<a name="API_SymmetricEncryptionAttributes"></a>
 
 Parameters requried to encrypt plaintext data using symmetric keys.
 

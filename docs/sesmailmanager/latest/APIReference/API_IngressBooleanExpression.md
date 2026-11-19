@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressBooleanExpression
-<a name="API_IngressBooleanExpression"></a>
 
 The structure for a boolean condition matching on the incoming mail.
 

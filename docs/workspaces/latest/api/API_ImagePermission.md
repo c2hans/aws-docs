@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ImagePermissio
 ---
 
 # ImagePermission
-<a name="API_ImagePermission"></a>
 
 Describes the AWS accounts that have been granted permission to use a shared image. For more information about sharing images, see [ Share or Unshare a Custom WorkSpaces Image](https://docs.aws.amazon.com/workspaces/latest/adminguide/share-custom-image.html).
 

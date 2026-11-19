@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/calculate-
 ---
 
 # Calculate OEE in AWS IoT SiteWise
-<a name="calculate-oee"></a>
 
 This tutorial provides an example of how to calculate overall equipment effectiveness (OEE) for a manufacturing process. As a result, your OEE calculations or formulas might differ from those shown here. In general, OEE is defined as `Availability * Quality * Performance`. To learn more about calculating OEE, see [Overall equipment effectiveness](https://en.wikipedia.org/wiki/Overall_equipment_effectiveness) on *Wikipedia*.
 

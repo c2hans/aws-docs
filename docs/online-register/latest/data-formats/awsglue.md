@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsg
 ---
 
 # Data retrieval APIs for AWS Glue
-<a name="awsglue"></a>
 
 AWS Glue provides the following APIs for data retrieval.
 

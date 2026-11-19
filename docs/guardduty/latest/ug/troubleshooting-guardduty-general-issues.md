@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/troubleshooting-guar
 ---
 
 # Exporting findings to Amazon S3 - access error
-<a name="troubleshooting-guardduty-general-issues"></a>
 
 When you export GuardDuty findings to an Amazon S3 bucket (publishing destination), if GuardDuty is unable to access this publishing destination, then you may get an access error.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # Space
-<a name="API_Space"></a>
 
 Detailed information about a space.
 

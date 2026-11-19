@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenDependency
-<a name="API_CodegenDependency"></a>
 
 Dependency package that may be required for the project code to run.
 

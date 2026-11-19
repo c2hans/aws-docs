@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-b
 ---
 
 # Custom code-based evaluator
-<a name="code-based-evaluators"></a>
 
 Custom code-based evaluators let you use your own AWS Lambda function to programmatically evaluate agent performance, instead of using an LLM as a judge. This gives you full control over the evaluation logic — you can implement deterministic checks, call external APIs, run regex matching, compute custom metrics, or apply any business-specific rules.
 

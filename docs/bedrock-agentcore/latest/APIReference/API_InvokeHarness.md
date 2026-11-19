@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InvokeHarness
-<a name="API_InvokeHarness"></a>
 
 Operation to invoke a Harness.
 

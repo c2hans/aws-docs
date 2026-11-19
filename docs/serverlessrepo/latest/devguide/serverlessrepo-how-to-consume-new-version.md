@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/serverles
 ---
 
 # Updating Applications
-<a name="serverlessrepo-how-to-consume-new-version"></a>
 
 After you've deployed an application from the AWS Serverless Application Repository, you might want to update it. For example, you might want to change an application setting, or you might want to update the application to the latest version that was published.
 

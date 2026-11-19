@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/availabili
 ---
 
 # Region availability
-<a name="availability"></a>
 
 Amazon Kinesis Video Streams is available in the following regions:
 

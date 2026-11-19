@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/gettingstartedguide/dat
 ---
 
 # Database authentication options for Amazon RDS
-<a name="database-auth"></a>
 
 Authentication determines how users and applications connect to your Amazon RDS database. This section provides an overview of the available authentication options in Amazon RDS and guidance for selecting the right method for your use case.
 

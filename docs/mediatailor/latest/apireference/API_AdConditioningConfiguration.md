@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_AdCo
 ---
 
 # AdConditioningConfiguration
-<a name="API_AdConditioningConfiguration"></a>
 
 The setting that indicates what conditioning MediaTailor will perform on ads that the ad decision server (ADS) returns.
 

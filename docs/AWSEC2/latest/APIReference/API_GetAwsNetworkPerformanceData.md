@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAwsNet
 ---
 
 # GetAwsNetworkPerformanceData
-<a name="API_GetAwsNetworkPerformanceData"></a>
 
 Gets network performance data.
 

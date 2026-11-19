@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Update DynamoDB data using PartiQL UPDATE statements with an AWS SDK
-<a name="example_dynamodb_PartiQLUpdate_section"></a>
 
 The following code example shows how to update data using PartiQL UPDATE statements.
 

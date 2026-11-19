@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/granting-table-
 ---
 
 # Granting table permissions using the named resource method
-<a name="granting-table-permissions"></a>
 
 You can use the Lake Formation console or AWS CLI to grant Lake Formation permissions on Data Catalog tables. You can grant permissions on individual tables, or with a single grant operation, you can grant permissions on all tables in a database.
 

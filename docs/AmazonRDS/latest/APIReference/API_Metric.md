@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Metric
 ---
 
 # Metric
-<a name="API_Metric"></a>
 
 The representation of a metric.
 

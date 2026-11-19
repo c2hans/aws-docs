@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DeleteTags.htm
 ---
 
 # DeleteTags
-<a name="API_DeleteTags"></a>
 
 Deletes the specified tags from the specified WorkSpaces resource.
 

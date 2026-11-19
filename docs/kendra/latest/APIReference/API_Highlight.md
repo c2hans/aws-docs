@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Highlight
 ---
 
 # Highlight
-<a name="API_Highlight"></a>
 
 Provides information that you can use to highlight a search result so that your users can quickly identify terms in the response.
 

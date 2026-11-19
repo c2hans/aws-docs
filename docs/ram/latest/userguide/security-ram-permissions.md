@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/security-ram-permis
 ---
 
 # Managing permissions in AWS RAM
-<a name="security-ram-permissions"></a>
 
 In AWS RAM, there are [two types of managed permissions](getting-started-terms-and-concepts.md#term-managed-permission-version), AWS managed permissions and customer managed permissions.
 

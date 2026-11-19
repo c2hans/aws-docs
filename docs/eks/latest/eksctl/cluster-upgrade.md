@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/cluster-upgrade.html
 ---
 
 # Cluster upgrades
-<a name="cluster-upgrade"></a>
 
 An *`eksctl`-managed* cluster can be upgraded in 3 easy steps:
 

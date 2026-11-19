@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/action-interaction
 ---
 
 # Action interactions dataset schema requirements (custom)
-<a name="action-interactions-dataset-requirements"></a>
 
 An *Action interactions dataset* stores historical and real-time data from interactions between users and actions in your *Actions dataset*. For information on the types of data Amazon Personalize can use, see [Action interaction data](action-interactions-datasets.md).
 

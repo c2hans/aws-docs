@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/efs-to-efs-backup/welco
 ---
 
 # Automatically create incremental backups of an Amazon EFS file system on a customer-defined schedule
-<a name="welcome"></a>
 
 This AWS Solution is no longer available.
 

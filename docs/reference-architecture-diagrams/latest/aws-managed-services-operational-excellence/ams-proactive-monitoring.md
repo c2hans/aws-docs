@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # AMS for Proactive Monitoring
-<a name="ams-proactive-monitoring"></a>
 
 Use this reference architecture to understand how AWS Managed Services (AMS) improves observability with metrics, alarms, and automated response. AMS takes ownership of AWS infrastructure and OS monitoring, alerting, and restoration.
 

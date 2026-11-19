@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SetPa
 ---
 
 # SetParameterValueConfiguration
-<a name="API_SetParameterValueConfiguration"></a>
 
 The configuration of adding parameters in action.
 

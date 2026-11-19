@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/recover-builder-
 ---
 
 # Recover your AWS Builder ID
-<a name="recover-builder-id"></a>
 
 If you can't sign in to your AWS Builder ID, you can use the following self-service options to recover access. The recovery option that you use depends on how you sign in and which verification methods you set up.
 

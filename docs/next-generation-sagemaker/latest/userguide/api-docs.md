@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/next-generation-sagemaker/latest/usergui
 ---
 
 # API Documentation for Amazon SageMaker
-<a name="api-docs"></a>
 
 You can use the following guides to work with Amazon SageMaker programmatically:
 

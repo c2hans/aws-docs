@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Logs and metrics supported by Amazon CloudWatch Application Insights
-<a name="appinsights-logs-and-metrics"></a>
 
 The following lists show the supported logs and metrics for Amazon CloudWatch Application Insights.
 

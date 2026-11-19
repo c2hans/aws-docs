@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/customer_managed_po
 ---
 
 # Console Full Access Policy - AWSElasticDisasterRecoveryConsoleFullAccess\_v2
-<a name="customer_managed_policies_drs_full_access_v2"></a>
 
 Allows full administrative access to AWS Elastic Disaster Recovery (AWS DRS) Console. Attach this policy to your users or roles.
 

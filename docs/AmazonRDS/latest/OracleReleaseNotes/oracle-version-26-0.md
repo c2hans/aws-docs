@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/orac
 ---
 
 # Amazon RDS for Oracle Database 26ai (26.0.0.0)
-<a name="oracle-version-26-0"></a>
 
 Amazon RDS for Oracle Database 26ai (26.0.0.0) releases new minor engine versions quarterly. A Release Update (RU) engine version incorporates bug fixes from Oracle by including the RU patches for the specified quarter. A Monthly Recommended Patch (MRP) includes Oracle's Critical Security Patch Updates (CSPU) and other fixes that Oracle recommends. Each Oracle Database 26ai engine version includes both an RU component and an MRP component.
 

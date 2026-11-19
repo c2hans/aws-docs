@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessContentBlockDelta
-<a name="API_HarnessContentBlockDelta"></a>
 
 A delta update to a content block.
 

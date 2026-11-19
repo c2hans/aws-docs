@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys-genera
 ---
 
 # Generate an Amazon Bedrock API key
-<a name="api-keys-generate"></a>
 
 You can generate an Amazon Bedrock API key using either the AWS Management Console or the AWS API. We recommend that you use the AWS Management Console to easily generate an Amazon Bedrock API key with few steps.
 

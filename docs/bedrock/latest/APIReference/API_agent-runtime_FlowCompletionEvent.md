@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowCompletionEvent
-<a name="API_agent-runtime_FlowCompletionEvent"></a>
 
 Contains information about why a flow completed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_B
 ---
 
 # BlacklistEntry
-<a name="API_BlacklistEntry"></a>
 
 An object that contains information about a blacklisting event that impacts one of the dedicated IP addresses that is associated with your account.
 

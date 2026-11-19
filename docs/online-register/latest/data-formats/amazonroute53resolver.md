@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Route 53 Resolver
-<a name="amazonroute53resolver"></a>
 
 Amazon Route 53 Resolver provides the following APIs for data retrieval.
 

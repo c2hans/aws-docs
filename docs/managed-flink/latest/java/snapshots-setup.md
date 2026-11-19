@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/snapshots-setu
 ---
 
 # Set up enhanced snapshots
-<a name="snapshots-setup"></a>
 
 This page describes how to create a new Amazon Managed Service for Apache Flink application in enhanced snapshot mode. It covers the prerequisites, the AWS Identity and Access Management (IAM) permissions, and the steps to create your first enhanced snapshot.
 

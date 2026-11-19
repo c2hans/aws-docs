@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setting-up.html
 ---
 
 # Preliminary steps for setting up to use MediaLive
-<a name="setting-up"></a>
 
 This topic describes preliminary steps, such as creating an account, that prepare you to use MediaLive. You aren't charged for these preliminary items. You are charged only for AWS services that you use.
 

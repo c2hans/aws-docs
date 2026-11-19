@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id-credentials-acce
 ---
 
 # Update access keys
-<a name="id-credentials-access-keys-update"></a>
 
 As a security [best practice](best-practices.md#update-access-keys), we recommend that you update IAM user access keys when needed, such as when an employee leaves your company. IAM users can update their own access keys if they have been granted the necessary permissions.
 

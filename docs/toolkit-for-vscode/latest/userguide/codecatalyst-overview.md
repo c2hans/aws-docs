@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/code
 ---
 
 # Working with Amazon CodeCatalyst resources in VS Code
-<a name="codecatalyst-overview"></a>
 
 The following sections provide an overview of the Amazon CodeCatalyst resource management features that are available from the Toolkit for VS Code.
 

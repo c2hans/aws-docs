@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html
 ---
 
 # Finding and changing the location of the shared `config` and `credentials` files of AWS SDKs and tools
-<a name="file-location"></a>
 
 The shared AWS `config` and `credentials` files are plaintext files that hold configuration information for the AWS SDKs and tools. The files reside locally in your environment and used automatically by SDK code or by AWS CLI commands that you run in that environment. For example, on your own computer or when developing on an Amazon Elastic Compute Cloud instance.
 

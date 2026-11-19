@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAccessPo
 ---
 
 # ListAccessPolicies
-<a name="API_ListAccessPolicies"></a>
 
 Lists the available access policies.
 

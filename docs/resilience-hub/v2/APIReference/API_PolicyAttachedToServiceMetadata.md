@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Polic
 ---
 
 # PolicyAttachedToServiceMetadata
-<a name="API_PolicyAttachedToServiceMetadata"></a>
 
 Contains details about the service that started using the policy, such as the account that owns the service.
 

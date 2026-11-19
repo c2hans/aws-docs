@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/testing-frame
 ---
 
 # Migrating a Java test suite to Device Farm
-<a name="testing-frameworks-java"></a>
 
 Follow the steps in this topic to migrate your Java test suite to using the desktop browser testing feature with `RemoteWebDriver`.
 

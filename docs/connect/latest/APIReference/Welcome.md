@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon Connect Service
 <a name="Welcome_Amazon_Connect_Service"></a>

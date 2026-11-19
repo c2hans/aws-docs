@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for geolocation alias records
-<a name="resource-record-sets-values-geo-alias"></a>
 
 When you create geolocation alias records, you specify the following values.
 

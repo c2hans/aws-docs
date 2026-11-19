@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RfcAttachment
-<a name="API_RfcAttachment"></a>
 
 The RFC attachment.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/build-
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Build interfaces with catalog data
-<a name="build-interfaces-with-catalog-data"></a>
 
 You can use the AWS Marketplace Discovery API to programmatically access the catalog and display product and pricing information on your own platforms. This section describes how to build custom interfaces such as storefronts, partner portals, and integrated sales experiences for your customers to navigate, using the Discovery API.
 

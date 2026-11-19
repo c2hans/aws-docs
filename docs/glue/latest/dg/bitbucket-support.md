@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bitbucket-support.html
 ---
 
 # AWS Glue support for Bitbucket
-<a name="bitbucket-support"></a>
 
 AWS Glue supports Bitbucket as follows:
 

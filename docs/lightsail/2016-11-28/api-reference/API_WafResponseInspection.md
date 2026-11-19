@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_W
 ---
 
 # WafResponseInspection
-<a name="API_WafResponseInspection"></a>
 
 Describes the HTTP status codes that your application returns to indicate successful and failed attempts. The Web Application Firewall (WAF) rule group uses these status codes to track successful and failed attempts.
 

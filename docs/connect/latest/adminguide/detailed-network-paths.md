@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/detailed-netwo
 ---
 
 # Detailed network paths for Connect Customer
-<a name="detailed-network-paths"></a>
 
 ## Voice calls
 <a name="detailed-network-paths-voice"></a>

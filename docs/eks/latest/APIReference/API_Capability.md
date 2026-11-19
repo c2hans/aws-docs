@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Capability.h
 ---
 
 # Capability
-<a name="API_Capability"></a>
 
 An object representing a managed capability in an Amazon EKS cluster. This includes all configuration, status, and health information for the capability.
 

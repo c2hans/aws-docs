@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-ref
 ---
 
 # Grant access to specific Amazon DynamoDB attributes
-<a name="grant-access-dynamodb-attributes"></a>
 
 **Note**
 We would love to hear from you. Please provide feedback on the AWS PRA by taking a [short survey](https://amazonmr.au1.qualtrics.com/jfe/form/SV_cMxJ0MG3jU91Fk2).

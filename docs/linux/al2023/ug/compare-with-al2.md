@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html
 ---
 
 # Comparing AL2 and AL2023
-<a name="compare-with-al2"></a>
 
 The following topics describe key differences between AL2 and AL2023.
 

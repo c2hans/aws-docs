@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_StepSta
 ---
 
 # StepState
-<a name="API_StepState"></a>
 
 Represents the state of a step in a plan execution.
 

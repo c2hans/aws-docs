@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoo
 ---
 
 # Prepare
-<a name="telcoops03"></a>
 
 |  TELCOOPS03: How do you effectively manage IP address allocation and assignment for telco and high-performance networking workloads?  |
 | --- |

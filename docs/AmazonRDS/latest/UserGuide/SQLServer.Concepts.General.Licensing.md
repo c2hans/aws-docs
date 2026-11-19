@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Con
 ---
 
 # Licensing Microsoft SQL Server on Amazon RDS
-<a name="SQLServer.Concepts.General.Licensing"></a>
 
 RDS for SQL Server supports two licensing models: License Included and Bring Your Own Media.
 

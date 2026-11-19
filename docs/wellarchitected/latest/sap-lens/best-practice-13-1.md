@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 13.1 – Evaluate or estimate performance requirements
-<a name="best-practice-13-1"></a>
 
 Future hardware requirements can be estimated by examining the capacity and usage patterns of existing SAP systems. SAP provides several tools for sizing hardware for new and existing systems. To further validate sizing estimates, proof of concept (POC) deployments and performance testing can be used.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Backup policy syntax and examples
-<a name="orgs_manage_policies_backup_syntax"></a>
 
 This page describes backup policy syntax and provides examples.
 

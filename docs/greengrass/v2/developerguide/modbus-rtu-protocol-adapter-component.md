@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/modbus-rtu-
 ---
 
 # Modbus-RTU protocol adapter
-<a name="modbus-rtu-protocol-adapter-component"></a>
 
 The Modbus-RTU protocol adapter component (`aws.greengrass.Modbus`) polls information from local Modbus RTU devices.
 

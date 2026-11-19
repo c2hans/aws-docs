@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_BatchGetD
 ---
 
 # BatchGetDocumentStatusResponseError
-<a name="API_BatchGetDocumentStatusResponseError"></a>
 
 Provides a response when the status of a document could not be retrieved.
 

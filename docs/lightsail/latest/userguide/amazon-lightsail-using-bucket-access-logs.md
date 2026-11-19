@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Analyze bucket access logs with Amazon Athena in Lightsail
-<a name="amazon-lightsail-using-bucket-access-logs"></a>
 
 In this guide, we show you how to identify requests to a bucket using access logs. For more information, see [Bucket access logs](amazon-lightsail-bucket-access-logs.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Prepare a Solr backup
-<a name="solr-prepare-backup"></a>
 
 Before you run the backfill workflow, choose how the Solr backup will be created:
 +  **Workflow-managed backup creation** - Migration Assistant calls the Solr backup API during the workflow. Use this when the Migration Console can reach the Solr endpoint and you want the workflow to create the point-in-time backup.

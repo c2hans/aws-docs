@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetLogAnomalyDetector
-<a name="API_GetLogAnomalyDetector"></a>
 
 Retrieves information about the log anomaly detector that you specify. The AWS KMS key ARN detected is valid.
 

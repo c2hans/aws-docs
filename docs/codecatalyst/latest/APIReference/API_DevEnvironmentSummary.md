@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Dev
 ---
 
 # DevEnvironmentSummary
-<a name="API_DevEnvironmentSummary"></a>
 
 Information about a Dev Environment.
 

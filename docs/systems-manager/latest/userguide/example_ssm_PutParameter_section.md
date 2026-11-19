@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `PutParameter` with an AWS SDK or CLI
-<a name="example_ssm_PutParameter_section"></a>
 
 The following code examples show how to use `PutParameter`.
 

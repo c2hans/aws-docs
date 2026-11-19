@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/query-n
 ---
 
 # Querying nested data
-<a name="query-nested-data"></a>
 
 AWS Clean Rooms offers SQL-compatible access to relational and nested data.
 

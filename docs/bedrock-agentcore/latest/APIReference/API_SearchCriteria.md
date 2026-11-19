@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SearchCriteria
-<a name="API_SearchCriteria"></a>
 
 Contains search criteria for retrieving memory records.
 

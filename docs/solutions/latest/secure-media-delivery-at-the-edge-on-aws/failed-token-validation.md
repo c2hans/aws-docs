@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Failed token validation
-<a name="failed-token-validation"></a>
 
  **Issue:** Legitimate viewer request is rejected by CloudFront and returns a 401 response due to failed token validation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # QualificationsAssociationPartner
-<a name="API_account_QualificationsAssociationPartner"></a>
 
 Identifies a partner in a qualifications association group. Contains the partner's profile identifier and AWS account identifier. In requests, provide at least one of `ProfileId` or `AccountId`. In responses, both fields are populated.
 

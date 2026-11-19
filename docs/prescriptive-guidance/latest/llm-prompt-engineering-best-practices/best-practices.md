@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # Best practices to avoid prompt injection attacks
-<a name="best-practices"></a>
 
 The following guardrails and best practices were tested on a RAG application that was powered by Anthropic Claude as a demonstrative model. The suggestions are highly applicable to the Claude family of models but are also transferrable to other non-Claude LLMs, pending model-specific modifications (such as removal of XML tags and using different dialogue attribution tags).
 

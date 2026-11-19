@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/se
 The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Setting Up the SDK for JavaScript
-<a name="setting-up"></a>
 
 The topics in this section explain how to install the SDK for JavaScript for use in web browsers and with Node.js. It also shows how to load the SDK so you can access the web services supported by the SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Phase 2: Target environment setup
-<a name="phase-2-target-environment-setup"></a>
 
 **Considering migration scope of 1 cluster \| 100\+ applications. The following table represents the environment setup effort.**
 

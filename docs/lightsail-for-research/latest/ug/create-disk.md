@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/create-
 ---
 
 # Create a storage disk in the Lightsail for Research console
-<a name="create-disk"></a>
 
 Complete the following steps to create a disk for your Lightsail for Research virtual computer.
 

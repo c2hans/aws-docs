@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-initialize-moni
 ---
 
 # Monitor the status of Amazon EBS volume initialization
-<a name="ebs-initialize-monitor"></a>
 
 When you create a volume, either from a snapshot or from another volume (volume copy), you can monitor the status of the volume initialization to determine whether the initialization process is complete. You can monitor volume initialization using the following options:
 

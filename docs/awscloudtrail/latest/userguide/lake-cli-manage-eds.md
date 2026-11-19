@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-cli-
 ---
 
 # Managing event data stores with the AWS CLI
-<a name="lake-cli-manage-eds"></a>
 
 This section describes several other commands that you can run to get information about your event data stores, start and stop ingestion on an event data store, and enable and disable [federation](query-federation.md) on an event data store.
 

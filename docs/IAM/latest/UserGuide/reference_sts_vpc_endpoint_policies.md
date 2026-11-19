@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sts_vpc_e
 ---
 
 # Control access to AWS STS with VPC endpoint policies
-<a name="reference_sts_vpc_endpoint_policies"></a>
 
 When you create an interface VPC endpoint for AWS Security Token Service (AWS STS), you can attach an endpoint policy. The policy controls which principals can use the endpoint and which AWS STS actions they can perform. If you don't attach a policy, the endpoint uses the default policy that allows unrestricted access to all AWS STS actions for all principals.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-accounts.html
 ---
 
 # Connecting to RISE from your AWS account
-<a name="rise-accounts"></a>
 
 You can connect to RISE from your AWS account in the following ways.
 

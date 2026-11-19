@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetDomainNameA
 ---
 
 # GetDomainNameAccessAssociations
-<a name="API_GetDomainNameAccessAssociations"></a>
 
 Represents a collection on DomainNameAccessAssociations resources.
 

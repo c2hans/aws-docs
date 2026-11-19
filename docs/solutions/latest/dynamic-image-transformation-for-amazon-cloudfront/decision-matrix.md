@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Decision matrix and when to choose each
-<a name="decision-matrix"></a>
 
 | Requirement | Lambda Architecture | ECS Architecture |
 | --- | --- | --- |

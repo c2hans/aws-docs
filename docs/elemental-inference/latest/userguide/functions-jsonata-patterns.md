@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Common patterns
-<a name="functions-jsonata-patterns"></a>
 
 ## Example – Fallback for a value that might be absent
 <a name="functions-jsonata-patterns-fallback"></a>

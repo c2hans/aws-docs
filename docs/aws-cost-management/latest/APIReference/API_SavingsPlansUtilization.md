@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansUtilization
-<a name="API_SavingsPlansUtilization"></a>
 
 The measurement of how well you're using your existing Savings Plans.
 

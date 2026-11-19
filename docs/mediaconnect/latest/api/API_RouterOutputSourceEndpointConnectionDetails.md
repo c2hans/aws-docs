@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterOutput
 ---
 
 # RouterOutputSourceEndpointConnectionDetails
-<a name="API_RouterOutputSourceEndpointConnectionDetails"></a>
 
 The connection details for a source endpoint that represents a router output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingHistoryUpdate
-<a name="API_FindingHistoryUpdate"></a>
 
  An array of objects that provides details about a change to a finding, including the AWS Security Finding Format (ASFF) field that changed, the value of the field before the change, and the value of the field after the change.
 

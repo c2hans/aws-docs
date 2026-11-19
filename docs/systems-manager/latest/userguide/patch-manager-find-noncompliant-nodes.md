@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Identifying noncompliant managed nodes
-<a name="patch-manager-find-noncompliant-nodes"></a>
 
 Out-of-compliance managed nodes are identified when either of two AWS Systems Manager documents (SSM documents) are run. These SSM documents reference the appropriate patch baseline for each managed node in Patch Manager, a tool in AWS Systems Manager. They then evaluate the patch state of the managed node and then make compliance results available to you.
 

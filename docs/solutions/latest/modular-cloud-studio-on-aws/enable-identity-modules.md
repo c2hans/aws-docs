@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 2: Enable Identity modules
-<a name="enable-identity-modules"></a>
 
 Follow these steps to enable the Identity module.
 

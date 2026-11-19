@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-semantic-search.h
 ---
 
 # Semantic search for AWS Glue Data Catalog
-<a name="catalog-semantic-search"></a>
 
 **Note**
 Business context and semantic search is in preview for AWS Glue and is subject to change.

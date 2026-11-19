@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/control-plane-confi
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Advanced Kubernetes control plane configuration
-<a name="control-plane-configuration"></a>
 
 ## Overview
 <a name="_overview"></a>

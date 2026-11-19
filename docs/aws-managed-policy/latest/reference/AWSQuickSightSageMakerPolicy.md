@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSightSageMakerPolicy
-<a name="AWSQuickSightSageMakerPolicy"></a>
 
 **Description**: Provides access to Amazon SageMaker resources from Amazon QuickSight
 

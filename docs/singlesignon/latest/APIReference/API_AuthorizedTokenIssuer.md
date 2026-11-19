@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Aut
 ---
 
 # AuthorizedTokenIssuer
-<a name="API_AuthorizedTokenIssuer"></a>
 
 A structure that describes a trusted token issuer and associates it with a set of authorized audiences.
 

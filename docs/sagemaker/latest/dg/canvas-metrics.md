@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-metrics.html
 ---
 
 # Metrics reference
-<a name="canvas-metrics"></a>
 
 The following sections describe the metrics that are available in Amazon SageMaker Canvas for each model type.
 

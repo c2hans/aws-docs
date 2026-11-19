@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/creatin
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/workspacesthinclient-end-of-support.html).
 
 # Creating Amazon WorkSpaces Thin Client resources with AWS CloudFormation
-<a name="creating-resources-with-cloudformation"></a>
 
 Amazon WorkSpaces Thin Client is integrated with AWS CloudFormation, a service that helps you model and set up your AWS resources. This way, you can spend less time creating and managing your resources and infrastructure. You create a template that describes all the AWS resources that you want (such as Environments), and CloudFormation provisions and configures those resources for you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FpgaDevic
 ---
 
 # FpgaDeviceMemoryInfo
-<a name="API_FpgaDeviceMemoryInfo"></a>
 
 Describes the memory for the FPGA accelerator for the instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/choosing-a-region.html
 ---
 
 # Creating EventBridge rules for AWS Region coverage
-<a name="choosing-a-region"></a>
 
 You can create an EventBridge rule for each Region that you want to receive AWS Health events for. For example, to receive events from the Europe (Frankfurt) Region, you can create a rule for this Region.
 

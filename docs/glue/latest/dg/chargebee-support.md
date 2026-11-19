@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/chargebee-support.html
 ---
 
 # AWS Glue support for Chargebee
-<a name="chargebee-support"></a>
 
 AWS Glue supports Chargebee as follows:
 

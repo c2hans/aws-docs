@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-securi
 ---
 
 # Security and access control
-<a name="feature-store-security"></a>
 
  Amazon SageMaker Feature Store enables you to create two types of stores: an online store or offline store. The online store is used for low latency real-time inference use cases whereas the offline store is used for training and batch inference use cases. When you create a feature group for online or offline use you can provide a AWS Key Management Service customer managed key to encrypt all your data at rest. In case you do not provide a AWS KMS key then we ensure that your data is encrypted on the server side using an AWS owned AWS KMS key or AWS managed AWS KMS key. While creating a feature group, you can select storage type and optionally provide a AWS KMS key for encrypting data, then you can call various APIs for data management such as `PutRecord`, `GetRecord`, `DeleteRecord`, `ListRecords`, and `BatchWriteRecord`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # Boolean, comparison, numeric, datetime, and other functions
-<a name="CWL_QuerySyntax-operations-functions"></a>
 
  CloudWatch Logs Insights supports many other operations and functions in queries, as explained in the following sections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Installing autovacuum monitoring and diagnostic tools in RDS for PostgreSQL
-<a name="Appendix.PostgreSQL.CommonDBATasks.Autovacuum_Monitoring.Installation"></a>
 
 The `postgres_get_av_diag()` function is currently available in the following RDS for PostgreSQL versions:
 + 17.2 and higher 17 versions

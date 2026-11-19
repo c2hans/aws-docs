@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/managing-session-t
 ---
 
 # Setting session time zone
-<a name="managing-session-time-zone"></a>
 
 DCV allows session owners and users to set the time zone of their session to reflect either the location of the DCV Server or their current location.
 

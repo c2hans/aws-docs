@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting AWS DataSync issues
-<a name="troubleshooting-datasync"></a>
 
 Use the following information to troubleshoot AWS DataSync issues and errors.
 

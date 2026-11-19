@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachGroupP
 ---
 
 # AttachGroupPolicy
-<a name="API_AttachGroupPolicy"></a>
 
 Attaches the specified managed policy to the specified IAM group.
 

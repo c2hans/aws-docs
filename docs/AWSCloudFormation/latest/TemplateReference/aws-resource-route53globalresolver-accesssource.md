@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53GlobalResolver::AccessSource
-<a name="aws-resource-route53globalresolver-accesssource"></a>
 
 Creates an access source for a DNS view. An access source defines which traffic is allowed to send DNS queries to the Route 53 Global Resolver, along with the permitted DNS protocols. You can define the allowed source in one of two ways: specify an IP address or CIDR range with `cidr` to allow queries by source IP, or specify an AWS Cloud WAN segment with `segment` (together with the associated core network endpoint) to allow queries from that segment instead of a CIDR range.
 
@@ -26,10 +25,12 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[Cidr](#cfn-route53globalresolver-accesssource-cidr)" : {{String}},
       "[ClientToken](#cfn-route53globalresolver-accesssource-clienttoken)" : {{String}},
+      "[CoreNetworkEndpointId](#cfn-route53globalresolver-accesssource-corenetworkendpointid)" : {{String}},
       "[DnsViewId](#cfn-route53globalresolver-accesssource-dnsviewid)" : {{String}},
       "[IpAddressType](#cfn-route53globalresolver-accesssource-ipaddresstype)" : {{String}},
       "[Name](#cfn-route53globalresolver-accesssource-name)" : {{String}},
       "[Protocol](#cfn-route53globalresolver-accesssource-protocol)" : {{String}},
+      "[Segment](#cfn-route53globalresolver-accesssource-segment)" : {{String}},
       "[Tags](#cfn-route53globalresolver-accesssource-tags)" : {{[ Tag, ... ]}}
     }
 }
@@ -43,10 +44,12 @@ Type: AWS::Route53GlobalResolver::AccessSource
 Properties:
   [Cidr](#cfn-route53globalresolver-accesssource-cidr): {{String}}
   [ClientToken](#cfn-route53globalresolver-accesssource-clienttoken): {{String}}
+  [CoreNetworkEndpointId](#cfn-route53globalresolver-accesssource-corenetworkendpointid): {{String}}
   [DnsViewId](#cfn-route53globalresolver-accesssource-dnsviewid): {{String}}
   [IpAddressType](#cfn-route53globalresolver-accesssource-ipaddresstype): {{String}}
   [Name](#cfn-route53globalresolver-accesssource-name): {{String}}
   [Protocol](#cfn-route53globalresolver-accesssource-protocol): {{String}}
+  [Segment](#cfn-route53globalresolver-accesssource-segment): {{String}}
   [Tags](#cfn-route53globalresolver-accesssource-tags): {{
     - Tag}}
 ```
@@ -56,7 +59,7 @@ Properties:
 
 `Cidr`  <a name="cfn-route53globalresolver-accesssource-cidr"></a>
 The CIDR block that defines the IP address range for the access source.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `42`
@@ -68,6 +71,15 @@ A unique string that identifies the request and ensures idempotency.
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`CoreNetworkEndpointId`  <a name="cfn-route53globalresolver-accesssource-corenetworkendpointid"></a>
+The ID of the core network endpoint to associate with this access source.
+*Required*: No
+*Type*: String
+*Pattern*: `^[-.a-zA-Z0-9]+$`
+*Minimum*: `1`
+*Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DnsViewId`  <a name="cfn-route53globalresolver-accesssource-dnsviewid"></a>
@@ -100,6 +112,14 @@ The protocol used by the access source.
 *Type*: String
 *Allowed values*: `DO53 | DOH | DOT`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Segment`  <a name="cfn-route53globalresolver-accesssource-segment"></a>
+The name of the AWS Cloud WAN segment that is allowed to send DNS queries to the Route 53 Global Resolver. Specify `segment` instead of a `cidr` range to allow queries from traffic in that Cloud WAN segment through the associated core network endpoint (`coreNetworkEndpointId`). When you specify a segment, you don't provide a CIDR range.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-route53globalresolver-accesssource-tags"></a>
 Tags to associate with the access source.

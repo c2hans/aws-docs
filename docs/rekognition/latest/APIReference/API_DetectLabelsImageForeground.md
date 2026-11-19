@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectLabelsImageForeground
-<a name="API_DetectLabelsImageForeground"></a>
 
 The foreground of the image with regard to image quality and dominant colors.
 

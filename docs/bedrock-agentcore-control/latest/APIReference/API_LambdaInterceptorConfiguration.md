@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LambdaInterceptorConfiguration
-<a name="API_LambdaInterceptorConfiguration"></a>
 
 The lambda configuration for the interceptor
 

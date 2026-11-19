@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ResumeReplic
 ---
 
 # ResumeReplication
-<a name="API_ResumeReplication"></a>
 
 Resume Replication.
 

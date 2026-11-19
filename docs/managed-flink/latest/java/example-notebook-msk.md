@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/example-notebo
 ---
 
 # Create a Studio notebook with Amazon MSK
-<a name="example-notebook-msk"></a>
 
 This tutorial describes how to create a Studio notebook that uses an Amazon MSK cluster as a source.
 

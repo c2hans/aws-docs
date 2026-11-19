@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Durability.C
 ---
 
 # Changing durability on an existing cluster
-<a name="Durability.ChangingDurability"></a>
 
 You can switch an existing ElastiCache for Valkey cluster between the `sync`, `async`, and `disabled` durability modes without recreating it. ElastiCache applies the change to the live cluster while it continues to serve traffic. For information about tracking the change, see [Monitor the durability change](#Durability.ChangingDurability.Monitor).
 

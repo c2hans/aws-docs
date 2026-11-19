@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Modernizing manufacturing execution systems (MES) in the AWS Cloud
-<a name="introduction"></a>
 
 *Ravi Soni, Steve Blackwell, Nishant Saini, and Pratik Yeole, Amazon Web Services*
 

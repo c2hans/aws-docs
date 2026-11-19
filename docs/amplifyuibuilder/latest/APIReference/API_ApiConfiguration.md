@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ApiConfiguration
-<a name="API_ApiConfiguration"></a>
 
 Describes the API configuration for a code generation job.
 

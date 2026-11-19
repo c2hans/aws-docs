@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/welcome.
 ---
 
 # What is the AWS SDK for Ruby?
-<a name="welcome"></a>
 
 Welcome to the AWS SDK for Ruby Developer Guide. The AWS SDK for Ruby provides support libraries for almost all AWS services, including Amazon Simple Storage Service (Amazon S3), Amazon Elastic Compute Cloud (Amazon EC2), and Amazon DynamoDB.
 

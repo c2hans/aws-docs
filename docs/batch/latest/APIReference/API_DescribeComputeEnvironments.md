@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeCo
 ---
 
 # DescribeComputeEnvironments
-<a name="API_DescribeComputeEnvironments"></a>
 
 Describes one or more of your compute environments.
 

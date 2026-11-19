@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Converting ETL processes to AWS Glue in AWS Schema Conversion Tool
-<a name="CHAP-converting-aws-glue-api-process"></a>
 
 In the following sections, you can find a description of a conversion that calls AWS Glue API operations in Python. For more information, see [Program AWS Glue ETL scripts in Python](https://docs.aws.amazon.com//glue/latest/dg/aws-glue-programming-python.html) in the* AWS Glue Developer Guide.*
 

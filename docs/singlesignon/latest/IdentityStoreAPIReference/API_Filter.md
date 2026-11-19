@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A query filter used by `ListUsers` and `ListGroups`. This filter object provides the attribute name and attribute value to search users or groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribeTranscriptEvent
-<a name="API_MedicalScribeTranscriptEvent"></a>
 
 An event containing transcript data from the Medical Scribe stream
 

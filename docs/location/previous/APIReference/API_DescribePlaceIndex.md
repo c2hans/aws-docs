@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Descr
 ---
 
 # DescribePlaceIndex
-<a name="API_DescribePlaceIndex"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend you upgrade to the Places API V2 unless you require Grab data.

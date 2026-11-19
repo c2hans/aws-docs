@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Enforcing a DN match with an SSL connection
-<a name="Appendix.Oracle.Options.SSL.DNMatch"></a>
 
 You can use the Oracle parameter `SSL_SERVER_DN_MATCH` to enforce that the distinguished name (DN) for the database server matches its service name. If you enforce the match verifications, then SSL ensures that the certificate is from the server. If you don't enforce the match verification, then SSL performs the check but allows the connection, regardless if there is a match. If you do not enforce the match, you allow the server to potentially fake its identity.
 

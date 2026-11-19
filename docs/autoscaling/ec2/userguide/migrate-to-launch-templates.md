@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/migrate-to-lau
 ---
 
 # Migrate your Auto Scaling groups to launch templates
-<a name="migrate-to-launch-templates"></a>
 
 As of **January 1, 2023**, new instance types are no longer supported in launch configurations. This applies to any instance types added to an AWS Region after the initial Region launch. In addition, you might be able to create a launch configuration with an instance type that is no longer supported in a Region. For more information, see [Auto Scaling launch configurations](launch-configurations.md).
 

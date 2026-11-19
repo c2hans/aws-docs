@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # VerificationDetails
-<a name="API_taxSettings_VerificationDetails"></a>
 
 Required information to verify your TRN.
 

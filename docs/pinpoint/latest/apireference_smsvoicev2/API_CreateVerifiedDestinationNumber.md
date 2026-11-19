@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # CreateVerifiedDestinationNumber
-<a name="API_CreateVerifiedDestinationNumber"></a>
 
 You can only send messages to verified destination numbers when your account is in the sandbox. You can add up to 10 verified destination numbers.
 

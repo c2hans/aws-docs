@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Signal
 ---
 
 # SignalGroup
-<a name="API_SignalGroup"></a>
 
 Contains information about a group of runtime signals that have the same finding type.
 

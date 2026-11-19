@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerRuleSet AddHeaderAction
-<a name="aws-properties-ses-mailmanagerruleset-addheaderaction"></a>
 
 The action to add a header to a message. When executed, this action will add the given header to the message.
 

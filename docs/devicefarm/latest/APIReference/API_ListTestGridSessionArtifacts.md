@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListT
 ---
 
 # ListTestGridSessionArtifacts
-<a name="API_ListTestGridSessionArtifacts"></a>
 
 Retrieves a list of artifacts created during the session.
 

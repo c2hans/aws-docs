@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CloudConnectorConfiguration
-<a name="API_CloudConnectorConfiguration"></a>
 
 The configuration that provides access details and targets for connecting to a third-party cloud environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootEC2ConnectivityToRedshift`
-<a name="automation-awssupport-troubleshootec2connectivitytoredshift"></a>
 
 **Description**
 

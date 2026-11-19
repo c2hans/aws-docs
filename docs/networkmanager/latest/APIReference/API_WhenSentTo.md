@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_W
 ---
 
 # WhenSentTo
-<a name="API_WhenSentTo"></a>
 
 Displays a list of the destination segments. Used only when the service insertion action is `send-to`.
 

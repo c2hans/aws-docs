@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # View and interpret results
-<a name="advanced-prompt-optimization-results"></a>
 
 ## Output location
 <a name="advanced-prompt-optimization-results-location"></a>

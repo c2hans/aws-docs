@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_CertificateVali
 ---
 
 # CertificateValidationRecord
-<a name="API_CertificateValidationRecord"></a>
 
 Describes a certificate CNAME record to add to your DNS. For more information, see [AssociateCustomDomain](https://docs.aws.amazon.com/apprunner/latest/api/API_AssociateCustomDomain.html).
 

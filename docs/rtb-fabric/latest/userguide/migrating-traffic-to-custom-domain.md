@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/migrating-tr
 ---
 
 # Migrating traffic to inbound external links with custom domains
-<a name="migrating-traffic-to-custom-domain"></a>
 
 This section describes how to migrate existing bid-request traffic from your current endpoint infrastructure to RTB Fabric inbound external links with custom domains. The migration uses DNS-based traffic routing, requires zero application changes on either the demand-side or supply-side, and supports incremental cutover with instant rollback.
 

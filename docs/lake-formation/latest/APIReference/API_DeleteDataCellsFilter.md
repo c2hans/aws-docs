@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DeleteDataCellsFilter
-<a name="API_DeleteDataCellsFilter"></a>
 
 Deletes a data cell filter.
 

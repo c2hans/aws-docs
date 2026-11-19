@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_CapabilityO
 ---
 
 # CapabilityOptions
-<a name="API_CapabilityOptions"></a>
 
 Contains the details for an Outbound EDI capability.
 

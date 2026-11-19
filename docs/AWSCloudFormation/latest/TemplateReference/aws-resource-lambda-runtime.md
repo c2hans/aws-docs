@@ -5,9 +5,10 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::Runtime
-<a name="aws-resource-lambda-runtime"></a>
 
-Sets the runtime management configuration for a function's version. For more information, see [Runtime updates](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html).
+The `AWS::Lambda::Runtime` resource creates a customer-managed runtime. A customer-managed runtime provides a centrally managed execution environment for your Lambda functions. It is the parent of runtime versions and runtime aliases. To publish a container image as a runtime version, use the `AWS::Lambda::RuntimeVersion` resource. To give functions a named pointer to a version, use the `AWS::Lambda::RuntimeAlias` resource.
+
+When you delete this resource, Lambda schedules it for deletion after a 30-day recovery window, and CloudFormation treats it as deleted. Until the window ends, the name stays reserved: you can't create a runtime with the same name, so use a new name if you re-create it.
 
 ## Syntax
 <a name="aws-resource-lambda-runtime-syntax"></a>
@@ -49,7 +50,7 @@ Properties:
 <a name="aws-resource-lambda-runtime-properties"></a>
 
 `Description`  <a name="cfn-lambda-runtime-description"></a>
-Property description not available.
+A description of the runtime. If you remove this property from the template, the description is cleared.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -57,7 +58,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LicenseInfo`  <a name="cfn-lambda-runtime-licenseinfo"></a>
-Property description not available.
+The license information for the runtime. If you remove this property from the template, the license information is cleared.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -65,7 +66,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-lambda-runtime-name"></a>
-Property description not available.
+The name of the runtime to create.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-z0-9]([a-z0-9_.-]{0,126})?[a-z0-9]$`
@@ -74,13 +75,14 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ReleaseLifecycle`  <a name="cfn-lambda-runtime-releaselifecycle"></a>
-Property description not available.
+The runtime lifecycle for the runtime (optional). Use this to schedule runtime deprecation.
 *Required*: No
 *Type*: [ReleaseLifecycle](aws-properties-lambda-runtime-releaselifecycle.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-lambda-runtime-tags"></a>
-Property description not available.
+A list of [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html) to apply to the runtime.
+You must have the `lambda:TagResource`, `lambda:UntagResource`, and `lambda:ListTags` permissions for your [IAM principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html) to manage the CloudFormation stack. If you don't have these permissions, there might be unexpected behavior with stack-level tags propagating to the resource during resource creation and update.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-lambda-runtime-tag.md)
 *Maximum*: `50`
@@ -92,20 +94,78 @@ Property description not available.
 ### Ref
 <a name="aws-resource-lambda-runtime-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the runtime.
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-lambda-runtime-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-lambda-runtime-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the runtime.
 
 `Created`  <a name="Created-fn::getatt"></a>
-Property description not available.
+The date and time when the runtime was created.
 
 `LastModified`  <a name="LastModified-fn::getatt"></a>
-Property description not available.
+The date and time when the runtime was last modified.
 
 `State`  <a name="State-fn::getatt"></a>
-Property description not available.
+The current state of the runtime.
+
+## Examples
+<a name="aws-resource-lambda-runtime--examples"></a>
+
+### Customer-managed runtime
+<a name="aws-resource-lambda-runtime--examples--Customer-managed_runtime"></a>
+
+Create a runtime named `my-runtime` that is generally available and scheduled for deprecation.
+
+#### JSON
+<a name="aws-resource-lambda-runtime--examples--Customer-managed_runtime--json"></a>
+
+```
+"MyRuntime": {
+    "Type": "AWS::Lambda::Runtime",
+    "Properties": {
+        "Name": "my-runtime",
+        "Description": "Runtime for my functions",
+        "LicenseInfo": "MIT",
+        "ReleaseLifecycle": {
+            "ReleaseState": "GA",
+            "DeprecationDate": "2027-12-31"
+        },
+        "Tags": [
+            {
+                "Key": "Environment",
+                "Value": "Production"
+            }
+        ]
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-lambda-runtime--examples--Customer-managed_runtime--yaml"></a>
+
+```
+MyRuntime:
+  Type: AWS::Lambda::Runtime
+  Properties:
+    Name: my-runtime
+    Description: Runtime for my functions
+    LicenseInfo: MIT
+    ReleaseLifecycle:
+      ReleaseState: GA
+      DeprecationDate: "2027-12-31"
+    Tags:
+      - Key: Environment
+        Value: Production
+```

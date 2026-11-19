@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gs-data-lake-formats.html
 ---
 
 # Using Data Lake frameworks with AWS Glue Studio
-<a name="gs-data-lake-formats"></a>
 
 ## Overview
 <a name="gs-data-lake-formats-overview"></a>

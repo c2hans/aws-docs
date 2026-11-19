@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/JSON_SERIALIZE.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # JSON\_SERIALIZE function
-<a name="JSON_SERIALIZE"></a>
 
 The JSON\_SERIALIZE function serializes a `SUPER` expression into textual JSON representation to follow RFC 8259. For more information on that RFC, see [The JavaScript Object Notation (JSON) Data Interchange Format](https://tools.ietf.org/html/rfc8259).
 

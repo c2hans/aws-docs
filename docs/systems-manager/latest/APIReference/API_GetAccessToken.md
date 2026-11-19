@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetAccessToken
-<a name="API_GetAccessToken"></a>
 
 Returns a credentials set to be used with just-in-time node access.
 

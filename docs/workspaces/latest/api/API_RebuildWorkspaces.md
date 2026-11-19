@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RebuildWorkspa
 ---
 
 # RebuildWorkspaces
-<a name="API_RebuildWorkspaces"></a>
 
 Rebuilds the specified WorkSpace.
 

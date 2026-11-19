@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Creating Amazon Verified Permissions policy templates
-<a name="policy-templates-create"></a>
 
 You can create policy templates in Verified Permissions using the AWS Management Console, the AWS CLI, or the AWS SDKs. Policy templates allow a policy to be defined once and then used with multiple principals and resources. Once you create a policy template you can then create template-linked policies to use the policy templates with specific principals and resources. For more information, see [Creating Amazon Verified Permissions template-linked policies](policy-templates-create-policy.md).
 

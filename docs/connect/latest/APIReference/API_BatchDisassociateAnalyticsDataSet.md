@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchDis
 ---
 
 # BatchDisassociateAnalyticsDataSet
-<a name="API_BatchDisassociateAnalyticsDataSet"></a>
 
 Removes a list of analytics datasets associated with a given Connect Customer instance. You can disassociate multiple datasets in a single call.
 

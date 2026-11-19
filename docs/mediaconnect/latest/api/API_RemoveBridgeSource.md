@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RemoveBridge
 ---
 
 # RemoveBridgeSource
-<a name="API_RemoveBridgeSource"></a>
 
  Removes a source from a bridge.
 

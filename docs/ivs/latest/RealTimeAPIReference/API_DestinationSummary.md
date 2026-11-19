@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Dest
 ---
 
 # DestinationSummary
-<a name="API_DestinationSummary"></a>
 
 Summary information about a Destination.
 

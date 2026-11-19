@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSource
-<a name="API_RuleGroupSource"></a>
 
 The rules and actions for the rule group.
 

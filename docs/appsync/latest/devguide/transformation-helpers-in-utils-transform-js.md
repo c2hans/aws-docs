@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/transformation-h
 ---
 
 # Transformation helpers in util.transform
-<a name="transformation-helpers-in-utils-transform-js"></a>
 
 `util.transform` contains helper methods that make it easier to perform complex operations against data sources.
 

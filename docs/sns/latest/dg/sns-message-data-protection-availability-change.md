@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-message-data-protectio
 ---
 
 # Amazon SNS message data protection availability change
-<a name="sns-message-data-protection-availability-change"></a>
 
 **Important**
 Amazon SNS message data protection is no longer available to new customers. For more information and guidance on alternatives, see [Amazon SNS message data protection availability change](https://docs.aws.amazon.com/sns/latest/dg/sns-message-data-protection-availability-change.html).

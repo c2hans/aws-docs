@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UserData.
 ---
 
 # UserData
-<a name="API_UserData"></a>
 
 Describes the user data for an instance.
 

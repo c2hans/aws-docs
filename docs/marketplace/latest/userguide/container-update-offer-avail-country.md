@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-u
 ---
 
 # Updating container product availability by country in AWS Marketplace
-<a name="container-update-offer-avail-country"></a>
 
 As an AWS Marketplace seller, you can change the countries in which your container product can be offered and subscribed to. For more information, see [Countries](regions-and-countries.md#product-countries). The following procedure shows you how to update your container product availability by country.
 

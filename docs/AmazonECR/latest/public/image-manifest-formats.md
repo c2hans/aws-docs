@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/image-manifest-f
 ---
 
 # Container image manifest formats in Amazon ECR public
-<a name="image-manifest-formats"></a>
 
 Amazon ECR Public supports the following container image manifest formats:
 + Docker Image Manifest V2 Schema 1 (used with Docker version 1.9 and older)

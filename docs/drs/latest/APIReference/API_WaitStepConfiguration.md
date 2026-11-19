@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_WaitStepConf
 ---
 
 # WaitStepConfiguration
-<a name="API_WaitStepConfiguration"></a>
 
 Configuration for a `WAIT` type step.
 

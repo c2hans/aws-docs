@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/get-started-console
 ---
 
 # Analysis using the Amazon Comprehend console
-<a name="get-started-console"></a>
 
 You can use the Amazon Comprehend console to analyze documents in real-time or to run asynchronous analysis jobs.
 

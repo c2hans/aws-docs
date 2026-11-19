@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/appendix
 ---
 
 # Appendix: Best practices by pillar
-<a name="appendix"></a>
 
 ## Operational excellence
 <a name="operational-excellence"></a>

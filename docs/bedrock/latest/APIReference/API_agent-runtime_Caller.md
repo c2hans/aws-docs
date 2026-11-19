@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # Caller
-<a name="API_agent-runtime_Caller"></a>
 
 Details about a caller.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/Update-crawler-schedule.h
 ---
 
 # Create a schedule for an existing crawler
-<a name="Update-crawler-schedule"></a>
 
 Follow these steps to set up a recurring schedule for an existing crawler.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Insta
 ---
 
 # Collect metrics, logs, and traces using the CloudWatch agent
-<a name="Install-CloudWatch-Agent"></a>
 
 The CloudWatch agent is a software component that collects metrics, logs, and traces from your Amazon EC2 instances, on-premises servers, and containerized applications. It enables you to monitor your infrastructure and applications more comprehensively than the basic monitoring provided by default.
 

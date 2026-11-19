@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_User
 ---
 
 # UserMatch
-<a name="API_UserMatch"></a>
 
 Provides UserID metadata along with the confidence in the match of this UserID with the input face.
 

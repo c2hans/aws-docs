@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Build and test a serverless application
-<a name="example_tributary-lite_serverless-application_section"></a>
 
 The following code examples show how to build and test a serverless application using API Gateway with Lambda and DynamoDB
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/kinesis-fireho
 ---
 
 # Firehose
-<a name="kinesis-firehose-rule-action"></a>
 
 The Firehose(`firehose`) action sends data from an MQTT message to an Amazon Data Firehose stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationScope
-<a name="API_InvestigationScope"></a>
 
 Contains information about what an investigation analyzed. Only the identifier that matches `InvestigationType` is set.
 

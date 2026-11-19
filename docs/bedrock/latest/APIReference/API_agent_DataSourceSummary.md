@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Da
 ---
 
 # DataSourceSummary
-<a name="API_agent_DataSourceSummary"></a>
 
 Contains details about a data source.
 

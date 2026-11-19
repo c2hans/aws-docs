@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Merge
 ---
 
 # MergeBranchesByThreeWay
-<a name="API_MergeBranchesByThreeWay"></a>
 
 Merges two specified branches using the three-way merge strategy.
 

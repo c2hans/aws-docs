@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputLamb
 ---
 
 # InputLambdaProcessorDescription
-<a name="API_InputLambdaProcessorDescription"></a>
 
 For a SQL-based Kinesis Data Analytics application, an object that contains the Amazon Resource Name (ARN) of the Amazon Lambda function that is used to preprocess records in the stream.
 

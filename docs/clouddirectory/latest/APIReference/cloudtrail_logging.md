@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/cloud
 Amazon Cloud Directory is no longer open to new customers, and will reach end of support on July 24, 2027. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
 
 # Logging Cloud Directory API Calls with CloudTrail
-<a name="cloudtrail_logging"></a>
 
 Amazon Cloud Directory is integrated with AWS CloudTrail, a service that captures all of the Cloud Directory API calls and delivers the log files to an Amazon S3 bucket that you specify. CloudTrail captures API calls from the Cloud Directory section of the Directory Service console or from your code to the Cloud Directory APIs. Using the information collected by CloudTrail, you can determine the request that was made to Cloud Directory, the source IP address from which the request was made, who made the request, when it was made, and so on. To learn more about CloudTrail, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
 

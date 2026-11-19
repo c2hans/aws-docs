@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateM
 ---
 
 # UpdateMesh
-<a name="API_UpdateMesh"></a>
 
 Updates an existing service mesh.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ApplyArchiveRule
-<a name="API_ApplyArchiveRule"></a>
 
 Retroactively applies the archive rule to existing findings that meet the archive rule criteria.
 

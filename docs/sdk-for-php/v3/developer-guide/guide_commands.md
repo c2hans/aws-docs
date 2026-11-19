@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_com
 ---
 
 # Command objects in the AWS SDK for PHP Version 3
-<a name="guide_commands"></a>
 
 The AWS SDK for PHP uses the [command pattern](http://en.wikipedia.org/wiki/Command_pattern) to encapsulate the parameters and handler that will be used to transfer an HTTP request at a later point in time.
 

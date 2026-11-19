@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Di
 ---
 
 # DisableProfile
-<a name="API_DisableProfile"></a>
 
 Disables a profile. When disabled, temporary credential requests with this profile fail.
 

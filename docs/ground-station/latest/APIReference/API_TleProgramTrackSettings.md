@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_T
 ---
 
 # TleProgramTrackSettings
-<a name="API_TleProgramTrackSettings"></a>
 
 Program track settings for [TLEEphemeris](API_TLEEphemeris.md).
 

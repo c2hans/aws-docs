@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/gres-custom-setting
 ---
 
 # Configuring custom GRES settings in AWS PCS
-<a name="gres-custom-settings"></a>
 
 Slurm uses `gres.conf` to manage Generic Resources (GRES), such as GPUs, Multi-Process Service (MPS), and Multi-Instance GPU (MIG) devices, on compute nodes. AWS PCS lets you customize `gres.conf` through the `gresCustomSettings` property of `slurmConfiguration` during compute node group creation or update.
 

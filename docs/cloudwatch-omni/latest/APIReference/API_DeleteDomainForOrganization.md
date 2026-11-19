@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DeleteDomainForOrganization
-<a name="API_DeleteDomainForOrganization"></a>
 
 Removes an organization domain and all of its resources. Call this operation in the Region where the domain was created.
 

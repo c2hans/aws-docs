@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/builder-guide/att
 ---
 
 # Attach solutions to AWS Partner Customer Engagement (ACE) opportunities
-<a name="attaching-solutions-to-ace-opportunities"></a>
 
 When submitting opportunities through ACE, it strengthens the co-sell journey by granting AWS Sellers insight into where you're engaging with mutual customers through pipeline visibility.
 

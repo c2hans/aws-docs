@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/quickbooks-configuring-co
 ---
 
 # Configuring QuickBooks connections
-<a name="quickbooks-configuring-connections"></a>
 
 QuickBooks supports the AUTHORIZATION\_CODE grant type for OAuth2. The grant type determines how AWS Glue communicates with QuickBooks to request access to your data.
 + This grant type is considered "three-legged" OAuth as it relies on redirecting users to a third-party authorization server to authenticate the user. It is used when creating connections via the AWS Glue console.

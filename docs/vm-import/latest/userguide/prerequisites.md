@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/prerequisites
 ---
 
 # Requirements for resources that you import with VM Import/Export
-<a name="prerequisites"></a>
 
 Before you begin, you must be aware of the operating systems and image formats that VM Import/Export supports, and understand the limitations on importing instances and volumes.
 

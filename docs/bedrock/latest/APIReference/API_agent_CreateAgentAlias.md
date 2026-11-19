@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cr
 ---
 
 # CreateAgentAlias
-<a name="API_agent_CreateAgentAlias"></a>
 
 Creates an alias of an agent that can be used to deploy the agent.
 

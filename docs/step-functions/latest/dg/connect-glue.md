@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-glue.ht
 ---
 
 # Start an AWS Glue job with Step Functions
-<a name="connect-glue"></a>
 
 Learn to use Step Functions to start a job run on AWS Glue. This page lists the supported API actions and provides an example `Task` state to start a AWS Glue job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/capacity-blocks-nvi
 ---
 
 # Configure UltraServer instances
-<a name="capacity-blocks-nvidia-imex"></a>
 
 NVIDIA UltraServer instances connect multiple GPUs across instances using NVLink. GPU-to-GPU communication over NVLink requires the [NVIDIA IMEX](https://docs.nvidia.com/multi-node-nvlink-systems/imex-guide/index.html) service to be configured with the IP addresses of all compute nodes in the job. This page shows you how to create a Slurm prolog script that automatically configures IMEX for each job, and how to deploy it in your AWS PCS cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_PhaseC
 ---
 
 # PhaseContext
-<a name="API_PhaseContext"></a>
 
 Additional information about a build phase that has an error. You can use this information for troubleshooting.
 

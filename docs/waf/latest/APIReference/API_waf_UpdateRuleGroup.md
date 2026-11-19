@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_UpdateRu
 ---
 
 # UpdateRuleGroup
-<a name="API_waf_UpdateRuleGroup"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -20,7 +19,7 @@ To create and configure a `RuleGroup`, perform the following steps:
 
 1. Create and update the `Rules` that you want to include in the `RuleGroup`. See [CreateRule](API_waf_CreateRule.md).
 
-1. Use `GetChangeToken` to get the change token that you provide in the `ChangeToken` parameter of an [UpdateRuleGroup](#API_waf_UpdateRuleGroup) request.
+1. Use `GetChangeToken` to get the change token that you provide in the `ChangeToken` parameter of an [UpdateRuleGroup](API_waf_UpdateRuleGroup.md) request.
 
 1. Submit an `UpdateRuleGroup` request to add `Rules` to the `RuleGroup`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Sample application
-<a name="sample-app"></a>
 
 This section provides guidance for teams that are evaluating a migration from their relational database management system (RDBMS) to a NoSQL database, and focuses on Amazon DynamoDB as the target NoSQL database. It addresses the following two challenges, based on a case study of an application that migrated from Microsoft SQL Server to DynamoDB:
 + Mapping relational data from multiple tables in the RDBMS to a document structure and key-value collection in DynamoDB

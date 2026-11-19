@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Spending and cost
-<a name="nx-rcs-scale-spending"></a>
 
 This topic explains how RCS messages are priced, how to monitor the amount of money that you spend sending them, and how to set a monthly spending limit. If you only want to view your monthly charges, use the AWS Billing and Cost Management console, which provides an estimate of your bill for the current month and your final charges for previous months.
 

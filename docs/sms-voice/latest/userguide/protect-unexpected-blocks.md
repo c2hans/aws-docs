@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/protect-unexp
 ---
 
 # Managing unexpected blocks in SMS Protect
-<a name="protect-unexpected-blocks"></a>
 
 Filter mode might occasionally block a legitimate message that was flagged as potential AIT. This page describes how to manage legitimate traffic that is being blocked, and how to reduce unexpected blocks at the source.
 

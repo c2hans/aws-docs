@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Envir
 ---
 
 # EnvironmentVariable
-<a name="API_EnvironmentVariable"></a>
 
 Information about an environment variable for a project or a run.
 

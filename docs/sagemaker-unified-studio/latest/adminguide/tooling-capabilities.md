@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Tooling capabilities
-<a name="tooling-capabilities"></a>
 
 A service-managed Tooling environment already provisions a broad set of capabilities. With a custom Tooling blueprint you decide which of them your template provisions, subject only to the minimum in [Template requirements](tooling-custom-blueprints.md#tooling-template-requirements).
 

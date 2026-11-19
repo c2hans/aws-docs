@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/otel-metrics
 ---
 
 # Example queries for common monitoring tasks
-<a name="otel-metrics-queries"></a>
 
 The following queries answer common questions about a node-based Valkey replication group. Each one is ready to copy into a CloudWatch dashboard, and you can edit any of them to suit your own workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/troubleshooting.htm
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 To help you understand Multi-party approval, this topic describes troubleshooting scenarios.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Reading function results
-<a name="functions-metadata"></a>
 
 A function writes its result to the feed's metadata timeline under the name of the function output. You read it with the same `GetMetadata` operation that you use for the native features, on the feed's data endpoint. You can find the data endpoint in the `dataEndpoints` field of `GetFeed`.
 

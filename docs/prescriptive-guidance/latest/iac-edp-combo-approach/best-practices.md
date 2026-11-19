@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-com
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 To use IaC and EDP together in a way that's compatible, secure, and mutually beneficial, we recommend that you follow these best practices:
 + **Avoid making API calls directly on a resource** – Use the CloudFormation [update-stack](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/update-stack.html) API call as part of an EDP approach, and make sure that only CloudFormation makes changes to the EBS volume. To ensure a successful update operation, the volume size must be valid and must not be lower than the value of the resources currently provisioned. The volume size could be a parameter in the CloudFormation stack.

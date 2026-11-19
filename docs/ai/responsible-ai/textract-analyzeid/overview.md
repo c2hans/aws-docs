@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/textract-analyzeid/ove
 ---
 
 # Amazon Textract AnalyzeID
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/textract-analyzeid/images/card-background.jpg)
 

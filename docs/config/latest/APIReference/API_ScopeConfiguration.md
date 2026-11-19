@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ScopeConf
 ---
 
 # ScopeConfiguration
-<a name="API_ScopeConfiguration"></a>
 
 Specifies the scope of resources to record from a third-party cloud service provider.
 

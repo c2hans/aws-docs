@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Regist
 ---
 
 # RegisterModelStepMetadata
-<a name="API_RegisterModelStepMetadata"></a>
 
 Metadata for a register model job step.
 

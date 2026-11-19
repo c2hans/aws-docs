@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Asser
 ---
 
 # AssertionCreatedMetadata
-<a name="API_AssertionCreatedMetadata"></a>
 
 Metadata for an assertion created event.
 

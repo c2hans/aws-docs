@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Expected
 ---
 
 # ExpectedRoute
-<a name="API_ExpectedRoute"></a>
 
 Information about the expected route in the route table.
 

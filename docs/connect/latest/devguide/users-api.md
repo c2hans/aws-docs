@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/users-api.html
 ---
 
 # User management actions
-<a name="users-api"></a>
 
 The following API actions are available for user management:
 + [AssociateUserProficiencies](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateUserProficiencies.html)

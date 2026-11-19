@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListAvailableMeteredProducts
-<a name="API_ListAvailableMeteredProducts"></a>
 
 A list of the available metered products.
 

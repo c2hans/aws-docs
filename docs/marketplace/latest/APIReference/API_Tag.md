@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Tag.
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A list of objects specifying each key name and value.
 

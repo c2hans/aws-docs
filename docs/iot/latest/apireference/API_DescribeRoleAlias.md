@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeRole
 ---
 
 # DescribeRoleAlias
-<a name="API_DescribeRoleAlias"></a>
 
 Describes a role alias.
 

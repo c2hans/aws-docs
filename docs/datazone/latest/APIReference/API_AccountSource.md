@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Account
 ---
 
 # AccountSource
-<a name="API_AccountSource"></a>
 
 The source of accounts for the account pool. In the current release, it's either a static list of accounts provided by the customer or a custom AWS Lambda handler.
 

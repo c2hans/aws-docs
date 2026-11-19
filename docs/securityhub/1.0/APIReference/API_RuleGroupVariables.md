@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupVariables
-<a name="API_RuleGroupVariables"></a>
 
 Additional settings to use in the specified rules.
 

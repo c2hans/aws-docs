@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proces
 ---
 
 # ProcessingJobStepMetadata
-<a name="API_ProcessingJobStepMetadata"></a>
 
 Metadata for a processing job step.
 

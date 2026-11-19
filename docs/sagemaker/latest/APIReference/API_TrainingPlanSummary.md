@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingPlanSummary
-<a name="API_TrainingPlanSummary"></a>
 
 Details of the training plan.
 

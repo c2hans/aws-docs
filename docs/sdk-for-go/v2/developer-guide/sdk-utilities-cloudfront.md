@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-utilit
 ---
 
 # Amazon CloudFront Utilities
-<a name="sdk-utilities-cloudfront"></a>
 
 ## Amazon CloudFront URL Signer
 <a name="cflong-url-signer"></a>

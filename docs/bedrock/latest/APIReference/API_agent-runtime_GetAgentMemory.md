@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GetAgentMemory
-<a name="API_agent-runtime_GetAgentMemory"></a>
 
 Gets the sessions stored in the memory of the agent.
 

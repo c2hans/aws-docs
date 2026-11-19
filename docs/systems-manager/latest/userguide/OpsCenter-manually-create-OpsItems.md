@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Create OpsItems manually
-<a name="OpsCenter-manually-create-OpsItems"></a>
 
 When you find an operational issue, you can manually create an OpsItem from OpsCenter to manage and resolve the issue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/enable-sou
 ---
 
 # Set up OPC UA servers to trust the AWS IoT SiteWise Edge gateway
-<a name="enable-source-trust"></a>
 
 If you choose a `messageSecurityMode` other than **None** when configuring your OPC UA source, you must enable your source servers to trust the AWS IoT SiteWise Edge gateway. The SiteWise Edge gateway generates a certificate that your source server might require. The process varies depending on your source servers. For more information, see the documentation for your servers.
 

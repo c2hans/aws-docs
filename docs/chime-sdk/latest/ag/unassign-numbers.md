@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/unassign-numbers.htm
 ---
 
 # Unassigning Voice Connector phone numbers
-<a name="unassign-numbers"></a>
 
 The following procedures explain how to unassign phone numbers from Amazon Chime SDK Voice Connectors and Voice Connector groups. You can't unassign phone numbers used by SIP media applications. Instead, you delete the SIP rule. For more information about deleting SIP rules, refer to [Deleting a SIP rule](delete-sip-rule.md) in this guide.
 

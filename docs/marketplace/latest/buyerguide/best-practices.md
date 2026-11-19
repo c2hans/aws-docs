@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/best-pract
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Create a default experience
 <a name="create-default-experience"></a>

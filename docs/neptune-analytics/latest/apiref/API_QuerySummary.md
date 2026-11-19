@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Quer
 ---
 
 # QuerySummary
-<a name="API_QuerySummary"></a>
 
 Details of the query listed.
 

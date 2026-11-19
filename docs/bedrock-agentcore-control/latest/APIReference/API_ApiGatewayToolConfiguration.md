@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ApiGatewayToolConfiguration
-<a name="API_ApiGatewayToolConfiguration"></a>
 
 The configuration for defining REST API tool filters and overrides for the gateway target.
 

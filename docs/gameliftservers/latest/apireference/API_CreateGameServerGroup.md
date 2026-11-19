@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # CreateGameServerGroup
-<a name="API_CreateGameServerGroup"></a>
 
  **This API works with the following fleet types:** EC2 (FleetIQ)
 

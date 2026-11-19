@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_E
 ---
 
 # EnvironmentDetailsEntity
-<a name="API_EnvironmentDetailsEntity"></a>
 
 The details of a specified environment.
 

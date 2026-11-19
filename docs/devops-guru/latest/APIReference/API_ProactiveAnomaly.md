@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Proa
 ---
 
 # ProactiveAnomaly
-<a name="API_ProactiveAnomaly"></a>
 
 Information about an anomaly. This object is returned by `ListAnomalies`.
 

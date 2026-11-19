@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-model.h
 ---
 
 # Customizing Amazon Nova models on SageMaker AI
-<a name="nova-model"></a>
 
 You can customize Amazon Nova models, including the enhanced Amazon Nova 2.0 models, through [recipes](nova-model-recipes.md#nova-model-get-recipes) and train them on SageMaker. These recipes support techniques such as supervised fine-tuning (SFT) and Reinforcement Fine-Tuning (RFT), with both full-rank and low-rank adaptation (LoRA) options.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # PutFeedback
-<a name="API_amazon-q-connect_PutFeedback"></a>
 
 Provides feedback against the specified assistant for the specified target. This API only supports generative targets.
 

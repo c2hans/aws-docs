@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Brokers
-<a name="clusters-clusterarn-nodes"></a>
 
 The broker nodes in the cluster.
 

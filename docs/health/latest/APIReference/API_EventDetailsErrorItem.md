@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_EventDeta
 ---
 
 # EventDetailsErrorItem
-<a name="API_EventDetailsErrorItem"></a>
 
 Error information returned when a [DescribeEventDetails](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventDetails.html) operation can't find a specified event.
 

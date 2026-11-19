@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/History.ht
 ---
 
 # Document history
-<a name="History"></a>
 
 The following entries describe important changes in each release of the Route 53 documentation. For notification about updates to this documentation, you can subscribe to an RSS feed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Seman
 ---
 
 # SemanticModelConfiguration
-<a name="API_SemanticModelConfiguration"></a>
 
 Configuration for the semantic model that defines how prepared data is structured for analysis and reporting.
 

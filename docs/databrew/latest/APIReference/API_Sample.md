@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Sample.
 ---
 
 # Sample
-<a name="API_Sample"></a>
 
 Represents the sample size and sampling type for DataBrew to use for interactive data analysis.
 

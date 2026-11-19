@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/delete-clust
 ---
 
 # Delete a cluster
-<a name="delete-cluster"></a>
 
 The following is an example of a request to delete a cluster. Deleting a cluster doesn't return a response.
 

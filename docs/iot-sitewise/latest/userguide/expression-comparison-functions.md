@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/expression
 ---
 
 # Use comparison functions in formula expressions
-<a name="expression-comparison-functions"></a>
 
 In [transforms](transforms.md) and [metrics](metrics.md), you can use the following comparison functions to compare two values and output `1` (true) or `0` (false). AWS IoT SiteWise compares strings by [lexicographic order](https://en.wikipedia.org/wiki/Lexicographic_order).
 

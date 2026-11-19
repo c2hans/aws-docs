@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/launch-conversion-e
 ---
 
 # Launch conversion errors
-<a name="launch-conversion-errors"></a>
 
 The following errors can occur during the conversion phase when you launch a drill or recovery instance in AWS Elastic Disaster Recovery (Elastic Disaster Recovery). The conversion phase prepares your replicated volumes for use in the target AWS environment.
 

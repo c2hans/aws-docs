@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-pl
 ---
 
 # Apache Ranger plugins for Amazon EMR integration scenarios
-<a name="emr-ranger-plugins"></a>
 
 Apache Ranger plugins validate the access of a user against the authorization policies defined in the Apache Ranger policy admin server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # StopSuiteRun
-<a name="API_iotdeviceadvisor_StopSuiteRun"></a>
 
 Stops a Device Advisor test suite run that is currently running.
 

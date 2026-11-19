@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Del
 ---
 
 # DeleteRepository
-<a name="API_DeleteRepository"></a>
 
  Deletes a repository.
 

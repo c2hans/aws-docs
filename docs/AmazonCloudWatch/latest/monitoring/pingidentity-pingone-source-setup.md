@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pingi
 ---
 
 # Source configuration for PingIdentity PingOne
-<a name="pingidentity-pingone-source-setup"></a>
 
 ## Integrating with PingIdentity PingOne
 <a name="pingidentity-pingone-integration"></a>

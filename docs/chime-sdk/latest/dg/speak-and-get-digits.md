@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/speak-and-get-digits
 ---
 
 # SpeakAndGetDigits
-<a name="speak-and-get-digits"></a>
 
 Play speech by providing text and gather dual tone multi-frequency (DTMF) digits from the user. The text can either be plain text or Speech Synthesis Markup Language (SSML)-enhanced text to provide more control over how the Amazon Chime SDK generates speech by adding pauses, emphasizing certain words, or changing the speaking style, among other supported SSML features. If a failure occurs, such as a user not entering the correct number of DTMF digits, the action plays the "failure" speech and then replays the main speech until the SIP media application exhausts the number of attempts defined in the `Repeat` parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Get
 ---
 
 # GetDeploymentPatternVersion
-<a name="API_GetDeploymentPatternVersion"></a>
 
 Returns information about a deployment pattern version.
 

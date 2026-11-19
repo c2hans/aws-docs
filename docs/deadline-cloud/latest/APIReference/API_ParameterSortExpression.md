@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_P
 ---
 
 # ParameterSortExpression
-<a name="API_ParameterSortExpression"></a>
 
 Organizes parameters according to your specifications.
 

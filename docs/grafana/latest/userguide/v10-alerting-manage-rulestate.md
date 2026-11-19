@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-alerting-ma
 ---
 
 # View the state and health of alert rules
-<a name="v10-alerting-manage-rulestate"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 10.x**.

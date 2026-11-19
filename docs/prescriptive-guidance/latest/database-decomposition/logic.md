@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Migrating business logic from the database to the application layer
-<a name="logic"></a>
 
 Migrating business logic from database-stored procedures, triggers, and functions to application-layer services is a critical step in decomposing monolithic databases. This transformation improves service autonomy, simplifies maintenance, and enhances scalability. This section provides guidance on analyzing database logic, planning the migration strategy, and then implementing the transformation while maintaining business continuity. It also discusses establishing an effective rollback plan.
 

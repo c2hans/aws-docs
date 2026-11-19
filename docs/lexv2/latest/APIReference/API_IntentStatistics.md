@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentStat
 ---
 
 # IntentStatistics
-<a name="API_IntentStatistics"></a>
 
 The object that contains the statistical summary of recommended intents associated with the bot recommendation.
 

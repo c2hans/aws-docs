@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_MemberAcco
 ---
 
 # MemberAccountEc2DeepInspectionStatus
-<a name="API_MemberAccountEc2DeepInspectionStatus"></a>
 
 An object that contains details about the status of Amazon Inspector deep inspection for a member account in your organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DeregisterDelegatedAdministrator
-<a name="API_DeregisterDelegatedAdministrator"></a>
 
 Removes the specified member AWS account as a delegated administrator for the specified AWS service.
 

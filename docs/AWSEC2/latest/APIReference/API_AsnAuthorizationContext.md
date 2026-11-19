@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AsnAuthor
 ---
 
 # AsnAuthorizationContext
-<a name="API_AsnAuthorizationContext"></a>
 
 Provides authorization for Amazon to bring an Autonomous System Number (ASN) to a specific AWS account using bring your own ASN (BYOASN). For details on the format of the message and signature, see [Tutorial: Bring your ASN to IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoasn.html) in the *Amazon VPC IPAM guide*.
 

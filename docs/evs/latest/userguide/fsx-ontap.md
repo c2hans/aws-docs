@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/fsx-ontap.html
 ---
 
 # Use Amazon FSx for NetApp ONTAP with Amazon EVS
-<a name="fsx-ontap"></a>
 
 Amazon FSx for NetApp ONTAP is a storage service that you use to launch and run fully managed ONTAP file systems in the cloud. Amazon Elastic VMware Service supports FSx for ONTAP as an NFS, iSCSI, or NVMe/TCP datastore for your ESX hosts and as guest-connected storage for virtual machines.
 

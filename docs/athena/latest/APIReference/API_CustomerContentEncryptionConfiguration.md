@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CustomerC
 ---
 
 # CustomerContentEncryptionConfiguration
-<a name="API_CustomerContentEncryptionConfiguration"></a>
 
 Specifies the customer managed KMS key that is used to encrypt the user's data stores in Athena. When an AWS managed key is used, this value is null. This setting does not apply to Athena SQL workgroups.
 

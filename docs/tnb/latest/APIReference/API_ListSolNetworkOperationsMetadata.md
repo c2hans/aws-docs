@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ListSolNetwo
 ---
 
 # ListSolNetworkOperationsMetadata
-<a name="API_ListSolNetworkOperationsMetadata"></a>
 
 Metadata related to a network operation.
 

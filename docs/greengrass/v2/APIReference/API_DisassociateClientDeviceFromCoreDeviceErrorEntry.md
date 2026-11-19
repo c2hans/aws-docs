@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Disassoci
 ---
 
 # DisassociateClientDeviceFromCoreDeviceErrorEntry
-<a name="API_DisassociateClientDeviceFromCoreDeviceErrorEntry"></a>
 
 Contains an error that occurs from a request to disassociate a client device from a core device. The [BatchDisassociateClientDeviceWithCoreDevice](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_BatchDisassociateClientDeviceWithCoreDevice.html) operation returns a list of these errors.
 

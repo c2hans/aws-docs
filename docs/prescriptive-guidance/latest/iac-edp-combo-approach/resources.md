@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-com
 ---
 
 # Resources
-<a name="resources"></a>
 + [AWS CloudFormation](https://aws.amazon.com/cloudformation/) (AWS documentation)
 + [Infrastructure as Code](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html) (AWS Whitepaper)
 + [What is an Event-Driven Architecture?](https://aws.amazon.com/event-driven-architecture/) (AWS documentation)

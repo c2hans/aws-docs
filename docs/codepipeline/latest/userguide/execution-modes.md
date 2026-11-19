@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/execution-
 ---
 
 # Set or change the pipeline execution mode
-<a name="execution-modes"></a>
 
 You can set the execution mode for your pipeline to specify how multiple executions are handled.
 

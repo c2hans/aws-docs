@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/que
 ---
 
 # Retrieving user metadata and attributes using userID in an identity store
-<a name="query-session-data-map-userid"></a>
 
 **Note**
 This procedure also applies to the `createdBy` field returned by the [SearchJobs](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_SearchJobs.html) API, which uses the same user ID format.

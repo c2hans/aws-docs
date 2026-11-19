@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring-a
 ---
 
 # Troubleshooting agent connectivity
-<a name="runtime-monitoring-agent-connectivity-troubleshooting"></a>
 
 GuardDuty connects the Runtime Monitoring security agent to GuardDuty over one of the two connectivity methods: an Amazon VPC endpoint, or a link-local address.
 

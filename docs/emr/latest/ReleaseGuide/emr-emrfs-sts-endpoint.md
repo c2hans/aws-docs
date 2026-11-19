@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-emrfs-sts-en
 ---
 
 # Managing the default AWS Security Token Service endpoint
-<a name="emr-emrfs-sts-endpoint"></a>
 
 EMRFS uses the AWS Security Token Service (STS) to retrieve temporary security credentials in order to access your AWS resources. Earlier Amazon EMR release versions send all AWS STS requests to a single global endpoint at `https://sts.amazonaws.com`. Amazon EMR release versions 5.31.0 and 6.1.0 and later make requests to Regional AWS STS endpoints instead. This reduces latency and improves session token validity. For more information about AWS STS endpoints, see [Managing AWS STS in an AWS Region](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_enable-regions.html) in the *AWS Identity and Access Management User Guide*.
 

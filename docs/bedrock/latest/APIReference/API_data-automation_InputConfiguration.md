@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # InputConfiguration
-<a name="API_data-automation_InputConfiguration"></a>
 
 Input configuration for ingestion jobs.
 

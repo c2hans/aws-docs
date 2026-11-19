@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_AssociateSou
 ---
 
 # AssociateSourceServers
-<a name="API_AssociateSourceServers"></a>
 
 Associate source servers to application.
 

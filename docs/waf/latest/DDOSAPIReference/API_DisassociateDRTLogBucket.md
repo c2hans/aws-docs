@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Disassoc
 ---
 
 # DisassociateDRTLogBucket
-<a name="API_DisassociateDRTLogBucket"></a>
 
 Removes the Shield Response Team's (SRT) access to the specified Amazon S3 bucket containing the logs that you shared previously.
 

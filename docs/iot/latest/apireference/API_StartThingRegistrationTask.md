@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_StartThingRe
 ---
 
 # StartThingRegistrationTask
-<a name="API_StartThingRegistrationTask"></a>
 
 Creates a bulk thing provisioning task.
 

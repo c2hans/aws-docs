@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateDlpSetting
-<a name="API_CreateDlpSetting"></a>
 
 Creates a data loss prevention (DLP) setting configuration for an AWS account. A DLP setting defines the DLP provider, the enforcement behavior, and the Quick capabilities that the setting applies to.
 

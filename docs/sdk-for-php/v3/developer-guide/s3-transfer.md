@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-transf
 ---
 
 # Transfer directories to and from Amazon S3 using the AWS SDK for PHP Version 3
-<a name="s3-transfer"></a>
 
 You use the `Transfer` class in AWS SDK for PHP Version 3 to upload entire directories to an Amazon S3 bucket and download entire buckets to a local directory.
 

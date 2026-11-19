@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/secu
 AWS IoT FleetWise is no longer open to new customers. Existing AWS IoT FleetWise customers can continue using the service. The [Guidance for Connected Mobility on AWS](https://aws.amazon.com/solutions/guidance/connected-mobility-on-aws/) provides guidance on how to develop and deploy modular services for connected mobility solutions that can be used to achieve equivalent capabilities as AWS IoT FleetWise.
 
 # Identity-based policy examples for AWS IoT FleetWise
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify AWS IoT FleetWise resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

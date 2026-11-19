@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-rmp.html
 ---
 
 # Restricted Model Packages
-<a name="nova-rmp"></a>
 
 ## What is a Restricted Model Package?
 <a name="nova-rmp-overview"></a>

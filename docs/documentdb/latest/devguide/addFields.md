@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/addFields.htm
 ---
 
 # $addFields
-<a name="addFields"></a>
 
 The `$addFields` stage in the Amazon DocumentDB aggregation pipeline allows you to add new computed fields to documents. This can be useful for adding derived or transformed data to the documents.
 

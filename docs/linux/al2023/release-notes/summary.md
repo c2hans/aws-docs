@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/summary.html
 ---
 
 # Summary of package changes in Amazon Linux 2023
-<a name="summary"></a>
 
 | Comparison | Source RPMs | Total binary RPMs | Total noarch RPMs | Total x86\_64 RPMs | Total aarch64 RPMs |
 | --- | --- | --- | --- | --- | --- |

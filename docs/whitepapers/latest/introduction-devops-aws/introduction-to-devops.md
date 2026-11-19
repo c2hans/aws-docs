@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Introduction to DevOps on AWS
-<a name="introduction-to-devops"></a>
 
 Publication date: **April 7, 2023** ([Document Revisions](document-revisions.md))
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_Secret.htm
 ---
 
 # Secret
-<a name="API_Secret"></a>
 
 An object that represents the secret to expose to your container. Secrets can be exposed to a container in the following ways:
 + To inject sensitive data into your containers as environment variables, use the `secrets` container definition parameter.

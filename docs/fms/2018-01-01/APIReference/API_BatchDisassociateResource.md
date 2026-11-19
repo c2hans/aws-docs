@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_BatchDis
 ---
 
 # BatchDisassociateResource
-<a name="API_BatchDisassociateResource"></a>
 
 Disassociates resources from a Firewall Manager resource set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Application log analytics pipeline
-<a name="application-log-analytics-pipeline"></a>
 
 Centralized Logging with OpenSearch supports log analysis for application logs, such as NGINX/Apache HTTP Server logs or custom application logs.
 

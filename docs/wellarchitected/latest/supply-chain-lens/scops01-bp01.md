@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCOPS01-BP01 Identify and track all stakeholders interacting with the supply chain application
-<a name="scops01-bp01"></a>
 
  Create a comprehensive inventory of all stakeholders who interact with the supply chain application. This includes internal users (like employees and departments), external partners (like suppliers and customers), and any third-party services integrated with the application. Document how each stakeholder group uses the application.
 

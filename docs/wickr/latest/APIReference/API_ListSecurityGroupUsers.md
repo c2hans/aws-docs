@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ListSecuri
 ---
 
 # ListSecurityGroupUsers
-<a name="API_ListSecurityGroupUsers"></a>
 
 Retrieves a paginated list of users who belong to a specific security group in a Wickr network.
 

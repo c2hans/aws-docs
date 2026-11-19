@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/aws-auto-sca
 ---
 
 # Predictive scaling service-linked role
-<a name="aws-auto-scaling-service-linked-roles"></a>
 
 AWS Auto Scaling uses service-linked roles for the permissions that it requires to call other AWS on your behalf when you work with a scaling plan. For more information, see [Service-linked roles for scaling plans](security_iam_service-with-iam.md#security_iam_service-with-iam-roles-service-linked).
 

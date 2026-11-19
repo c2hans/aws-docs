@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Business layer of an ADM operating model
-<a name="business-layer"></a>
 
 The business layer forms the strategic foundation of the ADM operating model. Generative AI is transforming business strategy, stakeholder roles, and key areas such as enterprise architecture, reporting, governance, and budgeting.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ViewVers
 ---
 
 # ViewVersionSummary
-<a name="API_ViewVersionSummary"></a>
 
 A summary of a view version's metadata.
 

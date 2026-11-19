@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_M
 ---
 
 # MonitorSummary
-<a name="API_MonitorSummary"></a>
 
 Displays summary information about a monitor.
 

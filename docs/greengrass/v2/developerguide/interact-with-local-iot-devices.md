@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/interact-wi
 ---
 
 # Interact with local IoT devices
-<a name="interact-with-local-iot-devices"></a>
 
 *Client devices* are local IoT devices that connect to and communicate with a Greengrass core device over MQTT. You can connect client devices to core devices to do the following:
 + Interact with MQTT messages in Greengrass components.

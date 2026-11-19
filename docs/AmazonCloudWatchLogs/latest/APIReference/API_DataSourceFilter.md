@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DataSourceFilter
-<a name="API_DataSourceFilter"></a>
 
 Filter criteria for data sources, used to specify which data sources to include in operations based on name and type.
 

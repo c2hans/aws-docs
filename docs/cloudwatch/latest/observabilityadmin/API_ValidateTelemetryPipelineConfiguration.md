@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ValidateTelemetryPipelineConfiguration
-<a name="API_ValidateTelemetryPipelineConfiguration"></a>
 
 Validates a pipeline configuration without creating the pipeline. This operation checks the configuration for syntax errors and compatibility issues.
 

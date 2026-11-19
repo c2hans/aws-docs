@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CpuPerfor
 ---
 
 # CpuPerformanceFactorRequest
-<a name="API_CpuPerformanceFactorRequest"></a>
 
 The CPU performance to consider, using an instance family as the baseline reference.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Grafana::Workspace VpcConfiguration
-<a name="aws-properties-grafana-workspace-vpcconfiguration"></a>
 
 The configuration settings for an Amazon VPC that contains data sources for your Grafana workspace to connect to.
 

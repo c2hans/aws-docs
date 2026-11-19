@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitoring-eventb
 ---
 
 # MediaConnect flow events
-<a name="monitoring-eventbridge-flow-events"></a>
 
 AWS Elemental MediaConnect publishes the following EventBridge events for flows and their sources and outputs.
 

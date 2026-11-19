@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListDbNodes.
 ---
 
 # ListDbNodes
-<a name="API_ListDbNodes"></a>
 
 Returns information about the DB nodes for the specified VM cluster.
 

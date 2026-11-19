@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/getting-sta
 ---
 
 # Step 2: Set up your environment
-<a name="getting-started-set-up-environment"></a>
 
 **Note**
 These steps do not apply to nucleus lite.

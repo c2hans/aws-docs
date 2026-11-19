@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Choreography
-<a name="choreography"></a>
 
 In a choreographed system, individual components receive a task, perform some work, and possibly emit a task for subsequent work to be performed. There is no central orchestration mechanism. Choreography makes it easy to scale services independently, because each service operates in relative isolation. It performs work when it receives work, at whatever throughput the service is capable of. Choreography is often a central part of an [event-driven architecture (EDA)](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/event-driven-architectures.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Pa
 ---
 
 # PartnerEventsSourceConfiguration
-<a name="API_PartnerEventsSourceConfiguration"></a>
 
 Configuration for forwarding a partner event source's events through a managed partner event bus.
 

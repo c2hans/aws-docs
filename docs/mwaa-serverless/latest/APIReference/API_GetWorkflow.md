@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # GetWorkflow
-<a name="API_GetWorkflow"></a>
 
 Retrieves detailed information about a workflow, including its configuration, status, and metadata.
 

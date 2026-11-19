@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-compone
 ---
 
 # Interact with component configuration
-<a name="ipc-component-configuration"></a>
 
 The component configuration IPC service lets you do the following:
 + Get and set component configuration parameters.

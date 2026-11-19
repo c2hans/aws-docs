@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-saphana-target-n
 ---
 
 # Creating a SAP HANA target node
-<a name="creating-saphana-target-node"></a>
 
 ## Prerequisites needed
 <a name="creating-saphana-target-node-prerequisites"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-with-prepared-
 ---
 
 # Use the AWS CLI to create, execute, and list prepared statements
-<a name="querying-with-prepared-statements-cli-section"></a>
 
 You can use the AWS CLI to create, execute, and list prepared statements.
 

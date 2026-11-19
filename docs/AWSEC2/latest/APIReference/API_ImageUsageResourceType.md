@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageUsag
 ---
 
 # ImageUsageResourceType
-<a name="API_ImageUsageResourceType"></a>
 
 A resource type to include in the report. Associated options can also be specified if the resource type is a launch template.
 

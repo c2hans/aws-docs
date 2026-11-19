@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # GetFindingRecommendation
-<a name="API_GetFindingRecommendation"></a>
 
 Retrieves information about a finding recommendation for the specified analyzer.
 

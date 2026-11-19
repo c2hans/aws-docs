@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Continuous integration and continuous delivery
-<a name="ci-cd"></a>
 
 **Evolve and improve applications and services faster than organizations that use traditional software development and infrastructure management processes.**
 

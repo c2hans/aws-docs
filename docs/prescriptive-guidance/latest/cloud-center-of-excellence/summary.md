@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # Summarizing the steps for establishing a CCoE
-<a name="summary"></a>
 
 Setting up a Cloud Center of Excellence (CCoE) is a strategic initiative that can help your organization effectively plan, govern, and optimize your cloud-adoption efforts. A CCoE is a cross-functional team responsible for driving cloud best practices, innovation, and governance within an organization. You can use the following example steps to set up a CCoE. However, it's important to note that the steps might vary, depending on the maturity and needs of your organization.
 

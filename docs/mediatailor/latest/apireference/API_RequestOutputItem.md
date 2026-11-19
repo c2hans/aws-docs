@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Requ
 ---
 
 # RequestOutputItem
-<a name="API_RequestOutputItem"></a>
 
 The output configuration for this channel.
 

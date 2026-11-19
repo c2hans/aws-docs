@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/kro-considerations.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # kro considerations for EKS
-<a name="kro-considerations"></a>
 
 Review important considerations for using the EKS managed capability for kro, including when to use resource composition, RBAC patterns, and integration with other EKS capabilities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/getting-started.htm
 ---
 
 # Create a scheduler role
-<a name="getting-started"></a>
 
 An execution role is an IAM role that AWS FIS assumes in order to interact with EventBridge scheduler and for Event Bridge scheduler to Start FIS Experiment. You attach permission policies to this role to grant EventBridge Scheduler access to invoke FIS Experiment. The following steps describe how to create a new execution role and a policy to allow EventBridge to Start an Experiment.
 

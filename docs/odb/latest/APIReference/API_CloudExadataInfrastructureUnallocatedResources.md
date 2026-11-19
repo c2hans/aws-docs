@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CloudExadata
 ---
 
 # CloudExadataInfrastructureUnallocatedResources
-<a name="API_CloudExadataInfrastructureUnallocatedResources"></a>
 
 Information about unallocated resources in the Cloud Exadata infrastructure.
 

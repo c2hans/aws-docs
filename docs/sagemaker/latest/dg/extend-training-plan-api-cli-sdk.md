@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/extend-training-plan
 ---
 
 # Purchase an extension
-<a name="extend-training-plan-api-cli-sdk"></a>
 
 After selecting an extension offering, use the [`ExtendTrainingPlan`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html) API to purchase the extension.
 

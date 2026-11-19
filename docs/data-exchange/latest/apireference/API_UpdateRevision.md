@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Up
 ---
 
 # UpdateRevision
-<a name="API_UpdateRevision"></a>
 
 This operation updates a revision.
 

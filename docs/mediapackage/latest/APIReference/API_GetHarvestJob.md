@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Get
 ---
 
 # GetHarvestJob
-<a name="API_GetHarvestJob"></a>
 
 Retrieves the details of a specific harvest job.
 

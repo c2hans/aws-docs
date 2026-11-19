@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/c-
 ---
 
 # Using the AWS Encryption SDK for C
-<a name="c-language-using"></a>
 
 This topic explains some of the features of the AWS Encryption SDK for C that are not supported in other programming language implementations.
 

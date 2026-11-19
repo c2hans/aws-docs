@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Alignment to demand
-<a name="alignment-to-demand"></a>
 
 **Topics**
 + [FSISUS04: How do you prioritize business critical functions over non-critical functions?](fsisus04.md)

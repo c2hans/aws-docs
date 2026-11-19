@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_SubDomai
 ---
 
 # SubDomainSetting
-<a name="API_SubDomainSetting"></a>
 
 Describes the settings for the subdomain.
 

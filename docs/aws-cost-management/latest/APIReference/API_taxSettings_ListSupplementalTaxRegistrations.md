@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListSupplementalTaxRegistrations
-<a name="API_taxSettings_ListSupplementalTaxRegistrations"></a>
 
  Retrieves supplemental tax registrations for a single account.
 

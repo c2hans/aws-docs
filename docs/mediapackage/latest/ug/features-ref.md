@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/features-ref.html
 ---
 
 # AWS Elemental MediaPackage features
-<a name="features-ref"></a>
 
 The following sections describe the features that are available in AWS Elemental MediaPackage and how they work.
 

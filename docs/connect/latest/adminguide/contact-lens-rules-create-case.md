@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-r
 ---
 
 # Create a rule in conversational analytics that creates a case
-<a name="contact-lens-rules-create-case"></a>
 
 **To create a rule that creates a case**
 

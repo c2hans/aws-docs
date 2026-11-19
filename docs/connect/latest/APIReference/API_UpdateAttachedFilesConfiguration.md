@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateAt
 ---
 
 # UpdateAttachedFilesConfiguration
-<a name="API_UpdateAttachedFilesConfiguration"></a>
 
 Updates the attached files configuration for the specified Connect Customer instance and attachment scope.
 

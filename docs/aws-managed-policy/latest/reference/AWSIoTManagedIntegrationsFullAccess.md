@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTManagedIntegrationsFullAccess
-<a name="AWSIoTManagedIntegrationsFullAccess"></a>
 
 **Description**: Provides full access to managed integrations for AWS IoT Device Management and related services.
 

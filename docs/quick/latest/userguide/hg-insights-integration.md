@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/hg-insights-integ
 ---
 
 # HG Insights integration
-<a name="hg-insights-integration"></a>
 
 With the HG Insights connector, you can access technographic data, query company technology profiles, and retrieve market intelligence directly in AWS Quick through natural language.
 

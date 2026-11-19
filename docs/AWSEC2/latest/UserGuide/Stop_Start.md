@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html
 ---
 
 # Stop and start Amazon EC2 instances
-<a name="Stop_Start"></a>
 
 You can stop and start your instance if it has an Amazon EBS volume as its root volume. When you stop an instance, it shuts down. When you start an instance, it is typically migrated to a new underlying host computer and assigned a new public IPv4 address.
 

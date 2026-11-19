@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_UpdateWorkflow.html
 ---
 
 # UpdateWorkflow
-<a name="API_UpdateWorkflow"></a>
 
 Updates information about a workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/attach-inputs-proced
 ---
 
 # The procedure to attach inputs
-<a name="attach-inputs-procedure"></a>
 
 **To attach one MediaLive input**
 

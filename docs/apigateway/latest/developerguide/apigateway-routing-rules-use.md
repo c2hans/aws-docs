@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # How to use routing rules
-<a name="apigateway-routing-rules-use"></a>
 
 You can create a routing rule using the AWS Management Console, AWS CLI, or any AWS SDK. After you create a rule, you can change it's priority.
 

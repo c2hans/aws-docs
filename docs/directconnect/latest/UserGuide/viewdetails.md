@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/viewdetai
 ---
 
 # View Direct Connect connection details
-<a name="viewdetails"></a>
 
 You can view the current status of your connection using either the Direct Connect console or using the command line or API. You can also view your connection ID (for example, `dxcon-12nikabc`) and verify that it matches the connection ID on the LOA-CFA that you received or downloaded.
 

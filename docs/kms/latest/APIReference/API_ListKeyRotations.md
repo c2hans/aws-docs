@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeyRotat
 ---
 
 # ListKeyRotations
-<a name="API_ListKeyRotations"></a>
 
 Returns information about the key materials associated with the specified KMS key. You can use the optional `IncludeKeyMaterial` parameter to control which key materials are included in the response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/service-quotas-evs.
 ---
 
 # Service quotas for Amazon EVS
-<a name="service-quotas-evs"></a>
 
 Your AWS account has default quotas, also called limits, for each AWS service, and most quotas are specific to a Region.
 

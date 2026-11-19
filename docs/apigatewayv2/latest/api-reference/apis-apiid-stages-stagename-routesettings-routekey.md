@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # RouteSettings
-<a name="apis-apiid-stages-stagename-routesettings-routekey"></a>
 
 Represents the route settings for a stage.
 

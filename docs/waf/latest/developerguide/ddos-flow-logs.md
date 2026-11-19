@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-flow-logs
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Shield Advanced attack flow logs
-<a name="ddos-flow-logs"></a>
 
 Flow logs enable you to capture information about traffic going to network interfaces in your Shield Advanced protected resources. Flow log data is published to Amazon S3, Amazon CloudWatch Logs, or Amazon Data Firehose, where you can retrieve and view your data after you've enabled flow logs.
 

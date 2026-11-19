@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # ApplyPendingMaintenanceAction
-<a name="API_elastic_ApplyPendingMaintenanceAction"></a>
 
 The type of pending maintenance action to be applied to the resource.
 

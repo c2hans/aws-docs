@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/http_pro
 ---
 
 # Using an HTTP proxy for Amazon ECS Linux container instances
-<a name="http_proxy_config"></a>
 
 You can configure your Amazon ECS container instances to use an HTTP proxy for both the Amazon ECS container agent and the Docker daemon. This is useful if your container instances do not have external network access through an Amazon VPC internet gateway, NAT gateway, or instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Guidelines for monitoring your bot control strategy
-<a name="monitoring"></a>
 
 For bot traffic and web application traffic, monitoring and visibility is of great importance. It helps you prioritize activities as well as security operations. If detailed logging or using a SIEM system are not possible, then a good starting point is monitoring basic metrics provided by your selected solution or vendor.
 

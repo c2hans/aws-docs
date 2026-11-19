@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/distrib
 ---
 
 # Setting up Distributor
-<a name="distributor-getting-started"></a>
 
 Before you use Distributor to create, manage, and deploy software packages, follow these steps.
 

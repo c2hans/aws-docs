@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_R
 ---
 
 # RLSPolicyAttachment
-<a name="API_RLSPolicyAttachment"></a>
 
 A structure that describes the attachment of a row-level security policy to a resource for a principal.
 

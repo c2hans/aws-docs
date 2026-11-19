@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-opensearch-sourc
 ---
 
 # Creating a OpenSearch Service source node
-<a name="creating-opensearch-source-node"></a>
 
 ## Prerequisites needed
 <a name="creating-opensearch-source-node-prerequisites"></a>

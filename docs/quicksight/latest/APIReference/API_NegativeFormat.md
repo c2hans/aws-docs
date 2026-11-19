@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Negat
 ---
 
 # NegativeFormat
-<a name="API_NegativeFormat"></a>
 
 A structure that represents a negative format.
 

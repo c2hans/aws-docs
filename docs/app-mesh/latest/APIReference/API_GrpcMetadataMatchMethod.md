@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcMet
 ---
 
 # GrpcMetadataMatchMethod
-<a name="API_GrpcMetadataMatchMethod"></a>
 
 An object representing the method header to be matched.
 

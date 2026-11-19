@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSN
 ---
 
 # AWSNetworkManagerCloudWANServiceRolePolicy
-<a name="AWSNetworkManagerCloudWANServiceRolePolicy"></a>
 
 **Description**: Allow NetworkManager to access resources associated with your Core Network
 

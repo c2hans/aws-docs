@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/DBActivityStr
 ---
 
 # Starting a database activity stream
-<a name="DBActivityStreams.Enabling"></a>
 
 When you start an activity stream for the DB instance, each database activity event that you configured in the audit policy generates an activity stream event. SQL commands such as `CONNECT` and `SELECT` generate access events. SQL commands such as `CREATE` and `INSERT` generate change events.
 

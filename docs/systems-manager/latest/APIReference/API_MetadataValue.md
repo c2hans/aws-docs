@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MetadataValue
-<a name="API_MetadataValue"></a>
 
 Metadata to assign to an Application Manager application.
 

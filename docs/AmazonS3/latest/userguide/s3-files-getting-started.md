@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-getti
 ---
 
 # Tutorial: Getting started with S3 Files
-<a name="s3-files-getting-started"></a>
 
 In this tutorial, you create an S3 file system and mount it on an EC2 instance. You then test basic file operations. You can use either the S3 console or the AWS CLI to get started with S3 Files.
 

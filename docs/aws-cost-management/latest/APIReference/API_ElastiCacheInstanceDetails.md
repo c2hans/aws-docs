@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ElastiCacheInstanceDetails
-<a name="API_ElastiCacheInstanceDetails"></a>
 
 Details about the Amazon ElastiCache reservations that AWS recommends that you purchase.
 

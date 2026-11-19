@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/digital.signature
 ---
 
 # Digital signature
-<a name="digital.signature"></a>
 
 On Windows, Amazon DCV starts only digitally signed extension executables. There is no digital signature verification on Linux and macOS. Digital signatures are verified using the `WinVerifyTrust` function with the `WINTRUST_ACTION_GENERIC_VERIFY_V2` parameter.
 

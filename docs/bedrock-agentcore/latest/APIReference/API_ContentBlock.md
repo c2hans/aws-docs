@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ContentBlock
-<a name="API_ContentBlock"></a>
 
 A block of content in a response.
 

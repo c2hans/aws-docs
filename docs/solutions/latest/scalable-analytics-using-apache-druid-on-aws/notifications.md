@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Notifications
-<a name="notifications"></a>
 
 When deployed, the guidance sets up the following topics in the Amazon SNS:
 + Alarm notification topic - This topic receives the notifications for the CloudWatch alarms.

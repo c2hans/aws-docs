@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/stream-pipe-events.h
 ---
 
 # Understanding Amazon Chime SDK media stream pipeline events
-<a name="stream-pipe-events"></a>
 
 Media stream pipelines send the following events. Expand each section to learn more.
 

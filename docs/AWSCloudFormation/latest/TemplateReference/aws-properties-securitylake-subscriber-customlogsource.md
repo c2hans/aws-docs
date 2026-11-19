@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityLake::Subscriber CustomLogSource
-<a name="aws-properties-securitylake-subscriber-customlogsource"></a>
 
 Third-party custom log source that meets the requirements to be added to Amazon Security Lake. For more details, see [Custom log source](https://docs.aws.amazon.com/security-lake/latest/userguide/custom-sources.html#iam-roles-custom-sources) in the *Amazon Security Lake User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Er
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 The error details.
 

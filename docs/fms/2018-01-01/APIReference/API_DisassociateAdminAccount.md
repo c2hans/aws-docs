@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Disassoc
 ---
 
 # DisassociateAdminAccount
-<a name="API_DisassociateAdminAccount"></a>
 
 Disassociates an AWS Firewall Manager administrator account. To set a different account as an Firewall Manager administrator, submit a [PutAdminAccount](API_PutAdminAccount.md) request. To set an account as a default administrator account, you must submit an [AssociateAdminAccount](API_AssociateAdminAccount.md) request.
 

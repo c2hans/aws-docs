@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingGroupIn
 ---
 
 # ThingGroupIndexingConfiguration
-<a name="API_ThingGroupIndexingConfiguration"></a>
 
 Thing group indexing configuration.
 

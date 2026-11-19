@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_GetSessionRe
 ---
 
 # GetSessionResponseApproverResponse
-<a name="API_GetSessionResponseApproverResponse"></a>
 
 Contains details for an approver response in an approval session.
 

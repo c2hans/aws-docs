@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ListScheduledQueries
-<a name="API_query_ListScheduledQueries"></a>
 
 Gets a list of all scheduled queries in the caller's Amazon account and Region. `ListScheduledQueries` is eventually consistent.
 

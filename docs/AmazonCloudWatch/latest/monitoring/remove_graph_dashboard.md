@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/remov
 ---
 
 # Removing a graph widget from a CloudWatch dashboard
-<a name="remove_graph_dashboard"></a>
 
 **To remove a graph from a dashboard**
 

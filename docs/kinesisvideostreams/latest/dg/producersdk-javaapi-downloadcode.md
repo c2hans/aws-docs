@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Download and configure the Java producer library code
-<a name="producersdk-javaapi-downloadcode"></a>
 
 In this section of the Java producer library procedure, you download the Java example code, import the project into your Java IDE, and configure the library locations.
 

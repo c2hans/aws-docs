@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/VALIDATION_ER
 ---
 
 # VALIDATION\_ERROR\_INSTANCE\_TYPE\_NOT\_SUPPORTED
-<a name="VALIDATION_ERROR_INSTANCE_TYPE_NOT_SUPPORTED"></a>
 
 ## Overview
 <a name="VALIDATION_ERROR_INSTANCE_TYPE_NOT_SUPPORTED_overview"></a>

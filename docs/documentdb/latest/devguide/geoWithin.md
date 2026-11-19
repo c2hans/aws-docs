@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/geoWithin.htm
 ---
 
 # $geoWithin
-<a name="geoWithin"></a>
 
 The `$geoWithin` operator in Amazon DocumentDB is used to find documents whose location data (represented as GeoJSON objects) are completely contained within a specified shape, such as a polygon or multipolygon. This is useful for querying for objects that are located within a specific geographic region.
 

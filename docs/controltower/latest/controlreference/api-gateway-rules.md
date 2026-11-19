@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/api
 ---
 
 # Amazon API Gateway controls
-<a name="api-gateway-rules"></a>
 
 **Topics**
 + [[CT.APIGATEWAY.PR.1] Require an Amazon API Gateway REST and WebSocket API to have logging activated](#ct-apigateway-pr-1-description)

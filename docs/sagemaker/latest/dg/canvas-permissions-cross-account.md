@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-permissions-c
 ---
 
 # Grant permissions for cross-account Amazon S3 storage
-<a name="canvas-permissions-cross-account"></a>
 
 When setting up your SageMaker AI domain or user profile for users to access SageMaker Canvas, you specify an Amazon S3 storage location for Canvas artifacts. These artifacts include saved copies of your input datasets, model artifacts, predictions, and other application data. You can either use the default SageMaker AI created Amazon S3 bucket, or you can customize the storage location and specify your own bucket for storing Canvas application data.
 

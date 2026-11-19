@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows-
 ---
 
 # Learn how to use gMSAs for EC2 Windows containers for Amazon ECS
-<a name="windows-gmsa"></a>
 
 Amazon ECS supports Active Directory authentication for Windows containers through a special kind of service account called a *group Managed Service Account* (gMSA).
 

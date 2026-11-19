@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bare-metal-
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## How can I monitor hardware metrics from bare-metal servers located in on-premises data centers or other cloud providers?
 <a name="faq1"></a>

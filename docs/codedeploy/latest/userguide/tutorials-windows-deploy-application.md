@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-wi
 ---
 
 # Step 4: Deploy your Hello World application
-<a name="tutorials-windows-deploy-application"></a>
 
 Now you deploy the sample Hello World application revision you uploaded to Amazon S3. You use the AWS CLI or the CodeDeploy console to deploy the revision and monitor the deployment's progress. After the application revision is successfully deployed, you check the results.
 

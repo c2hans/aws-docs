@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstancesPrivateIpAddressConfig
-<a name="API_ScheduledInstancesPrivateIpAddressConfig"></a>
 
 Describes a private IPv4 address for a Scheduled Instance.
 

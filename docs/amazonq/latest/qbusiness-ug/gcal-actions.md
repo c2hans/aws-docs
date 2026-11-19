@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/gcal-actions
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring a Google Calendar plugin for Amazon Q Business
-<a name="gcal-actions"></a>
 
 Google Calendar is an online calendar service that helps users schedule meetings, set up events, set reminders, and share their schedules. If you’re a Google Calendar user, you can create an Amazon Q Business plugin to allow your end users to find and list events from within their web experience chat.
 

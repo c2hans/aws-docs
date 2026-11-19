@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CreateCapacityProv
 ---
 
 # CreateCapacityProvider
-<a name="API_CreateCapacityProvider"></a>
 
 Creates a capacity provider that manages compute resources for Lambda Event Functions
 

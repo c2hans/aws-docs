@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableCellConditionalFormatting
-<a name="API_PivotTableCellConditionalFormatting"></a>
 
 The cell conditional formatting option for a pivot table.
 

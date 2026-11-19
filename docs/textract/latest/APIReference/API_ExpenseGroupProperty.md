@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Expense
 ---
 
 # ExpenseGroupProperty
-<a name="API_ExpenseGroupProperty"></a>
 
 Shows the group that a certain key belongs to. This helps differentiate between names and addresses for different organizations, that can be hard to determine via JSON response.
 

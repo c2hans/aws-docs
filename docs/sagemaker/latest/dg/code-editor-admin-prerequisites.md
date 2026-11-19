@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor-admin-pr
 ---
 
 # Complete prerequisites
-<a name="code-editor-admin-prerequisites"></a>
 
 To use Code Editor, based on Code-OSS, Visual Studio Code - Open Source, you must complete the following prerequisites.
 

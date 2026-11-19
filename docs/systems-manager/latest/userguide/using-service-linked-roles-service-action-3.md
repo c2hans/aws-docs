@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/using-s
 ---
 
 # Using roles to create OpsData and OpsItems for Explorer
-<a name="using-service-linked-roles-service-action-3"></a>
 
 Systems Manager uses the service-linked role named **`AWSServiceRoleForSystemsManagerOpsDataSync`**. AWS Systems Manager uses this IAM service role for Explorer to create OpsData and OpsItems.
 

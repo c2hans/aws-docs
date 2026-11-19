@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/host-add.html
 ---
 
 # Add a host (VCF 9.x)
-<a name="host-add"></a>
 
 After you deploy VMware Cloud Foundation (VCF) in a Self-deployed environment, you can add hosts to increase capacity and workload resiliency. You create the host with the Amazon Elastic VMware Service console or the AWS CLI, and then you add it to a cluster with VCF 9.x tools. You can add hosts with local storage or diskless hosts.
 

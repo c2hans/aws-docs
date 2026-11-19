@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ServiceId.html
 ---
 
 # ServiceId
-<a name="API_ServiceId"></a>
 
 ## Contents
 <a name="API_ServiceId_Contents"></a>

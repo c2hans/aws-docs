@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_saml.h
 ---
 
 # Troubleshoot SAML federation with IAM
-<a name="troubleshoot_saml"></a>
 
 Use the information here to help you diagnose and fix issues that you might encounter when working with SAML 2.0 and federation with AWS Identity and Access Management.
 

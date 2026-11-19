@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-idle-
 ---
 
 # Set up idle shutdown
-<a name="studio-updated-idle-shutdown-setup"></a>
 
  The following sections show how to set up idle shutdown from either the console or using the AWS CLI. Idle shutdown can be set at either the domain or user profile level.
 

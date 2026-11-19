@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Job backendEnvironmentName jobId
-<a name="backend-appid-job-backendenvironmentname-jobid"></a>
 
 Jobs perform backend API actions on your behalf based on your choices in the Amplify Admin UI. The actions that the jobs perform depend on the underlying API request sent from the Amplify Admin UI.
 

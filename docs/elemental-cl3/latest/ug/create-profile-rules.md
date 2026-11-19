@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/create-profile-r
 ---
 
 # Rules for channel parameters
-<a name="create-profile-rules"></a>
 
 There are two rules associated with channel parameters in the profile:
 + Generally, if a field is blue on the profile, setting up as a channel parameter is optional. On the profile, you could also enter a permanent value or no value.

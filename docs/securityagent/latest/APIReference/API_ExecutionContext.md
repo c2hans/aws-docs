@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ex
 ---
 
 # ExecutionContext
-<a name="API_ExecutionContext"></a>
 
 Contains contextual information about the execution of a pentest job, such as errors, warnings, or informational messages.
 

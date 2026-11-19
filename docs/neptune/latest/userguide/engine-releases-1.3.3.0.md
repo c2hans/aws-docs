@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases
 ---
 
 # Amazon Neptune Engine version 1.3.3.0 (2024-08-05)
-<a name="engine-releases-1.3.3.0"></a>
 
 As of 2024-08-05, AWS deploys engine version 1.3.3.0 to all Regions. It takes several days for a new release to become available in every Region.
 

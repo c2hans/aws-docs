@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-recomme
 ---
 
 # Recommended Reading
-<a name="net-win-recommended-reading"></a>
 
 We also recommend reading these overview and best practice guides:
 +  [SAP on AWS Overview and Planning](https://docs.aws.amazon.com/sap/latest/general/sap-on-aws-overview.html)

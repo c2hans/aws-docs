@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/create-cont
 ---
 
 # Create a context store
-<a name="create-context-store"></a>
 
 Create a context store in a global network. Each global network can have one context store. When created, a context store starts in the `PENDING` state and then moves to `AVAILABLE`. You can optionally associate registered transit gateways while creating the context store or create the associations after the context store is `AVAILABLE`. For more information, see [Associate a transit gateway with a context store using AWS Network Manager](context-store-associations.md#associate-context-store).
 

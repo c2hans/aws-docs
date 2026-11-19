@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DescribeServiceUpdates
-<a name="API_DescribeServiceUpdates"></a>
 
 Returns details of the service updates
 

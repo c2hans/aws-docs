@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationAgentPolicy
-<a name="security-iam-awsmanpol-AWSApplicationMigrationAgentPolicy"></a>
 
 You can attach the `AWSApplicationMigrationAgentPolicy` policy to your IAM identities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/replication-d
 ---
 
 # Replicating image deletions in Amazon ECR
-<a name="replication-delete"></a>
 
 By default, Amazon ECR replication copies images to your replication destinations but does not replicate deletions. You can enable replication of deletes on a replication rule. When you enable replication of deletes, Amazon ECR replicates image deletions and image tag removals from the source registry to the replication destinations for that rule. This keeps your destination repositories consistent with the source without requiring you to delete images in each Region or account separately.
 

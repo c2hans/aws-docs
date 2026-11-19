@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cfn-guard/latest/ug/cfn-guard-validate.h
 ---
 
 # validate
-<a name="cfn-guard-validate"></a>
 
 Validates data against AWS CloudFormation Guard rules to determine success or failure.
 

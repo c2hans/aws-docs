@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-hdr-hls-
 ---
 
 # Creating HDR HLS outputs that comply with the Apple specification
-<a name="creating-hdr-hls-outputs-that-comply-with-the-apple-specification"></a>
 
 For information about which Apple devices play back HDR content, see [Find and watch movies with 4K, HDR, Dolby Vision, or Dolby Atmos](https://support.apple.com/en-us/HT207949) in the Apple support documentation.
 

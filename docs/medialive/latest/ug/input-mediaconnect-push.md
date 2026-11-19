@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-mediaconnect-p
 ---
 
 # Channel input—MediaConnect push input
-<a name="input-mediaconnect-push"></a>
 
 To verify that the input is set up correctly, look at the **MediaConnect flows** section. It shows the ARNs of the AWS Elemental MediaConnect flows that are the source for this input. These ARNs were automatically generated when you created the input:
 + If the channel is set up as a standard channel, two ARNs are generated.

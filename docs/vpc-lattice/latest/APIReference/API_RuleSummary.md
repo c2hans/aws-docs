@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Rule
 ---
 
 # RuleSummary
-<a name="API_RuleSummary"></a>
 
 Summary information about a listener rule.
 

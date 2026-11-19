@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/working-with-event-data.ht
 ---
 
 # Working with Amazon SES event data
-<a name="working-with-event-data"></a>
 
 After you [set up event publishing](monitor-sending-using-event-publishing-setup.md) and specify a configuration set for sending emails, you can retrieve your email sending events from the event destination that you specified when you set up the configuration set associated with the email.
 

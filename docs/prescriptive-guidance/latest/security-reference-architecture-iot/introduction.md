@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # AWS Security Reference Architecture (AWS SRA) – Internet of Things (IoT)
-<a name="introduction"></a>
 
 *Avik Mukherjee, Amazon Web Services*
 

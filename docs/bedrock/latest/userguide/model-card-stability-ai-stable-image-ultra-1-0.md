@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stab
 ---
 
 # Stable Image Ultra 1.0
-<a name="model-card-stability-ai-stable-image-ultra-1-0"></a>
 
 ## ![Stability AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/stability.png) Stability AI — Stable Image Ultra 1.0
 <a name="model-card-stability-ai-stable-image-ultra-1-0-header"></a>

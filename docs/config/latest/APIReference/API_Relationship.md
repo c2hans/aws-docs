@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Relations
 ---
 
 # Relationship
-<a name="API_Relationship"></a>
 
 The relationship of the related resource to the main resource.
 

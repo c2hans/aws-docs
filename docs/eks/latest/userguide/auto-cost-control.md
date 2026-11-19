@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-cost-control.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Cost optimization in EKS Auto Mode
-<a name="auto-cost-control"></a>
 
 EKS Auto Mode continuously optimizes your cluster’s compute costs through consolidation, bin-packing, and right-sizing. However, certain workload configurations can prevent these optimizations. This topic explains how cost optimization works, what can block it, and how to configure your cluster to maintain cost efficiency.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # Breaking changes
-<a name="agentcore-cli-migration-breaking-changes"></a>
 
 AgentCore CLI v1 keeps project workflows at the top level, groups evaluation workflows under `agentcore eval`, and adds resource commands that work with individual resources outside your project. It has the following breaking changes:
 + Project workflows keep their top-level command paths, such as `agentcore create`, `agentcore add`, `agentcore dev`, `agentcore deploy`, `agentcore invoke`, and `agentcore status`. Use `build` instead of `package` or `validate`. Logs remain under `agentcore logs`, with separate `runtime` and `harness` subcommands.

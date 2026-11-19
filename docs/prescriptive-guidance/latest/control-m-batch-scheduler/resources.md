@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.4555ba20-f514-555a-b5e9-6dfcaba932f3"></a>

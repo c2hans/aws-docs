@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBatchServiceRolePolicyForSageMaker
-<a name="AWSBatchServiceRolePolicyForSageMaker"></a>
 
 **Description**: Provides access for AWS Batch to queue and manage Amazon SageMaker workloads
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Connecti
 ---
 
 # ConnectionCredentials
-<a name="API_ConnectionCredentials"></a>
 
 The credentials that a chat participant uses to connect to the Connect Customer Participant Service.
 

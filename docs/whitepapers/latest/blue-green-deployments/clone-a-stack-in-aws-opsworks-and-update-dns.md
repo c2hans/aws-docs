@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Clone a Stack in AWS OpsWorks and Update DNS
-<a name="clone-a-stack-in-aws-opsworks-and-update-dns"></a>
 
  [AWS OpsWorks](https://aws.amazon.com/opsworks) utilizes the concept of *stacks*, which are logical groupings of AWS resources (EC2 instances, Amazon RDS, Elastic Load Balancing, and so on) that have a common purpose and should be logically managed together. Stacks are made of one or more layers. A layer represents a set of EC2 instances that serve a particular purpose, such as serving applications or hosting a database server. When a data store is part of the stack, you should be aware of certain data management challenges, such as those discussed in the next section.
 

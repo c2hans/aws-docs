@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalOverrides
-<a name="API_agent-runtime_RetrievalOverrides"></a>
 
 Overrides for retrieval behavior.
 

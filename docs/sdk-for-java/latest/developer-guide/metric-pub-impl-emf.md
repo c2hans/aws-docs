@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/metr
 ---
 
 # Publish SDK metrics for AWS Lambda functions using the AWS SDK for Java 2.x
-<a name="metric-pub-impl-emf"></a>
 
 Because Lambda functions typically execute for milliseconds to minutes, any delay in sending the metrics, which happens with the `CloudWatchMetricPublisher`, risks the loss of data.
 

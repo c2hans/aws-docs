@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshoot-l
 ---
 
 # Troubleshooting Amazon S3 Lifecycle issues
-<a name="troubleshoot-lifecycle"></a>
 
 The following information can help you troubleshoot common issues with Amazon S3 Lifecycle rules.
 

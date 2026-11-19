@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeliveryC
 ---
 
 # DeliveryChannelStatus
-<a name="API_DeliveryChannelStatus"></a>
 
 The status of a specified delivery channel.
 

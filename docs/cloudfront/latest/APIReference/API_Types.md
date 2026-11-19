@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Types
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon CloudFront:
 +  [ActiveTrustedKeyGroups](API_ActiveTrustedKeyGroups.md)

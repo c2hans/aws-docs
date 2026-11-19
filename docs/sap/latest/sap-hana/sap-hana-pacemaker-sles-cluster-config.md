@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-s
 ---
 
 # Cluster Configuration
-<a name="sap-hana-pacemaker-sles-cluster-config"></a>
 
 Bootstrap the cluster and configure all required cluster resources and constraints.
 

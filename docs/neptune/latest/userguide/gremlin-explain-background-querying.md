@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-explain
 ---
 
 # How Gremlin queries are processed in Neptune
-<a name="gremlin-explain-background-querying"></a>
 
 In Amazon Neptune, more complex traversals can be represented by a series of patterns that create a relation based on the definition of named variables that can be shared across patterns to create joins. This is shown in the following example.
 

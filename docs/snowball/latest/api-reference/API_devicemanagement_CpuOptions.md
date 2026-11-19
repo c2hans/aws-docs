@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # CpuOptions
-<a name="API_devicemanagement_CpuOptions"></a>
 
 The options for how a device's CPU is configured.
 

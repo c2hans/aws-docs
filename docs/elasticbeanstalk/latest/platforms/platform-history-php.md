@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platfo
 ---
 
 # PHP platform history
-<a name="platform-history-php"></a>
 
 This page lists the current and previous versions of AWS Elastic Beanstalk's PHP platform branches and the dates that each version was current. Previous platform versions remain accessible to accounts with active or terminated environments using them at the time they were superseded by a new version.
 

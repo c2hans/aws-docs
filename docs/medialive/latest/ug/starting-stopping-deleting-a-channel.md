@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/starting-stopping-de
 ---
 
 # Starting, stopping, and pausing a channel
-<a name="starting-stopping-deleting-a-channel"></a>
 
 You can start or stop a channel. You can pause one or both pipelines in a channel.
 

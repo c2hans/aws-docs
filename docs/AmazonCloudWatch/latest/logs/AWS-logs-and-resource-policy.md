@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-an
 ---
 
 # Enable logging from AWS services
-<a name="AWS-logs-and-resource-policy"></a>
 
 Use the searchable catalog to find an AWS service and open its logging setup guide. For more information about the destinations and permissions models for each service, see [Supported log destinations and permissions](AWS-logs-destinations-table.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/notIn-function.ht
 ---
 
 # notIn
-<a name="notIn-function"></a>
 
 `notIn` evaluates if an expression exists within a literal list. If the list doesn’t contain the expression, `notIn` returns true, and otherwise it returns false. `notIn` is case sensitive for string type inputs.
 

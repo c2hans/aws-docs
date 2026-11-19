@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableIn
 ---
 
 # DisableInstanceSqlHaStandbyDetections
-<a name="API_DisableInstanceSqlHaStandbyDetections"></a>
 
 Disable Amazon EC2 instances running in an SQL Server High Availability cluster from SQL Server High Availability instance standby detection monitoring. Once disabled, AWS no longer monitors the metadata for the instances to determine whether they are active or standby nodes in the SQL Server High Availability cluster.
 

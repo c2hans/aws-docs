@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/setup-cross-reg
 ---
 
 # Setting up cross-Region table access
-<a name="setup-cross-region-access"></a>
 
 To access data from a different Region, you need to first set up the Data Catalog databases and tables in the Region where you register your Amazon S3 data location. You can share the Data Catalog databases and tables with principals in your account or in another account. Then, you need to create data lake administrators who can create resource links pointing to the target shared data location in the Regions where users query the data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLicenseManagerConsumptionPolicy
-<a name="AWSLicenseManagerConsumptionPolicy"></a>
 
 **Description**: Provides permissions to allow access to the AWS License Manager API actions required to consume upon licenses that the user has entitlements.
 

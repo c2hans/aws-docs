@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRout
 ---
 
 # ListRoutingProfileQueues
-<a name="API_ListRoutingProfileQueues"></a>
 
 Lists the queues associated with a routing profile.
 

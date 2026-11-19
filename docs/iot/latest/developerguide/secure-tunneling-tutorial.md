@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/secure-tunneli
 ---
 
 # AWS IoT secure tunneling tutorials
-<a name="secure-tunneling-tutorial"></a>
 
 AWS IoT secure tunneling helps customers establish bidirectional communication to remote devices that are behind a firewall over a secure connection managed by AWS IoT.
 

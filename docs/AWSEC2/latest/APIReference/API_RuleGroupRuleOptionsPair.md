@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RuleGroup
 ---
 
 # RuleGroupRuleOptionsPair
-<a name="API_RuleGroupRuleOptionsPair"></a>
 
 Describes the rule options for a stateful rule group.
 

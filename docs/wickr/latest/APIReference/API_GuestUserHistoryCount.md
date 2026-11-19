@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GuestUserH
 ---
 
 # GuestUserHistoryCount
-<a name="API_GuestUserHistoryCount"></a>
 
 Contains the count of guest users for a specific billing period, used for tracking historical guest user activity.
 

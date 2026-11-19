@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudfor
 ---
 
 # Permissions required for the Amazon ECS console with CloudFormation
-<a name="cloudformation-console-permissions"></a>
 
 Before using the AWS Management Console to create your resources, you'll need to make sure to have the correct IAM permissions. For information on how to set up permissions for the Amazon ECS console in general first, see [Permissions required for the Amazon ECS console](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/console-permissions.html).
 

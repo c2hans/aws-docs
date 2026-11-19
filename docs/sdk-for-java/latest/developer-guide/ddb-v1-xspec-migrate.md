@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # V1 Xpec API to V2 Expressions API
-<a name="ddb-v1-xspec-migrate"></a>
 
 The Expression Specification (Xspec) API available in V1 that helps create expressions to work with document-oriented data is not available in V2. V2 uses the Expression API, which works with both document-oriented data and object-to-item mapped data.
 

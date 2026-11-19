@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Recurring
 ---
 
 # RecurringCharge
-<a name="API_RecurringCharge"></a>
 
 Describes a recurring charge.
 

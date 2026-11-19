@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedWebAppIdentityProviderDetails
-<a name="API_DescribedWebAppIdentityProviderDetails"></a>
 
 Returns a structure that contains the identity provider details for your web app.
 

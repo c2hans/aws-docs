@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_IotAnalytics
 ---
 
 # IotAnalyticsAction
-<a name="API_IotAnalyticsAction"></a>
 
 Sends message data to an AWS IoT Analytics channel.
 

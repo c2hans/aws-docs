@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/cre
 ---
 
 # Using AWS SDK for Swift credential providers
-<a name="credential-providers"></a>
 
  All requests to AWS must be cryptographically signed by using credentials issued by AWS. At runtime, the SDK retrieves configuration values for credentials by checking several locations.
 

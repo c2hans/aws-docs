@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Additiona
 ---
 
 # AdditionalResultAttributeValue
-<a name="API_AdditionalResultAttributeValue"></a>
 
 An attribute returned with a document from a search.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/sdi-rou
 ---
 
 # Step E: Complete the Router Output Mappings
-<a name="sdi-rou-output"></a>
 
 Perform this procedure on the Conductor Live node.
 

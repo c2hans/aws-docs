@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/rds-switchover-rea
 ---
 
 # Amazon RDS Switchover Read Replica execution block
-<a name="rds-switchover-read-replica-block"></a>
 
 **Category:** Database switchover
 

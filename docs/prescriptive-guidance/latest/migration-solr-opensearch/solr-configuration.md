@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Solr configuration
-<a name="solr-configuration"></a>
 
 The configuration for a Solr collection is defined in `solrconfig.xml`, which contains configuration settings that determine index location and formatting, caching, codec factory, circuit breaks, commits, transaction logs (tlogs), query performance, request handlers, update processing chains, and other settings.
 

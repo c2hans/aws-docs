@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-propert
 ---
 
 # Index Property: unique
-<a name="index-property-unique"></a>
 
 ## Supported index types
 <a name="index-property-unique-supported"></a>

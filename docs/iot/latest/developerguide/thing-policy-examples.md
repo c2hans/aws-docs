@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/thing-policy-e
 ---
 
 # Thing policy examples
-<a name="thing-policy-examples"></a>
 
 The following policy allows a device to connect if the certificate used to authenticate with AWS IoT Core is attached to the thing for which the policy is being evaluated:
 

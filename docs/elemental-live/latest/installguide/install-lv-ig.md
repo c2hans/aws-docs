@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/insta
 ---
 
 # Installing Elemental Live on qualified hardware
-<a name="install-lv-ig"></a>
 
 This section is for IT administrators who perform the first-time installation of AWS Elemental Live software on a hardware unit that is considered *qualified hardware*. For information about hardware that AWS Elemental considers to be qualified hardware, contact your AWS Elemental Sales representative or contact AWS Elemental Support through the [AWS Elemental Support Center](https://console.aws.amazon.com/elemental-appliances-software/home?region=us-east-1#/supportcenter).
 

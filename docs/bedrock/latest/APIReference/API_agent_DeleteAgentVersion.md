@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_De
 ---
 
 # DeleteAgentVersion
-<a name="API_agent_DeleteAgentVersion"></a>
 
 Deletes a version of an agent.
 

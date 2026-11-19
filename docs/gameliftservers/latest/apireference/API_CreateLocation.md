@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # CreateLocation
-<a name="API_CreateLocation"></a>
 
  **This API works with the following fleet types:** Anywhere
 

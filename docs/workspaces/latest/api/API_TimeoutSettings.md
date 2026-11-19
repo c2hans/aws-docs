@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_TimeoutSetting
 ---
 
 # TimeoutSettings
-<a name="API_TimeoutSettings"></a>
 
 Describes the timeout settings for a pool of WorkSpaces.
 

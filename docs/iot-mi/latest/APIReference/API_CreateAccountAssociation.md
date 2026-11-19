@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateAcc
 ---
 
 # CreateAccountAssociation
-<a name="API_CreateAccountAssociation"></a>
 
 Creates a new account association via the destination id.
 

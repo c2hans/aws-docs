@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInputD
 ---
 
 # RouterInputDestinationEndpointAssociatedResourceDetails
-<a name="API_RouterInputDestinationEndpointAssociatedResourceDetails"></a>
 
 The details of the router input that is associated with a destination endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/remove-ou.
 ---
 
 # Remove an OU
-<a name="remove-ou"></a>
 
 AWS Control Tower supports separate console actions to *deregister* an OU and to *delete* an OU.
 

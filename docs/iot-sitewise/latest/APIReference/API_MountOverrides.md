@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Mou
 ---
 
 # MountOverrides
-<a name="API_MountOverrides"></a>
 
 Runtime mount overrides applied to a single pipeline execution. Overrides are transient — they do not modify the stored task configuration.
 

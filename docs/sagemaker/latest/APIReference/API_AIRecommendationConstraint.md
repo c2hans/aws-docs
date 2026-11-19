@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationConstraint
-<a name="API_AIRecommendationConstraint"></a>
 
 A performance constraint for an AI recommendation job.
 

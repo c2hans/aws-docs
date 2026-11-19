@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/res-troub
 ---
 
 # General Debugging and Monitoring
-<a name="res-troubleshooting-general"></a>
 
 This section contains information about where information can be found within RES.
 + [Useful log and event information sources](#res-troubleshooting-general-info)

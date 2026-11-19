@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-t
 ---
 
 # Trainium Kubernetes cluster pre-training tutorial
-<a name="sagemaker-hyperpod-trainium-kubernetes-cluster-pretrain-tutorial"></a>
 
 You can use one of the following methods to start a training job in a Trainium Kubernetes cluster.
 + (Recommended) [HyperPod command-line tool](https://github.com/aws/sagemaker-hyperpod-cli)
@@ -186,4 +185,4 @@ kubectl logs {{name_of_pod}}
 
 The `STATUS` will turn to `Completed` when you run `kubectl get pods`.
 
-For more information about the k8s cluster configuration, see [Trainium Kubernetes cluster pre-training tutorial](#sagemaker-hyperpod-trainium-kubernetes-cluster-pretrain-tutorial).
+For more information about the k8s cluster configuration, see [Trainium Kubernetes cluster pre-training tutorial](sagemaker-hyperpod-trainium-kubernetes-cluster-pretrain-tutorial.md).

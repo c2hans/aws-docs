@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Foundational OUs
-<a name="foundational-ous"></a>
 
  The Security OU and the Infrastructure OU are categorized as foundational OUs. Foundational OUs are defined as OUs that contain accounts, workloads, and other AWS resources that provide common security and infrastructure capabilities to secure and support your overall AWS environment.
 

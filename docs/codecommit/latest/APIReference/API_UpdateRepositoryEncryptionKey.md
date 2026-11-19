@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdateRepositoryEncryptionKey
-<a name="API_UpdateRepositoryEncryptionKey"></a>
 
 Updates the AWS Key Management Service encryption key used to encrypt and decrypt a CodeCommit repository.
 

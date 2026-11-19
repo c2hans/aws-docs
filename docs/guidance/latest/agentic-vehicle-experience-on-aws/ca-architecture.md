@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Application architecture
-<a name="ca-architecture"></a>
 
 ## Module layout
 <a name="ca-module-layout"></a>

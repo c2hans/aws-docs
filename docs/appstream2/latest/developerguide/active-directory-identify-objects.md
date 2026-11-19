@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/active-
 ---
 
 # Managing WorkSpaces Applications Computer Objects in Active Directory
-<a name="active-directory-identify-objects"></a>
 
 WorkSpaces Applications does not delete computer objects from Active Directory. These computer objects can be easily identified in your directory. Each computer object in the directory is created with the `Description` attribute, which specifies a fleet or an image builder instance and the name.
 

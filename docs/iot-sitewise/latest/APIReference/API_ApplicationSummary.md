@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_App
 ---
 
 # ApplicationSummary
-<a name="API_ApplicationSummary"></a>
 
 Summary of an application for list operations
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-on
 ---
 
 # Step 2: Create a sample application revision
-<a name="tutorials-on-premises-instance-2-create-sample-revision"></a>
 
 In this step, you create a sample application revision to deploy to your on-premises instance.
 

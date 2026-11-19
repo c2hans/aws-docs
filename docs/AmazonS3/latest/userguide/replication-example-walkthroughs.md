@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-ex
 ---
 
 # Examples for configuring live replication
-<a name="replication-example-walkthroughs"></a>
 
 The following examples provide step-by-step walkthroughs that show how to configure live replication for common use cases.
 

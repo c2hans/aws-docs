@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ba
 ---
 
 # BatchGetStreamKey
-<a name="API_BatchGetStreamKey"></a>
 
 Performs [GetStreamKey](API_GetStreamKey.md) on multiple ARNs simultaneously.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mu
 ---
 
 # Create a hierarchical, multi-Region IPAM architecture on AWS by using Terraform
-<a name="multi-region-ipam-architecture"></a>
 
 *Donny Schreiber, Amazon Web Services*
 

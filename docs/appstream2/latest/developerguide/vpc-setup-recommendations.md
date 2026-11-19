@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/vpc-set
 ---
 
 # VPC Setup Recommendations
-<a name="vpc-setup-recommendations"></a>
 
 When you create a fleet, or launch an image builder or app block builder, you specify the VPC and one or more subnets to use. You can provide additional access control to your VPC by specifying security groups.
 

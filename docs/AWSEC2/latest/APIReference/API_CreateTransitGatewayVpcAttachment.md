@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayVpcAttachment
-<a name="API_CreateTransitGatewayVpcAttachment"></a>
 
 Attaches the specified VPC to the specified transit gateway.
 

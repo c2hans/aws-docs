@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/migration-workflow-gs.html
 ---
 
 # Migration workflow
-<a name="migration-workflow-gs"></a>
 
 The general process is:
 

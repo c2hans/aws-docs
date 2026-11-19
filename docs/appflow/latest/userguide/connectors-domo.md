@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-domo
 ---
 
 # Domo connector for Amazon AppFlow
-<a name="connectors-domo"></a>
 
 Domo is a business intelligence solution. If you're a Domo user, your account contains data about your Domo resources, such as your datasets and data permissions policies. You can use Amazon AppFlow to transfer data from Domo to certain AWS services or other supported applications.
 

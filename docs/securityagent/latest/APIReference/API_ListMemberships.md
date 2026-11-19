@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListMemberships
-<a name="API_ListMemberships"></a>
 
 Returns a paginated list of membership summaries for the specified agent space within an application.
 

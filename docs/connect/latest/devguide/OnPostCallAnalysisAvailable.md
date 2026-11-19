@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnPostCallAnalys
 ---
 
 # OnPostCallAnalysisAvailable
-<a name="OnPostCallAnalysisAvailable"></a>
 
 ## Agent Hierarchy
 <a name="agent-hierarchy"></a>

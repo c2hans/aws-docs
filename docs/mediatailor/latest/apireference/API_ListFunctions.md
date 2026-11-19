@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_List
 ---
 
 # ListFunctions
-<a name="API_ListFunctions"></a>
 
 Retrieves all functions associated with your AWS account in the current Region. For more information about functions, see [Working with functions](https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions.html) in the *MediaTailor User Guide*.
 

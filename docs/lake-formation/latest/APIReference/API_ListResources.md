@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # ListResources
-<a name="API_ListResources"></a>
 
 Lists the resources registered to be managed by the Data Catalog.
 

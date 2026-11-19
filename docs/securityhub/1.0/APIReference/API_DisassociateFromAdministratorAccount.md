@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Disasso
 ---
 
 # DisassociateFromAdministratorAccount
-<a name="API_DisassociateFromAdministratorAccount"></a>
 
 Disassociates the current Security Hub CSPM member account from the associated administrator account.
 

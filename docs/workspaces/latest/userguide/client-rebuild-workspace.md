@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/client-rebui
 ---
 
 # Rebuilding a WorkSpace
-<a name="client-rebuild-workspace"></a>
 
 To restore the operating system that is running on your WorkSpace to its original state, you can rebuild the WorkSpace.
 

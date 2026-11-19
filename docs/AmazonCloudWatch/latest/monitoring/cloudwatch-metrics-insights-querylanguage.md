@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # Query components and syntax in CloudWatch Metrics Insights
-<a name="cloudwatch-metrics-insights-querylanguage"></a>
 
 CloudWatch Metrics Insights syntax is as follows.
 

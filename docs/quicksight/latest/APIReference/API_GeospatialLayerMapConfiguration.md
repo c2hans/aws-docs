@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialLayerMapConfiguration
-<a name="API_GeospatialLayerMapConfiguration"></a>
 
 The map definition that defines map state, map style, and geospatial layers.
 

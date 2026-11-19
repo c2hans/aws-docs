@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceDeploymentCircuitBreaker
-<a name="API_ServiceDeploymentCircuitBreaker"></a>
 
 Information about the circuit breaker used to determine when a service deployment has failed.
 

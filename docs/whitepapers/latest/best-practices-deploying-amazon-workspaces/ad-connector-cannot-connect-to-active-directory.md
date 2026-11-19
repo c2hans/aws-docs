@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # AD Connector cannot connect to Active Directory
-<a name="ad-connector-cannot-connect-to-active-directory"></a>
 
  For AD Connector to connect to the on-premises directory, the firewall for the on-premises network must have certain ports open to the CIDRs for both subnets in the VPC. Refer to [Scenario 1: Using AD Connector to Proxy Authentication to On-Premises Active Directory Service](scenario-1-using-ad-connector-to-proxy-authentication-to-on-premises-active-directory-service.md). To test if these conditions are met, perform the following steps.
 

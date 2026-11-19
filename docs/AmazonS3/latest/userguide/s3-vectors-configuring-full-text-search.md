@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-con
 ---
 
 # Configuring full-text search
-<a name="s3-vectors-configuring-full-text-search"></a>
 
 For an S3 vector index in your vector bucket, you can configure a metadata field as full-text searchable by adding its key to the `textSearchConfigurations` list in the index's metadata configuration. Amazon S3 Vectors then indexes the data in that field for BM25 (Best Matching 25) scoring, using a built-in text analyzer. BM25 is a ranking function that scores each record by how often your query terms appear in the searched field. It gives more weight to rarer terms and less to very common ones, so the records whose text best matches your terms rank highest. You can configure full-text search when you create an index, or add it to an existing index using the AWS SDK, AWS CLI, or the Amazon S3 console.
 

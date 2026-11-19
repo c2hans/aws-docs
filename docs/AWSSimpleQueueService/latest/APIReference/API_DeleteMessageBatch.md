@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # DeleteMessageBatch
-<a name="API_DeleteMessageBatch"></a>
 
 Deletes up to ten messages from the specified queue. This is a batch version of ` DeleteMessage.` The result of the action on each message is reported individually in the response.
 

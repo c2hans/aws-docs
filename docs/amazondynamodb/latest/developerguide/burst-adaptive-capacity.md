@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bur
 ---
 
 # DynamoDB burst and adaptive capacity
-<a name="burst-adaptive-capacity"></a>
 
 To minimize throttling because of throughput exceptions, DynamoDB uses *burst capacity* to handle usage spikes. DynamoDB uses *adaptive capacity* to help accommodate uneven access patterns.
 

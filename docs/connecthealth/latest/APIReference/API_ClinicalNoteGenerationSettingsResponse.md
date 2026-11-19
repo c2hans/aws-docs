@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Cl
 ---
 
 # ClinicalNoteGenerationSettingsResponse
-<a name="API_ClinicalNoteGenerationSettingsResponse"></a>
 
 Response containing settings for clinical note generation
 

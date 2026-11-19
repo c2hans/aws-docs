@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-demo.html
 ---
 
 # Over-the-air updates demo application
-<a name="ota-demo"></a>
 
 FreeRTOS includes a demo application that demonstrates the functionality of the over-the-air (OTA) library. The OTA demo application is located in the `{{freertos}}/demos/ota/ota_demo_core_mqtt/ota_demo_core_mqtt.c` or the `{{freertos}}/demos/ota/ota_demo_core_http/ota_demo_core_http.c` file.
 

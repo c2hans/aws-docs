@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopTr
 ---
 
 # StopTransformJob
-<a name="API_StopTransformJob"></a>
 
 Stops a batch transform job.
 

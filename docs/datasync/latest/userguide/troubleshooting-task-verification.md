@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/troubleshootin
 ---
 
 # Troubleshooting data verification issues
-<a name="troubleshooting-task-verification"></a>
 
 By default, AWS DataSync [verifies the integrity](how-datasync-transfer-works.md#how-verifying-works) of your data at the end of a transfer. Use the following information to help you diagnose common verification errors and warnings, such as files being modified or deleted before DataSync finishes verifying your data.
 

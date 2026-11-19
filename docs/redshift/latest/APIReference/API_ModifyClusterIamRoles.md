@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyC
 ---
 
 # ModifyClusterIamRoles
-<a name="API_ModifyClusterIamRoles"></a>
 
 Modifies the list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services.
 

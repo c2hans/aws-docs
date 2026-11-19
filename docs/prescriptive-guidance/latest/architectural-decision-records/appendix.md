@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/architectur
 ---
 
 # Appendix: Example ADR
-<a name="appendix"></a>
 
 ## Title
 <a name="title.5d173230-cd30-5d62-a057-1ad5a711f78b"></a>

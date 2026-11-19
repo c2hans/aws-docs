@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ActSumm
 ---
 
 # ActSummary
-<a name="API_ActSummary"></a>
 
 Summary information about an act, including its status and execution timing.
 

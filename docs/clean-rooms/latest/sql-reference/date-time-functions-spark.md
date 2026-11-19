@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/date-ti
 ---
 
 # Date and time functions
-<a name="date-time-functions-spark"></a>
 
 Date and time functions allow you to perform a wide range of operations on date and time data, such as extracting parts of a date, performing date calculations, formatting dates and times, and working with the current date and time. These functions are essential for tasks such as data analysis, reporting, and data manipulation involving temporal data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-patterns
 ---
 
 # Best practices for Amazon EventBridge event patterns
-<a name="eb-patterns-best-practices"></a>
 
 Below are some best practices to consider when defining event patterns in your event bus rules.
 

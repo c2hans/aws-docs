@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/delete-inf
 ---
 
 # Delete an infrastructure configuration
-<a name="delete-infra-config"></a>
 
 You can delete an infrastructure configuration that you no longer need. You can't delete an infrastructure configuration while an image pipeline references it. First update or delete the pipeline, and then delete the infrastructure configuration.
 

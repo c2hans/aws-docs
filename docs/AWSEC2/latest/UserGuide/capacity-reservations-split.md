@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # Split off capacity from an existing Capacity Reservation
-<a name="capacity-reservations-split"></a>
 
 You can split off capacity from an existing Capacity Reservation to create a new reservation. By splitting capacity, you allocate a portion of the original reservation to a specific workload or share it with another AWS account. For example, to partially share a Capacity Reservation with another account, you can split off some of the capacity to create a smaller sized Capacity Reservation. The smaller sized Capacity Reservation can then be shared with the other accounts using [AWS Resource Access Manager](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html).
 

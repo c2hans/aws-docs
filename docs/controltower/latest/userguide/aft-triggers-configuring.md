@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-trigge
 ---
 
 # Configuring customization triggers
-<a name="aft-triggers-configuring"></a>
 
 To enable customization triggers, set the `aft_customization_triggers` variable in your AFT deployment module:
 

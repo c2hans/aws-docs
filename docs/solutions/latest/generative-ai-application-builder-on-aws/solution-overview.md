@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # This solution facilitates the development, rapid experimentation, and deployment of generative artificial intelligence (AI) applications
-<a name="solution-overview"></a>
 
 Generative AI Application Builder on AWS facilitates the development, rapid experimentation, and deployment of generative artificial intelligence (AI) applications without requiring deep experience in AI. This AWS Solution accelerates development and streamlines experimentation by helping you:
 + Ingest your business-specific data and documents

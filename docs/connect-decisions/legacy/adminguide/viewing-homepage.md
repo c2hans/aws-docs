@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/view
 ---
 
 # Log on to AWS Supply Chain web application
-<a name="viewing-homepage"></a>
 
 As an AWS Supply Chain administrator, you should have received an email invite to the AWS Supply Chain web application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 This section outlines a set of best practices for addressing key challenges in replatforming mainframe workloads to cloud environments while keeping the database on Db2 for z/OS.
 

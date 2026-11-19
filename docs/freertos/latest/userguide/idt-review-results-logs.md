@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-review-res
 ---
 
 # Review IDT test results and logs
-<a name="idt-review-results-logs"></a>
 
 This section describes the format in which IDT generates console logs and test reports.
 

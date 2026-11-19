@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Clarif
 ---
 
 # ClarifyCheckStepMetadata
-<a name="API_ClarifyCheckStepMetadata"></a>
 
 The container for the metadata for the ClarifyCheck step. For more information, see the topic on [ClarifyCheck step](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html#step-type-clarify-check) in the *Amazon SageMaker Developer Guide*.
 

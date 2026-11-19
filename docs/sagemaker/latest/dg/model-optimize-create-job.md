@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-optimize-creat
 ---
 
 # Create an inference optimization job
-<a name="model-optimize-create-job"></a>
 
 You can create an inference optimization job by using Studio or the SageMaker AI Python SDK. The job optimizes your model by applying the techniques that you choose. For more information, see [Optimization techniques](model-optimize.md#optimization-techniques).
 

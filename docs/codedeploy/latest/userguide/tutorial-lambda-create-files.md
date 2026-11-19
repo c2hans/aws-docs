@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-lam
 ---
 
 # Create your files
-<a name="tutorial-lambda-create-files"></a>
 
  To create your infrastructure, you must create the following files:
 + `template.yml`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Alarms
-<a name="monitoring-alarms"></a>
 
 Innovation Sandbox deploys Amazon CloudWatch Alarms to alert you to operational issues. By default, none of the alarms have notification actions attached. To receive notifications, subscribe an Amazon SNS topic to the alarm. For guidance, refer to [Acting on alarm changes](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Acting_Alarm_Changes.html).
 

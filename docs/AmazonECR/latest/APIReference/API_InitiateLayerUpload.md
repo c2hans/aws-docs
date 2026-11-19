@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Initia
 ---
 
 # InitiateLayerUpload
-<a name="API_InitiateLayerUpload"></a>
 
 Notifies Amazon ECR that you intend to upload an image layer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_ide
 ---
 
 # Identity-based policies and resource-based policies
-<a name="access_policies_identity-vs-resource"></a>
 
 A policy is an object in AWS that, when associated with an identity or resource, defines their permissions. When you create a permissions policy to restrict access to a resource, you can choose an *identity-based policy* or a *resource-based policy*.
 

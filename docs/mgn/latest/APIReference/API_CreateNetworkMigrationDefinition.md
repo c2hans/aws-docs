@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateNetwor
 ---
 
 # CreateNetworkMigrationDefinition
-<a name="API_CreateNetworkMigrationDefinition"></a>
 
 Creates a new network migration definition that specifies the source and target network configuration for a migration.
 

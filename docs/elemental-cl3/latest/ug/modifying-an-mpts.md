@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/modifying-an-mpt
 ---
 
 # Modifying an MPTS
-<a name="modifying-an-mpts"></a>
 
 1. On the Conductor Live main menu, choose **MPTS**.
 

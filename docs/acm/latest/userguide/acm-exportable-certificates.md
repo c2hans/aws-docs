@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-exportable-cert
 ---
 
 # AWS Certificate Manager exportable public certificates
-<a name="acm-exportable-certificates"></a>
 
 AWS Certificate Manager exportable public certificates lets you provision, manage, and deploy [SSL/TLS certificates](acm-concepts.md#concept-sslcert) anywhere - including Amazon EC2 instances, containers, and on-premises hosts. This feature extends ACM issued public certificates beyond integrated AWS services, giving you centralized control over certificates across your entire infrastructure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # AutomationStreamUpdate
-<a name="API_AutomationStreamUpdate"></a>
 
 Contains information about an update to an automation stream.
 

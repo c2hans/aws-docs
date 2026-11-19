@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Delete
 ---
 
 # DeleteCollector
-<a name="API_DeleteCollector"></a>
 
 Deletes the Collector for the caller's account. The Collector first enters PENDING\_DELETION, then the service removes its schedule, AWS Config service-linked recorder, versioned S3 bucket, KMS key, and persisted record.
 

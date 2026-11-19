@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/versio
 ---
 
 # Versioning
-<a name="versioning"></a>
 
 **Compatibility between XML and Conductor Live Client**
 Starting with version 3.0.3, Conductor Live can accept XML that was generated using a software release that is up to 2 versions older.

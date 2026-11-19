@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/configurations-arn.
 ---
 
 # Configuration
-<a name="configurations-arn"></a>
 
 Represents an MSK configuration. Use this path to describe the configuration.
 

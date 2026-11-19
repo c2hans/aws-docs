@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # ValidationException
-<a name="API_ValidationException"></a>
 
 The resource passed is invalid.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::XRay::TransactionSearchConfig
-<a name="aws-resource-xray-transactionsearchconfig"></a>
 
 Use the `AWS::XRay::TransactionSearchConfig` resource to configure the percentage of traces indexed from CloudWatch Logs to X-Ray for transaction search.
 

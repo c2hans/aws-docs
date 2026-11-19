@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LineC
 ---
 
 # LineChartConfiguration
-<a name="API_LineChartConfiguration"></a>
 
 The configuration of a line chart.
 

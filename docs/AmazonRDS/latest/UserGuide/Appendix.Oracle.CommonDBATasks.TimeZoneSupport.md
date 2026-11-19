@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Setting the database time zone
-<a name="Appendix.Oracle.CommonDBATasks.TimeZoneSupport"></a>
 
 You can set the time zone of your Amazon RDS Oracle database in the following ways:
 + The `Timezone` option

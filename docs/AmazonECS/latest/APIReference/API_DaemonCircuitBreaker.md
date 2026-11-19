@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonCircuitBreaker
-<a name="API_DaemonCircuitBreaker"></a>
 
 Information about the circuit breaker used to determine when a daemon deployment has failed.
 

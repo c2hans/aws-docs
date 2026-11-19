@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP01 Shift compliance checks left with proactive controls
-<a name="fnd05-bp01"></a>
 
  Proactive controls evaluate infrastructure and configuration against your organization's standards before resources are provisioned, so non-compliant resources are blocked at deploy time. Shifting these checks into pipelines, templates, and provisioning flows shortens the feedback loop for builders, shrinks the backlog that detective tooling has to work through, and reduces the volume of remediation work that lands on downstream teams.
 

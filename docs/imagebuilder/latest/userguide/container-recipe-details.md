@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/container-
 ---
 
 # List and view container recipe details
-<a name="container-recipe-details"></a>
 
 This section describes the ways that you can find information and view details for your EC2 Image Builder container recipes.
 

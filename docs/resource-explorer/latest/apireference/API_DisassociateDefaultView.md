@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # DisassociateDefaultView
-<a name="API_DisassociateDefaultView"></a>
 
 After you call this operation, the affected AWS Region no longer has a default view. All [Search](API_Search.md) operations in that Region must explicitly specify a view or the operation fails. You can configure a new default by calling the [AssociateDefaultView](API_AssociateDefaultView.md) operation.
 

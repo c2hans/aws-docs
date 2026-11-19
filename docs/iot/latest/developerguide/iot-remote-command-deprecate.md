@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-remote-com
 ---
 
 # Deprecate a command resource
-<a name="iot-remote-command-deprecate"></a>
 
 Deprecate commands to indicate they are outdated and should not be used. For example, deprecate commands no longer actively maintained or when creating newer commands with the same ID but different payloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TreeM
 ---
 
 # TreeMapFieldWells
-<a name="API_TreeMapFieldWells"></a>
 
 The field wells of a tree map.
 

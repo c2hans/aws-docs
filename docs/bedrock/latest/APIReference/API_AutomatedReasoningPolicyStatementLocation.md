@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyStatementLocation
-<a name="API_AutomatedReasoningPolicyStatementLocation"></a>
 
 Describes the location of a statement within a source document using line numbers.
 

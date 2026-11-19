@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Network attachment
-<a name="network-attachment"></a>
 
  Each AWS Outposts rack is configured with redundant top-of-rack switches called Outpost Networking Devices (ONDs). The compute and storage servers in each rack connect to both ONDs. You should connect each OND to a separate switch called a Customer Networking Device (CND) in your data center to provide diverse physical and logical paths for each Outpost rack. ONDs connect to your CNDs with one or more physical connections using fiber optic cables and optical transceivers. The [physical connections](https://docs.aws.amazon.com/outposts/latest/userguide/local-network-connectivity.html#physical-connectivity) are configured in logical [link aggregation group (LAG) links](https://docs.aws.amazon.com/outposts/latest/userguide/local-network-connectivity.html#link-aggregation).
 

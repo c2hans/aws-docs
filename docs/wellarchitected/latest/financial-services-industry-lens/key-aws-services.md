@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Key AWS services
-<a name="key-aws-services"></a>
 +  **Security foundations**
   +  [AWS Control Tower](https://aws.amazon.com/controltower/): Set up and govern a secure, multi-account AWS environment
   +  [AWS Organizations](https://aws.amazon.com/organizations/): Centrally manage your environment as you scale your AWS resources

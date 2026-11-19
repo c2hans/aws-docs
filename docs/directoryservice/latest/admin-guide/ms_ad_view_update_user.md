@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Viewing and updating an AWS Managed Microsoft AD user
-<a name="ms_ad_view_update_user"></a>
 
 Use the following procedure to view or update an AWS Managed Microsoft AD user's details with AWS Directory Service Data in the AWS Management Console, AWS CLI, or AWS Tools for PowerShell.
 

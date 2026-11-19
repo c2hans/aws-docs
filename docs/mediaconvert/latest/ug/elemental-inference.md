@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/elemental-inferen
 ---
 
 # AWS Elemental MediaConvert features that use AWS Elemental Inference
-<a name="elemental-inference"></a>
 
  AWS Elemental Inference is a managed media service that uses AI to generate metadata from media files. For more information, see [Elemental Inference](https://aws.amazon.com/elemental-inference/) on the AWS website.
 

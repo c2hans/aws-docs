@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CPUUtili
 ---
 
 # CPUUtilization
-<a name="API_CPUUtilization"></a>
 
 CPU utilization metrics for an instance.
 

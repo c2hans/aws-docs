@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 ---
 
 # ListEmailContacts
-<a name="API_ListEmailContacts"></a>
 
 Lists all email contacts created under the Account.
 

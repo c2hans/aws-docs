@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/QuickStartC
 ---
 
 # Quick Start: Use CloudFormation to get started with CloudWatch Logs
-<a name="QuickStartCloudFormation"></a>
 
 AWS CloudFormation enables you to describe and provision your AWS resources in JSON format. The advantages of this method include being able to manage a collection of AWS resources as a single unit, and easily replicating your AWS resources across Regions.
 

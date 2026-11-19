@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_StopMo
 ---
 
 # StopMonitoringMembers
-<a name="API_StopMonitoringMembers"></a>
 
 Stops GuardDuty monitoring for the specified member accounts. Use the `StartMonitoringMembers` operation to restart monitoring for those accounts.
 

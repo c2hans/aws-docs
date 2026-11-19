@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/component-r
 ---
 
 # AWS IoT Greengrass component recipe reference
-<a name="component-recipe-reference"></a>
 
 The component recipe is a file that defines a component's details, dependencies, artifacts, and lifecycles. The component *lifecycle* specifies the commands to run to install, run, and shut down the component, for example. The AWS IoT Greengrass core uses the lifecycles that you define in the recipe to install and run components. The AWS IoT Greengrass service uses the recipe to identify the dependencies and artifacts to deploy to your core devices when you deploy the component.
 

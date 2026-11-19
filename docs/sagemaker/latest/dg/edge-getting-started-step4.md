@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-getting-started
 ---
 
 # Download and Set Up Edge Manager
-<a name="edge-getting-started-step4"></a>
 
 The Edge Manager agent is an inference engine for your edge devices. Use the agent to make predictions with models loaded onto your edge devices. The agent also collects model metrics and captures data at specific intervals.
 

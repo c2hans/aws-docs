@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/product-ty
 ---
 
 # Machine learning products in AWS Marketplace
-<a name="product-types-machine-learning-products"></a>
 
 The Machine Learning category in AWS Marketplace includes products such as machine learning (ML) model packages and algorithms.
 

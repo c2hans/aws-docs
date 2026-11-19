@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CreateSubsc
 ---
 
 # Step 2: (Only if using an organization) Create an IAM role
-<a name="CreateSubscriptionFilter-IAMrole"></a>
 
 In the previous section, if you created the destination by using an access policy that grants permissions to the organization that account `111111111111` is in, instead of granting permissions directly to account `111111111111`, then follow the steps in this section. Otherwise, you can skip to [Step 4: Create a subscription filter](CreateSubscriptionFilter.md).
 

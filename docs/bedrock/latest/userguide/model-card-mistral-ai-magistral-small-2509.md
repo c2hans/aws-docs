@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mist
 ---
 
 # Magistral Small 2509
-<a name="model-card-mistral-ai-magistral-small-2509"></a>
 
 ## ![Mistral AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/mistralai.png) Mistral AI — Magistral Small 2509
 <a name="model-card-mistral-ai-magistral-small-2509-header"></a>

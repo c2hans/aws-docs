@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # OAuth2Authorizer
-<a name="sam-property-httpapi-oauth2authorizer"></a>
 
 Definition for an OAuth 2.0 authorizer, also known to as a JSON Web Token (JWT) authorizer.
 

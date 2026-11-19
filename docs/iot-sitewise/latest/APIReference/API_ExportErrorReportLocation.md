@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Exp
 ---
 
 # ExportErrorReportLocation
-<a name="API_ExportErrorReportLocation"></a>
 
 Contains the location where error reports will be written on failure.
 

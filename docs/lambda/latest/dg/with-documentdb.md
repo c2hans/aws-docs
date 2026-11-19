@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-documentdb.html
 ---
 
 # Process Amazon DocumentDB events with Lambda
-<a name="with-documentdb"></a>
 
 You can use a Lambda Event Function to process events in an [Amazon DocumentDB (with MongoDB compatibility) change stream](https://docs.aws.amazon.com/documentdb/latest/developerguide/change_streams.html) by configuring an Amazon DocumentDB cluster as an event source. Then, you can automate event-driven workloads by invoking your Lambda Event Function each time that data changes with your Amazon DocumentDB cluster.
 

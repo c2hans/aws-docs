@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateT
 ---
 
 # UpdateTaskExecution
-<a name="API_UpdateTaskExecution"></a>
 
 Updates the configuration of a running AWS DataSync task execution.
 

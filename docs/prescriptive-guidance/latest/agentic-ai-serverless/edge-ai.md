@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Edge AI and global inference distribution
-<a name="edge-ai"></a>
 
 Although cloud-based inference serves most enterprise use cases, certain scenarios require real-time responses, offline capabilities, or proximity to the data source or user. For these cases, *edge AI*, executing AI logic on or near the device, offers a powerful complement to serverless cloud architecture.
 

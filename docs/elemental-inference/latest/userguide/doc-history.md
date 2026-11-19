@@ -3,14 +3,13 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/doc
 ---
 
 # Document history for user guide
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Elemental Inference
 + **API version: latest**
 
 | Change | Description | Date |
 | --- |--- |--- |
-| [Customer decisions](#doc-history) | Added a chapter that describes how to use question sets to get customer decisions about each shot and scene that contextual metadata analyzes. | November 27, 2026 |
+| [Customer decisions](doc-history.md) | Added a chapter that describes how to use question sets to get customer decisions about each shot and scene that contextual metadata analyzes. | November 27, 2026 |
 | [Functions](what-is.md) | You can now use functions to add your own analysis to a feed. A function runs a prompt that you write against an Amazon Bedrock model in your account, or reshapes the metadata that Elemental Inference already produces. Elemental Inference publishes the result to the feed's metadata timeline. | November 17, 2026 |
 | [Elemental Inference playground preview of all features](what-is.md) | You can now use the AWS Elemental Inference playground to preview smart cropping, event clipping, smart subtitles, and contextual metadata together on a clip of a recorded video, so you can see what each feature returns for your content before you build a live workflow. The playground's service role update now keeps access to the buckets that the role already covers. | November 12, 2026 |
 | [Elemental Inference playground for smart crop, and console procedure updates](what-is.md) | You can now use the AWS Elemental Inference playground to preview smart cropping on a recorded video, without setting up a live feed. This guide also has updated console procedures for feeds, feed resource policies, feed monitoring, and dictionaries. | September 28, 2026 |

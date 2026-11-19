@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ReportFrequency
-<a name="API_ReportFrequency"></a>
 
 Details about how frequently reports are generated.
 

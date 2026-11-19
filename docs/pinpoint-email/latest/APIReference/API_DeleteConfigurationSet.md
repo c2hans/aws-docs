@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_D
 ---
 
 # DeleteConfigurationSet
-<a name="API_DeleteConfigurationSet"></a>
 
 Delete an existing configuration set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdateBacklogTask
-<a name="API_UpdateBacklogTask"></a>
 
 Update an existing backlog task.
 

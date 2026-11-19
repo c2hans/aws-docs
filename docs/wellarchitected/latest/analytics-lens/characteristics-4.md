@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/ch
 ---
 
 # Characteristics
-<a name="characteristics-4"></a>
 
  **Discoverability:** The ability of the system to make operational data available for consumption. This involves discovering multiple disparate types of data available within an application that can be used for various ad hoc explorations.
 

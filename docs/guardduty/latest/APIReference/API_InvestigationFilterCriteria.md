@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationFilterCriteria
-<a name="API_InvestigationFilterCriteria"></a>
 
 Contains the criteria used to filter investigations.
 

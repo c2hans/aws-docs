@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/disable-identi
 ---
 
 # Disable Identity Resolution in Connect Customer Customer Profiles
-<a name="disable-identity-resolution"></a>
 
 ## Disable machine learning-based
 <a name="disable-identity-resolution-ml"></a>

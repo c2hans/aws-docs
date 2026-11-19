@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Valida
 ---
 
 # ValidationSourceAnalysis
-<a name="API_ValidationSourceAnalysis"></a>
 
 Proof of exploitability the validation agent produced by reading the repository's source, with nothing built or run. Further members, such as diagram and references, can be added later as optional details.
 

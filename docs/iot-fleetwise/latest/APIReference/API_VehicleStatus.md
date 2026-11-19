@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ve
 ---
 
 # VehicleStatus
-<a name="API_VehicleStatus"></a>
 
 Information about a campaign associated with a vehicle.
 

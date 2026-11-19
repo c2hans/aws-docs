@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/using-servi
 ---
 
 # Using service roles
-<a name="using-service-roles"></a>
 
  **Supports service roles:** No
 

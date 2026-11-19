@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-complianc
 ---
 
 # Agent description requirements
-<a name="rcs-compliance-agent-description"></a>
 
 The agent description is the most common reason for registration denial. Carriers require the description to clearly state what types of messages users will receive from your agent.
 

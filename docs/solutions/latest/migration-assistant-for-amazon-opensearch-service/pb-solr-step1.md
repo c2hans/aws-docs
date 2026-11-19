@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 1: Create an Apache Solr backup and sync it to Amazon S3
-<a name="pb-solr-step1"></a>
 
 First, stop or pause writes to the Apache Solr source so the backup is a consistent point-in-time copy. This playbook shows the externally managed backup path: you create a backup using the API for your deployment topology, write it to a path that the Migration Assistant can later read, and sync that path to your Amazon S3 migration bucket.
 

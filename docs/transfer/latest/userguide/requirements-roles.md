@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/requirements-r
 ---
 
 # Create an IAM role and policy
-<a name="requirements-roles"></a>
 
 This topic describes the types of policies and roles that can be used with AWS Transfer Family, and walks through the process of creating a user role. It also describes how session policies work and provides an example user role.
 

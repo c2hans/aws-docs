@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CapabilityHe
 ---
 
 # CapabilityHealth
-<a name="API_CapabilityHealth"></a>
 
 Health information for a capability, including any issues that may be affecting its operation.
 

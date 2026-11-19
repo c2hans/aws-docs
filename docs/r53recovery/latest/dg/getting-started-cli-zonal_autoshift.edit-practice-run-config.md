@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/getting-started-cl
 ---
 
 # Edit a practice run configuration
-<a name="getting-started-cli-zonal_autoshift.edit-practice-run-config"></a>
 
 You can edit a practice run configuration for a resource with the CLI to update different configuration options, such as changing the alarms for practice runs or updating the blocked dates or blocked windows, when ARC won't start practice runs. To edit a practice run configuration, use the `update-practice-run-configuration` command.
 

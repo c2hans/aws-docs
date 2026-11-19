@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # RiskConfigurationType
-<a name="API_RiskConfigurationType"></a>
 
 The settings of risk configuration for threat protection with threat protection in a user pool.
 

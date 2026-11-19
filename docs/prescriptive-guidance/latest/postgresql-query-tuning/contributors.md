@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this document include:
 + Tirumala Dasari, Lead Consultant – Databases, AWS

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListReso
 ---
 
 # ListResolvers
-<a name="API_ListResolvers"></a>
 
 Lists the resolvers for a given API and type.
 

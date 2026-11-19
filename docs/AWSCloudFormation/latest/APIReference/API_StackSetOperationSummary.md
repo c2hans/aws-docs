@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackSetOperationSummary
-<a name="API_StackSetOperationSummary"></a>
 
 The structures that contain summary information about the specified operation.
 

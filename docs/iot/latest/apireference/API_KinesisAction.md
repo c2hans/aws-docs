@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_KinesisActio
 ---
 
 # KinesisAction
-<a name="API_KinesisAction"></a>
 
 Describes an action to write data to an Amazon Kinesis stream.
 

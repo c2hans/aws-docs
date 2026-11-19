@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationAnalyses
-<a name="API_ListNetworkMigrationAnalyses"></a>
 
 Lists network migration analysis jobs for a specified execution. Returns information about analysis job status and results.
 

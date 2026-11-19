@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/resource-vm-se
 ---
 
 # Deploying and configuring the gateway VM host
-<a name="resource-vm-setup"></a>
 
 The following topics provide information about setting up the virtual machine host platform for your gateway.
 

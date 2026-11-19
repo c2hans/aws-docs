@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # AWS CodeDeploy deploy action reference
-<a name="action-reference-CodeDeploy"></a>
 
 You use an AWS CodeDeploy action to deploy application code to your deployment fleet. Your deployment fleet can consist of Amazon EC2 instances, on-premises instances, or both.
 

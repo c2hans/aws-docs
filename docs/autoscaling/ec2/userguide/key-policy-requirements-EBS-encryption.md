@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/key-policy-req
 ---
 
 # Required AWS KMS key policy for use with encrypted volumes
-<a name="key-policy-requirements-EBS-encryption"></a>
 
 Amazon EC2 Auto Scaling uses [service-linked roles](autoscaling-service-linked-role.md) to delegate permissions to other AWS services. Amazon EC2 Auto Scaling service-linked roles are predefined and include permissions that Amazon EC2 Auto Scaling requires to call other AWS services on your behalf. The predefined permissions also include access to your AWS managed keys. However, they do not include access to your customer managed keys, allowing you to maintain full control over these keys.
 

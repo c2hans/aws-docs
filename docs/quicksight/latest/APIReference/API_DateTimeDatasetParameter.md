@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateT
 ---
 
 # DateTimeDatasetParameter
-<a name="API_DateTimeDatasetParameter"></a>
 
 A date time parameter for a dataset.
 

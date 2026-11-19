@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/configuri
 ---
 
 # Configuring File browser access
-<a name="configuring-file-browser-access"></a>
 
 RES Administrators can toggle **Access data** on or off under **File browser permissions**. If **Access data** is turned off, users will not see **File Browser** navigation in their web portal and cannot upload or download data attached to their global file system. When **Access data** is enabled, users have access to **File Browser** navigation in their web portal which allows them to upload or download data that is attached to their global file system.
 

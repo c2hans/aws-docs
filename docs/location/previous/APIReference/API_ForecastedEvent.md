@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Forec
 ---
 
 # ForecastedEvent
-<a name="API_ForecastedEvent"></a>
 
 A forecasted event represents a geofence event in relation to the requested device state, that may occur given the provided device state and time horizon.
 

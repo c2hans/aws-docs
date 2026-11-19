@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-api-sche
 ---
 
 # Define OpenAPI schemas for your agent's action groups in Amazon Bedrock
-<a name="agents-api-schema"></a>
 
 When you create an action group in Amazon Bedrock, you must define the parameters that the agent needs to invoke from the user. You can also define API operations that the agent can invoke using these parameters. To define the API operations, create an OpenAPI schema in JSON or YAML format. You can create OpenAPI schema files and upload them to Amazon Simple Storage Service (Amazon S3). Alternatively, you can use the OpenAPI text editor in the console, which will validate your schema. After you create an agent, you can use the text editor when you add an action group to the agent or edit an existing action group. For more information, see [Modify an agent](agents-edit.md).
 

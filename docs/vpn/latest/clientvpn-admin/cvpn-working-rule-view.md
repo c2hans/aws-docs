@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # View AWS Client VPN authorization rules
-<a name="cvpn-working-rule-view"></a>
 
 You can view authorization rules for a specific Client VPN endpoint using the console and the AWS CLI.
 

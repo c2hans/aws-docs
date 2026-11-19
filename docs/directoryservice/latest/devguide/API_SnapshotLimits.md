@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Sna
 ---
 
 # SnapshotLimits
-<a name="API_SnapshotLimits"></a>
 
 Contains manual snapshot limit information for a directory.
 

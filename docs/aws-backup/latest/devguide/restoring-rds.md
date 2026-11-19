@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-rds
 ---
 
 # Restore an RDS database
-<a name="restoring-rds"></a>
 
 Restoring an Amazon RDS database requires specifying multiple restore options. For more information about these options, see [Backing Up and Restoring an Amazon RDS DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html) in the *Amazon RDS User Guide*.
 

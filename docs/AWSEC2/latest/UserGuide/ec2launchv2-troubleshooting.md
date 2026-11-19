@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launchv2-trou
 ---
 
 # Troubleshoot issues with the EC2Launch v2 agent
-<a name="ec2launchv2-troubleshooting"></a>
 
 This section shows common troubleshooting scenarios for EC2Launch v2, information about viewing Windows event logs, and console log output and messages.
 

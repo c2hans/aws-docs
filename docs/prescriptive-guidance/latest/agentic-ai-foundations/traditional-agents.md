@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Traditional agent architecture: perceive, reason, act
-<a name="traditional-agents"></a>
 
 The following diagram illustrates how the building blocks discussed in the [previous section](core-modules.md) operate under the perceive, reason, act cycle.
 

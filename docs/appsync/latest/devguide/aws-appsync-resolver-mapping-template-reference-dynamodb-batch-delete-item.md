@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # BatchDeleteItem
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-batch-delete-item"></a>
 
 The `BatchDeleteItem` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a `BatchWriteItem` request to DynamoDB to delete multiple items, potentially across multiple tables. For this request template, you must specify the following:
 + The table names where to delete the items from

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReadSetS3Access.htm
 ---
 
 # ReadSetS3Access
-<a name="API_ReadSetS3Access"></a>
 
 The S3 URI for each read set file.
 

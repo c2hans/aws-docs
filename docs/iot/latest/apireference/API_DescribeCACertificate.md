@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeCACe
 ---
 
 # DescribeCACertificate
-<a name="API_DescribeCACertificate"></a>
 
 Describes a registered CA certificate.
 

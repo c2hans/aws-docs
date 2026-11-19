@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # CreatePortfolio
-<a name="API_CreatePortfolio"></a>
 
 Creates a portfolio.
 

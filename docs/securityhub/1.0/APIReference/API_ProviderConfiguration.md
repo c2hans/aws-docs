@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Provide
 ---
 
 # ProviderConfiguration
-<a name="API_ProviderConfiguration"></a>
 
 The initial configuration settings required to establish an integration between Security Hub and third-party provider.
 

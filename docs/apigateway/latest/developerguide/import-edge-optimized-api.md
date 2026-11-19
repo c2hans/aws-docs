@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/import-
 ---
 
 # Import an edge-optimized API into API Gateway
-<a name="import-edge-optimized-api"></a>
 
 You can import an API's OpenAPI definition file to create a new edge-optimized API by specifying the `EDGE` endpoint type as an additional input, besides the OpenAPI file, to the import operation. You can do so using the API Gateway console, AWS CLI, or an AWS SDK.
 

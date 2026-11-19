@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting.htm
 ---
 
 # Troubleshooting Cost and Usage Reports
-<a name="troubleshooting"></a>
 
 Use the following topics to help you troubleshoot common issues with Cost and Usage Reports.
 

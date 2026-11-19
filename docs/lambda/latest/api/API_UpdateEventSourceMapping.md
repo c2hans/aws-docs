@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_UpdateEventSourceM
 ---
 
 # UpdateEventSourceMapping
-<a name="API_UpdateEventSourceMapping"></a>
 
 Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-patterns-mu
 ---
 
 # Multi-Region architecture patterns for SAP HANA
-<a name="hana-ops-patterns-multi"></a>
 
  AWS Global Infrastructure spans across multiple Regions around the world and this footprint is constantly increasing. For the latest updates, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/). If you are looking for your SAP data to reside in multiple regions at any given point to ensure increased availability and minimal downtime in the event of failure, you should opt for multi-Region architecture patterns.
 

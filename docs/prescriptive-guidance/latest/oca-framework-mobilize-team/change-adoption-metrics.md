@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 1.7 Change adoption metrics
-<a name="change-adoption-metrics"></a>
 
 ## Overview
 <a name="metrics-overview"></a>

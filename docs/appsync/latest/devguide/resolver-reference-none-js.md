@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-referen
 ---
 
 # AWS AppSync JavaScript resolver function reference for `None` data source
-<a name="resolver-reference-none-js"></a>
 
 The AWS AppSync resolver function request and response with the data source of type *None* enables you to shape requests for AWS AppSync local operations.
 

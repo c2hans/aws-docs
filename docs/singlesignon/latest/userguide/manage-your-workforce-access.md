@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-you
 ---
 
 # Set up workforce access to AWS resources
-<a name="manage-your-workforce-access"></a>
 
 Set up how your workforce users authenticate and access AWS resources through IAM Identity Center. This section covers the following components that govern workforce user access to your AWS environment:
 + **Authentication sessions** – Understand how IAM Identity Center manages different types of user sessions, from interactive portal sessions to background application sessions, and how they interact with each other.

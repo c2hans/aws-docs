@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ca-terms-concepts.ht
 ---
 
 # Understanding call analytics terminology for the Amazon Chime SDK
-<a name="ca-terms-concepts"></a>
 
 The following terminology and concepts are central to understanding how to use Amazon Chime SDK call analytics.
 

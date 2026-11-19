@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPIVi
 ---
 
 # KPIVisual
-<a name="API_KPIVisual"></a>
 
 A key performance indicator (KPI).
 

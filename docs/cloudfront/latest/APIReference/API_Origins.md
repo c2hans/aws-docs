@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # Origins
-<a name="API_Origins"></a>
 
 Contains information about the origins for this distribution.
 

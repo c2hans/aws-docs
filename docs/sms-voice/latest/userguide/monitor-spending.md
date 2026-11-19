@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/monitor-spend
 ---
 
 # Monitoring SMS, MMS, and voice spending activity with AWS End User Messaging SMS
-<a name="monitor-spending"></a>
 
 This topic provides information about viewing SMS, MMS, and voice spending metrics in Amazon CloudWatch. It also explains how to set up a CloudWatch alarm that sends you a notification when your monthly SMS, MMS, or voice spending exceeds a certain amount.
 

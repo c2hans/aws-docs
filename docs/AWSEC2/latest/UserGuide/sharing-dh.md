@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharing-dh.html
 ---
 
 # Share an Amazon EC2 Dedicated Host across AWS accounts
-<a name="sharing-dh"></a>
 
 When an owner shares a Dedicated Host, it enables consumers to launch instances on the host. Consumers can launch as many instances onto the shared host as its available capacity allows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Delete
 ---
 
 # DeleteListener
-<a name="API_DeleteListener"></a>
 
 Delete a listener from an accelerator.
 

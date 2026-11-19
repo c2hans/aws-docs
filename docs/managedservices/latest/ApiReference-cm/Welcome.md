@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/W
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 The change management API provides operations to create and manage requests for change (RFCs). RFCs can be created, updated, submitted, approved (or rejected), and canceled.
 
@@ -31,4 +30,4 @@ If an RFC is rejected or canceled, the reason for the action appears in the `Rfc
 The HTTP endpoint for the Change Management API is:
 + https://amscm.us-east-1.amazonaws.com
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

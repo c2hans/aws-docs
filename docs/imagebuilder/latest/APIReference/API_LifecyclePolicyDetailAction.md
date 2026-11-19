@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicyDetailAction
-<a name="API_LifecyclePolicyDetailAction"></a>
 
 Contains the action configuration for a lifecycle policy rule: the action to take, and which underlying resources the action extends to.
 

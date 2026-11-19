@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/interruptible-ca
 ---
 
 # Interruptible Capacity Reservations
-<a name="interruptible-capacity-reservations"></a>
 
 Interruptible Capacity Reservations help you make unused capacity temporarily available for other workloads within your account. This gives you control to reclaim capacity when needed. When you reclaim capacity, any instances running inside the interruptible reservation are terminated. After creating an interruptible reservation, you can share it with additional AWS accounts or your AWS organization using AWS Resource Access Manager (RAM).
 

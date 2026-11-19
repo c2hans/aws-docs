@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BatchGetM
 ---
 
 # BatchGetMetricData
-<a name="API_BatchGetMetricData"></a>
 
 Retrieves batches of metric data collected based on your sending activity.
 

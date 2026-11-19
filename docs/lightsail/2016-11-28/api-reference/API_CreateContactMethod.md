@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateContactMethod
-<a name="API_CreateContactMethod"></a>
 
 Creates an email or SMS text message contact method.
 

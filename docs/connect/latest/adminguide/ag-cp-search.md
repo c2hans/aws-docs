@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ag-cp-search.h
 ---
 
 # Search for a customer profile in the agent workspace
-<a name="ag-cp-search"></a>
 
 Even when you're not on a contact you can search customer profiles. This is helpful in cases where, for example, you want to return to a customer profile.
 

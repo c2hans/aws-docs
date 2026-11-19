@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops02-b
 ---
 
 # OPS02-BP03 Regularly analyze workload metrics
-<a name="ops02-bp03"></a>
 
  Metrics such as latency, error rate, and capacity show how a system behaves. Regular review of those metrics against expectations and business outcomes helps you make decisions: what to tune, what to investigate, and what is already working.
 

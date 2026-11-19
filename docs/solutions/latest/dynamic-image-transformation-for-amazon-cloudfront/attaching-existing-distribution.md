@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Attaching an existing CloudFront distribution
-<a name="attaching-existing-distribution"></a>
 
 This section provides instructions for integrating the solution with your existing CloudFront distribution for both architectures.
 

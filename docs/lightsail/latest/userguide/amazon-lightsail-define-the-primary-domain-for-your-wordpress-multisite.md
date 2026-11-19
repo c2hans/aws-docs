@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Define the primary domain for your WordPress Multisite instance on Lightsail
-<a name="amazon-lightsail-define-the-primary-domain-for-your-wordpress-multisite"></a>
 
 A WordPress Multisite instance in Amazon Lightsail is designed to use multiple domains, or subdomains, for each blog site that you create within that instance. Because of this, you must define the primary domain to use for the main blog of your WordPress Multisite instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/deploying-cu
 ---
 
 # Deploy a custom model
-<a name="deploying-custom-model"></a>
 
 You can deploy a custom model with the Amazon Bedrock console, AWS Command Line Interface, or AWS SDKs. For information about using the deployment for inference, see [Use a deployment for on-demand inference](https://docs.aws.amazon.com/bedrock/latest/userguide/use-custom-model-on-demand.html).
 

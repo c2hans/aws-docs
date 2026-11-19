@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AdminGetUser
-<a name="API_AdminGetUser"></a>
 
 Given a username, returns details about a user profile in a user pool. You can specify alias attributes in the `Username` request parameter.
 

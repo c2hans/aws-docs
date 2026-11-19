@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_G
 ---
 
 # GetDashboardForJobRun
-<a name="API_GetDashboardForJobRun"></a>
 
 Creates and returns a URL that you can use to access the application UIs for a job run.
 

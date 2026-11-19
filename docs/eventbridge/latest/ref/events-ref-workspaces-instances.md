@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-worksp
 ---
 
 # Amazon WorkSpaces Instances events
-<a name="events-ref-workspaces-instances"></a>
 
 WorkSpaces Instances sends service events to EventBridge via AWS CloudTrail.
 

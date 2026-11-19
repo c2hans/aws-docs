@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DetectMitiga
 ---
 
 # DetectMitigationActionsTaskSummary
-<a name="API_DetectMitigationActionsTaskSummary"></a>
 
  The summary of the mitigation action tasks.
 

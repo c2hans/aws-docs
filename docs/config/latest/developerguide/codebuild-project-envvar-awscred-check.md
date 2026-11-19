@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/codebuild-p
 ---
 
 # codebuild-project-envvar-awscred-check
-<a name="codebuild-project-envvar-awscred-check"></a>
 
 Checks if the project contains environment variables AWS\_ACCESS\_KEY\_ID and AWS\_SECRET\_ACCESS\_KEY. The rule is NON\_COMPLIANT when the project environment variables contains plaintext credentials.
 

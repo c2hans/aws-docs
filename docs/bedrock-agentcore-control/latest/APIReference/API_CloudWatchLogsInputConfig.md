@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CloudWatchLogsInputConfig
-<a name="API_CloudWatchLogsInputConfig"></a>
 
  The configuration for reading agent traces from CloudWatch logs as input for online evaluation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/use-cases.html
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
 You can use the AWS Cost and Usage Reports (AWS CUR) to suit your reports management needs. This section goes in-depth to help you understand use cases such as tracking your Savings Plans and Reserved Instance (RI) utilization, charges, and allocations.
 

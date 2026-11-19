@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/splunk.html
 ---
 
 # Splunk
-<a name="splunk"></a>
 
 Splunk helps make organizations more resilient. Leading organizations use Splunk’s unified security and observability platform to keep their digital systems secure and reliable. Organizations trust Splunk to prevent security, infrastructure, and application issues from becoming major incidents, absorb shocks from digital disruptions and accelerate digital transformation.
 

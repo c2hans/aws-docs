@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/slack.html
 ---
 
 # Slack
-<a name="slack"></a>
 
 The following are the requirements and connection instructions for using Slack with Amazon AppFlow.
 

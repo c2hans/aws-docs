@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Graceful decommission of Spot Instances with Flink on Amazon EMR on EKS
-<a name="jobruns-flink-decommission"></a>
 
 Flink with Amazon EMR on EKS can improve the job restart time during task recovery or scaling operations.
 

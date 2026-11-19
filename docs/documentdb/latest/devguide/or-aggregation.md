@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/or-aggregatio
 ---
 
 # $or
-<a name="or-aggregation"></a>
 
 The `$or` aggregation operator evaluates multiple expressions and returns `true` if at least one expression evaluates to `true`. It returns `false` only if all expressions are `false`.
 

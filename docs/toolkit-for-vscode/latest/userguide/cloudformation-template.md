@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/clou
 ---
 
 # Create a AWS CloudFormation template using the AWS Toolkit for Visual Studio Code
-<a name="cloudformation-template"></a>
 
 The AWS Toolkit for Visual Studio Code can assist you in writing AWS CloudFormation and SAM templates.
 

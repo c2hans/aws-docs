@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/acccept-tgw-attach.html
 ---
 
 # Accept a shared attachment in AWS Transit Gateway
-<a name="acccept-tgw-attach"></a>
 
 If you didn't enable the **Auto accept shared attachments** functionality when you created your transit gateway, you must manually accept cross-account (shared) attachment using either the Amazon VPC Console or the AWS CLI.
 

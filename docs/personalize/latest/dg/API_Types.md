@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon Personalize:
 +  [Algorithm](API_Algorithm.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerJustInTimeAccessTokenPolicy
-<a name="AWSSystemsManagerJustInTimeAccessTokenPolicy"></a>
 
 **Description**: The managed policy AWSSystemsManagerJustInTimeAccessTokenPolicy allows Systems Manager to generate access tokens used for just-in-time node access.
 

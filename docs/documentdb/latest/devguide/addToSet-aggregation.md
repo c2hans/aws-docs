@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/addToSet-aggr
 ---
 
 # $addToSet
-<a name="addToSet-aggregation"></a>
 
 The `$addToSet` aggregation operator returns an array of unique values from a specified expression for each group. It is used within the `$group` stage to accumulate distinct values, automatically eliminating duplicates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalResultOneDriveLocation
-<a name="API_agent-runtime_RetrievalResultOneDriveLocation"></a>
 
 The Microsoft OneDrive location of a retrieval result.
 

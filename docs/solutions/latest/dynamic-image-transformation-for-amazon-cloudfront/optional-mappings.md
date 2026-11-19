@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Optional Configurations
-<a name="optional-mappings"></a>
 
 The following sections provide information surrounding optional features and how to disable them. For each feature, use the following instructions.
 

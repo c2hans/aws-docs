@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # What's new in the AWS SDK for .NET
-<a name="whats-new"></a>
 
 For high-level information about new developments related to the AWS SDK for .NET, see the product page at [https://aws.amazon.com/sdk-for-net/](https://aws.amazon.com/sdk-for-net/) and the [SDK change logs](https://github.com/aws/aws-sdk-net/tree/main/changelogs).
 

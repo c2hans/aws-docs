@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ImageStandardGenerativeField
-<a name="API_data-automation_ImageStandardGenerativeField"></a>
 
 Settings for generating descriptions of images.
 

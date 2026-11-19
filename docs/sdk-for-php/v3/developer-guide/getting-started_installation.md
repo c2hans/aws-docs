@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-s
 ---
 
 # Installing the AWS SDK for PHP Version 3
-<a name="getting-started_installation"></a>
 
 You can install the AWS SDK for PHP Version 3:
 + As a dependency via Composer

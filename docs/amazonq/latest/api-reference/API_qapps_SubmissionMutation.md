@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_S
 ---
 
 # SubmissionMutation
-<a name="API_qapps_SubmissionMutation"></a>
 
 Represents an action performed on a submission.
 

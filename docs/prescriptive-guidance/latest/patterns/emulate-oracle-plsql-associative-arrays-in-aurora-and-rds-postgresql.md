@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/em
 ---
 
 # Emulate Oracle PL/SQL associative arrays in Amazon Aurora PostgreSQL and Amazon RDS for PostgreSQL
-<a name="emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql"></a>
 
 *Rajkumar Raghuwanshi, Bhanu Ganesh Gudivada, and Sachin Khanna, Amazon Web Services*
 

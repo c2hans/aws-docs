@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_SendRawEma
 ---
 
 # Use `SendRawEmail` with an AWS SDK or CLI
-<a name="ses_example_ses_SendRawEmail_section"></a>
 
 The following code examples show how to use `SendRawEmail`.
 

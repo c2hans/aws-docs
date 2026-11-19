@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdateDetector
-<a name="API_UpdateDetector"></a>
 
 Updates the GuardDuty detector specified by the detector ID.
 

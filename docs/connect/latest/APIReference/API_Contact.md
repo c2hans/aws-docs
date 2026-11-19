@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Contact.
 ---
 
 # Contact
-<a name="API_Contact"></a>
 
 Contains information about a contact.
 

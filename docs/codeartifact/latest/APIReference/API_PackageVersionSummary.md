@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageVersionSummary
-<a name="API_PackageVersionSummary"></a>
 
  Details about a package version, including its status, version, and revision. The [ListPackageVersions](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListPackageVersions.html) operation returns a list of `PackageVersionSummary` objects.
 

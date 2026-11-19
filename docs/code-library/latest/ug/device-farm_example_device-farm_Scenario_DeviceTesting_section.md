@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/device-farm_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Upload and test mobile device packages with Device Farm using an AWS SDK
-<a name="device-farm_example_device-farm_Scenario_DeviceTesting_section"></a>
 
 The following code example shows how to upload and test mobile device packages with Device Farm.
 

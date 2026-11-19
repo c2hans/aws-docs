@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRoomsML::ConfiguredModelAlgorithmAssociation TrainedModelExportsMaxSize
-<a name="aws-properties-cleanroomsml-configuredmodelalgorithmassociation-trainedmodelexportsmaxsize"></a>
 
 The maximum size of the trained model metrics that can be exported. If the trained model metrics dataset is larger than this value, it will not be exported.
 

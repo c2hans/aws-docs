@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListProfileObjectTypeItem
-<a name="API_connect-customer-profiles_ListProfileObjectTypeItem"></a>
 
 A ProfileObjectType instance.
 

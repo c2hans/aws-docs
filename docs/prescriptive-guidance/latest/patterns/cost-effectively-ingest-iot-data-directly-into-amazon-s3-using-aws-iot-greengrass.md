@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Cost-effectively ingest IoT data directly into Amazon S3 using AWS IoT Greengrass
-<a name="cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass"></a>
 
 *Sebastian Viviani and Rizwan Syed, Amazon Web Services*
 

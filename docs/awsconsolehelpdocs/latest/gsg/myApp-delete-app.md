@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/myApp-dele
 ---
 
 # Deleting applications in myApplications
-<a name="myApp-delete-app"></a>
 
 You can delete applications if they are no longer needed. Before you delete an application, ensure you remove all associated resource shares and attribute groups that weren't created by an AWS service.
 

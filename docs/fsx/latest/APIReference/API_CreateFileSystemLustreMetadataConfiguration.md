@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSy
 ---
 
 # CreateFileSystemLustreMetadataConfiguration
-<a name="API_CreateFileSystemLustreMetadataConfiguration"></a>
 
 The Lustre metadata performance configuration for the creation of an Amazon FSx for Lustre file system using a `PERSISTENT_2` deployment type. The configuration uses a Metadata IOPS value to set the maximum rate of metadata disk IOPS supported by the file system.
 

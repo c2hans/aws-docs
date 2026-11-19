@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Serialization differences between 1.x and 2.x of the AWS SDK for Java
-<a name="migration-serialization-changes"></a>
 
 ## List objects to request parameters difference
 <a name="serialization-diffs-list-obj-to-req-param"></a>

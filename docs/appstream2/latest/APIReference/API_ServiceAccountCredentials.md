@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Servi
 ---
 
 # ServiceAccountCredentials
-<a name="API_ServiceAccountCredentials"></a>
 
 Describes the credentials for the service account used by the fleet or image builder to connect to the directory.
 

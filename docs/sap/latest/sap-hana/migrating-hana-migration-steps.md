@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/migrating-hana-migra
 ---
 
 # Migration Scenarios
-<a name="migrating-hana-migration-steps"></a>
 
 The following table lists the migration scenarios that we will cover in detail in this guide. The tools and methodologies listed in the table were discussed in the [previous section](migrating-hana-tools.md).
 

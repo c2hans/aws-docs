@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/personalize_exampl
 ---
 
 # Use `CreateSolutionVersion` with an AWS SDK
-<a name="personalize_example_personalize_CreateSolutionVersion_section"></a>
 
 The following code examples show how to use `CreateSolutionVersion`.
 

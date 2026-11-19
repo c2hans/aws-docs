@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Cance
 ---
 
 # CancelIngestion
-<a name="API_CancelIngestion"></a>
 
 Cancels an ongoing ingestion of data into SPICE.
 

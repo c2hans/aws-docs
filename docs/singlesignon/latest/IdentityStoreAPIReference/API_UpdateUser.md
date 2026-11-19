@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # UpdateUser
-<a name="API_UpdateUser"></a>
 
 Updates the specified user metadata and attributes in the specified identity store.
 

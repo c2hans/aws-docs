@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/va-in-voice-namespac
 ---
 
 # Using voice APIs to run voice analytics for the Amazon Chime SDK
-<a name="va-in-voice-namespace"></a>
 
 For backwards compatibility, you can use Amazon Chime SDK Voice APIs to start and manage voice analytics. However, only the media insights pipeline APIs for voice analytics provide new features, so we strongly recommend using them instead.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-ec2two.html
 ---
 
 # Amazon EC2 example two
-<a name="ct-ec2two"></a>
 
 In the following example, an IAM principal running an Amazon EC2 instance creates and mounts a data volume that is encrypted under a KMS key. This action generates multiple CloudTrail log records. For more information on Amazon EBS and encryption, see [Requirements for Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption-requirements.html#ebs-encryption-instance-permissions).
 

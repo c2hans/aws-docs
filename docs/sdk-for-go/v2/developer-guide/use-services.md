@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/use-servic
 ---
 
 # Use the AWS SDK for Go v2 with AWS services
-<a name="use-services"></a>
 
  To make calls to an AWS service, you must first construct a service client instance. A service client provides low-level access to every API action for that service. For example, you create an Amazon S3 service client to make calls to Amazon S3 APIs.
 

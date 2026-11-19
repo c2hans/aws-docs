@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateRuleGr
 ---
 
 # UpdateRuleGroup
-<a name="API_UpdateRuleGroup"></a>
 
 Updates the specified [RuleGroup](API_RuleGroup.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AdminScopeSelection
-<a name="API_AdminScopeSelection"></a>
 
 A selection of accounts and organizational units. This is the reference form, which includes display metadata.
 

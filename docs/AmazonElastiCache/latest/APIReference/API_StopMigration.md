@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # StopMigration
-<a name="API_StopMigration"></a>
 
 Stops an ongoing data sync between the source and the serverless cache. The migration returns to `ready-to-sync`, and you can start the data sync again. If the migration has reported an error, a later `StartMigration` is rejected, and you must use `CompleteMigration` with `Force` to end the migration. This operation is valid only while the migration is syncing. While the migration is `cutting-over`, `StopMigration` fails with `InvalidServerlessCacheStateFault`.
 

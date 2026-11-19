@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # RegionInfo
-<a name="API_RegionInfo"></a>
 
 Information about a AWS Region in your replication set.
 

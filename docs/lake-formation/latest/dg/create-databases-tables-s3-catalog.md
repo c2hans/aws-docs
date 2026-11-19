@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/create-database
 ---
 
 # Creating databases and tables in the S3 tables catalog
-<a name="create-databases-tables-s3-catalog"></a>
 
  You can create databases to organize your Apache Iceberg tables, and tables to define the schema and location of your data in the S3 tables catalog.
 

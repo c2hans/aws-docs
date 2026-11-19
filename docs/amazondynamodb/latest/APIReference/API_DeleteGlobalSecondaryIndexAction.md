@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DeleteGlobalSecondaryIndexAction
-<a name="API_DeleteGlobalSecondaryIndexAction"></a>
 
 Represents a global secondary index to be deleted from an existing table.
 

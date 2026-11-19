@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/sagemaker
 ---
 
 # Integration with Amazon SageMaker AI
-<a name="sagemaker-integration"></a>
 
 **Integration type:** Subscriber
 

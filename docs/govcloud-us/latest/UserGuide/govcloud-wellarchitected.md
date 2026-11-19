@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-we
 ---
 
 # AWS Well-Architected Tool in AWS GovCloud (US)
-<a name="govcloud-wellarchitected"></a>
 
 AWS Well-Architected Tool (AWS WA Tool) is a service in the cloud that provides a consistent process for measuring your architecture using AWS best practices. AWS WA Tool helps you throughout the product lifecycle by:
 + Assisting with documenting the decisions that you make

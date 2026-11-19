@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html
 ---
 
 # PublishBatch
-<a name="API_PublishBatch"></a>
 
 Publishes up to 10 messages to the specified topic in a single batch. This is a batch version of the `Publish` API. If you try to send more than 10 messages in a single batch request, you will receive a `TooManyEntriesInBatchRequest` exception.
 

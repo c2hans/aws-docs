@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Config
 ---
 
 # Configuration
-<a name="API_Configuration"></a>
 
 A structure that contains configuration data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Connect Slack
-<a name="omni-connect-slack"></a>
 
 An integration connects CloudWatch Omni to a tool your team already uses. Slack delivers alert notifications to your team's channels, and lets your team mention the Omni agent there. You manage it in **Settings**, on the **Integrations** page, and a connection applies to your whole space.
 

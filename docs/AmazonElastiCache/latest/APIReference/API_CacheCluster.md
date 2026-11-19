@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheCluster
-<a name="API_CacheCluster"></a>
 
 Contains all of the attributes of a specific cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC04-BP03 Implement network traffic security inspection
-<a name="hnsec04-bp03"></a>
 
  Network traffic security inspection provides a layered security approach to ensure traffic between your cloud and on-premises resources is properly monitored and protected against threats.
 

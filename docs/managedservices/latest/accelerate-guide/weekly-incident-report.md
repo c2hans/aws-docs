@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Incident report (weekly)
-<a name="weekly-incident-report"></a>
 
 This report provides the aggregated list of incidents along with its priority, severity and latest status, including:
 + Data on support cases categorized as incidents on the managed account

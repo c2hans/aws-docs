@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessEndpointStatus
-<a name="API_VerifiedAccessEndpointStatus"></a>
 
 Describes the status of a Verified Access endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentListEntry
-<a name="API_EnvironmentListEntry"></a>
 
 The environment List Entry.
 

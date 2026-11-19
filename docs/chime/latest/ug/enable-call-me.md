@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/enable-call-me.html
 ---
 
 # Using the Call me feature
-<a name="enable-call-me"></a>
 
 The **Call me** feature enables Amazon Chime to call your phone and add you to a meeting, regardless of whether you have the mobile app. **Call me** works over cellular connections instead of network connections, so you can attend a meeting even if you aren't connected to a network.
 

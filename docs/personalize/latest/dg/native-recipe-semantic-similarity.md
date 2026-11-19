@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/native-recipe-sema
 ---
 
 # Semantic-Similarity recipe
-<a name="native-recipe-semantic-similarity"></a>
 
 The Semantic-Similarity recipe (aws-semantic-similarity) generates recommendations for items that are semantically similar to a given item based on textual content. Unlike traditional similarity recipes that rely on user-item interactions, this recipe analyzes the textual descriptions and attributes of items to generate embeddings and identify semantically similar items
 

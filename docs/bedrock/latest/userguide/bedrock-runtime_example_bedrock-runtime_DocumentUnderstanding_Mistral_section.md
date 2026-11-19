@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Send and process a document with Mistral models on Amazon Bedrock
-<a name="bedrock-runtime_example_bedrock-runtime_DocumentUnderstanding_Mistral_section"></a>
 
 The following code example shows how to send and process a document with Mistral models on Amazon Bedrock.
 

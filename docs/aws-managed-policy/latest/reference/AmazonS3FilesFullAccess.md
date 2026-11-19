@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3FilesFullAccess
-<a name="AmazonS3FilesFullAccess"></a>
 
 **Description**: Provides full access to all S3 Files via the AWS Management Console.
 

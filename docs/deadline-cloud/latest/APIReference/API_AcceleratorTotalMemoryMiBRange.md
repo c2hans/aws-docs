@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AcceleratorTotalMemoryMiBRange
-<a name="API_AcceleratorTotalMemoryMiBRange"></a>
 
 Defines the maximum and minimum amount of memory, in MiB, to use for the accelerator.
 

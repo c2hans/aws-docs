@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-vpc-lat
 ---
 
 # Attach a VPC Lattice target group to your Auto Scaling group
-<a name="attach-vpc-lattice-target-group-asg"></a>
 
 This topic describes how to attach a VPC Lattice target group to an Auto Scaling group. It also describes how to turn on VPC Lattice health checks to let Amazon EC2 Auto Scaling replace instances that VPC Lattice reports as unhealthy.
 

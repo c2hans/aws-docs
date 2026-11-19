@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-apigateway-tut
 ---
 
 # Tutorial: Using Lambda with API Gateway
-<a name="services-apigateway-tutorial"></a>
 
 In this tutorial, you create a REST API through which you invoke a Lambda Event Function using an HTTP request. Your Lambda Event Function performs create, read, update, and delete (CRUD) operations on a DynamoDB table. This function is provided here for demonstration, but you learn to configure an API Gateway REST API that can invoke any Lambda Event Function.
 

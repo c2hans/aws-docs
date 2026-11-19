@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListO
 ---
 
 # ListOriginAccessControls
-<a name="API_ListOriginAccessControls"></a>
 
 Gets the list of CloudFront origin access controls (OACs) in this AWS account.
 

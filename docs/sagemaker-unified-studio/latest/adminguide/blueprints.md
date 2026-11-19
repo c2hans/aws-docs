@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Blueprints in Amazon SageMaker Unified Studio
-<a name="blueprints"></a>
 
 A blueprint with which the project profile is created defines what AWS tools and services members of the project to which the project profile belongs can use as they work with data in the Amazon SageMaker catalog.
 

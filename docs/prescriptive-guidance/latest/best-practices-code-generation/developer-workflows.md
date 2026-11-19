@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Using Amazon Q Developer in developer workflows
-<a name="developer-workflows"></a>
 
 Developers follow a standard workflow encompassing the stages of requirement gathering, design and planning, coding, testing, code review, and deployment. This section focuses on how you can use Amazon Q Developer capabilities to optimize key development steps.
 

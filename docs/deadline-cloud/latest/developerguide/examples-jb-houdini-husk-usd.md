@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Render USD scenes with Houdini Husk on Deadline Cloud
-<a name="examples-jb-houdini-husk-usd"></a>
 
 The [houdini\_husk\_usd\_render](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/houdini_husk_usd_render) job bundle on the GitHub website renders a USD scene using the Houdini [husk CLI](https://www.sidefx.com/docs/houdini/ref/utils/husk.html) on the SideFX website. By default, Husk renders with the Houdini Karma renderer, but Husk supports any Hydra-compatible USD render delegate. The bundle expands to a task per frame using the Frames job parameter and limits execution to Linux workers through host requirements.
 

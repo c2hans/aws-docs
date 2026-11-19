@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateC
 ---
 
 # CreateClusterSnapshot
-<a name="API_CreateClusterSnapshot"></a>
 
 Creates a manual snapshot of the specified cluster. The cluster must be in the `available` state.
 

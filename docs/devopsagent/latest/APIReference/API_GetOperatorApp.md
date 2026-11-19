@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetO
 ---
 
 # GetOperatorApp
-<a name="API_GetOperatorApp"></a>
 
 Get the full auth configuration of operator including any enabled auth flow
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialMapFieldWells
-<a name="API_GeospatialMapFieldWells"></a>
 
 The field wells of a `GeospatialMapVisual`.
 

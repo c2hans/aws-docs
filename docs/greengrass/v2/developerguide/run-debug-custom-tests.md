@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-debug-c
 ---
 
 # Debug and run custom test suites
-<a name="run-debug-custom-tests"></a>
 
 After the [required configuration](set-custom-idt-config.md) is set, IDT can run your test suite. The runtime of the full test suite depends on the hardware and the composition of the test suite. For reference, it takes approximately 30 minutes to complete the full AWS IoT Greengrass qualification test suite on a Raspberry Pi 3B.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DeleteCacheSecurityGroup
-<a name="API_DeleteCacheSecurityGroup"></a>
 
 Deletes a cache security group.
 

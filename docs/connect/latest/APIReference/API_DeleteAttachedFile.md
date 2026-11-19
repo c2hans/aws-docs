@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteAt
 ---
 
 # DeleteAttachedFile
-<a name="API_DeleteAttachedFile"></a>
 
 Deletes an attached file along with the underlying S3 Object.
 

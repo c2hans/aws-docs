@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Route.htm
 ---
 
 # Route
-<a name="API_Route"></a>
 
 An object which contains an AWS-Region and routing status.
 

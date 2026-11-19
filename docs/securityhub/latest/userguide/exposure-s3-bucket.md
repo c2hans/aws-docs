@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-s3
 ---
 
 # Remediating exposures for Amazon S3 buckets
-<a name="exposure-s3-bucket"></a>
 
 AWS Security Hub can generate exposure findings for Amazon Simple Storage Service (Amazon S3) buckets.
 

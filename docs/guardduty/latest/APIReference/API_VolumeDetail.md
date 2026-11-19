@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Volume
 ---
 
 # VolumeDetail
-<a name="API_VolumeDetail"></a>
 
 Contains EBS volume details.
 

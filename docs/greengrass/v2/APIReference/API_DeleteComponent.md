@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_DeleteCom
 ---
 
 # DeleteComponent
-<a name="API_DeleteComponent"></a>
 
 Deletes a version of a component from AWS IoT Greengrass.
 

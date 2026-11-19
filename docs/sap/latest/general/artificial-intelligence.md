@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/artificial-intelligen
 ---
 
 # Artificial Intelligence
-<a name="artificial-intelligence"></a>
 
  **Generative AI for SAP on AWS **
 

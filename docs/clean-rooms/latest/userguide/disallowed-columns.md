@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/disallowed-
 ---
 
 # Configured table disallowed columns
-<a name="disallowed-columns"></a>
 
 The disallowed output columns configuration is a control in the AWS Clean Rooms custom analysis rule that enables you to define the list of columns (if any) that you don’t allow to be projected in the query result. The columns referenced in this list are considered “disallowed output columns”. This means that any reference to such column through transformation, aliasing, or other means may not be present in the final SELECT (projection) of the query.
 

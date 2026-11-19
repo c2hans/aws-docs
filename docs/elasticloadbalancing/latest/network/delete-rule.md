@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/dele
 ---
 
 # Delete a listener rule
-<a name="delete-rule"></a>
 
 You can delete a non-default listener rule at any time. You cannot delete the default rule. When you delete a rule, traffic that was matched by the deleted rule is routed according to the remaining rules or the default action.
 

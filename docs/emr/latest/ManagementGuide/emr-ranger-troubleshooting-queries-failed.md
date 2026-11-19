@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-tr
 ---
 
 # Queries are unexpectedly failing for Ranger integration with Amazon EMR
-<a name="emr-ranger-troubleshooting-queries-failed"></a>
 
 **Check Apache Ranger plugin logs (Apache Hive, EMR RecordServer, EMR SecretAgent, etc., logs)**
 

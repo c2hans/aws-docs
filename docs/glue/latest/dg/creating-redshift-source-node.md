@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-redshift-source-
 ---
 
 # Creating a Amazon Redshift source node
-<a name="creating-redshift-source-node"></a>
 
 ## Permissions needed
 <a name="creating-redshift-source-node-permissions"></a>

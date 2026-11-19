@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/biz.html
 ---
 
 # .biz
-<a name="biz"></a>
 
 Used for business or commercial use.
 

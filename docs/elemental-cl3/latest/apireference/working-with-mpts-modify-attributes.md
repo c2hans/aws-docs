@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # PUT: Modify the Attributes of an MPTS
-<a name="working-with-mpts-modify-attributes"></a>
 
 ## HTTP Request and Response
 <a name="working-with-mpts-modify-attributes-http-request-response"></a>

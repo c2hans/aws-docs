@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/g
 ---
 
 # Government Lens - AWS Well-Architected Framework
-<a name="government-lens"></a>
 
 Publication date: **January 10, 2024** ([Document history](document-history.md))
 

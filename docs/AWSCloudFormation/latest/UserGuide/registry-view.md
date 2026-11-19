@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/regis
 ---
 
 # View the available and activated extensions in the CloudFormation registry
-<a name="registry-view"></a>
 
 To view the available and activated extensions in the CloudFormation registry, you can use the AWS Management Console or the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-arrappend.
 ---
 
 # JSON.ARRAPPEND
-<a name="json-arrappend"></a>
 
 Append one or more values to the array values at the path.
 

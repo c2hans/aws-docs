@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/cost-optim
 ---
 
 # Cost Optimization
-<a name="cost-optimization"></a>
 
 HealthImaging is designed to optimize storage costs by automatically moving data to the most cost-effective access tier when access patterns change. As usage patterns change over time, intelligent tiering provides automatic lifecycle management for DICOM data without any operational overhead. HealthImaging has two storage tiers:
 + **Frequent Access tier** storage for newly imported or regularly accessed DICOM data.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/catalog-integrati
 ---
 
 # Setting up the Data Catalog connection
-<a name="catalog-integration-glue-connection"></a>
 
 Connecting to AWS Glue Data Catalog involves two steps: connecting to the catalog for metadata access and connecting to Amazon Athena for data queries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/set-config.
 ---
 
 # Configure IDT settings to run the AWS IoT Greengrass qualification suite
-<a name="set-config"></a>
 
 Before you run tests, you must configure settings for AWS credentials and devices on your host computer.
 

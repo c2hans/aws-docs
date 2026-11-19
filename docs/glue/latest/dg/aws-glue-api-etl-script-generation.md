@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-etl-script-g
 ---
 
 # Autogenerating ETL Scripts API
-<a name="aws-glue-api-etl-script-generation"></a>
 
 The ETL script-generation API describes the datatypes and API for generating ETL scripts in AWS Glue.
 

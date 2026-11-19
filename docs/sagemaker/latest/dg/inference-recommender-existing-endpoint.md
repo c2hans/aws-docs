@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-recommende
 ---
 
 # Get an inference recommendation for an existing endpoint
-<a name="inference-recommender-existing-endpoint"></a>
 
 Inference recommendation jobs run a set of load tests on recommended instance types and an existing endpoint. Inference recommendation jobs use performance metrics that are based on load tests using the sample data you provided during model version registration.
 

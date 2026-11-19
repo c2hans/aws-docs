@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Key AWS services
-<a name="key-aws-services-ops"></a>
 +  [AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/ug/what-is-aws-parallelcluster.html)
 +  [AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html)
 +  [Amazon S3](https://docs.aws.amazon.com/s3/)

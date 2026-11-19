@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/wafv2-webac
 ---
 
 # wafv2-webacl-not-empty
-<a name="wafv2-webacl-not-empty"></a>
 
 Checks if a WAFv2 Web ACL contains any WAF rules or WAF rule groups. This rule is NON\_COMPLIANT if a Web ACL does not contain any WAF rules or WAF rule groups.
 

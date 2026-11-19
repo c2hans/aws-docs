@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Com
 ---
 
 # ComponentParameter
-<a name="API_ComponentParameter"></a>
 
 Contains a key/value pair that sets the named component parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gusto-support.html
 ---
 
 # AWS Glue support for Gusto
-<a name="gusto-support"></a>
 
 AWS Glue supports Gusto as follows:
 

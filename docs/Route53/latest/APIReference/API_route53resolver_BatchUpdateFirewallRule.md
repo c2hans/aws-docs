@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # BatchUpdateFirewallRule
-<a name="API_route53resolver_BatchUpdateFirewallRule"></a>
 
 Updates multiple DNS Firewall rules in the specified rule group.
 

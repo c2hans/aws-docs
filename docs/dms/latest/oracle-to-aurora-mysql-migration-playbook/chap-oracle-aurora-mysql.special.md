@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Special Oracle features and future MySQL content
-<a name="chap-oracle-aurora-mysql.special"></a>
 
 This section provides reference pages for special Oracle features and MySQL current equivalents, alternatives, and future features.
 

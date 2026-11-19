@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConfigurationBundleSummary
-<a name="API_ConfigurationBundleSummary"></a>
 
 Summary information about a configuration bundle.
 

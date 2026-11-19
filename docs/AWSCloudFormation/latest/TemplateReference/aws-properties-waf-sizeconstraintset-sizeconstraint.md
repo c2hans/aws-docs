@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAF::SizeConstraintSet SizeConstraint
-<a name="aws-properties-waf-sizeconstraintset-sizeconstraint"></a>
 
 **Note**
 AWS WAF Classic support will end on September 30, 2025.

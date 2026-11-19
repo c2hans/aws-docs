@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # SendChannelMessage
-<a name="API_messaging-chime_SendChannelMessage"></a>
 
 Sends a message to a particular channel that the member is a part of.
 

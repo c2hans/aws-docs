@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # FAQs
-<a name="faq"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

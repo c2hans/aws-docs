@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-uss-srt-caller
 ---
 
 # Ensure correct setup in the upstream system
-<a name="setup-uss-srt-caller"></a>
 
 An operator at the upstream server must set up the source content on the upstream system. Make sure that the operator sets up as follows:
 + They set up to deliver the correct number of sources:

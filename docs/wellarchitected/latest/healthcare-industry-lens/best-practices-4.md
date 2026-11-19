@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Best practices
-<a name="best-practices-4"></a>
 
 ## Definition
 <a name="definition-4"></a>

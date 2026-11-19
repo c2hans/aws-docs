@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/property-n
 ---
 
 # Turn on asset property notifications in AWS IoT SiteWise
-<a name="property-notifications"></a>
 
 You can enable property notifications to publish asset data updates to AWS IoT Core, and then run queries on your data. With asset property notifications, AWS IoT SiteWise provides an CloudFormation template that you can use to export AWS IoT SiteWise data to Amazon S3.
 

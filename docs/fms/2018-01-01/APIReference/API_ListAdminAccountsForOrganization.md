@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListAdmi
 ---
 
 # ListAdminAccountsForOrganization
-<a name="API_ListAdminAccountsForOrganization"></a>
 
 Returns a `AdminAccounts` object that lists the Firewall Manager administrators within the organization that are onboarded to Firewall Manager by [AssociateAdminAccount](API_AssociateAdminAccount.md).
 

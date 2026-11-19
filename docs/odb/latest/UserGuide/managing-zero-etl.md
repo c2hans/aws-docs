@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/managing-zero-etl.h
 ---
 
 # Managing zero-ETL integrations in Oracle Database@AWS
-<a name="managing-zero-etl"></a>
 
 After creating a zero-ETL integration, you can perform various management operations including modifying and deleting integrations. This section covers the ongoing management of your zero-ETL integrations.
 

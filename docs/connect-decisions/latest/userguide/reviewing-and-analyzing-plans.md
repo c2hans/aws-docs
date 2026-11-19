@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/revie
 ---
 
 # Reviewing and Analyzing Plans
-<a name="reviewing-and-analyzing-plans"></a>
 
 **To review a demand plan:**
 

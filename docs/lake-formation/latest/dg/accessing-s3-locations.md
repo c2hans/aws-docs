@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/accessing-s3-lo
 ---
 
 # Accessing Amazon S3 locations
-<a name="accessing-s3-locations"></a>
 
 AWS Lake Formation enables you to read and write the underlying data files in Amazon Simple Storage Service (Amazon S3) for tables registered in the AWS Glue Data Catalog (Data Catalog). This provides you with a single set of permissions for both SQL queries and direct file access using your existing Lake Formation table grants. Lake Formation extends its credential vending functionality to Amazon S3 locations registered in the Data Catalog. When your application requests access to the Amazon S3 files underlying a Data Catalog table, Lake Formation evaluates the caller's existing table-level permissions and, if authorized, returns short-lived, scoped Amazon S3 credentials for that table's registered location.
 

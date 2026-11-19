@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SkillMdDefinition
-<a name="API_SkillMdDefinition"></a>
 
  The skill markdown definition for agent skills descriptors.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetCustom
 ---
 
 # GetCustomEndpoint
-<a name="API_GetCustomEndpoint"></a>
 
 Returns the IoT managed integrations custom endpoint.
 

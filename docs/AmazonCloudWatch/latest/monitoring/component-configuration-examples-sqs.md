@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Amazon Simple Queue Service (SQS)
-<a name="component-configuration-examples-sqs"></a>
 
 The following example shows a component configuration in JSON format for Amazon Simple Queue Service.
 

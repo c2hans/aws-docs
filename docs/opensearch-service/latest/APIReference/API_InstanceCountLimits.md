@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # InstanceCountLimits
-<a name="API_InstanceCountLimits"></a>
 
 Limits on the number of instances that can be created in OpenSearch Service for a given instance type.
 

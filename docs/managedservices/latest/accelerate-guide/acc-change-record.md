@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Tracking changes in your AMS Accelerate accounts
-<a name="acc-change-record"></a>
 
 **Important**
 The Change Record service is deprecated as of July 1, 2025.

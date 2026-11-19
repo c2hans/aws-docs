@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_I
 ---
 
 # InlineRedactionConfiguration
-<a name="API_InlineRedactionConfiguration"></a>
 
 The configuration for in-session inline redaction.
 

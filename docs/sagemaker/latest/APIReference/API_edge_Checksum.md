@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_edge_C
 ---
 
 # Checksum
-<a name="API_edge_Checksum"></a>
 
 Information about the checksum of a model deployed on a device.
 

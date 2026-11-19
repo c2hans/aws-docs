@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Query
 ---
 
 # QueryDataPoint
-<a name="API_QueryDataPoint"></a>
 
 A data point in a dependency query range.
 

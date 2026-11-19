@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetCust
 ---
 
 # GetCustomerAgreement
-<a name="API_GetCustomerAgreement"></a>
 
 Retrieve a customer-agreement document.
 

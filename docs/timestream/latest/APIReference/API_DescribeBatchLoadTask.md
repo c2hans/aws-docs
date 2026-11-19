@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Descr
 ---
 
 # DescribeBatchLoadTask
-<a name="API_DescribeBatchLoadTask"></a>
 
 Returns information about the batch load task, including configurations, mappings, progress, and other details. [Service quotas apply](https://docs.aws.amazon.com/timestream/latest/developerguide/ts-limits.html). See [code sample](https://docs.aws.amazon.com/timestream/latest/developerguide/code-samples.describe-batch-load.html) for details.
 

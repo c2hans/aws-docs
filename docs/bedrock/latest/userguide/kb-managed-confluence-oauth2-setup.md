@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-conf
 ---
 
 # Set up OAuth 2.0 authentication for Confluence
-<a name="kb-managed-confluence-oauth2-setup"></a>
 
 OAuth 2.0 authentication (`OAUTH2`) authenticates with an Atlassian OAuth 2.0 three-legged (3LO) app. You register an app in the Atlassian developer console, complete a one-time authorization flow to obtain a refresh token, and store the credentials in AWS. At crawl time, Amazon Bedrock uses the refresh token to mint short-lived access tokens automatically.
 

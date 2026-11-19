@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/user-backgrou
 ---
 
 # User background sessions
-<a name="user-background-sessions"></a>
 
 User background sessions enable long-running analytics and machine learning workloads to continue even after the user has logged off from their notebook interface. Starting with EMR on EC2 release 7.11, this capability is available through EMR-EC2's trusted identity propagation feature. The following sections explains the configuration options and behaviors for user background sessions.
 

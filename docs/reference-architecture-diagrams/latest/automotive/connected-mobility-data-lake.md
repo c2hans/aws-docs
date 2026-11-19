@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Connected Mobility Data Lake
-<a name="connected-mobility-data-lake"></a>
 
 Publication date: **January 1, 2023 ([Diagram history](diagram-history.md))**
 

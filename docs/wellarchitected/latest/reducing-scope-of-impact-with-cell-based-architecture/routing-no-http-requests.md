@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Routing no-HTTP requests
-<a name="routing-no-http-requests"></a>
 
  According to each business, we can have APIs of different types as an input interface for your workload. The examples so far have been routers based on HTTP requests. But nothing limits that your cellular router cannot be an event or messaging broker. You can have a payments API, where you offer your customers an asynchronous API using Amazon SQS queues. Where you have a queue to request a payment and a queue to process the response to that payment. In this example, the cell router consumes the payment request topic and delivers it to the correct cell to carry out the transaction.
 

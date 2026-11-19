@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteAgent
-<a name="API_DeleteAgent"></a>
 
 Deletes an agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # LoadBalancerAddress
-<a name="API_LoadBalancerAddress"></a>
 
 Information about a static IP address for a load balancer.
 

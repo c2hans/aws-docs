@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Appl
 ---
 
 # ApplicationAutoScalingForAmazonAppStreamAccess
-<a name="ApplicationAutoScalingForAmazonAppStreamAccess"></a>
 
 **Description**: Policy to enable Application Autoscaling for Amazon AppStream
 

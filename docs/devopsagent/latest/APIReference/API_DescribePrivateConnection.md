@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Desc
 ---
 
 # DescribePrivateConnection
-<a name="API_DescribePrivateConnection"></a>
 
 Retrieves details of an existing Private Connection.
 

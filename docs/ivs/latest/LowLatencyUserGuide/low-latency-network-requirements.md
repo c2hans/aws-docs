@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/low-laten
 ---
 
 # Network Requirements \| Low-Latency Streaming
-<a name="low-latency-network-requirements"></a>
 
 IVS low-latency streaming relies on RTMP(S), SRT, and WebRTC protocols for the transmission of media and data. To ensure a seamless experience, the destinations and ports listed below must be accessible to broadcast with a given protocol. Any restrictions on inbound or outbound traffic to these destinations may disrupt the functionality of IVS low-latency streaming.
 

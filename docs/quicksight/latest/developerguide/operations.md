@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/operati
 ---
 
 # Operations
-<a name="operations"></a>
 
 To find Quick Sight API operations by category, use the following list.
 

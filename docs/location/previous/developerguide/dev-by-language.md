@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/dev-by-
 ---
 
 # SDKs by language
-<a name="dev-by-language"></a>
 
 The following tables provide information about AWS SDKs and MapLibre versions for languages and frameworks, by application type: web, mobile, or backend application.
 

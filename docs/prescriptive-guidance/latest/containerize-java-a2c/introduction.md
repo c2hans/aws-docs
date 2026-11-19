@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/containeriz
 ---
 
 # Containerizing and migrating Java applications using AWS App2Container
-<a name="introduction"></a>
 
 *Durga Prasad Cheepuri, RAJA KOPPURAVURI, Dhananjay Karanjkar, Atul Langote, Varun Sharma, and Saurabh Singh, Amazon Web Services*
 

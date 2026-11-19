@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_C
 ---
 
 # CardValue
-<a name="API_qapps_CardValue"></a>
 
 The value or result associated with a card in a Amazon Q App session.
 

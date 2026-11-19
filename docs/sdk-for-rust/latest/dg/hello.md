@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/hello.html
 ---
 
 # Creating a simple application using the AWS SDK for Rust
-<a name="hello"></a>
 
 You can get started quickly with AWS SDK for Rust by following this tutorial for creating a simple application that calls an AWS service.
 

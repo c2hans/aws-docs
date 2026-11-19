@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Green
 ---
 
 # GreenFleetProvisioningOption
-<a name="API_GreenFleetProvisioningOption"></a>
 
 Information about the instances that belong to the replacement environment in a blue/green deployment.
 

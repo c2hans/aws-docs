@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 ---
 
 # Lead Nurturing vs Lead Generation
-<a name="registration-help-vertical-leadgen"></a>
 
 This guide clarifies the critical distinction between first-party lead nurturing (allowed) and third-party lead generation (restricted/prohibited) for A2P 10DLC registration.
 

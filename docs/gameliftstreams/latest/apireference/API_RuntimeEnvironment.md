@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # RuntimeEnvironment
-<a name="API_RuntimeEnvironment"></a>
 
 Configuration settings that identify the operating system for an application resource. This can also include a compatibility layer and other drivers.
 

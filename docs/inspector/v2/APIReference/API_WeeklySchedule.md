@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_WeeklySche
 ---
 
 # WeeklySchedule
-<a name="API_WeeklySchedule"></a>
 
 A weekly schedule.
 

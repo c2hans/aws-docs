@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/support
 ---
 
 # Supported Locales
-<a name="supported-locales"></a>
 
 WorkSpaces Applications supports the following locales:
 

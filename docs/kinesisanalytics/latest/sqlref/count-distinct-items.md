@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/count-dis
 ---
 
 # COUNT\_DISTINCT\_ITEMS\_TUMBLING Function
-<a name="count-distinct-items"></a>
 
 Returns a count of the number of distinct items in the specified in-application stream column over a tumbling window. The resulting count is approximate; the function uses the HyperLogLog algorithm.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
  A single filter condition that specifies behavior, requirement, and matching conditions for WAF log records.
 

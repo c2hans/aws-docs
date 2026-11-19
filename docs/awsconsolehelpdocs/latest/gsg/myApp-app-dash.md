@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/myApp-app-
 ---
 
 # myApplications dashboard in AWS Console Home
-<a name="myApp-app-dash"></a>
 
 Each application you create or onboard has its own myApplications dashboard. The myApplications dashboard contains cost, security, and operational widgets that surface insights from multiple AWS services. Each widget can also be favorited, reordered, removed, or resized. For more information, see [Working with widgets in AWS Console Home](work-with-widgets.md).
 

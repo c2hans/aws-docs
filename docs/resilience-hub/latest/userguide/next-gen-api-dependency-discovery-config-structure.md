@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # DependencyDiscoveryConfig structure
-<a name="next-gen-api-dependency-discovery-config-structure"></a>
 
 ```
 {

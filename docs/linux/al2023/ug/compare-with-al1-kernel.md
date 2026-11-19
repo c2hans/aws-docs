@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al1-kernel.
 ---
 
 # AL2023 kernel changes from Amazon Linux 1 (AL1)
-<a name="compare-with-al1-kernel"></a>
 
 ## Kernel Live Patching
 <a name="al1-kernel-livepatch"></a>

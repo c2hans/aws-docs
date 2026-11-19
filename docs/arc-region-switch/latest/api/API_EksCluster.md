@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_EksClus
 ---
 
 # EksCluster
-<a name="API_EksCluster"></a>
 
 The AWS EKS cluster execution block configuration.
 

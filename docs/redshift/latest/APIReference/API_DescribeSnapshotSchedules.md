@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeSnapshotSchedules
-<a name="API_DescribeSnapshotSchedules"></a>
 
 Returns a list of snapshot schedules.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/host-add-overview.h
 ---
 
 # Add a host
-<a name="host-add-overview"></a>
 
 1. In VMware Cloud Foundation (VCF), you add the host to a cluster with VCF tools. The steps depend on the VCF version that the cluster runs. == Before you begin Before you create the host, make sure that the following are true.
    + A DNS forward lookup zone contains an A record for the host, and a reverse lookup zone contains a PTR record for the host. For more information, see [DNS records for hosts and appliances](evs-deployment-prereq-checklist.md#evs-prereq-dns-records).

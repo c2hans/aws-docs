@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Legen
 ---
 
 # LegendOptions
-<a name="API_LegendOptions"></a>
 
 The options for the legend setup of a visual.
 

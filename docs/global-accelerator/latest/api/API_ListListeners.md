@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListLi
 ---
 
 # ListListeners
-<a name="API_ListListeners"></a>
 
 List the listeners for an accelerator.
 

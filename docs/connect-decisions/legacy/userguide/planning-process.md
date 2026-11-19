@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/plann
 ---
 
 # Planning process
-<a name="planning-process"></a>
 
 Replenishment requirements are calculated based on the configured network topology for an item. The following is a sample network topology that we use to describe various calculations involved in generating replenishment orders.
 

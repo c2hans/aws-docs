@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-quicks
 ---
 
 # QuickStart: Deploy a Node.js application to Elastic Beanstalk
-<a name="nodejs-quickstart"></a>
 
 This QuickStart tutorial walks you through the process of creating a Node.js application and deploying it to an AWS Elastic Beanstalk environment.
 

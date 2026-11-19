@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/prep-training-data-
 ---
 
 # Preparing entity recognizer training data
-<a name="prep-training-data-cer"></a>
 
 To train a successful custom entity recognition model, it's important to supply the model trainer with high quality data as input. Without good data, the model won't learn how to correctly identify entities.
 

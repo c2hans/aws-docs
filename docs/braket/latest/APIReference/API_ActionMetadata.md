@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_ActionMet
 ---
 
 # ActionMetadata
-<a name="API_ActionMetadata"></a>
 
 Contains metadata about the quantum task action, including the action type and program statistics.
 

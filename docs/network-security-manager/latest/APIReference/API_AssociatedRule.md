@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AssociatedRule
-<a name="API_AssociatedRule"></a>
 
 An association between a template and a rule, as returned in outputs. The corresponding request structure is `RuleReference`.
 

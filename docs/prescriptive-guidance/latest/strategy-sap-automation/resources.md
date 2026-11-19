@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Technical documentation resources
 <a name="technical-documentation-resources.d665bd8f-6da1-5b4a-8a34-89f7a105c73a"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Certificate.
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 An object representing the `certificate-authority-data` for your cluster.
 

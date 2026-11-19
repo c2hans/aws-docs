@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # 6. Infrastructure security for agentic AI systems on AWS
-<a name="best-practices-infrastructure"></a>
 
 Infrastructure security for agentic AI systems requires isolation strategies and immutable deployment practices to contain potential compromises. Account separation and automated deployment pipelines reduce both the attack surface and operational risk.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Reference.Data
 ---
 
 # Data types for AWS Database Migration Service
-<a name="CHAP_Reference.DataTypes"></a>
 
 AWS Database Migration Service uses built-in data types to migrate data from a source database engine type to a target database engine type. The following table shows the built-in data types and their descriptions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or overwrites the tags on a resource.
 

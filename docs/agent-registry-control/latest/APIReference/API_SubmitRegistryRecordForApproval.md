@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # SubmitRegistryRecordForApproval
-<a name="API_SubmitRegistryRecordForApproval"></a>
 
 Submits a DRAFT registry record for approval, moving it into the registry's approval workflow. Depending on the registry's approval configuration, the record is either auto-approved or set to PENDING\_APPROVAL for a curator to approve or reject.
 

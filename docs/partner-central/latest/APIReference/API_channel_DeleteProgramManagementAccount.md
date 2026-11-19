@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # DeleteProgramManagementAccount
-<a name="API_channel_DeleteProgramManagementAccount"></a>
 
 Deletes a program management account.
 

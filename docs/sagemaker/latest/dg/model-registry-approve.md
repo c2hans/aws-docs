@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-appro
 ---
 
 # Update the Approval Status of a Model
-<a name="model-registry-approve"></a>
 
 After you create a model version, you typically want to evaluate its performance before you deploy it to a production endpoint. If it performs to your requirements, you can update the approval status of the model version to `Approved`. Setting the status to `Approved` can initiate CI/CD deployment for the model. If the model version does not perform to your requirements, you can update the approval status to `Rejected`.
 

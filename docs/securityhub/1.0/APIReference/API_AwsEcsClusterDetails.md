@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsC
 ---
 
 # AwsEcsClusterDetails
-<a name="API_AwsEcsClusterDetails"></a>
 
 Provides details about an Amazon ECS cluster.
 

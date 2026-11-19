@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Node.html
 ---
 
 # Node
-<a name="API_Node"></a>
 
 A node represents an AWS Glue component (trigger, crawler, or job) on a workflow graph.
 

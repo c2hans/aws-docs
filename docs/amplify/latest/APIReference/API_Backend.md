@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Backend.
 ---
 
 # Backend
-<a name="API_Backend"></a>
 
 Describes the backend associated with an Amplify `Branch`.
 

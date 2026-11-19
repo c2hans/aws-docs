@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-st
 ---
 
 # Getting started with AWS User Experience Customization
-<a name="getting-started-uxc"></a>
 
 With UXC, account administrators can configure account customizations for the AWS Management Console.
 

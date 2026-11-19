@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/lambda.htm
 ---
 
 # Run Serverless Compute Functions with Lambda
-<a name="lambda"></a>
 
 With AWS Lambda, you can run code without provisioning or managing servers. You can run code for many types of application or backend service— with no need for additional administration overhead. When you upload your code, Lambda can run and scale the code with high availability. You can set up your code to trigger from other AWS services automatically, or you can call it directly from any web or mobile app.
 

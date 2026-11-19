@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Subscri
 ---
 
 # Subscription
-<a name="API_Subscription"></a>
 
 Provides information about your AWS Outposts subscriptions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDataQualityMod
 ---
 
 # GetDataQualityModel
-<a name="API_GetDataQualityModel"></a>
 
 Retrieve the training status of the model along with more information (CompletedOn, StartedOn, FailureReason).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-ho
 ---
 
 # Create a hosted public virtual interface in Direct Connect
-<a name="create-hosted-public-vif"></a>
 
 Before you begin, ensure that you have read the information in [Prerequisites for virtual interfaces](WorkingWithVirtualInterfaces.md#vif-prerequisites).
 

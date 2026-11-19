@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/copy-package.html
 ---
 
 # Copy packages between repositories
-<a name="copy-package"></a>
 
 You can copy package versions from one repository to another in CodeArtifact. This can be helpful for scenarios such as package promotion workflows or sharing package versions between teams or projects. The source and destination repositories must be in the same domain to copy package versions.
 

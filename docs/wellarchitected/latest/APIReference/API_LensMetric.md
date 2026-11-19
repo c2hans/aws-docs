@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # LensMetric
-<a name="API_LensMetric"></a>
 
 A metric for a particular lens in a workload.
 

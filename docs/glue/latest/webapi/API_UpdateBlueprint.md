@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateBlueprint.h
 ---
 
 # UpdateBlueprint
-<a name="API_UpdateBlueprint"></a>
 
 Updates a registered blueprint.
 

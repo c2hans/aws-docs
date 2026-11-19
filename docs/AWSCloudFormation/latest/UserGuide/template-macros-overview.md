@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/templ
 ---
 
 # Overview of CloudFormation macros
-<a name="template-macros-overview"></a>
 
 There are two major steps to processing templates using macros: creating the macro itself, and then using the macro to perform processing on your templates.
 

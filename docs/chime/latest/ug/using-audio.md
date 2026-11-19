@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/using-audio.html
 ---
 
 # Using audio during meetings
-<a name="using-audio"></a>
 
 The topics in this section explain how to use audio during an Amazon Chime meeting. You can talk with other attendees, and listen to what they say.
 

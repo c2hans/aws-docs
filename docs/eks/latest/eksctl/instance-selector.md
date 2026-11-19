@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/instance-selector.html
 ---
 
 # Instance Selector
-<a name="instance-selector"></a>
 
 eksctl supports specifying multiple instance types for managed and self-managed nodegroups, but with over 270 EC2 instance types, users have to spend time figuring out which instance types would be well suited for their nodegroup. It’s even harder when using Spot instances because you need to choose a set of instances that works together well with the Cluster Autoscaler.
 

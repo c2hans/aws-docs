@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # GetDataLakeNamespace
-<a name="API_GetDataLakeNamespace"></a>
 
 Enables you to programmatically view an AWS Supply Chain data lake namespace. Developers can view the data lake namespace information such as description for a given instance ID and namespace name.
 

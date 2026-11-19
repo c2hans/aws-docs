@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/speech-troubleshoo
 ---
 
 # Speech models
-<a name="speech-troubleshooting"></a>
 
 When errors occur, we recommend trying the following steps:
 

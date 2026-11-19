@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-top
 ---
 
 # Prerequisites for Amazon EC2 topology
-<a name="ec2-instance-topology-prerequisites"></a>
 
 To describe your Amazon EC2 topology, ensure that your instances and Capacity Reservations meet the following prerequisites.
 

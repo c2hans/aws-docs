@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sharepoint-knowle
 ---
 
 # Microsoft SharePoint knowledge base integration
-<a name="sharepoint-knowledge-base"></a>
 
 Microsoft SharePoint Online is a collaborative platform for building websites, managing document libraries, and organizing content across your organization. With the AWS Quick SharePoint connector, you can create knowledge bases from your SharePoint content to power AI-driven search and Q&A.
 

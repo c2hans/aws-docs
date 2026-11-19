@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/blue.html
 ---
 
 # .blue
-<a name="blue"></a>
 
 Used by those who like the color blue or those who want to associate the color blue with their business or brand.
 

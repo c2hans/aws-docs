@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Connect Customer Profiles
-<a name="amazonconnectcustomerprofiles"></a>
 
 Amazon Connect Customer Profiles provides the following APIs for data retrieval.
 

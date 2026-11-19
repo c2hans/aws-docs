@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_Dimension.html
 ---
 
 # Dimension
-<a name="API_Dimension"></a>
 
  *This data type has been deprecated.*
 

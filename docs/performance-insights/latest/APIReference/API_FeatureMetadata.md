@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # FeatureMetadata
-<a name="API_FeatureMetadata"></a>
 
 The metadata for a feature. For example, the metadata might indicate that a feature is turned on or off on a specific DB instance.
 

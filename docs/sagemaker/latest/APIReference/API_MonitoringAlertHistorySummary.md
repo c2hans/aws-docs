@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringAlertHistorySummary
-<a name="API_MonitoringAlertHistorySummary"></a>
 
 Provides summary information of an alert's history.
 

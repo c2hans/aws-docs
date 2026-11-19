@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/command-line-options.h
 ---
 
 # Command line options
-<a name="command-line-options"></a>
 
 In the Amazon DCV Session Manager, you can use the following command line options to override the default configuration settings, any corresponding profile setting, or environment variable setting for that single command. You can't use command line options to directly specify credentials. Each option that takes an argument requires a space or equals sign (=) separating the argument from the option name.
 

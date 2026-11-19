@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteObject.htm
 ---
 
 # DeleteObject
-<a name="API_DeleteObject"></a>
 
 Removes an object from a bucket. The behavior depends on the bucket's versioning state:
 + If bucket versioning is not enabled, the operation permanently deletes the object.

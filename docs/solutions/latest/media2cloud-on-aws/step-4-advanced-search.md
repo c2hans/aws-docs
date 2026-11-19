@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/step
 ---
 
 # Step 4: Advanced search
-<a name="step-4-advanced-search"></a>
 
  Included in the web interface is the ability to search for specific moments across the analyzed content. A user has the ability to put in specific search terms and have timestamped results returned.
 

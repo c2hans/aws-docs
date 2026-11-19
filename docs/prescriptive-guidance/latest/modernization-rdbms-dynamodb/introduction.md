@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Modernizing your application by migrating from an RDBMS to Amazon DynamoDB
-<a name="introduction"></a>
 
 *Ramkumar Ramanujam and Mahesh Kumar Vemula, Amazon Web Services*
 

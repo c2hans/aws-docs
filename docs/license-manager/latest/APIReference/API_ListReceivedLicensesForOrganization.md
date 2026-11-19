@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListReceivedLicensesForOrganization
-<a name="API_ListReceivedLicensesForOrganization"></a>
 
 Lists the licenses received for all accounts in the organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # Amazon EC2 Dedicated Hosts
-<a name="dedicated-hosts-overview"></a>
 
 An Amazon EC2 Dedicated Host is a physical server that is fully dedicated for your use. You can optionally choose to share the instance capacity with other AWS accounts. For more information, see [Cross-account Amazon EC2 Dedicated Host sharing](dh-sharing.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Using resources with AMS Resource Scheduler
-<a name="res-sched-design"></a>
 
 **Amazon EC2**
 + Amazon EC2 instances that are part of an Auto Scaling group aren't processed individually and skipped by AMS Resource Scheduler, even if they are tagged.

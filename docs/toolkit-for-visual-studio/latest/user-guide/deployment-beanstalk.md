@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Deploying to AWS Elastic Beanstalk in Visual Studio using AWS Toolkit for Visual Studio with Amazon Q
-<a name="deployment-beanstalk"></a>
 
 AWS Elastic Beanstalk is a service that simplifies the process of provisioning AWS resources for your application. Elastic Beanstalk provides all of the AWS infrastructure required to deploy your application. This infrastructure includes:
 + Amazon EC2 instances that host the executables and content for your application.

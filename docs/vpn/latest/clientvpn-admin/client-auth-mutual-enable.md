@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-auth-m
 ---
 
 # Enable mutual authentication for AWS Client VPN
-<a name="client-auth-mutual-enable"></a>
 
 You can enable mutual authentication in Client VPN in either Linux/MacOS or Windows.
 

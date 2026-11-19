@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # High availability and fault tolerance
-<a name="high-availability-and-fault-tolerance"></a>
 
 VMware provides high availability through features like fault tolerance, requiring manual configuration and resource overhead for VM recovery and data synchronization across hosts. In contrast, AWS builds high availability into its storage services by default, using multiple Availability Zones for automatic data replication and redundancy. While VMware requires additional resources and manual configurations for high-availability setups, AWS services like Amazon S3 and Amazon EFS have a distributed architecture that natively supports cross-AZ replication. The following table provides a comparison of features.
 

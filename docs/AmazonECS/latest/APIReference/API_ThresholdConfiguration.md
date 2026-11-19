@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Thresh
 ---
 
 # ThresholdConfiguration
-<a name="API_ThresholdConfiguration"></a>
 
 Defines the failure threshold that the deployment circuit breaker uses to monitor a deployment. The `type` and `value` together determine the number of task failures that are tolerated before the circuit breaker triggers.
 

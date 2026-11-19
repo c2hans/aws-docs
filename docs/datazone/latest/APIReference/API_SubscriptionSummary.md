@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscriptionSummary
-<a name="API_SubscriptionSummary"></a>
 
 The details of the subscription.
 

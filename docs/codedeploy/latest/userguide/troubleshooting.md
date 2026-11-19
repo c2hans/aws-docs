@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshoot
 ---
 
 # Troubleshooting CodeDeploy
-<a name="troubleshooting"></a>
 
 Use the topics in this section to help solve problems and errors you might encounter when using CodeDeploy.
 

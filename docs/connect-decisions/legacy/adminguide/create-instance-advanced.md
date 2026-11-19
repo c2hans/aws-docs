@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/crea
 ---
 
 # Use advanced configuration
-<a name="create-instance-advanced"></a>
 
 Advanced configuration allows you to customize your instance by setting your own parameters. To create an AWS Supply Chain instance using an advanced configuration of preset parameters, follow these steps.
 

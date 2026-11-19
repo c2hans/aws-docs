@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Origin Override Header
-<a name="origin-override-header"></a>
 
 The capability is meant for advanced users. When you implement the changes described here, mapping lookup will be bypassed in favor of the origin override header when routing requests.
 

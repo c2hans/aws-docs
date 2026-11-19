@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_A
 ---
 
 # AutoStopConfig
-<a name="API_AutoStopConfig"></a>
 
 The configuration for an application to automatically stop after a certain amount of time being idle.
 

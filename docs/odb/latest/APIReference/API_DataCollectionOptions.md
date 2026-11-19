@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DataCollecti
 ---
 
 # DataCollectionOptions
-<a name="API_DataCollectionOptions"></a>
 
 Information about the data collection options enabled for a VM cluster.
 

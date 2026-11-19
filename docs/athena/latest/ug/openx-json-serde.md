@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/openx-json-serde.html
 ---
 
 # OpenX JSON SerDe
-<a name="openx-json-serde"></a>
 
 Like the Hive JSON SerDe, you can use the OpenX JSON to process JSON data. The data are also represented as single-line strings of JSON-encoded text separated by a new line. Like the Hive JSON SerDe, the OpenX JSON SerDe does not allow duplicate keys in `map` or `struct` key names.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/changing-securit
 ---
 
 # Change the security groups for your Amazon EC2 instance
-<a name="changing-security-group"></a>
 
 You can specify security groups for your Amazon EC2 instances when you launch them. After you launch an instance, you can add or remove security groups. You can also add, remove, or edit security group rules for associated security groups at any time.
 

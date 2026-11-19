@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-endpo
 ---
 
 # Add a standard endpoint group
-<a name="about-endpoint-groups.create-endpoint-group"></a>
 
 You work with endpoint groups on the AWS Global Accelerator console or by using an API operation. You can add or remove endpoints from an endpoint group at any time.
 

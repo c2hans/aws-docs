@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonECSInfrastructureRoleforExpressGatewayServices
-<a name="AmazonECSInfrastructureRoleforExpressGatewayServices"></a>
 
 **Description**: These permissions enable Amazon ECS to automatically provision and manage the infrastructure components required for Express Gateway Services, including load balancing, security groups, SSL certificates, and auto scaling configurations.
 

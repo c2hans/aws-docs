@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/choosing-a-layout
 ---
 
 # Choosing a layout
-<a name="choosing-a-layout"></a>
 
 **To change a dashboard's layout**
 

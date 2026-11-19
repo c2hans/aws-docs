@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/slr-services-fa.htm
 ---
 
 # Service-linked roles for AWS DMS Fleet Advisor
-<a name="slr-services-fa"></a>
 
 AWS DMS Fleet Advisor uses the service-linked role named **AWSServiceRoleForDMSFleetAdvisor** – DMS Fleet Advisor uses this service-linked role to manage Amazon CloudWatch metrics. This service-linked role is attached to the following managed policy: `AWSDMSFleetAdvisorServiceRolePolicy`. For updates to this policy, see [AWS managed policies for AWS Database Migration Service](security-iam-awsmanpol.md).
 

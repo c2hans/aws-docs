@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotFileGroup
-<a name="API_SnapshotFileGroup"></a>
 
 A structure that contains the information on the snapshot files.
 

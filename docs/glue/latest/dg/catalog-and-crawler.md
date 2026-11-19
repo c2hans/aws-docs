@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html
 ---
 
 # Data discovery and cataloging in AWS Glue
-<a name="catalog-and-crawler"></a>
 
 The AWS Glue Data Catalog is a centralized repository that stores metadata about your organization's data sets. It acts as an index to the location, schema, and runtime metrics of your data sources. The metadata is stored in metadata tables, where each table represents a single data store.
 

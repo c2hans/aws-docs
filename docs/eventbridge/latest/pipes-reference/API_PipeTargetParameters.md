@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeTargetParameters
-<a name="API_PipeTargetParameters"></a>
 
 The parameters required to set up a target for your pipe.
 

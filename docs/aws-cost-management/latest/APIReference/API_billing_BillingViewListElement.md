@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingViewListElement
-<a name="API_billing_BillingViewListElement"></a>
 
 A representation of a billing view.
 

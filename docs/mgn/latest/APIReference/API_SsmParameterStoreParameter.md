@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SsmParameter
 ---
 
 # SsmParameterStoreParameter
-<a name="API_SsmParameterStoreParameter"></a>
 
 AWS Systems Manager Parameter Store parameter.
 

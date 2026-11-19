@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Pipeline PipelineDefinition
-<a name="aws-properties-sagemaker-pipeline-pipelinedefinition"></a>
 
 The definition of the pipeline. This can be either a JSON string or an Amazon S3 location.
 

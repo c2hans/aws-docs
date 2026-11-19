@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-clo
 ---
 
 # Creating a rule that triggers on an Amazon Aurora event
-<a name="rds-cloud-watch-events"></a>
 
 Using Amazon EventBridge, you can automate AWS services and respond to system events such as application availability issues or resource changes.
 

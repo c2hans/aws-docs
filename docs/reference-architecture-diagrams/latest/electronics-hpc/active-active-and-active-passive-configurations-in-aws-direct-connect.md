@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Active/Active and Active/Passive Configurations in AWS Direct Connect
-<a name="active-active-and-active-passive-configurations-in-aws-direct-connect"></a>
 
 Publication date: **September 21, 2023 ([Diagram history](diagram-history.md))**
 

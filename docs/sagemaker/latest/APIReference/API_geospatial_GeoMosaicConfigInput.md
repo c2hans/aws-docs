@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # GeoMosaicConfigInput
-<a name="API_geospatial_GeoMosaicConfigInput"></a>
 
 Input configuration information for the geomosaic.
 

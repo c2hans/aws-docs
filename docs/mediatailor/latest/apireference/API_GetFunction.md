@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_GetF
 ---
 
 # GetFunction
-<a name="API_GetFunction"></a>
 
 Retrieves the configuration and metadata for a function. For more information about functions, see [Working with functions](https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions.html) in the *MediaTailor User Guide*.
 

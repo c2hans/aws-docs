@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # IFS Maintenix Software Implementation on AWS
-<a name="maintenix-implementation"></a>
 
 Publication date: **March 24, 2022 ([Diagram history](#maintenix-history))**
 

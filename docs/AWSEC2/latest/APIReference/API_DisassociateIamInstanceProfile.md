@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateIamInstanceProfile
-<a name="API_DisassociateIamInstanceProfile"></a>
 
 Disassociates an IAM instance profile from a running or stopped instance.
 

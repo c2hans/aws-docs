@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/CreatingCustom
 ---
 
 # Creating a Custom Tape Pool
-<a name="CreatingCustomTapePool"></a>
 
 This section describes how to create a new custom tape pool in AWS Storage Gateway.
 

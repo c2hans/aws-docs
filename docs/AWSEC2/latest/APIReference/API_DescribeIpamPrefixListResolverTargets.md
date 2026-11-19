@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeIpamPrefixListResolverTargets
-<a name="API_DescribeIpamPrefixListResolverTargets"></a>
 
 Describes one or more IPAM prefix list resolver Targets. Use this operation to view the configuration and status of resolver targets.
 

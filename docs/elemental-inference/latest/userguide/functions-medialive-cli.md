@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Setting up with the MediaLive API or CLI
-<a name="functions-medialive-cli"></a>
 
 The only change a function output needs on the MediaLive side is the feed ARN. There is no video description to add (that is smart crop), no caption selector (that is smart subtitles), and no output group. In the following examples, replace `{{us-west-2}}`, `{{111122223333}}`, and `{{feed-id}}` in the feed ARN with the AWS Region, the account ID, and the ID of your feed.
 

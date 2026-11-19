@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OAuth2Credentials
 ---
 
 # OAuth2Credentials
-<a name="API_OAuth2Credentials"></a>
 
 The credentials used when the authentication type is OAuth2 authentication.
 

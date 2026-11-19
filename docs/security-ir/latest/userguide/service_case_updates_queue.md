@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/service_cas
 ---
 
 # Alternate rule: Security Incident Response Case Updates
-<a name="service_case_updates_queue"></a>
 
 To create an event rule that monitors for all case updates, repeat these tutorials with the following alterations:
 

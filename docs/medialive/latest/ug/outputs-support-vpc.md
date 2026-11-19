@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/outputs-support-vpc.
 ---
 
 # Support for delivery in VPC
-<a name="outputs-support-vpc"></a>
 
 The following table specifies which MediaLive containers can be delivered to a destination in the VPC, when the channel that is set up for VPC delivery. For more information about VPC delivery, see [Delivering outputs via your VPC](delivery-out-vpc.md).
 

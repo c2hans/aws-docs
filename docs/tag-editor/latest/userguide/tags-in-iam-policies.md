@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/tags-in-iam-
 ---
 
 # Using tags in IAM permission policies
-<a name="tags-in-iam-policies"></a>
 
 [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/) is the AWS service that you use to create and manage permissions policies that determine who can access your AWS resources. Every attempt to access an AWS service or read or write an AWS resource is access controlled by an IAM policy.
 

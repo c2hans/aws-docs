@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InvocationConfigurationInput
-<a name="API_InvocationConfigurationInput"></a>
 
 The configuration to invoke a self-managed memory processing pipeline with.
 

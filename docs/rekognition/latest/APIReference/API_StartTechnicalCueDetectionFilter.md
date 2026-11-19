@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Star
 ---
 
 # StartTechnicalCueDetectionFilter
-<a name="API_StartTechnicalCueDetectionFilter"></a>
 
 Filters for the technical segments returned by [GetSegmentDetection](API_GetSegmentDetection.md). For more information, see [StartSegmentDetectionFilters](API_StartSegmentDetectionFilters.md).
 

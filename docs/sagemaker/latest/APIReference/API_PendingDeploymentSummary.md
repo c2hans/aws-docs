@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Pendin
 ---
 
 # PendingDeploymentSummary
-<a name="API_PendingDeploymentSummary"></a>
 
 The summary of an in-progress deployment when an endpoint is creating or updating with a new endpoint configuration.
 

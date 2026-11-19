@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # VPC
-<a name="vpc"></a>
 
 The solution provides two options for Amazon VPC configuration:
 

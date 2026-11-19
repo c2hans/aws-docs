@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # App
-<a name="API_App"></a>
 
 Defines an AWS Resilience Hub application.
 

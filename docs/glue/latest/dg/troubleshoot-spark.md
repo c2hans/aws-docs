@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/troubleshoot-spark.html
 ---
 
 # Generative AI troubleshooting for Apache Spark in AWS Glue
-<a name="troubleshoot-spark"></a>
 
  Generative AI Troubleshooting for Apache Spark jobs in AWS Glue is a new capability that helps data engineers and scientists diagnose and fix issues in their Spark applications with ease. Utilizing machine learning and generative AI technologies, this feature analyzes issues in Spark jobs and provides detailed root cause analysis along with actionable recommendations to resolve those issues. The generative AI troubleshooting for Apache Spark is available for jobs running on AWS Glue version 4.0 and above.
 

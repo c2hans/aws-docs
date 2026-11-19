@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ap
 ---
 
 # Portfolio analysis and migration planning
-<a name="portfolio-analysis-migration-planning"></a>
 
 This stage focuses on iterating the portfolio-level view, closing data gaps, and obtaining more data to produce high-confidence migration wave plans for the entire portfolio.
 

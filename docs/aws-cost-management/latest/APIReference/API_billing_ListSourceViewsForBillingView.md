@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListSourceViewsForBillingView
-<a name="API_billing_ListSourceViewsForBillingView"></a>
 
 Lists the source views (managed AWS billing views) associated with the billing view.
 

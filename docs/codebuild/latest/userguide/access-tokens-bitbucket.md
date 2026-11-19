@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/access-tokens
 ---
 
 # Bitbucket app password, API token, or access token
-<a name="access-tokens-bitbucket"></a>
 
 **Bitbucket app passwords are deprecated**
 Atlassian has deprecated Bitbucket app passwords in favor of API tokens. To continue using basic authentication with CodeBuild, create an API token in your Atlassian account settings. When you connect it to CodeBuild, use the email address associated with your Atlassian account as the username. CodeBuild automatically uses the correct credentials for Git operations and Bitbucket API calls.

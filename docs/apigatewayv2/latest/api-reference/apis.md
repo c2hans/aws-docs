@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis.h
 ---
 
 # Apis
-<a name="apis"></a>
 
 Represents your APIs as a collection. A collection offers a paginated view of your APIs.
 

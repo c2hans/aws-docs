@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Focus area 5: Manage the lifecycle
-<a name="focus-areas-lifecycle"></a>
 
 *Job to be done: "Make sure my team can improve agents over time, without chaos or heroics."*
 

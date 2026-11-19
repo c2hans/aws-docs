@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/hex-configuring.html
 ---
 
 # Configuring Hex
-<a name="hex-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Hex, you must meet the following requirements:
 

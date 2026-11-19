@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/create-a-data-set
 ---
 
 # Creating a dataset using Amazon Athena data
-<a name="create-a-data-set-athena"></a>
 
 Use the following procedure to create a new dataset that connects to Amazon Athena data or to Athena Federated Query data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeTabl
 ---
 
 # DescribeTableStatistics
-<a name="API_DescribeTableStatistics"></a>
 
 Returns table statistics on the database migration task, including table name, rows inserted, rows updated, and rows deleted.
 

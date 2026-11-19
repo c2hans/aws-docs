@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_R
 ---
 
 # RegisterResource
-<a name="API_RegisterResource"></a>
 
 Registers the resource as managed by the Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # TargetPreview
-<a name="API_TargetPreview"></a>
 
 Information about the resources that would be included in the actual runbook execution, if it were to be run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/interactive-me
 ---
 
 # Add Amazon Lex interactive messages for customers in chat
-<a name="interactive-messages"></a>
 
 Interactive messages are rich messages that present a prompt and pre-configured display options for a customer to choose. These messages are powered by Amazon Lex and configured through Amazon Lex using an AWS Lambda function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-databricks-
 ---
 
 # Connect to a Databricks data source
-<a name="AMG-databricks-datasource"></a>
 
 The Databricks data source enables you to query and visualize Databricks data within Amazon Managed Grafana. It includes a SQL editor to format and color code your queries.
 

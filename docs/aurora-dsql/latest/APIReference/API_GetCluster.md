@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_GetC
 ---
 
 # GetCluster
-<a name="API_GetCluster"></a>
 
 Retrieves information about a cluster.
 

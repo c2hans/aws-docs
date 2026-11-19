@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-a-layout-a
 ---
 
 # Set a layout as default
-<a name="set-a-layout-as-default"></a>
 
 You don't have to set a layout as default when you create it. You can promote any saved layout to be the default at a later time.
 

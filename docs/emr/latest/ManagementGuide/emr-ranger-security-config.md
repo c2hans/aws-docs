@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-se
 ---
 
 # Create the EMR security configuration
-<a name="emr-ranger-security-config"></a>
 
 **Creating an Amazon EMR Security Configuration for Apache Ranger**
 

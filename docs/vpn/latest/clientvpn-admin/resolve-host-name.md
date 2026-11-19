@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/resolve-host-
 ---
 
 # Troubleshooting AWS Client VPN: Unable to resolve the Client VPN endpoint DNS name
-<a name="resolve-host-name"></a>
 
 **Problem**
 I am unable to resolve the Client VPN endpoint's DNS name.

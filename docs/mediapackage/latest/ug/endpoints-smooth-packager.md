@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-smooth-
 ---
 
 # Packager settings fields
-<a name="endpoints-smooth-packager"></a>
 
 The Packager settings fields hold general information about the endpoint.
 

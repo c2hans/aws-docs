@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Networking access scenarios for SaaS offerings in the AWS Cloud
-<a name="options"></a>
 
 This section covers different network access options for your SaaS offerings in the AWS Cloud. It discusses the approaches from the perspective of your consumer, who might have connectivity needs within the AWS Cloud, from on-premises data centers, or from other cloud service providers (CSPs). Additionally, you might need to support access from multiple types of consumer environments.
 

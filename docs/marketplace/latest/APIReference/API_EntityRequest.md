@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Enti
 ---
 
 # EntityRequest
-<a name="API_EntityRequest"></a>
 
 An object that contains entity ID and the catalog in which the entity is present.
 

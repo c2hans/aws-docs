@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/service_code_example
 ---
 
 # Basic examples for Amazon Translate using AWS SDKs
-<a name="service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Translate with AWS SDKs.
 

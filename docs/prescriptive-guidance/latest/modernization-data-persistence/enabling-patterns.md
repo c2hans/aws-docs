@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Patterns for enabling data persistence
-<a name="enabling-patterns"></a>
 
 The following patterns are used to enable data persistence in your microservices.
 

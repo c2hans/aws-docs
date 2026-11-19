@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/creating-using.html
 ---
 
 # Creating and managing EFS resources
-<a name="creating-using"></a>
 
 Amazon EFS provides elastic, shared file storage. The file system that you create supports concurrent read and write access from multiple Amazon EC2 instances. The file system is also accessible from all of the Availability Zones in the AWS Region where it is created.
 

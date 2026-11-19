@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/amplitude-connector-limit
 ---
 
 # Limitations and notes for the Amplitude connector
-<a name="amplitude-connector-limitations"></a>
 
 The following are limitations and notes for the Amplitude connector:
 + Amplitude is supported as a source only. Writing to Amplitude is not supported.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Pro
 ---
 
 # ProjectSummary
-<a name="API_ProjectSummary"></a>
 
 Information about a project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-dev/DeleteSessions.html
 ---
 
 # DeleteSessions
-<a name="DeleteSessions"></a>
 
 Deletes the specified Amazon DCV session and removes it from the Broker's cache.
 

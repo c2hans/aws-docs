@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGreengrassReadOnlyAccess
-<a name="AWSGreengrassReadOnlyAccess"></a>
 
 **Description**: This policy gives read only access to the AWS Greengrass configuration, management and deployment actions
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Offlin
 ---
 
 # OfflineStoreConfig
-<a name="API_OfflineStoreConfig"></a>
 
 The configuration of an `OfflineStore`.
 

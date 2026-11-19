@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/delete-chat-room.html
 ---
 
 # Deleting chat rooms
-<a name="delete-chat-room"></a>
 
 To delete a chat room, contact your Amazon Chime administrator. Administrators can only delete chat rooms in enterprise accounts.
 

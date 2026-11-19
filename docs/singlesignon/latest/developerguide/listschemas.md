@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/developerguide/lists
 ---
 
 # ListSchemas
-<a name="listschemas"></a>
 
 Information about supported SCIM schemas can be retrieved by making a request to the `/Schemas` endpoint. See the Examples section.
 

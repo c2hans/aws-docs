@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Descri
 ---
 
 # DescribeDomain
-<a name="API_DescribeDomain"></a>
 
 Returns information about the specified domain, including description and status.
 

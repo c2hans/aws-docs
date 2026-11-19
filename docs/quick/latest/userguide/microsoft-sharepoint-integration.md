@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/microsoft-sharepo
 ---
 
 # Microsoft SharePoint integration
-<a name="microsoft-sharepoint-integration"></a>
 
 With the Microsoft SharePoint integration, you can manage SharePoint lists, items, and files. You can also create knowledge bases from SharePoint content for AI-powered search and Q&A.
 

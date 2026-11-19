@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 After you determine that you can safely downgrade a database to Oracle Database Standard Edition 2 (SE2) on Amazon RDS for Oracle, you can migrate the database by using one or a combination of the following tools:
 + Oracle import and export** **utilities can move Oracle data in and out of Oracle databases. Oracle offers two types of database import and export utilities: Oracle Export and Import (for earlier releases) and Oracle Data Pump (available in Oracle Database 10g and later).

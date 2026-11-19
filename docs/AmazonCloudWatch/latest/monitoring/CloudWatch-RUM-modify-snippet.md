@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Modifying the code snippet to configure the CloudWatch RUM web client (optional)
-<a name="CloudWatch-RUM-modify-snippet"></a>
 
 You can modify the code snippet before inserting it into your application, to activate or deactivate several options. For more information, see the [ CloudWatch RUM web client documentation.](https://github.com/aws-observability/aws-rum-web/blob/main/docs/cdn_installation.md)
 

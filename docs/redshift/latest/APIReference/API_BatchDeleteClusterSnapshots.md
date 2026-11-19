@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_BatchDe
 ---
 
 # BatchDeleteClusterSnapshots
-<a name="API_BatchDeleteClusterSnapshots"></a>
 
 Deletes a set of cluster snapshots.
 

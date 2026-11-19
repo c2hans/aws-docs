@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-con
 ---
 
 # Tutorial: Complete the configuration required to connect to your instance using EC2 Instance Connect
-<a name="ec2-instance-connect-tutorial"></a>
 
 To connect to your instance using EC2 Instance Connect in the Amazon EC2 console, you first need to complete the prerequisite configuration that will allow you to successfully connect to your instance. The purpose of this tutorial is to guide you through the tasks to complete the prerequisite configuration.
 

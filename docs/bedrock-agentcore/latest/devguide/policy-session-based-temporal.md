@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Policy sessions and identity propagation
-<a name="policy-session-based-temporal"></a>
 
 With temporal policies, you can define rules based on past events that have occurred within a session, not just the current request. You can enforce constraints such as:
 + "Allow at most 5 tool invocations per session"

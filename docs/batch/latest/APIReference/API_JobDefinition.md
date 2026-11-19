@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_JobDefinit
 ---
 
 # JobDefinition
-<a name="API_JobDefinition"></a>
 
 An object that represents an AWS Batch job definition.
 

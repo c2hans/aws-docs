@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/provide-coachi
 ---
 
 # Provide agent coaching in Connect Customer
-<a name="provide-coaching"></a>
 
 Connect Customer provides integrated coaching tools that help supervisors deliver structured, data-driven feedback to agents based on performance evaluations. For upcoming one-on-one sessions with agents, supervisors can share detailed coaching feedback with concrete examples, and set performance goals directly within Connect Customer. Quality management teams can also assign coaching to supervisors with due dates when they identify improvement opportunities, such as showing greater empathy towards customer issues. After coaching is completed, agents can acknowledge the feedback in Connect Customer, making sure that they understand next steps for improvement. Past coaching feedback is centrally accessible, making it easier for agents, supervisors, and quality managers to track agent progress over time.
 

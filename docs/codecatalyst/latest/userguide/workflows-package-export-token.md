@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Using authorization tokens in workflow actions
-<a name="workflows-package-export-token"></a>
 
 You can use a token provided by the workflow action to manually configure a package manager to authenticate with CodeCatalyst package repositories. CodeCatalyst makes this token available as an environment variable for you to reference in your actions.
 

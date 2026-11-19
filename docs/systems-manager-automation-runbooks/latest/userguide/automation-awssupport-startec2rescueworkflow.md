@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-StartEC2RescueWorkflow`
-<a name="automation-awssupport-startec2rescueworkflow"></a>
 
  **Description**
 

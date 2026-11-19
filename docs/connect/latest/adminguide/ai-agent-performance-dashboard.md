@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-perfo
 ---
 
 # AI Agent performance dashboard
-<a name="ai-agent-performance-dashboard"></a>
 
 You can use the **AI Agent performance dashboard** to view AI Agent performance, and get insights across AI Agents and over time.
 

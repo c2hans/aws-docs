@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeExportTasks
-<a name="API_DescribeExportTasks"></a>
 
 Returns information about a snapshot or cluster export to Amazon S3. This API operation supports pagination.
 

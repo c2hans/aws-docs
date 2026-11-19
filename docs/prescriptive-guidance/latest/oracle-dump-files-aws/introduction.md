@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 ---
 
 # Transferring Oracle Database dump files from on premises to AWS
-<a name="introduction"></a>
 
 *Subhani Shaik, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/push-notifications/latest/userguide/proc
 ---
 
 # Disabling push channels
-<a name="procedure-disable-push"></a>
 
 Follow these directions to disable any of the push channels.
 

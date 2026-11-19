@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Client changes
-<a name="migration-clients"></a>
 
 ## Client builders
 <a name="client-builder"></a>

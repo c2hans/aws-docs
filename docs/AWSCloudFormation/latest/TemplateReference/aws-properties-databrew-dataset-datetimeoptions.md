@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataBrew::Dataset DatetimeOptions
-<a name="aws-properties-databrew-dataset-datetimeoptions"></a>
 
 Represents additional options for correct interpretation of datetime parameters used in the Amazon S3 path of a dataset.
 

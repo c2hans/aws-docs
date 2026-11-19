@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Training and skills required for large migrations
-<a name="training-skills"></a>
 
 The people involved in the large migration are a critical resource, and it is equally as important to prepare them for the migration as it is to prepare the landing zone or workstreams. This section is dedicated to training the people in your project, ensuring that your teams have the skills necessary to perform a large migration. While some skills are common and required for many roles, other skills are more specialized and require thoughtful recruitment or training. By ensuring individuals are properly trained for their roles before the migration starts, the workstreams can operate efficiently, and you can quickly ramp up the migration to the target velocity.
 

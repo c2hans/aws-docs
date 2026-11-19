@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_GetRes
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
  Gets a resource policy that is identified by its resource ARN.
 

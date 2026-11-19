@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enable-nitrotpm-
 ---
 
 # Requirements for using NitroTPM with Amazon EC2 instances
-<a name="enable-nitrotpm-prerequisites"></a>
 
 To launch an instance with NitroTPM enabled, you must meet the following requirements.
 

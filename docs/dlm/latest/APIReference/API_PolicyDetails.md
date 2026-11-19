@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_PolicyDetail
 ---
 
 # PolicyDetails
-<a name="API_PolicyDetails"></a>
 
 Specifies the configuration of a lifecycle policy.
 

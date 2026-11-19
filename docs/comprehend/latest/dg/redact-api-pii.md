@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/redact-api-pii.html
 ---
 
 # Redacting PII entities with asynchronous jobs (API)
-<a name="redact-api-pii"></a>
 
 To redact the PII entities in your text, you start an asynchronous batch job. To run the job, upload your documents to Amazon S3, and submit a [StartPiiEntitiesDetectionJob](https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StartPiiEntitiesDetectionJob.html) request.
 

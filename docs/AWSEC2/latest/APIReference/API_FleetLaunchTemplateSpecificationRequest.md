@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetLaun
 ---
 
 # FleetLaunchTemplateSpecificationRequest
-<a name="API_FleetLaunchTemplateSpecificationRequest"></a>
 
 The Amazon EC2 launch template that can be used by an EC2 Fleet to configure Amazon EC2 instances. You must specify either the ID or name of the launch template in the request, but not both.
 

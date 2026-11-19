@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.Compo
 ---
 
 # ElastiCache components and features
-<a name="WhatIs.Components"></a>
 
 Following, you can find an overview of the major components of an Amazon ElastiCache deployment.
 

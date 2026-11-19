@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Automated archival for Amazon Redshift
-<a name="automated-archival-redshift"></a>
 
 Publication date: **July 12, 2021 ([Diagram history](diagram-history.md))**
 

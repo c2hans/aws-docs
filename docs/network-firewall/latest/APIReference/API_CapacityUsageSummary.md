@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # CapacityUsageSummary
-<a name="API_CapacityUsageSummary"></a>
 
 The capacity usage summary of the resources used by the [ReferenceSets](API_ReferenceSets.md) in a firewall.
 

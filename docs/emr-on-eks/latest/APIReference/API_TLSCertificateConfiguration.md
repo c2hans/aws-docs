@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_TLSCe
 ---
 
 # TLSCertificateConfiguration
-<a name="API_TLSCertificateConfiguration"></a>
 
 Configurations related to the TLS certificate for the security configuration.
 

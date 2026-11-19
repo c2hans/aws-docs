@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_EntityDis
 ---
 
 # EntityDisplayData
-<a name="API_EntityDisplayData"></a>
 
 Information about the user entity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/warm-pool-inst
 ---
 
 # Use lifecycle hooks with a warm pool in Auto Scaling group
-<a name="warm-pool-instance-lifecycle"></a>
 
 Instances in a warm pool maintain their own independent lifecycle to help you create the appropriate custom action for each transition. This lifecycle is designed to help you to invoke actions in a target service (for example, a Lambda function) while an instance is still initializing and before it is put in service.
 

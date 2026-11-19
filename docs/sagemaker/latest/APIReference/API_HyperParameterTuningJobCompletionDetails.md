@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterTuningJobCompletionDetails
-<a name="API_HyperParameterTuningJobCompletionDetails"></a>
 
 A structure that contains runtime information about both current and completed hyperparameter tuning jobs.
 

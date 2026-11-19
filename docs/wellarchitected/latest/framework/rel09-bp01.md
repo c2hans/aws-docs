@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel09-b
 ---
 
 # REL09-BP01 Identify and back up all data that needs to be backed up, or reproduce the data from sources
-<a name="rel09-bp01"></a>
 
  Not all data is equally valuable, and you can recreate some from an authoritative source rather than back it up. Decide what to protect, how often, and by which method to build a recovery strategy that meets your tolerance for loss.
 

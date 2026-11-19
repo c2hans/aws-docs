@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationEC2Access
-<a name="security-iam-awsmanpol-AWSApplicationMigrationEC2Access"></a>
 
 You can attach the `AWSApplicationMigrationEC2Access` policy to your IAM identities.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/pod-id-role.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create IAM role with trust policy required by EKS Pod Identity
-<a name="pod-id-role"></a>
 
 ```
 {

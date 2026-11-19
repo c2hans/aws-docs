@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-eco
 ---
 
 # Amazon Inspector SBOM Generator comprehensive ecosystem collection
-<a name="sbom-generator-ecosystem-collection"></a>
 
  The Amazon Inspector SBOM Generator is a tool for creating a software bill of materials (SBOM) and performing vulnerability scanning for supported packages from operating systems and programming languages. It supports the scanning of various ecosystems beyond core operating systems, ensuring a robust and detailed analysis of infrastructure components. By generating an SBOM, you can understand the composition of modern technology stacks, identify vulnerabilities in ecosystem components, and gain visibility into third-party software.
 

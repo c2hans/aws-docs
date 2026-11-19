@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # OptimizedPromptEvent
-<a name="API_agent-runtime_OptimizedPromptEvent"></a>
 
 An event in which the prompt was optimized.
 

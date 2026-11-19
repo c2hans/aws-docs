@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_S3FilesVol
 ---
 
 # S3FilesVolumeConfiguration
-<a name="API_S3FilesVolumeConfiguration"></a>
 
 This is used when you're using an S3Files file system for job storage.
 

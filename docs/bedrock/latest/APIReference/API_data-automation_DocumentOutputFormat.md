@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # DocumentOutputFormat
-<a name="API_data-automation_DocumentOutputFormat"></a>
 
 A document output format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-javascript.ht
 ---
 
 # Working with the AWS CDK in JavaScript
-<a name="work-with-cdk-javascript"></a>
 
 JavaScript is a fully-supported client language for the AWS CDK and is considered stable. Working with the AWS Cloud Development Kit (AWS CDK) in JavaScript uses familiar tools, including [Node.js](https://nodejs.org/) and the Node Package Manager (`npm`). You may also use [Yarn](https://yarnpkg.com/) if you prefer, though the examples in this Guide use NPM. The modules comprising the AWS Construct Library are distributed via the NPM repository, [npmjs.org](https://www.npmjs.com/).
 

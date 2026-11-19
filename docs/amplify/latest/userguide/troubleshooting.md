@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting
 ---
 
 # Troubleshooting Amplify Hosting
-<a name="troubleshooting"></a>
 
 If you encounter errors or deployment issues when working with Amplify Hosting, consult the topics in this section.
 

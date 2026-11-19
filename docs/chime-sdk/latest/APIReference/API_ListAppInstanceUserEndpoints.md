@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_ListAp
 ---
 
 # ListAppInstanceUserEndpoints
-<a name="API_ListAppInstanceUserEndpoints"></a>
 
 Lists all the `AppInstanceUserEndpoints` created under a single `AppInstanceUser`.
 

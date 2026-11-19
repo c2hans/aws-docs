@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListCustomLineItemChargeDetails
-<a name="API_ListCustomLineItemChargeDetails"></a>
 
  A representation of the charge details of a custom line item.
 

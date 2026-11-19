@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationAutoscalingKafkaClusterPolicy
-<a name="AWSApplicationAutoscalingKafkaClusterPolicy"></a>
 
 **Description**: Policy granting permissions to Application Auto Scaling to access Managed Streaming for Apache Kafka and CloudWatch.
 

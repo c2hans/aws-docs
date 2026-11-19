@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # CA certificate expiring
-<a name="audit-chk-ca-cert-approaching-expiration"></a>
 
 A CA certificate is expiring within 30 days or has expired.
 

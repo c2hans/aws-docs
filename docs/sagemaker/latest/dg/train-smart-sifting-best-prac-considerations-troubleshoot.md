@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-smart-sifting-
 ---
 
 # Troubleshooting
-<a name="train-smart-sifting-best-prac-considerations-troubleshoot"></a>
 
 If you run into an error, use the following list to try to troubleshoot the issue. If you need further support, reach out to the SageMaker AI team at sm-smart-sifting-feedback@amazon.com.
 

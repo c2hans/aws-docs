@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-check-ecsin
 ---
 
 # Check your account's Amazon ECS instance role
-<a name="batch-check-ecsinstancerole"></a>
 
 The Amazon ECS instance role and instance profile are automatically created for you in the console first-run experience. However, you can follow these steps to check if your account already has the Amazon ECS instance role and instance profile. The following steps also cover how to attach the managed IAM policy.<a name="procedure_check_instance_role"></a>
 

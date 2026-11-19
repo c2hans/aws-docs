@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/visua
 ---
 
 # Graph visualization tools for Neptune Analytics
-<a name="visualization-tools"></a>
 
 You can use solutions built by AWS partners and third-party vendors for visualizing data stored in Neptune Analytics.
 

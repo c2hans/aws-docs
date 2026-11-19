@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-uss-cdi-vpc.ht
 ---
 
 # Ensure correct setup on the upstream system
-<a name="setup-uss-cdi-vpc"></a>
 
 After you create the CDI input, you must make sure that the operator at the upstream system sets up correctly with your VPC, and that they push content to the correct locations in MediaLive.
 

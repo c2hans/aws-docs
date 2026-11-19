@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # CreatePolicyStore
-<a name="API_CreatePolicyStore"></a>
 
 Creates a policy store. A policy store is a container for policy resources.
 

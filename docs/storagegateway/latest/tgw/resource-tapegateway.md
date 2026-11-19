@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/resource-tapeg
 ---
 
 # Working with Tape Gateway storage resources
-<a name="resource-tapegateway"></a>
 
 The topics in this section describe how to manage the storage resources associated with your Tape Gateway, such as the physical disks attached to a gateway's virtual host platform, the Amazon EBS volumes attached to a gateway's Amazon EC2 instance, your virtual tape library devices such as medium changers, and the tapes in your virtual tape libraries.
 

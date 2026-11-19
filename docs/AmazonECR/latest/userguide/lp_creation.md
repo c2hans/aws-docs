@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/lp_creation.h
 ---
 
 # Creating a lifecycle policy for a repository in Amazon ECR
-<a name="lp_creation"></a>
 
  Use a lifecycle policy to create a set of rules that expire or archive unused repository images. After creating a lifecycle policy, the affected images are expired or archived within 24 hours.
 

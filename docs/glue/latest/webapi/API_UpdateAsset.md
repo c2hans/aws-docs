@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateAsset.html
 ---
 
 # UpdateAsset
-<a name="API_UpdateAsset"></a>
 
 Updates the name and description of an existing asset in AWS Glue Data Catalog. Only the fields that you provide are updated.
 

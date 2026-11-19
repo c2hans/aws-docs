@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp
 ---
 
 # Manage AWS STS in an AWS Region
-<a name="id_credentials_temp_enable-regions"></a>
 
 A Regional endpoint is the URL of the entry point within a particular region for an AWS web service. AWS recommends using Regional AWS Security Token Service (AWS STS) endpoints instead of the global endpoint to reduce latency, build in redundancy, and increase session token validity.
 

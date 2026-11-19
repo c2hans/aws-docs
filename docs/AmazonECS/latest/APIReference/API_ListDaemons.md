@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListDa
 ---
 
 # ListDaemons
-<a name="API_ListDaemons"></a>
 
 Returns a list of daemons. You can filter the results by cluster or capacity provider.
 

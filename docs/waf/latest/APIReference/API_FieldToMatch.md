@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_FieldToMatch
 ---
 
 # FieldToMatch
-<a name="API_FieldToMatch"></a>
 
 Specifies a web request component to be used in a rule match statement or in a logging configuration.
 + In a rule statement, this is the part of the web request that you want AWS WAF to inspect. Include the single `FieldToMatch` type that you want to inspect, with additional specifications as needed, according to the type. You specify a single request component in `FieldToMatch` for each rule statement that requires it. To inspect more than one component of the web request, create a separate rule statement for each component.

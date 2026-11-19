@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-eks-self-managed.html
 ---
 
 # AWS.Compute.EKSSelfManagedNode
-<a name="node-eks-self-managed"></a>
 
 AWS TNB supports Amazon EKS self-managed nodes to automate the provisioning and lifecycle management of nodes (Amazon EC2 instances) for Amazon EKS Kubernetes clusters. To create an Amazon EKS node group, do the following:
 + Choose the Amazon Machine Images (AMI) for your cluster workers nodes by providing either the ID of the AMI.

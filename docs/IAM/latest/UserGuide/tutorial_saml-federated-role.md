@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_saml-feder
 ---
 
 # IAM tutorial: Use a CloudFormation template to create a SAML federated IAM role
-<a name="tutorial_saml-federated-role"></a>
 
 When you have an existing SAML Identity Provider (IdP) configured in your AWS account, you can create federated IAM roles that trust that IdP. This tutorial shows you how to use a CloudFormation template to create a SAML federated IAM role that can be assumed by users authenticated through your external IdP.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_C
 ---
 
 # CacheAttributes
-<a name="API_CacheAttributes"></a>
 
 The refresh cache information for the file share or FSx file systems.
 

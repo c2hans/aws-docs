@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/service_code_
 ---
 
 # Actions for Amazon RDS using AWS SDKs
-<a name="service_code_examples_actions"></a>
 
 The following code examples demonstrate how to perform individual Amazon RDS actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

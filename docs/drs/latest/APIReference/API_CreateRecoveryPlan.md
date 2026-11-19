@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateRecove
 ---
 
 # CreateRecoveryPlan
-<a name="API_CreateRecoveryPlan"></a>
 
 Creates a Recovery Plan to orchestrate multi-server disaster recovery.
 

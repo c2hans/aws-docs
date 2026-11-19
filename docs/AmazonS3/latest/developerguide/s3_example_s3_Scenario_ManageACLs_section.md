@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Manage access control lists (ACLs) for Amazon S3 buckets using an AWS SDK
-<a name="s3_example_s3_Scenario_ManageACLs_section"></a>
 
 The following code example shows how to manage access control lists (ACLs) for Amazon S3 buckets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Monitorin
 ---
 
 # MonitoringConfigurationDescription
-<a name="API_MonitoringConfigurationDescription"></a>
 
 Describes configuration parameters for CloudWatch logging for an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SigningCerti
 ---
 
 # SigningCertificate
-<a name="API_SigningCertificate"></a>
 
 Contains information about an X.509 signing certificate.
 

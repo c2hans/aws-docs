@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/link.html
 ---
 
 # .link
-<a name="link"></a>
 
 Used for information about the creation of online shortcut links.
 

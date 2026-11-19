@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteRe
 ---
 
 # DeleteReusableDelegationSet
-<a name="API_DeleteReusableDelegationSet"></a>
 
 Deletes a reusable delegation set.
 

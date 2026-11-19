@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtim
 ---
 
 # PayloadPart
-<a name="API_runtime_PayloadPart"></a>
 
 A wrapper for pieces of the payload that's returned in response to a streaming inference request. A streaming inference response consists of one or more payload parts.
 

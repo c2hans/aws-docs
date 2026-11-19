@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # StartExecutionPreview
-<a name="API_StartExecutionPreview"></a>
 
 Initiates the process of creating a preview showing the effects that running a specified Automation runbook would have on the targeted resources.
 

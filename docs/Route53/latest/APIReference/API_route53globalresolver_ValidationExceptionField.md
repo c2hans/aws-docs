@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ValidationExceptionField
-<a name="API_route53globalresolver_ValidationExceptionField"></a>
 
 Information about a field that failed validation.
 

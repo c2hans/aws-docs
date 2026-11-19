@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetReso
 ---
 
 # GetResourcesTrendsV2
-<a name="API_GetResourcesTrendsV2"></a>
 
 Returns resource trend data based on the specified criteria. This operation helps you analyze patterns and changes in resource compliance over time.
 

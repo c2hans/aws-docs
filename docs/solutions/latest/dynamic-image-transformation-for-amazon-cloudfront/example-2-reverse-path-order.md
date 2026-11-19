@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Reverse path order
-<a name="example-2-reverse-path-order"></a>
 
 You can place filters at the end of the path rather than before the image key.
 

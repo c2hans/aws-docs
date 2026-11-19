@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # LinkedIssue
-<a name="API_LinkedIssue"></a>
 
 A reference to an issue created for a finding in a third-party issue tracker.
 

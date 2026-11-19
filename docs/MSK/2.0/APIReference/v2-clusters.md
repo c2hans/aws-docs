@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSK/2.0/APIReference/v2-clusters.html
 ---
 
 # Clusters
-<a name="v2-clusters"></a>
 
 Represents the Amazon MSK clusters in an account.
 

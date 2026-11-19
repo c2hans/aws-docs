@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyCap
 ---
 
 # ModifyCapacityReservationFleet
-<a name="API_ModifyCapacityReservationFleet"></a>
 
 Modifies a Capacity Reservation Fleet.
 

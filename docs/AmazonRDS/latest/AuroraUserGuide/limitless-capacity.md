@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Changing the capacity of a DB shard group
-<a name="limitless-capacity"></a>
 
 You can use the AWS Management Console or AWS CLI to change the capacity of a DB shard group.
 

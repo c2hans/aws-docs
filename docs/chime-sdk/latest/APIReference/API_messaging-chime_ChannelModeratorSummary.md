@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ChannelModeratorSummary
-<a name="API_messaging-chime_ChannelModeratorSummary"></a>
 
 Summary of the details of a `ChannelModerator`.
 

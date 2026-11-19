@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # StreamGroupSummary
-<a name="API_StreamGroupSummary"></a>
 
 Describes a Amazon GameLift Streams stream group resource for hosting content streams. To retrieve additional stream group details, call [GetStreamGroup](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_GetStreamGroup.html).
 

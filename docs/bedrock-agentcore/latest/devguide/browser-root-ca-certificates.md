@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Configure Root Certificate Authority for Amazon Bedrock AgentCore Browser
-<a name="browser-root-ca-certificates"></a>
 
 By default, Amazon Bedrock AgentCore Browser sessions trust only publicly recognized certificate authorities. If your agents need to access internal services, corporate websites, or resources behind a TLS-intercepting proxy that use certificates signed by a private CA, you must provide your custom root CA certificates when starting a session.
 

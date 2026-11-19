@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactL
 ---
 
 # ContactLensSentimentConfiguration
-<a name="API_ContactLensSentimentConfiguration"></a>
 
 The conversational analytics sentiment analysis configuration for a contact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/delete-acce
 ---
 
 # Deleting a data access budget
-<a name="delete-access-budget"></a>
 
 You can delete a data access budget from the **Tables** tab or from the table details page.
 

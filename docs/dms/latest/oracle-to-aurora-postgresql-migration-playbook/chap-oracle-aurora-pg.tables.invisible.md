@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL invisible indexes
-<a name="chap-oracle-aurora-pg.tables.invisible"></a>
 
 You can create invisible indexes in Oracle Database. An invisible index is a type of index that is not used by the optimizer by default but can still be used if explicitly specified in a query.
 

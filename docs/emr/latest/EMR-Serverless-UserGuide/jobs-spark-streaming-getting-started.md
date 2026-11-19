@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs
 ---
 
 # Getting started streaming jobs
-<a name="jobs-spark-streaming-getting-started"></a>
 
 See the following instructions to learn how to get started with streaming jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon Connect Health is an AI-powered healthcare service built on Amazon Connect. It provides pre-built agents that automate patient engagement workflows and support clinical documentation at the point of care.
 
@@ -11,4 +10,4 @@ You can use the Amazon Connect Health API to programmatically manage domains, co
 
 We recommend that you use the AWS SDKs to make programmatic API calls to Amazon Connect Health.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

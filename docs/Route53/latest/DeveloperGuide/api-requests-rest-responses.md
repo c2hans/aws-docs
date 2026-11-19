@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/api-reques
 ---
 
 # REST Responses
-<a name="api-requests-rest-responses"></a>
 
 Amazon Route 53 responses are just standard HTTP responses. Some of the Route 53 actions return special information specific to Route 53 in the form of an HTTP header or XML in the body of the response. The specific details are covered in the API reference topic for the particular action.
 

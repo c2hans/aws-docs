@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Add a Persona
-<a name="extend-persona"></a>
 
 A **persona** in AVX is a named interaction role that determines which data products load into AgentCore Memory at session start, which KB source categories are pre-scoped for retrieval, which tool factories are registered on the agent, and which system prompt body the supervisor uses.
 

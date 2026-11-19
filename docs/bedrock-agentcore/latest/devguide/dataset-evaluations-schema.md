@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # Dataset schema
-<a name="dataset-evaluations-schema"></a>
 
 A dataset contains one or more scenarios. Each scenario represents a conversation (session) with the agent. Both the [on-demand](dataset-evaluations-on-demand.md) and [batch](dataset-evaluations-batch.md) dataset runners use the same dataset format.
 

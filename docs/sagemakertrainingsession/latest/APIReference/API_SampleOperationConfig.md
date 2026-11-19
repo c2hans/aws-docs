@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SampleOperationConfig
-<a name="API_SampleOperationConfig"></a>
 
 The configuration for a sampling operation. Exactly one member must be set to specify the operation type.
 

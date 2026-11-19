@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # Creating a TLS inspection configuration in Network Firewall
-<a name="creating-tls-configuration"></a>
 
 This procedure explains how to create a TLS inspection configuration using Network Firewall. To follow this procedure, you must have at least one certificate in AWS Certificate Manager (ACM) that's accessible by your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Se
 ---
 
 # SelfManagedInput
-<a name="API_SelfManagedInput"></a>
 
 The configuration for a self-managed private connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_PutIdentityP
 ---
 
 # PutIdentityPolicy
-<a name="API_PutIdentityPolicy"></a>
 
 Adds or updates a sending authorization policy for the specified identity (an email address or a domain).
 

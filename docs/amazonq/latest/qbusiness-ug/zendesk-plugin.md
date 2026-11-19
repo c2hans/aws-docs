@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/zendesk-plug
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring a Zendesk plugin for Amazon Q Business
-<a name="zendesk-plugin"></a>
 
 Zendesk is a customer relationship management system that helps businesses automate and enhance customer support interactions by creating tickets to track work. If you’re a Zendesk user, you can create an Amazon Q Business plugin to allow your end users to create Zendesk cases from within their web experience chat.
 

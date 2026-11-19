@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/servicenow-integr
 ---
 
 # ServiceNow integration
-<a name="servicenow-integration"></a>
 
 Use the ServiceNow integration to perform actions within your ServiceNow instances, including managing incidents, problems, change requests, knowledge base articles, and attachments. This integration uses the ServiceNow REST API. For more information, see [REST API](https://docs.servicenow.com/bundle/xanadu-api-reference/page/build/applications/concept/api-rest.html) in the ServiceNow documentation.
 

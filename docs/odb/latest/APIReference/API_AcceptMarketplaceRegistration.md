@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AcceptMarket
 ---
 
 # AcceptMarketplaceRegistration
-<a name="API_AcceptMarketplaceRegistration"></a>
 
 Registers the AWS Marketplace token for your AWS account to activate your Oracle Database@AWS subscription.
 

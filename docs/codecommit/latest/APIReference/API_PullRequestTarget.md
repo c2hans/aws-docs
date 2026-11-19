@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PullR
 ---
 
 # PullRequestTarget
-<a name="API_PullRequestTarget"></a>
 
 Returns information about a pull request target.
 

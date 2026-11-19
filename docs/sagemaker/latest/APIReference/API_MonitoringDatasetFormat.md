@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringDatasetFormat
-<a name="API_MonitoringDatasetFormat"></a>
 
 Represents the dataset format used when running a monitoring job.
 

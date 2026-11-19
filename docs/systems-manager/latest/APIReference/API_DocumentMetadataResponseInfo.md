@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentMetadataResponseInfo
-<a name="API_DocumentMetadataResponseInfo"></a>
 
 Details about the response to a document review request.
 

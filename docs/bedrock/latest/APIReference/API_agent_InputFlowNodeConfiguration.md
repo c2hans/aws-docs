@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # InputFlowNodeConfiguration
-<a name="API_agent_InputFlowNodeConfiguration"></a>
 
 Contains configurations for the input flow node for a flow. This node takes the input from flow invocation and passes it to the next node in the data type that you specify.
 

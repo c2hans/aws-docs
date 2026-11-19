@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/code
 ---
 
 # Working with the Toolkit in a Dev Environments
-<a name="codecatalyst-devenvironment"></a>
 
 Dev Environments are virtual computing environments for Amazon CodeCatalyst. The following sections describe how to create, launch, and work from Dev Environments using the AWS Toolkit for Visual Studio Code.
 

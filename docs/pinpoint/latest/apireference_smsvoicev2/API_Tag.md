@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 The list of tags to be added to the specified topic.
 

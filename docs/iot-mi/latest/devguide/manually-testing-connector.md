@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/manually-testing-
 ---
 
 # Manually test your C2C connector
-<a name="manually-testing-connector"></a>
 
 To manually test your C2C connector end-to-end, you must simulate both the customer and the end user.
 

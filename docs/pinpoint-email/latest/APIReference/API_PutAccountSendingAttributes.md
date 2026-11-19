@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_P
 ---
 
 # PutAccountSendingAttributes
-<a name="API_PutAccountSendingAttributes"></a>
 
 Enable or disable the ability of your account to send email.
 

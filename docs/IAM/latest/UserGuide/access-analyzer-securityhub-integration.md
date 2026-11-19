@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-sec
 ---
 
 # Integrate IAM Access Analyzer with AWS Security Hub CSPM
-<a name="access-analyzer-securityhub-integration"></a>
 
 [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) provides a comprehensive view of your security state across AWS. It helps you assess your environment against security industry standards and best practices. Security Hub CSPM collects security data from across AWS accounts, services, and supported third-party partner products. It then analyzes your security trends and identifies the highest priority security issues.
 

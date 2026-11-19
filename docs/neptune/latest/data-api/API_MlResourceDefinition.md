@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_MlResourceDe
 ---
 
 # MlResourceDefinition
-<a name="API_MlResourceDefinition"></a>
 
 Defines a Neptune ML resource.
 

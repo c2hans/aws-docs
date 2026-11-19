@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-tag
 ---
 
 # Using tags with S3 vector buckets
-<a name="s3-vectors-tags"></a>
 
 An AWS tag is a key-value pair that holds metadata about resources, in this case Amazon S3 vector buckets. You can tag S3 vector buckets when you create them or manage tags on existing vector buckets. For general information about tags, see [Tagging for cost allocation or attribute-based access control (ABAC)](tagging.md).
 

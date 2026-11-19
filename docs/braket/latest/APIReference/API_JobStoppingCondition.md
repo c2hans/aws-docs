@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_JobStoppi
 ---
 
 # JobStoppingCondition
-<a name="API_JobStoppingCondition"></a>
 
 Specifies limits for how long an Amazon Braket hybrid job can run.
 

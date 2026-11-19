@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_Delet
 ---
 
 # DeleteSlackChannelConfiguration
-<a name="API_DeleteSlackChannelConfiguration"></a>
 
 Deletes a Slack channel configuration from your AWS account. This operation doesn't delete your Slack channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_D
 ---
 
 # DeleteConfig
-<a name="API_DeleteConfig"></a>
 
 Deletes a `Config`.
 

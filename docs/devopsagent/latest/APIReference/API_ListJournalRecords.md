@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListJournalRecords
-<a name="API_ListJournalRecords"></a>
 
 List journal records for a specific execution
 

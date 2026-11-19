@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket
 ---
 
 # Policy examples for ACLs
-<a name="example-bucket-policies-condition-keys"></a>
 
 You can use condition keys in bucket policies to control access to Amazon S3.
 

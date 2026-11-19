@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SourceProcessingP
 ---
 
 # SourceProcessingProperties
-<a name="API_SourceProcessingProperties"></a>
 
 The resource properties associated with the integration source.
 

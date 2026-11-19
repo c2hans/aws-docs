@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Infras
 ---
 
 # InfrastructureOptimization
-<a name="API_InfrastructureOptimization"></a>
 
 The configuration that controls how Amazon ECS optimizes your infrastructure.
 

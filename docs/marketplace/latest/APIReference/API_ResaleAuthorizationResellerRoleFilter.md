@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationResellerRoleFilter
-<a name="API_ResaleAuthorizationResellerRoleFilter"></a>
 
 Allows filtering on the `ResellerRole` of a ResaleAuthorization.
 

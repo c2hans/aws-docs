@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_JobPr
 ---
 
 # JobProgressReport
-<a name="API_JobProgressReport"></a>
 
 The progress report for the import job.
 

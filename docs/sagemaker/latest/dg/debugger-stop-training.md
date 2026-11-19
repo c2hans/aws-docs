@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-stop-traini
 ---
 
 # Set up Debugger for automated training job termination using CloudWatch and Lambda
-<a name="debugger-stop-training"></a>
 
 **Note**
 Amazon SageMaker Debugger is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Debugger, but we do not plan to introduce new features. For more information, see [Debugger availability change](debugger-availability-change.md).

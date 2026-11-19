@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_InfraC
 ---
 
 # InfraCheckConfig
-<a name="API_InfraCheckConfig"></a>
 
 Configuration information for the infrastructure health check of a training job. A SageMaker-provided health check tests the health of instance hardware and cluster network connectivity.
 

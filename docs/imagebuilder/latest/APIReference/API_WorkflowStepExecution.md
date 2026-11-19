@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Wor
 ---
 
 # WorkflowStepExecution
-<a name="API_WorkflowStepExecution"></a>
 
 Contains runtime details for a workflow step that has paused at a `WaitForAction` step, and is waiting for you to send an action.
 

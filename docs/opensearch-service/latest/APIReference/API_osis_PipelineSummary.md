@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PipelineSummary
-<a name="API_osis_PipelineSummary"></a>
 
 Summary information for an OpenSearch Ingestion pipeline.
 

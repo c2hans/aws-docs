@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 ---
 
 # Amazon EC2 as the target
-<a name="amazon-ec2-target"></a>
 
 If the target is an Amazon EC2 instance, configure the AWS CLI on Amazon EC2 before you proceed, and create a directory for the source Oracle Database dump files.
 

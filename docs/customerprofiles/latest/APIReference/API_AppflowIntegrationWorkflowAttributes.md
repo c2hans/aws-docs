@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # AppflowIntegrationWorkflowAttributes
-<a name="API_connect-customer-profiles_AppflowIntegrationWorkflowAttributes"></a>
 
 Structure holding all `APPFLOW_INTEGRATION` specific workflow attributes.
 

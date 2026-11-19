@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_User.
 ---
 
 # User
-<a name="API_User"></a>
 
 A registered user of Quick Sight.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/return-module.
 ---
 
 # Flow block in Connect Customer: Return (from module)
-<a name="return-module"></a>
 
 This topic defines the flow block for resuming a task contact from a paused state.
 

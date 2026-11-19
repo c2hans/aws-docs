@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_RegisterClus
 ---
 
 # RegisterCluster
-<a name="API_RegisterCluster"></a>
 
 Connects a Kubernetes cluster to the Amazon EKS control plane.
 

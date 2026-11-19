@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListLifecycleExecutions
-<a name="API_ListLifecycleExecutions"></a>
 
 Retrieves the lifecycle runtime history for the specified resource.
 

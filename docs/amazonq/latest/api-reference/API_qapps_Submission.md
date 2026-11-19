@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_S
 ---
 
 # Submission
-<a name="API_qapps_Submission"></a>
 
 A record created when a user submits a form card.
 

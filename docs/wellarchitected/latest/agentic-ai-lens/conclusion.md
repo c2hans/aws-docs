@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/c
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 The Agentic AI Lens provides a thorough framework for building agentic AI systems that are operationally excellent, secure, reliable, high-performing, cost-effective, and sustainable. As agentic AI transitions from experimental technology to production workload, the architectural decisions made during system design have lasting consequences for the reliability, security, and cost profile of deployed systems.
 

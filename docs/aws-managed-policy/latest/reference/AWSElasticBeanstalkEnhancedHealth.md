@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkEnhancedHealth
-<a name="AWSElasticBeanstalkEnhancedHealth"></a>
 
 **Description**: AWS Elastic Beanstalk Service policy for Health Monitoring system
 

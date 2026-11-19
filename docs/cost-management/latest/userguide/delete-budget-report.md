@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/delete-
 ---
 
 # Deleting an AWS Budgets report
-<a name="delete-budget-report"></a>
 
 Use the following procedure to delete an AWS Budgets report.<a name="delete-budget-report-steps"></a>
 

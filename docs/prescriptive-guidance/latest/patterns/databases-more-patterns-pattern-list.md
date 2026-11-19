@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 ---
 
 # More patterns
-<a name="databases-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Access, query, and join Amazon DynamoDB tables using Athena](access-query-and-join-amazon-dynamodb-tables-using-athena.md)
@@ -50,7 +49,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Migrate an Oracle database to Amazon RDS for Oracle by using Oracle GoldenGate flat file adapters](migrate-an-oracle-database-to-amazon-rds-for-oracle-by-using-oracle-goldengate-flat-file-adapters.md)
 + [Migrate an Oracle Database to Amazon Redshift using AWS DMS and AWS SCT](migrate-an-oracle-database-to-amazon-redshift-using-aws-dms-and-aws-sct.md)
 + [Migrate an Oracle database to Aurora PostgreSQL using AWS DMS and AWS SCT](migrate-an-oracle-database-to-aurora-postgresql-using-aws-dms-and-aws-sct.md)
-+ [Migrate an Oracle JD Edwards EnterpriseOne database to AWS by using Oracle Data Pump and AWS DMS](migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms.md)
 + [Migrate an Oracle partitioned table to PostgreSQL by using AWS DMS](migrate-an-oracle-partitioned-table-to-postgresql-by-using-aws-dms.md)
 + [Migrate an Oracle PeopleSoft database to AWS by using AWS DMS](migrate-an-oracle-peoplesoft-database-to-aws-by-using-aws-dms.md)
 + [Migrate a Couchbase Server database to Amazon EC2](migrate-couchbase-server-ec2.md)

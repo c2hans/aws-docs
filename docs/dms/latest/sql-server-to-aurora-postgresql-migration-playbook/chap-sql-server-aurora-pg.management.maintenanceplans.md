@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Maintenance plans
-<a name="chap-sql-server-aurora-pg.management.maintenanceplans"></a>
 
 This topic provides reference information comparing database maintenance tasks between Microsoft SQL Server and Amazon Aurora PostgreSQL. You can understand the key differences in how these two database systems handle common maintenance operations such as backups, index management, statistics updates, and consistency checks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Applicati
 ---
 
 # ApplicationStatusCheckAssociationObject
-<a name="API_ApplicationStatusCheckAssociationObject"></a>
 
 Information about an application status check association. Each item in the `associationSet` of a `DescribeApplicationStatusCheckAssociations` response is of this type.
 

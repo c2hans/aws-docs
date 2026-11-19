@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_SNOMED
 ---
 
 # SNOMEDCTConcept
-<a name="API_SNOMEDCTConcept"></a>
 
  The SNOMED-CT concepts that the entity could refer to, along with a score indicating the likelihood of the match.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-business-context-
 ---
 
 # Getting started with business context in the Data Catalog
-<a name="catalog-business-context-getting-started"></a>
 
 **Note**
 Business context and semantic search are in preview for AWS Glue in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), and Europe (Ireland). This feature is subject to change.

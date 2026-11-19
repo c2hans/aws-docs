@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StepStateCha
 ---
 
 # StepStateChangeReason
-<a name="API_StepStateChangeReason"></a>
 
 The details of the step state change reason.
 

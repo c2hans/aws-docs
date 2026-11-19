@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference-replicator/what-is-
 ---
 
 # What Is Amazon Managed Streaming for Apache Kafka?
-<a name="what-is-msk-replicator"></a>
 
 Amazon Managed Streaming for Apache Kafka (Amazon MSK) is a fully managed service that makes it easy for you to build and run applications that use Apache Kafka to process streaming data.
 

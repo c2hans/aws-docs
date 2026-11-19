@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Behavior.htm
 ---
 
 # Behavior
-<a name="API_Behavior"></a>
 
 A Device Defender security profile behavior.
 

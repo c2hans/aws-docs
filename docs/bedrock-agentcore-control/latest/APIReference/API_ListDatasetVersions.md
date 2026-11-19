@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListDatasetVersions
-<a name="API_ListDatasetVersions"></a>
 
  Lists all published versions of a dataset, sorted by version number descending (newest first). Does not include the DRAFT working copy.
 

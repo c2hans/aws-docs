@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/os-upgrade-trbl.
 ---
 
 # Troubleshoot an operating system upgrade on an EC2 Windows instance
-<a name="os-upgrade-trbl"></a>
 
 AWS provides upgrade support for issues or problems with the Upgrade Helper Service, an AWS utility that helps you perform in-place upgrades involving Citrix PV drivers.
 

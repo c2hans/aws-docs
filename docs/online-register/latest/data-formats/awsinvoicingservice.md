@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 ---
 
 # Data retrieval APIs for AWS Invoicing Service
-<a name="awsinvoicingservice"></a>
 
 AWS Invoicing Service provides the following APIs for data retrieval.
 

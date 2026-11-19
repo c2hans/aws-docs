@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/un
 ---
 
 # Plugin for Unity: Set up local testing with Amazon GameLift Servers Anywhere
-<a name="unity-plug-in-anywhere"></a>
 
 In this workflow, you add client and server game code for Amazon GameLift Servers functionality and use the plugin to designate your local workstation as a test game server host. When you've completed integration tasks, use the plugin to build your game client and server components.
 

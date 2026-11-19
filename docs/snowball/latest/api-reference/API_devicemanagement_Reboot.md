@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # Reboot
-<a name="API_devicemanagement_Reboot"></a>
 
 A structure used to reboot the device.
 

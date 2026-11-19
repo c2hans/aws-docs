@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/pricing-plans.html
 ---
 
 # Pricing plans
-<a name="pricing-plans"></a>
 
 With Amazon Simple Email Service (SES) pricing plans, you get simpler billing, packaged features, and volume discounts. You choose a single plan that combines the capabilities you need at a lower overall cost. When your sending needs grow, you can upgrade your plan at any time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CloudConnectorSummary
-<a name="API_CloudConnectorSummary"></a>
 
 Summary information about a cloud connector.
 

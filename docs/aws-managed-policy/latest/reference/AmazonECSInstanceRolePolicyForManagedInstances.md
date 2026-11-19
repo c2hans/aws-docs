@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonECSInstanceRolePolicyForManagedInstances
-<a name="AmazonECSInstanceRolePolicyForManagedInstances"></a>
 
 **Description**: Default policy for the Amazon ECS Instance Role for Amazon ECS Managed Instances.
 

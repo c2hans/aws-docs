@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/applications-
 ---
 
 # Importing applications
-<a name="applications-import"></a>
 
 You can import a copy of an exported application to your App Studio instance. You can import apps that have been exported from other App Studio instances, or apps from a catalog provided by App Studio. Importing an app from the App Studio app catalog can help you get started on an app with similar functionality, or help you learn about app building in App Studio by exploring the imported app.
 

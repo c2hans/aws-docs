@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # AWS Services
-<a name="aws-services"></a>
 
 | Service | Purpose |
 | --- | --- |

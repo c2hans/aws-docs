@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-routing.
 ---
 
 # Understanding intelligent prompt routing in Amazon Bedrock
-<a name="prompt-routing"></a>
 
 Amazon Bedrock intelligent prompt routing provides a single serverless endpoint to efficiently route requests between different foundational models within the same model family. It can dynamically predict the response quality of each model for each request, and then route the request to the model with the best response quality. This helps to optimize for both response quality and cost.
 

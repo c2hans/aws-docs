@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CapabilityFailure
-<a name="API_CapabilityFailure"></a>
 
 Information about a capability failure.
 

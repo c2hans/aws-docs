@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Descri
 ---
 
 # DescribeCustomRoutingListener
-<a name="API_DescribeCustomRoutingListener"></a>
 
 The description of a listener for a custom routing accelerator.
 

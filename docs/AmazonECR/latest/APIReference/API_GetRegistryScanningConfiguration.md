@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetReg
 ---
 
 # GetRegistryScanningConfiguration
-<a name="API_GetRegistryScanningConfiguration"></a>
 
 Retrieves the scanning configuration for a registry.
 

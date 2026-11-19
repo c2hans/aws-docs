@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GeoLocationT
 ---
 
 # GeoLocationTarget
-<a name="API_GeoLocationTarget"></a>
 
 A geolocation target that you select to index. Each geolocation target contains a `name` and `order` key-value pair that specifies the geolocation target fields.
 

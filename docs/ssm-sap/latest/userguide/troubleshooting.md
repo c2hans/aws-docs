@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/troubleshooting
 ---
 
 # Troubleshooting AWS Systems Manager for SAP
-<a name="troubleshooting"></a>
 
 **Topics**
 + [Database registration failure](#troubleshoot1)

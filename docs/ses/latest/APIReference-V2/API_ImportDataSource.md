@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ImportDat
 ---
 
 # ImportDataSource
-<a name="API_ImportDataSource"></a>
 
 An object that contains details about the data source of the import job.
 

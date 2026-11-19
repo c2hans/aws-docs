@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-crea
 ---
 
 # Create a streaming table delivery
-<a name="data-delivery-st-create"></a>
 
  Create a delivery that continuously sends records from an Amazon Kinesis Data Streams stream to a streaming table on Apache Iceberg backed by an S3 table bucket. You can create a delivery with the AWS Management Console or the AWS CLI. When you create a delivery, Amazon Kinesis Data Streams creates the destination Iceberg table in the table bucket you specify.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Training
 ---
 
 # TrainingDetails
-<a name="API_TrainingDetails"></a>
 
 The status details for the training sub-task of the customization job.
 

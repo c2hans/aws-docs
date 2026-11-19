@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ImportTaskSu
 ---
 
 # ImportTaskSummary
-<a name="API_ImportTaskSummary"></a>
 
 Import task summary.
 

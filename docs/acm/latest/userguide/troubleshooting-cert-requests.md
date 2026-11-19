@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-cer
 ---
 
 # Troubleshoot certificate requests
-<a name="troubleshooting-cert-requests"></a>
 
 Consult the following topics if you encounter problems when requesting an ACM certificate.
 

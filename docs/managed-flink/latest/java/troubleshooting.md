@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # Troubleshoot Managed Service for Apache Flink
-<a name="troubleshooting"></a>
 
 The following topics can help you troubleshoot problems that you might encounter with Amazon Managed Service for Apache Flink.
 

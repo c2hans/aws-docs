@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Get
 ---
 
 # Using property variables in monitoring dashboards to monitor multiple serverless functions
-<a name="iam_example_iam_GettingStarted_032_section"></a>
 
 The following code example shows how to:
 + Create Lambda functions for monitoring

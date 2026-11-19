@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Total.
 ---
 
 # Total
-<a name="API_Total"></a>
 
 Contains the total usage with the corresponding currency unit for that value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Sustainability pillar
-<a name="sustainability-pillar"></a>
 
  The sustainability pillar focuses on environmental sustainability.
 

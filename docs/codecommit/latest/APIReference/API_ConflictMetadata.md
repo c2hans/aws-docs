@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Confl
 ---
 
 # ConflictMetadata
-<a name="API_ConflictMetadata"></a>
 
 Information about the metadata for a conflict in a merge operation.
 

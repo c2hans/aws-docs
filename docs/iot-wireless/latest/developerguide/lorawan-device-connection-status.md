@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Connect your LoRaWAN device and verify its connection status
-<a name="lorawan-device-connection-status"></a>
 
 Before you can check the device connection status, you must have already added your device and connected it to AWS IoT Core for LoRaWAN. For information about how to add your device, see [Add your wireless device to AWS IoT Core for LoRaWAN](lorawan-end-devices-add.md).
 

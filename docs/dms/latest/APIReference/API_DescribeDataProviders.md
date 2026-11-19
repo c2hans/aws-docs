@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeData
 ---
 
 # DescribeDataProviders
-<a name="API_DescribeDataProviders"></a>
 
 Returns a paginated list of data providers for your account in the current region.
 

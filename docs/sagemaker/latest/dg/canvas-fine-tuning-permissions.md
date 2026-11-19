@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-fine-tuning-p
 ---
 
 # Grant Users Permissions to Use Amazon Bedrock and Generative AI Features in Canvas
-<a name="canvas-fine-tuning-permissions"></a>
 
 Generative AI features in Amazon SageMaker Canvas are powered by Amazon Bedrock foundation models, which are large language models (LLMs) that have the capability to understand and generate human-like text. This page describes how to grant the permissions necessary for the following features in SageMaker Canvas:
 + [Chat with and compare Amazon Bedrock models](canvas-fm-chat.md): Access and start conversational chats with Amazon Bedrock models through SageMaker Canvas.

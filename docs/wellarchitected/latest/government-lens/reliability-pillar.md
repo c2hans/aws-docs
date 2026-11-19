@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/r
 ---
 
 # Reliability pillar
-<a name="reliability-pillar"></a>
 
  The reliability pillar encompasses the ability of a service to perform its intended function correctly and consistently when it’s expected to. This includes the ability to operate and test the service through its total lifecycle and includes a high level of planning around service continuity and perceived reliability by the public.
 

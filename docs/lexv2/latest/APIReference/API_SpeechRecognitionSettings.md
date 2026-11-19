@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SpeechReco
 ---
 
 # SpeechRecognitionSettings
-<a name="API_SpeechRecognitionSettings"></a>
 
 Settings that control how Amazon Lex processes and recognizes speech input from users.
 

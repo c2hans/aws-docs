@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf04-
 ---
 
 # PERF04-BP05 Choose network protocols to improve performance
-<a name="perf04-bp05"></a>
 
  The protocol a workload uses to move data between components shapes the workload's latency, throughput, and reliability. When you match the protocol to each communication requirement, you improve performance and user experience.
 

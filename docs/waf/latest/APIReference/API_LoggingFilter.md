@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_LoggingFilte
 ---
 
 # LoggingFilter
-<a name="API_LoggingFilter"></a>
 
 Filtering that specifies which web requests are kept in the logs and which are dropped, defined for a web ACL's [LoggingConfiguration](API_LoggingConfiguration.md).
 

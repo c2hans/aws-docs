@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SnapshotD
 ---
 
 # SnapshotDetails
-<a name="API_SnapshotDetails"></a>
 
 Provides details about a snapshot of application state.
 

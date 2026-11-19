@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCalcul
 ---
 
 # GetCalculationExecution
-<a name="API_GetCalculationExecution"></a>
 
 Describes a previously submitted calculation execution.
 

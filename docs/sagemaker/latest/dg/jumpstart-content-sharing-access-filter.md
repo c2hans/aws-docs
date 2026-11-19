@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-content-sh
 ---
 
 # Access shared content
-<a name="jumpstart-content-sharing-access-filter"></a>
 
 From the Amazon SageMaker Studio Classic UI, you can access shared content and filter what you see.
 

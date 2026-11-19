@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateEksAny
 ---
 
 # UpdateEksAnywhereSubscription
-<a name="API_UpdateEksAnywhereSubscription"></a>
 
 Update an EKS Anywhere Subscription. Only auto renewal and tags can be updated after subscription creation.
 

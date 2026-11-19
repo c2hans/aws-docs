@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Billing and account management
-<a name="amazon-lightsail-frequently-asked-questions-faq-billing-and-account-management"></a>
 
 **Note**
 Topics about data transfer in Lightsail have been relocated to [Data transfer in Lightsail](amazon-lightsail-faq-data-transfer-allowance.md).

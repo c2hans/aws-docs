@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-el
 ---
 
 # Design considerations
-<a name="design"></a>
 
 Other design points to consider:
 + **Error handling**: If the cache becomes unavailable for any reason, the application should proceed as if all items are cache misses. The existence of the cache layer should not add fragility to an application.

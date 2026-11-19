@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-llms-finet
 ---
 
 # Supported large language models for fine-tuning
-<a name="autopilot-llms-finetuning-models"></a>
 
 Using Autopilot API, users can fine-tune large language models (LLMs) that are powered by Amazon SageMaker JumpStart.
 

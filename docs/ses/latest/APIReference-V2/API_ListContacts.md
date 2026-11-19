@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListConta
 ---
 
 # ListContacts
-<a name="API_ListContacts"></a>
 
 Lists the contacts present in a specific contact list.
 

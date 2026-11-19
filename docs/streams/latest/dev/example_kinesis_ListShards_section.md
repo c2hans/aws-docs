@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/example_kinesis_ListS
 ---
 
 # Use `ListShards` with an AWS SDK or CLI
-<a name="example_kinesis_ListShards_section"></a>
 
 The following code examples show how to use `ListShards`.
 

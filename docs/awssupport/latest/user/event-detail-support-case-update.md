@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/event-detail-supp
 ---
 
 # Support Case Update event
-<a name="event-detail-support-case-update"></a>
 
 Below are the detail fields for the `Support Case Update` event.
 

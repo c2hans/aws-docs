@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/DocHistory.html
 ---
 
 # Document history
-<a name="DocHistory"></a>
 
 | Change | Description | Release date |
 | --- | --- | --- |

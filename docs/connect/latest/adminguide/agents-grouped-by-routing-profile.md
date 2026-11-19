@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agents-grouped
 ---
 
 # List agents grouped by routing profile in Connect Customer
-<a name="agents-grouped-by-routing-profile"></a>
 
 This topic shows you how to display a list of agents grouped by routing profile in your Connect Customer contact center.
 

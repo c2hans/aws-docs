@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AccountDetails
-<a name="API_taxSettings_AccountDetails"></a>
 
  An object with your `accountId` and TRN information.
 

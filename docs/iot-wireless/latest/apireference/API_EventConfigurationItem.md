@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Eve
 ---
 
 # EventConfigurationItem
-<a name="API_EventConfigurationItem"></a>
 
 Event configuration object for a single resource.
 

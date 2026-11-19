@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateCoreNetwork
-<a name="API_CreateCoreNetwork"></a>
 
 Creates a core network as part of your global network, and optionally, with a core network policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/inbound-tutorial-s
 ---
 
 # Step 3: Create an inbound transformer
-<a name="inbound-tutorial-step3-transformer"></a>
 
 An inbound transformer defines how to convert X12 EDI documents to JSON or XML format. It contains the mapping logic that extracts data from the structured EDI format and transforms it into a more accessible JSON structure for your applications.
 

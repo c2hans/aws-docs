@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/using-aws-w
 ---
 
 # Using AWS CloudShell to work with AWS Security Incident Response
-<a name="using-aws-with-cloudshell"></a>
 
 AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. You can run AWS CLI commands against AWS services (including AWS Security Incident Response) using your preferred shell (Bash, PowerShell or Z shell). And you can do this without needing to download or install command line tools.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # KPIs and business continuity
-<a name="kpis-business-continuity"></a>
 
 It's essential that during the migration you establish your business goals and key performance indicators (KPIs) to measure success. It's important to determine your goals at the beginning of the migration process and establish a baseline for your current system so that you can determine measurable improvements. Common goals in customer journeys include the following:
 + Improve operational agility.

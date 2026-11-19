@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_InvalidR
 ---
 
 # InvalidRequestExceptionReason
-<a name="API_InvalidRequestExceptionReason"></a>
 
 Reason why the request was invalid.
 

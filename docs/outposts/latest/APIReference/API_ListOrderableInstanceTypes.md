@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListOrd
 ---
 
 # ListOrderableInstanceTypes
-<a name="API_ListOrderableInstanceTypes"></a>
 
 Lists the instance types that can be ordered for an Outpost. You can filter the results by Outpost generation.
 

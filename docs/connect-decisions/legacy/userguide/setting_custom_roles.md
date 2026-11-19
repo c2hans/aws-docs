@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/setti
 ---
 
 # Creating and assigning custom user roles to access Amazon Q in AWS Supply Chain
-<a name="setting_custom_roles"></a>
 
 To create and assign custom user roles in AWS Supply Chain, perform the following procedure:
 

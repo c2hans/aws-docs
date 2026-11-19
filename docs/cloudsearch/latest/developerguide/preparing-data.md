@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/prepar
 ---
 
 # Preparing Your Data for Amazon CloudSearch
-<a name="preparing-data"></a>
 
 You need to format your data in JSON or XML before you can upload it to your search domain for indexing. Each item that you want to be able to receive as a search result is represented as a document. Every document has a unique document ID and one or more fields that contain the data that you want to search and return in results. These document fields are used to populate the index fields you configure for your domain. For more information, see [Configuring Index Fields](configuring-index-fields.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_UserI
 ---
 
 # UserInfo
-<a name="API_UserInfo"></a>
 
 Information about the user who made a specified commit.
 

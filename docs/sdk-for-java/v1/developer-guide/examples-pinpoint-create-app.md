@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Creating and Deleting Apps in Amazon Pinpoint
-<a name="examples-pinpoint-create-app"></a>
 
 An app is an Amazon Pinpoint project in which you define the audience for a distinct application, and you engage this audience with tailored messages. The examples on this page demonstrate how to create a new app or delete an existing one.
 

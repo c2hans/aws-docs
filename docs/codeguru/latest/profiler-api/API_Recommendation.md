@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Recomme
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 A potential improvement that was found from analyzing the profiling data.
 

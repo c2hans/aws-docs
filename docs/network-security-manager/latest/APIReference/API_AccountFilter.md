@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AccountFilter
-<a name="API_AccountFilter"></a>
 
 Determines which accounts are in scope. Exactly one of `includeAll`, `include`, or `exclude` is set.
 

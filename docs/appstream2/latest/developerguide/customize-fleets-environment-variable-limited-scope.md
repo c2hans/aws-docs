@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/customi
 ---
 
 # Create an Environment Variable That is Limited in Scope
-<a name="customize-fleets-environment-variable-limited-scope"></a>
 
 Follow these steps to create an environment variable that is limited in scope to the processes that are spawned off the script. This approach is useful when you need to use the same environment variable name with different values for different applications. For example, if you have two different applications that use the environment variable "LIC\_SERVER", but each application has a different value for "LIC\_SERVER".
 

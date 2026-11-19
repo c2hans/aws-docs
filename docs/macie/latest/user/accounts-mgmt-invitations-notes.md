@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-invitati
 ---
 
 # Considerations for invitation-based organizations in Macie
-<a name="accounts-mgmt-invitations-notes"></a>
 
 **Note**
 We recommend using AWS Organizations instead of Macie invitations to manage member accounts. For more information, see [Managing multiple Macie accounts with AWS Organizations](accounts-mgmt-ao.md).

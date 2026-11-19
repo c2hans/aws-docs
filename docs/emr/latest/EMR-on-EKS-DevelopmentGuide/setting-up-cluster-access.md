@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Enable cluster access for Amazon EMR on EKS
-<a name="setting-up-cluster-access"></a>
 
 The following sections show a couple ways to enable cluster access. The first is by using Amazon EKS cluster access management (CAM) and the latter shows how to take manual steps to enable cluster access.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRo
 ---
 
 # UpdateRoutingProfileDefaultOutboundQueue
-<a name="API_UpdateRoutingProfileDefaultOutboundQueue"></a>
 
 Updates the default outbound queue of a routing profile.
 

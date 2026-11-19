@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # RecommendationGoal
-<a name="API_RecommendationGoal"></a>
 
 Contains information about a goal associated with a recommendation.
 

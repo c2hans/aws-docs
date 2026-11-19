@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/public-repositor
 ---
 
 # Public repository policies in Amazon ECR Public
-<a name="public-repository-policies"></a>
 
 Amazon ECR uses resource-based permissions to control access to public repositories. When a public repository is created, it is publicly visible on the Amazon ECR Public Gallery and anyone can pull images from the repository. By default however, only the repository owner has access to push to the repository. With resource-based permissions, you specify which users, or roles have access to push to a public repository and what additional actions they can perform on it. You can apply a policy document to allow additional permissions to your repository.
 

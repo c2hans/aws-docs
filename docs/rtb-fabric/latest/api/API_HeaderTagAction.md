@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_HeaderTagActio
 ---
 
 # HeaderTagAction
-<a name="API_HeaderTagAction"></a>
 
 Describes the header tag for a bid action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/mark
 ---
 
 # Method-Specific Requirements
-<a name="marketplace-metering-prerequisites"></a>
 
 In addition to the general [prerequisites](resource-tagging-prerequisites.md), ensure you meet the following requirements for AWS Marketplace Metering:
 + Linked AWS Partner Central and AWS account ID. Refer to the [AWS Partner Central and AWS account linking - How to Get Started guide](https://partnercentral.awspartner.com/partnercentral2/s/article?category=Introductory_resources&article=AWS-Partner-Central-and-AWS-account-linking-How-to-Get-Started) (Requires AWS Partner Central login)

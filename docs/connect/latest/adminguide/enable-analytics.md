@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-analyti
 ---
 
 # Enable conversational analytics in Connect Customer conversational analytics
-<a name="enable-analytics"></a>
 
 You can enable conversational analytics in a few steps:
 

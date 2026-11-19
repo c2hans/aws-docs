@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Server-level backup options
-<a name="server-level-backup"></a>
 
 Server-level backup covers backing up your whole SQL Server EC2 instance, which includes all system and user databases on the EC2 instance. If you have multiple SQL Server instances on Amazon EC2, that is also included in the server-level backup.
 

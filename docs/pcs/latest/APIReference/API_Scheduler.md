@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_Scheduler.ht
 ---
 
 # Scheduler
-<a name="API_Scheduler"></a>
 
 The cluster management and job scheduling software associated with the cluster.
 

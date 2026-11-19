@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get participant state in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-getparticipantstate"></a>
 
 Retrieves the current state of a specific participant.
 

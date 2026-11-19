@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/accessi
 ---
 
 # Provide Your Users with Access to WorkSpaces Applications
-<a name="accessing-as-user"></a>
 
 Users can access WorkSpaces Applications streaming sessions by using either a web browser or the WorkSpaces Applications client on a supported device.
 

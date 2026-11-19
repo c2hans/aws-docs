@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sender-connection-options
 ---
 
 # Sender connection options
-<a name="sender-connection-options"></a>
 
 The following are connection options for Sender:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Sender object to read.

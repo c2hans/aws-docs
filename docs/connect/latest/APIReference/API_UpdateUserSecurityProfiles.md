@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUs
 ---
 
 # UpdateUserSecurityProfiles
-<a name="API_UpdateUserSecurityProfiles"></a>
 
 Assigns the specified security profiles to the specified user.
 

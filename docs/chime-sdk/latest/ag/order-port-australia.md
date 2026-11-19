@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-australia
 ---
 
 # Australia
-<a name="order-port-australia"></a>
 
 The following tables list and describe the requirements for ordering and porting phone numbers in Australia.
 

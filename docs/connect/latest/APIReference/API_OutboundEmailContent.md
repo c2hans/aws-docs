@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Outbound
 ---
 
 # OutboundEmailContent
-<a name="API_OutboundEmailContent"></a>
 
 Information about email body content.
 

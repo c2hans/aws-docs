@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DisassociateProtectConfiguration
-<a name="API_DisassociateProtectConfiguration"></a>
 
 Disassociate a protect configuration from a configuration set.
 

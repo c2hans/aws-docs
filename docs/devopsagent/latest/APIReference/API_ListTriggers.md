@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListTriggers
-<a name="API_ListTriggers"></a>
 
 Lists Triggers in the specified agent space
 

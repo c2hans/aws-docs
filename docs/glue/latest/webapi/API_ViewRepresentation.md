@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ViewRepresentatio
 ---
 
 # ViewRepresentation
-<a name="API_ViewRepresentation"></a>
 
 A structure that contains the dialect of the view, and the query that defines the view.
 

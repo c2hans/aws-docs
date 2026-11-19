@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Mach
 ---
 
 # MachineLearningProductSort
-<a name="API_MachineLearningProductSort"></a>
 
 The sort options for machine learning products.
 

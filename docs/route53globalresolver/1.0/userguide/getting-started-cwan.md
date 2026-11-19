@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/gett
 ---
 
 # Tutorial: Create your first Amazon Route 53 Global Resolver with AWS Cloud WAN
-<a name="getting-started-cwan"></a>
 
 This tutorial demonstrates how to create a private-only Amazon Route 53 Global Resolver. You create a global resolver with public IP connectivity turned off, connect it to an AWS Cloud WAN core network, and allow DNS queries from a core network segment. As a result, the resolver is reachable only over your private Cloud WAN connections and not over the internet.
 
@@ -16,7 +15,7 @@ The following sections describe how to get started with a private-only Amazon Ro
 
 Before you begin, make sure that you have the following:
 + Completion of the setup steps. Your system administrator must complete the steps in [Setting up account access for Amazon Route 53 Global Resolver](setting-up.md), and then return to this tutorial.
-+ An existing AWS Cloud WAN core network that you own. We recommend that its core network policy is at version 2026.10 or later so that DNS queries route to the closest AWS Region.
++ An existing AWS Cloud WAN core network that you own. We recommend that its core network policy is at version `2026.10` or later so that DNS queries route to the closest AWS Region. For more information, see [Core network policy versions](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-policies-json.html#cloudwan-version-json).
 + An AWS account and the appropriate permissions to access, view, and edit Amazon Route 53 Global Resolver components.
 
 ## Step 1: Create a global resolver with public IP connectivity disabled

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Pers
 ---
 
 # PersonMatch
-<a name="API_PersonMatch"></a>
 
 Information about a person whose face matches a face(s) in an Amazon Rekognition collection. Includes information about the faces in the Amazon Rekognition collection ([FaceMatch](API_FaceMatch.md)), information about the person ([PersonDetail](API_PersonDetail.md)), and the time stamp for when the person was detected in a video. An array of `PersonMatch` objects is returned by [GetFaceSearch](API_GetFaceSearch.md).
 

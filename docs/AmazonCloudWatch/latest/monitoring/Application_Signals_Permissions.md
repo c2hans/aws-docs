@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Appli
 ---
 
 # Permissions required for Application Signals
-<a name="Application_Signals_Permissions"></a>
 
 This section explains the permissions necessary for you to enable, manage, and operate Application Signals.
 

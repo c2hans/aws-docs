@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ScheduleConfiguration
-<a name="API_connect-customer-profiles_ScheduleConfiguration"></a>
 
 Configuration for scheduled segment membership event notifications.
 

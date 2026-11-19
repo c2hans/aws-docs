@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectLabelsImageQuality
-<a name="API_DetectLabelsImageQuality"></a>
 
 The quality of an image provided for label detection, with regard to brightness, sharpness, and contrast.
 

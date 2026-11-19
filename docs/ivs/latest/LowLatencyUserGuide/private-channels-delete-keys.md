@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-c
 ---
 
 # Delete IVS Playback Keys
-<a name="private-channels-delete-keys"></a>
 
 Amazon IVS customers can delete playback keys from their accounts. Deleted keys will remove the resource from the customer’s account; playback tokens signed with deleted keys will not pass verification.
 

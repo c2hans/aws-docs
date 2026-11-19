@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Connector patterns for models and pipelines
-<a name="connector-patterns"></a>
 
 This topic describes patterns for training and running machine learning models, and for multi-stage processing pipelines, with connectors. The models and pipelines can work on any spatial content, such as point clouds, imagery, 3D models, or sensor recordings. Each pattern uses only the connector features described in [Connector configuration](connector-configuration.md), [Working with wait steps](connector-wait.md), and [Create and transform content with AWS Deadline Cloud](connector-deadline-cloud.md). Together, they show how several connectors, each approved and versioned independently, build one governed result on an asset.
 

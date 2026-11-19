@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-aurora
 ---
 
 # Amazon Aurora DSQL backups
-<a name="backup-aurora"></a>
 
 You can use AWS Backup to create backups of your Amazon Aurora DSQL single-Region and multi-Region clusters. Amazon Aurora DSQL cluster backups are always full backups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/a
 ---
 
 # Understanding active threat defense managed rule group indicators
-<a name="atd-indicators"></a>
 
 A threat indicator is a unique identifier of potentially malicious infrastructure or threat activity. active threat defense managed rule groups match traffic for IP address, domain name, and URL indicators that are associated with known threats.
 

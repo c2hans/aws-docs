@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-sql-ser
 ---
 
 # Step-by-step SQL Server databases to Amazon RDS for MySQL with DMS schema conversion
-<a name="schema-conversion-sql-server-mysql-step-by-step-migration"></a>
 
 In the following sections, you can find step-by-step instructions for migrating your SQL Server database to Amazon RDS for MySQL using DMS Schema Conversion.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ViewSear
 ---
 
 # ViewSearchFilter
-<a name="API_ViewSearchFilter"></a>
 
 Defines filters to apply when searching for views, such as tag-based filters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/dvb-sub-output-ca
 ---
 
 # DVB-Sub output captions
-<a name="dvb-sub-output-captions"></a>
 
  This section covers how to configure DVB-Sub output captions in AWS Elemental MediaConvert. The main topics include:
 + Where to specify the captions.

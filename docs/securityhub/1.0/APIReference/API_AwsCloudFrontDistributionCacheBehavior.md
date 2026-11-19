@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFrontDistributionCacheBehavior
-<a name="API_AwsCloudFrontDistributionCacheBehavior"></a>
 
 Information about a cache behavior for the distribution.
 

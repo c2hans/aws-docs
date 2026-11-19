@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Create
 ---
 
 # CreateCodeConfiguration
-<a name="API_CreateCodeConfiguration"></a>
 
 The create Code Configuration.
 

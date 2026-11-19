@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # BidirectionalOutputPayloadPart
-<a name="API_runtime_BidirectionalOutputPayloadPart"></a>
 
 Output from the bidirectional stream. The output is speech and a text transcription.
 

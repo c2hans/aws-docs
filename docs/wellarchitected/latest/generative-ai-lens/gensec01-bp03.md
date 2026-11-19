@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENSEC01-BP03 Implement least privilege access permissions for foundation models accessing data stores
-<a name="gensec01-bp03"></a>
 
  Foundation models can aggregate and generate rich insights from data they have been trained on or interact with from the APIs providing inputs and outputs. It is important to treat generative AI systems and their foundation models just as you would treat privileged users when providing access to data. This best practice describes how to provide generative AI APIs and services with appropriate access to data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/subscribi
 ---
 
 # Subscribing to and accessing an AWS Data Exchange product containing AWS Lake Formation data sets (Preview)
-<a name="subscribing-to-LakeFormation-product"></a>
 
 An AWS Lake Formation data set is a data set that contains AWS Lake Formation data permission assets.
 

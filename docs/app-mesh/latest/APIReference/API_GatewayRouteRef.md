@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Gateway
 ---
 
 # GatewayRouteRef
-<a name="API_GatewayRouteRef"></a>
 
 An object that represents a gateway route returned by a list operation.
 

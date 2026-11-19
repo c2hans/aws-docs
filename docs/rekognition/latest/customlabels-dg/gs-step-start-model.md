@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/gs-st
 ---
 
 # Step 3: Start your model
-<a name="gs-step-start-model"></a>
 
 In this step you start your model. After your model starts, you can use it to analyze images.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_Endpoint.htm
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 An endpoint available for interaction with the scheduler.
 

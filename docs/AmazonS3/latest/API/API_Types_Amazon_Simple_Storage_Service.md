@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Types_Amazon_Sim
 ---
 
 # Amazon S3
-<a name="API_Types_Amazon_Simple_Storage_Service"></a>
 
 The following data types are supported by Amazon S3:
 +  [AbacStatus](API_AbacStatus.md)

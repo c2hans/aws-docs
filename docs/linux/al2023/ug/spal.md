@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/spal.html
 ---
 
 # Supplementary Packages for Amazon Linux
-<a name="spal"></a>
 
  This section introduces Supplementary Packages for Amazon Linux (SPAL) and outlines its benefits and limitations, along with guidelines for reporting package-related issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Aligning stories with business goals
-<a name="align-stories-goals"></a>
 
 After you perform business and technical assessments, we recommend that you create a diagram that includes a set of stories for each level of data usage maturity. This visualization makes it easy to align your data usage with your company's business goals. For example, a near real-time fraud detection business outcome requires a near real-time actions capability story.
 

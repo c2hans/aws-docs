@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Configuring trusted identity propagation for Amazon EMR on EKS
-<a name="configuring-trusted-identity-propagation-for-emr-on-eks"></a>
 
  Amazon EMR on EKS requires additional IAM permissions to enable trusted identity propagation. You must attach the following inline IAM role policy to the IAM role created as the Amazon EMR on EKS system namespace role.
 

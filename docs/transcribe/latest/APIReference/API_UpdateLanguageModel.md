@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Updat
 ---
 
 # UpdateLanguageModel
-<a name="API_UpdateLanguageModel"></a>
 
 Updates the encryption configuration for an existing custom language model. You can use this operation to change the AWS KMS key used to encrypt your model artifacts. The model artifacts are re-encrypted in place. No model training is required.
 

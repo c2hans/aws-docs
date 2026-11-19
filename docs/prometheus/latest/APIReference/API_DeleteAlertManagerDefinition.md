@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Delet
 ---
 
 # DeleteAlertManagerDefinition
-<a name="API_DeleteAlertManagerDefinition"></a>
 
 Deletes the alert manager definition from a workspace.
 

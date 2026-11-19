@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Clarif
 ---
 
 # ClarifyInferenceConfig
-<a name="API_ClarifyInferenceConfig"></a>
 
 The inference configuration parameter for the model container.
 

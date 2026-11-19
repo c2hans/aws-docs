@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SamplingConfig
-<a name="API_SamplingConfig"></a>
 
  The configuration that controls what percentage of agent traces are sampled for evaluation to manage evaluation volume and costs.
 

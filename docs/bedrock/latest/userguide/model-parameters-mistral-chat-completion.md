@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Mistral AI chat completion
-<a name="model-parameters-mistral-chat-completion"></a>
 
 The Mistral AI chat completion API lets create conversational applications.
 

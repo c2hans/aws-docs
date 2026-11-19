@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Dele
 ---
 
 # DeleteStage
-<a name="API_DeleteStage"></a>
 
 Shuts down and deletes the specified stage (disconnecting all participants). This operation also removes the `stageArn` from the associated [IngestConfiguration](API_IngestConfiguration.md), if there are participants using the IngestConfiguration to publish to the stage.
 

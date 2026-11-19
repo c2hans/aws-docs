@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # EventBridge notifications
-<a name="next-gen-eventbridge-notifications"></a>
 
 With Amazon EventBridge, you can monitor resources in the next generation of Resilience Hub using event-driven rules. These rules can trigger actions in other AWS services. For example, you can create a rule that signals an Amazon SNS topic whenever a failure mode assessment completes or a new dependency is discovered.
 

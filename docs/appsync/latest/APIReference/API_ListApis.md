@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListApis
 ---
 
 # ListApis
-<a name="API_ListApis"></a>
 
 Lists the APIs in your AWS AppSync account.
 

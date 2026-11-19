@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/swi
 ---
 
 # Amazon Transcribe Streaming examples using SDK for Swift
-<a name="swift_transcribe-streaming_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Swift with Amazon Transcribe Streaming.
 

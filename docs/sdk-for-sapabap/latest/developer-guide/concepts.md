@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/c
 ---
 
 # SDK for SAP ABAP concepts
-<a name="concepts"></a>
 
 This section covers the basic concepts of AWS SDK for SAP ABAP.
 

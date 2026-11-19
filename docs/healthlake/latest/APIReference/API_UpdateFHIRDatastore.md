@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Updat
 ---
 
 # UpdateFHIRDatastore
-<a name="API_UpdateFHIRDatastore"></a>
 
 Update the properties of a FHIR-enabled data store.
 

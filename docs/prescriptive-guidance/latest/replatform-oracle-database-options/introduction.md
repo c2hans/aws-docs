@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Replatform options for Oracle Database on AWS
-<a name="introduction"></a>
 
 *Song Hu, Mohit Montu, and Rajeev Pardipuram, Amazon Web Services*
 

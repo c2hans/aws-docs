@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # GetBuyerDashboard
-<a name="API_marketplace-reporting_GetBuyerDashboard"></a>
 
 Generates an embedding URL for an Amazon QuickSight dashboard for an anonymous user.
 

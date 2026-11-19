@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_HealthI
 ---
 
 # HealthIssue
-<a name="API_HealthIssue"></a>
 
 Represents a specific health issue detected for a connector.
 

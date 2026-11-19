@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_DeleteSecu
 ---
 
 # DeleteSecurityGroup
-<a name="API_DeleteSecurityGroup"></a>
 
 Deletes a security group from a Wickr network. This operation cannot be performed on the default security group.
 

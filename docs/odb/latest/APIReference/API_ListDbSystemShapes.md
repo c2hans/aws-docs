@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListDbSystem
 ---
 
 # ListDbSystemShapes
-<a name="API_ListDbSystemShapes"></a>
 
 Returns information about the shapes that are available for an Exadata infrastructure.
 

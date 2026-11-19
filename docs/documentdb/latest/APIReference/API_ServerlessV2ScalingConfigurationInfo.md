@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Serve
 ---
 
 # ServerlessV2ScalingConfigurationInfo
-<a name="API_ServerlessV2ScalingConfigurationInfo"></a>
 
 Retrieves the scaling configuration for an Amazon DocumentDB Serverless cluster.
 

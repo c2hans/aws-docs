@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/troubleshooting.html
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 The following topics can help you troubleshoot issues that you encounter when using HealthOmics workflows and data stores.
 

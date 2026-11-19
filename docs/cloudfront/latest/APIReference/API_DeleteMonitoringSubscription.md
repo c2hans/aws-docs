@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteMonitoringSubscription
-<a name="API_DeleteMonitoringSubscription"></a>
 
 Disables additional CloudWatch metrics for the specified CloudFront distribution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Domain
 ---
 
 # DomainDetails
-<a name="API_DomainDetails"></a>
 
 The domain's details.
 

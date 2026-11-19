@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/p
 ---
 
 # SAP prerequisites
-<a name="prerequisites"></a>
 
 The following prerequisites for installing the SDK are applicable when your SAP systems are hosted on AWS.
 

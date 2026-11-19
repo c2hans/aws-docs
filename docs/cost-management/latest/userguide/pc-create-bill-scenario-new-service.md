@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-crea
 ---
 
 # Adding new services to my bill scenario
-<a name="pc-create-bill-scenario-new-service"></a>
 
 This section outlines how to add new services to a bill scenario.
 

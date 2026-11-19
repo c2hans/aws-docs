@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/custom-widgets
 ---
 
 # Custom widgets
-<a name="custom-widgets"></a>
 
 Create tailored dashboard components from the ground up to meet your specific business needs. With custom widgets, you can build unique visualizations without any predefined data.
 

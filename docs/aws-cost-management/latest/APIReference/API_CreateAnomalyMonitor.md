@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateAnomalyMonitor
-<a name="API_CreateAnomalyMonitor"></a>
 
 Creates a new cost anomaly detection monitor with the requested type and monitor specification.
 

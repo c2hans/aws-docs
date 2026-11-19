@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Sub-agent-as-tool pattern
-<a name="sub-agent-as-tool"></a>
 
 In Strands, specialist agents are exposed to the supervisor as `@tool`-decorated Python callables. The supervisor’s LLM sees each specialist as a named tool with a schema; it decides which tool(s) to call based on the customer’s intent and the triage classification.
 

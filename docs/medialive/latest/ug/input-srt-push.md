@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-srt-push.html
 ---
 
 # Channel input—SRT listener input
-<a name="input-srt-push"></a>
 
 Follow these guidelines to verify that the input is set up correctly.
 

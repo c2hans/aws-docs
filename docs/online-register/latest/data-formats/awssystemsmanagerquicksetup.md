@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Systems Manager Quick Setup
-<a name="awssystemsmanagerquicksetup"></a>
 
 AWS Systems Manager Quick Setup provides the following APIs for data retrieval.
 

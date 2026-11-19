@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # United Arab Emirates registration
-<a name="nx-country-reg-ae"></a>
 
 The following registrations are available for United Arab Emirates.
 

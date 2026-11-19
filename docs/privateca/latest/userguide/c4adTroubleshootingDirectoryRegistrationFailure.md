@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/c4adTroublesh
 ---
 
 # Troubleshoot Connector for AD directory registration failures
-<a name="c4adTroubleshootingDirectoryRegistrationFailure"></a>
 
 Connector for AD directory registration can fail for various reasons. When directory registration fails, you'll receive the failure reason in the API response. If you're using the console, you can find the failure reason in the **Directory registration details** pane under the **Additional status information** field. The following table describes failure reasons and recommended steps for resolution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/web-search.html
 ---
 
 # Web Search
-<a name="web-search"></a>
 
 Web Search is a built-in tool that provides web search capability in Amazon Bedrock. When you enable it, supported models can retrieve current information from the web during a request and use it to ground their answers, instead of relying only on the data they were trained on. Responses include citations to the sources the model used. Web Search is hosted and built by AWS. Retrieval from the external web occurs only when both your request and your IAM permissions allow it.
 

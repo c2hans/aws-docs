@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Applied
 ---
 
 # AppliedCreatorModeConfiguration
-<a name="API_AppliedCreatorModeConfiguration"></a>
 
 The creator mode specific admin controls configured for an Amazon Q Business application. Determines whether an end user can generate LLM-only responses when they use the web experience.
 

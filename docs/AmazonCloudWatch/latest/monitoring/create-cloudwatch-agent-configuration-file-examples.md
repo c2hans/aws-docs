@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 ---
 
 # Examples of configuration files
-<a name="create-cloudwatch-agent-configuration-file-examples"></a>
 
 **Basic system metrics configuration**
 

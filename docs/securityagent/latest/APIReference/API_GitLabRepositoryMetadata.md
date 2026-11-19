@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Gi
 ---
 
 # GitLabRepositoryMetadata
-<a name="API_GitLabRepositoryMetadata"></a>
 
 Metadata for an integrated GitLab repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Start
 ---
 
 # StartAppBlockBuilder
-<a name="API_StartAppBlockBuilder"></a>
 
 Starts an app block builder.
 

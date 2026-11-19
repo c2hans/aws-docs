@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableAll
 ---
 
 # EnableAllowedImagesSettings
-<a name="API_EnableAllowedImagesSettings"></a>
 
 Enables Allowed AMIs for your account in the specified AWS Region. Two values are accepted:
 +  `enabled`: The image criteria in your Allowed AMIs settings are applied. As a result, only AMIs matching these criteria are discoverable and can be used by your account to launch instances.

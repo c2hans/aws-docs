@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Authentication
-<a name="authentication"></a>
 
  With WorkSpaces Applications, authentication can either take place outside of Amazon WorkSpaces Applications, or as part of the WorkSpaces Applications service. Selecting how authentication will take place for your WorkSpaces Applications deployment is a fundamental consideration of your design. It’s not uncommon for an organization to have multiple deployments of WorkSpaces Applications for different use-cases. Each use-case can have a different authentication method.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_Internet
 ---
 
 # InternetMeasurementsLogDelivery
-<a name="API_InternetMeasurementsLogDelivery"></a>
 
 Publish internet measurements to an Amazon S3 bucket in addition to CloudWatch Logs.
 

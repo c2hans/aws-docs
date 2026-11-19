@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Deployment
-<a name="cost-deployment"></a>
 
 **Topics**
 + [MLCOST05-BP01 Use an appropriate deployment option](mlcost05-bp01.md)

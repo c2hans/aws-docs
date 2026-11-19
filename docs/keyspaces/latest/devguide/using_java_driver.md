@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/using_java_dri
 ---
 
 # Using a Cassandra Java client driver to access Amazon Keyspaces programmatically
-<a name="using_java_driver"></a>
 
 This section shows you how to connect to Amazon Keyspaces by using a Java client driver.
 

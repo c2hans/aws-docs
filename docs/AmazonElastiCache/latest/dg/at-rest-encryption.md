@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/at-rest-encr
 ---
 
 # At-Rest Encryption in ElastiCache
-<a name="at-rest-encryption"></a>
 
 To help keep your data secure, Amazon ElastiCache and Amazon S3 provide different ways to restrict access to data in your cache. For more information, see [Amazon VPCs and ElastiCache security](VPCs.md) and [Identity and Access Management for Amazon ElastiCache](IAM.md).
 

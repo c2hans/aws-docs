@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_PodGcControl
 ---
 
 # PodGcControllerConfigResponse
-<a name="API_PodGcControllerConfigResponse"></a>
 
 The pod garbage collection controller configuration for the Kubernetes controller manager.
 

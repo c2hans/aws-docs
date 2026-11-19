@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/auth-and-acc
 ---
 
 # Using tags to control access to Amazon CodeGuru Profiler resources
-<a name="auth-and-access-control-using-tags"></a>
 
 Conditions in IAM policy statements are part of the syntax that you can use to specify permissions for CodeGuru Profiler profiling group-based actions. You can create a policy that allows or denies actions for profiling groups based on the tags associated with those profiling groups, and then apply those policies to the IAM groups you configure for managing IAM users. For information about applying tags to a profiling group, see [Tagging profiling groups](tagging-profiling-groups.md).
 

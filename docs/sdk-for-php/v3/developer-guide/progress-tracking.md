@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/progress-
 ---
 
 # Progress tracking
-<a name="progress-tracking"></a>
 
 S3 Transfer Manager provides built-in progress tracking capabilities.
 

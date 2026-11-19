@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_E
 ---
 
 # EksSourceClusterNamespace
-<a name="API_EksSourceClusterNamespace"></a>
 
 The input source of the namespace that is located on your Amazon Elastic Kubernetes Service cluster.
 

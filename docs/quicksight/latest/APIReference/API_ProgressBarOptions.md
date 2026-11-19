@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Progr
 ---
 
 # ProgressBarOptions
-<a name="API_ProgressBarOptions"></a>
 
 The options that determine the presentation of the progress bar of a KPI visual.
 

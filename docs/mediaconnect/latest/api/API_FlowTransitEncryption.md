@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FlowTransitE
 ---
 
 # FlowTransitEncryption
-<a name="API_FlowTransitEncryption"></a>
 
 The configuration that defines how content is encrypted during transit between the MediaConnect router and a MediaConnect flow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Forec
 ---
 
 # ForecastComputation
-<a name="API_ForecastComputation"></a>
 
 The forecast computation configuration.
 

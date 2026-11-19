@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ChildW
 ---
 
 # ChildWorkflowExecutionCanceledEventAttributes
-<a name="API_ChildWorkflowExecutionCanceledEventAttributes"></a>
 
 Provide details of the `ChildWorkflowExecutionCanceled` event.
 

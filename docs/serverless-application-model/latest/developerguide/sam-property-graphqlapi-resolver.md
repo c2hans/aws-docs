@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Resolver
-<a name="sam-property-graphqlapi-resolver"></a>
 
 Configure resolvers for the fields of your GraphQL API. AWS Serverless Application Model (AWS SAM) supports [JavaScript pipeline resolvers](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-overview-js.html).
 

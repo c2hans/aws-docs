@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Appendix D: Compliance resources
-<a name="appendix-d-compliance-resources"></a>
 
  Genomics data is generally considered the most private of personal data. From a regulatory perspective it is certainly considered [Protected Health Information](https://www.hhs.gov/hipaa/for-professionals/faq/354/does-hipaa-protect-genetic-information/index.html) (PHI) or a special class of [Personal Data](https://gdpr-info.eu/recitals/no-34/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 ---
 
 # Troubleshooting Appium Node.js tests in AWS Device Farm
-<a name="troubleshooting-appium-node"></a>
 
 ## Test insights
 <a name="troubleshooting-appium-node-insights"></a>

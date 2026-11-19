@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Creating a function using the CLI
-<a name="functions-create-cli"></a>
 
 Use `create-function`. The following AWS CLI command creates a function that sends sampled frames to an Anthropic Claude model and keeps one sentence of description. In the command, replace `{{us-west-2}}` with your Region, and `{{model-id}}` with the ID of the Anthropic Claude model or inference profile that you want to invoke.
 

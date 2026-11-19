@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_SSEKMSFi
 ---
 
 # SSEKMSFilter
-<a name="API_control_SSEKMSFilter"></a>
 
 A filter that returns objects that are encrypted by server-side encryption with AWS KMS (SSE-KMS).
 

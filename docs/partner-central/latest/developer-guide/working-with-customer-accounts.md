@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/w
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Manage customer accounts using the AWS Partner Central Selling API
-<a name="working-with-customer-accounts"></a>
 
 Use Account Mapping to match the customer accounts in your customer relationship management (CRM) system to AWS customers, enrich them with AWS data, and request account planning sessions. When Account Mapping finds a match, it adds AWS enrichment data to the account, such as program eligibility, AWS Marketplace engagement score, solution score, and account planning qualification. Use the enrichment data to decide which accounts to prioritize, and request a planning session with the AWS Seller for a qualified account.
 

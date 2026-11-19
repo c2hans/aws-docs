@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListIn
 ---
 
 # ListInferenceRecommendationsJobSteps
-<a name="API_ListInferenceRecommendationsJobSteps"></a>
 
 Returns a list of the subtasks for an Inference Recommender job.
 

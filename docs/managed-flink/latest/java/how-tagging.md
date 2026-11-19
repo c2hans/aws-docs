@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-tagging.ht
 ---
 
 # Add tags to Managed Service for Apache Flink applications
-<a name="how-tagging"></a>
 
 This section describes how to add key-value metadata tags to Managed Service for Apache Flink applications. These tags can be used for the following purposes:
 + Determining billing for individual Managed Service for Apache Flink applications. For more information, see [Using Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *Billing and Cost Management Guide*.

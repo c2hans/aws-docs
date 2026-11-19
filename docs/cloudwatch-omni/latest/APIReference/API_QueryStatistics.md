@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # QueryStatistics
-<a name="API_QueryStatistics"></a>
 
 Statistics about a telemetry query execution.
 

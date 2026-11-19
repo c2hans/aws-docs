@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # AmexCardSecurityCodeVersion2
-<a name="API_AmexCardSecurityCodeVersion2"></a>
 
 Card data parameters that are required to generate a Card Security Code (CSC2) for an AMEX payment card.
 

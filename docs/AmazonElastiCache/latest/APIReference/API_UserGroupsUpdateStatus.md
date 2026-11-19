@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # UserGroupsUpdateStatus
-<a name="API_UserGroupsUpdateStatus"></a>
 
 The status of the user group update.
 

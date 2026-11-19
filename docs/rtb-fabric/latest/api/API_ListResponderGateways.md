@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListResponderG
 ---
 
 # ListResponderGateways
-<a name="API_ListResponderGateways"></a>
 
 Lists reponder gateways.
 

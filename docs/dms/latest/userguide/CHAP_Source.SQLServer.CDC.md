@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.SQLServ
 ---
 
 # Capturing data changes for ongoing replication from SQL Server
-<a name="CHAP_Source.SQLServer.CDC"></a>
 
 This topic describes how to set up CDC replication on a SQL Server source.
 
@@ -637,7 +636,7 @@ Add articles to the publication
 
 **To set up ongoing replication without using the sysadmin user in an Availability Group environment**
 
-1. Set up Microsoft SQL Server for Replication as described in [Capturing data changes for ongoing replication from SQL Server](#CHAP_Source.SQLServer.CDC).
+1. Set up Microsoft SQL Server for Replication as described in [Capturing data changes for ongoing replication from SQL Server](CHAP_Source.SQLServer.CDC.md).
 
 1. Enable MS-REPLICATION on the source database. This can either be done manually or by running the task once using a sysadmin user.
 **Note**

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/User.SQLServe
 ---
 
 # Working with Active Directory with RDS for SQL Server
-<a name="User.SQLServer.ActiveDirectoryWindowsAuth"></a>
 
 You can join an RDS for SQL Server DB instance to a Microsoft Active Directory (AD) domain. Your AD domain can be hosted on AWS Managed AD within AWS, or on a self-managed AD in a location of your choice, including your corporate data centers, on AWS EC2, or with other cloud providers.
 

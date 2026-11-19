@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteApprovalPolicy
-<a name="API_DeleteApprovalPolicy"></a>
 
 Deletes an approval policy in Quick Sight.
 

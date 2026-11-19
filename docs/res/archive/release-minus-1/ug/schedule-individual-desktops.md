@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/schedule-
 ---
 
 # Set individual desktop schedules
-<a name="schedule-individual-desktops"></a>
 
 1. Choose **Actions**.
 ![Virtual desktops](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-virtualdesktops.png)

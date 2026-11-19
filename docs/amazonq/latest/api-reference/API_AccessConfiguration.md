@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AccessC
 ---
 
 # AccessConfiguration
-<a name="API_AccessConfiguration"></a>
 
 Used to configure access permissions for a document.
 

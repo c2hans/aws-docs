@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-context.html
 ---
 
 # Using the Lambda context object to retrieve Node.js Event Function information
-<a name="nodejs-context"></a>
 
 When Lambda runs your function, it passes a context object to the [handler](nodejs-handler.md). This object provides methods and properties that provide information about the invocation, function, and execution environment.
 

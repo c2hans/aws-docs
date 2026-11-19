@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Connecting the AWS Schema Conversion Tool to Vertica databases
-<a name="CHAP_Source.Vertica"></a>
 
 You can use AWS SCT to convert schemas, code objects, and application code from Vertica to Amazon Redshift.
 

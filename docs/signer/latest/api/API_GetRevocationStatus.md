@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_GetRevocationStatu
 ---
 
 # GetRevocationStatus
-<a name="API_GetRevocationStatus"></a>
 
 Retrieves the revocation status of one or more of the signing profile, signing job, and signing certificate.
 

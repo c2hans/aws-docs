@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerSigV4ServiceDetails
-<a name="API_MCPServerSigV4ServiceDetails"></a>
 
 Complete service details for SigV4-authenticated MCP server integration.
 

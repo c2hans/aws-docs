@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-router-sec
 ---
 
 # Security and data protection for inference routers
-<a name="inference-router-security"></a>
 
 Security for inference routers follows the AWS shared responsibility model described in [Configure security in Amazon SageMaker AI](security.md). This topic covers what is specific to inference routers.
 

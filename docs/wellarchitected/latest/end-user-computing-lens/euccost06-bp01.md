@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCCOST06-BP01 Explore a bring your own license (BYOL) approach
-<a name="euccost06-bp01"></a>
 
  If you already have suitable license agreements with Microsoft in place for Operating Systems or Microsoft Remote Desktop Client Access Licenses, consider bringing these licenses for use with AWS EUC services to reduce the cost.
 

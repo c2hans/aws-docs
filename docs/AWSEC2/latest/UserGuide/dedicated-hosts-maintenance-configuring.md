@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # Configure the host maintenance setting for an Amazon EC2 Dedicated Host
-<a name="dedicated-hosts-maintenance-configuring"></a>
 
 Enable host maintenance to ensure that your instances running on a Dedicated Host are automatically recovered onto a new Dedicated Host during a scheduled maintenance event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Replic
 ---
 
 # ReplicaSpecificationSummary
-<a name="API_ReplicaSpecificationSummary"></a>
 
 The Region-specific settings of a multi-Region table in the specified AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationTopology
-<a name="API_CapacityReservationTopology"></a>
 
 Information about the Capacity Reservation topology.
 

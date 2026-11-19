@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListIdMappingTables
-<a name="API_ListIdMappingTables"></a>
 
 Returns a list of ID mapping tables.
 

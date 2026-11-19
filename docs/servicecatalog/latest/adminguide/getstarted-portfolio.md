@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 3: Create a portfolio
-<a name="getstarted-portfolio"></a>
 
 To provide users with products, begin by creating a portfolio for those products.
 

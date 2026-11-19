@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Administrator Guide
-<a name="administrator-guide"></a>
 
 This section describes the various actions an Administrator can perform using the web UI.
 

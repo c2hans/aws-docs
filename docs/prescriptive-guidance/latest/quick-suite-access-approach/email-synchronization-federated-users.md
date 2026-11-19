@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Quick email synchronization for federated users
-<a name="email-synchronization-federated-users"></a>
 
 **Note**
 This feature is available only for the Enterprise edition of AWS Quick.

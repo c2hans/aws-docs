@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/work-with-nat-insta
 ---
 
 # Enable private resources to communicate outside the VPC
-<a name="work-with-nat-instances"></a>
 
 This section describes how to create and work with NAT instances to enable resources in a private subnet to communicate outside the virtual private cloud.
 

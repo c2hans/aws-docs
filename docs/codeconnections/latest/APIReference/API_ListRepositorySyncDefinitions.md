@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # ListRepositorySyncDefinitions
-<a name="API_ListRepositorySyncDefinitions"></a>
 
 Lists the repository sync definitions for repository links in your account.
 

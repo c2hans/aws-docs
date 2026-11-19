@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_GetSc
 ---
 
 # GetScalingPlanResourceForecastData
-<a name="API_GetScalingPlanResourceForecastData"></a>
 
 Retrieves the forecast data for a scalable resource.
 

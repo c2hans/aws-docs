@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EcsTaskDet
 ---
 
 # EcsTaskDetails
-<a name="API_EcsTaskDetails"></a>
 
 The details of a task definition that describes the container and volume definitions of an Amazon ECS task.
 

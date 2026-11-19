@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/managin
 ---
 
 # Managing Versions
-<a name="managing-versions"></a>
 
  You assign product versions when you create a product, and you can update product versions any time.
 

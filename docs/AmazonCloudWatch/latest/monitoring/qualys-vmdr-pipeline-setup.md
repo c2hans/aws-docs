@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/qualy
 ---
 
 # CloudWatch pipelines configuration for Qualys VMDR
-<a name="qualys-vmdr-pipeline-setup"></a>
 
 Collects vulnerability management data, asset inventory, host detection findings, and platform activity logs from Qualys VMDR using HTTP Basic authentication.
 

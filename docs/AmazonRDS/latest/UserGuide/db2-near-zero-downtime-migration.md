@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-near-zero
 ---
 
 # Migrating from Linux to Linux with near-zero downtime for Amazon RDS for Db2
-<a name="db2-near-zero-downtime-migration"></a>
 
 With this migration approach, you migrate a Linux-based Db2 database from one self-managed Db2 database (source) to Amazon RDS for Db2. This approach results in minimal to no outage or downtime for the application or users. This approach backs up your database and restores it with log replay, which helps prevent disruptions to ongoing operations and provides high availability of your database.
 

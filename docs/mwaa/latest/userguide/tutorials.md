@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/tutorials.html
 ---
 
 # Tutorials for Amazon Managed Workflows for Apache Airflow
-<a name="tutorials"></a>
 
 This guide includes step-by-step tutorials to using and configuring an Amazon Managed Workflows for Apache Airflow environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ami_cu
 ---
 
 # Step 6 – Use the custom AMI with an AWS PCS compute node group
-<a name="working-with_ami_custom_use-ami"></a>
 
 You can use your custom AMI with a new or existing AWS PCS compute node group.
 

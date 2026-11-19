@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/account-au
 ---
 
 # Move and enroll accounts with auto-enrollment
-<a name="account-auto-enrollment"></a>
 
 The account auto-enrollment feature is available for landing zones of version 3.1 and above.
 

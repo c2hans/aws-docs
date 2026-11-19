@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DestinationE
 ---
 
 # DestinationEndpointFilter
-<a name="API_DestinationEndpointFilter"></a>
 
 A filter to apply when listing destination endpoints. This is a union type, so exactly one of its members is set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/logical-dir-ex
 ---
 
 # Configure logical directories examples
-<a name="logical-dir-example"></a>
 
 In this example, we create a user and assign two logical directories. The following command creates a new user (for an existing Transfer Family server) with logical directories `pics` and `doc`.
 

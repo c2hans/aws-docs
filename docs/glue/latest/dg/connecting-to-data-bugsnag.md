@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-bugsna
 ---
 
 # Connecting to BugSnag in AWS Glue Studio
-<a name="connecting-to-data-bugsnag"></a>
 
 BugSnag (SmartBear) is an application stability-monitoring and error-reporting platform. Because you are a BugSnag user, you can connect AWS Glue to your BugSnag account. You can then use BugSnag as a data source in your AWS Glue ETL jobs to transfer data between BugSnag and AWS services or other supported applications.
 

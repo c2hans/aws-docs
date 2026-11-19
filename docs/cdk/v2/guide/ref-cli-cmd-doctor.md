@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-doctor.html
 ---
 
 # `cdk doctor`
-<a name="ref-cli-cmd-doctor"></a>
 
 Inspect and display useful information about your local AWS CDK project and development environment.
 

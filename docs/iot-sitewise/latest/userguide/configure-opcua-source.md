@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-
 ---
 
 # Set up an OPC UA source in SiteWise Edge
-<a name="configure-opcua-source"></a>
 
 You can use the AWS IoT SiteWise console or a SiteWise Edge gateway capability to define and add an OPC UA source to your SiteWise Edge gateway to represent a local OPC UA server.
 

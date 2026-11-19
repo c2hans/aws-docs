@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::Registry
-<a name="aws-resource-agentregistry-registry"></a>
 
 The `AWS::AgentRegistry::Registry` resource specifies a registry. A registry is a managed catalog for publishing and discovering resources such as Model Context Protocol (MCP) servers, agents, and agent skills. It organizes registry records and defines how consumers discover them, how they are authorized, and how submitted records are approved.
 

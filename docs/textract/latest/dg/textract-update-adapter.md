@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-update-adapt
 ---
 
 # Update adapter
-<a name="textract-update-adapter"></a>
 
 With Amazon Textract, you can update some configuration options of an adapter. Simultaneously, you can update any adapter versions associated with the adapter. To do this, call the [UpdateAdapter](https://docs.aws.amazon.com/textract/latest/APIReference/API_UpdateAdapter.html) operation and provide the operation with the AdapterId and configuration elements that you want to update. The AdapterName and FeatureTypes elements cannot be updated.
 

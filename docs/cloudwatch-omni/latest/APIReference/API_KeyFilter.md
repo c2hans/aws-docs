@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # KeyFilter
-<a name="API_KeyFilter"></a>
 
 Key-value filter used for tags and attributes filtering. Multiple KeyFilters are AND'ed. Multiple values within a single KeyFilter are OR'ed. Values support pattern syntax: exact, negation (\!value), wildcard (\*value\*, value\*, \*value).
 

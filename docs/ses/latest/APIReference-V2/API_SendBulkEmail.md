@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkE
 ---
 
 # SendBulkEmail
-<a name="API_SendBulkEmail"></a>
 
 Composes an email message to multiple destinations.
 

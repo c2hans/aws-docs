@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_JobsF
 ---
 
 # JobsFilter
-<a name="API_JobsFilter"></a>
 
 Criteria for filtering jobs.
 

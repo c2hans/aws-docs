@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Represents a cross-account destination that receives subscription log events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateC
 ---
 
 # UpdateCluster
-<a name="API_UpdateCluster"></a>
 
 Modifies the settings for a cluster. You can use this operation to change one or more cluster configuration settings by specifying the settings and the new values.
 

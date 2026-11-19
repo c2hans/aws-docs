@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/express-pri
 ---
 
 # Receiving and identifying express private offers
-<a name="express-private-offers-rate-cards"></a>
 
 Sellers can identify express private offers through:
 + An **express private offer** designation in the offer name

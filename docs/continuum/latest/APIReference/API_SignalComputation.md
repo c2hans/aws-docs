@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Signal
 ---
 
 # SignalComputation
-<a name="API_SignalComputation"></a>
 
 Deterministic values the producer computed from its assessment, as distinct from the assessment itself.
 

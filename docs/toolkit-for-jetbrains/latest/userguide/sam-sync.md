@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # Syncing AWS SAM applications from the AWS Toolkit for JetBrains
-<a name="sam-sync"></a>
 
 AWS Serverless Application Model (AWS SAM) `sam sync` is an AWS SAM-CLI-command deployment process that automatically identifies changes made to your serverless applications, then chooses the best way to build and deploy those changes to the AWS Cloud. If you've only made changes to your application code without changing the infrastructure, AWS SAM Sync updates your application without redeploying your CloudFormation stack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/materialize
 ---
 
 # Understanding materialized views
-<a name="understanding-materialized-views"></a>
 
 ## Views
 <a name="views"></a>

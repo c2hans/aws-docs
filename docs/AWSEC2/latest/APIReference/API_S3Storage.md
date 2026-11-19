@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_S3Storage
 ---
 
 # S3Storage
-<a name="API_S3Storage"></a>
 
 Describes the storage parameters for Amazon S3 and Amazon S3 buckets for an instance store-backed AMI.
 

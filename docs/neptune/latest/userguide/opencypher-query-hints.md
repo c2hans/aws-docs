@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/opencypher-quer
 ---
 
 # openCypher query hints
-<a name="opencypher-query-hints"></a>
 
 **Important**
  openCypher query hint is only available from engine release [1.3.2.0](https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases-1.3.2.0.html) and later.

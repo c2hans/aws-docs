@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # AppCookieStickinessPolicy
-<a name="API_AppCookieStickinessPolicy"></a>
 
 Information about a policy for application-controlled session stickiness.
 

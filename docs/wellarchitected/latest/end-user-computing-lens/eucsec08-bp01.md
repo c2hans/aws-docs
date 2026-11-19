@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSEC08-BP01 Install endpoint protection software on instances to detect unexpected behavior
-<a name="eucsec08-bp01"></a>
 
  Endpoint protection software can provide the capability to detect anomalous behavior on end user computing services.
 

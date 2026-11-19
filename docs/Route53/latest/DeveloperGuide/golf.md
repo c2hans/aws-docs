@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/golf.html
 ---
 
 # .golf
-<a name="golf"></a>
 
 Used for websites devoted to the game of golf.
 

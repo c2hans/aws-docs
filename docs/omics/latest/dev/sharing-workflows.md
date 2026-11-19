@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/sharing-workflows.html
 ---
 
 # Sharing HealthOmics workflows
-<a name="sharing-workflows"></a>
 
 As the owner of a private workflow, you can share the workflow with an AWS account in the same region. To share a workflow with more than one AWS account, you create multiple shares of the same workflow.
 

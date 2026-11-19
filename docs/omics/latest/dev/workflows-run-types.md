@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-run-types.htm
 ---
 
 # Run storage types in HealthOmics workflows
-<a name="workflows-run-types"></a>
 
 When you start a run, HealthOmics allocates temporary run storage for the workflow engine to use during the run. HealthOmics provides the temporary run storage as a file system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertif
 ---
 
 # CreateCertificateProvider
-<a name="API_CreateCertificateProvider"></a>
 
 Creates an AWS IoT Core certificate provider. You can use AWS IoT Core certificate provider to customize how to sign a certificate signing request (CSR) in AWS IoT fleet provisioning. For more information, see [Customizing certificate signing using AWS IoT Core certificate provider](https://docs.aws.amazon.com/iot/latest/developerguide/provisioning-cert-provider.html) from * AWS IoT Core Developer Guide*.
 

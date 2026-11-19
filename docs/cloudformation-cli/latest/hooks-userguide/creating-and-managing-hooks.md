@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Creating and managing CloudFormation Hooks
-<a name="creating-and-managing-hooks"></a>
 
 CloudFormation Hooks provide a mechanism to evaluate your CloudFormation resources before allowing stack creation, modification, or deletion. This feature helps you ensure that your CloudFormation resources comply with your organization's security, operational, and cost optimization best practices.
 

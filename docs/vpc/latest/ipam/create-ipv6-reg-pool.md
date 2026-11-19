@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/create-ipv6-reg-pool.htm
 ---
 
 # Create a Regional IPv6 address pool in your IPAM
-<a name="create-ipv6-reg-pool"></a>
 
 Follow the steps in this section to create an IPv6 regional IPAM pool. When you provision an Amazon-provided IPv6 CIDR block to a pool, it must be provisioned to a pool with a locale (AWS Region) selected. When you create the pool, you can provision a CIDR for the pool to use or add it later. You then assign that space to an allocation. An allocation is a CIDR assignment from an IPAM pool to another IPAM pool or to a resource.
 

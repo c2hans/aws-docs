@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-configure-unio
 ---
 
 # Using Union to combine rows
-<a name="transforms-configure-union"></a>
 
  You use the Union transform node when you want to combine rows from more than one data source that have the same schema.
 

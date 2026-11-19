@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetWorkflow.html
 ---
 
 # GetWorkflow
-<a name="API_GetWorkflow"></a>
 
 Retrieves resource metadata for a workflow.
 

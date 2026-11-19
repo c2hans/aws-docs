@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Library functions available for Python canary scripts using Selenium
-<a name="CloudWatch_Synthetics_Canaries_Library_Python"></a>
 
 This section lists the Selenium library functions available for Python canary scripts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/tr
 ---
 
 # Transport PostgreSQL databases between two Amazon RDS DB instances using pg\_transport
-<a name="transport-postgresql-databases-between-two-amazon-rds-db-instances-using-pg-transport"></a>
 
 *Raunak Rishabh and Jitender Kumar, Amazon Web Services*
 

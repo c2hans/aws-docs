@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PutDeploymentParameter
-<a name="API_marketplace-deployment_PutDeploymentParameter"></a>
 
 Creates or updates a deployment parameter and is targeted by `catalog` and `agreementId`.
 

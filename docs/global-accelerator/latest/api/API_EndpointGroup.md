@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Endpoi
 ---
 
 # EndpointGroup
-<a name="API_EndpointGroup"></a>
 
 A complex type for the endpoint group. An AWS Region can have only one endpoint group for a specific listener.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mvpc-cross-acc
 ---
 
 # Delete a managed VPC connection to an Amazon MSK cluster
-<a name="mvpc-cross-account-delete-connection"></a>
 
 The cross-account user can delete a managed VPC connection for an MSK cluster from the client account console. Because the cluster owner user doesn’t own the managed VPC connection, the connection can’t be deleted from the cluster admin account. Once a VPC connection is deleted, it no longer incurs cost.
 

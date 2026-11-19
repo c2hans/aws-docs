@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Perfor
 ---
 
 # PerformanceIssueDetails
-<a name="API_PerformanceIssueDetails"></a>
 
 Details of the performance issue.
 

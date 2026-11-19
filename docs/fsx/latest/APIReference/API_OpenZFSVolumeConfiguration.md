@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OpenZFSVolum
 ---
 
 # OpenZFSVolumeConfiguration
-<a name="API_OpenZFSVolumeConfiguration"></a>
 
 The configuration of an Amazon FSx for OpenZFS volume.
 

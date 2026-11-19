@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Security and access controls
-<a name="harness-security"></a>
 
 The harness gives you the same security primitives as the rest of AgentCore, wired in by configuration.
 +  **Isolated execution.** Every session runs in its own Firecracker microVM in [AgentCore Runtime](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-how-it-works.html). No shared state, no shared filesystem.

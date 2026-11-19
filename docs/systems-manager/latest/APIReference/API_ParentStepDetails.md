@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ParentStepDetails
-<a name="API_ParentStepDetails"></a>
 
 A detailed status of the parent step.
 

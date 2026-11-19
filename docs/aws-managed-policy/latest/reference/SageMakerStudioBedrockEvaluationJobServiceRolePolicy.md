@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioBedrockEvaluationJobServiceRolePolicy
-<a name="SageMakerStudioBedrockEvaluationJobServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Bedrock to access Amazon Bedrock models and datasets for evaluation jobs in SageMaker Studio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeJobF
 ---
 
 # DescribeJobFlows
-<a name="API_DescribeJobFlows"></a>
 
 This API is no longer supported and will eventually be removed. We recommend you use [ListClusters](API_ListClusters.md), [DescribeCluster](API_DescribeCluster.md), [ListSteps](API_ListSteps.md), [ListInstanceGroups](API_ListInstanceGroups.md) and [ListBootstrapActions](API_ListBootstrapActions.md) instead.
 

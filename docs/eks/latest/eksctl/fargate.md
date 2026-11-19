@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/fargate.html
 ---
 
 # EKS Fargate Support
-<a name="fargate"></a>
 
  [AWS Fargate](https://aws.amazon.com/fargate/) is a managed compute engine for Amazon ECS that can run containers. In Fargate you don’t need to manage servers or clusters.
 

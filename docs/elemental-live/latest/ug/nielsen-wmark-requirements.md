@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/nielsen-wmark-r
 ---
 
 # Audio requirements
-<a name="nielsen-wmark-requirements"></a>
 
 ## Supported audio
 <a name="nielsen-wmark-supportedaudio"></a>

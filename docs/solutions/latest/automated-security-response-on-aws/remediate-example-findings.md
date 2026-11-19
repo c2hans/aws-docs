@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Remediate example findings
-<a name="remediate-example-findings"></a>
 
 **Important**
 This example requires the use of the Security Hub CSPM console. The Security Hub (non-CSPM) console does not currently support manual remediations via custom action. To remediate findings without using the Security Hub CSPM console, see the [Remediate using the Web UI](remediate-with-ui.md) section.

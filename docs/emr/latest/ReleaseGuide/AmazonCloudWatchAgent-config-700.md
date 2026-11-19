@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/AmazonCloudWatch
 ---
 
 # Configure CloudWatch agent for Amazon EMR 7.0.0
-<a name="AmazonCloudWatchAgent-config-700"></a>
 
 You can configure the Amazon CloudWatch agent to use additional system metrics beyond those that [the default CloudWatch agent configuration](AmazonCloudWatchAgent-metrics.md) provides. The configuration for 7.0.0 requires the use of bootstrap actions, which we've provided examples for in the following sections. In an upcoming release, Amazon EMR will provide additional configuration options through the Amazon EMR API.
 

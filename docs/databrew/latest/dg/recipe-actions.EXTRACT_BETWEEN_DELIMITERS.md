@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.EXTRAC
 ---
 
 # EXTRACT\_BETWEEN\_DELIMITERS
-<a name="recipe-actions.EXTRACT_BETWEEN_DELIMITERS"></a>
 
 Creates a new column, based on delimiters, from the values in an existing column.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkConnection
-<a name="API_NetworkConnection"></a>
 
 Contains information about the network connection.
 

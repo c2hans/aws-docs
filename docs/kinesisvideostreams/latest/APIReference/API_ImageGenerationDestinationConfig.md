@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ImageGenerationDestinationConfig
-<a name="API_ImageGenerationDestinationConfig"></a>
 
 The structure that contains the information required to deliver images to a customer.
 

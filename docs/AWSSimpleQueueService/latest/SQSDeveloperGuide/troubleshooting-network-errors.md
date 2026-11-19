@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Troubleshoot Amazon SQS network errors
-<a name="troubleshooting-network-errors"></a>
 
 The following topics cover the most common causes for network issues in Amazon SQS, and how to troubleshoot them.
 

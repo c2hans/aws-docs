@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkEventNotificationConfigurations
-<a name="API_SidewalkEventNotificationConfigurations"></a>
 
  `SidewalkEventNotificationConfigurations` object, which is the event configuration object for Sidewalk-related event topics.
 

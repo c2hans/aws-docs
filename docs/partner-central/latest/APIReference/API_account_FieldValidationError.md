@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # FieldValidationError
-<a name="API_account_FieldValidationError"></a>
 
 Contains information about a field-level validation error that occurred during an operation.
 

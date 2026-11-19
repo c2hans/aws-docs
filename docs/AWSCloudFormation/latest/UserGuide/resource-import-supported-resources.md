@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resou
 ---
 
 # Resource type support
-<a name="resource-import-supported-resources"></a>
 
 The following table lists AWS resource types that currently support import, drift detection, and infrastructure as code (IaC) generator operations. Each resource type name links to its corresponding reference topic in the [CloudFormation Template Reference Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/introduction.html).
 

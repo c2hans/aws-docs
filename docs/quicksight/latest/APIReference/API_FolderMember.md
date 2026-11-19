@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Folde
 ---
 
 # FolderMember
-<a name="API_FolderMember"></a>
 
 An asset in a Quick Sight folder, such as a dashboard, analysis, or dataset.
 

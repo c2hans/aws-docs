@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/overlay-ads-manife
 ---
 
 # Manifest signaling
-<a name="overlay-ads-manifest-signaling"></a>
 
 MediaTailor trigger overlay-ads support when it sees a specific SCTE-35 marker in the manifest. The required signal is a splice command type 6, or time signal, that is a Provider Overlay Advertisement Start signal. This signal has a segmentation type id of `0x38`
 

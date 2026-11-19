@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # PendingLogDeliveryConfiguration
-<a name="API_PendingLogDeliveryConfiguration"></a>
 
 The log delivery configurations being modified
 

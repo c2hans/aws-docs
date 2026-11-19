@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Contributors
-<a name="contributors"></a>
 + Arie Leeuwesteijn
 + Mahmoud ElZayet
 + Ruald Andreae

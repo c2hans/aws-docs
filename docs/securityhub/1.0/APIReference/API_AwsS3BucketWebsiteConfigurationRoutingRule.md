@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketWebsiteConfigurationRoutingRule
-<a name="API_AwsS3BucketWebsiteConfigurationRoutingRule"></a>
 
 A rule for redirecting requests to the website.
 

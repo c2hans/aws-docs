@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobDashboardOverrideProperties
-<a name="API_AssetBundleExportJobDashboardOverrideProperties"></a>
 
 Controls how a specific `Dashboard` resource is parameterized in the returned CloudFormation template.
 

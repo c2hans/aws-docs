@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/troub
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
  After creating the task, you may encounter some error messages. The following list the error messages and provide general steps to troubleshoot them.
 

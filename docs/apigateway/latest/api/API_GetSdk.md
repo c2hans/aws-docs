@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetSdk.html
 ---
 
 # GetSdk
-<a name="API_GetSdk"></a>
 
 Generates a client SDK for a RestApi and Stage.
 

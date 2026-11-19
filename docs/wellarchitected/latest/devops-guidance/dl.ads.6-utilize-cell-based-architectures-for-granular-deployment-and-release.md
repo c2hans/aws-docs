@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.ADS.6] Use cell-based architectures for granular deployment and release
-<a name="dl.ads.6-utilize-cell-based-architectures-for-granular-deployment-and-release"></a>
 
  **Category:** OPTIONAL
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/fargate-pod-configu
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Understand Fargate Pod configuration details
-<a name="fargate-pod-configuration"></a>
 
 This section describes some of the unique Pod configuration details for running Kubernetes Pods on AWS Fargate.
 

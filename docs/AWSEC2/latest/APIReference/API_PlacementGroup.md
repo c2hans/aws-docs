@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Placement
 ---
 
 # PlacementGroup
-<a name="API_PlacementGroup"></a>
 
 Describes a placement group.
 

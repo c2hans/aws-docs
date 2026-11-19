@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ac
 ---
 
 # Access, query, and join Amazon DynamoDB tables using Athena
-<a name="access-query-and-join-amazon-dynamodb-tables-using-athena"></a>
 
 *Moinul Al-Mamun, Amazon Web Services*
 

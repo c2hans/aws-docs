@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/startup-res
 ---
 
 # Stage 2: Design and implement
-<a name="stage-2"></a>
 
 This section discusses turning your resilience objectives into reality. You've mapped out what matters most to your business, and now it's time to build it. How do you build in resilience without slowing down innovation?
 

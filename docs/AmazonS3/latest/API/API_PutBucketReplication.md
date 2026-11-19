@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketReplica
 ---
 
 # PutBucketReplication
-<a name="API_PutBucketReplication"></a>
 
 **Note**
 This operation is not supported for directory buckets.

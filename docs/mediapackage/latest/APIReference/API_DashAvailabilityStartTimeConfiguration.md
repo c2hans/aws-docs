@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Das
 ---
 
 # DashAvailabilityStartTimeConfiguration
-<a name="API_DashAvailabilityStartTimeConfiguration"></a>
 
 The configuration for the DASH `availabilityStartTime` attribute of the Media Presentation Description (MPD). Use this configuration to set a custom availability start time for your DASH manifest.
 

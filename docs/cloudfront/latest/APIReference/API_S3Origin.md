@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_S3Ori
 ---
 
 # S3Origin
-<a name="API_S3Origin"></a>
 
 A complex type that contains information about the Amazon S3 bucket from which you want CloudFront to get your media files for distribution.
 

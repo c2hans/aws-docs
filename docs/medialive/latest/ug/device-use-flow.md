@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/device-use-flow.html
 ---
 
 # Using Link with a MediaConnect flow
-<a name="device-use-flow"></a>
 
 You can set up a Link UHD as the source for a MediaConnect flow.
 

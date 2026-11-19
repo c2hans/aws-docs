@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # 2. Experimentation
-<a name="experimentation"></a>
 
 Experimentation covers experiment logging, tracking, and metrics. This translates to experiment metadata integration across the platform, in source control, and in development environments. Experimentation also includes being able to optimize model performance and accuracy through debugging.
 

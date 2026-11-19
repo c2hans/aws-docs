@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Instance placement
-<a name="instance-placement"></a>
 
  Outposts have a finite number of compute hosts. If your application deploys multiple related instances on Outposts; without additional configuration, the instances may deploy on the same hosts or on hosts in the same rack. Today, there are three mechanisms you may use to distribute instances to mitigate the risk of running related instances on the same infrastructure:
 

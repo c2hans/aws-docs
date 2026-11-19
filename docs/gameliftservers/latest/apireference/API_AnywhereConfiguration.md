@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # AnywhereConfiguration
-<a name="API_AnywhereConfiguration"></a>
 
 Amazon GameLift Servers configuration options for your Anywhere fleets.
 

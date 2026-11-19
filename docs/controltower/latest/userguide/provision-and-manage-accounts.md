@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/provision-
 ---
 
 # Provision and manage accounts in AWS Control Tower
-<a name="provision-and-manage-accounts"></a>
 
 This chapter includes:
 + an overview and procedures for provisioning and managing new member accounts in AWS Control Tower.

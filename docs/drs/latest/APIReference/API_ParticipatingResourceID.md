@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_Participatin
 ---
 
 # ParticipatingResourceID
-<a name="API_ParticipatingResourceID"></a>
 
 ID of a resource participating in an asynchronous Job.
 

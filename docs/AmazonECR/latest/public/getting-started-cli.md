@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/getting-started-
 ---
 
 # Moving an image through its lifecycle in Amazon ECR Public
-<a name="getting-started-cli"></a>
 
 This quick start guide walks you through the steps needed to create a Docker image, publish the image to a public repository, pull the image down from the Amazon ECR Public Gallery, and then clean up the resources using the Docker CLI and the AWS CLI.
 

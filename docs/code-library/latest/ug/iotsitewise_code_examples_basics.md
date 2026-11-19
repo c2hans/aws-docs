@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iotsitewise_code_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for AWS IoT SiteWise using AWS SDKs
-<a name="iotsitewise_code_examples_basics"></a>
 
 The following code examples show how to use the basics of AWS IoT SiteWise with AWS SDKs.
 

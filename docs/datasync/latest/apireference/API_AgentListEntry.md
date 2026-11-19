@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_AgentLi
 ---
 
 # AgentListEntry
-<a name="API_AgentListEntry"></a>
 
 Represents a single entry in a list (or array) of AWS DataSync agents when you call the [ListAgents](https://docs.aws.amazon.com/datasync/latest/userguide/API_ListAgents.html) operation.
 

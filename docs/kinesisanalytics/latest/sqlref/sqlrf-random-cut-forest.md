@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sqlrf-ran
 ---
 
 # RANDOM\_CUT\_FOREST
-<a name="sqlrf-random-cut-forest"></a>
 
 Detects anomalies in your data stream.  A record is an anomaly if it is distant from other records.  To detect anomalies in individual record columns, see [RANDOM\_CUT\_FOREST\_WITH\_EXPLANATION](sqlrf-random-cut-forest-with-explanation.md).
 

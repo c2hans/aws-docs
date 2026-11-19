@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-PatchInstanceWithRollback`
-<a name="automation-aws-patchinstancewithrollback"></a>
 
 **Description**
 

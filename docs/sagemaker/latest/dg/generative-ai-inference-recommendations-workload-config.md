@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/generative-ai-infere
 ---
 
 # Set up a workload configuration for generative AI inference recommendations
-<a name="generative-ai-inference-recommendations-workload-config"></a>
 
 A workload configuration defines the traffic patterns and benchmark parameters that SageMaker AI uses when evaluating your model or endpoint. You create a workload configuration before running a recommendation job or a benchmark job. The same workload configuration can be reused across multiple jobs.
 

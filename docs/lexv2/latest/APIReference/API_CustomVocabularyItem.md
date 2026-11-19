@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CustomVoca
 ---
 
 # CustomVocabularyItem
-<a name="API_CustomVocabularyItem"></a>
 
 The unique custom vocabulary item from the custom vocabulary list.
 

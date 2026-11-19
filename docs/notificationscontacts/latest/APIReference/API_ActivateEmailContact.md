@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 ---
 
 # ActivateEmailContact
-<a name="API_ActivateEmailContact"></a>
 
 Activates an email contact using an activation code. This code is in the activation email sent to the email address associated with this email contact.
 

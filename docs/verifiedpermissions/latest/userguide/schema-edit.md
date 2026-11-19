@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/sch
 ---
 
 # Editing policy store schemas
-<a name="schema-edit"></a>
 
 When you select **Schema** in the Amazon Verified Permissions console, the **Entity types** and **Actions** that make up your schema are displayed. You can view edit your schema in either **Visual mode** or **JSON mode**. Visual mode lets you update the schema by adding new types and actions using various wizards. Using JSON mode, you can start updating the JSON code of the schema directly in the JSON editor.
 

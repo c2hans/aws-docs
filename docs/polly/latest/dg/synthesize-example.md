@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/synthesize-example.html
 ---
 
 # Synthesizing speech with Amazon Polly example
-<a name="synthesize-example"></a>
 
 This page presents a short speech synthesis example performed in the console, the AWS CLI, and with Python. This example performs speech synthesis from plain text, not SSML.
 

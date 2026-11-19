@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/chat-widget-da
 ---
 
 # Capture website visitor activity with the web data tracker
-<a name="chat-widget-data-tracker"></a>
 
 The web data tracker captures how visitors interact with your website – items clicked, searches made, form submission. It associates that activity with their profile in Customer Profiles. The tracker is part of the Communications widget and is controlled at the widget level. For an overview of how the web data tracker and web notification work together, see [Web data tracker and web notification](customer-profiles-web-tracker-and-notification.md).
 

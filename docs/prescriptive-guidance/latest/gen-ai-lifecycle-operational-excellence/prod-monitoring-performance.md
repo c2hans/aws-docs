@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Pillars of monitoring generative AI application performance in production
-<a name="prod-monitoring-performance"></a>
 
 Effective performance monitoring in the production stage helps you make sure that the system remains reliable and effective. A well-rounded monitoring framework includes monitoring across the following three pillars:
 + **Application and system health** – This pillar helps you validate that the generative AI application is highly available and cost efficient. It focuses on the operational stability, scalability, and runtime performance of the application and support infrastructure. Some example key metrics include:

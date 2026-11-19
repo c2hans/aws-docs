@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-explain-
 ---
 
 # How to use SPARQL `explain` to analyze Neptune query execution
-<a name="sparql-explain-using"></a>
 
 The SPARQL `explain` feature is a self-service tool in Amazon Neptune that helps you understand the execution approach taken by the Neptune engine. To invoke `explain`, you pass a parameter to an HTTP or HTTPS request in the form `explain={{mode}}`.
 

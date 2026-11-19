@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Targ
 ---
 
 # TargetSummary
-<a name="API_TargetSummary"></a>
 
 Summary information about a target.
 

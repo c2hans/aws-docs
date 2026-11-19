@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListCommands
 ---
 
 # ListCommands
-<a name="API_ListCommands"></a>
 
 List all commands in your account.
 

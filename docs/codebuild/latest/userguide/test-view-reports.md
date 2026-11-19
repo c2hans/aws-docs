@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-view-rep
 ---
 
 # View test reports
-<a name="test-view-reports"></a>
 
  You can view details about a test report, such as information about its test cases, pass and fail numbers, and how long it took for it to run. You can view test reports grouped by build run, report group, or your AWS account. Choose a test report in the console to see its details and results of its test cases.
 

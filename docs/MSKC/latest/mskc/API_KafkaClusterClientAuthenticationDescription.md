@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_KafkaClusterClientA
 ---
 
 # KafkaClusterClientAuthenticationDescription
-<a name="API_KafkaClusterClientAuthenticationDescription"></a>
 
 The client authentication information used in order to authenticate with the Apache Kafka cluster.
 

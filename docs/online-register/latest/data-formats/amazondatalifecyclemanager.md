@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Data Lifecycle Manager
-<a name="amazondatalifecyclemanager"></a>
 
 Amazon Data Lifecycle Manager provides the following APIs for data retrieval.
 

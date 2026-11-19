@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Insta
 ---
 
 # InstanceTarget
-<a name="API_InstanceTarget"></a>
 
  A target Amazon EC2 or on-premises instance during a deployment that uses the EC2/On-premises compute platform.
 

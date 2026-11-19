@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/hello.ht
 ---
 
 # Creating a simple application using the AWS SDK for Ruby
-<a name="hello"></a>
 
 Say hello to Amazon S3 using the AWS SDK for Ruby. The following example displays a list of your Amazon S3 buckets.
 

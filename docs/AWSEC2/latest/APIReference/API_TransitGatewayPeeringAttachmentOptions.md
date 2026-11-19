@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayPeeringAttachmentOptions
-<a name="API_TransitGatewayPeeringAttachmentOptions"></a>
 
 Describes dynamic routing for the transit gateway peering attachment.
 

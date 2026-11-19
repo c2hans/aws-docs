@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/versioned-data-s
 ---
 
 # Versioning DynamoDB data sources in AWS AppSync
-<a name="versioned-data-sources"></a>
 
 AWS AppSync currently supports versioning on DynamoDB data sources. Conflict Detection, Conflict Resolution, and Sync operations require a `Versioned` data source. When you enable versioning on a data source, AWS AppSync will automatically:
 + Enhance items with object versioning metadata.

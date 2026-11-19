@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PublishFindi
 ---
 
 # PublishFindingToSnsParams
-<a name="API_PublishFindingToSnsParams"></a>
 
 Parameters to define a mitigation action that publishes findings to Amazon SNS. You can implement your own custom actions in response to the Amazon SNS messages.
 

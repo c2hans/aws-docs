@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_G
 ---
 
 # GetRLSPolicy
-<a name="API_GetRLSPolicy"></a>
 
 Returns the definition of a row-level security policy, including its attachment columns and filter expression.
 

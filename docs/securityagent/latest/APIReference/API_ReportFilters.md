@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Re
 ---
 
 # ReportFilters
-<a name="API_ReportFilters"></a>
 
 The report-generation filters applied when a pentest or code review report is exported.
 

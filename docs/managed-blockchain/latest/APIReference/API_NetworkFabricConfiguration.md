@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NetworkFabricConfiguration
-<a name="API_NetworkFabricConfiguration"></a>
 
 Hyperledger Fabric configuration properties for the network.
 

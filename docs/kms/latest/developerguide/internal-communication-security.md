@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/internal-commu
 ---
 
 # Internal communication security
-<a name="internal-communication-security"></a>
 
 Commands between the service hosts or AWS KMS operators and the HSMs are secured through two mechanisms depicted in [Authenticated sessions](#authenticated-sessions): a quorum-signed request method and an authenticated session using an HSM-service host protocol.
 

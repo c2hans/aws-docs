@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-custom-trans
 ---
 
 # Use a custom transformation Lambda function to define how your data is ingested
-<a name="kb-custom-transformation"></a>
 
 You have the ability to define a custom transformation Lambda function to inject your own logic into the knowledge base ingestion process.
 

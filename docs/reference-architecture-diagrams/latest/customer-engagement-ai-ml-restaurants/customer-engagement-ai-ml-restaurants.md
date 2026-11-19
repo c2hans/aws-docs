@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Customer Engagement Using AI/ML for Restaurants
-<a name="customer-engagement-ai-ml-restaurants"></a>
 
 Publication date: **2020 ([Diagram history](#cerest-history))**
 

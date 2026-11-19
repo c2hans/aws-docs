@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolNetwor
 ---
 
 # GetSolNetworkInstance
-<a name="API_GetSolNetworkInstance"></a>
 
 Gets the details of the network instance.
 

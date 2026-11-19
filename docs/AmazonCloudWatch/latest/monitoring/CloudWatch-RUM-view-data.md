@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Viewing the CloudWatch RUM dashboard
-<a name="CloudWatch-RUM-view-data"></a>
 
 CloudWatch RUM collects and visualizes application performance data from user sessions through an interactive dashboard. By capturing load times, Apdex scores, device information, geolocation, and error patterns, teams can quickly identify performance bottlenecks, prioritize fixes based on real user impact, and make sure optimal experiences across different browsers, devices, and geographic regions—helping organizations better understand user behavior leading to reduced end user frustration and improving application reliability.
 

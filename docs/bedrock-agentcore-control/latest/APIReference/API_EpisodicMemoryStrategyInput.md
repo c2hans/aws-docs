@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EpisodicMemoryStrategyInput
-<a name="API_EpisodicMemoryStrategyInput"></a>
 
 Input for creating an episodic memory strategy.
 

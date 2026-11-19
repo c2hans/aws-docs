@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/connector-trou
 ---
 
 # Troubleshoot SFTP connector issues
-<a name="connector-troubleshooting"></a>
 
 This section describes possible solutions for issues with SFTP connectors.
 

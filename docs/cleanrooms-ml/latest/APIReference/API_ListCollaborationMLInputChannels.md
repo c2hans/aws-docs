@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListCollaborationMLInputChannels
-<a name="API_ListCollaborationMLInputChannels"></a>
 
 Returns a list of the ML input channels in a collaboration.
 

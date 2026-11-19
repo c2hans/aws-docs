@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerOAuth3LOConfig
-<a name="API_MCPServerOAuth3LOConfig"></a>
 
 OAuth 3-legged authorization configuration for MCP server.
 

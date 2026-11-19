@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/security_iam_serv
 ---
 
 # How Amazon FSx for Lustre works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon FSx, learn what IAM features are available to use with Amazon FSx.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-ouput-video
 ---
 
 # Videos
-<a name="bda-ouput-video"></a>
 
 BDA offers a set of standard outputs to process and generate insights for videos. Here's a detailed look at each operation type:
 

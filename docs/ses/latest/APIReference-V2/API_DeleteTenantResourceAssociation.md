@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteTen
 ---
 
 # DeleteTenantResourceAssociation
-<a name="API_DeleteTenantResourceAssociation"></a>
 
 Delete an association between a tenant and a resource.
 

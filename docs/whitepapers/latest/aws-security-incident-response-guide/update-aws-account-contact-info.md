@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Update AWS account contact information
-<a name="update-aws-account-contact-info"></a>
 
  For each of your AWS accounts, it’s important to have accurate and up-to-date contact information so that the correct stakeholders receive important notifications from AWS on topics like security, billing, and operations. For each AWS account, you have a primary contact and alternate contacts for security, billing and operations. Differences between these contacts can be found in the [AWS Account Management Reference Guide](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html#manage-acct-update-contact-alternate).
 

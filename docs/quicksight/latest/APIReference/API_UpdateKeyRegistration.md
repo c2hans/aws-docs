@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateKeyRegistration
-<a name="API_UpdateKeyRegistration"></a>
 
 Updates a customer managed key in a Quick Sight account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Two grounding mechanisms
-<a name="kg-two-mechanisms"></a>
 
 ## Bedrock Knowledge Base RAG
 <a name="kg-bedrock-kb"></a>

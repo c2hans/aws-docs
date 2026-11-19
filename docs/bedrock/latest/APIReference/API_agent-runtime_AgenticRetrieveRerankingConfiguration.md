@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveRerankingConfiguration
-<a name="API_agent-runtime_AgenticRetrieveRerankingConfiguration"></a>
 
 Configuration for the reranking model.
 

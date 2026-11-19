@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Del
 ---
 
 # Deleting a backup of a DynamoDB table with AWS Backup
-<a name="Delete.TutorialAWS"></a>
 
 This section describes how to delete a backup of a DynamoDB table with AWS Backup.
 

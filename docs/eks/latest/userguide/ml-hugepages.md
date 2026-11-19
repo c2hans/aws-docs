@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ml-hugepages.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure hugepages in Amazon EKS clusters
-<a name="ml-hugepages"></a>
 
 ## Overview
 <a name="_overview"></a>

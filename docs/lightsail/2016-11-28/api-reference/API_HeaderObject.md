@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_H
 ---
 
 # HeaderObject
-<a name="API_HeaderObject"></a>
 
 Describes the request headers that a Lightsail distribution bases caching on.
 

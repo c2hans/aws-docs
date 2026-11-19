@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Extension
-<a name="aws-resource-sagemaker-extension"></a>
 
 Installs an extension, such as `sagemaker-observability`, on a SageMaker HyperPod cluster orchestrated by Slurm. The cluster must have `NodeProvisioningMode` set to `Continuous` and can have only one extension with a given name. To track the installation, call `DescribeClusterExtension`.
 

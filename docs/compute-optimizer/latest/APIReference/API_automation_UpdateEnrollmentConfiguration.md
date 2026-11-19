@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # UpdateEnrollmentConfiguration
-<a name="API_automation_UpdateEnrollmentConfiguration"></a>
 
 Updates your account’s Compute Optimizer Automation enrollment configuration.
 

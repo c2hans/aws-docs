@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # AWS Step Functions
-<a name="appinsights-metrics-step-functions"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

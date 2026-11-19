@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-input-mp4.html
 ---
 
 # Create an MP4 input
-<a name="setup-input-mp4"></a>
 
 After you have obtained information from the upstream system, you can create an MP4 input.
 

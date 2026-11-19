@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Metric
 ---
 
 # MetricData
-<a name="API_MetricData"></a>
 
 The name, value, and date and time of a metric that was emitted to Amazon CloudWatch.
 

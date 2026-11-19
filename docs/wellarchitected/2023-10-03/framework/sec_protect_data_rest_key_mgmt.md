@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC08-BP01 Implement secure key management
-<a name="sec_protect_data_rest_key_mgmt"></a>
 
  Secure key management includes the storage, rotation, access control, and monitoring of key material required to secure data at rest for your workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RulesExt
 ---
 
 # RulesExtractionDefinitionIdentifier
-<a name="API_RulesExtractionDefinitionIdentifier"></a>
 
 An identifier that references an extraction definition resource.
 

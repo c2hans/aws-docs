@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetCustom
 ---
 
 # GetCustomRulePolicy
-<a name="API_GetCustomRulePolicy"></a>
 
 Returns the policy definition containing the logic for your AWS Config Custom Policy rule.
 

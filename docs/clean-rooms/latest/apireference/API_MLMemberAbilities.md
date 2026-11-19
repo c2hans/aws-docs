@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_MLMe
 ---
 
 # MLMemberAbilities
-<a name="API_MLMemberAbilities"></a>
 
 The ML member abilities for a collaboration member.
 

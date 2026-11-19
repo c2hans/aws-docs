@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/backup-tsm.htm
 ---
 
 # Testing Your Setup by Using IBM Data Protect
-<a name="backup-tsm"></a>
 
 You can back up your data to virtual tapes, archive the tapes, and manage your virtual tape library (VTL) devices by using IBM Data Protect with AWS Storage Gateway. (IBM Data Protect was formerly known as Tivoli Storage Manager.)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/share
 ---
 
 # Sharing all CloudWatch dashboards in the account by using SSO
-<a name="share-cloudwatch-dashboard-sso"></a>
 
 Use the steps in this section to share all the dashboards in your account with users by using single sign-on (SSO).
 

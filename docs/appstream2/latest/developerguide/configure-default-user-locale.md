@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Specify a Default User Locale
-<a name="configure-default-user-locale"></a>
 
 To specify a default user locale for your users’ streaming sessions, perform the following steps.
 

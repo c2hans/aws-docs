@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Generating dependency insights
-<a name="next-gen-generating-insights"></a>
 
 Next generation Resilience Hub analyzes up to 35 days of discovered dependency data to generate insights. You can generate insights from the console or by using the AWS CLI.
 

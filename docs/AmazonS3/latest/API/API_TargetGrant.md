@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_TargetGrant.html
 ---
 
 # TargetGrant
-<a name="API_TargetGrant"></a>
 
 Container for granting information.
 

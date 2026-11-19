@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/persona-connector-limitat
 ---
 
 # Limitations and notes for the Persona connector
-<a name="persona-connector-limitations"></a>
 
 The following are limitations and notes for the Persona connector:
 + Persona is supported as a source only. Writing to Persona is not supported.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-tool-c
 ---
 
 # Tool configuration
-<a name="sonic-tool-configuration"></a>
 
 Amazon Nova 2 Sonic supports tool use (also known as function calling), allowing the model to request external information or actions during conversations, such as API calls, database queries, or custom code functions. This allows your voice assistant to take actions, retrieve information, and integrate with external services based on user requests.
 

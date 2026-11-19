@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLCandidateStep
-<a name="API_AutoMLCandidateStep"></a>
 
 Information about the steps for a candidate and what step it is working on.
 

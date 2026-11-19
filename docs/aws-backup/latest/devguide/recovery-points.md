@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/recovery-poin
 ---
 
 # Backup creation, maintenance, and restore
-<a name="recovery-points"></a>
 
 A backup, or *recovery point*, represents the content of a resource, such as an Amazon Elastic Block Store (Amazon EBS) volume or Amazon DynamoDB table, at a specified time. Recovery point is a term that refers generally to the different backups in AWS services, such as Amazon EBS snapshots and DynamoDB backups. The terms *recovery point* and *backup* are used interchangeably.
 

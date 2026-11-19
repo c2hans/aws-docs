@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergOrphanFile
 ---
 
 # IcebergOrphanFileDeletionConfiguration
-<a name="API_IcebergOrphanFileDeletionConfiguration"></a>
 
 The configuration for an Iceberg orphan file deletion optimizer.
 

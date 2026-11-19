@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/schema.html
 ---
 
 # Cluster Config Schema
-<a name="schema"></a>
 
 **Note**
 The location of the schema is currently being migrated.

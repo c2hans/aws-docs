@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-faq.
 ---
 
 # Face Liveness FAQ
-<a name="face-liveness-faq"></a>
 
 Use the following FAQ items to find answers to commonly asked questions about Rekognition Face Liveness.
 + **What are the outputs of a face liveness check?**

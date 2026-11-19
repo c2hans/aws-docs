@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::ConfiguredTable AggregateColumn
-<a name="aws-properties-cleanrooms-configuredtable-aggregatecolumn"></a>
 
 Column in configured table that can be used in aggregate function in query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Configure permissions for agents to deliver metrics
-<a name="CloudWatch-NetworkFlowMonitor-agents-kubernetes-permissions"></a>
 
 After you install agents for Network Flow Monitor, you must enable the agents to send network metrics to the Network Flow Monitor ingestion APIs. Agents in Network Flow Monitor must have permission to access the Network Flow Monitor ingestion APIs so that they can deliver network flow metrics that they've collected for each instance. You grant this access by implementing IAM roles for service accounts (IRSA).
 

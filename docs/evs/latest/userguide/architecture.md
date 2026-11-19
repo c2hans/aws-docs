@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/architecture.html
 ---
 
 # Amazon EVS architecture
-<a name="architecture"></a>
 
 An Amazon Elastic VMware Service environment runs VMware Cloud Foundation (VCF) on Amazon EC2 bare metal instances inside your own Amazon VPC.
 

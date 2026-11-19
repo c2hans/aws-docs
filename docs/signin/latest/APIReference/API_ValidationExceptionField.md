@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_Validatio
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Returns information about a field passed inside a request that resulted in an exception. For example, the request has failed because you passed an instance of IAM Identity Center without an organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Concept
 ---
 
 # Password validation for RDS for MySQL
-<a name="MySQL.Concepts.PasswordValidationPlugin"></a>
 
 MySQL provides the `validate_password` plugin for improved security. The plugin enforces password policies using parameters in the DB parameter group for your MySQL DB instance. The plugin is supported for DB instances running MySQL version 5.7, 8.0, and 8.4. For more information about the `validate_password` plugin, see [The Password Validation Plugin](https://dev.mysql.com/doc/refman/5.7/en/validate-password.html) in the MySQL documentation.
 

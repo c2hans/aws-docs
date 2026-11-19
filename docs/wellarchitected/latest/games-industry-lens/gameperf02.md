@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Region selection
-<a name="gameperf02"></a>
 
 |  GAMEPERF02: How do you determine which geographic Regions to host your game infrastructure?  |
 | --- |

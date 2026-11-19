@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/alias-delete.h
 ---
 
 # Delete an alias
-<a name="alias-delete"></a>
 
 You can delete an alias in the AWS KMS console or by using the [DeleteAlias](https://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteAlias.html) operation. Before deleting an alias, make sure that it's not in use. Although deleting an alias doesn't affect the associated KMS key, it might create problems for any application that uses the alias. If you delete an alias by mistake, you can create a new alias with the same name and associate it with the same or a different KMS key.
 

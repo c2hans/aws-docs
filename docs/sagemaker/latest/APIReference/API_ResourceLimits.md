@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Resour
 ---
 
 # ResourceLimits
-<a name="API_ResourceLimits"></a>
 
 Specifies the maximum number of training jobs and parallel training jobs that a hyperparameter tuning job can launch.
 

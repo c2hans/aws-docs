@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # Phase 1 - Planning and Setup
-<a name="phase-1-planning-and-setup"></a>
 
 ## Prerequisites
 <a name="prerequisites.3eed6656-524d-5a2f-b1a8-154bda4f5ee3"></a>

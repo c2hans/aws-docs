@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetwork
 ---
 
 # StartNetworkMigrationAnalysis
-<a name="API_StartNetworkMigrationAnalysis"></a>
 
 Starts a network migration analysis job to evaluate connectivity and compatibility of the migration mappings.
 

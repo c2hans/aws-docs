@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_In
 ---
 
 # InviteAccountToOrganization
-<a name="API_InviteAccountToOrganization"></a>
 
 Sends an invitation to another account to join your organization as a member account. AWS Organizations sends email on your behalf to the email address that is associated with the other account's owner. The invitation is implemented as a [Handshake](API_Handshake.md) whose details are in the response.
 

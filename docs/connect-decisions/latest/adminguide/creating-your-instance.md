@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/crea
 ---
 
 # Creating Your Instance
-<a name="creating-your-instance"></a>
 
 You create an instance using one of two methods, Standard configuration or Advanced configuration. Standard configuration uses an automated process that creates your instance quickly using preset parameters. Advanced configuration allows you to customize your instance by setting your own parameters.
 

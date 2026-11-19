@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetDefaultApplicationSetting
-<a name="API_GetDefaultApplicationSetting"></a>
 
 Gets the ARN of the current default application.
 

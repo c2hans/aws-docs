@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListStorageProfiles
-<a name="API_ListStorageProfiles"></a>
 
 Lists storage profiles.
 

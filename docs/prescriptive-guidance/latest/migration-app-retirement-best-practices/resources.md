@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-a
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.b855343b-3776-5369-bb29-f981d3c95bff"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Connect an AI client to the MCP server
-<a name="connect-an-ai-client-to-the-mcp-server"></a>
 
 If you set **EnableMcpServer** to `yes`, the solution exposes its operations as Model Context Protocol (MCP) tools. It does this through an Amazon Bedrock AgentCore Gateway. You can connect Claude Code, Kiro, or the OpenAI Codex CLI to call those tools. For an overview of the MCP server, see [MCP server for AI clients](mcp-server.md).
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/view-cluster-insigh
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # View cluster insights
-<a name="view-cluster-insights"></a>
 
 Amazon EKS provides three types of insights: **Configuration insights**, **Upgrade insights**, and **Rollback readiness insights**. **Configuration insights** identify misconfigurations in your EKS Hybrid Nodes setup that could impair functionality of your cluster or workloads. **Upgrade insights** identify issues that could impact your ability to upgrade to new versions of Kubernetes. **Rollback readiness insights** identify issues that could impact your ability to roll back to a previous Kubernetes version after an upgrade.
 

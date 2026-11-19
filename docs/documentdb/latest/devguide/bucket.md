@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/bucket.html
 ---
 
 # $bucket
-<a name="bucket"></a>
 
 New from version 8.0
 

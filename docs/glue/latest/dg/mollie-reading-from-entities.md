@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mollie-reading-from-entit
 ---
 
 # Reading from Mollie entities
-<a name="mollie-reading-from-entities"></a>
 
 **Prerequisites**
 

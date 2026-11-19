@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_G
 ---
 
 # GetDomainDeliverabilityCampaign
-<a name="API_GetDomainDeliverabilityCampaign"></a>
 
 Retrieve all the deliverability data for a specific campaign. This data is available for a campaign only if the campaign sent email by using a domain that the Deliverability dashboard is enabled for (`PutDeliverabilityDashboardOption` operation).
 

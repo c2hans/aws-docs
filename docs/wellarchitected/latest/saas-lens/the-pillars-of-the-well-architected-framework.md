@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/the-pil
 ---
 
 # Pillars of the Well-Architected Framework
-<a name="the-pillars-of-the-well-architected-framework"></a>
 
  This section describes each of the pillars, and includes definitions, best practices, questions, considerations, and key AWS services that are relevant when architecting solutions for multi-tenant SaaS applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space.html
 ---
 
 # Handling complex color space conversions
-<a name="color-space"></a>
 
 **Important**
 Read [Which section to read](#color-space-which-section) to determine if you should read this section.

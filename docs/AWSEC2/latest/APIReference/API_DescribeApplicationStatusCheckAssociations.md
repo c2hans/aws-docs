@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 ---
 
 # DescribeApplicationStatusCheckAssociations
-<a name="API_DescribeApplicationStatusCheckAssociations"></a>
 
 Describes the associations for one or more application status checks. For more information, see [Application status checks](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-application-status-checks.html). To avoid timeouts and retrieve complete results, use the pagination parameters.
 

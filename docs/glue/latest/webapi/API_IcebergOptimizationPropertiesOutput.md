@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergOptimizati
 ---
 
 # IcebergOptimizationPropertiesOutput
-<a name="API_IcebergOptimizationPropertiesOutput"></a>
 
 A structure that contains the output properties of Iceberg table optimization configuration for your catalog resource in the AWS Glue Data Catalog.
 

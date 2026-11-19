@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-odcr.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Control deployment of workloads into Capacity Reservations with EKS Auto Mode
-<a name="auto-odcr"></a>
 
 You can control the deployment of workloads onto [Capacity Reservations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservation-overview.html). EKS Auto Mode supports EC2 On-Demand Capacity Reservations (ODCRs), EC2 Capacity Blocks for ML, and Interruptible Capacity Reservations (IODCRs).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/launch-configuratio
 ---
 
 # Launch configuration errors
-<a name="launch-configuration-errors"></a>
 
 The following errors occur when launch configuration settings, IAM permissions, or resource limits prevent AWS Elastic Disaster Recovery from launching recovery instances.
 

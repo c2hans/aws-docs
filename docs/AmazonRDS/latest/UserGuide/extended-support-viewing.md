@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-supp
 ---
 
 # Viewing the enrollment of your DB instances or Multi-AZ DB clusters in Amazon RDS Extended Support
-<a name="extended-support-viewing"></a>
 
 You can view the enrollment of your DB instances or Multi-AZ DB clusters in RDS Extended Support using the AWS Management Console, the AWS CLI, or the RDS API.
 

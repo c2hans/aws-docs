@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/2120-sdp-video.
 ---
 
 # Format of an SDP file for video
-<a name="2120-sdp-video"></a>
 
 ```
 v=0

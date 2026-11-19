@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/security_iam_
 ---
 
 # Identity-based policy examples for AWS Continuum
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify AWS Continuum resources. An IAM administrator can grant these permissions through policies.
 

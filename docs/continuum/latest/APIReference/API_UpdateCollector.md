@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Update
 ---
 
 # UpdateCollector
-<a name="API_UpdateCollector"></a>
 
 Updates the customer-controlled mutable properties of a Collector. Only the name and Kubernetes cluster IAM role can be changed.
 

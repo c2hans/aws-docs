@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/q-supported-actions.html
 ---
 
 # Supported code generation abilities
-<a name="q-supported-actions"></a>
 
  The following are the combinations of the code generation abilities of Amazon Q data integration.
 

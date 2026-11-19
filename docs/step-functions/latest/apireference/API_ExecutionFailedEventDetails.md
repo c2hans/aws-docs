@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_E
 ---
 
 # ExecutionFailedEventDetails
-<a name="API_ExecutionFailedEventDetails"></a>
 
 Contains details about an execution failure event.
 

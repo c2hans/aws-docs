@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_By
 ---
 
 # ByteContentDoc
-<a name="API_agent_ByteContentDoc"></a>
 
 Contains information about content defined inline in bytes.
 

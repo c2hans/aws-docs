@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Chan
 ---
 
 # ChannelDestinationConfiguration
-<a name="API_ChannelDestinationConfiguration"></a>
 
 Object specifying a channel as a destination.
 

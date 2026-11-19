@@ -3,13 +3,12 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetL
 ---
 
 # GetLabelDetection
-<a name="API_GetLabelDetection"></a>
 
 Gets the label detection results of a Amazon Rekognition Video analysis started by [StartLabelDetection](API_StartLabelDetection.md).
 
 The label detection operation is started by a call to [StartLabelDetection](API_StartLabelDetection.md) which returns a job identifier (`JobId`). When the label detection operation finishes, Amazon Rekognition publishes a completion status to the Amazon Simple Notification Service topic registered in the initial call to `StartlabelDetection`.
 
-To get the results of the label detection operation, first check that the status value published to the Amazon SNS topic is `SUCCEEDED`. If so, call [GetLabelDetection](#API_GetLabelDetection) and pass the job identifier (`JobId`) from the initial call to `StartLabelDetection`.
+To get the results of the label detection operation, first check that the status value published to the Amazon SNS topic is `SUCCEEDED`. If so, call [GetLabelDetection](API_GetLabelDetection.md) and pass the job identifier (`JobId`) from the initial call to `StartLabelDetection`.
 
  `GetLabelDetection` returns an array of detected labels (`Labels`) sorted by the time the labels were detected. You can also sort by the label name by specifying `NAME` for the `SortBy` input parameter. If there is no `NAME` specified, the default sort is by timestamp.
 

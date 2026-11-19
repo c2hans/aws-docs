@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Bucket
 ---
 
 # S3BucketDestination
-<a name="API_control_S3BucketDestination"></a>
 
 A container for the bucket where the Amazon S3 Storage Lens metrics export files are located.
 

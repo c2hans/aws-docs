@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-join-scheduled-mee
 ---
 
 # Joining scheduled meetings
-<a name="chime-join-scheduled-meeting"></a>
 
 In Amazon Chime, you have a *scheduled meeting* when someone puts the meeting on a calendar and invites at least one attendee. If your administrator enables auto-calling, the meeting calls you just before it starts.
 

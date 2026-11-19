@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_MergeOperati
 ---
 
 # MergeOperation
-<a name="API_MergeOperation"></a>
 
 An operation that merges constructs from different segments into the target construct.
 

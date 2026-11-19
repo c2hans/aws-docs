@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Sen
 ---
 
 # SendWorkflowStepAction
-<a name="API_SendWorkflowStepAction"></a>
 
 Sends an action to a workflow step that has paused at a `WaitForAction` step, so that image creation can continue. To find the steps that are waiting for an action, call [ListWaitingWorkflowSteps](API_ListWaitingWorkflowSteps.md).
 

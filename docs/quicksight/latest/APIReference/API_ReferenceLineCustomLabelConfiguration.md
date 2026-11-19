@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refer
 ---
 
 # ReferenceLineCustomLabelConfiguration
-<a name="API_ReferenceLineCustomLabelConfiguration"></a>
 
 The configuration for a custom label on a `ReferenceLine`.
 

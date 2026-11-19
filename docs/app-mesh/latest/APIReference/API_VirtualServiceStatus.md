@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualServiceStatus
-<a name="API_VirtualServiceStatus"></a>
 
 An object that represents the status of a virtual service.
 

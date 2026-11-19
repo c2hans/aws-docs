@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Using the AWS CLI to set up Neptune ML on a DB cluster
-<a name="machine-learning-cluster-setup"></a>
 
 In addition to the CloudFormation quick-start template and the AWS Management Console, you can also set up Neptune ML using the AWS CLI.
 

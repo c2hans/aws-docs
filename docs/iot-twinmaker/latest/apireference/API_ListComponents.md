@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListComponents
-<a name="API_ListComponents"></a>
 
 This API lists the components of an entity.
 

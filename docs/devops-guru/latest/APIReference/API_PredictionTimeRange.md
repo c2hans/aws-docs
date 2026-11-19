@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Pred
 ---
 
 # PredictionTimeRange
-<a name="API_PredictionTimeRange"></a>
 
  The time range during which anomalous behavior in a proactive anomaly or an insight is expected to occur.
 

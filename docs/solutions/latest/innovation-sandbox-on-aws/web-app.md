@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Web application
-<a name="web-app"></a>
 
 ![Diagram showing the web UI and storage management components including CloudFront S3 WAF API Gateway and Lambda functions](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/web-app.drawio.png)
 

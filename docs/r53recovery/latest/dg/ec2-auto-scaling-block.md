@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/ec2-auto-scaling-b
 ---
 
 # Amazon EC2 Auto Scaling group execution block
-<a name="ec2-auto-scaling-block"></a>
 
 The EC2 Auto Scaling group execution block allows you to scale EC2 instances as part of your multi-Region recovery process. You can define a percentage of capacity, relative to the Region you're leaving (source and destination).
 

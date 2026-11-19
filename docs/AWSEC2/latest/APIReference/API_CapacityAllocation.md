@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityA
 ---
 
 # CapacityAllocation
-<a name="API_CapacityAllocation"></a>
 
 Information about instance capacity usage for a Capacity Reservation.
 

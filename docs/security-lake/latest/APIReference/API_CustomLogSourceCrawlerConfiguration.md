@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Cu
 ---
 
 # CustomLogSourceCrawlerConfiguration
-<a name="API_CustomLogSourceCrawlerConfiguration"></a>
 
 The configuration used for the Glue Crawler for a third-party custom source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDMSVPCManagementRole
-<a name="AmazonDMSVPCManagementRole"></a>
 
 **Description**: Provides access to manage VPC settings for AWS managed customer configurations
 

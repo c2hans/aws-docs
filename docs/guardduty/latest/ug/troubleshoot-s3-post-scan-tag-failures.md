@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/troubleshoot-s3-post
 ---
 
 # Troubleshooting S3 object post-scan tag failures in Malware Protection for S3
-<a name="troubleshoot-s3-post-scan-tag-failures"></a>
 
 This section applies to you only if you [Enable tagging for scanned objects](enable-malware-protection-s3-bucket.md#tag-scanned-objects-s3-malware-protection) in your protected bucket.
 

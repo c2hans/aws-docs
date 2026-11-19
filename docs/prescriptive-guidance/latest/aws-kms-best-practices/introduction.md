@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # AWS Key Management Service best practices
-<a name="introduction"></a>
 
 *Frank Phillis, Ken Beer, Zach Miller, Aviral Nigam, Peter M. O'Donnell, Patrick Palmer, Jeremy Stieglitz, and Dave Walker, Amazon Web Services*
 

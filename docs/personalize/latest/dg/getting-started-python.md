@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/getting-started-py
 ---
 
 # Getting started (SDK for Python (Boto3))
-<a name="getting-started-python"></a>
 
 This tutorial shows you how to complete the Amazon Personalize workflow from start to finish with the SDK for Python (Boto3).
 

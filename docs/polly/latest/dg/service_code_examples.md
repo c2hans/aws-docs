@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/service_code_examples.ht
 ---
 
 # Code examples for Amazon Polly using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Amazon Polly with an AWS software development kit (SDK).
 

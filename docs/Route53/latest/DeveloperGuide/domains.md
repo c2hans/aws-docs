@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domains.ht
 ---
 
 # .domains
-<a name="domains"></a>
 
 Used for information about domain names.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/appconfig-f
 ---
 
 # appconfig-freeform-profile-config-storage
-<a name="appconfig-freeform-profile-config-storage"></a>
 
 Checks if freeform configuration profiles for AWS AppConfig store their configuration data in AWS Secrets Manager or AWS AppConfig hosted configuration store. The rule is NON\_COMPLIANT if configuration.LocationUri is not secretsmanager or hosted.
 

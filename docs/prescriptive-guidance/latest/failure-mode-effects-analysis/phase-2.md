@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Phase 2: Process integration (weeks 3-4)
-<a name="phase-2"></a>
 
 With the foundation in place, weeks 3-4 embed FMEA into the sprint cycle itself. This means adding a dedicated risk analysis block to sprint planning, updating your definition of done to include mitigation requirements, and making risk status a regular part of standups. The goal is to make risk assessment a natural step in how the team plans and delivers work — not a separate activity bolted on afterward.
 

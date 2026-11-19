@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsApiG
 ---
 
 # AwsApiGatewayV2StageDetails
-<a name="API_AwsApiGatewayV2StageDetails"></a>
 
 Contains information about a version 2 stage for Amazon API Gateway.
 

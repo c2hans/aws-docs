@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-cost-op
 ---
 
 # Cost Optimization
-<a name="net-win-cost-optimization"></a>
 
 We recommend that you make cost optimization an on-going process. This is an extensive topic with many AWS services that help with budgeting, cost control, and proactive cost optimization recommendations.
 

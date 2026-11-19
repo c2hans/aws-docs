@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/writing-code.htm
 ---
 
 # Example pipeline resolver with Amazon DynamoDB
-<a name="writing-code"></a>
 
 Suppose you wanted to attach a pipeline resolver on a field named `getPost(id:ID!)` that returns a `Post` type from an Amazon DynamoDB data source with the following GraphQL query:
 

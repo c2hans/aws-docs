@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_G
 ---
 
 # GroundStationReservationListItem
-<a name="API_GroundStationReservationListItem"></a>
 
 Item in a list of ground station reservations.
 

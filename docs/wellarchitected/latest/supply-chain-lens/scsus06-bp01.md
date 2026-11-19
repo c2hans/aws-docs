@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSUS06-BP01 Enhance your data strategy and exchange capabilities with your trading partners
-<a name="scsus06-bp01"></a>
 
  Consider enhancing your data strategy and your data exchange capabilities with external parties and trading partners or providers to address compliance needs (for example, digital product passport, battery passport, and CO2 emissions reports) and to accelerate the path towards your sustainability targets.
 

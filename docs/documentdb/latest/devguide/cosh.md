@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/cosh.html
 ---
 
 # $cosh
-<a name="cosh"></a>
 
 New from version 8.0.1.
 

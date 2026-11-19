@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # RequestedServiceQuotaChange
-<a name="API_RequestedServiceQuotaChange"></a>
 
 Information about a quota increase request.
 

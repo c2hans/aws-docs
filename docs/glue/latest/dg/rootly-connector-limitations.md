@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rootly-connector-limitati
 ---
 
 # Limitations and notes for the Rootly connector
-<a name="rootly-connector-limitations"></a>
 
 The following are limitations and notes for the Rootly connector:
 + Rootly is supported as a source only. Writing to Rootly is not supported.

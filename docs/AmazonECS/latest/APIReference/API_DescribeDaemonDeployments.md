@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeDaemonDeployments
-<a name="API_DescribeDaemonDeployments"></a>
 
 Describes one or more of your daemon deployments.
 

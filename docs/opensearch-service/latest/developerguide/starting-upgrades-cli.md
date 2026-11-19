@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Upgrading a domain (CLI)
-<a name="starting-upgrades-cli"></a>
 
 You can use the following operations to identify the correct version of OpenSearch or Elasticsearch for your domain, start an in-place or clone-based upgrade, perform the pre-upgrade check, and view progress:
 + `get-compatible-versions` (`GetCompatibleVersions`)

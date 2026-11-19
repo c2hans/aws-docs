@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterSpecification
-<a name="API_HyperParameterSpecification"></a>
 
 Defines a hyperparameter to be used by an algorithm.
 

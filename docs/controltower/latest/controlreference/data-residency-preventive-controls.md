@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/dat
 ---
 
 # Data residency controls with preventive behavior
-<a name="data-residency-preventive-controls"></a>
 
 The following data residency controls have preventive behavior.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Operationalizing agentic AI on AWS
-<a name="introduction"></a>
 
 *Aaron Sempf, Brad Ryan, and Bhargs Srivathsan, Amazon Web Services*
 

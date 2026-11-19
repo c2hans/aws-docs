@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2V
 ---
 
 # AwsEc2VpcDetails
-<a name="API_AwsEc2VpcDetails"></a>
 
 Details about an EC2 VPC.
 

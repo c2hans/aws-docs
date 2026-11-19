@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Cr
 ---
 
 # CreateConfiguredAudienceModel
-<a name="API_CreateConfiguredAudienceModel"></a>
 
 Defines the information necessary to create a configured audience model.
 

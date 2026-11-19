@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Setting up Amazon OpenSearch Service
-<a name="setting-up"></a>
 
 ## Grant permissions
 <a name="setting-up-iam"></a>

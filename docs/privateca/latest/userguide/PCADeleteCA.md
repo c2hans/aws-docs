@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PCADeleteCA.h
 ---
 
 # Delete your private CA
-<a name="PCADeleteCA"></a>
 
 You can delete a private CA from the AWS Management Console or AWS CLI permanently. You might want to delete one, for example, to replace it with a new CA that has a new private key. In order to delete a CA safely, follow these steps:
 

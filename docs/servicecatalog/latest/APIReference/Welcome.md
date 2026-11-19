@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/Welco
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## AWS Service Catalog
 <a name="Welcome_AWS_Service_Catalog"></a>

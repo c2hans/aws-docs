@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_SamplingRuleUpdate.h
 ---
 
 # SamplingRuleUpdate
-<a name="API_SamplingRuleUpdate"></a>
 
 A document specifying changes to a sampling rule's configuration.
 

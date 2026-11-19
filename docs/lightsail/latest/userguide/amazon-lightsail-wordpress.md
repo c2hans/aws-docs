@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # WordPress
-<a name="amazon-lightsail-wordpress"></a>
 
 This section covers topics related to WordPress instances on Lightsail:
 
@@ -11,7 +10,7 @@ This section covers topics related to WordPress instances on Lightsail:
 + [Launch and configure a WordPress instance](amazon-lightsail-launch-and-configure-wordpress.md)
 + [Update software on your WordPress instance](amazon-lightsail-update-wordpress-software.md)
 + [Enable HTTPS on your WordPress instance with a Lightsail managed domain](amazon-lightsail-enabling-https-on-wordpress.md)
-+ [Enable HTTPS on your WordPress instance with a domain registered outside of Lightsail](amazon-lightsail-enabling-https-on-wordpress-thirdparty.md)
++ [Enabling HTTPS on a WordPress instance with a domain outside Lightsail](amazon-lightsail-enabling-https-on-wordpress-thirdparty.md)
 + [Enable HTTPS on your WordPress instance with Let's Encrypt and Certbot](amazon-lightsail-lets-encrypt-certbot-wordpress.md)
 + [Transfer WordPress data to a MySQL managed database in Lightsail](amazon-lightsail-connect-wordpress-to-mysql.md)
 + [Connect a Lightsail WordPress instance to an Amazon Aurora database](amazon-lightsail-connect-wordpress-to-aurora.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/credentials-and-config
 ---
 
 # Configuration basics
-<a name="credentials-and-configuration"></a>
 
 The Amazon DCV Session Manager CLI has a set of configuration parameters that the user can specify. The following parameters are required:
 + Broker URL

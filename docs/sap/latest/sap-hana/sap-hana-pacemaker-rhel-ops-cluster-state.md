@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # Viewing the cluster state
-<a name="sap-hana-pacemaker-rhel-ops-cluster-state"></a>
 
 **Topics**
 + [Operating system based](#_operating_system_based)

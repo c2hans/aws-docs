@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Babelfish temporary tables on read replicas
-<a name="babelfish-temp-tables-read-replicas"></a>
 
 Starting with **Babelfish 6.2.0** and **Babelfish 5.8.0**, Babelfish supports local temporary tables and table variables on Aurora PostgreSQL read replicas. With this support, SQL Server Management Studio (SSMS) and T-SQL applications that use temporary tables and table variables as intermediate scratch space can connect and operate normally against read replicas without any application changes.
 

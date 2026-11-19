@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/modify-vpc-attachment-tag
 ---
 
 # Modify VPC attachment tags in AWS Transit Gateway
-<a name="modify-vpc-attachment-tag"></a>
 
 **To modify your VPC attachment tags using the console**
 

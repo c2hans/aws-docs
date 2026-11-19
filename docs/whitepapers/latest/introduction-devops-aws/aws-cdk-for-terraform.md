@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # AWS Cloud Development Kit for Terraform
-<a name="aws-cdk-for-terraform"></a>
 
 Built on top of the open source [JSII library](https://aws.github.io/jsii/), [CDK for Terraform](https://developer.hashicorp.com/terraform/cdktf) (CDKTF) allows you to write Terraform configurations in your choice of C\#, Python, TypeScript, Java, or Go and still benefit from the full ecosystem of Terraform providers and modules. You can import any existing provider or module from the Terraform Registry into your application, and CDKTF will generate resource classes for you to interact with in your target programming language.
 

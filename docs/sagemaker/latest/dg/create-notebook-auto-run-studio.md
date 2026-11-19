@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/create-notebook-auto
 ---
 
 # Create a notebook job in Studio
-<a name="create-notebook-auto-run-studio"></a>
 
 **Note**
 The notebook scheduler is built from the Amazon EventBridge, SageMaker Training, and Pipelines services. If your notebook jobs fail, you might see errors related to these services. The following provides information on how to create a notebook job in the Studio UI.

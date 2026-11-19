@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle triggers and PostgreSQL trigger procedure
-<a name="chap-oracle-aurora-pg.tables.triggers"></a>
 
 With AWS DMS, you can migrate databases to AWS while replicating database code objects, such as triggers across source and target databases. Triggers are database objects that automatically run a defined procedure when an event occurs, such as inserting, updating, or deleting data in a table. Oracle triggers and PostgreSQL trigger procedures define the logic and actions to be performed when specific events occur in the database.
 

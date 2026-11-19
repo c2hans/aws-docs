@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Medic
 ---
 
 # MedicalTranscriptionSetting
-<a name="API_MedicalTranscriptionSetting"></a>
 
 Allows additional optional settings in your [StartMedicalTranscriptionJob](API_StartMedicalTranscriptionJob.md) request, including channel identification, alternative transcriptions, and speaker partitioning. You can use that to apply custom vocabularies to your medical transcription job.
 

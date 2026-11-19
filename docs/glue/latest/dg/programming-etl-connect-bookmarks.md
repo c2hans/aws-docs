@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/programming-etl-connect-b
 ---
 
 # Using job bookmarks
-<a name="programming-etl-connect-bookmarks"></a>
 
 AWS Glue for Spark uses job bookmarks to track data that has already been processed. For a summary of the job bookmarks feature and what it supports, see [Tracking processed data using job bookmarks](monitor-continuations.md). When programming a AWS Glue job with bookmarks, you have access to flexibility unavailable in visual jobs.
 +  When reading from JDBC, you can specify the column(s) to use as bookmark keys in your AWS Glue script.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_B
 ---
 
 # BatchDisassociateServiceActionFromProvisioningArtifact
-<a name="API_BatchDisassociateServiceActionFromProvisioningArtifact"></a>
 
 Disassociates a batch of self-service actions from the specified provisioning artifact.
 

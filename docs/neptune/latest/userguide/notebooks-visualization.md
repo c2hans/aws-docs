@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/notebooks-visua
 ---
 
 # Visualizing graph data in Amazon Neptune notebooks
-<a name="notebooks-visualization"></a>
 
 In many cases the Neptune workbench can create a visual diagram of your query results as well as returning them in tabular form. The graph visualization is available in the **Graph** tab in the query results whenever visualization is possible.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentSchedulingConfig
-<a name="API_InferenceComponentSchedulingConfig"></a>
 
 The scheduling configuration that determines how inference component copies are placed across available instances when copies are added or removed.
 

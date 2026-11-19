@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/security-data-encr
 ---
 
 # Data encryption
-<a name="security-data-encryption"></a>
 
 The following information explains where Amazon Rekognition uses data encryption to protect your data.
 

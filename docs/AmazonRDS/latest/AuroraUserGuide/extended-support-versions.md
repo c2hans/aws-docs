@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/extende
 ---
 
 # Versions with Amazon RDS Extended Support
-<a name="extended-support-versions"></a>
 
 RDS Extended Support is available for Aurora MySQL and for Aurora PostgreSQL. For more information, see [Amazon Aurora major versions](Aurora.VersionPolicy.Versioning.md#Aurora.VersionPolicy.MajorVersions).
 

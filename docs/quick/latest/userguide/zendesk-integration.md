@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/zendesk-integrati
 ---
 
 # Zendesk Suite integration
-<a name="zendesk-integration"></a>
 
 Manage your Zendesk support tickets directly from AWS Quick using natural language. With the Zendesk Suite connector, you can create, update, search, and list support tickets without leaving AWS Quick.
 

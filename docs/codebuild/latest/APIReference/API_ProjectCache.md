@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Projec
 ---
 
 # ProjectCache
-<a name="API_ProjectCache"></a>
 
 Information about the cache for the build project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/map_fun
 ---
 
 # MAP constructor function
-<a name="map_function"></a>
 
 The MAP constructor function creates a map with the given key/value pairs.
 

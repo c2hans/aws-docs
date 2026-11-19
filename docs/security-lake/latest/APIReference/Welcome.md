@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon Security Lake is a fully managed security data lake service. You can use Security Lake to automatically centralize security data from cloud, on-premises, and custom sources into a data lake that's stored in your AWS account. AWS Organizations is an account management service that lets you consolidate multiple AWS accounts into an organization that you create and centrally manage. With Organizations, you can create member accounts and invite existing accounts to join your organization. Security Lake helps you analyze security data for a more complete understanding of your security posture across the entire organization. It can also help you improve the protection of your workloads, applications, and data.
 
@@ -15,4 +14,4 @@ Security Lake automates the collection of security-related log and event data fr
 
 Other AWS services and third-party services can subscribe to the data that's stored in Security Lake for incident response and security data analytics.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

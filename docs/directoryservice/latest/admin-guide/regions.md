@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regi
 ---
 
 # Region availability for Directory Service
-<a name="regions"></a>
 
 The following table provides a list describing which Region-specific endpoints are supported by directory type.
 

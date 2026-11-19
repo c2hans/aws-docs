@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetBa
 ---
 
 # GetBackupVaultNotifications
-<a name="API_GetBackupVaultNotifications"></a>
 
 Returns event notifications for the specified backup vault.
 

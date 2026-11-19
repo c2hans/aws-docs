@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # DeleteToken
-<a name="API_DeleteToken"></a>
 
 Deletes the specified token. Must be called in the license home Region.
 

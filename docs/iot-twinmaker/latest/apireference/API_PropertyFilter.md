@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pr
 ---
 
 # PropertyFilter
-<a name="API_PropertyFilter"></a>
 
 An object that filters items returned by a property request.
 

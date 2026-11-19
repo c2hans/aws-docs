@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Relate
 ---
 
 # RelatedFindingGroupDetail
-<a name="API_RelatedFindingGroupDetail"></a>
 
 Details multiple activities as they related to a potential security event. Detective uses graph analysis technique that infers relationships between findings and entities, and groups them together as a finding group.
 

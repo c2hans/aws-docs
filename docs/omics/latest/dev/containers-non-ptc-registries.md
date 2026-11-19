@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/containers-non-ptc-regi
 ---
 
 # Using third-party registries not supported by pull through cache
-<a name="containers-non-ptc-registries"></a>
 
 Your workflow can use container images from upstream registries that Amazon ECR pull through cache (PTC) doesn't support. The first time a task from your run needs one of these images, HealthOmics copies it from the upstream registry into a private Amazon ECR repository in your account and starts the task from the copy. Later tasks and runs reuse the copy, so the download happens only once. If several runs need the same image at the same time, for example, runs in a batch, HealthOmics copies the image once and the runs wait for that copy. Your workflow definition keeps the original upstream image URIs, so you don't pull, push, or rewrite image URIs yourself.
 

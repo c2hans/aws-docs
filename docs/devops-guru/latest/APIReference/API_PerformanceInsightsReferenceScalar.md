@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Perf
 ---
 
 # PerformanceInsightsReferenceScalar
-<a name="API_PerformanceInsightsReferenceScalar"></a>
 
 A reference value to compare Performance Insights metrics against to determine if the metrics demonstrate anomalous behavior.
 

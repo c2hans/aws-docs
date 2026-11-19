@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/provisioning-user
 ---
 
 # Provisioning users for AWS Quick
-<a name="provisioning-users"></a>
 
 |  |
 | --- |

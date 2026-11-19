@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 ---
 
 # GPT-5.6 Terra
-<a name="model-card-openai-gpt-56-terra"></a>
 
 ## ![OpenAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — GPT-5.6 Terra
 <a name="model-card-openai-gpt-56-terra-header"></a>

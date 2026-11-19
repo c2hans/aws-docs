@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # WrappedWorkingKey
-<a name="API_WrappedWorkingKey"></a>
 
 The parameter information of the outgoing wrapped key block.
 

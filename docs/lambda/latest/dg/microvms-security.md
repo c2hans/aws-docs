@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/microvms-security.html
 ---
 
 # Security and permissions
-<a name="microvms-security"></a>
 
 This section describes the IAM roles, authentication tokens, and access controls for AWS Lambda MicroVMs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # MessageContent
-<a name="API_MessageContent"></a>
 
 The content of a conversation turn.
 

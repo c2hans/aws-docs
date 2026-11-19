@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RefreshCadence
-<a name="API_DataExports_RefreshCadence"></a>
 
 The cadence for AWS to update the data export in your S3 bucket.
 

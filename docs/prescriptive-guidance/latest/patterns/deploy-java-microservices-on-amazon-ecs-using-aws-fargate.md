@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Deploy Java microservices on Amazon ECS using AWS Fargate
-<a name="deploy-java-microservices-on-amazon-ecs-using-aws-fargate"></a>
 
 *Vijay Thompson and Sandeep Bondugula, Amazon Web Services*
 

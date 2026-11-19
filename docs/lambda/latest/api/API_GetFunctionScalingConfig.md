@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetFunctionScaling
 ---
 
 # GetFunctionScalingConfig
-<a name="API_GetFunctionScalingConfig"></a>
 
 Retrieves the scaling configuration for a Lambda Managed Instances function.
 

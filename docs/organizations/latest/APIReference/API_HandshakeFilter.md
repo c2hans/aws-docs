@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ha
 ---
 
 # HandshakeFilter
-<a name="API_HandshakeFilter"></a>
 
 Contains the filter used to select the handshakes for an operation.
 

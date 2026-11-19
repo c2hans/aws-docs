@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/config
 ---
 
 # Update a configuration bundle
-<a name="configuration-bundles-update"></a>
 
 Update a configuration bundle to create a new immutable version with changed configuration. Each update produces a new version ID; existing versions are never modified. Versions form a chain via `parentVersionIds`, similar to git commits.
 

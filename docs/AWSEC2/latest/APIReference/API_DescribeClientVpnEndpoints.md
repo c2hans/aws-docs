@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeClientVpnEndpoints
-<a name="API_DescribeClientVpnEndpoints"></a>
 
 Describes one or more Client VPN endpoints in the account.
 

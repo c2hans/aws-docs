@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_RdsProm
 ---
 
 # RdsPromoteReadReplicaConfiguration
-<a name="API_RdsPromoteReadReplicaConfiguration"></a>
 
 Configuration for promoting an Amazon RDS read replica to a standalone database instance during a Region switch.
 

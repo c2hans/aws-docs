@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # DeleteScheduleAction
-<a name="API_DeleteScheduleAction"></a>
 
 Deletes a schedule action from a feed. A deleted action never runs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceRo
 ---
 
 # ReplaceRoute
-<a name="API_ReplaceRoute"></a>
 
 Replaces an existing route within a route table in a VPC.
 

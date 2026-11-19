@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/reviews.ht
 ---
 
 # .reviews
-<a name="reviews"></a>
 
 Used by those who want give their opinions and read the comments of others.
 

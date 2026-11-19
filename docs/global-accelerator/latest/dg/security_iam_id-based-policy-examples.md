@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/security_ia
 ---
 
 # Identity-based policy examples for AWS Global Accelerator
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Global Accelerator resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateEnrollmentStatus
-<a name="API_CostOptimizationHub_UpdateEnrollmentStatus"></a>
 
 Updates the enrollment (opt in and opt out) status of an account to the Cost Optimization Hub service.
 

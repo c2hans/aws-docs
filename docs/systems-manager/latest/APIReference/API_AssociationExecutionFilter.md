@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AssociationExecutionFilter
-<a name="API_AssociationExecutionFilter"></a>
 
 Filters used in the request.
 

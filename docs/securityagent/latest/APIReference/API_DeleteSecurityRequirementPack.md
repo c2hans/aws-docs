@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeleteSecurityRequirementPack
-<a name="API_DeleteSecurityRequirementPack"></a>
 
 Deletes a customer managed security requirement pack and all its associated security requirements.
 

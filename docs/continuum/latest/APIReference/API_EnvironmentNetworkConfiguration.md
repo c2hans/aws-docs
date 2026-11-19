@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentNetworkConfiguration
-<a name="API_EnvironmentNetworkConfiguration"></a>
 
 Network policy for agent execution.
 

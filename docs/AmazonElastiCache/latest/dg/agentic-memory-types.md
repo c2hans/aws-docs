@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agentic-memo
 ---
 
 # Types of agentic memory
-<a name="agentic-memory-types"></a>
 
 ## Short-term memory
 <a name="agentic-memory-short-term"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.EC2.PV.4] Require that Amazon EBS direct APIs are not called
-<a name="ct-ec2-pv-4"></a>
 
 This control disallows usage of all EBS direct APIs.
 

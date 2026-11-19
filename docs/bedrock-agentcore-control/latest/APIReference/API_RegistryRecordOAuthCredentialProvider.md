@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RegistryRecordOAuthCredentialProvider
-<a name="API_RegistryRecordOAuthCredentialProvider"></a>
 
 OAuth credential provider configuration for authenticating with an external source during synchronization.
 

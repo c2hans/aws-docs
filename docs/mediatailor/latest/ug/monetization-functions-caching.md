@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Caching HTTP responses
-<a name="monetization-functions-caching"></a>
 
 By default, every time an `HTTP_REQUEST`, `AWS_SERVICE_REQUEST`, or `VAST_REQUEST` function runs, MediaTailor sends a request to the function's endpoint. When many viewers request the same data, such as content metadata for the ad break that they're all watching, this can multiply the request rate to your endpoint by the number of concurrent sessions.
 

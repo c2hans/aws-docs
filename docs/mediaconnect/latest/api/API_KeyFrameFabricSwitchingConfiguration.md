@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_KeyFrameFabr
 ---
 
 # KeyFrameFabricSwitchingConfiguration
-<a name="API_KeyFrameFabricSwitchingConfiguration"></a>
 
 The switching configuration where the router output waits for a key frame on the new router input before it switches.
 

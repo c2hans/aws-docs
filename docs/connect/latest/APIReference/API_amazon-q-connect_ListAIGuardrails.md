@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ListAIGuardrails
-<a name="API_amazon-q-connect_ListAIGuardrails"></a>
 
 Lists the AI Guardrails available on the Amazon Q in Connect assistant.
 

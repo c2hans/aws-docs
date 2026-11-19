@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Tools for migrating to the AWS Cloud
-<a name="introduction"></a>
 
 *David Ninnis, Amazon Web Services*
 

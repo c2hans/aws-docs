@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PassthroughTargetConfiguration
-<a name="API_PassthroughTargetConfiguration"></a>
 
 The configuration for an HTTP passthrough target. A passthrough target forwards requests directly to an external HTTP endpoint.
 

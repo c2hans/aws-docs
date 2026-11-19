@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Datas
 ---
 
 # DatasetEntityRecognizerInputDataConfig
-<a name="API_DatasetEntityRecognizerInputDataConfig"></a>
 
 Specifies the format and location of the input data. You must provide either the `Annotations` parameter or the `EntityList` parameter.
 

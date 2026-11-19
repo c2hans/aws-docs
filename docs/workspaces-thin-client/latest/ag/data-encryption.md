@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/data-en
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/workspacesthinclient-end-of-support.html).
 
 # Data encryption
-<a name="data-encryption"></a>
 
 WorkSpaces Thin Client collects environment and device customization data, such as user settings, device identifiers, identity provider information, and streaming desktop identifiers. WorkSpaces Thin Client also collects session timestamps. Collected data is stored in Amazon DynamoDB and Amazon S3. WorkSpaces Thin Client uses AWS Key Management Service (KMS) for encryption.
 

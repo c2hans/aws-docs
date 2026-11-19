@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Amazon Titan Embeddings G1 - Text
-<a name="model-parameters-titan-embed-text"></a>
 
 Titan Embeddings G1 - Text does not support the use of inference parameters. The following sections detail the request and response formats and provides a code example.
 

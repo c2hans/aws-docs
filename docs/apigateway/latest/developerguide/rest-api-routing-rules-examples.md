@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Examples of how API Gateway evaluates routing rules
-<a name="rest-api-routing-rules-examples"></a>
 
 The following section shows four examples of how API Gateway evaluates routing rules and API mappings.
 

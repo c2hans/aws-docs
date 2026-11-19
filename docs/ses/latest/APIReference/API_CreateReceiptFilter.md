@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateReceip
 ---
 
 # CreateReceiptFilter
-<a name="API_CreateReceiptFilter"></a>
 
 Creates a new IP address filter.
 

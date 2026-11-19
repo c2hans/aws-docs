@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ContactTargetInfo
-<a name="API_SSMContacts_ContactTargetInfo"></a>
 
 The contact that Incident Manager is engaging during an incident.
 

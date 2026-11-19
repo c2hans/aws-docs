@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/produ
 ---
 
 # Product
-<a name="product"></a>
 
 This section lists the data entities within the product category.
 

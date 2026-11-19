@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET: Get Attributes of a Router Output
-<a name="set-up-router-outputs-get-attributes"></a>
 
 Get the attributes of the specified output on the specified router.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # 4. Using Logstash
-<a name="logstash"></a>
 
 [Logstash](https://www.elastic.co/guide/en/logstash/current/index.html) is an open-source data processing tool that can collect data from the source, perform transformation or filtering, and send data to one or more destinations. To write data to the Amazon OpenSearch Service domain, Logstash provides the following plugins:
 + logstash-input-elasticsearch

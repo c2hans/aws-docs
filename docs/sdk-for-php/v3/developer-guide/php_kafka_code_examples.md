@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_kafka
 ---
 
 # Amazon MSK examples using SDK for PHP
-<a name="php_kafka_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with Amazon MSK.
 

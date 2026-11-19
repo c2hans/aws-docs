@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with security groups in Amazon EC2
-<a name="examples-ec2-security-groups"></a>
 
 ## Create a security group
 <a name="create-a-security-group"></a>

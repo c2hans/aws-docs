@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetGroup.htm
 ---
 
 # GetGroup
-<a name="API_GetGroup"></a>
 
  Returns a list of IAM users that are in the specified IAM group. You can paginate the results using the `MaxItems` and `Marker` parameters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/location-index
 ---
 
 # Getting started tutorial
-<a name="location-indexing-tutorial"></a>
 
 This tutorial demonstrates how to use [fleet indexing](iot-indexing.md) to [index your location data](location-indexing-geoquery.md). For simplicity, you create a thing to represent your device and store the location data in a named shadow, update thing indexing configuration for location indexing, and run example geoqueries to search for devices within a radial boundary.
 

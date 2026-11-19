@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations
 ---
 
 # Integration with other AWS services
-<a name="integrations-aws"></a>
 
 CodeDeploy is integrated with the following AWS services:
 

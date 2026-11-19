@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ApiParameter
-<a name="API_agent-runtime_ApiParameter"></a>
 
 Information about a parameter to provide to the API request.
 

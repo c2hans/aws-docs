@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_EnableTopicR
 ---
 
 # EnableTopicRule
-<a name="API_EnableTopicRule"></a>
 
 Enables the rule.
 

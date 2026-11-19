@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeListenerAttributes
-<a name="API_DescribeListenerAttributes"></a>
 
 Describes the attributes for the specified listener.
 

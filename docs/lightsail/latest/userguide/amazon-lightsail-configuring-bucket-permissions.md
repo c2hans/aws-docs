@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Manage Lightsail bucket access permissions for enhanced security
-<a name="amazon-lightsail-configuring-bucket-permissions"></a>
 
 Use bucket access permissions to control public (unauthenticated) read-only access to objects in a bucket. You can make a bucket private or public (read-only). You can also make a bucket private, while having the option to make individual objects public (read-only).
 

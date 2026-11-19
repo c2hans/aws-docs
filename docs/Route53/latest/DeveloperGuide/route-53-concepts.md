@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53-c
 ---
 
 # Amazon Route 53 concepts
-<a name="route-53-concepts"></a>
 
 Here's an overview of the concepts that are discussed throughout the *Amazon Route 53 Developer Guide*.
 

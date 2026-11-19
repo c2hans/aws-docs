@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDAPERF01-BP02 Compress, sample and summarize data at edge, before sending to the cloud environment
-<a name="midaperf01-bp02."></a>
 
  In manufacturing environments, IoT devices and sensors often generate massive volumes of high-frequency data that can overwhelm networking, processing, and storage resources.
 

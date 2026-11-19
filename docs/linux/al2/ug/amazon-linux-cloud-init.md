@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/amazon-linux-cloud-init.htm
 ---
 
 # Using cloud-init on AL2
-<a name="amazon-linux-cloud-init"></a>
 
 The cloud-init package is an open-source application built by Canonical that is used to bootstrap Linux images in a cloud computing environment, such as Amazon EC2. Amazon Linux contains a customized version of cloud-init. This allows you to specify actions that should happen to your instance at boot time. You can pass desired actions to cloud-init through the user data fields when launching an instance. This means you can use common AMIs for many use cases and configure them dynamically at startup. Amazon Linux also uses cloud-init to perform initial configuration of the ec2-user account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Evaluate SQL Server on Linux
-<a name="sql-server-linux"></a>
 
 ## Overview
 <a name="sql-server-linux-overview"></a>

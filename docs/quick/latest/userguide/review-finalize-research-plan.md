@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/review-finalize-r
 ---
 
 # Review and finalize research plan
-<a name="review-finalize-research-plan"></a>
 
 Before Quick Research begins gathering and analyzing information, you have the opportunity to review and refine your research plan. This step helps ensure that the research will meet your specific needs and expectations.
 

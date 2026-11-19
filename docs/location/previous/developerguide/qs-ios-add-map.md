@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios-
 ---
 
 # Add an Amazon Location interactive map to your application
-<a name="qs-ios-add-map"></a>
 
 You will now add the map control to your application. This tutorial uses MapLibre and the AWS API for managing the map view in the application. The map control itself is part of the [MapLibre GL Native iOS](https://docs.maptiler.com/maplibre-gl-native-ios/) library.
 

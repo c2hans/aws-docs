@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LookupTable
-<a name="API_LookupTable"></a>
 
 Contains metadata about a lookup table returned by `DescribeLookupTables`.
 

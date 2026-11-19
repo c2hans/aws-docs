@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/detailed-billing.ht
 ---
 
 # Using Detailed Billing Reports
-<a name="detailed-billing"></a>
 
 **Important**
 The Detailed Billing Reports feature is unavailable for new customers as of July 8, 2019.

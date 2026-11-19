@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/archive-inves
 ---
 
 # Archiving a Detective Investigations report
-<a name="archive-investigation"></a>
 
 When you complete your investigation in Amazon Detective, you can **Archive** the investigation report. An archived investigation indicates you have completed reviewing the investigation.
 

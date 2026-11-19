@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/create-vpn-connection.
 ---
 
 # Create an AWS Site-to-Site VPN connection
-<a name="create-vpn-connection"></a>
 
 You can create Site-to-Site VPN connections that attach to transit gateways or Cloud WAN global networks. Both attachment types support IPv4 and IPv6 protocols and can optionally use Site-to-Site VPN Concentrators for connecting multiple remote sites cost-effectively.
 

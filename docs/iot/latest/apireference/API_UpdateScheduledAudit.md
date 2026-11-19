@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateSchedu
 ---
 
 # UpdateScheduledAudit
-<a name="API_UpdateScheduledAudit"></a>
 
 Updates a scheduled audit, including which checks are performed and how often the audit takes place.
 

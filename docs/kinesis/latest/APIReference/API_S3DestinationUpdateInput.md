@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_S3Destin
 ---
 
 # S3DestinationUpdateInput
-<a name="API_S3DestinationUpdateInput"></a>
 
 The updated configuration for a general purpose Amazon S3 destination. Used in [UpdateChannel](API_UpdateChannel.md). Only `DataFreshnessInSeconds` can be updated.
 

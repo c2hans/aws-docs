@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Worksp
 ---
 
 # WorkspaceSettings
-<a name="API_WorkspaceSettings"></a>
 
 The workspace settings for the SageMaker Canvas application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_SampledHTTPR
 ---
 
 # SampledHTTPRequest
-<a name="API_SampledHTTPRequest"></a>
 
 Represents a single sampled web request. The response from [GetSampledRequests](API_GetSampledRequests.md) includes a `SampledHTTPRequests` complex type that appears as `SampledRequests` in the response syntax. `SampledHTTPRequests` contains an array of `SampledHTTPRequest` objects.
 

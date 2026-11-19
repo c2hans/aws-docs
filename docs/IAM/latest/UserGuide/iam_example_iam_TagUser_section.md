@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Tag
 ---
 
 # Use `TagUser` with a CLI
-<a name="iam_example_iam_TagUser_section"></a>
 
 The following code examples show how to use `TagUser`.
 

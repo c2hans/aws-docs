@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/userguide/message-delete.ht
 This guide provides documentation for AWS Wickr. For Wickr Enterprise, which is the on-premises version of Wickr, see [Enterprise Administration Guide](https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/what-is-wickr.html).
 
 # Delete messages and data in the Wickr client
-<a name="message-delete"></a>
 
 You can delete messages and data that you've exchanged with another Wickr user.
 

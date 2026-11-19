@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/what-is.html
 ---
 
 # What is the Amazon DCV Web Client SDK?
-<a name="what-is"></a>
 
 **Note**
 Amazon DCV was previously known as NICE DCV.

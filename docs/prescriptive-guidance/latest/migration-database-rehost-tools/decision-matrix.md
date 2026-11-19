@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Decision matrix
-<a name="decision-matrix"></a>
 
 Although each migration is unique and has its own challenges, limitations, and multiple factors to consider, there are common criteria that you can use to identify the most appropriate migration strategy and service for your use case. Identifying and prioritizing these factors help you narrow down the choice. Use the following table as a decision tree: Start from the most important factor for your use case and choose the best tool for your migration.
 

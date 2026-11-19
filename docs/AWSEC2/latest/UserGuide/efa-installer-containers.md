@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-installer-co
 ---
 
 # Install the EFA software in a container
-<a name="efa-installer-containers"></a>
 
 This section covers how to use the EFA installer in a containerized environment. You can install the EFA software either by adding commands to a Dockerfile or by running them directly in the shell of a running container.
 

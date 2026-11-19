@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/managing-fleet
 ---
 
 # Managing fleet metrics
-<a name="managing-fleet-metrics"></a>
 
 This topic shows how to use the AWS IoT console and AWS CLI to manage your fleet metrics.
 

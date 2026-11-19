@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_AutoScalingDescript
 ---
 
 # AutoScalingDescription
-<a name="API_AutoScalingDescription"></a>
 
 Information about the auto scaling parameters for the connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/mediapackage-integ
 ---
 
 # Integrate MediaTailor with MediaPackage and CDN
-<a name="mediapackage-integration"></a>
 
 AWS Elemental MediaTailor integrates with AWS Elemental MediaPackage to deliver personalized video ads through a content delivery network (CDN). MediaPackage is a just-in-time video packaging and origination service that prepares and protects your video content for delivery over the internet. It takes your live or on-demand video content and packages it into streaming formats like HLS and DASH, making it ready for viewers on various devices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengr
 ---
 
 # Golden image procedure
-<a name="procedure"></a>
 
 The following sections describe the procedure for creating a golden image and writing that image to each device on the production line.
 

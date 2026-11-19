@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-func
 ---
 
 # User-defined Function API
-<a name="aws-glue-api-catalog-functions"></a>
 
 The User-defined Function API describes AWS Glue data types and operations used in working with functions.
 

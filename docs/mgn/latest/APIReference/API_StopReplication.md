@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StopReplicat
 ---
 
 # StopReplication
-<a name="API_StopReplication"></a>
 
 Stop Replication.
 

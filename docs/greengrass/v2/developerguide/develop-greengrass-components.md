@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/develop-gre
 ---
 
 # Develop AWS IoT Greengrass components
-<a name="develop-greengrass-components"></a>
 
 You can develop and test components on your Greengrass core device. As a result, you can create and iterate your AWS IoT Greengrass software without interacting with the AWS Cloud. When you finish a version of your component, you can upload it to AWS IoT Greengrass in the cloud, so you and your team can deploy the component to other devices in your fleet. For more information about how to deploy components, see [Deploy AWS IoT Greengrass components to devices](manage-deployments.md).
 

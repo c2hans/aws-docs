@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/get-starte
 ---
 
 # Connect Active Directory and specify a user
-<a name="get-started-connect-id-source-ad-idp-specify-user"></a>
 
 If you are already using Active Directory, the following topics will help you prepare to connect your directory to IAM Identity Center.
 

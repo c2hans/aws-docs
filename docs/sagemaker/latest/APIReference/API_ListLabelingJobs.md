@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListLa
 ---
 
 # ListLabelingJobs
-<a name="API_ListLabelingJobs"></a>
 
 Gets a list of labeling jobs.
 

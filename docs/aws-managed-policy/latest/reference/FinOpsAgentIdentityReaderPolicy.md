@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinO
 ---
 
 # FinOpsAgentIdentityReaderPolicy
-<a name="FinOpsAgentIdentityReaderPolicy"></a>
 
 **Description**: Provides permissions required by AWS FinOps Agent to read IAM Identity Center user and group information and check group membership for agent access
 

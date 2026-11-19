@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetFunctionEventIn
 ---
 
 # GetFunctionEventInvokeConfig
-<a name="API_GetFunctionEventInvokeConfig"></a>
 
 Retrieves the configuration for asynchronous invocation for a function, version, or alias.
 

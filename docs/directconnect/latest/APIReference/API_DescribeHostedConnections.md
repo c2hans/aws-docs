@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeHostedConnections
-<a name="API_DescribeHostedConnections"></a>
 
 Lists the hosted connections that have been provisioned on the specified interconnect or link aggregation group (LAG).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteOptionGroup
-<a name="API_DeleteOptionGroup"></a>
 
 Deletes an existing option group.
 

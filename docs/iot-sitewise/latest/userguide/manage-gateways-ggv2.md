@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/manage-gat
 ---
 
 # Manage SiteWise Edge gateways
-<a name="manage-gateways-ggv2"></a>
 
 You can use the AWS IoT SiteWise console and API operations to manage AWS IoT SiteWise Edge gateways. You can also use the [AWS OpsHub for AWS IoT SiteWise for Windows](https://aws-iot-sitewise.s3.amazonaws.com/gateway/OpsHub+for+AWS+IoT+SiteWise.exe) application to manage some aspects of your SiteWise Edge gateway from your local device.
 

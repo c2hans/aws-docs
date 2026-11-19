@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/configuration-overrides.ht
 ---
 
 # Using configuration overrides in Amazon SES
-<a name="configuration-overrides"></a>
 
 Most settings that control how Amazon SES processes your email are defined before you send it, at the account level or in a configuration set. That works well for settings that are stable across a mail stream, but not for settings that change from one recipient to the next. For example, tracking consent is one such setting: whether a recipient has agreed to open and click tracking is a decision that belongs to the recipient, not to your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/scaling-ama
 ---
 
 # Compute scaling
-<a name="compute-scaling"></a>
 
 Compute scaling is a critical component to application performance in a dynamic Kubernetes environment. Kubernetes reduces waste through the dynamic adjustment of computing resources (such as CPU and memory) in response to real-time demand. This capability helps to avoid over- or under-provisioning, which can also save operating expenses. Kubernetes effectively eliminates the need for manual intervention by enabling the infrastructure to automatically scale up during peak hours and down during off-peak periods.
 

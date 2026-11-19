@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamInter
 ---
 
 # IpamInternetRegistryAssociationAsn
-<a name="API_IpamInternetRegistryAssociationAsn"></a>
 
 Contains information about an Autonomous System Number (ASN) registered at an internet registry and associated with an IPAM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ModelDat
 ---
 
 # ModelDataSource
-<a name="API_ModelDataSource"></a>
 
 The data source of the model to import.
 

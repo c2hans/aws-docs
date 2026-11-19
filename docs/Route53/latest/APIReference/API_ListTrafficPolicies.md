@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTraf
 ---
 
 # ListTrafficPolicies
-<a name="API_ListTrafficPolicies"></a>
 
 Gets information about the latest version for every traffic policy that is associated with the current AWS account. Policies are listed in the order that they were created in.
 

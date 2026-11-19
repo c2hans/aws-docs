@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/phone-number-r
 ---
 
 # Region requirements for ordering and porting phone numbers in Connect Customer
-<a name="phone-number-requirements"></a>
 
 Country or region regulations often require a local office address and specific identification documents to purchase and own a phone number. The address that you provide can be the business or personal address where the phone numbers are used.
 

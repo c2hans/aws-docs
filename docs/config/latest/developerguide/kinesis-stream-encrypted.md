@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/kinesis-str
 ---
 
 # kinesis-stream-encrypted
-<a name="kinesis-stream-encrypted"></a>
 
 Checks if Amazon Kinesis streams are encrypted at rest with server-side encryption. The rule is NON\_COMPLIANT for a Kinesis stream if 'StreamEncryption' is not present.
 

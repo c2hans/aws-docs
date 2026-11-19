@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Restrict access to an AWS Lambda Web Function origin
-<a name="private-content-restricting-access-to-lambda-web"></a>
 
 You can use origin access control (OAC) to restrict access to an AWS Lambda Web Function origin. A Lambda Web Function provides its own regional or global HTTPS endpoint, which you use as the origin domain for your CloudFront distribution. For more information about Lambda Web Functions, see [AWS Lambda Web Functions](https://docs.aws.amazon.com/lambda/latest/dg/web-functions.html) in the *AWS Lambda Developer Guide*.
 

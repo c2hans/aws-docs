@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Usag
 ---
 
 # UsageMetric
-<a name="API_UsageMetric"></a>
 
 Represents a usage metric with its configured limit and current usage value.
 

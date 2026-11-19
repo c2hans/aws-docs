@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_A
 ---
 
 # AddObjectInput
-<a name="API_AddObjectInput"></a>
 
 A new object to add to the governed table.
 

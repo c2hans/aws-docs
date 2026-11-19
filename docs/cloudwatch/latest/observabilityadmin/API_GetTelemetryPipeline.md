@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # GetTelemetryPipeline
-<a name="API_GetTelemetryPipeline"></a>
 
 Retrieves information about a specific telemetry pipeline, including its configuration, status, and metadata.
 

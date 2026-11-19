@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSServiceRolePolicy
-<a name="AmazonEKSServiceRolePolicy"></a>
 
 **Description**: A Service-Linked Role required for Amazon EKS to call AWS services on your behalf.
 

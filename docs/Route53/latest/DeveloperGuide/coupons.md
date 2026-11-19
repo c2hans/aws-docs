@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/coupons.ht
 ---
 
 # .coupons
-<a name="coupons"></a>
 
 Used by retailers and manufacturers that provide online coupons and coupon codes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Thres
 ---
 
 # ThresholdAlertsConfigurations
-<a name="API_ThresholdAlertsConfigurations"></a>
 
 The threshold alerts configuration for an embedded Quick Sight dashboard.
 

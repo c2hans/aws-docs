@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/dynatrace.ht
 ---
 
 # Dynatrace
-<a name="dynatrace"></a>
 
 The Dynatrace® Platform combines broad and deep observability and continuous runtime application security with advanced AIOps to provide answers and intelligent automation from data. This enables innovators to modernize and automate cloud operations, deliver software faster and more securely, and ensure flawless digital experiences.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Volum
 ---
 
 # VolumeConfig
-<a name="API_VolumeConfig"></a>
 
 Configuration for the root volume of fleet instances and image builders. This allows you to customize the storage capacity beyond the default 200 GB.
 

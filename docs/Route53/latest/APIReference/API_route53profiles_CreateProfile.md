@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # CreateProfile
-<a name="API_route53profiles_CreateProfile"></a>
 
  Creates an empty Route 53 Profile.
 

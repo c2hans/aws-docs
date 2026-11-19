@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3outposts_ListE
 ---
 
 # ListEndpoints
-<a name="API_s3outposts_ListEndpoints"></a>
 
 Lists endpoints associated with the specified Outpost.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AppSi
 ---
 
 # Metrics collected by Application Signals
-<a name="AppSignals-MetricsCollected"></a>
 
 Application Signals collects both [standard application metrics](#AppSignals-StandardMetrics) and [runtime metrics](#AppSignals-StandardMetrics) from the applications that you enable it for.
 

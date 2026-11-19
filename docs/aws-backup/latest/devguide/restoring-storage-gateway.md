@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-sto
 ---
 
 # Restore a Storage Gateway volume
-<a name="restoring-storage-gateway"></a>
 
 If you are restoring an AWS Storage Gateway volume snapshot, you can choose to restore the snapshot as an Storage Gateway volume or as an Amazon EBS volume. This is because AWS Backup integrates with both services, and any Storage Gateway snapshot can be restored to either an Storage Gateway volume or an Amazon EBS volume.
 

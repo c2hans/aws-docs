@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_LaunchConfig
 ---
 
 # LaunchConfigurationTemplate
-<a name="API_LaunchConfigurationTemplate"></a>
 
 ## Contents
 <a name="API_LaunchConfigurationTemplate_Contents"></a>

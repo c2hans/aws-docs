@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon Interactive Video Service Chat
-<a name="list_ivschat"></a>
 
 Amazon Interactive Video Service Chat (service prefix: `ivschat`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Identify datasets
-<a name="raidp01"></a>
 
 | RAIDP01: How will you identify which datasets are needed to evaluate, train, and operate your AI system? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tag-resour
 ---
 
 # Tagging resources
-<a name="tag-resources"></a>
 
 A *tag* is a custom attribute label that you or AWS assigns to an AWS resource. Each AWS tag has two parts:
 + A *tag key* (for example, `CostCenter`, `Environment`, `Project`, or `Secret`). Tag keys are case sensitive.

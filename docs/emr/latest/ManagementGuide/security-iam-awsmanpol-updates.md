@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/security-iam-
 ---
 
 # Amazon EMR updates to AWS managed policies
-<a name="security-iam-awsmanpol-updates"></a>
 
 View details about updates to AWS managed policies for Amazon EMR since this service began tracking these changes.
 

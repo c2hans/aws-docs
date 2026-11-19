@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_W
 ---
 
 # WorkerCapabilities
-<a name="API_WorkerCapabilities"></a>
 
 The details for worker capabilities.
 

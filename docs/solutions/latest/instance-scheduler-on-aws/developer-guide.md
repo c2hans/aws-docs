@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
 This section provides the source code for the solution and list the sections added here and include links to each subtopic.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateE
 ---
 
 # CreateEndpointAccess
-<a name="API_CreateEndpointAccess"></a>
 
 Creates a Redshift-managed VPC endpoint.
 

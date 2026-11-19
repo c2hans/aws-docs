@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/delete-dataset.htm
 ---
 
 # Deleting a dataset to delete all of its data
-<a name="delete-dataset"></a>
 
 To delete all of the data in a dataset, you delete the dataset. You can delete a dataset with the Amazon Personalize console, AWS Command Line Interface (AWS CLI), or AWS SDKs. Before you delete a dataset, note the following:
 + You must delete all filters before deleting any dataset.

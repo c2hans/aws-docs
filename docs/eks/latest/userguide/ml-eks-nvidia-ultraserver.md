@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ml-eks-nvidia-ultra
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Use P6e-GB200 UltraServers with Amazon EKS
-<a name="ml-eks-nvidia-ultraserver"></a>
 
 This topic describes how to configure and use Amazon EKS with P6e-GB200 UltraServers. The `p6e-gb200.36xlarge` instance type with 4 NVIDIA Blackwell GPUs is only available as P6e-GB200 UltraServers. There are two types of P6e-GB200 UltraServers. The `u-p6e-gb200x36` UltraServer has 9 `p6e-gb200.36xlarge` instances and the `u-p6e-gb200x72` UltraServer has 18 `p6e-gb200.36xlarge` instances.
 

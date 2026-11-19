@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCREL05-BP03 Maintain high availability during on-premises maintenance activities
-<a name="drhcrel05-bp03"></a>
 
  AWS Outposts hardware failures require proactive management through EC2 retirement notifications and automated failover mechanisms.
 

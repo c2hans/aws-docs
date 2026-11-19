@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetJobError
-<a name="API_BatchGetJobError"></a>
 
 The error details for a job that could not be retrieved in a batch get operation.
 

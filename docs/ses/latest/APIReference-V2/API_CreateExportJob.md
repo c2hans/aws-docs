@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExp
 ---
 
 # CreateExportJob
-<a name="API_CreateExportJob"></a>
 
 Creates an export job for a data source and destination.
 

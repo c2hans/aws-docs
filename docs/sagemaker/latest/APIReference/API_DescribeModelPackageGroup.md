@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeModelPackageGroup
-<a name="API_DescribeModelPackageGroup"></a>
 
 Gets a description for the specified model group.
 

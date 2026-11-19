@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PaginationConfigu
 ---
 
 # PaginationConfiguration
-<a name="API_PaginationConfiguration"></a>
 
 Configuration that defines how to handle paginated responses from REST APIs, supporting different pagination strategies used by various services.
 

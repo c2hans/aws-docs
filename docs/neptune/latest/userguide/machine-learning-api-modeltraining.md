@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Model training using the `modeltraining` command
-<a name="machine-learning-api-modeltraining"></a>
 
 You use the Neptune ML `modeltraining` command to create a model training job, check its status, stop it, or list all active model-training jobs.
 

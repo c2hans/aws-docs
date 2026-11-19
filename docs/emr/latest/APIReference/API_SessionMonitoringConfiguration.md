@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SessionMonit
 ---
 
 # SessionMonitoringConfiguration
-<a name="API_SessionMonitoringConfiguration"></a>
 
 The monitoring configuration for a session. Controls where session logs are published.
 

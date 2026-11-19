@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agen
 ---
 
 # Amazon ECS EC2 Container Instances
-<a name="ecs-agent-versions"></a>
 
 The Amazon ECS agent is a process that runs on every container instance that is registered with your cluster. It facilitates the communication between your container instances and Amazon ECS.
 

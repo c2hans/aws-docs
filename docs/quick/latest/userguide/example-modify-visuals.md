@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/example-modify-vi
 ---
 
 # Tutorial: Modify AWS Quick Sight visuals
-<a name="example-modify-visuals"></a>
 
 Use the following procedures to modify the visuals that you created using the procedures in [Tutorial: Create an AWS Quick Sight analysis](example-create-an-analysis.md).
 

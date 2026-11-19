@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeSessions
-<a name="API_DescribeSessions"></a>
 
 Retrieves a list of all active sessions (both connected and disconnected) or terminated sessions from the past 30 days.
 

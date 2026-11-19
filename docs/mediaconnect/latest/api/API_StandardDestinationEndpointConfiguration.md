@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardDest
 ---
 
 # StandardDestinationEndpointConfiguration
-<a name="API_StandardDestinationEndpointConfiguration"></a>
 
 The configuration settings for a standard destination endpoint.
 

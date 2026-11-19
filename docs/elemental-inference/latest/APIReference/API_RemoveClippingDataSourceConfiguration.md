@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # RemoveClippingDataSourceConfiguration
-<a name="API_RemoveClippingDataSourceConfiguration"></a>
 
 Removes the game from an event clipping output at the action's scheduled time. This is a type of ScheduleActionOperation, and the output must be an event clipping output.
 

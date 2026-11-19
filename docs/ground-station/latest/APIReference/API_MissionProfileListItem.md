@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_M
 ---
 
 # MissionProfileListItem
-<a name="API_MissionProfileListItem"></a>
 
 Item in a list of mission profiles.
 

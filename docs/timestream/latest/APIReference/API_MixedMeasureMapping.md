@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Mixed
 ---
 
 # MixedMeasureMapping
-<a name="API_MixedMeasureMapping"></a>
 
 ## Contents
 <a name="API_MixedMeasureMapping_Contents"></a>

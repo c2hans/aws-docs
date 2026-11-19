@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/metrics
 ---
 
 # View API Gateway metrics in the CloudWatch console
-<a name="metrics_dimensions_view_in_cloud_watch"></a>
 
 Metrics are grouped first by the service namespace, and then by the various dimension combinations within each namespace. To view the metrics at the method-level for your API, turn on detailed metrics. For more information, see [Modify stage settings](set-up-stages.md#how-to-stage-settings).
 

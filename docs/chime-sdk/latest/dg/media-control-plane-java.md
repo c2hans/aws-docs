@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/media-control-plane-
 ---
 
 # Understanding the Amazon Chime SDK media control plane
-<a name="media-control-plane-java"></a>
 
 The Amazon Chime SDK media control plane is global – hosted out of us-east-1 – and serves the [chime:CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateMeeting.html) and [chime:CreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meeting-chime_CreateAttendee.html) APIs used to create and manage meeting and attendee resources across the data plane. It validates credentials and ensures the session is bootstrapped in the data plane in the requested region.
 

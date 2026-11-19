@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_MemberGro
 ---
 
 # MemberGroup
-<a name="API_MemberGroup"></a>
 
 The sub groups that belong to a group.
 

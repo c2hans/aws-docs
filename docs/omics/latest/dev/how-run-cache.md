@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/how-run-cache.html
 ---
 
 # How call caching works
-<a name="how-run-cache"></a>
 
 To use call caching, you create a run cache and configure it to have an associated Amazon S3 location for the cached data. When you start a run, you specify the run cache. A run cache isn't dedicated to one workflow. Runs from multiple workflows can use the same cache.
 

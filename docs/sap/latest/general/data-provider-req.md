@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/data-provider-req.htm
 ---
 
 # Technical Requirements
-<a name="data-provider-req"></a>
 
 Before creating an SAP instance, ensure that the following technical requirements are met.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ShareEncryptedAMIOrEBSSnapshot`
-<a name="awssupport-share-encrypted-ami-or-ebs-snapshot"></a>
 
  **Description**
 

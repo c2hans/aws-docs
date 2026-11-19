@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::FcaPolicy
-<a name="aws-resource-ec2-fcapolicy"></a>
 
 Networking Flexible Cost Allocation (FCA) is a feature of Amazon VPC that lets you specify an FCA policy. An FCA policy defines how shared network costs, such as data transfer and data processing, are allocated and reported for network resources such as NAT gateways, Amazon EC2 instances, and VPC peering connections.
 

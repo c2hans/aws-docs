@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-prep-dynamic.h
 ---
 
 # Input prepare and dynamic inputs
-<a name="input-prep-dynamic"></a>
 
 You can prepare for an input switch in a MediaLive channel when the associated input is a [dynamic input](dynamic-inputs.md). A dynamic input has a variable in its path. Each time that you add the input to the schedule, you specify a *replacement string* to replace the variable with a file.
 

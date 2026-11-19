@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # AWS Industrial PdM ML Model and Anomaly Detection
-<a name="industrial-pdm-ml-anomaly-detection"></a>
 
 Publication date: **March 4, 2024 ([Diagram history](#ipa-diagram-history))**
 

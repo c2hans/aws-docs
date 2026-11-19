@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetails"></a>
 
 The FireLens configuration for the container. The configuration specifies and configures a log router for container logs.
 

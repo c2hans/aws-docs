@@ -3,14 +3,16 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/document_hist
 ---
 
 # Document history
-<a name="document_history"></a>
 
 The following table describes the important changes to the *AWS Elastic Beanstalk Developer Guide* since April 2024.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [AWS managed policy updates for `AdministratorAccess-AWSElasticBeanstalk`](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated permissions in AWS managed policy to pass the IAM roles of a Beanstalk Cluster environment to the services that use them, and to check the permissions of the roles that you select in the Elastic Beanstalk console. | November 18, 2026 |
 | [AWS managed policy updates for `AWSElasticBeanstalkServiceRolePolicy`](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated permissions in AWS managed policy to allow Elastic Beanstalk to check the permissions of the IAM roles that you specify for a Beanstalk Cluster environment. | November 12, 2026 |
 | [New topic: Joining instances to an Active Directory domain](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-activedirectory.html) | Elastic Beanstalk adds support to automatically join the Windows Server instances in your environment to an AWS Directory Service directory. | August 31, 2026 |
+| [AWS managed policy updates for `AdministratorAccess-AWSElasticBeanstalk`](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated permissions in AWS managed policy to view Elastic Beanstalk log events in CloudWatch Logs from the Elastic Beanstalk console. | May 19, 2026 |
+| [AWS managed policy updates for `AWSElasticBeanstalkReadOnly`](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated permissions in AWS managed policy to list Elastic Beanstalk log groups and log streams in CloudWatch Logs and view their log events from the Elastic Beanstalk console. | May 19, 2026 |
 | [AWS managed policy updates for `AWSElasticBeanstalkWorkerTier`](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated permissions in AWS managed policy to add Amazon Nova and AWS Marketplace permissions for AI-powered environment analysis. | April 29, 2026 |
 | [AWS managed policy updates for `AWSElasticBeanstalkWebTier`](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated permissions in AWS managed policy to add Amazon Nova and AWS Marketplace permissions for AI-powered environment analysis. | April 29, 2026 |
 | [AWS managed policy updates for `AWSElasticBeanstalkMulticontainerDocker`](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated permissions in AWS managed policy to add Amazon Nova and AWS Marketplace permissions for AI-powered environment analysis. | April 29, 2026 |

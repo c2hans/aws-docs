@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Describ
 ---
 
 # DescribeACLs
-<a name="API_DescribeACLs"></a>
 
 Returns a list of ACLs.
 

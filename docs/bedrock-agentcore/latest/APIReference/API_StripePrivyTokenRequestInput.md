@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # StripePrivyTokenRequestInput
-<a name="API_StripePrivyTokenRequestInput"></a>
 
 Stripe Privy token request parameters.
 

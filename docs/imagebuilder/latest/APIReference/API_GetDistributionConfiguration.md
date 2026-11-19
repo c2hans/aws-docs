@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetDistributionConfiguration
-<a name="API_GetDistributionConfiguration"></a>
 
 Retrieves a distribution configuration.
 

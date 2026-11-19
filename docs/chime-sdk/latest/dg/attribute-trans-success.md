@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/attribute-trans-succ
 ---
 
 # Handling ACTION\_SUCCESSFUL events
-<a name="attribute-trans-success"></a>
 
 The following example shows how a successful [PlayAudio](play-audio.md) sends the stored `TransactionAttributes` as part of the `CallDetails `.
 

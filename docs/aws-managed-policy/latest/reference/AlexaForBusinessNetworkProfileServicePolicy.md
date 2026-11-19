@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Alex
 ---
 
 # AlexaForBusinessNetworkProfileServicePolicy
-<a name="AlexaForBusinessNetworkProfileServicePolicy"></a>
 
 **Description**: This policy enables Alexa for Business to perform automated tasks scheduled by your network profiles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Global services
-<a name="global-services"></a>
 
  In addition to regional and zonal AWS services, there’s a small set of AWS services whose scope is considered *global*. This is because their resources aren’t Region-specific. Global AWS services still follow the conventional AWS design pattern of separating the control plane and data plane to achieve static stability. The significant difference for most global services is that their control plane is hosted in a single AWS Region, while their data plane is globally distributed.
 

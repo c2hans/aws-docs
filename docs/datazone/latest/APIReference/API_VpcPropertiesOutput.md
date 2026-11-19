@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_VpcProp
 ---
 
 # VpcPropertiesOutput
-<a name="API_VpcPropertiesOutput"></a>
 
 The VPC connection properties returned in responses.
 

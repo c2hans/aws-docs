@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Alarm
 ---
 
 # AlarmConfiguration
-<a name="API_AlarmConfiguration"></a>
 
 Information about alarms associated with a deployment or deployment group.
 

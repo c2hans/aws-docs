@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resourc
 ---
 
 # Discovering resources with AWS Cloud Control API
-<a name="resource-operations-list"></a>
 
 Use the `list-resources` command to discover the resources currently provisioned in your AWS account and AWS Region. This includes all resources of the specified resource type, regardless of whether they were provisioned through Cloud Control API, directly through the underlying service, or other mechanism (such as being part of an AWS CloudFormation stack).
 

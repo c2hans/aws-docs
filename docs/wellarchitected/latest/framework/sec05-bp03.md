@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec05-b
 ---
 
 # SEC05-BP03 Implement inspection-based protection
-<a name="sec05-bp03"></a>
 
  Inspect traffic between your network layers to confirm it matches expected patterns. Analyze flows, metadata, and behavior to detect and respond to events. Make protections stricter as traffic moves closer to sensitive data.
 

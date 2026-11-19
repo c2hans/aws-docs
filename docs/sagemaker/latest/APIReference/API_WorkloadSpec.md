@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Worklo
 ---
 
 # WorkloadSpec
-<a name="API_WorkloadSpec"></a>
 
 The workload specification for benchmark tool configuration. Provide an inline YAML or JSON string.
 

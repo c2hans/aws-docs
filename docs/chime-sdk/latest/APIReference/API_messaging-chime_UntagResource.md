@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # UntagResource
-<a name="API_messaging-chime_UntagResource"></a>
 
 Removes the specified tags from the specified Amazon Chime SDK messaging resource.
 

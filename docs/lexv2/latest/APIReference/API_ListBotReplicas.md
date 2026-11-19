@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotRep
 ---
 
 # ListBotReplicas
-<a name="API_ListBotReplicas"></a>
 
 The action to list the replicated bots.
 

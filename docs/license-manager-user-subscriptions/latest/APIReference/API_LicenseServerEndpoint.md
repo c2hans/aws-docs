@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # LicenseServerEndpoint
-<a name="API_LicenseServerEndpoint"></a>
 
 Contains details about a network endpoint for a Remote Desktop Services (RDS) license server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Scaling Synopsys SiliconSmart on AWS
-<a name="scaling-synopsys-siliconsmart"></a>
 
 Publication date: **April 1, 2021 ([Diagram history](diagram-history.md))**
 

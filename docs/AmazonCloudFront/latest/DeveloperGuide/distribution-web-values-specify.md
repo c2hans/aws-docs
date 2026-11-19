@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/d
 ---
 
 # All distribution settings reference
-<a name="distribution-web-values-specify"></a>
 
 You can choose to manually edit your CloudFront distribution settings when you create or update your distribution. Following are the settings that you can edit.
 

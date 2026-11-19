@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Runtim
 ---
 
 # RuntimeContext
-<a name="API_RuntimeContext"></a>
 
 Additional information about the suspicious activity.
 

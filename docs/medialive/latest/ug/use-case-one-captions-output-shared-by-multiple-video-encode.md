@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/use-case-one-caption
 ---
 
 # Use case D: One captions output shared by multiple video encodes
-<a name="use-case-one-captions-output-shared-by-multiple-video-encode"></a>
 
 This example for captions in MediaLive shows how to set up captions in an ABR workflow.
 

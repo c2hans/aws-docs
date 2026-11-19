@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Best practices for using presigned requests
-<a name="best-practices-for-using-presigned-requests"></a>
 
 The following sections of this guide discuss best practices for you to consider as a security engineer. The guidelines include:
 + [Foundational best practices](foundational-best-practices.md), which are practices that all organizations should follow.

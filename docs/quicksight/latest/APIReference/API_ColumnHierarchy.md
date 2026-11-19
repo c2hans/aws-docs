@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnHierarchy
-<a name="API_ColumnHierarchy"></a>
 
 The option that determines the hierarchy of the fields for a visual element.
 

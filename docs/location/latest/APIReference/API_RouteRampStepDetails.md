@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRa
 ---
 
 # RouteRampStepDetails
-<a name="API_RouteRampStepDetails"></a>
 
 Details that are specific to a ramp step.
 

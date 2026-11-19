@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/list-experiment-res
 ---
 
 # List resolved targets
-<a name="list-experiment-resolved-targets"></a>
 
 You can view information for resolved targets for an experiment after target resolution has ended.
 

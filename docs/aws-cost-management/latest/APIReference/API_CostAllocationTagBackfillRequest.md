@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostAllocationTagBackfillRequest
-<a name="API_CostAllocationTagBackfillRequest"></a>
 
  The cost allocation tag backfill request structure that contains metadata and details of a certain backfill.
 

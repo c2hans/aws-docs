@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-vie
 ---
 
 # View AWS Cloud WAN Flow Logs records in Amazon S3
-<a name="cwan-view-flow-log-records-s3"></a>
 
 **To view flow log records published to Amazon S3**
 

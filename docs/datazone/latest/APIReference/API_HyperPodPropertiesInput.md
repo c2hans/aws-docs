@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_HyperPo
 ---
 
 # HyperPodPropertiesInput
-<a name="API_HyperPodPropertiesInput"></a>
 
 The hyper pod properties of a AWS Glue properties patch.
 

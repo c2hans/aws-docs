@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskMa
 ---
 
 # TaskManagedEBSVolumeConfiguration
-<a name="API_TaskManagedEBSVolumeConfiguration"></a>
 
 The configuration for the Amazon EBS volume that Amazon ECS creates and manages on your behalf. These settings are used to create each Amazon EBS volume, with one volume created for each task.
 

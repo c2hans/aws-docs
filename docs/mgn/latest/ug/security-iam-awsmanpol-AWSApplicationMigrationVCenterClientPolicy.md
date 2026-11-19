@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationVCenterClientPolicy
-<a name="security-iam-awsmanpol-AWSApplicationMigrationVCenterClientPolicy"></a>
 
 You can attach the `AWSApplicationMigrationVCenterClientPolicy` policy to your IAM identities.
 

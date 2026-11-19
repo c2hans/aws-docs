@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL Regex
-<a name="aws-properties-wafv2-webacl-regex"></a>
 
 A single regular expression. This is used in a [AWS::WAFv2::RegexPatternSet](aws-resource-wafv2-regexpatternset.md) and also in the configuration for the AWS Managed Rules rule group `AWSManagedRulesAntiDDoSRuleSet`.
 

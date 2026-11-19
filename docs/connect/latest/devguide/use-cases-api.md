@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/use-cases-api.ht
 ---
 
 # Use cases actions
-<a name="use-cases-api"></a>
 
 The following API actions are available for use cases:
 + [CreateUseCase](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateUseCase.html)

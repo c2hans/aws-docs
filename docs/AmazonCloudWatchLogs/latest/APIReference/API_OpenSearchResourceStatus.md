@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # OpenSearchResourceStatus
-<a name="API_OpenSearchResourceStatus"></a>
 
 This structure contains information about the status of an OpenSearch Service resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/n
 ---
 
 # New Project dialog box
-<a name="new-project-dialog"></a>
 
 The **New Project** dialog box in the AWS Toolkit for JetBrains is displayed when you create an AWS serverless application.
 

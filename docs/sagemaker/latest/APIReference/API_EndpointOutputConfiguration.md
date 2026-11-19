@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Endpoi
 ---
 
 # EndpointOutputConfiguration
-<a name="API_EndpointOutputConfiguration"></a>
 
 The endpoint configuration made by Inference Recommender during a recommendation job.
 

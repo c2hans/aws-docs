@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # ResendOperationAuthorization
-<a name="API_domains_ResendOperationAuthorization"></a>
 
  Resend the form of authorization email for this operation.
 

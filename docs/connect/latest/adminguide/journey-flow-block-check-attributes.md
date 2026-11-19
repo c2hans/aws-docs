@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/journey-flow-b
 ---
 
 # Check attributes
-<a name="journey-flow-block-check-attributes"></a>
 
 This topic defines the flow block for branching based on a comparison to the value of an attribute.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SearchI
 ---
 
 # SearchInventoryResultItem
-<a name="API_SearchInventoryResultItem"></a>
 
 The details of the search results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
 ---
 
 # Continuous chaos engineering experiment lifecycle
-<a name="lifecycle"></a>
 
 As discussed in the [previous section](implementation.md), you can implement chaos engineering experiments in different ways. In all cases, the key to building a meaningful chaos experiment is to understand the application, historical incidents, and implemented remediations, and to clearly understand the areas to investigate, such as resilience or security. Your knowledge about the application helps you formulate a hypothesis on the application's potential weaknesses and understand how it will detect, remediate, and recover when the fault is injected.
 

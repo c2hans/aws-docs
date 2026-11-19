@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Bookm
 ---
 
 # BookmarksConfigurations
-<a name="API_BookmarksConfigurations"></a>
 
 The bookmarks configuration of an embedded dashboard.
 

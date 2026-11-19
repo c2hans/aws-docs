@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/deleting-tag-v
 ---
 
 # Deleting a tag from a vector index
-<a name="deleting-tag-vector-index"></a>
 
 You can remove tags from S3 vector indexes. An AWS tag is a key-value pair that holds metadata about resources, in this case Amazon S3 vector indexes. For more information about tagging vector indexes, see [Using tags with S3 vector indexes](vector-index-tagging.md).
 

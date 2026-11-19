@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # VerifyMac
-<a name="API_VerifyMac"></a>
 
 Verifies a Message Authentication Code (MAC).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Accelerating your cloud ROI by adopting a strategic transformation and change methodology
-<a name="introduction"></a>
 
 *Scott Watson and Melanie Gladwell, Amazon Web Services*
 

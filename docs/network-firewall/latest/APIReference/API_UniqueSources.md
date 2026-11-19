@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UniqueSources
-<a name="API_UniqueSources"></a>
 
 A unique source IP address that connected to a domain.
 

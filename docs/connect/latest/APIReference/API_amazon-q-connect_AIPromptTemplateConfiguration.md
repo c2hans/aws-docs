@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AIPromptTemplateConfiguration
-<a name="API_amazon-q-connect_AIPromptTemplateConfiguration"></a>
 
 A typed union that specifies the configuration for a prompt template based on its type.
 

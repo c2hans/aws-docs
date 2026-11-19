@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # UpdateAction
-<a name="API_UpdateAction"></a>
 
 The status of the service update for a specific replication group
 

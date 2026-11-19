@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_IdentityProv
 ---
 
 # IdentityProviderConfigResponse
-<a name="API_IdentityProviderConfigResponse"></a>
 
 The full description of your identity configuration.
 

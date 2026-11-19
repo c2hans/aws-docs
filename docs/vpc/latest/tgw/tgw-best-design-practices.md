@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-best-design-practices
 ---
 
 # AWS Transit Gateway design best practices
-<a name="tgw-best-design-practices"></a>
 
 The following are best practices for your transit gateway design:
 + Use a separate subnet for each transit gateway VPC attachment. For each subnet, use a small CIDR, for example `/28`, so that you have more addresses for EC2 resources. When you use a separate subnet, you can configure the following:

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayRule Condition
-<a name="aws-properties-bedrockagentcore-gatewayrule-condition"></a>
 
 A condition that determines when a gateway rule applies. Conditions can match on principals, request paths, or the requested model.
 

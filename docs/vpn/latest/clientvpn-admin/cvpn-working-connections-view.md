@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # View AWS Client VPN client connections
-<a name="cvpn-working-connections-view"></a>
 
 You can view the active Client VPN connections using either the Amazon VPC Console or the AWS CLI.
 

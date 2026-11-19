@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_G
 ---
 
 # GetRecommendation
-<a name="API_GetRecommendation"></a>
 
 Get a specific Recommendation. This API provides global recommendations, eliminating the need to call the API in each AWS Region.
 

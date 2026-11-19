@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/apprunner-s
 ---
 
 # apprunner-service-tagged
-<a name="apprunner-service-tagged"></a>
 
 Checks if AWS App Runner services have tags. Optionally, you can specify tag keys. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

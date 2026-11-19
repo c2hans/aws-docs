@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SearchFilterClaus
 ---
 
 # SearchFilterClause
-<a name="API_SearchFilterClause"></a>
 
 A filter clause that supports nested boolean logic. Exactly one of `andAllFilters`, `orAnyFilters`, `attributeFilter`, or `mapFilter` must be specified.
 
@@ -15,7 +14,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** AndAllFilters **   <a name="Glue-Type-SearchFilterClause-AndAllFilters"></a>
 A list of filter clauses that must all match (logical AND).
-Type: Array of [SearchFilterClause](#API_SearchFilterClause) objects
+Type: Array of [SearchFilterClause](API_SearchFilterClause.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
@@ -31,7 +30,7 @@ Required: No
 
  ** OrAnyFilters **   <a name="Glue-Type-SearchFilterClause-OrAnyFilters"></a>
 A list of filter clauses where at least one must match (logical OR).
-Type: Array of [SearchFilterClause](#API_SearchFilterClause) objects
+Type: Array of [SearchFilterClause](API_SearchFilterClause.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 

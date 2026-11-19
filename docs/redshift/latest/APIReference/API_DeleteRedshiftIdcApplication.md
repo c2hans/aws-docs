@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteR
 ---
 
 # DeleteRedshiftIdcApplication
-<a name="API_DeleteRedshiftIdcApplication"></a>
 
 Deletes an Amazon Redshift IAM Identity Center application.
 

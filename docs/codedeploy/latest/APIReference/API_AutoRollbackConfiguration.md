@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_AutoR
 ---
 
 # AutoRollbackConfiguration
-<a name="API_AutoRollbackConfiguration"></a>
 
 Information about a configuration for automatically rolling back to a previous version of an application revision when a deployment is not completed successfully.
 

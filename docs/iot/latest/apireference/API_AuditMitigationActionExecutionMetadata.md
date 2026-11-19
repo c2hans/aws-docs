@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuditMitigat
 ---
 
 # AuditMitigationActionExecutionMetadata
-<a name="API_AuditMitigationActionExecutionMetadata"></a>
 
 Returned by ListAuditMitigationActionsTask, this object contains information that describes a mitigation action that has been started.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeAutoEnableNewAccountConfiguration
-<a name="API_DataLakeAutoEnableNewAccountConfiguration"></a>
 
 Automatically enable new organization accounts as member accounts from an Amazon Security Lake administrator account.
 

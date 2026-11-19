@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AthenaP
 ---
 
 # AthenaPropertiesInput
-<a name="API_AthenaPropertiesInput"></a>
 
 The Amazon Athena properties of a connection.
 

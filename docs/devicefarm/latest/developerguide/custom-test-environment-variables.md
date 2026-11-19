@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 ---
 
 # Environment variables for custom test environments
-<a name="custom-test-environment-variables"></a>
 
  Device Farm dynamically configures several environment variables for use as part of your custom test environment run.
 

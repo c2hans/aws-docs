@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-lf-gov
 ---
 
 # Enable Lake Formation with Feature Groups
-<a name="feature-store-lf-governance"></a>
 
 When you enable AWS Lake Formation on a feature group in Amazon SageMaker Feature Store, you can enforce column-level, row-level, and cell-level security for the feature data in your offline store. Instead of managing access through individual IAM policies on Amazon S3 and AWS Glue resources, you use the Lake Formation grant and revoke permission model to control which users and roles can access specific features and records. For more information about Lake Formation, see the [AWS Lake Formation Developer Guide](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html).
 

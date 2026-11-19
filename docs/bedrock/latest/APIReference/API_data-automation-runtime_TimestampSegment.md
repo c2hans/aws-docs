@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # TimestampSegment
-<a name="API_data-automation-runtime_TimestampSegment"></a>
 
 Contians the start and end timestamp of the segement of the larger video you want to detect. The minimum video segment length is 5 minutes.
 

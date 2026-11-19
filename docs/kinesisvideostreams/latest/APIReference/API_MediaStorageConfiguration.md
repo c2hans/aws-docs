@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # MediaStorageConfiguration
-<a name="API_MediaStorageConfiguration"></a>
 
 A structure that encapsulates, or contains, the media storage configuration properties.
 + If `StorageStatus` is enabled, the data will be stored in the `StreamARN` provided. In order for WebRTC Ingestion to work, the stream must have data retention enabled.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaLiveCha
 ---
 
 # MediaLiveChannelRouterInputConfiguration
-<a name="API_MediaLiveChannelRouterInputConfiguration"></a>
 
 Configuration settings for connecting a router input to a MediaLive channel output.
 

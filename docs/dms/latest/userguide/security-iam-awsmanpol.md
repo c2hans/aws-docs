@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policies for AWS Database Migration Service
-<a name="security-iam-awsmanpol"></a>
 
 **Topics**
 + [AWS managed policy: AmazonDMSVPCManagementRole](#security-iam-awsmanpol-AmazonDMSVPCManagementRole)

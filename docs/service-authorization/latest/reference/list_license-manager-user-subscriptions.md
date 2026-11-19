@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS License Manager User Subscriptions
-<a name="list_license-manager-user-subscriptions"></a>
 
 AWS License Manager User Subscriptions (service prefix: `license-manager-user-subscriptions`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

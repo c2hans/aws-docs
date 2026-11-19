@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectLabelsImagePropertiesSettings
-<a name="API_DetectLabelsImagePropertiesSettings"></a>
 
 Settings for the IMAGE\_PROPERTIES feature type.
 

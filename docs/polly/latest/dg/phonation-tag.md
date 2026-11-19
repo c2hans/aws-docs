@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/phonation-tag.html
 ---
 
 # Speaking softly
-<a name="phonation-tag"></a>
 
 *<amazon:effect phonation="soft">*
 

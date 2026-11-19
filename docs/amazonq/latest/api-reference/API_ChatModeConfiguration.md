@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatMod
 ---
 
 # ChatModeConfiguration
-<a name="API_ChatModeConfiguration"></a>
 
 Configuration information for Amazon Q Business conversation modes.
 

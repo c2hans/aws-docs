@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-osm-permissi
 ---
 
 # Configuring resource-based policies for OpenSearch Managed clusters
-<a name="kb-osm-permissions-slr-rbp"></a>
 
 When creating your knowledge base, you can either create your own custom role or let Amazon Bedrock create one for you. How you configure the permissions depend on whether you're creating a new role or using an existing role. If you already have an existing IAM role, you must ensure that your domain's access policy does not prevent the roles in your account from performing the necessary OpenSearch API actions.
 

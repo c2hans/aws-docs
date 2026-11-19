@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_Message.html
 ---
 
 # Message
-<a name="API_Message"></a>
 
 Represents the message to be sent, composed of a subject and a body.
 

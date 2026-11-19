@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_A
 ---
 
 # AttachInstancesToLoadBalancer
-<a name="API_AttachInstancesToLoadBalancer"></a>
 
 Attaches one or more Lightsail instances to a load balancer.
 

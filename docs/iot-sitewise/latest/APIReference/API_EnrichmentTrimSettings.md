@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Enr
 ---
 
 # EnrichmentTrimSettings
-<a name="API_EnrichmentTrimSettings"></a>
 
 Time range settings for extracting a specific window of video time-series data to process.
 

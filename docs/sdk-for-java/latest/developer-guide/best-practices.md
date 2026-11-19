@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/best
 ---
 
 # Best practices for using the AWS SDK for Java 2.x
-<a name="best-practices"></a>
 
 ## Prevent hanging requests by configuring API timeouts
 <a name="bestpractice5"></a>

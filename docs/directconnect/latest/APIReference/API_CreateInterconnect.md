@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Cr
 ---
 
 # CreateInterconnect
-<a name="API_CreateInterconnect"></a>
 
 Creates an interconnect between an Direct Connect Partner's network and a specific Direct Connect location.
 

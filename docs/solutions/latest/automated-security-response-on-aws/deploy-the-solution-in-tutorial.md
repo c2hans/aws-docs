@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Deploy the solution to tutorial accounts
-<a name="deploy-the-solution-in-tutorial"></a>
 
 Gather the three Amazon S3 URLs for the admin, member, and member roles stack.
 

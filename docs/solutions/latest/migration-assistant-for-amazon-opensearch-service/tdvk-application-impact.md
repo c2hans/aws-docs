@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Application impact
-<a name="tdvk-application-impact"></a>
 
 The transformation produces a queryable vector index, but k-NN query patterns on Amazon OpenSearch Service and Amazon OpenSearch Serverless NextGen can differ from the vector query syntax your application used on Elasticsearch. Plan to review and, where needed, update client query code:
 +  **Query syntax differs** — Elasticsearch vector queries (for example, `knn` queries against a `dense_vector` field, or `script_score` with `cosineSimilarity`/`l2norm` functions) are not interchangeable with the OpenSearch k-NN query syntax used against a `knn_vector` field. Confirm the query shape your application sends matches what the target expects.

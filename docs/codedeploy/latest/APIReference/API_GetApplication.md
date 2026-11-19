@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_GetAp
 ---
 
 # GetApplication
-<a name="API_GetApplication"></a>
 
 Gets information about an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/unified-operation
 ---
 
 # Unified Operations life cycle
-<a name="unified-operations-phases"></a>
 
 The Unified Operations Support plan contains different phases, from pre-onboarding, through continuous improvement, that help you get the most our of your cloud environment. This topic covers key points of each phase.
 

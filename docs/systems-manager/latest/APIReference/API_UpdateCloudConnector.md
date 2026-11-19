@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UpdateCloudConnector
-<a name="API_UpdateCloudConnector"></a>
 
 Updates an existing cloud connector with new configuration details.
 

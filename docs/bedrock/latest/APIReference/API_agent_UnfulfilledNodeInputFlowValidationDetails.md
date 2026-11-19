@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UnfulfilledNodeInputFlowValidationDetails
-<a name="API_agent_UnfulfilledNodeInputFlowValidationDetails"></a>
 
 Details about an unfulfilled node input with no valid connections.
 

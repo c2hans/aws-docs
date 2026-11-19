@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetEntityRecords.
 ---
 
 # GetEntityRecords
-<a name="API_GetEntityRecords"></a>
 
 This API is used to query preview data from a given connection type or from a native Amazon S3 based AWS Glue Data Catalog.
 

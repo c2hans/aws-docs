@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeLocationObjectStorage
-<a name="API_DescribeLocationObjectStorage"></a>
 
 Provides details about how an AWS DataSync transfer location for an object storage system is configured.
 

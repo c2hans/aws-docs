@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.DIP.3] Implement distributed tracing for system-wide request tracking
-<a name="o.dip.3-implement-distributed-tracing-for-system-wide-request-tracking"></a>
 
  **Category:** RECOMMENDED
 

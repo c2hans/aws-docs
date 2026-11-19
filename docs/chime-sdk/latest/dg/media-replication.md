@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/media-replication.ht
 ---
 
 # Using media replication for Amazon Chime SDK meetings
-<a name="media-replication"></a>
 
 You can use media replication to link a primary WebRTC session with multiple replica sessions to reach larger audiences. Each WebRTC media session supports 250 connections, and you can replicate a primary session to multiple replica sessions. Participants connected to a replica session receive only the audio and video of the presenters connected to the primary session. They have no knowledge of the participants connected to the replicated session, which makes media replication ideal for webinars and other use cases where privacy is desired.
 

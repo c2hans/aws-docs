@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsCarouselCardMedia
-<a name="API_RcsCarouselCardMedia"></a>
 
 The media content of a carousel card. Display height is restricted to SHORT or MEDIUM (TALL is not supported in carousels).
 

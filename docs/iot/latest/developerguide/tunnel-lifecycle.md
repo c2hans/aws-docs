@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/tunnel-lifecyc
 ---
 
 # Secure tunnel lifecycle
-<a name="tunnel-lifecycle"></a>
 
 Tunnels can have the status `OPEN` or `CLOSED`. Connections to the tunnel can have the status `CONNECTED` or `DISCONNECTED`. The following shows how the different tunnel and connection statuses work.
 

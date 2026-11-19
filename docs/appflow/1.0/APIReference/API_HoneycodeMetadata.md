@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_HoneycodeMe
 ---
 
 # HoneycodeMetadata
-<a name="API_HoneycodeMetadata"></a>
 
  The connector metadata specific to Amazon Honeycode.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Describe an AMI, SaaS, or Container product using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_DescribeProduct_section"></a>
 
 The following code examples show how to describe an AMI, SaaS, or Container product and check if it contains all the information you want to know about the product.
 

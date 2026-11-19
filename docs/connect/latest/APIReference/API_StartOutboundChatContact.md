@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOut
 ---
 
 # StartOutboundChatContact
-<a name="API_StartOutboundChatContact"></a>
 
 Initiates a new outbound SMS or WhatsApp contact to a customer. Response of this API provides the `ContactId` of the outbound SMS or WhatsApp contact created.
 

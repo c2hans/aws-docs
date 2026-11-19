@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # What is a cell-based architecture?
-<a name="what-is-a-cell-based-architecture"></a>
 
  A cell-based architecture comes from the concept of a [bulkhead in a ship](https://en.wikipedia.org/wiki/Bulkhead_%28partition%29), where vertical partition walls subdivide the ship's interior into self-contained, watertight compartments. Bulkheads reduce the extent of seawater flooding in case of damage and provide additional stiffness to the hull girder.
 

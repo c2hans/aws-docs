@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Put
 ---
 
 # PutStorageConfiguration
-<a name="API_PutStorageConfiguration"></a>
 
 Configures storage settings for AWS IoT SiteWise.
 

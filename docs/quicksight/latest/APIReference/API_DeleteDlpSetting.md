@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteDlpSetting
-<a name="API_DeleteDlpSetting"></a>
 
 Deletes a DLP setting configuration from an AWS account.
 

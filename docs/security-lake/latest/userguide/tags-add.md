@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/tags-add.
 ---
 
 # Adding tags to Amazon Security Lake resources
-<a name="tags-add"></a>
 
 To add tags to an Amazon Security Lake resource, you can use the Security Lake console or the Security Lake API.
 

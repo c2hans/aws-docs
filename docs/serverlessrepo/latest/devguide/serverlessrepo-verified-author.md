@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/serverles
 ---
 
 # Verified Author Badge
-<a name="serverlessrepo-verified-author"></a>
 
 **Verified authors** in the AWS Serverless Application Repository are those for which AWS has made a good faith review, as a reasonable and prudent service provider, of the information provided by the requester, and has confirmed that the requester's identity is as claimed.
 

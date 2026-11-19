@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-exten
 ---
 
 # Optimizer State Sharding
-<a name="model-parallel-extended-features-pytorch-optimizer-state-sharding"></a>
 
 *Optimizer state sharding* is a useful memory-saving technique that shards the optimizer state (the set of weights that describes the state of optimizer) across data parallel device groups. You can use optimizer state sharding whenever you use a stateful optimizer (such as Adam) or an FP16 optimizer (which stores both FP16 and FP32 copies of the parameters).
 

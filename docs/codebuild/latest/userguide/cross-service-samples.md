@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/cross-service
 ---
 
 # Cross-service samples for CodeBuild
-<a name="cross-service-samples"></a>
 
 You can use these cross-service samples to experiment with AWS CodeBuild:
 

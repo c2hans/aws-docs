@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SearchTasks
-<a name="API_SearchTasks"></a>
 
 Searches for tasks.
 

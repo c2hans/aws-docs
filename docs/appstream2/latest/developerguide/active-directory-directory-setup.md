@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/active-
 ---
 
 # Tutorial: Setting Up Active Directory
-<a name="active-directory-directory-setup"></a>
 
 To use Active Directory with WorkSpaces Applications, you must first register your directory configuration by creating a Directory Config object in WorkSpaces Applications. This object includes the information required to join streaming instances to an Active Directory domain. You create a Directory Config object by using the WorkSpaces Applications management console, AWS SDK, or AWS CLI. You can then use your directory configuration to launch domain-joined Always-On and On-Demand fleets and image builders.
 

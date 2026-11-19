@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeSecuri
 ---
 
 # CodeSecurityScanConfigurationSummary
-<a name="API_CodeSecurityScanConfigurationSummary"></a>
 
 A summary of information about a code security scan configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetLicenseEndpoint
-<a name="API_GetLicenseEndpoint"></a>
 
 Gets a licence endpoint.
 

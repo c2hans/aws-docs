@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Impor
 ---
 
 # ImportTableOperationSource
-<a name="API_ImportTableOperationSource"></a>
 
 Specifies the source table and column mappings for an import table operation.
 

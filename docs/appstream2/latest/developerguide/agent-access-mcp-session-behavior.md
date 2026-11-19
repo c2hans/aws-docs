@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 ---
 
 # Session behavior
-<a name="agent-access-mcp-session-behavior"></a>
 
 When you enable agent access on a stack or an image builder, you configure how the agent's desktop session behaves, including how the agent sees and controls the desktop, where screenshots and files are stored, the screen layout, and whether people can watch and stop the agent. You set these options on the stack or on the image builder. Most options work the same way on both. Home folders and application settings persistence apply only to stacks.
 

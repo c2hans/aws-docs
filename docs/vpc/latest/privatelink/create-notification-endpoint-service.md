@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/create-notificati
 ---
 
 # Receive alerts for endpoint service events
-<a name="create-notification-endpoint-service"></a>
 
 You can create a notification to receive alerts for specific events related to your endpoint service. For example, you can receive an email when a connection request is accepted or rejected.
 

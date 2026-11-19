@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Serv
 ---
 
 # ServerMigrationServiceConsoleFullAccess
-<a name="ServerMigrationServiceConsoleFullAccess"></a>
 
 **Description**: Required permissions to use all features of the Server Migration Service Console
 

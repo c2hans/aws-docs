@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/rbin-service-endpoi
 ---
 
 # Service endpoints for Recycle Bin
-<a name="rbin-service-endpoints"></a>
 
 An *endpoint* is a URL that serves as an entry point for an AWS web service. Recycle Bin supports the following endpoint types:
 + IPv4 endpoints

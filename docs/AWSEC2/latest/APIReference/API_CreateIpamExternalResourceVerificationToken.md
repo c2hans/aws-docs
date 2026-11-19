@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpa
 ---
 
 # CreateIpamExternalResourceVerificationToken
-<a name="API_CreateIpamExternalResourceVerificationToken"></a>
 
 Create a verification token.
 

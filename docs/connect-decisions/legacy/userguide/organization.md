@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/organ
 ---
 
 # Organization
-<a name="organization"></a>
 
  This section lists the data entities within the organization category.
 

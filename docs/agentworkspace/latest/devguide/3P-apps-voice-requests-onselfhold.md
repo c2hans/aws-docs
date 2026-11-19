@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Subscribe to self hold events in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-onselfhold"></a>
 
 Subscribes to events when the current user's participant is put on hold.
 

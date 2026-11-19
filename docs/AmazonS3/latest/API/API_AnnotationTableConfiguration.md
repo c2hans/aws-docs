@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AnnotationTableC
 ---
 
 # AnnotationTableConfiguration
-<a name="API_AnnotationTableConfiguration"></a>
 
 Specifies the configuration for the annotation table associated with a bucket's Amazon S3 Metadata configuration. The annotation table is an Iceberg table that records annotation events for objects in the bucket.
 

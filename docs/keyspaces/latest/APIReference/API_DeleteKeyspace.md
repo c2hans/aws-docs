@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Delete
 ---
 
 # DeleteKeyspace
-<a name="API_DeleteKeyspace"></a>
 
 The `DeleteKeyspace` operation deletes a keyspace and all of its tables.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Del
 ---
 
 # DeleteAssetModelInterfaceRelationship
-<a name="API_DeleteAssetModelInterfaceRelationship"></a>
 
 Deletes an interface relationship between an asset model and an interface asset model.
 

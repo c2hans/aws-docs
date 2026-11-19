@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/train-
 ---
 
 # Train and evaluate models
-<a name="train-and-evaluate-models"></a>
 
 Training your model involves the vehicle learning optimal driving behaviors through trial and error in a simulated environment. Your vehicle uses its front-mounted camera to capture environmental states and responds with actions (speed and steering combinations). Your model is a neural network function that maps these observations to expected rewards, with training focused on maximizing cumulative rewards.
 

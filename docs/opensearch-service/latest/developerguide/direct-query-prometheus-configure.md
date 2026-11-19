@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Querying Prometheus metrics
-<a name="direct-query-prometheus-configure"></a>
 
 Amazon OpenSearch Service allows you to query your Prometheus data using PromQL (Prometheus Query Language) directly from the Observability interface. When you execute a PromQL query against the Prometheus data source, OpenSearch Service passes the query directly to your workspace API for execution.
 

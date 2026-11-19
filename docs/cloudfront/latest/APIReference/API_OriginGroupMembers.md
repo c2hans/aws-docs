@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginGroupMembers
-<a name="API_OriginGroupMembers"></a>
 
 A complex data type for the origins included in an origin group.
 

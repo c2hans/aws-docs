@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeleteApplicationAccessScope
-<a name="API_DeleteApplicationAccessScope"></a>
 
 Deletes an IAM Identity Center access scope from an application.
 

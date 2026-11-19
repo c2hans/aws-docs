@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteV2Logg
 ---
 
 # DeleteV2LoggingLevel
-<a name="API_DeleteV2LoggingLevel"></a>
 
 Deletes a logging level.
 

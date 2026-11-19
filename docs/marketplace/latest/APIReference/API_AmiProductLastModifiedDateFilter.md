@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AmiP
 ---
 
 # AmiProductLastModifiedDateFilter
-<a name="API_AmiProductLastModifiedDateFilter"></a>
 
 Object that allows filtering based on the last modified date of AMI products.
 

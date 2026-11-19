@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateOauth2CredentialProvider
-<a name="API_UpdateOauth2CredentialProvider"></a>
 
 Updates an existing OAuth2 credential provider.
 

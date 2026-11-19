@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sharepoint-action
 ---
 
 # Microsoft SharePoint action integration
-<a name="sharepoint-action-integration"></a>
 
 Use the Microsoft SharePoint connector to manage lists, items, files, and Excel workbooks directly in AWS Quick through natural language.
 

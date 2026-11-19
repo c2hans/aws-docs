@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adobe-marketo-engage-supp
 ---
 
 # AWS Glue support for Adobe Marketo Engage
-<a name="adobe-marketo-engage-support"></a>
 
 AWS Glue supports Adobe Marketo Engage as follows:
 

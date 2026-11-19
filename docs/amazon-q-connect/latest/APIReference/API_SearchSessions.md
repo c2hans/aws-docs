@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SearchSessions
-<a name="API_amazon-q-connect_SearchSessions"></a>
 
 Searches for sessions.
 

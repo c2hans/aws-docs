@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/tagging-cl
 ---
 
 # AWS CLI examples
-<a name="tagging-cli-examples"></a>
 
 The AWS CLI provides commands that you can use to manage the tags that you assign to your permission set.
 

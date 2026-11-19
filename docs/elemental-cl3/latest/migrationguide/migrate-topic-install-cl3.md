@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Installing Conductor Live on nodes
-<a name="migrate-topic-install-cl3"></a>
 
 1. From the Linux command line, log in to the Conductor node where you want to install Conductor Live software. Use the *elemental* user credentials.
 

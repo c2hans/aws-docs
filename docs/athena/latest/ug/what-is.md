@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/what-is.html
 ---
 
 # What is Amazon Athena?
-<a name="what-is"></a>
 
 Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon Simple Storage Service (Amazon S3) using standard [SQL](ddl-sql-reference.md). With a few actions in the AWS Management Console, you can point Athena at your data stored in Amazon S3 and begin using standard SQL to run ad-hoc queries and get results in seconds.
 

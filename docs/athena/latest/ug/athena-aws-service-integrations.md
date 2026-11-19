@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-aws-service-inte
 ---
 
 # AWS service integrations with Athena
-<a name="athena-aws-service-integrations"></a>
 
 You can use Athena to query data from the AWS services listed in this section. To see the Regions that each service supports, see [Regions and endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) in the *Amazon Web Services General Reference*.
 

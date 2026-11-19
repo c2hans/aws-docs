@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Cr
 ---
 
 # CreateStreamKey
-<a name="API_CreateStreamKey"></a>
 
 Creates a stream key, used to initiate a stream, for the specified channel ARN.
 

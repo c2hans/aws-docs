@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Working Java examples for using JMS with Amazon SQS standard queues
-<a name="sqs-jms-code-examples"></a>
 
 The following code examples show how to use the Java Message Service (JMS) with Amazon SQS standard queues. For more information about working with FIFO queues, see [To create a FIFO queue](getting-started.md#creating-queue-FIFO), [Sending messages synchronously](getting-started.md#send-messages-synchronously), and [Receiving messages synchronously](getting-started.md#receive-messages-synchronously). (Receiving messages synchronously is the same for standard and FIFO queues. However, messages in FIFO queues contain more attributes.)
 

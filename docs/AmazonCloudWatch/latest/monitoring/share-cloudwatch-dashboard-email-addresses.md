@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/share
 ---
 
 # Sharing a CloudWatch dashboard with specific users
-<a name="share-cloudwatch-dashboard-email-addresses"></a>
 
 Use the steps in this section to share a dashboard with as many as five email addresses that you choose.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/update-keystor
 ---
 
 # Edit AWS CloudHSM key store settings
-<a name="update-keystore"></a>
 
 You can change the settings of an existing AWS CloudHSM key store. The custom key store must be disconnected its AWS CloudHSM cluster.
 

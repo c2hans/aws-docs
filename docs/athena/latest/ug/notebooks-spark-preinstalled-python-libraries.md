@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-preinst
 ---
 
 # List of preinstalled Python libraries
-<a name="notebooks-spark-preinstalled-python-libraries"></a>
 
 Preinstalled Python libraries include the following.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-pysp
 ---
 
 # Creating a PySpark analysis template
-<a name="create-pyspark-analysis-template"></a>
 
 **Note**
 Parameters are user-provided strings that can contain arbitrary content.

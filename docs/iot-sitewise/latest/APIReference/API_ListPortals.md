@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListPortals
-<a name="API_ListPortals"></a>
 
 Retrieves a paginated list of AWS IoT SiteWise Monitor portals.
 

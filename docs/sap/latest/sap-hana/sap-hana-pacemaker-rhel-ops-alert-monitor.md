@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # Alerting and monitoring
-<a name="sap-hana-pacemaker-rhel-ops-alert-monitor"></a>
 
 This section covers the following topics.
 

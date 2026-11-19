@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `ListAssociations` with a CLI
-<a name="example_ssm_ListAssociations_section"></a>
 
 The following code examples show how to use `ListAssociations`.
 

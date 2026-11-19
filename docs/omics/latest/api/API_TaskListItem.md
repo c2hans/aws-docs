@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_TaskListItem.html
 ---
 
 # TaskListItem
-<a name="API_TaskListItem"></a>
 
 A workflow run task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # DeleteTheme
-<a name="API_DeleteTheme"></a>
 
 Deletes a theme from an Amplify app.
 

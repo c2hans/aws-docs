@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_QuerySugg
 ---
 
 # QuerySuggestionsBlockListSummary
-<a name="API_QuerySuggestionsBlockListSummary"></a>
 
 Summary information on a query suggestions block list.
 

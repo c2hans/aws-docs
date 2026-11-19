@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Deleting a tag from an access point
-<a name="access-points-tag-delete"></a>
 
 You can remove tags from Amazon S3 Access Points. An AWS tag is a key-value pair that holds metadata about resources, in this case Access Points. For more information about tags, see [Using tags with S3 Access Points for general purpose buckets](access-points-tagging.md).
 

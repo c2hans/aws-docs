@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Be
 ---
 
 # BedrockFoundationModelContextEnrichmentConfiguration
-<a name="API_agent_BedrockFoundationModelContextEnrichmentConfiguration"></a>
 
 Context enrichment configuration is used to provide additional context to the RAG application using Amazon Bedrock foundation models.
 

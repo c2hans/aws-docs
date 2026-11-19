@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeTasks
-<a name="API_DescribeTasks"></a>
 
 Describes a specified task or tasks.
 

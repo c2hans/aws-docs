@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/examp
 ---
 
 # Learn core operations for CloudWatch using an AWS SDK
-<a name="example_cloudwatch_GetStartedMetricsDashboardsAlarms_section"></a>
 
 The following code examples show how to:
 + List CloudWatch namespaces and metrics.

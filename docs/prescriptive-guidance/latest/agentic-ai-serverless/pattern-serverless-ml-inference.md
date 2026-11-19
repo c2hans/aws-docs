@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Pattern 1: Serverless ML inference pipeline
-<a name="pattern-serverless-ml-inference"></a>
 
 In many enterprise environments, teams need to infuse AI into operational workflows, for example, to classify user feedback, detect anomalies in incoming telemetry, or score risk in real time. These machine learning (ML)-powered features are often embedded within customer-facing applications, mobile apps, or internal automation systems.
 

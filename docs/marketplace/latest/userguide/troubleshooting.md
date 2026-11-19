@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/troubleshoo
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 The topics in the following section provide solutions to common errors you may encounter when using AWS Marketplace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_TimePerio
 ---
 
 # TimePeriod
-<a name="API_TimePeriod"></a>
 
 Defines a time range for spending limits, specifying when the limit is active.
 

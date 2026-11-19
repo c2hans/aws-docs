@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CommandEn
 ---
 
 # CommandEndpoint
-<a name="API_CommandEndpoint"></a>
 
 The endpoint for a managed thing when sending a command.
 

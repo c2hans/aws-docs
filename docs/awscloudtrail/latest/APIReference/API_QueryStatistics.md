@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Qu
 ---
 
 # QueryStatistics
-<a name="API_QueryStatistics"></a>
 
 Metadata about a query, such as the number of results.
 

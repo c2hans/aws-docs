@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_InitializeSe
 ---
 
 # InitializeService
-<a name="API_InitializeService"></a>
 
 Initializes the ODB service for the first time in an account.
 

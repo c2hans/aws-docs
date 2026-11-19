@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Message and event destinations in AWS End User Messaging Social
-<a name="managing-event-destinations"></a>
 
 An event destination is an Amazon SNS topic or Connect Customer instance that WhatsApp events are sent to. When you turn on event publishing, all of your send and receive events are sent to the message and event destination. Use events to monitor, track, and analyze the status of outbound messages and incoming customer communications.
 

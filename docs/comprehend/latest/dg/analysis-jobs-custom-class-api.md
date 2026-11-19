@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/analysis-jobs-custo
 ---
 
 # Analysis jobs for custom classification (API)
-<a name="analysis-jobs-custom-class-api"></a>
 
 After you [create and train](train-custom-classifier-api.md) a custom document classifier, you can use the classifier to run analysis jobs.
 

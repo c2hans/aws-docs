@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-pro
 ---
 
 # Saving prompts to a library for use with Amazon Q Developer chat
-<a name="context-prompt-library"></a>
 
 You can build a library of common prompts that you can use when chatting with Amazon Q in the IDE. By storing these prompts in your library, you can easily insert them into the chat without having to retype the prompt each time. You can use saved prompts across multiple conversations and projects.
 

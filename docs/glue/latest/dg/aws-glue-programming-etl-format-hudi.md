@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Using the Hudi framework in AWS Glue
-<a name="aws-glue-programming-etl-format-hudi"></a>
 
 AWS Glue 3.0 and later supports Apache Hudi framework for data lakes. Hudi is an open-source data lake storage framework that simplifies incremental data processing and data pipeline development. This topic covers available features for using your data in AWS Glue when you transport or store your data in a Hudi table. To learn more about Hudi, see the official [Apache Hudi documentation](https://hudi.apache.org/docs/overview/).
 

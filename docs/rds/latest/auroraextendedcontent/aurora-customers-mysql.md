@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Aurora MySQL
-<a name="aurora-customers-mysql"></a>
 
 ## 8x8
 <a name="aurora-customers-8x8"></a>

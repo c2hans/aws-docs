@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Performing tertiary analysis with machine learning using Amazon SageMaker AI
-<a name="performing-tertiary-analysis-with-machine-learning-using-amazon-sagemaker"></a>
 
  Creating machine learning (ML) training sets and training models, and generating ML predictions using genomics data can be done using AWS Glue and Amazon SageMaker AI. We’ll provide recommendations and a reference architecture for creating training sets, training models, and generating predictions using AWS Glue, Amazon SageMaker AI, and Amazon SageMaker AI Jupyter notebooks.
 

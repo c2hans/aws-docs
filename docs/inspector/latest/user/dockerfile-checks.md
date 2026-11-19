@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/dockerfile-checks.
 ---
 
 # Amazon Inspector Dockerfile checks
-<a name="dockerfile-checks"></a>
 
  This section describes how to use the Amazon Inspector SBOM Generator to scan Dockerfiles and Docker container images for misconfigurations that introduce security vulnerabilities.
 

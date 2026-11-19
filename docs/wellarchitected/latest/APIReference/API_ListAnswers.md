@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListAnswers
-<a name="API_ListAnswers"></a>
 
 List of answers for a particular workload and lens.
 

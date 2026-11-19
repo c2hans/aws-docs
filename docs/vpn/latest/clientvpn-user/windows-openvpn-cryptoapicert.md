@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/windows-openvp
 ---
 
 # Use a certificate and establish an AWS Client VPN connection on Windows
-<a name="windows-openvpn-cryptoapicert"></a>
 
 You can configure the OpenVPN client to use a certificate and private key from the Windows Certificate System Store. This option is useful when you use a smart card as part of your Client VPN connection. For information about the OpenVPN client cryptoapicert option, see [Reference Manual for OpenVPN ](https://openvpn.net/community-resources/reference-manual-for-openvpn-2-6/) on the OpenVPN website.
 

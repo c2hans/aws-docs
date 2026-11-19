@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_AuditEvent
 ---
 
 # AuditEventFieldValueUnion
-<a name="API_connect-cases_AuditEventFieldValueUnion"></a>
 
 Object to store union of Field values.
 

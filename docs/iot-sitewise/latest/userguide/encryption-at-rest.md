@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/encryption
 ---
 
 # Encryption at rest in AWS IoT SiteWise
-<a name="encryption-at-rest"></a>
 
 AWS IoT SiteWise stores your data in the AWS Cloud and on AWS IoT SiteWise Edge gateways.
 

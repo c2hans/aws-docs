@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/igw-ingress-routing
 ---
 
 # Route internet traffic to a single network interface
-<a name="igw-ingress-routing"></a>
 
 You can route inbound internet traffic destined for large pools of public IP addresses to a single elastic network interface (ENI) in your VPC.
 

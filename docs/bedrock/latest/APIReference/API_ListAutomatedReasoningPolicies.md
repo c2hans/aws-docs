@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListAuto
 ---
 
 # ListAutomatedReasoningPolicies
-<a name="API_ListAutomatedReasoningPolicies"></a>
 
 Lists all Automated Reasoning policies in your account, with optional filtering by policy ARN. This helps you manage and discover existing policies.
 

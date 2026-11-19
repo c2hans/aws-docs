@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Va
 ---
 
 # ValidateConfiguration
-<a name="API_ValidateConfiguration"></a>
 
 Uses the validators in a configuration profile to validate a configuration.
 

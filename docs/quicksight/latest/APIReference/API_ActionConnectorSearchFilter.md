@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Actio
 ---
 
 # ActionConnectorSearchFilter
-<a name="API_ActionConnectorSearchFilter"></a>
 
 A filter used to search for action connectors based on specific criteria.
 

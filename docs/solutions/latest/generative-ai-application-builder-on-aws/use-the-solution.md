@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Use the solution
-<a name="use-the-solution"></a>
 
 ## Accessing the UI
 <a name="accessing-the-ui"></a>

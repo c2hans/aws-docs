@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # SearchJobBackupsResult
-<a name="API_BKS_SearchJobBackupsResult"></a>
 
 This contains the information about recovery points returned in results of a search job.
 

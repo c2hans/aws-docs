@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_Algorithm
 ---
 
 # AlgorithmSpecification
-<a name="API_AlgorithmSpecification"></a>
 
 Defines the Amazon Braket hybrid job to be created. Specifies the container image the job uses and the paths to the Python scripts used for entry and training.
 

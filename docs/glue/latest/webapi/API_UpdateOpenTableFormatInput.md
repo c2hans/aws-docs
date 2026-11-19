@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateOpenTableFo
 ---
 
 # UpdateOpenTableFormatInput
-<a name="API_UpdateOpenTableFormatInput"></a>
 
 Input parameters for updating open table format tables in AWS GlueData Catalog, serving as a wrapper for format-specific update operations such as Apache Iceberg.
 

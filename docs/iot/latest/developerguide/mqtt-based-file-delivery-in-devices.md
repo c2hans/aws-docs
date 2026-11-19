@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-fil
 ---
 
 # Using AWS IoT MQTT-based file delivery in devices
-<a name="mqtt-based-file-delivery-in-devices"></a>
 
 To initiate the data transfer process, a device must receive an **initial data set**, which includes a stream ID at minimum. You can use an [AWS IoT Jobs](iot-jobs.md) to schedule data transfer tasks for your devices by including the initial data set in the job document. When a device receives the initial data set, it should then start the interaction with AWS IoT MQTT-based file delivery. To exchange data with AWS IoT MQTT-based file delivery, a device should:
 + Use the MQTT protocol to subscribe to the [MQTT-based file delivery topics](reserved-topics.md#reserved-topics-mqtt-based-file-delivery).

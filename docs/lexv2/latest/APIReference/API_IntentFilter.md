@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentFilt
 ---
 
 # IntentFilter
-<a name="API_IntentFilter"></a>
 
 Filters the response from the `ListIntents` operation.
 

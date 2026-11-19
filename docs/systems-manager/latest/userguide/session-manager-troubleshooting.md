@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session
 ---
 
 # Troubleshooting Session Manager
-<a name="session-manager-troubleshooting"></a>
 
 Use the following information to help you troubleshoot problems with AWS Systems Manager Session Manager.
 

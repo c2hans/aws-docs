@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Setting up Kerberos authentication for Aurora MySQL DB clusters
-<a name="aurora-mysql-kerberos-setting-up"></a>
 
 Use AWS Managed Microsoft AD to set up Kerberos authentication for an Aurora MySQL DB cluster. To set up Kerberos authentication, take the following steps.
 

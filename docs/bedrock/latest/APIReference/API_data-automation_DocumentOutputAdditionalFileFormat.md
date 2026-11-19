@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # DocumentOutputAdditionalFileFormat
-<a name="API_data-automation_DocumentOutputAdditionalFileFormat"></a>
 
 Output settings for additional file formats.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListUpdates.
 ---
 
 # ListUpdates
-<a name="API_ListUpdates"></a>
 
 Lists the updates associated with an Amazon EKS resource in your AWS account, in the specified AWS Region.
 

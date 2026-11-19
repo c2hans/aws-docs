@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CertificateSummary
-<a name="API_CertificateSummary"></a>
 
 Describes an Amazon Lightsail SSL/TLS certificate.
 

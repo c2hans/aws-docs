@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Tensor
 ---
 
 # TensorBoardOutputConfig
-<a name="API_TensorBoardOutputConfig"></a>
 
 Configuration of storage locations for the Amazon SageMaker Debugger TensorBoard output data.
 

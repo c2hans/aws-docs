@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-ingres
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure Kubernetes Ingress for hybrid nodes
-<a name="hybrid-nodes-ingress"></a>
 
 This topic describes how to configure Kubernetes Ingress for workloads running on Amazon EKS Hybrid Nodes. [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. To make use of Ingress resources, a Kubernetes Ingress controller is required to set up the networking infrastructure and components that serve the network traffic.
 

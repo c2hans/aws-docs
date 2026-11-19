@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # BatchDescribeTypeConfigurationsError
-<a name="API_BatchDescribeTypeConfigurationsError"></a>
 
 Detailed information concerning an error generated during the setting of configuration data for a CloudFormation extension.
 

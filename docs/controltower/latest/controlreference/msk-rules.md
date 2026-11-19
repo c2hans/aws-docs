@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/msk
 ---
 
 # Amazon Managed Streaming for Apache Kafka (Amazon MSK) controls
-<a name="msk-rules"></a>
 
 **Topics**
 + [[CT.MSK.PR.1] Require an Amazon Managed Streaming for Apache Kafka (Amazon MSK) cluster to enforce encryption in transit between cluster broker nodes](#ct-msk-pr-1-description)

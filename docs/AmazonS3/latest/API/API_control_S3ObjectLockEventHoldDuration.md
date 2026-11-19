@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Object
 ---
 
 # S3ObjectLockEventHoldDuration
-<a name="API_control_S3ObjectLockEventHoldDuration"></a>
 
 Contains the duration configuration for an event hold, specified in either days or years.
 

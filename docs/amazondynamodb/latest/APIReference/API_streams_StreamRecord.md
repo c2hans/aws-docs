@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_s
 ---
 
 # StreamRecord
-<a name="API_streams_StreamRecord"></a>
 
 A description of a single data modification that was performed on an item in a DynamoDB table.
 

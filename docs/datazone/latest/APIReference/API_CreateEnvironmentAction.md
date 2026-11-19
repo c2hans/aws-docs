@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateE
 ---
 
 # CreateEnvironmentAction
-<a name="API_CreateEnvironmentAction"></a>
 
 Creates an action for the environment, for example, creates a console link for an analytics tool that is available in this environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Customer-managed tags in Accelerate
-<a name="acc-tag-req"></a>
 
 Certain tags are required to trigger various AMS Accelerate actions.
 

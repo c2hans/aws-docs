@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Configura
 ---
 
 # ConfigurationRecorderFilter
-<a name="API_ConfigurationRecorderFilter"></a>
 
 Filters configuration recorders by recording scope.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Cus
 ---
 
 # CustomerManagedS3Storage
-<a name="API_CustomerManagedS3Storage"></a>
 
 Contains information about a customer managed Amazon S3 bucket.
 

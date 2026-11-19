@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-smart-sifting-
 ---
 
 # Apply SageMaker smart sifting to your PyTorch script
-<a name="train-smart-sifting-apply-to-pytorch-script"></a>
 
 These instructions demonstrate how to enable SageMaker smart sifting with your training script.
 

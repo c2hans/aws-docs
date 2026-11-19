@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Cust
 ---
 
 # CustomerProfilesServiceLinkedRolePolicy
-<a name="CustomerProfilesServiceLinkedRolePolicy"></a>
 
 **Description**: Allows Amazon Connect Customer Profiles to access AWS services and resources on your behalf.
 

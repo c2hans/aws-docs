@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Example – Build a scoreboard headline from the game state without a model
-<a name="functions-examples-passthrough-gamestate"></a>
 
 A passthrough function that turns the tracked game state into a display string and a clutch-time flag, refreshed every 5 seconds. Requires an enabled event clipping output that is mapped to a sports data source, so that `media.clip.eventState` is populated. For more information, see [Aligning clips to plays with Sports Data](create-feed-outputs.md#event-clip-sports-data).
 

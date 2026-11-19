@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IdFormat.
 ---
 
 # IdFormat
-<a name="API_IdFormat"></a>
 
 Describes the ID format for a resource.
 

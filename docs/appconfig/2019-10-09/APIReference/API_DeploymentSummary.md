@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeploymentSummary
-<a name="API_DeploymentSummary"></a>
 
 Information about the deployment.
 

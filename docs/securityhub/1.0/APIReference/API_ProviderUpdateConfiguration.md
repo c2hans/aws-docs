@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Provide
 ---
 
 # ProviderUpdateConfiguration
-<a name="API_ProviderUpdateConfiguration"></a>
 
 The parameters required to update the configuration of an integration provider.
 

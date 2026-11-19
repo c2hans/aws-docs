@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/create-resource
 ---
 
 # Creating a resource link to a shared Data Catalog database
-<a name="create-resource-link-database"></a>
 
 You can create a resource link to a shared database by using the AWS Lake Formation console, API, or AWS Command Line Interface (AWS CLI).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # NumberValidation
-<a name="API_NumberValidation"></a>
 
 Validation for NUMBER fields.
 

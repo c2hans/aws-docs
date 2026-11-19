@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Design principles
-<a name="design-principles"></a>
 
  The following design principles apply to generative AI workloads created on AWS:
 +  **Design for controlled autonomy:** Implement comprehensive guardrails and boundaries that govern how AI systems operate, scale, and interact. By establishing clear operational requirements, security controls, and failure conditions, you can keep AI systems within safe, efficient, and cost-effective parameters while maintaining reliability. This principle addresses security, cost optimization, and reliability concerns for autonomous AI operations.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simp
 ---
 
 # Installing the Active Directory Administration Tools for Simple AD
-<a name="simple_ad_install_ad_tools"></a>
 
 To manage your Active Directory from an Amazon EC2 Windows Server instance, you need to install the Active Directory Domain Services and Active Directory Lightweight Directory Services Tools on the instance. Use the following procedure to install these tools on an EC2 Windows Server instance.
 

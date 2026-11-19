@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateCons
 ---
 
 # UpdateConsumableResource
-<a name="API_UpdateConsumableResource"></a>
 
 Updates a consumable resource.
 

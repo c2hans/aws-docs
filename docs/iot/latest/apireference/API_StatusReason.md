@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_StatusReason
 ---
 
 # StatusReason
-<a name="API_StatusReason"></a>
 
 Provide additional context about the status of a command execution using a reason code and description.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAmaz
 ---
 
 # AwsAmazonMqBrokerDetails
-<a name="API_AwsAmazonMqBrokerDetails"></a>
 
  Provides details about an Amazon MQ message broker. A message broker allows software applications and components to communicate using various programming languages, operating systems, and formal messaging protocols.
 

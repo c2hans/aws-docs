@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # ConfigTypeData
-<a name="API_ConfigTypeData"></a>
 
 Object containing the parameters of a `Config`.
 

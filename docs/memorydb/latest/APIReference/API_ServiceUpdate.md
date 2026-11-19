@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Service
 ---
 
 # ServiceUpdate
-<a name="API_ServiceUpdate"></a>
 
 An update that you can apply to your MemoryDB clusters.
 

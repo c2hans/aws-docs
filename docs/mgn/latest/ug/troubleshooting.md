@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/troubleshooting.html
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides help for common communication, credential, installation, and replication issues with AWS Transform MGN.
 

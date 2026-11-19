@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # DERMS on AWS for Utilities
-<a name="derms-on-aws-for-utilities"></a>
 
 Publication date: **February 19, 2021 ([Diagram history](#derms-history))**
 

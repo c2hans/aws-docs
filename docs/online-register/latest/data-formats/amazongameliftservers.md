@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon GameLift Servers
-<a name="amazongameliftservers"></a>
 
 Amazon GameLift Servers provides the following APIs for data retrieval.
 

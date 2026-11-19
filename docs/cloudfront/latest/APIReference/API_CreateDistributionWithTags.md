@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateDistributionWithTags
-<a name="API_CreateDistributionWithTags"></a>
 
 Create a new distribution with tags. This API operation requires the following IAM permissions:
 +  [CreateDistribution](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_CreateDistribution.html)

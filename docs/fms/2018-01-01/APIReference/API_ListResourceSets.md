@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListReso
 ---
 
 # ListResourceSets
-<a name="API_ListResourceSets"></a>
 
 Returns an array of `ResourceSetSummary` objects.
 

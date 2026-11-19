@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CreateSessionLogger
-<a name="API_CreateSessionLogger"></a>
 
 Creates a session logger.
 

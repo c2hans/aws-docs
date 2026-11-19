@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsw
 ---
 
 # Data retrieval APIs for AWS WAF Regional
-<a name="awswafregional"></a>
 
 AWS WAF Regional provides the following APIs for data retrieval.
 

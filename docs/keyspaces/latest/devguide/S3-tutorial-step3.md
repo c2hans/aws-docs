@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/S3-tutorial-st
 ---
 
 # Step 3: (Optional) Create a trigger to schedule the export job
-<a name="S3-tutorial-step3"></a>
 
 To run the export job on a regular basis, you can create a scheduled trigger using the AWS CLI. For more information, see [AWS Glue triggers](https://docs.aws.amazon.com/glue/latest/dg/about-triggers.html) in the AWS Glue Developer Guide.
 

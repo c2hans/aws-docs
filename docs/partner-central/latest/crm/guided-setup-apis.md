@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/guided-setup-
 ---
 
 # Partner Central API setup
-<a name="guided-setup-apis"></a>
 
 The steps in the following sections explain how to set up the AWS Partner Central API. You must use the API in order to use the latest version of the AWS Partner CRM connector.
 

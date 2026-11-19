@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateBillScenario
-<a name="API_AWSBCMPricingCalculator_CreateBillScenario"></a>
 
  Creates a new bill scenario to model potential changes to AWS usage and costs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorksp
 ---
 
 # DescribeWorkspaceImages
-<a name="API_DescribeWorkspaceImages"></a>
 
 Retrieves a list that describes one or more specified images, if the image identifiers are provided. Otherwise, all images in the account are described.
 

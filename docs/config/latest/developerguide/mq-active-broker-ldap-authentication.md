@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/mq-active-b
 ---
 
 # mq-active-broker-ldap-authentication
-<a name="mq-active-broker-ldap-authentication"></a>
 
 Checks if Amazon MQ ActiveMQ brokers use the LDAP authentication strategy to secure the broker. The rule is NON\_COMPLIANT if configuration.AuthenticationStrategy is not 'ldap'.
 

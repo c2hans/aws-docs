@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/windows-scanning.h
 ---
 
 # Scanning Windows EC2 instances with Amazon Inspector
-<a name="windows-scanning"></a>
 
 **Note**
 This page applies to customers that have not opted in to Enhanced EC2 Scanning.

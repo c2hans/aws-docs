@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # 2. Building from the source
-<a name="build-from-source"></a>
 
 As described earlier, building from the source is the approach where you do not migrate data from the current Elasticsearch or OpenSearch environment. Instead, you build indexes in the target domain directly from your log, or product-catalog data source or content source.
 

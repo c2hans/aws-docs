@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UpdateSt
 ---
 
 # UpdateStorageLensGroup
-<a name="API_control_UpdateStorageLensGroup"></a>
 
  Updates the existing Storage Lens group.
 

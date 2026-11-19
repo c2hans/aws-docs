@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf02.
 ---
 
 # Compute and hardware
-<a name="perf02"></a>
 
  The compute a workload runs on sets the ceiling for its performance, its cost, and the operational effort it demands. The right choice depends on how the workload actually behaves: how traffic arrives, how long work runs, how much state it holds, and how sharply demand changes. A compute choice made from habit rather than evidence leaves performance on the table, and it is expensive to unwind once it reaches production.
 

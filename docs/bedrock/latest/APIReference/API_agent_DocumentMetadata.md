@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Do
 ---
 
 # DocumentMetadata
-<a name="API_agent_DocumentMetadata"></a>
 
 Contains information about the metadata associate with the content to ingest into a knowledge base. Choose a `type` and include the field that corresponds to it.
 

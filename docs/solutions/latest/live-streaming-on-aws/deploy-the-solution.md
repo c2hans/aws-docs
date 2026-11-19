@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/d
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
 How to deploy the Live Streaming on AWS solution
 

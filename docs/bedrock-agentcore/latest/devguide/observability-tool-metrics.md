@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observ
 ---
 
 # AgentCore generated built-in tools observability data
-<a name="observability-tool-metrics"></a>
 
 **Topics**
 + [Observability tools metrics](#observability-tools-metrics-one)

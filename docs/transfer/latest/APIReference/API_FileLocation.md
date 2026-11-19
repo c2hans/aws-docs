@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_FileLoc
 ---
 
 # FileLocation
-<a name="API_FileLocation"></a>
 
 Specifies the Amazon S3 or EFS file details to be used in the step.
 

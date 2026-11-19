@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Im
 ---
 
 # ImportsListItem
-<a name="API_ImportsListItem"></a>
 
  Contains information about an import that was returned by a lookup request.
 

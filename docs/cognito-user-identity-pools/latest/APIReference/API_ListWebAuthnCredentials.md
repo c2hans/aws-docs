@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ListWebAuthnCredentials
-<a name="API_ListWebAuthnCredentials"></a>
 
 Generates a list of the currently signed-in user's registered passkey, or WebAuthn, credentials.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # The Microsoft Power BI suite
-<a name="the-microsoft-power-bi-suite"></a>
 
 To reduce confusion due to product naming similarities, this whitepaper presents what each Microsoft Power BI product and service is.
 

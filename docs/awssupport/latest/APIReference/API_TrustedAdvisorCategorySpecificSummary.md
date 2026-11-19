@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Trust
 ---
 
 # TrustedAdvisorCategorySpecificSummary
-<a name="API_TrustedAdvisorCategorySpecificSummary"></a>
 
 The container for summary information that relates to the category of the Trusted Advisor check.
 

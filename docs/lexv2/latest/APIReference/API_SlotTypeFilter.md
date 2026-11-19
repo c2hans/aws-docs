@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotTypeFi
 ---
 
 # SlotTypeFilter
-<a name="API_SlotTypeFilter"></a>
 
 Filters the response from the `ListSlotTypes` operation.
 

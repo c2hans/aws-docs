@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-vpc-
 ---
 
 # Amazon VPC endpoints for Amazon SWF
-<a name="swf-vpc-endpoints"></a>
 
 If you use Amazon Virtual Private Cloud (Amazon VPC) to host your AWS resources, you can establish a connection between your Amazon VPC and Amazon Simple Workflow Service workflows. You can use this connection with your Amazon SWF workflows without crossing the public internet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Setting up database authentication and resource access manually
-<a name="limitless-load.manual"></a>
 
 The manual process for setting up database authentication and resource access has the following steps:
 

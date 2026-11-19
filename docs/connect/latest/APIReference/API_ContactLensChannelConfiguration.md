@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactL
 ---
 
 # ContactLensChannelConfiguration
-<a name="API_ContactLensChannelConfiguration"></a>
 
 The per-channel conversational analytics configuration for a contact.
 

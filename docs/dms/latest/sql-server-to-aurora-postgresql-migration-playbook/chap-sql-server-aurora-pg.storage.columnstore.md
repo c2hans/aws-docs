@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Columnstore index functionality
-<a name="chap-sql-server-aurora-pg.storage.columnstore"></a>
 
 This topic provides reference information about the compatibility of columnstore indexes when migrating from Microsoft SQL Server 2019 to Amazon Aurora PostgreSQL. Aurora PostgreSQL does not offer a directly comparable feature to SQL Server’s columnstore indexes, which are used for data compression and query performance improvement in data warehousing scenarios.
 

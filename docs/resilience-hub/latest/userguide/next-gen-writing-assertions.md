@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Writing effective assertions
-<a name="next-gen-writing-assertions"></a>
 
 The most useful assertions tell the assessment something it cannot learn from your resources. Focus on the following areas:
 + **Traffic and scale** – Typical and peak request rates, how spiky traffic is, and whether spikes are predictable.

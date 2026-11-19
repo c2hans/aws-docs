@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SourceS3Conf
 ---
 
 # SourceS3Configuration
-<a name="API_SourceS3Configuration"></a>
 
 S3 configuration for source network data.
 

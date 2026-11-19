@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteE
 ---
 
 # DeleteEndpointAccess
-<a name="API_DeleteEndpointAccess"></a>
 
 Deletes a Redshift-managed VPC endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_TextEvent.
 ---
 
 # TextEvent
-<a name="API_TextEvent"></a>
 
 Contains text content to be synthesized into speech.
 

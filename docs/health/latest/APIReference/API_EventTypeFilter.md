@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_EventType
 ---
 
 # EventTypeFilter
-<a name="API_EventTypeFilter"></a>
 
 The values to use to filter results from the [DescribeEventTypes](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventTypes.html) operation.
 

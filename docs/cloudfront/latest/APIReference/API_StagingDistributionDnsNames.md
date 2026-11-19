@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Stagi
 ---
 
 # StagingDistributionDnsNames
-<a name="API_StagingDistributionDnsNames"></a>
 
 The CloudFront domain name of the staging distribution.
 

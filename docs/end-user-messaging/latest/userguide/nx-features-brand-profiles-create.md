@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Create a brand profile
-<a name="nx-features-brand-profiles-create"></a>
 
 A brand profile is a lightweight container that stores your business identity as a set of attributes. When you create a brand profile you choose how to populate it: start from scratch and add attributes yourself, or import from an existing registration and let AWS End User Messaging pre-fill the attributes for you. A new brand profile starts with a standard set of default attributes and is created with a status of `ACTIVE`. After you create it, add your company information, addresses, compliance documents, and logos with the attribute operations.
 

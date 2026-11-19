@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Select a primary, strategic cloud provider
-<a name="primary-provider"></a>
 
 Cloud adoption provides a wealth of benefits that are essential to IT modernization, cost-effectiveness, and innovation. However, adopting cloud technologies beyond limited SaaS applications can introduce challenges that educational institutions must carefully plan through to avoid unnecessary cost and complexity. The technological and business changes involved in implementing workloads in the cloud require staff enablement and adjustments to core infrastructure, including networking, security, governance, and operations.
 

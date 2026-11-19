@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/zip.html
 ---
 
 # .zip
-<a name="zip"></a>
 
 Used for tying things together or moving really fast.
 

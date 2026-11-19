@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetSession
-<a name="API_GetSession"></a>
 
 Gets a session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Region.ht
 ---
 
 # Region
-<a name="API_Region"></a>
 
 Describes a Region.
 

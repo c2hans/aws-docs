@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/interactions-get
 ---
 
 # GetCustomerProfileObject
-<a name="interactions-getcustomerprofileobject"></a>
 
 Retrieve a customer profile object of the desired type, based on recency or any search identifier. Customer Profiles must be enabled for your Connect Customer instance.
 

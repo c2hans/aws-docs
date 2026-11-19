@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HealthChe
 ---
 
 # HealthCheckPathSourceRequestObject
-<a name="API_HealthCheckPathSourceRequestObject"></a>
 
 Describes the source for a health check path in a request. The source defines the subnet and security group where a health check elastic network interface (ENI) is created to originate health check traffic.
 

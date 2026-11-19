@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Create an AgentCore gateway using the CLI
-<a name="gateway-create-cli"></a>
 
 You can use the AgentCore CLI to add a gateway to the current project. The CLI creates a gateway service role when you don’t provide one. Set the inbound authorization with `--authorizer-type`.
 

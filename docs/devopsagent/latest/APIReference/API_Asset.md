@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asse
 ---
 
 # Asset
-<a name="API_Asset"></a>
 
 Represents an asset in an agent space, including its identifier, type, metadata, version, and timestamps.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule SendInAppNotificationAction
-<a name="aws-properties-connect-rule-sendinappnotificationaction"></a>
 
 <a name="aws-properties-connect-rule-sendinappnotificationaction-description"></a>The `SendInAppNotificationAction` property type specifies Property description not available. for an [AWS::Connect::Rule](aws-resource-connect-rule.md).
 

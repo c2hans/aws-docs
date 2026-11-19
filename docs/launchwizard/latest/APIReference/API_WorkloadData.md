@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Wor
 ---
 
 # WorkloadData
-<a name="API_WorkloadData"></a>
 
 Describes a workload.
 

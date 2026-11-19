@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # CollectionErrorDetail
-<a name="API_CollectionErrorDetail"></a>
 
 Error information for an OpenSearch Serverless request.
 

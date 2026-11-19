@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Get
 ---
 
 # Getting started with DynamoDB
-<a name="GettingStartedDynamoDB"></a>
 
 You’ll learn how to connect to, create, and manage DynamoDB tables in the following sections.
 

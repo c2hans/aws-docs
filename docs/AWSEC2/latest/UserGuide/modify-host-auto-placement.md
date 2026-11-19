@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-host-auto
 ---
 
 # Modify the auto-placement setting for an existing Amazon EC2 Dedicated Host
-<a name="modify-host-auto-placement"></a>
 
 You can modify the auto-placement settings of a Dedicated Host after you have allocated it to your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListDataQualityRu
 ---
 
 # ListDataQualityRulesets
-<a name="API_ListDataQualityRulesets"></a>
 
 Returns a paginated list of rulesets for the specified list of AWS Glue tables.
 

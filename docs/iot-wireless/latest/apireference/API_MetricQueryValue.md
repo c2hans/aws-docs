@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Met
 ---
 
 # MetricQueryValue
-<a name="API_MetricQueryValue"></a>
 
 The aggregated values of the metric.
 

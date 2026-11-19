@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/event-
 ---
 
 # Event lifecycle
-<a name="event-lifecycle"></a>
 
 An event moves forward through five states. Each state narrows what can still be changed, which protects an event that is underway or finished from accidental modification. An event never moves backward.
 

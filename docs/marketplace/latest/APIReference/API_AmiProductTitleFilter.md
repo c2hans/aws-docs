@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AmiP
 ---
 
 # AmiProductTitleFilter
-<a name="API_AmiProductTitleFilter"></a>
 
 Object that allows filtering on product title.
 

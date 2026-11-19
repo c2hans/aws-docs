@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Tu
 ---
 
 # RDS for PostgreSQL wait events
-<a name="PostgreSQL.Tuning.concepts.summary"></a>
 
 The following table lists the wait events for RDS for PostgreSQL that most commonly indicate performance problems, and summarizes the most common causes and corrective actions..
 

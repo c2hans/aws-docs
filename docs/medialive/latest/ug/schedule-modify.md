@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-modify.html
 ---
 
 # Modifying actions in the schedule (console)
-<a name="schedule-modify"></a>
 
 You can't modify an action in the schedule, even if it hasn't been received by the channel. However, you can sometimes achieve a modify effect using a create action, a delete action, or both.
 

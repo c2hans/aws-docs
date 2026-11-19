@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # CreateTelemetryRuleForOrganization
-<a name="API_CreateTelemetryRuleForOrganization"></a>
 
  Creates a telemetry rule that applies across an AWS Organization. This operation can only be called by the organization's management account or a delegated administrator account.
 

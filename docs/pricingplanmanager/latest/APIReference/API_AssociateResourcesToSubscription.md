@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # AssociateResourcesToSubscription
-<a name="API_AssociateResourcesToSubscription"></a>
 
 Adds one or more resources to an existing subscription. The subscription must be in an active state that is not pending other changes.
 

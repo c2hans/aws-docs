@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FieldDefinition.h
 ---
 
 # FieldDefinition
-<a name="API_FieldDefinition"></a>
 
 Defines a field in an entity schema for REST connector data sources, specifying the field name and data type.
 

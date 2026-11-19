@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DeleteStack
-<a name="API_DeleteStack"></a>
 
 Deletes a specified stack. Once the call completes successfully, stack deletion starts. Deleted stacks don't show up in the [DescribeStacks](API_DescribeStacks.md) operation if the deletion has been completed successfully.
 

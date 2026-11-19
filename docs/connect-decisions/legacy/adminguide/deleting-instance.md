@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/dele
 ---
 
 # Deleting an instance
-<a name="deleting-instance"></a>
 
 To delete an instance, follow these steps.
 

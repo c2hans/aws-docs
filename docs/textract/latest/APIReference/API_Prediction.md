@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Predict
 ---
 
 # Prediction
-<a name="API_Prediction"></a>
 
 Contains information regarding predicted values returned by Amazon Textract operations, including the predicted value and the confidence in the predicted value.
 

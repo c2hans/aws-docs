@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationTelemetryRule AdvancedEventSelector
-<a name="aws-properties-observabilityadmin-organizationtelemetryrule-advancedeventselector"></a>
 
 Advanced event selectors let you create fine-grained selectors for management, data, and network activity events.
 

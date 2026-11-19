@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaTsIntro.ht
 ---
 
 # Troubleshoot issues with AWS Private Certificate Authority
-<a name="PcaTsIntro"></a>
 
 Consult the following topics if you have problems using AWS Private Certificate Authority.
 

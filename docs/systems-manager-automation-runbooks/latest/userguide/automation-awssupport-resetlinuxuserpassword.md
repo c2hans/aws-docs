@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ResetLinuxUserPassword`
-<a name="automation-awssupport-resetlinuxuserpassword"></a>
 
 **Description**
 

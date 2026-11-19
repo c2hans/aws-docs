@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # GameSessionDetail
-<a name="API_GameSessionDetail"></a>
 
 A game session's properties plus the protection policy currently in force.
 

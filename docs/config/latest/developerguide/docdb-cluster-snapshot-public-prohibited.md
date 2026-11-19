@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/docdb-clust
 ---
 
 # docdb-cluster-snapshot-public-prohibited
-<a name="docdb-cluster-snapshot-public-prohibited"></a>
 
 Checks if Amazon DocumentDB manual cluster snapshots are public. The rule is NON\_COMPLIANT if any Amazon DocumentDB manual cluster snapshots are public.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/api-putsign
 ---
 
 # PutSigningProfile
-<a name="api-putsigningprofile"></a>
 
 **Code signing for AWS IoT**
 

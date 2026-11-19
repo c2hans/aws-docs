@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/kitchen.ht
 ---
 
 # .kitchen
-<a name="kitchen"></a>
 
 Used by kitchen retailers, cooks, food bloggers, and anyone in the food industry.
 

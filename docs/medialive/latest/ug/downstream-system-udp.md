@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/downstream-system-ud
 ---
 
 # Coordinate with the downstream system
-<a name="downstream-system-udp"></a>
 
 You and the operator of the downstream system must agree about the destination for each output of the UDP output group.
 

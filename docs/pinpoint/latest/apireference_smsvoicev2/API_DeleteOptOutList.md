@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteOptOutList
-<a name="API_DeleteOptOutList"></a>
 
 Deletes an existing opt-out list. All opted out phone numbers in the opt-out list are deleted.
 

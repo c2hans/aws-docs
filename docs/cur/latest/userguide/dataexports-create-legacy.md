@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/dataexports-create-
 ---
 
 # Creating a Legacy CUR export
-<a name="dataexports-create-legacy"></a>
 
 You can create a data export of your legacy Cost and Usage Report (CUR). This workflow uses the legacy `cur` APIs and doesn't allow you to use SQL to define your export contents. CUR 2.0 with its additional columns and SQL access is only available as a standard data export.
 

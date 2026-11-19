@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/configure-inst
 ---
 
 # Configure instance retention
-<a name="configure-instance-retention"></a>
 
 Set up your Amazon EC2 Auto Scaling group to retain instances when termination lifecycle actions fail.
 

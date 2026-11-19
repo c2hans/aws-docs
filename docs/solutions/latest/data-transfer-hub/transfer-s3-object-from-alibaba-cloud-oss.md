@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/trans
 ---
 
 # Transfer S3 object from Alibaba Cloud OSS
-<a name="transfer-s3-object-from-alibaba-cloud-oss"></a>
 
  This tutorial describes how to transfer Objects from Alibaba Cloud OSS to Amazon S3.
 

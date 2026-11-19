@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-code-e
 ---
 
 # Code examples for SaaS product integration
-<a name="saas-code-examples"></a>
 
 You can use the following code examples to integrate your software as a service (SaaS) product with the AWS Marketplace APIs that are required for publishing and maintaining your product. For more information, see the following sections.
 

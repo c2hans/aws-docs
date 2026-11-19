@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/server-host-ke
 ---
 
 # Additional server host key information
-<a name="server-host-key-other"></a>
 
 You can select a host key to display details for that key.
 

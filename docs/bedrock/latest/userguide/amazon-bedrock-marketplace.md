@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/amazon-bedrock-
 ---
 
 # Amazon Bedrock Marketplace
-<a name="amazon-bedrock-marketplace"></a>
 
 Use Amazon Bedrock Marketplace to discover, test, and use over 100 popular, emerging, and specialized foundation models (FMs). These models are in addition to the selection of industry-leading models in Amazon Bedrock.
 

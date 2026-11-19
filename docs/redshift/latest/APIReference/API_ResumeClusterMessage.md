@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ResumeC
 ---
 
 # ResumeClusterMessage
-<a name="API_ResumeClusterMessage"></a>
 
 Describes a resume cluster operation. For example, a scheduled action to run the `ResumeCluster` API operation.
 

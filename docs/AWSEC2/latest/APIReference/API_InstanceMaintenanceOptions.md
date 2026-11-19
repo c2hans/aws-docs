@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceM
 ---
 
 # InstanceMaintenanceOptions
-<a name="API_InstanceMaintenanceOptions"></a>
 
 The maintenance options for the instance.
 

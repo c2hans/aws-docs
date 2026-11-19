@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/standardized-credent
 ---
 
 # AWS SDKs and Tools standardized credential providers
-<a name="standardized-credentials"></a>
 
 Many credential providers have been standardized to consistent defaults and to work the same way across many SDKs. This consistency increases productivity and clarity when coding across multiple SDKs. All settings can be overridden in code. For details, see your specific SDK API.
 

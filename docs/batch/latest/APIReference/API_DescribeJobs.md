@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJo
 ---
 
 # DescribeJobs
-<a name="API_DescribeJobs"></a>
 
 Describes a list of AWS Batch jobs.
 

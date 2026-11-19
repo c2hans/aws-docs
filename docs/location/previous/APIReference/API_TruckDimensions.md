@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Truck
 ---
 
 # TruckDimensions
-<a name="API_TruckDimensions"></a>
 
 Contains details about the truck dimensions in the unit of measurement that you specify. Used to filter out roads that can't support or allow the specified dimensions for requests that specify `TravelMode` as `Truck`.
 

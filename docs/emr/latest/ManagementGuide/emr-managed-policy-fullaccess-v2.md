@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-p
 ---
 
 # IAM managed policy for full access (v2 managed default policy) for Amazon EMR
-<a name="emr-managed-policy-fullaccess-v2"></a>
 
 The v2 scoped EMR default managed policies grant specific access privileges to users. They require a predefined Amazon EMR resource tag and `iam:PassRole` condition keys to resources used by Amazon EMR, such as the `Subnet` and `SecurityGroup` you use to launch your cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 ---
 
 # Example: Style a map
-<a name="example-switch-styles"></a>
 
 ![Side-by-side comparison of light and dark map themes showing Vancouver area.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/map-styles-both_small.png)
 

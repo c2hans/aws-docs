@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConv
 ---
 
 # DescribeConversionConfiguration
-<a name="API_DescribeConversionConfiguration"></a>
 
 Returns configuration parameters for a schema conversion project.
 

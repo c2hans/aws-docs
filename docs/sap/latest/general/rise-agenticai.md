@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-agenticai.html
 ---
 
 # Agentic AI
-<a name="rise-agenticai"></a>
 
  **What is an agentic AI**
 

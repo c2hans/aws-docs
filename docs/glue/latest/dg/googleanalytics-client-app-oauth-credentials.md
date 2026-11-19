@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleanalytics-client-ap
 ---
 
 # Steps to create a client app and OAuth 2.0 credentials
-<a name="googleanalytics-client-app-oauth-credentials"></a>
 
  For more information, see [ Google Analytics4 API documentation ](https://developers.google.com/analytics/devguides/reporting/data/v1).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Deplo
 ---
 
 # DeploymentOverview
-<a name="API_DeploymentOverview"></a>
 
 Information about the deployment status of the instances in the deployment.
 

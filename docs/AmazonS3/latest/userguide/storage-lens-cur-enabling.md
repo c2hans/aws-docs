@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-c
 ---
 
 # Enabling AWS Billing and Cost Management publishing
-<a name="storage-lens-cur-enabling"></a>
 
 Enable AWS Billing and Cost Management publishing for new or existing S3 Storage Lens dashboard configurations by using the Amazon S3 console, AWS CLI, AWS SDKs, or Amazon S3 REST API. To view prefix costs, you must also enable split cost allocation data for Amazon S3 in AWS Billing and Cost Management. For more information, see [Next step: Enable split cost allocation data](#storage-lens-cur-next-steps).
 

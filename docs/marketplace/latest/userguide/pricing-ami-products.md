@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/pricing-ami
 ---
 
 # AMI product pricing for AWS Marketplace
-<a name="pricing-ami-products"></a>
 
 AWS Marketplace has multiple pricing models for Amazon Machine Image (AMI) products. With seller private offers, there are options available for multi-year and custom duration contracts. For more information about multi-year and custom duration contracts, see [Preparing a private offer for your AWS Marketplace product](private-offers-overview.md) and [Private offer installment plans](installment-plans.md). The following sections provide information about pricing models for AMI-based products.
 

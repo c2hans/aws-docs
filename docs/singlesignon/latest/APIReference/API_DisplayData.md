@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Dis
 ---
 
 # DisplayData
-<a name="API_DisplayData"></a>
 
 A structure that describes how the portal represents an application provider.
 

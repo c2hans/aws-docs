@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ErrorLogSe
 ---
 
 # ErrorLogSettings
-<a name="API_ErrorLogSettings"></a>
 
 Settings parameters for the error logs, whether it is enabled or disabled.
 

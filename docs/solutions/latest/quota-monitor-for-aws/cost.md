@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/c
 ---
 
 # Cost
-<a name="cost"></a>
 
 The following tables provide a sample cost breakdown for deploying this solution with the default parameters in the US East (N. Virginia) Region for one month. There are additional minimal costs for a hub stack and a spoke stack.
 

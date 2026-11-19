@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutE
 ---
 
 # PutEvents
-<a name="API_PutEvents"></a>
 
 Sends custom events to Amazon EventBridge so that they can be matched to rules.
 

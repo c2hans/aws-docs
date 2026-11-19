@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListBudgetsForResource
-<a name="API_ListBudgetsForResource"></a>
 
 Lists all the budgets associated to the specified resource.
 

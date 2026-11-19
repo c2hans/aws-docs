@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ExportFilesMetadata
-<a name="API_ExportFilesMetadata"></a>
 
 Provides details about the stream session's exported files.
 

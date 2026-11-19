@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TrendmicroS
 ---
 
 # TrendmicroSourceProperties
-<a name="API_TrendmicroSourceProperties"></a>
 
  The properties that are applied when using Trend Micro as a flow source.
 

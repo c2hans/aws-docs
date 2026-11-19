@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Using Advance Pay
-<a name="manage-advancepay"></a>
 
 **Note**
 *Advance Pay is in public preview for AWS Billing and Cost Management and is subject to change. This feature is available for a select group of customers. Your use of advance pay is subject to the Betas and Previews terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) (Section 2).*

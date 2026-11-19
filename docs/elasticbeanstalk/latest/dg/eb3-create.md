@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-create.ht
 ---
 
 # **eb create**
-<a name="eb3-create"></a>
 
 ## Description
 <a name="eb3-createdescription"></a>

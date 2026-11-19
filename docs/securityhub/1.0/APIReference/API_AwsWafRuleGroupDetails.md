@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRuleGroupDetails
-<a name="API_AwsWafRuleGroupDetails"></a>
 
 Provides information about an AWS WAF rule group. A rule group is a collection of rules for inspecting and controlling web requests.
 

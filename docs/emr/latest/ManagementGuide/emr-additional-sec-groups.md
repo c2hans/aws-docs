@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-additiona
 ---
 
 # Working with additional security groups for an Amazon EMR cluster
-<a name="emr-additional-sec-groups"></a>
 
 Whether you use the default managed security groups or specify custom managed security groups, you can use additional security groups. Additional security groups give you the flexibility to tailor access between different clusters and from external clients, resources, and applications.
 

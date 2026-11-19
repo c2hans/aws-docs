@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/cloudwatch-ipam.html
 ---
 
 # Monitor IPAM with Amazon CloudWatch
-<a name="cloudwatch-ipam"></a>
 
 IPAM automatically stores metrics related to IP address usage (such as the IP address space available in your IPAM pools and the number of resource CIDRs that comply with allocation rules) and resource utilization in the `AWS/IPAM` [Amazon CloudWatch namespace](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Namespace) in the home Region of your IPAM.
 

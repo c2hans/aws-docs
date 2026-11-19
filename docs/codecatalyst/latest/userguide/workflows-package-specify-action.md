@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Specifying CodeCatalyst package repositories in workflows
-<a name="workflows-package-specify-action"></a>
 
 In CodeCatalyst, you can add a CodeCatalyst package repository to your build and test actions in your workflow. Your package repository must be configured with a package format, such as npm. You can also choose to include a sequence of scopes for your selected package repository.
 

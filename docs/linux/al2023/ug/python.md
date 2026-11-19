@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/python.html
 ---
 
 # Python in AL2023
-<a name="python"></a>
 
 AL2023 removed Python 2.7 and any components requiring Python are now written to work with Python 3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-manageme
 ---
 
 # Compare versions of a prompt in Prompt management
-<a name="prompt-management-version-compare"></a>
 
 The Amazon Bedrock console offers a tool to let you compare versions of a prompt that you've created in Prompt management. The tool highlights fields that exist in one version that don't exist in the other.
 

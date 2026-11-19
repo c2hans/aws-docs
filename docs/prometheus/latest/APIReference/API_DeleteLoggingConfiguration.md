@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Delet
 ---
 
 # DeleteLoggingConfiguration
-<a name="API_DeleteLoggingConfiguration"></a>
 
 Deletes the rules and alerting logging configuration for a workspace.
 

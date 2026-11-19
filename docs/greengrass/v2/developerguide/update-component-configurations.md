@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/update-comp
 ---
 
 # Update component configurations
-<a name="update-component-configurations"></a>
 
 Component configurations are JSON objects that define the parameters for each component. Each component's recipe defines its default configuration, which you modify when you deploy components to core devices.
 

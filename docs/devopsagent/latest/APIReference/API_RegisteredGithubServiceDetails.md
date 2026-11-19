@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredGithubServiceDetails
-<a name="API_RegisteredGithubServiceDetails"></a>
 
 Details specific to a registered GitHub service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/endpoints-
 ---
 
 # AWS HealthImaging endpoints and quotas
-<a name="endpoints-quotas"></a>
 
 The following topics contain information about AWS HealthImaging service endpoints and quotas.
 

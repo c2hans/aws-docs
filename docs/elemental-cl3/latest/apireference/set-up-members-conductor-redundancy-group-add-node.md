@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST: Add a Node to a Conductor Redundancy Groups
-<a name="set-up-members-conductor-redundancy-group-add-node"></a>
 
 Add a Conductor node to the specified Conductor redundancy group. When setting up a Conductor redundancy group, you must add exactly two nodes.
 

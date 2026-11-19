@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-output-docu
 ---
 
 # Documents
-<a name="bda-output-documents"></a>
 
 Standard output for documents lets you set the granularity of response you're interested in as well as establishing output format and text format in the output. Below are some of the outputs you can enable.
 

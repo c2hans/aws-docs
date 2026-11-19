@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CustomMo
 ---
 
 # CustomModelSummary
-<a name="API_CustomModelSummary"></a>
 
 Summary information for a custom model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # RabbitMQ 4.3
-<a name="rabbitmq-43"></a>
 
  Amazon MQ now supports RabbitMQ 4.3 in the RabbitMQ 4 release series on the mq.m7g instance type across all supported instance sizes. RabbitMQ 4.3 introduces quorum queue enhancements, new exchange types, and completes the removal of several features that were deprecated in earlier 4.x releases. For more information about this release, see the [RabbitMQ 4.3.0 release notes](https://github.com/rabbitmq/rabbitmq-server/releases/tag/v4.3.0) on the GitHub website.
 

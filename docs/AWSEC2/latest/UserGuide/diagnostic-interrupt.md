@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/diagnostic-inter
 ---
 
 # Send a diagnostic interrupt to debug an unreachable Amazon EC2 instance
-<a name="diagnostic-interrupt"></a>
 
 **Warning**
 Diagnostic interrupts are intended for use by advanced users. Incorrect usage could negatively impact your instance. Sending a diagnostic interrupt to an instance could trigger an instance to crash and reboot, which could lead to the loss of data.

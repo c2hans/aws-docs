@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_InstanceLa
 ---
 
 # InstanceLaunchTemplateUpdate
-<a name="API_InstanceLaunchTemplateUpdate"></a>
 
 The instance launch configuration for updating an Amazon ECS Managed Instances capacity provider. You cannot change `capacityOptionType` or `fipsEnabled` after the compute environment is created.
 

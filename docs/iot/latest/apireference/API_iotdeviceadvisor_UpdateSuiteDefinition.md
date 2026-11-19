@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # UpdateSuiteDefinition
-<a name="API_iotdeviceadvisor_UpdateSuiteDefinition"></a>
 
 Updates a Device Advisor test suite.
 

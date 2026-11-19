@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # SourceDetails
-<a name="API_SourceDetails"></a>
 
 The details about the upstream source from which a registry record was detected. Exactly one member is populated, corresponding to the source type.
 

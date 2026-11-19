@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateCloudE
 ---
 
 # UpdateCloudExadataInfrastructureStorageCapacity
-<a name="API_UpdateCloudExadataInfrastructureStorageCapacity"></a>
 
 Adds storage capacity to the specified Exadata infrastructure.
 

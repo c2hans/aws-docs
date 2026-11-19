@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableFieldSubtotalOptions
-<a name="API_PivotTableFieldSubtotalOptions"></a>
 
 The optional configuration of subtotals cells.
 

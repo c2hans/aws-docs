@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Insta
 ---
 
 # InstanceSummary
-<a name="API_InstanceSummary"></a>
 
  *This data type has been deprecated.*
 

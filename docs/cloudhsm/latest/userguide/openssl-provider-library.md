@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/openssl-provid
 ---
 
 # OpenSSL Provider for AWS CloudHSM Client SDK 5
-<a name="openssl-provider-library"></a>
 
 The AWS CloudHSM OpenSSL Provider allows you to offload TLS cryptographic operations to your CloudHSM cluster through the OpenSSL Provider API. The Provider interface is the recommended approach for new deployments using OpenSSL 3.2 and later.
 

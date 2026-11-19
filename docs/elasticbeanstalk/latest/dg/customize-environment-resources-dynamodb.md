@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-env
 ---
 
 # Example: DynamoDB, CloudWatch, and SNS
-<a name="customize-environment-resources-dynamodb"></a>
 
 This configuration file sets up the DynamoDB table as a session handler for a PHP-based application using the AWS SDK for PHP 2. To use this example, you must have an IAM instance profile, which is added to the instances in your environment and used to access the DynamoDB table.
 

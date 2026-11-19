@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_NonTa
 ---
 
 # NonTalkTimeFilter
-<a name="API_NonTalkTimeFilter"></a>
 
 Flag the presence or absence of periods of silence in your Call Analytics transcription output.
 

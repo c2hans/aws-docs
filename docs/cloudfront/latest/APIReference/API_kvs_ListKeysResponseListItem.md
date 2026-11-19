@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_L
 ---
 
 # ListKeysResponseListItem
-<a name="API_kvs_ListKeysResponseListItem"></a>
 
 A key-value pair.
 

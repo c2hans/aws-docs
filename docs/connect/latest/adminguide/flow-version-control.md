@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/flow-version-c
 ---
 
 # Flow version control: Roll back a flow
-<a name="flow-version-control"></a>
 
 ## View a previous version of a flow
 <a name="how-to-view-previous-flows"></a>

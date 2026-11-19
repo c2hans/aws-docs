@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudformat
 ---
 
 # cloudformation-stack-notification-check
-<a name="cloudformation-stack-notification-check"></a>
 
 Checks if your CloudFormation stacks send event notifications to an Amazon SNS topic. Optionally checks if specified Amazon SNS topics are used. The rule is NON\_COMPLIANT if CloudFormation stacks do not send notifications.
 

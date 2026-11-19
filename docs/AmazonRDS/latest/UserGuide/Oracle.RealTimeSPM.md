@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.RealTi
 ---
 
 # Real-time SQL plan management in RDS for Oracle
-<a name="Oracle.RealTimeSPM"></a>
 
 Starting with Oracle Database 26ai (26.0.0.0), Amazon RDS for Oracle supports real-time SQL plan management. This feature prevents SQL performance regressions by detecting execution plan changes, evaluating them against earlier plans, and selecting the best-performing plan from a SQL plan baseline as needed. This process is transparent and doesn't require manual intervention.
 

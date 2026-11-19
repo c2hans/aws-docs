@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/freshsales-support.html
 ---
 
 # AWS Glue support for Freshsales
-<a name="freshsales-support"></a>
 
 AWS Glue supports Freshsales as follows:
 

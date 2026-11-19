@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_SourceDataSe
 ---
 
 # SourceDataSetting
-<a name="API_SourceDataSetting"></a>
 
 Defines settings for a source data provider for a data migration.
 

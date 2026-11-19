@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetIntegration
 ---
 
 # GetIntegration
-<a name="API_GetIntegration"></a>
 
 Get the integration settings.
 

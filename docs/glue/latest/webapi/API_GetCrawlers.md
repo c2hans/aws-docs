@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetCrawlers.html
 ---
 
 # GetCrawlers
-<a name="API_GetCrawlers"></a>
 
 Retrieves metadata for all crawlers defined in the customer account.
 

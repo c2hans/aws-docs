@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # Assess
-<a name="assess"></a>
 
 The assess phase for DevOps on AWS Mainframe Modernization is a crucial initial step in the journey to modernize legacy mainframe applications because it does the following:
 + Helps organizations gain a clear understanding of their current state

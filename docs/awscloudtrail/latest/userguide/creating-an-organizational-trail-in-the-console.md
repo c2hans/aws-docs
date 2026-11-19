@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-
 ---
 
 # Creating a trail for your organization in the console
-<a name="creating-an-organizational-trail-in-the-console"></a>
 
 To create an organization trail from the CloudTrail console, you must sign in to the console as a user or role in the management or delegated administrator account that has [sufficient permissions](creating-an-organizational-trail-prepare.md#org_trail_permissions). If you don't sign in with the management or delegated administrator account, you won't see the option to apply a trail to an organization when you create or edit a trail from the CloudTrail console.
 

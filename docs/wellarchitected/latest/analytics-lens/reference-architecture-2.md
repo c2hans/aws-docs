@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/re
 ---
 
 # Reference architecture
-<a name="reference-architecture-2"></a>
 
 ![Reference architecture diagram for streaming data analytics](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/streaming-data-analytics-reference-architecture.png)
 

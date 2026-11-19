@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdatedMcpDescriptorFields
-<a name="API_UpdatedMcpDescriptorFields"></a>
 
 Individual MCP descriptor fields that can be updated independently.
 

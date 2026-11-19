@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_GetPl
 ---
 
 # GetPlace
-<a name="API_GetPlace"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend you upgrade to the [V2 `GetPlace`](/location/latest/APIReference/API_geoplaces_GetPlace.html) operation unless you require Grab data.

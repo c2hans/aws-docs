@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::PaymentManager
-<a name="aws-resource-bedrockagentcore-paymentmanager"></a>
 
 Specifies a payment manager for Amazon Bedrock AgentCore. A payment manager configures authorization and AWS Identity and Access Management (IAM) role settings that govern payment operations performed by AI agents, including inbound request authentication through JSON Web Token (JWT) or IAM-based authorizers.
 

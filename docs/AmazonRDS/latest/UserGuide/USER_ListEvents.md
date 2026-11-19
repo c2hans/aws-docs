@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ListEven
 ---
 
 # Viewing Amazon RDS events
-<a name="USER_ListEvents"></a>
 
 You can retrieve the following event information for your Amazon RDS resources:
 + Resource name

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy
 ---
 
 # Deploying Python applications with Elastic Beanstalk
-<a name="create-deploy-python-apps"></a>
 
 This chapter provides instructions for configuring and deploying your Python web application to AWS Elastic Beanstalk. Elastic Beanstalk makes it easy to deploy, manage, and scale your Python web applications using Amazon Web Services.
 

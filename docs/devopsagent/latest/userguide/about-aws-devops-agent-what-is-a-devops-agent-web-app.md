@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-d
 ---
 
 # What is a DevOps Agent Web App?
-<a name="about-aws-devops-agent-what-is-a-devops-agent-web-app"></a>
 
 AWS DevOps Agent uses a dual-console architecture that separates administrative functions from day-to-day operational activities. This design enables administrators to configure the service while operations teams focus on incident response and prevention.
 

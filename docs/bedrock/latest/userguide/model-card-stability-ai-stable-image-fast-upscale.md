@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stab
 ---
 
 # Stable Image Fast Upscale
-<a name="model-card-stability-ai-stable-image-fast-upscale"></a>
 
 ## ![Stability AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/stability.png) Stability AI — Stable Image Fast Upscale
 <a name="model-card-stability-ai-stable-image-fast-upscale-header"></a>

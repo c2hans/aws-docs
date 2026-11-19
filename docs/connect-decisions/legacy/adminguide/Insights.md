@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/Insi
 ---
 
 # Insights
-<a name="Insights"></a>
 
 The following APIs are used by the Insights application to manage filters, watchlists, and view inventory changes.
 

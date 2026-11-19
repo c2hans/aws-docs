@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-p
 ---
 
 # Product data feed
-<a name="data-feed-product"></a>
 
 This data feed provides information about all products you've created as the seller of record and all products you're authorized to resell.
 

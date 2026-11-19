@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeLoadBalancerTargetGroups
-<a name="API_DescribeLoadBalancerTargetGroups"></a>
 
 **Note**
 This API operation is superseded by [DescribeTrafficSources](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DescribeTrafficSources.html), which can describe multiple traffic sources types. We recommend using `DetachTrafficSources` to simplify how you manage traffic sources. However, we continue to support `DescribeLoadBalancerTargetGroups`. You can use both the original `DescribeLoadBalancerTargetGroups` API operation and `DescribeTrafficSources` on the same Auto Scaling group.

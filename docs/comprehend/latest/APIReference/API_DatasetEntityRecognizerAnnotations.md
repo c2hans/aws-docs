@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Datas
 ---
 
 # DatasetEntityRecognizerAnnotations
-<a name="API_DatasetEntityRecognizerAnnotations"></a>
 
 Describes the annotations associated with a entity recognizer.
 

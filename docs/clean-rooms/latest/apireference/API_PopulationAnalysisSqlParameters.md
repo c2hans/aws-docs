@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Popu
 ---
 
 # PopulationAnalysisSqlParameters
-<a name="API_PopulationAnalysisSqlParameters"></a>
 
 Contains the SQL parameters used to populate an intermediate table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FieldOption
-<a name="API_connect-cases_FieldOption"></a>
 
 Object for field Options information.
 

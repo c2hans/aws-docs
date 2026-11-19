@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # UpdateSubscription
-<a name="API_UpdateSubscription"></a>
 
 Changes the plan tier of an existing subscription.
 

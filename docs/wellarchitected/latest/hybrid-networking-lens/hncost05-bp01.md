@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNCOST05-BP01 Forecast demand and baseline requirements before scaling dedicated connections
-<a name="hncost05-bp01"></a>
 
  Begin with IPSec VPN or small-scale dedicated connection links during testing or migration phases. Monitor traffic patterns to establish baseline bandwidth needs. Scale to larger dedicated connections or LAGs only after validating requirements.
 

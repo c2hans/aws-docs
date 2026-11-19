@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-security-
 ---
 
 # Update your security groups to reference peer security groups
-<a name="vpc-peering-security-groups"></a>
 
 You can update the inbound or outbound rules for your VPC security groups to reference security groups for peered VPCs. Doing so allows traffic to flow to and from instances that are associated with the referenced security group in the peered VPC.
 

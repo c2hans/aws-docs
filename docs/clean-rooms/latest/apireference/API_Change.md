@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Chan
 ---
 
 # Change
-<a name="API_Change"></a>
 
 Represents a single change within a collaboration change request, containing the change identifier and specification.
 

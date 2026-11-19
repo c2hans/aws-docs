@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # MemberFrameworkConfiguration
-<a name="API_MemberFrameworkConfiguration"></a>
 
 Configuration properties relevant to a member for the blockchain framework that the Managed Blockchain network uses.
 

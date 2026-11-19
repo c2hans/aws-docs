@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MouseMoveArguments
-<a name="API_MouseMoveArguments"></a>
 
 Arguments for a mouse move action.
 

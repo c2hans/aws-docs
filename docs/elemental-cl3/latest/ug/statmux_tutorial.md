@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/statmux_tutorial
 ---
 
 # AWS Elemental Statmux tutorial
-<a name="statmux_tutorial"></a>
 
 This tutorial describes how to create a statmuxed MPTS workflow.
 

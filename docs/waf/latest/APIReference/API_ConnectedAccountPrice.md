@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ConnectedAcc
 ---
 
 # ConnectedAccountPrice
-<a name="API_ConnectedAccountPrice"></a>
 
 The price per request for a connected account payment network, specifying the amount and cryptocurrency.
 

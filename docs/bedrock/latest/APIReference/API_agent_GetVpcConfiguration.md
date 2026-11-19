@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetVpcConfiguration
-<a name="API_agent_GetVpcConfiguration"></a>
 
 Returns the details and current status of a single VPC configuration. Use this operation to poll for the outcome of an asynchronous create or delete.
 

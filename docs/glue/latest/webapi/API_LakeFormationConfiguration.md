@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_LakeFormationConf
 ---
 
 # LakeFormationConfiguration
-<a name="API_LakeFormationConfiguration"></a>
 
 Specifies AWS Lake Formation configuration settings for the crawler.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/quotas.html
 ---
 
 # Quotas for the AWS assistant
-<a name="quotas"></a>
 
 Your use of the AWS assistant is subject to the following quotas.
 

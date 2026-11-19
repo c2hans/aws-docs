@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS04-BP04 Establish AdOps measurement for shoppable ad fulfillment and non-intrusive ads
-<a name="advops04-bp04"></a>
 
  Shoppable ads use an embedding-based matching pipeline that matches image embeddings to content embeddings in an ecommerce vector store based on similarity scores. Non-intrusive ads (squeezebacks, overlays, and pause ads) operate outside conventional click-through attribution. Shoppable and non-intrusive ads require measurement approaches distinct from conventional ad attribution to demonstrate effectiveness to advertisers.
 

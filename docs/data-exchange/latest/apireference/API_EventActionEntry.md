@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ev
 ---
 
 # EventActionEntry
-<a name="API_EventActionEntry"></a>
 
 An event action is an object that defines the relationship between a specific event and an automated action that will be taken on behalf of the customer.
 

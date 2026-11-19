@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/u
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Using the AWS Partner Central Account API
-<a name="using-the-account-api"></a>
 
 ## Managing partner account
 <a name="managing-partner-account"></a>

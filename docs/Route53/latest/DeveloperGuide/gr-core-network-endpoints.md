@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-core-ne
 ---
 
 # Connecting a global resolver to a core network
-<a name="gr-core-network-endpoints"></a>
 
 A *core network endpoint* connects a global resolver to an AWS Cloud WAN (Cloud WAN) core network. After you connect the core network, you can use the core network's segments as access sources for DNS resolution. Clients that reach the global resolver from those segments are authorized the same way as other access sources that you configure.
 

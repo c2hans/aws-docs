@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/API-CBR-intro
 ---
 
 # Use AWS Private CA to implement Matter certificates
-<a name="API-CBR-intro"></a>
 
 You can use the AWS Private Certificate Authority API to create certificates that conform to the [Matter connectivity standard](https://github.com/project-chip/connectedhomeip). Matter specifies certificate configurations that improve the security and consistency of internet of things (IoT) devices across multiple engineering platforms. For more information about Matter, see [buildwithmatter.com](https://buildwithmatter.com).
 

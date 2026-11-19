@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/access-lights
 ---
 
 # Access Lightsail
-<a name="access-lightsail"></a>
 
 You can access Amazon Lightsail using a variety of interfaces and service endpoints.
 

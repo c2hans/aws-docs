@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteA
 ---
 
 # DeleteAggregatorV2
-<a name="API_DeleteAggregatorV2"></a>
 
 Deletes the Aggregator V2.
 

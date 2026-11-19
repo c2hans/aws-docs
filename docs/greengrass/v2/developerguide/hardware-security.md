@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/hardware-se
 ---
 
 # Hardware security integration
-<a name="hardware-security"></a>
 
 **Note**
 For [Greengrass nucleus](greengrass-nucleus-component.md), this feature requires v2.5.3 or later. AWS IoT Greengrass doesn't currently support this feature on Windows core devices.

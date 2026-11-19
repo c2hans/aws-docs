@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ValueMappings
-<a name="API_ValueMappings"></a>
 
 Represents the data binding configuration for a value map.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Vi
 ---
 
 # VirtualInterface
-<a name="API_VirtualInterface"></a>
 
 Information about a virtual interface.
 

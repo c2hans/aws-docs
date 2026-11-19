@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Creating Elastic Beanstalk environments with the API
-<a name="environments-create-api"></a>
 
 1. Call `CheckDNSAvailability` with the following parameter:
    + `CNAMEPrefix` = `SampleApp`

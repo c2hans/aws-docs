@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 Consider using the following DynamoDB design best practices:
 + [Partition key design](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-uniform-load.html) – Use a high-cardinality partition key to distribute load evenly.

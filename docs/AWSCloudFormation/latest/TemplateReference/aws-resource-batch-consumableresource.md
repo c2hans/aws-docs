@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::ConsumableResource
-<a name="aws-resource-batch-consumableresource"></a>
 
 The `AWS::Batch::ConsumableResource` resource specifies the parameters for an AWS Batch consumable resource. For more information, see [Resource-aware scheduling](https://docs.aws.amazon.com/batch/latest/userguide/resource-aware-scheduling.html) in the * AWS Batch User Guide *.
 

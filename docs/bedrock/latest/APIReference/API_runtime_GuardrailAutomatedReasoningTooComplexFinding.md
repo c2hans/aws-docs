@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningTooComplexFinding
-<a name="API_runtime_GuardrailAutomatedReasoningTooComplexFinding"></a>
 
 Indicates that the input exceeds the processing capacity due to the volume or complexity of the logical information.
 

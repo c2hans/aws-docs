@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ExamplePolicies_
 ---
 
 # Example policies to control access the Amazon EC2 API
-<a name="ExamplePolicies_EC2"></a>
 
 You can use IAM policies to grant users the permissions required to work with Amazon EC2. For step-by-step directions, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *IAM User Guide*.
 

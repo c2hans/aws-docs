@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Dataset
-<a name="aws-resource-bedrockagentcore-dataset"></a>
 
 Specifies a dataset for Amazon Bedrock AgentCore. A dataset stores collections of examples used for agent evaluation, including inline examples or references to JSONL files in Amazon S3.
 

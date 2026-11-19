@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-xai
 ---
 
 # xAI
-<a name="model-cards-xai"></a>
 
 The following xAI models are available in Amazon Bedrock:
 

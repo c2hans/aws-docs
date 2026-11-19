@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ReportO
 ---
 
 # ReportOutput
-<a name="API_ReportOutput"></a>
 
 The output location or cause of a failure in report generation.
 

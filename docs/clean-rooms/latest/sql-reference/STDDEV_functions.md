@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/STDDEV_
 ---
 
 # STDDEV\_SAMP and STDDEV\_POP functions
-<a name="STDDEV_functions"></a>
 
  The STDDEV\_SAMP and STDDEV\_POP functions return the sample and population standard deviation of a set of numeric values (integer, decimal, or floating-point). The result of the STDDEV\_SAMP function is equivalent to the square root of the sample variance of the same set of values.
 

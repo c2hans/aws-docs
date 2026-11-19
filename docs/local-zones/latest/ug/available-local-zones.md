@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/local-zones/latest/ug/available-local-zo
 ---
 
 # Available Local Zones
-<a name="available-local-zones"></a>
 
 AWS Local Zones is available around the world. Find the Local Zone closest to you.
 

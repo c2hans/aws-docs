@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceHubAccessConfig
-<a name="API_InferenceHubAccessConfig"></a>
 
 Configuration information specifying which hub contents have accessible deployment options.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/
 ---
 
 # Adding existing databases and catalogs using AWS Lake Formation permissions
-<a name="lakehouse-add-catalog"></a>
 
 You can add existing databases and catalogs to the lakehouse architecture.
 

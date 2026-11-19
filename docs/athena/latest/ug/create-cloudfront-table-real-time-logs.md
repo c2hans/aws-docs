@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudfront-table
 ---
 
 # Create a table for CloudFront real-time logs
-<a name="create-cloudfront-table-real-time-logs"></a>
 
 **To create a table for CloudFront real-time log file fields**
 

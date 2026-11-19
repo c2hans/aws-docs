@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListT
 ---
 
 # ListThemes
-<a name="API_ListThemes"></a>
 
 Lists all the themes in the current AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/payment
 ---
 
 # Making payments with AWS Financing
-<a name="payment-financing-payment"></a>
 
 You can use your approved financing amount to pay for select invoices. To use your approved financing amount, the amount must be more than the invoice balance you're paying and active. Your approved finance amount is valid for 90 days. After this duration, you must reapply.<a name="payment-financing-payment-steps"></a>
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/snowf
 ---
 
 # Source configuration for Snowflake Platform
-<a name="snowflake-platform-source-config"></a>
 
 ## Prerequisites
 <a name="snowflake-platform-prerequisites"></a>

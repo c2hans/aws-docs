@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Monitoring and event management in AMS Accelerate
-<a name="acc-mon-event-mgmt"></a>
 
 The AMS Accelerate monitoring system monitors your AWS resources for failures, performance degradation, and security issues.
 

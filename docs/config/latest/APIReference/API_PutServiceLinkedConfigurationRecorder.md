@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutServic
 ---
 
 # PutServiceLinkedConfigurationRecorder
-<a name="API_PutServiceLinkedConfigurationRecorder"></a>
 
 Creates a service-linked configuration recorder that is linked to a specific AWS service based on the `ServicePrincipal` you specify.
 

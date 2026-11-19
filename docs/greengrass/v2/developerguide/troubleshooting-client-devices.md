@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/troubleshoo
 ---
 
 # Troubleshooting client devices
-<a name="troubleshooting-client-devices"></a>
 
 Use the troubleshooting information and solutions in this section to help resolve issues with Greengrass client devices and client device components.
 

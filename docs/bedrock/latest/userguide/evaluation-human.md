@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation-huma
 ---
 
 # Creating a model evaluation job that use human workers in Amazon Bedrock
-<a name="evaluation-human"></a>
 
 The topic provides detail directions for creating an automatic model evaluation job.
 

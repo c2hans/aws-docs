@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_RemoveSourceId
 ---
 
 # RemoveSourceIdentifierFromSubscription
-<a name="API_RemoveSourceIdentifierFromSubscription"></a>
 
 Removes a source identifier from an existing event notification subscription.
 

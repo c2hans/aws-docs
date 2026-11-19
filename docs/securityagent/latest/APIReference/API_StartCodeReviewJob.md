@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_St
 ---
 
 # StartCodeReviewJob
-<a name="API_StartCodeReviewJob"></a>
 
 Starts a new code review job for a code review configuration. The job executes the security-focused code analysis defined in the code review.
 

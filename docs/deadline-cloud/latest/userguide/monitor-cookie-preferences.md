@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/monitor-
 ---
 
 # Manage cookie preferences in the Deadline Cloud monitor
-<a name="monitor-cookie-preferences"></a>
 
 The AWS Deadline Cloud monitor uses browser storage to save your UI preferences, such as table column layouts, your active farm selection, dashboard layouts, and your download location. You can control whether the monitor stores these preferences by managing your cookie preferences.
 

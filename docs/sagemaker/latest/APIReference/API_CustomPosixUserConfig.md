@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Custom
 ---
 
 # CustomPosixUserConfig
-<a name="API_CustomPosixUserConfig"></a>
 
 Details about the POSIX identity that is used for file system operations.
 

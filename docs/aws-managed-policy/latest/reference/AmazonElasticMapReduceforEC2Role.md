@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticMapReduceforEC2Role
-<a name="AmazonElasticMapReduceforEC2Role"></a>
 
 **Description**: Default policy for the Amazon Elastic MapReduce for EC2 service role.
 

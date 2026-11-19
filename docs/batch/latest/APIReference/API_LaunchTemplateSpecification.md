@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_LaunchTemp
 ---
 
 # LaunchTemplateSpecification
-<a name="API_LaunchTemplateSpecification"></a>
 
 An object that represents a launch template that's associated with a compute resource. You must specify either the launch template ID or launch template name in the request, but not both.
 

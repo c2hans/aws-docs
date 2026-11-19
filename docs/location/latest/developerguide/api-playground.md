@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/api-playg
 ---
 
 # API Playground
-<a name="api-playground"></a>
 
 With the [API Playground](https://console.aws.amazon.com/location/api-playground/home), you can explore Amazon Location Service APIs directly in the AWS Console. Try API operations, view example requests and responses, adjust parameters, and download code snippets for CLI, cURL, Python, JavaScript, and Ruby.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_LifeCycleLas
 ---
 
 # LifeCycleLastLaunchInitiated
-<a name="API_LifeCycleLastLaunchInitiated"></a>
 
 An object containing information regarding the initiation of the last launch of a Source Server.
 

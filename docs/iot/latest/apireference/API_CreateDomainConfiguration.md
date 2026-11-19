@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDomain
 ---
 
 # CreateDomainConfiguration
-<a name="API_CreateDomainConfiguration"></a>
 
 Creates a domain configuration.
 

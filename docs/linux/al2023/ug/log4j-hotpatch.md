@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/log4j-hotpatch.html
 ---
 
 # Removal of log4j hotpatch (`log4j-cve-2021-44228-hotpatch`)
-<a name="log4j-hotpatch"></a>
 
 **Note**
 AL2023 doesn't ship with the `log4j-cve-2021-44228-hotpatch` package.

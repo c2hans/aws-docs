@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_UpdateGroup.
 ---
 
 # UpdateGroup
-<a name="API_UpdateGroup"></a>
 
 Updates the description for an existing group. You cannot update the name of a resource group.
 

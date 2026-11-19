@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/services-bedrock
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Amazon Bedrock Runtime
-<a name="services-bedrock"></a>
 
 Amazon Bedrock Runtime runs inference on the foundation models in [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html). This section has runnable examples for common inference patterns. The examples send conversational messages, stream model output as the model generates it, invoke models with native request formats, and exchange real-time bidirectional events. This page shows how to install the client package, create the clients, and choose an inference operation and the client type that it needs.
 

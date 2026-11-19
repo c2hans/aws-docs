@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Requirements
-<a name="USER_SQLServer_SelfManagedActiveDirectory.Requirements"></a>
 
 Make sure you've met the following requirements before joining an RDS for SQL Server DB instance to your self-managed AD domain.
 

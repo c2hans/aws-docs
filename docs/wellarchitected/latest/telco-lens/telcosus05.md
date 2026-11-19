@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcos
 ---
 
 # Carbon tracking
-<a name="telcosus05"></a>
 
 |  TELCOSUS05: How do you measure and track the carbon footprint of your telco network operations?  |
 | --- |

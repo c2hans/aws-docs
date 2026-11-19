@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryPlan
 ---
 
 # RecoveryPlanExecutionSourceServer
-<a name="API_RecoveryPlanExecutionSourceServer"></a>
 
 A source server with a specific recovery snapshot for plan execution.
 

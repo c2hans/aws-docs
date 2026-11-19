@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/dd
 ---
 
 # Integrate player gateway into a game
-<a name="ddos-protection-integrate"></a>
 
 After creating a player gateway-enabled fleet, you must update your game client and game backend to integrate with player gateway. Your game backend retrieves relay endpoints and player gateway tokens, then provides them to game clients. Game clients send all UDP traffic to these relay endpoints.
 

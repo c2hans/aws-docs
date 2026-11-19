@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/copy-model-prer
 ---
 
 # Fulfill prerequisites to copy models
-<a name="copy-model-prereq"></a>
 
 To allow a role to copy a model, you might have to set up permissions, depending on the role's permissions and the model's configuration. Review the permissions in the following list and the circumstances in which you must configure them:
 

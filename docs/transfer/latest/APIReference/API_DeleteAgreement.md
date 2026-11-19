@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAgreement
-<a name="API_DeleteAgreement"></a>
 
 Delete the agreement that's specified in the provided `AgreementId`.
 

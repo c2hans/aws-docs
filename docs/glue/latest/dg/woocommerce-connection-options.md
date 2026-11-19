@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/woocommerce-connection-op
 ---
 
 # WooCommerce connection options
-<a name="woocommerce-connection-options"></a>
 
 The following are connection options for WooCommerce:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in WooCommerce.

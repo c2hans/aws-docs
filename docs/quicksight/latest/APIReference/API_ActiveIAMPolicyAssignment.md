@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Activ
 ---
 
 # ActiveIAMPolicyAssignment
-<a name="API_ActiveIAMPolicyAssignment"></a>
 
 The active AWS Identity and Access Management (IAM) policy assignment.
 

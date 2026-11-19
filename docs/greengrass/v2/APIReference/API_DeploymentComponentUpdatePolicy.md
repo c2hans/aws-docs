@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Deploymen
 ---
 
 # DeploymentComponentUpdatePolicy
-<a name="API_DeploymentComponentUpdatePolicy"></a>
 
 Contains information about a deployment's policy that defines when components are safe to update.
 

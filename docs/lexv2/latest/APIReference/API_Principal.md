@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Principal.
 ---
 
 # Principal
-<a name="API_Principal"></a>
 
 The IAM principal that you allowing or denying access to an Amazon Lex action. You must provide a `service` or an `arn`, but not both in the same statement. For more information, see [ AWS JSON policy elements: Principal ](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html).
 

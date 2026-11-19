@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/managed-lo
 ---
 
 # The branding editor and customizing managed login
-<a name="managed-login-brandingeditor"></a>
 
 The branding editor is a visual design and editing tool for your managed login webpages. It's built into the Amazon Cognito console. In the branding editor, you start with a preview of your login pages and can proceed into a quick-setup option or a detailed view with advanced options. You can modify and preview style parameters or add a custom background image and logo. You can configure light mode and dark mode.
 

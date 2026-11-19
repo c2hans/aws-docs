@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Findin
 ---
 
 # FindingCriteria
-<a name="API_FindingCriteria"></a>
 
 Contains information about the criteria used for querying findings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EdgeDe
 ---
 
 # EdgeDeploymentConfig
-<a name="API_EdgeDeploymentConfig"></a>
 
 Contains information about the configuration of a deployment.
 

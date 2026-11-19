@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/api-async.html
 ---
 
 # Calling Amazon Textract Asynchronous Operations
-<a name="api-async"></a>
 
 Amazon Textract provides an asynchronous API that you can use to process multipage documents in PDF or TIFF format. You can also use asynchronous operations to process single-page documents that are in JPEG, PNG, TIFF, or PDF format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/update-apple-m
 ---
 
 # Update an Apple Messages for Business integration with Connect Customer
-<a name="update-apple-messages-for-business"></a>
 
 You will need to update your Apple Messages for Business integration if you want to change the flow ID or other information.
 

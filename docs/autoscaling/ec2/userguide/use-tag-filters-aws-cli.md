@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/use-tag-filter
 ---
 
 # Use tags to filter Auto Scaling groups
-<a name="use-tag-filters-aws-cli"></a>
 
 The following examples show you how to use filters with the [describe-auto-scaling-groups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-auto-scaling-groups.html) command to describe Auto Scaling groups with specific tags. Filtering by tags is limited to the AWS CLI or an SDK, and is not available from the console.
 

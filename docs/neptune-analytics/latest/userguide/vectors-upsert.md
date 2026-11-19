@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/vecto
 ---
 
 # .vectors.upsert algorithm
-<a name="vectors-upsert"></a>
 
 The `.vectors.upsert` algorithm is used to add a new embedding or update an existing one for a node.
 

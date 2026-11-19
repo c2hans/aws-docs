@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Attribu
 ---
 
 # AttributeInput
-<a name="API_AttributeInput"></a>
 
 The attribute input.
 

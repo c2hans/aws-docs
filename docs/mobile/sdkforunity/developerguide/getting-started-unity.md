@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/gettin
 The AWS Mobile SDK for Unity is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Unity. For more information, see [What is the AWS Mobile SDK for Unity?](what-is-unity-plugin.md)
 
 # Getting Started with the AWS Mobile SDK for Unity
-<a name="getting-started-unity"></a>
 
 This page provides you with an overview of each AWS service in the AWS Mobile SDK for Unity, as well as instructions on how to set up Unity samples. You must complete all of the instructions on the [Set Up the AWS Mobile SDK for Unity](setup-unity.md) page before you start using the services below.
 

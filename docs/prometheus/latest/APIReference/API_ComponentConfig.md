@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Compo
 ---
 
 # ComponentConfig
-<a name="API_ComponentConfig"></a>
 
 Configuration settings for a scraper component.
 

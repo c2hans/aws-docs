@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/notification-examples.html
 ---
 
 # Amazon SNS notification examples for Amazon SES
-<a name="notification-examples"></a>
 
 The following sections provide examples of the three types of notifications:
 + For bounce notification examples, see [Amazon SNS bounce notification examples](#notification-examples-bounce).

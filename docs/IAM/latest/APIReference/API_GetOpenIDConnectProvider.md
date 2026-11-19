@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetOpenIDCon
 ---
 
 # GetOpenIDConnectProvider
-<a name="API_GetOpenIDConnectProvider"></a>
 
 Returns information about the specified OpenID Connect (OIDC) provider resource object in IAM.
 

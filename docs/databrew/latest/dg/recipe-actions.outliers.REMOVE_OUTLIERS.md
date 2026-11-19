@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.outlie
 ---
 
 # REMOVE\_OUTLIERS
-<a name="recipe-actions.outliers.REMOVE_OUTLIERS"></a>
 
 Removes data points that classify as outliers, based on the settings in the parameters.
 

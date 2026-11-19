@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fl
 ---
 
 # Decision guide: Choose a hosting option
-<a name="fleets-decision-guide"></a>
 
 Amazon GameLift Servers offers several hosting options, each designed for different hosting scenarios and requirements. This guide helps you choose the type of fleet based on your game's technical needs, operational preferences, and business constraints. For high-level descriptions, see [Amazon GameLift Servers game hosting options](gamelift-intro-flavors.md).
 

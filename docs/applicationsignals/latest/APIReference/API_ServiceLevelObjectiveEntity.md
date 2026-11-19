@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ServiceLevelObjectiveEntity
-<a name="API_ServiceLevelObjectiveEntity"></a>
 
 A structure that contains identifying information for a service level objective entity.
 

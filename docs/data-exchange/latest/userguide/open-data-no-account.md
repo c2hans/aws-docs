@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/open-data
 ---
 
 # Getting started with Open Data on AWS data sets without an AWS account
-<a name="open-data-no-account"></a>
 
 The following topics describe how you can find and use Open Data on AWS data sets without an AWS account. The process has the following steps:
 

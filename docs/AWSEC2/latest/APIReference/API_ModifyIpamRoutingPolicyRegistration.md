@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpa
 ---
 
 # ModifyIpamRoutingPolicyRegistration
-<a name="API_ModifyIpamRoutingPolicyRegistration"></a>
 
 Modifies an existing routing policy registration. You can update the authorized ASNs, maximum prefix length, and other properties of a Route Origin Authorization (ROA).
 

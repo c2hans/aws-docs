@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Allocate EC2 instance data transfer
-<a name="networking-flex-cost-allocation-ec2"></a>
 
 When you associate a Networking Flexible Cost Allocation (FCA) policy with an Amazon EC2 instance, the data transfer charges for traffic between that instance and a directly connected peer instance in the same VPC are itemized by the peer instance that generated the usage, at the granularity that you choose in the policy. Without a policy, the charges appear only against the instance.
 

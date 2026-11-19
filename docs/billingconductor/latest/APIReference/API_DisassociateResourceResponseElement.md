@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # DisassociateResourceResponseElement
-<a name="API_DisassociateResourceResponseElement"></a>
 
 A resource disassociation result for a percentage custom line item.
 

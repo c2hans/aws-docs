@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Comput
 ---
 
 # ComputeQuotaResourceConfig
-<a name="API_ComputeQuotaResourceConfig"></a>
 
 Configuration of the resources used for the compute allocation definition.
 

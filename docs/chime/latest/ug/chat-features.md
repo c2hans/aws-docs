@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chat-features.html
 ---
 
 # Using additional chat features
-<a name="chat-features"></a>
 
 The following sections list additional Amazon Chime chat features and explain how to use them.
 

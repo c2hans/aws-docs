@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-router-asy
 ---
 
 # Route asynchronous inference requests through an inference router
-<a name="inference-router-async"></a>
 
 Use `InvokeInferenceRouterAsync` to send requests to asynchronous inference endpoints through an inference router. For information about asynchronous endpoints, see [Asynchronous inference](async-inference.md). For the AWS Regions where asynchronous routing is available, see [Tools and Regions](inference-router.md#inference-router-tools).
 

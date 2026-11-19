@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateProject
-<a name="API_UpdateProject"></a>
 
 Updates a machine learning (ML) project that is created from a template that sets up an ML pipeline from training to deploying an approved model.
 

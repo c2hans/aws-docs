@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Pass custom headers to Amazon Bedrock AgentCore Runtime
-<a name="runtime-header-allowlist"></a>
 
 Custom headers let you pass contextual information from your application directly to your agent code without cluttering the main request payload. You can pass any valid HTTP header that is not in the [restricted headers](#runtime-header-restrictions) list, including webhook signatures like `X-Custom-Signature`, API keys like `X-Api-Key`, trace context, or session identifiers. You can also pass the `Authorization` header for JWT-based authentication when your agent is configured with a custom JWT authorizer. Headers prefixed with `X-Amzn-Bedrock-AgentCore-Runtime-Custom-` continue to be supported for backward compatibility. Up to 20 headers can be configured per runtime, and each header value is limited to 4KB.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-pr
 ---
 
 # How to predict suggestions based on input
-<a name="how-to-predict-suggestions"></a>
 
 The Suggest API enables applications to complete user queries for places or categories of results. These suggestions can be used directly or refined further with the SearchText API to retrieve additional details and results.
 

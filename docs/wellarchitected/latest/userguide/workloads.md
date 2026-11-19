@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloa
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Workloads
-<a name="workloads"></a>
 
 A workload is a collection of resources and code that delivers business value, such as a customer-facing application or a backend process.
 

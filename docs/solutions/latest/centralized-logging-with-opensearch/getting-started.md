@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Getting started
-<a name="getting-started"></a>
 
 After [deploying the solution](automated-deployment.md), refer to this section to quickly learn how to use Centralized Logging with OpenSearch for log ingestion (AWS CloudTrail logs as an example), and log visualization.
 

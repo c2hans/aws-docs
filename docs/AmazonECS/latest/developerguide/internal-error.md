@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/internal
 ---
 
 # Troubleshooting Amazon ECS InternalError errors
-<a name="internal-error"></a>
 
 **Applies to**: Fargate
 

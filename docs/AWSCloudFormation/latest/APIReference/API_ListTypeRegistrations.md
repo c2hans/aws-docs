@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListTypeRegistrations
-<a name="API_ListTypeRegistrations"></a>
 
 Returns a list of registration tokens for the specified extension(s).
 

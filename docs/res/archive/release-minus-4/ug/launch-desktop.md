@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/launch-de
 ---
 
 # Launch a new desktop
-<a name="launch-desktop"></a>
 
 1. From the menu, choose **My Virtual Desktops**.
 

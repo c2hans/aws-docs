@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_InvokeAsync.html
 ---
 
 # InvokeAsync
-<a name="API_InvokeAsync"></a>
 
  *This action has been deprecated.*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Attach
 ---
 
 # AttachClusterNodeNetworkInterface
-<a name="API_AttachClusterNodeNetworkInterface"></a>
 
  Attaches an elastic network interface (ENI) to a node in a HyperPod cluster.
 

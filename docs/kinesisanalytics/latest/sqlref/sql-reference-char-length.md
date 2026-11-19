@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # CHAR\_LENGTH / CHARACTER\_LENGTH
-<a name="sql-reference-char-length"></a>
 
 ```
  CHAR_LENGTH | CHARACTER_LENGTH ( <character-expression> )

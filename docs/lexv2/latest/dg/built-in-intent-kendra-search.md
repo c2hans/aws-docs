@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-kendra-s
 ---
 
 # AMAZON.KendraSearchIntent
-<a name="built-in-intent-kendra-search"></a>
 
 To search documents that you have indexed with Amazon Kendra, use the `AMAZON.KendraSearchIntent` intent. When Amazon Lex V2 can't determine the next action in a conversation with the user, it triggers the search intent.
 

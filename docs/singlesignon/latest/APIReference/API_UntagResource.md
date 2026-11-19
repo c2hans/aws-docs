@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Unt
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Disassociates a set of tags from a specified resource.
 

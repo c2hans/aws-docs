@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Termina
 ---
 
 # TerminateCustomerAgreementSummary
-<a name="API_TerminateCustomerAgreementSummary"></a>
 
 Summary returned when terminating an agreement.
 

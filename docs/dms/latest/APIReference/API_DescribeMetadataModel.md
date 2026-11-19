@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMeta
 ---
 
 # DescribeMetadataModel
-<a name="API_DescribeMetadataModel"></a>
 
 Gets detailed information about the specified metadata model, including its definition and corresponding converted objects in the target database if applicable.
 

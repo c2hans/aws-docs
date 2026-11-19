@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # Stream
-<a name="API_Stream"></a>
 
 Represents a change data capture stream for an Amazon Keyspaces table, which enables tracking and processing of data changes.
 

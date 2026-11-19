@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeNotificationConfigurations
-<a name="API_DescribeNotificationConfigurations"></a>
 
 Gets information about the Amazon SNS notifications that are configured for one or more Auto Scaling groups.
 

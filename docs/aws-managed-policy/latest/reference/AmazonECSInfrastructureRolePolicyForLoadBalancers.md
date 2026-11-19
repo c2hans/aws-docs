@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonECSInfrastructureRolePolicyForLoadBalancers
-<a name="AmazonECSInfrastructureRolePolicyForLoadBalancers"></a>
 
 **Description**: Provides access to other AWS service resources required to manage load balancers associated with ECS workloads on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/inven
 ---
 
 # inv\_level
-<a name="inventory_mgmnt-inv-level-entity"></a>
 
 **Primary key (PK)**
 

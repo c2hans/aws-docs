@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_V
 ---
 
 # VolumeSummary
-<a name="API_VolumeSummary"></a>
 
 The summary of a persistent volume.
 

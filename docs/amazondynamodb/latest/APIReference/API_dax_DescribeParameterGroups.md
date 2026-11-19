@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # DescribeParameterGroups
-<a name="API_dax_DescribeParameterGroups"></a>
 
 Returns a list of parameter group descriptions. If a parameter group name is specified, the list will contain only the descriptions for that group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/audio-only-inputs.ht
 ---
 
 # Setting up on the input side
-<a name="audio-only-inputs"></a>
 
 To set up an audio-only output in a MediaLive channel, you must verify that the source inputs meet the requirements, then you must set up the audio selectors in the usual way.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ap
 ---
 
 # AppMonitor
-<a name="API_AppMonitor"></a>
 
 A RUM app monitor collects telemetry data from your application and sends that data to RUM. The data includes performance and reliability information such as page load time, client-side errors, and user behavior.
 
@@ -70,6 +69,12 @@ The name of the app monitor.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `(?!\.)[\.\-_#A-Za-z0-9]+`
+Required: No
+
+ ** Platform **   <a name="cloudwatchrum-Type-AppMonitor-Platform"></a>
+The platform type for this app monitor. Valid values are `Web` for web applications , `Android` for Android applications, and `iOS` for IOS applications.
+Type: String
+Valid Values: `Web | Android | iOS`
 Required: No
 
  ** State **   <a name="cloudwatchrum-Type-AppMonitor-State"></a>

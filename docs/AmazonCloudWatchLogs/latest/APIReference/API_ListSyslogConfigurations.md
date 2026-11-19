@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ListSyslogConfigurations
-<a name="API_ListSyslogConfigurations"></a>
 
 Returns a list of syslog configurations. You can optionally filter the results by log group or VPC endpoint.
 

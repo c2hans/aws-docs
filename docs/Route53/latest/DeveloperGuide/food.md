@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/food.html
 ---
 
 # .food
-<a name="food"></a>
 
 Used for food-related businesses, recipes, and culinary content.
 

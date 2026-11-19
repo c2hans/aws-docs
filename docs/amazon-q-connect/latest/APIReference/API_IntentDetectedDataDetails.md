@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # IntentDetectedDataDetails
-<a name="API_amazon-q-connect_IntentDetectedDataDetails"></a>
 
 Details about the detected intent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/how-to-insert-a
 ---
 
 # How to insert a motion overlay with QuickTime MOV
-<a name="how-to-insert-a-motion-overlay-with-quicktime-mov"></a>
 
 You can use a `.mov` file as an asset for the motion image overlay.
 

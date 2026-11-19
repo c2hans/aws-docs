@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPIVi
 ---
 
 # KPIVisualLayoutOptions
-<a name="API_KPIVisualLayoutOptions"></a>
 
 The options that determine the layout a KPI visual.
 

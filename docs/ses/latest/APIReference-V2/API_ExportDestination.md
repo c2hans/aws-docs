@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportDes
 ---
 
 # ExportDestination
-<a name="API_ExportDestination"></a>
 
 An object that contains details about the destination of the export job.
 

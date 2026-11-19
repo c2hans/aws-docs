@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationInferenceConfig
-<a name="API_EvaluationInferenceConfig"></a>
 
 The configuration details of the inference model for an evaluation job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteStorag
 ---
 
 # DeleteStorageVirtualMachine
-<a name="API_DeleteStorageVirtualMachine"></a>
 
 Deletes an existing Amazon FSx for ONTAP storage virtual machine (SVM). Prior to deleting an SVM, you must delete all non-root volumes in the SVM, otherwise the operation will fail.
 

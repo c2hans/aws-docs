@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/service-manage
 ---
 
 # Working with service-managed users
-<a name="service-managed-users"></a>
 
 You can add either Amazon S3 or Amazon EFS service-managed users to your server, depending on the server's **Domain** setting. For more information, see [Configuring an SFTP, FTPS, or FTP server endpoint](tf-server-endpoint.md).
 

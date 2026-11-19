@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # StopInstanceOnIdleRequest
-<a name="API_StopInstanceOnIdleRequest"></a>
 
 Describes a request to create or edit the `StopInstanceOnIdle` add-on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 ---
 
 # Databases
-<a name="databases-pattern-list"></a>
 
 **Topics**
 + [Add HA to Oracle PeopleSoft on Amazon RDS Custom by using a read replica](add-ha-to-oracle-peoplesoft-on-amazon-rds-custom-by-using-a-read-replica.md)
@@ -38,6 +37,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Migrate SQL Server to AWS using distributed availability groups](migrate-sql-server-to-aws-using-distributed-availability-groups.md)
 + [Migrate a relational database to MongoDB Atlas on AWS](migrate-relational-database-to-mongodb-atlas.md)
 + [Migrate a self-hosted MongoDB environment to MongoDB Atlas on AWS](migrate-a-self-hosted-mongodb-environment-to-mongodb-atlas-on-the-aws-cloud.md)
++ [Migrate an Oracle JD Edwards EnterpriseOne database to AWS by using Oracle Data Pump and AWS DMS](migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms.md)
 + [Migrate from Oracle 8i or 9i to Amazon RDS for Oracle using SharePlex and AWS DMS](migrate-from-oracle-8i-or-9i-to-amazon-rds-for-oracle-using-shareplex-and-aws-dms.md)
 + [Migrate an on-premises MySQL database to Amazon EC2](migrate-an-on-premises-mysql-database-to-amazon-ec2.md)
 + [Monitor Oracle GoldenGate logs by using Amazon CloudWatch](monitor-oracle-goldengate-logs-by-using-amazon-cloudwatch.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-canada.ht
 ---
 
 # Canada
-<a name="order-port-canada"></a>
 
 The following tables list and describe the requirements for ordering and porting phone numbers in Canada.
 

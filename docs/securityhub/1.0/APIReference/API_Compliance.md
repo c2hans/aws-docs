@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Complia
 ---
 
 # Compliance
-<a name="API_Compliance"></a>
 
 This object typically provides details about a control finding, such as applicable standards and the status of control checks. While finding providers can add custom content in `Compliance` object fields, they are typically used to review details of Security Hub CSPM control findings.
 

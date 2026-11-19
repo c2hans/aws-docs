@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/create-template.htm
 ---
 
 # Create an experiment template
-<a name="create-template"></a>
 
 Before you begin, complete the following tasks:
 + [Plan your experiment](getting-started-planning.md).

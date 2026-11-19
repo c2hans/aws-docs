@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Pl
 ---
 
 # PlaybackKeyPairSummary
-<a name="API_PlaybackKeyPairSummary"></a>
 
 Summary information about a playback key pair.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-va
 ---
 
 # Valid action providers in CodePipeline
-<a name="actions-valid-providers"></a>
 
 The pipeline structure format is used to build actions and stages in a pipeline. An action type consists of an action category and provider type.
 

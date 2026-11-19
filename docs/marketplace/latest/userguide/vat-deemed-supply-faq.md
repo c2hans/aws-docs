@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/vat-deemed-
 ---
 
 # Deemed Supply FAQs
-<a name="vat-deemed-supply-faq"></a>
 
 This FAQ answers commonly asked questions about VAT on AWS Marketplace Deemed Supplies in the EU, Norway and UK.
 

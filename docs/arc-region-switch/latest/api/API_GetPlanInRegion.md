@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GetPlan
 ---
 
 # GetPlanInRegion
-<a name="API_GetPlanInRegion"></a>
 
 Retrieves information about a Region switch plan in a specific AWS Region. This operation is useful for getting Region-specific information about a plan.
 

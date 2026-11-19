@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Summariz
 ---
 
 # SummarizedAttackVector
-<a name="API_SummarizedAttackVector"></a>
 
 A summary of information about the attack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Setting up Oracle APEX and Oracle Rest Data Services (ORDS)
-<a name="Appendix.Oracle.Options.APEX.settingUp"></a>
 
 The following topic lists the steps required to set up Oracle APEX and ORDS
 

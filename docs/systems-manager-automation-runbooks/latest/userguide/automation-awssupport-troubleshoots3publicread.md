@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootS3PublicRead`
-<a name="automation-awssupport-troubleshoots3publicread"></a>
 
  **Description**
 

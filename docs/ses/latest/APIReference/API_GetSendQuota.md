@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_GetSendQuota
 ---
 
 # GetSendQuota
-<a name="API_GetSendQuota"></a>
 
 Provides the sending limits for the Amazon SES account.
 

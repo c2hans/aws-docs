@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_U
 ---
 
 # UpdateRecommendationResourceExclusionError
-<a name="API_UpdateRecommendationResourceExclusionError"></a>
 
 The error entry for Recommendation Resource exclusion. Each entry is a combination of Recommendation Resource ARN, error code and error message
 

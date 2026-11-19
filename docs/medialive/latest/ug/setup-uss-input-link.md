@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-uss-input-link
 ---
 
 # Create an Elemental Link input
-<a name="setup-uss-input-link"></a>
 
 After you have obtained information about the AWS Elemental Link hardware device, you can create an Elemental Link input.
 

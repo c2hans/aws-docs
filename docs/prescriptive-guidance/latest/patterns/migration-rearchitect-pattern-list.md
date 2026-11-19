@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Re-architect
-<a name="migration-rearchitect-pattern-list"></a>
 
 **Topics**
 + [Convert VARCHAR2(1) data type for Oracle to Boolean data type for Amazon Aurora PostgreSQL](convert-varchar2-1-data-type-for-oracle-to-boolean-data-type-for-amazon-aurora-postgresql.md)

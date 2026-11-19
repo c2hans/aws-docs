@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_edge_E
 ---
 
 # EdgeMetric
-<a name="API_edge_EdgeMetric"></a>
 
 Information required for edge device metrics.
 

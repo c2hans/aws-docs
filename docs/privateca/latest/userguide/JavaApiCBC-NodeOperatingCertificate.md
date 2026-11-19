@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApiCBC-No
 ---
 
 # Create a Node Operational Certificate (NOC)
-<a name="JavaApiCBC-NodeOperatingCertificate"></a>
 
 This Java sample shows how to use the [BlankEndEntityCertificate\_CriticalBasicConstraints\_APIPassthrough/V1](template-definitions.md#BlankEndEntityCertificate_CriticalBasicConstraints_APIPassthrough) template to create a [Matter](https://buildwithmatter.com) Node Operational Certificate. You must generate a Base64-encoded KeyUsage value and pass it through a CustomExtension.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-bp-val
 ---
 
 # Validation and finalization
-<a name="dotnet-bp-validation"></a>
 
 After transformation completes, validate your transformed application and finalize it for production use.
 

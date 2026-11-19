@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Histo
 ---
 
 # HistogramAggregatedFieldWells
-<a name="API_HistogramAggregatedFieldWells"></a>
 
 The field well configuration of a histogram.
 

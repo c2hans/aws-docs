@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-panels-xych
 ---
 
 # XY Chart
-<a name="v10-panels-xychart"></a>
 
 XY charts provide a way to visualize arbitrary x and y values in a graph so that you can easily show the relationship between two variables. XY charts are typically used to create scatter plots. you can also use them to create bubble charts, where field values determine the size of each bubble.
 

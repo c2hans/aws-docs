@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ListSolNetwo
 ---
 
 # ListSolNetworkPackages
-<a name="API_ListSolNetworkPackages"></a>
 
 Lists network packages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Billing
-<a name="API_Types_AWS_Billing"></a>
 
 The following data types are supported by AWS Billing:
 +  [ActiveTimeRange](API_billing_ActiveTimeRange.md)

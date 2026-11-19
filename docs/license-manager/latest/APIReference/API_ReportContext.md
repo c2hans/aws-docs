@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ReportContext
-<a name="API_ReportContext"></a>
 
 Details of the license configuration that this generator reports on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # InstanceSavingsEstimationMode
-<a name="API_InstanceSavingsEstimationMode"></a>
 
  Describes the savings estimation mode used for calculating savings opportunity for Amazon EC2 instances.
 

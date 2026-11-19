@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-mana
 ---
 
 # Managing access to Amazon Braket
-<a name="braket-manage-access"></a>
 
 This chapter describes the permissions that are required to run Amazon Braket, or to restrict the access of specific users and roles. You can grant (or deny) the required permissions to any user or role in your account. To do so, attach the appropriate Amazon Braket policy to that user or role in your account as described in the following sections.
 

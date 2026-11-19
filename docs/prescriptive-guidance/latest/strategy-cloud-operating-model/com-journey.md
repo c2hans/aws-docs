@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # The Cloud Operating Model journey
-<a name="com-journey"></a>
 
 The Vision Document has clarified your target state, but you must understand where you are in your cloud adoption journey to connect the vision to your current capabilities, and then understand the next steps. We have found that many customers focus on where they want to go, but it can be hard to see what the first step should be on that journey.
 

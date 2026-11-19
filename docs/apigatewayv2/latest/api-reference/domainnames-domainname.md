@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/domain
 ---
 
 # DomainName
-<a name="domainnames-domainname"></a>
 
 Represents a domain name. See [Set up Custom Domain Name for an API in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html).
 

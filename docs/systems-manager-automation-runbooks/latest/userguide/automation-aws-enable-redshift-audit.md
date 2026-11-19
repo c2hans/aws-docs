@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableRedshiftClusterAuditLogging`
-<a name="automation-aws-enable-redshift-audit"></a>
 
  **Description**
 

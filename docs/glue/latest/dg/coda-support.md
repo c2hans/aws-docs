@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/coda-support.html
 ---
 
 # AWS Glue support for Coda
-<a name="coda-support"></a>
 
 AWS Glue supports Coda as follows:
 

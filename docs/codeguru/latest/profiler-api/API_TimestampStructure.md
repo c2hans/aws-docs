@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Timesta
 ---
 
 # TimestampStructure
-<a name="API_TimestampStructure"></a>
 
  A data type that contains a `Timestamp` object. This is specified using the ISO 8601 format. For example, 2020-06-01T13:15:02.001Z represents 1 millisecond past June 1, 2020 1:15:02 PM UTC.
 

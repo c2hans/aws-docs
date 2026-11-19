@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/sdk-
 ---
 
 # Warm up SDK clients in the AWS SDK for Java 2.x
-<a name="sdk-warmup"></a>
 
 Use the `SdkWarmUp` utility in the AWS SDK for Java 2.x to warm up your SDK clients during application initialization. This reduces the latency of the first request that your application handles after startup or restore.
 

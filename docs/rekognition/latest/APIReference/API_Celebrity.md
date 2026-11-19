@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Cele
 ---
 
 # Celebrity
-<a name="API_Celebrity"></a>
 
 Provides information about a celebrity recognized by the [RecognizeCelebrities](API_RecognizeCelebrities.md) operation.
 

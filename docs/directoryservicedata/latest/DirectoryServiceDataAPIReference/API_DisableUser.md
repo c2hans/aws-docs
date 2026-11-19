@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # DisableUser
-<a name="API_DisableUser"></a>
 
  Deactivates an active user account. For information about how to enable an inactive user account, see [ResetUserPassword](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_ResetUserPassword.html) in the * AWS Directory Service API Reference*.
 

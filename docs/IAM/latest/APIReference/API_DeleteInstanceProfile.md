@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteInstan
 ---
 
 # DeleteInstanceProfile
-<a name="API_DeleteInstanceProfile"></a>
 
 Deletes the specified instance profile. The instance profile must not have an associated role.
 

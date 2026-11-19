@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Centralized logging
-<a name="centralized-logging"></a>
 
  **AWS log archiving architecture with EventBridge, Lambda, Kinesis, and S3 components.**
 

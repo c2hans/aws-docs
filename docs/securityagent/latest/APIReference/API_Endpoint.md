@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_En
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 Represents a target endpoint for penetration testing.
 

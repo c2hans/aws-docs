@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsS
 ---
 
 # AwsEcsServiceServiceRegistriesDetails
-<a name="API_AwsEcsServiceServiceRegistriesDetails"></a>
 
 Information about a service discovery registry to assign to the service.
 

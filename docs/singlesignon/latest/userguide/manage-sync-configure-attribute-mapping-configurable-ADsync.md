@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-syn
 ---
 
 # Configure attribute mappings for your sync
-<a name="manage-sync-configure-attribute-mapping-configurable-ADsync"></a>
 
 For more information about available attributes, see [Attribute mappings between IAM Identity Center and External Identity Providers directory](attributemappingsconcept.md).
 

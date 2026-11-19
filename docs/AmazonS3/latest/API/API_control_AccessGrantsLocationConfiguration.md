@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_AccessGr
 ---
 
 # AccessGrantsLocationConfiguration
-<a name="API_control_AccessGrantsLocationConfiguration"></a>
 
 The configuration options of the S3 Access Grants location. It contains the `S3SubPrefix` field. The grant scope, the data to which you are granting access, is the result of appending the `Subprefix` field to the scope of the registered location.
 

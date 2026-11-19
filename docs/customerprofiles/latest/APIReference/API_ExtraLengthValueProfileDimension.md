@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ExtraLengthValueProfileDimension
-<a name="API_connect-customer-profiles_ExtraLengthValueProfileDimension"></a>
 
 Object that segments on various Customer profile's fields that are larger than normal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetQ
 ---
 
 # BatchGetQueryExecution
-<a name="API_BatchGetQueryExecution"></a>
 
 Returns the details of a single query execution or a list of up to 50 query executions, which you provide as an array of query execution ID strings. Requires you to have access to the workgroup in which the queries ran. To get a list of query execution IDs, use [ListQueryExecutions:WorkGroup](API_ListQueryExecutions.md#athena-ListQueryExecutions-request-WorkGroup). Query executions differ from named (saved) queries. Use [BatchGetNamedQueryInput](API_BatchGetNamedQueryInput.md) to get details about named queries.
 

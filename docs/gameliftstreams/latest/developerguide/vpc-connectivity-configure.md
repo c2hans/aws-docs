@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/vp
 ---
 
 # Configuring VPC connectivity
-<a name="vpc-connectivity-configure"></a>
 
 This section walks you through configuring VPC connectivity for a Amazon GameLift Streams stream group using the AWS CLI.
 

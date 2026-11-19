@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TransformParamete
 ---
 
 # TransformParameters
-<a name="API_TransformParameters"></a>
 
 The algorithm-specific parameters that are associated with the machine learning transform.
 

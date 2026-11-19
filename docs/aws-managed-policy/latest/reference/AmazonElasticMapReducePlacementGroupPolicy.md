@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticMapReducePlacementGroupPolicy
-<a name="AmazonElasticMapReducePlacementGroupPolicy"></a>
 
 **Description**: Policy to allow EMR to create, describe and delete EC2 placement groups.
 

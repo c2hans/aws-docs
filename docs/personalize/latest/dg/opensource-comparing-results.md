@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/opensource-compari
 ---
 
 # Comparing personalized OpenSearch results to results without personalization
-<a name="opensource-comparing-results"></a>
 
 To understand how results are re-ranked, you can run queries with the [Dev Tools console](https://opensearch.org/docs/latest/dashboards/dev-tools/run-queries) in two separate browser windows. Then you can compare results for queries with and without personalization.
 

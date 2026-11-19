@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ListJob
 ---
 
 # ListJobRuns
-<a name="API_ListJobRuns"></a>
 
 Lists all of the previous runs of a particular DataBrew job.
 

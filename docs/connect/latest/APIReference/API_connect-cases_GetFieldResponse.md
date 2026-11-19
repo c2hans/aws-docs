@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetFieldResponse
-<a name="API_connect-cases_GetFieldResponse"></a>
 
 Object to store detailed field information.
 

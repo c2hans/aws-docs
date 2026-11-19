@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteProvis
 ---
 
 # DeleteProvisioningTemplate
-<a name="API_DeleteProvisioningTemplate"></a>
 
 Deletes a provisioning template.
 

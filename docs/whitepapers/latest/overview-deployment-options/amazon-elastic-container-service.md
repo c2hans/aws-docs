@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Amazon Elastic Container Service
-<a name="amazon-elastic-container-service"></a>
 
  Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service that supports Docker containers and allows you to easily run applications on a managed cluster. Amazon ECS eliminates the need to install, operate, and scale container management infrastructure, and simplifies the creation of environments with familiar AWS core features like [Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html), [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/), and [AWS Identity and Access Management](https://aws.amazon.com/iam/?nc=bc&pg=f-mr) (IAM).
 

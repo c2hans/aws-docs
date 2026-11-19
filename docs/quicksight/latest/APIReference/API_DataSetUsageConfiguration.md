@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetUsageConfiguration
-<a name="API_DataSetUsageConfiguration"></a>
 
 The usage configuration to apply to child datasets that reference this dataset as a source.
 

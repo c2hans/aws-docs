@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Db2.Concepts.
 ---
 
 # Upgrade management for Amazon RDS Db2 instances
-<a name="Db2.Concepts.VersionMgmt.Supported"></a>
 
 To see the current list of supported Db2 minor versions on RDS, use one of the following commands:
 

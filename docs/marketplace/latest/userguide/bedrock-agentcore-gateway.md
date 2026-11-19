@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/bedrock-age
 ---
 
 # Amazon Bedrock AgentCore Gateway
-<a name="bedrock-agentcore-gateway"></a>
 
 This document provides information for AWS Marketplace sellers who want to list API-based AI agent products or tools that can be integrated with Amazon Bedrock AgentCore Gateway.
 

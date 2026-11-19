@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/enforceme
 ---
 
 # Generating an organization-wide compliance report
-<a name="enforcement-report"></a>
 
 At any time, you can generate a report that lists all tagged resources in the AWS accounts across your organization. The report shows whether each resource is compliant with the effective tag policy. Note that it can take up to 48 hours for changes you make to a tag policy or resources to be reflected in the organization-wide compliance report. For example, if you have a tag policy that defines a new standardized tag for a resource type, resources of that type that don't have this tag are shown as compliant in the report for up to 48 hours.
 

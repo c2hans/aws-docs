@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/migrate-data-v
 ---
 
 # Moving stored volumes to a new stored Volume Gateway
-<a name="migrate-data-volume-stored"></a>
 
 **To move your stored volume to a new stored Volume Gateway**
 

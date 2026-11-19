@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/complete-request-s
 ---
 
 # Response structure highlights
-<a name="complete-request-schema-response"></a>
 
 The following shows the key elements of the response structure returned by the non-streaming `Converse` and `InvokeModel` functions. For details on the full response structure as well as the request and response structures for the streaming functions, see the API documentation.
 

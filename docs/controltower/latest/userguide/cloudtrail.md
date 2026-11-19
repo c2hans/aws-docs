@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cloudtrail
 ---
 
 # Monitor Events with CloudTrail
-<a name="cloudtrail"></a>
 
 AWS Control Tower configures AWS CloudTrail to enable centralized logging and auditing. With CloudTrail, the management account can review administrative actions and lifecycle events for member accounts.
 

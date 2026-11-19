@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # IntegrationCredential
-<a name="API_IntegrationCredential"></a>
 
 The credential that an integration uses to authenticate with its external system. Exactly one member is set, matching the integration's authentication type.
 

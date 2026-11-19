@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DnsRequ
 ---
 
 # DnsRequestAction
-<a name="API_DnsRequestAction"></a>
 
 Provided if `ActionType` is `DNS_REQUEST`. It provides details about the DNS request that was detected.
 

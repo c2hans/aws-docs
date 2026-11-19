@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Messages.htm
 ---
 
 # Messages
-<a name="API_Messages"></a>
 
  Messages that provide the state of the flow.
 

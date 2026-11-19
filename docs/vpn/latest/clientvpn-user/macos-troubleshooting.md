@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/macos-troubles
 ---
 
 # Troubleshooting AWS Client VPN connections with macOS clients
-<a name="macos-troubleshooting"></a>
 
 The following sections contain information about logging and problems that you might have when using macOS clients. Please ensure that you are running the latest version of these clients.
 

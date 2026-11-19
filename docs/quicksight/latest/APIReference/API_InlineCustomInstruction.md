@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Inlin
 ---
 
 # InlineCustomInstruction
-<a name="API_InlineCustomInstruction"></a>
 
 An inline custom instruction with text content and optional file upload metadata.
 

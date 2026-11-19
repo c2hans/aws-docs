@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQueryMemberOutputConfiguration
-<a name="API_ProtectedQueryMemberOutputConfiguration"></a>
 
  Contains configuration details for the protected query member output.
 

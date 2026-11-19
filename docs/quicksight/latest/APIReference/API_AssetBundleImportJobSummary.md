@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobSummary
-<a name="API_AssetBundleImportJobSummary"></a>
 
 A summary of the import job that includes details of the requested job's configuration and its current status.
 

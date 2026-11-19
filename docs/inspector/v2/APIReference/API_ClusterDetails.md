@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ClusterDet
 ---
 
 # ClusterDetails
-<a name="API_ClusterDetails"></a>
 
 Details about the task or pod in the cluster.
 

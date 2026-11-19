@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/blackbaud-configuring.htm
 ---
 
 # Configuring Blackbaud Raiser's Edge NXT
-<a name="blackbaud-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Blackbaud Raiser's Edge NXT, you must meet these requirements:
 

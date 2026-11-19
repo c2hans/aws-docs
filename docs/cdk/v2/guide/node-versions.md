@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/node-versions.html
 ---
 
 # Supported Node.js versions for the AWS CDK
-<a name="node-versions"></a>
 
 The AWS Cloud Development Kit (AWS CDK) runs on Node.js. This includes the AWS CDK CLI (`aws-cdk-cli`), AWS Construct Library (`aws-cdk-lib`), as well as broader ecosystem tools such as JSII, Projen, and CDK8s.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Working with vector search collections
-<a name="serverless-vector-search"></a>
 
 With the *vector search* collection type in OpenSearch Serverless, you can perform scalable, high-performing similarity searches. You can build modern machine learning (ML) augmented search experiences and generative artificial intelligence (AI) applications without managing the underlying vector database infrastructure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Manage prompts
-<a name="omni-agents-manage-prompts"></a>
 
 Manage your agent's prompts as versioned artifacts in the extension, so you can track changes, compare versions, and reuse prompts across runs.
 

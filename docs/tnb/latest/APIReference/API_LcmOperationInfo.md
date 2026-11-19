@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_LcmOperation
 ---
 
 # LcmOperationInfo
-<a name="API_LcmOperationInfo"></a>
 
 Lifecycle management operation details on the network instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicatedinstanc
 ---
 
 # Launch Dedicated Instances into a VPC with default tenancy
-<a name="dedicatedinstancesintovpc"></a>
 
 When you create a VPC, you have the option of specifying its instance tenancy. If you launch an instance into a VPC that has an instance tenancy of `dedicated`, it runs as a Dedicated Instance on hardware that's dedicated for your use.
 

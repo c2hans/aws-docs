@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/meeting-namespace-mi
 ---
 
 # Migrating to the Amazon Chime SDK meetings namespace
-<a name="meeting-namespace-migration"></a>
 
 The [Amazon Chime SDK Meetings](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Meetings.html) namespace is a dedicated place for the APIs that create and manage Amazon Chime SDK meeting resources. You use the namespace to address Amazon Chime SDK meeting API endpoints in any AWS Region in which they're available. Use this namespace if you're just starting to use the Amazon Chime SDK. For more information about Regions, refer to [Available AWS Regions for the Amazon Chime SDK](sdk-available-regions.md) in this guide.
 

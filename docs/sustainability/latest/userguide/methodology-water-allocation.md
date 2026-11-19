@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/methodol
 ---
 
 # Allocation approach
-<a name="methodology-water-allocation"></a>
 
  The allocation model uses a top-down approach to calculate customers' water withdrawals associated with the AWS cloud service usage. AWS prioritizes physical allocation (also known as usage-based allocation) and consider economic allocation as a secondary option.
 

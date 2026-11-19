@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayListenerTlsCertificate
-<a name="API_VirtualGatewayListenerTlsCertificate"></a>
 
 An object that represents a listener's Transport Layer Security (TLS) certificate.
 

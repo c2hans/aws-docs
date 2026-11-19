@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-partic
 ---
 
 # Amazon Connect Participant Service events
-<a name="events-ref-participant-connect"></a>
 
 Amazon Connect Participant Service sends service events to EventBridge via AWS CloudTrail.
 

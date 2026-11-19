@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/create-flow-api
 ---
 
 # Create a flow using the Amazon AppFlow APIs
-<a name="create-flow-api"></a>
 
 You may also use the APIs to create a connector profile and configure a flow using the `CreateConnectorProfile` and `CreateFlow` APIs. Due to the varying methods of authentication across each target application, the specific information provided for connection creation will vary. Two examples are provided below as a comparison — Salesforce and ServiceNow.
 

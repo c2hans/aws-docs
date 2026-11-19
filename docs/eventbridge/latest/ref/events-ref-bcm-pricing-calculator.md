@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-bcm-pr
 ---
 
 # AWS Pricing Calculator events
-<a name="events-ref-bcm-pricing-calculator"></a>
 
 AWS Pricing Calculator sends service events directly to EventBridge.
 

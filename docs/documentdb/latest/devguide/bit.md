@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/bit.html
 ---
 
 # $bit
-<a name="bit"></a>
 
 The `$bit` operator in Amazon DocumentDB allows you to perform bitwise operations on the bits of a given field. This can be useful for tasks like setting, clearing, or checking the state of individual bits within a number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dg-ota-bucket.
 ---
 
 # Create an Amazon S3 bucket to store your update
-<a name="dg-ota-bucket"></a>
 
 OTA update files are stored in Amazon S3 buckets.
 

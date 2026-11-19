@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dele
 ---
 
 # DeletePrivateConnection
-<a name="API_DeletePrivateConnection"></a>
 
 Deletes a Private Connection. The deletion is asynchronous and returns DELETE\_IN\_PROGRESS status.
 

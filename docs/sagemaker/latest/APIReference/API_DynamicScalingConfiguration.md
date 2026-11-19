@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Dynami
 ---
 
 # DynamicScalingConfiguration
-<a name="API_DynamicScalingConfiguration"></a>
 
 An object with the recommended values for you to specify when creating an autoscaling policy.
 

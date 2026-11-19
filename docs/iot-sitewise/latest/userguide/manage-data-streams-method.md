@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/manage-dat
 ---
 
 # Associate a data stream to an asset property
-<a name="manage-data-streams-method"></a>
 
 Manage your data streams using the AWS IoT SiteWise console or AWS CLI.
 

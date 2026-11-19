@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateOntapV
 ---
 
 # CreateOntapVolumeConfiguration
-<a name="API_CreateOntapVolumeConfiguration"></a>
 
 Specifies the configuration of the ONTAP volume that you are creating.
 

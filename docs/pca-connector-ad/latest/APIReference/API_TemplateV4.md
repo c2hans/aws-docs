@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # TemplateV4
-<a name="API_TemplateV4"></a>
 
 v4 template schema that can use either Legacy Cryptographic Providers or Key Storage Providers.
 

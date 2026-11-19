@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # NodeOutputNext
-<a name="API_agent-runtime_NodeOutputNext"></a>
 
 Represents the next node that receives output data.
 

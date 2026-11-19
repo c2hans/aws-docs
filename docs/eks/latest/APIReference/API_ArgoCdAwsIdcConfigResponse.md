@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ArgoCdAwsIdc
 ---
 
 # ArgoCdAwsIdcConfigResponse
-<a name="API_ArgoCdAwsIdcConfigResponse"></a>
 
 The response object containing IAM Identity CenterIAM; Identity Center configuration details for an Argo CD capability.
 

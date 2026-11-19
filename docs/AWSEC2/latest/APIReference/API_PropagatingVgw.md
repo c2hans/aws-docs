@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Propagati
 ---
 
 # PropagatingVgw
-<a name="API_PropagatingVgw"></a>
 
 Describes a virtual private gateway propagating route.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-dash
 ---
 
 # Delete a custom dashboard with the CloudTrail console
-<a name="lake-dashboard-delete"></a>
 
 This section describes how to delete a dashboard using the CloudTrail.
 

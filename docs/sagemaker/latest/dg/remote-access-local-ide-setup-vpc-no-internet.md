@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-local-
 ---
 
 # Connect to VPC with subnets without internet access
-<a name="remote-access-local-ide-setup-vpc-no-internet"></a>
 
 Before connecting your Remote IDE to Studio spaces in private subnets without internet access, ensure your administrator has [Set up Studio to run with subnets without internet access within a VPC](remote-access-remote-setup-vpc-subnets-without-internet-access.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteF
 ---
 
 # DeleteFormType
-<a name="API_DeleteFormType"></a>
 
 Deletes and metadata form type in Amazon DataZone.
 

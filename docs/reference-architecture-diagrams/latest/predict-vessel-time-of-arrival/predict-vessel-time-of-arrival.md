@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Predict Vessel Time of Arrival at Berth
-<a name="predict-vessel-time-of-arrival"></a>
 
 Publication date: **July 16, 2020 ([Diagram history](#vessel-history))**
 

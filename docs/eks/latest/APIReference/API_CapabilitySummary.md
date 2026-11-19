@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CapabilitySu
 ---
 
 # CapabilitySummary
-<a name="API_CapabilitySummary"></a>
 
 A summary of a capability, containing basic information without the full configuration details. This is returned by the `ListCapabilities` operation.
 

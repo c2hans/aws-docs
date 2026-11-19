@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchWo
 ---
 
 # SearchWorkspaces
-<a name="API_SearchWorkspaces"></a>
 
 Searches workspaces based on name, description, visibility, or tags.
 

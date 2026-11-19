@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstancesIamInstanceProfile
-<a name="API_ScheduledInstancesIamInstanceProfile"></a>
 
 Describes an IAM instance profile for a Scheduled Instance.
 

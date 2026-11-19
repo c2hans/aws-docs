@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate small sets of data from on premises to Amazon S3 using AWS SFTP
-<a name="migrate-small-sets-of-data-from-on-premises-to-amazon-s3-using-aws-sftp"></a>
 
 *Charles Gibson and Sergiy Shevchenko, Amazon Web Services*
 

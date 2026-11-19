@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/security_iam_
 ---
 
 # How EventBridge Scheduler works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to EventBridge Scheduler, learn what IAM features are available to use with EventBridge Scheduler.
 

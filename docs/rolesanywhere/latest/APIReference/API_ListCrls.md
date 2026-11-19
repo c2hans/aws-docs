@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Li
 ---
 
 # ListCrls
-<a name="API_ListCrls"></a>
 
 Lists all certificate revocation lists (CRL) in the authenticated account and AWS Region.
 

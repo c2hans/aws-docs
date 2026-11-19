@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resourc
 ---
 
 # Managing resource operation requests with AWS Cloud Control API
-<a name="resource-operations-manage-requests"></a>
 
 Because resource operations are asynchronous, resource requests such as `create-resource` and `update-resource` return a `ProgressEvent` object that contains information about the current state of your resource create or update request.
 

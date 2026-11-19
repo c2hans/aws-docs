@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # System requirements
-<a name="kvswebrtc-requirements"></a>
 
 This section covers basic system requirements for using Amazon Kinesis Video Streams with WebRTC, including network requirements and environment. It also includes information about debugging connections.
 

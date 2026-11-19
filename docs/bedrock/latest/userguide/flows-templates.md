@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-templates
 ---
 
 # Use a template to create an Amazon Bedrock flow
-<a name="flows-templates"></a>
 
 To help you get started with defining and orchestrating Amazon Bedrock Flows, you can use templates to create flows for a variety of flow configurations. For example, you can use a template to see a flow that includes a knowledge base or a flow that uses conditions to direct flow logic.
 

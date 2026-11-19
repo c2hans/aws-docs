@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_TagPolicyExc
 ---
 
 # TagPolicyException
-<a name="API_TagPolicyException"></a>
 
 **Note**
  `TagPolicyException` is deprecated. See [`ValidationException`](https://docs.aws.amazon.com/evs/latest/APIReference/API_ValidationException.html) instead.

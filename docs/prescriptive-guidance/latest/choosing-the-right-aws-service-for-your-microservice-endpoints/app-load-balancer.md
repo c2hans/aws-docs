@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-th
 ---
 
 # Application Load Balancer
-<a name="app-load-balancer"></a>
 
 [Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html) is designed primarily for distributing incoming HTTP and HTTPS traffic across multiple targets, such as Amazon Elastic Compute Cloud (Amazon EC2) instances, containers, Lambda functions, and private IP addresses. For endpoint security, Application Load Balancer integrates with [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html) and supports network security controls like security groups and network access control lists (ACLs).
 

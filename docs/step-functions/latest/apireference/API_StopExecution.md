@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_S
 ---
 
 # StopExecution
-<a name="API_StopExecution"></a>
 
 Stops an execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Functions limits
-<a name="monetization-functions-limits"></a>
 
 This page lists the limits that apply to Functions. These limits are enforced at authoring time (when you create or update a function) and at runtime (when the function runs).
 

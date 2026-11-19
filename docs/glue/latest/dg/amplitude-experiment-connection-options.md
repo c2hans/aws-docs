@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/amplitude-experiment-conn
 ---
 
 # Amplitude Experiment connection options
-<a name="amplitude-experiment-connection-options"></a>
 
 The following are connection options for Amplitude Experiment:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Amplitude Experiment object to read.

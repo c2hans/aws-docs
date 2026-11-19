@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-
 ---
 
 # Africa
-<a name="registrar-tld-list-africa"></a>
 
 You can use the following top-level domains (TLDs) for Africa to register domains with Amazon Route 53.
 

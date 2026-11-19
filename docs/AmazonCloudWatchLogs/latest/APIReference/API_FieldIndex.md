@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # FieldIndex
-<a name="API_FieldIndex"></a>
 
 This structure describes one log event field that is used as an index in at least one index policy in this account.
 

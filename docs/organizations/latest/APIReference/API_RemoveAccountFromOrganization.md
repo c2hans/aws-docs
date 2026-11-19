@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Re
 ---
 
 # RemoveAccountFromOrganization
-<a name="API_RemoveAccountFromOrganization"></a>
 
 Removes the specified account from the organization.
 

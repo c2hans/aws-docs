@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/enabling-caching
 ---
 
 # Configuring server-side caching and API payload compression in AWS AppSync
-<a name="enabling-caching"></a>
 
 AWS AppSync's server-side data caching capabilities make data available in a high speed, in-memory cache, improving performance and decreasing latency. This reduces the need to directly access data sources. Caching is available for both unit and pipeline resolvers.
 

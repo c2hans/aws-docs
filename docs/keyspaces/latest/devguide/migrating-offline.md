@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/migrating-offl
 ---
 
 # Offline migration process: Apache Cassandra to Amazon Keyspaces
-<a name="migrating-offline"></a>
 
 Offline migrations are suitable when you can afford downtime to perform the migration. It's common among enterprises to have maintenance windows for patching, large releases, or downtime for hardware upgrades or major upgrades. Offline migration can use this window to copy data and switch over the application traffic from Apache Cassandra to Amazon Keyspaces.
 

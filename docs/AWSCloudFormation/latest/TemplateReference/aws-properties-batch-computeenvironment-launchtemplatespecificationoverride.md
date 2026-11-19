@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::ComputeEnvironment LaunchTemplateSpecificationOverride
-<a name="aws-properties-batch-computeenvironment-launchtemplatespecificationoverride"></a>
 
 An object that represents a launch template to use in place of the default launch template. You must specify either the launch template ID or launch template name in the request, but not both.
 

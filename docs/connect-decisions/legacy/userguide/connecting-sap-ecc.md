@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/conne
 ---
 
 # Connecting to SAP ECC 6.0
-<a name="connecting-sap-ecc"></a>
 
 To extract your data from SAP ECC 6.0, follow the procedure below.
 

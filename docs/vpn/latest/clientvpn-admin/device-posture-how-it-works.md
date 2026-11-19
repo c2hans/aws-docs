@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # How device posture works
-<a name="device-posture-how-it-works"></a>
 
 Device posture builds on your existing Client VPN authentication. It requires the AWS provided client version 6.2.0 or later. When device posture is enabled on an endpoint, Client VPN adds a device health check to each connection:
 

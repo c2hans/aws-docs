@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel04-b
 ---
 
 # REL04-BP03 Do constant work
-<a name="rel04-bp03"></a>
 
  Systems can fail when load changes suddenly and by a large amount. A constant-work design performs the same amount of work regardless of conditions. A surge in failures or demand does not create a matching surge in the system's work. Because the system behaves the same in normal and failure modes, large and rapid changes do not threaten its stability.
 

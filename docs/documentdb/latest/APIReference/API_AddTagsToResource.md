@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_AddTa
 ---
 
 # AddTagsToResource
-<a name="API_AddTagsToResource"></a>
 
 Adds metadata tags to an Amazon DocumentDB resource. You can use these tags with cost allocation reporting to track costs that are associated with Amazon DocumentDB resources or in a `Condition` statement in an AWS Identity and Access Management (IAM) policy for Amazon DocumentDB.
 

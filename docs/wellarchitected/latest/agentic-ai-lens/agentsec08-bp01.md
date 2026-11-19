@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC08-BP01 Multi-layer input validation and prompt injection defense
-<a name="agentsec08-bp01"></a>
 
  Agents take input from many surfaces and only one needs to be unvalidated for adversarial content to reach the agent's reasoning process. A layered validation architecture covers every surface, and in particular catches the indirect prompt injection embedded in retrieved external content.
 

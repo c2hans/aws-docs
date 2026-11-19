@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ElasticLoadB
 ---
 
 # ElasticLoadBalancing
-<a name="API_ElasticLoadBalancing"></a>
 
 Indicates the current configuration of the load balancing capability on your EKS Auto Mode cluster. For example, if the capability is enabled or disabled. For more information, see EKS Auto Mode load balancing capability in the *Amazon EKS User Guide*.
 

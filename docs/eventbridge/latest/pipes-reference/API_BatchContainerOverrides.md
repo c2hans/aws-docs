@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_B
 ---
 
 # BatchContainerOverrides
-<a name="API_BatchContainerOverrides"></a>
 
 The overrides that are sent to a container.
 

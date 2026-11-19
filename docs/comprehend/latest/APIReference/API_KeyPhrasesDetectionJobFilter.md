@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_KeyPh
 ---
 
 # KeyPhrasesDetectionJobFilter
-<a name="API_KeyPhrasesDetectionJobFilter"></a>
 
 Provides information for filtering a list of dominant language detection jobs. For more information, see the [ListKeyPhrasesDetectionJobs](API_ListKeyPhrasesDetectionJobs.md) operation.
 

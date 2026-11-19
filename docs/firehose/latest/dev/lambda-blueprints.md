@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/lambda-blueprints.ht
 ---
 
 # Supported Lambda blueprints
-<a name="lambda-blueprints"></a>
 
 These blueprints demonstrate how you can create and use AWS Lambda functions to transform data in your Amazon Data Firehose data streams.
 

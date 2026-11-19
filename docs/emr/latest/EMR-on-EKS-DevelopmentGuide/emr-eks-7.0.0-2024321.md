@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-7.0.0-2024321
-<a name="emr-eks-7.0.0-2024321"></a>
 
 **Release notes**: `7.0.0-2024321` was released on March 11, 2024. Compared to the previous release, this release has been refreshed with the recently updated Amazon Linux packages and critical fixes.
 

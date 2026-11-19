@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Batch
-<a name="API_connect-customer-profiles_Batch"></a>
 
 Batch defines the boundaries for ingestion for each step in `APPFLOW_INTEGRATION` workflow. `APPFLOW_INTEGRATION` workflow splits ingestion based on these boundaries.
 

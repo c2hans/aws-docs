@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # PlayerGatewayConfiguration
-<a name="API_PlayerGatewayConfiguration"></a>
 
 Configuration settings for player gateway. Use these settings to specify advanced options for how player gateway handles connections.
 

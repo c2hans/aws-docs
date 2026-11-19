@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # ServiceManagedEc2InstanceCapabilities
-<a name="API_ServiceManagedEc2InstanceCapabilities"></a>
 
 The Amazon EC2 instance capabilities.
 

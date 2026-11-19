@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/multi-Region.mo
 ---
 
 # Monitoring MemoryDB Multi-Region
-<a name="multi-Region.monitoring"></a>
 
 You can use Amazon CloudWatch to monitor the behavior and performance of a Multi-Region cluster. MemoryDB publishes the `MultiRegionClusterReplicationLag` metric for each regional cluster within the Multi-Region cluster.
 

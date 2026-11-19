@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-c
 ---
 
 # Using condition keys to limit access to CloudWatch namespaces
-<a name="iam-cw-condition-keys-namespace"></a>
 
  Use IAM condition keys to limit users to publishing metrics only in the CloudWatch namespaces that you specify. This section provides examples that describe how to allow and exclude users from publishing metrics in a namespace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Document revisions
-<a name="revisions"></a>
 
 The following table describes important changes to the Spatial Data Management on AWS documentation.
 

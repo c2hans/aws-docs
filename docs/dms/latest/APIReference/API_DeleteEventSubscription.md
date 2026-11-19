@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteEventS
 ---
 
 # DeleteEventSubscription
-<a name="API_DeleteEventSubscription"></a>
 
  Deletes an AWS DMS event subscription.
 

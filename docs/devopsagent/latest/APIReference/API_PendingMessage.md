@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Pend
 ---
 
 # PendingMessage
-<a name="API_PendingMessage"></a>
 
 Represents a pending message in an agent execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ContractSummary
-<a name="API_billing_ContractSummary"></a>
 
 A summary of a private pricing contract visible to your account. `ListContracts` returns these summaries.
 

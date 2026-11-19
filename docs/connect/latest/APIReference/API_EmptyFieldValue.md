@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmptyFie
 ---
 
 # EmptyFieldValue
-<a name="API_EmptyFieldValue"></a>
 
 An empty value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Filter
-<a name="API_automation_Filter"></a>
 
 A filter used to narrow down results based on specific criteria.
 

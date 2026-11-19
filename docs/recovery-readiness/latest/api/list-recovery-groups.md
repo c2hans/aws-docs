@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/list-recov
 ---
 
 # List recovery groups
-<a name="list-recovery-groups"></a>
 
 The following is an example of a request to list the recovery groups in an account, and the response.
 

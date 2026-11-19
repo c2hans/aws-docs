@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Standar
 ---
 
 # StandardsStatusReason
-<a name="API_StandardsStatusReason"></a>
 
 The reason for the current status of your subscription to the standard.
 

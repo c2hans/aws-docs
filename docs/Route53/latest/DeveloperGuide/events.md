@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/events.htm
 ---
 
 # .events
-<a name="events"></a>
 
 Used for information about events of all kinds.
 

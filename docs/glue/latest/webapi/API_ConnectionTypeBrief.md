@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectionTypeBri
 ---
 
 # ConnectionTypeBrief
-<a name="API_ConnectionTypeBrief"></a>
 
 Brief information about a supported connection type returned by the `ListConnectionTypes` API.
 

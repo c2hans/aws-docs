@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RatingScale
-<a name="API_RatingScale"></a>
 
  The rating scale that defines how evaluators should score agent performance, supporting both numerical and categorical scales.
 

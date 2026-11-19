@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompletedMultipa
 ---
 
 # CompletedMultipartUpload
-<a name="API_CompletedMultipartUpload"></a>
 
 The container for the completed multipart upload details.
 

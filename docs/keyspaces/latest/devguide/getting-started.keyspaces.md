@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/getting-starte
 ---
 
 # Create a keyspace in Amazon Keyspaces
-<a name="getting-started.keyspaces"></a>
 
 In this section, you create a keyspace using the console, `cqlsh`, or the AWS CLI.
 

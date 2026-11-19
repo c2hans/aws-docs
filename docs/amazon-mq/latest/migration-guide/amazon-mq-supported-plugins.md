@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/amazon-
 ---
 
 # Supported plugins for Amazon MQ for ActiveMQ
-<a name="amazon-mq-supported-plugins"></a>
 
  A plugin in Amazon MQ is a software module that adds a specific feature to a broker. Amazon MQ for ActiveMQ managed brokers support the following plugins:
 +  [authorizationPlugin](https://activemq.apache.org/security.html): Allows you to control access at the granularity level of destinations or of individual messages.

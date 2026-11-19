@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # CreateMediaPipelineKinesisVideoStreamPool
-<a name="API_media-pipelines-chime_CreateMediaPipelineKinesisVideoStreamPool"></a>
 
 Creates an Amazon Kinesis Video Stream pool for use with media stream pipelines.
 

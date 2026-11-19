@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Telephon
 ---
 
 # TelephonyConfig
-<a name="API_TelephonyConfig"></a>
 
 The distribution of traffic between the instance and its replicas.
 

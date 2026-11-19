@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Generative AI use cases for analytics and insights
-<a name="generative-ai-capabilities-analytics"></a>
 
 The analytics and insights capability helps convert vast amounts of data into actionable insights that drive decision making and continuous improvement. By using generative AI, this capability processes data from various sources, including code repositories, project management tools, and team collaboration platforms, to provide a holistic view of the development process and team productivity. Generative AI goes beyond traditional metrics in order to offer predictive and prescriptive analytics. It can forecast potential issues and suggest targeted improvements. For instance, it can analyze patterns in code commits, bug resolution rates, and feature delivery velocity in order to identify high-performing teams, pinpoint bottlenecks, and suggest process optimizations. Moreover, it can provide insights into team dynamics and individual performance. These insights help leaders make data-driven decisions about workload distribution, training needs, and team composition. By presenting these insights through interactive dashboards, the capability empowers stakeholders at all levels to make informed decisions, optimize processes, and continuously enhance team productivity, which leads to faster delivery of high-quality software.
 

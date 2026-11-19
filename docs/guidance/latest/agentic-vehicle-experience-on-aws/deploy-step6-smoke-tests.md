@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Step 6: Smoke tests
-<a name="deploy-step6-smoke-tests"></a>
 
 Run the smoke tests after every deploy to verify the full stack is operational. Each test must exit zero.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # AssociateKmsKey
-<a name="API_AssociateKmsKey"></a>
 
 Associates the specified AWS KMS key with either one log group in the account, or with all stored CloudWatch Logs query insights results in the account.
 

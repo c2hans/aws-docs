@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_LogDelivery.html
 ---
 
 # LogDelivery
-<a name="API_LogDelivery"></a>
 
 Details about log delivery.
 

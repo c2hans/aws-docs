@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Task.h
 ---
 
 # Task
-<a name="API_Task"></a>
 
 Details on a task in a cluster.
 

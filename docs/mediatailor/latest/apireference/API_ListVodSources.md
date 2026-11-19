@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_List
 ---
 
 # ListVodSources
-<a name="API_ListVodSources"></a>
 
 Lists the VOD sources contained in a source location. A source represents a piece of content.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/inte
 AWS IoT FleetWise is no longer open to new customers. Existing AWS IoT FleetWise customers can continue using the service. The [Guidance for Connected Mobility on AWS](https://aws.amazon.com/solutions/guidance/connected-mobility-on-aws/) provides guidance on how to develop and deploy modular services for connected mobility solutions that can be used to achieve equivalent capabilities as AWS IoT FleetWise.
 
 # Connecting to AWS IoT FleetWise through an interface VPC endpoint
-<a name="interface-vpc-endpoint"></a>
 
 You can connect directly to AWS IoT FleetWise by using an [interface VPC endpoint (AWS PrivateLink)](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html) in your Virtual Private Cloud (VPC), instead of connecting over the internet. When you use an interface VPC endpoint, communication between your VPC and AWS IoT FleetWise is conducted entirely within the AWS network. Each VPC endpoint is represented by one or more [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) (ENIs) with private IP addresses in your VPC subnets.
 

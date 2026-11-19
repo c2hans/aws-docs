@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Unsubscribe from participant added events in Connect Customer agent workspace
-<a name="3P-apps-contact-events-participantadded-unsub"></a>
 
 Unsubscribes from participant added events.
 

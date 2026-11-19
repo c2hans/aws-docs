@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # AWS Connected Vehicle Reference Architecture
-<a name="aws-connected-vehicle"></a>
 
 Publication date: **January 17, 2024 ([Diagram history](diagram-history.md))**
 

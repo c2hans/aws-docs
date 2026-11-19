@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Instance.
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 Describes an instance.
 

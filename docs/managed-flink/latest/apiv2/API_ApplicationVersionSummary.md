@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationVersionSummary
-<a name="API_ApplicationVersionSummary"></a>
 
 The summary of the application version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_LifecycleRule.ht
 ---
 
 # LifecycleRule
-<a name="API_LifecycleRule"></a>
 
 A lifecycle rule for individual objects in an Amazon S3 bucket.
 

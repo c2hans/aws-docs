@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # AttributeOperation
-<a name="API_AttributeOperation"></a>
 
 An operation that applies to the requested group. This operation might add, replace, or remove an attribute.
 

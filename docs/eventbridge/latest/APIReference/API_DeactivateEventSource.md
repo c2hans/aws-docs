@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Deac
 ---
 
 # DeactivateEventSource
-<a name="API_DeactivateEventSource"></a>
 
 You can use this operation to temporarily stop receiving events from the specified partner event source. The matching event bus is not deleted.
 

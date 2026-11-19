@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Get the routing profile of the agent in Connect Customer agent workspace
-<a name="3P-apps-agent-requests-getroutingprofile"></a>
 
 Returns the routing profile of the agent currently logged in to the Connect Customer agent workspace. The routing profile contains the following fields:
 + `channelConcurrencyMap`: See agent.[Get the limit of contacts for the agent in Connect Customer agent workspace](3P-apps-agent-requests-getchannelconcurrency.md) for more info.

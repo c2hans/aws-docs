@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # EventInvokeConfiguration
-<a name="sam-property-function-eventinvokeconfiguration"></a>
 
 Configuration options for [asynchronous](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html) Lambda Alias or Version invocations.
 

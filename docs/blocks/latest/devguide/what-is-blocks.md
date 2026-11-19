@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/what-is-blocks.ht
 ---
 
 # What is AWS Blocks?
-<a name="what-is-blocks"></a>
 
  AWS Blocks is a backend toolkit for building full-stack applications on AWS. Each Block is a self-contained backend capability. It bundles your application code, a local development setup, and the infrastructure to run it. Every Block works with every other Block, so any combination produces a functioning backend. Pick the ones you need, combine them, and AWS Blocks automatically defines the infrastructure for you following AWS best practices.
 

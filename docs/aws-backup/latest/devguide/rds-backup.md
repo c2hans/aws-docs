@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/rds-backup.ht
 ---
 
 # Amazon Relational Database Service backups
-<a name="rds-backup"></a>
 
 ## Amazon RDS and AWS Backup
 <a name="rds-backup-differences"></a>

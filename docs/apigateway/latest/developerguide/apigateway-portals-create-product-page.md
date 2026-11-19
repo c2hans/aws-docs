@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Create a product page in API Gateway
-<a name="apigateway-portals-create-product-page"></a>
 
 A product page helps your product consumers understand and use your products. The documentation is at the product-level, so any portals that include your product have this documentation. API Gateway supports two types of product pages written in [GitHub Flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax):
 

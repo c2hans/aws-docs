@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ddb-caching-
 ---
 
 # Configuring DynamoDB caching
-<a name="ddb-caching-configuration"></a>
 
 You configure Amazon DynamoDB caching through the Amazon ElastiCache integration client in your application. Connection settings control how the client connects to the serverless cache, and caching behavior settings control which data is cached and how long cache entries live.
 

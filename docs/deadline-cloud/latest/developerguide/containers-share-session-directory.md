@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/con
 ---
 
 # Share the session working directory
-<a name="containers-share-session-directory"></a>
 
 Deadline Cloud writes embedded files and prepares job attachment paths under `Session.WorkingDirectory`. OpenJD values such as `Task.File.Run` contain absolute paths in that directory. A container can't access those paths unless its filesystem includes the session directory.
 

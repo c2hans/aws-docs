@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataStoriesConfigurations
-<a name="API_DataStoriesConfigurations"></a>
 
 The data story settings of an embedded Quick Sight console.
 

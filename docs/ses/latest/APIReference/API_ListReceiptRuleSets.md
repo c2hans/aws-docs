@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ListReceiptR
 ---
 
 # ListReceiptRuleSets
-<a name="API_ListReceiptRuleSets"></a>
 
 Lists the receipt rule sets that exist under your AWS account in the current AWS Region. If there are additional receipt rule sets to be retrieved, you receive a `NextToken` that you can provide to the next call to `ListReceiptRuleSets` to retrieve the additional entries.
 

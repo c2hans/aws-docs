@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-objlen.htm
 ---
 
 # JSON.OBJLEN
-<a name="json-objlen"></a>
 
 Get number of keys in the object values at the path.
 

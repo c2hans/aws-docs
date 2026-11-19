@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multiple-
 ---
 
 # Demo of Multiple Hosts in IVS
-<a name="multiple-hosts-demo"></a>
 
 Scenario: Alice (A) is broadcasting to her Amazon IVS channel and wants to invite Bob (B) on stage as a guest. (In a real broadcast, A and B would be images of Alice and Bob.)
 

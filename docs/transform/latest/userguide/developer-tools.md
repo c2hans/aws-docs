@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/developer-too
 ---
 
 # Developer tools
-<a name="developer-tools"></a>
 
 You can access AWS Transform agents from agentic IDEs, agent plugins, and the MCP server. Choose the surface that fits your workflow.
 

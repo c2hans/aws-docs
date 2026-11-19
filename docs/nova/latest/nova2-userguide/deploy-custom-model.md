@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/deploy-custo
 ---
 
 # Deploy a custom model for on-demand inference
-<a name="deploy-custom-model"></a>
 
 After you successfully create a custom model with a fine-tuning or continued pre-training job, you can set up on-demand inference for the model.
 

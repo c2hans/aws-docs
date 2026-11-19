@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Update
 ---
 
 # UpdateProviderConfiguration
-<a name="API_UpdateProviderConfiguration"></a>
 
 The update Provider Configuration.
 

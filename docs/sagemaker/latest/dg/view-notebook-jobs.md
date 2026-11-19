@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/view-notebook-jobs.h
 ---
 
 # View notebook jobs
-<a name="view-notebook-jobs"></a>
 
 **Note**
 You can automatically view your notebook jobs if you scheduled your notebook job from the Studio UI. If you used the SageMaker Python SDK to schedule your notebook job, you need to supply additional tags when you create the notebook job step. For details, see [View your notebook jobs in the Studio UI dashboard](create-notebook-auto-run-sdk.md#create-notebook-auto-run-dash).

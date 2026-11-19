@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-contact
 ---
 
 # Enable contact analysis segment streams to analyze conversational analytics conversations
-<a name="enable-contact-analysis-segment-streams"></a>
 
 Contact analysis segment streams are not enabled by default. This topic explains how to enable them.
 

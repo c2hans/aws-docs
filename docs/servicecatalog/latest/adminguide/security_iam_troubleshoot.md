@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/securit
 ---
 
 # Troubleshooting AWS Service Catalog identity and access
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues you might encounter when working with AWS Service Catalog and IAM.
 

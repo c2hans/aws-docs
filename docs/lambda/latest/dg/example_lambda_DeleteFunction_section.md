@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_DeleteFu
 ---
 
 # Use `DeleteFunction` with an AWS SDK or CLI
-<a name="example_lambda_DeleteFunction_section"></a>
 
 The following code examples show how to use `DeleteFunction`.
 

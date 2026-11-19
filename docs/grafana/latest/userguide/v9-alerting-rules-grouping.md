@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v9-alerting-rul
 ---
 
 # Namespaces and groups
-<a name="v9-alerting-rules-grouping"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 9.x**.

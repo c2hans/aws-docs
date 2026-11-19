@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DashboardValidationMessage
-<a name="API_DashboardValidationMessage"></a>
 
 An error or warning for the operation.
 

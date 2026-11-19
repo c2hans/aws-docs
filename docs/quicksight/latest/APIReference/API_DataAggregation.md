@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataA
 ---
 
 # DataAggregation
-<a name="API_DataAggregation"></a>
 
 A structure that represents a data aggregation.
 

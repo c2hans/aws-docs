@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListRouterOu
 ---
 
 # ListRouterOutputs
-<a name="API_ListRouterOutputs"></a>
 
 Retrieves a list of router outputs in AWS Elemental MediaConnect.
 

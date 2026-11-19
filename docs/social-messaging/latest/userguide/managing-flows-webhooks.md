@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Receiving Flow responses and status changes
-<a name="managing-flows-webhooks"></a>
 
 When a user completes a Flow or when a Flow's status changes, AWS End User Messaging Social delivers webhook notifications through your existing configured event destination. No additional setup or new event types are required — Flow events are delivered automatically to the same event destination you use for messages and delivery receipts. You must have an event destination enabled to receive these notifications. For more information, see [Add a message and event destination to AWS End User Messaging Social](managing-event-destinations-add.md).
 

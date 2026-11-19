@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailCrossRegionDetails
-<a name="API_GuardrailCrossRegionDetails"></a>
 
 Contains details about the system-defined guardrail profile that you're using with your guardrail for cross-Region inference.
 

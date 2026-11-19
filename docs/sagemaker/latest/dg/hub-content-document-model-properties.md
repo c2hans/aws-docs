@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hub-content-document
 ---
 
 # Model properties
-<a name="hub-content-document-model-properties"></a>
 
 The `HubContentDocument` for the `Model` HubContentType contains the metadata that describes a JumpStart model, including its id, licensing, deployment configuration, and customization options. Use this metadata to evaluate and compare models and to make informed decisions about which model best fits your use case.
 

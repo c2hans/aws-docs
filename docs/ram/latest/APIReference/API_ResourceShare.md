@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ResourceShar
 ---
 
 # ResourceShare
-<a name="API_ResourceShare"></a>
 
 Describes a resource share in AWS RAM.
 

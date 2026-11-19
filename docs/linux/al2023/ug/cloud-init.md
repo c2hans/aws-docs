@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/cloud-init.html
 ---
 
 # Customized cloud-init
-<a name="cloud-init"></a>
 
 The cloud-init package is an open-source application that bootstraps Linux images in a cloud computing environment. For more information, see [cloud-init Documentation](https://cloudinit.readthedocs.io/en/22.2.2/).
 

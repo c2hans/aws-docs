@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DisassociateGloss
 ---
 
 # DisassociateGlossaryTerms
-<a name="API_DisassociateGlossaryTerms"></a>
 
 Removes the association of one or more glossary terms from an asset in AWS Glue Data Catalog.
 

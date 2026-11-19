@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartReplica
 ---
 
 # StartReplicationTaskAssessment
-<a name="API_StartReplicationTaskAssessment"></a>
 
  Starts the replication task assessment for unsupported data types in the source database.
 

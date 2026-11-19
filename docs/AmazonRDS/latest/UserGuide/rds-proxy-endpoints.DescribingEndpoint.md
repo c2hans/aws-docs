@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-end
 ---
 
 # Viewing proxy endpoints
-<a name="rds-proxy-endpoints.DescribingEndpoint"></a>
 
 To view existing proxy endpoints, follow these instructions:
 

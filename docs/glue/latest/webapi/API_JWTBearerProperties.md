@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JWTBearerProperti
 ---
 
 # JWTBearerProperties
-<a name="API_JWTBearerProperties"></a>
 
 JWT bearer token configuration that defines the properties needed for the JWT Bearer grant type flow.
 

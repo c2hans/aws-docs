@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/features.html
 ---
 
 # Features of MediaLive
-<a name="features"></a>
 
 This chapter contains detailed procedures for implementing AWS Elemental MediaLive features. You set up these features when you create or modify the channel or when you add actions to the channel schedule. The procedures expand on the limited information provided in [Creating a channel from scratch](creating-channel-scratch.md) and [Creating an AWS Elemental MediaLive schedule](working-with-schedule.md).
 

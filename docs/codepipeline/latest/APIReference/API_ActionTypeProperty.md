@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionTypeProperty
-<a name="API_ActionTypeProperty"></a>
 
 Represents information about each property specified in the action configuration, such as the description and key name that display for the customer using the action type.
 

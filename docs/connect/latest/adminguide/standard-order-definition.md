@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-order
 ---
 
 # Customer Profiles standard order object fields
-<a name="standard-order-definition"></a>
 
 The following table lists all the fields in the Customer Profiles standard order object.
 

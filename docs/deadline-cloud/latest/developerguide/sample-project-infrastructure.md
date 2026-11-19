@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sam
 ---
 
 # Sample project infrastructure
-<a name="sample-project-infrastructure"></a>
 
 To demonstrate using job attachments and storage profiles, set up a test environment with two separate projects. You can use the Deadline Cloud console to create the test resources.
 

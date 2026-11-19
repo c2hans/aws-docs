@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/open-source.ht
 ---
 
 # Open source code
-<a name="open-source"></a>
 
  The Amazon DCV Access Console consists of installable software packages that include a Handler, an Authentication Server, a Web Client, and a Setup Wizard configured to provide a graphical interface for the Amazon DCV Session Manager broker. The Access Console is available as a packaged commercial build on the [Amazon DCV downloads page](https://www.amazondcv.com/) and as separate open sourced components on [GitHub](https://github.com/aws/dcv-access-console). You may consider using these open source components if you want to customize the Access Console in ways not available with the commercial build to meet your unique use cases.
 

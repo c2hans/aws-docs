@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # GetQueueAttributes
-<a name="API_GetQueueAttributes"></a>
 
 Gets attributes for the specified queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # View or edit an AWS Cloud WAN Site-to-Site VPN attachment
-<a name="cloudwan-attachments-viewing-editing-vpn"></a>
 
 You can view and edit configuration information for a VPN attachment, as well as adding a new attachment. If you want to add a new VPN attachment, see [Create a Site-to-Site VPN attachment for an AWS Cloud WAN core network](cloudwan-vpn-attachment-add.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterRestrictedInstanceGroupDetails
-<a name="API_ClusterRestrictedInstanceGroupDetails"></a>
 
 The instance group details of the restricted instance group (RIG).
 

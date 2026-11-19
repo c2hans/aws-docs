@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/anonymous-ap
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Example IAM policies for Amazon Q Business application environment supporting anonymous access
-<a name="anonymous-application-iam-policies"></a>
 
 We strongly recommend that you use a restricted policies for the role that will be used to call the chat APIs for anonymous access application environments.
 

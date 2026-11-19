@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # Azure federation role
-<a name="cloud-connector-azure-federation-role"></a>
 
 The Azure federation role lets Systems Manager obtain a web identity token from AWS Security Token Service (AWS STS) and exchange it for Azure credentials through OIDC federation. Automation assumes this role during runbook execution to authenticate to your Azure tenant. The Systems Manager service also assumes this role directly to validate the Cloud Connector before any State Manager association exists.
 

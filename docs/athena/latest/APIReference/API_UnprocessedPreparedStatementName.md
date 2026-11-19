@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Unprocess
 ---
 
 # UnprocessedPreparedStatementName
-<a name="API_UnprocessedPreparedStatementName"></a>
 
 The name of a prepared statement that could not be returned.
 

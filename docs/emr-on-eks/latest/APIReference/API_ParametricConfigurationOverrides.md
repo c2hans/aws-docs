@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Param
 ---
 
 # ParametricConfigurationOverrides
-<a name="API_ParametricConfigurationOverrides"></a>
 
 A configuration specification to be used to override existing configurations. This data type allows job template parameters to be specified within.
 

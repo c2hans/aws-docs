@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleads-configuring-con
 ---
 
 # Configuring Google Ads connections
-<a name="googleads-configuring-connections"></a>
 
  Google Ads supports `AUTHORIZATION_CODE` grant type for OAuth2.
 

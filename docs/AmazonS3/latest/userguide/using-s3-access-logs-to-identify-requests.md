@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-s3-acces
 ---
 
 # Using Amazon S3 server access logs to identify requests
-<a name="using-s3-access-logs-to-identify-requests"></a>
 
 You can identify Amazon S3 requests by using Amazon S3 server access logs.
 

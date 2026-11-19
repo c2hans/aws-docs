@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDashboardsQAConfiguration
-<a name="API_DescribeDashboardsQAConfiguration"></a>
 
 Describes an existing dashboard QA configuration.
 

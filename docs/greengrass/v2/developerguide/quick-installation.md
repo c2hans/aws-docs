@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/quick-insta
 ---
 
 # Install AWS IoT Greengrass Core software with automatic resource provisioning
-<a name="quick-installation"></a>
 
 The AWS IoT Greengrass Core software includes an installer that sets up your device as a Greengrass core device. To set up a device quickly, the installer can provision the AWS IoT thing, AWS IoT thing group, IAM role, and AWS IoT role alias that the core device requires to operate. The installer can also deploy the local development tools to the core device, so you can use the device to develop and test custom software components. The installer requires AWS credentials to provision these resources and create the deployment.
 

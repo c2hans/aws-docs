@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Sites and links in AWS Cloud WAN
-<a name="cloudwan-sites-links"></a>
 
 After you've added any devices to your global network, you can create a Cloud WAN site and associate any of your devices with that particular site using a link. For information on adding devices, see [Devices in AWS Cloud WAN](cloudwan-devices.md).
 

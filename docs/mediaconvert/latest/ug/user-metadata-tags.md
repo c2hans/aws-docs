@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/user-metadata-tag
 ---
 
 # Using metadata tags with AWS Elemental MediaConvert jobs
-<a name="user-metadata-tags"></a>
 
 Unless you have existing integrations or workflows that rely on metadata (`userMetadata`) tags, we recommend that you use standard AWS tags for both automatic integration with AWS services and for custom integrations and workflows. For more information, see [Tagging AWS Elemental MediaConvert resources](tagging-mediaconvert-resources.md).
 

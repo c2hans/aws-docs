@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-met
 ---
 
 # Schedule Adherence metrics in Connect Customer
-<a name="scheduling-metrics"></a>
 
 This section describes the metrics used when calculating Historical Schedule Adherence.
 

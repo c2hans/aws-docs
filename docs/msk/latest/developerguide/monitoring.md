@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.htm
 ---
 
 # Monitor an Amazon MSK Provisioned cluster
-<a name="monitoring"></a>
 
 There are several ways that Amazon MSK helps you monitor the status of your Amazon MSK Provisioned cluster.
 + Amazon MSK gathers Apache Kafka metrics and sends them to Amazon CloudWatch where you can view them. For more information about Apache Kafka metrics, including the ones that Amazon MSK surfaces, see [Monitoring](http://kafka.apache.org/documentation/#monitoring) in the Apache Kafka documentation.

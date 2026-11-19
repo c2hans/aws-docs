@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodePipelineApproverAccess
-<a name="AWSCodePipelineApproverAccess"></a>
 
 **Description**: Provides access to view and approve manual changes for all pipelines
 

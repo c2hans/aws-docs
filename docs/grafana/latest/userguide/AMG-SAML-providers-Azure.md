@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-SAML-provid
 ---
 
 # Configure Amazon Managed Grafana to use Azure AD
-<a name="AMG-SAML-providers-Azure"></a>
 
 Use the following steps to configure Amazon Managed Grafana to use Azure Active Directory as an identity provider. These steps assume that you have already created your Amazon Managed Grafana workspace and you have made a note of the workspace *ID*, *URLs*, and *AWS Region*.
 

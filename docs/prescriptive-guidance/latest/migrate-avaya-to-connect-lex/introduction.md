@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 ---
 
 # Migrating an on-premises Avaya contact center to Amazon Connect Customer and Amazon Lex V2
-<a name="introduction"></a>
 
 *Dipkumar Mehta, Saqib M, and So Young Yoon, Amazon Web Services*
 

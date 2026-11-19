@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-760-release.
 ---
 
 # Amazon EMR release 7.6.0
-<a name="emr-760-release"></a>
 
 ## 7.6.0 supported lifecycle
 <a name="emr-760-supported-lifecycle"></a>

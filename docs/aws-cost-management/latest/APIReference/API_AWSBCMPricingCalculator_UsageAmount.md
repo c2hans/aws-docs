@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UsageAmount
-<a name="API_AWSBCMPricingCalculator_UsageAmount"></a>
 
  Represents a usage amount for a specific time period.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/IC-TF-HowItWorks.htm
 ---
 
 # How Image Classification - TensorFlow Works
-<a name="IC-TF-HowItWorks"></a>
 
 The Image Classification - TensorFlow algorithm takes an image as input and classifies it into one of the output class labels. Various deep learning networks such as MobileNet, ResNet, Inception, and EfficientNet are highly accurate for image classification. There are also deep learning networks that are trained on large image datasets, such as ImageNet, which has over 11 million images and almost 11,000 classes. After a network is trained with ImageNet data, you can then fine-tune the network on a dataset with a particular focus to perform more specific classification tasks. The Amazon SageMaker Image Classification - TensorFlow algorithm supports transfer learning on many pretrained models that are available in the TensorFlow Hub.
 

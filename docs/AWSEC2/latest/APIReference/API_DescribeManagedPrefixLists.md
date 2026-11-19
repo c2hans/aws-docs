@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeM
 ---
 
 # DescribeManagedPrefixLists
-<a name="API_DescribeManagedPrefixLists"></a>
 
 Describes your managed prefix lists and any AWS-managed prefix lists.
 

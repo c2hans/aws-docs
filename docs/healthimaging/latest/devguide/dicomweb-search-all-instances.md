@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/dicomweb-s
 ---
 
 # Searching for all DICOM instances in HealthImaging
-<a name="dicomweb-search-all-instances"></a>
 
 Use the `SearchDICOMAllInstances` API to search for all DICOM instances across an HealthImaging [data store](getting-started-concepts.md#concept-data-store). Construct a URL that includes supported DICOM data elements (attributes) to filter results. The API returns instance search results in JSON format, ordered by `Instance Number (0020,0013)` in ascending order (oldest to latest).
 

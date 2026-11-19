@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # BatchUpdateAttendeeCapabilitiesExcept
-<a name="API_meeting-chime_BatchUpdateAttendeeCapabilitiesExcept"></a>
 
 Updates `AttendeeCapabilities` except the capabilities listed in an `ExcludedAttendeeIds` table.
 

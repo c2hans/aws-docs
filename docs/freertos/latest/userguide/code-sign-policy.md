@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/code-sign-poli
 ---
 
 # Grant access to code signing for AWS IoT
-<a name="code-sign-policy"></a>
 
 To provide access, add permissions to your users, groups, or roles:
 + Users and groups in AWS IAM Identity Center:

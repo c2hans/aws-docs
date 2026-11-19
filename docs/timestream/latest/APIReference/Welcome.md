@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon Timestream Write
 <a name="Welcome_Amazon_Timestream_Write"></a>

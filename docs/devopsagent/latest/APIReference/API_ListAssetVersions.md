@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListAssetVersions
-<a name="API_ListAssetVersions"></a>
 
 Lists versions of an asset in the specified agent space
 

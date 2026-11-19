@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_WarmTh
 ---
 
 # WarmThroughputSpecificationSummary
-<a name="API_WarmThroughputSpecificationSummary"></a>
 
 Contains the current warm throughput settings for a table, including the configured capacity units and the current status of the warm throughput configuration.
 

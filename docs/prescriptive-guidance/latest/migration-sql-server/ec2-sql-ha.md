@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # High availability
-<a name="ec2-sql-ha"></a>
 
 You can use any SQL Server-supported replication technology with your SQL Server database on Amazon Elastic Compute Cloud (Amazon EC2) to achieve high availability, data protection, and disaster recovery. Some of the common solutions are log shipping, database mirroring, Always On availability groups, and Always On Failover Cluster Instances.
 

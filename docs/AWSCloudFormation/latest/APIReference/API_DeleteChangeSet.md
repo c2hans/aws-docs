@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DeleteChangeSet
-<a name="API_DeleteChangeSet"></a>
 
 Deletes the specified change set. Deleting change sets ensures that no one executes the wrong change set.
 

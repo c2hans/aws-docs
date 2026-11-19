@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Optimizing costs for your bot control strategy
-<a name="optimizing-costs"></a>
 
 The nature of web traffic is dynamic. This means that the technology and services used to mitigate threats can vary and be tuned over time. This is key when considering a bot control strategy and the controls included in it. Optimization over time is the main principle to keep in mind, and it comes from the [cost optimization pillar](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html) of the AWS Well-Architected Framework.
 

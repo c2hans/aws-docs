@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Oracle PeopleSoft to Amazon RDS Custom
-<a name="migrate-oracle-peoplesoft-to-amazon-rds-custom"></a>
 
 *Gaurav Gupta, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListFunctionsByCod
 ---
 
 # ListFunctionsByCodeSigningConfig
-<a name="API_ListFunctionsByCodeSigningConfig"></a>
 
 List the functions that use the specified code signing configuration. You can use this method prior to deleting a code signing configuration, to verify that no functions are using it.
 

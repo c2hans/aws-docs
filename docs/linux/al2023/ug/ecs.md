@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ecs.html
 ---
 
 # Using AL2023 based Amazon ECS AMIs to host containerized workloads
-<a name="ecs"></a>
 
 **Note**
  For more information on how to use AL2023 inside a container, see [AL2023 in containers](container.md).

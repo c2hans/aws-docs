@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ha
 ---
 
 # Handshake
-<a name="API_Handshake"></a>
 
 Contains details for a handshake. A handshake is the secure exchange of information between two AWS accounts: a sender and a recipient.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # JWTOptionsOutput
-<a name="API_JWTOptionsOutput"></a>
 
 Describes the JWT options configured for the domain.
 

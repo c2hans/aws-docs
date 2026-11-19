@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/monitoring-met
 ---
 
 # Use custom metrics with Amazon Managed Service for Apache Flink
-<a name="monitoring-metrics-custom"></a>
 
 Managed Service for Apache Flink exposes 19 metrics to CloudWatch, including metrics for resource usage and throughput. In addition, you can create your own metrics to track application-specific data, such as processing events or accessing external resources.
 

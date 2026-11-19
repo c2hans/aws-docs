@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3D
 ---
 
 # DynamoDB table export output format
-<a name="S3DataExport.Output"></a>
 
 A DynamoDB table export includes manifest files in addition to the files containing your table data. These files are all saved in the Amazon S3 bucket that you specify in your [export request](S3DataExport_Requesting.md). The following sections describe the format and contents of each output object.
 

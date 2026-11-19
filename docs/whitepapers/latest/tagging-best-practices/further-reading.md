@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For more information, refer to the following resources:
 +  [AWS re:Invent 2020: Working backwards: Amazon’s approach to innovation](https://www.youtube.com/watch?v=aFdpBqmDpzM)

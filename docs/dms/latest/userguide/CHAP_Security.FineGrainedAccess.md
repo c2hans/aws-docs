@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Security.FineG
 ---
 
 # Fine-grained access control using resource names and tags
-<a name="CHAP_Security.FineGrainedAccess"></a>
 
 You can use resource names and resource tags based on Amazon Resource Names (ARNs) to manage access to AWS DMS resources. You do this by defining permitted action or including conditional statements in IAM policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Architecture details
-<a name="data-mesh-architecture-details"></a>
 
 ## DataZone V2 Domain
 <a name="datazone-v2-domain"></a>

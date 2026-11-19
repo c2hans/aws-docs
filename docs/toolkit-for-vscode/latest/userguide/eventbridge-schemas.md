@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/even
 ---
 
 # Working with Amazon EventBridge Schemas
-<a name="eventbridge-schemas"></a>
 
 You can use the AWS Toolkit for Visual Studio Code (VS Code) to perform various operations on [Amazon EventBridge schemas](https://docs.aws.amazon.com/eventbridge/latest/userguide/eventbridge-schemas.html).
 

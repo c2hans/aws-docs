@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/requ
 ---
 
 # Request Load balancer Capacity Unit reservation for your Network Load Balancer
-<a name="request-capacity-unit-reservation"></a>
 
 Before you use LCU reservation, review the following:
 + LCU reservation is not supported on Network Load Balancers using TLS listeners.

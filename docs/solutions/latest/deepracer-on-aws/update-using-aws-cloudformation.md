@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/update
 ---
 
 # Update using AWS CloudFormation
-<a name="update-using-aws-cloudformation"></a>
 
 If you have previously deployed the solution, follow this procedure to update the CloudFormation stack to the latest version.
 

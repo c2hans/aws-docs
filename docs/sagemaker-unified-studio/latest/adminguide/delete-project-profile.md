@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Delete project profiles
-<a name="delete-project-profile"></a>
 
  Complete the following procedure to delete a project profile for your domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetAuto
 ---
 
 # GetAutomationRuleV2
-<a name="API_GetAutomationRuleV2"></a>
 
 Returns an automation rule for the V2 service.
 

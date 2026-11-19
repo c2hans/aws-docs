@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_De
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Contains information about the destination receiving events.
 

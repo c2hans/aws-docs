@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Migrating perimeter zone applications to the AWS Cloud using AWS Network Firewall
-<a name="introduction"></a>
 
 *Sidharth Shah, Amazon Web Services*
 

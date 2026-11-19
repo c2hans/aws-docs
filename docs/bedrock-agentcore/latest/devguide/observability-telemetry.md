@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observ
 ---
 
 # Understand observability for agentic resources in AgentCore
-<a name="observability-telemetry"></a>
 
 This section defines the concepts of sessions, traces and spans as they relate to monitoring and observability of agents.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricSe
 ---
 
 # MetricSearchFilter
-<a name="API_MetricSearchFilter"></a>
 
 Filters to apply when searching for metrics.
 

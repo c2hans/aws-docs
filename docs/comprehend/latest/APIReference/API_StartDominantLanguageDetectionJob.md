@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Start
 ---
 
 # StartDominantLanguageDetectionJob
-<a name="API_StartDominantLanguageDetectionJob"></a>
 
 Starts an asynchronous dominant language detection job for a collection of documents. Use the [DescribeDominantLanguageDetectionJob](API_DescribeDominantLanguageDetectionJob.md) operation to track the status of a job.
 

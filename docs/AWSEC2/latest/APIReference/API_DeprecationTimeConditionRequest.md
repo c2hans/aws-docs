@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deprecati
 ---
 
 # DeprecationTimeConditionRequest
-<a name="API_DeprecationTimeConditionRequest"></a>
 
 The maximum period since deprecation for allowed images.
 

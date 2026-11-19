@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # RecommenderPromotionalFilter
-<a name="API_connect-customer-profiles_RecommenderPromotionalFilter"></a>
 
 Contains information on a promotion. A promotion defines additional business rules that apply to a configurable subset of recommended items.
 

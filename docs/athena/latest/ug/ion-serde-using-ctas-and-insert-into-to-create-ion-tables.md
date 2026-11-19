@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ion-serde-using-ctas-an
 ---
 
 # Use CTAS and INSERT INTO to create Amazon Ion tables
-<a name="ion-serde-using-ctas-and-insert-into-to-create-ion-tables"></a>
 
 You can use the `CREATE TABLE AS SELECT` (CTAS) and `INSERT INTO` statements to copy or insert data from a table into a new table in Amazon Ion format in Athena.
 

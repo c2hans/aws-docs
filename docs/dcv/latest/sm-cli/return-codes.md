@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/return-codes.html
 ---
 
 # Using return codes
-<a name="return-codes"></a>
 
 A return code is usually, but not always, a hidden code sent after running a Amazon DCV Session Manager CLI command describing its status.
 

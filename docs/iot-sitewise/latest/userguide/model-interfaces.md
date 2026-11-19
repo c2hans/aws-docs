@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/model-inte
 ---
 
 # Asset model interfaces
-<a name="model-interfaces"></a>
 
 AWS IoT SiteWise interfaces set standards across different asset models. They define a common structure that ensures consistency while allowing for variations in implementation.
 

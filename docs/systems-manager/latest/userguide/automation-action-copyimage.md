@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:copyImage` – Copy or encrypt an Amazon Machine Image
-<a name="automation-action-copyimage"></a>
 
 Copies an Amazon Machine Image (AMI) from any AWS Region into the current Region. This action can also encrypt the new AMI.
 

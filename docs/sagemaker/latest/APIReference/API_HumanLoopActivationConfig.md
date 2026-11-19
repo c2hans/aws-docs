@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanL
 ---
 
 # HumanLoopActivationConfig
-<a name="API_HumanLoopActivationConfig"></a>
 
 Provides information about how and under what conditions SageMaker creates a human loop. If `HumanLoopActivationConfig` is not given, then all requests go to humans.
 

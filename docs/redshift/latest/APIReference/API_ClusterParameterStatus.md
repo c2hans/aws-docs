@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Cluster
 ---
 
 # ClusterParameterStatus
-<a name="API_ClusterParameterStatus"></a>
 
 Describes the status of a parameter group.
 

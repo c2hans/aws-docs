@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-multi-r
 ---
 
 # Multi-Region fundamental 3: Understanding your workload dependencies
-<a name="fundamental-3"></a>
 
 A specific workload might have several dependencies in a Region, such as AWS services used, internal dependencies, third-party dependencies, network dependencies, certificates, keys, secrets, and parameters. To ensure operation of the workload during a failure scenario, there should be no dependencies between the primary Region and the standby Region; each should be able to operate independently of the other. To achieve this, scrutinize all dependencies in the workload to make sure that they are available within each Region. This is required because a failure in the primary Region should not affect the standby Region. In addition, you must understand how the workload operates when a dependency is in a degraded state or completely unavailable, so you can engineer solutions to handle this appropriately.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 ---
 
 # Run example Amazon Bedrock API requests through the AWS SDK for Python (Boto3)
-<a name="getting-started-api-ex-python"></a>
 
 This section guides you through trying out some common operations in Amazon Bedrock with the AWS Python to test that your permissions and authentication are set up properly. Before you run the following examples, you should check that you have fulfilled the following prerequisites:
 

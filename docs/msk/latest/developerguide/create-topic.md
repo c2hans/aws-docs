@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/create-topic.h
 ---
 
 # Step 4: Create a topic in the Amazon MSK cluster
-<a name="create-topic"></a>
 
 In this step of [Getting Started Using Amazon MSK](getting-started.md), you can create a topic using one of two approaches: using native AWS tools with the CreateTopic API, or using Apache Kafka AdminClient tools on a client machine.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/making-se
 ---
 
 # Making AWS service requests using the AWS SDK for PHP Version 3
-<a name="making-service-requests"></a>
 
 ## SDK request workflow overview
 <a name="usage-summary"></a>

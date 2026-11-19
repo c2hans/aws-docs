@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Au
 ---
 
 # AudienceModelSummary
-<a name="API_AudienceModelSummary"></a>
 
 Information about the audience model.
 

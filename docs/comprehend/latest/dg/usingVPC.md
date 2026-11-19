@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/usingVPC.html
 ---
 
 # Protect jobs by using an Amazon Virtual Private Cloud
-<a name="usingVPC"></a>
 
 Amazon Comprehend uses a variety of security measures to ensure the safety of your data with our job containers where it's stored while being used by Amazon Comprehend. However, job containers access AWS resources—such as the Amazon S3 buckets where you store data and model artifacts—over the internet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Using Amazon Verified Permissions policy store aliases in API operations
-<a name="policy-store-aliases-using"></a>
 
 Any Amazon Verified Permissions operation that accepts a `policyStoreId` parameter, such as [IsAuthorized](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_IsAuthorized.html), [IsAuthorizedWithToken](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_IsAuthorizedWithToken.html), and [GetPolicyStore](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_GetPolicyStore.html), can accept a policy store alias name in place of the policy store ID.
 

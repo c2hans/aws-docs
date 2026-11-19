@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsU
 ---
 
 # AnalyticsUtteranceFilter
-<a name="API_AnalyticsUtteranceFilter"></a>
 
 Contains fields describing a condition by which to filter the utterances. The expression may be understood as `name` `operator` `values`. For example:
 +  `LocaleId EQ Book` – The locale is the string "en".

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iamrole-per
 ---
 
 # Permissions for the IAM Role Assigned to AWS Config
-<a name="iamrole-permissions"></a>
 
 An IAM role lets you define a set of permissions. AWS Config assumes the role that you assign to it to write to your S3 bucket, publish to your SNS topic, and make `Describe` or `List` API requests to get configuration details for your AWS resources. For more information about IAM roles, see [IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/WorkingWithRoles.html) in the *IAM User Guide*.
 

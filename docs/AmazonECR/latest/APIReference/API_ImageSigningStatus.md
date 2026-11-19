@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageS
 ---
 
 # ImageSigningStatus
-<a name="API_ImageSigningStatus"></a>
 
 The signing status for an image. Each status corresponds to a signing profile.
 

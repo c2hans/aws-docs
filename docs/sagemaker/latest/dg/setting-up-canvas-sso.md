@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/setting-up-canvas-ss
 ---
 
 # Set Up SageMaker Canvas for Your Users
-<a name="setting-up-canvas-sso"></a>
 
 To set up Amazon SageMaker Canvas, do the following:
 + Create an Amazon SageMaker AI domain.

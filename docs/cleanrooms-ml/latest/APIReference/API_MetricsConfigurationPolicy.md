@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Me
 ---
 
 # MetricsConfigurationPolicy
-<a name="API_MetricsConfigurationPolicy"></a>
 
 Provides the configuration policy for metrics generation.
 

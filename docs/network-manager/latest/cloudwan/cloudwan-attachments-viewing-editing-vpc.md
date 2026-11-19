@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # View or edit an AWS Cloud WAN VPC attachment
-<a name="cloudwan-attachments-viewing-editing-vpc"></a>
 
 You can view and edit configuration information for a VPC attachment . If you want to add a new VPC attachment, see [VPC attachments in AWS Cloud WAN](cloudwan-vpc-attachment.md).
 

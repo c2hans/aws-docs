@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 15.6 – Prevent unnecessary data movement between systems and applications
-<a name="best-practice-15.6-prevent-unnecessary-data-movement-between-systems-and-applications."></a>
 
  Moving data around your organization can be very costly as it requires compute, networking, and storage resources. This can be particularly costly for analytics workloads as they generally require large quantities of information. When businesses move data around their organization, they increase the risk of creating duplicate data, which can impact your storage resource.
 

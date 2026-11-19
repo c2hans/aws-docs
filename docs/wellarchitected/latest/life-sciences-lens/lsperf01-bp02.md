@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSPERF01-BP02 Specialized hardware selection and optimization for genomic and molecular workloads
-<a name="lsperf01-bp02"></a>
 
  Strategically select and optimize specialized computing resources based on specific computational requirements. Use high memory-to-CPU ratio instances for genome assembly, GPU-accelerated instances for molecular dynamics simulations, and FPGA solutions for specialized algorithms so that each workload component runs on its most performance efficient infrastructure.
 

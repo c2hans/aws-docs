@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MalaysiaAdditionalInfo
-<a name="API_taxSettings_MalaysiaAdditionalInfo"></a>
 
  Additional tax information associated with your TRN in Malaysia.
 

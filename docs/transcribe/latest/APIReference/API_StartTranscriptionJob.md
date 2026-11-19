@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Start
 ---
 
 # StartTranscriptionJob
-<a name="API_StartTranscriptionJob"></a>
 
 Transcribes the audio from a media file and applies any additional Request Parameters you choose to include in your request.
 
@@ -197,7 +196,7 @@ Required: No
 The Amazon Resource Name (ARN) of a KMS key that you want to use to encrypt your transcription output.
 KMS key ARNs have the format `arn:partition:kms:region:account:key/key-id`. For example: `arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab`. For more information, see [ KMS key ARNs](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id-key-ARN).
 If you do not specify an encryption key, your output is encrypted with the default Amazon S3 key (SSE-S3).
-Note that the role making the [StartTranscriptionJob](#API_StartTranscriptionJob) request and the role specified in the `DataAccessRoleArn` request parameter (if present) must have permission to use the specified KMS key.
+Note that the role making the [StartTranscriptionJob](API_StartTranscriptionJob.md) request and the role specified in the `DataAccessRoleArn` request parameter (if present) must have permission to use the specified KMS key.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `^[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,2048}$`
@@ -217,7 +216,7 @@ Pattern: `[a-zA-Z0-9-_.!*'()/]{1,1024}$`
 Required: No
 
  ** [Settings](#API_StartTranscriptionJob_RequestSyntax) **   <a name="transcribe-StartTranscriptionJob-request-Settings"></a>
-Specify additional optional settings in your [StartTranscriptionJob](#API_StartTranscriptionJob) request, including channel identification, alternative transcriptions, speaker partitioning. You can use that to apply custom vocabularies and vocabulary filters.
+Specify additional optional settings in your [StartTranscriptionJob](API_StartTranscriptionJob.md) request, including channel identification, alternative transcriptions, speaker partitioning. You can use that to apply custom vocabularies and vocabulary filters.
 If you want to include a custom vocabulary or a custom vocabulary filter (or both) with your request but **do not** want to use automatic language identification, use `Settings` with the `VocabularyName` or `VocabularyFilterName` (or both) sub-parameter.
 If you're using automatic language identification with your request and want to include a custom language model, a custom vocabulary, or a custom vocabulary filter, use instead the ` LanguageIdSettings ` parameter with the `LanguageModelName`, `VocabularyName` or `VocabularyFilterName` sub-parameters.
 Type: [Settings](API_Settings.md) object

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRou
 ---
 
 # CreateRoute
-<a name="API_CreateRoute"></a>
 
 Creates a route in a route table within a VPC.
 

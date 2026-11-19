@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-priv
 ---
 
 # Request a private certificate in AWS Certificate Manager
-<a name="gs-acm-request-private"></a>
 
 ## Request a private certificate (console)
 <a name="request-private-console"></a>

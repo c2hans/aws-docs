@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentClassificationJobProperties
-<a name="API_DocumentClassificationJobProperties"></a>
 
 Provides information about a document classification job.
 

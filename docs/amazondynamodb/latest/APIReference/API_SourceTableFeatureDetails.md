@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_S
 ---
 
 # SourceTableFeatureDetails
-<a name="API_SourceTableFeatureDetails"></a>
 
 Contains the details of the features enabled on the table when the backup was created. For example, LSIs, GSIs, streams, TTL.
 

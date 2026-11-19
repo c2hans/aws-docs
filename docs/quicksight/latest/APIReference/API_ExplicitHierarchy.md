@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Expli
 ---
 
 # ExplicitHierarchy
-<a name="API_ExplicitHierarchy"></a>
 
 The option that determines the hierarchy of the fields that are built within a visual's field wells. These fields can't be duplicated to other visuals.
 

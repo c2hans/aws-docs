@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::StorageLens S3BucketDestination
-<a name="aws-properties-s3-storagelens-s3bucketdestination"></a>
 
 This resource contains the details of the bucket where the Amazon S3 Storage Lens metrics export will be placed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/email-notif
 ---
 
 # Managing email notifications for AWS Marketplace events
-<a name="email-notifications"></a>
 
 AWS Marketplace sends email notifications of updates to offers, agreements, subscriptions, products, security, billing and payments, and Private Marketplace. Independent software vendors (ISVs), AWS Marketplace Channel Partners, and customers can receive email notifications. For examples and details of email notifications sent for offer and agreement updates, refer to [Supported email notifications](#event-types).
 

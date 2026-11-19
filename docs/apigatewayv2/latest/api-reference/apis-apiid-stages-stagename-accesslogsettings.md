@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # AccessLogSettings
-<a name="apis-apiid-stages-stagename-accesslogsettings"></a>
 
 Represents the access log settings for a stage.
 

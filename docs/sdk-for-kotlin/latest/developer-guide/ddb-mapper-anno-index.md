@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # DynamoDB Mapper annotations reference
-<a name="ddb-mapper-anno-index"></a>
 
 This page lists the annotations used to generate schemas from your classes, as described in [Generate a schema from annotations](ddb-mapper-anno-schema-gen.md). Apply them to a class and its properties, then let the schema-generator plugin produce the schema.
 

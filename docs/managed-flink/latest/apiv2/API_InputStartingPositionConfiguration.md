@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputStar
 ---
 
 # InputStartingPositionConfiguration
-<a name="API_InputStartingPositionConfiguration"></a>
 
 Describes the point at which the application reads from the streaming source.
 

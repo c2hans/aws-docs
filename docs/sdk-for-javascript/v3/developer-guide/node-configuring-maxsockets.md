@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/no
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Configure maxSockets in Node.js
-<a name="node-configuring-maxsockets"></a>
 
 In Node.js, you can set the maximum number of connections per origin. If ` maxSockets` is set, the low-level HTTP client queues requests and assigns them to sockets as they become available.
 

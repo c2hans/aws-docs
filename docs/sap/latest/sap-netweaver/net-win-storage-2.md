@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-storage
 ---
 
 # Storage
-<a name="net-win-storage-2"></a>
 
 The storage services we use across this guide are:
 + Amazon EBS

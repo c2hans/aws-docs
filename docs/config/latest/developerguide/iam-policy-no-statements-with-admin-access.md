@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-
 ---
 
 # iam-policy-no-statements-with-admin-access
-<a name="iam-policy-no-statements-with-admin-access"></a>
 
 Checks if AWS Identity and Access Management (IAM) policies that you create have Allow statements that grant permissions to all actions on all resources. The rule is NON\_COMPLIANT if any customer managed IAM policy statement includes "Effect": "Allow" with "Action": "\*" over "Resource": "\*".
 

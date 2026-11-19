@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/data-
 ---
 
 # Supported data sources for CloudWatch
-<a name="data-sources"></a>
 
 CloudWatch collects and processes telemetry data from a wide range of sources to provide unified observability and security insights. Data sources fall into four categories: AWS native services, third-party platforms, custom sources, and CloudWatch Metrics (OTel).
 

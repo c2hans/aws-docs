@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Delete
 ---
 
 # DeleteReportGroup
-<a name="API_DeleteReportGroup"></a>
 
 Deletes a report group. Before you delete a report group, you must delete its reports.
 

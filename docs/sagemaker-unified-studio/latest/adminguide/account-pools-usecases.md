@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Use cases
-<a name="account-pools-usecases"></a>
 
 Account pools allow administrators to perform the following tasks.
 + Create project profiles that are agnostic of AWS account and AWS Region information.

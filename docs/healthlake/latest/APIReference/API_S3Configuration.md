@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_S3Con
 ---
 
 # S3Configuration
-<a name="API_S3Configuration"></a>
 
 The configuration of the Amazon S3 bucket for either an import or export job. This includes assigning access permissions.
 

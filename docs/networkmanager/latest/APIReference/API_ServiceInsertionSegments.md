@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_S
 ---
 
 # ServiceInsertionSegments
-<a name="API_ServiceInsertionSegments"></a>
 
 Describes the segments associated with the service insertion action.
 

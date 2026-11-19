@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Collecting and Processing Logs
-<a name="collecting-and-processing-logs"></a>
 
 [CloudWatch](https://aws.amazon.com/cloudwatch/) Logs can be used to monitor, store, and access your log files from Amazon EC2 instances, AWS CloudTrail, Route 53, and other sources. See the [AWS Services That Publish Logs to CloudWatch Logs documentation page](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-and-resource-policy.html).
 

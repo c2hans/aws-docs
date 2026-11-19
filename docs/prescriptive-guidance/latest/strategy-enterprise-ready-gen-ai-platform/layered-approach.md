@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Adopting a layered approach for generative AI development
-<a name="layered-approach"></a>
 
 To build a robust and scalable generative AI platform, organizations need a comprehensive environment that enables innovation while maintaining control and security. This strategy document recommends an enterprise-ready environment that consists of four essential layers, which are shown in the following image.
 

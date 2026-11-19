@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AssetFormEntry.ht
 ---
 
 # AssetFormEntry
-<a name="API_AssetFormEntry"></a>
 
 A form on an asset, consisting of the form type identifier and its JSON content.
 

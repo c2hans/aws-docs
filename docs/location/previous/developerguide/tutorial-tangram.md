@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tutoria
 ---
 
 # Tutorial: using Tangram with Amazon Location Service
-<a name="tutorial-tangram"></a>
 
 This section provides the following tutorials on how to integrate Tangram with Amazon Location.
 

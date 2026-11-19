@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/users-t
 ---
 
 # Types of users
-<a name="users-types"></a>
 
 In a cluster, there are several types of users, as described in the following sections.
 

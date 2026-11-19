@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ch
 ---
 
 # ChannelSummary
-<a name="API_ChannelSummary"></a>
 
 Summary information about a channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/firehydrant-reading-from-
 ---
 
 # Reading from FireHydrant entities
-<a name="firehydrant-reading-from-entities"></a>
 
 **Prerequisites**
 

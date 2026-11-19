@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-modify-exi
 ---
 
 # Modify an existing configuration
-<a name="lts-modify-existing-configuration"></a>
 
 If you have already set up configuration files for IDT for FreeRTOS, you can use the IDT for FreeRTOS UI to modify your existing configuration. The existing configuration files must be located in the `{{devicetester-extract-location}}/config` directory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-cus
 ---
 
 # Develop custom components for your Image Builder image
-<a name="create-custom-components"></a>
 
 You can create your own components to customize your Image Builder images according to your exact specifications. Use the following steps to develop custom components for your Image Builder image or container recipes.
 

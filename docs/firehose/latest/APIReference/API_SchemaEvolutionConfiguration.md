@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_SchemaE
 ---
 
 # SchemaEvolutionConfiguration
-<a name="API_SchemaEvolutionConfiguration"></a>
 
 The configuration to enable schema evolution.
 

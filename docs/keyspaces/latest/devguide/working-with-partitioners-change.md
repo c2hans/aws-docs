@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/working-with-p
 ---
 
 # How to change the partitioner in Amazon Keyspaces
-<a name="working-with-partitioners-change"></a>
 
 You can change the partitioner by using the AWS Management Console or Cassandra Query Language (CQL).
 

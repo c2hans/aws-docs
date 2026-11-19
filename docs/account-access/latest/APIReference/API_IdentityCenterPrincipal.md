@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_I
 ---
 
 # IdentityCenterPrincipal
-<a name="API_IdentityCenterPrincipal"></a>
 
 Identifies a user or group from IAM Identity Center.
 

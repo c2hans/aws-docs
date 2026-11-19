@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-ru
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Using versioned managed rule groups in AWS WAF
-<a name="waf-managed-rule-groups-versioning"></a>
 
 This section explains how versioning is handled for managed rule groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteConfigurationSet
-<a name="API_DeleteConfigurationSet"></a>
 
 Deletes an existing configuration set.
 

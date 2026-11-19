@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # DELETE: Delete a Redundancy Group
-<a name="set-up-redundancy-groups-delete"></a>
 
 Delete the redundancy group that has the specified ID.
 

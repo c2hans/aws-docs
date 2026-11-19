@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Insight.html
 ---
 
 # Insight
-<a name="API_Insight"></a>
 
 A check that provides recommendations to remedy potential upgrade-impacting issues.
 

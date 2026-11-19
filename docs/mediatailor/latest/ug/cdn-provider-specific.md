@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-provider-speci
 ---
 
 # Set up third-party CDNs for MediaTailor ad delivery
-<a name="cdn-provider-specific"></a>
 
 Third-party CDNs like Akamai and Fastly can significantly improve the performance and scalability of your AWS Elemental MediaTailor ad delivery while reducing bandwidth costs. However, CDN configuration for personalized advertising requires specific settings that differ from standard video delivery.
 

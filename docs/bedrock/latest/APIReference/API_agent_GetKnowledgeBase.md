@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetKnowledgeBase
-<a name="API_agent_GetKnowledgeBase"></a>
 
 Gets information about a knowledge base.
 
@@ -180,6 +179,13 @@ Content-type: application/json
          }
       },
       "knowledgeBaseId": "string",
+      "metadataConfigurations": [
+         {
+            "name": "string",
+            "searchability": "string",
+            "type": "string"
+         }
+      ],
       "name": "string",
       "roleArn": "string",
       "status": "string",

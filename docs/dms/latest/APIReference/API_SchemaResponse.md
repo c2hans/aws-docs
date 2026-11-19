@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_SchemaRespon
 ---
 
 # SchemaResponse
-<a name="API_SchemaResponse"></a>
 
 Describes a schema in a Fleet Advisor collector inventory.
 

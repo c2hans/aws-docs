@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/flow-logs-s3.html
 ---
 
 # AWS Transit Gateway Flow Logs records in Amazon S3
-<a name="flow-logs-s3"></a>
 
 Flow logs can publish flow log data to Amazon S3.
 

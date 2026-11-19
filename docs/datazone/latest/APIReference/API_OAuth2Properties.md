@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_OAuth2P
 ---
 
 # OAuth2Properties
-<a name="API_OAuth2Properties"></a>
 
 The OAuth2 properties.
 

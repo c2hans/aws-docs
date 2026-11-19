@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/prompting-be
 ---
 
 # General best practices
-<a name="prompting-best-practices"></a>
 
 The following best practices mainly apply to the Amazon Nova text models, but you can apply them to other models, in addition to modality-specific best practices.
 

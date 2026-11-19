@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/troubleshooting-age
 ---
 
 # Troubleshooting agent installation
-<a name="troubleshooting-agent-issues"></a>
 
 Use this section to troubleshoot issues with installing or running the AWS Replication Agent on your source servers.
 

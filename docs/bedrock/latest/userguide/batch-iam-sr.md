@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/batch-iam-sr.ht
 ---
 
 # Create a custom service role for batch inference
-<a name="batch-iam-sr"></a>
 
 To use a custom service role for batch inference instead of the one Amazon Bedrock automatically creates for you in the AWS Management Console, create an IAM role and attach the following permissions by following the steps at [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
 

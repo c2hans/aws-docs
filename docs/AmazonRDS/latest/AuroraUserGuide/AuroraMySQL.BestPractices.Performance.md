@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Best practices for Aurora MySQL performance and scaling
-<a name="AuroraMySQL.BestPractices.Performance"></a>
 
 You can apply the following best practices to improve the performance and scalability of your Aurora MySQL clusters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section helps you plan your Spatial Data Management Application deployment by understanding prerequisites, sizing requirements, and configuration options.
 

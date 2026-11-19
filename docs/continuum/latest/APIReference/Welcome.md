@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/Welcome.ht
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 AWS Continuum finds, validates, prioritizes, and remediates code vulnerabilities across the source repositories and AWS resources in your environments. Continuum ingests security findings, confirms which ones are genuinely exploitable, ranks them by risk, and produces patches you can review and apply.
 
@@ -15,4 +14,4 @@ This API reference describes the operations and data types for AWS Continuum.
 
 For more information, see the [AWS Continuum User Guide](https://docs.aws.amazon.com/continuum/latest/userguide/what-is-continuum.html). For information about service quotas, see [Quotas](https://docs.aws.amazon.com/continuum/latest/userguide/quotas.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDevice
 ---
 
 # UpdateDeviceCertificateParams
-<a name="API_UpdateDeviceCertificateParams"></a>
 
 Parameters to define a mitigation action that changes the state of the device certificate to inactive.
 

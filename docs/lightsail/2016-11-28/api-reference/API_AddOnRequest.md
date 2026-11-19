@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_A
 ---
 
 # AddOnRequest
-<a name="API_AddOnRequest"></a>
 
 Describes a request to enable, modify, or disable an add-on for an Amazon Lightsail resource.
 

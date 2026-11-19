@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetSig
 ---
 
 # GetSigningConfiguration
-<a name="API_GetSigningConfiguration"></a>
 
 Retrieves the registry's signing configuration, which defines rules for automatically signing images using AWS Signer.
 

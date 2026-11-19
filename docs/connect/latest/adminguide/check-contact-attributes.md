@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/check-contact-
 ---
 
 # Flow block in Connect Customer: Check contact attributes
-<a name="check-contact-attributes"></a>
 
 This topic defines the flow block for branching based on a comparison to the value of a contact attribute.
 

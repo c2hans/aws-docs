@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Continuous improvement
-<a name="continuous-improvement"></a>
 
 Resilience is a [continuous process](https://medium.com/the-cloud-architect/towards-continuous-resilience-3c7fbc5d232b). Over your system's lifecycle, the environment in which it operates will change. To ensure that your system remains resilient, you should integrate the framework into your periodic operational and architectural reviews. You might find new failure modes that you didn't identify the first time through, or there might be new or previously unthought of mitigations that you can put in place. Resilience analysis should be an iterative process and not a one-time exercise.
 

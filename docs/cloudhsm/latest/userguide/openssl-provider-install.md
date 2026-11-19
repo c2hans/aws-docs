@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/openssl-provid
 ---
 
 # Install the OpenSSL Provider for AWS CloudHSM Client SDK 5
-<a name="openssl-provider-install"></a>
 
 Use the following sections to install the OpenSSL Provider for AWS CloudHSM Client SDK 5.
 

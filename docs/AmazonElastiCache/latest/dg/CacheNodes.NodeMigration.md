@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.N
 ---
 
 # Migrating previous generation nodes
-<a name="CacheNodes.NodeMigration"></a>
 
 Previous generation nodes are node types that are being phased out. If you have no existing clusters using a previous generation node type, ElastiCache does not support the creation of new clusters with that node type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DataSou
 ---
 
 # DataSourceErrorMessage
-<a name="API_DataSourceErrorMessage"></a>
 
 The details of the error message that is returned if the operation cannot be successfully completed.
 

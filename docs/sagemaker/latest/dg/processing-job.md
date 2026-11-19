@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job.html
 ---
 
 # Data transformation workloads with SageMaker Processing
-<a name="processing-job"></a>
 
 SageMaker Processing refers to SageMaker AI’s capabilities to run data pre and post processing, feature engineering, and model evaluation tasks on SageMaker AI's fully-managed infrastructure. These tasks are executed as [processing jobs](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ProcessingJob.html). The following provides information and resources to learn about SageMaker Processing.
 

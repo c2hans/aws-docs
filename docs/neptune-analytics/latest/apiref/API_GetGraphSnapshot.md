@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetG
 ---
 
 # GetGraphSnapshot
-<a name="API_GetGraphSnapshot"></a>
 
 Retrieves a specified graph snapshot.
 

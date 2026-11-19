@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_TableCr
 ---
 
 # TableCreationConfiguration
-<a name="API_TableCreationConfiguration"></a>
 
 The configuration to enable automatic table creation.
 

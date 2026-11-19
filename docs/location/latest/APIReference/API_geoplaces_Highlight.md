@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # Highlight
-<a name="API_geoplaces_Highlight"></a>
 
 Indicates the starting and ending index of the text query that match the found title.
 

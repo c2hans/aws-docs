@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics.html
 ---
 
 # Working with AWS Quick Sight Topics
-<a name="topics"></a>
 
 |  |
 | --- |

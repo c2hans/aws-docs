@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-enterpris
 ---
 
 # Using a dedicated identity provider configuration (advanced)
-<a name="desktop-enterprise-advanced-idp"></a>
 
 |  |
 | --- |

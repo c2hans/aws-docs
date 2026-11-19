@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC02-BP06 Leverage user groups and attributes
-<a name="sec_identities_groups_attributes"></a>
 
  As the number of users you manage grows, you will need to determine ways to organize them so that you can manage them at scale. Place users with common security requirements in groups defined by your identity provider, and put mechanisms in place to ensure that user attributes that may be used for access control (for example, department or location) are correct and updated. Use these groups and attributes to control access, rather than individual users. This allows you to manage access centrally by changing a user’s group membership or attributes once with a [permission set](https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsets.html), rather than updating many individual policies when a user’s access needs change.
 

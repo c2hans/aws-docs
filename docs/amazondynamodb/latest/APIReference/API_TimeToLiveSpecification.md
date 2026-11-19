@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # TimeToLiveSpecification
-<a name="API_TimeToLiveSpecification"></a>
 
 Represents the settings used to enable or disable Time to Live (TTL) for the specified table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Tok
 ---
 
 # TokenExchangeGrant
-<a name="API_TokenExchangeGrant"></a>
 
 A structure that defines configuration settings for an application that supports the OAuth 2.0 Token Exchange Grant. For more information, see [RFC 8693](https://datatracker.ietf.org/doc/html/rfc8693).
 

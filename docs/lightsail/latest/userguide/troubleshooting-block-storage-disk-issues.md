@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/troubleshooti
 ---
 
 # Resolve Lightsail disk attachment and usage issues
-<a name="troubleshooting-block-storage-disk-issues"></a>
 
 You might encounter errors with your block storage disks in Lightsail. This topic identifies common issues and workarounds for those errors.
 

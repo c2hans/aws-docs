@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Lifecycle hooks
-<a name="harness-lifecycle-hooks"></a>
 
 Lifecycle hooks send an event to an AWS Lambda function, Amazon SNS topic, or Amazon EventBridge event bus at a defined point in the harness agent loop. Use hooks to validate an invocation or tool call, record activity in another system, or start an asynchronous workflow.
 

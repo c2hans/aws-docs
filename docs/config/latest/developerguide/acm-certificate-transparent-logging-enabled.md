@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/acm-certifi
 ---
 
 # acm-certificate-transparent-logging-enabled
-<a name="acm-certificate-transparent-logging-enabled"></a>
 
 Checks if AWS Certificate Manager certificates have certificate transparency logging enabled. The rule is NON\_COMPLIANT if CertificateTransparencyLoggingPreference is explicitly set DISABLED.
 

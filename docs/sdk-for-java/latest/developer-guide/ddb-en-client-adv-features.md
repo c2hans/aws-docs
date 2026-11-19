@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Use advanced mapping features
-<a name="ddb-en-client-adv-features"></a>
 
 Learn about advanced table schema features in the DynamoDB Enhanced Client API.
 

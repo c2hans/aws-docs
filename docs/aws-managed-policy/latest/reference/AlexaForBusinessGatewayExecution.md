@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Alex
 ---
 
 # AlexaForBusinessGatewayExecution
-<a name="AlexaForBusinessGatewayExecution"></a>
 
 **Description**: Provide gateway execution access to AlexaForBusiness services
 

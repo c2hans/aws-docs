@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualMessages
-<a name="API_VisualMessages"></a>
 
 The messages that are displayed on a visual under specific conditions, such as when the visual returns no data.
 

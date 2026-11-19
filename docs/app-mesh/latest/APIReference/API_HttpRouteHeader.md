@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpRou
 ---
 
 # HttpRouteHeader
-<a name="API_HttpRouteHeader"></a>
 
 An object that represents the HTTP header in the request.
 

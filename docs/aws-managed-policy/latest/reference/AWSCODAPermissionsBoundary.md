@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCODAPermissionsBoundary
-<a name="AWSCODAPermissionsBoundary"></a>
 
 **Description**: AWS CODA creates IAM roles for delegations, and uses this policy when creating these roles to define the boundary of their permissions.
 

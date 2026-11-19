@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DataRespo
 ---
 
 # DataResponse
-<a name="API_DataResponse"></a>
 
 The response to a `DataQuery`.
 

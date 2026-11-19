@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-arrpop.
 ---
 
 # JSON.ARRPOP
-<a name="json-arrpop"></a>
 
 Removes and returns element at the index from the array. Popping an empty array returns null.
 

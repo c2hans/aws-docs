@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationI
 ---
 
 # ReplicationInstanceTaskLog
-<a name="API_ReplicationInstanceTaskLog"></a>
 
 Contains metadata for a replication instance task log.
 

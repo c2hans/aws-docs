@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # UpdateTieringInput
-<a name="API_UpdateTieringInput"></a>
 
  The set of tiering configurations for the pricing rule.
 

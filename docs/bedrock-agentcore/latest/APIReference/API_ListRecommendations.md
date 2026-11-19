@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ListRecommendations
-<a name="API_ListRecommendations"></a>
 
 Lists all recommendations in the account, with optional filtering by status.
 

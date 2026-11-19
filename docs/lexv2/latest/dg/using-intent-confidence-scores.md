@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/using-intent-confidence-
 ---
 
 # Using intent confidence scores to improve intent selection with Lex V2
-<a name="using-intent-confidence-scores"></a>
 
 When a user makes an utterance, Amazon Lex V2 uses natural language understanding (NLU) to understand the user's request and return the proper intent. By default Amazon Lex V2 returns the most likely intent defined by your bot.
 

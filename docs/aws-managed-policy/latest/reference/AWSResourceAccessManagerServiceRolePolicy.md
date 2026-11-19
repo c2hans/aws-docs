@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSResourceAccessManagerServiceRolePolicy
-<a name="AWSResourceAccessManagerServiceRolePolicy"></a>
 
 **Description**: Policy containing Read-only AWS Resource Access Manager access to customers' Organizations structure. It also contains IAM permissions to self-delete the role.
 

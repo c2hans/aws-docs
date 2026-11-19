@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS references
 <a name="9999999999999999aws--references.28704c8b-195f-517b-9937-ed623a080105"></a>

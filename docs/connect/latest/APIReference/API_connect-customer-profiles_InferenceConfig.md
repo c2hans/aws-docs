@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # InferenceConfig
-<a name="API_connect-customer-profiles_InferenceConfig"></a>
 
 Configuration settings for inference behavior of the recommender.
 

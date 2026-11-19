@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Monitor Lightsail container service resource utilization
-<a name="amazon-lightsail-viewing-container-services-metrics"></a>
 
 After you create an Amazon Lightsail container service, you can view its metric graphs on the **Metrics** tab of the service’s management page. Monitoring metrics is an important part of maintaining the reliability, availability, and performance of your resources. Monitor and collect metric data from your resources regularly so that you can more readily debug a multi-point failure, if one occurs. For more information about metrics, see [Metrics in Amazon Lightsail](understanding-instance-health-metrics-in-amazon-lightsail.md).
 

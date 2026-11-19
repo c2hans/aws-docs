@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Question and version limits
-<a name="custom-questions-limits-counts"></a>
 
 The following table lists the limits for each question set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/con
 ---
 
 # Control behavior and guidance
-<a name="control-behavior"></a>
 
 Controls are categorized according to their *behavior* and their *guidance*.
 

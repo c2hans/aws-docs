@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_TestCa
 ---
 
 # TestCaseFilter
-<a name="API_TestCaseFilter"></a>
 
 A filter used to return specific types of test cases. In order to pass the filter, the report must meet all of the filter properties.
 

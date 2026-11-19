@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/auth-iam.html
 ---
 
 # Authenticating with IAM
-<a name="auth-iam"></a>
 
 **Topics**
 + [Overview](#auth-iam-overview)

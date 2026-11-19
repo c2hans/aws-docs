@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-services-appsy
 ---
 
 # AWS AppSync and AWS X-Ray
-<a name="xray-services-appsync"></a>
 
 You can enable and trace requests for AWS AppSync. For more information, see [Tracing with AWS X-Ray](https://docs.aws.amazon.com/appsync/latest/devguide/x-ray-tracing.html) for instructions.
 

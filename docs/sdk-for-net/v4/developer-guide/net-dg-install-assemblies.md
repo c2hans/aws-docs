@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Install AWSSDK packages with NuGet
-<a name="net-dg-install-assemblies"></a>
 
 [NuGet](https://www.nuget.org/) is a package management system for the .NET platform. With NuGet, you can install the [AWSSDK packages](https://www.nuget.org/profiles/awsdotnet), as well as several other extensions, to your project. For additional information, see the [aws/dotnet](https://github.com/aws/dotnet) repository on the GitHub website.
 

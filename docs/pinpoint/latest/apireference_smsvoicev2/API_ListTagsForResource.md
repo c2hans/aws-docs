@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 List all tags associated with a resource.
 

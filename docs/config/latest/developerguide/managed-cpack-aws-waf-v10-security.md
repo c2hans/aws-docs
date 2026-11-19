@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-cpa
 ---
 
 # AWS Well-Architected Framework (WAF) v10 - Security Pillar
-<a name="managed-cpack-aws-waf-v10-security"></a>
 
 This AWS Config managed conformance pack provides a curated mapping between the AWS Well-Architected Framework Security pillar best practices and AWS Config managed rules. Each Config rule evaluates specific AWS resources and is associated with one or more AWS Well-Architected Framework best practices. AWS Config maintains and automatically updates the managed conformance pack as supported rules and resource types evolve. Refer to the table below for details on the rules, associated controls, guidance, and AWS Region availability.
 

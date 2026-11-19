@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers.h
 ---
 
 # Brokers
-<a name="brokers"></a>
 
 This is a collection of brokers. A broker is a message broker environment running on Amazon MQ. It is the basic building block of Amazon MQ. For more information, see [Broker instance types](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-instance-types.html) in the *Amazon MQ Developer Guide*.
 

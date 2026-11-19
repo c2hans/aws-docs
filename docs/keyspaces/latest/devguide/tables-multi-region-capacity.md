@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/tables-multi-r
 ---
 
 # Estimate and provision capacity for a multi-Region table in Amazon Keyspaces
-<a name="tables-multi-region-capacity"></a>
 
 You can configure the throughput capacity of a multi-Region table in one of two ways:
 + On-demand capacity mode, measured in write request units (WRUs)

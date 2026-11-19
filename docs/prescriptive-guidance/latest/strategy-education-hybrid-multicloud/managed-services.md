@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Adopt cloud-native, managed services wherever possible and practical
-<a name="managed-services"></a>
 
 When you initially consider how to take advantage of cloud services, using infrastructure services and development tools that your teams are familiar with might seem like the best path forward. However, selecting cloud-native managed services, especially serverless options, can greatly reduce cost, effort, and complexity.
 

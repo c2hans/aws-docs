@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UpdateUserSettings
-<a name="API_UpdateUserSettings"></a>
 
 Updates the user settings.
 

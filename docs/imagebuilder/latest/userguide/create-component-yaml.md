@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-com
 ---
 
 # Create a YAML component document for custom components in Image Builder
-<a name="create-component-yaml"></a>
 
 To build a component, you must provide a YAML or JSON application component document. The document contains the code that runs during the phases and steps that you define to provide customization for your image.
 

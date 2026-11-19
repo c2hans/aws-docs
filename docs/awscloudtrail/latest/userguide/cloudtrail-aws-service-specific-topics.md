@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # CloudTrail supported services and integrations
-<a name="cloudtrail-aws-service-specific-topics"></a>
 
 CloudTrail supports logging events for many AWS services. You can find the specifics for each supported service in that service's guide. For a list of service-specific topics, see [AWS service topics for CloudTrail](#cloudtrail-aws-service-specific-topics-list). In addition, some AWS services can be used to analyze and act upon data collected in CloudTrail logs.
 

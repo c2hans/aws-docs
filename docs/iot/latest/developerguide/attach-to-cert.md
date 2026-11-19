@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/attach-to-cert
 ---
 
 # Attach a thing or policy to a client certificate
-<a name="attach-to-cert"></a>
 
 When you create and register a certificate separate from an AWS IoT thing, it will not have any policies that authorize any AWS IoT operations, nor will it be associated with any AWS IoT thing object. This section describes how to add these relationships to a registered certificate.
 

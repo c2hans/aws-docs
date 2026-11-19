@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Deploy Control-M resources
-<a name="deploy-control-m-resources"></a>
 
 The first two steps in integrating AWS Mainframe Modernization with Control-M are to deploy the plug-in and the job type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetUserPoolMfaConfig
-<a name="API_GetUserPoolMfaConfig"></a>
 
 Given a user pool ID, returns configuration for sign-in with WebAuthn authenticators and for multi-factor authentication (MFA). This operation describes the following:
 + The WebAuthn relying party (RP) ID and user-verification settings.

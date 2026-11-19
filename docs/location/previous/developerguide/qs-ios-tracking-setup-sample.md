@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios-
 ---
 
 # Tutorial: Set up sample app code
-<a name="qs-ios-tracking-setup-sample"></a>
 
 In order to setup the sample code you must have the following tools installed:
 + Git

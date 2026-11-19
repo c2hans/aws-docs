@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_SourceC
 ---
 
 # SourceCodeType
-<a name="API_SourceCodeType"></a>
 
 Specifies the source code that is analyzed in a code review.
 

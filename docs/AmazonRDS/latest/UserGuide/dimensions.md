@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/dimensions.ht
 ---
 
 # Amazon CloudWatch dimensions for Amazon RDS
-<a name="dimensions"></a>
 
 You can filter Amazon RDS metrics data by using any dimension in the following table.
 

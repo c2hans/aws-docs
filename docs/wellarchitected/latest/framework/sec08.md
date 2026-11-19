@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec08.h
 ---
 
 # Protecting data at rest
-<a name="sec08"></a>
 
  Data at rest is any data held in persistent storage, including block storage, object stores, databases, archives, and devices at the edge. Protecting it combines encryption, which renders data unreadable without the key, with access controls that decide who can reach it in the first place. Together they reduce the risk of unauthorized access and disclosure when the storage layer itself is exposed.
 

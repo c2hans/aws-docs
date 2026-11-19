@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Policy create and update: per-policy engine validation
-<a name="policy-create-update-validation"></a>
 
 When creating or updating policies directly (not through generation), validation and analysis takes into account the new policy as well as its interactions with **all preexisting policies** in the policy engine.
 

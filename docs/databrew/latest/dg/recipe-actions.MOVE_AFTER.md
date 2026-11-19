@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.MOVE_A
 ---
 
 # MOVE\_AFTER
-<a name="recipe-actions.MOVE_AFTER"></a>
 
 Moves a column to the position immediately after another column.
 

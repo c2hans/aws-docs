@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zon
 ---
 
 # Deleting a private hosted zone
-<a name="hosted-zone-private-deleting"></a>
 
 This section explains how to delete a private hosted zone using the Amazon Route 53 console.
 

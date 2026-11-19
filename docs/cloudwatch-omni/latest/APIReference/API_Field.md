@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # Field
-<a name="API_Field"></a>
 
 A telemetry field available for use in query expressions.
 
@@ -17,7 +16,7 @@ Required: Yes
 
  ** children **   <a name="cloudwatchomni-Type-Field-children"></a>
 Child fields nested under this field.
-Type: Array of [Field](#API_Field) objects
+Type: Array of [Field](API_Field.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 Required: No
 

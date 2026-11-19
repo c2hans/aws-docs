@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/schedule-adher
 ---
 
 # Schedule Adherence for agent productivity in Connect Customer
-<a name="schedule-adherence"></a>
 
 Contact center supervisors or managers track schedule adherence to understand when agents are following the schedule that you have created. This helps make sure you achieve your service level targets, while improving agent productivity and customer satisfaction.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_FastRestoreR
 ---
 
 # FastRestoreRule
-<a name="API_FastRestoreRule"></a>
 
  **[Custom snapshot policies only]** Specifies a rule for enabling fast snapshot restore for snapshots created by snapshot policies. You can enable fast snapshot restore based on either a count or a time interval.
 

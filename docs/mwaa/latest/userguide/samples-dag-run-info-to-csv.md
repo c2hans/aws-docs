@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-dag-run-in
 ---
 
 # Exporting environment metadata to CSV files on Amazon S3
-<a name="samples-dag-run-info-to-csv"></a>
 
 Use the following code example to create a directed acyclic graph (DAG) that queries the database for a range of DAG run information, and writes the data to `.csv` files stored on Amazon S3.
 

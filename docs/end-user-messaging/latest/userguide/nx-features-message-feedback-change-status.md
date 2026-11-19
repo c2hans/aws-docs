@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Change a message feedback status record in AWS End User Messaging
-<a name="nx-features-message-feedback-change-status"></a>
 
 Once you have a signal that a customer has received your message you have to provide feedback for the message by using [PutMessageFeedback](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_PutMessageFeedback.html) or [put-message-feedback](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/put-message-feedback.html). If the message feedback status record isn't updated after one hour it is automatically set to `FAILED` but the CloudWatch metrics are not updated until you set the record as `RECEIVED` or `FAILED`. We recommend that you have a timer to set message feedback status record to `FAILED` if you don't received a signal from your customer.
 

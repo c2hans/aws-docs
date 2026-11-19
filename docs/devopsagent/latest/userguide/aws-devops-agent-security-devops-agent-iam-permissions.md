@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/aws-devops-
 ---
 
 # DevOps Agent IAM permissions
-<a name="aws-devops-agent-security-devops-agent-iam-permissions"></a>
 
 AWS DevOps Agent uses service-specific AWS Identity and Access Management (IAM) actions to control access to its features and capabilities. These actions determine what users can do within the AWS DevOps Agent console and Operator Web App. This is separate from the AWS service API permissions that the agent itself uses to investigate your resources.
 

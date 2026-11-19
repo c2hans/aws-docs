@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Connect
 ---
 
 # ConnectorVpcLatticeEgressConfig
-<a name="API_ConnectorVpcLatticeEgressConfig"></a>
 
 VPC\_LATTICE egress configuration that specifies the Resource Configuration ARN and port for connecting to SFTP servers through customer VPCs. Requires a valid Resource Configuration with appropriate network access.
 

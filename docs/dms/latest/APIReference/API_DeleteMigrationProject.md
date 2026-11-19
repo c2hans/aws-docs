@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteMigrat
 ---
 
 # DeleteMigrationProject
-<a name="API_DeleteMigrationProject"></a>
 
 Deletes the specified migration project.
 

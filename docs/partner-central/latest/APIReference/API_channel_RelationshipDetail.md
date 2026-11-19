@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RelationshipDetail
-<a name="API_channel_RelationshipDetail"></a>
 
 Detailed information about a partner relationship.
 

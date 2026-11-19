@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Ge
 ---
 
 # GetTrail
-<a name="API_GetTrail"></a>
 
 Returns settings information for a specified trail.
 

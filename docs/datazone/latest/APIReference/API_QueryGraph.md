@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_QueryGr
 ---
 
 # QueryGraph
-<a name="API_QueryGraph"></a>
 
 Queries entities in the graph store.
 

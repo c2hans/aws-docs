@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetTraceSummaries.ht
 ---
 
 # GetTraceSummaries
-<a name="API_GetTraceSummaries"></a>
 
 Retrieves IDs and annotations for traces available for a specified time frame using an optional filter. To get the full traces, pass the trace IDs to `BatchGetTraces`.
 

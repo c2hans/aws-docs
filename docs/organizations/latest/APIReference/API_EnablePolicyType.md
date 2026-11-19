@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_En
 ---
 
 # EnablePolicyType
-<a name="API_EnablePolicyType"></a>
 
 Enables a policy type in a root. After you enable a policy type in a root, you can attach policies of that type to the root, any organizational unit (OU), or account in that root. You can undo this by using the [DisablePolicyType](API_DisablePolicyType.md) operation.
 

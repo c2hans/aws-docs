@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Submit
 ---
 
 # SubmitTaskStateChange
-<a name="API_SubmitTaskStateChange"></a>
 
 **Note**
 This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.

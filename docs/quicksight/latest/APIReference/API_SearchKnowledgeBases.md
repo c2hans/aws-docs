@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchKnowledgeBases
-<a name="API_SearchKnowledgeBases"></a>
 
 Searches for a subset of knowledge bases based on specified filters.
 

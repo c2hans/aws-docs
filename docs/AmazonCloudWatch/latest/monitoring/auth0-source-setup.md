@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth0
 ---
 
 # Source configuration for Okta Auth0
-<a name="auth0-source-setup"></a>
 
 ## Integrating with Okta Auth0
 <a name="auth0-integration"></a>

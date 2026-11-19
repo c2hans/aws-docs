@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LambdaSavingsOpportunityAfterDiscounts
-<a name="API_LambdaSavingsOpportunityAfterDiscounts"></a>
 
  Describes the savings opportunity for Lambda functions recommendations after applying Savings Plans discounts.
 

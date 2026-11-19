@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-sagemak
 ---
 
 # Getting Started
-<a name="nova-sagemaker-inference-getting-started"></a>
 
 This guide shows you how to deploy customized Amazon Nova models on SageMaker real-time endpoints, configure inference parameters, and invoke your models for testing.
 

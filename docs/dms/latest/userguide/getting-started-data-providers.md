@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/getting-started-dat
 ---
 
 # Create data providers for DMS Schema Conversion
-<a name="getting-started-data-providers"></a>
 
 Next, you create data providers that describe your source and target databases. For each data provider, you specify a data store type and location information. You don't store your database credentials in a data provider.
 

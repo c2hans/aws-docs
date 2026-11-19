@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-events.html
 ---
 
 # Monitor Athena query events with EventBridge
-<a name="athena-events"></a>
 
 You can use Amazon Athena with Amazon EventBridge to receive real-time notifications regarding the state of your queries. When a query you have submitted transitions states, Athena publishes an event to EventBridge containing information about that query state transition. You can write simple rules for events that are of interest to you and take automated actions when an event matches a rule. For example, you can create a rule that invokes an AWS Lambda function when a query reaches a terminal state. Events are emitted on a best effort basis.
 

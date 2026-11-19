@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cognito-identity-
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DeleteUser` with an AWS SDK or CLI
-<a name="cognito-identity-provider_example_cognito-identity-provider_DeleteUser_section"></a>
 
 The following code examples show how to use `DeleteUser`.
 

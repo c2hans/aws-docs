@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FreeF
 ---
 
 # FreeFormLayoutScreenCanvasSizeOptions
-<a name="API_FreeFormLayoutScreenCanvasSizeOptions"></a>
 
 The options that determine the sizing of the canvas used in a free-form layout.
 

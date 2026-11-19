@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_InstantiateM
 ---
 
 # InstantiateMetadata
-<a name="API_InstantiateMetadata"></a>
 
 Metadata related to the configuration properties used during instantiation of the network instance.
 

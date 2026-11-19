@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DescribeGlobalNetworks
-<a name="API_DescribeGlobalNetworks"></a>
 
 Describes one or more global networks. By default, all global networks are described. To describe the objects in your global network, you must use the appropriate `Get*` action. For example, to list the transit gateways in your global network, use [GetTransitGatewayRegistrations](API_GetTransitGatewayRegistrations.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *May 2020*
 

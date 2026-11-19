@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Discount columns
-<a name="table-dictionary-cur2-discount"></a>
 
 Discount columns contain data about any discounts you are receiving.
 

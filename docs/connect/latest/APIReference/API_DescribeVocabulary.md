@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeVocabulary
-<a name="API_DescribeVocabulary"></a>
 
 Describes the specified vocabulary.
 

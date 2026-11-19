@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_V
 ---
 
 # VpcOptions
-<a name="API_VpcOptions"></a>
 
 Describes the VPC options.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EvaluationReferenceInput
-<a name="API_EvaluationReferenceInput"></a>
 
  A reference input containing ground truth data for evaluation, scoped to a specific context level (session or trace) through its span context.
 

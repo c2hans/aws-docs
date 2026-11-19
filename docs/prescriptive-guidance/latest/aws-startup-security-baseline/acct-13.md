@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # ACCT.13 Use short-lived credentials for access to your AWS resources
-<a name="acct-13"></a>
 
 Determine how your developers access AWS services and resources through the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/). To reduce security risk, avoid using IAM users with long-lived access keys for authentication when developing software or working with production data. Short-lived credentials expire automatically, which reduces the risk of credential exposure.
 

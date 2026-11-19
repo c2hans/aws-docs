@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/client-initializa
 ---
 
 # Client initialization
-<a name="client-initialization"></a>
 
 To start using the `DeviceSDKClient`, initialize it with a client ID.
 

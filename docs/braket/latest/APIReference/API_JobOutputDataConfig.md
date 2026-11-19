@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_JobOutput
 ---
 
 # JobOutputDataConfig
-<a name="API_JobOutputDataConfig"></a>
 
 Specifies the path to the S3 location where you want to store hybrid job artifacts and the encryption key used to store them.
 

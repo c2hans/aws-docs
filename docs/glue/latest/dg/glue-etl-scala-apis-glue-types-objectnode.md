@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-
 ---
 
 # AWS Glue Scala ObjectNode APIs
-<a name="glue-etl-scala-apis-glue-types-objectnode"></a>
 
 **Topics**
 + [ObjectNode object](#glue-etl-scala-apis-glue-types-objectnode-object)

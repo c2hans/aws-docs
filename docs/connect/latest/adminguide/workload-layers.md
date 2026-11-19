@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/workload-layer
 ---
 
 # Connect Customer workload layers
-<a name="workload-layers"></a>
 
 You can separate Connect Customer workloads into the following layers: telephony, Connect Customer interface/API, flows/IVR, agent workstation, and metric and reporting.
 

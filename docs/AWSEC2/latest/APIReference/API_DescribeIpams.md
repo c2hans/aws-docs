@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeIpams
-<a name="API_DescribeIpams"></a>
 
 Get information about your IPAM pools.
 

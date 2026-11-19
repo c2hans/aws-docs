@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/python-image.html
 ---
 
 # Deploy Python Lambda Event Functions with container images
-<a name="python-image"></a>
 
 There are three ways to build a container image for a Python Lambda Event Function:
 + [Using an AWS base image for Python](#python-image-instructions)

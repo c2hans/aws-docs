@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Abp
 ---
 
 # AbpV1\_0\_x
-<a name="API_AbpV1_0_x"></a>
 
 ABP device object for LoRaWAN specification v1.0.x
 

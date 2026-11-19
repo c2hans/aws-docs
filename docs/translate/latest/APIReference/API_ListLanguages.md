@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_ListLa
 ---
 
 # ListLanguages
-<a name="API_ListLanguages"></a>
 
 Provides a list of languages (RFC-5646 codes and names) that Amazon Translate supports.
 

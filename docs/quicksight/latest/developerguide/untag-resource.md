@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/untag-r
 ---
 
 # UntagResource
-<a name="untag-resource"></a>
 
 Use the `UntagResource` API operation to remove a tag from a resource. Before you do so, you can call the `ListTagsForResource` API operation to list the tags assigned to a resource.
 

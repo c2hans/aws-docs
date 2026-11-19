@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # Cluster size in AWS PCS
-<a name="working-with_clusters_size"></a>
 
 AWS PCS provides highly available and secure clusters, while automating key tasks such as patching, node provisioning, and updates.
 

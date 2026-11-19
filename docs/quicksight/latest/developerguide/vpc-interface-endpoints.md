@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/vpc-int
 ---
 
 # Quick and interface VPC endpoints (AWS PrivateLink)
-<a name="vpc-interface-endpoints"></a>
 
 You can establish a private connection between your VPC and Quick by creating an *interface VPC endpoint*. Interface endpoints are powered by [AWS PrivateLink](https://aws.amazon.com/privatelink), a technology that enables you to privately access the Quick website and APIs without leaving the Amazon network. Instances in your VPC don't need public IP addresses to communicate with Quick website and APIs. However, instances still need access to certain domains other than Quick so that static assets, reports, and other files can be downloaded. For a list of domains that Quick needs to access, see [Domains accessed by Quick](#vpc-interface-endpoints-supported-domains).
 

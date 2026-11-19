@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/srt-listener-provide
 ---
 
 # Provide connection information to downstream systems
-<a name="srt-listener-provide-info"></a>
 
 After you create the channel with SRT outputs in listener mode, you must provide connection information to the operators of the downstream systems so they can configure their SRT callers to connect to MediaLive.
 

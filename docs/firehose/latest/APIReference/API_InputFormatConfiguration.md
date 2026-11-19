@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_InputFo
 ---
 
 # InputFormatConfiguration
-<a name="API_InputFormatConfiguration"></a>
 
 Specifies the deserializer you want to use to convert the format of the input data. This parameter is required if `Enabled` is set to true.
 

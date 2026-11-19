@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-model-in
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 Model interpretability is a growing area of study, and best practices must be understood in this context. This section provides current recommendations that are most likely to lead to positive results in a short amount of time. You can use these with other methods to fully interrogate models as time permits. The following flowchart outlines AWS recommendations for finding the best interpretability method. The sections that follow discuss these methods in more detail.
 

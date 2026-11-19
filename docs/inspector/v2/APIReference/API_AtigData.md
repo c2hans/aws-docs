@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AtigData.h
 ---
 
 # AtigData
-<a name="API_AtigData"></a>
 
 The Amazon Web Services Threat Intel Group (ATIG) details for a specific vulnerability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/sidew
 ---
 
 # Provisioning Sidewalk devices using import tasks
-<a name="sidewalk-provision-bulk-import"></a>
 
 This section shows how you can provision Sidewalk devices in bulk using the AWS IoT console, or the AWS IoT Core for Amazon Sidewalk API operations, or the AWS CLI. The following sections explain how to bulk provision your Sidewalk devices.
 

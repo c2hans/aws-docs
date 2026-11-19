@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteBotA
 ---
 
 # DeleteBotAlias
-<a name="API_DeleteBotAlias"></a>
 
 Deletes the specified bot alias.
 

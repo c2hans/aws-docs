@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DetachCla
 ---
 
 # DetachClassicLinkVpc
-<a name="API_DetachClassicLinkVpc"></a>
 
 **Note**
 This action is deprecated.

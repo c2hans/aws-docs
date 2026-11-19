@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Set up language-specific sorting for Amazon Redshift query results using a scalar Python UDF
-<a name="set-up-language-specific-sorting-for-amazon-redshift-query-results-using-a-scalar-python-udf"></a>
 
 *Ethan Stark, Amazon Web Services*
 

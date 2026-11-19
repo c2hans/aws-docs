@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL table constraints
-<a name="chap-oracle-aurora-pg.tables.constraints"></a>
 
 With AWS DMS, you can migrate data from source databases while applying table constraints to enforce data integrity on the target PostgreSQL or Oracle databases. Table constraints define rules for the data in a table, such as restricting null values, ensuring unique entries, or specifying conditions for accepted values.
 

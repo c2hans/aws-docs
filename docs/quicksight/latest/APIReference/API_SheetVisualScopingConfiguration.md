@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetVisualScopingConfiguration
-<a name="API_SheetVisualScopingConfiguration"></a>
 
 The filter that is applied to the options.
 

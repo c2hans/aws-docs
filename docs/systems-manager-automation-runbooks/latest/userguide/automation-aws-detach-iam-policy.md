@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DetachIAMPolicy`
-<a name="automation-aws-detach-iam-policy"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Desc
 ---
 
 # DescribeVodSource
-<a name="API_DescribeVodSource"></a>
 
 Provides details about a specific video on demand (VOD) source in a specific source location.
 

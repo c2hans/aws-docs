@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_QuotaShare
 ---
 
 # QuotaSharePolicy
-<a name="API_QuotaSharePolicy"></a>
 
 The quota share scheduling policy details for a job queue.
 

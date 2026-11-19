@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListSecu
 ---
 
 # ListSecurityProfileAIAgents
-<a name="API_ListSecurityProfileAIAgents"></a>
 
 Returns a list of the allowed AI agents in a specific security profile.
 

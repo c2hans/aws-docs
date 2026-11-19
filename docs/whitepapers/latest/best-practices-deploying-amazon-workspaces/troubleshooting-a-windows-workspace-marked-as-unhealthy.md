@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Troubleshooting a Windows WorkSpace marked as unhealthy
-<a name="troubleshooting-a-windows-workspace-marked-as-unhealthy"></a>
 
  The Amazon WorkSpaces service periodically checks the health of a WorkSpace by sending it a status request. The WorkSpace is marked as Unhealthy if a response isn’t received from the WorkSpace in a timely manner. Common causes for this problem are:
 +  An application on the WorkSpace is blocking network connection between the Amazon WorkSpaces service and the WorkSpace.

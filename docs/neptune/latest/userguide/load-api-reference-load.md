@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/load-api-refere
 ---
 
 # Neptune Loader Command
-<a name="load-api-reference-load"></a>
 
 Loads data from an Amazon S3 bucket into a Neptune DB instance.
 

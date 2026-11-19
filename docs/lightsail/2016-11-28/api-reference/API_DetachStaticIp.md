@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DetachStaticIp
-<a name="API_DetachStaticIp"></a>
 
 Detaches a static IP from the Amazon Lightsail instance to which it is attached.
 

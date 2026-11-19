@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/understanding-qui
 ---
 
 # Understanding AWS Quick user billing
-<a name="understanding-quick-user-billing"></a>
 
 Your charges for a Quick user follow the user's lifecycle in your account, from the moment you provision the user through the period after you remove the user. The following sections explain when billing begins, how your first billing period is prorated, how ongoing monthly charges apply, and how removing a user affects your charges.
 

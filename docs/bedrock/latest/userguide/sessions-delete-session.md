@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/sessions-delete
 ---
 
 # Delete a session and all of its data
-<a name="sessions-delete-session"></a>
 
 After you end a session, you can delete it with the [DeleteSession](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_DeleteSession.html) API operation. Deleting a session deletes all Invocations, and InvocationSteps and associated data. You can’t undo deleting a session.
 

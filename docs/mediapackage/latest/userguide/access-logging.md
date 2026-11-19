@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/access-log
 ---
 
 # Access logging
-<a name="access-logging"></a>
 
 AWS Elemental MediaPackage v2 provides access logs that capture detailed information about requests sent to your channels. MediaPackage generates two log types:
 + Ingress access logs are for requests sent to the channel's input endpoints

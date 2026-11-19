@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-ste
 ---
 
 # Add a step
-<a name="build-and-manage-steps-types"></a>
 
 The following describes the requirements of each step type and provides an example implementation of the step, as well as how to add the step to a Pipelines. These are not working implementations because they don't provide the resource and inputs needed. For a tutorial that implements these steps, see [Pipelines actions](pipelines-build.md).
 

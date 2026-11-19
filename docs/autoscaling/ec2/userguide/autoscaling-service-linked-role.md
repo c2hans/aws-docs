@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-se
 ---
 
 # Service-linked roles for Amazon EC2 Auto Scaling
-<a name="autoscaling-service-linked-role"></a>
 
 Amazon EC2 Auto Scaling uses service-linked roles for the permissions that it requires to call other AWS services on your behalf. A service-linked role is a unique type of IAM role that is linked directly to an AWS service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 After you determine that you can safely downgrade an instance from SQL Server Enterprise edition, the next step is to migrate to SQL Server Standard edition on Amazon RDS. To migrate the database, use one or a combination of the following tools:
 + **Native backup and restore** – You can use native backup and restore to move data in and out of SQL Server database instances. Amazon RDS supports [native backup and restore](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Procedural.Importing.html) for Microsoft SQL Server databases using full backup (.bak) files. When you use Amazon RDS, you access files stored in Amazon Simple Storage Service (Amazon S3) rather than using the local file system on the database server.

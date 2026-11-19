@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_QuantumTa
 ---
 
 # QuantumTaskSummary
-<a name="API_QuantumTaskSummary"></a>
 
 Includes information about a quantum task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-start
 ---
 
 # Getting started with AWS Backup
-<a name="getting-started"></a>
 
 This tutorial shows you the generic steps for using AWS Backup features and functionality. As with any part of this technical documentation, you should follow along with the AWS Management Console in the other window.
 

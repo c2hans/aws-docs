@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/sdi-rou
 ---
 
 # Step D: Complete the Router Input Mappings
-<a name="sdi-rou-input"></a>
 
 Perform this procedure on the primary Conductor Live node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ResourceCostCalculation
-<a name="API_CostOptimizationHub_ResourceCostCalculation"></a>
 
 Cost impact of the resource recommendation.
 

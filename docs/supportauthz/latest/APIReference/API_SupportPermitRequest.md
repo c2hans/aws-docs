@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Sup
 ---
 
 # SupportPermitRequest
-<a name="API_SupportPermitRequest"></a>
 
 A permit request from an AWS support operator.
 

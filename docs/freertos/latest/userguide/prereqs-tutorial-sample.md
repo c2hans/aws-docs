@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/prereqs-tutori
 ---
 
 # Set up the prerequisites for the sample test suite
-<a name="prereqs-tutorial-sample"></a>
 
 To complete this tutorial, you need the following:
 +

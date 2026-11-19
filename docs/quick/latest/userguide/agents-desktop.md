@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/agents-desktop.ht
 ---
 
 # Agents
-<a name="agents-desktop"></a>
 
 Agents are configurable AIs in AWS Quick. You give each one its own instructions, knowledge sources, and tools so it can answer questions and get work done for you. Quick is the built-in agent, and you can also build your own or install ones shared with you. Each agent can work with you in chat or run on its own on a routine. Agents can only access the same resources and services that you have access to, and you control what each agent is allowed to do.
 

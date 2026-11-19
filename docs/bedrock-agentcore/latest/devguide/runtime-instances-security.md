@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Security model and permissions for Runtime Instances
-<a name="runtime-instances-security"></a>
 
 When you host agents on the **Instances** compute type, your agents run on Amazon EC2 instances in your own AWS account. This changes the shared responsibility model compared to the serverless microVM compute type: the instances run in your account and VPC, your agents run with the permissions of the runtime execution role, and the data on them stays in your account. This topic describes the security model for Instances, the permissions involved, and the practices you should follow for multi-tenant deployments.
 

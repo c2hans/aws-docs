@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # Python and DAX
-<a name="DAX.client.run-application-python"></a>
 
 Follow this procedure to run the Python sample application on your Amazon EC2 instance.
 

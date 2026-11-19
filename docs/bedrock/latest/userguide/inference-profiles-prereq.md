@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profi
 ---
 
 # Prerequisites for inference profiles
-<a name="inference-profiles-prereq"></a>
 
 Before you can use an inference profile, check that you've fulfilled the following prerequisites:
 + Your role has access to the inference profile API actions. If your role has the [AmazonBedrockFullAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonBedrockFullAccess) AWS-managed policy attached, you can skip this step. Otherwise, do the following:

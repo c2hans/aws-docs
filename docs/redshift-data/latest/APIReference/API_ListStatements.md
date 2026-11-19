@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Li
 ---
 
 # ListStatements
-<a name="API_ListStatements"></a>
 
 List of SQL statements. By default, only finished statements are shown. A token is returned to page through the statement list.
 

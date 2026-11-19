@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ProtectConfigurationCountryRuleSetInformation
-<a name="API_ProtectConfigurationCountryRuleSetInformation"></a>
 
 The types of statuses that can be used.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-c
 ---
 
 # Creating a container image for use on Amazon ECS
-<a name="create-container-image"></a>
 
 Amazon ECS uses Docker images in task definitions to launch containers. Docker is a technology that provides the tools for you to build, run, test, and deploy distributed applications in containers.
 

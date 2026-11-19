@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/vp
 ---
 
 # Verifying connectivity
-<a name="vpc-connectivity-verify"></a>
 
 To verify that VPC connectivity is working correctly:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Automating ongoing OS patching
-<a name="automating-os-patching"></a>
 
 Legacy applications in on-premises data centers often rely on manual operational processes for ongoing OS patching and software updates. During your replatforming journey, we recommend that you automate OS patching by using [Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html) or other automated patching processes. Patch Manager provides a centralized and consistent process to gather operational insights and implement routine operational tasks on both the AWS Cloud and on-premises resources.
 

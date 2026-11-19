@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/cfn-engine-upda
 ---
 
 # Example: Major version upgrade from 1.1.1.0 to 1.2.0.2 with default parameter groups
-<a name="cfn-engine-update-1110-1202-default"></a>
 
 Find the `DBCluster` that you want to upgrade, and the template you used to create it. For example:
 

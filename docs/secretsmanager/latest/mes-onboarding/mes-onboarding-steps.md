@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/mes-onboarding/mes
 ---
 
 # How to onboard with managed external secrets
-<a name="mes-onboarding-steps"></a>
 
 To onboard your secrets, you must:
 

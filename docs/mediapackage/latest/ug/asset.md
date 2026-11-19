@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/asset.html
 ---
 
 # Working with assets in AWS Elemental MediaPackage
-<a name="asset"></a>
 
 An asset holds all of the information that MediaPackage requires to ingest file-based video content from a source such as Amazon S3. Through the asset, MediaPackage ingests and dynamically packages content in response to playback requests. The configurations associated with the asset determine how it can be packaged for output.
 

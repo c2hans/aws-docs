@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Use isolated sessions for agents
-<a name="runtime-sessions"></a>
 
 Amazon Bedrock AgentCore Runtime lets you isolate each user session and safely reuse context across multiple invocations in a user session. Session isolation is critical for AI agent workloads due to their unique operational characteristics:
 +  **Complete execution environment separation** : Each session in AgentCore Runtime receives its own dedicated microVM with isolated compute, memory, and filesystem resources. This ensures that the execution environment of one session cannot access data belonging to another session. After session completion, the entire microVM is terminated and memory is sanitized to remove all session data, eliminating cross-session contamination risks.

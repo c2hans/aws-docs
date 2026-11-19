@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Step 2 (Optional): Launch the remote stack in secondary accounts
-<a name="step-2-optional-launch-the-remote-stack-in-secondary-accounts"></a>
 
 **Important**
 The remote stack must be deployed in the same Region as the hub stack.

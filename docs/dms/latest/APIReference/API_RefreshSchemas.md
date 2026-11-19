@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RefreshSchem
 ---
 
 # RefreshSchemas
-<a name="API_RefreshSchemas"></a>
 
 Populates the schema for the specified endpoint. This is an asynchronous operation and can take several minutes. You can check the status of this operation by calling the DescribeRefreshSchemasStatus operation.
 

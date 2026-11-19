@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Network
 ---
 
 # NetworkPathComponent
-<a name="API_NetworkPathComponent"></a>
 
 Information about a network path component.
 

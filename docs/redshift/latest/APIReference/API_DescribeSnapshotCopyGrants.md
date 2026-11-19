@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeSnapshotCopyGrants
-<a name="API_DescribeSnapshotCopyGrants"></a>
 
 Returns a list of snapshot copy grants owned by the AWS account in the destination region.
 

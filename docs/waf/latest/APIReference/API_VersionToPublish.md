@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_VersionToPub
 ---
 
 # VersionToPublish
-<a name="API_VersionToPublish"></a>
 
 A version of the named managed rule group, that the rule group's vendor publishes for use by customers.
 

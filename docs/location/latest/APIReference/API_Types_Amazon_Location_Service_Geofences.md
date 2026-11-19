@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Types_A
 ---
 
 # Amazon Location Service Geofences
-<a name="API_Types_Amazon_Location_Service_Geofences"></a>
 
 The following data types are supported by Amazon Location Service Geofences:
 +  [BatchDeleteGeofenceError](API_WaypointGeofencing_BatchDeleteGeofenceError.md)

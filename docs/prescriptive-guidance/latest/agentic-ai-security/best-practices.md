@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Security best practices for agentic AI systems on AWS
-<a name="best-practices"></a>
 
 The best practices in this guide are divided into high-level categories that straddle multiple disciplines and technology domains. Many organizations have existing, well-established practices that range from application development to data governance. For that reason, each recommendation is labeled as either *AI-specific* or *General*. The *AI-specific* recommendations provide guidance for organizations with strong foundations that need to understand which additional practices to adopt. The *General* recommendations describe best practices that you should consider due to their value in strengthening security, including security for agentic AI systems.
 

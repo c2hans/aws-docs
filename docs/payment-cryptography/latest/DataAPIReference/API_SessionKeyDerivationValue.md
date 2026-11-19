@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # SessionKeyDerivationValue
-<a name="API_SessionKeyDerivationValue"></a>
 
 Parameters to derive session key value using a MAC EMV algorithm.
 

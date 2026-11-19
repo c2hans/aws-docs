@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # ZonalCapacityReservationState
-<a name="API_ZonalCapacityReservationState"></a>
 
 The capacity reservation status for each Availability Zone.
 

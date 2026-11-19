@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Functions lifecycle hooks
-<a name="monetization-functions-hooks"></a>
 
 A lifecycle hook defines when MediaTailor runs your function during playback. This page is a complete reference for input fields, output namespaces, and the rules that govern data flow at each hook.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # TelemetryDestinationConfiguration
-<a name="API_TelemetryDestinationConfiguration"></a>
 
  Configuration specifying where and how telemetry data should be delivered for AWS resources.
 

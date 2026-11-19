@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Onboard AWS IoT Core for LoRaWAN control plane API endpoint
-<a name="lorawan-onboard-control-endpoint"></a>
 
 You can use AWS IoT Core for LoRaWAN control plane API endpoints to interact with the AWS IoT Wireless APIs. For example, you can use this endpoint to run the [SendDataToWirelessDevice](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SendDataToWirelessDevice.html) API to send data from AWS IoT to your LoRaWAN device. For more information, see [AWS IoT Core for LoRaWAN Control Plane API Endpoints](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#iot-core.html#iot-wireless-control-plane-endpoints).
 

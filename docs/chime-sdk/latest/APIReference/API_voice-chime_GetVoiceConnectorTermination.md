@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetVoiceConnectorTermination
-<a name="API_voice-chime_GetVoiceConnectorTermination"></a>
 
 Retrieves the termination setting details for the specified Voice Connector.
 

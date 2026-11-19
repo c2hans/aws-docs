@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/c4adTroublesh
 ---
 
 # Troubleshoot Connector for AD connector creation failures
-<a name="c4adTroubleshootingConnectorCreationFailure"></a>
 
 Connector for AD connector creation can fail for various reasons. When connector creation fails, you'll receive the failure reason in the API response. If you're using the console, then the failure reason is displayed in the Connector **details** page under the **Additional status details** field within in the Connector **details** container. The following table describes failure reasons and recommended steps for resolution.
 

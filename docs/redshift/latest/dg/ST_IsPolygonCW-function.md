@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/ST_IsPolygonCW-functi
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ST\_IsPolygonCW
-<a name="ST_IsPolygonCW-function"></a>
 
 ST\_IsPolygonCW returns true if the 2D projection of the input polygon or multipolygon is clockwise. If the input geometry is a point, linestring, multipoint, or multilinestring, then true is returned. For geometry collections, ST\_IsPolygonCW returns true if all the geometries in the collection are clockwise.
 

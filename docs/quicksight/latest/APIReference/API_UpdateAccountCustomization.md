@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateAccountCustomization
-<a name="API_UpdateAccountCustomization"></a>
 
 Updates Amazon Quick Sight customizations. Currently, the only customization that you can use is a theme.
 

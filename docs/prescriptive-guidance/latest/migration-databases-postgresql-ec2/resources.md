@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Resources
-<a name="resources"></a>
 + [Replication modes](https://patroni.readthedocs.io/en/latest/replication_modes.html) (Patroni documentation)
 + [Watchdog support](https://patroni.readthedocs.io/en/latest/watchdog.html) (Patroni documentation)
 + [Introduction to Patroni](https://patroni.readthedocs.io/en/latest/) (Patroni documentation)

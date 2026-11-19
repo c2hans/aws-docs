@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # DeleteArchiveRule
-<a name="API_DeleteArchiveRule"></a>
 
 Deletes the specified archive rule.
 

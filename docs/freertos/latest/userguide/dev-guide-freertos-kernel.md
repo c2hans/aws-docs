@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dev-guide-free
 ---
 
 # FreeRTOS kernel fundamentals
-<a name="dev-guide-freertos-kernel"></a>
 
 The FreeRTOS kernel is a real-time operating system that supports numerous architectures. The fundamentals of it are ideal for building embedded microcontroller applications. It provides:
 + A multitasking scheduler.

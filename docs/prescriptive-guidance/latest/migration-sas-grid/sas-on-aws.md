@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Considerations for SAS on AWS
-<a name="sas-on-aws"></a>
 
 ## SAS background
 <a name="sas-background"></a>

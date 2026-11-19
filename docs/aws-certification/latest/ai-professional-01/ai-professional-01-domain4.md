@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/ai-professional
 ---
 
 # Content Domain 4: Operational Efficiency and Optimization for GenAI Applications
-<a name="ai-professional-01-domain4"></a>
 
 ## Task 4.1: Implement cost optimization and resource efficiency strategies.
 <a name="ai-professional-01-task-4-1"></a>

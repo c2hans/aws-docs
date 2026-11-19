@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # OrCondition
-<a name="API_amazon-q-connect_OrCondition"></a>
 
 A list of conditions which would be applied together with an `OR` condition.
 

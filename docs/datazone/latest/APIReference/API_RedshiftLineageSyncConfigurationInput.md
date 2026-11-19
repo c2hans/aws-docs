@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Redshif
 ---
 
 # RedshiftLineageSyncConfigurationInput
-<a name="API_RedshiftLineageSyncConfigurationInput"></a>
 
 The Amaon Redshift lineage sync configuration.
 

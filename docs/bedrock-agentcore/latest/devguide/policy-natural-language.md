@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Writing policies in natural language
-<a name="policy-natural-language"></a>
 
 Policy in AgentCore will automatically select the optimal region within your geography to process your inference requests made through Policy authoring service. This maximizes available compute resources, model availability, and delivers the best customer experience. Your data will remain stored only in the region where the request originated, however, input prompts and output results may be processed outside that region. All data will be transmitted encrypted across Amazon’s secure network.
 

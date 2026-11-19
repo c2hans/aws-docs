@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # GetQuotaUtilizationReport
-<a name="API_GetQuotaUtilizationReport"></a>
 
 Retrieves the quota utilization report for your AWS account. This operation returns paginated results showing your quota usage across all AWS services, sorted by utilization percentage in descending order (highest utilization first).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepAttributeCapability
-<a name="API_StepAttributeCapability"></a>
 
 The list of step attributes.
 

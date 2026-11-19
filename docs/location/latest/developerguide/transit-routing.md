@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/transit-r
 ---
 
 # Transit routing
-<a name="transit-routing"></a>
 
 Transit routing calculates routes using public transportation. When the travel mode is set to `Transit`, the route is computed using public transit networks including buses, subways, trains, and other transit types. Transit routes include pedestrian legs for walking to and from transit stops.
 

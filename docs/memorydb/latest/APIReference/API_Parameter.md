@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Paramet
 ---
 
 # Parameter
-<a name="API_Parameter"></a>
 
 Describes an individual setting that controls some aspect of MemoryDB behavior.
 

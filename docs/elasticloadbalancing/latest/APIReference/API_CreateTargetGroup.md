@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # CreateTargetGroup
-<a name="API_CreateTargetGroup"></a>
 
 Creates a target group.
 

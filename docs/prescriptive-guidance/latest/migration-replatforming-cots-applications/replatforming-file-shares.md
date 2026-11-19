@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Replatforming file shares
-<a name="replatforming-file-shares"></a>
 
 If your in-house applications use on-premises external file shares, such as Network File Systems (NFS) or Server Message Block (SMB), we recommend changing the application's code to use Amazon Simple Storage Service (Amazon S3) and [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html). However, if block-based access is required, you can use [Amazon Elastic File System (Amazon EFS) ](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)or [Amazon FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html). Amazon EFS and Amazon FSx are AWS options for applications that require shared file storage.
 

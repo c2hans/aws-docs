@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/examples-warm-
 ---
 
 # Examples for creating and managing warm pools with the AWS CLI
-<a name="examples-warm-pools-aws-cli"></a>
 
 You can create and manage warm pools using the AWS Management Console, AWS Command Line Interface (AWS CLI), or SDKs.
 

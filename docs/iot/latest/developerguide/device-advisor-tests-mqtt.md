@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 ---
 
 # MQTT
-<a name="device-advisor-tests-mqtt"></a>
 
 ## CONNECT, DISCONNECT, and RECONNECT
 <a name="connect"></a>

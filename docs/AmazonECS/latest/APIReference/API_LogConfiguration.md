@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_LogCon
 ---
 
 # LogConfiguration
-<a name="API_LogConfiguration"></a>
 
 The log configuration for the container. This parameter maps to `LogConfig` in the docker container create command and the `--log-driver` option to docker run.
 

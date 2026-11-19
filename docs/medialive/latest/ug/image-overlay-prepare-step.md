@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/image-overlay-prepar
 ---
 
 # Preparing the static image overlay file
-<a name="image-overlay-prepare-step"></a>
 
 You must prepare each image overlay that you want to use in your MediaLive channel, and store it in a suitable location, such as an Amazon S3 bucket. You can prepare the images at any time, either before you start the channel, or while the channel is running.
 

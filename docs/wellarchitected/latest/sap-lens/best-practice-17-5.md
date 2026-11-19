@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 17.5 – Consider using on-demand capacity to improve cost efficiency
-<a name="best-practice-17-5"></a>
 
 The on-demand pricing model is suitable for SAP workloads needing reduced operating hours, short-term projects, experimentation, or expanded capacity for small periods of time (for example, performance testing). Determine where you can use on-demand pricing in your SAP architecture.
 

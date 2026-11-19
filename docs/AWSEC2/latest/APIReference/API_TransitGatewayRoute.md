@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayRoute
-<a name="API_TransitGatewayRoute"></a>
 
 Describes a route for a transit gateway route table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Agentic AI
-<a name="aurora-features-agentic-ai"></a>
 
 **Topics**
 + [Agent memory](#aurora-features-agent-memory)

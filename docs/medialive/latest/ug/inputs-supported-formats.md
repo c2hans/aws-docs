@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/inputs-supported-for
 ---
 
 # Input types, protocols, and upstream systems
-<a name="inputs-supported-formats"></a>
 
 The following table lists the input types that are supported in MediaLive, and describes how the input handles the source content. In the table, find a type of input in the first column, then read across the row for information about how the type is supported.
 

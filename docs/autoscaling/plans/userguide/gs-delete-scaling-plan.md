@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/gs-delete-sc
 ---
 
 # Step 5: Clean up
-<a name="gs-delete-scaling-plan"></a>
 
 After you have completed the getting started tutorial, you can choose to keep your scaling plan. However, if you are not actively using your scaling plan, you should consider deleting it so that your account does not incur unnecessary charges.
 

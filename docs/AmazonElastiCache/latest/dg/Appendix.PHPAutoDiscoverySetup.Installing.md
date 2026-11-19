@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Appendix.PHP
 ---
 
 # Installation steps for new users
-<a name="Appendix.PHPAutoDiscoverySetup.Installing"></a>
 
 **Topics**
 + [Installing PHP 7.x for new users](#Appendix.PHPAutoDiscoverySetup.Installing.PHP7x)

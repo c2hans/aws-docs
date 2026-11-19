@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # RegistrySummary
-<a name="API_RegistrySummary"></a>
 
 Registry summary for list operations
 

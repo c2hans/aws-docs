@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-compliance.
 ---
 
 # Compliance validation for Amazon S3
-<a name="s3-compliance"></a>
 
 The security and compliance of Amazon S3 is assessed by third-party auditors as part of multiple AWS compliance programs, including the following:
 + System and Organization Controls (SOC)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/configure-inf
 ---
 
 # Configure your infrastructure to use Backup gateway
-<a name="configure-infrastructure-bgw"></a>
 
 Backup gateway requires the following network, firewall, and hardware configurations to back up and restore your virtual machines.
 

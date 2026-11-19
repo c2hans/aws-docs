@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Next steps and resources
-<a name="whats-next"></a>
 + For more information about DR on AWS, read the white paper [Disaster Recovery of Workloads on AWS: Recovery in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-workloads-on-aws.html).
 + Review the [reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) in the AWS Well-Architected Framework.
 + Explore [AWS Resilience Hub](https://aws.amazon.com/resilience-hub/) to track and validate the resilience of your AWS workloads.

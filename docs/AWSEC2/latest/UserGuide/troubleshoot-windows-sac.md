@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshoot-win
 ---
 
 # Troubleshoot your Windows instance using SAC
-<a name="troubleshoot-windows-sac"></a>
 
 The Special Administration Console (SAC) capability of Windows provides a way to troubleshoot a Windows instance through the instance serial port. By connecting using the EC2 Serial Console, you can troubleshoot boot, network configuration, and other issues through SAC. You can interrupt the boot process or boot Windows in safe mode. With SAC, you can enter commands to an instance as if your keyboard and monitor are directly attached to the instance's serial port. The serial console does not require your instance to have any networking capabilities.
 

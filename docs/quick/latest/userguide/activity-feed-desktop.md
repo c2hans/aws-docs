@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/activity-feed-des
 ---
 
 # Activity feed
-<a name="activity-feed-desktop"></a>
 
 In AWS Quick, the activity feed is your single place to catch what happened across your connected services, such as Slack, Outlook, and your calendar. You don't need to open each app. Quick reads that activity and surfaces only what is relevant to you. It uses your knowledge graph (the people, projects, and topics in your work) to decide what matters. A feed agent processes items from your messaging, email, and calendar sources. It assigns importance and suggests actions. The feed is organized into **Feed**, **Calendar**, and **To-dos** tabs.
 

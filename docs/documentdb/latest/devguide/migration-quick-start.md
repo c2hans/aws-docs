@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/migration-qui
 ---
 
 # Migrate to Amazon DocumentDB using AWS Database Migration Service (DMS): quick start guide
-<a name="migration-quick-start"></a>
 
 **Topics**
 + [Prepare the DMS source](#migrate-qs-dma-source)

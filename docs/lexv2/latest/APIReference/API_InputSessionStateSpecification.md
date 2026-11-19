@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_InputSessi
 ---
 
 # InputSessionStateSpecification
-<a name="API_InputSessionStateSpecification"></a>
 
 Specifications for the current state of the dialog between the user and the bot in the test set.
 

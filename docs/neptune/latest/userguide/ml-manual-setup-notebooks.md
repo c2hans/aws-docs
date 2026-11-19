@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/ml-manual-setup
 ---
 
 # Manually configuring a Neptune notebook for Neptune ML
-<a name="ml-manual-setup-notebooks"></a>
 
 Neptune SageMaker AI notebooks come pre-loaded with a variety of sample notebooks for Neptune ML. You can preview these samples in the [open source graph-notebook GitHub repository](https://github.com/aws/graph-notebook/tree/main/src/graph_notebook/notebooks/04-Machine-Learning).
 

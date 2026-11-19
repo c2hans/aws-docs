@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/f5-bi
 ---
 
 # CloudWatch pipelines configuration for F5 BIG-IP
-<a name="f5-bigip-pipeline-setup"></a>
 
 The F5 BIG-IP setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 

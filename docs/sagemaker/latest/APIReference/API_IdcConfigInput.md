@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_IdcCon
 ---
 
 # IdcConfigInput
-<a name="API_IdcConfigInput"></a>
 
 Specifies the AWS IAM Identity Center configuration to use for a SageMaker Partner AI App that uses `IDC` authorization.
 

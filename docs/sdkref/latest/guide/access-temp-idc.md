@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/access-temp-idc.html
 ---
 
 # Using short-term credentials to authenticate AWS SDKs and tools
-<a name="access-temp-idc"></a>
 
  We recommend configuring your AWS SDK or tool to use [Using IAM Identity Center to authenticate AWS SDK and tools](access-sso.md) with extended session duration options. However, you can copy and use temporary credentials that are available in the AWS access portal. New credentials will need to be copied when these expire. You can use the temporary credentials in a profile or use them as values for system properties and environment variables.
 

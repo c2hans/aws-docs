@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateEgress
 ---
 
 # UpdateEgressGatewayBridgeRequest
-<a name="API_UpdateEgressGatewayBridgeRequest"></a>
 
  Update an existing egress-type bridge.
 

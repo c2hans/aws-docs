@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksPromptAttackResult
-<a name="API_runtime_GuardrailChecksPromptAttackResult"></a>
 
 The prompt attack check results.
 

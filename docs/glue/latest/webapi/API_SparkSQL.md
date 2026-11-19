@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SparkSQL.html
 ---
 
 # SparkSQL
-<a name="API_SparkSQL"></a>
 
 Specifies a transform where you enter a SQL query using Spark SQL syntax to transform the data. The output is a single `DynamicFrame`.
 

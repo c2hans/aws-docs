@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Sharp Size Limit
-<a name="sharp-size-limit"></a>
 
 Sharp restricts the pixel size of input images to `268402689` by default (`16383 ^ 2`). To modify the value the solution passes to sharp, in combination with the instructions in [Mappings](optional-mappings.md), modify the value under `SharpSizeLimit` from "", to the pixel limit you choose, based on the following rules:
 

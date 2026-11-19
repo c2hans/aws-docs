@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/voice-connector-grou
 ---
 
 # Managing Amazon Chime SDK Voice Connector groups
-<a name="voice-connector-groups"></a>
 
 **How an Amazon Chime SDK Voice Connector group works**
  Voice Connector groups only handle inbound PSTN calls to your SIP based phone system. The groups provide fault-tolerant, cross-region call routing. A Voice Connector group contains two or more Voice Connectors, and can include Voice Connectors created in different AWS Regions. This allows incoming PSTN calls to fail over across AWS Regions if availability events affect service in one region.

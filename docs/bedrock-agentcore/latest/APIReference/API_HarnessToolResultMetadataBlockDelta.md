@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessToolResultMetadataBlockDelta
-<a name="API_HarnessToolResultMetadataBlockDelta"></a>
 
 Delta payload for a tool result metadata.
 

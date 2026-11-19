@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/mak
 ---
 
 # Making API requests
-<a name="making-api-requests"></a>
 
 Query requests for the Amazon Verified Permissions are HTTP or HTTPS requests that use the `POST` method.
 

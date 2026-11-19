@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchDisassociateFindingIssueError
-<a name="API_BatchDisassociateFindingIssueError"></a>
 
 A finding that failed to disassociate, with the cause of the failure.
 

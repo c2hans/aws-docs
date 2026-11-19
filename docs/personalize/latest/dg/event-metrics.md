@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/event-metrics.html
 ---
 
 # Event metrics and attribution reports
-<a name="event-metrics"></a>
 
 To monitor the type and number of events sent to Amazon Personalize, use Amazon CloudWatch metrics. For more information, see [Monitoring Amazon Personalize with Amazon CloudWatch](personalize-monitoring.md).
 

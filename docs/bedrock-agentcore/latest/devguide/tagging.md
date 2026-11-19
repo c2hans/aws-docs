@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/taggin
 ---
 
 # Tagging AgentCore resources
-<a name="tagging"></a>
 
 A *tag* is a label that you assign to an AWS resource. Each tag consists of a *key* and an optional *value* , both of which you define.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteLookupTable
-<a name="API_DeleteLookupTable"></a>
 
 Deletes a lookup table permanently. This operation cannot be undone.
 

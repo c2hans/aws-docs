@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/npm-yarn.html
 ---
 
 # Configure and use Yarn with CodeArtifact
-<a name="npm-yarn"></a>
 
 After you create a repository, you can use the Yarn client to manage npm packages.
 

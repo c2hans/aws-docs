@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFle
 ---
 
 # DeleteFleets
-<a name="API_DeleteFleets"></a>
 
 Deletes the specified EC2 Fleet request.
 

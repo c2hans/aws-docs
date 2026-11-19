@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-e
 ---
 
 # Example conversational analytics output files for an email analyzed by conversational analytics
-<a name="contact-lens-example-output-files-email"></a>
 
 This section shows an example schema for an email contact that has been analyzed by conversational analytics. The example shows matched categories and a contact chain summary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/aws-api
 ---
 
 # API Gateway stage variables reference for REST APIs in API Gateway
-<a name="aws-api-gateway-stage-variables-reference"></a>
 
  You can use API Gateway stage variables in the following cases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Signal
 ---
 
 # SignalConfidenceReasoning
-<a name="API_SignalConfidenceReasoning"></a>
 
 A producer's structured rationale for a signal's confidence.
 

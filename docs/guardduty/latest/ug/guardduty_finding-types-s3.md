@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-ty
 ---
 
 # GuardDuty S3 Protection finding types
-<a name="guardduty_finding-types-s3"></a>
 
 The following findings are specific to Amazon S3 resources and will have a **Resource Type** of `S3Bucket` if the data source is **CloudTrail data events for S3**, or `AccessKey` if the data source is **CloudTrail management events**. The severity and details of the findings will differ based on the finding type and the permission associated with the bucket.
 

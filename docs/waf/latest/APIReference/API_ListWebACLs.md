@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListWebACLs.
 ---
 
 # ListWebACLs
-<a name="API_ListWebACLs"></a>
 
 Retrieves an array of [WebACLSummary](API_WebACLSummary.md) objects for the web ACLs that you manage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateAction
-<a name="API_UpdateAction"></a>
 
 Updates an action.
 

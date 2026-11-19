@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # Emv2000Attributes
-<a name="API_Emv2000Attributes"></a>
 
 Parameters to derive the confidentiality and integrity keys for a payment card using EMV2000 deruv.
 

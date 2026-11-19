@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/self-managed-window
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create self-managed Windows Server 2022 nodes with `eksctl`
-<a name="self-managed-windows-server-2022"></a>
 
 You can use the following `test-windows-2022.yaml` as reference for creating self-managed Windows Server 2022 nodes. Replace every {{example value}} with your own values.
 

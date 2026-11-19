@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-re
 ---
 
 # How to reverse geocode for the time zone of a city
-<a name="how-to-reverse-geocode-timezone"></a>
 
 You can use the Reverse Geocode API to request for time zone information such as UTC offset and time zone name
 

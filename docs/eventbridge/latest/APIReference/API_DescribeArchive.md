@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Desc
 ---
 
 # DescribeArchive
-<a name="API_DescribeArchive"></a>
 
 Retrieves details about an archive.
 

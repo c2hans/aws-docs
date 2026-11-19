@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateJsonClassif
 ---
 
 # CreateJsonClassifierRequest
-<a name="API_CreateJsonClassifierRequest"></a>
 
 Specifies a JSON classifier for `CreateClassifier` to create.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetConnec
 ---
 
 # GetConnector
-<a name="API_GetConnector"></a>
 
 Returns the details of the specified connector.
 

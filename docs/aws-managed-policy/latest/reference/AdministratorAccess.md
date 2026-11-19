@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Admi
 ---
 
 # AdministratorAccess
-<a name="AdministratorAccess"></a>
 
 **Description**: Provides full access to AWS services and resources.
 

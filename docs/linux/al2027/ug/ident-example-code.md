@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/ident-example-code.html
 ---
 
 # Example code for OS detection
-<a name="ident-example-code"></a>
 
  The following examples demonstrate how to programmatically detect the operating system and version using the `/etc/os-release` (or `/usr/lib/os-release` if `/etc/os-release` does not exist) file. These examples show how to distinguish between Amazon Linux and other distributions, as well as how to use the `ID_LIKE` field to determine distribution families.
 

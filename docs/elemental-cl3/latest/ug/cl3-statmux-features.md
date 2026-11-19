@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/cl3-statmux-feat
 ---
 
 # Features of AWS Elemental Statmux
-<a name="cl3-statmux-features"></a>
 
 **Topics**
 + [What you can mux](#cl3-smux-content)

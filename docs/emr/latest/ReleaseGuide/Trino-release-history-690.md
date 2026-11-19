@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Trino-release-hi
 ---
 
 # Amazon EMR 6.9.0 - Trino release notes
-<a name="Trino-release-history-690"></a>
 
 ## Amazon EMR 6.9.0 - Trino new features
 <a name="Trino-release-history-features-690"></a>

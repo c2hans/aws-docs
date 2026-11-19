@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/how-it-works-opera
 ---
 
 # Understanding Rekognition's image and video operations
-<a name="how-it-works-operations-intro"></a>
 
 Amazon Rekognition offers two primary API sets for image and video analysis:
 + Amazon Rekognition Image: This API is designed for analyzing images.

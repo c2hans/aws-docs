@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ami.html
 ---
 
 # Working with Amazon Linux AMIs in Amazon EMR
-<a name="emr-ami"></a>
 
 ## Amazon Linux Amazon Machine Images (AMIs)
 <a name="emr-default-ami-overview"></a>

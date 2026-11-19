@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/support-infor
 ---
 
 # Package support information
-<a name="support-information"></a>
 
 This page describes the support lifecycle for the packages included in Amazon Linux 2023 (AL2023). Use it to find out the support level of a package, when its support level is scheduled to change, and the date on which it reaches end of support. Packages move through a series of lifecycle phases, each with a defined support level that determines the severity of issues addressed during that phase.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/resour
 ---
 
 # Resources
-<a name="resources"></a>
 
 The Amazon API Gateway REST API includes the following resources.
 

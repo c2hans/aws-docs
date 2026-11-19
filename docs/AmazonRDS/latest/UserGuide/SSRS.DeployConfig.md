@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.DeployCo
 ---
 
 # Deploying reports and configuring report data sources
-<a name="SSRS.DeployConfig"></a>
 
 Use the following procedures to deploy reports to SSRS and configure the reporting data sources:
 

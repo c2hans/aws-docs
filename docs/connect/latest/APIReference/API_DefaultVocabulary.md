@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DefaultV
 ---
 
 # DefaultVocabulary
-<a name="API_DefaultVocabulary"></a>
 
 Contains information about a default vocabulary.
 

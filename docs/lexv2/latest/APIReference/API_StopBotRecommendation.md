@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_StopBotRec
 ---
 
 # StopBotRecommendation
-<a name="API_StopBotRecommendation"></a>
 
 Stop an already running Bot Recommendation request.
 

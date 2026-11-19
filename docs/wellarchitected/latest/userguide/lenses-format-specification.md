@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Lens format specification in AWS WA Tool
-<a name="lenses-format-specification"></a>
 
 Lenses are defined using a specific JSON format. When you start to create a custom lens, you have the option to download a template JSON file. You can use this file as the basis for your custom lenses as it defines the basic structure for the pillars, questions, best practices, and improvement plan.
 

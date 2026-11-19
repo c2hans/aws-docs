@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ResolvedS3Object.h
 ---
 
 # ResolvedS3Object
-<a name="API_ResolvedS3Object"></a>
 
 Details about the resolved Amazon S3 object that contains a function's deployment package.
 

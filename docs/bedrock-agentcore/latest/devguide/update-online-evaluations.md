@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/update
 ---
 
 # Update online evaluation
-<a name="update-online-evaluations"></a>
 
 The `UpdateOnlineEvaluationConfig` API modifies an existing online evaluation configuration, allowing you to change evaluators, data sources, execution settings, and other parameters. Updates do not interrupt running evaluations.
 

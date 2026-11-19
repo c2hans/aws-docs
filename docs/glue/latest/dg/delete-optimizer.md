@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/delete-optimizer.html
 ---
 
 # Deleting an optimizer
-<a name="delete-optimizer"></a>
 
 You can delete an optimizer and associated metadata for the table using AWS CLI or AWS API operation.
 

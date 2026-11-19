@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteCertif
 ---
 
 # DeleteCertificate
-<a name="API_DeleteCertificate"></a>
 
 Deletes the specified certificate.
 

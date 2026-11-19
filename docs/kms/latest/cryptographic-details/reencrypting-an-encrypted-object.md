@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/cryptographic-details/reencry
 ---
 
 # Reencrypting an encrypted object
-<a name="reencrypting-an-encrypted-object"></a>
 
 An existing customer ciphertext encrypted under one KMS key can be reencrypted to another KMS key through a reencrypt command. Reencrypt encrypts data on the server side with a new KMS key without exposing the plaintext of the key on the client side. The data is first decrypted and then encrypted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteCon
 ---
 
 # DeleteContactList
-<a name="API_DeleteContactList"></a>
 
 Deletes a contact list and all of the contacts on that list.
 

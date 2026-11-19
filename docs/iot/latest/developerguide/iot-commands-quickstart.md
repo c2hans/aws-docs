@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-commands-q
 ---
 
 # Quick start
-<a name="iot-commands-quickstart"></a>
 
 Complete these steps to send your first command:
 

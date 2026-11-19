@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Event-driven architecture: The backbone of serverless AI
-<a name="event-driven-architecture"></a>
 
 Serverless AI on AWS is based on [event-driven architecture](https://aws.amazon.com/what-is/eda/) (EDA), an architectural style in which events are the primary mechanism for integration and control. An event is a state change or notable occurrence within a system, such as a file upload, a user request, a sensor signal, or a model inference result. Events serve as triggers, causing downstream services or agents to respond without tight coupling between components.
 

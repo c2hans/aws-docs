@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-create-
 ---
 
 # Create a Recycle Bin retention rule
-<a name="recycle-bin-create-rule"></a>
 
 When you create a retention rule, you must specify the following required parameters:
 + The resource type to protect (volumes, snapshots, or AMIs).

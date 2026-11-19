@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DataSource.htm
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
 Describes the data source that contains the data to upload to a dataset, or the list of records to delete from Amazon Personalize.
 

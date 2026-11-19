@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/detach-lights
 ---
 
 # Detach instances from a Lightsail load balancer
-<a name="detach-lightsail-instances-from-load-balancer"></a>
 
 If you no longer want to have an instance attached to your Amazon Lightsail load balancer, you can detach it. When you detach a Lightsail instance from a load balancer, we wait until the specified instances are no longer needed before detaching.
 

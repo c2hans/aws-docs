@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/operations.html
 ---
 
 # Operations
-<a name="operations"></a>
 
 The Amazon Managed Streaming for Apache Kafka REST API includes the following operations.
 + [BatchAssociateScramSecret](clusters-clusterarn-scram-secrets.md#BatchAssociateScramSecret)

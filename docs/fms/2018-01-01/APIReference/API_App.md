@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_App.html
 ---
 
 # App
-<a name="API_App"></a>
 
 An individual AWS Firewall Manager application.
 

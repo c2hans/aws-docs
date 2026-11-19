@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Using logical replication to perform a major version upgrade for Aurora PostgreSQL
-<a name="AuroraPostgreSQL.MajorVersionUpgrade"></a>
 
 Using logical replication and Aurora fast cloning, you can perform a major version upgrade that uses the current version of Aurora PostgreSQL database while gradually migrating the changing data to the new major version database. This low downtime upgrade process is referred to as a blue/green upgrade. The current version of the database is referred as the "blue" environment and the new database version is referred as the "green" environment.
 

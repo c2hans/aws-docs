@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Auto session revocation
-<a name="auto-session-revocation-1"></a>
 
  Before you begin to use and deploy auto session revocation module in your architecture, review the following considerations to ensure the entire process is accurate and efficient.
 +  **Access log retentions** – Video streaming use cases at a large scale, inevitable will drive large amount of traffic. In turn, these will produce large volume of log entries which feed the auto session revocation analysis. Therefore, to optimize for costs we recommend looking into S3 lifecycle configuration options to expire and remove dated log files that do not provide actionable insights any more. This will not only save the costs of S3 storage but also amount of data that needs to be scanned by Amazon Athena which is one of the main cost components of this service.

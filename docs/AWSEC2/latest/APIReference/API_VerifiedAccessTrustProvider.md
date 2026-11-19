@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessTrustProvider
-<a name="API_VerifiedAccessTrustProvider"></a>
 
 Describes a Verified Access trust provider.
 

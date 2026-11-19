@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/SYS_MV_STATE.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # SYS\_MV\_STATE
-<a name="SYS_MV_STATE"></a>
 
 The results include information about the state of all materialized views. It includes base table information, schema properties, and information about recent events, like dropping a column.
 

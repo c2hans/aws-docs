@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Tra
 ---
 
 # Trace
-<a name="API_Trace"></a>
 
 Contains tracing information of the SiteWise Assistant's reasoning and data access.
 

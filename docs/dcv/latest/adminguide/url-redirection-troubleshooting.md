@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/url-redirection-tr
 ---
 
 # Troubleshooting URL redirection
-<a name="url-redirection-troubleshooting"></a>
 
 **Links aren't redirected**
 + Verify that the `enabled` parameter is set to `true` and that the allow list contains at least one pattern. To check the values, run `dcv.exe get-config --section url-redirection`.

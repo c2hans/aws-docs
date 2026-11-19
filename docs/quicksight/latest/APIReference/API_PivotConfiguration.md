@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotConfiguration
-<a name="API_PivotConfiguration"></a>
 
 Configuration for a pivot operation, specifying which column contains labels and how to pivot them.
 

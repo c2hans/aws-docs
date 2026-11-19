@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ExpectedCharge
-<a name="API_marketplace-agreements_ExpectedCharge"></a>
 
 Estimated charge for the request.
 
@@ -39,6 +38,12 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[A-Za-z0-9_/-]+`
 Required: No
 
+ ** purchaseOrderReference **   <a name="AWSMarketplaceService-Type-marketplace-agreements_ExpectedCharge-purchaseOrderReference"></a>
+The purchase order reference associated with the charge, if any.
+Type: String
+Length Constraints: Minimum length of 1.
+Required: No
+
  ** time **   <a name="AWSMarketplaceService-Type-marketplace-agreements_ExpectedCharge-time"></a>
 The date and time when the charge is due to be invoiced. This is available only when the charge date is known.
 Type: Timestamp
@@ -47,7 +52,7 @@ Required: No
  ** timing **   <a name="AWSMarketplaceService-Type-marketplace-agreements_ExpectedCharge-timing"></a>
 Indicates when the charge amount will be incurred. Values include `ON_ACCEPTANCE` (charged immediately when the agreement request is accepted), `BILLING_PERIOD` (charged on each billing period), and `SCHEDULED` (charged at a predetermined future date).
 Type: String
-Valid Values: `ON_ACCEPTANCE | SCHEDULED | BILLING_PERIOD`
+Valid Values: `ON_ACCEPTANCE | SCHEDULED | BILLING_PERIOD | NOT_APPLICABLE`
 Required: No
 
 ## See Also

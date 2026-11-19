@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Troubleshooting
-<a name="pb-solr-troubleshooting"></a>
 
 | Symptom | What to check |
 | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Spark Operator Logs
-<a name="spark-operator-monitoring-configuration-logs"></a>
 
 You can define monitoring configuration in the following way when doing `helm install`:
 

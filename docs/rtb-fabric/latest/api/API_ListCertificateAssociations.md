@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListCertificat
 ---
 
 # ListCertificateAssociations
-<a name="API_ListCertificateAssociations"></a>
 
 Lists the certificate associations for a responder gateway.
 

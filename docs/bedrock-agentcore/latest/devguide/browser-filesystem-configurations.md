@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # File system configurations for AgentCore Browser
-<a name="browser-filesystem-configurations"></a>
 
 AgentCore Browser supports mounting your own file systems into browser sessions through the `filesystemConfigurations` parameter. Each configuration mounts an Amazon S3 Files or Amazon EFS access point at a path you specify. You don’t need custom mount code, privileged containers, or download orchestration — AgentCore performs all mount operations inside the session sandbox.
 

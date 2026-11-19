@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Resources
-<a name="resources"></a>
 + [AWS Control Tower documentation](https://docs.aws.amazon.com/controltower/)
 + [Setting up](https://docs.aws.amazon.com/controltower/latest/userguide/setting-up.html) (AWS Control Tower documentation)
 + [Controls reference ](https://docs.aws.amazon.com/controltower/latest/controlreference/controls.html)(AWS Control Tower documentation)

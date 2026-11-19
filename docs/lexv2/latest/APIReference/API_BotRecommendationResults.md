@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotRecomme
 ---
 
 # BotRecommendationResults
-<a name="API_BotRecommendationResults"></a>
 
 The object representing the URL of the bot definition, the URL of the associated transcript, and a statistical summary of the bot recommendation results.
 

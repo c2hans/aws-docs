@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Opera
 ---
 
 # AWS Backup
-<a name="API_Operations_AWS_Backup"></a>
 
 The following actions are supported by AWS Backup:
 +  [AssociateBackupVaultMpaApprovalTeam](API_AssociateBackupVaultMpaApprovalTeam.md)

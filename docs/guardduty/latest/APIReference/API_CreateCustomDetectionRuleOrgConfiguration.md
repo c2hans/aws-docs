@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Create
 ---
 
 # CreateCustomDetectionRuleOrgConfiguration
-<a name="API_CreateCustomDetectionRuleOrgConfiguration"></a>
 
 Creates an organization-level configuration that enables a custom detection rule across your organization. This operation is available only to the delegated administrator account.
 

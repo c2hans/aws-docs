@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/quotas.html
 ---
 
 # Quotas
-<a name="quotas"></a>
 
 ## Inbound file to Amazon Web Services (AWS)
 <a name="inbound-file-to-aws"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # 5. Continuous integration
-<a name="continuous-integration"></a>
 
 The ML system runs tests to validate that the system works from end to end, checking for possible points of failure. Tests are run automatically on commit, and longer tests are run on a fixed schedule. Tests check traditional software engineering areas such as at the unit and system level. In addition, tests capture the particulars of ML by checking data, features, and the model.
 

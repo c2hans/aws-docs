@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/segment-api.html
 ---
 
 # Using the Amazon Rekognition Segment API
-<a name="segment-api"></a>
 
 Amazon Rekognition Video segment detection in stored videos is an Amazon Rekognition Video asynchronous operation. The Amazon Rekognition Segment API is a composite API where you choose the type of analysis (technical cues or shot detection) from a single API call. For information about calling asynchronous operations, see [Calling Amazon Rekognition Video operations](api-video.md).
 

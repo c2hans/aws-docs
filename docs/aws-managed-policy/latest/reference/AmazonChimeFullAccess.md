@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonChimeFullAccess
-<a name="AmazonChimeFullAccess"></a>
 
 **Description**: Provides full access to Amazon Chime Admin Console via the AWS Management Console.
 

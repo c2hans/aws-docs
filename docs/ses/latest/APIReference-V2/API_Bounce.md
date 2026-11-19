@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Bounce.ht
 ---
 
 # Bounce
-<a name="API_Bounce"></a>
 
 Information about a `Bounce` event.
 

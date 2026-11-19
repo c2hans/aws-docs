@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 ---
 
 # Data retrieval APIs for AWS Billing And Cost Management Data Exports
-<a name="awsbillingandcostmanagementdataexports"></a>
 
 AWS Billing And Cost Management Data Exports provides the following APIs for data retrieval.
 

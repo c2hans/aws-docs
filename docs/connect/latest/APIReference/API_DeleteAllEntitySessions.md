@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteAl
 ---
 
 # DeleteAllEntitySessions
-<a name="API_DeleteAllEntitySessions"></a>
 
 Deletes all active sessions for the specified entity in the specified Connect Customer instance. The operation supports only the `USER` entity type, so you can use it to sign out all of a user's active sessions. Use it when you need to end a user's access right away, for example when they leave your organization or you suspect that their credentials are compromised.
 

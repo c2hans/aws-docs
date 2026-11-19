@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobFolderOverrideTags
-<a name="API_AssetBundleImportJobFolderOverrideTags"></a>
 
 An object that contains a list of tags to be assigned to a list of folder IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/trusted-dev
 ---
 
 # Restrict access to trusted devices for WorkSpaces Personal
-<a name="trusted-devices"></a>
 
 By default, users can access their WorkSpaces from any supported device that is connected to the internet. If your company limits corporate data access to trusted devices (also known as managed devices), you can restrict WorkSpaces access to trusted devices with valid certificates.
 

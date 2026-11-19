@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeSour
 ---
 
 # DescribeSourceNetworksRequestFilters
-<a name="API_DescribeSourceNetworksRequestFilters"></a>
 
 A set of filters by which to return Source Networks.
 

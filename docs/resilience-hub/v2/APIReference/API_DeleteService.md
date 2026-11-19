@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Delet
 ---
 
 # DeleteService
-<a name="API_DeleteService"></a>
 
 Deletes a service.
 

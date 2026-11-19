@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSEC10-BP01 Implement network separation for AWS EUC instances
-<a name="eucsec10-bp01"></a>
 
  Separating end user systems from infrastructure, application servers, and data at the network level verifies that you can enforce minimal access between systems to help prevent unauthorized access to data and applications.
 

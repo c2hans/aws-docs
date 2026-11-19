@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53ReadOnlyAccess
-<a name="AmazonRoute53ReadOnlyAccess"></a>
 
 **Description**: Provides read only access to all Amazon Route 53 via the AWS Management Console.
 

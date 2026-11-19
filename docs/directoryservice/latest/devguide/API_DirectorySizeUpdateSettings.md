@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dir
 ---
 
 # DirectorySizeUpdateSettings
-<a name="API_DirectorySizeUpdateSettings"></a>
 
 Contains the directory size configuration for update operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # EncryptionConfig
-<a name="API_connect-outbound-campaigns_EncryptionConfig"></a>
 
 Contains encryption configuration for an Connect Customer instance.
 

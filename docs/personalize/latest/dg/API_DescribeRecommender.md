@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeRecomm
 ---
 
 # DescribeRecommender
-<a name="API_DescribeRecommender"></a>
 
 Describes the given recommender, including its status.
 

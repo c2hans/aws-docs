@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/limits.html
 ---
 
 # Quotas
-<a name="limits"></a>
 
 Learn about quotas when working with Amazon File Cache.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAthe
 ---
 
 # AwsAthenaWorkGroupConfigurationResultConfigurationDetails
-<a name="API_AwsAthenaWorkGroupConfigurationResultConfigurationDetails"></a>
 
  The location in Amazon Simple Storage Service (Amazon S3) where query and calculation results are stored and the encryption option, if any, used for query and calculation results. These are known as client-side settings. If workgroup settings override client-side settings, then the query uses the workgroup settings.
 

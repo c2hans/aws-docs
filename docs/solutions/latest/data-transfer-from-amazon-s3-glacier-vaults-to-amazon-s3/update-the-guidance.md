@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Update the Guidance
-<a name="update-the-guidance"></a>
 
  If you have previously deployed the Guidance, follow this procedure to update the CloudFormation stack to get the latest version of the Guidance’s framework.
 

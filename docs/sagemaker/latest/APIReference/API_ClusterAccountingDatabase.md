@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterAccountingDatabase
-<a name="API_ClusterAccountingDatabase"></a>
 
 The external MySQL-compatible database that the Slurm accounting daemon (`slurmdbd`) connects to for a SageMaker HyperPod cluster. You provide the database credentials in an AWS Secrets Manager secret instead of in the request.
 

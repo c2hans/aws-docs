@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListDe
 ---
 
 # ListDeviceFleets
-<a name="API_ListDeviceFleets"></a>
 
 Returns a list of devices in the fleet.
 

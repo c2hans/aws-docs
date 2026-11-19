@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_JiraClo
 ---
 
 # JiraCloudDetail
-<a name="API_JiraCloudDetail"></a>
 
 Information about the configuration and status of a Jira Cloud integration.
 

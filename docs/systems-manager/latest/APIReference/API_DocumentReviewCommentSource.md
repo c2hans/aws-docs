@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentReviewCommentSource
-<a name="API_DocumentReviewCommentSource"></a>
 
 Information about comments added to a document review request.
 

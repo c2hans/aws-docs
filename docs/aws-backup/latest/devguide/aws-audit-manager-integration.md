@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/aws-audit-man
 ---
 
 # Using AWS Backup Audit Manager with AWS Audit Manager
-<a name="aws-audit-manager-integration"></a>
 
 AWS Backup Audit Manager controls map to prebuilt, standard controls in AWS Audit Manager, allowing you to import your AWS Backup Audit Manager compliance findings to your AWS Audit Manager reports. You might want to do so to help a compliance officer, audit manager, or other colleague who reports on backup activity as part of your organization’s overall compliance posture.
 

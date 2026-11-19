@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_UntagR
 ---
 
 # UntagResource
-<a name="API_s3Buckets_UntagResource"></a>
 
 Removes the specified user-defined tags from an Amazon S3 Tables resource. You can pass one or more tag keys.
 

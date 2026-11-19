@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateOTAUpd
 ---
 
 # CreateOTAUpdate
-<a name="API_CreateOTAUpdate"></a>
 
 Creates an AWS IoT OTA update on a target group of things or groups.
 

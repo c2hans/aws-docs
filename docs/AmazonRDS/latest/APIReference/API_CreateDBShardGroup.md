@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateDBShardGroup
-<a name="API_CreateDBShardGroup"></a>
 
 Creates a new DB shard group for Aurora Limitless Database. You must enable Aurora Limitless Database to create a DB shard group.
 
@@ -108,7 +107,7 @@ Type: Double
 Indicates whether the DB shard group is publicly accessible.
 When the DB shard group is publicly accessible, its Domain Name System (DNS) endpoint resolves to the private IP address from within the DB shard group's virtual private cloud (VPC). It resolves to the public IP address from outside of the DB shard group's VPC. Access to the DB shard group is ultimately controlled by the security group it uses. That public access isn't permitted if the security group assigned to the DB shard group doesn't permit it.
 When the DB shard group isn't publicly accessible, it is an internal DB shard group with a DNS name that resolves to a private IP address.
-For more information, see [CreateDBShardGroup](#API_CreateDBShardGroup).
+For more information, see [CreateDBShardGroup](API_CreateDBShardGroup.md).
 This setting is only for Aurora Limitless Database.
 Type: Boolean
 

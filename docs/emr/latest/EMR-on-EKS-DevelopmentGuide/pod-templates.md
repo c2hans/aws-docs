@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/p
 ---
 
 # Using pod templates
-<a name="pod-templates"></a>
 
 Beginning with Amazon EMR versions 5.33.0 or 6.3.0, Amazon EMR on EKS supports Spark’s pod template feature. A pod is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers. Pod templates are specifications that determine how to run each pod. You can use pod template files to define the driver or executor pod’s configurations that Spark configurations do not support. For more information about the Spark’s pod template feature, see [Pod Template](https://spark.apache.org/docs/latest/running-on-kubernetes.html#pod-template).
 

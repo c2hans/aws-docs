@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3DirectTarget.ht
 ---
 
 # S3DirectTarget
-<a name="API_S3DirectTarget"></a>
 
 Specifies a data target that writes to Amazon S3.
 

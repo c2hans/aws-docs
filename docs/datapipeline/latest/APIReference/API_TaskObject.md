@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Tas
 ---
 
 # TaskObject
-<a name="API_TaskObject"></a>
 
 Contains information about a pipeline task that is assigned to a task runner.
 

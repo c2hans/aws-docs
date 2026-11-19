@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # StreamingConfiguration
-<a name="API_messaging-chime_StreamingConfiguration"></a>
 
 The configuration for connecting a messaging stream to Amazon Kinesis.
 

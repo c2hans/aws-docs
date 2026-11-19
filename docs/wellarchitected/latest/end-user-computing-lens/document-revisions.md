@@ -3,8 +3,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Document revisions
-<a name="document-revisions"></a>
 
 | Change | Description | Date |
 | --- |--- |--- |
-| [Initial release](#document-revisions) | Initial release of the EUC Lens. | September 18, 2025 |
+| [Initial release](document-revisions.md) | Initial release of the EUC Lens. | September 18, 2025 |

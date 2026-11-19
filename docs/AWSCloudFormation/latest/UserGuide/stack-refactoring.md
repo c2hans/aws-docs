@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack
 ---
 
 # Stack refactoring
-<a name="stack-refactoring"></a>
 
 With stack refactoring, you can reorganize resources in your CloudFormation stacks while preserving existing resource properties and data. You can move resources between stacks, split large stacks into smaller ones, or combine multiple stacks into one.
 

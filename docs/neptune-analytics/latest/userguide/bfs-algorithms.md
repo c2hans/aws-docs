@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bfs-a
 ---
 
 # Breadth-first search (BFS) path finding algorithms
-<a name="bfs-algorithms"></a>
 
 Breadth-first search (BFS) path-finding algorithms search for nodes in breadth-first order, starting from a single vertex. They can also, in the multi-source case, start from more than one vertex.
 

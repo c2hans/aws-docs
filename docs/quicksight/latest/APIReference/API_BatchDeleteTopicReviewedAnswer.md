@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Batch
 ---
 
 # BatchDeleteTopicReviewedAnswer
-<a name="API_BatchDeleteTopicReviewedAnswer"></a>
 
 Deletes reviewed answers for Q Topic.
 

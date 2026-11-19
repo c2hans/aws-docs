@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Choosing a migration tool for rehosting databases
-<a name="introduction"></a>
 
 *Mike Kuznetsov and Harpreet Virk, Amazon Web Services*
 

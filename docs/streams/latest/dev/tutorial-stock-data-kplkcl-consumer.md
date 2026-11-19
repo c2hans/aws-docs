@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 ---
 
 # Implement the consumer
-<a name="tutorial-stock-data-kplkcl-consumer"></a>
 
 The consumer application in the [Tutorial: Process real-time stock data using KPL and KCL 1.x](tutorial-stock-data-kplkcl.md) continuously processes the stock trades stream that you created in [[Implement the producer](tutorial-stock-data-kplkcl-producer.md)](tutorial-stock-data-kplkcl-producer.md). It then outputs the most popular stocks being bought and sold every minute. The application is built on top of the Kinesis Client Library (KCL), which does much of the heavy lifting common to consumer apps. For more information, see [Develop KCL 1.x consumers](developing-consumers-with-kcl.md).
 

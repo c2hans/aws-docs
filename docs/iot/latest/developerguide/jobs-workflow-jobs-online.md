@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-workflow-
 ---
 
 # Jobs workflow
-<a name="jobs-workflow-jobs-online"></a>
 
 The following shows the different steps in the jobs workflow from starting a new job to reporting the completion status of a job execution.
 

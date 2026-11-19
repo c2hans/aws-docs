@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/auto-os-patch-m
 ---
 
 # Considerations for multiple accounts
-<a name="auto-os-patch-multi-account"></a>
 
 When you run SAP workloads in AWS, you must consider an AWS account strategy that meets the security controls of your organization. For example, you might separate SAP from non-SAP workloads and separate production from non-production environments. AWS Systems Manager does not support multi-account patching.
 

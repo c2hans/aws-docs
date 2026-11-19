@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Stage 6 - Operational excellence
-<a name="stage-6-operational-excellence"></a>
 
 Amazon OpenSearch Service documentation has a dedicated section on [Operational best practices](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html). Topics include the following:
 + [Monitoring and alerting](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html#bp-monitoring)

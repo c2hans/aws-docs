@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Wor
 ---
 
 # WorkflowRunSummary
-<a name="API_WorkflowRunSummary"></a>
 
 Information about a workflow run.
 

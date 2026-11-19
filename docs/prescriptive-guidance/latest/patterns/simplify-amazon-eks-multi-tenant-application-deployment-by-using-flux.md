@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/si
 ---
 
 # Simplify Amazon EKS multi-tenant application deployment by using Flux
-<a name="simplify-amazon-eks-multi-tenant-application-deployment-by-using-flux"></a>
 
 *Nadeem Rahaman, Aditya Ambati, Aniket Dekate, and Shrikant Patil, Amazon Web Services*
 

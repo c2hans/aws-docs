@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-supported-time-z
 ---
 
 # Use supported time zones
-<a name="athena-supported-time-zones"></a>
 
 You can use the `AT TIME ZONE` operator in a `SELECT timestamp` statement to specify the timezone for the timestamp that is returned, as in the following example:
 

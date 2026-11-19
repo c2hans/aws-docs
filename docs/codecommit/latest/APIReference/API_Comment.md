@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Comme
 ---
 
 # Comment
-<a name="API_Comment"></a>
 
 Returns information about a specific comment.
 

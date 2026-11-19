@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Option.html
 ---
 
 # Option
-<a name="API_Option"></a>
 
 Specifies an option value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # SuggestQueryResult
-<a name="API_geoplaces_SuggestQueryResult"></a>
 
 The suggested query results.
 

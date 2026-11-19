@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ModifyReplicationGroup
-<a name="API_ModifyReplicationGroup"></a>
 
 Modifies the settings for a replication group. This is limited to Valkey and Redis OSS 7 and above.
 +  [Scaling for Valkey or Redis OSS (cluster mode enabled)](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/scaling-redis-cluster-mode-enabled.html) in the ElastiCache User Guide

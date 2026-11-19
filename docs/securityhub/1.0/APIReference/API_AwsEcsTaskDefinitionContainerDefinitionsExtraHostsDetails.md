@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetails"></a>
 
 A hostname and IP address mapping to append to the **/etc/hosts** file on the container.
 

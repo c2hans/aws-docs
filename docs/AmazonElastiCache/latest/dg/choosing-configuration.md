@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/choosing-con
 ---
 
 # Choosing the appropriate configuration
-<a name="choosing-configuration"></a>
 
 ## Choosing between Serverless and node-based
 <a name="serverless-or-node-based"></a>

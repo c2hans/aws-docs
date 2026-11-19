@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Agent
 ---
 
 # Agents
-<a name="Agents"></a>
 
 You can use *Agents* to monitor agent performance, track their decision-making processes, analyze conversation flows, and troubleshoot issues through comprehensive metrics and tracing. This includes monitoring both Amazon Bedrock AgentCore managed agents and self-hosted or third-party agents that emit telemetry data to CloudWatch.
 

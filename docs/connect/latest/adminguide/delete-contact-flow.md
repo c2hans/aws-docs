@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-contact
 ---
 
 # Archive, delete, and restore flows in Connect Customer
-<a name="delete-contact-flow"></a>
 
 Flows and modules must be archived before you can delete them from your Connect Customer instance. Archived flows and modules can be restored.
 

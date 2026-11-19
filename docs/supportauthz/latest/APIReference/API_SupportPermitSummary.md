@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Sup
 ---
 
 # SupportPermitSummary
-<a name="API_SupportPermitSummary"></a>
 
 A summary of a support permit.
 

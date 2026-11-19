@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_P
 ---
 
 # ProposedSegmentChange
-<a name="API_ProposedSegmentChange"></a>
 
 Describes a proposed segment change. In some cases, the segment change must first be evaluated and accepted.
 

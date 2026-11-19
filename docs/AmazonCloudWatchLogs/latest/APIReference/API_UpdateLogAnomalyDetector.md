@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # UpdateLogAnomalyDetector
-<a name="API_UpdateLogAnomalyDetector"></a>
 
 Updates an existing log anomaly detector.
 

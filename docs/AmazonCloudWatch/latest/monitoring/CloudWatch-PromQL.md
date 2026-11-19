@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Query metrics with PromQL
-<a name="CloudWatch-PromQL"></a>
 
 **Topics**
 + [What is Prometheus Query Language (PromQL)?](#CloudWatch-PromQL-WhatIs)

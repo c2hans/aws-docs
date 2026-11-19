@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetOnlineEvaluationConfig
-<a name="API_GetOnlineEvaluationConfig"></a>
 
  Retrieves detailed information about an online evaluation configuration, including its rules, data sources, evaluators, and execution status.
 

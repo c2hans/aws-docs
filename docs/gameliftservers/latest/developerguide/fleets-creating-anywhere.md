@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fl
 ---
 
 # Create an Amazon GameLift Servers Anywhere fleet
-<a name="fleets-creating-anywhere"></a>
 
 This topic describes how to create an Amazon GameLift Servers Anywhere fleet. With an Anywhere fleet, you can use core Amazon GameLift Servers game session management features while hosting game sessions with your own compute resources. Create an Anywhere fleet for your on-premises hardware or other cloud-based resources.
 

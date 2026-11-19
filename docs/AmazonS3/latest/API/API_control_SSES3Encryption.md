@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_SSES3Enc
 ---
 
 # SSES3Encryption
-<a name="API_control_SSES3Encryption"></a>
 
 Configuration for the use of SSE-S3 to encrypt generated manifest objects.
 

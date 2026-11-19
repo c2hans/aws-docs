@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CapacityProviderSc
 ---
 
 # CapacityProviderScalingConfig
-<a name="API_CapacityProviderScalingConfig"></a>
 
 Configuration that defines how the capacity provider scales compute instances based on demand and policies.
 

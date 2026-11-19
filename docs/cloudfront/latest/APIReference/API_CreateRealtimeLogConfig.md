@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateRealtimeLogConfig
-<a name="API_CreateRealtimeLogConfig"></a>
 
 Creates a real-time log configuration.
 

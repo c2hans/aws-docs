@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/getting-st
 ---
 
 # HelloWorld Application
-<a name="getting-started-example-helloworld"></a>
 
 To introduce the way Amazon SWF applications are structured, we'll create a Java application that behaves like a workflow, but that runs locally in a single process. No connection to Amazon Web Services will be needed.
 

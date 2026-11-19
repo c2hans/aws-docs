@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIBenc
 ---
 
 # AIBenchmarkInferenceComponent
-<a name="API_AIBenchmarkInferenceComponent"></a>
 
 An inference component to benchmark.
 

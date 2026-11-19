@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DescribeBackup
-<a name="API_DescribeBackup"></a>
 
 Describes an existing backup of a table.
 

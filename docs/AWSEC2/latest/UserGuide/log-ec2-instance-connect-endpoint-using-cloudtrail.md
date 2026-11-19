@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/log-ec2-instance
 ---
 
 # Log connections established over EC2 Instance Connect Endpoint
-<a name="log-ec2-instance-connect-endpoint-using-cloudtrail"></a>
 
 You can log resource operations and audit connections established over the EC2 Instance Connect Endpoint with AWS CloudTrail logs.
 

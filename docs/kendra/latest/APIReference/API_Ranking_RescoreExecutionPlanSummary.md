@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Ranking_R
 ---
 
 # RescoreExecutionPlanSummary
-<a name="API_Ranking_RescoreExecutionPlanSummary"></a>
 
 Summary information for a rescore execution plan. A rescore execution plan is an Amazon Kendra Intelligent Ranking resource used for provisioning the `Rescore` API.
 

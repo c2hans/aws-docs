@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutor
 ---
 
 # RDF load data formats
-<a name="bulk-load-tutorial-format-rdf"></a>
 
 To load Resource Description Framework (RDF) data, you can use one of the following standard formats as specified by the World Wide Web Consortium (W3C):
 + N-Triples (`ntriples`) from the specification at [https://www.w3.org/TR/n-triples/](https://www.w3.org/TR/n-triples/)

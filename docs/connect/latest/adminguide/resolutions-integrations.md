@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-in
 ---
 
 # Connect business applications
-<a name="resolutions-integrations"></a>
 
  Work plan Steps call your business applications through flow modules. A Step's **InvokeFlowModule** configuration names the module to run. The module uses the **External tool** flow block to call a third-party API, such as a CRM or an order management system, through an Amazon Bedrock AgentCore gateway. It returns the result to the Work plan as contact attributes.
 

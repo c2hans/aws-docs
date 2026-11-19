@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-ipv
 ---
 
 # Manage the IPv6 addresses for your EC2 instances
-<a name="working-with-ipv6-addresses"></a>
 
 If your VPC and subnet have IPv6 CIDR blocks associated with them, you can assign an IPv6 address to your instance during or after launch. You can access the IPv6 addresses for your instances in the console on either the **Instances** page or the **Network Interfaces** page. The following tasks configure IP addresses for your instances. To configure IP addresses for your network interfaces instead, see [Manage the IP addresses for your network interface](managing-network-interface-ip-addresses.md).
 

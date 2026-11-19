@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-replic
 ---
 
 # Performing an Oracle Data Guard switchover
-<a name="oracle-replication-switchover"></a>
 
 A *switchover* is a role reversal between a primary database and a standby database. During a switchover, the original primary database transitions to a standby role, while the original standby database transitions to the primary role.
 

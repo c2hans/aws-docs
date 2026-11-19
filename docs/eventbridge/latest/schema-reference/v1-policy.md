@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-p
 ---
 
 # Policy
-<a name="v1-policy"></a>
 
 The resource-based policy.
 

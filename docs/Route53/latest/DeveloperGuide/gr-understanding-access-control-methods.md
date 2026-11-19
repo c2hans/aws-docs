@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-underst
 ---
 
 # Access control methods
-<a name="gr-understanding-access-control-methods"></a>
 
 Route 53 Global Resolver offers two distinct authentication methods to control client access to your DNS infrastructure. Each method serves different use cases and environments.
 

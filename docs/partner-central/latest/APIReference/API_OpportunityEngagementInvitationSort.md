@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # OpportunityEngagementInvitationSort
-<a name="API_OpportunityEngagementInvitationSort"></a>
 
 Defines sorting options for retrieving Engagement Invitations. Sorting can be done based on various criteria like the invitation date or status.
 

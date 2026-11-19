@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/setup-in
 ---
 
 # Installing the AWS SDK for Ruby
-<a name="setup-install"></a>
 
 This section includes prerequisites and installation instructions for the AWS SDK for Ruby.
 

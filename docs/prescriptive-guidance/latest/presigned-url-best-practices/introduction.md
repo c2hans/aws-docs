@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Establishing guardrails and monitoring for presigned URLs
-<a name="introduction"></a>
 
 *Antonio Aga Rossi and Ed Gummett, Amazon Web Services*
 

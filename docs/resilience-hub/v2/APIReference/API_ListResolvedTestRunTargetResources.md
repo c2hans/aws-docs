@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListR
 ---
 
 # ListResolvedTestRunTargetResources
-<a name="API_ListResolvedTestRunTargetResources"></a>
 
 Lists the AWS resources that AWS Fault Injection Service (AWS FIS) resolved as targets for a test run.
 

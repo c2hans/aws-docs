@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolInstan
 ---
 
 # GetSolInstantiatedVnfInfo
-<a name="API_GetSolInstantiatedVnfInfo"></a>
 
 Information about a network function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UserTurnSl
 ---
 
 # UserTurnSlotOutput
-<a name="API_UserTurnSlotOutput"></a>
 
 Contains information about a slot output by the test set execution.
 
@@ -12,7 +11,7 @@ Contains information about a slot output by the test set execution.
 
  ** subSlots **   <a name="lexv2-Type-UserTurnSlotOutput-subSlots"></a>
 A list of items mapping the name of the subslots to information about those subslots.
-Type: String to [UserTurnSlotOutput](#API_UserTurnSlotOutput) object map
+Type: String to [UserTurnSlotOutput](API_UserTurnSlotOutput.md) object map
 Key Length Constraints: Minimum length of 1. Maximum length of 100.
 Key Pattern: `^([0-9a-zA-Z][_-]?){1,100}$`
 Required: No
@@ -25,7 +24,7 @@ Required: No
 
  ** values **   <a name="lexv2-Type-UserTurnSlotOutput-values"></a>
 Values that are output by the slot recognition.
-Type: Array of [UserTurnSlotOutput](#API_UserTurnSlotOutput) objects
+Type: Array of [UserTurnSlotOutput](API_UserTurnSlotOutput.md) objects
 Required: No
 
 ## See Also

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/cluster-subnets-securi
 ---
 
 # Updating control plane subnets and security groups
-<a name="cluster-subnets-security-groups"></a>
 
 This documentation explains how to modify the networking configuration of your EKS cluster’s control plane after initial creation. This includes updating the control plane subnets and security groups.
 

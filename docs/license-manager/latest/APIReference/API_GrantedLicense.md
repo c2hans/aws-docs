@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # GrantedLicense
-<a name="API_GrantedLicense"></a>
 
 Describes a license that is granted to a grantee.
 

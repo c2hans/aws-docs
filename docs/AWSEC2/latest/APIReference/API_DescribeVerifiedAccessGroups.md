@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVerifiedAccessGroups
-<a name="API_DescribeVerifiedAccessGroups"></a>
 
 Describes the specified Verified Access groups.
 

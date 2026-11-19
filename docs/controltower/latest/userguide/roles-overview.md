@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/roles-over
 ---
 
 # Required roles and permissions
-<a name="roles-overview"></a>
 
 AWS Control Tower uses IAM roles to help manage access to resources.
 

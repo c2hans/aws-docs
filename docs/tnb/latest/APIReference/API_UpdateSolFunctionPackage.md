@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_UpdateSolFun
 ---
 
 # UpdateSolFunctionPackage
-<a name="API_UpdateSolFunctionPackage"></a>
 
 Updates the operational state of function package.
 

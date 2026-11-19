@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_CampaignConfig
 ---
 
 # CampaignConfig
-<a name="API_CampaignConfig"></a>
 
 The configuration details of a campaign.
 

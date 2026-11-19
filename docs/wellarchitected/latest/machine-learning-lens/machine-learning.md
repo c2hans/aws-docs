@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Well-Architected machine learning
-<a name="machine-learning"></a>
 
  The six phases for the ML lifecycle referenced in this lens are illustrated in Figure 2 in a sequence.
 

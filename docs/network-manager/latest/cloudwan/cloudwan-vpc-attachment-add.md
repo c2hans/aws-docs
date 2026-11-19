@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Create a VPC attachment for an AWS Cloud WAN core network
-<a name="cloudwan-vpc-attachment-add"></a>
 
 ## Create a VPC attachment using the console
 <a name="cloudwan-vpc-attachment-console"></a>

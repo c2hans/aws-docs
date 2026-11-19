@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostAmount
-<a name="API_AWSBCMPricingCalculator_CostAmount"></a>
 
  Represents a monetary amount with associated currency.
 

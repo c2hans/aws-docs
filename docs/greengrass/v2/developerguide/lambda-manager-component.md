@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-mana
 ---
 
 # Lambda manager
-<a name="lambda-manager-component"></a>
 
 The Lambda manager component (`aws.greengrass.LambdaManager`) manages work items and interprocess communication for AWS Lambda functions that run on the Greengrass core device.
 

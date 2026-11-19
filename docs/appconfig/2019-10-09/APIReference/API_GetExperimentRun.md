@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetExperimentRun
-<a name="API_GetExperimentRun"></a>
 
 Retrieves information about an experiment run, including its status, start time, and exposure settings.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codewhisperer/latest/userguide/whisper-l
 CodeWhisperer's features are becoming a part of Amazon Q Developer. [Learn more](whisper-legacy.md)
 
 # CodeWhisperer is becoming a part of Amazon Q Developer
-<a name="whisper-legacy"></a>
 
 All of the features of CodeWhisperer are moving to Amazon Q Developer. The purpose of this section is to explain the relationship between CodeWhisperer and Amazon Q Developer.
 

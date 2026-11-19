@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 ---
 
 # Data retrieval APIs for AWS Private CA Connector for SCEP
-<a name="awsprivatecaconnectorforscep"></a>
 
 AWS Private CA Connector for SCEP provides the following APIs for data retrieval.
 

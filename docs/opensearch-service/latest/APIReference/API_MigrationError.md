@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # MigrationError
-<a name="API_MigrationError"></a>
 
 Contains error details for a migration that failed or completed with errors.
 

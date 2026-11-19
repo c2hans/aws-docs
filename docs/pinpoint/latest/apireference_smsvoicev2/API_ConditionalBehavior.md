@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ConditionalBehavior
-<a name="API_ConditionalBehavior"></a>
 
 The set of conditional rules that determine a field's resolved requirement based on the values of other fields in the same registration form. Attached to fields whose **FieldRequirement** is **CONDITIONAL**.
 

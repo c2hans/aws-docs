@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Single-row and aggregate Oracle and MySQL functions
-<a name="chap-oracle-aurora-mysql.sql.aggregate"></a>
 
 Single-row and aggregate functions are essential SQL constructs that perform operations on individual rows or groups of rows, respectively. The following sections compare Oracle and MySQL single-row and aggregate functions.
 

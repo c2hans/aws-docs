@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_FunctionRev
 ---
 
 # FunctionRevisionSummary
-<a name="API_FunctionRevisionSummary"></a>
 
 A summary of a web function revision.
 

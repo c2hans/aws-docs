@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/dicomweb-r
 ---
 
 # Getting DICOM instance frames from HealthImaging
-<a name="dicomweb-retrieve-instance-frames"></a>
 
 Use the `GetDICOMInstanceFrames` action to retrieve single or batch image frames (`multipart` request) from a DICOM instance in a HealthImaging [data store](getting-started-concepts.md#concept-data-store) by specifying the Series UID, Study UID, Instance UIDs, and frame numbers associated with a resource. You can specify the [image set](getting-started-concepts.md#concept-image-set) from which instance frames should be retrieved by providing the image set ID as a query parameter. The API will only return instance frames from primary image sets unless the optional [image set](getting-started-concepts.md#concept-image-set) parameter is provided. You can retrieve any instance frame (from primary or non-primary image sets) in the data store by specifying the `imageSetId` as a query parameter.
 

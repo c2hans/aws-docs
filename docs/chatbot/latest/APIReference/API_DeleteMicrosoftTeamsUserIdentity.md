@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_DeleteMi
 ---
 
 # DeleteMicrosoftTeamsUserIdentity
-<a name="API_DeleteMicrosoftTeamsUserIdentity"></a>
 
 Identifes a user level permission for a channel configuration.
 

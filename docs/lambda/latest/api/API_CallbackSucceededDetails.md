@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CallbackSucceededD
 ---
 
 # CallbackSucceededDetails
-<a name="API_CallbackSucceededDetails"></a>
 
 Contains details about a successfully completed callback operation, including the result data and completion timestamp.
 

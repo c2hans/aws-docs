@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationDiscoveryServiceFullAccess
-<a name="AWSApplicationDiscoveryServiceFullAccess"></a>
 
 **Description**: Provides full access to view and tag Configuration Items maintained by the AWS Application Discovery Service
 

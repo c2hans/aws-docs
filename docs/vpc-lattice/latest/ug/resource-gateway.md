@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/resource-gateway.h
 ---
 
 # Resource gateways in VPC Lattice
-<a name="resource-gateway"></a>
 
 A *resource gateway* is the point that receives traffic into the VPC where a resource resides. It spans multiple Availability Zones.
 

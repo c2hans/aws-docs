@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/crowd
 ---
 
 # CloudWatch pipelines configuration for CrowdStrike
-<a name="crowdstrike-pipeline-setup"></a>
 
 The CrowdStrike setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 

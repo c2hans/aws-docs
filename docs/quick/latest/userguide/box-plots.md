@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/box-plots.html
 ---
 
 # Using box plots
-<a name="box-plots"></a>
 
 *Box plots*, also known as box and whisker plots, display data pooled from multiple sources into one visual, helping you make data-driven decisions. Use a box plot to visualize how data is distributed across an axis or over time, for example flights delayed over a 7-day time period. Typically, a box plot details information in quarters:
 + **Minimum** – The lowest data point excluding outliers.

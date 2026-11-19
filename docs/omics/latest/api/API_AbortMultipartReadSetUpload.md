@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_AbortMultipartReadS
 ---
 
 # AbortMultipartReadSetUpload
-<a name="API_AbortMultipartReadSetUpload"></a>
 
 Stops a multipart read set upload into a sequence store and returns a response with no body if the operation is successful. To confirm that a multipart read set upload has been stopped, use the `ListMultipartReadSetUploads` API operation to view all active multipart read set uploads.
 

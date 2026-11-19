@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Securit
 ---
 
 # SecurityGroupMembership
-<a name="API_SecurityGroupMembership"></a>
 
 Represents a single security group and its status.
 

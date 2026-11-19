@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateDisk
-<a name="API_CreateDisk"></a>
 
 Creates a block storage disk that can be attached to an Amazon Lightsail instance in the same Availability Zone (`us-east-2a`).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/service-tiers-i
 ---
 
 # Service tiers for optimizing performance and cost
-<a name="service-tiers-inference"></a>
 
 Amazon Bedrock offers four service tiers for model inference: Reserved, Priority, Standard, and Flex. With service tiers, you can optimize for availability, cost, and performance.
 

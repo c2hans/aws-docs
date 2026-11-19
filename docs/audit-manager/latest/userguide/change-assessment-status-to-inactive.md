@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/change-as
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Changing the status of an assessment to inactive in AWS Audit Manager
-<a name="change-assessment-status-to-inactive"></a>
 
 When you no longer need to collect evidence for an assessment, you can change the assessment status to *Inactive*. When the status of an assessment changes to inactive, the assessment stops collecting evidence. As a result, you no longer incur any charges for that assessment.
 

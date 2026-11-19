@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CertificateV
 ---
 
 # CertificateValidity
-<a name="API_CertificateValidity"></a>
 
 When the certificate is valid.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Telemetry pipeline troubleshooting
-<a name="telemetry-pipeline-troubleshooting"></a>
 
 ## Problem: IoT Rule not routing messages to MSK
 <a name="problem-iot-rule-not-routing"></a>

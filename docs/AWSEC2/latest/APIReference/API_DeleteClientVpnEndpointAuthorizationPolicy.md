@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCli
 ---
 
 # DeleteClientVpnEndpointAuthorizationPolicy
-<a name="API_DeleteClientVpnEndpointAuthorizationPolicy"></a>
 
 Deletes the authorization policy for a Client VPN endpoint.
 

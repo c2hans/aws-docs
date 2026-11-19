@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Create a DynamoDB item with a TTL using an AWS SDK
-<a name="example_dynamodb_PutItemTTL_section"></a>
 
 The following code examples show how to create an item with TTL.
 

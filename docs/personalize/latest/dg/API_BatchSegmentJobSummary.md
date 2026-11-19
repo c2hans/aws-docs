@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_BatchSegmentJo
 ---
 
 # BatchSegmentJobSummary
-<a name="API_BatchSegmentJobSummary"></a>
 
 A truncated version of the [BatchSegmentJob](https://docs.aws.amazon.com/personalize/latest/dg/API_BatchSegmentJob.html) datatype. [ListBatchSegmentJobs](https://docs.aws.amazon.com/personalize/latest/dg/API_ListBatchSegmentJobs.html) operation returns a list of batch segment job summaries.
 

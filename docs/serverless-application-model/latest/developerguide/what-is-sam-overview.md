@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # How AWS SAM works
-<a name="what-is-sam-overview"></a>
 
 When working with AWS SAM to create your serverless application, you will interact with the following components:
 

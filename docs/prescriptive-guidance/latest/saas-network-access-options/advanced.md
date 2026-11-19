@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Advanced networking access scenarios for SaaS offerings in the AWS Cloud
-<a name="advanced"></a>
 
 The architectures discussed in the [Networking access scenarios for SaaS offerings in the AWS Cloud](options.md) section should help you find a solution for the majority of use cases. However, there are some scenarios that have specific technical requirements. Many are beyond the scope of this guide.
 

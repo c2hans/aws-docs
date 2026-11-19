@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/managing-tr
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 Analyze your most-used components first. In a distributed system, in-house shared packages often have many components depending on them. A transitive dependency conflict in one of these shared packages can block progress across every component that uses it.
 

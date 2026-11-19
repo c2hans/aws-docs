@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/mpts-design-step
 ---
 
 # Creating a standard MPTS
-<a name="mpts-design-step-channels"></a>
 
 This section describes how to create a standard MPTS. A standard MPTS is one where each STPS programs comes from a channel that is run on an Elemental Live node in the cluster. The SPTS programs can be any mix of VBR and CBR programs. The MPTS is fixed bandwidth, but the programs can be a mix of VBR and CBR programs.
 

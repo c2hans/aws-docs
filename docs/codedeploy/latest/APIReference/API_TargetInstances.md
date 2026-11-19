@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Targe
 ---
 
 # TargetInstances
-<a name="API_TargetInstances"></a>
 
 Information about the instances to be used in the replacement environment in a blue/green deployment.
 

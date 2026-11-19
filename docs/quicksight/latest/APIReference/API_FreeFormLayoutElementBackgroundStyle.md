@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FreeF
 ---
 
 # FreeFormLayoutElementBackgroundStyle
-<a name="API_FreeFormLayoutElementBackgroundStyle"></a>
 
 The background style configuration of a free-form layout element.
 

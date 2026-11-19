@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/self-ma
 ---
 
 # Self-managed license reports
-<a name="self-managed-license-reports"></a>
 
 Self-managed license reports provide periodic snapshots of your license usage. You can set up multiple usage reports to track different license types in your environment with automated publishing to Amazon S3 buckets.
 

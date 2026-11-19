@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Li
 ---
 
 # ListDataGrants
-<a name="API_ListDataGrants"></a>
 
 This operation returns information about all data grants.
 

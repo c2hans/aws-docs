@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_NodegroupHea
 ---
 
 # NodegroupHealth
-<a name="API_NodegroupHealth"></a>
 
 An object representing the health status of the node group.
 

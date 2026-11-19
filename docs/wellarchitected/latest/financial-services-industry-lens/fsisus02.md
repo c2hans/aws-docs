@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSISUS02: How do you address data sovereignty regulations for location of sustainable Region?
-<a name="fsisus02"></a>
 
  While selection of low-carbon Regions is generally recommended for processing of financial data, sometimes data residency requirements stipulate the use of higher carbon storage.
 

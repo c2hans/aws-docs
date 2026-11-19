@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Aggregation
 ---
 
 # AggregationConfig
-<a name="API_AggregationConfig"></a>
 
  The aggregation settings that you can use to customize the output format of your flow data.
 

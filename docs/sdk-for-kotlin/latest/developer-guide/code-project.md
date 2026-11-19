@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/co
 ---
 
 # Code your Kotlin project using the SDK for Kotlin
-<a name="code-project"></a>
 
 Now the fun begins. As you develop your application, you can refer to the [AWS SDK for Kotlin API Reference](/sdk-for-kotlin/api/latest/index.html) for complete information on the API operations. Use the following links for general Kotlin API information:
 +  [Standard library API reference](https://kotlinlang.org/api/latest/jvm/stdlib/)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CheckDetail
-<a name="API_CheckDetail"></a>
 
 Account details for a Well-Architected best practice in relation to Trusted Advisor checks.
 

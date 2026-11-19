@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Tr
 ---
 
 # TreatmentInput
-<a name="API_TreatmentInput"></a>
 
 Input structure for defining a treatment when creating or updating an experiment definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/encryption-
 ---
 
 # Encryption in transit
-<a name="encryption-in-transit"></a>
 
 AWS IoT Greengrass has two modes of communication where data is in transit:
 + [Data in transit over the internet](#data-in-transit-internet). Communication between a Greengrass core and AWS IoT Greengrass over the internet is encrypted.

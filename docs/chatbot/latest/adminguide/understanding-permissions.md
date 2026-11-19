@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/understanding-
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Understanding Amazon Q Developer in chat applications permissions
-<a name="understanding-permissions"></a>
 
 Amazon Q Developer in chat applications requires an AWS Identity and Access Management (IAM) role to [perform actions](performing-actions.md). Actions you can perform in your chat channels include running commands and responding to interactive messages. Amazon Q Developer in chat applications uses organization policies, service policies, channel roles, user roles, and channel guardrail policies to control the actions channel members can take. What your users can do is the intersection of your guardrail policies and what is allowed by their roles.
 

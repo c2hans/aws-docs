@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_KeyUsa
 ---
 
 # KeyUsage
-<a name="API_KeyUsage"></a>
 
 Defines one or more purposes for which the key contained in the certificate can be used. Default value for each option is false.
 

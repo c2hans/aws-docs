@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/mi
 ---
 
 # Migration Lens - AWS Well-Architected Framework
-<a name="migration-lens"></a>
 
 Publication date: **January 24, 2024** ([Document revisions](document-revisions.md))
 

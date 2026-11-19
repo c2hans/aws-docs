@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Fai
 ---
 
 # FailureDetails
-<a name="API_FailureDetails"></a>
 
 Represents information about failure details.
 

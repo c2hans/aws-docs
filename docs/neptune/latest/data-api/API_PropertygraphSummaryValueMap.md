@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_Propertygrap
 ---
 
 # PropertygraphSummaryValueMap
-<a name="API_PropertygraphSummaryValueMap"></a>
 
 Payload for the property graph summary response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Inserting the CloudWatch app monitor code snippet into your application
-<a name="CloudWatch-RUM-get-started-insert-code-snippet"></a>
 
 Next, you insert the code snippet that you created in the previous section into your application.
 

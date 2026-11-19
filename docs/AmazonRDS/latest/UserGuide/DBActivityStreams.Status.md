@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/DBActivityStr
 ---
 
 # Getting the status of a database activity stream
-<a name="DBActivityStreams.Status"></a>
 
 You can get the status of an activity stream for your Amazon RDS database instance using the console or AWS CLI.
 

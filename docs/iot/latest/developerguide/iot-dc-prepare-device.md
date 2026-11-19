@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-dc-prepare
 ---
 
 # Tutorial: Preparing your devices for the AWS IoT Device Client
-<a name="iot-dc-prepare-device"></a>
 
 This tutorial walks you through the initialization of your Raspberry Pi to prepare it for the subsequent tutorials in this learning path.
 

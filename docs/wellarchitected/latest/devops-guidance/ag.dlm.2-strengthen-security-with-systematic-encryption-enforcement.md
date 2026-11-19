@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DLM.2] Strengthen security with systematic encryption enforcement
-<a name="ag.dlm.2-strengthen-security-with-systematic-encryption-enforcement"></a>
 
  **Category:** FOUNDATIONAL
 

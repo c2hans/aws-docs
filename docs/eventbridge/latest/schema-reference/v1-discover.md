@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-d
 ---
 
 # Discover
-<a name="v1-discover"></a>
 
 Allows you get the discovered schemas that have been inferred from events on an event bus.
 

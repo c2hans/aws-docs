@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Tagging your directory
-<a name="ad_connector_tag_directory"></a>
 
 Tags are key-value pairs that you can assign to your Directory Service directories to help you organize and manage your resources. You can use tags to categorize directories by purpose, environment, cost allocation, and other criteria. Each tag consists of a required tag key and an optional tag value. Tag keys must be unique for each directory.
 

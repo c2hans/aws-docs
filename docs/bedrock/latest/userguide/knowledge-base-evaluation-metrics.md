@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Use metrics to understand RAG system performance
-<a name="knowledge-base-evaluation-metrics"></a>
 
 When you run a RAG evaluation job, the evaluator model you select uses a set of metrics to characterize the performance of the RAG systems being evaluated. Amazon Bedrock provides a number of built-in metrics you can choose from, or you can define your own metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_PieCh
 ---
 
 # PieChartAggregatedFieldWells
-<a name="API_PieChartAggregatedFieldWells"></a>
 
 The field well configuration of a pie chart.
 

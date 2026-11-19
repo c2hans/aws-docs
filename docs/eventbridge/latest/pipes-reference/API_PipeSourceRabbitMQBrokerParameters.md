@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeSourceRabbitMQBrokerParameters
-<a name="API_PipeSourceRabbitMQBrokerParameters"></a>
 
 The parameters for using a Rabbit MQ broker as a source.
 

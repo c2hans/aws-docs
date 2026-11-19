@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Appro
 ---
 
 # ApprovalStateChangedEventMetadata
-<a name="API_ApprovalStateChangedEventMetadata"></a>
 
 Returns information about a change in the approval state for a pull request.
 

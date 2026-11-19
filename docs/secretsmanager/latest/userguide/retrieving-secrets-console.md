@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # Get a secret value using the AWS console
-<a name="retrieving-secrets-console"></a>
 
 **To retrieve a secret (console)**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_RestoreD
 ---
 
 # RestoreDeadLetterQueueRecordsErrorEntry
-<a name="API_RestoreDeadLetterQueueRecordsErrorEntry"></a>
 
 A dead-letter record that was not restored, and why.
 

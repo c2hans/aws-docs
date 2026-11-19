@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_OrcSerD
 ---
 
 # OrcSerDe
-<a name="API_OrcSerDe"></a>
 
 A serializer to use for converting data to the ORC format before storing it in Amazon S3. For more information, see [Apache ORC](https://orc.apache.org/docs/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-message-analysis-
 ---
 
 # Analyzing Amazon SNS messages for OpenSearch Service destinations
-<a name="firehose-message-analysis-elasticsearch"></a>
 
 This topic explains how to analyze Amazon SNS messages sent through delivery streams to Amazon OpenSearch Service (OpenSearch Service) destinations.
 

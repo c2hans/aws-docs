@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-api-sta
 ---
 
 # Gremlin query status API
-<a name="gremlin-api-status"></a>
 
 You can list all active Gremlin queries or get the status of a specific query. The underlying HTTP endpoint for both operations is `https://{{your-neptune-endpoint}}:{{port}}/gremlin/status`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/channels-sms-awssupport-sp
 ---
 
 # Requesting increases to your monthly Amazon SNS SMS spending quota
-<a name="channels-sms-awssupport-spend-threshold"></a>
 
 Amazon SNS provides spending quotas to help you manage the per-month cost of sending SMS. The spending quota limits your risk in case of malicious attack. It also prevents your upstream application from sending more messages than expected. You can configure Amazon SNS to stop publishing SMS messages when sending them would exceed your spending quota for the current month.
 

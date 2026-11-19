@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/working-wit
 ---
 
 # AWS Entity Resolution in AWS Clean Rooms
-<a name="working-with-entity-resolution"></a>
 
 With AWS Entity Resolution in AWS Clean Rooms, you can translate data from a source to a target, populate an ID mapping table with the translated data, and query the data.
 

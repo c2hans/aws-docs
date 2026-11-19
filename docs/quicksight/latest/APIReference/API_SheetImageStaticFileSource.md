@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetImageStaticFileSource
-<a name="API_SheetImageStaticFileSource"></a>
 
 The source of the static file that contains the image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # Experimentation terminology
-<a name="appconfig-experimentation-terminology"></a>
 
 Familiarize yourself with the following terminology and concepts before you begin working with AWS AppConfig experimentation.
 

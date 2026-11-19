@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/slurm-protecte
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Slurm cluster protected mode
-<a name="slurm-protected-mode-v3"></a>
 
 When a cluster runs with protected mode enabled, AWS ParallelCluster monitors and tracks compute node bootstrap failures as the compute nodes are being launched. It does this to detect whether these failures are occurring continuously.
 

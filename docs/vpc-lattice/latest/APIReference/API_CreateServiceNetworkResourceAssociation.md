@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Crea
 ---
 
 # CreateServiceNetworkResourceAssociation
-<a name="API_CreateServiceNetworkResourceAssociation"></a>
 
 Associates the specified service network with the specified resource configuration. This allows the resource configuration to receive connections through the service network, including through a service network VPC endpoint.
 

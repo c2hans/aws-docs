@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/samples-and-examples.htm
 ---
 
 # Sample code and applications for Amazon Polly
-<a name="samples-and-examples"></a>
 
 This section provides code samples and example applications that you can use to explore Amazon Polly.
 

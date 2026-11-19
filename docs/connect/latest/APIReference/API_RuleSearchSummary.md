@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleSear
 ---
 
 # RuleSearchSummary
-<a name="API_RuleSearchSummary"></a>
 
 A summary of information about a rule, returned as part of the response to a `SearchRules` operation.
 

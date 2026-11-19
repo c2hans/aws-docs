@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeConfigurationRecorderStatus
-<a name="API_DescribeConfigurationRecorderStatus"></a>
 
 Returns the current status of the configuration recorder you specify as well as the status of the last recording event for the configuration recorders.
 

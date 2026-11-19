@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_C
 ---
 
 # CrossAccountReplicaEntry
-<a name="API_CrossAccountReplicaEntry"></a>
 
 Information about a cross-account replica secret. This information is only available for cross-account primary secrets.
 

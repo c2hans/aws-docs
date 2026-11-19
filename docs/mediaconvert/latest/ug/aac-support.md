@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/aac-support.html
 ---
 
 # AAC output reference tables
-<a name="aac-support"></a>
 
 This topic covers AAC audio codec support and lists the supported combinations of coding mode, profile, sampling rate, and bitrate.
 

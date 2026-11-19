@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/webauthn_sup
 ---
 
 # WebAuthn authentication for WorkSpaces client
-<a name="webauthn_support"></a>
 
 In-session WebAuthn authentication is supported using the DCV for Windows and Linux WorkSpaces, on Windows, Linux and macOS clients. WorkSpaces using the PCoIP protocol doesn't support WebAuthn redirection.
 

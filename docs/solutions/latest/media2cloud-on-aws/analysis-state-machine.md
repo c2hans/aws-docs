@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/anal
 ---
 
 # Analysis state machine
-<a name="analysis-state-machine"></a>
 
  The Media2Cloud on AWS solution includes an analysis state machine that is composed of four different AWS Step Functions sub-state machines and a set of AWS Lambda functions that start, monitor, and collect results from the sub-state machines. The analysis state machine consists of the following sub-state machines:
 +  A video analysis sub-state machine that manages the video-based analysis process

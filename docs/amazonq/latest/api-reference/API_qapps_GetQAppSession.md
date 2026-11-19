@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_G
 ---
 
 # GetQAppSession
-<a name="API_qapps_GetQAppSession"></a>
 
 Retrieves the current state and results for an active session of an Amazon Q App.
 

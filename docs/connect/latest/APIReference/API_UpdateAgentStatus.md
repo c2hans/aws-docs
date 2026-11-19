@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateAg
 ---
 
 # UpdateAgentStatus
-<a name="API_UpdateAgentStatus"></a>
 
 Updates agent status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # View and manage project details
-<a name="view-manage-project-details-idc"></a>
 
 Project details include storage configuration, execution role assignments, and member information that determine how resources within the project operate.
 

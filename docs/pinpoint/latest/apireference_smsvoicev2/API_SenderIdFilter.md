@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SenderIdFilter
-<a name="API_SenderIdFilter"></a>
 
 The information for a sender ID that meets a specified criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS CloudFormation
-<a name="awscloudformation"></a>
 
 AWS CloudFormation provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ProgramClock
 ---
 
 # ProgramClockReferencePidConfiguration
-<a name="API_ProgramClockReferencePidConfiguration"></a>
 
 The configuration settings for the Program Clock Reference (PCR) Packet ID (PID).
 

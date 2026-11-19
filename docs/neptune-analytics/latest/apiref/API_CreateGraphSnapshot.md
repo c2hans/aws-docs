@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Crea
 ---
 
 # CreateGraphSnapshot
-<a name="API_CreateGraphSnapshot"></a>
 
 Creates a snapshot of the specific graph.
 

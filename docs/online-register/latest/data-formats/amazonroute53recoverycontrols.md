@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Route 53 Recovery Controls
-<a name="amazonroute53recoverycontrols"></a>
 
 Amazon Route 53 Recovery Controls provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/A
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [GetAccountCustomizations](API_GetAccountCustomizations.md)

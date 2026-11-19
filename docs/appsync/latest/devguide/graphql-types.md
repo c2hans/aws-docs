@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/graphql-types.ht
 ---
 
 # GraphQL types
-<a name="graphql-types"></a>
 
 GraphQL supports many different types. As you saw in the previous section, types define the shape or behavior of your data. They are the fundamental building blocks of a GraphQL schema.
 

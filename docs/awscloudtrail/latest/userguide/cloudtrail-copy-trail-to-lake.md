@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Copying trail events to CloudTrail Lake
-<a name="cloudtrail-copy-trail-to-lake"></a>
 
 You can copy existing trail events to a CloudTrail Lake event data store to create a point-in-time snapshot of events logged to the trail. Copying trail events does not interfere with the trail's ability to log events and does not modify the trail in any way.
 

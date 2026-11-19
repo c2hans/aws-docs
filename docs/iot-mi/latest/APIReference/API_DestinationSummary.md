@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Destinati
 ---
 
 # DestinationSummary
-<a name="API_DestinationSummary"></a>
 
 Structure describing a destination for IoT managed integrations to deliver notifications for a device.
 

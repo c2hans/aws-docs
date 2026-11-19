@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/flows-create-stan
 ---
 
 # Creating a transport stream flow that uses a standard source
-<a name="flows-create-standard-source"></a>
 
 Transport stream flows transport compressed content that is muxed into a single stream.
 
-A flow uses a *standard* source when the content comes from anywhere other than a VPC ([VPC source](flows-create-vpc-source.md)) or another AWS account ([entitled source](#flows-create-standard-source)).
+A flow uses a *standard* source when the content comes from anywhere other than a VPC ([VPC source](flows-create-vpc-source.md)) or another AWS account ([entitled source](flows-create-standard-source.md)).
 
 ## Prerequisites
 <a name="flows-create-standard-source-prerequisites"></a>

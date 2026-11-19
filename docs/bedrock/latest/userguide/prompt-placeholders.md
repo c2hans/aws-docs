@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-placehol
 ---
 
 # Use placeholder variables in Amazon Bedrock agent prompt templates
-<a name="prompt-placeholders"></a>
 
 You can use placeholder variables in agent prompt templates. The variables will be populated by pre-existing configurations when the prompt template is called. Select a tab to see variables that you can use for each prompt template.
 

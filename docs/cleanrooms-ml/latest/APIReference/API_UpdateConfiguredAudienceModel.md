@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Up
 ---
 
 # UpdateConfiguredAudienceModel
-<a name="API_UpdateConfiguredAudienceModel"></a>
 
 Provides the information necessary to update a configured audience model. Updates that impact audience generation jobs take effect when a new job starts, but do not impact currently running jobs.
 

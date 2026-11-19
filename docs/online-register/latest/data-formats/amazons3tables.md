@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon S3 Tables
-<a name="amazons3tables"></a>
 
 Amazon S3 Tables provides the following APIs for data retrieval.
 

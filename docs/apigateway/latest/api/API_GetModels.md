@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetModels.html
 ---
 
 # GetModels
-<a name="API_GetModels"></a>
 
 Describes existing Models defined for a RestApi resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Amazon GameLift Servers pricing and cost planning
-<a name="gamelift-intro-pricing"></a>
 
 Understanding the Amazon GameLift Servers pricing structure and implementing cost-effective strategies in your game hosting solution is essential for optimizing your gaming infrastructure budget. For detailed service information, including example pricing scenarios and pricing tools, see [Amazon GameLift Servers Pricing](https://aws.amazon.com/gamelift/pricing/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Run a test scenario
-<a name="run-test-scenario"></a>
 
 After creating a test scenario, you can run it immediately or schedule it to run at a specific time in the future. When you navigate to a running test, the console displays the Scenario Details tab with real-time task status and metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Lis
 ---
 
 # ListChannels
-<a name="API_ListChannels"></a>
 
 Retrieves all channels in a specific channel group that are configured in AWS Elemental MediaPackage.
 

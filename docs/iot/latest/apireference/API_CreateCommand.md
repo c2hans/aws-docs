@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateComman
 ---
 
 # CreateCommand
-<a name="API_CreateCommand"></a>
 
 Creates a command. A command contains reusable configurations that can be applied before they are sent to the devices.
 

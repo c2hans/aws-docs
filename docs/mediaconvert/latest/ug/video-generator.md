@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/video-generator.h
 ---
 
 # Generating black video
-<a name="video-generator"></a>
 
 This guide shows you how to generate black video with AWS Elemental MediaConvert. To generate black video, you can add an input and include **Video generator**, or create a video output from an input that doesn't have video.
 

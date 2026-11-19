@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html
 ---
 
 # Invoking Lambda with events from other AWS services
-<a name="lambda-services"></a>
 
 Some AWS services can directly invoke Lambda Event Functions using *triggers*. These services push events to Lambda, and the function is invoked immediately when the specified event occurs. Triggers are suitable for discrete events and real-time processing. When you [create a trigger using the Lambda console](#lambda-invocation-trigger), the console interacts with the corresponding AWS service to configure the event notification on that service. The trigger is actually stored and managed by the service that generates the events, not by Lambda.
 

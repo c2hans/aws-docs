@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-explain-
 ---
 
 # Limitations of SPARQL `explain` in Neptune
-<a name="sparql-explain-limitations"></a>
 
 The release of the Neptune SPARQL `explain` feature has the following limitations.
 

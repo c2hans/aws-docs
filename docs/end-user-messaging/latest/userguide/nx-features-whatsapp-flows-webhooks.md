@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Receiving Flow responses and status changes
-<a name="nx-features-whatsapp-flows-webhooks"></a>
 
 When a user completes a Flow or when a Flow's status changes, AWS End User Messaging delivers webhook notifications through your existing configured event destination. No additional setup or new event types are required — Flow events are delivered automatically to the same event destination you use for messages and delivery receipts. You must have an event destination enabled to receive these notifications. For more information about event destinations, see [Configuration sets](nx-features-configuration-sets.md).
 

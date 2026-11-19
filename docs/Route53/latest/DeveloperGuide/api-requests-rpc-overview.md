@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/api-reques
 ---
 
 # RPC Requests
-<a name="api-requests-rpc-overview"></a>
 
 Amazon Route 53 RPC requests are HTTPS requests, as defined by [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). This section describes the structure of an Route 53 RPC request.
 

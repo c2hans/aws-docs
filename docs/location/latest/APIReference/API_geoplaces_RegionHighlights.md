@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # RegionHighlights
-<a name="API_geoplaces_RegionHighlights"></a>
 
 Indicates the starting and ending index of the region in the text query that match the found title.
 

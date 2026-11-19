@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zohodesk-reading-from-ent
 ---
 
 # Reading from Zoho Desk entities
-<a name="zohodesk-reading-from-entities"></a>
 
 **Prerequisites**
 

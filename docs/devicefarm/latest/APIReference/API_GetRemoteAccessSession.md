@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetRe
 ---
 
 # GetRemoteAccessSession
-<a name="API_GetRemoteAccessSession"></a>
 
 Returns a link to a currently running remote access session.
 

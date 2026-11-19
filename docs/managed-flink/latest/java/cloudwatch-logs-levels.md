@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/cloudwatch-log
 ---
 
 # Set CloudWatch metrics reporting levels
-<a name="cloudwatch-logs-levels"></a>
 
 You can control the level of application metrics that your application creates. Managed Service for Apache Flink supports the following metrics levels:
 + **Application:** The application only reports the highest level of metrics for each application. Managed Service for Apache Flink metrics are published at the Application level by default.

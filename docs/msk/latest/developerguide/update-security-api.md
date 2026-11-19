@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/update-securit
 ---
 
 # Updating a cluster's security settings using the API
-<a name="update-security-api"></a>
 
 To update the security settings for a Amazon MSK cluster using the API, see [UpdateSecurity](https://docs.aws.amazon.com//msk/1.0/apireference/clusters-clusterarn-security.html#UpdateSecurity).
 

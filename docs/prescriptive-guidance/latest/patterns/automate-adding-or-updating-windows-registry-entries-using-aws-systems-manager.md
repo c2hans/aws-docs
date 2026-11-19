@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate adding or updating Windows registry entries using AWS Systems Manager
-<a name="automate-adding-or-updating-windows-registry-entries-using-aws-systems-manager"></a>
 
 *Appasaheb Bagali, Amazon Web Services*
 

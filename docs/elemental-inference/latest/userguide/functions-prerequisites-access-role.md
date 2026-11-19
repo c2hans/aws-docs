@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Setting up the access role
-<a name="functions-prerequisites-access-role"></a>
 
 A function that invokes a model runs the invocation in your account. Elemental Inference makes the call by assuming the IAM role in the feed's `accessRoleArn` field. This is the same access role that a smart crop output uses to read graphics-compositing templates from Amazon S3. A feed has one access role, shared by every output on that feed, so if the feed already has one, add the Amazon Bedrock permissions to the existing role rather than creating a second role.
 

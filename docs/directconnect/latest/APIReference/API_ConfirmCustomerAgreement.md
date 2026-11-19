@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Co
 ---
 
 # ConfirmCustomerAgreement
-<a name="API_ConfirmCustomerAgreement"></a>
 
  The confirmation of the terms of agreement when creating the connection/link aggregation group (LAG).
 

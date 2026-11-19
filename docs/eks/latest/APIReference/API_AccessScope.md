@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AccessScope.
 ---
 
 # AccessScope
-<a name="API_AccessScope"></a>
 
 The scope of an `AccessPolicy` that's associated to an `AccessEntry`.
 

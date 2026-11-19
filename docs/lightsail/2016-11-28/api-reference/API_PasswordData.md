@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_P
 ---
 
 # PasswordData
-<a name="API_PasswordData"></a>
 
 The password data for the Windows Server-based instance, including the ciphertext and the key pair name.
 

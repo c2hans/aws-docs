@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # InvokeModelWithBidirectionalStreamInput
-<a name="API_runtime_InvokeModelWithBidirectionalStreamInput"></a>
 
 Payload content, the speech chunk, for the bidirectional input of the invocation step.
 

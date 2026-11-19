@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Point custom domains to Lightsail distributions
-<a name="amazon-lightsail-point-domain-to-distribution"></a>
 
 You must point your registered domain names to your Amazon Lightsail distribution after you enabled custom domains for your distribution. You do this by adding an alias record to the DNS zone of each of the domains specified on the certificate that you're using with your distribution. All of the records that you add should point to the default domain (e.g., `123456abcdef.cloudfront.net`) of your distribution.
 

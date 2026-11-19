@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enabling_enhance
 ---
 
 # Enable enhanced networking on your instance
-<a name="enabling_enhanced_networking"></a>
 
 The procedure that you use depends on the operating system of the instance.
 

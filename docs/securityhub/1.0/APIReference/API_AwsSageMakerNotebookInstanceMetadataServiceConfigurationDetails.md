@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSage
 ---
 
 # AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetails
-<a name="API_AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetails"></a>
 
  Information on the instance metadata service (IMDS) configuration of the notebook instance.
 

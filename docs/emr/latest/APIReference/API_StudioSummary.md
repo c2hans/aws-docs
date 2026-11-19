@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StudioSummar
 ---
 
 # StudioSummary
-<a name="API_StudioSummary"></a>
 
 Details for an Amazon EMR Studio, including ID, Name, VPC, and Description. To fetch additional details such as subnets, IAM roles, security groups, and tags for the Studio, use the [DescribeStudio](API_DescribeStudio.md) API.
 

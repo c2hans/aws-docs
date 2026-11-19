@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Cancel
 ---
 
 # CancelWorkflowExecutionDecisionAttributes
-<a name="API_CancelWorkflowExecutionDecisionAttributes"></a>
 
 Provides the details of the `CancelWorkflowExecution` decision.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RevokeIpRules.
 ---
 
 # RevokeIpRules
-<a name="API_RevokeIpRules"></a>
 
 Removes one or more rules from the specified IP access control group.
 

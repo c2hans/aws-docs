@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_P
 ---
 
 # PartnerInfo
-<a name="API_PartnerInfo"></a>
 
 An object that contains information about the Lightsail partner program membership of an Amazon Lightsail account.
 

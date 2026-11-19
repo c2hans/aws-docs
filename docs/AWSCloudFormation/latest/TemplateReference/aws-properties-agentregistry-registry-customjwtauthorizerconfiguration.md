@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::Registry CustomJWTAuthorizerConfiguration
-<a name="aws-properties-agentregistry-registry-customjwtauthorizerconfiguration"></a>
 
 Configuration for a custom JSON Web Token (JWT) authorizer that validates inbound bearer tokens against an OpenID Connect (OIDC) identity provider.
 

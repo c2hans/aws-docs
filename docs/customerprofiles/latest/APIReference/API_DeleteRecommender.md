@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteRecommender
-<a name="API_connect-customer-profiles_DeleteRecommender"></a>
 
 Deletes a recommender.
 

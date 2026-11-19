@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationSummary
-<a name="API_SubsidiaryAuthorizationSummary"></a>
 
 An object that contains summary information about a subsidiary authorization, including its name, status, authorized resource, subsidiary account, and creation date. A subsidiary authorization lets a seller authorize one of its subsidiary accounts to create offers for one of its products.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSUS01-BP04 Tune adapter concurrency and timeouts to stop spending compute on unusable bids
-<a name="advsus01-bp04"></a>
 
  Prebid Server completes each header bidding auction within the publisher's timeout and keeps bid density high. When an adapter continually misses the deadline, disable it. This stops the server from spending compute on responses that arrive too late to win.
 

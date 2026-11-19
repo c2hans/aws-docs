@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AutomationExecutionPreview
-<a name="API_AutomationExecutionPreview"></a>
 
 Information about the results of the execution preview.
 

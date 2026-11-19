@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 ---
 
 # Review criteria
-<a name="registration-help-review-criteria"></a>
 
 When you submit a campaign registration, reviewers evaluate your application against eight criteria. Understanding these criteria helps you prepare a complete submission that passes review on the first attempt.
 

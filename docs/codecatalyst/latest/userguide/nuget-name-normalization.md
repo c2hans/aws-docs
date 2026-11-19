@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/nuget-name
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # NuGet package name, version, and asset name normalization
-<a name="nuget-name-normalization"></a>
 
 CodeCatalyst normalizes package and asset names and package versions before storing them, which means the names or versions in CodeCatalyst may be different than the ones provided when the package or asset was published.
 

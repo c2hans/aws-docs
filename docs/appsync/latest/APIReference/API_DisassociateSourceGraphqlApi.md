@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateSourceGraphqlApi
-<a name="API_DisassociateSourceGraphqlApi"></a>
 
 Deletes an association between a Merged API and source API using the Merged API's identifier and the association ID.
 

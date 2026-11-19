@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCleanRoomsMLReadOnlyAccess
-<a name="AWSCleanRoomsMLReadOnlyAccess"></a>
 
 **Description**: Allows read-only access to AWS Clean Rooms ML resources and read-only access to related AWS Clean Rooms resources
 

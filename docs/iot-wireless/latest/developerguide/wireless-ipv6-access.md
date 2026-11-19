@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/wirel
 ---
 
 # Making requests to AWS IoT Wireless using IPv6
-<a name="wireless-ipv6-access"></a>
 
 AWS IoT Wireless supports the ability for wireless resources to communicate with the cloud using the internet protocol version 6 (IPv6), in addition to the IPv4 protocol. Dual-stack endpoints support requests to AWS IoT Wireless over IPv6 and IPv4. There are no additional charges for communication over IPv6.
 

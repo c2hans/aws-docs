@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/logging-us
 ---
 
 # Logging AWS Elemental MediaPackage API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Logging is available with only live workflows in MediaPackage.
 

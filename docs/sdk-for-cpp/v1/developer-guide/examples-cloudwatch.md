@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Amazon CloudWatch examples using the AWS SDK for C\+\+
-<a name="examples-cloudwatch"></a>
 
 Amazon CloudWatch (CloudWatch) is a monitoring service for AWS cloud resources and the applications you run on AWS. You can use the following examples to program [CloudWatch](https://aws.amazon.com/cloudwatch) using the AWS SDK for C\+\+.
 

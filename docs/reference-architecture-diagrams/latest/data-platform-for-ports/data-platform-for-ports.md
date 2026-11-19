@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Data Platform for Ports and Inland Logistics Facilities
-<a name="data-platform-for-ports"></a>
 
 Publication date: **August 23, 2022 ([Diagram history](#ports-history))**
 

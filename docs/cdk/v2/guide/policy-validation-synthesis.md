@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/policy-validation-synthesis
 ---
 
 # AWS CDK validation at synthesis time
-<a name="policy-validation-synthesis"></a>
 
 ## Validation at synthesis time
 <a name="policy-validation"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/modifying-a-chan
 ---
 
 # Modifying a channel
-<a name="modifying-a-channel"></a>
 
 You can modify a channel that is in the Idle or Error state (that is, when it is not actively running).
 

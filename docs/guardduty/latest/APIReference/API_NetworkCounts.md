@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkCounts
-<a name="API_NetworkCounts"></a>
 
 Contains counts that describe network activity, such as the number of requests or connection attempts.
 

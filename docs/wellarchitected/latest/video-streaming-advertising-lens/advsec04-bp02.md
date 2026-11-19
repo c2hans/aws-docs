@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSEC04-BP02 Create guardrails and controls to maintain brand safety and content moderation within your workload
-<a name="advsec04-bp02"></a>
 
  Ad platforms decide placements faster than people can review content. Without automated classification against your organization's taxonomy, the service can serve ads next to content that violates an advertiser's brand-safety requirements. The taxonomy you designate, and the person who owns it, limit what your service can enforce.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # SseAwsKeyManagementParams
-<a name="API_media-pipelines-chime_SseAwsKeyManagementParams"></a>
 
 Contains server side encryption parameters to be used by media capture pipeline. The parameters can also be used by media concatenation pipeline taking media capture pipeline as a media source.
 

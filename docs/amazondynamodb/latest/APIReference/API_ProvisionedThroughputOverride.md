@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_P
 ---
 
 # ProvisionedThroughputOverride
-<a name="API_ProvisionedThroughputOverride"></a>
 
 Replica-specific provisioned throughput settings. If not specified, uses the source table's provisioned throughput settings.
 

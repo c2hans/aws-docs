@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningInvalidFinding
-<a name="API_runtime_GuardrailAutomatedReasoningInvalidFinding"></a>
 
 Indicates that the claims are logically false and contradictory to the established rules or premises.
 

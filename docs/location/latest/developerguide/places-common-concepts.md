@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/places-co
 ---
 
 # Places concepts
-<a name="places-common-concepts"></a>
 
 The following topics provide foundational knowledge and best practices for using the Amazon Location Service Places API. These concepts are essential for effectively implementing the Places features within your application.
 

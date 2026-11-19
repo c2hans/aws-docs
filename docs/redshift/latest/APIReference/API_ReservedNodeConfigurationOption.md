@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Reserve
 ---
 
 # ReservedNodeConfigurationOption
-<a name="API_ReservedNodeConfigurationOption"></a>
 
 Details for a reserved-node exchange. Examples include the node type for a reserved node, the price for a node, the node's state, and other details.
 

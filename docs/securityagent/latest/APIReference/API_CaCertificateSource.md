@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ca
 ---
 
 # CaCertificateSource
-<a name="API_CaCertificateSource"></a>
 
 The source of a trusted CA certificate. Exactly one member must be set.
 

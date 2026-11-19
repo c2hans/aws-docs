@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TagResource
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
  Applies a tag to the specified flow.
 

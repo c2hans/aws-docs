@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UnknownConnectionTargetInputFlowValidationDetails
-<a name="API_agent_UnknownConnectionTargetInputFlowValidationDetails"></a>
 
 Details about an unknown target input for a connection.
 

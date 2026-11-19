@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateDomainAccessGrantForOrganization
-<a name="API_CreateDomainAccessGrantForOrganization"></a>
 
 Creates an AccessGrant that authorizes a principal to administer an organization domain.
 

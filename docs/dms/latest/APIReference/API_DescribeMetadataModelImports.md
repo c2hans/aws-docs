@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMeta
 ---
 
 # DescribeMetadataModelImports
-<a name="API_DescribeMetadataModelImports"></a>
 
 Returns a paginated list of metadata model import requests for a migration project, initiated by [StartMetadataModelImport](https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadataModelImport.html).
 

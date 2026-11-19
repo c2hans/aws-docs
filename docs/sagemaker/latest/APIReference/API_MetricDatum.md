@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Metric
 ---
 
 # MetricDatum
-<a name="API_MetricDatum"></a>
 
 Information about the metric for a candidate produced by an AutoML job.
 

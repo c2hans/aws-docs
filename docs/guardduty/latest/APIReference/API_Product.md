@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Produc
 ---
 
 # Product
-<a name="API_Product"></a>
 
 Contains information about the product that produced an investigation.
 

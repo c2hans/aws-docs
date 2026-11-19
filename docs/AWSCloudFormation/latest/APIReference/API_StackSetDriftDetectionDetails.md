@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackSetDriftDetectionDetails
-<a name="API_StackSetDriftDetectionDetails"></a>
 
 Detailed information about the drift status of the StackSet.
 

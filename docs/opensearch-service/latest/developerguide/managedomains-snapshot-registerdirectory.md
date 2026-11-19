@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Registering a manual snapshot repository
-<a name="managedomains-snapshot-registerdirectory"></a>
 
 You need to register a snapshot repository with OpenSearch Service before you can take manual index snapshots. This one-time operation requires that you sign your AWS request with credentials that are allowed to access `TheSnapshotRole`, as described in [Prerequisites](managedomains-snapshots.md#managedomains-snapshot-prerequisites).
 

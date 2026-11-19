@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationKubernetesAuditLogsConfiguration
-<a name="API_OrganizationKubernetesAuditLogsConfiguration"></a>
 
 Organization-wide Kubernetes audit logs configuration.
 

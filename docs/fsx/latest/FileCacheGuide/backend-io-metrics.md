@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/backend-io-met
 ---
 
 # Backend I/O metrics
-<a name="backend-io-metrics"></a>
 
 The following metrics report information on read and write operations between the cache and its linked data repository. The metric takes one dimension (`FileCacheId`) and is published into the `AWS/FSx` namespace in CloudWatch.
 

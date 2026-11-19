@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/how-quicksuite-wo
 ---
 
 # How AWS Quick works
-<a name="how-quicksuite-works"></a>
 
 When you use Quick, the following components work together to process your requests.
 

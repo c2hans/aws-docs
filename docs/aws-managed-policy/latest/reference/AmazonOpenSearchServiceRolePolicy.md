@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonOpenSearchServiceRolePolicy
-<a name="AmazonOpenSearchServiceRolePolicy"></a>
 
 **Description**: Allow Amazon OpenSearch Service to access other AWS services such as EC2 Networking APIs on your behalf.
 

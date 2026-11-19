@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Com
 ---
 
 # Component
-<a name="API_Component"></a>
 
 A detailed view of a component.
 

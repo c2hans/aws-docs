@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-email.h
 ---
 
 # Enable email campaigns for your Connect Customer instance
-<a name="enable-email"></a>
 
 This topic is for administrators who have access to the Connect Customer console. It explains how to enable email campaigns for your instance using the console. For the APIs used to enable email campaigns programmatically, see [APIs to enable email for campaigns](#apis-email-setup1).
 

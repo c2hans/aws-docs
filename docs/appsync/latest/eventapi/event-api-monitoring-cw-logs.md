@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-monito
 ---
 
 # Configuring CloudWatch Logs on Event APIs
-<a name="event-api-monitoring-cw-logs"></a>
 
 You can configure two types of logging on any new or existing API: request-level logs and and handler logs.
 

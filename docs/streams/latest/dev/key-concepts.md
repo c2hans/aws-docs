@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/key-concepts.html
 ---
 
 # Amazon Kinesis Data Streams terminology and concepts
-<a name="key-concepts"></a>
 
 Before you get started with Amazon Kinesis Data Streams, learn about its architecture and terminology.
 

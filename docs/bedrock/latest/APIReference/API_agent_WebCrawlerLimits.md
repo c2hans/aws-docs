@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_We
 ---
 
 # WebCrawlerLimits
-<a name="API_agent_WebCrawlerLimits"></a>
 
 The rate limits for the URLs that you want to crawl. You should be authorized to crawl the URLs.
 

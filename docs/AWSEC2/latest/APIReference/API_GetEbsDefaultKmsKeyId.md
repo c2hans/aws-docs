@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetEbsDef
 ---
 
 # GetEbsDefaultKmsKeyId
-<a name="API_GetEbsDefaultKmsKeyId"></a>
 
 Describes the default AWS KMS key for EBS encryption by default for your account in this Region.
 

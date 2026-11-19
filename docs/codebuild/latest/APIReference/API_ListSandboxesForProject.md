@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListSa
 ---
 
 # ListSandboxesForProject
-<a name="API_ListSandboxesForProject"></a>
 
 Gets a list of sandboxes for a given project.
 

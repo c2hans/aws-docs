@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/hubspot-writing-to-entiti
 ---
 
 # Writing to HubSpot Entities
-<a name="hubspot-writing-to-entities"></a>
 
 ## Prerequisites
 <a name="hubspot-writing-prerequisites"></a>

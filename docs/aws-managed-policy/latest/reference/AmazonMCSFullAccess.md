@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMCSFullAccess
-<a name="AmazonMCSFullAccess"></a>
 
 **Description**: Provide full access to Amazon Managed Apache Cassandra Service
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Data Exports
-<a name="API_Operations_AWS_Billing_and_Cost_Management_Data_Exports"></a>
 
 The following actions are supported by AWS Data Exports:
 +  [CreateExport](API_DataExports_CreateExport.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Targe
 ---
 
 # TargetedSentimentMention
-<a name="API_TargetedSentimentMention"></a>
 
 Information about one mention of an entity. The mention information includes the location of the mention in the text and the sentiment of the mention.
 

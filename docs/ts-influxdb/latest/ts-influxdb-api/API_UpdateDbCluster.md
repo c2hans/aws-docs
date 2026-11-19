@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_U
 ---
 
 # UpdateDbCluster
-<a name="API_UpdateDbCluster"></a>
 
 Updates a Timestream for InfluxDB cluster.
 

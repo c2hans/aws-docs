@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/load-api-refere
 ---
 
 # Neptune Loader Errors
-<a name="load-api-reference-load-errors"></a>
 
 When an error occurs, a JSON object is returned in the `BODY` of the response. The `message` object contains a description of the error.
 

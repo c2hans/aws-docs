@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/creating-joined-
 ---
 
 # Joining an Amazon FSx file system to a self-managed Microsoft Active Directory domain
-<a name="creating-joined-ad-file-systems"></a>
 
 When you create a new FSx for Windows File Server file system, you can configure Microsoft Active Directory integration so that it joins to your self-managed Microsoft Active Directory domain. To do this, provide the following information for your Microsoft Active Directory:
 + The fully qualified domain name (FQDN) of your on-premises Microsoft Active Directory directory.

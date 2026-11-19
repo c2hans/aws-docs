@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/manual-inst
 ---
 
 # Install AWS IoT Greengrass Core software with manual resource provisioning
-<a name="manual-installation"></a>
 
 The AWS IoT Greengrass Core software includes an installer that sets up your device as a Greengrass core device. To set up a device manually, you can create the required AWS IoT and IAM resources for the device to use. If you create these resources manually, you don't need to provide AWS credentials to the installer.
 

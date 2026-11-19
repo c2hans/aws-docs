@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Editing an OpsItem
-<a name="OpsCenter-working-with-OpsItems-editing-details"></a>
 
 The **OpsItem details** section includes information about an OpsItem,  including the description, title, source, OpsItem ID, and the status.  You can edit a single OpsItem or you can select multiple OpsItems and edit the  following fields: **Status**, **Priority**,  **Severity**, **Category**.
 

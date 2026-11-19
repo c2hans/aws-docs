@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Tds
 ---
 
 # TdscdmaObj
-<a name="API_TdscdmaObj"></a>
 
 TD-SCDMA object.
 

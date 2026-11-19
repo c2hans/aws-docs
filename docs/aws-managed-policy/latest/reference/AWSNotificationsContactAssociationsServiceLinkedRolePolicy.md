@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSN
 ---
 
 # AWSNotificationsContactAssociationsServiceLinkedRolePolicy
-<a name="AWSNotificationsContactAssociationsServiceLinkedRolePolicy"></a>
 
 **Description**: Grants the AWS User Notifications service permissions to manage account contact associations.
 

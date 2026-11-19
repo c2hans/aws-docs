@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListCer
 ---
 
 # ListCertificates
-<a name="API_ListCertificates"></a>
 
 Returns a list of the current certificates that have been imported into AWS Transfer Family. If you want to limit the results to a certain number, supply a value for the `MaxResults` parameter. If you ran the command previously and received a value for the `NextToken` parameter, you can supply that value to continue listing certificates from where you left off.
 

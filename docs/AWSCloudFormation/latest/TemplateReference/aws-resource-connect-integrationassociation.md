@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::IntegrationAssociation
-<a name="aws-resource-connect-integrationassociation"></a>
 
 Specifies the association of an AWS resource such as Lex bot (both v1 and v2) and Lambda function with an Connect Customer instance.
 

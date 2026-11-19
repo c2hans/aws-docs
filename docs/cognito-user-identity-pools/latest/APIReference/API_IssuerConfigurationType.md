@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # IssuerConfigurationType
-<a name="API_IssuerConfigurationType"></a>
 
 Specifies the issuer configuration for a user pool. Contains settings that determine how tokens are issued and validated.
 

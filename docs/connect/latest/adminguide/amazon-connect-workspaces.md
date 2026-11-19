@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 ---
 
 # Set up workspaces for your business users
-<a name="amazon-connect-workspaces"></a>
 
 ## What are workspaces?
 <a name="what-are-workspaces"></a>

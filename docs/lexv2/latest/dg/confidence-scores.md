@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/confidence-scores.html
 ---
 
 # Using confidence scores to improve conversation accuracy
-<a name="confidence-scores"></a>
 
 There are two steps that Amazon Lex V2 uses to determine what a user says. The first, automatic speech recognition (ASR), creates a transcript of the user's audio utterance. The second, natural language understanding (NLU), determines the meaning of the user's utterance to recognize the user's intent or the value of slots.
 

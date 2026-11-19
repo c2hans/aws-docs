@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ExistingObjectRe
 ---
 
 # ExistingObjectReplication
-<a name="API_ExistingObjectReplication"></a>
 
 Optional configuration to replicate existing source bucket objects.
 

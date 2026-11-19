@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Creating C\# or JDBC client connections to Babelfish
-<a name="babelfish-connect-configure"></a>
 
 In the following you can find some examples of using C\# and JDBC classes to connect to an Babelfish for Aurora PostgreSQL.
 

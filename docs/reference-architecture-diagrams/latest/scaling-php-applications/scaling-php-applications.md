@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Scaling PHP Applications on AWS
-<a name="scaling-php-applications"></a>
 
 Publication date: **January 20, 2022 ([Diagram history](#diagram-history))**
 

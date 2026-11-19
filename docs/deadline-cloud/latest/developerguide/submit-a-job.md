@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sub
 ---
 
 # Submit with Deadline Cloud
-<a name="submit-a-job"></a>
 
 To run Deadline Cloud jobs on your worker hosts, you create and use an Open Job Description (OpenJD) job bundle to configure a job. The bundle configures the job, for example by specifying input files for a job and where to write the output of the job. This topic includes examples of ways that you can configure a job bundle.
 

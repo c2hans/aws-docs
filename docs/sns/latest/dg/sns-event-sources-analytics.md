@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-analytic
 ---
 
 # Analytics services
-<a name="sns-event-sources-analytics"></a>
 
 The following table describes how Amazon SNS integrates with AWS analytics services such as Athena, AWS Data Pipeline, and Amazon Redshift to provide real-time notifications for key events, including control limit breaches, pipeline status updates, and data warehouse activities.
 

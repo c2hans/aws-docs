@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/param-c
 ---
 
 # Creating a Parameter Store parameter using Tools for Windows PowerShell
-<a name="param-create-ps"></a>
 
 You can use AWS Tools for Windows PowerShell to create `String`, `StringList`, and `SecureString` parameter types. After deleting a parameter, wait for at least 30 seconds to create a parameter with the same name.
 

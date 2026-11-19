@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Resou
 ---
 
 # ResourcePendingMaintenanceActions
-<a name="API_ResourcePendingMaintenanceActions"></a>
 
 Represents the output of [ApplyPendingMaintenanceAction](API_ApplyPendingMaintenanceAction.md).
 

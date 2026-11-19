@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Relatio
 ---
 
 # Relationship
-<a name="API_Relationship"></a>
 
 Information about how blocks are related to each other. A `Block` object contains 0 or more `Relation` objects in a list, `Relationships`. For more information, see [Block](API_Block.md).
 

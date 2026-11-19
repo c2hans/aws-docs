@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DatasetUpdateS
 ---
 
 # DatasetUpdateSummary
-<a name="API_DatasetUpdateSummary"></a>
 
 Describes an update to a dataset.
 

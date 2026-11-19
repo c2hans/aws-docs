@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_GetS
 ---
 
 # GetStream
-<a name="API_GetStream"></a>
 
 Retrieves information about a stream.
 

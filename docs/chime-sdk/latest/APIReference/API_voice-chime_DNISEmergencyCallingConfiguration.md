@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DNISEmergencyCallingConfiguration
-<a name="API_voice-chime_DNISEmergencyCallingConfiguration"></a>
 
 The Dialed Number Identification Service (DNIS) emergency calling configuration details associated with an Amazon Chime SDK Voice Connector's emergency calling configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_E
 ---
 
 # EBSResultItem
-<a name="API_BKS_EBSResultItem"></a>
 
 These are the items returned in the results of a search of Amazon EBS backup metadata.
 

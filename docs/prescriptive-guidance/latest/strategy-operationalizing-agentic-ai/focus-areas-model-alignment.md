@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Focus area 6: Align agent models with business models
-<a name="focus-areas-model-alignment"></a>
 
 *Job to be done: "Show me the impact, so that I can justify continued investment."*
 

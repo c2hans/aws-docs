@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/install-register-
 ---
 
 # Installing and registering the extension
-<a name="install-register-extension"></a>
 
 Amazon DCV does not determine where extension executables should be located. However, to ensure that file system ACLs protect extensions from unauthorized modification, it is best to follow the guidelines for your specific operating system. On Windows, for instance, use the `Program Files` folder.
 

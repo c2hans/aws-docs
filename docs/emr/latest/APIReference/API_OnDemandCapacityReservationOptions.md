@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_OnDemandCapa
 ---
 
 # OnDemandCapacityReservationOptions
-<a name="API_OnDemandCapacityReservationOptions"></a>
 
 Describes the strategy for using unused Capacity Reservations for fulfilling On-Demand capacity.
 

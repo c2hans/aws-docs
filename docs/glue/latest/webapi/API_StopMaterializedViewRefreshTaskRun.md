@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StopMaterializedV
 ---
 
 # StopMaterializedViewRefreshTaskRun
-<a name="API_StopMaterializedViewRefreshTaskRun"></a>
 
 Stops a materialized view refresh task run for a specified materialized view.
 

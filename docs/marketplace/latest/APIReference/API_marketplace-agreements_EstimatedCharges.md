@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # EstimatedCharges
-<a name="API_marketplace-agreements_EstimatedCharges"></a>
 
 Estimated cost of the agreement.
 

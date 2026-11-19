@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DataMigratio
 ---
 
 # DataMigrationStatistics
-<a name="API_DataMigrationStatistics"></a>
 
 Information about the data migration run, including start and stop time, latency, and migration progress.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Se
 ---
 
 # Settings
-<a name="API_Settings"></a>
 
  The settings object that holds all supported Audit Manager settings.
 

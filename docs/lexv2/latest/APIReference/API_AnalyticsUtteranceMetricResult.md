@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsU
 ---
 
 # AnalyticsUtteranceMetricResult
-<a name="API_AnalyticsUtteranceMetricResult"></a>
 
 An object containing the results for the utterance metric you requested.
 

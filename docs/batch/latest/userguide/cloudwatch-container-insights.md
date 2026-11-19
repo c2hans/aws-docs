@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/cloudwatch-contai
 ---
 
 # AWS Batch CloudWatch Container Insights
-<a name="cloudwatch-container-insights"></a>
 
 CloudWatch Container Insights collects, aggregates, and summarizes metrics and logs from your AWS Batch compute environments and jobs. The metrics include CPU, memory, disk, and network utilization. You can add these metrics to CloudWatch dashboards.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/throughput-bur
 ---
 
 # Use burst capacity effectively in Amazon Keyspaces
-<a name="throughput-bursting"></a>
 
 Amazon Keyspaces provides some flexibility in your per-partition throughput provisioning by providing *burst capacity*. Whenever you're not fully using a partition's throughput, Amazon Keyspaces reserves a portion of that unused capacity for later *bursts* of throughput to handle usage spikes.
 

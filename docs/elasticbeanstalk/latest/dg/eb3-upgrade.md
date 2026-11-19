@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-upgrade.h
 ---
 
 # **eb upgrade**
-<a name="eb3-upgrade"></a>
 
 ## Description
 <a name="eb3-upgradedescription"></a>

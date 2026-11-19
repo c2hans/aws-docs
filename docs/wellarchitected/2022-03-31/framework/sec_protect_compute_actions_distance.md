@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC06-BP05 Enable people to perform actions at a distance
-<a name="sec_protect_compute_actions_distance"></a>
 
  Removing the ability for interactive access reduces the risk of human error, and the potential for manual configuration or management. For example, use a change management workflow to deploy Amazon Elastic Compute Cloud (Amazon EC2) instances using infrastructure-as-code, then manage Amazon EC2 instances using tools such as AWS Systems Manager instead of allowing direct access or through a bastion host. AWS Systems Manager can automate a variety of maintenance and deployment tasks, using features including [automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html) [workflows](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html), [documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-documents.html) (playbooks), and the [run command](https://docs.aws.amazon.com/systems-manager/latest/userguide/execute-remote-commands.html). AWS CloudFormation stacks build from pipelines and can automate your infrastructure deployment and management tasks without using the AWS Management Console or APIs directly.
 

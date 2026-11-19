@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListSessions
-<a name="API_ListSessions"></a>
 
 Lists sessions.
 

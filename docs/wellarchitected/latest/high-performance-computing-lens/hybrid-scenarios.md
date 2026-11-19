@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Hybrid scenarios
-<a name="hybrid-scenarios"></a>
 
  Hybrid deployments are primarily considered by organizations that are invested in their on-premises infrastructure and also want to use AWS. This approach allows organizations to augment on-premises resources and creates an alternative path to AWS rather than an immediate full migration. Hybrid-deployment architectures can be used for loosely and tightly coupled workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Cr
 ---
 
 # CreateTrainedModel
-<a name="API_CreateTrainedModel"></a>
 
 Creates a trained model from an associated configured model algorithm using data from any member of the collaboration.
 

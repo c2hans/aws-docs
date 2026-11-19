@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sfn-local-lambd
 ---
 
 # Tutorial: Testing workflows using Step Functions and AWS SAM CLI Local
-<a name="sfn-local-lambda"></a>
 
 **Step Functions Local is unsupported**
 Step Functions Local does **not** provide feature parity and is **unsupported**.

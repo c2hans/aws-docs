@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ListToMap
-<a name="API_ListToMap"></a>
 
 This processor takes a list of objects that contain key fields, and converts them into a map of target keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/launchguide/map.html
 ---
 
 # Migration Acceleration Program (MAP)
-<a name="map"></a>
 
 The [AWS Migration Acceleration Program (MAP) ](https://aws.amazon.com/migration-acceleration-program/) is a program to support customers as they migrate to the cloud. MAP is based on AWS's experience migrating thousands of global customers to the cloud.
 

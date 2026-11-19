@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/outputs-add-vpc.h
 ---
 
 # Adding VPC outputs to a flow
-<a name="outputs-add-vpc"></a>
 
 A VPC output goes to a virtual private cloud (VPC) that you created using Amazon Virtual Private Cloud.
 

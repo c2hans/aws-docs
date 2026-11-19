@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Inferenc
 ---
 
 # InferenceProfileModel
-<a name="API_InferenceProfileModel"></a>
 
 Contains information about a model.
 

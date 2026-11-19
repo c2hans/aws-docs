@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_RejectLink.htm
 ---
 
 # RejectLink
-<a name="API_RejectLink"></a>
 
 Rejects a link request between gateways.
 

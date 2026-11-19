@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeIpGrou
 ---
 
 # DescribeIpGroups
-<a name="API_DescribeIpGroups"></a>
 
 Describes one or more of your IP access control groups.
 

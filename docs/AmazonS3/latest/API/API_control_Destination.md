@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Destinat
 ---
 
 # Destination
-<a name="API_control_Destination"></a>
 
 Specifies information about the replication destination bucket and its settings for an S3 on Outposts replication configuration.
 

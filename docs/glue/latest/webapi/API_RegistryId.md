@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RegistryId.html
 ---
 
 # RegistryId
-<a name="API_RegistryId"></a>
 
 A wrapper structure that may contain the registry name and Amazon Resource Name (ARN).
 

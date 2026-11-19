@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agent-tools-
 ---
 
 # Getting started
-<a name="agent-tools-skills-getting-started"></a>
 
 Install the ElastiCache skill using the following command:
 

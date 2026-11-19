@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_InstanceRequiremen
 ---
 
 # InstanceRequirements
-<a name="API_InstanceRequirements"></a>
 
 Specifications that define the characteristics and constraints for compute instances used by the capacity provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Overview of a typical IT operating model
-<a name="it-op-model"></a>
 
 An operating model serves as the cornerstone of successful IT service delivery in any organization. It's the blueprint that defines how an organization creates and delivers value through its operations. At its core, an operating model aligns people, processes, and various technologies with business strategy. (For more information about operating models, see [Defining the IT Operating Model](https://publications.opengroup.org/w17b) on The Open Group website.)
 

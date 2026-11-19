@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # UnionPay specific functions
-<a name="use-cases-issuers.networkfunctions.unionpay"></a>
 
 The following examples pertain to UnionPay International (UPI), also sometimes referred to as China UnionPay (CUP).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/best-practices.ht
 ---
 
 # Best practices for MediaConnect flows
-<a name="best-practices"></a>
 
 For the best performance and availability, follow best practices when you configure your AWS Elemental MediaConnect flows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access-runtime/latest/APIReferen
 ---
 
 # AccessDetails
-<a name="API_AccessDetails"></a>
 
 Describes a role that you can access, including the AWS account that contains the role and the role's ARN.
 

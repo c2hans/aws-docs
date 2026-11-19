@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/dsbulk-upload-
 ---
 
 # Step 2: Prepare the data to upload using DSBulk
-<a name="dsbulk-upload-prepare-data"></a>
 
 Preparing the source data for an efficient transfer is a two-step process. First, you randomize the data. In the second step, you analyze the data to determine the appropriate `dsbulk` parameter values and required table settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # UntagResource
-<a name="API_S3VectorBuckets_UntagResource"></a>
 
 Removes the specified user-defined tags from an Amazon S3 Vectors resource. You can pass one or more tag keys.
 

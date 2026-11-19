@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SendDiagn
 ---
 
 # SendDiagnosticInterrupt
-<a name="API_SendDiagnosticInterrupt"></a>
 
 Sends a diagnostic interrupt to the specified Amazon EC2 instance to trigger a *kernel panic* (on Linux instances), or a *blue screen*/*stop error* (on Windows instances). For instances based on Intel and AMD processors, the interrupt is received as a *non-maskable interrupt* (NMI).
 

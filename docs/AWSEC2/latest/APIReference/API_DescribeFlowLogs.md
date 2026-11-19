@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeF
 ---
 
 # DescribeFlowLogs
-<a name="API_DescribeFlowLogs"></a>
 
 Describes one or more flow logs.
 

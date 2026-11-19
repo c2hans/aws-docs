@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs
 ---
 
 # Running jobs from the AWS CLI
-<a name="jobs-cli"></a>
 
 You can create, describe, and delete individual jobs on the AWS CLI. You can also list all of your jobs to access them at a glance.
 

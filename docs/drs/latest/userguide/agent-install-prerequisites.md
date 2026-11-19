@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/agent-install-prere
 ---
 
 # Agent installation prerequisites
-<a name="agent-install-prerequisites"></a>
 
 Before installing the AWS Replication Agent, verify that your source server meets the following requirements.
 

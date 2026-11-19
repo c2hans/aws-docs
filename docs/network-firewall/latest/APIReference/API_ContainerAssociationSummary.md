@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ContainerAssociationSummary
-<a name="API_ContainerAssociationSummary"></a>
 
 The metadata for a container association returned by `ListContainerAssociations`. Contains the ARN and name that you use to identify the container association in other operations.
 

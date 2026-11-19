@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupServiceRolePolicyForBackup
-<a name="AWSBackupServiceRolePolicyForBackup"></a>
 
 **Description**: Provides AWS Backup permission to create backups on your behalf across AWS services
 

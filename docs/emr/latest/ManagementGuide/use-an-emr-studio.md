@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/use-an-emr-st
 ---
 
 # Use an Amazon EMR Studio
-<a name="use-an-emr-studio"></a>
 
 This section contains topics that help you configure and interact with an Amazon EMR Studio.
 

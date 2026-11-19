@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/tagging.html
 ---
 
 # Tagging Amazon Bedrock resources
-<a name="tagging"></a>
 
 To help you manage your Amazon Bedrock resources, you can assign metadata to each resource as tags. A tag is a label that you assign to an AWS resource. Each tag consists of a key and a value.
 

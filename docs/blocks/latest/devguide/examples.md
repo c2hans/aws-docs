@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/examples.html
 ---
 
 # Examples and patterns
-<a name="examples"></a>
 
 This topic shows common application patterns you can build with AWS Blocks. Each example demonstrates how Blocks compose together to solve real-world problems.
 

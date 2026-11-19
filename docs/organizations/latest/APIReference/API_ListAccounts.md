@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListAccounts
-<a name="API_ListAccounts"></a>
 
 Lists all the accounts in the organization. To request only the accounts in a specified root or organizational unit (OU), use the [ListAccountsForParent](API_ListAccountsForParent.md) operation instead.
 

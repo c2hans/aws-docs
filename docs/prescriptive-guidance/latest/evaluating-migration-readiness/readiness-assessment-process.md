@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-
 ---
 
 # Readiness assessment process
-<a name="readiness-assessment-process"></a>
 
 A readiness assessment consists of these four steps:
 

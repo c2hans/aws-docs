@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Compare Container Insights approaches
-<a name="container-insights-eks-compare"></a>
 
 Two Container Insights approaches are available for Amazon EKS clusters, each with different capabilities, deployment models, and support levels. Both use the same `amazon-cloudwatch-observability` Amazon EKS add-on — the difference is the add-on version and configuration.
 

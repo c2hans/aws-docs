@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/how-users-upgrade
 ---
 
 # How users upgrade their license
-<a name="how-users-upgrade-license"></a>
 
 |  |
 | --- |

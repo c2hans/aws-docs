@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMachineLearningRealTimePredictionOnlyAccess
-<a name="AmazonMachineLearningRealTimePredictionOnlyAccess"></a>
 
 **Description**: Grants users permission to request Amazon Machine Learning real-time predictions.
 

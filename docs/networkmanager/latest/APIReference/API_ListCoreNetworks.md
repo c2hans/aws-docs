@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListCoreNetworks
-<a name="API_ListCoreNetworks"></a>
 
 Returns a list of owned and shared core networks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/config-
 ---
 
 # Self-managed license parameters and rules in License Manager
-<a name="config-overview"></a>
 
 A self-managed license consists of basic parameters and rules that vary according to the parameter values. You can also add tags to your self-managed licenses. After you create a self-managed license, an administrator can modify the number of licenses and the usage limit to reflect changing resource needs.
 

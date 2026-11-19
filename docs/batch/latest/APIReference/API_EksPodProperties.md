@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksPodProp
 ---
 
 # EksPodProperties
-<a name="API_EksPodProperties"></a>
 
 The properties for the pod.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/what-is-amazon-chime
 ---
 
 # What is Amazon Chime SDK call analytics
-<a name="what-is-amazon-chime-sdk-call-analytics"></a>
 
 Amazon Chime SDK call analytics is a low-code solution for generating cost-effective insights from real-time audio, including capabilities for audio ingestion, recording, voice analytics, alerting, and a data lake. You can generate machine learning powered insights using call analytics by creating a reusable call analytics configuration that determines which AWS machine learning integrations and audio processing features to enable for a workflow. You then use the call analytics configuration with various media sources such as Voice Connectors or Amazon Kinesis Video Streams. Call analytics generates insights through integrations with Amazon Transcribe and Transcribe call analytics (TCA), and natively through [Amazon Chime SDK voice analytics](voice-analytics.md), a service that runs under call analytics.
 

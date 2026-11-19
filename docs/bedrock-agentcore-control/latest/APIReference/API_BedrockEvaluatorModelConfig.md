@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # BedrockEvaluatorModelConfig
-<a name="API_BedrockEvaluatorModelConfig"></a>
 
  The configuration for using Amazon Bedrock models in evaluator assessments, including model selection and inference parameters.
 

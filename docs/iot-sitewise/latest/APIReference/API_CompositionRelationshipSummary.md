@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # CompositionRelationshipSummary
-<a name="API_CompositionRelationshipSummary"></a>
 
 Contains a summary of the components of the composite model.
 

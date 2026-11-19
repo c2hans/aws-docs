@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ---
 
 # Well-Architected Considerations
-<a name="well-architected-considerations"></a>
 
 The semantic layer architecture should be evaluated against the six pillars of the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/). The following guidance maps architectural decisions in this guide to each pillar.
 

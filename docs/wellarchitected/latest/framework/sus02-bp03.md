@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus02-b
 ---
 
 # SUS02-BP03 Match resource use to business need
-<a name="sus02-bp03"></a>
 
  Designing customer experience with sustainability in mind involves making intentional trade-offs that can significantly reduce resource consumption while maintaining acceptable service levels. Align service-level objectives (SLOs) with your real business requirements to produce an efficient system.
 

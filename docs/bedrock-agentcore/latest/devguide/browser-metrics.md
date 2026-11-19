@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # CloudWatch Metrics
-<a name="browser-metrics"></a>
 
 You can view the following metrics in Amazon CloudWatch:
 + Session counts: The number of browser sessions that have been requested

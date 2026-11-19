@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Neste
 ---
 
 # NestedFilter
-<a name="API_NestedFilter"></a>
 
 A `NestedFilter` filters data with a subset of data that is defined by the nested inner filter.
 

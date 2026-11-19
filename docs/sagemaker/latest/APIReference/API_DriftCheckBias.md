@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DriftC
 ---
 
 # DriftCheckBias
-<a name="API_DriftCheckBias"></a>
 
 Represents the drift check bias baselines that can be used when the model monitor is set using the model package.
 

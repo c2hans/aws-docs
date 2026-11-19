@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_login-
 ---
 
 # Step 1 – Retrieve the address and secret for the target AWS PCS cluster
-<a name="working-with_login-nodes_standalone_get-addr"></a>
 
 Retrieve details about the target AWS PCS cluster using the AWS CLI with the command that follows. Before running the command, make the following replacements:
 + Replace {{region-code}} with the AWS Region where the target cluster is running.

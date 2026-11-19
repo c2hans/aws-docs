@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Initiate jobs based on the status of previous jobs
-<a name="status-code"></a>
 
 Create a flow of jobs called a workflow. Jobs in the workflow are interconnected with dependencies on successful completion of the previous jobs.
 

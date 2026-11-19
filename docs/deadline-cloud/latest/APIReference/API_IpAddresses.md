@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_I
 ---
 
 # IpAddresses
-<a name="API_IpAddresses"></a>
 
 The IP addresses for a host.
 

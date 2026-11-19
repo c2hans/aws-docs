@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteTest
 ---
 
 # DeleteTestSet
-<a name="API_DeleteTestSet"></a>
 
 The action to delete the selected test set.
 

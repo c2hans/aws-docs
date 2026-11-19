@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Predicting student success
-<a name="student-success"></a>
 
 A Midwest university in the US discovered that a handful of key activities for incoming first-year students was highly predictive of success, both in the student's first semester of classes and in attaining their degree. The university wanted to implement a system that watched for these activities to be completed, and when key deadlines approached or passed, they wanted to encourage students to complete these steps.
 

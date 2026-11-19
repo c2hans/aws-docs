@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Publishing a question set version
-<a name="custom-questions-publish"></a>
 
 To publish a version, use the `create-question-set-version` command. Elemental Inference copies `DRAFT` into the next version number. You can add these optional parameters:
 + `--sha256` – Publishes only if the `sha256` value of `DRAFT` still equals the value that you pass. Otherwise, the request fails with a `ConflictException`. Use this parameter to make sure that you publish exactly the questions that you reviewed.

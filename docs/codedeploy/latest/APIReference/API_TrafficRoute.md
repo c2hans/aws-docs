@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Traff
 ---
 
 # TrafficRoute
-<a name="API_TrafficRoute"></a>
 
  Information about a listener. The listener contains the path used to route traffic that is received from the load balancer to a target group.
 

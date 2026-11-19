@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/esri.ht
 ---
 
 # Esri
-<a name="esri"></a>
 
 Amazon Location Service uses Esri's location services to help AWS customers to use maps, geocode, and calculate routes effectively. Esri’s location services are built with high-quality, authoritative, and ready-to-use location data, curated by expert teams of cartographers, geographers, and demographers. Esri data sources are not available in the `eusc-de-east-1` Region.
 

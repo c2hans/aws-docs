@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-clo
 ---
 
 # CloudTrail log file example for S3 Vectors
-<a name="s3-vectors-cloudtrail-log-example"></a>
 
 The following examples show CloudTrail log entries for S3 Vectors data events. Data events are logged when you perform operations on vector data within your vector indexes.
 

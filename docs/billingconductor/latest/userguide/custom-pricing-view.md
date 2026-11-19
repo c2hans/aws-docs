@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/custom
 ---
 
 # Viewing your pro forma costs on the Bills page
-<a name="custom-pricing-view"></a>
 
 After you create and assign your billing groups and pricing plans, you can view your custom billing dimensions with usage type granularity for each billing group under management.
 

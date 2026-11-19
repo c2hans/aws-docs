@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/reachability-ana
 ---
 
 # Quotas for Reachability Analyzer
-<a name="reachability-analyzer-limits"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. You can request increases for some quotas, but not for all quotas.
 

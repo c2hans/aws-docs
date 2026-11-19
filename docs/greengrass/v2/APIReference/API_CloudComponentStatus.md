@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_CloudComp
 ---
 
 # CloudComponentStatus
-<a name="API_CloudComponentStatus"></a>
 
 Contains the status of a component version in the AWS IoT Greengrass service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-deli
 ---
 
 # Delighted connector for Amazon AppFlow
-<a name="connectors-delighted"></a>
 
 Delighted is a cloud-based survey tool that helps its users distribute surveys and then collect and analyze the feedback. If you're a Delighted user, then your account contains data about your survey responses. You can use Amazon AppFlow to transfer data from Delighted to certain AWS services or other supported applications.
 

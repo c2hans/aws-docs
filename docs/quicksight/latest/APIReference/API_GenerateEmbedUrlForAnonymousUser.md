@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gener
 ---
 
 # GenerateEmbedUrlForAnonymousUser
-<a name="API_GenerateEmbedUrlForAnonymousUser"></a>
 
 Generates an embed URL that you can use to embed an AWS Quick dashboard or visual in your website, without having to register any reader users. Before you use this action, make sure that you have configured the dashboards and permissions.
 

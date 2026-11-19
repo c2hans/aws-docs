@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateWorker
-<a name="API_UpdateWorker"></a>
 
 Updates a worker.
 

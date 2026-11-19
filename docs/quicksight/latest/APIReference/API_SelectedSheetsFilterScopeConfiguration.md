@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Selec
 ---
 
 # SelectedSheetsFilterScopeConfiguration
-<a name="API_SelectedSheetsFilterScopeConfiguration"></a>
 
 The configuration for applying a filter to specific sheets or visuals. You can apply this filter to multiple visuals that are on one sheet or to all visuals on a sheet.
 

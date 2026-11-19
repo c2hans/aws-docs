@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CancelDataQuality
 ---
 
 # CancelDataQualityRuleRecommendationRun
-<a name="API_CancelDataQualityRuleRecommendationRun"></a>
 
 Cancels the specified recommendation run that was being used to generate rules.
 

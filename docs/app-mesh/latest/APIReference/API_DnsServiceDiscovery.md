@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DnsServ
 ---
 
 # DnsServiceDiscovery
-<a name="API_DnsServiceDiscovery"></a>
 
 An object that represents the DNS service discovery information for your virtual node.
 

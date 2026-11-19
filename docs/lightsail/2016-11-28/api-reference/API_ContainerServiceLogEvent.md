@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # ContainerServiceLogEvent
-<a name="API_ContainerServiceLogEvent"></a>
 
 Describes the log events of a container of an Amazon Lightsail container service.
 

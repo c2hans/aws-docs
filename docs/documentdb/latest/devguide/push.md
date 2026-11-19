@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/push.html
 ---
 
 # $push
-<a name="push"></a>
 
 The `$push` operator in Amazon DocumentDB is used to add an item to an array field in a document. This operator is particularly useful when you need to append new data to an existing array without overwriting the entire array.
 

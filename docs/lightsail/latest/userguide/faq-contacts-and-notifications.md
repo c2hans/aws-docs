@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/faq-contacts-
 ---
 
 # Contacts and monitoring notifications
-<a name="faq-contacts-and-notifications"></a>
 
 ## What are notifications?
 <a name="what-are-notifications"></a>

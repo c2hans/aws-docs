@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/config-service_ex
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DescribeComplianceByResource` with a CLI
-<a name="config-service_example_config-service_DescribeComplianceByResource_section"></a>
 
 The following code examples show how to use `DescribeComplianceByResource`.
 

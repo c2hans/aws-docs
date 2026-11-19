@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_M
 ---
 
 # MailFromAttributes
-<a name="API_MailFromAttributes"></a>
 
 A list of attributes that are associated with a MAIL FROM domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/release-notes
 ---
 
 # Release notes
-<a name="release-notes"></a>
 
 These release notes describe the Amazon DocumentDB features, improvements, and bug fixes organized by major engine version. Within each version section, entries are listed by date in a table format.
 

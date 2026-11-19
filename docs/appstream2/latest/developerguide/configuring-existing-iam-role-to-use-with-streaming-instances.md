@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Configuring an Existing IAM Role to Use With WorkSpaces Applications Streaming Instances
-<a name="configuring-existing-iam-role-to-use-with-streaming-instances"></a>
 
 This topic describes how to configure an existing IAM role so that you can use it with image builders and fleet streaming instances.
 

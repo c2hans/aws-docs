@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSSEC02-BP01 Determine applicable regulatory frameworks and enforce data privacy requirements by implementing controls
-<a name="lssec02-bp01"></a>
 
  Many life sciences organizations fall under data privacy requirements or regulations which influences data security and architecture, for example where data may be physically located.
 

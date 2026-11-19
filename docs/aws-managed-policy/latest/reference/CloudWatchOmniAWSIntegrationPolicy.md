@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchOmniAWSIntegrationPolicy
-<a name="CloudWatchOmniAWSIntegrationPolicy"></a>
 
 **Description**: Provides permissions required by CloudWatch Omni to discover and read AWS resource topology
 

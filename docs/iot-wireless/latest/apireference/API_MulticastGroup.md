@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Mul
 ---
 
 # MulticastGroup
-<a name="API_MulticastGroup"></a>
 
 A multicast group.
 

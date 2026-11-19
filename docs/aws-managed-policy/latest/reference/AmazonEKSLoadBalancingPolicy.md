@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSLoadBalancingPolicy
-<a name="AmazonEKSLoadBalancingPolicy"></a>
 
 **Description**: Policy attached to the EKS Cluster Role that grants permissions to manage the cluster's load balancing resources.
 

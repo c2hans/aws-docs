@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Content ingestion and contribution
-<a name="smrel01"></a>
 
 Ingestion is the entry point of the streaming workflow. Failures here cascade through the entire delivery chain. Ingestion reliability covers redundant contribution paths for live sources and validated, resumable transfers for file-based content.
 

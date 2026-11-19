@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredService
-<a name="API_RegisteredService"></a>
 
 Represents a registered service with its configuration and accessible resources.
 

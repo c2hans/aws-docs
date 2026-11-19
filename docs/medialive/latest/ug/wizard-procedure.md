@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/wizard-procedure.htm
 ---
 
 # Using the workflow wizard
-<a name="wizard-procedure"></a>
 
 ## Creating a workflow
 <a name="wizard-create"></a>

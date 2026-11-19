@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd06.h
 ---
 
 # Cloud financial management
-<a name="fnd06"></a>
 
  Managing cloud spend combines detailed cost visibility, standardized attribution, effective tooling, good commercial agreements, outcome-based metrics, and smart use of commitment discounts. This capability covers the best practices that let organizations understand, attribute, and optimize cloud spending as it grows.
 

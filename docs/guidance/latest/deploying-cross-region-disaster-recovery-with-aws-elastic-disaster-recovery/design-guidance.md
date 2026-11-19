@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/deploying-cross-region-d
 ---
 
 # Design Guidance
-<a name="design-guidance"></a>
 
 ## Cross-Region
 <a name="cross-region"></a>

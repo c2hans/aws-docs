@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel07-b
 ---
 
 # REL07-BP03 Obtain resources upon detection that more resources are needed for a workload
-<a name="rel07-bp03"></a>
 
  Provisioning enough capacity in advance to cover peak demand wastes money during quiet periods and still risks running short when a peak exceeds the estimate. Provisioning capacity as demand appears removes both problems, but only if the workload can add resources fast enough and the scaling signal reflects real demand.
 

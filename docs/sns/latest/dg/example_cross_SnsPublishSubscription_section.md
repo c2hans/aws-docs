@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_cross_SnsPublishSu
 ---
 
 # Build a publish and subscription application that translates messages
-<a name="example_cross_SnsPublishSubscription_section"></a>
 
 The following code examples show how to create an application that has subscription and publish functionality and translates messages.
 

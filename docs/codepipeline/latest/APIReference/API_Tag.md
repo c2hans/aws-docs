@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Tag
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag is a key-value pair that is used to manage the resource.
 

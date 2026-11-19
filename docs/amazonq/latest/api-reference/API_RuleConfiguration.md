@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_RuleCon
 ---
 
 # RuleConfiguration
-<a name="API_RuleConfiguration"></a>
 
 Provides configuration information about a rule.
 

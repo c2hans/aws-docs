@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/server-list.html
 ---
 
 # AWS DRS source servers page
-<a name="server-list"></a>
 
 The **Source servers** page lists all of the source servers that were added to AWS Elastic Disaster Recovery. It allows you to manage your source servers and perform commands for one or more servers, such as controlling replication and launching Initiate recovery job instances. You are likely to interact with AWS Elastic Disaster Recovery predominantly through this page.
 

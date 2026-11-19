@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/creating-an-add-on.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create an Amazon EKS add-on
-<a name="creating-an-add-on"></a>
 
 Amazon EKS add-ons are add-on software for Amazon EKS clusters. All Amazon EKS add-ons:
 + Include the latest security patches and bug fixes.

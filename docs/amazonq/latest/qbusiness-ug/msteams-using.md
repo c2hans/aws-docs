@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/msteams-usin
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Using the Amazon Q Business Microsoft Teams app
-<a name="msteams-using"></a>
 
 **Topics**
 + [Prerequisites](#msteams-using-prerequisites)

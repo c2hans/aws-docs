@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_HTTP_En
 ---
 
 # Sending logs using the NDJSON endpoint (ND-JSON Logs)
-<a name="CWL_HTTP_Endpoints_NDJSON"></a>
 
 The ND-JSON Logs endpoint (`/ingest/bulk`) accepts logs in [NDJSON (Newline Delimited JSON)](https://github.com/ndjson/ndjson-spec) format. Each line contains exactly one JSON value, separated by newline characters.
 

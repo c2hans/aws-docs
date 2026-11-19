@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_List
 ---
 
 # ListLiveSources
-<a name="API_ListLiveSources"></a>
 
 Lists the live sources contained in a source location. A source represents a piece of content.
 

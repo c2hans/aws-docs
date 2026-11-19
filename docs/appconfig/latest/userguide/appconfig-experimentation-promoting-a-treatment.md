@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # Promoting a winning treatment
-<a name="appconfig-experimentation-promoting-a-treatment"></a>
 
 After you identify a winning treatment, you can promote it to all users by updating and deploying the feature flag configuration. The order in which you perform these steps determines whether your users experience a seamless transition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-audit.htm
 ---
 
 # Audit
-<a name="acxd-audit"></a>
 
 Audit gives governance and administrator teams a centralized place to review change activity inside an agentic CX designer workspace.
 

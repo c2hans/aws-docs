@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Platform
 ---
 
 # PlatformProgrammingLanguage
-<a name="API_PlatformProgrammingLanguage"></a>
 
 A programming language supported by the platform.
 

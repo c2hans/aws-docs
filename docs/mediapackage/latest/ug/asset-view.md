@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/asset-view.html
 ---
 
 # Viewing asset details
-<a name="asset-view"></a>
 
 You can view all assets that are configured in AWS Elemental MediaPackage or the details of a specific asset, including the packaging configurations that are associated with it.
 

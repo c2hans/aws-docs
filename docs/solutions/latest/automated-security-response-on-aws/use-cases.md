@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Enforce compliance to a standard across your organization’s accounts and Regions**
 

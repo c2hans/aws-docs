@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost06-
 ---
 
 # COST06-BP04 Consider using shared resources
-<a name="cost06-bp04"></a>
 
  Common functions duplicated across teams multiply cost without adding value. When multiple business units need the same capability, such as monitoring, backups, directory services, or connectivity, a shared resource raises utilization and lowers total cost of ownership. Consolidation only pays off when you allocate the shared cost back to the teams that consume it.
 

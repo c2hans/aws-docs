@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Configuration
-<a name="gateway-interceptors-configuration"></a>
 
 Interceptors can be configured with an input parameter called `passRequestHeaders`
 

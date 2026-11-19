@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/securit
 ---
 
 # Identity and access management in AWS Device Farm
-<a name="security-iam"></a>
 
 ## Audience
 <a name="security_iam_audience"></a>

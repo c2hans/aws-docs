@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemEvent
-<a name="API_SystemEvent"></a>
 
 Represents an event in the system event log.
 

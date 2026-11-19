@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSUS03-BP02 Reduce unnecessary or redundant data from your domain
-<a name="aossus03-bp02"></a>
 
  Reduce storage costs, improve resource utilization, and enhance resource management by removing unnecessary or redundant data from your domain.
 

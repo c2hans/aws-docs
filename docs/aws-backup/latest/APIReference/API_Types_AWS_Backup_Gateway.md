@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Types
 ---
 
 # AWS Backup gateway
-<a name="API_Types_AWS_Backup_Gateway"></a>
 
 The following data types are supported by AWS Backup gateway:
 +  [BandwidthRateLimitInterval](API_BGW_BandwidthRateLimitInterval.md)

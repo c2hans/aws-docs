@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Endpo
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 Represents an available endpoint against which to make API calls against, as well as the TTL for that endpoint.
 

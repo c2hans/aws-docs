@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/App
 ---
 
 # Example tables and data for use in DynamoDB
-<a name="AppendixSampleTables"></a>
 
 The *Amazon DynamoDB Developer Guide* uses sample tables to illustrate various aspects of DynamoDB.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Origi
 ---
 
 # OriginApprovalRuleTemplate
-<a name="API_OriginApprovalRuleTemplate"></a>
 
 Returns information about the template that created the approval rule for a pull request.
 

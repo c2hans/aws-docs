@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_GetDe
 ---
 
 # GetDeploymentTarget
-<a name="API_GetDeploymentTarget"></a>
 
  Returns information about a deployment target.
 

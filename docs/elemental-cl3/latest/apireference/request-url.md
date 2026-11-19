@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/reques
 ---
 
 # Request URLs
-<a name="request-url"></a>
 
 The request consists of the operation, the IP address of the Conductor Live node, and resources in a parent/child structure. For example:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Sc
 ---
 
 # SceneSummary
-<a name="API_SceneSummary"></a>
 
 An object that contains information about a scene.
 

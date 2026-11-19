@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # IdentityProviderSummary
-<a name="API_IdentityProviderSummary"></a>
 
 Describes an identity provider.
 

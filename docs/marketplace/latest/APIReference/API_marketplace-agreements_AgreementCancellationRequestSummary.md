@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AgreementCancellationRequestSummary
-<a name="API_marketplace-agreements_AgreementCancellationRequestSummary"></a>
 
 Summary view of an agreement cancellation request.
 

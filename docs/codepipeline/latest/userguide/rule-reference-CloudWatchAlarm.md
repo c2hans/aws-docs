@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/rule-refer
 ---
 
 # CloudWatchAlarm
-<a name="rule-reference-CloudWatchAlarm"></a>
 
 When you create a condition, you can add the `CloudWatchAlarm` rule. This section provides a reference for the rule parameters. For more information about rules and conditions, see [How do stage conditions work?](concepts-how-it-works-conditions.md).
 

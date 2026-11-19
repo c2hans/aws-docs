@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-ConfigureMaintenanceWindows`
-<a name="aws-configuremaintenancewindows"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Folde
 ---
 
 # Folder
-<a name="API_Folder"></a>
 
 A folder in Quick Sight.
 

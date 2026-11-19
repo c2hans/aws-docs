@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Quick Suite Analytics
-<a name="customer-360-quick-suite"></a>
 
 Quick Suite is AWS’s unified business intelligence platform that combines interactive dashboards, AI-powered analytics agents, and automated workflows to help organizations move from insight to action in a single integrated experience.
 

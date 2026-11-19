@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # QuestionDifference
-<a name="API_QuestionDifference"></a>
 
 A question difference return object.
 

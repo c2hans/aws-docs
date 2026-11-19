@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Image
 ---
 
 # ImageStaticFile
-<a name="API_ImageStaticFile"></a>
 
 A static file that contains an image.
 

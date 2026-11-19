@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateNodegr
 ---
 
 # UpdateNodegroupVersion
-<a name="API_UpdateNodegroupVersion"></a>
 
 Updates the Kubernetes version or AMI version of an Amazon EKS managed node group.
 

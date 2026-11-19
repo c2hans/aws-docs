@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport-limi
 ---
 
 # Considerations for instance export
-<a name="vmexport-limits"></a>
 
 Exporting instances and volumes is subject to the following limitations:
 + You must export your instances and volumes to one of the following image formats that your virtualization environment supports:

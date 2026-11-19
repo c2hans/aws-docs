@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/basics-a
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Asynchronous Programming
-<a name="basics-async"></a>
 
 You can use either *synchronous* or *asynchronous* methods to call operations on AWS services. Synchronous methods block your thread’s execution until the client receives a response from the service. Asynchronous methods return immediately, giving control back to the calling thread without waiting for a response.
 

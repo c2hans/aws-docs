@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # RenderingConfiguration
-<a name="API_amazon-q-connect_RenderingConfiguration"></a>
 
 Information about how to render the content.
 

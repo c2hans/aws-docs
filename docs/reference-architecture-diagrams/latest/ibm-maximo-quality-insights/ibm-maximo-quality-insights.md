@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Computer Vision for Quality Insights with IBM Maximo on AWS
-<a name="ibm-maximo-quality-insights"></a>
 
 Publication date: **April 11, 2023 ([Diagram history](#imq-diagram-history))**
 

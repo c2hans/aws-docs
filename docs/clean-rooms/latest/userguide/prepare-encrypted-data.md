@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/prepare-enc
 ---
 
 # Preparing encrypted data tables with Cryptographic Computing for Clean Rooms
-<a name="prepare-encrypted-data"></a>
 
 Cryptographic Computing for Clean Rooms (C3R) is a capability in AWS Clean Rooms. You can use C3R to limit cryptographically what can be learned by any party and AWS in an AWS Clean Rooms collaboration.
 

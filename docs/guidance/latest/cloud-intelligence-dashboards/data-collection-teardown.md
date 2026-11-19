@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Teardown
-<a name="data-collection-teardown"></a>
 
 **Note**
 Please make sure you empty s3 buckets before deletion of CidDataCollectionStack.

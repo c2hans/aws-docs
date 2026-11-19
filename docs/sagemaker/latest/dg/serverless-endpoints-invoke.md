@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 ---
 
 # Invoke a serverless endpoint
-<a name="serverless-endpoints-invoke"></a>
 
 In order to perform inference using a serverless endpoint, you must send an HTTP request to the endpoint. You can use the [InvokeEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html) API or the AWS CLI, which make a `POST` request to invoke your endpoint. The maximum request and response payload size for serverless invocations is 4 MB. For serverless endpoints:
 + The model must download and the server must respond successfully to `/ping` within 3 minutes.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/logging-using
 ---
 
 # Logging AWS CodeConnections API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail-connections"></a>
 
 AWS CodeConnections is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for notifications as events. The calls captured include calls from the Developer Tools console and code calls to the AWS CodeConnections API operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_ListRuntim
 ---
 
 # ListRuntimeVersions
-<a name="API_ListRuntimeVersions"></a>
 
 Returns a paginated list of versions for the specified runtime.
 

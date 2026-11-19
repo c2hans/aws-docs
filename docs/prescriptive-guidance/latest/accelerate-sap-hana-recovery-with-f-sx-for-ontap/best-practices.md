@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/accelerate-
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Backup policy design
 <a name="backup-policy-design.47b692f3-bf43-52e1-beab-b4da4a782301"></a>

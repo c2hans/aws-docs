@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-wit
 ---
 
 # System tables and commands in Aurora DSQL
-<a name="working-with-systems-tables"></a>
 
 See the following sections to learn about the supported system tables and catalogs in Aurora DSQL as well as useful queries for fetching information about the system, such as the version.
 

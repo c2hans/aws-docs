@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-
 ---
 
 # Access logging for REST APIs
-<a name="set-up-access-logging"></a>
 
 In access logging, you log who has accessed your API and how the caller accessed the API. You can create your own log group or choose an existing log group. To specify the access details, you select [`$context`](api-gateway-variables-for-access-logging.md) variables, a log format, and a log group destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGrafanaWorkspacePermissionManagementV2
-<a name="AWSGrafanaWorkspacePermissionManagementV2"></a>
 
 **Description**: Provides ability to update IAM Identity Center (IdC) user and group permissions for Amazon Managed Grafana workspaces.
 

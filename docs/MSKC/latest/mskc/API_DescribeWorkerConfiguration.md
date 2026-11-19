@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_DescribeWorkerConfi
 ---
 
 # DescribeWorkerConfiguration
-<a name="API_DescribeWorkerConfiguration"></a>
 
 Returns information about a worker configuration.
 

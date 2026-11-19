@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_GetT
 ---
 
 # GetThingShadow
-<a name="API_iotdata_GetThingShadow"></a>
 
 Gets the shadow for the specified thing.
 

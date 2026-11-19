@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/appsync-gra
 ---
 
 # appsync-graphql-api-xray-enabled
-<a name="appsync-graphql-api-xray-enabled"></a>
 
 Checks if AWS AppSync GraphQL APIs have AWS X-Ray tracing enabled. The rule is NON\_COMPLIANT if configuration.XrayEnabled is false.
 

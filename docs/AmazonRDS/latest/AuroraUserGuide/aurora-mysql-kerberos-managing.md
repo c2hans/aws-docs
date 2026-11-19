@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Managing a DB cluster in a domain
-<a name="aurora-mysql-kerberos-managing"></a>
 
 You can use the AWS CLI or the RDS API to manage your DB cluster and its relationship with your managed Active Directory. For example, you can associate an Active Directory for Kerberos authentication and disassociate an Active Directory to turn off Kerberos authentication. You can also move a DB cluster to be externally authenticated by one Active Directory to another.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Manage application resources with AWS Launch Wizard for Active Directory
-<a name="launch-wizard-ad-managing"></a>
 
 After you deploy your self-managed domain controllers, you can manage them by following these steps.
 

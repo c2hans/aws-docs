@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-mediac
 ---
 
 # AWS Elemental MediaConnect events
-<a name="events-ref-mediaconnect"></a>
 
 MediaConnect sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

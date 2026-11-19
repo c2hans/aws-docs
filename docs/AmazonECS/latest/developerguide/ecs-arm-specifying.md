@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-arm-
 ---
 
 # Specifying the ARM architecture in an Amazon ECS task definition
-<a name="ecs-arm-specifying"></a>
 
 To use the ARM architecture, specify `ARM64` for the `cpuArchitecture` task definition parameter.
 

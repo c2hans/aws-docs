@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 9: Test the end user experience
-<a name="getstarted-verify-Terraform"></a>
 
 To verify end users can successfully access the end user console view and launch your **Simple S3 bucket** product, sign in to AWS as the end user and perform the tasks below.
 

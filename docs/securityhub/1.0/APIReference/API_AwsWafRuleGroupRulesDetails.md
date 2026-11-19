@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRuleGroupRulesDetails
-<a name="API_AwsWafRuleGroupRulesDetails"></a>
 
 Provides information about the rules attached to the rule group. These rules identify the web requests that you want to allow, block, or count.
 

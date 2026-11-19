@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-endpoints
 ---
 
 # Lambda Web Function endpoints
-<a name="web-functions-endpoints"></a>
 
 An endpoint is a child resource of a Web Function that provides a network entry point for HTTP traffic. Each endpoint includes a unique domain name with TLS and an authentication type. It also has settings for geographic scope, scaling, throttling, and traffic routing. A Web Function can have up to 10 endpoints, each with independent configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/INTERNAL_ERRO
 ---
 
 # INTERNAL\_ERROR\_SPOT\_NO\_CAPACITY\_PRIMARY
-<a name="INTERNAL_ERROR_SPOT_NO_CAPACITY_PRIMARY"></a>
 
 ## Overview
 <a name="INTERNAL_ERROR_SPOT_NO_CAPACITY_PRIMARY_overview"></a>

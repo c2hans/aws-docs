@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSControlTowerCloudTrailRolePolicy
-<a name="AWSControlTowerCloudTrailRolePolicy"></a>
 
 **Description**: AWS Control Tower enables AWS CloudTrail as a best practice and provides this role to AWS CloudTrail. AWS CloudTrail assumes this role to create and publish CloudTrail logs
 

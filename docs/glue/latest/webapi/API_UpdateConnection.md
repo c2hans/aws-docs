@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateConnection.
 ---
 
 # UpdateConnection
-<a name="API_UpdateConnection"></a>
 
 Updates a connection definition in the Data Catalog.
 

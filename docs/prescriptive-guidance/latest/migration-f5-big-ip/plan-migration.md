@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Planning the migration
-<a name="plan-migration"></a>
 
 Planning your migration process is key to ensuring a smooth and successful migration. The following sections outline how to plan your migration, as well as key considerations for it.
 

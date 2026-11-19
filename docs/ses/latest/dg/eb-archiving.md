@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-archiving.html
 ---
 
 # Email archiving
-<a name="eb-archiving"></a>
 
 Email archiving provides a way for you to archive the types of email you specify coming into your ingress endpoint, or emails you send through a configuration set, as well as providing a way to find your archived messages through a rich set of advanced search filters and the ability to export the results.
 

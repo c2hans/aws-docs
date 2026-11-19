@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DataCellsFilter
-<a name="API_DataCellsFilter"></a>
 
 A structure that describes certain columns on certain rows.
 

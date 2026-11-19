@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ReadReceip
 ---
 
 # ReadReceiptConfig
-<a name="API_ReadReceiptConfig"></a>
 
 Configuration for read receipts at the network level, controlling whether senders can see when their messages have been read.
 

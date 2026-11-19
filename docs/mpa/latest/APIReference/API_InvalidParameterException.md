@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_InvalidParam
 ---
 
 # InvalidParameterException
-<a name="API_InvalidParameterException"></a>
 
 The request contains an invalid parameter value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteCi
 ---
 
 # DeleteCidrCollection
-<a name="API_DeleteCidrCollection"></a>
 
 Deletes a CIDR collection in the current AWS account. The collection must be empty before it can be deleted.
 

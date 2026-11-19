@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterAutoScalingConfig
-<a name="API_ClusterAutoScalingConfig"></a>
 
 Specifies the autoscaling configuration for a HyperPod cluster.
 

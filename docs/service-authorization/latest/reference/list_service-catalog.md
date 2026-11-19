@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Service Catalog
-<a name="list_service-catalog"></a>
 
 AWS Service Catalog (service prefix: `servicecatalog`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf03.
 ---
 
 # Data management
-<a name="perf03"></a>
 
  The right data management solution for a workload depends on the shape of the data and how the workload uses it: the data type, whether access is random or sequential, the throughput and latency it demands, how often data is read and updated, and the durability and availability it requires. No single storage technology serves all of these well, so a one-size-fits-all choice forces trade-offs that degrade performance and raise cost.
 

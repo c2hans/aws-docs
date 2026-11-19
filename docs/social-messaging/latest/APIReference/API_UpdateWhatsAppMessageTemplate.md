@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # UpdateWhatsAppMessageTemplate
-<a name="API_UpdateWhatsAppMessageTemplate"></a>
 
 Updates an existing WhatsApp message template.
 

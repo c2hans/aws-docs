@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # IBM Planning Analytics with Watson on AWS
-<a name="ibm-planning-analytics-with-watson"></a>
 
 Publication date: **May 16, 2023 ([Diagram history](#diagram-history))**
 

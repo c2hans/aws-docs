@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoo
 ---
 
 # TELCOOPS05-BP02 Assign network interfaces in dependency order to prevent binding failures during instance lifecycle events
-<a name="telcoops05-bp02"></a>
 
  When an EC2 instance hosting a container network function (CNF) launches or is replaced, its interfaces must be attached in the order the application's startup sequence requires. If the CNF binds to an interface that does not yet exist, it crashes or fails without raising an error. This best practice attaches interfaces in dependency order and holds the CNF until its interfaces are ready.
 

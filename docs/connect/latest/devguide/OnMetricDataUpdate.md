@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnMetricDataUpda
 ---
 
 # OnMetricDataUpdate
-<a name="OnMetricDataUpdate"></a>
 
 ## Metric Data Update - Rule Conditions
 <a name="OnMetricDataUpdate-ruleconditions"></a>

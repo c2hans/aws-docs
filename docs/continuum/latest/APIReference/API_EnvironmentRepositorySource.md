@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentRepositorySource
-<a name="API_EnvironmentRepositorySource"></a>
 
 One repository selected from a previously-created integration.
 

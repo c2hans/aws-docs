@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # NotificationTrigger
-<a name="API_NotificationTrigger"></a>
 
 Trigger conditions for a notification rule. `stateValues` entries combine with OR semantics; empty / omitted = any state.
 

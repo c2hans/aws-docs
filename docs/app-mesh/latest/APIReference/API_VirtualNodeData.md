@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualNodeData
-<a name="API_VirtualNodeData"></a>
 
 An object that represents a virtual node returned by a describe operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListUploadJobs
-<a name="API_connect-customer-profiles_ListUploadJobs"></a>
 
 This API retrieves a list of upload jobs for the specified domain.
 

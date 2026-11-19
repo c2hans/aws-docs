@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawlin
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## What if a robots.txt file is not available?
 <a name="faq1"></a>

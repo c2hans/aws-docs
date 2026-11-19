@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetGeoLo
 ---
 
 # GetGeoLocation
-<a name="API_GetGeoLocation"></a>
 
 Gets information about whether a specified geographic location is supported for Amazon Route 53 geolocation resource record sets.
 

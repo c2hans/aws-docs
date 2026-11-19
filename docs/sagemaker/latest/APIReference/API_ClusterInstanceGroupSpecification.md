@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterInstanceGroupSpecification
-<a name="API_ClusterInstanceGroupSpecification"></a>
 
 The specifications of an instance group that you need to define.
 

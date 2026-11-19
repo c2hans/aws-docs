@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_access
 ---
 
 # Troubleshoot access denied error messages
-<a name="troubleshoot_access-denied"></a>
 
 The following information can help you identify, diagnose, and resolve access denied errors with AWS Identity and Access Management. Access denied errors appear when AWS explicitly or implicitly denies an authorization request.
 + An *explicit denial* occurs when a policy contains a `Deny` statement for the specific AWS action.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs-create-ta
 ---
 
 # Create a table for Amazon VPC flow logs and query it
-<a name="vpc-flow-logs-create-table-statement"></a>
 
 The following procedure creates an Amazon VPC table for Amazon VPC flow logs. When you create a flow log with a custom format, you create a table with fields that match the fields that you specified when you created the flow log in the same order that you specified them.
 

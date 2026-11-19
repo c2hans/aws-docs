@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Building
-<a name="build"></a>
 
 Using a shared Db2 database enables concurrent execution of identical or consistent applications in both mainframe and cloud environments. This approach offers several advantages when you maintain the same application version across both platforms, and provides enhanced flexibility and reliability in your operations.
 

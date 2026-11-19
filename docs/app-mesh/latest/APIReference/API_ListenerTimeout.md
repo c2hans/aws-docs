@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Listene
 ---
 
 # ListenerTimeout
-<a name="API_ListenerTimeout"></a>
 
 An object that represents timeouts for different protocols.
 

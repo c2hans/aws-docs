@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCodeSe
 ---
 
 # ListCodeSecurityIntegrations
-<a name="API_ListCodeSecurityIntegrations"></a>
 
 Lists all code security integrations in your account.
 

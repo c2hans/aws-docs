@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeAssetCompositeModel
-<a name="API_DescribeAssetCompositeModel"></a>
 
 Retrieves information about an asset composite model (also known as an asset component). An `AssetCompositeModel` is an instance of an `AssetModelCompositeModel`. If you want to see information about the model this is based on, call [DescribeAssetModelCompositeModel](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAssetModelCompositeModel.html).
 

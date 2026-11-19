@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListTrainedModelInferenceJobs
-<a name="API_ListTrainedModelInferenceJobs"></a>
 
 Returns a list of trained model inference jobs that match the request parameters.
 

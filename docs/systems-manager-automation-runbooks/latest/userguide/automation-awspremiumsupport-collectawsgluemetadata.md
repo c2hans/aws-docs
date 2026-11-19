@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSPremiumSupport-CollectAWSGlueMetadata`
-<a name="automation-awspremiumsupport-collectawsgluemetadata"></a>
 
 ## Description
 <a name="automation-awspremiumsupport-collectawsgluemetadata-description"></a>

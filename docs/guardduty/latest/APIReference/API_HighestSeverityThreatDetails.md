@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Highes
 ---
 
 # HighestSeverityThreatDetails
-<a name="API_HighestSeverityThreatDetails"></a>
 
 Contains details of the highest severity threat detected during scan and number of infected files.
 

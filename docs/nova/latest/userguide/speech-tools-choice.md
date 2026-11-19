@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/speech-tools-choic
 ---
 
 # Controlling how tools are chosen
-<a name="speech-tools-choice"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For the Amazon Nova 2 Sonic guide, visit [Tool configuration](https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-tool-configuration.html).

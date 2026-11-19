@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_St
 ---
 
 # StructuredMessageFieldNameAndDataTypePair
-<a name="API_StructuredMessageFieldNameAndDataTypePair"></a>
 
 Represents a `StructureMessageName` to `DataType` map element.
 

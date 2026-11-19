@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/tags-update
 ---
 
 # Editing tags for Security Hub CSPM resources
-<a name="tags-update"></a>
 
 As your environment or requirements change over time, you can evaluate existing tags for your AWS Security Hub CSPM resources and change the tags as necessary. A *tag* is a label that you define and assign to one or more AWS resources, including certain types of Macie resources. Each tag consists of a required *tag key* and an optional *tag value*. A *tag key* is a general label that acts as a category for a more specific tag value. A *tag value* acts as a descriptor for a tag key.
 

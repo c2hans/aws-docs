@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DirectQueryDataSource
-<a name="API_DirectQueryDataSource"></a>
 
  The configuration details for a data source that can be directly queried.
 

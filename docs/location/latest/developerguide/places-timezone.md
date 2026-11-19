@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/places-ti
 ---
 
 # Time zone
-<a name="places-timezone"></a>
 
 Amazon Location Service Places APIs support time zone retrieval as an additional feature. When you include `TimeZone` in the `AdditionalFeatures` request parameter, the API response includes time zone information for the location, such as the IANA time zone name, UTC offset, and current offset (accounting for daylight saving time).
 

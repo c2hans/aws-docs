@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RegistrySummary
-<a name="API_RegistrySummary"></a>
 
 Contains summary information about a registry.
 

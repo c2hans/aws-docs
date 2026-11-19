@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_GitHubR
 ---
 
 # GitHubRepository
-<a name="API_GitHubRepository"></a>
 
 Information about a GitHub repository for code analysis.
 

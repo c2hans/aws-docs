@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Perfor
 ---
 
 # PerformanceInsightsMetricQuery
-<a name="API_PerformanceInsightsMetricQuery"></a>
 
 A single Performance Insights metric query to process. You must provide the metric to the query. If other parameters aren't specified, Performance Insights returns all data points for the specified metric. Optionally, you can request the data points to be aggregated by dimension group (`GroupBy`) and return only those data points that match your criteria (`Filter`).
 

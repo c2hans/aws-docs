@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 ---
 
 # Install the CodeDeploy agent
-<a name="codedeploy-agent-operations-install"></a>
 
 To use CodeDeploy on EC2 instances or on-premises servers, the CodeDeploy agent must be installed first. You can install the CodeDeploy agent with AWS Systems Manager or with the command line. For more information about Systems Manager, see [What is AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html).
 

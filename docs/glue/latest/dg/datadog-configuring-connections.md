@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/datadog-configuring-conne
 ---
 
 # Configuring Datadog connections
-<a name="datadog-configuring-connections"></a>
 
 Datadog supports custom authentication. Following are the steps to configure Datadog connection:
 

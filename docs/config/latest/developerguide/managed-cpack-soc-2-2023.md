@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-cpa
 ---
 
 # SOC 2 - AICPA Trust Services Criteria
-<a name="managed-cpack-soc-2-2023"></a>
 
 This AWS Config managed conformance pack provides a curated mapping between the System and Organization Controls (SOC) 2 Trust Services Criteria (SSAE 18, October 2023) criteria and AWS Config managed rules. Each Config rule evaluates specific AWS resources and is associated with one or more SOC 2 criteria. AWS Config maintains and automatically updates the managed conformance pack as supported rules and resource types evolve. Refer to the table below for details on the rules, associated controls, guidance, and AWS Region availability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tools.html
 ---
 
 # .tools
-<a name="tools"></a>
 
 Used for information about any kind of tool.
 

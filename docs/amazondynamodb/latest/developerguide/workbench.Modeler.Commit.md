@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
 ---
 
 # Committing a data model to DynamoDB
-<a name="workbench.Modeler.Commit"></a>
 
  When you are satisfied with your data model, you can commit the model to Amazon DynamoDB.
 

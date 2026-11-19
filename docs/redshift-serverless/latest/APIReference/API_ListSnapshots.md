@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListSnapshots
-<a name="API_ListSnapshots"></a>
 
 Returns a list of snapshots.
 

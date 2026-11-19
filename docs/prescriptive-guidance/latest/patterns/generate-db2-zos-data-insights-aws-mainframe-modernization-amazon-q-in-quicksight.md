@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ge
 ---
 
 # Generate Db2 z/OS data insights by using AWS Mainframe Modernization and Amazon Q in Quick Sight
-<a name="generate-db2-zos-data-insights-aws-mainframe-modernization-amazon-q-in-quicksight"></a>
 
 *Shubham Roy, Roshna Razack, and Santosh Kumar Singh, Amazon Web Services*
 

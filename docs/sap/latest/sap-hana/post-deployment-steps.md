@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/post-deployment-step
 ---
 
 # Post Deployment Steps
-<a name="post-deployment-steps"></a>
 
 1. Complete the steps required to connect your instance to your corporate directory service, such as Microsoft Active Directory, if needed.
 

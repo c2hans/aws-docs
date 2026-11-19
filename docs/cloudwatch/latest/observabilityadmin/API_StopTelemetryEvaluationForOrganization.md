@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # StopTelemetryEvaluationForOrganization
-<a name="API_StopTelemetryEvaluationForOrganization"></a>
 
  This action offboards the Organization of the caller AWS account from the telemetry config feature.
 

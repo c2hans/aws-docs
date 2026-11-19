@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSOPS02-BP02 Automate the process of taking snapshots
-<a name="aosops02-bp02"></a>
 
  Schedule automatic snapshots to maintain consistent backups and data recoverability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/working-wit
 ---
 
 # Intermediate tables in AWS Clean Rooms
-<a name="working-with-intermediate-tables"></a>
 
 An *intermediate table* is a collaboration-scoped resource in AWS Clean Rooms that caches analysis results within a collaboration for reuse in subsequent analyses.
 

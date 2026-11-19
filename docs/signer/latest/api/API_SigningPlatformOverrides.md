@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SigningPlatformOve
 ---
 
 # SigningPlatformOverrides
-<a name="API_SigningPlatformOverrides"></a>
 
 Any overrides that are applied to the signing configuration of a signing platform.
 

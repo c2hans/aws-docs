@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost08-
 ---
 
 # COST08-BP03 Deploy resources dynamically
-<a name="cost08-bp03"></a>
 
  With static capacity, you either pay for peak demand around the clock or you fail when demand climbs past what you provisioned. Deploying resources dynamically avoids both problems by adjusting capacity as demand changes. Some demand is predictable by time of day or week. The rest varies with real-time conditions. Match the provisioning method to the type of demand.
 

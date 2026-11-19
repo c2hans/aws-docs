@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeServiceLinkVirtualInterfaces
-<a name="API_DescribeServiceLinkVirtualInterfaces"></a>
 
 Describes the Outpost service link virtual interfaces.
 

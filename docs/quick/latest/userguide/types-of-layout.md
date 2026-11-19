@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/types-of-layout.h
 ---
 
 # Types of layout
-<a name="types-of-layout"></a>
 
 There are three dashboard layout designs you can choose from: **Tiled**, **Free-form**, and **Classic**.
 

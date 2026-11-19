@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteEma
 ---
 
 # DeleteEmailIdentity
-<a name="API_DeleteEmailIdentity"></a>
 
 Deletes an email identity. An identity can be either an email address or a domain name.
 

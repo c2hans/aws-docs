@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_KmsAccess.ht
 ---
 
 # KmsAccess
-<a name="API_KmsAccess"></a>
 
 Configuration for AWS Key Management Service (KMS) access from the ODB network.
 

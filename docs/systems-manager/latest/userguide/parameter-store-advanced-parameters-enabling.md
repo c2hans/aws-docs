@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Changing a standard parameter to an advanced parameter
-<a name="parameter-store-advanced-parameters-enabling"></a>
 
 Use the following procedure to change an existing standard parameter to an advanced parameter. For information about how to create a new advanced parameter, see [Creating Parameter Store parameters in Systems Manager](sysman-paramstore-su-create.md).
 

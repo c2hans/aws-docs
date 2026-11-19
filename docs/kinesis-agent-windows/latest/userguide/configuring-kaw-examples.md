@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/c
 ---
 
 # Kinesis Agent for Windows Configuration Examples
-<a name="configuring-kaw-examples"></a>
 
  The `appsettings.json` configuration file is a JSON document that controls how Amazon Kinesis Agent for Microsoft Windows collects logs, events, and metrics. It also controls how Kinesis Agent for Windows transforms that data and streams it to various AWS services. For details about the source, sink, and pipe declarations in the configuration file, see [Source Declarations](source-object-declarations.md), [Sink Declarations](sink-object-declarations.md), and [Pipe Declarations](pipe-object-declarations.md).
 

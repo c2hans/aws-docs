@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-sche
 ---
 
 # Creating a schedule group in EventBridge Scheduler
-<a name="managing-schedule-group-create"></a>
 
 Use schedule groups and tagging to organize schedules that share a common purpose or belong to the same environment. In the following steps, you create a new schedule group and label it using a tag. You then associate a new schedule with that group.
 

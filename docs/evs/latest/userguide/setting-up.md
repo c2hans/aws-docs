@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/setting-up.html
 ---
 
 # Prepare your AWS account
-<a name="setting-up"></a>
 
 Before you build the network for Amazon Elastic VMware Service, complete these one-time tasks in the AWS account where you plan to deploy. The tasks are the same for both deployment modes. After you finish, continue with [Build the network foundation](network-foundation.md).
 

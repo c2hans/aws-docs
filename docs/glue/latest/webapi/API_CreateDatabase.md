@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateDatabase.ht
 ---
 
 # CreateDatabase
-<a name="API_CreateDatabase"></a>
 
 Creates a new database in a Data Catalog.
 

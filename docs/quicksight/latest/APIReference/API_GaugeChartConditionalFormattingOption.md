@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gauge
 ---
 
 # GaugeChartConditionalFormattingOption
-<a name="API_GaugeChartConditionalFormattingOption"></a>
 
 Conditional formatting options of a `GaugeChartVisual`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/inheritan
 ---
 
 # Inheritance terminology
-<a name="inheritance-terminology"></a>
 
 This topic uses the following terms when discussing declarative policy inheritance.
 

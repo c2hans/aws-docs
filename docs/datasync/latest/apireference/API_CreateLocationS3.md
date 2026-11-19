@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateL
 ---
 
 # CreateLocationS3
-<a name="API_CreateLocationS3"></a>
 
 Creates a transfer *location* for an Amazon S3 bucket. AWS DataSync can use this location as a source or destination for transferring data.
 

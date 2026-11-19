@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Li
 ---
 
 # ListJobs
-<a name="API_ListJobs"></a>
 
 This operation lists your jobs sorted by CreatedAt in descending order.
 

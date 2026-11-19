@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-h
 ---
 
 # Configuring HTTPS for your Elastic Beanstalk environment
-<a name="configuring-https"></a>
 
 This topics in this section explain how to configure HTTPS for your Elastic Beanstalk environment. HTTPS is a must for any application that transmits user data or login information.
 

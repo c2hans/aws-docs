@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ClusterSumma
 ---
 
 # ClusterSummary
-<a name="API_ClusterSummary"></a>
 
 The object returned by the `ListClusters` API action.
 

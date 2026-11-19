@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RecommendationExportJob
-<a name="API_RecommendationExportJob"></a>
 
 Describes a recommendation export job.
 

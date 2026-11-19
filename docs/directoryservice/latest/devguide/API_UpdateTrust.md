@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Upd
 ---
 
 # UpdateTrust
-<a name="API_UpdateTrust"></a>
 
 Updates the trust that has been set up between your AWS Managed Microsoft AD directory and an self-managed Active Directory.
 

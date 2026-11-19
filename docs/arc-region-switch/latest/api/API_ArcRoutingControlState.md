@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_ArcRout
 ---
 
 # ArcRoutingControlState
-<a name="API_ArcRoutingControlState"></a>
 
 Represents the state of an ARC routing control.
 

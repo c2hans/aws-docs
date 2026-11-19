@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetOr
 ---
 
 # GetOriginRequestPolicy
-<a name="API_GetOriginRequestPolicy"></a>
 
 Gets an origin request policy, including the following metadata:
 + The policy's identifier.

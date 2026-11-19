@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDataExchangeDataGrantReceiverFullAccess
-<a name="AWSDataExchangeDataGrantReceiverFullAccess"></a>
 
 **Description**: Gives Data Grant receiver access to AWS Data Exchange actions using the AWS Management Console and SDK.
 

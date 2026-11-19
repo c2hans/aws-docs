@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetAlert
-<a name="API_GetAlert"></a>
 
 Retrieves a single alert by its identifier.
 

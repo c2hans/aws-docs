@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/finch-reading-from-entiti
 ---
 
 # Reading from Finch entities
-<a name="finch-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Data strategy
-<a name="journey"></a>
 
 A well-defined data strategy is essential for the successful adoption of generative AI. This section examines how data strategy plays a critical role at each stage of the generative AI adoption journey. It also outlines key considerations across various dimensions of implementation. For more information about the stages of the generative AI journey, see [Maturity model for adopting generative AI on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-maturity-model/introduction.html) on AWS Prescriptive Guidance.
 

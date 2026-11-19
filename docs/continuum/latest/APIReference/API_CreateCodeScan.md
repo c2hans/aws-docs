@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Create
 ---
 
 # CreateCodeScan
-<a name="API_CreateCodeScan"></a>
 
 Creates an explicit scan request for one environment. CP creates durable work before any queue delivery occurs.
 

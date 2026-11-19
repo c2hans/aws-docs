@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/delete-connector.html
 ---
 
 # Delete MGN connector
-<a name="delete-connector"></a>
 
 To delete an MGN connector, click **Delete**. When the **Delete MGN connector** dialog opens, verify that you want to delete the selected MGN connector. Once an MGN connector is uninstalled, it can no longer be used to manage your source servers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RequestInspe
 ---
 
 # RequestInspectionACFP
-<a name="API_RequestInspectionACFP"></a>
 
 The criteria for inspecting account creation requests, used by the ACFP rule group to validate and track account creation attempts.
 

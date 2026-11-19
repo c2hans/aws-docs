@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_P
 ---
 
 # PrivateRegistryAccessRequest
-<a name="API_PrivateRegistryAccessRequest"></a>
 
 Describes a request to configure an Amazon Lightsail container service to access private container image repositories, such as Amazon Elastic Container Registry (Amazon ECR) private repositories.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Foundations
-<a name="foundations"></a>
 
 | HCL\_REL1. How does your system adapt to changes in demand? |
 | --- |

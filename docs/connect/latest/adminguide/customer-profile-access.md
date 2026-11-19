@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 ---
 
 # Access Customer Profiles in the agent workspace
-<a name="customer-profile-access"></a>
 
 After you enable Customer Profiles, agents can begin using customer information to provide personalized service. This topic explains how to access Customer Profiles in the agent workspace.
 

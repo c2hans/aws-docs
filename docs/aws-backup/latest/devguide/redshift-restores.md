@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-rest
 ---
 
 # Restore an Amazon Redshift cluster
-<a name="redshift-restores"></a>
 
 You can restore automated and manual snapshots in the AWS Backup console or through CLI.
 

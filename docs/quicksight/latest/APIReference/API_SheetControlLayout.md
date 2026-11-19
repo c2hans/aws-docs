@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetControlLayout
-<a name="API_SheetControlLayout"></a>
 
 A grid layout to define the placement of sheet control.
 

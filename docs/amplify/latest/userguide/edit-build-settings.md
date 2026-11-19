@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/edit-build-sett
 ---
 
 # Editing the build specification
-<a name="edit-build-settings"></a>
 
 You can customize an application's build settings by editing the build specification (buildspec) in the Amplify console. The build settings are applied to all the branches in your app, except for the branches that have an `amplify.yml` file saved in the Git repository.
 

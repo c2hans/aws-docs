@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ContainerConfiguration
-<a name="API_ContainerConfiguration"></a>
 
  Describes the container configurations within the tasks of your Amazon ECS service.
 

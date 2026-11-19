@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/delete-resourc
 ---
 
 # Delete resources that you created for MSK Serverless
-<a name="delete-resources"></a>
 
 In this step, you delete the resources that you created in this tutorial.
 

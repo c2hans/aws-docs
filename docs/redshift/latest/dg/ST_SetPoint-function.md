@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/ST_SetPoint-function.
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ST\_SetPoint
-<a name="ST_SetPoint-function"></a>
 
 ST\_SetPoint returns a linestring with updated coordinates with respect to the input linestring's position as specified by the index. The new coordinates are the coordinates of the input point.
 

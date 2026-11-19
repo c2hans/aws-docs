@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/advanced-consumers.ht
 ---
 
 # Optimize Amazon Kinesis Data Streams consumers
-<a name="advanced-consumers"></a>
 
 You can further optimize your Amazon Kinesis Data Streams consumer based on specific behavior you see.
 

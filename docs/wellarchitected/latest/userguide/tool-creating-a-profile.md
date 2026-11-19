@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/tool-cr
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Creating a profile
-<a name="tool-creating-a-profile"></a>
 
 **To create a profile**
 

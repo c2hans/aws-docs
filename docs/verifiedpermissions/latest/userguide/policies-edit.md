@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Editing Amazon Verified Permissions static policies
-<a name="policies-edit"></a>
 
 You can edit an existing static policy in your policy store. You can only directly update static policies. To change a template-linked policy, you must update the policy template. For more information, see [Editing Amazon Verified Permissions policy templates](policy-templates-edit.md).
 

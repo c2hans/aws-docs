@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_EnableAp
 ---
 
 # EnableApplicationLayerAutomaticResponse
-<a name="API_EnableApplicationLayerAutomaticResponse"></a>
 
 Enable the Shield Advanced automatic application layer DDoS mitigation for the protected resource.
 

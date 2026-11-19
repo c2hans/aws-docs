@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # GetOutputVector
-<a name="API_S3VectorBuckets_GetOutputVector"></a>
 
 The attributes of a vector returned by the `GetVectors` operation.
 

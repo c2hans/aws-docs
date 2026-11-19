@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Timestr
 ---
 
 # Using Amazon Timestream as a target for AWS Database Migration Service
-<a name="CHAP_Target.Timestream"></a>
 
 You can use AWS Database Migration Service to migrate data from your source database to a Amazon Timestream target endpoint, with support for Full Load and CDC data migrations.
 
@@ -21,7 +20,7 @@ Amazon Timestream is a fast, scalable, and serverless time series database servi
 ## Prerequisites for using Amazon Timestream as a target for AWS Database Migration Service
 <a name="CHAP_Target.Timestream.Prerequisites"></a>
 
-Before you set up Amazon Timestream as a target for AWS DMS, make sure that you create an IAM role. This role must allow AWS DMS to gain access to the data being migrated into Amazon Timestream. The minimum set of access permissions for the role that you use to migrate to Timestream is shown in the following IAM policy.
+Before you set up Amazon Timestream as a target for AWS DMS, make sure that you create an IAM role. This role must allow AWS DMS to gain access to the data being migrated into Amazon Timestream. The minimum set of access permissions for the role that you use to migrate to Timestream is shown in the following IAM policy. For role naming restrictions, see [Creating the IAM roles to use with AWS DMS](security-iam.md#CHAP_Security.APIRole).
 
 ------
 #### [ JSON ]

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/budgets
 ---
 
 # Downloading a budget
-<a name="budgets-export"></a>
 
  You can download your budgets as a `CSV` file. The file includes all of the data for all of your budgets, such as Budget Name, Current Value and Forecasted Value, Budgeted Value, and more.<a name="export-budget"></a>
 

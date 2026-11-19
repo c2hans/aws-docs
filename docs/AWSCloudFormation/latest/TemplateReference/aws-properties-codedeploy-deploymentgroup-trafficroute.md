@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeDeploy::DeploymentGroup TrafficRoute
-<a name="aws-properties-codedeploy-deploymentgroup-trafficroute"></a>
 
  Information about a listener. The listener contains the path used to route traffic that is received from the load balancer to a target group.
 

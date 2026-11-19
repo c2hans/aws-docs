@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/smartlook-configuring.htm
 ---
 
 # Configuring Smartlook
-<a name="smartlook-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Smartlook, you must meet the following requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/service_code_exampl
 ---
 
 # Basic examples for AWS STS using AWS SDKs
-<a name="service_code_examples_sts_basics"></a>
 
 The following code examples show how to use the basics of AWS Security Token Service with AWS SDKs.
 

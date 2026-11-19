@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/job-template-m
 ---
 
 # Create a job from AWS managed templates by using the AWS Management Console
-<a name="job-template-manage-console-create"></a>
 
 Use the AWS Management Console to get information about AWS managed templates and create a job by using these templates. You can then save the job you create as your own custom template.
 

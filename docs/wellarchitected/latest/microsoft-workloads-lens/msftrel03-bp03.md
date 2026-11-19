@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTREL03-BP03 Implement automated feedback loops
-<a name="msftrel03-bp03"></a>
 
  Automated feedback loops are critical for Microsoft workloads due to their complex interdependencies and the need for continuous monitoring of performance patterns, security posture, and operational effectiveness. Microsoft environments require systematic approaches to identify trends, measure improvement initiatives, and translate monitoring investments into actionable insights for maintaining system reliability and security.
 

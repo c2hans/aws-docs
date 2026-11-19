@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/cgw-static-routing-exa
 ---
 
 # Configure static routing for an AWS Site-to-Site VPN customer gateway device
-<a name="cgw-static-routing-example-interface"></a>
 
 The following are some example procedures for configuring a customer gateway device using its user interface (if available).
 

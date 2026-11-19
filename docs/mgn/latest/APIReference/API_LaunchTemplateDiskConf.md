@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_LaunchTempla
 ---
 
 # LaunchTemplateDiskConf
-<a name="API_LaunchTemplateDiskConf"></a>
 
 Launch template disk configuration.
 

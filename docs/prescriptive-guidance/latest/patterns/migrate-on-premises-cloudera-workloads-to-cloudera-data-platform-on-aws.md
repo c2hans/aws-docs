@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate on-premises Cloudera workloads to Cloudera Data Platform on AWS
-<a name="migrate-on-premises-cloudera-workloads-to-cloudera-data-platform-on-aws"></a>
 
 *Battulga Purevragchaa and Nidhi Gupta, Amazon Web Services*
 

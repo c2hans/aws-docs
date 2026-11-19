@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aggregate-d
 ---
 
 # Multi-Account Multi-Region Data Aggregation for AWS Config
-<a name="aggregate-data"></a>
 
 An aggregator is an AWS Config resource type that collects AWS Config configuration and compliance data from the following:
 + Multiple accounts and multiple AWS Regions.

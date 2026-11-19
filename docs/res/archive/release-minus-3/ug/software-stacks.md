@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/software-
 ---
 
 # Software Stacks (AMIs)
-<a name="software-stacks"></a>
 
 From the Software Stacks page, you can configure Amazon Machine Images (AMIs) or manage existing ones.
 

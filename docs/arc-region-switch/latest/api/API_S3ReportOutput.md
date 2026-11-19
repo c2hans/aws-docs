@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_S3Repor
 ---
 
 # S3ReportOutput
-<a name="API_S3ReportOutput"></a>
 
 Information about a report delivered to Amazon S3.
 

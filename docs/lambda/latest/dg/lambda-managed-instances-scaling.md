@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Scaling Lambda Managed Instances
-<a name="lambda-managed-instances-scaling"></a>
 
 With Lambda Managed Instances, your function doesn't scale when invocations arrive. Instead, it scales asynchronously based on resource consumption signals. Managed Instances currently scales based on CPU resource utilization and multi-concurrency saturation.
 

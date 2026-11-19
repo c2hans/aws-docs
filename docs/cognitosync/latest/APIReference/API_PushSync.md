@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_Push
 ---
 
 # PushSync
-<a name="API_PushSync"></a>
 
 Configuration options to be applied to the identity pool.
 

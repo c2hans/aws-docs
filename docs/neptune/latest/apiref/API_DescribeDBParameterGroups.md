@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeDBPara
 ---
 
 # DescribeDBParameterGroups
-<a name="API_DescribeDBParameterGroups"></a>
 
 Returns a list of `DBParameterGroup` descriptions. If a `DBParameterGroupName` is specified, the list will contain only the description of the specified DB parameter group.
 

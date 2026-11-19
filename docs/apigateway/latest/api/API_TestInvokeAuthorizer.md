@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_TestInvokeAuth
 ---
 
 # TestInvokeAuthorizer
-<a name="API_TestInvokeAuthorizer"></a>
 
 Simulate the execution of an Authorizer in your RestApi with headers, parameters, and an incoming request body.
 

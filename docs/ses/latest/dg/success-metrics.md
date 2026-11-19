@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/success-metrics.html
 ---
 
 # Email program success metrics
-<a name="success-metrics"></a>
 
 There are several metrics that help measure the success of your email program.
 

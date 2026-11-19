@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3ExcelSource.htm
 ---
 
 # S3ExcelSource
-<a name="API_S3ExcelSource"></a>
 
 Specifies an S3 Excel data source.
 

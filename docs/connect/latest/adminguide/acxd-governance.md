@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-governanc
 ---
 
 # Governance
-<a name="acxd-governance"></a>
 
 Agentic CX designer helps protect your workspace and deployed conversational AI applications through access control, sensitive data handling, secure integrations, runtime guardrails, and auditability.
 

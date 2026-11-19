@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Cre
 ---
 
 # CreateProject
-<a name="API_CreateProject"></a>
 
 Creates a project in a specified space.
 

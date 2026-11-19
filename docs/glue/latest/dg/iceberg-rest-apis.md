@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/iceberg-rest-apis.html
 ---
 
 # AWS Glue REST APIs for Apache Iceberg specifications
-<a name="iceberg-rest-apis"></a>
 
 This section contains specifications about the AWS Glue Iceberg REST catalog and AWS Glue extension APIs, and considerations when using these APIs.
 

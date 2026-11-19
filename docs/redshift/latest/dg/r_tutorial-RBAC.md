@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_tutorial-RBAC.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Tutorial: Creating roles and querying with RBAC
-<a name="r_tutorial-RBAC"></a>
 
 With RBAC, you can create roles with permissions to run commands that used to require superuser permissions. Users can run these commands, as long as they are authorized with a role that includes these permissions.
 

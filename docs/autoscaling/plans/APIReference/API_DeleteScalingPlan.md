@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Delet
 ---
 
 # DeleteScalingPlan
-<a name="API_DeleteScalingPlan"></a>
 
 Deletes the specified scaling plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Tutorial: Create a CRUD HTTP API with Lambda and DynamoDB
-<a name="http-api-dynamo-db"></a>
 
 In this tutorial, you create a serverless API that creates, reads, updates, and deletes items from a DynamoDB table. DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. This tutorial takes approximately 30 minutes to complete, and you can do it within the [AWS Free Tier](https://aws.amazon.com/free/).
 

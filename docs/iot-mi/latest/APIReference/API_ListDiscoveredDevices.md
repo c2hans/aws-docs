@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListDisco
 ---
 
 # ListDiscoveredDevices
-<a name="API_ListDiscoveredDevices"></a>
 
 Lists all devices discovered during a specific device discovery task.
 

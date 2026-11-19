@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetJo
 ---
 
 # GetJob
-<a name="API_GetJob"></a>
 
 Gets information about a job.
 

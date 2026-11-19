@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 ---
 
 # SendActivationCode
-<a name="API_SendActivationCode"></a>
 
 Sends an activation email to the email address associated with the specified email contact.
 

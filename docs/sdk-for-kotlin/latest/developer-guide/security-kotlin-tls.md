@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/se
 ---
 
 # AWS SDK for Kotlin support for Transport Layer Security (TLS)
-<a name="security-kotlin-tls"></a>
 
 The following information applies only to Java SSL implementation (the default SSL implementation in the AWS SDK for Kotlin targeting the JVM). If you’re using a different SSL implementation, see your specific SSL implementation to learn how to enforce TLS versions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 2.3 Change impact assessment
-<a name="impact-assessment"></a>
 
 ## Overview
 <a name="impact-assessment-overview"></a>

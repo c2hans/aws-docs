@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-metadat
 ---
 
 # Limit access to the Instance Metadata Service
-<a name="instance-metadata-limiting-access"></a>
 
 You can consider using local firewall rules to disable access from some or all processes to the Instance Metadata Service (IMDS).
 

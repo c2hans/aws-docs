@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/Audio-video-
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Extracting semantic meaning from audio and video content
-<a name="Audio-video-extraction"></a>
 
 Amazon Q Business extracts semantic information from audio and video files, making data sources queryable and enhancing information retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC02-BP03 Implement least privilege access for hybrid network management
-<a name="hnsec02-bp03"></a>
 
  To implement least privilege, hybrid connectivity resources management should be granted only to teams responsible for hybrid connectivity. The teams should own circuits, dedicated connections, and VPNs even though other teams depend on these shared networking resources.
 

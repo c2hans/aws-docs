@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-overview-ama
 ---
 
 # Benefits
-<a name="benefits"></a>
 
 EKS Auto Mode is a new operating model for Amazon EKS. In addition to the reduced operational responsibility, there are several technical changes to further improve the security posture of Auto Mode nodes.
 + **EC2 managed instances:** EKS Auto Mode uses [Amazon Elastic Compute Cloud (Amazon EC2) managed instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-managed-instances.html) to provide the compute that backs an Auto Mode node. This allows Auto Mode to provide the full breadth of Amazon EC2 capabilities while delegating operational control to Amazon EKS.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/tibco-e
 ---
 
 # Which TIBCO EMS architectures are used for migrating to Amazon MQ?
-<a name="tibco-ems-typical-architecture"></a>
 
  You can migrate from TIBCO EMS to Amazon MQ using cross-regional architecture in AWS or TIBCO EMS high availability architecture.
 

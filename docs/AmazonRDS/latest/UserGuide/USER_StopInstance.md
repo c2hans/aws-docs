@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInst
 ---
 
 # Stopping an Amazon RDS DB instance temporarily
-<a name="USER_StopInstance"></a>
 
 You can stop your DB instance intermittently for temporary testing or for a daily development activity, for a maximum of 7 consecutive days. The most common use case is cost optimization. The time to stop your DB instance depends on a number of factors. For more information, see [Use cases](#USER_StopInstance.Benefits) and [Time considerations](#USER_StopInstance.Time).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DetachI
 ---
 
 # DetachInstances
-<a name="API_DetachInstances"></a>
 
 Removes one or more instances from the specified Auto Scaling group.
 

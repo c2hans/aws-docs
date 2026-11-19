@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteReplic
 ---
 
 # DeleteReplicationTask
-<a name="API_DeleteReplicationTask"></a>
 
 Deletes the specified replication task.
 

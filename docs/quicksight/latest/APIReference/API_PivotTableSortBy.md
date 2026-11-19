@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableSortBy
-<a name="API_PivotTableSortBy"></a>
 
 The sort by field for the field sort options.
 

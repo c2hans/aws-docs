@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVCOST05-BP06 Use provisioned throughput for steady-state agents and on-demand pricing for variable workloads
-<a name="advcost05-bp06"></a>
 
  Provisioned throughput can provide the lowest cost per token for steady-state advertising agents. For unpredictable advertising workloads, on-demand pricing costs less by avoiding idle capacity charges. To reduce cost, match the pricing model to the invocation pattern.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/iam-policies.html
 ---
 
 # IAM policies
-<a name="iam-policies"></a>
 
 You can attach Instance Roles to node groups. Workloads running on the node will receive IAM permissions from the node. For mroe information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html).
 

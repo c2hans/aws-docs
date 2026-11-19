@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/TBAC-creating-t
 ---
 
 # Creating LF-Tags
-<a name="TBAC-creating-tags"></a>
 
 All LF-Tags must be defined in Lake Formation before they can be used. A LF-Tag consists of a key and one or more possible values for the key.
 

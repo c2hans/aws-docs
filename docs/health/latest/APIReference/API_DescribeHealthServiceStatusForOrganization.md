@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeH
 ---
 
 # DescribeHealthServiceStatusForOrganization
-<a name="API_DescribeHealthServiceStatusForOrganization"></a>
 
 This operation provides status information on enabling or disabling AWS Health to work with your organization. To call this operation, you must use the organization's management account.
 

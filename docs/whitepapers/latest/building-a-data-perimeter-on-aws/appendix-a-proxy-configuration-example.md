@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perim
 ---
 
 # Appendix A – Proxy configuration example
-<a name="appendix-a-proxy-configuration-example"></a>
 
  The following configuration is for a Squid-based proxy running in us-east-1 with peers in us-west-2 and eu-west-1. It denies all other traffic for the `amazonaws.com` domain, but allows all other domains to be forwarded normally. This configuration will need to be kept up to date with global AWS services that do not use a Region name in their domain name.
 

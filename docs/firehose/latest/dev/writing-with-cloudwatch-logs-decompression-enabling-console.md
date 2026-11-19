@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/writing-with-cloudwa
 ---
 
 # Enable decompression on a new Firehose stream from console
-<a name="writing-with-cloudwatch-logs-decompression-enabling-console"></a>
 
 **To enable decompression on a new Firehose stream using the AWS Management Console**
 

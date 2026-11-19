@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/im
 ---
 
 # Implement path-based API versioning by using custom domains in Amazon API Gateway
-<a name="implement-path-based-api-versioning-by-using-custom-domains"></a>
 
 *Corey Schnedl, Marcelo Barbosa, Mario Lopez Martinez, Anbazhagan Ponnuswamy, Gaurav Samudra, and Abhilash Vinod, Amazon Web Services*
 

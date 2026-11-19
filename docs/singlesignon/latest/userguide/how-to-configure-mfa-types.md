@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-con
 ---
 
 # Choose MFA types for user authentication
-<a name="how-to-configure-mfa-types"></a>
 
 Use the following procedure to choose the device types your users can authenticate with when prompted for multi-factor authentication (MFA) in the AWS access portal.
 

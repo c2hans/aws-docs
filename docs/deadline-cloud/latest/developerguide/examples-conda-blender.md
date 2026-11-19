@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Build a Blender conda package for Deadline Cloud
-<a name="examples-conda-blender"></a>
 
 The samples repository on the GitHub website includes conda recipes for the following Blender versions and add-ons. Each recipe builds for Linux 64-bit and Windows 64-bit, and downloads source archives from the Blender Foundation:
 + [blender-4.2](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.2)

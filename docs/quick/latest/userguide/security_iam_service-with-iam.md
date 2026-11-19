@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/security_iam_serv
 ---
 
 # Using Quick with IAM
-<a name="security_iam_service-with-iam"></a>
 
 |  |
 | --- |

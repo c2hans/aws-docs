@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Value-add outcomes
-<a name="outcomes"></a>
 
 Using this agile model, you can accelerate the path to achieving business outcomes and value drivers for operating at scale. Value-add business outcomes that are outlined in this agile approach include the following:
 + **Application selection** – Analyze application based on the 6 Rs of migration.

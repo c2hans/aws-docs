@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputeNodeExecutionStateDetails
-<a name="API_ComputeNodeExecutionStateDetails"></a>
 
 Additional information about a compute node that has failed.
 

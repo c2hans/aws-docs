@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Route.h
 ---
 
 # Route
-<a name="API_Route"></a>
 
 The route.
 

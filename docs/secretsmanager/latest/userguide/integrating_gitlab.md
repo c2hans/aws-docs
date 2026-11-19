@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrat
 ---
 
 # Use AWS Secrets Manager in GitLab
-<a name="integrating_gitlab"></a>
 
 AWS Secrets Manager integrates with GitLab. You can leverage Secrets Manager secrets to protect your GitLab credentials so they are no longer hardcoded in GitLab. Instead, [GitLab Runner](https://docs.gitlab.com/runner/) retrieves these secrets from Secrets Manager when your application runs a job in the GitLab CI/CD pipelines.
 

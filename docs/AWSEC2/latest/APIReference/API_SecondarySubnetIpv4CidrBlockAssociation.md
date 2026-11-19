@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Secondary
 ---
 
 # SecondarySubnetIpv4CidrBlockAssociation
-<a name="API_SecondarySubnetIpv4CidrBlockAssociation"></a>
 
 Describes an IPv4 CIDR block associated with a secondary subnet.
 

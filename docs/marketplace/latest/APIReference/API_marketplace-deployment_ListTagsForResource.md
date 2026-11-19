@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ListTagsForResource
-<a name="API_marketplace-deployment_ListTagsForResource"></a>
 
 Lists all tags that have been added to a deployment parameter resource.
 

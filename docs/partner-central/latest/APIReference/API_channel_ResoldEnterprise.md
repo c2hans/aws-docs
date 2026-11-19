@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ResoldEnterprise
-<a name="API_channel_ResoldEnterprise"></a>
 
 Configuration for resold enterprise support plans.
 

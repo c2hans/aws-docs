@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelL
 ---
 
 # ModelLatencyThreshold
-<a name="API_ModelLatencyThreshold"></a>
 
 The model latency threshold.
 

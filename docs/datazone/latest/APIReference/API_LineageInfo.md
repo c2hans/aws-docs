@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lineage
 ---
 
 # LineageInfo
-<a name="API_LineageInfo"></a>
 
 The data lineage information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/mounting-one-zone.html
 ---
 
 # Mounting One Zone file systems
-<a name="mounting-one-zone"></a>
 
 EFS One Zone file systems support only a single mount target which is located in the same Availability Zone as the file system. You cannot add additional mount targets. This section describes things to consider when mounting One Zone file systems.
 

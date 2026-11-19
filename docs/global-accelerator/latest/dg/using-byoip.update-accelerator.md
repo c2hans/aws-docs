@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip
 ---
 
 # Update an accelerator to change your IP addresses
-<a name="using-byoip.update-accelerator"></a>
 
 After you assign BYOIP addresses as static IP addresses for an accelerator in AWS Global Accelerator, you can update the accelerator later to use different IP addresses from your address ranges. You can also update an accelerator that uses your own IP addresses to instead use IP addresses provided by AWS Global Accelerator.
 

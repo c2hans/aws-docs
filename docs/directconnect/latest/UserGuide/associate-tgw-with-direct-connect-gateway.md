@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/associate
 ---
 
 # Associate or disassociate Direct Connect with a Transit Gateway
-<a name="associate-tgw-with-direct-connect-gateway"></a>
 
 Associate or disassociate a Transit Gateway using either the Direct Connect console or using the command line or API.
 

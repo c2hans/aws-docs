@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSnapshots
-<a name="API_DescribeSnapshots"></a>
 
 Describes the specified EBS snapshots available to you or all of the EBS snapshots available to you.
 

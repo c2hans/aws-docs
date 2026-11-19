@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-delete-adapt
 ---
 
 # Delete an Adapter
-<a name="textract-delete-adapter"></a>
 
 You can delete a custom Amazon Textract adapter at any time by calling the [DeleteAdapter](https://docs.aws.amazon.com/textract/latest/APIReference/API_DeleteAdapter.html) API operation. You can delete an adapter by providing the DeleteAdapter operation with the AdapterId of the adapter that you want to delete. Invoke DeleteAdapter will delete all Adapter Versions associated with the Adapter ARN.
 

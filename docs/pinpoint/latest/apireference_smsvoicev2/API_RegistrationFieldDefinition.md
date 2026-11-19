@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationFieldDefinition
-<a name="API_RegistrationFieldDefinition"></a>
 
 Provides a description of the specified field.
 

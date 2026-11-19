@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Kinesis
 ---
 
 # Using Amazon Kinesis Data Streams as a target for AWS Database Migration Service
-<a name="CHAP_Target.Kinesis"></a>
 
 You can use AWS DMS to migrate data to an Amazon Kinesis data stream. Amazon Kinesis data streams are part of the Amazon Kinesis Data Streams service. You can use Kinesis data streams to collect and process large streams of data records in real time.
 
@@ -188,7 +187,7 @@ For information on using the `add-before-image-columns` rule action, see [Transf
 ### IAM role for using a Kinesis data stream as a target for AWS Database Migration Service
 <a name="CHAP_Target.Kinesis.Prerequisites.IAM"></a>
 
-Before you set up a Kinesis data stream as a target for AWS DMS, make sure that you create an IAM role. This role must allow AWS DMS to assume and grant access to the Kinesis data streams that are being migrated into. The minimum set of access permissions is shown in the following IAM policy.
+Before you set up a Kinesis data stream as a target for AWS DMS, make sure that you create an IAM role. This role must allow AWS DMS to assume and grant access to the Kinesis data streams that are being migrated into. The minimum set of access permissions is shown in the following IAM policy. For role naming restrictions, see [Creating the IAM roles to use with AWS DMS](security-iam.md#CHAP_Security.APIRole).
 
 ------
 #### [ JSON ]
@@ -302,6 +301,9 @@ The following limitations apply when using Kinesis Data Streams as a target:
   ```
 + When multiple DML operations within a single transaction modify a Large Object (LOB) column on the source database, the target database retains only the final LOB value from the last operation in that transaction. The intermediate LOB values set by earlier operations in the same transaction are overwritten, which can result in potential data loss or inconsistencies. This behavior occurs due to how LOB data is processed during replication.
 + AWS DMS does not support source data containing embedded `'\0'` characters when using Kinesis as a target endpoint. Data containing embedded `'\0'` characters will be truncated at the first `'\0'` character.
++ Starting with AWS DMS version 3.6.1 updates released on or after November 17, 2026, Kinesis API calls use per-account hostnames instead of the classic `kinesis.{{region}}.amazonaws.com` hostname. For example, `{{account-id}}.data-kinesis.{{region}}.amazonaws.com`, where {{account-id}} is the ID of the AWS account that owns the stream.
+
+  If your network configuration restricts outbound traffic to specific hostnames, add `*.data-kinesis.{{region}}.amazonaws.com` and `*.control-kinesis.{{region}}.amazonaws.com` to the allowlist. Alternatively, set the `KinesisEndpointOverride` extra connection attribute to `https://kinesis.{{region}}.amazonaws.com` to use the classic hostname.
 
 ## Using object mapping to migrate data to a Kinesis data stream
 <a name="CHAP_Target.Kinesis.ObjectMapping"></a>

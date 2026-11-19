@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/agentless-troubleshooting.
 ---
 
 # Troubleshooting agentless replication issues
-<a name="agentless-troubleshooting"></a>
 
 **Discovery** related troubleshooting
 + No machines are discovered -

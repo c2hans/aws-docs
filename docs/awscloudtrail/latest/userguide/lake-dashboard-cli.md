@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-dash
 ---
 
 # Create, update, and manage dashboards with the AWS CLI
-<a name="lake-dashboard-cli"></a>
 
 This section describes the AWS CLI commands you can use to create, update, and manage your CloudTrail Lake dashboards.
 

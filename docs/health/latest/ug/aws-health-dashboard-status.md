@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/aws-health-dashboard-st
 ---
 
 # AWS Health Dashboard
-<a name="aws-health-dashboard-status"></a>
 
 You can use the AWS Health Dashboard – Service health to view the health of all AWS services. This page shows reported service events for services across AWS Regions. You don't need to sign in or have an AWS account to access the AWS Health Dashboard – Service health page.
 

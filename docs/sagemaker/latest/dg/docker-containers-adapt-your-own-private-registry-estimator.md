@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-ad
 ---
 
 # Use a SageMaker AI ModelTrainer to run a training job
-<a name="docker-containers-adapt-your-own-private-registry-estimator"></a>
 
 You can also use an [ModelTrainer](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) from the SageMaker Python SDK to handle the configuration and running of your SageMaker training job. The following code examples show how to configure and run a ModelTrainer using images from a private Docker registry.
 

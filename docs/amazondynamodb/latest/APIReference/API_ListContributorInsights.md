@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_L
 ---
 
 # ListContributorInsights
-<a name="API_ListContributorInsights"></a>
 
 Returns a list of ContributorInsightsSummary for a table and all its global secondary indexes.
 

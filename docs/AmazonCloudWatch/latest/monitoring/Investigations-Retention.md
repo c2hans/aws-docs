@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # CloudWatch investigations data retention
-<a name="Investigations-Retention"></a>
 
 The retention period that you set for an investigation group determines how long that investigation data is kept. Valid values are seven days to 90 days.
 

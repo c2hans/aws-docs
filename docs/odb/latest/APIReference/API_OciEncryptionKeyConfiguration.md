@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_OciEncryptio
 ---
 
 # OciEncryptionKeyConfiguration
-<a name="API_OciEncryptionKeyConfiguration"></a>
 
 The configuration of the Oracle Cloud Infrastructure (OCI) Vault encryption key used for an Autonomous Database.
 

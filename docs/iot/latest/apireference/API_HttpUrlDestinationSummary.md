@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_HttpUrlDesti
 ---
 
 # HttpUrlDestinationSummary
-<a name="API_HttpUrlDestinationSummary"></a>
 
 Information about an HTTP URL destination.
 

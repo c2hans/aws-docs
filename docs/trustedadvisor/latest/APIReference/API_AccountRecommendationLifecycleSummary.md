@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_A
 ---
 
 # AccountRecommendationLifecycleSummary
-<a name="API_AccountRecommendationLifecycleSummary"></a>
 
 Summary of an AccountRecommendationLifecycle for an Organization Recommendation
 

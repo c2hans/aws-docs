@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/planning.html
 ---
 
 # Planning
-<a name="planning"></a>
 
 **Topics**
 + [Architecture Options](architecture-options.md)

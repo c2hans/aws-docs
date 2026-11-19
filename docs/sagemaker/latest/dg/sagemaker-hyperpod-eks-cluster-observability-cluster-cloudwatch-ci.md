@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Observability with Amazon CloudWatch
-<a name="sagemaker-hyperpod-eks-cluster-observability-cluster-cloudwatch-ci"></a>
 
 Use [Amazon CloudWatch Container Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html) to collect, aggregate, and summarize metrics and logs from the containerized applications and micro-services on the EKS cluster associated with a HyperPod cluster.
 

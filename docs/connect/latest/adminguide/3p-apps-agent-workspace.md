@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps-agent-
 ---
 
 # Access third-party applications in the agent workspace
-<a name="3p-apps-agent-workspace"></a>
 
 ## Launch third-party applications
 <a name="security-profile-perms-3p-apps"></a>

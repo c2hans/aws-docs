@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 ---
 
 # Data retrieval APIs for AWS Device Farm
-<a name="awsdevicefarm"></a>
 
 AWS Device Farm provides the following APIs for data retrieval.
 

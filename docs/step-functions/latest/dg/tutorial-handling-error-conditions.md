@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-handli
 ---
 
 # Handling error conditions in a Step Functions state machine
-<a name="tutorial-handling-error-conditions"></a>
 
 In this tutorial, you create an AWS Step Functions state machine with a **Task** state that invokes an example Lambda function built to throw a custom error.
 

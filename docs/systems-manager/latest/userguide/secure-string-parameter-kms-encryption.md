@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/secure-
 ---
 
 # AWS KMS encryption for AWS Systems Manager Parameter Store SecureString parameters
-<a name="secure-string-parameter-kms-encryption"></a>
 
 With AWS Systems Manager Parameter Store, you can create [SecureString parameters](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html#what-is-a-parameter), which are parameters that have a plaintext parameter name and an encrypted parameter value. Parameter Store uses AWS KMS to encrypt and decrypt the parameter values of `SecureString` parameters.
 

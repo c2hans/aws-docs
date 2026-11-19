@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_In
 ---
 
 # IntentResultEvent
-<a name="API_runtime_IntentResultEvent"></a>
 
 Contains the current state of the conversation between the client application and Amazon Lex.
 

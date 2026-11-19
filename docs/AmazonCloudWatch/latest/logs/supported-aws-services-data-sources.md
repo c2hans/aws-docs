@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/supported-a
 ---
 
 # Supported AWS services for data sources
-<a name="supported-aws-services-data-sources"></a>
 
 The following table lists the AWS services that are automatically categorized by CloudWatch Logs as data sources:
 

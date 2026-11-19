@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListStre
 ---
 
 # ListStreams
-<a name="API_ListStreams"></a>
 
 Lists your Kinesis data streams.
 
@@ -11,7 +10,7 @@ The number of streams may be too large to return from a single call to `ListStre
 
 You can detect if there are more streams available to list by using the `HasMoreStreams` flag from the returned output. If there are more streams available, you can request more streams by using the name of the last stream returned by the `ListStreams` request in the `ExclusiveStartStreamName` parameter in a subsequent request to `ListStreams`. The group of stream names returned by the subsequent request is then added to the list. You can continue this process until all the stream names have been collected in the list.
 
- [ListStreams](#API_ListStreams) has a limit of five transactions per second per account.
+ [ListStreams](API_ListStreams.md) has a limit of five transactions per second per account.
 
 ## Request Syntax
 <a name="API_ListStreams_RequestSyntax"></a>

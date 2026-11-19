@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/troubleshooti
 ---
 
 # Troubleshooting an integration
-<a name="troubleshooting"></a>
 
 The following topics explain how to create a support case and troubleshoot common onboarding and integration errors.
 

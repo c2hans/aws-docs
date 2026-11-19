@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/service_c
 ---
 
 # Code examples for Amazon S3 using AWS SDKs
-<a name="service_code_examples_s3"></a>
 
 The following code examples show how to use Amazon S3 with an AWS software development kit (SDK).
 

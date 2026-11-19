@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AmiAggrega
 ---
 
 # AmiAggregation
-<a name="API_AmiAggregation"></a>
 
 The details that define an aggregation based on Amazon machine images (AMIs).
 

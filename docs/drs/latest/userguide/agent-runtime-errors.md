@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/agent-runtime-error
 ---
 
 # Replication errors: agent runtime errors
-<a name="agent-runtime-errors"></a>
 
 This topic covers messages that the AWS Replication Agent writes to its own log on the source server or recovery instance. The other topics in this section cover replication errors that AWS Elastic Disaster Recovery reports in the console. Use this topic when the console shows no specific error, or to find the cause behind one. To find the agent log, see [Check agent status and logs](agent-diagnostics.md#agent-log-locations).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationSort
-<a name="API_ResaleAuthorizationSort"></a>
 
 Allows to sort ResaleAuthorization.
 

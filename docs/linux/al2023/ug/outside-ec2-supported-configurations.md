@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2-supported-co
 ---
 
 # Supported configurations of Amazon Linux 2023 for use in non-Amazon EC2 virtualized environments
-<a name="outside-ec2-supported-configurations"></a>
 
  This section covers the requirements for running Amazon Linux 2023 in non-Amazon EC2 virtualized environments such as on KVM, VMware, or and Hyper-V.
 

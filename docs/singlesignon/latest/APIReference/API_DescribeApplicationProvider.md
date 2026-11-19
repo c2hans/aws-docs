@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Des
 ---
 
 # DescribeApplicationProvider
-<a name="API_DescribeApplicationProvider"></a>
 
 Retrieves details about a provider that can be used to connect an AWS managed application or customer managed application to IAM Identity Center.
 

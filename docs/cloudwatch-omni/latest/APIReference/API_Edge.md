@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # Edge
-<a name="API_Edge"></a>
 
 A directed edge in the context graph connecting two nodes.
 

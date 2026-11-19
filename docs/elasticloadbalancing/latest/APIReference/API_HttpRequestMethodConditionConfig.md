@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # HttpRequestMethodConditionConfig
-<a name="API_HttpRequestMethodConditionConfig"></a>
 
 Information about an HTTP method condition.
 

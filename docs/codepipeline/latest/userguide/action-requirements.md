@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-req
 ---
 
 # Action declaration
-<a name="action-requirements"></a>
 
 The action level of a pipeline has a basic structure that includes the following parameters and syntax. For more information, see the [ActionDeclaration](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_ActionDeclaration.html) object in the *CodePipeline API Guide*.
 

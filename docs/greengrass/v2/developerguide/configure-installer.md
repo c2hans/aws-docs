@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/configure-i
 ---
 
 # Installer arguments
-<a name="configure-installer"></a>
 
 The AWS IoT Greengrass Core software includes an installer that sets up the software and provisions the required AWS resources for the Greengrass core device to run. The installer includes the following arguments that you can specify to configure the installation:
 

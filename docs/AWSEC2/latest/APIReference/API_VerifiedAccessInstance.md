@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessInstance
-<a name="API_VerifiedAccessInstance"></a>
 
 Describes a Verified Access instance.
 

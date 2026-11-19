@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTWireless::PartnerAccount SidewalkAccountInfo
-<a name="aws-properties-iotwireless-partneraccount-sidewalkaccountinfo"></a>
 
 Information about a Sidewalk account.
 

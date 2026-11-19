@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_StartOu
 ---
 
 # StartOutpostDecommission
-<a name="API_StartOutpostDecommission"></a>
 
 Starts the decommission process to return the Outposts racks or servers.
 

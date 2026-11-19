@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.ht
 ---
 
 # AWS Backup Vault Lock
-<a name="vault-lock"></a>
 
 **Note**
 AWS Backup Vault Lock has been assessed by Cohasset Associates for use in environments that are subject to SEC 17a-4, CFTC, and FINRA regulations. For more information about how AWS Backup Vault Lock relates to these regulations, see the [Cohasset Associates Compliance Assessment.](samples/cohassetreport.zip)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/specifying-sensit
 ---
 
 # Specify sensitive data with Secrets Manager
-<a name="specifying-sensitive-data-secrets"></a>
 
 With AWS Batch, you can inject sensitive data into your jobs by storing your sensitive data in AWS Secrets Manager secrets and then referencing them in your job definition. Sensitive data stored in Secrets Manager secrets can be exposed to a job as environment variables or as part of the log configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/addin
 ---
 
 # Adding a new outbound source for Supply Planning
-<a name="adding_new_outbound_connector"></a>
 
 You can use the new outbound source to upload the updated *Supply Planning* purchase order requests or plan enhancements.
 

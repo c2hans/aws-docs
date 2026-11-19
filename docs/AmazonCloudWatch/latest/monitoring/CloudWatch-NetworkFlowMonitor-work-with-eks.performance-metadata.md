@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Additional network path metadata included for Amazon EKS
-<a name="CloudWatch-NetworkFlowMonitor-work-with-eks.performance-metadata"></a>
 
 When Network Flow Monitor gathers performance metrics for network flows between Amazon EKS components, it includes additional metadata information about the network path, to help you better understand how the network paths for your workload are performing.
 

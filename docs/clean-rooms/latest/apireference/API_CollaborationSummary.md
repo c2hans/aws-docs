@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Coll
 ---
 
 # CollaborationSummary
-<a name="API_CollaborationSummary"></a>
 
 The metadata of the collaboration.
 

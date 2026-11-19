@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Da
 ---
 
 # DatabaseLFTagPolicy
-<a name="API_DatabaseLFTagPolicy"></a>
 
 The LF-tag policy for database resources.
 

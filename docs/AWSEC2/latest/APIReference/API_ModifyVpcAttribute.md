@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpc
 ---
 
 # ModifyVpcAttribute
-<a name="API_ModifyVpcAttribute"></a>
 
 Modifies the specified attribute of the specified VPC.
 

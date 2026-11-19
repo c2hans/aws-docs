@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-trou
 ---
 
 # Troubleshooting VM Import/Export
-<a name="vmimport-troubleshooting"></a>
 
 When you import or export a virtual machine (VM), most errors occur because of an attempt to do something that isn't supported. To avoid these errors, be sure to check the requirements and limitations carefully.
 

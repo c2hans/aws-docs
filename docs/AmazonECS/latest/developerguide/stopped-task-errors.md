@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/stopped-
 ---
 
 # Viewing Amazon ECS stopped task errors
-<a name="stopped-task-errors"></a>
 
 If you have trouble starting a task, your task might be stopping because of application or configuration errors. For example, you run the task and the task displays a `PENDING` status and then disappears.
 

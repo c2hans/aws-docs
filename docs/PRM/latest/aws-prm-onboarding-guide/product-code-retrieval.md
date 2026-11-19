@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/prod
 ---
 
 # Product Code Retrieval
-<a name="product-code-retrieval"></a>
 
 Your AWS Marketplace product code is required for all implementation methods. This code uniquely identifies your product for revenue attribution.
 

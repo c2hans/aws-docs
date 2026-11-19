@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Monitor the solution
-<a name="monitor-the-solution"></a>
 
 ## Logging and notifications
 <a name="logging-and-notifications"></a>

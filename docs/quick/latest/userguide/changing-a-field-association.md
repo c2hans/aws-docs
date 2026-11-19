@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/changing-a-field-
 ---
 
 # Changing the field associated with a visual element
-<a name="changing-a-field-association"></a>
 
 You can change the field assigned to an element in a visual by using the field wells, drop targets, or the on-visual editors on the visual. For pivot tables, use field wells or drop targets because this visual type doesn't provide on-visual editors.
 

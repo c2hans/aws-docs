@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEc2D
 ---
 
 # UpdateEc2DeepInspectionConfiguration
-<a name="API_UpdateEc2DeepInspectionConfiguration"></a>
 
 Activates, deactivates Amazon Inspector deep inspection, or updates custom paths for your account.
 

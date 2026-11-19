@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-flows.html
 ---
 
 # Flows
-<a name="acxd-flows"></a>
 
 A flow represents the structured path a conversation follows to fulfill a user's intent, whether that's answering FAQs, completing a task, or guiding a user toward an action. Each flow combines logic, prompts, and responses into a graph of connected nodes. Once attached to an application and deployed, the application can execute the flow and automate the corresponding task. A single flow can be shared across multiple applications in your workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-opentsdb-
 ---
 
 # Connect to an OpenTSDB data source
-<a name="using-opentsdb-in-AMG"></a>
 
  Amazon Managed Grafana ships with advanced support for OpenTSDB.
 

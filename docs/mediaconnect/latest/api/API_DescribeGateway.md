@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DescribeGate
 ---
 
 # DescribeGateway
-<a name="API_DescribeGateway"></a>
 
  Displays the details of a gateway. The response includes the gateway Amazon Resource Name (ARN), name, and CIDR blocks, as well as details about the networks.
 

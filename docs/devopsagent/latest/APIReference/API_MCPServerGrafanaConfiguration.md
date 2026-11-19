@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerGrafanaConfiguration
-<a name="API_MCPServerGrafanaConfiguration"></a>
 
 Configuration for Grafana MCP server integration, used with an AWS-hosted MCP server.
 

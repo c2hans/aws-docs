@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # UntagResource
-<a name="API_amazon-q-connect_UntagResource"></a>
 
 Removes the specified tags from the specified resource.
 

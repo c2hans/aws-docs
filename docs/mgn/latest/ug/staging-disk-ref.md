@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/staging-disk-ref.html
 ---
 
 # Change target storage type
-<a name="staging-disk-ref"></a>
 
 You can change the target storage type for all disks on a source server. The available options are Amazon Elastic Block Store (Amazon EBS) and Amazon FSx for NetApp ONTAP. This change applies to all disks on the server.
 

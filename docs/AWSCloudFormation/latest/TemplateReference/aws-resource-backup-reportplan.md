@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::ReportPlan
-<a name="aws-resource-backup-reportplan"></a>
 
 Creates a report plan. A report plan is a document that contains information about the contents of the report and where AWS Backup will deliver it.
 

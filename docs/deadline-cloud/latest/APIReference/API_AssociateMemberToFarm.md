@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssociateMemberToFarm
-<a name="API_AssociateMemberToFarm"></a>
 
 Assigns a farm membership level to a member.
 

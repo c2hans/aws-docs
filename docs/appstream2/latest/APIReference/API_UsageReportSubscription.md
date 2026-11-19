@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Usage
 ---
 
 # UsageReportSubscription
-<a name="API_UsageReportSubscription"></a>
 
 Describes information about the usage report subscription.
 

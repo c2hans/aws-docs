@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_Partnership
 ---
 
 # PartnershipSummary
-<a name="API_PartnershipSummary"></a>
 
 A structure that contains the details for a partnership. A partnership represents the connection between you and your trading partner. It ties together a profile and one or more trading capabilities.
 

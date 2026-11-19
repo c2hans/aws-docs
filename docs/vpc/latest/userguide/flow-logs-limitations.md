@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-limitatio
 ---
 
 # Flow log limitations
-<a name="flow-logs-limitations"></a>
 
 To use flow logs, you need to be aware of the following limitations:
 + After you create a flow log, you won't see flow log data until there is active traffic for the network interface, subnet, or VPC that you selected.

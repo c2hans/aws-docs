@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeNotifyConfigurations
-<a name="API_DescribeNotifyConfigurations"></a>
 
 Describes the specified notify configurations or all notify configurations in your account.
 

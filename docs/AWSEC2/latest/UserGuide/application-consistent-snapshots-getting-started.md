@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-cons
 ---
 
 # Manage VSS components package for Windows VSS based EBS snapshots
-<a name="application-consistent-snapshots-getting-started"></a>
 
 Before you create VSS based EBS snapshots, ensure that you have the latest version of the VSS components package installed on your Windows instance. There are several ways that you can install the `AwsVssComponents` package onto an existing instance, as follows:
 + (Recommended) [Run the AWSEC2-VssInstallAndSnapshot command document (recommended)](create-vss-snapshots-ssm.md#create-with-AWSEC2-VssInstallAndSnapshot). This automatically installs or updates if needed every time it runs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ErrorDetails.html
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 An object containing error details.
 

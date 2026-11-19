@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_Associati
 ---
 
 # Association
-<a name="API_Association"></a>
 
 The Amazon Braket resource and the association type.
 

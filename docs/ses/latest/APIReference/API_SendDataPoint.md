@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SendDataPoin
 ---
 
 # SendDataPoint
-<a name="API_SendDataPoint"></a>
 
 Represents sending statistics data. Each `SendDataPoint` contains statistics for a 15-minute period of sending activity.
 

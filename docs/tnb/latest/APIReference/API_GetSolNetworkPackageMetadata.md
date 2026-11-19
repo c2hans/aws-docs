@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolNetwor
 ---
 
 # GetSolNetworkPackageMetadata
-<a name="API_GetSolNetworkPackageMetadata"></a>
 
 Metadata associated with a network package.
 

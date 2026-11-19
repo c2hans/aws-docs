@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Monit
 ---
 
 # MonitoringConfiguration
-<a name="API_MonitoringConfiguration"></a>
 
 Configuration setting for monitoring.
 

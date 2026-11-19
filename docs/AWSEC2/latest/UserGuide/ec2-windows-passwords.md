@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-windows-pass
 ---
 
 # Change the Windows Administrator password for your Amazon EC2 instance
-<a name="ec2-windows-passwords"></a>
 
 If you launch your instance from an AWS Windows AMI, the launch agents that are pre-installed set the default password as follows:
 + For Windows Server 2022 and later, [EC2Launch v2](ec2launch-v2.md) generates the default password.

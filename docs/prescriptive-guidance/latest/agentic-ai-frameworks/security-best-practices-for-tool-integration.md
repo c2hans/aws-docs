@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Security best practices for tool integration
-<a name="security-best-practices-for-tool-integration"></a>
 
 Tool integration directly impacts your security posture. This section outlines best practices to consider for your organization.
 

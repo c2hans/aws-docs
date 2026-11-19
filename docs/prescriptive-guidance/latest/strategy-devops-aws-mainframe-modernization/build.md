@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # Build
-<a name="build"></a>
 
 During the build phase in a DevOps strategy, you construct the technical infrastructure, and you cultivate a cultural shift toward collaboration, automation, and continuous improvement. This pivotal phase involves the practical orchestration of tools and pipelines. It encompasses the following:
 + Setup of DevOps toolchains

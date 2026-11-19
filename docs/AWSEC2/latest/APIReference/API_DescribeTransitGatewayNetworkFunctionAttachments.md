@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTransitGatewayNetworkFunctionAttachments
-<a name="API_DescribeTransitGatewayNetworkFunctionAttachments"></a>
 
 Describes one or more network function attachments. You can describe attachments that you own or that are attached to a transit gateway that you own.
 

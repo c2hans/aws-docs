@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListMemb
 ---
 
 # ListMemberAccounts
-<a name="API_ListMemberAccounts"></a>
 
 Returns a `MemberAccounts` object that lists the member accounts in the administrator's AWS organization.
 

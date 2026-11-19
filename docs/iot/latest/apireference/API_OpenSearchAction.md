@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_OpenSearchAc
 ---
 
 # OpenSearchAction
-<a name="API_OpenSearchAction"></a>
 
 Describes an action that writes data to an Amazon OpenSearch Service domain.
 

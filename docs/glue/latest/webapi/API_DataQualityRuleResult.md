@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityRuleRe
 ---
 
 # DataQualityRuleResult
-<a name="API_DataQualityRuleResult"></a>
 
 Describes the result of the evaluation of a data quality rule.
 

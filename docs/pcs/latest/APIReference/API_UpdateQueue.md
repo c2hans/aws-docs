@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_UpdateQueue.
 ---
 
 # UpdateQueue
-<a name="API_UpdateQueue"></a>
 
 Updates the compute node group configuration of a queue. Use this API to change the compute node groups that the queue can send jobs to.
 

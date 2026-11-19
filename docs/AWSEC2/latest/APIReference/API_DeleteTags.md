@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTag
 ---
 
 # DeleteTags
-<a name="API_DeleteTags"></a>
 
 Deletes the specified set of tags from the specified set of resources.
 

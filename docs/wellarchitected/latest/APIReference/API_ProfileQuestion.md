@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ProfileQuestion
-<a name="API_ProfileQuestion"></a>
 
 A profile question.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # ListGroupMembers
-<a name="API_ListGroupMembers"></a>
 
  Returns member information for the specified group.
 

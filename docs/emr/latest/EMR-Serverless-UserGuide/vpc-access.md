@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/vpc-
 ---
 
 # Configuring VPC access for EMR Serverless applications to connect to data
-<a name="vpc-access"></a>
 
 You can configure EMR Serverless applications to connect to your data stores within your VPC, such as Amazon Redshift clusters, Amazon RDS databases or Amazon S3 buckets with VPC endpoints. Your EMR Serverless application has outbound connectivity to the data stores within your VPC. By default, EMR Serverless blocks both inbound access to your applications and outbound internet access to enhance security.
 

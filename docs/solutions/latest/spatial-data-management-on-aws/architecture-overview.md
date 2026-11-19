@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 This document describes the technical architecture of Spatial Data Management on AWS, including the AWS services used and how they interact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Del
 ---
 
 # DeleteQueuedMessages
-<a name="API_DeleteQueuedMessages"></a>
 
 Remove queued messages from the downlink queue.
 

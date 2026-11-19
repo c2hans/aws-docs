@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/app
 ---
 
 # AWS AppSync controls
-<a name="appsync-rules"></a>
 
 **Topics**
 + [[CT.APPSYNC.PR.1] Require an AWS AppSync GraphQL API to have logging enabled](#ct-appsync-pr-1-description)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/plann
 ---
 
 # sourcing\_schedule\_details
-<a name="planning-sourcing-schedule-details-entity"></a>
 
 **Primary key (PK)**
 

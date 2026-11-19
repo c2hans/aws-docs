@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Can
 ---
 
 # CancelMulticastGroupSession
-<a name="API_CancelMulticastGroupSession"></a>
 
 Cancels an existing multicast group session.
 

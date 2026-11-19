@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-send-
 ---
 
 # Monitoring your sending activity using the Amazon SES API and the AWS SDK for PHP Version 3
-<a name="ses-send-email"></a>
 
 Amazon Simple Email Service (Amazon SES) provides methods for monitoring your sending activity. We recommend that you implement these methods so that you can keep track of important measures, such as your account’s bounce, complaint, and reject rates. Excessively high bounce and complaint rates can jeopardize your ability to send emails using Amazon SES.
 

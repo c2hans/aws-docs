@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/res
 ---
 
 # Resources
-<a name="resources"></a>
 
 The AWS Amplify Admin UI REST API includes the following resources.
 

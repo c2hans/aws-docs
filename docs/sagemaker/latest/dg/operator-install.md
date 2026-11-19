@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/operator-install.htm
 ---
 
 # Install SageMaker AI Spaces Add-on
-<a name="operator-install"></a>
 
 ## Dependencies
 <a name="dependencies"></a>

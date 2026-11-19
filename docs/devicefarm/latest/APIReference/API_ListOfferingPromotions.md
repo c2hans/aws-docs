@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListO
 ---
 
 # ListOfferingPromotions
-<a name="API_ListOfferingPromotions"></a>
 
 Returns a list of offering promotions. Each offering promotion record contains the ID and description of the promotion. The API returns a `NotEligible` error if the caller is not permitted to invoke the operation. Contact [aws-devicefarm-support@amazon.com](mailto:aws-devicefarm-support@amazon.com) if you must be able to invoke this operation.
 

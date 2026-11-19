@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Cohere Embed v4
-<a name="model-parameters-embed-v4"></a>
 
 Cohere Embed v4 is a multimodal embedding model that supports both text and image inputs. It can process interleaved text and image content, making it ideal for document understanding, visual search, and multimodal retrieval applications. The model supports various embedding types including float, int8, uint8, binary, and ubinary formats, with configurable output dimensions from 256 to 1536.
 

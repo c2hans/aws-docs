@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_S3L
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The Amazon S3 artifact location for an action's artifacts.
 

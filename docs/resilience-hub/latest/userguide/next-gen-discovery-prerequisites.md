@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Prerequisites for dependency discovery
-<a name="next-gen-discovery-prerequisites"></a>
 
 Before you enable dependency discovery, ensure the following requirements are met:
 + Your service must have compute resources (Amazon Elastic Compute Cloud instances, Amazon Elastic Container Service tasks, Amazon Elastic Kubernetes Service pods, or VPC bound Lambda functions) that make DNS queries through Route 53 resolvers.

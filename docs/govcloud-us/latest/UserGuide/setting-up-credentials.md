@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/setting-up-
 ---
 
 # Credentials
-<a name="setting-up-credentials"></a>
 
 If you use CloudFront with AWS GovCloud (US), be sure that you use the correct credentials:
 + To use CloudFront with your AWS GovCloud (US) resources, you must have an AWS GovCloud (US) account. If you don’t have an account, see [AWS GovCloud (US) Sign Up](getting-started-sign-up.md) for more information.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 ---
 
 # Setting up for iterative development with Amazon GameLift Servers Anywhere
-<a name="integration-dev-iteration"></a>
 
 Amazon GameLift Servers provides tools and solutions to help you set up a hosted test environment for use during game development. With these tools, you can create an environment that mirrors the real-world player experience of managed hosting with Amazon GameLift Servers and supports a rapid, iterative development process.
 

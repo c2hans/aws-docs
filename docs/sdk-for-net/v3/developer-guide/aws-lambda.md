@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # Using AWS Lambda for compute service
-<a name="aws-lambda"></a>
 
 The AWS SDK for .NET supports AWS Lambda, which lets you run code without provisioning or managing servers. For more information, see the [AWS Lambda product page](https://aws.amazon.com/lambda/) and the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/), particularly the section for [Working with C\#](https://docs.aws.amazon.com/lambda/latest/dg/lambda-csharp.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # TranscriptEvent
-<a name="API_streaming_TranscriptEvent"></a>
 
 The `TranscriptEvent` associated with a `TranscriptResultStream`.
 

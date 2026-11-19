@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ServerlessVectorAcceleration
-<a name="API_ServerlessVectorAcceleration"></a>
 
 Configuration for serverless vector acceleration, which provides [GPU-accelerated](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gpu-acceleration-vector-index.html) vector search capabilities for improved performance on vector workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-user-profile-
 ---
 
 # View user profiles in a domain
-<a name="domain-user-profile-view"></a>
 
  The following section describes how to view a list of user profiles in a domain from the SageMaker AI console or the AWS CLI.
 

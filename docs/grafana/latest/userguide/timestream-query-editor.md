@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/timestream-quer
 ---
 
 # Using the Timestream data source
-<a name="timestream-query-editor"></a>
 
 ## Query editor
 <a name="timestream-query-editor"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/customi
 ---
 
 # Change the Default Internet Explorer Home Page for Users' Streaming Sessions in Amazon WorkSpaces Applications
-<a name="customize-fleets-change-ie-homepage"></a>
 
 You can use Group Policy to change the default Internet Explorer home page for users' streaming sessions. Alternatively, if you do not have Group Policy in your environment or prefer not to use Group Policy, you can use the WorkSpaces Applications Template User account instead.
 

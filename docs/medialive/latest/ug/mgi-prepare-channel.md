@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/mgi-prepare-channel.
 ---
 
 # Step 2: Enable the feature
-<a name="mgi-prepare-channel"></a>
 
 Perform this step for each MediaLive channel where you want to insert a motion graphic overlay.
 

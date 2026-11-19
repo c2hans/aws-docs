@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_RunConfigurations.h
 ---
 
 # RunConfigurations
-<a name="API_RunConfigurations"></a>
 
 Run-specific configuration settings.
 

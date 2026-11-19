@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Par
 ---
 
 # ParameterAttribute
-<a name="API_ParameterAttribute"></a>
 
 The attributes allowed or specified with a parameter object.
 

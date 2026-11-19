@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledControlParameter
-<a name="API_EnabledControlParameter"></a>
 
 A key/value pair, where `Key` is of type `String` and `Value` is of type `Document`.
 

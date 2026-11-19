@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Enable HTTPS
-<a name="config-wrkr-lv-cg-ssl"></a>
 
 . Read this section only if you are using Elemental Live version 2.25 or earlier. With these versions, you must explicitly enable HTTPS if you want users or applications to have a secure connection to Elemental Live.
 

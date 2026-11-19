@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeTimeSeries
-<a name="API_DescribeTimeSeries"></a>
 
 Retrieves information about a time series (data stream).
 

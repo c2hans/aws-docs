@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/trace-events.ht
 ---
 
 # Track agent's step-by-step reasoning process using trace
-<a name="trace-events"></a>
 
 Each response from an Amazon Bedrock agent is accompanied by a *trace* that details the steps being orchestrated by the agent. The trace helps you follow the agent's reasoning process that leads it to the response it gives at that point in the conversation.
 

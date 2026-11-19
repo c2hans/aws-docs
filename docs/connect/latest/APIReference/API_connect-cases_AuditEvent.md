@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AuditEvent
-<a name="API_connect-cases_AuditEvent"></a>
 
 Represents the content of a particular audit event.
 

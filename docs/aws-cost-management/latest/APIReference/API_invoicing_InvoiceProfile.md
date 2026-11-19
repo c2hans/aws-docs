@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # InvoiceProfile
-<a name="API_invoicing_InvoiceProfile"></a>
 
  Contains high-level information about the invoice receiver.
 

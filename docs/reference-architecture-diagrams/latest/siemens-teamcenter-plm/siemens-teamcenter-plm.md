@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Siemens Teamcenter Product Lifecycle Management on AWS
-<a name="siemens-teamcenter-plm"></a>
 
 Publication date: **March 8, 2024 ([Diagram history](#stp-diagram-history))**
 

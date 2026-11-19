@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # Region availability for Resolver DNS Firewall
-<a name="resolver-dns-firewall-availability"></a>
 
 The DNS Firewall is available in the following AWS Regions:
 + Africa (Cape Town)

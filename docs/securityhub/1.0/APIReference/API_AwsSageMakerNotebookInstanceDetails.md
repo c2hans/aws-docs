@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSage
 ---
 
 # AwsSageMakerNotebookInstanceDetails
-<a name="API_AwsSageMakerNotebookInstanceDetails"></a>
 
  Provides details about an Amazon SageMaker AI notebook instance.
 

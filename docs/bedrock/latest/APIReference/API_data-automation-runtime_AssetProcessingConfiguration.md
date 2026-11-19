@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # AssetProcessingConfiguration
-<a name="API_data-automation-runtime_AssetProcessingConfiguration"></a>
 
 Allows you to configure your input asset to narrow where you're looking for content. Works with passing segements of a larger video.
 

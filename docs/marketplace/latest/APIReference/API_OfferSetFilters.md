@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSetFilters
-<a name="API_OfferSetFilters"></a>
 
 Object containing all the filter fields for offer sets entity. Client can add a maximum of 8 filters in a single `ListEntities` request.
 

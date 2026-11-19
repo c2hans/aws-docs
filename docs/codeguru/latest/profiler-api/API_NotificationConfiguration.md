@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Notific
 ---
 
 # NotificationConfiguration
-<a name="API_NotificationConfiguration"></a>
 
 The configuration for notifications stored for each profiling group. This includes up to to two channels and a list of event publishers associated with each channel.
 

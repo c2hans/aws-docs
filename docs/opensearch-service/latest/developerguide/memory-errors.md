@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Error handling in Amazon OpenSearch Memory
-<a name="memory-errors"></a>
 
 This topic describes the errors that Amazon OpenSearch Memory returns and how to handle them in your application. For a list of common errors that apply to all AWS services, see [Common Errors](https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIReference/CommonErrors.html) in the *Amazon OpenSearch Memory API Reference*.
 

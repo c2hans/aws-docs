@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Amazon Relational Database Service on AWS Outposts
-<a name="amazon-rds-on-aws-outposts"></a>
 
 Publication date: **January 12, 2021 ([Diagram history](#diagram-history))**
 

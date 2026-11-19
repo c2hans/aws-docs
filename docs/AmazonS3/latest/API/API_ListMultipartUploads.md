@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListMultipartUpl
 ---
 
 # ListMultipartUploads
-<a name="API_ListMultipartUploads"></a>
 
 This operation lists in-progress multipart uploads in a bucket. An in-progress multipart upload is a multipart upload that has been initiated by the `CreateMultipartUpload` request, but has not yet been completed or aborted.
 
@@ -144,6 +143,7 @@ x-amz-request-charged: {{RequestCharged}}
       </Owner>
       <StorageClass>string</StorageClass>
       <UploadId>string</UploadId>
+      <VersionId>string</VersionId>
    </Upload>
    ...
    <CommonPrefixes>
@@ -313,8 +313,47 @@ Server: AmazonS3
 </ListMultipartUploadsResult>
 ```
 
-### Sample Request for general purpose buckets: Using the delimiter and the prefix parameters
+### Sample Response for general purpose buckets when the object is versioned
 <a name="API_ListMultipartUploads_Example_3"></a>
+
+If versioning is enabled on the bucket, Amazon S3 includes a `VersionId` element inside each `Upload` element in the response body.
+
+```
+HTTP/1.1 200 OK
+x-amz-id-2: Uuag1LuByRx9e6j5Onimru9pO4ZVKnJ2Qz7/C1NPcfTWAtRPfTaOFg==
+x-amz-request-id: 318BC8BC148832E5
+Date: Mon, 1 Nov 2010 20:34:56 GMT
+Content-Length: 1330
+Connection: keep-alive
+Server: AmazonS3
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ListMultipartUploadsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+  <Bucket>bucket</Bucket>
+  <KeyMarker></KeyMarker>
+  <UploadIdMarker></UploadIdMarker>
+  <NextKeyMarker>my-movie.m2ts</NextKeyMarker>
+  <NextUploadIdMarker>YW55IGlkZWEgd2h5IGVsdmluZydzIHVwbG9hZCBmYWlsZWQ</NextUploadIdMarker>
+  <MaxUploads>3</MaxUploads>
+  <IsTruncated>true</IsTruncated>
+  <Upload>
+    <Key>my-movie.m2ts</Key>
+    <UploadId>VXBsb2FkIElEIGZvciBlbHZpbmcncyBteS1tb3ZpZS5tMnRzIHVwbG9hZA</UploadId>
+    <VersionId>3/L4kqtJlcpXroDTDmJ+rmSpXd3QBpUMLUo</VersionId>
+    <Initiator>
+      <ID>b1d16700c70b0b05597d7acd6a3f92be</ID>
+    </Initiator>
+    <Owner>
+      <ID>b1d16700c70b0b05597d7acd6a3f92be</ID>
+    </Owner>
+    <StorageClass>STANDARD</StorageClass>
+    <Initiated>2010-11-10T20:48:33.000Z</Initiated>
+  </Upload>
+</ListMultipartUploadsResult>
+```
+
+### Sample Request for general purpose buckets: Using the delimiter and the prefix parameters
+<a name="API_ListMultipartUploads_Example_4"></a>
 
 Assume you have a multipart upload in progress for the following keys in your bucket, `example-bucket`.
 + photos/2006/January/sample.jpg
@@ -333,7 +372,7 @@ Authorization: authorization string
 ```
 
 ### Sample Response for general purpose buckets
-<a name="API_ListMultipartUploads_Example_4"></a>
+<a name="API_ListMultipartUploads_Example_5"></a>
 
 The following sample response lists multipart uploads on the specified bucket, `example-bucket`.
 
@@ -377,7 +416,7 @@ This is a useful scenario if you use key prefixes for your objects to create a l
 ```
 
 ### Sample Request for general purpose buckets
-<a name="API_ListMultipartUploads_Example_5"></a>
+<a name="API_ListMultipartUploads_Example_6"></a>
 
 In addition to the delimiter parameter, you can filter results by adding a prefix parameter as shown in the following request.
 
@@ -389,7 +428,7 @@ Authorization: authorization string
 ```
 
 ### Sample Response for general purpose buckets
-<a name="API_ListMultipartUploads_Example_6"></a>
+<a name="API_ListMultipartUploads_Example_7"></a>
 
 In this case, the response will include only multipart uploads for keys that start with the specified prefix. The value returned in the <CommonPrefixes> element is a substring from the beginning of the key to the first occurrence of the specified delimiter after the prefix.
 

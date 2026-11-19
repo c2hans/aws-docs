@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Relat
 ---
 
 # RelatedObservations
-<a name="API_RelatedObservations"></a>
 
 Describes observations related to the problem.
 

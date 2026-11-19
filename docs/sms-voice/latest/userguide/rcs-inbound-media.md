@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-inbound-m
 ---
 
 # Receiving inbound RCS media
-<a name="rcs-inbound-media"></a>
 
 Users can send media (images, videos, audio files, and documents) in RCS conversations with your agent. When you configure inbound media storage, AWS End User Messaging downloads the media from the RCS provider, uploads it to your Amazon S3 bucket, and publishes a notification to your two-way Amazon SNS topic with the S3 location and file metadata.
 

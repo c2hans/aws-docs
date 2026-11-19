@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-putevent
 ---
 
 # Sending events with `PutEvents` in Amazon EventBridge
-<a name="eb-putevents"></a>
 
 The `PutEvents` action sends multiple [events](eb-events.md) to EventBridge in a single request. For more information, see [PutEvents](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) in the *Amazon EventBridge API Reference* and [put-events](https://docs.aws.amazon.com/cli/latest/reference/events/put-events.html) in the *AWS CLI Command Reference*.
 

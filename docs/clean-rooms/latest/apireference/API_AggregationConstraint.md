@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Aggr
 ---
 
 # AggregationConstraint
-<a name="API_AggregationConstraint"></a>
 
 Constraint on query output removing output rows that do not meet a minimum number of distinct values of a specified column.
 

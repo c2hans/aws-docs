@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ClusterStatu
 ---
 
 # ClusterStatus
-<a name="API_ClusterStatus"></a>
 
 The detailed status of the cluster.
 

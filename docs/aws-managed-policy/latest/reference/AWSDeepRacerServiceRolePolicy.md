@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeepRacerServiceRolePolicy
-<a name="AWSDeepRacerServiceRolePolicy"></a>
 
 **Description**: Allows DeepRacer to create required resources and call AWS services on your behalf.
 

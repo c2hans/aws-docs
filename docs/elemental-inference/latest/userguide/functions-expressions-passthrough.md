@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Passthrough functions
-<a name="functions-expressions-passthrough"></a>
 
 A passthrough function invokes no model. Elemental Inference evaluates the request expression against `media`, and then evaluates the response expression against *that result*. Use a passthrough function to publish the metadata that Elemental Inference already produced in a shape of your own choosing — a flattened record, your own field names, a filtered subset — at no model cost.
 

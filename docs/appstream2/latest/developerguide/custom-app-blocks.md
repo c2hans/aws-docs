@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/custom-
 ---
 
 # Custom App Blocks
-<a name="custom-app-blocks"></a>
 
 Elastic fleet streaming instances utilize applications that are installed on virtual hard disk (VHD) files stored within an Amazon S3 bucket in your account. App blocks with custom packaging gives you the flexibility to create your own VHD file, and upload it to an Amazon S3 bucket within your account.
 

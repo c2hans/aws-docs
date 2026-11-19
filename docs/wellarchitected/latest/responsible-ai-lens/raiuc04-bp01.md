@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIUC04-BP01 Map the user journey to identify AI interaction requirements
-<a name="raiuc04-bp01"></a>
 
  Map the user journey to identify interaction requirements and risks. During pre-interaction, assist users in learning about the system's capabilities and limitations.
 

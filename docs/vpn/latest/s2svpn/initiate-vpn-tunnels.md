@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/initiate-vpn-tunnels.h
 ---
 
 # AWS Site-to-Site VPN tunnel initiation options
-<a name="initiate-vpn-tunnels"></a>
 
 By default, your customer gateway device must bring up the tunnels for your Site-to-Site VPN connection by generating traffic and initiating the Internet Key Exchange (IKE) negotiation process. You can configure your VPN tunnels to specify that AWS must initiate or restart the IKE negotiation process instead.
 

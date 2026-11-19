@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Incident management
-<a name="incident-management"></a>
 
  Tags can play a vital part in all phases of incident management starting from incident logging, prioritization, investigation, communication, resolution to closure.
 

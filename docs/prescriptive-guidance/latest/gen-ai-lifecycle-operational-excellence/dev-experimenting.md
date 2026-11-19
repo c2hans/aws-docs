@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Developing and experimenting with generative AI
-<a name="dev-experimenting"></a>
 
 After you have established a strategic foundation per the [Architecting a successful generative AI proof of concept](dev-architecting.md) section, the project transitions to technical execution. The goal of the PoC is to validate the core AI value proposition as quickly and cheaply as possible.
 

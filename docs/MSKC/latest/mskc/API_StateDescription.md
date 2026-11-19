@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_StateDescription.ht
 ---
 
 # StateDescription
-<a name="API_StateDescription"></a>
 
 Details about the state of a resource.
 

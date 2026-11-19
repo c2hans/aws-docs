@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_S3Rep
 ---
 
 # S3ReportOutputConfiguration
-<a name="API_S3ReportOutputConfiguration"></a>
 
 S3 configuration for report output.
 

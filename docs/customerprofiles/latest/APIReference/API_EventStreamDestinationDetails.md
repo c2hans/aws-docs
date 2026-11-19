@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # EventStreamDestinationDetails
-<a name="API_connect-customer-profiles_EventStreamDestinationDetails"></a>
 
 Details of the destination being used for the EventStream.
 

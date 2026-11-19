@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricFi
 ---
 
 # MetricFilterBooleanCondition
-<a name="API_MetricFilterBooleanCondition"></a>
 
 A boolean comparison condition for metric filters.
 

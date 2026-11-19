@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/troubleshoo
 ---
 
 # Troubleshooting AWS IoT Greengrass V2
-<a name="troubleshooting"></a>
 
 Use the troubleshooting information and solutions in this section to help resolve issues with AWS IoT Greengrass Version 2.
 

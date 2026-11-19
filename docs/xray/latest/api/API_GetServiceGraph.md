@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetServiceGraph.html
 ---
 
 # GetServiceGraph
-<a name="API_GetServiceGraph"></a>
 
 Retrieves a document that describes services that process incoming requests, and downstream services that they call as a result. Root services process incoming requests and make calls to downstream services. Root services are applications that use the [AWS X-Ray SDK](https://docs.aws.amazon.com/xray/index.html). Downstream services can be other applications, AWS resources, HTTP web APIs, or SQL databases.
 

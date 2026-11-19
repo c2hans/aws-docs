@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQueueName
-<a name="API_UpdateQueueName"></a>
 
 Updates the name and description of a queue. At least `Name` or `Description` must be provided.
 

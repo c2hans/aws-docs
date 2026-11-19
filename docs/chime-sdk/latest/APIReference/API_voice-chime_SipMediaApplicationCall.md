@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # SipMediaApplicationCall
-<a name="API_voice-chime_SipMediaApplicationCall"></a>
 
 A `Call` instance for a SIP media application.
 

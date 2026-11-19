@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/describ
 ---
 
 # DescribeNamespace
-<a name="describe-namespace"></a>
 
 Use the `DescribeNamespace` API operation to describe a specified namespace. Following is an example AWS CLI command for this operation.
 

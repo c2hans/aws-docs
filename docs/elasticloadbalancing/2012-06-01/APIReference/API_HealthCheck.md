@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # HealthCheck
-<a name="API_HealthCheck"></a>
 
 Information about a health check.
 

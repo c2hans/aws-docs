@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-core/latest/pg/auth-permissio
 ---
 
 # Grant authorization and permissions
-<a name="auth-permissions"></a>
 
 Authorization and permissions in WorkSpaces Core Managed Instances determine who deploys your WorkSpaces resources. IAM (Identity and Access Management) controls permissions, allowing administrators to define specific roles and policies that govern user actions and resource access.
 

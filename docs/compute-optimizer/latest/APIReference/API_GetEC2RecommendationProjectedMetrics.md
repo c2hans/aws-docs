@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetEC2RecommendationProjectedMetrics
-<a name="API_GetEC2RecommendationProjectedMetrics"></a>
 
 Returns the projected utilization metrics of Amazon EC2 instance recommendations.
 

@@ -3,12 +3,24 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/releas
 ---
 
 # Release notes for Amazon Bedrock AgentCore
-<a name="release-notes"></a>
 
 We recommend subscribing to the RSS feed so updates to these notes are delivered to your Inbox.
 
 ## November 2026
 <a name="_november_2026"></a>
+
+### Evaluations: Insights
+<a name="_evaluations_insights_2"></a>
+
+Insights is a capability of Amazon Bedrock AgentCore Evaluations that groups related failures in sampled live traffic and explains their root causes. Use it when multiple sessions fail for the same underlying reason and you need to identify patterns without manually comparing each session.
+
+Add the `Builtin.FailureAnalysis` Insight Evaluator to an online evaluation to generate Insights. We aggregate these patterns at the agent level by `serviceName` and update them as the evaluation processes new evidence. Batch evaluations can use the same evaluator to generate point-in-time insights for the selected dataset. After you enable the default Agent Insight Store, the Agent Insights APIs surface findings from both sources.
+
+Each insight includes generated root causes and suggested fixes. It also includes the number of affected sessions and sample sessions that you can inspect in your traces.
+
+You have one default Agent Insight Store in each supported Region. The Store starts disabled and uses an AWS owned key. Enable it before an Insight Evaluator can add Agent Insights. You can disable it later or encrypt it with a customer managed AWS KMS key. You can also archive or restore individual Agent Insights.
+
+For more information, see [Insights](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/insights.html) in the *Amazon Bedrock AgentCore Developer Guide*.
 
 ### Web search: Free monthly queries
 <a name="_web_search_free_monthly_queries_2"></a>

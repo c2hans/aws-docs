@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_SearchJob
 ---
 
 # SearchJobs
-<a name="API_SearchJobs"></a>
 
 Searches for Amazon Braket hybrid jobs that match the specified filter values.
 

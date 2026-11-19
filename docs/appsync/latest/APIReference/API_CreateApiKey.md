@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateAp
 ---
 
 # CreateApiKey
-<a name="API_CreateApiKey"></a>
 
 Creates a unique key that you can distribute to clients who invoke your API.
 

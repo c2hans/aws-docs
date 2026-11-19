@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # IPv4 Targets for Dual Stack Internet-facing Network Load Balancer
-<a name="ipv6-nlb-ipv4-targets"></a>
 
 Publication date: **June 23, 2022 ([Diagram history](#ipv6-6-diagram-history))**
 

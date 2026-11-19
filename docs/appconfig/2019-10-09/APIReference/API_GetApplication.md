@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetApplication
-<a name="API_GetApplication"></a>
 
 Retrieves information about an application.
 

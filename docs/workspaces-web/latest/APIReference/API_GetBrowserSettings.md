@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_G
 ---
 
 # GetBrowserSettings
-<a name="API_GetBrowserSettings"></a>
 
 Gets browser settings.
 

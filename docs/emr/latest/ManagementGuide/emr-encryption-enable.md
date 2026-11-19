@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-encryptio
 ---
 
 # Create keys and certificates for data encryption with Amazon EMR
-<a name="emr-encryption-enable"></a>
 
 Before you specify encryption options using a security configuration, decide on the provider you want to use for keys and encryption artifacts. For example, you can use AWS KMS or a custom provider that you create. Next, create the keys or key provider as described in this section.
 

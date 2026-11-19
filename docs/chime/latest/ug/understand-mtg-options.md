@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/understand-mtg-options.h
 ---
 
 # Setting meeting options
-<a name="understand-mtg-options"></a>
 
 When you schedule an Amazon Chime meeting, you can set or change the following options:
 + **Meeting IDs** – You can choose several types of meeting IDs. Your choice can prevent back-to-back meetings from overlapping, block unwanted attendees, or set a moderator passcode.

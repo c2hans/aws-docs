@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # UpdateSettings
-<a name="API_UpdateSettings"></a>
 
 Updates the registered identity provider’s product related configuration settings such as the subnets to provision VPC endpoints.
 

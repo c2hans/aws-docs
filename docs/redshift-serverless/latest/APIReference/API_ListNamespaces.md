@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListNamespaces
-<a name="API_ListNamespaces"></a>
 
 Returns information about a list of specified namespaces.
 

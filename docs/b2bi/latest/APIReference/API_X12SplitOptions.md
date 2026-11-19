@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_X12SplitOpt
 ---
 
 # X12SplitOptions
-<a name="API_X12SplitOptions"></a>
 
 Contains options for splitting X12 EDI files into smaller units. This is useful for processing large EDI files more efficiently.
 

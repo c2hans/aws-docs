@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCapacityBlocks
-<a name="API_DescribeCapacityBlocks"></a>
 
 Describes details about Capacity Blocks in the AWS Region that you're currently using.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/replatfo
 ---
 
 # Replatforming script prerequisites
-<a name="replatform-sql-server-setting-up"></a>
 
 This section covers the steps necessary to run the Windows to Linux replatforming script.
 

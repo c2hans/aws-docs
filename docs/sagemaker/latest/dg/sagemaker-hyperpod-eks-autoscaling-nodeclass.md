@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Create a NodeClass
-<a name="sagemaker-hyperpod-eks-autoscaling-nodeclass"></a>
 
 **Important**
 You must start with 0 nodes in your instance group and let Karpenter handle the autoscaling. If you start with more than 0 nodes, Karpenter will scale them down to 0.

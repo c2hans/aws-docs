@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/visual-
 ---
 
 # Configuring inputs and outputs for your actions
-<a name="visual-designer-action-inputs-outputs"></a>
 
 Each automation action responds based on input that it receives. Usually, you then pass output to the subsequent actions. In the visual design experience, you can configure an action's input and output data in the **Inputs** and **Outputs** tabs of the **Form** panel.
 

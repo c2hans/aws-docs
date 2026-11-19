@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Use an `EnhancedDocument` without DynamoDB
-<a name="ddb-en-client-doc-api-standalone"></a>
 
 Although you usually use an instance of an `EnhancedDocument` to read and write document-type DynamoDB items, it can also be used independently of DynamoDB.
 

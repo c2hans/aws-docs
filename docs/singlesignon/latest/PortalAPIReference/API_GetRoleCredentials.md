@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/A
 ---
 
 # GetRoleCredentials
-<a name="API_GetRoleCredentials"></a>
 
 Returns the STS short-term credentials for a given role name that is assigned to the user.
 

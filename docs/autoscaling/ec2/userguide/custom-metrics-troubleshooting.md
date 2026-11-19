@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/custom-metrics
 ---
 
 # Considerations for custom metrics in a predictive scaling policy
-<a name="custom-metrics-troubleshooting"></a>
 
 If an issue occurs while using custom metrics, we recommend that you do the following:
 + If an error message is provided, read the message and resolve the issue it reports, if possible.

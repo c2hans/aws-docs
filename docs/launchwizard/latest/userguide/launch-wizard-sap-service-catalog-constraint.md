@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Create a launch constraint
-<a name="launch-wizard-sap-service-catalog-constraint"></a>
 
 A launch constraint specifies the AWS Identity and Access Management role that AWS Service Catalog assumes when a user launches a product. It is associated with products in the portfolio. If you do not use launch constraints, you must launch and manage products using your own IAM credentials. These credentials must have permissions to use CloudFormation, AWS Service Catalog, and any other AWS services used by the products. Using a launch constraint allows you to limit the permissions of a user to the minimum required for a product.
 

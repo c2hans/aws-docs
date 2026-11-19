@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/upgrading.html
 ---
 
 # Upgrading Your DLAMI
-<a name="upgrading"></a>
 
 Here you will find information on upgrading your DLAMI and tips on updating software on your DLAMI.
 

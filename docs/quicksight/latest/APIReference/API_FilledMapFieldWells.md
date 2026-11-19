@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Fille
 ---
 
 # FilledMapFieldWells
-<a name="API_FilledMapFieldWells"></a>
 
 The field wells of a `FilledMapVisual`.
 

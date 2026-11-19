@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Architecture selection
-<a name="architecture-selection"></a>
 
 | AOSPERF01: How do you plan, monitor, and optimize your sharding strategy? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListS
 ---
 
 # ListSystems
-<a name="API_ListSystems"></a>
 
 Lists systems.
 

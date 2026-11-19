@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagUser.html
 ---
 
 # TagUser
-<a name="API_TagUser"></a>
 
 Adds one or more tags to an IAM user. If a tag with the same key name already exists, then that tag is overwritten with the new value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/run-bluage-
 ---
 
 # Mainframe job types
-<a name="mainframe-job-types"></a>
 
 This guide covers both batch and real-time mainframe jobs.
 

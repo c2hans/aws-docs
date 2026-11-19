@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 ---
 
 # SAP
-<a name="databases-database-migration-patterns-by-workload-sap-pattern-list"></a>
 
 **Topics**
 + [Automatically back up SAP HANA databases using Systems Manager and EventBridge](automatically-back-up-sap-hana-databases-using-systems-manager-and-eventbridge.md)

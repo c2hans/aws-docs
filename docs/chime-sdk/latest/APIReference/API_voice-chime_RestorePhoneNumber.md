@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # RestorePhoneNumber
-<a name="API_voice-chime_RestorePhoneNumber"></a>
 
 Restores a deleted phone number.
 

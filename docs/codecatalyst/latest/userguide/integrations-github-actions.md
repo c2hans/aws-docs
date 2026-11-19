@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/integratio
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Integrating with GitHub Actions
-<a name="integrations-github-actions"></a>
 
 A *GitHub Action* is a lot like a [CodeCatalyst action](workflows-actions.md#workflows-actions-types-cc), except that it was developed for use with GitHub workflows. For details about GitHub Actions, see the [GitHub Actions](https://docs.github.com/en/actions) documentation.
 

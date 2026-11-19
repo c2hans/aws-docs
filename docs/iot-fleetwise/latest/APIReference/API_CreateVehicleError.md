@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Cr
 ---
 
 # CreateVehicleError
-<a name="API_CreateVehicleError"></a>
 
 An HTTP error resulting from creating a vehicle.
 

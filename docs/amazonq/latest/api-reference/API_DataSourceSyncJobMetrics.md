@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DataSou
 ---
 
 # DataSourceSyncJobMetrics
-<a name="API_DataSourceSyncJobMetrics"></a>
 
 Maps a batch delete document request to a specific Amazon Q Business data source connector sync job.
 

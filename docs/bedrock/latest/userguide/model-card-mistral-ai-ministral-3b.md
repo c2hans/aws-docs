@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mist
 ---
 
 # Ministral 3B
-<a name="model-card-mistral-ai-ministral-3b"></a>
 
 ## ![Mistral AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/mistralai.png) Mistral AI — Ministral 3B
 <a name="model-card-mistral-ai-ministral-3b-header"></a>

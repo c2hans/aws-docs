@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RistStandard
 ---
 
 # RistStandardDestinationEndpointConfiguration
-<a name="API_RistStandardDestinationEndpointConfiguration"></a>
 
 The configuration settings for a destination endpoint that uses the RIST protocol.
 

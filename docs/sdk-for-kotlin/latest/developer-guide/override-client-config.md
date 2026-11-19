@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ov
 ---
 
 # Override service client configuration
-<a name="override-client-config"></a>
 
 After a [service client is created](creating-clients.md), the service client uses a fixed configuration for all operations. However, sometimes you might need to override the configuration for one or more specific operations.
 

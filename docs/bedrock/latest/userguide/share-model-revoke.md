@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/share-model-rev
 ---
 
 # Revoke access to a shared model
-<a name="share-model-revoke"></a>
 
 To learn how to revoke access to a model that you've shared, choose the tab for your preferred method, and then follow the steps:
 

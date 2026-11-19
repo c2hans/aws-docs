@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # CreateDataflowEndpointGroupV2
-<a name="API_CreateDataflowEndpointGroupV2"></a>
 
 Creates a `DataflowEndpoint` group containing the specified list of Ground Station Agent based endpoints.
 

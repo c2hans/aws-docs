@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/datasources-ope
 ---
 
 # Traces support
-<a name="datasources-opensearch-traces"></a>
 
 The OpenSearch plugin has support for viewing a list of traces in table form, and a single trace in **Trace View**, which shows the timeline of trace spans.
 

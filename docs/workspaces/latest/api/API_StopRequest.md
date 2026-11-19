@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_StopRequest.ht
 ---
 
 # StopRequest
-<a name="API_StopRequest"></a>
 
 Describes the information used to stop a WorkSpace.
 

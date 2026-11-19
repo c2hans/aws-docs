@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Trans
 ---
 
 # TransformationJobProperties
-<a name="API_TransformationJobProperties"></a>
 
 Contains the properties of a data transformation job, including its status, configuration, and progress information. You retrieve this structure by calling `DescribeDataTransformationJob`.
 

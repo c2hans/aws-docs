@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Member
 ---
 
 # MemberDataSourceConfiguration
-<a name="API_MemberDataSourceConfiguration"></a>
 
 Contains information on which data sources are enabled for a member account.
 

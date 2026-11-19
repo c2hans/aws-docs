@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/wizcn
 ---
 
 # WIZ CNAPP integration configuration
-<a name="wizcnapp-setup"></a>
 
 To integrate WIZ CNAPP with CloudWatch Logs, you must configure both the source and the pipeline. First, set up your WIZ source by authenticating with OAuth2 and configuring API access. Then, configure the CloudWatch pipeline to ingest the data from your source into CloudWatch Logs.
 

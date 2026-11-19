@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVpcAttribute
-<a name="API_DescribeVpcAttribute"></a>
 
 Describes the specified attribute of the specified VPC. You can specify only one attribute at a time.
 

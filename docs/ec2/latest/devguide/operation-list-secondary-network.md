@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/operation-list-secon
 ---
 
 # Secondary Networks actions
-<a name="operation-list-secondary-network"></a>
 
 The following API actions are available for Secondary Networks.
 

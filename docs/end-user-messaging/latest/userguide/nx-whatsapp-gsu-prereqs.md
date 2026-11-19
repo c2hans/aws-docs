@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-w
 ---
 
 # Prerequisites
-<a name="nx-whatsapp-gsu-prereqs"></a>
 
 Before you begin, complete the following:
 

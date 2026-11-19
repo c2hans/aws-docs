@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # RemoveDraftAppVersionResourceMappings
-<a name="API_RemoveDraftAppVersionResourceMappings"></a>
 
 Removes resource mappings from a draft application version.
 

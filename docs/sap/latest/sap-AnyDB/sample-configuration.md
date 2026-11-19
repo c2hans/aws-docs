@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/sample-configuratio
 ---
 
 # Sample configuration (crm config)
-<a name="sample-configuration"></a>
 
 ```
 node 1: slxdbhost01

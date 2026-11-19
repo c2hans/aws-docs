@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Identifies the name and value of a filter object. This filter is used to limit the number and type of AWS DMS objects that are returned for a particular `Describe*` call or similar operation. Filters are used as an optional parameter for certain API operations.
 

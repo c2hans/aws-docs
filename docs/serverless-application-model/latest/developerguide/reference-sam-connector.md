@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AWS SAM connector reference
-<a name="reference-sam-connector"></a>
 
 This section contains reference information for the AWS Serverless Application Model (AWS SAM) connector resource type. For an introduction to connectors, see [Managing resource permissions with AWS SAM connectors](managing-permissions-connectors.md).
 

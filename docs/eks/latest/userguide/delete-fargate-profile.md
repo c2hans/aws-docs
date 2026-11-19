@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/delete-fargate-prof
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Delete a Fargate profile
-<a name="delete-fargate-profile"></a>
 
 This topic describes how to delete a Fargate profile. When you delete a Fargate profile, any Pods that were scheduled onto Fargate with the profile are deleted. If those Pods match another Fargate profile, then they’re scheduled on Fargate with that profile. If they no longer match any Fargate profiles, then they aren’t scheduled onto Fargate and might remain as pending.
 

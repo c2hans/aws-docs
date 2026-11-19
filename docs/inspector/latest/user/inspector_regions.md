@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector_regions.
 ---
 
 # Regions and endpoints
-<a name="inspector_regions"></a>
 
  This topic includes tables that show endpoints for Amazon Inspector and Amazon Inspector Scan. It also includes tables that show which AWS Regions support Amazon Inspector features. To view the AWS Regions where Amazon Inspector is available, see [Amazon Inspector endpoint and quotas](https://docs.aws.amazon.com/general/latest/gr/inspector2.html) in the *Amazon Web Services General Reference*.
 

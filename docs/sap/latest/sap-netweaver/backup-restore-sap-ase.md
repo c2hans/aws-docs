@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/backup-restore-
 ---
 
 # Backup & restore
-<a name="backup-restore-sap-ase"></a>
 
 ## Snapshots and AMIs
 <a name="snapshots-sap-ase"></a>

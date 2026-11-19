@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/create-
 ---
 
 # Create a Lightsail for Research virtual computer
-<a name="create-computer"></a>
 
 Complete the following steps to create a Lightsail for Research virtual computer running an application.
 

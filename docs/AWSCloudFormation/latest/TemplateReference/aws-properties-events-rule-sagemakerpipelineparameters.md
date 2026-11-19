@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Rule SageMakerPipelineParameters
-<a name="aws-properties-events-rule-sagemakerpipelineparameters"></a>
 
 These are custom parameters to use when the target is a SageMaker AI Model Building Pipeline that starts based on EventBridge events.
 

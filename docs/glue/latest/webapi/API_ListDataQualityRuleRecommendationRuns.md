@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListDataQualityRu
 ---
 
 # ListDataQualityRuleRecommendationRuns
-<a name="API_ListDataQualityRuleRecommendationRuns"></a>
 
 Lists the recommendation runs meeting the filter criteria.
 

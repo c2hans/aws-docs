@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_Q
 ---
 
 # QQueryCardInput
-<a name="API_qapps_QQueryCardInput"></a>
 
 The input shape for defining a query card in an Amazon Q App.
 

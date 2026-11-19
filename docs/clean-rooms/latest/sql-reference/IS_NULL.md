@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/IS_NULL
 ---
 
 # IS\_NULL expression
-<a name="IS_NULL"></a>
 
 The IS\_NULL conditional expression is used to check if a value is null.
 

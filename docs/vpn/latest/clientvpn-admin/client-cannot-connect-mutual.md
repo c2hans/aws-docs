@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-cannot
 ---
 
 # Troubleshooting AWS Client VPN: Clients cannot connect — mutual authentication
-<a name="client-cannot-connect-mutual"></a>
 
 **Problem**
 I use mutual authentication for my Client VPN endpoint. Clients are getting TLS key negotiation failed errors and timeout errors.

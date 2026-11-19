@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-launch-te
 ---
 
 # Delete a launch template or a launch template version
-<a name="delete-launch-template"></a>
 
 If you no longer require a launch template, you can delete it. Deleting a launch template deletes all of its versions. If you only want to delete a specific version of a launch template, you can do so while retaining the other versions of the launch template.
 
@@ -56,8 +55,8 @@ If you no longer require a launch template version, you can delete it.
 
 **Considerations**
 + You can't replace the version number after you delete it.
-+ You can't delete the default version of the launch template; you must first assign a different version as the default. If the default version is the only version for the launch template, you must [delete the entire launch template](#delete-launch-template).
-+ When using the console, you can delete one launch template version at a time. When using the AWS CLI, you can delete up to 200 launch template versions in a single request. To delete more than 200 versions in a single request, you can [delete the launch template](#delete-launch-template), which also deletes all of its versions.
++ You can't delete the default version of the launch template; you must first assign a different version as the default. If the default version is the only version for the launch template, you must [delete the entire launch template](delete-launch-template.md).
++ When using the console, you can delete one launch template version at a time. When using the AWS CLI, you can delete up to 200 launch template versions in a single request. To delete more than 200 versions in a single request, you can [delete the launch template](delete-launch-template.md), which also deletes all of its versions.
 
 ------
 #### [ Console ]

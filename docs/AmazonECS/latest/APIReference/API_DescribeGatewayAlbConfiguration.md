@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeGatewayAlbConfiguration
-<a name="API_DescribeGatewayAlbConfiguration"></a>
 
 The configuration for a gateway that uses shared Application Load Balancers, as returned by `DescribeGateway`. This includes the current number of load balancers in addition to the configured settings.
 

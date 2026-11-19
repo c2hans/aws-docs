@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableIp
 ---
 
 # DisableIpamPolicy
-<a name="API_DisableIpamPolicy"></a>
 
 Disables an IPAM policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/dynatrace-AMG-d
 ---
 
 # Connect to a Dynatrace data source
-<a name="dynatrace-AMG-datasource"></a>
 
 Data source for [https://www.dynatrace.com/](https://www.dynatrace.com). To use this data source, you must have a Dynatrace account.
 

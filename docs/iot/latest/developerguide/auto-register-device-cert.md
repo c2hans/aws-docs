@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/auto-register-
 ---
 
 # Register a client certificate when the client connects to AWS IoT just-in-time registration (JITR)
-<a name="auto-register-device-cert"></a>
 
 You can configure a CA certificate to enable client certificates it has signed to register with AWS IoT automatically the first time the client connects to AWS IoT.
 

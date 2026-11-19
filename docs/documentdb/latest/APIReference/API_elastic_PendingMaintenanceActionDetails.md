@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # PendingMaintenanceActionDetails
-<a name="API_elastic_PendingMaintenanceActionDetails"></a>
 
 Retrieves the details of maintenance actions that are pending.
 

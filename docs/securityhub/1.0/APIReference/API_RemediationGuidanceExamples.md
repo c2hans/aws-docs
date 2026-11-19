@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationGuidanceExamples
-<a name="API_RemediationGuidanceExamples"></a>
 
 Provided remediation guidance examples in different formats that can be run for remediating the target.
 

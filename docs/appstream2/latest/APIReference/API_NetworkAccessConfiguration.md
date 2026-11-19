@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Netwo
 ---
 
 # NetworkAccessConfiguration
-<a name="API_NetworkAccessConfiguration"></a>
 
 Describes the network details of the fleet or image builder instance.
 

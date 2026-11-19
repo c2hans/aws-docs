@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomConnectionParameters
-<a name="API_CustomConnectionParameters"></a>
 
 The parameters that are required to connect to a custom connection data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_R
 ---
 
 # RebootDbCluster
-<a name="API_RebootDbCluster"></a>
 
 Reboots a Timestream for InfluxDB cluster.
 

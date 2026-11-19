@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Remot
 ---
 
 # RemoteAccessSession
-<a name="API_RemoteAccessSession"></a>
 
 Represents information about the remote access session.
 

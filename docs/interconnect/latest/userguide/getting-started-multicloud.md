@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/userguide/getting-st
 ---
 
 # Getting started with AWS Interconnect - multicloud
-<a name="getting-started-multicloud"></a>
 
 ## Plan your network architecture
 <a name="plan-network-architecture"></a>

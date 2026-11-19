@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaColumn.html
 ---
 
 # SchemaColumn
-<a name="API_SchemaColumn"></a>
 
 A key-value pair representing a column and data type that this transform can run against. The `Schema` parameter of the `MLTransform` may contain up to 100 of these structures.
 

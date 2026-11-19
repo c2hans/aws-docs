@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListEnv
 ---
 
 # ListEnvironmentActions
-<a name="API_ListEnvironmentActions"></a>
 
 Lists existing environment actions.
 

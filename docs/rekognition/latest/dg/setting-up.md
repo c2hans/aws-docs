@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/setting-up.html
 ---
 
 # Step 1: Set up an AWS account and create a User
-<a name="setting-up"></a>
 
 Before you use Amazon Rekognition for the first time, you must complete the following tasks:
 

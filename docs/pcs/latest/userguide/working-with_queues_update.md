@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_queues
 ---
 
 # Updating an AWS PCS queue
-<a name="working-with_queues_update"></a>
 
 This topic provides an overview of available options and describes what to consider when you update an AWS PCS queue. For information about Slurm custom settings, see [Custom Slurm settings for AWS PCS queues](slurm-custom-settings-queue.md).
 

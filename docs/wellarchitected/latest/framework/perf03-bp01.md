@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf03-
 ---
 
 # PERF03-BP01 Use a purpose-built data store that best supports your data access and storage requirements
-<a name="perf03-bp01"></a>
 
  Datasets differ in structure, access pattern, and durability. Using one storage technology for every dataset forces trade-offs that degrade performance and raise cost. Match each dataset to a store designed for its characteristics.
 

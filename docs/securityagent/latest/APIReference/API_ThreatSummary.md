@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Th
 ---
 
 # ThreatSummary
-<a name="API_ThreatSummary"></a>
 
 Contains summary information about a threat.
 

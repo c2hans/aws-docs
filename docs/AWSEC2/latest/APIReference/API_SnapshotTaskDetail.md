@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SnapshotT
 ---
 
 # SnapshotTaskDetail
-<a name="API_SnapshotTaskDetail"></a>
 
 Details about the import snapshot task.
 

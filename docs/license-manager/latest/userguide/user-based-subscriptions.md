@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/user-ba
 ---
 
 # Use License Manager user-based subscriptions for supported software products
-<a name="user-based-subscriptions"></a>
 
 With user-based subscriptions in AWS License Manager, you can purchase fully-compliant licensed software subscriptions. Licenses are provided by Amazon and have a per-user subscription fee. Amazon EC2 provides pre-configured Amazon Machine Images (AMIs) with the supported software, along with license-included Windows Server licenses. These licenses can be used without long-term licensing commitments.
 

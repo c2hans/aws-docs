@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Deleting an Amazon SQS queue
-<a name="step-delete-queue"></a>
 
 If you no longer use an Amazon SQS queue and don’t plan to use it in the near future, delete the queue.
 

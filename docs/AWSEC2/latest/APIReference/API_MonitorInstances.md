@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MonitorIn
 ---
 
 # MonitorInstances
-<a name="API_MonitorInstances"></a>
 
 Enables detailed monitoring for a running instance. Otherwise, basic monitoring is enabled. For more information, see [Monitor your instances using CloudWatch](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-cloudwatch.html) in the *Amazon EC2 User Guide*.
 

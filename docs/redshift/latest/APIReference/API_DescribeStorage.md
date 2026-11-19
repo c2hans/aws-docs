@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeStorage
-<a name="API_DescribeStorage"></a>
 
 Returns account level backups storage size and provisional storage.
 

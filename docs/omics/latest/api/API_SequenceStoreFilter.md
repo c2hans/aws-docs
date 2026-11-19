@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_SequenceStoreFilter
 ---
 
 # SequenceStoreFilter
-<a name="API_SequenceStoreFilter"></a>
 
 A filter for a sequence store.
 

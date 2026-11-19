@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 List the metadata tags that are assigned to the specified AWS resource.
 

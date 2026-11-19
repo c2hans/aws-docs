@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Dissocia
 ---
 
 # DissociateAccessGrantsIdentityCenter
-<a name="API_control_DissociateAccessGrantsIdentityCenter"></a>
 
 Dissociates the AWS IAM Identity Center instance from the S3 Access Grants instance.
 

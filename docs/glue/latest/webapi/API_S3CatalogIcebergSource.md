@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3CatalogIcebergS
 ---
 
 # S3CatalogIcebergSource
-<a name="API_S3CatalogIcebergSource"></a>
 
 Specifies an Apache Iceberg data source that is registered in the AWS Glue Data Catalog. The Iceberg data source must be stored in Amazon S3.
 

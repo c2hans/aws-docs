@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Provisi
 ---
 
 # ProvisionedIdentifier
-<a name="API_ProvisionedIdentifier"></a>
 
 The identifier for a provisioned cluster.
 

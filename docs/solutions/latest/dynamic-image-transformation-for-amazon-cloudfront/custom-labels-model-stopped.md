@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Custom Labels detection has no effect
-<a name="custom-labels-model-stopped"></a>
 
  **Symptoms:**
 + A smart crop policy that references a `customModelArn` crops as if the custom model returned nothing, while other detection methods still work.

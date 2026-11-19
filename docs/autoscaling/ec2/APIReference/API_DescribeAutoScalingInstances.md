@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeAutoScalingInstances
-<a name="API_DescribeAutoScalingInstances"></a>
 
 Gets information about the Auto Scaling instances in the account and Region.
 

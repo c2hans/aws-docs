@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/migrationguide/mig
 ---
 
 # Step I: Configure the Elemental Live node after migration
-<a name="migrate-worker-rebuild-worker"></a>
 
 **Install new licenses**
 

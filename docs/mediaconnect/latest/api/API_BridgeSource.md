@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BridgeSource
 ---
 
 # BridgeSource
-<a name="API_BridgeSource"></a>
 
  The bridge's source.
 

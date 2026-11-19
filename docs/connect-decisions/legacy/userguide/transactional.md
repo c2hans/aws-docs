@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/trans
 ---
 
 # Transactional data
-<a name="transactional"></a>
 
 **Topics**
 + [Forecast](#forecast)

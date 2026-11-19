@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals and organizations contributed to this document:
 + Rachna Chadha, Principal Technologist, AI, Field-AGS-WorldwideTech-All-CS, Amazon Web Services

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LogFieldType
-<a name="API_LogFieldType"></a>
 
 Defines the data type structure for a log field, including the type, element information, and nested fields for complex types.
 
@@ -12,7 +11,7 @@ Defines the data type structure for a log field, including the type, element inf
 
  ** element **   <a name="CWL-Type-LogFieldType-element"></a>
 For array or collection types, specifies the element type information.
-Type: [LogFieldType](#API_LogFieldType) object
+Type: [LogFieldType](API_LogFieldType.md) object
 Required: No
 
  ** fields **   <a name="CWL-Type-LogFieldType-fields"></a>

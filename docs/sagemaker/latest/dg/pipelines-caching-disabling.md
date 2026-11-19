@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-caching-di
 ---
 
 # Turn off step caching
-<a name="pipelines-caching-disabling"></a>
 
 A pipeline step does not rerun if you change any attributes that are not listed in [Default cache key attributes by pipeline step type](pipelines-default-keys.md) for its step type. However, you may decide that you want the pipeline step to rerun anyway. In this case, you need to turn off step caching.
 

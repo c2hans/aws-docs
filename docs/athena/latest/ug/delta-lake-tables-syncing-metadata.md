@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/delta-lake-tables-synci
 ---
 
 # Synchronize Delta Lake metadata
-<a name="delta-lake-tables-syncing-metadata"></a>
 
 Athena synchronizes table metadata, including schema, partition columns, and table properties, to AWS Glue if you use Athena to create your Delta Lake table. As time passes, this metadata can lose its synchronization with the underlying table metadata in the transaction log. To keep your table up to date, you can choose one of the following options:
 + Use the AWS Glue crawler for Delta Lake tables. For more information, see [Introducing native Delta Lake table support with AWS Glue crawlers](https://aws.amazon.com/blogs/big-data/introducing-native-delta-lake-table-support-with-aws-glue-crawlers/) in the *AWS Big Data Blog* and [Scheduling an AWS Glue crawler](https://docs.aws.amazon.com/glue/latest/dg/schedule-crawler.html) in the AWS Glue Developer Guide.

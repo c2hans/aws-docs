@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstan
 ---
 
 # RunInstances
-<a name="API_RunInstances"></a>
 
 Launches the specified number of instances using an AMI for which you have permissions.
 
@@ -14,7 +13,7 @@ You can specify a number of options, or leave the default options. The following
 + If you don't specify a security group ID, we use the default security group for the VPC. For more information, see [Security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html).
 + If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.
 
-You can create a [launch template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html), which is a resource that contains the parameters to launch an instance. When you launch an instance using [RunInstances](#API_RunInstances), you can specify the launch template instead of specifying the launch parameters.
+You can create a [launch template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html), which is a resource that contains the parameters to launch an instance. When you launch an instance using [RunInstances](API_RunInstances.md), you can specify the launch template instead of specifying the launch parameters.
 
 To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances.
 

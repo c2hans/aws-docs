@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AssociateVir
 ---
 
 # AssociateVirtualMachinesToExadbVmCluster
-<a name="API_AssociateVirtualMachinesToExadbVmCluster"></a>
 
 Adds virtual machines to the specified Exascale VM cluster.
 

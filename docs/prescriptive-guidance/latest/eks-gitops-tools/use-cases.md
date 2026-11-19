@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Argo CD and Flux use cases
-<a name="use-cases"></a>
 
 This section focuses on two tools, Argo CD and Flux, which provide pure GitOps functionality. In this context, *pure GitOps* refers to a model where a Git repository serves as the single source of truth for the desired state of applications and infrastructure. All changes are made through Git commits, and the system automatically synchronizes the live environment to match the state that's defined in the repository. No manual intervention is required outside of Git operations.
 

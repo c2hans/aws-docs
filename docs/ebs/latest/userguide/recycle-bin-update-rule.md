@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-update-
 ---
 
 # Update an existing Recycle Bin retention rule
-<a name="recycle-bin-update-rule"></a>
 
 You can update an unlocked retention rule's description, resource tags, and retention period at any time after creation. You can't update a retention rule's resource type or unlock delay period, even if the retention rule is unlocked.
 

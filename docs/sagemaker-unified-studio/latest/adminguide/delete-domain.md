@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Delete domains
-<a name="delete-domain"></a>
 
 When deleting a domain, note that the act of deleting a domain is final. Another important note to remember is that not all items created by Amazon SageMaker Unified Studio are deleted. The following items can only be deleted in their service consoles:
 + AWS resources - except for this domain - will NOT be deleted.

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/lo
 The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Loading Credentials in Node.js from the Shared Credentials File
-<a name="loading-node-credentials-shared"></a>
 
 You can keep your AWS credentials data in a shared file used by SDKs and the command line interface. When the SDK for JavaScript loads, it automatically searches the shared credentials file, which is named "credentials". Where you keep the shared credentials file depends on your operating system:
 + The shared credentials file on Linux, Unix, and macOS: `~/.aws/credentials`

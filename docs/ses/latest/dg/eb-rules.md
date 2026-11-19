@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-rules.html
 ---
 
 # Rule sets and rules
-<a name="eb-rules"></a>
 
 After a traffic policy accepts an email, the ingress endpoint passes the email to its assigned rule set. A rule set is a reusable group of ordered rules that controls how Mail Manager processes accepted email. You can assign the same rule set to multiple ingress endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Examples of using the Neptune-Export service to export training data for Neptune ML
-<a name="machine-learning-export-examples"></a>
 
 This request exports property-graph training data for a node classification task:
 

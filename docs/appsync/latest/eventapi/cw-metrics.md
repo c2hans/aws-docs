@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/cw-metrics.html
 ---
 
 # CloudWatch metrics
-<a name="cw-metrics"></a>
 
 You can use CloudWatch metrics to monitor and provide alerts about specific events that can result in HTTP status codes or from latency.
 

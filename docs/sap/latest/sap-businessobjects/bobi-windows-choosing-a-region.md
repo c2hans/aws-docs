@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-wind
 ---
 
 # Choosing a Region
-<a name="bobi-windows-choosing-a-region"></a>
 
 When choosing which AWS Region to deploy your SAP environment in you should consider the following topics:
 + Proximity to your on-premises data centers, systems, and end users to minimize network latency.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListHu
 ---
 
 # ListHubContentVersions
-<a name="API_ListHubContentVersions"></a>
 
 List hub content versions.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Deployment steps
-<a name="deployment-steps"></a>
 
 ## Step 1. Sign in to your AWS account
 <a name="step-1.-sign-in-to-your-aws-account"></a>

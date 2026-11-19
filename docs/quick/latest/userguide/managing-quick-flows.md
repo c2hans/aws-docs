@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/managing-quick-fl
 ---
 
 # Managing Quick Flows
-<a name="managing-quick-flows"></a>
 
 As an administrator, you can manage how AWS Quick Flows operates within your organization, including governance policies, user permissions, and feature availability.
 

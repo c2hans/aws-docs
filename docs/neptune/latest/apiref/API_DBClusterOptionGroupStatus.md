@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DBClusterOptio
 ---
 
 # DBClusterOptionGroupStatus
-<a name="API_DBClusterOptionGroupStatus"></a>
 
 Not supported by Neptune.
 

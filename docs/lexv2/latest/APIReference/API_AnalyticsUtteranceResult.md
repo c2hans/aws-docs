@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsU
 ---
 
 # AnalyticsUtteranceResult
-<a name="API_AnalyticsUtteranceResult"></a>
 
 An object containing the results for the utterance metrics you requested and the bin and/or group(s) they refer to, if applicable.
 

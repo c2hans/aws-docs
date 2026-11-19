@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSUS08-BP02 Migrate end users to a thin client or web-based client device
-<a name="eucsus08-bp02"></a>
 
  Thin client or web-based client devices can reduce investment and are aligned to the previous best practice.
 

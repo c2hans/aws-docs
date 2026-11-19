@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/pr
 ---
 
 # Managing usage and bills for Amazon GameLift Streams
-<a name="pricing"></a>
 
  This topic covers how to monitor and manage your Amazon GameLift Streams usage, costs, and billing to optimize your streaming expenses.
 

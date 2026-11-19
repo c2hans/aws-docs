@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/setting
 ---
 
 # Managed license settings in License Manager
-<a name="settings-managed-licenses"></a>
 
 The following settings are available for managed licenses.
 

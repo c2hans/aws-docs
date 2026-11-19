@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp
 ---
 
 # Permissions for GetFederationToken
-<a name="id_credentials_temp_control-access_getfederationtoken"></a>
 
 The `GetFederationToken` operation is called by an IAM user and returns temporary credentials for that user. This operation *federates* the user. The permissions assigned to an AWS STS federated user session are defined in one of two places:
 + The session policies passed as a parameter of the `GetFederationToken` API call. (This is most common.)

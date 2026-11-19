@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SearchResultItem.
 ---
 
 # SearchResultItem
-<a name="API_SearchResultItem"></a>
 
 A single search result item representing a matched asset.
 

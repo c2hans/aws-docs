@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # Adding user authentication to an existing cluster
-<a name="config-conductor-live-checklist-add-auth"></a>
 
 The procedure to add user authentication to the AWS Elemental Conductor Livecluster includes multiple steps. You must remove the nodes from the cluster, enable user authentication, and then add the nodes back to the cluster:
 + On each worker node, perform these tasks in the specified order:

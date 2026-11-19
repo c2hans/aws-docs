@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Cr
 ---
 
 # CreateConnection
-<a name="API_CreateConnection"></a>
 
 Creates a connection between a customer network and a specific Direct Connect location.
 

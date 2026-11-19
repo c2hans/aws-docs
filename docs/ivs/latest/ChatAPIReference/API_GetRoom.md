@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_GetRoom.
 ---
 
 # GetRoom
-<a name="API_GetRoom"></a>
 
 Gets the specified room.
 

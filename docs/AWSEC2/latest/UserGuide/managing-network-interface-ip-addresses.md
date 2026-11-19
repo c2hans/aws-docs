@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-network
 ---
 
 # Manage the IP addresses for your network interface
-<a name="managing-network-interface-ip-addresses"></a>
 
 You can manage the following IP addresses for your network interfaces:
 + Elastic IP addresses (one per private IPv4 address)

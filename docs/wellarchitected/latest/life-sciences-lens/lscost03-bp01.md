@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSCOST03-BP01 Align infrastructure capacity with R&D development stages
-<a name="lscost03-bp01"></a>
 
  Design infrastructure that can adapt to changing requirements across different R&D phases while maintaining regulatory adherence and research integrity.
 

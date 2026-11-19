@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-con
 ---
 
 # Example: Using custom Amazon CloudWatch metrics
-<a name="customize-containers-cw"></a>
 
 This topic provides a configuration example that integrates Elastic Beanstalk metrics with Amazon CloudWatch agent for platforms based on Amazon Linux 2 and later. The configuration example uses files and commands in an `.ebextensions` configuration file.
 

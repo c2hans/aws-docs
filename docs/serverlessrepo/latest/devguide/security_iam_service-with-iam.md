@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/security_
 ---
 
 # How the AWS Serverless Application Repository Works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to the AWS Serverless Application Repository, you should understand what IAM features are available to use with the AWS Serverless Application Repository.
 

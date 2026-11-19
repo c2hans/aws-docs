@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # PillarItem
-<a name="API_PillarItem"></a>
 
 Item configuration for a specific AWS Well-Architected Framework pillar.
 

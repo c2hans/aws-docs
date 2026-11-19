@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # Policy evaluation for requests within a single account
-<a name="reference_policies_evaluation-logic_policy-eval-basics"></a>
 
 ## Policy evaluation for an IAM role
 <a name="policy-eval-basics-single-account-role"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/s_SHA.h
 ---
 
 # SHA function
-<a name="s_SHA"></a>
 
 Synonym of SHA1 function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/mongo-apis-ag
 ---
 
 # Aggregation pipeline operators
-<a name="mongo-apis-aggregation-pipeline-operators"></a>
 
 This section provides detailed information about aggregation pipeline operators supported by Amazon DocumentDB.
 

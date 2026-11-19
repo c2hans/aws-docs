@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Index level encryption for Amazon OpenSearch Service
-<a name="index-level-encryption"></a>
 
 Index level encryption for OpenSearch Service is an encryption option that lets you encrypt data at rest on a per-index basis using AWS Key Management Service (AWS KMS) customer managed keys. With index level encryption, you can use different customer managed keys for different indices on the same domain. Index level encryption extends domain-level encryption at rest. For more information, see [Encryption of data at rest for Amazon OpenSearch Service](encryption-at-rest.md).
 

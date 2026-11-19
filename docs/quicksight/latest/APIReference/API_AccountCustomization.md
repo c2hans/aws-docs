@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Accou
 ---
 
 # AccountCustomization
-<a name="API_AccountCustomization"></a>
 
 The Quick Sight customizations associated with your AWS account or a Quick Sight namespace in a specific AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # AWS Services Used
-<a name="aws-services-used"></a>
 
 ## Core Services
 <a name="core-services"></a>

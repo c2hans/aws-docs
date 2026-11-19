@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.2/programmers
 ---
 
 # 2 Hardware
-<a name="elpg-hardware"></a>
 
 An AWS IoT ExpressLink qualified module is generally composed of the following elements: (see block diagram)
 + a module processor (MCU), that handles the AT command parser and manages the network connectivity protocols (ethernet, Wi-Fi, cellular)

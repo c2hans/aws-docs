@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # DeleteLoadBalancerPolicy
-<a name="API_DeleteLoadBalancerPolicy"></a>
 
 Deletes the specified policy from the specified load balancer. This policy must not be enabled for any listeners.
 

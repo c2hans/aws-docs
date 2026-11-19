@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-
 ---
 
 # Create an Amazon ECS blue/green deployment through CloudFormation
-<a name="deployments-create-ecs-cfn"></a>
 
 You can use AWS CloudFormation to manage Amazon ECS blue/green deployments through CodeDeploy. You generate your deployment by defining your green and blue resources and specifying the traffic routing and stabilization settings to use in CloudFormation. This topic covers the differences between Amazon ECS blue/green deployments that are managed by CodeDeploy and deployments that are managed by CloudFormation.
 

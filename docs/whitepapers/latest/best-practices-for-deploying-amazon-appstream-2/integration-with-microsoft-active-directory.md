@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Integration with Microsoft Active Directory
-<a name="integration-with-microsoft-active-directory"></a>
 
  Amazon WorkSpaces Applications Image Builders and fleets can be integrated with Microsoft Active Directory. This enables you to provide a centralized method for user authentication, authorization, and to apply Active Directory Group policies to domain- joined WorkSpaces Applications instances. Using WorkSpaces Applications fleets joined to a domain provides the same administrative benefits an on-premises environment. This includes centralized management of network file shares, user-app entitlements, roaming profiles, printer access, and other policy-based settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AwsOpportunityProject
-<a name="API_AwsOpportunityProject"></a>
 
 Captures details about the project associated with the opportunity, including objectives, scope, and customer requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-zeppelin-i
 ---
 
 # Perform an interactive analysis of streaming data
-<a name="how-zeppelin-interactive"></a>
 
 You use a serverless notebook powered by Apache Zeppelin to interact with your streaming data. Your notebook can have multiple notes, and each note can have one or more paragraphs where you can write your code.
 

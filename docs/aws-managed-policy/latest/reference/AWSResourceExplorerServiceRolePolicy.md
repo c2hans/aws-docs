@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSResourceExplorerServiceRolePolicy
-<a name="AWSResourceExplorerServiceRolePolicy"></a>
 
 **Description**: Allows Resource Explorer to view resources and CloudTrail events on your behalf to index your resources for search.
 

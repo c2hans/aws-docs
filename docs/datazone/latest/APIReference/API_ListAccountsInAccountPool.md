@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListAcc
 ---
 
 # ListAccountsInAccountPool
-<a name="API_ListAccountsInAccountPool"></a>
 
 Lists the accounts in the specified account pool.
 

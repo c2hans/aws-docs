@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-gettin
 ---
 
 # Getting started with SaaS products on AWS Marketplace
-<a name="saas-getting-started"></a>
 
 As an AWS Marketplace seller, you can add your software as a service (SaaS) product to AWS Marketplace. This includes integrating your SaaS product with the appropriate AWS Marketplace API operations, based on the SaaS product's billing model. This topic provides an overview of the process for creating and configuring SaaS products, starting with the necessary prerequisites that you need to get started.
 

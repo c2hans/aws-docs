@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/deregister-connecte
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deregister a Kubernetes cluster from the Amazon EKS console
-<a name="deregister-connected-cluster"></a>
 
 If you are finished using a connected cluster, you can deregister it. After it’s deregistered, the cluster is no longer visible in the Amazon EKS console.
 

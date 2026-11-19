@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_EventResourc
 ---
 
 # EventResourceData
-<a name="API_EventResourceData"></a>
 
 Properties of resource related to a job event.
 

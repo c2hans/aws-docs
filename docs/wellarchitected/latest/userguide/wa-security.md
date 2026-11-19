@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/wa-secu
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Security in AWS Well-Architected
-<a name="wa-security"></a>
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from data centers and network architectures that are built to meet the requirements of the most security-sensitive organizations.
 

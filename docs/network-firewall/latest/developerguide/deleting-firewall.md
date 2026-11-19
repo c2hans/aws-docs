@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/d
 ---
 
 # Deleting a firewall in AWS Network Firewall
-<a name="deleting-firewall"></a>
 
 The procedure for deleting a firewall has the following prerequisites:
 + You must disassociate the firewall from any other AWS resources, including VPC endpoint associations. If your firewall has a VPC endpoint association you don't own, ask the owner to delete that VPC endpoint association.

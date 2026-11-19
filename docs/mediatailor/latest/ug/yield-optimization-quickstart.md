@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # Yield Optimization quick start guide
-<a name="yield-optimization-quickstart"></a>
 
 This guide walks you through enabling Yield Optimization on a playback configuration and verifying that it works.
 

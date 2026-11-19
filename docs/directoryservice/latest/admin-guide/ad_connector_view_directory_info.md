@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Viewing AD Connector directory information
-<a name="ad_connector_view_directory_info"></a>
 
 **To view detailed directory information**
 

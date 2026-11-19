@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/data-protec
 ---
 
 # Data protection in Amazon Aurora DSQL
-<a name="data-protection"></a>
 
 The [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) applies to data protection in . As described in this model, is responsible for protecting the global infrastructure that runs all of the AWS Cloud. You are responsible for maintaining control over your content that is hosted on this infrastructure. You are also responsible for the security configuration and management tasks for the that you use. For more information about data privacy, see the [Data Privacy FAQ](https://aws.amazon.com/compliance/data-privacy-faq/). For information about data protection in Europe, see the [ Shared Responsibility Model and GDPR](https://aws.amazon.com/blogs/security/the-aws-shared-responsibility-model-and-gdpr/) blog post on the *Security Blog*.
 

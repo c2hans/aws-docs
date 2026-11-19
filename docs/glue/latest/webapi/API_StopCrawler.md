@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StopCrawler.html
 ---
 
 # StopCrawler
-<a name="API_StopCrawler"></a>
 
 If the specified crawler is running, stops the crawl.
 

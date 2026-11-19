@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AssociateVir
 ---
 
 # AssociateVirtualMachinesToCloudVmCluster
-<a name="API_AssociateVirtualMachinesToCloudVmCluster"></a>
 
 Adds virtual machines to the specified VM cluster.
 

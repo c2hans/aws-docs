@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Up
 ---
 
 # UpdateComponentType
-<a name="API_UpdateComponentType"></a>
 
 Updates information in a component type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UsersAn
 ---
 
 # UsersAndGroups
-<a name="API_UsersAndGroups"></a>
 
 Provides information about users and group names associated with a topic control rule.
 

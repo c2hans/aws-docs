@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualRouterStatus
-<a name="API_VirtualRouterStatus"></a>
 
 An object that represents the status of a virtual router.
 

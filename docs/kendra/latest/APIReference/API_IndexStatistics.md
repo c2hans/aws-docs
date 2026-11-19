@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_IndexStat
 ---
 
 # IndexStatistics
-<a name="API_IndexStatistics"></a>
 
 Provides information about the number of documents and the number of questions and answers in an index.
 

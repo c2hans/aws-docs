@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.DBs.html
 ---
 
 # Report server databases
-<a name="SSRS.DBs"></a>
 
 When your DB instance is associated with the SSRS option, two new databases are created on your DB instance:
 + `rdsadmin_ReportServer`

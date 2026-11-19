@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_A
 ---
 
 # AssociateNetworkSettings
-<a name="API_AssociateNetworkSettings"></a>
 
 Associates a network settings resource with a web portal.
 

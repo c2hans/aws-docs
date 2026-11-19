@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchGetAc
 ---
 
 # BatchGetAccountStatus
-<a name="API_BatchGetAccountStatus"></a>
 
 Retrieves the Amazon Inspector status of multiple AWS accounts within your environment.
 

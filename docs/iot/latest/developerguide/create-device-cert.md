@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/create-device-
 ---
 
 # Create a client certificate using your CA certificate
-<a name="create-device-cert"></a>
 
 You can use your own certificate authority (CA) to create client certificates. The client certificate must be registered with AWS IoT before use. For information about the registration options for your client certificates, see [Register a client certificate](register-device-cert.md).
 

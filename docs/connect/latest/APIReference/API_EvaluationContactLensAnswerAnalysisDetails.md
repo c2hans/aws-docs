@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationContactLensAnswerAnalysisDetails
-<a name="API_EvaluationContactLensAnswerAnalysisDetails"></a>
 
 Analysis details providing explanation for Contact Lens automation decision.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/disable-integ
 ---
 
 # Disabling Detective integration with Security Lake
-<a name="disable-integration"></a>
 
 If you disable Detective integration with Security Lake, you can no longer query log and event data from Security Lake.
 

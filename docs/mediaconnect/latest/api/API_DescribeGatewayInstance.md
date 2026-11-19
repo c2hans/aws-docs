@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DescribeGate
 ---
 
 # DescribeGatewayInstance
-<a name="API_DescribeGatewayInstance"></a>
 
  Displays the details of an instance.
 

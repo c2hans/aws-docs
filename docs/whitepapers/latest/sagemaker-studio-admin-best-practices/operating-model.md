@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Operating model
-<a name="operating-model"></a>
 
  An *operating model* is a framework that brings people, processes, and technologies together to help an organization deliver business value in a scalable, consistent, efficient manner. The ML operating model provides a standard product development process for teams across the organization. There are three models for implementing the operating model, depending on the size, complexity, and business drivers:
 +  **Centralized data science team** — In this model, all data science activities are centralized within a single team or organization. This is similar to the Center of Excellence (COE) model, where all business units go to this team for data science projects.

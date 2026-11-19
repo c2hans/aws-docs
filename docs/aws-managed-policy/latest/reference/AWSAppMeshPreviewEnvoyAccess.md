@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppMeshPreviewEnvoyAccess
-<a name="AWSAppMeshPreviewEnvoyAccess"></a>
 
 **Description**: App Mesh Preview Envoy policy for accessing Virtual Node configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-docs.html
 ---
 
 # `cdk docs`
-<a name="ref-cli-cmd-docs"></a>
 
 Open AWS CDK documentation in your browser.
 

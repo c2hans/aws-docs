@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/accounts-orgs
 ---
 
 # Enabling new organization accounts as Detective member accounts
-<a name="accounts-orgs-members-autoenable"></a>
 
 The Detective administrator account can configure Detective to automatically enable new organization accounts as member accounts in the organization behavior graph.
 

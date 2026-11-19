@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTCOST04-BP03 Implement intelligent caching and failure handling for tool results
-<a name="agentcost04-bp03"></a>
 
  Tool costs can be unpredictable when agents repeat identical or equivalent calls, and they can spike sharply when retries run unbounded through a service outage. Two-layer caching, schema validation, and automatic cutoffs convert those failure modes into predictable, bounded costs.
 

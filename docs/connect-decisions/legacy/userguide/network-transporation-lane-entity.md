@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/netwo
 ---
 
 # transportation\_lane
-<a name="network-transporation-lane-entity"></a>
 
 **Primary key (PK)**
 

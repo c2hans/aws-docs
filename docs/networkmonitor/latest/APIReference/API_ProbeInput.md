@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_P
 ---
 
 # ProbeInput
-<a name="API_ProbeInput"></a>
 
 Defines a probe when creating a probe or monitor.
 

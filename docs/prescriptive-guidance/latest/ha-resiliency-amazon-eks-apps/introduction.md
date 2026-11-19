@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resilien
 ---
 
 # Designing for high availability and resiliency in Amazon EKS applications
-<a name="introduction"></a>
 
 *Haofei Feng, Frank Fan, and Rus Kalakutskiy, Amazon Web Services*
 

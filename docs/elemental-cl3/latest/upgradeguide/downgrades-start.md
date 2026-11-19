@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/downgr
 ---
 
 # Step H: Start channels
-<a name="downgrades-start"></a>
 
 When all nodes have been downgraded, you can start the channels that were previously running.
 

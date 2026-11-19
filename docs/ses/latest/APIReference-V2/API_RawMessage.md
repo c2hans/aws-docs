@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_RawMessag
 ---
 
 # RawMessage
-<a name="API_RawMessage"></a>
 
 Represents the raw content of an email message.
 

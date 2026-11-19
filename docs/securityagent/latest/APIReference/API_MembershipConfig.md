@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Me
 ---
 
 # MembershipConfig
-<a name="API_MembershipConfig"></a>
 
 The configuration for a membership. This is a union type that contains member-type-specific configuration.
 

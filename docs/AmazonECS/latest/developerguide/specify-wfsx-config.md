@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-
 ---
 
 # Specify an FSx for Windows File Server file system in an Amazon ECS task definition
-<a name="specify-wfsx-config"></a>
 
 To use FSx for Windows File Server file system volumes for your containers, specify the volume and mount point configurations in your task definition. The following task definition JSON snippet shows the syntax for the `volumes` and `mountPoints` objects for a container.
 

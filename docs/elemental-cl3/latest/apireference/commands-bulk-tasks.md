@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/comman
 ---
 
 # Bulk Tasks
-<a name="commands-bulk-tasks"></a>
 
 | Nickname | Action | Signature | Description |
 | --- | --- | --- | --- |

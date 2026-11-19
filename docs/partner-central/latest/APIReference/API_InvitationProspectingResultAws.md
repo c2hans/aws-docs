@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # InvitationProspectingResultAws
-<a name="API_InvitationProspectingResultAws"></a>
 
 A subset of prospecting result data visible to invitation receivers. It includes customer account details and AI-generated insights.
 

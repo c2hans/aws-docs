@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Assign designations
-<a name="assign-designations"></a>
 
 You assign project-level designations when you add members to a project or by editing existing project members. Each member has one designation through direct assignment. Members can also inherit designations through group membership. If you directly assign one designation to a user who also belongs to a group with a different designation, the user receives the union of both permission sets.
 

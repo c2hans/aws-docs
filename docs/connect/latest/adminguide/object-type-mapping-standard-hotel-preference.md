@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/object-type-ma
 ---
 
 # Object type mapping for the standard hotel preference
-<a name="object-type-mapping-standard-hotel-preference"></a>
 
 The topics in this section provide the standard hotel preference definition.
 

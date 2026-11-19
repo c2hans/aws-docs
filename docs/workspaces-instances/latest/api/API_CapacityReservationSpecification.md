@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Capa
 ---
 
 # CapacityReservationSpecification
-<a name="API_CapacityReservationSpecification"></a>
 
 Specifies capacity reservation preferences.
 

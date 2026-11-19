@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/al2-reserved-users-list.htm
 ---
 
 # List of Amazon Linux 2 Reserved Users
-<a name="al2-reserved-users-list"></a>
 
 **Listed by UID**
 

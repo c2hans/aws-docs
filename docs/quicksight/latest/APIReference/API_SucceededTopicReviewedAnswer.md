@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Succe
 ---
 
 # SucceededTopicReviewedAnswer
-<a name="API_SucceededTopicReviewedAnswer"></a>
 
 The definition for a `SucceededTopicReviewedAnswer`.
 

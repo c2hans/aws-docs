@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # BrowserConfig
-<a name="API_BrowserConfig"></a>
 
 A structure that specifies the browser type to use for a canary run.
 

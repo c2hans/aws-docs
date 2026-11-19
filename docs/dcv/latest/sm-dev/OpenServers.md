@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-dev/OpenServers.html
 ---
 
 # OpenServers
-<a name="OpenServers"></a>
 
 Opens one or more Amazon DCV servers. Before you can create Amazon DCV sessions on a Amazon DCV server, you must change the server's state to *open*. After the Amazon DCV server is *open*, you can create Amazon DCV sessions on the server.
 

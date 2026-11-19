@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policy: AWSElasticDisasterRecoveryReadOnlyAccess
-<a name="security-iam-awsmanpol-AWSElasticDisasterRecoveryReadOnlyAccess"></a>
 
 You can attach the AWSElasticDisasterRecoveryReadOnlyAccess policy to your IAM identities.
 

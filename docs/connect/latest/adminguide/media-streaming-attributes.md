@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/media-streamin
 ---
 
 # Contact attributes for live media streaming in Kinesis Video Streams
-<a name="media-streaming-attributes"></a>
 
 The attributes are displayed when you select **Media streams** for the **Type** in a flow block that supports attributes, such as the **Start media streaming** block. They include the following:
 

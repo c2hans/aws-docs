@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # DevicePositionUpdate
-<a name="API_WaypointGeofencing_DevicePositionUpdate"></a>
 
 ## Contents
 <a name="API_WaypointGeofencing_DevicePositionUpdate_Contents"></a>

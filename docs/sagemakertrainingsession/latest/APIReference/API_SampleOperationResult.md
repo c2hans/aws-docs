@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SampleOperationResult
-<a name="API_SampleOperationResult"></a>
 
 The result of a completed sampling operation. Exactly one member is populated, corresponding to the operation type that was submitted.
 

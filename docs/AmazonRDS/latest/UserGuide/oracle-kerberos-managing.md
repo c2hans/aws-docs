@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-kerber
 ---
 
 # Managing a DB instance for AWS Managed Active Directory
-<a name="oracle-kerberos-managing"></a>
 
 You can use the console, the CLI, or the RDS API to manage your DB instance and its relationship with your Active Directory. For example, you can associate an Active Directory to enable Kerberos authentication. You can also disassociate an Active Directory to disable Kerberos authentication. You can also move a DB instance to be externally authenticated by one Active Directory to another.
 

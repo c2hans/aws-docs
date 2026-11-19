@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-resources.
 ---
 
 # Resources
-<a name="inference-resources"></a>
 
 Use the following resources for troubleshooting and reference, answerings FAQS, and learning more about Amazon SageMaker AI.
 

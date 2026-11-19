@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_ExitSta
 ---
 
 # ExitStandby
-<a name="API_ExitStandby"></a>
 
 Moves the specified instances out of the standby state.
 

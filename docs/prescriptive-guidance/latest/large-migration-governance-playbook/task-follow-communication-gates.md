@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task: Completing the communication gates
-<a name="task-follow-communication-gates"></a>
 
 In this task, you use the communication gates and the T-minus schedule that you defined in [Task: Defining communication gates and schedules](task-create-communication-gates.md) in order to communicate the status of each wave as it moves through the migration and portfolio workstreams.
 

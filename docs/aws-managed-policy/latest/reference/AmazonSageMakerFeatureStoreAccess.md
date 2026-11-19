@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerFeatureStoreAccess
-<a name="AmazonSageMakerFeatureStoreAccess"></a>
 
 **Description**: Provides permissions required to enable the offline store for an Amazon SageMaker FeatureStore feature group.
 

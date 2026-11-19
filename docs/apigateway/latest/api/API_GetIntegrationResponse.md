@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetIntegration
 ---
 
 # GetIntegrationResponse
-<a name="API_GetIntegrationResponse"></a>
 
 Represents a get integration response.
 

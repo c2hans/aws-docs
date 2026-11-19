@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_TimestreamSe
 ---
 
 # TimestreamSettings
-<a name="API_TimestreamSettings"></a>
 
 Provides information that defines an Amazon Timestream endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/ssl-cer
 ---
 
 # Updating applications to connect to Aurora MySQL DB clusters using new TLS certificates
-<a name="ssl-certificate-rotation-aurora-mysql"></a>
 
 As of January 13, 2023, Amazon RDS has published new Certificate Authority (CA) certificates for connecting to your Aurora DB clusters using Transport Layer Security (TLS). Following, you can find information about updating your applications to use the new certificates.
 

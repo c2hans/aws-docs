@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/ad-spn.html
 ---
 
 # Configuring the service principal name
-<a name="ad-spn"></a>
 
 Learn how to configure the service principal name for the connector.
 

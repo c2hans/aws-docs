@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetSdkType.htm
 ---
 
 # GetSdkType
-<a name="API_GetSdkType"></a>
 
 Gets an SDK type.
 

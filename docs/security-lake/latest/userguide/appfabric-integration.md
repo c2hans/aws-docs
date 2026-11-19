@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/appfabric
 ---
 
 # Integration with AWS AppFabric
-<a name="appfabric-integration"></a>
 
 **Integration type:** Source
 

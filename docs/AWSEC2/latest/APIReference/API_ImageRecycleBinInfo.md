@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageRecy
 ---
 
 # ImageRecycleBinInfo
-<a name="API_ImageRecycleBinInfo"></a>
 
 Information about an AMI that is currently in the Recycle Bin.
 

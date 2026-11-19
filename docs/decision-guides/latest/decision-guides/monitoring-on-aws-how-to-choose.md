@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 ---
 
 # Choosing an AWS monitoring and observability service
-<a name="monitoring-on-aws-how-to-choose"></a>
 
 **Taking the first step**
 

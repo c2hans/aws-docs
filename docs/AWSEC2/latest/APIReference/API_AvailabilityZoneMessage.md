@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Availabil
 ---
 
 # AvailabilityZoneMessage
-<a name="API_AvailabilityZoneMessage"></a>
 
 Describes a message about an Availability Zone, Local Zone, or Wavelength Zone.
 

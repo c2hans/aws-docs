@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/using-push-notificat
 ---
 
 # Using mobile push notifications for Amazon Chime SDK messaging to receive messages
-<a name="using-push-notifications"></a>
 
 You can configure Amazon Chime SDK Messaging to send channel messages to mobile push notification channels. The Amazon Chime SDK requires an Amazon Pinpoint application configured for push notifications. Your Amazon Pinpoint application must meet these prerequisites:
 + Your Amazon Pinpoint application must have at least an FCM or APNS channel configured and enabled.

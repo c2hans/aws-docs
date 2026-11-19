@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_E
 ---
 
 # Emissions
-<a name="API_Emissions"></a>
 
 Represents a carbon emissions quantity with its value and unit of measurement.
 

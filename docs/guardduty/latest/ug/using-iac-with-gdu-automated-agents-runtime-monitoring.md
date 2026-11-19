@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/using-iac-with-gdu-a
 ---
 
 # Using Infrastructure as Code (IaC) with GuardDuty automated security agents
-<a name="using-iac-with-gdu-automated-agents-runtime-monitoring"></a>
 
 Use this section only if the following list applies to your use case:
 + You use Infrastructure as Code (IaC) tools, such as AWS Cloud Development Kit (AWS CDK) and Terraform, to manage your AWS resources, and

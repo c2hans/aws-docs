@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_S3De
 ---
 
 # S3Detail
-<a name="API_S3Detail"></a>
 
 Complex data type that defines S3Detail objects.
 

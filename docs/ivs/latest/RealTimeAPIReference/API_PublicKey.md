@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Publ
 ---
 
 # PublicKey
-<a name="API_PublicKey"></a>
 
 Object specifying a public key used to sign stage participant tokens.
 

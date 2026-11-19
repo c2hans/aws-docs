@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/k
 ---
 
 # Step 3: Query the Log Data in Amazon S3
-<a name="kaw-ds2s3-tutorial-step3"></a>
 
 In the final step of this Amazon Kinesis Agent for Microsoft Windows [tutorial](directory-source-to-s3-tutorial.md), you use Amazon Athena to query the log data stored in Amazon Simple Storage Service (Amazon S3).
 

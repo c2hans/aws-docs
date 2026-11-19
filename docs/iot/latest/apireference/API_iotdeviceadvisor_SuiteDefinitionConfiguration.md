@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # SuiteDefinitionConfiguration
-<a name="API_iotdeviceadvisor_SuiteDefinitionConfiguration"></a>
 
 Gets the suite definition configuration.
 

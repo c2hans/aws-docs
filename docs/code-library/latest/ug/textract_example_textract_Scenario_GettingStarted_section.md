@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/textract_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get started with Amazon Textract document analysis using an AWS SDK
-<a name="textract_example_textract_Scenario_GettingStarted_section"></a>
 
 The following code example shows how to:
 + Start asynchronous analysis.

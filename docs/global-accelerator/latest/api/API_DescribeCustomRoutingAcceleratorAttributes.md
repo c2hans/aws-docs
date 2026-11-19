@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Descri
 ---
 
 # DescribeCustomRoutingAcceleratorAttributes
-<a name="API_DescribeCustomRoutingAcceleratorAttributes"></a>
 
 Describe the attributes of a custom routing accelerator.
 

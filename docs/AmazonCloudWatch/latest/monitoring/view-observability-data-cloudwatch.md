@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/view-
 ---
 
 # View observability data in CloudWatch
-<a name="view-observability-data-cloudwatch"></a>
 
 After you enable observability for your agentic resources, you can view the collected data in CloudWatch.
 

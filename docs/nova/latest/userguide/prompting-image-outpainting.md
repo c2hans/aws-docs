@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-image-ou
 ---
 
 # Outpainting prompts
-<a name="prompting-image-outpainting"></a>
 
 Outpainting is used to replace the background of an image. For best results, outpainting prompts should describe what you would like the *whole* image to look like, including the parts of the image that will not be changed.
 

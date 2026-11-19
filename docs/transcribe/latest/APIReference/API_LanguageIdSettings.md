@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Langu
 ---
 
 # LanguageIdSettings
-<a name="API_LanguageIdSettings"></a>
 
 If using automatic language identification in your request and you want to apply a custom language model, a custom vocabulary, or a custom vocabulary filter, include `LanguageIdSettings` with the relevant sub-parameters (`VocabularyName`, `LanguageModelName`, and `VocabularyFilterName`). Note that multi-language identification (`IdentifyMultipleLanguages`) doesn't support custom language models.
 

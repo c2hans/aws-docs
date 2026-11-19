@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Normali
 ---
 
 # NormalizedValue
-<a name="API_NormalizedValue"></a>
 
 Contains information relating to dates in a document, including the type of value, and the value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search
 ---
 
 # SearchTrainingPlanOfferings
-<a name="API_SearchTrainingPlanOfferings"></a>
 
 Searches for available training plan offerings based on specified criteria.
 + Users search for available plan offerings based on their requirements (e.g., instance type, count, start time, duration).

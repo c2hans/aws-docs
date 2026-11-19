@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/captions-in-vbi
 ---
 
 # Passing through VBI data
-<a name="captions-in-vbi-data"></a>
 
 Elemental Live supports passthrough of VBI data. You can pass through this data if the following statements are true:
 + The input includes VBI data.

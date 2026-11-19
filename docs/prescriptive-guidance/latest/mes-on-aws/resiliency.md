@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Resiliency in MES
-<a name="resiliency"></a>
 
 Resiliency is the ability of an MES system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions such as misconfigurations or transient network issues. Resiliency is the primary factor that the reliability pillar of the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) depends on.
 

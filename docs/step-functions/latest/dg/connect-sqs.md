@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-sqs.htm
 ---
 
 # Send messages to an Amazon SQS queue with Step Functions
-<a name="connect-sqs"></a>
 
 You can to send messages to an Amazon SQS queue using the following Amazon SQS API actions and example `Task` state code for Step Functions workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ModelD
 ---
 
 # ModelDetail
-<a name="API_ModelDetail"></a>
 
 Contains information about the AI model involved in a finding.
 

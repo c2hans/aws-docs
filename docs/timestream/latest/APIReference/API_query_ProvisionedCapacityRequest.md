@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ProvisionedCapacityRequest
-<a name="API_query_ProvisionedCapacityRequest"></a>
 
 A request to update the provisioned capacity settings for querying data.
 

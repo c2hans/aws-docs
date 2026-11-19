@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-drive-kb-a
 ---
 
 # Admin-managed Google Drive knowledge base setup
-<a name="google-drive-kb-admin-managed"></a>
 
 With admin-managed setup, a Google Workspace administrator creates a service account and delegates domain-wide access. Individual users don't need to authorize through sign-in.
 

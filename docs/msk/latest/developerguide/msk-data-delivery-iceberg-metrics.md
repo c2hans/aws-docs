@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Amazon CloudWatch metrics
-<a name="msk-data-delivery-iceberg-metrics"></a>
 
 | Metric name | Description | Unit |
 | --- | --- | --- |

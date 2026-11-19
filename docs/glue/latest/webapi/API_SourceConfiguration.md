@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SourceConfigurati
 ---
 
 # SourceConfiguration
-<a name="API_SourceConfiguration"></a>
 
 Configuration that defines how to make requests to endpoints, including request methods, paths, parameters, and response handling.
 

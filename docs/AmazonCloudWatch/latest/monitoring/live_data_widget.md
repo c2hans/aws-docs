@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/live_
 ---
 
 # Using live data for a CloudWatch dashboard widget
-<a name="live_data_widget"></a>
 
 **To choose whether to use live data on a single widget**
 

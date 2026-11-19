@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 As with any new process, the first few cycles of using the [cost optimization process](aws-services.md#cost-optimization-process) in this guide might be time consuming. However, the process can result significant savings. Start the process by identifying two to three services that have high costs or exceed your expected costs. Over a short period of time, you can have a better handle on the spend, quickly identify services that cost more than expected, and put a strategy in place to reduce those costs.
 

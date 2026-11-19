@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/using-python-pack
 ---
 
 # Using Python packages in CodeBuild
-<a name="using-python-packages-in-codebuild"></a>
 
 The following steps have been tested with the operating systems listed in the [Docker images provided by CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html).
 

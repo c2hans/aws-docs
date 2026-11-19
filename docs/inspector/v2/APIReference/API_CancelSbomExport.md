@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CancelSbom
 ---
 
 # CancelSbomExport
-<a name="API_CancelSbomExport"></a>
 
 Cancels a software bill of materials (SBOM) report.
 

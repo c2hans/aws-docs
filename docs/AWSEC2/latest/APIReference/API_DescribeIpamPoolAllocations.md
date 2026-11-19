@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeIpamPoolAllocations
-<a name="API_DescribeIpamPoolAllocations"></a>
 
 Describes IPAM pool allocations. You can describe all allocations owned by you across all pools, or you can describe specific allocations by ID.
 

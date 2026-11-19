@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Ta
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A label that consists of a key and value you define.
 

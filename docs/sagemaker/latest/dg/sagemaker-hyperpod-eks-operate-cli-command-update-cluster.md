@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Updating SageMaker HyperPod cluster configuration
-<a name="sagemaker-hyperpod-eks-operate-cli-command-update-cluster"></a>
 
 Run [update-cluster](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-cluster.html) to update the configuration of a cluster.
 

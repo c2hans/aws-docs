@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # SAP on AWS migration methodology
-<a name="introduction"></a>
 
 *Sergej Trisic, Samuel CHNIBER, and Kaustubh Kulkarni, Amazon Web Services*
 

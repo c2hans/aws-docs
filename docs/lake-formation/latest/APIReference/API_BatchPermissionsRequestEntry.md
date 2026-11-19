@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_B
 ---
 
 # BatchPermissionsRequestEntry
-<a name="API_BatchPermissionsRequestEntry"></a>
 
 A permission to a resource granted by batch operation to the principal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-conf
 ---
 
 # Set up Basic authentication for Confluence
-<a name="kb-managed-confluence-basic-setup"></a>
 
 Basic authentication (`BASIC`) is the recommended authentication method for a Confluence data source. The connector signs in with the email address of a Confluence user and an Atlassian API token (used in place of a password). It is the only authentication method that supports document-level access control (ACLs); ACLs also require Atlassian organization admin credentials in the same secret.
 

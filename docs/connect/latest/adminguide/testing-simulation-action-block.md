@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/testing-simula
 ---
 
 # Action block
-<a name="testing-simulation-action-block"></a>
 
 The Action block defines what your test should do in response to observed events. These actions simulate customer behavior, control test execution, and modify system behaviors to create comprehensive test scenarios.
 

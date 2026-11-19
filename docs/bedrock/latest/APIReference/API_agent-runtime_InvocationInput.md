@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InvocationInput
-<a name="API_agent-runtime_InvocationInput"></a>
 
 Contains information pertaining to the action group or knowledge base that is being invoked.
 

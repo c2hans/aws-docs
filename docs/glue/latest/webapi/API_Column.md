@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Column.html
 ---
 
 # Column
-<a name="API_Column"></a>
 
 A column in a `Table`.
 

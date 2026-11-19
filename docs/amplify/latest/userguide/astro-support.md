@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/astro-support.h
 ---
 
 # Amplify support for Astro.js
-<a name="astro-support"></a>
 
 Astro is a web framework for creating content-driven web applications.
 

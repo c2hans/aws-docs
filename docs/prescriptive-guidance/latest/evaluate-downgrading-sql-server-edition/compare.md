@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Compare SQL Server Enterprise and Standard edition features
-<a name="compare"></a>
 
 The following table is a short version of the list of SQL Server Enterprise edition features and possible alternatives in the Standard edition. For additional information, see a more extensive feature comparison (attached) .
 

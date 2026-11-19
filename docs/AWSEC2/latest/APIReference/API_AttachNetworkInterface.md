@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachNet
 ---
 
 # AttachNetworkInterface
-<a name="API_AttachNetworkInterface"></a>
 
 Attaches a network interface to an instance.
 

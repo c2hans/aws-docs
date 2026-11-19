@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Research computing optimization
-<a name="research-computing-optimization"></a>
 
 |  LSSUS01: How do you optimize the scheduling and execution of research computing pipelines?  |
 | --- |

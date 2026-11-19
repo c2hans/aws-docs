@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops-ope
 ---
 
 # Operations as code
-<a name="ops-operations-as-code"></a>
 
  In the cloud you can apply the same engineering discipline to your operations that you already apply to application code. You can define a workload and everything around it (infrastructure, configuration, policies, and the procedures that operate it) as code, keep it in version control, review it, test it, and deploy it through automation. Treating operations as code is the foundation that most of the operational excellence practices build on, because it makes operational work consistent, repeatable, and reviewable rather than manual and improvised.
 

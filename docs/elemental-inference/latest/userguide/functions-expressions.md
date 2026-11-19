@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Writing function expressions
-<a name="functions-expressions"></a>
 
 A function has two expressions, both written in JSONata, an open-source query and transformation language for JSON. For more information about the language, see the [JSONata website](https://jsonata.org/). Elemental Inference uses the same JSONata implementation as AWS Elemental MediaTailor functions, so expressions look familiar if you have written one for MediaTailor. The set of allowed built-in functions differs. For more information, see [Allowed built-in functions](functions-jsonata-allowed.md).
 

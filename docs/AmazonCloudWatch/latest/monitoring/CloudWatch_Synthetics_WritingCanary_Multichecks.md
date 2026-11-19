@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Writing a JSON configuration for Node.js multi Checks blueprint
-<a name="CloudWatch_Synthetics_WritingCanary_Multichecks"></a>
 
 The Node.js multi checks blueprint allows you to create canaries that perform multiple validation checks within a single canary run. This blueprint is useful when you want to test multiple endpoints, validate different aspects of your application, or perform a series of related checks in sequence.
 

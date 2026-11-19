@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Scenario 1: Programmatic advertising workloads
-<a name="scenario-01-programmatic-advertising"></a>
 
  The petabyte-scale, millisecond-latency world of programmatic advertising brings significant challenges for performance, throughput, latency, and costs. SSPs, ad exchanges, and DSPs form the core infrastructure, exchanging OpenRTB bid requests and responses across organizational and network boundaries in the time it takes a webpage to load. The key systems are ad servers, ad exchanges, SSPs, and DSPs.
 

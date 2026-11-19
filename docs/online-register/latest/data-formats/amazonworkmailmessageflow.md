@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon WorkMail Message Flow
-<a name="amazonworkmailmessageflow"></a>
 
 Amazon WorkMail Message Flow provides the following APIs for data retrieval.
 

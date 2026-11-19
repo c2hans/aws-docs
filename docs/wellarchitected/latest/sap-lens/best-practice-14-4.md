@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 14.4 – Consider memory as an alternative to storage
-<a name="best-practice-14-4"></a>
 
 Consider the performance advantages of using memory for supported scenarios in the database or application layer. SAP HANA uses memory by default, but might benefit from options to optimize load or offload static data. Relational databases should take advantage of caching, and application servers should consider if swap is a requirement.
 

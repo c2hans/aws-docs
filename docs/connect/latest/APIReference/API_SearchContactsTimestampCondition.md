@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchCo
 ---
 
 # SearchContactsTimestampCondition
-<a name="API_SearchContactsTimestampCondition"></a>
 
 The timestamp condition indicating which contact timestamp should be used and how it should be filtered. It is not an actual timestamp value.
 

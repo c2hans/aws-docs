@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/message-delivery.html
 ---
 
 # Amazon SNS message delivery
-<a name="message-delivery"></a>
 
 This topic describes how Amazon SNS handles message delivery. You'll learn about raw message delivery, where Amazon SNS delivers messages in their original, unmodified format to the endpoint. You'll also learn how to send messages from an Amazon SNS topic to an Amazon SQS queue in a different AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-re
 ---
 
 # How to get administrative address names
-<a name="how-to-reverse-geocode-address-names-mode"></a>
 
 Use `AddressNamesMode` set to `Administrative` to return the official administrative names for address components such as the city name. `Administrative` currently applies only to addresses in the United States.
 

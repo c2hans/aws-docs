@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DeleteAccessProfile
-<a name="API_DeleteAccessProfile"></a>
 
 Removes an access profile.
 

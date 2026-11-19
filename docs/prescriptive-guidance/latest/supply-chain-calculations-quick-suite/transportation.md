@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chai
 ---
 
 # Transportation
-<a name="transportation"></a>
 
 *Transportation* is the function of planning, scheduling, and controlling the activities surrounding mode, vendor, and movement of inventory into and out of an organization. Transportation includes the actual movement of the product. Many transportation teams incorporate capabilities such as in-transit storage, documentation, diversion and reconsignment services, loading and unloading, terminal and freight services, and other value-added services.
 

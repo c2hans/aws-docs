@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectionRuleEc2Requirements
-<a name="API_DetectionRuleEc2Requirements"></a>
 
 The requirements for running a Runtime Monitoring custom detection rule on Amazon EC2.
 

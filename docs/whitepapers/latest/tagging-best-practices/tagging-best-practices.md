@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Best Practices for Tagging AWS Resources
-<a name="tagging-best-practices"></a>
 
 Publication date: **March 30, 2023** ([Document revisions](document-revisions.md))
 

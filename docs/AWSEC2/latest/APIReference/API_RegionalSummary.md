@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegionalS
 ---
 
 # RegionalSummary
-<a name="API_RegionalSummary"></a>
 
 A summary report for the attribute for a Region.
 

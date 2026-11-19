@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FpgaDevic
 ---
 
 # FpgaDeviceInfo
-<a name="API_FpgaDeviceInfo"></a>
 
 Describes the FPGA accelerator for the instance type.
 

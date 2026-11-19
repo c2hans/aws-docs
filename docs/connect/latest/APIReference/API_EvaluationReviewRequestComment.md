@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationReviewRequestComment
-<a name="API_EvaluationReviewRequestComment"></a>
 
 A comment provided when requesting an evaluation review.
 

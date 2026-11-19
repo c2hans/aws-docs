@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/prepare-dat
 ---
 
 # Preparing data tables for queries in AWS Clean Rooms
-<a name="prepare-data"></a>
 
 If your use case doesn't require you to bring your own data, you can skip this procedure.
 

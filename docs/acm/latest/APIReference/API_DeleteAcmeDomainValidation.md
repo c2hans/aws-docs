@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DeleteAcmeDo
 ---
 
 # DeleteAcmeDomainValidation
-<a name="API_DeleteAcmeDomainValidation"></a>
 
 Deletes a domain validation. After deletion, the ACME endpoint can no longer issue certificates for the associated domain.
 

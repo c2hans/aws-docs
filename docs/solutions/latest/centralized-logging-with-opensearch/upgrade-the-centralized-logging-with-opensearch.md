@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Upgrade the solution
-<a name="upgrade-the-centralized-logging-with-opensearch"></a>
 
  **Time to upgrade**: Approximately 20 minutes
 

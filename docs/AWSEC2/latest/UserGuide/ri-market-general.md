@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-genera
 ---
 
 # Sell Reserved Instances for Amazon EC2 in the Reserved Instance Marketplace
-<a name="ri-market-general"></a>
 
 The Amazon EC2 Reserved Instance Marketplace is a platform that facilitates the sale of unused Standard Reserved Instances from AWS customers and third-party sellers. These Reserved Instances can vary in term lengths and pricing options. You might want to sell your Reserved Instances when you no longer need them, such as when you move your instances to a new AWS Region, change to a different instance type, finish projects before the Reserved Instance term expires, your business needs change, or you have excess capacity.
 

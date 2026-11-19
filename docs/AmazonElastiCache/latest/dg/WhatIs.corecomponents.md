@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.corec
 ---
 
 # How ElastiCache works
-<a name="WhatIs.corecomponents"></a>
 
 Here you can find an overview of the major components of an ElastiCache deployment.
 

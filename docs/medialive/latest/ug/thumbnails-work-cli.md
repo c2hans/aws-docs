@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/thumbnails-work-cli.
 ---
 
 # Retrieving thumbnails programmatically
-<a name="thumbnails-work-cli"></a>
 
 When the thumbnails feature is enabled, MediaLive generates thumbnails for the currently active input in a channel that is running. For a standard channel, MediaLive generates two thumbnails. For a single-pipeline channel, MediaLive generates one thumbnail.
 

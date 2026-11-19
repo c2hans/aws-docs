@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Concepts and definitions
-<a name="concepts-and-definitions"></a>
 
 This section describes key concepts and defines terminology specific to this guidance:
 

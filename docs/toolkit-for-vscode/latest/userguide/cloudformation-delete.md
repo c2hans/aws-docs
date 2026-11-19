@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/clou
 ---
 
 # Deleting an CloudFormation stack
-<a name="cloudformation-delete"></a>
 
 You can use the AWS Toolkit for Visual Studio Code to delete CloudFormation stacks.
 

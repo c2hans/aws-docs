@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Create a shared transit gateway route table attachment in an AWS Cloud WAN core network
-<a name="cloudwan-tgw-share"></a>
 
 The following steps guide you through creating a shared transit gateway attachment.
 

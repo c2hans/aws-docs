@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agent-tools-
 ---
 
 # Getting started
-<a name="agent-tools-valkey-mcp-getting-started"></a>
 
 ## Installation
 <a name="agent-tools-valkey-mcp-installation"></a>

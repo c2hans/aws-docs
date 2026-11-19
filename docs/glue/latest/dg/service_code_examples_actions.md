@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/service_code_examples_act
 ---
 
 # Actions for AWS Glue using AWS SDKs
-<a name="service_code_examples_actions"></a>
 
 The following code examples demonstrate how to perform individual AWS Glue actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

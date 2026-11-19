@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/two-way-sms-p
 ---
 
 # Example of a two-way SMS message payload for Amazon SNS topics
-<a name="two-way-sms-payload"></a>
 
 When your number receives an SMS message, AWS End User Messaging SMS sends a JSON payload to an Amazon SNS topic that you designate. The JSON payload contains the message and related data, as in the following example:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_UpdateCh
 ---
 
 # UpdateChimeWebhookConfiguration
-<a name="API_UpdateChimeWebhookConfiguration"></a>
 
 Updates a Amazon Chime webhook configuration.
 

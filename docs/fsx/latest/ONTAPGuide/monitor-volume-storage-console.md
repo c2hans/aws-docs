@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/monitor-volume-sto
 ---
 
 # Monitoring volume storage capacity
-<a name="monitor-volume-storage-console"></a>
 
  You can view a volume's available storage and it's storage distribution in AWS Management Console, AWS CLI, and the NetApp ONTAP CLI.<a name="volume-capacity-usage"></a>
 

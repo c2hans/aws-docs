@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dis
 ---
 
 # DisassociateWirelessDeviceFromMulticastGroup
-<a name="API_DisassociateWirelessDeviceFromMulticastGroup"></a>
 
 Disassociates a wireless device from a multicast group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_QnAKendraC
 ---
 
 # QnAKendraConfiguration
-<a name="API_QnAKendraConfiguration"></a>
 
 Contains details about the configuration of the Amazon Kendra index used for the `AMAZON.QnAIntent`.
 

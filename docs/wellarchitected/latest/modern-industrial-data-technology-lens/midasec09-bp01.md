@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC09-BP01 Apply secure coding practices for applications and data integrations
-<a name="midasec09-bp01"></a>
 
  Implement secure coding guidelines across industrial application development and integration pipelines to help prevent common vulnerabilities.
 

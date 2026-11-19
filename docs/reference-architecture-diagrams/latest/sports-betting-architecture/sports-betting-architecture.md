@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Sports Betting Architecture on AWS
-<a name="sports-betting-architecture"></a>
 
 Publication date: **November 16, 2023 ([Diagram history](#diagram-history))**
 

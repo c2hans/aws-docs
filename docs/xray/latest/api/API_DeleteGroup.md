@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_DeleteGroup.html
 ---
 
 # DeleteGroup
-<a name="API_DeleteGroup"></a>
 
 Deletes a group resource.
 

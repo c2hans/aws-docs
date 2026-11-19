@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Custom modules
-<a name="custom-modules"></a>
 
 You can bring your own custom modules, or modules developed by AWS Partners or third parties to MCS. You can register your own custom modules under the Custom category if they don’t belong to the other four categories. Modules registered and enabled under the Custom category are displayed under the **Custom** menu in the MCS user interface.
 

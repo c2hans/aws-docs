@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_InlinePolicy
 ---
 
 # InlinePolicyIdentifierType
-<a name="API_InlinePolicyIdentifierType"></a>
 
 Identifies one or more inline policies that are embedded in IAM users, groups, or roles, by the name of the policy together with the type and name of the entity that it is attached to. Wildcard characters in the entity name can match multiple entities, so a single identifier can select more than one attached inline policy.
 

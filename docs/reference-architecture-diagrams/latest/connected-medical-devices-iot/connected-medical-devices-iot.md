@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Connected Medical Devices with AWS IoT
-<a name="connected-medical-devices-iot"></a>
 
 Publication date: **November 10, 2020 ([Diagram history](#med-devices-history))**
 

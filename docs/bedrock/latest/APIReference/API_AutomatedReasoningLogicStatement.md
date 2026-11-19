@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningLogicStatement
-<a name="API_AutomatedReasoningLogicStatement"></a>
 
 Represents a logical statement that can be expressed both in formal logic notation and natural language, providing dual representations for better understanding and validation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SystemPromptRecommendationConfig
-<a name="API_SystemPromptRecommendationConfig"></a>
 
 Configuration for generating system prompt optimization recommendations.
 

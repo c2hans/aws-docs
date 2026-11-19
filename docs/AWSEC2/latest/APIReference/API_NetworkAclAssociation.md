@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkAc
 ---
 
 # NetworkAclAssociation
-<a name="API_NetworkAclAssociation"></a>
 
 Describes an association between a network ACL and a subnet.
 

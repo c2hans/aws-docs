@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/s
 ---
 
 # Setting an AWS Region for the AWS Toolkit for JetBrains
-<a name="setup-region"></a>
 
 An AWS Region specifies where your AWS resources are managed. Your default AWS Region is detected when you connect to your AWS account from the AWS Toolkit for JetBrains and automatically displays in the AWS Explorer.
 

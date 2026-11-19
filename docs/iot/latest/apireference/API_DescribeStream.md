@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeStre
 ---
 
 # DescribeStream
-<a name="API_DescribeStream"></a>
 
 Gets information about a stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Avoid large message backlogs with the same message group ID in Amazon SQS
-<a name="avoid-backlog-with-the-same-message-group-id"></a>
 
 FIFO queues support a maximum of 120,000 in-flight messages (messages received by a consumer but not yet deleted). If this limit is reached, Amazon SQS does not return an error, but processing may be impacted. You can request an increase beyond this limit by contacting [AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/create-service-quota-increase.html).
 

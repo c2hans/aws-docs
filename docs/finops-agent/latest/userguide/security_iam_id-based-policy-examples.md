@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/security_i
 AWS FinOps Agent is in preview release and is subject to change.
 
 # Identity-based policy examples for AWS FinOps Agent
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify AWS FinOps Agent resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

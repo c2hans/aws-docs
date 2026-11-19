@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-co
 ---
 
 # Understand node types in Amazon EMR: primary, core, and task nodes
-<a name="emr-master-core-task-nodes"></a>
 
 Use this section to understand how Amazon EMR uses each of these node types and as a foundation for cluster capacity planning.
 

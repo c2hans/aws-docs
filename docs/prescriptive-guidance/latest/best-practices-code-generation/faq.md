@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # FAQs about Amazon Q Developer
-<a name="faq"></a>
 
 This section provides answers to frequently asked questions about using Amazon Q Developer for code development.
 

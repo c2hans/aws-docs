@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-cr
 ---
 
 # Importing images from a local computer
-<a name="md-create-dataset-computer"></a>
 
 The images are loaded directly from your computer. You can upload up to 30 images at a time.
 

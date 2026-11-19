@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # DatabasePreferences
-<a name="API_DatabasePreferences"></a>
 
  Preferences on managing your databases on AWS.
 

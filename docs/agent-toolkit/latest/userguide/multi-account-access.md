@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/multi-acc
 ---
 
 # Multi-profile support
-<a name="multi-account-access"></a>
 
 When using the MCP Proxy for AWS with the AWS MCP Server, you can configure multiple AWS CLI profiles to switch between accounts or roles on a per-call basis. The proxy adds an `aws_profile` parameter to the server's auth-requiring tools, letting the agent route each request through a different set of credentials without restarting.
 

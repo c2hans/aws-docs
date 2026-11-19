@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL security
-<a name="chap-oracle-aurora-pg.security"></a>
 
 This section includes pages about Oracle and PostgreSQL security-related topics.
 

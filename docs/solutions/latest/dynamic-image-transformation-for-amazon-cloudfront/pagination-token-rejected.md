@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # List endpoint returns the first page instead of the next page
-<a name="pagination-token-rejected"></a>
 
  **Symptoms:**
 + Paging through `GET /policies`, `GET /origins`, or `GET /mappings` with a `nextToken` returns the first page again, or a list request fails immediately after the ECS tasks restart.

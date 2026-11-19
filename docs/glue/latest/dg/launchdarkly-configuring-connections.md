@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/launchdarkly-configuring-
 ---
 
 # Configuring LaunchDarkly connections
-<a name="launchdarkly-configuring-connections"></a>
 
 LaunchDarkly connections authenticate with a LaunchDarkly personal or service access token. You can't use SDK keys, mobile keys, or client-side IDs. You store the access token in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

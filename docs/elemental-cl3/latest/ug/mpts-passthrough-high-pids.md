@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/mpts-passthrough
 ---
 
 # Passing through custom streams
-<a name="mpts-passthrough-high-pids"></a>
 
 You can passthrough any stream from a source TS to the output MPTS. You can pass through any number of streams.
 

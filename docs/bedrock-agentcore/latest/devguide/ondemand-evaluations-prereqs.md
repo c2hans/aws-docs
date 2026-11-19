@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ondema
 ---
 
 # Prerequisites
-<a name="ondemand-evaluations-prereqs"></a>
 
 Before you run on-demand evaluations, make sure the following are in place.
 

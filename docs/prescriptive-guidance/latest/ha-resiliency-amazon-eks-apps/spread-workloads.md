@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resilien
 ---
 
 # Spread workloads across nodes and Availability Zones
-<a name="spread-workloads"></a>
 
 Distributing a workload across [failure domains](https://cluster-api-aws.sigs.k8s.io/topics/failure-domains/) such as Availability Zones and nodes improves component availability and decreases the chances of failure for horizontally scalable applications. The following sections introduce ways to spread workloads across nodes and Availability Zones.
 

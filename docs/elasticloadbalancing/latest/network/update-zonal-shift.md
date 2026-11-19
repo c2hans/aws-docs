@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/upda
 ---
 
 # Update a zonal shift for your Network Load Balancer
-<a name="update-zonal-shift"></a>
 
 You can update a zonal shift to set a new expiration, or edit or replace the comment for the zonal shift.
 

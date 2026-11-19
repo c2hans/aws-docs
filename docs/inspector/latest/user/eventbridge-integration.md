@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/eventbridge-integr
 ---
 
 # Amazon EventBridge event schema for Amazon Inspector events
-<a name="eventbridge-integration"></a>
 
  [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) delivers a stream of real-time data from applications and other AWS services to targets, such as AWS Lambda functions, Amazon Simple Notification Service topics, and data streams in Amazon Kinesis Data Streams. To support integration with other applications, services, and systems, Amazon Inspector automatically publishes findings to EventBridge as [events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events.html). You can use Amazon Inspector to publish events for findings, coverage, and scans. This section provides example schemas for EventBridge events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_Studio.html
 ---
 
 # Studio
-<a name="API_Studio"></a>
 
 Details for an Amazon EMR Studio including ID, creation time, name, and so on.
 

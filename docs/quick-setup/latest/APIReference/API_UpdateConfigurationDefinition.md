@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Upda
 ---
 
 # UpdateConfigurationDefinition
-<a name="API_UpdateConfigurationDefinition"></a>
 
 Updates a Quick Setup configuration definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetS
 ---
 
 # GetSegmentDetection
-<a name="API_GetSegmentDetection"></a>
 
 Gets the segment detection results of a Amazon Rekognition Video analysis started by [StartSegmentDetection](API_StartSegmentDetection.md).
 

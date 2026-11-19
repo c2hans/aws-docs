@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_s
 ---
 
 # Shard
-<a name="API_streams_Shard"></a>
 
 A uniquely identified group of stream records within a stream.
 

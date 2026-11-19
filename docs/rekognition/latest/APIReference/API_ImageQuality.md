@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Imag
 ---
 
 # ImageQuality
-<a name="API_ImageQuality"></a>
 
 Identifies face image brightness and sharpness.
 

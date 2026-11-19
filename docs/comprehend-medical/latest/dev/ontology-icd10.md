@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/ontology-i
 ---
 
 # ICD-10-CM linking
-<a name="ontology-icd10"></a>
 
  Use InferICD10CM to detect possible medical conditions as entities and link them to codes from the 2026 version of the [International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)](https://www.cdc.gov/nchs/icd/icd-10-cm/?CDC_AAref_Val=https://www.cdc.gov/nchs/icd/icd-10-cm.htm). The ICD-10-CM is provided by the US Centers for Disease Control and Prevention (CDC).
 

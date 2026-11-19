@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/programmingguid
 ---
 
 # Using the MemoryDB API
-<a name="programmingguide"></a>
 
 This section provides task-oriented descriptions of how to use and implement MemoryDB operations. For a complete description of these operations, see the [MemoryDB API Reference](https://docs.aws.amazon.com/memorydb/latest/APIReference/Welcome.html).
 

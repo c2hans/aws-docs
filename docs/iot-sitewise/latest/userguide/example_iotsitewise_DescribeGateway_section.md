@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/example_io
 ---
 
 # Use `DescribeGateway` with an AWS SDK or CLI
-<a name="example_iotsitewise_DescribeGateway_section"></a>
 
 The following code examples show how to use `DescribeGateway`.
 

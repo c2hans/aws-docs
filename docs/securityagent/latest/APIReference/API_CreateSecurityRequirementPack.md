@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateSecurityRequirementPack
-<a name="API_CreateSecurityRequirementPack"></a>
 
 Creates a customer managed security requirement pack.
 

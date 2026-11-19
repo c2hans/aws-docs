@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobOverridePermissions
-<a name="API_AssetBundleImportJobOverridePermissions"></a>
 
 A structure that contains the override permission configurations that modify the permissions for specified resources before the resource is imported.
 

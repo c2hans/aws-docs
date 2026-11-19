@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/accessing-
 ---
 
 # Accessing image sets with AWS HealthImaging
-<a name="accessing-image-sets"></a>
 
 Accessing medical imaging data in AWS HealthImaging typically involves searching for an [image set](getting-started-concepts.md#concept-image-set) with a unique key and getting the associated [metadata](getting-started-concepts.md#concept-metadata) and [image frames](getting-started-concepts.md#concept-image-frame) (pixel data).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_List
 ---
 
 # ListPrefetchSchedules
-<a name="API_ListPrefetchSchedules"></a>
 
 Lists the prefetch schedules for a playback configuration.
 

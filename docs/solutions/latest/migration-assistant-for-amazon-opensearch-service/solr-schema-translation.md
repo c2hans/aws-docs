@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Schema translation
-<a name="solr-schema-translation"></a>
 
 The SolrReader parses the collection schema from the backup (`managed-schema.xml`, `managed-schema`, or `schema.xml`) and converts explicit fields, dynamic field patterns, and `copyField` destinations into OpenSearch mappings. The following table lists the built-in type translations. The converter first checks the Solr field type name, then falls back to the field type’s Java class when the name is custom.
 

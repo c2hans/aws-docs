@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.DIP.1] Aggregate logs and events across workloads
-<a name="o.dip.1-aggregate-logs-and-events-across-workloads"></a>
 
  **Category:** FOUNDATIONAL
 

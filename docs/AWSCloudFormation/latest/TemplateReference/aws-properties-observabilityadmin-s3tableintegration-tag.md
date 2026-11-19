@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::S3TableIntegration Tag
-<a name="aws-properties-observabilityadmin-s3tableintegration-tag"></a>
 
 The key-value pairs to associate with the S3 Table integration resource for categorization and management purposes.
 

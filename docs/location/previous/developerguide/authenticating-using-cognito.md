@@ -3,12 +3,11 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/authent
 ---
 
 # Allow unauthenticated guest access to your application using Amazon Cognito
-<a name="authenticating-using-cognito"></a>
 
 You can use Amazon Cognito authentication as an alternative to directly using AWS Identity and Access Management (IAM) with both front end SDKs and direct HTTPS requests.
 
 You may want to use this form of authentication for the following reasons:
-+ **Unauthenticated users** – If you have a website with anonymous users, you can use Amazon Cognito identity pools. For more information, see the section on [Allow unauthenticated guest access to your application using Amazon Cognito](#authenticating-using-cognito).
++ **Unauthenticated users** – If you have a website with anonymous users, you can use Amazon Cognito identity pools. For more information, see the section on [Allow unauthenticated guest access to your application using Amazon Cognito](authenticating-using-cognito.md).
 + **Your own authentication** – If you would like to use your own authentication process, or combine multiple authentication methods, you can use Amazon Cognito Federated Identities. For more information, see [Getting Started with Federated Identities](https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-identity-pools.html) in the *Amazon Cognito Developer Guide*.
 
 Amazon Cognito provides authentication, authorization, and user management for web and mobile apps. You can use Amazon Cognito unauthenticated identity pools with Amazon Location as a way for applications to retrieve temporary, scoped-down AWS credentials.

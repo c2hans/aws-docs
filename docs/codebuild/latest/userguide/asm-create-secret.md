@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/asm-create-se
 ---
 
 # Create and store a token in a Secrets Manager secret
-<a name="asm-create-secret"></a>
 
 If you choose to store your access token using Secrets Manager, you can use either an existing secret connection or create a new secret. To create a new secret, do the following:
 

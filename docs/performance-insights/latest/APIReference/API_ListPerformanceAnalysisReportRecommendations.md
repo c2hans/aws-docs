@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # ListPerformanceAnalysisReportRecommendations
-<a name="API_ListPerformanceAnalysisReportRecommendations"></a>
 
 Retrieves recommendations for a performance analysis report.
 

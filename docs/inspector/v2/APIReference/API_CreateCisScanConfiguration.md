@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CreateCisS
 ---
 
 # CreateCisScanConfiguration
-<a name="API_CreateCisScanConfiguration"></a>
 
 Creates a CIS scan configuration.
 

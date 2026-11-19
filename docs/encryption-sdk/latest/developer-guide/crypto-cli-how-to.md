@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/cr
 ---
 
 # How to use the AWS Encryption CLI
-<a name="crypto-cli-how-to"></a>
 
 This topic explains how to use the parameters in the AWS Encryption CLI. For examples, see [Examples of the AWS Encryption CLI](crypto-cli-examples.md). For complete documentation, see [Read the Docs](https://aws-encryption-sdk-cli.readthedocs.io/en/latest/). The syntax shown in these examples is for AWS Encryption CLI version 2.1.*x* and later.
 

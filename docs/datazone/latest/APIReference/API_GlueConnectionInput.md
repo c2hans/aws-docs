@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GlueCon
 ---
 
 # GlueConnectionInput
-<a name="API_GlueConnectionInput"></a>
 
 The AWS Glue connecton input.
 

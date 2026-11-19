@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Update the solution
-<a name="update-the-solution"></a>
 
 If you have previously deployed this solution, follow this procedure to update the Landing Zone Accelerator on AWS CloudFormation stack to get the latest version of the solution’s framework.
 

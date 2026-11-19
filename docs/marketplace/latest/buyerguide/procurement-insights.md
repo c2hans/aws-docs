@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/procuremen
 ---
 
 # Viewing cost reports with Procurement insights
-<a name="procurement-insights"></a>
 
 You use the **Procurement insights** dashboard to view cost-analysis and agreement data for all of the AWS accounts in your organization.
 

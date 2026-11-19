@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_SdkType.html
 ---
 
 # SdkType
-<a name="API_SdkType"></a>
 
 A type of SDK that API Gateway can generate.
 

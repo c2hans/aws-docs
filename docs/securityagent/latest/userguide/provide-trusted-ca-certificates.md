@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/provide-t
 ---
 
 # Provide trusted CA certificates for a penetration test
-<a name="provide-trusted-ca-certificates"></a>
 
 If a target endpoint uses a Transport Layer Security (TLS) certificate that is not publicly trusted, provide the trust anchor. This applies when the certificate is issued by a private or internal certificate authority (CA), an intermediate CA, or a self-signed certificate. AWS Security Agent uses the trust anchor to validate the connection during testing. Without the trust anchor, endpoint validation rejects the target before testing begins.
 

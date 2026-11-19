@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL03-BP03 Deploy stateful dependencies across multiple Availability Zones
-<a name="advrel03-bp03"></a>
 
  Deploy databases, caches, and message queues across multiple Availability Zones to match the RTO, RPO, and latency requirements of each advertising component tier. Evaluate trade-offs between single-AZ and multi-AZ deployments for each stateful dependency, with consideration for cost, failover speed, and the bid-response latency budget.
 

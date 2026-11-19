@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hadoop-release-h
 ---
 
 # Amazon EMR 6.6.0 - Hadoop release notes
-<a name="Hadoop-release-history-660"></a>
 
 ## Amazon EMR 6.6.0 - Hadoop changes
 <a name="Hadoop-release-history-changes-660"></a>

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/rds-data_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ExecuteStatement` with an AWS SDK or CLI
-<a name="rds-data_example_rds-data_ExecuteStatement_section"></a>
 
 The following code examples show how to use `ExecuteStatement`.
 

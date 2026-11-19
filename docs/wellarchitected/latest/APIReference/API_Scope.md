@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # Scope
-<a name="API_Scope"></a>
 
 Defines the scope for recommendation generation, specifying which pillars and goals to focus on.
 

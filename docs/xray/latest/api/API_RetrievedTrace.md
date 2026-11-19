@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_RetrievedTrace.html
 ---
 
 # RetrievedTrace
-<a name="API_RetrievedTrace"></a>
 
  Retrieved collection of spans with matching trace IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # ListLFTags
-<a name="API_ListLFTags"></a>
 
 Lists LF-tags that the requester has permission to view.
 

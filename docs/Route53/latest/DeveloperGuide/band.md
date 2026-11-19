@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/band.html
 ---
 
 # .band
-<a name="band"></a>
 
 Used for sharing information about musical bands and band events. Also used by musicians to connect with their fan base and sell band-related merchandise.
 

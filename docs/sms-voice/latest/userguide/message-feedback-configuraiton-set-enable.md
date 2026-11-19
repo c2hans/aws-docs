@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/message-feedb
 ---
 
 # Enable message feedback for a configuration set AWS End User Messaging SMS
-<a name="message-feedback-configuraiton-set-enable"></a>
 
 When the message feedback setting is enabled on a configuration set then messages sent using the configuration set will have message feedback enabled, unless message feedback has been disabled in the API call. To enable message feedback for a configuration set using the AWS End User Messaging SMS console, follow these steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AICapa
 ---
 
 # AICapacityReservationConfig
-<a name="API_AICapacityReservationConfig"></a>
 
 The capacity reservation configuration for an AI recommendation job.
 

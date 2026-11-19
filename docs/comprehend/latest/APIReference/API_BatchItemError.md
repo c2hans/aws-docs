@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Batch
 ---
 
 # BatchItemError
-<a name="API_BatchItemError"></a>
 
 Describes an error that occurred while processing a document in a batch. The operation returns on `BatchItemError` object for each document that contained an error.
 

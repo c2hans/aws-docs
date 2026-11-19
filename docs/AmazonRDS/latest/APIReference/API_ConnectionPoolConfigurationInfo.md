@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Connec
 ---
 
 # ConnectionPoolConfigurationInfo
-<a name="API_ConnectionPoolConfigurationInfo"></a>
 
 Displays the settings that control the size and behavior of the connection pool associated with a `DBProxyTarget`.
 

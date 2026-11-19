@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Container services
-<a name="amazon-lightsail-faq-containers"></a>
 
 ## What can I do with Lightsail container services?
 <a name="what-can-i-do-with-container-services"></a>

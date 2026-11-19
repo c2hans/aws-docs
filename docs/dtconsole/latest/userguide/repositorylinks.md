@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/repositorylin
 ---
 
 # Working with repository links
-<a name="repositorylinks"></a>
 
 A repository link creates an association between your connection and an external Git repository. The repository link allows Git sync to monitor and sync changes to files in a specified Git repository to an CloudFormation stack.
 

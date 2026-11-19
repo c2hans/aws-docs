@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/iotsitewise
 ---
 
 # Security Hub CSPM controls for AWS IoT SiteWise
-<a name="iotsitewise-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the AWS IoT SiteWise service and resources.
 

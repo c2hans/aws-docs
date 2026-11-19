@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonConnectServiceLinkedRolePolicy
-<a name="AmazonConnectServiceLinkedRolePolicy"></a>
 
 **Description**: Allows Amazon Connect to create and manage AWS resources on your behalf.
 

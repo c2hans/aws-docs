@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateFilt
 ---
 
 # UpdateFilter
-<a name="API_UpdateFilter"></a>
 
 Specifies the action that is to be applied to the findings that match the filter.
 

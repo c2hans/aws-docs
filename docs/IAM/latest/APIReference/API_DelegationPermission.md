@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DelegationPe
 ---
 
 # DelegationPermission
-<a name="API_DelegationPermission"></a>
 
 Contains information about the permissions being delegated in a delegation request.
 

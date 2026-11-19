@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost05-
 ---
 
 # COST05-BP03 Analyze the total cost of ownership of each component
-<a name="cost05-bp03"></a>
 
  A component's total cost includes more than its list price. Running it yourself adds operational work: patching, scaling, monitoring, incident response, and the staff hours to do it. Count these hidden costs when you compare managed and self-managed options, so the comparison reflects the real total.
 

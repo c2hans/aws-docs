@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/stop-backu
 ---
 
 # Turn off backups
-<a name="stop-backups"></a>
 
 You can turn off backups for your resources in accounts that are enrolled in AWS Control Tower, either during landing zone setup, or when you update your landing zone.
 

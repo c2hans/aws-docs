@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle multitenant and MySQL databases
-<a name="chap-oracle-aurora-mysql.special.multitenant"></a>
 
 With AWS DMS, you can migrate Oracle multitenant databases and MySQL databases to Amazon Aurora.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectorDataTarg
 ---
 
 # ConnectorDataTarget
-<a name="API_ConnectorDataTarget"></a>
 
 Specifies a target generated with standard connection options.
 

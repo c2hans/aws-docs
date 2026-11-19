@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-shi
 ---
 
 # Add shift activities in draft or published schedules in Connect Customer
-<a name="scheduling-shift-activities-calendar-view"></a>
 
 Connect Customer scheduling allows contact center managers, supervisors, and schedulers to insert activities into agent schedules, both draft and published. For example, activities such as team meetings, 1:1 coaching sessions, and trainings can be added into an agent's schedule.
 

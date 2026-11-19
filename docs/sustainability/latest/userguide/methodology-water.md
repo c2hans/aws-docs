@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/methodol
 ---
 
 # Water withdrawals
-<a name="methodology-water"></a>
 
  The water withdrawals data in the AWS Sustainability service quantifies customer-specific water withdrawals associated with the use of AWS cloud services and covers the full range of said services.
 

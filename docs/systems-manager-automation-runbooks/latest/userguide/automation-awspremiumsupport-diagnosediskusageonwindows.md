@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSPremiumSupport-DiagnoseDiskUsageOnWindows`
-<a name="automation-awspremiumsupport-diagnosediskusageonwindows"></a>
 
  **Description**
 

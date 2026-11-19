@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Get the current network connection status of the agent in Connect Customer agent workspace
-<a name="3P-apps-agent-requests-getnetworkconnectionstatus"></a>
 
 Returns the current network connection health status of the agent's connection to Connect Customer backend services.
 

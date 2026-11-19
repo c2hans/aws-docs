@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # ResourceSyncAttempt
-<a name="API_ResourceSyncAttempt"></a>
 
 Information about a resource sync attempt.
 

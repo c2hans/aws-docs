@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-m
 ---
 
 # Interact with multiple clusters in AWS CloudHSM
-<a name="cloudhsm_cli-multi-cluster-usage"></a>
 
 After configuring multiple clusters with CloudHSM CLI, use the `cloudhsm-cli` command to interact with them.
 

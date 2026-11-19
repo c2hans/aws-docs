@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/enabling-https.h
 ---
 
 # Enabling HTTPS with Apache Livy
-<a name="enabling-https"></a>
 
 This topic is relevant if you are running Amazon EMR 7.3.0 or an earlier release. Beginning with release 7.4.0, HTTPS is enabled with Apache Livy by default.
 

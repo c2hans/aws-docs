@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Operation
 ---
 
 # OperationFailureDetails
-<a name="API_OperationFailureDetails"></a>
 
 Provides a description of the operation failure.
 

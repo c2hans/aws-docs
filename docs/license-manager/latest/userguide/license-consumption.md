@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/license
 ---
 
 # Check out seller issued licenses in License Manager
-<a name="license-consumption"></a>
 
 License Manager allows multiple users to concurrently consume entitlements, with limited capabilities, from a single license. Call the [CheckoutLicense](https://docs.aws.amazon.com/license-manager/latest/APIReference/API_CheckoutLicense.html) API action. The following is a description of the parameters.
 + **Key fingerprint** – Trusted license issuer.

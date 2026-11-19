@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # DeleteABTest
-<a name="API_DeleteABTest"></a>
 
 Deletes an A/B test and its associated gateway rules.
 

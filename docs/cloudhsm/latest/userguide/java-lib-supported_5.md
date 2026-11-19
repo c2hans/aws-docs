@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/java-lib-suppo
 ---
 
 # Supported mechanisms for JCE provider for AWS CloudHSM Client SDK 5
-<a name="java-lib-supported_5"></a>
 
 This topic provides information about supported mechanisms for JCE provider with AWS CloudHSM Client SDK 5. For information about the Java Cryptography Architecture (JCA) interfaces and engine classes supported by AWS CloudHSM, see the following topics.
 

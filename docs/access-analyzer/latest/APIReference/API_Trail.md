@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # Trail
-<a name="API_Trail"></a>
 
 Contains details about the CloudTrail trail being analyzed to generate a policy.
 

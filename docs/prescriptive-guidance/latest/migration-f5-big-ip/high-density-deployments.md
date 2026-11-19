@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # High-density deployments without Elastic IPs
-<a name="high-density-deployments"></a>
 
 If you need highly dense deployments, then you can operate in the performance metrics and these applications do not require the use of Elastic IPs. This is referred to as an "alien IP."
 

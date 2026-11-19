@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_I
 ---
 
 # IdentityProviderSummary
-<a name="API_IdentityProviderSummary"></a>
 
 The summary of the identity provider.
 

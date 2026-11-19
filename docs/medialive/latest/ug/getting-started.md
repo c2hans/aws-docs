@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/getting-started.html
 ---
 
 # Ways to work with MediaLive
-<a name="getting-started"></a>
 
 Here are three suggestions about how to get started with AWS Elemental MediaLive.
 + Use the workflow wizard to quickly create a functioning channel. See [Using the MediaLive workflow wizard](wizard.md).

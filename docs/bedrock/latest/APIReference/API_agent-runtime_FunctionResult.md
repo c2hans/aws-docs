@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FunctionResult
-<a name="API_agent-runtime_FunctionResult"></a>
 
 Contains information about the function that was called from the action group and the response that was returned.
 

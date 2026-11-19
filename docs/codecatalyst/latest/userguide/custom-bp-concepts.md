@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/custom-bp-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Custom blueprints concepts
-<a name="custom-bp-concepts"></a>
 
 Here are some concepts and terms that you should know when working with custom blueprints in CodeCatalyst.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/sync-calling.html
 ---
 
 # Calling Amazon Textract Synchronous Operations
-<a name="sync-calling"></a>
 
 Amazon Textract operations process document images that are stored on a local file system, or document images stored in an Amazon S3 bucket. You specify where the input document is located by using the [Document](https://docs.aws.amazon.com/textract/latest/APIReference/API_Document.html) input parameter. The document image can be in either PNG, JPEG, PDF, or TIFF format. Results for synchronous operations are returned immediately and are not stored for retrieval.
 

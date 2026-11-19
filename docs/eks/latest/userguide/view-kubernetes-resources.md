@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/view-kubernetes-res
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # View Kubernetes resources in the AWS Management Console
-<a name="view-kubernetes-resources"></a>
 
 You can view the Kubernetes resources deployed to your cluster with the AWS Management Console. You can’t view Kubernetes resources with the AWS CLI or [eksctl](https://eksctl.io/). To view Kubernetes resources using a command-line tool, use [kubectl](install-kubectl.md).
 

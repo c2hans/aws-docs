@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Use filters
-<a name="use-filters"></a>
 
 To use filters, specify a filter from the following table. For example, to blur a JPEG image, enter the following:
 

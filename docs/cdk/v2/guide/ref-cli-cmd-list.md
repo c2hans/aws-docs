@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-list.html
 ---
 
 # `cdk list`
-<a name="ref-cli-cmd-list"></a>
 
 List all AWS CDK stacks and their dependencies from a CDK app.
 

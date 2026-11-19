@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-kms-w
 ---
 
 # How AWS CloudTrail uses AWS KMS
-<a name="how-kms-works-with-cloudtrail"></a>
 
 This section describes how AWS KMS works with a CloudTrail trail that is encrypted with an SSE-KMS key.
 

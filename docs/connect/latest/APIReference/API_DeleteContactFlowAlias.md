@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteCo
 ---
 
 # DeleteContactFlowAlias
-<a name="API_DeleteContactFlowAlias"></a>
 
 Deletes an alias from a flow without deleting the version that the alias points to.
 

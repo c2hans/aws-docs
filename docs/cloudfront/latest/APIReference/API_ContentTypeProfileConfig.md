@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Conte
 ---
 
 # ContentTypeProfileConfig
-<a name="API_ContentTypeProfileConfig"></a>
 
 The configuration for a field-level encryption content type-profile mapping.
 

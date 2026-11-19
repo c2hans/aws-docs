@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateFlow
-<a name="API_CreateFlow"></a>
 
 Creates a new flow in the specified AWS account. Creates both a DRAFT and PUBLISHED (auto-published) version.
 

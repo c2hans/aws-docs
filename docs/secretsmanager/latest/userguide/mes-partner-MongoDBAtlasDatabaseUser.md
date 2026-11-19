@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # MongoDB Atlas Database User
-<a name="mes-partner-MongoDBAtlasDatabaseUser"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c37b3"></a>

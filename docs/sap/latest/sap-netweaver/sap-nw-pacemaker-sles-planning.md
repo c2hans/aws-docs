@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemake
 ---
 
 # Planning
-<a name="sap-nw-pacemaker-sles-planning"></a>
 
 This section covers the following topics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailTopicConfig
-<a name="API_GuardrailTopicConfig"></a>
 
 Details about topics for the guardrail to identify and deny.
 

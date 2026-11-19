@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationEvent
-<a name="API_DataIntegrationEvent"></a>
 
 The data integration event details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_KeyVa
 ---
 
 # KeyValue
-<a name="API_KeyValue"></a>
 
 Pair of two related strings. Allowed characters are letters, white space, and numbers that can be represented in UTF-8 and the following characters: ` + - = . _ : /`
 

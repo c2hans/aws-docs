@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Mes
 ---
 
 # MessageDeliveryStatusEventConfiguration
-<a name="API_MessageDeliveryStatusEventConfiguration"></a>
 
 Message delivery status event configuration object for enabling and disabling relevant topics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/service-man
 ---
 
 # Service-Managed Standard: AWS Control Tower
-<a name="service-managed-standard-aws-control-tower"></a>
 
 This section provides information about Service-Managed Standard: AWS Control Tower.
 

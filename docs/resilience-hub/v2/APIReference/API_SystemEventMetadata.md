@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemEventMetadata
-<a name="API_SystemEventMetadata"></a>
 
 Type-specific metadata for each system event type.
 

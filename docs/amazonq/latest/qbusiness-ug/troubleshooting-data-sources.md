@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/troubleshoot
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Troubleshooting data source connectors
-<a name="troubleshooting-data-sources"></a>
 
 This section can help you fix issues with Amazon Q Business data source connectors.
 

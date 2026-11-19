@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-
 ---
 
 # Stopping a run in AWS Device Farm
-<a name="how-to-stop-test-runs"></a>
 
 You might want to stop a run after you have started it. For example, if you notice an issue while your tests are running you might want to restart the run with an updated test script.
 

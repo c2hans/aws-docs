@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/man
 ---
 
 # Mandatory controls
-<a name="mandatory-controls"></a>
 
 Mandatory controls are owned by AWS Control Tower, and they apply to every OU on your landing zone, with some exceptions for the **Security OU**. These controls are applied to your OUs by default when you set up your landing zone, and they can't be deactivated, because they protect AWS Control Tower resources.
 

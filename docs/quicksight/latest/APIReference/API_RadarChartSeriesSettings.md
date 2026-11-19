@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Radar
 ---
 
 # RadarChartSeriesSettings
-<a name="API_RadarChartSeriesSettings"></a>
 
 The series settings of a radar chart.
 

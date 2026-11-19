@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_MeshDat
 ---
 
 # MeshData
-<a name="API_MeshData"></a>
 
 An object that represents a service mesh returned by a describe operation.
 

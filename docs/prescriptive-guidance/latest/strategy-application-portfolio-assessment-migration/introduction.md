@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ap
 ---
 
 # Application portfolio assessment strategy for AWS Cloud migration
-<a name="introduction"></a>
 
 *German Goncalves and Mark Berner, Amazon Web Services*
 

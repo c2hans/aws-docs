@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Game deployments
-<a name="gameops03"></a>
 
 |  GAMEOPS03: How do you manage game deployments?  |
 | --- |

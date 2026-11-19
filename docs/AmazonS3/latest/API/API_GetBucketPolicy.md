@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketPolicy.
 ---
 
 # GetBucketPolicy
-<a name="API_GetBucketPolicy"></a>
 
 Returns the policy of a specified bucket.
 

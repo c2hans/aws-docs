@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExportIdleRecommendations
-<a name="API_ExportIdleRecommendations"></a>
 
  Export optimization recommendations for your idle resources.
 

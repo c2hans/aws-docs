@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # StartFaceLivenessSession
-<a name="API_rekognitionstreaming_StartFaceLivenessSession"></a>
 
 Starts a Face Liveness video stream and liveness detection process for a given session.
 

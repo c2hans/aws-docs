@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/service
 ---
 
 # Code examples for Systems Manager using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Systems Manager with an AWS software development kit (SDK).
 

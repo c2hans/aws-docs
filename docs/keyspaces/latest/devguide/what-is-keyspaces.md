@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/what-is-keyspa
 ---
 
 # What is Amazon Keyspaces (for Apache Cassandra)?
-<a name="what-is-keyspaces"></a>
 
  Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. With Amazon Keyspaces, you don’t have to provision, patch, or manage servers, and you don’t have to install, maintain, or operate software.
 

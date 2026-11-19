@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IVSR
 ---
 
 # IVSReadOnlyAccess
-<a name="IVSReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to IVS Low-Latency and Real-Time streaming APIs
 

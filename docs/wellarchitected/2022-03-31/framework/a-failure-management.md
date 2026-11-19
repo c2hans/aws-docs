@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Failure management
-<a name="a-failure-management"></a>
 
 **Topics**
 + [REL 9  How do you back up data?](rel-09.md)

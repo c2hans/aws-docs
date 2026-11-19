@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeletePublicKey
-<a name="API_DeletePublicKey"></a>
 
 Remove a public key you previously added to CloudFront.
 

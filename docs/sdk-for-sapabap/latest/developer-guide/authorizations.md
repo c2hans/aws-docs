@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/a
 ---
 
 # SAP authorizations
-<a name="authorizations"></a>
 
 The authorization required to configure the SDK is dependent on the SDK edition.
 

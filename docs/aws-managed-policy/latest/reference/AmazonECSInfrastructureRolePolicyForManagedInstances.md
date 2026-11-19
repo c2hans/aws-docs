@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonECSInfrastructureRolePolicyForManagedInstances
-<a name="AmazonECSInfrastructureRolePolicyForManagedInstances"></a>
 
 **Description**: Provides ECS access to create and manage EC2 managed resources
 

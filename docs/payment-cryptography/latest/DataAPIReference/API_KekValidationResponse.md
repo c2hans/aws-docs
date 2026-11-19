@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # KekValidationResponse
-<a name="API_KekValidationResponse"></a>
 
 Parameter information for generating a KEK validation response during node-to-node initialization.
 

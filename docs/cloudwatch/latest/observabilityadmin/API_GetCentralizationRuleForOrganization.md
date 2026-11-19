@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # GetCentralizationRuleForOrganization
-<a name="API_GetCentralizationRuleForOrganization"></a>
 
 Retrieves the details of a specific organization centralization rule. This operation can only be called by the organization's management account or a delegated administrator account.
 

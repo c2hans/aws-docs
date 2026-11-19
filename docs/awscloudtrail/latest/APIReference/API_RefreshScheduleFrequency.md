@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Re
 ---
 
 # RefreshScheduleFrequency
-<a name="API_RefreshScheduleFrequency"></a>
 
  Specifies the frequency for a dashboard refresh schedule.
 

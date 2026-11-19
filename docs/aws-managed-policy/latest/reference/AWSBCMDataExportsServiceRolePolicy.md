@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBCMDataExportsServiceRolePolicy
-<a name="AWSBCMDataExportsServiceRolePolicy"></a>
 
 **Description**: A service linked role to provide Billing and Cost Management Data Exports access to AWS service data for exporting the data to a target location, such as Amazon S3, on behalf of a customer.
 

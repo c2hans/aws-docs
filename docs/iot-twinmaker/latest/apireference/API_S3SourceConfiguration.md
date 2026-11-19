@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_S3
 ---
 
 # S3SourceConfiguration
-<a name="API_S3SourceConfiguration"></a>
 
 The S3 destination source configuration.
 

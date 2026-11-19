@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Conn
 ---
 
 # ConnectionHttpParameters
-<a name="API_ConnectionHttpParameters"></a>
 
 Any additional parameters for the connection.
 

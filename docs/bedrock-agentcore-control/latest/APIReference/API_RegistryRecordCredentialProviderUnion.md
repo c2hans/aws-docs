@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RegistryRecordCredentialProviderUnion
-<a name="API_RegistryRecordCredentialProviderUnion"></a>
 
 Union of supported credential provider types for registry record synchronization.
 

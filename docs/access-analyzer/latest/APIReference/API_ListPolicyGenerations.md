@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ListPolicyGenerations
-<a name="API_ListPolicyGenerations"></a>
 
 Lists all of the policy generations requested in the last seven days.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_G
 ---
 
 # GetApplication
-<a name="API_GetApplication"></a>
 
 Displays detailed information about a specified application.
 

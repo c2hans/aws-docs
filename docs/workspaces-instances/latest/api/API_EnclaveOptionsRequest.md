@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Encl
 ---
 
 # EnclaveOptionsRequest
-<a name="API_EnclaveOptionsRequest"></a>
 
 Configures AWS Nitro Enclave options for the WorkSpace Instance.
 

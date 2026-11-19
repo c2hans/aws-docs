@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ConfigurationBundleToolEntry
-<a name="API_ConfigurationBundleToolEntry"></a>
 
 Maps a tool name to its JSON path within a configuration bundle.
 

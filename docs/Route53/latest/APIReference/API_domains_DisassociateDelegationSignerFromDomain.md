@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # DisassociateDelegationSignerFromDomain
-<a name="API_domains_DisassociateDelegationSignerFromDomain"></a>
 
 Deletes a delegation signer (DS) record in the registry zone for this domain name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_Schedule.htm
 ---
 
 # Schedule
-<a name="API_Schedule"></a>
 
  **[Custom snapshot and AMI policies only]** Specifies a schedule for a snapshot or AMI lifecycle policy.
 

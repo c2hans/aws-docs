@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ge
 ---
 
 # GetPatientInsightsJob
-<a name="API_GetPatientInsightsJob"></a>
 
 Get details of a started patient insights job.
 

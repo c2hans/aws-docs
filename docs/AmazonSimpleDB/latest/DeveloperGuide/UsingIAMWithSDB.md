@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Usi
 ---
 
 # Managing Users of Amazon SimpleDB
-<a name="UsingIAMWithSDB"></a>
 
 **Topics**
 + [Amazon Resource Names (ARNs) for Amazon SimpleDB](#SDB_ARN_Format)

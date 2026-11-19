@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixMatchingOptions
-<a name="API_RouteMatrixMatchingOptions"></a>
 
 Matching options.
 

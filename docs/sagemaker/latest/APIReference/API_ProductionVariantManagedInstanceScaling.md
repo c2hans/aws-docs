@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Produc
 ---
 
 # ProductionVariantManagedInstanceScaling
-<a name="API_ProductionVariantManagedInstanceScaling"></a>
 
 Settings that control the range in the number of instances that the endpoint provisions as it scales up or down to accommodate traffic.
 

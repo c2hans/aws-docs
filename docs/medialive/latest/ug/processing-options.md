@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/processing-options.h
 ---
 
 # Supported output features
-<a name="processing-options"></a>
 
 MediaLive supports different types of processing that you can implement in different combinations.
 

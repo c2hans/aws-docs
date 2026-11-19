@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/notebook-logs.h
 ---
 
 # Enabling Amazon CloudWatch Logs for a Neptune notebook
-<a name="notebook-logs"></a>
 
 CloudWatch Logs for Neptune notebooks are disabled by default. Follow these steps to enable them, for debugging or other purposes:
 

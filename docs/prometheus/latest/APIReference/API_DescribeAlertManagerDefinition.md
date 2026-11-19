@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Descr
 ---
 
 # DescribeAlertManagerDefinition
-<a name="API_DescribeAlertManagerDefinition"></a>
 
 Retrieves the full information about the alert manager definition for a workspace.
 

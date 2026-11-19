@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # UpsertEntityInfo
-<a name="API_data-automation_UpsertEntityInfo"></a>
 
 Information about entities to upsert.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayAssociation
-<a name="API_TransitGatewayAssociation"></a>
 
 Describes an association between a resource attachment and a transit gateway route table.
 

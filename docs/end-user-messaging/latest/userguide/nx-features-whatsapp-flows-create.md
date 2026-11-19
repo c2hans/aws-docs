@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Creating and editing WhatsApp Flows
-<a name="nx-features-whatsapp-flows-create"></a>
 
 You can create a WhatsApp Flow using the AWS End User Messaging console or the AWS End User Messaging API. When you create a Flow, it is placed in DRAFT status. You can optionally provide a Flow JSON definition at creation time, or add it later using the update assets operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetEncryptionConfig.
 ---
 
 # GetEncryptionConfig
-<a name="API_GetEncryptionConfig"></a>
 
 Retrieves the current encryption configuration for X-Ray data.
 

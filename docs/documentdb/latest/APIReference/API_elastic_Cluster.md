@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # Cluster
-<a name="API_elastic_Cluster"></a>
 
 Returns information about a specific elastic cluster.
 

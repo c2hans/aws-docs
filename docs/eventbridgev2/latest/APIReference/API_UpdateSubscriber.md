@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Up
 ---
 
 # UpdateSubscriber
-<a name="API_UpdateSubscriber"></a>
 
 Updates a subscriber. Fields omitted from the request are left unchanged.
 

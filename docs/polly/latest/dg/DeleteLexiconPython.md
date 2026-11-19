@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/DeleteLexiconPython.html
 ---
 
 # DeleteLexicon
-<a name="DeleteLexiconPython"></a>
 
 The following Python code example uses the AWS SDK for Python (Boto) to delete a lexicon in the region specified in your local AWS configuration. The example deletes only the specified lexicon. It asks you to confirm that you want to proceed before actually deleting the lexicon.
 

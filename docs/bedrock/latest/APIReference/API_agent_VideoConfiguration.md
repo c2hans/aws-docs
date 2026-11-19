@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Vi
 ---
 
 # VideoConfiguration
-<a name="API_agent_VideoConfiguration"></a>
 
 Configuration settings for processing video content in multimodal knowledge bases.
 

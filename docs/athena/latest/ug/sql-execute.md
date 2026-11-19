@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/sql-execute.html
 ---
 
 # EXECUTE
-<a name="sql-execute"></a>
 
 Runs a prepared statement with the name `statement_name`. Parameter values for the question marks in the prepared statement are defined in the `USING` clause in a comma separated list. To create a prepared statement, use [PREPARE](sql-prepare.md).
 

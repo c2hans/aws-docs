@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_TableStatist
 ---
 
 # TableStatistics
-<a name="API_TableStatistics"></a>
 
 Provides a collection of table statistics in response to a request by the `DescribeTableStatistics` operation.
 

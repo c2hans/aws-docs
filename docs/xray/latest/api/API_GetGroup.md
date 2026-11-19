@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetGroup.html
 ---
 
 # GetGroup
-<a name="API_GetGroup"></a>
 
 Retrieves group resource details.
 

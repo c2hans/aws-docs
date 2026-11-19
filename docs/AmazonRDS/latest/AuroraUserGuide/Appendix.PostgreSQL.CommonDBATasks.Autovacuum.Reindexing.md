@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 ---
 
 # Reindexing a table when autovacuum is running
-<a name="Appendix.PostgreSQL.CommonDBATasks.Autovacuum.Reindexing"></a>
 
 If an index has become corrupt, autovacuum continues to process the table and fails. If you attempt a manual vacuum in this situation, you receive an error message like the following.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::Api BodyS3Location
-<a name="aws-properties-apigatewayv2-api-bodys3location"></a>
 
 The `BodyS3Location` property specifies an S3 location from which to import an OpenAPI definition. Supported only for HTTP APIs.
 

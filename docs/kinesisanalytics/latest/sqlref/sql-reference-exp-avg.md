@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # EXP\_AVG
-<a name="sql-reference-exp-avg"></a>
 
 ```
 EXP_AVG ( expression, <time-interval> )

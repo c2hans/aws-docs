@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Delet
 ---
 
 # DeleteGitHubAccountToken
-<a name="API_DeleteGitHubAccountToken"></a>
 
 Deletes a GitHub account connection.
 

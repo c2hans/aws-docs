@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Route53
 ---
 
 # Route53HealthCheck
-<a name="API_Route53HealthCheck"></a>
 
 The Amazon Route 53 health check.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_ImportHyp
 ---
 
 # ImportHypervisorConfiguration
-<a name="API_ImportHypervisorConfiguration"></a>
 
 Connect to a hypervisor by importing its configuration.
 

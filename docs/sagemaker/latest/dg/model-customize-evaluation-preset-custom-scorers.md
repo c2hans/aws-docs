@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-eval
 ---
 
 # Evaluate with Preset and Custom Scorers
-<a name="model-customize-evaluation-preset-custom-scorers"></a>
 
 When using the Custom Scorer evaluation type, SageMaker Evaluation supports two built-in scorers (also referred to as "reward functions") Prime Math and Prime Code taken from the [volcengine/verl](https://github.com/volcengine/verl) RL training library, or your own custom scorer implemented as a Lambda Function.
 

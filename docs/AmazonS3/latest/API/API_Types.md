@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon S3:
 +  [AbacStatus](API_AbacStatus.md)
@@ -210,6 +209,7 @@ The following data types are supported by Amazon S3 Control:
 +  [GeneratedManifestEncryption](API_control_GeneratedManifestEncryption.md)
 +  [Grantee](API_control_Grantee.md)
 +  [Include](API_control_Include.md)
++  [IntAccessTiers](API_control_IntAccessTiers.md)
 +  [JobDescriptor](API_control_JobDescriptor.md)
 +  [JobFailure](API_control_JobFailure.md)
 +  [JobListDescriptor](API_control_JobListDescriptor.md)
@@ -308,6 +308,9 @@ The following data types are supported by Amazon S3 Control:
 +  [SSES3Filter](API_control_SSES3Filter.md)
 +  [StorageLensAwsOrg](API_control_StorageLensAwsOrg.md)
 +  [StorageLensConfiguration](API_control_StorageLensConfiguration.md)
++  [StorageLensCostAndUsageReportsPrefixLevel](API_control_StorageLensCostAndUsageReportsPrefixLevel.md)
++  [StorageLensCostAndUsageReportsPublish](API_control_StorageLensCostAndUsageReportsPublish.md)
++  [StorageLensCostAndUsageReportsSelectionCriteria](API_control_StorageLensCostAndUsageReportsSelectionCriteria.md)
 +  [StorageLensDataExport](API_control_StorageLensDataExport.md)
 +  [StorageLensDataExportEncryption](API_control_StorageLensDataExportEncryption.md)
 +  [StorageLensExpandedPrefixesDataExport](API_control_StorageLensExpandedPrefixesDataExport.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Des
 ---
 
 # DescribePermissionSetProvisioningStatus
-<a name="API_DescribePermissionSetProvisioningStatus"></a>
 
 Describes the status for the given permission set provisioning request.
 

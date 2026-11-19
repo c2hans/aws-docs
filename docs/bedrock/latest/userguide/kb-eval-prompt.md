@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-eval-prompt.
 ---
 
 # Evaluator prompts used in a RAG evaluation job
-<a name="kb-eval-prompt"></a>
 
 The same prompts are used for *retrieve-only* and *retrieve-and-generate* evaluation jobs. All prompts contain an optional `chat_history` component. If `conversationTurns` is specified, then `chat_history` is included in the prompt.
 

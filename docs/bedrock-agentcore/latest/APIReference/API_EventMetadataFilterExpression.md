@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EventMetadataFilterExpression
-<a name="API_EventMetadataFilterExpression"></a>
 
 Filter expression for retrieving events based on metadata associated with an event.
 

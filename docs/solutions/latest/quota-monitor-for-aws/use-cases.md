@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/u
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Monitoring quotas across your organization or OUs**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIWork
 ---
 
 # AIWorkloadS3DataSource
-<a name="API_AIWorkloadS3DataSource"></a>
 
 The Amazon S3 data source for an AI workload.
 

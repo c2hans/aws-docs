@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.STD.3] Prioritize shared accountability over individual achievements
-<a name="oa.std.3-prioritize-shared-accountability-over-individual-achievements"></a>
 
  **Category:** FOUNDATIONAL
 

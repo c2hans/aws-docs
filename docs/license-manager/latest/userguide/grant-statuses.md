@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/grant-s
 ---
 
 # License status for grants in License Manager
-<a name="grant-statuses"></a>
 
 Licenses have two statuses: The **License status**, which shows the overall availability and sharability of the license, and the **Grant status**, which shows the ability to use the license.
 

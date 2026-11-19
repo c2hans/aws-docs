@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_EventSource.
 ---
 
 # EventSource
-<a name="API_EventSource"></a>
 
  **[Event-based policies only]** Specifies an event that activates an event-based policy.
 

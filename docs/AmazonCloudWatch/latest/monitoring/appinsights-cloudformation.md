@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Create and configure CloudWatch Application Insights monitoring using CloudFormation templates
-<a name="appinsights-cloudformation"></a>
 
 You can add Application Insights monitoring, including key metrics and telemetry, to your application, database, and web server, directly from AWS CloudFormation templates.
 

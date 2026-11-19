@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/network-of-bots.html
 ---
 
 # Creating a network of bots for your Lex V2 bots
-<a name="network-of-bots"></a>
 
 Network of Bots enables enterprises to deliver a unified user experience across multiple bots. With Network of Bots, enterprises can add multiple bots to a single network to enable flexible and independent bot lifecycle management. The network exposes a single unified interface to the end-user and routes the request to the appropriate bot based on user input.
 

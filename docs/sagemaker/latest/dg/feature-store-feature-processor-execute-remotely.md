@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-featur
 ---
 
 # Running Feature Store Feature Processor remotely
-<a name="feature-store-feature-processor-execute-remotely"></a>
 
 To run your Feature Processors on large data sets that require hardware more powerful than what is locally available, you can decorate your code with the `@remote` decorator to run your local Python code as a single or multi-node distributed SageMaker training job. For more information on running your code as a SageMaker training job, see [Run your local code as a SageMaker training job](train-remote-decorator.md).
 

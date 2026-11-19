@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListLifecycleExecutionResources
-<a name="API_ListLifecycleExecutionResources"></a>
 
 Lists resources that the runtime instance of the image lifecycle identified for lifecycle actions.
 

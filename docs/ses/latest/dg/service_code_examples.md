@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/service_code_examples.html
 ---
 
 # Code examples for Amazon SES using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Amazon SES with an AWS software development kit (SDK).
 

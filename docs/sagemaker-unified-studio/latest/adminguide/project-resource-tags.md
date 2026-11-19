@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Project resource tags
-<a name="project-resource-tags"></a>
 
 Project resource tags in Amazon SageMaker Unified Studio are custom key-value pairs that you assign to projects to help organize, categorize, and manage your resources. You can use tags for cost allocation, access control, and resource organization across your Amazon SageMaker Unified Studio projects.
 

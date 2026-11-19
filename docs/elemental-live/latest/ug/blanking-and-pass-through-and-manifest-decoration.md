@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/blanking-and-pa
 ---
 
 # Blanking and passthrough and manifest decoration
-<a name="blanking-and-pass-through-and-manifest-decoration"></a>
 
 It is important to understand that the logic for blanking ad content works on the video content associated with the “ad avail event” while the logic for passthrough and manifest decoration works on the actual SCTE-35 message.
 

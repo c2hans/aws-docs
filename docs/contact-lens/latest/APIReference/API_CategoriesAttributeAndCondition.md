@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_Cat
 ---
 
 # CategoriesAttributeAndCondition
-<a name="API_connect-contact-lens_CategoriesAttributeAndCondition"></a>
 
 A list of tag conditions that the filter evaluates together using AND logic. A category segment matches only when the tags on its rule satisfy every tag condition in the list.
 

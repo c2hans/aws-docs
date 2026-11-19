@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-featur
 ---
 
 # Custom data sources
-<a name="feature-store-feature-processor-data-sources-custom"></a>
 
 On this page we will describe how to create a custom data source class and show some usage examples. With custom data sources, you can use the SageMaker AI SDK for Python (Boto3) provided APIs in the same way as if you are using Amazon SageMaker Feature Store provided data sources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Descri
 ---
 
 # DescribeAppInstanceBot
-<a name="API_DescribeAppInstanceBot"></a>
 
 The `AppInstanceBot's` information.
 

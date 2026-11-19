@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_P
 ---
 
 # PredictQAppInputOptions
-<a name="API_qapps_PredictQAppInputOptions"></a>
 
 The input options for generating an Q App definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-cloud-instances.
 ---
 
 # Cloud Instances
-<a name="neo-cloud-instances"></a>
 
 Amazon SageMaker Neo provides compilation support for popular machine learning frameworks such as TensorFlow, PyTorch, MXNet, and more. You can deploy your compiled model to cloud instances and AWS Inferentia instances. For a full list of supported frameworks and instances types, see [Supported Instances Types and Frameworks](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-supported-cloud.html).
 

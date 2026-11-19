@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UpdateUserAccessLoggingSettings
-<a name="API_UpdateUserAccessLoggingSettings"></a>
 
 Updates the user access logging settings.
 

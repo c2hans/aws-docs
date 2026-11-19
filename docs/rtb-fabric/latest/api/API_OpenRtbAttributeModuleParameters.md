@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_OpenRtbAttribu
 ---
 
 # OpenRtbAttributeModuleParameters
-<a name="API_OpenRtbAttributeModuleParameters"></a>
 
 Describes the parameters of an open RTB attribute module.
 

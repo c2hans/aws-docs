@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor-use-life
 ---
 
 # Create and attach lifecycle configurations in Studio
-<a name="code-editor-use-lifecycle-configurations-studio-create"></a>
 
 The following section provides AWS CLI commands to create a lifecycle configuration, attach a lifecycle configuration when creating a new user profile, and attach a lifecycle configuration when updating a user profile. For prerequisites and general steps on creating and attaching lifecycle configurations in Studio, see [Lifecycle configuration creation](jl-lcc-create.md).
 

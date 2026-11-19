@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/regions.html
 ---
 
 # Regions and Git connection endpoints for AWS CodeCommit
-<a name="regions"></a>
 
 Each CodeCommit repository is associated with an AWS Region. CodeCommit offers regional endpoints to make your requests to the service. In addition, CodeCommit provides Git connection endpoints for both SSH and HTTPS protocols in every Region where CodeCommit is available.
 

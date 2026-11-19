@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Knowl
 ---
 
 # KnowledgeBaseConfiguration
-<a name="API_KnowledgeBaseConfiguration"></a>
 
 The configuration settings for a knowledge base.
 

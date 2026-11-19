@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for multivalue answer records
-<a name="resource-record-sets-values-multivalue"></a>
 
 When you create multivalue answer records, you specify the following values.
 

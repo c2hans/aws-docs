@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/woocommerce-reading-from-
 ---
 
 # Reading from WooCommerce entities
-<a name="woocommerce-reading-from-entities"></a>
 
 **Prerequisite**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/adminguide/billing.html
 ---
 
 # Billing for Amazon Connect Talent
-<a name="billing"></a>
 
 Amazon Connect Talent charges a single flat price for each completed candidate evaluation. Track your usage and charges through your AWS account in the AWS Billing and Cost Management console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_I
 ---
 
 # ISO8601TimeRange
-<a name="API_ISO8601TimeRange"></a>
 
 Time range specified using ISO 8601 format timestamps.
 

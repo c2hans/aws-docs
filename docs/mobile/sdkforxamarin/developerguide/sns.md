@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/sns.
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Amazon Simple Notification Service (SNS)
-<a name="sns"></a>
 
 Using SNS and the AWS Mobile SDK for .NET and Xamarin, you can write applications that can receive mobile push notifications. For information about SNS, see [Amazon Simple Notification Service](https://aws.amazon.com/sns/).
 

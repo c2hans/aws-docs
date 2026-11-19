@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/user-types-list.
 ---
 
 # Determine your user type
-<a name="user-types-list"></a>
 
 How you sign in depends on what type of AWS user you are. You can manage an AWS account as a root user, an IAM user, a user in IAM Identity Center, or a federated identity. You can use an AWS Builder ID profile to access certain AWS services and tools. The different user types are listed below.
 

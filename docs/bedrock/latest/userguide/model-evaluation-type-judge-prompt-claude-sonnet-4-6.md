@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Anthropic Claude Sonnet 4.6
-<a name="model-evaluation-type-judge-prompt-claude-sonnet-4-6"></a>
 
 Prompts used with Anthropic Claude Sonnet 4.6.
 

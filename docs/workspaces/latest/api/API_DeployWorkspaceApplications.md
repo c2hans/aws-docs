@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DeployWorkspac
 ---
 
 # DeployWorkspaceApplications
-<a name="API_DeployWorkspaceApplications"></a>
 
 Deploys associated applications to the specified WorkSpace
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy
-<a name="CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy"></a>
 
 **Description**: You can't attach CloudWatchNetworkFlowMonitorTopologyServiceRolePolicy to your IAM entities. This policy is attached to a service-linked role named AWSServiceRoleForNetworkFlowMonitor\_Topology, which generates topology snapshots of resources used by Network Flow Monitor in your account.
 

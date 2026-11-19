@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DeleteLakeFormationOptIn
-<a name="API_DeleteLakeFormationOptIn"></a>
 
 Remove the Lake Formation permissions enforcement of the given databases, tables, and principals.
 

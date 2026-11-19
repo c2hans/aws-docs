@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/to-restore-backups
 ---
 
 # Restoring a backup to a new volume
-<a name="to-restore-backups"></a>
 
 The following procedures describe how to restore an FSx for ONTAP backup to a new volume using the AWS Management Console and AWS CLI. When restoring a volume to a second-generation file system, you can [monitor](monitor-backup-restore.md) the progress using the AWS Management Console, AWS CLI, and API.<a name="volume-restore-console"></a>
 

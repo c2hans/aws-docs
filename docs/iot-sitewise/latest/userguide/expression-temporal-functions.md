@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/expression
 ---
 
 # Use temporal functions in formula expressions
-<a name="expression-temporal-functions"></a>
 
 Use temporal functions to return values based on timestamps of data points.
 

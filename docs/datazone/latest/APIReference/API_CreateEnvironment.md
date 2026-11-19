@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateE
 ---
 
 # CreateEnvironment
-<a name="API_CreateEnvironment"></a>
 
 Create an Amazon DataZone environment.
 

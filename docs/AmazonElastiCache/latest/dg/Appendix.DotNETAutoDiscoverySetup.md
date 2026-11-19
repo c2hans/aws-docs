@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Appendix.Dot
 ---
 
 # Installing the ElastiCache cluster client for .NET
-<a name="Appendix.DotNETAutoDiscoverySetup"></a>
 
 You can find the ElastiCache .NET Cluster Client code as open source at [https://github.com/awslabs/elasticache-cluster-config-net](https://github.com/awslabs/elasticache-cluster-config-net).
 

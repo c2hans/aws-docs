@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_ACLsUpd
 ---
 
 # ACLsUpdateStatus
-<a name="API_ACLsUpdateStatus"></a>
 
 The status of the ACL update
 

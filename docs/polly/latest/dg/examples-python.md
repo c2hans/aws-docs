@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/examples-python.html
 ---
 
 # Python example (HTML5 Client and Python Server)
-<a name="examples-python"></a>
 
 This example application consists of the following:
 + An HTTP 1.1 server using the HTTP chunked transfer coding (see [Chunked Transfer Coding](https://tools.ietf.org/html/rfc2616#section-3.6.1))

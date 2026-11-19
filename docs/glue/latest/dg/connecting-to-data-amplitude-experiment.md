@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-amplit
 ---
 
 # Connecting to Amplitude Experiment in AWS Glue Studio
-<a name="connecting-to-data-amplitude-experiment"></a>
 
 Amplitude Experiment is a feature management and experimentation platform for running A/B tests and controlling feature rollouts. Because you are an Amplitude Experiment user, you can connect AWS Glue to your Amplitude Experiment account. You can then use Amplitude Experiment as a data source in your AWS Glue ETL jobs to transfer data between Amplitude Experiment and AWS services or other supported applications.
 

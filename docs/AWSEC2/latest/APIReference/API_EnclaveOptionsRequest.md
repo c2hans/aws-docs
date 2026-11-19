@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnclaveOp
 ---
 
 # EnclaveOptionsRequest
-<a name="API_EnclaveOptionsRequest"></a>
 
 Indicates whether the instance is enabled for AWS Nitro Enclaves. For more information, see [ What is AWS Nitro Enclaves?](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html) in the * AWS Nitro Enclaves User Guide*.
 

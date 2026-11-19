@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/udp-destinations.htm
 ---
 
 # Fields for the output destination
-<a name="udp-destinations"></a>
 
 The following fields configure the destination of the output:
 + **Output group** – **UDP destination** sections

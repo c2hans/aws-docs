@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/iam_
 ---
 
 # Directory Service Data condition keys
-<a name="iam_dsdata-condition-keys"></a>
 
 Use [Directory Service Data](https://docs.aws.amazon.com/directoryservicedata/latest/DirectoryServiceDataAPIReference/welcome.html) condition keys to add specific statements to users and group level access. This allows users to decide which principals can perform actions on what resources and under what conditions.
 

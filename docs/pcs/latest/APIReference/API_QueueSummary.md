@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_QueueSummary
 ---
 
 # QueueSummary
-<a name="API_QueueSummary"></a>
 
 The object returned by the `ListQueues` API action.
 

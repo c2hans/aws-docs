@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessContentBlock
-<a name="API_HarnessContentBlock"></a>
 
 A content block within a message.
 

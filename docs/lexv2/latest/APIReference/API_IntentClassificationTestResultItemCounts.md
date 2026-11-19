@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentClas
 ---
 
 # IntentClassificationTestResultItemCounts
-<a name="API_IntentClassificationTestResultItemCounts"></a>
 
 The number of items in the intent classification test.
 

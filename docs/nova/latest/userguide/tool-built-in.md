@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/tool-built-in.html
 ---
 
 # Using built-in tools
-<a name="tool-built-in"></a>
 
 Built-in tools are fully managed tools that are available out of the box, with no need for custom implementation. These can be enabled in the Converse API with a simple toggle.
 

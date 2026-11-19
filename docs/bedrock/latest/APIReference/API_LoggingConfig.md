@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_LoggingC
 ---
 
 # LoggingConfig
-<a name="API_LoggingConfig"></a>
 
 Configuration fields for invocation logging.
 

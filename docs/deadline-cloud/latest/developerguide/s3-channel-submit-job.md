@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/s3-
 ---
 
 # Test your package with a Blender render job
-<a name="s3-channel-submit-job"></a>
 
 After you build the Blender 4.5 package, you can test it with a render job. If you do not have a Blender scene, download the Blender 3.5 - Cozy Kitchen scene from the [Blender demo files page](https://www.blender.org/download/demo-files) on the Blender website. The Deadline Cloud samples repository contains a `blender_render` job bundle and a conda queue environment that you can use for both local and cloud testing.
 

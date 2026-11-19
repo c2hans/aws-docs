@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/securi
 ---
 
 # How AWS Infrastructure Composer works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 AWS Infrastructure Composer requires, at minimum, read-only access to the AWS Management Console. Any user with this authorization can use all features of Infrastructure Composer. Granular access to specific features of Infrastructure Composer is not supported.
 

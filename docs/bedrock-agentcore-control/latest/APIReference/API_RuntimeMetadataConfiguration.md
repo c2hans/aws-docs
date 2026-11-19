@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RuntimeMetadataConfiguration
-<a name="API_RuntimeMetadataConfiguration"></a>
 
 Configuration for microVM metadata service settings.
 

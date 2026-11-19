@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-getres
 ---
 
 # Connecting to GetResponse in AWS Glue Studio
-<a name="connecting-to-data-getresponse"></a>
 
 GetResponse is an all-in-one email-marketing, marketing-automation, and ecommerce platform. Because you are a GetResponse user, you can connect AWS Glue to your GetResponse account. You can then use GetResponse as a data source in your AWS Glue ETL jobs to transfer data between GetResponse and AWS services or other supported applications.
 

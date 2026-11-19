@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageRefe
 ---
 
 # ImageReference
-<a name="API_ImageReference"></a>
 
 A resource that is referencing an image.
 

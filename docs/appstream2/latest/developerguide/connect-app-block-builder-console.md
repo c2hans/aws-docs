@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/connect
 ---
 
 # Amazon WorkSpaces Applications Console (Browser Connection)
-<a name="connect-app-block-builder-console"></a>
 
 To use the WorkSpaces Applications console to connect to an app block builder through a browser, complete the following steps.
 

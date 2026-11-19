@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Neptune ML management API errors and exceptions
-<a name="machine-learning-api-exceptions"></a>
 
 All Neptune ML management API exceptions return a 400 HTTP code. After receiving any of these exceptions, the command that generated the exception should not be retried.
 + **`MissingParameterException`**   –   Error message:

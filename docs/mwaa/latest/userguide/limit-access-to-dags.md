@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/limit-access-to-da
 ---
 
 # Tutorial: Restricting an Amazon MWAA user's access to a subset of DAGs
-<a name="limit-access-to-dags"></a>
 
 Amazon MWAA manages access to your environment by mapping your IAM principals to one or more of Apache Airflow's [default roles](https://airflow.apache.org/docs/apache-airflow/stable/security/access-control.html#default-roles). Use the following tutorial to restrict individual Amazon MWAA users to only access and interact with a specific DAG or a set of DAGs.
 

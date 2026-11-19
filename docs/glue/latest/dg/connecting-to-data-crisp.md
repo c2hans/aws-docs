@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-crisp.
 ---
 
 # Connecting to Crisp in AWS Glue Studio
-<a name="connecting-to-data-crisp"></a>
 
 Crisp is a customer-messaging platform combining live chat, a shared team inbox, and a lightweight CRM. Because you are a Crisp user, you can connect AWS Glue to your Crisp account. You can then use Crisp as a data source in your AWS Glue ETL jobs to transfer data between Crisp and AWS services or other supported applications.
 

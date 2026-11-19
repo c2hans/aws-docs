@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Rule
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
 Contains information about a rule in Amazon EventBridge.
 

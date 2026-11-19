@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/metrics.html
 ---
 
 # Understanding Connection Gateway metrics
-<a name="metrics"></a>
 
 The Amazon DCV Connection Gateway is able to record and emit metrics which allow customers to monitor the performance of the Connection Gateway.
 

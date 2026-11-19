@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterNetwor
 ---
 
 # RouterNetworkInterfaceFilter
-<a name="API_RouterNetworkInterfaceFilter"></a>
 
 A filter that can be used to retrieve a list of router network interfaces.
 

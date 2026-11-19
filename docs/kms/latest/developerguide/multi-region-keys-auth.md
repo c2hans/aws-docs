@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-k
 ---
 
 # Control access to multi-Region keys
-<a name="multi-region-keys-auth"></a>
 
 You can use multi-Region keys in compliance, disaster recovery, and backup scenarios that would be more complex with single-Region keys. However, because the security properties of multi-Region keys are significantly different from those of single-Region keys, we recommend using caution when authorizing the creation, management, and use of multi-Region keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Condi
 ---
 
 # ConditionalFormattingColor
-<a name="API_ConditionalFormattingColor"></a>
 
 The formatting configuration for the color.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SSMQ
 ---
 
 # SSMQuickSetupRolePolicy
-<a name="SSMQuickSetupRolePolicy"></a>
 
 **Description**: Provides permissions to check Quick Setup configuration health, ensure consistent use of parameters and provisioned resources, and remediate resources when drift is detected.
 

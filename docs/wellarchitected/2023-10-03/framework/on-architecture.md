@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # On architecture
-<a name="on-architecture"></a>
 
  In on-premises environments, customers often have a central team for technology architecture that acts as an overlay to other product or feature teams to verify they are following best practice. Technology architecture teams typically include a set of roles such as: Technical Architect (infrastructure), Solutions Architect (software), Data Architect, Networking Architect, and Security Architect. Often these teams use [TOGAF](https://pubs.opengroup.org/architecture/togaf9-doc/arch/) or the [Zachman Framework](https://zachman-feac.com/zachman/about-the-zachman-framework) as part of an enterprise architecture capability.
 

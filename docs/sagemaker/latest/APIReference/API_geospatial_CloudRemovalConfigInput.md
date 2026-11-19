@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # CloudRemovalConfigInput
-<a name="API_geospatial_CloudRemovalConfigInput"></a>
 
 Input structure for Cloud Removal Operation type
 

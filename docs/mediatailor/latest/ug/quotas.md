@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/quotas.html
 ---
 
 # Quotas in AWS Elemental MediaTailor
-<a name="quotas"></a>
 
 MediaTailor resources and operations requests are subject to the following quotas (formerly referred to as "limits").
 

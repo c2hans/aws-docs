@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # FieldSourceProfileIds
-<a name="API_connect-customer-profiles_FieldSourceProfileIds"></a>
 
 A duplicate customer profile that is to be merged into a main profile.
 

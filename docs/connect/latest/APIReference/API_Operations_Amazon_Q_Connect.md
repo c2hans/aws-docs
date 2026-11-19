@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # Amazon Q Connect
-<a name="API_Operations_Amazon_Q_Connect"></a>
 
 The following actions are supported by Amazon Q Connect:
 +  [ActivateMessageTemplate](API_amazon-q-connect_ActivateMessageTemplate.md)

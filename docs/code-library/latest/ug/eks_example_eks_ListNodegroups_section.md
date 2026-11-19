@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/eks_example_eks_L
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ListNodegroups` with a CLI
-<a name="eks_example_eks_ListNodegroups_section"></a>
 
 The following code examples show how to use `ListNodegroups`.
 

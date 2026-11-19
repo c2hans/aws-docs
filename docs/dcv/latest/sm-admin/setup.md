@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/setup.html
 ---
 
 # Setting up Amazon DCV Session Manager
-<a name="setup"></a>
 
 The following section explains how to install Session Manager with a single broker and multiple agents. You can use multiple brokers to improve scalability and performance. For more information, see [Scaling Session Manager](scaling.md).
 

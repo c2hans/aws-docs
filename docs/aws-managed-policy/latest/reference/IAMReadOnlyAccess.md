@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IAMR
 ---
 
 # IAMReadOnlyAccess
-<a name="IAMReadOnlyAccess"></a>
 
 **Description**: Provides read only access to IAM via the AWS Management Console.
 

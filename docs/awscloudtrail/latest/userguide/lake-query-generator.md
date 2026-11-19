@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-quer
 ---
 
 # Create CloudTrail Lake queries from natural language prompts
-<a name="lake-query-generator"></a>
 
 You can use the CloudTrail Lake query generator to produce a query from an English language prompt that you provide. The query generator uses generative artificial intelligence (generative AI) to produce a ready-to-use SQL query from your prompt, which you can then choose to run in Lake's query editor, or further fine tune. You don't need to have extensive knowledge of SQL or CloudTrail event fields to use the query generator.
 

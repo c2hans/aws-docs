@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Notifications::ManagedNotificationAccountContactAssociation
-<a name="aws-resource-notifications-managednotificationaccountcontactassociation"></a>
 
 Associates an Account Management Contact with a `ManagedNotificationConfiguration` for AWS User Notifications. For more information about AWS User Notifications, see the [AWS User Notifications User Guide](https://docs.aws.amazon.com/notifications/latest/userguide/what-is-service.html). For more information about Account Management Contacts, see the [AWS Account Management Reference Guide](https://docs.aws.amazon.com/accounts/latest/reference/API_AlternateContact.html).
 

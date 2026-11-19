@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # SubnetMapping
-<a name="API_SubnetMapping"></a>
 
 Information about a subnet mapping.
 

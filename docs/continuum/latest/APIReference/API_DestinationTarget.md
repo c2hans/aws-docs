@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Destin
 ---
 
 # DestinationTarget
-<a name="API_DestinationTarget"></a>
 
 The destination Target.
 

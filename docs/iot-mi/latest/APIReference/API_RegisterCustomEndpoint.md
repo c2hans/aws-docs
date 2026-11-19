@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_RegisterC
 ---
 
 # RegisterCustomEndpoint
-<a name="API_RegisterCustomEndpoint"></a>
 
 Customers can request IoT managed integrations to manage the server trust for them or bring their own external server trusts for the custom domain. Returns an IoT managed integrations endpoint.
 

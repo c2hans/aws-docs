@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudfront_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Add index.html to request URLs without a file name in a CloudFront Functions viewer request event
-<a name="cloudfront_example_cloudfront_functions_url_rewrite_single_page_apps_section"></a>
 
 The following code example shows how to add index.html to request URLs without a file name in a CloudFront Functions viewer request event.
 

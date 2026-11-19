@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_StartDevi
 ---
 
 # StartDeviceDiscovery
-<a name="API_StartDeviceDiscovery"></a>
 
  This API is used to start device discovery for hub-connected and third-party-connected devices. The authentication material (install code) is delivered as a message to the controller instructing it to start the discovery.
 

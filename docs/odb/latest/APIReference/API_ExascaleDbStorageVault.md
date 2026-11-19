@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ExascaleDbSt
 ---
 
 # ExascaleDbStorageVault
-<a name="API_ExascaleDbStorageVault"></a>
 
 Information about an Exascale storage vault.
 

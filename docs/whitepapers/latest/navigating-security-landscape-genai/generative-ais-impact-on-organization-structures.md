@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Generative AI's impact on organization structures
-<a name="generative-ais-impact-on-organization-structures"></a>
 
  The impact of generative AI depends on the current organizational structures. Traditionally, there have been tensions between data science teams and security teams. Data science often needs broad access to data while security strives for a least-privilege approach.
 

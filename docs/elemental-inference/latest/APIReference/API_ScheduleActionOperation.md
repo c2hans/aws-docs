@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # ScheduleActionOperation
-<a name="API_ScheduleActionOperation"></a>
 
 Holds one typed configuration change that a schedule action makes to a feed. Each operation must contain exactly one property.
 

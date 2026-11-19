@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_W
 ---
 
 # WaterAllocation
-<a name="API_WaterAllocation"></a>
 
 Represents a water allocation quantity with its value and unit of measurement.
 

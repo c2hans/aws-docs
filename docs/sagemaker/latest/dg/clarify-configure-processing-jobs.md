@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-configure-pr
 ---
 
 # Fairness, model explainability and bias detection with SageMaker Clarify
-<a name="clarify-configure-processing-jobs"></a>
 
 **Note**
 Amazon SageMaker Clarify is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Clarify, but we do not plan to introduce new features. For more information, see [Clarify availability change](clarify-availability-change.md).

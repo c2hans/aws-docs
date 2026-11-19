@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_edge_D
 ---
 
 # Definition
-<a name="API_edge_Definition"></a>
 
 Information about deployment details based on the deployment type.
 

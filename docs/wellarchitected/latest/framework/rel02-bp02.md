@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel02-b
 ---
 
 # REL02-BP02 Provision redundant connectivity between private networks in the cloud and on-premises environments
-<a name="rel02-bp02"></a>
 
  Workloads in the cloud often depend on systems that stay in a corporate data center or private network. A single connection between the two environments is a single point of failure: if it drops, the dependent services stop communicating. Redundant connectivity uses two or more independent links and traffic paths, so the failure of one link does not sever the connection between environments.
 

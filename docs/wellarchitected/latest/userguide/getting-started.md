@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/getting
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Getting started with AWS Well-Architected Tool
-<a name="getting-started"></a>
 
 To get started using AWS Well-Architected Tool, you first provide the appropriate permissions to the your users, groups, and roles, and activate support for the AWS services you want use with AWS WA Tool. Next, you define and document a workload. You can also save a *milestone* of the current state of a workload.
 

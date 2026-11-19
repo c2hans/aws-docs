@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/dp_da
 ---
 
 # Manage demand plans
-<a name="dp_dashboard"></a>
 
 After the forecast is generated, choose **Demand Planning**, and then choose **Manage Demand Plan**. On the **Demand Planning** page, you can view the overall influence factors used in generating the forecast and the accuracy metrics of the forecast. You can also view the current demand plan.
 

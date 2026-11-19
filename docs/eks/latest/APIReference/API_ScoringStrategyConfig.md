@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ScoringStrat
 ---
 
 # ScoringStrategyConfig
-<a name="API_ScoringStrategyConfig"></a>
 
 The scoring strategy configuration with default value and constraints.
 

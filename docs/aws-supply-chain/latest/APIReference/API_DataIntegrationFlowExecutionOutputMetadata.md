@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowExecutionOutputMetadata
-<a name="API_DataIntegrationFlowExecutionOutputMetadata"></a>
 
 The output metadata of the flow execution.
 

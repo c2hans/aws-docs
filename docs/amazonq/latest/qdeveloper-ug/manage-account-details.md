@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/manage-acco
 ---
 
 # Finding the Start URL for use with Amazon Q Developer
-<a name="manage-account-details"></a>
 
 **Note**
 This section does not apply to personal accounts (Builder IDs).

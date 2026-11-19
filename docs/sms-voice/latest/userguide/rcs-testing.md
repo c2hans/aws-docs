@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-testing.h
 ---
 
 # Testing RCS messages
-<a name="rcs-testing"></a>
 
 Before you launch RCS messaging in production, you can test your integration using a testing agent. The testing agent is an RCS for Business ID that is created when you submit a testing registration for your AWS RCS Agent. It provides full API access identical to production, but restricts message delivery to registered test devices only. No carrier approval is needed for testing.
 

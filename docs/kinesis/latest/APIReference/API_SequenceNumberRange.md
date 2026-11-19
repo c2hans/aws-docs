@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Sequence
 ---
 
 # SequenceNumberRange
-<a name="API_SequenceNumberRange"></a>
 
 The range of possible sequence numbers for the shard.
 

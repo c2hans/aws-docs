@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_GetMa
 ---
 
 # GetManagedEndpointSessionCredentials
-<a name="API_GetManagedEndpointSessionCredentials"></a>
 
 Generate a session token to connect to a managed endpoint.
 

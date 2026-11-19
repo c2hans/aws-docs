@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_DeletePo
 ---
 
 # DeletePolicy
-<a name="API_DeletePolicy"></a>
 
 Permanently deletes an AWS Firewall Manager policy.
 

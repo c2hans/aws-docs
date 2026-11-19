@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Availabl
 ---
 
 # AvailableFilter
-<a name="API_AvailableFilter"></a>
 
 A filter that is available for use with the metric. Part of an AvailableFilterList that describes the filters that are available for use with the metric.
 

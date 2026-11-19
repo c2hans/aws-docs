@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # MasterUserOptions
-<a name="API_MasterUserOptions"></a>
 
 Credentials for the master user for a domain.
 

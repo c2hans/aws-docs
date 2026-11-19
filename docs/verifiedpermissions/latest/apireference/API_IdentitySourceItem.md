@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # IdentitySourceItem
-<a name="API_IdentitySourceItem"></a>
 
 A structure that defines an identity source.
 

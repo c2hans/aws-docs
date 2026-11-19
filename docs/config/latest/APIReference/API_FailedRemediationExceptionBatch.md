@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_FailedRem
 ---
 
 # FailedRemediationExceptionBatch
-<a name="API_FailedRemediationExceptionBatch"></a>
 
 List of each of the failed remediation exceptions with specific reasons.
 

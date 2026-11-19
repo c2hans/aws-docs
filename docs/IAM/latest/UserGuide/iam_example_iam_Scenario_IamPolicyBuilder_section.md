@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Sce
 ---
 
 # Work with the IAM Policy Builder API using an AWS SDK
-<a name="iam_example_iam_Scenario_IamPolicyBuilder_section"></a>
 
 The following code example shows how to:
 + Create IAM policies by using the object-oriented API.

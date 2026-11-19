@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/agreement-t
 ---
 
 # Agreement types
-<a name="agreement-types"></a>
 
 AWS Marketplace provides the following types of agreements:
 + **Public offer agreements** – The standard, non-negotiated legal agreements buyers accept when purchasing publicly listed products from sellers on AWS Marketplace.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Types of ASP.NET web services
-<a name="types"></a>
 
 When you're planning to modernize your legacy [ASP.NET ](https://asp.net/)web services on AWS, you can generally group these services in two categories:
 + REST-based ASP.NET web services. These are built using either ASP.NET Web API (RESTful) or the ASP.NET Model-View-Controller (MVC) pattern.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Up
 ---
 
 # UpdateVirtualInterfaceAttributes
-<a name="API_UpdateVirtualInterfaceAttributes"></a>
 
 Updates the specified attributes of the specified virtual private interface.
 

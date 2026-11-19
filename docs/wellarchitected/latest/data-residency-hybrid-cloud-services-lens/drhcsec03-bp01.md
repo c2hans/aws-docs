@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCSEC03-BP01 Implement controls that enhance your digital sovereignty governance posture
-<a name="drhcsec03-bp01"></a>
 
  Consider implementing controls which are not data residency specific as these controls help enable a defense in depth approach to security and are often easy to enable without requiring customization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ListServiceLevelObjectiveExclusionWindows
-<a name="API_ListServiceLevelObjectiveExclusionWindows"></a>
 
 Retrieves all exclusion windows configured for a specific SLO.
 

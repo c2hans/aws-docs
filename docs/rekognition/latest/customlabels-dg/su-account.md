@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/su-ac
 ---
 
 # Step 1: Create an AWS account
-<a name="su-account"></a>
 
 In this step, you create an AWS account, create an administrative user, and learn about granting programmatic access to the AWS SDK.
 

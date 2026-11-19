@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/extensions-js.ht
 ---
 
 # Extensions
-<a name="extensions-js"></a>
 
 `extensions` contains a set of methods to make additional actions within your resolvers.
 

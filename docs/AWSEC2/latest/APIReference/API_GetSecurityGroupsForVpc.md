@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSecuri
 ---
 
 # GetSecurityGroupsForVpc
-<a name="API_GetSecurityGroupsForVpc"></a>
 
 Gets security groups that can be associated by the AWS account making the request with network interfaces in the specified VPC.
 

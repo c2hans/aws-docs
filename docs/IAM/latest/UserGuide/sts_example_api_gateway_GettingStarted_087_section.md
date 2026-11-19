@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_api_gat
 ---
 
 # Create a rest API with function proxy integration
-<a name="sts_example_api_gateway_GettingStarted_087_section"></a>
 
 The following code example shows how to:
 + Create an IAM role for Lambda execution

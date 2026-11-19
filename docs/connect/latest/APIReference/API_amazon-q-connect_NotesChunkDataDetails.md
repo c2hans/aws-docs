@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # NotesChunkDataDetails
-<a name="API_amazon-q-connect_NotesChunkDataDetails"></a>
 
 Details about notes chunk data.
 

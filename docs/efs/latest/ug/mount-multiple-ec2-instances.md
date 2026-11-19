@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/mount-multiple-ec2-instanc
 ---
 
 # Mounting EFS to multiple EC2 instances
-<a name="mount-multiple-ec2-instances"></a>
 
 You can mount EFS file systems to multiple Amazon EC2 instances remotely and securely without having to log in to the instances by using the AWS Systems Manager Run Command. For more information about AWS Systems Manager Run Command, see [AWS Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html) in the *AWS Systems Manager User Guide*. The following prerequisites are required before mounting EFS file systems using this method:
 

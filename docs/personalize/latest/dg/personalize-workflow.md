@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/personalize-workfl
 ---
 
 # Amazon Personalize workflow details
-<a name="personalize-workflow"></a>
 
 The Amazon Personalize workflow is as follows. For a checklist that provides lists of Amazon Personalize features, requirements, and data guidance, see the [Readiness checklist](readiness-checklist.md).
 

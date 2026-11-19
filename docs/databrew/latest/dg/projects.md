@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/projects.html
 ---
 
 # Creating and using AWS Glue DataBrew projects
-<a name="projects"></a>
 
 In AWS Glue DataBrew, a *project* is the centerpiece of your data analysis and transformation efforts.
 

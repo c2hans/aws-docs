@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Configur
 ---
 
 # ConfigurationSettingsDescription
-<a name="API_ConfigurationSettingsDescription"></a>
 
 Describes the settings for a configuration set.
 

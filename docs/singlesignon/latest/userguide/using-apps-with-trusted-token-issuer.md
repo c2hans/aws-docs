@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/using-apps
 ---
 
 # Using applications with a trusted token issuer
-<a name="using-apps-with-trusted-token-issuer"></a>
 
 Trusted token issuers enable you to use trusted identity propagation with applications that authenticate outside of AWS. With trusted token issuers, you can authorize these applications to make requests on behalf of their users to access AWS managed applications.
 

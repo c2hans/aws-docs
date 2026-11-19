@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-queues.html
 ---
 
 # ENA queues
-<a name="ena-queues"></a>
 
 Elastic Network Adapter (ENA) queues handle packet processing for your Amazon EC2 network interfaces. Each instance type has a set number of ENA queues shared across its Elastic Network Interfaces (ENIs). By default, each ENI gets a fixed queue count based on the instance type and size.
 

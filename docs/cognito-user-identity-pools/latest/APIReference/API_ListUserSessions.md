@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ListUserSessions
-<a name="API_ListUserSessions"></a>
 
 Lists the active sessions for the currently signed-in user. Amazon Cognito authorizes this operation with the user's access token and returns all of the user's active sessions across every app client in the user pool, including both token sessions and SSO sessions. The `IsCurrentSession` field identifies the session that the calling access token belongs to. The results are eventually consistent, and new sessions are typically included within a few seconds.
 

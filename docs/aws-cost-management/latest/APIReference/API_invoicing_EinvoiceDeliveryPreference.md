@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EinvoiceDeliveryPreference
-<a name="API_invoicing_EinvoiceDeliveryPreference"></a>
 
 Specifies the preferences for e-invoice delivery, including document types, attachment types, and customization settings.
 

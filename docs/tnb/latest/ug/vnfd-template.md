@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/vnfd-template.html
 ---
 
 # VNFD template
-<a name="vnfd-template"></a>
 
 Defines a virtual network function descriptor (VNFD) template.
 

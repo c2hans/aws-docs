@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/assign-voicecon.html
 ---
 
 # Assigning and unassigning Amazon Chime SDK Voice Connector phone numbers
-<a name="assign-voicecon"></a>
 
 You can assign and unassign phone numbers to and from an Amazon Chime SDK Voice Connector.
 

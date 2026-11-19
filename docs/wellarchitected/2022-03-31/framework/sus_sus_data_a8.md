@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS04-BP07 Minimize data movement across networks
-<a name="sus_sus_data_a8"></a>
 
  Use shared storage and access data from regional data stores to minimize the total networking resources required to support data movement for your workload.
 

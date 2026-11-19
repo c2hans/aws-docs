@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateImp
 ---
 
 # CreateImportJob
-<a name="API_CreateImportJob"></a>
 
 Creates an import job for a data destination.
 

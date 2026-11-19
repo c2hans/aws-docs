@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateTest
 ---
 
 # CreateTestSetDiscrepancyReport
-<a name="API_CreateTestSetDiscrepancyReport"></a>
 
 Create a report that describes the differences between the bot and the test set.
 

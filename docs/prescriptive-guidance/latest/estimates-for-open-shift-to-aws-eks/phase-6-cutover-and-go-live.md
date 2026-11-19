@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Phase 6: Cutover and go-live
-<a name="phase-6-cutover-and-go-live"></a>
 
 **Considering migration** **scope of 1 cluster \| 100\+ applications. The following table represents the cutover and go-live effort.**
 

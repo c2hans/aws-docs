@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # SageMaker HyperPod cluster resiliency
-<a name="sagemaker-hyperpod-resiliency-slurm"></a>
 
 SageMaker HyperPod through Slurm orchestration provides the following cluster resiliency features.
 

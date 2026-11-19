@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Create a web application that sends and retrieves messages by using Amazon SQS
-<a name="example_cross_SQSMessageApp_section"></a>
 
 The following code examples show how to create a messaging application by using Amazon SQS.
 

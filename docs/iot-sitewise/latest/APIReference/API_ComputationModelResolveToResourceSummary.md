@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputationModelResolveToResourceSummary
-<a name="API_ComputationModelResolveToResourceSummary"></a>
 
 A summary of the resource that a computation model resolves to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Attac
 ---
 
 # AttachmentDetails
-<a name="API_AttachmentDetails"></a>
 
 The file name and ID of an attachment to a case communication. You can use the ID to retrieve the attachment with the [DescribeAttachment](API_DescribeAttachment.md) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Covera
 ---
 
 # CoverageSortCriteria
-<a name="API_CoverageSortCriteria"></a>
 
 Information about the sorting criteria used in the coverage statistics.
 

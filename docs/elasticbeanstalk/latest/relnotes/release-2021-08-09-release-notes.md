@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk added support for Capacity Rebalancing for Amazon EC2 Spot Instances on August 9, 2021
-<a name="release-2021-08-09-release-notes"></a>
 
 AWS Elastic Beanstalk added support for Capacity Rebalancing for Amazon EC2 Spot Instances.
 

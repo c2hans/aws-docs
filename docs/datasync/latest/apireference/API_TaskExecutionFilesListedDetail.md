@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskExe
 ---
 
 # TaskExecutionFilesListedDetail
-<a name="API_TaskExecutionFilesListedDetail"></a>
 
 The number of files or objects that DataSync finds at your locations.
 

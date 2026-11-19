@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-e
 ---
 
 # View automation events details
-<a name="automation-events-view"></a>
 
 Select an automation event ID to view more details and step history on **Event details** page.
 

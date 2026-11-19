@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/troubleshoot-entitl
 ---
 
 # Troubleshoot Windows Server entitlements
-<a name="troubleshoot-entitlements"></a>
 
 A Windows Server entitlement in an Amazon Elastic VMware Service environment might fail to create, enter the `AT_RISK` status, or be removed. This page applies to both deployment modes. For how entitlements work, see [Windows Server entitlements](entitlements.md).
 

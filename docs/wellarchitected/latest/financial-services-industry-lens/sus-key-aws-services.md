@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Key AWS services
-<a name="sus-key-aws-services"></a>
 
  AWS services promoting sustainability practices include:
 +  Amazon S3, Amazon Glacier, Deep Archive, Amazon S3 Intelligent-Tiering, One Zone – [Tiered storage](https://aws.amazon.com/s3/storage-classes/) classes

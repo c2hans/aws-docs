@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from Couchbase Server to Couchbase Capella on AWS
-<a name="migrate-from-couchbase-server-to-couchbase-capella-on-aws"></a>
 
 *Battulga Purevragchaa and Saurabh Shanbhag, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs.html
 ---
 
 # Query Amazon VPC flow logs
-<a name="vpc-flow-logs"></a>
 
 Amazon Virtual Private Cloud flow logs capture information about the IP traffic going to and from network interfaces in a VPC. Use the logs to investigate network traffic patterns and identify threats and risks across your VPC network.
 

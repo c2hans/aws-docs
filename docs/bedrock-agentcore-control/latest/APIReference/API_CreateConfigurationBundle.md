@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateConfigurationBundle
-<a name="API_CreateConfigurationBundle"></a>
 
 Creates a new configuration bundle resource. A configuration bundle stores versioned component configurations for agent evaluation workflows.
 

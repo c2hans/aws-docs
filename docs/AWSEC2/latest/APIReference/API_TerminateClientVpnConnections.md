@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Terminate
 ---
 
 # TerminateClientVpnConnections
-<a name="API_TerminateClientVpnConnections"></a>
 
 Terminates active Client VPN endpoint connections. This action can be used to terminate a specific client connection, or up to five connections established by a specific user.
 

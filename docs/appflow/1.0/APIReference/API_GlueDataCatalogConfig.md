@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_GlueDataCat
 ---
 
 # GlueDataCatalogConfig
-<a name="API_GlueDataCatalogConfig"></a>
 
 Specifies the configuration that Amazon AppFlow uses when it catalogs your data with the AWS Glue Data Catalog. When Amazon AppFlow catalogs your data, it stores metadata in Data Catalog tables. This metadata represents the data that's transferred by the flow that you configure with these settings.
 

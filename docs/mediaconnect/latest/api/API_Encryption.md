@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Encryption.h
 ---
 
 # Encryption
-<a name="API_Encryption"></a>
 
  Encryption information.
 

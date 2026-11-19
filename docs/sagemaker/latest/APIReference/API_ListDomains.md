@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListDo
 ---
 
 # ListDomains
-<a name="API_ListDomains"></a>
 
 Lists the domains.
 

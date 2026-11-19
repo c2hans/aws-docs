@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/launchdarkly-support.html
 ---
 
 # AWS Glue support for LaunchDarkly
-<a name="launchdarkly-support"></a>
 
 AWS Glue supports LaunchDarkly as follows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchGetFr
 ---
 
 # BatchGetFreeTrialInfo
-<a name="API_BatchGetFreeTrialInfo"></a>
 
 Gets free trial status for multiple AWS accounts.
 

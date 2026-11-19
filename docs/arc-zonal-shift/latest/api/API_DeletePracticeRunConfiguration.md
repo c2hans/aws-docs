@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_DeletePra
 ---
 
 # DeletePracticeRunConfiguration
-<a name="API_DeletePracticeRunConfiguration"></a>
 
 Deletes the practice run configuration for a resource. Before you can delete a practice run configuration for a resource., you must disable zonal autoshift for the resource. Practice runs must be configured for zonal autoshift to be enabled.
 

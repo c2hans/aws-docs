@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/uops-gs-expectati
 ---
 
 # Unified Operations Getting started: AWS expectations from you
-<a name="uops-gs-expectations-customers"></a>
 
 For Unified Operations to deliver maximum value, we recommend the following collaborative approach:
 

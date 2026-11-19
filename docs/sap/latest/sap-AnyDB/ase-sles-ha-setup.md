@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/ase-sles-ha-setup.h
 ---
 
 # SAP ASE and cluster setup
-<a name="ase-sles-ha-setup"></a>
 
 This section covers the following topics.
 

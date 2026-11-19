@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/in-aggregatio
 ---
 
 # $in
-<a name="in-aggregation"></a>
 
 The `$in` aggregation operator checks if a specified value exists within an array. It returns `true` if the value is found in the array, and `false` otherwise.
 

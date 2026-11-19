@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ml-validate-gpu-nod
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Validate Amazon EKS automatic node repair for GPUs with XID error injection
-<a name="ml-validate-gpu-node-repair"></a>
 
 This topic shows how to validate that Amazon EKS automatic node repair is working as expected. The steps on this page simulate NVIDIA XID errors on Amazon EKS GPU nodes, verify that the EKS node monitoring agent sets the `AcceleratedHardwareReady` node condition to `False`, and that automatic node repair replaces or reboots the node accordingly. The same procedure can be used to confirm that non-critical XID errors are reported as Kubernetes events without triggering repair, which validates event monitoring and alerting pipelines.
 

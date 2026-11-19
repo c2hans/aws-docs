@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Goal
 ---
 
 # GoalContent
-<a name="API_GoalContent"></a>
 
 Content of a goal
 

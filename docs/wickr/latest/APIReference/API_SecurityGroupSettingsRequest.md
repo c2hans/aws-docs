@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_SecurityGr
 ---
 
 # SecurityGroupSettingsRequest
-<a name="API_SecurityGroupSettingsRequest"></a>
 
 Contains the security group configuration settings that can be specified when creating or updating a security group. This is a subset of SecurityGroupSettings containing only the modifiable federation and security settings.
 

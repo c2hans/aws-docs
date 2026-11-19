@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Se
 ---
 
 # ServerSideEncryptionConfiguration
-<a name="API_agent_ServerSideEncryptionConfiguration"></a>
 
 Contains the configuration for server-side encryption for your managed knowledge base.
 

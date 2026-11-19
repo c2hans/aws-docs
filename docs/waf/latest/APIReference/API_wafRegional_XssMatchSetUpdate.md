@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # XssMatchSetUpdate
-<a name="API_wafRegional_XssMatchSetUpdate"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -16,7 +15,7 @@ Specifies the part of a web request that you want to inspect for cross-site scri
 <a name="API_wafRegional_XssMatchSetUpdate_Contents"></a>
 
  ** Action **   <a name="WAF-Type-wafRegional_XssMatchSetUpdate-Action"></a>
-Specify `INSERT` to add an [XssMatchSetUpdate](#API_wafRegional_XssMatchSetUpdate) to an [XssMatchSet](API_wafRegional_XssMatchSet.md). Use `DELETE` to remove an `XssMatchSetUpdate` from an `XssMatchSet`.
+Specify `INSERT` to add an [XssMatchSetUpdate](API_wafRegional_XssMatchSetUpdate.md) to an [XssMatchSet](API_wafRegional_XssMatchSet.md). Use `DELETE` to remove an `XssMatchSetUpdate` from an `XssMatchSet`.
 Type: String
 Valid Values: `INSERT | DELETE`
 Required: Yes

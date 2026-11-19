@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/doc-histo
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 The following table describes some of the major updates and new features for the AWS Security Agents User Guide.
 
@@ -39,4 +38,4 @@ The following table describes some of the major updates and new features for the
 | [AWS managed policy updates](https://docs.aws.amazon.com/securityagent/latest/userguide/security-iam-awsmanpol.html) | Updated SecurityAgentWebAppAPIPolicy to allow customers to delete design reviews. | January 28, 2026 |
 | [AWS managed policy updates](https://docs.aws.amazon.com/securityagent/latest/userguide/security-iam-awsmanpol.html) | Updated SecurityAgentWebAppAPIPolicy to allow customers to start automated code remediation for security findings. | January 20, 2026 |
 | [AWS managed policy updates](https://docs.aws.amazon.com/securityagent/latest/userguide/security-iam-awsmanpol.html) | Updated to SecurityAgentWebAppAPIPolicy to allow customers to view images in the console. | December 5, 2025 |
-| [AWS Security Agents initial release](#doc-history) | Initial documentation for service launch | December 2, 2025 |
+| [AWS Security Agents initial release](doc-history.md) | Initial documentation for service launch | December 2, 2025 |

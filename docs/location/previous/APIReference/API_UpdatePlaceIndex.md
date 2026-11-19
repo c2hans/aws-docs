@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Updat
 ---
 
 # UpdatePlaceIndex
-<a name="API_UpdatePlaceIndex"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend you upgrade to the Places API V2 unless you require Grab data.

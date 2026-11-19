@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisIssueDetected
-<a name="API_RealTimeContactAnalysisIssueDetected"></a>
 
 Potential issues that are detected based on an artificial intelligence analysis of each turn in the conversation.
 

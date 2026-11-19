@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeBill
 ---
 
 # DescribeBillingGroup
-<a name="API_DescribeBillingGroup"></a>
 
 Returns information about a billing group.
 

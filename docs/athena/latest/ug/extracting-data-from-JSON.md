@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/extracting-data-from-JS
 ---
 
 # Extract JSON data from strings
-<a name="extracting-data-from-JSON"></a>
 
 You may have source data containing JSON-encoded strings that you do not necessarily want to deserialize into a table in Athena. In this case, you can still run SQL operations on this data, using the JSON functions available in Presto.
 

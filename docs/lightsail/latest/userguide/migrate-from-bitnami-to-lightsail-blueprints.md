@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/migrate-from-
 ---
 
 # Migrating from Bitnami blueprints to Lightsail blueprints
-<a name="migrate-from-bitnami-to-lightsail-blueprints"></a>
 
 Amazon Lightsail offers blueprints packaged by Lightsail for several popular application stacks. Lightsail blueprints offer default security settings, including IMDSv2 enforced by default and port 22 restricted on launch. This guide walks you through migrating an existing Lightsail instance running a Bitnami blueprint to a new Lightsail instance running the equivalent Lightsail blueprint.
 

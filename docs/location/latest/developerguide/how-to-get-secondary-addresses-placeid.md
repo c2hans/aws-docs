@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to get secondary addresses of a Place ID
-<a name="how-to-get-secondary-addresses-placeid"></a>
 
 **Note**
  For customers in `ap-southeast-1` and `ap-southeast-5`, this use case is not supported, as the `SecondaryAddresses` field is not available. Refer to the [GetPlace API Reference](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_GetPlace.html) for details.

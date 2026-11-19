@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-show-c
 ---
 
 # SHOW CREATE TABLE
-<a name="querying-iceberg-show-create-table"></a>
 
 Displays a `CREATE TABLE` DDL statement that can be used to recreate the Iceberg table in Athena. If Athena cannot reproduce the table structure (for example, because custom table properties are specified in the table), an `UNSUPPORTED` error is thrown.
 

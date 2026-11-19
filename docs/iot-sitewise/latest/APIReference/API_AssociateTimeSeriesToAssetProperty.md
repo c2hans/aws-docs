@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssociateTimeSeriesToAssetProperty
-<a name="API_AssociateTimeSeriesToAssetProperty"></a>
 
 Associates a time series (data stream) with an asset property.
 

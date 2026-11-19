@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/design-
 ---
 
 # Framework design principles
-<a name="design-principles"></a>
 
  The Well-Architected Framework identifies a set of general design principles to facilitate good design in the cloud:
 +  **Stop guessing your capacity needs**: If you make a poor capacity decision when deploying a workload, you might end up sitting on expensive idle resources or dealing with the performance implications of limited capacity. With cloud computing, these problems can go away. You can use as much or as little capacity as you need, and scale in and out automatically.

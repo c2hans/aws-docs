@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesStringFilter
-<a name="API_ResourcesStringFilter"></a>
 
 Enables filtering of AWS resources based on string field values.
 

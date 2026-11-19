@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateVPCEConfiguration
-<a name="API_CreateVPCEConfiguration"></a>
 
 Creates a configuration record in Device Farm for your Amazon Virtual Private Cloud (VPC) endpoint.
 

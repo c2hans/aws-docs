@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MitigationAc
 ---
 
 # MitigationActionIdentifier
-<a name="API_MitigationActionIdentifier"></a>
 
 Information that identifies a mitigation action. This information is returned by ListMitigationActions.
 

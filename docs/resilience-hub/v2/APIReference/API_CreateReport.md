@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Creat
 ---
 
 # CreateReport
-<a name="API_CreateReport"></a>
 
 On-demand report creation. Idempotent — duplicate requests with same clientToken return existing result.
 

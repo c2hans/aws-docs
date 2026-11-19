@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-atp-rg-usi
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Adding the ATP managed rule group to your protection pack (web ACL)
-<a name="waf-atp-rg-using"></a>
 
 This section explains how to add and configure the `AWSManagedRulesATPRuleSet` rule group.
 

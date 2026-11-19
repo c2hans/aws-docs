@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed
 ---
 
 # Work with sessions, events, and results
-<a name="bedrock-managed-agents-openai-sessions"></a>
 
 A BMA session keeps conversation context across turns. Create one session for a related sequence of tasks, submit messages to it, and delete it when the application no longer needs it.
 

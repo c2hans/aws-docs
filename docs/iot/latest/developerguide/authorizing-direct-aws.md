@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-di
 ---
 
 # Authorizing direct calls to AWS services using AWS IoT Core credential provider
-<a name="authorizing-direct-aws"></a>
 
 Devices can use X.509 certificates to connect to AWS IoT Core using TLS mutual authentication protocols. Other AWS services do not support certificate-based authentication, but they can be called using AWS credentials in [AWS Signature Version 4 format](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html). The [Signature Version 4 algorithm](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) normally requires the caller to have an access key ID and a secret access key. AWS IoT Core has a credentials provider that allows you to use the built-in [X.509 certificate](x509-client-certs.html) as the unique device identity to authenticate AWS requests. This eliminates the need to store an access key ID and a secret access key on your device.
 

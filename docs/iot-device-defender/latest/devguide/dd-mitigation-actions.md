@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-m
 ---
 
 # Mitigation actions
-<a name="dd-mitigation-actions"></a>
 
 You can use AWS IoT Device Defender to take actions to mitigate issues that were found in an Audit finding or Detect alarm.
 

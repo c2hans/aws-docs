@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data_
 ---
 
 # Data lake dashboard
-<a name="data_ingestion"></a>
 
 You can use AWS Supply Chain data lake to ingest your data from various data sources. For information about supported data sources, see [Data lake](data-connections.md).
 

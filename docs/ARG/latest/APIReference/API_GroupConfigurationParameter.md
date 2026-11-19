@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GroupConfigu
 ---
 
 # GroupConfigurationParameter
-<a name="API_GroupConfigurationParameter"></a>
 
 A parameter for a group configuration item. For details about group service configuration syntax, see [Service configurations for resource groups](https://docs.aws.amazon.com/ARG/latest/APIReference/about-slg.html).
 

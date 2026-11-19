@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPartnerCentralAccountManagementServiceRolePolicy
-<a name="AWSPartnerCentralAccountManagementServiceRolePolicy"></a>
 
 **Description**: Allows AWS Partner Central to access and manage your partner account resources, including partner account details and business plans, on your behalf.
 

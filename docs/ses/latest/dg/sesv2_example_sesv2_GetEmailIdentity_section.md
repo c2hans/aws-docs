@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sesv2_example_sesv2_GetEma
 ---
 
 # Use `GetEmailIdentity` with an AWS SDK
-<a name="sesv2_example_sesv2_GetEmailIdentity_section"></a>
 
 The following code examples show how to use `GetEmailIdentity`.
 

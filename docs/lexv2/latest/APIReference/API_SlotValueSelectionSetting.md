@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotValueS
 ---
 
 # SlotValueSelectionSetting
-<a name="API_SlotValueSelectionSetting"></a>
 
 Contains settings used by Amazon Lex to select a slot value.
 

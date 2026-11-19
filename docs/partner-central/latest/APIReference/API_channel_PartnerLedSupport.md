@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # PartnerLedSupport
-<a name="API_channel_PartnerLedSupport"></a>
 
 Configuration for partner-led support plans.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeInst
 ---
 
 # DescribeInstanceProfiles
-<a name="API_DescribeInstanceProfiles"></a>
 
 Returns a paginated list of instance profiles for your account in the current region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-run.htm
 ---
 
 # Run the Amazon Kinesis Video Streams Edge Agent as a native process
-<a name="gs-run"></a>
 
 Set up the Amazon Kinesis Video Streams Edge Agent as a systemd service. This is an optional step.
 

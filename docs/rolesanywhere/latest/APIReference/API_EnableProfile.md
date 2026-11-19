@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_En
 ---
 
 # EnableProfile
-<a name="API_EnableProfile"></a>
 
 Enables temporary credential requests for a profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailContextualGroundingFilter
-<a name="API_runtime_GuardrailContextualGroundingFilter"></a>
 
 The details for the guardrails contextual grounding filter.
 

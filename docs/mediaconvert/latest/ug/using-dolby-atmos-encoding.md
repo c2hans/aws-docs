@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/using-dolby-atmos
 ---
 
 # Configuring Dolby Atmos encoding
-<a name="using-dolby-atmos-encoding"></a>
 
 AWS Elemental MediaConvert can encode Dolby Digital Plus with Atmos channel-based, immersive audio, Audio Definition Model Broadcast WAV files, or Dolby Atmos Master File.
 

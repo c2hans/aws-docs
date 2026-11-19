@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentFir
 ---
 
 # AgentFirst
-<a name="API_AgentFirst"></a>
 
 Information about agent-first outbound strategy configuration.
 

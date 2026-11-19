@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetEnvi
 ---
 
 # GetEnvironmentAction
-<a name="API_GetEnvironmentAction"></a>
 
 Gets the specified environment action.
 

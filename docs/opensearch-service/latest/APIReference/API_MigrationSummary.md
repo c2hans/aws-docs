@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # MigrationSummary
-<a name="API_MigrationSummary"></a>
 
 A summary of a migration job, including its status and progress.
 

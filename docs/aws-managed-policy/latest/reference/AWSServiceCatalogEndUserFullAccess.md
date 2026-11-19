@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceCatalogEndUserFullAccess
-<a name="AWSServiceCatalogEndUserFullAccess"></a>
 
 **Description**: Provides full access to service catalog enduser capabilities
 

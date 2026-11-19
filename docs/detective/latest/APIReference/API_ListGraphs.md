@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_ListGr
 ---
 
 # ListGraphs
-<a name="API_ListGraphs"></a>
 
 Returns the list of behavior graphs that the calling account is an administrator account of. This operation can only be called by an administrator account.
 

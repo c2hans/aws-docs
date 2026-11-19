@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/volumes.
 ---
 
 # Persistent storage for service-managed fleets
-<a name="volumes"></a>
 
 AWS Deadline Cloud (Deadline Cloud) persistent storage provides dedicated Amazon Elastic Block Store (Amazon EBS) gp3 volumes, separate from the root boot volume, for service-managed fleet (SMF) workers. These volumes preserve data across worker lifecycle events. With persistent storage, conda package installations, application caches, and asset files remain available when workers are replaced during routine maintenance or scaling operations.
 

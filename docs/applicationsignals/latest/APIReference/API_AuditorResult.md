@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # AuditorResult
-<a name="API_AuditorResult"></a>
 
 A structure that contains the result of an automated audit analysis, including the auditor name, description of findings, additional data, and severity level.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteAv
 ---
 
 # RouteAvoidanceZoneCategory
-<a name="API_RouteAvoidanceZoneCategory"></a>
 
  Zone categories to be avoided. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
 

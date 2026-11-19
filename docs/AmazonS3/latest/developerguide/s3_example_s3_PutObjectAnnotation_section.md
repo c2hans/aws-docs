@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Use `PutObjectAnnotation` with an AWS SDK
-<a name="s3_example_s3_PutObjectAnnotation_section"></a>
 
 The following code example shows how to use `PutObjectAnnotation`.
 

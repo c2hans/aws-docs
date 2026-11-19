@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CustomD
 ---
 
 # CustomDataIdentifiersDetections
-<a name="API_CustomDataIdentifiersDetections"></a>
 
 The list of detected instances of sensitive data.
 

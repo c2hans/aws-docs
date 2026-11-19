@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/install-acm.html
 ---
 
 # Install ACM for Nitro Enclaves
-<a name="install-acm"></a>
 
 Use the following procedure to install and configure ACM for Nitro Enclaves.
 

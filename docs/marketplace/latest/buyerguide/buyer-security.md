@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-secu
 ---
 
 # Security on AWS Marketplace
-<a name="buyer-security"></a>
 
  We list software from high-quality sellers, and actively work to maintain the quality of our selection. Because every customer is different, our goal is to provide enough information about the products listed on AWS Marketplace so that customers can make good purchasing decisions.
 

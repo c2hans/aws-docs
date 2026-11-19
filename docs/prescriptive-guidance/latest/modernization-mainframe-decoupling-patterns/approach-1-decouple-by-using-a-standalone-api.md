@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Approach 1: Decouple by using a standalone API
-<a name="approach-1-decouple-by-using-a-standalone-api"></a>
 
 When you use this approach, you instantiate a standalone API by converting the shared COBOL program AB.1 into a Java program. To minimize refactoring efforts, you can use automated refactoring tools provided by AWS Partners (see the [Resources](resources.md) section) to generate network APIs for the program. Some tools can automatically generate a facade layer from the selected program by using an integrated development environment (IDE) such as Eclipse.
 

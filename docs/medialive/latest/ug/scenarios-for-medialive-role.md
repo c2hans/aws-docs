@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/scenarios-for-medial
 ---
 
 # Options for implementing the trusted entity
-<a name="scenarios-for-medialive-role"></a>
 
 There are two options for setting up the trusted entity role in AWS Elemental MediaLive: a simple option and a complex option.
 

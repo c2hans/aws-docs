@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_EventS
 ---
 
 # EventSubscription
-<a name="API_EventSubscription"></a>
 
 Contains the results of a successful invocation of the `DescribeEventSubscriptions` action.
 

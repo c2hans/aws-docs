@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/paddle-support.html
 ---
 
 # AWS Glue support for Paddle
-<a name="paddle-support"></a>
 
 AWS Glue supports Paddle as follows:
 

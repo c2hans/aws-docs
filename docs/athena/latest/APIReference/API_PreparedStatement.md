@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_PreparedS
 ---
 
 # PreparedStatement
-<a name="API_PreparedStatement"></a>
 
 A prepared SQL statement for use with Athena.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_A
 ---
 
 # ActivityScheduledEventDetails
-<a name="API_ActivityScheduledEventDetails"></a>
 
 Contains details about an activity scheduled during an execution.
 

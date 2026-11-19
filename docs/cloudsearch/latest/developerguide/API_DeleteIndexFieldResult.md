@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DeleteIndexFieldResult
-<a name="API_DeleteIndexFieldResult"></a>
 
 ## Description
 <a name="API_DeleteIndexFieldResult_Description"></a>

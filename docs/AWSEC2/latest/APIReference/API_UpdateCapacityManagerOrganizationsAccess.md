@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UpdateCap
 ---
 
 # UpdateCapacityManagerOrganizationsAccess
-<a name="API_UpdateCapacityManagerOrganizationsAccess"></a>
 
  Updates the Organizations access setting for EC2 Capacity Manager. This controls whether Capacity Manager can aggregate data from all accounts in your AWS Organization or only from the current account.
 

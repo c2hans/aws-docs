@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting in the application studio
-<a name="troubleshooting-building"></a>
 
 This topic contains troubleshooting and debugging guidance for issues when building applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Resum
 ---
 
 # ResumeBatchLoadTask
-<a name="API_ResumeBatchLoadTask"></a>
 
 ## Request Syntax
 <a name="API_ResumeBatchLoadTask_RequestSyntax"></a>

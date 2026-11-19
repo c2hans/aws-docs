@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/role-and-remember-ar
 ---
 
 # IAM role and ARN
-<a name="role-and-remember-arn"></a>
 
 This section describes how to complete the **IAM role** section in the **General info** section of the **Channel and input details** pane.
 

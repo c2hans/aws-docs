@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/create-iot-res
 ---
 
 # Create AWS IoT resources
-<a name="create-iot-resources"></a>
 
 In this tutorial, you'll create the AWS IoT resources that a device requires to connect to AWS IoT Core and exchange messages.
 

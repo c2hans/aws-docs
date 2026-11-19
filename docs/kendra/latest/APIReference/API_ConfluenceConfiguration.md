@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Confluenc
 ---
 
 # ConfluenceConfiguration
-<a name="API_ConfluenceConfiguration"></a>
 
 Provides the configuration information to connect to Confluence as your data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetDiskSnapshot
-<a name="API_GetDiskSnapshot"></a>
 
 Returns information about a specific block storage disk snapshot.
 

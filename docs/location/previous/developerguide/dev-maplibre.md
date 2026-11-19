@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/dev-map
 ---
 
 # Use MapLibre tools and libraries with Amazon Location
-<a name="dev-maplibre"></a>
 
 One of the important tools for creating interactive applications with Amazon Location is MapLibre. [MapLibre](https://maplibre.org/) is primarily a rendering engine for displaying maps in a web or mobile application. However, it also includes support for plug-ins, and provides functionality for working with other aspects of Amazon Location. The following describes tools that you can use, based on the area of location that you want to work with.
 

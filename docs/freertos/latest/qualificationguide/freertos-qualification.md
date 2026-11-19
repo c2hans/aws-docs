@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/freer
 ---
 
 # Qualifying your board
-<a name="freertos-qualification"></a>
 
 ## Prerequisites
 <a name="prerequistes-qualification"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/interrupt-agen
 ---
 
 # Flow block in Connect Customer: Interrupt agent
-<a name="interrupt-agent"></a>
 
 This topic defines the flow block for routing a contact to a specific agent, overriding their normal routing configuration.
 

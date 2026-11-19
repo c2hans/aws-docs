@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MemoryMiB
 ---
 
 # MemoryMiBRequest
-<a name="API_MemoryMiBRequest"></a>
 
 The minimum and maximum amount of memory, in MiB.
 

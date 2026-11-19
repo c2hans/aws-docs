@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_St
 ---
 
 # StopExperimentRun
-<a name="API_StopExperimentRun"></a>
 
 Stops a running experiment. Stopping an experiment run ends audience exposure and returns users to the currently deployed feature flag configuration.
 

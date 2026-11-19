@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Creat
 ---
 
 # CreateImageBuilderStreamingURL
-<a name="API_CreateImageBuilderStreamingURL"></a>
 
 Creates a URL to start an image builder streaming session.
 
@@ -59,7 +58,6 @@ Type: Timestamp
  ** [StreamingURL](#API_CreateImageBuilderStreamingURL_ResponseSyntax) **   <a name="WorkSpacesApplications-CreateImageBuilderStreamingURL-response-StreamingURL"></a>
 The URL to start the WorkSpaces Applications streaming session.
 Type: String
-Length Constraints: Minimum length of 1.
 
 ## Errors
 <a name="API_CreateImageBuilderStreamingURL_Errors"></a>

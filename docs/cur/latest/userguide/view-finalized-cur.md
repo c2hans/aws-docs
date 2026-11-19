@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/view-finalized-cur.
 ---
 
 # Viewing your finalized report
-<a name="view-finalized-cur"></a>
 
 After issuing your invoice at the end of the month, AWS finalizes your report’s usage charges. To determine if a line item on your report is final, review the **bill/InvoiceId** column. If the line item is final, then the **bill/InvoiceId** column is populated with an AWS invoice ID. If the line item is not yet final, then the **bill/InvoiceId** column is blank.
 

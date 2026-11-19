@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # SsmAutomation
-<a name="API_SsmAutomation"></a>
 
 Details about the Systems Manager automation document that will be used as a runbook during an incident.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Test runs and report
-<a name="next-gen-resilience-testing-runs-and-report"></a>
 
 **Test runs**
 

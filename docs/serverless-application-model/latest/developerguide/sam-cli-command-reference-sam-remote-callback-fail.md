@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # sam remote callback fail
-<a name="sam-cli-command-reference-sam-remote-callback-fail"></a>
 
 Send a callback failure to a remote durable function execution.
 

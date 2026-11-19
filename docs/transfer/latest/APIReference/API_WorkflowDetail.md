@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Workflo
 ---
 
 # WorkflowDetail
-<a name="API_WorkflowDetail"></a>
 
 Specifies the workflow ID for the workflow to assign and the execution role that's used for executing the workflow.
 

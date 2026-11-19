@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-planned-lif
 ---
 
 # AWS Health Planned lifecycle events
-<a name="batch-planned-lifecycle-events"></a>
 
 AWS Health provides advance notification when upcoming changes affect your AWS Batch resources. These notifications, called *planned lifecycle events*, alert you to changes such as AMI deprecations, operating system end-of-support dates, and infrastructure updates that require action. AWS Batch leverages AWS Health to give you early visibility into these changes so that you can plan migrations and avoid disruption to your batch processing workloads.
 

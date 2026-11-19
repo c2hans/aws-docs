@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Redshif
 ---
 
 # RedshiftRetryOptions
-<a name="API_RedshiftRetryOptions"></a>
 
 Configures retry behavior in case Firehose is unable to deliver documents to Amazon Redshift.
 

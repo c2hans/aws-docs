@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/https-singlei
 ---
 
 # Terminating HTTPS on Amazon EC2 instances running .NET Core on Linux
-<a name="https-singleinstance-dotnet-linux"></a>
 
 For .NET Core on Linux container types, you enable HTTPS with an `.ebextensions` [configuration file](ebextensions.md), and an nginx configuration file that configures the nginx server to use HTTPS.
 

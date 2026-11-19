@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Amazon Kinesis Video Streams with WebRTC SDK in C for embedded devices
-<a name="kvswebrtc-sdk-c"></a>
 
 The following step-by-step instructions describe how to download, build, and run the Kinesis Video Streams with WebRTC SDK in C for embedded devices and its corresponding samples.
 

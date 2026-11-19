@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_EventType
 ---
 
 # EventType
-<a name="API_EventType"></a>
 
 Contains the metadata about a type of event that is reported by AWS Health. The `EventType` shows the category, service, and the event type code of the event. For example, an `issue` might be the category, `EC2` the service, and `AWS_EC2_SYSTEM_MAINTENANCE_EVENT` the event type code.
 

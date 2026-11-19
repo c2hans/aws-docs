@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # ActionIdentifier
-<a name="API_ActionIdentifier"></a>
 
 Contains information about an action for a request for which an authorization decision is made.
 

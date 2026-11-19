@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # Routes
-<a name="apis-apiid-routes"></a>
 
 Represents the collection of routes for an API.
 

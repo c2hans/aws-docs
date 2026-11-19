@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateGroup.
 ---
 
 # UpdateGroup
-<a name="API_UpdateGroup"></a>
 
 Updates the name and/or the path of the specified IAM group.
 

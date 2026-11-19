@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReceiverAddress
-<a name="API_invoicing_ReceiverAddress"></a>
 
  The details of the address associated with the receiver.
 

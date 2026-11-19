@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/inter-n
 ---
 
 # Internetwork traffic privacy
-<a name="inter-network-traffic-privacy"></a>
 
 Connections are protected both between Amazon Aurora and on-premises applications and between Amazon Aurora and other AWS resources within the same AWS Region.
 

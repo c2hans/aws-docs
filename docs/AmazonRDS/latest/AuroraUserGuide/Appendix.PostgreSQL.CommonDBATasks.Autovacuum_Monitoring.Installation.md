@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 ---
 
 # Installing autovacuum monitoring and diagnostic tools in Aurora PostgreSQL
-<a name="Appendix.PostgreSQL.CommonDBATasks.Autovacuum_Monitoring.Installation"></a>
 
 The `postgres_get_av_diag()` function is currently available in the following Aurora PostgreSQL versions:
 + 17.4 and higher 17 versions

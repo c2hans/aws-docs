@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetDet
 ---
 
 # GetDetector
-<a name="API_GetDetector"></a>
 
 Retrieves a GuardDuty detector specified by the detectorId.
 

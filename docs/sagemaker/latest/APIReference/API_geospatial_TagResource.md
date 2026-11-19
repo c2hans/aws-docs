@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # TagResource
-<a name="API_geospatial_TagResource"></a>
 
 The resource you want to tag.
 

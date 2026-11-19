@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::FlowOutput FlowTransitEncryption
-<a name="aws-properties-mediaconnect-flowoutput-flowtransitencryption"></a>
 
 The configuration that defines how content is encrypted during transit between the MediaConnect router and a MediaConnect flow.
 

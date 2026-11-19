@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Private CA Connector for SCEP API contains several data types that various actions use. This section describes each data type in detail.
 

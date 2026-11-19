@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/managing-ami-vers
 ---
 
 # Managing AMI versions in compute environments
-<a name="managing-ami-versions"></a>
 
 AWS Batch provides visibility into the Amazon Machine Images (AMIs) that your compute environments use.
 

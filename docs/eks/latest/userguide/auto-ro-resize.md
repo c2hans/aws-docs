@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-ro-resize.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # How resource optimization applies changes to Pods
-<a name="auto-ro-resize"></a>
 
 When a workload’s `ResourceOptimization` is in `Apply` mode, EKS Auto Mode resource optimization changes the CPU and memory of the workload’s Pods in two ways:
 + It resizes running Pods in place.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloudFrontVPCOriginServiceRolePolicy
-<a name="AWSCloudFrontVPCOriginServiceRolePolicy"></a>
 
 **Description**: Allows CloudFront to manage EC2 Elastic Network Interfaces and Security Groups on your behalf.
 

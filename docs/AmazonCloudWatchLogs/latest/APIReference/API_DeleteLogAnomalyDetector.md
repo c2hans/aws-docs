@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteLogAnomalyDetector
-<a name="API_DeleteLogAnomalyDetector"></a>
 
 Deletes the specified CloudWatch Logs anomaly detector.
 

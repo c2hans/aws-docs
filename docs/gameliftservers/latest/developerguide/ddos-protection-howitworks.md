@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/dd
 ---
 
 # How player gateway works
-<a name="ddos-protection-howitworks"></a>
 
 Player gateway uses a relay network to route UDP traffic between game clients and game servers. This protects against DDoS attacks by validating traffic before it reaches game servers, rate limiting player traffic, hiding game server IP addresses from the public, and providing updated endpoints when relay endpoints become unhealthy.
 

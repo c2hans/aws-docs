@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SaveWeightsConfig
-<a name="API_SaveWeightsConfig"></a>
 
 The configuration for saving model weights as a checkpoint.
 

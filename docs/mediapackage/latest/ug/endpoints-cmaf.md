@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-cmaf.ht
 ---
 
 # Creating a CMAF endpoint
-<a name="endpoints-cmaf"></a>
 
 Create an endpoint that formats content for devices that support Apple HLS fragmented MP4 (fMP4).
 

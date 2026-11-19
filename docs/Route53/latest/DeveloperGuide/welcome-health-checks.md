@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-he
 ---
 
 # How Amazon Route 53 checks the health of your resources
-<a name="welcome-health-checks"></a>
 
 Amazon Route 53 health checks monitor the health of your resources such as web servers and email servers. You can configure Amazon CloudWatch alarms for your health checks so that you receive notification when a resource becomes unavailable.
 

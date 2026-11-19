@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Trans
 ---
 
 # TransposedTableOption
-<a name="API_TransposedTableOption"></a>
 
 The column option of the transposed table.
 

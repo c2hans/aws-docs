@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DescribeBrid
 ---
 
 # DescribeBridge
-<a name="API_DescribeBridge"></a>
 
  Displays the details of a bridge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/migration-to
 ---
 
 # Monitoring a migration to ElastiCache Serverless
-<a name="migration-to-serverless-monitoring"></a>
 
 ## Migration states and events
 <a name="migration-to-serverless-states-events"></a>

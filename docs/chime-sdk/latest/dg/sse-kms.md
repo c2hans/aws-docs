@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/sse-kms.html
 ---
 
 # Enabling server-side encryption for an Amazon S3 bucket for Amazon Chime SDK media capture pipelines
-<a name="sse-kms"></a>
 
 To enable server-side encryption for an Amazon Simple Storage Service (Amazon S3) bucket, you can use these types of encryption keys:
 + An Amazon S3 managed key

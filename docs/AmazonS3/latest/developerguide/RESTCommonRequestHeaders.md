@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTCommo
 ---
 
 # Common request headers
-<a name="RESTCommonRequestHeaders"></a>
 
 The following table describes headers that can be used by various types of Amazon S3 REST requests.
 

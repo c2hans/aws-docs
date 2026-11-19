@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSV
 ---
 
 # AWSVendorInsightsVendorFullAccess
-<a name="AWSVendorInsightsVendorFullAccess"></a>
 
 **Description**: Provides full access for creating and managing the Vendor Insights resources
 

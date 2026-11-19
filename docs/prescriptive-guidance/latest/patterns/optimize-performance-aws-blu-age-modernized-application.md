@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/op
 ---
 
 # Optimize the performance of your AWS Blu Age modernized application
-<a name="optimize-performance-aws-blu-age-modernized-application"></a>
 
 *Vishal Jaswani, Manish Roy, and Himanshu Sah, Amazon Web Services*
 

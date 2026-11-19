@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/devops-agen
 ---
 
 # Skills Catalog
-<a name="devops-agent-skills-skills-catalog"></a>
 
 The AWS DevOps Agent Skills Catalog, available in the DevOps Agent web app, lists published skills, such as skills that investigate AWS Health events or check service quotas. The skills come from the [AWS DevOps Agent Tools repository](https://github.com/aws/tools-for-devops-agent) on the GitHub website. You can add a skill to your Agent Space without a GitHub account or a zip file. Agents use it the same way they use the skills that you create.
 

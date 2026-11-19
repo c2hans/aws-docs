@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/deactivate-cr
 ---
 
 # Deactivate Client Route Enforcement from an AWS Client VPN endpoint
-<a name="deactivate-cre"></a>
 
 You can deactivate Client Route Enforcement on Client VPN endpoints using either the console or the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # DeleteServiceQuotaIncreaseRequestFromTemplate
-<a name="API_DeleteServiceQuotaIncreaseRequestFromTemplate"></a>
 
 Deletes the quota increase request for the specified quota from your quota request template.
 

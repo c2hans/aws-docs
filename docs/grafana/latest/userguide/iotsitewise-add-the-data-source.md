@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/iotsitewise-add
 ---
 
 # Manually adding the AWS IoT SiteWise data source
-<a name="iotsitewise-add-the-data-source"></a>
 
 **To manually add the AWS IoT SiteWise data source**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/otel-metrics
 ---
 
 # Monitoring ElastiCache with OpenTelemetry metrics
-<a name="otel-metrics"></a>
 
 Amazon ElastiCache emits OpenTelemetry Protocol (OTLP) metrics for node-based Valkey replication groups to Amazon CloudWatch. These metrics give you a detailed view of your replication group, with a broad set of metrics from the cache engine and the host. They include rich attributes for filtering and aggregation, and you can query them with Prometheus Query Language (PromQL).
 

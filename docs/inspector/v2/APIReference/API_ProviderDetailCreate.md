@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ProviderDe
 ---
 
 # ProviderDetailCreate
-<a name="API_ProviderDetailCreate"></a>
 
 The provider-specific configuration details for creating a connector.
 

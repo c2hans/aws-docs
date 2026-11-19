@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Restor
 ---
 
 # RestoreWindow
-<a name="API_RestoreWindow"></a>
 
 Earliest and latest time an instance can be restored to:
 

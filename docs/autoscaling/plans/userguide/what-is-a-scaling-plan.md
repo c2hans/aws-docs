@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-a-sc
 ---
 
 # What is a scaling plan?
-<a name="what-is-a-scaling-plan"></a>
 
 Use a *scaling plan* to configure auto scaling for related or associated scalable resources in a matter of minutes. For example, you can use tags to group resources in categories such as production, testing, or development. Then, you can search for and set up scaling plans for scalable resources that belong to each category. Or, if your cloud infrastructure includes AWS CloudFormation, you can define stack templates to use to create collections of resources. Then, create a scaling plan for the scalable resources that belong to each stack.
 

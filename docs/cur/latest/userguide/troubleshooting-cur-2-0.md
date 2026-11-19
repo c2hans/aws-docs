@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting-cur
 ---
 
 # Troubleshooting CUR 2.0
-<a name="troubleshooting-cur-2-0"></a>
 
 **Topics**
 + [Why are some columns that were available in CUR not appearing in CUR 2.0?](#dataexports-missing-columns)

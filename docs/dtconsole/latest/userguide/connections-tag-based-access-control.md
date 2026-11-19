@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-t
 ---
 
 # Using tags to control access to AWS CodeConnections resources
-<a name="connections-tag-based-access-control"></a>
 
 Tags can be attached to the resource or passed in the request to services that support tagging. In AWS CodeConnections, resources can have tags, and some actions can include tags. When you create an IAM policy, you can use tag condition keys to control the following:
 + Which users can perform actions on a pipeline resource, based on tags that it already has.

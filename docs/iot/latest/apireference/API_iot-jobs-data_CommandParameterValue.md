@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-dat
 ---
 
 # CommandParameterValue
-<a name="API_iot-jobs-data_CommandParameterValue"></a>
 
 The list of values used to describe a specific command parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GovernedCatalogSo
 ---
 
 # GovernedCatalogSource
-<a name="API_GovernedCatalogSource"></a>
 
 Specifies the data store in the governed AWS Glue Data Catalog.
 

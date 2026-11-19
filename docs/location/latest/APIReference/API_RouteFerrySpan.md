@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteFe
 ---
 
 # RouteFerrySpan
-<a name="API_RouteFerrySpan"></a>
 
 Span computed for the requested SpanAdditionalFeatures.
 

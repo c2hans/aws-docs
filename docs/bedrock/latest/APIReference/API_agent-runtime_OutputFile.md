@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # OutputFile
-<a name="API_agent-runtime_OutputFile"></a>
 
 Contains details of the response from code interpreter.
 

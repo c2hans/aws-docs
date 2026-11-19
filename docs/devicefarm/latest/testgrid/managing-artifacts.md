@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/managing-arti
 ---
 
 # Artifacts in Device Farm desktop browser testing
-<a name="managing-artifacts"></a>
 
  Artifacts are created automatically in Device Farm when your tests perform actions like opening or closing a session.
 

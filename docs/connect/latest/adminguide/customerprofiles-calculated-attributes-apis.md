@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customerprofil
 ---
 
 # Connect Customer Customer Profiles calculated attributes APIs
-<a name="customerprofiles-calculated-attributes-apis"></a>
 
 You can use the following Customer Profiles calculated attribute APIs
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-filterin
 ---
 
 # Matching events on event field values
-<a name="eb-filtering-data-types"></a>
 
 You can use all of the JSON data types and values to match events. The following examples show events and the event patterns that match them.
 

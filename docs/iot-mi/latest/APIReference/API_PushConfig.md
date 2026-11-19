@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_PushConfi
 ---
 
 # PushConfig
-<a name="API_PushConfig"></a>
 
 Structure representing a push config.
 

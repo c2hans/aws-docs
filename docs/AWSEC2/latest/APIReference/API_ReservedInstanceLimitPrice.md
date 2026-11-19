@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedI
 ---
 
 # ReservedInstanceLimitPrice
-<a name="API_ReservedInstanceLimitPrice"></a>
 
 Describes the limit price of a Reserved Instance offering.
 

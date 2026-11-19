@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpc
 ---
 
 # ModifyVpcEndpointServicePermissions
-<a name="API_ModifyVpcEndpointServicePermissions"></a>
 
 Modifies the permissions for your VPC endpoint service. You can add or remove permissions for service consumers (AWS accounts, users, and IAM roles) to connect to your endpoint service. Principal ARNs with path components aren't supported.
 

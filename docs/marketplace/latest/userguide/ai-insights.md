@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ai-insights
 ---
 
 # AI Insights
-<a name="ai-insights"></a>
 
 AWS Marketplace displays AI Insights in the pricing section of your product listing to help buyers understand your pricing model. AI Insights explain your product's pricing in simple language, including dimension summary and frequently asked questions. Insights are generated using your listing's public pricing and additional context from your product's website.
 

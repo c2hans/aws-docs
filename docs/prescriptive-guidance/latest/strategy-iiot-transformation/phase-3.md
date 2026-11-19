@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Phase 3: Defining a blueprint
-<a name="phase-3"></a>
 
 Based on the evaluation of your current state in the previous phase, you can start building your blueprint. A *blueprint* is an end-to-end IIoT system reference architecture you adopt on your digital transformation journey. It serves as the foundation of your IIoT digitalization journey and helps you realize your business objectives. A blueprint:
 + Is guided by your [North Star vision](#north-star-vision)

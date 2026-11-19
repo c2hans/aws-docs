@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UltraS
 ---
 
 # UltraServerSummary
-<a name="API_UltraServerSummary"></a>
 
 A summary of UltraServer resources and their current status.
 

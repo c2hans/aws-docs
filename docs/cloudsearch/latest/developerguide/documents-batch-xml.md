@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/docume
 ---
 
 # documents/batch XML API
-<a name="documents-batch-xml"></a>
 
 ## XML documents/batch Requests
 <a name="documents-batch-xml-request"></a>

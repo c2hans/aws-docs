@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-statmux/latest/upgradeguide/up
 This is version 2.20 of the AWS Elemental Statmux documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Statmux and AWS Elemental Live Documentation](https://docs.aws.amazon.com/elemental-live).
 
 # Step A: Get Ready
-<a name="upgrades-sm-upg-single-ver-version"></a>
 
 The following steps prepare you for upgrading. Perform these steps to ensure that you don't lose any data.
 

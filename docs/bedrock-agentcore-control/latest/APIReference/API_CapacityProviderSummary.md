@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CapacityProviderSummary
-<a name="API_CapacityProviderSummary"></a>
 
 A summary of a capacity provider, as returned by `ListCapacityProviders`. Each summary includes the capacity provider identifier, Amazon Resource Name (ARN), name, status, and last-updated timestamp.
 

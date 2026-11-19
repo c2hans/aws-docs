@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Pipeli
 ---
 
 # PipelineExecutionStepMetadata
-<a name="API_PipelineExecutionStepMetadata"></a>
 
 Metadata for a step execution.
 

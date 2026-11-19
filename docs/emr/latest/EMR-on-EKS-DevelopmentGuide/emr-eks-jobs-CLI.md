@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # Managing job runs with the AWS CLI
-<a name="emr-eks-jobs-CLI"></a>
 
 This topic covers how to manage job runs with the AWS Command Line Interface (AWS CLI). It goes into detail regarding properties, like security parameters, the driver, and various override settings. It also includes subtopics that cover various ways to configure logging.
 

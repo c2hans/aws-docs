@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/export-as
 ---
 
 # Exporting assets to a signed URL as a provider (console)
-<a name="export-asset-URL-console-pro"></a>
 
 As a provider of AWS Data Exchange data products, you can use the AWS Data Exchange console to export AWS Data Exchange assets to destinations other than S3 buckets using the following instructions.
 

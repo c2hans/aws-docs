@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Complianc
 ---
 
 # Compliance
-<a name="API_Compliance"></a>
 
 Indicates whether an AWS resource or AWS Config rule is compliant and provides the number of contributors that affect the compliance.
 

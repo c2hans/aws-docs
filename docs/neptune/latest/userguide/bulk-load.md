@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load.html
 ---
 
 # Using the Amazon Neptune bulk loader to ingest data
-<a name="bulk-load"></a>
 
 Amazon Neptune provides a `Loader` command for loading data from external files directly into a Neptune DB cluster. You can use this command instead of executing a large number of `INSERT` statements, `addV` and `addE` steps, or other API calls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Customizing your AWS payment preferences
-<a name="manage-payment-method"></a>
 
 You can use the [Payment preferences](https://console.aws.amazon.com/billing/home#/paymentpreferences) page of the AWS Billing and Cost Management console to perform the following tasks for all payment types:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/stepfunctions-run
 ---
 
 # Tutorial: Run a state machine
-<a name="stepfunctions-run"></a>
 
 When you want to run a state machine, AWS Batch opens the **New execution** page of the Step Functions console.
 

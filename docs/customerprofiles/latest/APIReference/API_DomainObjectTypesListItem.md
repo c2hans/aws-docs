@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DomainObjectTypesListItem
-<a name="API_connect-customer-profiles_DomainObjectTypesListItem"></a>
 
 Represents an item in the list of domain object types, containing basic information about a specific object type within a domain.
 

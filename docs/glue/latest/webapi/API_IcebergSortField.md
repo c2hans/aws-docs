@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergSortField.
 ---
 
 # IcebergSortField
-<a name="API_IcebergSortField"></a>
 
 Defines a single field within an Iceberg sort order specification, including the source field, transformation, sort direction, and null value ordering.
 

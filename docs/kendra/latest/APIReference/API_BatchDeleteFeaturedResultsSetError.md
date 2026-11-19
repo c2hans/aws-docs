@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_BatchDele
 ---
 
 # BatchDeleteFeaturedResultsSetError
-<a name="API_BatchDeleteFeaturedResultsSetError"></a>
 
 Provides information about a set of featured results that couldn't be removed from an index by the [BatchDeleteFeaturedResultsSet](https://docs.aws.amazon.com/kendra/latest/dg/API_BatchDeleteFeaturedResultsSet.html) API.
 

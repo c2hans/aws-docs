@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PayloadType
-<a name="API_PayloadType"></a>
 
 Contains the payload content for an event.
 

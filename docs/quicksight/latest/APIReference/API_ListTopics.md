@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListT
 ---
 
 # ListTopics
-<a name="API_ListTopics"></a>
 
 Lists all of the topics within an account.
 

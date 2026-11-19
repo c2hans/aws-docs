@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-troubles
 ---
 
 # Troubleshoot Amazon Managed Service for Prometheus errors
-<a name="AMP-troubleshooting"></a>
 
 Use the following sections to help troubleshoot issues with Amazon Managed Service for Prometheus.
 

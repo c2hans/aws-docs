@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_GetLaunchCon
 ---
 
 # GetLaunchConfiguration
-<a name="API_GetLaunchConfiguration"></a>
 
 Gets a LaunchConfiguration, filtered by Source Server IDs.
 

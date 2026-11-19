@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # RDSDatabase
-<a name="API_RDSDatabase"></a>
 
 The database details of an Amazon RDS database.
 

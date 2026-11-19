@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/example_support_G
 ---
 
 # Getting started with technical support
-<a name="example_support_GettingStarted_062_section"></a>
 
 The following code example shows how to:
 + Check available services and severity levels

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # Install the AWS DeepRacer community software
-<a name="custom-car-software-install"></a>
 
 The [AWS DeepRacer Community custom car repository](https://github.com/aws-deepracer-community/deepracer-custom-car) provides installation scripts that replicate the DeepRacer on AWS software stack on Raspberry Pi hardware.
 

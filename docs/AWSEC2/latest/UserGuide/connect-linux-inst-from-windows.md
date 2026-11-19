@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-in
 ---
 
 # Connect to your Linux instance using PuTTY
-<a name="connect-linux-inst-from-windows"></a>
 
 You can connect to your Linux instance using PuTTY, a free SSH client for Windows.
 

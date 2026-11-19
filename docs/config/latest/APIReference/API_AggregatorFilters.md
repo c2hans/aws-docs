@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregato
 ---
 
 # AggregatorFilters
-<a name="API_AggregatorFilters"></a>
 
 An object to filter the data you specify for an aggregator.
 

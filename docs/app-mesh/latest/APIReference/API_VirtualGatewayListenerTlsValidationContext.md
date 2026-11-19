@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayListenerTlsValidationContext
-<a name="API_VirtualGatewayListenerTlsValidationContext"></a>
 
 An object that represents a virtual gateway's listener's Transport Layer Security (TLS) validation context.
 

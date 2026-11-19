@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Examining Aurora PostgreSQL query plans in the dba\_plans view
-<a name="AuroraPostgreSQL.Optimize.ViewPlans"></a>
 
 Database users and administrators that have been granted the `apg_plan_mgmt` role can view and manage the plans stored in the `apg_plan_mgmt.dba_plans`. An Aurora PostgreSQL DB cluster's administrator (someone with `rds_superuser` permissions) must explicitly grant this role to the database users who need to work with query plan management.
 

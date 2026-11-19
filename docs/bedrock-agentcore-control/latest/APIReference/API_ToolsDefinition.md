@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ToolsDefinition
-<a name="API_ToolsDefinition"></a>
 
 The tools definition for an MCP descriptor. Contains the protocol version and inline content describing the available tools.
 

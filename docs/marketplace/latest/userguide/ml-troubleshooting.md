@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-troubles
 ---
 
 # Troubleshooting issues with machine learning products
-<a name="ml-troubleshooting"></a>
 
  This section provides help for some common errors that you might encounter during the publishing process for your machine learning product. If your issue isn't listed, contact the [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) team.
 

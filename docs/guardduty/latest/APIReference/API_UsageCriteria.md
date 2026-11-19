@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UsageC
 ---
 
 # UsageCriteria
-<a name="API_UsageCriteria"></a>
 
 Contains information about the criteria used to query usage statistics.
 

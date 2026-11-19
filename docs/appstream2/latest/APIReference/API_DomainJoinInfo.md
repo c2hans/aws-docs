@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Domai
 ---
 
 # DomainJoinInfo
-<a name="API_DomainJoinInfo"></a>
 
 Describes the configuration information required to join fleets and image builders to Microsoft Active Directory domains.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_PointI
 ---
 
 # PointInTimeRecovery
-<a name="API_PointInTimeRecovery"></a>
 
 Point-in-time recovery (PITR) helps protect your Amazon Keyspaces tables from accidental write or delete operations by providing you continuous backups of your table data.
 

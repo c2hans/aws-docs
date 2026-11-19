@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # BootstrapBrokers
-<a name="clusters-clusterarn-bootstrap-brokers"></a>
 
 A list of brokers that a client application can use to bootstrap.
 

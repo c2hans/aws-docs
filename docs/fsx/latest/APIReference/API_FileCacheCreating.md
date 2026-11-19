@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileCacheCre
 ---
 
 # FileCacheCreating
-<a name="API_FileCacheCreating"></a>
 
 The response object for the Amazon File Cache resource being created in the `CreateFileCache` operation.
 

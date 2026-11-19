@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Contai
 ---
 
 # ContainerImage
-<a name="API_ContainerImage"></a>
 
 The details about the container image a service revision uses.
 

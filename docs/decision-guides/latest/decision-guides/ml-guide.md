@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 ---
 
 # Choosing an AWS machine learning service
-<a name="ml-guide"></a>
 
 **Pick the right ML services and frameworks to support your work**
 

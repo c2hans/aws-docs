@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filter-u
 ---
 
 # Updating a custom vocabulary filter
-<a name="vocabulary-filter-updating"></a>
 
 To update the word list in an existing custom vocabulary filter, use the [`UpdateVocabularyFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_UpdateVocabularyFilter.html) operation.
 

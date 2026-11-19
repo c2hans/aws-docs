@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/st
 ---
 
 # Streaming operations
-<a name="streaming-ops"></a>
 
 In the AWS SDK for Kotlin, binary data (streams) are represented as a [ByteStream](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.content/-byte-stream/index.html) type, which is an abstract read-only stream of bytes.
 

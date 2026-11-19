@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Start
 ---
 
 # StartImageBuilder
-<a name="API_StartImageBuilder"></a>
 
 Starts the specified image builder.
 

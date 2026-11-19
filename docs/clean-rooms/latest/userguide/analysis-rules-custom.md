@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/analysis-ru
 ---
 
 # Custom analysis rule in AWS Clean Rooms
-<a name="analysis-rules-custom"></a>
 
 In AWS Clean Rooms, a *custom analysis rule* is a new type of analysis rule that allows custom queries to be run on the configured table. Custom SQL queries are still restricted to having only the SELECT command but can use more SQL constructs than [aggregation](analysis-rules-aggregation.md#agg-query-controls) and [list](analysis-rules-list.md#list-query-controls) queries (for example, window functions, OUTER JOIN, CTEs, or subqueries; see the [AWS Clean Rooms SQL Reference](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-reference.html) for a complete list). Custom SQL queries don’t have to follow a query structure like [aggregation](analysis-rules-aggregation.md#agg-query-structure-syntax) and [list](analysis-rules-list.md#list-query-controls) queries.
 

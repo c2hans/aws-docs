@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_GetF
 ---
 
 # GetFindingMetrics
-<a name="API_GetFindingMetrics"></a>
 
 Returns finding-lifecycle metrics for a membership over a specified date range. This read-only operation provides aggregate counts that describe how security findings progressed through the finding lifecycle, from ingestion through triage, investigation, and escalation, including false-positive, true-positive, and in-progress counts. The metrics are scoped to a single membership and to a day-aligned UTC date range.
 

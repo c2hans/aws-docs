@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_User
 ---
 
 # UserMessageBlock
-<a name="API_UserMessageBlock"></a>
 
 A block of content in a user message.
 

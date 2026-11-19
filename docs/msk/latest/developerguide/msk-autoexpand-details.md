@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-autoexpand
 ---
 
 # Auto-scaling policy details for Amazon MSK
-<a name="msk-autoexpand-details"></a>
 
 An auto-scaling policy defines the following parameters for your cluster:
 + **Storage Utilization Target**: The storage utilization threshold that Amazon MSK uses to trigger an auto-scaling operation. You can set the utilization target between 10% and 80% of the current storage capacity. We recommend that you set the Storage Utilization Target between 50% and 60%.

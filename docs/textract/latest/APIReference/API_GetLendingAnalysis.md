@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_GetLend
 ---
 
 # GetLendingAnalysis
-<a name="API_GetLendingAnalysis"></a>
 
 Gets the results for an Amazon Textract asynchronous operation that analyzes text in a lending document.
 

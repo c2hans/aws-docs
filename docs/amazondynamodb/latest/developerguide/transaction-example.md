@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/tra
 ---
 
 # DynamoDB transactions example
-<a name="transaction-example"></a>
 
 As an example of a situation in which Amazon DynamoDB transactions can be useful, consider this sample Java application for an online marketplace.
 

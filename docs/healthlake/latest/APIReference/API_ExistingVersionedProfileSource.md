@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Exist
 ---
 
 # ExistingVersionedProfileSource
-<a name="API_ExistingVersionedProfileSource"></a>
 
 Identifies an existing data transformation profile and version to clone when creating a new profile.
 

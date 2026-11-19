@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Use tags to control access to REST APIs in API Gateway
-<a name="apigateway-control-access-tags"></a>
 
 Permission to access REST APIs can be fine-tuned using attribute-based access control in IAM policies.
 

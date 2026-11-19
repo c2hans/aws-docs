@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # cfn-init
-<a name="cfn-init"></a>
 
 In a CloudFormation template, you can use `AWS::CloudFormation::Init` within the `Metadata` section of an Amazon EC2 resource to define initialization tasks. For more information, see [`AWS::CloudFormation::Init`](aws-resource-init.md).
 

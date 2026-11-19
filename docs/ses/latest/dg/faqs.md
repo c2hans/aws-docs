@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/faqs.html
 ---
 
 # Amazon SES frequently asked questions (FAQs)
-<a name="faqs"></a>
 
 This section contains answers to several frequently asked questions related to using Amazon SES.
 

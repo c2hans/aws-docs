@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/keywords-phon
 ---
 
 # Edit a keyword used by a phone number in AWS End User Messaging SMS
-<a name="keywords-phone-number-edit"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to edit keyword responses for your phone number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/update-
 ---
 
 # UpdateGroup
-<a name="update-group"></a>
 
 Use the `UpdateGroup` API operation to change a group description. You can find a group name by calling the `ListGroups` API operation.
 

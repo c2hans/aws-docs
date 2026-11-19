@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/navigate_
 ---
 
 # Navigating the root and organizational unit (OU) hierarchy with AWS Organizations
-<a name="navigate_tree"></a>
 
 To navigate to different OUs or to the root when moving accounts or attaching policies, you can use the default "tree" view.
 

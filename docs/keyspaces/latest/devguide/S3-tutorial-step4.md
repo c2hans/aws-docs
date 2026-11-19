@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/S3-tutorial-st
 ---
 
 # Step 4: (Optional) Cleanup
-<a name="S3-tutorial-step4"></a>
 
 Follow these steps to remove all the AWS resources created in this tutorial. The AWS Glue job stacks must be deleted before the parent infrastructure stack because they reference its exported values.
 

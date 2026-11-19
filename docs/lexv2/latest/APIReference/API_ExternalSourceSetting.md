@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ExternalSo
 ---
 
 # ExternalSourceSetting
-<a name="API_ExternalSourceSetting"></a>
 
 Provides information about the external source of the slot type's definition.
 

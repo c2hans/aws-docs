@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-ColumnExi
 ---
 
 # ColumnExists
-<a name="dqdl-rule-types-ColumnExists"></a>
 
 Checks whether a column exists.
 

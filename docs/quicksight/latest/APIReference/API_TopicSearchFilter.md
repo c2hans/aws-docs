@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicSearchFilter
-<a name="API_TopicSearchFilter"></a>
 
 The filter that is used to search for a topic.
 

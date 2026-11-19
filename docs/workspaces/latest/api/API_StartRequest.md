@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_StartRequest.h
 ---
 
 # StartRequest
-<a name="API_StartRequest"></a>
 
 Information used to start a WorkSpace.
 

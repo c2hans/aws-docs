@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/s3-setup-manage.h
 ---
 
 # Set up and manage Amazon S3 integration
-<a name="s3-setup-manage"></a>
 
 ## Set up Amazon S3 integration
 <a name="s3-integration-setup"></a>

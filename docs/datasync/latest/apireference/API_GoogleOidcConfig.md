@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_GoogleO
 ---
 
 # GoogleOidcConfig
-<a name="API_GoogleOidcConfig"></a>
 
 External identity parameters for Google Cloud Storage.
 

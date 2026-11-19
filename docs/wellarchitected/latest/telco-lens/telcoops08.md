@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoo
 ---
 
 # Failure testing
-<a name="telcoops08"></a>
 
 |  TELCOOPS08: How do you implement comprehensive failure testing for telecommunication workloads in cloud environments?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Downloading the Toolkit for Visual Studio
-<a name="downloads"></a>
 
 You can download, install, and set up the Toolkit for Visual Studio through the Visual Studio Marketplace in your IDE. For detailed instructions, see the [Installing the AWS Toolkit for Visual Studio](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/setup.html#install) section in the *Getting started* topic of this User Guide.
 

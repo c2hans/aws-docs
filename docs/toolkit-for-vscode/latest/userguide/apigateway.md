@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/apig
 ---
 
 # Working with Amazon API Gateway
-<a name="apigateway"></a>
 
 You can browse and run remote API Gateway resources in your connected AWS account using the AWS Toolkit for Visual Studio Code.
 

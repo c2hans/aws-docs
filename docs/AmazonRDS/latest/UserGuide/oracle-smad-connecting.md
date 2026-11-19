@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-smad-c
 ---
 
 # Configuring a Kerberos client and connecting to your DB instance
-<a name="oracle-smad-connecting"></a>
 
 After you complete the steps in [Setting up self-managed Active Directory](oracle-smad-setting-up.md), complete the following steps for each DB instance that you want to use with Kerberos authentication. You join the DB instance to your domain, create Oracle users for your Active Directory (AD) users, configure a Kerberos client, and then connect to the DB instance. If a client host is already configured for your domain, you don't need to repeat its Kerberos configuration in Step 3 for another DB instance. Make sure that the client host can reach the new DB instance over the database port.
 + [Step 1: Create or modify an Amazon RDS for Oracle DB instance](#oracle-smad.connecting.step1)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PaymentInstrument
-<a name="API_PaymentInstrument"></a>
 
 Represents a payment instrument.
 

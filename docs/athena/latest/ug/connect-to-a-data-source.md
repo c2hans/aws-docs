@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connect-to-a-data-sourc
 ---
 
 # Create a data source connection
-<a name="connect-to-a-data-source"></a>
 
 To use an Athena data source connector, you create the AWS Glue connection that stores the connection information about the connector and your data source. When you create the connection, you give the data source a name that you will use to reference your data source in your SQL queries.
 

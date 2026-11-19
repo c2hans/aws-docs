@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/locatio
 ---
 
 # Amazon Location API error message updates
-<a name="location-actions-errorupdates"></a>
 
 Beginning August 1, 2023, the Amazon Location team is changing API error messages as described in the following tables. Error codes will not be changed. If your applications depend on exact error message strings, you must update your applications with the new strings. For help with questions or problems, contact AWS Support.
 

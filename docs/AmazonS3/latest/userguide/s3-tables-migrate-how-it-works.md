@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-migr
 ---
 
 # How to migrate a table to S3 Tables
-<a name="s3-tables-migrate-how-it-works"></a>
 
 S3 Tables migration creates an Apache Iceberg table from an existing AWS Glue Data Catalog Apache Hive table that's stored as Apache Parquet. The migration job validates, transforms, and optimizes your data. Your source data remains available throughout the migration.
 

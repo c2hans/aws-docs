@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcor
 ---
 
 # Change management
-<a name="telcorel03"></a>
 
  The change management section addresses how telecom organizations can manage updates, patches, and other changes to their network and systems in a controlled manner to minimize service disruptions. This includes implementing reliable processes for testing, approving, and rolling back changes.
 

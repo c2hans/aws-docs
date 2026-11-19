@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteA
 ---
 
 # DeleteActionTarget
-<a name="API_DeleteActionTarget"></a>
 
 Deletes a custom action target from Security Hub CSPM.
 

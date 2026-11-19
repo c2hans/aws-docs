@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicNumericRangeFilter
-<a name="API_TopicNumericRangeFilter"></a>
 
 A filter that filters topics based on the value of a numeric field. The filter includes only topics whose numeric field value falls within the specified range.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-security-permiss
 ---
 
 # Create a SageMaker AI Execution Role for a Ground Truth Labeling Job
-<a name="sms-security-permission-execution-role"></a>
 
 When you configure your labeling job, you need to provide an *execution role*, which is a role that SageMaker AI has permission to assume to start and run your labeling job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/interactions-upd
 ---
 
 # UpdateCustomerProfile
-<a name="interactions-updatecustomerprofile"></a>
 
 Update a customer profile that was previously created or retrieved in the flow. Customer Profiles must be enabled for your Connect Customer instance.
 

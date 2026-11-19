@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ListConsum
 ---
 
 # ListConsumableResources
-<a name="API_ListConsumableResources"></a>
 
 Returns a list of AWS Batch consumable resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIBR04-BP02 Weigh trade-offs across competing use case objectives
-<a name="raibr04-bp02"></a>
 
  Evaluate and balance trade-offs between benefits and risks. If not already available from your organization, develop explicit trade-off criteria (like tenets) that reflect organizational policies and stakeholder needs.
 

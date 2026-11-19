@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchR
 ---
 
 # BatchRebootClusterNodeLogicalIdsError
-<a name="API_BatchRebootClusterNodeLogicalIdsError"></a>
 
 Represents an error encountered when rebooting a node (identified by its logical node ID) from a SageMaker HyperPod cluster.
 

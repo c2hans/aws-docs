@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 5: (Optional) Deploy private web console static content
-<a name="deploy-private-web-console"></a>
 
 If you selected the Private deployment type during the stack deployment, you are required to manually deploy the CMF web console code to the web server that you created and then specified in **Full URL used to access web user interface** parameter of the stack. For all other deployment types, skip this step.
 

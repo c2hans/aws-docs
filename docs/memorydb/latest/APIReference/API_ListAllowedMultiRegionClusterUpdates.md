@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_ListAll
 ---
 
 # ListAllowedMultiRegionClusterUpdates
-<a name="API_ListAllowedMultiRegionClusterUpdates"></a>
 
 Lists the allowed updates for a multi-Region cluster.
 

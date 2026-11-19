@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/details-on-acti
 ---
 
 # Details on activating inputs
-<a name="details-on-activating-inputs"></a>
 
 ## Dynamic playlist order rules
 <a name="dynamic-playlist-order-rules"></a>

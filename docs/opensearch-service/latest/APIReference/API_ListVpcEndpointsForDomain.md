@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListVpcEndpointsForDomain
-<a name="API_ListVpcEndpointsForDomain"></a>
 
 Retrieves all Amazon OpenSearch Service-managed VPC endpoints associated with a particular domain.
 

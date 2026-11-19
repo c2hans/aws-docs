@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Authenti
 ---
 
 # AuthenticationSummary
-<a name="API_AuthenticationSummary"></a>
 
 A structure that describes whether the workspace uses SAML, IAM Identity Center, or both methods for user authentication, and whether that authentication is fully configured.
 

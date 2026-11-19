@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailCoverage
-<a name="API_runtime_GuardrailCoverage"></a>
 
 The action of the guardrail coverage details.
 

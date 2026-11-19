@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TagCondi
 ---
 
 # TagCondition
-<a name="API_TagCondition"></a>
 
 A leaf node condition which can be used to specify a tag condition, for example, `HAVE BPO = 123`.
 

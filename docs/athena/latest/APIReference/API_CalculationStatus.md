@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Calculati
 ---
 
 # CalculationStatus
-<a name="API_CalculationStatus"></a>
 
 Contains information about the status of a notebook calculation.
 

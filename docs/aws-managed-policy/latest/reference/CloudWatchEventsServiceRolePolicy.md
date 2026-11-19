@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchEventsServiceRolePolicy
-<a name="CloudWatchEventsServiceRolePolicy"></a>
 
 **Description**: Allow AWS CloudWatch to execute actions on your behalf configured through alarms and events.
 

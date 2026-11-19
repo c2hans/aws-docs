@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for functional testing
-<a name="indicators-for-functional-testing"></a>
 
 Assess specific functionalities of systems to ensure they operate correctly and meet predefined requirements.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::JobTemplate ParametricConfigurationOverrides
-<a name="aws-properties-emrcontainers-jobtemplate-parametricconfigurationoverrides"></a>
 
 A configuration specification to be used to override existing configurations. This data type allows job template parameters to be specified within.
 

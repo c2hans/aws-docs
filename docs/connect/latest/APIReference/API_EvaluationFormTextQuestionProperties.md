@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormTextQuestionProperties
-<a name="API_EvaluationFormTextQuestionProperties"></a>
 
 Information about properties for a text question in an evaluation form.
 

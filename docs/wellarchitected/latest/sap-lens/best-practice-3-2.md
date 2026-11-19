@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 3.2 – Ensure your cloud operating model matches your operational aims
-<a name="best-practice-3-2"></a>
 
 Identify the appropriate cloud operating model for your SAP workloads such that it aligns with your identified business requirements for speed to deployment, security, operations, and responsibility of cloud platform support. An appropriate cloud operating model is critical for successful adoption of cloud and delivering greater business agility.
 

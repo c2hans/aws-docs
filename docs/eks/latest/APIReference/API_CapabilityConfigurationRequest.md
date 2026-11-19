@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CapabilityCo
 ---
 
 # CapabilityConfigurationRequest
-<a name="API_CapabilityConfigurationRequest"></a>
 
 Configuration settings for a capability. The structure of this object varies depending on the capability type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk increases timeout period for updates on February 7, 2025
-<a name="release-2025-02-07-release-notes"></a>
 
 AWS Elastic Beanstalk increases wait condition timeout, allowing more time for managed updates to complete successfully.
 

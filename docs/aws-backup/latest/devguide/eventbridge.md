@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/eventbridge.h
 ---
 
 # Monitoring AWS Backup events using Amazon EventBridge
-<a name="eventbridge"></a>
 
 AWS Backup sends events to Amazon EventBridge when the state of a backup or copy job changes. You can use EventBridge to monitor AWS Backup events. For example, you can receive an alarm when a backup job fails. AWS Backup emits events to EventBridge in a best-effort manner every 5 minutes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/deman
 ---
 
 # Demand Pattern and Recommendation Report Access
-<a name="demand-patterns-report-access"></a>
 
 ## First time forecast creation
 <a name="first-time-forecast-creation"></a>

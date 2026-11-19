@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-trusted-i
 ---
 
 # Cross account setup with trusted identity propagation
-<a name="emr-trusted-identity-cross-account"></a>
 
 This tutorial demonstrates how to configure trusted identity propagation (TIP) with Amazon EMR on EC2 in a cross-account scenario. In this setup, an EMR cluster in one AWS account (the consumer account) accesses data governed by Lake Formation in a different AWS account (the producer account), while preserving the end user's identity throughout the request chain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/freshdesk-connector-limit
 ---
 
 # Limitations and notes for Freshdesk connector
-<a name="freshdesk-connector-limitations"></a>
 
 The following are limitations or notes for the Freshdesk connector:
 + The `Company`, `Contacts`, and `Tickets` entities with filtration have pagination limitations. They return only 30 records per page and the page value can be set up to a maximum of 10 (fetching a maximum of 300 records).

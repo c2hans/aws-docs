@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteWorkflow.html
 ---
 
 # DeleteWorkflow
-<a name="API_DeleteWorkflow"></a>
 
 Deletes a workflow by specifying its ID. This operation returns a response with no body if the deletion is successful.
 

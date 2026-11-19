@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrieveAndGenerateSessionConfiguration
-<a name="API_agent-runtime_RetrieveAndGenerateSessionConfiguration"></a>
 
 Contains configuration about the session with the knowledge base.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Cross-region deployment troubleshooting
-<a name="cross-region-troubleshooting"></a>
 
 ## Problem: Deployment fails with resource-name collision in a second region
 <a name="problem-cross-region-resource-collision"></a>

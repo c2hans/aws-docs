@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_und
 ---
 
 # Policy summary (list of services)
-<a name="access_policies_understand-policy-summary"></a>
 
 Policies are summarized in three tables: the policy summary, the [service summary](access_policies_understand-service-summary.md), and the [action summary](access_policies_understand-action-summary.md). The *policy summary* table includes a list of services and summaries of the permissions that are defined by the chosen policy.
 

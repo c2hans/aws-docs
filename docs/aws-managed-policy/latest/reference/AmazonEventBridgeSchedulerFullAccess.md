@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEventBridgeSchedulerFullAccess
-<a name="AmazonEventBridgeSchedulerFullAccess"></a>
 
 **Description**: The AmazonEventBridgeSchedulerFullAccess managed policy grants permissions to use all EventBridge Scheduler actions for schedules, and schedule groups.
 

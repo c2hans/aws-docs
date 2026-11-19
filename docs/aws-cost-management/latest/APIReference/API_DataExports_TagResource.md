@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TagResource
-<a name="API_DataExports_TagResource"></a>
 
 Adds tags for an existing data export definition.
 

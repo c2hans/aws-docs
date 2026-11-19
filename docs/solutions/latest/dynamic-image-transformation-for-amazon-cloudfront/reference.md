@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Reference
-<a name="reference"></a>
 
 This section includes information about data collection, data surrounding response times of a deployment using the S3 Object Lambda architecture, pointers to [related resources](#related-resources), and a [list of builders](#contributors) who contributed to this solution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Cu
 ---
 
 # CustomLogSourceConfiguration
-<a name="API_CustomLogSourceConfiguration"></a>
 
 The configuration used for the third-party custom source.
 

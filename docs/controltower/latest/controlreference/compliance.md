@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/com
 ---
 
 # Controls and compliance
-<a name="compliance"></a>
 
 Within AWS Control Tower, compliance refers to the state of a resource, when it is evaluated with respect to a deployed detective control, or a drift detection rule. Compliance in AWS Control Tower is related to drift — usually, a non-compliant resource is in a state of drift. AWS Control Tower controls embody rules of compliance. They help you identify compliant and non-compliant resources by helping identify drift.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UserDefinedFuncti
 ---
 
 # UserDefinedFunctionInput
-<a name="API_UserDefinedFunctionInput"></a>
 
 A structure used to create or update a user-defined function.
 

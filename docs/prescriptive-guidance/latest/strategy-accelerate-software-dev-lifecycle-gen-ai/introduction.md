@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Accelerating software development lifecycles on AWS with generative AI
-<a name="introduction"></a>
 
 *Chetan Makvana, Amazon Web Services*
 

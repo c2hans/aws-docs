@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-git-repo-
 ---
 
 # Update or delete a Git-based repository from an EMR Studio Workspace
-<a name="emr-git-repo-delete"></a>
 
 Refer to the following sections for information on how to delete a Git-based repository from an EMR notebook in the old console, or from an EMR Studio Workspace in the console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolNetwor
 ---
 
 # GetSolNetworkOperationMetadata
-<a name="API_GetSolNetworkOperationMetadata"></a>
 
 Metadata related to a network operation occurrence.
 

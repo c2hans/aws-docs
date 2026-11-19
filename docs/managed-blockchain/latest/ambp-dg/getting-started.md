@@ -7,7 +7,6 @@ End of support notice: Amazon Managed Blockchain will stop accepting new custome
 Amazon Managed Blockchain (AMB) Access Polygon is in preview release and is subject to change.
 
 # Getting started with Amazon Managed Blockchain (AMB) Access Polygon
-<a name="getting-started"></a>
 
 Get started with Amazon Managed Blockchain (AMB) Access Polygon by using the information and procedures in this section.
 

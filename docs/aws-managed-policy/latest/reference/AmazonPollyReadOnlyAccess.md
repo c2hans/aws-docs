@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonPollyReadOnlyAccess
-<a name="AmazonPollyReadOnlyAccess"></a>
 
 **Description**: Grants read-only access to Amazon Polly resources.
 

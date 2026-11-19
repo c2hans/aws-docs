@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-a
 ---
 
 # DNS Firewall Advanced Rules
-<a name="firewall-advanced"></a>
 
 DNS Firewall Advanced Rule tier provides you with protections to help you detect and monitor for more advanced DNS threats (for example, Domain Generation Algorithms (DGA) or DNS Tunneling) or with more granular protections based on threat and web-content (for example, gambling, social networking).
 

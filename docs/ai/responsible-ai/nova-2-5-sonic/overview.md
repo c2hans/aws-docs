@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/nova-2-5-sonic/overvie
 ---
 
 # Amazon Nova 2.5 Sonic
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/nova-2-5-sonic/images/card-background.jpg)
 

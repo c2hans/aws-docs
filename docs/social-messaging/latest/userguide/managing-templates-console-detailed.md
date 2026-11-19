@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Managing message templates in the AWS Console
-<a name="managing-templates-console-detailed"></a>
 
 ## Creating a message template
 <a name="creating-template-console-detailed"></a>

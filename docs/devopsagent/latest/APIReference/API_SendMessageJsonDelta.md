@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageJsonDelta
-<a name="API_SendMessageJsonDelta"></a>
 
 JSON delta containing partial JSON
 

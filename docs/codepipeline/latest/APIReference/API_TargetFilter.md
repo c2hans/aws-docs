@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Tar
 ---
 
 # TargetFilter
-<a name="API_TargetFilter"></a>
 
 Filters the list of targets.
 

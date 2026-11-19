@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSK
 ---
 
 # AWSKeyManagementServiceMultiRegionKeysServiceRolePolicy
-<a name="AWSKeyManagementServiceMultiRegionKeysServiceRolePolicy"></a>
 
 **Description**: Enables AWS KMS to synchronize the shared properties of multi-Region keys.
 

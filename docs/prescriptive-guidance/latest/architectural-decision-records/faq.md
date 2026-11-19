@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/architectur
 ---
 
 # FAQ about architectural decision records
-<a name="faq"></a>
 
 **What are the benefits of creating an ADR process? **
 

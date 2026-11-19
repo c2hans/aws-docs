@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/test-fai
 ---
 
 # Analyzing AWS FIS experiment execution using AWS Systems Manager
-<a name="test-failures-ssm"></a>
 
 After running an AWS FIS experiment, you can view the execution details in the AWS Systems Manager.
 

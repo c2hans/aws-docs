@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/related-servic
 ---
 
 # The power of AWS with Connect Customer
-<a name="related-services-amazon-connect"></a>
 
 **This topic is for developers and administrators who are interested in an overview of which other AWS services you can integrate with Connect Customer. **
 

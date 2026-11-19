@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ConnectorSummary.ht
 ---
 
 # ConnectorSummary
-<a name="API_ConnectorSummary"></a>
 
 Summary of a connector.
 

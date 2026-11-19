@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.STD.8] Promote cognitive diversity within teams
-<a name="oa.std.8-promote-cognitive-diversity-within-teams"></a>
 
  **Category:** RECOMMENDED
 

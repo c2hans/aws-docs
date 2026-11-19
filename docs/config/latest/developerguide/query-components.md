@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/query-compo
 ---
 
 # Query Components for AWS Config
-<a name="query-components"></a>
 
 The SQL `SELECT` query components for AWS Config advanced queries are as follows.
 

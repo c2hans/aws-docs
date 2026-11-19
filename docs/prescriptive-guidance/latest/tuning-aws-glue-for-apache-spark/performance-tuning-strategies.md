@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-
 ---
 
 # Strategies for tuning Spark job performance
-<a name="performance-tuning-strategies"></a>
 
 When preparing to tune parameters, use the following best practices:
 + Determine your performance goals before beginning to identify problems.

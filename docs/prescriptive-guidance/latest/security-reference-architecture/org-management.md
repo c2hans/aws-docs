@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Org Management account
-<a name="org-management"></a>
 
 The following diagram illustrates the AWS security services configured in the Org Management account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_l
 ---
 
 # Adding a line graph widget to a CloudWatch dashboard
-<a name="add_line_dashboard"></a>
 
 **To add a line widget to a dashboard**
 

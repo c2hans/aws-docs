@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Manage OpsItems
-<a name="OpsCenter-working-with-OpsItems"></a>
 
 OpsCenter tracks OpsItems from their creation to resolution. If you set up OpsCenter for cross-account administration, a delegated administrator or management account can manage OpsItems from their account. For more information, see [(Optional) Manually set up OpsCenter to centrally manage OpsItems across accounts](OpsCenter-getting-started-multiple-accounts.md).
 

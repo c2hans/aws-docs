@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/group-o
 ---
 
 # Group operations
-<a name="group-operations"></a>
 
 With group API operations, you can perform actions on groups. For more information, see the following API operations.
 

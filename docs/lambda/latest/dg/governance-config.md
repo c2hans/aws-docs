@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/governance-config.html
 ---
 
 # Implement preventative controls for Lambda with AWS Config
-<a name="governance-config"></a>
 
 It is essential to ensure compliance in your serverless applications as early in the development process as possible. In this topic, we cover how to implement preventative controls using [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html). With AWS Config, you can implement compliance checks earlier in the development process and implement the same controls in your CI/CD pipelines. This also standardizes your controls in a centrally managed repository of rules so that you can apply your controls consistently across your AWS accounts.
 

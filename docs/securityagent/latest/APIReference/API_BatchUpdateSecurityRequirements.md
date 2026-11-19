@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchUpdateSecurityRequirements
-<a name="API_BatchUpdateSecurityRequirements"></a>
 
 Batch updates security requirements within a customer managed pack.
 

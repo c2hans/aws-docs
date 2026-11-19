@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Up
 ---
 
 # Maintaining an Amazon Aurora DB cluster
-<a name="USER_UpgradeDBInstance.Maintenance"></a>
 
 Periodically, Amazon RDS performs maintenance on Amazon RDS resources. The following topics describe these maintenance actions and how to apply them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentDescription
-<a name="API_DocumentDescription"></a>
 
 Describes an AWS Systems Manager document (SSM document).
 

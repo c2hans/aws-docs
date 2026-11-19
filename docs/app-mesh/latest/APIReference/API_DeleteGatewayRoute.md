@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteG
 ---
 
 # DeleteGatewayRoute
-<a name="API_DeleteGatewayRoute"></a>
 
 Deletes an existing gateway route.
 

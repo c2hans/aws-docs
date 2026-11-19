@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-sagemake
 ---
 
 # SageMaker IAM
-<a name="odbc-v2-driver-sagemaker-iam"></a>
 
 An authentication plugin that uses IAM credentials to connect to Amazon Athena through SageMaker Unified Studio. This plugin authenticates using IAM credentials (static access key/secret key or the AWS default credential chain) and retrieves Athena environment credentials via the SageMaker connection service.
 

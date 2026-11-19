@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Up
 ---
 
 # UpdateEntity
-<a name="API_UpdateEntity"></a>
 
 Updates an entity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 ---
 
 # Compaction
-<a name="claude-messages-compaction"></a>
 
 **Tip**
 Server-side compaction is recommended for managing context in long-running conversations and agentic workflows as it handles context management automatically with minimal integration work.

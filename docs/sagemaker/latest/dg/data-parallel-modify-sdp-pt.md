@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-modify
 ---
 
 # Use the SMDDP library in your PyTorch training script
-<a name="data-parallel-modify-sdp-pt"></a>
 
 Starting from the SageMaker AI distributed data parallelism (SMDDP) library v1.4.0, you can use the library as a backend option for the [PyTorch distributed package](https://pytorch.org/tutorials/beginner/dist_overview.html). To use the SMDDP `AllReduce` and `AllGather` collective operations, you only need to import the SMDDP library at the beginning of your training script and set SMDDP as the the backend of PyTorch distributed modules during process group initialization. With the single line of backend specification, you can keep all the native PyTorch distributed modules and the entire training script unchanged. The following code snippets show how to use the SMDDP library as the backend of PyTorch-based distributed training packages: [PyTorch distributed data parallel (DDP)](https://pytorch.org/docs/stable/notes/ddp.html), [PyTorch fully sharded data parallelism (FSDP)](https://pytorch.org/docs/stable/fsdp.html), [DeepSpeed](https://github.com/microsoft/DeepSpeed), and [Megatron-DeepSpeed](https://github.com/microsoft/Megatron-DeepSpeed).
 

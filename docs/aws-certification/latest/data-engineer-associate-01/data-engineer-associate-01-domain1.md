@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/data-engineer-a
 ---
 
 # Content Domain 1: Data Ingestion and Transformation
-<a name="data-engineer-associate-01-domain1"></a>
 
 **Topics**
 + [Task 1.1: Perform data ingestion](#data-engineer-associate-01-domain1-task1)

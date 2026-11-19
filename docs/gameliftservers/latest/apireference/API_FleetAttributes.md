@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # FleetAttributes
-<a name="API_FleetAttributes"></a>
 
 Describes an Amazon GameLift Servers fleet of game hosting resources. Attributes differ based on the fleet's compute type, as follows:
 + EC2 fleet attributes identify a `Build` resource (for fleets with customer game server builds) or a `Script` resource (for Amazon GameLift Servers Realtime fleets).

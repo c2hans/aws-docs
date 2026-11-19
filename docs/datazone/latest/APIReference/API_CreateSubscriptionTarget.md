@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateS
 ---
 
 # CreateSubscriptionTarget
-<a name="API_CreateSubscriptionTarget"></a>
 
 Creates a subscription target in Amazon DataZone.
 

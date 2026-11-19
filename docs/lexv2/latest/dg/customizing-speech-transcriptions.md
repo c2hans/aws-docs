@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/customizing-speech-trans
 ---
 
 # Customizing speech transcriptions for use with your Lex V2 bot
-<a name="customizing-speech-transcriptions"></a>
 
 The default behavior of your bot may sometimes result in inaccurate speech transcriptions. The following features are available to help your bot recognize words or names that are less common or easily confused.
 

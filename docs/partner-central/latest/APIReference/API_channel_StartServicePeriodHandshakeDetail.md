@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # StartServicePeriodHandshakeDetail
-<a name="API_channel_StartServicePeriodHandshakeDetail"></a>
 
 Details specific to start service period handshakes.
 

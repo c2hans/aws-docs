@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-ad
 ---
 
 # Adding more images to a dataset
-<a name="md-add-images"></a>
 
 You can add more images to your datasets by using the Amazon Rekognition Custom Labels console or by the calling the `UpdateDatasetEntries` API.
 

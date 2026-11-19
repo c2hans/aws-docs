@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/produ
 ---
 
 # product\_uom
-<a name="product-uom-entity"></a>
 
 **Primary key (PK)**
 

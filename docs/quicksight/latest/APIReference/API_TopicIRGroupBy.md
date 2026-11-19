@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicIRGroupBy
-<a name="API_TopicIRGroupBy"></a>
 
 The definition for a `TopicIRGroupBy`.
 

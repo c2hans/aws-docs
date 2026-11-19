@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Exclu
 ---
 
 # ExcludePeriodConfiguration
-<a name="API_ExcludePeriodConfiguration"></a>
 
 The exclude period of `TimeRangeFilter` or `RelativeDatesFilter`.
 

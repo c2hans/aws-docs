@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribeCertificate
-<a name="API_DescribeCertificate"></a>
 
 Describes the certificate that's identified by the `CertificateId`.
 

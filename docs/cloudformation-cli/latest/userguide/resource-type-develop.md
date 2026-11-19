@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Developing resource types for CloudFormation templates
-<a name="resource-type-develop"></a>
 
 Once you've modeled your resource type, and validated its schema, the next step is to develop the resource. Developing the resource consists of two main steps:
 + Implementing the appropriate event handlers for your resource.

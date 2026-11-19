@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_HudiTarget.html
 ---
 
 # HudiTarget
-<a name="API_HudiTarget"></a>
 
 Specifies an Apache Hudi data source.
 

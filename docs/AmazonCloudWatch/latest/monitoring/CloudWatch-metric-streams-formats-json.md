@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # CloudWatch metric stream output in JSON format
-<a name="CloudWatch-metric-streams-formats-json"></a>
 
 In a CloudWatch metric stream that uses the JSON format, each Firehose record contains multiple JSON objects separated by a newline character (\\n). Each object includes a single data point of a single metric.
 

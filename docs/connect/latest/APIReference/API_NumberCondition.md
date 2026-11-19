@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_NumberCo
 ---
 
 # NumberCondition
-<a name="API_NumberCondition"></a>
 
 A leaf node condition which can be used to specify a numeric condition.
 

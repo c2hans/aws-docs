@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteCu
 ---
 
 # DeleteCustomModelDeployment
-<a name="API_DeleteCustomModelDeployment"></a>
 
 Deletes a custom model deployment. This operation stops the deployment and removes it from your account. After deletion, the deployment ARN can no longer be used for inference requests.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LiveTailSessionStart
-<a name="API_LiveTailSessionStart"></a>
 
 This object contains information about this Live Tail session, including the log groups included and the log stream filters, if any.
 

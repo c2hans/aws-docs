@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/monitoring-event-br
 ---
 
 # Alarm events and EventBridge
-<a name="monitoring-event-bridge"></a>
 
 ## Sample events for Elastic Disaster Recovery
 <a name="monitoring-event-bridge-sample"></a>

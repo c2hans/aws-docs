@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # SyncBlockerContext
-<a name="API_SyncBlockerContext"></a>
 
 The context for a specific sync blocker.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/how-dotnet-
 ---
 
 # How Amazon Q Developer transforms .NET applications
-<a name="how-dotnet-transformation-works"></a>
 
 Review the following sections for details about how .NET transformation with Amazon Q Developer works.
 

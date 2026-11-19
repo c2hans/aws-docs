@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL12-BP04 Test resiliency using chaos engineering
-<a name="rel_testing_resiliency_failure_injection_resiliency"></a>
 
  Run chaos experiments regularly in environments that are in or as close to production as possible to understand how your system responds to adverse conditions.
 

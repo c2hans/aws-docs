@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-emrfs-iam
 ---
 
 # Configure IAM roles for EMRFS requests to Amazon S3
-<a name="emr-emrfs-iam-roles"></a>
 
 **Note**
 The EMRFS role mapping capability described on this page has been improved upon with the introduction of Amazon S3 Access Grants in Amazon EMR 6.15.0. For a scalable access control solution for your data in Amazon S3, we recommend that you use [S3 Access Grants with Amazon EMR](emr-access-grants.md).

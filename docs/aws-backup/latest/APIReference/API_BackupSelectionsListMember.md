@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Backu
 ---
 
 # BackupSelectionsListMember
-<a name="API_BackupSelectionsListMember"></a>
 
 Contains metadata about a `BackupSelection` object.
 

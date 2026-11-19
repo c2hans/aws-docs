@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # ResourceIdentifier
-<a name="API_ResourceIdentifier"></a>
 
 Defines a resource identifier for the drifted resource.
 

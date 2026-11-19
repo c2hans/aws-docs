@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplifie
 ---
 
 # Reference: Location of fields
-<a name="colorspace-simplified-fields"></a>
 
 Read this section if you know how to handle color space in MediaLive, and you only need a reminder of where the fields are located in the MediaLive Console. The information is sorted by the location of the fields on the **Channel** page, from top to bottom.
 

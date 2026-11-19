@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 **Important**
 We recommend removing accounts from the account pool before you delete the stacks to prevent accounts from incurring costs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AccountSet
-<a name="API_AccountSet"></a>
 
 A set of AWS accounts and organizational units.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_Oauth2Credentia
 ---
 
 # Oauth2Credential
-<a name="API_Oauth2Credential"></a>
 
 Contains OAuth2 client credential information.
 

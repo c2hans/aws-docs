@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/setting-u
 ---
 
 # Set up agents in the patient engagement web app
-<a name="setting-up-pe-web-app"></a>
 
 You use the patient engagement web app to set up the agentic capabilities for patient access. In the app, you create an agent, turn capabilities on or off, configure each capability, and publish your changes.
 

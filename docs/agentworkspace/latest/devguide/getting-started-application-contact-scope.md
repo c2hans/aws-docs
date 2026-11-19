@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/getting-s
 ---
 
 # Application scoping for Connect Customer applications
-<a name="getting-started-application-contact-scope"></a>
 
 Every application built with the Connect Customer SDK runs with a contact scope. The contact scope determines whether the agent receives a separate instance of your application for each contact that they handle, or a single instance that serves all of them. You choose the scope when you design and register your application.
 

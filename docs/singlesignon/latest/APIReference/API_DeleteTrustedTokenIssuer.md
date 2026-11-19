@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeleteTrustedTokenIssuer
-<a name="API_DeleteTrustedTokenIssuer"></a>
 
 Deletes a trusted token issuer configuration from an instance of IAM Identity Center.
 

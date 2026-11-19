@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/troublesho
 ---
 
 # My domain is unavailable on the internet
-<a name="troubleshooting-domain-unavailable"></a>
 
 Here are the most common reasons that your domain is not available on the internet.
 

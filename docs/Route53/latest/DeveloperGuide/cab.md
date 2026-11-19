@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/cab.html
 ---
 
 # .cab
-<a name="cab"></a>
 
 Used by companies and individuals affiliated with the taxicab industry.
 

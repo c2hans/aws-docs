@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSISEC09: How are you managing your encryption keys?
-<a name="fsisec09"></a>
 
  In addition to implementing the [data protection recommendations](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/data-protection.html) applicable to any company seen in the AWS Well-Architected Framework Security Pillar, financial institutions often have additional industry-specific requirements that can influence the management of cryptographic keys. With generative AI systems, key management extends to protecting model artifacts, training data, knowledge bases, sensitive prompts and prompt catalogs.
 

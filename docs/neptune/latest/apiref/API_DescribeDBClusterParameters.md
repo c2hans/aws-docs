@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeDBClus
 ---
 
 # DescribeDBClusterParameters
-<a name="API_DescribeDBClusterParameters"></a>
 
 Returns the detailed parameter list for a particular DB cluster parameter group.
 

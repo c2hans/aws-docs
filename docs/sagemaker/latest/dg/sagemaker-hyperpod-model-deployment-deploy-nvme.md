@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Deploy models from local NVMe storage using kubectl
-<a name="sagemaker-hyperpod-model-deployment-deploy-nvme"></a>
 
 This topic shows you how to deploy inference endpoints on Amazon SageMaker HyperPod that load model weights from a node's local NVMe storage instead of pulling them over the network from Amazon S3 or Amazon FSx. Reading weights locally eliminates the network hop during pod startup, which reduces inference pod cold-start time and is useful for autoscaling events, scale-from-zero workloads, and latency-sensitive failovers. For workloads where cold-start latency is not a concern, use `modelSourceType: s3` or `fsx` and skip this topic.
 

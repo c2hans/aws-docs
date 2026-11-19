@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-featur
 ---
 
 # Example Feature Processing code for common use cases
-<a name="feature-store-feature-processor-examples"></a>
 
 The following examples provide sample Feature Processing code for common use cases. For a more detailed example notebook showcasing specific use cases, see [Amazon SageMaker Feature Store Feature Processing notebook](https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-featurestore/feature_store_feature_processor.ipynb).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_L
 ---
 
 # ListContacts
-<a name="API_ListContacts"></a>
 
 Returns a list of contacts.
 

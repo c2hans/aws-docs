@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RemovePre
 ---
 
 # RemovePrefixListEntry
-<a name="API_RemovePrefixListEntry"></a>
 
 An entry for a prefix list.
 

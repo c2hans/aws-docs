@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListOpsMetadata
-<a name="API_ListOpsMetadata"></a>
 
  AWS Systems Manager calls this API operation when displaying all Application Manager OpsMetadata objects or blobs.
 

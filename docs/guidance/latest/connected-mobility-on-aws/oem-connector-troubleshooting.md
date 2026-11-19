@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # OEM connector fleet lifecycle troubleshooting
-<a name="oem-connector-troubleshooting"></a>
 
 ## Problem: OEM connector admin Lambda returns 4xx on enrollment or unenrollment
 <a name="problem-oem-admin-lambda-4xx"></a>

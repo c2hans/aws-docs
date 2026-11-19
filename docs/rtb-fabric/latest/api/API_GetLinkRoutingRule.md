@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_GetLinkRouting
 ---
 
 # GetLinkRoutingRule
-<a name="API_GetLinkRoutingRule"></a>
 
 Retrieves the details of a routing rule for a link.
 

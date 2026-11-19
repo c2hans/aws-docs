@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ComputeConfi
 ---
 
 # ComputeConfig
-<a name="API_ComputeConfig"></a>
 
 Configuration parameters for provisioning an AWS DMS Serverless replication.
 

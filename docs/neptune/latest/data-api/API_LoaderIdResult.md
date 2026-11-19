@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_LoaderIdResu
 ---
 
 # LoaderIdResult
-<a name="API_LoaderIdResult"></a>
 
 Contains a list of load IDs.
 

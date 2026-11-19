@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Ec2Instanc
 ---
 
 # Ec2InstanceAggregation
-<a name="API_Ec2InstanceAggregation"></a>
 
 The details that define an aggregation based on Amazon EC2 instances.
 

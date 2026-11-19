@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_S3Repor
 ---
 
 # S3ReportOutputConfiguration
-<a name="API_S3ReportOutputConfiguration"></a>
 
 Configuration for delivering generated reports to an Amazon S3 bucket.
 

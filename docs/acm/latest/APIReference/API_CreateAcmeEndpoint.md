@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CreateAcmeEn
 ---
 
 # CreateAcmeEndpoint
-<a name="API_CreateAcmeEndpoint"></a>
 
 Creates an ACME endpoint, which is a managed ACME server with a unique endpoint URL. After creation, ACME clients can use the endpoint URL to automate certificate issuance using the ACME protocol.
 

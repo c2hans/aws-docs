@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateAuthor
 ---
 
 # CreateAuthorizer
-<a name="API_CreateAuthorizer"></a>
 
 Creates an authorizer.
 

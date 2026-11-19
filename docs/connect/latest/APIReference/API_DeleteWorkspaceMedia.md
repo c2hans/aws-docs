@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteWo
 ---
 
 # DeleteWorkspaceMedia
-<a name="API_DeleteWorkspaceMedia"></a>
 
 Deletes a media asset (such as a logo) from a workspace.
 

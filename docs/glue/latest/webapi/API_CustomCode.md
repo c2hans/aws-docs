@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CustomCode.html
 ---
 
 # CustomCode
-<a name="API_CustomCode"></a>
 
 Specifies a transform that uses custom code you provide to perform the data transformation. The output is a collection of DynamicFrames.
 

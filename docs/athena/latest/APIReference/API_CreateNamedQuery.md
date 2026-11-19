@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateNam
 ---
 
 # CreateNamedQuery
-<a name="API_CreateNamedQuery"></a>
 
 Creates a named query in the specified workgroup. Requires that you have access to the workgroup.
 

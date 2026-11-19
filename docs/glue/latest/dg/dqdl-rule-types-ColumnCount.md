@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-ColumnCou
 ---
 
 # ColumnCount
-<a name="dqdl-rule-types-ColumnCount"></a>
 
 Checks the column count of the primary dataset against a given expression. In the expression, you can specify the number of columns or a range of columns using operators like `>` and `<`.
 

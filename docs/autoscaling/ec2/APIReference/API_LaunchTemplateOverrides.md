@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_LaunchT
 ---
 
 # LaunchTemplateOverrides
-<a name="API_LaunchTemplateOverrides"></a>
 
 Use this structure to let Amazon EC2 Auto Scaling do the following when the Auto Scaling group has a mixed instances policy:
 + Override the instance type that is specified in the launch template.

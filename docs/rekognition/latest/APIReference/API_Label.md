@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Labe
 ---
 
 # Label
-<a name="API_Label"></a>
 
 Structure containing details about the detected label, including the name, detected instances, parent labels, and level of confidence.
 

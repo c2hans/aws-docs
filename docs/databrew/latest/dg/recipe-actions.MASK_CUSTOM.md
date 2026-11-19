@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.MASK_C
 ---
 
 # MASK\_CUSTOM
-<a name="recipe-actions.MASK_CUSTOM"></a>
 
 Masks characters that match a provided custom value.
 

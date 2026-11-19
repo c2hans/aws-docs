@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-
 ---
 
 # Creating and managing custom authorizers (CLI)
-<a name="config-custom-auth"></a>
 
 AWS IoT Core implements custom authentication and authorization schemes by using custom authorizers. A custom authorizer is an AWS IoT Core resource that gives you the flexibility to define and implement the rules and policies based on your specific requirements. To create a custom authorizer with step-by-step instructions, see [Tutorial: Creating a custom authorizer for AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/custom-auth-tutorial.html).
 

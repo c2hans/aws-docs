@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteClassifier.
 ---
 
 # DeleteClassifier
-<a name="API_DeleteClassifier"></a>
 
 Removes a classifier from the Data Catalog.
 

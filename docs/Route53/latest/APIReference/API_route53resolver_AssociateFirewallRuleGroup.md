@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # AssociateFirewallRuleGroup
-<a name="API_route53resolver_AssociateFirewallRuleGroup"></a>
 
 Associates a [FirewallRuleGroup](API_route53resolver_FirewallRuleGroup.md) with a VPC, to provide DNS filtering for the VPC.
 

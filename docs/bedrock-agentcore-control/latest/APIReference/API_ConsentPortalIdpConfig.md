@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConsentPortalIdpConfig
-<a name="API_ConsentPortalIdpConfig"></a>
 
 The identity provider configuration used to authenticate end users to the consent portal.
 

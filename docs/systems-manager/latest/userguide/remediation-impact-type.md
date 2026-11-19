@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/remedia
 ---
 
 # Remediation impact types of runbook actions
-<a name="remediation-impact-type"></a>
 
 Systems Manager can run diagnosis operations that discover certain types of failed deployments and drifted configurations, as well as certain types of configuration issues that are preventing Systems Manager from managing EC2 instances. The results of the diagnosis might include recommendations for Automation runbooks that you can execute to attempt to remedy a problem. For more information about these diagnosis operations, see the following topics:
 + [Diagnosing and remediating failed deployments](remediating-deployment-issues.md)

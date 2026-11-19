@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # How it works
-<a name="csp-how-it-works"></a>
 
 The portal’s data model and campaign screens control what each vehicle collects. The subsections below describe the edge agent integration and the three-layer collection model those screens edit.
 

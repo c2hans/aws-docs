@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Amazon ECS Service Connect zone-aware routing
-<a name="service-connect-zone-aware-routing"></a>
 
 With Amazon ECS Service Connect zone-aware routing, traffic stays within the same Availability Zone (AZ) as the client. This reduces cross-AZ data transfer costs and latency without requiring additional infrastructure or application code changes. When endpoints are balanced across AZs, more than 80% of traffic stays local while traffic weights dynamically adjust as endpoints scale to maintain balanced load across target services. Zone-aware routing is on by default for all new and existing services that use Service Connect.
 

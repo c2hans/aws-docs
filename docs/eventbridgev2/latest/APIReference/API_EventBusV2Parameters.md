@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Ev
 ---
 
 # EventBusV2Parameters
-<a name="API_EventBusV2Parameters"></a>
 
 Parameters for forwarding events to another EventBridge event bus.
 

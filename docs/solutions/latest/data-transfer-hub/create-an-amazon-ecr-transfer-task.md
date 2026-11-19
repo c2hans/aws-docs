@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/creat
 ---
 
 # Create an Amazon ECR transfer task
-<a name="create-an-amazon-ecr-transfer-task"></a>
 
  The Guidance allows you to create an Amazon S3 transfer task in the following ways:
 +  [using the web console](#using-the-web-console-1)

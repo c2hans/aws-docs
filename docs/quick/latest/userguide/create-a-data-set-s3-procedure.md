@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/create-a-data-set
 ---
 
 # Creating Amazon S3 datasets
-<a name="create-a-data-set-s3-procedure"></a>
 
 **To create an Amazon S3 dataset**
 

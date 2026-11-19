@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Rancher Fleet
-<a name="rancher-fleet"></a>
 
 Rancher Fleet is a GitOps-at-scale solution that is designed specifically for managing multiple Kubernetes clusters. It adheres closely to GitOps principles while focusing on scalability and multi-cluster management.
 

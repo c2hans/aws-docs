@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_De
 ---
 
 # DeleteConfiguredModelAlgorithmAssociation
-<a name="API_DeleteConfiguredModelAlgorithmAssociation"></a>
 
 Deletes a configured model algorithm association.
 

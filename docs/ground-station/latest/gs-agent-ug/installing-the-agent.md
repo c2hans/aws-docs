@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/instal
 ---
 
 # Install the agent
-<a name="installing-the-agent"></a>
 
 The AWS Ground Station Agent can be installed in the following ways:
 
@@ -95,18 +94,18 @@ aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-
 
  If you need to download a specific version of the AWS Ground Station Agent for troubleshooting or rollback purposes, you can download it from the version specific folder in the S3 bucket. This is not recommended for normal operations.
 
- Example: Download version 1.0.5953.0 of the rpm from AWS region us-east-2 locally to the /tmp folder.
+ Example: Download version 1.0.8022.0 of the rpm from AWS region us-east-2 locally to the /tmp folder.
 
 Amazon Linux 2023:
 
 ```
-aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-groundstation-agent/1.0.5953.0/amazon_linux_2023_x86_64/aws-groundstation-agent.rpm /tmp
+aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-groundstation-agent/1.0.8022.0/amazon_linux_2023_x86_64/aws-groundstation-agent.rpm /tmp
 ```
 
 Amazon Linux 2:
 
 ```
-aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-groundstation-agent/1.0.5953.0/amazon_linux_2_x86_64/aws-groundstation-agent.rpm /tmp
+aws s3 --region us-east-2 cp s3://groundstation-wb-digif-software-us-east-2/aws-groundstation-agent/1.0.8022.0/amazon_linux_2_x86_64/aws-groundstation-agent.rpm /tmp
 ```
 
 **Note**

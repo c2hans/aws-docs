@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectProtectiveEquipment
-<a name="API_DetectProtectiveEquipment"></a>
 
 Detects Personal Protective Equipment (PPE) worn by people detected in an image. Amazon Rekognition can detect the following types of PPE.
 + Face cover
@@ -139,7 +138,7 @@ You are not authorized to perform the action.
 HTTP Status Code: 400
 
  ** ImageTooLargeException **
-The input image size exceeds the allowed limit. If you are calling [DetectProtectiveEquipment](#API_DetectProtectiveEquipment), the image size or resolution exceeds the allowed limit. For more information, see [Guidelines and quotas in Amazon Rekognition](https://docs.aws.amazon.com/rekognition/latest/dg/limits.html).
+The input image size exceeds the allowed limit. If you are calling [DetectProtectiveEquipment](API_DetectProtectiveEquipment.md), the image size or resolution exceeds the allowed limit. For more information, see [Guidelines and quotas in Amazon Rekognition](https://docs.aws.amazon.com/rekognition/latest/dg/limits.html).
 HTTP Status Code: 400
 
  ** InternalServerError **

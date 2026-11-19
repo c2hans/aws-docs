@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-env-lifec
 ---
 
 # Execution environment lifecycle
-<a name="web-functions-env-lifecycle"></a>
 
 An execution environment is an isolated compute instance that runs your HTTP server. AWS Lambda creates execution environments for your Lambda Web Function when traffic arrives. It routes requests to active environments and removes environments that are no longer needed. Understanding this lifecycle helps you optimize startup performance and write code that handles initialization and shutdown correctly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference.ht
 ---
 
 # Reference
-<a name="reference"></a>
 
 Reference.
 

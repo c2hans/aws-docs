@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # RecommendationTriggerData
-<a name="API_amazon-q-connect_RecommendationTriggerData"></a>
 
 A union type containing information related to the trigger.
 

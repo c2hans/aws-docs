@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC01-BP05 Keep up-to-date with security recommendations
-<a name="sec_securely_operate_updated_recommendations"></a>
 
  Stay up-to-date with both AWS and industry security recommendations to evolve the security posture of your workload. [AWS Security Bulletins](https://aws.amazon.com/security/security-bulletins/?card-body.sort-by=item.additionalFields.bulletinDateSort&card-body.sort-order=desc&awsf.bulletins-year=year%232009) contain important information about security and privacy notifications.
 

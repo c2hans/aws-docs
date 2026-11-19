@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # UpdateOutpostResolver
-<a name="API_route53resolver_UpdateOutpostResolver"></a>
 
 You can use `UpdateOutpostResolver` to update the instance count, type, or name of a Resolver on an Outpost.
 

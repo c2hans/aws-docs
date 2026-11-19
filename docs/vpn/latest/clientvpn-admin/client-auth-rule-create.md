@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-auth-r
 ---
 
 # Create an AWS Client VPN endpoint security group rule
-<a name="client-auth-rule-create"></a>
 
 The default security group for the VPC applied when you associate a subnet with a Client VPN might restrict traffic from the default security group traffic that you want to allow, while simultaneously allowing traffic that you don't want. Use the following steps to create a Client VPN endpoint security group rule that either allows or restricts traffic for an endpoint security group associated with a resource or application. For more information about security group rules, see [Security groups for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html) in the *Amazon VPC User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # Endpoint
-<a name="API_dax_Endpoint"></a>
 
 Represents the information required for client programs to connect to the endpoint for a DAX cluster.
 

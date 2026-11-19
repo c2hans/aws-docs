@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateG
 ---
 
 # CreateGlossaryTerm
-<a name="API_CreateGlossaryTerm"></a>
 
 Creates a business glossary term.
 

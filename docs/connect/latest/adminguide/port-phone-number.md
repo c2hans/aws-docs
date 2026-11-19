@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/port-phone-num
 ---
 
 # Port a current phone number to Connect Customer
-<a name="port-phone-number"></a>
 
 You can port your existing phone numbers to your Connect Customer contact center.
 

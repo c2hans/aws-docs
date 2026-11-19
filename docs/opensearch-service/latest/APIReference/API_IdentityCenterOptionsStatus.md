@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # IdentityCenterOptionsStatus
-<a name="API_IdentityCenterOptionsStatus"></a>
 
 The status of IAM Identity Center configuration settings for a domain.
 

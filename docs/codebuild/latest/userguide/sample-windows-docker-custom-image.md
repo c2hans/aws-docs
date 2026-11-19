@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-window
 ---
 
 # Windows Docker builds sample for CodeBuild
-<a name="sample-windows-docker-custom-image"></a>
 
 The following sample builds and runs a Windows Docker image by using CodeBuild.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/best-pract
 ---
 
 # Best practices for AWS Control Tower administrators
-<a name="best-practices"></a>
 
 This topic is intended primarily for management account administrators.
 

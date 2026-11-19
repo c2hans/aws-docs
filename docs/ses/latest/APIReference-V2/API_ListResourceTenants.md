@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListResou
 ---
 
 # ListResourceTenants
-<a name="API_ListResourceTenants"></a>
 
 List all tenants associated with a specific resource.
 

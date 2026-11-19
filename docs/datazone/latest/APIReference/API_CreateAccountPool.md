@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateA
 ---
 
 # CreateAccountPool
-<a name="API_CreateAccountPool"></a>
 
 Creates an account pool.
 

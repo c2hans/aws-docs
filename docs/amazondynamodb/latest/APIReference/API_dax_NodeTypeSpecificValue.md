@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # NodeTypeSpecificValue
-<a name="API_dax_NodeTypeSpecificValue"></a>
 
 Represents a parameter value that is applicable to a particular node type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-gc
 ---
 
 # Remediating exposures for GCP Cloud SQL instances
-<a name="exposure-gcp-sql"></a>
 
 AWS Security Hub can generate exposure findings for GCP Cloud SQL instances.
 

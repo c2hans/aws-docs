@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 ## Architecture diagram
 <a name="architecture-diagram"></a>

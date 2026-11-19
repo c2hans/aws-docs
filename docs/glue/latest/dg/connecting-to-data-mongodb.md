@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-mongod
 ---
 
 # Connecting to MongoDB in AWS Glue Studio
-<a name="connecting-to-data-mongodb"></a>
 
  AWS Glue provides built-in support for MongoDB. AWS Glue Studio provides a visual interface to connect to MongoDB, author data integration jobs, and run them on the AWS Glue Studio serverless Spark runtime.
 

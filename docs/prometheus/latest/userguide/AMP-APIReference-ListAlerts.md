@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # ListAlerts
-<a name="AMP-APIReference-ListAlerts"></a>
 
 The `ListAlerts` operation retrieves currently active alerts in the workspace.
 

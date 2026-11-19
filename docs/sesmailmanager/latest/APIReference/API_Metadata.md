@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_M
 ---
 
 # Metadata
-<a name="API_Metadata"></a>
 
 The metadata about the email.
 

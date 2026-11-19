@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Listene
 ---
 
 # Listener
-<a name="API_Listener"></a>
 
 An object that represents a listener for a virtual node.
 

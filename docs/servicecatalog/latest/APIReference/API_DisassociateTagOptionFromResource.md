@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DisassociateTagOptionFromResource
-<a name="API_DisassociateTagOptionFromResource"></a>
 
 Disassociates the specified TagOption from the specified resource.
 

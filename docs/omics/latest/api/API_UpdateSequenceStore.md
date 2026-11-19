@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_UpdateSequenceStore
 ---
 
 # UpdateSequenceStore
-<a name="API_UpdateSequenceStore"></a>
 
 Update one or more parameters for the sequence store.
 

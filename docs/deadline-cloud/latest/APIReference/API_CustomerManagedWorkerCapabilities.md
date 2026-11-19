@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # CustomerManagedWorkerCapabilities
-<a name="API_CustomerManagedWorkerCapabilities"></a>
 
 The worker capabilities for a customer managed workflow.
 

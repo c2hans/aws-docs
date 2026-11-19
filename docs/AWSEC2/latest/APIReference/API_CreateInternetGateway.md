@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateInt
 ---
 
 # CreateInternetGateway
-<a name="API_CreateInternetGateway"></a>
 
 Creates an internet gateway for use with a VPC. After creating the internet gateway, you attach it to a VPC using [AttachInternetGateway](API_AttachInternetGateway.md).
 

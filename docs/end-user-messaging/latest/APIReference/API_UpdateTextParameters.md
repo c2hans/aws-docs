@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # UpdateTextParameters
-<a name="API_UpdateTextParameters"></a>
 
 The updated delivery parameters for the text channel. Absent members preserve the current value, and the empty sentinel on a member clears it.
 

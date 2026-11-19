@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-dashboard.
 ---
 
 # AWS DRS recovery dashboard
-<a name="recovery-dashboard"></a>
 
 The **Recovery dashboard** tab allows you to monitor the server, its data replication status, and view events and metrics in CloudTrail.
 

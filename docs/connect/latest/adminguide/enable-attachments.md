@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-attachm
 ---
 
 # Enable attachments in your CCP so customers and agents can share and upload files
-<a name="enable-attachments"></a>
 
 You can allow customers and agents to share files using chat, email, and tasks, and allow agents to upload files to cases. After you complete the steps in this topic, an attachment icon automatically appears in your agent's Contact Control Panel so they can share attachments on chats, emails, and tasks.
 

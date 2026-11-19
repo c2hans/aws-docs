@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/smb-acl.html
 ---
 
 # Using Windows ACLs to limit SMB file share access
-<a name="smb-acl"></a>
 
 Amazon S3 file gateway supports two different methods for controlling access to files and directories that are stored through an SMB file share: POSIX permissions, or Windows ACLs.
 

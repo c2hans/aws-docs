@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/static-graphic-
 ---
 
 # Static graphic overlay commands
-<a name="static-graphic-overlay-commands"></a>
 
 | Nickname | Action | Signature | Description |
 | --- | --- | --- | --- |

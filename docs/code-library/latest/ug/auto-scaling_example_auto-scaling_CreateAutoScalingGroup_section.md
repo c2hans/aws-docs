@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/auto-scaling_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `CreateAutoScalingGroup` with an AWS SDK or CLI
-<a name="auto-scaling_example_auto-scaling_CreateAutoScalingGroup_section"></a>
 
 The following code examples show how to use `CreateAutoScalingGroup`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # QueryTemporalRangeMax
-<a name="API_query_QueryTemporalRangeMax"></a>
 
 Provides insights into the table with the most sub-optimal temporal pruning scanned by your query.
 

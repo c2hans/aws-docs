@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeF
 ---
 
 # DescribeFastLaunchImagesSuccessItem
-<a name="API_DescribeFastLaunchImagesSuccessItem"></a>
 
 Describe details about a Windows image with Windows fast launch enabled that meets the requested criteria. Criteria are defined by the `DescribeFastLaunchImages` action filters.
 

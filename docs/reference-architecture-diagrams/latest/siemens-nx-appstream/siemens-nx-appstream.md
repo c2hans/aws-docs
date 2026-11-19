@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Siemens NX on Amazon WorkSpaces Applications
-<a name="siemens-nx-appstream"></a>
 
 Publication date: **2021 ([Diagram history](#snxa-diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateSnaplo
 ---
 
 # UpdateSnaplockConfiguration
-<a name="API_UpdateSnaplockConfiguration"></a>
 
 Updates the SnapLock configuration for an existing FSx for ONTAP volume.
 

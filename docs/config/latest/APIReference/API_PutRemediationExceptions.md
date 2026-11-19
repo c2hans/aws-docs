@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutRemedi
 ---
 
 # PutRemediationExceptions
-<a name="API_PutRemediationExceptions"></a>
 
 A remediation exception is when a specified resource is no longer considered for auto-remediation. This API adds a new exception or updates an existing exception for a specified resource with a specified AWS Config rule.
 

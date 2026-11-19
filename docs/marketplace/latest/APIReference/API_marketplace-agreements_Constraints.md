@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Constraints
-<a name="API_marketplace-agreements_Constraints"></a>
 
 Defines limits on how the term can be configured by acceptors.
 

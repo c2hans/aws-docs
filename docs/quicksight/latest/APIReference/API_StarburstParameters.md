@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Starb
 ---
 
 # StarburstParameters
-<a name="API_StarburstParameters"></a>
 
 The parameters that are required to connect to a Starburst data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/manage-vpn-concentrato
 ---
 
 # Manage AWS Site-to-Site VPN Concentrator tags
-<a name="manage-vpn-concentrator-tags"></a>
 
 Tags are key-value pairs that help you organize and manage your Site-to-Site VPN Concentrators. You can use tags to categorize Site-to-Site VPN Concentrators by purpose, environment, cost center, or any other criteria that makes sense for your organization.
 

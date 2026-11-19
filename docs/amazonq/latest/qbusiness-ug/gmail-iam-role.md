@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/gmail-iam-ro
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # IAM role for Amazon Q Business Gmail connector
-<a name="gmail-iam-role"></a>
 
 **Note**
 **Applies to both connector versions:** The IAM role requirements are the same for both the new and original Gmail connectors. However, the new connector automatically handles VPC configurations, while the original connector allows manual VPC setup.

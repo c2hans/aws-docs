@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListFields
-<a name="API_connect-cases_ListFields"></a>
 
 Lists all fields in a Cases domain.
 

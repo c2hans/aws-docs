@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_ListD
 ---
 
 # ListDocumentClassifiers
-<a name="API_ListDocumentClassifiers"></a>
 
 Gets a list of the document classifiers that you have created.
 

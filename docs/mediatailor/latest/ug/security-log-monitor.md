@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/security-log-monit
 ---
 
 # Logging and monitoring in MediaTailor
-<a name="security-log-monitor"></a>
 
 This section provides an overview of the options for logging and monitoring in AWS Elemental MediaTailor for security purposes. For more information about logging and monitoring in MediaTailor see [Monitoring and tagging AWS Elemental MediaTailor resources](monitoring.md).
 

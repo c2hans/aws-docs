@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetNetworkResourceRelationships
-<a name="API_GetNetworkResourceRelationships"></a>
 
 Gets the network resource relationships for the specified global network.
 

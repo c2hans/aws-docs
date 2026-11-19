@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/analysis-ru
 ---
 
 # List analysis rule
-<a name="analysis-rules-list"></a>
 
 In AWS Clean Rooms, a *list analysis rule* outputs row-level lists of the overlap between the configured table that it's added to and the configured tables of the member who can query. The member who can query runs queries that include a list analysis rule.
 

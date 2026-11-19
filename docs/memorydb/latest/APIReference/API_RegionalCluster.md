@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Regiona
 ---
 
 # RegionalCluster
-<a name="API_RegionalCluster"></a>
 
 Represents a Regional cluster
 

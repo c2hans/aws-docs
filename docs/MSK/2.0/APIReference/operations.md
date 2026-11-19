@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSK/2.0/APIReference/operations.html
 ---
 
 # Operations
-<a name="operations"></a>
 
 The Amazon Managed Streaming for Apache Kafka REST API includes the following operations.
 + [CreateClusterV2](v2-clusters.md#CreateClusterV2)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/startup-res
 ---
 
 # AWS Startup Resiliency Baseline
-<a name="introduction"></a>
 
 *Igor Fil, Dylan McCarroll, and Parth Shah, Amazon Web Services*
 

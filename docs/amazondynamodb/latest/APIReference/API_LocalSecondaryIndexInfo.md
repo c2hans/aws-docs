@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_L
 ---
 
 # LocalSecondaryIndexInfo
-<a name="API_LocalSecondaryIndexInfo"></a>
 
 Represents the properties of a local secondary index for the table when the backup was created.
 

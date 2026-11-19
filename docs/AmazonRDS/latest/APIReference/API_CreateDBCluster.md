@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateDBCluster
-<a name="API_CreateDBCluster"></a>
 
 Creates a new Amazon Aurora DB cluster or Multi-AZ DB cluster.
 

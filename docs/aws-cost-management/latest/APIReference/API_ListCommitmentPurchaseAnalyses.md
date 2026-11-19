@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListCommitmentPurchaseAnalyses
-<a name="API_ListCommitmentPurchaseAnalyses"></a>
 
 Lists the commitment purchase analyses for your account.
 

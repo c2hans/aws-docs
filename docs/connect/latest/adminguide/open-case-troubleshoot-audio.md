@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/open-case-trou
 ---
 
 # Open a case for call quality issues
-<a name="open-case-troubleshoot-audio"></a>
 
 If your contact center has call quality issues that persist even after performing the [recommended troubleshooting steps](sop-audio-qa.md), open a case for Support to help you investigate the issue. Provide the following information in your case.
 

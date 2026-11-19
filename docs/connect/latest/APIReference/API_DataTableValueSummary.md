@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTabl
 ---
 
 # DataTableValueSummary
-<a name="API_DataTableValueSummary"></a>
 
 A data table value summary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/examples-ct.html
 ---
 
 # Custom Terminology example using the AWS SDK for Python (Boto)
-<a name="examples-ct"></a>
 
 The following example shows how to use the Custom Terminology operations in Python. To run the example, install the Python SDK via the AWS CLI. For instructions, see [Install and configure the AWS Command Line Interface (AWS CLI)](setting-up.md#setup-awscli).
 

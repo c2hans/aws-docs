@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/MaintenanceTes
 ---
 
 # Testing your gateway connection to the internet
-<a name="MaintenanceTestGatewayConnectivity-common"></a>
 
 You can use your gateway's local console to test your internet connection. This test can be useful when you are troubleshooting network issues with your gateway.
 

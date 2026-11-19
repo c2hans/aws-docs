@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DescribeImport
-<a name="API_DescribeImport"></a>
 
  Represents the properties of the import.
 

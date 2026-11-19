@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Service - Oracle Database@AWS
-<a name="list_odb"></a>
 
 AWS Service - Oracle Database@AWS (service prefix: `odb`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

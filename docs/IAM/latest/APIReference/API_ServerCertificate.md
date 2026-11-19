@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ServerCertif
 ---
 
 # ServerCertificate
-<a name="API_ServerCertificate"></a>
 
 Contains information about a server certificate.
 

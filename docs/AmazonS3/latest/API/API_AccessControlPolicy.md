@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AccessControlPol
 ---
 
 # AccessControlPolicy
-<a name="API_AccessControlPolicy"></a>
 
 Contains the elements that set the ACL permissions for an object per grantee.
 

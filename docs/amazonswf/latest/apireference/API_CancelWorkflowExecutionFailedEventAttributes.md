@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Cancel
 ---
 
 # CancelWorkflowExecutionFailedEventAttributes
-<a name="API_CancelWorkflowExecutionFailedEventAttributes"></a>
 
 Provides the details of the `CancelWorkflowExecutionFailed` event.
 

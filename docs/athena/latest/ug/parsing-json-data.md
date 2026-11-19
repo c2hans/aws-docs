@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/parsing-json-data.html
 ---
 
 # Best practices for reading JSON data
-<a name="parsing-json-data"></a>
 
 JavaScript Object Notation (JSON) is a common method for encoding data structures as text. Many applications and tools output data that is JSON-encoded.
 

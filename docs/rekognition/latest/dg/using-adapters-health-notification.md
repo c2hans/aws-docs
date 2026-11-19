@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/using-adapters-hea
 ---
 
 # AWS Health Dashboard notfication for Rekognition
-<a name="using-adapters-health-notification"></a>
 
  Your AWS Health Dashboard provides support for notifications that come from Rekognition. These notifications provide awareness and remediation guidance on scheduled changes in Rekognition Models that may affect your applications. Only events that are specific to the Rekognition Content Moderation feature are currently available.
 

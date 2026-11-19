@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Upd
 ---
 
 # UpdateChannelGroup
-<a name="API_UpdateChannelGroup"></a>
 
 Update the specified channel group. You can edit the description on a channel group for easier identification later from the AWS Elemental MediaPackage console. You can't edit the name of the channel group.
 

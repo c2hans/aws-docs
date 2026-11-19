@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSourceSummary
-<a name="API_DataSourceSummary"></a>
 
 A `DataSourceSummary` object that returns a summary of a data source.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/kro.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Resource Composition with kro (Kube Resource Orchestrator)
-<a name="kro"></a>
 
  **kro (Kube Resource Orchestrator)** is an open-source, Kubernetes-native project that allows you to define custom Kubernetes APIs using simple and straightforward configuration. With kro, you can easily configure new custom APIs that create a group of Kubernetes objects and the logical operations between them.
 

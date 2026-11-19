@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-common-erro
 ---
 
 # Common errors
-<a name="acxd-common-errors"></a>
 
 This section lists the error types that the ACXD SDK may return.
 

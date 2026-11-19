@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/im
 ---
 
 # Implement SAML 2.0 authentication for Amazon WorkSpaces by using Auth0 and AWS Managed Microsoft AD
-<a name="implement-saml-authentication-for-amazon-workspaces-by-using-auth0-and-aws-managed-microsoft-ad"></a>
 
 *Siva Vinnakota and Shantanu Padhye, Amazon Web Services*
 

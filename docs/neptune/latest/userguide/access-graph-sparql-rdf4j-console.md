@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-sp
 ---
 
 # Using the RDF4J console to connect to a Neptune DB instance
-<a name="access-graph-sparql-rdf4j-console"></a>
 
 The RDF4J Console allows you to experiment with Resource Description Framework (RDF) graphs and queries in a REPL (read-eval-print loop) environment.
 

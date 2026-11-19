@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Availab
 ---
 
 # AvailabilityZone
-<a name="API_AvailabilityZone"></a>
 
 Indicates if the cluster has a Multi-AZ configuration (multiaz) or not (singleaz).
 

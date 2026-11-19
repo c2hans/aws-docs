@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/using
 ---
 
 # Using AWS Resource Explorer to search for resources
-<a name="using-search"></a>
 
 AWS Resource Explorer provides immediate search capabilities for your AWS resources without requiring manual setup. When you access Resource Explorer with the appropriate permissions, the service automatically enables resource search functionality in your account. You can use the AWS Management Console or the AWS Command Line Interface (AWS CLI) to search for resources using Resource Explorer.
 

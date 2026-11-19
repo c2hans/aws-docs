@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 ---
 
 # Parameter values elements for job bundles
-<a name="build-job-bundle-parameters"></a>
 
 You can use the parameters file to set the values of some of the job parameters in the job template or [CreateJob](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateJob.html) operation request arguments in the job bundle so that you don't need to set values when submitting a job. The UI for job submission enables you to modify these values.
 

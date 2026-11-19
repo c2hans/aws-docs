@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RdsRequireme
 ---
 
 # RdsRequirements
-<a name="API_RdsRequirements"></a>
 
 Provides information that describes the requirements to the target engine on Amazon RDS.
 

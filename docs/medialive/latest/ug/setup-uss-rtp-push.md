@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-uss-rtp-push.h
 ---
 
 # Ensure correct setup on the upstream system
-<a name="setup-uss-rtp-push"></a>
 
 You must make sure that the upstream system pushes content to the correct locations in MediaLive.
 

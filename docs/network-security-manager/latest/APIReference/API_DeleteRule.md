@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # DeleteRule
-<a name="API_DeleteRule"></a>
 
 Deletes the specified rule.
 

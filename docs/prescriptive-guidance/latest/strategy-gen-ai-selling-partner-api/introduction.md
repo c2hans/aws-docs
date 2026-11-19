@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Enabling business reporting and generative AI capabilities for Amazon selling partners
-<a name="introduction"></a>
 
 *Manikanta Gona and Hina Vinayak, Amazon Web Services*
 

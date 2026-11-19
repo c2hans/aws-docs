@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpGat
 ---
 
 # HttpGatewayRouteRewrite
-<a name="API_HttpGatewayRouteRewrite"></a>
 
 An object representing the gateway route to rewrite.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateVPCFromHostedZone
-<a name="API_DisassociateVPCFromHostedZone"></a>
 
 Disassociates an Amazon Virtual Private Cloud (Amazon VPC) from an Amazon Route 53 private hosted zone. Note the following:
 + You can't disassociate the last Amazon VPC from a private hosted zone.

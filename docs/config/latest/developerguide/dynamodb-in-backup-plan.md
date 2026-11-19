@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-in
 ---
 
 # dynamodb-in-backup-plan
-<a name="dynamodb-in-backup-plan"></a>
 
 Checks if an Amazon DynamoDB table is present in AWS Backup plans. The rule is NON\_COMPLIANT if DynamoDB tables are not present in any AWS Backup plan.
 

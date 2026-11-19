@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # Credential
-<a name="API_voice-chime_Credential"></a>
 
 The SIP credentials used to authenticate requests to an Amazon Chime SDK Voice Connector.
 

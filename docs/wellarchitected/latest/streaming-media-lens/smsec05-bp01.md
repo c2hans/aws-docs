@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMSEC05-BP01 Use distributed denial of service (DDoS) protection service to maintain content availability
-<a name="smsec05-bp01"></a>
 
 It is important to respond to threats and other attacks by protecting your origin and using tools to block or mitigate malicious requests.
 

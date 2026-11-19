@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Lis
 ---
 
 # ListCertificates
-<a name="API_ListCertificates"></a>
 
 For the specified directory, lists all the certificates registered for a secure LDAP or client certificate authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteS
 ---
 
 # DeleteServer
-<a name="API_DeleteServer"></a>
 
 Deletes the file transfer protocol-enabled server that you specify.
 

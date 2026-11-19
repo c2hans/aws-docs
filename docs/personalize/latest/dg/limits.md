@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/limits.html
 ---
 
 # Amazon Personalize endpoints and quotas
-<a name="limits"></a>
 
 The following sections contain information about Amazon Personalize guidelines, quotas, and endpoints. For adjustable quotas, you can request a quota increase using the [Service Quotas console](https://console.aws.amazon.com/servicequotas/). For more information, see [Requesting a quota increase](#requesting-limit-increase).
 

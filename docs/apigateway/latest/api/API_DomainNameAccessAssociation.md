@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DomainNameAcce
 ---
 
 # DomainNameAccessAssociation
-<a name="API_DomainNameAccessAssociation"></a>
 
 Represents a domain name access association between an access association source and a private custom domain name. With a domain name access association, an access association source can invoke a private custom domain name while isolated from the public internet.
 

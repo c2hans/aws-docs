@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetInv
 ---
 
 # GetInvitationsCount
-<a name="API_GetInvitationsCount"></a>
 
 Returns the count of all GuardDuty membership invitations that were sent to the current member account except the currently accepted invitation.
 

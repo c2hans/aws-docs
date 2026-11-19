@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # FIXED\_COLUMN\_LOG\_PARSE
-<a name="sql-reference-fixed-column-log-parse"></a>
 
 Parses fixed-width fields and automatically converts them to the given SQL types.
 

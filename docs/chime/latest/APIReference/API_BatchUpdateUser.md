@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/APIReference/API_BatchUpdat
 **End of support notice**: On February 20, 2026, AWS will end support for the Amazon Chime service. After February 20, 2026, you will no longer be able to access the Amazon Chime console or Amazon Chime application resources. For more information, visit the [blog post](https://aws.amazon.com/blogs/messaging-and-targeting/update-on-support-for-amazon-chime/). **Note:** This does not impact the availability of the [Amazon Chime SDK service](https://aws.amazon.com/chime/chime-sdk/).
 
 # BatchUpdateUser
-<a name="API_BatchUpdateUser"></a>
 
 Updates user details within the [UpdateUserRequestItem](API_UpdateUserRequestItem.md) object for up to 20 users for the specified Amazon Chime account. Currently, only `LicenseType` updates are supported for this action.
 
@@ -78,7 +77,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [UserErrors](#API_BatchUpdateUser_ResponseSyntax) **   <a name="chime-BatchUpdateUser-response-UserErrors"></a>
-If the [BatchUpdateUser](#API_BatchUpdateUser) action fails for one or more of the user IDs in the request, a list of the user IDs is returned, along with error codes and error messages.
+If the [BatchUpdateUser](API_BatchUpdateUser.md) action fails for one or more of the user IDs in the request, a list of the user IDs is returned, along with error codes and error messages.
 Type: Array of [UserError](API_UserError.md) objects
 
 ## Errors

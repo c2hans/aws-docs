@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetails"></a>
 
 A host device to expose to the container.
 

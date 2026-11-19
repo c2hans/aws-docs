@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors.htm
 ---
 
 # Working with S3 Vectors and vector buckets
-<a name="s3-vectors"></a>
 
 ## What is Amazon S3 Vectors?
 <a name="s3-vectors-what-is"></a>

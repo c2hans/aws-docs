@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Analytical data platform for automotive OEMs on AWS
-<a name="guidance-overview"></a>
 
 Publication date: *January 2026 ([last update](revisions.md): July 2026)*
 

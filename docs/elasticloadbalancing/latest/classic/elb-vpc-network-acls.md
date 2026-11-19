@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-
 ---
 
 # Configure network ACLs for your Classic Load Balancer
-<a name="elb-vpc-network-acls"></a>
 
 The default network access control list (ACL) for a VPC allows all inbound and outbound traffic. If you create custom network ACLs, you must add rules that allow the load balancer and instances to communicate.
 

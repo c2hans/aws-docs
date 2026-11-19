@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/uninstall
 ---
 
 # Uninstall the guidance
-<a name="uninstall-the-solution"></a>
 
 You can uninstall the QnABot on AWS guidance from the AWS Management Console or by using the AWS Command Line Interface.
 

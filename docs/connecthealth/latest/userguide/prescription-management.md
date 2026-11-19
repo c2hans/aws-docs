@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/prescript
 ---
 
 # Prescription management
-<a name="prescription-management"></a>
 
 Prescription management is part of the agentic capabilities for patient access. It helps a verified patient request refills and check refill status for prescriptions through a health system pharmacy. Use it with patient verification on a pharmacy line. Callers reach it by phone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # GetId
-<a name="API_GetId"></a>
 
 Generates (or retrieves) IdentityID. Supplying multiple logins will create an implicit linked account.
 

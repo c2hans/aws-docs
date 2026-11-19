@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/pkcs11-prov
 ---
 
 # PKCS\#11 provider
-<a name="pkcs11-provider-component"></a>
 
 The PKCS\#11 provider component (`aws.greengrass.crypto.Pkcs11Provider`) enables you to configure the AWS IoT Greengrass Core software to use a hardware security module (HSM) through the [PKCS\#11 interface](https://en.wikipedia.org/wiki/PKCS_11). This component enables you to securely store certificate and private key files so that they aren't exposed or duplicated in software. For more information, see [Hardware security integration](hardware-security.md).
 

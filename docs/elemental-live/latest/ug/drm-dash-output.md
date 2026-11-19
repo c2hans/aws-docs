@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/drm-dash-output
 ---
 
 # DASH output
-<a name="drm-dash-output"></a>
 
 Encryption mode: Always AES CTR (AES-128)
 

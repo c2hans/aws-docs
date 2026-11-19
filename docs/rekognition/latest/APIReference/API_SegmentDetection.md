@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Segm
 ---
 
 # SegmentDetection
-<a name="API_SegmentDetection"></a>
 
 A technical cue or shot detection segment detected in a video. An array of `SegmentDetection` objects containing all segments detected in a stored video is returned by [GetSegmentDetection](API_GetSegmentDetection.md).
 

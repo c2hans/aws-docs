@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_StreamDe
 ---
 
 # StreamDescription
-<a name="API_StreamDescription"></a>
 
 Represents the output for [DescribeStream](API_DescribeStream.md).
 

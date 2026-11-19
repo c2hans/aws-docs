@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CloudVmClust
 ---
 
 # CloudVmClusterSummary
-<a name="API_CloudVmClusterSummary"></a>
 
 Information about a VM cluster.
 

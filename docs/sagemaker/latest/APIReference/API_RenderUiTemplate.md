@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Render
 ---
 
 # RenderUiTemplate
-<a name="API_RenderUiTemplate"></a>
 
 Renders the UI template so that you can preview the worker's experience.
 

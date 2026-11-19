@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/index-usage-monit
 ---
 
 # Monitor index storage usage
-<a name="index-usage-monitoring"></a>
 
 Index usage logs provide visibility into how your AWS Quick index storage is consumed across knowledge bases and Spaces, including file uploads. You can use these logs to track growth trends, identify the largest sources, detect unexpected spikes, and plan capacity.
 

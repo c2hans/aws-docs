@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Stoppi
 ---
 
 # StoppingCondition
-<a name="API_StoppingCondition"></a>
 
 Specifies a limit to how long a job can run. When the job reaches the time limit, SageMaker ends the job. Use this API to cap costs.
 

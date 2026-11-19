@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/app-blo
 ---
 
 # App Block Builder Actions
-<a name="app-block-builder-actions"></a>
 
 You can perform the following actions on an app block builder, depending on the current state (status) of the app block builder instance.
 

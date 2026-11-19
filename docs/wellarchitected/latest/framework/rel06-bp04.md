@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel06-b
 ---
 
 # REL06-BP04 Automate responses to alarms
-<a name="rel06-bp04"></a>
 
  Manual response to alarms introduces delay and the chance of human error. When you automate the response to a detected event, systems take corrective action in seconds and apply the same procedure every time. Automated responses range from healing a single failed component to redirecting traffic across Availability Zones or Regions.
 

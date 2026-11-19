@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAcces
 ---
 
 # Configuring MariaDB binary logging
-<a name="USER_LogAccess.MariaDB.BinaryFormat"></a>
 
 The *binary log* is a set of log files that contain information about data modifications made to a MariaDB server instance. The binary log contains information such as the following:
 + Events that describe database changes such as table creation or row modifications

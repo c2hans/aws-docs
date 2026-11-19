@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ListDisco
 ---
 
 # ListDiscoveredResources
-<a name="API_ListDiscoveredResources"></a>
 
 Returns a list of resource resource identifiers for the specified resource types for the resources of that type. A *resource identifier* includes the resource type, ID, and (if available) the custom resource name.
 

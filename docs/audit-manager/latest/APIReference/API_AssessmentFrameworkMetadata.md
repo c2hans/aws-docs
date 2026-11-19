@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentFrameworkMetadata
-<a name="API_AssessmentFrameworkMetadata"></a>
 
  The metadata that's associated with a standard framework or a custom framework.
 

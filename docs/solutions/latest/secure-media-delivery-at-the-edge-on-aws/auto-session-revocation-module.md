@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Auto session revocation module
-<a name="auto-session-revocation-module"></a>
 
 ![Diagram of auto session revocation module: Detect compromised sessions workflow.](https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/images/image7.png)
 

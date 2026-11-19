@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_IndexingRule.html
 ---
 
 # IndexingRule
-<a name="API_IndexingRule"></a>
 
  Rule used to determine the server-side sampling rate for spans ingested through the CloudWatchLogs destination and indexed by X-Ray.
 

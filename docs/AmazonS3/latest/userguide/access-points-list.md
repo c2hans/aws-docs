@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # List your access points for general purpose buckets
-<a name="access-points-list"></a>
 
 This section explains how to list your access points for general purpose buckets using the AWS Management Console, AWS Command Line Interface, or REST API.
 

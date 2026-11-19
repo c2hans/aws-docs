@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/monitoring-
 ---
 
 # Best practices for monitoring AWS CloudHSM
-<a name="best-practices"></a>
 
 Monitoring best practices can improve the security, performance, and reliability of your AWS CloudHSM cluster. Follow the [AWS CloudHSM monitoring best practices](https://docs.aws.amazon.com/cloudhsm/latest/userguide/bp-monitoring.html) in the AWS CloudHSM documentation. In addition, the following are some key guidelines that can help you effectively monitor your AWS CloudHSM resources:
 + **Establish baselines** – Set baseline metrics and thresholds for each workload, such as the number of expected session keys, token keys, and open sessions.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-storage.html
 ---
 
 # Choose storage
-<a name="plan-storage"></a>
 
 Principal storage is the first shared storage that VMware Cloud Foundation (VCF) uses when it creates a domain or cluster. It holds the VCF management appliances. Supplemental storage is storage that you add after VCF is deployed. The storage model of your hosts decides which principal storage you can use, so choose storage together with the instance type.
 

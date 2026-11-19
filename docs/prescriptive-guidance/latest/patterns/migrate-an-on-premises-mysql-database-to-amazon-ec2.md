@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises MySQL database to Amazon EC2
-<a name="migrate-an-on-premises-mysql-database-to-amazon-ec2"></a>
 
 *Lorenzo Mota, Amazon Web Services*
 

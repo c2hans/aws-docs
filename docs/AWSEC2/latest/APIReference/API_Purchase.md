@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Purchase.
 ---
 
 # Purchase
-<a name="API_Purchase"></a>
 
 Describes the result of the purchase.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/quotas.html
 ---
 
 # Quotas for AWS App Studio
-<a name="quotas"></a>
 
 The following table describes quotas and limits for AWS App Studio.
 

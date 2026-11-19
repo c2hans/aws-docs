@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/internetwork-p
 ---
 
 # Internetwork traffic privacy
-<a name="internetwork-privacy"></a>
 
 This topic describes how Amazon File Cache secures connections from the service to other locations.
 

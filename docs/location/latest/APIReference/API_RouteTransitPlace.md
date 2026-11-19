@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitPlace
-<a name="API_RouteTransitPlace"></a>
 
 Place details corresponding to the arrival or departure.
 

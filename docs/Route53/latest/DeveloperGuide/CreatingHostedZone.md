@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingHo
 ---
 
 # Creating a public hosted zone
-<a name="CreatingHostedZone"></a>
 
 A public hosted zone is a container that holds information about how you want to route traffic on the internet for a domain, such as example.com, and its subdomains (acme.example.com, zenith.example.com). After you create a hosted zone, you create records to route traffic for the domain and subdomains.
 

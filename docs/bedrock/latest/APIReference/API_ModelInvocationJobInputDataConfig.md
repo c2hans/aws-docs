@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ModelInv
 ---
 
 # ModelInvocationJobInputDataConfig
-<a name="API_ModelInvocationJobInputDataConfig"></a>
 
 Details about the location of the input to the batch inference job.
 

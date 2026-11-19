@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/changeStreamS
 ---
 
 # $changeStreamSplitLargeEvent
-<a name="changeStreamSplitLargeEvent"></a>
 
 This aggregation stage is not supported by Elastic clusters.
 

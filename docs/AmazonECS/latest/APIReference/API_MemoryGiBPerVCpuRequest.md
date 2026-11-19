@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Memory
 ---
 
 # MemoryGiBPerVCpuRequest
-<a name="API_MemoryGiBPerVCpuRequest"></a>
 
 The minimum and maximum amount of memory per vCPU in gibibytes (GiB). This helps ensure that instance types have the appropriate memory-to-CPU ratio for your workloads.
 

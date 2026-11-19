@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/test-agent-con
 ---
 
 # Verifying your agent's network connections
-<a name="test-agent-connections"></a>
 
 Once you activate your AWS DataSync agent, make sure that the agent has network connectivity to your storage system and the DataSync service.
 

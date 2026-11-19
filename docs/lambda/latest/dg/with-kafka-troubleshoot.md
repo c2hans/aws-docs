@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-kafka-troubleshoot
 ---
 
 # Troubleshooting Kafka event source mapping errors
-<a name="with-kafka-troubleshoot"></a>
 
 The following topics provide troubleshooting advice for errors and issues that you might encounter when using Amazon MSK or self-managed Apache Kafka with Lambda.
 

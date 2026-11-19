@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/hybrid-
 ---
 
 # Create the IAM service role required for Systems Manager in hybrid and multicloud environments
-<a name="hybrid-multicloud-service-role"></a>
 
 Non-EC2 (Amazon Elastic Compute Cloud) machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment require an AWS Identity and Access Management (IAM) service role to communicate with the AWS Systems Manager service. The role grants AWS Security Token Service (AWS STS) [`AssumeRole`](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) trust to the Systems Manager service. You only need to create a service role for a hybrid and multicloud environment once for each AWS account. However, you might choose to create multiple service roles for different hybrid activations if machines in your hybrid and multicloud environment require different permissions.
 

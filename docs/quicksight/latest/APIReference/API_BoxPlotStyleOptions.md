@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BoxPl
 ---
 
 # BoxPlotStyleOptions
-<a name="API_BoxPlotStyleOptions"></a>
 
 The style options of the box plot.
 

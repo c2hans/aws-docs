@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/get-started-sdk.html
 ---
 
 # Getting started (SDK)
-<a name="get-started-sdk"></a>
 
 AWS provides SDKs for various computer languages. The SDK manages many of the API connection details for your client, such as signature calculation, request retry handling, and error handling. For more information, see [AWS SDKs](https://aws.amazon.com/tools/#SDKs).
 

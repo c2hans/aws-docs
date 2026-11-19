@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReadOptions.html
 ---
 
 # ReadOptions
-<a name="API_ReadOptions"></a>
 
 Read options for an annotation import job.
 

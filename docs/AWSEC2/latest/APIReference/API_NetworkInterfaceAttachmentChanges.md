@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkIn
 ---
 
 # NetworkInterfaceAttachmentChanges
-<a name="API_NetworkInterfaceAttachmentChanges"></a>
 
 Describes an attachment change.
 

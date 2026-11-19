@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/comprehend
 ---
 
 # Guidelines and quotas
-<a name="comprehendmedical-quotas"></a>
 
 Keep the following information in mind when using Amazon Comprehend Medical.
 

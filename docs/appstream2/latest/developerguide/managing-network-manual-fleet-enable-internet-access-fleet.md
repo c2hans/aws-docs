@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/managin
 ---
 
 # Enable Internet Access for Your Fleet in Amazon WorkSpaces Applications
-<a name="managing-network-manual-fleet-enable-internet-access-fleet"></a>
 
 You can enable internet access either when you create the fleet or later.
 

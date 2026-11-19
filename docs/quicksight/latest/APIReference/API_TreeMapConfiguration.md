@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TreeM
 ---
 
 # TreeMapConfiguration
-<a name="API_TreeMapConfiguration"></a>
 
 The configuration of a tree map.
 

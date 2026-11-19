@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 ---
 
 # Complete the prerequisites
-<a name="serverless-endpoints-prerequisites"></a>
 
 The following topic describes the prerequisites that you must complete before creating a serverless endpoint. These prerequisites include properly storing your model artifacts, configuring an AWS IAM with the correct permissions, and selecting a container image.
 

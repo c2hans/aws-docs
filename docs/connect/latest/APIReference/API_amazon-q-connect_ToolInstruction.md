@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ToolInstruction
-<a name="API_amazon-q-connect_ToolInstruction"></a>
 
 Instructions for using a tool.
 

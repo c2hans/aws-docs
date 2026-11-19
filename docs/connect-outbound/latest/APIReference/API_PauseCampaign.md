@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # PauseCampaign
-<a name="API_connect-outbound-campaigns_PauseCampaign"></a>
 
 Pauses an outbound campaign. A paused outbound campaign can be resumed.
 

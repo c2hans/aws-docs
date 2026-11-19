@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_SamplingRateBoost.ht
 ---
 
 # SamplingRateBoost
-<a name="API_SamplingRateBoost"></a>
 
 Enable temporary sampling rate increases when you detect anomalies to improve visibility.
 

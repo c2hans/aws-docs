@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ListIdentityProviders
-<a name="API_ListIdentityProviders"></a>
 
 Lists the Active Directory identity providers for user-based subscriptions.
 

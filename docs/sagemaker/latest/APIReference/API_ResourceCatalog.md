@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Resour
 ---
 
 # ResourceCatalog
-<a name="API_ResourceCatalog"></a>
 
  A resource catalog containing all of the resources of a specific resource type within a resource owner account. For an example on sharing the Amazon SageMaker Feature Store `DefaultFeatureGroupCatalog`, see [Share Amazon SageMaker Catalog resource type](https://docs.aws.amazon.com/sagemaker/latest/APIReference/feature-store-cross-account-discoverability-share-sagemaker-catalog.html) in the Amazon SageMaker Developer Guide.
 

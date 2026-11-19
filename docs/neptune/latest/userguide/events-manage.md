@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/events-manage.h
 ---
 
 # Managing Neptune event notification subscriptions
-<a name="events-manage"></a>
 
 If you choose **Event subscriptions** in the navigation pane of the Neptune console, you can view subscription categories and a list of your current subscriptions.
 

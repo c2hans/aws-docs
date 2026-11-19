@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Co
 ---
 
 # Connecting to RDS for PostgreSQL with the Amazon Web Services (AWS) JDBC Driver
-<a name="PostgreSQL.Connecting.JDBCDriver"></a>
 
 The Amazon Web Services (AWS) JDBC Driver is designed as an advanced JDBC wrapper. This wrapper is complementary to and extends the functionality of an existing JDBC driver. The driver is drop-in compatible with the community pgJDBC driver.
 

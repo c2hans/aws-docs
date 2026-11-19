@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/query-raw-log
 ---
 
 # Querying raw logs in Detective
-<a name="query-raw-logs-detective"></a>
 
 After you integrate Detective with Security Lake, Detective begins pulling raw logs from Security Lake related to AWS CloudTrail management events and Amazon Virtual Private Cloud (Amazon VPC) Flow Logs.
 

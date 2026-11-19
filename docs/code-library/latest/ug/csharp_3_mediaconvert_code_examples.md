@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/csharp_3_mediacon
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # MediaConvert examples using SDK for .NET
-<a name="csharp_3_mediaconvert_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for .NET with MediaConvert.
 

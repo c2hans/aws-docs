@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dyn
 ---
 
 # Java Annotations for DynamoDB
-<a name="DynamoDBMapper.Annotations"></a>
 
 This section describes the annotations that are available for mapping your classes and properties to tables and attributes in Amazon DynamoDB.
 

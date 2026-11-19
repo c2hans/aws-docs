@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Advanced Distribution Management System on AWS
-<a name="advanced-distribution-management-system"></a>
 
 Publication date: **July 21, 2022 ([Diagram history](#adms-history))**
 

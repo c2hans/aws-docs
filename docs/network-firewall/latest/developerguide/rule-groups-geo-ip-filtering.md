@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Geographic IP filtering in Suricata compatible AWS Network Firewall rule groups
-<a name="rule-groups-geo-ip-filtering"></a>
 
 You can use Geographic IP filtering with **Suricata compatible rule strings** and with **standard Network Firewall stateful rule groups**. This optional filter matches country codes for the IP addresses of network traffic.
 

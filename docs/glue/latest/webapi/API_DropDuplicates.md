@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DropDuplicates.ht
 ---
 
 # DropDuplicates
-<a name="API_DropDuplicates"></a>
 
 Specifies a transform that removes rows of repeating data from a data set.
 

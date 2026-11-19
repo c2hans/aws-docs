@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticContainerRegistryPublicFullAccess
-<a name="AmazonElasticContainerRegistryPublicFullAccess"></a>
 
 **Description**: Provides administrative access to Amazon ECR Public resources
 

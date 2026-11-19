@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowExecution
-<a name="API_MaintenanceWindowExecution"></a>
 
 Describes the information about an execution of a maintenance window.
 

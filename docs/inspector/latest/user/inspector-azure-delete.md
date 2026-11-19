@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-azure-de
 ---
 
 # Deleting an Azure connector in Amazon Inspector
-<a name="inspector-azure-delete"></a>
 
 You can delete an Azure connector when you no longer want Amazon Inspector to scan resources in that Azure tenant.
 

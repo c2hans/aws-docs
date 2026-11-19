@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DeleteAppInputSource
-<a name="API_DeleteAppInputSource"></a>
 
 Deletes the input source and all of its imported resources from the AWS Resilience Hub application.
 

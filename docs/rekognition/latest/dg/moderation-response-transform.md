@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/moderation-respons
 ---
 
 # Testing Content Moderation version 7 and transforming the API response
-<a name="moderation-response-transform"></a>
 
 Rekognition updated the machine learning model for the image video components of Content Moderation label detection feature from version 6.1 to 7. This update enhanced overall accuracy, and introduced several new categories along with modifying others.
 

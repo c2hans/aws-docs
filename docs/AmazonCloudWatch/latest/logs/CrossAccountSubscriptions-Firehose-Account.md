@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CrossAccoun
 ---
 
 # Cross-account cross-Region account-level subscriptions using Firehose
-<a name="CrossAccountSubscriptions-Firehose-Account"></a>
 
 To share log data across accounts, you need to establish a log data sender and receiver:
 + **Log data sender**—gets the destination information from the recipient and lets CloudWatch Logs know that it is ready to send its log events to the specified destination. In the procedures in the rest of this section, the log data sender is shown with a fictional AWS account number of 111111111111.

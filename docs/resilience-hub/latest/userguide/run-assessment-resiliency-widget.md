@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/run-asse
 ---
 
 # Running resiliency assessments from Resiliency widget
-<a name="run-assessment-resiliency-widget"></a>
 
 For applications created in **myApplications** widget, you can now run resiliency assessments from the **Resiliency** widget and AWS Resilience Hub console. For more information about running resiliency assessments from AWS Resilience Hub console, see [Running resiliency assessments in AWS Resilience Hub](run-assessment.md).<a name="run-res-widget-new"></a>
 

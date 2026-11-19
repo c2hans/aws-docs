@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Certifica
 ---
 
 # CertificateAuthenticationRequest
-<a name="API_CertificateAuthenticationRequest"></a>
 
 Information about the client certificate to be used for authentication.
 

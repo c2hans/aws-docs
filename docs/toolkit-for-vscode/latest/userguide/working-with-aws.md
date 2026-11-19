@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/work
 ---
 
 # Working with AWS services and tools
-<a name="working-with-aws"></a>
 
 The AWS Toolkit for Visual Studio Code makes AWS services, tools, and resources available to you, directly in VS Code. The following is a list of guide topics covering each Toolkit for VS Code service and their features. Choose a service or tool for more information on what it does, how to set it up, and working with basic features.
 

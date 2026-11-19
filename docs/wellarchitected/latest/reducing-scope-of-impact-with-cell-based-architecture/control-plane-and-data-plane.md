@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Control plane and data plane
-<a name="control-plane-and-data-plane"></a>
 
  AWS separates most services into the concepts of *control plane* and *data plane*. These terms come from the world of networking, specifically routers. The router's data plane, which is its main function, is moving packets around based on rules. But the routing policies have to be created and distributed from somewhere, and that's where the control plane comes in.
 

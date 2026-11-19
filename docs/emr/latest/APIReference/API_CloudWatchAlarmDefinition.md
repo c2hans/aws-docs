@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_CloudWatchAl
 ---
 
 # CloudWatchAlarmDefinition
-<a name="API_CloudWatchAlarmDefinition"></a>
 
 The definition of a CloudWatch metric alarm, which determines when an automatic scaling activity is triggered. When the defined alarm conditions are satisfied, scaling activity begins.
 

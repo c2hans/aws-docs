@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_AccountSetti
 ---
 
 # AccountSettings
-<a name="API_AccountSettings"></a>
 
 The Resource Groups settings for this AWS account.
 

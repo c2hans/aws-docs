@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/sns.ht
 The AWS Mobile SDK for Unity is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Unity. For more information, see [What is the AWS Mobile SDK for Unity?](what-is-unity-plugin.md)
 
 # Amazon Simple Notification Service
-<a name="sns"></a>
 
 Using Amazon Simple Notification Service (SNS) and the Unity SDK, you can write iOS and Android apps that can receive mobile push notifications. For information about SNS, see [Amazon Simple Notification Service](https://aws.amazon.com/sns/).
 

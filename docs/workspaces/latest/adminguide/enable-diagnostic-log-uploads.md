@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/enable-diag
 ---
 
 # Enable diagnostic log uploads in WorkSpaces Personal
-<a name="enable-diagnostic-log-uploads"></a>
 
 To troubleshoot WorkSpaces client issues, enable automatic diagnostic log uploads. This is currently supported for Windows, macOS, Linux, and Web Access clients.
 

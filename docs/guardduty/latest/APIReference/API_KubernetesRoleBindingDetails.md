@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesRoleBindingDetails
-<a name="API_KubernetesRoleBindingDetails"></a>
 
 Contains information about the role binding that grants the permission defined in a Kubernetes role.
 

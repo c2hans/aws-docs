@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # Using Amazon Simple Storage Service Internet storage
-<a name="s3-apis-intro"></a>
 
 The AWS SDK for .NET supports [Amazon S3](https://aws.amazon.com/s3/), which is storage for the Internet. It is designed to make web-scale computing easier for developers.
 

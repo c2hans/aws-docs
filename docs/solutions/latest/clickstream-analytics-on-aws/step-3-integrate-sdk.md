@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Step 3: Integrate SDK
-<a name="step-3-integrate-sdk"></a>
 
  Once pipeline's status becomes `Active`, it is ready to receive clickstream data. Now you need to register an application to the pipeline, then you can integrate SDK into your application to enable it to send data to the pipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedW
 ---
 
 # ListedWebApp
-<a name="API_ListedWebApp"></a>
 
  a structure that contains details for the web app.
 

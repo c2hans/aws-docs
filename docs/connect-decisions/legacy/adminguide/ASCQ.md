@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/ASCQ
 ---
 
 # Amazon Q in AWS Supply Chain
-<a name="ASCQ"></a>
 
 The following APIs are used in Amazon Q in AWS Supply Chain.
 

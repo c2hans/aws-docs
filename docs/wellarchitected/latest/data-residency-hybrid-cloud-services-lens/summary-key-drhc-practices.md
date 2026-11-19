@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Summary of key DRHC practices across the six Well-Architected Framework pillars
-<a name="summary-key-drhc-practices"></a>
 
 ## Operations: Achieving operational excellence for hybrid edge workloads
 <a name="operations-achieving-operational-excellence-for-hybrid-edge-workloads."></a>

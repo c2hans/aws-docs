@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateFlow
-<a name="API_DisassociateFlow"></a>
 
 Disassociates a connect resource from a flow.
 

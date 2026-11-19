@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ParentHo
 ---
 
 # ParentHoursOfOperationConfig
-<a name="API_ParentHoursOfOperationConfig"></a>
 
 Contains configuration for the parent hours of operation.
 

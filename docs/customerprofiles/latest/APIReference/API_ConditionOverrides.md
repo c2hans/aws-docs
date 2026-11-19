@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ConditionOverrides
-<a name="API_connect-customer-profiles_ConditionOverrides"></a>
 
 An object to override the original condition block of a calculated attribute.
 

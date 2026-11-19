@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Api
-<a name="backend-appid-api"></a>
 
 This resource is an API that's used to provision AWS resources. Once provisioned, the resources are used to access your defined data models. The operation associated with this resource is `createBackendAPI`.
 

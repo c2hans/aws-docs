@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DeleteCacheSubnetGroup
-<a name="API_DeleteCacheSubnetGroup"></a>
 
 Deletes a cache subnet group.
 

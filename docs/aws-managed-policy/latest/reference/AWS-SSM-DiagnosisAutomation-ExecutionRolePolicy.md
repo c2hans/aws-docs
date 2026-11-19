@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS-
 ---
 
 # AWS-SSM-DiagnosisAutomation-ExecutionRolePolicy
-<a name="AWS-SSM-DiagnosisAutomation-ExecutionRolePolicy"></a>
 
 **Description**: Provide permission for Diagnosing issues with SSM services by executing activities defined within Automation Documents, primarily used for running the Automation documents in a target account/region setup by diagnosing SSM service health across all nodes.
 

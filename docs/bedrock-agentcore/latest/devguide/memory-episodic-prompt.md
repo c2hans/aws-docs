@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # System prompts for episodic memory strategy
-<a name="memory-episodic-prompt"></a>
 
 The episodic memory strategy includes instructions and output schemas in the default prompts for episode extraction, episode consolidation, and reflection generation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_JobCon
 ---
 
 # JobConfigSchemaVersionSummary
-<a name="API_JobConfigSchemaVersionSummary"></a>
 
 Provides summary information about a job configuration schema version.
 

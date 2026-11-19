@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Detection
-<a name="detection"></a>
 
 | CMSEC\_9: How do you monitor your in-vehicle software, components, and network for threats? |
 | --- |

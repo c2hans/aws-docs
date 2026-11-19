@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_FailedIt
 ---
 
 # FailedItem
-<a name="API_FailedItem"></a>
 
 Details of a resource that failed when trying to update it's association to a resource set.
 

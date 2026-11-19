@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PurchaseOrder
-<a name="API_marketplace-agreements_PurchaseOrder"></a>
 
 Contains information about a purchase order association to a charge within an agreement.
 

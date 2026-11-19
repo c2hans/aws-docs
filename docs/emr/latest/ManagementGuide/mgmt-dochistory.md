@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/mgmt-dochisto
 ---
 
 # Document history
-<a name="mgmt-dochistory"></a>
 
  The following table describes notable changes to the Amazon EMR Management Guide since the last release of Amazon EMR. For more information about specific released versions of Amazon EMR, see [About Amazon EMR Releases](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-components.html).
 

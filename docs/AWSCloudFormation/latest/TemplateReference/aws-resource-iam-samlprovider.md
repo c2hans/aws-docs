@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IAM::SAMLProvider
-<a name="aws-resource-iam-samlprovider"></a>
 
 Creates an IAM resource that describes an identity provider (IdP) that supports SAML 2.0.
 

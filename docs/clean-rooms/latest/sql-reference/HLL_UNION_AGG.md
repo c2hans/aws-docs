@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/HLL_UNI
 ---
 
 # HLL\_UNION\_AGG function
-<a name="HLL_UNION_AGG"></a>
 
 The HLL\_UNION\_AGG function combines multiple HLL sketches into a single, unified sketch. It uses the HyperLogLog (HLL) algorithm to combine a group of sketches into a single one. Queries can use the resulting buffers to compute approximate unique counts with the `hll_sketch_estimate` function.
 

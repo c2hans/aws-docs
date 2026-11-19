@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Disk forensics acquisition workflow
-<a name="disk-forensics-acquisition-workflow"></a>
 
  **Disk forensics acquisition workflow**
 

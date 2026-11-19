@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Viewing your rule groups in AWS Network Firewall
-<a name="rule-groups-v2-viewing"></a>
 
 The **Network Firewall rule groups** page lists the rule groups that you can use, organized into two tabs.
 

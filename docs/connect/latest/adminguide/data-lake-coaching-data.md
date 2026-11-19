@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-coac
 ---
 
 # Coaching data in the Connect Customer data lake
-<a name="data-lake-coaching-data"></a>
 
 The following table contains coaching data.
 

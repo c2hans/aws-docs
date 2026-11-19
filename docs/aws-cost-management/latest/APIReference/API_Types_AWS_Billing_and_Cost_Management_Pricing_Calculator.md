@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Pricing Calculator
-<a name="API_Types_AWS_Billing_and_Cost_Management_Pricing_Calculator"></a>
 
 The following data types are supported by AWS Pricing Calculator:
 +  [AddReservedInstanceAction](API_AWSBCMPricingCalculator_AddReservedInstanceAction.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_L
 ---
 
 # ListSessions
-<a name="API_ListSessions"></a>
 
 Lists sessions for the specified application. You can filter sessions by state and creation time.
 

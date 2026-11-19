@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AssociationOverview
-<a name="API_AssociationOverview"></a>
 
 Information about the association.
 

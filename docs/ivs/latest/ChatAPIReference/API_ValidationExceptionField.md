@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_Validati
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 This object is used in the ValidationException error.
 

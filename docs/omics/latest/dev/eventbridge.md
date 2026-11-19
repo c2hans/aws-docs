@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/eventbridge.html
 ---
 
 # Using EventBridge with AWS HealthOmics
-<a name="eventbridge"></a>
 
 HealthOmics sends events to Amazon EventBridge when resources change status. Resources include import jobs, export jobs, resource shares, workflows, tasks, and runs. For each type of resource, there is a list of status changes that generate an event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_WorkflowVersionList
 ---
 
 # WorkflowVersionListItem
-<a name="API_WorkflowVersionListItem"></a>
 
 A list of workflow version items.
 

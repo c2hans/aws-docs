@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/setting-
 ---
 
 # Setting timeout values in Amazon SWF
-<a name="setting-timeouts"></a>
 
 **Topics**
 + [Quotas on Timeout Values](#setting-timeouts-limits)

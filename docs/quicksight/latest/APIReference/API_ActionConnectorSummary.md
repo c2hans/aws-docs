@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Actio
 ---
 
 # ActionConnectorSummary
-<a name="API_ActionConnectorSummary"></a>
 
 Contains summary information about an action connector, used in list and search operations.
 

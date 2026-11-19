@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/user-interface
 ---
 
 # Component library in the Connect Customer UI builder
-<a name="user-interface-component-library-sg"></a>
 
 Connect Customer offers a library of UI components to build views. This [reference guide](https://d3irlmavjxd3d8.cloudfront.net/?path=/docs/overview--page) describes every component and how to configure it.
 

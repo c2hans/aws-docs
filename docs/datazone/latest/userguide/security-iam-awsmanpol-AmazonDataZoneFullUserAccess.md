@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/security-iam-a
 ---
 
 # AWS managed policy: AmazonDataZoneFullUserAccess
-<a name="security-iam-awsmanpol-AmazonDataZoneFullUserAccess"></a>
 
 This policy grants full access to Amazon DataZone, but it doesn't allow the management of domains, users, or associated accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCa
 ---
 
 # UpdateCaseActionDefinition
-<a name="API_UpdateCaseActionDefinition"></a>
 
 The `UpdateCase` action definition.
 

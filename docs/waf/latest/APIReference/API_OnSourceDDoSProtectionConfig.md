@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_OnSourceDDoS
 ---
 
 # OnSourceDDoSProtectionConfig
-<a name="API_OnSourceDDoSProtectionConfig"></a>
 
 Configures the level of DDoS protection that applies to web ACLs associated with Application Load Balancers.
 

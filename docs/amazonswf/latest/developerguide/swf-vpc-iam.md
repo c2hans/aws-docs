@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-vpc-
 ---
 
 # Amazon Virtual Private Cloud Endpoint Policies for Amazon SWF
-<a name="swf-vpc-iam"></a>
 
 You can create an Amazon VPC endpoint policy for Amazon SWF in which you specify the following:
 + The **principal** that can perform actions.

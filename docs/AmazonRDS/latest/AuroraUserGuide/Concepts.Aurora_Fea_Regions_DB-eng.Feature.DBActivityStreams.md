@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Supported Regions and Aurora DB engines for database activity streams
-<a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.DBActivityStreams"></a>
 
 By using database activity streams in Aurora, you can monitor and set alarms for auditing activity in your Aurora database. For more information, see [Monitoring Amazon Aurora with Database Activity Streams](DBActivityStreams.md).
 

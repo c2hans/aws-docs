@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ListPolicyVe
 ---
 
 # ListPolicyVersions
-<a name="API_ListPolicyVersions"></a>
 
 Returns a list of the versions for policies. Policies define the permissions for team resources.
 

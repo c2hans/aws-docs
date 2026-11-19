@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed
 ---
 
 # Add skills and tools
-<a name="bedrock-managed-agents-openai-skills-tools"></a>
 
 Skills provide reusable instructions. Tools perform operations. BMA reads skills from the execution environment and can connect to MCP servers that run in that environment.
 

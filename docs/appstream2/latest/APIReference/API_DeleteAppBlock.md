@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Delet
 ---
 
 # DeleteAppBlock
-<a name="API_DeleteAppBlock"></a>
 
 Deletes an app block.
 

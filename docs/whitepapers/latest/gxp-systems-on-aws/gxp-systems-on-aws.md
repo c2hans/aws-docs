@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/gx
 ---
 
 # GxP Systems on AWS
-<a name="gxp-systems-on-aws"></a>
 
 Publication date: **August 2026** ([Document revisions](document-revisions.md))
 

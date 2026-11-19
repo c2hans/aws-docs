@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ObjectVersion.ht
 ---
 
 # ObjectVersion
-<a name="API_ObjectVersion"></a>
 
 The version of an object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # VPN
-<a name="vpn"></a>
 
  There are various ways to set up VPN to AWS:
 

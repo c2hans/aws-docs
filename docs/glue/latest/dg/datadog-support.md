@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/datadog-support.html
 ---
 
 # AWS Glue support for Datadog
-<a name="datadog-support"></a>
 
 AWS Glue supports Datadog as follows:
 

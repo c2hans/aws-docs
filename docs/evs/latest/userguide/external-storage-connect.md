@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/external-storage-co
 ---
 
 # Connect external storage
-<a name="external-storage-connect"></a>
 
 You can add external storage to the ESX hosts in a running Amazon Elastic VMware Service environment. You add each datastore in vSphere after the environment is running, next to the storage that the hosts already use. You can use the procedures on this page with VCF 5.x and VCF 9.x environments, in either deployment mode.
 

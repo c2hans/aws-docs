@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Getting started
-<a name="getting-started"></a>
 
  After [deploying the guidance](deployment.md), refer to this section to quickly learn how to leverage the Clickstream Analytics on AWS guidance to collect and analyze clickstream data from your applications. This chapter shows you how to create a serverless data pipeline to collect data from an application, and use Analytics Studio to view the out-of-the-box user lifecycle dashboard and query the clickstream data with exploration analytics.
 +  [Step 1: Create a project](step-1-create-a-project.md).

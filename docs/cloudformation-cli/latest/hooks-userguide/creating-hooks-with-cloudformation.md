@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Create Hooks using CloudFormation templates
-<a name="creating-hooks-with-cloudformation"></a>
 
 This page provides links to sample CloudFormation templates and technical reference topics for Hooks.
 

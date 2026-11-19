@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/grant-access-t
 ---
 
 # Grant access to managed Amazon Redshift assets in Amazon DataZone
-<a name="grant-access-to-redshift-asset"></a>
 
 When a subscription to an Amazon Redshift table or view is approved, Amazon DataZone can automatically add the subscribed asset to all the data warehouse environments within the project, so that members of the project can query the data using the Amazon Redshift query editor link within their environments. Under the hood, Amazon DataZone, creates the necessary grants and datashares between the source and the subscription target.
 

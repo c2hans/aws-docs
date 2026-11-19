@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Create HAR files to troubleshoot Lightsail issues
-<a name="amazon-lightsail-create-har-file"></a>
 
 If you're experiencing difficulties with the Amazon Lightsail console or a Lightsail virtual private server (VPS), Support might ask you to submit a HAR file from your web browser. A HAR file contains critical information that can help troubleshoot common, and hard to diagnose issues. The HAR file also allows Support to investigate or replicate these issues.
 

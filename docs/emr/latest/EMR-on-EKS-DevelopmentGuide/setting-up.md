@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Setting up Amazon EMR on EKS
-<a name="setting-up"></a>
 
 Complete the following tasks to get set up for Amazon EMR on EKS. If you've already signed up for Amazon Web Services (AWS) and have been using Amazon EKS, you are almost ready to use Amazon EMR on EKS. Skip any of the tasks that you've already completed.
 

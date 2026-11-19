@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-r2r-table.htm
 ---
 
 # Available Ready2Run workflows in HealthOmics
-<a name="workflows-r2r-table"></a>
 
 The following table lists the Ready2Run workflows that are available in HealthOmics.
 

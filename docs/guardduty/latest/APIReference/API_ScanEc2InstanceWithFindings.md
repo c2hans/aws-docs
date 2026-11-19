@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanEc
 ---
 
 # ScanEc2InstanceWithFindings
-<a name="API_ScanEc2InstanceWithFindings"></a>
 
 Describes whether Malware Protection for EC2 instances with findings will be enabled as a data source.
 

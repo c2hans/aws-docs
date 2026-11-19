@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/flat-rate
 ---
 
 # Flat-rate billing for dedicated connections
-<a name="flat-rate-connections"></a>
 
 Direct Connect offers flat-rate as a new billing mode for dedicated connections, available alongside the existing pay-as-you-go model. You set the billing mode per connection, and you can switch a connection back to pay-as-you-go at any time. Flat-rate billing introduces **port-pairs**, a recommended setup that builds resiliency into your connection by default.
 

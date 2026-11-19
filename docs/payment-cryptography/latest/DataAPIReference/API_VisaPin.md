@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # VisaPin
-<a name="API_VisaPin"></a>
 
 Parameters that are required to generate or verify Visa PIN.
 

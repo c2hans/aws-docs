@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoip-ipam-ipv
 ---
 
 # Bring your own IPv6 CIDR to IPAM using only the AWS CLI
-<a name="tutorials-byoip-ipam-ipv6"></a>
 
 Follow these steps to bring an IPv6 CIDR to IPAM and allocate a VPC using only the AWS CLI.
 

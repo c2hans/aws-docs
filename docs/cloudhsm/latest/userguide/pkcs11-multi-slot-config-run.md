@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-multi-s
 ---
 
 # Configure the PKCS \#11 library for multi-slot functionality for AWS CloudHSM
-<a name="pkcs11-multi-slot-config-run"></a>
 
 To configure your PKCS \#11 library for multi-slot functionality for AWS CloudHSM, follow these steps:
 

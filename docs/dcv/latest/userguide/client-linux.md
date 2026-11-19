@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/client-linux.html
 ---
 
 # Linux client
-<a name="client-linux"></a>
 
 The Linux client runs natively on the operating system. You can use it to connect to Amazon DCV sessions that are hosted on Windows and Linux Amazon DCV servers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/guided-campaig
 ---
 
 # Guided Campaign Builder
-<a name="guided-campaign-builder"></a>
 
 1.  Open the Connect Customer Outbound campaigns page from the Connect Customer admin website.
 ![The Connect Customer navigation menu showing the Outbound campaigns option left navigation pane.](https://docs.aws.amazon.com/connect/latest/adminguide/images/how-to-create-campaigns-1.png)

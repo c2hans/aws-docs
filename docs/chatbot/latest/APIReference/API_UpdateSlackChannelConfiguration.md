@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_UpdateSl
 ---
 
 # UpdateSlackChannelConfiguration
-<a name="API_UpdateSlackChannelConfiguration"></a>
 
 Updates a Slack channel configuration.
 

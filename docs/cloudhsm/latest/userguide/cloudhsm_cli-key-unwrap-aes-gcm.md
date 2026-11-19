@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-k
 ---
 
 # Unwrap a key with AES-GCM using CloudHSM CLI
-<a name="cloudhsm_cli-key-unwrap-aes-gcm"></a>
 
 Use the **key unwrap aes-gcm** command in CloudHSM CLI to unwrap a payload key into the cluster using the AES wrapping key and the `AES-GCM` unwrapping mechanism.
 

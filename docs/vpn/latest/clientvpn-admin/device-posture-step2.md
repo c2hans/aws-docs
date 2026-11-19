@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Step 2: Author an authorization policy
-<a name="device-posture-step2"></a>
 
 An authorization policy is a Cedar document that defines the requirements a connection must meet. Client VPN evaluates the policy against a context made up of three kinds of information:
 + Device signals — the health signals carried in the device posture token. Namespaces: `context.crowdstrike.*`, `context.jamf.*`, `context.jumpcloud.*`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/network-migration-api-perm
 ---
 
 # Network Migration API permissions
-<a name="network-migration-api-permissions"></a>
 
 The Network Migration APIs allow you to automate the migration of network infrastructure from VMware to AWS. To use these APIs, attach both the [AWSApplicationMigrationNetworkMigrationMultiAccount](security-iam-awsmanpol-AWSApplicationMigrationNetworkMigrationMultiAccount.md#security-iam-awsmanpol-AWSApplicationMigrationNetworkMigrationMultiAccount.title) managed policy and the following custom policy to your IAM identity.
 

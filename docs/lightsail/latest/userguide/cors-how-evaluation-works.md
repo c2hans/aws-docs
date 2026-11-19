@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/cors-how-eval
 ---
 
 # How Lightsail evaluates CORS configurations
-<a name="cors-how-evaluation-works"></a>
 
 When Lightsail object storage receives a preflight request from a browser, it evaluates the CORS configuration for the bucket and uses the first CORS rule that matches the incoming browser request to enable a cross-origin request. For a rule to match, the following conditions must be met:
 + The `Origin` header in the request must match an origin in the `AllowedOrigins` element.

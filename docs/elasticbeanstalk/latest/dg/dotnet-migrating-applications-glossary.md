@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-migrat
 ---
 
 # Migration glossary
-<a name="dotnet-migrating-applications-glossary"></a>
 
 This glossary provides definitions for key terms and concepts related to IIS, Elastic Beanstalk, and the migration of IIS applications to Elastic Beanstalk.
 

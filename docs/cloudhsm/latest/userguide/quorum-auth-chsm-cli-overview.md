@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/quorum-auth-ch
 ---
 
 # Quorum authentication process for CloudHSM CLI
-<a name="quorum-auth-chsm-cli-overview"></a>
 
 The following steps summarize the quorum authentication processes for CloudHSM CLI. For the specific steps and tools, see [User management with quorum authentication enabled for AWS CloudHSM using CloudHSM CLI](quorum-auth-chsm-cli-admin.md).
 

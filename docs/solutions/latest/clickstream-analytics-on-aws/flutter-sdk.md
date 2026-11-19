@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Flutter SDK
-<a name="flutter-sdk"></a>
 
 ## Introduction
 <a name="introduction-3"></a>

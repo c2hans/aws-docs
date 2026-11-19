@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-h
 ---
 
 # Configuring event notifications using object key name filtering
-<a name="notification-how-to-filtering"></a>
 
 When configuring an Amazon S3 event notification, you must specify which supported Amazon S3 event types cause Amazon S3 to send the notification. If an event type that you didn't specify occurs in your S3 bucket, Amazon S3 doesn't send the notification.
 
@@ -159,7 +158,7 @@ Your notification configurations that use `Filter` can't define filtering rules 
 ## Examples of notification configurations with invalid prefix and suffix overlapping
 <a name="notification-how-to-filtering-examples-invalid"></a>
 
-For the most part, your notification configurations that use `Filter` can't define filtering rules with overlapping prefixes, overlapping suffixes, or overlapping combinations of prefixes and suffixes for the same event types. You can have overlapping prefixes as long as the suffixes don't overlap. For an example, see [Configuring event notifications using object key name filtering](#notification-how-to-filtering).
+For the most part, your notification configurations that use `Filter` can't define filtering rules with overlapping prefixes, overlapping suffixes, or overlapping combinations of prefixes and suffixes for the same event types. You can have overlapping prefixes as long as the suffixes don't overlap. For an example, see [Configuring event notifications using object key name filtering](notification-how-to-filtering.md).
 
 You can use overlapping object key name filters with different event types. For example, you can create a notification configuration that uses the prefix `image/` for the `ObjectCreated:Put` event type and the prefix `image/` for the `ObjectRemoved:*` event type.
 

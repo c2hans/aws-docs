@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DeleteWebAuthnCredential
-<a name="API_DeleteWebAuthnCredential"></a>
 
 Deletes a registered passkey, or WebAuthn, authenticator for the currently signed-in user.
 

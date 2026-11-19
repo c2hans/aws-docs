@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-conf
 ---
 
 # Creating a configured table – Amazon Athena data source
-<a name="create-config-table-athena"></a>
 
 The Amazon Athena data source option allows you to query data stored in Amazon S3, cataloged in the AWS Glue data catalog or federated catalogs, and access controlled via AWS Lake Formation. Both tables and AWS Glue Data Catalog Views are supported. Lake Formation resource links can be used to share tables and views across AWS accounts and across AWS Regions to the AWS Clean Rooms member account that joins them to an AWS Clean Rooms collaboration.
 

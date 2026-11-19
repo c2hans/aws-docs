@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCl
 ---
 
 # ListClusterExtensions
-<a name="API_ListClusterExtensions"></a>
 
 Lists the extensions installed on a SageMaker HyperPod cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/tsIncrement.h
 ---
 
 # $tsIncrement
-<a name="tsIncrement"></a>
 
 New from version 8.0.1.
 

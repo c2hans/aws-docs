@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Developer tools
-<a name="developer-tools-pattern-list"></a>
 
 **Topics**
 + [DevOps](devops-pattern-list.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ChannelAssociatedWithFlowSummary
-<a name="API_messaging-chime_ChannelAssociatedWithFlowSummary"></a>
 
 Summary of details of a channel associated with channel flow.
 

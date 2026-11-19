@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-e
 ---
 
 # SageMaker AI Edge Manager
-<a name="sagemaker-edge-manager-component"></a>
 
 **Important**
 SageMaker AI Edge Manager was discontinued on April 26th, 2024. For more information about continuing to deploy your models to edge devices, see [SageMaker AI Edge Manager end of life](https://docs.aws.amazon.com/sagemaker/latest/dg/edge-eol.html).

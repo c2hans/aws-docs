@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam-outsid
 ---
 
 # Integrate IPAM with accounts outside of your organization
-<a name="enable-integ-ipam-outside-org"></a>
 
 This section describes how to integrate your IPAM with AWS accounts outside of your organization. To complete steps in this section, you must have already completed the steps in [Integrate IPAM with accounts in an AWS Organization](enable-integ-ipam.md) and delegated an IPAM account.
 

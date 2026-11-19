@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/validate-ac
 ---
 
 # AWS GovCloud (US) account validation
-<a name="validate-accounts"></a>
 
 You can validate your AWS GovCloud (US) account ID from standard Region account by completing the following steps:
 

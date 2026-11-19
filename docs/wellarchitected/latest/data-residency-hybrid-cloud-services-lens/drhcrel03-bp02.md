@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCREL03-BP02 Implement failover mechanisms to maintain highly-available data access and processing across on-premises, edge, and cloud environments
-<a name="drhcrel03-bp02"></a>
 
  Data residency requirements can be addressed through various high-availability architectures, ranging from fully local deployments using redundant Outposts to hybrid solutions leveraging AWS Regions where regulations permit data transfer with proper consent and controls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-s
 ---
 
 # Use the C\+\+ producer library
-<a name="producer-sdk-cpp"></a>
 
 You can use the Amazon Kinesis Video Streams provided C\+\+ producer library to write application code to send media data from a device to a Kinesis video stream.
 

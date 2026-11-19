@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Signin
 ---
 
 # SigningConfiguration
-<a name="API_SigningConfiguration"></a>
 
 The signing configuration for a registry, which specifies rules for automatically signing images when pushed.
 

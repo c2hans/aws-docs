@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Confi
 ---
 
 # ConfigurationEvent
-<a name="API_ConfigurationEvent"></a>
 
  The event information.
 

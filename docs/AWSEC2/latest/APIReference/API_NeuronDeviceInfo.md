@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NeuronDev
 ---
 
 # NeuronDeviceInfo
-<a name="API_NeuronDeviceInfo"></a>
 
 Describes the neuron accelerators for the instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html
 ---
 
 # Amazon VPC attachments in AWS Transit Gateway
-<a name="tgw-vpc-attachments"></a>
 
 An Amazon Virtual Private Cloud (VPC) attachment to a transit gateway allows you to route traffic to and from one or more VPC subnets. When you attach a VPC to a transit gateway, you must specify one subnet from each Availability Zone to be used by the transit gateway to route traffic. The specified subnets serve as the entry and exit points for transit gateway traffic. Traffic can only reach resources in other subnets within the same Availability Zone if the transit gateway attachment subnets have appropriate routes configured in their route tables pointing to the target subnets.
 

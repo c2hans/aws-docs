@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Troubleshooting Amazon OpenSearch Serverless
-<a name="serverless-troubleshooting"></a>
 
 Most access problems on an Amazon OpenSearch Serverless collection endpoint appear as one of two client errors. A `401 Unauthorized` response means the collection's network policy doesn't permit the request source. A `403 Forbidden` response means the request reached the collection, but either the request signature is invalid or no data access policy permits the operation.
 

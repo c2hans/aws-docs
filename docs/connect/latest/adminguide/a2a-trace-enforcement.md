@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/a2a-trace-enfo
 ---
 
 # Trace data requirements for external AI agents
-<a name="a2a-trace-enforcement"></a>
 
 Connect Customer uses trace data to give you full visibility into everything that happens on a contact, across all Connect AI agents and external AI agents. Every external AI agent endpoint must send the required trace data during every collaboration. This page explains what is required, how Connect Customer monitors compliance, and what happens if an external AI agent stops sending trace data.
 

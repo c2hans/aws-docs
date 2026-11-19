@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Automate local integration tests with AWS SAM
-<a name="serverless-sam-cli-using-automated-tests"></a>
 
 While you can use [Introduction to testing with sam local invoke](using-sam-cli-local-invoke.md) to manually test code, AWS SAM also lets you test your code using automated integration testing. Integration testing helps you detect issues early in the development cycle, improve the quality of your code, and save time while reducing costs.
 

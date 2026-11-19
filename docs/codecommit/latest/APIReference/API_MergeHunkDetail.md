@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Merge
 ---
 
 # MergeHunkDetail
-<a name="API_MergeHunkDetail"></a>
 
 Information about the details of a merge hunk that contains a conflict in a merge or pull request operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GroupDe
 ---
 
 # GroupDetails
-<a name="API_GroupDetails"></a>
 
 The details of a group in Amazon DataZone.
 

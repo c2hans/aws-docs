@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Pers
 ---
 
 # PersonDetail
-<a name="API_PersonDetail"></a>
 
 Details about a person detected in a video analysis request.
 

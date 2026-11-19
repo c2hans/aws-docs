@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/license
 ---
 
 # Cryptographic signing of licenses in License Manager
-<a name="license-signing"></a>
 
 License Manager can cryptographically sign licenses issued by an ISV or through AWS Marketplace on behalf of an ISV. Signing permits vendors to validate the integrity and origin of a license within the application itself, even in an offline environment.
 

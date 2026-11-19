@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Compa
 ---
 
 # ComparisonConfiguration
-<a name="API_ComparisonConfiguration"></a>
 
 The comparison display configuration of a KPI or gauge chart.
 

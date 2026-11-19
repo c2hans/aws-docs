@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # Group
-<a name="API_Group"></a>
 
  A group object that contains identifying information and attributes for a specified group.
 

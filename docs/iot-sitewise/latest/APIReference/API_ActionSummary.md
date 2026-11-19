@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Act
 ---
 
 # ActionSummary
-<a name="API_ActionSummary"></a>
 
 Contains the summary of the actions, including information about where the action resolves to.
 

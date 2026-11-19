@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListD
 ---
 
 # ListDevices
-<a name="API_ListDevices"></a>
 
 Gets information about unique device types.
 

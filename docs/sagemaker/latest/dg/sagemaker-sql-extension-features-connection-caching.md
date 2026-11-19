@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # SQL extension connection caching
-<a name="sagemaker-sql-extension-features-connection-caching"></a>
 
 The SQL extension extension defaults to caching connections to prevent the creation of multiple connections for the same set of connection properties. The cached connections can be managed using the `%sm_sql_manage` magic command.
 

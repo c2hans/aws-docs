@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-action-lam
 ---
 
 # Use case examples
-<a name="receiving-email-action-lambda-example-use-cases"></a>
 
 The following examples outline some rules that you might set up to use Lambda function outcomes to control your mail flow. For demonstration purposes, many of these examples use the S3 action as the outcome.
 

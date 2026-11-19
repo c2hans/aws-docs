@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/save-reports.h
 ---
 
 # Save custom reports in Connect Customer
-<a name="save-reports"></a>
 
 You can create custom real-time, historical, and login/logout reports that include only the metrics you're interested in. For instructions, see [Create a real-time metrics report for your contact center](create-real-time-report.md) and [Create a custom historical metrics report in Connect Customer](create-historical-metrics-report.md).
 

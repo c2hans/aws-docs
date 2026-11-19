@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # FirewallRuleGroupMetadata
-<a name="API_route53resolver_FirewallRuleGroupMetadata"></a>
 
 Minimal high-level information for a firewall rule group. The action [ListFirewallRuleGroups](API_route53resolver_ListFirewallRuleGroups.md) returns an array of these objects.
 

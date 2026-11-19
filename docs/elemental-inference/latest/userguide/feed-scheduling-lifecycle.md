@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # Lifecycle of a schedule action
-<a name="feed-scheduling-lifecycle"></a>
 
 A schedule action has one of the following statuses:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Simple Email Service v2
-<a name="amazonsimpleemailservicev2"></a>
 
 Amazon Simple Email Service v2 provides the following APIs for data retrieval.
 

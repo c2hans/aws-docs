@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Li
 ---
 
 # ListAdConfigurations
-<a name="API_ListAdConfigurations"></a>
 
 Gets summary information about all ad configurations in your account, in the AWS region where the API request is processed.
 

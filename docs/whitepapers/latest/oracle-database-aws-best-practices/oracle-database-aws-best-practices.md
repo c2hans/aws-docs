@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Best Practices for Running Oracle Database on AWS
-<a name="oracle-database-aws-best-practices"></a>
 
 Publication date: **November 18, 2021** ([Document History and Contributors](document-revisions.md))
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # NotifyEmailType
-<a name="API_NotifyEmailType"></a>
 
 The template for email messages that threat protection sends to a user when your threat protection automated response has a *Notify* action.
 

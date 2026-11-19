@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/security-min-permis
 ---
 
 # Minimum permissions for AWS PCS
-<a name="security-min-permissions"></a>
 
 This section describes the minimum IAM permissions required for an IAM identity (user, group, or role) to use the service.
 

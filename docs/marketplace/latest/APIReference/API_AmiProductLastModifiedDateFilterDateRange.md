@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AmiP
 ---
 
 # AmiProductLastModifiedDateFilterDateRange
-<a name="API_AmiProductLastModifiedDateFilterDateRange"></a>
 
 Object that contains date range of the last modified date to be filtered on. You can optionally provide a `BeforeValue` and/or `AfterValue`. Both are inclusive.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/facebook-page-insights-co
 ---
 
 # Configuring Facebook Page Insights
-<a name="facebook-page-insights-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Facebook Page Insights, you must meet these requirements:
 

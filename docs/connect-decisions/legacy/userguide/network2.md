@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/netwo
 ---
 
 # Network
-<a name="network2"></a>
 
  This section lists the data entities within the network category.
 

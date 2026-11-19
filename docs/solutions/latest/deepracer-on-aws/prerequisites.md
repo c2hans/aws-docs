@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/prereq
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 Before deploying DeepRacer on AWS, please consider the following prerequisites:
 

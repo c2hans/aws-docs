@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## AWS AppConfig
 <a name="Welcome_Amazon_AppConfig"></a>

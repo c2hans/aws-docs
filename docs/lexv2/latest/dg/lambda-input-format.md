@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/lambda-input-format.html
 ---
 
 # AWS Lambda input event format for Lex V2
-<a name="lambda-input-format"></a>
 
 The first step in integrating a Lambda function into your Amazon Lex V2 bot is to understand the fields in the Amazon Lex V2 event and to determine the information from these fields that you want to use when writing your script. The following JSON object shows the general format of an Amazon Lex V2 event passed to a Lambda function:
 

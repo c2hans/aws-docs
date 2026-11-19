@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetStreamForSegments
-<a name="API_connect-customer-profiles_GetStreamForSegments"></a>
 
 Returns information about the segment membership event stream configured for a specific domain, including the stream state and associated segments.
 

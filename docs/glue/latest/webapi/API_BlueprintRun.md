@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BlueprintRun.html
 ---
 
 # BlueprintRun
-<a name="API_BlueprintRun"></a>
 
 The details of a blueprint run.
 

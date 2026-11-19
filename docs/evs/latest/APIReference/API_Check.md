@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_Check.html
 ---
 
 # Check
-<a name="API_Check"></a>
 
 A check on the environment to identify environment health and validate VMware VCF licensing compliance.
 

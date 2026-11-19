@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/FAQs.html
 ---
 
 # Frequently Asked Questions (FAQs)
-<a name="FAQs"></a>
 
 Below you'll find answers to the most common questions you may have on MAP 2.0.
 

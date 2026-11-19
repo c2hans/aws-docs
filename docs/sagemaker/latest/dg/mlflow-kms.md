@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-kms.html
 ---
 
 # Use AWS KMS permissions for MLflow Apps
-<a name="mlflow-kms"></a>
 
 You can protect your data at rest using encryption for MLflow Apps. By default, MLflow Apps use server-side encryption with an AWS owned key. SageMaker also supports an option for server-side encryption with a customer managed KMS key.
 

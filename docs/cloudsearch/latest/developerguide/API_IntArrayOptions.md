@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_In
 ---
 
 # IntArrayOptions
-<a name="API_IntArrayOptions"></a>
 
 ## Description
 <a name="API_IntArrayOptions_Description"></a>

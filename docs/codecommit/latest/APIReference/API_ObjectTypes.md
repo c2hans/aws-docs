@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Objec
 ---
 
 # ObjectTypes
-<a name="API_ObjectTypes"></a>
 
 Information about the type of an object in a merge operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/whatsa
 ---
 
 # Best practices for AWS End User Messaging Social
-<a name="whatsapp-best-practices"></a>
 
 This section describes several best practices that might help you improve your customer engagement and avoid account suspension. However, note that this section doesn't contain legal advice. Always consult an attorney to obtain legal advice.
 

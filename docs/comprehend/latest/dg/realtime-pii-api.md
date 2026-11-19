@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/realtime-pii-api.ht
 ---
 
 # PII real-time analysis (API)
-<a name="realtime-pii-api"></a>
 
 Amazon Comprehend provides real-time synchronous API operations to analyze personally identifiable information (PII) in a document.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # ComputeLogprobsConfig
-<a name="API_ComputeLogprobsConfig"></a>
 
 The configuration for computing log-probabilities of prompt tokens without generating new text.
 

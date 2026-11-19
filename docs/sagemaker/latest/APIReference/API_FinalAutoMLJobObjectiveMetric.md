@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_FinalA
 ---
 
 # FinalAutoMLJobObjectiveMetric
-<a name="API_FinalAutoMLJobObjectiveMetric"></a>
 
 The best candidate result from an AutoML training job.
 

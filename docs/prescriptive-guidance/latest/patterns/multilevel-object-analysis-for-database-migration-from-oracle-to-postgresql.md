@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mu
 ---
 
 # Analyze object dependencies for partial database migrations from Oracle to PostgreSQL
-<a name="multilevel-object-analysis-for-database-migration-from-oracle-to-postgresql"></a>
 
 *anuradha chintha, Amazon Web Services*
 

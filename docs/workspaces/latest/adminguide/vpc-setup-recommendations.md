@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/vpc-setup-r
 ---
 
 # VPC Setup Recommendations for WorkSpaces Pools
-<a name="vpc-setup-recommendations"></a>
 
 When you create a WorkSpaces Pools, you specify the VPC and one or more subnets to use. You can provide additional access control to your VPC by specifying security groups.
 

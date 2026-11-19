@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetPrepar
 ---
 
 # GetPreparedStatement
-<a name="API_GetPreparedStatement"></a>
 
 Retrieves the prepared statement with the specified name from the specified workgroup.
 

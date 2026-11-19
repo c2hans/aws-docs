@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Automate the process of provisioning a centralized AWS Network Firewall to inspect traffic between your Amazon VPCs
-<a name="guidance-overview"></a>
 
  Centralized Network Inspection on AWS configures the Amazon Web Services (AWS) resources needed to filter network traffic. With this guidance, you can inspect hundreds or thousands of [Amazon Virtual Private Cloud](https://aws.amazon.com/vpc/) (Amazon VPC) environments and accounts in one place. This guidance saves you time by automating the process of provisioning a centralized [AWS Network Firewall](https://aws.amazon.com/network-firewall/) to inspect traffic between VPCs. You can also centrally configure and manage your firewall, firewall policies, and rule groups.
 

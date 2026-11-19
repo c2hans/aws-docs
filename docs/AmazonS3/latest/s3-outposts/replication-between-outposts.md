@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/replication-
 ---
 
 # Creating replication rules on Outposts
-<a name="replication-between-outposts"></a>
 
 S3 Replication on Outposts is the automatic, asynchronous replication of objects across buckets in the same or different AWS Outposts. Replication copies newly created objects and object updates from a source Outposts bucket to a destination Outposts bucket or buckets. For more information, see [Replicating objects for S3 on Outposts](S3OutpostsReplication.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_PasswordRe
 ---
 
 # PasswordRequirements
-<a name="API_PasswordRequirements"></a>
 
 Defines password complexity requirements for users in a security group, including minimum length and character type requirements.
 

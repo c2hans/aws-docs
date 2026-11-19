@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NodeFrameworkAttributes
-<a name="API_NodeFrameworkAttributes"></a>
 
 Attributes relevant to a node on a Managed Blockchain network for the blockchain framework that the network uses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Stage 3: Inspect, adapt and iterate
-<a name="inspect-adapt-iterate"></a>
 
 After you implement your observability system, we recommend that you continually review, assess, learn, adapt, and improve your implementation. You can use the [AWS Observability Maturity Model](https://aws-observability.github.io/observability-best-practices/guides/observability-maturity-model/) as a tool to assess the maturity of your implementation and to identify and prioritize areas for improvement.
 

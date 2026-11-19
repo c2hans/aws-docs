@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDetails
-<a name="API_AwsEc2LaunchTemplateDetails"></a>
 
  Specifies the properties for creating an Amazon Elastic Compute Cloud (Amazon EC2) launch template.
 

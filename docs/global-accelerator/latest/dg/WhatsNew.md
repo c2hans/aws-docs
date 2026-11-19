@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/WhatsNew.ht
 ---
 
 # Document history
-<a name="WhatsNew"></a>
 
 The following entries describe important changes made to the AWS Global Accelerator documentation.
 + **API version: latest**

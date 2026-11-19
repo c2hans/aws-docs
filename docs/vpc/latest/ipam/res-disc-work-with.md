@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/res-disc-work-with.html
 ---
 
 # Work with resource discoveries
-<a name="res-disc-work-with"></a>
 
 A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the account that owns the resource discovery. This enables IPAM to maintain an up-to-date inventory of IP address usage across your workloads, facilitating IP address management and planning.
 

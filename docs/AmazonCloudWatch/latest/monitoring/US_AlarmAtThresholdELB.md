@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_Al
 ---
 
 # Create a load balancer latency alarm that sends email
-<a name="US_AlarmAtThresholdELB"></a>
 
 You can set up an Amazon SNS notification and configure an alarm that monitors latency exceeding 100 ms for your Classic Load Balancer.
 

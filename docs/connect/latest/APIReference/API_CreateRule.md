@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateRu
 ---
 
 # CreateRule
-<a name="API_CreateRule"></a>
 
 Creates a rule for the specified Connect Customer instance.
 

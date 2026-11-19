@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_CustomRu
 ---
 
 # CustomRule
-<a name="API_CustomRule"></a>
 
 Describes a custom rewrite or redirect rule.
 

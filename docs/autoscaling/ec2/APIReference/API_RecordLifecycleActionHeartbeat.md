@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_RecordL
 ---
 
 # RecordLifecycleActionHeartbeat
-<a name="API_RecordLifecycleActionHeartbeat"></a>
 
 Records a heartbeat for the lifecycle action associated with the specified token or instance. This extends the timeout by the length of time defined using the [PutLifecycleHook](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutLifecycleHook.html) API call.
 

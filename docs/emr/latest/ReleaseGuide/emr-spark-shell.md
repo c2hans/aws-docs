@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-shell.
 ---
 
 # Access the Spark shell
-<a name="emr-spark-shell"></a>
 
 The Spark shell is based on the Scala REPL (Read-Eval-Print-Loop). It allows you to create Spark programs interactively and submit work to the framework. You can access the Spark shell by connecting to the primary node with SSH and invoking `spark-shell`. For more information about connecting to the primary node, see [Connect to the primary node using SSH](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-master-node-ssh.html) in the *Amazon EMR Management Guide*. The following examples use Apache HTTP Server access logs stored in Amazon S3.
 

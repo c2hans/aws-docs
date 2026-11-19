@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html
 ---
 
 # How AWS Site-to-Site VPN works
-<a name="how_it_works"></a>
 
 A Site-to-Site VPN connection consists of the following components:
 + A [virtual private gateway](#VPNGateway) or a [transit gateway](#Transit-Gateway)

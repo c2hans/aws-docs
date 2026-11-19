@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/update-function-instance.h
 ---
 
 # Update a function instance in AWS TNB
-<a name="update-function-instance"></a>
 
 After a network instance is instantiated, you can update a function package in the network instance.
 

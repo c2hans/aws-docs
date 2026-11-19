@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Http
 ---
 
 # HttpRequest
-<a name="API_HttpRequest"></a>
 
 HTTP request configuration parameters that define how MediaTailor communicates with the ad decision server.
 

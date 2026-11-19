@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards-console-
 ---
 
 # Export a model card
-<a name="model-cards-console-export"></a>
 
 Follow these steps to export a model card.
 

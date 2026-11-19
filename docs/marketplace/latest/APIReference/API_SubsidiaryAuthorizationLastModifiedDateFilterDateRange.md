@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationLastModifiedDateFilterDateRange
-<a name="API_SubsidiaryAuthorizationLastModifiedDateFilterDateRange"></a>
 
 A date range for filtering subsidiary authorizations by last modified date.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk support for traffic-splitting deployments on May 18, 2020
-<a name="release-2020-05-18-ts-deploy"></a>
 
 AWS Elastic Beanstalk added the ability to perform canary testing during application deployments by shifting some of the incoming traffic to the new application version and evaluating its health.
 

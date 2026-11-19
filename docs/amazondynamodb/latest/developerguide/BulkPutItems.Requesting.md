@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Bul
 ---
 
 # Running a bulk put items operation
-<a name="BulkPutItems.Requesting"></a>
 
 You provide an Amazon S3 location for input files and a target table. DynamoDB reports items it could not write to an output bucket that you provide. You choose what the output report contains through the [OutputType](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_OutputS3Configuration.html#DDB-Type-OutputS3Configuration-OutputType) parameter: request `ERROR` for items that failed validation, `CONDITION_CHECK_FAILURE` for items that did not meet their condition, or both.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Te
 ---
 
 # TextResponseEvent
-<a name="API_runtime_TextResponseEvent"></a>
 
 The event sent from Amazon Lex to your application with text to present to the user.
 

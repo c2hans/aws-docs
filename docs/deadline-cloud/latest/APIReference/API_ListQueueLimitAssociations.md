@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListQueueLimitAssociations
-<a name="API_ListQueueLimitAssociations"></a>
 
 Gets a list of the associations between queues and limits defined in a farm.
 

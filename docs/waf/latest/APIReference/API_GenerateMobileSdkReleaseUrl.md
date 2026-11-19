@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GenerateMobi
 ---
 
 # GenerateMobileSdkReleaseUrl
-<a name="API_GenerateMobileSdkReleaseUrl"></a>
 
 Generates a presigned download URL for the specified release of the mobile SDK.
 

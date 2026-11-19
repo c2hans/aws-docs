@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSICOST07: Are you using all the available AWS credit and investment programs?
-<a name="fsicost07"></a>
 
  Multiple credit options are available, such as migrations, digital innovation, cloud economics, and prototyping to activate credits.
 

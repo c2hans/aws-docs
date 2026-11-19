@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/lz-api-exa
 ---
 
 # View the status of your landing zone operations
-<a name="lz-api-examples-short"></a>
 
 The `ListLandingZoneOperations` API allows you to view the status of AWS Control Tower operations that perform actions on your landing zone.
 

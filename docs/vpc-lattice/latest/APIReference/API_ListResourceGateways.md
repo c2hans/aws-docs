@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListResourceGateways
-<a name="API_ListResourceGateways"></a>
 
 Lists the resource gateways that you own or that were shared with you.
 

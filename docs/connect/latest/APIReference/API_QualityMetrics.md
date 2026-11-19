@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QualityM
 ---
 
 # QualityMetrics
-<a name="API_QualityMetrics"></a>
 
 Information about the quality of the participant's media connection.
 

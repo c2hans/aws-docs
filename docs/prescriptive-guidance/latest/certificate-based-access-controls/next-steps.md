@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 Now that you understand how to implement secure access controls by using certificate attributes with AWS Identity and Access Management Roles Anywhere, consider reviewing your existing hybrid workload architectures. Identify workloads that currently use long-term credentials or require secure access to AWS resources from outside of the AWS Cloud. Evaluate opportunities to enhance security by implementing certificate-based authentication and applying the fine-grained access controls described in this guide. Consider starting with a small proof of concept before expanding to production workloads. Validate that certificate attributes and trust policies align with your security requirements and organizational structure.
 

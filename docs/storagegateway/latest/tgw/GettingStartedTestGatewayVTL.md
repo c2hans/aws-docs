@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/GettingStarted
 ---
 
 # Using your backup software to test your gateway setup
-<a name="GettingStartedTestGatewayVTL"></a>
 
 You test your Tape Gateway setup by performing the following tasks using your backup application:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-data-pr
 ---
 
 # Preparing data for RFT on Amazon Nova 2
-<a name="nova-data-prep-rft-2"></a>
 
 RFT on Amazon Nova 2 currently supports text-based training data. This page describes the data format, supported features, constraints, and best practices for preparing RFT training data for Amazon Nova 2 Understanding models.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Engage the preview contact for the given contactId in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-engagepreviewcontact"></a>
 
 When an agent is previewing a preview contact, this API will actually initiate the outbound dial to the end customer, ending the preview experience.
 

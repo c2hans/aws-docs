@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # ListInvestigationGroupsModel
-<a name="API_ListInvestigationGroupsModel"></a>
 
 This structure contains information about one investigation group in the account.
 

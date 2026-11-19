@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/create-ota-use
 ---
 
 # Create an OTA user policy
-<a name="create-ota-user-policy"></a>
 
 You must grant your user permission to perform over-the-air updates. Your user must have permissions to:
 + Access the S3 bucket where your firmware updates are stored.

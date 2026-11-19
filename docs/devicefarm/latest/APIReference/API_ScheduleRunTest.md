@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Sched
 ---
 
 # ScheduleRunTest
-<a name="API_ScheduleRunTest"></a>
 
 Represents test settings. This data structure is passed in as the test parameter to ScheduleRun. For an example of the JSON request syntax, see [ScheduleRun](API_ScheduleRun.md).
 

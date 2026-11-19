@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/example_kinesis_Scena
 ---
 
 # Learn Data Streams basics using an AWS SDK
-<a name="example_kinesis_Scenario_GettingStarted_section"></a>
 
 The following code examples show how to:
 + Create a stream and wait for it to become ACTIVE.

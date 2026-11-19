@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-prereq.ht
 ---
 
 # Prerequisites for Amazon Bedrock Flows
-<a name="flows-prereq"></a>
 
 Before creating a flow, review the following prerequisites and determine which ones you need to fulfill:
 

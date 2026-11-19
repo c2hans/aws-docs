@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/appguide/iotsitewise
 The SiteWise Monitor feature is not available to new customers. Existing customers can continue to use the service as normal. For more information, see [SiteWise Monitor availability change](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/iotsitewise-monitor-availability-change.html)
 
 # AWS IoT SiteWise Monitor availability change
-<a name="iotsitewise-monitor-availability-change"></a>
 
 For capabilities similar to the AWS IoT SiteWise Monitor feature, explore the SiteWise plugin for Amazon Managed Grafana (AMG).
 

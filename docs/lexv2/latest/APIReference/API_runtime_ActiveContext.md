@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Ac
 ---
 
 # ActiveContext
-<a name="API_runtime_ActiveContext"></a>
 
 Contains information about the contexts that a user is using in a session. You can configure Amazon Lex to set a context when an intent is fulfilled, or you can set a context using the [PutSession](API_runtime_PutSession.md), [RecognizeText](API_runtime_RecognizeText.md), or [RecognizeUtterance](API_runtime_RecognizeUtterance.md) operations.
 

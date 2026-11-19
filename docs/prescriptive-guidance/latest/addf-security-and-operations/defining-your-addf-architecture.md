@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 ---
 
 # Defining your ADDF architecture
-<a name="defining-your-addf-architecture"></a>
 
 An ADDF instance is only as secure as the AWS account environment it's deployed in. This AWS account environment must be designed to meet the security and operational needs of your specific use case. For example, the security and operations-related tasks and considerations for setting up an ADDF instance in a proof-of-concept (PoC) environment are different than those for setting up ADDF in a production environment.
 

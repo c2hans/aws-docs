@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetNetwor
 ---
 
 # GetNetworkInsightsAccessScopeContent
-<a name="API_GetNetworkInsightsAccessScopeContent"></a>
 
 Gets the content for the specified Network Access Scope.
 

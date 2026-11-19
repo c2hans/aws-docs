@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd04-b
 ---
 
 # FND04-BP01 Implement standardized attribution policies
-<a name="fnd04-bp01"></a>
 
  A standard tagging and attribution strategy is the foundation for cost allocation, governance, security, and operational visibility in the cloud. Define your tagging schema centrally, apply it consistently across accounts and Regions, and automate enforcement where possible. Align the schema with your business goals, cost tracking needs, and governance rules.
 

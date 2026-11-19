@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/whatis-hsm-key
 ---
 
 # Keys in AWS CloudHSM
-<a name="whatis-hsm-keys"></a>
 
 AWS CloudHSM allows you to securely generate, store, and manage your encryption keys in single-tenant HSMs that are in your AWS CloudHSM cluster. Keys can be symmetric or asymmetric, can be session keys (ephemeral keys) for single sessions, token keys (persistent keys) for long-term use, and can be exported from and imported into AWS CloudHSM Keys can also be used to complete common cryptographic tasks and functions:
 + Perform cryptographic data signing and signature verification with both symmetric and asymmetric encryption algorithms.

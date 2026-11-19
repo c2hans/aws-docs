@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_En
 ---
 
 # EncounterContext
-<a name="API_EncounterContext"></a>
 
 Context information about the clinical encounter
 

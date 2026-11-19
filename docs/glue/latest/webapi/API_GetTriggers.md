@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetTriggers.html
 ---
 
 # GetTriggers
-<a name="API_GetTriggers"></a>
 
 Gets all the triggers associated with a job.
 

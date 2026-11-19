@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/remedia
 ---
 
 # Diagnosing and remediating failed deployments
-<a name="remediating-deployment-issues"></a>
 
 Systems Manager can diagnose and then help you remediate the following types of failed deployments:
 + Core setup for organization member accounts

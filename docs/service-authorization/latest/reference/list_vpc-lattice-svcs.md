@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon VPC Lattice Services
-<a name="list_vpc-lattice-svcs"></a>
 
 Amazon VPC Lattice Services (service prefix: `vpc-lattice-svcs`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/ssl-for
 ---
 
 # SSL certificate authentication for Amazon MQ for RabbitMQ
-<a name="ssl-for-amq-for-rabbitmq"></a>
 
 Amazon MQ for RabbitMQ supports authentication of broker users using X.509 client certificates. For other supported methods, see [Authentication and authorization for Amazon MQ for RabbitMQ brokers](rabbitmq-authentication.md).
 

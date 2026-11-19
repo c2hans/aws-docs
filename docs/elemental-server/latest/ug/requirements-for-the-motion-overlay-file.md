@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/ug/requirements-
 This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
 
 # Requirements for Motion Overlay Files
-<a name="requirements-for-the-motion-overlay-file"></a>
 
 **General requirements for motion graphic files**
 Set up the files for your motion graphic as follows:

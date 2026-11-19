@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BoxPl
 ---
 
 # BoxPlotSortConfiguration
-<a name="API_BoxPlotSortConfiguration"></a>
 
 The sort configuration of a `BoxPlotVisual`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CS.1] Implement automated digital attestation signing
-<a name="dl.cs.1-implement-automated-digital-attestation-signing"></a>
 
  **Category:** RECOMMENDED
 

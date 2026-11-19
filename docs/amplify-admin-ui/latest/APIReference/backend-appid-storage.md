@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Storage
-<a name="backend-appid-storage"></a>
 
 Create a storage resource in your Amplify app backend.
 

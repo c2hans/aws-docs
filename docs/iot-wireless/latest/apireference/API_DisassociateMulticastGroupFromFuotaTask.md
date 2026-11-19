@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dis
 ---
 
 # DisassociateMulticastGroupFromFuotaTask
-<a name="API_DisassociateMulticastGroupFromFuotaTask"></a>
 
 Disassociates a multicast group from a FUOTA task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-ssh.html
 ---
 
 # Creating an SSH connection using the `SSHOperator`
-<a name="samples-ssh"></a>
 
 The following example describes how you can use the `SSHOperator` in a directed acyclic graph (DAG) to connect to a remote Amazon EC2 instance from your Amazon Managed Workflows for Apache Airflow environment. You can use a similar approach to connect to any remote instance with SSH access.
 

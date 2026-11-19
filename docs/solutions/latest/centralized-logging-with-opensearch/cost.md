@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Cost
-<a name="cost"></a>
 
 **Important**
 The following cost estimations are examples and may vary depending on your environment.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/recurly-connection-option
 ---
 
 # Recurly connection options
-<a name="recurly-connection-options"></a>
 
 The following are connection options for Recurly:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Recurly object to read.

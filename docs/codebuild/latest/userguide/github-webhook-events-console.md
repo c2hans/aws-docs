@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/github-webhoo
 ---
 
 # Filter GitHub webhook events (console)
-<a name="github-webhook-events-console"></a>
 
 Use the following instructions to filter GitHub webhook events using the AWS Management Console. For more information about GitHub webhook events, see [GitHub webhook events](github-webhook.md).
 

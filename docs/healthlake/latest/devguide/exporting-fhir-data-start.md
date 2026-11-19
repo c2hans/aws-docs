@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/exporting-fhi
 ---
 
 # Starting a FHIR export job
-<a name="exporting-fhir-data-start"></a>
 
 Use `StartFHIRExportJob` to start a FHIR export job from a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`StartFHIRExportJob`](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_StartFHIRExportJob.html) in the *AWS HealthLake API Reference*.
 

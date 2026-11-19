@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteTemp
 ---
 
 # DeleteTemplate
-<a name="API_connect-cases_DeleteTemplate"></a>
 
 Deletes a Cases template. You can delete up to 100 templates per domain.
 

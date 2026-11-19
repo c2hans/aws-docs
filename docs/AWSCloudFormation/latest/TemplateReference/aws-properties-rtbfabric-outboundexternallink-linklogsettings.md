@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::OutboundExternalLink LinkLogSettings
-<a name="aws-properties-rtbfabric-outboundexternallink-linklogsettings"></a>
 
 <a name="aws-properties-rtbfabric-outboundexternallink-linklogsettings-description"></a>The `LinkLogSettings` property type specifies Property description not available. for an [AWS::RTBFabric::OutboundExternalLink](aws-resource-rtbfabric-outboundexternallink.md).
 

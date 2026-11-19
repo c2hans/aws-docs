@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # OutputConfig
-<a name="API_OutputConfig"></a>
 
 Output destination configuration.
 

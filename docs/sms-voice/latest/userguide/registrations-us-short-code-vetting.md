@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Brand vetting requirements
-<a name="registrations-us-short-code-vetting"></a>
 
 The CTIA (Cellular Telecommunications Industry Association) and the US Short Code Registry require all brands to complete a vetting process when leasing new short codes and annually thereafter. This vetting process is designed to enhance consumer protection and improve transparency in SMS messaging.
 

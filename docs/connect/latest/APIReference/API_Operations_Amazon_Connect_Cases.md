@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # Amazon Connect Cases
-<a name="API_Operations_Amazon_Connect_Cases"></a>
 
 The following actions are supported by Amazon Connect Cases:
 +  [BatchCreateRelatedItem](API_connect-cases_BatchCreateRelatedItem.md)

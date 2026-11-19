@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Anony
 ---
 
 # AnonymousUserEmbeddingExperienceConfiguration
-<a name="API_AnonymousUserEmbeddingExperienceConfiguration"></a>
 
 The type of experience you want to embed. For anonymous users, you can embed Quick dashboards.
 

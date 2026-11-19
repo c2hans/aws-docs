@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-open
 ---
 
 # Support for OpenQASM on different Braket devices
-<a name="braket-openqasm-device-support"></a>
 
 For devices supporting OpenQASM 3.0, the `action` field supports a new action through the `GetDevice` response, as shown in the following example for the Rigetti and IonQ devices.
 

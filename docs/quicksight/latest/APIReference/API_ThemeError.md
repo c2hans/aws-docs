@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Theme
 ---
 
 # ThemeError
-<a name="API_ThemeError"></a>
 
 Theme error.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 ---
 
 # Schedule jobs in Deadline Cloud
-<a name="build-jobs-scheduling"></a>
 
 After you create a job, AWS Deadline Cloud schedules it to be processed on one or more of the fleets associated with a queue. The fleet that processes a particular task is chosen based on the scheduling configuration, the capabilities configured for the fleet, and the host requirements of a specific step.
 

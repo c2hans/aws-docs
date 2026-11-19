@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # ArchiveFilters
-<a name="API_ArchiveFilters"></a>
 
 A set of filter conditions to include and/or exclude emails.
 

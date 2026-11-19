@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetUnfilteredTabl
 ---
 
 # GetUnfilteredTableMetadata
-<a name="API_GetUnfilteredTableMetadata"></a>
 
 Allows a third-party analytical engine to retrieve unfiltered table metadata from the Data Catalog.
 

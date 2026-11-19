@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyFpgaI
 ---
 
 # CopyFpgaImage
-<a name="API_CopyFpgaImage"></a>
 
 Copies the specified Amazon FPGA Image (AFI) to the current Region.
 

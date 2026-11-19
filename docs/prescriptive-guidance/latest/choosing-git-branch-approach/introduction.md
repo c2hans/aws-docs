@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Choosing a Git branching strategy for multi-account DevOps environments
-<a name="introduction"></a>
 
 *Mike Stephens, Abhilash Vinod, and Rayjan Wilson, Amazon Web Services*
 

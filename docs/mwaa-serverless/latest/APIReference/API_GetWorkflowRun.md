@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # GetWorkflowRun
-<a name="API_GetWorkflowRun"></a>
 
 Retrieves detailed information about a specific workflow run, including its status, execution details, and task instances.
 

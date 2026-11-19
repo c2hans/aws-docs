@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateModelCard
-<a name="API_CreateModelCard"></a>
 
 Creates an Amazon SageMaker Model Card.
 

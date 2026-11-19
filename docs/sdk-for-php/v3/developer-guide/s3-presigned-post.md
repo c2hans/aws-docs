@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-presig
 ---
 
 # Amazon S3 pre-signed POSTs with AWS SDK for PHP Version 3
-<a name="s3-presigned-post"></a>
 
 Much like pre-signed URLs, pre-signed POSTs enable you to give write access to a user without giving them AWS credentials. Pre-signed POST forms can be created with the help of an instance of [AwsS3PostObjectV4](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.S3.PostObjectV4.html).
 

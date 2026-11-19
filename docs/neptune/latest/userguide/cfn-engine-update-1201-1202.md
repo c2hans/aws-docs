@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/cfn-engine-upda
 ---
 
 # Example: Minor engine upgrade from 1.2.0.1 to 1.2.0.2
-<a name="cfn-engine-update-1201-1202"></a>
 
 Find the DB cluster that you want to upgrade, and the template you used to create it. For example:
 

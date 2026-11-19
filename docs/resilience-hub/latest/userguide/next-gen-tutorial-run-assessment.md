@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Step 3: Run your first failure mode assessment
-<a name="next-gen-tutorial-run-assessment"></a>
 
 With a service created and a policy applied, you can now run a failure mode assessment. During the assessment, the next generation of Resilience Hub automatically discovers your resources and builds a topology before analyzing failure modes.
 

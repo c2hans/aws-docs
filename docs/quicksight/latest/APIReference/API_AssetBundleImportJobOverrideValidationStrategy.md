@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobOverrideValidationStrategy
-<a name="API_AssetBundleImportJobOverrideValidationStrategy"></a>
 
 An optional parameter that overrides the validation strategy for all analyses and dashboards before the resource is imported.
 

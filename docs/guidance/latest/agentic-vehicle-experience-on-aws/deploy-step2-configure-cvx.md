@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Step 2: Configure AVX
-<a name="deploy-step2-configure-cvx"></a>
 
 Clone the AVX repository and create a Python virtual environment:
 

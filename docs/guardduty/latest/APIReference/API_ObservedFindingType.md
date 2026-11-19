@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Observ
 ---
 
 # ObservedFindingType
-<a name="API_ObservedFindingType"></a>
 
 Contains information about a finding type that GuardDuty observed.
 

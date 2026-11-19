@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Applicat
 ---
 
 # ApplicationVersionLifecycleConfig
-<a name="API_ApplicationVersionLifecycleConfig"></a>
 
 The application version lifecycle settings for an application. Defines the rules that Elastic Beanstalk applies to an application's versions in order to avoid hitting the per-region limit for application versions.
 

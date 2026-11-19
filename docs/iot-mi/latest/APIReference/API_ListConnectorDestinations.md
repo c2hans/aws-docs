@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListConne
 ---
 
 # ListConnectorDestinations
-<a name="API_ListConnectorDestinations"></a>
 
 Lists all connector destinations, with optional filtering by cloud connector ID.
 

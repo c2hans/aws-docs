@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDirectoryServiceDataReadOnlyAccess
-<a name="AWSDirectoryServiceDataReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to AWS Directory Service Data
 

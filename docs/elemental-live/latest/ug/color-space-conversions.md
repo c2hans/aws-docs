@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-con
 ---
 
 # Support for conversion and passthrough
-<a name="color-space-conversions"></a>
 
 ## Handling of supported color spaces
 <a name="color-space-supported-handling"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/using-service
 ---
 
 # Using service-linked roles for Device Farm
-<a name="using-service-linked-roles"></a>
 
 AWS Device Farm uses AWS Identity and Access Management (IAM)[ service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that is linked directly to Device Farm. Service-linked roles are predefined by Device Farm and include all the permissions that the service requires to call other AWS services on your behalf.
 

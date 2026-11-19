@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Distributed system availability
-<a name="distributed-system-availability"></a>
 
  Distributed systems are made up of both software components and hardware components. Some of the software components might themselves be another distributed system. The availability of both the underlying hardware and software components affects the resulting availability of your workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFlowSearchFilter
-<a name="API_ContactFlowSearchFilter"></a>
 
 Filters to be applied to search results.
 

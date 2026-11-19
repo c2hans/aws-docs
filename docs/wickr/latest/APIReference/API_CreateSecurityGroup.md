@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_CreateSecu
 ---
 
 # CreateSecurityGroup
-<a name="API_CreateSecurityGroup"></a>
 
 Creates a new security group in a Wickr network. Security groups allow you to organize users and control their permissions, features, and security settings.
 

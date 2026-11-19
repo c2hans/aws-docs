@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # SapNWOnAseMulti
-<a name="launch-wizard-specifications-sap-netweaver-ase-multi"></a>
 
 The following are examples of the specifications required to create multi-node deployments.
 

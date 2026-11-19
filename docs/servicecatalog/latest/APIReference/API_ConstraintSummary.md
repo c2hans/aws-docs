@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # ConstraintSummary
-<a name="API_ConstraintSummary"></a>
 
 Summary information about a constraint.
 

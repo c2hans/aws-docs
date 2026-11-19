@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-ap
 ---
 
 # Connect to third-party services and APIs (generic)
-<a name="connectors-api"></a>
 
 Use the following procedure to create a generic **API Connector** in App Studio. The **API Connector** is used to provide App Studio apps with access to third-party services, resources, or operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_B
 ---
 
 # BatchCreateCategoryInputCategory
-<a name="API_qapps_BatchCreateCategoryInputCategory"></a>
 
 The category object to be created.
 

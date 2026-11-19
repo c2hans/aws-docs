@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Inges
 ---
 
 # Ingestion
-<a name="API_Ingestion"></a>
 
 Information about the SPICE ingestion for a dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GuardianO
 ---
 
 # GuardianOptions
-<a name="API_GuardianOptions"></a>
 
 An object containing additional settings for your VDM configuration as applicable to the Guardian.
 

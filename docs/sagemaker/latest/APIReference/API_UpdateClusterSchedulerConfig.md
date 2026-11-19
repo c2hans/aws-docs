@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateClusterSchedulerConfig
-<a name="API_UpdateClusterSchedulerConfig"></a>
 
 Update the cluster policy configuration.
 

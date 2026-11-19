@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fail.html
 ---
 
 # .fail
-<a name="fail"></a>
 
 Used by anyone who has made mistakes, but ideal for publishing humorous "fail" blunders and bloopers.
 

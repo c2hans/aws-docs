@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this guide include:
 + Tony Santiago, Senior Partner Solutions Architect, AWS

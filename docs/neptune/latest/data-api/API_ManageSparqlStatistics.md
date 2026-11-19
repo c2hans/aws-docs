@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ManageSparql
 ---
 
 # ManageSparqlStatistics
-<a name="API_ManageSparqlStatistics"></a>
 
 Manages the generation and use of RDF graph statistics.
 

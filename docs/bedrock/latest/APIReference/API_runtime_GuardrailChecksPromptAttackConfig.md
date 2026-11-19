@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksPromptAttackConfig
-<a name="API_runtime_GuardrailChecksPromptAttackConfig"></a>
 
 The configuration for the prompt attack check, specifying which categories to evaluate.
 

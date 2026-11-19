@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-configuration.htm
 ---
 
 # KCL configurations
-<a name="kcl-configuration"></a>
 
 You can set configuration properties to customize Kinesis Client Library's functionality to meet your specific requirements. The following table describes configuration properties and classes.
 

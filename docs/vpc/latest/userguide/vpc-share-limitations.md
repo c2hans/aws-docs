@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-share-limitatio
 ---
 
 # Responsibilities and permissions for owners and participants
-<a name="vpc-share-limitations"></a>
 
 This section includes details about the responsibilities and permissions for those who own the shared subnet (owner) and for those who are using the shared subnet (participant).
 

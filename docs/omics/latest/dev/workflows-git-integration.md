@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-git-integrati
 ---
 
 # HealthOmics workflow integration with Git-based repositories
-<a name="workflows-git-integration"></a>
 
 When you create a workflow (or a workflow version), you provide a workflow definition to specify information about the workflow, runs, and tasks. HealthOmics can retrieve the workflow definition as a .zip archive (stored locally or in an Amazon S3 bucket), or from a supported Git-based repository.
 

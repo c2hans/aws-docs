@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/flow-sizes-capabi
 ---
 
 # Flow sizes and capabilities
-<a name="flow-sizes-capabilities"></a>
 
 A flow size determines how much video throughput your flow can handle and which source and output types it supports. Choosing the right size ensures your flow can accommodate your required number of outputs, handle your desired video quality, and support specific features like NDI® or AWS Cloud Digital Interface (CDI).
 

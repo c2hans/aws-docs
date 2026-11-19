@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEventDetailsForOrganization
-<a name="API_DescribeEventDetailsForOrganization"></a>
 
 Returns detailed information about one or more specified events for one or more AWS accounts in your organization. This information includes standard event data (such as the AWS Region and service), an event description, and (depending on the event) possible metadata. This operation doesn't return affected entities, such as the resources related to the event. To return affected entities, use the [DescribeAffectedEntitiesForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeAffectedEntitiesForOrganization.html) operation.
 

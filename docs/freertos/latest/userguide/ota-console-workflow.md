@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-console-wo
 ---
 
 # Creating an OTA update (AWS IoT console)
-<a name="ota-console-workflow"></a>
 
 1. In the navigation pane of the AWS IoT console, under **Manage** select **Remote actions**, and then choose **Jobs**.
 

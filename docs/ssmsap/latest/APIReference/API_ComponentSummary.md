@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Component
 ---
 
 # ComponentSummary
-<a name="API_ComponentSummary"></a>
 
 The summary of the component.
 

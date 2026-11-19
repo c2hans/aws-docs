@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/perfor
 ---
 
 # POST Stop: Stop One or More Channels
-<a name="performing-bulk-tasks-stop-channels"></a>
 
 Stop one or more channels. If the specified channels are currently running on their nodes, then they will stop. If the channels are not running, nothing happens.
 

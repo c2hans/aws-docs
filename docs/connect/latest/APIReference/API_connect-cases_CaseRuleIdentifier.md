@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CaseRuleIdentifier
-<a name="API_connect-cases_CaseRuleIdentifier"></a>
 
 Object containing case rule identifier information.
 

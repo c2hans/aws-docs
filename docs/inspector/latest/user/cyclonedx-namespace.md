@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/cyclonedx-namespac
 ---
 
 # Using CycloneDX namespaces with Amazon Inspector
-<a name="cyclonedx-namespace"></a>
 
  Amazon Inspector provides you with CycloneDX namespaces and property names that you can use with SBOMs. This section describes all of the custom key/value properties that might be added to components in CycloneDX SBOMs. For more information, see [CycloneDX property taxonomy](https://github.com/CycloneDX/cyclonedx-property-taxonomy) on the GitHub website.
 

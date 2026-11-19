@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_KMSEncr
 ---
 
 # KMSEncryptionConfig
-<a name="API_KMSEncryptionConfig"></a>
 
 Describes an encryption key for a destination in Amazon S3.
 

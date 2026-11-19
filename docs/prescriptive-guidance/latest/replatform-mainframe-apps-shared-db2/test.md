@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Testing
-<a name="test"></a>
 
 When you replatform a COBOL application while maintaining Db2 for z/OS as the shared database, it's crucial to ensure that the new system functions equivalently to the original. This hybrid environment presents unique challenges and opportunities for testing. The following strategy outlines a comprehensive approach to functional equivalence testing and is designed to validate the replatformed application's performance, data integrity, and seamless integration with the existing Db2 for z/OS database.
 

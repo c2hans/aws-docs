@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DomainU
 ---
 
 # DomainUnitGrantFilter
-<a name="API_DomainUnitGrantFilter"></a>
 
 The grant filter for the domain unit. In the current release of Amazon DataZone, the only supported filter is the `allDomainUnitsGrantFilter`.
 

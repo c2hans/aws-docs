@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrialS
 ---
 
 # TrialSummary
-<a name="API_TrialSummary"></a>
 
 A summary of the properties of a trial. To get the complete set of properties, call the [DescribeTrial](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrial.html) API and provide the `TrialName`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Reposi
 ---
 
 # RepositoryCreationTemplate
-<a name="API_RepositoryCreationTemplate"></a>
 
 The details of the repository creation template associated with the request.
 

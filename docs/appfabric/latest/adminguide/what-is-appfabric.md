@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/what-is-appf
 ---
 
 # What is AWS AppFabric?
-<a name="what-is-appfabric"></a>
 
 AWS AppFabric quickly connects software as a service (SaaS) applications across your organization, so IT and security teams can easily manage and secure applications using a standard schema, and employees can complete everyday tasks faster using generative AI.
 

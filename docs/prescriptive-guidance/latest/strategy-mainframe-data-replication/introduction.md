@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Mainframe data replication strategy for the AWS Cloud
-<a name="introduction"></a>
 
 *Vaidy Sankaran and Pablo Alonso Prieto, Amazon Web Services*
 

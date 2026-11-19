@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_TableR
 ---
 
 # TableReplicationRule
-<a name="API_s3Buckets_TableReplicationRule"></a>
 
 Defines a rule for replicating a table to one or more destination tables.
 

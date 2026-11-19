@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Built-in transformation behavior
-<a name="tffo-built-in-behavior"></a>
 
 The `flattened` type lets a single field hold an entire JSON object and indexes the nested leaf values as keywords. OpenSearch provides the equivalent `flat_object` type. When the source mapping contains a field of type `flattened` and the target supports `flat_object`, the solution rewrites the field type during metadata migration without any additional configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Networking integration
-<a name="networking"></a>
 
 Most enterprises  require connectivity between accounts in their AWS Control Tower–managed environment. This often extends to connecting corporate offices and on-premises data centers. AWS Virtual Private Network (Site-to-Site VPN) and AWS Direct Connect are used as network paths to provide that hybrid connectivity for workloads.
 + [Site-to-Site VPN](https://aws.amazon.com/vpn/)** **establishes a secure and private tunnel from your network or device to the AWS Cloud over the internet. It allows you to securely connect your on-premises network or branch office site to your VPC.

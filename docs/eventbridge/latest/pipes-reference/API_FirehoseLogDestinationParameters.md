@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_F
 ---
 
 # FirehoseLogDestinationParameters
-<a name="API_FirehoseLogDestinationParameters"></a>
 
 The Amazon Data Firehose logging configuration settings for the pipe.
 

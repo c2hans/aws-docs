@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/fault-tolerance-c
 ---
 
 # Fault tolerance
-<a name="fault-tolerance-checks"></a>
 
 You can use the following checks for the fault tolerance category.
 

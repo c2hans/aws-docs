@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ThirdPar
 ---
 
 # ThirdPartyFirewallMissingExpectedRouteTableViolation
-<a name="API_ThirdPartyFirewallMissingExpectedRouteTableViolation"></a>
 
 The violation details for a third-party firewall that's not associated with an AWS Firewall Manager managed route table.
 

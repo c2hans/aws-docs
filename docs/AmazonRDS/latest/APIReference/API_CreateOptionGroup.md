@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateOptionGroup
-<a name="API_CreateOptionGroup"></a>
 
 Creates a new option group. You can create up to 20 option groups.
 

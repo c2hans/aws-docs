@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/Security.traffi
 ---
 
 # Internetwork traffic privacy
-<a name="Security.traffic"></a>
 
 MemoryDB uses the following techniques to secure your data and protect it from unauthorized access:
 + **[MemoryDB and Amazon VPC](vpcs.md)** explains the type of security group you need for your installation.

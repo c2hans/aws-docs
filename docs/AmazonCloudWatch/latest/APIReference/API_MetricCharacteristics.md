@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MetricCharacteristics
-<a name="API_MetricCharacteristics"></a>
 
 This object includes parameters that you can use to provide information to CloudWatch to help it build more accurate anomaly detection models.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # ListDataLakeDatasets
-<a name="API_ListDataLakeDatasets"></a>
 
 Enables you to programmatically view the list of AWS Supply Chain data lake datasets. Developers can view the datasets and the corresponding information such as namespace, schema, and so on for a given instance ID and namespace.
 

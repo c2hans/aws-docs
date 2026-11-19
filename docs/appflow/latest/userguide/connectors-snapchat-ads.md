@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-snap
 ---
 
 # Snapchat Ads connector for Amazon AppFlow
-<a name="connectors-snapchat-ads"></a>
 
 You can use the Snapchat Ads connector in Amazon AppFlow to transfer data about the ads that you run on Snapchat. After you connect Amazon AppFlow to your ad account with Snapchat business, you can transfer data about your ads, campaigns, customer segments, and more. You can transfer this data to certain AWS services or other supported applications.
 

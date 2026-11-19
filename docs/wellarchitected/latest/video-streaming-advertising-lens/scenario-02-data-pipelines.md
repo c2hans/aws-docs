@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Scenario 2: Data pipelines architecture
-<a name="scenario-02-data-pipelines"></a>
 
  Advertising analytics systems ingest, transform, and analyze petabytes of bid events, impressions, clicks, and conversion data. They support campaign measurement, audience intelligence, attribution modeling, and real-time reporting across multiple downstream consumers with different latency requirements.
 

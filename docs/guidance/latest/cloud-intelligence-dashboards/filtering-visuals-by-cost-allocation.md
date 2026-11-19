@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Filtering Visuals by Cost Allocation Tags
-<a name="filtering-visuals-by-cost-allocation"></a>
 
 ## DEPRECATED
 <a name="deprecated"></a>

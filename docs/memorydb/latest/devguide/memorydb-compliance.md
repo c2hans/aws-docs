@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/memorydb-compli
 ---
 
 # Compliance validation for MemoryDB
-<a name="memorydb-compliance"></a>
 
 Third-party auditors assess the security and compliance of MemoryDB as part of multiple AWS compliance programs. This includes:
 + Payment Card Industry Data Security Standard (PCI DSS). For more information, see [PCI DSS.](https://aws.amazon.com/compliance/pci-dss-level-1-faqs/)

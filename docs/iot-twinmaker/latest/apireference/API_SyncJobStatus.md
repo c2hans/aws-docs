@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Sy
 ---
 
 # SyncJobStatus
-<a name="API_SyncJobStatus"></a>
 
 The SyncJob status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_NetworkArtif
 ---
 
 # NetworkArtifactMeta
-<a name="API_NetworkArtifactMeta"></a>
 
 Metadata for network package artifacts.
 

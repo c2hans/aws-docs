@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CloudwatchLo
 ---
 
 # CloudwatchLogsAction
-<a name="API_CloudwatchLogsAction"></a>
 
 Describes an action that sends data to CloudWatch Logs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # MediaConcatenationPipeline
-<a name="API_media-pipelines-chime_MediaConcatenationPipeline"></a>
 
 Concatenates audio and video data from one or more data streams.
 

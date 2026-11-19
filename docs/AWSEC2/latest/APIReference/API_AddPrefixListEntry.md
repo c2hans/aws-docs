@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AddPrefix
 ---
 
 # AddPrefixListEntry
-<a name="API_AddPrefixListEntry"></a>
 
 An entry for a prefix list.
 

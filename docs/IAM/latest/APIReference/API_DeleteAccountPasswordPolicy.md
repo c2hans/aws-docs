@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccoun
 ---
 
 # DeleteAccountPasswordPolicy
-<a name="API_DeleteAccountPasswordPolicy"></a>
 
 Deletes the password policy for the AWS account. There are no parameters.
 

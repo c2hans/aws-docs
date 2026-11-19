@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Running Auto Scaling groups with associations
-<a name="systems-manager-state-manager-asg"></a>
 
 The best practice when using associations to run Auto Scaling groups is to use tag targets. Not using tags might cause you to reach the association limit.
 

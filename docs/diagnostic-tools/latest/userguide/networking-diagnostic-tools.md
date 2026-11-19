@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/userguide/networ
 ---
 
 # Tools for diagnosing networking services
-<a name="networking-diagnostic-tools"></a>
 
 The diagnostic networking tools can help users effectively manage and troubleshoot various networking configurations, including Bring Your Own IP (BYOIP) in Amazon EC2, Amazon Route 53 domain actions, load balancer responses, and Amazon VPC security groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/ahead-app-de
 ---
 
 # Troubleshoot AppClients in AppFabric for productivity
-<a name="ahead-app-dev-errors"></a>
 
 |  |
 | --- |

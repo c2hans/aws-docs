@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Understanding CloudTrail events
-<a name="cloudtrail-events"></a>
 
 **Upcoming: new Amazon S3 data event types**
 Starting December 21, 2026, AWS CloudTrail will deliver two new types of Amazon S3 data events to trails that already log S3 data events: S3 Lifecycle events and S3 authentication failure events. These event types are not available yet, and CloudTrail will not deliver them before December 21, 2026.
@@ -408,6 +407,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon Support | SupportAccess API activity on trusting accounts. | SupportAccess trusting account | `AWS::SupportAccess::TrustingAccount` |
 | Amazon Support | SupportAccess API activity on trusting roles. | SupportAccess trusting role | `AWS::SupportAccess::TrustingRole` |
 | Amazon SWF | Amazon SWF API activity on domains. For more information, see [Amazon SWF](https://docs.aws.amazon.com/amazonswf/latest/developerguide/ct-logging.html#cloudtrail-data-events). | SWF domain | `AWS::SWF::Domain` |
+| Amazon Textract | An Amazon Textract intelligent document analysis job, created by StartDocumentInsights and retrieved with GetDocumentInsights. Identified by its job ARN (arn:aws:textract:<region>:<account>:job/<job-id>). | Textract Job | `AWS::Textract::Job` |
 | Amazon WorkSpaces Thin Client | WorkSpaces Thin Client API activity on a Device. | Thin Client Device | `AWS::ThinClient::Device` |
 | Amazon WorkSpaces Thin Client | WorkSpaces Thin Client API activity on an Environment. | Thin Client Environment | `AWS::ThinClient::Environment` |
 | Timestamp token | API activity on `AWS::Timestamp::TimestampToken` resources. | Timestamp token | `AWS::Timestamp::TimestampToken` |

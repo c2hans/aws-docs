@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # IncreaseReplicationFactor
-<a name="API_dax_IncreaseReplicationFactor"></a>
 
 Adds one or more nodes to a DAX cluster.
 

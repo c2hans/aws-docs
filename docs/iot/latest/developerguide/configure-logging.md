@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/configure-logg
 ---
 
 # Configure AWS IoT logging
-<a name="configure-logging"></a>
 
 You must enable logging by using the AWS IoT console, CLI, or API before you can monitor and log AWS IoT activity. You can configure logging for AWS IoT at three levels: account-level, event-level or resource-specific level. Event-level and resource-specific logging are available exclusively with V2 logging. Customers using V1 logging must perform a migration to V2 to access these features. See [details](https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html#migration-v1-v2).
 

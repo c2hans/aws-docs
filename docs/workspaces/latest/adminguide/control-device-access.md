@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/control-dev
 ---
 
 # Control device access for WorkSpaces Personal
-<a name="control-device-access"></a>
 
 You can specify the types of devices that have access to WorkSpaces based on the device platform. You can use certificates to restrict access to WorkSpaces to trusted devices (also known as managed devices).
 

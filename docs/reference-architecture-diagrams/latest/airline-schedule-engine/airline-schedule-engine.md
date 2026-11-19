@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Airline Schedule Engine
-<a name="airline-schedule-engine"></a>
 
 Publication date: **May 3, 2021 ([Diagram history](#schedule-engine-history))**
 

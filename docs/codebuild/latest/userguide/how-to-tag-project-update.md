@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-tag-pr
 ---
 
 # Edit tags for a project
-<a name="how-to-tag-project-update"></a>
 
 You can change the value for a tag associated with a project. You can also change the name of the key, which is equivalent to removing the current tag and adding a different one with the new name and the same value as the other key. Keep in mind that there are limits on the characters you can use in the key and value fields. For more information, see [Tags](limits.md#tag-limits).
 

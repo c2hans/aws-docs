@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-
 ---
 
 # Specifying AWS Glue resource ARNs
-<a name="glue-specifying-resource-arns"></a>
 
 In AWS Glue, you can control access to resources using an AWS Identity and Access Management (IAM) policy. In a policy, you use an Amazon Resource Name (ARN) to identify the resource that the policy applies to. Not all resources in AWS Glue support ARNs.
 

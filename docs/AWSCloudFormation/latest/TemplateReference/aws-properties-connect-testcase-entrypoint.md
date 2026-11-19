@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::TestCase EntryPoint
-<a name="aws-properties-connect-testcase-entrypoint"></a>
 
 <a name="aws-properties-connect-testcase-entrypoint-description"></a>The `EntryPoint` property type specifies Property description not available. for an [AWS::Connect::TestCase](aws-resource-connect-testcase.md).
 

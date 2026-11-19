@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_D
 ---
 
 # DomainSummary
-<a name="API_DomainSummary"></a>
 
 A summary of metadata for a domain.
 

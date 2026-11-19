@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # MetadataConfigurationDelete
-<a name="API_S3VectorBuckets_MetadataConfigurationDelete"></a>
 
 Text search configurations to delete from a vector index.
 

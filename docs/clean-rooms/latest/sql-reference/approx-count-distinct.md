@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/approx-
 ---
 
 # APPROX COUNT\_DISTINCT function
-<a name="approx-count-distinct"></a>
 
 APPROX COUNT\_DISTINCT provides an efficient way to estimate the number of unique values in a column or dataset.
 

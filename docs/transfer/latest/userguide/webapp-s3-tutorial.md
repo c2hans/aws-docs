@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/webapp-s3-tuto
 ---
 
 # Tutorial: Setting up AWS Transfer Family web app with selective multi-bucket access
-<a name="webapp-s3-tutorial"></a>
 
 This tutorial guides you through configuring a Transfer Family web app with specific Amazon S3 bucket permissions for a single user. You'll learn how to set up a solution that allows users to download from one bucket and upload to another while maintaining security. This is an advanced tutorial that builds on the concepts covered in the basic tutorial. If you're new to AWS Transfer Family web apps, consider starting with [Tutorial: Setting up a basic Transfer Family web app](web-app-tutorial.md).
 

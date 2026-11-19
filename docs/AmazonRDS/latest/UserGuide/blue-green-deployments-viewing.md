@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-de
 ---
 
 # Viewing a blue/green deployment in Amazon RDS
-<a name="blue-green-deployments-viewing"></a>
 
 You can view the details about a blue/green deployment using the AWS Management Console, the AWS CLI, or the RDS API.
 

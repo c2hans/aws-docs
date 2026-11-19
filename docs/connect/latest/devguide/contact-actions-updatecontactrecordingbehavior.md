@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # UpdateContactRecordingBehavior
-<a name="contact-actions-updatecontactrecordingbehavior"></a>
 
 Sets contact recording behavior, including analysis behavior and which participants of the contact to record.
 

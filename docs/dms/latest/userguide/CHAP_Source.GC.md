@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.GC.html
 ---
 
 # Using Google Cloud for MySQL as a source for AWS DMS
-<a name="CHAP_Source.GC"></a>
 
 With AWS DMS, you can use Google Cloud for MySQL as a source in much the same way as you do MySQL.
 

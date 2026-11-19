@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/shadow-tests-best-pr
 ---
 
 # Best practices
-<a name="shadow-tests-best-practices"></a>
 
  When creating an inference experiment, keep the following information in mind:
 +  **Traffic sampling percentage** – Sampling 100 percent of the inference requests lets you validate that your shadow variant can handle production traffic when promoted. You may start off with a lower traffic sampling percentage and dial up as you gain confidence in your variant, but it is best practice to ensure that you’ve increased the traffic to 100 percent prior to promotion.

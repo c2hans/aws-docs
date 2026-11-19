@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeR
 ---
 
 # DescribeRouteServers
-<a name="API_DescribeRouteServers"></a>
 
 Describes one or more route servers.
 

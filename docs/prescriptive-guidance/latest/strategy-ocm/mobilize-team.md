@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Point 1. Mobilize Team
-<a name="mobilize-team"></a>
 
 Mobilize Team is designed to build a structure and to identify measures of success and governance around change acceleration efforts and activities. This area contains eight subpoints:
 + [1.1 Develop change acceleration charter](#mobilize-charter)

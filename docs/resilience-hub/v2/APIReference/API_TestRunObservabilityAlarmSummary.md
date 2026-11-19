@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunObservabilityAlarmSummary
-<a name="API_TestRunObservabilityAlarmSummary"></a>
 
 Summary information about an observability alarm snapshot captured for a test run.
 

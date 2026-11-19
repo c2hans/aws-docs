@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceS
 ---
 
 # GetResourceShares
-<a name="API_GetResourceShares"></a>
 
 Retrieves details about the resource shares that you own or that are shared with you.
 

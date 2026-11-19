@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SecretsManagerLocation
-<a name="API_SecretsManagerLocation"></a>
 
 The AWS Secrets Manager location configuration.
 

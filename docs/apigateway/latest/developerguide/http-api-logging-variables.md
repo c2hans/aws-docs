@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Customize HTTP API access logs
-<a name="http-api-logging-variables"></a>
 
 You can use the following variables to customize HTTP API access logs. To learn more about access logs for HTTP APIs, see [Configure logging for HTTP APIs in API Gateway](http-api-logging.md).
 

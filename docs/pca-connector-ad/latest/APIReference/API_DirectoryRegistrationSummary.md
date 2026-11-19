@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # DirectoryRegistrationSummary
-<a name="API_DirectoryRegistrationSummary"></a>
 
 The directory registration represents the authorization of the connector service with the Active Directory.
 

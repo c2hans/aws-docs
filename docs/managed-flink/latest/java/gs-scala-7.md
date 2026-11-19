@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/gs-scala-7.htm
 ---
 
 # Create and run the application (console)
-<a name="gs-scala-7"></a>
 
 Follow these steps to create, configure, update, and run the application using the console.
 

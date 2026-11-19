@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/supported-dataso
 ---
 
 # Supported data sources
-<a name="supported-datasources"></a>
 
 **AWS Lambda**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Rebooting an Amazon MQ broker
-<a name="amazon-mq-rebooting-broker"></a>
 
 To apply a new configuration to a broker, you can reboot the broker.
 

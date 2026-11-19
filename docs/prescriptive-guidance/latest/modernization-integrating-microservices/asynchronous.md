@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Asynchronous communication
-<a name="asynchronous"></a>
 
 Conversely, in asynchronous communication, the client issues a request to a service but doesn't receive an immediate response. In this case, the client usually receives only an acknowledgement that the request was accepted.
 

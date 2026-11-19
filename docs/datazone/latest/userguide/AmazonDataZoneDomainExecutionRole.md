@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/AmazonDataZone
 ---
 
 # AmazonDataZoneDomainExecutionRole
-<a name="AmazonDataZoneDomainExecutionRole"></a>
 
 The **AmazonDataZoneDomainExecutionRole** has the AWS managed policy **AmazonDataZoneDomainExecutionRolePolicy** attached. Amazon DataZone creates this role for you on your behalf. For certain actions in the data portal, Amazon DataZone assumes this role in the account in which the role is created and checks that this role is authorized to perform the action.
 

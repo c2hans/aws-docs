@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBProxyEndpoints
-<a name="API_DescribeDBProxyEndpoints"></a>
 
 Returns information about DB proxy endpoints.
 

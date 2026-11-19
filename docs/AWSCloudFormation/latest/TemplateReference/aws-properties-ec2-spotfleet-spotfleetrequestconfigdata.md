@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::SpotFleet SpotFleetRequestConfigData
-<a name="aws-properties-ec2-spotfleet-spotfleetrequestconfigdata"></a>
 
 Specifies the configuration of a Spot Fleet request. For more information, see [Spot Fleet ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet.html) in the *Amazon EC2 User Guide*.
 

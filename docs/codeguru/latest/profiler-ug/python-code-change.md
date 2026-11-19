@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/python-code-
 ---
 
 # Enabling the agent with code
-<a name="python-code-change"></a>
 
 If your application runs on a platform other than Lambda, install `codeguru_profiler_agent` through `pip`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # InputConfigInput
-<a name="API_geospatial_InputConfigInput"></a>
 
 Input configuration information.
 

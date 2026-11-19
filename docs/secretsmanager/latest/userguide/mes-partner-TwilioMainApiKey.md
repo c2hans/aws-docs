@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Twilio Main API Key
-<a name="mes-partner-TwilioMainApiKey"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c63b3"></a>

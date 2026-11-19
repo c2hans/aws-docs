@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/list-rotations
 ---
 
 # List rotations and key materials
-<a name="list-rotations"></a>
 
 KMS keys that support automatic or on-demand key rotation can have multiple key materials associated with them. These keys have an initial key material and one additional key material for each automatic or on-demand rotation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/combining-overl
 ---
 
 # Combining overlays and insertion options
-<a name="combining-overlays-and-insertion-options"></a>
 
 You can set up the event to insert a static overlay in more than one way. For example, you can insert a static overlay in one layer in the Input section and insert a static overlay in another layer in the Global Processors section.
 

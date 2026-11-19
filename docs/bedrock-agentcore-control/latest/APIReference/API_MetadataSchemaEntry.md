@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MetadataSchemaEntry
-<a name="API_MetadataSchemaEntry"></a>
 
 A metadata field definition within a strategy's schema.
 

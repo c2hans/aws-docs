@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SessionS3Log
 ---
 
 # SessionS3LoggingConfiguration
-<a name="API_SessionS3LoggingConfiguration"></a>
 
 The Amazon S3 logging configuration for a session.
 

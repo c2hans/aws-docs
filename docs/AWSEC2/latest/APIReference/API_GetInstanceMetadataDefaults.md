@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstan
 ---
 
 # GetInstanceMetadataDefaults
-<a name="API_GetInstanceMetadataDefaults"></a>
 
 Gets the default instance metadata service (IMDS) settings that are set at the account level in the specified AWS  Region.
 

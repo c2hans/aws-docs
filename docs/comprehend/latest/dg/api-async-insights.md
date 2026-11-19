@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/api-async-insights.
 ---
 
 # Async analysis for Amazon Comprehend insights
-<a name="api-async-insights"></a>
 
 The following sections use the Amazon Comprehend API to run asynchronous operations to analyze Amazon Comprehend insights.
 

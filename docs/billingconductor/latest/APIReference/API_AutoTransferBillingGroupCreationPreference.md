@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # AutoTransferBillingGroupCreationPreference
-<a name="API_AutoTransferBillingGroupCreationPreference"></a>
 
  The auto billing group creation preference for a billing transfer. When the preference is enabled, AWS Billing Conductor automatically creates an indirect billing transfer billing group, with the specified pricing plan, for each account that transfers its bill to the bill source account of the billing transfer.
 

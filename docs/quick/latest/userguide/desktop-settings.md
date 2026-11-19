@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-settings.
 ---
 
 # Settings
-<a name="desktop-settings"></a>
 
 Open Settings from the account menu. Settings are organized into tabs: Account, Appearance and language, Chat, General, and Advanced.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # VariablePaymentTerm
-<a name="API_marketplace-discovery_VariablePaymentTerm"></a>
 
 Defines a variable payment term with a maximum total charge amount.
 

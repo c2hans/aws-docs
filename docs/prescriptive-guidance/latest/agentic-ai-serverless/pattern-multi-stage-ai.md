@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Pattern 4: Multi-stage AI workflow
-<a name="pattern-multi-stage-ai"></a>
 
 Many real-world AI applications are not served by a single model or function. Instead, they require a sequence of AI-driven tasks, often interleaved with business logic, validations, or third-party API calls. These multi-stage workflows are common across industries and use cases, including:
 + Document analysis pipelines such as optical character recognition (OCR) to classification to summarization to indexing

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/toUpper.html
 ---
 
 # $toUpper
-<a name="toUpper"></a>
 
 The `$toUpper` operator in Amazon DocumentDB is used to convert a string to uppercase.
 

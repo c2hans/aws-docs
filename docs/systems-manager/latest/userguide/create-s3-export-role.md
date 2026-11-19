@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/create-
 ---
 
 # Creating a custom service role to export diagnosis reports to S3
-<a name="create-s3-export-role"></a>
 
 When you are viewing filtered or unfiltered lists of managed nodes for your AWS organization or account in the Systems Manager **Explore nodes** page, you can export the list as a report to an Amazon S3 bucket as a `CSV` file.
 

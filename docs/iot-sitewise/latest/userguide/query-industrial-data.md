@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-indu
 ---
 
 # Query data from AWS IoT SiteWise
-<a name="query-industrial-data"></a>
 
 You can use the AWS IoT SiteWise API operations to query your asset properties' current values, historical values, and aggregates over specific time intervals. AWS IoT SiteWise provides multiple query interfaces to meet different integration needs:
 + **Direct API operations** - Simple, targeted API calls for specific data retrieval needs

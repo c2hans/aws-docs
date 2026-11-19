@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/github-code
 ---
 
 # Reviewing code with Amazon Q Developer in GitHub
-<a name="github-code-reviews"></a>
 
 **Amazon Q Developer for GitHub: end of support**
 On January 30, 2027, AWS will discontinue support for the Amazon Q Developer for GitHub App. New app installations will no longer be available starting November 18, 2026.

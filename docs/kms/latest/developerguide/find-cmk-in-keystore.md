@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-in-ke
 ---
 
 # Find the KMS keys in an AWS CloudHSM key store
-<a name="find-cmk-in-keystore"></a>
 
 If you manage an AWS CloudHSM key store, you might need to identify the KMS keys in each AWS CloudHSM key store. You can use this information to track the KMS key operations in AWS CloudTrail logs, predict the effect of disconnecting a custom key store on KMS keys, or schedule deletion of KMS keys before you delete an AWS CloudHSM key store.
 

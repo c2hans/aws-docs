@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_IoTJobExe
 ---
 
 # IoTJobExecutionsRolloutConfig
-<a name="API_IoTJobExecutionsRolloutConfig"></a>
 
 Contains information about the rollout configuration for a job. This configuration defines the rate at which the job deploys a configuration to a fleet of target devices.
 

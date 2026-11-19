@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/welcome
 ---
 
 # About AWS Elastic Beanstalk release notes
-<a name="welcome"></a>
 
 The Elastic Beanstalk release notes provide details about Elastic Beanstalk releases—new features, updates, and fixes related to the service, platform, console, and EB CLI. Whenever we release any update, we publish release notes describing the content of the release.
 

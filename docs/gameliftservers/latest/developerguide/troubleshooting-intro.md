@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/tr
 ---
 
 # Testing and troubleshooting Amazon GameLift Servers
-<a name="troubleshooting-intro"></a>
 
 This section provides guidance for diagnosing and resolving issues with your Amazon GameLift Servers hosting solution. Whether you're experiencing issues during development, deployment, or production operations, these resources will help you identify root causes and implement effective solutions.
 + **Development and testing environments** – Set up iterative development workflows that mirror production conditions, enabling you to catch and resolve integration issues early in your development cycle.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/use-stream-
 ---
 
 # Create custom components that use stream manager
-<a name="use-stream-manager-in-custom-components"></a>
 
 Use stream manager in custom Greengrass components to store, process, and export IoT device data. Use the procedures and examples in this section to create component recipes, artifacts, and applications that work with stream manager. For more information about how to develop and test components, see [Create AWS IoT Greengrass components](create-components.md).
 

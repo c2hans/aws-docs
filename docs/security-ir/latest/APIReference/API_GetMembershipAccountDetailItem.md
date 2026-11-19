@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_GetM
 ---
 
 # GetMembershipAccountDetailItem
-<a name="API_GetMembershipAccountDetailItem"></a>
 
 ## Contents
 <a name="API_GetMembershipAccountDetailItem_Contents"></a>

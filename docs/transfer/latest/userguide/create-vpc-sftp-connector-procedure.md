@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/create-vpc-sft
 ---
 
 # Create an SFTP connector with VPC-based egress
-<a name="create-vpc-sftp-connector-procedure"></a>
 
 This topic provides step-by-step instructions for creating SFTP connectors with VPC connectivity. VPC\_LATTICE-enabled connectors use Amazon VPC Lattice to route traffic through your Virtual Private Cloud, enabling secure connections to private endpoints or using your own NAT gateways for internet access.
 

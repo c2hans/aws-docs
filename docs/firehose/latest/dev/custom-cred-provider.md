@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/custom-cred-provider
 ---
 
 # Create custom credential providers
-<a name="custom-cred-provider"></a>
 
 You can create a custom credentials provider and give its class name and jar path to the Kinesis agent in the following configuration settings: `userDefinedCredentialsProvider.classname` and `userDefinedCredentialsProvider.location`. For the descriptions of these two configuration settings, see [Specify agent configuration settings](agent-config-settings.md).
 

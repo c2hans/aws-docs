@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_T
 ---
 
 # TransitGatewayRegistrationStateReason
-<a name="API_TransitGatewayRegistrationStateReason"></a>
 
 Describes the status of a transit gateway registration.
 

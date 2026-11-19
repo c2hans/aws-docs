@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Create a messenger application with Step Functions
-<a name="example_cross_StepFunctionsMessenger_section"></a>
 
 The following code example shows how to create an AWS Step Functions messenger application that retrieves message records from a database table.
 

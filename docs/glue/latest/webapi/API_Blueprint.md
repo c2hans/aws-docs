@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Blueprint.html
 ---
 
 # Blueprint
-<a name="API_Blueprint"></a>
 
 The details of a blueprint.
 

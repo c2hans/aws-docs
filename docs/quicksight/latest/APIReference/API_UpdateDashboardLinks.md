@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDashboardLinks
-<a name="API_UpdateDashboardLinks"></a>
 
 Updates the linked analyses on a dashboard.
 

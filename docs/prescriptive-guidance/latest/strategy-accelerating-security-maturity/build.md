@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Build: Laying the groundwork for a strong cloud security foundation
-<a name="build"></a>
 
 Now that you have a plan, the next step is laying the groundwork. This step demonstrates how to build an initial cloud foundation on AWS that is secure, resilient, scalable, and automated across multiple accounts. Laying the groundwork can be specifically designed and customized according to your business goals. You can adapt controls to a new landing zone, or you can include them in an existing landing zone. The automations in [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html) can help you lay the security groundwork in the AWS Cloud. The following image shows a landing zone that is set up through AWS Control Tower.
 

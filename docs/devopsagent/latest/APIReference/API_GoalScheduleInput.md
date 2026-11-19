@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Goal
 ---
 
 # GoalScheduleInput
-<a name="API_GoalScheduleInput"></a>
 
 Schedule configuration for updating goal evaluations
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # Security
-<a name="security"></a>
 
  The security pillar encompasses the ability to protect data, systems, and assets by taking advantage of cloud technologies.
 

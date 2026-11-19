@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ParamVal
 ---
 
 # Specifying DB parameters
-<a name="USER_ParamValuesRef"></a>
 
 DB parameter types include the following:
 + Integer

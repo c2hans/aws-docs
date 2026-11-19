@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/fro
 ---
 
 # Submit a job to Deadline Cloud from a terminal
-<a name="from-a-terminal"></a>
 
 Using only a job bundle and the Deadline Cloud CLI, you or your more technical users can rapidly iterate on writing job bundles to test submitting a job. Use the following command to submit a job bundle:
 

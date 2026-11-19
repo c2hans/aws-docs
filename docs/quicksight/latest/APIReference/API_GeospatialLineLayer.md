@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialLineLayer
-<a name="API_GeospatialLineLayer"></a>
 
 The geospatial Line layer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LoadBalan
 ---
 
 # LoadBalancersConfig
-<a name="API_LoadBalancersConfig"></a>
 
 Describes the Classic Load Balancers and target groups to attach to a Spot Fleet request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 14.2 – Consult with your finance team and determine optimal payment models
-<a name="best-practice-14.2---consult-with-your-finance-team-and-determine-optimal-payment-models."></a>
 
  If you use reserved-capacity pricing options, you can reduce the infrastructure cost without modifying your workload architectures. Collaborate with your finance team on the planning and use of purchase discounts.
 

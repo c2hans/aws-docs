@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactA
 ---
 
 # ContactAnalysis
-<a name="API_ContactAnalysis"></a>
 
 A structure that defines search criteria for contacts using analysis outputs from Connect Customer Contact Lens.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this Guidance. As of this revision, the cost for running it with the default settings in the US East (N. Virginia) Region is approximately **$85.22 a month**. These costs are for the resources shown in the [Sample cost table](#sample-cost-table).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-
 ---
 
 # Pass Secrets Manager secrets through Amazon ECS environment variables
-<a name="secrets-envvar-secrets-manager"></a>
 
 When you inject a secret as an environment variable, you can specify the full contents of a secret, a specific JSON key within a secret. This helps you control the sensitive data exposed to your container. For more information about secret versioning, see [What's in a Secrets Manager secret?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/whats-in-a-secret.html#term_version) in the *AWS Secrets Manager User Guide*.
 

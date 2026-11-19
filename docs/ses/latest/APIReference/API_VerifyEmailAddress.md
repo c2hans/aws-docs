@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyEmailA
 ---
 
 # VerifyEmailAddress
-<a name="API_VerifyEmailAddress"></a>
 
 Deprecated. Use the `VerifyEmailIdentity` operation to verify a new email address.
 

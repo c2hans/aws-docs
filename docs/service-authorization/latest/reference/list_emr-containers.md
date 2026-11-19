@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon EMR on EKS (EMR Containers)
-<a name="list_emr-containers"></a>
 
 Amazon EMR on EKS (EMR Containers) (service prefix: `emr-containers`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

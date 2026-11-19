@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-scaling.h
 ---
 
 # Scaling behavior for Lambda Web Functions
-<a name="web-functions-scaling"></a>
 
 Lambda scales your Web Function's endpoint automatically as traffic arrives. It scales in two dimensions:
 + **Number of environments** – Lambda adds more execution environments, up to `maxEnvironments`.

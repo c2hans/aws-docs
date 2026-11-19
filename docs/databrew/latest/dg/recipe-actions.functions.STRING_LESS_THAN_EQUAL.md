@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # STRING\_LESS\_THAN\_EQUAL
-<a name="recipe-actions.functions.STRING_LESS_THAN_EQUAL"></a>
 
 Creates a new column populated with one of the following:
 + `True` if one string in a column (or value) is less than or equal to another string in a different column (or value).

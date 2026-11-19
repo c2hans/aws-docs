@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GlueRun
 ---
 
 # GlueRunConfigurationInput
-<a name="API_GlueRunConfigurationInput"></a>
 
 The configuration details of the AWS Glue data source.
 

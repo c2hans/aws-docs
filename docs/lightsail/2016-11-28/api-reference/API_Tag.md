@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_T
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Describes a tag key and optional value assigned to an Amazon Lightsail resource.
 

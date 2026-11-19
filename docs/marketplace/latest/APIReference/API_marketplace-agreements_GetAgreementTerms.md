@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # GetAgreementTerms
-<a name="API_marketplace-agreements_GetAgreementTerms"></a>
 
 Obtains details about the terms in an agreement that you participated in as proposer or acceptor.
 

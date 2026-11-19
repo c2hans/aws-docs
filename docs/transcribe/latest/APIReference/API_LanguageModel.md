@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Langu
 ---
 
 # LanguageModel
-<a name="API_LanguageModel"></a>
 
 Provides information about a custom language model, including:
 + The base model name

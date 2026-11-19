@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNet
 ---
 
 # DeleteNetworkAclEntry
-<a name="API_DeleteNetworkAclEntry"></a>
 
 Deletes the specified ingress or egress entry (rule) from the specified network ACL.
 

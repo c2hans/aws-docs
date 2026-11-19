@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringCsvDatasetFormat
-<a name="API_MonitoringCsvDatasetFormat"></a>
 
 Represents the CSV dataset format used when running a monitoring job.
 

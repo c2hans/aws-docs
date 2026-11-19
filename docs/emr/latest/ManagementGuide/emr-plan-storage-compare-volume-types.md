@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-stor
 ---
 
 # Comparing Amazon EBS volume types gp2 and gp3
-<a name="emr-plan-storage-compare-volume-types"></a>
 
 Here is a comparison of cost between gp2 and gp3 volumes in the US East (N. Virginia) Region. For the most up to date information, see the [Amazon EBS General Purpose Volumes](https://aws.amazon.com/ebs/general-purpose/) product page and the [Amazon EBS Pricing Page](https://aws.amazon.com/ebs/pricing/).
 

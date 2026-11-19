@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/recomm
 ---
 
 # List recommendations
-<a name="recommendations-list"></a>
 
 List all recommendations in your account. Results are paginated and can be filtered by status.
 

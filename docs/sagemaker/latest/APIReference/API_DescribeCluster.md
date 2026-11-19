@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeCluster
-<a name="API_DescribeCluster"></a>
 
 Retrieves information of a SageMaker HyperPod cluster.
 

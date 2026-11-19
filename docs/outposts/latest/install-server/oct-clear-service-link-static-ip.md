@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/oct-clear
 ---
 
 # clear-service-link-static-ip
-<a name="oct-clear-service-link-static-ip"></a>
 
 The **clear-service-link-static-ip** command deletes the service link IP address. You must reboot the Outposts server for the IP address to be deleted. The IP will revert back to DHCP after the reboot.
 

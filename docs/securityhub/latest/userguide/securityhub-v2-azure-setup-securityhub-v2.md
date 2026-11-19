@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Configuring Security Hub to integrate with Microsoft Azure
-<a name="securityhub-v2-azure-setup-securityhub-v2"></a>
 
 After you complete the [prerequisite tasks](securityhub-v2-azure-prereqs.md) and [configure your Microsoft Azure environment](securityhub-v2-azure-setup-azure.md), you can configure AWS Security Hub to integrate with Azure. To configure Security Hub to integrate with Azure, you create a connector. You can create the connector from a delegated administrator account or the management account. After you create the connector, the following events occur:
 

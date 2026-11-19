@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DeploymentStrategyOverrideOptions
-<a name="API_DeploymentStrategyOverrideOptions"></a>
 
 Overrides the deployment strategy for a single operation, such as a version upgrade.
 

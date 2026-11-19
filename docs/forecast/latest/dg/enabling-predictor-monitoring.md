@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/enabling-predictor-mo
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # Enabling Predictor Monitoring
-<a name="enabling-predictor-monitoring"></a>
 
 You can enable predictor monitoring when you create the predictor, or you can enable it for an existing predictor.
 

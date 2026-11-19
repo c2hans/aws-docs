@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/quickbooks-support.html
 ---
 
 # AWS Glue support for QuickBooks
-<a name="quickbooks-support"></a>
 
 AWS Glue supports QuickBooks as follows:
 

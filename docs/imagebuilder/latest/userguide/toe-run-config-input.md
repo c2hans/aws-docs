@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-run-co
 ---
 
 # Configure input for the AWSTOE run command
-<a name="toe-run-config-input"></a>
 
 To streamline command line input for your AWSTOE **run** command, you can include settings for command parameters and options in a JSON format input configuration file with a `.json` file extension. AWSTOE can read your file from one of the following locations:
 + A local file path ({{./config.json}}).

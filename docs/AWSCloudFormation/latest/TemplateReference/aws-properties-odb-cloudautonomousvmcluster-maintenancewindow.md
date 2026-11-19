@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudAutonomousVmCluster MaintenanceWindow
-<a name="aws-properties-odb-cloudautonomousvmcluster-maintenancewindow"></a>
 
 The scheduling details for the maintenance window. Patching and system updates take place during the maintenance window.
 

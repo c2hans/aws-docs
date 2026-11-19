@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/run-build-con
 ---
 
 # Run a build (console)
-<a name="run-build-console"></a>
 
 To use AWS CodePipeline to run a build with CodeBuild, skip these steps and follow the instructions in [Use CodeBuild with CodePipeline](how-to-create-pipeline.md).
 

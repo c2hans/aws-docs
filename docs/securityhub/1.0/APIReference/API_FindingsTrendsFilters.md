@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingsTrendsFilters
-<a name="API_FindingsTrendsFilters"></a>
 
 The structure that defines filters to apply to findings trend data queries.
 

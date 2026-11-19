@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ResourceF
 ---
 
 # ResourceFilters
-<a name="API_ResourceFilters"></a>
 
 Filters the results by resource account ID, region, resource ID, and resource name.
 

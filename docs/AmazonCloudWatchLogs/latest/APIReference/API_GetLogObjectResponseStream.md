@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetLogObjectResponseStream
-<a name="API_GetLogObjectResponseStream"></a>
 
 A stream of structured log data returned by the GetLogObject operation. This stream contains log events with their associated metadata and extracted fields.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Quotas
-<a name="quotas"></a>
 
 Service Quotas, also referred to as limits, are the maximum number of service resources or operations for your AWS account.
 

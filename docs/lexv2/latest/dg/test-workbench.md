@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/test-workbench.html
 ---
 
 # Evaluating Lex V2 bot performance with the Test Workbench
-<a name="test-workbench"></a>
 
 To improve bot performance, you can evaluate the performance of your bots at scale. The results for your test evaluation are displayed in simple tables and charts.
 

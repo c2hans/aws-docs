@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_s
 ---
 
 # GetRecords
-<a name="API_streams_GetRecords"></a>
 
 Retrieves the stream records from a given shard.
 

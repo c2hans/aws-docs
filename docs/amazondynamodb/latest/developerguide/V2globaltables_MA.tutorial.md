@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2g
 ---
 
 # Tutorials: Creating multi-account global tables
-<a name="V2globaltables_MA.tutorial"></a>
 
 This section provides step-by-step instructions for creating DynamoDB global tables that span across multiple AWS accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RulesCon
 ---
 
 # RulesConfiguration
-<a name="API_RulesConfiguration"></a>
 
 The rules configuration for conversational analytics. Controls whether Contact Lens rules are evaluated against the analytics output.
 

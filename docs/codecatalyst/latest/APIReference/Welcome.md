@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/Welcome
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 **Important**
 Amazon CodeCatalyst is no longer open to new customers. For more information, see [How to migrate from Amazon CodeCatalyst](https://docs.aws.amazon.com/codecatalyst/latest/userguide/migration.html).
@@ -63,4 +62,4 @@ Security, activity, and resource management in Amazon CodeCatalyst, by calling t
 **Note**
 If you are using the Amazon CodeCatalyst APIs with an SDK or the AWS CLI, you must configure your computer to work with Amazon CodeCatalyst and single sign-on (SSO). For more information, see [Setting up to use the AWS CLI with Amazon CodeCatalyst](https://docs.aws.amazon.com/codecatalyst/latest/userguide/set-up-cli.html) and the SSO documentation for your SDK.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

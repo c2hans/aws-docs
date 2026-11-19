@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-schedule
 ---
 
 # Setting a schedule pattern for scheduled rules (legacy) in Amazon EventBridge
-<a name="eb-scheduled-rule-pattern"></a>
 
 **Note**
 Scheduled rules are a legacy feature of EventBridge.

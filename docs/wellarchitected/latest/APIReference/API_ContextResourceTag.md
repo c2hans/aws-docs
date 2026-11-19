@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ContextResourceTag
-<a name="API_ContextResourceTag"></a>
 
 A key-value pair representing a resource tag used to scope context content.
 

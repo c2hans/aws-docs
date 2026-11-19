@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessStreamMetrics
-<a name="API_HarnessStreamMetrics"></a>
 
 Latency metrics for the invocation.
 

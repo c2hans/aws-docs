@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sessi
 ---
 
 # Agent details - Sessions
-<a name="session-sessions-view"></a>
 
 An Agent can have several Sessions. View session in the *Sessions* tab. Use the **Filter sessions** or sort the columns to find the required session.
 

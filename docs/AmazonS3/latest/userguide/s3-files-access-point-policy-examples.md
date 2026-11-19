@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-acces
 ---
 
 # Control client access to an S3 Files file system
-<a name="s3-files-access-point-policy-examples"></a>
 
 This topic describes how to use file system policies, IAM identity policies, and network controls to control which clients can access your S3 Files file system and through which access points.
 

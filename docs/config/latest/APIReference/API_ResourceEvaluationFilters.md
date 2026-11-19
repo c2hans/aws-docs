@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ResourceE
 ---
 
 # ResourceEvaluationFilters
-<a name="API_ResourceEvaluationFilters"></a>
 
 Returns details of a resource evaluation based on the selected filter.
 

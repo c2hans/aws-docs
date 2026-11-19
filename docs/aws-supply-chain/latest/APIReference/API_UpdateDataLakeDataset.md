@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # UpdateDataLakeDataset
-<a name="API_UpdateDataLakeDataset"></a>
 
 Enables you to programmatically update an AWS Supply Chain data lake dataset. Developers can update the description of a data lake dataset for a given instance ID, namespace, and dataset name.
 

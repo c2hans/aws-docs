@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Redshift-config
 ---
 
 # Configuring Amazon Redshift
-<a name="Redshift-config"></a>
 
  After adding your Amazon Redshift data source to your workspace, configure Amazon Redshift settings as the following:
 

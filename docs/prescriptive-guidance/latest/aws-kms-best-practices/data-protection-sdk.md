@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # Recommendations for using the AWS Encryption SDK
-<a name="data-protection-sdk"></a>
 
 The [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/introduction.html) is a client-side encryption library that helps you protect data in your applications. Libraries are available for Java, JavaScript, C, Python, .NET, Go, Rust, and other programming languages. It integrates with AWS Key Management Service (AWS KMS). You can also use it as a standalone SDK without referencing KMS keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/edit-revo
 ---
 
 # Editing an AWS Data Exchange asset revocation reason as a provider (console)
-<a name="edit-revoked-rev"></a>
 
 As a provider of AWS Data Exchange data products, you can use the AWS Data Exchange console to edit the reason for the revocation using the following instructions.
 

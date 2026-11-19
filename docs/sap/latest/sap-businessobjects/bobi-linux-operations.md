@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-linu
 ---
 
 # Operations
-<a name="bobi-linux-operations"></a>
 
 ## Tagging AWS Resources
 <a name="bobi-linux-tagging-aws-resources"></a>

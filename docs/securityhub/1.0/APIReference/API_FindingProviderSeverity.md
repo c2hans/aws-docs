@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingProviderSeverity
-<a name="API_FindingProviderSeverity"></a>
 
 The severity assigned to a finding by the finding provider. This object may include one or more of the following attributes:
 +  `Label`

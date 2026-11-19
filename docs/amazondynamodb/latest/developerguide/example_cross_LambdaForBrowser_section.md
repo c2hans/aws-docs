@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Invoke a Lambda function from a browser
-<a name="example_cross_LambdaForBrowser_section"></a>
 
 The following code example shows how to invoke an AWS Lambda function from a browser.
 

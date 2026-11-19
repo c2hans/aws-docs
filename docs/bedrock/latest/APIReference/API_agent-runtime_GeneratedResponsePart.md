@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GeneratedResponsePart
-<a name="API_agent-runtime_GeneratedResponsePart"></a>
 
 Contains metadata about a part of the generated response that is accompanied by a citation.
 

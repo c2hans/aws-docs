@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # Feature and Device Support
-<a name="client-feature-support"></a>
 
 The WorkSpaces Applications client supports the following features and devices.
 

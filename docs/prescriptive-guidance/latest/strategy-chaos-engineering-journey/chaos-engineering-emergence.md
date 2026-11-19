@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # Downtime costs and the emergence of chaos engineering
-<a name="chaos-engineering-emergence"></a>
 
 The [Information Technology Intelligence Consulting (ITIC)](https://itic-corp.com/itic-2024-hourly-cost-of-downtime-report/) estimates that 90 percent of enterprises face costs exceeding $300,000 per hour of downtime, with [41 percent exceeding $1‒5 million per hour](https://itic-corp.com/itic-2024-hourly-cost-of-downtime-part-2/). In addition to immediate lost revenue, downtime can lead to longer-term problems, including compliance failures, lowered stock prices, significant mitigation costs, and even brand damage.
 

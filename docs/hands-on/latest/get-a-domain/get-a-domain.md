@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/get-a-domain/get-a-domai
 ---
 
 # How to Register a Domain Name with Amazon Route 53
-<a name="get-a-domain"></a>
 
 |  |  |
 | --- |--- |

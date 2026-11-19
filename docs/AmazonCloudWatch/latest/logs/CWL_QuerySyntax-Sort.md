@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # sort
-<a name="CWL_QuerySyntax-Sort"></a>
 
  Use `sort` to display log events in ascending (`asc`) or descending (`desc`) order by a specified field. You can use this with the `limit` command to create "top N" or "bottom N" queries.
 

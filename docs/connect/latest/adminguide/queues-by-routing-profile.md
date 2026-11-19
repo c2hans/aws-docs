@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/queues-by-rout
 ---
 
 # List queues grouped by routing profile in Connect Customer
-<a name="queues-by-routing-profile"></a>
 
 This topic explains how to display a list of queues organized by routing profile in your Connect Customer contact center.
 

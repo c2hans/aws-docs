@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-
 ---
 
 # Combining Amazon Comprehend Medical with large language models
-<a name="comprehend-medical-rag"></a>
 
 A [2024 study by NEJM AI](https://ai.nejm.org/doi/pdf/10.1056/AIdbp2300040) showed that using an LLM, with zero-shot prompting, for medical coding tasks generally leads to poor performance. Using Amazon Comprehend Medical with an LLM can help mitigate these performance issues. Amazon Comprehend Medical results are helpful context for an LLM that is performing NLP tasks. For example, providing context from Amazon Comprehend Medical to the large language model can help you:
 + Enhance the accuracy of entity selections by using the initial results from Amazon Comprehend Medical as context for the LLM

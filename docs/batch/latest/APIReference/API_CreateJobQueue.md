@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateJobQ
 ---
 
 # CreateJobQueue
-<a name="API_CreateJobQueue"></a>
 
 Creates an AWS Batch job queue. When you create a job queue, you associate one or more compute environments to the queue and assign an order of preference for the compute environments.
 

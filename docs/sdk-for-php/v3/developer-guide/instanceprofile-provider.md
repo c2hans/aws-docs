@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/instancep
 ---
 
 # `instanceProfile` provider in the SDK for PHP
-<a name="instanceprofile-provider"></a>
 
  `Aws\Credentials\CredentialProvider::instanceProfile` attempts to load credentials for an IAM role specified in an Amazon EC2 instance profile.
 

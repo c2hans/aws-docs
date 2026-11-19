@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-w
 ---
 
 # Event notifications for AWS IoT Wireless
-<a name="iot-wireless-events"></a>
 
 AWS IoT Wireless can publish messages to notify you of events for your LoRaWAN and Sidewalk devices. For example, the device registration event notifies you when the Sidewalk devices in your account have been registered.
 

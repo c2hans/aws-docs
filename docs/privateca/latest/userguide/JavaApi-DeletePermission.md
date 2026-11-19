@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Delet
 ---
 
 # DeletePermission
-<a name="JavaApi-DeletePermission"></a>
 
 The following Java sample shows how to use the [DeletePermission](https://docs.aws.amazon.com/privateca/latest/APIReference/API_DeletePermission.html) operation.
 

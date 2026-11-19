@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/enhanced-consumers.ht
 ---
 
 # Develop enhanced fan-out consumers with dedicated throughput
-<a name="enhanced-consumers"></a>
 
 In Amazon Kinesis Data Streams, you can build stream consumers that use a feature called *enhanced fan-out*. This feature lets a stream consumer receive records from a stream with throughput of up to 2 MB of data per second per shard. This throughput is dedicated, which means that stream consumers that use enhanced fan-out don't have to contend with other consumers that are receiving data from the stream. Kinesis Data Streams pushes data records from the stream to stream consumers that use enhanced fan-out. Therefore, these consumers don't need to poll for data.
 

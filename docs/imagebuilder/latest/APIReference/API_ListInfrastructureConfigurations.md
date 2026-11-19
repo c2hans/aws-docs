@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListInfrastructureConfigurations
-<a name="API_ListInfrastructureConfigurations"></a>
 
 Returns a list of infrastructure configurations.
 

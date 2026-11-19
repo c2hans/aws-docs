@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePu
 ---
 
 # CreatePushNotificationRegistration
-<a name="API_CreatePushNotificationRegistration"></a>
 
 Creates registration for a device token and a chat contact to receive real-time push notifications. For more information about push notifications, see [Set up push notifications in Connect Customer for mobile chat](https://docs.aws.amazon.com/connect/latest/adminguide/enable-push-notifications-for-mobile-chat.html) in the *Connect Customer Administrator Guide*.
 

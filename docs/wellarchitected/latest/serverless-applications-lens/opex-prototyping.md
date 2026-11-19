@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Prototyping
-<a name="opex-prototyping"></a>
 
 | OPS 2: How do you approach application lifecycle management? |
 | --- |

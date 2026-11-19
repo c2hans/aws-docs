@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/monitor-with-work
 ---
 
 # Getting started with workflow monitor
-<a name="monitor-with-workflow-monitor-configure-getting-started"></a>
 
 The following steps provide a basic overview of using workflow monitor for the first time.
 

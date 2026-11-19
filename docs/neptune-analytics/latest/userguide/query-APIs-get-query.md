@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 ---
 
 # GetQuery
-<a name="query-APIs-get-query"></a>
 
 The GetQuery API can be used to get the status of a specific query request.
 

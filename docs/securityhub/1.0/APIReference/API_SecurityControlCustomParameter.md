@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Securit
 ---
 
 # SecurityControlCustomParameter
-<a name="API_SecurityControlCustomParameter"></a>
 
  A list of security controls and control parameter values that are included in a configuration policy.
 

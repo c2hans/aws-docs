@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/communicati
 ---
 
 # Communication best practices
-<a name="communication-best-practices"></a>
 
  Effective communication accelerates incident resolution. Follow these practices when working with AWS Security Incident Response engineers:
 +  **Respond promptly** to information requests from your Security Incident Response engineer

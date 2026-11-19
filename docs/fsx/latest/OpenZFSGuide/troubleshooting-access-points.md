@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/troubleshooting-
 ---
 
 # Troubleshooting S3 access point issues
-<a name="troubleshooting-access-points"></a>
 
 This section describes symptoms, causes, and resolutions for when you encounter issues accessing your FSx data from S3 access points.
 

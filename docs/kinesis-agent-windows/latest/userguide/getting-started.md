@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/g
 ---
 
 # Getting Started with Amazon Kinesis Agent for Microsoft Windows
-<a name="getting-started"></a>
 
 You can use Amazon Kinesis Agent for Microsoft Windows (Kinesis Agent for Windows) to collect, parse, transform, and stream logs, events, and metrics from your Windows fleet to various AWS services. The following information contains prerequisites and step-by-step instructions for installing and configuring Kinesis Agent for Windows.
 

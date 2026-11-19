@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-add-
 ---
 
 # Add Amazon Location tracking to your application
-<a name="qs-add-tracking-android"></a>
 
 To add tracking to your sample application, follow these steps:
 

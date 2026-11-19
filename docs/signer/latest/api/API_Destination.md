@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_Destination.html
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Points to an `S3Destination` object that contains information about your S3 bucket.
 

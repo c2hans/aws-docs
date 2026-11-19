@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Provider.htm
 ---
 
 # Provider
-<a name="API_Provider"></a>
 
 Identifies the AWS Key Management Service (AWS KMS) key used to encrypt the secrets.
 

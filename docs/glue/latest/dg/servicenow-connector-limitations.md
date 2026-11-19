@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/servicenow-connector-limi
 ---
 
 # Limitations and notes for ServiceNow connector
-<a name="servicenow-connector-limitations"></a>
 
 The following are limitations or notes for the ServiceNow connector:
 + As per [SaaS documentation](https://www.servicenow.com/docs/bundle/washingtondc-application-development/page/build/applications/reference/r_GlobalDefaultFields.html), `sys_created_on`, `sys_updated_on`, and `sys_mod_count` are system generated fields. The connector relies on SaaS APIs to provide these fields in the response body.

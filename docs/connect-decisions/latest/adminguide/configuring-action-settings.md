@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
 ---
 
 # Configuring Action Settings
-<a name="configuring-action-settings"></a>
 
  Amazon Connect Decisions allows you to control for which action types it should offer to perform operations on your behalf in your Enterprise Resource Planning (ERP) system. By default, all action types are disabled, and you must enable this feature for each desired action type.
 

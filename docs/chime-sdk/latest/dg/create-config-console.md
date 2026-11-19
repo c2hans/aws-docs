@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-config-consol
 ---
 
 # Using the Amazon Chime SDK console to create call analytics configurations
-<a name="create-config-console"></a>
 
 After you create the prerequisites listed in the previous section, you can use the Amazon Chime SDK console to create one or more call analytics configurations. You can also use the console to associate one or more Voice Connectors with your configurations. When you complete that process, call analytics begins running with the features that you enable when you create the configuration.
 

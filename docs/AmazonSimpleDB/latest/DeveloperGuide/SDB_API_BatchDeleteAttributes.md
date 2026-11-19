@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # BatchDeleteAttributes
-<a name="SDB_API_BatchDeleteAttributes"></a>
 
 ## Description
 <a name="SDB_API_BatchDeleteAttributes_Description"></a>

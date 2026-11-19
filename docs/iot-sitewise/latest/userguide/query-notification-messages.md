@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-noti
 ---
 
 # Query asset property notifications in AWS IoT SiteWise
-<a name="query-notification-messages"></a>
 
 To query asset property notifications, create AWS IoT Core rules made up of SQL statements.
 

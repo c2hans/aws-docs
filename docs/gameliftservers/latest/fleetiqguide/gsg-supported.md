@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 ---
 
 # Amazon GameLift Servers FleetIQ supported software
-<a name="gsg-supported"></a>
 
 Amazon GameLift Servers FleetIQ is used to deploy 64-bit, multiplayer game servers, clients, and game services for hosting on Amazon EC2. This solution supports the following environments:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ad
 ---
 
 # How to add a popup to a map
-<a name="how-to-add-popup-to-map"></a>
 
 Amazon Location Service allows you to add popups to the map. You can add simple popups, click-triggered popups on markers, hover-triggered popups, and popups for multiple markers.
 

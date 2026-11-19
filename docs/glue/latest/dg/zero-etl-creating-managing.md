@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zero-etl-creating-managin
 ---
 
 # Creating and managing integrations
-<a name="zero-etl-creating-managing"></a>
 
 ## Creating an integration
 <a name="zero-etl-creating"></a>

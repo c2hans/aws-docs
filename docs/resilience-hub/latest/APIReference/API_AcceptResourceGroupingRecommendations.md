@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AcceptResourceGroupingRecommendations
-<a name="API_AcceptResourceGroupingRecommendations"></a>
 
 Accepts the resource grouping recommendations suggested by AWS Resilience Hub for your application.
 

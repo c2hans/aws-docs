@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # DeviceUnderTest
-<a name="API_iotdeviceadvisor_DeviceUnderTest"></a>
 
 Information of a test device. A thing ARN, certificate ARN or device role ARN is required.
 

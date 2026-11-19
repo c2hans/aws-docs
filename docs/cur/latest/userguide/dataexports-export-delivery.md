@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/dataexports-export-
 ---
 
 # Understanding export delivery
-<a name="dataexports-export-delivery"></a>
 
 In the following sections, you'll find information about your export delivery.
 + **Export S3 parent directory structure:** How export data is structured in the S3 directory to which your export is delivered to.

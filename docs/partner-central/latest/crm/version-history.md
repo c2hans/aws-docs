@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/version-histo
 ---
 
 # Version history
-<a name="version-history"></a>
 
 Current fields version: 14 (November 15, 2023)
 

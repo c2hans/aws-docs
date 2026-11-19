@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # QuerySpatialCoverageMax
-<a name="API_query_QuerySpatialCoverageMax"></a>
 
 Provides insights into the table with the most sub-optimal spatial range scanned by your query.
 

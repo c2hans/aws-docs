@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/create-conf
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Create and configure the Lambda function
-<a name="create-config-lambda"></a>
 
 In this step, you create a Lambda function that tracks the number of cars that pass the traffic light. Every time that the `GG_TrafficLight` shadow state changes to `G`, the Lambda function simulates the passing of a random number of cars (from 1 to 20). On every third `G` light change, the Lambda function sends basic statistics, such as min and max, to a DynamoDB table.
 

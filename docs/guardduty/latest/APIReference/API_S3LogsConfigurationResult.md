@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_S3Logs
 ---
 
 # S3LogsConfigurationResult
-<a name="API_S3LogsConfigurationResult"></a>
 
 Describes whether S3 data event logs will be enabled as a data source.
 

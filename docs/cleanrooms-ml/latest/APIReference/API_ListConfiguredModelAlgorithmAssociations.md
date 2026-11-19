@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListConfiguredModelAlgorithmAssociations
-<a name="API_ListConfiguredModelAlgorithmAssociations"></a>
 
 Returns a list of configured model algorithm associations.
 

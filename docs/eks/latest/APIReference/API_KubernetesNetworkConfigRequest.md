@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_KubernetesNe
 ---
 
 # KubernetesNetworkConfigRequest
-<a name="API_KubernetesNetworkConfigRequest"></a>
 
 The Kubernetes network configuration for the cluster.
 

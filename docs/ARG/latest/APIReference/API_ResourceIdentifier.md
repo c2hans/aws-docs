@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_ResourceIden
 ---
 
 # ResourceIdentifier
-<a name="API_ResourceIdentifier"></a>
 
 A structure that contains the ARN of a resource and its resource type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorPr
 ---
 
 # ConnectorProvisioningConfig
-<a name="API_ConnectorProvisioningConfig"></a>
 
 Contains information about the configuration of the connector being registered.
 

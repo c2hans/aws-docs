@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_StopAutonomo
 ---
 
 # StopAutonomousDatabase
-<a name="API_StopAutonomousDatabase"></a>
 
 Stops the specified Autonomous Database.
 

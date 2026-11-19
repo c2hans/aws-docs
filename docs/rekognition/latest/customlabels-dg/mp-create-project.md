@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/mp-cr
 ---
 
 # Creating a project
-<a name="mp-create-project"></a>
 
 A project manages the model versions, training dataset, and test dataset for a model. You can create a project with the Amazon Rekognition Custom Labels console or with the API. For other project tasks, such deleting a project, see [Managing an Amazon Rekognition Custom Labels project](managing-project.md).
 

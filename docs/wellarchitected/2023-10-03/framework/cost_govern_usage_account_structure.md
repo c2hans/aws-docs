@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST02-BP03 Implement an account structure
-<a name="cost_govern_usage_account_structure"></a>
 
  Implement a structure of accounts that maps to your organization. This assists in allocating and managing costs throughout your organization.
 

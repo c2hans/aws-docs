@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ai-data-preparation-
 ---
 
 # Auto-labeling
-<a name="ai-data-preparation-autolabel"></a>
 
 ## What it is
 <a name="ai-data-preparation-autolabel-overview"></a>

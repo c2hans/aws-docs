@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/phd.html
 ---
 
 # .phd
-<a name="phd"></a>
 
 Used by anyone with a doctorate to showcase their publications and accomplishments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cfigs-hls-new.htm
 ---
 
 # General settings fields
-<a name="cfigs-hls-new"></a>
 
 Provide general settings that apply to the entire packaging configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AmiP
 ---
 
 # AmiProductSummary
-<a name="API_AmiProductSummary"></a>
 
 Object that contains summarized information about an AMI product.
 

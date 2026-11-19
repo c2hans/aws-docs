@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Retry policies and dead-letter queues
-<a name="eb-custom-bus-retry"></a>
 
 When a target call fails, EventBridge retries it until one of the two limits in `RetryPolicy` is reached, by default 5 attempts or 300 seconds, then writes a record to the Amazon SQS queue in `OnFailureConfiguration.Arn`. Set both when you create the subscriber: without a dead-letter queue, an event that exhausts its retries is dropped, and the only trace is the `EventsDropped` metric.
 

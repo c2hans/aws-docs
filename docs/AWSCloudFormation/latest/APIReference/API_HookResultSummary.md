@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # HookResultSummary
-<a name="API_HookResultSummary"></a>
 
 A `ListHookResults` call returns a summary of a Hook invocation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LockedSna
 ---
 
 # LockedSnapshotsInfo
-<a name="API_LockedSnapshotsInfo"></a>
 
 Information about a locked snapshot.
 

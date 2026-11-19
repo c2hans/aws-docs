@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # LFTagPair
-<a name="API_LFTagPair"></a>
 
 A structure containing an LF-tag key-value pair.
 

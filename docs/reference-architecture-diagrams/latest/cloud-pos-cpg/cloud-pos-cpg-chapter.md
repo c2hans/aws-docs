@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Cloud Point-of-Sale (POS) System on AWS for CPG
-<a name="cloud-pos-cpg-chapter"></a>
 
 ## Overview
 <a name="cloud-pos-overview"></a>

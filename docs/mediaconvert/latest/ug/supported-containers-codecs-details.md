@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/supported-contain
 ---
 
 # Supported containers and codecs reference tables
-<a name="supported-containers-codecs-details"></a>
 
 The following sections provide reference tables for containers and codecs that MediaConvert supports.
 

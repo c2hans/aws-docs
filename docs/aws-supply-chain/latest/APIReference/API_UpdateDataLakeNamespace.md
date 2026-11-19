@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # UpdateDataLakeNamespace
-<a name="API_UpdateDataLakeNamespace"></a>
 
 Enables you to programmatically update an AWS Supply Chain data lake namespace. Developers can update the description of a data lake namespace for a given instance ID and namespace name.
 

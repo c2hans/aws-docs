@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_WorkerConfiguration
 ---
 
 # WorkerConfigurationRevisionSummary
-<a name="API_WorkerConfigurationRevisionSummary"></a>
 
 The summary of a worker configuration revision.
 

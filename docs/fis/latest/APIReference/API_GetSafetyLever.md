@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_GetSafetyLev
 ---
 
 # GetSafetyLever
-<a name="API_GetSafetyLever"></a>
 
  Gets information about the specified safety lever.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateG
 ---
 
 # UpdateGatewayRoute
-<a name="API_UpdateGatewayRoute"></a>
 
 Updates an existing gateway route that is associated to a specified virtual gateway in a service mesh.
 

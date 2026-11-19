@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # RouteAnalysis
-<a name="API_RouteAnalysis"></a>
 
 Describes a route analysis.
 

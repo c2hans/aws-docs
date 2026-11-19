@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/new-data-prep-faq
 ---
 
 # Frequently asked questions
-<a name="new-data-prep-faqs"></a>
 
 ## 1. When do users need to switch from the new to legacy experience?
 <a name="faq-1"></a>

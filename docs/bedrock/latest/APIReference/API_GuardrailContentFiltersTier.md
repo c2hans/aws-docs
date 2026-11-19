@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailContentFiltersTier
-<a name="API_GuardrailContentFiltersTier"></a>
 
 The tier that your guardrail uses for content filters.
 

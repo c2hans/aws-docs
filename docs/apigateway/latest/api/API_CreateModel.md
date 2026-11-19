@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateModel.ht
 ---
 
 # CreateModel
-<a name="API_CreateModel"></a>
 
 Adds a new Model resource to an existing RestApi resource.
 

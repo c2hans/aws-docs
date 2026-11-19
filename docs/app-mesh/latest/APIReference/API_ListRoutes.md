@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListRou
 ---
 
 # ListRoutes
-<a name="API_ListRoutes"></a>
 
 Returns a list of existing routes in a service mesh.
 

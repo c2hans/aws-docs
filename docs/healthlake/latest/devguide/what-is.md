@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/what-is.html
 ---
 
 # What is AWS HealthLake?
-<a name="what-is"></a>
 
 AWS HealthLake is a HIPAA eligible service for storing, analyzing, and sharing health data in the cloud using the Fast Healthcare Interoperability Resources (FHIR) R4 specification. HealthLake use cases include:
 + **Enterprise health data** – Manage and share FHIR R4 health data directly from AWS Cloud while preserving high performance and availability.

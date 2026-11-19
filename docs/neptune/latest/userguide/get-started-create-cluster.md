@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/get-started-cre
 ---
 
 # Creating an Amazon Neptune cluster
-<a name="get-started-create-cluster"></a>
 
 The easiest way to create a new Amazon Neptune DB cluster is to use an CloudFormation template that creates all the required resources for you, without having to do everything by hand. The CloudFormation template performs much of the setup for you, including creating an Amazon Elastic Compute Cloud (Amazon EC2) instance:
 

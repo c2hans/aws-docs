@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ParsingPrompt
-<a name="API_amazon-q-connect_ParsingPrompt"></a>
 
 Instructions for interpreting the contents of a document.
 

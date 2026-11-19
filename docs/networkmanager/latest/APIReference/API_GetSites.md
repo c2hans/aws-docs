@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetSites
-<a name="API_GetSites"></a>
 
 Gets information about one or more of your sites in a global network.
 

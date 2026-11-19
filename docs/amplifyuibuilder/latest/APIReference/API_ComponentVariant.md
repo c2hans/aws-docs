@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ComponentVariant
-<a name="API_ComponentVariant"></a>
 
 Describes the style configuration of a unique variation of a main component.
 

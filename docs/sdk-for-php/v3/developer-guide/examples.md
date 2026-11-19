@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/examples.
 ---
 
 # Ready-to-use examples
-<a name="examples"></a>
 
 This section provides a complete helper class with static methods for common S3 Transfer Manager operations. The helper class simplifies usage. It handles initialization and configuration internally.
 

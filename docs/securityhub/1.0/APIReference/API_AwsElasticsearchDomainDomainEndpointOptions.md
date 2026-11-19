@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticsearchDomainDomainEndpointOptions
-<a name="API_AwsElasticsearchDomainDomainEndpointOptions"></a>
 
 Additional options for the domain endpoint, such as whether to require HTTPS for all traffic.
 

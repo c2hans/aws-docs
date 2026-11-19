@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/userguide/security
 ---
 
 # How Control Catalog works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS Control Catalog, learn what IAM features are available to use with AWS Control Catalog.
 

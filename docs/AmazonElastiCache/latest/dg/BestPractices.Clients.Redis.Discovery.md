@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/BestPractice
 ---
 
 # Cluster client discovery and exponential backoff (Valkey and Redis OSS)
-<a name="BestPractices.Clients.Redis.Discovery"></a>
 
 When connecting to an ElastiCache Valkey or Redis OSS cluster in cluster mode enabled, the corresponding client library must be cluster aware. The clients must obtain a map of hash slots to the corresponding nodes in the cluster in order to send requests to the right nodes and avoid the performance overhead of handing cluster redirections. As a result, the client must discover a complete list of slots and the mapped nodes in two different situations:
 + The client is initialized and must populate the initial slots configuration

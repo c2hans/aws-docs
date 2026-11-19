@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMI-launch-index
 ---
 
 # Identify each instance launched in a single request
-<a name="AMI-launch-index-examples"></a>
 
 This example demonstrates how you can use both user data and instance metadata to configure your Amazon EC2 instances.
 

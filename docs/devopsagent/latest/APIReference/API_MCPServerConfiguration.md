@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerConfiguration
-<a name="API_MCPServerConfiguration"></a>
 
 Configuration for Model Context Protocol (MCP) server integration.
 

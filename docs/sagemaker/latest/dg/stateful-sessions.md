@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/stateful-sessions.ht
 ---
 
 # Stateful sessions with Amazon SageMaker AI models
-<a name="stateful-sessions"></a>
 
 When you send requests to an Amazon SageMaker AI inference endpoint, you can choose to route the requests to a *stateful session*. During a stateful session, you send multiple inference requests to the same ML instance, and the instance facilitates the session.
 

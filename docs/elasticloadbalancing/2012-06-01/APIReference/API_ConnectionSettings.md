@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # ConnectionSettings
-<a name="API_ConnectionSettings"></a>
 
 Information about the `ConnectionSettings` attribute.
 

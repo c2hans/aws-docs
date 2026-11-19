@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartEva
 ---
 
 # StartEvaluationFormValidation
-<a name="API_StartEvaluationFormValidation"></a>
 
 Starts an asynchronous validation process for an evaluation form version in the specified Connect Customer instance. The validation first performs structural checks on the form content (such as verifying required fields, valid scoring configuration, and correct conditional logic), then asynchronously analyzes questions configured for generative AI evaluation against a set of best practices. Use [GetEvaluationFormValidation](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetEvaluationFormValidation.html) to retrieve the status and results once the validation completes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Endpoint.htm
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 Describes an endpoint of a database instance in response to operations such as the following:
 +  `CreateEndpoint`

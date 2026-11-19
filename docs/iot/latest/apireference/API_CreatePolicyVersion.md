@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreatePolicy
 ---
 
 # CreatePolicyVersion
-<a name="API_CreatePolicyVersion"></a>
 
 Creates a new version of the specified AWS IoT policy. To update a policy, create a new policy version. A managed policy can have up to five versions. If the policy has five versions, you must use [DeletePolicyVersion](API_DeletePolicyVersion.md) to delete an existing version before you create a new one.
 

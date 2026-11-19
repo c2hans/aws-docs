@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-objkeys.ht
 ---
 
 # JSON.OBJKEYS
-<a name="json-objkeys"></a>
 
 Get key names in the object values at the path.
 

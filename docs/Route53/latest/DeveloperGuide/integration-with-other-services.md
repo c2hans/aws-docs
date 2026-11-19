@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/integratio
 ---
 
 # Integration with other services
-<a name="integration-with-other-services"></a>
 
 You can integrate Amazon Route 53 with other AWS services to log requests sent to the Route 53 API, monitor the status of your resources, and assign tags to your resources. You can also use Route 53 to route internet traffic to your AWS resources.
 

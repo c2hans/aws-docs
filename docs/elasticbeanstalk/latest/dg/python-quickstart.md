@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/python-quicks
 ---
 
 # QuickStart: Deploy a Python application to Elastic Beanstalk
-<a name="python-quickstart"></a>
 
 This QuickStart tutorial walks you through the process of creating a Python application and deploying it to an AWS Elastic Beanstalk environment.
 

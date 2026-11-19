@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Dis
 ---
 
 # DistributionConfiguration
-<a name="API_DistributionConfiguration"></a>
 
 Defines how Image Builder distributes the output of an image build. You can configure:
 + The Regions to distribute the image to.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # Onboarding your transit gateway to a context store
-<a name="context-aware-rules-setup"></a>
 
 You configure context sharing in AWS Network Manager, on the network side, not on the network firewall. It's a one-time setup for each transit gateway. A global network can have one context store, and you associate the store with transit gateways only. The following steps summarize the setup; for the full procedures, see [Context sharing with security services](https://docs.aws.amazon.com/network-manager/latest/tgwnm/context-stores.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 

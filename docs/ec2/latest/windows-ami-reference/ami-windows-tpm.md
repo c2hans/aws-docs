@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/ami-win
 ---
 
 # AWS Windows Server NitroTPM enabled AMIs
-<a name="ami-windows-tpm"></a>
 
 Amazon creates a set of AMIs that are pre-configured with NitroTPM and UEFI Secure Boot requirements, as follows:
 + The TPM 2.0 Command Response Buffer (CRB) driver is installed

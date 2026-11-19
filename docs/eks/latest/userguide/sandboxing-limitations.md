@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-limitati
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Considerations
-<a name="sandboxing-limitations"></a>
 
 Running a pod inside a Nitro Sandbox changes the behavior of some Kubernetes features compared to running directly on the node’s shared kernel. Pods that do not use the affected features are unaffected.
 

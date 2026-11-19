@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
 ---
 
 # Design principles arranged by pillar
-<a name="design-principles-by-pillar"></a>
 
 These are the design principles outlined in this paper organized by pillar of the AWS Well-Architected Framework.
 

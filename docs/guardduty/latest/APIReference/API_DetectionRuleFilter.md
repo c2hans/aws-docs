@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectionRuleFilter
-<a name="API_DetectionRuleFilter"></a>
 
 Contains filter criteria for listing custom detection rules or associations.
 

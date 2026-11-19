@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CarrierGa
 ---
 
 # CarrierGateway
-<a name="API_CarrierGateway"></a>
 
 Describes a carrier gateway.
 

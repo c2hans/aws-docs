@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-tags-configuring.html
 ---
 
 # Configuring Amazon SNS topic tags
-<a name="sns-tags-configuring"></a>
 
 This topic explains how to configure tags for an [Amazon SNS topic](sns-tags.md) using the AWS Management Console, an AWS SDK, or the AWS CLI.
 

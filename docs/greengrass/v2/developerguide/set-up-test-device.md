@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/set-up-test
 ---
 
 # Set up a new device to test V1 applications on V2
-<a name="set-up-test-device"></a>
 
 To minimize risk to your devices in production, create a new device to test your V1 applications on V2 before upgrading your production devices.
 

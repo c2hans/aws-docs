@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ValidationError
-<a name="API_account_ValidationError"></a>
 
 Contains information about a validation error, which can be either a field-level or business rule validation error.
 

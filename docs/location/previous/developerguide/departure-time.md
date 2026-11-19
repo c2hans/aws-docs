@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/departu
 ---
 
 # Departure time with Amazon Location
-<a name="departure-time"></a>
 
 By default, when you call `CalculateRoute` or `CalculateRouteMatrix`, if you don't provide a departure time in the request, the calculated routes reflects optimal traffic conditions.
 

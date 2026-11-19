@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobSingleMemberOutput
-<a name="API_ProtectedJobSingleMemberOutput"></a>
 
 Details about the member who received the job result.
 

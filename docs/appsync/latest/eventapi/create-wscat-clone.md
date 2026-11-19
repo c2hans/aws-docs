@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/create-wscat-clo
 ---
 
 # Create a wscat clone using NodeJs and IAM auth using AppSyncJs
-<a name="create-wscat-clone"></a>
 
 This tutorial shows you how to create a wscat clone that enables real-time messaging using AWS AppSync Events with IAM authorization using [Smithy](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-smithy-signature-v4/) libraries with TypeScript in NodeJS.
 

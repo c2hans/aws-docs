@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/security-iam-a
 ---
 
 # AWS managed policy: AmazonDataZoneSageMakerProvisioningRolePolicy
-<a name="security-iam-awsmanpol-AmazonDataZoneSageMakerProvisioningRolePolicy"></a>
 
 The AmazonDataZoneSageMakerProvisioningRolePolicy policy grants Amazon DataZone the permissions required to interoperate with Amazon SageMaker.
 

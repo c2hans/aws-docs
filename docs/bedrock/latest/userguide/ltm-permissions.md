@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/ltm-permissions
 ---
 
 # Encrypt agent sessions with customer managed key (CMK)
-<a name="ltm-permissions"></a>
 
 If you've enabled memory for your agent and if you encrypt agent sessions with a customer managed key, you must configure the following key policy and the calling identity IAM permissions to configure your customer managed key.
 

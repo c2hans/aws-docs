@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/pass-custom-st
 ---
 
 # Pass custom properties to override the defaults in the communications widget in Connect Customer
-<a name="pass-custom-styles"></a>
 
 To further customize your chat user interface, you can override the default properties by passing your own values. For example, you can set the widget width to 400 pixels and the height to 700 pixels (in contrast to the default size of 300 pixels by 540 pixels). You can also use your preferred font colors and sizes.
 

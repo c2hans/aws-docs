@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # CachePointBlock
-<a name="API_runtime_CachePointBlock"></a>
 
 Defines a section of content to be cached for reuse in subsequent API calls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_T
 ---
 
 # TagOptionSummary
-<a name="API_TagOptionSummary"></a>
 
 Summary information about a TagOption.
 

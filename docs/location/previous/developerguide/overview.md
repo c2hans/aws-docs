@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/overvie
 ---
 
 # Amazon Location overview
-<a name="overview"></a>
 
 Amazon Location Service provides access to location-based functionality and data providers through AWS resources. Amazon Location offers five types of AWS resources, depending on the type of functionality you need. Use the different resources together to create a full location-based application. You can create one or more of these resources by using the Amazon Location console, the Amazon Location APIs, or the SDKs.
 

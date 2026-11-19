@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # NotifyTemplateInformation
-<a name="API_NotifyTemplateInformation"></a>
 
 The information for a system-managed notify template in an AWS account.
 

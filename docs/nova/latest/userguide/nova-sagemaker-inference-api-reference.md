@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-sagemaker-inf
 ---
 
 # API Reference
-<a name="nova-sagemaker-inference-api-reference"></a>
 
 Amazon Nova models on SageMaker use the standard SageMaker Runtime API for inference. For complete API documentation, see [Test a deployed model](https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-test-endpoints.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 ---
 
 # Data retrieval APIs for AWS BugBust
-<a name="awsbugbust"></a>
 
 AWS BugBust provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalCodeGenerationResult
-<a name="API_MedicalCodeGenerationResult"></a>
 
 Results of medical code generation, including the medical codes and the medical coding job.
 

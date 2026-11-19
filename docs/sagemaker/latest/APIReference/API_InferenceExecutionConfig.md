@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceExecutionConfig
-<a name="API_InferenceExecutionConfig"></a>
 
 Specifies details about how containers in a multi-container endpoint are run.
 

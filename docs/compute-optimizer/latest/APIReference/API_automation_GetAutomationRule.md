@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetAutomationRule
-<a name="API_automation_GetAutomationRule"></a>
 
  Retrieves details about a specific automation rule.
 

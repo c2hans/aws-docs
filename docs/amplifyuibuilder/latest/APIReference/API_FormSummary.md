@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FormSummary
-<a name="API_FormSummary"></a>
 
 Describes the basic information about a form.
 

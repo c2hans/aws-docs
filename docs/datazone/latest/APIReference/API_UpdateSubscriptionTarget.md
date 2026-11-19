@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateS
 ---
 
 # UpdateSubscriptionTarget
-<a name="API_UpdateSubscriptionTarget"></a>
 
 Updates the specified subscription target in Amazon DataZone.
 

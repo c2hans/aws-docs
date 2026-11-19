@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamOrgan
 ---
 
 # IpamOrganizationalUnitExclusion
-<a name="API_IpamOrganizationalUnitExclusion"></a>
 
 If your IPAM is integrated with AWS Organizations and you add an organizational unit (OU) exclusion, IPAM will not manage the IP addresses in accounts in that OU exclusion.
 

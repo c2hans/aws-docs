@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ResourceProperty
-<a name="API_ResourceProperty"></a>
 
 A structure that describes a property of a resource.
 

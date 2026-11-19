@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-con
 ---
 
 # Converting one SDR color space to another
-<a name="color-space-convert-f"></a>
 
 You can convert an SDR color space to another SDR color space. In this case, Elemental Live makes the following changes:
 + It changes pixels to values that represent the same color as the original values. The video now fits in the larger color space.

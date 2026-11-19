@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ClaimedP
 ---
 
 # ClaimedPhoneNumberSummary
-<a name="API_ClaimedPhoneNumberSummary"></a>
 
 Information about a phone number that has been claimed to your Connect Customer instance or traffic distribution group.
 

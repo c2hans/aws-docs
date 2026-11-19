@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # KeyUsage
-<a name="API_KeyUsage"></a>
 
 The key usage extension defines the purpose (e.g., encipherment, signature) of the key contained in the certificate.
 

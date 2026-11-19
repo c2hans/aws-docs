@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Linux-Server-EC2
 ---
 
 # Troubleshoot impaired Amazon EC2 Linux instance using EC2Rescue
-<a name="Linux-Server-EC2Rescue"></a>
 
 EC2Rescue for Linux is an easy-to-use, open-source tool that can be run on an Amazon EC2 Linux instance to diagnose, troubleshoot, and remediate common issues using its library of over 100 *modules*. Modules are YAML files that contain either a BASH or a Python script and the necessary metadata.
 

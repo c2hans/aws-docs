@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteAu
 ---
 
 # DeleteAutomatedReasoningPolicyBuildWorkflow
-<a name="API_DeleteAutomatedReasoningPolicyBuildWorkflow"></a>
 
 Deletes an Automated Reasoning policy build workflow and its associated artifacts. This permanently removes the workflow history and any generated assets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetPropertyBindingValue
-<a name="API_AssetPropertyBindingValue"></a>
 
 Represents a data binding value referencing a specific asset property. It's used to bind computation model variables to actual asset property values for processing.
 

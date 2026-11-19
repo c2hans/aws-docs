@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessHook
-<a name="API_HarnessHook"></a>
 
 A lifecycle hook configuration. Specify one hook type.
 

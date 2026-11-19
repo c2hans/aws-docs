@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/redis6-to-valkey-al2023.
 ---
 
 # Tutorial: Redis 6 to Valkey Transition on AL2023
-<a name="redis6-to-valkey-al2023"></a>
 
 The following documentation describes key aspects of the transition from Redis 6 to Valkey on AL2023.
 

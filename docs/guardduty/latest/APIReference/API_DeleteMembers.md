@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteMembers
-<a name="API_DeleteMembers"></a>
 
 Deletes GuardDuty member accounts (to the current GuardDuty administrator account) specified by the account IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/basic-t
 ---
 
 # Adding, Editing, and Deleting Tags for Existing Resources in the Amazon WorkSpaces Applications Console
-<a name="basic-tagging-console"></a>
 
 You can add, edit, and delete tags for existing resources by using the WorkSpaces Applications console.
 

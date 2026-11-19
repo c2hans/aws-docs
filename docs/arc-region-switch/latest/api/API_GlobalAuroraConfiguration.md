@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GlobalA
 ---
 
 # GlobalAuroraConfiguration
-<a name="API_GlobalAuroraConfiguration"></a>
 
 Configuration for Amazon Aurora global databases used in a Region switch plan.
 

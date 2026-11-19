@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_OAuth2Prope
 ---
 
 # OAuth2Properties
-<a name="API_OAuth2Properties"></a>
 
 The OAuth 2.0 properties required for OAuth 2.0 authentication.
 

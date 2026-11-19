@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoo
 ---
 
 # Multi-account strategy
-<a name="telcoops02"></a>
 
 |  TELCOOPS02: What factors should be considered when implementing a multi-account strategy for telecommunication workloads?  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-ram-s
 ---
 
 # Share model group in Studio
-<a name="model-registry-ram-studio-share"></a>
 
 You can share your model groups with other AWS principals (AWS accounts or AWS Organizations) using the Studio UI. This streamlined sharing process enables cross-team collaboration, promotes best practices, and facilitates model reuse across your teams. The following will provide instructions on how to share model groups in Studio.
 

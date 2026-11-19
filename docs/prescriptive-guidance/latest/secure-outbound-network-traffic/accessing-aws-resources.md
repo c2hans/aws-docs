@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-outb
 ---
 
 # Accessing AWS resources
-<a name="accessing-aws-resources"></a>
 
 A VPC endpoint provides a private connection between a VPC and a supported AWS service without requiring an internet gateway or NAT gateway. For example, you can use VPC endpoints to connect your VPC to Amazon Simple Storage Service (Amazon S3) or Amazon Elastic Container Registry (Amazon ECR).
 

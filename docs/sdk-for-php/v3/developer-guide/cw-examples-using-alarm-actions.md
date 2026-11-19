@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/cw-exampl
 ---
 
 # Using alarm actions with Amazon CloudWatch alarms with AWS SDK for PHP Version 3
-<a name="cw-examples-using-alarm-actions"></a>
 
 Use alarm actions to create alarms that automatically stop, terminate, reboot, or recover your Amazon EC2 instances. You can use the stop or terminate actions when you no longer need an instance to be running. You can use the reboot and recover actions to automatically reboot those instances.
 

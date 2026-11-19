@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SpanMessageValue
-<a name="API_amazon-q-connect_SpanMessageValue"></a>
 
 Message content value - can be text, tool invocation, tool result, or reasoning
 

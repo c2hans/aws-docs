@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/outbound-tutorial-
 ---
 
 # Step 6: Test your outbound configuration
-<a name="outbound-tutorial-step6-testing"></a>
 
 Testing ensures your complete outbound workflow functions correctly before processing real business documents. This validates that all components work together and that your JSON data is properly transformed into valid X12 EDI documents.
 

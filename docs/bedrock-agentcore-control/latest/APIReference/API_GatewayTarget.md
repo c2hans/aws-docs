@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GatewayTarget
-<a name="API_GatewayTarget"></a>
 
 The gateway target.
 

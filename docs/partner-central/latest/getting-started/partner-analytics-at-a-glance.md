@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # At a glance
-<a name="partner-analytics-at-a-glance"></a>
 
 The 'At a glance' dashboard provides key metrics from each dashboard and now offers visibility into ACE Eligibility and CRM Integration. On this dashboard, filter the data by customizing a start and end date or choosing one of the available options.
 

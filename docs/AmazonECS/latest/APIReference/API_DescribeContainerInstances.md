@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeContainerInstances
-<a name="API_DescribeContainerInstances"></a>
 
 Describes one or more container instances. Returns metadata about each container instance requested.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Control Access to Web Applications and Mobile Apps
-<a name="control-access-to-web-applications-and-mobile-apps"></a>
 
 AWS provides services for managing data access control within customer applications. If you need to add user login and access control features to your web applications and mobile apps, you can use [Amazon Cognito](https://aws.amazon.com/cognito/). Amazon Cognito user pools provide a secure user directory that scales to hundreds of millions of users. To protect the identity of the users, you can add multi-factor authentication (MFA) to your user pools. You can also use adaptive authentication, which uses a risk-based model to predict when you might need another authentication factor.
 

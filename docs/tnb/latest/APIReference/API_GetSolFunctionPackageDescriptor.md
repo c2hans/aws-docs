@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolFuncti
 ---
 
 # GetSolFunctionPackageDescriptor
-<a name="API_GetSolFunctionPackageDescriptor"></a>
 
 Gets a function package descriptor in a function package.
 

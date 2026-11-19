@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # ForwardActionConfig
-<a name="API_ForwardActionConfig"></a>
 
 Information about a forward action.
 

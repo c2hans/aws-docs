@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-alerting-se
 ---
 
 # Provisioning Grafana Alerting resources
-<a name="v13-alerting-setup-provision"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 13.x**.

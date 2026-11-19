@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/get-readin
 ---
 
 # Check the readiness of a resource in a readiness check
-<a name="get-readiness-check-resource-status"></a>
 
 The following is an example of a request to check the readiness of an individual resource in a readiness check, and the response.
 

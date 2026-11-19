@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMQReadOnlyAccess
-<a name="AmazonMQReadOnlyAccess"></a>
 
 **Description**: Provides read only access to AmazonMQ via the AWS Management Console.
 

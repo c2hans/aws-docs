@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Building your security architecture – a phased approach
-<a name="phases"></a>
 
 The multi-account security architecture recommended by the AWS SRA is a baseline architecture to help you inject security early into your design process. Each organization's cloud journey is unique. To successfully evolve your cloud security architecture, you need to envision your desired target state, understand your current cloud readiness, and adopt an agile approach to close any gaps. The AWS SRA provides a reference target state for your security architecture. Transforming incrementally enables you to demonstrate value quickly while minimizing the need to make far-reaching predictions.
 

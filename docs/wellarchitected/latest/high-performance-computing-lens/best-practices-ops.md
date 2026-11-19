@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Best practices
-<a name="best-practices-ops"></a>
 
  There are four best practice areas for operational excellence in the cloud.
 

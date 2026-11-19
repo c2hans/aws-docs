@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-
 ---
 
 # Security in WorkSpaces Advisor
-<a name="workspaces-advisor-security"></a>
 
 Security is a shared responsibility between AWS and you. This page describes, for each WorkSpaces Advisor capability, what data it uses and why, how that data is protected, the permissions it needs, and how activity is logged.
 

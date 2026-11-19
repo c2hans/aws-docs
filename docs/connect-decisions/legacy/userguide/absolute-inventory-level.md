@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/absol
 ---
 
 # Absolute inventory level
-<a name="absolute-inventory-level"></a>
 
 If you use *absolute quantities* to manage your inventory levels, you can use this policy setting to calculate target inventory level and RoQ. The absolute inventory level policy uses the configured target inventory level instead of computed inventory level (position). The target inventory level is the value of *target\_inventory\_qty *.
 

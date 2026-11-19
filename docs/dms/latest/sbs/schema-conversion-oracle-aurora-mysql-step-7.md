@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-oracle-
 ---
 
 # Step 7: Create a Migration Project
-<a name="schema-conversion-oracle-aurora-mysql-step-7"></a>
 
 Now you can create a migration project which is the foundation of your work with DMS Schema Conversion. A migration project describes your source and target data providers, your instance profile, and migration rules.
 

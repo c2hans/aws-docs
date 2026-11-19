@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/hours-of-operati
 ---
 
 # Hours of operation actions
-<a name="hours-of-operation-api"></a>
 
  The following API actions are available for managing hours of operation:
 + [CreateHoursOfOperation](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateHoursOfOperation.html)

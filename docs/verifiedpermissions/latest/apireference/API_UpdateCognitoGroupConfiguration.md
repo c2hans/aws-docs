@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # UpdateCognitoGroupConfiguration
-<a name="API_UpdateCognitoGroupConfiguration"></a>
 
 The user group entities from an Amazon Cognito user pool identity source.
 

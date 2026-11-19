@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SubnetIpP
 ---
 
 # SubnetIpPrefixes
-<a name="API_SubnetIpPrefixes"></a>
 
 Prefixes of the subnet IP.
 

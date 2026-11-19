@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # NamespaceKeyEntry
-<a name="API_NamespaceKeyEntry"></a>
 
 A namespace variable key definition with optional `NamespaceKeyValidation` rules.
 

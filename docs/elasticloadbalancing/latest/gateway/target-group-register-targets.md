@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/targ
 ---
 
 # Register targets for your Gateway Load Balancer
-<a name="target-group-register-targets"></a>
 
 When your target is ready to handle requests, you register it with one or more target groups. You can register targets by instance ID or by IP address. The Gateway Load Balancer starts routing requests to the target as soon as the registration process completes and the target passes the initial health checks. It can take a few minutes for the registration process to complete and health checks to start. For more information, see [Health checks for Gateway Load Balancer target groups](health-checks.md).
 

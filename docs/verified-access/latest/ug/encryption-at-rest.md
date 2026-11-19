@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/encryption-at-
 ---
 
 # Data encryption at rest for AWS Verified Access
-<a name="encryption-at-rest"></a>
 
 AWS Verified Access encrypts data at rest by default, using AWS owned KMS keys. When encryption of data at rest happens by default, it helps reduce the operational overhead and complexity that are involved in protecting sensitive data. At the same time, it enables you to build secure applications that meet strict encryption compliance and regulatory requirements. The following sections provide the details of how Verified Access uses KMS keys for data encryption at rest.
 

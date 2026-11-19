@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Using the PutLogEvents API to send manually-created embedded metric format logs
-<a name="CloudWatch_Embedded_Metric_Format_Generation_PutLogEvents"></a>
 
  You can send embedded metric format logs to CloudWatch Logs using the CloudWatch Logs [PutLogEvents](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html) API. When calling PutLogEvents, you have the option to include the following HTTP header, which tells CloudWatch Logs the metrics should be extracted, but it's not required.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # CreateUser
-<a name="API_CreateUser"></a>
 
 Creates a new user.
 

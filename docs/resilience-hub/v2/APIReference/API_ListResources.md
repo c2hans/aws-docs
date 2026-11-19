@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListR
 ---
 
 # ListResources
-<a name="API_ListResources"></a>
 
 List resources.
 

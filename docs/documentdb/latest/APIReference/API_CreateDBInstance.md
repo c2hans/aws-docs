@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Creat
 ---
 
 # CreateDBInstance
-<a name="API_CreateDBInstance"></a>
 
 Creates a new instance.
 

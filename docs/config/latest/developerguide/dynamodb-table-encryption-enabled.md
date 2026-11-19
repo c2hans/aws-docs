@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-ta
 ---
 
 # dynamodb-table-encryption-enabled
-<a name="dynamodb-table-encryption-enabled"></a>
 
 Checks if the Amazon DynamoDB tables are encrypted and checks their status. The rule is COMPLIANT if the status is enabled or enabling.
 

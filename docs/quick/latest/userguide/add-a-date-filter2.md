@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/add-a-date-filter
 ---
 
 # Adding date filters
-<a name="add-a-date-filter2"></a>
 
 You create filters on date fields by selecting the filter conditions and date values that you want to use. There are three filter types for dates:
 + **Range** – A series of dates based on a time range and comparison type. You can filter records based on whether the date field value is before or after a specified date, or within a date range. You enter date values in the format MM/DD/YYYY. You can use the following comparison types:

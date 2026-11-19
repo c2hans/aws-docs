@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksSensitiveInformationEntityConfig
-<a name="API_runtime_GuardrailChecksSensitiveInformationEntityConfig"></a>
 
 The configuration for a single sensitive information entity type to detect.
 

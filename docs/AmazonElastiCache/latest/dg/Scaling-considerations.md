@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Scaling-cons
 ---
 
 # Considerations
-<a name="Scaling-considerations"></a>
 
 ## Potential impact on CPU utilization when scaling
 <a name="Scaling-considerations-cpu"></a>

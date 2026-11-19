@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::RestoreTestingSelection ProtectedResourceConditions
-<a name="aws-properties-backup-restoretestingselection-protectedresourceconditions"></a>
 
 The conditions that you define for resources in your restore testing plan using tags.
 

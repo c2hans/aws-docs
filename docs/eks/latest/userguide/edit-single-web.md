@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/edit-single-web.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Edit a single page from a web browser
-<a name="edit-single-web"></a>
 
 You can easily edit a single page in the EKS User Guide directly through your web browser.
 

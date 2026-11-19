@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # PutChannelMembershipPreferences
-<a name="API_messaging-chime_PutChannelMembershipPreferences"></a>
 
 Sets the membership preferences of an `AppInstanceUser` or `AppInstanceBot` for the specified channel. The user or bot must be a member of the channel. Only the user or bot who owns the membership can set preferences. Users or bots in the `AppInstanceAdmin` and channel moderator roles can't set preferences for other users. Banned users or bots can't set membership preferences for the channel from which they are banned.
 

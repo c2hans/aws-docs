@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Conclusion
-<a name="conclusion"></a>
 
  Although the number and types of services oﬀered by AWS have increased dramatically, our philosophy on pricing has not changed. You pay as you go, pay for what you use, pay less as you use more, and pay even less when you reserve capacity. All of these options empower AWS customers to choose their preferred pricing model and increase the ﬂexibility of their cost strategy.
 

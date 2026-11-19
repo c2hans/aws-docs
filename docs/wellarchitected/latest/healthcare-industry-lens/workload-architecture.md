@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Workload architecture
-<a name="workload-architecture"></a>
 
 | HCL\_REL2. How do you ensure acceptable network availability for your healthcare workloads? |
 | --- |

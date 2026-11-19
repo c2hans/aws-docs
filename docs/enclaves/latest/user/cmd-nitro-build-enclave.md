@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/cmd-nitro-build-enc
 ---
 
 # nitro-cli build-enclave
-<a name="cmd-nitro-build-enclave"></a>
 
 Converts a Docker image into an enclave image file (`.eif`). You can specify either a local directory containing a Dockerfile, or a Docker image in a Docker repository.
 

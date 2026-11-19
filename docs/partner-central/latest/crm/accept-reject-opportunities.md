@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/accept-reject
 ---
 
 # Accepting or rejecting AWS-originated opportunities
-<a name="accept-reject-opportunities"></a>
 
 The following steps explain how to accept or reject opportunities in an APN Amazon S3 integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MetricBasedObserv
 ---
 
 # MetricBasedObservation
-<a name="API_MetricBasedObservation"></a>
 
 Describes the metric based observation generated based on evaluated data quality metrics.
 

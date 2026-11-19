@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/strin
 ---
 
 # String manipulation processors
-<a name="string-processors"></a>
 
 String processors modify text values within log events through operations like case conversion, trimming, and pattern matching.
 

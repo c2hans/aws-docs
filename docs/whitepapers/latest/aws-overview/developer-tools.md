@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/develope
 ---
 
 # ![AWS Developer Tools category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/dev-tools-icon.jpg)Developer tools
-<a name="developer-tools"></a>
 
 **Topics**
 + [AWS Infrastructure Composer](#aws-application-composer)

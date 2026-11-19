@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Configure a Connection Method for Your WorkSpaces Applications Users (Web Browser)
-<a name="configure-connection-method-web-access-admin"></a>
 
 Depending on your organizational requirements, you can provide users with access to WorkSpaces Applications through a web browser by doing one of the following: Setting up identity federation using SAML 2.0, using an WorkSpaces Applications user pool, or creating a streaming URL.
 

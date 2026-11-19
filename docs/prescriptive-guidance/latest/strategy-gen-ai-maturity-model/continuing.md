@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Continuing the maturity journey
-<a name="continuing"></a>
 
 For organizations that have successfully achieved Level 4 in the generative AI maturity model, you can continue to advance to even higher levels of sophistication. Doing so requires a comprehensive strategy that extends beyond technical implementation. This progression demands strategic initiatives that embed generative AI deeply into the organization's DNA, combining organizational vision, cultural transformation, and technical excellence. To transcend four maturity levels, organizations must strengthen their internal capabilities, forge strategic partnerships, and invest in cutting-edge research and development. This comprehensive advancement strategy, coupled with a strong emphasis on talent development, enables enterprises to move beyond scaled operations toward transformative AI leadership. This unlocks greater operational efficiency and sustainable competitive advantages.
 

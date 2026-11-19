@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUs
 ---
 
 # UpdateUserIdentityInfo
-<a name="API_UpdateUserIdentityInfo"></a>
 
 Updates the identity information for the specified user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inte
 ---
 
 # IntermediateTableColumn
-<a name="API_IntermediateTableColumn"></a>
 
 Contains the name and type of a column in an intermediate table.
 

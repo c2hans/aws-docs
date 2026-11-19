@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_B
 ---
 
 # BrandingConfiguration
-<a name="API_BrandingConfiguration"></a>
 
 The branding configuration output including custom images metadata, localized strings, color theme, and terms of service.
 

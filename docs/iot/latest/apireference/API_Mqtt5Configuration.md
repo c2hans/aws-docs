@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Mqtt5Configu
 ---
 
 # Mqtt5Configuration
-<a name="API_Mqtt5Configuration"></a>
 
 The configuration to add user-defined properties to enrich MQTT 5 messages.
 

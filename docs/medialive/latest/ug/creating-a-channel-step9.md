@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-a-channel-s
 ---
 
 # Save the channel
-<a name="creating-a-channel-step9"></a>
 
 You can save the channel only after you have configured and created everything that you need.
 

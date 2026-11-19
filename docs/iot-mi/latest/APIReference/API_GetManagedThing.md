@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetManage
 ---
 
 # GetManagedThing
-<a name="API_GetManagedThing"></a>
 
  Get details of a managed thing including its attributes and capabilities.
 

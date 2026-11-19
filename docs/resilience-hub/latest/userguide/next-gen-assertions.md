@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Assertions
-<a name="next-gen-assertions"></a>
 
 An assertion is a short statement of fact about your service, typically one or two sentences and up to 1,000 characters. It describes something a failure mode assessment cannot determine from resource configuration alone. Examples include your expected traffic volume, whether the environment is production, the disaster recovery strategy you intend to use, or a component that runs on your infrastructure but is not an AWS resource.
 

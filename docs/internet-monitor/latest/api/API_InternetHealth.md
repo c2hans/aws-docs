@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_Internet
 ---
 
 # InternetHealth
-<a name="API_InternetHealth"></a>
 
 Internet health includes measurements calculated by Internet Monitor about the performance and availability for your application on the internet. AWS has substantial historical data about internet performance and availability between AWS services and different network providers and geographies. By applying statistical analysis to the data, Internet Monitor can detect when the performance and availability for your application has dropped, compared to an estimated baseline that's already calculated. To make it easier to see those drops, Internet Monitor reports the information to you in the form of health scores: a performance score and an availability score.
 

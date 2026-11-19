@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Artificial intelligence and machine learning
-<a name="artificial-intelligence-and-machine-learning"></a>
 
  Financial institutions have used artificial intelligence and machine learning (AI/ML) technologies for years. Today, financial services organizations are harnessing the power of AI/ML to improve surveillance, reduce fraud, mitigate risk and improve compliance, enhance customer interactions, and improve operational efficiency.
 

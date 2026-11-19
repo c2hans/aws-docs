@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/entit
 ---
 
 # Supply Planning
-<a name="entities-supply-planning"></a>
 
 The table below list the data entities and columns used by Supply Planning.
 

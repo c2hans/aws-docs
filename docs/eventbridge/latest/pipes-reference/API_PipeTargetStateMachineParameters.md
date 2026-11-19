@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeTargetStateMachineParameters
-<a name="API_PipeTargetStateMachineParameters"></a>
 
 The parameters for using a Step Functions state machine as a target.
 

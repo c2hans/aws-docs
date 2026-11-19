@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting AWS CodeBuild
-<a name="troubleshooting"></a>
 
 Use the information in this topic to help you identify, diagnose, and address issues. To learn how to log and monitor CodeBuild builds to troubleshoot issues, see [Logging and monitoring](logging-monitoring.md).
 

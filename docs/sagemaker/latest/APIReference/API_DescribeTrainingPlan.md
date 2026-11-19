@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeTrainingPlan
-<a name="API_DescribeTrainingPlan"></a>
 
 Retrieves detailed information about a specific training plan.
 

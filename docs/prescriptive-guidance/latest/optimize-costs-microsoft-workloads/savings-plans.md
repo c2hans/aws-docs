@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Optimize spending for Windows on Amazon EC2
-<a name="savings-plans"></a>
 
 ## Overview
 <a name="savings-plans-overview"></a>

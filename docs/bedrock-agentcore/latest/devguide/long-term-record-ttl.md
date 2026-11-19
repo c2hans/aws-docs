@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-t
 ---
 
 # Set a time-to-live for long-term memory records
-<a name="long-term-record-ttl"></a>
 
 By default, long-term memory records do not expire. You can optionally set a time-to-live (TTL) so that records are automatically deleted after a retention period that you choose. Use a TTL to meet data-retention requirements, control storage growth, or ensure that stale insights age out of a memory.
 

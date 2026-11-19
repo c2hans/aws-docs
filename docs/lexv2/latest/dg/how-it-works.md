@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/how-it-works.html
 ---
 
 # Amazon Lex V2 core concepts
-<a name="how-it-works"></a>
 
 Amazon Lex V2 enables you to build chat applications (bots) to elicit information from users to accomplish a task. For example, you can create a chatbot to provide customer support, answer frequently asked questions, or book appointments. Following are the typical steps for working with Amazon Lex V2:
 

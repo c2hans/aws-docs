@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policy: AWSElasticDisasterRecoveryRecoveryInstancePolicy
-<a name="security-iam-awsmanpol-AWSElasticDisasterRecoveryRecoveryInstancePolicy"></a>
 
 This policy is attached to the instance role of AWS Elastic Disaster Recovery's recovery instance.
 

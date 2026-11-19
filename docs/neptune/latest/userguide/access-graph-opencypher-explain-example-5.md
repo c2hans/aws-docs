@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # Example of `explain` output for a variable-length path (VLP) query
-<a name="access-graph-opencypher-explain-example-5"></a>
 
 This is an example of a more complex query plan for handling a variable-length path query. This example only shows part of the `explain` output, for clarity.
 

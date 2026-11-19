@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_Describe
 ---
 
 # Use `DescribeInstanceStatus` with an AWS SDK or CLI
-<a name="example_ec2_DescribeInstanceStatus_section"></a>
 
 The following code examples show how to use `DescribeInstanceStatus`.
 

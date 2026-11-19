@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 ---
 
 # Controlling access with IAM policies
-<a name="id_roles_providers_outbound_policies"></a>
 
 IAM provides multiple policy types to control access to the outbound identity federation feature. You can use [identity-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) to control which IAM principals can request tokens and enforce specific token properties such as audience, lifetimes, and signing algorithms. [Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) (SCPs) enable you to enforce organization-wide restrictions on token generation across all accounts in your AWS Organizations. [Resource Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html) (RCPs) control access at the resource level. You can also use [VPC endpoint policies](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-access.html) to restrict which principals can access the AWS STS `GetWebIdentityToken` API through your VPC endpoints, adding network-level controls to your security posture. This section explains how to implement fine-grained access controls using these policy types and condition keys.
 

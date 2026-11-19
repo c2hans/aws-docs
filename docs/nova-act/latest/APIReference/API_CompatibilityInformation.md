@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Compati
 ---
 
 # CompatibilityInformation
-<a name="API_CompatibilityInformation"></a>
 
 Information about client compatibility and supported model versions.
 

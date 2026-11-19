@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_L
 ---
 
 # ListJobRunAttempts
-<a name="API_ListJobRunAttempts"></a>
 
 Lists all attempt of a job run.
 

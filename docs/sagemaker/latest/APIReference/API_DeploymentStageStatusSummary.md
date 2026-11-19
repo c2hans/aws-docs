@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Deploy
 ---
 
 # DeploymentStageStatusSummary
-<a name="API_DeploymentStageStatusSummary"></a>
 
 Contains information summarizing the deployment stage results.
 

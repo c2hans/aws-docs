@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_LocationActi
 ---
 
 # LocationAction
-<a name="API_LocationAction"></a>
 
 The Amazon Location rule action sends device location updates from an MQTT message to an Amazon Location tracker resource.
 

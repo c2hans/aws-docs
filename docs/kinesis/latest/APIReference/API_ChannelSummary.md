@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ChannelS
 ---
 
 # ChannelSummary
-<a name="API_ChannelSummary"></a>
 
 A summary of a channel, returned by [ListChannels](API_ListChannels.md).
 

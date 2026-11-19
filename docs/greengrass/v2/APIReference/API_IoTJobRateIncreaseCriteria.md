@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_IoTJobRat
 ---
 
 # IoTJobRateIncreaseCriteria
-<a name="API_IoTJobRateIncreaseCriteria"></a>
 
 Contains information about criteria to meet before a job increases its rollout rate. Specify either `numberOfNotifiedThings` or `numberOfSucceededThings`.
 

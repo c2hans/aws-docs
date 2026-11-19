@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Batch
 ---
 
 # BatchDisassociateUserStack
-<a name="API_BatchDisassociateUserStack"></a>
 
 Disassociates the specified users from the specified stacks.
 

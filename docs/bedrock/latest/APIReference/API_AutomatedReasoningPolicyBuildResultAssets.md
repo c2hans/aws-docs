@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyBuildResultAssets
-<a name="API_AutomatedReasoningPolicyBuildResultAssets"></a>
 
 Contains the various assets generated during a policy build workflow, including logs, quality reports, test cases, and the final policy definition.
 

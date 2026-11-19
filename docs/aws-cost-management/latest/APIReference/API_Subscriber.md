@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Subscriber
-<a name="API_Subscriber"></a>
 
 The recipient of `AnomalySubscription` notifications.
 

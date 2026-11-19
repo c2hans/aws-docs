@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes the association of the specified tags from a resource. For more information on tags see [Tags ](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-tags.html) in the * AWS End User Messaging SMS User Guide*.
 

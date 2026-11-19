@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Repor
 ---
 
 # ReportSetting
-<a name="API_ReportSetting"></a>
 
 Contains detailed information about a report setting.
 

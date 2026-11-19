@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_CloudW
 ---
 
 # CloudWatchLogsConfig
-<a name="API_CloudWatchLogsConfig"></a>
 
  Information about CloudWatch Logs for a build project.
 

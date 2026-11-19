@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Viewing AWS Managed Microsoft AD directory information
-<a name="ms_ad_view_directory_info"></a>
 
 You can use the AWS Management Console to view your AWS Managed Microsoft AD directory details like:
 + Directory type

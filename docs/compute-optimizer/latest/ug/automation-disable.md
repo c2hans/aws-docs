@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-d
 ---
 
 # Disabling Automation
-<a name="automation-disable"></a>
 
 You can disable the Automation feature at any time. However, the management account can't disable Automation for all member accounts in the organization. Each member must disable the feature at the account level.
 

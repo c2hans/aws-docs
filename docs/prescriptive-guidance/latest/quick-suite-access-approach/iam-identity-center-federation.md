@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Configuring federated user access to Quick through IAM Identity Center
-<a name="iam-identity-center-federation"></a>
 
 If your enterprise is already using AWS IAM Identity Center, you might want to use this service to authenticate federated users. You can use SAML 2.0 federation or use the built-in service integration between IAM Identity Center. For more information about the built-in service integration, see [IAM Identity Center integration](iam-identity-center-integration.md) in this guide.
 

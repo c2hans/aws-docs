@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mi
 ---
 
 # MissingDefaultConditionFlowValidationDetails
-<a name="API_agent_MissingDefaultConditionFlowValidationDetails"></a>
 
 Details about a missing default condition in a conditional node.
 

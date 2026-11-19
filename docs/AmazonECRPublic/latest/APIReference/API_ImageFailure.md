@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # ImageFailure
-<a name="API_ImageFailure"></a>
 
 An object that represents an Amazon ECR image failure.
 

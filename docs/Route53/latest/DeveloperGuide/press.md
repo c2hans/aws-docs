@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/press.html
 ---
 
 # .press
-<a name="press"></a>
 
 Used for adults-only websites.
 

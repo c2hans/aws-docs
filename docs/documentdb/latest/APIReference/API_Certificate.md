@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Certi
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 A certificate authority (CA) certificate for an AWS account.
 

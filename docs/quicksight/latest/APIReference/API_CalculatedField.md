@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Calcu
 ---
 
 # CalculatedField
-<a name="API_CalculatedField"></a>
 
 The calculated field of an analysis.
 

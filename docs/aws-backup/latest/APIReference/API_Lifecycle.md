@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Lifec
 ---
 
 # Lifecycle
-<a name="API_Lifecycle"></a>
 
 Specifies the time period, in days, before a recovery point transitions to cold storage or is deleted.
 

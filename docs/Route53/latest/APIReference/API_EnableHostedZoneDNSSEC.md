@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_EnableHo
 ---
 
 # EnableHostedZoneDNSSEC
-<a name="API_EnableHostedZoneDNSSEC"></a>
 
 Enables DNSSEC signing in a specific hosted zone.
 

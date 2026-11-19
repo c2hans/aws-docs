@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with
 ---
 
 # Understanding the heap summary
-<a name="working-with-visualizations-heap-summary"></a>
 
 The **Heap summary** visualization shows your application’s heap usage over time. You can change the time period shown using the time range selector in the top-right. For information on enabling the heap summary data collection feature, see [Step 4: Start CodeGuru Profiler in your application](setting-up-long.md#setting-up-step-4).
 

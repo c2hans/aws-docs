@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/configure-max-url-
 ---
 
 # Configure the maximum URL length (optional)
-<a name="configure-max-url-length"></a>
 
 By default, URLs longer than 2,048 characters aren't redirected and open in the session. You can change this limit. The limit doesn't apply to `mailto:` links.
 

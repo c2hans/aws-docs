@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::KnowledgeBase VideoSegmentationConfiguration
-<a name="aws-properties-bedrock-knowledgebase-videosegmentationconfiguration"></a>
 
 Configuration for segmenting video content during multimodal knowledge base ingestion. Determines how video files are divided into chunks for processing.
 

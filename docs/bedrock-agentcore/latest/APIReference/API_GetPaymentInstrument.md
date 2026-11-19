@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetPaymentInstrument
-<a name="API_GetPaymentInstrument"></a>
 
 Get a payment instrument by ID.
 

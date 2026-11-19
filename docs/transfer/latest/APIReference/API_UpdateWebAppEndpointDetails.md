@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateW
 ---
 
 # UpdateWebAppEndpointDetails
-<a name="API_UpdateWebAppEndpointDetails"></a>
 
 Contains the endpoint configuration details for updating a web app, including VPC settings for endpoints hosted within a VPC.
 

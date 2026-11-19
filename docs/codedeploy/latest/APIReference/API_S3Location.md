@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_S3Loc
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 Information about the location of application artifacts stored in Amazon S3.
 

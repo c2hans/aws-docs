@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL FieldToProtect
-<a name="aws-properties-wafv2-webacl-fieldtoprotect"></a>
 
 Specifies a field type and keys to protect in stored web request data. This is part of the data protection configuration for a web ACL.
 

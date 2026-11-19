@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # View a phone number's status
-<a name="managing-phone-numbers-status"></a>
 
 To be able to send messages in AWS End User Messaging Social, the phone number's **Status** must be *Active*.
 

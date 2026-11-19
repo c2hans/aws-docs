@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSUS04-BP02 Match model capability to task complexity to reduce agent fleet energy use
-<a name="advsus04-bp02"></a>
 
  The most capable foundation models consume the most resources per inference, and many advertising agents do not need that capability. Match model capability to task complexity to reduce energy consumption without sacrificing output quality.
 

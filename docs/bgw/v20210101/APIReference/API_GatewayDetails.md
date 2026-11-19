@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_GatewayDe
 ---
 
 # GatewayDetails
-<a name="API_GatewayDetails"></a>
 
 The details of gateway.
 

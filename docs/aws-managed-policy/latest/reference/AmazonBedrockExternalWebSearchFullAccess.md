@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBedrockExternalWebSearchFullAccess
-<a name="AmazonBedrockExternalWebSearchFullAccess"></a>
 
 **Description**: Provides full access to Amazon Bedrock Web Search, including retrieval of content from external websites outside the AWS network boundary.
 

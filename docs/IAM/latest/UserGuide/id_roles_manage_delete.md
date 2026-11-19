@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_del
 ---
 
 # Delete roles or instance profiles
-<a name="id_roles_manage_delete"></a>
 
 If you no longer need a role, we recommend that you delete the role and its associated permissions. That way you don't have an unused entity that is not actively monitored or maintained.
 

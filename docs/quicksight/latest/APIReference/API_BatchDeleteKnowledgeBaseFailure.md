@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Batch
 ---
 
 # BatchDeleteKnowledgeBaseFailure
-<a name="API_BatchDeleteKnowledgeBaseFailure"></a>
 
 Information about a knowledge base that failed to be deleted in a batch operation.
 

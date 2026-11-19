@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Repor
 ---
 
 # ReportPlan
-<a name="API_ReportPlan"></a>
 
 Contains detailed information about a report plan.
 

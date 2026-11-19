@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle anonymous block and MySQL transactions or procedures
-<a name="chap-oracle-aurora-mysql.sql.block"></a>
 
 With AWS DMS, you can run Oracle anonymous blocks and MySQL transactions or procedures to modify data or perform complex operations during a database migration. An Oracle anonymous block is a set of procedural statements that perform transaction control, data manipulation, or control flow operations. A MySQL transaction groups multiple SQL statements into a single logical unit of work, while procedures are reusable code objects containing SQL statements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Pro
 ---
 
 # Programming DynamoDB with the AWS SDK for Java 2.x
-<a name="ProgrammingWithJava"></a>
 
 This programming guide provides an orientation for programmers who want to use Amazon DynamoDB with Java. The guide covers different concepts including abstraction layers, configuration management, error handling, controlling retry policies, and managing keep-alive.
 

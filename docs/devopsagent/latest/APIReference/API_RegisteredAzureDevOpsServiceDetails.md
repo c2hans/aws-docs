@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredAzureDevOpsServiceDetails
-<a name="API_RegisteredAzureDevOpsServiceDetails"></a>
 
 Details specific to a registered Azure DevOps service.
 

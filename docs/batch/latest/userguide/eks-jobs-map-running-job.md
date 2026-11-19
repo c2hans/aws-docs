@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/eks-jobs-map-runn
 ---
 
 # Tutorial: Map a running job to a pod and a node
-<a name="eks-jobs-map-running-job"></a>
 
 The `podProperties` of a running job have `podName` and `nodeName` parameters set for the current job attempt. Use the [DescribeJobs](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJobs.html) API operation to view these parameters.
 

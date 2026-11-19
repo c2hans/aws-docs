@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ty
 ---
 
 # AWS AppConfig
-<a name="API_Types_Amazon_AppConfig"></a>
 
 The following data types are supported by AWS AppConfig:
 +  [Action](API_Action.md)

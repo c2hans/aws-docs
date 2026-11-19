@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this guide include:
 

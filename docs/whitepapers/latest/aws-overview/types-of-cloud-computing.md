@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/types-of
 ---
 
 # Types of cloud computing
-<a name="types-of-cloud-computing"></a>
 
  Cloud computing provides developers and IT departments with the ability to focus on what matters most and avoid undifferentiated work such as procurement, maintenance, and capacity planning. As cloud computing has grown in popularity, several different models and deployment strategies have emerged to help meet specific needs of different users. Each type provides you with different levels of control, flexibility, and management.
 

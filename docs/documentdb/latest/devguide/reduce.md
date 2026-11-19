@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/reduce.html
 ---
 
 # $reduce
-<a name="reduce"></a>
 
 The `$reduce` aggregation operator in Amazon DocumentDB is used to apply a function of two arguments cumulatively to the elements of an array to reduce the array to a single value. This operator is particularly useful for performing complex calculations or transformations on array data within the aggregation pipeline.
 

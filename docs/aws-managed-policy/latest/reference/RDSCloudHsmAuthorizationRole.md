@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/RDSC
 ---
 
 # RDSCloudHsmAuthorizationRole
-<a name="RDSCloudHsmAuthorizationRole"></a>
 
 **Description**: Default policy for the Amazon RDS service role.
 

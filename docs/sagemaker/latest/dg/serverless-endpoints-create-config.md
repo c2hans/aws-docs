@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 ---
 
 # Create an endpoint configuration
-<a name="serverless-endpoints-create-config"></a>
 
 After you create a model, create an endpoint configuration. You can then deploy your model using the specifications in your endpoint configuration. In the configuration, you specify whether you want a real-time or serverless endpoint. To create a serverless endpoint configuration, you can use the [Amazon SageMaker AI console](https://console.aws.amazon.com/sagemaker/home), the [CreateEndpointConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpointConfig.html) API, or the AWS CLI. The API and console approaches are outlined in the following sections.
 

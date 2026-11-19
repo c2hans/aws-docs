@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RecordPr
 ---
 
 # RecordPrimaryValue
-<a name="API_RecordPrimaryValue"></a>
 
 A record primary value.
 

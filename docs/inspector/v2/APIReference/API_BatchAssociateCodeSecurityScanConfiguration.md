@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchAssoc
 ---
 
 # BatchAssociateCodeSecurityScanConfiguration
-<a name="API_BatchAssociateCodeSecurityScanConfiguration"></a>
 
 Associates multiple code repositories with an Amazon Inspector code security scan configuration.
 

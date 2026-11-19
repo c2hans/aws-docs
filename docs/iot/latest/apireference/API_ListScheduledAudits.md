@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListSchedule
 ---
 
 # ListScheduledAudits
-<a name="API_ListScheduledAudits"></a>
 
 Lists all of your scheduled audits.
 

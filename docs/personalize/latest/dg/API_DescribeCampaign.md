@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeCampai
 ---
 
 # DescribeCampaign
-<a name="API_DescribeCampaign"></a>
 
 Describes the given campaign, including its status.
 

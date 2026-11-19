@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_RateLimitE
 ---
 
 # RateLimitError
-<a name="API_RateLimitError"></a>
 
 The request was throttled because too many requests were sent in a short period of time. Wait a moment and retry the request. Consider implementing exponential backoff in your application.
 

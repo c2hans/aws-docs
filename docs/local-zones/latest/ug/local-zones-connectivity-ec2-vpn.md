@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/local-zones/latest/ug/local-zones-connec
 ---
 
 # VPN connection in Local Zones
-<a name="local-zones-connectivity-ec2-vpn"></a>
 
 A VPN connection can provide secure, two-way communication between workloads running in an on-premises data center and a Local Zone. For Local Zones, you must deploy a software-based VPN solution on an Amazon EC2 instance. Visit the [AWS Marketplace](https://aws.amazon.com/marketplace/search/results/ref=brs_navgno_search_box?searchTerms=vpn) and find VPN solutions that are ready to run on an Amazon EC2 instance. You’ll also need to deploy an internet gateway so that you can establish your VPN connection.
 

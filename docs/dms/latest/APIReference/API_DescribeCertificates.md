@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeCert
 ---
 
 # DescribeCertificates
-<a name="API_DescribeCertificates"></a>
 
 Provides a description of the certificate.
 

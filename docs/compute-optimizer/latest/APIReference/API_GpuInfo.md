@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GpuInfo
-<a name="API_GpuInfo"></a>
 
  Describes the GPU accelerator settings for the instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gauge
 ---
 
 # GaugeChartPrimaryValueConditionalFormatting
-<a name="API_GaugeChartPrimaryValueConditionalFormatting"></a>
 
 The conditional formatting for the primary value of a `GaugeChartVisual`.
 

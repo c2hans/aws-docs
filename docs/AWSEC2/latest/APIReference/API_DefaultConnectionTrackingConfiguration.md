@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DefaultCo
 ---
 
 # DefaultConnectionTrackingConfiguration
-<a name="API_DefaultConnectionTrackingConfiguration"></a>
 
 Indicates default conntrack information for the instance type. For more information, see [ Connection tracking timeouts ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html#connection-tracking-timeouts) in the Amazon EC2 User Guide.
 

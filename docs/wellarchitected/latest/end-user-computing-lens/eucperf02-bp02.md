@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF02-BP02 Scale your EUC environment to accommodate the required number of end users
-<a name="eucperf02-bp02"></a>
 
  The number of users accessing the selected AWS EUC service should not affect the performance of the service itself, as AWS provides both scale and resilience for the components that affect authentication and streaming of user sessions. Many supporting components, however, need to be scaled to support the user numbers you intend to deploy.
 

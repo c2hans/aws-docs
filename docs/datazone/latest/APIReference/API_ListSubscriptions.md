@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListSub
 ---
 
 # ListSubscriptions
-<a name="API_ListSubscriptions"></a>
 
 Lists subscriptions in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/security_iam_id
 ---
 
 # Identity-based policy examples for Amazon Bedrock Agents
-<a name="security_iam_id-based-policy-examples-agent"></a>
 
 Select a topic to see example IAM policies that you can attach to an IAM role to provision permissions for actions in [Automate tasks in your application using AI agents](agents.md).
 

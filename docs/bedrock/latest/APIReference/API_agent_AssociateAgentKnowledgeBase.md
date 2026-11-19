@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_As
 ---
 
 # AssociateAgentKnowledgeBase
-<a name="API_agent_AssociateAgentKnowledgeBase"></a>
 
 Associates a knowledge base with an agent. If a knowledge base is associated and its `indexState` is set to `Enabled`, the agent queries the knowledge base for information to augment its response to the user.
 

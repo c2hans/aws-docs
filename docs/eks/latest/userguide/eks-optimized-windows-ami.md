@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-windo
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create nodes with optimized Windows AMIs
-<a name="eks-optimized-windows-ami"></a>
 
 Windows Amazon EKS optimized AMIs are built on top of Windows Server 2019, Windows Server 2022, and Windows Server 2025. They are configured to serve as the base image for Amazon EKS nodes. By default, the AMIs include the following components:
 +  [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/)

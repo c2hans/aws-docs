@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/amazon-be
 ---
 
 # Amazon Bedrock Guardrails Integration
-<a name="amazon-bedrock-guardrails-integration"></a>
 
 QnABot on AWS implements a comprehensive guardrail system that includes preprocessing, LLM integration, and postprocessing guardrails. This multi-layer approach provides enhanced content control and broader security for your chatbot application.
 

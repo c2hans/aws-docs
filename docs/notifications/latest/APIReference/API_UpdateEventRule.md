@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Up
 ---
 
 # UpdateEventRule
-<a name="API_UpdateEventRule"></a>
 
 Updates an existing `EventRule`.
 

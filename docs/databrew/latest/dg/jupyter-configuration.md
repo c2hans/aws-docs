@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/jupyter-configuration
 ---
 
 # Configuring JupyterLab to use the extension
-<a name="jupyter-configuration"></a>
 
 After you install JupyterLab, you need to configure it to secure data access and to enable server extensions.
 

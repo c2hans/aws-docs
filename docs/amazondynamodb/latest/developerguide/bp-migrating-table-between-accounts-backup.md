@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Migrate a table using AWS Backup for cross-account backup and restore
-<a name="bp-migrating-table-between-accounts-backup"></a>
 
 **Prerequisites**
 + Source and target AWS accounts must belong to the same organization in the AWS Organizations service

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotTypeSt
 ---
 
 # SlotTypeStatistics
-<a name="API_SlotTypeStatistics"></a>
 
 The object that contains the statistical summary of the recommended slot type associated with the bot recommendation.
 

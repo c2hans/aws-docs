@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkPolicy
-<a name="API_CoreNetworkPolicy"></a>
 
 Describes a core network policy. You can have only one LIVE Core Policy.
 

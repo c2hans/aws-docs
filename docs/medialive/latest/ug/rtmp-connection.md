@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/rtmp-connection.html
 ---
 
 # Fields for the RTMP connection
-<a name="rtmp-connection"></a>
 
 The following fields configure the logic for reconnection attempts:
 + **RTMP settings** – **Authentication scheme**

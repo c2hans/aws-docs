@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/max-update.ht
 ---
 
 # $max
-<a name="max-update"></a>
 
 The `$max` update operator updates a field's value only if the specified value is greater than the current field value. This operator is useful for maintaining maximum values across updates.
 

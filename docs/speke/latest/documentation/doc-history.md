@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/doc-history.h
 ---
 
 # Document history for the SPEKE partner and customer guide
-<a name="doc-history"></a>
 
 The following table describes the changes to the SPEKE documentation.
 

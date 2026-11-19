@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListFleetMet
 ---
 
 # ListFleetMetrics
-<a name="API_ListFleetMetrics"></a>
 
 Lists all your fleet metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/troubleshooting-executi
 ---
 
 # Troubleshoot execution issues in Lambda
-<a name="troubleshooting-execution"></a>
 
 When the Lambda runtime runs your function code, the event might be processed on an instance of the Lambda Event Function that's been processing events for some time, or it might require a new instance to be initialized. Errors can occur during function initialization, when your handler code processes the event, or when your function returns (or fails to return) a response.
 

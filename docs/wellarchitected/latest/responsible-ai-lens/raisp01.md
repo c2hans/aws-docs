@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # AI system architecture design
-<a name="raisp01"></a>
 
 | RAISP01: How will you design the core AI system architecture to meet your release criteria? |
 | --- |

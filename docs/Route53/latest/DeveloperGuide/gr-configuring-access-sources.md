@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-configu
 ---
 
 # Configuring access sources and access source rules
-<a name="gr-configuring-access-sources"></a>
 
 Access sources control which clients can query your DNS infrastructure and which protocols they can use. You define an access source in one of two ways: by an IP address range (CIDR) or by an AWS Cloud WAN (Cloud WAN) core network segment. You create access source rules that specify the IP ranges or segments that can query your DNS infrastructure and the protocols they can use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Onboard devices and operate them in hub
-<a name="managedintegrations-sdk-v2-cookbook-onboard-to-hub"></a>
 
 Set up your devices to be onboarded to your Managed Integrations hub by creating a managed thing and connecting it to your hub. Devices can be onboarded to a hub through simple setup, user guided setup, or WiFi Simple Setup.
 

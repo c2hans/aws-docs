@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_StartAppl
 ---
 
 # StartApplication
-<a name="API_StartApplication"></a>
 
 Request is an operation which starts an application.
 

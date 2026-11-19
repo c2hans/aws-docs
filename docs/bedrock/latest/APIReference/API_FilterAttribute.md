@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_FilterAt
 ---
 
 # FilterAttribute
-<a name="API_FilterAttribute"></a>
 
 Specifies the name of the metadata attribute/field to apply filters. You must match the name of the attribute/field in your data source/document metadata.
 

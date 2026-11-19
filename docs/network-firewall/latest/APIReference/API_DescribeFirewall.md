@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeFirewall
-<a name="API_DescribeFirewall"></a>
 
 Returns the data objects for the specified firewall.
 
@@ -176,7 +175,7 @@ The configuration settings for the firewall. These settings include the firewall
 Type: [Firewall](API_Firewall.md) object
 
  ** [FirewallStatus](#API_DescribeFirewall_ResponseSyntax) **   <a name="networkfirewall-DescribeFirewall-response-FirewallStatus"></a>
-Detailed information about the current status of a [Firewall](API_Firewall.md). You can retrieve this for a firewall by calling [DescribeFirewall](#API_DescribeFirewall) and providing the firewall name and ARN.
+Detailed information about the current status of a [Firewall](API_Firewall.md). You can retrieve this for a firewall by calling [DescribeFirewall](API_DescribeFirewall.md) and providing the firewall name and ARN.
 The firewall status indicates a combined status. It indicates whether all subnets are up-to-date with the latest firewall configurations, which is based on the sync states config values, and also whether all subnets have their endpoints fully enabled, based on their sync states attachment values.
 Type: [FirewallStatus](API_FirewallStatus.md) object
 

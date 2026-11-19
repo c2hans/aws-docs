@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/id
 ---
 
 # Identify public Amazon S3 buckets in AWS Organizations by using Security Hub CSPM
-<a name="identify-public-s3-buckets-in-aws-organizations-using-security-hub"></a>
 
 *Mourad Cherfaoui, Arun Chandapillai, and Parag Nagwekar, Amazon Web Services*
 

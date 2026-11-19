@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ChatEven
 ---
 
 # ChatEvent
-<a name="API_ChatEvent"></a>
 
 Chat integration event containing payload to perform different chat actions such as:
 + Sending a chat message

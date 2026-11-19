@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SupportedIns
 ---
 
 # SupportedInstanceType
-<a name="API_SupportedInstanceType"></a>
 
 An instance type that the specified Amazon EMR release supports.
 

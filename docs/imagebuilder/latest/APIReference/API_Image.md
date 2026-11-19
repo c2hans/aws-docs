@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # Image
-<a name="API_Image"></a>
 
 An Image Builder image resource that keeps track of all of the settings used to create, configure, and distribute output for that image. An image that Image Builder built from a recipe contains exactly one recipe – either a container recipe (`containerRecipe`), which creates a container image, or an image recipe (`imageRecipe`), which creates an AMI. Imported images don't contain a recipe.
 

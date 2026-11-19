@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DescribeMana
 ---
 
 # DescribeManagedRuleGroup
-<a name="API_DescribeManagedRuleGroup"></a>
 
 Provides high-level information for a managed rule group, including descriptions of the rules.
 

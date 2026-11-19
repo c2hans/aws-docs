@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ge
 ---
 
 # GetDataSet
-<a name="API_GetDataSet"></a>
 
 This operation returns information about a data set.
 

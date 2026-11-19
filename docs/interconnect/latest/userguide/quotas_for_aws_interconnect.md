@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/userguide/quotas_for
 ---
 
 # Quotas for AWS Interconnect
-<a name="quotas_for_aws_interconnect"></a>
 
 ## Quotas for AWS Interconnect
 <a name="load-balancer-limits"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-apis.ht
 ---
 
 # Supported API operations for the PKCS \#11 library for AWS CloudHSM Client SDK 5
-<a name="pkcs11-apis"></a>
 
 The PKCS \#11 library supports the following PKCS \#11 API operations for AWS CloudHSM Client SDK 5.
 + `C_CloseAllSessions`

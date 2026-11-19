@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Mari
 ---
 
 # Options for MariaDB database engine
-<a name="Appendix.MariaDB.Options"></a>
 
 Following, you can find descriptions for options, or additional features, that are available for Amazon RDS instances running the MariaDB DB engine. To turn on these options, you add them to a custom option group, and then associate the option group with your DB instance. For more information about working with option groups, see [Working with option groups](USER_WorkingWithOptionGroups.md).
 

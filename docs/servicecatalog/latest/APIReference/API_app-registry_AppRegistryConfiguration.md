@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # AppRegistryConfiguration
-<a name="API_app-registry_AppRegistryConfiguration"></a>
 
  Includes all of the AppRegistry settings.
 

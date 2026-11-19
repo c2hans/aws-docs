@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_ListAll
 ---
 
 # ListAllowedNodeTypeUpdates
-<a name="API_ListAllowedNodeTypeUpdates"></a>
 
 Lists all available node types that you can scale to from your cluster's current node type. When you use the UpdateCluster operation to scale your cluster, the value of the NodeType parameter must be one of the node types returned by this operation.
 

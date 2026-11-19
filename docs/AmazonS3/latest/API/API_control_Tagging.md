@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Tagging.
 ---
 
 # Tagging
-<a name="API_control_Tagging"></a>
 
 ## Contents
 <a name="API_control_Tagging_Contents"></a>

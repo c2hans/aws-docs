@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-postgresql.h
 ---
 
 # Amazon Athena PostgreSQL connector
-<a name="connectors-postgresql"></a>
 
 The Amazon Athena PostgreSQL connector enables Athena to access your PostgreSQL databases.
 

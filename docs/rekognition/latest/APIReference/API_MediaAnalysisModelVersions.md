@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Medi
 ---
 
 # MediaAnalysisModelVersions
-<a name="API_MediaAnalysisModelVersions"></a>
 
 Object containing information about the model versions of selected features in a given job.
 

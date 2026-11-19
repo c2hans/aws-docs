@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/comman
 ---
 
 # Channel Schedules
-<a name="commands-channel-schedules"></a>
 
 | Nickname | Action | Signature | Description |
 | --- | --- | --- | --- |

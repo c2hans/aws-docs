@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # UpdatePolicyDefinition
-<a name="API_UpdatePolicyDefinition"></a>
 
 Contains information about updates to be applied to a policy.
 

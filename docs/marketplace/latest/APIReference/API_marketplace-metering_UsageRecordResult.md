@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # UsageRecordResult
-<a name="API_marketplace-metering_UsageRecordResult"></a>
 
 A `UsageRecordResult` indicates the status of a given `UsageRecord` processed by `BatchMeterUsage`.
 

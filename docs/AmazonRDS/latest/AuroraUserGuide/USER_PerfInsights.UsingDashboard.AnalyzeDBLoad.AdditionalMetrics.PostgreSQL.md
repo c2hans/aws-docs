@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Pe
 ---
 
 # SQL statistics for Aurora PostgreSQL
-<a name="USER_PerfInsights.UsingDashboard.AnalyzeDBLoad.AdditionalMetrics.PostgreSQL"></a>
 
 For each SQL call and for each second that a query runs, Performance Insights collects SQL statistics. All Aurora engines collect statistics only at the digest-level.
 

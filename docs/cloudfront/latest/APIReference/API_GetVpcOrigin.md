@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetVp
 ---
 
 # GetVpcOrigin
-<a name="API_GetVpcOrigin"></a>
 
 Get the details of an Amazon CloudFront VPC origin.
 

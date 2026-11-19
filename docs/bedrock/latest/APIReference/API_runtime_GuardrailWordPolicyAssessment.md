@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailWordPolicyAssessment
-<a name="API_runtime_GuardrailWordPolicyAssessment"></a>
 
 The word policy assessment.
 

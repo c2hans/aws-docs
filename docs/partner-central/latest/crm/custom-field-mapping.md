@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/custom-field-
 ---
 
 # Field mapping
-<a name="custom-field-mapping"></a>
 
 Field mapping is an essential step in the integration process where partners align their customer relationship management (CRM) system’s fields with those defined by Amazon Web Services (AWS). This ensures that both parties accurately exchange and understand data. Below are guidelines to assist in this process.
 

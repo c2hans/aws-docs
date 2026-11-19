@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetDomainLayout
-<a name="API_connect-customer-profiles_GetDomainLayout"></a>
 
 Gets the layout to view data for a specific domain. This API can only be invoked from the Amazon Connect admin website.
 

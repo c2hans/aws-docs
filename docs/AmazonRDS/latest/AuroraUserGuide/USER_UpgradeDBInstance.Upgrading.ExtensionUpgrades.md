@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Up
 ---
 
 # Upgrading PostgreSQL extensions
-<a name="USER_UpgradeDBInstance.Upgrading.ExtensionUpgrades"></a>
 
 Upgrading your Aurora PostgreSQL DB cluster to a new major or minor version doesn't upgrade the PostgreSQL extensions at the same time. For most extensions, you upgrade the extension after the major or minor version upgrade completes. However, in some cases, you upgrade the extension before you upgrade the Aurora PostgreSQL DB engine. For more information, see the [list of extensions to update](USER_UpgradeDBInstance.PostgreSQL.MajorVersion.md#upgrade-extensions) in [Testing an upgrade of your production DB cluster to a new major version](USER_UpgradeDBInstance.PostgreSQL.MajorVersion.md#USER_UpgradeDBInstance.PostgreSQL.MajorVersion.Upgrade.preliminary).
 

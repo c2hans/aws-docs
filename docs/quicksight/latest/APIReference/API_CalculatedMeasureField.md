@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Calcu
 ---
 
 # CalculatedMeasureField
-<a name="API_CalculatedMeasureField"></a>
 
 The table calculation measure field for pivot tables.
 

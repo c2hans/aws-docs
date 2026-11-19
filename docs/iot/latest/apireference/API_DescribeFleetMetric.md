@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeFlee
 ---
 
 # DescribeFleetMetric
-<a name="API_DescribeFleetMetric"></a>
 
 Gets information about the specified fleet metric.
 

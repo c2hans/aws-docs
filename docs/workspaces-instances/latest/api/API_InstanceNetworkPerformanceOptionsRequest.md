@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Inst
 ---
 
 # InstanceNetworkPerformanceOptionsRequest
-<a name="API_InstanceNetworkPerformanceOptionsRequest"></a>
 
 Configures network performance settings for WorkSpace Instance.
 

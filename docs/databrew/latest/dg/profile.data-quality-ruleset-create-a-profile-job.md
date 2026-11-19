@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/profile.data-quality-
 ---
 
 # Creating a profile job using a ruleset
-<a name="profile.data-quality-ruleset-create-a-profile-job"></a>
 
 After you create a ruleset as described preceding, you are directed to the **Data quality rules** page, which displays all rulesets in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-debu
 ---
 
 # Customizing the log location for step log files
-<a name="emr-plan-debugging-step-log-customization"></a>
 
 Beginning in Amazon EMR version 7.11, you can now customize the S3 logging behavior for steps on a per-step basis. For a single step, you can choose a unique S3 bucket where the step's logs are uploaded. You can also choose a unique KMS key which is used to encrypt the step's logs at rest, on S3. These options take precedence over any cluster-wide logging settings that are configured when launching the cluster.
 

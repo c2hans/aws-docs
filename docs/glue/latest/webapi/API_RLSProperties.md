@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RLSProperties.htm
 ---
 
 # RLSProperties
-<a name="API_RLSProperties"></a>
 
 A structure that describes the default row-level security policy of a table.
 

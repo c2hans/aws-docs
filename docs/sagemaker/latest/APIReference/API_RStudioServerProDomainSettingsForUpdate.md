@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RStudi
 ---
 
 # RStudioServerProDomainSettingsForUpdate
-<a name="API_RStudioServerProDomainSettingsForUpdate"></a>
 
 A collection of settings that update the current configuration for the `RStudioServerPro` Domain-level app.
 

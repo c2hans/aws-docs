@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # PutMetadataFlagBody
-<a name="API_PutMetadataFlagBody"></a>
 
 Stores the metadata information about a feature on a form.
 

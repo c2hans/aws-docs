@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ValidatePolicyFinding
-<a name="API_ValidatePolicyFinding"></a>
 
 A finding in a policy. Each finding is an actionable recommendation that can be used to improve the policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # TwelveLabs Marengo Embed 3.0
-<a name="model-parameters-marengo-3"></a>
 
 The TwelveLabs Marengo Embed 3.0 model generates enhanced embeddings from video, text, audio, image, or multi-input (text with multiple images) inputs. This latest version offers improved performance and accuracy for similarity search, clustering, and other machine learning tasks.
 + Provider — TwelveLabs

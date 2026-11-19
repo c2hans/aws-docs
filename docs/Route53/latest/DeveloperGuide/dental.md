@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dental.htm
 ---
 
 # .dental
-<a name="dental"></a>
 
 Used by dental professionals and dental suppliers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/createtask.html
 ---
 
 # CreateTask
-<a name="createtask"></a>
 
 Creates a new task to run an assigned flow.
 

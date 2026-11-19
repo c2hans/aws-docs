@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows_
 ---
 
 # Amazon ECS task definition differences for EC2 instances running Windows
-<a name="windows_task_definitions"></a>
 
 Tasks that run on EC2 Windows instances don't support all of the Amazon ECS task definition parameters that are available. Some parameters aren't supported at all, and others behave differently.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-instances.
 ---
 
 # AWS DRS Recovery Instances page
-<a name="recovery-instances"></a>
 
 ## Recovery instances overview
 <a name="managing-recovery-instances"></a>

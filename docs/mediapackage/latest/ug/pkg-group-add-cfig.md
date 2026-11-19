@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-group-add-cfi
 ---
 
 # Adding a packaging configuration to a packaging group
-<a name="pkg-group-add-cfig"></a>
 
  To define how AWS Elemental MediaPackage formats outputs from an asset, add a packaging configuration to a packaging group.
 

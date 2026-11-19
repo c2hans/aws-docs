@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/operatin
 ---
 
 # Handle Amazon ECS throttling issues
-<a name="operating-at-scale-dealing-with-throttles"></a>
 
 Throttling errors fall into two major categories: synchronous throttling and asynchronous throttling.
 

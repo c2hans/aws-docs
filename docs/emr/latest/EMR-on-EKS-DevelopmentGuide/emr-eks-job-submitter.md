@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # Using job submitter classification
-<a name="emr-eks-job-submitter"></a>
 
 ## Overview
 <a name="emr-eks-job-submitter-overview"></a>

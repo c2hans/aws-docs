@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-multir
 ---
 
 # Amazon S3 multi-Region client in the AWS SDK for PHP Version 3
-<a name="s3-multiregion-client"></a>
 
 The AWS SDK for PHP Version 3 provides a generic multi-region client that can be used with any service. This enables users to specify which AWS Region to send a command to by providing an `@region` input parameter to any command. In addition, the SDK provides a multi-region client for Amazon S3 that responds intelligently to specific Amazon S3 errors and reroutes commands accordingly. This enables users to use the same client to talk to multiple Regions. This is a particularly useful feature for users of the [Amazon S3 Stream Wrapper with AWS SDK for PHP Version 3](s3-stream-wrapper.md), whose buckets reside in multiple Regions.
 

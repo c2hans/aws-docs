@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateRefreshSchedule
-<a name="API_UpdateRefreshSchedule"></a>
 
 Updates a refresh schedule for a dataset.
 

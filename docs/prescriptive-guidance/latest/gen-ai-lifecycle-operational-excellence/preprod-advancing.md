@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Advancing your generative AI application to production
-<a name="preprod-advancing"></a>
 
 The culmination of the preproduction stage is a formal go or no-go decision for production deployment. This decision should not be based on gut feelings, stakeholder pressure, or looming deadlines. It must be a data-driven decision based on whether the application has met a predefined, objective, and comprehensive set of exit criteria. Successfully navigating the preproduction stage is the single most important factor in determining whether a generative AI project will deliver tangible business value or become another stalled statistic.
 

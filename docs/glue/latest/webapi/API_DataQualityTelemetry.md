@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityTeleme
 ---
 
 # DataQualityTelemetry
-<a name="API_DataQualityTelemetry"></a>
 
 ## Contents
 <a name="API_DataQualityTelemetry_Contents"></a>

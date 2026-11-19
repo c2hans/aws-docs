@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutor
 ---
 
 # Gremlin load data format
-<a name="bulk-load-tutorial-format-gremlin"></a>
 
 To load Apache TinkerPop Gremlin data using the CSV format, you must specify the vertices and the edges in separate files.
 

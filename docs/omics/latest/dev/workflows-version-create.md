@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-version-creat
 ---
 
 # Create a workflow version
-<a name="workflows-version-create"></a>
 
 When you create a new version of a workflow, you need to specify the configuration values for the new version. It doesn't inherit any configuration values from the workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-
 ---
 
 # Encryption best practices and features for AWS services
-<a name="encryption-best-practices-and-features-for-aws-services"></a>
 
 *Kurt Kumar and Niko Borodachuk, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ProgressEvent.ht
 ---
 
 # ProgressEvent
-<a name="API_ProgressEvent"></a>
 
 This data type contains information about the progress event of an operation.
 

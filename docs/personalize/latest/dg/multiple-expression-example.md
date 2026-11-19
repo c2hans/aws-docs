@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/multiple-expressio
 ---
 
 # Combining multiple expressions
-<a name="multiple-expression-example"></a>
 
 To combine multiple expressions together you use a pipe separator (`|`). Use a combination of expressions when you want to use a single filter and filter on Items and Item interactions datasets, or Action and Action interactions datasets. Each expression is first evaluated independently and the result is either the union or the intersection of the two results. The following examples show how to create expressions for Items and Item interactions datasets, but the same rules apply when working with Actions and Action interactions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateClusterExtension
-<a name="API_UpdateClusterExtension"></a>
 
 Updates the configuration or the version of an extension installed on a SageMaker HyperPod cluster. SageMaker HyperPod applies the change to every node in the cluster. You can change the configuration, the version, or both in one request.
 +  **Configuration:** You can change settings by sending `ConfigurationValues`. Settings that you include are changed. Settings that you omit keep their current values. A setting with the value `null` is removed and returns to its default value.

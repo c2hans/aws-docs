@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/r
 ---
 
 # Real-Time Fraud Detection Powered by Redis Enterprise Cloud
-<a name="realtime-fraud-detection-redis"></a>
 
 Publication date: **May 5, 2022 ([Diagram history](#fraud-redis-history))**
 

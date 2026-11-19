@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/healthcare
 ---
 
 # .healthcare
-<a name="healthcare"></a>
 
 Used by the healthcare sector.
 

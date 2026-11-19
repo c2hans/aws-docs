@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # AssetContract
-<a name="API_AssetContract"></a>
 
 This container contains information about an contract.
 

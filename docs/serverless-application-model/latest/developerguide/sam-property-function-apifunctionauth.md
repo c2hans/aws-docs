@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ApiFunctionAuth
-<a name="sam-property-function-apifunctionauth"></a>
 
 Configures authorization at the event level, for a specific API, path, and method.
 

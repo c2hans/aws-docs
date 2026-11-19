@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-ses.ht
 ---
 
 # Amazon Simple Email Service events
-<a name="events-ref-ses"></a>
 
 Amazon SES sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

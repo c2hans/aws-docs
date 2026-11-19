@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/compute-optimizer
 ---
 
 # Opt in AWS Compute Optimizer for Trusted Advisor checks
-<a name="compute-optimizer-with-trusted-advisor"></a>
 
 Compute Optimizer is a service that analyzes the configuration and utilization metrics of your AWS resources. This service reports whether your resources are correctly configured for efficiency and reliability. It also suggests improvements you can implement to improve workload performance. With Compute Optimizer, you view the same recommendations in your Trusted Advisor checks.
 

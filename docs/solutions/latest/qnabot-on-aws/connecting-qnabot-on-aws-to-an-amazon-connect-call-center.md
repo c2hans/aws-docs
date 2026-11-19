@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/connectin
 ---
 
 # Connecting QnABot on AWS to an Amazon Connect call center
-<a name="connecting-qnabot-on-aws-to-an-amazon-connect-call-center"></a>
 
 The guidance can automate data collection and answer frequently asked questions using QnABot on AWS within an Amazon Connect contact flow. Optionally, you can also configure the guidance to use Amazon Connect to make outbound calls; your users can use the web UI or the Alexa skill to ask QnABot on AWS to call their phone so they can speak to a human.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Update.html
 ---
 
 # Update
-<a name="API_Update"></a>
 
 An object representing an asynchronous update.
 

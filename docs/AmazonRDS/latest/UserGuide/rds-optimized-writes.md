@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-optimized
 ---
 
 # Improving write performance with RDS Optimized Writes for MySQL
-<a name="rds-optimized-writes"></a>
 
 You can improve the performance of write transactions with RDS Optimized Writes for MySQL. When your RDS for MySQL database uses RDS Optimized Writes, it can achieve up to two times higher write transaction throughput.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Si
 ---
 
 # SignalFetchConfig
-<a name="API_SignalFetchConfig"></a>
 
 The configuration of the signal fetch operation.
 

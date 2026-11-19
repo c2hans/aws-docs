@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dms-mongo-d
 ---
 
 # dms-mongo-db-authentication-enabled
-<a name="dms-mongo-db-authentication-enabled"></a>
 
 Checks if AWS Database Migration Service (AWS DMS) endpoints for MongoDb data stores are enabled for password-based authentication and access control. The rule is NON\_COMPLIANT if password-based authentication and access control is not enabled.
 

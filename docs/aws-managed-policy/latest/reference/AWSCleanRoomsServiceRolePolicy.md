@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCleanRoomsServiceRolePolicy
-<a name="AWSCleanRoomsServiceRolePolicy"></a>
 
 **Description**: Allow AWS Clean Rooms to access other AWS services such as CloudWatch APIs on your behalf.
 

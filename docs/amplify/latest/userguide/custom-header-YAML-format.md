@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/custom-header-Y
 ---
 
 # Custom header YAML reference
-<a name="custom-header-YAML-format"></a>
 
 Specify custom headers using the following YAML format:
 

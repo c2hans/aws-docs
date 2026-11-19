@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserSear
 ---
 
 # UserSearchSummary
-<a name="API_UserSearchSummary"></a>
 
 Information about the returned users.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Updates the configuration of an existing application, including the IAM role and default KMS key.
 

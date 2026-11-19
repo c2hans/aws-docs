@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Appli
 ---
 
 # ApplicationSource
-<a name="API_ApplicationSource"></a>
 
 Represents an application source.
 

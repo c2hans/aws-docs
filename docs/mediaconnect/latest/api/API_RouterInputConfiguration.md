@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInputC
 ---
 
 # RouterInputConfiguration
-<a name="API_RouterInputConfiguration"></a>
 
 The configuration settings for a router input.
 

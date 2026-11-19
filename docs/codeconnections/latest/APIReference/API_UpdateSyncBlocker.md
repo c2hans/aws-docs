@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # UpdateSyncBlocker
-<a name="API_UpdateSyncBlocker"></a>
 
 Allows you to update the status of a sync blocker, resolving the blocker and allowing syncing to continue.
 

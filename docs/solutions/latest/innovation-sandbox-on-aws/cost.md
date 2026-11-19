@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services provisioned while running this solution. As of this revision, the cost for running this solution at a medium scale in the US East (N. Virginia) Region is approximately **USD $65.25 per month**.
 

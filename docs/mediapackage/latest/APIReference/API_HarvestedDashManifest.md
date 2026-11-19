@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Har
 ---
 
 # HarvestedDashManifest
-<a name="API_HarvestedDashManifest"></a>
 
 Information about a harvested DASH manifest.
 

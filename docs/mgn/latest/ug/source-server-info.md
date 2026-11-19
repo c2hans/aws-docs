@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/source-server-info.html
 ---
 
 # Review source server information
-<a name="source-server-info"></a>
 
 The **Server info** tab displays general server information, hardware, and network information:
 + **General information**

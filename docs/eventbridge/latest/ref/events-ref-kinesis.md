@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-kinesi
 ---
 
 # Amazon Kinesis Data Streams events
-<a name="events-ref-kinesis"></a>
 
 Kinesis Data Streams sends service events to EventBridge via AWS CloudTrail.
 

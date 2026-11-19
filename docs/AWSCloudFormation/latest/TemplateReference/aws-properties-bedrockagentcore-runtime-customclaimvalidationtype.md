@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Runtime CustomClaimValidationType
-<a name="aws-properties-bedrockagentcore-runtime-customclaimvalidationtype"></a>
 
 Defines the name of a custom claim field and rules for finding matches to authenticate its value.
 

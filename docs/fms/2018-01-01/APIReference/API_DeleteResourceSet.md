@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_DeleteRe
 ---
 
 # DeleteResourceSet
-<a name="API_DeleteResourceSet"></a>
 
 Deletes the specified [ResourceSet](API_ResourceSet.md).
 

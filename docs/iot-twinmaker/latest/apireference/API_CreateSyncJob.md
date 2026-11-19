@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Cr
 ---
 
 # CreateSyncJob
-<a name="API_CreateSyncJob"></a>
 
 This action creates a SyncJob.
 

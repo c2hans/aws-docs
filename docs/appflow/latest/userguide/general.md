@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/general.html
 ---
 
 # General information for Amazon AppFlow flows
-<a name="general"></a>
 
 The following general information applies to all Amazon AppFlow flows.
 

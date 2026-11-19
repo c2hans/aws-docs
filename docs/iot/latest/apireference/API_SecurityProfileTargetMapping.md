@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SecurityProf
 ---
 
 # SecurityProfileTargetMapping
-<a name="API_SecurityProfileTargetMapping"></a>
 
 Information about a security profile and the target associated with it.
 

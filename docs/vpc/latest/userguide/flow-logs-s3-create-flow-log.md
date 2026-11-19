@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-s3-create
 ---
 
 # Create a flow log that publishes to Amazon S3
-<a name="flow-logs-s3-create-flow-log"></a>
 
 After you have created and configured your Amazon S3 bucket, you can create flow logs for your network interfaces, subnets, and VPCs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/rhel-ase-ha-deploym
 ---
 
 # Deployment
-<a name="rhel-ase-ha-deployment"></a>
 
 This section covers the following topics.
 

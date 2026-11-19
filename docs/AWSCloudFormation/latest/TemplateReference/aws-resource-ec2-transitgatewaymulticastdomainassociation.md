@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayMulticastDomainAssociation
-<a name="aws-resource-ec2-transitgatewaymulticastdomainassociation"></a>
 
 Associates the specified subnets and transit gateway attachments with the specified transit gateway multicast domain.
 

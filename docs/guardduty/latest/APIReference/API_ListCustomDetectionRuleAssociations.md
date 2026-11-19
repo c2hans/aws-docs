@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCu
 ---
 
 # ListCustomDetectionRuleAssociations
-<a name="API_ListCustomDetectionRuleAssociations"></a>
 
 Returns all custom detection rule associations for your account. You can filter by rule ID and mode.
 

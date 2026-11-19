@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Restarting the OpenSearch process on a node in Amazon OpenSearch Service
-<a name="restart-process"></a>
 
 **To restart the OpenSearch process on a node**
 

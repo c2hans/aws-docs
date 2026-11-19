@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-perm
 ---
 
 # (Optional) Create a customer managed key for your guardrail for additional security
-<a name="guardrails-permissions-kms"></a>
 
 You encrypt your guardrails with customer managed AWS KMS keys. Any user with `CreateKey` permissions can create customer managed keys by using the AWS Key Management Service (AWS KMS) console or [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) operation. In these situations, make sure to create a symmetric encryption key.
 

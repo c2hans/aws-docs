@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes
 ---
 
 # Aurora MySQL 8.4.8
-<a name="AuroraMySQL.Updates.848"></a><a name="8.4.8"></a>
+<a name="8.4.8"></a>
 
 **Version:** 8.4.8
 

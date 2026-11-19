@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/example-notebo
 ---
 
 # Tutorial: Create a Studio notebook in Managed Service for Apache Flink
-<a name="example-notebook"></a>
 
 The following tutorial demonstrates how to create a Studio notebook that reads data from a Kinesis data stream or an Amazon MSK cluster.
 

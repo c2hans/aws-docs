@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribeApplications
-<a name="API_DescribeApplications"></a>
 
 Returns the descriptions of existing applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ListBlocke
 ---
 
 # ListBlockedGuestUsers
-<a name="API_ListBlockedGuestUsers"></a>
 
 Retrieves a paginated list of guest users who have been blocked from a Wickr network. You can filter and sort the results.
 

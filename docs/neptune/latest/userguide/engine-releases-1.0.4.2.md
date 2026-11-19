@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases
 ---
 
 # Amazon Neptune Engine Version 1.0.4.2 (2021-06-01)
-<a name="engine-releases-1.0.4.2"></a>
 
 **Note**
 Engine release version 1.0.4.2.R2 was the first version of 1.0.4.2 actually to be released.

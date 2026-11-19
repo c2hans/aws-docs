@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel08-b
 ---
 
 # REL08-BP04 Deploy using immutable infrastructure
-<a name="rel08-bp04"></a>
 
  Immutable infrastructure is a model in which running resources are never modified in place. For each change, build new infrastructure with the change, deploy it alongside the existing resources, and shift traffic after you validate the new set. This approach removes failures caused by undocumented, in-place modifications that leave environments in unknown states.
 

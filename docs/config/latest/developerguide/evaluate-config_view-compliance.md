@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/evaluate-co
 ---
 
 # Viewing Compliance Information and Evaluation Results for your AWS Resources with AWS Config
-<a name="evaluate-config_view-compliance"></a>
 
 **Important**
 For accurate reporting on the compliance status, you must record the `AWS::Config::ResourceCompliance` resource type. For more information, see [Recording AWS Resources](https://docs.aws.amazon.com/config/latest/developerguide/select-resources.html).

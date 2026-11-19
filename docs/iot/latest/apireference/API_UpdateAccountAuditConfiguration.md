@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateAccoun
 ---
 
 # UpdateAccountAuditConfiguration
-<a name="API_UpdateAccountAuditConfiguration"></a>
 
 Configures or reconfigures the Device Defender audit settings for this account. Settings include how audit notifications are sent and which audit checks are enabled or disabled.
 

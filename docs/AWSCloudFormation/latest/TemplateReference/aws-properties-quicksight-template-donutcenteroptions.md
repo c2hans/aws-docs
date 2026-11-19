@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Template DonutCenterOptions
-<a name="aws-properties-quicksight-template-donutcenteroptions"></a>
 
 The label options of the label that is displayed in the center of a donut chart. This option isn't available for pie charts.
 

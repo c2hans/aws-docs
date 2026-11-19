@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedServices\_DetectiveControlsConfig\_ServiceRolePolicy
-<a name="AWSManagedServices_DetectiveControlsConfig_ServiceRolePolicy"></a>
 
 **Description**: AWS Managed Services - policy to manage detective controls infrastructure
 

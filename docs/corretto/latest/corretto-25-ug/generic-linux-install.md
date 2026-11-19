@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/generic-l
 ---
 
 # Amazon Corretto 25 Installation Instructions for Debian-Based, RPM-Based and Alpine Linux Distributions
-<a name="generic-linux-install"></a>
 
 This topic describes how to install Amazon Corretto 25 on Debian-based, RPM-based and Alpine Linux distributions.
 

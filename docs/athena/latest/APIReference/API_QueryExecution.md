@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryExec
 ---
 
 # QueryExecution
-<a name="API_QueryExecution"></a>
 
 Information about a single instance of a query execution.
 

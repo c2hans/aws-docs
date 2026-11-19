@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # GetSession
-<a name="API_amazon-q-connect_GetSession"></a>
 
 Retrieves information for a specified session.
 

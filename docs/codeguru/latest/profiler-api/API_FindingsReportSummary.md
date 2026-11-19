@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Finding
 ---
 
 # FindingsReportSummary
-<a name="API_FindingsReportSummary"></a>
 
  Information about potential recommendations that might be created from the analysis of profiling data.
 

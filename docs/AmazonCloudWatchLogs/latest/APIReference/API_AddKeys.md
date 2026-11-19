@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # AddKeys
-<a name="API_AddKeys"></a>
 
 This processor adds new key-value pairs to the log event.
 

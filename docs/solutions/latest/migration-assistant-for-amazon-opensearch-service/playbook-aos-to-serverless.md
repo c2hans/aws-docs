@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Playbook: Amazon OpenSearch Service to Amazon OpenSearch Serverless NextGen
-<a name="playbook-aos-to-serverless"></a>
 
 This playbook is an end-to-end runbook for migrating an existing [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service) domain to an [Amazon OpenSearch Serverless NextGen](https://aws.amazon.com/opensearch-service/features/serverless) collection, using a vector-search workload as the worked example. For a small domain — a handful of vector indexes totaling a few tens of gigabytes — plan for roughly 90 minutes end to end, most of which is unattended snapshot and backfill time.
 

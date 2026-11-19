@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-quer
 ---
 
 # Creating query-based groups in AWS Resource Groups
-<a name="gettingstarted-query"></a>
 
 ## Types of resource group queries
 <a name="getting_started-query_types"></a>

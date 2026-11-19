@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationScanEc2InstanceWithFindingsResult
-<a name="API_OrganizationScanEc2InstanceWithFindingsResult"></a>
 
 An object that contains information on the status of scanning EC2 instances with findings for an organization.
 

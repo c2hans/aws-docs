@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateTen
 ---
 
 # CreateTenantResourceAssociation
-<a name="API_CreateTenantResourceAssociation"></a>
 
 Associate a resource with a tenant.
 

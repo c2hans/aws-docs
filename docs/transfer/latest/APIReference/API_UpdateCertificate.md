@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateC
 ---
 
 # UpdateCertificate
-<a name="API_UpdateCertificate"></a>
 
 Updates the active and inactive dates for a certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference.html
 ---
 
 # Making inference requests
-<a name="inference"></a>
 
 Inference is the process of generating an output from an input provided to a model. Before you can send an inference request to Amazon Bedrock, you need to allow your role to perform the model invocation API actions. This depends on the endpoint you are using. For new applications, we recommend the `bedrock-runtime` endpoint.
 

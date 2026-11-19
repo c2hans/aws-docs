@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterInput StandardRouterInputStreamDetails
-<a name="aws-properties-mediaconnect-routerinput-standardrouterinputstreamdetails"></a>
 
 <a name="aws-properties-mediaconnect-routerinput-standardrouterinputstreamdetails-description"></a>The `StandardRouterInputStreamDetails` property type specifies Property description not available. for an [AWS::MediaConnect::RouterInput](aws-resource-mediaconnect-routerinput.md).
 

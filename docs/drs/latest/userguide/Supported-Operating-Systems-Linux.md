@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/Supported-Operating
 ---
 
 # AWS DRS supported Linux operating systems
-<a name="Supported-Operating-Systems-Linux"></a>
 
 ## General Notes
 <a name="General-Notes"></a>

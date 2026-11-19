@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/com.ar.htm
 ---
 
 # .com.ar (Argentina)
-<a name="com.ar"></a>
 
 **Important**
 You can no longer use Route 53 to register new .com.ar domains or transfer .com.ar domains to Route 53. We'll continue to support .com.ar domains that are already registered with Route 53.

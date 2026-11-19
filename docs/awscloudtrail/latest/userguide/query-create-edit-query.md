@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-cre
 ---
 
 # Create or edit a query with the CloudTrail console
-<a name="query-create-edit-query"></a>
 
 In this walkthrough, we open one of the sample queries, edit it to find actions taken by a specific user named `Alice`, and save it as a new query. You can also edit a saved query on the **Saved queries** tab, if you have saved queries. To help control costs, we recommend that you constrain queries by adding starting and ending `eventTime` time stamps to queries.
 

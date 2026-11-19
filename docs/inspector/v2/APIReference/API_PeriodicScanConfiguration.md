@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_PeriodicSc
 ---
 
 # PeriodicScanConfiguration
-<a name="API_PeriodicScanConfiguration"></a>
 
 Configuration settings for periodic scans that run on a scheduled basis.
 

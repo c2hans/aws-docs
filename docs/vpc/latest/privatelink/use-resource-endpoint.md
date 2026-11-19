@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/use-resource-endp
 ---
 
 # Access a resource through a resource VPC endpoint
-<a name="use-resource-endpoint"></a>
 
 You can access a VPC resource such as a domain name, an IP address, or Amazon RDS database using a resource endpoint. A resource endpoint provides private access to a resource. When you create the resource endpoint, you specify a resource configuration of type single, group, or ARN. A resource endpoint can be associated with only one resource configuration. The resource configuration can represent a single resource or a group of resources.
 

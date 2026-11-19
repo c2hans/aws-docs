@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/assign-permiss
 ---
 
 # Assign permissions to review past contact center conversations in Connect Customer
-<a name="assign-permissions-to-review-recordings"></a>
 
 To access recordings and transcripts on the Connect Customer admin website, you need security profile permissions to search for and view contacts on the **Contact search** page. You also need permissions to access:
 + Recordings and transcripts of agent interactions

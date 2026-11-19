@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Disable a portal in API Gateway
-<a name="apigateway-portals-disable-portal"></a>
 
 When you disable a portal, your portal is no longer available on the web. After you disable a portal, you can either delete the portal or republish it if necessary.
 

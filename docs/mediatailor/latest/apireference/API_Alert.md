@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Aler
 ---
 
 # Alert
-<a name="API_Alert"></a>
 
 Alert configuration parameters.
 

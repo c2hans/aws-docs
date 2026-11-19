@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 ## Contributors
 <a name="contributors.2c20e3a6-17c3-573b-a0c2-123cfae85af4"></a>

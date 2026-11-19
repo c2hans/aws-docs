@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/edit-smb-acces
 ---
 
 # Editing SMB settings for a gateway
-<a name="edit-smb-access-settings"></a>
 
 Gateway-level SMB settings let you configure the security strategy, Active Directory authentication, guest access, local group permissions, and file share visibility for the SMB file shares on a gateway.
 

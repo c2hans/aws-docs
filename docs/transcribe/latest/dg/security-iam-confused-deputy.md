@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/security-iam-confus
 ---
 
 # Cross-service confused deputy prevention
-<a name="security-iam-confused-deputy"></a>
 
 A confused deputy is an entity (a service or an account) that is coerced by a different entity to perform an action. This type of impersonation can happen cross-account and cross-service.
 

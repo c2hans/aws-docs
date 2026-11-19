@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/network-foundation.
 ---
 
 # Build the network foundation
-<a name="network-foundation"></a>
 
 Amazon Elastic VMware Service deploys your environment into a VPC that you create and configure. Both deployment modes use the same network foundation, so you complete these tasks once before you follow the Self-deployed or the EVS-deployed path.
 

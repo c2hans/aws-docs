@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-shar
 ---
 
 # User-managed setup (3LO)
-<a name="kb-managed-sharepoint-3lo-setup"></a>
 
 With user-managed setup, you sign in to SharePoint directly and Amazon Bedrock Managed Knowledge Base handles authentication. Users can complete setup in a few minutes.
 

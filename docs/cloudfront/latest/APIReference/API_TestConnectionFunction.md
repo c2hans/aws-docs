@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TestC
 ---
 
 # TestConnectionFunction
-<a name="API_TestConnectionFunction"></a>
 
 Tests a connection function.
 

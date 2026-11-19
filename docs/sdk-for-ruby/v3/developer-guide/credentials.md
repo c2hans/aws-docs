@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/credenti
 ---
 
 # Authenticating with AWS using AWS SDK for Ruby
-<a name="credentials"></a>
 
 You must establish how your code authenticates with AWS when developing with AWS services. You can configure programmatic access to AWS resources in different ways depending on the environment and the AWS access available to you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-tut
 ---
 
 # Step 2: Create a S3 Express One Zone directory bucket
-<a name="s3-express-tutorial-create-directory-bucket"></a>
 
 1. Sign in to the AWS Management Console and open the Amazon S3 console at [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpnTunnel
 ---
 
 # VpnTunnelOptionsSpecification
-<a name="API_VpnTunnelOptionsSpecification"></a>
 
 The tunnel options for a single VPN tunnel.
 

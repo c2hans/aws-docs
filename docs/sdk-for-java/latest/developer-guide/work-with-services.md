@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/work
 ---
 
 # Calling AWS services from the AWS SDK for Java 2.x
-<a name="work-with-services"></a>
 
 This section provides short tutorials and guidance for how to work with select AWS services. For a complete set of examples, see the [Code Examples section](java_code_examples.md).
 

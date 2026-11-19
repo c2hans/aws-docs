@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_O
 ---
 
 # OrganizationRecommendationSummary
-<a name="API_OrganizationRecommendationSummary"></a>
 
 Summary of recommendation for accounts within an Organization
 

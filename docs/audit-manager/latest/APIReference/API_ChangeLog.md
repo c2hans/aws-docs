@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Ch
 ---
 
 # ChangeLog
-<a name="API_ChangeLog"></a>
 
  The record of a change within AWS Audit Manager. For example, this could be the status change of an assessment or the delegation of a control set.
 

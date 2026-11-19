@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Data mesh with Amazon DataZone
-<a name="data-mesh-datazone"></a>
 
 Publication date: **November 20, 2024 ([Diagram history](diagram-history.md))**
 

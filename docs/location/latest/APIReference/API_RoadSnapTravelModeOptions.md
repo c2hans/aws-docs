@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoadSna
 ---
 
 # RoadSnapTravelModeOptions
-<a name="API_RoadSnapTravelModeOptions"></a>
 
 Travel mode related options for the provided travel mode.
 

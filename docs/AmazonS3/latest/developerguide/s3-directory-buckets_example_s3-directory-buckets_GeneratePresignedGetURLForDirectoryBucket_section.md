@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3-direct
 ---
 
 # Create a presigned URL for Amazon S3 directory buckets to get an object using an AWS SDK
-<a name="s3-directory-buckets_example_s3-directory-buckets_GeneratePresignedGetURLForDirectoryBucket_section"></a>
 
 The following code example shows how to create a presigned URL for S3 directory buckets and get an object.
 

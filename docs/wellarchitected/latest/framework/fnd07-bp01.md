@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd07-b
 ---
 
 # FND07-BP01 Define your network and connectivity strategy and centralized resources
-<a name="fnd07-bp01"></a>
 
  An enterprise network and connectivity strategy defines network topology, connectivity patterns, and centralized network services. Standard approaches for internet access, external access, network segmentation, and service access create secure communication between workloads, consistent connectivity to on-premises resources, and predictable access to shared services. With these standards in place, workload teams can move quickly and stay within enterprise security and operational boundaries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/replace-unheal
 ---
 
 # View the reason for health check failures
-<a name="replace-unhealthy-instance"></a>
 
 Using the following procedure, you can view information about any instances replaced due to a health check.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-n
 ---
 
 # Logging network activity events
-<a name="logging-network-events-with-cloudtrail"></a>
 
 CloudTrail network activity events enable VPC endpoint owners to record AWS API calls made using their VPC endpoints from a private VPC to the AWS service. Network activity events provide visibility into the resource operations performed within a VPC. For example, logging network activity events can help VPC endpoint owners detect when credentials from outside their organization attempt to access their VPC endpoints.
 

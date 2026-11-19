@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gns
 ---
 
 # GnssMultiFrame
-<a name="API_GnssMultiFrame"></a>
 
 Global navigation satellite system (GNSS) multi-frame object used for positioning. Contains multiple GNSS scan captures that are combined by the solver.
 

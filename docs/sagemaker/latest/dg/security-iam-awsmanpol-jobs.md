@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS managed policies for SageMaker AI jobs
-<a name="security-iam-awsmanpol-jobs"></a>
 
 This AWS managed policy grants permissions needed for SageMaker AI job execution roles to access data in Amazon S3, invoke agents through Amazon API Gateway AgentCore, track experiments with MLflow, publish model packages, write logs to CloudWatch, invoke Lambda functions, and manage Amazon VPC network interfaces.
 

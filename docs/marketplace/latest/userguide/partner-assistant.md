@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/partner-ass
 ---
 
 # AWS Partner Assistant
-<a name="partner-assistant"></a>
 
 AWS Partner Assistant is a generative AI-powered chatbot for AWS Partners. It is accessible from both Partner Central and AWS Marketplace Management Portal (AMMP) and uses Amazon Q Business, which is trained according to documentation that’s exclusive to registered partners.
 

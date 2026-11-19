@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # RegistryRecordSummary
-<a name="API_RegistryRecordSummary"></a>
 
 A summary of a registry record returned by list operations. Contains identifying and lifecycle fields but omits descriptor content.
 

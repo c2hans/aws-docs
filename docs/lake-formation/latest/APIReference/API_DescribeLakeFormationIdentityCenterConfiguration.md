@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DescribeLakeFormationIdentityCenterConfiguration
-<a name="API_DescribeLakeFormationIdentityCenterConfiguration"></a>
 
 Retrieves the instance ARN and application ARN for the connection.
 

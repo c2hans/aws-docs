@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_Propertygrap
 ---
 
 # PropertygraphRecord
-<a name="API_PropertygraphRecord"></a>
 
 Structure of a property graph record.
 

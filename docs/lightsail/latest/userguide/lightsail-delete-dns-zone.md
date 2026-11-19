@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-del
 ---
 
 # Delete a DNS zone in Lightsail
-<a name="lightsail-delete-dns-zone"></a>
 
 In some cases, you might want to completely remove a DNS zone that you've set up in Amazon Lightsail to manage your domain's DNS records. Perhaps you want to transfer DNS management to a different provider or back to your domain registrar. Deleting a DNS zone is a straightforward process, but it's important to plan ahead to ensure your domain's traffic continues to route correctly. Let's go over the steps to delete a DNS zone in Lightsail.
 

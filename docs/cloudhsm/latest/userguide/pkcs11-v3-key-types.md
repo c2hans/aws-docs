@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-v3-key-
 ---
 
 # Supported key types for PKCS \#11 library for AWS CloudHSM Client SDK 3
-<a name="pkcs11-v3-key-types"></a>
 
 The PKCS \#11 library supports the following key types with AWS CloudHSM Client SDK 3.
 

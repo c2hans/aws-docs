@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # Common prompt injection attacks
-<a name="common-attacks"></a>
 
 Prompt engineering has matured rapidly, resulting in the identification of a set of common attacks that cover a variety of prompts and expected malicious outcomes. The following list of attacks forms the security benchmark for the guardrails discussed in this guide. Although the list isn't comprehensive, it covers a majority of attacks that an LLM-powered retrieval-augmented generation (RAG) application might face. Each guardrail we developed was tested against this benchmark.
 + **Prompted persona switches.** It's often useful to have the LLM adopt a persona in the prompt template to tailor its responses for a specific domain or use case (for example, including "You are a financial analyst" before prompting an LLM to report on corporate earnings). This type of attack attempts to have the LLM adopt a new persona that might be malicious and provocative.

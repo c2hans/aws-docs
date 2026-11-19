@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DataSou
 ---
 
 # DataSourceRunActivity
-<a name="API_DataSourceRunActivity"></a>
 
 The activity details of the data source run.
 

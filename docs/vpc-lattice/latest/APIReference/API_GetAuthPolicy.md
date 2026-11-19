@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetA
 ---
 
 # GetAuthPolicy
-<a name="API_GetAuthPolicy"></a>
 
 Retrieves information about the auth policy for the specified service or service network.
 

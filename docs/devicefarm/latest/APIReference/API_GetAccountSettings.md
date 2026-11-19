@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetAc
 ---
 
 # GetAccountSettings
-<a name="API_GetAccountSettings"></a>
 
 Returns the number of unmetered iOS or unmetered Android devices that have been purchased by the account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOpen
 ---
 
 # AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetails
-<a name="API_AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetails"></a>
 
 Provides details about the configuration for node-to-node encryption.
 

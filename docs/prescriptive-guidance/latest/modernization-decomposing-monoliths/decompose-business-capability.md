@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Decompose by business capability
-<a name="decompose-business-capability"></a>
 
 You can use your organization's business process or capabilities to decompose a monolith. A *business capability *is what a business does to generate value (for example, sales, customer service, or marketing). Typically, an organization has multiple business capabilities and these vary by sector or industry. Use this pattern if your team has enough insight into your organization's business units and you have subject matter experts (SMEs) for each business unit. The following table explains the advantages and disadvantages of using this pattern.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/data-accesso
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Completing the process to add a data accessor
-<a name="data-accessors-external-setup"></a>
 
 After you grant a software provider (ISV) data accessor permissions, you'll need to provide AWS or the ISV with the following configuration parameters. They will reach out to you to source these configuration parameters. These values are required inputs when the ISV uses the `SearchRelevantContent` API operation to perform cross-account access of the data from your Amazon Q index.
 

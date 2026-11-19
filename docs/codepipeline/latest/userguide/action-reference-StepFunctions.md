@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # AWS Step Functions invoke action reference
-<a name="action-reference-StepFunctions"></a>
 
 An AWS CodePipeline action that does the following:
 + Starts an AWS Step Functions state machine execution from your pipeline.

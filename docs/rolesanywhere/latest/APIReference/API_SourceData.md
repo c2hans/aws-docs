@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_So
 ---
 
 # SourceData
-<a name="API_SourceData"></a>
 
 The data field of the trust anchor depending on its type.
 

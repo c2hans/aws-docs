@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # where
-<a name="CWL_QuerySyntax-Where"></a>
 
 Use the `where` command as an alias for the `filter` command. It accepts identical syntax and behavior.
 

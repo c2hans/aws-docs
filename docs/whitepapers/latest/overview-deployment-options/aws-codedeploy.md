@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # AWS CodeDeploy
-<a name="aws-codedeploy"></a>
 
  [AWS CodeDeploy](https://aws.amazon.com/codedeploy/) is a fully managed deployment service that automates application deployments to compute services such as Amazon EC2, [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (Amazon ECS), [AWS Lambda](https://aws.amazon.com/lambda/), or on-premises servers. Organizations can use CodeDeploy to automate deployments of an application and remove error prone manual operations from the deployment process. CodeDeploy can be used with a wide variety of application content including code, serverless functions, configuration files, and more.
 

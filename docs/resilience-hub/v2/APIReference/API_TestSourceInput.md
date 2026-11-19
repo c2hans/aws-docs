@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestS
 ---
 
 # TestSourceInput
-<a name="API_TestSourceInput"></a>
 
 Identifies a monitoring source to add to or remove from a test. Exactly one member is set.
 

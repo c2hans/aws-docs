@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/ce-sp-down
 ---
 
 # Downloading your Savings Plans inventory
-<a name="ce-sp-download-inventory"></a>
 
 You can download a CSV file with all of the detailed information for Savings Plans in your Savings Plans table.<a name="ce-sp-downloadinv-howto"></a>
 

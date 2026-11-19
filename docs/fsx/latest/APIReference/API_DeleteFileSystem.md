@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteFileSy
 ---
 
 # DeleteFileSystem
-<a name="API_DeleteFileSystem"></a>
 
 Deletes a file system. After deletion, the file system no longer exists, and its data is gone. Any existing automatic backups and snapshots are also deleted.
 

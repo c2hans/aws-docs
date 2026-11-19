@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Manage Amazon S3 object annotations using an AWS SDK
-<a name="s3_example_s3_Scenario_ObjectAnnotations_section"></a>
 
 The following code example shows how to:
 + Create an Amazon S3 bucket.

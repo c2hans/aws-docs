@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/conditions-nit
 ---
 
 # Condition keys for NitroTPM
-<a name="conditions-nitro-tpm"></a>
 
 The following condition keys are specific to NitroTPM attestation:
 

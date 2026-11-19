@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_StateEndp
 ---
 
 # StateEndpoint
-<a name="API_StateEndpoint"></a>
 
 Describe the endpoint with an Id, a name, and the relevant capabilities for reporting state
 

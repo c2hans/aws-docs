@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/da
 ---
 
 # Generate, translate and verify PIN data
-<a name="data-operations.pindata"></a>
 
 PIN data functions allow you to generate random pins, pin verification values (PVV) and validate inbound encrypted pins against PVV or PIN Offsets.
 

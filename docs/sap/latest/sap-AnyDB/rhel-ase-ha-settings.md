@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/rhel-ase-ha-setting
 ---
 
 # Settings and prerequisites
-<a name="rhel-ase-ha-settings"></a>
 
 The cluster setup uses parameters, including `DBSID` that is unique to your setup. It is useful to predetermine the values with the following examples and guidance.
 

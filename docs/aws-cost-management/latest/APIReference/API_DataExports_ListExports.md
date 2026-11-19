@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListExports
-<a name="API_DataExports_ListExports"></a>
 
 Lists all data export definitions.
 

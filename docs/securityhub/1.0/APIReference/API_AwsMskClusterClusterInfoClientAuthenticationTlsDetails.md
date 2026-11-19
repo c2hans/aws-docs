@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterClusterInfoClientAuthenticationTlsDetails
-<a name="API_AwsMskClusterClusterInfoClientAuthenticationTlsDetails"></a>
 
  Provides details for client authentication using TLS.
 

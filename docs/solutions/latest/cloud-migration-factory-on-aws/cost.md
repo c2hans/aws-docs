@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this solution. As of this revision, the estimated cost for running this solution with default settings in the US East (N. Virginia) Region and assuming that you are migrating 200 servers a month with this solution is approximately **$14.31 per month**. The cost for running this solution depends on the amount of data being loaded, requested, stored, processed, and presented as shown in the following table.
 

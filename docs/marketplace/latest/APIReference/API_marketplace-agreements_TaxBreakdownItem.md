@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # TaxBreakdownItem
-<a name="API_marketplace-agreements_TaxBreakdownItem"></a>
 
 Represents a single tax breakdown entry with amount, rate, and type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/disassocia
 ---
 
 # Disassociate a data stream from an asset property
-<a name="disassociate-data-streams-method"></a>
 
 ------
 #### [ Console ]

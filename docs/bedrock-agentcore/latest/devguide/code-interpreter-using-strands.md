@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Using AgentCore Code Interpreter via AWS Strands
-<a name="code-interpreter-using-strands"></a>
 
 The following sections show you how to use the Amazon Bedrock AgentCore Code Interpreter with the Strands SDK. Before you go through the examples in this section, see [Prerequisites](code-interpreter-getting-started.md#code-interpreter-prerequisites).
 

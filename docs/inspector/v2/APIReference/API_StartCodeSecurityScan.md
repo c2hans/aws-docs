@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_StartCodeS
 ---
 
 # StartCodeSecurityScan
-<a name="API_StartCodeSecurityScan"></a>
 
 Initiates a code security scan on a specified repository.
 

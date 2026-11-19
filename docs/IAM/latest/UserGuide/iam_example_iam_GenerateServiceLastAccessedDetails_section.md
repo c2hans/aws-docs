@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Gen
 ---
 
 # Use `GenerateServiceLastAccessedDetails` with a CLI
-<a name="iam_example_iam_GenerateServiceLastAccessedDetails_section"></a>
 
 The following code examples show how to use `GenerateServiceLastAccessedDetails`.
 

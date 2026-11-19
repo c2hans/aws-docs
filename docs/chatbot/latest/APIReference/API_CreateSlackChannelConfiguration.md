@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_CreateSl
 ---
 
 # CreateSlackChannelConfiguration
-<a name="API_CreateSlackChannelConfiguration"></a>
 
 Creates an Amazon Q Developer configuration for Slack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/add-marke
 ---
 
 # How to add a marker to a static map
-<a name="add-marker-static-map"></a>
 
 In this topic, you will learn how to add markers to static maps generated with Amazon Location Service. You can customize the marker's icon, label, size, color, and other styling options. This allows you to highlight specific locations with visual cues that align with your map's purpose.
 

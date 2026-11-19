@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AntennaDownlinkConfig
-<a name="API_AntennaDownlinkConfig"></a>
 
 Information about how AWS Ground Station should configure an antenna for downlink during a contact.
 

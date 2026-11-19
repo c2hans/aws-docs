@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_Snapshot.html
 ---
 
 # Snapshot
-<a name="API_Snapshot"></a>
 
 Describes a snapshot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-getting-started.html
 ---
 
 # Getting started with Mail Manager
-<a name="eb-getting-started"></a>
 
 To start using Amazon SES Mail Manager you can use the *Get started with Mail Manager* wizard in the Amazon SES console, where you'll create an ingress endpoint and configure it with a traffic policy and rule set.
 

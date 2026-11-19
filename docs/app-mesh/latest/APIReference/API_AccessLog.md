@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_AccessL
 ---
 
 # AccessLog
-<a name="API_AccessLog"></a>
 
 An object that represents the access logging information for a virtual node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DescribeImportTasks
-<a name="API_DescribeImportTasks"></a>
 
 Lists and describes import tasks, with optional filtering by import status and source ARN.
 

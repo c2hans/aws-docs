@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Protocol-specific middleware code organization
-<a name="managedintegrations-sdk-middleware-code"></a>
 
 This section contains information about the location of the code for each component inside the `IotManagedIntegrationsDeviceSDK-Middleware` repository. The following is an example of the folder structure in this repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/process-vpc.html
 ---
 
 # Give SageMaker AI Processing Jobs Access to Resources in Your Amazon VPC
-<a name="process-vpc"></a>
 
 To control access to your data and processing jobs, create a Amazon VPC with private subnets. For information about creating and configuring a VPC, see [Get Started With Amazon VPC](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-getting-started.html) in the *Amazon VPC User Guide*.
 

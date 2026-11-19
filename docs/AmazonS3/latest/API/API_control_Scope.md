@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Scope.ht
 ---
 
 # Scope
-<a name="API_control_Scope"></a>
 
 You can use the access point scope to restrict access to specific prefixes, API operations, or a combination of both.
 

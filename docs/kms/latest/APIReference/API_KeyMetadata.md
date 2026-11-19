@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_KeyMetadata.
 ---
 
 # KeyMetadata
-<a name="API_KeyMetadata"></a>
 
 Contains metadata about a KMS key.
 

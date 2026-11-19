@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BlackFramesC
 ---
 
 # BlackFramesConfiguration
-<a name="API_BlackFramesConfiguration"></a>
 
 Detects black frames in the router input's source content and reports them through a CloudWatch metric, an EventBridge event, and a router input message.
 

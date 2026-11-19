@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DeleteFileSy
 ---
 
 # DeleteFileSystem
-<a name="API_DeleteFileSystem"></a>
 
 Deletes a file system, permanently severing access to its contents. Upon return, the file system no longer exists and you can't access any contents of the deleted file system.
 

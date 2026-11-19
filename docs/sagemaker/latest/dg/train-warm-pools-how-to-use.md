@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-warm-pools-how
 ---
 
 # Use SageMaker AI managed warm pools
-<a name="train-warm-pools-how-to-use"></a>
 
 You can use SageMaker AI managed warm pools through the SageMaker Python SDK, the Amazon SageMaker AI console, or through the low-level APIs. Administrators can optionally use the `sagemaker:KeepAlivePeriod` condition key to further restrict the `KeepAlivePeriodInSeconds` limits for certain users or groups.
 

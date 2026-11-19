@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # VpcEndpointErrorDetail
-<a name="API_VpcEndpointErrorDetail"></a>
 
 Error information for a failed `BatchGetVpcEndpoint` request.
 

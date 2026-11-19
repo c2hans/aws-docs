@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Policies for tag-based access control
-<a name="security_iam_TBAC"></a>
 
 You can use conditions in your identity-based policy to control access to virtual clusters and job runs based on tags. For more information about tagging, see [Tagging your Amazon EMR on EKS resources](tag-resources.md).
 

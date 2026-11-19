@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Self
 ---
 
 # SelfManagedInput
-<a name="API_SelfManagedInput"></a>
 
 Configuration for a self-managed Private Connection.
 

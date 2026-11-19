@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Disruption preference policy
-<a name="6-4-use-preference-policy"></a>
 
 Disruption Preference Policy tells Karpenter which nodes to disrupt first when consolidating — prioritize removing the most expensive or least utilized nodes to maximize savings per disruption event.
 

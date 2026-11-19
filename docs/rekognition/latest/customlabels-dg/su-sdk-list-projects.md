@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/su-sd
 ---
 
 # Call an Amazon Rekognition Custom Labels operation
-<a name="su-sdk-list-projects"></a>
 
 Run the following code to confirm that you can make calls to the Amazon Rekognition Custom Labels API. The code lists the projects in your AWS account, in the current AWS Region. If you haven't previously created a project, the response is empty, but does confirm that you can call the `DescribeProjects` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Configuring an Amazon S3 Bucket as a Website
-<a name="examples-s3-website-configuration"></a>
 
 You can configure an Amazon S3 bucket to behave as a website. To do this, you need to set its website configuration.
 

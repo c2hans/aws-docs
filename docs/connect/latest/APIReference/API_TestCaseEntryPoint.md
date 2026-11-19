@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TestCase
 ---
 
 # TestCaseEntryPoint
-<a name="API_TestCaseEntryPoint"></a>
 
 Defines the starting point for a test case.
 

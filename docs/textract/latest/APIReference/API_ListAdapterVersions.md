@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_ListAda
 ---
 
 # ListAdapterVersions
-<a name="API_ListAdapterVersions"></a>
 
 List all version of an adapter that meet the specified filtration criteria.
 

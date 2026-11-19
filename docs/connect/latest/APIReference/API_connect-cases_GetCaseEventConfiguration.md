@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetCaseEventConfiguration
-<a name="API_connect-cases_GetCaseEventConfiguration"></a>
 
 Returns the case event publishing configuration.
 
@@ -41,6 +40,7 @@ Content-type: application/json
       "enabled": boolean,
       "includedData": {
          "caseData": {
+            "autoIncludeFields": "string",
             "fields": [
                {
                   "id": "string"

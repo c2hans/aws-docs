@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 ---
 
 # AWS Systems Manager Change Manager availability change
-<a name="change-manager-availability-change"></a>
 
 After careful consideration, we decided to close AWS Systems Manager Change Manager to new customers starting November 7, 2025. If you would like to use Change Manager, sign up before that date. Existing customers can continue to use the service as normal.
 

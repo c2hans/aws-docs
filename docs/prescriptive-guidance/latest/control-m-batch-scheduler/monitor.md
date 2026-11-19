@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Monitor jobs
-<a name="monitor"></a>
 
 You can monitor and verify jobs in the Control-M Monitoring domain and in the Micro Focus Enterprise Server Common Web Administration user interface.
 

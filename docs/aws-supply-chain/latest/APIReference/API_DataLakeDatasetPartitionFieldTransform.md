@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataLakeDatasetPartitionFieldTransform
-<a name="API_DataLakeDatasetPartitionFieldTransform"></a>
 
 The detail of the partition field transformation.
 

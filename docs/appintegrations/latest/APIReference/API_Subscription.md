@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # Subscription
-<a name="API_connect-app-integrations_Subscription"></a>
 
 The configuration of an event that the application subscribes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bot-control
 ---
 
 # Deployment and implementation of your bot control strategy
-<a name="deployment"></a>
 
 There are multiple factors to consider when planning a bot control deployment strategy. In addition to the unique characteristics of web applications, environment size, development process, and organizational structure affect the deployment strategy. Depending on your environment and application characteristics, a centralized or decentralized deployment strategy can be used:
 + **Centralized deployment strategy** – A centralized approach enables a higher degree of control when you want strict enforcement of bot control. This approach is well suited if application teams prefer to offload management. A centralized approach is most effective when web applications share similar characteristics. In this case, the applications benefit from a common set of bot control rules and bot mitigation actions.

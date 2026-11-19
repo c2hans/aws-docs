@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/network-type
 ---
 
 # Choosing a network type in ElastiCache
-<a name="network-type"></a>
 
 ElastiCache supports the Internet Protocol versions 4 and 6 (IPv4 and IPv6), allowing you to configure your cluster to accept:
 + only IPv4 connections,

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTo
 ---
 
 # RouteTollPaymentSite
-<a name="API_RouteTollPaymentSite"></a>
 
 Locations or sites where the toll fare is collected.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateDataQuality
 ---
 
 # UpdateDataQualityRuleset
-<a name="API_UpdateDataQualityRuleset"></a>
 
 Updates the specified data quality ruleset.
 

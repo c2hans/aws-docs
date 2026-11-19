@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Developer productivity
-<a name="aurora-features-developer-productivity"></a>
 
 **Topics**
 + [Directly query Apache Iceberg and Parquet data in your data lake – NEW\!](#aurora-features-query-iceberg-parquet)

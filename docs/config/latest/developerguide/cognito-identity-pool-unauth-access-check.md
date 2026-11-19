@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cognito-ide
 ---
 
 # cognito-identity-pool-unauth-access-check
-<a name="cognito-identity-pool-unauth-access-check"></a>
 
 Checks if Amazon Cognito Identity Pool allows unauthenticated identities. The rule is NON\_COMPLIANT if the Identity Pool is configured to allow unauthenticated identities.
 

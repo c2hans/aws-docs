@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntitiesDetectionJobFilter
-<a name="API_EntitiesDetectionJobFilter"></a>
 
 Provides information for filtering a list of dominant language detection jobs. For more information, see the [ListEntitiesDetectionJobs](API_ListEntitiesDetectionJobs.md) operation.
 

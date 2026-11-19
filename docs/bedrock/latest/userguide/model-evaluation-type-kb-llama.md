@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Meta Llama 3.1 70B Instruct
-<a name="model-evaluation-type-kb-llama"></a>
 
 Prompts used with Meta Llama 3.1 70B Instruct
 

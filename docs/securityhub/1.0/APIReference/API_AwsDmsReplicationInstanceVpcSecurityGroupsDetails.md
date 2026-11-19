@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDmsR
 ---
 
 # AwsDmsReplicationInstanceVpcSecurityGroupsDetails
-<a name="API_AwsDmsReplicationInstanceVpcSecurityGroupsDetails"></a>
 
  Provides details about the virtual private cloud (VPC) security group that’s associated with the replication instance.
 

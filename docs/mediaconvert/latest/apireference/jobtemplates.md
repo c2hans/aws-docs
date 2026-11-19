@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobtemp
 ---
 
 # JobTemplates
-<a name="jobtemplates"></a>
 
 ## URI
 <a name="jobtemplates-url"></a>

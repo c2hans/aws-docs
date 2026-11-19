@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachVol
 ---
 
 # AttachVolume
-<a name="API_AttachVolume"></a>
 
 Attaches an Amazon EBS volume to a `running` or `stopped` instance, and exposes it to the instance with the specified device name.
 

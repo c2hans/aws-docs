@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcTim
 ---
 
 # GrpcTimeout
-<a name="API_GrpcTimeout"></a>
 
 An object that represents types of timeouts.
 

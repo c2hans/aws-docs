@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_QnAIntentC
 ---
 
 # QnAIntentConfiguration
-<a name="API_QnAIntentConfiguration"></a>
 
 Details about the the configuration of the built-in `Amazon.QnAIntent`.
 

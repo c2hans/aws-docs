@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
 ---
 
 # Increasing resilience and improving customer experience by using chaos engineering on AWS
-<a name="introduction"></a>
 
 *Laurent Domb, Amazon Web Services*
 

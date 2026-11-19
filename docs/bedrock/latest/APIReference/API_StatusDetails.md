@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StatusDe
 ---
 
 # StatusDetails
-<a name="API_StatusDetails"></a>
 
 The status details for sub-tasks of a customization job. Possible statuses for each sub-task include the following:
 + NotStarted

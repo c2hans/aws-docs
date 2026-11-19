@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Returns information about a field passed inside a request that resulted in an exception.
 

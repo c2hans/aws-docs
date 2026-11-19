@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/use-training-plan-fo
 ---
 
 # Create a SageMaker HyperPod cluster on training plans using the SageMaker AI console
-<a name="use-training-plan-for-hyperpod-creation-using-console"></a>
 
 To create an SageMaker HyperPod cluster using training plans from the SageMaker AI console UI, follow these steps:
 

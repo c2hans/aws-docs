@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListGatewayRateLimits
-<a name="API_ListGatewayRateLimits"></a>
 
 Lists all rate limits for a gateway. Results are paginated. Use the `nextToken` parameter to retrieve additional results.
 

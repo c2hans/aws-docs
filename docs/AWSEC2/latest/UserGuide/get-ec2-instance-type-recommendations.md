@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-ec2-instance
 ---
 
 # Get recommendations from EC2 instance type finder
-<a name="get-ec2-instance-type-recommendations"></a>
 
 EC2 instance type finder considers your use case, workload type, CPU manufacturer preference, and how you prioritize price and performance, as well as additional parameters that you can specify. It then uses this data to provide suggestions and guidance for Amazon EC2 instance types that are best suited to your new workloads.
 

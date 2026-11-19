@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ServiceConfiguration
-<a name="API_ServiceConfiguration"></a>
 
  The Amazon ECS service configurations used for recommendations.
 

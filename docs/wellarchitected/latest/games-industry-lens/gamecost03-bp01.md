@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMECOST03-BP01 Choose the appropriate type of storage for user generated content to reduce costs
-<a name="gamecost03-bp01"></a>
 
  Each type of data generated and stored in your game has unique characteristics that you should consider when determining the right storage solution for your workload.
 

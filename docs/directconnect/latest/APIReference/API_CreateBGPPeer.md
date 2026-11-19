@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Cr
 ---
 
 # CreateBGPPeer
-<a name="API_CreateBGPPeer"></a>
 
 Creates a BGP peer on the specified virtual interface.
 

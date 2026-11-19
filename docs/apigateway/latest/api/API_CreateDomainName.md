@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateDomainNa
 ---
 
 # CreateDomainName
-<a name="API_CreateDomainName"></a>
 
 Creates a new domain name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetTraceGraph.html
 ---
 
 # GetTraceGraph
-<a name="API_GetTraceGraph"></a>
 
 Retrieves a service graph for one or more specific trace IDs.
 

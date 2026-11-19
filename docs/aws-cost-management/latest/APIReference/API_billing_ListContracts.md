@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListContracts
-<a name="API_billing_ListContracts"></a>
 
 Lists the private pricing contracts that your AWS account is an eligible payer account of. This operation is read-only and paginated.
 

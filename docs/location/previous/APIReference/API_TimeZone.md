@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_TimeZ
 ---
 
 # TimeZone
-<a name="API_TimeZone"></a>
 
 Information about a time zone. Includes the name of the time zone and the offset from UTC in seconds.
 

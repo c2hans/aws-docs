@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-agree
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Reject an agreement payment request using an AWS SDK
-<a name="marketplace-agreement_example_marketplace-agreement_RejectAgreementPaymentRequest_section"></a>
 
 The following code examples show how to reject an agreement payment request initiated by the seller.
 

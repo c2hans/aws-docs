@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/glacier-storag
 ---
 
 # Understanding S3 Glacier storage classes for long-term data storage
-<a name="glacier-storage-classes"></a>
 
 You can use Amazon S3 S3 Glacier storage classes to provide cost-effective solutions to storing long-term data that isn't accessed often. The S3 Glacier storage classes are:
 + S3 Glacier Instant Retrieval

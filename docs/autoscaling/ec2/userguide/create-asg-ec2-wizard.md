@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-asg-ec2
 ---
 
 # Create an Auto Scaling group using the Amazon EC2 launch wizard
-<a name="create-asg-ec2-wizard"></a>
 
 The following procedure shows how to create an Auto Scaling group by using the **Launch instance** wizard in the Amazon EC2 console. This option automatically populates a launch template with certain configuration details from the **Launch instance** wizard.
 

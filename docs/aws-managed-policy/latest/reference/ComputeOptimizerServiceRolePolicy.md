@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Comp
 ---
 
 # ComputeOptimizerServiceRolePolicy
-<a name="ComputeOptimizerServiceRolePolicy"></a>
 
 **Description**: Allows ComputeOptimizer to call AWS services and collect workload details on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetCloudC
 ---
 
 # GetCloudConnector
-<a name="API_GetCloudConnector"></a>
 
 Get configuration details for a cloud connector.
 

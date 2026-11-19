@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/troublesho
 ---
 
 # I changed DNS settings, but they haven't taken effect
-<a name="troubleshooting-new-dns-settings-not-in-effect"></a>
 
 If you changed DNS settings, here are some common reasons that the changes haven't taken effect yet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-pendo.html
 ---
 
 # Connecting to Pendo
-<a name="connecting-to-pendo"></a>
 
 Pendo provides a rich data store for user interaction data. Customers will transfer this data to AWS so that they may join it with other product data, perform additional analysis and dash-boarding and set alerts if they choose.
 

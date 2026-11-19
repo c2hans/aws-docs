@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Lineag
 ---
 
 # LineageGroupSummary
-<a name="API_LineageGroupSummary"></a>
 
 Lists a summary of the properties of a lineage group. A lineage group provides a group of shareable lineage entity resources.
 

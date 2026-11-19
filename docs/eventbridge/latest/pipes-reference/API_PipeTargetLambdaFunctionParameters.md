@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeTargetLambdaFunctionParameters
-<a name="API_PipeTargetLambdaFunctionParameters"></a>
 
 The parameters for using a Lambda function as a target.
 

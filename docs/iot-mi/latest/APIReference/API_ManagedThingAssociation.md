@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ManagedTh
 ---
 
 # ManagedThingAssociation
-<a name="API_ManagedThingAssociation"></a>
 
 Structure representing an association between a managed thing and an account association, which connects a device to a third-party account.
 

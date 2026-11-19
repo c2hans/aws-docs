@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_T
 ---
 
 # TransitGatewayConnectPeerAssociation
-<a name="API_TransitGatewayConnectPeerAssociation"></a>
 
 Describes a transit gateway Connect peer association.
 

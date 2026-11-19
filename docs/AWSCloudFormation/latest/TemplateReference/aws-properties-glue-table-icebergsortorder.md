@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Table IcebergSortOrder
-<a name="aws-properties-glue-table-icebergsortorder"></a>
 
 Defines the sort order specification for an Iceberg table, determining how data should be ordered within partitions to optimize query performance.
 

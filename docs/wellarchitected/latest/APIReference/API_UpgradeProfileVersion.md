@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # UpgradeProfileVersion
-<a name="API_UpgradeProfileVersion"></a>
 
 Upgrade a profile.
 

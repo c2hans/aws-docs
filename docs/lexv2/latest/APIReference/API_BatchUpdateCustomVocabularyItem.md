@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BatchUpdat
 ---
 
 # BatchUpdateCustomVocabularyItem
-<a name="API_BatchUpdateCustomVocabularyItem"></a>
 
 Update a batch of custom vocabulary items for a given bot locale's custom vocabulary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_K
 ---
 
 # KmsKey
-<a name="API_KmsKey"></a>
 
 KMS key info.
 

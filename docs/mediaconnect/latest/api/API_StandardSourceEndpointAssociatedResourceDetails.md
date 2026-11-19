@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardSour
 ---
 
 # StandardSourceEndpointAssociatedResourceDetails
-<a name="API_StandardSourceEndpointAssociatedResourceDetails"></a>
 
 The associated resource details for a standard source endpoint. This type does not require any additional settings.
 

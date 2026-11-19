@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesTrendsMetricsResult
-<a name="API_ResourcesTrendsMetricsResult"></a>
 
 Contains the resource trend metrics data for a specific time point in the requested time period.
 

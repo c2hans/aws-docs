@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver.html
 ---
 
 # Athena JDBC 3.x driver
-<a name="jdbc-v3-driver"></a>
 
 You can use the Athena JDBC driver to connect to Amazon Athena from many third-party SQL client tools and from custom applications.
 

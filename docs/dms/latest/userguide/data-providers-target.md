@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/data-providers-targ
 ---
 
 # Creating and setting target data providers in DMS Schema Conversion
-<a name="data-providers-target"></a>
 
 You can use MySQL, PostgreSQL, Amazon Redshift and Amazon RDS for Db2 databases as a target data provider in migration projects for DMS Schema Conversion.
 

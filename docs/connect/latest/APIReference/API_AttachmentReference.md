@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Attachme
 ---
 
 # AttachmentReference
-<a name="API_AttachmentReference"></a>
 
 Information about a reference when the `referenceType` is `ATTACHMENT`. Otherwise, null.
 

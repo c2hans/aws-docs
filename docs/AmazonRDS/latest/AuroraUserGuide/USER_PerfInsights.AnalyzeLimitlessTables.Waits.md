@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Pe
 ---
 
 # Analyzing DB load by waits for Aurora PostgreSQL Limitless Database using the Performance Insights dashboard
-<a name="USER_PerfInsights.AnalyzeLimitlessTables.Waits"></a>
 
 You might want to improve the performance for your Aurora PostgreSQL Limitless Database by tracking wait events. To analyze DB load by wait events for your Aurora PostgreSQL Limitless Database, use the following procedure.
 

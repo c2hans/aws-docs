@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk increases the number of instance types you can choose for an environment on September 13, 2024
-<a name="release-2024-09-13-release-notes"></a>
 
 AWS Elastic Beanstalk increased the number of instance types you can choose for an environment from 10 to 40.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_CpuConfigu
 ---
 
 # CpuConfiguration
-<a name="API_CpuConfiguration"></a>
 
 Configuration for the CPU architecture of a MicroVM.
 

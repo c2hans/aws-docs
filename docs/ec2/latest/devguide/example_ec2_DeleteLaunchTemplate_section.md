@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_DeleteLa
 ---
 
 # Use `DeleteLaunchTemplate` with an AWS SDK or CLI
-<a name="example_ec2_DeleteLaunchTemplate_section"></a>
 
 The following code examples show how to use `DeleteLaunchTemplate`.
 

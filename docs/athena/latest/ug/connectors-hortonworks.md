@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-hortonworks.
 ---
 
 # Amazon Athena Hortonworks connector
-<a name="connectors-hortonworks"></a>
 
 The Amazon Athena connector for Hortonworks enables Amazon Athena to run SQL queries on the Cloudera [Hortonworks](https://www.cloudera.com/products/hdp.html) data platform. The connector transforms your Athena SQL queries to their equivalent HiveQL syntax.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-fcr-stat
 ---
 
 # Monitor state changes for future-dated Capacity Reservations
-<a name="monitor-fcr-state"></a>
 
 Amazon EC2 sends an event to Amazon EventBridge when the state of a future-dated Capacity Reservation changes.
 

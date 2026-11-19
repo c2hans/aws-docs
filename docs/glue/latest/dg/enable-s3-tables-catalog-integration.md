@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/enable-s3-tables-catalog-
 ---
 
 # Enabling S3 Tables integration with the Data Catalog
-<a name="enable-s3-tables-catalog-integration"></a>
 
 You can enable S3 Tables integration with the AWS Glue Data Catalog using the Amazon S3 management console or AWS CLI. When you enable the integration using the console, AWS creates a federated catalog named `s3tablescatalog` that automatically discovers and mounts all S3 table buckets in your AWS account and Region.
 

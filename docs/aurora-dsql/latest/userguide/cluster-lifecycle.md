@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/cluster-lif
 ---
 
 # Aurora DSQL cluster lifecycle
-<a name="cluster-lifecycle"></a>
 
 Understanding the Aurora DSQL cluster lifecycle helps you manage your clusters effectively. This section covers cluster status definitions and the scale to zero feature that optimizes costs.
 

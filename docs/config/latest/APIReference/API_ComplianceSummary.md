@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Complianc
 ---
 
 # ComplianceSummary
-<a name="API_ComplianceSummary"></a>
 
 The number of AWS Config rules or AWS resources that are compliant and noncompliant.
 

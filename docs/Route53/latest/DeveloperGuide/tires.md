@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tires.html
 ---
 
 # .tires
-<a name="tires"></a>
 
 Used by manufacturers, distributors, or buyers of tires.
 

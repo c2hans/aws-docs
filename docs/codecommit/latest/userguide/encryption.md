@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/encryption.h
 ---
 
 # AWS Key Management Service and encryption for AWS CodeCommit repositories
-<a name="encryption"></a>
 
 Data in CodeCommit repositories is encrypted in transit and at rest. When data is pushed into a CodeCommit repository (for example, by calling **git push**), CodeCommit encrypts the received data as it is stored in the repository. When data is pulled from a CodeCommit repository (for example, by calling **git pull**), CodeCommit decrypts the data and then sends it to the caller. This assumes the IAM user associated with the push or pull request has been authenticated by AWS. Data sent or received is transmitted using the HTTPS or SSH encrypted network protocols.
 

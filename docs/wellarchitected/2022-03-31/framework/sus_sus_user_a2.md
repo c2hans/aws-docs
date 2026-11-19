@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS02-BP01 Scale infrastructure with user load
-<a name="sus_sus_user_a2"></a>
 
  Identify periods of low or no utilization and scale down resources to eliminate excess capacity and improve efficiency.
 

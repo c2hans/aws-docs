@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the *Amazon EC2 API Reference*. It provides descriptions, API request parameters, and the XML response for each of the Amazon EC2 Query API actions. Note that the Amazon EC2 API includes actions for Amazon EC2 plus additional services, such as Amazon EBS and Amazon VPC.
 
@@ -20,4 +19,4 @@ Alternatively, use one of the following methods to access the Amazon EC2 API, in
 +  [AWS Tools for PowerShell Cmdlet Reference - Amazon EC2 cmdlets](https://docs.aws.amazon.com/powershell/v5/reference/items/EC2_cmdlets.html)
 +  [AWS SDKs](https://builder.aws.com/build/tools)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

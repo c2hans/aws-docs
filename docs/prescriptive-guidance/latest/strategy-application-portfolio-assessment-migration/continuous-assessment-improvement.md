@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ap
 ---
 
 # Continuous assessment and improvement
-<a name="continuous-assessment-improvement"></a>
 
 After a migration program has been established to implement a migration wave plan, the application portfolio assessment focuses on continuous iteration of the portfolio data and detailed assessments for each wave. In addition, as workloads are migrated, these can be further assessed for optimization and modernization. This stage focuses on gathering application and infrastructure details to validate target architecture and technology choices. It also focuses on outlining specific platform requirements, such as security, operations, and cloud infrastructure, that can be converted into implementation designs and migration cutover plans for each migration wave.
 

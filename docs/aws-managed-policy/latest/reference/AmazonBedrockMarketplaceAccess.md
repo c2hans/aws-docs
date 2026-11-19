@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBedrockMarketplaceAccess
-<a name="AmazonBedrockMarketplaceAccess"></a>
 
 **Description**: Provides limited access to Amazon Bedrock Marketplace as well as to related services that are required by it
 

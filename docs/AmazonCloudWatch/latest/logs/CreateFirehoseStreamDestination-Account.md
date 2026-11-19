@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CreateFireh
 ---
 
 # Step 2: Create a destination
-<a name="CreateFirehoseStreamDestination-Account"></a>
 
 **Important**
 All steps in this procedure are to be done in the log data recipient account.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quick-action-auth
 ---
 
 # Authentication methods
-<a name="quick-action-auth"></a>
 
 AWS Quick supports multiple authentication methods for connectors. The available methods depend on the specific connector. During setup, you choose your authentication method from the **OAuth Configuration** options or from the connector-specific authentication settings.
 

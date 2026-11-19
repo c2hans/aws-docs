@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sharepoint-kb-tro
 ---
 
 # Troubleshooting SharePoint knowledge bases
-<a name="sharepoint-kb-troubleshooting"></a>
 
 Use this section to diagnose and resolve common issues with SharePoint knowledge base integrations.
 

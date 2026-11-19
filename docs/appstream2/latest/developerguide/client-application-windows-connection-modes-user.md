@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # WorkSpaces Applications Client Connection Modes
-<a name="client-application-windows-connection-modes-user"></a>
 
 The WorkSpaces Applications client provides two connection modes: *Native application mode* and *classic mode*. The connection mode that you choose determines the options that are available to you during application streaming, and how your streaming applications function and display. In addition, **Desktop view** is also available, if your administrator has enabled it.
 

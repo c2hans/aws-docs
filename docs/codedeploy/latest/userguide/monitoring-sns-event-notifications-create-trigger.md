@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-s
 ---
 
 # Create a trigger for a CodeDeploy event
-<a name="monitoring-sns-event-notifications-create-trigger"></a>
 
 You can create a trigger that publishes an Amazon Simple Notification Service (Amazon SNS) topic for an AWS CodeDeploy deployment or instance event. Then, when that event occurs, all subscribers to the associated topic receive notifications through the endpoint specified in the topic, such as an SMS message or email message. Amazon SNS offers multiple methods for subscribing to topics.
 

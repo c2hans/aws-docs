@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Pr
 ---
 
 # ProtectedQueryInputParameters
-<a name="API_ProtectedQueryInputParameters"></a>
 
 Provides information necessary to perform the protected query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/federated-identit
 ---
 
 # Initiating sign-on from the identity provider (IdP)
-<a name="federated-identities-idp-to-sp"></a>
 
 |  |
 | --- |

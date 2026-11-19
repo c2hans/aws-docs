@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Custo
 ---
 
 # CustomHeaders
-<a name="API_CustomHeaders"></a>
 
 A complex type that contains the list of Custom Headers for each origin.
 

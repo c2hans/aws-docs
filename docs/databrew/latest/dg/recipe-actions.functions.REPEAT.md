@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # REPEAT\_STRING
-<a name="recipe-actions.functions.REPEAT"></a>
 
 Repeats the strings in the source column or custom input value a specified number of times, and returns the result in a new column.
 

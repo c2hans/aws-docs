@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_GetAction.ht
 ---
 
 # GetAction
-<a name="API_GetAction"></a>
 
 Gets information about the specified AWS FIS action.
 

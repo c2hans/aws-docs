@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # IpsRulesSource
-<a name="API_IpsRulesSource"></a>
 
 The source of the rules for an IPS engine rule group.
 

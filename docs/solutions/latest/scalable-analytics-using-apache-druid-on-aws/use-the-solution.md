@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Use the guidance
-<a name="use-the-solution"></a>
 
 This section provides a user guide for using the Scalable Analytics using Apache Druid on AWS Guidance.
 

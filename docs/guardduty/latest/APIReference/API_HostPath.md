@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_HostPa
 ---
 
 # HostPath
-<a name="API_HostPath"></a>
 
 Represents a pre-existing file or directory on the host machine that the volume maps to.
 

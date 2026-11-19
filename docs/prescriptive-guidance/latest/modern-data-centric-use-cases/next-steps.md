@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 We recommend that you take the following next steps:
 

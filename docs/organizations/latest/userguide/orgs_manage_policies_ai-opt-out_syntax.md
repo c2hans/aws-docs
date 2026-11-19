@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # AI services opt-out policy syntax and examples
-<a name="orgs_manage_policies_ai-opt-out_syntax"></a>
 
 This topic describes Artificial Intelligence (AI) services opt-out policy syntax and provides examples.
 

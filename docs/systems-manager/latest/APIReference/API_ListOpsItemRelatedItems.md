@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListOpsItemRelatedItems
-<a name="API_ListOpsItemRelatedItems"></a>
 
 Lists all related-item resources associated with a Systems Manager OpsCenter OpsItem. OpsCenter is a tool in AWS Systems Manager.
 

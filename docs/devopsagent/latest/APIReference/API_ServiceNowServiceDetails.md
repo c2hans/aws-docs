@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Serv
 ---
 
 # ServiceNowServiceDetails
-<a name="API_ServiceNowServiceDetails"></a>
 
 Complete service details for ServiceNow integration.
 

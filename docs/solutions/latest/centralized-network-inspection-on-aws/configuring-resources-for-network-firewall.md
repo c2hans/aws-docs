@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Configuring resources for Network Firewall
-<a name="configuring-resources-for-network-firewall"></a>
 
 After deploying the guidance, you can customize the resources for your network. This guidance creates a S3 bucket to store all the Network Firewall conﬁguration ﬁles. You can find out the bucket name by going to the CloudFormation stack outputs and searching for the parameter `CodeBuildsourcecodebucket`. The files are saved with prefix `{{BUCKET_NAME}}/centralized-network-inspection-on-aws/configuration`. After downloading the configuration files, you can update and create new resources in the respective folders and upload the archive file to the location mentioned above. After the files have been updated, start the CodePipeline to apply the changes by selecting the option **Release Changes**. You can review the changes to the firewall, firewall policy, and rule groups after the CodePipeline has finished running successfully. We recommend [monitoring the pipeline status](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view-console.html) to confirm that the changes were deployed successfully. You can also review [CodeBuild stage](https://docs.aws.amazon.com/codebuild/latest/userguide/view-project-details.html) logs in CodePipeline.
 

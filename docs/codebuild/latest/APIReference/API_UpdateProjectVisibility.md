@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Update
 ---
 
 # UpdateProjectVisibility
-<a name="API_UpdateProjectVisibility"></a>
 
 Changes the public visibility for a project. The project's build results, logs, and artifacts are available to the general public. For more information, see [Public build projects](https://docs.aws.amazon.com/codebuild/latest/userguide/public-builds.html) in the * AWS CodeBuild User Guide*.
 

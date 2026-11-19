@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_GetSMSAttributes.html
 ---
 
 # GetSMSAttributes
-<a name="API_GetSMSAttributes"></a>
 
 Returns the settings for sending SMS messages from your AWS account.
 

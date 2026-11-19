@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultFreeFormLayoutConfiguration
-<a name="API_DefaultFreeFormLayoutConfiguration"></a>
 
 The options that determine the default settings of a free-form layout configuration.
 

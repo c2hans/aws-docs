@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # DescribeImageGenerationConfiguration
-<a name="API_DescribeImageGenerationConfiguration"></a>
 
 Gets the `ImageGenerationConfiguration` for a given Kinesis video stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListBatch.html
 ---
 
 # ListBatch
-<a name="API_ListBatch"></a>
 
 Returns a list of run batches in your account, with optional filtering by status, name, or run group. Results are paginated. Only one filter per call is supported.
 

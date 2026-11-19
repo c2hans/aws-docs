@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-replay-c
 ---
 
 # Canceling replays of archived events in Amazon EventBridge
-<a name="eb-replay-cancel"></a>
 
 If you start a replay and then want to stop it, you can cancel it while its status is `Starting` or `Running`.
 

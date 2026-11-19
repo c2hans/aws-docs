@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetAccountPlanState
-<a name="API_freetier_GetAccountPlanState"></a>
 
  This returns all of the information related to the state of the account plan related to Free Tier.
 

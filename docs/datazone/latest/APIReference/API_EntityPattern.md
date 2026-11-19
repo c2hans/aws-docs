@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_EntityP
 ---
 
 # EntityPattern
-<a name="API_EntityPattern"></a>
 
 The pattern describing the entities to be matched during the graph query.
 

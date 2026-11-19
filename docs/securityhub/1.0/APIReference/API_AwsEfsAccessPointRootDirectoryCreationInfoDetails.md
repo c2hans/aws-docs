@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEfsA
 ---
 
 # AwsEfsAccessPointRootDirectoryCreationInfoDetails
-<a name="API_AwsEfsAccessPointRootDirectoryCreationInfoDetails"></a>
 
 Provides information about the settings that Amazon EFS uses to create the root directory when a client connects to an access point.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringResources
-<a name="API_MonitoringResources"></a>
 
 Identifies the resources to deploy for a monitoring job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchT
 ---
 
 # BatchTransformInput
-<a name="API_BatchTransformInput"></a>
 
 Input object for the batch transform job.
 

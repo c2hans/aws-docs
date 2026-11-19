@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-osis.h
 ---
 
 # Amazon OpenSearch Service Ingestion Service events
-<a name="events-ref-osis"></a>
 
 OpenSearch Service Ingestion Service sends service events to EventBridge via AWS CloudTrail.
 

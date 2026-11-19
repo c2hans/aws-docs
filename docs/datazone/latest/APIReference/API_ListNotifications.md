@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListNot
 ---
 
 # ListNotifications
-<a name="API_ListNotifications"></a>
 
 Lists all Amazon DataZone notifications.
 

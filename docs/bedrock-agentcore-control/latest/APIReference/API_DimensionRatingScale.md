@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DimensionRatingScale
-<a name="API_DimensionRatingScale"></a>
 
  The rating scale for one dimension of an LLM-as-a-judge evaluator, supporting either a numerical or a categorical scale.
 

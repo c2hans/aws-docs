@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS Shield Advanced Features
-<a name="aws-shield-advanced-features"></a>
 
 **Managed DDoS event response with Shield Response Team support**
 

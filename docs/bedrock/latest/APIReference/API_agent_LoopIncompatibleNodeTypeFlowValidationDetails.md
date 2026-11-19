@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Lo
 ---
 
 # LoopIncompatibleNodeTypeFlowValidationDetails
-<a name="API_agent_LoopIncompatibleNodeTypeFlowValidationDetails"></a>
 
 Details about a flow that contains an incompatible node in a DoWhile loop.
 

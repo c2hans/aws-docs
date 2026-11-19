@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayConnectRequestOptions
-<a name="API_CreateTransitGatewayConnectRequestOptions"></a>
 
 The options for a Connect attachment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/async-pii-console.h
 ---
 
 # PII asynchronous analysis jobs (Console)
-<a name="async-pii-console"></a>
 
 You can use the console to create async analysis jobs to detect PII entities. For more information about PII entity types, see [Detecting PII entities](how-pii.md).
 

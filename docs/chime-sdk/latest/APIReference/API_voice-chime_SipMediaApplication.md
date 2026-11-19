@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # SipMediaApplication
-<a name="API_voice-chime_SipMediaApplication"></a>
 
 The details of the SIP media application, including name and endpoints. An AWS account can have multiple SIP media applications.
 

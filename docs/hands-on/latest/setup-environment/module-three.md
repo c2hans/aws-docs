@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/setup-environment/module
 ---
 
 # Module 3: (Optional) Set Up the AWS CLI
-<a name="module-three"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AlertStateInfo
-<a name="API_AlertStateInfo"></a>
 
 Live evaluation state for an alert. Read-only, system-managed.
 

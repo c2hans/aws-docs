@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/enable-as-inst
 ---
 
 # Configure monitoring for Auto Scaling instances
-<a name="enable-as-instance-metrics"></a>
 
 Amazon EC2 collects and processes raw data from instances into readable, near real-time metrics that describe the CPU and other usage data for your Auto Scaling group. You can configure the interval for monitoring these metrics by choosing one-minute or five-minute granularity.
 

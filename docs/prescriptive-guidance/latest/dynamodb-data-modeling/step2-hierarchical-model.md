@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 2: Create a preliminary cost estimation
-<a name="step2-hierarchical-model"></a>
 
 It's important to calculate an estimation of the cost for all environments of your application so you can check if the solution is financially viable. A best practice is to make a high-level estimation and get approval from the business analyst before proceeding with the development and deployment.
 + Database engineer creates the initial cost analysis using available information and the examples presented on the [DynamoDB pricing page](https://aws.amazon.com/dynamodb/pricing/).

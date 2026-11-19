@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_WindowsAudit
 ---
 
 # WindowsAuditLogCreateConfiguration
-<a name="API_WindowsAuditLogCreateConfiguration"></a>
 
 The Windows file access auditing configuration used when creating or updating an Amazon FSx for Windows File Server file system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetUserAttributeVerificationCode
-<a name="API_GetUserAttributeVerificationCode"></a>
 
 Given an attribute name, sends a user attribute verification code for the specified attribute name to the currently signed-in user.
 

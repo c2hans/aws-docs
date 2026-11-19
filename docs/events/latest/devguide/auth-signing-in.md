@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/auth-signing-in.h
 ---
 
 # Signing an attendee in
-<a name="auth-signing-in"></a>
 
  Sign-in is the OAuth 2.0 authorization code flow with PKCE.
 

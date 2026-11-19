@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # (Optional) Additional configuration: Cloud9 environment setup
-<a name="optional-additional-configuration-cloud9-environment-setup"></a>
 
 1. Ensure Python version is 3.8 and above.
 

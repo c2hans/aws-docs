@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BusinessSupportServiceSpend
-<a name="API_billing_BusinessSupportServiceSpend"></a>
 
 A service-level spend entry contributing to Business Support eligible spend.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorials_09_c
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Creating a cluster with CloudFormation
-<a name="tutorials_09_cfn-custom-resource-v3"></a>
 
 Learn how to create a cluster with an AWS ParallelCluster CloudFormation custom resource. For more information, see [AWS CloudFormation custom resource](cloudformation-v3.md).
 

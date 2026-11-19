@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # CreateFirewall
-<a name="API_CreateFirewall"></a>
 
 Creates an AWS Network Firewall [Firewall](API_Firewall.md) and accompanying [FirewallStatus](API_FirewallStatus.md) for a VPC.
 
@@ -182,7 +181,7 @@ Required: No
  ** [TransitGatewayId](#API_CreateFirewall_RequestSyntax) **   <a name="networkfirewall-CreateFirewall-request-TransitGatewayId"></a>
 Required when creating a transit gateway-attached firewall. The unique identifier of the transit gateway to attach to this firewall. You can provide either a transit gateway from your account or one that has been shared with you through AWS Resource Access Manager.
 After creating the firewall, you cannot change the transit gateway association. To use a different transit gateway, you must create a new firewall.
-For information about creating firewalls, see [CreateFirewall](#API_CreateFirewall). For specific guidance about transit gateway-attached firewalls, see [Considerations for transit gateway-attached firewalls](https://docs.aws.amazon.com/network-firewall/latest/developerguide/tgw-firewall-considerations.html) in the * AWS Network Firewall Developer Guide*.
+For information about creating firewalls, see [CreateFirewall](API_CreateFirewall.md). For specific guidance about transit gateway-attached firewalls, see [Considerations for transit gateway-attached firewalls](https://docs.aws.amazon.com/network-firewall/latest/developerguide/tgw-firewall-considerations.html) in the * AWS Network Firewall Developer Guide*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `^tgw-[0-9a-z]+$`

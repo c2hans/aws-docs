@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by Amazon Connect Service:
 +  [ActivateEvaluationForm](API_ActivateEvaluationForm.md)

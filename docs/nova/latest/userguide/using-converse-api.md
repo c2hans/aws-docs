@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/using-converse-api
 ---
 
 # Using the Converse API
-<a name="using-converse-api"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For information on how to use the Converse API with Amazon Nova 2, visit [Using the Converse API](https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-converse-api.html).

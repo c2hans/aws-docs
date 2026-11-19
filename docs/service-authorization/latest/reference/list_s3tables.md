@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon S3 Tables
-<a name="list_s3tables"></a>
 
 Amazon S3 Tables (service prefix: `s3tables`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

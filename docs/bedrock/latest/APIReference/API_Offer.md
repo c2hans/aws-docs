@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Offer.ht
 ---
 
 # Offer
-<a name="API_Offer"></a>
 
 An offer dictates usage terms for the model.
 

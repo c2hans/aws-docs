@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Pre-ads request
-<a name="monetization-functions-hooks-pre-ads"></a>
 
 ## When it fires
 <a name="monetization-functions-hooks-pre-ads-when"></a>

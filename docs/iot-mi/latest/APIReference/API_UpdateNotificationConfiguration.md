@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UpdateNot
 ---
 
 # UpdateNotificationConfiguration
-<a name="API_UpdateNotificationConfiguration"></a>
 
  Update a notification configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Combo
 ---
 
 # ComboSeriesItem
-<a name="API_ComboSeriesItem"></a>
 
 The series item configuration of a `ComboChartVisual`.
 

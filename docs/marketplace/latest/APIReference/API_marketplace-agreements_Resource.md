@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Resource
-<a name="API_marketplace-agreements_Resource"></a>
 
 The list of resources involved in the agreement.
 

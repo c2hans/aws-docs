@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Oracle database to Amazon RDS for MySQL using AWS DMS and AWS SCT
-<a name="migrate-an-on-premises-oracle-database-to-amazon-rds-for-mysql-using-aws-dms-and-aws-sct"></a>
 
 *Sergey Dmitriev and Naresh Damera, Amazon Web Services*
 

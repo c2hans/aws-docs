@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agent-tools-
 ---
 
 # Work with Amazon ElastiCache using Valkey MCP
-<a name="agent-tools-valkey-mcp"></a>
 
 Model Context Protocol (MCP) servers give AI agents direct access to tools and data through structured, standardized interfaces. The Valkey MCP server provides agents with direct access to Valkey operations, allowing them to inspect data, execute commands, and work with common Valkey data structures from natural-language requests.
 

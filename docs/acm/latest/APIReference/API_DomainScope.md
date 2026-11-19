@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DomainScope.
 ---
 
 # DomainScope
-<a name="API_DomainScope"></a>
 
 Specifies the scope of domain validation.
 

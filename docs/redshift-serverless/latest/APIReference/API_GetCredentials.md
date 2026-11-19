@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetCredentials
-<a name="API_GetCredentials"></a>
 
 Returns a database user name and temporary password with temporary authorization to log in to Amazon Redshift Serverless.
 

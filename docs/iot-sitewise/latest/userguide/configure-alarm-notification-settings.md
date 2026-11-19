@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-
 ---
 
 # Configure notification settings in AWS IoT SiteWise
-<a name="configure-alarm-notification-settings"></a>
 
 You can configure alarm notification settings using either the AWS IoT SiteWise console or the AWS Command Line Interface (AWS CLI).
 

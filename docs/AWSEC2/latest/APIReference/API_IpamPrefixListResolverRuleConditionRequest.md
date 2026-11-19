@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPrefi
 ---
 
 # IpamPrefixListResolverRuleConditionRequest
-<a name="API_IpamPrefixListResolverRuleConditionRequest"></a>
 
 Describes a condition used when creating or modifying resolver rules.
 

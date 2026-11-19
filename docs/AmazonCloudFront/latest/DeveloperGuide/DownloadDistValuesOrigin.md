@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/D
 ---
 
 # Origin settings
-<a name="DownloadDistValuesOrigin"></a>
 
 When you use the CloudFront console to create or update a distribution, you provide information about one or more locations, known as *origins*, where you store the original versions of your web content. CloudFront gets your web content from your origins and serves it to viewers by using a worldwide network of edge servers.
 

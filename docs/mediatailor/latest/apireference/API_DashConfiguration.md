@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Dash
 ---
 
 # DashConfiguration
-<a name="API_DashConfiguration"></a>
 
 The configuration for DASH content.
 

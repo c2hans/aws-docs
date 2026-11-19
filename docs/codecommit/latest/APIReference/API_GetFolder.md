@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetFo
 ---
 
 # GetFolder
-<a name="API_GetFolder"></a>
 
 Returns the contents of a specified folder in a repository.
 

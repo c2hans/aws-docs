@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotResolu
 ---
 
 # SlotResolutionTestResultItem
-<a name="API_SlotResolutionTestResultItem"></a>
 
 Information about the success and failure rate of slot resolution in the results of a test execution.
 

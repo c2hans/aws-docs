@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Regional
 ---
 
 # RegionalBucket
-<a name="API_control_RegionalBucket"></a>
 
 The container for the regional bucket.
 

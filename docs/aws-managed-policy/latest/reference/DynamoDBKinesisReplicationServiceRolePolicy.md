@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Dyna
 ---
 
 # DynamoDBKinesisReplicationServiceRolePolicy
-<a name="DynamoDBKinesisReplicationServiceRolePolicy"></a>
 
 **Description**: Provide AWS DynamoDB access to KinesisDataStreams
 

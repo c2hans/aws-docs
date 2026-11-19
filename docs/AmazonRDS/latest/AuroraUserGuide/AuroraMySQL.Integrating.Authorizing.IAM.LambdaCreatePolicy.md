@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Creating an IAM policy to access AWS Lambda resources
-<a name="AuroraMySQL.Integrating.Authorizing.IAM.LambdaCreatePolicy"></a>
 
 You can create an IAM policy that provides the minimum required permissions for Aurora to invoke an AWS Lambda function on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Condi
 ---
 
 # ConditionalFormattingIconDisplayConfiguration
-<a name="API_ConditionalFormattingIconDisplayConfiguration"></a>
 
 Determines the icon display configuration.
 

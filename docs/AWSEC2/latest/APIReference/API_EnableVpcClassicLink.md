@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableVpc
 ---
 
 # EnableVpcClassicLink
-<a name="API_EnableVpcClassicLink"></a>
 
 **Note**
 This action is deprecated.

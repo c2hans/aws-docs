@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/edit
 ---
 
 # Edit target group attributes for your Gateway Load Balancer
-<a name="edit-target-group-attributes"></a>
 
 After you create a target group for your Gateway Load Balancer, you can edit its target group attributes.
 

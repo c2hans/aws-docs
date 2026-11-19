@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # Performance measurement
-<a name="performance-measurement"></a>
 
  Measuring and monitoring performance is essential for maintaining optimal efficiency of Microsoft workloads over time. This involves using historical data to establish performance baselines, defining performance requirements, and implementing monitoring systems that can detect anomalies and optimization opportunities. By establishing comprehensive performance measurement practices, organizations can proactively identify issues, optimize resource utilization, and ensure their Microsoft workloads continue to meet performance expectations as requirements evolve.
 

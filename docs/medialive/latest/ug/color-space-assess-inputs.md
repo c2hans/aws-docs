@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-assess-i
 ---
 
 # Assess the color spaces in the sources
-<a name="color-space-assess-inputs"></a>
 
 1. Speak to the content provider of each input. Obtain the following information:
    + The names of the color spaces that apply to the content.

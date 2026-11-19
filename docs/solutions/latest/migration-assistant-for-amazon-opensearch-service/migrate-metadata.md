@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Migrate metadata
-<a name="migrate-metadata"></a>
 
 Metadata migration shapes the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection so that it can accept the incoming documents and traffic. It moves index settings, index mappings, legacy and composable index templates, component templates, and aliases from the source cluster to the target before document backfill or traffic replay becomes meaningful.
 

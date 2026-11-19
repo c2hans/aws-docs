@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Particip
 ---
 
 # ParticipantTokenCredentials
-<a name="API_ParticipantTokenCredentials"></a>
 
 The credentials used by the participant.
 

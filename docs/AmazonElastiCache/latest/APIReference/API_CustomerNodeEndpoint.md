@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CustomerNodeEndpoint
-<a name="API_CustomerNodeEndpoint"></a>
 
 The endpoint from which data should be migrated.
 

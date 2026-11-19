@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/afr-porting
 ---
 
 # Porting the Network Transport Interface
-<a name="afr-porting-network-transport-interface"></a>
 
 ## Integrating the TLS library
 <a name="afr-porting-tls"></a>

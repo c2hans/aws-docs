@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.NT.5] Automate adherence to compliance standards through conformance testing
-<a name="qa.nt.5-automate-adherence-to-compliance-standards-through-conformance-testing"></a>
 
  **Category:** RECOMMENDED
 

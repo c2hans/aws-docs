@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateTemplateProvider
-<a name="API_CreateTemplateProvider"></a>
 
  Contains configuration details for a template provider. Only one type of template provider can be specified.
 

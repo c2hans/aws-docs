@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_R
 ---
 
 # RestoreSummary
-<a name="API_RestoreSummary"></a>
 
 Contains details for the restore.
 

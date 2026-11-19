@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # Original RAG template (no guardrails)
-<a name="original-template"></a>
 
 In this template, no security guardrails are applied.
 

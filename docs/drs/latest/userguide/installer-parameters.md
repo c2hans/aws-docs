@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/installer-parameter
 ---
 
 # AWS Replication Agent Installer parameters
-<a name="installer-parameters"></a>
 
 The AWS Replication Agent Installer supports the following command line parameters.
 

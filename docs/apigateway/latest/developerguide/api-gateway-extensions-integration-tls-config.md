@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-integration.tlsConfig object
-<a name="api-gateway-extensions-integration-tls-config"></a>
 
 Specifies the TLS configuration for an integration.
 

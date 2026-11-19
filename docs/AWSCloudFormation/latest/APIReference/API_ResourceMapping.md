@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ResourceMapping
-<a name="API_ResourceMapping"></a>
 
 Specifies the current source of the resource and the destination of where it will be moved to.
 

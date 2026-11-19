@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGlueServiceNotebookRole
-<a name="AWSGlueServiceNotebookRole"></a>
 
 **Description**: Policy for AWS Glue service role which allows customer to manage notebook server
 

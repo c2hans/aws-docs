@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListAnal
 ---
 
 # ListAnalyticsDataAssociations
-<a name="API_ListAnalyticsDataAssociations"></a>
 
 Lists the association status of requested dataset ID for a given Connect Customer instance.
 

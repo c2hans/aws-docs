@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Pipeli
 ---
 
 # Pipeline
-<a name="API_Pipeline"></a>
 
 A SageMaker Model Building Pipeline instance.
 

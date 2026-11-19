@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Can a presigned request be used multiple times? Is that a security risk?
 <a name="can-a-presigned-request-be-used-multiple-times--is-that-a-security-risk-.1c00d6ea-f0b5-592e-9f67-48e86af7e169"></a>

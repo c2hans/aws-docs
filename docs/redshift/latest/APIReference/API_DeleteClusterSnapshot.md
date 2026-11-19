@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteC
 ---
 
 # DeleteClusterSnapshot
-<a name="API_DeleteClusterSnapshot"></a>
 
 Deletes the specified manual snapshot. The snapshot must be in the `available` state, with no other users authorized to access the snapshot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk adds support for decoupling a database running in an Elastic Beanstalk environment on October 6, 2021
-<a name="release-2021-10-06-db-decoupling"></a>
 
 AWS Elastic Beanstalk added support for decoupling a database running in an Elastic Beanstalk environment.
 

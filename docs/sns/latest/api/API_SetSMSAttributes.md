@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_SetSMSAttributes.html
 ---
 
 # SetSMSAttributes
-<a name="API_SetSMSAttributes"></a>
 
 Use this request to set the default settings for sending SMS messages and receiving daily SMS usage reports.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mainten
 ---
 
 # Tutorial: View information about maintenance windows using the AWS CLI
-<a name="maintenance-windows-cli-tutorials-describe"></a>
 
 This tutorial includes commands to help you update or get information about your maintenance windows, tasks, executions, and invocations. The examples are organized by command to demonstrate how to use command options to filter for the type of detail you want to see.
 

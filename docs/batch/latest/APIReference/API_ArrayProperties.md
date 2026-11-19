@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ArrayPrope
 ---
 
 # ArrayProperties
-<a name="API_ArrayProperties"></a>
 
 An object that represents an AWS Batch array job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/samba-packages-al2023.ht
 ---
 
 # Samba packages for AL2023
-<a name="samba-packages-al2023"></a>
 
 ## Samba packages
 <a name="samba-packages"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # TagCondition
-<a name="API_amazon-q-connect_TagCondition"></a>
 
 A leaf node condition which can be used to specify a tag condition.
 

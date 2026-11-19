@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/api-reques
 ---
 
 # Making API Requests for Domain Registration and for Route 53 Resolver
-<a name="api-requests-rpc"></a>
 
 **Topics**
 + [RPC Requests](api-requests-rpc-overview.md)

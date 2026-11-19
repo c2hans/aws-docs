@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Retrievers for RAG workflows
-<a name="rag-custom-retrievers"></a>
 
 This section explains how to build a retriever. You can use a fully managed semantic search solution, such as Amazon Kendra, or you can build a custom semantic search by using an AWS vector database.
 

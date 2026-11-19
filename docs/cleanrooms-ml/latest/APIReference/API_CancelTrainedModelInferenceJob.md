@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ca
 ---
 
 # CancelTrainedModelInferenceJob
-<a name="API_CancelTrainedModelInferenceJob"></a>
 
 Submits a request to cancel a trained model inference job.
 

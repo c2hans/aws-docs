@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListExecutions
-<a name="API_DataExports_ListExecutions"></a>
 
 Lists the historical executions for the export.
 

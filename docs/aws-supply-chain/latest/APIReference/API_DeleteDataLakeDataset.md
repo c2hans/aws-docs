@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DeleteDataLakeDataset
-<a name="API_DeleteDataLakeDataset"></a>
 
 Enables you to programmatically delete an AWS Supply Chain data lake dataset. Developers can delete the existing datasets for a given instance ID, namespace, and instance name.
 

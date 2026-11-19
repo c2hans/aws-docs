@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceSystemAssociatedMetadata
-<a name="API_ServiceSystemAssociatedMetadata"></a>
 
 Metadata for a service system associated event.
 

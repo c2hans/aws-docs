@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-list-accou
 ---
 
 # Listing ACME accounts
-<a name="sdk-acme-list-accounts"></a>
 
 The following example shows how to use the [ListAcmeAccounts](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeAccounts.html) function.
 

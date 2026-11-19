@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-api-referen
 ---
 
 # API reference
-<a name="acxd-api-reference"></a>
 
 All operations follow the Command pattern. Import the client and the command, then call client.send(command).
 

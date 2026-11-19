@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # StartTelemetryEvaluation
-<a name="API_StartTelemetryEvaluation"></a>
 
  This action begins onboarding the caller AWS account to the telemetry config feature.
 

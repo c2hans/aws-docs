@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Pre-defined data masking functions
-<a name="AuroraPostgreSQL.Security.DynamicMasking.PredefinedMaskingFunctions"></a>
 
 `pg_columnmask` extension provides built-in utility functions written in C language (for faster execution) which can be used as masking expression for `pg_columnmask` policies.
 

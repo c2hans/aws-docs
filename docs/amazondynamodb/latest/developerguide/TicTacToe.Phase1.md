@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tic
 ---
 
 # Step 1: Deploy and test locally
-<a name="TicTacToe.Phase1"></a>
 
 **Topics**
 + [1.1: Download and install the required packages](#TicTacToe.Phase1.InstallApp)

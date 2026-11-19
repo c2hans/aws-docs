@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Detection
-<a name="detection"></a>
 
  An alert is the main component of the detection phase. It generates a notification to initiate the incident response process based on AWS account activity of interest.
 

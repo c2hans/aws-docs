@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/graphical-desktop-al2023
 ---
 
 # AL2023 Graphical Desktop
-<a name="graphical-desktop-al2023"></a>
 
 Amazon Linux 2023 provides an optional, lightweight, cloud-optimized graphical interface based on GNOME as of release 2023.7. This modern desktop environment delivers enhanced productivity features with built-in tools like Firefox for secure browsing, while maintaining Amazon DCV and VNC support for remote access.
 

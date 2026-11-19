@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Aggregated
 ---
 
 # AggregatedUtterancesSortBy
-<a name="API_AggregatedUtterancesSortBy"></a>
 
 Specifies attributes for sorting a list of utterances.
 

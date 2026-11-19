@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 ---
 
 # Migrate user Lambda trigger
-<a name="user-pool-lambda-migrate-user"></a>
 
 When a user doesn't exist in the user pool at sign-in with a password, or in the forgot-password flow, Amazon Cognito invokes this trigger. After the Lambda function returns successfully, Amazon Cognito creates the user in the user pool. For details on the authentication flow with the user migration Lambda trigger, see [Importing users with a user migration Lambda trigger](cognito-user-pools-import-using-lambda.md).
 

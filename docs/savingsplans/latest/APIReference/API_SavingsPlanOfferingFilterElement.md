@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_Sav
 ---
 
 # SavingsPlanOfferingFilterElement
-<a name="API_SavingsPlanOfferingFilterElement"></a>
 
 Information about a Savings Plan offering filter.
 

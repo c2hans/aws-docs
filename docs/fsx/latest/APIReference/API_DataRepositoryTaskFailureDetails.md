@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DataReposito
 ---
 
 # DataRepositoryTaskFailureDetails
-<a name="API_DataRepositoryTaskFailureDetails"></a>
 
 Provides information about why a data repository task failed. Only populated when the task `Lifecycle` is set to `FAILED`.
 

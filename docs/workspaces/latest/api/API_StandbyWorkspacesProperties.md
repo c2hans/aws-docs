@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_StandbyWorkspa
 ---
 
 # StandbyWorkspacesProperties
-<a name="API_StandbyWorkspacesProperties"></a>
 
 Describes the properties of the related standby WorkSpaces.
 

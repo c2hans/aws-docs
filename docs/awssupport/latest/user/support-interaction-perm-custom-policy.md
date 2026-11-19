@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-interacti
 ---
 
 # Option 2: Create a custom policy with minimum required permissions
-<a name="support-interaction-perm-custom-policy"></a>
 
 You can explicitly allow-list specific actions instead of using wildcards. The following are the required permissions for support interactions, case creation, and case management:
 

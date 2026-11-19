@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_UntagRes
 ---
 
 # UntagResource
-<a name="API_control_UntagResource"></a>
 
 This operation removes the specified user-defined tags from an S3 resource. You can pass one or more tag keys.
 

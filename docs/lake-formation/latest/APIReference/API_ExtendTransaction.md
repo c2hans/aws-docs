@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_E
 ---
 
 # ExtendTransaction
-<a name="API_ExtendTransaction"></a>
 
 Indicates to the service that the specified transaction is still active and should not be treated as idle and aborted.
 

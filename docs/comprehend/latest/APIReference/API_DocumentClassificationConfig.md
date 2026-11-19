@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentClassificationConfig
-<a name="API_DocumentClassificationConfig"></a>
 
 Configuration required for a document classification model.
 

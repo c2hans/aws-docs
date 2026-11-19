@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Patching
-<a name="patching"></a>
 
  Organizations can automate their patching strategy for mutable compute environments and keep mutable instances in-line with the defined patch baseline of that application environment by using AWS Systems Manager Patch Manager and AWS Lambda. A tagging strategy for mutable instances within these environments can be managed by assigning said instances to **Patch Groups** and **Maintenance Windows**. See the following examples for a Dev → Test → Prod split. AWS prescriptive guidance is available for the [patch management of mutable instances.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patch-management-hybrid-cloud/welcome.html)
 

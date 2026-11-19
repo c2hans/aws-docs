@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # CreateEndpointDetails
-<a name="API_CreateEndpointDetails"></a>
 
 Endpoint definition used for creating a dataflow endpoint
 

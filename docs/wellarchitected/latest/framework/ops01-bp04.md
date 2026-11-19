@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops01-b
 ---
 
 # OPS01-BP04 Develop distributed tracing
-<a name="ops01-bp04"></a>
 
  Distributed tracing follows one request as it moves through the services that handle it. In a distributed system, multiple services handle each user action, so a slowdown or failure in any one of them affects the result. Tracing links each service's work into one end-to-end timeline, so you can see where time is spent or where the request fails.
 

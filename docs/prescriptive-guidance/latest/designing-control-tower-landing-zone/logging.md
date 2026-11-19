@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Logging
-<a name="logging"></a>
 
 The Log Archive account serves as a centralized repository for aggregating logs of API activities (by using AWS CloudTrail) and resource configurations (by using AWS Config) across all accounts within the landing zone. Furthermore, you can centralize other logs from across your organization, such as Amazon CloudWatch, Amazon S3 access logs, and VPC Flow Logs, in this account. The Log Archive account seamlessly integrates with AWS Control Tower to automatically capture and record actions and events. This includes actions initiated from both the management account and member accounts. For comprehensive guidance, see [Logging and monitoring in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/logging-and-monitoring.html) in the AWS Control Tower documentation.
 

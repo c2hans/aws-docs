@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Web
 ---
 
 # WebhookDefinition
-<a name="API_WebhookDefinition"></a>
 
 Represents information about a webhook and its definition.
 

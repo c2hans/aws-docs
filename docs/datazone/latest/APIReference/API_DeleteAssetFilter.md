@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAssetFilter
-<a name="API_DeleteAssetFilter"></a>
 
 Deletes an asset filter.
 

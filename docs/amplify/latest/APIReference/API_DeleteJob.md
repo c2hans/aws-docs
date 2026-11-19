@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_DeleteJo
 ---
 
 # DeleteJob
-<a name="API_DeleteJob"></a>
 
 Deletes a job for a branch of an Amplify app.
 

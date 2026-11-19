@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ListFirewallRules
-<a name="API_route53globalresolver_ListFirewallRules"></a>
 
 Lists all DNS firewall rules for a DNS view with pagination support.
 

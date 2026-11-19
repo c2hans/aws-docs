@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/container.html
 ---
 
 # Using AL2023 in containers
-<a name="container"></a>
 
 **Note**
  For more information about how to use AL2023 to host containerized workloads on Amazon ECS, see [AL2023 for Amazon ECS container hosts](ecs.md).

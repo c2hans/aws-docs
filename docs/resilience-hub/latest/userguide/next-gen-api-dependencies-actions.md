@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Dependencies
-<a name="next-gen-api-dependencies-actions"></a>
 
 | Action | Method | Description |
 | --- | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hot.html
 ---
 
 # .hot
-<a name="hot"></a>
 
 Used for websites featuring trending topics, popular content, or time-sensitive offers.
 

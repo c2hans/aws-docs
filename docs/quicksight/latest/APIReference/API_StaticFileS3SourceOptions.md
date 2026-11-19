@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Stati
 ---
 
 # StaticFileS3SourceOptions
-<a name="API_StaticFileS3SourceOptions"></a>
 
 The structure that contains the Amazon S3 location to download the static file from.
 

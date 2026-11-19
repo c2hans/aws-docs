@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/run-diff-
 ---
 
 # Run a differential code scan with S3
-<a name="run-diff-scan-s3"></a>
 
 Run a differential (diff) code scan to analyze only the changed lines in your source code, rather than performing a full repository scan. Differential scans are faster than full scans and produce findings targeted to specific code changes, making them ideal for pre-merge validation in development workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Run automation from console
-<a name="run-automation-from-console"></a>
 
 The Cloud Migration Factory on AWS solution provides an automation engine allowing users to run jobs in the form of scripts against the inventory within the datastore. With this feature, you can manage, customize, and deploy all automations required to complete the end-to-end migration activities.
 

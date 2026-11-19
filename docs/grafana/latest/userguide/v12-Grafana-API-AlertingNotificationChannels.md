@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-Grafana-API
 ---
 
 # Alerting Notification Channels API
-<a name="v12-Grafana-API-AlertingNotificationChannels"></a>
 
 Use the Alerting Notification Channels API to create, update, delete, and retrieve notification channels.
 

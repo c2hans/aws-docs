@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.EAC.5] Integrate technical and operational documentation into the development lifecycle
-<a name="dl.eac.5-integrate-technical-and-operational-documentation-into-the-development-lifecycle"></a>
 
  **Category:** RECOMMENDED
 

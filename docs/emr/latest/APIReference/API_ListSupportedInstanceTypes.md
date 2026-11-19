@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ListSupporte
 ---
 
 # ListSupportedInstanceTypes
-<a name="API_ListSupportedInstanceTypes"></a>
 
 A list of the instance types that Amazon EMR supports. You can filter the list by AWS Region and Amazon EMR release.
 

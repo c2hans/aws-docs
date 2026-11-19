@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ErrorDetails
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 Error details.
 

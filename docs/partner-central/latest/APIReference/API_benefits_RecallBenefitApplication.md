@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RecallBenefitApplication
-<a name="API_benefits_RecallBenefitApplication"></a>
 
 Recalls a submitted benefit application, returning it to draft status for further modifications.
 

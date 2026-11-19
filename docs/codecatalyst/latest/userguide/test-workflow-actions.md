@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/test-workf
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Testing with workflows
-<a name="test-workflow-actions"></a>
 
 In CodeCatalyst, you can run tests as part of different workflow actions, such as build and test. These workflow actions can all generate quality reports. A *test action* is a workflow action that produces test, code coverage, software composition analysis, and static analysis reports. These reports are displayed in the CodeCatalyst console.
 

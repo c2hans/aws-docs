@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Usage.html
 ---
 
 # Usage
-<a name="API_Usage"></a>
 
 Contains usage information about the cost of Amazon Inspector operation.
 

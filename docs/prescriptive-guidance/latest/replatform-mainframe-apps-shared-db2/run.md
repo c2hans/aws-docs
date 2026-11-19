@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Running
-<a name="run"></a>
 
 To ensure optimal performance and low latency between your cloud-based application and your on-premises database, we recommend that you implement [AWS Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html). This service provides a dedicated network connection between AWS and your organization's data center, and offers more consistent network performance and reduced latency compared with internet-based connections. This is particularly crucial for database operations that require quick response times.
 

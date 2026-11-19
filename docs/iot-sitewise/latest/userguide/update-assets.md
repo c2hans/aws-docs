@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-ass
 ---
 
 # Update assets in AWS IoT SiteWise
-<a name="update-assets"></a>
 
 You can use the AWS IoT SiteWise console or API to update an asset's name.
 

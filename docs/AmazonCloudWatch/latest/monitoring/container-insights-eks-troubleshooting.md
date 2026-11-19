@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Troubleshooting Container Insights on Amazon EKS
-<a name="container-insights-eks-troubleshooting"></a>
 
 This section covers common issues that you might encounter when you set up or operate Container Insights on Amazon EKS. Use the following tables and diagnostic commands to identify and resolve problems regardless of whether you use the OTel or Classic approach.
 

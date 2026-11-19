@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_P
 ---
 
 # PointInTimeRecoverySpecification
-<a name="API_PointInTimeRecoverySpecification"></a>
 
 Represents the settings used to enable point in time recovery.
 

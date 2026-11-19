@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/directory
 ---
 
 # Directory operations
-<a name="directory-operations"></a>
 
 S3 Transfer Manager can handle entire directory transfers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/attribute-trans-inva
 ---
 
 # Invalid inputs
-<a name="attribute-trans-invalid"></a>
 
 The following example shows an invalid input. In this case, the JSON object passes too many items to a SIP media application.
 

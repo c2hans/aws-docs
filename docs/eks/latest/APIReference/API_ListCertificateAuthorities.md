@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListCertific
 ---
 
 # ListCertificateAuthorities
-<a name="API_ListCertificateAuthorities"></a>
 
 Lists the certificate authorities (CAs) for your cluster. A cluster has at most two certificate authorities: the outgoing CA that's currently signing and, during a rotation, one successor CA.
 

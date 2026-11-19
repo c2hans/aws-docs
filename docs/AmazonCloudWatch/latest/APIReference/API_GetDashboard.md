@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # GetDashboard
-<a name="API_GetDashboard"></a>
 
 Displays the details of the dashboard that you specify.
 

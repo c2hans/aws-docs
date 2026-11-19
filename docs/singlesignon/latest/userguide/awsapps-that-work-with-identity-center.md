@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-th
 ---
 
 # AWS managed applications that you can use with IAM Identity Center
-<a name="awsapps-that-work-with-identity-center"></a>
 
 IAM Identity Center lets you connect your existing identity source or create users once. This enables application administrators to manage access to the following AWS managed applications without separate federation or user and group synchronization.
 

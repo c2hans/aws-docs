@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/suspend-resume
 ---
 
 # Considerations for suspending processes
-<a name="suspend-resume-considerations"></a>
 
 Consider the following before suspending processes:
 + Suspending `AlarmNotification` allows you to temporarily stop the group's target tracking, step, and simple scaling policies without deleting the scaling policies or their associated CloudWatch alarms. To temporarily stop individual scaling policies instead, see [Disable a scaling policy for an Auto Scaling group](as-enable-disable-scaling-policy.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Sched
 ---
 
 # ScheduleRunConfiguration
-<a name="API_ScheduleRunConfiguration"></a>
 
 Represents the settings for a run. Includes things like location, radio states, auxiliary apps, and network profiles.
 

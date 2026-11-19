@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RfcCorrespondence
-<a name="API_RfcCorrespondence"></a>
 
 The RFC correspondence structure.
 

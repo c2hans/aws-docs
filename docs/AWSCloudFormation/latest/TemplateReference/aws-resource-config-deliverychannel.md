@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Config::DeliveryChannel
-<a name="aws-resource-config-deliverychannel"></a>
 
 Specifies a delivery channel object to deliver configuration information to an Amazon S3 bucket and Amazon SNS topic.
 

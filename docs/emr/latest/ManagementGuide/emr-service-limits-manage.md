@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-service-l
 ---
 
 # Manage Amazon EMR Service Quotas
-<a name="emr-service-limits-manage"></a>
 
 **Topics**
 + [What are Amazon EMR Service Quotas](emr-service-limits-what-are.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this solution. As of this revision, the cost for running this solution with the default settings in the default US East (N. Virginia) Region is approximately **$605.13 per month**.
 

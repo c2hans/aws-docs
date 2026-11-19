@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_FieldFor
 ---
 
 # FieldForReranking
-<a name="API_FieldForReranking"></a>
 
 Specifies a field to be used during the reranking process in a Knowledge Base vector search. This structure identifies metadata fields that should be considered when reordering search results to improve relevance.
 

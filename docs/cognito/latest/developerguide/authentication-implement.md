@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/authentica
 ---
 
 # Implement authentication flows
-<a name="authentication-implement"></a>
 
 Whether you're implementing [managed login](authentication-flows-selection-managedlogin.md) or a [custom-built application front end](authentication-flows-selection-sdk.md) with an AWS SDK for authentication, you must configure your app client for the types of authentication that you want to implement. The following information describes setup for authentication flows in your [app clients](user-pool-settings-client-apps.md) and your application.
 

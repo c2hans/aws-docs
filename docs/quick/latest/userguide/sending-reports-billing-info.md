@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sending-reports-b
 ---
 
 # How billing works for email reports
-<a name="sending-reports-billing-info"></a>
 
 Authors and admins can receive any number of email reports at no extra charge.
 

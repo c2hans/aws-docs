@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threa
 ---
 
 # Ingesting CTI
-<a name="architecture-ingest-cti"></a>
 
 The first step in the ingestion process is to convert the cyber threat intelligence (CTI) data from the threat feeds into a format that your threat intelligence platform can ingest. This is called *CTI conversion*. Threat feed data can come in a range of formats, such as [Structured Threat Information Expression (STIX)](https://oasis-open.github.io/cti-documentation/stix/intro.html). You must restructure the incoming data into a predictable and easily consumable format that is suitable for the security products you are using in your AWS environment.
 

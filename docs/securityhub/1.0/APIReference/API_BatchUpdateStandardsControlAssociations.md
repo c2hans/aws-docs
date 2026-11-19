@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchUp
 ---
 
 # BatchUpdateStandardsControlAssociations
-<a name="API_BatchUpdateStandardsControlAssociations"></a>
 
  For a batch of security controls and standards, this operation updates the enablement status of a control in a standard.
 

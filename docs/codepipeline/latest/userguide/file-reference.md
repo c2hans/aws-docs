@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/file-refer
 ---
 
 # Image definitions file reference
-<a name="file-reference"></a>
 
 This section is a reference only. For information about creating a pipeline with source or deploy actions for containers, see [Create a pipeline, stages, and actions](pipelines-create.md).
 

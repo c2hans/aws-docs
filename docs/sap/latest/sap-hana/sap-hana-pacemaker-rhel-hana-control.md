@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # SAP HANA Service Control
-<a name="sap-hana-pacemaker-rhel-hana-control"></a>
 
 Modify how SAP HANA services are managed to enable cluster takeover and operation.
 

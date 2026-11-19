@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-batch-api-actions.html
 ---
 
 # Amazon SNS message batching
-<a name="sns-batch-api-actions"></a>
 
 ## What is message batching?
 <a name="what-is-message-batching"></a>

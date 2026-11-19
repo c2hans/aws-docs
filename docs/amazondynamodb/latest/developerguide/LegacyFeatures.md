@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Leg
 ---
 
 # Legacy features of DynamoDB
-<a name="LegacyFeatures"></a>
 
 The following topics are legacy features that DynamoDB still supports. No active development is made on these features.
 

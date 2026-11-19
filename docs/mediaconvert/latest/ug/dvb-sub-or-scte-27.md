@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/dvb-sub-or-scte-2
 ---
 
 # DVB-Sub input captions
-<a name="dvb-sub-or-scte-27"></a>
 
 MediaConvert supports DVB-Sub only in TS inputs.
 

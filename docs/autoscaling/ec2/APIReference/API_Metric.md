@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Metric.
 ---
 
 # Metric
-<a name="API_Metric"></a>
 
 Represents a specific metric.
 

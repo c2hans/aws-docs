@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # SQL functions reference
-<a name="aurora-analytics-sql-functions-reference"></a>
 
 These functions let you inspect analytics query performance, resource usage, and cache state, and manage foreign table definitions. Before you use them, install the extension. Run `CREATE EXTENSION aurora_analytics` in each database where you want to use analytics.
 

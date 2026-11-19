@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-m
 ---
 
 # Understand the results of an automatic evaluation job
-<a name="clarify-foundation-model-evaluate-auto-ui-results"></a>
 
 When you automatic model evaluation job completes the results are saved in Amazon S3. The sections below describe the files generated and how to interpret them.
 

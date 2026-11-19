@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppIntegrations::Application
-<a name="aws-resource-appintegrations-application"></a>
 
 Creates and persists an Application resource.
 
@@ -24,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ApplicationConfig](#cfn-appintegrations-application-applicationconfig)" : {{ApplicationConfig}},
       "[ApplicationSourceConfig](#cfn-appintegrations-application-applicationsourceconfig)" : {{ApplicationSourceConfig}},
       "[ApplicationType](#cfn-appintegrations-application-applicationtype)" : {{String}},
+      "[AuthConfig](#cfn-appintegrations-application-authconfig)" : {{AuthConfig}},
       "[Description](#cfn-appintegrations-application-description)" : {{String}},
       "[IframeConfig](#cfn-appintegrations-application-iframeconfig)" : {{IframeConfig}},
       "[InitializationTimeout](#cfn-appintegrations-application-initializationtimeout)" : {{Integer}},
@@ -47,6 +47,8 @@ Properties:
   [ApplicationSourceConfig](#cfn-appintegrations-application-applicationsourceconfig): {{
     ApplicationSourceConfig}}
   [ApplicationType](#cfn-appintegrations-application-applicationtype): {{String}}
+  [AuthConfig](#cfn-appintegrations-application-authconfig): {{
+    AuthConfig}}
   [Description](#cfn-appintegrations-application-description): {{String}}
   [IframeConfig](#cfn-appintegrations-application-iframeconfig): {{
     IframeConfig}}
@@ -79,7 +81,13 @@ The configuration for where the application should be loaded from.
 The type of application.
 *Required*: No
 *Type*: String
-*Allowed values*: `STANDARD | SERVICE | MCP_SERVER`
+*Allowed values*: `STANDARD | SERVICE | MCP_SERVER | A2A_SERVER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`AuthConfig`  <a name="cfn-appintegrations-application-authconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [AuthConfig](aws-properties-appintegrations-application-authconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-appintegrations-application-description"></a>
@@ -159,3 +167,9 @@ The Amazon Resource Name (ARN) of the Application.
 
 `Id`  <a name="Id-fn::getatt"></a>
 A unique identifier for the Application.
+
+`LastModifiedRegion`  <a name="LastModifiedRegion-fn::getatt"></a>
+Property description not available.
+
+`LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
+The time when the application was last modified.

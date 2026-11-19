@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Target state architecture
-<a name="transform-vmware-target-state-architecture"></a>
 
 AWS Transform can draft a target state architecture and a detailed design for each application that you plan to migrate. The design follows lift-and-shift migration patterns. AWS Transform starts from an infrastructure document that describes the application. From that document, it answers a discovery questionnaire, draws the target architecture, and writes a Detailed Design Document. You review each output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel05.h
 ---
 
 # Design interactions in a distributed system to mitigate or withstand failures
-<a name="rel05"></a>
 
  Distributed systems connect their components over networks, and networks lose packets, add latency, and fail in ways a single machine never does. A component that assumes every call succeeds passes its own failure on to everything that depends on it, and a small impairment spreads outward until the whole workload is affected. Designing each interaction to expect failure is what keeps one struggling dependency from taking the rest of the system down with it.
 

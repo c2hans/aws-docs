@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::DataSource
-<a name="aws-resource-bedrock-datasource"></a>
 
 **Important**
 Properties with `__Update requires: Replacement__` can result in the creation of a new data source and deletion of the old one. This can happen if you also change the Name of the data source.

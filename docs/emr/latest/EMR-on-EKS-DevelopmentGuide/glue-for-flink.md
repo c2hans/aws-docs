@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/g
 ---
 
 # Using AWS Glue with Flink
-<a name="glue-for-flink"></a>
 
 Amazon EMR on EKS with Apache Flink releases 6.15.0 and higher supports using the AWS Glue Data Catalog as a metadata store for streaming and batch SQL workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_FunctionVersionsBy
 ---
 
 # FunctionVersionsByCapacityProviderListItem
-<a name="API_FunctionVersionsByCapacityProviderListItem"></a>
 
 Information about a function version that uses a specific capacity provider, including its ARN and current state.
 

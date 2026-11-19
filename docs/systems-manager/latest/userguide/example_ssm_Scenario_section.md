@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Learn the basics of Systems Manager with an AWS SDK
-<a name="example_ssm_Scenario_section"></a>
 
 The following code examples show how to:
 + Create a maintenance window.

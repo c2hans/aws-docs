@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/iam-examp
 ---
 
 # Managing IAM users with AWS SDK for PHP Version 3
-<a name="iam-examples-managing-users"></a>
 
 An IAM user is an entity that you create in AWS to represent the person or service that uses it to interact with AWS. A user in AWS consists of a name and credentials.
 

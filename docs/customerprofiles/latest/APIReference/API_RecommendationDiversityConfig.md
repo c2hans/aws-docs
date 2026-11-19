@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # RecommendationDiversityConfig
-<a name="API_connect-customer-profiles_RecommendationDiversityConfig"></a>
 
 Runtime diversity configuration for a `GetProfileRecommendations` request.
 

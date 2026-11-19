@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/edit-ai
 ---
 
 # Managing your payments in India
-<a name="edit-aispl-payment-method"></a>
 
 If your account is with AWS India, follow the procedures in this topic to manage your payment methods and make payments. For more information about whether your account is with AWS or AWS India, see [Finding the seller of record](finding-the-seller-of-record.md).
 

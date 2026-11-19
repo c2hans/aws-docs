@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # WorkloadSummary
-<a name="API_WorkloadSummary"></a>
 
 A workload summary return object.
 

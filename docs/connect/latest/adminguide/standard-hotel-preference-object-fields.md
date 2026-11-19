@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-hotel
 ---
 
 # Customer Profiles standard hotel preference object fields
-<a name="standard-hotel-preference-object-fields"></a>
 
 The following table lists all the fields in the Customer Profiles standard hotel preference object.
 

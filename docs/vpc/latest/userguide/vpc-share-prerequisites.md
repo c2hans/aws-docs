@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-share-prerequis
 ---
 
 # Shared subnet prerequisites
-<a name="vpc-share-prerequisites"></a>
 
 This section contains prerequisites for working with shared subnets:
 + The accounts for the VPC owner and participant must be managed by AWS Organizations.

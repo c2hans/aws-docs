@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Custom grant actions
-<a name="omni-custom-grant-actions"></a>
 
 A Custom grant allows exactly the actions you list. Nothing is added by default. Each action is named `service:Action`, such as `cloudwatch:GetAlert`. When you choose `Custom` in the add-grants form, the `Select actions` drawer groups the actions of each service into `Read`, `Write`, and `Permissions management`, the same way the IAM console does. Use this page to decide which actions a member needs for a task, and to see what each action allows. For the add-grants procedure, see [Manage space members and permissions](omni-manage-space-members-and-permissions.md).
 

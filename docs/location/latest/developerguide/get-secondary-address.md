@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-secon
 ---
 
 # How to get secondary addresses
-<a name="get-secondary-address"></a>
 
 `SecondaryAddresses` allows you to retrieve all secondary addresses that are under a main address. Additionally, `Geocode` also returns secondary units, if any are present within the `QueryText`.
 

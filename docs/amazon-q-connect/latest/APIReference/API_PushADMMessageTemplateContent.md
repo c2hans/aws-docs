@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # PushADMMessageTemplateContent
-<a name="API_amazon-q-connect_PushADMMessageTemplateContent"></a>
 
 The content of the push message template that applies to ADM (Amazon Device Messaging) notification service.
 

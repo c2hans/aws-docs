@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/getting-started-r
 ---
 
 # Related resources
-<a name="getting-started-related-resources"></a>
 
 The following resources can help you as you work with AWS Elemental MediaConnect:
 + [Using MediaConnect flows](using-mediaconnect-flows.md) – Learn more about creating, replicating, and sharing flows.

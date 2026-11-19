@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Define release criteria
-<a name="rairc01"></a>
 
 | RAIRC01: How will you define release criteria? |
 | --- |

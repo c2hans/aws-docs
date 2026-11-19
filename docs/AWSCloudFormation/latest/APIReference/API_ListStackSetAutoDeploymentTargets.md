@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListStackSetAutoDeploymentTargets
-<a name="API_ListStackSetAutoDeploymentTargets"></a>
 
 Returns summary information about deployment targets for a StackSet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/datasync-large
 ---
 
 # Monitoring your transfers
-<a name="datasync-large-migration-monitoring"></a>
 
 AWS DataSync provides several monitoring options to help you validate and debug your transfer.
 

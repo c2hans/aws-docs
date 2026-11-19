@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Mainframe modernization: Decoupling patterns for migrating application code
-<a name="introduction"></a>
 
 *Krithika Palani Selvam and Kevin Yung, Amazon Web Services*
 

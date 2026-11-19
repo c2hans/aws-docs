@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/create-tgw-cli-api.htm
 ---
 
 # Create an AWS Site-to-Site VPN transit gateway connection using the CLI or API
-<a name="create-tgw-cli-api"></a>
 
 ## Create a VPN connection to Transit Gateway using the CLI
 <a name="tgw-vpn-cli-examples"></a>

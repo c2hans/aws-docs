@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_OidcOptio
 ---
 
 # OidcOptions
-<a name="API_OidcOptions"></a>
 
 Describes the options for an OpenID Connect-compatible user-identity trust provider.
 

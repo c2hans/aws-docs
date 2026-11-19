@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Bat
 ---
 
 # BatchDisassociateDataSegmentsFromDataset
-<a name="API_BatchDisassociateDataSegmentsFromDataset"></a>
 
 Disassociates a batch of data segments from a curated dataset. Disassociating a data segment doesn't delete the underlying data in the source session dataset.
 

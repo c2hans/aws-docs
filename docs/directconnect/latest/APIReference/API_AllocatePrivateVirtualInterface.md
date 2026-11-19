@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Al
 ---
 
 # AllocatePrivateVirtualInterface
-<a name="API_AllocatePrivateVirtualInterface"></a>
 
 Provisions a private virtual interface to be owned by the specified AWS account.
 

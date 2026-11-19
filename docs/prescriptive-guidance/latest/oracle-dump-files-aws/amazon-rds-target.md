@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 ---
 
 # Amazon RDS for Oracle as the target
-<a name="amazon-rds-target"></a>
 
 If your target database is an Amazon RDS for Oracle instance, make sure that the instance has an IAM role with permissions to read and write files in the Amazon S3 bucket. For more information about Amazon S3 integration with Amazon RDS for Oracle instances, see the [AWS documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-s3-integration.html).
 

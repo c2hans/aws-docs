@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/scope-by-feature.htm
 ---
 
 # Scope of processing by feature
-<a name="scope-by-feature"></a>
 
 The SCTE 35 features that you can implement in a MediaLive channel have different scopes in terms of the output groups and outputs that they affect:
 

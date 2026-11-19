@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rollbar-connection-option
 ---
 
 # Rollbar connection options
-<a name="rollbar-connection-options"></a>
 
 The following are connection options for Rollbar:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Rollbar object to read.

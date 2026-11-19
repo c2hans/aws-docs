@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengr
 ---
 
 # What is a golden image?
-<a name="overview"></a>
 
 A golden image is a snapshot of software used to flash or provision many devices. Here are some examples of golden images in other domains that you might already be familiar with:
 + **Raspberry Pi**: The [Raspberry Pi OS ISO files](https://www.raspberrypi.com/software/operating-systems/) that you can download and use to flash the Raspberry Pi SD card.

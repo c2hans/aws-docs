@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Access control
-<a name="gamesec04"></a>
 
 |  GAMESEC04: How do you block unauthorized access to game content?  |
 | --- |

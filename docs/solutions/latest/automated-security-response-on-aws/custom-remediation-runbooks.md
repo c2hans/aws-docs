@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Custom remediation runbooks
-<a name="custom-remediation-runbooks"></a>
 
 The solution ships built-in remediations for the controls listed in [Playbooks](playbooks-1.md). To remediate a control that the solution does not already cover, you can add your own remediation runbook. You don’t need to modify the solution’s source. For the authoring workflow and tooling, see [AI Toolkit for Custom Remediations](adding-new-remediations.md#ai-toolkit-for-custom-remediations).
 

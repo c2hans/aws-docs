@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_St
 ---
 
 # StreamFilters
-<a name="API_StreamFilters"></a>
 
 Object specifying the stream attribute on which to filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Option
 ---
 
 # Oracle UTL\_MAIL
-<a name="Oracle.Options.UTLMAIL"></a>
 
 Amazon RDS supports Oracle UTL\_MAIL through the use of the UTL\_MAIL option and SMTP servers. You can send email directly from your database by using the UTL\_MAIL package. Amazon RDS supports UTL\_MAIL for the following versions of Oracle:
 + Oracle Database 21c (21.0.0.0), all versions

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-using-sdk-jav
 ---
 
 # Create a stream using the APIs
-<a name="kinesis-using-sdk-java-create-stream"></a>
 
 Use the following steps to create your Kinesis data stream.
 

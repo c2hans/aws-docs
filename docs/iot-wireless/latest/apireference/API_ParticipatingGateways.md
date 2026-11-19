@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Par
 ---
 
 # ParticipatingGateways
-<a name="API_ParticipatingGateways"></a>
 
 Specify the list of gateways to which you want to send downlink data traffic when the wireless device is running in class B or class C mode.
 

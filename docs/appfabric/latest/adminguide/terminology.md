@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/terminology.
 ---
 
 # Terminology and concepts in AppFabric
-<a name="terminology"></a>
 
 This topic describes the key terminology and concepts in AWS AppFabric to help you get started.
 

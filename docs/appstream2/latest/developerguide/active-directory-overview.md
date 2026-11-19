@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/active-
 ---
 
 # Overview of Active Directory Domains
-<a name="active-directory-overview"></a>
 
 Using Active Directory domains with WorkSpaces Applications requires an understanding of how they work together and the configuration tasks that you'll need to complete. You'll need to complete the following tasks:
 

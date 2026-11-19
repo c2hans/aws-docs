@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/cisco-webex-meeti
 ---
 
 # Cisco Webex Meetings integration
-<a name="cisco-webex-meetings-integration"></a>
 
 With the Cisco Webex Meetings connector, you can schedule and manage meetings, retrieve recordings, and access participant information directly in AWS Quick through natural language.
 

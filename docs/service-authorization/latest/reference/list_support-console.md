@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Support Console
-<a name="list_support-console"></a>
 
 AWS Support Console (service prefix: `support-console`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

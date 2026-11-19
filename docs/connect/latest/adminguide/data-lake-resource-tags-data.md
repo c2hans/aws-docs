@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-reso
 ---
 
 # Resource tags data in the Connect Customer data lake
-<a name="data-lake-resource-tags-data"></a>
 
 The following table contains resource tag data.
 

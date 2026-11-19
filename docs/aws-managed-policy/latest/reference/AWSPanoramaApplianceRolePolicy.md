@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPanoramaApplianceRolePolicy
-<a name="AWSPanoramaApplianceRolePolicy"></a>
 
 **Description**: Allows AWS IoT software on an AWS Panorama Appliance to upload logs to Amazon CloudWatch.
 

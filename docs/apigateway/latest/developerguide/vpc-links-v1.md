@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/vpc-lin
 ---
 
 # Private integration using VPC links V1 (legacy)
-<a name="vpc-links-v1"></a>
 
 **Note**
 The following implementation of private integrations uses VPC links V1. VPC links V1 are legacy resources. We recommend that you use [VPC links V2 for REST APIs](apigateway-vpc-links-v2.md).

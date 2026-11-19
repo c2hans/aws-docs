@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 ---
 
 # Permissions and policies
-<a name="device-advisor-tests-permissions-policies"></a>
 
 You can use the following tests to determine if the policies attached to your devices’ certificates follow standard best practices.
 

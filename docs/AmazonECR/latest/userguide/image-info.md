@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-info.ht
 ---
 
 # Viewing image details in Amazon ECR
-<a name="image-info"></a>
 
 After you push an image to your repository, you can view information about it. The details included are as follows:
 + Image URI

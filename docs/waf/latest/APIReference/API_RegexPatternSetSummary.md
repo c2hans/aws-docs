@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RegexPattern
 ---
 
 # RegexPatternSetSummary
-<a name="API_RegexPatternSetSummary"></a>
 
 High-level information about a [RegexPatternSet](API_RegexPatternSet.md), returned by operations like create and list. This provides information like the ID, that you can use to retrieve and manage a `RegexPatternSet`, and the ARN, that you provide to the [RegexPatternSetReferenceStatement](API_RegexPatternSetReferenceStatement.md) to use the pattern set in a [Rule](API_Rule.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-records-e
 ---
 
 # Flow log record examples
-<a name="flow-logs-records-examples"></a>
 
 The following are examples of flow log records that capture specific traffic flows.
 

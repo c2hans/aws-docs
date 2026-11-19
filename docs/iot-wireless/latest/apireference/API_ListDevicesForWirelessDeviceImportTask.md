@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListDevicesForWirelessDeviceImportTask
-<a name="API_ListDevicesForWirelessDeviceImportTask"></a>
 
 List the Sidewalk devices in an import task and their onboarding status.
 

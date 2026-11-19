@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Descri
 ---
 
 # DescribeCustomRoutingEndpointGroup
-<a name="API_DescribeCustomRoutingEndpointGroup"></a>
 
 Describe an endpoint group for a custom routing accelerator.
 

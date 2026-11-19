@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-cilium
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure Cilium BGP for hybrid nodes
-<a name="hybrid-nodes-cilium-bgp"></a>
 
 This topic describes how to configure Cilium Border Gateway Protocol (BGP) for Amazon EKS Hybrid Nodes. Cilium’s BGP functionality is called [Cilium BGP Control Plane](https://docs.cilium.io/en/stable/network/bgp-control-plane/bgp-control-plane/) and can be used to advertise pod and service addresses to your on-premises network. For alternative methods to make pod CIDRs routable on your on-premises network, see [Routable remote Pod CIDRs](hybrid-nodes-concepts-kubernetes.md#hybrid-nodes-concepts-k8s-pod-cidrs).
 

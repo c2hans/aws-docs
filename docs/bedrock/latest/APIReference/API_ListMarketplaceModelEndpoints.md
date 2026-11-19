@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListMark
 ---
 
 # ListMarketplaceModelEndpoints
-<a name="API_ListMarketplaceModelEndpoints"></a>
 
 Lists the endpoints for models from Amazon Bedrock Marketplace in your AWS account.
 

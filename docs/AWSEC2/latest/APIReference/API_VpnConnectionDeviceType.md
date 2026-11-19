@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpnConnec
 ---
 
 # VpnConnectionDeviceType
-<a name="API_VpnConnectionDeviceType"></a>
 
 List of customer gateway devices that have a sample configuration file available for use. You can also see the list of device types with sample configuration files available under [Your customer gateway device](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html) in the * AWS Site-to-Site VPN User Guide*.
 

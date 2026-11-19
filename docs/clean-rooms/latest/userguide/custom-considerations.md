@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/custom-cons
 ---
 
 # Considerations and limitations
-<a name="custom-considerations"></a>
 
 AWS Clean Rooms helps you and your partners analyze and collaborate on collective datasets to drive new insights without revealing underlying data to one another. Verify that your data collaboration configuration adheres to the privacy, security, legal, and compliance requirements of your organization.
 

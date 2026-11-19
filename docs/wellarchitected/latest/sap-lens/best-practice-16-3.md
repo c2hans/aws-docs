@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best practice 16.3 – Identify performance trends using data
-<a name="best-practice-16-3"></a>
 
 After baselines for performance are established, system administrators must monitor trends over time to see if KPIs remain stable within preferred norms. If the performance data indicates a trend toward unacceptable values of the KPI, system administrators can then take steps to avoid or mitigate performance impacts.
 

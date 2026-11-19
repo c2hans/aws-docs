@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/linkedin-connection-optio
 ---
 
 # LinkedIn connection options
-<a name="linkedin-connection-options"></a>
 
 The following are connection options for LinkedIn:
 + `ENTITY_NAME`(String) – (Required) Used for Read/Write. The name of your Object in LinkedIn. For example, adAccounts.

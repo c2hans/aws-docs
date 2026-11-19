@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Conn
 ---
 
 # ConnectivityResourceParameters
-<a name="API_ConnectivityResourceParameters"></a>
 
 The parameters for EventBridge to use when invoking the resource endpoint.
 

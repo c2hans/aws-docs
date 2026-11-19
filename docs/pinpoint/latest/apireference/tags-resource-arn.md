@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/tags-resour
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Tags
-<a name="tags-resource-arn"></a>
 
 A *tag* is a label that you optionally define and associate with an application, campaign, message template, or segment in Amazon Pinpoint. Tags can help you categorize and manage these types of resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags.
 

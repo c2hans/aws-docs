@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Change Management capability
-<a name="change-management-capability"></a>
 
  The Change Management capability enables you to manage risk and minimize negative impact when making changes to your cloud environment. This includes the ability to request, plan, track, deploy, and roll-back changes to your environment.
 

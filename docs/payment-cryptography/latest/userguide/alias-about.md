@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/al
 ---
 
 # About aliases
-<a name="alias-about"></a>
 
 Learn how aliases work in AWS Payment Cryptography.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # RemoveAction
-<a name="API_RemoveAction"></a>
 
 An action to remove a member from a Managed Blockchain network as the result of a removal proposal that is `APPROVED`. The member and all associated resources are deleted from the network.
 

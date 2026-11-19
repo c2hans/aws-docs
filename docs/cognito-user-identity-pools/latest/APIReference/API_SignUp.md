@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # SignUp
-<a name="API_SignUp"></a>
 
 Registers a user with an app client and requests a user name, password, and user attributes in the user pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetJobIdentifier
-<a name="API_BatchGetJobIdentifier"></a>
 
 The identifiers for a job.
 

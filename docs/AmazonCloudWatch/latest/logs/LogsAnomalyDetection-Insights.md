@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogsAnomaly
 ---
 
 # Using anomaly detection in CloudWatch Logs Insights
-<a name="LogsAnomalyDetection-Insights"></a>
 
 In addition to creating log anomaly detectors for continuous monitoring, you can also use the `anomaly` command in CloudWatch Logs Insights queries to identify unusual patterns in your log data on-demand. This command extends the existing `pattern` functionality and uses machine learning to detect five types of anomalies including pattern frequency changes, new patterns, and token variations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hu
 ---
 
 # Create a private model hub
-<a name="jumpstart-curated-hubs-admin-guide-create"></a>
 
 Use the following steps to create a private hub to manage access control for pretrained JumpStart foundation models for your organization. You must install the SageMaker Python SDK and configure the necessary IAM permissions before creating a model hub.
 

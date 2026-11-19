@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SourceConfiguration
-<a name="API_amazon-q-connect_SourceConfiguration"></a>
 
 Configuration information about the external data source.
 

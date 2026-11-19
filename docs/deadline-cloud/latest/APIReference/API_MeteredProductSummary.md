@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_M
 ---
 
 # MeteredProductSummary
-<a name="API_MeteredProductSummary"></a>
 
 The details of a metered product.
 

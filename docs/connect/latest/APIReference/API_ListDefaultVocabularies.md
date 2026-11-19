@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListDefa
 ---
 
 # ListDefaultVocabularies
-<a name="API_ListDefaultVocabularies"></a>
 
 Lists the default vocabularies for the specified Connect Customer instance.
 

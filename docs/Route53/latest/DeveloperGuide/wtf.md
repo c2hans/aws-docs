@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/wtf.html
 ---
 
 # .wtf
-<a name="wtf"></a>
 
 Used by anyone who wants to identify with the popular (but profane) acronym "WTF."
 

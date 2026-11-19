@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleState
-<a name="API_RuleState"></a>
 
 Returns information about the state of a rule.
 

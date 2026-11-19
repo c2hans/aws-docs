@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.TI.8] Simplify access to organizational information
-<a name="oa.ti.8-simplify-access-to-organizational-information"></a>
 
  **Category:** RECOMMENDED
 

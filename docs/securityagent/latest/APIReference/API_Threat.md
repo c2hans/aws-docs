@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Th
 ---
 
 # Threat
-<a name="API_Threat"></a>
 
 Represents a threat identified during threat modeling.
 

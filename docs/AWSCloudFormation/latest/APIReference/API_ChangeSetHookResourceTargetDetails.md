@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ChangeSetHookResourceTargetDetails
-<a name="API_ChangeSetHookResourceTargetDetails"></a>
 
 Specifies `RESOURCE` type target details for activated Hooks.
 

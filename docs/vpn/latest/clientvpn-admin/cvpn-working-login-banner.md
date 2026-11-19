@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # AWS Client VPN client login banners
-<a name="cvpn-working-login-banner"></a>
 
 AWS Client VPN provides the option to display a text banner on AWS provided Client VPN desktop applications when a VPN session is established. You can define the contents of the text banner to meet your regulatory and compliance needs. A maximum of 1400 UTF-8 encoded characters can be used.
 

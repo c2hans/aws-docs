@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateWebACL
-<a name="API_DisassociateWebACL"></a>
 
 Disassociates the specified resource from its web ACL association, if it has one.
 

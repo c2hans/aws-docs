@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Analyze
 ---
 
 # AnalyzeDocument
-<a name="API_AnalyzeDocument"></a>
 
 Analyzes an input document for relationships between detected items.
 

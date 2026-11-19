@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UserUnion
-<a name="API_connect-cases_UserUnion"></a>
 
 Represents the entity that performed the action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_R
 ---
 
 # ReplicaRegionType
-<a name="API_ReplicaRegionType"></a>
 
 A custom type that specifies a `Region` and the `KmsKeyId` for a replica secret.
 

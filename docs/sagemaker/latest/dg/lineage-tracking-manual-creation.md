@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/lineage-tracking-man
 ---
 
 # Manually Create Tracking Entities
-<a name="lineage-tracking-manual-creation"></a>
 
 You can manually create tracking entities for any property to establish model governance, reproduce your workflow, and maintain a record of your work history. For information on the tracking entities that Amazon SageMaker AI automatically creates, see [Amazon SageMaker AI–Created Tracking Entities](lineage-tracking-auto-creation.md). The following tutorial demonstrates the steps needed to manually create and associate artifacts between a SageMaker training job and endpoint, then track the workflow.
 

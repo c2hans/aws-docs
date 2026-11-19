@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/programmatic.c
 ---
 
 # Using `cqlsh` to connect to Amazon Keyspaces
-<a name="programmatic.cqlsh"></a>
 
 To connect to Amazon Keyspaces using `cqlsh`, you can use the `cqlsh-expansion`. This is a toolkit that contains common Apache Cassandra tooling like `cqlsh` and helpers that are preconfigured for Amazon Keyspaces while maintaining full compatibility with Apache Cassandra. The `cqlsh-expansion` integrates the SigV4 authentication plugin and allows you to connect using IAM access keys instead of user name and password. You only need to install the `cqlsh` scripts to make a connection and not the full Apache Cassandra distribution, because Amazon Keyspaces is serverless. This lightweight install package includes the `cqlsh-expansion` and the classic `cqlsh` scripts that you can install on any platform that supports Python.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_AcmCertifica
 ---
 
 # AcmCertificateMetadataFilter
-<a name="API_AcmCertificateMetadataFilter"></a>
 
 Filters certificates by ACM metadata.
 

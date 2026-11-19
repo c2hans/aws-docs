@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RegisterConnectio
 ---
 
 # RegisterConnectionType
-<a name="API_RegisterConnectionType"></a>
 
 Registers a custom connection type in AWS Glue based on the configuration provided. This operation enables customers to configure custom connectors for any data source with REST-based APIs, eliminating the need for building custom Lambda connectors.
 

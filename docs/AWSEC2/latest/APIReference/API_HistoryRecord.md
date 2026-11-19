@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HistoryRe
 ---
 
 # HistoryRecord
-<a name="API_HistoryRecord"></a>
 
 Describes an event in the history of the Spot Fleet request.
 

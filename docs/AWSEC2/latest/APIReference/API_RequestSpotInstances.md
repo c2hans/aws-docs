@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSp
 ---
 
 # RequestSpotInstances
-<a name="API_RequestSpotInstances"></a>
 
 Creates a Spot Instance request.
 

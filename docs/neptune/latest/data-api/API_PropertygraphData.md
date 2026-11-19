@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_Propertygrap
 ---
 
 # PropertygraphData
-<a name="API_PropertygraphData"></a>
 
 A Gremlin or openCypher change record.
 

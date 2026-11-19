@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_ListAttachPo
 ---
 
 # ListAttachPoints
-<a name="API_ListAttachPoints"></a>
 
 Lists all [AttachPoint](API_AttachPoint.md) options the caller has access to that are valid for the specified [Environment](API_Environment.md).
 

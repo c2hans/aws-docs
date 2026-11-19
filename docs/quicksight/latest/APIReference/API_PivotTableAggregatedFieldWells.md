@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableAggregatedFieldWells
-<a name="API_PivotTableAggregatedFieldWells"></a>
 
 The aggregated field well for the pivot table.
 

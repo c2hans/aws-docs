@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetC
 ---
 
 # GetConfiguredAudienceModelAssociation
-<a name="API_GetConfiguredAudienceModelAssociation"></a>
 
 Returns information about a configured audience model association.
 

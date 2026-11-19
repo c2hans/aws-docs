@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/example_kms_Sc
 ---
 
 # Learn the basics of AWS KMS with an AWS SDK
-<a name="example_kms_Scenario_Basics_section"></a>
 
 The following code examples show how to:
 + Create a KMS key.

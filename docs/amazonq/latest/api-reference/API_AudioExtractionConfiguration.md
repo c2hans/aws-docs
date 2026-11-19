@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AudioEx
 ---
 
 # AudioExtractionConfiguration
-<a name="API_AudioExtractionConfiguration"></a>
 
 Configuration settings for audio content extraction and processing.
 

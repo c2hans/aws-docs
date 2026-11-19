@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Get started with AgentCore Runtime using the AgentCore CLI
-<a name="runtime-get-started-cli"></a>
 
 This page provides a concise workflow for creating and deploying a code-based Strands agent to AgentCore Runtime. For CLI installation, complete prerequisites, project structure, capabilities, observability, and cleanup, see [Get started with Amazon Bedrock AgentCore](agentcore-get-started-cli.md).
 

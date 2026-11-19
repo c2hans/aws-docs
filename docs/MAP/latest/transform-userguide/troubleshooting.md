@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/troublesh
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 ## Verify and Fix aws-apn-id cost-allocation tag
 <a name="getting-started-manual"></a>

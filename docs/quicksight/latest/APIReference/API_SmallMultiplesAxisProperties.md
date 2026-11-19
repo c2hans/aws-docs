@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Small
 ---
 
 # SmallMultiplesAxisProperties
-<a name="API_SmallMultiplesAxisProperties"></a>
 
 Configures the properties of a chart's axes that are used by small multiples panels.
 

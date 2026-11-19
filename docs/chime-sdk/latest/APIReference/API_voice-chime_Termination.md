@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # Termination
-<a name="API_voice-chime_Termination"></a>
 
 Termination settings enable SIP hosts to make outbound calls using an Amazon Chime SDK Voice Connector.
 

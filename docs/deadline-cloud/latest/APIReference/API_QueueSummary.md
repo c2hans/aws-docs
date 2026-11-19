@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_Q
 ---
 
 # QueueSummary
-<a name="API_QueueSummary"></a>
 
 The details of a queue summary.
 

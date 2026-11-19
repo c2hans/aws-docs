@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/sigmoid.html
 ---
 
 # $sigmoid
-<a name="sigmoid"></a>
 
 New from version 8.0.1.
 

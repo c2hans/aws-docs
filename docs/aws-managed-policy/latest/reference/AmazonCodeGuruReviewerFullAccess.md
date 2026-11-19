@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCodeGuruReviewerFullAccess
-<a name="AmazonCodeGuruReviewerFullAccess"></a>
 
 **Description**: Grants full access to Amazon CodeGuru Reviewer and scoped access to required dependencies.
 

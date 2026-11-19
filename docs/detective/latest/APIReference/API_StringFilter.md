@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_String
 ---
 
 # StringFilter
-<a name="API_StringFilter"></a>
 
 A string for filtering Detective investigations.
 

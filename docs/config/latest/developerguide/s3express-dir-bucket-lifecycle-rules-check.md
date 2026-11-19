@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3express-d
 ---
 
 # s3express-dir-bucket-lifecycle-rules-check
-<a name="s3express-dir-bucket-lifecycle-rules-check"></a>
 
 Checks if lifecycle rules are configured for an Amazon S3 Express directory bucket. The rule is NON\_COMPLIANT if there is no active lifecycle configuration rules or the configuration does not match with the parameter values.
 

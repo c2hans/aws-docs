@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_StartNo
 ---
 
 # StartNotebookImport
-<a name="API_StartNotebookImport"></a>
 
 Starts a notebook import in Amazon SageMaker Unified Studio. This operation imports a notebook from an Amazon Simple Storage Service location into a project.
 

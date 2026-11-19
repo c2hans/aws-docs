@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-tes
 ---
 
 # Manage an A/B test
-<a name="ab-testing-manage"></a>
 
 Update an A/B test to start it, pause it, or stop it. You use the `UpdateABTest` operation to change execution status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_T
 ---
 
 # TaggedTable
-<a name="API_TaggedTable"></a>
 
 A structure describing a table resource with LF-tags.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Cost attribution
-<a name="cost-attribution"></a>
 
 SageMaker AI Studio has built in capabilities to help administrators track the spend of their individual domains, shared spaces, and users.
 

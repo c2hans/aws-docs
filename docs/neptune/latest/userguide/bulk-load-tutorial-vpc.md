@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutor
 ---
 
 # Creating the Amazon S3 VPC Endpoint
-<a name="bulk-load-tutorial-vpc"></a>
 
 The Neptune loader requires a VPC endpoint of type Gateway for Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_AdBr
 ---
 
 # AdBreakOpportunity
-<a name="API_AdBreakOpportunity"></a>
 
 A location at which a zero-duration ad marker was detected in a VOD source manifest.
 

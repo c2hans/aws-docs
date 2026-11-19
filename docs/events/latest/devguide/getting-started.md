@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/getting-started.h
 ---
 
 # Getting started
-<a name="getting-started"></a>
 
  Listing events needs no credentials. Whether you can go on to read an event's sessions depends on that event.
 

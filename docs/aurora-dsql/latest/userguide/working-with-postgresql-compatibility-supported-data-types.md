@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-wit
 ---
 
 # Supported data types in Aurora DSQL
-<a name="working-with-postgresql-compatibility-supported-data-types"></a>
 
 Aurora DSQL supports a subset of the common PostgreSQL types.
 

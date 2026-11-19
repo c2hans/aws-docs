@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DetachThingP
 ---
 
 # DetachThingPrincipal
-<a name="API_DetachThingPrincipal"></a>
 
 Detaches the specified principal from the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
 

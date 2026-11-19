@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-bootstrap.html
 ---
 
 # `cdk bootstrap`
-<a name="ref-cli-cmd-bootstrap"></a>
 
 Prepare an AWS environment for CDK deployments by deploying the CDK bootstrap stack, named `CDKToolkit`, into the AWS environment.
 

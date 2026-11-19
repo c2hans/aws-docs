@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # ListSyncConfigurations
-<a name="API_ListSyncConfigurations"></a>
 
 Returns a list of sync configurations for a specified repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ResolvedC
 ---
 
 # ResolvedComponentVersion
-<a name="API_ResolvedComponentVersion"></a>
 
 Contains information about a component version that is compatible to run on a Greengrass core device.
 

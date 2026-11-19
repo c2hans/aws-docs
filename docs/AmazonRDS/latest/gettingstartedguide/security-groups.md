@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/gettingstartedguide/sec
 ---
 
 # Determining who can connect to your Amazon RDS DB instance
-<a name="security-groups"></a>
 
 Security groups act as virtual firewalls for your Amazon RDS DB instance, controlling inbound and outbound traffic. It's important to properly configure security groups to ensure that only trusted connections can access your database.
 

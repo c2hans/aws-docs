@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/welcome.h
 ---
 
 # What is the AWS SDK for C\+\+ Developer Guide?
-<a name="welcome"></a>
 
 Welcome to the AWS SDK for C\+\+ Developer Guide.
 

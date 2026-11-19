@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeServiceRevisions
-<a name="API_DescribeServiceRevisions"></a>
 
 Describes one or more service revisions.
 

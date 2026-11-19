@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/i
 ---
 
 # Installing AWS SDK for SAP ABAP
-<a name="installation"></a>
 
 **Topics**
 + [Download SDK for SAP ABAP](#download)

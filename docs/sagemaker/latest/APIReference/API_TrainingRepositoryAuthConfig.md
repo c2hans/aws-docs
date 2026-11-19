@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingRepositoryAuthConfig
-<a name="API_TrainingRepositoryAuthConfig"></a>
 
 An object containing authentication information for a private Docker registry.
 

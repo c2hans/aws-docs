@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListCus
 ---
 
 # ListCustomerAgreements
-<a name="API_ListCustomerAgreements"></a>
 
 List active customer-agreements applicable to calling identity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationOfferExtendedStatusFilter
-<a name="API_ResaleAuthorizationOfferExtendedStatusFilter"></a>
 
 Allows filtering on the `OfferExtendedStatus` of a ResaleAuthorization.
 

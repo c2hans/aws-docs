@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Descr
 ---
 
 # DescribeAnomalyDetector
-<a name="API_DescribeAnomalyDetector"></a>
 
 Retrieves detailed information about a specific anomaly detector, including its status and configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/parse-transcripts.ht
 ---
 
 # Parsing Amazon Chime SDK transcripts
-<a name="parse-transcripts"></a>
 
 Use the following command to parse transcription content from a transcription message. The command parses complete sentences from the transcript-message.txt files.
 

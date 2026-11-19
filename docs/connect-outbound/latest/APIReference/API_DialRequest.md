@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # DialRequest
-<a name="API_connect-outbound-campaigns_DialRequest"></a>
 
 Contains information about a dial request.
 

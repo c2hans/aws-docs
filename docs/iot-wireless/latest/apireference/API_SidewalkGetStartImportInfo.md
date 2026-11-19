@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkGetStartImportInfo
-<a name="API_SidewalkGetStartImportInfo"></a>
 
 Sidewalk-related information for devices in an import task that are being onboarded.
 

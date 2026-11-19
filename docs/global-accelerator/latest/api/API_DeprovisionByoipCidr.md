@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Deprov
 ---
 
 # DeprovisionByoipCidr
-<a name="API_DeprovisionByoipCidr"></a>
 
 Releases the specified address range that you provisioned to use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool.
 

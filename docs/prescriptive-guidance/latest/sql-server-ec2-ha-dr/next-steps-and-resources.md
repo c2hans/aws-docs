@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Next steps and resources
-<a name="next-steps-and-resources"></a>
 
 This guide covered best practices for quick disaster recovery of SQL Server databases. The recommendations include using images to restore the application instance and to use native SQL methods to restore the database, or, preferably, to fail over the database. In contrast to large database restores that can take hours, using Amazon Elastic Compute Cloud (Amazon EC2) Amazon Machine Image (AMI) backups in combination with the most recent transaction logs helps you meet your recovery point objective (RPO) and recovery time objective (RTO) requirements while keeping your overall costs low. The optimal approach depends on the size of your database, the number and nature of backups, and the frequency of transaction log backups for which a disaster recovery strategy needs to be designed. See the following links for more information, best practices, Quick Start guides, and prescriptive guidance on migrating and hosting SQL Server on Amazon EC2.
 

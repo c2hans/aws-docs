@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/authen
 ---
 
 # Authentication Error Messages
-<a name="authentication-error-messages"></a>
 
 The following errors describe why authentication requests can fail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Azur
 ---
 
 # AzureDevOpsConfiguration
-<a name="API_AzureDevOpsConfiguration"></a>
 
 Configuration for Azure DevOps project integration.
 

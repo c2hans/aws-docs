@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackInstanceSummary
-<a name="API_StackInstanceSummary"></a>
 
 The structure that contains summary information about a stack instance.
 

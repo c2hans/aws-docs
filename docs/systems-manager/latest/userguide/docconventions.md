@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/docconv
 ---
 
 # Document conventions
-<a name="docconventions"></a>
 
 The following are common typographical conventions for the *AWS Systems Manager User Guide*.
 

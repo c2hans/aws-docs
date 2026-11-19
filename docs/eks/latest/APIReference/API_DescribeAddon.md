@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddo
 ---
 
 # DescribeAddon
-<a name="API_DescribeAddon"></a>
 
 Describes an Amazon EKS add-on.
 

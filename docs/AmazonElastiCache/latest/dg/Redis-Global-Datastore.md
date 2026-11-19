@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Redis-Global
 ---
 
 # Replication across AWS Regions using global datastores
-<a name="Redis-Global-Datastore"></a>
 
 **Note**
 Global Datastore is currently available for node-based clusters only.

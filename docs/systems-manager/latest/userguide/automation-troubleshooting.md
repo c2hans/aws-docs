@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Troubleshooting Systems Manager Automation
-<a name="automation-troubleshooting"></a>
 
 Use the following information to help you troubleshoot problems with AWS Systems Manager Automation. This topic includes specific tasks to resolve issues based on Automation error messages.
 

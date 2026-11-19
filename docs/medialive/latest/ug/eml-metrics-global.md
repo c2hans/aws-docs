@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/eml-metrics-global.h
 ---
 
 # Global metrics
-<a name="eml-metrics-global"></a>
 
 Global metrics relate to general performance and information for AWS Elemental MediaLive.
 

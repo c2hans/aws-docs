@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/data-transfor
 ---
 
 # Getting started with the SDK and AWS CLI
-<a name="data-transformation-getting-started-cli"></a>
 
 ## Install and configure
 <a name="data-transformation-getting-started-cli-install"></a>

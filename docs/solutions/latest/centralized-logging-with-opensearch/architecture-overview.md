@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 This section provides a reference implementation architecture diagram with description and [AWS Well-Architected design considerations](aws-well-architected-pillars.md).
 

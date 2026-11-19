@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # 1. Building from a snapshot
-<a name="build-from-snapshot"></a>
 
 When you use the snapshot-restore approach, you copy data from the source Elasticsearch or OpenSearch cluster to target Amazon OpenSearch Service domain.
 

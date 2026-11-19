@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_D
 ---
 
 # Descriptors
-<a name="API_Descriptors"></a>
 
  The protocol-specific descriptors that describe how to connect to and use the registry record.
 

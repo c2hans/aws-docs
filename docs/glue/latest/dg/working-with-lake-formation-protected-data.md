@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/working-with-lake-formati
 ---
 
 # Working with AWS Lake Formation-protected data
-<a name="working-with-lake-formation-protected-data"></a>
 
 ## Full Table Access
 <a name="full-table-access"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_O
 ---
 
 # ObjectiveResourceFilter
-<a name="API_ObjectiveResourceFilter"></a>
 
 The objective resource that's being used as a filter.
 

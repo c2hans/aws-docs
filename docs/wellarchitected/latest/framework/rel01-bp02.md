@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel01-b
 ---
 
 # REL01-BP02 Manage service quotas across accounts and regions
-<a name="rel01-bp02"></a>
 
  Workloads that span multiple accounts or Regions carry a separate set of quota values in each space. A resilience design that fails over to a secondary location depends on that location holding enough quota to absorb the shifted load. Request and reconcile quotas in every environment where production traffic runs or could run after a failover.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Amazon Elastic Container Service (ECS) objects
-<a name="API_Type_Resource_ECS"></a>
 
 ****Amazon Elastic Container Service (ECS) objects****
 + [AwsEcsClusterClusterSettingsDetails](API_AwsEcsClusterClusterSettingsDetails.md)

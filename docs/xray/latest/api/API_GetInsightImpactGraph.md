@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetInsightImpactGrap
 ---
 
 # GetInsightImpactGraph
-<a name="API_GetInsightImpactGraph"></a>
 
 Retrieves a service graph structure filtered by the specified insight. The service graph is limited to only structural information. For a complete service graph, use this API with the GetServiceGraph API.
 

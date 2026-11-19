@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_TimeRange
 ---
 
 # TimeRange
-<a name="API_TimeRange"></a>
 
 Provides a range of time.
 

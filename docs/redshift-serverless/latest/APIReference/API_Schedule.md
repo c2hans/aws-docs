@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # Schedule
-<a name="API_Schedule"></a>
 
 The schedule of when Amazon Redshift Serverless should run the scheduled action.
 

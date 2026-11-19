@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-dataset-valid
 ---
 
 # Data validation
-<a name="canvas-dataset-validation"></a>
 
 Before you build your model, SageMaker Canvas checks your dataset for issues that might cause your build to fail. If SageMaker Canvas finds any issues, then it warns you on the **Build** page before you attempt to build a model.
 

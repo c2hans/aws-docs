@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateElasticInferenceAcceleratorResponse
-<a name="API_LaunchTemplateElasticInferenceAcceleratorResponse"></a>
 
 **Note**
 Amazon Elastic Inference is no longer available.

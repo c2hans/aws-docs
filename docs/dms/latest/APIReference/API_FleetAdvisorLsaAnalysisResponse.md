@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_FleetAdvisor
 ---
 
 # FleetAdvisorLsaAnalysisResponse
-<a name="API_FleetAdvisorLsaAnalysisResponse"></a>
 
 Describes a large-scale assessment (LSA) analysis run by a Fleet Advisor collector.
 

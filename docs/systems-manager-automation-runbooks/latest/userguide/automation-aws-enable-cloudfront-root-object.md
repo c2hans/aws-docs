@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableCloudFrontDefaultRootObject`
-<a name="automation-aws-enable-cloudfront-root-object"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/scheduled-q
 ---
 
 # Viewing and managing scheduled queries
-<a name="scheduled-queries-management"></a>
 
 The following information is available for each query:
 

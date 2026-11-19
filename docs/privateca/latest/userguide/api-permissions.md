@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/api-permissio
 ---
 
 # AWS Private CA API operations and permissions
-<a name="api-permissions"></a>
 
 When you set up access control and permissions policies that you plan to attach to an IAM identity (identity-based policies), use the following table as a reference. The first column in the table lists each AWS Private CA API operation. You specify actions in a policy's `Action` element. The remaining columns provide the additional information.
 

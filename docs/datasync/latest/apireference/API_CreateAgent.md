@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateA
 ---
 
 # CreateAgent
-<a name="API_CreateAgent"></a>
 
 Activates an AWS DataSync agent that you deploy in your storage environment. The activation process associates the agent with your AWS account.
 

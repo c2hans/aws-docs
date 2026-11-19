@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_OutputDa
 ---
 
 # OutputDataConfig
-<a name="API_OutputDataConfig"></a>
 
 S3 Location of the output data.
 

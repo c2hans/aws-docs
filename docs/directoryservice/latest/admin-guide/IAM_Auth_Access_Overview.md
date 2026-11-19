@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/IAM_
 ---
 
 # Overview of managing access permissions to your Directory Service resources
-<a name="IAM_Auth_Access_Overview"></a>
 
  Every AWS resource is owned by an AWS account. As a result, permissions to create or access the resources are governed by permissions policies. However, an account administrator, which is a user with administrator permissions, can attach permissions to resources. The also have the ability to attach permissions policies to IAM identities, such as users, groups, and roles, and some services, such as AWS Lambda also support attaching permissions policies to resources.
 

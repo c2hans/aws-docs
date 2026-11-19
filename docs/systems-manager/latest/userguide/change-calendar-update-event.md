@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 ---
 
 # Updating a Change Calendar event
-<a name="change-calendar-update-event"></a>
 
 Use the following procedure to update a Change Calendar event in the AWS Systems Manager console. Change Calendar is a tool in AWS Systems Manager.
 

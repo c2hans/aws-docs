@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_D
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes an account access manager application. This operation is idempotent; deleting an application that has already been deleted does not return an error.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Validating the transformation after migration
-<a name="tffo-validate"></a>
 
 After metadata migration completes, confirm that the affected fields landed as `flat_object` on the target and that queries against the nested keys still behave as expected.
 

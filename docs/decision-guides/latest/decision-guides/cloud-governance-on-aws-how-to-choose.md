@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 ---
 
 # Choosing an AWS cloud governance service
-<a name="cloud-governance-on-aws-how-to-choose"></a>
 
 **Taking the first step**
 

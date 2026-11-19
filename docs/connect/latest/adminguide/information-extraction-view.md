@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/information-ex
 ---
 
 # View extracted information
-<a name="information-extraction-view"></a>
 
 Extracted information appears in alphabetical order by display label, and is available in the following locations:
 + **Contact Control Panel (CCP)** – During after-call work

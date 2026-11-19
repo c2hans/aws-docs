@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetTe
 ---
 
 # GetTestGridProject
-<a name="API_GetTestGridProject"></a>
 
 Retrieves information about a Selenium testing project.
 

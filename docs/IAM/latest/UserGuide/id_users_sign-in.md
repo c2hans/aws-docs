@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_sign-in.ht
 ---
 
 # How IAM users sign in to AWS
-<a name="id_users_sign-in"></a>
 
 To sign in to the AWS Management Console as an IAM user, you must provide your account ID or account alias in addition to your user name and password. When your administrator created your IAM user in the console, they should have sent you your sign-in credentials, including your user name and the URL to your account sign-in page that includes your account ID or account alias.
 

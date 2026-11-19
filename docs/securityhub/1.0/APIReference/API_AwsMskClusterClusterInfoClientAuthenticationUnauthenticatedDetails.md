@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterClusterInfoClientAuthenticationUnauthenticatedDetails
-<a name="API_AwsMskClusterClusterInfoClientAuthenticationUnauthenticatedDetails"></a>
 
  Provides details for allowing no client authentication.
 

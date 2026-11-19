@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sql-server-sap-
 ---
 
 # Microsoft SQL Server for SAP NetWeaver on AWS Deployment and Operations Guide
-<a name="sql-server-sap-guide"></a>
 
  *SAP specialists, Amazon Web Services*
 

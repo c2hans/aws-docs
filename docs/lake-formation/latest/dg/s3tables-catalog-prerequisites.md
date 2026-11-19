@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/s3tables-catalo
 ---
 
 # Prerequisites for integrating Amazon S3 tables catalog with the Data Catalog and Lake Formation
-<a name="s3tables-catalog-prerequisites"></a>
 
 Following are the prerequisites to enable Amazon S3 table integration with AWS Glue Data Catalog and AWS Lake Formation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AwsJobAbortC
 ---
 
 # AwsJobAbortCriteria
-<a name="API_AwsJobAbortCriteria"></a>
 
 The criteria that determine when and how a job abort takes place.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # TensorData
-<a name="API_training_session_runtime_TensorData"></a>
 
 A tensor with data, data type, and shape metadata.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # Amazon Connect Customer Profiles
-<a name="API_Operations_Amazon_Connect_Customer_Profiles"></a>
 
 The following actions are supported by Amazon Connect Customer Profiles:
 +  [AddProfileKey](API_connect-customer-profiles_AddProfileKey.md)

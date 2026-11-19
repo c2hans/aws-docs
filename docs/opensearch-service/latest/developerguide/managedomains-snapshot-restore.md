@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Restoring data from snapshots
-<a name="managedomains-snapshot-restore"></a>
 
 Before you restore a snapshot, note that restoring to a domain with [Multi-AZ with Standby](managedomains-multiaz.md#managedomains-za-standby) requires that restored indices have replica settings compatible with the standby configuration. If the snapshot contains indices with incompatible replica counts, the restore will fail unless you override the settings during restore. To avoid failures, ensure that the replica count for restored indices is compatible with your domain's standby configuration, or use the `index_settings` parameter to override replica settings during the restore operation.
 

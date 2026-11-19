@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GenerationConfiguration
-<a name="API_agent-runtime_GenerationConfiguration"></a>
 
 Contains configurations for response generation based on the knowledge base query results.
 

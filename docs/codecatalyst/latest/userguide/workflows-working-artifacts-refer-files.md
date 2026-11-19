@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Referencing files in an artifact
-<a name="workflows-working-artifacts-refer-files"></a>
 
 If you have a file that resides within an artifact, and you need to refer to this file in one of your Amazon CodeCatalyst workflow actions, complete the following procedure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kustomer-connection-optio
 ---
 
 # Kustomer connection options
-<a name="kustomer-connection-options"></a>
 
 The following are connection options for Kustomer:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in Kustomer.

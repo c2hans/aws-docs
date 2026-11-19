@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automatically stop and start an Amazon RDS DB instance using AWS Systems Manager Maintenance Windows
-<a name="automatically-stop-and-start-an-amazon-rds-db-instance-using-aws-systems-manager-maintenance-windows"></a>
 
 *Ashita Dsilva, Amazon Web Services*
 

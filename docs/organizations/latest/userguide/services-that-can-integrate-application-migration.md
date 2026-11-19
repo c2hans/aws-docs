@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Transform MGN (MGN) and AWS Organizations
-<a name="services-that-can-integrate-application-migration"></a>
 
 AWS Transform MGN simplifies, expedites, and reduces the cost of migrating applications to AWS. By integrating with Organizations, you can use the global view feature to manage large-scale migrations across multiple accounts. For more information see [ Setting up your AWS Organizations](https://docs.aws.amazon.com/mgn/latest/ug/setting-up-organizations.html) in the *MGN user guide*.
 

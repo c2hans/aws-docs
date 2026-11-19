@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/cloudformat
 ---
 
 # Create custom CloudWatch dashboards using CloudFormation templates
-<a name="cloudformation-templates"></a>
 
 AWS provides CloudFormation templates that you can use to create custom CloudWatch dashboards for WorkSpaces. Choose from the following CloudFormation template options to create custom dashboards for your WorkSpaces in the CloudFormation console.
 

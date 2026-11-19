@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/aws-services-priv
 ---
 
 # AWS services that integrate with AWS PrivateLink
-<a name="aws-services-privatelink-support"></a>
 
 The following AWS services integrate with AWS PrivateLink. You can create a VPC endpoint to connect to these services privately, as if they were running in your own VPC.
 

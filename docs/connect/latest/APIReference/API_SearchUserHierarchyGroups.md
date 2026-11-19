@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchUs
 ---
 
 # SearchUserHierarchyGroups
-<a name="API_SearchUserHierarchyGroups"></a>
 
 Searches UserHierarchyGroups in an Connect Customer instance, with optional filtering.
 

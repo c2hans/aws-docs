@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Stage 2: Implementing a large migration
-<a name="stage-two-implementation"></a>
 
 In stage 1, you developed migration runbooks for each migration pattern. In stage 2, you use these runbooks to migrate servers and then improve the runbooks in order to accelerate the velocity of the migration. Building and updating runbooks is not a one-off task. You might need to do that throughout your large migration journey. For example, you might need to create new runbooks if the scope increases and you identify new migration patterns, or you might need to improve the existing runbooks if the migration velocity is below the target and introducing more automation would reduce the number of manual tasks and accelerate the migration.
 

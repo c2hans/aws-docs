@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateGroupMembership
-<a name="API_CreateGroupMembership"></a>
 
 Adds an Amazon Quick Sight user to an Amazon Quick Sight group.
 

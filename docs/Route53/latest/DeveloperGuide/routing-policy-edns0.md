@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-po
 ---
 
 # How Amazon Route 53 uses EDNS0 to estimate the location of a user
-<a name="routing-policy-edns0"></a>
 
 To improve the accuracy of geolocation, geoproximity, IP-based, and latency routing, Amazon Route 53 supports the edns-client-subnet extension of EDNS0. (EDNS0 adds optional extensions to the DNS protocol.) Route 53 can use edns-client-subnet only when DNS resolvers support it:
 + When a browser or other viewer uses a DNS resolver that does not support edns-client-subnet, Route 53 uses the source IP address of the DNS resolver to guess where the user is and responds to geolocation queries with the DNS record for the resolver's location.

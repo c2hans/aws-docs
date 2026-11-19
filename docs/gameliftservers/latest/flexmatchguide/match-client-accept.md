@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Request player acceptance
-<a name="match-client-accept"></a>
 
 If you're using a matchmaker that has player acceptance turned on, add code to your client service to manage the player acceptance process. The process of managing player acceptances is identical for games that use FlexMatch with Amazon GameLift Servers-managed hosting and for games that use FlexMatch as a standalone solution.
 

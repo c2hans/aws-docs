@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Changing configuration and associated risks
-<a name="changing-configuration-and-risks"></a>
 
  Changing beacon configuration after data has been written can have significant correctness and security implications. Some configuration parameters directly affect how beacons are derived and queried, and incorrect changes might result in incomplete query results or ambiguous semantics. Misconfiguration does not cause data loss—data remains accessible via Scan—but it might prevent Query operations from returning complete results.
 

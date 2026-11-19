@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # PatchSource
-<a name="API_PatchSource"></a>
 
 Information about the patches to use to update the managed nodes, including target operating systems and source repository. Applies to Linux managed nodes only.
 

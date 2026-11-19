@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 ---
 
 # Data retrieval APIs for AWS Batch
-<a name="awsbatch"></a>
 
 AWS Batch provides the following APIs for data retrieval.
 

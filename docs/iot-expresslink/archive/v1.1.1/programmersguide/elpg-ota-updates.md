@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.1/programme
 ---
 
 # 7 ExpressLink module updates
-<a name="elpg-ota-updates"></a>
 
 **Note**
 The OTA service is supported only when the device is in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)), that is, only when the module is connected to the customer's AWS account.

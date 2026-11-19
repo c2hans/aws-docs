@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JDBCConnectorTarg
 ---
 
 # JDBCConnectorTarget
-<a name="API_JDBCConnectorTarget"></a>
 
 Specifies a data target that writes to Amazon S3 in Apache Parquet columnar storage.
 

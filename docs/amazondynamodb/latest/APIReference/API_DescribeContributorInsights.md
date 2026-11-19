@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DescribeContributorInsights
-<a name="API_DescribeContributorInsights"></a>
 
 Returns information about contributor insights for a given table or global secondary index.
 

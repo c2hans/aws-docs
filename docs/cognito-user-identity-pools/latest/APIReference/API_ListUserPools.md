@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ListUserPools
-<a name="API_ListUserPools"></a>
 
 Lists user pools and their details in the current AWS account.
 

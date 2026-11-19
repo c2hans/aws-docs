@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/system-tools-desk
 ---
 
 # System tools
-<a name="system-tools-desktop"></a>
 
 AWS Quick on desktop includes built-in system tools that provide core capabilities such as web search, file operations, browser automation, image generation, and code execution. You turn each tool on or off individually and configure granular permission controls. Manage system tools in **Customize**, on the **Connectors** tab.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeVolu
 ---
 
 # DescribeVolumes
-<a name="API_DescribeVolumes"></a>
 
 Describes one or more Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS volumes.
 

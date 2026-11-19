@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_RetentionArc
 ---
 
 # RetentionArchiveTier
-<a name="API_RetentionArchiveTier"></a>
 
  **[Custom snapshot policies only]** Describes the retention rule for archived snapshots. Once the archive retention threshold is met, the snapshots are permanently deleted from the archive tier.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # CloudFormation stack not found
-<a name="next-gen-troubleshoot-cfn-not-found"></a>
 
 **Symptom:** Resource discovery fails with "stack not found."
 

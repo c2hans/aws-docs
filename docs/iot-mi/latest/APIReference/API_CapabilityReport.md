@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Capabilit
 ---
 
 # CapabilityReport
-<a name="API_CapabilityReport"></a>
 
 Report of all capabilities supported by the device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Tutorial: Sending a message to an Amazon SQS queue from Amazon Virtual Private Cloud
-<a name="sqs-sending-messages-from-vpc"></a>
 
 This tutorial shows you how to send messages to an Amazon SQS queue over a secure, private network. The network includes:
 + A VPC containing an Amazon EC2 instance.

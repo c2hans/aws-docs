@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Res
 ---
 
 # ResponseStream
-<a name="API_ResponseStream"></a>
 
 Contains the response, citation, and trace from the SiteWise Assistant.
 

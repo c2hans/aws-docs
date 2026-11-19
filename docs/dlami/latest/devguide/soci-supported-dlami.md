@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/soci-supported-dla
 ---
 
 # SOCI Index DLAMI
-<a name="soci-supported-dlami"></a>
 
 The following DLAMIs include a pre-installed SOCI (Seekable OCI) snapshotter for container image lazy loading and parallel pull. SOCI is not a separate DLAMI series; it is a snapshotter package that is installed on the DLAMIs listed below. Use `nerdctl --snapshotter soci` to pull Deep Learning Container images with the `-soci` tag suffix for faster container startup.
 

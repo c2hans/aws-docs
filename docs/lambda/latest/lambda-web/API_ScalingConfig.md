@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_ScalingConf
 ---
 
 # ScalingConfig
-<a name="API_ScalingConfig"></a>
 
 The scaling configuration for a web function endpoint.
 

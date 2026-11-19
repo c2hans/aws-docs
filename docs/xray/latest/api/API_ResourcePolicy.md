@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ResourcePolicy.html
 ---
 
 # ResourcePolicy
-<a name="API_ResourcePolicy"></a>
 
 A resource policy grants one or more AWS services and accounts permissions to access X-Ray. Each resource policy is associated with a specific AWS account.
 

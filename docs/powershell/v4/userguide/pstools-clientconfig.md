@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # Using the ClientConfig parameter in cmdlets
-<a name="pstools-clientconfig"></a>
 
 The `ClientConfig` parameter can be used to specify certain configuration settings when you connect to a service. Most of the possible properties of this parameter are defined in the [`Amazon.Runtime.ClientConfig`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Runtime/TClientConfig.html) class, which is inherited into the APIs for AWS services. For an example of simple inheritance, see the [`Amazon.Keyspaces.AmazonKeyspacesConfig`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/Keyspaces/TKeyspacesConfig.html) class. In addition, some services define additional properties that are appropriate only for that service. For an example of additional properties that have been defined, see the [`Amazon.S3.AmazonS3Config`](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/S3/TS3Config.html) class, specifically the `ForcePathStyle` property.
 

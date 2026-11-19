@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteM
 ---
 
 # DeleteMultiRegionCluster
-<a name="API_DeleteMultiRegionCluster"></a>
 
 Deletes an existing multi-Region cluster.
 

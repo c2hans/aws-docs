@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stre
 ---
 
 # StreamProcessingStopSelector
-<a name="API_StreamProcessingStopSelector"></a>
 
  Specifies when to stop processing the stream. You can specify a maximum amount of time to process the video.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/planning-hls-input-e
 ---
 
 # Handling encrypted source content in an HLS source
-<a name="planning-hls-input-encrypted"></a>
 
 MediaLive can ingest an HLS source that is encrypted according to the HTTP Live Streaming specification.
 

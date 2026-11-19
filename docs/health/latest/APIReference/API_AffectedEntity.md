@@ -3,12 +3,21 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_AffectedE
 ---
 
 # AffectedEntity
-<a name="API_AffectedEntity"></a>
 
 Information about an entity that is affected by a Health event.
 
 ## Contents
 <a name="API_AffectedEntity_Contents"></a>
+
+ ** accountTags **   <a name="AWSHealth-Type-AffectedEntity-accountTags"></a>
+A map of account tag key-value pairs for the account that owns the affected entity. This field is returned only by DescribeAffectedEntitiesForOrganization and is not populated by DescribeAffectedEntities.
+Type: String to string map
+Map Entries: Maximum number of 10 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 127.
+Key Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{1,127}`
+Value Length Constraints: Minimum length of 0. Maximum length of 255.
+Value Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{0,255}`
+Required: No
 
  ** awsAccountId **   <a name="AWSHealth-Type-AffectedEntity-awsAccountId"></a>
 The 12-digit AWS account number that contains the affected entity.
@@ -57,21 +66,20 @@ The most recent time that the entity was updated.
 Type: Timestamp
 Required: No
 
+ ** resourceTags **   <a name="AWSHealth-Type-AffectedEntity-resourceTags"></a>
+A map of resource tag key-value pairs attached to the affected entity.
+Type: String to string map
+Map Entries: Maximum number of 10 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 127.
+Key Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{1,127}`
+Value Length Constraints: Minimum length of 0. Maximum length of 255.
+Value Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{0,255}`
+Required: No
+
  ** statusCode **   <a name="AWSHealth-Type-AffectedEntity-statusCode"></a>
 The most recent status of the entity affected by the event. The possible values are `IMPAIRED`, `UNIMPAIRED`, `UNKNOWN`, `PENDING`, and `RESOLVED`.
 Type: String
 Valid Values: `IMPAIRED | UNIMPAIRED | UNKNOWN | PENDING | RESOLVED`
-Required: No
-
- ** tags **   <a name="AWSHealth-Type-AffectedEntity-tags"></a>
-A map of entity tags attached to the affected entity.
-Currently, the `tags` property isn't supported.
-Type: String to string map
-Map Entries: Maximum number of 50 items.
-Key Length Constraints: Maximum length of 127.
-Key Pattern: `.{0,127}`
-Value Length Constraints: Maximum length of 255.
-Value Pattern: `.{0,255}`
 Required: No
 
 ## See Also

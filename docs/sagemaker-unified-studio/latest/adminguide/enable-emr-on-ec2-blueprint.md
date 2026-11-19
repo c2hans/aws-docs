@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Specify PEM certificate for EmrOnEc2 blueprint
-<a name="enable-emr-on-ec2-blueprint"></a>
 
 In order to successfully enable the EmrOnEc2 blueprint, you must specify the location of your PEM certificate. To do this, complete the following procedure:
 

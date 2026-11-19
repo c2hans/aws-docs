@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_DeleteProfi
 ---
 
 # DeleteProfile
-<a name="API_DeleteProfile"></a>
 
 Deletes the specified profile. A profile is the mechanism used to create the concept of a private network.
 

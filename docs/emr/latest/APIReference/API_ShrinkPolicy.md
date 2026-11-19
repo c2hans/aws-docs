@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ShrinkPolicy
 ---
 
 # ShrinkPolicy
-<a name="API_ShrinkPolicy"></a>
 
 Policy for customizing shrink operations. Allows configuration of decommissioning timeout and targeted instance shrinking.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/eventbridge-region
 ---
 
 # Using Region switch in ARC with Amazon EventBridge
-<a name="eventbridge-region-switch"></a>
 
 Using Amazon EventBridge, you can set up event-driven rules that monitor your Region switch resources in Amazon Application Recovery Controller (ARC), and then initiate target actions that use other AWS services. For example, you can set a rule for sending out email notifications by signaling an Amazon SNS topic whenever a Region switch plan completes execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ecr
 ---
 
 # EcrConfiguration
-<a name="API_EcrConfiguration"></a>
 
 Settings that Image Builder uses to configure the ECR repository and the output container images that Amazon Inspector scans.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A set of key/value pairs that are used to manage the resource.
 

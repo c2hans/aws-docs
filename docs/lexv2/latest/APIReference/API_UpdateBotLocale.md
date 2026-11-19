@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateBotL
 ---
 
 # UpdateBotLocale
-<a name="API_UpdateBotLocale"></a>
 
 Updates the settings that a bot has for a specific locale.
 

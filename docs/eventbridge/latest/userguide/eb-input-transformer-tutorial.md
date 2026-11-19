@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-input-tr
 ---
 
 # Tutorial: Use input transformers to transform events in EventBridge
-<a name="eb-input-transformer-tutorial"></a>
 
 You can use the [Input transformer](eb-transform-target-input.md) in EventBridge to customize text from an [event](eb-events.md) before you send it to the target of a [rule](eb-rules.md).
 

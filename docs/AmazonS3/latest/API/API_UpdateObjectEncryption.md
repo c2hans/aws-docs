@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_UpdateObjectEncr
 ---
 
 # UpdateObjectEncryption
-<a name="API_UpdateObjectEncryption"></a>
 
 **Note**
 This operation is not supported for directory buckets or Amazon S3 on Outposts buckets.

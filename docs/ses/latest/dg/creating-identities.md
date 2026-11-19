@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/creating-identities.html
 ---
 
 # Creating and verifying identities in Amazon SES
-<a name="creating-identities"></a>
 
 In Amazon SES, you can create an identity at the domain level or you can create an email address identity. These identity types aren’t mutually exclusive. In most cases, creating a domain identity eliminates the need for creating and verifying individual email address identities, unless you want to apply custom configurations to a specific email address. Whether you create a domain and utilize email addresses based on the domain, or create individual email addresses, there are benefits to both approaches. Which method you choose is dependent on your specific needs as discussed below.
 

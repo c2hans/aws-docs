@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-version-d
 ---
 
 # Delete a version of a flow in Amazon Bedrock
-<a name="flows-version-delete"></a>
 
 To learn how to delete a version of a flow, choose the tab for your preferred method, and then follow the steps:
 

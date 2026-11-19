@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Disaster recovery
-<a name="disaster-recovery"></a>
 
 Amazon AppStream 2.0 has built in redundancy across up to three availability zones. This means that if a user has an active session in an availability zone that becomes degraded, they can simply disconnect and reconnect which will reserve them a session in a healthy availability zone assuming you have capacity. While this provides high availability within the Region, it does not provide a disaster recovery solution if the service experiences issues at a regional level.
 

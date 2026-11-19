@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-ec
 ---
 
 # Remediating exposures for EC2 instances
-<a name="exposure-ec2-instance"></a>
 
 AWS Security Hub can generate exposure findings for Amazon Elastic Compute Cloud (EC2) instances.
 

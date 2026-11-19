@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/
 ---
 
 # 9 ExpressLink module Updates
-<a name="elpg-ota-updates"></a>
 
 ExpressLink modules natively support firmware updates utilizing the AWS IoT OTA service and, locally, using Over the Wire (OTW) updates.
 

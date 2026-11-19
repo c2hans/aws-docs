@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/create-iam-rol
 ---
 
 # Configure the IAM permissions required to use the Amazon DataZone management console
-<a name="create-iam-roles"></a>
 
 In order to access and conﬁgure your Amazon DataZone domains, blueprints, and users, and to create the Amazon DataZone data portal, you must use the Amazon DataZone management console.
 

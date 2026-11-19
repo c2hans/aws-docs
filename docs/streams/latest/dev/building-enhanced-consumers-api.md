@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/building-enhanced-con
 ---
 
 # Develop enhanced fan-out consumers with the AWS SDK for Java
-<a name="building-enhanced-consumers-api"></a>
 
 *Enhanced fan-out* is an Amazon Kinesis Data Streams feature that enables consumers to receive records from a data stream with dedicated throughput of up to 2 MB of data per second per shard. A consumer that uses enhanced fan-out doesn't have to contend with other consumers that are receiving data from the stream. For more information, see [Develop enhanced fan-out consumers with dedicated throughput](enhanced-consumers.md).
 

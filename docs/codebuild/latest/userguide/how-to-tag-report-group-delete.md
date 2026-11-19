@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-tag-re
 ---
 
 # Remove tags from a report group
-<a name="how-to-tag-report-group-delete"></a>
 
 You can remove one or more tags associated with a report group. Removing a tag does not delete the tag from other AWS resources that are associated with that tag.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Document your migration principles
-<a name="document"></a>
 
 After reviewing the landing zone and on-premises considerations, you should document your answers and decisions. These become the migration principles that guide the rest of the project.
 

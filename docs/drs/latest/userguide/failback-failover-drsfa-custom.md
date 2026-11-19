@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/failback-failover-d
 ---
 
 # Custom failback
-<a name="failback-failover-drsfa-custom"></a>
 
 The custom failback option provides more control over the failback process. You first generate a configuration file, edit settings for individual machines, and then perform failback using that file.
 

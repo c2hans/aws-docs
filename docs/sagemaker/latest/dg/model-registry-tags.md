@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-tags.
 ---
 
 # View and Manage Model Group and Model Version Tags
-<a name="model-registry-tags"></a>
 
 Model Registry helps you view and manage tags related to your model groups. You can use tags to categorize model groups by purpose, owner, environment, or other criteria. The following instructions show you how to view, add, delete, and edit your tags in the Amazon SageMaker Studio console.
 

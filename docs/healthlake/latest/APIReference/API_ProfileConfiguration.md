@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Profi
 ---
 
 # ProfileConfiguration
-<a name="API_ProfileConfiguration"></a>
 
 The profile configuration for a data store.
 

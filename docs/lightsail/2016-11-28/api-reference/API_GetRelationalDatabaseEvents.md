@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetRelationalDatabaseEvents
-<a name="API_GetRelationalDatabaseEvents"></a>
 
 Returns a list of events for a specific database in Amazon Lightsail.
 

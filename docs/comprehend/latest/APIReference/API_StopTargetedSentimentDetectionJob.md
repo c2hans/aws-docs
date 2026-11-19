@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StopT
 ---
 
 # StopTargetedSentimentDetectionJob
-<a name="API_StopTargetedSentimentDetectionJob"></a>
 
 Stops a targeted sentiment detection job in progress.
 

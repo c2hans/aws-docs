@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActiv
 ---
 
 # Network prerequisites for Aurora MySQL database activity streams
-<a name="DBActivityStreams.Prereqs"></a>
 
 In the following section, you can find how to configure your virtual private cloud (VPC) for use with database activity streams.
 

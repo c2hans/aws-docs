@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootR53DNSResolution`
-<a name="automation-awssupport-troubleshoot-r53-dns-resolution"></a>
 
  **Description**
 

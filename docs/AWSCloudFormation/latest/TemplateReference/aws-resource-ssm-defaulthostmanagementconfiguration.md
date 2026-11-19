@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::DefaultHostManagementConfiguration
-<a name="aws-resource-ssm-defaulthostmanagementconfiguration"></a>
 
 The `AWS::SSM::DefaultHostManagementConfiguration` resource turns on Default Host Management Configuration for an AWS account and AWS Region. With Default Host Management Configuration, AWS Systems Manager manages your Amazon EC2 instances using an IAM role that you register for the account, without an instance profile on each instance.
 

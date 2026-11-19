@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListPodIdent
 ---
 
 # ListPodIdentityAssociations
-<a name="API_ListPodIdentityAssociations"></a>
 
 List the EKS Pod Identity associations in a cluster. You can filter the list by the namespace that the association is in or the service account that the association uses.
 

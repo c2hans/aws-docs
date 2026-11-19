@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-drilldown-l
 ---
 
 # Logs Drilldown
-<a name="v13-drilldown-logs"></a>
 
 The Logs Drilldown app provides a queryless experience for browsing Loki logs. You can discover or narrow down your search by using volume and text patterns without needing to compose LogQL queries.
 

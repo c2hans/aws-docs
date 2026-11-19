@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Pa
 ---
 
 # PartitionKey
-<a name="API_PartitionKey"></a>
 
 Contains information about a partition key for an event data store.
 

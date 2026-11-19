@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/tag-permission
 ---
 
 # Control access to tags
-<a name="tag-permissions"></a>
 
 Use tags to verify that the requester (such as an IAM user or role) has permissions to add, modify, or delete tags for Auto Scaling groups.
 

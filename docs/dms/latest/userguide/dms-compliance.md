@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/dms-compliance.html
 ---
 
 # Compliance validation for AWS Database Migration Service
-<a name="dms-compliance"></a>
 
 Third-party auditors assess the security and compliance of AWS Database Migration Service as part of multiple AWS compliance programs. These include the following programs:
 +  SOC

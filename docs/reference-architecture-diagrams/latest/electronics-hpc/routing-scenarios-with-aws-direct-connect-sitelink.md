@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Routing Scenarios with AWS Direct Connect SiteLink
-<a name="routing-scenarios-with-aws-direct-connect-sitelink"></a>
 
 Publication date: **July 25, 2023 ([Diagram history](diagram-history.md))**
 

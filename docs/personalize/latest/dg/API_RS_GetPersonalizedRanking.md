@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_RS_GetPersonal
 ---
 
 # GetPersonalizedRanking
-<a name="API_RS_GetPersonalizedRanking"></a>
 
 Re-ranks a list of recommended items for the given user. The first item in the list is deemed the most likely item to be of interest to the user.
 

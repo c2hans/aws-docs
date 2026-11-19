@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Co
 ---
 
 # Copying a DB cluster snapshot with the AWS Management Console
-<a name="USER_CopyDBClusterSnapshot.CrossRegion"></a>
 
 Use the procedures in this topic to copy a DB cluster snapshot. If your source database engine is Aurora, then your snapshot is a DB cluster snapshot.
 

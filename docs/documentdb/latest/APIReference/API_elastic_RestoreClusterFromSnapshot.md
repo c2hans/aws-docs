@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # RestoreClusterFromSnapshot
-<a name="API_elastic_RestoreClusterFromSnapshot"></a>
 
 Restores an elastic cluster from a snapshot.
 

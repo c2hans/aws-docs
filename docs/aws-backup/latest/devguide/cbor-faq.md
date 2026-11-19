@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/cbor-faq.html
 ---
 
 # FAQs on supported protocols
-<a name="cbor-faq"></a>
 
  The AWS Backup Gateway service is adding SDK support for the [ Smithy RPC v2 CBOR ](https://smithy.io/2.0/additional-specs/protocols/smithy-rpc-v2.html) protocol in addition to the existing [AWS JSON ](https://smithy.io/2.0/aws/protocols/aws-json-1_0-protocol.html) protocol. The Smithy RPC v2 CBOR protocol is more performant than AWS JSON for most workloads. AWS SDKs will prioritize the protocol that is the most performant for each language.
 

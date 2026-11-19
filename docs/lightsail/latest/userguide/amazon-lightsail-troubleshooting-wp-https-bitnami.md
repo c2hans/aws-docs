@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Lightsail Setup failed
-<a name="amazon-lightsail-troubleshooting-wp-https-bitnami"></a>
 
 Two types of error messages can appear during the WordPress setup workflow in Amazon Lightsail:
 

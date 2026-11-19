@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSSEC03-BP02 Verify network security posture through automated analysis
-<a name="dssec03-bp02"></a>
 
  Network misconfigurations can open a path across a jurisdictional boundary that no one intended. Automated network analysis tools examine your configuration to identify which paths are possible, without sending live traffic, so you can find such paths before they are used. For sovereign workloads, this helps you verify that network paths meet your data residency and privacy requirements.
 

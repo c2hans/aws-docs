@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Lis
 ---
 
 # ListOriginEndpoints
-<a name="API_ListOriginEndpoints"></a>
 
 Retrieves all origin endpoints in a specific channel that are configured in AWS Elemental MediaPackage.
 

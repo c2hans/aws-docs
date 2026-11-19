@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Amazon Connect Customer Optimization for Amazon WorkSpaces
-<a name="connect-optimization"></a>
 
 The end user experience for contact center agents needs to be a top priority because if their audio is degraded, it creates a bad call experience for the customer they are serving. When running a contact center solution within a remote desktop, audio performance will always be impacted on some measurable scale when voice traffic is not prioritized over the network connection. This impact is due to the audio flowing from the audio endpoint to the virtual session and then being compressed over the streaming protocol to be delivered to the end user. This additional routing results in the audio to have degraded performance through network bottlenecks.
 

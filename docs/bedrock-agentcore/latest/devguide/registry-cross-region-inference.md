@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # Geographic cross-region inference in AWS Agent Registry
-<a name="registry-cross-region-inference"></a>
 
  AWS Agent Registry (Agent Registry) uses inference to generate embeddings for your registry record data. Agent Registry uses these embeddings for semantic matching when you run a hybrid or semantic search.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applicati
 ---
 
 # Applications applicationId Changesets
-<a name="applications-applicationid-changesets"></a>
 
 ## URI
 <a name="applications-applicationid-changesets-url"></a>

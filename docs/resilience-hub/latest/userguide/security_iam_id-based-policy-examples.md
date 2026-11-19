@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/security
 ---
 
 # Identity-based policy examples for AWS Resilience Hub
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify AWS Resilience Hub resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami.h
 ---
 
 # Find an AMI that meets the requirements for your EC2 instance
-<a name="finding-an-ami"></a>
 
 An AMI includes the components and applications, such as the operating system and type of root volume, required to launch an instance. To launch an instance, you must find an AMI that meets your needs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Windows migration process
-<a name="overview-windows-migration-process"></a>
 
 Migrating an existing Windows environment to AWS requires careful planning and implementation. The process involves identifying your current usage of resources, assessing the cost savings potential of migrating to AWS, determining your security needs, and building a well-defined cloud architecture that meets all your organization's requirements. You can use AWS to migrate your current Windows server infrastructure quickly and easily, reducing operational costs while maximizing system efficiency. AWS also offers a range of powerful tools and services to help you maintain control over the entire process and to make sure that your Windows environment in the cloud is optimally configured for maximum performance.
 

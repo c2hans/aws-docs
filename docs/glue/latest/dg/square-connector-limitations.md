@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/square-connector-limitati
 ---
 
 # Limitations and notes for the Square connector
-<a name="square-connector-limitations"></a>
 
 The following are limitations and notes for the Square connector:
 + Square is supported as a source only. Writing to Square is not supported.

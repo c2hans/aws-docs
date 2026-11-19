@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel01.h
 ---
 
 # Manage service quotas and constraints
-<a name="rel01"></a>
 
  Cloud services cap how many resources you can provision and how fast you can call operations. Service quotas, also called service limits, guard against provisioning more than you intend and protect shared services from abuse. Resource constraints are physical or design limits, such as the throughput of a network link or the maximum size of a message. Some quotas you can raise on request, others are fixed by the resource itself, and a workload that does not know which is which plans capacity on assumptions rather than facts.
 

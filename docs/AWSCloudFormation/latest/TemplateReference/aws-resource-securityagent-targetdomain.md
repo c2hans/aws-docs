@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::TargetDomain
-<a name="aws-resource-securityagent-targetdomain"></a>
 
 The `AWS::SecurityAgent::TargetDomain` resource specifies a target domain for security testing. A target domain represents a web domain that you own and want to include in penetration testing scope.
 

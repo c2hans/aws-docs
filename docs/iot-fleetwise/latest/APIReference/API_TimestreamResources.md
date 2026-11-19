@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ti
 ---
 
 # TimestreamResources
-<a name="API_TimestreamResources"></a>
 
 The registered Amazon Timestream resources that AWS IoT FleetWise edge agent software can transfer your vehicle data to.
 

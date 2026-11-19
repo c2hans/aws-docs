@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3TablesFullAccess
-<a name="AmazonS3TablesFullAccess"></a>
 
 **Description**: Provides full access to all S3 table buckets.
 

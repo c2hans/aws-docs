@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenviron
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Devfile commands
-<a name="devenvironment-devfile-commands"></a>
 
 Currently, CodeCatalyst only supports `exec` commands in your devfile. For more information, see [Adding commands](https://devfile.io/docs/2.0.0/adding-commands) in the Devfile.io documentation.
 

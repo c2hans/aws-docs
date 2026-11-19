@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Mobilize your organization to accelerate large-scale migrations
-<a name="introduction"></a>
 
 *Addie Cox, Sukhvinder Gulati, Christine Screnci, and Adam Spicer, Amazon Web Services*
 

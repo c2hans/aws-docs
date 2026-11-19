@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Cluster Security
-<a name="clusters-clusterarn-security"></a>
 
 Use this resource to update the security settings of a cluster.
 

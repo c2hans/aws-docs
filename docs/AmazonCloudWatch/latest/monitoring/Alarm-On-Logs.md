@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Alarm
 ---
 
 # Alarming on logs
-<a name="Alarm-On-Logs"></a>
 
 You can create CloudWatch alarms that monitor your log data in two ways:
 + **Log Alarm approach** — Create a Log Alarm that runs a CloudWatch Logs Insights query on a schedule and evaluates the aggregated results directly against a threshold.

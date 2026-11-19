@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Author
 ---
 
 # AuthorizationData
-<a name="API_AuthorizationData"></a>
 
 An object representing authorization data for an Amazon ECR registry.
 

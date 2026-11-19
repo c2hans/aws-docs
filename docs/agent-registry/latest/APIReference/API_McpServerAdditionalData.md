@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_M
 ---
 
 # McpServerAdditionalData
-<a name="API_McpServerAdditionalData"></a>
 
 Additional data for an MCP server descriptor
 

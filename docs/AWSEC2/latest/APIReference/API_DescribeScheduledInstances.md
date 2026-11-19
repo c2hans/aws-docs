@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeScheduledInstances
-<a name="API_DescribeScheduledInstances"></a>
 
 Describes the specified Scheduled Instances or all your Scheduled Instances.
 

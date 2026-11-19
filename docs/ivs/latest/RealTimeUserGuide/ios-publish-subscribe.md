@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/ios-publish
 ---
 
 # Publishing & Subscribing with the IVS iOS Broadcast SDK \| Real-Time Streaming
-<a name="ios-publish-subscribe"></a>
 
 This document takes you through the steps involved in publishing and subscribing to a stage using the IVS real-time streaming iOS broadcast SDK.
 

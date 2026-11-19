@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetConnectionPreferences
-<a name="API_account_GetConnectionPreferences"></a>
 
 Retrieves the connection preferences for a partner account, including access settings and exclusions.
 

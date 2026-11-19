@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3ObjectLambda::AccessPoint TransformationConfiguration
-<a name="aws-properties-s3objectlambda-accesspoint-transformationconfiguration"></a>
 
 A configuration used when creating an Object Lambda Access Point transformation.
 

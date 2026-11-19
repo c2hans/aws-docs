@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/sus-bes
 ---
 
 # Best practices
-<a name="sus-best-practices"></a>
 
 There are six best practice areas for sustainability in the cloud:
 

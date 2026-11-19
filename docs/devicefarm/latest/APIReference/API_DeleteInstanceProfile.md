@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Delet
 ---
 
 # DeleteInstanceProfile
-<a name="API_DeleteInstanceProfile"></a>
 
 Deletes a profile that can be applied to one or more private device instances.
 

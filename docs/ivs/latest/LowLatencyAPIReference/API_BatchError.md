@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ba
 ---
 
 # BatchError
-<a name="API_BatchError"></a>
 
 Error related to a specific channel, specified by its ARN.
 

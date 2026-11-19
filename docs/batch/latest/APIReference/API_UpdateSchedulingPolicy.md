@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateSche
 ---
 
 # UpdateSchedulingPolicy
-<a name="API_UpdateSchedulingPolicy"></a>
 
 Updates a scheduling policy.
 

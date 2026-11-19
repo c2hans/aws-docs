@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_OTAUpdateInf
 ---
 
 # OTAUpdateInfo
-<a name="API_OTAUpdateInfo"></a>
 
 Information about an OTA update.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Amazon Route 53 health check
-<a name="appinsights-metrics-health-check"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

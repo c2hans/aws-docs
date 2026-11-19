@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # AWS Config logs
-<a name="aws-config-logs"></a>
 
 By default, AWS Config delivers configuration history and snapshot files to your Amazon S3 bucket.
 

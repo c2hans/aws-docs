@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adobeanalytics-create-acc
 ---
 
 # Creating an Adobe Analytics account
-<a name="adobeanalytics-create-account"></a>
 
 1. Register for the exchange partner program, by accessing [Adobe Partner program](https://partners.adobe.com/exchangeprogram/creativecloud.html).
 

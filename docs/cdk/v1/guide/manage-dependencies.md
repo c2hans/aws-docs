@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cdk/v1/guide/manage-dependencies.html
 This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and will now only receive critical bug fixes and security patches. New features will be developed for CDK v2 exclusively. Support for CDK v1 will end entirely on June 1, 2023. [Migrate to CDK v2](work-with-cdk-v2.md) to have access to the latest features and fixes.
 
 # Managing dependencies
-<a name="manage-dependencies"></a>
 
 Dependencies for your AWS CDK app or library are managed using package management tools commonly used with the programming language in which you develop your app. Typically, the CDK supports the language's standard or official package management tool, if there is one, or its most popular or widely-supported one if not. You may also be able to use other tools, especially if they interoperate with the supported tools, although our ability to support alternatives is limited.
 

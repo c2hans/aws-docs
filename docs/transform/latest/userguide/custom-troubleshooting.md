@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-troubl
 ---
 
 # Troubleshooting
-<a name="custom-troubleshooting"></a>
 
 This section provides guidance for troubleshooting common issues with AWS Transform custom.
 

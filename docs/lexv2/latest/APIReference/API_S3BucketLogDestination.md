@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_S3BucketLo
 ---
 
 # S3BucketLogDestination
-<a name="API_S3BucketLogDestination"></a>
 
 Specifies an Amazon S3 bucket for logging audio conversations
 

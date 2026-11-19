@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Migrating from SQL Server to Amazon RDS for SQL Server with AWS Schema Conversion Tool
-<a name="CHAP_Source.SQLServer.ToRDSSQLServer"></a>
 
 Some things to consider when migrating SQL Server schema and code to Amazon RDS for SQL Server:
 + AWS SCT can convert SQL Server Agent to provide schedules, alerts, and jobs on an Amazon RDS for SQL Server DB instance. After conversion, you can use an Amazon RDS for SQL Server DB instance with SQL Server Reporting Services (SSRS), SQL Server Analysis Services (SSAS), and SQL Server Integration Services (SSIS).

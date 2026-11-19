@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-jupyterhub-a
 ---
 
 # JupyterHub configuration and administration
-<a name="emr-jupyterhub-administer"></a>
 
 JupyterHub and related components run inside a Docker container named `jupyterhub` that runs the Ubuntu operating system. There are several ways for you to administer components running inside the container.
 

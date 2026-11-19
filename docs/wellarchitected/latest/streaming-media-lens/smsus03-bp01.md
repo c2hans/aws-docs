@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMSUS03-BP01 Implement efficient encoding and delivery mechanisms
-<a name="smsus03-bp01"></a>
 
 Encode and deliver streaming media so that each viewer receives acceptable quality at the lowest practical bit rate. Encoding and delivery dominate the resource footprint of a streaming workload, because every avoidable bit is multiplied across millions of viewer sessions in transcode compute, network transfer, and client decode energy. Reducing bit rate to the minimum that delivers acceptable quality is the primary sustainability action in encoding and delivery.
 

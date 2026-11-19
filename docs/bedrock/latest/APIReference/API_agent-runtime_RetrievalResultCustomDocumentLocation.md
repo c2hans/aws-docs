@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalResultCustomDocumentLocation
-<a name="API_agent-runtime_RetrievalResultCustomDocumentLocation"></a>
 
 Contains information about the location of a document in a custom data source.
 

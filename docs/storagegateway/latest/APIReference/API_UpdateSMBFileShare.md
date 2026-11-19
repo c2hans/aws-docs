@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_U
 ---
 
 # UpdateSMBFileShare
-<a name="API_UpdateSMBFileShare"></a>
 
 Updates a Server Message Block (SMB) file share. This operation is only supported for S3 File Gateways.
 

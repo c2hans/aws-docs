@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # StopRecommender
-<a name="API_connect-customer-profiles_StopRecommender"></a>
 
 Stops a recommender, suspending its ability to generate recommendations. The recommender can be restarted later using StartRecommender.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Cl
 ---
 
 # ClinicalNoteGenerationSettings
-<a name="API_ClinicalNoteGenerationSettings"></a>
 
 Settings for generating clinical notes from the audio stream
 

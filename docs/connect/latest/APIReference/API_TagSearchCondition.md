@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TagSearc
 ---
 
 # TagSearchCondition
-<a name="API_TagSearchCondition"></a>
 
 The search criteria to be used to return tags.
 

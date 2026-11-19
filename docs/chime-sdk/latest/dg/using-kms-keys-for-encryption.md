@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/using-kms-keys-for-e
 ---
 
 # Enabling object level server-side encryption with AWS KMS key
-<a name="using-kms-keys-for-encryption"></a>
 
 Media Capture Pipeline and Media Concatenation Pipeline can use AWS Key Management Service (AWS KMS) customer managed keys to enable server-side encryption (SSE) for individual objects in an Amazon S3 bucket. To configure this, you must use the [CreateMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html) API call. The Media Concatenation Pipeline will use the server-side encryption parameters from the associated Media Capture Pipeline.
 

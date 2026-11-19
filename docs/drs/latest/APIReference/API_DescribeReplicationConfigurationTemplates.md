@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationConfigurationTemplates
-<a name="API_DescribeReplicationConfigurationTemplates"></a>
 
 Lists all ReplicationConfigurationTemplates, filtered by Source Server IDs.
 

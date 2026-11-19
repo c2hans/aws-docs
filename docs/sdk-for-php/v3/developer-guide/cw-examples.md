@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/cw-exampl
 ---
 
 # Amazon CloudWatch examples using the AWS SDK for PHP Version 3
-<a name="cw-examples"></a>
 
 Amazon CloudWatch (CloudWatch) is a web service that monitors your Amazon Web Services resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications. CloudWatch alarms send notifications or automatically make changes to the resources you are monitoring based on rules that you define.
 

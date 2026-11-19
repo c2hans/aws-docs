@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/pla
 ---
 
 # Troubleshooting
-<a name="playground-troubleshooting"></a>
 
 MediaConvert queue limit reached
 If your account has reached its MediaConvert queue limit, the console can't create the playground queue. Delete an unused MediaConvert queue, or request a queue limit increase, and then try again.

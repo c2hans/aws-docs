@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # CreateBudget
-<a name="API_CreateBudget"></a>
 
 Creates a budget to set spending thresholds for your rendering activity.
 

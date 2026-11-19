@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # UpdateCollectionDetail
-<a name="API_UpdateCollectionDetail"></a>
 
 Details about an updated OpenSearch Serverless collection.
 

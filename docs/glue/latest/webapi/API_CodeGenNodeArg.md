@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CodeGenNodeArg.ht
 ---
 
 # CodeGenNodeArg
-<a name="API_CodeGenNodeArg"></a>
 
 An argument or property of a node.
 

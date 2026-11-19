@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-clou
 ---
 
 # Definition of a metric for MediaConnect datapoints
-<a name="monitor-with-cloudwatch-metric-info"></a>
 
 AWS Elemental MediaConnect collects data that is the basis for metrics. It collects these *datapoints* every second and sends them immediately to Amazon CloudWatch. You can use CloudWatch to generate *metrics* for these datapoints.
 

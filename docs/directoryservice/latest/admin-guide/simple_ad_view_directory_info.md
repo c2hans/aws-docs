@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simp
 ---
 
 # Viewing Simple AD directory information
-<a name="simple_ad_view_directory_info"></a>
 
 **To view detailed directory information**
 

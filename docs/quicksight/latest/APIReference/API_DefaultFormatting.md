@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultFormatting
-<a name="API_DefaultFormatting"></a>
 
 A structure that represents a default formatting definition.
 

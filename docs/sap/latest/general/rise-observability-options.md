@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-observability-op
 ---
 
 # Observability Options
-<a name="rise-observability-options"></a>
 
 Observability in RISE with SAP requires a strategic approach considering native tools from AWS and SAP, and third-party solutions. The guide highlights three observability options that customers can choose from based on specific requirements and solution limitation.
 

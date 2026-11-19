@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Res
 ---
 
 # ResourceServerScopeDetails
-<a name="API_ResourceServerScopeDetails"></a>
 
 A structure that describes details for an IAM Identity Center access scope that is associated with a resource server.
 

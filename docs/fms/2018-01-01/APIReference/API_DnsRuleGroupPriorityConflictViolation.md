@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_DnsRuleG
 ---
 
 # DnsRuleGroupPriorityConflictViolation
-<a name="API_DnsRuleGroupPriorityConflictViolation"></a>
 
 A rule group that Firewall Manager tried to associate with a VPC has the same priority as a rule group that's already associated.
 

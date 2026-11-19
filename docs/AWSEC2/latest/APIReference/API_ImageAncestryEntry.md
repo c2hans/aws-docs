@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageAnce
 ---
 
 # ImageAncestryEntry
-<a name="API_ImageAncestryEntry"></a>
 
 Information about a single AMI in the ancestry chain and its source (parent) AMI.
 

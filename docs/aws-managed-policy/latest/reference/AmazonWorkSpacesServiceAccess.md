@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkSpacesServiceAccess
-<a name="AmazonWorkSpacesServiceAccess"></a>
 
 **Description**: Provides customer account access to AWS WorkSpaces service for launching a Workspace.
 

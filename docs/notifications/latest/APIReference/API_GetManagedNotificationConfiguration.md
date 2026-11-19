@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ge
 ---
 
 # GetManagedNotificationConfiguration
-<a name="API_GetManagedNotificationConfiguration"></a>
 
 Returns a specified `ManagedNotificationConfiguration`.
 

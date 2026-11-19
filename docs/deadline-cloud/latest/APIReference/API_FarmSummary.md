@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FarmSummary
-<a name="API_FarmSummary"></a>
 
 The summary of details for a farm.
 

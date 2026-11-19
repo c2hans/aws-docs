@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateKeysAn
 ---
 
 # CreateKeysAndCertificate
-<a name="API_CreateKeysAndCertificate"></a>
 
 Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key. You can also call `CreateKeysAndCertificate` over MQTT from a device, for more information, see [Provisioning MQTT API](https://docs.aws.amazon.com/iot/latest/developerguide/provision-wo-cert.html#provision-mqtt-api).
 

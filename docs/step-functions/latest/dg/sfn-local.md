@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sfn-local.html
 ---
 
 # Testing state machines with Step Functions Local (unsupported)
-<a name="sfn-local"></a>
 
 **Step Functions Local is unsupported**
 Step Functions Local does **not** provide feature parity and is **unsupported**.

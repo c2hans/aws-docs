@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_S
 ---
 
 # StartPipe
-<a name="API_StartPipe"></a>
 
 Start an existing pipe.
 

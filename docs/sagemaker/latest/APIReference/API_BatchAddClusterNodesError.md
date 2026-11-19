@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchA
 ---
 
 # BatchAddClusterNodesError
-<a name="API_BatchAddClusterNodesError"></a>
 
 Information about an error that occurred during the node addition operation.
 

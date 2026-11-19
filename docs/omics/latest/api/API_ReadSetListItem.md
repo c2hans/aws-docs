@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReadSetListItem.htm
 ---
 
 # ReadSetListItem
-<a name="API_ReadSetListItem"></a>
 
 A read set.
 

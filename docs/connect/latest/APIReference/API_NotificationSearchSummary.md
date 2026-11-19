@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Notifica
 ---
 
 # NotificationSearchSummary
-<a name="API_NotificationSearchSummary"></a>
 
 Summary information about a notification returned from a search operation.
 

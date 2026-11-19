@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-com
 ---
 
 # Create a custom component with Image Builder
-<a name="create-component"></a>
 
 After you've completed your component document, you can use it to create a custom component that your Image Builder recipes can use. You can create a custom component from the Image Builder console, from the API or SDKs, or from the command line. For more information about how to create a custom component with input parameters and use it in your recipes, see [Tutorial: Create a custom component with input parameters](tutorial-component-parameters.md).
 

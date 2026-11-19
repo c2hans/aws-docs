@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVol
 ---
 
 # CreateVolume
-<a name="API_CreateVolume"></a>
 
 Creates an EBS volume that can be attached to an instance in the same Availability Zone.
 

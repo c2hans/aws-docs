@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeleteCodeReviewFailure
-<a name="API_DeleteCodeReviewFailure"></a>
 
 Contains information about a code review that failed to delete.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ConnectPeerAssociation
-<a name="API_ConnectPeerAssociation"></a>
 
 Describes a core network Connect peer association.
 

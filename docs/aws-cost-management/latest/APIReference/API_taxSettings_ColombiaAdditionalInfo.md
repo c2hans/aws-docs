@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ColombiaAdditionalInfo
-<a name="API_taxSettings_ColombiaAdditionalInfo"></a>
 
 Contains additional tax information associated with your Tax Registration Number (TRN) in Colombia, derived from your Registro Único Tributario (RUT) document.
 

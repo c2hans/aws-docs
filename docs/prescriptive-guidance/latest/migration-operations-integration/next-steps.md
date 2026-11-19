@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 If you are in the process of modernizing your operations, use this guide and the [associated resources](resources.md) to start your journey. Many organizations that are considering a large-scale migration to the cloud invest signiﬁcant time and resources in planning and assessment, but it may be helpful to start with a targeted application to use as a minimal viable product (MVP). You'll ﬁnd it faster and more valuable to establish the foundation services, and then use the technical foundations, business learnings, and deployment processes developed in that project as the basis for larger-scale activities.
 

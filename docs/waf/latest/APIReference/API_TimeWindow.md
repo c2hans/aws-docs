@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_TimeWindow.h
 ---
 
 # TimeWindow
-<a name="API_TimeWindow"></a>
 
 In a [GetSampledRequests](API_GetSampledRequests.md) request, the `StartTime` and `EndTime` objects specify the time range for which you want AWS WAF to return a sample of web requests.
 

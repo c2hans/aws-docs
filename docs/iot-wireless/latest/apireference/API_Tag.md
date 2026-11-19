@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Tag
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A simple label consisting of a customer-defined key-value pair
 

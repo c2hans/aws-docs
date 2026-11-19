@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Amazon WorkSpaces and Application Auto Scaling
-<a name="services-that-can-integrate-workspaces"></a>
 
 You can scale a pool of WorkSpaces using target tracking scaling policies, step scaling policies, and scheduled scaling.
 

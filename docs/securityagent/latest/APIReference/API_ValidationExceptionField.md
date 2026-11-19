@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Va
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Describes one specific validation failure for an input member.
 

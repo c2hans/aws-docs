@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/design-a-prompt
 ---
 
 # Design a prompt
-<a name="design-a-prompt"></a>
 
 Designing an appropriate prompt is an important step towards building a successful application using Amazon Bedrock models. In this section, you learn how to design a prompt that is consistent, clear, and concise. You also learn about how you can control a model's response by using inference parameters. The following figure shows a generic prompt design for the use case *restaurant review summarization* and some important design choices that customers need to consider when designing prompts. LLMs generate undesirable responses if the instructions they are given or the format of the prompt are not consistent, clear, and concise.
 

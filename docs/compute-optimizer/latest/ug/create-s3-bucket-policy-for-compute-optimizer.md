@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/create-s3-bu
 ---
 
 # Specifying an existing S3 bucket for your recommendations export
-<a name="create-s3-bucket-policy-for-compute-optimizer"></a>
 
 You can export your Compute Optimizer recommendations to an Amazon Simple Storage Service (Amazon S3) bucket. Your recommendations are exported as CSV file and the metadata is exported as a JSON file. This section provides you with instructions on how to specify an Amazon S3 bucket for your recommendation export by adding a policy to the bucket. The policy that you add allows Compute Optimizer to write recommendations export files to your Amazon S3 bucket.
 

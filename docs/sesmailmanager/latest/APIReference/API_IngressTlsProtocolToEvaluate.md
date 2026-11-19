@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressTlsProtocolToEvaluate
-<a name="API_IngressTlsProtocolToEvaluate"></a>
 
 The union type representing the allowed types for the left hand side of a TLS condition.
 

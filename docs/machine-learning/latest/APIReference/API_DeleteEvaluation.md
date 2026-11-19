@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DeleteEvaluation
-<a name="API_DeleteEvaluation"></a>
 
 Assigns the `DELETED` status to an `Evaluation`, rendering it unusable.
 

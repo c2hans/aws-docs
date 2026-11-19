@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListCompositionRelationships
-<a name="API_ListCompositionRelationships"></a>
 
 Retrieves a paginated list of composition relationships for an asset model of type `COMPONENT_MODEL`.
 

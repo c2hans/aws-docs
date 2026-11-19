@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/pp-view
 ---
 
 # Viewing your Private Pricing contracts
-<a name="pp-view-contract"></a>
 
 After you verify access to a contract, its **Access** changes to **Verified** and you can open its details page. You can then view contract details and investment terms (also called credits in the API and SDKs).
 

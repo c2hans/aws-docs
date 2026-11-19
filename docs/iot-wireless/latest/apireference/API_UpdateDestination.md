@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateDestination
-<a name="API_UpdateDestination"></a>
 
 Updates properties of a destination.
 

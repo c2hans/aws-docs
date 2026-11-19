@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # DeleteTarget
-<a name="API_DeleteTarget"></a>
 
 Deletes a specified target for notifications.
 

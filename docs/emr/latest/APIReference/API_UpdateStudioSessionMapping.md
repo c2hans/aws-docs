@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_UpdateStudio
 ---
 
 # UpdateStudioSessionMapping
-<a name="API_UpdateStudioSessionMapping"></a>
 
 Updates the session policy attached to the user or group for the specified Amazon EMR Studio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Deployment dashboard
-<a name="deployment-dashboard-1"></a>
 
 ## API Gateway custom authorizers
 <a name="api-gateway-custom-authorizers"></a>

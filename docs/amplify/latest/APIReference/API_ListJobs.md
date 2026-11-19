@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListJobs
 ---
 
 # ListJobs
-<a name="API_ListJobs"></a>
 
 Lists the jobs for a branch of an Amplify app.
 

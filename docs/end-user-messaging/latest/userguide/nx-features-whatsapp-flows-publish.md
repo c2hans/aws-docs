@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Publishing, deprecating, and previewing WhatsApp Flows
-<a name="nx-features-whatsapp-flows-publish"></a>
 
 ## Publishing a Flow
 <a name="nx-features-whatsapp-flows-publish-flow"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningCheckImpossibleFinding
-<a name="API_AutomatedReasoningCheckImpossibleFinding"></a>
 
 Indicates that no valid claims can be made due to logical contradictions in the premises or rules.
 

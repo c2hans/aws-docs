@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Conf
 ---
 
 # ConfigurationDefinitionInput
-<a name="API_ConfigurationDefinitionInput"></a>
 
 Defines the preferences and options for a configuration definition.
 

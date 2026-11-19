@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Total effort summary
-<a name="total-effort-summary"></a>
 
 **Considering migration** **scope of 1 cluster \| 100\+ applications. The following table represents the total effort summary.**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailSensitiveInformationPolicyConfig
-<a name="API_GuardrailSensitiveInformationPolicyConfig"></a>
 
 Contains details about PII entities and regular expressions to configure for the guardrail.
 

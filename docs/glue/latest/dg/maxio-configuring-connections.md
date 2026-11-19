@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/maxio-configuring-connect
 ---
 
 # Configuring Maxio connections
-<a name="maxio-configuring-connections"></a>
 
 Maxio connections use basic authentication. You store your Maxio credential in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/logging.html
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Logging AWS WAF protection pack (web ACL) traffic
-<a name="logging"></a>
 
 This section explains the logging options for your AWS WAF protection packs (web ACLs).
 

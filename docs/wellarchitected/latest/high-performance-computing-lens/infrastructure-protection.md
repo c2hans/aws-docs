@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Infrastructure protection
-<a name="infrastructure-protection"></a>
 
 | HPCSEC01: How do you implement network-layer separation in your HPC cluster?  |
 | --- |

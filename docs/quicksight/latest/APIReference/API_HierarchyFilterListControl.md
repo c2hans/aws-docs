@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Hiera
 ---
 
 # HierarchyFilterListControl
-<a name="API_HierarchyFilterListControl"></a>
 
 A control from a hierarchy filter that displays the hierarchy as a list. You can expand a value to see and select the values beneath it, and select either a single value or multiple values.
 

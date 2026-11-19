@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetIdentifierDeclaration
-<a name="API_DataSetIdentifierDeclaration"></a>
 
 A data set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/edit-domain.ht
 ---
 
 # Edit Amazon DataZone domains
-<a name="edit-domain"></a>
 
 In Amazon DataZone, a domain is an organizing entity for connecting together your assets, users, and their projects. For more information, see [Amazon DataZone terminology and concepts](datazone-concepts.md).
 

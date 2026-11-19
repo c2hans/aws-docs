@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Ge
 ---
 
 # GetProfile
-<a name="API_GetProfile"></a>
 
 Gets a profile.
 

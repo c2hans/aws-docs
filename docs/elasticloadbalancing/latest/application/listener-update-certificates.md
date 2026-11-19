@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Update an HTTPS listener for your Application Load Balancer
-<a name="listener-update-certificates"></a>
 
 After you create an HTTPS listener, you can replace the default certificate, update the certificate list, or replace the security policy.
 

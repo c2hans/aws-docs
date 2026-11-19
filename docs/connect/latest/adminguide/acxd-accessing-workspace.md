@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-accessing
 ---
 
 # Accessing an agentic CX designer workspace
-<a name="acxd-accessing-workspace"></a>
 
 Agentic CX designer is accessed through Amazon Connect Customer and organized into workspaces.
 

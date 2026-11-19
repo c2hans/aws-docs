@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/partnerguide/go-to-ma
 ---
 
 # Go-to-market activities
-<a name="go-to-market-activities"></a>
 
 Partners can also engage in optional marketing activities to help explain and promote their AWS Security Hub CSPM integration.
 

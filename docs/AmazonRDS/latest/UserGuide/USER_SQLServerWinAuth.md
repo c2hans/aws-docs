@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Working with AWS Managed Active Directory with RDS for SQL Server
-<a name="USER_SQLServerWinAuth"></a>
 
 You can use AWS Managed Microsoft AD to authenticate users with Windows Authentication when they connect to your RDS for SQL Server DB instance. The DB instance works with AWS Directory Service for Microsoft Active Directory, also called AWS Managed Microsoft AD, to enable Windows Authentication. When users authenticate with a SQL Server DB instance joined to the trusting domain, authentication requests are forwarded to the domain directory that you create with Directory Service.
 

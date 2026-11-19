@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-a
 ---
 
 # Identity-based policy examples for IAM Identity Center
-<a name="iam-auth-access-using-id-policies"></a>
 
 This topic provides examples of IAM policies that you can create to grant users and roles permissions to administer IAM Identity Center.
 

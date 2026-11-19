@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Types_AWS_WA
 ---
 
 # AWS WAF Classic
-<a name="API_Types_AWS_WAF"></a>
 
 The following data types are supported by AWS WAF Classic:
 +  [ActivatedRule](API_waf_ActivatedRule.md)

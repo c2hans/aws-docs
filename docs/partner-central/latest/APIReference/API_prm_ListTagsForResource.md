@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListTagsForResource
-<a name="API_prm_ListTagsForResource"></a>
 
 Returns the tags associated with the specified resource.
 

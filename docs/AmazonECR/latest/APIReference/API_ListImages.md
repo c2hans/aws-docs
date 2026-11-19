@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListIm
 ---
 
 # ListImages
-<a name="API_ListImages"></a>
 
 Lists all the image IDs for the specified repository.
 

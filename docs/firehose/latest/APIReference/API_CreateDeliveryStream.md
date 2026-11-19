@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateD
 ---
 
 # CreateDeliveryStream
-<a name="API_CreateDeliveryStream"></a>
 
 Creates a Firehose stream.
 

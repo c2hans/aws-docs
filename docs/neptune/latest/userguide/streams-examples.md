@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/streams-example
 ---
 
 # Neptune Streams Examples
-<a name="streams-examples"></a>
 
 The following examples show how to access change-log stream data in Amazon Neptune.
 

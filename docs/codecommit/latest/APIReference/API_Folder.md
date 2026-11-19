@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Folde
 ---
 
 # Folder
-<a name="API_Folder"></a>
 
 Returns information about a folder in a repository.
 

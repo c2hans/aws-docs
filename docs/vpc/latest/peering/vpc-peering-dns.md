@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-dns.html
 ---
 
 # Enable DNS resolution for a VPC peering connection
-<a name="vpc-peering-dns"></a>
 
 The DNS settings for a VPC peering connection determine how public DNS hostnames are resolved for requests that traverse the VPC peering connection. If an EC2 instance on one side of a VPC peering connection sends a request to an EC2 instance on the other side using the public IPv4 DNS hostname of the instance, the DNS hostname is resolved as follows.
 

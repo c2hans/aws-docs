@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Deprec
 ---
 
 # DeprecateActivityType
-<a name="API_DeprecateActivityType"></a>
 
 Deprecates the specified *activity type*. After an activity type has been deprecated, you cannot create new tasks of that activity type. Tasks of this type that were scheduled before the type was deprecated continue to run.
 

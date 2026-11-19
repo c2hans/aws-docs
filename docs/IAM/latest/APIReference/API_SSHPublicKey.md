@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SSHPublicKey
 ---
 
 # SSHPublicKey
-<a name="API_SSHPublicKey"></a>
 
 Contains information about an SSH public key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogEntry.html
 ---
 
 # CatalogEntry
-<a name="API_CatalogEntry"></a>
 
 Specifies a table definition in the AWS Glue Data Catalog.
 

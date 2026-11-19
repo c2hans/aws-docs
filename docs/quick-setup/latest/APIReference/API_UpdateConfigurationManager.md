@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Upda
 ---
 
 # UpdateConfigurationManager
-<a name="API_UpdateConfigurationManager"></a>
 
 Updates a Quick Setup configuration manager.
 

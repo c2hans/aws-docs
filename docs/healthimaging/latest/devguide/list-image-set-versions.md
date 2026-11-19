@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/list-image
 ---
 
 # Listing image set versions
-<a name="list-image-set-versions"></a>
 
 Use the `ListImageSetVersions` action to list version history for an [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [`ListImageSetVersions`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_ListImageSetVersions.html) in the *AWS HealthImaging API Reference*.
 

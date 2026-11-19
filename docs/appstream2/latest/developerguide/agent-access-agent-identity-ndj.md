@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 ---
 
 # Agent identity for non-domain-joined fleets
-<a name="agent-access-agent-identity-ndj"></a>
 
 For a non-domain-joined fleet, the agent runs one on-behalf-of (OBO) exchange at your identity provider (IdP), exchanges the resulting token for temporary AWS credentials, and connects to the Model Context Protocol (MCP) server with those credentials. The MCP server creates the streaming session for the user named in the source identity.
 

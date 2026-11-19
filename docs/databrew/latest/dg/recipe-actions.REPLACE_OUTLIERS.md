@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.REPLAC
 ---
 
 # REPLACE\_OUTLIERS
-<a name="recipe-actions.REPLACE_OUTLIERS"></a>
 
 Updates the data point values that classify as outliers, based on the settings in the parameters.
 

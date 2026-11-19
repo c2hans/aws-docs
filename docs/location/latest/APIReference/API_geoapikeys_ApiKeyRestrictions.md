@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoapik
 ---
 
 # ApiKeyRestrictions
-<a name="API_geoapikeys_ApiKeyRestrictions"></a>
 
 API Restrictions on the allowed actions, resources, referers, Android apps, and Apple apps for an API key resource.
 

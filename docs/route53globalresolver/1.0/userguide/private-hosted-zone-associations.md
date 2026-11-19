@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/priv
 ---
 
 # Manage private hosted zone associations with Amazon Route 53 Global Resolver
-<a name="private-hosted-zone-associations"></a>
 
 ## Creating private hosted zones for internal applications
 <a name="creating-private-hosted-zones"></a>

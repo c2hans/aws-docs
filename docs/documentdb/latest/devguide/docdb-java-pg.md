@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-java-pg
 ---
 
 # Amazon DocumentDB Java programming guide
-<a name="docdb-java-pg"></a>
 
 This comprehensive guide provides a detailed walk through for working with Amazon DocumentDB using MongoDB’s Java drivers, covering essential aspects of database operations and management.
 

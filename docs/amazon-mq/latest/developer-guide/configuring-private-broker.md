@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configu
 ---
 
 # Configuring a private Amazon MQ broker
-<a name="configuring-private-broker"></a>
 
 A private broker does not have public accessibility and cannot be accessed from outside of your VPC. Before configuring a private broker, view the following information about VPCs, subnets, and security groups:
 + **VPCs**

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteFileSy
 ---
 
 # DeleteFileSystemOpenZFSResponse
-<a name="API_DeleteFileSystemOpenZFSResponse"></a>
 
 The response object for the Amazon FSx for OpenZFS file system that's being deleted in the `DeleteFileSystem` operation.
 

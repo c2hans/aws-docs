@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedUser
-<a name="API_DescribedUser"></a>
 
 Describes the properties of a user that was specified.
 

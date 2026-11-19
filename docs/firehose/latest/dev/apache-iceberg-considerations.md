@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/apache-iceberg-consi
 ---
 
 # Considerations and limitations
-<a name="apache-iceberg-considerations"></a>
 
 **Note**
 Firehose supports Apache Iceberg Tables as a destination in all [AWS Regions](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html?icmpid=docs_homepage_addtlrcs#region) except China Regions, AWS GovCloud (US) Regions, Asia Pacific (Taipei), Asia Pacific (Malaysia), Asia Pacific (New Zealand), and Mexico (Central).

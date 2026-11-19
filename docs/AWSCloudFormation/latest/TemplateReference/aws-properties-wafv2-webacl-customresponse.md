@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL CustomResponse
-<a name="aws-properties-wafv2-webacl-customresponse"></a>
 
 A custom response to send to the client. You can define a custom response for rule actions and default web ACL actions that are set to the block action.
 

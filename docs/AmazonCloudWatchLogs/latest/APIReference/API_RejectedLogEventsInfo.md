@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # RejectedLogEventsInfo
-<a name="API_RejectedLogEventsInfo"></a>
 
 Represents the rejected events.
 

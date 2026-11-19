@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP10 Prepare forensic capabilities
-<a name="fnd05-bp10"></a>
 
  Ahead of a security incident, prepare forensics accounts, tooling, and documented procedures so responders can collect and analyze evidence quickly and preserve chain of custody.
 

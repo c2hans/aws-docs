@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/ca-hierarchy.
 ---
 
 # Design a CA hierarchy
-<a name="ca-hierarchy"></a>
 
 With AWS Private CA, you can create a hierarchy of certificate authorities with up to five levels. The root CA, at the top of a hierarchy tree, can have any number of branches. The root CA can have as many as four levels of subordinate CAs on each branch. You can also create multiple hierarchies, each with its own root.
 

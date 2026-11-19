@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Star
 ---
 
 # StartTimeRange
-<a name="API_StartTimeRange"></a>
 
  A time range used to specify when the behavior of an insight or anomaly started.
 

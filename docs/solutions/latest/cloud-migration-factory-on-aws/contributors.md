@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 The following individuals contributed to this document:
 + Abe Wubshet

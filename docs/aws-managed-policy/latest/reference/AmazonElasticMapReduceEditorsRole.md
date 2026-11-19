@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticMapReduceEditorsRole
-<a name="AmazonElasticMapReduceEditorsRole"></a>
 
 **Description**: Default policy for the Amazon Elastic MapReduce Editors service role.
 

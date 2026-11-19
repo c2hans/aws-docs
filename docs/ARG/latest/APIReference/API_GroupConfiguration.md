@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GroupConfigu
 ---
 
 # GroupConfiguration
-<a name="API_GroupConfiguration"></a>
 
 A service configuration associated with a resource group. The configuration options are determined by the AWS service that defines the `Type`, and specifies which resources can be included in the group. You can add a service configuration when you create the group by using [CreateGroup](API_CreateGroup.md), or later by using the [PutGroupConfiguration](API_PutGroupConfiguration.md) operation. For details about group service configuration syntax, see [Service configurations for resource groups](https://docs.aws.amazon.com/ARG/latest/APIReference/about-slg.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetMaintenanceWindowExecutionTaskInvocation
-<a name="API_GetMaintenanceWindowExecutionTaskInvocation"></a>
 
 Retrieves information about a specific task running on a specific target.
 

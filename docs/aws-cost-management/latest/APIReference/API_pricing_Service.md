@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Service
-<a name="API_pricing_Service"></a>
 
 The metadata for a service, such as the service code and available attribute names.
 

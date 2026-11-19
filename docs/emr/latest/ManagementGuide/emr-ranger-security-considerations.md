@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-se
 ---
 
 # Known issues for Amazon EMR integration
-<a name="emr-ranger-security-considerations"></a>
 
 **Known Issues**
 

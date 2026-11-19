@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 ---
 
 # Mid-conversation system messages
-<a name="claude-messages-mid-conversation-system"></a>
 
 You can append `{"role": "system", ...}` messages to the `messages` array. This adds or updates system instructions partway through a conversation without invalidating the cached prefix.
 

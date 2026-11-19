@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/connector-upg
 ---
 
 # Upgrading AWS Partner CRM connector to the new data model
-<a name="connector-upgrade-plan"></a>
 
 **Important**
 Test and approve the new data model upgrade in your sandbox Salesforce organization before upgrading your production environment. For the new data model and changes between the old and new models, refer to the following [aws-samples/partner-crm-integration-samples](https://github.com/aws-samples/partner-crm-integration-samples/tree/main/opportunity-samples) on GitHub:

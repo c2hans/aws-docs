@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/code-sample-java.html
 ---
 
 # Tutorial: Using the AWS Health API with Java examples
-<a name="code-sample-java"></a>
 
 The following Java code examples demonstrate how to initialize an AWS Health client and retrieve information about events and entities.
 

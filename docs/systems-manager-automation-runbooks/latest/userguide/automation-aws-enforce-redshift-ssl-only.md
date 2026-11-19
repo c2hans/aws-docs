@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnforceSSLOnlyConnectionsToRedshiftCluster`
-<a name="automation-aws-enforce-redshift-ssl-only"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd07-b
 ---
 
 # FND07-BP02 Implement centralized network protection controls
-<a name="fnd07-bp02"></a>
 
  Centralized network protection controls apply consistent traffic filtering, inspection, threat prevention, and security monitoring across an organization's network. Standard controls at strategic inspection points detect and prevent threats, meet compliance requirements, and protect workloads from network-based attacks without each team rebuilding the same controls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-t
 ---
 
 # TagResource
-<a name="API_iot-secure-tunneling_TagResource"></a>
 
 A resource tag.
 

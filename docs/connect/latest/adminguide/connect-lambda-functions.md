@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-lambda
 ---
 
 # Grant Connect Customer access to your AWS Lambda functions
-<a name="connect-lambda-functions"></a>
 
 Connect Customer can interact with your own systems and take different paths in flows dynamically. To achieve this, invoke AWS Lambda functions in a flow, fetch the results, and call your own services or interact with other AWS data stores or services. For more information, see the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/).
 

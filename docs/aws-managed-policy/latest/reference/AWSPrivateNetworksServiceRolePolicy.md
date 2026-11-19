@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPrivateNetworksServiceRolePolicy
-<a name="AWSPrivateNetworksServiceRolePolicy"></a>
 
 **Description**: Allows AWS Private Networks Service to manage resources on behalf of the customer.
 

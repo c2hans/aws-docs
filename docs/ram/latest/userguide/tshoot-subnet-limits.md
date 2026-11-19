@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-subnet-limit
 ---
 
 # You can't share a VPC subnet
-<a name="tshoot-subnet-limits"></a>
 
 ## Scenario
 <a name="tshoot-subnet-limits-scenario"></a>

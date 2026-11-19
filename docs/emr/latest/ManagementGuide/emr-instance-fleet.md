@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-
 ---
 
 # Planning and configuring instance fleets for your Amazon EMR cluster
-<a name="emr-instance-fleet"></a>
 
 **Note**
 The instance fleets configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.0 and 5.0.3.

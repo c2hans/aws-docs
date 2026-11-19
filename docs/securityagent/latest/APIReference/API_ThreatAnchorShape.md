@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Th
 ---
 
 # ThreatAnchorShape
-<a name="API_ThreatAnchorShape"></a>
 
 DFD element that a threat is anchored to.
 

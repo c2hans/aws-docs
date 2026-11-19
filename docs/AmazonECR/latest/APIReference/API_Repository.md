@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Reposi
 ---
 
 # Repository
-<a name="API_Repository"></a>
 
 An object representing a repository.
 

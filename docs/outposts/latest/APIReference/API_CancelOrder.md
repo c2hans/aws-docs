@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_CancelO
 ---
 
 # CancelOrder
-<a name="API_CancelOrder"></a>
 
 Cancels the specified order for an Outpost.
 

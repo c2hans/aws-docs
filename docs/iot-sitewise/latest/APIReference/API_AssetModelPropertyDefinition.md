@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetModelPropertyDefinition
-<a name="API_AssetModelPropertyDefinition"></a>
 
 Contains an asset model property definition. This property definition is applied to all assets created from the asset model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Incident response
-<a name="incident-response"></a>
 
 |  **MIDASEC07**: How do you implement monitoring and threat detection for industrial systems?  |
 | --- |

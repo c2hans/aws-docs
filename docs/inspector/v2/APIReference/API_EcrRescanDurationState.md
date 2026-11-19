@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_EcrRescanD
 ---
 
 # EcrRescanDurationState
-<a name="API_EcrRescanDurationState"></a>
 
 Details about the state of your ECR re-scan duration settings. The ECR re-scan duration defines how long an ECR image will be actively scanned by Amazon Inspector. When the number of days since an image was last pushed exceeds the duration configured for image pull date, and the duration configured for image pull date, the monitoring state of that image becomes `inactive` and all associated findings are scheduled for closure.
 

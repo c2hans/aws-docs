@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Activate a proactive control-based Hook in your account
-<a name="proactive-controls-hooks-activate-hooks"></a>
 
 The following topic shows you how to activate a proactive control-based Hook in your account, which makes it usable in the account and Region it was activated in.
 

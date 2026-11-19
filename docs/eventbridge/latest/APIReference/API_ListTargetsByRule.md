@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_List
 ---
 
 # ListTargetsByRule
-<a name="API_ListTargetsByRule"></a>
 
 Lists the targets assigned to the specified rule.
 

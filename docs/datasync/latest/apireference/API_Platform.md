@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Platfor
 ---
 
 # Platform
-<a name="API_Platform"></a>
 
 The platform-related details about the AWS DataSync agent, such as the version number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/send-an-email-with-amazo
 ---
 
 # Send an Email with Amazon SES
-<a name="send-an-email-with-amazon-ses"></a>
 
 |  |  |
 | --- |--- |

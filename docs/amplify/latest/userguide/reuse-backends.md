@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/reuse-backends.
 ---
 
 # Use Amplify backends across apps (Gen 1 apps only)
-<a name="reuse-backends"></a>
 
 **Note**
 The information in this section is for Gen 1 apps only. If you want to share backend resources for a Gen 2 app, see [Share resources across branches](https://docs.amplify.aws/nextjs/deploy-and-host/fullstack-branching/share-resources/) in the *Amplify docs*

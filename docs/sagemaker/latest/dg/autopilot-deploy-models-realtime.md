@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-deploy-mod
 ---
 
 # Deploy models for real-time inference
-<a name="autopilot-deploy-models-realtime"></a>
 
 Real-time inference is ideal for inference workloads where you have real-time, interactive, low latency requirements. This section shows how you can use real-time inferencing to obtain predictions interactively from your model.
 

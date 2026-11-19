@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/delete-
 ---
 
 # Deleting a Cost Explorer report
-<a name="delete-saved-ce-report"></a>
 
 You can use the console to delete saved Cost Explorer reports.
 

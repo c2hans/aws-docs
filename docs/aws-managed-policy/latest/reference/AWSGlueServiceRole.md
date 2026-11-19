@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGlueServiceRole
-<a name="AWSGlueServiceRole"></a>
 
 **Description**: Policy for AWS Glue service role which allows access to related services including EC2, S3, and Cloudwatch Logs
 

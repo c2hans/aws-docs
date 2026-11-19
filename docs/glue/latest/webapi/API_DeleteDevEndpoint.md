@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteDevEndpoint
 ---
 
 # DeleteDevEndpoint
-<a name="API_DeleteDevEndpoint"></a>
 
 Deletes a specified development endpoint.
 

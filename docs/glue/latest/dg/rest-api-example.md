@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rest-api-example.html
 ---
 
 # Tutorial: Creating a REST API ConnectionType and Connection
-<a name="rest-api-example"></a>
 
 **Connecting to the Foo REST API**
 

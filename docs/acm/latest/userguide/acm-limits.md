@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-limits.html
 ---
 
 # Quotas
-<a name="acm-limits"></a>
 
 The following AWS Certificate Manager (ACM) service quotas apply to each AWS region per each AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_S
 ---
 
 # Site
-<a name="API_Site"></a>
 
 Describes a site.
 

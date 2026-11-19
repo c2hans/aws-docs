@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # GetInvestigationGroup
-<a name="API_GetInvestigationGroup"></a>
 
 Returns the configuration information for the specified investigation group.
 

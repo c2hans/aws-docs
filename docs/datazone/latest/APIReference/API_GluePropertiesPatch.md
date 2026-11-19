@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GluePro
 ---
 
 # GluePropertiesPatch
-<a name="API_GluePropertiesPatch"></a>
 
 The AWS Glue properties patch of a connection.
 

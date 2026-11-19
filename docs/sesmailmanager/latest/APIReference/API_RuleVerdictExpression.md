@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleVerdictExpression
-<a name="API_RuleVerdictExpression"></a>
 
 A verdict expression is evaluated against verdicts of the email.
 

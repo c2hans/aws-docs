@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Minimu
 ---
 
 # MinimumEngineVersionPerAllowedValue
-<a name="API_MinimumEngineVersionPerAllowedValue"></a>
 
 The minimum DB engine version required for each corresponding allowed value for an option setting.
 

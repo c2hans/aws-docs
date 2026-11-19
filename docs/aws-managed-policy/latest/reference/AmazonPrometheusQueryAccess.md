@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonPrometheusQueryAccess
-<a name="AmazonPrometheusQueryAccess"></a>
 
 **Description**: Grants access to run queries against AWS Managed Prometheus resources
 

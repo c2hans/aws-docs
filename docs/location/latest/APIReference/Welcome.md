@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/Welcome.htm
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon Location Service Routes V2
 <a name="Welcome_Amazon_Location_Service_Routes_V2"></a>

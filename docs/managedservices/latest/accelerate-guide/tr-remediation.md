@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Work with remediations in Trusted Remediator
-<a name="tr-remediation"></a>
 
 ## Track remediations in Trusted Remediator
 <a name="tr-remediation-track"></a>
@@ -98,7 +97,7 @@ No executions associated with the OpsItem might indicate that the execution fail
 
 1. Verify that values in the SSM document match allowed patterns. To view parameters details in the document content, select the document name in the **Runbooks** section.
 
-1. After you review and correct the parameters, [manually run the SSM document again](#tr-remediation).
+1. After you review and correct the parameters, [manually run the SSM document again](tr-remediation.md).
 
 1. To prevent this error from reoccurring, make sure that you configure the remediation with the correct **parameter** values in your configuration. For more information, see [Configure Trusted Advisor check remediation in Trusted Remediator](tr-configure-remediations.md)
 
@@ -117,9 +116,9 @@ Remediation documents contain multiple steps that interact with AWS services per
 
      This error indicates that the incorrect bucket name was specified in the remediation configuration's preconfigured-parameters.
 
-     To resolve this error, [manually run the automation](#tr-remediation) using the correct bucket name. To prevent this issue from reoccurring, [update the remediation configuration](tr-configure-remediations.md) with the correct bucket name.
+     To resolve this error, [manually run the automation](tr-remediation.md) using the correct bucket name. To prevent this issue from reoccurring, [update the remediation configuration](tr-configure-remediations.md) with the correct bucket name.
    + `DB instance my-db-instance-1 is not in available status for modification.`
 
      This error indicates that the automation couldn't make the expected changes because the DB instance was in an invalid state.
 
-     To resolve this error, [manually run the automation](#tr-remediation).
+     To resolve this error, [manually run the automation](tr-remediation.md).

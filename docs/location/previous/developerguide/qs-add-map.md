@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-add-
 ---
 
 # Add an Amazon Location interactive map to your application
-<a name="qs-add-map"></a>
 
 Now that you have a framework and a div placeholder, you can add the map control to your application. This tutorial uses [MapLibre GL JS](https://maplibre.org/maplibre-gl-js-docs/api/) as a map control, getting data from Amazon Location Service. You will also use the [JavaScript Authentication helper](loc-sdk-auth.md) to facilitate signing of calls to the Amazon Location APIs with your API key.
 

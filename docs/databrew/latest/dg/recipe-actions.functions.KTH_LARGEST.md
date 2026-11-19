@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # KTH\_LARGEST
-<a name="recipe-actions.functions.KTH_LARGEST"></a>
 
  Returns the *k*th largest number from the selected source columns in a new column.
 

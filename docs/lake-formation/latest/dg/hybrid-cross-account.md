@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/hybrid-cross-ac
 ---
 
 # Managing cross-account permissions using both AWS Glue and Lake Formation
-<a name="hybrid-cross-account"></a>
 
 It's possible to grant cross-account access to Data Catalog resources and underlying data by using either AWS Glue or AWS Lake Formation.
 

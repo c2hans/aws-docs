@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTDeviceTesterForGreengrassFullAccess
-<a name="AWSIoTDeviceTesterForGreengrassFullAccess"></a>
 
 **Description**: Allows AWS IoT Device Tester to run the AWS Greengrass qualification suite by allowing access to related services including Lambda, IoT, API Gateway, IAM
 

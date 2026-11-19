@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel11-b
 ---
 
 # REL11-BP05 Use static stability to prevent bimodal behavior
-<a name="rel11-bp05"></a>
 
  A statically stable workload behaves the same way whether or not a failure is occurring. Bimodal behavior is the opposite: the workload acts one way in normal operation and a different way during a failure, usually because it tries to acquire new resources at the moment of impairment. Design workloads to operate in a single mode so their behavior stays predictable when a component fails.
 

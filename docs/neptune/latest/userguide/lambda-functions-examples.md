@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/lambda-function
 ---
 
 # AWS Lambda function examples for Amazon Neptune
-<a name="lambda-functions-examples"></a>
 
 The following example AWS Lambda functions, written in Java, JavaScript and Python, illustrate upserting a single vertex with a randomly generated ID using the `mergeV()` step (see [Making efficient upserts with Gremlin `mergeV()` and `mergeE()` steps](gremlin-efficient-upserts.md)).
 

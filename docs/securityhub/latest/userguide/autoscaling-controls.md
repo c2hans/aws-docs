@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/autoscaling
 ---
 
 # Security Hub CSPM controls for Auto Scaling
-<a name="autoscaling-controls"></a>
 
 These Security Hub CSPM controls evaluate the Amazon EC2 Auto Scaling service and resources.
 

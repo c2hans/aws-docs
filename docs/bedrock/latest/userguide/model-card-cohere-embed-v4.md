@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohe
 ---
 
 # Embed v4
-<a name="model-card-cohere-embed-v4"></a>
 
 ## ![Cohere logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/cohere.png) Cohere — Embed v4
 <a name="model-card-cohere-embed-v4-header"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetSubs
 ---
 
 # GetSubscriptionRequestDetails
-<a name="API_GetSubscriptionRequestDetails"></a>
 
 Gets the details of the specified subscription request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Manag
 ---
 
 # ManagedLogs
-<a name="API_ManagedLogs"></a>
 
 The entity that provides configuration control over managed logs.
 

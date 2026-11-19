@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_S
 ---
 
 # SearchDiscoverableRegistryRecords
-<a name="API_SearchDiscoverableRegistryRecords"></a>
 
  Searches the discoverable registry records in a registry using a natural language query. Returns metadata for the matching records ordered by relevance.
 

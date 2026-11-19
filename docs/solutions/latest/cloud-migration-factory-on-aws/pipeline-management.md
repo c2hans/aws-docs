@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Pipeline management
-<a name="pipeline-management"></a>
 
 The pipeline manager is a component within Cloud Migration Factory on AWS to support the creation and running of a sequence of tasks automatically. The pipeline manager provides a way for users to do the following:
 + Run a template of predefined tasks for migration and modernization

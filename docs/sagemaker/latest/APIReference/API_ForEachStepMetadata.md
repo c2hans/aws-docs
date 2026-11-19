@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ForEac
 ---
 
 # ForEachStepMetadata
-<a name="API_ForEachStepMetadata"></a>
 
 The status, the iteration-step counts, and the selector information for a ForEach step execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Deleting a DB cluster snapshot
-<a name="aurora-delete-snapshot"></a>
 
 You can delete DB cluster snapshots managed by Amazon RDS when you no longer need them.
 

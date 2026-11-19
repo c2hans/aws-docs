@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # User
-<a name="API_User"></a>
 
  A user object that contains identifying information and attributes for a specified user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetResourceLogLevel
-<a name="API_GetResourceLogLevel"></a>
 
 Fetches the log-level override, if any, for a given resource ID and resource type..
 

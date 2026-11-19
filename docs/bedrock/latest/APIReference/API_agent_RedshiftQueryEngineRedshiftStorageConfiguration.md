@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RedshiftQueryEngineRedshiftStorageConfiguration
-<a name="API_agent_RedshiftQueryEngineRedshiftStorageConfiguration"></a>
 
 Contains configurations for storage in Amazon Redshift.
 

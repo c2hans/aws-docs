@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Architecture selection
-<a name="gameperf01"></a>
 
 |  GAMEPERF01: How do you select the appropriate hosting option for your game servers?  |
 | --- |

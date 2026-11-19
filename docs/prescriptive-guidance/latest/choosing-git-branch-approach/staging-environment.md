@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Staging environment
-<a name="staging-environment"></a>
 
 The *staging environment* is configured to be the same as the production environment. For example, the data setup should be similar in scope and size to production workloads. Use the staging environment to verify that code and infrastructure operate as expected. This environment is also the preferred choice for business use cases, such as previews or customer demonstrations.
 

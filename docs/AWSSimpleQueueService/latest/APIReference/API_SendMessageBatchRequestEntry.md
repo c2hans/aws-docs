@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # SendMessageBatchRequestEntry
-<a name="API_SendMessageBatchRequestEntry"></a>
 
 Contains the details of a single Amazon SQS message along with an `Id`.
 

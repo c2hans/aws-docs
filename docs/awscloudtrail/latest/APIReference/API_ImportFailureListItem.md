@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Im
 ---
 
 # ImportFailureListItem
-<a name="API_ImportFailureListItem"></a>
 
  Provides information about an import failure.
 

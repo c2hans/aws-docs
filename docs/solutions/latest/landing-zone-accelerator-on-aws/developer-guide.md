@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
 This section addresses the source code, configuration files, and administrator tasks for this solution.
 

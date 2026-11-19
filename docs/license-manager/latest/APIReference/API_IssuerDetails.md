@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # IssuerDetails
-<a name="API_IssuerDetails"></a>
 
 Details associated with the issuer of a license.
 

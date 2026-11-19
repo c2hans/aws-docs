@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-email-ch
 ---
 
 # Set up email in Connect Customer
-<a name="setup-email-channel"></a>
 
 Following is an overview of the steps to set up the email channel for your contact center.
 + [Enable email for your Connect Customer instance](enable-email1.md). During this process you get an auto-generated email address. You also have the option of adding five custom addresses.

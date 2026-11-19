@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Serv
 ---
 
 # ServiceNetworkSummary
-<a name="API_ServiceNetworkSummary"></a>
 
 Summary information about a service network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Connector versions
-<a name="gateway-target-connector-versions"></a>
 
 Built-in connectors on Amazon Bedrock AgentCore Gateway use semantic versioning (`MAJOR.MINOR.PATCH`). You can pin a target to a specific connector version or let it use the connector’s current default version.
 

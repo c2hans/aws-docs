@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListIn
 ---
 
 # ListInferenceRouters
-<a name="API_ListInferenceRouters"></a>
 
 Lists the inference routers in your account in the current AWS Region. A router that you just created might not appear in the list right away.
 

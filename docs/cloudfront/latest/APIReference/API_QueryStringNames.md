@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Query
 ---
 
 # QueryStringNames
-<a name="API_QueryStringNames"></a>
 
 Contains a list of query string names.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateClusterExtension
-<a name="API_CreateClusterExtension"></a>
 
 Installs an extension, such as `sagemaker-observability`, on a SageMaker HyperPod cluster orchestrated by Slurm. The cluster must have `NodeProvisioningMode` set to `Continuous` and can have only one extension with a given name. To track the installation, call `DescribeClusterExtension`.
 

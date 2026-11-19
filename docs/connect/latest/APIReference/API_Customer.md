@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Customer
 ---
 
 # Customer
-<a name="API_Customer"></a>
 
 Information about the Customer on the contact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the [assessment](#assessment), [Region](#supported-aws-regions), [cost](cost.md), [security](security-1.md), and [quota](quotas.md) considerations for planning your deployment.
 

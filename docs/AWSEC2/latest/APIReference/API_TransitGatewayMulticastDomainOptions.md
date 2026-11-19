@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayMulticastDomainOptions
-<a name="API_TransitGatewayMulticastDomainOptions"></a>
 
 Describes the options for a transit gateway multicast domain.
 

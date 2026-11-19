@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # S3Object
-<a name="API_S3Object"></a>
 
  Contains the S3 bucket name and the Amazon S3 key name.
 

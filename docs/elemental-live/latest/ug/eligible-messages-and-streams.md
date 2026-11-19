@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/eligible-messag
 ---
 
 # Eligible messages and streams
-<a name="eligible-messages-and-streams"></a>
 
 Elemental Live can extract SCTE-35 messages and SCTE-104 messages from input sources.
 

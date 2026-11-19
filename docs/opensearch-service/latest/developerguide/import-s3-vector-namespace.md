@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Import Amazon S3 vector namespace to OpenSearch Service vector engine
-<a name="import-s3-vector-namespace"></a>
 
 Analyzing your vector data with OpenSearch Service requires a one-time OpenSearch Service collection and IAM permission setup.
 

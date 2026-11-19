@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Inp
 ---
 
 # InputSwitchConfiguration
-<a name="API_InputSwitchConfiguration"></a>
 
 The configuration for input switching based on the media quality confidence score (MQCS) as provided from AWS Elemental MediaLive.
 

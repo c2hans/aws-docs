@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Portfolio playbook for AWS large migrations
-<a name="introduction"></a>
 
 *Pratik Chunawala, Dwayne Bordelon, Rodolfo Jr. Cerrada, Wally Lu, Tuhin Mukherjee, Jason Schamp, and Senay Swinney, Amazon Web Services*
 

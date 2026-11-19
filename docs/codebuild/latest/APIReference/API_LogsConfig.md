@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_LogsCo
 ---
 
 # LogsConfig
-<a name="API_LogsConfig"></a>
 
  Information about logs for a build project. These can be logs in CloudWatch Logs, built in a specified S3 bucket, or both.
 

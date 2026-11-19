@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DeleteAppAssessment
-<a name="API_DeleteAppAssessment"></a>
 
 Deletes an AWS Resilience Hub application assessment. This is a destructive action that can't be undone.
 

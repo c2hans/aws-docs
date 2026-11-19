@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/analysis-ru
 ---
 
 # ID mapping table analysis rule
-<a name="analysis-rules-id-mapping-table"></a>
 
 In AWS Clean Rooms, an *ID mapping table analysis rule* isn't a standalone analysis rule. This type of analysis rule is managed by AWS Clean Rooms and is used to join disparate identity data to facilitate querying. It's automatically added to ID mapping tables and can't be edited. It inherits the behaviors of the other analysis rules in the collaboration – as long as those analysis rules are homogeneous.
 

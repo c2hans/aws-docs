@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policies-ec2
 ---
 
 # Example policies to control access to the Amazon EC2 console
-<a name="iam-policies-ec2-console"></a>
 
 You can use IAM policies to grant users the permissions required to work with Amazon EC2. For step-by-step directions, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *IAM User Guide*.
 

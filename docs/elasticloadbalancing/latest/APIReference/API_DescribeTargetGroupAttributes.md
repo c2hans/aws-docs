@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeTargetGroupAttributes
-<a name="API_DescribeTargetGroupAttributes"></a>
 
 Describes the attributes for the specified target group.
 

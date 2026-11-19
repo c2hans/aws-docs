@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `Fn::GetStackOutput`
-<a name="intrinsic-function-reference-getstackoutput"></a>
 
 The intrinsic function `Fn::GetStackOutput` returns the value of an output from another stack. Unlike `Fn::ImportValue`, this function does not require the referenced stack to explicitly export the output value. It also supports cross-account and cross-region references.
 

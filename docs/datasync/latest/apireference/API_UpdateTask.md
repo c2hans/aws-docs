@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateT
 ---
 
 # UpdateTask
-<a name="API_UpdateTask"></a>
 
 Updates the configuration of a *task*, which defines where and how AWS DataSync transfers your data.
 

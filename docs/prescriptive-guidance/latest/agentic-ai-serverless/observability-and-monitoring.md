@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Observability and monitoring
-<a name="observability-and-monitoring"></a>
 
 Observability is essential for operating event-driven, AI-powered systems at scale. Unlike monolithic applications, serverless and generative AI systems are distributed, stateless, and composed of ephemeral compute and integrated AI services (for example, Amazon Bedrock and Amazon SageMaker). These characteristics require new thinking around visibility, correlation, and accountability.
 

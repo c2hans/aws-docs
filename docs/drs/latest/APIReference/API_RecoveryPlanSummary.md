@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryPlan
 ---
 
 # RecoveryPlanSummary
-<a name="API_RecoveryPlanSummary"></a>
 
 Summary information about a Recovery Plan.
 

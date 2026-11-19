@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MoveByoip
 ---
 
 # MoveByoipCidrToIpam
-<a name="API_MoveByoipCidrToIpam"></a>
 
 Move a BYOIPv4 CIDR to IPAM from a public IPv4 pool.
 

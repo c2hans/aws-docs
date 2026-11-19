@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use atomic counter operations in DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_AtomicCounterOperations_section"></a>
 
 The following code examples show how to use atomic counter operations in DynamoDB.
 + Increment counters atomically using ADD and SET operations.

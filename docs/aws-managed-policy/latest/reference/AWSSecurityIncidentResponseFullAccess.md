@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSecurityIncidentResponseFullAccess
-<a name="AWSSecurityIncidentResponseFullAccess"></a>
 
 **Description**: Policy provides customers with Read and Write permissions to all resources associated to the Security Incident Response service.
 

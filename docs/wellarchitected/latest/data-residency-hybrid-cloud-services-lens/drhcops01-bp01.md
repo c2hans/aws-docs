@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCOPS01-BP01 Understand your organization's specific legal and compliance requirements specific to data residency
-<a name="drhcops01-bp01"></a>
 
  Your use of AWS Hybrid Edge services should be guided by your data residency requirements. Clearly understand those requirements to ensure your operational practices meet them.
 

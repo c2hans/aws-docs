@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AudioLogSe
 ---
 
 # AudioLogSetting
-<a name="API_AudioLogSetting"></a>
 
 Settings for logging audio of conversations between Amazon Lex and a user. You specify whether to log audio and the Amazon S3 bucket where the audio file is stored.
 

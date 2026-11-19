@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/streaming-chapter.html
 ---
 
 # AWS Glue Streaming
-<a name="streaming-chapter"></a>
 
 AWS Glue Streaming, a component of AWS Glue, enables you to efficiently handle streaming data in near real-time, empowering you to carry out crucial tasks such as data ingestion, processing, and machine learning. Using the Apache Spark Streaming framework, AWS Glue Streaming provides a serverless service that can handle streaming data at scale. AWS Glue provides various optimizations on top of Apache Spark such as serverless infrastructure, auto-scaling, visual job development, instant-on notebooks for streaming jobs and other performance improvements.
 

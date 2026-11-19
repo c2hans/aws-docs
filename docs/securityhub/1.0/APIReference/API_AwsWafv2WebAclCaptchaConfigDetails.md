@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2WebAclCaptchaConfigDetails
-<a name="API_AwsWafv2WebAclCaptchaConfigDetails"></a>
 
  Specifies how AWS WAF should handle CAPTCHA evaluations for rules that don't have their own `CaptchaConfig` settings.
 

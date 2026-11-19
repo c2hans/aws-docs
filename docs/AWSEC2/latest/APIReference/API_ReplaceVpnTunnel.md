@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceVp
 ---
 
 # ReplaceVpnTunnel
-<a name="API_ReplaceVpnTunnel"></a>
 
 Trigger replacement of specified VPN tunnel.
 

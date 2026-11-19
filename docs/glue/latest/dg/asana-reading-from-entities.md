@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/asana-reading-from-entiti
 ---
 
 # Reading from Asana entities
-<a name="asana-reading-from-entities"></a>
 
  **Prerequisites**
 

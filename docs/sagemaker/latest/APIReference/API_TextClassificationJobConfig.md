@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TextCl
 ---
 
 # TextClassificationJobConfig
-<a name="API_TextClassificationJobConfig"></a>
 
 The collection of settings used by an AutoML job V2 for the text classification problem type.
 

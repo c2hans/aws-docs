@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sessi
 ---
 
 # Session view
-<a name="session-view"></a>
 
 The **Sessions** view shows the list of all the sessions associated with all agents in your account. Choose **Filters** or sort by columns to find a specific session. Choose a session under **Session ID** to view the session details.
 

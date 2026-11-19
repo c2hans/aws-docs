@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Comprehend::DocumentClassifier DocumentReaderConfig
-<a name="aws-properties-comprehend-documentclassifier-documentreaderconfig"></a>
 
 Provides configuration parameters to override the default actions for extracting text from PDF documents and image files.
 

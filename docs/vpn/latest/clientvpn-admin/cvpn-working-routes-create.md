@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Create an AWS Client VPN endpoint route
-<a name="cvpn-working-routes-create"></a>
 
 When you create a Client VPN endpoint route, you specify how traffic for the destination network should be directed.
 

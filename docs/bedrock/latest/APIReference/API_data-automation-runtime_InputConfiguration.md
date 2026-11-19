@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # InputConfiguration
-<a name="API_data-automation-runtime_InputConfiguration"></a>
 
 Input object settings for an invocation.
 

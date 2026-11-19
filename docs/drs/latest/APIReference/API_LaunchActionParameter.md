@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_LaunchAction
 ---
 
 # LaunchActionParameter
-<a name="API_LaunchActionParameter"></a>
 
 Launch action parameter.
 

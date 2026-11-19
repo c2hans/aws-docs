@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # PromptTemplate
-<a name="API_agent-runtime_PromptTemplate"></a>
 
 Contains the template for the prompt that's sent to the model for response generation. For more information, see [Knowledge base prompt templates](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.html#kb-test-config-sysprompt).
 

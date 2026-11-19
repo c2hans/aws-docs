@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-manager
 ---
 
 # Fulfillment metrics
-<a name="capacity-manager-fulfillment-metrics"></a>
 
 Fulfillment metrics answer the first and most important question: when you ask Amazon EC2 for capacity, are you receiving it? These are request-level metrics — a request that is flexible across multiple instance type and Availability Zone combinations is fulfilled if any combination delivers. A high fulfillment rate means your workloads are getting the capacity they need. A lower fulfillment rate means some requests are going unfulfilled, and you can act by reserving capacity or adding flexibility to your configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # DocumentAclUser
-<a name="API_agent-runtime_DocumentAclUser"></a>
 
 A user entry within a document access control list (ACL) condition.
 

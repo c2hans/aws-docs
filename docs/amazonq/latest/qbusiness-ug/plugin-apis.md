@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/plugin-apis.
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Creating Amazon Q Business plugins using APIs
-<a name="plugin-apis"></a>
 
 Amazon Q Business supports plugin creation through both the console and the APIs.
 

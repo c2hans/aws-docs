@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowConnectionConfiguration
-<a name="API_agent_FlowConnectionConfiguration"></a>
 
 The configuration of the connection.
 

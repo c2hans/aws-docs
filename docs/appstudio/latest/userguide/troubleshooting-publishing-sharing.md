@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting publishing and sharing applications
-<a name="troubleshooting-publishing-sharing"></a>
 
 This topic contains troubleshooting guidance for common issues when publishing or sharing App Studio applications.
 

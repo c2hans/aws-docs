@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Mistral AI Large (24.07) parameters and inference
-<a name="model-parameters-mistral-large-2407"></a>
 
 The Mistral AI chat completion API lets you create conversational applications. You can also use the Amazon Bedrock Converse API with this model. You can use tools to make function calls.
 

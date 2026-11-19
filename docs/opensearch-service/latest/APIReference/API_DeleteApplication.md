@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes a specified OpenSearch application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # GenerateMac
-<a name="API_GenerateMac"></a>
 
 Generates a Message Authentication Code (MAC) cryptogram within AWS Payment Cryptography.
 

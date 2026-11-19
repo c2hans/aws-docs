@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/parameters-pa
 ---
 
 # Page parameters
-<a name="parameters-page"></a>
 
 Page parameters are a way to send information between pages and are often used when navigating from one page to another within an App Studio app to maintain context or pass data. Page parameters typically consist of a name and a value.
 

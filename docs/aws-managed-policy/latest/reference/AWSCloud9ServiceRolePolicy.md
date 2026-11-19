@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloud9ServiceRolePolicy
-<a name="AWSCloud9ServiceRolePolicy"></a>
 
 **Description**: Service Linked Role Policy for AWS Cloud9
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_CreateBa
 ---
 
 # CreateBackendEnvironment
-<a name="API_CreateBackendEnvironment"></a>
 
 Creates a new backend environment for an Amplify app.
 

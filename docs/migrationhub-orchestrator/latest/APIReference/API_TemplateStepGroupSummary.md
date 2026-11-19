@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # TemplateStepGroupSummary
-<a name="API_TemplateStepGroupSummary"></a>
 
 The summary of the step group in the template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Prebid Server metrics
-<a name="prebid-server-metrics"></a>
 
 The Prebid Server collects various application metrics, which are submitted to configured backends. These metrics can be used for monitoring and optimizing the performance of the server. The metrics include information such as bid requests, bid responses, and other relevant statistics. For more detailed information on the specific metrics collected and how to integrate custom analytics adapters, refer to the official [Prebid Server documentation](https://docs.prebid.org/prebid-server/developers/pbs-build-an-analytics-adapter.html#prebid-server---building-an-analytics-adapter) and the [metrics.md](https://github.com/prebid/prebid-server-java/blob/master/docs/metrics.md) file in the GitHub repository for the Prebid Server Java implementation.
 

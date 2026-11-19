@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetCostAndUsageWithResources
-<a name="API_GetCostAndUsageWithResources"></a>
 
 Retrieves cost and usage metrics with resources for your account. You can specify which cost and usage-related metric, such as `BlendedCosts` or `UsageQuantity`, that you want the request to return. You can also filter and group your data by various dimensions, such as `SERVICE` or `AZ`, in a specific time range. For a complete list of valid dimensions, see the [GetDimensionValues](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetDimensionValues.html) operation. Management account in an organization in AWS Organizations have access to all member accounts.
 
@@ -79,7 +78,7 @@ Required: No
 
  ** [Filter](#API_GetCostAndUsageWithResources_RequestSyntax) **   <a name="awscostmanagement-GetCostAndUsageWithResources-request-Filter"></a>
 Filters Amazon Web Services costs by different dimensions. For example, you can specify `SERVICE` and `LINKED_ACCOUNT` and get the costs that are associated with that account's usage of that service. You can nest `Expression` objects to define any combination of dimension filters. For more information, see [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html).
-The `GetCostAndUsageWithResources` operation requires that you either group by or filter by a `ResourceId`. It requires the [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) `"SERVICE = Amazon Elastic Compute Cloud - Compute"` in the filter.
+The `GetCostAndUsageWithResources` operation requires that you either group by or filter by a `ResourceId`. Resource-level data is available for the services that you opt in to in AWS Cost Management Console preferences.
 Valid values for `MatchOptions` for `Dimensions` are `EQUALS` and `CASE_SENSITIVE`.
 Valid values for `MatchOptions` for `CostCategories`, `Tags`, and `ProductAttributes` are `EQUALS`, `ABSENT`, and `CASE_SENSITIVE`. Default values are `EQUALS` and `CASE_SENSITIVE`.
 If you filter or group by product attributes, the `SERVICE` filter rules are the same as for [GetCostAndUsage](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetCostAndUsage.html).

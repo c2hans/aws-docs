@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListWorkloadShares
-<a name="API_ListWorkloadShares"></a>
 
 List the workload shares associated with the workload.
 

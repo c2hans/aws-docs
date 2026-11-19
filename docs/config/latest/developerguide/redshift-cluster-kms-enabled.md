@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/redshift-cl
 ---
 
 # redshift-cluster-kms-enabled
-<a name="redshift-cluster-kms-enabled"></a>
 
 Checks if Amazon Redshift clusters are using a specified AWS Key Management Service (AWS KMS) key for encryption. The rule is COMPLIANT if encryption is enabled and the cluster is encrypted with the key provided in the `kmsKeyArn` parameter. The rule is NON\_COMPLIANT if the cluster is not encrypted or encrypted with another key.
 

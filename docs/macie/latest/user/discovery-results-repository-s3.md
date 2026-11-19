@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/discovery-results-repo
 ---
 
 # Storing and retaining sensitive data discovery results
-<a name="discovery-results-repository-s3"></a>
 
 When you run a sensitive data discovery job or Amazon Macie performs automated sensitive data discovery, Macie creates an analysis record for each Amazon Simple Storage Service (Amazon S3) object that's included in the scope of the analysis. These records, referred to as a *sensitive data discovery results*, log details about the analysis that Macie performs on individual S3 objects. This includes objects that Macie doesn't detect sensitive data in, and therefore don't produce findings, and objects that Macie can't analyze due to errors or issues. If Macie detects sensitive data in an object, the record includes data from the corresponding finding as well as additional information. Sensitive data discovery results provide you with analysis records that can be helpful for data privacy and protection audits or investigations.
 

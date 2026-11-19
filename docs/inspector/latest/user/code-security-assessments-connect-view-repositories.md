@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 ---
 
 # Viewing code repositories
-<a name="code-security-assessments-connect-view-repositories"></a>
 
  The topic describes how to view code repositories in the Amazon Inspector console.
 

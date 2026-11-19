@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # AddPolicyStatement
-<a name="API_AddPolicyStatement"></a>
 
 Adds a policy statement object. To retrieve a list of existing policy statements, use the `GetPolicy` API.
 

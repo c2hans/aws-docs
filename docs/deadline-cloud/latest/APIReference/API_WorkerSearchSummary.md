@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_W
 ---
 
 # WorkerSearchSummary
-<a name="API_WorkerSearchSummary"></a>
 
 The details of a worker search.
 

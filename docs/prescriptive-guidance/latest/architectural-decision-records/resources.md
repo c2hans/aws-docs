@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/architectur
 ---
 
 # Next steps and resources
-<a name="resources"></a>
 
 We recommend that you start small and see the benefit that ADRs bring to your team. If you are working on an ongoing project, identify the next architectural change and apply the proposed ADR process to create your first ADR.
 

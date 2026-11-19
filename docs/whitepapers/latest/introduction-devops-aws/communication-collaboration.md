@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Communication and Collaboration
-<a name="communication-collaboration"></a>
 
 Whether you are adopting DevOps Culture in your organization or going through a DevOps cultural transformation, communication and collaboration are an important part of your approach. At Amazon, we have realized that there was a need to bring a change to the mindset of our teams and thus adopted the concept of *Two-Pizza Teams*.
 

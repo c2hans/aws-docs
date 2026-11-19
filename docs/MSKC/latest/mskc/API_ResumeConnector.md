@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ResumeConnector.htm
 ---
 
 # ResumeConnector
-<a name="API_ResumeConnector"></a>
 
 Resumes the specified paused connector. The operation runs asynchronously. To track the resume, pass the connector operation ARN from the response to `DescribeConnectorOperation`.
 

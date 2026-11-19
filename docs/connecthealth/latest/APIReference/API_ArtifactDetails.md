@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ar
 ---
 
 # ArtifactDetails
-<a name="API_ArtifactDetails"></a>
 
 Details about a generated artifact including location and status
 

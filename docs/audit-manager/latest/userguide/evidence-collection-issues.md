@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Troubleshooting assessment and evidence collection issues
-<a name="evidence-collection-issues"></a>
 
 You can use the information on this page to resolve common assessment and evidence collection issues in Audit Manager.
 

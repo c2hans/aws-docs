@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-page-re
 ---
 
 # (Optional) Configuring a webpage redirect
-<a name="how-to-page-redirect"></a>
 
 If your Amazon S3 bucket is configured for static website hosting, you can configure redirects for your bucket or the objects in it. You have the following options for configuring redirects.
 

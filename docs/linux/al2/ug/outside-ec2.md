@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/outside-ec2.html
 ---
 
 # Using Amazon Linux 2 outside of Amazon EC2
-<a name="outside-ec2"></a>
 
  The AL2 container images can be run in compatible container runtime environments.
 

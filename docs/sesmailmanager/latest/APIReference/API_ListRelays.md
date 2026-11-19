@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListRelays
-<a name="API_ListRelays"></a>
 
 Lists all the existing relay resources.
 

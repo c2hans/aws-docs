@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewaySummary
-<a name="API_GatewaySummary"></a>
 
 A summary of a gateway that is returned by the `ListGateways` operation.
 

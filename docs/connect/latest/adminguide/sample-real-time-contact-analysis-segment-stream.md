@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sample-real-ti
 ---
 
 # Sample conversational analytics segment streams to analyze calls using conversational analytics
-<a name="sample-real-time-contact-analysis-segment-stream"></a>
 
 This topic provides sample segment streams for STARTED, SEGMENTS, COMPLETED, and FAILED events that can occur during a voice contact.
 

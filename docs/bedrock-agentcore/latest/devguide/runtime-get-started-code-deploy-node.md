@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Direct code deployment for Node.js
-<a name="runtime-get-started-code-deploy-node"></a>
 
 With direct code deployment, you package your Node.js agent code and its dependencies in a .zip file archive and deploy it to AgentCore Runtime. Your agent still needs to follow [AgentCore Runtime requirements](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-service-contract.html) : have an entrypoint `.js` file that implements `/invocations` POST and `/ping` GET server endpoints.
 

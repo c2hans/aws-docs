@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_CreateExperi
 ---
 
 # CreateExperimentTemplateLogConfigurationInput
-<a name="API_CreateExperimentTemplateLogConfigurationInput"></a>
 
 Specifies the configuration for experiment logging.
 

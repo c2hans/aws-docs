@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-integrations.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Enhance EKS with integrated AWS services
-<a name="eks-integrations"></a>
 
 In addition to the services covered in other sections, Amazon EKS works with more AWS services to provide additional solutions. This topic identifies some of the other services that either use Amazon EKS to add functionality, or services that Amazon EKS uses to perform tasks.
 

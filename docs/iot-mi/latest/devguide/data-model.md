@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/data-model.html
 ---
 
 # Data models
-<a name="data-model"></a>
 
 A data model represents the organizational hierarchy of how data is organized within a system. Additionally, it supports end-to-end communication across your entire device implementation. For Managed Integrations, there are two data models used. The Managed Integrations data model and the AWS implementation of the Matter Data Model. They have similarities, but also have subtle differences that are outlined in the following topics.
 

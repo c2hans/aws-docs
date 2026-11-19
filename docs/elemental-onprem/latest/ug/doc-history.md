@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-onprem/latest/ug/doc-history.h
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 The following table describes the release history of the AWS Elemental On-Premises documentation.
 

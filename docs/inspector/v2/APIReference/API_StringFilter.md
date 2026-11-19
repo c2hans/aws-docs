@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_StringFilt
 ---
 
 # StringFilter
-<a name="API_StringFilter"></a>
 
 An object that describes the details of a string filter.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticBeanstalk::ApplicationVersion ImageConfiguration
-<a name="aws-properties-elasticbeanstalk-applicationversion-imageconfiguration"></a>
 
 The `ImageConfiguration` property type specifies the source of the container image for an application version: either an image that you built and pushed to a container registry yourself, or settings for Elastic Beanstalk to build one from your source bundle.
 

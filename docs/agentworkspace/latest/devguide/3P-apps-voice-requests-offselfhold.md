@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Unsubscribe from self hold events in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-offselfhold"></a>
 
 Unsubscribes from self hold events.
 

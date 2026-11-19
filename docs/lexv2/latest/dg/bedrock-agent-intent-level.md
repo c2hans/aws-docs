@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/bedrock-agent-intent-lev
 ---
 
 # Enable Bedrock Agent Intent by adding a built-in intent to your bot
-<a name="bedrock-agent-intent-level"></a>
 
 You can enable Bedrock Agent Intent by adding a built-in intent to your Amazon Lex V2 bot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # S3TableIntegrationSource
-<a name="API_S3TableIntegrationSource"></a>
 
 Represents a data source association with an S3 Table Integration, including its status and metadata.
 

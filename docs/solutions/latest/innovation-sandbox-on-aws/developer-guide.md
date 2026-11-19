@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
 This section provides the source code, and list of API endpoints for the solution.
 

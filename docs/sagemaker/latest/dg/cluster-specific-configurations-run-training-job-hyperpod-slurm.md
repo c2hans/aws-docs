@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/cluster-specific-con
 ---
 
 # Running a training job on HyperPod Slurm
-<a name="cluster-specific-configurations-run-training-job-hyperpod-slurm"></a>
 
 SageMaker HyperPod Recipes supports submitting a training job to a GPU/Trainium slurm cluster. Before you submit the training job, update the cluster configuration. Use one of the following methods to update the cluster configuration:
 + Modify `slurm.yaml`

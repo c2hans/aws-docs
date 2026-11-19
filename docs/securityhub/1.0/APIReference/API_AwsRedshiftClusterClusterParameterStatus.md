@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterClusterParameterStatus
-<a name="API_AwsRedshiftClusterClusterParameterStatus"></a>
 
 The status of a parameter in a cluster parameter group for an Amazon Redshift cluster.
 

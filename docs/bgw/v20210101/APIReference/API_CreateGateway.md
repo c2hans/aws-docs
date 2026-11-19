@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_CreateGat
 ---
 
 # CreateGateway
-<a name="API_CreateGateway"></a>
 
 Creates a backup gateway. After you create a gateway, you can associate it with a server using the `AssociateGatewayToServer` operation.
 

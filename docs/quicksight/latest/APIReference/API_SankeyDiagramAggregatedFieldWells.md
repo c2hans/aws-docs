@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sanke
 ---
 
 # SankeyDiagramAggregatedFieldWells
-<a name="API_SankeyDiagramAggregatedFieldWells"></a>
 
 The field well configuration of a sankey diagram.
 

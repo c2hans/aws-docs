@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetIndexingRules.htm
 ---
 
 # GetIndexingRules
-<a name="API_GetIndexingRules"></a>
 
  Retrieves all indexing rules.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cfn-guard/latest/ug/named-rule-block-com
 ---
 
 # Composing named-rule blocks in AWS CloudFormation Guard
-<a name="named-rule-block-composition"></a>
 
 When writing named-rule blocks using AWS CloudFormation Guard, you can use the following two styles of composition:
 + Conditional dependency

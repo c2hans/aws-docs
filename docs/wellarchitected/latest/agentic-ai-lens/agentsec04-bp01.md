@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC04-BP01 Implement guardrails and alignment controls
-<a name="agentsec04-bp01"></a>
 
  Instruction-following alone doesn't provide reliable enforcement. Layered controls (deterministic where possible, probabilistic where necessary) help keep agents inside operational boundaries even when prompts are adversarial and model behavior is unpredictable.
 

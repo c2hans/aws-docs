@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Amazon SNS template snippets
-<a name="quickref-sns"></a>
 
 This example shows an Amazon SNS topic resource. It requires a valid email address.
 

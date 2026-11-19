@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.h
 ---
 
 # Manage system users on your Amazon EC2 Linux instance
-<a name="managing-users"></a>
 
 Each Linux instance launches with a default Linux system user. You can add users to your instance and delete users.
 

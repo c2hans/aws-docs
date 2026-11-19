@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # CustomMetadataSchemaConfiguration
-<a name="API_CustomMetadataSchemaConfiguration"></a>
 
 The custom metadata fields that records in the registry can carry. `defaultSchema` defines the common attributes for every record type, and `recordTypeSchemaOverrides` adds fields for individual record types.
 

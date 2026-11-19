@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_G
 ---
 
 # GranularityConfiguration
-<a name="API_GranularityConfiguration"></a>
 
  Contains configuration for the fiscal year granularities (e.g., `YEARLY_FISCAL`, `QUARTERLY_FISCAL`.
 

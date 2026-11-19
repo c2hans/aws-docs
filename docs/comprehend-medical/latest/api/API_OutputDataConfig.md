@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Output
 ---
 
 # OutputDataConfig
-<a name="API_OutputDataConfig"></a>
 
 The output properties for a detection job.
 

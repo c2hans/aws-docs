@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-resu
 ---
 
 # List of result types
-<a name="braket-result-types"></a>
 
 Amazon Braket can return different types of results when a circuit is measured using `ResultType`. A circuit can return the following types of results.
 +  `AdjointGradient` returns the gradient (vector derivative) of the expectation value of a provided observable. This observable is acting on a provided target with respect to specified parameters using the adjoint differentiation method. You can only use this method when shots=0.

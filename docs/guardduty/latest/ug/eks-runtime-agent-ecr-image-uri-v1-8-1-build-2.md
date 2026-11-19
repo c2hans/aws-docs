@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/eks-runtime-agent-ec
 ---
 
 # ECR repository for EKS agent versions 1.17.3 - 1.8.1 (eks.build.2)
-<a name="eks-runtime-agent-ecr-image-uri-v1-8-1-build-2"></a>
 
 When you enable GuardDuty automated configuration for Runtime Monitoring for EKS, GuardDuty will deploy this agent version to your Amazon EKS clusters. For information about enabling automated agent, see [Managing security agent automatically for Amazon EKS resources](managing-gdu-agent-eks-automatically.md).
 

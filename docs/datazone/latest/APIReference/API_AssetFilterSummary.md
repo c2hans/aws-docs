@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetFi
 ---
 
 # AssetFilterSummary
-<a name="API_AssetFilterSummary"></a>
 
 The summary of the asset filter.
 

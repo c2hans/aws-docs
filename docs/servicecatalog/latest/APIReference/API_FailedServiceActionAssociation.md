@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_F
 ---
 
 # FailedServiceActionAssociation
-<a name="API_FailedServiceActionAssociation"></a>
 
 An object containing information about the error, along with identifying information about the self-service action and its associations.
 

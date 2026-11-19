@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/accelerate-
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide covered implementing snapshot-based SAP HANA backups using
 

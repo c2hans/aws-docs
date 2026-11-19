@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Common table expressions for ANSI SQL
-<a name="chap-sql-server-aurora-mysql.sql.cte"></a>
 
 This topic provides reference information about Common Table Expressions (CTEs) and their compatibility between Microsoft SQL Server 2019 and Amazon Aurora MySQL. You can understand the differences in CTE support between these database systems, which is crucial when migrating from SQL Server to Aurora MySQL.
 

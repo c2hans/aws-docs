@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListImports.
 ---
 
 # ListImports
-<a name="API_ListImports"></a>
 
 List imports.
 

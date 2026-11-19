@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Create a site in an AWS Cloud WAN global network
-<a name="cloudwan-sites-add"></a>
 
 A site represents the physical location of your network, using location information that you provide. Sites you add to your Cloud WAN global network appear in the geographical map of a Cloud WAN global network dashboard.
 

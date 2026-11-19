@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Upgrading the major version of an Amazon Aurora MySQL DB cluster
-<a name="AuroraMySQL.Updates.MajorVersionUpgrade"></a><a name="mvu"></a>
+<a name="mvu"></a>
 
 For Aurora MySQL version 2 and version 3, in a version number such as 3.04.1, the 3 represents the major version. Starting with version 8.4, in a version number such as 8.4.7, the 8.4 represents the major version. Aurora MySQL version 2 is compatible with MySQL 5.7. Aurora MySQL version 3 is compatible with MySQL 8.0. Aurora MySQL version 8.4 is compatible with MySQL 8.4.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-model-in
 ---
 
 # FAQ
-<a name="faq"></a>
 
 Q. There are many methods for determining feature importance that are not discussed here. Why are they not mentioned?
 

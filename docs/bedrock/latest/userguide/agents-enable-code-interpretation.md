@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-enable-c
 ---
 
 # Enable code interpretation in Amazon Bedrock
-<a name="agents-enable-code-interpretation"></a>
 
 You can enable code interpretation in the Amazon Bedrock console when you [create](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html) or [update](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-manage.html#agents-edit) your agent. If you are using API or SDKs, you can enable code interpretation when you [create](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgentActionGroup.html) or [update](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateAgentActionGroup.html) action group.
 

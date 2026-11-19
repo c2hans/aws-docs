@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_TimeSer
 ---
 
 # TimeSeriesDataPointFormInput
-<a name="API_TimeSeriesDataPointFormInput"></a>
 
 The time series data points form.
 

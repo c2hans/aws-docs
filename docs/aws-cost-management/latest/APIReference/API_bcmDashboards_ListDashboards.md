@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListDashboards
-<a name="API_bcmDashboards_ListDashboards"></a>
 
 Returns a list of all dashboards in your account.
 

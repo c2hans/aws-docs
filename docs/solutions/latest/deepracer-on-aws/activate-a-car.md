@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/activa
 ---
 
 # Activate a car
-<a name="activate-a-car"></a>
 
 Activating a car onboards it so that you can manage it remotely. Only administrators can activate a car.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # BatchGetItem
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-batch-get-item"></a>
 
 The `BatchGetItem` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a `BatchGetItem` request to DynamoDB to retrieve multiple items, potentially across multiple tables. For this request template, you must specify the following:
 + The table names where to retrieve the items from

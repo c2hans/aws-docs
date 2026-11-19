@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetGen
 ---
 
 # TestSetGenerationDataSource
-<a name="API_TestSetGenerationDataSource"></a>
 
 Contains information about the data source from which the test set is generated.
 

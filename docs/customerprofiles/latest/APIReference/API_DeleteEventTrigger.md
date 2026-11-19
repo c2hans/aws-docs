@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteEventTrigger
-<a name="API_connect-customer-profiles_DeleteEventTrigger"></a>
 
 Disable and deletes the Event Trigger.
 

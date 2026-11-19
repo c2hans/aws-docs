@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ProfileRecommendation
-<a name="API_amazon-q-connect_ProfileRecommendation"></a>
 
 Contains information about a recommendation that is associated with a customer profile, including the relevance score and the associated catalog item.
 

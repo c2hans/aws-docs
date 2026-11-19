@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/usin
 ---
 
 # Using the AWS Management Console
-<a name="using-the-aws-management-console"></a>
 
 1.  Sign in to the [CloudFormation console](https://console.aws.amazon.com/cloudformation/home?).
 

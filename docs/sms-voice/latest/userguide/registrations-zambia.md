@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Zambia sender ID registration in AWS End User Messaging SMS
-<a name="registrations-zambia"></a>
 
 Follow these directions to register your sender ID in Zambia.
 

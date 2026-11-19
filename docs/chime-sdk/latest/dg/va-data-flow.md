@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/va-data-flow.html
 ---
 
 # Understanding speaker search workflow for the Amazon Chime SDK
-<a name="va-data-flow"></a>
 
 In this section, we show you an example data and program flow for an Amazon Chime SDK speaker search analysis.
 

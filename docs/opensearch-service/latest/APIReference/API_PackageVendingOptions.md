@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PackageVendingOptions
-<a name="API_PackageVendingOptions"></a>
 
 Configuration options for determining whether a package can be made available for use by other users.
 

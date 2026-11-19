@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-clou
 ---
 
 # Hybrid cloud adoption process
-<a name="pillars"></a>
 
 The following sections discuss architectures and design details for each pillar of the AWS hybrid cloud:
 + [Networking at the edge](networking.md)

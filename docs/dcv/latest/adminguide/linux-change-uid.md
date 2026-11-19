@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/linux-change-uid.h
 ---
 
 # Linux Sessions fail to start after UID change
-<a name="linux-change-uid"></a>
 
 On a Linux host, changing the user ID (UID) of an user or using a different Active Directory configuration that modifies the UID of an user, could cause failures in starting Amazon DCV sessions on the host.
 

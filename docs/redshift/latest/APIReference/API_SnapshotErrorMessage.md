@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Snapsho
 ---
 
 # SnapshotErrorMessage
-<a name="API_SnapshotErrorMessage"></a>
 
 Describes the errors returned by a snapshot.
 

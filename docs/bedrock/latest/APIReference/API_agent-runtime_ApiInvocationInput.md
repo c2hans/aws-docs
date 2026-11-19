@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ApiInvocationInput
-<a name="API_agent-runtime_ApiInvocationInput"></a>
 
 Contains information about the API operation that the agent predicts should be called.
 

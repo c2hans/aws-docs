@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/troubleshooting.html
 ---
 
 # Troubleshooting Amazon GuardDuty
-<a name="troubleshooting"></a>
 
 When you receive issues related to performing an action specific to GuardDuty, consult the topics in this section.
 

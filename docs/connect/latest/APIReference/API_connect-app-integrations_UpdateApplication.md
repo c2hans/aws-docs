@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UpdateApplication
-<a name="API_connect-app-integrations_UpdateApplication"></a>
 
 Updates and persists an Application resource.
 

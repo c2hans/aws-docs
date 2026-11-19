@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/change-assignment-ty
 ---
 
 # Changing a phone number's assignment type
-<a name="change-assignment-type"></a>
 
 If you have unassigned Amazon Chime SDK Voice Connector, or Amazon Chime SDK SIP media application phone numbers, you can switch them from one product type to another.
 

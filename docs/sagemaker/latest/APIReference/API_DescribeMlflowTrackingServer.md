@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeMlflowTrackingServer
-<a name="API_DescribeMlflowTrackingServer"></a>
 
 Returns information about an MLflow Tracking Server.
 

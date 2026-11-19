@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_RejectDomainNa
 ---
 
 # RejectDomainNameAccessAssociation
-<a name="API_RejectDomainNameAccessAssociation"></a>
 
 Rejects a domain name access association with a private custom domain name.
 

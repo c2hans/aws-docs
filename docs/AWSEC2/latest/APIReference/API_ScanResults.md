@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ScanResul
 ---
 
 # ScanResults
-<a name="API_ScanResults"></a>
 
 The Amazon Inspector scan results for an AMI. This information is present only for AMIs that Amazon Inspector has scanned.
 

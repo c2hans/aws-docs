@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Example – Write a headline for each detected clip
-<a name="functions-examples-clip-headline"></a>
 
 Runs once for each window in which event clipping detects a clip, and combines the event descriptions with the first frame of the window. Requires an enabled event clipping output on the feed. The score line is included only when the clipping output is mapped to a sports data source, which reports the score. With a sports data source, a change of game phase is also an event. A window whose only event is a phase change therefore runs the function too.
 

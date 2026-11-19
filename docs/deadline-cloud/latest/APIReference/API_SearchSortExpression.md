@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SearchSortExpression
-<a name="API_SearchSortExpression"></a>
 
 The resources to search.
 

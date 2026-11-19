@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetControlInfoIconLabelOptions
-<a name="API_SheetControlInfoIconLabelOptions"></a>
 
 A control to display info icons for filters and parameters.
 

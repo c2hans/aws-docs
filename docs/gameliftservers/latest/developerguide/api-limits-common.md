@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ap
 ---
 
 # API limits reference
-<a name="api-limits-common"></a>
 
 The following table lists the default rate limits for Amazon GameLift Servers API operations. APIs marked with resource-level throttling may be subject to additional limits to prevent database hot key issues.
 

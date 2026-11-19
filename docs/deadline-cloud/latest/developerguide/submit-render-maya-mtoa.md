@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sub
 ---
 
 # Test your packages with a Maya render job
-<a name="submit-render-maya-mtoa"></a>
 
 After you build the Maya, MtoA, and `maya-openjd` packages, you can test them with a render job. The Deadline Cloud samples repository contains a [turntable with Maya/Arnold job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/turntable_with_maya_arnold) on the GitHub website that renders an animation using Maya and Arnold. The job bundle also uses FFmpeg to encode a video, which is available from the `conda-forge` channel.
 

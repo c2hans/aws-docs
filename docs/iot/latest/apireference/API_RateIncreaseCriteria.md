@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_RateIncrease
 ---
 
 # RateIncreaseCriteria
-<a name="API_RateIncreaseCriteria"></a>
 
 Allows you to define a criteria to initiate the increase in rate of rollout for a job.
 

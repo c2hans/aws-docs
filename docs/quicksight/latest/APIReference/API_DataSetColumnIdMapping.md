@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetColumnIdMapping
-<a name="API_DataSetColumnIdMapping"></a>
 
 Maps a source column identifier to a target column identifier during transform operations.
 

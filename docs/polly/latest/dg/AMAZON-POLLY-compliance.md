@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/AMAZON-POLLY-compliance.
 ---
 
 # Compliance Validation for Amazon Polly
-<a name="AMAZON-POLLY-compliance"></a>
 
 Third-party auditors assess the security and compliance of Amazon Polly as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others.
 

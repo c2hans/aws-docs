@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/displayin
 ---
 
 # Displaying rich text answers
-<a name="displaying-rich-text-answers"></a>
 
 QnABot on AWS supports [Markdown](https://daringfireball.net/projects/markdown/syntax), allowing you to create rich text versions of your answers for displaying on the web user interface, or on Slack. To use this feature, populate the **Alternate Markdown answer** field in the content designer.
 

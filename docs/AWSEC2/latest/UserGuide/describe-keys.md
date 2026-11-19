@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/describe-keys.ht
 ---
 
 # Describe your key pairs
-<a name="describe-keys"></a>
 
 You can describe the key pairs that you stored in Amazon EC2. You can also retrieve the public key material and identify the public key that was specified at launch.
 

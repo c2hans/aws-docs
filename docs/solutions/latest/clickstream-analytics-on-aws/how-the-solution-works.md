@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Guidance components
-<a name="how-the-solution-works"></a>
 
  The Clickstream Analytics on AWS guidance has four components: a web console, Analytics Studio, SDKs, and the data pipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/logg
 ---
 
 # Logging AWS Directory Service Data API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS Directory Service Data integrates with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Directory Service Data. CloudTrail captures all API calls for Directory Service Data as events. The calls captured include calls from the Directory Service Data console and code calls to Directory Service Data API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Directory Service Data. Using the information collected by CloudTrail, you can determine the request that was made to Directory Service Data, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

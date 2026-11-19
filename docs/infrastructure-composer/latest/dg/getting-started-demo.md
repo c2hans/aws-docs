@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/gettin
 ---
 
 # Load and modify the Infrastructure Composer demo project
-<a name="getting-started-demo"></a>
 
 Use this tutorial to become familier with Infrastructure Composer's user interface and learn how to load, modify, and save the Infrastructure Composer demo project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # IamActionDefinition
-<a name="API_budgets_IamActionDefinition"></a>
 
 The AWS Identity and Access Management (IAM) action definition details.
 

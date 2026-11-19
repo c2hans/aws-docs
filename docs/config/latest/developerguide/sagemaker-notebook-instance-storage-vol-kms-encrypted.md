@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-n
 ---
 
 # sagemaker-notebook-instance-storage-vol-kms-encrypted
-<a name="sagemaker-notebook-instance-storage-vol-kms-encrypted"></a>
 
 Checks whether an Amazon SageMaker notebook instance is configured with a customer managed AWS KMS key for storage volume encryption. The rule is NON\_COMPLIANT if KmsKeyId is not set or is empty.
 

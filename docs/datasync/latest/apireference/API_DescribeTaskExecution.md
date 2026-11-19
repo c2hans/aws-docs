@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeTaskExecution
-<a name="API_DescribeTaskExecution"></a>
 
 Provides information about an execution of your AWS DataSync task. You can use this operation to help monitor the progress of an ongoing data transfer or check the results of the transfer.
 

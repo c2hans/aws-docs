@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qinconne
 ---
 
 # AMAZON.QinConnectIntent
-<a name="built-in-intent-qinconnect"></a>
 
 **Note**
 To use generative AI capabilities using Amazon Q In Connect, you must complete the following pre-requisites:

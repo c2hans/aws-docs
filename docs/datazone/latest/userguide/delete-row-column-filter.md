@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/delete-row-col
 ---
 
 # Delete row or column filters in Amazon DataZone
-<a name="delete-row-column-filter"></a>
 
 To delete a row or a column filter, follow the steps below:
 

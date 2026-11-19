@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteVcente
 ---
 
 # DeleteVcenterClient
-<a name="API_DeleteVcenterClient"></a>
 
 Deletes a given vCenter client by ID.
 

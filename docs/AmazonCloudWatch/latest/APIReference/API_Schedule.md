@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # Schedule
-<a name="API_Schedule"></a>
 
 Specifies when and how long an alarm mute rule is active.
 

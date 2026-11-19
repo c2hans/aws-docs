@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListDat
 ---
 
 # ListDataProductRevisions
-<a name="API_ListDataProductRevisions"></a>
 
 Lists data product revisions.
 

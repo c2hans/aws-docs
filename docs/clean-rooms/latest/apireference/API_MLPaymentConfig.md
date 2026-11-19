@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_MLPa
 ---
 
 # MLPaymentConfig
-<a name="API_MLPaymentConfig"></a>
 
 An object representing the collaboration member's machine learning payment responsibilities set by the collaboration creator.
 

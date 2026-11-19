@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AzElSegmentsData
-<a name="API_AzElSegmentsData"></a>
 
 Container for azimuth elevation segment data.
 

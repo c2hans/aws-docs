@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ReasonSummary
-<a name="API_ReasonSummary"></a>
 
 Contains information about the reasoning why a check for access passed or failed.
 

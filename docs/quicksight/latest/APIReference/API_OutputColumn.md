@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Outpu
 ---
 
 # OutputColumn
-<a name="API_OutputColumn"></a>
 
 Output column.
 

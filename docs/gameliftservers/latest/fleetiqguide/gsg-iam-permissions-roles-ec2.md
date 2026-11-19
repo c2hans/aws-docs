@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 ---
 
 # Create a role for Amazon EC2
-<a name="gsg-iam-permissions-roles-ec2"></a>
 
 This role enables your Amazon EC2 resources to communicate with Amazon GameLift Servers FleetIQ. For example, your game servers, which are running on Amazon EC2 instances, need to be able to report health status. Include this role in an IAM instance profile with your Amazon EC2 launch template when creating a Amazon GameLift Servers FleetIQ game server group.
 

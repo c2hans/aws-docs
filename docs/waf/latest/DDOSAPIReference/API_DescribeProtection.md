@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Describe
 ---
 
 # DescribeProtection
-<a name="API_DescribeProtection"></a>
 
 Lists the details of a [Protection](API_Protection.md) object.
 

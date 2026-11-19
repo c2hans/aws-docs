@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/nuget-visual-stud
 ---
 
 # Use CodeArtifact with Visual Studio
-<a name="nuget-visual-studio"></a>
 
  You can consume packages from CodeArtifact directly in Visual Studio with the CodeArtifact Credential Provider. The credential provider simplifies the setup and authentication of your CodeArtifact repositories in Visual Studio and is available in the [AWS Toolkit for Visual Studio](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/welcome.html).
 

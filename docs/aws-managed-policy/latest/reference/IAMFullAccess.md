@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IAMF
 ---
 
 # IAMFullAccess
-<a name="IAMFullAccess"></a>
 
 **Description**: Provides full access to IAM via the AWS Management Console.
 

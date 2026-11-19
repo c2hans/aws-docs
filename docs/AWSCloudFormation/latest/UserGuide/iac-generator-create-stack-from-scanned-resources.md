@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/iac-g
 ---
 
 # Create a CloudFormation stack from scanned resources
-<a name="iac-generator-create-stack-from-scanned-resources"></a>
 
 After you create your template, use the **Canvas** view to preview its resources and their relationships before creating the stack and importing the scanned resources.
 

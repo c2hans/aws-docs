@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/working-wit
 ---
 
 # Reviewing investigations
-<a name="working-with-devops-agent-reviewing-investigations"></a>
 
 After an investigation completes, you can launch a Review, an on-demand quality assessment of that investigation. It reports back with an overall verdict and a per-criterion breakdown. Reviews also run automatically on a sample of completed investigations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Deploy on Hyper-V
-<a name="discovery-tool-deploy-hyperv"></a>
 
 ## Hyper-V virtual machine specifications
 <a name="discovery-tool-hyperv-vm-specs"></a>

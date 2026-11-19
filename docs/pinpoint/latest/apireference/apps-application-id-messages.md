@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-applic
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Messages
-<a name="apps-application-id-messages"></a>
 
 The Messages resource represents a *direct message*, which is a one-time message that you send directly to a limited audience without creating a campaign. You can send a direct message to as many as 100 recipients. The message can be a push notification for users of your mobile app, an SMS message, an email message, or a voice message.
 

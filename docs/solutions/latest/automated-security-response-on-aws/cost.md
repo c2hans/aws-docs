@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used to run this solution.
 

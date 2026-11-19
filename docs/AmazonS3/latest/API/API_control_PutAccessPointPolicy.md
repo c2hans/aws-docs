@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutAcces
 ---
 
 # PutAccessPointPolicy
-<a name="API_control_PutAccessPointPolicy"></a>
 
 Associates an access policy with the specified access point. Each access point can have only one policy, so a request made to this API replaces any existing policy associated with the specified access point.
 

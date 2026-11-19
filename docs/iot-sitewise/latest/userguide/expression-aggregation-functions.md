@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/expression
 ---
 
 # Use aggregation functions in formula expressions
-<a name="expression-aggregation-functions"></a>
 
 In [metrics](metrics.md) only, you can use the following functions that aggregate input values over each time interval and calculate a single output value. Aggregation functions can aggregate data from associated assets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/getting-started.01.ht
 ---
 
 # Step 1: Create a project
-<a name="getting-started.01"></a>
 
 In this step, you use the DataBrew console to quickly get started with a sample project.
 

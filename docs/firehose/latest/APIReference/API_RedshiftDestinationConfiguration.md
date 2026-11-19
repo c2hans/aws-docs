@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Redshif
 ---
 
 # RedshiftDestinationConfiguration
-<a name="API_RedshiftDestinationConfiguration"></a>
 
 Describes the configuration of a destination in Amazon Redshift.
 

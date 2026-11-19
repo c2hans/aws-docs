@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_cre
 ---
 
 # Assume an IAM role using the AWS SDK for PHP Version 3
-<a name="guide_credentials_assume_role"></a>
 
 ## Using IAM roles for Amazon EC2 instance variable credentials
 <a name="instance-profile-credentials"></a>

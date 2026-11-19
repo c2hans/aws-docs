@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # Ibm3624PinOffset
-<a name="API_Ibm3624PinOffset"></a>
 
 Pparameters that are required to generate or verify Ibm3624 PIN offset PIN.
 

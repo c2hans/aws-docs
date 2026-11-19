@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPubli
 ---
 
 # IpamPublicAddressTag
-<a name="API_IpamPublicAddressTag"></a>
 
 A tag for a public IP address discovered by IPAM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Get
 ---
 
 # GetAssetPropertyAggregates
-<a name="API_GetAssetPropertyAggregates"></a>
 
 Gets aggregated values for an asset property. For more information, see [Querying aggregates](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-industrial-data.html#aggregates) in the * AWS IoT SiteWise User Guide*.
 

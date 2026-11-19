@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-s3distcp.
 ---
 
 # S3DistCp utility differences with earlier AMI versions of Amazon EMR
-<a name="emr-3x-s3distcp"></a>
 
 ## S3DistCp versions supported in Amazon EMR
 <a name="emr-s3distcp-verisons"></a>

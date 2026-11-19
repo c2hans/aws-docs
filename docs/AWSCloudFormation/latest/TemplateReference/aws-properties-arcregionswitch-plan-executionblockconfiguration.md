@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan ExecutionBlockConfiguration
-<a name="aws-properties-arcregionswitch-plan-executionblockconfiguration"></a>
 
 Execution block configurations for a workflow in a Region switch plan. An execution block represents a specific type of action to perform during a Region switch.
 

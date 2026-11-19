@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # Backpressure
-<a name="troubleshooting-backpressure"></a>
 
 Flink uses backpressure to adapt the processing speed of individual operators.
 

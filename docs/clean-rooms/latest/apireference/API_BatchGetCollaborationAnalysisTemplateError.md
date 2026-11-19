@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Batc
 ---
 
 # BatchGetCollaborationAnalysisTemplateError
-<a name="API_BatchGetCollaborationAnalysisTemplateError"></a>
 
 Details of errors thrown by the call to retrieve multiple analysis templates within a collaboration by their identifiers.
 

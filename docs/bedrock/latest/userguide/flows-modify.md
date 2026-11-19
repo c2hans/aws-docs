@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-modify.ht
 ---
 
 # Modify a flow in Amazon Bedrock
-<a name="flows-modify"></a>
 
 To learn how to modify a flow, choose the tab for your preferred method, and then follow the steps:
 

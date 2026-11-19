@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EventPauseReason.h
 ---
 
 # EventPauseReason
-<a name="API_EventPauseReason"></a>
 
 The reason for pausing a durable execution, as recorded in the execution history.
 

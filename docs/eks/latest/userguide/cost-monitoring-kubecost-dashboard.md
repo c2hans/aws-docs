@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/cost-monitoring-kub
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Access Kubecost Dashboard
-<a name="cost-monitoring-kubecost-dashboard"></a>
 
 ## Prerequisites
 <a name="kubecost-prereqs-dashboard"></a>

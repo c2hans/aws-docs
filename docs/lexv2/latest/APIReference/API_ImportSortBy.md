@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ImportSort
 ---
 
 # ImportSortBy
-<a name="API_ImportSortBy"></a>
 
 Provides information for sorting a list of imports.
 

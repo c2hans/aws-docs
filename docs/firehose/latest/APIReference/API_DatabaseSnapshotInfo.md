@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Databas
 ---
 
 # DatabaseSnapshotInfo
-<a name="API_DatabaseSnapshotInfo"></a>
 
  The structure that describes the snapshot information of a table in source database endpoint that Firehose reads.
 

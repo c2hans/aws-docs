@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # LastUploaderStatus
-<a name="API_LastUploaderStatus"></a>
 
 The latest status of a stream’s edge to cloud uploader job.
 

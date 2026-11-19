@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/kro-permissions.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure kro permissions
-<a name="kro-permissions"></a>
 
 Unlike ACK and Argo CD, kro does not require IAM permissions. kro operates entirely within your Kubernetes cluster and does not make AWS API calls. Control access to kro resources using standard Kubernetes RBAC.
 

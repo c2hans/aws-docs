@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleIsInAddressList
-<a name="API_RuleIsInAddressList"></a>
 
 The structure type for a boolean condition that provides the address lists and address list attribute to evaluate.
 

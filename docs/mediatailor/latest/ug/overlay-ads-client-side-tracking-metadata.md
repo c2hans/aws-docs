@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/overlay-ads-client
 ---
 
 # Tracking overlay ads with client-side metadata
-<a name="overlay-ads-client-side-tracking-metadata"></a>
 
 MediaTailor places the overlay ads in the `nonLinearAdsList` of the avail. The MediaTailor client-side tracking API has two root objects, called `avails` and `nonLinearAvails`. If the VAST response is a VMAP with `breakType` of `nonlinear`, the avail metadata is inside the `nonLinearAvails` root object. If the VAST response is a VMAP with a `breakType` of `linear`, or is a plain VAST response without VMAP, the avail metadata is inside the `avails` root object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/plan-cfn.html
 ---
 
 # CloudFormation templates for backup plans
-<a name="plan-cfn"></a>
 
 We provide three sample CloudFormation templates for your reference. The first template creates a simple backup plan. The second template enables VSS backups in a backup plan. The third template enables Amazon GuardDuty Malware Protection scanning in a backup plan.
 

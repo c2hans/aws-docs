@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # StatelessRulesAndCustomActions
-<a name="API_StatelessRulesAndCustomActions"></a>
 
 Stateless inspection criteria. Each stateless rule group uses exactly one of these data types to define its stateless rules.
 

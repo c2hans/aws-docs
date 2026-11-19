@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcos
 ---
 
 # External interface security
-<a name="telcosec03"></a>
 
 |  TELCOSEC03: How do you maintain security on the external interfaces of your telco network?  |
 | --- |

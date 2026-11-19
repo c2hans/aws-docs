@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ami_sa
 ---
 
 # Using sample Amazon Machine Images (AMIs) with AWS PCS
-<a name="working-with_ami_samples"></a>
 
 AWS provides [sample AMIs](ami-release-notes.md) that you can use as a starting point for working with AWS PCS.
 

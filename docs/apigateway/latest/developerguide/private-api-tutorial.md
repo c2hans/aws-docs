@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/private
 ---
 
 # Tutorial: Create a private REST API
-<a name="private-api-tutorial"></a>
 
 In this tutorial, you create a private REST API. Clients can access the API only from within your Amazon VPC. The API is isolated from the public internet, which is a common security requirement.
 

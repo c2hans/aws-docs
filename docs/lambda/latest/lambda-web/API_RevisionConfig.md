@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_RevisionCon
 ---
 
 # RevisionConfig
-<a name="API_RevisionConfig"></a>
 
 The configuration for a web function revision, including code build settings and service configuration.
 

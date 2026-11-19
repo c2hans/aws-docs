@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # DeleteScope
-<a name="API_DeleteScope"></a>
 
 Deletes the specified scope.
 

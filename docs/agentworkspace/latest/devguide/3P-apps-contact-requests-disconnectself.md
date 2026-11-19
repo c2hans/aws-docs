@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Disconnect the agent from the given contact in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-disconnectself"></a>
 
 Disconnects the currently logged-in agent from the given contact. Other participants on the contact (such as the customer) remain connected.
 

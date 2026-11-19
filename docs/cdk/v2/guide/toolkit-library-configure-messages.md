@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/toolkit-library-configure-m
 ---
 
 # Configuring CDK Toolkit messages and interactions
-<a name="toolkit-library-configure-messages"></a>
 
 The AWS CDK Toolkit Library provides the ` [IIoHost](https://docs.aws.amazon.com/cdk/api/toolkit-lib/Package/toolkit-lib/Interface/IIoHost/) ` interface to customize how messages and interactions are handled during CDK operations, enabling you to control the display of deployment progress, error messages, and user prompts to better integrate with your application’s user experience.
 

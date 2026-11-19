@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CreateWebACL
 ---
 
 # CreateWebACL
-<a name="API_CreateWebACL"></a>
 
 Creates a [WebACL](API_WebACL.md) per the specifications provided.
 

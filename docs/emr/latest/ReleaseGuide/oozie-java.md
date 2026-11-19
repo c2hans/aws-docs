@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/oozie-java.html
 ---
 
 # Configure Java version for Oozie
-<a name="oozie-java"></a>
 
 Oozie runs multiple Java Virtual Machine (JVM) processes. This page explains how to configure the Java version for each process.
 + **Oozie Server**: Set `JAVA_HOME` in the `oozie-env` classification to update the Java version for the `EmbeddedOozieServer`.

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/what-i
 The AWS Mobile SDK for Unity is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Unity. For more information, see [What is the AWS Mobile SDK for Unity?](what-is-unity-plugin.md)
 
 # What is the AWS Mobile SDK for Unity?
-<a name="what-is-unity-plugin"></a>
 
 The AWS Mobile SDK for Unity is now included in the SDK for .NET. For more information, see the [*AWS SDK for .NET Developer Guide*](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/welcome.html).
 

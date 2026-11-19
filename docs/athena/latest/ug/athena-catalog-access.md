@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-catalog-access.h
 ---
 
 # Permissions required to create connector and Athena catalog
-<a name="athena-catalog-access"></a>
 
 To invoke Athena `CreateDataCatalog` you must create a role that has the following permissions:
 

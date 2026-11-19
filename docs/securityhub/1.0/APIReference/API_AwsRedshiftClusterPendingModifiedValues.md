@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterPendingModifiedValues
-<a name="API_AwsRedshiftClusterPendingModifiedValues"></a>
 
 Changes to the Amazon Redshift cluster that are currently pending.
 

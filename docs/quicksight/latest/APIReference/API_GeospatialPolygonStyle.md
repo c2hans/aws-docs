@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialPolygonStyle
-<a name="API_GeospatialPolygonStyle"></a>
 
 The polygon style for a polygon layer.
 

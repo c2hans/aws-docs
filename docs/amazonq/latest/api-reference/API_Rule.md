@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Rule.ht
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
 Guardrail rules for an Amazon Q Business application. Amazon Q Business supports only one rule at a time.
 

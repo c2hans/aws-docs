@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListProjects
-<a name="API_ListProjects"></a>
 
 Retrieves a paginated list of projects for an AWS IoT SiteWise Monitor portal.
 

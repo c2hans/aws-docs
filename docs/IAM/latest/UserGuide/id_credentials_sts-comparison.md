@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_sts-
 ---
 
 # Compare AWS STS credentials
-<a name="id_credentials_sts-comparison"></a>
 
 The following table compares features of the API operations in AWS STS that return temporary security credentials. To learn about the different methods you can use to request temporary security credentials by assuming a role, see [Methods to assume a role](id_roles_manage-assume.md). To learn about the different AWS STS API operations that allow you to pass session tags, see [Pass session tags in AWS STS](id_session-tags.md).
 

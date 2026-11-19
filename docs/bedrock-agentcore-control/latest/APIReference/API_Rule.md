@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
  The evaluation rule that defines sampling configuration, filtering criteria, and session detection settings for online evaluation.
 

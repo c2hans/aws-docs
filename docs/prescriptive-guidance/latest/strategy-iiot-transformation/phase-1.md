@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Phase 1: Identifying business objectives
-<a name="phase-1"></a>
 
 [The business case for the digital investment report](https://econsultancy.com/reports/the-business-case-for-digital-investment/) (Econsultancy website) states that "The lack of a clear longer-term business case and ROI, an absence of board-level understanding and sponsorship, and the perception of digital marcoms as tactical rather than strategic are all viewed as significant challenges to securing the right levels of investment for a digital strategy by at least three-quarters of responding companies." Therefore, it is important to identify and prioritize business opportunities based on measurable KPIs.
 

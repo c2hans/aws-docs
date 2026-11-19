@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksPropert
 ---
 
 # EksPropertiesOverride
-<a name="API_EksPropertiesOverride"></a>
 
 An object that contains overrides for the Kubernetes resources of a job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MFGSCE3: Industrial data mesh
-<a name="mfgsce3-industrial-data-mesh"></a>
 
  Industrial data mesh is an architectural concept that provides decentralized ownership and governed sharing of data across the disparate data sources. Data meshes are natively supported by multiple AWS Services. For large-scale organizations, using multiple AWS accounts and sharing data across them is a common approach.
 

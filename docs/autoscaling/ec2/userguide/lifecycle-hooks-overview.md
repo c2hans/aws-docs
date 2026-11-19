@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hook
 ---
 
 # How lifecycle hooks work in Auto Scaling groups
-<a name="lifecycle-hooks-overview"></a>
 
 An Amazon EC2 instance transitions through different states from the time it launches until it is terminated. You can create custom actions for your Auto Scaling group to act when an instance transitions into a wait state due to a lifecycle hook.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/meta.html
 ---
 
 # $meta
-<a name="meta"></a>
 
 The `$meta` operator is used to access metadata associated with the current query execution. This operator is primarily used for text search operations, where the metadata can provide information about the relevance of the matched documents.
 

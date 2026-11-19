@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # LensReviewSummary
-<a name="API_LensReviewSummary"></a>
 
 A lens review summary of a workload.
 

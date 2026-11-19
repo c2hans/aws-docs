@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/perl.html
 ---
 
 # Perl in AL2023
-<a name="perl"></a>
 
 AL2023 provides version 5.32 of the [Perl](https://www.perl.org/) programming language.
 

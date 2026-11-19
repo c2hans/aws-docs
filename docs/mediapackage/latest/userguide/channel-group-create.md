@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/channel-gr
 ---
 
 # Creating a channel group in AWS Elemental MediaPackage
-<a name="channel-group-create"></a>
 
 This guide shows how to create a channel group as a holder for your channels and origin endpoints. You can provide high-level information about your channel group and can add a certain number of channel groups for each account. After you create a channel group, you can add channels to the channel group.
 

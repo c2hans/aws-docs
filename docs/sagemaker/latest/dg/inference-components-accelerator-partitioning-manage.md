@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-components
 ---
 
 # Manage GPU partitioned endpoints
-<a name="inference-components-accelerator-partitioning-manage"></a>
 
 After you deploy models to a partitioned endpoint, you can scale them, move them to a different partition type, or delete the endpoint. The examples in this topic use the resources from [Create an endpoint with GPU partitions](inference-components-accelerator-partitioning-create.md) and [Deploy models to GPU partitions with inference components](inference-components-accelerator-partitioning-deploy.md).
 

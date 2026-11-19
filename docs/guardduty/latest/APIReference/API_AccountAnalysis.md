@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accoun
 ---
 
 # AccountAnalysis
-<a name="API_AccountAnalysis"></a>
 
 Contains an analysis of the findings in an AWS account.
 

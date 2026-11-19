@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_U
 ---
 
 # UpdateAppVersionAppComponent
-<a name="API_UpdateAppVersionAppComponent"></a>
 
 Updates an existing AppComponent in the AWS Resilience Hub application.
 

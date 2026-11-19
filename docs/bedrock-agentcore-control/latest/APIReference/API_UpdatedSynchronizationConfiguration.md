@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdatedSynchronizationConfiguration
-<a name="API_UpdatedSynchronizationConfiguration"></a>
 
 Wrapper for updating the synchronization configuration with PATCH semantics. Must be matched with `UpdatedSynchronizationType`.
 

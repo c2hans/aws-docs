@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/avoid-unantici
 ---
 
 # Avoiding unanticipated costs when uploading gateway data
-<a name="avoid-unanticipated-costs"></a>
 
 When a file is written to the File Gateway by an NFS client, the File Gateway uploads the file's data to Amazon S3 followed by its metadata. Uploading the file data creates an S3 object, and uploading the metadata for the file updates the metadata for the S3 object. This process creates an additional version of the object. If S3 versioning is turned on, both versions are stored.
 

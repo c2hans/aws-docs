@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_I
 ---
 
 # InputS3Configuration
-<a name="API_InputS3Configuration"></a>
 
 Contains the Amazon S3 location and format settings for bulk operation input. The `S3Bucket` and `InputFormat` fields are required.
 

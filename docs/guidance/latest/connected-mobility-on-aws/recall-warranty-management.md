@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Recall and warranty management
-<a name="recall-warranty-management"></a>
 
 Recall and warranty management turns blanket recalls into targeted service and manual warranty claims into automatic recovery. It matches each recall to the vehicles it affects, uses telemetry to separate vehicles that show the defect from vehicles that only match by VIN, and catches component failures that are still under warranty.
 

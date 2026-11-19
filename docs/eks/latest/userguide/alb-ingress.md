@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/alb-ingress.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Route application and HTTP traffic with Application Load Balancers
-<a name="alb-ingress"></a>
 
 **Note**
  **New:** Amazon EKS Auto Mode automates routine tasks for load balancing. For more information, see:

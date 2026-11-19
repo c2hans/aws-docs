@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_GetResponderGa
 ---
 
 # GetResponderGateway
-<a name="API_GetResponderGateway"></a>
 
 Retrieves information about a responder gateway.
 

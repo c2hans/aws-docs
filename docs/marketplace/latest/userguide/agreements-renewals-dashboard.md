@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/agreements-
 ---
 
 # Agreements and renewals dashboard
-<a name="agreements-renewals-dashboard"></a>
 
 This dashboard provides information about agreements and renewals within 24 hours of signing an agreement in AWS Marketplace. This dashboard can help you track expiring subscriptions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/Tagging.Operat
 ---
 
 # Add tags when creating a new table
-<a name="Tagging.Operations.new.table"></a>
 
 You can use the Amazon Keyspaces console, CQL or the AWS CLI to add tags to new tables when you create them.
 

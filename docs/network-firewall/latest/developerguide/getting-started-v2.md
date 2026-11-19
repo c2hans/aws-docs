@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/g
 ---
 
 # Getting started with a Next Generation policy
-<a name="getting-started-v2"></a>
 
 This tutorial walks you through creating a firewall that uses a Next Generation policy, using the AWS Management Console. A Next Generation policy has two engines: a *firewall engine* for access control, which is drop by default, and an *IPS engine* for threat detection, which is pass by default. You create a firewall rule group and an IPS rule group, combine them in a Next Generation policy, create a firewall, and route your VPC traffic through the firewall endpoint. For a tutorial that uses a Classic policy instead, see [Getting started with a Classic AWS Network Firewall policy](getting-started-classic.md). For the differences between the two policy types, see [AWS Network Firewall firewall policy versions](firewall-policy-versions.md).
 

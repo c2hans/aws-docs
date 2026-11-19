@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Scenarios
-<a name="scenarios"></a>
 
  In this section, we cover key scenarios that are common in many life sciences implementations.
 

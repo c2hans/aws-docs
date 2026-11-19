@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-f
 ---
 
 # Values that you specify when you create or edit rules
-<a name="resolver-forwarding-outbound-queries-rule-values"></a>
 
 When you create or edit a forwarding rule, you specify the following values:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ManagedLoginBrandingType
-<a name="API_ManagedLoginBrandingType"></a>
 
 A managed login branding style that's assigned to a user pool app client.
 

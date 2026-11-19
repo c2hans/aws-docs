@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceFlee
 ---
 
 # InstanceFleetTimeline
-<a name="API_InstanceFleetTimeline"></a>
 
 Provides historical timestamps for the instance fleet, including the time of creation, the time it became ready to run jobs, and the time of termination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_GetMa
 ---
 
 # GetMapTile
-<a name="API_GetMapTile"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend upgrading to [`GetTile`](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetTile.html) unless you require `Grab` data.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeTargetCloudWatchLogsParameters
-<a name="API_PipeTargetCloudWatchLogsParameters"></a>
 
 The parameters for using an CloudWatch Logs log stream as a target.
 

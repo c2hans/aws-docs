@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AzureSc
 ---
 
 # AzureScopeConfiguration
-<a name="API_AzureScopeConfiguration"></a>
 
 The scope configuration for an Azure connector, defining the tenant or subscription scope.
 

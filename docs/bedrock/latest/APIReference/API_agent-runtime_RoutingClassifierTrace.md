@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RoutingClassifierTrace
-<a name="API_agent-runtime_RoutingClassifierTrace"></a>
 
 A trace for a routing classifier.
 

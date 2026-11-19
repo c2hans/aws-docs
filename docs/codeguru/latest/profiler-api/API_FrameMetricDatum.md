@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FrameMe
 ---
 
 # FrameMetricDatum
-<a name="API_FrameMetricDatum"></a>
 
  Information about a frame metric and its values.
 

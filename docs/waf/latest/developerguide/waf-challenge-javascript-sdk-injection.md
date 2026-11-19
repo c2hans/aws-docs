@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-challenge-
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Automatic SDK integration for CloudFront distributions
-<a name="waf-challenge-javascript-sdk-injection"></a>
 
 Several AWS WAF protections rely on client-side signals that the AWS WAF JavaScript SDK collects in the browser. These protections include the targeted protection level of Bot Control and the AWS WAF Fraud Control managed rule groups.
 

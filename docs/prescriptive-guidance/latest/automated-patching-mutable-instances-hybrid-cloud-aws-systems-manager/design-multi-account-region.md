@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/automated-p
 ---
 
 # Patching solution design for multiple AWS accounts and AWS Regions
-<a name="design-multi-account-region"></a>
 
 You can extend the automated patching solution to support servers that span multiple AWS accounts and multiple AWS Regions. The extended solution involves setting up the patch automation solution in each account through AWS CloudFormation StackSets in a shared services account, and configuring a resource data sync across the accounts with the shared services account.
 

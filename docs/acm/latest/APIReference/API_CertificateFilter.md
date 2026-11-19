@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CertificateF
 ---
 
 # CertificateFilter
-<a name="API_CertificateFilter"></a>
 
 Defines a filter for searching certificates by ARN, X.509 attributes, or ACM metadata.
 

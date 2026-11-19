@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 ---
 
 # Building hexagonal architectures on AWS
-<a name="introduction"></a>
 
 *Furkan Oruc, Dominik Goby, Darius Kunce, and Michal Ploski, Amazon Web Services*
 

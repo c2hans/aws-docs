@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ShaderCacheSummary
-<a name="API_ShaderCacheSummary"></a>
 
 Describes a shader cache associated with an Amazon GameLift Streams application.
 

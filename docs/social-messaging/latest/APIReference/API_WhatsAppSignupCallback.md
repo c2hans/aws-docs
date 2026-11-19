@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppSignupCallback
-<a name="API_WhatsAppSignupCallback"></a>
 
 Contains the `accessToken` provided by Meta during signup.
 

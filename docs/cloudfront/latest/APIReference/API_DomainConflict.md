@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Domai
 ---
 
 # DomainConflict
-<a name="API_DomainConflict"></a>
 
 Contains information about the domain conflict. Use this information to determine the affected domain, the related resource, and the affected AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/instance-maint
 ---
 
 # Instance maintenance policy for Auto Scaling group
-<a name="instance-maintenance-policy-overview-and-considerations"></a>
 
 This topic provides an overview of the options available and describes what to consider when you create an instance maintenance policy.
 

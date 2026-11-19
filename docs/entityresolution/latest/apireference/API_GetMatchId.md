@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # GetMatchId
-<a name="API_GetMatchId"></a>
 
 Returns the corresponding Match ID of a customer record if the record has been processed in a rule-based matching workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergInput.html
 ---
 
 # IcebergInput
-<a name="API_IcebergInput"></a>
 
 A structure that defines an Apache Iceberg metadata table to create in the catalog.
 

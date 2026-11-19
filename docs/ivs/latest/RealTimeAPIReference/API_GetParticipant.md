@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetP
 ---
 
 # GetParticipant
-<a name="API_GetParticipant"></a>
 
 Gets information about the specified participant token.
 

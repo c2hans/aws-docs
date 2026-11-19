@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pendo-configuring-connect
 ---
 
 # Configuring Pendo connections
-<a name="pendo-configuring-connections"></a>
 
 Pendo supports custom authentication.
 

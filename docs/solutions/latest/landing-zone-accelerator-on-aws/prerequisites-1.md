@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Prerequisites
-<a name="prerequisites-1"></a>
 
 To launch the Landing Zone Accelerator on AWS solution, verify the following:
 + The account used to launch the solution is allowed to access AWS GovCloud (US) Regions.

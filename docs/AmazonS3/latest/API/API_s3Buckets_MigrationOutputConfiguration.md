@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Migrat
 ---
 
 # MigrationOutputConfiguration
-<a name="API_s3Buckets_MigrationOutputConfiguration"></a>
 
 The bucket and prefixes that a migration writes its reports to. Every report goes to one bucket, each under its own prefix.
 

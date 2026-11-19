@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Collect telemetry from compiled applications using eBPF
-<a name="CloudWatch-OTLP-NoCodeEbpf"></a>
 
 You cannot instrument some applications by adding an OpenTelemetry SDK to the source. Examples include compiled binaries (such as Go, Rust, or C/C\+\+), third-party or vendor binaries whose source you do not own, and applications whose libraries an in-process agent cannot attach to. For these applications, you can use eBPF-based auto-instrumentation to generate OpenTelemetry telemetry without changing application code. You then send that telemetry to CloudWatch through the CloudWatch agent.
 

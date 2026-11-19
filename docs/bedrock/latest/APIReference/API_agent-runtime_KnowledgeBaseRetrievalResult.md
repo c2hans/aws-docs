@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # KnowledgeBaseRetrievalResult
-<a name="API_agent-runtime_KnowledgeBaseRetrievalResult"></a>
 
 Details about a result from querying the knowledge base.
 

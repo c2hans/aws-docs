@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_B
 ---
 
 # BatchStatementResponse
-<a name="API_BatchStatementResponse"></a>
 
  A PartiQL batch statement response..
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Additi
 ---
 
 # AdditionalEnis
-<a name="API_AdditionalEnis"></a>
 
 Information about additional Elastic Network Interfaces (ENIs) associated with an instance.
 

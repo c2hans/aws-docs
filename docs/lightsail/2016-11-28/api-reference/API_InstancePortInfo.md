@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InstancePortInfo
-<a name="API_InstancePortInfo"></a>
 
 Describes information about ports for an Amazon Lightsail instance.
 

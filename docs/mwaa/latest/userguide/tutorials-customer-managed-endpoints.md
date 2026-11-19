@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/tutorials-customer
 ---
 
 # Tutorial: Automate managing your own environment endpoints on Amazon MWAA
-<a name="tutorials-customer-managed-endpoints"></a>
 
 If you use [AWS Organizations](https://docs.aws.amazon.com/) to manage multiple AWS accounts that share resources, Amazon MWAA lets you create and manage your own Amazon VPC endpoints. This means you can use stricter security policies that allow access only to the resources required by your environment.
 

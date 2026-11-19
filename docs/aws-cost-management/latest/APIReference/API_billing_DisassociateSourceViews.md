@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DisassociateSourceViews
-<a name="API_billing_DisassociateSourceViews"></a>
 
  Removes the association between one or more source billing views and an existing billing view. This allows modifying the composition of aggregate billing views.
 

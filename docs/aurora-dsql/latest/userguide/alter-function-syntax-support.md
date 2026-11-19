@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-funct
 ---
 
 # `ALTER FUNCTION`
-<a name="alter-function-syntax-support"></a>
 
 `ALTER FUNCTION` changes the definition of a function.
 

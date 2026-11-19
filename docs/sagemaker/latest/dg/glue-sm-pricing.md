@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/glue-sm-pricing.html
 ---
 
 # AWS Glue interactive session pricing
-<a name="glue-sm-pricing"></a>
 
 When you use AWS Glue interactive sessions on Studio or Studio Classic notebooks, you are charged separately for resource usage on AWS Glue and Studio notebooks.
 

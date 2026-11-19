@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnSemanticType
-<a name="API_ColumnSemanticType"></a>
 
 The semantic type information for a column in the new data preparation experience.
 

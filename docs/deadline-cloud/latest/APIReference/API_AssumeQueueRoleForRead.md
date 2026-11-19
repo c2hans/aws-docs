@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssumeQueueRoleForRead
-<a name="API_AssumeQueueRoleForRead"></a>
 
 Gets AWS credentials from the queue role. The IAM permissions of the credentials are scoped down to have read-only access.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Mu
 ---
 
 # MultitrackInputConfiguration
-<a name="API_MultitrackInputConfiguration"></a>
 
 A complex type that specifies multitrack input configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMREL01-BP02 Implement resilient file-based content ingestion with validation and recovery
-<a name="smrel01-bp02"></a>
 
 Design your file-based content ingestion workflow with reliable transfer mechanisms, automatic validation, and geographic distribution so that content is reliably available for processing and delivery.
 

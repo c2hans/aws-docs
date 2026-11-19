@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DnsCon
 ---
 
 # DnsContext
-<a name="API_DnsContext"></a>
 
 Contains DNS details about network activity.
 

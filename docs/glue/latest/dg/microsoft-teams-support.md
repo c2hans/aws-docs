@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/microsoft-teams-support.h
 ---
 
 # AWS Glue support for Microsoft Teams
-<a name="microsoft-teams-support"></a>
 
 AWS Glue supports Microsoft Teams as follows:
 

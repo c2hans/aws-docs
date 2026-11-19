@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Updating, pausing, and resuming a subscriber
-<a name="eb-custom-bus-update"></a>
 
 `UpdateSubscriber` changes a subscriber in place. A top-level member you omit keeps its stored value; a configuration object you supply replaces the stored object whole, so to change one filter, pass the complete `FilterConfiguration` with every filter you want to keep. To pause a subscriber, pass `--state STOPPED`; to resume, pass `--state RUNNING` with a `--resume-position`.
 

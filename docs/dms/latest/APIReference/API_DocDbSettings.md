@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DocDbSetting
 ---
 
 # DocDbSettings
-<a name="API_DocDbSettings"></a>
 
 Provides information that defines a DocumentDB endpoint.
 

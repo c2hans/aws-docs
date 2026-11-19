@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/MakingAut
 ---
 
 # Making requests using the AWS SDKs
-<a name="MakingAuthenticatedRequests"></a>
 
 **Topics**
 + [Making requests using AWS account or IAM user credentials](AuthUsingAcctOrUserCredentials.md)

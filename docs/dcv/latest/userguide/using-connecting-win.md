@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting-wi
 ---
 
 # Connecting to a Amazon DCV session using the Windows client
-<a name="using-connecting-win"></a>
 
 The steps for connecting to a Amazon DCV session are the same for both the installable and portable versions of the Windows client.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_NumericQ
 ---
 
 # NumericQuestionPropertyValueAutomation
-<a name="API_NumericQuestionPropertyValueAutomation"></a>
 
 Information about the property value used in automation of a numeric questions. Label values are associated with minimum and maximum values for the numeric question.
 + Sentiment scores have a minimum value of -5 and maximum value of 5.

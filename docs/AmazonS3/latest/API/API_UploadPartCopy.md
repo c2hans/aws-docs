@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_UploadPartCopy.h
 ---
 
 # UploadPartCopy
-<a name="API_UploadPartCopy"></a>
 
 Uploads a part by copying data from an existing object as data source. To specify the data source, you add the request header `x-amz-copy-source` in your request. To specify a byte range, you add the request header `x-amz-copy-source-range` in your request.
 
@@ -218,6 +217,7 @@ x-amz-server-side-encryption-customer-key-MD5: {{SSECustomerKeyMD5}}
 x-amz-server-side-encryption-aws-kms-key-id: {{SSEKMSKeyId}}
 x-amz-server-side-encryption-bucket-key-enabled: {{BucketKeyEnabled}}
 x-amz-request-charged: {{RequestCharged}}
+x-amz-version-id: {{VersionId}}
 <?xml version="1.0" encoding="UTF-8"?>
 <CopyPartResult>
    <ETag>string</ETag>
@@ -268,6 +268,11 @@ This functionality is not supported for directory buckets.
 
  ** [x-amz-server-side-encryption-customer-key-MD5](#API_UploadPartCopy_ResponseSyntax) **   <a name="AmazonS3-UploadPartCopy-response-header-SSECustomerKeyMD5"></a>
 If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide the round-trip message integrity verification of the customer-provided encryption key.
+This functionality is not supported for directory buckets.
+
+ ** [x-amz-version-id](#API_UploadPartCopy_ResponseSyntax) **   <a name="AmazonS3-UploadPartCopy-response-header-VersionId"></a>
+Version ID of the object.
+Returns the Version ID of the object for the copied part, if bucket versioning is enabled.
 This functionality is not supported for directory buckets.
 
 The following data is returned in XML format by the service.
@@ -359,8 +364,27 @@ Server: AmazonS3
 </CopyPartResult>
 ```
 
-### Sample Request for general purpose buckets
+### Sample Response for general purpose buckets when the object is versioned
 <a name="API_UploadPartCopy_Example_3"></a>
+
+If versioning is enabled on the bucket, Amazon S3 includes the `x-amz-version-id` response header.
+
+```
+HTTP/1.1 200 OK
+x-amz-id-2: Vvag1LuByRx9e6j5Onimru9pO4ZVKnJ2Qz7/C1NPcfTWAtRPfTaOFg==
+x-amz-request-id: 318BC8BC148832E5
+x-amz-version-id: 3/L4kqtJlcpXroDTDmJ+rmSpXd3QBpUMLUo
+Date:  Mon, 11 Apr 2011 20:34:56 GMT
+Server: AmazonS3
+
+<CopyPartResult>
+   <LastModified>2011-04-11T20:34:56.000Z</LastModified>
+   <ETag>"9b2cf535f27731c974343645a3985328"</ETag>
+</CopyPartResult>
+```
+
+### Sample Request for general purpose buckets
+<a name="API_UploadPartCopy_Example_4"></a>
 
 The following PUT request uploads a part (part number 2) in a multipart upload. The request does not specify the optional byte range header, but requests the entire source object copy as part 2. The request includes the upload ID that you got in response to your Initiate Multipart Upload request.
 
@@ -373,7 +397,7 @@ Authorization: authorization string
 ```
 
 ### Sample Response for general purpose buckets
-<a name="API_UploadPartCopy_Example_4"></a>
+<a name="API_UploadPartCopy_Example_5"></a>
 
 The response includes the ETag value. You need to retain this value to use when you send the Complete Multipart Upload request.
 

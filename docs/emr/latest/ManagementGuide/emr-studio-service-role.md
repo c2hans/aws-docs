@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-se
 ---
 
 # Create an EMR Studio service role
-<a name="emr-studio-service-role"></a>
 
 ## About the EMR Studio service role
 <a name="emr-studio-about-service-role"></a>

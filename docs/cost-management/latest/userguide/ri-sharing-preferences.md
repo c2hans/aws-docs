@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ri-shar
 ---
 
 # Setting up level sharing for a Reserved Instance
-<a name="ri-sharing-preferences"></a>
 
 Level sharing lets you choose which accounts can use the discount from a specific Reserved Instance. Use level sharing when a specific commitment was purchased for a particular team, project or business unit. You set up level sharing in the **Sharing preferences** section on the **Reserved Instance details** page.
 

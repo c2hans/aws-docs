@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Clip
 ---
 
 # ClipRange
-<a name="API_ClipRange"></a>
 
 Clip range configuration for the VOD source associated with the program.
 

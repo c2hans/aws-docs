@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/architecture-g
 ---
 
 # Architectural guidance for Connect Customer
-<a name="architecture-guidance"></a>
 
 This topic provides guidance and best practices for designing and building reliable, secure, efficient, and cost-effective systems for your Connect Customer contact center workloads. Using this guidance can help you build stable and efficient workloads, allowing you to focus on innovation, reduce costs, and improve your customer's experience.
 

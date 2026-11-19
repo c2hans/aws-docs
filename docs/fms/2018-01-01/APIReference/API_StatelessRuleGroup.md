@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Stateles
 ---
 
 # StatelessRuleGroup
-<a name="API_StatelessRuleGroup"></a>
 
  AWS Network Firewall stateless rule group, used in a [NetworkFirewallPolicyDescription](API_NetworkFirewallPolicyDescription.md).
 

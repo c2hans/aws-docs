@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_DeleteWorkerConfigu
 ---
 
 # DeleteWorkerConfiguration
-<a name="API_DeleteWorkerConfiguration"></a>
 
 Deletes the specified worker configuration.
 

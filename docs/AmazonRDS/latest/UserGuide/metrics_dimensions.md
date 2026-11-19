@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/metrics_dimen
 ---
 
 # Viewing DB instance metrics in the CloudWatch console and AWS CLI
-<a name="metrics_dimensions"></a>
 
 Following, you can find details about how to view metrics for your DB instance using CloudWatch. For information on monitoring metrics for your DB instance's operating system in real time using CloudWatch Logs, see [Monitoring OS metrics with Enhanced Monitoring](USER_Monitoring.OS.md).
 

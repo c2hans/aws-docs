@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMajorRoadLabel
-<a name="API_RouteMajorRoadLabel"></a>
 
 Important labels including names and route numbers that differentiate the current route from the alternatives presented.
 

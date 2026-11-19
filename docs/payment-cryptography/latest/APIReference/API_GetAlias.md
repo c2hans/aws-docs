@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # GetAlias
-<a name="API_GetAlias"></a>
 
 Gets the AWS Payment Cryptography key associated with the alias.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # AWS services in this solution
-<a name="aws-services-in-this-solution"></a>
 
 The following AWS services are included in this solution:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Creating a rule group for a Next Generation policy
-<a name="rule-groups-v2-creating"></a>
 
 Use the following procedure to create a firewall rule group or an IPS rule group in the console. The pages that you see after you select the rule group type depend on the type and, for a firewall rule group, on the authoring format that you select.
 

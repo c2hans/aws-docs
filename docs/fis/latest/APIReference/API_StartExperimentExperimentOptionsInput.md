@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_StartExperim
 ---
 
 # StartExperimentExperimentOptionsInput
-<a name="API_StartExperimentExperimentOptionsInput"></a>
 
 Specifies experiment options for running an experiment.
 

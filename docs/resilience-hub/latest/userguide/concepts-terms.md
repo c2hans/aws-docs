@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/concepts
 ---
 
 # AWS Resilience Hub concepts
-<a name="concepts-terms"></a>
 
 These concepts can help you better understand the AWS Resilience Hub's approach to helping improve application resiliency and prevent application outages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_P
 ---
 
 # PendingModifiedRelationalDatabaseValues
-<a name="API_PendingModifiedRelationalDatabaseValues"></a>
 
 Describes a pending database value modification.
 

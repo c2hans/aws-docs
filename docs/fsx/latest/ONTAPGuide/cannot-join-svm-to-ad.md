@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/cannot-join-svm-to
 ---
 
 # You can't join a storage virtual machine (SVM) to Active Directory
-<a name="cannot-join-svm-to-ad"></a>
 
 If you're unable to join an SVM to an Active Directory (AD), first review [How joining SVMs to Microsoft Active Directory works](self-managed-AD-join.md). Common problems that prevent an SVM from joining to your Active Directory are listed in the following sections, including the error messages generated for each circumstance.
 

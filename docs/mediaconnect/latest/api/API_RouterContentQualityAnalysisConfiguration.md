@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterConten
 ---
 
 # RouterContentQualityAnalysisConfiguration
-<a name="API_RouterContentQualityAnalysisConfiguration"></a>
 
 The content quality analysis configuration for the router input.
 

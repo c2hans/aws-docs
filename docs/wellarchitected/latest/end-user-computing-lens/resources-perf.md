@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Resources
-<a name="resources-perf"></a>
 
  **Related documents:**
 +  **WorkSpaces Applications**

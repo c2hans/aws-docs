@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_S3Storag
 ---
 
 # S3StorageConfiguration
-<a name="API_S3StorageConfiguration"></a>
 
 The Amazon S3 storage settings for a general purpose Amazon S3 destination.
 

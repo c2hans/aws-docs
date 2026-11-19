@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-mxnet.html
 ---
 
 # Apache MXNet
-<a name="emr-mxnet"></a>
 
 **Note**
 MXNet has reached end of life, and [the project is archived](https://github.com/apache/mxnet). Amazon EMR 7.2.0 is the last release that includes MXNet.

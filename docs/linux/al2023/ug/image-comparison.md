@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/image-comparison.html
 ---
 
 # Comparing packages installed on Amazon Linux 2023 Images
-<a name="image-comparison"></a>
 
 A comparison of the RPMs present on the AL2023 AMI, Minimal AMI, and Container images.
 

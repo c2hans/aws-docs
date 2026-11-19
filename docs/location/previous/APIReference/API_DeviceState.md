@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Devic
 ---
 
 # DeviceState
-<a name="API_DeviceState"></a>
 
 The device's position, IP address, and Wi-Fi access points.
 

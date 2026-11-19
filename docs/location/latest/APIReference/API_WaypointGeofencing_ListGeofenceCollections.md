@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # ListGeofenceCollections
-<a name="API_WaypointGeofencing_ListGeofenceCollections"></a>
 
 Lists geofence collections in your AWS account.
 

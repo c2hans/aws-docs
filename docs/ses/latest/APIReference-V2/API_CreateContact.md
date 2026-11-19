@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateCon
 ---
 
 # CreateContact
-<a name="API_CreateContact"></a>
 
 Creates a contact, which is an end-user who is receiving the email, and adds them to a contact list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/map-style
 ---
 
 # AWS map styles and features
-<a name="map-styles"></a>
 
 ## Map styles overview
 <a name="map-style-overview"></a>

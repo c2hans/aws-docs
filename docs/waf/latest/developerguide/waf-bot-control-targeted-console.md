@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-bot-contro
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Turning on Targeted bot control in the console
-<a name="waf-bot-control-targeted-console"></a>
 
 This section explains how to turn on the targeted protection level of Bot Control with a single setting in the console.
 

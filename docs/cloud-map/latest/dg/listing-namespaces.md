@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/listing-namespaces.h
 ---
 
 # Listing AWS Cloud Map namespaces
-<a name="listing-namespaces"></a>
 
 After creating namespaces, you can view a list of the namespaces you've created by following these steps.
 

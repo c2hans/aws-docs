@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooti
 ---
 
 # Troubleshooting AWS Client VPN
-<a name="troubleshooting"></a>
 
 The following sections can help you troubleshoot problems that you might have with a Client VPN endpoint.
 

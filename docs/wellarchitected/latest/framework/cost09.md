@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost09.
 ---
 
 # Optimize over time
-<a name="cost09"></a>
 
  A workload that was cost-efficient at launch drifts as usage patterns shift, business requirements change, and cloud providers release new services and pricing models. This capability covers keeping workloads cost-efficient over time: running structured review cycles, deciding when to modernize aging components, and adopting new capabilities as they become available.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThin
 ---
 
 # DescribeThingGroup
-<a name="API_DescribeThingGroup"></a>
 
 Describe a thing group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_OneDriveU
 ---
 
 # OneDriveUsers
-<a name="API_OneDriveUsers"></a>
 
 User accounts whose documents should be indexed.
 

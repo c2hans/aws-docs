@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_CreateAppBundle
 ---
 
 # CreateAppBundle
-<a name="API_CreateAppBundle"></a>
 
 Creates an app bundle to collect data from an application using AppFabric.
 

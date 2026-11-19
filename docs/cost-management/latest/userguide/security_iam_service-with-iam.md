@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/securit
 ---
 
 # How AWS Cost Management works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 AWS Cost Management integrates with the AWS Identity and Access Management (IAM) service so that you can control who in your organization has access to specific pages on the [AWS Cost Management console](https://console.aws.amazon.com/cost-management/home). You can control access to invoices and detailed information about charges and account activity, budgets, payment methods, and credits.
 

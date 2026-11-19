@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Converting Schemas in AWS Schema Conversion Tool
-<a name="CHAP_UserInterface.Converting"></a>
 
 After you added source and target databases to your project and created mapping rules, you can convert your source database schemas. Use the following procedure to convert schema.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceSecondaryInterfaceSpecificationRequest
-<a name="API_InstanceSecondaryInterfaceSpecificationRequest"></a>
 
 Describes a secondary interface specification for launching an instance.
 

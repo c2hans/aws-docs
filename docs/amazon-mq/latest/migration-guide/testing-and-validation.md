@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/testing
 ---
 
 # Validating your migration to Amazon MQ
-<a name="testing-and-validation"></a>
 
  Learn how to test and validate the availbability of your brokers using the following procedure.
 

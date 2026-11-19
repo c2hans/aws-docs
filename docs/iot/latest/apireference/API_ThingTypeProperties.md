@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingTypePro
 ---
 
 # ThingTypeProperties
-<a name="API_ThingTypeProperties"></a>
 
 The ThingTypeProperties contains information about the thing type including: a thing type description, and a list of searchable thing attribute names.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RateConfig
-<a name="API_RateConfig"></a>
 
 Contains the rate configuration for a rate limit metric, specifying the allowed rate and time period.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserDashboardEmbeddingConfiguration
-<a name="API_RegisteredUserDashboardEmbeddingConfiguration"></a>
 
 Information about the dashboard you want to embed.
 

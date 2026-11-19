@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Sta
 ---
 
 # StageConditionsExecution
-<a name="API_StageConditionsExecution"></a>
 
 Represents information about the run of a condition for a stage.
 

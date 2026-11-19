@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-conce
 ---
 
 # AWS End User Messaging SMS concepts
-<a name="what-is-concepts"></a>
 
 This section describes key concepts and defines terminology specific to AWS End User Messaging SMS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobProgr
 ---
 
 # JobProgressSummary
-<a name="API_control_JobProgressSummary"></a>
 
 Describes the total number of tasks that the specified job has started, the number of tasks that succeeded, and the number of tasks that failed.
 

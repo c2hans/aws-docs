@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Building HA applications and infrastructure solutions with AWS Outposts rack
-<a name="building-ha-applications-and-infrastructure-solutions-with-aws-outposts"></a>
 
  With AWS Outposts rack, you can build, manage, and scale highly available on-premises applications using familiar AWS cloud services and tools. It's important to understand cloud HA architectures and approaches are generally different from traditional on-premises HA architectures you may be running in your datacenter today.
 

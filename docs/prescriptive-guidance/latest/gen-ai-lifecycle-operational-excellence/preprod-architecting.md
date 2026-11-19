@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Architecting generative AI applications for production
-<a name="preprod-architecting"></a>
 
 Architecting generative AI applications for production environments requires a sophisticated approach that goes beyond experimental implementations in a PoC. As organizations scale their AI initiatives, they face complex challenges in creating robust, maintainable, and cost-effective systems. This section examines key architectural patterns and best practices that are essential for successfully deploying generative AI in real-world scenarios. With a focus on using a microservices architecture, implementing AI gateways, and optimizing cost and performance, the following sections provide practical strategies to build resilient generative AI systems. By adopting these principles, teams can create flexible, scalable infrastructures that are capable of meeting current demands while accommodating future growth and technological advancements.
 

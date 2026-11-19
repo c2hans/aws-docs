@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.SPLIT_
 ---
 
 # SPLIT\_COLUMN\_WITH\_INTERVALS
-<a name="recipe-actions.SPLIT_COLUMN_WITH_INTERVALS"></a>
 
 Splits a column at intervals of *n* characters, where you specify *n*.
 

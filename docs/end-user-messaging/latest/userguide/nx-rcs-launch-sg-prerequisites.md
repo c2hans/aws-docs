@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # SGNIC SMS sender prerequisite
-<a name="nx-rcs-launch-sg-prerequisites"></a>
 
 If you have not already registered an SMS sender in Singapore, first register your company on the SGNIC portal, register an SMS Sender Name/ID (limited to 11 characters, spaces allowed), and wait for SGNIC approval of your SMS sender.
 

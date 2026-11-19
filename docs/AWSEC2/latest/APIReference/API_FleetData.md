@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetData
 ---
 
 # FleetData
-<a name="API_FleetData"></a>
 
 Describes an EC2 Fleet.
 

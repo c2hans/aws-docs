@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicReference
-<a name="API_TopicReference"></a>
 
 Topic reference.
 

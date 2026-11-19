@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_S
 ---
 
 # ServiceIntegrationUnion
-<a name="API_ServiceIntegrationUnion"></a>
 
 A union structure representing different service integration types.
 

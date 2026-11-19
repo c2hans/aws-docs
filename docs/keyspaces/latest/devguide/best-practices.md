@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/best-practices
 ---
 
 # Best practices for designing and architecting with Amazon Keyspaces (for Apache Cassandra)
-<a name="best-practices"></a>
 
 Use this section to quickly find recommendations for maximizing performance and minimizing throughput costs when working with Amazon Keyspaces.
 

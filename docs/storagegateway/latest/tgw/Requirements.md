@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/Requirements.h
 ---
 
 # Requirements for setting up Tape Gateway
-<a name="Requirements"></a>
 
 Unless otherwise noted, the following requirements are common to all gateway configurations.
 

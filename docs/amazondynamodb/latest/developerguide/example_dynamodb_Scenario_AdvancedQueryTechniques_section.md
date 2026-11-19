@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Perform advanced DynamoDB query operations using an AWS SDK
-<a name="example_dynamodb_Scenario_AdvancedQueryTechniques_section"></a>
 
 The following code examples show how to perform advanced query operations in DynamoDB.
 + Query tables using various filtering and condition techniques.

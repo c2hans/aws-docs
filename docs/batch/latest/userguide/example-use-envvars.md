@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/example-use-envva
 ---
 
 # Environment variables
-<a name="example-use-envvars"></a>
 
 The following example job definition uses environment variables to specify a file type and Amazon S3 URL. This particular example is from the [Creating a Simple "Fetch & Run" AWS Batch Job](https://aws.amazon.com/blogs/compute/creating-a-simple-fetch-and-run-aws-batch-job/) compute blog post. The [`fetch_and_run.sh`](https://github.com/awslabs/aws-batch-helpers/blob/master/fetch-and-run/fetch_and_run.sh) script that's described in the blog post uses these environment variables to download the `myjob.sh` script from S3 and declare its file type.
 

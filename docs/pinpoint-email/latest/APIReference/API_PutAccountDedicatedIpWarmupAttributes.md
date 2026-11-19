@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_P
 ---
 
 # PutAccountDedicatedIpWarmupAttributes
-<a name="API_PutAccountDedicatedIpWarmupAttributes"></a>
 
 Enable or disable the automatic warm-up feature for dedicated IP addresses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CodeConte
 ---
 
 # CodeContentUpdate
-<a name="API_CodeContentUpdate"></a>
 
 Describes an update to the code of an application. Not supported for Apache Zeppelin.
 

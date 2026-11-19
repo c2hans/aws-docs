@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateGlossary.ht
 ---
 
 # UpdateGlossary
-<a name="API_UpdateGlossary"></a>
 
 Updates a business glossary in AWS Glue Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListProvisio
 ---
 
 # ListProvisioningTemplates
-<a name="API_ListProvisioningTemplates"></a>
 
 Lists the provisioning templates in your AWS account.
 

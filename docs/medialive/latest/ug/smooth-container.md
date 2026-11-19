@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smooth-container.htm
 ---
 
 # Fields for the container
-<a name="smooth-container"></a>
 
 The following fields configure the container in each output.
 + **Microsoft Smooth settings** section – **General configuration** section – **Fragment length**

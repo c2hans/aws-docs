@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-swap.html
 ---
 
 # **eb swap**
-<a name="eb3-swap"></a>
 
 ## Description
 <a name="eb3-swapdescription"></a>

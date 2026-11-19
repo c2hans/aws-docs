@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/jobs-jobid.htm
 ---
 
 # Classification Job
-<a name="jobs-jobid"></a>
 
 The Classification Job resource provides detailed information about individual classification jobs for your Amazon Macie account. It also provides access to the status of each job. A *classification job*, also referred to as a *sensitive data discovery job*, is a job that you create to analyze objects in Amazon Simple Storage Service (Amazon S3) general purpose buckets, and determine whether the objects contain sensitive data. For more information, see [Running sensitive data discovery jobs](https://docs.aws.amazon.com/macie/latest/user/discovery-jobs.html) in the *Amazon Macie User Guide*.
 

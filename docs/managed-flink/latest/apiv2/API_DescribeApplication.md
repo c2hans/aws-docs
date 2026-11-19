@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeA
 ---
 
 # DescribeApplication
-<a name="API_DescribeApplication"></a>
 
 Returns information about a specific Managed Service for Apache Flink application.
 

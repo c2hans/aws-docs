@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon Elastic Transcoder
-<a name="list_elastictranscoder"></a>
 
 Amazon Elastic Transcoder (service prefix: `elastictranscoder`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

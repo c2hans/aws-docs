@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/bigquery-redshift-migrati
 ---
 
 # Step 6: Convert Database Schemas
-<a name="bigquery-redshift-migration-step-6"></a>
 
 After you create a new AWS SCT project, convert your source database schemas and apply converted code to your target database.
 

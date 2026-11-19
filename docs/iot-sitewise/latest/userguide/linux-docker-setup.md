@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/linux-dock
 ---
 
 # Set up open-source integrations with Docker (Linux)
-<a name="linux-docker-setup"></a>
 
 For a streamlined deployment process, you can use Docker to set up Node-RED®, InfluxDB®, and Grafana® on a Linux environment. This method uses pre-configured containers, allowing for rapid deployment and easier management of the components.
 

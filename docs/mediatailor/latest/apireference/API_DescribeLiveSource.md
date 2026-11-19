@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Desc
 ---
 
 # DescribeLiveSource
-<a name="API_DescribeLiveSource"></a>
 
 The live source to describe.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Generating starter pipeline for AWS CodePipeline in AWS SAM
-<a name="serverless-generating-example-ci-cd-codepipeline"></a>
 
 To generate a starter pipeline configuration for AWS CodePipeline, perform the following tasks in this order:
 

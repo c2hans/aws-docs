@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # CheckCertificateRevocationStatusActions
-<a name="API_CheckCertificateRevocationStatusActions"></a>
 
 Defines the actions to take on the SSL/TLS connection if the certificate presented by the server in the connection has a revoked or unknown status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-programmat
 ---
 
 # Download IDT programmatically
-<a name="idt-programmatic-download-process"></a>
 
 IDT provides an API operation that you can use to retrieve a URL where you can download IDT programmatically. You can also use this API operation to check if you have the latest version of IDT. This API operation has the following endpoint.
 

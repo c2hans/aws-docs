@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/histogram-charts.
 ---
 
 # Using histograms
-<a name="histogram-charts"></a>
 
 Use a histogram chart in AWS Quick to display the distribution of continuous numerical values in your data. AWS Quick uses un-normalized histograms, which use an absolute count of the data points or events in each bin.
 

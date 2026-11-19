@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListFunctions.html
 ---
 
 # ListFunctions
-<a name="API_ListFunctions"></a>
 
 Returns a list of Lambda Event Functions, with the version-specific configuration of each. Lambda returns up to 50 functions per call.
 
@@ -54,6 +53,9 @@ Content-type: application/json
 {
    "Functions": [
       {
+         "AcceleratorConfig": {
+            "AcceleratorMemorySize": number
+         },
          "Architectures": [ "string" ],
          "CapacityProviderConfig": {
             "LambdaManagedInstancesCapacityProviderConfig": {
@@ -134,6 +136,10 @@ Content-type: application/json
          "RevisionId": "string",
          "Role": "string",
          "Runtime": "string",
+         "RuntimeConfig": {
+            "RuntimeAlias": "string",
+            "RuntimeArn": "string"
+         },
          "RuntimeVersionConfig": {
             "Error": {
                "ErrorCode": "string",

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolFuncti
 ---
 
 # GetSolFunctionPackageContent
-<a name="API_GetSolFunctionPackageContent"></a>
 
 Gets the contents of a function package.
 

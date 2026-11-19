@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Enable zonal shift for your Application Load Balancer
-<a name="enable-zonal-shift"></a>
 
 Zonal shift is disabled by default and must be enabled on each Application Load Balancer. This ensures that you can start a zonal shift using only the specific Application Load Balancers that you want. For more information, see [Zonal shift for your Application Load Balancer](zonal-shift.md).
 

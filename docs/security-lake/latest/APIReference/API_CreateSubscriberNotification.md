@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Cr
 ---
 
 # CreateSubscriberNotification
-<a name="API_CreateSubscriberNotification"></a>
 
 Notifies the subscriber when new data is written to the data lake for the sources that the subscriber consumes in Security Lake. You can create only one subscriber notification per subscriber.
 

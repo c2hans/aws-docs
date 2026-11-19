@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoT1ClickFullAccess
-<a name="AWSIoT1ClickFullAccess"></a>
 
 **Description**: Provides full access to AWS IoT 1-Click.
 

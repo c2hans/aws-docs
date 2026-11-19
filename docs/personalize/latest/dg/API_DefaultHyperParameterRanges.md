@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DefaultHyperPa
 ---
 
 # DefaultHyperParameterRanges
-<a name="API_DefaultHyperParameterRanges"></a>
 
 Specifies the hyperparameters and their default ranges. Hyperparameters can be categorical, continuous, or integer-valued.
 

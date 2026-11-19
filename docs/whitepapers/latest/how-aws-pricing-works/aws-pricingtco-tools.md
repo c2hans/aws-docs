@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # AWS Pricing/TCO Tools
-<a name="aws-pricingtco-tools"></a>
 
  To get the most out of your estimates, you should have a good idea of your basic requirements. For example, if you're going to try Amazon EC2, it might help if you know what kind of operating system you need, what your memory requirements are, and how much I/O you need. You should also decide whether you need storage, if you're going to run a database, and how long you intend to use the servers. You don't need to make these decisions before generating an estimate; you can play around with the service conﬁguration and parameters to see which options ﬁt your use case and budget best. For more information about AWS service pricing, see [AWS Pricing](https://aws.amazon.com/pricing/services/).
 

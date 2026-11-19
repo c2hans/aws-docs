@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/findings-findi
 ---
 
 # Findings - Reveal Sensitive Data Occurrences
-<a name="findings-findingid-reveal"></a>
 
 The Reveal Sensitive Data Occurrences resource provides options for retrieving sample occurrences of sensitive data that Amazon Macie reported in a finding. The samples can help you verify the nature of the sensitive data that Macie found. You can also use them to tailor your investigation of the affected Amazon Simple Storage Service (Amazon S3) object or bucket. You can retrieve sensitive data samples in all the AWS Regions where Macie is currently available except the Asia Pacific (Osaka) and Israel (Tel Aviv) Regions.
 

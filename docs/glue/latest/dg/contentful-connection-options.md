@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/contentful-connection-opt
 ---
 
 # Contentful connection options
-<a name="contentful-connection-options"></a>
 
 The following are connection options for Contentful:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Contentful object to read.

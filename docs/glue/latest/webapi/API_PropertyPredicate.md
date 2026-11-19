@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PropertyPredicate
 ---
 
 # PropertyPredicate
-<a name="API_PropertyPredicate"></a>
 
 Defines a property predicate.
 

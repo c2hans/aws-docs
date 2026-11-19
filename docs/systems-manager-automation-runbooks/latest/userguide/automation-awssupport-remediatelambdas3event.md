@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-RemediateLambdaS3Event`
-<a name="automation-awssupport-remediatelambdas3event"></a>
 
  **Description**
 

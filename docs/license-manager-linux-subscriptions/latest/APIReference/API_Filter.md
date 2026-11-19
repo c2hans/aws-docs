@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A filter object that is used to return more specific results from a describe operation. Filters can be used to match a set of resources by specific criteria.
 

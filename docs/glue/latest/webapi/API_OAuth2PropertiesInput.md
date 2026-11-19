@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OAuth2PropertiesI
 ---
 
 # OAuth2PropertiesInput
-<a name="API_OAuth2PropertiesInput"></a>
 
 A structure containing properties for OAuth2 in the CreateConnection request.
 

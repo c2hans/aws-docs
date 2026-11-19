@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Operation
 ---
 
 # Amazon Kendra
-<a name="API_Operations_Amazon_Kendra"></a>
 
 The following actions are supported by Amazon Kendra:
 +  [AssociateEntitiesToExperience](API_AssociateEntitiesToExperience.md)

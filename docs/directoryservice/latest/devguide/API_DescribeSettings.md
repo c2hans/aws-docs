@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeSettings
-<a name="API_DescribeSettings"></a>
 
 Retrieves information about the configurable settings for the specified directory.
 
@@ -30,7 +29,7 @@ Pattern: `^d-[0-9a-f]{10}$`
 Required: Yes
 
  ** [NextToken](#API_DescribeSettings_RequestSyntax) **   <a name="DirectoryService-DescribeSettings-request-NextToken"></a>
-The `DescribeSettingsResult.NextToken` value from a previous call to [DescribeSettings](#API_DescribeSettings). Pass null if this is the first call.
+The `DescribeSettingsResult.NextToken` value from a previous call to [DescribeSettings](API_DescribeSettings.md). Pass null if this is the first call.
 Type: String
 Required: No
 

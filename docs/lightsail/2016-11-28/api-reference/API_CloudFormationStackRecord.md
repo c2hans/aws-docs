@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CloudFormationStackRecord
-<a name="API_CloudFormationStackRecord"></a>
 
 Describes a CloudFormation stack record created as a result of the `create cloud formation stack` action.
 

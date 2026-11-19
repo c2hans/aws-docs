@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dynatrace-configuring.htm
 ---
 
 # Configuring Dynatrace
-<a name="dynatrace-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Dynatrace, you must meet these requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Names, endpoints, and IAM permissions for the Custom Event Bus
-<a name="eb-custom-bus-names"></a>
 
 The Custom Event Bus has its own AWS CLI command, SDK client, and endpoint, and it shares its IAM namespace and service principal with Custom Event Bus - Classic. The following table shows which name to use where.
 

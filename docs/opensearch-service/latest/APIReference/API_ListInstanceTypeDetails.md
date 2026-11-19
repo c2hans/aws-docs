@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListInstanceTypeDetails
-<a name="API_ListInstanceTypeDetails"></a>
 
 Lists all instance types and available features for a given OpenSearch or Elasticsearch version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/data-providers-orac
 ---
 
 # Using an Oracle database as a source in DMS Schema Conversion
-<a name="data-providers-oracle"></a>
 
 You can use Oracle databases as a migration source in DMS Schema Conversion.
 

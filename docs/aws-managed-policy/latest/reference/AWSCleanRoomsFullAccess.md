@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCleanRoomsFullAccess
-<a name="AWSCleanRoomsFullAccess"></a>
 
 **Description**: Allows full access to AWS Clean Rooms resources and access to related AWS services.
 

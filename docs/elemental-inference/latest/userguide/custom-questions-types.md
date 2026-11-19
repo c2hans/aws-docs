@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Question types
-<a name="custom-questions-types"></a>
 
 A question set contains questions of three types. You provide each type as a separate list in the request: `yesNo`, `yesNoPerOption`, and `chooseOne`. Every decision has a `name` and the `question` text. Answers identify questions and options by `name`, not by text.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSVPCResourceController
-<a name="AmazonEKSVPCResourceController"></a>
 
 **Description**: Policy used by VPC Resource Controller to manage ENI and IPs for worker nodes.
 

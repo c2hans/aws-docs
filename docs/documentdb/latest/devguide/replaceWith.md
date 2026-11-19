@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/replaceWith.h
 ---
 
 # $replaceWith
-<a name="replaceWith"></a>
 
 New from version 8.0
 

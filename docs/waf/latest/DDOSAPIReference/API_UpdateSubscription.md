@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_UpdateSu
 ---
 
 # UpdateSubscription
-<a name="API_UpdateSubscription"></a>
 
 Updates the details of an existing subscription. Only enter values for parameters you want to change. Empty parameters are not updated.
 

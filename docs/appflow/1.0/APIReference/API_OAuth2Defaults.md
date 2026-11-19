@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_OAuth2Defau
 ---
 
 # OAuth2Defaults
-<a name="API_OAuth2Defaults"></a>
 
 Contains the default values required for OAuth 2.0 authentication.
 

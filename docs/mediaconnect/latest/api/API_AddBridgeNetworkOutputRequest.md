@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddBridgeNet
 ---
 
 # AddBridgeNetworkOutputRequest
-<a name="API_AddBridgeNetworkOutputRequest"></a>
 
 Add a network output to an existing bridge.
 

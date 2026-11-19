@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Cre
 ---
 
 # CreateSourceRepositoryBranch
-<a name="API_CreateSourceRepositoryBranch"></a>
 
 Creates a branch in a specified source repository in Amazon CodeCatalyst.
 

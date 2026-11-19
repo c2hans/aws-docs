@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJobExe
 ---
 
 # DeleteJobExecution
-<a name="API_DeleteJobExecution"></a>
 
 Deletes a job execution.
 

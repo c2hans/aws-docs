@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ErrorRootCause.html
 ---
 
 # ErrorRootCause
-<a name="API_ErrorRootCause"></a>
 
 The root cause of a trace summary error.
 

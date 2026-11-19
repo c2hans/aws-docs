@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::ComputationModel ComputationModelDataBindingValue
-<a name="aws-properties-iotsitewise-computationmodel-computationmodeldatabindingvalue"></a>
 
 Contains computation model data binding value information, which can be one of `assetModelProperty`, `list`.
 
@@ -55,5 +54,5 @@ The asset property value used for computation model data binding.
 `List`  <a name="cfn-iotsitewise-computationmodel-computationmodeldatabindingvalue-list"></a>
 Specifies a list of data binding value.
 *Required*: No
-*Type*: Array of [ComputationModelDataBindingValue](#aws-properties-iotsitewise-computationmodel-computationmodeldatabindingvalue)
+*Type*: Array of [ComputationModelDataBindingValue](aws-properties-iotsitewise-computationmodel-computationmodeldatabindingvalue.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

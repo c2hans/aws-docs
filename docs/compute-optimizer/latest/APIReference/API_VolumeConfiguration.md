@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # VolumeConfiguration
-<a name="API_VolumeConfiguration"></a>
 
 Describes the configuration of an Amazon Elastic Block Store (Amazon EBS) volume.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-rate-limit
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Options for rate limiting in rate-based rules and targeted Bot Control rules
-<a name="waf-rate-limiting-options"></a>
 
 This section compares rate-based mitigation options.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-cache-startrun
 ---
 
 # Using the run cache
-<a name="workflow-cache-startrun"></a>
 
 By default, runs don't use a run cache. To use a cache for the run, you specify the run cache and the run cache behavior when you start the run.
 

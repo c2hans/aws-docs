@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/create
 ---
 
 # Create scheduled actions for Application Auto Scaling using the AWS CLI
-<a name="create-scheduled-actions"></a>
 
 The following examples show how to create scheduled actions using the AWS CLI [put-scheduled-action](https://docs.aws.amazon.com/cli/latest/reference/application-autoscaling/put-scheduled-action.html) command. When you specify the new capacity, you can specify a minimum capacity, a maximum capacity, or both.
 

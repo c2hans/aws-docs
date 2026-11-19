@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # NodeFilter
-<a name="API_NodeFilter"></a>
 
 The filters for the operation.
 

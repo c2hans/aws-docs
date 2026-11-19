@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Component
 ---
 
 # Component
-<a name="API_Component"></a>
 
 Contains information about a component.
 

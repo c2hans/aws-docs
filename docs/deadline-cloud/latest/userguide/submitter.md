@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/submitte
 ---
 
 # Set up your workstation
-<a name="submitter"></a>
 
 Set up a workstation so that you can submit jobs to AWS Deadline Cloud from your digital content creation (DCC) application. A Deadline Cloud *submitter* is a DCC plugin. You use it to submit jobs from a third-party DCC interface that you're familiar with. You can follow these steps yourself, or an administrator can install the software in advance. You sign in with your own user account.
 

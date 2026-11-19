@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-report.h
 ---
 
 # Test report statuses
-<a name="test-report"></a>
 
 The status of a test report can be one of the following:
 + `GENERATING`: The run of the test cases is still in progress.

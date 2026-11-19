@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Partner
 ---
 
 # PartnerIntegrationInfo
-<a name="API_PartnerIntegrationInfo"></a>
 
 Describes a partner integration.
 

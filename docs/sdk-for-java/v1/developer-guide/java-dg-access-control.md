@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Access Control Policies
-<a name="java-dg-access-control"></a>
 
  AWS *access control policies* enable you to specify fine-grained access controls on your AWS resources. An access control policy consists of a collection of *statements*, which take the form:
 

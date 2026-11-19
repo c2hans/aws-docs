@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ai-assisted
 ---
 
 # AI-assisted product listing
-<a name="ai-assisted-product-listing"></a>
 
 AI-assisted product listing is a capability in AWS Partner Assistant. It helps you create high-quality AWS Marketplace product listings of all product types from your existing digital assets.
 

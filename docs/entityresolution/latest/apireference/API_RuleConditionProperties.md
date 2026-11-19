@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # RuleConditionProperties
-<a name="API_RuleConditionProperties"></a>
 
 The properties of a rule condition that provides the ability to use more complex syntax.
 

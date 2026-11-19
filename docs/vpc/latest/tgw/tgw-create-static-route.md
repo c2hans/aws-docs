@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-create-static-route.h
 ---
 
 # Create a static route in AWS Transit Gateway
-<a name="tgw-create-static-route"></a>
 
 Create a static route for a VPC, VPN, or transit gateway peering attachment, or you can create a blackhole route that drops traffic that matches the route.
 

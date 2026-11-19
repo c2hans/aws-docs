@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateFeatureMetadata
-<a name="API_UpdateFeatureMetadata"></a>
 
 Updates the description and parameters of the feature group.
 

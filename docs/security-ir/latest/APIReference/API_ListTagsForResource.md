@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_List
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Returns currently configured tags on a resource.
 

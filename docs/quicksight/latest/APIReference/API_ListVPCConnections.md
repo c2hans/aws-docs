@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListV
 ---
 
 # ListVPCConnections
-<a name="API_ListVPCConnections"></a>
 
 Lists all of the VPC connections in the current set AWS Region of an AWS account.
 

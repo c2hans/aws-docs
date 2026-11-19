@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/list-lifec
 ---
 
 # List lifecycle management policies for Image Builder image resources
-<a name="list-lifecycle-policies"></a>
 
 You can get a list of your image lifecycle management policies that includes key detail columns on the **Lifecycle policies** list page in the AWS Management Console, or with commands or actions in the Image Builder API, SDKs, or AWS CLI.
 

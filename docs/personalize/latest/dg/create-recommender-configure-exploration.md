@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/create-recommender
 ---
 
 # Configuring exploration for a domain recommender
-<a name="create-recommender-configure-exploration"></a>
 
 For `Top picks for your` or `Recommended for you` use cases, Amazon Personalize uses exploration when recommending items. Exploration involves testing different item recommendations to learn how users respond to items with very little interaction data. You can configure exploration with the following:
 + Emphasis on exploring less relevant items (exploration weight) – Configure how much to explore. Specify a decimal value between 0 to 1. The default is 0.3. The closer the value is to 1, the more exploration. With more exploration, recommendations include more items with less item interactions data or relevance based on previous behavior. At zero, no exploration occurs and recommendations are based on current data (relevance).

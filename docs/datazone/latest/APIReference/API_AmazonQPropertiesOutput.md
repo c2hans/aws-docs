@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AmazonQ
 ---
 
 # AmazonQPropertiesOutput
-<a name="API_AmazonQPropertiesOutput"></a>
 
 The Amazon Q properties of the connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_ServiceAttribut
 ---
 
 # ServiceAttributes
-<a name="API_ServiceAttributes"></a>
 
 A complex type that contains information about attributes associated with a specific service.
 

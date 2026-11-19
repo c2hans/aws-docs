@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_LakeFor
 ---
 
 # LakeFormationQuery
-<a name="API_LakeFormationQuery"></a>
 
 The Lake Formation scope.
 

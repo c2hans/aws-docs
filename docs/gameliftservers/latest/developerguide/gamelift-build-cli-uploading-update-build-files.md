@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Update a game server build
-<a name="gamelift-build-cli-uploading-update-build-files"></a>
 
 When you deploy your game server build for Amazon GameLift Servers managed EC2 hosting, you upload your game server software and create an Amazon GameLift Servers build resource. After you've created an Amazon GameLift Servers build, you can update the build's metadata, but you can't update the build files themselves. To deploy updates to your game server build, you must upload a new set of files and create a new Amazon GameLift Servers build using the AWS CLI [`upload-build`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/upload-build.html) command. Alternatively, you can use the [`create-build`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-build.html) command to upload a new build from an Amazon S3 bucket that you control. Then deploy the new build by creating a new fleet for it.
 

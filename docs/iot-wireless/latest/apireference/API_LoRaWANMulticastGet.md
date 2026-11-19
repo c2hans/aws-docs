@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANMulticastGet
-<a name="API_LoRaWANMulticastGet"></a>
 
 The LoRaWAN information that is to be returned from getting multicast group information.
 

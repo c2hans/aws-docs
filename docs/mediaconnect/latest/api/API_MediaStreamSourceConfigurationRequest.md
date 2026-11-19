@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaStreamS
 ---
 
 # MediaStreamSourceConfigurationRequest
-<a name="API_MediaStreamSourceConfigurationRequest"></a>
 
 The media stream that you want to associate with the source, and the parameters for that association.
 

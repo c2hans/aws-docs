@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
 ---
 
 # Step 3: Use the CodeDeploy console to deploy your application
-<a name="tutorial-ecs-deployment-deploy"></a>
 
  In this section, you create a CodeDeploy application and deployment group to deploy your updated application into Amazon ECS. During deployment, CodeDeploy shifts the production traffic for your application to its new version in a new, replacement task set. To complete this step, you need the following items:
 +  Your Amazon ECS cluster name.

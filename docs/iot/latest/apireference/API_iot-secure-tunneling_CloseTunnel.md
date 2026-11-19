@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-t
 ---
 
 # CloseTunnel
-<a name="API_iot-secure-tunneling_CloseTunnel"></a>
 
 Closes a tunnel identified by the unique tunnel id. When a `CloseTunnel` request is received, we close the WebSocket connections between the client and proxy server so no data can be transmitted.
 

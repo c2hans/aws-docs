@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_SsmTarg
 ---
 
 # SsmTarget
-<a name="API_SsmTarget"></a>
 
 A single `SendCommand` target filter, consisting of a target key and the values matched by that key.
 

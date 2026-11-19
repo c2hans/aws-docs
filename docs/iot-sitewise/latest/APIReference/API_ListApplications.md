@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListApplications
-<a name="API_ListApplications"></a>
 
 Retrieves a paginated list of existing applications
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/w
 ---
 
 # Working with Amazon S3 objects by using the AWS Toolkit for JetBrains
-<a name="work-with-S3-objects"></a>
 
 Objects are the fundamental entities stored in Amazon S3. Objects consist of object data and metadata.
 

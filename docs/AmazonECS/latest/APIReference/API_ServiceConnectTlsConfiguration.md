@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceConnectTlsConfiguration
-<a name="API_ServiceConnectTlsConfiguration"></a>
 
 The key that encrypts and decrypts your resources for Service Connect TLS.
 

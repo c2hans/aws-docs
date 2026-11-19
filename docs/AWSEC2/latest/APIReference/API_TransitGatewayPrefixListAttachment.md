@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayPrefixListAttachment
-<a name="API_TransitGatewayPrefixListAttachment"></a>
 
 Describes a transit gateway prefix list attachment.
 

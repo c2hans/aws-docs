@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/standard-mode-ex
 ---
 
 # Standard mode examples for burstable instances
-<a name="standard-mode-examples"></a>
 
 The following examples explain credit use when instances are configured as `standard`.
 

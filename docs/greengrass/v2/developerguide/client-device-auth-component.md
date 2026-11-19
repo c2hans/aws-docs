@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/client-devi
 ---
 
 # Client device auth
-<a name="client-device-auth-component"></a>
 
 The client device auth component (`aws.greengrass.clientdevices.Auth`) authenticates client devices and authorizes client device actions.
 

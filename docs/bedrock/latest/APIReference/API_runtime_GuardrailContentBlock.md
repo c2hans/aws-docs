@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailContentBlock
-<a name="API_runtime_GuardrailContentBlock"></a>
 
 The content block to be evaluated by the guardrail.
 

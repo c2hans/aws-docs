@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-subnet.html
 ---
 
 # AWS.Networking.Subnet
-<a name="node-subnet"></a>
 
 A subnet is a range of IP addresses in your VPC, and it must reside entirely within one Availability Zone. You must specify a VPC, a CIDR block, Availability Zone, and a route table for your subnet. You must also define whether your subnet is private or public.
 

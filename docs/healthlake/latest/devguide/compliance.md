@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/compliance.ht
 ---
 
 # Compliance validation for AWS HealthLake
-<a name="compliance"></a>
 
 Third-party auditors assess the security and compliance of AWS HealthLake as part of multiple AWS compliance programs. For HealthLake this includes HIPAA.
 

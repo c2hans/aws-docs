@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Auth
-<a name="sam-property-graphqlapi-auth"></a>
 
 Configure authorization for your GraphQL API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-initiate
 ---
 
 # Enable agent-initiated flows during active chat sessions
-<a name="agent-initiated-flows"></a>
 
 Agent-initiated workflows are interactive workflows that agents can trigger during active chat sessions with customers. This feature enables agents to send forms for data collection, process payments, update customer profiles, and initiate automated processes while maintaining direct interaction with customers within the chat experience.
 

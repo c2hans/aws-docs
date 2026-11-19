@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListR
 ---
 
 # ListRecoveryPointsByResource
-<a name="API_ListRecoveryPointsByResource"></a>
 
 The information about the recovery points of the type specified by a resource Amazon Resource Name (ARN).
 

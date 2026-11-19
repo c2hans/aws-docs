@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_R
 ---
 
 # Replica
-<a name="API_Replica"></a>
 
 Represents the properties of a replica.
 

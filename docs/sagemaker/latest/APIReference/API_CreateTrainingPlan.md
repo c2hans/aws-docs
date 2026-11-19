@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateTrainingPlan
-<a name="API_CreateTrainingPlan"></a>
 
 Creates a new training plan in SageMaker to reserve compute capacity.
 

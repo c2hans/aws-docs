@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Del
 ---
 
 # DeleteSnapshot
-<a name="API_DeleteSnapshot"></a>
 
 Deletes a directory snapshot.
 

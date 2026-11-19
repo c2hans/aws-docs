@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_DeleteSamplingRule.h
 ---
 
 # DeleteSamplingRule
-<a name="API_DeleteSamplingRule"></a>
 
 Deletes a sampling rule.
 

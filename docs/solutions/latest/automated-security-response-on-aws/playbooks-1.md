@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Playbooks
-<a name="playbooks-1"></a>
 
 This solution includes the playbook remediations for the security standards defined as part of the [Center for Internet Security (CIS) AWS Foundations Benchmark v1.2.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html#cis1v2-standard), [CIS AWS Foundations Benchmark v1.4.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html#cis1v4-standard), [CIS AWS Foundations Benchmark v3.0.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html#cis3v0-standard), [AWS Foundational Security Best Practices (FSBP) v1.0.0](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html), [Payment Card Industry Data Security Standard (PCI-DSS) v3.2.1](https://docs.aws.amazon.com/securityhub/latest/userguide/pci-standard.html), and [National Institute of Standards and Technology (NIST)](https://docs.aws.amazon.com/securityhub/latest/userguide/nist-standard.html).
 

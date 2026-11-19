@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_C
 ---
 
 # ControlParameter
-<a name="API_ControlParameter"></a>
 
 Five types of control parameters are supported.
 +  **AllowedRegions**: List of AWS Regions exempted from the control. Each string is expected to be an AWS Region code. This parameter is mandatory for the **OU Region deny** control, **CT.MULTISERVICE.PV.1**.

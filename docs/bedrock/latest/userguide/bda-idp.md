@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-idp.html
 ---
 
 # Creating blueprints
-<a name="bda-idp"></a>
 
 ## How to create blueprints for custom outputs
 <a name="how-to-create-blueprints"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-detect
 ---
 
 # Amazon Detective events
-<a name="events-ref-detective"></a>
 
 Detective sends service events to EventBridge via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnToUnpivot
-<a name="API_ColumnToUnpivot"></a>
 
 Specifies a column to be unpivoted, transforming it from a column into rows with associated values.
 

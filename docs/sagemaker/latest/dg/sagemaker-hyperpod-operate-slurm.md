@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-o
 ---
 
 # SageMaker HyperPod Slurm cluster operations
-<a name="sagemaker-hyperpod-operate-slurm"></a>
 
 This section provides guidance on managing SageMaker HyperPod through the SageMaker AI console UI or the AWS Command Line Interface (CLI). You'll learn how to perform various tasks related to SageMaker HyperPod, whether you prefer a visual interface or working with commands.
 

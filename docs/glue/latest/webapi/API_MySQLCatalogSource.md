@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MySQLCatalogSourc
 ---
 
 # MySQLCatalogSource
-<a name="API_MySQLCatalogSource"></a>
 
 Specifies a MySQL data source in the AWS Glue Data Catalog.
 

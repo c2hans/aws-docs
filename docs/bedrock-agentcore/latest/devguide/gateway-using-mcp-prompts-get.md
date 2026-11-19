@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Get a prompt from an AgentCore gateway
-<a name="gateway-using-mcp-prompts-get"></a>
 
 To get a specific prompt, make a POST request to the gateway’s MCP endpoint and specify `prompts/get` as the method in the request body, name of the prompt, and the arguments:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-static-dynamic.htm
 ---
 
 # Static and dynamic routing in AWS Site-to-Site VPN
-<a name="vpn-static-dynamic"></a>
 
 The type of routing that you select can depend on the make and model of your customer gateway device. If your customer gateway device supports Border Gateway Protocol (BGP), specify dynamic routing when you configure your Site-to-Site VPN connection. If your customer gateway device does not support BGP, specify static routing.
 

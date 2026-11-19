@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Ge
 ---
 
 # GetSubscriber
-<a name="API_GetSubscriber"></a>
 
 Retrieves the subscription information for the specified subscription ID. You can get information about a specific subscriber.
 

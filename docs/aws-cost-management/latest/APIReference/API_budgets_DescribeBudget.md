@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DescribeBudget
-<a name="API_budgets_DescribeBudget"></a>
 
 Describes a budget.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-th
 ---
 
 # Amazon API Gateway
-<a name="api-gateway"></a>
 
 [Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) is an API management service that's primarily designed for creating, publishing, and managing REST, HTTP, and WebSocket APIs. Use API Gateway to take advantage of capabilities like AWS Lambda authorizers, request/response validation and transformation, usage plans, and built-in AWS WAF support. For more information, see [Features of API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html#api-gateway-overview-features) in the *Amazon API Gateway Developer Guide*.
 

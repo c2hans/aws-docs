@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # Creating or modifying a bond
-<a name="config-conductor-live-config-bond-add"></a>
 
 If you set up more Ethernet interfaces on the Conductor Live node, you can optionally bond two Ethernet interfaces.
 

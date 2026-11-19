@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/keyspaces-crea
 ---
 
 # Check keyspace creation status in Amazon Keyspaces
-<a name="keyspaces-create"></a>
 
 Amazon Keyspaces performs data definition language (DDL) operations, such as creating and deleting keyspaces, asynchronously.
 

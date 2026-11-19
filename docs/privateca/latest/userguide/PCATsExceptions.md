@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PCATsExceptio
 ---
 
 # Troubleshoot AWS Private Certificate Authority exception messages
-<a name="PCATsExceptions"></a>
 
 An AWS Private CA command might fail for several reasons. For information on each exception and recommendations for resolving them, see the table below.
 

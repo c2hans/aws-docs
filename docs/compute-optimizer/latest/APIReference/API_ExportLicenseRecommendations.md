@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExportLicenseRecommendations
-<a name="API_ExportLicenseRecommendations"></a>
 
  Export optimization recommendations for your licenses.
 

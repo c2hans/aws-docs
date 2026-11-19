@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterThin
 ---
 
 # RegisterThing
-<a name="API_RegisterThing"></a>
 
 Provisions a thing in the device registry. RegisterThing calls other AWS IoT control plane APIs. These calls might exceed your account level [AWS IoT Throttling Limits](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_iot) and cause throttle errors. Please contact [AWS Customer Support](https://console.aws.amazon.com/support/home) to raise your throttling limits if necessary.
 

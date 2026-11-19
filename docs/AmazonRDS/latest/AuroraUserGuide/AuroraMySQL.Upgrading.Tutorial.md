@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Aurora MySQL in-place upgrade tutorial
-<a name="AuroraMySQL.Upgrading.Tutorial"></a>
 
 The following Linux examples show how you might perform the general steps of the in-place upgrade procedure using the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cfn-guard/latest/ug/writing-rules.html
 ---
 
 # Writing AWS CloudFormation Guard rules
-<a name="writing-rules"></a>
 
 In AWS CloudFormation Guard, *rules* are policy-as-code rules. You write rules in the Guard domain-specific language (DSL) that you can validate your JSON- or YAML-formatted data against. Rules are made up of *clauses*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/confi
 ---
 
 # Sharing Resource Explorer views
-<a name="configure-views-share"></a>
 
 Views in AWS Resource Explorer primarily use [resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) to grant access. Similar to Amazon S3 bucket policies, these policies are attached to the view and specify who can use the view. This is in contrast to AWS Identity and Access Management (IAM) identity-based policies. An IAM identity-based policy is assigned to a role, group, or user, and it specifies which actions and resources that role, group, or user can access. You can use either type of policy with Resource Explorer views, as follows:
 + Within the management account or delegated administrator account that owns the resource, use ***either*** policy type to grant access, provided that no other policy explicitly denies access to the view for that principal.

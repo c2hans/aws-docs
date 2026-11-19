@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Automatic node recovery and auto-resume
-<a name="sagemaker-hyperpod-resiliency-slurm-auto-resume"></a>
 
 **Note**
 As of September 11, 2025, HyperPod with Slurm orchestration now supports health monitoring agents. Run [UpdateClusterSoftware](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateClusterSoftware.html) and update to the latest version of the AMI in order to use this functionality.

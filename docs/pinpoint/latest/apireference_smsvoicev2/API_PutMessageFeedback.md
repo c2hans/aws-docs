@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # PutMessageFeedback
-<a name="API_PutMessageFeedback"></a>
 
 Set the MessageFeedbackStatus as `RECEIVED` or `FAILED` for the passed in MessageId.
 

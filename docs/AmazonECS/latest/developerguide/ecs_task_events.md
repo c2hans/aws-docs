@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_task
 ---
 
 # Amazon ECS task state change events
-<a name="ecs_task_events"></a>
 
 The following scenarios cause task state change events:
 

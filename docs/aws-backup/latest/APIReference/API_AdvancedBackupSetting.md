@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Advan
 ---
 
 # AdvancedBackupSetting
-<a name="API_AdvancedBackupSetting"></a>
 
 The backup options for each resource type.
 

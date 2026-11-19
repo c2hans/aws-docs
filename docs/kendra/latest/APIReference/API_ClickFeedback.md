@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ClickFeed
 ---
 
 # ClickFeedback
-<a name="API_ClickFeedback"></a>
 
 Gathers information about when a particular result was clicked by a user. Your application uses the `SubmitFeedback` API to provide click information.
 

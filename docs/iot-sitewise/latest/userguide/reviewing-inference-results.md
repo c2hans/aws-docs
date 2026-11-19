@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/reviewing-
 ---
 
 # Review inference results
-<a name="reviewing-inference-results"></a>
 
 ## Retrieve inference results
 <a name="retrieving-inference-results"></a>

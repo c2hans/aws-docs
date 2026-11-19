@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost09-
 ---
 
 # COST09-BP01 Develop a workload review process
-<a name="cost09-bp01"></a>
 
  Cloud services, pricing models, and architectural patterns change. A workload that was cost-optimized last year might not be optimized today, and a single optimization can't keep pace. A repeatable review process finds savings on a cadence that matches each workload's cost and importance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ContainS3Resource`
-<a name="automation-awssupport-contains3resource"></a>
 
  **Description**
 

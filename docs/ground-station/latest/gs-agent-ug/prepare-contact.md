@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/prepar
 ---
 
 # Prepare to take a DigIF contact
-<a name="prepare-contact"></a>
 
 1.  Review CPU Core Planning for desired dataflows, and provide a list of cores the agent can use. See [CPU core planning](agent-instance-selection.md#cpu-core-planning).
 

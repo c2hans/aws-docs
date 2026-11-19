@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/viewi
 ---
 
 # AWS Supply Chain dashboard
-<a name="viewing-dashboard"></a>
 
 You can view your data connections and inventory visibility, add users or groups, and monitor your watchlists and key performance indicators (KPIs) directly from the dashboard. Your default dashboard view depends on the permission the AWS Supply Chain administrator assigns you.
 

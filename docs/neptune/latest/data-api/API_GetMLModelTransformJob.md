@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetMLModelTr
 ---
 
 # GetMLModelTransformJob
-<a name="API_GetMLModelTransformJob"></a>
 
 Gets information about a specified model transform job. See [Use a trained model to generate new model artifacts](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-model-transform.html).
 

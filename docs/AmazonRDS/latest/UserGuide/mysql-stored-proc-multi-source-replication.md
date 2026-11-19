@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-stored-
 ---
 
 # Managing multi-source replication
-<a name="mysql-stored-proc-multi-source-replication"></a>
 
 The following stored procedures set up and manage replication channels on a RDS for MySQL multi-source replica. For more information, see [Configuring multi-source-replication for Amazon RDS for MySQL](mysql-multi-source-replication.md).
 

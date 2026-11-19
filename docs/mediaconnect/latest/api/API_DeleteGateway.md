@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DeleteGatewa
 ---
 
 # DeleteGateway
-<a name="API_DeleteGateway"></a>
 
  Deletes a gateway. Before you can delete a gateway, you must deregister its instances and delete its bridges.
 

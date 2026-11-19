@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating your configuration
-<a name="migrating-configuration"></a>
 
 This section describes how to migrate your Apache Solr configuration (`solrconfig.xml`) to index settings and equivalent features in Amazon OpenSearch Service.
 

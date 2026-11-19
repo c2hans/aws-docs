@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListA
 ---
 
 # ListAssociatedApprovalRuleTemplatesForRepository
-<a name="API_ListAssociatedApprovalRuleTemplatesForRepository"></a>
 
 Lists all approval rule templates that are associated with a specified repository.
 

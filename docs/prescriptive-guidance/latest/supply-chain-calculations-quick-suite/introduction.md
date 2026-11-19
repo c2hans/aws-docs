@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chai
 ---
 
 # Supply chain calculations for AWS Quick
-<a name="introduction"></a>
 
 *Jill Hays, Amazon Web Services*
 

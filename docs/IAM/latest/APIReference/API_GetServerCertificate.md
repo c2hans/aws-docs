@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServerCer
 ---
 
 # GetServerCertificate
-<a name="API_GetServerCertificate"></a>
 
 Retrieves information about the specified server certificate stored in IAM.
 

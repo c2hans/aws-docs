@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_PortRange.ht
 ---
 
 # PortRange
-<a name="API_PortRange"></a>
 
 A list of port ranges that are permitted to allow inbound traffic from all public IP addresses. To specify a single port, use the same value for `MinRange` and `MaxRange`.
 

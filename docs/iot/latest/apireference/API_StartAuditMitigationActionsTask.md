@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_StartAuditMi
 ---
 
 # StartAuditMitigationActionsTask
-<a name="API_StartAuditMitigationActionsTask"></a>
 
 Starts a task that applies a set of mitigation actions to the specified target.
 

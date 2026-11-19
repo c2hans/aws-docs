@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Custom compliance for network changes
-<a name="custom-compliance"></a>
 
 This section provides instructions for custom compliance.
 

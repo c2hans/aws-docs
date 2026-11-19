@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RelationshipSummary
-<a name="API_channel_RelationshipSummary"></a>
 
 Summary information about a partner relationship.
 

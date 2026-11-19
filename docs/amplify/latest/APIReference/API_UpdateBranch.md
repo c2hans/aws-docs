@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_UpdateBr
 ---
 
 # UpdateBranch
-<a name="API_UpdateBranch"></a>
 
 Updates a branch for an Amplify app.
 

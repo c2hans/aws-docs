@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/s
 ---
 
 # Systems Manager examples using SDK for SAP ABAP
-<a name="sap-abap_ssm_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for SAP ABAP with Systems Manager.
 

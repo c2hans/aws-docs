@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/what-is-chime-sdk.ht
 ---
 
 # What is the Amazon Chime SDK?
-<a name="what-is-chime-sdk"></a>
 
 The Amazon Chime SDK is a set of real-time communications components that you can use to quickly add messaging, audio, video, and screen sharing capabilities to your web or mobile applications.
 

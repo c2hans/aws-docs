@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Cre
 ---
 
 # CreateApplicationAssignment
-<a name="API_CreateApplicationAssignment"></a>
 
 Grant application access to a user or group.
 

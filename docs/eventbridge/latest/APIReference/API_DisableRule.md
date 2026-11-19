@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Disa
 ---
 
 # DisableRule
-<a name="API_DisableRule"></a>
 
 Disables the specified rule. A disabled rule won't match any events, and won't self-trigger if it has a schedule expression.
 

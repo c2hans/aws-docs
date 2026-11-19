@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachGroupP
 ---
 
 # DetachGroupPolicy
-<a name="API_DetachGroupPolicy"></a>
 
 Removes the specified managed policy from the specified IAM group.
 

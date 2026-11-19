@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Analyze
 ---
 
 # OpenSearch Piped Processing Language (PPL)
-<a name="CWL_AnalyzeLogData_PPL"></a>
 
 This section contains a basic introduction to querying CloudWatch Logs using OpenSearch PPL. With PPL, you can retrieve, query, and analyze data using piped-together commands, making it easier to understand and compose complex queries. Its syntax is based on Unix pipes, and enables chaining of commands to transform and process data. With PPL, you can filter and aggregate data, and use a rich set of math, string, date, conditional, and other functions for analysis.
 

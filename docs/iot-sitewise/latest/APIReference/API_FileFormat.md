@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Fil
 ---
 
 # FileFormat
-<a name="API_FileFormat"></a>
 
 The file format of the data in S3.
 

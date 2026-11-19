@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/clear-trans-attribut
 ---
 
 # Clearing TransactionAttributes
-<a name="clear-trans-attributes"></a>
 
 To clear the contents of the `TransactionAttributes` object, pass the `TransactionAttributes` field with an empty JSON Object:
 

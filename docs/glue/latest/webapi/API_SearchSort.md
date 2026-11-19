@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SearchSort.html
 ---
 
 # SearchSort
-<a name="API_SearchSort"></a>
 
 The sort criteria for search results.
 

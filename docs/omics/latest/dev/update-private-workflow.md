@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/update-private-workflow
 ---
 
 # Update a private workflow
-<a name="update-private-workflow"></a>
 
 You can update a workflow using the HealthOmics console, AWS CLI commands, or one of the AWS SDKs.
 

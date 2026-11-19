@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InventoryItemAttribute
-<a name="API_InventoryItemAttribute"></a>
 
 Attributes are the entries within the inventory item content. It contains name and value.
 

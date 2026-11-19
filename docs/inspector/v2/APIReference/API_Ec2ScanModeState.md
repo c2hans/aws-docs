@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Ec2ScanMod
 ---
 
 # Ec2ScanModeState
-<a name="API_Ec2ScanModeState"></a>
 
 The state of your Amazon EC2 scan mode configuration.
 

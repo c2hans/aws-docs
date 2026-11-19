@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 ---
 
 # Input devices: reject device transfer
-<a name="inputdevices-inputdeviceid-reject"></a>
 
 ## URI
 <a name="inputdevices-inputdeviceid-reject-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.Up
 ---
 
 # Upgrading the storage file system for a DB instance
-<a name="USER_PIOPS.UpgradeFileSystem"></a>
 
 Most RDS DB instances offer a maximum storage size of 64 TiB for RDS for MariaDB, MySQL, and PostgreSQL databases. However, some older 32-bit file systems have lower storage capacities. To determine the storage capacity of your DB instance, use the [describe-valid-db-instance-modifications](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-valid-db-instance-modifications.html) AWS CLI command.
 

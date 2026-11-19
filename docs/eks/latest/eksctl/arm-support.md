@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/arm-support.html
 ---
 
 # ARM Support
-<a name="arm-support"></a>
 
 This topic covers how to create a cluster with an ARM node group, and how to add an ARM node group to an existing cluster.
 

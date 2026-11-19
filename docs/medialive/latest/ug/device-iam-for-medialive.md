@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/device-iam-for-media
 ---
 
 # Setting up MediaLive as a trusted entity
-<a name="device-iam-for-medialive"></a>
 
 An IAM administrator must consider the special permissions that MediaLive requires if your organization will use a Link device as the source for a MediaConnect flow.
 

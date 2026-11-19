@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResourceT
 ---
 
 # ResourceTypeOption
-<a name="API_ResourceTypeOption"></a>
 
 The options that affect the scope of the response.
 

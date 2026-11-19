@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/dashboard.h
 ---
 
 # Viewing Amazon Q Developer user activity on the dashboard
-<a name="dashboard"></a>
 
 Available only for Amazon Q Developer administrators, the Amazon Q Developer dashboard summarizes useful data about how your Pro tier subscribers use the service.
 

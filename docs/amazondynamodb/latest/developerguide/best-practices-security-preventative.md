@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bes
 ---
 
 # DynamoDB preventative security best practices
-<a name="best-practices-security-preventative"></a>
 
 The following best practices can help you anticipate and prevent security incidents in Amazon DynamoDB.
 

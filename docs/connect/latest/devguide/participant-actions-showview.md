@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/participant-acti
 ---
 
 # ShowView
-<a name="participant-actions-showview"></a>
 
 Initiates a UI-based workflow that can be surfaced to users of front end applications. This action can be used to create [step-by-step guides ](https://docs.aws.amazon.com/connect/latest/adminguide/step-by-step-guided-experiences.html) for agents who are using the Connect Customer agent workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Network ACL configurations
-<a name="nacl"></a>
 
 A network access control list (network ACL) is a stateless service that validates both inbound and outbound traffic in case any traffic reaching the Application Load Balancer attempts a distributed denial of service attack (DDoS) or any other malicious activities.
 

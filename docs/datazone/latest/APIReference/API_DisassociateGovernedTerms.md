@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Disasso
 ---
 
 # DisassociateGovernedTerms
-<a name="API_DisassociateGovernedTerms"></a>
 
 Disassociates restricted terms from an asset.
 

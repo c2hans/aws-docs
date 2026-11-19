@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/find-instance-
 ---
 
 # Find your Connect Customer instance ID or ARN
-<a name="find-instance-arn"></a>
 
 When you open a support ticket, you might be asked to provide your Connect Customer instance ID (also called the ARN). Use the following steps to find it.
 

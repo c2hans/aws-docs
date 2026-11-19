@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyCurrentDBClusterCapacity
-<a name="API_ModifyCurrentDBClusterCapacity"></a>
 
 Set the capacity of an Aurora Serverless v1 DB cluster to a specific value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The AWS Lambda API contains several data types that various actions use. This section describes each data type in detail.
 
@@ -11,6 +10,7 @@ The AWS Lambda API contains several data types that various actions use. This se
 The order of each element in a data type structure is not guaranteed. Applications should not assume a particular order.
 
 The following data types are supported:
++  [AcceleratorConfig](API_AcceleratorConfig.md)
 +  [AccountLimit](API_AccountLimit.md)
 +  [AccountUsage](API_AccountUsage.md)
 +  [AliasConfiguration](API_AliasConfiguration.md)
@@ -83,6 +83,7 @@ The following data types are supported:
 +  [FunctionCodeLocationError](API_FunctionCodeLocationError.md)
 +  [FunctionConfiguration](API_FunctionConfiguration.md)
 +  [FunctionEventInvokeConfig](API_FunctionEventInvokeConfig.md)
++  [FunctionRuntimeConfig](API_FunctionRuntimeConfig.md)
 +  [FunctionScalingConfig](API_FunctionScalingConfig.md)
 +  [FunctionUrlConfig](API_FunctionUrlConfig.md)
 +  [FunctionVersionsByCapacityProviderListItem](API_FunctionVersionsByCapacityProviderListItem.md)

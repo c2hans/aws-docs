@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Optimize storage for SQL Server
-<a name="storage-sql-server"></a>
 
 ## Overview
 <a name="storage-sql-server-overview"></a>

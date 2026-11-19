@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # OS monitoring
-<a name="os-monitoring"></a>
 
 A DB instance in Amazon RDS for MySQL or MariaDB runs on the Linux operating system, which uses underlying system resources: CPU, memory, network and storage.
 

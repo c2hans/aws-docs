@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerModelCustomizationCoreAccess
-<a name="AmazonSageMakerModelCustomizationCoreAccess"></a>
 
 **Description**: Grants permissions for SageMaker model customization workflows including serverless training, custom reward function for reinforcement learning, model evaluation, and deployment to SageMaker or Bedrock endpoints.
 

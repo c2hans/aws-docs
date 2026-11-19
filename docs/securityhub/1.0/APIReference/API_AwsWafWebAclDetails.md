@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafW
 ---
 
 # AwsWafWebAclDetails
-<a name="API_AwsWafWebAclDetails"></a>
 
 Provides information about an AWS WAF web access control list (web ACL).
 

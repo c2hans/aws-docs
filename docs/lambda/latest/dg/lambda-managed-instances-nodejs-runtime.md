@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Node.js runtime for Lambda Managed Instances
-<a name="lambda-managed-instances-nodejs-runtime"></a>
 
 For Node.js runtimes, Lambda Managed Instances uses worker threads with `async`/`await`-based execution to handle concurrent requests. Function initialization occurs once per worker thread. Concurrent invocations are handled across two dimensions: worker threads provide parallelism across vCPUs, and asynchronous execution provides concurrency within each thread. Each concurrent request handled by the same worker thread shares the same handler object and global state, requiring safe handling under multiple concurrent requests.
 

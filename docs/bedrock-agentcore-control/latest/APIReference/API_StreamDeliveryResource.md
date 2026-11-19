@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # StreamDeliveryResource
-<a name="API_StreamDeliveryResource"></a>
 
 Supported stream delivery resource types.
 

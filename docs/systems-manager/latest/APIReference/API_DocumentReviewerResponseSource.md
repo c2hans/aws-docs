@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentReviewerResponseSource
-<a name="API_DocumentReviewerResponseSource"></a>
 
 Information about a reviewer's response to a document review request.
 

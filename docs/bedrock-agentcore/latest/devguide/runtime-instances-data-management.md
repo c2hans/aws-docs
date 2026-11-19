@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Manage your data on Runtime Instances
-<a name="runtime-instances-data-management"></a>
 
 When you host agents on the **Instances** compute type, your data is stored on Amazon EBS volumes in your own AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-goo
 ---
 
 # Google
-<a name="model-cards-google"></a>
 
 The following Google models are available in Amazon Bedrock:
 

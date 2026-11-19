@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ac
 ---
 
 # AWS Private Certificate Authority in AWS GovCloud (US)
-<a name="govcloud-acmpca"></a>
 
 ## Region availability
 <a name="_region_availability"></a>

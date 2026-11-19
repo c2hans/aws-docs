@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Design isolated resource environments
-<a name="design-isolated-resource-environments"></a>
 
 Creating an identity and access management isolation boundary for workloads reduces the risk of a workload infrastructure update impacting a different workload, simplifies cost management, and allows application teams to operate within a bounded environment. Being able to implement preventative or detective controls on isolated resource environments will allow different controls for different workload types or Software Development Life Cycle (SDLC) environments (such as dev, test, prod).
 

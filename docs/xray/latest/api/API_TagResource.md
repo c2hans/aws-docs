@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_TagResource.html
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Applies tags to an existing AWS X-Ray group or sampling rule.
 

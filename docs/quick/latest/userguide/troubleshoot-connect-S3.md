@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-conn
 ---
 
 # I can't connect to Amazon S3
-<a name="troubleshoot-connect-S3"></a>
 
 To successfully connect to Amazon S3, make sure that you configure authentication and create a valid manifest file inside the bucket you are trying to access. Also, make sure that the file described by the manifest is available.
 

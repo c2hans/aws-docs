@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ContextDataType
-<a name="API_ContextDataType"></a>
 
 Contextual user data used for evaluating the risk of an authentication event by user pool threat protection.
 

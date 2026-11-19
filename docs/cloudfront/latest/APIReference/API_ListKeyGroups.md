@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListK
 ---
 
 # ListKeyGroups
-<a name="API_ListKeyGroups"></a>
 
 Gets a list of key groups.
 

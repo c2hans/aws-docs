@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Regist
 ---
 
 # RegisterAppInstanceUserEndpoint
-<a name="API_RegisterAppInstanceUserEndpoint"></a>
 
 Registers an endpoint under an Amazon Chime `AppInstanceUser`. The endpoint receives messages for a user. For push notifications, the endpoint is a mobile device used to receive mobile push notifications for a user.
 

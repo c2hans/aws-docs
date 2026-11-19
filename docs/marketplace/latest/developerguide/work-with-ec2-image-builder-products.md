@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/work-w
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Work with EC2 Image Builder component products
-<a name="work-with-ec2-image-builder-products"></a>
 
 As an AWS Marketplace seller, you can list AMI-based products delivered to AWS Marketplace buyers using EC2 Image Builder components. To create your component and publish an AWS Marketplace listing, proceed sequentially through the following sections.
 

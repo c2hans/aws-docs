@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ExportComponents
-<a name="API_ExportComponents"></a>
 
 Exports component configurations to code that is ready to integrate into an Amplify app.
 

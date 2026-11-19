@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DescribeExport
-<a name="API_DescribeExport"></a>
 
 Describes an existing table export.
 

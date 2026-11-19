@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-batch-ami.
 ---
 
 # Tutorial: Create a compute resource AMI
-<a name="create-batch-ami"></a>
 
 You can create your own custom compute resource AMI to use for your managed and unmanaged compute environments. For instructions, see the [Compute resource AMI specification](batch-ami-spec.md). Then, after you created a custom AMI, you can create a compute environment that uses that AMI that you can associate a job queue with. Last, start submitting jobs to that queue.
 

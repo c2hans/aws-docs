@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/edit-ta
 ---
 
 # Editing the tags of custom billing views
-<a name="edit-tags-custom-billing-views"></a>
 
 **To edit the tags of a custom billing view**
 

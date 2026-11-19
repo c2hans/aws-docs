@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-acme-endpoints.
 ---
 
 # ACME endpoints
-<a name="acm-acme-endpoints"></a>
 
 An ACME endpoint is a customer-specific, managed ACME server with a unique URL. Each endpoint is configured to issue certificates from a specific Certificate Authority. When you create an endpoint, ACM provisions an RFC 8555-compliant ACME server that your ACME clients can connect to.
 

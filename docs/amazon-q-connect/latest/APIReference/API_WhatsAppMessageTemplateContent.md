@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # WhatsAppMessageTemplateContent
-<a name="API_amazon-q-connect_WhatsAppMessageTemplateContent"></a>
 
 The content of the message template that applies to the WHATSAPP channel subtype.
 

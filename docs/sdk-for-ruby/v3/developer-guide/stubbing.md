@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/stubbing
 ---
 
 # Adding testing with stubbing to your AWS SDK for Ruby application
-<a name="stubbing"></a>
 
 Learn how to stub client responses and client errors in an AWS SDK for Ruby application.
 

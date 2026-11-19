@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # PlatformCommand
-<a name="API_PlatformCommand"></a>
 
 Command to be run on a particular operating system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # Security best practices for AWS Network Security Manager
-<a name="security-best-practices"></a>
 
 The following best practices help you maintain a secure AWS Network Security Manager configuration.
 

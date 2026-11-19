@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-add-me
 ---
 
 # Adding searchable metadata to your features
-<a name="feature-store-add-metadata"></a>
 
 In Amazon SageMaker Feature Store, you can search through all of your features. To make your features more discoverable, you can add metadata to them. You can add the following types of metadata:
 + Description – A searchable description of the feature.

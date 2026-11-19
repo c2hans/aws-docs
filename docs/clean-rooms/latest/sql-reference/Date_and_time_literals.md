@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Date_an
 ---
 
 # Date, time, and timestamp literals
-<a name="Date_and_time_literals"></a>
 
 Following are rules for working with date, time, and timestamp literals that are supported by AWS Clean Rooms Spark SQL.
 

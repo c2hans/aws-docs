@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # PutAllianceLeadContact
-<a name="API_account_PutAllianceLeadContact"></a>
 
 Creates or updates the alliance lead contact information for a partner account.
 

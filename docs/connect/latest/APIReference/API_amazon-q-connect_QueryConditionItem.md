@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # QueryConditionItem
-<a name="API_amazon-q-connect_QueryConditionItem"></a>
 
 The condition for the query.
 

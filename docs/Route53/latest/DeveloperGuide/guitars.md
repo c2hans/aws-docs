@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/guitars.ht
 ---
 
 # .guitars
-<a name="guitars"></a>
 
 **Important**
 You can no longer use Route 53 to register new .guitars domains or transfer .guitars domains to Route 53. We'll continue to support .guitars domains that are already registered with Route 53.

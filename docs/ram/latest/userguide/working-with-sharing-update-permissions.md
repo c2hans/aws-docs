@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharin
 ---
 
 # Updating AWS managed permissions to a newer version
-<a name="working-with-sharing-update-permissions"></a>
 
 Occasionally, AWS updates the AWS managed permissions available to attach to a resource share for a specific resource type. When AWS does this, it creates a new version of the AWS managed permission. Resource shares that include the specified resource type aren't automatically updated to use the latest version of the managed permission. You must explicitly update the managed permission for each resource share. This extra step is required so that you can evaluate the changes before you apply them to your resource shares.
 

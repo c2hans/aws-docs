@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Applying the converted schemas in AWS Schema Conversion Tool
-<a name="CHAP_UserInterface.ApplyingConversion"></a>
 
 You can apply the converted database schema to your target DB instance. After the schema has been applied to your target DB instance, you can update the schema based on the action items in the database migration assessment report.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Create an Amazon SNS event destination in AWS End User Messaging
-<a name="nx-features-configuration-sets-sns-add"></a>
 
 Before you can create an Amazon SNS event destination, you must first create an Amazon SNS topic. For more information about creating Amazon SNS topics, see [Creating a topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 

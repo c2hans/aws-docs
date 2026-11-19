@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_I
 ---
 
 # InboxPlacementTrackingOption
-<a name="API_InboxPlacementTrackingOption"></a>
 
 An object that contains information about the inbox placement data settings for a verified domain that’s associated with your AWS account. This data is available only if you enabled the Deliverability dashboard for the domain (`PutDeliverabilityDashboardOption` operation).
 

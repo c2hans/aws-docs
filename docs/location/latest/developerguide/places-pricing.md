@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/places-pr
 ---
 
 # Places pricing
-<a name="places-pricing"></a>
 
 The price for the Place APIs is based on the number of API requests. The unit price for each API request depends on the response fields you request in your API request and the intended use for the result. For pricing information for the API and pricing buckets, see [Amazon Location Service pricing page](https://aws.amazon.com/location/pricing/).
 

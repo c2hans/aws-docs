@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RdsReservedInstancesConfiguration
-<a name="API_CostOptimizationHub_RdsReservedInstancesConfiguration"></a>
 
 The RDS reserved instances configuration used for recommendations.
 

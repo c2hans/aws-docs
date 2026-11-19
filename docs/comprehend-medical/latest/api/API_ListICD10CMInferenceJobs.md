@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_ListIC
 ---
 
 # ListICD10CMInferenceJobs
-<a name="API_ListICD10CMInferenceJobs"></a>
 
 Gets a list of InferICD10CM jobs that you have submitted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # Amazon DynamoDB
-<a name="API_Types_Amazon_DynamoDB"></a>
 
 The following data types are supported by Amazon DynamoDB:
 +  [ArchivalSummary](API_ArchivalSummary.md)

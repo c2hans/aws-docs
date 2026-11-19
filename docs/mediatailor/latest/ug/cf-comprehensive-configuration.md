@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cf-comprehensive-c
 ---
 
 # Production-ready CloudFront configuration for MediaTailor
-<a name="cf-comprehensive-configuration"></a>
 
 This CloudFront distribution configuration provides everything you need to deliver MediaTailor content with server-side ad insertion at scale. Copy this configuration and customize it with your specific origins and requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Build your first authenticated agent
-<a name="identity-getting-started-cognito"></a>
 
 This getting started tutorial walks you through building a complete authenticated agent from the ground up using Amazon Bedrock AgentCore Identity and will help you get started with implementing identity features in your agent applications. You’ll learn how to set up your development environment, create authentication infrastructure with Cognito, deploy your agent to AgentCore Runtime, and test the full authentication workflow.
 

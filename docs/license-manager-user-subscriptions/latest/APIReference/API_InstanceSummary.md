@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # InstanceSummary
-<a name="API_InstanceSummary"></a>
 
 Describes an EC2 instance providing user-based subscriptions.
 

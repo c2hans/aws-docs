@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingW
 ---
 
 # Purchasing reserved DB instances for Amazon RDS
-<a name="USER_WorkingWithReservedDBInstances.WorkingWith"></a>
 
 You can use the AWS Management Console, the AWS CLI, and the RDS API to work with reserved DB instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RegistryListItem.
 ---
 
 # RegistryListItem
-<a name="API_RegistryListItem"></a>
 
 A structure containing the details for a registry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/c
 ---
 
 # Configuring AWS SDK for SAP ABAP
-<a name="configuring"></a>
 
 Before using AWS SDK for SAP ABAP, you must configure the SDK with technical and functional settings that are necessary for the SDK operations. Some settings are transportable and some are runtime settings. Many of the settings are directly analogous to the settings defined in `.INI` files for other SDKs.
 

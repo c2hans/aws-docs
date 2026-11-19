@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_OperatorR
 ---
 
 # OperatorRequest
-<a name="API_OperatorRequest"></a>
 
 The service provider that manages the resource.
 

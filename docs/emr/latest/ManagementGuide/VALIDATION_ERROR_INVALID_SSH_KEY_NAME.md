@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/VALIDATION_ER
 ---
 
 # VALIDATION\_ERROR\_INVALID\_SSH\_KEY\_NAME
-<a name="VALIDATION_ERROR_INVALID_SSH_KEY_NAME"></a>
 
 ## Overview
 <a name="VALIDATION_ERROR_INVALID_SSH_KEY_NAME_overview"></a>

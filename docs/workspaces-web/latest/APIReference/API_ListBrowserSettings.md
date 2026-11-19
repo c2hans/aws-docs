@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListBrowserSettings
-<a name="API_ListBrowserSettings"></a>
 
 Retrieves a list of browser settings.
 

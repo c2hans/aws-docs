@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardSour
 ---
 
 # StandardSourceEndpointProtocolConfiguration
-<a name="API_StandardSourceEndpointProtocolConfiguration"></a>
 
 The protocol configuration for a standard source endpoint. This is a union type, so exactly one of its members is set, depending on the protocol that the source endpoint uses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonDeploymentConfiguration
-<a name="API_DaemonDeploymentConfiguration"></a>
 
 Optional deployment parameters that control how a daemon rolls out updates across container instances.
 

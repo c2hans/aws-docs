@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-checkp
 ---
 
 # Tutorials - Amazon SageMaker HyperPod Checkpointless Pretraining or Finetuning Custom Models
-<a name="sagemaker-eks-checkpointless-recipes-custom"></a>
 
 The following sequence of steps is required to run checkpointless training with your custom model on HyperPod.
 

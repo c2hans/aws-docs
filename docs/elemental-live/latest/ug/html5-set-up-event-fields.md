@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/html5-set-up-ev
 ---
 
 # Fields for an HTML5 asset
-<a name="html5-set-up-event-fields"></a>
 
 | Field on web interface | Tag in the XML | Type | Description |
 | --- | --- | --- | --- |

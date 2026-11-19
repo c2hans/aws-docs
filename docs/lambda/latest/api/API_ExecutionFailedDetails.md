@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ExecutionFailedDet
 ---
 
 # ExecutionFailedDetails
-<a name="API_ExecutionFailedDetails"></a>
 
 Details about a failed [durable execution](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html).
 

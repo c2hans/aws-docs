@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-events-event
 ---
 
 # Create an alarm that sends an email when an Amazon EC2 instance changes state
-<a name="ec2-events-eventbridge-example"></a>
 
 To receive email notifications when your instance changes state, create an Amazon SNS topic and then create an EventBridge rule for the `EC2 Instance State-change Notification` event.
 

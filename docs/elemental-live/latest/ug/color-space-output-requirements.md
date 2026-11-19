@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-out
 ---
 
 # Requirements for outputs
-<a name="color-space-output-requirements"></a>
 
 **Supported output types**
 

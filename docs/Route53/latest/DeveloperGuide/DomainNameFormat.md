@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DomainName
 ---
 
 # DNS domain name format
-<a name="DomainNameFormat"></a>
 
 Domain names (including the names of domains, hosted zones, and records) consist of a series of labels separated by dots. Each label can be up to 63 bytes long. The total length of a domain name cannot exceed 255 bytes, including the dots. Amazon Route 53 supports any valid domain name.
 

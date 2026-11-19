@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Lambda
 ---
 
 # LambdaStepMetadata
-<a name="API_LambdaStepMetadata"></a>
 
 Metadata for a Lambda step.
 

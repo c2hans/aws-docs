@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Converting
 ---
 
 # Convert your Amazon S3-backed AMI to an EBS-backed AMI
-<a name="Using_ConvertingS3toEBS"></a>
 
 You can convert an Amazon S3-backed Linux AMI that you own to an Amazon EBS-backed Linux AMI.
 

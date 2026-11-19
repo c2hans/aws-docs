@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # View Performance Monitor metrics in CloudWatch
-<a name="CloudWatch-PerformanceMonitor-cw-metrics"></a>
 
 Performance Monitor publishes one set of metrics for each network path in a monitor. A network path is the route between a local Availability Zone and a remote location, which is another Availability Zone or an AWS service. The `LocalLocation` and `RemoteLocation` dimensions identify the path. For more information, see [Components and features of Performance Monitor](CloudWatch-PerformanceMonitor-components.md). Performance Monitor doesn't publish subnet-level metrics. You can view these metrics in the `AWS/NetworkFlowMonitor` namespace in the CloudWatch console.
 

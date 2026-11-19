@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EventsV2::Subscriber Tag
-<a name="aws-properties-eventsv2-subscriber-tag"></a>
 
 The metadata that you apply to the subscriber to help you categorize and organize it. Each tag consists of a key and a value, both of which you define.
 

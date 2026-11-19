@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingPreferenceForKey
-<a name="API_billing_BillingPreferenceForKey"></a>
 
 A single key/value entry used to update a billing preference.
 

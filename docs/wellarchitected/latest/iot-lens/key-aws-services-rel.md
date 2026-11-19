@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/key-aws-
 ---
 
 # Key AWS services
-<a name="key-aws-services-rel"></a>
 
  Use [Amazon CloudWatch](https://aws.amazon.com/pm/cloudwatch/) to monitor runtime metrics and support reliability. Other services and features that support the three areas of reliability are as follows:
 

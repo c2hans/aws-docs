@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Dashboards
-<a name="dashboards"></a>
 
 ## Foundational
 <a name="foundational"></a>

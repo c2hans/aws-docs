@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_
 ---
 
 # Assign a passkey or security key in the AWS Management Console
-<a name="id_credentials_mfa_enable_fido"></a>
 
 Passkeys are a type of [multi-factor authentication (MFA) device](id_credentials_mfa.md) that you can use to protect your AWS resources. AWS supports synced passkeys and device-bound passkeys also known as security keys.
 

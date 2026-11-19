@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdateAgentSpace
-<a name="API_UpdateAgentSpace"></a>
 
 Updates the information of an existing AgentSpace.
 

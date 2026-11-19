@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/customizing_sche
 ---
 
 # Customize scheduled event notifications for your EC2 instances
-<a name="customizing_scheduled_event_notifications"></a>
 
 You can customize scheduled event notifications to include tags in the email notification. This makes it easier to identify the affected resource (instances or Dedicated Hosts) and to prioritize actions for the upcoming event.
 

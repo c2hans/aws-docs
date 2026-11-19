@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/
 ---
 
 # Deleting an AWS Glue database via Amazon SageMaker Unified Studio
-<a name="lakehouse-delete-new-database"></a>
 
 You can use this procedure to delete an AWS Glue database in your catalog in lakehouse.
 

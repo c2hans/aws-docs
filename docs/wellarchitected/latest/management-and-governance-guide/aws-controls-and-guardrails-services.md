@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Control services
-<a name="aws-controls-and-guardrails-services"></a>
 
  The following AWS services can be used to help you follow the guidance provided by the M&G Guide:
 

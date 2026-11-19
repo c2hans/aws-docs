@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/elastic-how-i
 ---
 
 # Amazon DocumentDB elastic clusters: how it works
-<a name="elastic-how-it-works"></a>
 
 The topics in this section provide information about the mechanisms and functions that power Amazon DocumentDB elastic clusters.
 

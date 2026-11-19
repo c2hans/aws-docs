@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchUpdat
 ---
 
 # BatchUpdateMemberEc2DeepInspectionStatus
-<a name="API_BatchUpdateMemberEc2DeepInspectionStatus"></a>
 
 Activates or deactivates Amazon Inspector deep inspection for the provided member accounts in your organization. You must be the delegated administrator of an organization in Amazon Inspector to use this API.
 

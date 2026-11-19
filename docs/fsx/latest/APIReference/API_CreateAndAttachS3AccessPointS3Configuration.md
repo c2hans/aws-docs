@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateAndAtt
 ---
 
 # CreateAndAttachS3AccessPointS3Configuration
-<a name="API_CreateAndAttachS3AccessPointS3Configuration"></a>
 
 Used to create an S3 access point that accepts requests only from a virtual private cloud (VPC) to restrict data access to a private network.
 

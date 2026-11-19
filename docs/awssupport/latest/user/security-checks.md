@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/security-checks.h
 ---
 
 # Security
-<a name="security-checks"></a>
 
 You can use the following checks for the security category.
 

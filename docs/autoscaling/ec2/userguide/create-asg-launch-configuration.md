@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-asg-lau
 ---
 
 # Create an Auto Scaling group using a launch configuration
-<a name="create-asg-launch-configuration"></a>
 
 **Important**
 We provide information about launch configurations for customers who have not yet migrated from launch configurations to launch templates. For information about migrating your Auto Scaling groups to launch templates, see [Migrate your Auto Scaling groups to launch templates](migrate-to-launch-templates.md).

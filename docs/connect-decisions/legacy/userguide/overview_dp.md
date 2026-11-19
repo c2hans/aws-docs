@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/overv
 ---
 
 # Overview
-<a name="overview_dp"></a>
 
 **Note**
 You can only view the **Overview** page after the forecast is generated for the first time.

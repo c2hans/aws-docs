@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/serv
 ---
 
 # Working with serverless applications
-<a name="serverless-apps"></a>
 
 The AWS Toolkit for Visual Studio Code provides support for [AWS Serverless Application](https://aws.amazon.com/serverless/). The following topics describe how to get started creating and working with AWS Serverless Application Model (AWS SAM) applications, from the AWS Toolkit for Visual Studio Code.
 

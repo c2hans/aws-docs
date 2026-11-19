@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-la
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS large migrations
 <a name="apg-large-migrations"></a>

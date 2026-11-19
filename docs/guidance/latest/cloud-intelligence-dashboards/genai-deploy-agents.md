@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Deploy agents
-<a name="genai-deploy-agents"></a>
 
 ## Watch the demo
 <a name="watch-the-demo"></a>

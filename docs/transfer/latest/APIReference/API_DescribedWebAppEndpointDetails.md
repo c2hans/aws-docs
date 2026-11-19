@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedWebAppEndpointDetails
-<a name="API_DescribedWebAppEndpointDetails"></a>
 
 Contains the endpoint configuration details for a web app, including VPC configuration when the endpoint is hosted within a VPC.
 

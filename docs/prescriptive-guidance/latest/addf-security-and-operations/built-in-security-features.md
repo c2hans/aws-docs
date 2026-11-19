@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 ---
 
 # Built-in security features
-<a name="built-in-security-features"></a>
 
 Autonomous Driving Data Framework (ADDF) has various built-in security features. By default, these features are designed to help you set up a secure framework and help your organization meet common enterprise security requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_QueryResu
 ---
 
 # QueryResultItem
-<a name="API_QueryResultItem"></a>
 
 A single query result.
 

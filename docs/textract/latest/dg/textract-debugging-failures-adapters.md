@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-debugging-fa
 ---
 
 # Debugging training failures
-<a name="textract-debugging-failures-adapters"></a>
 
 If you are notified on the adapter details page that training has failed, refer to the status message to understand the error and correct it. There are two types of errors: creation errors and file errors. Some status messages are returned in the console, while others are displayed in a validation file.
 

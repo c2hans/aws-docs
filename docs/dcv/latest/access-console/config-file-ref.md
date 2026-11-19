@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/config-file-re
 ---
 
 # Configuration file reference
-<a name="config-file-ref"></a>
 
 This section provides information about the Authentication Server, Handler and Web Client configuration files.
 

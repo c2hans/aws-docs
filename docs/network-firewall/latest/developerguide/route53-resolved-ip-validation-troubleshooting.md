@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Monitoring and troubleshooting resolved IP validation
-<a name="route53-resolved-ip-validation-troubleshooting"></a>
 
 Use firewall logs and CloudWatch metrics to see how resolved IP validation is affecting your traffic.
 

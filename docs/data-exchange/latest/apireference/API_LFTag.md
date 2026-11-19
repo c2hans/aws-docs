@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_LF
 ---
 
 # LFTag
-<a name="API_LFTag"></a>
 
 A structure that allows an LF-admin to grant permissions on certain conditions.
 

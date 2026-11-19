@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Readiness
-<a name="API_connect-customer-profiles_Readiness"></a>
 
 Information indicating if the Calculated Attribute is ready for use by confirming all historical data has been processed and reflected.
 

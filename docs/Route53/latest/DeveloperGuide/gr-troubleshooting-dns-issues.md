@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-trouble
 ---
 
 # Troubleshooting DNS issues with Route 53 Global Resolver
-<a name="gr-troubleshooting-dns-issues"></a>
 
 Route 53 Global Resolver provides comprehensive DNS resolution capabilities, but occasionally you might need to troubleshoot connectivity, performance, or configuration issues. Use DNS logs, monitoring data, and diagnostic techniques to identify and resolve issues affecting client device DNS resolution with Route 53 Global Resolver. This chapter provides systematic approaches to troubleshooting common DNS problems and optimizing performance.
 

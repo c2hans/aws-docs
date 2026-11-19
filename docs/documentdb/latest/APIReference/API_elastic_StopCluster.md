@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # StopCluster
-<a name="API_elastic_StopCluster"></a>
 
 Stops the running elastic cluster that is specified by `clusterArn`. The elastic cluster must be in the *available* state.
 

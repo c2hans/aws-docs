@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/insert-into.html
 ---
 
 # INSERT INTO
-<a name="insert-into"></a>
 
 Inserts new rows into a destination table based on a `SELECT` query statement that runs on a source table, or based on a set of `VALUES` provided as part of the statement. When the source table is based on underlying data in one format, such as CSV or JSON, and the destination table is based on another format, such as Parquet or ORC, you can use `INSERT INTO` queries to transform selected data into the destination table's format.
 

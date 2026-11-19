@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyGenerateFidelityReportContent
-<a name="API_AutomatedReasoningPolicyGenerateFidelityReportContent"></a>
 
 Configuration for generating a fidelity report, which can either analyze new documents or update an existing fidelity report with a new policy definition.
 

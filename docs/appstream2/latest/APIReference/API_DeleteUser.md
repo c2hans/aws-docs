@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Delet
 ---
 
 # DeleteUser
-<a name="API_DeleteUser"></a>
 
 Deletes a user from the user pool.
 

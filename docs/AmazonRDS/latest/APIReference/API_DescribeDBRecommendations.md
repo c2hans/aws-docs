@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBRecommendations
-<a name="API_DescribeDBRecommendations"></a>
 
 Describes the recommendations to resolve the issues for your DB instances, DB clusters, and DB parameter groups.
 

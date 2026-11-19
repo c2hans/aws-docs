@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAssoci
 ---
 
 # GetAssociatedIpv6PoolCidrs
-<a name="API_GetAssociatedIpv6PoolCidrs"></a>
 
 Gets information about the IPv6 CIDR block associations for a specified IPv6 address pool.
 

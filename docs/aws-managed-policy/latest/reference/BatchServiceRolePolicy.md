@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Batc
 ---
 
 # BatchServiceRolePolicy
-<a name="BatchServiceRolePolicy"></a>
 
 **Description**: Provides access for the AWS Batch service to manage the required resources, including Amazon EC2 and Amazon ECS resources.
 

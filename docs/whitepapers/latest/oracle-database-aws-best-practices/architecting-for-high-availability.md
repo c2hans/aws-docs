@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Architecting for high availability
-<a name="architecting-for-high-availability"></a>
 
  The following options have different approaches to high availability of Oracle databases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/slack
 ---
 
 # CloudWatch pipelines configuration for Slack Audit Log
-<a name="slack-auditlog-pipeline-setup"></a>
 
 Collects event logs from Slack using API token authentication.
 

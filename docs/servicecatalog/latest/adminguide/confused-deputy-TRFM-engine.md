@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/confuse
 ---
 
 # Adding Confused Deputy to your Terraform provisioning engine
-<a name="confused-deputy-TRFM-engine"></a>
 
 ## Confused Deputy context keys on the endpoints to restrict access for `lambda:Invoke` operations
 <a name="confused-deputy-TRFM-lambda"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Comprehend
-<a name="amazoncomprehend"></a>
 
 Amazon Comprehend provides the following APIs for data retrieval.
 

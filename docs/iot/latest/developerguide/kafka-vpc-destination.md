@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/kafka-vpc-dest
 ---
 
 # Apache Kafka Virtual Private Cloud (VPC) destinations
-<a name="kafka-vpc-destination"></a>
 
 The Apache Kafka rule action routes data to an Apache Kafka cluster in an Amazon Virtual Private Cloud (Amazon VPC). The VPC configuration used by the Apache Kafka rule action is automatically enabled when you specify the VPC destination for your rule action.
 

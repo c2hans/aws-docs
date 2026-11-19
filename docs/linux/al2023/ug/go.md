@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/go.html
 ---
 
 # Go in AL2023
-<a name="go"></a>
 
  You might want to build your own code written in [Go](https://go.dev/) on Amazon Linux, and might want to use a toolchain provided with AL2023. Similar to AL2, AL2023 will update the Go toolchain throughout the life of the operating system. This might be in response to any CVE in the toolchain we ship, or as part of a quarterly release.
 

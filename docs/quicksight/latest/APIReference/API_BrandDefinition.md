@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Brand
 ---
 
 # BrandDefinition
-<a name="API_BrandDefinition"></a>
 
 The definition of the brand.
 

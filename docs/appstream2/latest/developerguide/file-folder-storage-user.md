@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/file-fo
 ---
 
 # File Storage Options
-<a name="file-folder-storage-user"></a>
 
 If your WorkSpaces Applications administrator has enabled it, you can use one or more of the following storage options for your files and folders during application streaming sessions.
 + [Home folders](home-folders-end-user.md)

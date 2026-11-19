@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Mitigation techniques
-<a name="mitigation-techniques"></a>
 
  Some forms of DDoS mitigation are included automatically with AWS services. DDoS resilience can be improved further by using an AWS architecture with specific services—covered in the following sections—and by implementing additional best practices for each part of the network flow between users and your application.
 

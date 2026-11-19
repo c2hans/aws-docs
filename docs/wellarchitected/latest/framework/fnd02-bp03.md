@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP03 Employ a centralized identity provider
-<a name="fnd02-bp03"></a>
 
  For workforce identities (employees and contractors), rely on an identity provider you can use to manage identities in a centralized place. This lets you manage access across multiple applications and systems from a single location, because you are creating, assigning, managing, revoking, and auditing access in one place.
 

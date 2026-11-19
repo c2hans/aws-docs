@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_GetTab
 ---
 
 # GetTableAutoScalingSettings
-<a name="API_GetTableAutoScalingSettings"></a>
 
 Returns auto scaling related settings of the specified table in JSON format. If the table is a multi-Region table, the AWS Region specific auto scaling settings of the table are included.
 

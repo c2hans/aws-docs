@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-p
 ---
 
 # Adding Palo Alto Networks rules to DNS Firewall rule groups
-<a name="firewall-partner-panw-adding-rules"></a>
 
 After you subscribe, you can create one or more rules using Palo Alto Networks threat feeds within any DNS Firewall rule group.
 

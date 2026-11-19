@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TaskRunSortCriter
 ---
 
 # TaskRunSortCriteria
-<a name="API_TaskRunSortCriteria"></a>
 
 The sorting criteria that are used to sort the list of task runs for the machine learning transform.
 

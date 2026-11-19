@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Instance
 ---
 
 # InstanceStatusReason
-<a name="API_InstanceStatusReason"></a>
 
 Relevant details why the instance was not successfully created.
 

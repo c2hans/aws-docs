@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-switch
 ---
 
 # Initiating the Oracle Data Guard switchover
-<a name="oracle-switchover.initiating"></a>
 
 You can switch over an RDS for Oracle read replica to the primary role, and the former primary DB instance to a replica role.
 

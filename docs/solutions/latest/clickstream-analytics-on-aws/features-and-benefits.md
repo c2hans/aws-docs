@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
  The guidance includes the following key features and benefits:
 +  **Visual data pipeline builder**

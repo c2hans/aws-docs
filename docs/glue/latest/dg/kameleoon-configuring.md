@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kameleoon-configuring.htm
 ---
 
 # Configuring Kameleoon
-<a name="kameleoon-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Kameleoon, you must meet the following requirements:
 

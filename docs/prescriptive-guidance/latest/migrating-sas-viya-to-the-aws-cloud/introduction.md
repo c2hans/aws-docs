@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrating-s
 ---
 
 # Migrating SAS Viya to the AWS Cloud
-<a name="introduction"></a>
 
 *Battulga Purevragchaa and Dilip Rajan, Amazon Web Services*
 

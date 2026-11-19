@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Bedr
 ---
 
 # BedrockAgentCoreRuntimeInstancesInstanceRolePolicy
-<a name="BedrockAgentCoreRuntimeInstancesInstanceRolePolicy"></a>
 
 **Description**: Default policy for the instance role of instances managed by Bedrock AgentCore Runtime Instances.
 

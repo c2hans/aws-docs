@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/configure-tool
 ---
 
 # AWS CloudHSM Client SDK 5 configuration examples
-<a name="configure-tool-examples5"></a>
 
 These examples show how to use the configure tool for AWS CloudHSM Client SDK 5.
 

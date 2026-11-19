@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/ec2-selecting.html
 ---
 
 # Selecting the default template
-<a name="ec2-selecting"></a>
 
 MGN uses the version of the Launch template that is marked as default.
 

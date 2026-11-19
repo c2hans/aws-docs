@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSV
 ---
 
 # AWSVPCVerifiedAccessServiceRolePolicy
-<a name="AWSVPCVerifiedAccessServiceRolePolicy"></a>
 
 **Description**: Policy to enable AWS Verified Access service to provision endpoints on your behalf
 

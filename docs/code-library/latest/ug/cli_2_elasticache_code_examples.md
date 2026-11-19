@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cli_2_elasticache
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # ElastiCache examples using AWS CLI
-<a name="cli_2_elasticache_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS Command Line Interface with ElastiCache.
 
@@ -209,7 +208,7 @@ The following code example shows how to use `create-cache-cluster`.
 
 **AWS CLI**
 **To create a cache cluster**
-The following `create-cache-cluster` example creates a cache cluster using the Redis engine.
+The following `create-cache-cluster` example creates a cache cluster using the Redis engine. `create-cache-cluster` supports the Memcached and Redis OSS engines. To create a Valkey cluster, use `create-replication-group`.
 
 ```
 aws elasticache create-cache-cluster \
@@ -247,7 +246,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating a Cluster](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Clusters.Create.html) in the *Elasticache User Guide*.
+For more information, see [Creating a cluster for Valkey or Redis OSS](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.Create.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [CreateCacheCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/create-cache-cluster.html) in *AWS CLI Command Reference*.
 
 ### `create-cache-parameter-group`

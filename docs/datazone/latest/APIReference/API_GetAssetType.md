@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetAsse
 ---
 
 # GetAssetType
-<a name="API_GetAssetType"></a>
 
 Gets an Amazon DataZone asset type.
 

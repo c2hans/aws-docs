@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/backup-dri
 ---
 
 # Backup drift in AWS Control Tower
-<a name="backup-drift"></a>
 
 Drift is not reported for AWS Backup configurations in AWS Control Tower. For more information about drift in AWS Control Tower, see [Detect and resolve drift in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/drift.html).
 

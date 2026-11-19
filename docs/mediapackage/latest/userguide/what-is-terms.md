@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/what-is-te
 ---
 
 # AWS Elemental MediaPackage concepts and terminology
-<a name="what-is-terms"></a>
 
 The following are AWS Elemental MediaPackage concepts and terms to be familiar with.
 

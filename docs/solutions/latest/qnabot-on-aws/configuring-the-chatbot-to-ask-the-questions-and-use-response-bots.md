@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/configuri
 ---
 
 # Configuring the chatbot to ask the questions and use response bots
-<a name="configuring-the-chatbot-to-ask-the-questions-and-use-response-bots"></a>
 
 You can configure your chatbot to ask questions and process your end user’s answers. Use this feature for data collection and validation; to implement surveys, quizzes, personalized recommendations; or triage chatbot applications.
 

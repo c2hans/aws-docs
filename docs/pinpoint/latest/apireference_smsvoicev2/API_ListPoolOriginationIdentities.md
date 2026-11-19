@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ListPoolOriginationIdentities
-<a name="API_ListPoolOriginationIdentities"></a>
 
 Lists all associated origination identities in your pool.
 

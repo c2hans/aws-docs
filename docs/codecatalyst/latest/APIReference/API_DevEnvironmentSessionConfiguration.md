@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Dev
 ---
 
 # DevEnvironmentSessionConfiguration
-<a name="API_DevEnvironmentSessionConfiguration"></a>
 
 Information about the configuration of a Dev Environment session.
 

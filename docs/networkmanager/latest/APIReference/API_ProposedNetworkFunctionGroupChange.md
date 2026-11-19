@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_P
 ---
 
 # ProposedNetworkFunctionGroupChange
-<a name="API_ProposedNetworkFunctionGroupChange"></a>
 
 Describes proposed changes to a network function group.
 

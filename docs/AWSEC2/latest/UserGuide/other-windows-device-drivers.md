@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/other-windows-de
 ---
 
 # Other Windows device drivers
-<a name="other-windows-device-drivers"></a>
 
 The AWS VMClock device is a virtual clock device that is present on Nitro-based instances. The device appears in Device Manager under **System devices** as `AWS VMClock Device`. AWS provides a null (no-function) driver package for Windows that allows the operating system to recognize the device.
 

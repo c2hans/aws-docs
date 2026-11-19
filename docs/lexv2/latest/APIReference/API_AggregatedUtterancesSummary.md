@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Aggregated
 ---
 
 # AggregatedUtterancesSummary
-<a name="API_AggregatedUtterancesSummary"></a>
 
 Provides summary information for aggregated utterances. The `ListAggregatedUtterances` operations combines all instances of the same utterance into a single aggregated summary.
 

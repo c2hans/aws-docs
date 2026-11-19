@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 ---
 
 # Data retrieval APIs for AWS Tiros
-<a name="awstiros"></a>
 
 AWS Tiros provides the following APIs for data retrieval.
 

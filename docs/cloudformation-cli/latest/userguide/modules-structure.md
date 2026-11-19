@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/modu
 ---
 
 # Module structure and requirements
-<a name="modules-structure"></a>
 
 A module consists of two main pieces:
 + A *template fragment*, which defines the resources and associated information you want to provision through use of the module, including any module parameters you define.

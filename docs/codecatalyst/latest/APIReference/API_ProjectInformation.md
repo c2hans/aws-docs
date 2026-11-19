@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Pro
 ---
 
 # ProjectInformation
-<a name="API_ProjectInformation"></a>
 
 Information about a project in a space.
 

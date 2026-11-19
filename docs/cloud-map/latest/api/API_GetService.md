@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_GetService.html
 ---
 
 # GetService
-<a name="API_GetService"></a>
 
 Gets the settings for a specified service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ac
 ---
 
 # AccessBudgetDetails
-<a name="API_AccessBudgetDetails"></a>
 
 The detailed information for a specific budget period, including time boundaries and budget amounts.
 

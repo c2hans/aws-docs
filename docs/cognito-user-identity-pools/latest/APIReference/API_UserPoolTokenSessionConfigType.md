@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UserPoolTokenSessionConfigType
-<a name="API_UserPoolTokenSessionConfigType"></a>
 
 The pool-wide token session settings for a user pool.
 

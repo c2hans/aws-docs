@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # SetIdentityPoolRoles
-<a name="API_SetIdentityPoolRoles"></a>
 
 Sets the roles for an identity pool. These roles are used when making calls to [GetCredentialsForIdentity](API_GetCredentialsForIdentity.md) action.
 

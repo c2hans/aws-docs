@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/vpc-permission
 ---
 
 # VPC application permissions
-<a name="vpc-permissions"></a>
 
 This section describes the permission policies your application will need to work with your VPC. For more information about using permissions policies, see [Identity and Access Management for Amazon Managed Service for Apache Flink](security-iam.md).
 

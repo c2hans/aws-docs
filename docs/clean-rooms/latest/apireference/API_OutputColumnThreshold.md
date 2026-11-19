@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Outp
 ---
 
 # OutputColumnThreshold
-<a name="API_OutputColumnThreshold"></a>
 
 Specifies the minimum number of distinct identities for an individual output column. This value overrides the table-wide `minimumIdentityCount` that you set in `AggregationThreshold`.
 

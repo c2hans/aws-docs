@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListAccountAssignmentsForPrincipal
-<a name="API_ListAccountAssignmentsForPrincipal"></a>
 
 Retrieves a list of the IAM Identity Center associated AWS accounts that the principal has access to. This action must be called from the management account containing your organization instance of IAM Identity Center. This action is not valid for account instances of IAM Identity Center.
 

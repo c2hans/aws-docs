@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-re
 ---
 
 # How to reverse geocode for a position
-<a name="how-to-reverse-geocode-position"></a>
 
 The Reverse Geocode API allows you to convert a geocode to a geographic area based on a position query. The API response includes place details, providing information about the location associated with specific coordinates.
 

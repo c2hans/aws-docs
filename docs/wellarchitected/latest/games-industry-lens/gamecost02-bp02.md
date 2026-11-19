@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMECOST02-BP02 Optimize the number of game sessions hosted on each game server instance to optimize costs
-<a name="gamecost02-bp02"></a>
 
  Optimize the number of game sessions hosted per server instance to achieve better compute utilization and reduce compute infrastructure costs.
 

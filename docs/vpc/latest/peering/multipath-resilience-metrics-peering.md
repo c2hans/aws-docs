@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/multipath-resilience-
 ---
 
 # Multipath resilience metrics and dimensions
-<a name="multipath-resilience-metrics-peering"></a>
 
 The following metrics are available for VPC peering connections that have multipath resilience enabled. For more information about enabling multipath resilience, see [Enable multipath resilience for a VPC peering connection](enable-multipath-resilience-peering.md). The description column includes the [units](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Unit) and [statistics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Statistics-definitions.html) for each metric.
 

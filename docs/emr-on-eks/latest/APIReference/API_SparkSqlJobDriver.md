@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Spark
 ---
 
 # SparkSqlJobDriver
-<a name="API_SparkSqlJobDriver"></a>
 
 The job driver for job type.
 

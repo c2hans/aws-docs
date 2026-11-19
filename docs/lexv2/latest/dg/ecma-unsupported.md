@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/ecma-unsupported.html
 ---
 
 # Unsupported statements
-<a name="ecma-unsupported"></a>
 
 Amazon Lex V2 doesn't support the following ECMAScript features.
 

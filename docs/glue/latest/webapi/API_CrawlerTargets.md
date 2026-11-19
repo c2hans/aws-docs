@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CrawlerTargets.ht
 ---
 
 # CrawlerTargets
-<a name="API_CrawlerTargets"></a>
 
 Specifies data stores to crawl.
 

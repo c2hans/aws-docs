@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/features-r
 ---
 
 # AWS Elemental MediaPackage features and functionality
-<a name="features-ref"></a>
 
 The following sections describe the configurations that are available in AWS Elemental MediaPackage and how they work.
 

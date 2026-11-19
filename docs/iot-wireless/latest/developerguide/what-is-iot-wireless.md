@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/what-
 ---
 
 # What is AWS IoT Wireless?
-<a name="what-is-iot-wireless"></a>
 
 AWS IoT Wireless is a managed cloud service that simplifies the process of connecting wireless devices to the cloud, enabling seamless data transmission and remote management. This service supports a wide range of wireless protocols, including LoRaWAN and Sidewalk, ensuring compatibility with diverse IoT devices and applications.
 

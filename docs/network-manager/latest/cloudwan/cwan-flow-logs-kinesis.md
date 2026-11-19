@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-flo
 ---
 
 # AWS Cloud WAN Flow Logs records in Amazon Data Firehose
-<a name="cwan-flow-logs-kinesis"></a>
 
 **Topics**
 + [IAM roles for cross account delivery](#cwan-flow-logs-kinesis-iam)

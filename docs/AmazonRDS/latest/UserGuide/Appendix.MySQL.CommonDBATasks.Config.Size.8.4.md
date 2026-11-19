@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.MySQ
 ---
 
 # Configuring buffer pool size and redo log capacity in MySQL 8.4
-<a name="Appendix.MySQL.CommonDBATasks.Config.Size.8.4"></a>
 
 In MySQL 8.4, Amazon RDS enables the `innodb_dedicated_server` parameter by default. With the `innodb_dedicated_server` parameter, the database engine calculates the `innodb_buffer_pool_size` and `innodb_redo_log_capacity` parameters. For information about how these parameters are calculated, see [Configuring InnoDB Buffer Pool Size](https://dev.mysql.com/doc/refman/8.4/en/innodb-buffer-pool-resize.html) and [Redo Log](https://dev.mysql.com/doc/refman/8.4/en/innodb-redo-log.html) in the MySQL documentation.
 

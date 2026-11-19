@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-cant-see-sha
 ---
 
 # Can't see shared resources in the destination account
-<a name="tshoot-cant-see-shared"></a>
 
 ## Scenario
 <a name="tshoot-cant-see-shared-scenario"></a>

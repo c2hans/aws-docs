@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/store
 ---
 
 # Buy With AWS
-<a name="storefronts-buy-with-aws"></a>
 
 Configure the Buy With AWS procurement widget, its form fields, and currency settings.
 

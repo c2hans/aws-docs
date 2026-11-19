@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # SellerInformation
-<a name="API_marketplace-discovery_SellerInformation"></a>
 
 Information about a seller, including the profile identifier and display name.
 

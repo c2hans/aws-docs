@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zohoinvoice-configuring.h
 ---
 
 # Configuring Zoho Invoice
-<a name="zohoinvoice-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Zoho Invoice, you must meet the following requirements:
 

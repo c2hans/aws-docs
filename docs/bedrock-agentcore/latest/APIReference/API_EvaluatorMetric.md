@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EvaluatorMetric
-<a name="API_EvaluatorMetric"></a>
 
 Statistical metrics for a single evaluator comparing control and treatment variants.
 

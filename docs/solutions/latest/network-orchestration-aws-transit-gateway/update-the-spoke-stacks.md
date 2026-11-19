@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Update the spoke stack(s)
-<a name="update-the-spoke-stacks"></a>
 
 Follow the step-by-step instructions in this section to update the spoke stacks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automatically generate a PynamoDB model and CRUD functions for Amazon DynamoDB by using a Python application
-<a name="automatically-generate-a-pynamodb-model-and-crud-functions-for-amazon-dynamodb-by-using-a-python-application"></a>
 
 *Vijit Vashishtha, Dheeraj Alimchandani, and Dhananjay Karanjkar, Amazon Web Services*
 

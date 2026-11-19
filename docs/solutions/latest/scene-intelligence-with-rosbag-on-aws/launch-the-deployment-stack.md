@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Launch the deployment stack
-<a name="launch-the-deployment-stack"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the solution into your account.
 

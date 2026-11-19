@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Conforman
 ---
 
 # ConformancePackComplianceSummary
-<a name="API_ConformancePackComplianceSummary"></a>
 
 Summary includes the name and status of the conformance pack.
 

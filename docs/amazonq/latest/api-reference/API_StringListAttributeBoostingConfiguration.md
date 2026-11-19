@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StringL
 ---
 
 # StringListAttributeBoostingConfiguration
-<a name="API_StringListAttributeBoostingConfiguration"></a>
 
 Provides information on boosting `STRING_LIST` type document attributes.
 

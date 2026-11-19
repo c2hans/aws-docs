@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CreateComponentData
-<a name="API_CreateComponentData"></a>
 
 Represents all of the information that is required to create a component.
 

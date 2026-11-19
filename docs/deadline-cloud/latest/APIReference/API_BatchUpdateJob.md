@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchUpdateJob
-<a name="API_BatchUpdateJob"></a>
 
 Updates multiple jobs in a single request. This is a batch version of the `UpdateJob` API.
 

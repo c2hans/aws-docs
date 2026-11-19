@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk platform updates for Linux-based platforms on August 15, 2018
-<a name="release-2018-08-15-linux"></a>
 
 This release applies security updates to Linux-based platforms for AWS Elastic Beanstalk, and updates platform configurations. The release also adds a new PHP configuration and, for certain AWS Regions, support for additional Amazon EC2 instance types.
 

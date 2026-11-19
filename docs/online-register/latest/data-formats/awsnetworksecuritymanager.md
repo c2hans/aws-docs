@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsn
 ---
 
 # Data retrieval APIs for AWS Network Security Manager
-<a name="awsnetworksecuritymanager"></a>
 
 AWS Network Security Manager provides the following APIs for data retrieval.
 

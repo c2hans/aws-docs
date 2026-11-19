@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PullR
 ---
 
 # PullRequestMergedStateChangedEventMetadata
-<a name="API_PullRequestMergedStateChangedEventMetadata"></a>
 
 Returns information about the change in the merge state for a pull request event.
 

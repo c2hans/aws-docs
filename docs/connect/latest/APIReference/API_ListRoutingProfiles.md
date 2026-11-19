@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRout
 ---
 
 # ListRoutingProfiles
-<a name="API_ListRoutingProfiles"></a>
 
 Provides summary information about the routing profiles for the specified Connect Customer instance.
 

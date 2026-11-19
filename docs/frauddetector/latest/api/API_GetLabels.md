@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_GetLabels.h
 Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
 
 # GetLabels
-<a name="API_GetLabels"></a>
 
 Gets all labels or a specific label if name is provided. This is a paginated API. If you provide a null `maxResults`, this action retrieves a maximum of 50 records per page. If you provide a `maxResults`, the value must be between 10 and 50. To get the next page results, provide the pagination token from the `GetGetLabelsResponse` as part of your request. A null pagination token fetches the records from the beginning.
 

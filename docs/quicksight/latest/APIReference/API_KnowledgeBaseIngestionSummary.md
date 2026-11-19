@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Knowl
 ---
 
 # KnowledgeBaseIngestionSummary
-<a name="API_KnowledgeBaseIngestionSummary"></a>
 
 A summary of an ingestion job for a knowledge base.
 

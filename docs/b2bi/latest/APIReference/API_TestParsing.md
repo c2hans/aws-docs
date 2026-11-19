@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_TestParsing
 ---
 
 # TestParsing
-<a name="API_TestParsing"></a>
 
 Parses the input EDI (electronic data interchange) file. The input file has a file size limit of 250 KB.
 

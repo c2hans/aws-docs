@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-configure-se
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure Argo CD settings
-<a name="argocd-configure-settings"></a>
 
 The EKS Capability for Argo CD provides a fully managed Argo CD experience. Upstream Argo CD offers many optional settings and features, and the capability supports a subset of them. For general settings, use the `argocd-cm` ConfigMap. Use the `argocd-cmd-params-cm` ConfigMap to turn on the source hydrator with `hydrator.enabled` and configure additional Application and ApplicationSet source namespaces. The capability reads supported fields from these ConfigMaps in your cluster and applies them to the managed Argo CD instance.
 

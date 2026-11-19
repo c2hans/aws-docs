@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # S3Location
-<a name="API_agent-runtime_S3Location"></a>
 
 Information about the Amazon S3 bucket where the image is stored.
 

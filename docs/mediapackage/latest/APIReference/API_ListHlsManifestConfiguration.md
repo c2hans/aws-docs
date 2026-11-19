@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Lis
 ---
 
 # ListHlsManifestConfiguration
-<a name="API_ListHlsManifestConfiguration"></a>
 
 List the HTTP live streaming (HLS) manifest configuration.
 

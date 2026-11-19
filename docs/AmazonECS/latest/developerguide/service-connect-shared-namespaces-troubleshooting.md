@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Troubleshooting Amazon ECS Service Connect with shared AWS Cloud Map namespaces
-<a name="service-connect-shared-namespaces-troubleshooting"></a>
 
 Use the following information to troubleshoot issues with shared AWS Cloud Map namespaces and Service Connect. For more information on locating error messages, see [Amazon ECS troubleshooting](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting.html).
 

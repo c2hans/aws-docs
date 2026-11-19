@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/deleting-a-dashbo
 ---
 
 # Deleting an AWS Quick Sight dashboard
-<a name="deleting-a-dashboard"></a>
 
 When you delete an AWS Quick Sight dashboard, the dashboard is permanently removed from your account and all folders that the dashboard was a part of. You will no longer be able to access the deleted dashboard. You can only delete dashboards that you own or co-own. Use the following procedure to delete a dashboard.
 

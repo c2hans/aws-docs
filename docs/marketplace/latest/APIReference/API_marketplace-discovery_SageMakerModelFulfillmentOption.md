@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # SageMakerModelFulfillmentOption
-<a name="API_marketplace-discovery_SageMakerModelFulfillmentOption"></a>
 
 Describes an Amazon SageMaker model fulfillment option, including version details and recommended instance types.
 

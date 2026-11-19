@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_StepSucceededDetai
 ---
 
 # StepSucceededDetails
-<a name="API_StepSucceededDetails"></a>
 
 Details about a step that succeeded.
 

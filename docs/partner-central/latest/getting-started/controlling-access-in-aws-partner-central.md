@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/c
 ---
 
 # Controlling access in AWS Partner Central
-<a name="controlling-access-in-aws-partner-central"></a>
 
 User access to AWS Partner Central is managed through AWS Identity and Access Management (IAM). IAM permissions control who can be authenticated (signed in) and authorized (have permissions) to use AWS Partner Central and AWS Marketplace features. IAM is an AWS service that you can use at no additional charge.
 

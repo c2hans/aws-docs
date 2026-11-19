@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMOPS03-BP04 Use specialized media support solutions for business-critical streaming events
-<a name="smops03-bp04"></a>
 
 For business-critical streaming workloads and high-profile live events, use AWS Unified Operations for Media Support Solution (MSS) to augment your operational capabilities with proactive monitoring, specialized media expertise, and accelerated incident response with defined service-level objectives (SLOs).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/batchStatement
 ---
 
 # Use batch statements in Amazon Keyspaces
-<a name="batchStatements"></a>
 
 You can combine multiple `INSERT`, `UPDATE`, and `DELETE` operations into a `BATCH` statement. `LOGGED` batches are the default.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteKeyPair
-<a name="API_DeleteKeyPair"></a>
 
 Deletes the specified key pair by removing the public key from Amazon Lightsail.
 

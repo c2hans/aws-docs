@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AddDirectQueryDataSource
-<a name="API_AddDirectQueryDataSource"></a>
 
  Adds a new data source in Amazon OpenSearch Service so that you can perform direct queries on external data.
 

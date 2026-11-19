@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetMast
 ---
 
 # GetMasterAccount
-<a name="API_GetMasterAccount"></a>
 
 This method is deprecated. Instead, use `GetAdministratorAccount`.
 

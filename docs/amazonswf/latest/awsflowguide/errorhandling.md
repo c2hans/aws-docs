@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/errorhandl
 ---
 
 # Error Handling
-<a name="errorhandling"></a>
 
 **Topics**
 + [TryCatchFinally Semantics](#errorhandling.trycatchfinally)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSStorageGatewayServiceRolePolicy
-<a name="AWSStorageGatewayServiceRolePolicy"></a>
 
 **Description**: Service-linked role used by AWS Storage Gateway to enable integration of other AWS services with Storage Gateway.
 

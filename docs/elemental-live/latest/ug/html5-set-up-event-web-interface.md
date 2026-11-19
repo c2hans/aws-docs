@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/html5-set-up-ev
 ---
 
 # Using the web interface
-<a name="html5-set-up-event-web-interface"></a>
 
 **To configure the event using the web interface**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/service-architecture
 ---
 
 # Understanding service architecture for the Amazon Chime SDK
-<a name="service-architecture-java"></a>
 
 This high-level architecture diagram shows how the components listed in [Understanding key concepts of the Amazon Chime SDK client library for JavaScript](key-concepts.md)interact and work with other AWS services:
 

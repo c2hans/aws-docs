@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-qr.html
 ---
 
 # Delete quick responses in Connect Customer
-<a name="delete-qr"></a>
 
 This topic explains how to use the Connect Customer admin website to delete a quick response. To delete a quick response programmatically, see [DeleteQuickResponse](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_DeleteQuickResponse.html) in the *agent assist API Reference Guide*.
 

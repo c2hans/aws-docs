@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_StartMLDataP
 ---
 
 # StartMLDataProcessingJob
-<a name="API_StartMLDataProcessingJob"></a>
 
 Creates a new Neptune ML data processing job for processing the graph data exported from Neptune for training. See [The `dataprocessing` command](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-api-dataprocessing.html).
 

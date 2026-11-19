@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Usa
 ---
 
 # Usage note differences between on-demand backups managed by AWS Backup and DynamoDB
-<a name="UsageNotesAWS"></a>
 
 This section describes the technical differences between on-demand backups managed by AWS Backup and DynamoDB.
 

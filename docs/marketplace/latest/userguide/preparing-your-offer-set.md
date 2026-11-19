@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/preparing-y
 ---
 
 # Preparing your offer set
-<a name="preparing-your-offer-set"></a>
 
 ## What are offer sets?
 <a name="what-are-offer-sets"></a>

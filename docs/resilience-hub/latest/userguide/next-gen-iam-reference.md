@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # IAM roles and permissions reference
-<a name="next-gen-iam-reference"></a>
 
 **IAM role for assessment and resilience testing**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSREL13-BP01 Implement comprehensive monitoring for regulated systems
-<a name="lsrel13-bp01"></a>
 
  Establish monitoring that spans infrastructure, applications, data integrity, and audit controls. For GxP systems, verify that your monitoring covers validation-critical parameters identified in risk assessments, so that regulated workloads can demonstrate continuous oversight.
 

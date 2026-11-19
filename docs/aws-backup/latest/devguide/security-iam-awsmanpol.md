@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/security-iam-
 ---
 
 # Managed policies for AWS Backup
-<a name="security-iam-awsmanpol"></a>
 
 Managed policies are standalone identity-based policies that you can attach to multiple users, groups, and roles in your AWS account. When you attach a policy to a principal entity, you give the entity the permissions that are defined in the policy.
 

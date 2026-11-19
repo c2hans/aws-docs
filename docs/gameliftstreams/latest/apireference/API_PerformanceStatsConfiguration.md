@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # PerformanceStatsConfiguration
-<a name="API_PerformanceStatsConfiguration"></a>
 
 Configuration settings for sharing the stream session's performance stats with the client
 

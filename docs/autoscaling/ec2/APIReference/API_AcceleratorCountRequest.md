@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Acceler
 ---
 
 # AcceleratorCountRequest
-<a name="API_AcceleratorCountRequest"></a>
 
 Specifies the minimum and maximum for the `AcceleratorCount` object when you specify [InstanceRequirements](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceRequirements.html) for an Auto Scaling group.
 

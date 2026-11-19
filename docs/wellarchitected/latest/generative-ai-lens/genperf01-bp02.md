@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENPERF01-BP02 Collect performance metrics from generative AI workloads
-<a name="genperf01-bp02"></a>
 
  Foundation model performance on specific tasks is measured and quantified in different ways depending on the desired outcome. It is important to discern the performance of a model over time when selecting foundation models for generative AI workloads by identifying performance metrics and evaluating model performance. This is true not just for model inference, but model training and customization workloads as well.
 

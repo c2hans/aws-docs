@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/public-troublesh
 ---
 
 # Amazon ECR Public troubleshooting
-<a name="public-troubleshooting"></a>
 
 This chapter helps you find diagnostic information for Amazon ECR Public, and provides troubleshooting steps for common issues and error messages.
 

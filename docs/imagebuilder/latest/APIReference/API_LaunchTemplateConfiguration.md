@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lau
 ---
 
 # LaunchTemplateConfiguration
-<a name="API_LaunchTemplateConfiguration"></a>
 
 Identifies an Amazon EC2 launch template to use for a specific account.
 

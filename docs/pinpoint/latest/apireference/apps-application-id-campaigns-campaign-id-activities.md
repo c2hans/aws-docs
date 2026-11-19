@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-applic
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Campaign Activities
-<a name="apps-application-id-campaigns-campaign-id-activities"></a>
 
 A *campaign* represents a messaging initiative that engages a specific segment of users for an Amazon Pinpoint application. The Campaign Activities resource provides information about the activities that were performed by a campaign, such as the time during which the campaign ran and the number of endpoints that the campaign delivered messages to.
 

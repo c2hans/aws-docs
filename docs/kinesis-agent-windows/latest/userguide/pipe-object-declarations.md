@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/p
 ---
 
 # Pipe Declarations
-<a name="pipe-object-declarations"></a>
 
 Use *pipe declarations* to connect a source (see [Source Declarations](source-object-declarations.md)) to a sink (see [Sink Declarations](sink-object-declarations.md)) in Amazon Kinesis Agent for Microsoft Windows. A pipe declaration is expressed as a JSON object. After Kinesis Agent for Windows starts, the logs, events, or metrics are gathered from the source for a given pipe. They are then streamed to various AWS services using the sink that is associated with that pipe.
 

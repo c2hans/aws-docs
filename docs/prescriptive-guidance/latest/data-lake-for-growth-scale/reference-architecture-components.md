@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-f
 ---
 
 # Reference architecture components
-<a name="reference-architecture-components"></a>
 
 The following diagram shows the three components of this guide's reference architecture: data producers, data consumers, and the centralized catalog.
 

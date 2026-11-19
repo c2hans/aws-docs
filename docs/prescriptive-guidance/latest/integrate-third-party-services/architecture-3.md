@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-t
 ---
 
 # Architecture 3: AWS Transit Gateway
-<a name="architecture-3"></a>
 
 [AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html) is a managed routing service that connects VPCs and on-premises networks. Transit Gateway can help you simplify your network topology and avoid complex peering relationships between large numbers of VPCs.
 

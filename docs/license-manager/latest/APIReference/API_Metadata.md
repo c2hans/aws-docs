@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # Metadata
-<a name="API_Metadata"></a>
 
 Describes key/value pairs.
 

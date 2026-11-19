@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/config
 ---
 
 # Configuration bundles
-<a name="configuration-bundles"></a>
 
 A configuration bundle is a versioned, immutable snapshot of your agent’s dynamic configuration — system prompts, model IDs, tool descriptions, and any other key-value pairs your agent reads at runtime. Bundles decouple agent behavior from code, enabling you to change how your agent responds without redeploying code.
 

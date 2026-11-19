@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/multi-produ
 ---
 
 # Preparing your multi-product solution
-<a name="multi-product-solutions"></a>
 
 ## What are multi-product solutions?
 <a name="what-are-multi-product-solutions"></a>

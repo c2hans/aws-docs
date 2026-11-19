@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeCAEnrollmentPolicy
-<a name="API_DescribeCAEnrollmentPolicy"></a>
 
 Retrieves detailed information about the certificate authority (CA) enrollment policy for the specified directory. This policy determines how client certificates are automatically enrolled and managed through AWS Private Certificate Authority.
 

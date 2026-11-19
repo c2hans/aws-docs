@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Registration forms
-<a name="registrations-country"></a>
 
 The following registrations can be filled out and submitted through the AWS End User Messaging SMS console.
 

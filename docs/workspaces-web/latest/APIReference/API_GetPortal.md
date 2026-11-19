@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_G
 ---
 
 # GetPortal
-<a name="API_GetPortal"></a>
 
 Gets the web portal.
 

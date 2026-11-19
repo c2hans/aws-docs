@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Understand AWS response teams and support
-<a name="understand-aws-response-teams-and-support"></a>
 
 ## Support
 <a name="aws-support"></a>

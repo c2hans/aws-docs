@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkA
 ---
 
 # NetworkAclIcmpTypeCode
-<a name="API_NetworkAclIcmpTypeCode"></a>
 
 ICMP protocol: The ICMP type and code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_managed-in
 ---
 
 # GuardDuty Managed Instances Support
-<a name="guardduty_managed-instances"></a>
 
 The following table indicates the support that GuardDuty's various features have for the different types of managed instances.
 

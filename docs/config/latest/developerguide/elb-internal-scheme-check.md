@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/elb-interna
 ---
 
 # elb-internal-scheme-check
-<a name="elb-internal-scheme-check"></a>
 
 Checks if a Classic Load Balancer scheme is internal. The rule is NON\_COMPLIANT if configuration.scheme is not set to internal.
 

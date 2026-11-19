@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/create-multi-ag
 ---
 
 # Create multi-agent collaboration
-<a name="create-multi-agent-collaboration"></a>
 
 Creating a multi-agent collaboration comprises of the following steps:
 

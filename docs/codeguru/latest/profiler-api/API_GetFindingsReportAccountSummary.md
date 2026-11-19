@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetFind
 ---
 
 # GetFindingsReportAccountSummary
-<a name="API_GetFindingsReportAccountSummary"></a>
 
  Returns a list of [`FindingsReportSummary`](https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FindingsReportSummary.html) objects that contain analysis results for all profiling groups in your AWS account.
 

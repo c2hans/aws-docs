@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-n
 ---
 
 # Send OTP code
-<a name="nx-notify-send-outbound"></a>
 
 Notify sends one-time passcode (OTP) and verification messages from pre-approved templates over SMS, voice, and WhatsApp. You send a code with the **Send OTP code** actions, and, when AWS End User Messaging generates the code for you, you confirm what the recipient entered with the **Validate OTP code** action.
 

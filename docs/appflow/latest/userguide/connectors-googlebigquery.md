@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-goog
 ---
 
 # Google BigQuery connector for Amazon AppFlow
-<a name="connectors-googlebigquery"></a>
 
 Google BigQuery is a query and analysis solution. If you’re a Google BigQuery user, your account contains data, analytics, and more. You can use Amazon AppFlow to transfer data between Google BigQuery and certain AWS services or other supported applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/consolemobileapp/latest/userguide/permis
 ---
 
 # IAM permissions for listing mobile devices as delivery channels
-<a name="permissions-policies"></a>
 
 The AWS Console Mobile Application supports push notifications via [AWS User Notifications](https://docs.aws.amazon.com/notifications/latest/userguide/what-is.html). If you enable push notifications, the Console Mobile Application collects your device nickname (if applicable) to help identify your device. You can manage your mobile device’s push notifications from the AWS User Notifications console by adding your device as a delivery channel. Delivery channels allow you to receive and view notifications in locations other than the AWS Management Console. You can remove your device as a delivery channel at any time.
 

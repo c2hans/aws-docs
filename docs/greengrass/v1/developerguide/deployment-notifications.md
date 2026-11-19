@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/deployment-
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Get deployment notifications
-<a name="deployment-notifications"></a>
 
 Amazon EventBridge event rules provide you with notifications about state changes for your Greengrass group deployments. EventBridge delivers a near real-time stream of system events that describes changes in AWS resources. AWS IoT Greengrass sends these events to EventBridge on an *at least once* basis. This means that AWS IoT Greengrass might send multiple copies of a given event to ensure delivery. Additionally, your event listeners might not receive the events in the order that the events occurred.
 

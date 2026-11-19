@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetLaun
 ---
 
 # FleetLaunchTemplateSpecification
-<a name="API_FleetLaunchTemplateSpecification"></a>
 
 The Amazon EC2 launch template that can be used by a Spot Fleet to configure Amazon EC2 instances. You must specify either the ID or name of the launch template in the request, but not both.
 

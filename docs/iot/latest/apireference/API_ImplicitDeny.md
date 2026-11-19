@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ImplicitDeny
 ---
 
 # ImplicitDeny
-<a name="API_ImplicitDeny"></a>
 
 Information that implicitly denies authorization. When policy doesn't explicitly deny or allow an action on a resource it is considered an implicit deny.
 

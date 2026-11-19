@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-build-a
 ---
 
 # Build the Amazon Kinesis Video Streams Edge Agent
-<a name="gs-build-agent"></a>
 
 **Build the Amazon Kinesis Video Streams Edge Agent**
 

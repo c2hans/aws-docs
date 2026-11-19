@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/interruption-beh
 ---
 
 # Behavior of Spot Instance interruptions
-<a name="interruption-behavior"></a>
 
 When you create a Spot request, you can specify the interruption behavior. The following are the possible interruption behaviors:
 + [Stop](#stop-spot-instances)

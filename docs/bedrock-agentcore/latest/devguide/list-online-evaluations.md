@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/list-o
 ---
 
 # List online evaluations
-<a name="list-online-evaluations"></a>
 
 The `ListOnlineEvaluationConfigs` API retrieves a paginated list of all online evaluation configurations in your account and Region. This synchronous operation uses the POST method and returns summary information for each configuration.
 

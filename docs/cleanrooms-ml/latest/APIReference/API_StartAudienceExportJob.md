@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_St
 ---
 
 # StartAudienceExportJob
-<a name="API_StartAudienceExportJob"></a>
 
 Export an audience of a specified size after you have generated an audience.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Cluster
 ---
 
 # Cluster
-<a name="API_Cluster"></a>
 
 Describes a cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_KinesisF
 ---
 
 # KinesisFirehoseConfig
-<a name="API_KinesisFirehoseConfig"></a>
 
 Configuration information of a Kinesis Data Firehose delivery stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/confluence-kb-acl
 ---
 
 # Document-level access controls
-<a name="confluence-kb-acl"></a>
 
 Confluence Cloud knowledge bases optionally support document-level access control. When enabled, AWS Quick syncs access control lists (ACLs) from Confluence during each crawl and verifies each user's permissions at query time. Users only see answers from documents they are authorized to access in Confluence.
 

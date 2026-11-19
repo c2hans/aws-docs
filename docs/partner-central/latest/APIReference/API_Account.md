@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Account
-<a name="API_Account"></a>
 
 Specifies the `Customer`'s account details associated with the `Opportunity`.
 

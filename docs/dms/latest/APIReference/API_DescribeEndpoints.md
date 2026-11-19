@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeEndp
 ---
 
 # DescribeEndpoints
-<a name="API_DescribeEndpoints"></a>
 
 Returns information about the endpoints for your account in the current region.
 

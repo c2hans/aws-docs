@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/networkfirewall.html
 ---
 
 # AWS Network Firewall
-<a name="networkfirewall"></a>
 
  AWS Network Firewall is a managed firewall service that provides essential network protection for Amazon Virtual Private Cloud (VPC) environments. AWS Network Firewall acts as a first line of defence, filtering and inspecting all network traffic to and from RISE resources, effectively creating a protective perimeter around a RISE environment.
 

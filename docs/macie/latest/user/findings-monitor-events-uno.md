@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/findings-monitor-event
 ---
 
 # Monitoring Macie findings with AWS User Notifications
-<a name="findings-monitor-events-uno"></a>
 
 AWS User Notifications is a service that acts as a central location for your AWS notifications on the AWS Management Console. This includes notifications such as Amazon CloudWatch alarms, AWS Support cases, and communications from other AWS services. With User Notifications, you can configure custom rules and delivery channels for receiving notifications about certain types of Amazon EventBridge events. The delivery channels include email, Amazon Q Developer in chat applications, and push notifications in the AWS Console Mobile Application. You can also review notifications on the AWS User Notifications console. To learn more about User Notifications, see the [AWS User Notifications User Guide](https://docs.aws.amazon.com/notifications/latest/userguide/what-is-service.html).
 

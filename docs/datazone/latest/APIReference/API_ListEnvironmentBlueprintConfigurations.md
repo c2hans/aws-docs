@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListEnv
 ---
 
 # ListEnvironmentBlueprintConfigurations
-<a name="API_ListEnvironmentBlueprintConfigurations"></a>
 
 Lists blueprint configurations for a Amazon DataZone environment.
 

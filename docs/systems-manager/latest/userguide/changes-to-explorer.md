@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/changes
 ---
 
 # Changes to AWS Systems Manager Explorer
-<a name="changes-to-explorer"></a>
 
 Where you view operational data (OpsData) in AWS Systems Manager is changing. Starting December 31, 2026, the Explorer dashboard is no longer part of the Systems Manager console. You continue to view the same OpsData in the console of the AWS service or Systems Manager tool that produces it.
 

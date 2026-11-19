@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/rekognition_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Detect and display elements in images with Amazon Rekognition using an AWS SDK
-<a name="rekognition_example_rekognition_Usage_DetectAndDisplayImage_section"></a>
 
 The following code example shows how to:
 + Detect elements in images by using Amazon Rekognition.

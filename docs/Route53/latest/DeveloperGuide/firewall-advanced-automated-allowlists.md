@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-a
 ---
 
 # Automated Allowlists
-<a name="firewall-advanced-automated-allowlists"></a>
 
 With Automated Allowlists, DNS Firewall helps you build an allowlist of domains from the DNS query traffic of your VPCs. An Automated Allowlist rule is a rule type with the `ALLOW` action. DNS Firewall creates a domain list for the rule and shows you the domains that it observes in your DNS query traffic. You review the observed domains and add the domains that you want to allow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
 |  MIDASEC05: How do you manage access to industrial data within your workloads?  |
 | --- |

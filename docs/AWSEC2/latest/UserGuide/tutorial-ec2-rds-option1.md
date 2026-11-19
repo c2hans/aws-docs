@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/tutorial-ec2-rds
 ---
 
 # Option 1: Automatically connect an instance to an RDS database using the EC2 console
-<a name="tutorial-ec2-rds-option1"></a>
 
 The objective of Option 1 is to explore the automatic connection feature in the EC2 console that automatically configures the connection between your EC2 instance and RDS database to allow traffic from the EC2 instance to the RDS database. In Option 3, you'll learn how to manually configure the connection.
 

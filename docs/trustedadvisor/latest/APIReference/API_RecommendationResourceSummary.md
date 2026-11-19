@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_R
 ---
 
 # RecommendationResourceSummary
-<a name="API_RecommendationResourceSummary"></a>
 
 Summary of a Recommendation Resource
 

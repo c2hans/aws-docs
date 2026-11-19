@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_J
 ---
 
 # JobRunExecutionIamPolicy
-<a name="API_JobRunExecutionIamPolicy"></a>
 
 Optional IAM policy. The resulting job IAM role permissions will be an intersection of the policies passed and the policy associated with your job execution role.
 

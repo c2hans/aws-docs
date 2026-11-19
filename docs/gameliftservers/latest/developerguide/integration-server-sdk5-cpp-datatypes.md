@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 ---
 
 # C\+\+ server SDK 5.x for Amazon GameLift Servers -- Data types
-<a name="integration-server-sdk5-cpp-datatypes"></a>
 
 Use the Amazon GameLift Servers C\+\+ server SDK 5.x reference to integrate your multiplayer game for hosting with Amazon GameLift Servers. For guidance about the integration process, see [Add Amazon GameLift Servers to your game server with the server SDK](gamelift-sdk-server-api.md).
 

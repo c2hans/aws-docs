@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ReservedCacheNode
-<a name="API_ReservedCacheNode"></a>
 
 Represents the output of a `PurchaseReservedCacheNodesOffering` operation.
 

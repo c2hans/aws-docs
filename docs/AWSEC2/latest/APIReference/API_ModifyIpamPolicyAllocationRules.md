@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpa
 ---
 
 # ModifyIpamPolicyAllocationRules
-<a name="API_ModifyIpamPolicyAllocationRules"></a>
 
 Modifies the allocation rules in an IPAM policy.
 

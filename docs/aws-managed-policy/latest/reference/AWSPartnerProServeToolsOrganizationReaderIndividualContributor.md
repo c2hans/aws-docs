@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPartnerProServeToolsOrganizationReaderIndividualContributor
-<a name="AWSPartnerProServeToolsOrganizationReaderIndividualContributor"></a>
 
 **Description**: Provides read access to organizational assessments with ability to manage own assessments.
 

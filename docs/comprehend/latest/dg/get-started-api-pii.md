@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/get-started-api-pii
 ---
 
 # PII asynchronous analysis jobs (API)
-<a name="get-started-api-pii"></a>
 
 PII async analysis (API)
 

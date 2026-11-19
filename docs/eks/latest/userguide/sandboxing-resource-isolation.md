@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-resource
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Resource isolation and throttling
-<a name="sandboxing-resource-isolation"></a>
 
 Throttle annotations cap the host resources a single sandbox can consume. When absent, built-in defaults apply. All annotations use the `sandbox.amazonaws.com/` prefix and are set on the pod (or pod template metadata for workload controllers).
 

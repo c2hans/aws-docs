@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Disassoc
 ---
 
 # DisassociateThirdPartyFirewall
-<a name="API_DisassociateThirdPartyFirewall"></a>
 
 Disassociates a Firewall Manager policy administrator from a third-party firewall tenant. When you call `DisassociateThirdPartyFirewall`, the third-party firewall vendor deletes all of the firewalls that are associated with the account.
 

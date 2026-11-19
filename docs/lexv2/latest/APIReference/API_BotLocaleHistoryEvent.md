@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotLocaleH
 ---
 
 # BotLocaleHistoryEvent
-<a name="API_BotLocaleHistoryEvent"></a>
 
 Provides information about an event that occurred affecting the bot locale.
 

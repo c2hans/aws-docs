@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_InsightsConfiguratio
 ---
 
 # InsightsConfiguration
-<a name="API_InsightsConfiguration"></a>
 
 The structure containing configurations related to insights.
 

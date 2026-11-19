@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_S3Object
 ---
 
 # S3ObjectDoc
-<a name="API_S3ObjectDoc"></a>
 
 The unique wrapper object of the document from the S3 location.
 

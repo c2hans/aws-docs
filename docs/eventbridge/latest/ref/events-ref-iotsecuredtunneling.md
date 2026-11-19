@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-iotsec
 ---
 
 # AWS IoT Secure Tunneling events
-<a name="events-ref-iotsecuredtunneling"></a>
 
 AWS IoT Secure Tunneling sends service events to EventBridge via AWS CloudTrail.
 

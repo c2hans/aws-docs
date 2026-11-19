@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-image-c
 ---
 
 # DLR image classification model store
-<a name="dlr-image-classification-model-store-component"></a>
 
 The DLR image classification model store is a machine learning model component that contains pre-trained ResNet-50 models as Greengrass artifacts. The pre-trained models used in this component are fetched from the [GluonCV Model Zoo](https://cv.gluon.ai/model_zoo/index.html) and are compiled using SageMaker AI Neo [Deep Learning Runtime](https://github.com/neo-ai/neo-ai-dlr).
 

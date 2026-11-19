@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Se
 ---
 
 # SeedUrl
-<a name="API_agent_SeedUrl"></a>
 
 The seed or starting point URL. You should be authorized to crawl the URL.
 

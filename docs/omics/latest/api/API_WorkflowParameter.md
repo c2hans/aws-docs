@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_WorkflowParameter.h
 ---
 
 # WorkflowParameter
-<a name="API_WorkflowParameter"></a>
 
 A workflow parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Generate manual backfill requests from a backend service
-<a name="match-backfill-client"></a>
 
 As an alternative to sending backfill requests from a game server, you may want to send them from a client-side game service. To use this option, the client-side service must have access to current data on game session activity and player connections; if your game uses a session directory service, this might be a good choice.
 

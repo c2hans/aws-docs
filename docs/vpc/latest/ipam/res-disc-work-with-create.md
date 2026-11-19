@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/res-disc-work-with-creat
 ---
 
 # Create a resource discovery to integrate with another IPAM
-<a name="res-disc-work-with-create"></a>
 
 This section describes how to create a resource discovery. A resource discovery is created by default when you create an IPAM. The default quota for resource discoveries per Region is 1. For more information about IPAM quotas, see [Quotas for your IPAM](quotas-ipam.md).
 

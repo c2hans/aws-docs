@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_F
 ---
 
 # FilterCondition
-<a name="API_FilterCondition"></a>
 
 This structure describes the filtering of columns in a table based on a filter condition.
 

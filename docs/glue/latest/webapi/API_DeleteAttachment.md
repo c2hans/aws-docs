@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteAttachment.
 ---
 
 # DeleteAttachment
-<a name="API_DeleteAttachment"></a>
 
 Deletes a form attachment from an asset in AWS Glue Data Catalog.
 

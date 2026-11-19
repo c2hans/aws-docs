@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-combini
 ---
 
 # Combining GraphQL resolvers in AWS AppSync
-<a name="tutorial-combining-graphql-resolvers-js"></a>
 
 Resolvers and fields in a GraphQL schema have 1:1 relationships with a large degree of flexibility. Because a data source is configured on a resolver independently of a schema, you have the ability to resolve or manipulate your GraphQL types through different data sources, allowing you to mix and match a schema to best meet your needs.
 

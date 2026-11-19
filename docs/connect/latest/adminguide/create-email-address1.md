@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-email-a
 ---
 
 # Create email addresses
-<a name="create-email-address1"></a>
 
 This topic explains how to create email addresses by using the Connect Customer admin website. You can create email addresses that customers can reply to, as well as outbound only (no-reply) email addresses.
 

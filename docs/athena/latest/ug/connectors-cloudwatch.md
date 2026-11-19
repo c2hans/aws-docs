@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-cloudwatch.h
 ---
 
 # Amazon Athena CloudWatch connector
-<a name="connectors-cloudwatch"></a>
 
 The Amazon Athena CloudWatch connector enables Amazon Athena to communicate with CloudWatch so that you can query your log data with SQL.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DisassociateDataProtectionSettings
-<a name="API_DisassociateDataProtectionSettings"></a>
 
 Disassociates data protection settings from a web portal.
 

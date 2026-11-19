@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # ACCT.08 Prevent public access to private Amazon S3 buckets
-<a name="acct-08"></a>
 
 By default, the root user of the AWS account and the IAM principal that created the bucket have permissions to read and write to Amazon S3 buckets. You can grant additional IAM principals access by using identity-based policies, and you can enforce access conditions by using a bucket policy. You can create bucket policies that grant the general public access to the bucket, creating a *public *bucket.
 

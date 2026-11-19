@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_B
 ---
 
 # BatchStatementError
-<a name="API_BatchStatementError"></a>
 
  An error associated with a statement in a PartiQL batch that was run.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeProduct
-<a name="API_DescribeProduct"></a>
 
 Gets information about the specified product.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/bulk-upload-ru
 ---
 
 # Step 5: Run the `cqlsh COPY FROM` command to upload data from the CSV file to the target table
-<a name="bulk-upload-run"></a>
 
 To run the `cqlsh COPY FROM` command, complete the following steps.
 

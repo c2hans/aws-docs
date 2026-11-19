@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The AWS CodeConnections API contains several data types that various actions use. This section describes each data type in detail.
 

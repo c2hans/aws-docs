@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Right size Windows workloads
-<a name="rightsize"></a>
 
 ## Overview
 <a name="rightsize-overview"></a>

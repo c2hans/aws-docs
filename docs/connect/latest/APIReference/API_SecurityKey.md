@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Security
 ---
 
 # SecurityKey
-<a name="API_SecurityKey"></a>
 
 Configuration information of the security key.
 

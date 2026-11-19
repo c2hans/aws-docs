@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # StreamBucketConfig
-<a name="API_StreamBucketConfig"></a>
 
 The configuration for an Amazon S3 bucket that an ingestion stream ingests data from.
 

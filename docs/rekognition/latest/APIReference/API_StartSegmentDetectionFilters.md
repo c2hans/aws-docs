@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Star
 ---
 
 # StartSegmentDetectionFilters
-<a name="API_StartSegmentDetectionFilters"></a>
 
 Filters applied to the technical cue or shot detection segments. For more information, see [StartSegmentDetection](API_StartSegmentDetection.md).
 

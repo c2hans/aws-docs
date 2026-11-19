@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailTraceAssessment
-<a name="API_runtime_GuardrailTraceAssessment"></a>
 
 A Top level guardrail trace object. For more information, see [ConverseTrace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_ConverseTrace.html).
 

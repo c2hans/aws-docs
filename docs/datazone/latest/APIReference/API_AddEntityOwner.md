@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AddEnti
 ---
 
 # AddEntityOwner
-<a name="API_AddEntityOwner"></a>
 
 Adds the owner of an entity (a domain unit).
 

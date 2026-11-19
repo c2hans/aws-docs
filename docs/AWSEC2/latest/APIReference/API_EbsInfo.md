@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsInfo.h
 ---
 
 # EbsInfo
-<a name="API_EbsInfo"></a>
 
 Describes the Amazon EBS features supported by the instance type.
 

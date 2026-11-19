@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJob
 ---
 
 # ServiceJobTimeout
-<a name="API_ServiceJobTimeout"></a>
 
 The timeout configuration for service jobs.
 

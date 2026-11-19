@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Address
-<a name="API_taxSettings_Address"></a>
 
  The details of the address associated with the TRN information.
 

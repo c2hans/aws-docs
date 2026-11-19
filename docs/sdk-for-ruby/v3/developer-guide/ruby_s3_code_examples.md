@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/ruby_s3_
 ---
 
 # Amazon S3 examples using SDK for Ruby
-<a name="ruby_s3_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Ruby with Amazon S3.
 

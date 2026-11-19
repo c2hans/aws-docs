@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForProcurementInsightsPolicy
-<a name="AWSServiceRoleForProcurementInsightsPolicy"></a>
 
 **Description**: Policy for Procurement Insights to obtain Organization Account details
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # VpcConfiguration
-<a name="API_VpcConfiguration"></a>
 
 The VPC configuration for launching Amazon EC2 instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Inference strategy
-<a name="pm-inference-strategy"></a>
 
 This section explains the dual inference approach used for tire health prediction and the cost-driven reasoning behind each choice.
 

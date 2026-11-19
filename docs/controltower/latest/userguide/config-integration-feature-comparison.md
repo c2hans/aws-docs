@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/config-int
 ---
 
 # Feature comparison with and without AWS Config integration
-<a name="config-integration-feature-comparison"></a>
 
  With Landing Zone 4.0, you can disable the AWS Config integration. The following table summarizes the AWS Control Tower features that are available with and without the AWS Config integration enabled on the landing zone.
 

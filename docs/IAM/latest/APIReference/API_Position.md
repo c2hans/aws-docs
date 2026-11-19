@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_Position.htm
 ---
 
 # Position
-<a name="API_Position"></a>
 
 Contains the row and column of a location of a `Statement` element in a policy document.
 

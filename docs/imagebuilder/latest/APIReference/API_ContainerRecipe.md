@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Con
 ---
 
 # ContainerRecipe
-<a name="API_ContainerRecipe"></a>
 
 Defines how Image Builder builds and tests a container image: the base image, components to apply, the Dockerfile template, the build and test instance configuration, and the target repository for the output image.
 

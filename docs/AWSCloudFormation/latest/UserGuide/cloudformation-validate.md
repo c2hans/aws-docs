@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloud
 ---
 
 # Validate templates with `cloudformation-validate`
-<a name="cloudformation-validate"></a>
 
 AWS CloudFormation Validate (`cloudformation-validate`) helps you find template problems before deployment. It checks JSON and YAML templates locally for invalid template structure, broken references, security issues, and best-practice problems. Each finding includes a stable rule ID, a severity, the line and column in the template, the affected resource, and, when available, a suggested fix.
 

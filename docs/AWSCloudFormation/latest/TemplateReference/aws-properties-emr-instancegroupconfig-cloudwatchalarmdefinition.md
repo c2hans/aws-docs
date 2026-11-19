@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMR::InstanceGroupConfig CloudWatchAlarmDefinition
-<a name="aws-properties-emr-instancegroupconfig-cloudwatchalarmdefinition"></a>
 
 `CloudWatchAlarmDefinition` is a subproperty of the `ScalingTrigger `property, which determines when to trigger an automatic scaling activity. Scaling activity begins when you satisfy the defined alarm conditions.
 

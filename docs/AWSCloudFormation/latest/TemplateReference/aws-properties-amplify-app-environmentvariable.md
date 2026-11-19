@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Amplify::App EnvironmentVariable
-<a name="aws-properties-amplify-app-environmentvariable"></a>
 
 Environment variables are key-value pairs that are available at build time. Set environment variables for all branches in your app.
 

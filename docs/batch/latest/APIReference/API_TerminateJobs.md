@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateJ
 ---
 
 # TerminateJobs
-<a name="API_TerminateJobs"></a>
 
 Terminates up to 50 jobs in a job queue. This is a bulk version of [TerminateJob](API_TerminateJob.md). Jobs that are in the `STARTING` or `RUNNING` state are terminated, which causes them to transition to `FAILED`. Jobs that have not progressed to the `STARTING` state are cancelled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Compute Optimizer Automation
-<a name="list_compute-optimizer-automation"></a>
 
 AWS Compute Optimizer Automation (service prefix: `aco-automation`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

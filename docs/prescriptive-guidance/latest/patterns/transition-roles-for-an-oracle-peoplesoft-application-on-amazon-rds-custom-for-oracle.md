@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/tr
 ---
 
 # Transition roles for an Oracle PeopleSoft application on Amazon RDS Custom for Oracle
-<a name="transition-roles-for-an-oracle-peoplesoft-application-on-amazon-rds-custom-for-oracle"></a>
 
 *sampath kathirvel, Amazon Web Services*
 

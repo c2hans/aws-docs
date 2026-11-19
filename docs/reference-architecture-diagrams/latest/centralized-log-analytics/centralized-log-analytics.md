@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Centralized Log Analytics
-<a name="centralized-log-analytics"></a>
 
 Publication date: **November 7, 2022 ([Diagram history](#diagram-history))**
 

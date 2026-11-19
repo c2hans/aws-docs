@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Consolidation
-<a name="API_connect-customer-profiles_Consolidation"></a>
 
 The matching criteria to be used during the auto-merging process.
 

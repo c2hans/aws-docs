@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Recomme
 ---
 
 # RecommendationConfiguration
-<a name="API_RecommendationConfiguration"></a>
 
 The recommendation to be updated as part of the `UpdateDataSource` action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSOPS05-BP02 Automate compliance remediation
-<a name="dsops05-bp02"></a>
 
  When compliance findings are remediated manually, response times vary, fixes are inconsistent, and audit trails are incomplete. Automated remediation provides consistent, rapid response to known compliance issues while maintaining oversight and audit trails that support regulatory reporting across jurisdictions.
 

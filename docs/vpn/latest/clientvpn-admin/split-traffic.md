@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/split-traffic
 ---
 
 # Troubleshooting AWS Client VPN: Traffic is not being split between subnets
-<a name="split-traffic"></a>
 
 **Problem**
 I am trying to split network traffic between two subnets. Private traffic should be routed through a private subnet, while internet traffic should be routed through a public subnet. However, only one route is being used even though I have added both routes to the Client VPN endpoint route table.

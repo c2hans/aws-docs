@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Availabl
 ---
 
 # AvailableNumberSummary
-<a name="API_AvailableNumberSummary"></a>
 
 Information about available phone numbers.
 

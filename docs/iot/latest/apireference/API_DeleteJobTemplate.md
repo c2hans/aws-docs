@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteJobTem
 ---
 
 # DeleteJobTemplate
-<a name="API_DeleteJobTemplate"></a>
 
 Deletes the specified job template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Indica
 ---
 
 # Indicator
-<a name="API_Indicator"></a>
 
 Contains information about the indicators that include a set of signals observed in an attack sequence.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognizerProperties
-<a name="API_EntityRecognizerProperties"></a>
 
 Describes information about an entity recognizer.
 

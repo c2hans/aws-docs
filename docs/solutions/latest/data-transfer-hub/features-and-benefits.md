@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/featu
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 Depending on the availability of your network environment, the Guidance supports the following key features:
 +  **Inter-Partition and Cross-Cloud data transfer** - to promote seamless transfer capabilities in one place

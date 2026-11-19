@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Wo
 ---
 
 # WorkspaceSummary
-<a name="API_WorkspaceSummary"></a>
 
 An object that contains information about a workspace.
 

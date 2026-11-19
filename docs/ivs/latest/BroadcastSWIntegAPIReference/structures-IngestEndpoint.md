@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # IngestEndpoint
-<a name="structures-IngestEndpoint"></a>
 
 Object specifying ingest endpoints returned by [GetClientConfiguration](actions-GetClientConfiguration.md).
 

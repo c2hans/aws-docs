@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # AI21 Labs Jamba models
-<a name="model-parameters-jamba"></a>
 
 This section provides inference parameters and a code example for using AI21 Labs Jamba models.
 

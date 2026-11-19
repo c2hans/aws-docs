@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ProductInformation
-<a name="API_marketplace-discovery_ProductInformation"></a>
 
 Summary information about a product, including the identifier, name, and manufacturer.
 

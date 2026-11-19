@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Smart crop parameters
-<a name="ecs-smart-crop-parameters"></a>
 
 **Note**
  **Supported in:** ECS architecture only (v8.1\+).

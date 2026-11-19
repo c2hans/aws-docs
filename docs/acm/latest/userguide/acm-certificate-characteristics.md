@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate-cha
 ---
 
 # AWS Certificate Manager public certificate characteristics and limitations
-<a name="acm-certificate-characteristics"></a>
 
 Public certificates provided by ACM have the following characteristics and limitations. These apply only to certificates provided by ACM. They might not apply to [imported certificates](import-certificate.md).
 

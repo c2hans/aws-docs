@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # PrivateEndpoint
-<a name="API_PrivateEndpoint"></a>
 
 A private network endpoint used to reach a resource over a private path. Exactly one member is set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.column
 ---
 
 # Column structure recipe steps
-<a name="recipe-actions.column-structure"></a>
 
 Use these column structure recipe steps to modify the column structure of your data.
 

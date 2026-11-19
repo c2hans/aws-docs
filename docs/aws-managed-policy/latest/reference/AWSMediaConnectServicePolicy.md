@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMediaConnectServicePolicy
-<a name="AWSMediaConnectServicePolicy"></a>
 
 **Description**: The default policy that enables access to AWS services and Resources used or managed by MediaConnect.
 

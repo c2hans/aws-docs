@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Desc
 ---
 
 # DescribeRule
-<a name="API_DescribeRule"></a>
 
 Describes the specified rule.
 

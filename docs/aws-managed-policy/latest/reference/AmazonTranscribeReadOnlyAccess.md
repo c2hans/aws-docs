@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonTranscribeReadOnlyAccess
-<a name="AmazonTranscribeReadOnlyAccess"></a>
 
 **Description**: Provides access to read only operation for Amazon Transcribe
 

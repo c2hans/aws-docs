@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/identify-confe
 ---
 
 # Identify conferences and transfers by using Connect Customer contact records
-<a name="identify-conferences-transfers"></a>
 
 Contact records capture the events associated with a contact in your contact center. For every new contact, Connect Customer creates a contact record and assigns a unique Contact ID to the contact.
 

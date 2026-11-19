@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SYS_ANALYZE_COMPRES
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # SYS\_ANALYZE\_COMPRESSION\_HISTORY
-<a name="r_SYS_ANALYZE_COMPRESSION_HISTORY"></a>
 
 Records details for compression analysis operations during COPY or ANALYZE COMPRESSION commands.
 

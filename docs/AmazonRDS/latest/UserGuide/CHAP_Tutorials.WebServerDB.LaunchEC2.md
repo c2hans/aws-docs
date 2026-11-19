@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorial
 ---
 
 # Launch an EC2 instance to connect with your DB instance
-<a name="CHAP_Tutorials.WebServerDB.LaunchEC2"></a>
 
 Create an Amazon EC2 instance in the public subnet of your VPC.
 

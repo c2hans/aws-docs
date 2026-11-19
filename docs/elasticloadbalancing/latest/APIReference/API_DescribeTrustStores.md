@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeTrustStores
-<a name="API_DescribeTrustStores"></a>
 
 Describes all trust stores for the specified account.
 

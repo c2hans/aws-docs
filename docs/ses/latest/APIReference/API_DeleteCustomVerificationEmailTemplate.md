@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteCustom
 ---
 
 # DeleteCustomVerificationEmailTemplate
-<a name="API_DeleteCustomVerificationEmailTemplate"></a>
 
 Deletes an existing custom verification email template.
 

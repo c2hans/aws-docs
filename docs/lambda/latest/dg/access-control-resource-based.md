@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource
 ---
 
 # Working with resource-based policies in Lambda
-<a name="access-control-resource-based"></a>
 
 With resource-based permissions policies, you can grant other AWS accounts, users, organizations, and AWS services access to your Lambda Event Functions. A resource-based policy is a JSON document that contains one or more *statements*. Each statement defines the following:
 + `Principal`: The entity you want to grant permissions to (another AWS service, an IAM role or user, or another AWS account)

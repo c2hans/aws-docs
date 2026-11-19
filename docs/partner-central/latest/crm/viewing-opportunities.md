@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/viewing-oppor
 ---
 
 # Viewing opportunity records
-<a name="viewing-opportunities"></a>
 
 The following steps explain how to view opportunity records in the CRM connector app.
 

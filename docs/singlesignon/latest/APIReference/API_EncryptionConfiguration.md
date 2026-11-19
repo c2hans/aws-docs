@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Enc
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
  A structure that specifies the KMS key type and KMS key ARN used to encrypt data in your IAM Identity Center instance.
 

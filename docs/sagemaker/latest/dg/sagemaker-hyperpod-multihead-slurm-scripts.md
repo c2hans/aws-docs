@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Preparing and uploading lifecycle scripts
-<a name="sagemaker-hyperpod-multihead-slurm-scripts"></a>
 
 After creating all the required resources, you'll need to set up [lifecycle scripts](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts) for your SageMaker HyperPod cluster. These [lifecycle scripts](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts) provide a [base configuration](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config) you can use to create a basic HyperPod Slurm cluster.
 

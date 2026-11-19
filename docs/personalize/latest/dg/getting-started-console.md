@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/getting-started-co
 ---
 
 # Getting started (console)
-<a name="getting-started-console"></a>
 
 In this exercise, you use the Amazon Personalize console to create a Custom dataset group with a solution that returns movie recommendations for a given user. Before you start this exercise, review the [Getting started prerequisites](gs-prerequisites.md).
 

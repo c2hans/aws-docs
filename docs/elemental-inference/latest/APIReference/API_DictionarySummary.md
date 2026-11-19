@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # DictionarySummary
-<a name="API_DictionarySummary"></a>
 
 Contains summary information about a dictionary. Used in the ListDictionaries response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # DeleteNotificationRule
-<a name="API_DeleteNotificationRule"></a>
 
 Deletes a notification rule for a resource.
 

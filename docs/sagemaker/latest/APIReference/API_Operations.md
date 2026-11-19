@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operat
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by Amazon SageMaker Service:
 +  [AddAssociation](API_AddAssociation.md)

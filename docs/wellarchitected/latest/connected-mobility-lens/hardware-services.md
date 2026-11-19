@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Hardware and services
-<a name="hardware-services"></a>
 
 | CMSUS\_10: Are you using the correct compute instance type and the minimum size needed to process your workload?  |
 | --- |

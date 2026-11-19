@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateSpe
 ---
 
 # CreateSpendingLimit
-<a name="API_CreateSpendingLimit"></a>
 
 Creates a spending limit for a specified quantum device. Spending limits help you control costs by setting maximum amounts that can be spent on quantum computing tasks within a specified time period. Simulators do not support spending limits.
 

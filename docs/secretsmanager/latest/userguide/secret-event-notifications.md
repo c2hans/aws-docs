@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/secret-e
 ---
 
 # Secret event notifications
-<a name="secret-event-notifications"></a>
 
 Secrets Manager publishes events to Amazon EventBridge when staging labels change on your secrets. You can create EventBridge rules that match these events and route them to targets to build event-driven workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_AnnotationValue.html
 ---
 
 # AnnotationValue
-<a name="API_AnnotationValue"></a>
 
 Value of a segment annotation. Has one of three value types: Number, Boolean, or String.
 

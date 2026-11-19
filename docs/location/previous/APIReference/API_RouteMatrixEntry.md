@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Route
 ---
 
 # RouteMatrixEntry
-<a name="API_RouteMatrixEntry"></a>
 
 The result for the calculated route of one `DeparturePosition` `DestinationPosition` pair.
 

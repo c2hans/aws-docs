@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Delet
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Removes the specified application from monitoring. Does not delete the application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # RegisterCompute
-<a name="API_RegisterCompute"></a>
 
  **This API works with the following fleet types:** Anywhere
 

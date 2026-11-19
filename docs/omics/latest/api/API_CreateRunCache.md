@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_CreateRunCache.html
 ---
 
 # CreateRunCache
-<a name="API_CreateRunCache"></a>
 
 Creates a run cache to store and reference task outputs from completed private runs. Specify an Amazon S3 location where AWS HealthOmics saves the cached data. This data must be immediately accessible and not in an archived state. You can save intermediate task files to a run cache if they are declared as task outputs in the workflow definition file.
 

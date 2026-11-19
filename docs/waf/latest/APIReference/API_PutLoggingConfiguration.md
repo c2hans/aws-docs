@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_PutLoggingCo
 ---
 
 # PutLoggingConfiguration
-<a name="API_PutLoggingConfiguration"></a>
 
 Enables the specified [LoggingConfiguration](API_LoggingConfiguration.md), to start logging from a web ACL, according to the configuration provided.
 

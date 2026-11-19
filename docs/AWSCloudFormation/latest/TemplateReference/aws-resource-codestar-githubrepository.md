@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CodeStar::GitHubRepository
-<a name="aws-resource-codestar-githubrepository"></a>
 
 The `AWS::CodeStar::GitHubRepository` resource creates a GitHub repository where users can store source code for use with AWS workflows. You must provide a location for the source code ZIP file in the CloudFormation template, so the code can be uploaded to the created repository. You must have created a personal access token in GitHub to provide in the CloudFormation template. AWS uses this token to connect to GitHub on your behalf.
 

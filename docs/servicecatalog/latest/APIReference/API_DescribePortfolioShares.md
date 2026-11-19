@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribePortfolioShares
-<a name="API_DescribePortfolioShares"></a>
 
 Returns a summary of each of the portfolio shares that were created for the specified portfolio.
 

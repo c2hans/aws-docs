@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # The Role of AWS Under the GDPR
-<a name="the-role-of-aws-under-the-gdpr"></a>
 
 Under the GDPR, AWS may act as either a processor or a controller, depending on the service and how it is used. A controller is the entity that decides why and how personal data is processed. A processor handles personal data only on the controller's behalf and only for the purposes the controller defines. This distinction matters because it determines whether AWS or the customer is responsible for decisions about how personal data is handled and which party is accountable for meeting specific GDPR obligations.
 

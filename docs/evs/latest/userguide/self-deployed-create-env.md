@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/self-deployed-creat
 ---
 
 # Step 1: Create the environment
-<a name="self-deployed-create-env"></a>
 
 In Self-deployed mode, environment creation provisions the Amazon Elastic VMware Service VLAN subnets that you specify. It doesn’t deploy VMware Cloud Foundation (VCF) or create hosts. You can create the environment with the Amazon EVS console or the AWS CLI. The steps are the same for hosts with local storage and for diskless hosts.
 

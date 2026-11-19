@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ECSExp
 ---
 
 # ECSExpressGatewayService
-<a name="API_ECSExpressGatewayService"></a>
 
 Represents an Express service, which provides a simplified way to deploy containerized web applications on Amazon ECS with managed AWS infrastructure. An Express service automatically provisions and manages Application Load Balancers, target groups, security groups, and auto-scaling policies.
 

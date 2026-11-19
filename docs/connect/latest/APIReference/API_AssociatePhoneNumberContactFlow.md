@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociatePhoneNumberContactFlow
-<a name="API_AssociatePhoneNumberContactFlow"></a>
 
 Associates a flow with a phone number claimed to your Connect Customer instance.
 

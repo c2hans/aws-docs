@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Operations
-<a name="operations"></a>
 
 The objective of the operations workstream is to review your current operational model and develop an operations integration approach to support future-state operating models as you migrate to AWS. The operating model should encompass the relationships among people, processes, and tools to support the delivery of organizational objectives. Workstream owners identify and document high-level gaps based on the end-state operational model for tools, processes, and people. A roadmap prioritization is then created for implementation. This roadmap is influenced by, and will influence, the other migration workstreams because of the many interdependencies among security, people, AWS landing zone, and other project workstreams.
 

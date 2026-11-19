@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ima
 ---
 
 # ImageLocation
-<a name="API_ImageLocation"></a>
 
 Contains an image that is uploaded to AWS IoT SiteWise and available at a URL.
 

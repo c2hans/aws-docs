@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # Running batch operations with PartiQL for DynamoDB
-<a name="ql-reference.multiplestatements.batching"></a>
 
 This section describes how to use batch statements with PartiQL for DynamoDB.
 

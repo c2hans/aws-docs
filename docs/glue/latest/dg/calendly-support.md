@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/calendly-support.html
 ---
 
 # AWS Glue support for Calendly
-<a name="calendly-support"></a>
 
 AWS Glue supports Calendly as follows:
 

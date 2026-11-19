@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_WithdrawB
 ---
 
 # WithdrawByoipCidr
-<a name="API_WithdrawByoipCidr"></a>
 
 Stops advertising an address range that is provisioned as an address pool.
 

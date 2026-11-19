@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Data management
-<a name="data-management"></a>
 
 |  LSPERF09: What processes do you have in place to select and implement multi-purpose data stores for clinical and research data management?  |
 | --- |

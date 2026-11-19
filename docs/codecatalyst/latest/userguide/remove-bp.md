@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/remove-bp.
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Removing a custom blueprint from a space blueprints catalog
-<a name="remove-bp"></a>
 
 A custom blueprint can be removed from your space's blueprints catalog if you no longer want it being used to create new projects or applied to existing projects.
 

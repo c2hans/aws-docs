@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_StatusDet
 ---
 
 # StatusDetailFilters
-<a name="API_StatusDetailFilters"></a>
 
 Status filter object to filter results based on specific member account ID or status type for an organization AWS Config rule.
 

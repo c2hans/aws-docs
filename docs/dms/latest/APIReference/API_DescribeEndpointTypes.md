@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeEndp
 ---
 
 # DescribeEndpointTypes
-<a name="API_DescribeEndpointTypes"></a>
 
 Returns information about the type of endpoints available.
 

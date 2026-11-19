@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl.html
 ---
 
 # Use Kinesis Client Library
-<a name="kcl"></a>
 
 ## What is Kinesis Client Library?
 <a name="kcl-library-what-is"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSThinkboxAWSPortalGatewayPolicy
-<a name="AWSThinkboxAWSPortalGatewayPolicy"></a>
 
 **Description**: This policy grants the AWS Portal Gateway machine the necessary permissions required for normal operation.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/coredns-autoscaling
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Scale CoreDNS Pods for high DNS traffic
-<a name="coredns-autoscaling"></a>
 
 When you launch an Amazon EKS cluster with at least one node, a Deployment of two replicas of the CoreDNS image is deployed by default, regardless of the number of nodes deployed in your cluster. The CoreDNS Pods provide name resolution for all Pods in the cluster. Applications use name resolution to connect to pods and services in the cluster as well as connecting to services outside the cluster. As the number of requests for name resolution (queries) from pods increase, the CoreDNS pods can get overwhelmed and slow down, and reject requests that the pods can’t handle.
 

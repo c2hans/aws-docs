@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/service_c
 ---
 
 # Code examples for S3 Directory Buckets using AWS SDKs
-<a name="service_code_examples_s3-directory-buckets"></a>
 
 The following code examples show how to use S3 Directory Buckets with an AWS software development kit (SDK).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # OutputResolutionStackInput
-<a name="API_geospatial_OutputResolutionStackInput"></a>
 
 The input structure representing Output Resolution for Stacking Operation.
 

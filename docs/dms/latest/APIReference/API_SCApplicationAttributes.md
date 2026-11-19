@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_SCApplicatio
 ---
 
 # SCApplicationAttributes
-<a name="API_SCApplicationAttributes"></a>
 
 Provides information that defines a schema conversion application.
 

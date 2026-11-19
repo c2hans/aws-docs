@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Launch the stack (Headless)
-<a name="deploy-self-hosted"></a>
 
 ## Launch the stack
 <a name="self-hosted-launch-the-stack"></a>

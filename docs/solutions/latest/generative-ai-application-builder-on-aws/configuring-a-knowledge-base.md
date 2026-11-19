@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Configuring a knowledge base
-<a name="configuring-a-knowledge-base"></a>
 
 This section describes how to ingest data into the knowledge base you’ve selected for the solution. The solution currently supports Amazon Kendra and Amazon Bedrock Knowledge Bases as knowledge bases for your RAG-based use case deployment.
 

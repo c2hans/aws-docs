@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/sal-cw-trouble
 ---
 
 # Troubleshooting CloudWatch Logs delivery
-<a name="sal-cw-troubleshooting"></a>
 
 ## Logs not appearing in CloudWatch Logs log group
 <a name="sal-cw-ts-no-logs"></a>

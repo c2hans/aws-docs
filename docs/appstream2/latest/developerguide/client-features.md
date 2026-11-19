@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # Supported Features
-<a name="client-features"></a>
 
 The following table compares the features that are supported by the different access types.
 

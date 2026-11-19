@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-mkt-buy.ht
 ---
 
 # Usage of Algorithm and Model Package Resources
-<a name="sagemaker-mkt-buy"></a>
 
 You can create algorithms and model packages as resources in your Amazon SageMaker AI account, and you can find and subscribe to algorithms and model packages on AWS Marketplace.
 

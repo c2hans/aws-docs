@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/notifications-ap
 ---
 
 # Notifications actions
-<a name="notifications-api"></a>
 
 The following API actions are available for notifications:
 + [CreateNotification](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateNotification.html)

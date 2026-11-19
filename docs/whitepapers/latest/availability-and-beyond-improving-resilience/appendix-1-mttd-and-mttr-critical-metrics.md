@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Appendix 1 – MTTD and MTTR critical metrics
-<a name="appendix-1-mttd-and-mttr-critical-metrics"></a>
 
  The following is a framework for standardization in instrumentation and observability that can help reduce the MTTD and MTTR during an event.
 

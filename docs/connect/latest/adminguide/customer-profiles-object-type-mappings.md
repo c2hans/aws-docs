@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 ---
 
 # Create and ingest customer data into Customer Profiles
-<a name="customer-profiles-object-type-mappings"></a>
 
 You can define data from any source using Amazon S3 and seamlessly enrich a customer profile without the need for custom or pre-built integrations. For example, say you want to provide agents with relevant purchase history information. You can import purchase transaction data from an internal application into a spreadsheet file on S3 and then link it to a customer profile.
 

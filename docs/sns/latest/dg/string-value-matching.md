@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/string-value-matching.html
 ---
 
 # String value matching
-<a name="string-value-matching"></a>
 
 Filter messages by matching string values to message attribute values or message body property values. String values are enclosed in double quotation marks in the JSON policy. You can use the following string operations to match message attributes or message body properties:
 

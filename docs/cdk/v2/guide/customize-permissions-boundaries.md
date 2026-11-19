@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/customize-permissions-bound
 ---
 
 # Create and apply permissions boundaries for the AWS CDK
-<a name="customize-permissions-boundaries"></a>
 
 A *permissions boundary* is an AWS Identity and Access Management (IAM) advanced feature that you can use to set the maximum permissions that an IAM entity, such as a user or role, can have. You can use permissions boundaries to restrict the actions that IAM entities can perform when using the AWS Cloud Development Kit (AWS CDK).
 

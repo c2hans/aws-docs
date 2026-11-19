@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAlternateContact
-<a name="API_DeleteAlternateContact"></a>
 
 Deletes the specified alternate contact from an AWS account.
 

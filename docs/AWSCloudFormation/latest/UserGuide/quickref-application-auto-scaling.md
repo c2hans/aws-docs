@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Configure Application Auto Scaling resources with CloudFormation
-<a name="quickref-application-auto-scaling"></a>
 
 This section provides CloudFormation template examples for Application Auto Scaling scaling policies and scheduled actions for different AWS resources.
 

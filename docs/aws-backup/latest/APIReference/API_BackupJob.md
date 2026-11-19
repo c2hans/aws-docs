@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Backu
 ---
 
 # BackupJob
-<a name="API_BackupJob"></a>
 
 Contains detailed information about a backup job.
 

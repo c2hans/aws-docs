@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/ai-response-steps
 ---
 
 # AI response steps
-<a name="ai-response-steps"></a>
 
 AI response steps generate content using AI models. AWS Quick Flows provides the following AI response step types.
 

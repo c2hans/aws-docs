@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSr
 ---
 
 # AWSrePostPrivateCloudWatchAccess
-<a name="AWSrePostPrivateCloudWatchAccess"></a>
 
 **Description**: Provides re:Post Private access to publish CloudWatch metrics data
 

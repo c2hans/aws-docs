@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/email-validation-auto.html
 ---
 
 # Auto Validation
-<a name="email-validation-auto"></a>
 
 Auto Validation automatically reviews all outbound email addresses before sending and only delivers messages to recipients that meet your selected validation threshold. This helps you protect your sender reputation by preventing sends to likely invalid or risky addresses without requiring manual intervention or API integration.
 

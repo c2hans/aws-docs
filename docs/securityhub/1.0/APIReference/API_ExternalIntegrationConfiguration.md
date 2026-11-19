@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Externa
 ---
 
 # ExternalIntegrationConfiguration
-<a name="API_ExternalIntegrationConfiguration"></a>
 
 Defines the settings and parameters required for integrating external security tools and services.
 

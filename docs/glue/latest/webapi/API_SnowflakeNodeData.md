@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SnowflakeNodeData
 ---
 
 # SnowflakeNodeData
-<a name="API_SnowflakeNodeData"></a>
 
 Specifies configuration for Snowflake nodes in AWS Glue Studio.
 

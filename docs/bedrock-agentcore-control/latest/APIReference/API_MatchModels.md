@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MatchModels
-<a name="API_MatchModels"></a>
 
 A condition that matches inference requests based on the requested model.
 

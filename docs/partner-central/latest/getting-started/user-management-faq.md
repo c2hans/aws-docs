@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/u
 ---
 
 # User Management FAQs
-<a name="user-management-faq"></a>
 
 ## Who in my organization is the IAM Administrator, and how do I contact them?
 <a name="iam-administrator-contact"></a>

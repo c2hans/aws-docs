@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFrontDistributionOriginGroupFailover
-<a name="API_AwsCloudFrontDistributionOriginGroupFailover"></a>
 
 Provides information about when an origin group fails over.
 

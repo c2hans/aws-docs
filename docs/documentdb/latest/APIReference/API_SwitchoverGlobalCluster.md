@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Switc
 ---
 
 # SwitchoverGlobalCluster
-<a name="API_SwitchoverGlobalCluster"></a>
 
 Switches over the specified secondary Amazon DocumentDB cluster to be the new primary Amazon DocumentDB cluster in the global database cluster.
 

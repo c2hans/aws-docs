@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-configure-v
 ---
 
 # Connect to data sources or notification channels in Amazon VPC from Amazon Managed Grafana
-<a name="AMG-configure-vpc"></a>
 
 By default, traffic from your Amazon Managed Grafana workspace to data sources or notification channels flows via the public Internet. This limits the connectivity from your Amazon Managed Grafana workspace to services that are publicly accessible.
 

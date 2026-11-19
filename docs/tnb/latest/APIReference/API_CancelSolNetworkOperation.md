@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_CancelSolNet
 ---
 
 # CancelSolNetworkOperation
-<a name="API_CancelSolNetworkOperation"></a>
 
 Cancels a network operation.
 

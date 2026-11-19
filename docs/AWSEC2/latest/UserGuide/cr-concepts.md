@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-concepts.html
 ---
 
 # Concepts for Amazon EC2 Capacity Reservations
-<a name="cr-concepts"></a>
 
 The following key concepts apply to Capacity Reservations.
 

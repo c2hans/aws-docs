@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # PutTaxInheritance
-<a name="API_taxSettings_PutTaxInheritance"></a>
 
 The updated tax inheritance status.
 

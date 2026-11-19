@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessToolConfiguration
-<a name="API_HarnessToolConfiguration"></a>
 
 Configuration union for different tool types.
 

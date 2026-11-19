@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Oracle Database to Amazon Redshift using AWS DMS and AWS SCT
-<a name="migrate-an-oracle-database-to-amazon-redshift-using-aws-dms-and-aws-sct"></a>
 
 *Piyush Goyal and Brian motzer, Amazon Web Services*
 

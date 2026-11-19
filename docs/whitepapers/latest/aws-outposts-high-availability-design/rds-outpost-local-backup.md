@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Amazon RDS on AWS Outposts local backup
-<a name="rds-outpost-local-backup"></a>
 
 [Amazon RDS local backups on AWS Outposts](https://aws.amazon.com/about-aws/whats-new/2021/11/amazon-rds-backups-aws-outposts/) enable you to recover an RDS DB instance directly from S3 stored locally on your Outposts. This allows you to meet data residency requirements and reduces latency compared to recovering from an AWS Region. With Amazon RDS on AWS Outposts, you have the following restore options:
 + From a manual DB snapshot stored in the parent Region or locally on your Outposts.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Choosing models for generative AI applications
-<a name="dev-experimenting-model-selection"></a>
 
 Every generative AI PoC begins with a fundamental question: which model should I use? This isn't about finding the best model in absolute terms, but rather identifying the right starting point for your specific use case and constraints. The model you choose becomes the engine that powers all subsequent experimentation. This decision is foundational to development velocity and cost efficiency.
 

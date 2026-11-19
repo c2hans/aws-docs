@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Sce
 ---
 
 # Manage your IAM account using an AWS SDK
-<a name="iam_example_iam_Scenario_AccountManagement_section"></a>
 
 The following code example shows how to:
 + Get and update the account alias.

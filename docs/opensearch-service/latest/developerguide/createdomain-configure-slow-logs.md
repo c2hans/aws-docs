@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Monitoring OpenSearch logs with Amazon CloudWatch Logs
-<a name="createdomain-configure-slow-logs"></a>
 
 Amazon OpenSearch Service exposes the following OpenSearch logs through Amazon CloudWatch Logs:
 + Error logs

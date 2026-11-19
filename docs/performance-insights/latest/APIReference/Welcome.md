@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon RDS Performance Insights enables you to monitor and explore different dimensions of database load based on data captured from a running DB instance. The guide provides detailed information about Performance Insights data types, parameters and errors.
 
@@ -15,4 +14,4 @@ DB load is measured as average active sessions. Performance Insights provides th
 + To learn more about Performance Insights and Amazon DocumentDB clusters, go to the * [ Amazon DocumentDB Developer Guide](https://docs.aws.amazon.com/documentdb/latest/developerguide/performance-insights.html) *.
 + To learn more about Database Insights and Amazon Aurora DSQL clusters, see the [Amazon Aurora DSQL User Guide](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/dsql-db-insights.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

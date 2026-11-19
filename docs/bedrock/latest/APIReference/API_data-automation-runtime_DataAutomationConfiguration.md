@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # DataAutomationConfiguration
-<a name="API_data-automation-runtime_DataAutomationConfiguration"></a>
 
 Details about a data automation project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-au
 ---
 
 # How to use authentication helpers
-<a name="how-to-auth-helper"></a>
 
 This section provides additional information about authentication helpers.
 

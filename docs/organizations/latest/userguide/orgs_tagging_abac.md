@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tagg
 ---
 
 # Attribute-based access control with tags for AWS Organizations
-<a name="orgs_tagging_abac"></a>
 
 *[Attribute-based access control](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html)* let you use administrator-managed attributes such as [tags](https://docs.aws.amazon.com/ARG/latest/userguide/tag-editor.html) attached to both AWS resources and AWS identities to control access to those resources. For example, you can specify that a user can access a resource when both the user and the resource have the same value for a certain tag.
 

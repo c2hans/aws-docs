@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decisi
 ---
 
 # Decision
-<a name="API_Decision"></a>
 
 Specifies a decision made by the decider. A decision can be one of these types:
 +  `CancelTimer` – Cancels a previously started timer and records a `TimerCanceled` event in the history.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-create-
 ---
 
 # Using a template to create a Savings Plans budget
-<a name="sp-create-savingsplans-budget-template"></a>
 
 Use the following procedure to create a coverage budget for your Savings Plans using a template.
 

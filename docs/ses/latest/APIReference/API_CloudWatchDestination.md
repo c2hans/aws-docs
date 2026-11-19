@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CloudWatchDe
 ---
 
 # CloudWatchDestination
-<a name="API_CloudWatchDestination"></a>
 
 Contains information associated with an Amazon CloudWatch event destination to which email sending events are published.
 

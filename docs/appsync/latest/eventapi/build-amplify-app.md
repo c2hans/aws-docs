@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/build-amplify-ap
 ---
 
 # Getting started with the Amplify Events client
-<a name="build-amplify-app"></a>
 
 You can connect to your AWS AppSync Event API using any HTTP and WebSocket client, and you can also use the Amplify client for JavaScript. This getting started tutorial guides you through connecting to an Event API from a JavaScript React application.
 

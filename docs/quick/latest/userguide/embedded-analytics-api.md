@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-analytic
 ---
 
 # Embedding with the AWS Quick Sight APIs
-<a name="embedded-analytics-api"></a>
 
 |  |
 | --- |

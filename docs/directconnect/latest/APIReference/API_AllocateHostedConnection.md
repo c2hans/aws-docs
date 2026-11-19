@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Al
 ---
 
 # AllocateHostedConnection
-<a name="API_AllocateHostedConnection"></a>
 
 Creates a hosted connection on the specified interconnect or a link aggregation group (LAG) of interconnects.
 

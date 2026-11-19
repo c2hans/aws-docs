@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # InstanceLimits
-<a name="API_InstanceLimits"></a>
 
 Instance-related attributes that are available for a given instance type.
 

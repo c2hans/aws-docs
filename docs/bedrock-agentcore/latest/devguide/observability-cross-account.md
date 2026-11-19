@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observ
 ---
 
 # Monitor AgentCore resources across accounts
-<a name="observability-cross-account"></a>
 
 You can use Amazon CloudWatch cross-account observability to monitor Amazon Bedrock AgentCore resources across multiple AWS accounts from a single monitoring account. This enables you to view agent metrics, traces, sessions, and resource data from source accounts without switching between accounts.
 

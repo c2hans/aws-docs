@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen
 ---
 
 # Qwen3 Coder 480B A35B Instruct
-<a name="model-card-qwen-qwen3-coder-480b-a35b-instruct"></a>
 
 ## ![Qwen logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/qwen.png) Qwen — Qwen3 Coder 480B A35B Instruct
 <a name="model-card-qwen-qwen3-coder-480b-a35b-instruct-header"></a>

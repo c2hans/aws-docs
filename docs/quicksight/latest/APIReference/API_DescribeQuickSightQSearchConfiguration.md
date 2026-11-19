@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeQuickSightQSearchConfiguration
-<a name="API_DescribeQuickSightQSearchConfiguration"></a>
 
 Describes the state of a Quick Sight Q Search configuration.
 

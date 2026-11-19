@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/sso-setup.html
 ---
 
 # Setting up AWS IAM Identity Center (IAM Identity Center)
-<a name="sso-setup"></a>
 
 Using AWS IAM Identity Center (IAM Identity Center), your users can sign in to DataBrew with a simple URL, without signing in to the AWS Management Console and without needing an AWS account.
 

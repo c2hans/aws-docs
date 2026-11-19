@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Expenditure and usage awareness
-<a name="expenditure-and-usage-awareness"></a>
 
 |  EUCCOST02: How do you monitor cost and utilization of your EUC services?  |
 | --- |

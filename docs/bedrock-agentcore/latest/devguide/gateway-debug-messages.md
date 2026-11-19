@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Turn on debugging messages
-<a name="gateway-debug-messages"></a>
 
 While your gateway is in development, you can turn on debugging messages to return details on target configuration issues, including lambda function errors, egress authorizer errors, target specification parameter validation errors. After turning on debugging messages, if an issue occurs when you invoke your gateway, the response will return messages to help you debug.
 

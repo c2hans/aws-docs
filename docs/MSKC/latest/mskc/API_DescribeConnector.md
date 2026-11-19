@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_DescribeConnector.h
 ---
 
 # DescribeConnector
-<a name="API_DescribeConnector"></a>
 
 Returns summary information about the connector.
 

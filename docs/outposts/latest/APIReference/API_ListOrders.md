@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListOrd
 ---
 
 # ListOrders
-<a name="API_ListOrders"></a>
 
 Lists the Outpost orders for your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Insi
 ---
 
 # InsightFeedback
-<a name="API_InsightFeedback"></a>
 
  Information about insight feedback received from a customer.
 

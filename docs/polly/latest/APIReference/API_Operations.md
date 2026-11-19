@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_Operations
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [DeleteLexicon](API_DeleteLexicon.md)

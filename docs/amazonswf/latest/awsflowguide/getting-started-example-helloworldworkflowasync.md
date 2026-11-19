@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/getting-st
 ---
 
 # HelloWorldWorkflowAsync Application
-<a name="getting-started-example-helloworldworkflowasync"></a>
 
 Sometimes, it's preferable to have a workflow perform certain tasks locally instead of using an activity. However, workflow tasks often involve processing the values represented by `Promise<T>` objects. If you pass a `Promise<T>` object to a synchronous workflow method, the method executes immediately but it can't access the `Promise<T>` object's value until the object is ready. You could poll `Promise<T>.isReady` until it returns `true`, but that's inefficient and the method might block for a long time. A better approach is to use an *asynchronous method*.
 

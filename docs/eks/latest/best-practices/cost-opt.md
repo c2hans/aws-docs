@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/cost-opt.html
 ---
 
 # Best Practices for Cost Optimization
-<a name="cost-opt"></a>
 
 Cost Optimization is achieving your business outcomes at the lowest price point. By following the documentation in this guide you will optimize your Amazon EKS workloads.
 

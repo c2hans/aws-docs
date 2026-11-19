@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetFi
 ---
 
 # GetFieldLevelEncryptionProfileConfig
-<a name="API_GetFieldLevelEncryptionProfileConfig"></a>
 
 Get the field-level encryption profile configuration information.
 

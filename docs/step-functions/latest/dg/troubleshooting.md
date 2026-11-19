@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/troubleshooting
 ---
 
 # Troubleshooting issues in Step Functions
-<a name="troubleshooting"></a>
 
 If you encounter difficulties when working with Step Functions, use the following troubleshooting resources.
 

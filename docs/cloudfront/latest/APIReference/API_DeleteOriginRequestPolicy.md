@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteOriginRequestPolicy
-<a name="API_DeleteOriginRequestPolicy"></a>
 
 Deletes an origin request policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-sce
 ---
 
 # Access for an IAM user in another AWS account that you own
-<a name="id_roles_common-scenarios_aws-accounts"></a>
 
 You can grant your IAM users permission to switch to roles within your AWS account or to roles defined in other AWS accounts that you own.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Te
 ---
 
 # TextContentDoc
-<a name="API_agent_TextContentDoc"></a>
 
 Contains information about content defined inline in text.
 

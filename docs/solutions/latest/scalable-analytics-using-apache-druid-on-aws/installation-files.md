@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Installation files
-<a name="installation-files"></a>
 
 The guidance sets up an S3 bucket for storing the installation files required by the guidance.
 

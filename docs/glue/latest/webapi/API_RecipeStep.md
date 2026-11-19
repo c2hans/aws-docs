@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RecipeStep.html
 ---
 
 # RecipeStep
-<a name="API_RecipeStep"></a>
 
 A recipe step used in a AWS Glue Studio data preparation recipe node.
 

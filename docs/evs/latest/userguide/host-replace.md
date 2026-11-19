@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/host-replace.html
 ---
 
 # Replace a failed host (Self-deployed)
-<a name="host-replace"></a>
 
 Replace a host in a Self-deployed environment when it fails, or before an EC2 `system-maintenance` or `instance-retirement` event occurs. You add a new host with the Amazon Elastic VMware Service console or the AWS CLI. You then move the cluster workloads to it with VMware Cloud Foundation (VCF) 9.x tools and delete the old host. For when to replace a host, see [Host maintenance and retirement events](evs-host-maintenance.md). For EVS-deployed environments (VCF 5.2.x), see [Replace a host (EVS-deployed)](host-replace-evs-deployed.md).
 

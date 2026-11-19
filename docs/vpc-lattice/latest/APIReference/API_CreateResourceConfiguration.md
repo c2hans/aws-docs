@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Crea
 ---
 
 # CreateResourceConfiguration
-<a name="API_CreateResourceConfiguration"></a>
 
 Creates a resource configuration. A resource configuration defines a specific resource. You can associate a resource configuration with a service network or a VPC endpoint.
 

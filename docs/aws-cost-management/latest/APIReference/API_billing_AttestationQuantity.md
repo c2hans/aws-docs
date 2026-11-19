@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AttestationQuantity
-<a name="API_billing_AttestationQuantity"></a>
 
 A quantity-based attestation value, such as a count of workloads migrated.
 

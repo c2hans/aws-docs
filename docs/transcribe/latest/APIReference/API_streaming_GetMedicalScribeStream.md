@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # GetMedicalScribeStream
-<a name="API_streaming_GetMedicalScribeStream"></a>
 
 Provides details about the specified AWS HealthScribe streaming session. To view the status of the streaming session, check the `StreamStatus` field in the response. To get the details of post-stream analytics, including its status, check the `PostStreamAnalyticsResult` field in the response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
  Each organization's cloud adoption journey is unique. To successfully complete your adoption, you must understand your organization's current state, the target state, and the transition required to achieve the target state. Knowing this will help you set goals and create work streams that will enable staff to thrive in the cloud.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/scheduled-q
 ---
 
 # Configuring lookup table destinations for scheduled queries
-<a name="scheduled-queries-lookup-table-destination"></a>
 
 Configure a lookup table as a destination to automatically refresh a lookup table with your scheduled query results. On each scheduled execution, CloudWatch Logs populates the specified lookup table with the query results, keeping the table current with your latest log data. You can then reference the table with the `lookup` command in other log queries. For more information about lookup tables, see [lookup](CWL_QuerySyntax-Lookup.md).
 

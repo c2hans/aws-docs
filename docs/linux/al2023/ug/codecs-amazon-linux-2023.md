@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/codecs-amazon-linux-2023
 ---
 
 # List of codecs available in AL2023
-<a name="codecs-amazon-linux-2023"></a>
 
 AL2023 provides a selection of multimedia codecs through its standard repositories. This page provides an overview of the codecs and their typical use cases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/Welcom
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 The * AWS User Notifications API Reference* provides descriptions, API request parameters, and the JSON response for each of the User Notifications API actions.
 
@@ -16,4 +15,4 @@ The User Notifications console can only be used in US East (Virginia). Your data
 **Note**
 For information about descriptions, API request parameters, and the JSON response for email contact related API actions, see the [AWS User Notifications Contacts API Reference Guide](https://docs.aws.amazon.com/notificationscontacts/latest/APIReference/Welcome.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

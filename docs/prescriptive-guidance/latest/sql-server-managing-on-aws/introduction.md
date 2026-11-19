@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Backup and restore options for SQL Server on Amazon EC2
-<a name="introduction"></a>
 
 *Yogi Barot and Reghardt van Rooyen, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/fullstory-reading-from-en
 ---
 
 # Reading from Fullstory entities
-<a name="fullstory-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormLanguageConfiguration
-<a name="API_EvaluationFormLanguageConfiguration"></a>
 
 Language configuration for an evaluation form.
 

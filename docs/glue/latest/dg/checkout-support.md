@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/checkout-support.html
 ---
 
 # AWS Glue support for Checkout.com
-<a name="checkout-support"></a>
 
 AWS Glue supports Checkout.com as follows:
 

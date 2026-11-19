@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/b
 ---
 
 # Nominating a customer
-<a name="bvr-nominating-customer"></a>
 
 After you are enrolled in the BVR motion, you can nominate customers. A nomination links a customer engagement to the motion and establishes the KPIs that will be tracked throughout the pit stops.
 

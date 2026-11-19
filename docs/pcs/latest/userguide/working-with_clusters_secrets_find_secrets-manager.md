@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # Use AWS Secrets Manager to find the cluster secret
-<a name="working-with_clusters_secrets_find_secrets-manager"></a>
 
 ------
 #### [ AWS Management Console ]

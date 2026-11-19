@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/how-to-set-cw-alarm.html
 ---
 
 # Set a CloudWatch alarm
-<a name="how-to-set-cw-alarm"></a>
 
 Use the [`aws-cloudwatch`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch-readme.html) package to set up Amazon CloudWatch alarms on CloudWatch metrics. You can use predefined metrics or create your own.
 

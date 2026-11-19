@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-encrypti
 ---
 
 # Encrypting EventBridge Pipes data with AWS KMS keys
-<a name="eb-encryption-pipes-cmkey"></a>
 
 You can specify that EventBridge use a customer managed key to encrypt pipe data stored at rest, rather than use an AWS owned key as is the default. You can specify a customer managed key when you create or update a pipe. For more information about key types, see [KMS key options](eb-encryption-at-rest-key-options.md).
 

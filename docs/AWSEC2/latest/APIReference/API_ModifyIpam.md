@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIpa
 ---
 
 # ModifyIpam
-<a name="API_ModifyIpam"></a>
 
 Modify the configurations of an IPAM.
 

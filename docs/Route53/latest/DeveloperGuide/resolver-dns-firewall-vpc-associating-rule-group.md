@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # Managing associations between your VPC and Resolver DNS Firewall rule group
-<a name="resolver-dns-firewall-vpc-associating-rule-group"></a>
 
 **To view a rule group's VPC associations**
 

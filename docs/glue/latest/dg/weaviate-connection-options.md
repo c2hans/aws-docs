@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/weaviate-connection-optio
 ---
 
 # Weaviate connection options
-<a name="weaviate-connection-options"></a>
 
 The following are connection options for Weaviate:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Weaviate object to read. For `objects`, append a forward slash and the collection name, as described in [Reading from Weaviate entities](weaviate-reading-from-entities.md).

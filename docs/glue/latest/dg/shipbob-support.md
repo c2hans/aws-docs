@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/shipbob-support.html
 ---
 
 # AWS Glue support for ShipBob
-<a name="shipbob-support"></a>
 
 AWS Glue supports ShipBob as follows:
 

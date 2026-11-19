@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/do-i-need-data
 ---
 
 # Do I need an AWS DataSync agent?
-<a name="do-i-need-datasync-agent"></a>
 
 To use AWS DataSync, you might need an agent. An *agent* is a virtual machine (VM) appliance that you deploy in your storage environment for data transfers.
 

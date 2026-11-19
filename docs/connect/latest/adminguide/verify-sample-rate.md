@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/verify-sample-
 ---
 
 # Humming sound in the agent's audio device: Verify the headset and browser sample rates
-<a name="verify-sample-rate"></a>
 
 This topic is for IT administrators who are experienced with investigating audio device issues.
 

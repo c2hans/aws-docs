@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ExportKeyCryptogram
-<a name="API_ExportKeyCryptogram"></a>
 
 Parameter information for key material export using asymmetric RSA wrap and unwrap key exchange method.
 

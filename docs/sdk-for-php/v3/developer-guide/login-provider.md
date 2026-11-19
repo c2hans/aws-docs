@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/login-pro
 ---
 
 # `login` provider in the SDK for PHP
-<a name="login-provider"></a>
 
 `Aws\Credentials\CredentialProvider::login` attempts to load credentials configured by a browser-based login session facilitated by tools like the AWS CLI. After authentication, AWS generates temporary credentials that work across local AWS SDKs and tools.
 

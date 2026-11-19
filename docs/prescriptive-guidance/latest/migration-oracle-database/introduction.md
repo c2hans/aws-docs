@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Migrating Oracle databases to the AWS Cloud
-<a name="introduction"></a>
 
 *Sagar Patel and Neha Sharma, Amazon Web Services*
 

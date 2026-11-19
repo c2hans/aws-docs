@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-works
 ---
 
 # WorkSpaces Android client application
-<a name="amazon-workspaces-android-client"></a>
 
 The following information will help you get started with the WorkSpaces Android client application.
 

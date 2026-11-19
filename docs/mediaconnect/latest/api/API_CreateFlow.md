@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_CreateFlow.h
 ---
 
 # CreateFlow
-<a name="API_CreateFlow"></a>
 
  Creates a new flow. The request must include one source. The request optionally can include outputs (up to 50) and entitlements (up to 50).
 

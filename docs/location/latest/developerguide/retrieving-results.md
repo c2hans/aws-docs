@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/retrievin
 ---
 
 # Retrieve job results
-<a name="retrieving-results"></a>
 
 After a job reaches **Completed** status, download the result files from your Amazon S3 output bucket. The service writes results in Apache Parquet format, preserving all original input data and adding results from the processed action.
 

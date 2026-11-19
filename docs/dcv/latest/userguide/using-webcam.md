@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-webcam.html
 ---
 
 # Using a webcam
-<a name="using-webcam"></a>
 
 With Amazon DCV, you can use a webcam connected to your local client computer in a remote application that runs in a Amazon DCV session. For each session, only one connected client can use a webcam at a time. This is especially important in environments where multiple clients connect to the same session.
 

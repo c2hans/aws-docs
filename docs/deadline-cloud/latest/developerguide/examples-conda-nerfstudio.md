@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Build a NeRF Studio conda package for Deadline Cloud
-<a name="examples-conda-nerfstudio"></a>
 
 The [nerfstudio](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/nerfstudio) rattler-build recipe on the GitHub website packages [NeRF Studio](https://docs.nerf.studio/) from the Nerfstudio website plus the following:
 + The [Splatfacto in the Wild](https://docs.nerf.studio/nerfology/methods/splatw.html) external model.

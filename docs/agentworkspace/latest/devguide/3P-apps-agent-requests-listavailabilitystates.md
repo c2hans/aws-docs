@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Get all the availability states configured for the current agent in Connect Customer agent workspace
-<a name="3P-apps-agent-requests-listavailabilitystates"></a>
 
  Get all the availability states configured for the current agent.
 

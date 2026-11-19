@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StringCo
 ---
 
 # StringCondition
-<a name="API_StringCondition"></a>
 
 A leaf node condition which can be used to specify a string condition.
 

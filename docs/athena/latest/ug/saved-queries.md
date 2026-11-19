@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/saved-queries.html
 ---
 
 # Use saved queries
-<a name="saved-queries"></a>
 
 You can use the Athena console to save, edit, run, rename, and delete the queries that you create in the query editor.
 

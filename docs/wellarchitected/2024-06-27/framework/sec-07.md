@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC 7. How do you classify your data?
-<a name="sec-07"></a>
 
 Classification provides a way to categorize data, based on criticality and sensitivity in order to help you determine appropriate protection and retention controls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC01-BP02 Implement encryption in transit
-<a name="hnsec01-bp02"></a>
 
  Encryption in transit is essential for protecting data confidentiality as traffic moves between on-premises networks and cloud environments. All sensitive data traversing untrusted networks should be encrypted using strong protocols like TLS or IPsec.
 

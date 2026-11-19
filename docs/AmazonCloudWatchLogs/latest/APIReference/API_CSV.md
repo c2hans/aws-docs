@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # CSV
-<a name="API_CSV"></a>
 
 The `CSV` processor parses comma-separated values (CSV) from the log events into columns.
 

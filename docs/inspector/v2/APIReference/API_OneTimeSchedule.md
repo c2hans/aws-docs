@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_OneTimeSch
 ---
 
 # OneTimeSchedule
-<a name="API_OneTimeSchedule"></a>
 
 A one time schedule.
 

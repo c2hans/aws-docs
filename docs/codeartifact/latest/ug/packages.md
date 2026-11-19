@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/packages.html
 ---
 
 # Working with packages in CodeArtifact
-<a name="packages"></a>
 
 The following topics show you how to perform actions on packages using the CodeArtifact CLI and API.
 

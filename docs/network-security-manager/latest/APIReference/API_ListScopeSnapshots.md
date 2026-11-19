@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListScopeSnapshots
-<a name="API_ListScopeSnapshots"></a>
 
 Lists the snapshots of the specified scope.
 

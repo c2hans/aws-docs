@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteEdgeDeploymentStage
-<a name="API_DeleteEdgeDeploymentStage"></a>
 
 Delete a stage in an edge deployment plan if (and only if) the stage is inactive.
 

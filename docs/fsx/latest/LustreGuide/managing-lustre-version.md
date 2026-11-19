@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/managing-lustre-v
 ---
 
 # Managing Lustre versions
-<a name="managing-lustre-version"></a>
 
 FSx for Lustre currently supports multiple long-lerm support (LTS) Lustre versions released by the Lustre community. Newer LTS versions provide benefits such as performance enhancements, new features, and support for the latest Linux kernel versions for your client instances. You can upgrade your file systems to newer Lustre versions within minutes using the AWS Management Console, AWS CLI, or AWS SDKs.
 

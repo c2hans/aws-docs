@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationDestinationOptions
-<a name="API_WaypointOptimizationDestinationOptions"></a>
 
 Destination related options.
 

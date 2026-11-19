@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/harness-reading-from-enti
 ---
 
 # Reading from Harness entities
-<a name="harness-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/cross-account-r
 ---
 
 # Accessing the underlying data of a shared table
-<a name="cross-account-read-data"></a>
 
 Assume that AWS account A shares a Data Catalog table with account B—for example, by granting `SELECT` with the grant option on the table to account B. For a principal in account B to be able to read the shared table's underlying data, the following conditions must be met:
 + The data lake administrator in account B must accept the share. (This isn't necessary if accounts A and B are in the same organization or if the grant was made with the Lake Formation tag-based access control method.)

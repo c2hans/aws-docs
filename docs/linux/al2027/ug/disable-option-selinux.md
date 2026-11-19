@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/disable-option-selinux.h
 ---
 
 # Option to disable SELinux for AL2027
-<a name="disable-option-selinux"></a>
 
 When you disable SELinux, SELinux policy isn't loaded or enforced and Access Vector Cache (AVC) messages aren't logged. You lose all benefits of running SELinux.
 

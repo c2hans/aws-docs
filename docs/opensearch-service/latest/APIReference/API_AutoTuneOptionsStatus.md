@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AutoTuneOptionsStatus
-<a name="API_AutoTuneOptionsStatus"></a>
 
 The Auto-Tune status for the domain.
 

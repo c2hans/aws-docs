@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharin
 ---
 
 # Creating a resource share in AWS RAM
-<a name="working-with-sharing-create"></a>
 
 To share resources that you own, create a resource share. Here's an overview of the process:
 

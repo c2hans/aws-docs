@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/getting-started.htm
 ---
 
 # Getting started with Oracle Database@AWS
-<a name="getting-started"></a>
 
 To begin using Oracle Database@AWS, you can create the following resources using the Oracle Database@AWS console, CLI, or APIs:
 

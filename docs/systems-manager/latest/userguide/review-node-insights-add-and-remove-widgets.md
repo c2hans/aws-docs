@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/review-
 ---
 
 # Adding or removing widgets from the **Review node insights** page
-<a name="review-node-insights-add-and-remove-widgets"></a>
 
 You can customize the layout in the Systems Manager **Review node insights** page by adding and removing widgets.
 

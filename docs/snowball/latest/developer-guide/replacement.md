@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/replacem
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Replacing a node in a cluster
-<a name="replacement"></a>
 
 To replace a node, you first need to order a replacement. You can order a replacement node from the console, the AWS CLI, or one of the AWS SDKs. If you're ordering a replacement node from the console, you can order replacements for any job that hasn't been canceled or completed. Then, you diassociate the unhealthy node from the cluster, connect the replacement node to your network and unlock the cluster including the replacement node, associate the replacement node with the cluster, and restart the Amazon S3 compatible storage on Snowball Edge service.
 

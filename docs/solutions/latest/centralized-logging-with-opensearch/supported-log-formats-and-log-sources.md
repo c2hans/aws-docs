@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Supported log formats and log sources
-<a name="supported-log-formats-and-log-sources"></a>
 
 The table lists the log formats supported by each log source. For more information about how to create log ingestion for each log format, refer to [Log Config](log-config.md).
 

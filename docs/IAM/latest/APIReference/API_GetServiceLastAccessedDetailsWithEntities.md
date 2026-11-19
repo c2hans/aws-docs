@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetServiceLa
 ---
 
 # GetServiceLastAccessedDetailsWithEntities
-<a name="API_GetServiceLastAccessedDetailsWithEntities"></a>
 
 After you generate a group or policy report using the `GenerateServiceLastAccessedDetails` operation, you can use the `JobId` parameter in `GetServiceLastAccessedDetailsWithEntities`. This operation retrieves the status of your report job and a list of entities that could have used group or policy permissions to access the specified service.
 +  **Group** – For a group report, this operation returns a list of users in the group that could have used the group’s policies in an attempt to access the service.

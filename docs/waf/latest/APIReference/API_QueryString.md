@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_QueryString.
 ---
 
 # QueryString
-<a name="API_QueryString"></a>
 
 Inspect the query string of the web request. This is the part of a URL that appears after a `?` character, if any.
 

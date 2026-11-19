@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deploy-to-done/overview
 ---
 
 # Overview
-<a name="overview"></a>
 
 **Who should read this journey:** Full-Stack Leads, Technical Founders/CTOs, .NET/Java Application Owners, Backend Engineers in organizations where application delivery outpaces operational capacity.
 

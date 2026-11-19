@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Ev
 ---
 
 # Event
-<a name="API_Event"></a>
 
 Contains information about an event that was returned by a lookup request. The result includes a representation of a CloudTrail event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListCon
 ---
 
 # ListConfigurationPolicyAssociations
-<a name="API_ListConfigurationPolicyAssociations"></a>
 
  Provides information about the associations for your configuration policies and self-managed behavior. Only the AWS Security Hub CSPM delegated administrator can invoke this operation from the home Region.
 

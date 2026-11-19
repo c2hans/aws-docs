@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-event-
 ---
 
 # Event lifecycle
-<a name="sonic-event-lifecycle"></a>
 
 The following diagram illustrates the complete bi-directional streaming event lifecycle:
 

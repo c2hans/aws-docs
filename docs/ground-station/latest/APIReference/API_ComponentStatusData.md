@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # ComponentStatusData
-<a name="API_ComponentStatusData"></a>
 
 Data on the status of agent components.
 

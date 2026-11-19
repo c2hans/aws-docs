@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_GetDelegated
 ---
 
 # GetDelegatedAccessToken
-<a name="API_GetDelegatedAccessToken"></a>
 
 Exchanges a trade-in token for temporary AWS credentials with the permissions associated with the assumed principal. This operation allows you to obtain credentials for a specific principal based on a trade-in token, enabling delegation of access to AWS resources.
 

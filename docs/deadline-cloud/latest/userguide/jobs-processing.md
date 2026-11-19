@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/jobs-pro
 ---
 
 # Processing Deadline Cloud jobs
-<a name="jobs-processing"></a>
 
 When a job enters a queue, Deadline Cloud schedules it on one or more fleets associated with the queue. Deadline Cloud chooses the fleet based on the capabilities configured for the fleet and the host requirements of the step. If a job has a requirement that no associated fleet can meet, Deadline Cloud sets the job's status to `NOT_COMPATIBLE` and cancels the remaining steps.
 

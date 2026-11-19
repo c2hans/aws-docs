@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Re
 ---
 
 # ResourceConfig
-<a name="API_ResourceConfig"></a>
 
 Information about the EC2 resources that are used to train the model.
 

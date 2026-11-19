@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteAu
 ---
 
 # DeleteAutomatedReasoningPolicy
-<a name="API_DeleteAutomatedReasoningPolicy"></a>
 
 Deletes an Automated Reasoning policy or policy version. This operation is idempotent. If you delete a policy more than once, each call succeeds. Deleting a policy removes it permanently and cannot be undone.
 

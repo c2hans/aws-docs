@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/OPERATO
 ---
 
 # Mathematical operator symbols
-<a name="OPERATOR_SYMBOLS"></a>
 
  The following table lists the supported mathematical operators.
 

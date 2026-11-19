@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-inst
 ---
 
 # Hibernate an Amazon EC2 instance
-<a name="hibernating-instances"></a>
 
 You can initiate hibernation on an On-Demand Instance or Spot Instance if the instance is an EBS-backed instance, is [enabled for hibernation](enabling-hibernation.md), and meets the [hibernation prerequisites](hibernating-prerequisites.md). If an instance cannot hibernate successfully, a normal shutdown occurs.
 

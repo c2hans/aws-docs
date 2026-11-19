@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SalesforceS
 ---
 
 # SalesforceSourceProperties
-<a name="API_SalesforceSourceProperties"></a>
 
  The properties that are applied when Salesforce is being used as a source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SlotStart
 ---
 
 # SlotStartTimeRangeRequest
-<a name="API_SlotStartTimeRangeRequest"></a>
 
 Describes the time period for a Scheduled Instance to start its first schedule.
 

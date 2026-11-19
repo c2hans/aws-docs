@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_OcsfIpF
 ---
 
 # OcsfIpFilter
-<a name="API_OcsfIpFilter"></a>
 
 The structure for filtering findings based on IP address attributes.
 

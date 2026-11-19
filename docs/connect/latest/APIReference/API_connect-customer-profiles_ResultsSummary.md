@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ResultsSummary
-<a name="API_connect-customer-profiles_ResultsSummary"></a>
 
 The summary of results for an upload job, including the number of updated, created, and failed records.
 

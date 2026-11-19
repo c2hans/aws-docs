@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Cross-cluster search
-<a name="application-cross-cluster-search"></a>
 
 Using [Cross-cluster search](cross-cluster-search.md) in Amazon OpenSearch Serverless, you can perform queries and aggregations across multiple connected domains.
 

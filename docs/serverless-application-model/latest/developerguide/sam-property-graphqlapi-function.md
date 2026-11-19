@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Function
-<a name="sam-property-graphqlapi-function"></a>
 
 Configure functions in GraphQL APIs to perform certain operations.
 

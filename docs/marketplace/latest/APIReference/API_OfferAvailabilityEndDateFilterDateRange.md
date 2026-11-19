@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferAvailabilityEndDateFilterDateRange
-<a name="API_OfferAvailabilityEndDateFilterDateRange"></a>
 
 Allows filtering on the `AvailabilityEndDate` of an offer with date range as input.
 

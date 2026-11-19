@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspacesPool
 ---
 
 # WorkspacesPool
-<a name="API_WorkspacesPool"></a>
 
 Describes a pool of WorkSpaces.
 

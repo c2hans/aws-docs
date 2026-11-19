@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-cloudera-hiv
 ---
 
 # Amazon Athena Cloudera Hive connector
-<a name="connectors-cloudera-hive"></a>
 
 The Amazon Athena connector for Cloudera Hive enables Athena to run SQL queries on the [Cloudera Hive](https://www.cloudera.com/products/open-source/apache-hadoop/apache-hive.html) Hadoop distribution. The connector transforms your Athena SQL queries to their equivalent HiveQL syntax.
 

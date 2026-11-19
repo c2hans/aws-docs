@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTransitGatewayVpcAttachments
-<a name="API_DescribeTransitGatewayVpcAttachments"></a>
 
 Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
 

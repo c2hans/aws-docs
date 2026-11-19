@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # ModifyTrustStore
-<a name="API_ModifyTrustStore"></a>
 
 Update the ca certificate bundle for the specified trust store.
 

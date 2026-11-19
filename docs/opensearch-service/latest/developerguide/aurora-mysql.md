@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Aurora MySQL
-<a name="aurora-mysql"></a>
 
 Complete the following steps to configure an OpenSearch Ingestion pipeline with Amazon Aurora for Aurora MySQL.
 

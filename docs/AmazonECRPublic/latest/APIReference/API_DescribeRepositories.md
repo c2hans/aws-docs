@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # DescribeRepositories
-<a name="API_DescribeRepositories"></a>
 
 Describes repositories that are in a public registry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/behavior-versions
 ---
 
 # Using behavior versions in the AWS SDK for Rust
-<a name="behavior-versions"></a>
 
 AWS SDK for Rust developers expect and rely upon the robust and predictable behavior the language and its major libraries offer. To help developers using the SDK for Rust get the expected behavior, client configurations are required to include a `BehaviorVersion`. The `BehaviorVersion` specifies the version of the SDK whose defaults are expected. This lets the SDK evolve over time, changing best practices to match new standards and support new features without unexpected adverse impact on your application's behavior.
 

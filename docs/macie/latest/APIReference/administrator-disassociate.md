@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/administrator-
 ---
 
 # Administrator Disassociation
-<a name="administrator-disassociate"></a>
 
 The Administrator Disassociation resource provides access to the association between your Amazon Macie account and its Macie administrator account. If you joined an organization by accepting a Macie membership invitation, you can use this resource to disassociate your Macie account from its current Macie administrator account. For more information, see [Managing your membership in an organization](https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-invitations-membership-manage.html) in the *Amazon Macie User Guide*.
 

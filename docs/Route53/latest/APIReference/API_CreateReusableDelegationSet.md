@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateRe
 ---
 
 # CreateReusableDelegationSet
-<a name="API_CreateReusableDelegationSet"></a>
 
 Creates a delegation set (a group of four name servers) that can be reused by multiple hosted zones that were created by the same AWS account.
 

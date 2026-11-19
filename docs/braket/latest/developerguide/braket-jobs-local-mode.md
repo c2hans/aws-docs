@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs
 ---
 
 # Create and debug a hybrid job with local mode
-<a name="braket-jobs-local-mode"></a>
 
 When you are building a new hybrid algorithm, local mode helps you to debug and test your algorithm script. Local mode is a feature that allows you to run code you plan to use in Amazon Braket Hybrid Jobs, but without needing Braket to manage the infrastructure for running the hybrid job. Instead, run hybrid jobs locally on your Amazon Braket Notebook instance or on a preferred client, such as a laptop or desktop computer.
 

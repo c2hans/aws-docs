@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityB
 ---
 
 # CapacityBlockExtension
-<a name="API_CapacityBlockExtension"></a>
 
 Describes a Capacity Block extension. With an extension, you can extend the duration of time for an existing Capacity Block.
 

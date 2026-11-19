@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-choose-re
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Adding and configuring resource protections with Shield Advanced
-<a name="ddos-choose-resources"></a>
 
 This page provides instructions for adding and configuring protections for your resources.
 

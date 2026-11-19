@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationConversionServerPolicy
-<a name="security-iam-awsmanpol-AWSApplicationMigrationConversionServerPolicy"></a>
 
 This policy is attached to the AWS Transform MGN conversion server’s instance role.
 

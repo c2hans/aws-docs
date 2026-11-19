@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/view-querie
 ---
 
 # Viewing recent queries
-<a name="view-queries-console"></a>
 
 You can view the queries that ran in the last 90 days on the **Analysis** tab.
 

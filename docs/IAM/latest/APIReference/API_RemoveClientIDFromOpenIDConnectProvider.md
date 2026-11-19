@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_RemoveClient
 ---
 
 # RemoveClientIDFromOpenIDConnectProvider
-<a name="API_RemoveClientIDFromOpenIDConnectProvider"></a>
 
 Removes the specified client ID (also known as audience) from the list of client IDs registered for the specified IAM OpenID Connect (OIDC) provider resource object.
 

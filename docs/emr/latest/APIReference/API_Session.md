@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_Session.html
 ---
 
 # Session
-<a name="API_Session"></a>
 
 Detailed information about a Spark Connect session.
 

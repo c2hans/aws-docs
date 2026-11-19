@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualRouterListener
-<a name="API_VirtualRouterListener"></a>
 
 An object that represents a virtual router listener.
 

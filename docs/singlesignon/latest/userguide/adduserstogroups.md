@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/addusersto
 ---
 
 # Add users to groups
-<a name="adduserstogroups"></a>
 
 Use the following procedure to add users as members of a group that you previously created in your Identity Center directory. Alternatively, you can call the AWS API operation [CreateGroupMembership](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateGroupMembership.html) to add a user as a member of a group.
 

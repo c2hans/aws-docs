@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase1DHG
 ---
 
 # Phase1DHGroupNumbersRequestListValue
-<a name="API_Phase1DHGroupNumbersRequestListValue"></a>
 
 Specifies a Diffie-Hellman group number for the VPN tunnel for phase 1 IKE negotiations.
 

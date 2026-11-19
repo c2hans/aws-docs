@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-uefi-secure-
 ---
 
 # How UEFI Secure Boot works with Amazon EC2 instances
-<a name="how-uefi-secure-boot-works"></a>
 
 UEFI Secure Boot is a feature specified in UEFI, which provides verification about the state of the boot chain. It is designed to ensure that only cryptographically verified UEFI binaries are executed after the self-initialization of the firmware. These binaries include UEFI drivers and the main bootloader, as well as chain-loaded components.
 

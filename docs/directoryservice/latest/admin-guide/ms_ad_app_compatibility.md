@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Application compatibility for AWS Managed Microsoft AD
-<a name="ms_ad_app_compatibility"></a>
 
 AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) is compatible with multiple AWS services and third-party applications.
 

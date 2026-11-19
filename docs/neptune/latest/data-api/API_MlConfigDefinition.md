@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_MlConfigDefi
 ---
 
 # MlConfigDefinition
-<a name="API_MlConfigDefinition"></a>
 
 Contains a Neptune ML configuration.
 

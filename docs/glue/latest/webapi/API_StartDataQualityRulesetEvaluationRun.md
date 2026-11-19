@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartDataQualityR
 ---
 
 # StartDataQualityRulesetEvaluationRun
-<a name="API_StartDataQualityRulesetEvaluationRun"></a>
 
 Once you have a ruleset definition (either recommended or your own), you call this operation to evaluate the ruleset against a data source (AWS Glue table). The evaluation computes results which you can retrieve with the `GetDataQualityResult` API.
 

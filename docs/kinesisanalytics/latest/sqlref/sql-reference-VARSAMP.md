@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # VAR\_SAMP
-<a name="sql-reference-VARSAMP"></a>
 
 Returns the sample variance of a non-null set of numbers (nulls being ignored).
 

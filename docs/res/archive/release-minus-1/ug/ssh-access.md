@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/ssh-acces
 ---
 
 # SSH access
-<a name="ssh-access"></a>
 
 To use SSH to access the bastion host:
 

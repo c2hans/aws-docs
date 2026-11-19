@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ex
 ---
 
 # ExportAssetsToS3ResponseDetails
-<a name="API_ExportAssetsToS3ResponseDetails"></a>
 
 Details about the export to Amazon S3 response.
 

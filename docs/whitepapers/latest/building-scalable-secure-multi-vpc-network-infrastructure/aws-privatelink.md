@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # AWS PrivateLink
-<a name="aws-privatelink"></a>
 
 [AWS PrivateLink](https://aws.amazon.com/privatelink/) provides private connectivity between VPCs, AWS services, and your on-premises networks without exposing your traffic to the public internet. Interface VPC endpoints, powered by AWS PrivateLink, make it easy to connect to AWS and other services across diﬀerent accounts and VPCs to signiﬁcantly simplify your network architecture. This allows customers who may want to privately expose a service/application residing in one VPC (service provider) to other VPCs (consumer) within an AWS Region in a way that only consumer VPCs initiate connections to the service provider VPC. An example of this is the ability for your private applications to access service provider APIs.
 

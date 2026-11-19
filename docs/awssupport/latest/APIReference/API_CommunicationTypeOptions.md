@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Commu
 ---
 
 # CommunicationTypeOptions
-<a name="API_CommunicationTypeOptions"></a>
 
 A JSON-formatted object that contains the CommunicationTypeOptions for creating a case for a certain communication channel. It is contained in the response from a [DescribeCreateCaseOptions](API_DescribeCreateCaseOptions.md) request. **CommunicationTypeOptions** contains the following fields:
 +  **datesWithoutSupport** - A JSON-formatted list containing date and time ranges for periods without support in UTC time. Date and time format is RFC 3339 : 'yyyy-MM-dd'T'HH:mm:ss.SSSZZ'.

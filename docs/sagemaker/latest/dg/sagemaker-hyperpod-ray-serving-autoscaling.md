@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Autoscaling serving capacity
-<a name="sagemaker-hyperpod-ray-serving-autoscaling"></a>
 
 Serving capacity scales at two levels on HyperPod. Ray Serve scales replicas inside the cluster to match request load, and managed Karpenter scales cluster nodes to hold those replicas. The two work together: replica autoscaling reacts first, and node autoscaling adds capacity when the existing nodes run out.
 

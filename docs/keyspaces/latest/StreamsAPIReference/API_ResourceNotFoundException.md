@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # ResourceNotFoundException
-<a name="API_ResourceNotFoundException"></a>
 
 The requested resource doesn't exist or could not be found.
 

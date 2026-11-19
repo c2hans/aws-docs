@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Step 1: Launch the hub stack
-<a name="launch-the-stack-hub-template"></a>
 
 This automated AWS CloudFormation template deploys Cost Optimizer for Amazon WorkSpaces on the AWS Cloud.
 

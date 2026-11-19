@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/shari
 ---
 
 # Business workflow
-<a name="sharing_manufacturing_plans"></a>
 
 Supply Planning provides the following workflow to manage your manufacturing plans.
 

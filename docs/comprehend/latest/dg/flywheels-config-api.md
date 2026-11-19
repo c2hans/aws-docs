@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-config-ap
 ---
 
 # Configuring flywheels using the API
-<a name="flywheels-config-api"></a>
 
 You can use the Amazon Comprehend API to create, update, and delete flywheels.
 

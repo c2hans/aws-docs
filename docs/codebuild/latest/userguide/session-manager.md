@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/session-manag
 ---
 
 # Debug builds with Session Manager
-<a name="session-manager"></a>
 
 In AWS CodeBuild, you can pause a running build and then use AWS Systems Manager Session Manager to connect to the build container and view the state of the container.
 

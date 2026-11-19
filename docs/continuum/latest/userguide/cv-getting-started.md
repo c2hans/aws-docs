@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/cv-getting-st
 ---
 
 # Getting started with code vulnerabilities
-<a name="cv-getting-started"></a>
 
 AWS Continuum scans your code sources for security vulnerabilities.
 

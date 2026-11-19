@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Unagg
 ---
 
 # UnaggregatedField
-<a name="API_UnaggregatedField"></a>
 
 The unaggregated field for a table.
 

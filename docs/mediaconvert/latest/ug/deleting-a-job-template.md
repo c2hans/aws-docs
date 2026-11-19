@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/deleting-a-job-te
 ---
 
 # Deleting a template
-<a name="deleting-a-job-template"></a>
 
 You can delete any custom job template. You can't delete system job templates.
 

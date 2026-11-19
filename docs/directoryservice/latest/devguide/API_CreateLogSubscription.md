@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Cre
 ---
 
 # CreateLogSubscription
-<a name="API_CreateLogSubscription"></a>
 
 Creates a subscription to forward real-time Directory Service domain controller security logs to the specified Amazon CloudWatch log group in your AWS account.
 

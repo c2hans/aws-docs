@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ComputeSavingsPlans
-<a name="API_CostOptimizationHub_ComputeSavingsPlans"></a>
 
 The Compute Savings Plans recommendation details.
 

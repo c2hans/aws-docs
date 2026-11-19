@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetContextVersion
-<a name="API_GetContextVersion"></a>
 
 Returns the current version of the context entries of a context store. The context store must be in the `AVAILABLE` state.
 

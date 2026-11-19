@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-ope
 ---
 
 # Red Hat OpenShift architecture on AWS
-<a name="architecture"></a>
 
 At a high level, the Red Hat OpenShift infrastructure runs on AWS, and the cluster is registered on the Red Hat Portal. When you create a cluster, you provide your Red Hat account details. This generates a token that helps identify your Red Hat account. The following diagram illustrates the high-level process, regardless of the implementation method you choose:
 

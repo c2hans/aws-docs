@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Step 2. Onboarding management resources in Accelerate
-<a name="acc-get-mgmt-resource-onboard"></a>
 
 This is an overview of the process of onboarding management resources.
 

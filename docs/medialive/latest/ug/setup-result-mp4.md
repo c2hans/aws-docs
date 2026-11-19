@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-result-mp4.htm
 ---
 
 # Result of this procedure
-<a name="setup-result-mp4"></a>
 
 As a result of this setup, a MediaLive input exists that specifies one or two *source* URLs. These sources are the URLs for the source content on the upstream server.
 

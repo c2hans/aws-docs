@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 Deploying this Guidance with the default parameters builds the following environment in the AWS Cloud.
 

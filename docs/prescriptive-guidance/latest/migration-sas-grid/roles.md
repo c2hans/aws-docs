@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Roles and responsibilities
-<a name="roles"></a>
 
 The SAS Grid migration process involves the following roles and expertise.
 

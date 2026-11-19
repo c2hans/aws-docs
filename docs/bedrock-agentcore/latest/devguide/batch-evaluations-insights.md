@@ -3,9 +3,10 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-
 ---
 
 # Insights in batch evaluation
-<a name="batch-evaluations-insights"></a>
 
-Some evaluators go beyond scoring and provide *insights*. When you include one of these evaluators in a batch evaluation, the service analyzes your agent sessions, groups related problems across sessions, and returns the groups in the `insightResults` field of the `GetBatchEvaluation` response. Each insight describes a pattern, the root causes behind it, and suggested fixes, so that you can see why your agent behaves as it does and what to change.
+Some evaluators provide insights in addition to scores. When you include one in a batch evaluation, AgentCore analyzes the selected sessions and groups related problems. `GetBatchEvaluation` returns those groups in `insightResults`. Each insight describes a pattern, its root causes, and suggested fixes.
+
+Batch insights are point-in-time results for the selected dataset. They don’t update after the batch evaluation completes. When the default Agent Insight Store is enabled and active, batch-generated insights are also available through the Agent Insights APIs. Online evaluation insights update as Insight Evaluators process new traffic. For a comparison, see [Online and batch sources](insights-how-it-works.md#insights-online-and-batch).
 
 The following evaluators provide insights. For details about each evaluator, see [Insight evaluators](insight-evaluators.md).
 
@@ -22,7 +23,7 @@ The following evaluators provide insights. For details about each evaluator, see
 
 1.  **Group:** The service groups the failures from all sessions into insights and determines the root causes of each insight.
 
-1.  **Read:** You call `GetBatchEvaluation` to get the evaluator summaries and the `insightResults`, and you find the per-session results in CloudWatch Logs.
+1.  **Read:** You call `GetBatchEvaluation` to get the evaluator summaries and point-in-time `insightResults`, and you find the per-session results in CloudWatch Logs. When the default Agent Insight Store is enabled and active, you can also use `ListAgentInsights` with `batchEvaluationId` to access the batch-generated findings through the Agent Insights APIs.
 
 For example, a batch evaluation of about 14 sessions typically finishes in about 3 minutes. Run time grows with the number of sessions and the number of failure patterns found.
 
@@ -148,7 +149,7 @@ print(f"Batch evaluation ID: {batch_eval_id}")
 
 You can also encrypt the results with a customer managed key by specifying `kmsKeyArn`. The insight results are encrypted with that key. If the key policy does not grant the service the `kms:GenerateDataKey` permission, `StartBatchEvaluation` returns a `ValidationException` and the service does not create a batch evaluation. For the key policy that you need, see [Batch evaluation encryption](batch-evaluations-encryption.md).
 
-## Read the insights
+## Read point-in-time insights
 <a name="batch-evaluations-insights-read"></a>
 
 Poll `GetBatchEvaluation` until the status is `COMPLETED`, `COMPLETED_WITH_ERRORS`, `FAILED`, or `STOPPED`. Then read `insightResults` from the response. For the full list of status values and response fields, see [Get batch evaluation results](batch-evaluations-manage.md#batch-evaluations-get).
@@ -210,6 +211,19 @@ for insight in job.get("insightResults", []):
         print(f"  Root cause: {cause['name']}")
         print(f"  Suggested fix: {cause['suggestedFix']}")
 ```
+
+### Read batch-generated insights with the Agent Insights APIs
+<a name="batch-evaluations-insights-agent-insights-api"></a>
+
+Enable the default Agent Insight Store before you run the batch evaluation. Then use `ListAgentInsights` with the batch evaluation ID to list Agent Insights generated from that evaluation:
+
+```
+aws bedrock-agentcore list-agent-insights \
+    --batch-evaluation-id <batch-evaluation-id> \
+    --region us-west-2
+```
+
+The Agent Insights APIs provide a common access model for online and batch sources. The `insightResults` returned by `GetBatchEvaluation` remain the point-in-time result of the batch job. For API fields, archiving, and Store behavior, see [Insights](insights.md).
 
 ### insightResults fields
 <a name="batch-evaluations-insights-fields"></a>

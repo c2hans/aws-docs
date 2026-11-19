@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Build monitoring dashboard
-<a name="build-monitoring-dashboard"></a>
 
 AWS recommends that you configure a custom baseline monitoring system for each critical endpoint. For information on creating and using customized metric views, refer to [CloudWatch Dashboards - Create & Use Customized Metrics Views](https://aws.amazon.com/blogs/aws/cloudwatch-dashboards-create-use-customized-metrics-views/) and [Using Amazon CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html).
 

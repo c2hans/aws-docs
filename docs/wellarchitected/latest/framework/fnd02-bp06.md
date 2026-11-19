@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP06 Define permission guardrails for your organization
-<a name="fnd02-bp06"></a>
 
  Use permission guardrails to reduce the scope of permissions that can be granted to principals. During authorization, the permission evaluation chain applies your guardrails to determine a principal's *effective permissions*. Define guardrails using a layer-based approach. Apply some broadly across your organization, and others to specific accounts or temporary sessions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writ
 ---
 
 # Palmyra X5
-<a name="model-card-writer-palmyra-x5"></a>
 
 ## ![Writer logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/writer.png) Writer — Palmyra X5
 <a name="model-card-writer-palmyra-x5-header"></a>

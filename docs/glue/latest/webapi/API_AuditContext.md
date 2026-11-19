@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AuditContext.html
 ---
 
 # AuditContext
-<a name="API_AuditContext"></a>
 
 A structure containing the Lake Formation audit context.
 

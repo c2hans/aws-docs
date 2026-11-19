@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Publi
 ---
 
 # PublishConnectionFunction
-<a name="API_PublishConnectionFunction"></a>
 
 Publishes a connection function.
 

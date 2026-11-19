@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationAccessHours
-<a name="API_WaypointOptimizationAccessHours"></a>
 
 Access hours corresponding to when a destination can be visited.
 

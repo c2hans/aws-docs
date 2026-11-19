@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/get-started-acc
 ---
 
 # Accessing graph data in Amazon Neptune
-<a name="get-started-access-graph"></a>
 
 You can interact with a Amazon Neptune DB cluster after establishing network connectivity. If you have not set up access to your cluster yet, see [Connect to a cluster](get-started-connecting.md). The following sections describe the tools and query languages you can use to load data, run queries, and manage your graph.
 

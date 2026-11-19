@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Resource-based policies within AWS End User Messaging
-<a name="nx-security-iam-service-resource-based"></a>
 
 **Supports resource-based policies: No**
 

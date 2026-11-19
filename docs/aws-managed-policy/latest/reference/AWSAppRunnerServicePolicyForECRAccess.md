@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppRunnerServicePolicyForECRAccess
-<a name="AWSAppRunnerServicePolicyForECRAccess"></a>
 
 **Description**: AWS App Runner service policy that grants read permissions to Amazon ECR resources in the customer's account. Use it in a role that is passed to App Runner when creating or updating an App Runner service.
 

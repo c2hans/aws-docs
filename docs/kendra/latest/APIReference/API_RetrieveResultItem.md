@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_RetrieveR
 ---
 
 # RetrieveResultItem
-<a name="API_RetrieveResultItem"></a>
 
 A single retrieved relevant passage result.
 

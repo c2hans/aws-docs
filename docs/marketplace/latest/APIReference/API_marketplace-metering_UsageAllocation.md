@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # UsageAllocation
-<a name="API_marketplace-metering_UsageAllocation"></a>
 
 Usage allocations allow you to split usage into buckets by tags.
 

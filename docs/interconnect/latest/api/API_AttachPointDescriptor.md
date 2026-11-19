@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_AttachPointD
 ---
 
 # AttachPointDescriptor
-<a name="API_AttachPointDescriptor"></a>
 
 Describes a possible Attach Point for a Connection.
 

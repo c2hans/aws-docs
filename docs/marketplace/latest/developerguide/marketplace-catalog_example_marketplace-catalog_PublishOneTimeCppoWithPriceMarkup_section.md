@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Publish a CPPO using one-time resale authorization and update price markup using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_PublishOneTimeCppoWithPriceMarkup_section"></a>
 
 The following code examples show how to publish a CPPO using one-time resale authorization on AMI, SaaS, or Container products and update price markup.
 

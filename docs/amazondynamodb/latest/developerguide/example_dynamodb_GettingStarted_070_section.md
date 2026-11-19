@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Getting started with NoSQL databases
-<a name="example_dynamodb_GettingStarted_070_section"></a>
 
 The following code example shows how to:
 + Create a table in DynamoDB

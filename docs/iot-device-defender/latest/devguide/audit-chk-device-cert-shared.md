@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # Device certificate shared
-<a name="audit-chk-device-cert-shared"></a>
 
 Multiple, concurrent connections use the same X.509 certificate to authenticate with AWS IoT.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Update the free trial duration of a public free trial offer for a SaaS subscription product using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_UpdateFreeTrialDurationOfPublicFreeTrialOfferForSaasProduct_section"></a>
 
 The following code examples show how to update the free trial duration of a public free trial offer for a SaaS subscription product. Use this change set on the public offer that has the free trial. A standalone free trial offer takes only the `FreeTrialPricingTerm`. `UpdatePricingTerms` replaces all pricing terms, so copy your offer's current `UsageBasedPricingTerm` from `DescribeEntity` instead of using the example rates, and grant every dimension in the free trial.
 

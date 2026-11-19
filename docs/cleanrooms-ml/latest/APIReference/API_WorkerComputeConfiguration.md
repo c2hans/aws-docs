@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Wo
 ---
 
 # WorkerComputeConfiguration
-<a name="API_WorkerComputeConfiguration"></a>
 
 Configuration information about the compute workers that perform the transform job.
 

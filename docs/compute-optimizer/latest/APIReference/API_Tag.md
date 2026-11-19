@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
  A list of tag key and value pairs that you define.
 

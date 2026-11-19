@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate the creation of Amazon WorkSpaces Applications resources using AWS CloudFormation
-<a name="automate-the-creation-of-appstream-2-0-resources-using-aws-cloudformation"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_secu
 ---
 
 # Default security controls in AWS Organizations
-<a name="orgs_security_default_controls"></a>
 
 Managing security in a multi-account environment requires consistent governance from the start. When you create an organization using the AWS Organizations console, the service automatically applies security controls to protect your organization from common risks. These controls establish an AWS-recommended security baseline from the moment you create your organization.
 

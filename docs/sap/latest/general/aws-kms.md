@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/aws-kms.html
 ---
 
 # Integrating SAP Data Custodian KMS with AWS KMS
-<a name="aws-kms"></a>
 
 SAP Data Custodian Key Management Service enables customer-managed encryption keys for data stored in SAP services. Please note that SAP Data Custodian Key Management Service is not the same as AWS Key Management Service (KMS).
 

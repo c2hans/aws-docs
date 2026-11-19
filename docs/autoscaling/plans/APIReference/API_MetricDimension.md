@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Metri
 ---
 
 # MetricDimension
-<a name="API_MetricDimension"></a>
 
 Represents a dimension for a customized metric.
 

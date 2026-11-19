@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Non-VPC Lambda not appearing
-<a name="next-gen-troubleshoot-lambda"></a>
 
 **Symptom:** Lambda function dependencies are not discovered.
 

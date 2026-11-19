@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/befo
 ---
 
 # Prerequisites
-<a name="before_you_start"></a>
 
 This tutorial assumes you already have the following:
 

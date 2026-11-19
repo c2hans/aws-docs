@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # PriceWithCurrency
-<a name="API_domains_PriceWithCurrency"></a>
 
 Currency-specific price information.
 

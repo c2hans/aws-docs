@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-statmux/latest/upgradeguide/do
 This is version 2.20 of the AWS Elemental Statmux documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Statmux and AWS Elemental Live Documentation](https://docs.aws.amazon.com/elemental-live).
 
 # Document History for Upgrade Guide
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Elemental Statmux.
 + **API version:** 2.20

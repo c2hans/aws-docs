@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteAuthor
 ---
 
 # DeleteAuthorizer
-<a name="API_DeleteAuthorizer"></a>
 
 Deletes an authorizer.
 

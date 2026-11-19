@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # Preparing your environment
-<a name="prepare"></a>
 
 Before you use CloudEndure Migration, you have to make sure that your source and target environments are prepared and configured correctly. These preparations include setting a CloudEndure account, creating AWS credentials, defining network requirements, and opening the correct ports.
 

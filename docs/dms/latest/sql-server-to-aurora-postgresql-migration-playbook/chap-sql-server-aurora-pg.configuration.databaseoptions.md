@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Configuring database options
-<a name="chap-sql-server-aurora-pg.configuration.databaseoptions"></a>
 
 This topic provides reference information about the differences in database options and features between Microsoft SQL Server 2019 and Amazon Aurora PostgreSQL. You can understand how SQL Server’s database-level options and features translate to cluster and instance-level parameters. The topic helps you grasp the architectural differences between the two database systems, particularly in terms of database configuration, security settings, and high availability options.
 

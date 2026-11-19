@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_AccountEn
 ---
 
 # AccountEntityAggregate
-<a name="API_AccountEntityAggregate"></a>
 
 The number of entities in an account that are impacted by a specific event aggregated by the entity status codes.
 

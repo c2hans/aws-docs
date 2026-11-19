@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Tra
 ---
 
 # TransformProcessingConfig
-<a name="API_TransformProcessingConfig"></a>
 
 The processing configuration for the given transform property. You can configure transforms to be kept at the edge or forwarded to the AWS Cloud. You can also configure transforms to be computed at the edge or in the cloud.
 

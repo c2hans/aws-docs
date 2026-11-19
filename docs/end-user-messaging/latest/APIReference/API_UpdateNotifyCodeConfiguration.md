@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # UpdateNotifyCodeConfiguration
-<a name="API_UpdateNotifyCodeConfiguration"></a>
 
 Updates the mutable fields of a notify code configuration. Only the fields that you supply are changed. For the template and language fields, supplying an empty value clears the currently stored value.
 

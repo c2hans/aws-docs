@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_SlurmRest.ht
 ---
 
 # SlurmRest
-<a name="API_SlurmRest"></a>
 
 The Slurm REST API configuration includes settings for enabling and configuring the Slurm REST API. It's a property of the **ClusterSlurmConfiguration** object.
 

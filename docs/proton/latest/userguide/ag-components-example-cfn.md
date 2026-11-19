@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/ag-components-ex
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # Component CloudFormation example
-<a name="ag-components-example-cfn"></a>
 
 Here is a complete example of an AWS Proton directly defined component and how you can use it in an AWS Proton service. The component provisions an Amazon Simple Storage Service (Amazon S3) bucket and related access policy. The service instance can refer to this bucket and use it. The bucket name is based on the names of the environment, service, service instance, and component, meaning that the bucket is coupled with a specific instance of the component template extending a specific service instance. Developers can create multiple components based on this component template, to provision Amazon S3 buckets for different service instances and functional needs.
 

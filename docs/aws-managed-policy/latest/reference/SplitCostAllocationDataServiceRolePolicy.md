@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Spli
 ---
 
 # SplitCostAllocationDataServiceRolePolicy
-<a name="SplitCostAllocationDataServiceRolePolicy"></a>
 
 **Description**: Allows split cost allocation data to retrieve AWS Organizations information, if applicable, and collect telemetry data for the split cost allocation data services that the customer has opted in to.
 

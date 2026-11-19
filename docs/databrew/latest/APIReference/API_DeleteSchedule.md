@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_DeleteS
 ---
 
 # DeleteSchedule
-<a name="API_DeleteSchedule"></a>
 
 Deletes the specified DataBrew schedule.
 

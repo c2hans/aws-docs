@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.DisableD
 ---
 
 # Disabling and deleting SSRS or PBIRS databases
-<a name="SSRS.DisableDelete"></a>
 
 Use the following procedures to disable SSRS or PBIRS and delete their databases:
 

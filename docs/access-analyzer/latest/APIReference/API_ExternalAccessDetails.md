@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ExternalAccessDetails
-<a name="API_ExternalAccessDetails"></a>
 
 Contains information about an external access finding.
 

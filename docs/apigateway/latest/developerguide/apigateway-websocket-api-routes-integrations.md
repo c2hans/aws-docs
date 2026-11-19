@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Invoke your backend integration with the `$default` Route and custom routes in API Gateway
-<a name="apigateway-websocket-api-routes-integrations"></a>
 
 The following section describes how to invoke your backend integration using either the `$default` route or a custom route for a WebSocket API.
 

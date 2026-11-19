@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Branch by abstraction pattern
-<a name="branch-by-abstraction"></a>
 
 The strangler fig pattern works well when you can intercept the calls at the perimeter of the monolith. However, if you want to  modernize components that exist deeper in the legacy application stack and have upstream dependencies, we recommend the branch by abstraction pattern. This pattern enables you to make changes to the existing code base to allow the modernized version to safely coexist alongside the legacy version without causing disruption.
 

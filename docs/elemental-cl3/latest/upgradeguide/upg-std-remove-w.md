@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-st
 ---
 
 # Step F: Remove worker nodes
-<a name="upg-std-remove-w"></a>
 
 Remove the worker nodes from the redundancy group, and then from the cluster. Perform these steps on for all worker nodes in the cluster.
 

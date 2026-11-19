@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-iam.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # IAM permissions for Nitro Sandboxes
-<a name="sandboxing-iam"></a>
 
 The following IAM permissions are required for specific Nitro Sandboxes features.
 

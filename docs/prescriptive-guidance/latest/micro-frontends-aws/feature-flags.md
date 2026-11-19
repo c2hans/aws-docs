@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Feature flags
-<a name="feature-flags"></a>
 
 You can implement feature flags in micro-frontends to help coordinate testing and releasing features in multiple environments. The feature flag technique centralizes decisions in a Boolean-based store and drives behavior based on those decisions. Teams often use it to propagate changes silently and keep them hidden until a specific time. This approach also unblocks releases of new features that would otherwise slow team velocity.
 

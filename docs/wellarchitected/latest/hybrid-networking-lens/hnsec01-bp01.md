@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC01-BP01 Implement network segmentation and least-privilege access control
-<a name="hnsec01-bp01"></a>
 
  Segment your hybrid network using accounts, cloud networks, and on-premises controls to isolate regulated workloads. Enforce least-privilege connectivity by restricting traffic with network access controls.
 

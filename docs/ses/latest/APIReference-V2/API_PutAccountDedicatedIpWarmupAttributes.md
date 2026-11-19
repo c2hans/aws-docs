@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccoun
 ---
 
 # PutAccountDedicatedIpWarmupAttributes
-<a name="API_PutAccountDedicatedIpWarmupAttributes"></a>
 
 Enable or disable the automatic warm-up feature for dedicated IP addresses.
 

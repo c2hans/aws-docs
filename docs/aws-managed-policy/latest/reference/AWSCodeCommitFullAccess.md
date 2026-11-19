@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeCommitFullAccess
-<a name="AWSCodeCommitFullAccess"></a>
 
 **Description**: Provides full access to AWS CodeCommit via the AWS Management Console.
 

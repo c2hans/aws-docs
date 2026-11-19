@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Que
 ---
 
 # Other aspects of working with the Query operation in DynamoDB
-<a name="Query.Other"></a>
 
 This section covers additional aspects of the DynamoDB Query operation, including limiting result size, counting scanned vs. returned items, monitoring read capacity consumption, and controlling read consistency.
 

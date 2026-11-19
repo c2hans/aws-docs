@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsGuar
 ---
 
 # AwsGuardDutyDetectorDataSourcesKubernetesDetails
-<a name="API_AwsGuardDutyDetectorDataSourcesKubernetesDetails"></a>
 
  An object that contains information on the status of Kubernetes data sources for the detector.
 

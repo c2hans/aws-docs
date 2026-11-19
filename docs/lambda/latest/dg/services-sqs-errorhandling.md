@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandl
 ---
 
 # Handling errors for an SQS event source in Lambda
-<a name="services-sqs-errorhandling"></a>
 
 To handle errors related to an SQS event source, Lambda automatically uses a retry strategy with a backoff strategy. You can also customize error handling behavior by configuring your SQS event source mapping to return [partial batch responses](#services-sqs-batchfailurereporting).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3ObjectLambdaExecutionRolePolicy
-<a name="AmazonS3ObjectLambdaExecutionRolePolicy"></a>
 
 **Description**: Provides AWS Lambda functions permissions to interact with Amazon S3 Object Lambda. Also grants Lambda permissions to write to CloudWatch Logs.
 

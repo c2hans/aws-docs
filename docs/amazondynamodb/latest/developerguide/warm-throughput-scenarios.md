@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/war
 ---
 
 # Understanding DynamoDB warm throughput in different scenarios
-<a name="warm-throughput-scenarios"></a>
 
 Here are some different scenarios you might encounter when working with DynamoDB warm throughput.
 

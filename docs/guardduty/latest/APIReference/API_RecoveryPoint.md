@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Recove
 ---
 
 # RecoveryPoint
-<a name="API_RecoveryPoint"></a>
 
 Contains information about the recovery point configuration for scanning backup data from AWS Backup.
 

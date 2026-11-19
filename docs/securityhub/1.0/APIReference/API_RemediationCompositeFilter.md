@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationCompositeFilter
-<a name="API_RemediationCompositeFilter"></a>
 
 Enables the creation of criteria for remediation targets.
 

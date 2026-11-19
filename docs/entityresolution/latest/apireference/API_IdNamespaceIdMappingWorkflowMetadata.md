@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdNamespaceIdMappingWorkflowMetadata
-<a name="API_IdNamespaceIdMappingWorkflowMetadata"></a>
 
 The settings for the ID namespace for the ID mapping workflow job.
 

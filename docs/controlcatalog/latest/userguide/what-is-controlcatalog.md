@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/userguide/what-is-
 ---
 
 # What is Control Catalog?
-<a name="what-is-controlcatalog"></a>
 
 Welcome to the Control Catalog security information guide. The Control Catalog is a part of AWS Control Tower, which lists controls for several AWS services. It is a consolidated catalog of AWS controls. You do not need to set up AWS Control Tower to use the Control Catalog.
 

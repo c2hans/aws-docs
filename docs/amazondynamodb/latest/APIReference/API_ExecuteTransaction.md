@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_E
 ---
 
 # ExecuteTransaction
-<a name="API_ExecuteTransaction"></a>
 
 This operation allows you to perform transactional reads or writes on data stored in DynamoDB, using PartiQL.
 

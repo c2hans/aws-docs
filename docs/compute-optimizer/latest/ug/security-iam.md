@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam
 ---
 
 # Identity and Access Management for AWS Compute Optimizer
-<a name="security-iam"></a>
 
 You can use AWS Identity and Access Management (IAM) to create identities (users, groups, or roles), and give those identities permissions to access the AWS Compute Optimizer console and APIs.
 

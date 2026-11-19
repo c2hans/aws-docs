@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Delete an AWS Cloud WAN core network attachment
-<a name="cloudwan-attachments-deleting"></a>
 
 You can delete any attachment from your core network. Deleted attachments can't be recovered. This section including the steps to delete an attachment using the AWS Cloud WAN console or by using the command line or API.
 

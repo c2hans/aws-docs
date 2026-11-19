@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/action-contex
 ---
 
 # AWS CodeBuild condition keys
-<a name="action-context-keys"></a>
 
 AWS CodeBuild provides a set of condition keys that you can use in IAM policies to enforce your organizational policies on CodeBuild resources such as projects and fleets. The condition keys cover most of the CodeBuild API request contexts, including network settings, credential configurations and compute restrictions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListRe
 ---
 
 # ListReports
-<a name="API_ListReports"></a>
 
  Returns a list of ARNs for the reports in the current AWS account.
 

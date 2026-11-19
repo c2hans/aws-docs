@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Progress.htm
 ---
 
 # Progress
-<a name="API_Progress"></a>
 
 Provides information about the progress of the schema conversion operation.
 

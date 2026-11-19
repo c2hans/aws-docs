@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostComparisonDriver
-<a name="API_CostComparisonDriver"></a>
 
 Represents a collection of cost drivers and their associated metrics for cost comparison analysis.
 

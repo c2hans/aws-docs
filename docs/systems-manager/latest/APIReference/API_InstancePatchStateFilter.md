@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InstancePatchStateFilter
-<a name="API_InstancePatchStateFilter"></a>
 
 Defines a filter used in [DescribeInstancePatchStatesForPatchGroup](API_DescribeInstancePatchStatesForPatchGroup.md) to scope down the information returned by the API.
 

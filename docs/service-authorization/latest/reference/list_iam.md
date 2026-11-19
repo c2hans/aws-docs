@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Identity and Access Management (IAM)
-<a name="list_iam"></a>
 
 AWS Identity and Access Management (IAM) (service prefix: `iam`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 
@@ -1224,6 +1223,20 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   GetRequestAuthorizationDetails  **
+  - **SDK client:** iam-toolbox
+  - **IAM action:**  [iam:GetRequestAuthorizationDetails](#list_iam-action-GetRequestAuthorizationDetails)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetRequestAuthorizationPolicy  **
+  - **SDK client:** iam-toolbox
+  - **IAM action:**  [iam:GetRequestAuthorizationPolicy](#list_iam-action-GetRequestAuthorizationPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 ## Actions defined by AWS Identity and Access Management (IAM)
 <a name="list_iam-actions-as-permissions"></a>
 
@@ -1740,6 +1753,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to retrieve information about a version of the specified managed policy, including the policy document
   - **Resource types (\*required):** [policy\*](#list_iam-resource-policy)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_iam-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetRequestAuthorizationDetails](https://docs.aws.amazon.com/iam-toolbox/latest/APIReference/API_GetRequestAuthorizationDetails.html)  **
+  - **Description:** Grants permission to retrieve authorization details for a specific access denied request
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
+- **   [GetRequestAuthorizationPolicy](https://docs.aws.amazon.com/iam-toolbox/latest/APIReference/API_GetRequestAuthorizationPolicy.html)  **
+  - **Description:** Grants permission to retrieve a policy evaluated for a specific access denied request
+  - **Resource types (\*required):**
+  - **Condition keys:**
   - **Access level:** Read
 
 - **   [GetRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html)  **

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Isoline
 ---
 
 # IsolineVehicleLicensePlate
-<a name="API_IsolineVehicleLicensePlate"></a>
 
 License plate information used in regions where road access or routing restrictions are based on license plate numbers.
 

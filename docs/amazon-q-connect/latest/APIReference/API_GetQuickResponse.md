@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GetQuickResponse
-<a name="API_amazon-q-connect_GetQuickResponse"></a>
 
 Retrieves the quick response.
 

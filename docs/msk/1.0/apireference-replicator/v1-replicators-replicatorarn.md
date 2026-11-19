@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference-replicator/v1-repli
 ---
 
 # V1 Replicators replicatorArn
-<a name="v1-replicators-replicatorarn"></a>
 
 ## URI
 <a name="v1-replicators-replicatorarn-url"></a>

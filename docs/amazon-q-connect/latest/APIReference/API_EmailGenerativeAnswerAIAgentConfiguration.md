@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # EmailGenerativeAnswerAIAgentConfiguration
-<a name="API_amazon-q-connect_EmailGenerativeAnswerAIAgentConfiguration"></a>
 
 Configuration settings for the EMAIL\_GENERATIVE\_ANSWER AI agent including prompts, locale, and knowledge base associations.
 

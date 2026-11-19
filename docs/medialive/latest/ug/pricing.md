@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/pricing.html
 ---
 
 # Pricing in MediaLive
-<a name="pricing"></a>
 
 As with other AWS products, there are no contracts or minimum commitments for using AWS Elemental MediaLive.
 

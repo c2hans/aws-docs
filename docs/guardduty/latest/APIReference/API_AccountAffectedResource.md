@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accoun
 ---
 
 # AccountAffectedResource
-<a name="API_AccountAffectedResource"></a>
 
 Contains the number of findings associated with a resource.
 

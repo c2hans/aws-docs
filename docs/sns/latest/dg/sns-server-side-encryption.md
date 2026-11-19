@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-server-side-encryption
 ---
 
 # Securing Amazon SNS data with server-side encryption
-<a name="sns-server-side-encryption"></a>
 
 Server-side encryption (SSE) lets you store sensitive data in encrypted topics. SSE protects the contents of messages in Amazon SNS topics using keys managed in AWS Key Management Service (AWS KMS).
 

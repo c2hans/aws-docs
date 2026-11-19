@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteUsageProfil
 ---
 
 # DeleteUsageProfile
-<a name="API_DeleteUsageProfile"></a>
 
 Deletes the AWS Glue specified usage profile.
 

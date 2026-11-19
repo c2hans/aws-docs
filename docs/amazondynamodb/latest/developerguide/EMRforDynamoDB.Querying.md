@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMR
 ---
 
 # Querying data in DynamoDB
-<a name="EMRforDynamoDB.Querying"></a>
 
 The following examples show some ways that you can use HiveQL to query data stored in DynamoDB.
 

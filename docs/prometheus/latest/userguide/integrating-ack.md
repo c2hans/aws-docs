@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/integrating-
 ---
 
 # Manage Amazon Managed Service for Prometheus with AWS Controllers for Kubernetes
-<a name="integrating-ack"></a>
 
 Amazon Managed Service for Prometheus is integrated with [AWS Controllers for Kubernetes (ACK)](https://aws-controllers-k8s.github.io/community/docs/community/overview/), with support for managing your workspace, Alert Manager, and Ruler resources in Amazon EKS. You can use AWS Controllers for Kubernetes custom resource definitions (CRDs) and native Kubernetes objects without having to define any resources outside of your cluster.
 

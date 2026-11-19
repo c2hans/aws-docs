@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Prerequisites and limitations
-<a name="prerequisites-and-limitations"></a>
 
 ## Prerequisites
 <a name="prerequisites.4df689e4-d458-5a8a-a2a5-cdb183ed309d"></a>

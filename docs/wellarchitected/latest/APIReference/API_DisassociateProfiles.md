@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # DisassociateProfiles
-<a name="API_DisassociateProfiles"></a>
 
 Disassociate a profile from a workload.
 

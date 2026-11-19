@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormValidationFindingItem
-<a name="API_EvaluationFormValidationFindingItem"></a>
 
 Information about an evaluation form item affected by a validation finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Destinati
 ---
 
 # DestinationSchema
-<a name="API_DestinationSchema"></a>
 
 Describes the data format when records are written to the destination in a SQL-based Kinesis Data Analytics application.
 

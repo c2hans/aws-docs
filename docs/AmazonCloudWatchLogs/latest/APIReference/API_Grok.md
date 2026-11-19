@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # Grok
-<a name="API_Grok"></a>
 
 This processor uses pattern matching to parse and structure unstructured data. This processor can also extract fields from log messages.
 

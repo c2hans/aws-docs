@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 Use the [Litmus test for CI/CD pipelines](litmus-test-for-cicd-pipelines.md) section to evaluate the DevOps processes in your organization. Determine whether your processes are fully CI/CD. If they aren't, decide whether they need improvement to take full advantage of the benefits of CI/CD deployments.
 

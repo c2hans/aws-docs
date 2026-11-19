@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Softwar
 ---
 
 # SoftwareScopes
-<a name="API_SoftwareScopes"></a>
 
 Defines the data boundary for a software query. Scopes determine which organizational units or organizations to retrieve data from.
 

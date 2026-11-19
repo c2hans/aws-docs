@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-RowCount.
 ---
 
 # RowCount
-<a name="dqdl-rule-types-RowCount"></a>
 
 Checks the row count of a dataset against a given expression. In the expression, you can specify the number of rows or a range of rows using operators like `>` and `<`.
 

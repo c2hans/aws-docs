@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/metrics-dimens
 ---
 
 # Amazon Keyspaces metrics and dimensions
-<a name="metrics-dimensions"></a>
 
 When you interact with Amazon Keyspaces, it sends metrics and dimensions to Amazon CloudWatch. All metrics are aggregated and reported every minute. The following sections are an overview of all available metrics for Amazon Keyspaces.
 

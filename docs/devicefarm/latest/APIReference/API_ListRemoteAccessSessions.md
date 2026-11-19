@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListR
 ---
 
 # ListRemoteAccessSessions
-<a name="API_ListRemoteAccessSessions"></a>
 
 Returns a list of all currently running remote access sessions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Use migration plan data as network input
-<a name="transform-vmware-network-plan-data"></a>
 
 Skip collecting a separate network file. If your migration plan includes observed network connections, AWS Transform can generate your network directly from that plan, so the network reflects the servers and applications you already organized for migration.
 

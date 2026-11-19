@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # WhatsAppParameters
-<a name="API_WhatsAppParameters"></a>
 
 The delivery parameters for the WhatsApp channel.
 

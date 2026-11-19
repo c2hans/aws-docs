@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTr
 ---
 
 # ListTrainingSessions
-<a name="API_ListTrainingSessions"></a>
 
 Lists training sessions in your account. You can filter results by creation time, name, and status. The operation paginates results. To retrieve additional results, use the `NextToken` parameter.
 

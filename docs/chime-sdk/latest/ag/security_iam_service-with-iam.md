@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/security_iam_service
 ---
 
 # How the Amazon Chime SDK works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to the Amazon Chime SDK, learn the IAM features available for use with the Amazon Chime SDK. To get a high-level view of how the Amazon Chime SDK and other AWS services work with IAM, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
 

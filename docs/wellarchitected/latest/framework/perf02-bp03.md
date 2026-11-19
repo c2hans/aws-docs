@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf02-
 ---
 
 # PERF02-BP03 Configure and right-size compute resources
-<a name="perf02-bp03"></a>
 
  Right-sizing matches the type and amount of compute to what the workload uses. Provision too much and you pay for idle capacity. Provision too little and performance degrades and users feel it. Because demand and instance options change, revisit right-sizing regularly to improve performance and cost.
 

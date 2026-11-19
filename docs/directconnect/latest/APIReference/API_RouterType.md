@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ro
 ---
 
 # RouterType
-<a name="API_RouterType"></a>
 
 Information about the virtual router.
 

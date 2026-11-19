@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP05 Grant least privilege access
-<a name="fnd02-bp05"></a>
 
  Grant principals only the access they need to perform specific actions on specific resources under defined conditions. Use group and attribute memberships to set permissions at scale instead of managing individual user permissions. For example, you can give a group of developers access only to resources for their project. When a developer leaves the project, their access is removed automatically without changing the underlying policies.
 

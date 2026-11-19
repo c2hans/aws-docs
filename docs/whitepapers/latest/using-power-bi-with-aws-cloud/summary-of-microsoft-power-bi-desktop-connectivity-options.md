@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Summary of Microsoft Power BI Desktop connectivity options
-<a name="summary-of-microsoft-power-bi-desktop-connectivity-options"></a>
 
 For a small number of users with light dataset requirements, running Microsoft Power BI Desktop on premises and connecting securely over the internet, or using Site-to-Site VPN, might be an adequate solution. Make sure that security is configured and maintained in this model. We also recommend testing this configuration to determine if it meets users' performance expectations
 

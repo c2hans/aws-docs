@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Da
 ---
 
 # DataSourceConfiguration
-<a name="API_agent_DataSourceConfiguration"></a>
 
 The connection configuration for the data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/best-practices.htm
 ---
 
 # Best practices for Amazon Managed Workflows for Apache Airflow
-<a name="best-practices"></a>
 
 This guide describes the best practices we recommend when using Amazon Managed Workflows for Apache Airflow.
 

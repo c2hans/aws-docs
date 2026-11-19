@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateSpotMarketOptionsRequest
-<a name="API_LaunchTemplateSpotMarketOptionsRequest"></a>
 
 The options for Spot Instances.
 

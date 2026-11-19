@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/monitor-usage-
 ---
 
 # Monitoring usage in the console
-<a name="monitor-usage-transfer-console"></a>
 
  You can get information about your server's metrics on its **Server details** page. This provides you with a single place to monitor your file-transfers workloads. You can track how many files you have exchanged with your partners and closely track their usage using a centralized dashboard. For details, see [View SFTP, FTPS, and FTP server details](configuring-servers-view-info.md). The following table describes the metrics available for Transfer Family.
 

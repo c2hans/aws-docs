@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StartFlow.ht
 ---
 
 # StartFlow
-<a name="API_StartFlow"></a>
 
  Starts a flow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Delet
 ---
 
 # DeleteResourcesByExternalId
-<a name="API_DeleteResourcesByExternalId"></a>
 
 Deletes resources linked to an external ID. This action only applies if you have configured blue/green deployments through CloudFormation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Submitting Ray jobs remotely with the toolkit library
-<a name="sagemaker-hyperpod-ray-remote-job-submission"></a>
 
 When the `toolkit-for-ray-on-sagemaker-ai` package is installed, Ray's standard Jobs CLI and Python SDK authenticate through the cluster's secured endpoint using the `sagemaker_ray://` address scheme the package registers. You submit and track jobs from a laptop, a CI/CD pipeline, or any environment with AWS credentials, with no `kubectl port-forward` and no direct network path to the cluster. The package is preinstalled in SageMaker Distribution images.
 

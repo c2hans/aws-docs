@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/vpc-endpoint-cons
 ---
 
 # Considerations for AWS Batch
-<a name="vpc-endpoint-considerations"></a>
 
 Before you set up an interface endpoint for AWS Batch, review [Interface endpoint properties and limitations](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#vpce-interface-limitations) in the *AWS PrivateLink Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for everything as code
-<a name="indicators-for-everything-as-code"></a>
 
 Adopt a code-centric approach across the development lifecycle for enhanced maintainability, scalability, and automation.
 

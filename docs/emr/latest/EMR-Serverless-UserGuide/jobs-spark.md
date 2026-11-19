@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs
 ---
 
 # Using Spark configurations when you run EMR Serverless jobs
-<a name="jobs-spark"></a>
 
 You can run Spark jobs on an application with the `type` parameter set to `SPARK`. Jobs must be compatible with the Spark version compatible with the Amazon EMR release version. For example, when you run jobs with Amazon EMR release 6.6.0, your job must be compatible with Apache Spark 3.2.0. For information on the application versions for each release, refer to [Amazon EMR Serverless release versions](release-versions.md).
 

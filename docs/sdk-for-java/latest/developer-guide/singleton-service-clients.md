@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/sing
 ---
 
 # Use singleton service client instances with the AWS SDK for Java 2.x
-<a name="singleton-service-clients"></a>
 
 Service clients in the AWS SDK for Java 2.x are thread-safe. You can create one instance of each service client and reuse it throughout your application. This approach improves performance and manages resources more efficiently.
 

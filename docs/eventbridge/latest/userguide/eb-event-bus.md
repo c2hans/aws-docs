@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bu
 ---
 
 # Amazon EventBridge event bus (default and Classic)
-<a name="eb-event-bus"></a>
 
 This chapter describes the default event bus in every account and the Custom Event Bus - Classic buses you create: the EventBridge event buses that route events with rules and targets that the bus owner writes. EventBridge also offers the [Custom Event Bus](eb-custom-bus.md), which routes events to subscribers that consumers create themselves and retains events for replay. For new applications, start with the Custom Event Bus. To move existing rules to subscribers, see [Migrating from Custom Event Bus - Classic to the Custom Event Bus](eb-custom-bus-migrate.md).
 

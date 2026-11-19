@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Up
 ---
 
 # UpdateDirectConnectGatewayAssociation
-<a name="API_UpdateDirectConnectGatewayAssociation"></a>
 
 Updates the specified attributes of the Direct Connect gateway association.
 

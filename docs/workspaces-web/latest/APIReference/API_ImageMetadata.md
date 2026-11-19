@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_I
 ---
 
 # ImageMetadata
-<a name="API_ImageMetadata"></a>
 
 Metadata information about an uploaded image file.
 

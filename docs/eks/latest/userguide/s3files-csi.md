@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/s3files-csi.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Use Amazon S3 file system storage with the Amazon EFS CSI driver
-<a name="s3files-csi"></a>
 
 S3 Files is a shared file system that connects any AWS compute directly with your data in Amazon S3. It provides fast, direct access to all of your S3 data as files with full file system semantics and low-latency performance, without your data ever leaving S3. That means file-based applications, agents, and teams can access and work with S3 data as a file system using the tools they already depend on. The [Amazon EFS Container Storage Interface (CSI) driver](https://github.com/kubernetes-sigs/aws-efs-csi-driver) allows Kubernetes clusters running on AWS to mount Amazon S3 file systems as persistent volumes starting from version [3.0.0](https://github.com/kubernetes-sigs/aws-efs-csi-driver/blob/master/CHANGELOG-3.x.md#v300). This topic shows you how to use the Amazon EFS CSI driver to manage Amazon S3 file systems on your Amazon EKS cluster.
 

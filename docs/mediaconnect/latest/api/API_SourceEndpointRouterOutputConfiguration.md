@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SourceEndpoi
 ---
 
 # SourceEndpointRouterOutputConfiguration
-<a name="API_SourceEndpointRouterOutputConfiguration"></a>
 
 Configuration settings for a router output that is represented by a source endpoint.
 

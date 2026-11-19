@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # FleetDeployment
-<a name="API_FleetDeployment"></a>
 
 Describes a container fleet deployment with updates to the fleet.
 

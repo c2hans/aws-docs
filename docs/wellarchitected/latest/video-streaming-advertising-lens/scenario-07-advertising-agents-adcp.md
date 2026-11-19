@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Scenario 7: Implementation of advertising agents with Ad Context Protocol (AdCP) framework
-<a name="scenario-07-advertising-agents-adcp"></a>
 
  The advertising workflow spans multiple sequential stages from lead intake through campaign execution to insights delivery. AI agents can automate operational tasks including RFP processing, pricing optimization, proposal assembly, campaign trafficking, performance monitoring, and reporting generation. The Ad Context Protocol (AdCP) provides a standardized open framework for AI agents to interact across the advertising value chain.
 

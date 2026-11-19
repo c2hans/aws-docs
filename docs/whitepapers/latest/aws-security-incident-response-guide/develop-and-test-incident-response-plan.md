@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Develop and test an incident response plan
-<a name="develop-and-test-incident-response-plan"></a>
 
  The first document to develop for incident response is the *incident response plan*. The incident response plan is designed to be the foundation for your incident response program and strategy. An incident response plan is a high-level document that typically includes these sections:
 + **An incident response team overview** – Outlines the goals and functions of the incident response team

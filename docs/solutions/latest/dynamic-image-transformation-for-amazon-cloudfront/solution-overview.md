@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Solution Overview
-<a name="solution-overview"></a>
 
 Dynamic Image Transformation for Amazon CloudFront (formerly known as Serverless Image Handler) enables real-time image processing and optimization, eliminating the need for pre-processing images or maintaining multiple versions of the same image. Dynamic Image Transformation (DIT) empowers developers with the flexibility to transform images on-demand for specific use cases, enabling responsive design. DIT can automatically optimize images for each user’s device, delivering the highest quality images at the smallest possible file size. This not only reduces operational costs through efficient storage and bandwidth usage but also enhances the end-user experience through faster load times and improved visual quality.
 

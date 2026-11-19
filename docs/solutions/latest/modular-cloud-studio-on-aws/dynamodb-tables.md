@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # DynamoDB Tables
-<a name="dynamodb-tables"></a>
 
 MCS uses five DynamoDB tables: [Registered Modules](#registered-modules), [External Modules](#external-modules), [Modules Mapping](#modules-mapping-table), [Enabled Modules](#enabled-modules), and [Regions](#regions-table).
 

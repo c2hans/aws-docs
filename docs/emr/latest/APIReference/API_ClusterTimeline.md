@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ClusterTimel
 ---
 
 # ClusterTimeline
-<a name="API_ClusterTimeline"></a>
 
 Represents the timeline of the cluster's lifecycle.
 

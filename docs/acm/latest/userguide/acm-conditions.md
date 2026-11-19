@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-conditions.html
 ---
 
 # Use condition keys with ACM
-<a name="acm-conditions"></a>
 
 AWS Certificate Manager uses AWS Identity and Access Management (IAM)[ condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) to limit access to certificate requests. With condition keys from IAM policies or Service Control Policies (SCP) you can create certificate requests that conform to your organization's guidelines.
 

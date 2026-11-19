@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/update-auto-sc
 ---
 
 # Update an Auto Scaling group
-<a name="update-auto-scaling-group"></a>
 
 You can update most of your Auto Scaling group's details. You can't update the name of an Auto Scaling group or change its AWS Region.
 

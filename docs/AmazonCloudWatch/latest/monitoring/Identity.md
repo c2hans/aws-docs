@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Ident
 ---
 
 # Identity
-<a name="Identity"></a>
 
 Track identity and access management operations to help keep agent behavior secure and compliant. For more information on Amazon Bedrock Identity, see [Create agent and tool identities with AgentCore Identity ](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html). Identity observability includes monitoring for different authentication methods:
 

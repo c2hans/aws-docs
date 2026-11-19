@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-data-access
 ---
 
 # Creating IAM data-access policies in Amazon Neptune
-<a name="iam-data-access-examples"></a>
 
 The following examples show how to create custom IAM policies that use fine-grained access control of data-plane APIs and actions, introduced in Neptune [engine release version 1.2.0.0](engine-releases-1.2.0.0.md).
 

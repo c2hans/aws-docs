@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/numeric-value-matching.htm
 ---
 
 # Numeric value matching
-<a name="numeric-value-matching"></a>
 
 Filter messages by matching numeric values to message attribute values or to message body property values. Numeric values aren't enclosed in double quotation marks in the JSON policy. You can use the following numeric operations for filtering.
 

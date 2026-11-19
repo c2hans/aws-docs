@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ResourcePool
 ---
 
 # ResourcePoolSummary
-<a name="API_ResourcePoolSummary"></a>
 
 The configuration of a resource pool for an Autonomous Database.
 

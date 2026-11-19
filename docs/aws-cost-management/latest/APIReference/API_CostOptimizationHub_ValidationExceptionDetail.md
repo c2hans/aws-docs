@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ValidationExceptionDetail
-<a name="API_CostOptimizationHub_ValidationExceptionDetail"></a>
 
 The input failed to meet the constraints specified by the AWS service in a specified field.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBCapa
 ---
 
 # DBCapacityReservation
-<a name="API_DBCapacityReservation"></a>
 
 Contains the details of a DB capacity reservation.
 

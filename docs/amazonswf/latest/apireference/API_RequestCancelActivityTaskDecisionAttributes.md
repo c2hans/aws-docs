@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Reques
 ---
 
 # RequestCancelActivityTaskDecisionAttributes
-<a name="API_RequestCancelActivityTaskDecisionAttributes"></a>
 
 Provides the details of the `RequestCancelActivityTask` decision.
 

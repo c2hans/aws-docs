@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API
 ---
 
 # DescribeHumanLoop
-<a name="API_DescribeHumanLoop"></a>
 
 Returns information about the specified human loop. If the human loop was deleted, this operation will return a `ResourceNotFoundException` error.
 

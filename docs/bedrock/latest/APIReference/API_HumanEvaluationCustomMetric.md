@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_HumanEva
 ---
 
 # HumanEvaluationCustomMetric
-<a name="API_HumanEvaluationCustomMetric"></a>
 
 In a model evaluation job that uses human workers you must define the name of the metric, and how you want that metric rated `ratingMethod`, and an optional description of the metric.
 

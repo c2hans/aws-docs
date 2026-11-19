@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskSch
 ---
 
 # TaskScheduleDetails
-<a name="API_TaskScheduleDetails"></a>
 
 Provides information about your AWS DataSync [task schedule](https://docs.aws.amazon.com/datasync/latest/userguide/task-scheduling.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateCatalog.htm
 ---
 
 # UpdateCatalog
-<a name="API_UpdateCatalog"></a>
 
 Updates an existing catalog's properties in the AWS Glue Data Catalog.
 

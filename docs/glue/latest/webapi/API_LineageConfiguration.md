@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_LineageConfigurat
 ---
 
 # LineageConfiguration
-<a name="API_LineageConfiguration"></a>
 
 Specifies data lineage configuration settings for the crawler.
 

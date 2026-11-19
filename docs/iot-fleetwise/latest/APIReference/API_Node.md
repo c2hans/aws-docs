@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_No
 ---
 
 # Node
-<a name="API_Node"></a>
 
 A general abstraction of a signal. A node can be specified as an actuator, attribute, branch, or sensor.
 

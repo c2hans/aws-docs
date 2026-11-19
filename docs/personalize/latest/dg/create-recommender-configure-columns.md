@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/create-recommender
 ---
 
 # Configuring columns used when creating an Amazon Personalize domain recommender
-<a name="create-recommender-configure-columns"></a>
 
 When you create a recommender, you can modify the columns Amazon Personalize considers when training the models backing your recommender.
 
@@ -21,7 +20,7 @@ The following code samples show how configure columns used when training with th
 ## Configuring columns used when training (AWS CLI)
 <a name="domain-config-columns-cli"></a>
 
-To exclude columns from training, provide the `excludedDatasetColumns` object in the `trainingDataConfig` as part of the recommender configuration. For each key in the object, provide the dataset type. For each value, provide the list of columns to exclude. For more information, see [Configuring columns used when creating an Amazon Personalize domain recommender](#create-recommender-configure-columns).
+To exclude columns from training, provide the `excludedDatasetColumns` object in the `trainingDataConfig` as part of the recommender configuration. For each key in the object, provide the dataset type. For each value, provide the list of columns to exclude. For more information, see [Configuring columns used when creating an Amazon Personalize domain recommender](create-recommender-configure-columns.md).
 
 ```
 aws personalize create-recommender \
@@ -34,7 +33,7 @@ aws personalize create-recommender \
 ## Configuring columns used when training (AWS SDKs)
 <a name="domain-configure-columns-sdk"></a>
 
-To exclude columns from training, provide the `excludedDatasetColumns` object in the `trainingDataConfig` as part of the recommender configuration. For each key, provide the dataset type. For each value, provide the list of columns to exclude. The following code shows how to exclude columns from training when you create a recommender. For more information, see [Configuring columns used when creating an Amazon Personalize domain recommender](#create-recommender-configure-columns).
+To exclude columns from training, provide the `excludedDatasetColumns` object in the `trainingDataConfig` as part of the recommender configuration. For each key, provide the dataset type. For each value, provide the list of columns to exclude. The following code shows how to exclude columns from training when you create a recommender. For more information, see [Configuring columns used when creating an Amazon Personalize domain recommender](create-recommender-configure-columns.md).
 
 ------
 #### [ SDK for Python (Boto3) ]

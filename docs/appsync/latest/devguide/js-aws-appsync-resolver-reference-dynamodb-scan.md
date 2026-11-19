@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-r
 ---
 
 # Scan
-<a name="js-aws-appsync-resolver-reference-dynamodb-scan"></a>
 
 The `Scan` request lets you tell the AWS AppSync DynamoDB function to make a `Scan` request to DynamoDB, and enables you to specify the following:
 + A filter to exclude results

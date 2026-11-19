@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_PermittedW
 ---
 
 # PermittedWickrEnterpriseNetwork
-<a name="API_PermittedWickrEnterpriseNetwork"></a>
 
 Identifies a Wickr enterprise network that is permitted for global federation, allowing users to communicate with members of the specified network.
 

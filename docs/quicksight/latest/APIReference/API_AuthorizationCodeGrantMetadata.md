@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Autho
 ---
 
 # AuthorizationCodeGrantMetadata
-<a name="API_AuthorizationCodeGrantMetadata"></a>
 
 Metadata for OAuth 2.0 authorization code grant authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/cod
 ---
 
 # AWS CodeBuild controls
-<a name="codebuild-rules"></a>
 
 **Topics**
 + [[CT.CODEBUILD.PR.1] Require OAuth on GitHub or Bitbucket source repository URLs for AWS CodeBuild projects](#ct-codebuild-pr-1-description)

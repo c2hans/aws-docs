@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/monitorin
 ---
 
 # Monitoring and Auditing
-<a name="monitoring-auditing"></a>
 
 Monitoring and Auditing provides capabilities to track, monitor, and log activities in your Amazon Location Services environment. With Amazon CloudWatch and AWS CloudTrail, you can ensure the reliability, security, and compliance of your applications.
 

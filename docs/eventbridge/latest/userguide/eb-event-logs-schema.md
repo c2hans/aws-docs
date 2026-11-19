@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-lo
 ---
 
 # Amazon EventBridge event bus log schema
-<a name="eb-event-logs-schema"></a>
 
 The following reference details the schema for EventBridge event bus log records. Each record represent a step EventBridge performs processing a specific event.
 

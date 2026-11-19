@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policy: AWSElasticDisasterRecoveryLaunchActionsPolicy
-<a name="security-iam-awsmanpol-AWSElasticDisasterRecoveryLaunchActionsPolicy"></a>
 
 You can attach the AWSElasticDisasterRecoveryLaunchActionsPolicy policy to your IAM identities.
 

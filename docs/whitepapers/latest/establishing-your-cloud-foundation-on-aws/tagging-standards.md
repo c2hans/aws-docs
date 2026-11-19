@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Tagging standards
-<a name="tagging-standards"></a>
 
 As you define your tagging strategy, a naming convention needs to be established for the different tags across your environment ensuring a standard, and making it easier for the tagged resources to be identified. Tags enable you to identify resources, and having no more than 50 tags per resource will allow you to keep your tag strategy manageable in your environment. The following are examples for tag key names and values:
 

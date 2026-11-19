@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost07-
 ---
 
 # COST07-BP02 Choose Regions based on cost
-<a name="cost07-bp02"></a>
 
  Resource prices vary by Region. Where latency, data residency, data sovereignty, and regulatory rules permit, placing a workload in a lower-cost Region reduces spend. Data transfer costs and service availability can outweigh the price difference.
 

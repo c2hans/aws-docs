@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_StartEx
 ---
 
 # StartExpenseAnalysis
-<a name="API_StartExpenseAnalysis"></a>
 
 Starts the asynchronous analysis of invoices or receipts for data like contact information, items purchased, and vendor names.
 

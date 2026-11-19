@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Viewing dependency insights
-<a name="next-gen-viewing-insights"></a>
 
 After insights are generated, they are stored with the service and remain available until you regenerate them. The console displays the summary in the **Dependencies** section, along with the time the summary was last generated so that you can gauge whether it is stale.
 

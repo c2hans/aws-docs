@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 ---
 
 # Autonomous Driving Data Framework (ADDF) security and operations guide
-<a name="introduction"></a>
 
 *Andreas Falkenberg, Srinivas Reddy Cheruku, Torsten Reitemeyer, and Junjie Tang, Amazon Web Services*
 

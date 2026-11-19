@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Security
-<a name="security"></a>
 
  The security pillar includes the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation. Due to the global visibility and large number of players, games are a desirable target for exploiters, hackers, and others looking for ways to exploit and abuse systems. This can often result in a disappointing player experience and increased costs for the game developer if there isn't a strong security foundation set in place.
 

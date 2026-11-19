@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EventInput.html
 ---
 
 # EventInput
-<a name="API_EventInput"></a>
 
 Input information for an event.
 

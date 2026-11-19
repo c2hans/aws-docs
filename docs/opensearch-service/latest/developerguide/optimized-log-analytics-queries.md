@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Supported query languages
-<a name="optimized-log-analytics-queries"></a>
 
 The Optimized engine supports PPL (Piped Processing Language) and SQL as query languages. The Optimized engine runs both PPL and SQL natively through its vectorized execution engine. For complete syntax references, see the [OpenSearch SQL and PPL documentation](https://docs.opensearch.org/latest/sql-and-ppl/) on the OpenSearch website.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_KeyUsage.htm
 ---
 
 # KeyUsage
-<a name="API_KeyUsage"></a>
 
 The Key Usage X.509 v3 extension defines the purpose of the public key contained in the certificate.
 

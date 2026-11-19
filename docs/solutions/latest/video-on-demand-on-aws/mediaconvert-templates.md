@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 ---
 
 # MediaConvert templates
-<a name="mediaconvert-templates"></a>
 
 The Video on Demand on AWS solution outputs 4K, 1080p, and 720p MP4, and any combination of 1080p, 720p, 540p, 360p, and 270p HLS and DASH. By default, the solution selects the job template for MediaConvert based on the source video height. The solution includes three default job templates:
 + MediaConvert\_Template\_2160p: 5 HLS outputs AVC 2160p through 270p

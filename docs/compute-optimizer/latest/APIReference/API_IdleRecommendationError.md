@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # IdleRecommendationError
-<a name="API_IdleRecommendationError"></a>
 
 Returns of list of resources that doesn't have idle recommendations.
 

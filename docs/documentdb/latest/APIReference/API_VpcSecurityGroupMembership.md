@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_VpcSe
 ---
 
 # VpcSecurityGroupMembership
-<a name="API_VpcSecurityGroupMembership"></a>
 
 Used as a response element for queries on virtual private cloud (VPC) security group membership.
 

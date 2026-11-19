@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-deployment-opti
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy Amazon EKS clusters across cloud and on-premises environments
-<a name="eks-deployment-options"></a>
 
 ## Understand Amazon EKS deployment options
 <a name="understand-deployment-options"></a>

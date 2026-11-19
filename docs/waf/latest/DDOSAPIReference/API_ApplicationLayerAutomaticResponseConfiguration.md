@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Applicat
 ---
 
 # ApplicationLayerAutomaticResponseConfiguration
-<a name="API_ApplicationLayerAutomaticResponseConfiguration"></a>
 
 The automatic application layer DDoS mitigation settings for a [Protection](API_Protection.md). This configuration determines whether Shield Advanced automatically manages rules in the web ACL in order to respond to application layer events that Shield Advanced determines to be DDoS attacks.
 

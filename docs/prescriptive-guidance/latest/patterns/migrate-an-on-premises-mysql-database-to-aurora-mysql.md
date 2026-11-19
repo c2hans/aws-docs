@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises MySQL database to Aurora MySQL
-<a name="migrate-an-on-premises-mysql-database-to-aurora-mysql"></a>
 
 *Igor Obradovic, Amazon Web Services*
 

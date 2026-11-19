@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorial
 ---
 
 # Install a web server on your EC2 instance
-<a name="CHAP_Tutorials.WebServerDB.CreateWebServer"></a>
 
 Install a web server on the EC2 instance you created in [Launch an EC2 instance to connect with your DB instance](CHAP_Tutorials.WebServerDB.LaunchEC2.md). The web server connects to the Amazon RDS DB instance that you created in [Create an Amazon RDS DB instance](CHAP_Tutorials.WebServerDB.CreateDBInstance.md).
 

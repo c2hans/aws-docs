@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/aif-and-input-switch
 ---
 
 # Manually forcing a failover
-<a name="aif-and-input-switching-failoverpair"></a>
 
 You can set up automatic input failover to allow the MediaLive operator to perform a manual failover.
 

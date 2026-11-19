@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/vpce-logging.h
 ---
 
 # Logging AWS KMS requests that use a VPC endpoint
-<a name="vpce-logging"></a>
 
 AWS CloudTrail logs all operations that use the VPC endpoint. When a request to AWS KMS uses a VPC endpoint, the VPC endpoint ID appears in the [AWS CloudTrail log](logging-using-cloudtrail.md) entry that records the request. You can use the endpoint ID to audit the use of your AWS KMS VPC endpoint.
 

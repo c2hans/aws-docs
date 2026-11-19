@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Application Recovery Controller - Zonal Shift
-<a name="amazonapplicationrecoverycontroller-zonalshift"></a>
 
 Amazon Application Recovery Controller - Zonal Shift provides the following APIs for data retrieval.
 

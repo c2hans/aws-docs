@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DateTimeFilterExpression
-<a name="API_DateTimeFilterExpression"></a>
 
 The timestamp in date-time format.
 

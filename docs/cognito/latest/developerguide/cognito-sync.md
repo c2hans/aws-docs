@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sy
 ---
 
 # Amazon Cognito Sync
-<a name="cognito-sync"></a>
 
 **Note**
 Amazon Cognito Sync is no longer open to new customers. For alternatives to Amazon Cognito Sync, please explore [AWS AppSync](https://docs.aws.amazon.com/appsync/) and [DynamoDB](https://docs.aws.amazon.com/dynamodb/). [Learn more](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sync-availability-change.html).

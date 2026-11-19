@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/windows
 ---
 
 # Updates applied for AWS Windows AMIs
-<a name="windows-ami-configuration"></a>
 
 To help ensure a smooth and consistent launch experience, AWS Windows AMIs include the following updates for initialization, installation, and configuration.
 

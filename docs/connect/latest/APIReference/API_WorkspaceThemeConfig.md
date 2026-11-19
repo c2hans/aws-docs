@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceThemeConfig
-<a name="API_WorkspaceThemeConfig"></a>
 
 Contains detailed theme configuration for a workspace, including colors, images, and typography.
 

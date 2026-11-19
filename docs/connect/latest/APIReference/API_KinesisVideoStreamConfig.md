@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_KinesisV
 ---
 
 # KinesisVideoStreamConfig
-<a name="API_KinesisVideoStreamConfig"></a>
 
 Configuration information of a Kinesis video stream.
 

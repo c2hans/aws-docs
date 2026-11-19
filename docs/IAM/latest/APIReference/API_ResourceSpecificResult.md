@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ResourceSpec
 ---
 
 # ResourceSpecificResult
-<a name="API_ResourceSpecificResult"></a>
 
 Contains the result of the simulation of a single API operation call on a single resource.
 

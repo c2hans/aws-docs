@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Distrib
 ---
 
 # DistributionSegment
-<a name="API_DistributionSegment"></a>
 
 Use this structure to specify the capacity types that Amazon EC2 Auto Scaling prioritizes when it launches instances.
 

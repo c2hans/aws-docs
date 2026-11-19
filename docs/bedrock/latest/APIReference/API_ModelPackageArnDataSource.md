@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ModelPac
 ---
 
 # ModelPackageArnDataSource
-<a name="API_ModelPackageArnDataSource"></a>
 
 Contains the Amazon Resource Name (ARN) of a SageMaker AI model package to use as the data source for a custom model.
 

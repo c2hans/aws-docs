@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdatePullRequestStatus
-<a name="API_UpdatePullRequestStatus"></a>
 
 Updates the status of a pull request.
 

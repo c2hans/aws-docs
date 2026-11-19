@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/plann
 ---
 
 # product\_bom
-<a name="planning-product-bom-entity"></a>
 
 **Primary key (PK)**
 

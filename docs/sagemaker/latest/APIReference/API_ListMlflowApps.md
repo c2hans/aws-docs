@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMl
 ---
 
 # ListMlflowApps
-<a name="API_ListMlflowApps"></a>
 
 Lists all MLflow Apps
 

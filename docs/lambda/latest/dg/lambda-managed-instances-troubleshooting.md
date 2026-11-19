@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Troubleshooting Lambda Managed Instances
-<a name="lambda-managed-instances-troubleshooting"></a>
 
 ## Throttling and scaling issues
 <a name="lambda-managed-instances-ts-throttling"></a>

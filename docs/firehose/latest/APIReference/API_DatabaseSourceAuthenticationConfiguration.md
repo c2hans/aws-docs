@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Databas
 ---
 
 # DatabaseSourceAuthenticationConfiguration
-<a name="API_DatabaseSourceAuthenticationConfiguration"></a>
 
  The structure to configure the authentication methods for Firehose to connect to source database endpoint.
 

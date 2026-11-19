@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Send application telemetry
-<a name="omni-send-application-telemetry"></a>
 
 Deploy the CloudWatch agent where your application runs: Amazon EC2, Amazon ECS, Amazon EKS, an Azure VM, Azure Kubernetes Service, a Google Compute Engine instance, or Google Kubernetes Engine. Then point your application's OpenTelemetry exporter at the agent, and confirm that data arrives in your space. If your application is not instrumented yet, add OpenTelemetry for Python, Node.js, Java, .NET, or Go in the last step. The agent receives OpenTelemetry Protocol (OTLP) data from your application and forwards metrics, traces, and logs to CloudWatch.
 

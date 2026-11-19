@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ag-cp-select.h
 ---
 
 # Accept incoming contacts with Connect Customer Customer Profiles
-<a name="ag-cp-select"></a>
 
 When a call or chat is connected to your Contact Control Panel (CCP), Connect Customer Customer Profiles, in the same browser window, automatically populates the customer profile that might match the incoming phone number for a voice interaction and *Name* for a chat interaction.
 

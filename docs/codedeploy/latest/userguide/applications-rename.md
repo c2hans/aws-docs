@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/applications
 ---
 
 # Rename a CodeDeploy application
-<a name="applications-rename"></a>
 
 You can use the AWS CLI or the CodeDeploy APIs to change the name of an application.
 

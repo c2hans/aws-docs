@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ca
 ---
 
 # CanInterface
-<a name="API_CanInterface"></a>
 
 A single controller area network (CAN) device interface.
 

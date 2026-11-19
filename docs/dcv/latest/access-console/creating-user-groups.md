@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/creating-user-
 ---
 
 # Creating user groups
-<a name="creating-user-groups"></a>
 
 You can create a user group directly from the Access Console, by selecting users and assigning templates.
 

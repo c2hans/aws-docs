@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudfront_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Add an origin header to a CloudFront Functions viewer request event
-<a name="cloudfront_example_cloudfront_functions_add_origin_header_section"></a>
 
 The following code example shows how to add an origin header to a CloudFront Functions viewer request event.
 

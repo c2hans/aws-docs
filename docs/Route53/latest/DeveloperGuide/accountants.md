@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/accountant
 ---
 
 # .accountants
-<a name="accountants"></a>
 
 Used by businesses, groups, and individuals affiliated with the accounting profession.
 

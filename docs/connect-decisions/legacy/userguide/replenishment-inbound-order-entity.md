@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/reple
 ---
 
 # inbound\_order
-<a name="replenishment-inbound-order-entity"></a>
 
 **Primary key (PK)**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # DeletePaymentSession
-<a name="API_DeletePaymentSession"></a>
 
 Deletes a payment session. This permanently removes the payment session record.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_RouteHas
 ---
 
 # RouteHasOutOfScopeEndpointViolation
-<a name="API_RouteHasOutOfScopeEndpointViolation"></a>
 
 Contains details about the route endpoint that violates the policy scope.
 

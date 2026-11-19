@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # Copying a variable to another CloudWatch dashboard
-<a name="cloudwatch_dashboard_variables_copy"></a>
 
 After you create a dashboard with useful variables, you can copy these variables to other existing dashboards. For more information about dashboard variables, see [Creating flexible CloudWatch dashboards with dashboard variables](cloudwatch_dashboard_variables.md).
 

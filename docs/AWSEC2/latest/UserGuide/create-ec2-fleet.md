@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ec2-fleet
 ---
 
 # Create an EC2 Fleet
-<a name="create-ec2-fleet"></a>
 
 To create an EC2 Fleet, define the fleet configuration in a JSON file and reference the file with the [create-fleet](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-fleet.html) command. In the JSON file, you must specify the total target capacity for the fleet, separate target capacities for Spot Instances and On-Demand Instances, and a launch template that defines the configuration for the instances in the fleet, such as an AMI, instance type, subnet or Availability Zone, and one or more security groups. You can optionally specify additional configurations, such as parameters to override the launch template configuration, allocation strategies for selecting Spot Instances and On-Demand Instances from the EC2 capacity pools, and the maximum amount you're willing to pay for the fleet. For more information, see [Configuration options for your EC2 Fleet or Spot Fleet](ec2-fleet-configuration-strategies.md).
 

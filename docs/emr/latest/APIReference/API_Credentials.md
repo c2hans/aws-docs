@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_Credentials.
 ---
 
 # Credentials
-<a name="API_Credentials"></a>
 
 The credentials that you can use to connect to cluster endpoints. Credentials consist of a username and a password.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/boot-mode.html
 ---
 
 # Boot mode
-<a name="boot-mode"></a>
 
 Boot mode is automatically discovered from the source server. The target instance will launch using the same boot mode as the source. Changing this setting may cause the target instance to fail to boot.
 

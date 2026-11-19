@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Invoking Asynchronous External APIs
-<a name="invoking-async-external-apis"></a>
 
 Publication date: **January 30, 2023 ([Diagram history](#diagram-history))**
 

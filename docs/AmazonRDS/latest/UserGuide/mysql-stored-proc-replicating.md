@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-stored-
 ---
 
 # Configuring, starting, and stopping binary log (binlog) replication
-<a name="mysql-stored-proc-replicating"></a>
 
 The following stored procedures control how transactions are replicated from an external database into RDS for MySQL, or from RDS for MySQL to an external database.
 

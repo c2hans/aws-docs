@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/perfor
 ---
 
 # POST Start: Start One or More Channels
-<a name="performing-bulk-tasks-start-channels"></a>
 
 Start one or more channels. If the specified channels are currently idle on their nodes, then they will start. If the channels are currently running, they simply continue running.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListPi
 ---
 
 # ListPipelines
-<a name="API_ListPipelines"></a>
 
 Gets a list of pipelines.
 

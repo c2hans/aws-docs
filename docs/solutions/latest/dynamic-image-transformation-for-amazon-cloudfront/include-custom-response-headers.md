@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Include custom response headers
-<a name="include-custom-response-headers"></a>
 
 This solution allows you to include headers you’d like returned alongside the response, as part of your request.
 +  **headers (optional, object)** - Includes the provided headers in the response. Header should be written in Pascal-Case and cannot overwrite headers that would otherwise be present in the response (Except for Cache-Control).

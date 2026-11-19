@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Interactive Video Service Chat
-<a name="amazoninteractivevideoservicechat"></a>
 
 Amazon Interactive Video Service Chat provides the following APIs for data retrieval.
 

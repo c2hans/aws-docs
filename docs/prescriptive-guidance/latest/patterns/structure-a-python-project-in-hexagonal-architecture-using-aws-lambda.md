@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/st
 ---
 
 # Structure a Python project in hexagonal architecture using AWS Lambda
-<a name="structure-a-python-project-in-hexagonal-architecture-using-aws-lambda"></a>
 
 *Furkan Oruc, Dominik Goby, Darius Kunce, and Michal Ploski, Amazon Web Services*
 

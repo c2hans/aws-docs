@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/sort.html
 ---
 
 # $sort
-<a name="sort"></a>
 
 The `$sort` aggregation stage orders documents in the pipeline based on specified field values. Documents are arranged in ascending or descending order according to the sort criteria provided.
 

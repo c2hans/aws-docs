@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteCloudA
 ---
 
 # DeleteCloudAutonomousVmCluster
-<a name="API_DeleteCloudAutonomousVmCluster"></a>
 
 Deletes an Autonomous VM cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/lookup.html
 ---
 
 # $lookup
-<a name="lookup"></a>
 
 The `$lookup` aggregation stage in Amazon DocumentDB allows you to perform a left outer join between two collections. This operation lets you combine data from multiple collections based on matching field values. It is particularly useful when you need to incorporate data from related collections into your query results.
 

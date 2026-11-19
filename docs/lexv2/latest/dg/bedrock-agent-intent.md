@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/bedrock-agent-intent.htm
 ---
 
 # Using BedrockAgentIntent to use a Amazon Bedrock Agent in Amazon Lex V2
-<a name="bedrock-agent-intent"></a>
 
 **Note**
 Before you can take advantage of the generative AI features, you must fulfill the following prerequisites

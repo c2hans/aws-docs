@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # Simple authentication and authorization
-<a name="rabbitmq-simple-auth-broker-users"></a>
 
 ## Amazon MQ for RabbitMQ broker users
 <a name="rabbitmq-basic-elements-user"></a>

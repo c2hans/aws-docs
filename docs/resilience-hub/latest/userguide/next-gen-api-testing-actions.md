@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Resilience testing
-<a name="next-gen-api-testing-actions"></a>
 
 | Action | Method | Description |
 | --- | --- | --- |

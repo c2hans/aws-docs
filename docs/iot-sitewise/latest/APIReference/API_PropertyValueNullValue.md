@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Pro
 ---
 
 # PropertyValueNullValue
-<a name="API_PropertyValueNullValue"></a>
 
 The value type of null asset property data with BAD and UNCERTAIN qualities.
 

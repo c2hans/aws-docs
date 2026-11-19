@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/default-automatic
 ---
 
 # Working with default MXF profiles
-<a name="default-automatic-selection-of-mxf-profiles"></a>
 
 When you choose MXF as your output video container and keep **MXF profile** out of your job settings, MediaConvert automatically chooses your MXF profile for you and creates your output accordingly. How MediaConvert makes the MXF profile selection depends on your output video codec.
 

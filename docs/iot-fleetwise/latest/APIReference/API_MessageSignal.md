@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Me
 ---
 
 # MessageSignal
-<a name="API_MessageSignal"></a>
 
 The decoding information for a specific message which support higher order data types.
 

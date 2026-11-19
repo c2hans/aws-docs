@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Instan
 ---
 
 # InstanceDetails
-<a name="API_InstanceDetails"></a>
 
 Contains information about the details of an instance.
 

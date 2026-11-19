@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Related Amazon SQS resources
-<a name="related-resources"></a>
 
 The following table lists related resources that you might find useful as you work with this service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-clou
 ---
 
 # Best practices for building a hybrid cloud architecture with AWS services
-<a name="introduction"></a>
 
 *Leonardo Alberto Solano Alvarado, Tom Gadomski, Len Gomes, Obed Gutierrez, Dionysios Kakaletris, Matt Price, and Vamsi Krishna Yamavarapu, Amazon Web Services*
 

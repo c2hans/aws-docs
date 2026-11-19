@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetGroups
 ---
 
 # GetGroupsForCapacityReservation
-<a name="API_GetGroupsForCapacityReservation"></a>
 
 Lists the resource groups to which a Capacity Reservation has been added.
 

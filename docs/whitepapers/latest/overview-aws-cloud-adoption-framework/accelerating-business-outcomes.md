@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-ad
 Also available on [Audible](https://www.audible.com/pd/Cloud-Adoption-Framework-CAF-Audiobook/B0B48D8ZXL?action_code=ASSGB149080119000H&share_location=pdp&shareTest=TestShare), [Kindle](https://www.amazon.com/dp/B09X9DBL4V/ref=cm_sw_em_r_mt_dp_44NEN2KA1F5VN2AQCMCT), and as an [eBook](https://d1.awsstatic.com/whitepapers/aws-caf-ebook.pdf).
 
 # Accelerating business outcomes with cloud powered digital transformation
-<a name="accelerating-business-outcomes"></a>
 
 The cloud transformation value chain in the following figure shows that business outcomes are accelerated through cloud powered organizational change (transformation) that is enabled by a set of foundational capabilities. The transformation domains represent a value chain where technological transformation enables process transformation which enables organizational transformation that enables product transformation. Key business outcomes include reduced business risk, improved environmental, social and governance (ESG) performance, as well as increased revenue and operational efficiency.
 

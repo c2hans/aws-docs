@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Contributors
-<a name="contributors"></a>
 + Jonathan Nguyen
 + Gopinath Jagadesan
 + Deenadayaalan Thirugnanasambandam

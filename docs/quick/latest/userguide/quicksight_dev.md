@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight_dev.ht
 ---
 
 # Developing with AWS Quick Sight
-<a name="quicksight_dev"></a>
 
 We provide API operations for AWS Quick Sight, and also software development kits (SDKs) for AWS that enable you to access AWS Quick Sight from your preferred programming language. Currently, you can manage users and groups. In Enterprise edition, you can also embed dashboards in your webpage or app.
 

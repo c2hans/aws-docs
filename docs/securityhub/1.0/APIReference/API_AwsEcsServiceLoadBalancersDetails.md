@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsS
 ---
 
 # AwsEcsServiceLoadBalancersDetails
-<a name="API_AwsEcsServiceLoadBalancersDetails"></a>
 
 Information about a load balancer that the service uses.
 

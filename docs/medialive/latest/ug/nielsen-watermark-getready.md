@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/nielsen-watermark-ge
 ---
 
 # Getting ready
-<a name="nielsen-watermark-getready"></a>
 
 To prepare to insert Nielsen watermarks in a MediaLive output, you must obtain some information about the watermarks data for each channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-query-hi
 ---
 
 # The `queryTimeout` SPARQL query hint
-<a name="sparql-query-hints-queryTimeout"></a>
 
 The `queryTimeout` query hint specifies a timeout that is shorter than the `neptune_query_timeout` value set in the DB parameters group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Cluster Configuration
-<a name="clusters-clusterarn-configuration"></a>
 
 Represents the configuration of a specific cluster.
 

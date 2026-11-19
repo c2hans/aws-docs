@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Can
 ---
 
 # CancelImageCreation
-<a name="API_CancelImageCreation"></a>
 
 Cancels the creation of an image. This operation can only be used on images in a non-terminal state. Cancellation is asynchronous: the request returns immediately, then Image Builder stops the running build and moves the image to the `CANCELLED` state. Output resources that the build already created, such as AMIs and snapshots, aren't removed.
 

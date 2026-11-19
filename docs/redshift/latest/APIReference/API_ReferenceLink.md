@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Referen
 ---
 
 # ReferenceLink
-<a name="API_ReferenceLink"></a>
 
 A link to an Amazon Redshift Advisor reference for more information about a recommendation.
 

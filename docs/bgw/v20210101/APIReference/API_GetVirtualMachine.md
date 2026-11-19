@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_GetVirtua
 ---
 
 # GetVirtualMachine
-<a name="API_GetVirtualMachine"></a>
 
 By providing the ARN (Amazon Resource Name), this API returns the virtual machine.
 

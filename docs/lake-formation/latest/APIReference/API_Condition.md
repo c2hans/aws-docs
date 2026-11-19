@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 A Lake Formation condition, which applies to permissions and opt-ins that contain an expression.
 

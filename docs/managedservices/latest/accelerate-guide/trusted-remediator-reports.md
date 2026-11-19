@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Trusted Remediator reports
-<a name="trusted-remediator-reports"></a>
 
 **Topics**
 + [Trusted Remediator Remediation Summary report](#trusted-remediator-summary)

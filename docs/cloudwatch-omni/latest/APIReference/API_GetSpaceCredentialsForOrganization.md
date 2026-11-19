@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetSpaceCredentialsForOrganization
-<a name="API_GetSpaceCredentialsForOrganization"></a>
 
 Returns temporary credentials for a space in an organization member account. The credentials are valid for one hour.
 

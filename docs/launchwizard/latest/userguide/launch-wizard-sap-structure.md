@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Make SAP HANA software available for AWS Launch Wizard to deploy a HANA database
-<a name="launch-wizard-sap-structure"></a>
 
 This section describes steps to download the SAP HANA software and upload it to Amazon S3 to make it available for Launch Wizard to deploy a HANA database.
 

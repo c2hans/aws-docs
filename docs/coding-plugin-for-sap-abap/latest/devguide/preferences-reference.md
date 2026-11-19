@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/coding-plugin-for-sap-abap/latest/devgui
 ---
 
 # AWS Coding Plugin for SAP ABAP preferences reference
-<a name="preferences-reference"></a>
 
  AWS Coding Plugin for SAP ABAP ("Coding Plugin") adds its own preferences to Eclipse, separate from Kiro’s configuration.
 

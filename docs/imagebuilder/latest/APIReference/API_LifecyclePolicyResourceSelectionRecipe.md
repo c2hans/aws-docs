@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicyResourceSelectionRecipe
-<a name="API_LifecyclePolicyResourceSelectionRecipe"></a>
 
 Specifies an Image Builder recipe that the lifecycle policy uses for resource selection.
 

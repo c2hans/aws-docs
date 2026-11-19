@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-prereq
 ---
 
 # EC2 Fleet prerequisites
-<a name="ec2-fleet-prerequisites"></a>
 
 **Topics**
 + [Launch template](#ec2-fleet-prerequisites-launch-template)

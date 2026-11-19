@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # HTTP header routing pattern
-<a name="api-routing-http-header"></a>
 
 Header-based routing enables you to target the correct service for each request by specifying an HTTP header in the HTTP request. For example, sending the header `x-service-a-action: get-thing` would enable you to `get thing` from `Service A`. The path of the request is still important, because it offers guidance on which resource you're trying to work on.
 

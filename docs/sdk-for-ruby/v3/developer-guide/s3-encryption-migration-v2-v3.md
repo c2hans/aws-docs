@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/s3-encry
 ---
 
 # Amazon S3 Encryption Client Migration (V2 to V3)
-<a name="s3-encryption-migration-v2-v3"></a>
 
 **Note**
 If you are using V1 of the S3 encryption client, you must first migrate to V2 before migrating to V3. See [Amazon S3 Encryption Client Migration (V1 to V2)](s3-encryption-migration-v1-v2.md) for instructions on migrating from V1 to V2.

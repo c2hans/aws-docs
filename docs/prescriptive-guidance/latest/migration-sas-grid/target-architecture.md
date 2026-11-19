@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Target architecture
-<a name="target-architecture"></a>
 
 Although you can choose the appropriate instance types for your specific workload needs, for SAS Grid Manager on SAS 9.4, SAS recommends [Amazon EC2 I3en instances](https://aws.amazon.com/ec2/instance-types/i3en/). We also recommend using [Amazon VPC](https://aws.amazon.com/vpc/), which provides increased isolation control, customization, and security.
 

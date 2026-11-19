@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/writing-bes
 ---
 
 # Writing best practices to optimize RAG applications
-<a name="introduction"></a>
 
 *Ivan Cui and Samantha Stuart, Amazon Web Services*
 

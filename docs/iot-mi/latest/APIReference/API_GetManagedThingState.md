@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetManage
 ---
 
 # GetManagedThingState
-<a name="API_GetManagedThingState"></a>
 
  Returns the managed thing state for the given device Id.
 

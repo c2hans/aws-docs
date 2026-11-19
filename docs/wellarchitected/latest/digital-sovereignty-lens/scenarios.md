@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Scenarios
-<a name="scenarios"></a>
 
  Digital sovereignty encompasses the principles and practices that customers use to maintain control over their data, infrastructure, and operations within specific jurisdictions. The following scenarios represent common situations where digital sovereignty requirements apply. Review these scenarios to identify which are relevant to your organization or solution.
 

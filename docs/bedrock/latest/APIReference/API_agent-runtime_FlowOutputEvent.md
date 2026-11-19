@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowOutputEvent
-<a name="API_agent-runtime_FlowOutputEvent"></a>
 
 Contains information about an output from prompt flow invoction.
 

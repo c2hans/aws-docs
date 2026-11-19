@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # GetAccessToken
-<a name="API_route53globalresolver_GetAccessToken"></a>
 
 Retrieves information about an access token.
 

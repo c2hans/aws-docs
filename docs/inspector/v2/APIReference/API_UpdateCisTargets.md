@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateCisT
 ---
 
 # UpdateCisTargets
-<a name="API_UpdateCisTargets"></a>
 
 Updates CIS targets.
 

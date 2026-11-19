@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TableOptimizerVpc
 ---
 
 # TableOptimizerVpcConfiguration
-<a name="API_TableOptimizerVpcConfiguration"></a>
 
 An object that describes the VPC configuration for a table optimizer.
 

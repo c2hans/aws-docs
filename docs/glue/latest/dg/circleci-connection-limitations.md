@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/circleci-connection-limit
 ---
 
 # CircleCI limitations
-<a name="circleci-connection-limitations"></a>
 
 The following are limitations or notes for CircleCI:
 + CircleCI does not support either field based or record based partitioning.

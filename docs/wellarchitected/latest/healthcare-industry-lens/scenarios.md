@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Scenarios
-<a name="scenarios"></a>
 
 In this section, we cover five key healthcare scenarios and how they influence the design and architecture of your healthcare application workloads on AWS. We will present characteristics of each scenario and answers to Well-Architected Framework questions pertaining to the scenario, as well as reference architectures where applicable.
 

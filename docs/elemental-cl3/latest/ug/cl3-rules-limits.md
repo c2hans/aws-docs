@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/cl3-rules-limits
 ---
 
 # Conductor Live rules and limits
-<a name="cl3-rules-limits"></a>
 
 The following table provides a summary of the rules and constraints that apply to AWS Elemental Conductor Live features.
 

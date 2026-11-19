@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/a2i-rekognition.ht
 ---
 
 # Reviewing inappropriate content with Amazon Augmented AI
-<a name="a2i-rekognition"></a>
 
 Amazon Augmented AI (Amazon A2I) enables you to build the workflows that are required for human review of machine learning predictions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # RDS version numbers in RDS for MySQL
-<a name="USER_UpgradeDBInstance.MySQL.rds.version"></a>
 
 RDS version numbers use either the `{{major}}.{{minor}}.{{patch}}` or the `{{major}}.{{minor}}.{{patch.YYYYMMDD}}` naming scheme. Amazon RDS Extended Support versions use the {{minor-RDS.YYYYMMDD}} minor version naming scheme.
 

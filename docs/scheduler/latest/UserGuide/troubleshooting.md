@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/troubleshooti
 ---
 
 # Troubleshooting Amazon EventBridge Scheduler
-<a name="troubleshooting"></a>
 
 You can use the topics in this section to troubleshoot common Amazon EventBridge Scheduler issues.
 

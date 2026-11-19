@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_HeatM
 ---
 
 # HeatMapSortConfiguration
-<a name="API_HeatMapSortConfiguration"></a>
 
 The sort configuration of a heat map.
 

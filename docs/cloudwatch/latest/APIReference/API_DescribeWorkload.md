@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Descr
 ---
 
 # DescribeWorkload
-<a name="API_DescribeWorkload"></a>
 
 Describes a workload and its configuration.
 

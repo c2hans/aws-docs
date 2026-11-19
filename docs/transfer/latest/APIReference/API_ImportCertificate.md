@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ImportC
 ---
 
 # ImportCertificate
-<a name="API_ImportCertificate"></a>
 
 Imports the signing and encryption certificates that you need to create local (AS2) profiles and partner profiles.
 

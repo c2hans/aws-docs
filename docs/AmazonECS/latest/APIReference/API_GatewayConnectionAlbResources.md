@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayConnectionAlbResources
-<a name="API_GatewayConnectionAlbResources"></a>
 
 The Application Load Balancer resources that a gateway created and manages for a connection.
 

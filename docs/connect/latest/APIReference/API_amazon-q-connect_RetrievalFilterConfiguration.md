@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # RetrievalFilterConfiguration
-<a name="API_amazon-q-connect_RetrievalFilterConfiguration"></a>
 
 Configuration for filtering content during retrieval operations.
 
@@ -15,7 +14,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** andAll **   <a name="connect-Type-amazon-q-connect_RetrievalFilterConfiguration-andAll"></a>
 Filter configuration that requires all conditions to be met.
-Type: Array of [RetrievalFilterConfiguration](#API_amazon-q-connect_RetrievalFilterConfiguration) objects
+Type: Array of [RetrievalFilterConfiguration](API_amazon-q-connect_RetrievalFilterConfiguration.md) objects
 Array Members: Minimum number of 2 items.
 Required: No
 
@@ -66,7 +65,7 @@ Required: No
 
  ** orAll **   <a name="connect-Type-amazon-q-connect_RetrievalFilterConfiguration-orAll"></a>
 Filter configuration where any condition can be met.
-Type: Array of [RetrievalFilterConfiguration](#API_amazon-q-connect_RetrievalFilterConfiguration) objects
+Type: Array of [RetrievalFilterConfiguration](API_amazon-q-connect_RetrievalFilterConfiguration.md) objects
 Array Members: Minimum number of 2 items.
 Required: No
 

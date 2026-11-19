@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/understand-how
 ---
 
 # How suspended processes affect other processes
-<a name="understand-how-suspending-processes-affects-other-processes"></a>
 
 The following sections describe what happens when different processes are suspended individually.
 

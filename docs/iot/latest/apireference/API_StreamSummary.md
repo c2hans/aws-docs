@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_StreamSummar
 ---
 
 # StreamSummary
-<a name="API_StreamSummary"></a>
 
 A summary of a stream.
 

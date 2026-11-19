@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_R
 ---
 
 # RedshiftConnect
-<a name="API_RedshiftConnect"></a>
 
 Configuration for enabling trusted identity propagation with Redshift Connect.
 

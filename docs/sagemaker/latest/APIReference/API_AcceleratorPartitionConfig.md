@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Accele
 ---
 
 # AcceleratorPartitionConfig
-<a name="API_AcceleratorPartitionConfig"></a>
 
 Configuration for allocating accelerator partitions.
 

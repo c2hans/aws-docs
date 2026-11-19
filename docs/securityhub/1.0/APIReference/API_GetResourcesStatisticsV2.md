@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetReso
 ---
 
 # GetResourcesStatisticsV2
-<a name="API_GetResourcesStatisticsV2"></a>
 
 Retrieves statistical information about AWS resources and their associated security findings.
 

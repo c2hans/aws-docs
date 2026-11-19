@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Operations_A
 ---
 
 # AWS IoT Core Device Advisor
-<a name="API_Operations_AWS_IoT_Core_Device_Advisor"></a>
 
 The following actions are supported by AWS IoT Core Device Advisor:
 +  [CreateSuiteDefinition](API_iotdeviceadvisor_CreateSuiteDefinition.md)

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Resolver::FirewallRuleGroup PartnerThreatProtectionConfig
-<a name="aws-properties-route53resolver-firewallrulegroup-partnerthreatprotectionconfig"></a>
 
 The configuration for a partner threat-protection rule. To enumerate the partners available in your account, call ListFirewallRuleTypes with `RuleType` set to `PartnerThreatProtection` — each returned FirewallRuleTypeDefinition includes a SubscriptionInfo identifying the AWS Marketplace product that backs it.
 

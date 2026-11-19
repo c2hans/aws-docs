@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-tempor
 ---
 
 # Using temporary credentials to connect to Amazon Neptune
-<a name="iam-auth-temporary-credentials"></a>
 
 Amazon Neptune supports IAM authentication using temporary credentials.
 

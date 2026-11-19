@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateComp
 ---
 
 # CreateComputeEnvironment
-<a name="API_CreateComputeEnvironment"></a>
 
 Creates an AWS Batch compute environment. You can create `MANAGED` or `UNMANAGED` compute environments. `MANAGED` compute environments can use Amazon EC2 or AWS Fargate resources. `UNMANAGED` compute environments can only use EC2 resources.
 

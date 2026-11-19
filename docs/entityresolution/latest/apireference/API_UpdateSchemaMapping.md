@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # UpdateSchemaMapping
-<a name="API_UpdateSchemaMapping"></a>
 
 Updates a schema mapping.
 

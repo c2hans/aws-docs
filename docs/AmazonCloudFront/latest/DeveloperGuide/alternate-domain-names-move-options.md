@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/a
 ---
 
 # Move the alternate domain name
-<a name="alternate-domain-names-move-options"></a>
 
 Depending on your situation, choose from the following ways to move the alternate domain name:
 

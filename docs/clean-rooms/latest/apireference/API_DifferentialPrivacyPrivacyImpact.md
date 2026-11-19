@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Diff
 ---
 
 # DifferentialPrivacyPrivacyImpact
-<a name="API_DifferentialPrivacyPrivacyImpact"></a>
 
 Information about the number of aggregation functions that the member who can query can run given the epsilon and noise parameters.
 

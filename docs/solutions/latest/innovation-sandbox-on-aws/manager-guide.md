@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Manager Guide
-<a name="manager-guide"></a>
 
 This section describes the various actions a Manager can perform using the web UI.
 

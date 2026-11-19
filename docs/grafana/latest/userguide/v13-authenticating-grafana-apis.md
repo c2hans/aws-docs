@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-authenticat
 ---
 
 # Authenticate with service accounts
-<a name="v13-authenticating-grafana-apis"></a>
 
 ## Using service accounts
 <a name="v13-service-accounts"></a>

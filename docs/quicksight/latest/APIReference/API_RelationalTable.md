@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Relat
 ---
 
 # RelationalTable
-<a name="API_RelationalTable"></a>
 
 A physical table type for relational data sources.
 

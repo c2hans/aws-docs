@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/security_ia
 ---
 
 # Identity-based policy examples for Amazon Q Developer
-<a name="security_iam_id-based-policy-examples"></a>
 
 The following example IAM policies control permissions for various Amazon Q Developer actions. Use them to allow or deny Amazon Q Developer access for your users, roles, or groups.
 

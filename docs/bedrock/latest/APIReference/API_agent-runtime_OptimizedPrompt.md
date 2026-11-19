@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # OptimizedPrompt
-<a name="API_agent-runtime_OptimizedPrompt"></a>
 
 Contains information about the optimized prompt.
 

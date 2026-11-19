@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Weave GitOps
-<a name="weave"></a>
 
 Weave GitOps was developed by Weaveworks, which is the company that introduced the term *GitOps*. This tool provides a comprehensive GitOps solution that builds upon the core GitOps principles.
 

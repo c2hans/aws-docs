@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF04-BP04 Choose data storage based on access patterns
-<a name="perf_right_database_solution_access_patterns"></a>
 
 Use the access patterns of the workload and requirements of the applications to decide on optimal data services and technologies to use.
 

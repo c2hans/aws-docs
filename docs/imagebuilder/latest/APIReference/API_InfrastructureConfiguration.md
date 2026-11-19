@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Inf
 ---
 
 # InfrastructureConfiguration
-<a name="API_InfrastructureConfiguration"></a>
 
 Details of the infrastructure configuration.
 

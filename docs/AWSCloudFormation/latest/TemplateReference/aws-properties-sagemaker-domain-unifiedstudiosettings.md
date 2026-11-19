@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Domain UnifiedStudioSettings
-<a name="aws-properties-sagemaker-domain-unifiedstudiosettings"></a>
 
 The settings that apply to an Amazon SageMaker AI domain when you use it in Amazon SageMaker Unified Studio.
 

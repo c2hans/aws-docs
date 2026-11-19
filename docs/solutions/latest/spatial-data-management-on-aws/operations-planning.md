@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Operations planning
-<a name="operations-planning"></a>
 
 ## Monitoring and Operations
 <a name="monitoring-and-operations"></a>

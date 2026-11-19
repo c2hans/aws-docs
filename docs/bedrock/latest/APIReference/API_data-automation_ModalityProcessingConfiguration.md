@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ModalityProcessingConfiguration
-<a name="API_data-automation_ModalityProcessingConfiguration"></a>
 
 This element is used to determine if the modality it is associated with is enabled or disabled. All modalities are enabled by default.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/investi
 ---
 
 # Investigating anomaly root causes with AWS assistant
-<a name="investigating-ad"></a>
 
 You can use the AWS assistant to investigate the root cause of a detected cost anomaly. When you investigate an anomaly, the AWS assistant analyzes your cost data and CloudTrail events to identify what changed, when, where, who triggered the change, and why it happened.
 

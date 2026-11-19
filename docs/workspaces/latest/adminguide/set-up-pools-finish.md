@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/set-up-pool
 ---
 
 # Delete a pool
-<a name="set-up-pools-finish"></a>
 
 You can delete pools to free up resources and to avoid unintended charges to your account. We recommend stopping any unused, running pools.
 

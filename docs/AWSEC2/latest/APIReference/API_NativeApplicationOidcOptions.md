@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NativeApp
 ---
 
 # NativeApplicationOidcOptions
-<a name="API_NativeApplicationOidcOptions"></a>
 
 Describes the OpenID Connect (OIDC) options.
 

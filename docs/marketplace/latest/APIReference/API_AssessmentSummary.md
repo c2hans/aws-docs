@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Asse
 ---
 
 # AssessmentSummary
-<a name="API_AssessmentSummary"></a>
 
 Summarized information about an assessment.
 

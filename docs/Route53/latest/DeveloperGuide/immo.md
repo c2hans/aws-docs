@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/immo.html
 ---
 
 # .immo
-<a name="immo"></a>
 
 Used by the real estate sector.
 

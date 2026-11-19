@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # As2805KekValidationType
-<a name="API_As2805KekValidationType"></a>
 
 Parameter information for generating a random key for KEK validation to perform node-to-node initialization.
 

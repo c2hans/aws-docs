@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/today.html
 ---
 
 # .today
-<a name="today"></a>
 
 Used for information about current events, news, weather, entertainment, and more.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_FailedCust
 ---
 
 # FailedCustomVocabularyItem
-<a name="API_FailedCustomVocabularyItem"></a>
 
 The unique failed custom vocabulary item from the custom vocabulary list.
 

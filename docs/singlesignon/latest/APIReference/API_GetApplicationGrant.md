@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Get
 ---
 
 # GetApplicationGrant
-<a name="API_GetApplicationGrant"></a>
 
 Retrieves details about an application grant.
 

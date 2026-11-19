@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/enabling-fsrm.ht
 ---
 
 # Getting Started with File Server Resource Manager
-<a name="enabling-fsrm"></a>
 
 You can enable File Server Resource Manager (FSRM) when creating a new Amazon FSx for Windows File Server file system, or you can update your existing file system to enable FSRM.
 

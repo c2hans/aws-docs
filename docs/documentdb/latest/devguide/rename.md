@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/rename.html
 ---
 
 # $rename
-<a name="rename"></a>
 
 The `$rename` operator in Amazon DocumentDB is used to rename a field in a document. This operator can be particularly useful when you need to update the structure of your documents or align them with new data models.
 

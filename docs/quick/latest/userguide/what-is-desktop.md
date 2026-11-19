@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/what-is-desktop.h
 ---
 
 # What is AWS Quick on desktop?
-<a name="what-is-desktop"></a>
 
 AWS Quick on desktop is a native application that extends AWS Quick to your machine. It gives Quick direct, persistent access to your files, your connected services, and the context of how your work fits together.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_GetGroup.htm
 ---
 
 # GetGroup
-<a name="API_GetGroup"></a>
 
 Returns information about a specified resource group.
 

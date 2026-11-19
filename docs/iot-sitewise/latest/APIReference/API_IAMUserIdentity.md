@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_IAM
 ---
 
 # IAMUserIdentity
-<a name="API_IAMUserIdentity"></a>
 
 Contains information about an AWS Identity and Access Management user.
 

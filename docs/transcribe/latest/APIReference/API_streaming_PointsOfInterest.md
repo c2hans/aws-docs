@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # PointsOfInterest
-<a name="API_streaming_PointsOfInterest"></a>
 
 Contains the timestamps of matched categories.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DBMo
 ---
 
 # DBModVirtualSource
-<a name="DBModVirtualSource"></a>
 
 **Description**: Provides permissions for the database connector used by ATXHelix during the offline (DMS-free) database modernization workflow
 

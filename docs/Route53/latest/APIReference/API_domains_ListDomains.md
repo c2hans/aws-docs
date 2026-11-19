@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # ListDomains
-<a name="API_domains_ListDomains"></a>
 
 This operation returns all the domain names registered with Amazon Route 53 for the current AWS account if no filtering conditions are used.
 

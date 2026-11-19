@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Logical Operators
-<a name="sql-reference-logical-operators"></a>
 
 Logical operators let you establish conditions and test their results.
 

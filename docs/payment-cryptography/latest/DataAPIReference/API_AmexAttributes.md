@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # AmexAttributes
-<a name="API_AmexAttributes"></a>
 
 Parameters to derive the confidentiality and integrity keys for a payment card using Amex derivation method.
 

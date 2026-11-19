@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-intro.
 ---
 
 # Introduction to the SageMaker AI distributed data parallelism library
-<a name="data-parallel-intro"></a>
 
 The SageMaker AI distributed data parallelism (SMDDP) library is a collective communication library that improves compute performance of distributed data parallel training. The SMDDP library addresses communications overhead of the key collective communication operations by offering the following.
 

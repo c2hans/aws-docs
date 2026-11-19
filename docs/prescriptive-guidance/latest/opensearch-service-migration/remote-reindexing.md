@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # 3. Remote reindexing
-<a name="remote-reindexing"></a>
 
 In this case, the indexes of the source self-managed Elasticsearch or OpenSearch cluster are migrated into the Amazon OpenSearch Service domain using the [reindex document API operation](https://opensearch.org/docs/latest/opensearch/reindex-data). You can use the reindex document API operation to create an index from an existing Elasticsearch or OpenSearch index. The existing index can be in the same cluster where you run the reindex operation, or it can be in a remote cluster. Amazon OpenSearch Service supports using the reindex document API operation with remote clusters. You can reindex from an index in a self-managed Elasticsearch to an index in Amazon OpenSearch Service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-arrlen.htm
 ---
 
 # JSON.ARRLEN
-<a name="json-arrlen"></a>
 
 Get length of the array values at the path.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateAccount.
 ---
 
 # UpdateAccount
-<a name="API_UpdateAccount"></a>
 
 Changes information about the current Account resource.
 

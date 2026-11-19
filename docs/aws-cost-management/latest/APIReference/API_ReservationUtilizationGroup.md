@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservationUtilizationGroup
-<a name="API_ReservationUtilizationGroup"></a>
 
 A group of reservations that share a set of attributes.
 

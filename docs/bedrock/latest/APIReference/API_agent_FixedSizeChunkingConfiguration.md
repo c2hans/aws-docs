@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fi
 ---
 
 # FixedSizeChunkingConfiguration
-<a name="API_agent_FixedSizeChunkingConfiguration"></a>
 
 Configurations for when you choose fixed-size chunking. If you set the `chunkingStrategy` as `NONE`, exclude this field.
 

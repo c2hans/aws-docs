@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/supported-versi
 ---
 
 # Supported versions for SAP deployments
-<a name="supported-versions"></a>
 
 The following section provides information about the versions of operating systems, databases, and applications supported by AWS Systems Manager for SAP.
 

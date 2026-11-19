@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CreateUserPool
-<a name="API_CreateUserPool"></a>
 
 Creates a new Amazon Cognito user pool. This operation sets basic and advanced configuration options.
 

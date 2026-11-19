@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LogGroupImpact
-<a name="API_LogGroupImpact"></a>
 
 Describes the estimated effect of an account-level retention policy change on one log group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TaskStartedEventDetails
-<a name="API_TaskStartedEventDetails"></a>
 
 Contains details about the start of a task during an execution.
 

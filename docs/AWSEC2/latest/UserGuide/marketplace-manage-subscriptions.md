@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/marketplace-mana
 ---
 
 # Manage your AWS Marketplace subscriptions
-<a name="marketplace-manage-subscriptions"></a>
 
 On the AWS Marketplace website, you can check your subscription details, view the vendor's usage instructions, manage your subscriptions, and more.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTDeviceDefenderReplaceDefaultPolicyMitigationAction
-<a name="AWSIoTDeviceDefenderReplaceDefaultPolicyMitigationAction"></a>
 
 **Description**: Provides write access to IoT policies for execution of REPLACE\_DEFAULT\_POLICY\_VERSION mitigation action
 

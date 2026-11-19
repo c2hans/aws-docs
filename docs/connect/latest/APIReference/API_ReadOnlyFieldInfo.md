@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ReadOnly
 ---
 
 # ReadOnlyFieldInfo
-<a name="API_ReadOnlyFieldInfo"></a>
 
 Indicates a field that is read-only to an agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_Operati
 ---
 
 # Amazon WorkMail
-<a name="API_Operations_Amazon_WorkMail"></a>
 
 The following actions are supported by Amazon WorkMail:
 +  [AssociateDelegateToResource](API_AssociateDelegateToResource.md)

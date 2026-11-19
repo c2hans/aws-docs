@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateIndexi
 ---
 
 # UpdateIndexingConfiguration
-<a name="API_UpdateIndexingConfiguration"></a>
 
 Updates the search configuration.
 

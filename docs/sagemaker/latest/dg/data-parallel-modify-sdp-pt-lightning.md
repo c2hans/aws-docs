@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-modify
 ---
 
 # Use the SMDDP library in your PyTorch Lightning training script
-<a name="data-parallel-modify-sdp-pt-lightning"></a>
 
 If you want to bring your [PyTorch Lightning](https://pytorch-lightning.readthedocs.io/en/latest/starter/introduction.html) training script and run a distributed data parallel training job in SageMaker AI, you can run the training job with minimal changes in your training script. The necessary changes include the following: import the `smdistributed.dataparallel` library’s PyTorch modules, set up the environment variables for PyTorch Lightning to accept the SageMaker AI environment variables that are preset by the SageMaker training toolkit, and activate the SMDDP library by setting the process group backend to `"smddp"`. To learn more, walk through the following instructions that break down the steps with code examples.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with S3 Event Notifications
-<a name="examples-s3-event-notifications"></a>
 
 To help you monitor activity in your buckets, Amazon S3 can send notifications when certain events happen. The Amazon S3 User Guide provides information on the [notifications that a bucket can send out](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html#notification-how-to-overview).
 

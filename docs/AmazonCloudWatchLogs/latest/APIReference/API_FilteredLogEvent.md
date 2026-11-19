@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # FilteredLogEvent
-<a name="API_FilteredLogEvent"></a>
 
 Represents a matched event.
 

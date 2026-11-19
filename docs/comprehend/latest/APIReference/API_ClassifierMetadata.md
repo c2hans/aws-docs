@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Class
 ---
 
 # ClassifierMetadata
-<a name="API_ClassifierMetadata"></a>
 
 Provides information about a document classifier.
 

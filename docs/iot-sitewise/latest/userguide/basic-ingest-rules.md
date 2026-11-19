@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/basic-inge
 ---
 
 # Reduce costs with Basic Ingest in AWS IoT SiteWise
-<a name="basic-ingest-rules"></a>
 
 AWS IoT Core provides a feature called Basic Ingest that you can use to send data through AWS IoT Core without incurring [AWS IoT messaging costs](https://aws.amazon.com/iot-core/pricing/). Basic Ingest optimizes data flow for high volume data ingestion workloads by removing the publish/subscribe message broker from the ingestion path. You can use Basic Ingest if you know which rules your messages should be routed to.
 

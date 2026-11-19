@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/client-devi
 ---
 
 # AWS-provided client device components
-<a name="client-device-components"></a>
 
 AWS IoT Greengrass provides the following public components that you can deploy to core devices. These components enable client devices to connect and communicate with a core device.
 

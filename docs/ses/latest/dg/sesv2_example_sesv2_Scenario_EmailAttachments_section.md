@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sesv2_example_sesv2_Scenar
 ---
 
 # Send emails with attachments using Amazon SES API v2
-<a name="sesv2_example_sesv2_Scenario_EmailAttachments_section"></a>
 
 The following code example shows how to send emails with attachments using Amazon SES API v2.
 + Create an email template for bulk sends.

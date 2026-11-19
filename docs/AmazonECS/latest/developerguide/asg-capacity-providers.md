@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capa
 ---
 
 # Amazon ECS capacity providers for EC2 workloads
-<a name="asg-capacity-providers"></a>
 
 When you use Amazon EC2 instances for your capacity, you use Auto Scaling groups to manage the Amazon EC2 instances registered to their clusters. Auto Scaling helps ensure that you have the correct number of Amazon EC2 instances available to handle the application load.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteRolePo
 ---
 
 # DeleteRolePolicy
-<a name="API_DeleteRolePolicy"></a>
 
 Deletes the specified inline policy that is embedded in the specified IAM role.
 

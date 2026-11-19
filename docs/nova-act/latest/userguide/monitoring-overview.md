@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/monitoring-ove
 ---
 
 # Monitoring Amazon Nova Act
-<a name="monitoring-overview"></a>
 
 ## Monitoring
 <a name="monitoring"></a>

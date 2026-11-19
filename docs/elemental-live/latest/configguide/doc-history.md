@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/doc-hi
 ---
 
 # Document history for configuration guide
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of Elemental Live.
 + **API version: 2.25 and later**

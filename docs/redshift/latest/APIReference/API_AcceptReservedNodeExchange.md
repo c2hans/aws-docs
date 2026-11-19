@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_AcceptR
 ---
 
 # AcceptReservedNodeExchange
-<a name="API_AcceptReservedNodeExchange"></a>
 
 Exchanges a DC1 Reserved Node for a DC2 Reserved Node with no changes to the configuration (term, payment type, or number of nodes) and no additional costs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetRe
 ---
 
 # GetRestoreTestingSelection
-<a name="API_GetRestoreTestingSelection"></a>
 
 Returns RestoreTestingSelection, which displays resources and elements of the restore testing plan.
 

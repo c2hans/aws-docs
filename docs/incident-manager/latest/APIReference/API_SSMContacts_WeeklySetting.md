@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # WeeklySetting
-<a name="API_SSMContacts_WeeklySetting"></a>
 
 Information about rotations that recur weekly.
 

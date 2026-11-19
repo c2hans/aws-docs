@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Option
 ---
 
 # OptionVersion
-<a name="API_OptionVersion"></a>
 
 The version for an option. Option group option versions are returned by the `DescribeOptionGroupOptions` action.
 

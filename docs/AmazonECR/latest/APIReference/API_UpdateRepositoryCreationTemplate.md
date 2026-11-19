@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Update
 ---
 
 # UpdateRepositoryCreationTemplate
-<a name="API_UpdateRepositoryCreationTemplate"></a>
 
 Updates an existing repository creation template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateCu
 ---
 
 # CreateCustomModel
-<a name="API_CreateCustomModel"></a>
 
 Creates a new custom model in Amazon Bedrock. After the model is active, you can use it for inference.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/hubspot-connection-option
 ---
 
 # HubSpot connection options
-<a name="hubspot-connection-options"></a>
 
 The following are connection options for HubSpot:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in HubSpot.

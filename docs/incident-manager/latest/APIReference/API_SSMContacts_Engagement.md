@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Engagement
-<a name="API_SSMContacts_Engagement"></a>
 
 Incident Manager reaching out to a contact or escalation plan to engage contact during an incident.
 

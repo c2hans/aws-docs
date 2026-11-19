@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-
 ---
 
 # Disable automatic key rotation
-<a name="rotating-keys-disable"></a>
 
 After enabling automatic key rotation on a customer managed key, you can choose to disable it at any time.
 

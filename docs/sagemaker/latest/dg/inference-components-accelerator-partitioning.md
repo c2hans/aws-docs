@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-components
 ---
 
 # Using GPU partitions on SageMaker AI real-time endpoints
-<a name="inference-components-accelerator-partitioning"></a>
 
 Amazon SageMaker AI GPU partitioning (GPU partitioning) lets you run several models on one Graphics Processing Unit (GPU). GPU partitioning uses NVIDIA Multi-Instance GPU (MIG) to divide one physical GPU into multiple independent partitions. MIG gives each partition a fixed share of the GPU's compute slices and a dedicated block of its memory.
 

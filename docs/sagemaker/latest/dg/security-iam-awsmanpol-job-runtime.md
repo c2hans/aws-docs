@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS managed policies for SageMaker AI job runtime
-<a name="security-iam-awsmanpol-job-runtime"></a>
 
 Attach this policy to the IAM role that your agent runtime uses. It grants your agent runtime the permissions needed to invoke Amazon SageMaker AI job runtime APIs during model customization for sample generation, trajectory completion, and reward submission.
 

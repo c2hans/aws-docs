@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-topic-attributes.html
 ---
 
 # Amazon SNS message delivery status
-<a name="sns-topic-attributes"></a>
 
 Amazon SNS provides support for logging the delivery status of notification messages sent to topics with the following Amazon SNS endpoints:
 + Amazon Data Firehose

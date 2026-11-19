@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/moni
 ---
 
 # Monitoring DNS activity and performance with Amazon Route 53 Global Resolver
-<a name="monitoring"></a>
 
 Amazon Route 53 Global Resolver provides comprehensive visibility into DNS activity across your organization, enabling you to identify security threats, analyze client device behavior, and maintain compliance. This chapter covers both the monitoring tools available and detailed procedures for setting up DNS monitoring, configuring logging destinations, and analyzing DNS data to investigate threats and optimize performance.
 

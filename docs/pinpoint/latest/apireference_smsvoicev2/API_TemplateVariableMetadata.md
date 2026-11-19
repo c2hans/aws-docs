@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # TemplateVariableMetadata
-<a name="API_TemplateVariableMetadata"></a>
 
 Contains metadata about a template variable.
 

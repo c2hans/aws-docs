@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 4. Providing secure access, usage, and implementation of tools
-<a name="gen-ai-customization"></a>
 
 |  |
 | --- |

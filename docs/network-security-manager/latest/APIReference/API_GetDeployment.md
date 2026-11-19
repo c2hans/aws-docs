@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # GetDeployment
-<a name="API_GetDeployment"></a>
 
 Retrieves the details of the specified deployment, including coverage information and any warnings.
 

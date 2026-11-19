@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autogluon-tabular-mo
 ---
 
 # How to use SageMaker AI AutoGluon-Tabular
-<a name="autogluon-tabular-modes"></a>
 
 You can use AutoGluon-Tabular as an Amazon SageMaker AI built-in algorithm. The following section describes how to use AutoGluon-Tabular with the SageMaker Python SDK. For information on how to use AutoGluon-Tabular from the Amazon SageMaker Studio Classic UI, see [SageMaker JumpStart pretrained models](studio-jumpstart.md).
 + **Use AutoGluon-Tabular as a built-in algorithm**

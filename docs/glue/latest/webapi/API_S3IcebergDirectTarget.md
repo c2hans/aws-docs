@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3IcebergDirectTa
 ---
 
 # S3IcebergDirectTarget
-<a name="API_S3IcebergDirectTarget"></a>
 
 Specifies a target that writes to an Iceberg data source in Amazon S3.
 

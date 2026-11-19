@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateAnomalyMonitor
-<a name="API_UpdateAnomalyMonitor"></a>
 
 Updates an existing cost anomaly monitor. The changes made are applied going forward, and doesn't change anomalies detected in the past.
 

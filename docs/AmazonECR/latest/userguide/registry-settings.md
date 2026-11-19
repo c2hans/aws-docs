@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry-sett
 ---
 
 # Private registry settings in Amazon ECR
-<a name="registry-settings"></a>
 
 Amazon ECR uses private registry settings to configure features at the registry level. The private registry settings are configured separately for each Region. You can use private registry settings to configure the following features.
 + **Registry permissions** – A registry permissions policy provides control over the replication and pull through cache permissions. For more information, see [Private registry permissions in Amazon ECR](registry-permissions.md).

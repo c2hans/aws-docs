@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # RequiredActivatedType
-<a name="API_RequiredActivatedType"></a>
 
 For extensions that are modules, a public third-party extension that must be activated in your account in order for the module itself to be activated.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/firehose_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `PutRecordBatch` with an AWS SDK or CLI
-<a name="firehose_example_firehose_PutRecordBatch_section"></a>
 
 The following code examples show how to use `PutRecordBatch`.
 

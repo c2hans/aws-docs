@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/contract-st
 ---
 
 # Agreement structure
-<a name="contract-structure-seller"></a>
 
 As a seller, your agreements include the following items:
 + Your end user license agreement (EULA).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Redshift-using-
 ---
 
 # Using the Amazon Redshift data source
-<a name="Redshift-using-the-data-source"></a>
 
 ## IAM policies
 <a name="Redshift-policies"></a>

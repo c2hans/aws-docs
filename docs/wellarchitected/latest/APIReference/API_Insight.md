@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # Insight
-<a name="API_Insight"></a>
 
 An insight describing a usage pattern and the signals detected.
 

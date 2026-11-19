@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-outposts-networ
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Prepare local Amazon EKS clusters on AWS Outposts for network disconnects
-<a name="eks-outposts-network-disconnects"></a>
 
 If your local network has lost connectivity with the AWS Cloud, you can continue to use your local Amazon EKS cluster on an Outpost. This topic covers how you can prepare your local cluster for network disconnects and related considerations.
 + Local clusters enable stability and continued operations during temporary, unplanned network disconnects. AWS Outposts remains a fully connected offering that acts as an extension of the AWS Cloud in your data center. In the event of network disconnects between your Outpost and AWS Cloud, we recommend attempting to restore your connection. For instructions, see [AWS Outposts rack network troubleshooting checklist](https://docs.aws.amazon.com/outposts/latest/userguide/network-troubleshoot.html) in the * AWS Outposts User Guide*. For more information about how to troubleshoot issues with local clusters, see [Troubleshoot local Amazon EKS clusters on AWS Outposts](eks-outposts-troubleshooting.md).

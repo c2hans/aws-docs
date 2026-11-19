@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeAssociationExecutionTargets
-<a name="API_DescribeAssociationExecutionTargets"></a>
 
 Views information about a specific execution of a specific association.
 

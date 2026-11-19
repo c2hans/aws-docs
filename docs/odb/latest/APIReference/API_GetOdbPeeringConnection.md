@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetOdbPeerin
 ---
 
 # GetOdbPeeringConnection
-<a name="API_GetOdbPeeringConnection"></a>
 
 Retrieves information about an ODB peering connection.
 

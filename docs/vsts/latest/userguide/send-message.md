@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/send-message.html
 ---
 
 # AWS Send SNS or SQS Message task
-<a name="send-message"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

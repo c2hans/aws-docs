@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC 8  How do you protect your data at rest?
-<a name="sec-08"></a>
 
 Protect your data at rest by implementing multiple controls, to reduce the risk of unauthorized access or mishandling.
 

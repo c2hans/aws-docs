@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # AWS Systems Manager Patch Manager
-<a name="patch-manager"></a>
 
 Patch Manager automates the process of patching managed nodes with both security-related updates and other types of updates.
 

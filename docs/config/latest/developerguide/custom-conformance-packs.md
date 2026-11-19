@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/custom-conf
 ---
 
 # Custom Conformance Packs for AWS Config
-<a name="custom-conformance-packs"></a>
 
 A custom conformance pack is a unique collection of AWS Config rules and remediation actions that you can deploy together in an account and an AWS Region, or across an organization in AWS Organizations.
 

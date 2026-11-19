@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 A structure that describes a request field with a validation error.
 

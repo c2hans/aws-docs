@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_DeriveShared
 ---
 
 # DeriveSharedSecret
-<a name="API_DeriveSharedSecret"></a>
 
 Derives a shared secret using a key agreement algorithm.
 

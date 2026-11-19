@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_UpdateData
 ---
 
 # UpdateDataRetention
-<a name="API_UpdateDataRetention"></a>
 
 Updates the data retention bot settings, allowing you to enable or disable the data retention service, or acknowledge the public key message.
 

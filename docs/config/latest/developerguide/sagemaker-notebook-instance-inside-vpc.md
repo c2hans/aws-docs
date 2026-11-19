@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-n
 ---
 
 # sagemaker-notebook-instance-inside-vpc
-<a name="sagemaker-notebook-instance-inside-vpc"></a>
 
 Checks if an Amazon SageMaker notebook instance is launched within a VPC or within a list of approved subnets. The rule is NON\_COMPLIANT if a notebook instance is not launched within a VPC or if its subnet ID is not included in the parameter list.
 

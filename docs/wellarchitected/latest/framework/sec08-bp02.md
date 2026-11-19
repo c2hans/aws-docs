@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec08-b
 ---
 
 # SEC08-BP02 Enforce encryption at rest
-<a name="sec08-bp02"></a>
 
  Encrypting data at rest keeps it confidential even when the storage layer is exposed. Because storage is easy to create and misconfigure, make encryption the default for new resources and keep an inventory of any unencrypted data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ProcessorConfiguration
-<a name="API_messaging-chime_ProcessorConfiguration"></a>
 
 A processor's metadata.
 

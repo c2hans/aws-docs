@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_AutoScalingP
 ---
 
 # AutoScalingPolicyStateChangeReason
-<a name="API_AutoScalingPolicyStateChangeReason"></a>
 
 The reason for an [AutoScalingPolicyStatus](API_AutoScalingPolicyStatus.md) change.
 

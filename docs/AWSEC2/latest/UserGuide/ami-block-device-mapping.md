@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-block-device
 ---
 
 # Add block device mappings to an AMI
-<a name="ami-block-device-mapping"></a>
 
 Each AMI has a block device mapping that specifies the block devices to attach to an instance when it is launched from the AMI. To add more block devices to an AMI, you must create your own AMI.
 

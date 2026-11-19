@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Tutorial: Fix a production quality regression
-<a name="omni-agents-close-the-loop"></a>
 
 This tutorial takes an agent through the full lifecycle in CloudWatch Omni: instrument and test it in the IDE extension, deploy it and monitor it in the Omni web UI, catch a real quality problem on live traffic, reproduce and fix it against the exact failing runs, and set up a continuous check so the same problem cannot return unnoticed.
 

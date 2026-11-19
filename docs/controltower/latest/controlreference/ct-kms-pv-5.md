@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.KMS.PV.5] Require that an AWS KMS customer-managed key (CMK) is configured with imported key material
-<a name="ct-kms-pv-5"></a>
 
 This control disallows creation of KMS keys that do not have a key origin of `EXTERNAL`.
 

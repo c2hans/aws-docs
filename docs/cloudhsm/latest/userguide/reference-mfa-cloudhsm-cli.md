@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/reference-mfa-
 ---
 
 # Token file reference for MFA with CloudHSM CLI
-<a name="reference-mfa-cloudhsm-cli"></a>
 
 The token file generated when either registering a multi-factor authentication (MFA) public key or when attempting to login to the CloudHSM CLI using MFA consists of the following:
 + **Tokens:** An array base64 encoded unsigned/signed token pairs in the form of JSON object literals.

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/github-act
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # 'GitHub Actions' action YAML
-<a name="github-action-ref"></a>
 
 The following is the YAML definition of the **GitHub Actions** action.
 

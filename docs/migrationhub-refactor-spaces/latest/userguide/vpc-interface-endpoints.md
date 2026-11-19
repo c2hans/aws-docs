@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/user
 AWS Migration Hub Refactor Spaces is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub Refactor Spaces, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Access Refactor Spaces using an interface endpoint (AWS PrivateLink)
-<a name="vpc-interface-endpoints"></a>
 
 You can use AWS PrivateLink to create a private connection between your VPC and AWS Migration Hub Refactor Spaces (Refactor Spaces). You can access Refactor Spaces as if it were in your VPC, without the use of an internet gateway, NAT device, VPN connection, or Direct Connect connection. Instances in your VPC don't need public IP addresses to access Refactor Spaces.
 

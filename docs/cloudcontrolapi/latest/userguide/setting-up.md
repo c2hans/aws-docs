@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/setting
 ---
 
 # Setting up AWS Cloud Control API
-<a name="setting-up"></a>
 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>

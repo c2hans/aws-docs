@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-m
 ---
 
 # Endpoints
-<a name="realtime-endpoints-manage"></a>
 
 After deploying your model to an endpoint, you might want to view and manage the endpoint. With SageMaker AI, you can view the status and details of your endpoint, check metrics and logs to monitor your endpoint’s performance, update the models deployed to your endpoint, and more.
 

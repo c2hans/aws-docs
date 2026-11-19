@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_J
 ---
 
 # JobDriver
-<a name="API_JobDriver"></a>
 
 The driver that the job runs on.
 

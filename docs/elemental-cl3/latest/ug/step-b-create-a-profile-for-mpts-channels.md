@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/step-b-create-a-
 ---
 
 # Creating a profile for an SPTS channel
-<a name="step-b-create-a-profile-for-mpts-channels"></a>
 
 An SPTS channel is a channel that you plan to use in an MPTS that you will run on AWS Elemental Statmux.
 

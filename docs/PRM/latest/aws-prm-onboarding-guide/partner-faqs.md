@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/part
 ---
 
 # Partner FAQ
-<a name="partner-faqs"></a>
 
 The following questions are frequently asked by AWS Partners implementing Partner Revenue Measurement.
 

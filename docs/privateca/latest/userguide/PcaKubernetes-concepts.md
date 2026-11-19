@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaKubernetes
 ---
 
 # Concepts
-<a name="PcaKubernetes-concepts"></a>
 
 The following diagram shows some of the options available for using TLS in an Amazon EKS cluster. The example cluster sits behind a load balancer. The numbers identify possible endpoints for TLS-secured communications.
 

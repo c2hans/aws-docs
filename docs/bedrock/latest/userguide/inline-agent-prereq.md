@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inline-agent-pr
 ---
 
 # Prerequisites
-<a name="inline-agent-prereq"></a>
 
 **Note**
 Configuring and invoking an inline agent feature is in preview release for Amazon Bedrock and is subject to change.

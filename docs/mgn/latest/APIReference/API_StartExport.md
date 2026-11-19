@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartExport.
 ---
 
 # StartExport
-<a name="API_StartExport"></a>
 
 Start export.
 

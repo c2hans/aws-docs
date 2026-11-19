@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/vpc-configuration.html
 ---
 
 # VPC Configuration
-<a name="vpc-configuration"></a>
 
 ## Dedicated VPC for Cluster
 <a name="_dedicated_vpc_for_cluster"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_FilterCriterio
 ---
 
 # FilterCriterion
-<a name="API_FilterCriterion"></a>
 
 Describes the criteria for a filter.
 

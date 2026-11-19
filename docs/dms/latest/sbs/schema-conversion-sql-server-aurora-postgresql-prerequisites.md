@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-sql-ser
 ---
 
 # Prerequisites for migrating SQL Server databases to Aurora PostgreSQL with DMS schema conversion
-<a name="schema-conversion-sql-server-aurora-postgresql-prerequisites"></a>
 
 The following prerequisites are also required to complete this walkthrough:
 + Familiarity with the AWS Management Console, AWS Database Migration Service, and SQL.

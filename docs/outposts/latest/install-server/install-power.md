@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/install-p
 ---
 
 # Step 4: Connect the power source and verify power to your Outposts server
-<a name="install-power"></a>
 
 To complete power up, you attach the NSK, connect the server to a power source, and verify that the server has powered on. Consider the following information about powering the server:
 + The server functions with one power source, but AWS recommends you use two power sources for redundancy.

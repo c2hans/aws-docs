@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ClientSideAc
 ---
 
 # ClientSideAction
-<a name="API_ClientSideAction"></a>
 
 This is part of the `AWSManagedRulesAntiDDoSRuleSet` `ClientSideActionConfig` configuration in `ManagedRuleGroupConfig`.
 

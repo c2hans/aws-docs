@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Manag
 ---
 
 # Managing alarms
-<a name="Manage-CloudWatch-Alarm"></a>
 
 **Topics**
 + [Edit or delete a CloudWatch alarm](Edit-CloudWatch-Alarm.md)

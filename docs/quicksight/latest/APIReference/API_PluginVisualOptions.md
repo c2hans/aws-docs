@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Plugi
 ---
 
 # PluginVisualOptions
-<a name="API_PluginVisualOptions"></a>
 
 The options and persisted properties for the plugin visual.
 

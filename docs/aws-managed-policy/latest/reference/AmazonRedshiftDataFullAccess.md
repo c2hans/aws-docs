@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRedshiftDataFullAccess
-<a name="AmazonRedshiftDataFullAccess"></a>
 
 **Description**: This policy provides full access to Amazon Redshift Data APIs. This policy also grants scoped access to other required services.
 

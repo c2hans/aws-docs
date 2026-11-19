@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_NoneAction.h
 ---
 
 # NoneAction
-<a name="API_NoneAction"></a>
 
 Specifies that AWS WAF should do nothing. This is used for the `OverrideAction` setting on a [Rule](API_Rule.md) when the rule uses a rule group reference statement.
 

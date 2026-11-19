@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Reference an OpenAPI specification external file with Infrastructure Composer
-<a name="using-composer-external-files-examples-example1"></a>
 
 This example uses Infrastructure Composer from the console to reference an external OpenAPI specification file that defines a API Gateway REST API.
 

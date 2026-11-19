@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_InlineSetting.html
 ---
 
 # InlineSetting
-<a name="API_InlineSetting"></a>
 
 A per-run configuration that overrides or merges with fields from `DefaultRunSetting` for a specific run.
 

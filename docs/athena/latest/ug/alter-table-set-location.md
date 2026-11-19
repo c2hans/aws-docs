@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/alter-table-set-locatio
 ---
 
 # ALTER TABLE SET LOCATION
-<a name="alter-table-set-location"></a>
 
 Changes the location for the table named `table_name`, and optionally a partition with `partition_spec`.
 

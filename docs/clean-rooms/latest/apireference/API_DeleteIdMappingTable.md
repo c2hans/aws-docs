@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteIdMappingTable
-<a name="API_DeleteIdMappingTable"></a>
 
 Deletes an ID mapping table.
 

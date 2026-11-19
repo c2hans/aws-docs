@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Threads
-<a name="omni-threads"></a>
 
 A thread is your workspace in the CloudWatch Omni web UI: a conversation with the Omni agent together with the canvases, tabs, and views you open while you work. Omni saves the whole thread as you work — not only the chat — so you can close the browser mid-investigation and resume where you left off, on any device where you sign in to your space. Keep one thread per problem.
 

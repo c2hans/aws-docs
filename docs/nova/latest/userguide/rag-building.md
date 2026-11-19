@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/rag-building.html
 ---
 
 # Building a custom RAG system with Amazon Nova
-<a name="rag-building"></a>
 
 **Note**
 Amazon Nova Premier is not yet available via the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API. To use the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API with Amazon Nova Premier, you need to provide a custom prompt when calling the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API. This is done by supplying the `promptTemplate` in the `generationConfiguration` argument in the [RetrieveAndGenerate](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html) API call as shown below:

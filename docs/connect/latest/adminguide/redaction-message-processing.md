@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/redaction-mess
 ---
 
 # Enable in-flight sensitive data redaction and message processing
-<a name="redaction-message-processing"></a>
 
 Connect Customer supports message processing that intercepts and modifies chat messages before they reach any participant. This capability enables automatic redaction of sensitive data and custom message processing, helping businesses maintain compliance and security standards.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_poli
 ---
 
 # Attaching organization policies with AWS Organizations
-<a name="orgs_policies_attach"></a>
 
 This topic describes how to attach policies with AWS Organizations. A *policy* defines the controls that you want to apply to a group of AWS accounts.
 

@@ -3,12 +3,14 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/create_ou
 ---
 
 # Creating an organizational unit (OU) with AWS Organizations
-<a name="create_ou"></a>
 
 When you sign in to your organization's management account, you can create an OU in your organization's root. OUs can be nested up to five levels deep. To create an OU, complete the following steps.
 
 **Important**
-If this organization is managed with AWS Control Tower, then create your OUs with the AWS Control Tower console or APIs. If you create the OU in Organizations, then that OU isn't registered with AWS Control Tower. For more information, see [Referring to Resources Outside of AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/external-resources.html#ungoverned-resources) in the *AWS Control Tower User Guide*.
+If you manage this organization with AWS Control Tower, create your OUs in the AWS Control Tower console. An OU that you create in AWS Organizations isn't registered with AWS Control Tower until you register it, and AWS Control Tower doesn't enroll the accounts in an unregistered OU. To create and register an OU programmatically, do the following:
+Create the OU with the AWS Organizations `CreateOrganizationalUnit` API.
+Register the OU by calling the AWS Control Tower `EnableBaseline` API with the `AWSControlTowerBaseline` baseline.
+For more information about registering an OU, see [Register an existing OU](https://docs.aws.amazon.com/controltower/latest/userguide/how-to-register-existing-ou.html) in the *AWS Control Tower User Guide*.
 
 **Minimum permissions**
 To create an OU within a root in your organization, you must have the following permissions:

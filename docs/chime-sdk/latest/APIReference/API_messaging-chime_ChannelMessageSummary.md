@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ChannelMessageSummary
-<a name="API_messaging-chime_ChannelMessageSummary"></a>
 
 Summary of the messages in a `Channel`.
 

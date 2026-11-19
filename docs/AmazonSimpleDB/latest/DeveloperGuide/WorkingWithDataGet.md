@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Wor
 ---
 
 # Getting Data from a Domain
-<a name="WorkingWithDataGet"></a>
 
 The following is an example of getting data from an item using REST.
 

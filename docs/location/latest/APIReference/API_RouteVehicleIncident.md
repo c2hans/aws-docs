@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteVe
 ---
 
 # RouteVehicleIncident
-<a name="API_RouteVehicleIncident"></a>
 
 Incidents corresponding to this leg of the route.
 

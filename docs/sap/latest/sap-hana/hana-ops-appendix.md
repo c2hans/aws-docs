@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-appendix.ht
 ---
 
 # Appendix: Configuring Linux to Recognize Ethernet Devices for Multiple Network Interfaces
-<a name="hana-ops-appendix"></a>
 
 Follow these steps to configure the Linux operating system to recognize and name the Ethernet devices associated with the new elastic network interfaces created for logical network separation, which were discussed [earlier in this paper](hana-ops-networking.md#hana-ops-config).
 

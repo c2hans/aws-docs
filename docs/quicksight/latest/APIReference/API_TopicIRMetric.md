@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicIRMetric
-<a name="API_TopicIRMetric"></a>
 
 The definition for a `TopicIRMetric`.
 

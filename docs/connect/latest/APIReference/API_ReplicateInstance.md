@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Replicat
 ---
 
 # ReplicateInstance
-<a name="API_ReplicateInstance"></a>
 
 Replicates an Connect Customer instance in the specified AWS Region and copies configuration information for Connect Customer resources across AWS Regions.
 

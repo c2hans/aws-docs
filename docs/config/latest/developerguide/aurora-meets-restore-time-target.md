@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aurora-meet
 ---
 
 # aurora-meets-restore-time-target
-<a name="aurora-meets-restore-time-target"></a>
 
 Checks if the restore time of Amazon Aurora DB clusters meets the specified duration. The rule is NON\_COMPLIANT if LatestRestoreExecutionTimeMinutes of an Aurora DB Cluster is greater than maxRestoreTime minutes.
 

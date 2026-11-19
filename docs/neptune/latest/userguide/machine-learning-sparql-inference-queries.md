@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # SPARQL inference queries in Neptune ML
-<a name="machine-learning-sparql-inference-queries"></a>
 
 Neptune ML maps the RDF graph into a property graph to model the ML Task. Currently, it supports the following use-cases:
 + **Object classification**   –   Predicts the categorical feature of an object.

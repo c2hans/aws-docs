@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # EventTypeSummary
-<a name="API_EventTypeSummary"></a>
 
 Returns information about an event that has triggered a notification rule.
 

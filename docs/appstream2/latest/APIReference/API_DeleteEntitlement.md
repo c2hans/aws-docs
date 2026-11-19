@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Delet
 ---
 
 # DeleteEntitlement
-<a name="API_DeleteEntitlement"></a>
 
 Deletes the specified entitlement.
 

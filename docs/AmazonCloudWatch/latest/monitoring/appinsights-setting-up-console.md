@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Set up, configure, and manage your application for monitoring from the CloudWatch console
-<a name="appinsights-setting-up-console"></a>
 
 This section provides steps to set up, configure, and manage your application for monitoring from the CloudWatch console.
 

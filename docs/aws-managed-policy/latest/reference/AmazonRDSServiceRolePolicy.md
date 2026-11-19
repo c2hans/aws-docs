@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRDSServiceRolePolicy
-<a name="AmazonRDSServiceRolePolicy"></a>
 
 **Description**: Allows Amazon RDS to manage AWS resources on your behalf.
 

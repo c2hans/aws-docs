@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_T
 ---
 
 # TaskRunSessionActionDefinitionSummary
-<a name="API_TaskRunSessionActionDefinitionSummary"></a>
 
 The details of a task run in a session action.
 

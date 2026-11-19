@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # SNS
-<a name="sam-property-function-sns"></a>
 
 The object describing an `SNS` event source type.
 

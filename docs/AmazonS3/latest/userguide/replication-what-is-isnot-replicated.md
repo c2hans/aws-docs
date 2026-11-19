@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-wh
 ---
 
 # What does Amazon S3 replicate?
-<a name="replication-what-is-isnot-replicated"></a>
 
 Amazon S3 replicates only specific items in buckets that are configured for replication.
 

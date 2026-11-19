@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesAnomaly
-<a name="API_KubernetesAnomaly"></a>
 
 Contains details about anomalous Kubernetes behavior.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/windows-in
 ---
 
 # Amazon Corretto 8 Installation Instructions for Windows 10 or Later
-<a name="windows-install"></a>
 
  This topic describes how to install and uninstall Amazon Corretto 8 on a host or container running the Windows 10 or later Windows operating system.
 
@@ -22,7 +21,7 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/windows-in
 
 1.  Once the install wizard is finished, set the `JAVA_HOME` and `PATH` environment variables.
 
-   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 8u512, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk1.8.0_512`.
+   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 8u514, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk1.8.0_514`.
 
    Add `%JAVA_HOME%\bin` to the current `PATH` variable.
 
@@ -30,9 +29,9 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/windows-in
 **Example**
 
    ```
-   openjdk version "1.8.0_512"
-   OpenJDK Runtime Environment Corretto-8.512.09.1 (build 1.8.0_512-b09)
-   OpenJDK 64-Bit Server VM Corretto-8.512.09.1 (build 25.512-b09, mixed mode)
+   openjdk version "1.8.0_514"
+   OpenJDK Runtime Environment Corretto-8.514.01.1 (build 1.8.0_514-b01)
+   OpenJDK 64-Bit Server VM Corretto-8.514.01.1 (build 25.514-b01, mixed mode)
    ```
 
 ## Uninstall Amazon Corretto 8

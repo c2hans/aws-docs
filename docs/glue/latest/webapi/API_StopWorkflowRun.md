@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StopWorkflowRun.h
 ---
 
 # StopWorkflowRun
-<a name="API_StopWorkflowRun"></a>
 
 Stops the execution of the specified workflow run.
 

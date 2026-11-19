@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-
 ---
 
 # ![AWS Storage category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/storage-icon.jpg)Storage
-<a name="storage-services"></a>
 
 AWS provides a broad portfolio of storage services with deep functionality for storing, accessing, protecting, and analyzing your data.
 

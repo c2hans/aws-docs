@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_D
 ---
 
 # DescribeQAppPermissions
-<a name="API_qapps_DescribeQAppPermissions"></a>
 
  Describes read permissions for a Amazon Q App in Amazon Q Business application environment instance.
 

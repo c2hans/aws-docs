@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # About logging and monitoring for applications
-<a name="about-logging-monitoring"></a>
 
 Logging, monitoring, alerting, and reporting are different security processes that work together to provide visibility into the health and performance of your application. It is critical that you create and maintain a detailed record of actions and events for your application so that you can monitor, alert, and report based on the recorded activity.
 

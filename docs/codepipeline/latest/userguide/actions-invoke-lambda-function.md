@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-in
 ---
 
 # Invoke an AWS Lambda function in a pipeline in CodePipeline
-<a name="actions-invoke-lambda-function"></a>
 
 [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/) is a compute service that lets you run code without provisioning or managing servers. You can create Lambda functions and add them as actions in your pipelines. Because Lambda allows you to write functions to perform almost any task, you can customize the way your pipeline works.
 

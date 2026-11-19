@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Fi
 ---
 
 # FilterByAsset
-<a name="API_FilterByAsset"></a>
 
 Filter by asset. You can include multiple filters when you export your AWS IoT SiteWise content. See [Export metadata examples](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/bulk-operations-export-filter-examples.html) in the AWS IoT SiteWise User Guide.
 

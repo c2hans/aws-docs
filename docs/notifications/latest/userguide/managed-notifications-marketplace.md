@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/managed-n
 ---
 
 # AWS Marketplace and AWS Partner Central notifications
-<a name="managed-notifications-marketplace"></a>
 
 AWS Marketplace sends managed notifications to buyers about subscriptions, purchases, and entitlement changes. AWS Partner Central sends managed notifications about your Partner Central and AWS Marketplace Seller accounts and services. You receive these notifications in the Console Notification Center and through the delivery channels that you configure.
 

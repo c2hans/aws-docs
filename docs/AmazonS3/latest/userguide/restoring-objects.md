@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/restoring-obje
 ---
 
 # Restoring an archived object
-<a name="restoring-objects"></a>
 
 Amazon S3 objects in the following storage classes or tiers are archived and are not accessible in real time:
 + The S3 Glacier Flexible Retrieval storage class

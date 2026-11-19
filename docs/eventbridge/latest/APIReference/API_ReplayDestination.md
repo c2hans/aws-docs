@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Repl
 ---
 
 # ReplayDestination
-<a name="API_ReplayDestination"></a>
 
 A `ReplayDestination` object that contains details about a replay.
 

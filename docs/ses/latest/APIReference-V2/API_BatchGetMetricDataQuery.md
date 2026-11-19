@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BatchGetM
 ---
 
 # BatchGetMetricDataQuery
-<a name="API_BatchGetMetricDataQuery"></a>
 
 Represents a single metric data query to include in a batch.
 

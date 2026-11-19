@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Complaint
 ---
 
 # Complaint
-<a name="API_Complaint"></a>
 
 Information about a `Complaint` event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/routes-
 ---
 
 # Prerequisites for calculating routes using Amazon Location
-<a name="routes-prerequisites"></a>
 
 This page outlines prerequisites to get started with the service's routing features, which enable you to calculate optimized routes and travel times between multiple locations. It covers essential topics, such as configuring access permissions, setting up the required resources within your AWS account, and any additional dependencies or tools needed based on your specific use case or development environment.
 

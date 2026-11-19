@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ErrorReportLocation
-<a name="API_query_ErrorReportLocation"></a>
 
 This contains the location of the error report for a single scheduled query call.
 

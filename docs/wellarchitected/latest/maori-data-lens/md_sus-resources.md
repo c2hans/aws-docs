@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/m
 ---
 
 # Resources
-<a name="md_sus-resources"></a>
 
 The following resources are specific to sustainability and can help you apply Māori data considerations.
 +  [AWS Well Architected – Sustainability Pillar](file:///Users/judihann/Downloads/•%09https:/docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)

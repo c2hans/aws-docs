@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/scheduled-q
 ---
 
 # Schedule expression reference
-<a name="scheduled-queries-schedule-reference"></a>
 
 Use these reference tables to construct schedule expressions for your scheduled queries. All times are in UTC.
 

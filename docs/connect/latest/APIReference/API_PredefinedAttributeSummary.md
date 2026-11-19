@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Predefin
 ---
 
 # PredefinedAttributeSummary
-<a name="API_PredefinedAttributeSummary"></a>
 
 Summary of a predefined attribute.
 

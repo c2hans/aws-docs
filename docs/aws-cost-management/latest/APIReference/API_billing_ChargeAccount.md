@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ChargeAccount
-<a name="API_billing_ChargeAccount"></a>
 
 An account that is charged all or a portion of the total Support charge and the percentage of the charge allocated to it.
 

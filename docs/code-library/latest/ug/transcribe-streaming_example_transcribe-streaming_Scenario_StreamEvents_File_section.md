@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/transcribe-stream
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Generate a transcription of a file using an AWS SDK
-<a name="transcribe-streaming_example_transcribe-streaming_Scenario_StreamEvents_File_section"></a>
 
 The following code examples show how to generate a transcription of a source audio file using Amazon Transcribe streaming.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultReu
 ---
 
 # ResultReuseConfiguration
-<a name="API_ResultReuseConfiguration"></a>
 
 Specifies the query result reuse behavior for the query.
 

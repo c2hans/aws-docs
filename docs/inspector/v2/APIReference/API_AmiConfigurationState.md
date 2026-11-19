@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AmiConfigu
 ---
 
 # AmiConfigurationState
-<a name="API_AmiConfigurationState"></a>
 
 The current state of the Amazon Machine Image (AMI) scan configuration for an account.
 

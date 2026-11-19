@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Tr
 ---
 
 # TransformationLambdaConfiguration
-<a name="API_agent_TransformationLambdaConfiguration"></a>
 
 A Lambda function that processes documents.
 

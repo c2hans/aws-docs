@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards-manage.h
 ---
 
 # Model cards actions
-<a name="model-cards-manage"></a>
 
 After you've created a model card, you can manage them. Managing model cards include the following actions:
 + Editing a model card

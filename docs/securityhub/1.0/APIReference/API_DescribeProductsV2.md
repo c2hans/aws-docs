@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Describ
 ---
 
 # DescribeProductsV2
-<a name="API_DescribeProductsV2"></a>
 
 Gets information about the product integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: AWS Elastic Beanstalk platform updates for the Single Container Docker and Preconfigured Docker platforms on July 30, 2018
-<a name="release-2018-07-30-docker"></a>
 
 This release applies security updates to the Single Container Docker and Preconfigured Docker platforms for AWS Elastic Beanstalk, and updates platform configurations. The release also removes public support for previous Preconfigured Docker Glassfish configurations.
 

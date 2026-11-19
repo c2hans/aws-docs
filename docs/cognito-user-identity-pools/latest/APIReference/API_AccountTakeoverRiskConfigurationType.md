@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AccountTakeoverRiskConfigurationType
-<a name="API_AccountTakeoverRiskConfigurationType"></a>
 
 The settings for automated responses and notification templates for adaptive authentication with threat protection features.
 

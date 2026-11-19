@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/AmazonDataZone
 ---
 
 # AmazonDataZoneSageMakerManageAccessRole-<region>-<domainId>
-<a name="AmazonDataZoneSageMakerManageAccessRole"></a>
 
 The `AmazonDataZoneSageMakerManageAccessRole` role has the `AmazonDataZoneSageMakerAccess`, the `AmazonDataZoneRedshiftManageAccessRolePolicy`, and the `AmazonDataZoneGlueManageAccessRolePolicy` attached. This role grants Amazon DataZone permissions to publish and manage subscriptions for data lake, data warehouse, and Amazon Sagemaker assets.
 

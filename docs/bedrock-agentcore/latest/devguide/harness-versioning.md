@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # AgentCore harness versioning and endpoints
-<a name="harness-versioning"></a>
 
 Amazon Bedrock AgentCore implements automatic versioning for AgentCore harnesses and lets you manage different configurations using endpoints. Harness versioning works the same way as [AgentCore Runtime versioning](agent-runtime-versioning.md) - harness is a managed abstraction over Runtime - but you manage it through the harness control plane APIs.
 

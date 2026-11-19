@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/drain-f
 ---
 
 # Drain a Fleet Instance
-<a name="drain-fleet-instance"></a>
 
 Draining an instance means instructing the fleet to stop accepting new user sessions while allowing existing sessions to continue until users naturally disconnect. Once all sessions have ended, the instance is automatically reclaimed and replaced with a fresh instance running the latest image.
 

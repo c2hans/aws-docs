@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dateDiff-function
 ---
 
 # dateDiff
-<a name="dateDiff-function"></a>
 
 `dateDiff` returns the difference in days between two date fields. If you include a value for the period, `dateDiff` returns the difference in the period interval, rather than in days.
 

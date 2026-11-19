@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/public-builds/build.bui
 ---
 
 # Build results
-<a name="build.build-results"></a>
 
 The entry page for an individual build result displays information about the project.
 

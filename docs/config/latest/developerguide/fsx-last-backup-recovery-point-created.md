@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/fsx-last-ba
 ---
 
 # fsx-last-backup-recovery-point-created
-<a name="fsx-last-backup-recovery-point-created"></a>
 
 Checks if a recovery point was created for Amazon FSx File Systems. The rule is NON\_COMPLIANT if the Amazon FSx File System does not have a corresponding recovery point created within the specified time period.
 

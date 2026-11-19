@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/create-grant-o
 ---
 
 # Creating grants
-<a name="create-grant-overview"></a>
 
 Before creating a grant, learn about the options for customizing your grant. You can use *grant constraints* to limit the permissions in the grant. Also, learn about granting `CreateGrant` permission. Principals who get permission to create grants from a grant are limited in the grants that they can create.
 

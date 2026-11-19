@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cre
 ---
 
 # CreateNetworkAnalyzerConfiguration
-<a name="API_CreateNetworkAnalyzerConfiguration"></a>
 
 Creates a new network analyzer configuration.
 

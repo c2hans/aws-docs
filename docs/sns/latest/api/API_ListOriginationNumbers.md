@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_ListOriginationNumber
 ---
 
 # ListOriginationNumbers
-<a name="API_ListOriginationNumbers"></a>
 
 Lists the calling AWS account's dedicated origination numbers and their metadata. For more information about origination numbers, see [Origination numbers](https://docs.aws.amazon.com/sns/latest/dg/channels-sms-originating-identities-origination-numbers.html) in the *Amazon SNS Developer Guide*.
 

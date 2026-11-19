@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/managing-router-i
 ---
 
 # Managing router I/Os in MediaConnect
-<a name="managing-router-io"></a>
 
 Router I/Os are where your media streams enter and exit the router. Think of them as the connections between your router and your media sources and destinations.
 

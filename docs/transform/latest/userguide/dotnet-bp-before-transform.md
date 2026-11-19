@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-bp-bef
 ---
 
 # Before you transform
-<a name="dotnet-bp-before-transform"></a>
 
 Review the following recommendations before you start a .NET transformation job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Describ
 ---
 
 # DescribeParameters
-<a name="API_DescribeParameters"></a>
 
 Returns the detailed parameter list for a particular parameter group.
 

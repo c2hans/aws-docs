@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-studio-data-preparat
 ---
 
 # Using a data preparation recipe in AWS Glue Studio
-<a name="glue-studio-data-preparation"></a>
 
  The **Data preparation recipe** transform allows you to author a data preparation recipe from scratch using an interactive grid style authoring interface. It also allows you to import an existing AWS Glue DataBrew recipe and then edit it in AWS Glue Studio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # SingleMasterChannelEndpointConfiguration
-<a name="API_SingleMasterChannelEndpointConfiguration"></a>
 
 An object that contains the endpoint configuration for the `SINGLE_MASTER` channel type.
 

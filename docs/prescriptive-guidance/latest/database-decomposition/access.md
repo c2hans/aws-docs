@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Controlling database access during decomposition
-<a name="access"></a>
 
 Many organizations face a common scenario: a central database that has grown organically over many years and is accessed directly by multiple services and teams. This creates several critical problems:
 + **Uncontrolled growth** – As teams continuously add new features and modify schemas, the database becomes increasingly complex and difficult to manage.

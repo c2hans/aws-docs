@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIBR04-BP03 Assign your potential harm mitigations to implementation strategies
-<a name="raibr04-bp03"></a>
 
  As input to your system design, consider whether potential harms can be addressed through technical features or stakeholder guidance.
 

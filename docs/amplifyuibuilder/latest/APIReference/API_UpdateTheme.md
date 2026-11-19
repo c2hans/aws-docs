@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # UpdateTheme
-<a name="API_UpdateTheme"></a>
 
 Updates an existing theme.
 

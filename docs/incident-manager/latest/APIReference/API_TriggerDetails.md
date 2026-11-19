@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # TriggerDetails
-<a name="API_TriggerDetails"></a>
 
 Details about what caused the incident to be created in Incident Manager.
 

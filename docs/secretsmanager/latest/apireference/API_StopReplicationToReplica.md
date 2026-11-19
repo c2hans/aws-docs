@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_S
 ---
 
 # StopReplicationToReplica
-<a name="API_StopReplicationToReplica"></a>
 
 Removes the link between a replica secret and its primary secret, and stops replication to the replica. You call this operation from the replica account or Region. Depending on the type of replica, the behavior is:
 +  **Cross-Region replica**: promotes the replica to a standalone primary secret in the replica Region.

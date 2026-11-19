@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Netwo
 ---
 
 # NetworkInterface
-<a name="API_NetworkInterface"></a>
 
 The structure that contains information about a network interface.
 

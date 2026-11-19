@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-sma
 ---
 
 # Getting started with SMART on FHIR
-<a name="reference-smart-on-fhir-getting-started"></a>
 
 The following topics describe how to get started with SMART on FHIR authorization for AWS HealthLake. They include the resources you must provision in your AWS account, the creation of a SMART on FHIR enabled HealthLake data store, and an example of how a SMART on FHIR client application interacts with an authorization server and a HealthLake data store.
 

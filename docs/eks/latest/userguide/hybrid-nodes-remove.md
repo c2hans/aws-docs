@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-remove
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Remove hybrid nodes
-<a name="hybrid-nodes-remove"></a>
 
 This topic describes how to delete hybrid nodes from your Amazon EKS cluster. You must delete your hybrid nodes with your choice of Kubernetes-compatible tooling such as [kubectl](https://kubernetes.io/docs/reference/kubectl/). Charges for hybrid nodes stop when the node object is removed from the Amazon EKS cluster. For more information on hybrid nodes pricing, see [Amazon EKS Pricing](https://aws.amazon.com/eks/pricing/).
 

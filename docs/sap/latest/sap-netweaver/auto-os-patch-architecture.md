@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/auto-os-patch-a
 ---
 
 # Automated operating system patching architecture
-<a name="auto-os-patch-architecture"></a>
 
 The diagram below highlights the AWS services that you can use to set up automated operating system patching and optional notifications on the patch status using Amazon Simple Notification Service (Amazon SNS).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics
 ---
 
 # Metrics for Memcached
-<a name="CacheMetrics.Memcached"></a>
 
 The `AWS/ElastiCache` namespace includes the following Memcached metrics.
 

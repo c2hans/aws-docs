@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integra
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS services
 <a name="9999999999999999aws--services.b30615c2-42c2-5707-88aa-7e67535dfa8c"></a>

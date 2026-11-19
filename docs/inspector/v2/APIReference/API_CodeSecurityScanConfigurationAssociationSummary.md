@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeSecuri
 ---
 
 # CodeSecurityScanConfigurationAssociationSummary
-<a name="API_CodeSecurityScanConfigurationAssociationSummary"></a>
 
 A summary of an association between a code repository and a scan configuration.
 

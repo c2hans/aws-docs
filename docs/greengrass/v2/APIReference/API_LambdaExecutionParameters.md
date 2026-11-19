@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_LambdaExe
 ---
 
 # LambdaExecutionParameters
-<a name="API_LambdaExecutionParameters"></a>
 
 Contains parameters for a Lambda function that runs on AWS IoT Greengrass.
 

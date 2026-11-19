@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/load-api-refere
 ---
 
 # Neptune Loader Get-Status requests
-<a name="load-api-reference-status-requests"></a>
 
 ## Loader Get-Status request syntax
 <a name="load-api-reference-status-request-syntax"></a>

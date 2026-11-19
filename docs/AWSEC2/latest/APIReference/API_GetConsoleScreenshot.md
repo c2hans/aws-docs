@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetConsol
 ---
 
 # GetConsoleScreenshot
-<a name="API_GetConsoleScreenshot"></a>
 
 Retrieve a JPG-format screenshot of a running instance to help with troubleshooting.
 

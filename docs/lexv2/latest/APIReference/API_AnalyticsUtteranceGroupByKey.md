@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsU
 ---
 
 # AnalyticsUtteranceGroupByKey
-<a name="API_AnalyticsUtteranceGroupByKey"></a>
 
 Contains the category by which the utterance analytics were grouped and the values for that category.
 

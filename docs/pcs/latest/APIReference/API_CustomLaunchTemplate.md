@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_CustomLaunch
 ---
 
 # CustomLaunchTemplate
-<a name="API_CustomLaunchTemplate"></a>
 
 An Amazon EC2 launch template AWS PCS uses to launch compute nodes. The structure contains the launch template ID and version.
 

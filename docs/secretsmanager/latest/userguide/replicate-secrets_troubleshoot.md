@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/replicat
 ---
 
 # Troubleshoot AWS Secrets Manager replication
-<a name="replicate-secrets_troubleshoot"></a>
 
 AWS Secrets Manager replication might fail for various reasons. To check why a secret failed to replicate, you can do one of the following:
 + Call the `DescribeSecret` API operation

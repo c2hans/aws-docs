@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF04-BP03 Use the flat object type for nested objects
-<a name="aosperf04-bp03"></a>
 
  Improve efficiency by using flat object types for indexing and querying complex data structures, reducing storage and retrieval overhead.
 

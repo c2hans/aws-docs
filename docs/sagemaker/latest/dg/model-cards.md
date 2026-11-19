@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards.html
 ---
 
 # Amazon SageMaker Model Cards
-<a name="model-cards"></a>
 
 **Important**
 Amazon SageMaker Model Card is integrated with SageMaker Model Registry. If you're registering a model within Model Registry, you can use the integration to add auditing information. For more information, see [Update the Details of a Model Version](model-registry-details.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Coll
 ---
 
 # Collaboration
-<a name="API_Collaboration"></a>
 
 The multi-party data share environment. The collaboration contains metadata about its purpose and participants.
 

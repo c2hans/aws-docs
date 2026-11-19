@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/datacatalogs-example-po
 ---
 
 # Data Catalog example policies
-<a name="datacatalogs-example-policies"></a>
 
 This section includes example policies you can use to enable various actions on data catalogs.
 

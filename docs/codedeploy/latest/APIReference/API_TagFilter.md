@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_TagFi
 ---
 
 # TagFilter
-<a name="API_TagFilter"></a>
 
 Information about an on-premises instance tag filter.
 

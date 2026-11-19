@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/analysis-reset-
 ---
 
 # Post-failure analysis and reset
-<a name="analysis-reset-nw-rhel"></a>
 
 A review must be conducted after each failure to understand the source of failure as well the reaction of the cluster. In most scenarios, the cluster prevents an application outage. However, a manual action is often required to reset the cluster to a protective state for any subsequent failures.
 

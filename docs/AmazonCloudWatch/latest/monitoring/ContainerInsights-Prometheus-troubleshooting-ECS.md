@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Prometheus metrics troubleshooting on Amazon ECS
-<a name="ContainerInsights-Prometheus-troubleshooting-ECS"></a>
 
 This section provides help for troubleshooting your Prometheus metrics setup on Amazon ECS clusters.
 

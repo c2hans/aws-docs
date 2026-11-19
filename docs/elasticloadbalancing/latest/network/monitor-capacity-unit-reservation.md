@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/moni
 ---
 
 # Monitor Load balancer Capacity Unit reservation for your Network Load Balancer
-<a name="monitor-capacity-unit-reservation"></a>
 
 **Reservation status**
 

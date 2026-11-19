@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AuthorizeVpcEndpointAccess
-<a name="API_AuthorizeVpcEndpointAccess"></a>
 
 Provides access to an Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
 

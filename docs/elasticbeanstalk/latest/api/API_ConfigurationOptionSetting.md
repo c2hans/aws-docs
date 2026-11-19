@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Configur
 ---
 
 # ConfigurationOptionSetting
-<a name="API_ConfigurationOptionSetting"></a>
 
 A specification identifying an individual configuration option along with its current value. For a list of possible namespaces and option values, see [Option Values](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html) in the * AWS Elastic Beanstalk Developer Guide*.
 

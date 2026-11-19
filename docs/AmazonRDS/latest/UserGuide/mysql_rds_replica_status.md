@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql_rds_rep
 ---
 
 # mysql.rds\_replica\_status
-<a name="mysql_rds_replica_status"></a>
 
 Shows the replication status of a MariaDB read replica.
 

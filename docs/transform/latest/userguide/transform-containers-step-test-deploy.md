@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-con
 ---
 
 # Step 7: Deploy test infrastructure
-<a name="transform-containers-step-test-deploy"></a>
 
 In this step, AWS Transform deploys test infrastructure so that you can validate your containerized application before production cutover.
 

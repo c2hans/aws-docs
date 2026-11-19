@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/server-userguide/shippin
 ---
 
 # Return an Outposts server
-<a name="shipping-outposts-server"></a>
 
 **Note**
 If you received a server that was damaged in shipping, see [Step 2: Inspect the Outposts server equipment](https://docs.aws.amazon.com/outposts/latest/install-server/install-inspect.html) in the *AWS Outposts server installation guide*.

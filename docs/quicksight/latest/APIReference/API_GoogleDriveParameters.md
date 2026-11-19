@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Googl
 ---
 
 # GoogleDriveParameters
-<a name="API_GoogleDriveParameters"></a>
 
 The connection parameters for a Google Drive data source. Provide these parameters in the `DataSourceParameters` object when you create or update a data source that uses Google Drive.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationCancellationQuote
-<a name="API_CapacityReservationCancellationQuote"></a>
 
 Describes a Capacity Reservation cancellation quote, which provides the cancellation terms for cancelling a future-dated Capacity Reservation during its commitment duration.
 

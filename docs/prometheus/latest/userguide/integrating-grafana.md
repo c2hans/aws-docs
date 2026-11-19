@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/integrating-
 ---
 
 # Integrate alerts with Amazon Managed Grafana or open source Grafana
-<a name="integrating-grafana"></a>
 
 Alert rules that you have created in Alertmanager within Amazon Managed Service for Prometheus can be forwarded and viewed in [Amazon Managed Grafana](https://aws.amazon.com/grafana/) and [Grafana](https://grafana.com), unifying your alert rules and alerts in a single environment. Within Amazon Managed Grafana, you can view your alert rules and the alerts that are generated.
 

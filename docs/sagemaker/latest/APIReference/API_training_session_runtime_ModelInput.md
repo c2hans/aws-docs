@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # ModelInput
-<a name="API_training_session_runtime_ModelInput"></a>
 
 The tokenized model input composed of ordered encoded text chunks.
 

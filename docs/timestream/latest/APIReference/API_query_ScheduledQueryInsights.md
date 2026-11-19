@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ScheduledQueryInsights
-<a name="API_query_ScheduledQueryInsights"></a>
 
 Encapsulates settings for enabling `QueryInsights` on an `ExecuteScheduledQueryRequest`.
 

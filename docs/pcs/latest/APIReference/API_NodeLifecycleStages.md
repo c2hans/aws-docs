@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_NodeLifecycl
 ---
 
 # NodeLifecycleStages
-<a name="API_NodeLifecycleStages"></a>
 
 The stages of a compute node's lifecycle where you can configure scripts to run.
 

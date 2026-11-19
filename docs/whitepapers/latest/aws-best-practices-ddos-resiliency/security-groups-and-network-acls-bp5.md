@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Security groups and network ACLs (BP5)
-<a name="security-groups-and-network-acls-bp5"></a>
 
  [Amazon Virtual Private Cloud (Amazon VPC)](https://aws.amazon.com/vpc/) allows you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.
 

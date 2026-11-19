@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_EnableHea
 ---
 
 # EnableHealthServiceAccessForOrganization
-<a name="API_EnableHealthServiceAccessForOrganization"></a>
 
 Enables AWS Health to work with AWS Organizations. You can use the organizational view feature to aggregate events from all AWS accounts in your organization in a centralized location.
 
@@ -11,7 +10,7 @@ This operation also creates a service-linked role for the management account in 
 
 **Note**
 To call this operation, you must meet the following requirements:
-You must have a Business, Enterprise On-Ramp, or Enterprise Support plan from [AWS Support](http://aws.amazon.com/premiumsupport/) to use the AWS Health API. If you call the AWS Health API from an AWS account that doesn't have a Business, Enterprise On-Ramp, or Enterprise Support plan, you receive a `SubscriptionRequiredException` error.
+You must have a AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan from [AWS Support](http://aws.amazon.com/premiumsupport/) to use the AWS Health API. If you call the AWS Health API from an AWS account that doesn't have a AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan, you receive a `SubscriptionRequiredException` error.
 You must have permission to call this operation from the organization's management account. For example IAM policies, see [AWS Health identity-based policy examples](https://docs.aws.amazon.com/health/latest/ug/security_iam_id-based-policy-examples.html).
 
 If you don't have the required support plan, you can instead use the AWS Health console to enable the organizational view feature. For more information, see [Aggregating AWS Health events](https://docs.aws.amazon.com/health/latest/ug/aggregate-events.html) in the * AWS Health User Guide*.

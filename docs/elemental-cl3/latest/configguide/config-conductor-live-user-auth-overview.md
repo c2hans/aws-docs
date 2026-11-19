@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # About user authentication
-<a name="config-conductor-live-user-auth-overview"></a>
 
 ## Summary of procedure
 <a name="config-conductor-live-user-auth-summary"></a>

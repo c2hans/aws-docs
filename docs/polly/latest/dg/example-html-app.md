@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example-html-app.html
 ---
 
 # Python example: HTML5 User Interface (index.html)
-<a name="example-html-app"></a>
 
 This section provides the code for the HTML5 client described in [Python example (HTML5 Client and Python Server)](examples-python.md).
 

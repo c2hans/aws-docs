@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetCodeSec
 ---
 
 # GetCodeSecurityIntegration
-<a name="API_GetCodeSecurityIntegration"></a>
 
 Retrieves information about a code security integration.
 

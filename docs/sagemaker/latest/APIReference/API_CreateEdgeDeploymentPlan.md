@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateEdgeDeploymentPlan
-<a name="API_CreateEdgeDeploymentPlan"></a>
 
 Creates an edge deployment plan, consisting of multiple stages. Each stage may have a different deployment configuration and devices.
 

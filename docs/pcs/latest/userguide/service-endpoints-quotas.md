@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/service-endpoints-q
 ---
 
 # Endpoints and service quotas for AWS PCS
-<a name="service-endpoints-quotas"></a>
 
 The following sections describe the endpoints and service quotas for AWS Parallel Computing Service (AWS PCS). Service quotas, formerly referred to as *limits*, are the maximum number of service resources or operations for your AWS account.
 

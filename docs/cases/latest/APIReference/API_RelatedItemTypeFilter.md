@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_RelatedIte
 ---
 
 # RelatedItemTypeFilter
-<a name="API_connect-cases_RelatedItemTypeFilter"></a>
 
 The list of types of related items and their parameters to use for filtering.
 

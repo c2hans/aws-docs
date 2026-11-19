@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-skip
 ---
 
 # Skipping a step
-<a name="recovery-plans-skip"></a>
 
 Skip a step to move past it without recovering its servers.
 

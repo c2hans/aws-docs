@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv-trou
 ---
 
 # Troubleshoot Signature Version 4 signing for AWS API requests
-<a name="reference_sigv-troubleshooting"></a>
 
 **Important**
 Unless you are using the AWS SDKs or CLI, you must write code to calculate signatures that provide authentication information in your requests. SigV4 signature calculation can be a complex undertaking, and we recommend that you use the AWS SDKs or CLI whenever possible.

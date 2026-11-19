@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/security-protocols.html
 ---
 
 # Amazon SES and security protocols
-<a name="security-protocols"></a>
 
 This topic describes the security protocols that you can use when you connect to Amazon SES, and when Amazon SES delivers an email to a receiver.
 

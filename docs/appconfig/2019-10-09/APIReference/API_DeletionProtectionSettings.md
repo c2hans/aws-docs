@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_De
 ---
 
 # DeletionProtectionSettings
-<a name="API_DeletionProtectionSettings"></a>
 
 A parameter to configure deletion protection. Deletion protection prevents a user from deleting a configuration profile or an environment if AWS AppConfig has called either [GetLatestConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_GetLatestConfiguration.html) or [GetConfiguration](API_GetConfiguration.md) for the configuration profile or from the environment during the specified interval.
 

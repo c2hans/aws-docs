@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for failover alias records
-<a name="resource-record-sets-values-failover-alias"></a>
 
 When you create failover alias records, you specify the following values.
 

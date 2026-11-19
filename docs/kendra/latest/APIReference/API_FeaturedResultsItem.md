@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_FeaturedR
 ---
 
 # FeaturedResultsItem
-<a name="API_FeaturedResultsItem"></a>
 
 A single featured result item. A featured result is displayed at the top of the search results page, placed above all other results for certain queries. If there's an exact match of a query, then certain documents are featured in the search results.
 

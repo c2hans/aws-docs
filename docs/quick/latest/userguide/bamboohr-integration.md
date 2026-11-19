@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/bamboohr-integrat
 ---
 
 # BambooHR integration
-<a name="bamboohr-integration"></a>
 
 Connect AWS Quick to your BambooHR system to manage employee data, time-off requests, and HR processes. You can create, update, and manage HR content without leaving your AWS Quick environment. For AWS Quick subscription requirements, see [Set up integrations in the console](integration-console-setup-process.md).
 

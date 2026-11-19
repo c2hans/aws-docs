@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/self-deployed-host-
 ---
 
 # Step 2: Create DNS records
-<a name="self-deployed-host-dns-records"></a>
 
 Before you add hosts and install VMware Cloud Foundation (VCF), create DNS records for each ESX host and for each VCF management appliance that you plan to deploy. Create a forward (A) record and a reverse (PTR) record for each one. Amazon Elastic VMware Service performs a DNS lookup of the fully qualified domain name (FQDN) of each host during host creation. Host creation fails if the records don’t already exist.
 

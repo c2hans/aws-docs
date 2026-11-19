@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateCon
 ---
 
 # UpdateConfigurationSetEventDestination
-<a name="API_UpdateConfigurationSetEventDestination"></a>
 
 Update the configuration of an event destination for a configuration set.
 

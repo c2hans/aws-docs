@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Te
 ---
 
 # TextPromptTemplateConfiguration
-<a name="API_agent_TextPromptTemplateConfiguration"></a>
 
 Contains configurations for a text prompt template. To include a variable, enclose a word in double curly braces as in `{{variable}}`.
 

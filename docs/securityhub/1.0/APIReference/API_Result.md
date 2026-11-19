@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Result.
 ---
 
 # Result
-<a name="API_Result"></a>
 
 Details about the account that was not processed.
 

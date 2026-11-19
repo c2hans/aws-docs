@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/shadow-provisi
 ---
 
 # Tutorial: Provisioning your device in AWS IoT
-<a name="shadow-provision-cloud"></a>
 
 This section creates the AWS IoT Core resources that your tutorial will use.
 

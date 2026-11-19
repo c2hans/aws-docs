@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/additional-utili
 ---
 
 # Bundling, TypeScript, and source maps for the `APPSYNC_JS` runtime
-<a name="additional-utilities"></a>
 
 TypeScript enhances AWS AppSync development by providing type safety and early error detection. You can write TypeScript code locally and transpile it to JavaScript before using it with the `APPSYNC_JS` runtime. The process starts with installing TypeScript and configuring tsconfig.json for the `APPSYNC_JS` environment. You can then use bundling tools like esbuild to compile and bundle the code. The Amplify CLI will generate types from the GraphQL schema, allowing you to use these types in resolver code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Integrat
 ---
 
 # Integration
-<a name="API_Integration"></a>
 
 The integration data source configuration for the handler.
 

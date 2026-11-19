@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-slash-tmp.htm
 ---
 
 # `/tmp` (small temporary files)
-<a name="filesystem-slash-tmp"></a>
 
 **Note**
  Amazon Linux 2023 is different to Amazon Linux 2 as by default `/tmp` is now `tmpfs` rather than a path on the root file system.

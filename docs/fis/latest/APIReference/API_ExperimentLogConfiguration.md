@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentLo
 ---
 
 # ExperimentLogConfiguration
-<a name="API_ExperimentLogConfiguration"></a>
 
 Describes the configuration for experiment logging.
 

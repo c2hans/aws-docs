@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambd
 ---
 
 # Update the Lambda Insights extension version on a function
-<a name="Lambda-Insights-Update-Extension"></a>
 
 As a best practice, we recommend that you keep your Lambda Insights extension updated to the latest version. The topics in this page explain how to do so.
 

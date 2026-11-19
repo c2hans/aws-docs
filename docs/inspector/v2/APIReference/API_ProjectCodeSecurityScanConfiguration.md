@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ProjectCod
 ---
 
 # ProjectCodeSecurityScanConfiguration
-<a name="API_ProjectCodeSecurityScanConfiguration"></a>
 
 Contains the scan configuration settings applied to a specific project in a code repository.
 

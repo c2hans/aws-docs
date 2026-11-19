@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-applications
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Use ApplicationSets
-<a name="argocd-applicationsets"></a>
 
 ApplicationSets generate multiple Applications from templates, enabling you to deploy the same application across multiple clusters, environments, or namespaces with a single resource definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_EncryptionSu
 ---
 
 # EncryptionSummary
-<a name="API_EncryptionSummary"></a>
 
 The encryption configuration for an Autonomous Database.
 

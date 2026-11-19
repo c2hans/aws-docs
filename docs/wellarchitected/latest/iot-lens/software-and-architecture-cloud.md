@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/software
 ---
 
 # Software and architecture – Cloud
-<a name="software-and-architecture-cloud"></a>
 
 | IOTSUS02: How do you incorporate optimized cloud services in your architecture to minimize your carbon footprint? |
 | --- |

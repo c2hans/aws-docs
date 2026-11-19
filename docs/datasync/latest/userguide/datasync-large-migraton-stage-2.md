@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/datasync-large
 ---
 
 # Stage 2: Implementing your large data migration
-<a name="datasync-large-migraton-stage-2"></a>
 
 With the information you gathered during planning, you can begin using AWS DataSync to migrate to your new storage system. If you haven't already, we recommend reviewing the [AWS Prescriptive Guidance resources for large migrations](datasync-large-migration.md#review-migration-data-resources).
 

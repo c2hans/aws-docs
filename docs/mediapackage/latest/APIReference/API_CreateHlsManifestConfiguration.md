@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Cre
 ---
 
 # CreateHlsManifestConfiguration
-<a name="API_CreateHlsManifestConfiguration"></a>
 
 Create an HTTP live streaming (HLS) manifest configuration.
 

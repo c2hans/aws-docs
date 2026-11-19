@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-485-release.
 ---
 
 # Amazon EMR release 4.8.5
-<a name="emr-485-release"></a>
 
 ## 4.8.5 application versions
 <a name="emr-485-app-versions"></a>

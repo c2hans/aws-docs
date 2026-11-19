@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentClassifierInputDataConfig
-<a name="API_DocumentClassifierInputDataConfig"></a>
 
 The input properties for training a document classifier.
 

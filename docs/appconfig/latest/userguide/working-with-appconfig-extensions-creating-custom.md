@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-
 ---
 
 # Walkthrough: Creating custom AWS AppConfig extensions
-<a name="working-with-appconfig-extensions-creating-custom"></a>
 
 To create a custom AWS AppConfig extension, complete the following tasks. Each task is described in more detail in later topics.
 

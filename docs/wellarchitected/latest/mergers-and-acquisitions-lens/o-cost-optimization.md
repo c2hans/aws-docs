@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # Cost optimization
-<a name="o-cost-optimization"></a>
 
  The acquiring company needs to conduct thorough due diligence to understand the seller's costs and identify potential cost savings opportunities. One of the rationales for mergers and acquisitions is to achieve cost synergies through economies of scale. Pre-deal due diligence often does not uncover all sources of redundant costs. Integration provides an opportunity to identify further areas of overlap and cost-cutting through combining operations and standardizing procedures. Higher integration costs may mean lower returns and increased risk.
 

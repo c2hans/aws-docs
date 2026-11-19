@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetSummary
-<a name="API_DataSetSummary"></a>
 
 Dataset summary.
 

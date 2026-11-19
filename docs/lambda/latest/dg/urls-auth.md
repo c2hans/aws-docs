@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/urls-auth.html
 ---
 
 # Control access to Lambda function URLs
-<a name="urls-auth"></a>
 
 **Note**
 Starting in October 2025, new function URLs will require both `lambda:InvokeFunctionUrl` and `lambda:InvokeFunction` permissions.

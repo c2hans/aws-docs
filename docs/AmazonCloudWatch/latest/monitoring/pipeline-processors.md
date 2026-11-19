@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pipel
 ---
 
 # CloudWatch pipelines processors
-<a name="pipeline-processors"></a>
 
 CloudWatch pipelines processors transform, parse, and enrich log data as it flows through the pipeline. Log pipelines support up to 20 processors that are applied sequentially in the order they are defined. Metrics pipelines support up to 20 processors, applied sequentially in the order you define them. For metrics pipeline processors, see [Metrics pipeline processors](metrics-pipeline-processors.md).
 

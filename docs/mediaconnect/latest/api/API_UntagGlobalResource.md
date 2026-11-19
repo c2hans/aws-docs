@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UntagGlobalR
 ---
 
 # UntagGlobalResource
-<a name="API_UntagGlobalResource"></a>
 
 Removes tags from a global resource in AWS Elemental MediaConnect. The API supports the following global resources: router inputs, router outputs and router network interfaces.
 

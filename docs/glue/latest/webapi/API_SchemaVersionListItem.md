@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaVersionList
 ---
 
 # SchemaVersionListItem
-<a name="API_SchemaVersionListItem"></a>
 
 An object containing the details about a schema version.
 

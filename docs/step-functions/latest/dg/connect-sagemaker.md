@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-sagemak
 ---
 
 # Create and manage Amazon SageMaker AI jobs with Step Functions
-<a name="connect-sagemaker"></a>
 
 Learn how to use Step Functions to create and manage jobs on SageMaker AI. This page lists the supported SageMaker AI API actions and provides example `Task` states to create SageMaker AI transform, training, labeling, and processing jobs.
 

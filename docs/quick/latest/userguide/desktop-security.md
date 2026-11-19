@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-security.
 ---
 
 # Security, privacy, and architecture of AWS Quick on desktop
-<a name="desktop-security"></a>
 
 |  |
 | --- |
@@ -21,6 +20,10 @@ Responsibility for security follows these trust boundaries:
 + The user's device, which your organization manages.
 + The AWS Quick service, which AWS manages.
 + Connected services, which your organization or a third party manages.
+
+The following diagram shows the overall architecture of AWS Quick, including the parts that AWS manages and the resources that stay in your AWS account. Users reach AWS Quick from the web, the desktop application, extensions, embedded experiences, or the AWS SDK.
+
+![Components of AWS Quick, your AWS account, and the services that connect to them.](https://docs.aws.amazon.com/quick/latest/userguide/images/desktop-security-architecture-overview.png)
 
 ## Components
 <a name="desktop-architecture"></a>
@@ -167,7 +170,7 @@ Local connectors belong to the user who adds them, and only that user can use th
 ## AI usage
 <a name="desktop-security-ai-usage"></a>
 
-The desktop application doesn't host or run models. Inference runs in the agent runtime, and AWS Quick hosts its embedding models on Amazon SageMaker AI. For information about the controls that apply to model use, see [AI guardrails](guardrails.md) and [AI and agent security](sec-agentic-security.md). Inference and web search can run in other AWS Regions. For the current Regions, see [AWS Regions, websites, IP address ranges, and endpoints](regions.md). Use of the service is subject to the [AWS Responsible AI Policy](https://aws.amazon.com/ai/responsible-ai/policy/).
+The desktop application doesn't host or run models. Inference runs in the agent runtime, and AWS Quick hosts its embedding models on Amazon SageMaker AI. For information about the controls that apply to model use, see [AI guardrails](guardrails.md) and [AI and agent security](sec-agentic-security.md). Inference and web search can run in other AWS Regions. For the current Regions, see [AWS Regions and related information](regions.md). Use of the service is subject to the [AWS Responsible AI Policy](https://aws.amazon.com/ai/responsible-ai/policy/).
 
 ## Monitoring and auditing
 <a name="desktop-monitoring"></a>

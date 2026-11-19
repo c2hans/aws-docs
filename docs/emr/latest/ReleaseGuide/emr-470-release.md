@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-470-release.
 ---
 
 # Amazon EMR release 4.7.0
-<a name="emr-470-release"></a>
 
 ## 4.7.0 application versions
 <a name="emr-470-app-versions"></a>

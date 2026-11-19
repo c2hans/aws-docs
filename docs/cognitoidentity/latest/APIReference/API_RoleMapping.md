@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # RoleMapping
-<a name="API_RoleMapping"></a>
 
 A role mapping.
 

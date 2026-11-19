@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-mobile-app.html
 ---
 
 # Using the Amazon Chime mobile app
-<a name="chime-mobile-app"></a>
 
 The topics in this section explain how to install and use the Amazon Chime mobile app. You can install the Amazon Chime mobile app on Android devices from Google Play, and on iOS devices from the App Store. Your devices must run a supported version of those operating systems. For more information about supported operating systems, see [1. Know the system requirements](chime-requirements.md).
 

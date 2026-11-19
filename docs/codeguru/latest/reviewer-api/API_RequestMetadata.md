@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_Request
 ---
 
 # RequestMetadata
-<a name="API_RequestMetadata"></a>
 
 Metadata that is associated with a code review. This applies to both pull request and repository analysis code reviews.
 

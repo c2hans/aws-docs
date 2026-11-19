@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GetMod
 ---
 
 # GetModelPackageGroupPolicy
-<a name="API_GetModelPackageGroupPolicy"></a>
 
 Gets a resource policy that manages access for a model group. For information about resource policies, see [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) in the * AWS Identity and Access Management User Guide.*.
 

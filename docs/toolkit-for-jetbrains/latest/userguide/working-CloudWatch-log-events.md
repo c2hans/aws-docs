@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/w
 ---
 
 # Working with CloudWatch log events in log streams by using the AWS Toolkit for JetBrains
-<a name="working-CloudWatch-log-events"></a>
 
 After you've opened the **Log Steams** pane, you can access the log events in each stream. Log events are records of activity recorded by the application or resource being monitored.
 

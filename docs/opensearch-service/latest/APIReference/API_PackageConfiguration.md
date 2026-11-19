@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PackageConfiguration
-<a name="API_PackageConfiguration"></a>
 
  The configuration parameters for a package.
 

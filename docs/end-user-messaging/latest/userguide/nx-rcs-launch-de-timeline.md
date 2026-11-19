@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Approval timeline
-<a name="nx-rcs-launch-de-timeline"></a>
 
 1. Submit the country launch registration in the AWS End User Messaging console.
 

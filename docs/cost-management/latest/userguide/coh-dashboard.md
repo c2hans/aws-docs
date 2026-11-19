@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/coh-das
 ---
 
 # Viewing the dashboard
-<a name="coh-dashboard"></a>
 
 Use the following procedure to view the dashboard and your cost optimization opportunities.
 

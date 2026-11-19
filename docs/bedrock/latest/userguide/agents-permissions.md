@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-permissi
 ---
 
 # Create a service role for Amazon Bedrock Agents
-<a name="agents-permissions"></a>
 
 To use a custom service role for agents instead of the one Amazon Bedrock automatically creates, create an IAM role and attach the following permissions by following the steps at [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
 + Trust policy

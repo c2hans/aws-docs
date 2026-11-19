@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/share-a-dashboard
 ---
 
 # Granting anyone on the internet access to a dashboard
-<a name="share-a-dashboard-grant-access-anyone-access"></a>
 
 **To grant anyone on the internet access to a dashboard**
 

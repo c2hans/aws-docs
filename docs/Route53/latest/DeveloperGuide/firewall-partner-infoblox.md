@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-p
 ---
 
 # Using partner managed DNS threat protection with Infoblox in DNS Firewall
-<a name="firewall-partner-infoblox"></a>
 
 This topic covers how to subscribe to, configure, and manage Infoblox DNS threat protection rules within Amazon Route 53 Resolver DNS Firewall rule groups.
 

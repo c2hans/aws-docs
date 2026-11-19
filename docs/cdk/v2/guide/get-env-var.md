@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/get-env-var.html
 ---
 
 # Get a value from an environment variable
-<a name="get-env-var"></a>
 
 To get the value of an environment variable, use code like the following. This code gets the value of the environment variable `amzn-s3-demo-bucket`.
 

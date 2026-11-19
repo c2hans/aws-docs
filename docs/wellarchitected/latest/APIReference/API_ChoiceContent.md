@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ChoiceContent
-<a name="API_ChoiceContent"></a>
 
 The choice content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-sec
 ---
 
 # Setting encryption in S3 Vectors
-<a name="s3-vectors-sectting-encryption"></a>
 
 This topic explains how to set the encryption configuration for your S3 vector buckets and indexes.
 

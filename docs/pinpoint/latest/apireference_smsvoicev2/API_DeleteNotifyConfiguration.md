@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteNotifyConfiguration
-<a name="API_DeleteNotifyConfiguration"></a>
 
 Deletes an existing notify configuration.
 

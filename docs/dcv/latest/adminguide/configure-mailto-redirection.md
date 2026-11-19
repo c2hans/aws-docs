@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/configure-mailto-r
 ---
 
 # Configure mailto: redirection
-<a name="configure-mailto-redirection"></a>
 
 To redirect email links, add `mailto:` patterns to the allow list. A `mailto:` pattern has the form `mailto:name@domain` and supports the same wildcards as URL patterns. For example, `mailto:*@example.com` matches every email address in the example.com domain. URL patterns don't match `mailto:` links.
 

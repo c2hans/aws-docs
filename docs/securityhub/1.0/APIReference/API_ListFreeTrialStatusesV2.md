@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFre
 ---
 
 # ListFreeTrialStatusesV2
-<a name="API_ListFreeTrialStatusesV2"></a>
 
 Lists the free trial status of Security Hub features. A delegated Security Hub administrator can list the status for accounts in its organization. Any other account can list the status only for itself. Free trial status remains available after a feature is disabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # UpdateMetadataConfiguration
-<a name="API_S3VectorBuckets_UpdateMetadataConfiguration"></a>
 
 Adds or deletes text search configurations on a vector index. Specify either `add` or `delete`, but not both. The vector index must be in `ENHANCED` mode.
 

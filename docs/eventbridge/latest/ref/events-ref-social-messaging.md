@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-social
 ---
 
 # AWS End User Messaging Social events
-<a name="events-ref-social-messaging"></a>
 
 End User Messaging Social sends service events directly to EventBridge.
 

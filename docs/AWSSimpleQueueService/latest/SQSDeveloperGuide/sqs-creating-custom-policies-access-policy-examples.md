@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Custom Amazon SQS Access Policy Language examples
-<a name="sqs-creating-custom-policies-access-policy-examples"></a>
 
 The following are examples of typical Amazon SQS access policies.
 

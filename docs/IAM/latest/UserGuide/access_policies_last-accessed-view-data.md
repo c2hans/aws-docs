@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_las
 ---
 
 # View last accessed information for IAM
-<a name="access_policies_last-accessed-view-data"></a>
 
 You can view last accessed information for IAM using the AWS Management Console, AWS CLI, or AWS API. See the [list of services and their actions](access_policies_last-accessed-action-last-accessed.md) for which last accessed information is displayed. For more information about last accessed information, see [Refine permissions in AWS using last accessed information](access_policies_last-accessed.md).
 

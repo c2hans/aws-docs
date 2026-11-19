@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_OcsfNum
 ---
 
 # OcsfNumberFilter
-<a name="API_OcsfNumberFilter"></a>
 
 Enables filtering of security findings based on numerical field values in OCSF.
 

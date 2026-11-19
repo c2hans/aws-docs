@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_PortRa
 ---
 
 # PortRange
-<a name="API_PortRange"></a>
 
 A complex type for a range of ports for a listener.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # Operational excellence
-<a name="operational-excellence"></a>
 
  The operational excellence pillar includes the ability to support development and run workloads effectively, gain insight into their operations, and to continually improve supporting processes and procedures to deliver business value.
 

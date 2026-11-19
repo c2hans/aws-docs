@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayMeteringPolicy
-<a name="API_CreateTransitGatewayMeteringPolicy"></a>
 
 Creates a metering policy for a transit gateway to track and measure network traffic.
 

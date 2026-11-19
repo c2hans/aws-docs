@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/configure-identities.html
 ---
 
 # Configuring identities in Amazon SES
-<a name="configure-identities"></a>
 
 Amazon Simple Email Service (Amazon SES) uses the Simple Mail Transfer Protocol (SMTP) to send email. Because SMTP doesn't provide any authentication by itself, spammers can send email messages that claim to originate from someone else, while hiding their true origin. By falsifying email headers and spoofing source IP addresses, spammers can mislead recipients into believing that the email messages that they are receiving are authentic.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteCodeSigningC
 ---
 
 # DeleteCodeSigningConfig
-<a name="API_DeleteCodeSigningConfig"></a>
 
 Deletes the code signing configuration. You can delete the code signing configuration only if no function is using it.
 

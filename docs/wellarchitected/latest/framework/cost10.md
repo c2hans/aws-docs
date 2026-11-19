@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost10.
 ---
 
 # Automate operations
-<a name="cost10"></a>
 
  Manual operational work doesn't scale with a constantly changing cloud environment. Routine tasks such as provisioning, configuration, patching, monitoring, and cleanup consume engineering time and introduce errors that raise cost. Automating them lowers operational overhead, makes cost control repeatable, and frees engineering time for higher-value work.
 

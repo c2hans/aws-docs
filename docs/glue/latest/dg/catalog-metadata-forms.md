@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-metadata-forms.ht
 ---
 
 # Attaching forms
-<a name="catalog-metadata-forms"></a>
 
 **Note**
 Business context and semantic search is in preview for AWS Glue and is subject to change.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-
 ---
 
 # Configure the EMQX broker
-<a name="configure-emqx-broker"></a>
 
 This section covers how to add usernames and passwords. It also covers how to establish a TLS connection from an external source using the added username and password. You can configure the EMQX broker using Linux or Microsoft Windows.
 

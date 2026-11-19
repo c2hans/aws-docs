@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/opencypher-quer
 ---
 
 # openCypher query plan cache hint
-<a name="opencypher-query-hints-qpc-hint"></a>
 
  Query plan cache behavior can be overridden on a per-query (parameterized or not) basis by query-level query hint `QUERY:PLANCACHE`. It needs to be used with the `USING` clause. The query hint accepts `enabled` or `disabled` as a value. For more information on query plan cache, see [Query plan cache in Amazon Neptune](access-graph-qpc.md).
 

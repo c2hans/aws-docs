@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteTrigger.htm
 ---
 
 # DeleteTrigger
-<a name="API_DeleteTrigger"></a>
 
 Deletes a specified trigger. If the trigger is not found, no exception is thrown.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMR
 ---
 
 # Additional topics
-<a name="EMRforDynamoDB.PerformanceTuning.Misc"></a>
 
 The following are some more ways to tune applications that use Hive to access DynamoDB.
 

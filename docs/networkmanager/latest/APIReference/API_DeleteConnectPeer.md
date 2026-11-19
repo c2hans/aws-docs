@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteConnectPeer
-<a name="API_DeleteConnectPeer"></a>
 
 Deletes a Connect peer.
 

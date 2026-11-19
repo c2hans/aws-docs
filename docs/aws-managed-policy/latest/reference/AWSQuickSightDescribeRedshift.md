@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSightDescribeRedshift
-<a name="AWSQuickSightDescribeRedshift"></a>
 
 **Description**: Allow QuickSight to describe Redshift resources
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Send custom events
-<a name="CloudWatch-RUM-custom-events"></a>
 
 CloudWatch RUM records and ingests the events listed in [Information collected by the CloudWatch RUM web client](CloudWatch-RUM-datacollected.md). If you use version 1.12.0 or later of the CloudWatch RUM web client, you can define, record, and send additional custom events. You define the event type name and the data to send for each event type that you define. Each custom event payload can be up to 6 KB.
 

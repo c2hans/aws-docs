@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeF
 ---
 
 # DescribeFleets
-<a name="API_DescribeFleets"></a>
 
 Describes the specified EC2 Fleet or all of your EC2 Fleets.
 

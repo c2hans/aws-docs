@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.CAPITA
 ---
 
 # CAPITAL\_CASE
-<a name="recipe-actions.CAPITAL_CASE"></a>
 
 Changes each string in a column to capitalize each word. In *capital case, *the first letter of each word is capitalized and the rest of the word is transformed to lowercase. An example is: The Quick Brown Fox Jumped Over The Fence.
 

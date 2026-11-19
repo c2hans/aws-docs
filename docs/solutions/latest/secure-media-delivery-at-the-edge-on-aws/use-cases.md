@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Secure Content Delivery**
 

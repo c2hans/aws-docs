@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # DerivationMethodAttributes
-<a name="API_DerivationMethodAttributes"></a>
 
 Parameters to derive the payment card specific confidentiality and integrity keys.
 

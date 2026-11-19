@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/userguide/what-is-wickr.htm
 This guide provides documentation for AWS Wickr. For Wickr Enterprise, which is the on-premises version of Wickr, see [Enterprise Administration Guide](https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/what-is-wickr.html).
 
 # What is AWS Wickr?
-<a name="what-is-wickr"></a>
 
 AWS Wickr is an end-to-end encrypted service that helps organizations and government agencies to collaborate securely through one-to-one and group messaging, voice and video calling, file sharing, screen sharing, and more.
 

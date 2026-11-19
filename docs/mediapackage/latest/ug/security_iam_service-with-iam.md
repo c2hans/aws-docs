@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/security_iam_serv
 ---
 
 # How AWS Elemental MediaPackage works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to MediaPackage, learn what IAM features are available to use with MediaPackage.
 

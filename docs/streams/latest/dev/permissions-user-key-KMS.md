@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/permissions-user-key-
 ---
 
 # Permissions to use user-generated KMS keys
-<a name="permissions-user-key-KMS"></a>
 
 Before you can use server-side encryption with a user-generated KMS key, you must configure AWS KMS key policies to allow encryption of streams and encryption and decryption of stream records. For examples and more information about AWS KMS permissions, see [AWS KMS API Permissions: Actions and Resources Reference](https://docs.aws.amazon.com/kms/latest/developerguide/kms-api-permissions-reference.html).
 

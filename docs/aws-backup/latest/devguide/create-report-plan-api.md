@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/create-report
 ---
 
 # Creating report plans using the AWS Backup API
-<a name="create-report-plan-api"></a>
 
 You can also work with report plans programmatically.
 

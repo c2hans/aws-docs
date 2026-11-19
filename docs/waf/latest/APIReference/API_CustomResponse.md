@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CustomRespon
 ---
 
 # CustomResponse
-<a name="API_CustomResponse"></a>
 
 A custom response to send to the client. You can define a custom response for rule actions and default web ACL actions that are set to [BlockAction](API_BlockAction.md).
 

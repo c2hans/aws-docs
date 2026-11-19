@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DisableH
 ---
 
 # DisableHostedZoneDNSSEC
-<a name="API_DisableHostedZoneDNSSEC"></a>
 
 Disables DNSSEC signing in a specific hosted zone. This action does not deactivate any key-signing keys (KSKs) that are active in the hosted zone.
 

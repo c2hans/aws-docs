@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # BatchGetPolicyErrorItem
-<a name="API_BatchGetPolicyErrorItem"></a>
 
 Contains the information about an error resulting from a `BatchGetPolicy` API call.
 

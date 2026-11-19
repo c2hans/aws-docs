@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::DataSet DataPrepListAggregationFunction
-<a name="aws-properties-quicksight-dataset-datapreplistaggregationfunction"></a>
 
 An aggregation function that concatenates values from multiple rows into a single string with a specified separator.
 

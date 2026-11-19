@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Other-Troubleshooting-Topi
 ---
 
 # Other troubleshooting topics
-<a name="Other-Troubleshooting-Topics"></a>
 
 Use the information in this section to help you with other troubleshooting.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-sensitive-d
 ---
 
 # Sensitive data detection and redaction in Amazon Bedrock Data Automation
-<a name="bda-sensitive-data"></a>
 
 With Amazon Bedrock Data Automation (BDA), you can detect and redact personally identifiable information (PII) in standard and custom outputs. PII detection uses Sensitive Information Filters in Amazon Bedrock Guardrails. BDA disables this feature by default. To enable it, pass modality-specific overrides in `overrideConfiguration` for each modality you want to process.
 

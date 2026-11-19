@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/quickstar
 ---
 
 # Quickstart: Run a penetration test
-<a name="quickstart"></a>
 
 This quickstart walks you through running your first penetration test (pentest) with AWS Security Agent. A penetration test exercises your deployed application against a verified target domain and returns security findings, each with a severity rating and supporting evidence. It covers a publicly accessible application; to test one hosted in a private VPC, see [Enable penetration test](enable-penetration-test.md).
 

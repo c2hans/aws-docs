@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableIm
 ---
 
 # DisableImage
-<a name="API_DisableImage"></a>
 
 Sets the AMI state to `disabled` and removes all launch permissions from the AMI. A disabled AMI can't be used for instance launches.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ModifyServerlessCache
-<a name="API_ModifyServerlessCache"></a>
 
 This API modifies the attributes of a serverless cache.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-magics-
 ---
 
 # Use magics to create data graphs
-<a name="notebooks-spark-magics-graphs"></a>
 
 The line magics in this section specialize in rendering data for particular types of data or in conjunction with graphing libraries.
 

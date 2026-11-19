@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Paramet
 ---
 
 # ParameterNameValue
-<a name="API_ParameterNameValue"></a>
 
 Describes a name-value pair that is used to update the value of a parameter.
 

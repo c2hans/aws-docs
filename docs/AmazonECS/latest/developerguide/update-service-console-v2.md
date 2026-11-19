@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-s
 ---
 
 # Updating an Amazon ECS service
-<a name="update-service-console-v2"></a>
 
 After you create a service, there are times when you might need to update the service parameters, for example the number of tasks.
 

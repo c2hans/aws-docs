@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/tutorial-elastisearch-con
 ---
 
 # Tutorial: Using the AWS Glue Connector for Elasticsearch
-<a name="tutorial-elastisearch-connector"></a>
 
 Elasticsearch is a popular open-source search and analytics engine for use cases such as log analytics, real-time application monitoring, and clickstream analysis. You can use OpenSearch as a data store for your extract, transform, and load (ETL) jobs by configuring the AWS Glue Connector for Elasticsearch in AWS Glue Studio. This connector is available for free from [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-v5ygernwn2gb6).
 

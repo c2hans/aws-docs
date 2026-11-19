@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # RecordingStreamConfiguration
-<a name="API_media-pipelines-chime_RecordingStreamConfiguration"></a>
 
 A structure that holds the settings for recording media.
 

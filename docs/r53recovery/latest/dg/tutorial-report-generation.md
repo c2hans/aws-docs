@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/tutorial-report-ge
 ---
 
 # Tutorial: Configure plan execution report autogeneration
-<a name="tutorial-report-generation"></a>
 
 This tutorial guides you through configuring plan execution report autogeneration for a Region switch plan. Reports provide comprehensive PDF documentation of plan executions for compliance purposes.
 

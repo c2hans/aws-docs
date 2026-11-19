@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DBClu
 ---
 
 # DBCluster
-<a name="API_DBCluster"></a>
 
 Detailed information about a cluster.
 

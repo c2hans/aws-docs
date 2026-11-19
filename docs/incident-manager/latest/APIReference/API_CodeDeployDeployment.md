@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # CodeDeployDeployment
-<a name="API_CodeDeployDeployment"></a>
 
 Information about a CodeDeploy deployment that occurred around the time of an incident and could be a possible cause of the incident.
 

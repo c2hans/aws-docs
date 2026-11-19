@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Security Hub
-<a name="list_securityhub"></a>
 
 AWS Security Hub (service prefix: `securityhub`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

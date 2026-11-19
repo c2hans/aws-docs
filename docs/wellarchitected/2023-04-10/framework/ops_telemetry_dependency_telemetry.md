@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS04-BP04 Implement dependency telemetry
-<a name="ops_telemetry_dependency_telemetry"></a>
 
 Design and configure your workload to emit information about the status of resources it depends on. These are resources that are external to your workload. Examples of external dependencies can include external databases, DNS, and network connectivity. Use this information to determine when a response is required and provide additional context on workload state.
 

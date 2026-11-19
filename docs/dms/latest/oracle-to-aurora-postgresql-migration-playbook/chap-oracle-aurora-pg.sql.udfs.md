@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL user-defined functions
-<a name="chap-oracle-aurora-pg.sql.udfs"></a>
 
 With AWS DMS, you can migrate user-defined functions (UDFs) from Oracle and PostgreSQL databases to compatible target databases. UDFs are custom functions written in programming languages like PL/SQL or SQL that extend the functionality of the database management system.
 

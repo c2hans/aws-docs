@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/multiplexing-s
 ---
 
 # Using simultaneous TCP connections in a secure tunnel
-<a name="multiplexing-simultaneous-tcp"></a>
 
 AWS IoT secure tunneling supports more than one TCP connection simultaneously for each data stream. You can use this capability when you require simultaneous connections to a remote device. Using simultaneous TCP connections reduces the potential for a time-out in case of multiple requests from the client. For example, when accessing a web server that has multiple components running on it, simultaneous TCP connections can reduce the time it takes to load the site.
 

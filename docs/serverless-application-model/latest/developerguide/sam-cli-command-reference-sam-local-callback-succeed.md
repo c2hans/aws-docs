@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # sam local callback succeed
-<a name="sam-cli-command-reference-sam-local-callback-succeed"></a>
 
 Send a success callback to a durable function execution.
 

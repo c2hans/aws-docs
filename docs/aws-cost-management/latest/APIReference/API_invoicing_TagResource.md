@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TagResource
-<a name="API_invoicing_TagResource"></a>
 
 Adds a tag to a resource.
 

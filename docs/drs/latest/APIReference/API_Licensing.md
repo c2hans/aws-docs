@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_Licensing.ht
 ---
 
 # Licensing
-<a name="API_Licensing"></a>
 
 Configuration of a machine's license.
 

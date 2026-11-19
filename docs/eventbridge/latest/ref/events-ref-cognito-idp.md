@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-cognit
 ---
 
 # Amazon Cognito user pools events
-<a name="events-ref-cognito-idp"></a>
 
 Amazon Cognito user pools sends service events to EventBridge via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # AVX Cost Drivers and Monthly Estimates
-<a name="plan-cost"></a>
 
 ## Overview
 <a name="plan-cost-overview"></a>

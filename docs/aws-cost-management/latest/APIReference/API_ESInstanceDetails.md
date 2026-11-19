@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ESInstanceDetails
-<a name="API_ESInstanceDetails"></a>
 
 Details about the Amazon OpenSearch Service reservations that AWS recommends that you purchase.
 

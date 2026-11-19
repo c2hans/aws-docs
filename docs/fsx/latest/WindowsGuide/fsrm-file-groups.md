@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/fsrm-file-groups
 ---
 
 # File Groups
-<a name="fsrm-file-groups"></a>
 
 File groups define logical collections of file name patterns that you must use when configuring [file screens](fsrm-file-screening.md), and that you can optionally use when generating [storage reports](fsrm-storage-reports.md). A file group contains include patterns (files to match) and exclude patterns (files to exclude from matches), which you reference by the file group name rather than specifying individual patterns each time.
 

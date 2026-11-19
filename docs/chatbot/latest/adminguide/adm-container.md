@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/adm-container.
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Managing user roles as an administrator in Amazon Q Developer in chat applications
-<a name="adm-container"></a>
 
 Administrators can unmap user roles from channel members' chat client IDs from the **User permissions** page in the Amazon Q Developer in chat applications console. Administrators can also require user roles by enabling a user role requirement in the **User permissions** page. This requirement can be applied to all workspaces and channels or to individual channel configurations. For more information on user role requirements, see [User role requirement](understanding-permissions.md#role-reqs).
 

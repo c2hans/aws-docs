@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/smcluster-getting-st
 ---
 
 # Getting started with SageMaker HyperPod using the AWS CLI
-<a name="smcluster-getting-started-slurm-cli"></a>
 
 The following tutorial demonstrates how to create a new SageMaker HyperPod cluster with Slurm through the [AWS CLI commands for SageMaker HyperPod](sagemaker-hyperpod-ref.md#sagemaker-hyperpod-ref-cli). By the end of this tutorial, you will have a working Slurm cluster with a controller node, a login node, and a compute worker group, ready to schedule and run ML workloads. The tutorial covers Slurm topology setup, node lifecycle configuration options, optional FSx shared storage, and how to connect to your cluster.
 

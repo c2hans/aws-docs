@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/BestPractice
 ---
 
 # Configure a client-side timeout (Valkey and Redis OSS)
-<a name="BestPractices.Clients.Redis.ClientTimeout"></a>
 
 **Configuring the client-side timeout**
 

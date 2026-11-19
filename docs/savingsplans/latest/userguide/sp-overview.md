@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-overvie
 ---
 
 # Understanding your savings opportunities
-<a name="sp-overview"></a>
 
 You can use the **Overview** page on the AWS Cost Management console to see any Savings Plans that you own, in addition to potential savings opportunities.
 

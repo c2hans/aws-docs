@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/configure-sdk5
 ---
 
 # Advanced configurations for the Client SDK 5 configure tool
-<a name="configure-sdk5-advanced-configs"></a>
 
 The AWS CloudHSM Client SDK 5 configure tool includes advanced configurations that are not part of the general features most customers utilize. Advanced configurations provide additional capabilities.
 

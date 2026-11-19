@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # WorkloadDiscoveryConfig
-<a name="API_WorkloadDiscoveryConfig"></a>
 
 Discovery configuration associated to the workload.
 

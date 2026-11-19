@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Cluster lifecycle
-<a name="cluster-lifecycle"></a>
 
  AWS offers a variety of unique ways to design architectures that deploy HPC workloads. Your choice of deployment method for a particular workload depends on a number of factors, including your desired user experience, degree of automation, experience with AWS, preferred scripting languages, size and number of cases, and the lifecycle of your data. The [High Performance Computing Lens](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/welcome.html) whitepaper covers additional best practices for architectures beyond what is discussed in this paper.
 

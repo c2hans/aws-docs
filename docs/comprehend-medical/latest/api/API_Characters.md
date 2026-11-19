@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Charac
 ---
 
 # Characters
-<a name="API_Characters"></a>
 
  The number of characters in the input text to be analyzed.
 

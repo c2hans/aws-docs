@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Andrew Wood, Sr. Solutions Architect, Amazon Web Services

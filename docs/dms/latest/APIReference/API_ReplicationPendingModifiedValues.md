@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationP
 ---
 
 # ReplicationPendingModifiedValues
-<a name="API_ReplicationPendingModifiedValues"></a>
 
 Provides information about the values of pending modifications to a replication instance. This data type is an object of the [`ReplicationInstance`](https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationInstance.html) user-defined data type.
 

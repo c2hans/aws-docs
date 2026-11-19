@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/elastic-load-bala
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Actions for Elastic Load Balancing - Version 1 using AWS SDKs
-<a name="elastic-load-balancing_code_examples_actions"></a>
 
 The following code examples demonstrate how to perform individual Elastic Load Balancing - Version 1 actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

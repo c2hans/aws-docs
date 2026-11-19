@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeletePermissionsBoundaryFromPermissionSet
-<a name="API_DeletePermissionsBoundaryFromPermissionSet"></a>
 
 Deletes the permissions boundary from a specified [PermissionSet](API_PermissionSet.md).
 

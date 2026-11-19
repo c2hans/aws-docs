@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DirectKafkaSource
 ---
 
 # DirectKafkaSource
-<a name="API_DirectKafkaSource"></a>
 
 Specifies an Apache Kafka data store.
 

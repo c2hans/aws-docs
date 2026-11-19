@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateL
 ---
 
 # CreateLocationSmb
-<a name="API_CreateLocationSmb"></a>
 
 Creates a transfer *location* for a Server Message Block (SMB) file server. AWS DataSync can use this location as a source or destination for transferring data.
 

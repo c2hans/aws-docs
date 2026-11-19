@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # VARIABLE\_COLUMN\_LOG\_PARSE
-<a name="sql-reference-variable-column-log-parse"></a>
 
 ```
  VARIABLE_COLUMN_LOG_PARSE(

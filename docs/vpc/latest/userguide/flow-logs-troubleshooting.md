@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-troublesh
 ---
 
 # Troubleshoot VPC Flow Logs
-<a name="flow-logs-troubleshooting"></a>
 
 The following are possible issues you might have when working with flow logs.
 

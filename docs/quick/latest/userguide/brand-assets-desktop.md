@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/brand-assets-desk
 ---
 
 # Brand assets
-<a name="brand-assets-desktop"></a>
 
 Brand assets help your organization keep a consistent brand style across the documents and presentations that people create in AWS Quick. On the **Brand assets** tab, under **Customize**, brand managers upload your organization's brand templates or retrieve them from a connected file store. Quick extracts style elements and brand rules from those files and shows what it found so a person can review, edit, and publish it. After a brand is published, Quick can suggest its templates to users across your organization, choosing a suitable template for each task, so users don't need to find and attach a template in every chat.
 

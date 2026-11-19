@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Aggre
 ---
 
 # AggregationPartitionBy
-<a name="API_AggregationPartitionBy"></a>
 
 The definition of an `AggregationPartitionBy`.
 

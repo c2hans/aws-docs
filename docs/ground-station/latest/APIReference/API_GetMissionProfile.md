@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_G
 ---
 
 # GetMissionProfile
-<a name="API_GetMissionProfile"></a>
 
 Returns a mission profile.
 

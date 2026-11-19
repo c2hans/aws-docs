@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MySQLCatalogTarge
 ---
 
 # MySQLCatalogTarget
-<a name="API_MySQLCatalogTarget"></a>
 
 Specifies a target that uses MySQL.
 

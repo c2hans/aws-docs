@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_DiffC
 ---
 
 # DiffChange
-<a name="API_DiffChange"></a>
 
 A single line-level entry in a diff hunk. Each `DiffChange` describes one line and its change type: unchanged context, an addition in the after blob, or a deletion from the before blob.
 

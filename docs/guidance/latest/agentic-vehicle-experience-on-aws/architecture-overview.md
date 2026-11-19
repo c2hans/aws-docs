@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Architecture Overview
-<a name="architecture-overview"></a>
 
 The Agentic Vehicle Experience (AVX) is a composition layer that does not store or manage vehicle data itself. AVX orchestrates three foundation platforms — Connected Mobility (CMS), the Automotive Data Platform (ADP), and Amazon Connect — into a unified AI-powered channel. A Bedrock AgentCore runtime hosts the supervisor agent and tools that translate every incoming customer interaction into structured reads and writes against those foundations.
 

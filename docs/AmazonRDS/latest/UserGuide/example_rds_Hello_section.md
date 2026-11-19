@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/example_rds_H
 ---
 
 # Hello Amazon RDS
-<a name="example_rds_Hello_section"></a>
 
 The following code examples show how to get started using Amazon RDS.
 

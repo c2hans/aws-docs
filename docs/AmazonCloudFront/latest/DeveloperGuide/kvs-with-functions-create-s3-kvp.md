@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 ---
 
 # File format for key-value pairs
-<a name="kvs-with-functions-create-s3-kvp"></a>
 
 When you create a UTF-8 encoded file, use the following JSON format:
 

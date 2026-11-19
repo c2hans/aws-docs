@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Descr
 ---
 
 # DescribePiiEntitiesDetectionJob
-<a name="API_DescribePiiEntitiesDetectionJob"></a>
 
 Gets the properties associated with a PII entities detection job. For example, you can use this operation to get the job status.
 

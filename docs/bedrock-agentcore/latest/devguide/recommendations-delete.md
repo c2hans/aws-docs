@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/recomm
 ---
 
 # Delete recommendation
-<a name="recommendations-delete"></a>
 
 Delete a recommendation and its associated metadata. The recommendation must be in a terminal state (`COMPLETED` or `FAILED`) before it can be deleted.
 

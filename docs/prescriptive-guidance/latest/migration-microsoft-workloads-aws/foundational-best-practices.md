@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Foundational best practices
-<a name="foundational-best-practices"></a>
 
 Establishing a scalable and secure foundation for your AWS migration can enable you to easily manage and efficiently run your Windows environment on AWS. Before you migrate your Microsoft workloads to AWS, we recommend that you consider the following foundational best practices:
 + **Optimize your spending on Microsoft licensing** – Licensing is a critical factor in your cloud migration because it impacts all other decisions moving forward. We recommend that you understand licensing options as early as possible. For more information about licensing, see the [Licensing your Microsoft workloads](licensing-microsoft-workloads.md) section of this guide.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSREL09-BP01 Create and verify rollback plans
-<a name="lsrel09-bp01"></a>
 
  For every release or approved change, maintain a documented rollback plan that is versioned with the release artifacts. Validate rollback procedures in non-production environments and include rollback steps in the change control package and test evidence. Define roles, approvals, and communications for execution and escalation.
 

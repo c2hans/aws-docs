@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MovingAdd
 ---
 
 # MovingAddressStatus
-<a name="API_MovingAddressStatus"></a>
 
 **Note**
 This action is deprecated.

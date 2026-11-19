@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Lis
 ---
 
 # ListSupportPermits
-<a name="API_ListSupportPermits"></a>
 
 Lists all support permits in the caller's account. Use pagination to ensure that the operation returns quickly and successfully.
 

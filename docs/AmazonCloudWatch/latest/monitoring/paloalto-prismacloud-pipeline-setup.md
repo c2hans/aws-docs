@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/paloa
 ---
 
 # CloudWatch pipelines configuration for Palo Alto Prisma Cloud
-<a name="paloalto-prismacloud-pipeline-setup"></a>
 
 Collects security data from Palo Alto Prisma Cloud using Access Key and Secret Key authentication through the CSPM and Compute APIs.
 

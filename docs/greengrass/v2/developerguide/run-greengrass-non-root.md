@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-greengr
 ---
 
 # Run AWS IoT Greengrass V2 as a non-root user
-<a name="run-greengrass-non-root"></a>
 
 Typically, the root user installs and runs the AWS IoT Greengrass Core software on Linux devices. To increase device security, you can set up a non-root user to run the AWS IoT Greengrass Core software instead. This section provides guidance on setting up non-root configurations.
 

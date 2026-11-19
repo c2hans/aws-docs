@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reco
 ---
 
 # RecommendationRelatedEvent
-<a name="API_RecommendationRelatedEvent"></a>
 
  Information about an event that is related to a recommendation.
 

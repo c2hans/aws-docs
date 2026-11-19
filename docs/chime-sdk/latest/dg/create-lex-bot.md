@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-lex-bot.html
 ---
 
 # Creating an Amazon Lex V2 bot for Amazon Chime SDK messaging
-<a name="create-lex-bot"></a>
 
 To use AppInstance bots as agents, you first need to create an Amazon Lex V2 bot to manage the dialog interaction for an intelligent-agent scenario. To get started building an Amazon Lex V2 bot, see [Getting Started with Amazon Lex V2](https://docs.aws.amazon.com/lexv2/latest/dg/getting-started.html) in the *Amazon Lex V2 Developer Guide*. For information about migrating an Amazon Lex V1 bot to Amazon Lex V2, see the [Amazon Lex V1 to V2 migration guide](https://docs.aws.amazon.com/lexv2/latest/dg/migration.html).
 

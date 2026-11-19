@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/using-v
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.html).
 
 # Using VoiceView
-<a name="using-voiceview"></a>
 
 VoiceView is a built-in screen reader that speaks on-screen text out loud as you go through menu options and settings. You can use it to set up your device and navigate the controls.
 

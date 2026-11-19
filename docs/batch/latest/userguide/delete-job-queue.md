@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/delete-job-queue.
 ---
 
 # Delete a job queue in AWS Batch
-<a name="delete-job-queue"></a>
 
 When you no longer need your job queue, you can disable and delete the job queue.
 

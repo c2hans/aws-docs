@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # GetRasterDataCollection
-<a name="API_geospatial_GetRasterDataCollection"></a>
 
 Use this operation to get details of a specific raster data collection.
 

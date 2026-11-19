@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Relatio
 ---
 
 # RelationPattern
-<a name="API_RelationPattern"></a>
 
 The pattern describing the query's relational traversal.
 

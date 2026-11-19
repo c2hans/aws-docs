@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ClientProperti
 ---
 
 # ClientProperties
-<a name="API_ClientProperties"></a>
 
 Describes an Amazon WorkSpaces client.
 

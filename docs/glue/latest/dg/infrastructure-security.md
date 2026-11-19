@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/infrastructure-security.h
 ---
 
 # Infrastructure security in AWS Glue
-<a name="infrastructure-security"></a>
 
 As a managed service, AWS Glue is protected by the AWS global network security procedures that are described in the [Amazon Web Services: Overview of Security Processes](https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf) whitepaper.
 

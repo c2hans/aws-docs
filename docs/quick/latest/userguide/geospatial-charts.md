@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/geospatial-charts
 ---
 
 # Creating maps and geospatial charts
-<a name="geospatial-charts"></a>
 
 You can create two types of maps in Quick: point maps and filled maps. *Point maps* show the difference between data values for each location by size. *Filled maps* show the difference between data values for each location by varying shades of color.
 

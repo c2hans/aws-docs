@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TrendmicroM
 ---
 
 # TrendmicroMetadata
-<a name="API_TrendmicroMetadata"></a>
 
  The connector metadata specific to Trend Micro.
 

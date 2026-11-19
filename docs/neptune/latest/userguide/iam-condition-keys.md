@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-condition-k
 ---
 
 # Customizing access to Amazon Neptune resources using IAM condition context keys
-<a name="iam-condition-keys"></a>
 
 You can specify conditions in IAM policies that control access to Neptune management actions and resources. The policy statement then takes effect only when the conditions are true.
 

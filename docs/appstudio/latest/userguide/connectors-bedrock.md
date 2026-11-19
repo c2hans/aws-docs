@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-be
 ---
 
 # Connect to Amazon Bedrock
-<a name="connectors-bedrock"></a>
 
 To connect App Studio with Amazon Bedrock so builders can access and use Amazon Bedrock in applications, you must perform the following steps:
 

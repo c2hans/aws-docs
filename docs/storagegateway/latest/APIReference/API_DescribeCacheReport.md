@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeCacheReport
-<a name="API_DescribeCacheReport"></a>
 
 Returns information about the specified cache report, including completion status and generation progress.
 

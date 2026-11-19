@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/c
 ---
 
 # Channel relationships
-<a name="channel-relationships"></a>
 
 Channel relationships in AWS Partner Central provide a centralized way to manage connections between your program management accounts and your customer, distribution seller, or internal AWS Organizations.
 

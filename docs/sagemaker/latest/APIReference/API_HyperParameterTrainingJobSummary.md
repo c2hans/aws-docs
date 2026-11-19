@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterTrainingJobSummary
-<a name="API_HyperParameterTrainingJobSummary"></a>
 
 The container for the summary information about a training job.
 

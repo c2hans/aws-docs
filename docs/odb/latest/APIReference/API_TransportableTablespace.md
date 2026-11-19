@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_Transportabl
 ---
 
 # TransportableTablespace
-<a name="API_TransportableTablespace"></a>
 
 The transportable tablespace configuration used when creating an Autonomous Database.
 

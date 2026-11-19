@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # Amazon Inspector `InspectorScan` invoke action reference
-<a name="action-reference-InspectorScan"></a>
 
 Amazon Inspector is a vulnerability management service that automatically discovers workloads and continually scans them for software vulnerabilities and unintended network exposure. The `InspectorScan` action in CodePipeline automates detecting and fixing security vulnerabilities in your open source code. The action is a managed compute action with security scanning capabilities. You can use InspectorScan with application source code in your third-party repository, such as GitHub or Bitbucket Cloud, or with images for container applications. Your action will scan and report on vulnerability levels and alerts that you configure.
 

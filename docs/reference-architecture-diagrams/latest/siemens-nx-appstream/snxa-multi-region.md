@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Siemens NX multi-Region deployment
-<a name="snxa-multi-region"></a>
 
 With this architecture, you can minimize latency by cross-replicating storage across Regions. This deployment uses [Amazon WorkSpaces Applications](https://docs.aws.amazon.com/appstream2/latest/developerguide/), [Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) (Amazon EC2), and [Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/).
 

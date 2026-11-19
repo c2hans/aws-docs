@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-on-aws-rhel
 ---
 
 # SAP HANA High Availability on Red Hat Enterprise Linux (RHEL) using Pacemaker
-<a name="sap-hana-on-aws-rhel-pacemaker"></a>
 
 **Topics**
 + [Planning](sap-hana-pacemaker-rhel-planning.md)

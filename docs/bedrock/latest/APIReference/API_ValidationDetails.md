@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Validati
 ---
 
 # ValidationDetails
-<a name="API_ValidationDetails"></a>
 
 The status details for the validation sub-task of the customization job.
 

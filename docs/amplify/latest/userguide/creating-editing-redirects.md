@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/creating-editin
 ---
 
 # Creating and editing redirects in the Amplify console
-<a name="creating-editing-redirects"></a>
 
 You can create and edit redirects for an application in the Amplify console. Before you get started, you will need the following information about the parts of a redirect.
 

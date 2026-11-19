@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ProviderMarketplaceConfiguration
-<a name="API_ProviderMarketplaceConfiguration"></a>
 
 The identifiers of the provider service, from AWS Data Exchange.
 

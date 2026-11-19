@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/oracle-netsuite-configuri
 ---
 
 # Configuring Oracle NetSuite
-<a name="oracle-netsuite-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Oracle NetSuite, you must meet these requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # CloudWatch agent credentials preference
-<a name="CloudWatch-Agent-Credentials-Preference"></a>
 
  This section outlines the credentials provider chain the CloudWatch agent uses to obtain credentials when communicating with other AWS services and APIs. The ordering is as follows:
 

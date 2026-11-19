@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Loggi
 ---
 
 # LoggingFilter
-<a name="API_LoggingFilter"></a>
 
 Filtering criteria that determine which queries are logged.
 

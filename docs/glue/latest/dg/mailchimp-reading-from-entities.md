@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mailchimp-reading-from-en
 ---
 
 # Reading from Mailchimp entities
-<a name="mailchimp-reading-from-entities"></a>
 
  **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon Elastic Kubernetes Service:
 +  [AccessConfigResponse](API_AccessConfigResponse.md)

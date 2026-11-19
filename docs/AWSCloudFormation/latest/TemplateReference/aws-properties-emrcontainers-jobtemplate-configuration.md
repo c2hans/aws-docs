@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRContainers::JobTemplate Configuration
-<a name="aws-properties-emrcontainers-jobtemplate-configuration"></a>
 
 A configuration specification to be used when provisioning virtual clusters, which can include configurations for applications and software bundled with Amazon EMR on EKS. A configuration consists of a classification, properties, and optional nested configurations. A classification refers to an application-specific configuration file. Properties are the settings you want to change in that file.
 
@@ -51,7 +50,7 @@ The classification within a configuration.
 `Configurations`  <a name="cfn-emrcontainers-jobtemplate-configuration-configurations"></a>
 A list of additional configurations to apply within a configuration object.
 *Required*: No
-*Type*: Array of [Configuration](#aws-properties-emrcontainers-jobtemplate-configuration)
+*Type*: Array of [Configuration](aws-properties-emrcontainers-jobtemplate-configuration.md)
 *Maximum*: `100`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UpdateUsageLimit
-<a name="API_UpdateUsageLimit"></a>
 
 Update a usage limit in Amazon Redshift Serverless. You can't update the usage type or period of a usage limit.
 

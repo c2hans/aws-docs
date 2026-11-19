@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/case-management-l
 ---
 
 # Legacy experience: Creating support cases and case management
-<a name="case-management-legacy"></a>
 
 In the AWS Management Console, you can create three types of customer cases in Support:
 + **Account and billing** support cases are available to all AWS customers. You can get help with billing and account questions.

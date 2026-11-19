@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/patching-clust
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Patch the operating system of a cluster
-<a name="patching-cluster-v3"></a>
 
 This tutorial shows how to apply operating system updates to the nodes of a running AWS ParallelCluster cluster by building a patched AMI and updating the cluster to use it, without recreating the cluster from scratch.
 

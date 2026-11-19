@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeInstanceAssociationsStatus
-<a name="API_DescribeInstanceAssociationsStatus"></a>
 
 The status of the associations for the managed nodes.
 

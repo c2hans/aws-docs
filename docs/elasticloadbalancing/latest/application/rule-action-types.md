@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Action types for listener rules
-<a name="rule-action-types"></a>
 
 Actions determine how a load balancer handles requests when the conditions for a listener rule are satisfied. Each rule must have at least one action that specifies how to handle the matching requests. Each rule action has a type and configuration information. Application Load Balancers support the following action types for listener rules.Action types
 

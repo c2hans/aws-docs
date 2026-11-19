@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_SwitchoverGlob
 ---
 
 # SwitchoverGlobalCluster
-<a name="API_SwitchoverGlobalCluster"></a>
 
 Switches over the specified secondary DB cluster to be the new primary DB cluster in the global database cluster. Switchover operations were previously called "managed planned failovers."
 

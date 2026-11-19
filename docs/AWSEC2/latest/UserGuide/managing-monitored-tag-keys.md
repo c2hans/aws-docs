@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-monitor
 ---
 
 # Managing monitored tag keys
-<a name="managing-monitored-tag-keys"></a>
 
 Amazon EC2 Capacity Manager lets you select tag keys from your Amazon EC2 resources (for example, `environment` or `team`) to use as dimensions when analyzing your capacity data. After a tag key is activated, you can group and filter your metrics by that tag's values — just like you can with Region, Instance Type, or Availability Zone.
 

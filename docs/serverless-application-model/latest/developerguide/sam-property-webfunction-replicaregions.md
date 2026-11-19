@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ReplicaRegions
-<a name="sam-property-webfunction-replicaregions"></a>
 
 Specifies the Regions that a `MultiRegion` or `PerRegion` Web Function endpoint replicates the function to. You can specify a list of Region codes and Region groups, or an object that includes Regions and optionally excludes some of them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inte
 ---
 
 # IntermediateTableInheritedConstraints
-<a name="API_IntermediateTableInheritedConstraints"></a>
 
 Contains the privacy constraints inherited from parent tables for an intermediate table version.
 

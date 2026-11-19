@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Application Insights CloudWatch Events for detected problems
-<a name="appinsights-cloudwatch-events"></a>
 
 For each application that is added to CloudWatch Application Insights, a CloudWatch event is published for the following events on a best effort basis:
 + **Problem creation.** Emitted when CloudWatch Application Insights detects a new problem.

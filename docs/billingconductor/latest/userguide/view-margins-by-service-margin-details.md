@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/view-m
 ---
 
 # View your margins by AWS service using margin details
-<a name="view-margins-by-service-margin-details"></a>
 
 ## Viewing your billing group margins by service
 <a name="understanding-margin-trend-chart-view"></a>

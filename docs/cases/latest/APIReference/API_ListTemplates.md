@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_ListTempla
 ---
 
 # ListTemplates
-<a name="API_connect-cases_ListTemplates"></a>
 
 Lists all of the templates in a Cases domain. Each list item is a condensed summary object of the template.
 

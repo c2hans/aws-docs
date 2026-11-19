@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/security-iam.htm
 ---
 
 # Identity and access management for Amazon FSx for Windows File Server
-<a name="security-iam"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be *authenticated* (signed in) and *authorized* (have permissions) to use FSx for Windows File Server resources. IAM is an AWS service that you can use with no additional charge.
 

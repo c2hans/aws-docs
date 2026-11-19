@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-framecaptur
 ---
 
 # Create a Frame capture output group
-<a name="creating-framecapture-output-group"></a>
 
 You create the output group and its outputs when you [create or edit a MediaLive channel](creating-a-channel-step4.md).
 

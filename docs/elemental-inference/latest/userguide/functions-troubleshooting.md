@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Troubleshooting functions
-<a name="functions-troubleshooting"></a>
 
 Function problems fall into two groups: a request that Elemental Inference rejects when you save it, and a function that saves cleanly but produces no metadata when media arrives.
 

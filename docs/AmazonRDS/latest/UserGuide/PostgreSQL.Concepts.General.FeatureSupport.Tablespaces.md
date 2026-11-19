@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Co
 ---
 
 # Tablespaces for RDS for PostgreSQL
-<a name="PostgreSQL.Concepts.General.FeatureSupport.Tablespaces"></a>
 
 RDS for PostgreSQL supports tablespaces for compatibility. Because all storage is on a single logical volume, you can't use tablespaces for I/O splitting or isolation. Our benchmarks and experience indicate that a single logical volume is the best setup for most use cases.
 

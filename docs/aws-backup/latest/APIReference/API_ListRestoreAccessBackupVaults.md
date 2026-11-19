@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListR
 ---
 
 # ListRestoreAccessBackupVaults
-<a name="API_ListRestoreAccessBackupVaults"></a>
 
 Returns a list of restore access backup vaults associated with a specified backup vault.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_PutAc
 ---
 
 # PutAccountAlias
-<a name="API_PutAccountAlias"></a>
 
 Creates or updates an individual alias for each AWS account ID. The alias appears in the Support App page of the AWS Support Center. The alias also appears in Slack messages from the Support App.
 

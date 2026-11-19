@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/account-mgmt-free-tria
 ---
 
 # Participating in the free trial of Macie
-<a name="account-mgmt-free-trial"></a>
 
 When you enable Amazon Macie for the first time, your AWS account is automatically enrolled in the 30-day free trial of Macie. This includes individual member accounts in an AWS Organizations organization.
 

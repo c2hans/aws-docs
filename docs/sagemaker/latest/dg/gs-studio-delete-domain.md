@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-delete-dom
 ---
 
 # Delete an Amazon SageMaker AI domain
-<a name="gs-studio-delete-domain"></a>
 
 This page explains how to delete a domain and the requirements needed. A domain consists of a list of authorized users, configuration settings, and an Amazon Elastic File System (Amazon EFS) volume. The Amazon EFS volume contains data for the users, including notebooks, resources, and artifacts. A user can have multiple applications (apps) which support the reading and execution experience of the user’s notebooks, terminals, and consoles. You can delete your domain using one of the following:
 + AWS console

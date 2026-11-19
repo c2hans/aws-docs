@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_AuthRequest.htm
 ---
 
 # AuthRequest
-<a name="API_AuthRequest"></a>
 
 Contains authorization request information, which is required for AWS AppFabric to get the OAuth2 access token for an application.
 

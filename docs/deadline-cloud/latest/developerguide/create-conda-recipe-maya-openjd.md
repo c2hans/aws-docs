@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cre
 ---
 
 # Create a conda build recipe for the Maya adaptor
-<a name="create-conda-recipe-maya-openjd"></a>
 
 The `maya-openjd` package provides the adaptor that integrates Maya with AWS Deadline Cloud (Deadline Cloud) job submissions. When you submit a Maya render job using a Deadline Cloud submitter GUI, the `CondaPackages` parameter includes `maya-openjd` alongside the `maya` package. The adaptor handles launching Maya, communicating render parameters, and managing the application lifecycle during a job session. For more information about adaptors, see [Adaptor packages](conda-package.md#conda-package-adaptors).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sms_stats_console.html
 ---
 
 # Viewing Amazon SNS SMS delivery statistics
-<a name="sms_stats_console"></a>
 
 You can use the Amazon SNS console to view statistics about your recent SMS deliveries.
 

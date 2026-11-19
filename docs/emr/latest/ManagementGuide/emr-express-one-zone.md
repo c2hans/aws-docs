@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-express-o
 ---
 
 # Upload data to Amazon S3 Express One Zone
-<a name="emr-express-one-zone"></a>
 
 ## Overview
 <a name="emr-express-one-zone-overview"></a>

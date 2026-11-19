@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/coding-plugin-for-sap-abap/latest/devgui
 ---
 
 # Editor actions
-<a name="editor-actions"></a>
 
  AWS Coding Plugin for SAP ABAP ("Coding Plugin") brings Kiro into the editors in Eclipse. You act on code without leaving the editor: run an action on a selection from the context menu, or modify a selection with inline assist.
 

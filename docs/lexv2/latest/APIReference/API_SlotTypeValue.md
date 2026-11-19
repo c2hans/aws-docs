@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotTypeVa
 ---
 
 # SlotTypeValue
-<a name="API_SlotTypeValue"></a>
 
 Each slot type can have a set of values. Each `SlotTypeValue` represents a value that the slot type can take.
 

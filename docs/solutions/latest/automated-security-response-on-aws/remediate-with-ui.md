@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Remediate using the Web UI
-<a name="remediate-with-ui"></a>
 
 Alternatively, you can use the solution’s Web UI to remediate AWS Security Hub findings and view past remediations.
 

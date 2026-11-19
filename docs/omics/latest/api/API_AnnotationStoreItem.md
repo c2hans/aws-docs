@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_AnnotationStoreItem
 ---
 
 # AnnotationStoreItem
-<a name="API_AnnotationStoreItem"></a>
 
 An annotation store.
 

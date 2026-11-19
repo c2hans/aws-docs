@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # Example 3: Full-featured template (production-ready)
-<a name="yield-optimization-examples-full"></a>
 
 Comprehensive template with all APS-recommended fields, regulatory compliance, content targeting, and extended identifiers.
 

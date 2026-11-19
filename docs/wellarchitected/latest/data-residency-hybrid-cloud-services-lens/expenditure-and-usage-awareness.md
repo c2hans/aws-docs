@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Expenditure and usage awareness
-<a name="expenditure-and-usage-awareness"></a>
 
 | DRHCCOST02: How do you achieve the maximum value out of Outposts? |
 | --- |

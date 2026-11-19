@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/core-concepts.html
 ---
 
 # Learn AWS CDK core concepts
-<a name="core-concepts"></a>
 
 Learn core concepts behind the AWS Cloud Development Kit (AWS CDK).
 

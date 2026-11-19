@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/f
 ---
 
 # Financial Advisor Chat Assistant
-<a name="financial-advisor-chat-assistant"></a>
 
 Publication date: **January 10, 2022 ([Diagram history](#diagram-history))**
 

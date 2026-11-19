@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_Campaign.html
 ---
 
 # Campaign
-<a name="API_Campaign"></a>
 
 An object that describes the deployment of a solution version. For more information on campaigns, see [CreateCampaign](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateCampaign.html).
 

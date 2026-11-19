@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/auto-os-patch-a
 ---
 
 # Alternative tools for patching
-<a name="auto-os-patch-alt-tools"></a>
 
 In addition to AWS Systems Manager, there are other automated patching tools that you might use, which are listed below. This list is not exhaustive, but is meant to give you a starting point for doing your own research if you decide to consider alternate tools.
 

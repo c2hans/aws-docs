@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/force-certificate-r
 ---
 
 # Force certificate renewal
-<a name="force-certificate-renewal"></a>
 
 You can renew your ACM public and private certificates with the ACM console, [renew-certificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/renew-certificate.html) AWS CLI, or [`RenewCertificate`](https://docs.aws.amazon.com/acm/latest/APIReference/API_RenewCertificate.html) API action. You can only renew certificates that have been previously exported.
 

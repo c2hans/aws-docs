@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Security foundations
-<a name="security-foundations"></a>
 
 | CMSEC\_1: How are you maintaining consumer privacy during actions such as in-vehicle purchase transactions or data collection? |
 | --- |

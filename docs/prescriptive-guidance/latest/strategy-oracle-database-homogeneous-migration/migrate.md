@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # Phase 3: Migrate
-<a name="migrate"></a>
 
 During this phase, you migrate the data. Oracle supports a variety of migration tools. You can choose the appropriate data migration tool based on factors such as database availability requirements (online or offline migration), licensing, migration strategy, and target for the database,.
 

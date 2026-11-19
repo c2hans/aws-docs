@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # UrlRewriteConfig
-<a name="API_UrlRewriteConfig"></a>
 
 Information about a URL rewrite transform. This transform matches a pattern in the request URL and replaces it with the specified string.
 

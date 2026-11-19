@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/bottlerocket-custom
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Build a custom Bottlerocket AMI variant for Amazon EKS
-<a name="bottlerocket-custom-variant"></a>
 
 When you run GPU workloads on Amazon Elastic Kubernetes Service (Amazon EKS), you choose a Bottlerocket variant. The variant must match your Kubernetes version and accelerator type. Bottlerocket ships validated variants for common configurations. However, your organization might need a different variant for any of the following reasons:
 + A newer NVIDIA driver branch

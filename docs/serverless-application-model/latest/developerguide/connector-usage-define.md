@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Define Read and Write permissions in AWS SAM
-<a name="connector-usage-define"></a>
 
 In AWS SAM, `Read` and `Write` permissions can be provisioned within a single connector:
 

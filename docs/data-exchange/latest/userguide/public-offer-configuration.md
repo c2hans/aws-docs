@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/public-of
 ---
 
 # Creating public offers in AWS Data Exchange
-<a name="public-offer-configuration"></a>
 
 To create a new public offer:
 

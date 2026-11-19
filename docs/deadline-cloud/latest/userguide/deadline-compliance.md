@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/deadline
 ---
 
 # Compliance validation for Deadline Cloud
-<a name="deadline-compliance"></a>
 
 Third-party auditors assess the security and compliance of AWS Deadline Cloud as part of the AWS System and Organization Controls (SOC) compliance program.
 

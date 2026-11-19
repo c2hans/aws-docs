@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeGlobal
 ---
 
 # DescribeGlobalClusters
-<a name="API_DescribeGlobalClusters"></a>
 
 Returns information about Neptune global database clusters. This API supports pagination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetSemanticMetadata
-<a name="API_DataSetSemanticMetadata"></a>
 
 Semantic metadata for a dataset, including a description and custom instructions.
 

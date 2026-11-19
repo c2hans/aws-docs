@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-iam-
 ---
 
 # IAM roles for Amazon ECS
-<a name="ecs-iam-role-overview"></a>
 
 An IAM role is an IAM identity that you can create in your account that has specific permissions. In Amazon ECS, you can create roles to grant permissions to Amazon ECS resource such as containers or services.
 

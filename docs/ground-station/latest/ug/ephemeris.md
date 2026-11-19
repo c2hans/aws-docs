@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/ephemeris.html
 ---
 
 # Understand how AWS Ground Station uses ephemerides
-<a name="ephemeris"></a>
 
  An [ephemeris](https://en.wikipedia.org/wiki/Ephemeris), plural ephemerides, is a file or data structure providing the trajectory of astronomical objects. Historically, this file only referred to tabular data but, gradually, it has come to direct to a wide variety of data files indicating a spacecraft trajectory.
 

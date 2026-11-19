@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sample-data.html
 ---
 
 # Sample data
-<a name="sample-data"></a>
 
 To get a first look at how AWS Quick Sight works, you can explore AWS Quick Sight using the following sample data:
 + [B2b sales data](samples/b2b-sales.csv.zip)

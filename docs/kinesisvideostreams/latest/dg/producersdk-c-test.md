@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Run and verify the code
-<a name="producersdk-c-test"></a>
 
 To run and verify the code for the [Use the C\+\+ producer library](producer-sdk-cpp.md), do the following:
 

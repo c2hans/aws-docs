@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_RegionSc
 ---
 
 # RegionScope
-<a name="API_RegionScope"></a>
 
 Defines the AWS Regions that the specified Firewall Manager administrator can manage.
 

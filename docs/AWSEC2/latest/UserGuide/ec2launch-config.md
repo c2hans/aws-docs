@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-config
 ---
 
 # Configure the EC2Launch v1 agent on your Windows instance
-<a name="ec2launch-config"></a>
 
 After your instance has been initialized the first time, you can configure EC2Launch to run again and perform different start-up tasks.
 

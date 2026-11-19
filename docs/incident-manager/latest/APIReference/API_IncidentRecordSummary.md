@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # IncidentRecordSummary
-<a name="API_IncidentRecordSummary"></a>
 
 Details describing an incident record.
 

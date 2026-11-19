@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociatePhoneNumberContactFlow
-<a name="API_DisassociatePhoneNumberContactFlow"></a>
 
 Removes the flow association from a phone number claimed to your Connect Customer instance.
 

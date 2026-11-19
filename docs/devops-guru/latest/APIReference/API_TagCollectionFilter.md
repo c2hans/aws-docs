@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_TagC
 ---
 
 # TagCollectionFilter
-<a name="API_TagCollectionFilter"></a>
 
 A collection of AWS tags used to filter insights. This is used to return insights generated from only resources that contain the tags in the tag collection.
 

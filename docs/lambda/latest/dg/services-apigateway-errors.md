@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-apigateway-err
 ---
 
 # Handling Lambda errors with an API Gateway API
-<a name="services-apigateway-errors"></a>
 
 API Gateway treats all invocation and Event Function errors as internal errors. If the Lambda API rejects the invocation request, API Gateway returns a 500 error code. If the Event Function runs but returns an error, or returns a response in the wrong format, API Gateway returns a 502. In both cases, the body of the response from API Gateway is `{"message": "Internal server error"}`.
 

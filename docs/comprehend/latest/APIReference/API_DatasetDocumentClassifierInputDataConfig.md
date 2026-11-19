@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Datas
 ---
 
 # DatasetDocumentClassifierInputDataConfig
-<a name="API_DatasetDocumentClassifierInputDataConfig"></a>
 
 Describes the dataset input data configuration for a document classifier model.
 

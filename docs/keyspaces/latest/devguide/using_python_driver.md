@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/using_python_d
 ---
 
 # Using a Cassandra Python client driver to access Amazon Keyspaces programmatically
-<a name="using_python_driver"></a>
 
  In this section, we show you how to connect to Amazon Keyspaces using a Python client driver. To provide users and applications with credentials for programmatic access to Amazon Keyspaces resources, you can do either of the following:
 + Create service-specific credentials that are associated with a specific AWS Identity and Access Management (IAM) user.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # S3ExportingLocation
-<a name="API_connect-customer-profiles_S3ExportingLocation"></a>
 
 The S3 location where Identity Resolution Jobs write result files.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecutionTimedOutEventAttributes
-<a name="API_WorkflowExecutionTimedOutEventAttributes"></a>
 
 Provides the details of the `WorkflowExecutionTimedOut` event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Implementation strategies for serverless AI
-<a name="implementation-strategies-for-serverless-ai"></a>
 
 As organizations shift from experimentation to production, successful implementation of AI workloads depends on the choice of models and services. In addition, operational discipline, architectural consistency, and developer enablement are key to success. Although serverless AI abstracts infrastructure complexity, it increases the need for well-defined practices in areas like deployment, governance, testing, and cost management.
 

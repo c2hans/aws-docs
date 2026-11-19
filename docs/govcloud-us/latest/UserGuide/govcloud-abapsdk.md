@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ab
 ---
 
 # AWS SDK for SAP ABAP in AWS GovCloud (US)
-<a name="govcloud-abapsdk"></a>
 
 AWS SDK for SAP ABAP provides an interface to the services offered by AWS in the ABAP language. Using the SDK, you can implement ABAP BADIs, reports, transactions, OData services, and other ABAP artifacts on AWS services.
 

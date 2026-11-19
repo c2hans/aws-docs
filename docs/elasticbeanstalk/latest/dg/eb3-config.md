@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-config.ht
 ---
 
 # **eb config**
-<a name="eb3-config"></a>
 
 ## Description
 <a name="eb3-configdescription"></a>

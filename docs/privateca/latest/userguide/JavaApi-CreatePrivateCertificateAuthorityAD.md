@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Creat
 ---
 
 # Using CreateCertificateAuthority to support Active Directory
-<a name="JavaApi-CreatePrivateCertificateAuthorityAD"></a>
 
 The following Java sample shows how to use the [CreateCerticateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_CreateCertificateAuthority.html) operation to create a CA that can be installed in the Enterprise NTAuth store of Microsoft Active Directory (AD).
 

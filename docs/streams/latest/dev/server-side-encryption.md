@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/server-side-encryptio
 ---
 
 # Data protection in Amazon Kinesis Data Streams
-<a name="server-side-encryption"></a>
 
 Server-side encryption using AWS Key Management Service (AWS KMS) keys makes it easy for you to meet strict data management requirements by encrypting your data at rest within Amazon Kinesis Data Streams.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SourceServer
 ---
 
 # SourceServerActionsRequestFilters
-<a name="API_SourceServerActionsRequestFilters"></a>
 
 Source server post migration custom action filters.
 

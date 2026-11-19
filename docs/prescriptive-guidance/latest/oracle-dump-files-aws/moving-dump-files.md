@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 ---
 
 # Moving on-premises Oracle Database dump files to AWS
-<a name="moving-dump-files"></a>
 
 The following options describe ways to move on-premises Oracle Database dump files to an AWS source technology stack during a migration:
 + Use Amazon S3 to transfer Oracle database dump files, targeting Amazon RDS or Amazon EC2.

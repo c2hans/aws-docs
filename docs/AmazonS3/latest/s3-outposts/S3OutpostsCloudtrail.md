@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsCl
 ---
 
 # Monitoring S3 on Outposts with AWS CloudTrail logs
-<a name="S3OutpostsCloudtrail"></a>
 
 Amazon S3 on Outposts is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in S3 on Outposts. You can use AWS CloudTrail to get information about S3 on Outposts bucket-level and object-level requests to audit and log your S3 on Outposts event activity.
 

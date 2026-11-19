@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3outposts_Creat
 ---
 
 # CreateEndpoint
-<a name="API_s3outposts_CreateEndpoint"></a>
 
 Creates an endpoint and associates it with the specified Outpost.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_GetPred
 ---
 
 # GetPredictiveScalingForecast
-<a name="API_GetPredictiveScalingForecast"></a>
 
 Retrieves the forecast data for a predictive scaling policy.
 

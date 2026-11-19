@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategoryProcessingStatus
-<a name="API_CostCategoryProcessingStatus"></a>
 
 The list of processing statuses for Cost Management products for a specific cost category.
 

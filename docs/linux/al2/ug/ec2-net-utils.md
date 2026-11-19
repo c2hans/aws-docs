@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/ec2-net-utils.html
 ---
 
 # Configure your network interface using ec2-net-utils for AL2
-<a name="ec2-net-utils"></a>
 
 Amazon Linux 2 AMIs may contain additional scripts installed by AWS, known as ec2-net-utils. These scripts optionally automate the configuration of your network interfaces. These scripts are available for AL2 only.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Lambda
 ---
 
 # LambdaFunctionCompletedEventAttributes
-<a name="API_LambdaFunctionCompletedEventAttributes"></a>
 
 Provides the details of the `LambdaFunctionCompleted` event. It isn't set for other event types.
 

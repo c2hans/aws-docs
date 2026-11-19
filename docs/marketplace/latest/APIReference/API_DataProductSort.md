@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Data
 ---
 
 # DataProductSort
-<a name="API_DataProductSort"></a>
 
 Objects that allows sorting on data products based on certain fields and sorting order.
 

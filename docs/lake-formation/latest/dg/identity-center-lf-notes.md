@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/identity-center
 ---
 
 # IAM Identity Center integration limitations
-<a name="identity-center-lf-notes"></a>
 
 With AWS IAM Identity Center, you can connect to identity providers (IdPs) and centrally manage access for users and groups across AWS analytics services. You can configure AWS Lake Formation as an enabled application in IAM Identity Center, and data lake administrators can grant fine-grained permissions to authorized users and groups on AWS Glue Data Catalog resources.
 

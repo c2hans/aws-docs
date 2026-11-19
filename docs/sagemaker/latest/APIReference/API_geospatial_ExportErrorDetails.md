@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ExportErrorDetails
-<a name="API_geospatial_ExportErrorDetails"></a>
 
 The structure for returning the export error details in a GetEarthObservationJob.
 

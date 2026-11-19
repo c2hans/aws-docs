@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GuardDuty::CustomDetectionRuleAssociation TagItem
-<a name="aws-properties-guardduty-customdetectionruleassociation-tagitem"></a>
 
 <a name="aws-properties-guardduty-customdetectionruleassociation-tagitem-description"></a>The `TagItem` property type specifies Property description not available. for an [AWS::GuardDuty::CustomDetectionRuleAssociation](aws-resource-guardduty-customdetectionruleassociation.md).
 

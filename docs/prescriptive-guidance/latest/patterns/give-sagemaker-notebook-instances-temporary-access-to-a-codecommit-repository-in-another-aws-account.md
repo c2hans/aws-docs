@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/gi
 ---
 
 # Give SageMaker notebook instances temporary access to a CodeCommit repository in another AWS account
-<a name="give-sagemaker-notebook-instances-temporary-access-to-a-codecommit-repository-in-another-aws-account"></a>
 
 *Helge Aufderheide, Amazon Web Services*
 

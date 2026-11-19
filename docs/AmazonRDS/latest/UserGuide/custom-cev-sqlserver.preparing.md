@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-cev-sq
 ---
 
 # Preparing to create a CEV for RDS Custom for SQL Server
-<a name="custom-cev-sqlserver.preparing"></a>
 
 You can create a CEV using an Amazon Machine Image (AMI) that contains pre-installed, License Included (LI) Microsoft SQL Server, or with an AMI on which you install your own SQL Server installation media (BYOM).
 

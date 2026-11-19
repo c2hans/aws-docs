@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ExportSna
 ---
 
 # ExportSnapshot
-<a name="API_ExportSnapshot"></a>
 
 Exports the data of an enhanced snapshot to an Amazon S3 location. Managed Service for Apache Flink assumes the IAM role that you specify in `ExportDestinationConfiguration` to write the snapshot data. The snapshot must be in the `READY` status.
 

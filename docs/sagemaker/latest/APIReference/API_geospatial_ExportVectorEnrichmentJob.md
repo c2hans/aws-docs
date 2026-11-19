@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ExportVectorEnrichmentJob
-<a name="API_geospatial_ExportVectorEnrichmentJob"></a>
 
 Use this operation to copy results of a Vector Enrichment job to an Amazon S3 location.
 

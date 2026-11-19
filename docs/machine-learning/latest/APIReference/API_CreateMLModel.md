@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # CreateMLModel
-<a name="API_CreateMLModel"></a>
 
 Creates a new `MLModel` using the `DataSource` and the recipe as information sources.
 

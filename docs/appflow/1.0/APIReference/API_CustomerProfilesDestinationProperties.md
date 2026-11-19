@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomerPro
 ---
 
 # CustomerProfilesDestinationProperties
-<a name="API_CustomerProfilesDestinationProperties"></a>
 
  The properties that are applied when Connect Customer Customer Profiles is used as a destination.
 

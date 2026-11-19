@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DescribeView
-<a name="API_connect-participant_DescribeView"></a>
 
 Retrieves the view for the specified view token.
 

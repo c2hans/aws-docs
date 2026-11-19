@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregati
 ---
 
 # AggregationAuthorization
-<a name="API_AggregationAuthorization"></a>
 
 An object that represents the authorizations granted to aggregator accounts and regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Disas
 ---
 
 # DisassociateDistributionTenantWebACL
-<a name="API_DisassociateDistributionTenantWebACL"></a>
 
 Disassociates a distribution tenant from the AWS WAF web ACL.
 

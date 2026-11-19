@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateMan
 ---
 
 # CreateManagedPrefixList
-<a name="API_CreateManagedPrefixList"></a>
 
 Creates a managed prefix list. You can specify entries for the prefix list. Each entry consists of a CIDR block and an optional description.
 

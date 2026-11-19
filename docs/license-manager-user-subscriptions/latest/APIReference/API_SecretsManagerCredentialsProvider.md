@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # SecretsManagerCredentialsProvider
-<a name="API_SecretsManagerCredentialsProvider"></a>
 
 Contains a credentials secret that's stored in AWS Secrets Manager.
 

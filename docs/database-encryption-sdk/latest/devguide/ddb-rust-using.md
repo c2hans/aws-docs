@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Using the Rust client-side encryption library for DynamoDB
-<a name="ddb-rust-using"></a>
 
 This topic explains some of the functions and helper classes in version 1.*x* of the Rust client-side encryption library for DynamoDB.
 

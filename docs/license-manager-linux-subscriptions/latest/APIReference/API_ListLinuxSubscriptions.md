@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # ListLinuxSubscriptions
-<a name="API_ListLinuxSubscriptions"></a>
 
 Lists the Linux subscriptions that have been discovered. If you have linked your organization, the returned results will include data aggregated across your accounts in AWS Organizations.
 

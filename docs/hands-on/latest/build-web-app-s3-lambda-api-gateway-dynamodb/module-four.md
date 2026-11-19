@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-
 ---
 
 # Task 4: Link a Serverless Function to a Web App
-<a name="module-four"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Mul
 ---
 
 # MultiviewConfiguration
-<a name="API_MultiviewConfiguration"></a>
 
 The multiview configuration for a channel. A multiview channel composites video from several source channels into a single tiled output stream. Players receive one standard HLS or DASH stream instead of several separate streams. This setting is required when `InputType` is `MULTIVIEW`, and can't be set for any other input type.
 

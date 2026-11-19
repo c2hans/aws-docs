@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Revision history
-<a name="revision-history"></a>
 
 To find out what has changed in various releases, see the following:
 + [The change logs](https://github.com/aws/aws-tools-for-powershell/tree/main/changelogs)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeTags
-<a name="API_DescribeTags"></a>
 
 Describes the tags associated with the specified Direct Connect resources.
 

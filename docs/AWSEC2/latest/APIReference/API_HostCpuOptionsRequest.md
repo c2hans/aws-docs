@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HostCpuOp
 ---
 
 # HostCpuOptionsRequest
-<a name="API_HostCpuOptionsRequest"></a>
 
 Contains the CPU configuration options for a Dedicated Host allocation request. Options include AMD Secure Encrypted Virtualization-Secure Nested Paging (AMD SEV-SNP) settings.
 

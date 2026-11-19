@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CreateEndpoi
 ---
 
 # CreateEndpoint
-<a name="API_CreateEndpoint"></a>
 
 Creates an endpoint using the provided settings.
 

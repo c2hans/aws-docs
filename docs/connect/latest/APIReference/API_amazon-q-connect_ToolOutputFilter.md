@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ToolOutputFilter
-<a name="API_amazon-q-connect_ToolOutputFilter"></a>
 
 Filter configuration for tool output.
 

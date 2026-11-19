@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Streaming Airline Ticket Shopping Insights
-<a name="airline-ticket-shopping"></a>
 
 Publication date: **March 10, 2021 ([Diagram history](#ticket-shopping-history))**
 

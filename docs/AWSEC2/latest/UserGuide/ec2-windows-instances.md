@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-windows-inst
 ---
 
 # Configure your Amazon EC2 Windows instance
-<a name="ec2-windows-instances"></a>
 
 After you've launched a Windows instance, you can log in as an administrator to perform additional configuration for Windows features and system settings. [EC2 Windows troubleshooting utilities](windows-troubleshooting-utils.md) can help you troubleshoot issues on your instance.
 

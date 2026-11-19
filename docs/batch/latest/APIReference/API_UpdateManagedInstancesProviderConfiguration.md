@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateMana
 ---
 
 # UpdateManagedInstancesProviderConfiguration
-<a name="API_UpdateManagedInstancesProviderConfiguration"></a>
 
 The configuration for updating an Amazon ECS Managed Instances capacity provider. Used in `UpdateComputeEnvironment` requests. The `capacityOptionType` and `fipsEnabled` fields cannot be changed on update.
 

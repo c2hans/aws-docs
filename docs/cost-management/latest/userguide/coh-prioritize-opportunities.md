@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/coh-pri
 ---
 
 # Prioritizing your cost optimization opportunities
-<a name="coh-prioritize-opportunities"></a>
 
 In Cost Optimization Hub, you can use custom filters, sorting, and grouping, so that you can prioritize your cost optimization effort by return-on-investments.
 

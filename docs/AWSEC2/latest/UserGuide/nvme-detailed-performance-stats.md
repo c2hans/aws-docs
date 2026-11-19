@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-detailed-pe
 ---
 
 # Detailed performance statistics for Amazon EC2 instance store volumes
-<a name="nvme-detailed-performance-stats"></a>
 
 Amazon EC2 provides real-time, high-resolution performance statistics for NVMe instance store volumes attached to Nitro-based Amazon EC2 instances. These statistics are presented as aggregated counters that are retained for the duration of the instance's lifetime. The statistics provide details about the cumulative number of operations, bytes sent and received, time spent on read and write I/O operations, and histograms for read and write I/O operations. While these statistics maintain consistency with [Amazon EBS detailed performance statistics](https://docs.aws.amazon.com/ebs/latest/userguide/nvme-detailed-performance-stats.html), they also include detailed latency histograms broken down by I/O size, which can provide more granular insights into your storage performance patterns. This enhanced visibility enables you to precisely identify which specific I/O sizes are experiencing latency issues, allowing you to optimize application performance and troubleshoot issues more effectively.
 

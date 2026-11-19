@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
 **Topics**
 + [FSISEC09: How are you managing your encryption keys?](fsisec09.md)

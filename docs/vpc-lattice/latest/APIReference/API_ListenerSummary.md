@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListenerSummary
-<a name="API_ListenerSummary"></a>
 
 Summary information about a listener.
 

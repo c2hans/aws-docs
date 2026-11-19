@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Security foundations
-<a name="a-sec-security"></a>
 
 **Topics**
 + [SEC 1  How do you securely operate your workload?](sec-01.md)

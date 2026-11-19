@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/ec2-aws-cli.html
 ---
 
 # Create Amazon EC2 resources using the AWS CLI
-<a name="ec2-aws-cli"></a>
 
 You can create and manage your Amazon EC2 resources using the AWS Command Line Interface (AWS CLI) in a command-line shell. The AWS CLI provides direct access to the APIs for AWS services, such as Amazon EC2.
 

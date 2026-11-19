@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # BidirectionalInputPayloadPart
-<a name="API_runtime_BidirectionalInputPayloadPart"></a>
 
 Payload content for the bidirectional input. The input is an audio stream.
 

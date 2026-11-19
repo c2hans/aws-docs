@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # SageMaker Studio Administration Best Practices
-<a name="sagemaker-studio-admin-best-practices"></a>
 
 Publication date: **April 25, 2023** ([Document revisions](document-revisions.md))
 

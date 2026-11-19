@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_RotateKeyOnD
 ---
 
 # RotateKeyOnDemand
-<a name="API_RotateKeyOnDemand"></a>
 
 Immediately initiates rotation of the key material of the specified symmetric encryption KMS key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-setup-authoriz
 ---
 
 # Set up the Authorization Code flow for Salesforce
-<a name="salesforce-setup-authorization-code-flow"></a>
 
 Refer to Salesforce public documentation for enabling the OAuth 2.0 Authorization Code flow.
 

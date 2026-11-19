@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ll_how-it-works.html
 ---
 
 # How linear learner works
-<a name="ll_how-it-works"></a>
 
 There are three steps involved in the implementation of the linear learner algorithm: preprocess, train, and validate.
 

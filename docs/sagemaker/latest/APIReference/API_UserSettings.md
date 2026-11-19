@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UserSe
 ---
 
 # UserSettings
-<a name="API_UserSettings"></a>
 
 A collection of settings that apply to users in a domain. These settings are specified when the `CreateUserProfile` API is called, and as `DefaultUserSettings` when the `CreateDomain` API is called.
 

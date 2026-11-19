@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-transf
 ---
 
 # AWS Transfer Family events
-<a name="events-ref-transfer"></a>
 
 Transfer Family sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

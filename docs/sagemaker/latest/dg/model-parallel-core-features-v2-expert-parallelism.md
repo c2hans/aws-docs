@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 ---
 
 # Expert parallelism
-<a name="model-parallel-core-features-v2-expert-parallelism"></a>
 
 A *Mixture of Experts* (MoE) model is a type of transformer model that employs a *sparse* approach, making it lighter for training compared to training traditional dense models. In this MoE neural network architecture, only a subset of the model's components called *experts* are utilized for each input. This approach offers several advantages, including more efficient training and faster inference, even with a larger model size. In other words, with the same compute budget for training a full dense model, you can fit a larger model or dataset when using MoE.
 

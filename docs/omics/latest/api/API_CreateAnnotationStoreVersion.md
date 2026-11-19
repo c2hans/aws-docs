@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_CreateAnnotationSto
 ---
 
 # CreateAnnotationStoreVersion
-<a name="API_CreateAnnotationStoreVersion"></a>
 
  Creates a new version of an annotation store.
 

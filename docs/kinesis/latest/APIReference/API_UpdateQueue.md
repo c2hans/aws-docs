@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQueue
-<a name="API_UpdateQueue"></a>
 
 Updates the configuration attributes of the specified queue. You can change the queue's visibility timeout, its dead-letter handling configuration, or both.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ListContainerFleets
-<a name="API_ListContainerFleets"></a>
 
  **This API works with the following fleet types:** Container
 

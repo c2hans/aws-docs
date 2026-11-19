@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-a
 ---
 
 # Address data feed
-<a name="data-feed-address"></a>
 
 **Important**
 AWS Marketplace will discontinue the PIIFeed, which is delivered using the [seller delivery data feeds service](https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-service.html), in December 2023. Use the AddressFeed\_V1 data feed for your address data needs. If you have questions or require support, contact the [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) team.

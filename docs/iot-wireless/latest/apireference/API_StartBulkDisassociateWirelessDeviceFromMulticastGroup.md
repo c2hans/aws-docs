@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sta
 ---
 
 # StartBulkDisassociateWirelessDeviceFromMulticastGroup
-<a name="API_StartBulkDisassociateWirelessDeviceFromMulticastGroup"></a>
 
 Starts a bulk disassociatin of all qualifying wireless devices from a multicast group.
 

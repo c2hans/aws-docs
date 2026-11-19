@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-instance-inc
 ---
 
 # Increase the size of an EBS volume on your Mac instance
-<a name="mac-instance-increase-volume"></a>
 
 You can increase the size of your Amazon EBS volumes on your Mac instance. For more information, see [Amazon EBS Elastic Volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modify-volume.html) in the *Amazon EBS User Guide*.
 

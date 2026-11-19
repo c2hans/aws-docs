@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway.html
 ---
 
 # AWS Elemental MediaConnect Gateway
-<a name="gateway"></a>
 
 *AWS Elemental MediaConnect Gateway* is a feature of MediaConnect that deploys on-premises resources for transporting live video to and from the AWS Cloud. MediaConnect Gateway allows you to contribute live video to the AWS Cloud from on-premises hardware, as well as distribute live video from the AWS Cloud to your local data center.
 

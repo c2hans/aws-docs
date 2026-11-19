@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievedReference
-<a name="API_agent-runtime_RetrievedReference"></a>
 
 Contains metadata about a source cited for the generated response.
 

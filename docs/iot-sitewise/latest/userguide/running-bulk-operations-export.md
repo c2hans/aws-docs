@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/running-bu
 ---
 
 # Run a bulk export job
-<a name="running-bulk-operations-export"></a>
 
  Bulk export is the action of moving metadata from an AWS IoT SiteWise workspace to an Amazon S3 bucket.
 

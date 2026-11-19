@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # MetaFlowAsset
-<a name="API_MetaFlowAsset"></a>
 
 Represents a single asset file associated with a WhatsApp Flow, including a presigned download URL.
 

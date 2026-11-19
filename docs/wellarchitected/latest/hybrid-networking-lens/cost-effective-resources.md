@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # Cost-effective resources
-<a name="cost-effective-resources"></a>
 
  Cost-effective hybrid networking solutions strategically balance on-premises infrastructure with cloud services, optimizing resource allocation while minimizing unnecessary expenditure.
 

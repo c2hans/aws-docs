@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Environments backendEnvironmentName Remove
-<a name="backend-appid-environments-backendenvironmentname-remove"></a>
 
 An existing environment in your Amplify project.
 

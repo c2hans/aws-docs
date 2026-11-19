@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CognitoOptionsStatus
-<a name="API_CognitoOptionsStatus"></a>
 
 The status of the Cognito options for the specified domain.
 

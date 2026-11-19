@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/vpc-creating-a-co
 ---
 
 # Configuring the VPC connection in the AWS Quick console
-<a name="vpc-creating-a-connection-in-quicksight-console"></a>
 
 To create a secure private connection to the Amazon VPC service from the AWS Quick console, use the following procedure.
 

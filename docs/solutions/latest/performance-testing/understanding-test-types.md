@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/und
 ---
 
 # Understanding Test Types
-<a name="understanding-test-types"></a>
 
 The term "load test" is often used as a catch-all, but there are eight distinct test types, each answering a different question about your system. Running the wrong type wastes time and produces misleading confidence.
 

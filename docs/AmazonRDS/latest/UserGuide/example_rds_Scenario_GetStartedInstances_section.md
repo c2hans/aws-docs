@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/example_rds_S
 ---
 
 # Learn the basics of Amazon RDS with an AWS SDK
-<a name="example_rds_Scenario_GetStartedInstances_section"></a>
 
 The following code examples show how to:
 + Create a custom DB parameter group and set parameter values.

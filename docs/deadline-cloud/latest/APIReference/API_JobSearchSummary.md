@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobSearchSummary
-<a name="API_JobSearchSummary"></a>
 
 The details of a job search.
 

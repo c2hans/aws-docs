@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetDoma
 ---
 
 # GetDomainUnit
-<a name="API_GetDomainUnit"></a>
 
 Gets the details of the specified domain unit.
 

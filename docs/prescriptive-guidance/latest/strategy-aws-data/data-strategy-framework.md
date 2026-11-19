@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Data strategy framework
-<a name="data-strategy-framework"></a>
 
 The data strategy framework presented in this guide is based on the following tenets of modern data and analytics architecture:
 

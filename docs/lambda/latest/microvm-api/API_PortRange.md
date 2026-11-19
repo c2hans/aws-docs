@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_PortRange.
 ---
 
 # PortRange
-<a name="API_PortRange"></a>
 
 Specifies a range of ports.
 

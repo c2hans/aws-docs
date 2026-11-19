@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # ProvenanceSummary
-<a name="API_ProvenanceSummary"></a>
 
 A condensed provenance entry surfaced in list results. Contains the source identity of a lineage entry without the source details returned by `GetRegistryRecord`.
 

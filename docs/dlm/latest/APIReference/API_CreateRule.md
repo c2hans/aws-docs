@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_CreateRule.h
 ---
 
 # CreateRule
-<a name="API_CreateRule"></a>
 
  **[Custom snapshot and AMI policies only]** Specifies when the policy should create snapshots or AMIs.
 

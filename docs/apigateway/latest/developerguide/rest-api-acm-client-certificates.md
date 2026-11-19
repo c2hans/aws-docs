@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Use your own ACM certificate for backend mutual TLS in API Gateway
-<a name="rest-api-acm-client-certificates"></a>
 
 You can configure API Gateway to present your own CA-signed certificate to backend services. Import your certificate into AWS Certificate Manager (ACM), or issue one through AWS Private Certificate Authority. Then, link the ACM certificate ARN to your API stage.
 

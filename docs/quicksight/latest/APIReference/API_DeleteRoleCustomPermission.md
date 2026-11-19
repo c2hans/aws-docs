@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteRoleCustomPermission
-<a name="API_DeleteRoleCustomPermission"></a>
 
 Removes custom permissions from the role.
 

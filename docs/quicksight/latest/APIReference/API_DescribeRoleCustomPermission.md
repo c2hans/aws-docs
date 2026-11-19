@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeRoleCustomPermission
-<a name="API_DescribeRoleCustomPermission"></a>
 
 Describes all custom permissions that are mapped to a role.
 

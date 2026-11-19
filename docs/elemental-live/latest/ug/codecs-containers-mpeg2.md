@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/codecs-containe
 ---
 
 # Video: MPEG-2 (H.262) support
-<a name="codecs-containers-mpeg2"></a>
 
 MPEG-2 is supported in the following variations.
 

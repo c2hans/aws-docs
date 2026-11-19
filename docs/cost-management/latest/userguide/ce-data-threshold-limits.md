@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-data
 ---
 
 # Understanding Cost Explorer data threshold limits
-<a name="ce-data-threshold-limits"></a>
 
 Cost Explorer supports up to 500 million usage records for resource-level data at daily granularity and up to 500 million usage records for hourly granularity features (EC2 resource-level data at hourly granularity and hourly granularity for all services without resources).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationRestProfile
-<a name="API_WaypointOptimizationRestProfile"></a>
 
 Pre defined rest profiles for a driver schedule. The only currently supported profile is EU.
 

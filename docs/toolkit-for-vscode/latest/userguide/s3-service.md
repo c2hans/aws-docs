@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/s3-s
 ---
 
 # Working with Amazon S3 resources
-<a name="s3-service"></a>
 
 You can use Amazon S3 from the AWS Toolkit for Visual Studio Code to view, manage, and edit your Amazon S3 buckets and other resources.
 

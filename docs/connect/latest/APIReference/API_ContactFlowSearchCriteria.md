@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFlowSearchCriteria
-<a name="API_ContactFlowSearchCriteria"></a>
 
 The search criteria to be used to return flows.
 
@@ -12,12 +11,12 @@ The search criteria to be used to return flows.
 
  ** AndConditions **   <a name="connect-Type-ContactFlowSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an `AND` condition.
-Type: Array of [ContactFlowSearchCriteria](#API_ContactFlowSearchCriteria) objects
+Type: Array of [ContactFlowSearchCriteria](API_ContactFlowSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-ContactFlowSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an `OR` condition.
-Type: Array of [ContactFlowSearchCriteria](#API_ContactFlowSearchCriteria) objects
+Type: Array of [ContactFlowSearchCriteria](API_ContactFlowSearchCriteria.md) objects
 Required: No
 
  ** StateCondition **   <a name="connect-Type-ContactFlowSearchCriteria-StateCondition"></a>

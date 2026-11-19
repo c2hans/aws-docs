@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_TaskContai
 ---
 
 # TaskContainerDependency
-<a name="API_TaskContainerDependency"></a>
 
 A list of containers that this task depends on.
 

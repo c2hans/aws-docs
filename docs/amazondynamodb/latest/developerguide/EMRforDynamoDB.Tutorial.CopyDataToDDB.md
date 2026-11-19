@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMR
 ---
 
 # Step 5: Copy data to DynamoDB
-<a name="EMRforDynamoDB.Tutorial.CopyDataToDDB"></a>
 
 In this step, you will copy data from the Hive table (`hive_features`) to a new table in DynamoDB.
 

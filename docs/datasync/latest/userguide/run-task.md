@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/run-task.html
 ---
 
 # Starting a task to transfer your data
-<a name="run-task"></a>
 
 Once you create your AWS DataSync transfer task, you can start moving data. Each run of a task is called a *task execution*. For information about what happens during a task execution, see [How DataSync transfers files, objects, and directories](how-datasync-transfer-works.md#transferring-files).
 

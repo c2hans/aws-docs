@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_UpdateHttpNames
 ---
 
 # UpdateHttpNamespace
-<a name="API_UpdateHttpNamespace"></a>
 
 Updates an HTTP namespace.
 

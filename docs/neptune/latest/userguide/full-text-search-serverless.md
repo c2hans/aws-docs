@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/full-text-searc
 ---
 
 # Replication to OpenSearch Serverless
-<a name="full-text-search-serverless"></a>
 
 Starting with [engine release 1.3.0.0](engine-releases-1.3.0.0.md), Amazon Neptune supports using [Amazon OpenSearch Service Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html) for full-text search in Gremlin and SPARQL queries. Using OpenSearch Serverless requires you to [enable IAM authentication](https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-enable.html) on your Neptune Database cluster. Neptune Database clusters with IAM authentication disabled are not supported with OpenSearch Serverless.
 

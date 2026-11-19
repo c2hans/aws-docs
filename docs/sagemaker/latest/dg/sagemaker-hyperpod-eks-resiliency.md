@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Cluster resiliency features for SageMaker HyperPod cluster orchestration with Amazon EKS
-<a name="sagemaker-hyperpod-eks-resiliency"></a>
 
 SageMaker HyperPod provides the following cluster resiliency features.
 

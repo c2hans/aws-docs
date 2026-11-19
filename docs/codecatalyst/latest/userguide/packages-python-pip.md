@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/packages-p
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Configuring pip and installing Python packages
-<a name="packages-python-pip"></a>
 
 To use `pip` with CodeCatalyst, you must connect `pip` to your package repository and provide a personal access token for authentication. You can view instructions for connecting `pip` to your package repository in the CodeCatalyst console. After you authenticate and connect `pip` to CodeCatalyst, you can run `pip` commands.
 

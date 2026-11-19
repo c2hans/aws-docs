@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/us
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Use async/await
-<a name="using-async-await"></a>
 
 Rather than using promises, you should consider using async/await. Async functions are simpler and take less boilerplate than using promises. Await can only be used in an async function to asynchronously wait for a value.
 

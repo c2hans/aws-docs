@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-int
 ---
 
 # (Optional) Running AWS AppConfig as a DaemonSet in Amazon EKS
-<a name="appconfig-integration-containers-agent-daemon"></a>
 
 With Amazon EKS, you can run AWS AppConfig Agent as a sidecar, which results in one agent container *per application pod*. Or, if you prefer, you can run AWS AppConfig Agent as a [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), which results in one agent container *per node in your cluster*.
 

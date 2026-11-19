@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/supported-formats-rt
 ---
 
 # Captions formats supported in RTMP outputs
-<a name="supported-formats-rtmp-output"></a>
 
 In this table, look up your input container and captions type. Then read across to find the caption formats that are supported in MediaLive in an RTMP output, when you have this input container and captions type.
 

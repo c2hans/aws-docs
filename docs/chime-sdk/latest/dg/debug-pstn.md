@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/debug-pstn.html
 ---
 
 # Debugging and troubleshooting the Amazon Chime SDK PTSN audio service
-<a name="debug-pstn"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with the Amazon Chime SDK PSTN audio service.
 

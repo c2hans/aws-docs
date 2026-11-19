@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # AWS Well-Architected Framework v13
-<a name="welcome"></a>
 
 Publication date: **November 6, 2024** ([Document revisions](document-revisions.md))
 

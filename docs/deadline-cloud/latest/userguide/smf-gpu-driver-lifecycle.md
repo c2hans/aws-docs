@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/smf-gpu-
 ---
 
 # GPU driver lifecycle
-<a name="smf-gpu-driver-lifecycle"></a>
 
 Deadline Cloud supports NVIDIA vGPU software branches for service-managed fleets, including Long-Term Support (LTS) and Production branches. Production branches receive support for one year, while LTS branches receive support for three years. For the longest support window, pin `grid:r580` (LTS). The `latest` runtime resolves to `grid:r595` for all supported accelerators. For more information about the NVIDIA vGPU software lifecycle, see the [NVIDIA vGPU Software Lifecycle Policy](https://docs.nvidia.com/vgpu/news/vgpu-software-lifecycle-policy/) on the NVIDIA website.
 

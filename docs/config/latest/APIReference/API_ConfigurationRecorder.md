@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Configura
 ---
 
 # ConfigurationRecorder
-<a name="API_ConfigurationRecorder"></a>
 
 Records configuration changes to the resource types in scope.
 

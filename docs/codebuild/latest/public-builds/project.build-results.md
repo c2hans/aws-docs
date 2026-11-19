@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/public-builds/project.b
 ---
 
 # Project build results
-<a name="project.build-results"></a>
 
 The entry page for a project's build results displays information about the project.
 

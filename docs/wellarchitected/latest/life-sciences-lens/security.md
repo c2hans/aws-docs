@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Security
-<a name="security"></a>
 
  The security pillar provides AWS recommendations that assist to meet your business and regulatory requirements. The practices in this pillar inform architectures that protect GxP workloads and data, control access, and respond automatically to security events.
 

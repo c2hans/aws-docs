@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # VectorEnrichmentJobS3Data
-<a name="API_geospatial_VectorEnrichmentJobS3Data"></a>
 
 The Amazon S3 data for the Vector Enrichment job.
 

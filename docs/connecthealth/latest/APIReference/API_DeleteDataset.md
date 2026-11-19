@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_De
 ---
 
 # DeleteDataset
-<a name="API_DeleteDataset"></a>
 
 Starts deleting a Dataset and the resources that Amazon Connect Health built for it. You can delete a dataset whose status is ACTIVE, CREATE\_FAILED, or DELETE\_FAILED. The dataset moves to DELETING, and then to DELETED. If the delete fails, the dataset moves to DELETE\_FAILED, and you can call DeleteDataset again.
 

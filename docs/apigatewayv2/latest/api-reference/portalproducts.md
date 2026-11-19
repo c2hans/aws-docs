@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/portal
 ---
 
 # Portal products
-<a name="portalproducts"></a>
 
 Represents the collection of portal products.
 

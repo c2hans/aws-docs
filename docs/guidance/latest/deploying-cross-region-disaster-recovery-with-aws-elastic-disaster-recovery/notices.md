@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/deploying-cross-region-d
 ---
 
 # Conclusion and notices
-<a name="notices"></a>
 
 This guide walked through design patterns for provisioning key Elastic Disaster Recovery resources, such as staging area subnets, recovery subnets, and EBS volumes. It also provides the necessary technical background to understand the core principles and implementation process for the various stages of Elastic Disaster Recovery. This ensures the provisioned resources remain robust, even when facing unforeseen obstacles.
 

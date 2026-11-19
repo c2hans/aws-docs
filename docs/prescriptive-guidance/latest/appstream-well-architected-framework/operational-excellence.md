@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 ---
 
 # Operational excellence pillar
-<a name="operational-excellence"></a>
 
 Operational excellence (OE) focuses on building and running workloads that deliver business value and meet user expectations. The [operational excellence pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html) of the AWS Well-Architected Framework includes strategies for organizing teams, designing workloads, operating at scale, and adapting to changing requirements over time. By following these principles, organizations can help their systems remain resilient, performant, and aligned with evolving business needs.
 

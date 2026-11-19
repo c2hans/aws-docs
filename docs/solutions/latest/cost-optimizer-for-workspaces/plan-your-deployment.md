@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the [cost](cost.md), [security](security.md), and [quota](quotas.md) considerations prior to deploying the solution.
 

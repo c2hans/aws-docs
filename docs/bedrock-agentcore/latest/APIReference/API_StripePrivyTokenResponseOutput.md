@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # StripePrivyTokenResponseOutput
-<a name="API_StripePrivyTokenResponseOutput"></a>
 
 Stripe Privy token response containing appId, basicAuthToken, and optionally authorizationSignature.
 

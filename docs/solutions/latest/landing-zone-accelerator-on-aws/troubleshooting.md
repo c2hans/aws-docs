@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides instructions for the [Diagnostics pack](diagnostics-pack.md) and troubleshooting instructions for deploying and using the solution.
 

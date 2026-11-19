@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteAp
 ---
 
 # DeleteApi
-<a name="API_DeleteApi"></a>
 
 Deletes an `Api` object
 

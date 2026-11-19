@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ac
 ---
 
 # Access a bastion host by using Session Manager and Amazon EC2 Instance Connect
-<a name="access-a-bastion-host-by-using-session-manager-and-amazon-ec2-instance-connect"></a>
 
 *Piotr Chotkowski and Witold Kowalik, Amazon Web Services*
 

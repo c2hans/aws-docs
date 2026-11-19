@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InstanceProperty
-<a name="API_InstanceProperty"></a>
 
 An object containing various properties of a managed node.
 

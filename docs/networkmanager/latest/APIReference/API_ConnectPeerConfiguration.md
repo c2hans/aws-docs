@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ConnectPeerConfiguration
-<a name="API_ConnectPeerConfiguration"></a>
 
 Describes a core network Connect peer configuration.
 

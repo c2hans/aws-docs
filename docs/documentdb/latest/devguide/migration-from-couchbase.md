@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/migration-fro
 ---
 
 # Migration from Couchbase Server
-<a name="migration-from-couchbase"></a>
 
 **Topics**
 + [Introduction](#introduction)

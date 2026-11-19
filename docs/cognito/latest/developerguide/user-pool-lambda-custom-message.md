@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 ---
 
 # Custom message Lambda trigger
-<a name="user-pool-lambda-custom-message"></a>
 
 When you have an external standard for the email and SMS messages that you want to send to your users, or when you want to apply your own logic at runtime to the formatting of user messages, add a custom message trigger to your user pool. The custom message Lambda receives the contents of all email and SMS messages before your user pool sends them. Your Lambda function then has the opportunity to modify the message contents and subject.
 

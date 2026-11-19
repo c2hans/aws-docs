@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HistoryRe
 ---
 
 # HistoryRecordEntry
-<a name="API_HistoryRecordEntry"></a>
 
 Describes an event in the history of an EC2 Fleet.
 

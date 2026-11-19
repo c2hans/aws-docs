@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/ghost-reading-from-entiti
 ---
 
 # Reading from Ghost entities
-<a name="ghost-reading-from-entities"></a>
 
 **Prerequisites**
 

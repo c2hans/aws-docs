@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TaskCredentials
-<a name="API_TaskCredentials"></a>
 
 Contains details about the credentials that Step Functions uses for a task.
 

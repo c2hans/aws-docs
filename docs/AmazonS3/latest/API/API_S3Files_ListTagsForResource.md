@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_ListTags
 ---
 
 # ListTagsForResource
-<a name="API_S3Files_ListTagsForResource"></a>
 
 Lists all tags for S3 Files resources.
 

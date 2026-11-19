@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-data-condit
 ---
 
 # IAM condition keys for accessing data in Amazon Neptune
-<a name="iam-data-condition-keys"></a>
 
 [Using condition keys](security-iam-access-manage.md#iam-using-condition-keys), you can specify conditions in an IAM policy statement so that the statement takes effect only when the conditions are true.
 

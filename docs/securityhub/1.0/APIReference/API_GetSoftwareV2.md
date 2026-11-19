@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetSoft
 ---
 
 # GetSoftwareV2
-<a name="API_GetSoftwareV2"></a>
 
 Returns a list of software packages installed on your resources. Each result identifies a package by name, version, and type, and includes the number of resources that contain that package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 The Amazon S3 location information.
 

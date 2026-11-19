@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeCustomDomainAssociations
-<a name="API_DescribeCustomDomainAssociations"></a>
 
 Contains information about custom domain associations for a cluster.
 

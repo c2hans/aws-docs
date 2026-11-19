@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # CreateRuleSnapshot
-<a name="API_CreateRuleSnapshot"></a>
 
 Creates a snapshot of the current published version of the specified rule. A snapshot is an immutable, versioned copy that other resources can reference.
 

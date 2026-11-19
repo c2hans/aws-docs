@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/packe
 ---
 
 # Packet header statements in Network Access Analyzer
-<a name="packet-header-statement"></a>
 
 A packet header statement defines the traffic types for a match or exclude condition. If you omit the packet header statement, all traffic types match. All fields are optional, but if you use a packet header statement, you must use at least one of its fields.
 

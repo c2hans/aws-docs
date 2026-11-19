@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SMSVOICE::VerifiedDestinationNumber
-<a name="aws-resource-smsvoice-verifieddestinationnumber"></a>
 
 You can only send messages to verified destination numbers when your account is in the sandbox. You can add up to 10 verified destination numbers.
 

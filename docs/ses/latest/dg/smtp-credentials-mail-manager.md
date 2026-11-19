@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/smtp-credentials-mail-mana
 ---
 
 # Creating SMTP credentials using Mail Manager
-<a name="smtp-credentials-mail-manager"></a>
 
 You can use Mail Manager to create SMTP credentials from the SES console. The console creates the supporting Mail Manager resources for you, including a [Traffic policies and policy statements](eb-filters.md), a [Rule sets and rules](eb-rules.md), an IAM role, and an authenticated [Ingress endpoints](eb-ingress.md).
 

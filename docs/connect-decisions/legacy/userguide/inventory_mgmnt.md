@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/inven
 ---
 
 # Inventory management
-<a name="inventory_mgmnt"></a>
 
 This section lists the data entities within the inventory management category.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/cloud-practitio
 ---
 
 # In-Scope AWS Services
-<a name="clf-02-in-scope-services"></a>
 
 The following list contains AWS services and features that are in scope for the AWS Certified Cloud Practitioner (CLF-C02) exam. This list is non-exhaustive and is subject to change. AWS offerings appear in categories that align with the offerings' primary functions.
 

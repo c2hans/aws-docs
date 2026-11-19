@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHoste
 ---
 
 # GetHostedZoneLimit
-<a name="API_GetHostedZoneLimit"></a>
 
 Gets the specified limit for a specified hosted zone, for example, the maximum number of records that you can create in the hosted zone.
 

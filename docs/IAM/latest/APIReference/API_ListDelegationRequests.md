@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListDelegati
 ---
 
 # ListDelegationRequests
-<a name="API_ListDelegationRequests"></a>
 
 Lists delegation requests based on the specified criteria.
 

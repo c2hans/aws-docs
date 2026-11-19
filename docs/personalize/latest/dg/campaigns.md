@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/campaigns.html
 ---
 
 # Deploying an Amazon Personalize solution version with a campaign
-<a name="campaigns"></a>
 
 For real-time recommendations with custom resources, after you complete [Manually creating a solution version](creating-a-solution-version.md), you are ready to deploy your solution version with a campaign.
 

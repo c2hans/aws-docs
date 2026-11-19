@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Tr
 ---
 
 # TrainingDatasetSummary
-<a name="API_TrainingDatasetSummary"></a>
 
 Provides information about the training dataset.
 

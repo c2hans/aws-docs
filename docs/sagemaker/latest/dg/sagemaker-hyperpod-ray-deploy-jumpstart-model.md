@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Deploying a JumpStart model with Ray Serve
-<a name="sagemaker-hyperpod-ray-deploy-jumpstart-model"></a>
 
 You can deploy JumpStart models into Ray Serve on HyperPod without manually downloading model weights, writing model-loading code, or configuring a serving container. The [toolkit-for-ray-on-sagemaker-ai](https://pypi.org/project/toolkit-for-ray-on-sagemaker-ai/) library on the PyPI website provides a `JumpStartModelLoaderCallback` that integrates with Ray Serve's LLM API to handle model artifact download from JumpStart at deployment time.
 

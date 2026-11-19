@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNOPS04-BP02 Develop automated runbooks and maintain clear documentations
-<a name="hnops04-bp02"></a>
 
  Developing automated runbooks and maintaining clear, comprehensive documentation ensures that your team can respond effectively to network events, perform routine maintenance, and troubleshoot issues across your cloud and on-premises infrastructure.
 

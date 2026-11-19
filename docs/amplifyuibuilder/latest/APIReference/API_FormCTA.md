@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FormCTA
-<a name="API_FormCTA"></a>
 
 Describes the call to action button configuration for the form.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # Viewing schedule actions
-<a name="feed-scheduling-list"></a>
 
 To view the schedule actions on a feed, use the `list-schedule-actions` command. The response includes the status of each action. If an action failed, the response also includes an `error` that describes the failure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Describe
 ---
 
 # DescribeStreamSummary
-<a name="API_DescribeStreamSummary"></a>
 
 Provides a summarized description of the specified Kinesis data stream without the shard list.
 
@@ -12,7 +11,7 @@ When invoking this API, you must use either the `StreamARN` or the `StreamName` 
 
 The information returned includes the stream name, Amazon Resource Name (ARN), status, record retention period, approximate creation time, monitoring, encryption details, and open shard count.
 
- [DescribeStreamSummary](#API_DescribeStreamSummary) has a limit of 20 transactions per second per account.
+ [DescribeStreamSummary](API_DescribeStreamSummary.md) has a limit of 20 transactions per second per account.
 
 ## Request Syntax
 <a name="API_DescribeStreamSummary_RequestSyntax"></a>

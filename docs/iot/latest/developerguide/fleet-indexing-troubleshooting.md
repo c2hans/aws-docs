@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/fleet-indexing
 ---
 
 # Fleet Indexing Troubleshooting
-<a name="fleet-indexing-troubleshooting"></a>
 
 ## Troubleshooting aggregation queries for the fleet indexing service
 <a name="aggregation-troubleshooting"></a>

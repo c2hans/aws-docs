@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # ToolVersion
-<a name="API_ToolVersion"></a>
 
 Information about the specific Diagnostic Tool Version.
 

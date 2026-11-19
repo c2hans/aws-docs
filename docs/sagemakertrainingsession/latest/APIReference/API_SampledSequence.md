@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SampledSequence
-<a name="API_SampledSequence"></a>
 
 A single generated sequence from the model.
 

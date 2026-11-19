@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_ServerlessV2Sc
 ---
 
 # ServerlessV2ScalingConfiguration
-<a name="API_ServerlessV2ScalingConfiguration"></a>
 
 Contains the scaling configuration of a Neptune Serverless DB cluster.
 

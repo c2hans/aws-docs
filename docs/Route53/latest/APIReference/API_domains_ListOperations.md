@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # ListOperations
-<a name="API_domains_ListOperations"></a>
 
 Returns information about all of the operations that return an operation ID and that have ever been performed on domains that were registered by the current account.
 

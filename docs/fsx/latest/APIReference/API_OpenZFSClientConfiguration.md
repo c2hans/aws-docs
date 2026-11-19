@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OpenZFSClien
 ---
 
 # OpenZFSClientConfiguration
-<a name="API_OpenZFSClientConfiguration"></a>
 
 Specifies who can mount an OpenZFS file system and the options available while mounting the file system.
 

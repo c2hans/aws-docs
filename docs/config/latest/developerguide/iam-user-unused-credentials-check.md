@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-user-un
 ---
 
 # iam-user-unused-credentials-check
-<a name="iam-user-unused-credentials-check"></a>
 
 Checks if your AWS Identity and Access Management (IAM) users have passwords or active access keys that have not been used within the specified number of days you provided. The rule is NON\_COMPLIANT if there are inactive accounts not recently used.
 

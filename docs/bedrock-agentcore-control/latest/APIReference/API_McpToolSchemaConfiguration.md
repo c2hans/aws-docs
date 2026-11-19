@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # McpToolSchemaConfiguration
-<a name="API_McpToolSchemaConfiguration"></a>
 
 The MCP tool schema configuration for an MCP server target. The tool schema must be aligned with the MCP specification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Aurora PostgreSQL Limitless Database requirements and considerations
-<a name="limitless-reqs-limits"></a>
 
 Aurora PostgreSQL Limitless Database has the following requirements and considerations.
 

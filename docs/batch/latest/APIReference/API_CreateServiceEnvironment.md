@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateServ
 ---
 
 # CreateServiceEnvironment
-<a name="API_CreateServiceEnvironment"></a>
 
 Creates a service environment for running service jobs. Service environments define capacity limits for specific service types such as SageMaker Training jobs.
 

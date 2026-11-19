@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ty
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Connect Health API contains several data types that various actions use. This section describes each data type in detail.
 

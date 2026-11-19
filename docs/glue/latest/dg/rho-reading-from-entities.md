@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rho-reading-from-entities
 ---
 
 # Reading from Rho entities
-<a name="rho-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/system-requirements.html
 ---
 
 # AL2023 system requirements
-<a name="system-requirements"></a>
 
  This section describes the system requirements for using AL2023.
 

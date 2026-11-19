@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-fields-for-
 ---
 
 # Fields for activating a global image overlay
-<a name="schedule-fields-for-activate-image"></a>
 
 This table shows the fields that apply for an action to activate an image overlay.
 

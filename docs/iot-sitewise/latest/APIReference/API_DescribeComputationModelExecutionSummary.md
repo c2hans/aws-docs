@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeComputationModelExecutionSummary
-<a name="API_DescribeComputationModelExecutionSummary"></a>
 
 Retrieves information about the execution summary of a computation model.
 

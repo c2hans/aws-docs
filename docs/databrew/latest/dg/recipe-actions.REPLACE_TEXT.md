@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.REPLAC
 ---
 
 # REPLACE\_TEXT
-<a name="recipe-actions.REPLACE_TEXT"></a>
 
 Replaces a specified sequence of characters with another.
 

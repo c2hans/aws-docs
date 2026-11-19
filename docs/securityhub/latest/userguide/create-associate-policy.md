@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/create-asso
 ---
 
 # Creating and associating configuration policies
-<a name="create-associate-policy"></a>
 
 **Important**
 Before you create a new configuration policy, consider migrating to Security Hub CSPM declarative policies instead. Declarative policies are replacing central configuration, and you can't use the two in the same organization at the same time. To move your existing configuration policies to declarative policies without coverage gaps, use the import tool in the Security Hub console. For more information, see [Declarative policies and central configuration in Security Hub CSPM](orgs-policies-and-central-config.md).

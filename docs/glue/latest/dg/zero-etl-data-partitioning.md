@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zero-etl-data-partitionin
 ---
 
 # Data partitioning
-<a name="zero-etl-data-partitioning"></a>
 
 ## What is data partitioning?
 <a name="partitioning-overview"></a>

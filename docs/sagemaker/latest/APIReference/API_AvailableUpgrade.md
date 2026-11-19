@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Availa
 ---
 
 # AvailableUpgrade
-<a name="API_AvailableUpgrade"></a>
 
 Contains information about an available upgrade for a SageMaker Partner AI App, including the version number and release notes.
 

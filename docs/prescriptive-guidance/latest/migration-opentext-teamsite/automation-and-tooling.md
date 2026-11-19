@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Automation and tooling
-<a name="automation-and-tooling"></a>
 
 We recommend automating your migration by building automation scripts, running them in nonproduction environments, testing and adjusting, and then running them until the environment set-up, content migration, and code deployments happen smoothly and create a fully functional environment.
 

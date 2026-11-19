@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-ai-agen
 ---
 
 # Create AI agents in Connect Customer
-<a name="create-ai-agents"></a>
 
 An *AI agent* is a resource that configures and customizes the end-to-end AI agent experience. For example, the AI agent tells the AI Assistant how to handle a manual search: which AI prompts and AI guardrails it should use, and which locale to use for the response.
 

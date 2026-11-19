@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/rust_bedrock-agen
 ---
 
 # Amazon Bedrock Agents Runtime examples using SDK for Rust
-<a name="rust_bedrock-agent-runtime_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Rust with Amazon Bedrock Agents Runtime.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS Cloud9
-<a name="awscloud9"></a>
 
 AWS Cloud9 provides the following APIs for data retrieval.
 

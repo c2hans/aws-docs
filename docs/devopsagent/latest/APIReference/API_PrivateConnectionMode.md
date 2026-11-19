@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Priv
 ---
 
 # PrivateConnectionMode
-<a name="API_PrivateConnectionMode"></a>
 
 Private Connection mode — either service-managed or self-managed.
 

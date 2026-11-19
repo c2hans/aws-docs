@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_GetTab
 ---
 
 # GetTable
-<a name="API_GetTable"></a>
 
 Returns information about the table, including the table's name and current status, the keyspace name, configuration settings, and metadata.
 

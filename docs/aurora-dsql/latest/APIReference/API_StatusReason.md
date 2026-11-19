@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Stat
 ---
 
 # StatusReason
-<a name="API_StatusReason"></a>
 
 Stream status reason with error and timestamp.
 

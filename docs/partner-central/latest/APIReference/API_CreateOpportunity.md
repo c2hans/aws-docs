@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateOpportunity
-<a name="API_CreateOpportunity"></a>
 
 Creates an `Opportunity` record in Partner Central. Use this operation to create a potential business opportunity for submission to AWS. Creating an opportunity sets `Lifecycle.ReviewStatus` to `Pending Submission`.
 

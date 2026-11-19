@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Optimize phase
-<a name="optimize"></a>
 
 ![https://1a9zxhkqsj.execute-api.us-west-2.amazonaws.com/v1/contents/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/0e96f82b-8a60-4ec3-bd9d-5be57fa6d8ce.png](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/8a472bf2-e6c8-4bbf-bb74-a9ef5c68e8bc.png)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_OnPre
 ---
 
 # OnPremisesTagSet
-<a name="API_OnPremisesTagSet"></a>
 
 Information about groups of on-premises instance tags.
 

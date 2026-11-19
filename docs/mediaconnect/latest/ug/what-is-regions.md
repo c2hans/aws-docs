@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/what-is-regions.h
 ---
 
 # Regions and endpoints for MediaConnect
-<a name="what-is-regions"></a>
 
 To reduce data latency in your applications, AWS Elemental MediaConnect offers a regional endpoint to make your requests:
 

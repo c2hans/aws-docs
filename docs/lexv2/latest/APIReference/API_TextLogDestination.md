@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TextLogDes
 ---
 
 # TextLogDestination
-<a name="API_TextLogDestination"></a>
 
 Defines the Amazon CloudWatch Logs destination log group for conversation text logs.
 

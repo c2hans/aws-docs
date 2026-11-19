@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/image-classification
 ---
 
 # Datasets format and objective metric for image classification
-<a name="image-classification-data-format-and-metric"></a>
 
 In this section we learn about the available formats for datasets used in image classification as well as the objective metric used to evaluate the predictive quality of machine learning model candidates. The metrics calculated for candidates are specified using an array of [MetricDatum](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_MetricDatum.html) types.
 

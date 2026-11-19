@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationTrait
-<a name="API_RemediationTrait"></a>
 
 The trait associated with the remediation target.
 

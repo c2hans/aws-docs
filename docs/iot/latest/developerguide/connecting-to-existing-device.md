@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/connecting-to-
 ---
 
 # Connect a Raspberry Pi or other device
-<a name="connecting-to-existing-device"></a>
 
 In this section, we'll configure a Raspberry Pi for use with AWS IoT. If you have another device that you'd like to connect, the instructions for the Raspberry Pi include references that can help you adapt these instructions to your device.
 

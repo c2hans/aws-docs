@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2CustomResponseDetails
-<a name="API_AwsWafv2CustomResponseDetails"></a>
 
  A custom response to send to the client. You can define a custom response for rule actions and default web ACL actions that are set to block.
 

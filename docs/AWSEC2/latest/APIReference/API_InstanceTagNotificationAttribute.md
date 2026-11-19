@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceT
 ---
 
 # InstanceTagNotificationAttribute
-<a name="API_InstanceTagNotificationAttribute"></a>
 
 Describes the registered tag keys for the current Region.
 

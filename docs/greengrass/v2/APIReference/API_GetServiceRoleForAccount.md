@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_GetServic
 ---
 
 # GetServiceRoleForAccount
-<a name="API_GetServiceRoleForAccount"></a>
 
 Gets the service role associated with AWS IoT Greengrass for your AWS account in this AWS Region. AWS IoT Greengrass uses this role to verify the identity of client devices and manage core device connectivity information. For more information, see [Greengrass service role](https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-service-role.html) in the * AWS IoT Greengrass Version 2 Developer Guide*.
 

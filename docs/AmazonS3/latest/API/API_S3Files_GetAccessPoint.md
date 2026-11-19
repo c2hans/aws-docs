@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_GetAcces
 ---
 
 # GetAccessPoint
-<a name="API_S3Files_GetAccessPoint"></a>
 
 Returns resource information for an S3 File System Access Point.
 

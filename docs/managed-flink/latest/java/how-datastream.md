@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-datastream
 ---
 
 # Review DataStream API components
-<a name="how-datastream"></a>
 
 Your Apache Flink application uses the [ Apache Flink DataStream API](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/dev/datastream/overview/) to transform data in a data stream.
 

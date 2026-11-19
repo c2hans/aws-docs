@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRepl
 ---
 
 # ListReplicationFindings
-<a name="API_ListReplicationFindings"></a>
 
 Lists replication findings for resources of a specified resource type in a specified Connect Customer instance. A replication finding describes a single resource whose replication to one or more Regions is incomplete or has encountered an error. Results are returned in pages. This operation is available only for instances that are set up for Global Resiliency.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Designing serverless AI architectures
-<a name="designing-serverless-ai-architectures"></a>
 
 Translating the principles of serverless AI into real-world systems requires thoughtful architecture. The goal is to integrate loosely coupled AWS services into modular, intelligent pipelines that scale elastically and respond in real time.
 

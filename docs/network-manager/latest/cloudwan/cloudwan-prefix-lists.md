@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # AWS Cloud WAN prefix list associations
-<a name="cloudwan-prefix-lists"></a>
 
 You can use customer managed prefix lists in your Cloud WAN routing policy to simplify rules management. You need to associate your prefix list with the core network with the create-core-network-prefix-list-association API. The prefix list must be defined in the Cloud WAN home region (us-west-2). Although defined in Cloud WAN home region, the prefix-list based policy will apply globally to all the relevant core network edges (regions) in your core network.
 

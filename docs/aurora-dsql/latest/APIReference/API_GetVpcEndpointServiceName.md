@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_GetV
 ---
 
 # GetVpcEndpointServiceName
-<a name="API_GetVpcEndpointServiceName"></a>
 
 Retrieves the VPC endpoint service name.
 

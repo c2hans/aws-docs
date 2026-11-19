@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-addons.html
 ---
 
 # Email Add Ons
-<a name="eb-addons"></a>
 
 Email Add Ons is a collection of specialized security tools from SES approved providers that can be used to manage the type of email you allow into your ingress endpoint and to determine actions to be taken on certain types of email. These tools are certified security intelligence and enforcement solutions that are ready to be integrated into your email workflow and can be activated directly from the Mail Manager console.
 

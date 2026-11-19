@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateFlowDefinition
-<a name="API_CreateFlowDefinition"></a>
 
 Creates a flow definition.
 

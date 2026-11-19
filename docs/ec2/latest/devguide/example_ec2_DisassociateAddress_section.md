@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_Disassoc
 ---
 
 # Use `DisassociateAddress` with an AWS SDK or CLI
-<a name="example_ec2_DisassociateAddress_section"></a>
 
 The following code examples show how to use `DisassociateAddress`.
 

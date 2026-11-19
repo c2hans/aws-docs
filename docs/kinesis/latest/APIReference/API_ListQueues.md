@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListQueu
 ---
 
 # ListQueues
-<a name="API_ListQueues"></a>
 
 Returns a summary of each queue in the AWS account and Region used by the request. Use `StreamFilter` to list only the queues on a particular data stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Security
-<a name="security"></a>
 
 Security is a critical element. Following is a list of security steps that the AWS CI/CD process takes into account when deploying an application.
 + **Source** — The ECR repository allocated to the vendor is configured with a “Scan on Push” flag enabled, so that any uploads of Docker images will be immediately subjected to a security scan. Any known common vulnerabilities and exposures (CVE) will be flagged with notifications. Apart from ECR, when vendors put charts into the AWS CodeCommit repository, they are requested to encrypt any passwords used with Secrets Manager rather than with plain text.

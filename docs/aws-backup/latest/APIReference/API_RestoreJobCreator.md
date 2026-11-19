@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Resto
 ---
 
 # RestoreJobCreator
-<a name="API_RestoreJobCreator"></a>
 
 Contains information about the restore testing plan that AWS Backup used to initiate the restore job.
 

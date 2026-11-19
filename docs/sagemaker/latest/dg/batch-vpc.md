@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/batch-vpc.html
 ---
 
 # Give Batch Transform Jobs Access to Resources in Your Amazon VPC
-<a name="batch-vpc"></a>
 
 To control access to your data and batch transform jobs, we recommend that you create a private Amazon VPC and configure it so that your jobs aren't accessible over the public internet. You specify your private VPC configuration when you create a model by specifying subnets and security groups. You then specify the same model when you create a batch transform job. When you specify the subnets and security groups, SageMaker AI creates *elastic network interfaces* that are associated with your security groups in one of the subnets. Network interfaces allow your model containers to connect to resources in your VPC. For information about network interfaces, see [Elastic Network Interfaces](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_ElasticNetworkInterfaces.html) in the *Amazon VPC User Guide*.
 

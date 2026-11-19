@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AcceptConnectionInvitation
-<a name="API_account_AcceptConnectionInvitation"></a>
 
 Accepts a connection invitation from another partner, establishing a formal partnership connection between the two parties.
 

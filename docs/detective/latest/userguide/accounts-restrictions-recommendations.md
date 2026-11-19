@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/accounts-rest
 ---
 
 # Account restrictions and recommendations in Detective
-<a name="accounts-restrictions-recommendations"></a>
 
 When managing accounts in Amazon Detective, be aware of the following restrictions and recommendations.
 

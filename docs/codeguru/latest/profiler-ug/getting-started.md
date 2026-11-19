@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/getting-star
 ---
 
 # Getting started with CodeGuru Profiler
-<a name="getting-started"></a>
 
 The tutorials in this section are provided to help you start using Amazon CodeGuru Profiler. They show you how to set up your first profiling group and understand the console.
 

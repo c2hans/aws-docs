@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Contributors
-<a name="contributors"></a>
 + Tarek Abdunabi
 + Majd Arbash
 + George Bearden

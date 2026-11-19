@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/create-primary
 ---
 
 # Create multi-Region primary keys
-<a name="create-primary-keys"></a>
 
 You can create a [multi-Region primary key](multi-region-keys-overview.md#mrk-primary-key) in the AWS KMS console or by using the AWS KMS API. You can create the primary key in any AWS Region where AWS KMS supports multi-Region keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # AddonSubscription
-<a name="API_AddonSubscription"></a>
 
 A subscription for an Add On representing the acceptance of its terms of use and additional pricing.
 

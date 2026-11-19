@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-blocks-
 ---
 
 # Find and purchase Capacity Blocks
-<a name="capacity-blocks-purchase"></a>
 
 To reserve a Capacity Block, you first need to find a block of time when capacity is available that matches your needs. To find a Capacity Block that is available to reserve, you specify the following.
 + The number of instances that you need

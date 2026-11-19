@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-work
 ---
 
 # Networking protocols and access for WorkSpaces Personal
-<a name="amazon-workspaces-networking"></a>
 
 As a WorkSpace administrator, you must understand how to manage WorkSpaces networking and access, beginning with protocols.
 

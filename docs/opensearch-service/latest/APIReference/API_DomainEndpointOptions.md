@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DomainEndpointOptions
-<a name="API_DomainEndpointOptions"></a>
 
 Options to configure a custom endpoint for an OpenSearch Service domain.
 

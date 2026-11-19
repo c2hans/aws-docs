@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/generative-ai-infere
 ---
 
 # Deploy a generative AI inference recommendation
-<a name="generative-ai-inference-recommendations-deploy"></a>
 
 When a recommendation job completes, each recommendation includes a deployment-ready configuration. You can deploy the chosen configuration to a SageMaker AI inference endpoint with a single action from SageMaker AI Studio, or programmatically through the API.
 

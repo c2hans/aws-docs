@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/cognito-identi
 ---
 
 # Amazon Cognito identities
-<a name="cognito-identities"></a>
 
 Amazon Cognito Identity enables you to create temporary, limited privilege AWS credentials for use in mobile and web applications. When you use Amazon Cognito Identity, create identity pools that create unique identities for your users and authenticate them with identity providers like Login with Amazon, Facebook, and Google. You can also use Amazon Cognito identities with your own developer authenticated identities. For more information, see [ Amazon Cognito Identity](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html).
 

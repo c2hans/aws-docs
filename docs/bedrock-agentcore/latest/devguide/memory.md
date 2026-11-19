@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # Add memory to your Amazon Bedrock AgentCore agent
-<a name="memory"></a>
 
 AgentCore Memory is a fully managed service that gives your AI agents the ability to remember past interactions, enabling them to provide more intelligent, context-aware, and personalized conversations. It provides a simple and powerful way to handle both short-term context and long-term knowledge retention without the need to build or manage complex infrastructure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrate – SAS content to AWS
-<a name="migrate"></a>
 
 ## Migrate Active Directory identities
 <a name="identity"></a>

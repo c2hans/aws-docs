@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/product-ty
 ---
 
 # Finding AWS Specialization Partners in AWS Marketplace
-<a name="product-types-specialization-badges"></a>
 
 AWS Specialization badges represent Partners who demonstrate technical proficiency and proven customer success across specific industries, use cases, and AWS services. AWS Specializations represent the highest technical validation that an AWS Partner can achieve. AWS Specialization Partners must pass rigorous technical assessments and demonstrate multiple customer implementations that deliver measurable business outcomes.
 

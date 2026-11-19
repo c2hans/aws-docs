@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/monitoring-key
 ---
 
 # Determine past usage of a KMS key
-<a name="monitoring-keys-determining-usage"></a>
 
 For monitoring and auditing purposes, you may want to know how a KMS key has been used in the past. For example, you may want to determine whether a KMS key is still actively used before disabling or scheduling it for deletion, or identify unused keys in your account. The following strategies can help you determine the past usage of a KMS key.
 

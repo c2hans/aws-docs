@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/web-app-tutori
 ---
 
 # Tutorial: Setting up a basic Transfer Family web app
-<a name="web-app-tutorial"></a>
 
 This tutorial walks through how to set up a Transfer Family web app. Transfer Family web apps enable a simple interface for transferring data to and from Amazon S3 over a web browser. For detailed documentation for this feature, see [Transfer Family web apps](web-app.md).
 

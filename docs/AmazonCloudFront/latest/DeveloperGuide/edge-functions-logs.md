@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Edge function logs
-<a name="edge-functions-logs"></a>
 
 You can use Amazon CloudWatch Logs to get logs for your edge functions, both [Lambda@Edge](lambda-at-the-edge.md) and [CloudFront Functions](cloudfront-functions.md). You can access the logs by using the CloudWatch console or the CloudWatch Logs API.
 

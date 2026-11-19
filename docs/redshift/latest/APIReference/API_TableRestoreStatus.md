@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_TableRe
 ---
 
 # TableRestoreStatus
-<a name="API_TableRestoreStatus"></a>
 
 Describes the status of a [RestoreTableFromClusterSnapshot](API_RestoreTableFromClusterSnapshot.md) operation.
 

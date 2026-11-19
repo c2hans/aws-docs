@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/application-actions-menu.h
 ---
 
 # Manage applications
-<a name="application-actions-menu"></a>
 
 The **Actions** menu allows you to perform actions on selected applications.
 

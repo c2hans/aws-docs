@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetWorker
-<a name="API_BatchGetWorker"></a>
 
 Retrieves multiple workers in a single request. This is a batch version of the `GetWorker` API.
 

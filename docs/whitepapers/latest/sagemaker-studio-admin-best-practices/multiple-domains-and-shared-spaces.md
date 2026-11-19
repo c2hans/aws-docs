@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Multiple domains and shared spaces
-<a name="multiple-domains-and-shared-spaces"></a>
 
 [Amazon SageMaker AI](https://aws.amazon.com/sagemaker/) now supports the creation of multiple SageMaker AI domains in a single AWS Region for each account. Each domain can have its own domain settings, such as authentication mode, and networking settings, such as VPC and subnets. A user profile cannot be shared across domains. If a human user is part of multiple teams separated by domains, create a user profile for the user in each domain. Refer to the [Multiple Domains Overview](https://docs.aws.amazon.com/sagemaker/latest/dg/domain-multiple.html) to learn about backfilling tags for existing domains.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Policy components structure
-<a name="next-gen-api-policy-components-structure"></a>
 
 ```
 {

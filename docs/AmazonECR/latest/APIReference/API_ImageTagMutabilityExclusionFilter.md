@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageT
 ---
 
 # ImageTagMutabilityExclusionFilter
-<a name="API_ImageTagMutabilityExclusionFilter"></a>
 
 A filter that specifies which image tags should be excluded from the repository's image tag mutability setting.
 

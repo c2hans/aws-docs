@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # Span
-<a name="API_Span"></a>
 
 A span in a policy. The span consists of a start position (inclusive) and end position (exclusive).
 

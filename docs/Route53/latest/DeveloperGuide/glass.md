@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/glass.html
 ---
 
 # .glass
-<a name="glass"></a>
 
 Used by those in the glass industry, such as glass cutters and window installers.
 

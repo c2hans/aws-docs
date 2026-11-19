@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/appendix-crates.h
 ---
 
 # Crates used by the AWS SDK for Rust
-<a name="appendix-crates"></a>
 
 This topic contains advanced information about the crates used by the AWS SDK for Rust. This includes the Smithy components it uses, crates you might need to use under certain build circumstances, and other information.
 

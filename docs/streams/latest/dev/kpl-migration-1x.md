@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kpl-migration-1x.html
 ---
 
 # Migrate from KPL 0.x to KPL 1.x
-<a name="kpl-migration-1x"></a>
 
 This topic provides step-by-step instructions to migrate your consumer from KPL 0.x to KPL 1.x. KPL 1.x introduces support for the AWS SDK for Java 2.x while maintaining interface compatibility with previous versions. You don’t have to update your core data processing logic to migrate to KPL 1.x.
 

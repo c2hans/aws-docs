@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/aws-
 ---
 
 # AWS Samples
-<a name="aws-samples"></a>
 
 This repository, maintained by AWS Partner Solution Architects (PSAs), contains scripts in the form of AWS CloudFormation templates for automated AWS resource tagging and tag remediation. These are intended to help you with AWS Partner Revenue Measurement governance.
 

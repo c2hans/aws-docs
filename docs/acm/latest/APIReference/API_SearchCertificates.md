@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_SearchCertif
 ---
 
 # SearchCertificates
-<a name="API_SearchCertificates"></a>
 
 Retrieves a list of certificates matching search criteria. You can filter certificates by X.509 attributes and ACM specific properties like certificate status, type and renewal eligibility. This operation provides more flexible filtering than [ListCertificates](API_ListCertificates.md) by supporting complex filter statements.
 

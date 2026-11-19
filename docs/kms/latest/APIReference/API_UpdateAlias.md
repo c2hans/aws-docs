@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateAlias.
 ---
 
 # UpdateAlias
-<a name="API_UpdateAlias"></a>
 
 Associates an existing AWS KMS alias with a different KMS key. Each alias is associated with only one KMS key at a time, although a KMS key can have multiple aliases. The alias and the KMS key must be in the same AWS account and Region.
 

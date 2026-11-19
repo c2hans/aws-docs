@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ConnectedAcc
 ---
 
 # ConnectedAccountChainConfig
-<a name="API_ConnectedAccountChainConfig"></a>
 
 A per-network configuration for a connected account, specifying the blockchain network and the price per request. Unlike `PaymentNetwork`, you do not provide a wallet address; the receiving address is managed for the connected account.
 

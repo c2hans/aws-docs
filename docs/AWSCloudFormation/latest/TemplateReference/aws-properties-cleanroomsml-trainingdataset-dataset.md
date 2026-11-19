@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRoomsML::TrainingDataset Dataset
-<a name="aws-properties-cleanroomsml-trainingdataset-dataset"></a>
 
 Defines where the training dataset is located, what type of data it contains, and how to access the data.
 

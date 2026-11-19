@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # InsightField
-<a name="API_InsightField"></a>
 
 Represents a field in the detailed view of an insight, returned by the `DescribeInsightDetails` operation.
 

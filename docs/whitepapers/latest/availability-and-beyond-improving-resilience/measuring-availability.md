@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Measuring availability
-<a name="measuring-availability"></a>
 
  As we saw earlier, creating a forward-looking availability model for a distributed system is difficult to do and might not provide the desired insights. What can provide more utility is developing consistent ways to measure the availability of your workload.
 

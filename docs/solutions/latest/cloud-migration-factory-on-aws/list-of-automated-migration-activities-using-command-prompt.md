@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # List of automated migration activities using command prompt
-<a name="list-of-automated-migration-activities-using-command-prompt"></a>
 
 **Note**
 We recommend running automation from the Cloud Migration Factory on AWS console. You can use the following steps to run automation scripts. Make sure that you download the automation scripts from the GitHub repo and configure the automation server with steps in [Run Automations from Command prompt](run-automations-from-command-prompt.md), and following the instructions to configure permissions in [Configure AWS permissions for the migration automation server](configure-migration-automation-server.md#configure-aws-permissions-for-the-migration-automation-server).

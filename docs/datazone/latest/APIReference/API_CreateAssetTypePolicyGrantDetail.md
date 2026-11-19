@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateA
 ---
 
 # CreateAssetTypePolicyGrantDetail
-<a name="API_CreateAssetTypePolicyGrantDetail"></a>
 
 The details of the policy grant.
 

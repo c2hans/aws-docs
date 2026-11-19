@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloud
 ---
 
 # Monitor the Amazon Kinesis Data Streams service with Amazon CloudWatch
-<a name="monitoring-with-cloudwatch"></a>
 
 Amazon Kinesis Data Streams and Amazon CloudWatch are integrated so that you can collect, view, and analyze CloudWatch metrics for your Kinesis data streams. For example, to track shard usage, you can monitor the `IncomingBytes` and `OutgoingBytes` metrics and compare them to the number of shards in the stream.
 

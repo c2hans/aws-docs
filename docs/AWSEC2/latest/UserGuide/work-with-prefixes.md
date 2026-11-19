@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/work-with-prefix
 ---
 
 # Manage prefixes for your network interfaces
-<a name="work-with-prefixes"></a>
 
 When you assign prefixes to a network interface, you can choose whether to let us automatically assign the prefixes or you can specify custom prefixes. If you let us automatically assign prefixes and the subnet for the network interface has a subnet CIDR reservation of type `prefix`, we select the prefixes from the subnet CIDR reservation. Otherwise, we select them from the subnet CIDR range.
 

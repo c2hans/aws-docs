@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketTagging
 ---
 
 # GetBucketTagging
-<a name="API_GetBucketTagging"></a>
 
 **Note**
 This operation is not supported for directory buckets.

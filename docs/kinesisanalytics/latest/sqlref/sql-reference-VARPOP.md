@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # VAR\_POP
-<a name="sql-reference-VARPOP"></a>
 
 Returns the population variance of a non-null set of numbers (nulls being ignored)
 

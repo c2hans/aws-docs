@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/definit
 ---
 
 # Definition
-<a name="definition-1"></a>
 
  There are five best practice areas for security in the cloud:
 +  Identity and access management

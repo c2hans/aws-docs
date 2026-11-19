@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-authoriza
 ---
 
 # Discovering support actions
-<a name="support-authorization-actions"></a>
 
 Support actions are service-specific operations that AWS Support can perform on your resources. Each action has a descriptive name and description that explains what the operation does. Actions use a namespaced format that identifies the AWS service and the specific operation. Use the `ListActions` API to view the actions available for a service before you create a scoped support permit.
 

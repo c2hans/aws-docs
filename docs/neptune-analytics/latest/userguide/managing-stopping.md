@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/manag
 ---
 
 # Stopping a Neptune Analytics graph
-<a name="managing-stopping"></a>
 
  You can temporarily stop a Neptune Analytics graph when it's not actively in use to reduce costs. When you stop a graph, Neptune Analytics removes the underlying compute infrastructure while preserving all graph data, configurations, and identifiers.
 

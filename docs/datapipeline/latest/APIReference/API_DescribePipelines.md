@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Des
 ---
 
 # DescribePipelines
-<a name="API_DescribePipelines"></a>
 
 Retrieves metadata about one or more pipelines. The information retrieved includes the name of the pipeline, the pipeline identifier, its current state, and the account that owns the pipeline. Using account credentials, you can retrieve metadata about pipelines that you or your users have created. As a user, you can retrieve metadata about only those pipelines for which you have read permissions.
 

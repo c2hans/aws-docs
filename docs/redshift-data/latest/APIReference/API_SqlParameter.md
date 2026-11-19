@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Sq
 ---
 
 # SqlParameter
-<a name="API_SqlParameter"></a>
 
 A parameter used in a SQL statement.
 

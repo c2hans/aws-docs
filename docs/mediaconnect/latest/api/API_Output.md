@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Output.html
 ---
 
 # Output
-<a name="API_Output"></a>
 
 The settings for an output.
 

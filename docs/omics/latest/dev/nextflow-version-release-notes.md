@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/nextflow-version-releas
 ---
 
 # Nextflow version release notes for HealthOmics
-<a name="nextflow-version-release-notes"></a>
 
 This page contains release notes for each supported Nextflow version on HealthOmics. Each section summarizes new features, enhancements, and deprecations for a specific Nextflow version.
 

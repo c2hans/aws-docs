@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-netweaver-w
 ---
 
 # SAP NetWeaver on AWS Deployment and Operations Guide for Windows
-<a name="sap-netweaver-windows-guide"></a>
 
  *SAP specialists, Amazon Web Services*
 

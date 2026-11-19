@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardDest
 ---
 
 # StandardDestinationEndpointProtocolConfiguration
-<a name="API_StandardDestinationEndpointProtocolConfiguration"></a>
 
 The protocol configuration for a standard destination endpoint. This is a union type, so exactly one of its members is set, depending on the protocol that the destination endpoint uses.
 

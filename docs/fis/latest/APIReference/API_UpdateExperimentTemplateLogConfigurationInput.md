@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateExperi
 ---
 
 # UpdateExperimentTemplateLogConfigurationInput
-<a name="API_UpdateExperimentTemplateLogConfigurationInput"></a>
 
 Specifies the configuration for experiment logging.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perim
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, refer to:
 +  [Data perimeter on AWS](https://aws.amazon.com/identity/data-perimeters-on-aws/)

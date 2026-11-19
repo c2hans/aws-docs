@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # PredictiveScalingPredefinedMetricPairSpecification
-<a name="API_PredictiveScalingPredefinedMetricPairSpecification"></a>
 
  Represents a metric pair for a predictive scaling policy.
 

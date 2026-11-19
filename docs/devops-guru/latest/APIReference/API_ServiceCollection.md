@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Serv
 ---
 
 # ServiceCollection
-<a name="API_ServiceCollection"></a>
 
 A collection of the names of AWS services.
 

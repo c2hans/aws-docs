@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-ap
 ---
 
 # AppSpec 'hooks' section
-<a name="reference-appspec-file-structure-hooks"></a>
 
 The content in the `'hooks'` section of the AppSpec file varies, depending on the compute platform for your deployment. The `'hooks'` section for an EC2/On-Premises deployment contains mappings that link deployment lifecycle event hooks to one or more scripts. The `'hooks'` section for a Lambda or an Amazon ECS deployment specifies Lambda validation functions to run during a deployment lifecycle event. If an event hook is not present, no operation is executed for that event. This section is required only if you are running scripts or Lambda validation functions as part of the deployment.
 
@@ -387,7 +386,7 @@ Optional. The user to impersonate when running the script. By default, this is t
 ### Referencing files in your hook scripts
 <a name="codedeploy-agent-working-directory"></a>
 
-If you are hooking up a script to a CodeDeploy lifecycle event as described in [AppSpec 'hooks' section](#reference-appspec-file-structure-hooks), and you want to reference a file (for example, `helper.sh`) in your script, then you will need to specify `helper.sh` using:
+If you are hooking up a script to a CodeDeploy lifecycle event as described in [AppSpec 'hooks' section](reference-appspec-file-structure-hooks.md), and you want to reference a file (for example, `helper.sh`) in your script, then you will need to specify `helper.sh` using:
 + (Recommended) An absolute path. See [Using absolute paths](#codedeploy-agent-working-dir-absolute).
 + A relative path. See [Using relative paths](#codedeploy-agent-working-dir-relative).
 

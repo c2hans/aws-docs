@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Assoc
 ---
 
 # AssociateTrackerConsumer
-<a name="API_AssociateTrackerConsumer"></a>
 
 Creates an association between a geofence collection and a tracker resource. This allows the tracker resource to communicate location data to the linked geofence collection.
 

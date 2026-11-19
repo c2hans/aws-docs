@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AmazonRedshiftTar
 ---
 
 # AmazonRedshiftTarget
-<a name="API_AmazonRedshiftTarget"></a>
 
 Specifies an Amazon Redshift target.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # CreateDataSourceFromRDS
-<a name="API_CreateDataSourceFromRDS"></a>
 
 Creates a `DataSource` object from an [ Amazon Relational Database Service](http://aws.amazon.com/rds/) (Amazon RDS). A `DataSource` references data that can be used to perform `CreateMLModel`, `CreateEvaluation`, or `CreateBatchPrediction` operations.
 

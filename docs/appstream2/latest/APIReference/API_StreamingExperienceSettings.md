@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Strea
 ---
 
 # StreamingExperienceSettings
-<a name="API_StreamingExperienceSettings"></a>
 
 The streaming protocol you want your stack to prefer. This can be UDP or TCP. Currently, UDP is only supported in the Windows native client.
 

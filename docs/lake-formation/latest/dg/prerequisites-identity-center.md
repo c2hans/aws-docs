@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/prerequisites-i
 ---
 
 # Prerequisites for IAM Identity Center integration with Lake Formation
-<a name="prerequisites-identity-center"></a>
 
  The following are the prerequisites for integrating IAM Identity Center with Lake Formation.
 

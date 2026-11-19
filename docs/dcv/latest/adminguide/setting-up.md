@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up.html
 ---
 
 # Setting up the Amazon DCV server
-<a name="setting-up"></a>
 
 To use Amazon DCV, install the Amazon DCV server software on the server where you intend to host Amazon DCV sessions. Make sure that the software is properly licensed.
 

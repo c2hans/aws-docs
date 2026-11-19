@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GetSe
 ---
 
 # GetSessionEmbedUrl
-<a name="API_GetSessionEmbedUrl"></a>
 
 Generates a session URL and authorization code that you can use to embed the Amazon Amazon Quick Sight console in your web server code. Use `GetSessionEmbedUrl` where you want to provide an authoring portal that allows users to create data sources, datasets, analyses, and dashboards. The users who access an embedded Amazon Quick Sight console need belong to the author or admin security cohort. If you want to restrict permissions to some of these features, add a custom permissions profile to the user with the ` [UpdateUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateUser.html) ` API operation. Use ` [RegisterUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RegisterUser.html) ` API operation to add a new user with a custom permission profile attached. For more information, see the following sections in the * AWS Quick User Guide*:
 +  [Embedding Analytics](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics.html)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # Create an Amazon CloudWatch event destination in AWS End User Messaging SMS
-<a name="configuration-sets-cloud-watch-add"></a>
 
 After you create the IAM role and the CloudWatch group, you can create the event destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/windows-troubl
 ---
 
 # Troubleshooting AWS Client VPN connections with Windows-based clients
-<a name="windows-troubleshooting"></a>
 
 The following sections contain information about problems that you might have when using Windows-based clients to connect to a Client VPN endpoint.
 

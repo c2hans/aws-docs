@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/managing-s
 ---
 
 # Managing subscriptions with auto-renewal
-<a name="managing-subscriptions-with-auto-renewal"></a>
 
 You monitor and manage renewals from **Manage subscriptions**.
 

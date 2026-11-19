@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and
 ---
 
 # Resource-based policies
-<a name="auth-and-access_resource-policies"></a>
 
 In a resource-based policy, you specify who can access the secret and the actions they can perform on the secret. You can use resource-based policies to:
 + Grant access to a single secret to multiple users and roles.
@@ -98,7 +97,7 @@ For more information, see [AWS SDKs](asm_access.md#asm-sdks).
 ### Example: Permission to retrieve individual secret values
 <a name="auth-and-access_examples_read"></a>
 
-To grant permission to retrieve secret values, you can attach policies to secrets or identities. For help determining which type of policy to use, see [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html). For information about how to attach a policy, see [Resource-based policies](#auth-and-access_resource-policies) and [Identity-based policies](auth-and-access_iam-policies.md).
+To grant permission to retrieve secret values, you can attach policies to secrets or identities. For help determining which type of policy to use, see [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html). For information about how to attach a policy, see [Resource-based policies](auth-and-access_resource-policies.md) and [Identity-based policies](auth-and-access_iam-policies.md).
 
 This example is useful when you want to grant access to a single secret to multiple users or roles. To grant permission to retrieve a group of secrets in a batch API call, see [Example: Permission to retrieve a group of secret values in a batch](auth-and-access_iam-policies.md#auth-and-access_examples_batch).
 

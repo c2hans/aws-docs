@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Impo
 ---
 
 # ImportPublicKey
-<a name="API_ImportPublicKey"></a>
 
 Import a public key to be used for signing stage participant tokens.
 

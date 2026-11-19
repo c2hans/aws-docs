@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with tables in DynamoDB
-<a name="examples-dynamodb-tables"></a>
 
 Tables are the containers for all items in a DynamoDB database. Before you can add or remove data from DynamoDB, you must create a table.
 

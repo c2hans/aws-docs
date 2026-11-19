@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Data processing
-<a name="sec-data-processing"></a>
 
 **Topics**
 + [MLSEC03-BP01 Provide least privilege access](mlsec03-bp01.md)

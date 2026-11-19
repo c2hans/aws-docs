@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3ExpressReadOnlyAccess
-<a name="AmazonS3ExpressReadOnlyAccess"></a>
 
 **Description**: Provides read only access to S3Express operations for S3 directory buckets.
 

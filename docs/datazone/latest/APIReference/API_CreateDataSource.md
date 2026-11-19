@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateD
 ---
 
 # CreateDataSource
-<a name="API_CreateDataSource"></a>
 
 Creates an Amazon DataZone data source.
 

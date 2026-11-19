@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # Set customer managed key policy
-<a name="registry-kms-key-policy"></a>
 
 To use a customer managed key with AWS Agent Registry, you must configure both an IAM policy for the calling principal and a KMS key policy that allows the service to perform encryption and decryption operations.
 

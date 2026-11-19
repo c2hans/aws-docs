@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudwat
 ---
 
 # Monitor Amazon ECS containers using Container Insights with enhanced observability
-<a name="cloudwatch-container-insights"></a>
 
 Container Insights collects, aggregates, and summarizes metrics and logs from your containerized applications and microservices. Container Insights with enhanced observability provides all the Container Insights metrics, plus additional task and container metrics.
 

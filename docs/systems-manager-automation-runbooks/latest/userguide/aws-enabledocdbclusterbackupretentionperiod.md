@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-EnableDocDbClusterBackupRetentionPeriod`
-<a name="aws-enabledocdbclusterbackupretentionperiod"></a>
 
  **Description**
 

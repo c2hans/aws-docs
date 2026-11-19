@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/list-da
 ---
 
 # ListDashboards
-<a name="list-dashboards"></a>
 
 Use the `ListDashboards` API operation to list dashboards in an AWS account. Following is an example AWS CLI command for this operation.
 

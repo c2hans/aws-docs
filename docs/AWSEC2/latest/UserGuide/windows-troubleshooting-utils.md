@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/windows-troubles
 ---
 
 # EC2 Windows troubleshooting utilities
-<a name="windows-troubleshooting-utils"></a>
 
 The `EC2WinUtil` driver provides the following types of troubleshooting support for your Windows instance.
 

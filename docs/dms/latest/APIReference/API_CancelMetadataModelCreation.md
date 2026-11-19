@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CancelMetada
 ---
 
 # CancelMetadataModelCreation
-<a name="API_CancelMetadataModelCreation"></a>
 
 Cancels a single metadata model creation operation that was started with `StartMetadataModelCreation`.
 

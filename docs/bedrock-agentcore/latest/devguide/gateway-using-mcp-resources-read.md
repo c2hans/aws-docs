@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Read a resource from an AgentCore gateway
-<a name="gateway-using-mcp-resources-read"></a>
 
 To read a specific resource, make a POST request to the gateway’s MCP endpoint and specify `resources/read` as the method in the request body and the URI of the resource:
 

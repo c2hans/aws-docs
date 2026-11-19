@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/add-project-me
 ---
 
 # Add project members to a custom AWS service environment
-<a name="add-project-members-to-custom-environment"></a>
 
 Complete the following procedure to add project members to an AWS service environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_CreateMo
 ---
 
 # CreateMonitor
-<a name="API_CreateMonitor"></a>
 
 Creates a monitor in Internet Monitor. A monitor is built based on information from the application resources that you add: VPCs, Network Load Balancers (NLBs), Amazon CloudFront distributions, and Amazon WorkSpaces directories. Internet Monitor then publishes internet measurements from AWS that are specific to the *city-networks*. That is, the locations and ASNs (typically internet service providers or ISPs), where clients access your application. For more information, see [Using Internet Monitor](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-InternetMonitor.html) in the *Amazon CloudWatch User Guide*.
 

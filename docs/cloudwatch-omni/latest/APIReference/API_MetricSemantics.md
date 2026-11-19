@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # MetricSemantics
-<a name="API_MetricSemantics"></a>
 
 The meaning and unit of a single metric.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2ReadOnlyAccess
-<a name="AmazonEC2ReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon EC2 via the AWS Management Console.
 

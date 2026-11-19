@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartJobUpgradeAn
 ---
 
 # StartJobUpgradeAnalysis
-<a name="API_StartJobUpgradeAnalysis"></a>
 
 Resumes an analysis that is waiting for upgrade consent.
 

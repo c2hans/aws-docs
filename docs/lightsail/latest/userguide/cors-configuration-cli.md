@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/cors-configur
 ---
 
 # Configure CORS using the AWS CLI
-<a name="cors-configuration-cli"></a>
 
 You can configure CORS for your Lightsail bucket using the AWS CLI with the `--cors` parameter. This parameter accepts a JSON file that contains your CORS configuration. For more information about the elements of a CORS configuration, see [Elements of a CORS configuration](cors-how-evaluation-works.md#cors-configuration-elements).
 

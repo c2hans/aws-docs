@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/autodesk
 ---
 
 # Autodesk 3ds Max
-<a name="autodesk-3ds-max"></a>
 
 **Note**
 When using Autodesk 3ds Max with AWS Deadline Cloud, you can use Autodesk Cloud Rights included with your subscription. For more information about Cloud Rights and subscription benefits, see [Subscription Benefits FAQ: Cloud Rights](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Subscription-Benefits-FAQ-Cloud-Rights.html) on the Autodesk website.

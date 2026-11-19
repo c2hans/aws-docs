@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/gettin
 ---
 
 # Build your first application with Infrastructure Composer
-<a name="getting-started-build"></a>
 
 In this tutorial, you use AWS Infrastructure Composer to build a create, read, update, and delete (CRUD) serverless application that manages users in a database.
 

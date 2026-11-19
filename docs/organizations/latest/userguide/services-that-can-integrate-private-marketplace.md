@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Marketplace Private Marketplace and AWS Organizations
-<a name="services-that-can-integrate-private-marketplace"></a>
 
 AWS Marketplace is a curated digital catalog that you can use to find, buy, deploy, and manage third-party software, data, and services that you need to build solutions and run your businesses. A private marketplace provides you with a broad catalog of products available in AWS Marketplace, along with ﬁne-grained control of those products.
 

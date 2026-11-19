@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cloudformation-
 ---
 
 # Managing Projects with AWS CloudFormation
-<a name="cloudformation-projects"></a>
 
 Amazon Bedrock is integrated with AWS CloudFormation, allowing you to define and manage Projects as part of your infrastructure templates. You can provision projects consistently and repeatedly across multiple AWS accounts and Regions using JSON or YAML templates.
 

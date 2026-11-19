@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Update the IPAM IP address pools for your Application Load Balancer
-<a name="load-balancer-ip-pools"></a>
 
 IPAM IP address pools must first be created within IPAM before they can be used by your Application Load Balancer. For more information, see [Bring your IP addresses to IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoip-ipam.html).
 

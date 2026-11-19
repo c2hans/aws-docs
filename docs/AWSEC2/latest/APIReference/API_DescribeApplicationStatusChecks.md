@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 ---
 
 # DescribeApplicationStatusChecks
-<a name="API_DescribeApplicationStatusChecks"></a>
 
 Describes application status checks, including configuration details such as protocol, port, path, thresholds, and associations. Results are paginated. Use the `NextToken` parameter to retrieve additional results. The following rules apply:
 + If you do not specify any application status check IDs, all checks in your account are returned.

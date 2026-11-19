@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CpuOption
 ---
 
 # CpuOptions
-<a name="API_CpuOptions"></a>
 
 The CPU options for the instance.
 

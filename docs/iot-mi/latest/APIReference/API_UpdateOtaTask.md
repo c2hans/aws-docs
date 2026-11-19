@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UpdateOta
 ---
 
 # UpdateOtaTask
-<a name="API_UpdateOtaTask"></a>
 
 Update an over-the-air (OTA) task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/install
 ---
 
 # Install the Session Manager plugin on Debian Server and Ubuntu Server
-<a name="install-plugin-debian-and-ubuntu"></a>
 
 1. Download the Session Manager plugin deb package.
 

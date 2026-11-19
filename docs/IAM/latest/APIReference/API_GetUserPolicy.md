@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUserPolic
 ---
 
 # GetUserPolicy
-<a name="API_GetUserPolicy"></a>
 
 Retrieves the specified inline policy document that is embedded in the specified IAM user.
 

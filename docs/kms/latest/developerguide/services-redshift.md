@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/services-redsh
 ---
 
 # How Amazon Redshift uses AWS KMS
-<a name="services-redshift"></a>
 
 This topic discusses how Amazon Redshift uses AWS KMS to encrypt data.
 

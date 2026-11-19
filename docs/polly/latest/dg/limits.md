@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/limits.html
 ---
 
 # Quotas in Amazon Polly
-<a name="limits"></a>
 
  Amazon Polly applies quotas to customer traffic by rejecting excessive requests. The default quota for the `SynthesizeSpeech` request with standard voices is 80 transactions per second (tps), in a single region, for a single AWS account. If limits did not increase, and if you generated 100 `SynthesizeSpeech` requests per second using a standard voice, 80 requests per second would succeed, and 20 requests per second would be throttled by Amazon Polly. These requests would return a response with HTTP status 400, and a response header indicating `ThrottlingException`. Amazon Polly also throttles traffic to all operations based on the request rate.
 

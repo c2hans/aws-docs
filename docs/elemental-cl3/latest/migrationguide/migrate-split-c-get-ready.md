@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Step A: Get ready
-<a name="migrate-split-c-get-ready"></a>
 
 ## Read the essential notes
 <a name="migrate-split-c-essential-notes"></a>

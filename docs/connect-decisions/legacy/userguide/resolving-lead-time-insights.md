@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/resol
 ---
 
 # Lead time insights
-<a name="resolving-lead-time-insights"></a>
 
 AWS Supply Chain provides insights on the lead time deviation for a vendor, product, and destination site level. The vendor lead time deviation insights also includes transportation mode, source locations, and identify lead time deviations at a more granular level. You can incorporate the recommended lead times in your planning cycle for enhanced planning accuracy and to avoid stock out risks.
 

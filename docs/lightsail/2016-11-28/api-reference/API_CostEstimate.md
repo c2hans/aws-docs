@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CostEstimate
-<a name="API_CostEstimate"></a>
 
 Describes the estimated cost for resources in your Lightsail for Research account.
 

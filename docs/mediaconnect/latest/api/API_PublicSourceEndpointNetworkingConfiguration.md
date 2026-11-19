@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PublicSource
 ---
 
 # PublicSourceEndpointNetworkingConfiguration
-<a name="API_PublicSourceEndpointNetworkingConfiguration"></a>
 
 The networking configuration for a publicly accessible source endpoint, including the CIDR blocks that are allowed to connect.
 

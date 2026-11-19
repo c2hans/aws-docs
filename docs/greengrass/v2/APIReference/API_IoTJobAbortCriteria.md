@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_IoTJobAbo
 ---
 
 # IoTJobAbortCriteria
-<a name="API_IoTJobAbortCriteria"></a>
 
 Contains criteria that define when and how to cancel a job.
 

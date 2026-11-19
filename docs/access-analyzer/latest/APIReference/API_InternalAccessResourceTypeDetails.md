@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # InternalAccessResourceTypeDetails
-<a name="API_InternalAccessResourceTypeDetails"></a>
 
 Contains information about the total number of active, archived, and resolved findings for a resource type of an internal access analyzer.
 

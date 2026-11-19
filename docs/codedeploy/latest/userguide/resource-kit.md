@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/resource-kit
 ---
 
 # CodeDeploy resource kit reference
-<a name="resource-kit"></a>
 
 Many of the files CodeDeploy relies on are stored in publicly available, AWS Region-specific Amazon S3 buckets. These files include installation files for the CodeDeploy agent, templates, and sample application files. We call this collection of files the CodeDeploy Resource Kit.
 

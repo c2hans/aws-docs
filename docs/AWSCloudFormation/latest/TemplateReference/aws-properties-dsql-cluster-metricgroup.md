@@ -5,14 +5,8 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DSQL::Cluster MetricGroup
-<a name="aws-properties-dsql-cluster-metricgroup"></a>
 
-The name of an advanced monitoring metric group. Advanced monitoring collects detailed database metrics and logs to help you analyze and resolve performance issues. You choose which metric groups to collect for each cluster.
-
-The following metric groups are available:
-
-STATEMENT\_STATISTICS
-Shows which SQL statements run most often or take the most time. Collects execution count, execution time, and rows for each statement.
+An advanced monitoring metric group to enable on the cluster.
 
 ## Syntax
 <a name="aws-properties-dsql-cluster-metricgroup-syntax"></a>
@@ -39,8 +33,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-dsql-cluster-metricgroup-properties"></a>
 
 `MetricGroup`  <a name="cfn-dsql-cluster-metricgroup-metricgroup"></a>
-Property description not available.
+The name of the metric group.
 *Required*: Yes
-*Type*: [String](#aws-properties-dsql-cluster-metricgroup)
+*Type*: [String](aws-properties-dsql-cluster-metricgroup.md)
 *Allowed values*: `STATEMENT_STATISTICS`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Deploy in AWS GovCloud (US) Regions
-<a name="deploy-govcloud"></a>
 
 The solution supports deployment in the AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions. However, you must use the launch buttons in this section rather than the launch buttons provided in other sections of this guide. The launch buttons in other sections reference templates staged for the standard AWS partition, which are not accessible from AWS GovCloud (US) Regions.
 

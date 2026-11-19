@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbL
 ---
 
 # AwsElbLoadBalancerPolicies
-<a name="API_AwsElbLoadBalancerPolicies"></a>
 
 Contains information about the policies for a load balancer.
 

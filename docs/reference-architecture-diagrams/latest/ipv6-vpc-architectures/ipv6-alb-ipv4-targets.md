@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # IPv4 Targets for Dual Stack Internet-facing Application Load Balancer
-<a name="ipv6-alb-ipv4-targets"></a>
 
 Publication date: **June 23, 2022 ([Diagram history](#ipv6-4-diagram-history))**
 

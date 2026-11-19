@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Generative AI use cases for DevSecOps
-<a name="generative-ai-capabilities-devsecops"></a>
 
 AI-powered DevSecOps tools automate many aspects of the software delivery pipeline. For example, they can perform intelligent code reviews, detect potential bugs, detect security vulnerabilities, and identify performance issues in near real time as developers write code. AI generates and runs comprehensive test suites, and it automatically updates them as the codebase evolves. This AI-augmented approach to DevSecOps accelerates the delivery pipeline and significantly enhances the security and reliability of the software being delivered.
 

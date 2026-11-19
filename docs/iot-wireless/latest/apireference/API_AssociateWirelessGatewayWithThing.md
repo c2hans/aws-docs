@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ass
 ---
 
 # AssociateWirelessGatewayWithThing
-<a name="API_AssociateWirelessGatewayWithThing"></a>
 
 Associates a wireless gateway with a thing.
 

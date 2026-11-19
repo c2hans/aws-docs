@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANMulticastSession
-<a name="API_LoRaWANMulticastSession"></a>
 
 The LoRaWAN information used with the multicast session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Viewing server logs
-<a name="chap-sql-server-aurora-pg.management.serverlogs"></a>
 
 This topic provides reference information about logging capabilities in SQL Server and Amazon Aurora PostgreSQL. You can use these logging features to monitor database activities, troubleshoot issues, and maintain the health of your database systems. The topic explains how to access and interpret logs in both environments, highlighting key differences and similarities.
 

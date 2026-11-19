@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Datatype.html
 ---
 
 # Datatype
-<a name="API_Datatype"></a>
 
 A structure representing the datatype of the value.
 

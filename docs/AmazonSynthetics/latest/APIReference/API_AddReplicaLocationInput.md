@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # AddReplicaLocationInput
-<a name="API_AddReplicaLocationInput"></a>
 
 A structure that specifies a replica location for a canary, including the Region and optional VPC configuration.
 

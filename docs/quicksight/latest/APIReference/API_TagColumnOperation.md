@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TagCo
 ---
 
 # TagColumnOperation
-<a name="API_TagColumnOperation"></a>
 
 A transform operation that tags a column with additional information.
 

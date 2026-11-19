@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Migration to AWS FOCUS 1.2
-<a name="migration-to-focus-1-2"></a>
 
 ## Migration Overview
 <a name="migration-overview"></a>

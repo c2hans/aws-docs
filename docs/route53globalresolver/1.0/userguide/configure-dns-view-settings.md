@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/conf
 ---
 
 # Configure settings for DNS views in Amazon Route 53 Global Resolver
-<a name="configure-dns-view-settings"></a>
 
 Amazon Route 53 Global Resolver allows you to configure different DNS policies and access controls for different groups of client devices based on their security requirements and access needs. Set up DNS policies and access controls in Amazon Route 53 Global Resolver for different groups of client devices based on their security requirements and access needs.
 

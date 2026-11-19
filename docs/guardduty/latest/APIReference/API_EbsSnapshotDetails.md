@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_EbsSna
 ---
 
 # EbsSnapshotDetails
-<a name="API_EbsSnapshotDetails"></a>
 
 Contains details about the EBS snapshot that was scanned for malware.
 

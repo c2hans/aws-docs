@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListF
 ---
 
 # ListFunctions
-<a name="API_ListFunctions"></a>
 
 Gets a list of all CloudFront functions in your AWS account.
 

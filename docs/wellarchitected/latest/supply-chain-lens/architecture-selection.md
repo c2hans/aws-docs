@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Architecture selection
-<a name="architecture-selection"></a>
 
 | SCPERF01: How do you select the best performing architecture? |
 | --- |

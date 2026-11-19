@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Vali
 ---
 
 # ValidateAwsAssociations
-<a name="API_ValidateAwsAssociations"></a>
 
 Validates an aws association and set status and returns a 204 No Content response on success.
 

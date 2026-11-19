@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-launch-te
 ---
 
 # Modify a launch template (manage launch template versions)
-<a name="manage-launch-template-versions"></a>
 
 Launch templates are immutable; after you create a launch template, you can't modify it. Instead, you can create a new version of the launch template that includes any changes you require.
 

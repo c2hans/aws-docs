@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/index.ht
 title: 'AWS Reference Architecture Diagrams'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-17
+generated_on: 2026-11-18
 ---
 
 # AWS Reference Architecture Diagrams
@@ -131,12 +131,11 @@ Search or filter by category to find reference architecture diagrams across AWS 
 
 ### Education
 
-- [Hybrid Remote Proctoring Solution](/reference-architecture-diagrams/latest/hybrid-remote-proctoring-solution/hybrid-remote-proctoring-solution.html): Monitor students during remote or in-person exams by using AI assistance to highlight prohibited objects and behaviors.
-- [Moodle for High Availability on AWS](/reference-architecture-diagrams/latest/moodle-for-high-availability-on-aws/moodle-for-high-availability-on-aws.html): This architecture helps you implement Moodle, an open source learning management system that supports distributed online learning on AWS. Moodle can scale flexibly to optimize cost and maximize availability.
-- [Moodle Reference Architecture](/reference-architecture-diagrams/latest/moodle-learning-management-system-on-aws/moodle-learning-management-system-on-aws.html): Moodle is a learning platform designed to provide educators, administrators and learners with a single robust, secure, and integrated system to create personalized learning environments. Moodle learning management system (LMS) on AWS can be deployed using architecture and can scale up on demand. Separate the application and data layers for elasticity and security.
-- [Open edX on AWS](/reference-architecture-diagrams/latest/open-edx-for-high-availability-on-aws/open-edx-for-high-availability-on-aws.html): Open edX is an open-source, distributed learning platform that, when implemented on AWS, can scale flexibly to optimize cost and maximize availability.
-- [Plagiarism Detection Architecture](/reference-architecture-diagrams/latest/plagiarism-detection-architecture/plagiarism-detection-architecture.html): This architecture helps you create a plagiarism-detection service using AWS Step Functions, AWS Lambda, Amazon SageMaker AI, and OpenSearch Service.
-- [Serverless Web Hosting on AWS App Runner](/reference-architecture-diagrams/latest/serverless-web-hosting-aws-app-runner/serverless-web-hosting-aws-app-runner.html): This reference architecture details how to run serverless, containerized web applications without the need to provision or manage infrastructure.
+- [Hybrid remote proctoring solution](/reference-architecture-diagrams/latest/education/hybrid-remote-proctoring-solution.html): Monitor students during remote or in-person exams by using AI assistance to highlight prohibited objects and behaviors.
+- [Moodle for high availability on AWS](/reference-architecture-diagrams/latest/education/moodle-for-high-availability-on-aws.html): This architecture helps you implement Moodle, an open source learning management system that supports distributed online learning on AWS. Moodle can scale flexibly to optimize cost and maximize availability.
+- [Moodle learning management system on AWS](/reference-architecture-diagrams/latest/education/moodle-learning-management-system-on-aws.html): Moodle is a learning platform designed to provide educators, administrators and learners with a single robust, secure, and integrated system to create personalized learning environments. Moodle learning management system (LMS) on AWS can be deployed using architecture and can scale up on demand. Separate the application and data layers for elasticity and security.
+- [Open edX on AWS](/reference-architecture-diagrams/latest/education/open-edx-for-high-availability-on-aws.html): Open edX is an open-source, distributed learning platform that, when implemented on AWS, can scale flexibly to optimize cost and maximize availability.
+- [Plagiarism detection on AWS](/reference-architecture-diagrams/latest/education/plagiarism-detection-architecture.html): This architecture helps you create a plagiarism-detection service using AWS Step Functions, AWS Lambda, Amazon SageMaker AI, and OpenSearch Service.
 
 ### Electronics / EDA / HPC
 

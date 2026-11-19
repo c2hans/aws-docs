@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Filter
-<a name="API_pricing_Filter"></a>
 
 The constraints that you want all returned products to match.
 

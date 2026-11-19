@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteWe
 ---
 
 # RouteWebLink
-<a name="API_RouteWebLink"></a>
 
 The URL to an external resource.
 

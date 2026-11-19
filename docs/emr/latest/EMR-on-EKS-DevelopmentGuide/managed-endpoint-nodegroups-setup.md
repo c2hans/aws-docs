@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/m
 ---
 
 # Deploying a JEG pod to a node group
-<a name="managed-endpoint-nodegroups-setup"></a>
 
 JEG (Jupyter Enterprise Gateway) pod placement is a feature that allows you to deploy an interactive endpoint on a specific node group. With this feature, you can configure settings such as `instance type` for the interactive endpoint.
 

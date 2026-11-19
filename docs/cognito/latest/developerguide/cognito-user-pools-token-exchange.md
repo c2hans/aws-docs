@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Exchanging tokens for downstream services
-<a name="cognito-user-pools-token-exchange"></a>
 
 Token exchange is an OAuth 2.0 extension, defined in [RFC 8693](https://www.rfc-editor.org/rfc/rfc8693.html) on the RFC Editor website, that trades an existing token for a new token. With Amazon Cognito user pools, when your service receives a request from a user, it can exchange the user's token for a new token. The new token is narrowed in scope and bound to the audience of a specific downstream service. Your service doesn't forward the user's original token, which might be broader than the downstream service needs or intended for a different audience.
 

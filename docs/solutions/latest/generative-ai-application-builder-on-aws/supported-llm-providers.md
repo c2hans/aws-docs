@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Supported LLM providers
-<a name="supported-llm-providers"></a>
 
 The solution can integrate with the following LLM providers:
 

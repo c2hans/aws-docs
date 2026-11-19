@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Res
 ---
 
 # ResourceStatus
-<a name="API_ResourceStatus"></a>
 
 Contains information about the current status of a resource.
 

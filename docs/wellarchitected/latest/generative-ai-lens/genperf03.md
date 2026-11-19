@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Optimize consumption of high-performance compute
-<a name="genperf03"></a>
 
 | GENPERF03: How do you optimize computational resources required for high-performance distributed computation tasks? |
 | --- |

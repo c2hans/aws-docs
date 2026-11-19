@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Sh
 ---
 
 # SharePointCrawlerConfiguration
-<a name="API_agent_SharePointCrawlerConfiguration"></a>
 
 The configuration of the SharePoint content. For example, configuring specific types of SharePoint content.
 

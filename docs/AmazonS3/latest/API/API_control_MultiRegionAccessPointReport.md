@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_MultiReg
 ---
 
 # MultiRegionAccessPointReport
-<a name="API_control_MultiRegionAccessPointReport"></a>
 
 A collection of statuses for a Multi-Region Access Point in the various Regions it supports.
 

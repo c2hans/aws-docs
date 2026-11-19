@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpTim
 ---
 
 # HttpTimeout
-<a name="API_HttpTimeout"></a>
 
 An object that represents types of timeouts.
 

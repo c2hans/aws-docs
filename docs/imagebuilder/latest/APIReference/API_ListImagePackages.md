@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListImagePackages
-<a name="API_ListImagePackages"></a>
 
 Lists the packages that are associated with an image build version, as determined by AWS Systems Manager Inventory at build time.
 

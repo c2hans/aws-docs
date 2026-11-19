@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Ca
 ---
 
 # CancelStatement
-<a name="API_CancelStatement"></a>
 
 Cancels a running query. To be canceled, a query must be running.
 

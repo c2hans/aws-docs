@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ImageDetails.html
 ---
 
 # ImageDetails
-<a name="API_ImageDetails"></a>
 
 Information about the container image used for a task.
 

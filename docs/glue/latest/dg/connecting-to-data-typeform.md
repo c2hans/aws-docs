@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-typefo
 ---
 
 # Connecting to Typeform in AWS Glue Studio
-<a name="connecting-to-data-typeform"></a>
 
 Typeform is an online form and survey builder that creates conversational, one-question-at-a-time forms for surveys, quizzes, lead capture, and feedback. Because you are a Typeform user, you can connect AWS Glue to your Typeform account. You can then use Typeform as a data source in your AWS Glue ETL jobs to transfer data between Typeform and AWS services or other supported applications.
 

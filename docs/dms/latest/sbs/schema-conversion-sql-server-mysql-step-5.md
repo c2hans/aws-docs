@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-sql-ser
 ---
 
 # Step 5: Create an Instance Profile
-<a name="schema-conversion-sql-server-mysql-step-5"></a>
 
 Before you create an instance profile, configure a subnet group for your instance profile.
 

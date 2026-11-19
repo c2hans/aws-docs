@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/cred
 ---
 
 # Use AWS shared configuration profiles in the AWS SDK for Java 2.x
-<a name="credentials-profiles"></a>
 
 Using the shared `config` and `credentials` file, you can set up several profiles. This enables your application to use multiple sets of credentials configuration. The `[default]` profile was mentioned previously. The SDK uses the [ProfileCredentialsProvider](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/auth/credentials/ProfileCredentialsProvider.html) class to load settings from profiles defined in the shared `credentials` file.
 

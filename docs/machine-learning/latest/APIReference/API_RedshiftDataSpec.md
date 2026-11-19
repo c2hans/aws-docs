@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # RedshiftDataSpec
-<a name="API_RedshiftDataSpec"></a>
 
 Describes the data specification of an Amazon Redshift `DataSource`.
 

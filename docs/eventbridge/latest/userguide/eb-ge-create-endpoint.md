@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-ge-creat
 ---
 
 # Creating a global endpoint in Amazon EventBridge
-<a name="eb-ge-create-endpoint"></a>
 
 Complete the following steps to set up a global endpoint:
 

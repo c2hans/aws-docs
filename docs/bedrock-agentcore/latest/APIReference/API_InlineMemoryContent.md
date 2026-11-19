@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InlineMemoryContent
-<a name="API_InlineMemoryContent"></a>
 
 The content included directly in the request as one or more payload items.
 

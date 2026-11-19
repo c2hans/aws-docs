@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeAddo
 ---
 
 # DescribeAddonConfiguration
-<a name="API_DescribeAddonConfiguration"></a>
 
 Returns configuration options.
 

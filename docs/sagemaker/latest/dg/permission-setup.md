@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/permission-setup.htm
 ---
 
 # Set up permissions
-<a name="permission-setup"></a>
 
 ## Roles required for Add-on and its dependencies
 <a name="permission-setup-addon"></a>

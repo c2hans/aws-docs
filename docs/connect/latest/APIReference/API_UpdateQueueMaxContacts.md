@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQueueMaxContacts
-<a name="API_UpdateQueueMaxContacts"></a>
 
 Updates the maximum number of contacts allowed in a queue before it is considered full.
 

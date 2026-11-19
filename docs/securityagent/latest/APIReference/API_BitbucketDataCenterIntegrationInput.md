@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Bi
 ---
 
 # BitbucketDataCenterIntegrationInput
-<a name="API_BitbucketDataCenterIntegrationInput"></a>
 
 Connection details for a self-managed Bitbucket Data Center integration.
 

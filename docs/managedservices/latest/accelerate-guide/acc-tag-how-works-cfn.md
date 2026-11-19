@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Using CloudFormation to create tags for AMS Accelerate
-<a name="acc-tag-how-works-cfn"></a>
 
 You can use CloudFormation to apply tags at the stack level (see CloudFormation documentation, [ Resource tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)) or at the individual resource level (for example, see [ Tagging your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html)).
 

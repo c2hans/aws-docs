@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Transcript
 ---
 
 # TranscriptFilter
-<a name="API_TranscriptFilter"></a>
 
 The object representing the filter that Amazon Lex will use to select the appropriate transcript.
 

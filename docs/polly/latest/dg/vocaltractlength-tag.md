@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/vocaltractlength-tag.htm
 ---
 
 # Controlling timbre
-<a name="vocaltractlength-tag"></a>
 
 *<amazon:effect vocal-tract-length>*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-result-rtmp-pu
 ---
 
 # Result of this procedure
-<a name="setup-result-rtmp-pull"></a>
 
 As a result of this setup, an RTMP pull input exists that specifies one or two *source* URLs. These sources are the URLs for the source content on the upstream system.
 

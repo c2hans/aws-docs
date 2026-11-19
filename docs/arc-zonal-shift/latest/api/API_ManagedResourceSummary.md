@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ManagedRe
 ---
 
 # ManagedResourceSummary
-<a name="API_ManagedResourceSummary"></a>
 
 A complex structure for a managed resource in an AWS account with information about zonal shifts and autoshifts.
 

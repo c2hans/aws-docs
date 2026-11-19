@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRe
 ---
 
 # RouteRentalAgency
-<a name="API_RouteRentalAgency"></a>
 
 Details about the rental agency.
 

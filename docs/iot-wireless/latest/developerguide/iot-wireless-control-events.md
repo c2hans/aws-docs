@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-w
 ---
 
 # Enable events for wireless resources
-<a name="iot-wireless-control-events"></a>
 
 Before subscribers to the reserved topics can receive messages, you must enable event notifications. To do this, you can use the AWS Management Console, or the AWS IoT Wireless API or AWS CLI.
 

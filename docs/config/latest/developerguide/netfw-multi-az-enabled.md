@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/netfw-multi
 ---
 
 # netfw-multi-az-enabled
-<a name="netfw-multi-az-enabled"></a>
 
 Checks if AWS Network Firewall firewalls are deployed across multiple Availability Zones. The rule is NON\_COMPLIANT if firewalls are deployed in only one Availability Zone or in fewer zones than the number listed in the optional parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicV2Details
-<a name="API_TopicV2Details"></a>
 
 The definition of a topic.
 

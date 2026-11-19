@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ConfigurationSetFilter
-<a name="API_ConfigurationSetFilter"></a>
 
 The information for configuration sets that meet a specified criteria.
 

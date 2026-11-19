@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_LabelC
 ---
 
 # LabelCounters
-<a name="API_LabelCounters"></a>
 
 Provides a breakdown of the number of objects labeled.
 

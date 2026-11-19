@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/updating-recommend
 ---
 
 # Updating a recommender
-<a name="updating-recommender"></a>
 
  After you create a recommender, you can update the recommender's configuration:
 + You can update the columns the recommender uses in training. If you modify the columns used when training, Amazon Personalize automatically starts a full retraining of the models backing your recommender. While the update completes, you can still get recommendations from the recommender. The recommender uses the previous configuration until the update completes. To track the status of this update, use the `latestRecommenderUpdate` returned in the [DescribeRecommender](API_DescribeRecommender.md) operation. If you provide the same columns you provided when you created the recommender, no update occurs.

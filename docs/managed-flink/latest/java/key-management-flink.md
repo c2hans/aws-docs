@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/key-management
 ---
 
 # Key management in Amazon Managed Service for Apache Flink
-<a name="key-management-flink"></a>
 
 In Amazon MSF, you can choose to use either [AWS managed keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html) or your own [customer managed keys (CMKs)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-mgn-key) to encrypt data. CMKs in AWS Key Management Service (AWS KMS) are encryption keys that you create, own, and manage yourself.
 

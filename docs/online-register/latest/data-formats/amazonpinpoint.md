@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Pinpoint
-<a name="amazonpinpoint"></a>
 
 Amazon Pinpoint provides the following APIs for data retrieval.
 

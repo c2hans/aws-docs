@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MediaIte
 ---
 
 # MediaItem
-<a name="API_MediaItem"></a>
 
 Contains information about a media asset used in a workspace.
 

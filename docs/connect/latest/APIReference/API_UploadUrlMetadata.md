@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UploadUr
 ---
 
 # UploadUrlMetadata
-<a name="API_UploadUrlMetadata"></a>
 
 Fields required when uploading an attached file.
 

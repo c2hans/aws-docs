@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/delete-domain.htm
 ---
 
 # Delete a domain
-<a name="delete-domain"></a>
 
 You can delete a domain using the CodeArtifact console or the AWS Command Line Interface (AWS CLI).
 

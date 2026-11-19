@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # ApprovePaidSubscription
-<a name="API_ApprovePaidSubscription"></a>
 
 Approves a subscription that is in `PENDING_APPROVAL` status, activating it and starting billing.
 

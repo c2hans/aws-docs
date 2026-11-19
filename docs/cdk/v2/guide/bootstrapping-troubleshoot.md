@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping-troubleshoot.
 ---
 
 # Troubleshoot AWS CDK bootstrapping issues
-<a name="bootstrapping-troubleshoot"></a>
 
 Troubleshoot common issues when bootstrapping your environment with the AWS Cloud Development Kit (AWS CDK).
 + For an introduction to bootstrapping, see [AWS CDK bootstrapping](bootstrapping.md).

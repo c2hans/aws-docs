@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Effort estimation framework for migrating OpenShift to Amazon EKS
-<a name="introduction"></a>
 
 *Pratap Kumar Nanda and Pradip kumar Pandey, Amazon Web Services*
 

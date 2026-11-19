@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/describe-thing
 ---
 
 # Describe a thing type
-<a name="describe-thing-type"></a>
 
 You can use the **DescribeThingType** command to get information about a thing type:
 

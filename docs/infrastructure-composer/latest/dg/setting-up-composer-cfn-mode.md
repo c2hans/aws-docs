@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/settin
 ---
 
 # How to access Infrastructure Composer in CloudFormation console mode
-<a name="setting-up-composer-cfn-mode"></a>
 
 Infrastructure Composer in CloudFormation console mode is an upgrade from CloudFormation Designer. We recommend using Infrastructure Composer to visualize your CloudFormation templates. You can also use this tool to create and edit CloudFormation templates.
 

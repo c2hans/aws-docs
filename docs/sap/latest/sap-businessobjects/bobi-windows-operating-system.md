@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-wind
 ---
 
 # Operating System
-<a name="bobi-windows-operating-system"></a>
 
 If you plan on using Windows other than via Amazon EC2 for Windows Server, then ensure you have the appropriate licenses in place and the appropriate tenancy type selected. For more details, refer to your licensing terms and conditions, and see [Windows on AWS](https://aws.amazon.com/windows/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_m
 ---
 
 # Amazon S3 Storage Lens metrics glossary
-<a name="storage_lens_metrics_glossary"></a>
 
 The Amazon S3 Storage Lens metrics glossary provides a complete list of free and advanced metrics for S3 Storage Lens.
 

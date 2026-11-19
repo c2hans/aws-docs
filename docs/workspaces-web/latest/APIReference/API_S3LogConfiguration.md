@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_S
 ---
 
 # S3LogConfiguration
-<a name="API_S3LogConfiguration"></a>
 
 The S3 log configuration.
 

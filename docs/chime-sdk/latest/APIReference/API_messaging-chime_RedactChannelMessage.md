@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # RedactChannelMessage
-<a name="API_messaging-chime_RedactChannelMessage"></a>
 
 Redacts message content and metadata. The message exists in the back end, but the action returns null content, and the state shows as redacted.
 

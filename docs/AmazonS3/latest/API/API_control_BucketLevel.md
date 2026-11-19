@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_BucketLe
 ---
 
 # BucketLevel
-<a name="API_control_BucketLevel"></a>
 
 A container for the bucket-level configuration for Amazon S3 Storage Lens.
 

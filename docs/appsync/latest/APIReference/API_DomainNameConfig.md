@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DomainNa
 ---
 
 # DomainNameConfig
-<a name="API_DomainNameConfig"></a>
 
 Describes a configuration for a custom domain.
 

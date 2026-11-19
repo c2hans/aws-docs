@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateLicense
-<a name="API_DisassociateLicense"></a>
 
 Removes the Grafana Enterprise license from a workspace.
 

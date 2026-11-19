@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_GetPrim
 ---
 
 # GetPrimaryEmail
-<a name="API_GetPrimaryEmail"></a>
 
 Retrieves the primary email address for the specified account.
 

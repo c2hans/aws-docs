@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationSignals::ServiceLevelObjective CalendarInterval
-<a name="aws-properties-applicationsignals-servicelevelobjective-calendarinterval"></a>
 
 If the interval for this service level objective is a calendar interval, this structure contains the interval specifications.
 

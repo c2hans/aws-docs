@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-rolesa
 ---
 
 # AWS Identity and Access Management Roles Anywhere events
-<a name="events-ref-rolesanywhere"></a>
 
 IAM Roles Anywhere sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

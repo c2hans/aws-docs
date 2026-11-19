@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy
-<a name="AmazonSageMakerServiceCatalogProductsLambdaServiceRolePolicy"></a>
 
 **Description**: Service role policy used by the AWS Lambda within the AWS ServiceCatalog provisioned products from Amazon SageMaker portfolio of products. Grants permissions to a set of related services including ECR, S3 and others.
 

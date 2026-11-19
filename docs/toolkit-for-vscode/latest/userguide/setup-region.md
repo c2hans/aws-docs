@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/setu
 ---
 
 # Changing AWS Regions
-<a name="setup-region"></a>
 
 An AWS Region specifies where your AWS resources are managed. Your default AWS Region is detected when you connect to your AWS account from the AWS Toolkit for Visual Studio Code, automatically displaying in the **AWS Explorer**.
 

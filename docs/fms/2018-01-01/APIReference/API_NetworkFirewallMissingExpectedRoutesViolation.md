@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallMissingExpectedRoutesViolation
-<a name="API_NetworkFirewallMissingExpectedRoutesViolation"></a>
 
 Violation detail for an expected route missing in AWS Network Firewall.
 

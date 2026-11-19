@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/getting-s
 ---
 
 # AWS Cloud Development Kit (AWS CDK)
-<a name="getting-started-step2-Automation-CDK"></a>
 
 The AWS Cloud Development Kit (AWS CDK) (AWS CDK) is an open-source software development framework to define your cloud application resources using familiar programming languages. A tag in AWS CDK is applied to a given construct that also applies to all of its taggable children. These tags are included in the AWS CloudFormation template synthesized from your application and are applied to the AWS resources it deploys. For more information about AWS CDK tagging, see [Tagging](https://docs.aws.amazon.com/cdk/v2/guide/tagging.html) in the *AWS Cloud Development Kit (AWS CDK) v2 developer guide*.
 

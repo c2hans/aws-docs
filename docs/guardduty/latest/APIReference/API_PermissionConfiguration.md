@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Permis
 ---
 
 # PermissionConfiguration
-<a name="API_PermissionConfiguration"></a>
 
 Contains information about how permissions are configured for the S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceEventDetails
-<a name="API_ServiceEventDetails"></a>
 
 Contains the details of a service event.
 

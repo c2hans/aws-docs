@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.ADS.3] Use staggered deployment and release strategies
-<a name="dl.ads.3-use-staggered-deployment-and-release-strategies"></a>
 
  **Category:** FOUNDATIONAL
 

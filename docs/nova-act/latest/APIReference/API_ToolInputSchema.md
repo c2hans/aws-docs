@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ToolInp
 ---
 
 # ToolInputSchema
-<a name="API_ToolInputSchema"></a>
 
 The schema definition for tool input parameters.
 

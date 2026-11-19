@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Using the ASR API programmatically
-<a name="m2m-api-access"></a>
 
 If you want to integrate ASR into your own systems for example, a security orchestration platform, a ticketing or ChatOps workflow, or a custom dashboard — and drive remediations from there instead of the Web UI, you can call the Automated Security Response on AWS (ASR) API directly. With the ASR API, you can automate and monitor remediations from tooling you already operate.
 

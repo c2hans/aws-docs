@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 ---
 
 # Web data tracker and web notification
-<a name="customer-profiles-web-tracker-and-notification"></a>
 
 Connect Customer offers two capabilities that work together with the Communications widget to help you understand website visitors and engage them with personalized messages:
 + **Web data tracker** – Captures how visitors interact with your website (click interactions, search queries, form completion) and associates that activity with their profile in Customer Profiles.

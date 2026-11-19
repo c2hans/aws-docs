@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetDe
 ---
 
 # GetDevice
-<a name="API_GetDevice"></a>
 
 Gets information about a unique device type.
 

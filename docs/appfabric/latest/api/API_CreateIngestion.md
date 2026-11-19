@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_CreateIngestion
 ---
 
 # CreateIngestion
-<a name="API_CreateIngestion"></a>
 
 Creates a data ingestion for an application.
 

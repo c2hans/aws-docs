@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Deploying models on Amazon SageMaker HyperPod
-<a name="sagemaker-hyperpod-model-deployment"></a>
 
 Amazon SageMaker HyperPod now extends beyond training to deliver a comprehensive inference platform that combines the flexibility of Kubernetes with the operational excellence of AWS managed services. Deploy, scale, and optimize your machine learning models with enterprise-grade reliability using the same HyperPod compute throughout the entire model lifecycle.
 

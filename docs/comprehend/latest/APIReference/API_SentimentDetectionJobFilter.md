@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Senti
 ---
 
 # SentimentDetectionJobFilter
-<a name="API_SentimentDetectionJobFilter"></a>
 
 Provides information for filtering a list of dominant language detection jobs. For more information, see the [ListSentimentDetectionJobs](API_ListSentimentDetectionJobs.md) operation.
 

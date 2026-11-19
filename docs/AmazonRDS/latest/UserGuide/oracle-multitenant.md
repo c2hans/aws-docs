@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-multit
 ---
 
 # Working with CDBs in RDS for Oracle
-<a name="oracle-multitenant"></a>
 
 In the Oracle multitenant architecture, a container database (CDB) can include customer-created pluggable databases (PDBs). For more information about CDBs, see [Introduction to the Multitenant Architecture ](https://docs.oracle.com/en/database/oracle/oracle-database/19/multi/introduction-to-the-multitenant-architecture.html#GUID-267F7D12-D33F-4AC9-AA45-E9CD671B6F22) in the Oracle Database documentation.
 

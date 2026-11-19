@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Listing AgentCore Code Interpreter tools
-<a name="code-interpreter-list"></a>
 
 You can view a list of all your Code Interpreter tools to manage and monitor them.
 

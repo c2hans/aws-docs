@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-conn
 ---
 
 # Connection API
-<a name="aws-glue-api-catalog-connections-connections"></a>
 
 The Connection API describes AWS Glue connection data types, and the API for creating, deleting, updating, and listing connections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Wor
 ---
 
 # WorkspaceErrorDetails
-<a name="API_WorkspaceErrorDetails"></a>
 
 Contains the details of an error associated with a workspace.
 

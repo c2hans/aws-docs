@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/join
 ---
 
 # Joining an Amazon EC2 Mac instance to your AWS Managed Microsoft AD Active Directory
-<a name="join_mac_instance"></a>
 
 This procedure manually joins an Amazon EC2 Mac instance to your AWS Managed Microsoft AD Active Directory.
 

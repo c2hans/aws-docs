@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetAccountSettings
-<a name="API_GetAccountSettings"></a>
 
 Returns information about the status of the `DeletionProtection` parameter.
 

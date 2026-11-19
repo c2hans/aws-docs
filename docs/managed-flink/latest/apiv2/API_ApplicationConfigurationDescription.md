@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationConfigurationDescription
-<a name="API_ApplicationConfigurationDescription"></a>
 
 Describes details about the application code and starting parameters for a Managed Service for Apache Flink application.
 

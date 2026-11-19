@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Updat
 ---
 
 # UpdateThemeForStack
-<a name="API_UpdateThemeForStack"></a>
 
 Updates custom branding that customizes the appearance of the streaming application catalog page.
 

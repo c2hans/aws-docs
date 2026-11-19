@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-managed-AD-be
 ---
 
 # Best practices for working with Active Directory
-<a name="self-managed-AD-best-practices"></a>
 
 Here are some suggestions and guidelines that you should consider when joining Amazon FSx for NetApp ONTAP SVMs to your self-managed Microsoft Active Directory. Note that these are recommended as best practices, but not required.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_List
 ---
 
 # ListWorkspaceInstances
-<a name="API_ListWorkspaceInstances"></a>
 
 Retrieves a collection of WorkSpaces Instances based on specified filters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/unbase6
 ---
 
 # UNBASE64 function
-<a name="unbase64"></a>
 
 The UNBASE64 function converts an argument from a base 64 string to a binary.
 

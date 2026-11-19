@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/topic-attributes-sdks.html
 ---
 
 # AWS SDK examples to configure topic attributes
-<a name="topic-attributes-sdks"></a>
 
 The following code examples show how to use `SetTopicAttributes`.
 

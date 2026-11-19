@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-client-
 ---
 
 # ec2-client-vpn-connection-log-enabled
-<a name="ec2-client-vpn-connection-log-enabled"></a>
 
 Checks if AWS Client VPN endpoint has client connection logging enabled. The rule is NON\_COMPLIANT if 'Configuration.ConnectionLogOptions.Enabled' is set to false.
 

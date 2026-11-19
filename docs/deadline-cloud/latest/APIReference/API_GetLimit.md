@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetLimit
-<a name="API_GetLimit"></a>
 
 Gets information about a specific limit.
 

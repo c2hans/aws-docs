@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-cr
 ---
 
 # Creating a manifest file
-<a name="md-create-manifest-file"></a>
 
 You can create a test or training dataset by importing a SageMaker AI Ground Truth format manifest file. If your images are labeled in a format that isn't a SageMaker AI Ground Truth manifest file, use the following information to create a SageMaker AI Ground Truth format manifest file.
 

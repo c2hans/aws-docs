@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetwork
 ---
 
 # StartNetworkMigrationCodeGeneration
-<a name="API_StartNetworkMigrationCodeGeneration"></a>
 
 Starts a code generation job to convert network migration mappings into infrastructure-as-code templates.
 

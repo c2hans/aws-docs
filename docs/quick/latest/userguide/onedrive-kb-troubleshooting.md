@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/onedrive-kb-troub
 ---
 
 # Troubleshooting OneDrive knowledge bases
-<a name="onedrive-kb-troubleshooting"></a>
 
 Use this section to diagnose and resolve common issues with OneDrive knowledge base integrations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Operationalize: Preparing your organization for a mature cloud security posture
-<a name="operationalize"></a>
 
 In order to move forward with the process of deploying operational loads into the cloud, it is important to focus on the alignment of people, process, and technology. This is particularly crucial in the cloud environment because processes and skills likely differ from on-premises operations. In this section, you use a framework to align your people, processes, and technology, and then you confirm that the framework has helped you achieve your expected outcomes.
 

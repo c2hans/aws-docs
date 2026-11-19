@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Deploy the guidance
-<a name="deploy-the-solution"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the guidance into your account.
 

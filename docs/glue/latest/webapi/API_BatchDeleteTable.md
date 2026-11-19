@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchDeleteTable.
 ---
 
 # BatchDeleteTable
-<a name="API_BatchDeleteTable"></a>
 
 Deletes multiple tables at once.
 

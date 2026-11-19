@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # StreamChannelDefinition
-<a name="API_media-pipelines-chime_StreamChannelDefinition"></a>
 
 Defines a streaming channel.
 

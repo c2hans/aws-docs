@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationOutputConfig
-<a name="API_AIRecommendationOutputConfig"></a>
 
 The output configuration for an AI recommendation job.
 

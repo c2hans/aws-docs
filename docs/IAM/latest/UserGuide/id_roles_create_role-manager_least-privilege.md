@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_rol
 ---
 
 # Apply least-privilege permissions to a role created automatically
-<a name="id_roles_create_role-manager_least-privilege"></a>
 
 When creating a resource in a service console, role manager provides the IAM role that the resource needs. For some tasks, such as running your own code, AWS cannot determine in advance what permissions are required. As a result, a role can allow more permissions than the resource requires. After you know which permissions the resource needs, you can reduce the role's permissions to match.
 

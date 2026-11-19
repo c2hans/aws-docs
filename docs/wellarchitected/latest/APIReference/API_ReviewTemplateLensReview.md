@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ReviewTemplateLensReview
-<a name="API_ReviewTemplateLensReview"></a>
 
 The lens review of a review template.
 

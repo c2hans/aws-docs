@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-th
 ---
 
 # Conclusion and resources
-<a name="conclusion"></a>
 
 This guide discusses Application Load Balancer, Amazon API Gateway, and AWS Lambda function URLs and their capabilities for creating HTTP endpoints. To choose the right AWS service for your microservices endpoints, carefully consider the capabilities and design considerations described in this guide.
 

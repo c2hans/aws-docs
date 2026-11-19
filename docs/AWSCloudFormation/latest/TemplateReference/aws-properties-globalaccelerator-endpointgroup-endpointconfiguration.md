@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GlobalAccelerator::EndpointGroup EndpointConfiguration
-<a name="aws-properties-globalaccelerator-endpointgroup-endpointconfiguration"></a>
 
 A complex type for endpoints. A resource must be valid and active when you add it as an endpoint.
 

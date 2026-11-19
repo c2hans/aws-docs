@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageDisk
 ---
 
 # ImageDiskContainer
-<a name="API_ImageDiskContainer"></a>
 
 Describes the disk container object for an import image task.
 

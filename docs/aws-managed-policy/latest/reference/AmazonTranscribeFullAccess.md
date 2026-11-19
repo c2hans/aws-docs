@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonTranscribeFullAccess
-<a name="AmazonTranscribeFullAccess"></a>
 
 **Description**: Provides full access to Amazon Transcribe operations
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListPrivateConnections
-<a name="API_ListPrivateConnections"></a>
 
 Lists all Private Connections in the caller's account.
 

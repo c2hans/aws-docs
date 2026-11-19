@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Resource.
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 The resource contains a `ResourceArn` and the `ResourceType`.
 

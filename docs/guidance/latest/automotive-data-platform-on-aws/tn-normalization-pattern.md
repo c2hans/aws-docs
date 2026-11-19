@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # The normalization pattern
-<a name="tn-normalization-pattern"></a>
 
 The following eight-step architecture describes the evergreen shape of a production telemetry normalization system. It is service-agnostic at the conceptual level and maps to named AWS services in the subsection below.
 

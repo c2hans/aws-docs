@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-json-humantaskac
 ---
 
 # Use Human Loop Activation Conditions JSON Schema with Amazon Textract
-<a name="a2i-json-humantaskactivationconditions-textract-example"></a>
 
 **Note**
 Amazon SageMaker A2I is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for A2I, but we do not plan to introduce new features.

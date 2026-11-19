@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitoring-eventb
 ---
 
 # MediaConnect router input failover event
-<a name="monitoring-eventbridge-events-router-input-failover"></a>
 
 AWS Elemental MediaConnect publishes this event for a router input that uses the `FAILOVER` input type when the active source changes.
 

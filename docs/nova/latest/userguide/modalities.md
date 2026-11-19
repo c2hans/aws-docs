@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/modalities.html
 ---
 
 # Multimodal support for Amazon Nova
-<a name="modalities"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For the Amazon Nova 2 multimodal documentation, visit [Multimodal understanding](https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-multimodal-models.html).

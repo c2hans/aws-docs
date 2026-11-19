@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_CreateComput
 ---
 
 # CreateComputeNodeGroup
-<a name="API_CreateComputeNodeGroup"></a>
 
 Creates a managed set of compute nodes. You associate a compute node group with a cluster through 1 or more AWS PCS queues or as part of the login fleet. A compute node group includes the definition of the compute properties and lifecycle management. AWS PCS uses the information you provide to this API action to launch compute nodes in your account. You can only specify subnets in the same Amazon VPC as your cluster. You receive billing charges for the compute nodes that AWS PCS launches in your account. You can configure common instance settings, such as the AMI, security groups, and SSH key pair, directly on the compute node group, or you can provide a custom EC2 launch template. To use a launch template that AWS PCS manages, set `launchTemplateMode` to `MANAGED` and don't provide `customLaunchTemplate`. In this case, you must specify `amiId` and `securityGroupIds`. For more information, see [Configuring instance settings for compute node groups in AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng_instance-settings.html) in the * AWS PCS User Guide*.
 

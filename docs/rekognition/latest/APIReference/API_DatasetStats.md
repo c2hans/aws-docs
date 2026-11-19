@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Data
 ---
 
 # DatasetStats
-<a name="API_DatasetStats"></a>
 
  Provides statistics about a dataset. For more information, see [DescribeDataset](API_DescribeDataset.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/member-accoun
 ---
 
 # Required IAM policy for a member account
-<a name="member-account-iam-policy"></a>
 
 Before a member account can view and manage invitations, the required IAM policy must be attached to their principal. The principal can be an existing user or role, or you can create a new user or role to use for Detective.
 

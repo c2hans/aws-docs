@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Configu
 ---
 
 # ConfigurableEnvironmentAction
-<a name="API_ConfigurableEnvironmentAction"></a>
 
 The configurable action of a Amazon DataZone environment.
 

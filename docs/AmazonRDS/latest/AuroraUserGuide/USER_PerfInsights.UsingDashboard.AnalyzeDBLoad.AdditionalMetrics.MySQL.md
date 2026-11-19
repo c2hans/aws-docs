@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Pe
 ---
 
 # SQL statistics for Aurora MySQL
-<a name="USER_PerfInsights.UsingDashboard.AnalyzeDBLoad.AdditionalMetrics.MySQL"></a>
 
 Aurora MySQL collect SQL statistics only at the digest level. No statistics are shown at the statement level.
 

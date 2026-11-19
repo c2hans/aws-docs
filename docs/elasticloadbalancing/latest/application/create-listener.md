@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Create an HTTP listener for your Application Load Balancer
-<a name="create-listener"></a>
 
 A listener checks for connection requests. You define a listener when you create your load balancer, and you can add listeners to your load balancer at any time.
 

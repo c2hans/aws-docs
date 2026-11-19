@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/create
 ---
 
 # Creating a percentage charge custom line item
-<a name="create-cli-percentage"></a>
 
 Use the following steps to create a custom line item that applies either a credit or fee line item to an individual billing group.
 

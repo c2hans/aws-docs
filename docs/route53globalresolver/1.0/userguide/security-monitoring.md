@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/secu
 ---
 
 # Security monitoring capabilities in Amazon Route 53 Global Resolver
-<a name="security-monitoring"></a>
 
 Amazon Route 53 Global Resolver provides several security monitoring capabilities to help you identify and respond to potential threats:
 

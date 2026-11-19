@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # RANDOM
-<a name="recipe-actions.functions.RANDOM"></a>
 
 Returns a random number between 0 and 1 in a new column.
 

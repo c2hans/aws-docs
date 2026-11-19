@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SourceEndpoi
 ---
 
 # SourceEndpointFilter
-<a name="API_SourceEndpointFilter"></a>
 
 A filter to apply when listing source endpoints. This is a union type, so exactly one of its members is set.
 

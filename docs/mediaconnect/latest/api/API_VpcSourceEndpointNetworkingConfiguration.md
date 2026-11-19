@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_VpcSourceEnd
 ---
 
 # VpcSourceEndpointNetworkingConfiguration
-<a name="API_VpcSourceEndpointNetworkingConfiguration"></a>
 
 The networking configuration for a source endpoint in a virtual private cloud (VPC).
 

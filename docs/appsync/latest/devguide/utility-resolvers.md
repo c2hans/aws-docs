@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/utility-resolver
 ---
 
 # Configuring utilities for the `APPSYNC_JS` runtime
-<a name="utility-resolvers"></a>
 
 AWS AppSync provides two libraries that aid in the development of resolvers with the `APPSYNC_JS` runtime:
 + `@aws-appsync/eslint-plugin` - Catches and fixes problems quickly during development.

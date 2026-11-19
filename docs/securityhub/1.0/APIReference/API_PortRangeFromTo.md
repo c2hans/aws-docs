@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_PortRan
 ---
 
 # PortRangeFromTo
-<a name="API_PortRangeFromTo"></a>
 
 A range of ports.
 

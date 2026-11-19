@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/connect-g
 ---
 
 # Connect AWS Security Agent to GitLab repositories
-<a name="connect-gitlab"></a>
 
 Connect your AWS Security Agent to GitLab Cloud repositories to enable code review, threat modeling, penetration testing, and automated remediation capabilities. Before you begin, review [How integrations work with Agent Spaces](about-integrations.md) to understand how a registration is reused across Agent Spaces and shared across capabilities.
 

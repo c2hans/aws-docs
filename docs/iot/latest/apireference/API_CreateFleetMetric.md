@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateFleetM
 ---
 
 # CreateFleetMetric
-<a name="API_CreateFleetMetric"></a>
 
 Creates a fleet metric.
 

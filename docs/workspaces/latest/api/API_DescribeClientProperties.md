@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeClient
 ---
 
 # DescribeClientProperties
-<a name="API_DescribeClientProperties"></a>
 
 Retrieves a list that describes one or more specified Amazon WorkSpaces clients.
 

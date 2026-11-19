@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitro-sandboxes-
 ---
 
 # Nitro Sandboxes on instances with multiple NUMA nodes
-<a name="nitro-sandboxes-numa"></a>
 
 Some instance types have more than one non-uniform memory access (NUMA) node. Each node has its own vCPUs and memory, and a vCPU reaches the memory of its own node faster than the memory of another node.
 

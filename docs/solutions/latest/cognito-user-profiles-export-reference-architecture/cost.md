@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-e
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this guidance. As of this revision, the cost for running this guidance in the North Virginia Region with the Tokyo Region as backup is approximately **$90.00 per month** for a user pool of 500,000 users (where each user is a member of one group) and a daily export frequency. Prices are subject to change. For full details, see the pricing webpage for each AWS service you will be using in this guidance.
 

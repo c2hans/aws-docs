@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_S
 ---
 
 # StartGateway
-<a name="API_StartGateway"></a>
 
 Starts a gateway that you previously shut down (see [ShutdownGateway](API_ShutdownGateway.md)). After the gateway starts, you can then make other API calls, your applications can read from or write to the gateway's storage volumes and you will be able to take snapshot backups.
 

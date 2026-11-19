@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/analyzing-document-id
 ---
 
 # Analyzing Identity Documentation with Amazon Textract
-<a name="analyzing-document-identity"></a>
 
 To analyze identity documents, you use the AnalyzeID API operation, and pass a document file as input. `AnalyzeID` returns a JSON structure that contains the analyzed text. For more information, see [Analyzing Identity Documents](how-it-works-identity.md).
 

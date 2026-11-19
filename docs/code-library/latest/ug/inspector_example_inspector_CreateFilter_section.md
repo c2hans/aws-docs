@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/inspector_example
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `CreateFilter` with an AWS SDK
-<a name="inspector_example_inspector_CreateFilter_section"></a>
 
 The following code examples show how to use `CreateFilter`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/update-gree
 ---
 
 # Update the AWS IoT Greengrass Core software (OTA)
-<a name="update-greengrass-core-v2"></a>
 
 The AWS IoT Greengrass Core software comprises the [Greengrass nucleus component](greengrass-nucleus-component.md) and other optional components that you can deploy to your devices to perform over-the-air (OTA) updates of the software. This feature is built in to the AWS IoT Greengrass Core software.
 

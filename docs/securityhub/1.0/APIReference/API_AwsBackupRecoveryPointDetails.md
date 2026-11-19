@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsBack
 ---
 
 # AwsBackupRecoveryPointDetails
-<a name="API_AwsBackupRecoveryPointDetails"></a>
 
 Contains detailed information about the recovery points stored in an AWS Backup backup vault. A backup, or recovery point, represents the content of a resource at a specified time.
 

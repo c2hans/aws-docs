@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteDistribution
-<a name="API_DeleteDistribution"></a>
 
 Delete a distribution.
 

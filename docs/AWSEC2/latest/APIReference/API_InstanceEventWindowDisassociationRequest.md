@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceE
 ---
 
 # InstanceEventWindowDisassociationRequest
-<a name="API_InstanceEventWindowDisassociationRequest"></a>
 
 The targets to disassociate from the specified event window.
 

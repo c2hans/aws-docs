@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cpack-prere
 ---
 
 # Prerequisites for Conformance Packs for AWS Config
-<a name="cpack-prerequisites"></a>
 
 Before you deploy your conformance pack, turn on AWS Config recording.
 

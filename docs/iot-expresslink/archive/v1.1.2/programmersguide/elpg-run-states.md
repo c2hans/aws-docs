@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programme
 ---
 
 # 3 Run states
-<a name="elpg-run-states"></a>
 
 An ExpressLink module operates as a state machine that moves through a number of internal states (see [figure 2](#elpg-figure2) for a partial representation).
 

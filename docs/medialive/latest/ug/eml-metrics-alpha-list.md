@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/eml-metrics-alpha-li
 ---
 
 # Alphabetical list of MediaLive metrics
-<a name="eml-metrics-alpha-list"></a>
 
 [Active alerts](eml-metrics-global.md#eml-metrics-active-alerts)
 

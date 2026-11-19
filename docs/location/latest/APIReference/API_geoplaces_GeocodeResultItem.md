@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # GeocodeResultItem
-<a name="API_geoplaces_GeocodeResultItem"></a>
 
 The Geocoded result.
 

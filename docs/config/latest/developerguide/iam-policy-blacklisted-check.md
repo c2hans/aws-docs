@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-
 ---
 
 # iam-policy-blacklisted-check
-<a name="iam-policy-blacklisted-check"></a>
 
 Checks in each AWS Identity and Access Management (IAM) resource, if a policy Amazon Resource Name (ARN) in the input parameter is attached to the IAM resource. The rule is NON\_COMPLIANT if the policy ARN is attached to the IAM resource.
 

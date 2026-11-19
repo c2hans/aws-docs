@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenan
 ---
 
 # Pool-model multi-tenancy
-<a name="pool-model"></a>
 
 Sometimes it isn't necessary or feasible to implement the silo model because of cost or operational overhead:
 + You might not have the resources to maintain an individual cluster per tenant.

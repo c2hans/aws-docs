@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Viewing the tags of an access point for directory buckets
-<a name="access-points-db-tag-view"></a>
 
 You can view or list tags applied to Amazon S3 Access Points for directory buckets. For additional information, see [Using tags with S3 directory buckets](directory-buckets-tagging.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetOutp
 ---
 
 # GetOutpostBillingInformation
-<a name="API_GetOutpostBillingInformation"></a>
 
 Gets current and historical billing information about the specified Outpost.
 

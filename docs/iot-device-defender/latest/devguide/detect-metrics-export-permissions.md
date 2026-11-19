@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/dete
 ---
 
 # Permissions
-<a name="detect-metrics-export-permissions"></a>
 
 This section contains information about how to set up the IAM roles and policies required to manage AWS IoT Device Defender Detect metrics export. For more information, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/).
 

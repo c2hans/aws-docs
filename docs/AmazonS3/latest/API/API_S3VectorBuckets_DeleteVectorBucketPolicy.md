@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # DeleteVectorBucketPolicy
-<a name="API_S3VectorBuckets_DeleteVectorBucketPolicy"></a>
 
 Deletes a vector bucket policy. To specify the bucket, you must use either the vector bucket name or the vector bucket Amazon Resource Name (ARN).
 

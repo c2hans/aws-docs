@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateWorkloadIdentity
-<a name="API_UpdateWorkloadIdentity"></a>
 
 Updates an existing workload identity.
 

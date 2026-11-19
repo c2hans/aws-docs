@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationFilter
-<a name="API_RegistrationFilter"></a>
 
 The filter definition for filtering registrations that meets a specified criteria.
 

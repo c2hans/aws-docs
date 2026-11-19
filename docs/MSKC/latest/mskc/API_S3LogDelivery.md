@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_S3LogDelivery.html
 ---
 
 # S3LogDelivery
-<a name="API_S3LogDelivery"></a>
 
 Details about delivering logs to Amazon S3.
 

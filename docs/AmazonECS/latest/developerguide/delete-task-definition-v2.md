@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-t
 ---
 
 # Deleting an Amazon ECS task definition revision using the console
-<a name="delete-task-definition-v2"></a>
 
 When no longer need a specific task definition revision in Amazon ECS, you can delete the task definition revision.
 

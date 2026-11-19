@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # AWS Marketplace Single Pane of Glass (SPG) Dashboard
-<a name="marketplace-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ListRecommendedActions
-<a name="API_automation_ListRecommendedActions"></a>
 
  Lists the recommended actions based that match specified filters.
 

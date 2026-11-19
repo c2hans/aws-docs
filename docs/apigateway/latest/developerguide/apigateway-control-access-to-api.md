@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Control and manage access to REST APIs in API Gateway
-<a name="apigateway-control-access-to-api"></a>
 
 API Gateway supports multiple mechanisms for controlling and managing access to your API.
 

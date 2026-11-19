@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/creating-sessi
 ---
 
 # Creating a session template
-<a name="creating-session-template"></a>
 
 A session template is required to create sessions within the console. The session template sets the parameters and details of the session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # CollectionGroupErrorDetail
-<a name="API_CollectionGroupErrorDetail"></a>
 
 Error details for a collection group operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Scenario 9: Implementation of Prebid Server on AWS
-<a name="scenario-09-prebid-server"></a>
 
  Prebid Server provides server-side header bidding orchestration that solves the traditional programmatic waterfall challenges of yield leakage, demand opacity, and last-look advantages. It sends parallel bid requests to all demand partners concurrently, giving every bidder equal opportunity to compete and maximizing publisher yield.
 

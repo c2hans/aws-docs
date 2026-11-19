@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate NGINX Ingress Controllers when enabling Amazon EKS Auto Mode
-<a name="migrate-nginx-ingress-controller-eks-auto-mode"></a>
 
 *Olawale Olaleye and Shamanth Devagari, Amazon Web Services*
 

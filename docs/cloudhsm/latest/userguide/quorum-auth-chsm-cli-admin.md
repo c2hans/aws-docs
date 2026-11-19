@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/quorum-auth-ch
 ---
 
 # User management with quorum authentication enabled for AWS CloudHSM using CloudHSM CLI
-<a name="quorum-auth-chsm-cli-admin"></a>
 
 An AWS CloudHSM [admin](understanding-users.md#admin) on the hardware security module (HSM) can configure quorum authentication for the following operations in the AWS CloudHSM cluster:
 + **[Create an AWS CloudHSM user with CloudHSM CLI](cloudhsm_cli-user-create.md)**

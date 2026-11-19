@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 5.3 Gap and resistance management
-<a name="resistance"></a>
 
 ## Overview
 <a name="resistance-overview"></a>

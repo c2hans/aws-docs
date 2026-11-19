@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ModelInvocationInput
-<a name="API_agent-runtime_ModelInvocationInput"></a>
 
 The input for the pre-processing step.
 + The `type` matches the agent step.

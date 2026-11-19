@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFrontDistributionOriginS3OriginConfig
-<a name="API_AwsCloudFrontDistributionOriginS3OriginConfig"></a>
 
 Information about an origin that is an Amazon S3 bucket that is not configured with static website hosting.
 

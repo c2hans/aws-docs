@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # NodeGroupMember
-<a name="API_NodeGroupMember"></a>
 
 Represents a single node within a node group (shard).
 

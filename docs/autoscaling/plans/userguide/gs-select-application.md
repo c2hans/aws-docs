@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/gs-select-ap
 ---
 
 # Step 1: Find your scalable resources
-<a name="gs-select-application"></a>
 
 This section includes a hands-on introduction to creating scaling plans in the AWS Auto Scaling console. If this is your first scaling plan, we recommend that you start by creating a sample scaling plan using an Amazon EC2 Auto Scaling group.
 

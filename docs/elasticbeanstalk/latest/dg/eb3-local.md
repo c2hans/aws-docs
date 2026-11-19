@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-local.htm
 ---
 
 # **eb local**
-<a name="eb3-local"></a>
 
 ## Description
 <a name="eb3-localdescription"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Remo
 ---
 
 # RemoveTargetsResultEntry
-<a name="API_RemoveTargetsResultEntry"></a>
 
 Represents a target that failed to be removed from a rule.
 

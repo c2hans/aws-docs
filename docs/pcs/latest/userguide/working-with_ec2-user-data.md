@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ec2-us
 ---
 
 # Working with Amazon EC2 user data for AWS PCS
-<a name="working-with_ec2-user-data"></a>
 
 **Note**
 For most node configuration tasks, we recommend node lifecycle actions. They provide reusable, API-native configuration with per-script error handling and reboot control. Use launch template user data for tasks that must run before the AWS PCS agent starts. For more information, see [Node lifecycle actions](cng-node-lifecycle-actions.md).

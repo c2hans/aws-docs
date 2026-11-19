@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialDataSourceItem
-<a name="API_GeospatialDataSourceItem"></a>
 
 The data source properties for the geospatial data.
 

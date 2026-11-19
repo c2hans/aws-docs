@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_LaunchIntoIn
 ---
 
 # LaunchIntoInstanceProperties
-<a name="API_LaunchIntoInstanceProperties"></a>
 
 Launch into existing instance.
 

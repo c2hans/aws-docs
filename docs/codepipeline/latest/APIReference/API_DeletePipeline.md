@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Del
 ---
 
 # DeletePipeline
-<a name="API_DeletePipeline"></a>
 
 Deletes the specified pipeline.
 

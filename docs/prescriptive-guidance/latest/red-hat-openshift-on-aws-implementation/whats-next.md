@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-ope
 ---
 
 # Next steps and resources
-<a name="whats-next"></a>
 
 1. Determine your installation process based on your requirements and the information in this guide.
 

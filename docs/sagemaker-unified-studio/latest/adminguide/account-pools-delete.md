@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Delete an account pool
-<a name="account-pools-delete"></a>
 
 To use the AWS CLI to delete an account pool, use the `delete-account-pool` command.
 

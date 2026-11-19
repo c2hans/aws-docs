@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/transfer-to-fl
 ---
 
 # Flow block in Connect Customer: Transfer to flow
-<a name="transfer-to-flow"></a>
 
 This topic defines the flow block for ending the current flow and transferring the customer to a different flow.
 

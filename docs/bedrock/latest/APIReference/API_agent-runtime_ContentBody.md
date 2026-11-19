@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ContentBody
-<a name="API_agent-runtime_ContentBody"></a>
 
 Contains the body of the API response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/se
 ---
 
 # Amazon GameLift Servers SDK API limits
-<a name="servers-api-limits-table"></a>
 
 The following table lists the default rate limits for Amazon GameLift Servers SDK API operations. These limits optimize performance and prevent resource contention in game server environments. Understanding these limits is important for efficient server-side integration with Amazon GameLift Servers.
 

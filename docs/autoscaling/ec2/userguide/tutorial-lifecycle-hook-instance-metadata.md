@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/tutorial-lifec
 ---
 
 # Tutorial: Use data script and instance metadata to retrieve lifecycle state
-<a name="tutorial-lifecycle-hook-instance-metadata"></a>
 
 A common way to create custom actions for lifecycle hooks is to use notifications that Amazon EC2 Auto Scaling sends to other services, such as Amazon EventBridge. However, you can avoid having to create additional infrastructure by instead using a user data script to move the code that configures instances and completes the lifecycle action into the instances themselves.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/operational
 ---
 
 # Operational Best Practices for Publicly Accessible Resources
-<a name="operational-best-practices-for-Publicly-Accessible-Resources"></a>
 
  This conformance pack helps identify resources that may be publicly accessible.
 

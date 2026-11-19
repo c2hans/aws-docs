@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DNSSECSt
 ---
 
 # DNSSECStatus
-<a name="API_DNSSECStatus"></a>
 
 A string representing the status of DNSSEC signing.
 

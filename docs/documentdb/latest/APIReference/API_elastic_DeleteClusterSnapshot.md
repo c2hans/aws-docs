@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # DeleteClusterSnapshot
-<a name="API_elastic_DeleteClusterSnapshot"></a>
 
 Delete an elastic cluster snapshot.
 

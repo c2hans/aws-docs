@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 ---
 
 # CreateOAuth2Token
-<a name="API_dataplane-signin_CreateOAuth2Token"></a>
 
 Exchanges an authorization code or refresh token for an OAuth 2.0 access token and refresh token.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/audio-only.html
 ---
 
 # Creating audio-only outputs
-<a name="audio-only"></a>
 
 You can set up a MediaLive channel with an output group that contains only audio. You can create a channel with these combinations of output groups:
 + One audio-only output group.

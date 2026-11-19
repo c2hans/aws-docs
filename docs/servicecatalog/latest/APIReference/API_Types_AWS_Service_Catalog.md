@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_T
 ---
 
 # AWS Service Catalog
-<a name="API_Types_AWS_Service_Catalog"></a>
 
 The following data types are supported by AWS Service Catalog:
 +  [AccessLevelFilter](API_AccessLevelFilter.md)

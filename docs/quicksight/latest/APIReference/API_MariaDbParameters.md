@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Maria
 ---
 
 # MariaDbParameters
-<a name="API_MariaDbParameters"></a>
 
 The parameters for MariaDB.
 

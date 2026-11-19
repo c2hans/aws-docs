@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AccessDetails
-<a name="API_benefits_AccessDetails"></a>
 
 Contains information about access-based benefit fulfillment, such as service permissions or feature access.
 

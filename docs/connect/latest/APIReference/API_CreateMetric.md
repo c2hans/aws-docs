@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateMe
 ---
 
 # CreateMetric
-<a name="API_CreateMetric"></a>
 
 Creates a new metric definition for the specified Connect Customer instance. You can create custom metrics that use formulas referencing existing AWS-managed metrics, optionally with filters applied.
 

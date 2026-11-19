@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/getthingrunti
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # GetThingRuntimeConfiguration
-<a name="getthingruntimeconfiguration-get"></a>
 
 Retrieves the runtime configuration of a Greengrass core. Before you can retrieve the runtime configuration, you must use [UpdateThingRuntimeConfiguration](updatethingruntimeconfiguration-put.md) to create a runtime configuration for the core.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Installing AWS Schema Conversion Tool
-<a name="CHAP_Installing.Procedure"></a>
 
 You can install AWS SCT on the following operating systems:
 + Microsoft Windows 10

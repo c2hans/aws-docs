@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Attribute
 ---
 
 # AttributeSuggestionsUpdateConfig
-<a name="API_AttributeSuggestionsUpdateConfig"></a>
 
 Updates the configuration information for the document fields/attributes that you want to base query suggestions on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # RemoveTrustStoreRevocations
-<a name="API_RemoveTrustStoreRevocations"></a>
 
 Removes the specified revocation file from the specified trust store.
 

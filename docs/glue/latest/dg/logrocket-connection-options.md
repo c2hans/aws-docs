@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/logrocket-connection-opti
 ---
 
 # LogRocket connection options
-<a name="logrocket-connection-options"></a>
 
 The following are connection options for LogRocket:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the LogRocket object to read.

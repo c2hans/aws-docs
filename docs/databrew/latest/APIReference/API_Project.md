@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Project
 ---
 
 # Project
-<a name="API_Project"></a>
 
 Represents all of the attributes of a DataBrew project.
 

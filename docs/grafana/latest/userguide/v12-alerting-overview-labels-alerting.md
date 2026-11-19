@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-alerting-ov
 ---
 
 # Labels in Grafana Alerting
-<a name="v12-alerting-overview-labels-alerting"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 12.x**.

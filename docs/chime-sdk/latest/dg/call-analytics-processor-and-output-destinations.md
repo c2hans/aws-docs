@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/call-analytics-proce
 ---
 
 # Call analytics processor and output destinations for the Amazon Chime SDK
-<a name="call-analytics-processor-and-output-destinations"></a>
 
  You can only specify unique elements once per media insights pipeline configuration. All processors and sinks must reside in the same AWS account, and you must create them in the same AWS Region as the endpoint that you call. For example, if you use the `us-east-1` endpoint for Amazon Chime SDK Media Pipelines, you can't pass a Kinesis Data Stream from the `us-west-2` region.
 

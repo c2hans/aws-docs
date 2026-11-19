@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-connection-opti
 ---
 
 # SAP OData connection options
-<a name="sap-odata-connection-options"></a>
 
 The following are connection options for SAP OData:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in SAP OData.

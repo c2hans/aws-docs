@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_Event.html
 ---
 
 # Event
-<a name="API_Event"></a>
 
 An event that occurred during the execution of a durable function.
 

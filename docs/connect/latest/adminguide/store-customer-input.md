@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/store-customer
 ---
 
 # Flow block in Connect Customer: Store customer input
-<a name="store-customer-input"></a>
 
 This topic defines the flow block to store input as a contact attribute and then encrypting it.
 

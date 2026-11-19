@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-secrets-m
 ---
 
 # Password management with Amazon RDS and AWS Secrets Manager
-<a name="rds-secrets-manager"></a>
 
 Amazon RDS integrates with Secrets Manager to manage master user passwords for your DB instances and Multi-AZ DB clusters.
 

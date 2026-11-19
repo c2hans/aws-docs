@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-pcs.ht
 ---
 
 # AWS Parallel Computing Service events
-<a name="events-ref-pcs"></a>
 
 AWS PCS sends service events to EventBridge via AWS CloudTrail.
 

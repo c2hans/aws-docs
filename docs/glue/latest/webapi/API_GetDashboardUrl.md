@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDashboardUrl.h
 ---
 
 # GetDashboardUrl
-<a name="API_GetDashboardUrl"></a>
 
 Retrieves the URL for the Spark monitoring dashboard for a Glue resource.
 

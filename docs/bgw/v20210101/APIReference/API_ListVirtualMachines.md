@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_ListVirtu
 ---
 
 # ListVirtualMachines
-<a name="API_ListVirtualMachines"></a>
 
 Lists your virtual machines.
 

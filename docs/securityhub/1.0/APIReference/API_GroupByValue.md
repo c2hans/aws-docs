@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GroupBy
 ---
 
 # GroupByValue
-<a name="API_GroupByValue"></a>
 
 Represents individual aggregated results when grouping security findings for each `GroupByField`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OtaTaskSc
 ---
 
 # OtaTaskSchedulingConfig
-<a name="API_OtaTaskSchedulingConfig"></a>
 
 Over-the-air (OTA) task scheduling config.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Eve
 ---
 
 # EventPayload
-<a name="API_EventPayload"></a>
 
 Information about the payload of an event recording Amazon CodeCatalyst activity.
 

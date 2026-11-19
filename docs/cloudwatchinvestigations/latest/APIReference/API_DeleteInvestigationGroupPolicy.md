@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # DeleteInvestigationGroupPolicy
-<a name="API_DeleteInvestigationGroupPolicy"></a>
 
 Removes the IAM resource policy from being associated with the investigation group that you specify.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/js-sdk-intro.html
 ---
 
 # Using the Amazon Chime SDK client library for JavaScript
-<a name="js-sdk-intro"></a>
 
 This guide provides a conceptual overview of the Amazon Chime SDK client library for JavaScript, and example code for critical server and client components.
 

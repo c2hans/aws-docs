@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # StartProfileUpdateTask
-<a name="API_account_StartProfileUpdateTask"></a>
 
 Initiates a profile update task to modify partner profile information asynchronously.
 

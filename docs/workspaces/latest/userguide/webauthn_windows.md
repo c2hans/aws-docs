@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/webauthn_win
 ---
 
 # Configure WebAuthn on Windows WorkSpaces
-<a name="webauthn_windows"></a>
 
 Windows WorkSpaces support two WebAuthn modes: Enhanced and Standard.
 

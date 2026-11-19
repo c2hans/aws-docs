@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetT
 ---
 
 # GetTrigger
-<a name="API_GetTrigger"></a>
 
 Gets a Trigger from the specified agent space
 

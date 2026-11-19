@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Statistical Variance and Deviation Functions
-<a name="sql-reference-statistical-variance-deviation-functions"></a>
 
 Each of these functions takes a set of numbers, ignores nulls, and can be used as either an aggregate function or an analytical function. For more information, see [Aggregate Functions](sql-reference-aggregate-functions.md) and [Analytic Functions](sql-reference-analytic-functions.md).
 

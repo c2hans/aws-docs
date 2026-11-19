@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/versions-provided.h
 ---
 
 # Supported VCF versions and instance types
-<a name="versions-provided"></a>
 
 Amazon Elastic VMware Service supports the following VMware Cloud Foundation (VCF) versions and ESX builds on each Amazon EC2 instance type, for both deployment modes. Each row is an instance type. The VCF 5.2.x column covers EVS-deployed mode, which installs only VCF 5.2.x. The VCF 9.0 and VCF 9.1 columns cover the VCF 9.x versions that you deploy in Self-deployed mode, which is the only mode that supports VCF 9.x. You can also deploy VCF 5.x in Self-deployed mode. The last column lists the ESX builds, including the ESXi 8.0 builds for VCF 5.x.
 

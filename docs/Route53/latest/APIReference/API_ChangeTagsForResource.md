@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeTa
 ---
 
 # ChangeTagsForResource
-<a name="API_ChangeTagsForResource"></a>
 
 Adds, edits, or deletes tags for a health check or a hosted zone.
 

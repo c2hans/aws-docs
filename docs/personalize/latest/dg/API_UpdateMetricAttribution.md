@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_UpdateMetricAt
 ---
 
 # UpdateMetricAttribution
-<a name="API_UpdateMetricAttribution"></a>
 
 Updates a metric attribution.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Wisdom::AIPrompt
-<a name="aws-resource-wisdom-aiprompt"></a>
 
 Creates an Amazon Q in Connect AI Prompt.
 
@@ -24,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ApiFormat](#cfn-wisdom-aiprompt-apiformat)" : {{String}},
       "[AssistantId](#cfn-wisdom-aiprompt-assistantid)" : {{String}},
       "[Description](#cfn-wisdom-aiprompt-description)" : {{String}},
+      "[InferenceConfiguration](#cfn-wisdom-aiprompt-inferenceconfiguration)" : {{AIPromptInferenceConfiguration}},
       "[ModelId](#cfn-wisdom-aiprompt-modelid)" : {{String}},
       "[Name](#cfn-wisdom-aiprompt-name)" : {{String}},
       "[Tags](#cfn-wisdom-aiprompt-tags)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -43,6 +43,8 @@ Properties:
   [ApiFormat](#cfn-wisdom-aiprompt-apiformat): {{String}}
   [AssistantId](#cfn-wisdom-aiprompt-assistantid): {{String}}
   [Description](#cfn-wisdom-aiprompt-description): {{String}}
+  [InferenceConfiguration](#cfn-wisdom-aiprompt-inferenceconfiguration): {{
+    AIPromptInferenceConfiguration}}
   [ModelId](#cfn-wisdom-aiprompt-modelid): {{String}}
   [Name](#cfn-wisdom-aiprompt-name): {{String}}
   [Tags](#cfn-wisdom-aiprompt-tags): {{
@@ -77,6 +79,12 @@ The description of the AI Prompt.
 *Pattern*: `^[a-zA-Z0-9\s_.,-]+`
 *Minimum*: `1`
 *Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`InferenceConfiguration`  <a name="cfn-wisdom-aiprompt-inferenceconfiguration"></a>
+The configuration for inference parameters when using the AI Prompt.
+*Required*: No
+*Type*: [AIPromptInferenceConfiguration](aws-properties-wisdom-aiprompt-aipromptinferenceconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ModelId`  <a name="cfn-wisdom-aiprompt-modelid"></a>

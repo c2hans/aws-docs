@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/grab.ht
 ---
 
 # GrabMaps
-<a name="grab"></a>
 
 Grab is the largest delivery organization in Southeast Asia, with millions of driver partners and customers. Their subsidiary, [GrabMaps](https://www.grab.com/sg/business/maps/), creates up-to-date mapping data in those countries/regions for their own use, and others. Amazon Location Service uses GrabMaps' location services to help AWS customers use maps, geocode, and calculate routes effectively. GrabMaps' location services are built to provide high-quality, authoritative, and ready-to-use location data, specifically for southeast Asian countries.
 

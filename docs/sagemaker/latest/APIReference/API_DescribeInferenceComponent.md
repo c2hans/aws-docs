@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeInferenceComponent
-<a name="API_DescribeInferenceComponent"></a>
 
 Returns information about an inference component.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BridgeFlowOu
 ---
 
 # BridgeFlowOutput
-<a name="API_BridgeFlowOutput"></a>
 
  The output of the bridge. A flow output is delivered to the AWS cloud.
 

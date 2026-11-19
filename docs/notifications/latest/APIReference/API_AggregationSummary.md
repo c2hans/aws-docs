@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ag
 ---
 
 # AggregationSummary
-<a name="API_AggregationSummary"></a>
 
 Provides additional information about the aggregation key.
 

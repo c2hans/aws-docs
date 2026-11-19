@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DescribeTransaction
-<a name="API_DescribeTransaction"></a>
 
 Returns the details of a single transaction.
 

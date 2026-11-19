@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Cross-account data access to OpenSearch domains
-<a name="application-cross-account-data-access-domains"></a>
 
 You can configure your OpenSearch UI applications in one account to access OpenSearch domains in different accounts. When you create an OpenSearch UI application with cross-account data sources, you provide an `iamRoleForDataSourceArn` that points to an IAM role in the target account. OpenSearch UI validates the request by assuming this role and calling `es:DescribeDomain` to verify domain accessibility. The cross-account role is used only during data source association. Data plane access is controlled separately by the target domain's access policy.
 

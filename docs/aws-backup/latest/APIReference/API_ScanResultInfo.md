@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ScanR
 ---
 
 # ScanResultInfo
-<a name="API_ScanResultInfo"></a>
 
 Contains information about the results of a scan job.
 

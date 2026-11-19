@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloudMapRegisterInstanceAccess
-<a name="AWSCloudMapRegisterInstanceAccess"></a>
 
 **Description**: Provides registrant level access to AWS Cloud Map actions.
 

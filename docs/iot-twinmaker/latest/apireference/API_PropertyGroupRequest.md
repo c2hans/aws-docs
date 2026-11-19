@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pr
 ---
 
 # PropertyGroupRequest
-<a name="API_PropertyGroupRequest"></a>
 
 ## Contents
 <a name="API_PropertyGroupRequest_Contents"></a>

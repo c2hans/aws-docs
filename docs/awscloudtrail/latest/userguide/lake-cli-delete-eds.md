@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-cli-
 ---
 
 # Delete an event data store with the AWS CLI
-<a name="lake-cli-delete-eds"></a>
 
 This section demonstrates how to delete an event data store by running the AWS CLI `delete-event-data-store` command
 

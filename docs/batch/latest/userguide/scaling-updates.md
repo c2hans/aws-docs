@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/scaling-updates.h
 ---
 
 # Perform scaling updates
-<a name="scaling-updates"></a>
 
 Scaling updates adjust the capacity of your compute environment by adding or removing instances. This is the fastest update strategy and doesn't require replacing existing instances. Scaling updates work with any service role type and allocation strategy, making them the most flexible update option.
 

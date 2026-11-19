@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Wor
 ---
 
 # WorkspaceStatus
-<a name="API_WorkspaceStatus"></a>
 
 Contains information about the current status of a workspace.
 

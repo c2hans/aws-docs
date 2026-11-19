@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-reservese
 ---
 
 # ReserveSessions
-<a name="rest-op-reservesessions"></a>
 
 Reserves one or more sessions for you. Send the session IDs in the request body. One request carries 1 to 10 session IDs. They must be distinct. You must sign in.
 

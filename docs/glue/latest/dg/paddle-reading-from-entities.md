@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/paddle-reading-from-entit
 ---
 
 # Reading from Paddle entities
-<a name="paddle-reading-from-entities"></a>
 
 **Prerequisites**
 

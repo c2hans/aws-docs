@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/detecting-cer.html
 ---
 
 # Running analysis jobs for custom entity recognition
-<a name="detecting-cer"></a>
 
 You can run an asynchronous analysis job to detect custom entities in a set of one or more documents.
 

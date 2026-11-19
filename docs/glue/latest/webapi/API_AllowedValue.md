@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AllowedValue.html
 ---
 
 # AllowedValue
-<a name="API_AllowedValue"></a>
 
 An object representing a value allowed for a property.
 

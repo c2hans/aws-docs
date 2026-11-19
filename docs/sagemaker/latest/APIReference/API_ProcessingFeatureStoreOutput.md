@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proces
 ---
 
 # ProcessingFeatureStoreOutput
-<a name="API_ProcessingFeatureStoreOutput"></a>
 
 Configuration for processing job outputs in Amazon SageMaker Feature Store.
 

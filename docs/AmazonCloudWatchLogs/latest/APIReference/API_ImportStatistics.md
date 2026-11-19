@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ImportStatistics
-<a name="API_ImportStatistics"></a>
 
 Statistics about the import progress
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListB
 ---
 
 # ListBackupPlanTemplates
-<a name="API_ListBackupPlanTemplates"></a>
 
 Lists the backup plan templates.
 

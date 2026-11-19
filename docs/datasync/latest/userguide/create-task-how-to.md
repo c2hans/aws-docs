@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/create-task-ho
 ---
 
 # Creating a task for transferring your data
-<a name="create-task-how-to"></a>
 
 A *task* describes where and how AWS DataSync transfers data. A task consists of the following:
 + [**Source location**](working-with-locations.md) – The storage system or service where DataSync transfers data from.

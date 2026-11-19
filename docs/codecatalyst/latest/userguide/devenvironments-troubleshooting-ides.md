@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenviron
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Troubleshooting problems with IDEs
-<a name="devenvironments-troubleshooting-ides"></a>
 
 Consult the following sections to troubleshoot problems related to IDEs in CodeCatalyst. For more information on IDEs, see [Creating a Dev Environment in an IDE](devenvironment-create.md#devenvironment-using-ide).
 

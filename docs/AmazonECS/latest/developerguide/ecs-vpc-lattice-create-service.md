@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-vpc-
 ---
 
 # Create a service that uses VPC Lattice
-<a name="ecs-vpc-lattice-create-service"></a>
 
 You can use either the AWS Management Console or the AWS CLI to create a service with VPC Lattice.
 

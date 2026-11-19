@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # UnprocessedUpdateAction
-<a name="API_UnprocessedUpdateAction"></a>
 
 Update action that has failed to be processed for the corresponding apply/stop request
 

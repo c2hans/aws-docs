@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-
 ---
 
 # Actors in Amazon SWF
-<a name="swf-dev-actors"></a>
 
 **Topics**
 + [What is an Actor in Amazon SWF?](#what-is-an-actor-swf)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/edit
 ---
 
 # Edit attributes for your Network Load Balancer
-<a name="edit-load-balancer-attributes"></a>
 
 After you create a Network Load Balancer, you can edit its attributes.
 

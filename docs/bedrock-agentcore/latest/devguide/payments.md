@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Amazon Bedrock AgentCore payments: Enable secure microtransaction payments for AI agents
-<a name="payments"></a>
 
 ## What is AWS Amazon Bedrock AgentCore payments?
 <a name="payments-what-is"></a>

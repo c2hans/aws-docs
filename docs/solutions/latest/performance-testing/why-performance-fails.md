@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/why
 ---
 
 # Why Performance Fails in Production
-<a name="why-performance-fails"></a>
 
 Every engineering team has experienced it. The application sailed through functional testing, passed code review, deployed cleanly, and then buckled under real user traffic. Response times crept from 200ms to 2 seconds. Databases hit connection pool limits. Auto Scaling kicked in too late. Customers left.
 

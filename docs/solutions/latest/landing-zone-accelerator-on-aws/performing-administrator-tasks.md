@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Performing administrator tasks
-<a name="performing-administrator-tasks"></a>
 
 This solution allows you to automate operational tasks associated with managing a multi-account environment. This section includes common instructions and examples for managing your organizational units, accounts, core networking, and security guardrails.
 

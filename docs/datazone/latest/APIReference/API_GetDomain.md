@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetDoma
 ---
 
 # GetDomain
-<a name="API_GetDomain"></a>
 
 Gets an Amazon DataZone domain.
 

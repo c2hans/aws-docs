@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/cv-onboard-ek
 ---
 
 # Connecting an Amazon EKS cluster to AWS Continuum
-<a name="cv-onboard-eks-cluster"></a>
 
 For read-only Kubernetes inventory collection, connect your Amazon EKS cluster to AWS Continuum. The onboarding takes about 10 minutes for each cluster. This task requires Amazon EKS administrator permissions and `kubectl` cluster-admin access. If you don't have these permissions, ask your administrator to perform these steps or grant you the required access.
 

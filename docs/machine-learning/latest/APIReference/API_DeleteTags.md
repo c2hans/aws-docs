@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DeleteTags
-<a name="API_DeleteTags"></a>
 
 Deletes the specified tags associated with an ML object. After this operation is complete, you can't recover deleted tags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetExecution
-<a name="API_DataExports_GetExecution"></a>
 
 Exports data based on the source data update.
 

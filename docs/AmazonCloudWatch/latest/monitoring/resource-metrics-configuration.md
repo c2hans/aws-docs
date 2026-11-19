@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/resou
 ---
 
 # CloudWatch detailed monitoring for OpenTelemetry metrics
-<a name="resource-metrics-configuration"></a>
 
 Detailed monitoring gives you higher-resolution OpenTelemetry metrics for supported resources, which helps you diagnose performance issues faster. You can enable detailed monitoring for individual AWS resources through one centralized Amazon CloudWatch API, without building custom per-service infrastructure.
 

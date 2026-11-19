@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteBucketAccessKey
-<a name="API_DeleteBucketAccessKey"></a>
 
 Deletes an access key for the specified Amazon Lightsail bucket.
 

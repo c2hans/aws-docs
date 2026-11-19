@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ByoipC
 ---
 
 # ByoipCidrEvent
-<a name="API_ByoipCidrEvent"></a>
 
 A complex type that contains a `Message` and a `Timestamp` value for changes that you make in the status of an IP address range that you bring to Global Accelerator through bring your own IP address (BYOIP).
 

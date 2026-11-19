@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/subscribe
 ---
 
 # Subscribing to AWS Data Exchange for AWS Lake Formation (Test Product) on AWS Data Exchange (Preview)
-<a name="subscribe-to-LF-test-product"></a>
 
 The following procedure shows how to browse the AWS Data Exchange catalog to find and subscribe to AWS Data Exchange for Lake Formation (Test Product). (Preview)
 

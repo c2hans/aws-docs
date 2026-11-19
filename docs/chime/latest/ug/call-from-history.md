@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/call-from-history.html
 ---
 
 # Using your call history to call others
-<a name="call-from-history"></a>
 
 **To start a call from your history**
 

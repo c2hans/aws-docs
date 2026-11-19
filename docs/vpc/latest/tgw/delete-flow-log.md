@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/delete-flow-log.html
 ---
 
 # Delete an AWS Transit Gateway Flow Logs record
-<a name="delete-flow-log"></a>
 
 You can delete a transit gateway flow log using the Amazon VPC console.
 

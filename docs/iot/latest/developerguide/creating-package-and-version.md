@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/creating-packa
 ---
 
 # Creating a software package and package version
-<a name="creating-package-and-version"></a>
 
 You can use the following steps to create a package and an initial version thing through the AWS Management Console.
 

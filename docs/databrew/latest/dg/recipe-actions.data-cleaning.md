@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.data-c
 ---
 
 # Data cleaning recipe steps
-<a name="recipe-actions.data-cleaning"></a>
 
 Use these data cleaning recipe steps to perform simple transformations on existing data.
 

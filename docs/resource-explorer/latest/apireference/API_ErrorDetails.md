@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 Contains information about an error that occurred during a Resource Explorer setup operation.
 

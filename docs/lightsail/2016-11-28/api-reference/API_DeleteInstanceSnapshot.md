@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteInstanceSnapshot
-<a name="API_DeleteInstanceSnapshot"></a>
 
 Deletes a specific snapshot of a virtual private server (or *instance*).
 

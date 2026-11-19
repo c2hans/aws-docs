@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_For
 ---
 
 # ForceEndpointErrorConfiguration
-<a name="API_ForceEndpointErrorConfiguration"></a>
 
 The failover settings for the endpoint.
 

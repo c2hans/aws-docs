@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoDiscover
 ---
 
 # Using the ElastiCache Cluster Client for .NET
-<a name="AutoDiscovery.Using.ModifyApp.DotNET"></a>
 
 **Note**
 The ElastiCache .NET cluster client has been deprecated as of May, 2022.

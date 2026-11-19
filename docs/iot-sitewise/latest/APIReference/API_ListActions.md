@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListActions
-<a name="API_ListActions"></a>
 
 Retrieves a paginated list of actions for a specific target resource.
 

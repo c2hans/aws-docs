@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/customer_managed_po
 ---
 
 # Console Full Access Policy - AWSElasticDisasterRecoveryConsoleFullAccess
-<a name="customer_managed_policies_drs_full_access"></a>
 
 This policy provides full access to all public APIs of AWS Elastic Disaster Recovery (AWS DRS), as well as permissions to read KMS key, License Manager, Resource Groups, Elastic Load Balancing, IAM, and Amazon EC2 information. Attach this policy to your users or roles.
 

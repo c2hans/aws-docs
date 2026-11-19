@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SMSV
 ---
 
 # SMSVoiceServiceRolePolicy
-<a name="SMSVoiceServiceRolePolicy"></a>
 
 **Description**: Allows SMSVoice to publish metrics to CloudWatch on your behalf
 

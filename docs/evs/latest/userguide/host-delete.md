@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/host-delete.html
 ---
 
 # Delete a host (VCF 9.x)
-<a name="host-delete"></a>
 
 You can delete a host from a Self-deployed environment when you no longer need it. You remove the host from its cluster with VMware Cloud Foundation (VCF) 9.x tools first, and then delete it with the Amazon Elastic VMware Service console or the AWS CLI. Before you delete a host, make sure that the cluster keeps enough hosts for your VCF topology.
 

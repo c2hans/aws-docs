@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchStopJobRunSu
 ---
 
 # BatchStopJobRunSuccessfulSubmission
-<a name="API_BatchStopJobRunSuccessfulSubmission"></a>
 
 Records a successful request to stop a specified `JobRun`.
 

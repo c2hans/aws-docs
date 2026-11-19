@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageGroupDescription
-<a name="API_PackageGroupDescription"></a>
 
  The description of the package group.
 

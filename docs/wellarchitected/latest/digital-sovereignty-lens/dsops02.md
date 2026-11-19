@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Compliance baselining and automation
-<a name="dsops02"></a>
 
  Compliance requirements accumulate from multiple sources: cybersecurity directives, privacy legislation, industry regulations, and internal policies. Even within a single jurisdiction these requirements can overlap or diverge, and the overlap grows as jurisdictions are added. Without a structured compliance catalog, teams can't determine which controls apply to their workloads or verify that those controls are implemented correctly.
 

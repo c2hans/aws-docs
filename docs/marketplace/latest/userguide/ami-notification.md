@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ami-notific
 ---
 
 # Receiving Amazon SNS notifications for AMI products on AWS Marketplace
-<a name="ami-notification"></a>
 
 **Amazon SNS notifications aren't available to new sellers**
 If you registered your seller account after July 15, 2026, use Amazon EventBridge to receive events. If you registered on or before that date, you can continue to use Amazon SNS. For more information, see [Managing AMI agreement events with Amazon EventBridge](ami-eventbridge-integration.md).

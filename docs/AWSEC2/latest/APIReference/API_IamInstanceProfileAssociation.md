@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IamInstan
 ---
 
 # IamInstanceProfileAssociation
-<a name="API_IamInstanceProfileAssociation"></a>
 
 Describes an association between an IAM instance profile and an instance.
 

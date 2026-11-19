@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RoutingClassifierModelInvocationOutput
-<a name="API_agent-runtime_RoutingClassifierModelInvocationOutput"></a>
 
 Invocation output from a routing classifier model.
 

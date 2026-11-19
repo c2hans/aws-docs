@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Overview of LLM-augmented cognition
-<a name="overview-of-llm-augmented-cognition"></a>
 
 At its core, the cognitive module of a software agent can be viewed as an LLM wrapped in augmentations. The agent can use the following building blocks to reason effectively within its environment:
 + **Prompting** – Framing input using context, instructions, examples, and memory

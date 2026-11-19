@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dir
 ---
 
 # DirectoryVpcSettingsDescription
-<a name="API_DirectoryVpcSettingsDescription"></a>
 
 Contains information about the directory.
 

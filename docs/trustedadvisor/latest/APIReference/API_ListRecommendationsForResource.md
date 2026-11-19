@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_L
 ---
 
 # ListRecommendationsForResource
-<a name="API_ListRecommendationsForResource"></a>
 
 List all Trusted Advisor recommendations for a given AWS resource ARN.
 

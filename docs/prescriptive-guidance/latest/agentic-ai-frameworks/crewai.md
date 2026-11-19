@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # CrewAI
-<a name="crewai"></a>
 
 CrewAI is an open-source framework focused specifically on autonomous multi-agent orchestration, available on [GitHub](https://github.com/crewAIInc/crewAI). It provides a structured approach to creating teams of specialized autonomous agents that collaborate to solve complex tasks without human intervention. CrewAI emphasizes role-based coordination and task delegation.
 

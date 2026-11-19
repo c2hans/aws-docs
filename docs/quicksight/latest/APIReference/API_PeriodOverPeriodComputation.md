@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Perio
 ---
 
 # PeriodOverPeriodComputation
-<a name="API_PeriodOverPeriodComputation"></a>
 
 The period over period computation configuration.
 

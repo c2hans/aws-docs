@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GlueCon
 ---
 
 # GlueConnectionPatch
-<a name="API_GlueConnectionPatch"></a>
 
 The AWS Glue connection patch.
 

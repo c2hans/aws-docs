@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ErrorInfo.ht
 ---
 
 # ErrorInfo
-<a name="API_ErrorInfo"></a>
 
 An error that occurred during resource creation.
 

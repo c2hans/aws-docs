@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateCo
 ---
 
 # CreateContactFlowModuleAlias
-<a name="API_CreateContactFlowModuleAlias"></a>
 
 Creates a named alias that points to a specific version of a contact flow module.
 

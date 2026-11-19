@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Connect Cases
-<a name="API_Types_Amazon_Connect_Cases"></a>
 
 The following data types are supported by Amazon Connect Cases:
 +  [AuditEvent](API_connect-cases_AuditEvent.md)

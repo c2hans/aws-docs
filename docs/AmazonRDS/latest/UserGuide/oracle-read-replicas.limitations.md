@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-read-r
 ---
 
 # Requirements and considerations for RDS for Oracle replicas
-<a name="oracle-read-replicas.limitations"></a>
 
 Before creating an Oracle replica, familiarize yourself with the following requirements and considerations.
 

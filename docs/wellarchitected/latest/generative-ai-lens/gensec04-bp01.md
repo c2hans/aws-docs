@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENSEC04-BP01 Implement a secure prompt catalog
-<a name="gensec04-bp01"></a>
 
  Prompt catalogs facilitate the engineering, testing, versioning and storage of prompts. Implementing a prompt catalog improves the security of system and user prompts.
 

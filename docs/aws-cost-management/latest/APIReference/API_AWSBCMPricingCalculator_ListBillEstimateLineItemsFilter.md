@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListBillEstimateLineItemsFilter
-<a name="API_AWSBCMPricingCalculator_ListBillEstimateLineItemsFilter"></a>
 
  Represents a filter for listing bill estimate line items.
 

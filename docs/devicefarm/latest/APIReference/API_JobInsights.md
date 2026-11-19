@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_JobIn
 ---
 
 # JobInsights
-<a name="API_JobInsights"></a>
 
 Contains insights for a job, including report status, and test-level aggregated metrics such as per test execution time and median test execution time.
 

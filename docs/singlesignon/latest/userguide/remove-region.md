@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/remove-reg
 ---
 
 # Remove a Region from IAM Identity Center
-<a name="remove-region"></a>
 
  To remove an additional Region from your IAM Identity Center instance, follow these steps:
 

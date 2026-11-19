@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/delete-file-system
 ---
 
 # Deleting file systems
-<a name="delete-file-system"></a>
 
 You can delete an FSx for ONTAP file system using the Amazon FSx console, the AWS CLI, and the Amazon FSx API and SDKs.
 

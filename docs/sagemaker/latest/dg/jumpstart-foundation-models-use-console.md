@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation
 ---
 
 # Discover foundation models in the SageMaker AI Console
-<a name="jumpstart-foundation-models-use-console"></a>
 
 You can explore JumpStart foundation models directly through the Amazon SageMaker AI Console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/enable-m
 ---
 
 # Configuring Amazon ECS capacity providers to safely shut down instances
-<a name="enable-managed-instance-draining"></a>
 
 You can turn on managed instance draining when you create or update your Auto Scaling group capacity providers using the Amazon ECS console and AWS CLI.
 

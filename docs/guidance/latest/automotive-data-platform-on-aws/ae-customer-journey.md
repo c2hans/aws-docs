@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # The customer journey: one data foundation, many functions
-<a name="ae-customer-journey"></a>
 
 An automotive OEM’s different functions each need their own AI-assisted or agent-backed workflow — but they don’t each need their own data platform. The nine governed data products ADP deploys are the shared foundation that makes all of these patterns possible simultaneously.
 

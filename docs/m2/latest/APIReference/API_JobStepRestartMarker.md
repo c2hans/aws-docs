@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/APIReference/API_JobStepRestar
 ---
 
 # JobStepRestartMarker
-<a name="API_JobStepRestartMarker"></a>
 
 Provides step/procedure step information for a restart batch job operation.
 

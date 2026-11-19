@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-securi
 ---
 
 # Rotating RDS Custom for Oracle credentials for compliance programs
-<a name="custom-security.cred-rotation"></a>
 
 Some compliance programs require database user credentials to change periodically, for example, every 90 days. RDS Custom for Oracle automatically rotates credentials for some predefined database users.
 

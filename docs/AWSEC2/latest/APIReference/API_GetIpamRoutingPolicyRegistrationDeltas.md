@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamRo
 ---
 
 # GetIpamRoutingPolicyRegistrationDeltas
-<a name="API_GetIpamRoutingPolicyRegistrationDeltas"></a>
 
 Retrieves the history of routing policy registration changes for an IPAM internet registry association. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

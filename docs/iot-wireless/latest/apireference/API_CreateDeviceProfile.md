@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cre
 ---
 
 # CreateDeviceProfile
-<a name="API_CreateDeviceProfile"></a>
 
 Creates a new device profile.
 

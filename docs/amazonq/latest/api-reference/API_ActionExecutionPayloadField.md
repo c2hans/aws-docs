@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ActionE
 ---
 
 # ActionExecutionPayloadField
-<a name="API_ActionExecutionPayloadField"></a>
 
 A user input field in an plugin action execution payload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Updat
 ---
 
 # UpdateAppBlockBuilder
-<a name="API_UpdateAppBlockBuilder"></a>
 
 Updates an app block builder.
 

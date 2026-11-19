@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/welcome.h
 ---
 
 # What Is the AWS SDK for PHP Version 3?
-<a name="welcome"></a>
 
 The AWS SDK for PHP Version 3 enables PHP developers to use [Amazon Web Services](https://aws.amazon.com/) in their PHP code, and build robust applications and software using services like Amazon S3, Amazon DynamoDB, and Amazon Glacier. You can get started in minutes by installing the SDK through Composer — by requiring the `aws/aws-sdk-php` package — or by downloading the standalone [`aws.zip`](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.zip) or [`aws.phar`](https://docs.aws.amazon.com/aws-sdk-php/v3/download/aws.phar) file.
 

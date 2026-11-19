@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide-classic/security
 This guide documents the classic version of the AWS Wickr administration console, released before March 13, 2025. For documentation on the new AWS Wickr administration console, see [ Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Policy condition keys for Wickr
-<a name="security_iam_service-with-iam-id-based-policies-conditionkeys"></a>
 
 **Supports service-specific policy condition keys:** Yes
 

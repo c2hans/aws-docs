@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/AddingObjectst
 ---
 
 # Adding objects to versioning-suspended buckets
-<a name="AddingObjectstoVersionSuspendedBuckets"></a>
 
 You can add objects to versioning-suspended buckets in Amazon S3 to create the object with a null version ID or overwrite any object version with a matching version ID.
 

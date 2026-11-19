@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_NetworkingRe
 ---
 
 # NetworkingRequest
-<a name="API_NetworkingRequest"></a>
 
 The networking configuration for the cluster's control plane.
 

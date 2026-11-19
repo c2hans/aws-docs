@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ListVersions
-<a name="API_ListVersions"></a>
 
 Lists all versions of OpenSearch and Elasticsearch that Amazon OpenSearch Service supports.
 

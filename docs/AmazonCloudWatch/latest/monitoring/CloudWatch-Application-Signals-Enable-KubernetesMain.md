@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Enable your applications on Kubernetes
-<a name="CloudWatch-Application-Signals-Enable-KubernetesMain"></a>
 
 Enable CloudWatch Application Signals on Kubernetes by using the custom setup steps described in this section.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTCOST08-BP02 Consider serverless architecture for your Microsoft .NET applications
-<a name="msftcost08-bp02.net-applications"></a>
 
  AWS Lambda enables .NET developers to build serverless applications without managing servers, paying only for actual usage. Using modern .NET versions, developers can create scalable functions in C\# or F\# that run on-demand in the cloud, reducing costs and development time.
 

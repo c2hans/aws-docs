@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle and PostgreSQL temporary tables
-<a name="chap-oracle-aurora-pg.tables.temporary"></a>
 
 With AWS DMS, you can efficiently migrate data between Oracle and PostgreSQL databases while leveraging temporary tables. Temporary tables are database objects that store data temporarily, existing only for the duration of a session or transaction. These tables are useful when you need to store intermediate results during complex queries or data transformations.
 

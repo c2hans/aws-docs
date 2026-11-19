@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Tag
-<a name="API_prm_Tag"></a>
 
 A key-value pair used for organizing and managing resources through metadata tags.
 

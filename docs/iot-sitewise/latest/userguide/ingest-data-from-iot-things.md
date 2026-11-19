@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ingest-dat
 ---
 
 # Ingest data to AWS IoT SiteWise from AWS IoT things
-<a name="ingest-data-from-iot-things"></a>
 
 Learn how to ingest data to AWS IoT SiteWise from a fleet of AWS IoT things by using device shadows in this tutorial. *Device shadows* are JSON objects that store current state information for an AWS IoT device. For more information, see [Device shadow service](https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html) in the *AWS IoT Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Target
 ---
 
 # TargetSummary
-<a name="API_TargetSummary"></a>
 
 The details of a target.
 

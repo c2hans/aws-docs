@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # AWS Systems Manager Incident Manager Contacts
-<a name="API_Types_AWS_Systems_Manager_Incident_Manager_Contacts"></a>
 
 The following data types are supported by AWS Systems Manager Incident Manager Contacts:
 +  [ChannelTargetInfo](API_SSMContacts_ChannelTargetInfo.md)

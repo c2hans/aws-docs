@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Changes in working with Amazon S3 from version 1 to version 2 of the AWS SDK for Java
-<a name="migration-s3"></a>
 
 The AWS SDK for Java 2.x introduces significant changes to the S3 client, including a new package structure, updated class names, and revised method signatures. While many methods can be automatically migrated from V1 to V2 using the [migration tool](migration-tool.md), some require manual migration, such as `listNextBatchOfObjects` and `selectObjectContent`. Additionally, V2 replaces certain V1 classes like `AccessControlList` and `CannedAccessControlList` with new implementations.
 

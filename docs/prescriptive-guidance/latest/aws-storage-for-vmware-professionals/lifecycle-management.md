@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # Lifecycle management
-<a name="lifecycle-management"></a>
 
 Storage lifecycle management is an aspect of both VMware and AWS environments that focuses on data throughout. This process involves creating, using, maintaining, and eventually retiring or deleting resources. The following table summarizes some lifecycle differences between VMware and AWS.
 

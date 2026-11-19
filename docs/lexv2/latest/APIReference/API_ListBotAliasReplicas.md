@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotAli
 ---
 
 # ListBotAliasReplicas
-<a name="API_ListBotAliasReplicas"></a>
 
 The action to list the replicated bots created from the source bot alias.
 

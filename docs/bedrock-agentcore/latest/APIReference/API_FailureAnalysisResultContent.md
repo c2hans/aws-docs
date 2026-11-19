@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # FailureAnalysisResultContent
-<a name="API_FailureAnalysisResultContent"></a>
 
 The failure analysis clustering result containing categorized failure clusters with root causes and remediation recommendations.
 

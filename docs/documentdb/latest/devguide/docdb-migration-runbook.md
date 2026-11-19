@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-migrati
 ---
 
 # Amazon DocumentDB migration runbook
-<a name="docdb-migration-runbook"></a>
 
 This runbook provides a comprehensive guide for migrating a MongoDB database to Amazon DocumentDB using AWS Database Migration Service (DMS). It is designed to support database administrators, cloud engineers, and developers throughout the end-to-end migration journey—from initial discovery to post-migration validation.
 

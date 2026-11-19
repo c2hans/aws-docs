@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # SnsConfiguration
-<a name="API_query_SnsConfiguration"></a>
 
 Details on SNS that are required to send the notification.
 

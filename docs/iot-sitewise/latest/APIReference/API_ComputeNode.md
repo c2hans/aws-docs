@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputeNode
-<a name="API_ComputeNode"></a>
 
 A single compute node in a pipeline DAG. Each compute node references a task and can declare dependencies on other nodes.
 

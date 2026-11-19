@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/integratio
 ---
 
 # Integrations with CodePipeline action types
-<a name="integrations-action-type"></a>
 
 The integrations information in this topic is organized by CodePipeline action type.
 

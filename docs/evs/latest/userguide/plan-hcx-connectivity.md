@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-hcx-connectivi
 ---
 
 # Plan HCX connectivity
-<a name="plan-hcx-connectivity"></a>
 
 You can use VMware Hybrid Cloud Extension (HCX) to migrate VMware workloads to Amazon Elastic VMware Service over private connectivity or over the public internet. Choose the option before you create the environment, because internet connectivity needs a public CIDR block in your VPC and a matching HCX VLAN subnet.
 

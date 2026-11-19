@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Da
 ---
 
 # DashboardDetail
-<a name="API_DashboardDetail"></a>
 
  Provides information about a CloudTrail Lake dashboard.
 

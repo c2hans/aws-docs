@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/step-prepare-th
 ---
 
 # Step A: Prepare the MOV asset
-<a name="step-prepare-the-mov-asset"></a>
 
 1. Create a file – Use a third-party process to create a MOV file encoded with Apple QuickTime Run Length Encoding. Other codecs in the MOV container are not supported. Take care with the following settings:
    + Aspect ratio: The motion overlay can have any aspect ratio. It does not have to match the aspect ratio of the video output.

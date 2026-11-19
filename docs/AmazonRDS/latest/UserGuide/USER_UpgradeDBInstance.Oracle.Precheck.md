@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Running minor version upgrade prechecks in Amazon RDS for Oracle
-<a name="USER_UpgradeDBInstance.Oracle.Precheck"></a>
 
 Before Amazon RDS for Oracle performs a DB minor version upgrade, it checks that your DB instance is in a state that allows the upgrade to finish. If a check finds a problem, the upgrade can't proceed until you fix it.
 

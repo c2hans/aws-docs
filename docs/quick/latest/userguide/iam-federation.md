@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/iam-federation.ht
 ---
 
 # IAM federation
-<a name="iam-federation"></a>
 
 |  |
 | --- |

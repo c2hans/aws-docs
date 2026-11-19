@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Elastic Beanstalk makes it easy for you to create, deploy, and manage scalable, fault-tolerant applications running on the AWS Cloud.
 
@@ -13,4 +12,4 @@ For more information about this product, go to the [AWS Elastic Beanstalk](http:
 
 For a list of region-specific endpoints that AWS Elastic Beanstalk supports, go to [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#elasticbeanstalk_region) in the *Amazon Web Services Glossary*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

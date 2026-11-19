@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-serve
 ---
 
 # MediaTailor server-side tracking features and capabilities
-<a name="ad-reporting-server-side-features"></a>
 
 AWS Elemental MediaTailor automatically applies these integrated server-side tracking features to optimize ad measurement accuracy and reliability. The system prevents duplicate beacons, manages traffic during high-volume periods, maintains proper event sequencing, and provides comprehensive performance monitoring without requiring any configuration from you. You only need to ensure your ad decision server (ADS) provides the tracking beacons in the VAST response.
 

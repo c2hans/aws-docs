@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/postman-support.html
 ---
 
 # AWS Glue support for Postman
-<a name="postman-support"></a>
 
 AWS Glue supports Postman as follows:
 

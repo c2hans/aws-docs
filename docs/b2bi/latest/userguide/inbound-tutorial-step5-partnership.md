@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/inbound-tutorial-s
 ---
 
 # Step 5: Create a partnership
-<a name="inbound-tutorial-step5-partnership"></a>
 
 A partnership represents your trading relationship with a business partner. It combines your profile with trading capabilities and defines how to handle inbound EDI documents, including acknowledgment generation settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_PerFin
 ---
 
 # PerFindingResult
-<a name="API_PerFindingResult"></a>
 
 Validation's result for one finding within a multi-finding bundle.
 

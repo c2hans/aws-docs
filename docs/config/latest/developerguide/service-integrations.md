@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/service-int
 ---
 
 # AWS Service Integrations with AWS Config
-<a name="service-integrations"></a>
 
 AWS Config supports integrations with several other AWS services. This list is non-exhaustive.
 

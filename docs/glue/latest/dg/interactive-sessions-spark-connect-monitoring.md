@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-spar
 ---
 
 # Monitoring Spark Connect sessions
-<a name="interactive-sessions-spark-connect-monitoring"></a>
 
  Apache Spark provides a suite of web user interfaces (UIs) that you can use to monitor your Spark cluster. The Spark Live UI is supported for Spark Connect sessions in AWS Glue, providing real-time visibility into job execution, stages, and performance metrics. The Spark UI is available while the session is in `READY` state.
 

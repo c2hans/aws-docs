@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DisassociateUserAccessLoggingSettings
-<a name="API_DisassociateUserAccessLoggingSettings"></a>
 
 Disassociates user access logging settings from a web portal.
 

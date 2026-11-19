@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/change-enablement
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Alex Livingstone, Principal WW CloudOps Specialist Solutions Architect, Amazon Web Services

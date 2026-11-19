@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/Welco
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the Control Catalog API reference. This guide is for developers who need detailed information about how to programmatically identify and filter the common controls and related metadata that are available to AWS customers. This API reference provides descriptions, syntax, and usage examples for each of the actions and data types that are supported by Control Catalog.
 
@@ -13,4 +12,4 @@ Use the following links to get started with the Control Catalog API:
 +  [Common parameters](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/CommonParameters.html): Parameters that all operations can use.
 +  [Common errors](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/CommonErrors.html): Client and server errors that all operations can return.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

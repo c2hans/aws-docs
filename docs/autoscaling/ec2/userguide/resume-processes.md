@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/resume-process
 ---
 
 # Resume processes
-<a name="resume-processes"></a>
 
 To resume a suspended process for an Auto Scaling group, use one of the following methods:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/deploy-to-aws.htm
 ---
 
 # Deploy your application to AWS
-<a name="deploy-to-aws"></a>
 
 After developing and testing your application locally, you can deploy it to AWS. This page covers the one-time AWS account setup and the deployment commands.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/A
 ---
 
 # AccountInfo
-<a name="API_AccountInfo"></a>
 
 Provides information about your AWS account.
 

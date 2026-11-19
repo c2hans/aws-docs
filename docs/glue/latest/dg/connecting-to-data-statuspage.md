@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-status
 ---
 
 # Connecting to Statuspage in AWS Glue Studio
-<a name="connecting-to-data-statuspage"></a>
 
 Statuspage hosts service status and incident history for an organization. Because you are a Statuspage user, you can connect AWS Glue to your Statuspage account. You can then use Statuspage as a data source in your AWS Glue ETL jobs to transfer data between Statuspage and AWS services or other supported applications.
 

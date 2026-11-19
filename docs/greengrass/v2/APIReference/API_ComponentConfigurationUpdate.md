@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Component
 ---
 
 # ComponentConfigurationUpdate
-<a name="API_ComponentConfigurationUpdate"></a>
 
 Contains information about a deployment's update to a component's configuration on Greengrass core devices. For more information, see [Update component configurations](https://docs.aws.amazon.com/greengrass/v2/developerguide/update-component-configurations.html) in the * AWS IoT Greengrass V2 Developer Guide*.
 

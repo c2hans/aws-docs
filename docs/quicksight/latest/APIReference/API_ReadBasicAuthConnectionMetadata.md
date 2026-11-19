@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadB
 ---
 
 # ReadBasicAuthConnectionMetadata
-<a name="API_ReadBasicAuthConnectionMetadata"></a>
 
 Read-only metadata for basic authentication connections, containing non-sensitive configuration details.
 

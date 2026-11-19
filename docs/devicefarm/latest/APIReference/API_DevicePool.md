@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Devic
 ---
 
 # DevicePool
-<a name="API_DevicePool"></a>
 
 Represents a collection of device types.
 

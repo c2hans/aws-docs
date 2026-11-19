@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 5: Access the Migration Console and create secrets
-<a name="pb-es68-console"></a>
 
 The day-to-day operator interface is the Workflow CLI, which runs in the Migration Console pod (`migration-console-0`) in the `ma` namespace on Amazon EKS.
 

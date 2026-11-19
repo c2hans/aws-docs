@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Enc
 ---
 
 # EncryptionConfigurationDetails
-<a name="API_EncryptionConfigurationDetails"></a>
 
 The encryption configuration of your IAM Identity Center instance, including the key type, KMS key ARN, and current encryption status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-code-ex.h
 ---
 
 # Run Amazon Bedrock Flows code samples
-<a name="flows-code-ex"></a>
 
 The following code samples assume that you've fulfilled the following prerequisites:
 
@@ -13,7 +12,7 @@ The following code samples assume that you've fulfilled the following prerequisi
 
 1. Create a service role to carry out flow-related actions on your behalf. If you haven't, refer to [Create a service role for Amazon Bedrock Flows in Amazon Bedrock](flows-permissions.md).
 
-To create a flow, send a [CreateFlow](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlow.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). For example code, see [Run Amazon Bedrock Flows code samples](#flows-code-ex)
+To create a flow, send a [CreateFlow](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlow.html) request with an [Agents for Amazon Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt). For example code, see [Run Amazon Bedrock Flows code samples](flows-code-ex.md)
 
 The following fields are required:
 

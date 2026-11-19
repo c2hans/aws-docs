@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is
 ---
 
 # Parameter Store reference
-<a name="what-is-a-parameter"></a>
 
 A *parameter* is any piece of data stored in Parameter Store, such as a block of text, a list of names, an AMI ID, a merchant ID, or another configuration value. You can centrally reference this data in your scripts, commands, and SSM documents.
 

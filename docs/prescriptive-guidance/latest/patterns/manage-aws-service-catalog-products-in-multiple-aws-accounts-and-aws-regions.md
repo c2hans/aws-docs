@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 ---
 
 # Manage AWS Service Catalog products in multiple AWS accounts and AWS Regions
-<a name="manage-aws-service-catalog-products-in-multiple-aws-accounts-and-aws-regions"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

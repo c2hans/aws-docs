@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fl
 ---
 
 # Optimize game server runtime configuration on managed Amazon GameLift Servers
-<a name="fleets-multiprocess"></a>
 
 You can set up a managed EC2 fleet's runtime configuration to run multiple game server processes per instance. This uses your hosting resources more efficiently.
 

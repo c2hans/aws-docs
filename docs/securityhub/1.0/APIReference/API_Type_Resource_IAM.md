@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # AWS Identity and Access Management (IAM) objects
-<a name="API_Type_Resource_IAM"></a>
 
 ****AWS Identity and Access Management (IAM) objects****
 + [AwsIamAccessKeyDetails](API_AwsIamAccessKeyDetails.md)

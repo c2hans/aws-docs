@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateAu
 ---
 
 # CreateAuthCode
-<a name="API_CreateAuthCode"></a>
 
 Creates an authorization code for the specified Connect Customer instance. The authorization code can be used to establish a session with scoped permissions defined by the specified scope parameters.
 

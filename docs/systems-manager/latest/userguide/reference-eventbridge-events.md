@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/referen
 ---
 
 # Reference: Amazon EventBridge event patterns and types for Systems Manager
-<a name="reference-eventbridge-events"></a>
 
 |  |
 | --- |

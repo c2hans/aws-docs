@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/f5-bi
 ---
 
 # Source configuration for F5 BIG-IP
-<a name="f5-bigip-source-setup"></a>
 
 ## Integrating with F5 BIG-IP
 <a name="f5-bigip-integration"></a>

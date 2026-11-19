@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Lineag
 ---
 
 # LineageMetadata
-<a name="API_LineageMetadata"></a>
 
  The metadata that tracks relationships between ML artifacts, actions, and contexts.
 

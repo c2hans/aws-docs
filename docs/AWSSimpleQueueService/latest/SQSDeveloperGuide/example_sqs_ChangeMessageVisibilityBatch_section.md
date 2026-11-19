@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Use `ChangeMessageVisibilityBatch` with a CLI
-<a name="example_sqs_ChangeMessageVisibilityBatch_section"></a>
 
 The following code examples show how to use `ChangeMessageVisibilityBatch`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ResourceShar
 ---
 
 # ResourceShareDetails
-<a name="API_ResourceShareDetails"></a>
 
 The cross-account sharing details for an endpoint. Endpoints are shared through AWS Resource Access Manager (AWS RAM). This is a union type, so exactly one of its members is set: `owned` when this account owns the endpoint and shares it with other accounts, or `consumed` when this account consumes an endpoint that another account shares. To change how an endpoint is shared, use AWS RAM.
 

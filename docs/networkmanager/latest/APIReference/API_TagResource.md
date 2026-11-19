@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_T
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Tags a specified resource.
 

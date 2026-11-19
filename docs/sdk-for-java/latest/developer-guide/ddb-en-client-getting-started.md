@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Get Started using the DynamoDB Enhanced Client API
-<a name="ddb-en-client-getting-started"></a>
 
 The following tutorial introduces you to fundamentals that you need to work with the DynamoDB Enhanced Client API.
 

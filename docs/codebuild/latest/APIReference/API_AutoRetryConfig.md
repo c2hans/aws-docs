@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_AutoRe
 ---
 
 # AutoRetryConfig
-<a name="API_AutoRetryConfig"></a>
 
 Information about the auto-retry configuration for the build.
 

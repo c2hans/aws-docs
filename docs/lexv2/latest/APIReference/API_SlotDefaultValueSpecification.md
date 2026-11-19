@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotDefaul
 ---
 
 # SlotDefaultValueSpecification
-<a name="API_SlotDefaultValueSpecification"></a>
 
 Defines a list of values that Amazon Lex should use as the default value for a slot.
 

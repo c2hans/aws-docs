@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/creating-event-bridge-e
 ---
 
 # Configuring an EventBridge rule to send notifications about events in AWS Health
-<a name="creating-event-bridge-events-rule-for-aws-health"></a>
 
 You can create an Amazon EventBridge rule to programmatically integrate AWS Health events with other services, applications, and workloads. EventBridge provides a drag and drop console interface and an API to set up rules that trigger when a matching AWS Health event is created for your account or organization. To learn how to set up a rule in EventBridge to capture AWS Health events, see [Creating rules using the Enhanced Builder](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-visual.html) and [Creating rules using the Advanced Builder](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-wizard.html) in the *Amazon EventBridge User Guide*.
 

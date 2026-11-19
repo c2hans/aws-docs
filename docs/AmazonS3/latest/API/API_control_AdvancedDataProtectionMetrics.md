@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Advanced
 ---
 
 # AdvancedDataProtectionMetrics
-<a name="API_control_AdvancedDataProtectionMetrics"></a>
 
 The container element for Amazon S3 Storage Lens advanced data-protection metrics. Advanced data-protection metrics provide insights that you can use to perform audits and protect your data, for example replication rule counts within and across Regions.
 

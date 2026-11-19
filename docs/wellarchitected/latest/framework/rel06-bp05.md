@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel06-b
 ---
 
 # REL06-BP05 Analyze logs
-<a name="rel06-bp05"></a>
 
  Analyzing accumulated log data reveals trends, recurring failure patterns, and slow regressions that no single alarm exposes. This analysis also requires a data-management strategy that retains logs long enough to be useful and controls storage cost.
 

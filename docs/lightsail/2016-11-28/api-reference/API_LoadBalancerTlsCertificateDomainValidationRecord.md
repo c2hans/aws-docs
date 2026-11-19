@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_L
 ---
 
 # LoadBalancerTlsCertificateDomainValidationRecord
-<a name="API_LoadBalancerTlsCertificateDomainValidationRecord"></a>
 
 Describes the validation record of each domain name in the SSL/TLS certificate.
 

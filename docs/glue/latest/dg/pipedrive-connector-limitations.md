@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pipedrive-connector-limit
 ---
 
 # Limitations
-<a name="pipedrive-connector-limitations"></a>
 
 The following are limitations for the Pipedrive connector:
 + Pipedrive supports field-based partitioning for only one entity (Activities).

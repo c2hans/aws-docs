@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/defer-compo
 ---
 
 # Prerequisites
-<a name="defer-component-updates-tutorial-prerequisites"></a>
 
 To complete this tutorial, you need the following:
 + An AWS account. If you don't have one, see [Set up an AWS account](setting-up.md#set-up-aws-account).

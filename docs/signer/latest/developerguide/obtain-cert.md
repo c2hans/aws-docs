@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/obtain-cert
 ---
 
 # Obtain and import a code-signing certificate
-<a name="obtain-cert"></a>
 
 Before you can use AWS Signer with AWS IoT Device Management or Amazon FreeRTOS, you must have or obtain a code-signing certificate. Code-signing certificates typically contain a `Digital Signature` value in the `Key Usage` extension and a `Code Signing` value in the `Extended Key Usage` extension.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Cre
 ---
 
 # CreateAccountAssignment
-<a name="API_CreateAccountAssignment"></a>
 
 Assigns access to a principal for a specified AWS account using a specified permission set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/micr
 ---
 
 # Step 1: Set up your AWS environment for AWS Managed Microsoft AD Active Directory
-<a name="microsoftadbasestep1"></a>
 
 Before you can create AWS Managed Microsoft AD in your AWS test lab, you first need to set up your Amazon EC2 key pair so that all login data is encrypted.
 

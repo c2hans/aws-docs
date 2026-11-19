@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/monitoring-
 ---
 
 # Reliability and performance monitoring for AWS CloudHSM
-<a name="reliability-monitoring"></a>
 
 You can use [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) to monitor your AWS CloudHSM cluster in near real time. Using CloudWatch metrics, you can configure CloudWatch alarms to alert you if any of these metrics exceed their defined thresholds. For more information, see [Working with Amazon CloudWatch Logs and AWS CloudHSM Audit Logs](https://docs.aws.amazon.com/cloudhsm/latest/userguide/get-hsm-audit-logs-using-cloudwatch.html) and [Getting CloudWatch metrics for AWS CloudHSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/hsm-metrics-cw.html) in the AWS CloudHSM documentation.
 

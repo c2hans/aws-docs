@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Resources
-<a name="additional-resources"></a>
 
 ## AWS service documentation
 <a name="aws-service-documentation.13f539c3-ea17-588f-b457-448d8b3bbd50"></a>

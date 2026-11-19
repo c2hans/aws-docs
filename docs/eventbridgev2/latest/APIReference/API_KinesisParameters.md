@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Ki
 ---
 
 # KinesisParameters
-<a name="API_KinesisParameters"></a>
 
 Kinesis Data Streams invocation parameters for subscribers. Values are forwarded to the Kinesis PutRecords API. All scalar values accept a literal or a JSONata expression (e.g. "{% $events.Data.partitionKey %}").
 

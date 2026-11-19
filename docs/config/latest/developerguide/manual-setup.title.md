@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/manual-setu
 ---
 
 # Manual setup for AWS Config
-<a name="manual-setup.title"></a>
 
 With the **Get started** workflow, you can go through all the manual selections of the setup process to get started with the AWS Config console. For a simplified getting started process, see [1-click setup](https://docs.aws.amazon.com/config/latest/developerguide/1-click-setup.html).
 

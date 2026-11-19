@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/new-signin-exp
 ---
 
 # Testing the new Connect Customer sign-in experience
-<a name="new-signin-experience"></a>
 
 ## Overview
 <a name="new-signin-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_SpotOptions.
 ---
 
 # SpotOptions
-<a name="API_SpotOptions"></a>
 
 Additional configuration when you specify `SPOT` as the `purchaseOption` for the `CreateComputeNodeGroup` API action.
 

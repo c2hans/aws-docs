@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/compliance-valid
 ---
 
 # Compliance validation for AWS AppSync
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of AWS AppSync as part of multiple AWS compliance programs. AWS AppSync is compliant with SOC, PCI, HIPAA/HIPAA BAA, IRAP, C5, ENS High, OSPAR, and HITRUST CSF programs.
 

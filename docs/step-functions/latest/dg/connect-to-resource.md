@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-reso
 ---
 
 # Discover service integration patterns in Step Functions
-<a name="connect-to-resource"></a>
 
 For service integrations, you can specify various integration patterns to control how your state machine interacts with the integrated AWS services :
 + [Request Response](#connect-default) - Call a service and Step Functions will progress to the next state immediately after it receives an HTTP response.

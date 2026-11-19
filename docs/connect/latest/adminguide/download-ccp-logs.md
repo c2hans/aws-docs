@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/download-ccp-l
 ---
 
 # Download and review Connect Customer Contact Control Panel (CCP) logs
-<a name="download-ccp-logs"></a>
 
 This topic is for IT admins and developers who need to troubleshoot issues with an agent's Contact Control Panel (CCP).
 

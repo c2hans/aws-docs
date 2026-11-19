@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Parameters in imported templates for an external VPC with Infrastructure Composer
-<a name="using-composer-services-vpc-import"></a>
 
 When you import an existing template with parameters defined for the security groups and subnets of an external VPC, Infrastructure Composer provides a dropdown list to select your parameters from.
 

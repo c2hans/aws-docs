@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Using Traffic Replayer
-<a name="using-traffic-replayer"></a>
 
 **Note**
 This section is only relevant if you are using Capture and Replay to avoid downtime during a migration to Amazon OpenSearch Service or Amazon OpenSearch Serverless NextGen. If you are performing backfill only, skip this section.

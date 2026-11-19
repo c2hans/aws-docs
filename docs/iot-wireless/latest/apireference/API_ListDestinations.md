@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListDestinations
-<a name="API_ListDestinations"></a>
 
 Lists the destinations registered to your AWS account.
 

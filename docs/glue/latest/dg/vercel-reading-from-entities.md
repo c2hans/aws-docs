@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vercel-reading-from-entit
 ---
 
 # Reading from Vercel entities
-<a name="vercel-reading-from-entities"></a>
 
 **Prerequisites**
 

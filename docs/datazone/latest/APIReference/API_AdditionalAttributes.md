@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Additio
 ---
 
 # AdditionalAttributes
-<a name="API_AdditionalAttributes"></a>
 
 Additional details on the queried entity that can be requested in the response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetData
 ---
 
 # GetDataProduct
-<a name="API_GetDataProduct"></a>
 
 Gets the data product.
 

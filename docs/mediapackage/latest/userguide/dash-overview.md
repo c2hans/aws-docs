@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/dash-overv
 ---
 
 # DASH in AWS Elemental MediaPackage
-<a name="dash-overview"></a>
 
 MediaPackage supports Dynamic Adaptive Streaming over HTTP (DASH) for delivering content to a wide range of devices. DASH is an adaptive bitrate streaming protocol that enables high-quality streaming experiences by dynamically adapting to changing network conditions.
 

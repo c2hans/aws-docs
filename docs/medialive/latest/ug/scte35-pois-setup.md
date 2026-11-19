@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/scte35-pois-setup.ht
 ---
 
 # Setting up for POIS signal conditioning
-<a name="scte35-pois-setup"></a>
 
 With POIS signal conditioning, the MediaLive channel and the POIS server must be set up with identical information.
 

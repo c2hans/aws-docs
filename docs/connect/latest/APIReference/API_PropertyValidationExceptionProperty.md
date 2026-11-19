@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Property
 ---
 
 # PropertyValidationExceptionProperty
-<a name="API_PropertyValidationExceptionProperty"></a>
 
 Contains information about why a property is not valid.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-strappend.
 ---
 
 # JSON.STRAPPEND
-<a name="json-strappend"></a>
 
 Append a string to the JSON strings at the path.
 

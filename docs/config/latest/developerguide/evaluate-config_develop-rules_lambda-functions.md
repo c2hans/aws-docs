@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/evaluate-co
 ---
 
 # Creating AWS Config Custom Lambda Rules
-<a name="evaluate-config_develop-rules_lambda-functions"></a>
 
 You can develop custom rules and add them to AWS Config with AWS Lambda functions.
 

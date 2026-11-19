@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_AccountDe
 ---
 
 # AccountDetails
-<a name="API_AccountDetails"></a>
 
 An object that contains information about your account details.
 

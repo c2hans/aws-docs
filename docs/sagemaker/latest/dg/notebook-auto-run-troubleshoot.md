@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/notebook-auto-run-tr
 ---
 
 # Troubleshooting guide
-<a name="notebook-auto-run-troubleshoot"></a>
 
 Refer to this troubleshooting guide to help you debug failures you might experience when your scheduled notebook job runs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/support-p
 ---
 
 # Research and Engineering Studio support policy
-<a name="support-policy"></a>
 
 Research and Engineering Studio (RES) supports multiple releases concurrently. RES uses a `YYYY.mm.patch` version scheme, where `YYYY.mm` represents a major release. `YYYY` represents the year, `mm` represents the month of release and `patch` indicates an incremental release. Each RES release has a scheduled End of Support Life (EOSL) date that is the last day of the `mm` month in year `YYYY`\+1. For example, the EOSL date for 2025.09 is September 30, 2026. After the EOSL date, no further support or maintenance is provided for that release.
 

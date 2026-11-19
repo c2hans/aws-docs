@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/g
 ---
 
 # Getting started with AWS SDK for SAP ABAP
-<a name="getting-started"></a>
 
 This section describes how to get started with the SDK. It includes information about installing the SDK, performing basic configuration, and creating a Hello World code example that translates a phrase from one language to another. If you are new to AWS SDK, we recommend performing these steps in a sandbox environment.
 

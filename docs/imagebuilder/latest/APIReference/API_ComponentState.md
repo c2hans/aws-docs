@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Com
 ---
 
 # ComponentState
-<a name="API_ComponentState"></a>
 
 A group of fields that describe the current status of components.
 

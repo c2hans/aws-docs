@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examp
 ---
 
 # Managing visibility timeout in Amazon SQS with AWS SDK for PHP Version 3
-<a name="sqs-examples-managing-visibility-timeout"></a>
 
 A visibility timeout is a period of time during which Amazon SQS prevents other consuming components from receiving and processing a message. To learn more, see [Visibility Timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html).
 

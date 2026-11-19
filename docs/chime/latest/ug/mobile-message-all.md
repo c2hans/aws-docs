@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/mobile-message-all.html
 ---
 
 # Messaging all meeting attendees
-<a name="mobile-message-all"></a>
 
 If you think you'll be late to a meeting, or need to contact other attendees, you can message them without joining that meeting.
 

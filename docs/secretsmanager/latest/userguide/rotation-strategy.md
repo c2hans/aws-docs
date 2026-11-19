@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotation
 ---
 
 # Lambda function rotation strategies
-<a name="rotation-strategy"></a>
 
 For [Rotation by Lambda function](rotate-secrets_lambda.md), for database secrets, Secrets Manager offers two rotation strategies.
 

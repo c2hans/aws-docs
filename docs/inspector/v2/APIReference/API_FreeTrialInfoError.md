@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_FreeTrialI
 ---
 
 # FreeTrialInfoError
-<a name="API_FreeTrialInfoError"></a>
 
 Information about an error received while accessing free trail data for an account.
 

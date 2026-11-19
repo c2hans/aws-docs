@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/load-testin
 ---
 
 # Foundational planning for load testing
-<a name="foundation"></a>
 
 To determine the right tool and setup for the load test, be clear on why you are running the test. The following questions have to be addressed with the right type of test:
 + How much load can my application withstand?

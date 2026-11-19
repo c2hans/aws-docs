@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Isoline
 ---
 
 # IsolineShapeGeometry
-<a name="API_IsolineShapeGeometry"></a>
 
 Represents the shape of a reachable area. The geometry can be provided either as coordinate pairs (`Polygon`) or in encoded format (`PolylinePolygon`), matching the format specified in the request.
 

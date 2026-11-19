@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/walkthrough-
 ---
 
 # Walkthrough - Part 2
-<a name="walkthrough-part-2-v2"></a>
 
 This tutorial walks you through how to modify the "Hello Constructs" app created in [part 1](walkthrough-part-1-v2.md) . Our modification will add a site hit counter using the AWS Lambda to DynamoDB pattern from AWS Solutions Constructs. Modifying the Hello Constructs app will result in the following solution:
 

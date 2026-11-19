@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Configure cross-account access to Amazon DynamoDB
-<a name="configure-cross-account-access-to-amazon-dynamodb"></a>
 
 *Shashi Dalmia, Imhoertha Ojior, and Esteban Serna Parra, Amazon Web Services*
 

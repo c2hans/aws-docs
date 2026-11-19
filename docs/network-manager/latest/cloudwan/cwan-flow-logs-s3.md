@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-flo
 ---
 
 # AWS Cloud WAN Flow Logs records in Amazon S3
-<a name="cwan-flow-logs-s3"></a>
 
 Flow logs can publish flow log data to Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/allow-iot-smart-h
 ---
 
 # Invoke your C2C connector
-<a name="allow-iot-smart-home"></a>
 
 AWS Lambda allows for resource-based policies to authorize who can invoke a Lambda. As managed integrations for AWS IoT Device Management is an AWS service, you must allow Managed Integrations to invoke your C2C connector Lambda via the resource policy.
 

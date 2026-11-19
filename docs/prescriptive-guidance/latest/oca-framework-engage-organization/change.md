@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 4.1 Change acceleration implementation
-<a name="change"></a>
 
 ## Overview
 <a name="change-overview"></a>

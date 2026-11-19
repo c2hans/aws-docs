@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Dom
 ---
 
 # DomainDescription
-<a name="API_DomainDescription"></a>
 
  Information about a domain. A domain is a container for repositories. When you create a domain, it is empty until you add one or more repositories.
 

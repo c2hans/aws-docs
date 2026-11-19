@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/export-params-f
 ---
 
 # Export parameter fields in the `params` top-level JSON object
-<a name="export-params-fields"></a>
 
 The Neptune export `params` JSON object allows you to control the export, including the type and format of the exported data.
 

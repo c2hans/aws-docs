@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedBudgetsSpendLimitManagementAccess
-<a name="AWSManagedBudgetsSpendLimitManagementAccess"></a>
 
 **Description**: Grants the AWS Budgets service permissions to attach and detach Service Control Policies and manage accounts in an AWS Organization to enforce spend limit guardrails on member accounts.
 

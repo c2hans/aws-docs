@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # AMS automatic remediation of alerts
-<a name="auto-remediation"></a>
 
 After verification, AWS Managed Services (AMS) automatically remediates certain alerts according to specific conditions and processes described in this section.
 

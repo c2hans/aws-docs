@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-access
 ---
 
 # Access points
-<a name="backup-access-points"></a>
 
 ## Overview
 <a name="backup-access-points-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Building Python Lambda Event Functions with uv in AWS SAM
-<a name="building-python-uv"></a>
 
 |  |
 | --- |

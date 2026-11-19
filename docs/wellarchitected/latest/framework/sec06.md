@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec06.h
 ---
 
 # Protecting compute
-<a name="sec06"></a>
 
  Compute resources run the code behind a workload, and each type carries its own risk. An instance, a container, and a function differ in how they are built, accessed, and replaced, but the strategies that keep them secure are shared: reduce the attack surface, know and fix what is vulnerable, limit who can touch a running resource, and confirm that only approved software runs.
 

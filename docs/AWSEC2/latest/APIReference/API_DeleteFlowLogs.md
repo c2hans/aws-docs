@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFlo
 ---
 
 # DeleteFlowLogs
-<a name="API_DeleteFlowLogs"></a>
 
 Deletes one or more flow logs.
 

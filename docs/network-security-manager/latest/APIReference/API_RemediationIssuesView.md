@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # RemediationIssuesView
-<a name="API_RemediationIssuesView"></a>
 
 Remediation issue details for a resource, or a marker indicating that the details are not visible. Exactly one member is set.
 

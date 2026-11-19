@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Canary deployments
-<a name="canary-deployments"></a>
 
  [Canary deployments](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/deployment-strategies.html#canary-deployments) are a type of blue/green deployment strategy that is more risk-averse. This strategy involves a phased approach in which traffic is shifted to a new version of the application in two increments. The first increment is a small percentage of the traffic, which is referred to as the canary group. This group is used to test the new version, and if it is successful, the traffic is shifted to the new version in the second increment.
 

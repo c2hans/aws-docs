@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # View and edit the record distribution strategy for an existing stream
-<a name="service-managed-pk-configure-console-edit"></a>
 
 1. Open the Kinesis Data Streams console at [https://console.aws.amazon.com/kinesis](https://console.aws.amazon.com/kinesis).
 

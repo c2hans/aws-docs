@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-prer
 ---
 
 # Prerequisites
-<a name="face-liveness-prerequisites"></a>
 
  Prerequisites for using Amazon Rekognition Face Liveness include the following:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsAgentInformation
-<a name="API_RcsAgentInformation"></a>
 
 The information for an RCS agent in an AWS account.
 

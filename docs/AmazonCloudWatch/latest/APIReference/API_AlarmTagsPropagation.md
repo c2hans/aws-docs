@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # AlarmTagsPropagation
-<a name="API_AlarmTagsPropagation"></a>
 
 Includes the alarm's tags in the notifications that the alarm sends to Amazon SNS topics and Lambda functions. The tags are also included in the alarm's state-change events in Amazon EventBridge. Other types of alarm actions don't receive the tags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Connect to runtime sessions through a session endpoint
-<a name="runtime-session-endpoints"></a>
 
 With session endpoints, you can connect to application servers running inside an Amazon Bedrock AgentCore Runtime session. A session endpoint is an authenticated HTTPS URL that addresses one runtime session. Use it to:
 + View a web preview.

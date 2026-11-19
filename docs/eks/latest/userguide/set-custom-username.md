@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/set-custom-username
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Set a custom username for EKS access entries
-<a name="set-custom-username"></a>
 
 When creating access entries for Amazon EKS, you can either use the automatically generated username or specify a custom username. This page explains both options and guides you through setting a custom username.
 

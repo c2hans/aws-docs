@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # SOAP-based ASP.NET web services
-<a name="soap"></a>
 
 When you modernize a legacy ASP.NET web service (ASMX) to a REST API on AWS, it might have dependent consumers that can't, and most likely shouldn't due to the associated risks, be upgraded at the same time. The following illustration depicts an ASMX web service that has three dependent consumers.
 

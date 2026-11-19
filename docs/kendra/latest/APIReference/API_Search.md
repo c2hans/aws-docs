@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Search.ht
 ---
 
 # Search
-<a name="API_Search"></a>
 
 Provides information about how a custom index field is used during a search.
 

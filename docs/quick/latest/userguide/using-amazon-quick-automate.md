@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-amazon-quic
 ---
 
 # Using AWS Quick Automate
-<a name="using-amazon-quick-automate"></a>
 
 ## Overview
 <a name="automate-overview"></a>

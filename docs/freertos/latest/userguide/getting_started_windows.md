@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/getting_starte
 ---
 
 # Getting started with the Windows Device Simulator
-<a name="getting_started_windows"></a>
 
 This tutorial provides instructions for getting started with the FreeRTOS Windows Device Simulator.
 

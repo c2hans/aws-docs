@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverl
 ---
 
 # Amazon DocumentDB serverless instance limits
-<a name="docdb-serverless-instance-limits"></a>
 
 For DocumentDB serverless instances, the following limits per instance are dependent upon the instance’s current scaling capacity:
 + Instance Memory (GiB)

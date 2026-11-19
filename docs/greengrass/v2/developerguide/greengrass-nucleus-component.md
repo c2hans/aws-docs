@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Greengrass nucleus
-<a name="greengrass-nucleus-component"></a>
 
 The Greengrass nucleus component (`aws.greengrass.Nucleus`) is a mandatory component and the minimum requirement to run the AWS IoT Greengrass Core software on a device. You can configure this component to customize and update your AWS IoT Greengrass Core software remotely. Deploy this component to configure settings such as proxy, device role, and AWS IoT thing configuration on your core devices.
 
@@ -108,7 +107,7 @@ sudo update-alternatives --set sudo /usr/bin/sudo.ws
 + Minimum 160 MB RAM allocated to the AWS IoT Greengrass Core software. This requirement doesn't include components that run on the core device. For more information, see [Control memory allocation with JVM options](configure-greengrass-core-v2.md#jvm-tuning).
 + Java Runtime Environment (JRE) version 8 or greater. Java must be available on the [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) system variable on the device. To use Java to develop custom components, you must install a Java Development Kit (JDK). We recommend that you use [Amazon Corretto](https://aws.amazon.com/corretto/) or [OpenJDK](https://openjdk.java.net/) long-term support versions. Version 8 or higher is required..
 **Note**
-To use version 2.5.0 of the [Greengrass nucleus](#greengrass-nucleus-component), you must use a 64-bit version of the Java Runtime Environment (JRE). Greengrass nucleus version 2.5.1 supports 32-bit and 64-bit JREs.
+To use version 2.5.0 of the [Greengrass nucleus](greengrass-nucleus-component.md), you must use a 64-bit version of the Java Runtime Environment (JRE). Greengrass nucleus version 2.5.1 supports 32-bit and 64-bit JREs.
 + The user who installs the AWS IoT Greengrass Core software must be an administrator.
 + You must install the AWS IoT Greengrass Core software as a system service. Specify `--setup-system-service true` when you install the software.
 + Each user that runs component processes must exist in the LocalSystem account, and the user's name and password must be in the Credential Manager instance for the LocalSystem account. You can set up this user when you follow instructions to [install the AWS IoT Greengrass Core software](install-greengrass-core-v2.md).
@@ -213,7 +212,7 @@ The proxy to which to connect. This object contains the following information:
 The URL of the proxy server in the format `scheme://userinfo@host:port`.  <a name="nucleus-component-configuration-proxy-url-segments"></a>
 + `scheme` – The scheme, which must be `http` or `https`.
 **Important**
-<a name="https-proxy-greengrass-nucleus-requirement"></a>Greengrass core devices must run [Greengrass nucleus ](#greengrass-nucleus-component) v2.5.0 or later to use HTTPS proxies.
+<a name="https-proxy-greengrass-nucleus-requirement"></a>Greengrass core devices must run [Greengrass nucleus ](greengrass-nucleus-component.md) v2.5.0 or later to use HTTPS proxies.
 If you configure an HTTPS proxy, you must add the proxy server CA certificate to the core device's Amazon root CA certificate. For more information, see [Enable the core device to trust an HTTPS proxy](configure-greengrass-core-v2.md#https-proxy-certificate-trust).
 + `userinfo` – (Optional) The user name and password information. If you specify this information in the `url`, the Greengrass core device ignores the `username` and `password` fields.
 + `host` – The host name or IP address of the proxy server.
@@ -265,12 +264,12 @@ Valid range: Minimum value of 1
 (Optional) The MQTT spooler configuration for the Greengrass core device. This object contains the following information:
 `storageType`
 The storage type for storing messages. If `storageType` is set to `Disk`, the `pluginName` can be configured. You can specify either `Memory` or `Disk`.
-This feature is available for v2.11.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).
+This feature is available for v2.11.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 If the MQTT spooler `storageType` is set to `Disk` and you want to downgrade Greengrass nucleus from version 2.11.x to an earlier version, you must change the configuration back to `Memory`. The only configuration for `storageType` that is supported in Greengrass nucleus versions 2.10.x and earlier is `Memory`. Not following this guidance can result in the spooler breaking. This would cause your Greengrass core device to not be able to send MQTT messages to the AWS Cloud.
 Default: `Memory`
 `pluginName`
 (Optional) The plugin component name. This component will only be used if `storageType` is set to `Disk`. This option defaults to `aws.greengrass.DiskSpooler` and will use the Greengrass-provided [Disk spooler](disk-spooler-component.md).
-This feature is available for v2.11.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).
+This feature is available for v2.11.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 Default: `"aws.greengrass.DiskSpooler"`
 `maxSizeInBytes`
 (Optional) The maximum size of the cache where the core device stores unprocessed MQTT messages in memory. If the cache is full, new messages are rejected.
@@ -280,28 +279,28 @@ Default: `2621440` (2.5 MB)
 Default: `false`
 `version`
 (Optional) The version of MQTT. You can specify either `mqtt3` or `mqtt5`.
-This feature is available for v2.10.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).
+This feature is available for v2.10.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 Default: `mqtt5`
 `receiveMaximum`
 (Optional) The maximum number of unacknowledged QoS1 packets the broker can send.
-This feature is available for v2.10.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).
+This feature is available for v2.10.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 Default: `100`
 `sessionExpirySeconds`
 (Optional) The amount of time in seconds you can request for a session to last from IoT Core. The default is the maximum time supported by AWS IoT Core.
-This feature is available for v2.10.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).
+This feature is available for v2.10.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 Default: `604800 (7 days)`
 `minimumReconnectDelaySeconds`
 (Optional) An option for reconnection behavior. The minimum amount of time in seconds for MQTT to reconnect.
-This feature is available for v2.10.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).
+This feature is available for v2.10.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 Default: `1`
 `maximumReconnectDelaySeconds`
 (Optional) An option for reconnection behavior. The maximum amount of time in seconds for MQTT to reconnect.
-This feature is available for v2.10.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).
+This feature is available for v2.10.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 Default: `120`
 The core device applies this option only when you set the MQTT version to `mqtt5`. When you use `mqtt3`, the core device ignores this value and uses a fixed maximum reconnect delay of `128` seconds.
 `minimumConnectedTimeBeforeRetryResetSeconds`
 (Optional) An option for reconnection behavior. The amount of time in seconds a connection must be active before the retry delay is reset back to the minimum.
-This feature is available for v2.10.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).
+This feature is available for v2.10.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 Default: `30`
 
   `jvmOptions`

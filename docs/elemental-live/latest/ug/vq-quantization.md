@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vq-quantization
 ---
 
 # Quantization controls
-<a name="vq-quantization"></a>
 
 ## Description
 <a name="description-vq-quant"></a>

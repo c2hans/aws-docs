@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootS3AccessSameAccount`
-<a name="automation-aws-troubleshoots3accesssameaccount"></a>
 
  **Description**
 

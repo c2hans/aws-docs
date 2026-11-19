@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/private
 ---
 
 # Private networking for Amazon MQ for RabbitMQ
-<a name="private-networking"></a>
 
 Private networking enables Amazon MQ for RabbitMQ brokers to connect to private resources in your VPC. These resources can include private identity providers (LDAP or OAuth2), other Amazon MQ for RabbitMQ brokers, or self-hosted RabbitMQ brokers. You can connect to your resources privately without going over the public internet.
 

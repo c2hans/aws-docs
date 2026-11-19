@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Stage 5 — Sell / Trade-in
-<a name="sell-trade-in"></a>
 
 The vehicle’s complete service history, accumulated via CMS and ADP throughout the ownership tenure, is the data foundation for end-of-ownership transactions. At this stage, the primary Tier 2 agent is Agent 4 (Household Mobility Concierge), which maintains a continuous ownership-position picture and signals when the conditions for a trade-in or upgrade are favorable.
 

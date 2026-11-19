@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/service-manage
 ---
 
 # Troubleshoot service-managed user issues
-<a name="service-managed-issues"></a>
 
 This section describes possible solutions for issues with service-managed users.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBClusterBacktracks
-<a name="API_DescribeDBClusterBacktracks"></a>
 
 Returns information about backtracks for a DB cluster.
 

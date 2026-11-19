@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # TryDax.java
-<a name="DAX.client.TryDax.java"></a>
 
 ```
 import java.util.Map;

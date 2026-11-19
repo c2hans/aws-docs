@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_BasicAuth
 ---
 
 # BasicAuthenticationConfiguration
-<a name="API_BasicAuthenticationConfiguration"></a>
 
 Provides the configuration information to connect to websites that require basic user authentication.
 

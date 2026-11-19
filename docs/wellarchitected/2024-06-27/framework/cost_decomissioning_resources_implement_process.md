@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST04-BP02 Implement a decommissioning process
-<a name="cost_decomissioning_resources_implement_process"></a>
 
  Implement a process to identify and decommission unused resources.
 

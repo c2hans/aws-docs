@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/abs.html
 ---
 
 # $abs
-<a name="abs"></a>
 
 The `$abs` operator in Amazon DocumentDB returns the absolute value of a number. It can be used in the aggregation pipeline to perform mathematical operations on numeric fields.
 

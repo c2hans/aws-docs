@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.SKEWNE
 ---
 
 # SKEWNESS
-<a name="recipe-actions.SKEWNESS"></a>
 
 Applies transformations on your data values to change the distribution shape and its skew.
 

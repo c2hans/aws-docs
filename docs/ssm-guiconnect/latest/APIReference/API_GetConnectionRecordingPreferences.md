@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-guiconnect/latest/APIReference/API_G
 ---
 
 # GetConnectionRecordingPreferences
-<a name="API_GetConnectionRecordingPreferences"></a>
 
 Returns the preferences specified for recording RDP connections in the requesting AWS account and AWS Region.
 

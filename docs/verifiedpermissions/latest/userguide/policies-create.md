@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Creating Amazon Verified Permissions static policies
-<a name="policies-create"></a>
 
 You can create a static policy for principals to permit or forbid them from performing specified actions on specified resources for your application. A static policy has specific values included for the `principal` and `resource` and are ready to be used in authorization decisions.
 

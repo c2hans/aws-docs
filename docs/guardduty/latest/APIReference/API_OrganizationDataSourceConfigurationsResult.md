@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationDataSourceConfigurationsResult
-<a name="API_OrganizationDataSourceConfigurationsResult"></a>
 
 An object that contains information on which data sources are automatically enabled for new members within the organization.
 

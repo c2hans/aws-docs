@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_For
 ---
 
 # FormatSettings
-<a name="API_FormatSettings"></a>
 
 Contains the output format configuration for video processing.
 

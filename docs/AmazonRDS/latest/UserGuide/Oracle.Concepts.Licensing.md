@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Concep
 ---
 
 # RDS for Oracle licensing options
-<a name="Oracle.Concepts.Licensing"></a>
 
 Amazon RDS for Oracle has two licensing options: License Included (LI) and Bring Your Own License (BYOL). After you create an Oracle DB instance on Amazon RDS, you can change the licensing model by modifying the DB instance. For more information, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
 

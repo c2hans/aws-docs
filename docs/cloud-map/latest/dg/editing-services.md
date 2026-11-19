@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/editing-services.htm
 ---
 
 # Updating an AWS Cloud Map service
-<a name="editing-services"></a>
 
 Depending on a service's configuration, you can update its tags, Route 53 health check failure threshold, and time to live (TTL) for DNS resolvers. To update a service, perform the following procedure.
 

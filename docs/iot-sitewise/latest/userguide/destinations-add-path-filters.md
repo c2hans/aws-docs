@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/destinatio
 ---
 
 # Add path filters to AWS IoT SiteWise Edge destinations
-<a name="destinations-add-path-filters"></a>
 
 Add path filters to a destination. Path filters use MQTT topic syntax, where `#` is a wildcard character that matches any number of levels, and `+` is a wildcard character that matches a single level. You can add multiple destinations to a gateway, each with its own set of path filters subscribed to your equipment telemetry.
 

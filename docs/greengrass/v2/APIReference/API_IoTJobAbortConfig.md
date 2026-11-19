@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_IoTJobAbo
 ---
 
 # IoTJobAbortConfig
-<a name="API_IoTJobAbortConfig"></a>
 
 Contains a list of criteria that define when and how to cancel a configuration deployment.
 

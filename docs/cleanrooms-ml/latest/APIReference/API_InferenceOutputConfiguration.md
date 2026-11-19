@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_In
 ---
 
 # InferenceOutputConfiguration
-<a name="API_InferenceOutputConfiguration"></a>
 
 Configuration information about how the inference output is stored.
 

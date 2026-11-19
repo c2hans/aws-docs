@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # How Amazon CloudWatch Application Insights works
-<a name="appinsights-how-works"></a>
 
 CloudWatch Application Insights provides monitoring of your application resources. The following information describes how Application Insights works.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-pcr-compu
 ---
 
 # Compute PCR measurements for a custom AMI
-<a name="create-pcr-compute"></a>
 
 The `nitro-tpm-pcr-compute` utility enables you to generate the reference measurements for an Attestable AMI during build time based on its Unified Kernel Image (UKI).
 

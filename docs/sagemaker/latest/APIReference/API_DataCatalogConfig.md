@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DataCa
 ---
 
 # DataCatalogConfig
-<a name="API_DataCatalogConfig"></a>
 
 The meta data of the Glue table which serves as data catalog for the `OfflineStore`.
 

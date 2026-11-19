@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-ro-enable.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Turn on and configure EKS Auto Mode resource optimization
-<a name="auto-ro-enable"></a>
 
 You turn on, configure, and turn off EKS Auto Mode resource optimization with `ClusterResourceOptimizationPolicy` objects. A policy is a cluster-scoped Kubernetes object that you manage with `kubectl` or your GitOps tooling, like any other manifest. There is no EKS API setting for resource optimization.
 

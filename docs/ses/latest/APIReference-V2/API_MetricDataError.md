@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricDat
 ---
 
 # MetricDataError
-<a name="API_MetricDataError"></a>
 
 An error corresponding to the unsuccessful processing of a single metric data query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/account-par
 ---
 
 # account-part-of-organizations
-<a name="account-part-of-organizations"></a>
 
 Rule checks whether AWS account is part of AWS Organizations. The rule is NON\_COMPLIANT if the AWS account is not part of AWS Organizations or AWS Organizations management account ID does not match rule parameter `MasterAccountId`.
 

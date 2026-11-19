@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteEv
 ---
 
 # DeleteEvaluationForm
-<a name="API_DeleteEvaluationForm"></a>
 
 Deletes an evaluation form in the specified Connect Customer instance.
 + If the version property is provided, only the specified version of the evaluation form is deleted.

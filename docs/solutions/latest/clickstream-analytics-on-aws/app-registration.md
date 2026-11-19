@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # App registration
-<a name="app-registration"></a>
 
 After the data pipeline transitions to an **Active** state, register your application(s) with the pipeline to enable the reception of clickstream data. After the application is added, you can integrate the SDK into your application to send data to the pipeline. Complete the following steps to register an application to a data pipeline.
 

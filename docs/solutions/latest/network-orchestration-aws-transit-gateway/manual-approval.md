@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Manual approval
-<a name="manual-approval"></a>
 
 You can choose to manually approve network requests from spoke accounts, instead of automated approval. This section provides detail about this workflow.
 

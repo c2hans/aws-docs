@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # HttpApi
-<a name="sam-property-function-httpapi"></a>
 
 The object describing an event source with type HttpApi.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_UntagR
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a behavior graph.
 

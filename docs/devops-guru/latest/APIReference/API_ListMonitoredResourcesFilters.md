@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_List
 ---
 
 # ListMonitoredResourcesFilters
-<a name="API_ListMonitoredResourcesFilters"></a>
 
  Filters to determine which monitored resources you want to retrieve. You can filter by resource type or resource permission status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/endflowmoduleexe
 ---
 
 # EndFlowModuleExecution
-<a name="endflowmoduleexecution"></a>
 
 Ends the current module execution without disconnecting the contact.
 

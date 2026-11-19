@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Redirect to a new URL in a CloudFront Functions viewer request event
-<a name="example_cloudfront_functions_redirect_based_on_country_section"></a>
 
 The following code example shows how to redirect to a new URL in a CloudFront Functions viewer request event.
 

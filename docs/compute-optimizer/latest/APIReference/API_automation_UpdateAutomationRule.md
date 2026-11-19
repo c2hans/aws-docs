@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # UpdateAutomationRule
-<a name="API_automation_UpdateAutomationRule"></a>
 
  Updates an existing automation rule.
 

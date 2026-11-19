@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_EksIn
 ---
 
 # EksInfo
-<a name="API_EksInfo"></a>
 
 The information about the Amazon EKS cluster.
 

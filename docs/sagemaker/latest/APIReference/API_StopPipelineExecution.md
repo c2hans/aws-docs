@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopPi
 ---
 
 # StopPipelineExecution
-<a name="API_StopPipelineExecution"></a>
 
 Stops a pipeline execution.
 

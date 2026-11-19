@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceSummary
-<a name="API_WorkspaceSummary"></a>
 
 Contains summary information about a workspace.
 

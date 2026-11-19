@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CapacityStatus
 ---
 
 # CapacityStatus
-<a name="API_CapacityStatus"></a>
 
 Describes the capacity status for a pool of WorkSpaces.
 

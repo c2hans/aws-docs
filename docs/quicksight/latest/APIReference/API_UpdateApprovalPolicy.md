@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateApprovalPolicy
-<a name="API_UpdateApprovalPolicy"></a>
 
 Updates an approval policy in Quick Sight.
 

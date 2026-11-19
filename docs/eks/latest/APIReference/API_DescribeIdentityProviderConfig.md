@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeIden
 ---
 
 # DescribeIdentityProviderConfig
-<a name="API_DescribeIdentityProviderConfig"></a>
 
 Describes an identity provider configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/pod-identity-associati
 ---
 
 # EKS Pod Identity Associations
-<a name="pod-identity-associations"></a>
 
 AWS EKS has introduced a new enhanced mechanism called Pod Identity Association for cluster administrators to configure Kubernetes applications to receive IAM permissions required to connect with AWS services outside of the cluster. Pod Identity Association leverages IRSA, however, it makes it configurable directly through the EKS API, eliminating the need for using IAM API altogether.
 

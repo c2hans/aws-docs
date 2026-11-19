@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/glo
 ---
 
 # Disassociating a global table replica
-<a name="globaltables-disassociate"></a>
 
 You can disassociate a replica from a global table to stop replication to and from that replica without deleting its table or data. The replica becomes a single-Region table in the same AWS account and Region and keeps its table name and Amazon Resource Name (ARN). You can use this operation after a Region or account migration, or when you no longer need a table to participate in replication.
 

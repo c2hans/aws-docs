@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API
 ---
 
 # HumanLoopDataAttributes
-<a name="API_HumanLoopDataAttributes"></a>
 
 Attributes of the data specified by the customer. Use these to describe the data to be labeled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-r
 ---
 
 # Creating rules using the Enhanced Builder
-<a name="eb-create-rule-visual"></a>
 
 ## Prerequisites
 <a name="eb-create-rule-prerequisites"></a>

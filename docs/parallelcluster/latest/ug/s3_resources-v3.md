@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/s3_resources-v
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Working with Amazon S3
-<a name="s3_resources-v3"></a>
 
 You can configure AWS ParallelCluster's access to Amazon S3 through the [`HeadNode`](HeadNode-v3.md) / [`Iam`](HeadNode-v3.md#HeadNode-v3-Iam) / [`S3Access`](HeadNode-v3.md#yaml-HeadNode-Iam-S3Access) and [`Scheduling`](Scheduling-v3.md) / [`SlurmQueues`](Scheduling-v3.md#Scheduling-v3-SlurmQueues) / [`- Name`](Scheduling-v3.md#yaml-Scheduling-SlurmQueues-Name) / [`Iam`](Scheduling-v3.md#Scheduling-v3-SlurmQueues-Iam) / [`S3Access`](Scheduling-v3.md#yaml-Scheduling-SlurmQueues-Iam-S3Access) parameters in the AWS ParallelCluster configuration.
 

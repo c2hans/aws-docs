@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/getting-s
 ---
 
 # Getting started with the AWS SDK for C\+\+ code examples
-<a name="getting-started-code-examples"></a>
 
 ## Structure of the code examples
 <a name="structure"></a>

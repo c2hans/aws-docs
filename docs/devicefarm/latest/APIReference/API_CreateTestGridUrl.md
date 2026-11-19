@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateTestGridUrl
-<a name="API_CreateTestGridUrl"></a>
 
 Creates a signed, short-term URL that can be passed to a Selenium `RemoteWebDriver` constructor.
 

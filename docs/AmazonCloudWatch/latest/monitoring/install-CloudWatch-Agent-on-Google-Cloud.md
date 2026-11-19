@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/insta
 ---
 
 # Install the CloudWatch agent on Google Cloud
-<a name="install-CloudWatch-Agent-on-Google-Cloud"></a>
 
 You can run the Amazon CloudWatch agent on Google Cloud to collect metrics, logs, and traces. The agent sends this telemetry to Amazon CloudWatch in your AWS account. This page covers two environments:
 + Google Compute Engine (GCE) – You install the agent package directly on the instance.

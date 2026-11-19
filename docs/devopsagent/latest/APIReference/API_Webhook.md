@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Webh
 ---
 
 # Webhook
-<a name="API_Webhook"></a>
 
 Represents a complete Webhook with all its properties, and unique identifier.
 

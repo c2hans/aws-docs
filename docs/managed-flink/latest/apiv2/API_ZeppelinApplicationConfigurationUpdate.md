@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ZeppelinA
 ---
 
 # ZeppelinApplicationConfigurationUpdate
-<a name="API_ZeppelinApplicationConfigurationUpdate"></a>
 
 Updates to the configuration of Managed Service for Apache Flink Studio notebook.
 

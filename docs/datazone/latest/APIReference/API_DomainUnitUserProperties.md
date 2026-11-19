@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DomainU
 ---
 
 # DomainUnitUserProperties
-<a name="API_DomainUnitUserProperties"></a>
 
 The properties of the domain unit user.
 

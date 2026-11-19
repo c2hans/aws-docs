@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # PartnerThreatProtectionConfig
-<a name="API_route53resolver_PartnerThreatProtectionConfig"></a>
 
 The configuration for a partner threat-protection rule. To enumerate the partners available in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md) with `RuleType` set to `PartnerThreatProtection` — each returned [FirewallRuleTypeDefinition](API_route53resolver_FirewallRuleTypeDefinition.md) includes a [SubscriptionInfo](API_route53resolver_SubscriptionInfo.md) identifying the AWS Marketplace product that backs it.
 

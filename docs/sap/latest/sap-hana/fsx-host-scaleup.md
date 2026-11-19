@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/fsx-host-scaleup.htm
 ---
 
 # SAP HANA scale-up
-<a name="fsx-host-scaleup"></a>
 
 The following section is an example host setup for SAP HANA scale-up deployment with FSx for ONTAP.
 

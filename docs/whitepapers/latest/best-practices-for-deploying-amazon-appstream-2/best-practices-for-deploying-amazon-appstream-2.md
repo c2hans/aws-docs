@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Best Practices for Deploying Amazon WorkSpaces Applications
-<a name="best-practices-for-deploying-amazon-appstream-2"></a>
 
 Publication date: **January 19, 2022** ([Document revisions](document-revisions.md))
 

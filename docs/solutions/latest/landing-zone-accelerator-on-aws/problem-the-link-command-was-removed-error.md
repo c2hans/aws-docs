@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Problem: "The 'link' command was removed" error
-<a name="problem-the-link-command-was-removed-error"></a>
 
 We updated this solution to the newest version of `lerna` which has deprecated the "link" command. CodePipeline stages uses the link command as part of the build process for multiple stages in the pipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_T
 ---
 
 # TotalResourceUtilization
-<a name="API_TotalResourceUtilization"></a>
 
 The aggregate vCPU, memory, and storage resources used from the time job start executing till the time job is terminated, rounded up to the nearest second.
 

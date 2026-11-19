@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ByoipC
 ---
 
 # ByoipCidr
-<a name="API_ByoipCidr"></a>
 
 Information about an IP address range that is provisioned for use with your AWS resources through bring your own IP address (BYOIP).
 

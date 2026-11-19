@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Track
 ---
 
 # TrackingFilterGeometry
-<a name="API_TrackingFilterGeometry"></a>
 
 The geomerty used to filter device positions.
 

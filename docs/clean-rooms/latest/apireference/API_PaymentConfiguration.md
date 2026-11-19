@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Paym
 ---
 
 # PaymentConfiguration
-<a name="API_PaymentConfiguration"></a>
 
 An object representing the collaboration member's payment responsibilities set by the collaboration creator.
 

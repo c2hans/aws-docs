@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/colorspace-outp
 ---
 
 # Passing through color space
-<a name="colorspace-output-passthrough"></a>
 
 You can pass through any color space that Elemental Live supports, except for Dolby Vision 5.0. You can pass through both color spaces that Elemental Live supports, and color spaces that it doesn't support, so long as the output type supports the passed-through color space standard.
 

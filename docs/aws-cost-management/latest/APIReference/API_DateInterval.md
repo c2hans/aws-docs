@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DateInterval
-<a name="API_DateInterval"></a>
 
 The time period of the request.
 

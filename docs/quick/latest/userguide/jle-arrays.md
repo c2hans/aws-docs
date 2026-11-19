@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/jle-arrays.html
 ---
 
 # Array operations
-<a name="jle-arrays"></a>
 
 JSON expression language allows generic array manipulation for the following functions:
 + `map` – Applies a mapping function to each element of an array and returns a new array with the transformed values.

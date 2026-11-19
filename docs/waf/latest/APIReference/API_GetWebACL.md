@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetWebACL.ht
 ---
 
 # GetWebACL
-<a name="API_GetWebACL"></a>
 
 Retrieves the specified [WebACL](API_WebACL.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Reservation columns
-<a name="table-dictionary-cur2-reservation"></a>
 
 Reservation columns contain data about a reservation that applies to the line item.
 

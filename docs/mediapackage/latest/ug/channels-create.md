@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/channels-create.h
 ---
 
 # Creating a channel
-<a name="channels-create"></a>
 
 Create a channel to start receiving content streams. Later, you add an endpoint to the channel. This endpoint is the access point for content playback requests.
 

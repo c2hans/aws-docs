@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # CodeCaptureConfiguration
-<a name="API_CodeCaptureConfiguration"></a>
 
 Defines what data to capture for code-level instrumentation, including arguments, return values, stack traces, local variables, and safety limits.
 

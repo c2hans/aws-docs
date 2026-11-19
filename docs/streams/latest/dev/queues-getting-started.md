@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/queues-getting-starte
 ---
 
 # Get started with queues using the AWS CLI
-<a name="queues-getting-started"></a>
 
 This walkthrough uses the AWS CLI to create a queue on an On-demand stream and work through the receive-and-acknowledge cycle. You create a stream and add a few records, create a queue, receive records, extend the visibility timeout of a record, acknowledge the records you finish, and then delete the queue and the stream.
 

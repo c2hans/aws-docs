@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableIpa
 ---
 
 # EnableIpamOrganizationAdminAccount
-<a name="API_EnableIpamOrganizationAdminAccount"></a>
 
 Enable an AWS Organizations member account as the IPAM admin account. You cannot select the AWS Organizations management account as the IPAM admin account. For more information, see [Enable integration with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
 

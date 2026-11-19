@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application ConfigurationObject
-<a name="aws-properties-emrserverless-application-configurationobject"></a>
 
 A configuration specification to be used when provisioning an application. A configuration consists of a classification, properties, and optional nested configurations. A classification refers to an application-specific configuration file. Properties are the settings you want to change in that file.
 
@@ -51,7 +50,7 @@ The classification within a configuration.
 `Configurations`  <a name="cfn-emrserverless-application-configurationobject-configurations"></a>
 A list of additional configurations to apply within a configuration object.
 *Required*: No
-*Type*: Array of [ConfigurationObject](#aws-properties-emrserverless-application-configurationobject)
+*Type*: Array of [ConfigurationObject](aws-properties-emrserverless-application-configurationobject.md)
 *Minimum*: `0`
 *Maximum*: `100`
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ToolSpe
 ---
 
 # ToolSpec
-<a name="API_ToolSpec"></a>
 
 Specification for a tool that acts can invoke, including its name, description, and input schema.
 

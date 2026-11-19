@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeApplic
 ---
 
 # DescribeApplications
-<a name="API_DescribeApplications"></a>
 
 Describes the specified applications by filtering based on their compute types, license availability, operating systems, and owners.
 

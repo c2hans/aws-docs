@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListAdminAccounts
-<a name="API_ListAdminAccounts"></a>
 
 Lists the AWS Network Security Manager administrator accounts in the organization.
 

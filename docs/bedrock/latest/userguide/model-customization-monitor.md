@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-customiza
 ---
 
 # Monitor your model customization job
-<a name="model-customization-monitor"></a>
 
 You can track the progress of your model customization job. Each job consists of the following events:
 + **Validation**

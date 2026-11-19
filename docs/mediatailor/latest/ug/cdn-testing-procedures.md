@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-testing-proced
 ---
 
 # CDN integration testing procedures
-<a name="cdn-testing-procedures"></a>
 
 Proper testing is essential before deploying your MediaTailor CDN integration to production. These testing procedures help identify configuration issues, performance problems, and compatibility issues across different devices and platforms.
 

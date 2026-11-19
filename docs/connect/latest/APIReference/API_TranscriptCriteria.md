@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Transcri
 ---
 
 # TranscriptCriteria
-<a name="API_TranscriptCriteria"></a>
 
 A structure that defines search criteria base on words or phrases, participants in the Contact Lens conversational analytics transcript.
 

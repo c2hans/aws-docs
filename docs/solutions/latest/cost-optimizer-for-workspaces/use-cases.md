@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Device management**
 

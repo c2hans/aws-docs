@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # OAuth2Authentication
-<a name="API_OAuth2Authentication"></a>
 
 OAuth2 authentication information for third-party providers.
 

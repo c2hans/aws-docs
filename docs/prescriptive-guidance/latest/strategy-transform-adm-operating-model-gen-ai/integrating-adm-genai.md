@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Integrating generative AI into ADM practices
-<a name="integrating-adm-genai"></a>
 
 Generative AI reshapes ADM practices across all layers of the operating model. This transformative technology can shift an organization's focus from cost management to value creation and innovation, enabling more agile and customer-centric approaches.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_GetPrim
 ---
 
 # GetPrimaryEmailUpdateStatus
-<a name="API_GetPrimaryEmailUpdateStatus"></a>
 
 Retrieves the status of the most recent primary email update for the specified account. For complete details about how to update the primary email address, see [Update the primary email address for your AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-root-user-email.html).
 

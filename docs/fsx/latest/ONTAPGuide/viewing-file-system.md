@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/viewing-file-syste
 ---
 
 # Monitoring file system details
-<a name="viewing-file-system"></a>
 
 You can view detailed configuration information for your FSx for ONTAP file system using the Amazon FSx console, the AWS CLI, and the API and supported AWS SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Carrier lookup
-<a name="nx-features-carrier-lookup"></a>
 
 AWS End User Messaging includes a carrier lookup service that you can use to obtain information about a phone number, including if the phone number is valid. The carrier lookup service returns the following information for a phone number:
 + The phone number in E164 format (sanitized from the original input).

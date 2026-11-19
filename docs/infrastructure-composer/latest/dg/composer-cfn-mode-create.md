@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/compos
 ---
 
 # Create a new template in Infrastructure Composer in CloudFormation console mode
-<a name="composer-cfn-mode-create"></a>
 
 Follow the instructions in this topic to create a new template.
 

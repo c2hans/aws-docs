@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketNotificationConfiguration
-<a name="API_AwsS3BucketNotificationConfiguration"></a>
 
 The notification configuration for the S3 bucket.
 

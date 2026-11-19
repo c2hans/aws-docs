@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/key-conc
 ---
 
 # Key concepts
-<a name="key-concepts"></a>
 
 Described below are the key concepts and terms that apply to all visualizations within the AWS Sustainability console and the corresponding API.
 

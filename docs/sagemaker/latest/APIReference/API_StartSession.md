@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartS
 ---
 
 # StartSession
-<a name="API_StartSession"></a>
 
 Initiates a remote connection session between a local integrated development environments (IDEs) and a remote SageMaker space.
 

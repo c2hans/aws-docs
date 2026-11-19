@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/failback-failover-d
 ---
 
 # One-click failback
-<a name="failback-failover-drsfa-one-click"></a>
 
 After the client connects and completes verification, the main menu displays:
 

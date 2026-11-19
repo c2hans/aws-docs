@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/other-actions.html
 ---
 
 # Taking other actions during a meeting
-<a name="other-actions"></a>
 
 You use the **Other actions** menu to take additional actions during an Amazon Chime meeting. The actions available depend on your role in the meeting. For example, attendees can adding other attendees or change their notifications during a meeting. Organizers, hosts, and delegates can lock or record meetings, mute other attendees, and more.
 

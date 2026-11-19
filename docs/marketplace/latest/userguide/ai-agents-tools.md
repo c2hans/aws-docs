@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ai-agents-t
 ---
 
 # AI agent products
-<a name="ai-agents-tools"></a>
 
 ## What are AI agent products?
 <a name="what-are-ai-agents"></a>

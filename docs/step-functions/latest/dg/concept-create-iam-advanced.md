@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/concept-create-
 ---
 
 # Creating granular permissions for non-admin users in Step Functions
-<a name="concept-create-iam-advanced"></a>
 
 The default managed policies in IAM, such as `ReadOnly`, don't fully cover all types of AWS Step Functions permissions. This section describes these different types of permissions and provides some example configurations.
 

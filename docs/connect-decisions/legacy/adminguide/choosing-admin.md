@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/choo
 ---
 
 # Step 3: Choose an AWS Supply Chain application owner
-<a name="choosing-admin"></a>
 
 As an AWS console administrator, you choose an AWS Supply Chain application owner to manage the AWS Supply Chain web application access. The AWS Supply Chain application owner can add or remove user permission roles to the AWS Supply Chain web application.
 

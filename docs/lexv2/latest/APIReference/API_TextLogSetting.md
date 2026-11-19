@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TextLogSet
 ---
 
 # TextLogSetting
-<a name="API_TextLogSetting"></a>
 
 Defines settings to enable text conversation logs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateRouter
 ---
 
 # UpdateRouterNetworkInterface
-<a name="API_UpdateRouterNetworkInterface"></a>
 
 Updates the configuration of an existing router network interface in AWS Elemental MediaConnect.
 

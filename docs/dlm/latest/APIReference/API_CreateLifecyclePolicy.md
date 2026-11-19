@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_CreateLifecy
 ---
 
 # CreateLifecyclePolicy
-<a name="API_CreateLifecyclePolicy"></a>
 
 Creates an Amazon Data Lifecycle Manager lifecycle policy. Amazon Data Lifecycle Manager supports the following policy types:
 + Custom EBS snapshot policy

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationDiscoveryAgentlessCollectorAccess
-<a name="AWSApplicationDiscoveryAgentlessCollectorAccess"></a>
 
 **Description**: Allows Application Discovery Service Agentless Collectors to auto update, register, and communicate with Application Discovery Service
 

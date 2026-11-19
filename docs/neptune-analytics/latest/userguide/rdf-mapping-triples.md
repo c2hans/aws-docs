@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/rdf-m
 ---
 
 # Mapping RDF triples to LPG concepts
-<a name="rdf-mapping-triples"></a>
 
  There are three rules that define how RDF triples correspond to LPG concepts:
 

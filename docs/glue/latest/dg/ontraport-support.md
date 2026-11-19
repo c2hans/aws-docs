@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/ontraport-support.html
 ---
 
 # AWS Glue support for Ontraport
-<a name="ontraport-support"></a>
 
 AWS Glue supports Ontraport as follows:
 

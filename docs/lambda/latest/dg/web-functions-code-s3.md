@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-code-s3.h
 ---
 
 # Deploying Web Function code from Amazon S3
-<a name="web-functions-code-s3"></a>
 
 You provide Lambda Web Function code as a .zip deployment package in an Amazon S3 bucket. This is the only way to supply code for a Web Function. When you create a Web Function or revision, specify the object in the `s3Object` field, which is nested under `codeConfig` inside the request's `buildConfig`. In `s3Object`, include the bucket, key, and an optional versionId. Lambda references your code directly from your bucket. Because Lambda pins each revision to a specific object version, your deployments are reproducible. You can reuse a single deployment package across accounts and AWS Regions.
 

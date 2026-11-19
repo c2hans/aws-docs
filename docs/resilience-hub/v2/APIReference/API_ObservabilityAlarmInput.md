@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Obser
 ---
 
 # ObservabilityAlarmInput
-<a name="API_ObservabilityAlarmInput"></a>
 
 Identifies an observability alarm by its ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_RuleCondition.
 ---
 
 # RuleCondition
-<a name="API_RuleCondition"></a>
 
 The conditions for a routing rule. All specified fields must match for the rule to apply (AND logic). At least one condition field must be set.
 

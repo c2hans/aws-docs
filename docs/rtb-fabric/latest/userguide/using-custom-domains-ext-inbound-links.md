@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/using-custom
 ---
 
 # Using custom domains with inbound external links
-<a name="using-custom-domains-ext-inbound-links"></a>
 
 **Topics**
 + [Overview](#custom-domain-overview)

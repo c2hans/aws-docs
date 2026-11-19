@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-ad
 ---
 
 # Quotas
-<a name="studio-updated-jl-admin-guide-quotas"></a>
 
 JupyterLab, has quotas for the following:
 + The sum of all Amazon EBS volumes within an AWS account.

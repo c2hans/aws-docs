@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/what-is-flow-live
 ---
 
 # Live content processing
-<a name="what-is-flow-live"></a>
 
 In the processing flow for live content, encoders send live HLS streams to MediaPackage. MediaPackage then packages the content, formatting it in response to playback requests from downstream devices.
 

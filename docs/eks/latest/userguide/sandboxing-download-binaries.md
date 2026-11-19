@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sandboxing-download
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Download and verify the runtime binaries
-<a name="sandboxing-download-binaries"></a>
 
 If you build your own node images instead of using the AMIs that AWS manages, you install the Nitro Sandbox runtime binaries yourself. AWS publishes them as a signed release for each supported architecture (`x86_64` and `aarch64`), under the AWS Intellectual Property License. The binaries require glibc 2.34 or later. You do not need an AWS account to download or verify a release.
 

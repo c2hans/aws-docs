@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/qu
 ---
 
 # Game session placement insights
-<a name="queues-placement-insights"></a>
 
 Game session placement insights give you detailed logs about how Amazon GameLift Servers processes game session placement requests through a game session queue. The logs show how Amazon GameLift Servers applied the queue's priority configuration, along with player latency and cost data, to each game session placement request. Use game session placement insights to diagnose why game session placements succeed, fail, or time out.
 

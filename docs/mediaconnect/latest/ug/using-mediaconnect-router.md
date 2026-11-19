@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/using-mediaconnec
 ---
 
 # Using the MediaConnect router
-<a name="using-mediaconnect-router"></a>
 
 The AWS Elemental MediaConnect router enables you to manage live video and audio routing both within the AWS Cloud and over the public internet.
 

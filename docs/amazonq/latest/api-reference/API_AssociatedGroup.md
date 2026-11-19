@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Associa
 ---
 
 # AssociatedGroup
-<a name="API_AssociatedGroup"></a>
 
 Represents a group associated with a given user in the access control system.
 

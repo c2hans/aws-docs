@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotTypeSo
 ---
 
 # SlotTypeSortBy
-<a name="API_SlotTypeSortBy"></a>
 
 Specifies attributes for sorting a list of slot types.
 

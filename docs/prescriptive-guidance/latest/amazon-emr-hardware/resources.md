@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-emr-
 ---
 
 # Resources
-<a name="resources"></a>
 + [What is Amazon EMR?](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html)
 + [Amazon EMR features](https://aws.amazon.com/emr/features/)
 + [Considerations and best practices for Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-ha-considerations.html)

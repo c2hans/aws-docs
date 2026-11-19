@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/step-4-review-
 ---
 
 # Step 4: Review your workflow runs in the Nova Act console
-<a name="step-4-review-workflow-runs"></a>
 
 The Nova Act AWS console provides visibility into your workflow execution with detailed traces and artifacts.
 

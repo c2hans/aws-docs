@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Standar
 ---
 
 # StandardsControlAssociationDetail
-<a name="API_StandardsControlAssociationDetail"></a>
 
  Provides details about a control's enablement status in a specified standard.
 

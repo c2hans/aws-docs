@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetCollaborationMLInputChannel
-<a name="API_GetCollaborationMLInputChannel"></a>
 
 Returns information about a specific ML input channel in a collaboration.
 

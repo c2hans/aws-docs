@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/procedure-to-enable-
 ---
 
 # Enabling decoration – Microsoft Smooth
-<a name="procedure-to-enable-decoration-ms-smooth"></a>
 
 In a Microsoft Smooth output group, if you enable manifest decoration, instructions are inserted in the sparse track.
 

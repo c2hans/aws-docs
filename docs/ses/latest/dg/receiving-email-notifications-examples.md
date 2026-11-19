@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-notificati
 ---
 
 # Examples of notifications for Amazon SES email receiving
-<a name="receiving-email-notifications-examples"></a>
 
 This section includes examples of the following types of notifications:
 + [A notification sent as a result of an SNS action.](#receiving-email-notifications-examples-sns-action)

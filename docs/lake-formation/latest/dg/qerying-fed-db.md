@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/qerying-fed-db.
 ---
 
 # Querying federated databases
-<a name="qerying-fed-db"></a>
 
  After you grant permissions, users can sign in and start querying the federated database using Amazon Redshift. Users can now use the local database name to reference the Amazon Redshift datashare in SQL queries. In Amazon Redshift, the customer table in the public schema that is shared through the datashare will have a corresponding table created as `public.customer` in the Data Catalog.
 

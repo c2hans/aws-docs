@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetails"></a>
 
 A ulimit to set in the container.
 

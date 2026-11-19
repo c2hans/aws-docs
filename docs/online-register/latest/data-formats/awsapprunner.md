@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS App Runner
-<a name="awsapprunner"></a>
 
 AWS App Runner provides the following APIs for data retrieval.
 

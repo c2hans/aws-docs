@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/backup_restor
 ---
 
 # Sharing Amazon DocumentDB cluster snapshots
-<a name="backup_restore-share_cluster_snapshots"></a>
 
 Using Amazon DocumentDB, you can share a manual cluster snapshot in the following ways:
 + Sharing a manual cluster snapshot, whether encrypted or unencrypted, enables authorized AWS accounts to copy the snapshot.

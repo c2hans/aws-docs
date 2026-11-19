@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/security-iam-rosa-
 ---
 
 # ROSA classic operator policies
-<a name="security-iam-rosa-classic-operator-policies"></a>
 
 This section provides details about the operator policies that are required for ROSA classic. Before you can create a ROSA classic cluster, you must first attach these policies to the relevant operator roles. A unique set of operator roles is required for each cluster.
 

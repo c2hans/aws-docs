@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_Organizat
 ---
 
 # OrganizationEventFilter
-<a name="API_OrganizationEventFilter"></a>
 
 The values to filter results from the [DescribeEventsForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventsForOrganization.html) operation.
 
@@ -100,6 +99,18 @@ Required: No
  ** startTime **   <a name="AWSHealth-Type-OrganizationEventFilter-startTime"></a>
 A range of dates and times that is used by the [EventFilter](https://docs.aws.amazon.com/health/latest/APIReference/API_EventFilter.html) and [EntityFilter](https://docs.aws.amazon.com/health/latest/APIReference/API_EntityFilter.html) objects. If `from` is set and `to` is set: match items where the timestamp (`startTime`, `endTime`, or `lastUpdatedTime`) is between `from` and `to` inclusive. If `from` is set and `to` is not set: match items where the timestamp value is equal to or after `from`. If `from` is not set and `to` is set: match items where the timestamp value is equal to or before `to`.
 Type: [DateTimeRange](API_DateTimeRange.md) object
+Required: No
+
+ ** tags **   <a name="AWSHealth-Type-OrganizationEventFilter-tags"></a>
+A map of tag keys to lists of tag values. A tag matches when its key is in the map and its value is one of the values listed for that key. Matching is case sensitive, and the filter matches when at least one key in the map matches.
+An event is returned when one of its affected accounts, or one of the entities of those accounts, has tags that match.
+Type: String to array of strings map
+Map Entries: Minimum number of 0 items. Maximum number of 10 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 127.
+Key Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{1,127}`
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Length Constraints: Minimum length of 0. Maximum length of 255.
+Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{0,255}`
 Required: No
 
 ## See Also

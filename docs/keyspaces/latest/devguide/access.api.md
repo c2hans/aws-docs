@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/access.api.htm
 ---
 
 # Using the API to connect to Amazon Keyspaces
-<a name="access.api"></a>
 
  You can use the AWS SDK and the AWS Command Line Interface (AWS CLI) to work interactively with Amazon Keyspaces. You can use the API for data language definition (DDL) operations, such as creating a keyspace or a table. In addition, you can use infrastructure as code (IaC) services and tools such as AWS CloudFormation and Terraform.
 

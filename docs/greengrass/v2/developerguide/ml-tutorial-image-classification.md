@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/ml-tutorial
 ---
 
 # Tutorial: Perform sample image classification inference using TensorFlow Lite
-<a name="ml-tutorial-image-classification"></a>
 
 This tutorial shows you how to use the [TensorFlow Lite image classification](tensorflow-lite-image-classification-component.md) inference component to perform sample image classification inference on a Greengrass core device. This component includes the following component dependencies:
 + TensorFlow Lite image classification model store component

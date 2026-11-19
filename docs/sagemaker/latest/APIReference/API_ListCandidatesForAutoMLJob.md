@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCa
 ---
 
 # ListCandidatesForAutoMLJob
-<a name="API_ListCandidatesForAutoMLJob"></a>
 
 List the candidates created for the job.
 

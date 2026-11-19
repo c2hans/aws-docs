@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_IamIde
 ---
 
 # IamIdentity
-<a name="API_IamIdentity"></a>
 
 The IAM Identity details associated with the user. These details are associated with model package groups, model packages and project entities only.
 

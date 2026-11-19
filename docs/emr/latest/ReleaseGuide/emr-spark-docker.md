@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-docker
 ---
 
 # Run Spark applications with Docker on Amazon EMR 6.x
-<a name="emr-spark-docker"></a>
 
 **Note**
 The procedure described works only with Amazon EMR version 6.x.

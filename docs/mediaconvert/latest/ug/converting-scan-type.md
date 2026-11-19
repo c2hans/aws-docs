@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/converting-scan-t
 ---
 
 # Converting the scan type of your video
-<a name="converting-scan-type"></a>
 
  After you know how you want to specify the relevant settings, use one of the following procedures to set up your job. For conceptual information and guidance about choosing the right values for these settings, see [Settings for scan type conversion](working-with-scan-type.md#settings-for-scan-type-conversion).
 

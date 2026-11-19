@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Evaluate
 ---
 
 # EvaluateCode
-<a name="API_EvaluateCode"></a>
 
 Evaluates the given code and returns the response. The code definition requirements depend on the specified runtime. For `APPSYNC_JS` runtimes, the code defines the request and response functions. The request function takes the incoming request after a GraphQL operation is parsed and converts it into a request configuration for the selected data source operation. The response function interprets responses from the data source and maps it to the shape of the GraphQL field output type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_ListK
 ---
 
 # ListKeyPhrasesDetectionJobs
-<a name="API_ListKeyPhrasesDetectionJobs"></a>
 
 Get a list of key phrase detection jobs that you have submitted.
 

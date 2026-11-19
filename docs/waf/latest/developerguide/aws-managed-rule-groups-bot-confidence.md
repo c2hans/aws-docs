@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-ru
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Bot confidence levels
-<a name="aws-managed-rule-groups-bot-confidence"></a>
 
 Starting with version 8.0, the targeted protection level of the Bot Control managed rule group combines the targeted detection signals on a web request into a single bot confidence level: High, Medium, or Low. The rule group adds the level to the request as a label. The confidence level indicates how strongly the targeted detections on the request point to an automated client. Requests that don't have any targeted detection signals don't receive a confidence level label.
 

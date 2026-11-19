@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_EnableL
 ---
 
 # EnableLogging
-<a name="API_EnableLogging"></a>
 
 Starts logging information, such as queries and connection attempts, for the specified Amazon Redshift cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/notification-sound-off.h
 ---
 
 # Turning off the notification sound
-<a name="notification-sound-off"></a>
 
 You use the Amazon Chime settings to turn off the notification sound.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/metrics-di
 ---
 
 # CodePipeline CloudWatch metrics
-<a name="metrics-dimensions"></a>
 
 You can use metrics in CloudWatch to measure CodePipeline pipelines. You can use the following metrics to measure pipeline duration and failed pipeline executions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Migrate to version 4.x of the Java client-side encryption library for DynamoDB
-<a name="ddb-java-migrate"></a>
 
 |  |
 | --- |

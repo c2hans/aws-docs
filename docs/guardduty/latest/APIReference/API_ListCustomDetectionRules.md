@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListCu
 ---
 
 # ListCustomDetectionRules
-<a name="API_ListCustomDetectionRules"></a>
 
 Returns all available custom detection rules in GuardDuty. You can filter the results by data source, severity, tactic, technique, and service.
 

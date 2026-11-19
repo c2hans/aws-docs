@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Cance
 ---
 
 # CancelLegalHold
-<a name="API_CancelLegalHold"></a>
 
 Removes the specified legal hold on a recovery point. This action can only be performed by a user with sufficient permissions.
 

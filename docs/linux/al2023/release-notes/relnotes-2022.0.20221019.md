@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2022
 ---
 
 # Amazon Linux 2023 version 2022.0.20221019 release notes
-<a name="relnotes-2022.0.20221019"></a>
 
 **Note**
 These release notes are for a version of the Tech Preview of Amazon Linux 2023. This is an old Tech Preview and should no longer be used.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestS
 ---
 
 # TestSourceSummary
-<a name="API_TestSourceSummary"></a>
 
 A configured monitoring source returned by ListTestSources. Exactly one member is set.
 

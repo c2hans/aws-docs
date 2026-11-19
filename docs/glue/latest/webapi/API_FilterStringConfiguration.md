@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FilterStringConfi
 ---
 
 # FilterStringConfiguration
-<a name="API_FilterStringConfiguration"></a>
 
 Configuration for constructing filter expression strings when using the `FILTER_STRING` filter mode.
 

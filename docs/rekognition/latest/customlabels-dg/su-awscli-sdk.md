@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/su-aw
 ---
 
 # Step 4: Set up the AWS CLI and AWS SDKs
-<a name="su-awscli-sdk"></a>
 
 You can use Amazon Rekognition Custom Labels with the AWS Command Line Interface (AWS CLI) and AWS SDKs. If you need to run Amazon Rekognition Custom Labels operations from the terminal, install the AWS CLI. If you are creating an application, download the AWS SDK for the programming language that you are using.
 

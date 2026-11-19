@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Rout
 ---
 
 # Route53RecoveryReadinessServiceRolePolicy
-<a name="Route53RecoveryReadinessServiceRolePolicy"></a>
 
 **Description**: Service Linked Role Policy for Route 53 Recovery Readiness
 

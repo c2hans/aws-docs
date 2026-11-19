@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-bill
 ---
 
 # Billing
-<a name="qbiz-indexes-billing"></a>
 
 When using Amazon Q Business indexes in AWS Quick, billing works as follows:
 

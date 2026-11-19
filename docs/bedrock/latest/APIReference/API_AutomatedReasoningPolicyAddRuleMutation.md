@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyAddRuleMutation
-<a name="API_AutomatedReasoningPolicyAddRuleMutation"></a>
 
 A mutation operation that adds a new rule to the policy definition during the build process.
 

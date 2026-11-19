@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-guidelines
 ---
 
 # Guidelines for Amazon MSK tiered storage topic-level configuration
-<a name="msk-guidelines-tiered-storage-topic-level-config"></a>
 
 The following are default settings and limitations when you configure tiered storage at the topic level.
 + Amazon MSK doesn't support smaller log segment sizes for topics with tiered storage activated. If you want to create a segment, there is a minimum log segment size of 48 MiB, or a minimum segment roll time of 10 minutes. These values map to the segment.bytes and segment.ms properties.

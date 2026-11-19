@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_ListDa
 ---
 
 # ListDatasourcePackages
-<a name="API_ListDatasourcePackages"></a>
 
 Lists data source packages in the behavior graph.
 

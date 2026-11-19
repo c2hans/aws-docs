@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Cr
 ---
 
 # CreateAccountStatus
-<a name="API_CreateAccountStatus"></a>
 
 Contains the status about a [CreateAccount](API_CreateAccount.md) or [CreateGovCloudAccount](API_CreateGovCloudAccount.md) request to create an AWS account or an AWS GovCloud (US) account in an organization.
 

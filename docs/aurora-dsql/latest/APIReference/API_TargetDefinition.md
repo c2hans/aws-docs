@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Targ
 ---
 
 # TargetDefinition
-<a name="API_TargetDefinition"></a>
 
 Target definition for stream destination.
 

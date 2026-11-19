@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteAnomalySubscription
-<a name="API_DeleteAnomalySubscription"></a>
 
 Deletes a cost anomaly subscription.
 

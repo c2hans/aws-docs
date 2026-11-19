@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-configurat
 ---
 
 # Update configuration
-<a name="msk-configuration-operations-update"></a>
 
 This process describes how to update a custom Amazon MSK configuration.
 

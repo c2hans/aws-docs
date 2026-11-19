@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkEKSImageBuild
-<a name="AWSElasticBeanstalkEKSImageBuild"></a>
 
 **Description**: Permissions needed by Elastic Beanstalk to build container images on behalf of customer.
 

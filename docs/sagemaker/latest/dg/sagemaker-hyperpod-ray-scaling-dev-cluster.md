@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Scaling a development cluster
-<a name="sagemaker-hyperpod-ray-scaling-dev-cluster"></a>
 
 You scale a Ray cluster by changing the worker count directly, or by turning on autoscaling so Ray adds and removes workers with load.
 

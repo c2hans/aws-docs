@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # RowScope
-<a name="API_RowScope"></a>
 
 A single additive row-level filter on an AccessGrant. A row is visible when its value for the given field matches the filter's values. Row filters are additive: the visible rows are the union of all row filters across a principal's matching grants.
 

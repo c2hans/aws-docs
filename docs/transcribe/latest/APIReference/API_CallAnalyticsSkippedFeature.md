@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CallA
 ---
 
 # CallAnalyticsSkippedFeature
-<a name="API_CallAnalyticsSkippedFeature"></a>
 
 Represents a skipped analytics feature during the analysis of a call analytics job.
 

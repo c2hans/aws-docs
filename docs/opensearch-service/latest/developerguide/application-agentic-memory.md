@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # AI Assistant Memory in Amazon OpenSearch Service
-<a name="application-agentic-memory"></a>
 
 AI Assistant Memory is a service-managed memory layer that powers Agentic Chat and the Investigation Agent. It retains context within your conversation or investigation, so that you have a consistent experience across different feature pages, browser tabs, and page refreshes. AI Assistant Memory works automatically and requires no user configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # MskMonitoringParameters
-<a name="API_MskMonitoringParameters"></a>
 
  Configuration parameters for Amazon MSK cluster monitoring, including enhanced monitoring level settings.
 

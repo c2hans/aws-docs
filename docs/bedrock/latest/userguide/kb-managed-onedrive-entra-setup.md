@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-oned
 ---
 
 # Set up Microsoft Entra App ID authentication for OneDrive
-<a name="kb-managed-onedrive-entra-setup"></a>
 
 Microsoft Entra App ID authentication (`ENTRA_APP_ID`) is the recommended authentication method for a OneDrive data source. The connector crawls content with the OAuth 2.0 client-credentials (application-only) flow, using your application's client ID and secret — no user sign-in is involved. This is the only authentication method that supports document-level access control (ACLs). For a comparison with the alternative `OAUTH2` method, see [Authentication methods](kb-managed-ds-onedrive.md#kb-managed-onedrive-auth-methods).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTa
 ---
 
 # Backing up, restoring, and exporting data
-<a name="CHAP_CommonTasks.BackupRestore"></a>
 
 This section shows how to back up, restore, and export data from an Amazon RDS DB instance or Multi-AZ DB cluster.
 

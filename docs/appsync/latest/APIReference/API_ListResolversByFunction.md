@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListReso
 ---
 
 # ListResolversByFunction
-<a name="API_ListResolversByFunction"></a>
 
 List the resolvers that are associated with a specific function.
 

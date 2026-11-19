@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # DeleteCoreNetworkEndpoint
-<a name="API_route53globalresolver_DeleteCoreNetworkEndpoint"></a>
 
 Deletes a core network endpoint. This operation cannot be undone.
 

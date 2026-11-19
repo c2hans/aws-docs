@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSRoboMakerServiceRolePolicy
-<a name="AWSRoboMakerServiceRolePolicy"></a>
 
 **Description**: RoboMaker service policy
 

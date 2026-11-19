@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # TypeConfigurationDetails
-<a name="API_TypeConfigurationDetails"></a>
 
 Detailed information concerning the specification of a CloudFormation extension in a given account and Region.
 

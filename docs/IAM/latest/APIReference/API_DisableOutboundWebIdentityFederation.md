@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DisableOutbo
 ---
 
 # DisableOutboundWebIdentityFederation
-<a name="API_DisableOutboundWebIdentityFederation"></a>
 
 Disables the outbound identity federation feature for your AWS account. When disabled, IAM principals in the account cannot use the `GetWebIdentityToken` API to obtain JSON Web Tokens (JWTs) for authentication with external services. This operation does not affect tokens that were issued before the feature was disabled.
 

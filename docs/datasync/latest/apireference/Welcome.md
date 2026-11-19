@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/Welcome.htm
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 In addition to the AWS Management Console and AWS Command Line Interface, you can use the AWS DataSync API to configure and manage DataSync with the [AWS SDKs](http://aws.amazon.com/developer/tools/).
 
@@ -11,4 +10,4 @@ In addition to the AWS Management Console and AWS Command Line Interface, you ca
 
 This API interface reference includes documentation for using DataSync programmatically. For complete information, see the * [AWS DataSync User Guide](https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html) *.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

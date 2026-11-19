@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-ml-
 ---
 
 # Neptune ML model transform API
-<a name="data-api-dp-ml-transform"></a>
 
 **Model transform actions:**
 + [StartMLModelTransformJob (action)](#StartMLModelTransformJob)

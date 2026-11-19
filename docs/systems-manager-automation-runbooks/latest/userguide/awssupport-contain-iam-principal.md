@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ContainIAMPrincipal`
-<a name="awssupport-contain-iam-principal"></a>
 
  **Description**
 

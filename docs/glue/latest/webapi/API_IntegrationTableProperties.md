@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IntegrationTableP
 ---
 
 # IntegrationTableProperties
-<a name="API_IntegrationTableProperties"></a>
 
 The properties of a single integration table, including the resource ARN, the table name, and the source or target table configuration.
 

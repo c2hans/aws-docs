@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetCloudExad
 ---
 
 # GetCloudExadataInfrastructureUnallocatedResources
-<a name="API_GetCloudExadataInfrastructureUnallocatedResources"></a>
 
 Retrieves information about unallocated resources in a specified Cloud Exadata Infrastructure.
 

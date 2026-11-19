@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-inde
 ---
 
 # `CREATE INDEX`
-<a name="create-index-syntax-support"></a>
 
 `CREATE INDEX` defines a new index. In Aurora DSQL, index creation is always asynchronous, so you must specify the `ASYNC` keyword. For information about how Aurora DSQL runs asynchronous index builds and how to monitor them, see [Asynchronous indexes in Aurora DSQL](working-with-create-index-async.md).
 

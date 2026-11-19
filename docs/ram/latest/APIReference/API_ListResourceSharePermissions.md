@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListResource
 ---
 
 # ListResourceSharePermissions
-<a name="API_ListResourceSharePermissions"></a>
 
 Lists the AWS RAM permissions that are associated with a resource share.
 

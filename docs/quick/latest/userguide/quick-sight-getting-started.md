@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quick-sight-getti
 ---
 
 # Getting started with AWS Quick Sight
-<a name="quick-sight-getting-started"></a>
 
 AWS Quick Sight is the data visualization and analysis component of AWS Quick. This section walks you through creating your first analysis using sample data, including uploading datasets, creating visualizations with AutoGraph, and sharing your results through dashboards.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DataSourceConfig
-<a name="API_DataSourceConfig"></a>
 
  The configuration that specifies where to read agent traces for online evaluation.
 

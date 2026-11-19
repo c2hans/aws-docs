@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Cross-interactivity using events
-<a name="cross-interactivity"></a>
 
 In some scenarios, multiple micro-frontends might need to interact with each other to react to state changes or user actions. For example, multiple micro-frontends on the page can include collapsible menus. A menu appears when the user chooses a button. The menu closes when the user clicks anywhere else, including another menu that a different micro-frontend renders.
 

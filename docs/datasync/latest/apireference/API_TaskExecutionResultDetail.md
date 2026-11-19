@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_TaskExe
 ---
 
 # TaskExecutionResultDetail
-<a name="API_TaskExecutionResultDetail"></a>
 
 Provides detailed information about the result of your AWS DataSync task execution.
 

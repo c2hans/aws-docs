@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # Datapoint
-<a name="API_Datapoint"></a>
 
 Encapsulates the statistical data that CloudWatch computes from metric data.
 

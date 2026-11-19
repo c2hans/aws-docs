@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetCompl
 ---
 
 # GetComplianceDetail
-<a name="API_GetComplianceDetail"></a>
 
 Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy.
 

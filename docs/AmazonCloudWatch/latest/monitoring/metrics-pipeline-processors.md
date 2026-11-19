@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metri
 ---
 
 # Metrics pipeline processors
-<a name="metrics-pipeline-processors"></a>
 
 Metrics pipeline processors transform OTel metric datapoints during ingestion. A metrics pipeline can have up to 20 processors, applied sequentially in the order they are defined.
 

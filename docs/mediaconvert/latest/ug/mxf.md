@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/mxf.html
 ---
 
 # Creating MXF outputs
-<a name="mxf"></a>
 
 MXF is an output container format that carries video content for editing, archiving, and exchange. The MXF format is governed by a set of specifications, some of which define *MXF profiles*, also called shims. These MXF profiles lay out constraints on encoding settings including video codec, resolution, and bitrate.
 

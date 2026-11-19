@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpc
 ---
 
 # CreateVpcEndpointServiceConfiguration
-<a name="API_CreateVpcEndpointServiceConfiguration"></a>
 
 Creates a VPC endpoint service to which service consumers (AWS accounts, users, and IAM roles) can connect.
 

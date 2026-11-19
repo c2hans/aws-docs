@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/how-dynamic-inputs-w
 ---
 
 # Static inputs and dynamic inputs
-<a name="how-dynamic-inputs-work"></a>
 
 If your MediaLive channel includes files inputs, you should decide if you want to set up each input as a *static input* or as a *dynamic input*. Using dynamic inputs lets you increase the number of video sources that you can use in the channel, while still observing the limit on the number of inputs that you can attach to the channel.
 

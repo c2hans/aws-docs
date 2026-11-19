@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/cog
 ---
 
 # Editing Amazon Verified Permissions Amazon Cognito identity sources
-<a name="cognito-edit"></a>
 
 You can edit some parameters of your identity source after you create it. You can't change the type of identity source, you have to delete the identity source and create a new one to switch from Amazon Cognito to OIDC or OIDC to Amazon Cognito. If your policy store schema matches your identity source attributes, note that you must update your schema separately to reflect the changes that you make to your identity source.
 

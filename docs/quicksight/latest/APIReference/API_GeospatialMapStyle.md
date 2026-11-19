@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialMapStyle
-<a name="API_GeospatialMapStyle"></a>
 
 The map style properties for a map.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/logging-using-cloudtrail
 ---
 
 # Viewing events with AWS CloudTrail for Lex V2
-<a name="logging-using-cloudtrail"></a>
 
 Amazon Lex V2 is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Amazon Lex V2. CloudTrail captures API calls for Amazon Lex V2 as events. The calls captured include calls from the Amazon Lex V2 console and code calls to the Amazon Lex V2 API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Amazon Lex V2. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to Amazon Lex V2, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

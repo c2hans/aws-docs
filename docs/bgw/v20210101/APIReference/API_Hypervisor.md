@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_Hyperviso
 ---
 
 # Hypervisor
-<a name="API_Hypervisor"></a>
 
 Represents the hypervisor's permissions to which the gateway will connect.
 

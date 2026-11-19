@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListEntities
 ---
 
 # ListEntitiesForPolicy
-<a name="API_ListEntitiesForPolicy"></a>
 
 Lists all IAM users, groups, and roles that the specified managed policy is attached to.
 

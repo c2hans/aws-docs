@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # DeploymentLifecycleHookTimeoutConfiguration
-<a name="API_DeploymentLifecycleHookTimeoutConfiguration"></a>
 
 The timeout configuration for a deployment lifecycle hook. This determines how long Amazon ECS waits for the hook to complete before taking the specified timeout action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/porting-cha
 ---
 
 # FreeRTOS porting flowchart
-<a name="porting-chart"></a>
 
 Use the porting flowchart below as a visual aid, as you port FreeRTOS to your board.
 

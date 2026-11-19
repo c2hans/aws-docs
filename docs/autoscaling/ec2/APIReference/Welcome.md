@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/Welcome.htm
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the *Amazon EC2 Auto Scaling API Reference*. Amazon EC2 Auto Scaling is designed to automatically launch and terminate EC2 instances based on user-defined scaling policies, scheduled actions, and health checks. This guide describes the Amazon EC2 Auto Scaling operations that you can call programmatically. For more information about Amazon EC2 Auto Scaling, see the [Amazon EC2 Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html).
 
@@ -29,4 +28,4 @@ The [DescribeAutoScalingGroups](https://docs.aws.amazon.com/autoscaling/ec2/APIR
 + For information about the permissions that are required for Amazon EC2 Auto Scaling, see [ IAM permissions for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/security-iam.html).
 + For information about how to provide network connectivity for instances in an Auto Scaling group, see [Provide network connectivity for your Auto Scaling instances using Amazon VPC](https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-in-vpc.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

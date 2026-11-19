@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSIS.Monitor.
 ---
 
 # Monitoring the status of a deployment task
-<a name="SSIS.Monitor"></a>
 
 To track the status of your deployment task, call the `rds_fn_task_status` function. It takes two parameters. The first parameter should always be `NULL` because it doesn't apply to SSIS. The second parameter accepts a task ID.
 

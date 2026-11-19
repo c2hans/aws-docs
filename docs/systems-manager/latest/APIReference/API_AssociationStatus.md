@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AssociationStatus
-<a name="API_AssociationStatus"></a>
 
 Describes an association status.
 

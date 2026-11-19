@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # JobOutputOptions
-<a name="API_geojobs_JobOutputOptions"></a>
 
 Configuration for output data location and format.
 

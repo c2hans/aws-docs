@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # GetIngestionStream
-<a name="API_GetIngestionStream"></a>
 
 Returns information about an ingestion stream, including its configuration, status, and processing state.
 

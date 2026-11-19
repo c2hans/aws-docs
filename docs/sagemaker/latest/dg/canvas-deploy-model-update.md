@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-deploy-model-
 ---
 
 # Update a deployment configuration
-<a name="canvas-deploy-model-update"></a>
 
 You can update the deployment configuration for models that you've deployed to endpoints in Amazon SageMaker Canvas. For example, you can deploy an updated model version to the endpoint, or you can update the instance type or number of instances behind the endpoint based on your capacity needs.
 

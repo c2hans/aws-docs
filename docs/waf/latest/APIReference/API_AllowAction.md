@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AllowAction.
 ---
 
 # AllowAction
-<a name="API_AllowAction"></a>
 
 Specifies that AWS WAF should allow the request and optionally defines additional custom handling for the request.
 

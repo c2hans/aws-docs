@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_UntagResource.
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes a tag or tags from a resource.
 

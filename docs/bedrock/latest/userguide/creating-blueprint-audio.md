@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/creating-bluepr
 ---
 
 # Creating blueprints for audio
-<a name="creating-blueprint-audio"></a>
 
 Similar to image blueprints, you can only have one audio blueprint per project.
 

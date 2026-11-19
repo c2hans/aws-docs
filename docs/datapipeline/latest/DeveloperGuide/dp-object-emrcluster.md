@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-ob
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # EmrCluster
-<a name="dp-object-emrcluster"></a>
 
 Represents the configuration of an Amazon EMR cluster. This object is used by [EmrActivity](dp-object-emractivity.md) and [HadoopActivity](dp-object-hadoopactivity.md) to launch a cluster.
 

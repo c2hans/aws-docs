@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/reserved-capa
 ---
 
 # Reserved capacity samples with AWS CodeBuild
-<a name="reserved-capacity-samples"></a>
 
 These samples can be used to experiment with reserved capacity fleets in CodeBuild.
 

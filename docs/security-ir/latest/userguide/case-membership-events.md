@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/case-member
 ---
 
 # Membership Events
-<a name="case-membership-events"></a>
 
 Membership Created
 

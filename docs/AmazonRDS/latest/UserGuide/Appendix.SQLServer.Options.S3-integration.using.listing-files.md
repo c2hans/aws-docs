@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Listing files on the RDS DB instance
-<a name="Appendix.SQLServer.Options.S3-integration.using.listing-files"></a>
 
 To list the files available on the DB instance, use both a stored procedure and a function. First, run the following stored procedure to gather file details from the files in `D:\S3\`.
 

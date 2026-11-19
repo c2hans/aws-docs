@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/understan
 ---
 
 # Understanding the MCP Server tools
-<a name="understanding-mcp-server-tools"></a>
 
 AWS MCP Server provides the following tools to help you complete AWS tasks through natural language interactions.
 

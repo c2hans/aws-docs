@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/st
 ---
 
 # Share stream sessions with stream URLs
-<a name="stream-urls"></a>
 
 Stream URLs let you quickly share your stream sessions with anyone. Recipients access your stream sessions in a supported web browser, with no AWS account or client integration required, and you control expiration, usage, and revocation. After creating a stream URL anyone who accesses it starts their own stream session without needing any credentials. Stream URLs are ideal for quickly and easily setting up demos, playtests, stakeholder reviews, and guest access.
 

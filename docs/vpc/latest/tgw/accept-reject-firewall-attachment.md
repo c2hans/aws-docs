@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/accept-reject-firewall-at
 ---
 
 # Accept or reject an AWS Transit Gateway network function attachment
-<a name="accept-reject-firewall-attachment"></a>
 
 How you accept or reject a network function attachment depends on its type.
 

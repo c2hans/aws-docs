@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CertificateManager::AcmeExternalAccountBinding TagsItems
-<a name="aws-properties-certificatemanager-acmeexternalaccountbinding-tagsitems"></a>
 
 <a name="aws-properties-certificatemanager-acmeexternalaccountbinding-tagsitems-description"></a>The `TagsItems` property type specifies Property description not available. for an [AWS::CertificateManager::AcmeExternalAccountBinding](aws-resource-certificatemanager-acmeexternalaccountbinding.md).
 

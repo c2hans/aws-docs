@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteFe
 ---
 
 # RouteFerryBeforeTravelStep
-<a name="API_RouteFerryBeforeTravelStep"></a>
 
 Steps of a leg that must be performed before the travel portion of the leg.
 

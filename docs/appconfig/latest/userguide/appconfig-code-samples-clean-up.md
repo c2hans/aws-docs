@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cod
 ---
 
 # Cleaning up your environment
-<a name="appconfig-code-samples-clean-up"></a>
 
 If you ran one or more of the code samples in this section, we recommend you use one of the following samples to locate and delete the AWS AppConfig resources created by those code samples. The samples in this section call the following APIs:
 + [ListApplications](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ListApplications.html)

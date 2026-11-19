@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # License
-<a name="API_License"></a>
 
 Software license that is managed in AWS License Manager.
 

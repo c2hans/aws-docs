@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InlineBedrockModelConfigurations
-<a name="API_agent-runtime_InlineBedrockModelConfigurations"></a>
 
 Settings for a model called with [InvokeInlineAgent](API_agent-runtime_InvokeInlineAgent.md).
 

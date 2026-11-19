@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide described various network access approaches in different scenarios, and it describes the benefits and drawbacks of each architecture. You should understand why choosing a network access approach should not be a purely technology discussion. Alignment between business and technology is essential. The following next steps and recommendations can help you assess and standardize your network architecture strategy by evaluating current capabilities, analyzing market needs, and implementing governance controls.
 

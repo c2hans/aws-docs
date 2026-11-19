@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/connect-ec2-m
 ---
 
 # Connect Amazon EC2 manually
-<a name="connect-ec2-manual"></a>
 
 **Topics**
 + [Step 1: Create an Amazon EC2 instance](#manual-connect-ec2.launch-ec2-instance)

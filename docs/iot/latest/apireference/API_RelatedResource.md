@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_RelatedResou
 ---
 
 # RelatedResource
-<a name="API_RelatedResource"></a>
 
 Information about a related resource.
 

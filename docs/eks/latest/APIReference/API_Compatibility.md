@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Compatibilit
 ---
 
 # Compatibility
-<a name="API_Compatibility"></a>
 
 Compatibility information.
 

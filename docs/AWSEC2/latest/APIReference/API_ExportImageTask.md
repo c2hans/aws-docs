@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportIma
 ---
 
 # ExportImageTask
-<a name="API_ExportImageTask"></a>
 
 Describes an export image task.
 

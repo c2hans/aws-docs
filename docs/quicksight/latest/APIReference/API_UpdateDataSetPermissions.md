@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDataSetPermissions
-<a name="API_UpdateDataSetPermissions"></a>
 
 Updates the permissions on a dataset.
 

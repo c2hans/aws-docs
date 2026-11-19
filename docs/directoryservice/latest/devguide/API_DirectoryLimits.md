@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dir
 ---
 
 # DirectoryLimits
-<a name="API_DirectoryLimits"></a>
 
 Contains directory limit information for a Region.
 

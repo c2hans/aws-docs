@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/mapawsssoa
 ---
 
 # Map attributes in your application to IAM Identity Center attributes
-<a name="mapawsssoattributestoapp"></a>
 
 Some service providers require custom SAML assertions to pass additional data about your user sign-ins. In that case, use the following procedure to specify how your applications user attributes should map to corresponding attributes in IAM Identity Center.
 

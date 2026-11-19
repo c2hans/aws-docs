@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/monitoring-bu
 ---
 
 # Monitor CodeBuild builds with CloudWatch
-<a name="monitoring-builds"></a>
 
 You can use Amazon CloudWatch to watch your builds, report when something is wrong, and take automatic actions when appropriate. You can monitor your builds at two levels:
 

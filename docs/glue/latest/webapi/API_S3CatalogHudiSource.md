@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3CatalogHudiSour
 ---
 
 # S3CatalogHudiSource
-<a name="API_S3CatalogHudiSource"></a>
 
 Specifies a Hudi data source that is registered in the AWS Glue Data Catalog. The Hudi data source must be stored in Amazon S3.
 

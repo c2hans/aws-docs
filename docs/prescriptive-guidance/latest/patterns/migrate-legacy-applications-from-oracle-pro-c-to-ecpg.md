@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate legacy applications from Oracle Pro\*C to ECPG
-<a name="migrate-legacy-applications-from-oracle-pro-c-to-ecpg"></a>
 
 *Sai Parthasaradhi and Mahesh Balumuri, Amazon Web Services*
 

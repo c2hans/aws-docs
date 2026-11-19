@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-exten
 ---
 
 # Tensor Parallelism
-<a name="model-parallel-extended-features-pytorch-tensor-parallelism"></a>
 
 *Tensor parallelism* is a type of model parallelism in which specific model weights, gradients, and optimizer states are split across devices. In contrast to pipeline parallelism, which keeps individual weights intact but partitions the *set* of weights, tensor parallelism splits individual weights. This typically involves distributed computation of specific operations, modules, or layers of the model.
 

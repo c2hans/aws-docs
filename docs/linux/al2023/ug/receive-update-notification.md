@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/receive-update-notificat
 ---
 
 # Receive notifications on new updates
-<a name="receive-update-notification"></a>
 
 You can receive notifications whenever a new AL2023 AMI is released. Notifications are published with [Amazon SNS](https://aws.amazon.com/sns/) using the following topic.
 

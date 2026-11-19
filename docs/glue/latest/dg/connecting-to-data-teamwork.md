@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-teamwo
 ---
 
 # Connecting to Teamwork in AWS Glue Studio
-<a name="connecting-to-data-teamwork"></a>
 
 Teamwork is a project-management and work-collaboration platform. Because you are a Teamwork user, you can connect AWS Glue to your Teamwork account. You can then use Teamwork as a data source in your AWS Glue ETL jobs to transfer data between Teamwork and AWS services or other supported applications.
 

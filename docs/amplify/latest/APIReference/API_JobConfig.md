@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_JobConfi
 ---
 
 # JobConfig
-<a name="API_JobConfig"></a>
 
 Describes the configuration details that apply to the jobs for an Amplify app.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-e
 ---
 
 # Get a list of email contacts in an email contact's tree in Connect Customer agent workspace
-<a name="3P-apps-email-requests-getemailthread"></a>
 
 Returns an array of EmailThreadContact objects (for the provided contactAssociationId) that represent that contact's email thread. The contactAssociationId is the root contact id which is used as a unique identifier for all subsequent contacts in a contact tree. Returns an object that includes:
 + `contacts: EmailThreadContact[]`: an array of EmailThreadContact objects, each an email contact in the thread

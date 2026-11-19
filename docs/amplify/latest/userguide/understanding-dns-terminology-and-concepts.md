@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/understanding-d
 ---
 
 # Understanding DNS terminology and concepts
-<a name="understanding-dns-terminology-and-concepts"></a>
 
 If you are unfamiliar with the terms and concepts associated with Domain Name System (DNS), the following topics can help you understand the procedures for adding custom domains.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListAgentProfiles
-<a name="API_ListAgentProfiles"></a>
 
 Lists optimization profiles in your account. Profiles define the scope and configuration for generating optimization recommendations.
 

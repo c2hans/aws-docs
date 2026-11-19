@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/edit-integrat
 ---
 
 # Changing the Detective integration configuration
-<a name="edit-integration"></a>
 
 If you want to change any of the parameters that you used to integrate Detective with Security Lake, you can edit them, and then enable the integration again. You can edit the CloudFormation template to re-enable this integration for the following scenarios:
 + To update the Security Lake subscription, you can either create a new subscriber, or the Security Lake administrator can update the data source for the existing subscription.

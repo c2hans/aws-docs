@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2R
 ---
 
 # AwsEc2RouteTableDetails
-<a name="API_AwsEc2RouteTableDetails"></a>
 
  Provides details about a route table for the specified VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DeregisterWork
 ---
 
 # DeregisterWorkspaceDirectory
-<a name="API_DeregisterWorkspaceDirectory"></a>
 
 Deregisters the specified directory. This operation is asynchronous and returns before the WorkSpace directory is deregistered. If any WorkSpaces are registered to this directory, you must remove them before you can deregister the directory.
 

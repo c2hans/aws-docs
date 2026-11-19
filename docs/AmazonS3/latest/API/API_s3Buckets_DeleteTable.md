@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Delete
 ---
 
 # DeleteTable
-<a name="API_s3Buckets_DeleteTable"></a>
 
 Deletes a table. For more information, see [Deleting an Amazon S3 table](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-delete.html) in the *Amazon Simple Storage Service User Guide*.
 

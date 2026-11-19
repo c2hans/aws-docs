@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Platform engineering
-<a name="platform-eng"></a>
 
 **Build a secure, compliant multi-account cloud environment with packaged, reusable cloud products.**
 

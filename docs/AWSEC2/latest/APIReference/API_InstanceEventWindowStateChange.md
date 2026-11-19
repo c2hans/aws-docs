@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceE
 ---
 
 # InstanceEventWindowStateChange
-<a name="API_InstanceEventWindowStateChange"></a>
 
 The state of the event window.
 

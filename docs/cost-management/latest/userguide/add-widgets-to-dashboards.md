@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/add-wid
 ---
 
 # Adding widgets to dashboards
-<a name="add-widgets-to-dashboards"></a>
 
 Dashboards help you visualize data through widgets - configurable components that display your cost and usage information. Each dashboard can contain up to 20 widgets, combining multiple visualizations into a single view. Widgets help you analyze cost and usage through charts and tables.
 

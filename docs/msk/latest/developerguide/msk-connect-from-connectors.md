@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-fr
 ---
 
 # Connecting from connectors
-<a name="msk-connect-from-connectors"></a>
 
 The following best practices can improve the performance of your connectivity to Amazon MSK Connect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_CreateAc
 ---
 
 # CreateAccessPoint
-<a name="API_S3Files_CreateAccessPoint"></a>
 
 Creates an S3 File System Access Point for application-specific access with POSIX user identity and root directory enforcement. Access points provide a way to manage access to shared datasets in multi-tenant scenarios.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Exporting a variable so that other actions can use it
-<a name="workflows-working-with-variables-export-input"></a>
 
 Use the following instructions to export a variable from an action so that you can reference it in other actions.
 

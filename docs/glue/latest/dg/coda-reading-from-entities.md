@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/coda-reading-from-entitie
 ---
 
 # Reading from Coda entities
-<a name="coda-reading-from-entities"></a>
 
 **Prerequisites**
 

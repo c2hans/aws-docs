@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/getting-started.htm
 ---
 
 # Get started with Amazon Elastic VMware Service
-<a name="getting-started"></a>
 
 Choose how you deploy VMware Cloud Foundation (VCF) on Amazon Elastic VMware Service (Amazon EVS), and find the pages for each stage of the journey.
 

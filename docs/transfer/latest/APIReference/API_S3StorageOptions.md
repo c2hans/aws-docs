@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_S3Stora
 ---
 
 # S3StorageOptions
-<a name="API_S3StorageOptions"></a>
 
 The Amazon S3 storage options that are configured for your server.
 

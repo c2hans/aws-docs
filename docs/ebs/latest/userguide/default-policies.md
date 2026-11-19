@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/default-policies.ht
 ---
 
 # Create Amazon Data Lifecycle Manager default policies
-<a name="default-policies"></a>
 
 To create periodic EBS-backed AMIs from instances, use the default policy for EBS-backed AMIs. To create snapshots of all volumes regardless of their attachment state, or if you want to exclude specific volumes, use the default policy for EBS snapshots.
 

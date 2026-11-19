@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/dcv-viewer.html
 ---
 
 # Amazon DCV Web UI SDK
-<a name="dcv-viewer"></a>
 
  A JavaScript React component library, currently exporting a single React component called `DCVViewer` which connects to the Amazon DCV Server and renders the toolbar to interact with the remote stream.
 

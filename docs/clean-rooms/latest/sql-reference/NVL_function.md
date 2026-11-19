@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/NVL_fun
 ---
 
 # NVL and COALESCE functions
-<a name="NVL_function"></a>
 
 Returns the value of the first expression that isn't null in a series of expressions. When a non-null value is found, the remaining expressions in the list aren't evaluated.
 

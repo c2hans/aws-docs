@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_ListC
 ---
 
 # ListConfigurationHistory
-<a name="API_ListConfigurationHistory"></a>
 
  Lists the INFO, WARN, and ERROR events for periodic configuration updates performed by Application Insights. Examples of events represented are:
 + INFO: creating a new alarm or updating an alarm threshold.

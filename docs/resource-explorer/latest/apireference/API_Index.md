@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # Index
-<a name="API_Index"></a>
 
 An index is the data store used by AWS Resource Explorer to hold information about your AWS resources that the service discovers. Creating an index in an AWS Region turns on Resource Explorer and lets it discover your resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Release: Greengrass nucleus lite v2.5.1 software update on May 6, 2026
-<a name="greengrass-release-2026-05-06-2.5.1"></a>
 
 This release provides version 2.5.1 of the Greengrass nucleus lite component.
 

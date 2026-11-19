@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Get started with Trusted Remediator in AMS
-<a name="tr-gs"></a>
 
 Trusted Remediator is available in AMS at no additional charge. Trusted Remediator supports single account and multi-account configurations.
 

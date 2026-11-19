@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Using AWS CodeCommit with Visual Studio Team Explorer
-<a name="using-aws-codecommit-with-team-explorer"></a>
 
 You can use AWS Identity and Access Management (IAM) user accounts to create Git credentials and use them to create and clone repositories from within Team Explorer.
 

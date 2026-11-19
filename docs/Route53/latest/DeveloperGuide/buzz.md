@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/buzz.html
 ---
 
 # .buzz
-<a name="buzz"></a>
 
 Used for information about the latest news and events.
 

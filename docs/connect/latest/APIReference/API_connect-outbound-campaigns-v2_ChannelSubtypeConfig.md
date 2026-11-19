@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ChannelSubtypeConfig
-<a name="API_connect-outbound-campaigns-v2_ChannelSubtypeConfig"></a>
 
 Contains channel subtype configuration for an outbound campaign.
 

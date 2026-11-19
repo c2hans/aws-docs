@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateWo
 ---
 
 # CreateWorkspacePage
-<a name="API_CreateWorkspacePage"></a>
 
 Associates a view with a page in a workspace, defining what users see when they navigate to that page.
 

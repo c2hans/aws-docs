@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Po
 ---
 
 # PolicyTargetSummary
-<a name="API_PolicyTargetSummary"></a>
 
 Contains information about a root, OU, or account that a policy is attached to.
 

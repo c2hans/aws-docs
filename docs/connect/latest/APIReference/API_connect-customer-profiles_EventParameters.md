@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # EventParameters
-<a name="API_connect-customer-profiles_EventParameters"></a>
 
 Configuration parameters for events in the personalization system.
 

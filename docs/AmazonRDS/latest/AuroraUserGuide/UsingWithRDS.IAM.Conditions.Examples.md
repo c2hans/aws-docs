@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWi
 ---
 
 # Example policies: Using condition keys
-<a name="UsingWithRDS.IAM.Conditions.Examples"></a>
 
 Following are examples of how you can use condition keys in Amazon Aurora IAM permissions policies.
 

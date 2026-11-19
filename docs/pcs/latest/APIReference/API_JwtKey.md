@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_JwtKey.html
 ---
 
 # JwtKey
-<a name="API_JwtKey"></a>
 
 The JWT key stored in AWS Secrets Manager for Slurm REST API authentication.
 

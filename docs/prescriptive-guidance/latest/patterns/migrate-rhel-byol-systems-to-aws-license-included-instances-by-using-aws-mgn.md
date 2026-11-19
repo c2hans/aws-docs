@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate RHEL BYOL systems to AWS License-Included instances by using AWS MGN
-<a name="migrate-rhel-byol-systems-to-aws-license-included-instances-by-using-aws-mgn"></a>
 
 *Mike Kuznetsov, Amazon Web Services*
 

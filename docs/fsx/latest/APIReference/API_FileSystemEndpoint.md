@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileSystemEn
 ---
 
 # FileSystemEndpoint
-<a name="API_FileSystemEndpoint"></a>
 
 An Amazon FSx for NetApp ONTAP file system has two endpoints that are used to access data or to manage the file system using the NetApp ONTAP CLI, REST API, or NetApp SnapMirror. They are the `Management` and `Intercluster` endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # How to Specify the AWS Security Credentials for Your Application
-<a name="deployment-beanstalk-specify-credentials"></a>
 
 The AWS account you specify in the **Publish to Elastic Beanstalk** wizard is the AWS account the wizard will use for deployment to Elastic Beanstalk.
 

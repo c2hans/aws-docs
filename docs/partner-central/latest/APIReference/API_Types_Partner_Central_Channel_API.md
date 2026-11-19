@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Partner Central Channel API
-<a name="API_Types_Partner_Central_Channel_API"></a>
 
 The following data types are supported by Partner Central Channel API:
 +  [AcceptChannelHandshakeDetail](API_channel_AcceptChannelHandshakeDetail.md)

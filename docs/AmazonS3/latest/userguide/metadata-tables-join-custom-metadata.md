@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metadata-table
 ---
 
 # Joining custom metadata with S3 metadata tables
-<a name="metadata-tables-join-custom-metadata"></a>
 
 You can analyze data across your AWS managed metadata tables and customer (self-managed) metadata tables. By using a standard SQL `JOIN` operator, you can query data from these multiple sources.
 

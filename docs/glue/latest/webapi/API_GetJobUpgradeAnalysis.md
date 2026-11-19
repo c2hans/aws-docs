@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetJobUpgradeAnal
 ---
 
 # GetJobUpgradeAnalysis
-<a name="API_GetJobUpgradeAnalysis"></a>
 
 Retrieves the current status and results of an upgrade analysis.
 

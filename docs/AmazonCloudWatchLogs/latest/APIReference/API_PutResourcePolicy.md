@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Creates or updates a resource policy allowing other AWS services to put log events to this account, such as Amazon Route 53. This API has the following restrictions:
 +  **Supported actions** - Policy only supports `logs:PutLogEvents` and `logs:CreateLogStream ` actions

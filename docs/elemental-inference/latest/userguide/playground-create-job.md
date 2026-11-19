@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/pla
 ---
 
 # Creating a Smart Cropping job
-<a name="playground-create-job"></a>
 
 To submit a Smart Cropping job, use the following procedure. To start an All features preview instead, see [Starting a preview](playground-preview-start.md).
 

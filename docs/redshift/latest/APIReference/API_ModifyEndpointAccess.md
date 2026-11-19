@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyE
 ---
 
 # ModifyEndpointAccess
-<a name="API_ModifyEndpointAccess"></a>
 
 Modifies a Redshift-managed VPC endpoint.
 

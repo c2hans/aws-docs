@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Getting started with Amazon EKS support in SageMaker HyperPod
-<a name="sagemaker-hyperpod-eks-prerequisites"></a>
 
 In addition to the general [Prerequisites for using SageMaker HyperPod](sagemaker-hyperpod-prerequisites.md) for SageMaker HyperPod, check the following requirements and considerations for orchestrating SageMaker HyperPod clusters using Amazon EKS.
 

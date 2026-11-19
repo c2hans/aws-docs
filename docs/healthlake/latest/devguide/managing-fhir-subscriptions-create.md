@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Creating a FHIR Subscription with AWS HealthLake
-<a name="managing-fhir-subscriptions-create"></a>
 
 The following guide shows you how to create a FHIR Subscription using AWS HealthLake.
 

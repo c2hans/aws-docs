@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessSkill
-<a name="API_HarnessSkill"></a>
 
 A skill available to the agent.
 

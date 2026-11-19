@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_C
 ---
 
 # CreateArchive
-<a name="API_CreateArchive"></a>
 
 Creates a new email archive resource for storing and retaining emails.
 

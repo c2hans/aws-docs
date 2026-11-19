@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DI
 ---
 
 # DICOMTags
-<a name="API_DICOMTags"></a>
 
 The DICOM attributes returned as a part of a response. Each image set has these properties as part of a search result.
 

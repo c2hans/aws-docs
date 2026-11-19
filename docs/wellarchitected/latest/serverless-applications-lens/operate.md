@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # Operate
-<a name="operate"></a>
 
 | OPS 1: How do you understand the health of your serverless application? |
 | --- |

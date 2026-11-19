@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ActionR
 ---
 
 # ActionReviewPayloadField
-<a name="API_ActionReviewPayloadField"></a>
 
 A user input field in an plugin action review payload.
 

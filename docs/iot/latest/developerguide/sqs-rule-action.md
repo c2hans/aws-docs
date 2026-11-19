@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/sqs-rule-actio
 ---
 
 # SQS
-<a name="sqs-rule-action"></a>
 
 The SQS (`sqs`) action sends data from an MQTT message to an Amazon Simple Queue Service (Amazon SQS) queue.
 

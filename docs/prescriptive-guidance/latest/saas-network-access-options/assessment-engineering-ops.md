@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Operational excellence metrics related to network access for SaaS offerings
-<a name="assessment-engineering-ops"></a>
 
 ## Operational resilience and disaster recovery
 <a name="assessment-engineering-ops-resilience"></a>

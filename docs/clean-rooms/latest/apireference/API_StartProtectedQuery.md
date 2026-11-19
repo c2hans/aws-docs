@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Star
 ---
 
 # StartProtectedQuery
-<a name="API_StartProtectedQuery"></a>
 
 Creates a protected query that is started by AWS Clean Rooms.
 

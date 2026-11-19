@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hugging-face.html
 ---
 
 # Resources for using Hugging Face with Amazon SageMaker AI
-<a name="hugging-face"></a>
 
 Amazon SageMaker AI lets customers train, fine-tune, and run inference using Hugging Face models for Natural Language Processing (NLP) on SageMaker AI. You can use Hugging Face for both training and inference. The following section provides information on Hugging Face models and includes reference material you can use to learn how to use Hugging Face with SageMaker AI.
 

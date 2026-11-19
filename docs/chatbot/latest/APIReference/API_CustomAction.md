@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_CustomAc
 ---
 
 # CustomAction
-<a name="API_CustomAction"></a>
 
 Represents a parameterized command that can be invoked as an alias or as a notification button in the chat client.
 

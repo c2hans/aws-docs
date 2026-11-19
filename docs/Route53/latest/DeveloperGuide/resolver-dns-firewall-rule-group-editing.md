@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # Viewing and updating a rule group and rules
-<a name="resolver-dns-firewall-rule-group-editing"></a>
 
 Use the following procedure to view the rule groups and the rules assigned to them. You can also update the rule group and rule settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # Kazakhstan registration
-<a name="nx-country-reg-kz"></a>
 
 The following registrations are available for Kazakhstan.
 

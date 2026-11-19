@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cw
 ---
 
 # Amazon CloudWatch Events in AWS GovCloud (US)
-<a name="govcloud-cwe"></a>
 
 Use CloudWatch Events to send system events from AWS resources to AWS Lambda functions, Amazon SNS topics, streams in Amazon Kinesis, and other target types.
 

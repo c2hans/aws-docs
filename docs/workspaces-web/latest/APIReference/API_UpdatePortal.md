@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UpdatePortal
-<a name="API_UpdatePortal"></a>
 
 Updates a web portal.
 

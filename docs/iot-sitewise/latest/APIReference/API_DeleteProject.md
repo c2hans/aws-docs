@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Del
 ---
 
 # DeleteProject
-<a name="API_DeleteProject"></a>
 
 Deletes a project from AWS IoT SiteWise Monitor.
 

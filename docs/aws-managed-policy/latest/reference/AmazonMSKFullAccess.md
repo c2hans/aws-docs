@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMSKFullAccess
-<a name="AmazonMSKFullAccess"></a>
 
 **Description**: Provide full access to Amazon MSK and other required permissions for its dependencies.
 

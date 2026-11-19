@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/sa
 ---
 
 # Data key caching example: CloudFormation template
-<a name="sample-cache-example-cloudformation"></a>
 
 This CloudFormation template sets up all the necessary AWS resources to reproduce the [data key caching example](sample-cache-example.md).
 

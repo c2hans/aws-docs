@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_RetryConf
 ---
 
 # RetryConfigCriteria
-<a name="API_RetryConfigCriteria"></a>
 
 Structure representing one retry config criteria.
 

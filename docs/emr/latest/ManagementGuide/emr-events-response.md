@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-events-re
 ---
 
 # Responding to CloudWatch events from Amazon EMR
-<a name="emr-events-response"></a>
 
 This section describes various ways that you can respond to actionable events that Amazon EMR emits as [CloudWatch event messages](emr-manage-cloudwatch-events.md). Ways you can respond to events include creating rules, setting alarms, and other responses. The sections that follow include links to procedures and recommneded responses to common evens.
 

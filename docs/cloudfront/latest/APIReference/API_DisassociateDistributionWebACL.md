@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Disas
 ---
 
 # DisassociateDistributionWebACL
-<a name="API_DisassociateDistributionWebACL"></a>
 
 Disassociates a distribution from the AWS WAF web ACL.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Tag management tools for Accelerate
-<a name="acc-tag-tools"></a>
 
 **Contents**
 + [Accelerate Resource Tagger](acc-resource-tagger.md)

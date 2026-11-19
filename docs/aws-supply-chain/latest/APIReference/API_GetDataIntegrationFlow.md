@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # GetDataIntegrationFlow
-<a name="API_GetDataIntegrationFlow"></a>
 
 Enables you to programmatically view a specific data pipeline for the provided AWS Supply Chain instance and DataIntegrationFlow name.
 

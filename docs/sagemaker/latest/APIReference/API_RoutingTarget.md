@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Routin
 ---
 
 # RoutingTarget
-<a name="API_RoutingTarget"></a>
 
 A model that an inference router serves, and the destinations that can serve it. When you invoke the router, you name the routing target, and the router sends the request to one of its destinations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_PendingModifie
 ---
 
 # PendingModifiedValues
-<a name="API_PendingModifiedValues"></a>
 
 This data type is used as a response element in the [ModifyDBInstance](API_ModifyDBInstance.md) action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/how-to-
 ---
 
 # Grant access to Amazon Location Service
-<a name="how-to-access"></a>
 
 To use Amazon Location Service, a user must be granted access to the resources and APIs that make up Amazon Location. There are three strategies you can use to grant access to your resources.
 + **Use IAM** – To grant access to users authenticated with AWS IAM Identity Center or AWS Identity and Access Management (IAM), create an IAM policy that allows access to the resources that you want. For more information about IAM and Amazon Location, see [Identity and Access Management for Amazon Location Service](security-iam.md).

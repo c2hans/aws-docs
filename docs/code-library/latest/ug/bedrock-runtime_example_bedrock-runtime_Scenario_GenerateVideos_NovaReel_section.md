@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/bedrock-runtime_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Generate videos from text prompts using Amazon Bedrock and Nova-Reel
-<a name="bedrock-runtime_example_bedrock-runtime_Scenario_GenerateVideos_NovaReel_section"></a>
 
 The following code example shows how to a Spring Boot app that generates videos from text prompts using Amazon Bedrock and the Nova-Reel model.
 

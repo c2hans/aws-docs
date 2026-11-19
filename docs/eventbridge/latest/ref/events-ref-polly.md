@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-polly.
 ---
 
 # Amazon Polly events
-<a name="events-ref-polly"></a>
 
 Amazon Polly sends service events to EventBridge via AWS CloudTrail.
 

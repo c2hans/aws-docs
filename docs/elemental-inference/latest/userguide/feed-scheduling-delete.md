@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # Deleting a schedule action
-<a name="feed-scheduling-delete"></a>
 
 To delete a pending schedule action, use the `delete-schedule-action` command. Specify the feed ID and the name of the action.
 

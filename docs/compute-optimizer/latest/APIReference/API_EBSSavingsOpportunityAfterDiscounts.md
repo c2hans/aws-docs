@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EBSSavingsOpportunityAfterDiscounts
-<a name="API_EBSSavingsOpportunityAfterDiscounts"></a>
 
  Describes the savings opportunity for Amazon EBS volume recommendations after applying specific discounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # CompositedVideoConcatenationConfiguration
-<a name="API_media-pipelines-chime_CompositedVideoConcatenationConfiguration"></a>
 
 The composited video configuration object for a specified media pipeline. `SourceType` must be `ChimeSdkMeeting`.
 

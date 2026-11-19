@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/constra
 ---
 
 # AWS Service Catalog Launch Constraints
-<a name="constraints-launch"></a>
 
 A launch constraint specifies the AWS Identity and Access Management (IAM) role that AWS Service Catalog assumes when an end user launches, updates, or terminates a product. An IAM role is a collection of permissions that a user or AWS service can assume temporarily to use AWS services. For an introductory example, see:
 + CloudFormation product type: [Step 6: Add a launch constraint to assign an IAM role](getstarted-launchconstraint.md)

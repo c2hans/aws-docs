@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rootly-configuring-connec
 ---
 
 # Configuring Rootly connections
-<a name="rootly-configuring-connections"></a>
 
 Rootly connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

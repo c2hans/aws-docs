@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListStacks
-<a name="API_ListStacks"></a>
 
 Returns the summary information for stacks whose status matches the specified `StackStatusFilter`. Summary information for stacks that have been deleted is kept for 90 days after the stack is deleted. If no `StackStatusFilter` is specified, summary information for all stacks is returned (including existing stacks and stacks that have been deleted).
 

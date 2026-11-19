@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SelectFromCollect
 ---
 
 # SelectFromCollection
-<a name="API_SelectFromCollection"></a>
 
 Specifies a transform that chooses one `DynamicFrame` from a collection of `DynamicFrames`. The output is the selected `DynamicFrame`
 

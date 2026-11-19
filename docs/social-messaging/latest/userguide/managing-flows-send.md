@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Sending WhatsApp Flows to users
-<a name="managing-flows-send"></a>
 
 You send Flows to users through template messages using the existing `SendWhatsAppMessage` API. No changes to the send message API are required. The Flow is embedded in the template message as a button component with a `flow` sub-type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # SECOND
-<a name="recipe-actions.functions.SECOND"></a>
 
 Creates a new column containing the second value, from a string that represents a date.
 

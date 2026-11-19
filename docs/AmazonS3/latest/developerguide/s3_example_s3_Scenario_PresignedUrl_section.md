@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Create a presigned URL for Amazon S3 using an AWS SDK
-<a name="s3_example_s3_Scenario_PresignedUrl_section"></a>
 
 The following code examples show how to create a presigned URL for Amazon S3 and upload an object.
 

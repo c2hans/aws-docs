@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProspectingFromEngagementTaskSort
-<a name="API_ProspectingFromEngagementTaskSort"></a>
 
 Specifies the sort configuration for `ListProspectingFromEngagementTasks`. Contains the field to sort by and the sort direction.
 

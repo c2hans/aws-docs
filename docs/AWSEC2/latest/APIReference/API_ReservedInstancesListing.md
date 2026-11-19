@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedI
 ---
 
 # ReservedInstancesListing
-<a name="API_ReservedInstancesListing"></a>
 
 Describes a Reserved Instance listing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CallbackFailedDeta
 ---
 
 # CallbackFailedDetails
-<a name="API_CallbackFailedDetails"></a>
 
 Contains details about a failed callback operation, including error information and the reason for failure.
 

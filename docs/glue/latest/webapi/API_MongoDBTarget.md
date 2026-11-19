@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MongoDBTarget.htm
 ---
 
 # MongoDBTarget
-<a name="API_MongoDBTarget"></a>
 
 Specifies an Amazon DocumentDB or MongoDB data store to crawl.
 

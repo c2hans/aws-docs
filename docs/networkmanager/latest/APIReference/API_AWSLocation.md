@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # AWSLocation
-<a name="API_AWSLocation"></a>
 
 Specifies a location in AWS.
 

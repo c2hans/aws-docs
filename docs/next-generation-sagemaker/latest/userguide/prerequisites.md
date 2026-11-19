@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/next-generation-sagemaker/latest/usergui
 ---
 
 # Prerequisites for Amazon SageMaker
-<a name="prerequisites"></a>
 
 Complete the following prerequisite tasks before you can set up Amazon SageMaker and proceed with the use cases in this guide.
 

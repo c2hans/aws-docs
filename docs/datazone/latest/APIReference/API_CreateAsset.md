@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateA
 ---
 
 # CreateAsset
-<a name="API_CreateAsset"></a>
 
 Creates an asset in Amazon DataZone catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/boo.html
 ---
 
 # .boo
-<a name="boo"></a>
 
 Used as a fun and memorable secure domain, whether for love, laughs, or a surprise.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_ClusterPending
 ---
 
 # ClusterPendingModifiedValues
-<a name="API_ClusterPendingModifiedValues"></a>
 
 This data type is used as a response element in the `ModifyDBCluster` operation and contains changes that will be applied during the next maintenance window.
 

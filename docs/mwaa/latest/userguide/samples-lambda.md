@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-lambda.htm
 ---
 
 # Invoking DAGs with a Lambda function
-<a name="samples-lambda"></a>
 
 The following code example uses an [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) function to get an Apache Airflow CLI token and invoke a directed acyclic graph (DAG) in an Amazon MWAA environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/service_co
 ---
 
 # Actions for Route 53 using AWS SDKs
-<a name="service_code_examples_route-53_actions"></a>
 
 The following code examples demonstrate how to perform individual Route 53 actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

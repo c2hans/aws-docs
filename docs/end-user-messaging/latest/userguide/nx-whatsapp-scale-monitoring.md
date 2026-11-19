@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-w
 ---
 
 # Monitoring
-<a name="nx-whatsapp-scale-monitoring"></a>
 
 AWS End User Messaging gives you two complementary views of your WhatsApp messaging, plus a record of your API activity. This section describes how to set up each one.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Partner Central Account API
-<a name="API_Types_Partner_Central_Account_API"></a>
 
 The following data types are supported by Partner Central Account API:
 +  [AccountSummary](API_account_AccountSummary.md)

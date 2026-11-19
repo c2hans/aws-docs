@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/export-service.
 ---
 
 # Using the Neptune-Export service to export Neptune data
-<a name="export-service"></a>
 
 You can use the following steps to export data from your Neptune DB cluster to Amazon S3 using the Neptune-Export service:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-d
 ---
 
 # Troubleshoot degraded workspaces in Amazon Managed Grafana
-<a name="AMG-workspace-degraded-reasons"></a>
 
 An Amazon Managed Grafana workspace can enter a degraded state for several reasons, including VPC configuration issues and KMS key problems. When a workspace is degraded, you may experience availability loss, inability to make configuration changes, and missed security updates. The following sections describe each degraded reason and the actions you can take to resolve it.
 

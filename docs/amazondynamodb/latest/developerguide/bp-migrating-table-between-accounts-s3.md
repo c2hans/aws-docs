@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-
 ---
 
 # Migrate a table using export to S3 and import from S3
-<a name="bp-migrating-table-between-accounts-s3"></a>
 
 **Prerequisites**
 + You must enable Point-in-Time Recovery (PITR) for your table in order to perform the export to S3. For more information, see [Enable point-in-time recovery in DynamoDB](PointInTimeRecovery_Howitworks.md).

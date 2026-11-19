@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ec2.html
 ---
 
 # AL2023 on Amazon EC2
-<a name="ec2"></a>
 
 Use one of the following procedures to launch an Amazon EC2 instance with an AL2023 AMI. You can choose either the standard AMI, or the minimal AMI. For more information about the differences between the standard AMI and the minimal AMI, see [Comparing AL2023 standard (default) and minimal AMIs](AMI-minimal-and-standard-differences.md).
 

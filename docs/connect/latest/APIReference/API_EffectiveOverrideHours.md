@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Effectiv
 ---
 
 # EffectiveOverrideHours
-<a name="API_EffectiveOverrideHours"></a>
 
 Information about the hours of operation overrides which contribute to effective hours of operations.
 

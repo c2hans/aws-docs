@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-apigatew
 ---
 
 # Interact with an API managed by API Gateway
-<a name="sample-apigateway-workflow"></a>
 
 This sample project demonstrates how to use Step Functions to make a call to API Gateway and checks whether the call succeeded.
 

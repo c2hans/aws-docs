@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListDa
 ---
 
 # ListDaemonTaskDefinitions
-<a name="API_ListDaemonTaskDefinitions"></a>
 
 Returns a list of daemon task definitions that are registered to your account. You can filter the results by family name, status, or both to find daemon task definitions that match your criteria.
 

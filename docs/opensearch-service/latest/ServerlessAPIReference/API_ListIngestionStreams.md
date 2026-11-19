@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # ListIngestionStreams
-<a name="API_ListIngestionStreams"></a>
 
 Returns a list of ingestion streams in a collection.
 

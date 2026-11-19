@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # AWS Elemental Link input configuration
-<a name="aws-elemental-link-input-configuration"></a>
 
 This solution includes support for the AWS Elemental Link device as a source for live streaming content. AWS Elemental Link offers a configuration-free, cost-efficient way to securely and reliably transfer video to MediaLive. For more details on the device, refer to the [AWS Elemental Link product page](https://aws.amazon.com/medialive/features/link/).
 

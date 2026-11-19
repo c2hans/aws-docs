@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-cli-
 ---
 
 # Create an integration to log events from outside AWS with the AWS CLI
-<a name="lake-cli-create-integration"></a>
 
 This section describes how you can use the AWS CLI to create a CloudTrail Lake integration to log events from outside of AWS.
 

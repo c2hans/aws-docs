@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-securi
 ---
 
 # Securing your Amazon S3 bucket against the confused deputy problem
-<a name="custom-security.confused-deputy"></a>
 
 When you create an Amazon RDS Custom for Oracle custom engine version (CEV) or an RDS Custom for SQL Server DB instance, RDS Custom creates an Amazon S3 bucket. The S3 bucket stores files such as CEV artifacts, redo (transaction) logs, configuration items for the support perimeter, and AWS CloudTrail logs.
 

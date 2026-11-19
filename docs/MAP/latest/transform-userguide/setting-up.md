@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/setting-u
 ---
 
 # Tagging key combinations
-<a name="setting-up"></a>
 
 To better help you find your tagging values, consider the following questions:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # MoveKeys
-<a name="API_MoveKeys"></a>
 
 This processor moves a key from one field to another. The original key is deleted.
 

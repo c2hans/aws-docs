@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-
 ---
 
 # Tutorial: Deploy to Amazon EKS with CodePipeline
-<a name="tutorials-eks-deploy"></a>
 
 This tutorial helps you to create a deploy action in CodePipeline that deploys your code to a cluster you have configured in Amazon EKS.
 

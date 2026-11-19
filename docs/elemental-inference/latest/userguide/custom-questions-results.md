@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Getting the answers with GetMetadata
-<a name="custom-questions-results"></a>
 
 To get the answers, query the contextual metadata output with the `GetMetadata` operation, in the same way as for other contextual metadata. For more information, see [Querying contextual metadata](query-metadata-query.md#query-metadata-contextual). In the following command, replace {{region}}, {{data-endpoint}}, and {{feed-id}} with your Region, the data endpoint of your feed, and the ID of your feed.
 

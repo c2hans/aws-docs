@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Tables::Table IcebergSchemaV2
-<a name="aws-properties-s3tables-table-icebergschemav2"></a>
 
 Contains details about the schema version 2 (V2) for an Iceberg table that supports [Apache Iceberg Nested Types](https://iceberg.apache.org/spec/#nested-types). Nested data type support includes struct, list and map. Primitive types are also supported.
 

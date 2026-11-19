@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_FetchR
 ---
 
 # FetchResult
-<a name="API_FetchResult"></a>
 
 Contains the data that GuardDuty received in response to a request during an investigation. The members that are set depend on the `FetchType` of the record.
 

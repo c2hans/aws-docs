@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SendVoiceMessage
-<a name="API_SendVoiceMessage"></a>
 
 Allows you to send a request that sends a voice message. This operation uses [Amazon Polly](http://aws.amazon.com/polly/) to convert a text script into a voice message.
 

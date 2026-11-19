@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_RotateE
 ---
 
 # RotateEncryptionKey
-<a name="API_RotateEncryptionKey"></a>
 
 Rotates the encryption keys for a cluster.
 

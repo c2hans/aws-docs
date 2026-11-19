@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Set signed cookies using a custom policy
-<a name="private-content-setting-signed-cookie-custom-policy"></a>
 
 To set a signed cookie that uses a custom policy, complete the following steps.<a name="private-content-setting-signed-cookie-custom-policy-procedure"></a>
 

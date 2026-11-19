@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Maintenance for PostgreSQL databases in Amazon RDS and Amazon Aurora to avoid performance issues
-<a name="introduction"></a>
 
 *anuradha chintha and Rajesh Madiwale, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Getting started with object storage
-<a name="s3_example_s3_GettingStarted_section"></a>
 
 The following code example shows how to:
 + Create your first S3 bucket

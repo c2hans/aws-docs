@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActiv
 ---
 
 # Getting the status of a database activity stream
-<a name="DBActivityStreams.Status"></a>
 
 You can get the status of an activity stream using the console or AWS CLI.
 

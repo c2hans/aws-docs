@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Front end
-<a name="front-end"></a>
 
 The front end provides the interfaces for interacting with the solution and includes:
 + A load testing API for programmatic access

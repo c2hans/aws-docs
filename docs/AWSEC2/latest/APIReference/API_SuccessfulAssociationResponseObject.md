@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Successfu
 ---
 
 # SuccessfulAssociationResponseObject
-<a name="API_SuccessfulAssociationResponseObject"></a>
 
 Describes a successful application status check association.
 

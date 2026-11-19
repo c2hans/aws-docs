@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # AccessPoint
-<a name="API_geoplaces_AccessPoint"></a>
 
 Position of the access point represented by longitude and latitude for a vehicle.
 

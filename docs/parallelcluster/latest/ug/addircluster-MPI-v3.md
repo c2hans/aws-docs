@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/addircluster-M
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Running MPI jobs
-<a name="addircluster-MPI-v3"></a>
 
 As suggested in SchedMD, bootstrap MPI jobs using Slurm as the MPI bootstrapping method. For more information, refer to the official [Slurm documentation](https://slurm.schedmd.com/mpi_guide.html#intel_mpi) or the official documentation for your MPI library.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2110-nmos-scen
 ---
 
 # Resiliency scenario B: Supporting NMOS patching and failover
-<a name="s2110-nmos-scenario-patching-plus-failover"></a>
 
 This scenario adds failover to the patching capabilities of scenario A.
 

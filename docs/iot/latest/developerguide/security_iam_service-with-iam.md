@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/security_iam_s
 ---
 
 # How AWS IoT works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS IoT, you should understand which IAM features are available to use with AWS IoT. To get a high-level view of how AWS IoT and other AWS services work with IAM, see [AWS Services That Work with IAM](https://docs.aws.amazon.com/service-authorization/latest/reference/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
 

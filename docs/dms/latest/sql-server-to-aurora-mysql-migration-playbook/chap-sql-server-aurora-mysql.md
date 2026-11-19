@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Migration guide overview
-<a name="chap-sql-server-aurora-mysql"></a>
 
 The first section of this document provides an overview of AWS Schema Conversion Tool (AWS SCT) and AWS Database Migration Service (AWS DMS) tools for automating the migration of schema, objects and data. The remainder of the document contains individual sections for the source database features and their Aurora counterparts. Each section provides a short overview of the feature, examples, and potential workaround solutions for incompatibilities.
 

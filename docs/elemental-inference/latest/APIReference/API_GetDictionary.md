@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # GetDictionary
-<a name="API_GetDictionary"></a>
 
 Retrieves information about the specified dictionary.
 

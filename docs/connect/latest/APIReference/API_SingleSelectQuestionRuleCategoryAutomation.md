@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SingleSe
 ---
 
 # SingleSelectQuestionRuleCategoryAutomation
-<a name="API_SingleSelectQuestionRuleCategoryAutomation"></a>
 
 Information about the automation option based on a rule category for a single select question.
 

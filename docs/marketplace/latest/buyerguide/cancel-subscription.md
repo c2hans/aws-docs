@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/cancel-sub
 ---
 
 # Canceling product subscriptions
-<a name="cancel-subscription"></a>
 
 How you cancel an AWS Marketplace subscription depends on the type of agreement:
 + **Buyer self-service cancellation** — For subscriptions with pay-as-you-go (usage-based) pricing, whether from a public or private offer, you can cancel directly from the AWS Marketplace console at any time.

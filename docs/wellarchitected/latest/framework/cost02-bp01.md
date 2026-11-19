@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost02-
 ---
 
 # COST02-BP01 Implement granular resource tagging for workload cost allocation
-<a name="cost02-bp01"></a>
 
  Label each resource with a consistent set of tags so cost traces back to the team, product, or environment that owns it. Without tagging, spend collapses into service-and-account totals that no team can act on.
 

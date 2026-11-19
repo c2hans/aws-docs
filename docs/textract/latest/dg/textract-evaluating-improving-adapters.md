@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-evaluating-i
 ---
 
 # Evaluating and improving your adapters
-<a name="textract-evaluating-improving-adapters"></a>
 
 Once you have finished the training process and created your adapter, it's important to evaluate how well the adapter is extracting information from your documents.
 

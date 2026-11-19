@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/understanding
 ---
 
 # Understanding the finding groups page
-<a name="understanding-groups"></a>
 
 The finding groups page lists all the finding groups collected by Amazon Detective from your behavior graph. Take note of the following attributes of finding groups:
 

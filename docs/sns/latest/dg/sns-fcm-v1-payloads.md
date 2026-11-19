@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-fcm-v1-payloads.html
 ---
 
 # Using Google Firebase Cloud Messaging v1 payloads in Amazon SNS
-<a name="sns-fcm-v1-payloads"></a>
 
 Amazon SNS supports using FCM HTTP v1 API to send notifications to Android, iOS, and Webpush destinations. This topic provides examples of the payload structure when publishing mobile push notifications using the CLI, or the Amazon SNS API.
 

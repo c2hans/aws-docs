@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/global-routing
 ---
 
 # Global routing across ACGR Regions
-<a name="global-routing-across-acgr-regions"></a>
 
 **Important**
 Global routing is enabled for new ACGR instances created on or after September 1, 2026, by default. To enable global routing for existing ACGR instances, please reach out to [AWS Support](https://console.aws.amazon.com/support/home).

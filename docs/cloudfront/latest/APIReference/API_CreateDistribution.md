@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateDistribution
-<a name="API_CreateDistribution"></a>
 
 Creates a CloudFront distribution.
 

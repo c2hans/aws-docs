@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Lending
 ---
 
 # LendingDocument
-<a name="API_LendingDocument"></a>
 
 Holds the structured data returned by AnalyzeDocument for lending documents.
 

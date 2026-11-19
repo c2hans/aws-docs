@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DataZone::DataSource RedshiftCredentialConfiguration
-<a name="aws-properties-datazone-datasource-redshiftcredentialconfiguration"></a>
 
 The details of the credentials required to access an Amazon Redshift cluster.
 

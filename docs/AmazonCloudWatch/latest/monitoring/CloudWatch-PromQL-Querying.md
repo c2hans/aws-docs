@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # PromQL querying
-<a name="CloudWatch-PromQL-Querying"></a>
 
 When you ingest OpenTelemetry metrics into CloudWatch through the [Metrics endpoint](CloudWatch-OTLPEndpoint.md#CloudWatch-MetricsEndpoint), the hierarchical OTLP data model is flattened into PromQL-compatible labels. This section describes the label structure, the PromQL syntax for querying these labels, and the UTF-8 support in PromQL.
 

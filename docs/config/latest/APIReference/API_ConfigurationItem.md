@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Configura
 ---
 
 # ConfigurationItem
-<a name="API_ConfigurationItem"></a>
 
 A list that contains detailed configurations of a specified resource.
 

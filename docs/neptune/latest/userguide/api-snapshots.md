@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-snapshots.h
 ---
 
 # Neptune Snapshots API
-<a name="api-snapshots"></a>
 
 **Actions:**
 + [CreateDBClusterSnapshot (action)](#CreateDBClusterSnapshot)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Deployment options for Amazon MQ for ActiveMQ brokers
-<a name="amazon-mq-broker-architecture"></a>
 
 Amazon MQ offers single instance and cluster deployment options for brokers.
 

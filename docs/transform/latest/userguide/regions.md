@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/regions.html
 ---
 
 # Supported Regions for AWS Transform
-<a name="regions"></a>
 
 **Note**
 If you make a request that requires AWS Transform to retrieve information from an opt-in Region not listed on this page, AWS Transform can make calls to that Region. To manage access to Regions AWS Transform can make calls to, see [Security in AWS Transform](security.md).

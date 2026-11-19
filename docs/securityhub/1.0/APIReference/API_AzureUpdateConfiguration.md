@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AzureUp
 ---
 
 # AzureUpdateConfiguration
-<a name="API_AzureUpdateConfiguration"></a>
 
 The configuration for updating an Azure connector's scope and regions.
 

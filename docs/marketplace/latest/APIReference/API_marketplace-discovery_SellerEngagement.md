@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # SellerEngagement
-<a name="API_marketplace-discovery_SellerEngagement"></a>
 
 An engagement option available to potential buyers of a product, such as requesting a private offer or a demo.
 

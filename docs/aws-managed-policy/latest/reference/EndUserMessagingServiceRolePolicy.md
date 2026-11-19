@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EndU
 ---
 
 # EndUserMessagingServiceRolePolicy
-<a name="EndUserMessagingServiceRolePolicy"></a>
 
 **Description**: Allows EndUserMessaging to publish metrics to CloudWatch on your behalf
 

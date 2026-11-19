@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-cr
 ---
 
 # How to create a 3D map
-<a name="how-to-create-a-3d-map"></a>
 
 Amazon Location Service lets you add three-dimensional features to maps, such as `Terrain3D` to display elevation data as a three-dimensional surface, or `Buildings3D` to display urban structures with height and volume.
 

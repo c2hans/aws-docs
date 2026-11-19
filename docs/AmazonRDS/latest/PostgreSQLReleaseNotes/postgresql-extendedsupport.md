@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/
 ---
 
 # Amazon RDS Extended Support updates
-<a name="postgresql-extendedsupport"></a>
 
 Learn about the Amazon RDS Extended Support updates below.
 

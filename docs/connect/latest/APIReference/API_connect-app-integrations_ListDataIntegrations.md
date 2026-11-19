@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListDataIntegrations
-<a name="API_connect-app-integrations_ListDataIntegrations"></a>
 
 Returns a paginated list of DataIntegrations in the account.
 

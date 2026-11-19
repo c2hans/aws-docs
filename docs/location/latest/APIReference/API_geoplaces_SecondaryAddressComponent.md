@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # SecondaryAddressComponent
-<a name="API_geoplaces_SecondaryAddressComponent"></a>
 
 Components that correspond to secondary identifiers on an address. The only component type supported currently is Unit.
 

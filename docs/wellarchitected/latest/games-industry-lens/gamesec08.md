@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Application security
-<a name="gamesec08"></a>
 
 |  GAMESEC08: How do you secure your CI/CD pipeline?  |
 | --- |

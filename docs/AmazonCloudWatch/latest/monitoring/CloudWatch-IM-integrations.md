@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Add a monitor using other AWS services
-<a name="CloudWatch-IM-integrations"></a>
 
 A simple way to add monitoring with Internet Monitor is to choose to create a monitor when you add a supported resource when you create a resource—or use monitoring for the resource—in console.
 

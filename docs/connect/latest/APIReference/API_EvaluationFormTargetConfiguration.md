@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormTargetConfiguration
-<a name="API_EvaluationFormTargetConfiguration"></a>
 
 Configuration that specifies the target for an evaluation form.
 

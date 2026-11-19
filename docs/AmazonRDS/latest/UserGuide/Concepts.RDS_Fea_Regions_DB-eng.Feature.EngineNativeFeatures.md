@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_
 ---
 
 # Engine-native features in Amazon RDS
-<a name="Concepts.RDS_Fea_Regions_DB-eng.Feature.EngineNativeFeatures"></a>
 
 Amazon RDS database engines also support many of the most common engine-native features and functionality. These features are different than the Amazon RDS-native features listed on this page. Some engine-native features might have limited support or restricted privileges.
 

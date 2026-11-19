@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Validat
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 The input failed to meet the constraints specified by Amazon Q Business in a specified field.
 

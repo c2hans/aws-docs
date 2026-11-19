@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/global-cluste
 ---
 
 # Connect to an Amazon DocumentDB global cluster
-<a name="global-clusters-connect"></a>
 
 How you connect to a global cluster depends on whether you need to write to the cluster or read from the cluster:
 + For read-only requests or queries, you connect to the reader endpoint for the cluster in your AWS Region.

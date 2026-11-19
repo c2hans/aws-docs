@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackageV2::OriginEndpointPolicy
-<a name="aws-resource-mediapackagev2-originendpointpolicy"></a>
 
 Specifies the configuration parameters of a policy associated with a MediaPackage V2 origin endpoint.
 

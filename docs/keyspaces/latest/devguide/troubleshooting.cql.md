@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/troubleshootin
 ---
 
 # Troubleshooting data definition language errors in Amazon Keyspaces
-<a name="troubleshooting.cql"></a>
 
 Having trouble creating resources? Here are some common issues and how to resolve them.
 

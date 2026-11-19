@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_S
 ---
 
 # SpectrumConfig
-<a name="API_SpectrumConfig"></a>
 
 Object that describes a spectral `Config`.
 

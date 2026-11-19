@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeHoursOfOperationOverride
-<a name="API_DescribeHoursOfOperationOverride"></a>
 
 Describes the hours of operation override.
 

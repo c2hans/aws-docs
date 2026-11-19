@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/setting-u
 ---
 
 # Setting up a custom domain name for QnABot content designer and client
-<a name="setting-up-a-custom-domain-name-for-qnabot-content-designer-and-client"></a>
 
 This section provides information on how to set up a custom domain name and configure the QnABot on AWS guidance to use the custom domain name for the content designer and client user interfaces. The setup and configuration involve the following steps.
 

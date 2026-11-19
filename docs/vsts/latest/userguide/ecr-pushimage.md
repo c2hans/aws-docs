@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/ecr-pushimage.html
 ---
 
 # Amazon ECR Push task
-<a name="ecr-pushimage"></a>
 
 (Amazon Elastic Container Registry Push Image Task)
 

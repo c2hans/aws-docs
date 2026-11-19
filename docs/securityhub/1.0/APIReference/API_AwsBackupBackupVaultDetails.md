@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsBack
 ---
 
 # AwsBackupBackupVaultDetails
-<a name="API_AwsBackupBackupVaultDetails"></a>
 
 Provides details about an AWS Backup backup vault. In AWS Backup, a backup vault is a container that stores and organizes your backups.
 

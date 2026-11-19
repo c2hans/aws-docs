@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateDashboard
-<a name="API_bcmDashboards_UpdateDashboard"></a>
 
 Updates an existing dashboard's properties, including its name, description, and widget configurations.
 

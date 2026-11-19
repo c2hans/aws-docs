@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Re
 ---
 
 # RevisionPublished
-<a name="API_RevisionPublished"></a>
 
 Information about the published revision.
 

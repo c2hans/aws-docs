@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Broker Count
-<a name="clusters-clusterarn-nodes-count"></a>
 
 The number of broker nodes in a cluster.
 

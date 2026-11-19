@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Isoline
 ---
 
 # IsolineTravelModeOptions
-<a name="API_IsolineTravelModeOptions"></a>
 
 Mode-specific routing options that further refine how reachable areas are calculated. Options are only considered when they match the selected travel mode.
 

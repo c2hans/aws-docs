@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UpdateScheduledAction
-<a name="API_UpdateScheduledAction"></a>
 
 Updates a scheduled action.
 

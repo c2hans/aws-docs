@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Associ
 ---
 
 # AssociatedEnvironment
-<a name="API_AssociatedEnvironment"></a>
 
 The associated Environment.
 

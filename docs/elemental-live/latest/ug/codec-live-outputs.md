@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/codec-live-outp
 ---
 
 # Live outputs: Supported codecs
-<a name="codec-live-outputs"></a>
 
 This table specifies the audio codecs that are supported in output groups that support live outputs.
 

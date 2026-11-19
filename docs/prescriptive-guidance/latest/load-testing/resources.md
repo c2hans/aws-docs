@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/load-testin
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS testing policies
 <a name="aws-testing-policies"></a>

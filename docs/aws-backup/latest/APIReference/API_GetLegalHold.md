@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetLe
 ---
 
 # GetLegalHold
-<a name="API_GetLegalHold"></a>
 
 This action returns details for a specified legal hold. The details are the body of a legal hold in JSON format, in addition to metadata.
 

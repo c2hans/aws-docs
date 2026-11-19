@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListMonitoringAlertHistory
-<a name="API_ListMonitoringAlertHistory"></a>
 
 Gets a list of past alerts in a model monitoring schedule.
 

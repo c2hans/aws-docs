@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-dat
 ---
 
 # JobExecutionSummary
-<a name="API_iot-jobs-data_JobExecutionSummary"></a>
 
 Contains a subset of information about a job execution.
 

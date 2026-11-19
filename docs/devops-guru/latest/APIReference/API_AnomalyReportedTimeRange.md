@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Anom
 ---
 
 # AnomalyReportedTimeRange
-<a name="API_AnomalyReportedTimeRange"></a>
 
  A time range that specifies when DevOps Guru opens and then closes an anomaly. This is different from `AnomalyTimeRange`, which specifies the time range when DevOps Guru actually observes the anomalous behavior.
 

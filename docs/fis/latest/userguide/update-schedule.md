@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/update-schedule.htm
 ---
 
 # Update an experiment schedule
-<a name="update-schedule"></a>
 
  You can update an experiment schedule so that it occurs at a specific date and time that suits you.
 

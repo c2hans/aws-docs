@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessBeforeToolCallHook
-<a name="API_HarnessBeforeToolCallHook"></a>
 
 The configuration for a hook that runs before the agent calls a tool.
 

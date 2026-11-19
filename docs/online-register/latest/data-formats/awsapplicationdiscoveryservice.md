@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS Application Discovery Service
-<a name="awsapplicationdiscoveryservice"></a>
 
 AWS Application Discovery Service provides the following APIs for data retrieval.
 

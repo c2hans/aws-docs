@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/security-best-prac
 ---
 
 # Security best practices on Amazon MWAA
-<a name="security-best-practices"></a>
 
 Amazon MWAA provides a number of security features to consider as you develop and implement your own security policies. The following best practices are general guidelines and don’t represent a complete security solution. Because these best practices might not be appropriate or sufficient for your environment, treat them as helpful considerations rather than prescriptions.
 + Use least-permissive permission policies. Grant permissions to only the resources or actions that users need to perform tasks.
@@ -47,6 +46,8 @@ To complete the following steps, you will need the following:
 <a name="security-bp-multi-team"></a>
 
 Follow these practices when you use a multi-team environment:
++ **Treat write access to DAG folders as administrator access** – Anyone who can write to the global DAG folder, a team DAG folder, plugins, or `requirements.txt` in Amazon S3 can run code with the environment's execution role and can affect all teams. Grant write access to these Amazon S3 prefixes only to people and pipelines that you trust with every team's resources.
++ **Publish DAGs through a reviewed pipeline** – Instead of giving team members direct write access to Amazon S3, use a CI/CD pipeline with a review step to publish DAGs to team folders.
 + **Use separate environments for strict isolation** – Teams in a multi-team environment share compute, plugins, and Python dependencies. If teams need isolation beyond separate DAG folders and access control, use separate environments.
 + **Review team membership regularly** – Team membership comes from IAM Identity Center groups. Review group memberships regularly, and remove users who change roles or leave your organization.
 + **Use separate Amazon S3 buckets for sensitive data** – If teams work with data of different sensitivity, consider using separate Amazon S3 buckets with their own access controls instead of relying only on team DAG folders.

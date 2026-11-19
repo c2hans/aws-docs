@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DescribeKinesisStreamingDestination
-<a name="API_DescribeKinesisStreamingDestination"></a>
 
 Returns information about the status of Kinesis streaming.
 

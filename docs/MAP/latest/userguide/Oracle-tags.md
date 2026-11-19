@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/Oracle-tags.html
 ---
 
 # Oracle tags
-<a name="Oracle-tags"></a>
 
 Use the following tables for migration plans using MAP 2.0 for Oracle Migration.
 

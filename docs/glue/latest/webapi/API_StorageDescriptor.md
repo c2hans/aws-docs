@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StorageDescriptor
 ---
 
 # StorageDescriptor
-<a name="API_StorageDescriptor"></a>
 
 Describes the physical storage of table data.
 

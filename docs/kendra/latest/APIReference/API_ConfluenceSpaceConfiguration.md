@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Confluenc
 ---
 
 # ConfluenceSpaceConfiguration
-<a name="API_ConfluenceSpaceConfiguration"></a>
 
 Configuration information for indexing Confluence spaces.
 

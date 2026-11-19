@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/migrati
 ---
 
 # Options for migrating to Amazon MQ
-<a name="migration-approaches"></a>
 
 The first step in migrating your commercial message broker to Amazon MQ is determining the right migration approach for your existing application architecture. The following are the most common approaches to migration:
 

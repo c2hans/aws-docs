@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ScheduledJob
 ---
 
 # ScheduledJobRollout
-<a name="API_ScheduledJobRollout"></a>
 
 Displays the next seven maintenance window occurrences and their start times.
 

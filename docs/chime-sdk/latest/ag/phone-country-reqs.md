@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/phone-country-reqs.h
 ---
 
 # Country requirements for phone numbers
-<a name="phone-country-reqs"></a>
 
 Outside the US, regulations often require a local address and specific identification documents in order to purchase and use a phone number. The address can be a business or personal address. The following tables list the countries that require identification. When you [request international phone numbers](request-intl-numbers.md) or you [port existing phone numbers](porting.md), the Amazon Chime SDK support works with you to submit the necessary documents.
 

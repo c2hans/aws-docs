@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # SipMediaApplicationEndpoint
-<a name="API_voice-chime_SipMediaApplicationEndpoint"></a>
 
 The endpoint assigned to a SIP media application.
 

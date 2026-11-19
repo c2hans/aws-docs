@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-multimodal-c
 ---
 
 # Create a knowledge base for multimodal content
-<a name="kb-multimodal-create"></a>
 
 You can create multimodal knowledge bases using either the console or API. Choose your approach based on your multimodal processing needs.
 

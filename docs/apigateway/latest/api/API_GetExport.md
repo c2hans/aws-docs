@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetExport.html
 ---
 
 # GetExport
-<a name="API_GetExport"></a>
 
 Exports a deployed version of a RestApi in a specified format.
 

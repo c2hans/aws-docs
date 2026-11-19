@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleDmarcExpression
-<a name="API_RuleDmarcExpression"></a>
 
 A DMARC policy expression. The condition matches if the given DMARC policy matches that of the incoming email.
 

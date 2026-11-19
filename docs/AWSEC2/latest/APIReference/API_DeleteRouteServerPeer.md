@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteRou
 ---
 
 # DeleteRouteServerPeer
-<a name="API_DeleteRouteServerPeer"></a>
 
 Deletes the specified BGP peer from a route server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/prebuilt-containers-
 ---
 
 # Extend a Pre-built Container
-<a name="prebuilt-containers-extend"></a>
 
 If a pre-built SageMaker AI container doesn't fulfill all of your requirements, you can extend the existing image to accommodate your needs. Even if there is direct support for your environment or framework, you may want to add additional functionality or configure your container environment differently. By extending a pre-built image, you can leverage the included deep learning libraries and settings without having to create an image from scratch. You can extend the container to add libraries, modify settings, and install additional dependencies.
 

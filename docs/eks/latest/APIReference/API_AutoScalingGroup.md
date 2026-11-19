@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AutoScalingG
 ---
 
 # AutoScalingGroup
-<a name="API_AutoScalingGroup"></a>
 
 An Auto Scaling group that is associated with an Amazon EKS managed node group.
 

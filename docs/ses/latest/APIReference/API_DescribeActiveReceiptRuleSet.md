@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DescribeActi
 ---
 
 # DescribeActiveReceiptRuleSet
-<a name="API_DescribeActiveReceiptRuleSet"></a>
 
 Returns the metadata and receipt rules for the receipt rule set that is currently active.
 

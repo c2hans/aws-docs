@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateConfiguredAudienceModelAssociation
-<a name="API_UpdateConfiguredAudienceModelAssociation"></a>
 
 Provides the details necessary to update a configured audience model association.
 

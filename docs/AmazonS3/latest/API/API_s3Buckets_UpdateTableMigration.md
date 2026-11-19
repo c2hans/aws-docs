@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Update
 ---
 
 # UpdateTableMigration
-<a name="API_s3Buckets_UpdateTableMigration"></a>
 
 Requests a state change for a migration. Identify the migration by its `migrationId` or by the `tableARN` of its destination table.
 

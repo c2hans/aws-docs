@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
 ---
 
 # Workflow monitor: Signal map monitor deployment
-<a name="signal-maps-identifier-monitor-deployment"></a>
 
 ## URI
 <a name="signal-maps-identifier-monitor-deployment-url"></a>

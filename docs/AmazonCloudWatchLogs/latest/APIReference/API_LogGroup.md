@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LogGroup
-<a name="API_LogGroup"></a>
 
 Represents a log group.
 

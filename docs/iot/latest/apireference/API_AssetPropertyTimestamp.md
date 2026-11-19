@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AssetPropert
 ---
 
 # AssetPropertyTimestamp
-<a name="API_AssetPropertyTimestamp"></a>
 
 An asset property timestamp entry containing the following information.
 

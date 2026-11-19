@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-act
 ---
 
 # IAM actions for Claude Platform on AWS
-<a name="iam-actions"></a>
 
  *IAM action reference for controlling access to Claude Platform on AWS through AWS policies.*
 

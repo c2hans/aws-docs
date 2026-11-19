@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/co
 ---
 
 # How containers work in Amazon GameLift Servers
-<a name="containers-howitworks"></a>
 
 Amazon GameLift Servers container fleets are designed to give you flexibility in how you deploy and scale your containerized applications. It uses the Amazon Elastic Container Service (Amazon ECS) to manage task deployment and execution for your Amazon GameLift Servers fleets. This topic describes the basic structural elements for running containers on an Amazon GameLift Servers managed fleet, illustrates common architectures, and outlines some core concepts.
 

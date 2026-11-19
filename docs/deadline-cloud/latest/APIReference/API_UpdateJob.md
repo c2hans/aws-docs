@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateJob
-<a name="API_UpdateJob"></a>
 
 Updates a job.
 

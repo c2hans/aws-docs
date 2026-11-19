@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Ev
 ---
 
 # EventSourceConfiguration
-<a name="API_EventSourceConfiguration"></a>
 
 Discriminated EventSource configuration. Exactly one variant must be set.
 

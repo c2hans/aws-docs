@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/limitations.htm
 ---
 
 # Known issues for AWS Lake Formation
-<a name="limitations"></a>
 
 Review these known issues for AWS Lake Formation.
 

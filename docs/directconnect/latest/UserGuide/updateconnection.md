@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/updatecon
 ---
 
 # Update a Direct Connect connection
-<a name="updateconnection"></a>
 
 You can update the following connection attribute using either the Direct Connect console or using the command line or API.
 + The name of the connection.

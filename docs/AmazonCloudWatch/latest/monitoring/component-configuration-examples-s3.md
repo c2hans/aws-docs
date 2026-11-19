@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Amazon S3 bucket
-<a name="component-configuration-examples-s3"></a>
 
 The following example shows a component configurations in JSON format for Amazon S3 bucket.
 

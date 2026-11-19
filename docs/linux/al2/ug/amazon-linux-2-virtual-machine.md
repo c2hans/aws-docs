@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/amazon-linux-2-virtual-mach
 ---
 
 # Run AL2 as a virtual machine on premises
-<a name="amazon-linux-2-virtual-machine"></a>
 
 Use the AL2 virtual machine (VM) images for on-premises development and testing. We offer a different AL2 VM image for each of the supported virtualization platforms. You can view the list of supported platforms on the [Amazon Linux 2 virtual machine images](https://cdn.amazonlinux.com/os-images/latest/) page.
 

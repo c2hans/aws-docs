@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Tutorial for adding a new Prometheus scrape target: Redis OSS on Amazon EKS and Kubernetes clusters
-<a name="ContainerInsights-Prometheus-Setup-redis-eks"></a>
 
 This tutorial provides a hands-on introduction to scrape the Prometheus metrics of a sample Redis OSS application on Amazon EKS and Kubernetes. Redis OSS (https://redis.io/) is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. For more information, see [ redis](https://redis.io/).
 

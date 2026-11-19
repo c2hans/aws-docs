@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/workday-ldq-configuring.h
 ---
 
 # Configuring Workday Live Data Query
-<a name="workday-ldq-configuring"></a>
 
 Before you can use AWS Glue to query data from Workday Live Data Query, you must meet these requirements.
 

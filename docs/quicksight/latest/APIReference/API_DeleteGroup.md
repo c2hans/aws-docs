@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteGroup
-<a name="API_DeleteGroup"></a>
 
 Removes a user group from Amazon Quick Sight.
 

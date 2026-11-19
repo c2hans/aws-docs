@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/cost-opt-obser
 ---
 
 # Observability
-<a name="cost-opt-observability"></a>
 
 ## Introduction
 <a name="_introduction"></a>

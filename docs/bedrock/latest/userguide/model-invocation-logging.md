@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocatio
 ---
 
 # Monitor model invocation using CloudWatch Logs and Amazon S3
-<a name="model-invocation-logging"></a>
 
 You can use model invocation logging to collect invocation logs, model input data, and model output data for all invocations in your AWS account used in Amazon Bedrock in a Region.
 

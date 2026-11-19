@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateCluster
-<a name="API_UpdateCluster"></a>
 
 Updates a SageMaker HyperPod cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Resources
-<a name="resources"></a>
 
 For more information about change acceleration and organizational change management, see the following resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # DeletePolicy
-<a name="API_DeletePolicy"></a>
 
 Deletes the specified policy.
 

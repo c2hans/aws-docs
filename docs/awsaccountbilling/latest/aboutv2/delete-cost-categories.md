@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/delete-
 ---
 
 # Deleting cost categories
-<a name="delete-cost-categories"></a>
 
 You can delete your cost categories using the following procedure. <a name="edit-cost-categories-steps"></a>
 

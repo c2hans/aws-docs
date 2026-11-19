@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-s
 ---
 
 # Deleting an Amazon ECS service using the console
-<a name="delete-service-v2"></a>
 
 The following are some of the reasons you would delete a service:
 + The application is no longer needed

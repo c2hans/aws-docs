@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/be
 ---
 
 # Best practice arranged by migration phase
-<a name="best-practice-arranged-by-migration-phase"></a>
 
 ## Assess Phase
 <a name="assess-phase-6"></a>

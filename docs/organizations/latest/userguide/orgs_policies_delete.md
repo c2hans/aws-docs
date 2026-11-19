@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_poli
 ---
 
 # Deleting organization policies with AWS Organizations
-<a name="orgs_policies_delete"></a>
 
 When you no longer need a policy and after you detach it from all organizational units (OUs) and accounts, you can delete it.
 

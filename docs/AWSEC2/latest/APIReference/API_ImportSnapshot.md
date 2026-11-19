@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportSna
 ---
 
 # ImportSnapshot
-<a name="API_ImportSnapshot"></a>
 
 Imports a disk into an EBS snapshot.
 

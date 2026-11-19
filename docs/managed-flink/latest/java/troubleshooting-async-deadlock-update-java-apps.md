@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # Update Java applications
-<a name="troubleshooting-async-deadlock-update-java-apps"></a>
 
 Follow the procedures below to update Java applications:
 

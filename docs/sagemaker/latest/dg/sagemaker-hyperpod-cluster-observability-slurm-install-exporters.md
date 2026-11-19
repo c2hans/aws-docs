@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # Installing metrics exporter packages on your HyperPod cluster
-<a name="sagemaker-hyperpod-cluster-observability-slurm-install-exporters"></a>
 
 In the [base configuration lifecycle scripts](sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-base-config.md) that the SageMaker HyperPod team provides also includes installation of various metric exporter packages. To activate the installation step, the only thing you need to do is to set the parameter `enable_observability=True` in the [`config.py`](https://github.com/aws-samples/awsome-distributed-training/blob/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/config.py) file. The lifecycle scripts are designed to bootstrap your cluster with the following open-source metric exporter packages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetCollaborationConfiguredModelAlgorithmAssociation
-<a name="API_GetCollaborationConfiguredModelAlgorithmAssociation"></a>
 
 Returns information about the configured model algorithm association in a collaboration.
 

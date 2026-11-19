@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # SpeakerLabelingConfiguration
-<a name="API_data-automation_SpeakerLabelingConfiguration"></a>
 
 Enables or disables speaker labeling. Speaker labeling, when enabled will assign a number to each speaker, and indicate which speaker is talking in each portion of the transcript. This appears in the response as "spk\_0" for the first speaker, "spk\_1" for the second, and so on for up to 30 speakers.
 

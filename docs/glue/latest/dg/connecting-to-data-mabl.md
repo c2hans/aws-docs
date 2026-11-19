@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-mabl.h
 ---
 
 # Connecting to mabl in AWS Glue Studio
-<a name="connecting-to-data-mabl"></a>
 
 mabl is a low-code, intelligent test-automation platform. Because you are a mabl user, you can connect AWS Glue to your mabl account. You can then use mabl as a data source in your AWS Glue ETL jobs to transfer data between mabl and AWS services or other supported applications.
 

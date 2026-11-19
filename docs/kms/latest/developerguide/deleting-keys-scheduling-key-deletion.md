@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys-
 ---
 
 # Schedule key deletion
-<a name="deleting-keys-scheduling-key-deletion"></a>
 
 The following procedures describe how to schedule key deletion and cancel key deletion of AWS KMS keys (KMS keys) in AWS KMS using the AWS Management Console and the AWS KMS API.
 

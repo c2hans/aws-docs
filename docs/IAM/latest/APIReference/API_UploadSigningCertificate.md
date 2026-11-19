@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UploadSignin
 ---
 
 # UploadSigningCertificate
-<a name="API_UploadSigningCertificate"></a>
 
 Uploads an X.509 signing certificate and associates it with the specified IAM user. Some AWS services require you to use certificates to validate requests that are signed with a corresponding private key. When you upload the certificate, its default status is `Active`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-ru
 ---
 
 # Run an EMR Studio Workspace with a runtime role
-<a name="emr-studio-runtime"></a>
 
 **Note**
 The runtime role functionality described on this page only applies to Amazon EMR running on Amazon EC2, and doesn't refer to the runtime role functionality in EMR Serverless interactive applications. To learn more about how to use runtime roles in EMR Serverless, see [Job runtime roles](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/security-iam-runtime-role.html) in the *Amazon EMR Serverless User Guide*.

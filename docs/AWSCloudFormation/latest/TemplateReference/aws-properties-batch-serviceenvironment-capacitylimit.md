@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Batch::ServiceEnvironment CapacityLimit
-<a name="aws-properties-batch-serviceenvironment-capacitylimit"></a>
 
 Defines the capacity limit for a service environment. This structure specifies the maximum amount of resources that can be used by service jobs in the environment.
 

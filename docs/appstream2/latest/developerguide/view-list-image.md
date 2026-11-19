@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/view-li
 ---
 
 # View the list of license included applications installed on your image
-<a name="view-list-image"></a>
 
 **View the list of license included applications installed on your image**
 

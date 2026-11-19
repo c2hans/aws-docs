@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTa
 ---
 
 # ExperimentTargetAccountConfiguration
-<a name="API_ExperimentTargetAccountConfiguration"></a>
 
 Describes a target account configuration for an experiment.
 

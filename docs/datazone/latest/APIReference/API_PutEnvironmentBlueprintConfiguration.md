@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_PutEnvi
 ---
 
 # PutEnvironmentBlueprintConfiguration
-<a name="API_PutEnvironmentBlueprintConfiguration"></a>
 
 Writes the configuration for the specified environment blueprint in Amazon DataZone.
 

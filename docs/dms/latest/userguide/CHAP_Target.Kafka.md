@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Kafka.h
 ---
 
 # Using Apache Kafka as a target for AWS Database Migration Service
-<a name="CHAP_Target.Kafka"></a>
 
 You can use AWS DMS to migrate data to an Apache Kafka cluster. Apache Kafka is a distributed streaming platform. You can use Apache Kafka for ingesting and processing streaming data in real-time.
 

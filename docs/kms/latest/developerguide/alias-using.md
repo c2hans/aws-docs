@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/alias-using.ht
 ---
 
 # Learn how to use aliases in your applications
-<a name="alias-using"></a>
 
 You can use an alias to represent a KMS key in your application code. The `KeyId` parameter in AWS KMS [cryptographic operations](kms-cryptography.md#cryptographic-operations), [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html), and [GetPublicKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html) accepts an alias name or alias ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/GetSingleMetricA
 ---
 
 # Aggregate statistics across instances
-<a name="GetSingleMetricAllDimensions"></a>
 
 Aggregate statistics are available for instances that have detailed monitoring enabled. Instances that use basic monitoring are not included in the aggregates. Before you can get statistics aggregated across instances, you must [enable detailed monitoring](manage-detailed-monitoring.md#enable-detailed-monitoring) (at an additional charge), which provides data in 1-minute periods.
 

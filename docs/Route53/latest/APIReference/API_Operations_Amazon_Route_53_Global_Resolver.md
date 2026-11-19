@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Operatio
 ---
 
 # Amazon Route 53 Global Resolver
-<a name="API_Operations_Amazon_Route_53_Global_Resolver"></a>
 
 The following actions are supported by Amazon Route 53 Global Resolver:
 +  [AssociateHostedZone](API_route53globalresolver_AssociateHostedZone.md)

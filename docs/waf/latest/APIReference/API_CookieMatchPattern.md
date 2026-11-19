@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CookieMatchP
 ---
 
 # CookieMatchPattern
-<a name="API_CookieMatchPattern"></a>
 
 The filter to use to identify the subset of cookies to inspect in a web request.
 

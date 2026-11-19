@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/viewing-dash
 ---
 
 # Using the AWS Compute Optimizer dashboard
-<a name="viewing-dashboard"></a>
 
 AWS Compute Optimizer (Compute Optimizer) recommends optimal AWS resources to reduce your costs and improve performance. Use the dashboard in the Compute Optimizer console to evaluate and prioritize the optimization opportunities for the supported resource types in your account. The dashboard shows the following information. Compute Optimizer refreshes it daily. It analyzes the specifications and utilization metrics of your resources.
 

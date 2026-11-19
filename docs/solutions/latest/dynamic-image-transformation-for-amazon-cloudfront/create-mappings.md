@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Create mappings
-<a name="create-mappings"></a>
 
 A mapping connects incoming requests to a specific origin and, optionally, a transformation policy. Each mapping matches requests by **either** a path pattern **or** a host header pattern; you provide exactly one of the two, not both.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # PutSegmentSubscription
-<a name="API_connect-customer-profiles_PutSegmentSubscription"></a>
 
 Creates or updates a segment subscription for membership events. When a subscription is created, an initial snapshot is taken and the system begins monitoring for membership changes.
 

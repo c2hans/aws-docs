@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # StartQueryWorkloadInsightsTopContributors
-<a name="API_StartQueryWorkloadInsightsTopContributors"></a>
 
 Create a query with the Network Flow Monitor query interface that you can run to return workload insights top contributors. Specify the scope that you want to create a query for.
 

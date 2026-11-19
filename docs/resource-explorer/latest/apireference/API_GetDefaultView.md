@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # GetDefaultView
-<a name="API_GetDefaultView"></a>
 
 Retrieves the Amazon Resource Name (ARN) of the view that is the default for the AWS Region in which you call this operation. You can then call [GetView](API_GetView.md) to retrieve the details of that view.
 

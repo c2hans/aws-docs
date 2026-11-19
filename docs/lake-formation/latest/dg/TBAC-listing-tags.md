@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/TBAC-listing-ta
 ---
 
 # Listing LF-Tags
-<a name="TBAC-listing-tags"></a>
 
 You can list the LF-Tags that you have the `Describe` or `Associate` permissions on. The values listed with each LF-Tag key are the values that you have permissions on.
 

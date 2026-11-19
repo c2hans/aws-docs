@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/disable-content-q
 ---
 
 # Disabling content quality analysis for a router input
-<a name="disable-content-quality-analysis-router-inputs"></a>
 
 ## Prerequisites
 <a name="disable-content-quality-analysis-router-inputs-prerequisites"></a>

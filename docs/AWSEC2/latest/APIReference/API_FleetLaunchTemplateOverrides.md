@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetLaun
 ---
 
 # FleetLaunchTemplateOverrides
-<a name="API_FleetLaunchTemplateOverrides"></a>
 
 Describes overrides for a launch template.
 

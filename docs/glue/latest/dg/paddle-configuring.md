@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/paddle-configuring.html
 ---
 
 # Configuring Paddle
-<a name="paddle-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Paddle, you must meet the following requirements:
 

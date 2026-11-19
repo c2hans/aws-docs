@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ExternalBedrockKnowledgeBaseConfig
-<a name="API_amazon-q-connect_ExternalBedrockKnowledgeBaseConfig"></a>
 
 Configuration for an external Bedrock knowledge base.
 

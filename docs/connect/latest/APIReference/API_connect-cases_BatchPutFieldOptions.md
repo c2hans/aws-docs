@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BatchPutFieldOptions
-<a name="API_connect-cases_BatchPutFieldOptions"></a>
 
 Creates and updates a set of field options for a single select field in a Cases domain.
 

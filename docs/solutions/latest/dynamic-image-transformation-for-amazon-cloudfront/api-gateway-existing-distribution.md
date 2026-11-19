@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Lambda architecture
-<a name="api-gateway-existing-distribution"></a>
 
 If you’ve deployed the Lambda architecture stack and have set the Use Existing CloudFront Distribution template parameter to Yes, use the following instructions to complete your setup.
 

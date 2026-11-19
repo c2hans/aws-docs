@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/call-analytics.html
 ---
 
 # Generating insights from calls using call analytics for the Amazon Chime SDK
-<a name="call-analytics"></a>
 
 The topics in this section explain how to use Amazon Chime SDK call analytics to generate insights from your call data.
 

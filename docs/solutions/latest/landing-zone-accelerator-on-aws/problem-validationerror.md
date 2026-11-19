@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Problem: "ValidationError: Stack <stack-name> cannot be deleted while TerminationProtection is enabled" error
-<a name="problem-validationerror"></a>
 
 Depending on your deployment, you might choose to remove an existing solution-provisioned CloudFormation stack. Solution-provisioned stacks have termination protection activated by default. If you attempt to delete a stack with termination protection activated, the deletion fails. The stack and its status remain unchanged. You might receive a [Core pipeline error](problem-core-pipeline-failure.md) message like the following, with `AWSAccelerator-<STACK_NAME>- <ACCOUNT_ID>-<REGION> ` representing the stack name:
 

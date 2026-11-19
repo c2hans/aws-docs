@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Deprecated - Create a public free trial offer with subscription pricing for a SaaS product using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_CreatePublicFreeTrialOfferWithSubscriptionPricingForSaasProduct_section"></a>
 
 The following code examples show how to create a public free trial offer with subscription pricing for a SaaS product. This example is deprecated, because standalone free trial offers for SaaS subscription products can no longer be created. Use *Add a free trial that converts to a paid subscription to the public offer of a SaaS subscription product* instead.
 

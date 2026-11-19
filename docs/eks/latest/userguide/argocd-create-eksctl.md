@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-create-eksct
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create an Argo CD capability using eksctl
-<a name="argocd-create-eksctl"></a>
 
 Create an Argo CD capability on your Amazon EKS cluster using eksctl.
 

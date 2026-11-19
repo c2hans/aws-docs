@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconce
 ---
 
 # Overview of machine learning with Amazon SageMaker AI
-<a name="how-it-works-mlconcepts"></a>
 
 This section describes a typical machine learning (ML) workflow and describes how to accomplish those tasks with Amazon SageMaker AI.
 

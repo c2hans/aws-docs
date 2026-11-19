@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/adminguide/data-opt-out.ht
 ---
 
 # Opting out of data use for service improvement
-<a name="data-opt-out"></a>
 
 AWS might use certain content that you process with Amazon Connect Talent to improve the service. This includes fixing operational issues, evaluating service performance, and debugging. Your content is not used for model training. You can choose to opt out of this use.
 

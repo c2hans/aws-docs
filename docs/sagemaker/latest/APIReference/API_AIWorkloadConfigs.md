@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIWork
 ---
 
 # AIWorkloadConfigs
-<a name="API_AIWorkloadConfigs"></a>
 
 The benchmark tool configuration for an AI workload.
 

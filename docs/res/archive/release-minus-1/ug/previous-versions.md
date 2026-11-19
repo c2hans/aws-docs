@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/previous-
 ---
 
 # Archive of Previous Versions
-<a name="previous-versions"></a>
 
 The following archive versions of this User Guide are available:
 + [ Research and Engineering Studio User Guide **2026.03 release**](https://docs.aws.amazon.com/res/archive/2026.03/ug/overview.html)

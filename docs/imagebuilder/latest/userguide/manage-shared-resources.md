@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-sha
 ---
 
 # Share Image Builder resources with AWS RAM
-<a name="manage-shared-resources"></a>
 
 EC2 Image Builder integrates with AWS Resource Access Manager (AWS RAM) so that you can share the following types of Image Builder resources with any AWS account or through AWS Organizations.
 + Components

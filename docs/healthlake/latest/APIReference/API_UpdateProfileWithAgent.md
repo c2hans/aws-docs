@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Updat
 ---
 
 # UpdateProfileWithAgent
-<a name="API_UpdateProfileWithAgent"></a>
 
 Updates a data transformation profile using chat-based interaction with an agent. Supports multi-turn conversations for iteratively customizing profiles.
 

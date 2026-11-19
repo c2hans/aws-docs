@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/sssp-
 ---
 
 # Single-source shortest-path algorithms
-<a name="sssp-algorithms"></a>
 
 A single-source-shortest-path algorithm finds the shortest paths (or the distance of the shortest paths) between a given vertex and all reachable vertices in the graph (including itself).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost03-
 ---
 
 # COST03-BP01 Track resources over their lifetime
-<a name="cost03-bp01"></a>
 
  Track each resource from provisioning to retirement so you can retire it when its purpose ends. Consistent tracking makes cleanup a routine you can automate.
 

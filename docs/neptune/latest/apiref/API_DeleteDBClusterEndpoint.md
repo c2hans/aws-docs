@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DeleteDBCluste
 ---
 
 # DeleteDBClusterEndpoint
-<a name="API_DeleteDBClusterEndpoint"></a>
 
 Deletes a custom endpoint and removes it from an Amazon Neptune DB cluster.
 

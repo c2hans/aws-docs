@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # JCB specific functions
-<a name="use-cases-issuers.networkfunctions.jcb"></a>
 
 **Topics**
 + [ARQC - CVN04](#use-cases-issuers.networkfunctions.jcb.cvn04)

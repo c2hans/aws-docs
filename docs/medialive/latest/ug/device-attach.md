@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/device-attach.html
 ---
 
 # Attaching and detaching a Link device
-<a name="device-attach"></a>
 
 If you are using a Link device as the source for a MediaConnect flow, you must attach the flow to the device. You can also detach the flow to stop using the device as the source for that flow.
 

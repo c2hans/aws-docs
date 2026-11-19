@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Projec
 ---
 
 # ProjectSourceVersion
-<a name="API_ProjectSourceVersion"></a>
 
  A source identifier and its corresponding version.
 

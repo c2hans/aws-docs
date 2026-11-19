@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Billing questions for AMS Accelerate
-<a name="acc-billing-questions"></a>
 
 To submit a billing-related question, complete the following steps:
 

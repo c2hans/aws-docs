@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSEC04-BP03 Implement supply chain transparency controls to block ad fraud
-<a name="advsec04-bp03"></a>
 
  Demand-side platforms (DSPs) need to verify in real time that advertisers and agencies purchase legitimate inventory across exchanges. With the IAB Tech Lab transparency stack (ads.txt, sellers.json, app-ads.txt, and the SupplyChain object), DSPs can validate each impression opportunity in the programmatic supply chain.
 

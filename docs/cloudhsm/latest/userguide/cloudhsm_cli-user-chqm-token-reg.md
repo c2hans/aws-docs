@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-u
 ---
 
 # Register a user's token-sign quorum strategy using CloudHSM CLI
-<a name="cloudhsm_cli-user-chqm-token-reg"></a>
 
 Use the **user change-quorum token-sign register** command in CloudHSM CLI to register the token-sign quorum strategy for an admin user.
 

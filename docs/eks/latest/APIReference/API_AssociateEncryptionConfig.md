@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AssociateEnc
 ---
 
 # AssociateEncryptionConfig
-<a name="API_AssociateEncryptionConfig"></a>
 
 Associates an encryption configuration to an existing cluster.
 

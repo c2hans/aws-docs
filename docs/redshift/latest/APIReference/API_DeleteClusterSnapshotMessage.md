@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteC
 ---
 
 # DeleteClusterSnapshotMessage
-<a name="API_DeleteClusterSnapshotMessage"></a>
 
 ## Contents
 <a name="API_DeleteClusterSnapshotMessage_Contents"></a>

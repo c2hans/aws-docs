@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Amazon SageMaker Unified Studio updates to AWS managed policies
-<a name="security-iam-awsmanpol-updates"></a>
 
 View details about updates to AWS managed policies for Amazon SageMaker Unified Studio since this service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the Amazon SageMaker Unified Studio Document history page.
 

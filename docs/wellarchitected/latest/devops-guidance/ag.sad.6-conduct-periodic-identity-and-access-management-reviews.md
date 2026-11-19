@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.SAD.6] Conduct periodic identity and access management reviews
-<a name="ag.sad.6-conduct-periodic-identity-and-access-management-reviews"></a>
 
  **Category:** FOUNDATIONAL
 

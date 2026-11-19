@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/run-bluage-
 ---
 
 # Running modernized Blu Age mainframe workloads on serverless AWS infrastructure
-<a name="introduction"></a>
 
 *Richard Milner-Watts, Amazon Web Services*
 

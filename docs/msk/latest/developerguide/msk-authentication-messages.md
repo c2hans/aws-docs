@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-authentica
 ---
 
 # Produce and consume messages using authentication
-<a name="msk-authentication-messages"></a>
 
 This process describes how to produce and consume messages using authentication.
 

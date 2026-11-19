@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Record.
 ---
 
 # Record
-<a name="API_Record"></a>
 
 An occurrence of sensitive data in an Apache Avro object container or an Apache Parquet file.
 

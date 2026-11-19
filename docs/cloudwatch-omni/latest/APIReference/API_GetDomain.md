@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetDomain
-<a name="API_GetDomain"></a>
 
 Retrieves the details of a domain by ID.
 

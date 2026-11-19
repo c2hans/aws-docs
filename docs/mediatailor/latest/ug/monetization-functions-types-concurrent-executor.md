@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Concurrent executor
-<a name="monetization-functions-types-concurrent-executor"></a>
 
 ## When to use
 <a name="monetization-functions-types-concurrent-executor-when"></a>

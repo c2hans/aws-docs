@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/hdr-working-wit
 ---
 
 # Working with color space
-<a name="hdr-working-with"></a>
 
 You can control how Elemental Live handles the color space in a video source. You can set up an event to perform one of these actions on the color space:
 + You can set up to *pass through* the color space. Elemental Live doesn't touch the color space or the color space metadata.

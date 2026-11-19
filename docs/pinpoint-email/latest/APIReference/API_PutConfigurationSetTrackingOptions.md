@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_P
 ---
 
 # PutConfigurationSetTrackingOptions
-<a name="API_PutConfigurationSetTrackingOptions"></a>
 
 Specify a custom domain to use for open and click tracking elements in email that you send using Amazon Pinpoint.
 

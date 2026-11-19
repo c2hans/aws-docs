@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListTestEx
 ---
 
 # ListTestExecutions
-<a name="API_ListTestExecutions"></a>
 
 The list of test set executions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dayOfWeek.htm
 ---
 
 # $dayOfWeek
-<a name="dayOfWeek"></a>
 
 The `$dayOfWeek` operator in Amazon DocumentDB extracts the day of the week from a given date field. It returns the day of the week as a number between 1 (Sunday) and 7 (Saturday), which is the same behavior as in MongoDB.
 

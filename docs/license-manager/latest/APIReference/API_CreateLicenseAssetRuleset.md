@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CreateLicenseAssetRuleset
-<a name="API_CreateLicenseAssetRuleset"></a>
 
 Creates a license asset ruleset.
 

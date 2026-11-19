@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Globa
 ---
 
 # GlobalCluster
-<a name="API_GlobalCluster"></a>
 
 A data type representing an Amazon DocumentDB global cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/configure-tool
 ---
 
 # AWS CloudHSM Client SDK 3 configuration syntax
-<a name="configure-tool-syntax"></a>
 
 The following table illustrates the syntax for AWS CloudHSM configuration files for Client SDK 3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Business use case for FMEA
-<a name="business-use-case"></a>
 
 Organizations building applications on AWS face potential failure modes that can disrupt business operations, degrade customer experience, and reduce system reliability. Without a structured approach, teams tend to manage risk reactively — responding to production incidents rather than preventing them. Risk assessment activities often happen in isolation from development workflows, and different teams apply inconsistent criteria when evaluating risk.
 

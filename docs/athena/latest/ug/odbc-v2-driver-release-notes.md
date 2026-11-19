@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-release-
 ---
 
 # Amazon Athena ODBC 2.x release notes
-<a name="odbc-v2-driver-release-notes"></a>
 
 These release notes provide details of enhancements, features, known issues, and workflow changes in the Amazon Athena ODBC 2.x driver.
 

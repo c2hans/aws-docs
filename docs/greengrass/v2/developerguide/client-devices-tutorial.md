@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/client-devi
 ---
 
 # Tutorial: Interact with local IoT devices over MQTT
-<a name="client-devices-tutorial"></a>
 
 You can complete this tutorial to configure a core device to interact with local IoT devices, called *client devices*, that connect to the core device over MQTT. In this tutorial, you configure AWS IoT things to use *cloud discovery* to connect to the core device as client devices. When you configure cloud discovery, a client device can send a request to the AWS IoT Greengrass cloud service to discover core devices. The response from AWS IoT Greengrass includes connectivity information and certificates for the core devices that you configure the client device to discover. Then, the client device can use this information to connect to an available core device where it can communicate over MQTT.
 

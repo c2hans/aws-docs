@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayRouteLoadBalancerSecurityGroup
-<a name="API_GatewayRouteLoadBalancerSecurityGroup"></a>
 
 A security group attached to the load balancer for a gateway route.
 

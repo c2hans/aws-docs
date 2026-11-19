@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSightSecretsManagerWritePolicy
-<a name="AWSQuickSightSecretsManagerWritePolicy"></a>
 
 **Description**: Policy used by QuickSight to create secrets in AWS Secrets Manager and to attach resource policies on existing QuickSight secrets.
 

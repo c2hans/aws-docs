@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Events::Rule RunCommandParameters
-<a name="aws-properties-events-rule-runcommandparameters"></a>
 
 This parameter contains the criteria (either InstanceIds or a tag) used to specify which EC2 instances are to be sent the command.
 

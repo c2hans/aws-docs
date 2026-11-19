@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/data-providers-post
 ---
 
 # Using a PostgreSQL database as a target in DMS Schema Conversion
-<a name="data-providers-postgresql"></a>
 
 You can use PostgreSQL databases as a migration target in DMS Schema Conversion.
 

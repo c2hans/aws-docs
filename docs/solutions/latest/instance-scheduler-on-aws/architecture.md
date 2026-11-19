@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Architecture
-<a name="architecture"></a>
 
 This section provides a reference implementation architecture diagram, [AWS Well-Architected design considerations](aws-well-architected-design-considerations.md), [security components](security-1.md), [scheduler configurations](scheduler-configuration-table.md), and [AWS services used in this solution](aws-services-used-in-this-solution.md).
 

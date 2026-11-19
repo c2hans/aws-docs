@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-create-end
 ---
 
 # Creating an ACME endpoint
-<a name="sdk-acme-create-endpoint"></a>
 
 The following example shows how to use the [CreateAcmeEndpoint](https://docs.aws.amazon.com/acm/latest/APIReference/API_CreateAcmeEndpoint.html) function.
 

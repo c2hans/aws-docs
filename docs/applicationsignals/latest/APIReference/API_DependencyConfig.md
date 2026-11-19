@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # DependencyConfig
-<a name="API_DependencyConfig"></a>
 
 Identifies the dependency using the `DependencyKeyAttributes` and `DependencyOperationName`.
 

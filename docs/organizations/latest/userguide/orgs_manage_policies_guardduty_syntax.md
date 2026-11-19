@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Amazon GuardDuty policy syntax and examples
-<a name="orgs_manage_policies_guardduty_syntax"></a>
 
 Amazon GuardDuty policies follow a standardized JSON syntax that defines how GuardDuty is enabled and configured across your organization. A GuardDuty policy is a plaintext file structured according to the rules of JSON, and its syntax follows the syntax for all declarative policy types. For a complete discussion of that general syntax, see [Understanding declarative policy inheritance](orgs_manage_policies_inheritance_mgmt.md). This topic applies that general syntax to the specific requirements of the GuardDuty policy type: it defines which features GuardDuty automatically enables, and in which Regions, for the organizational entities the policy is attached to.
 

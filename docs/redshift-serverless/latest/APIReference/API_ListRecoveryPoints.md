@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListRecoveryPoints
-<a name="API_ListRecoveryPoints"></a>
 
 Returns an array of recovery points.
 

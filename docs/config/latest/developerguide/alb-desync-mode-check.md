@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/alb-desync-
 ---
 
 # alb-desync-mode-check
-<a name="alb-desync-mode-check"></a>
 
 Checks if an Application Load Balancer (ALB) is configured with a user defined desync mitigation mode. The rule is NON\_COMPLIANT if ALB desync mitigation mode does not match with the user defined desync mitigation mode.
 

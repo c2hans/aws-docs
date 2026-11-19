@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/multi-region-a
 ---
 
 # Create an Amazon S3 Multi-Region Access Point
-<a name="multi-region-access-point-create-examples"></a>
 
 The following example demonstrates how to create a Multi-Region Access Point by using the Amazon S3 console.
 

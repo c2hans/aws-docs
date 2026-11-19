@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListSourceSe
 ---
 
 # ListSourceServerActions
-<a name="API_ListSourceServerActions"></a>
 
 List source server post migration custom actions.
 

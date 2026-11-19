@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnSlaBreach.html
 ---
 
 # OnSlaBreach
-<a name="OnSlaBreach"></a>
 
 ## Cases SLA name condition
 <a name="OnSlaBreach-csnc-condition"></a>

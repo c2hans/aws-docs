@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/mtgs-sdk-mtgs.html
 ---
 
 # Using Amazon Chime SDK meetings
-<a name="mtgs-sdk-mtgs"></a>
 
 The topics in this section explain how to use Amazon Chime SDK meetings to create custom meeting applications. We recommend following these topics in the order listed.
 

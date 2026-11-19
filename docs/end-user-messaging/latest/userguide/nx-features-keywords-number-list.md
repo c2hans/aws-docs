@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # View the keywords used by a phone number in AWS End User Messaging
-<a name="nx-features-keywords-number-list"></a>
 
 You can use the [describe-keywords](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/describe-keywords.html) command to view information about the keywords associated with an origination identity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 ---
 
 # Troubleshooting Change Calendar
-<a name="change-calendar-troubleshooting"></a>
 
 Use the following information to help you troubleshoot problems with Change Calendar, a tool in AWS Systems Manager.
 

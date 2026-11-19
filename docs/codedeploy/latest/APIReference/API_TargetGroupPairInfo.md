@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Targe
 ---
 
 # TargetGroupPairInfo
-<a name="API_TargetGroupPairInfo"></a>
 
  Information about two target groups and how traffic is routed during an Amazon ECS deployment. An optional test traffic route can be specified.
 

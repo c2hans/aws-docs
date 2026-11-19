@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_InsightSumma
 ---
 
 # InsightSummary
-<a name="API_InsightSummary"></a>
 
 The summarized description of the insight.
 

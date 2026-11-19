@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/dire
 ---
 
 # Delegating directory join privileges for AWS Managed Microsoft AD
-<a name="directory_join_privileges"></a>
 
 To join a computer to your AWS Managed Microsoft AD, you need an account that has privileges to join computers to the directory.
 

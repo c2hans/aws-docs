@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Mapping.html
 ---
 
 # Mapping
-<a name="API_Mapping"></a>
 
 Specifies the mapping of data property keys.
 
@@ -16,7 +15,7 @@ For the children part, suppose you have the structure:
  `{ "FromPath": "OuterStructure", "ToKey": "OuterStructure", "ToType": "Struct", "Dropped": false, "Chidlren": [{ "FromPath": "inner", "ToKey": "inner", "ToType": "Double", "Dropped": false, }] }`
 You can specify a `Mapping` that looks like:
  `{ "FromPath": "OuterStructure", "ToKey": "OuterStructure", "ToType": "Struct", "Dropped": false, "Chidlren": [{ "FromPath": "inner", "ToKey": "inner", "ToType": "Double", "Dropped": false, }] }`
-Type: Array of [Mapping](#API_Mapping) objects
+Type: Array of [Mapping](API_Mapping.md) objects
 Required: No
 
  ** Dropped **   <a name="Glue-Type-Mapping-Dropped"></a>

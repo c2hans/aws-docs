@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIGT01-BP03 Create a plan for publishing and updating documentation
-<a name="raigt01-bp03"></a>
 
  Identify which documents require updates based on stakeholder feedback, new use-cases, new system releases, and industry best practice developments. Dedicate an owner to facilitate the change management process which supports plans for review cycles, document and system versioning and approval chains.
 

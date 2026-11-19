@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/metric-attribution
 ---
 
 # Guidelines and requirements for a metric attribution
-<a name="metric-attribution-requirements"></a>
 
  Amazon Personalize starts calculating and reporting the impact of recommendations only after you create a metric attribution. To build the most complete history, we recommend creating a metric attribution before you import your interactions data. When you create a dataset import job for an Item interactions dataset with the Amazon Personalize console, you have the option to create a metric attribution in a new tab. Then you can return to the import job to complete it.
 

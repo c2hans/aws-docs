@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 ---
 
 # WebSocket API
-<a name="websocket-api"></a>
 
  WebSocket APIs offer APIs that the client can access through the WebSocket protocol. WebSocket APIs allow bidirectional communications. WebSocket APIs are often used in real-time applications such as chat applications, collaboration platforms, multiplayer games, and financial trading platforms.
 

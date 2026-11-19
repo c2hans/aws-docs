@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservedInstancesCostCalculation
-<a name="API_CostOptimizationHub_ReservedInstancesCostCalculation"></a>
 
 Cost impact of the purchase recommendation.
 

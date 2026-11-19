@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/increase-volume-ma
 ---
 
 # Updating the maximum number of files on a volume
-<a name="increase-volume-max-files"></a>
 
 FSx for ONTAP volumes can run out of file capacity when the number of available inodes, or file pointers, is exhausted.<a name="increase-max-files"></a>
 

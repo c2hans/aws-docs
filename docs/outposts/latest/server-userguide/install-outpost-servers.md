@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/server-userguide/install
 ---
 
 # Install Outpost servers
-<a name="install-outpost-servers"></a>
 
 For information about installing Outpost servers, see [Install Outpost servers](https://docs.aws.amazon.com/outposts/latest/install-server/install-server.html).
 

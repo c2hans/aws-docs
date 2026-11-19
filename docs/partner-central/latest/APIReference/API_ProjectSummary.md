@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProjectSummary
-<a name="API_ProjectSummary"></a>
 
 An object that contains a `Project` object's subset of fields.
 

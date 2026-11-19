@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterListControl
-<a name="API_FilterListControl"></a>
 
 A control to display a list of buttons or boxes. This is used to select either a single value or multiple values.
 

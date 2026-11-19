@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Interconnect::Connection
-<a name="aws-resource-interconnect-connection"></a>
 
 The `AWS::Interconnect::Connection` resource specifies a managed network connection between AWS and a partner cloud service provider. Amazon Web Services Interconnect connections enable hybrid and multicloud connectivity through partner-provided last-mile or cross-cloud connectivity.
 

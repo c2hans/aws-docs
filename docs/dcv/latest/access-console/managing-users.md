@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/managing-users
 ---
 
 # Managing users in the Amazon DCV Access Console
-<a name="managing-users"></a>
 
 The following section explains how to manage users and groups with the Amazon DCV Access Console.
 

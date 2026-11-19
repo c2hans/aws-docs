@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # GetAlertManagerSilence
-<a name="AMP-APIReference-GetAlertManagerSilence"></a>
 
 The `GetAlertManagerSilence` retrieves information about one alert silence.
 

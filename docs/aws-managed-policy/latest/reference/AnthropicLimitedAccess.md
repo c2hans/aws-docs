@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Anth
 ---
 
 # AnthropicLimitedAccess
-<a name="AnthropicLimitedAccess"></a>
 
 **Description**: Provides limited access to Claude Platform on AWS
 

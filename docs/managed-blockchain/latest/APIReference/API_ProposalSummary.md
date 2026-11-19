@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # ProposalSummary
-<a name="API_ProposalSummary"></a>
 
 Properties of a proposal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-instances
 ---
 
 # Launch EC2 instances using a launch template
-<a name="launch-instances-from-launch-template"></a>
 
 An Amazon EC2 launch template stores instance launch parameters so that you don't have to specify them every time you launch an instance.
 

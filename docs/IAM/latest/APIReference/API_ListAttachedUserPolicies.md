@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAttached
 ---
 
 # ListAttachedUserPolicies
-<a name="API_ListAttachedUserPolicies"></a>
 
 Lists all managed policies that are attached to the specified IAM user.
 

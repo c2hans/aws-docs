@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # TranslateKeyMaterial
-<a name="API_TranslateKeyMaterial"></a>
 
 Translates an cryptographic key between different wrapping keys without importing the key into AWS Payment Cryptography.
 

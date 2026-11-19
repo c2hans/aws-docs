@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/logging-using-cl
 ---
 
 # Logging FSx for OpenZFS API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail-win"></a>
 
 Amazon FSx is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Amazon FSx. CloudTrail captures all API calls for Amazon FSx as events. Captured calls include calls from the Amazon FSx console and from code calls to Amazon FSx API operations.
 

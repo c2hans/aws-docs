@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/MaintenanceGat
 ---
 
 # Running storage gateway commands in the local console for an on-premises gateway
-<a name="MaintenanceGatewayConsole-common"></a>
 
 The VM local console in Storage Gateway helps provide a secure environment for configuring and diagnosing issues with your gateway. Using the local console commands, you can perform maintenance tasks such as saving routing tables, connecting to Support, and so on.
 

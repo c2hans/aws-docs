@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/configure-service
 ---
 
 # Use an event to run a Lambda function
-<a name="configure-service-events-lambda-function"></a>
 
  This example shows you how to configure an EventBridge rule that starts an AWS Lambda function when a package version in a CodeArtifact repository is published, modified, or deleted.
 

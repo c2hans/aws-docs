@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_iam_Get
 ---
 
 # Setting up systems management
-<a name="sts_example_iam_GettingStarted_046_section"></a>
 
 The following code example shows how to:
 + Create IAM permissions for Systems Manager

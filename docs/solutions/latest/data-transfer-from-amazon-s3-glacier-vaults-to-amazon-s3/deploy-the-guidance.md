@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Deploy the Guidance
-<a name="deploy-the-guidance"></a>
 
  This Guidance uses [AWS CloudFormation templates and stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html) to automate its deployment. The CloudFormation template specifies the AWS resources included in this Guidance and their properties. The CloudFormation stack provisions the resources that are described in the template.
 

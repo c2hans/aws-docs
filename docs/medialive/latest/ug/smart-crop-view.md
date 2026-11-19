@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smart-crop-view.html
 ---
 
 # Viewing the smart crop setup
-<a name="smart-crop-view"></a>
 
 You can view information about the Elemental Inference features in a channel. You can view information on the MediaLive console or the Elemental Inference console.
 

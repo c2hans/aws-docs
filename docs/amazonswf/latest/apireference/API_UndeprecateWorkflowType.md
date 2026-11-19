@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Undepr
 ---
 
 # UndeprecateWorkflowType
-<a name="API_UndeprecateWorkflowType"></a>
 
 Undeprecates a previously deprecated *workflow type*. After a workflow type has been undeprecated, you can create new executions of that type.
 

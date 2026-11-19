@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/performance.html
 ---
 
 # Amazon EFS performance specifications
-<a name="performance"></a>
 
 The following sections provide an overview of Amazon EFS performance, and describe how your file system configuration impacts key performance dimensions. We also provide some important tips and recommendations for optimizing the performance of your file system.
 

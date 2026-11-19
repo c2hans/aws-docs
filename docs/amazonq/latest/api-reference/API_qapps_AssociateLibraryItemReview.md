@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_A
 ---
 
 # AssociateLibraryItemReview
-<a name="API_qapps_AssociateLibraryItemReview"></a>
 
 Associates a rating or review for a library item with the user submitting the request. This increments the rating count for the specified library item.
 

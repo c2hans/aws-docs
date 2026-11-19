@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # IngestionJobStatistics
-<a name="API_agent_IngestionJobStatistics"></a>
 
 Contains the statistics for the data ingestion job.
 

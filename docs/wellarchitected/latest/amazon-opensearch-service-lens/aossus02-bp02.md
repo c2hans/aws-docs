@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSUS02-BP02 Use the minimum number of instances necessary to meet your workload requirements
-<a name="aossus02-bp02"></a>
 
  Reduce costs, improve resource utilization, and eliminate unnecessary resource usage by using the minimum number of instances necessary to meet your workload requirements.
 

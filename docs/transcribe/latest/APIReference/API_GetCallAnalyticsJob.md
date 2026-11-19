@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetCa
 ---
 
 # GetCallAnalyticsJob
-<a name="API_GetCallAnalyticsJob"></a>
 
 Provides information about the specified Call Analytics job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/using-
 ---
 
 # Using the API with User Authentication Enabled
-<a name="using-api-with-user-authentication-enabled"></a>
 
 Your cluster deployment is configured for local or PAM user authentication (users must provide valid credentials to access Conductor Live). Check with the person who performed the initial configuration of the cluster, or see the [AWS Elemental Conductor Live Configuration Guide](https://docs.aws.amazon.com/elemental-cl3/latest/configguide/).
 

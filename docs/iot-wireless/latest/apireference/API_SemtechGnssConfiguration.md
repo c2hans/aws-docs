@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sem
 ---
 
 # SemtechGnssConfiguration
-<a name="API_SemtechGnssConfiguration"></a>
 
 Information about the Semtech GNSS solver configuration.
 

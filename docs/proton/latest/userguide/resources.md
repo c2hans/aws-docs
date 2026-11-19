@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/resources.html
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # AWS Proton resources and tagging
-<a name="resources"></a>
 
 AWS Proton resources that are assigned an Amazon Resource Name (ARN) include environment templates and their major and minor versions, service templates and their major and minor versions, environments, services, service instances, components, and repositories. You can tag these resources to help you organize and identify them. You can use tags to categorize resources by purpose, owner, environment, or other criteria. For more information, see [ Tagging Strategies](https://aws.amazon.com/answers/account-management/aws-tagging-strategies/). To track and manage your AWS Proton resources, you can use the tagging features described in the following sections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Uninstalling the Spark operator for Amazon EMR on EKS
-<a name="spark-operator-uninstall"></a>
 
 Use the following steps to uninstall the Spark operator.
 

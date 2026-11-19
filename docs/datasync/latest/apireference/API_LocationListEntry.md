@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Locatio
 ---
 
 # LocationListEntry
-<a name="API_LocationListEntry"></a>
 
 Represents a single entry in a list of locations. `LocationListEntry` returns an array that contains a list of locations when the [ListLocations](https://docs.aws.amazon.com/datasync/latest/userguide/API_ListLocations.html) operation is called.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # InvalidResourceIssue
-<a name="API_InvalidResourceIssue"></a>
 
 Describes a single related resource whose configuration does not match the intended configuration.
 

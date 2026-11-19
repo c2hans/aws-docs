@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListPermissionSets
-<a name="API_ListPermissionSets"></a>
 
 Lists the [PermissionSet](API_PermissionSet.md)s in an IAM Identity Center instance.
 

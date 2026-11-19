@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Send a message to the AI Agent
-<a name="3P-apps-ai-agents-sendaiagentmessage"></a>
 
 Sends a message to the AI Agent. Returns a handle containing the assigned `inputId` for correlating responses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/stdDevSamp.ht
 ---
 
 # $stdDevSamp
-<a name="stdDevSamp"></a>
 
 New from version 8.0.1.
 

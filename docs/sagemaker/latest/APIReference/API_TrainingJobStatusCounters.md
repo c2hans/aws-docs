@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingJobStatusCounters
-<a name="API_TrainingJobStatusCounters"></a>
 
 The numbers of training jobs launched by a hyperparameter tuning job, categorized by status.
 

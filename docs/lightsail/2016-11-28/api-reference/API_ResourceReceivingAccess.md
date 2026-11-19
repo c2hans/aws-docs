@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # ResourceReceivingAccess
-<a name="API_ResourceReceivingAccess"></a>
 
 Describes an Amazon Lightsail instance that has access to a Lightsail bucket.
 

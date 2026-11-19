@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-cwl-creat
 ---
 
 # Create a flow log that publishes to CloudWatch Logs
-<a name="flow-logs-cwl-create-flow-log"></a>
 
 You can create flow logs for your VPCs, subnets, or network interfaces. If you perform these steps as a user using a particular IAM role, ensure that the role has permissions to use the `iam:PassRole` action.
 

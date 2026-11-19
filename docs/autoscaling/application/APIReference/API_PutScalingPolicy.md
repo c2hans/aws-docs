@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # PutScalingPolicy
-<a name="API_PutScalingPolicy"></a>
 
 Creates or updates a scaling policy for an Application Auto Scaling scalable target.
 

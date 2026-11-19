@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/download-publi
 ---
 
 # Download public key
-<a name="download-public-key"></a>
 
 You can download the public key from an asymmetric KMS key pair in the AWS KMS console or by using the [GetPublicKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetPublicKey.html) operation. To download the public key, you must have `kms:GetPublicKey` permission on the asymmetric KMS key.
 

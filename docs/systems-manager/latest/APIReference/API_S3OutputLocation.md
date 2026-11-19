@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # S3OutputLocation
-<a name="API_S3OutputLocation"></a>
 
 An S3 bucket where you want to store the results of this request.
 

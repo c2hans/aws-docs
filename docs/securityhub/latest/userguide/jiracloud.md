@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
 ---
 
 # Integrations for AWS Security Hub Jira Cloud
-<a name="jiracloud"></a>
 
  This topic describes how to integrate Security Hub with Jira Cloud. Before completing any of the procedures in this topic, you must purchase a Jira Cloud subscription plan. For information about subscription plans, see [Pricing](https://www.atlassian.com/software/jira/pricing) on the Atlassian website.
 
@@ -116,7 +115,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/jiracloud.h
 <a name="w2aab7c58b7c17"></a>
 
 **Rate limit considerations**
- Jira enforces API rate limits to maintain service stability and ensure fair usage across their platform. When using the AWS Security Hub integration with Jira, these rate limits may impact the processing of Security Hub findings, particularly in environments generating high volumes of findings. This can result in delayed ticket creation, and in scenarios with extremely high finding volumes, some findings may not be processed into Jira tickets at all. To optimize your integration, consider implementing filters on Automation rules in Security Hub to prioritize ticketing on most important findings, monitoring your Jira API usage through their admin console, and planning your workflow based on your Jira license tier's specific rate limits. For business-critical implementations, contact your Jira administrator to review your rate limit allocations.
+ Jira enforces API rate limits to maintain service stability and ensure fair usage across their platform. When using the AWS Security Hub integration with Jira, these rate limits may impact the processing of Security Hub findings, particularly in environments generating high volumes of findings. This can result in delayed ticket creation. In scenarios with extremely high finding volumes where Jira rate limiting (throttling) occurs, Security Hub automatically retries processing each affected finding into a Jira ticket for up to 3 days. Findings that are still throttled after this retry window are not created as Jira tickets. To optimize your integration, consider implementing filters on Automation rules in Security Hub to prioritize ticketing on most important findings, monitoring your Jira API usage through their admin console, and planning your workflow based on your Jira license tier's specific rate limits. For business-critical implementations, contact your Jira administrator to review your rate limit allocations.
 
  For detailed information about Jira API rate limits, refer to the [Rate limiting](http://developer.atlassian.com/cloud/jira/platform/rate-limiting/) documentation on the Atlassian Developers Guide website.
 

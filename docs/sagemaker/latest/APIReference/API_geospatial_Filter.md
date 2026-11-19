@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # Filter
-<a name="API_geospatial_Filter"></a>
 
 The structure representing the filters supported by a RasterDataCollection.
 

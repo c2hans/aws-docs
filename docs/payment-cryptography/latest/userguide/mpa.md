@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/mp
 ---
 
 # Multi-party approval for AWS Payment Cryptography
-<a name="mpa"></a>
 
 AWS Payment Cryptography integrates with [Multi-party approval](https://docs.aws.amazon.com/mpa/latest/userguide/what-is.html) (MPA), a capability from Amazon Web Services Organizations, to help protect critical operations through a distributed approval process. With MPA, you can require that multiple trusted individuals approve specific AWS Payment Cryptography operations before they are carried out.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-up
 ---
 
 # Update the SageMaker Distribution Image
-<a name="studio-updated-jl-update-distribution-image"></a>
 
 **Important**
 This topic assumes that you've created a space and given the user access to it. For more information, see [Give your users access to spaces](studio-updated-jl-admin-guide-permissions.md).

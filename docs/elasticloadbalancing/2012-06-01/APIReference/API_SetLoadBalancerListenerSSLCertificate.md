@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # SetLoadBalancerListenerSSLCertificate
-<a name="API_SetLoadBalancerListenerSSLCertificate"></a>
 
 Sets the certificate that terminates the specified listener's SSL connections. The specified certificate replaces any prior certificate that was used on the same load balancer and port.
 

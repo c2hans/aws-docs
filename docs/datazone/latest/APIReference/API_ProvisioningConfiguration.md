@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Provisi
 ---
 
 # ProvisioningConfiguration
-<a name="API_ProvisioningConfiguration"></a>
 
 The provisioning configuration of the blueprint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Instance
 ---
 
 # InstanceStorageConfig
-<a name="API_InstanceStorageConfig"></a>
 
 The storage configuration for the instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSSUS03-BP01 Optimize data management for sustainability in life sciences
-<a name="lssus03-bp01"></a>
 
  Implement data management practices that reduce redundant storage, optimize processing efficiency, and minimize data movement while maintaining regulatory requirements. Establish centralized data catalogs and automated lifecycle policies to optimize your storage tier utilization based on access patterns. Design data architectures that balance accessibility requirements with energy efficiency goals.
 

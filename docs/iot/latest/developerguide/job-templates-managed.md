@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/job-templates-
 ---
 
 # Use AWS managed templates to deploy common remote operations
-<a name="job-templates-managed"></a>
 
 AWS managed templates are job templates provided by AWS. They're used for frequently performed remote actions such as rebooting, downloading a file, or installing an application on your devices. These templates have a predefined job document for each remote action so you don't have to create your own job document.
 

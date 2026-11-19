@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Administering OpenSearch UI
-<a name="application-admin"></a>
 
 Administering an OpenSearch UI application keeps it secure, observable, and easy for your users to reach. You control which settings users can change, encrypt the application metadata with a key that you manage, review request metrics to understand how the application is used, and give it a URL that your organization recognizes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # RecommendationSummary
-<a name="API_RecommendationSummary"></a>
 
 Summary information about a recommendation.
 

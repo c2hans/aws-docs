@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/check-call-pro
 ---
 
 # Flow block in Connect Customer: Check call progress
-<a name="check-call-progress"></a>
 
 This topic defines the flow block for engaging with the output provided by an answering machine, and providing the appropriate branches to route the contact.
 

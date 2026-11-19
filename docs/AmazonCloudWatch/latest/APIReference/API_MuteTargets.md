@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MuteTargets
-<a name="API_MuteTargets"></a>
 
 Specifies which alarms an alarm mute rule applies to.
 

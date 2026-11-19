@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Ac
 ---
 
 # AwsS3AccessPointVpcConfigurationDetails
-<a name="API_AwsS3AccessPointVpcConfigurationDetails"></a>
 
  The virtual private cloud (VPC) configuration for an Amazon S3 access point.
 

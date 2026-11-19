@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast
 ---
 
 # IVS Broadcast SDK \| Low-Latency Streaming
-<a name="broadcast"></a>
 
 The Amazon Interactive Video Services (IVS) Low-Latency Streaming broadcast SDK is for developers who are building applications with Amazon IVS. This SDK is designed to leverage the Amazon IVS architecture and will see continual improvement and new features, alongside Amazon IVS. As a native broadcast SDK, it is designed to minimize the performance impact on your application and on the devices with which your users access your application.
 

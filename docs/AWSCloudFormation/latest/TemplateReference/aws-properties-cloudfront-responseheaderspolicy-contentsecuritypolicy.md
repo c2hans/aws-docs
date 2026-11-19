@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ResponseHeadersPolicy ContentSecurityPolicy
-<a name="aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy"></a>
 
 The policy directives and their values that CloudFront includes as values for the `Content-Security-Policy` HTTP response header.
 
@@ -40,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `ContentSecurityPolicy`  <a name="cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-contentsecuritypolicy"></a>
 The policy directives and their values that CloudFront includes as values for the `Content-Security-Policy` HTTP response header.
 *Required*: Yes
-*Type*: [String](#aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy)
+*Type*: [String](aws-properties-cloudfront-responseheaderspolicy-contentsecuritypolicy.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Override`  <a name="cfn-cloudfront-responseheaderspolicy-contentsecuritypolicy-override"></a>

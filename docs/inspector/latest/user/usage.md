@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/usage.html
 ---
 
 # Monitoring Usage and Cost in Amazon Inspector
-<a name="usage"></a>
 
  You can use the Amazon Inspector console and API to project monthly Amazon Inspector costs for your environment. If you're the Amazon Inspector administrator for a multiple-account environment, you can view the total cost for your environment and cost metrics for all member accounts. This section describes how to access usage statistics and calculate usage costs.
 

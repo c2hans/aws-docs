@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-lo
 ---
 
 # What Amazon EventBridge logs for event buses
-<a name="eb-event-logs-execution-steps"></a>
 
 Understanding how EventBridge processes events can aid you in using logs to troubleshoot or debug event bus issues.
 

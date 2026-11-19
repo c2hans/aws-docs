@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Next steps and resources
-<a name="whats-next"></a>
 
 To begin the migration and modernization process for your legacy ASP.NET applications:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_StopAppli
 ---
 
 # StopApplication
-<a name="API_StopApplication"></a>
 
 Stops the application from processing data. You can stop an application only if it is in the running status, unless you set the `Force` parameter to `true`.
 

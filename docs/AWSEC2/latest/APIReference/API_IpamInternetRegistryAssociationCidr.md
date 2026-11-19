@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamInter
 ---
 
 # IpamInternetRegistryAssociationCidr
-<a name="API_IpamInternetRegistryAssociationCidr"></a>
 
 Contains information about an IP address CIDR registered at an internet registry and associated with an IPAM.
 

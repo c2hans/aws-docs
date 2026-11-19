@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 ---
 
 # UplinkSpectrumConfig
-<a name="API_UplinkSpectrumConfig"></a>
 
 Information about the uplink spectral `Config`.
 

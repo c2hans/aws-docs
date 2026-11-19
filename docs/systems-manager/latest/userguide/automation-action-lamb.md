@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:invokeLambdaFunction` – Invoke an AWS Lambda function
-<a name="automation-action-lamb"></a>
 
 Invokes the specified AWS Lambda function.
 

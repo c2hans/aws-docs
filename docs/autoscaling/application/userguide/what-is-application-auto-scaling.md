@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/what-i
 ---
 
 # What is Application Auto Scaling?
-<a name="what-is-application-auto-scaling"></a>
 
 Application Auto Scaling is a web service for developers and system administrators who need a solution for automatically scaling their scalable resources for individual AWS services beyond [Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html). With Application Auto Scaling, you can configure automatic scaling for the following resources:
 + WorkSpaces Applications fleets

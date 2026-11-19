@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/networkloadbalancer-cla
 ---
 
 # Query Network Load Balancer logs
-<a name="networkloadbalancer-classic-logs"></a>
 
 Use Athena to analyze and process logs from Network Load Balancer. These logs receive detailed information about the Transport Layer Security (TLS) requests sent to the Network Load Balancer. You can use these access logs to analyze traffic patterns and troubleshoot issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/tag-resources.htm
 ---
 
 # Tag your resources
-<a name="tag-resources"></a>
 
 You can tag new or existing AWS Batch compute environments, jobs, job definitions, job queues, and scheduling policies.
 

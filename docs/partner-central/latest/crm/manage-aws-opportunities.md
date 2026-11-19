@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/manage-aws-op
 ---
 
 # Managing opportunities in a Partner Central API integration
-<a name="manage-aws-opportunities"></a>
 
 The following topics explain how to complete the tasks specific to specific to a Partner Central API integration.
 

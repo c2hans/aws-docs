@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/vdm-dashboard.html
 ---
 
 # Virtual Deliverability Manager dashboard
-<a name="vdm-dashboard"></a>
 
 The dashboard offers high level views of your account’s deliverability program, such as easy to read cards and time series graphs that show deliverability and reputation through open/click and delivery rates and bounce/complaint stats. The dashboard also offers a more detailed view, enabling you to drill down to more detailed specific table data when there’s an issue that's tied to a particular ISP, sending identity, configuration set, or tenant that's associated with an email campaign.
 

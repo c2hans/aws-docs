@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkA
 ---
 
 # NetworkAclPortRange
-<a name="API_NetworkAclPortRange"></a>
 
 TCP or UDP protocols: The range of ports the rule applies to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-
 ---
 
 # Viewing test reports in Device Farm
-<a name="how-to-use-reports"></a>
 
 Use the Device Farm console to view your test reports. For more information, see [Reports in AWS Device Farm](reports.md).
 

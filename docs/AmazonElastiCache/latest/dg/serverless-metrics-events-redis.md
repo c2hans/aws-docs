@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-m
 ---
 
 # Metrics and events for Valkey and Redis OSS serverless caches
-<a name="serverless-metrics-events-redis"></a>
 
 ElastiCache offers a wide variety of metrics and events for monitoring when working with serverless caches. This includes CloudWatch metrics, command level metrics, and event logs which can be ingested via Amazon EventBridge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/confi
 ---
 
 # Configuring Custom S3 Bucket Sources
-<a name="configuring-custom-s3-bucket-sources"></a>
 
 With CloudWatch pipelines, you can process arbitrary logs stored in S3 buckets.
 

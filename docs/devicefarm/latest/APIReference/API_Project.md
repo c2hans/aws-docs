@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Proje
 ---
 
 # Project
-<a name="API_Project"></a>
 
 Represents an operating-system neutral workspace for running and managing tests.
 

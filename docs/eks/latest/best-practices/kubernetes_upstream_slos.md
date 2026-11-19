@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/kubernetes_ups
 ---
 
 # Kubernetes Upstream SLOs
-<a name="kubernetes_upstream_slos"></a>
 
 Amazon EKS runs the same code as the upstream Kubernetes releases and ensures that EKS clusters operate within the SLOs defined by the Kubernetes community. The Kubernetes [Scalability Special Interest Group (SIG)](https://github.com/kubernetes/community/tree/master/sig-scalability) defines the scalability goals and investigates bottlenecks in performance through SLIs and SLOs.
 

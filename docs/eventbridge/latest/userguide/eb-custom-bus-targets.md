@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Targets for a Custom Event Bus subscriber
-<a name="eb-custom-bus-targets"></a>
 
 A subscriber delivers to one target. Set `InvokeConfiguration.TargetArn` to the target's ARN, add the parameter block for that target type, for example `SqsParameters` for a queue, and give the delivery role the action the target needs, for example `sqs:SendMessage`. Every parameter value can be a fixed string or a JSONata expression in `{% %}` that reads the event, so a queue's `MessageGroupId` can be `{% $events.SystemMetadata.EventGroupId %}`.
 

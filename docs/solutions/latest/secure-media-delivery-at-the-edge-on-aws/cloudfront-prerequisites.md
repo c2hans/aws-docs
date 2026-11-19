@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # CloudFront prerequisites
-<a name="cloudfront-prerequisites"></a>
 
  The Secure Media Delivery at the Edge on AWS solution has been designed to enhance the security of an existing video streaming workload that already utilizes CloudFront for content distribution to the viewers. As you prepare to integrate the solution into your architecture, the following requirements and preceding steps must be reviewed before activating the solution for your workloads.
 

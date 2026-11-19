@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DescribeReportDefinitions
-<a name="API_cur_DescribeReportDefinitions"></a>
 
 Lists the AWS Cost and Usage Report available to this account.
 

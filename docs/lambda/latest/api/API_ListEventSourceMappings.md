@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListEventSourceMap
 ---
 
 # ListEventSourceMappings
-<a name="API_ListEventSourceMappings"></a>
 
 Lists event source mappings. Specify an `EventSourceArn` to show only event source mappings for a single event source.
 

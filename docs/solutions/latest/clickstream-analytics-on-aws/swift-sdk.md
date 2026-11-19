@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Swift SDK
-<a name="swift-sdk"></a>
 
 ## Introduction
 <a name="introduction-1"></a>

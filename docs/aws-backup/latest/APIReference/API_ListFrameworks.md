@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListF
 ---
 
 # ListFrameworks
-<a name="API_ListFrameworks"></a>
 
 Returns a list of all frameworks for an AWS account and AWS Region.
 

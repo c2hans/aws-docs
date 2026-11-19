@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeL
 ---
 
 # DescribeLocalGateways
-<a name="API_DescribeLocalGateways"></a>
 
 Describes one or more local gateways. By default, all local gateways are described. Alternatively, you can filter the results.
 

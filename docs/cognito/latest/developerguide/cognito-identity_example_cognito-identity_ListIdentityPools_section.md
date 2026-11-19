@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Use `ListIdentityPools` with an AWS SDK or CLI
-<a name="cognito-identity_example_cognito-identity_ListIdentityPools_section"></a>
 
 The following code examples show how to use `ListIdentityPools`.
 

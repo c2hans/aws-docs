@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # InferredState
-<a name="API_WaypointTracking_InferredState"></a>
 
 The inferred state of the device, given the provided position, IP address, cellular signals, and Wi-Fi- access points.
 

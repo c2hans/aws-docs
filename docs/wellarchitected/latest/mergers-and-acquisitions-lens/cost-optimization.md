@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
  During mergers and acquisitions, integrating cost optimization concerns is a critical aspect of achieving successful outcomes. Companies must carefully evaluate the cost structure of the target company to identify areas where costs can be reduced without compromising operations or quality. This involves analyzing financial statements, operational processes, and labor costs to identify opportunities for cost savings.
 

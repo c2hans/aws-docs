@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ap
 ---
 
 # Application
-<a name="API_Application"></a>
 
 ## Contents
 <a name="API_Application_Contents"></a>

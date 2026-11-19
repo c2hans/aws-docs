@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/wind
 ---
 
 # Generating estimates for Windows Servers and SQL Servers on EC2 Dedicated Hosts
-<a name="windows-workload-ec2"></a>
 
 You can use the workload calculator in AWS Pricing Calculator as a guide to the AWS tenancy qualifications for Microsoft Windows Server and SQL Server on Amazon Elastic Compute Cloud (Amazon EC2). You can use the workload calculator to estimate AWS cost using minimal information or generate a rough estimate.
 

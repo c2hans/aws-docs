@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterClusterInfoClientAuthenticationSaslScramDetails
-<a name="API_AwsMskClusterClusterInfoClientAuthenticationSaslScramDetails"></a>
 
  Details for SASL/SCRAM client authentication.
 

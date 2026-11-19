@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeProv
 ---
 
 # DescribeProvisioningTemplate
-<a name="API_DescribeProvisioningTemplate"></a>
 
 Returns information about a provisioning template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/postgresql-s3datalake.htm
 ---
 
 # Migrating an RDS PostgreSQL database to an S3 data lake
-<a name="postgresql-s3datalake"></a>
 
 This walkthrough will help you understand the process of migrating data from Amazon Relational Database Service (Amazon RDS) for PostgreSQL database to Amazon Simple Storage Service (S3) using AWS Database Migration Service (AWS DMS).
 

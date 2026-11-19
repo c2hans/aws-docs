@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec06-b
 ---
 
 # SEC06-BP05 Automate compute protection
-<a name="sec06-bp05"></a>
 
  Manual security operations do not keep pace with the rate at which compute resources change and vulnerabilities appear. Automating scanning, patching, verification, and remediation reduces the chance of a misconfiguration reaching production and shortens the time from detection to remediation.
 

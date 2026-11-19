@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/aws-cloudshe
 ---
 
 # Required IAM permissions for creating and using CloudShell VPC environments
-<a name="aws-cloudshell-vpc-permissions-1"></a>
 
 To create and use CloudShell VPC environments, the IAM administrator must enable access to VPC specific Amazon EC2 permissions. This section lists the Amazon EC2 permissions needed to create and use VPC environments.
 

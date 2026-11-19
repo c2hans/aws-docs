@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-s-korea.h
 ---
 
 # South Korea
-<a name="order-port-s-korea"></a>
 
 The following tables list and describe the requirements for ordering phone numbers in South Korea.
 

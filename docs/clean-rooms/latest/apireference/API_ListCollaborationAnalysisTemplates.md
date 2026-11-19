@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListCollaborationAnalysisTemplates
-<a name="API_ListCollaborationAnalysisTemplates"></a>
 
 Lists analysis templates within a collaboration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelD
 ---
 
 # ModelDeployConfig
-<a name="API_ModelDeployConfig"></a>
 
 Specifies how to generate the endpoint name for an automatic one-click Autopilot model deployment.
 

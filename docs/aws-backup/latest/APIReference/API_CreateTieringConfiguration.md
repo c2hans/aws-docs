@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Creat
 ---
 
 # CreateTieringConfiguration
-<a name="API_CreateTieringConfiguration"></a>
 
 Creates a tiering configuration.
 

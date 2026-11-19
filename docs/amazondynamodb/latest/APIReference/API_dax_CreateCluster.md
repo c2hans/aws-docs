@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # CreateCluster
-<a name="API_dax_CreateCluster"></a>
 
 Creates a DAX cluster. All nodes in the cluster run the same DAX caching software.
 

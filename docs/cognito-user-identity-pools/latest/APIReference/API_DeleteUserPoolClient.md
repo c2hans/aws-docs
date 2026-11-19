@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DeleteUserPoolClient
-<a name="API_DeleteUserPoolClient"></a>
 
 Deletes a user pool app client. After you delete an app client, users can no longer sign in to the associated application.
 

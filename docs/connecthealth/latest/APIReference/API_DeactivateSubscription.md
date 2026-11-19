@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_De
 ---
 
 # DeactivateSubscription
-<a name="API_DeactivateSubscription"></a>
 
 Deactivates a Subscription to stop billing for a user.
 

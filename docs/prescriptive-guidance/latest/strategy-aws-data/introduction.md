@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Creating a data strategy on AWS that supports your company's goals
-<a name="introduction"></a>
 
 *Hugo Rozestraten and Ligia Harumi Yamamoto, Amazon Web Services*
 

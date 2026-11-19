@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/drawing
 ---
 
 # Drawing Tablet Support
-<a name="drawing-tablet-support-web-access-admin"></a>
 
 Drawing tablets, also known as pen tablets, are computer input devices that let users draw with a stylus (pen). With WorkSpaces Applications, your users can connect a drawing tablet, such as a Wacom drawing tablet, to their local computer and use the tablet with their streaming applications.
 

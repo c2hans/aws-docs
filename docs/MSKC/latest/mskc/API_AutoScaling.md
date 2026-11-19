@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_AutoScaling.html
 ---
 
 # AutoScaling
-<a name="API_AutoScaling"></a>
 
 Specifies how the connector scales.
 

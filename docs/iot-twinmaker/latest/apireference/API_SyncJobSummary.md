@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Sy
 ---
 
 # SyncJobSummary
-<a name="API_SyncJobSummary"></a>
 
 The SyncJob summary.
 

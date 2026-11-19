@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/aut
 ---
 
 # Automate package builds with Deadline Cloud
-<a name="automate-package-builds"></a>
 
 For CI/CD workflows or when you need to build packages for multiple operating systems, you can create a Deadline Cloud package building queue. The queue schedules build jobs on your fleet, which build the packages and publish them to your Amazon Simple Storage Service (Amazon S3) conda channel. This automation simplifies maintaining continuous package builds for software releases across all your required configurations.
 

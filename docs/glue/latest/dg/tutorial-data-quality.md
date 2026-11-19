@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/tutorial-data-quality.htm
 ---
 
 # Evaluating data quality for ETL jobs in AWS Glue Studio
-<a name="tutorial-data-quality"></a>
 
 In this tutorial, you get started with AWS Glue Data Quality in AWS Glue Studio. You will learn how to:
 +  Create rules using the Data Quality Definition Language (DQDL) rule builder.

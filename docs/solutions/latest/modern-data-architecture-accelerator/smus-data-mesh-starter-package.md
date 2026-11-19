@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # SMUS Data Mesh Starter Package
-<a name="smus-data-mesh-starter-package"></a>
 
 The SMUS Data Mesh Starter Package deploys a production-ready, multi-account SageMaker Unified Studio deployment with cross-account data sharing, custom blueprints, and team-based isolation. It is designed for medium to large organizations implementing a data mesh, with multiple business units that need to collaborate on data while maintaining security boundaries and governance controls.
 
